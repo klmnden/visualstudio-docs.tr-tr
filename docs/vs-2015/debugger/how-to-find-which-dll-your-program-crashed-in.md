@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060572"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Nasıl yapılır: Hangi DLL'de kilitlendiğini programınızın bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "54769943"
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Modüller penceresini kullanarak bir kilitlenme burada bulmak için oluştu  
   
-1.  Kilitlenme durumu oluştuğu adresini not edin.  
+1. Kilitlenme durumu oluştuğu adresini not edin.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.  
+2. Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.  
   
-3.  İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.  
+3. İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.  
   
-4.  Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.  
+4. Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.  
   
-5.  Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.  
+5. Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.  
   
-6.  Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.  
+6. Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: DLL'lerde hata ayıklama](../debugger/how-to-debug-native-dlls.md)   

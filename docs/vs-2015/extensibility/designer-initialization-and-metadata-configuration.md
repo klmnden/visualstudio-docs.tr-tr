@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049263"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
 ### <a name="customizing-initialization"></a>Başlatma özelleştirme  
  Bir tasarımcı, bir bileşen veya bir tasarımcı yüzeyine özelleştirme içerir:  
   
-1.  Tasarımcı meta verileri değiştirme ve belirli bir nasıl etkili bir şekilde değiştirme <xref:System.Type> erişilen veya dönüştürülür.  
+1. Tasarımcı meta verileri değiştirme ve belirli bir nasıl etkili bir şekilde değiştirme <xref:System.Type> erişilen veya dönüştürülür.  
   
      Bu genellikle aracılığıyla yapılır <xref:System.Drawing.Design.UITypeEditor> veya <xref:System.ComponentModel.TypeConverter> mekanizmaları.  
   
      Örneğin, <xref:System.Windows.Forms>-tabanlı tasarımcıları başlatılır, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ortam değiştirir <xref:System.Drawing.Design.UITypeEditor> için <xref:System.Web.UI.WebControls.Image> tasarımcı ile dosya sistemi yerine bit eşlemler almak için Kaynak Yöneticisi'ni kullanmak için kullanılan nesneleri.  
   
-2.  Bir ortam gibi olaylara abone olma ya da proje yapılandırma bilgilerini elde etmeyi tümleştirme. Proje yapılandırma bilgilerini edinmek ve elde ederek olaylara abone <xref:System.ComponentModel.Design.ITypeResolutionService> arabirimi.  
+2. Bir ortam gibi olaylara abone olma ya da proje yapılandırma bilgilerini elde etmeyi tümleştirme. Proje yapılandırma bilgilerini edinmek ve elde ederek olaylara abone <xref:System.ComponentModel.Design.ITypeResolutionService> arabirimi.  
   
-3.  Uygun etkinleştirme tarafından kullanıcı ortamını değiştirilmesini **araç kutusu** kategorileri veya örneği uygulayarak tasarımcının Uygulanabilirlik kısıtlayarak <xref:System.ComponentModel.ToolboxItemFilterAttribute> sınıfı için tasarımcı.  
+3. Uygun etkinleştirme tarafından kullanıcı ortamını değiştirilmesini **araç kutusu** kategorileri veya örneği uygulayarak tasarımcının Uygulanabilirlik kısıtlayarak <xref:System.ComponentModel.ToolboxItemFilterAttribute> sınıfı için tasarımcı.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>VSPackage tarafından tasarımcıyı başlatma  
  VSPackage tarafından tasarımcıyı başlatma işlemesi gerekir:  

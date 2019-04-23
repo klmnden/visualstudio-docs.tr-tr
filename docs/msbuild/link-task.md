@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064374"
 ---
 # <a name="link-task"></a>Bağlantı görevi
 Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi (COFF) nesne dosyaları ve yürütülebilir bir dosya oluşturmak için kitaplıklar bağlayıcı aracı bağlantılar (*.exe*) dosya veya dinamik bağlantı kitaplığı (DLL). Daha fazla bilgi için [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 ## <a name="parameters"></a>Parametreler
  Aşağıdaki parametreleri açıklar **bağlantı** görev. Çoğu görev parametreleri ve parametrelerin birkaç kümeleri bir komut satırı seçeneğine karşılık gelir.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -51,7 +51,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [bağlantı giriş dosyalarını](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -59,7 +59,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Libpath (ek Libpath)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -67,7 +67,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/MANIFESTDEPENDENCY (bildirim bağımlılıklarını belirt)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Ayrıca bkz: [yayımcı yapılandırma dosyaları](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -75,7 +75,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [bağlayıcı seçenekleri](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -83,7 +83,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [assemblymodule (derlemeye MSIL Modülü Ekle)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **Allowısolatıon**
+- **Allowısolatıon**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -91,7 +91,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/ALLOWISOLATION (bildirim arama)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -99,7 +99,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [assemblydebug (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **Assemblylınkresource**
+- **Assemblylınkresource**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -107,13 +107,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/assemblylınkresource (.NET Framework kaynağına bağlantı)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Örtük **Boole** parametresi.
 
      Daha ayrıntılı dosya bağlantı artımlı bir kullanıcının davranışını yakalamak için izleme sağlar. Her zaman döndürür `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -121,7 +121,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Base (Temel adres)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -129,7 +129,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Bu parametre, denk bağlayıcı seçeneği vardır.
 
--   **CLRImageType**
+- **CLRImageType**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -137,17 +137,17 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri için bir bağlayıcı seçeneği karşılık gelen şu değerlerden birini belirtin.
 
-    -   **Varsayılan** - *\<yok >*
+    - **Varsayılan** - *\<yok >*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **kullanılır**
+    - **ForceSafeILImage** - **kullanılır**
 
     Daha fazla bilgi için [/CLRIMAGETYPE (CLR görüntü türünü belirt)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **Clrsupportlasterror'ü**
+- **Clrsupportlasterror'ü**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -155,15 +155,15 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri için bir bağlayıcı seçeneği karşılık gelen şu değerlerden birini belirtin.
 
-    -   **Etkin** - **/CLRSupportLastError**
+    - **Etkin** - **/CLRSupportLastError**
 
-    -   **Devre dışı bırakılmış** - **/CLRSupportLastError:NO**
+    - **Devre dışı bırakılmış** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Daha fazla bilgi için [/CLRSUPPORTLASTERROR (son hata kodunu Koru PInvoke çağrıları için)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **Clrthreadattrıbute**
+- **Clrthreadattrıbute**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -171,15 +171,15 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri için bir bağlayıcı seçeneği karşılık gelen şu değerlerden birini belirtin.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: yok**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: yok**
 
-    -   **MTAThreadingAttribute** - **MTA**
+    - **MTAThreadingAttribute** - **MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Daha fazla bilgi için [/CLRTHREADATTRIBUTE (iş parçacığı özniteliğini Ayarla CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -187,7 +187,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
     Daha fazla bilgi için [/clrunmanagedcodecheck (SuppressUnmanagedCodeSecurityAttribute Ekle)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -195,17 +195,17 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Bir bağlayıcı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **Etkin** - **/FUNCTIONPADMIN**
+    - **Etkin** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Daha fazla bilgi için [/FUNCTIONPADMIN (düzeltme eki eklenebilen görüntü oluşturma)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -213,7 +213,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/NXCOMPAT (veri yürütme önlemesi ile uyumlu)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -221,7 +221,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/delayload (gecikme yükü içe)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -229,7 +229,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/delaysign (bir derlemeyi kısmen imzalayın)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Sürücü**
+- **Sürücü**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -237,17 +237,17 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri için bir bağlayıcı seçeneği karşılık gelen şu değerlerden birini belirtin.
 
-    -   **NotSet** - *\<yok >*
+    - **NotSet** - *\<yok >*
 
-    -   **Sürücü** - **Driver/Driver**
+    - **Sürücü** - **Driver/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** -   **/DRIVER: WDM**
+    - **WDM** -   **/DRIVER: WDM**
 
     Daha fazla bilgi için [(Windows NT Çekirdek modu sürücüsü) Driver/Driver](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -255,7 +255,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [koduna konmaz (yönetilen kaynağı katıştır)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -263,7 +263,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `ICF[= iterations]` bağımsız değişkeni [OPT (iyileştirmeler)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -271,7 +271,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -279,7 +279,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Entry (giriş noktası simgesi)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -287,7 +287,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/FIXED (sabit temel adres)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -295,15 +295,15 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **Etkin** -   **/FORCE**
+    - **Etkin** -   **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** -   **/Force: multıple**
+    - **MultiplyDefinedSymbolOnly** -   **/Force: multıple**
 
-    -   **UndefinedSymbolOnly** -   **/FORCE: KARARSIZ**
+    - **UndefinedSymbolOnly** -   **/FORCE: KARARSIZ**
 
     Daha fazla bilgi için [/Force (dosya çıktısını zorla)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -311,7 +311,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Include (simge başvurularını zorla)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -319,7 +319,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/order (işlevleri Sırala Put)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -327,7 +327,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Debug (hata ayıklama bilgileri üret)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -335,7 +335,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/MANIFEST (yan yana derleme bildirimi oluşturma)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -343,7 +343,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [Map (eşlem Oluştur)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -351,7 +351,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `commit` değişkeninde [/HEAP (yığın boyutunu Ayarla)](/cpp/build/reference/heap-set-heap-size). Ayrıca bkz **HeapReserveSize** parametresi.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -359,7 +359,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `reserve` değişkeninde [/HEAP (yığın boyutunu Ayarla)](/cpp/build/reference/heap-set-heap-size). Ayrıca bkz **HeapCommitSize** bu tablodaki parametresi.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -367,7 +367,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/nodefaultlıb (kitaplıkları yoksay)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -375,7 +375,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/ıgnoreıdl (öznitelikleri Mıdl'ye işleme)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -383,7 +383,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Bu parametre için bir bağlayıcı seçeneği karşılık gelmiyor.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -391,7 +391,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/nodefaultlıb (kitaplıkları yoksay)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -399,13 +399,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [SAFESEH (görüntüde güvenli özel durum işleyicileri var)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Varsayılan kitaplık adını değiştirir bir kullanıcı tarafından belirtilen içeri aktarma kitaplığı adı.
 
      Daha fazla bilgi için [/IMPLIB (içeri aktarma kitaplığını Adlandır)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -413,7 +413,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/keycontainer (derlemeyi imzalamak için belirtin bir anahtar kapsayıcısı)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Ayrıca bkz **KeyFile** bu tablodaki parametresi.
 
--   **KeyFile**
+- **KeyFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -421,7 +421,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/keyfile (belirtin anahtar veya bir derlemeyi imzalamak için anahtar çifti)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Ayrıca bkz **KeyContainer** parametresi.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -429,7 +429,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/largeaddressaware (büyük adresleri işle)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -437,7 +437,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/dll (DLL derleme)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -445,17 +445,17 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **NoErrorReport** -   **/errorreport: yok**
+    - **NoErrorReport** -   **/errorreport: yok**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **okunmalı**
+    - **SendErrorReport** - **okunmalı**
 
     Daha fazla bilgi için [/errorreport (dahili bağlayıcı hatalarını raporla)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -463,7 +463,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/INCREMENTAL (artımlı Bağla)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -471,7 +471,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Bu parametre için bir bağlayıcı seçeneği karşılık gelmiyor.
 
--   **LinkStatus**
+- **LinkStatus**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -479,7 +479,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `STATUS` bağımsız değişkeni [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -487,21 +487,21 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **Varsayılan** - *\<yok >*
+    - **Varsayılan** - *\<yok >*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Daha fazla bilgi için [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **Manıfestfıle**
+- **Manıfestfıle**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -509,7 +509,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/MANIFESTFILE (bildirim dosyasını Adlandır)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -517,13 +517,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `EXPORTS` bağımsız değişkeni [mapınfo (bilgileri eşlem dosyası Ekle)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      İsteğe bağlı **dize** parametresi.
 
      Belirtilen dosya adı için varsayılan eşleme dosyası adını değiştirir.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -531,7 +531,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/ıdlout (MIDL adı Çıkış dosyalarını)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -539,7 +539,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Merge (bölümleri Birleştir)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -547,13 +547,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/MIDL (belirtin MIDL komut satırı seçenekleri)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      İsteğe bağlı **dize** parametresi.
 
      Alt sistemin gerekli en düşük sürümü belirtir. Bağımsız değişkenler, 0 ila 65.535 aralığındaki ondalık sayılardır.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -561,7 +561,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/def (modül tanım dosyasını belirt)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -569,7 +569,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/stub (MS-DOS saplama dosyası adı)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -577,13 +577,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/NOENTRY (giriş noktası yok)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Örtük **String []** parametresi.
 
      Bağlantılı nesne dosyaları belirtir.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -591,7 +591,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `REF` değişkeninde [OPT (iyileştirmeler)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -599,19 +599,19 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/OUT (çıktı dosyası adı)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      İsteğe bağlı **Boole** parametresi.
 
      Varsa `true` ve çıkışı kayda etkin zorlar kayıt için Yazar **HKEY_CLASSES_ROOT** için yönlendirilmesi **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      İsteğe bağlı `ITaskItem[]` parametresi.
 
      Tüketilen ve görevler tarafından yayılan önişlemci çıktısını öğeleri bir dizisi tanımlanmaktadır.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -619,7 +619,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/ALLOWBIND (önlemek DLL bağlamayı)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profili**
+- **Profili**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -627,7 +627,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [PROFILE (performans araçları Profil Oluşturucusu)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -635,7 +635,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/PGD (Profil temelli iyileştirmeler için veritabanını belirt)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -643,7 +643,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/pdb (program veritabanını kullan)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -651,13 +651,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [dynamıcbase (adres boşluğu düzeni rastgele'seçimini kullan)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      İsteğe bağlı **Boole** parametresi.
 
      Varsa `true`, bu derlemenin birincil çıkışının kaydeder.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      İsteğe bağlı **tamsayı** parametresi.
 
@@ -665,7 +665,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/ALIGN (bölüm hizalama)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -673,7 +673,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/Release (sağlama toplamını Ayarla)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -681,29 +681,29 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **NotSet** - *\<yok >*
+    - **NotSet** - *\<yok >*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Daha fazla bilgi için [/verbose (ilerleme iletilerini Yazdır)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Kaynakları**
+- **Kaynakları**
 
      Gerekli `ITaskItem[]` parametresi.
 
      Tüketilen ve görevler tarafından yayılan MSBuild kaynak dosya öğeleri bir dizisi tanımlanmaktadır.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -711,7 +711,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/SECTION (bölüm özniteliklerini belirt)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -719,7 +719,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `commit` bağımsız değişkeni [/STACK (yığın ayırmaları)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -727,7 +727,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `reserve` bağımsız değişkeni [/STACK (yığın ayırmaları)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -735,7 +735,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/pdbstrıpped (özel simgeleri Şerit)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **Alt sistem**
+- **Alt sistem**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -743,29 +743,29 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **NotSet** - *\<yok >*
+    - **NotSet** - *\<yok >*
 
-    -   **Konsol** -   **/Subsystem: Console**
+    - **Konsol** -   **/Subsystem: Console**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Yerel** - **natıve**
+    - **Yerel** - **natıve**
 
-    -   **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI uygulaması** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**
+    - **Wındowsce** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Daha fazla bilgi için [/Subsystem (alt belirtin)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -773,7 +773,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `NOBIND` bağımsız değişkeni [/delay (gecikme yükü içe aktarma ayarları)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -781,7 +781,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `UNLOAD` bağımsız değişkeni [/delay (gecikme yükü içe aktarma ayarları)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -789,7 +789,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/nologo (Başlangıç başlığını gösterme) (Bağlayıcı)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -797,7 +797,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `CD` bağımsız değişkeni [swaprun (dosya çıktısını takas dosyasına yükle bağlayıcı)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Ayrıca bkz **SwapRunFromNET** parametresi.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -805,7 +805,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `NET` bağımsız değişkeni [swaprun (dosya çıktısını takas dosyasına yükle bağlayıcı)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Ayrıca bkz **SwapRunFromCD** bu tablodaki parametresi.
 
--   **TargetMachine**
+- **TargetMachine**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -813,33 +813,33 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **NotSet** - *\<yok >*
+    - **NotSet** - *\<yok >*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X 64**
+    - **MachineX64** - **/MACHINE:X 64**
 
-    -   **MachineX86** - **/MACHINE:X 86**
+    - **MachineX86** - **/MACHINE:X 86**
 
     Daha fazla bilgi için [/Machine (hedef platformu belirt)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -847,13 +847,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/TSAWARE (Terminal sunucusu oluşturma algılayan uygulama)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      İsteğe bağlı **dize** parametresi.
 
      İzleyici günlüğü dizini belirtir.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -861,7 +861,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/WX (Bağlayıcı uyarılarını hata olarak)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -869,7 +869,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [noassembly (MSIL modülü Oluştur)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -877,7 +877,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/tlbout (.tlb dosyası Adlandır)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      İsteğe bağlı **tamsayı** parametresi.
 
@@ -885,7 +885,7 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için [/TLBID (TypeLib için kaynak kimliği belirtin)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -893,15 +893,15 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator'a** - `level='requireAdministrator'`
+    - **RequireAdministrator'a** - `level='requireAdministrator'`
 
     Daha fazla bilgi için `level` bağımsız değişkeni [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -909,13 +909,13 @@ Visual C++ bağlayıcı aracı sarmalar *link.exe*. Ortak nesne dosyası biçimi
 
      Daha fazla bilgi için `uiAccess` bağımsız değişkeni [/MANIFESTUAC (bildirimdeki UAC bilgilerini katıştırır)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      İsteğe bağlı **Boole** parametresi.
 
      Varsa `true`kitaplıkçı aracının kullanılan yerine, kitaplık dosyasının kendisi proje bağımlılıklarının kitaplık çıkışları olduğunda bağlanır.
 
--   **Sürüm**
+- **Sürüm**
 
      İsteğe bağlı **dize** parametresi.
 

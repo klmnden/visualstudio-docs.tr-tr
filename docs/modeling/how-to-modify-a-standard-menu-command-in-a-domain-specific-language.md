@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063044"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
 
@@ -28,15 +28,15 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Bulmak için hangi komutları değiştirebilir
 
-1.  İçinde `DslPackage` projesini açarsanız `GeneratedCode\CommandSet.cs`. Bu C# dosyası Çözüm Gezgini'nde bir yan kuruluşu olan bulunabilir `CommandSet.tt`.
+1. İçinde `DslPackage` projesini açarsanız `GeneratedCode\CommandSet.cs`. Bu C# dosyası Çözüm Gezgini'nde bir yan kuruluşu olan bulunabilir `CommandSet.tt`.
 
-2.  Sınıf adları ile biten içinde bu dosyayı bulup "`CommandSet`", örneğin `Language1CommandSet` ve `Language1ClipboardCommandSet`.
+2. Sınıf adları ile biten içinde bu dosyayı bulup "`CommandSet`", örneğin `Language1CommandSet` ve `Language1ClipboardCommandSet`.
 
-3.  Her komut kümesi sınıfı türü "`override`" ardından bir boşluk. IntelliSense, geçersiz kılabilirsiniz yöntemlerin listesini gösterir. Her komut, adları başlamak yöntemleri bir çift olan "`ProcessOnStatus`"ve"`ProcessOnMenu`".
+3. Her komut kümesi sınıfı türü "`override`" ardından bir boşluk. IntelliSense, geçersiz kılabilirsiniz yöntemlerin listesini gösterir. Her komut, adları başlamak yöntemleri bir çift olan "`ProcessOnStatus`"ve"`ProcessOnMenu`".
 
-4.  Sınıfı, komutunun başarısını Not değiştirmek istediğiniz komutu içerir.
+4. Sınıfı, komutunun başarısını Not değiştirmek istediğiniz komutu içerir.
 
-5.  Dosyayı, yaptığınız düzenlemeleri kaydetmeden kapatın.
+5. Dosyayı, yaptığınız düzenlemeleri kaydetmeden kapatın.
 
     > [!NOTE]
     > Genellikle, oluşturulan dosyaları düzenleme yapmamanız gerekir. Tüm düzenlemeleri dosyalar oluşturulur bir sonraki açışınızda kaybolur.
@@ -47,15 +47,15 @@ Komut kümesi sınıfının bir kısmi bildirimi içeren yeni bir dosya oluştur
 
 ### <a name="to-extend-the-command-set-class"></a>Set sınıfı komutu genişletmek için
 
-1.  DslPackage projesindeki Çözüm Gezgini'nde GeneratedCode klasörü açın ve konum altında CommandSet.tt CommandSet.cs oluşturulan dosyasını açabilir. Ad alanı ve orada tanımladığınız ilk sınıf adını not edin. Örneğin, aşağıdaki görebilirsiniz:
+1. DslPackage projesindeki Çözüm Gezgini'nde GeneratedCode klasörü açın ve konum altında CommandSet.tt CommandSet.cs oluşturulan dosyasını açabilir. Ad alanı ve orada tanımladığınız ilk sınıf adını not edin. Örneğin, aşağıdaki görebilirsiniz:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  İçinde **DslPackage**, adlı bir klasör oluşturun **özel kod**. Adlı yeni bir sınıf dosyası bu klasörde, oluşturma `CommandSet.cs`.
+2. İçinde **DslPackage**, adlı bir klasör oluşturun **özel kod**. Adlı yeni bir sınıf dosyası bu klasörde, oluşturma `CommandSet.cs`.
 
-3.  Yeni dosyanın, aynı ad alanı ve üretilen kısmi sınıf ada sahip bir kısmi bildirimi yazın. Örneğin:
+3. Yeni dosyanın, aynı ad alanı ve üretilen kısmi sınıf ada sahip bir kısmi bildirimi yazın. Örneğin:
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ Kodunuzu oluşturma, silme veya öğeleri veya bağlantıları güncelleştirme 
 
 Aşağıdaki parça bu yöntemleri içinde sık kullanışlıdır:
 
--   `this.CurrentSelection`. Kullanıcının sağ şekli şekiller ve bağlayıcılar bu listede her zaman dahil edilir. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.
+- `this.CurrentSelection`. Kullanıcının sağ şekli şekiller ve bağlayıcılar bu listede her zaman dahil edilir. Diyagram kullanıcı diyagramın boş bir kısmına tıklarsa, listeyi yalnızca üyesidir.
 
--   `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.
+- `this.IsDiagramSelected()` - `true` Kullanıcı diyagramın boş bir kısmına tıkladıysanız.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` -Kullanıcı birden çok şekil seçmediniz
+- `this.IsSingleSelection()` -Kullanıcı birden çok şekil seçmediniz
 
--   `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı
+- `this.SingleSelection` -Şekil veya kullanıcı sağ diyagramı
 
--   `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.
+- `shape.ModelElement as MyLanguageElement` -bir şekil tarafından temsil edilen model öğesi.
 
 Nesneler ve bağlantılar oluşturma ve gezinme öğesi başka bir öğe hakkında daha fazla bilgi için bkz: [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -146,7 +146,7 @@ Nesneler ve bağlantılar oluşturma ve gezinme öğesi başka bir öğe hakkın
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Nasıl yapılır: Kısayol Menüsüne Komut Ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML Şeması Başvurusu](../extensibility/vsct-xml-schema-reference.md)

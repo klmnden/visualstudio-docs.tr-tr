@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050679"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 Bir veri kümesindeki belirli kayıtları aramak için kullanın `FindBy` DataTable yöntemi yazma tablonun satır koleksiyon üzerinde döngü veya kullanmak için kendi foreach deyimi [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -33,7 +33,7 @@ Büyük/küçük harfe duyarlılık ancak veri kümesi içinde verileri nasıl y
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Türü belirtilmiş DataSet birincil bir anahtar değere sahip bir satır bulmak için
 
--   Bir satır bulmak için türü kesin belirlenmiş çağrı `FindBy` tablonun birincil anahtarı kullanan bir yöntem.
+- Bir satır bulmak için türü kesin belirlenmiş çağrı `FindBy` tablonun birincil anahtarı kullanan bir yöntem.
 
      Aşağıdaki örnekte, `CustomerID` sütundur birincil anahtarı `Customers` tablo. Oluşturulan buna `FindBy` yöntemi `FindByCustomerID`. Örnek, belirli bir atama gösterir <xref:System.Data.DataRow> kullanarak oluşturulan bir değişkene `FindBy` yöntemi.
 
@@ -42,7 +42,7 @@ Büyük/küçük harfe duyarlılık ancak veri kümesi içinde verileri nasıl y
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Birincil bir anahtar değere sahip yazılmamış bir veri kümesi bir satır bulunamadı
 
--   Çağrı <xref:System.Data.DataRowCollection.Find%2A> yöntemi bir <xref:System.Data.DataRowCollection> birincil anahtarı bir parametre olarak geçirerek koleksiyonu.
+- Çağrı <xref:System.Data.DataRowCollection.Find%2A> yöntemi bir <xref:System.Data.DataRowCollection> birincil anahtarı bir parametre olarak geçirerek koleksiyonu.
 
      Aşağıdaki örnekte adlı yeni bir satır bildirmek gösterilmektedir `foundRow` ve dönüş değerini atayın <xref:System.Data.DataRowCollection.Find%2A> yöntemi. Birincil anahtar bulunursa, sütun dizini 1 içeriğini bir ileti kutusunda görüntülenir.
 
@@ -53,7 +53,7 @@ Büyük/küçük harfe duyarlılık ancak veri kümesi içinde verileri nasıl y
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Herhangi bir sütun değerlere göre satır bulmak için
 
--   Veri tabloları ile oluşturulur <xref:System.Data.DataTable.Select%2A> bir dizi döndüren yöntemi <xref:System.Data.DataRow>s ifadeye göre geçirilen <xref:System.Data.DataTable.Select%2A> yöntemi. Geçerli ifadeler oluşturma hakkında daha fazla bilgi için sayfanın "İfadesi söz dizimi" bölümüne bakın <xref:System.Data.DataColumn.Expression%2A> özelliği.
+- Veri tabloları ile oluşturulur <xref:System.Data.DataTable.Select%2A> bir dizi döndüren yöntemi <xref:System.Data.DataRow>s ifadeye göre geçirilen <xref:System.Data.DataTable.Select%2A> yöntemi. Geçerli ifadeler oluşturma hakkında daha fazla bilgi için sayfanın "İfadesi söz dizimi" bölümüne bakın <xref:System.Data.DataColumn.Expression%2A> özelliği.
 
      Aşağıdaki örnek nasıl kullanılacağını gösterir <xref:System.Data.DataTable.Select%2A> yöntemi <xref:System.Data.DataTable> belirli satırlar bulunacak.
 
@@ -72,24 +72,24 @@ Bu sayfa, türü belirlenmiş veri kümelerini kullanan örnekler sağlar. Yazı
 
 Aşağıdaki kod örnekleri, yazılan veri kümelerindeki ilişkiler yukarı ve aşağı gitmek nasıl ekleyebileceğiniz gösterilmektedir. Yazılan kod örneklerini kullanımı <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) ve oluşturulan FindBy*PrimaryKey* (`FindByCustomerID`) istenen satırı bulun ve ilgili kayıtları döndürmek için yöntemleri. Örnekleri derleme ve yalnızca varsa doğru bir şekilde çalıştırın:
 
--   Adlı bir veri kümesi örneği `NorthwindDataSet` ile bir `Customers` tablo.
+- Adlı bir veri kümesi örneği `NorthwindDataSet` ile bir `Customers` tablo.
 
--   Bir `Orders` tablo.
+- Bir `Orders` tablo.
 
--   Adlı bir ilişki `FK_Orders_Customers`iki tablo ilgili.
+- Adlı bir ilişki `FK_Orders_Customers`iki tablo ilgili.
 
 Ayrıca, her iki tablonun döndürülecek herhangi bir kayıt için verilerle doldurulması gerekir.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Alt seçili üst kaydının kayıtları döndürmek için
 
--   Çağrı <xref:System.Data.DataRow.GetChildRows%2A> belirli bir yöntemi `Customers` veri satır ve bir dizi satır döndürür `Orders` tablosu:
+- Çağrı <xref:System.Data.DataRow.GetChildRows%2A> belirli bir yöntemi `Customers` veri satır ve bir dizi satır döndürür `Orders` tablosu:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Seçilen alt kaydının üst kaydı döndürmek için
 
--   Çağrı <xref:System.Data.DataRow.GetParentRow%2A> belirli bir yöntemi `Orders` veri satırı ve tek bir satır gelen dönüş `Customers` tablosu:
+- Çağrı <xref:System.Data.DataRow.GetParentRow%2A> belirli bir yöntemi `Orders` veri satırı ve tek bir satır gelen dönüş `Customers` tablosu:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

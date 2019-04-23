@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065188"
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ ms.locfileid: "59649244"
   
  **Bu konuda:**  
   
--   [Özellik işlevi sözdizimi](#BKMK_Syntax)  
+- [Özellik işlevi sözdizimi](#BKMK_Syntax)  
   
-    -   [Dize özelliği işlevleri](#BKMK_String)  
+    - [Dize özelliği işlevleri](#BKMK_String)  
   
-    -   [Statik özellik işlevleri](#BKMK_Static)  
+    - [Statik özellik işlevleri](#BKMK_Static)  
   
-    -   [Statik özellikler örnek yöntemleri çağırma](#BKMK_InstanceMethods)  
+    - [Statik özellikler örnek yöntemleri çağırma](#BKMK_InstanceMethods)  
   
-    -   [MSBuild özellik işlevleri](#BKMK_PropertyFunctions)  
+    - [MSBuild özellik işlevleri](#BKMK_PropertyFunctions)  
   
--   [İç içe özellik işlevleri](#BKMK_Nested)  
+- [İç içe özellik işlevleri](#BKMK_Nested)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild Makerelatıve](#BKMK_MakeRelative)  
+- [MSBuild Makerelatıve](#BKMK_MakeRelative)  
   
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> Özellik işlevi sözdizimi  
+## <a name="BKMK_Syntax"></a> Özellik işlevi sözdizimi  
  Özellik işlevleri üç tür şunlardır; Her işlev, farklı bir sözdizimi vardır:  
   
--   Dize (örnek) özellik işlevleri  
+- Dize (örnek) özellik işlevleri  
   
--   Statik özellik işlevleri  
+- Statik özellik işlevleri  
   
--   MSBuild özellik işlevleri  
+- MSBuild özellik işlevleri  
   
-###  <a name="BKMK_String"></a> Dize özelliği işlevleri  
+### <a name="BKMK_String"></a> Dize özelliği işlevleri  
  Tüm yapı özelliği yalnızca dize değerleri değerlerdir. Herhangi bir özelliğin üzerinde çalışılacak dize (örnek) yöntemlerini kullanabilirsiniz. Örneğin, bu kodu kullanarak tam yolu temsil eden bir yapı özelliğinden sürücü adı (ilk üç karakter) ayıklayın:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Statik özellik işlevleri  
+### <a name="BKMK_Static"></a> Statik özellik işlevleri  
  Derleme betiğinizin statik özelliklerine ve birçok sistem sınıfının yöntemlerine erişebilirsiniz. Statik bir özelliğin değerini almak için aşağıdaki sözdizimini kullanın burada *sınıfı* sistem sınıf adıdır ve *özelliği* özelliğin adıdır.  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ ms.locfileid: "59649244"
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Statik özellikler örnek yöntemleri çağırma  
+### <a name="BKMK_InstanceMethods"></a> Statik özellikler örnek yöntemleri çağırma  
  Bir nesne örneğini döndüren statik özelliğe erişirse, o nesnenin örnek yöntemler çağırabilirsiniz. Bir örnek yöntemi çağırmak için aşağıdaki sözdizimini kullanın burada *sınıfı* sistem sınıfı adı *özelliği* özellik adı *yöntemi* adıdır yöntemi, ve *(Parametreler)* yöntem için parametre listesi:  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ ms.locfileid: "59649244"
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> MSBuild özellik işlevleri  
+### <a name="BKMK_PropertyFunctions"></a> MSBuild özellik işlevleri  
  Aritmetik, bit düzeyinde sağlamak için derleme çeşitli statik yöntemler erişilebilir mantıksal ve kaçış karakteri desteği. Aşağıdaki söz dizimini kullanarak bu yöntemlere erişmek burada *yöntemi* yöntemi adıdır ve *parametreleri* yöntem için parametre listesi.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ ms.locfileid: "59649244"
 |int BitwiseXor (int ilk, int saniye)|Bit düzeyinde gerçekleştirmek `XOR` ilk ve ikinci (ilk ^ ikinci).|  
 |int BitwiseNot(int first)|Bit düzeyinde gerçekleştirmek `NOT` (~ ilk).|  
   
-##  <a name="BKMK_Nested"></a> İç içe özellik işlevleri  
+## <a name="BKMK_Nested"></a> İç içe özellik işlevleri  
  Özellik işlevleri aşağıdaki örnekte gösterildiği gibi daha karmaşık, işlev forma birleştirebilirsiniz.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ ms.locfileid: "59649244"
   
  Meta veri özellik iç içe geçmiş işlevlerde de görünebilir. Daha fazla bilgi için [toplu işleme](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  `DoesTaskHostExist` MSBuild özelliği işlevinde bir görev ana bilgisayarı için belirtilen çalışma zamanı ve mimari değerleri yüklü olup olmadığını döndürür.  
   
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
@@ -225,7 +225,7 @@ ms.locfileid: "59649244"
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` özelliği işlevi, bir dosya yolunda geçerli dizinin üzerindeki dizinlerde arar.  
   
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  MSBuild `GetRegistryValue` özelliği işlevi bir kayıt defteri anahtarı değerini döndürür. Bu işlev, iki bağımsız değişkeni, anahtar adı ve değeri adını alır ve kayıt defterinden değeri döndürür. Değer adı belirtmezseniz, varsayılan değer döndürülür.  
   
  Aşağıdaki örnekler, bu işlevin nasıl kullanıldığını açıklar:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  MSBuild `GetRegistryValueFromView` özelliği işlevi alır sistem kayıt defteri verilerini verilen kayıt defteri anahtarı, değer ve bir veya daha fazla kayıt görünümleri sıralı. Bunlar bulunmayana kadar sırayla her bir kayıt defteri görünümü'nde anahtar ve değer aranır.  
   
  Bu özelliği işlevi için sözdizimi aşağıdaki gibidir:  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  64-bit kayıt defteri görünümü ve ardından 32-bit kayıt defteri görünümü ilk bakarak Referenceassembly'ler anahtarının SLRuntimeInstallPath verilerini alır.  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild Makerelatıve  
+## <a name="BKMK_MakeRelative"></a> MSBuild Makerelatıve  
  MSBuild `MakeRelative` özelliği işlevi ilk yol göreli ikinci yol göreli yolunu döndürür. Her yol, dosya veya klasör olabilir.  
   
  Bu özellik işlev sözdizimi aşağıdaki gibidir:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  MSBuild `ValueOrDefault` özelliği işlevi, null veya boş değilse ilk bağımsız değişkeni döndürür. İlk bağımsız değişken null veya boş ise, işlev, ikinci bağımsız değişkeni döndürür.  
   
  Aşağıdaki örnek, bu işlevin nasıl kullanıldığını gösterir.  

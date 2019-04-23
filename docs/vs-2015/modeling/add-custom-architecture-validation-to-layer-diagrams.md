@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045890"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Katman diyagramlarına özel mimari doğrulaması ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
    >  Okunabilmesini sağlamak şablonu çalışmak düzgün şekilde:  
    > 
    > - Çağrılarını düzenleyin `LogValidationError` isteğe bağlı bağımsız değişkenlerini kaldırmak için `errorSourceNodes` ve `errorTargetNodes`.  
-   >   -   Özel özellikleri kullanırsanız, belirtilen güncelleştirmesini [katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Özel özellikleri kullanırsanız, belirtilen güncelleştirmesini [katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Doğrulamanızı tanımlamak için kodu düzenleyin. Daha fazla bilgi için [doğrulamayı programlama](#programming).  
   
@@ -67,19 +67,19 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Ayrı bir VSIX'e katman doğrulaması eklemek için  
   
-1.  Yeni veya mevcut bir Visual Studio çözümünde bir sınıf kitaplığı projesi oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve ardından **sınıf kitaplığı**. Bu proje, katman doğrulama sınıfını içerir.  
+1. Yeni veya mevcut bir Visual Studio çözümünde bir sınıf kitaplığı projesi oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve ardından **sınıf kitaplığı**. Bu proje, katman doğrulama sınıfını içerir.  
   
-2.  Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. VSIX projesi eklemeniz gerekiyorsa, şu adımları izleyin:  
+2. Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. VSIX projesi eklemeniz gerekiyorsa, şu adımları izleyin:  
   
-    1.  İçinde **yeni proje** iletişim kutusunda **Visual C#**, **genişletilebilirlik**, **VSIX projesi**.  
+    1. İçinde **yeni proje** iletişim kutusunda **Visual C#**, **genişletilebilirlik**, **VSIX projesi**.  
   
-    2.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **başlangıç projesi olarak ayarla**.  
+    2. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **başlangıç projesi olarak ayarla**.  
   
-3.  İçinde **source.extension.vsixmanifest**altında **varlıklar**, katman doğrulama projesini MEF Bileşeni ekleyin:  
+3. İçinde **source.extension.vsixmanifest**altında **varlıklar**, katman doğrulama projesini MEF Bileşeni ekleyin:  
   
-    1.  Seçin **yeni**.  
+    1. Seçin **yeni**.  
   
-    2.  İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:  
+    2. İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:  
   
          **Type** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -87,11 +87,11 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
          **Proje** = *Doğrulayıcı projenizi*  
   
-4.  Bu katman doğrulaması olarak da eklemelisiniz:  
+4. Bu katman doğrulaması olarak da eklemelisiniz:  
   
-    1.  Seçin **yeni**.  
+    1. Seçin **yeni**.  
   
-    2.  İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:  
+    2. İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:  
   
          **Tür** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu açılır listedeki seçeneklerden birini değildir. Bunu klavyeden girmeniz gerekir.  
   
@@ -99,7 +99,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
          **Proje** = *Doğrulayıcı projenizi*  
   
-5.  Katman doğrulama projesine dön ve aşağıdaki proje başvurularını ekleyin:  
+5. Katman doğrulama projesine dön ve aşağıdaki proje başvurularını ekleyin:  
   
     |**Başvuru**|**Bunu yapmak sağlar**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
     |System.ComponentModel.Composition|Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak doğrulama bileşenini tanımla|  
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Modelleme uzantılarını tanımla|  
   
-6.  Bu konunun sonundaki örnek kod, doğrulama kodunu içeren Doğrulayıcı kitaplık projesinin sınıf dosyasına kopyalayın. Daha fazla bilgi için [doğrulamayı programlama](#programming).  
+6. Bu konunun sonundaki örnek kod, doğrulama kodunu içeren Doğrulayıcı kitaplık projesinin sınıf dosyasına kopyalayın. Daha fazla bilgi için [doğrulamayı programlama](#programming).  
   
-7.  Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
+7. Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
     > [!NOTE]
     >  Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
-8.  Ana örneğine VSIX'i yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'ndeki VSIX dosyasına çift tıklayın. (Windows 8'de dosya Gezgini.)  
+8. Ana örneğine VSIX'i yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'ndeki VSIX dosyasına çift tıklayın. (Windows 8'de dosya Gezgini.)  
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
-##  <a name="programming"></a> Programlama doğrulaması  
+## <a name="programming"></a> Programlama doğrulaması  
  Katman doğrulama uzantısı tanımlamak için aşağıdaki özelliklere sahip bir sınıf tanımlayın:  
   
 - Bildirimin genel biçimi aşağıdaki gibidir:  
@@ -190,7 +190,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
   Öğeleri kodda katmanlardan bağlantılar "Temsil" Bu kategoriye atanmış.  
   
-##  <a name="debugging"></a> Hata ayıklama doğrulama  
+## <a name="debugging"></a> Hata ayıklama doğrulama  
  Katman doğrulama uzantınıza hata ayıklamak için CTRL + F5 tuşlarına basın. Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model, kodu ile ilişkilendirilmiş olmalıdır ve en az bir bağımlılığı olmalıdır.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Bağımlılıklar içeren bir çözümü test etme  
@@ -217,7 +217,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 ### <a name="deploying-a-validation-extension"></a>Geçerlilik uzatmayı dağıtma  
  Doğrulama uzantınızı, uygun bir sürüm, Visual Studio'nun yüklü olduğu bir bilgisayara yüklemek için hedef bilgisayarda VSIX dosyasını açın. Bir bilgisayara yüklemek için [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] olan yüklü, el ile VSIX içeriğini bir uzantılar klasörüne ayıklamanız gerekir. Daha fazla bilgi için [bir katman modeli uzantısı dağıtma](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Örnek kod  
+## <a name="example"></a> Örnek kod  
   
 ```csharp  
 using System;  

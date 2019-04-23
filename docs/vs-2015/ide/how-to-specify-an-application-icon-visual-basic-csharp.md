@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045788"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Nasıl yapılır: Uygulama simgesi belirtme (Visual Basic C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "54788171"
   
 ### <a name="to-specify-an-application-icon"></a>Uygulama simgesi belirtmek için  
   
-1.  İçinde **Çözüm Gezgini**, bir proje düğümü seçin (değil **çözüm** düğümü).  
+1. İçinde **Çözüm Gezgini**, bir proje düğümü seçin (değil **çözüm** düğümü).  
   
-2.  Menü çubuğunda, **proje**, **özellikleri**.  
+2. Menü çubuğunda, **proje**, **özellikleri**.  
   
-3.  Zaman **Proje Tasarımcısı** görüntülenirse, seçin **uygulama** sekmesi.  
+3. Zaman **Proje Tasarımcısı** görüntülenirse, seçin **uygulama** sekmesi.  
   
-4.  **(Visual Basic)**  İçinde **simgesi** listesinde, bir simge (.ico) dosyasını seçin.  
+4. **(Visual Basic)**  İçinde **simgesi** listesinde, bir simge (.ico) dosyasını seçin.  
   
      **C#** neredeyse **simgesi** listesinde  **\<Gözat … >** düğmesini ve ardından istediğiniz simge dosyasının konumuna göz atın.  
   

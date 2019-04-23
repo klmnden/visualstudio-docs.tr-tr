@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: e36d4064afe11e3b2ed588fa5a5c62b21e179bc5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ef9b609b74b878a2d9bdafb087481ad1c6e79a70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053786"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
 
@@ -48,12 +48,14 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
     ```bash
     cd /location/of/file
     ```
+
 3. Yürütülebilir kod ve çalışma ile **sudo**:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Son olarak, kaldırma betiğini silin.
 
 ### <a name="net-core-script"></a>.NET core komut dosyası
@@ -68,12 +70,14 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
     ```bash
     cd /location/of/file
     ```
+
 3. Yürütülebilir kod ve çalışma ile **sudo**:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Son olarak, .NET Core kaldırma betiğini silin.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırın

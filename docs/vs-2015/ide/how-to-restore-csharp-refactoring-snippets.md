@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050818"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Nasıl yapılır: Geri yükleme C# yeniden düzenleme kod parçacıklarını
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ C# yeniden düzenleme işlemleri aşağıdaki dizinde bulunan kod parçacıklar�
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>C# doğrulamak için yeniden düzenleme kod parçacıklarını kod parçacığı Yöneticisi aracılığıyla kullanılabilir  
   
-1.  İçinde **Araçları** menüsünde **kod parçacığı Yöneticisi**.  
+1. İçinde **Araçları** menüsünde **kod parçacığı Yöneticisi**.  
   
-2.  İçinde **kod parçacığı Yöneticisi** iletişim kutusunda **Visual C#** gelen **dil** aşağı açılan listesi.  
+2. İçinde **kod parçacığı Yöneticisi** iletişim kutusunda **Visual C#** gelen **dil** aşağı açılan listesi.  
   
      A **yeniden düzenleme** klasör ağaç görünümü klasörü listede görünür.  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>Yeniden düzenleme geri yüklemek için kod parçacığı Yöneticisi'nde açıklama bkz:  
   
-1.  Varsa **yeniden düzenleme** klasörü değil ağaç görünümü klasörü kod parçacığı Yöneticisi'nin listede, ardından yeniden düzenleme kod parçacıklarını geri kod parçacığı Yöneticisi olarak eklemek için bu yordamı kullanın.  
+1. Varsa **yeniden düzenleme** klasörü değil ağaç görünümü klasörü kod parçacığı Yöneticisi'nin listede, ardından yeniden düzenleme kod parçacıklarını geri kod parçacığı Yöneticisi olarak eklemek için bu yordamı kullanın.  
   
-2.  İçinde **Araçları** menüsünde **kod parçacığı Yöneticisi**.  
+2. İçinde **Araçları** menüsünde **kod parçacığı Yöneticisi**.  
   
-3.  İçinde **kod parçacığı Yöneticisi** iletişim kutusunda **Visual C#** gelen **dil** aşağı açılan listesi.  
+3. İçinde **kod parçacığı Yöneticisi** iletişim kutusunda **Visual C#** gelen **dil** aşağı açılan listesi.  
   
-4.  **Ekle**'yi tıklatın. **Kod parçacıkları dizini** bulun ve geri kod parçacığı Yöneticisi olarak eklemek için dizin belirtmenize yardımcı olur, iletişim kutusu görüntülenir.  
+4. **Ekle**'yi tıklatın. **Kod parçacıkları dizini** bulun ve geri kod parçacığı Yöneticisi olarak eklemek için dizin belirtmenize yardımcı olur, iletişim kutusu görüntülenir.  
   
-5.  Bulun **yeniden düzenleme** klasörü dizin yolu:  
+5. Bulun **yeniden düzenleme** klasörü dizin yolu:  
   
      *Yükleme dizini*\Microsoft Visual Studio 14.0\VC#\Snippets\\*dil kimliği*\Refactoring  
   
@@ -54,7 +54,7 @@ C# yeniden düzenleme işlemleri aşağıdaki dizinde bulunan kod parçacıklar�
   
      C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
-6.  Tıklayın **açık** içinde **kod parçacıkları dizini** iletişim kutusunu ve ardından **Tamam** kod parçacıkları Yöneticisi'nde.  
+6. Tıklayın **açık** içinde **kod parçacıkları dizini** iletişim kutusunu ve ardından **Tamam** kod parçacıkları Yöneticisi'nde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md)   

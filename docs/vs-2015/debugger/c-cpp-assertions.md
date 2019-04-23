@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5aa51fdf7d0c2537de3c301efa7efb7fe6ce96f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050563"
 ---
 # <a name="cc-assertions"></a>C/C++ Onayları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bir onay deyimi programınızda herhangi bir noktada doğru olması beklenen bir
 
   Onaylamalar mantık hataları catch, bir işlemin sonuçlarını denetleyin ve işlenen hata koşulları Test için kullanabilirsiniz.  
 
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Onaylamalar nasıl çalışır?](#BKMK_How_assertions_work)  
 
  [Hata ayıklama ve yayın yapılarında onaylar](#BKMK_Assertions_in_Debug_and_Release_builds)  
@@ -76,17 +76,17 @@ Bir onay deyimi programınızda herhangi bir noktada doğru olması beklenen bir
 
 - [İşlenmemiş bulma hataları](#BKMK_Testing_error_conditions_)  
 
-##  <a name="BKMK_How_assertions_work"></a> Onaylamalar nasıl çalışır?  
+## <a name="BKMK_How_assertions_work"></a> Onaylamalar nasıl çalışır?  
  Hata ayıklayıcı nedeniyle MFC veya C çalışma zamanı kitaplığı onaylama durdurduğunda kaynak kullanılabiliyorsa, ardından hata ayıklayıcı onaylama oluştuğu kaynak dosyadaki noktasına gider. Onaylama ileti hem de görünür [çıkış penceresine](../ide/reference/output-window.md) ve **onaylama işlemi başarısız oldu** iletişim kutusu. Onaylama ileti kopyalayabilirsiniz **çıkış** penceresinde bir metin penceresine başvurulmak üzere kaydetmek istiyorsanız. **Çıkış** penceresi, diğer hata iletileri de içerebilir. Hatanın nedenini onaylama için ipuçları sağlar çünkü bu iletiler dikkatlice inceleyin.  
 
  Onaylar, geliştirme sırasında hataları algılamak için kullanın. Bir kural olarak, bir onaylama için her bir varsayım kullanın. Örneğin, bir bağımsız değişken NULL değil olduğunu varsayarsak, onaylama bu varsayımı test etmek için kullanın.  
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Hata ayıklama ve yayın yapılarında onaylar  
+## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Hata ayıklama ve yayın yapılarında onaylar  
  Onaylama deyimleri yalnızca derleme `_DEBUG` tanımlanır. Aksi halde, derleyici onaylar boş deyimler değerlendirir. Bu nedenle onaylama deyimleri zahmetine zorunlu kılmadan veya performans maliyeti, son yayın programınızda ve kullanmaktan kaçınmak izin `#ifdef` yönergeleri.  
 
-##  <a name="BKMK_Side_effects_of_using_assertions"></a> Onayları kullanarak yan etkileri  
+## <a name="BKMK_Side_effects_of_using_assertions"></a> Onayları kullanarak yan etkileri  
  Onaylamalar kodunuza ekleyin, onaylamalar yan etkisi yok emin olun. Örneğin, aşağıdaki onay değiştiren düşünün `nM` değeri:  
 
 ```  
@@ -107,7 +107,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_CRT_assertions"></a> CRT onaylar  
+## <a name="BKMK_CRT_assertions"></a> CRT onaylar  
  CRTDBG. H üstbilgi dosyası tanımlar [_ASSERT ve _ASSERTE makroları](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) onaylama işlemi denetimi.  
 
 |   Makrosu    |                                             Sonuç                                              |
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_MFC_assertions"></a> MFC onaylar  
+## <a name="BKMK_MFC_assertions"></a> MFC onaylar  
  MFC tanımlar [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) onaylama işlemi denetimi makrosu. Ayrıca tanımlar `MFC ASSERT_VALID` ve `CObject::AssertValid` iç durumunu denetleme yöntemleri bir `CObject`-türetilmiş bir nesneye.  
 
  MFC bağımsız değişkeni `ASSERT` makrosu sıfır olarak değerlendirilen veya yanlış makro programın yürütülmesini durdurur ve kullanıcıyı uyarır, aksi takdirde, yürütme devam eder.  
@@ -181,7 +181,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 
  `ASSERT` Makrosu yayın sürümünde kod üretir. Yayın sürümünü ifadesinde değerlendirilecek ihtiyacınız varsa [doğrulama](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) ASSERT yerine makrosu.  
 
-###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC assert_valıd ve CObject::AssertValid  
+### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC assert_valıd ve CObject::AssertValid  
  [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) yöntemi sağlar çalışma zamanı, bir nesnenin iç durumunu denetler. Geçersiz kılma gerekmez ancak `AssertValid` türetilen, sizin sınıfınızdan `CObject`, bunu yaparak, sınıfınıza daha güvenilir yapabilirsiniz. `AssertValid` Onaylamalar tüm geçerli değerleri içerdiğini doğrulamak için üye değişkenleri nesnenin gerçekleştirmeniz gerekir. Örneğin, işaretçi üye değişkenleri NULL olmadığını denetlemelisiniz.  
 
  Aşağıdaki örnek nasıl belirtileceğini gösteren bir `AssertValid` işlevi:  
@@ -266,14 +266,14 @@ void CMyData::AssertValid( ) const
 
  Hata ayıklama için oluştururken güçlü bir mekanizma budur. Daha sonra için yayın oluşturma sırasında mekanizma otomatik olarak kapatılır.  
 
-###  <a name="BKMK_Limitations_of_AssertValid"></a> AssertValid sınırlamaları  
+### <a name="BKMK_Limitations_of_AssertValid"></a> AssertValid sınırlamaları  
  Tetiklenmiş bir onaylama işlemi kesinlikle hatalı bir nesnedir ve yürütmesi durdurulur gösterir. Ancak, onaylama işlemi eksikliği yalnızca hiçbir sorun bulunamadı, ancak nesne iyi olmasını garanti edilmez gösterir.  
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-##  <a name="BKMK_Using_assertions"></a> Onaylamalar kullanma  
+## <a name="BKMK_Using_assertions"></a> Onaylamalar kullanma  
 
-###  <a name="BKMK_Catching_logic_errors"></a> Mantık hatalarını yakalama  
+### <a name="BKMK_Catching_logic_errors"></a> Mantık hatalarını yakalama  
  Onaylama programınızı mantığına göre true olması gereken bir koşul ayarlayabilirsiniz. Mantıksal bir hata gerçekleşmediği sürece onaylama bir etkisi yoktur.  
 
  Örneğin, bir kapsayıcı ve değişken gaz molecules benzetimi, varsayalım `numMols` molecules toplam sayısını temsil eder. Bu sayı kullanılamaz olması böyle bir MFC onay deyimi içerebilir. Bu nedenle, sıfırdan küçüktür:  
@@ -293,7 +293,7 @@ _ASSERT(numMols >= 0);
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Checking_results_"></a> Sonuçları denetleniyor  
+### <a name="BKMK_Checking_results_"></a> Sonuçları denetleniyor  
  Onaylar, test sonuçlarını hızlı görsel denetim belirgin olmayan operations değerlidir.  
 
  Örneğin, değişken güncelleştirmeleri aşağıdaki kodu düşünün `iMols` işaret ettiği bağlantılı listenin içeriğine göre `mols`:  
@@ -316,7 +316,7 @@ _ASSERT(iMols<=numMols); // CRT version
 
  [Bu konudaki](#BKMK_In_this_topic)  
 
-###  <a name="BKMK_Testing_error_conditions_"></a> İşlenmemiş bulma hataları  
+### <a name="BKMK_Testing_error_conditions_"></a> İşlenmemiş bulma hataları  
  Onaylar, burada herhangi bir hata işlenmiş olan bir noktada hata koşulları için kodunuzu test etmek için kullanabilirsiniz. Aşağıdaki örnekte, bir grafik yordamı bir hata kodu veya başarı için sıfır döndürür.  
 
 ```  

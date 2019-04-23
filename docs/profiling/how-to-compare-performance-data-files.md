@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbf430358dce0ac57dfe5ef36ff8e8861ea0ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043639"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Nasıl yapılır: Performans veri dosyalarını karşılaştırma
 İki farklı profil oluşturucu veri dosyalarının sonuçları karşılaştırmak (. *Vsp* veya. *vsps*) bir karşılaştırması ("fark") oluşturarak, rapor veya görüntüleyin. Farklar, performans gerilemeleri ve bir profil oluşturma oturumundan diğerine oluştu iyileştirmeleri karşılaştırmasını gösterir.
@@ -31,28 +31,28 @@ ms.locfileid: "56645309"
 
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Performans Gezgini içinde bir proje için karşılaştırma dosya görünümü oluşturmak için
 
-1.  İçinde **performans Gezgini**altında **raporları**seçin. *Vsp* veya. *vsps* taban çizgisi değerlerini karşılaştırma için kullanmak istediğiniz rapor dosyası.
+1. İçinde **performans Gezgini**altında **raporları**seçin. *Vsp* veya. *vsps* taban çizgisi değerlerini karşılaştırma için kullanmak istediğiniz rapor dosyası.
 
-2.  Seçin. *vsp* veya. *vsps* rapor karşılaştırmak istediğiniz dosyaları.
+2. Seçin. *vsp* veya. *vsps* rapor karşılaştırmak istediğiniz dosyaları.
 
-3.  Seçilen dosyalardan birine sağ tıklayın ve ardından **karşılaştırma raporları**.
+3. Seçilen dosyalardan birine sağ tıklayın ve ardından **karşılaştırma raporları**.
 
 ### <a name="to-compare-values"></a>Değerleri karşılaştırmak için
 
-1.  Seçin **Karşılaştırma raporu** rapor görünümü penceresindeki sekmesi.
+1. Seçin **Karşılaştırma raporu** rapor görünümü penceresindeki sekmesi.
 
-2.  İçinde **tablo** aşağı açılan listesinde, işlev veya karşılaştırmak için modülleri seçin.
+2. İçinde **tablo** aşağı açılan listesinde, işlev veya karşılaştırmak için modülleri seçin.
 
-3.  İçinde **sütun** aşağı açılan listesinde, karşılaştırmak istediğiniz değer seçin.
+3. İçinde **sütun** aşağı açılan listesinde, karşılaştırmak istediğiniz değer seçin.
 
-4.  (isteğe bağlı) İçin bir değer yazın **eşiği**.
+4. (isteğe bağlı) İçin bir değer yazın **eşiği**.
 
-5.  **Uygula**'ya tıklayın.
+5. **Uygula**'ya tıklayın.
 
 ### <a name="to-compare-report-files"></a>Rapor dosyalarını karşılaştırma
 
-1.  Üzerinde **Çözümle** menüsünde **Performans raporlarını Karşılaştır**.
+1. Üzerinde **Çözümle** menüsünde **Performans raporlarını Karşılaştır**.
 
-2.  İçinde **seçin analiz dosyaları karşılaştırma** penceresinde, Gözat ve Seç **ana hat dosyası** analiz dosyası (. *Vsp* veya. *vsps*) ve **karşılaştırma dosyası** (. *Vsp* veya. *vsps*).
+2. İçinde **seçin analiz dosyaları karşılaştırma** penceresinde, Gözat ve Seç **ana hat dosyası** analiz dosyası (. *Vsp* veya. *vsps*) ve **karşılaştırma dosyası** (. *Vsp* veya. *vsps*).
 
-3.  **Tamam**'ı tıklatın.
+3. **Tamam**'ı tıklatın.

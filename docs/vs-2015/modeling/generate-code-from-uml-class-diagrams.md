@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056165"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML sınıf diyagramları aracılığıyla kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
 2. Bir sınıf diyagramında veya **UML Model Gezgini**, kodu oluşturmak istediğiniz öğeleri seçin. Aşağıdakilerden birini seçebilirsiniz:  
 
-   -   Belirli bir öğe kümesi.  
+   - Belirli bir öğe kümesi.  
 
-   -   İçeriğinden kod oluşturmak için bir paket veya model.  
+   - İçeriğinden kod oluşturmak için bir paket veya model.  
 
-   -   Diyagramdaki tüm öğeleri seçmek için diyagram.  
+   - Diyagramdaki tüm öğeleri seçmek için diyagram.  
 
 3. Seçili öğe için kısayol menüsünü açın ve ardından **kod üret**.  
 
@@ -71,7 +71,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
    Bazı doğrulama testleri, C#'ye çevrilebilmesini sağlamak için modele uygulanır. Bu testler başarısız olursa, bir hata iletisi görüntülenir ve kod oluşturma gerçekleştirilemez. Doğrulama menü komutu oluşturduysanız, doğrulama komutunuzun başarısız olduğu herhangi bir öğe için kod oluşturulmaz. Daha fazla bilgi için [UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Varsayılan kod oluşturma dönüşümleri  
+## <a name="default"></a> Varsayılan kod oluşturma dönüşümleri  
  Bu bölümde tarafından oluşturulan sonuçlar özetlenmektedir **kod üret** komutu özelleştirmediğiniz sürece. Daha fazla bilgi için [Kod Oluştur komutunu özelleştirme](#custom).  
 
 - UML modelinde seçtiğiniz her tür için bir C# türü oluşturulur. Her türü altında ayrı kod dosyasına yerleştirilir **GeneratedCode** klasör.  
@@ -126,7 +126,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
   Her öznitelik ve işlemde ayarlayabileceğiniz stereotip özellikleri de vardır. Yeni bir öznitelikte özellikleri göremiyorsanız çalıştırma **kod üret**.  
 
-##  <a name="custom"></a> Kod Oluştur komutunu özelleştirme  
+## <a name="custom"></a> Kod Oluştur komutunu özelleştirme  
  **Kod üret** metin şablonları kümesi kullanılarak model öğelerinizin dönüştürülmesiyle çalışır komutu. Metin şablonları hakkında daha fazla bilgi için bkz. [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md).  
 
  Şablonlar kümesi içinde belirtilen *metin şablon bağlamaları*. Metin şablon bağlaması, hangi şablon, oluşturulan çıkışın nereye yerleştirileceğini, uygulanması gereken ve diğer parametreleri belirtir **kod üret** komutu.  
@@ -175,7 +175,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
 5. Bir öğeye istediğiniz kadar bağlama ekleyebilirsiniz.  
 
-##  <a name="writing"></a> Metin şablonu yazma  
+## <a name="writing"></a> Metin şablonu yazma  
  Kendi metin şablonlarınızı yazabilirsiniz. Metin şablonları, program kodu veya başka tür bir metin dosyası oluşturabilirsiniz.  
 
  Standart şablonların kopyalarını değiştirerek başlamanızı öneririz. Şablonları aşağıdaki konumlardan kopyalayabilirsiniz:  

@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062615"
 ---
 # <a name="image-library-viewer"></a>Görüntü Kitaplığı Görüntüleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ Visual Studio görüntü kitaplığı Görüntüleyicisi araç, yüklemek ve gö
   
 ## <a name="notes"></a>Notlar  
   
--   Varsayılan olarak, araç, Visual Studio yükleme dizininde mevcut birkaç görüntü bildirimlerinde çeker. Genel olarak kullanılabilir takma ad olan tek **Microsoft.VisualStudio.ImageCatalog** bildirimi. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (yapmak **değil** bu GUID özel bildiriminde geçersiz kılma) türü: KnownMonikers  
+- Varsayılan olarak, araç, Visual Studio yükleme dizininde mevcut birkaç görüntü bildirimlerinde çeker. Genel olarak kullanılabilir takma ad olan tek **Microsoft.VisualStudio.ImageCatalog** bildirimi. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (yapmak **değil** bu GUID özel bildiriminde geçersiz kılma) türü: KnownMonikers  
   
--   Araç, uygulamanın gerçekten görünmesi birkaç saniye sürebilir şekilde bulduğu tüm görüntü bildirimler yük başlatmada çalışır. Ayrıca bildirimler yüklenirken yavaş veya yanıt vermeyen olabilir.  
+- Araç, uygulamanın gerçekten görünmesi birkaç saniye sürebilir şekilde bulduğu tüm görüntü bildirimler yük başlatmada çalışır. Ayrıca bildirimler yüklenirken yavaş veya yanıt vermeyen olabilir.  
   
 ## <a name="sample-output"></a>Örnek Çıktı  
  Bu araç, herhangi bir çıktı üretmez.

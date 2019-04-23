@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1d3904c488186dbbde326619420dd55e71c3af04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054033"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure DevOps hizmetlerinde, Azure kaynak grubu dağıtım projeleri kullanarak sürekli tümleştirme
 
@@ -172,6 +172,7 @@ Aşağıdaki yordamları, Azure DevOps yerleşik görevleri kullanarak Hizmetler
      ```
      -_artifactsLocation $(artifactsLocation) -_artifactsLocationSasToken (ConvertTo-SecureString -String "$(artifactsLocationSasToken)" -AsPlainText -Force)
      ```
+
      ![Azure kaynak grubu dağıtım görevine yapılandırın](media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png)
 7. Gereken tüm öğeleri ekledikten sonra derleme işlem hattı kaydedip seçin **yeni derlemeyi kuyruğa al** en üstünde.
 

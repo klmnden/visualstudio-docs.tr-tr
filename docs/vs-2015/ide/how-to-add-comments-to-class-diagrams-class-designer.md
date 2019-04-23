@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048053"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Açıklama şekilleri sınıf diyagramlarına açıklamalar ekleme için kullana
   
 ### <a name="to-add-a-comment"></a>Açıklama eklemek için  
   
-1.  Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç kutusu** sınıf diyagramına sürükleyebilirsiniz.  
+1. Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç kutusu** sınıf diyagramına sürükleyebilirsiniz.  
   
-2.  Yeni Yorum şekli diyagram üzerinde tıklayın ve istediğiniz metni yazın.  
+2. Yeni Yorum şekli diyagram üzerinde tıklayın ve istediğiniz metni yazın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıf diyagramları (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-class-diagrams-class-designer.md)   
  [Sınıf diyagramları (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-class-diagrams-class-designer.md)   
- [Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Nasıl yapılır: Sınıf Diyagramlarını Özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)

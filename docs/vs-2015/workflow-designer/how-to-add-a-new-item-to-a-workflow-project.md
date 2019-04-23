@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063635"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Nasıl yapılır: Bir İş Akışı Projesine Yeni Öğe Ekleme
 Bir iş akışı projesi oluşturduktan sonra iş akışı etkinlikleri, tasarımcılar ve diğer tanıdık ekleyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projenize öğeleri.  
@@ -30,17 +30,17 @@ Bir iş akışı projesi oluşturduktan sonra iş akışı etkinlikleri, tasarı
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Bir iş akışı projesine yeni bir öğe eklemek için  
   
-1.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle...** .  
+1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle...** .  
   
      **Yeni bir öğe eklemek** iletişim kutusu açılır.  
   
-2.  İçinde **yüklü şablonlar** bölmesinde **iş akışı** grubu.  
+2. İçinde **yüklü şablonlar** bölmesinde **iş akışı** grubu.  
   
-3.  Dört öğelerden birini seçin. Önceki tabloda kullanılabilir seçenekler listelenmiştir.  
+3. Dört öğelerden birini seçin. Önceki tabloda kullanılabilir seçenekler listelenmiştir.  
   
-4.  Öğesi için uygun bir ad yazın **adı** iletişim kutusunun alt kısmındaki kutusu.  
+4. Öğesi için uygun bir ad yazın **adı** iletişim kutusunun alt kısmındaki kutusu.  
   
-5.  Tıklayın **Ekle** geçerli iş akışı projesine öğe eklemek için.  
+5. Tıklayın **Ekle** geçerli iş akışı projesine öğe eklemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065369"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Nasıl yapılır: Web hizmeti testi oluşturma
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Bir web hizmeti test etmek için
 
-1.  Yeni bir web performans testi oluşturun. Tarayıcı açıldığı anda, seçin **Durdur**.
+1. Yeni bir web performans testi oluşturun. Tarayıcı açıldığı anda, seçin **Durdur**.
 
-2.  İçinde **Web Performans Testi Düzenleyicisi**, web performans testi sağ tıklatın ve seçin **Web hizmeti isteği Ekle**.
+2. İçinde **Web Performans Testi Düzenleyicisi**, web performans testi sağ tıklatın ve seçin **Web hizmeti isteği Ekle**.
 
-3.  İçinde **Url** türü adı web hizmetinin gibi yeni isteğin özelliğini **http://localhost/storecsvs/InstantOrder.asmx**.
+3. İçinde **Url** türü adı web hizmetinin gibi yeni isteğin özelliğini **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Ayrı bir tarayıcı oturumu açın ve URL'sini yazın *.asmx* sayfasını **adresi** araç çubuğu. Test ve SOAP iletisi incelemek istediğiniz yöntemi seçin. İçerdiği bir `SOAPAction`.
+4. Ayrı bir tarayıcı oturumu açın ve URL'sini yazın *.asmx* sayfasını **adresi** araç çubuğu. Test ve SOAP iletisi incelemek istediğiniz yöntemi seçin. İçerdiği bir `SOAPAction`.
 
-5.  İçinde **Web Performans Testi Düzenleyicisi**, istek sağ tıklayıp **üst bilgi Ekle** yeni üst bilgi eklemek için. İçinde **adı** özelliği, türü `SOAPAction`. İçinde **değer** özelliği, gördüğünüz değeri yazın `SOAPAction`, gibi `"http://tempuri.org/CheckStatus"`.
+5. İçinde **Web Performans Testi Düzenleyicisi**, istek sağ tıklayıp **üst bilgi Ekle** yeni üst bilgi eklemek için. İçinde **adı** özelliği, türü `SOAPAction`. İçinde **değer** özelliği, gördüğünüz değeri yazın `SOAPAction`, gibi `"http://tempuri.org/CheckStatus"`.
 
-6.  Düzenleyicide URL düğümünü genişletin, seçin **dize gövdesi** düğüm ve **içerik türü** özellik değerini girin `text/xml`.
+6. Düzenleyicide URL düğümünü genişletin, seçin **dize gövdesi** düğüm ve **içerik türü** özellik değerini girin `text/xml`.
 
-7.  4. adımda tarayıcıya dönün, web hizmeti açıklaması sayfasından SOAP isteği XML bölümünü seçin ve panoya kopyalayın.
+7. 4. adımda tarayıcıya dönün, web hizmeti açıklaması sayfasından SOAP isteği XML bölümünü seçin ve panoya kopyalayın.
 
-8.  XML içeriği, aşağıdaki örneğe benzer:
+8. XML içeriği, aşağıdaki örneğe benzer:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

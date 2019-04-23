@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046827"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 
@@ -24,11 +24,11 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 
 İşletmenizi ve projenize DSL ile açıklanan kavramlar özel kümeleri de ilgilidir. Örneğin, bu uygulamaların biri için bir DSL tanımlayabilirsiniz:
 
--   Bir Web sitesi gezinti yollarında planı.
+- Bir Web sitesi gezinti yollarında planı.
 
--   Bağlantı şemaları elektronik bileşenleri için.
+- Bağlantı şemaları elektronik bileşenleri için.
 
--   Taşıyıcı bantları bagaj havaalanı ekipman işleme ve ağlar.
+- Taşıyıcı bantları bagaj havaalanı ekipman işleme ve ağlar.
 
 Bir DSL tasarlarken, tanımladığınız bir *etki alanı sınıfı* her etki alanında, bir web sayfası, lamp veya havaalanı iade masasına gibi önemli kavramları. Tanımladığınız *etki alanı ilişkileri* köprü, hat üzeri ya da kavramları birbirine bağlamak için bir taşıyıcı bandı gibi.
 
@@ -114,12 +114,12 @@ Bir etki alanına özgü dil aşağıdaki faydaları sağlayabilir:
 
 Etki alanına özgü diller kullanan çoğu yazılım geliştirme takımları, oluşturmak ve modellerini kullanmak için aşağıdaki adımları izleyin:
 
--   Takım, etki alanı bölümlerinden asla değiştirme değişkeni bölümlerini birbirinden ayırır.
+- Takım, etki alanı bölümlerinden asla değiştirme değişkeni bölümlerini birbirinden ayırır.
 
--   Geliştiriciler, sabit bölümleri için kod yazma ve değişken parçaları için uzantı noktaları bırakın.
+- Geliştiriciler, sabit bölümleri için kod yazma ve değişken parçaları için uzantı noktaları bırakın.
 
--   Yazılım geliştiricisi veya mimari tasarım desenlerini sabit bölümlerini etki alanı ve değişken parçaları için uzantı noktaları içeren bir etki alanına özgü dil oluşturur.
+- Yazılım geliştiricisi veya mimari tasarım desenlerini sabit bölümlerini etki alanı ve değişken parçaları için uzantı noktaları içeren bir etki alanına özgü dil oluşturur.
 
--   Yazılım geliştiricisi veya Mimarı ekip oluşturan çeşitli uygulamaların geliştiricileri için etki alanına özgü dil dağıtır.
+- Yazılım geliştiricisi veya Mimarı ekip oluşturan çeşitli uygulamaların geliştiricileri için etki alanına özgü dil dağıtır.
 
--   Her geliştirici, belirli bir uygulamaya uygulanan bir model oluşturur.
+- Her geliştirici, belirli bir uygulamaya uygulanan bir model oluşturur.

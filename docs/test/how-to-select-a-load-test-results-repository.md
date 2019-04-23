@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065642"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Nasıl yapılır: Bir yük testi sonuçları deposunu seçme
 
@@ -32,26 +32,26 @@ Test sonuçları, aracılarınız veya yerel bilgisayarınız bir yük testi son
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Yük testi verileri için bir sonuç deposu tanımlayın
 
-1.  İçinde **Çözüm Gezgini**, yük testi dosyanızı açın.
+1. İçinde **Çözüm Gezgini**, yük testi dosyanızı açın.
 
-2.  Gelen **yük testi** araç seçin **Test Denetleyicilerini Yönet**. **Test denetleyicisini Yönet** iletişim kutusu görüntülenir. Aracıyı uzaktan kullanıyorsanız, bir denetleyici seçmeniz gerekir.
+2. Gelen **yük testi** araç seçin **Test Denetleyicilerini Yönet**. **Test denetleyicisini Yönet** iletişim kutusu görüntülenir. Aracıyı uzaktan kullanıyorsanız, bir denetleyici seçmeniz gerekir.
 
      ![Yük testi sonuçları deposunu bağlantı özellikleri](../test/media/loadtestconnectionproperties.png) yük testi sonuçları deposunu bağlantı özellikleri
 
-3.  İçinde **Yük Testi Sonuçları Deposu**, tıklayın **(...)**  görüntülenecek **bağlantı özellikleri** iletişim kutusu.
+3. İçinde **Yük Testi Sonuçları Deposu**, tıklayın **(...)**  görüntülenecek **bağlantı özellikleri** iletişim kutusu.
 
-4.  İçinde **sunucu adı**, çalıştırdığınız sunucunun adını yazın `LoadTest` betikler.
+4. İçinde **sunucu adı**, çalıştırdığınız sunucunun adını yazın `LoadTest` betikler.
 
     > [!TIP]
     > Yük testi deposu için yerel makinenizde SQL Express kullanıyorsanız girin \<bilgisayaradı > \sqlexpress (örneğin, **Bilgisayarım\sqlexpress**).
 
-5.  Altında **sunucuda oturum açın**, seçebileceğiniz **Windows kimlik doğrulamasını kullan**. Kullanıcı adı ve parola belirtebilirsiniz, ancak bunu yaparsanız, seçeneğini belirlemeniz **parolamı Kaydet**.
+5. Altında **sunucuda oturum açın**, seçebileceğiniz **Windows kimlik doğrulamasını kullan**. Kullanıcı adı ve parola belirtebilirsiniz, ancak bunu yaparsanız, seçeneğini belirlemeniz **parolamı Kaydet**.
 
-6.  Altında **veritabanına bağlan**, seçin **bir veritabanı adı seçin veya girin**. Seçin **LoadTest** aşağı açılan liste kutusundan.
+6. Altında **veritabanına bağlan**, seçin **bir veritabanı adı seçin veya girin**. Seçin **LoadTest** aşağı açılan liste kutusundan.
 
-7.  Seçin **Tamam**. Bağlantıyı seçerek sınayabilirsiniz **Bağlantıyı Sına**.
+7. Seçin **Tamam**. Bağlantıyı seçerek sınayabilirsiniz **Bağlantıyı Sına**.
 
-8.  Seçin **Kapat** içinde **Test denetleyicisini Yönet** iletişim kutusu.
+8. Seçin **Kapat** içinde **Test denetleyicisini Yönet** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

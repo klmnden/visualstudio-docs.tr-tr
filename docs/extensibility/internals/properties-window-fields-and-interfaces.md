@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060234"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler Penceresi Alanları ve Arabirimleri
 Seçim, hangi bilgilerin görüntüleneceğini belirlemek modelin **özellikleri** penceresi odaklı IDE'de pencerenin temel alır. Her pencere ve seçili penceresi içinde nesne genel seçimi bağlamına gönderildi, Seçim bağlam nesnesi olabilir. Bu pencere odaklandığında ortamı genel seçim bağlamını pencere çerçevesi değerlerini güncelleştirir. Bu nedenle odağı değiştiğinde seçim bağlamını yapar.
@@ -50,26 +50,26 @@ Tutmak için iki yolla **özellikleri** penceresi özellik değeri değişiklikl
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>Ivsuıshell arabirimini kullanarak özellik değerleri güncelleştirmek için
 
-1.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> hizmeti) bu VSPackages projeleri için istediğiniz zaman veya düzenleyicileri ihtiyaç oluşturmak veya araç veya belge pencerelerinin numaralandırmak.
+1. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> hizmeti) bu VSPackages projeleri için istediğiniz zaman veya düzenleyicileri ihtiyaç oluşturmak veya araç veya belge pencerelerinin numaralandırmak.
 
-2.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> tutmak **özellikleri** penceresini bir projenin özellik değişiklikleri ile eşitlenmiş (veya diğer tarafından konumundayken seçili nesne **özellikleri** pencere) Uygulamaolmadan<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ve tetikleme <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> olayları.
+2. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> tutmak **özellikleri** penceresini bir projenin özellik değişiklikleri ile eşitlenmiş (veya diğer tarafından konumundayken seçili nesne **özellikleri** pencere) Uygulamaolmadan<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ve tetikleme <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> olayları.
 
-3.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> kurmak ve, sırasıyla uygulamak için istemci bildirimini hiyerarşi gerektirmeden hiyerarşi olayların devre dışı bırakmak için <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
+3. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> kurmak ve, sırasıyla uygulamak için istemci bildirimini hiyerarşi gerektirmeden hiyerarşi olayların devre dışı bırakmak için <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
 
 ### <a name="updating-property-values-using-iconnection"></a>Iconnection kullanarak özellik değerlerini güncelleştiriliyor
  Korumak için ikinci yol **özellikleri** özellik değeri değişiklikleri ile eşitlenmiş penceredir uygulamak için `IConnection` bağlanılabilirlik nesnesinde giden arabirimleri varlığını göstermek için. Özellik adı yerelleştirmek istiyorsanız, bir nesneden türetmek <xref:System.ComponentModel.ICustomTypeDescriptor>. <xref:System.ComponentModel.ICustomTypeDescriptor> Uygulama döndürür özellik tanımlayıcılarının değiştirebilir ve bir özelliğin adını değiştirin. Açıklama yerelleştirmek için türetilen bir öznitelik oluşturmak <xref:System.ComponentModel.DescriptionAttribute> ve Description özelliği geçersiz.
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Iconnection arabirimini uygulayan ilişkin düşünceler
 
-1.  `IConnection` Numaralandırıcı alt nesnesiyle erişim sağlar <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. Ayrıca tüm bağlantı noktası alt nesneleri erişim sağlar her uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi.
+1. `IConnection` Numaralandırıcı alt nesnesiyle erişim sağlar <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. Ayrıca tüm bağlantı noktası alt nesneleri erişim sağlar her uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi.
 
-2.  Herhangi bir göz atma nesne uygulamak için sorumlu olduğu bir <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> olay. **Özellikleri** penceresi aracılığıyla olay kümesi için öneri `IConnection`.
+2. Herhangi bir göz atma nesne uygulamak için sorumlu olduğu bir <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> olay. **Özellikleri** penceresi aracılığıyla olay kümesi için öneri `IConnection`.
 
-3.  İsteğe bağlı olarak kaç bağlantıları (bir veya daha fazla) uygulaması içinde sağlayan bir bağlantı noktası denetimleri <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Yalnızca bir arabirim sağlayan bir bağlantı noktası döndürebilir <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> gelen <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> yöntemi.
+3. İsteğe bağlı olarak kaç bağlantıları (bir veya daha fazla) uygulaması içinde sağlayan bir bağlantı noktası denetimleri <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Yalnızca bir arabirim sağlayan bir bağlantı noktası döndürebilir <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> gelen <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> yöntemi.
 
-4.  Bir istemci çağırabilirsiniz `IConnection` erişmek için bir numaralandırıcı alt nesne arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Arabirimi sonra çağrılabilir her giden arabirimi Kimliğini (IID) için bağlantı noktaları numaralandırılamadı.
+4. Bir istemci çağırabilirsiniz `IConnection` erişmek için bir numaralandırıcı alt nesne arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> arabirimi. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Arabirimi sonra çağrılabilir her giden arabirimi Kimliğini (IID) için bağlantı noktaları numaralandırılamadı.
 
-5.  `IConnection` bağlantı noktası alt nesneleri ile erişim sağlamak için çağrılabilir <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> giden her IID için arabirim. Aracılığıyla <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi, bir istemci başlatır veya bağlanılabilirlik nesne ve istemcinin kendi eşitleme ile danışmanlık bir döngüyü sonlandırır. İstemci Ayrıca, çağırabilirsiniz <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> bir sabit listesi nesnesi ile almak için arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> bilir bağlantıları numaralandırmak için arabirim.
+5. `IConnection` bağlantı noktası alt nesneleri ile erişim sağlamak için çağrılabilir <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> giden her IID için arabirim. Aracılığıyla <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> arabirimi, bir istemci başlatır veya bağlanılabilirlik nesne ve istemcinin kendi eşitleme ile danışmanlık bir döngüyü sonlandırır. İstemci Ayrıca, çağırabilirsiniz <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> bir sabit listesi nesnesi ile almak için arabirimi <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> bilir bağlantıları numaralandırmak için arabirim.
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> Özellikler penceresinden alan tanımlarını alma
 Sayfanın alt kısmında **özellikleri** penceresinde bir açıklama alanını seçili özellik alanıyla ilgili bilgileri görüntüler. Bu özellik varsayılan olarak etkinleştirilir. Açıklama alanı gizlemek istiyorsanız, sağ **özellikleri** penceresini açın ve **açıklama**. Bunun yapılması ayrıca kaldırır onay işaretinin yanındaki **açıklama** menü penceresinin başlık. Geçiş yapmak için aynı adımları izleyerek alanı yeniden görüntüleyebilirsiniz **açıklama** yeniden açın.

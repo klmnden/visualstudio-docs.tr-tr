@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2230dab0fc32a6aa4a88c5b4d6254a09caaa9e61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56a3f450cd41db34596c6fd5bbe9b07292aa5070
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055710"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Performans araçları verilerini kaydetme ve dışarı aktarma
 Bu makalede, kaydedin ve performans veri dosyalarını dışarı aktarma açıklanır.
@@ -25,23 +25,23 @@ Bu makalede, kaydedin ve performans veri dosyalarını dışarı aktarma açıkl
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Performans Gezgini'nden bir analiz edilen performans raporu kaydetmek için
 
-1.  Altında **raporları**, analiz edin ve ardından istediğiniz profil oluşturma veri dosyasını sağ tıklatın **Kaydet analiz**.
+1. Altında **raporları**, analiz edin ve ardından istediğiniz profil oluşturma veri dosyasını sağ tıklatın **Kaydet analiz**.
 
-2.  İçinde **analiz verilerini Kaydet** iletişim kutusunda, dizini belirtin ve ardından dosya adını yazın.
+2. İçinde **analiz verilerini Kaydet** iletişim kutusunda, dizini belirtin ve ardından dosya adını yazın.
 
-3.  Tıklayın **kaydedin.**
+3. Tıklayın **kaydedin.**
 
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Rapor Görünümü penceresinden bir performans analiz raporu kaydetmek için
 
-1.  Profil oluşturma verilerinin açın (. *Vsp*) dosyasında rapor görünümü penceresi.
+1. Profil oluşturma verilerinin açın (. *Vsp*) dosyasında rapor görünümü penceresi.
 
-2.  (İsteğe bağlı) Verilere filtre uygulayın. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md).
+2. (İsteğe bağlı) Verilere filtre uygulayın. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md).
 
-3.  Tıklayın **Kaydet analiz** rapor görünümü penceresi araç çubuğu üzerinde.
+3. Tıklayın **Kaydet analiz** rapor görünümü penceresi araç çubuğu üzerinde.
 
-4.  İçinde **analiz verilerini Kaydet** iletişim kutusunda, dizini belirtin ve ardından dosya adını yazın.
+4. İçinde **analiz verilerini Kaydet** iletişim kutusunda, dizini belirtin ve ardından dosya adını yazın.
 
-5.  Tıklayın **kaydedin.**
+5. Tıklayın **kaydedin.**
 
 ## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Nasıl yapılır: Profil oluşturma araçları raporları bir .xml veya .csv dosyasına dışarı aktarma
  Bir veya daha fazla rapor görünümlerini verebilirsiniz bir. *vsp* dosya veya. *vsps* virgülle ayrılmış olarak veri dosyası veya bir XML dosyası profil oluşturma. Rapor Görünümü penceresi verileri dışarı veya rapor görünümlerini tüm veri dosyasından dışarı aktarabilirsiniz önce filtreleyebilirsiniz **performans Gezgini** penceresi.
@@ -51,39 +51,39 @@ Bu makalede, kaydedin ve performans veri dosyalarını dışarı aktarma açıkl
 
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Performans Gezgini penceresinden performans raporları dışarı aktarmak için
 
-1.  İçinde **performans Gezgini**, raporu seçin ve ardından sağ tıklayıp **dışarı**.
+1. İçinde **performans Gezgini**, raporu seçin ve ardından sağ tıklayıp **dışarı**.
 
      **Dışarı aktarma raporu** iletişim kutusu görüntülenir.
 
-2.  Dışarı aktarmak istediğiniz rapor görünümleri seçin.
+2. Dışarı aktarmak istediğiniz rapor görünümleri seçin.
 
-3.  Altında **önek raporu ile**, eklemek için rapor adı öneki belirtin.
+3. Altında **önek raporu ile**, eklemek için rapor adı öneki belirtin.
 
-4.  Altında **dışarı aktarılan rapor konumu**, dizini belirtin.
+4. Altında **dışarı aktarılan rapor konumu**, dizini belirtin.
 
-5.  Altında **dışarı aktarılan raporun biçimi**, (virgülle ayrılmış) seçin (\*.csv\), veya XML verisi (\*.xml\).
+5. Altında **dışarı aktarılan raporun biçimi**, (virgülle ayrılmış) seçin (\*.csv\), veya XML verisi (\*.xml\).
 
-6.  Tıklayın **dışarı**.
+6. Tıklayın **dışarı**.
 
      Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<önek > _\<rapor görünümü adı >.\< CSV&#124;xml >
 
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Rapor Görünümü penceresinden performans raporları dışarı aktarmak için
 
-1.  Açık. *vsp* dosyasında rapor görünümü penceresi.
+1. Açık. *vsp* dosyasında rapor görünümü penceresi.
 
-2.  (İsteğe bağlı) Verilere filtre uygulayın. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md).
+2. (İsteğe bağlı) Verilere filtre uygulayın. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md).
 
-3.  Tıklayın **dışarı aktarma raporu** rapor görünümü penceresi araç çubuğu üzerinde.
+3. Tıklayın **dışarı aktarma raporu** rapor görünümü penceresi araç çubuğu üzerinde.
 
-4.  Dışarı aktarmak istediğiniz rapor görünümleri seçin.
+4. Dışarı aktarmak istediğiniz rapor görünümleri seçin.
 
-5.  Altında **önek raporu ile**, eklemek için rapor adı öneki belirtin.
+5. Altında **önek raporu ile**, eklemek için rapor adı öneki belirtin.
 
-6.  Altında **dışarı aktarılan rapor konumu**, dizini belirtin.
+6. Altında **dışarı aktarılan rapor konumu**, dizini belirtin.
 
-7.  Altında **dışarı aktarılan raporun biçimi**, (virgülle ayrılmış) seçin (\*.csv), veya XML verisi (\*.xml).
+7. Altında **dışarı aktarılan raporun biçimi**, (virgülle ayrılmış) seçin (\*.csv), veya XML verisi (\*.xml).
 
-8.  Tıklayın **dışarı**.
+8. Tıklayın **dışarı**.
 
      Her rapor görünümü adlı ayrı bir dosyaya kaydedilir \<önek > _\<rapor görünümü adı >.\< CSV&#124;xml >
 

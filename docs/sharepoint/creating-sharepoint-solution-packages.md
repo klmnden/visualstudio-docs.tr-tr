@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049951"
 ---
 # <a name="create-sharepoint-solution-packages"></a>SharePoint çözüm paketleri oluşturma
   Paket Tasarımcısı'nı kullanarak oluşturun ve dağıtım paketleri özelleştirin. Örneğin, SharePoint Proje öğeleri ve özellikleri, IIS sunucusu sıfırlandığında, özellik etkinleştirme kapsamı ayarla ve özellik bağımlılıkları tanımlayın ekleyebilirsiniz. Tasarımcı, ayrıca her paket açıklayan bir XML dosyasını bir bildirim oluşturur.
@@ -56,17 +56,17 @@ ms.locfileid: "56604736"
 ## <a name="packaging-architecture"></a>Paketleme mimarisi
  Bir SharePoint paketi oluşturduğunuzda, aşağıdaki adımlar oluşur (*.wsp*) Visual Studio'da.
 
-1.  Paketler ve özellikleri, paket fiziksel ve anlamsal yapısının doğru olduğundan emin olmak için doğrulanır.
+1. Paketler ve özellikleri, paket fiziksel ve anlamsal yapısının doğru olduğundan emin olmak için doğrulanır.
 
-2.  Özellikler, proje öğeleri ve paket dosyaları paketteki numaralandırılır. Paketler ve özellikler için bildirim dosyalarını, dağıtım ve etkinleştirme için gerekli tüm bilgileri içerecek şekilde dönüştürülür. Belirteçleri tam değeriyle değiştirilir.
+2. Özellikler, proje öğeleri ve paket dosyaları paketteki numaralandırılır. Paketler ve özellikler için bildirim dosyalarını, dağıtım ve etkinleştirme için gerekli tüm bilgileri içerecek şekilde dönüştürülür. Belirteçleri tam değeriyle değiştirilir.
 
-3.  Özelleştirilebilir BeforeLayout MSBuild hedefi gerçekleştirilir. Paketten önce herhangi bir özel değişiklik yapmak için bu adımı oluşturabilirsiniz *.wsp* dosyası oluşturulur.
+3. Özelleştirilebilir BeforeLayout MSBuild hedefi gerçekleştirilir. Paketten önce herhangi bir özel değişiklik yapmak için bu adımı oluşturabilirsiniz *.wsp* dosyası oluşturulur.
 
-4.  Numaralandırılmış dosyaları ara bir dizine kopyalanır.
+4. Numaralandırılmış dosyaları ara bir dizine kopyalanır.
 
-5.  Özelleştirilebilir AfterLayout MSBuild hedefi gerçekleştirilir. Paketten önce herhangi bir özel değişiklik yapmak için bu adımı oluşturabilirsiniz *.wsp* dosyası oluşturulur.
+5. Özelleştirilebilir AfterLayout MSBuild hedefi gerçekleştirilir. Paketten önce herhangi bir özel değişiklik yapmak için bu adımı oluşturabilirsiniz *.wsp* dosyası oluşturulur.
 
-6.  Ara dizindeki dosyaları eklenir *.wsp* dosya.
+6. Ara dizindeki dosyaları eklenir *.wsp* dosya.
 
 ## <a name="package-folder-structure"></a>Paket klasör yapısı
  SharePoint projenizi paketi sıralanırken bir *.wsp* dosyası içinde sizin için oluşturulur *SolutionFolder\bin\\\<BuildConfiguration >* klasör. Örneğin, çözümünüz içinde ise *C:\Visual Studio 2013\Projects\ListDefinition1* ve yapı yapılandırmanızı sürüm için ayarlanmış *.wsp* dosyası *C:\Visual Studio 2013\ Projects\ListDefinition1\bin\Release*.

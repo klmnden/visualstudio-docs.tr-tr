@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd9c728b2b682582d63fde551b73e6604e283991
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048384"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Nasıl yapılır: İşaretlenmiş ikilileri yeniden Yerleştir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "54757130"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-relocate-instrumented-binary"></a>İzleme eklenmiş ikili dışında yeniden konumlandırmakta  
   
-1.  İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **özellikleri**.  
+1. İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **özellikleri**.  
   
-2.  İçinde **özellik sayfaları**, tıklayın **ikili** özellikleri.  
+2. İçinde **özellik sayfaları**, tıklayın **ikili** özellikleri.  
   
-3.  Seçin **işaretlenmiş ikilileri yeniden Yerleştir** onay kutusu.  
+3. Seçin **işaretlenmiş ikilileri yeniden Yerleştir** onay kutusu.  
   
-4.  İzleme eklenmiş ikili dosya konumunu belirtin.  
+4. İzleme eklenmiş ikili dosya konumunu belirtin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

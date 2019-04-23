@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065447"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Bir Çözümde Proje Yüklemeyi Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Visual Studio çözümleri, çok sayıda proje içerebilir. Varsayılan Visual S
 ## <a name="project-loading-priorities"></a>Proje öncelikleri yükleniyor  
  Visual Studio dört farklı proje yükleme öncelikleri tanımlar:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (varsayılan): bir çözümü açtığınızda projeleri zaman uyumsuz olarak yüklenir. Bu öncelik yüklenmemiş bir proje üzerinde ayarlanır, bu çözümü zaten açıldıktan sonra projeyi İleri boşta noktada yüklenir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> (varsayılan): bir çözümü açtığınızda projeleri zaman uyumsuz olarak yüklenir. Bu öncelik yüklenmemiş bir proje üzerinde ayarlanır, bu çözümü zaten açıldıktan sonra projeyi İleri boşta noktada yüklenir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: bir çözümü açtığınızda projeleri kullanıcının yüklenen tüm projeler yüklendi beklemek zorunda kalmadan oldukları gibi projeler erişmesine izin vererek arka planda yüklenir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: bir çözümü açtığınızda projeleri kullanıcının yüklenen tüm projeler yüklendi beklemek zorunda kalmadan oldukları gibi projeler erişmesine izin vererek arka planda yüklenir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Bunlar erişildiğinde projeleri yüklenir. Kullanıcı, (Çözüm kullanıcı seçenekleri dosyası'nda kalıcı) açık belge listesinde olduğu için çözüm açıldığında projeye ait olan bir dosya açıldığında ya da Çözüm Gezgini'nde proje düğümünü genişletirken bir proje erişilir başka bir proje diğer bir deyişle proje üzerinde sahip bağımlılık yükleniyor. Bu tür bir proje, derleme işlemini başlatmadan önce otomatik olarak yüklenmez; Çözüm yükleme yöneticisi, gerekli tüm projeleri yüklenen sağlamaktan sorumludur. Ayrıca bu projeleri Çözümdeki tüm dosyalarda Bul/Değiştir başlatmadan önce yüklenmelidir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: Bunlar erişildiğinde projeleri yüklenir. Kullanıcı, (Çözüm kullanıcı seçenekleri dosyası'nda kalıcı) açık belge listesinde olduğu için çözüm açıldığında projeye ait olan bir dosya açıldığında ya da Çözüm Gezgini'nde proje düğümünü genişletirken bir proje erişilir başka bir proje diğer bir deyişle proje üzerinde sahip bağımlılık yükleniyor. Bu tür bir proje, derleme işlemini başlatmadan önce otomatik olarak yüklenmez; Çözüm yükleme yöneticisi, gerekli tüm projeleri yüklenen sağlamaktan sorumludur. Ayrıca bu projeleri Çözümdeki tüm dosyalarda Bul/Değiştir başlatmadan önce yüklenmelidir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projeleri, kullanıcı formu açıkça istemedikçe yüklü olmaması. Projeleri açıkça yüklenmediği zaman bu durum geçerlidir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>: projeleri, kullanıcı formu açıkça istemedikçe yüklü olmaması. Projeleri açıkça yüklenmediği zaman bu durum geçerlidir.  
   
 ## <a name="creating-a-solution-load-manager"></a>Çözüm yükü Yöneticisi oluşturma  
  Geliştiriciler oluşturabileceğiniz bir çözüm yükü Yöneticisi uygulayarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> ve Visual Studio çözüm yükleme yöneticisi etkin olduğunu bildiren.  
@@ -80,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>Çözüm yükleme olayları işleme  
  Çözüm yükü olaylarına abone olmak için çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> çözüm Yükleme Yöneticisi'ni etkinleştirdiğinizde. Uygularsanız <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, öncelikleri yüklenirken farklı projesiyle ilgili olaylara yanıt verebilir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Bir çözüm açılmadan Bu harekete geçirilir. Öncelik Çözümdeki projeler için proje değiştirmek için kullanabilirsiniz.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Bir çözüm açılmadan Bu harekete geçirilir. Öncelik Çözümdeki projeler için proje değiştirmek için kullanabilirsiniz.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Bu çözüm tamamen yüklendikten, ancak önce arka plan proje yüklenirken yeniden başladıktan sonra tetiklenir. Örneğin, kullanıcı yükü önceliğini projesini LoadIfNeeded bir erişebilir veya bu projenin bir arka plan yük başlar BackgroundLoad çözüm yükleme yöneticisi proje yükü önceliğini değişmiş olabilir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Bu çözüm tamamen yüklendikten, ancak önce arka plan proje yüklenirken yeniden başladıktan sonra tetiklenir. Örneğin, kullanıcı yükü önceliğini projesini LoadIfNeeded bir erişebilir veya bu projenin bir arka plan yük başlar BackgroundLoad çözüm yükleme yöneticisi proje yükü önceliğini değişmiş olabilir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Bir çözüm tam olarak başlangıçta yüklendikten sonra bunun var olup olmadığını bir çözüm yükleme yöneticisi tetiklenir. Ayrıca arka plan yük ya da isteğe bağlı yükledikten sonra çözüm tam yüklü durumuna geldiğinde tetiklenir. Aynı anda <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> yeniden etkinleştirilir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Bir çözüm tam olarak başlangıçta yüklendikten sonra bunun var olup olmadığını bir çözüm yükleme yöneticisi tetiklenir. Ayrıca arka plan yük ya da isteğe bağlı yükledikten sonra çözüm tam yüklü durumuna geldiğinde tetiklenir. Aynı anda <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> yeniden etkinleştirilir.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Bu, bir proje (veya projeleri) yüklenmesini önce harekete geçirilir. Projeleri yüklenmeden önce diğer arka plan işlemleri tamamlandığından emin olmak için ayarlanmış `pfShouldDelayLoadToNextIdle` için **true**.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Bu, bir proje (veya projeleri) yüklenmesini önce harekete geçirilir. Projeleri yüklenmeden önce diğer arka plan işlemleri tamamlandığından emin olmak için ayarlanmış `pfShouldDelayLoadToNextIdle` için **true**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Projelerin bir toplu iş yaklaşık olarak yüklenmesine olduğunda tetiklenir. Varsa `fIsBackgroundIdleBatch` projeler varsa arka planda; yüklenecek true ise `fIsBackgroundIdleBatch` projeleri, örneğin kullanıcı, beklemedeki bir proje Çözüm Gezgini'nde genişletir, zaman uyumlu olarak bir kullanıcı isteği sonucunda yüklenecek false olur. Aksi takdirde yapılması gereken pahalı iş yapmak için uygulayabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Projelerin bir toplu iş yaklaşık olarak yüklenmesine olduğunda tetiklenir. Varsa `fIsBackgroundIdleBatch` projeler varsa arka planda; yüklenecek true ise `fIsBackgroundIdleBatch` projeleri, örneğin kullanıcı, beklemedeki bir proje Çözüm Gezgini'nde genişletir, zaman uyumlu olarak bir kullanıcı isteği sonucunda yüklenecek false olur. Aksi takdirde yapılması gereken pahalı iş yapmak için uygulayabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Projeleri toplu yüklendikten sonra tetiklenir.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Projeleri toplu yüklendikten sonra tetiklenir.  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Algılama ve çözüm ve proje yüklemeyi yönetme  
  Projeler ve çözümler yükleme durumunu saptamak amacıyla çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> aşağıdaki değerlerle:  

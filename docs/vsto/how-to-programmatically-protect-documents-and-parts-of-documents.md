@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062624"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma
   Kullanıcılar belgeyi düzenlemeler yapmasını önlemek için Microsoft Office Word belgeleri koruma ekleyebilirsiniz.
@@ -37,19 +37,19 @@ ms.locfileid: "56613420"
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Belge düzeyi özelleştirmesi parçası olan bir belgeyi korumak için
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> yöntemi `ThisDocument` projenizdeki sınıfı.
+1. Çağrı <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> yöntemi `ThisDocument` projenizdeki sınıfı.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Bir yer işareti denetimi belge korumadan dışlamak için
 
-1.  Kullanarak tüm belgeyi korumak <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> yöntemi.
+1. Kullanarak tüm belgeyi korumak <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> yöntemi.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
-2.  Dışlama `Bookmark1` belge koruması.
+2. Dışlama `Bookmark1` belge koruması.
 
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
@@ -61,7 +61,7 @@ ms.locfileid: "56613420"
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Bir uygulama düzeyinde VSTO eklentisi kullanarak bir belgeyi korumak için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Document> korumak istediğiniz.
+1. Çağrı <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Document> korumak istediğiniz.
 
      Aşağıdaki kod örneği, etkin belgeyi korur. Bu kod örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
 

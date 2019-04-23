@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063016"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma
 **Object Relational Designer** (**O/R Tasarımcısı**) ilişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler. Tek tablo devralma işleminde üst bilgi hem de alt bilgi için alanları içeren bir tek veritabanı tablosu yok. İlişkisel verilerle bir ayrıştırıcı sütunu her kaydın ait olduğu sınıfı belirleyen bir değer içerir.
@@ -24,27 +24,27 @@ Devralma kullanır (ve ilişkisel verilere karşılık gelir) nesne modeli oluş
 
 ## <a name="to-create-inherited-data-classes"></a>Devralınan veri sınıfları oluşturmak için
 
-1.  Açık **O/R Tasarımcısı** ekleyerek bir **LINQ to SQL sınıfları** varolan bir Visual Basic öğesine veya C# proje.
+1. Açık **O/R Tasarımcısı** ekleyerek bir **LINQ to SQL sınıfları** varolan bir Visual Basic öğesine veya C# proje.
 
-2.  Temel sınıf olarak kullanmak istediğiniz tabloyu sürükleyin **O/R Tasarımcısı**.
+2. Temel sınıf olarak kullanmak istediğiniz tabloyu sürükleyin **O/R Tasarımcısı**.
 
-3.  İkinci bir kopyası tablosunu sürükleyin **O/R Tasarımcısı** ve yeniden adlandırın. Türetilmiş bir sınıf ya da alt budur.
+3. İkinci bir kopyası tablosunu sürükleyin **O/R Tasarımcısı** ve yeniden adlandırın. Türetilmiş bir sınıf ya da alt budur.
 
-4.  Tıklayın **devralma** içinde **Object Relational Designer** sekmesinde **araç kutusu**, alt (adlandırdığınız tablosu) tıklayın ve ardından temel sınıfa bağlanın.
+4. Tıklayın **devralma** içinde **Object Relational Designer** sekmesinde **araç kutusu**, alt (adlandırdığınız tablosu) tıklayın ve ardından temel sınıfa bağlanın.
 
     > [!NOTE]
     >  Tıklayın **devralma** öğesi **araç kutusu** ve fare düğmesini bırakın, 3. adımda oluşturulan sınıf ikinci bir kopyası tıklatın ve 2. adımda oluşturduğunuz ilk sınıf'ye tıklayın. Devralım çizgisi üzerindeki oku ilk sınıfa işaret eder.
 
-5.  Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. Nesne özellikleri ilişkilendirmeler için kullanılan silmeye çalışıyorsanız, bir hata alırsınız: [Özellik \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. Nesne özellikleri ilişkilendirmeler için kullanılan silmeye çalışıyorsanız, bir hata alırsınız: [Özellik \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     >  Türetilmiş bir sınıf kendi temel sınıfta tanımlanan özellikleri devraldığından, aynı sütunlara her sınıfında tanımlanamaz. (Sütunları özellikleri olarak uygulanır.) Temel sınıf özelliğini temel alan ait devralma değiştiricisinin ayarlayarak türetilmiş sınıftaki sütunları oluşturulmasını etkinleştirebilirsiniz. Daha fazla bilgi için [devralma temelleri (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
-6.  İçinde devralım çizgisini seçin **O/R Tasarımcısı**.
+6. İçinde devralım çizgisini seçin **O/R Tasarımcısı**.
 
-7.  İçinde **özellikleri** penceresinde **ayrıştırıcı özelliği** sınıflarınızı kayıtlara ayıran sütun adı.
+7. İçinde **özellikleri** penceresinde **ayrıştırıcı özelliği** sınıflarınızı kayıtlara ayıran sütun adı.
 
-8.  Ayarlama **türetilen sınıf ayrıştırıcısı değerinin** kaydı devralınan türü olarak atar veritabanındaki değerle özelliği. (Devralınan sınıf belirtmek için kullanılır ve ayrıştırıcı sütunda depolanan değer budur.)
+8. Ayarlama **türetilen sınıf ayrıştırıcısı değerinin** kaydı devralınan türü olarak atar veritabanındaki değerle özelliği. (Devralınan sınıf belirtmek için kullanılır ve ayrıştırıcı sütunda depolanan değer budur.)
 
 9. Ayarlama **temel sınıf ayrıştırıcı değeri** özelliğini kaydı temel tür olarak belirten değer. (Ayrıştırıcı sütunu depolanır ve temel sınıf belirtmek için kullanılır değer budur.)
 

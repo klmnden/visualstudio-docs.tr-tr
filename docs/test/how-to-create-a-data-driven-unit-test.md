@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063653"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri temelli birim testi oluşturma
 
@@ -27,27 +27,27 @@ Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kay
 
 Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:
 
-1.  Test yöntemi kullanan değerleri içeren bir veri kaynağı oluşturun. Veri kaynağı, testi çalıştıran makinede kayıtlı herhangi bir tür olabilir.
+1. Test yöntemi kullanan değerleri içeren bir veri kaynağı oluşturun. Veri kaynağı, testi çalıştıran makinede kayıtlı herhangi bir tür olabilir.
 
-2.  Özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak `TestContext` özelliğini test sınıfı.
+2. Özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak `TestContext` özelliğini test sınıfı.
 
-3.  Bir birim test yöntemi oluşturun ve ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> için özniteliği.
+3. Bir birim test yöntemi oluşturun ve ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> için özniteliği.
 
-4.  Kullanma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> bir testte kullanılacak değerleri almak için dizin oluşturucu özelliği.
+4. Kullanma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> bir testte kullanılacak değerleri almak için dizin oluşturucu özelliği.
 
 ## <a name="the-method-under-test"></a>Test altındaki yöntemi
 
 Örneğin, olduğunu varsayalım:
 
-1.  Bir çözüm olarak `MyBank` kabul eder ve farklı hesap türlerinin hareketlerini işler.
+1. Bir çözüm olarak `MyBank` kabul eder ve farklı hesap türlerinin hareketlerini işler.
 
-2.  Bir projede `MyBank` adlı `BankDb` , hesapları için işlemleri yönetir.
+2. Bir projede `MyBank` adlı `BankDb` , hesapları için işlemleri yönetir.
 
-3.  Bir sınıfa `Maths` içinde `DbBank` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.
+3. Bir sınıfa `Maths` içinde `DbBank` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.
 
-4.  Bir birim test projesi adlı `BankDbTests` davranışını test etmek için `BankDb` bileşeni.
+4. Bir birim test projesi adlı `BankDbTests` davranışını test etmek için `BankDb` bileşeni.
 
-5.  Bir birim testi sınıf adı verilen `MathsTests` davranışını doğrulamak için `Maths` sınıfı.
+5. Bir birim testi sınıf adı verilen `MathsTests` davranışını doğrulamak için `Maths` sınıfı.
 
 Biz bir yöntemde sınayacak `Maths` bir döngü kullanarak iki tamsayı ekler:
 

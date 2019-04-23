@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063432"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Bir metin şablonu, ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve tüm diğer standart bölümlerini bir HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kodu parçalarını olduğu. Denetim blokları, değişken değerlerini sağlayın ve bölümlerini koşullu ve tekrarlanan olmasını sağlar.
@@ -25,11 +25,11 @@ Bir metin şablonu, ondan oluşturulan metni içerir. Örneğin, bir web sayfas�
 
  Metin şablonları aşağıdaki bölümden oluşur:
 
--   **Yönergeleri** -şablonu nasıl işleneceğini denetleyen öğeleri.
+- **Yönergeleri** -şablonu nasıl işleneceğini denetleyen öğeleri.
 
--   **Metin blokları** - içerik çıkışa doğrudan kopyalanır.
+- **Metin blokları** - içerik çıkışa doğrudan kopyalanır.
 
--   **Denetim blokları** -program değişken değerleri metnine ekler ve koşullu veya yinelenen bölümleri metin denetimlerini kodu.
+- **Denetim blokları** -program değişken değerleri metnine ekler ve koşullu veya yinelenen bölümleri metin denetimlerini kodu.
 
 Bu konudaki örnekleri denemek için bunları bir şablon dosyasına açıklandığı gibi kopyalayın [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Şablon dosyası düzenleme sonra dosyayı kaydedin ve ardından çıkışı inceleyebileceğiniz **.txt** dosya.
 
@@ -178,7 +178,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Dış tanımlar kullanma
 
-### <a name="assemblies"></a>Derlemeleri
+### <a name="assemblies"></a>Bütünleştirilmiş kodlar
  Kod blokları şablonunuzun en sık tanımlanan kullanım türleri kullanılabilir System.dll gibi .NET derlemeleri. Ayrıca, diğer .NET derlemelerini veya kendi derlemelere başvurabilir. Bir yol veya bir derlemenin tanımlayıcı ad sağlayabilirsiniz:
 
 ```

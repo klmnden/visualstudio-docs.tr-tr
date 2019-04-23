@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065291"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX Paketlerini Yerelleştirme
 
@@ -53,7 +53,7 @@ Bir vsixlangpack dosyası oluşturduğunuzda, ayarlamalısınız `Include in Vsi
 
 1. İçinde **Çözüm Gezgini**Extension.vsixlangpack dosyaya sağ tıklayın ve ardından **özellikleri**.
 
-2.  İçinde **özellik kılavuzunda**, tıklayın **VSIX Ekle**ve değerini ayarlamak `true`.
+2. İçinde **özellik kılavuzunda**, tıklayın **VSIX Ekle**ve değerini ayarlamak `true`.
 
 ## <a name="example"></a>Örnek
 

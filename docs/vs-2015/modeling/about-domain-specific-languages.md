@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043513"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Grafik etki alanına özgü geliştirme yönleri  
  Bir grafik etki alanına özgü dil aşağıdaki özellikleri içermelidir:  
   
--   Gösterim  
+- Gösterim  
   
--   Etki alanı modeli  
+- Etki alanı modeli  
   
--   Yapıt oluşturma  
+- Yapıt oluşturma  
   
--   Serileştirme  
+- Serileştirme  
   
--   Visual Studio ile Tümleştirme  
+- Visual Studio ile Tümleştirme  
   
 ### <a name="notation"></a>Gösterim  
  Bir etki alanına özgü dil makul küçük bir kolayca tanımlanabilir ve etki alanına özgü yapıları temsil etmek için genişletilmiş öğeler olması gerekir. Bir gösterimi öğelerini temsil eden, şekiller ve bağlayıcıları, bir grafik diyagram yüzeyinde öğeleri arasındaki ilişkileri gösteren oluşur. İçinde [!INCLUDE[dsl](../includes/dsl-md.md)], şekiller genişletilmiş ve, etki alanına özgü dil öğelerini temsil eden için iyileştirilmiştir.  
@@ -92,27 +92,27 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 ## <a name="benefits-of-domain-specific-development"></a>Etki alanına özgü geliştirme avantajları  
  Bir etki alanına özgü dil aşağıdaki faydaları sağlayabilir:  
   
--   Sorun alanı tam olarak sığması yapıları içerir.  
+- Sorun alanı tam olarak sığması yapıları içerir.  
   
      Genel amaçlı dillerden farklı olarak, bir etki alanına özgü dil öğeleri ve doğrudan sorun alanı mantığı temsil eden ilişkiler oluşur. Örneğin, bir sigorta ilke uygulama ilkeleri ve talep öğeler içermesi gerekir. Bir etki alanına özgü dil, uygulama ve Bul ve hataları mantığı tasarlamak kolaylaştırır.  
   
--   Geliştirici olmayan ve genel tasarımı anlama etki alanı bilmiyorsanız kişilere izin verir.  
+- Geliştirici olmayan ve genel tasarımı anlama etki alanı bilmiyorsanız kişilere izin verir.  
   
      Bir grafik etki alanına özgü dili kullanarak, etki alanı görsel bir temsilini Geliştirici olmayan uygulama tasarımını kolayca anlayabilmeniz oluşturabilirsiniz.  
   
--   Son uygulama prototipini oluşturmayı kolaylaştırır.  
+- Son uygulama prototipini oluşturmayı kolaylaştırır.  
   
      Geliştiriciler, istemcilere göstermek bir prototip uygulaması oluşturmak için model oluşturan kodu kullanabilirsiniz.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Etki alanına özgü geliştirme işlemi  
  Etki alanına özgü diller kullanan çoğu yazılım geliştirme takımları, oluşturmak ve modellerini kullanmak için aşağıdaki adımları izleyin:  
   
--   Takım, etki alanı bölümlerinden asla değiştirme değişkeni bölümlerini birbirinden ayırır.  
+- Takım, etki alanı bölümlerinden asla değiştirme değişkeni bölümlerini birbirinden ayırır.  
   
--   Geliştiriciler, sabit bölümleri için kod yazma ve değişken parçaları için uzantı noktaları bırakın.  
+- Geliştiriciler, sabit bölümleri için kod yazma ve değişken parçaları için uzantı noktaları bırakın.  
   
--   Yazılım geliştiricisi veya mimari tasarım desenlerini sabit bölümlerini etki alanı ve değişken parçaları için uzantı noktaları içeren bir etki alanına özgü dil oluşturur.  
+- Yazılım geliştiricisi veya mimari tasarım desenlerini sabit bölümlerini etki alanı ve değişken parçaları için uzantı noktaları içeren bir etki alanına özgü dil oluşturur.  
   
--   Yazılım geliştiricisi veya Mimarı ekip oluşturan çeşitli uygulamaların geliştiricileri için etki alanına özgü dil dağıtır.  
+- Yazılım geliştiricisi veya Mimarı ekip oluşturan çeşitli uygulamaların geliştiricileri için etki alanına özgü dil dağıtır.  
   
--   Her geliştirici, belirli bir uygulamaya uygulanan bir model oluşturur.
+- Her geliştirici, belirli bir uygulamaya uygulanan bir model oluşturur.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 10fed36c0bb1d30d7da89e1d858fe40d487a73fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058063"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 
@@ -82,31 +82,31 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
 
 MSBuild araç takımı erişmek için iki yol sunar:
 
--   Araç özelliklerini kullanarak
+- Araç özelliklerini kullanarak
 
--   Kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper> yöntemleri
+- Kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper> yöntemleri
 
 Araç Özellikleri araçları yollarını belirtin. Visual Studio 2017'den başlayarak, MSBuild artık sabit bir konum vardır. Varsayılan olarak bulunur *MSBuild\15.0\Bin* klasörüyle ilgili Visual Studio yükleme konumu. Önceki sürümlerde, MSBuild değerini kullanır. `ToolsVersion` araç özelliklerini ayarlamak için kayıt defteri anahtarı bilgileri sonra kullanır ve karşılık gelen kayıt defteri anahtarını bulmak için proje dosyasında özniteliği. Örneğin, varsa `ToolsVersion` değerine sahip `12.0`, MSBuild araç takımı özelliklerini bu kayıt defteri anahtarı göre ayarlar: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
 
  Araç özellikleri şunlardır:
 
--   `MSBuildToolsPath` MSBuild ikili dosyalarının yolunu belirtir.
+- `MSBuildToolsPath` MSBuild ikili dosyalarının yolunu belirtir.
 
--   `SDK40ToolsPath` MSBuild için ek yönetilen araçları yolunu belirtir (Bu 4.0 veya 4.5 olabilir) 4.x.
+- `SDK40ToolsPath` MSBuild için ek yönetilen araçları yolunu belirtir (Bu 4.0 veya 4.5 olabilir) 4.x.
 
--   `SDK35ToolsPath` MSBuild 3.5 için ek yönetilen araçları yolunu belirtir.
+- `SDK35ToolsPath` MSBuild 3.5 için ek yönetilen araçları yolunu belirtir.
 
 Alternatif olarak, araç takımı program aracılığıyla yöntemleri çağırarak belirleyebilirsiniz <xref:Microsoft.Build.Utilities.ToolLocationHelper> sınıfı. Sınıfı, bu yöntem içerir:
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> .NET Framework klasörünün yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> .NET Framework klasörünün yolunu döndürür.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> .NET Framework klasöründe bir dosya yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> .NET Framework klasöründe bir dosya yolunu döndürür.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> Yönetilen Araçları klasörünün yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> Yönetilen Araçları klasörünün yolunu döndürür.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> derleme araçları yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> derleme araçları yolunu döndürür.
 
 ### <a name="sub-toolsets"></a>Alt araç takımları
 
@@ -117,11 +117,11 @@ Alternatif olarak, araç takımı program aracılığıyla yöntemleri çağıra
 
  Alt araç takımları varken etkin hale `VisualStudioVersion` özellik oluşturun. Bu özellik, bu değerlerden birini alabilir:
 
--   "10.0".NET Framework 4 alt araç belirtir
+- "10.0".NET Framework 4 alt araç belirtir
 
--   "11.0".NET Framework 4.5 alt araç belirtir
+- "11.0".NET Framework 4.5 alt araç belirtir
 
--   "12.0".NET Framework 4.5.1 alt araç belirtir
+- "12.0".NET Framework 4.5.1 alt araç belirtir
 
 Alt-takımları 10.0 ve 11.0 ToolsVersion 4.0 ile kullanılmalıdır. Sonraki sürümlerde, alt araç kümesi sürümünü ve ToolsVersion eşleşmesi gerekir.
 

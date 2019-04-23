@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050718"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
   
  Sözdizimi kurallarını için `devenv` anahtarları benzer diğer DOS komut satırı yardımcı programları için olanlar. Aşağıdaki sözdizimi kurallarını tümüne uygula `devenv` anahtarlar ve bunların bağımsız değişkenleri:  
   
--   İle başlayan komutlar `devenv`.  
+- İle başlayan komutlar `devenv`.  
   
--   Anahtarlar büyük küçük harfe duyarlı değildir.  
+- Anahtarlar büyük küçük harfe duyarlı değildir.  
   
--   Bir çözüm veya proje belirtirken, ilk bağımsız değişken çözüm dosyası veya dosya yolu da dahil olmak üzere proje dosyasının adıdır.  
+- Bir çözüm veya proje belirtirken, ilk bağımsız değişken çözüm dosyası veya dosya yolu da dahil olmak üzere proje dosyasının adıdır.  
   
--   İlk bağımsız değişken bir çözüm veya proje değil bir dosya ise, bu dosyayı IDE yeni bir örneğini uygun düzenleyicisinde açılır.  
+- İlk bağımsız değişken bir çözüm veya proje değil bir dosya ise, bu dosyayı IDE yeni bir örneğini uygun düzenleyicisinde açılır.  
   
--   Bir proje dosyası adı bir çözüm dosyası adı yerine sağladığında bir `devenv` komut aynı ada sahip bir çözüm dosyası için proje dosyasının üst klasörü arar. Örneğin, komut `devenv /build myproject1.vbproj` üst klasör için "myproject1.sln" adlı bir çözüm dosyası arar.  
+- Bir proje dosyası adı bir çözüm dosyası adı yerine sağladığında bir `devenv` komut aynı ada sahip bir çözüm dosyası için proje dosyasının üst klasörü arar. Örneğin, komut `devenv /build myproject1.vbproj` üst klasör için "myproject1.sln" adlı bir çözüm dosyası arar.  
   
     > [!NOTE]
     >  Bu projeye başvuran bir ve yalnızca bir çözüm dosyası, kendi üst klasörde bulunmalıdır. Üst klasör bu projeye başvuran hiçbir çözüm dosyasını içeren ya da üst klasör ona başvuran iki veya daha fazla çözüm dosyası içeriyorsa, bir geçici çözüm dosyası oluşturulur, bu proje için adı ve başvurduğu.  
   
--   Dosya yolları ve dosya adı boşluklar, bunları çift tırnak içine almalısınız (""). Örneğin, "c:\project bir\\".  
+- Dosya yolları ve dosya adı boşluklar, bunları çift tırnak içine almalısınız (""). Örneğin, "c:\project bir\\".  
   
--   Anahtarlar ve bağımsız değişkenler aynı satırda arasında bir boşluk karakteri Ekle. Örneğin, komut **devenv/log çýktý.txt** IDE açılır ve tüm bilgilerini günlüğe kaydetme oturumu için için çýktý.txt çıkarır.  
+- Anahtarlar ve bağımsız değişkenler aynı satırda arasında bir boşluk karakteri Ekle. Örneğin, komut **devenv/log çýktý.txt** IDE açılır ve tüm bilgilerini günlüğe kaydetme oturumu için için çýktý.txt çıkarır.  
   
--   Desen eşleştirme sözdizimi kullanamazsınız `devenv` komutları.  
+- Desen eşleştirme sözdizimi kullanamazsınız `devenv` komutları.  
   
 ## <a name="devenv-switches"></a>Devenv anahtarları  
  IDE görüntülemek ve açıklandığı gibi görev gerçekleştirmek için aşağıdaki komut satırı anahtarları kullanın.  

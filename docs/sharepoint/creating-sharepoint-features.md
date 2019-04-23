@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051329"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint özellikleri oluşturma
   Kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikler oluşturmak, kapsamı ayarla ve diğer özellikleri, SharePoint özellik Tasarımcısı kullanarak bağımlılıkları olarak işaretleyin. Tasarımcı, aynı zamanda her bir özellik açıklayan bir XML dosyası olan bir bildirim oluşturur.
@@ -26,9 +26,9 @@ ms.locfileid: "56644464"
 ## <a name="add-features-to-the-sharepoint-solution"></a>SharePoint çözümü özellikleri ekleyin
  SharePoint çözümü, Çözüm Gezgini veya paketleme Gezgini'ni kullanarak bir özelliği ekleyebilirsiniz. Bir özellik eklemek için aşağıdaki yöntemlerden birini kullanabilirsiniz.
 
--   İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri**ve ardından **Özellik Ekle**.
+- İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri**ve ardından **Özellik Ekle**.
 
--   İçinde **paketleme Gezgini**, paket için kısayol menüsünü açın ve ardından **Özellik Ekle**.
+- İçinde **paketleme Gezgini**, paket için kısayol menüsünü açın ve ardından **Özellik Ekle**.
 
 ## <a name="using-the-feature-designer"></a>Özellik Tasarımcısı'nı kullanarak
  SharePoint çözüm bir veya daha fazla SharePoint Çözüm Gezgini'nde özellik düğümünün altında gruplanmış özellikleri içerebilir. Her özelliğin kendi bölümüne sahiptir **özellik Tasarımcısı** özellik özellikleri özelleştirmek için kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint özelliğini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-feature.md). Özellikleri birbirinden ayırt etmek için başlık, açıklama, sürüm ve kapsamı gibi özellik özellikleri yapılandırabilirsiniz.

@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054736"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Çözüm Gezgini Araç Çubuğuna Komut Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** a
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Çözüm Gezgini araç çubuğuna bir düğme ekleme  
  Kılavuzun bu bölümünde, bir düğmeye ekleme işlemi açıklanır **Çözüm Gezgini** araç çubuğu. Düğmeye tıklandığında geri çağırma yöntemi kod çalıştırılır.  
   
-1.  ToolbarButtonPackage.vsct dosyasında Git `<Symbols>` bölümü. `<GuidSymbol>` Paketi şablonu tarafından oluşturulan komut ve menü grubu düğüm içeriyor. Ekleme bir `<IDSymbol>` komutunuz tutacak bir grup bildirmek için bu düğümü öğesi.  
+1. ToolbarButtonPackage.vsct dosyasında Git `<Symbols>` bölümü. `<GuidSymbol>` Paketi şablonu tarafından oluşturulan komut ve menü grubu düğüm içeriyor. Ekleme bir `<IDSymbol>` komutunuz tutacak bir grup bildirmek için bu düğümü öğesi.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  İçinde `<Groups>` bölümünde, mevcut Grup girişten sonra tanımlayın, bildirilen yeni grubu önceki adımda.  
+2. İçinde `<Groups>` bölümünde, mevcut Grup girişten sonra tanımlayın, bildirilen yeni grubu önceki adımda.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** a
   
      Üst GUID:ID çifti ayarını `guidSHLMainMenu` ve `IDM_VS_TOOL_PROJWIN` bu Grup koyar **Çözüm Gezgini** araç çubuğu ve yüksek öncelikli değeri onu koyar sonra diğer komut grupları.  
   
-3.  İçinde `<Buttons>` bölümünde, oluşturulan üst Kimliğini değiştirme `<Button>` önceki adımda tanımladığınız grubunu yansıtacak şekilde girişi. Değiştirilmiş `<Button>` öğesi şu şekilde görünmelidir:  
+3. İçinde `<Buttons>` bölümünde, oluşturulan üst Kimliğini değiştirme `<Button>` önceki adımda tanımladığınız grubunu yansıtacak şekilde girişi. Değiştirilmiş `<Button>` öğesi şu şekilde görünmelidir:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** a
     </Button>  
     ```  
   
-4.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.  
+4. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.  
   
      **Çözüm Gezgini** mevcut düğmeleri sağındaki araç yeni komut düğmesi görüntülemelidir. Strikethrough düğmesi simgesi bulunuyor.  
   
-5.  Yeni düğmesine tıklayın.  
+5. Yeni düğmesine tıklayın.  
   
      İletiyi içeren bir iletişim kutusu **ToolbarButtonPackage içinde SolutionToolbar.ToolbarButton.MenuItemCallback()** görüntülenmesi gerekir.  
   

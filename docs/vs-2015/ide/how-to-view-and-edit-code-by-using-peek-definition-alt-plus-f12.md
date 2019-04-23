@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055737"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanımı (Alt + F12) kullanarak kod düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzakl
   
 #### <a name="to-open-a-peek-definition-window"></a>Bir Özet Tanım penceresi açmak için  
   
-1.  Bulabilirsiniz **Özet tanım** keşfetmek istediğiniz yöntem için kısayol menüsünü açarak. (Klavye: Alt + F12)  
+1. Bulabilirsiniz **Özet tanım** keşfetmek istediğiniz yöntem için kısayol menüsünü açarak. (Klavye: Alt + F12)  
   
      Bu resimde **Özet tanım** adlı bir yöntem için pencere `Print()`:  
   
@@ -38,33 +38,33 @@ Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzakl
   
      Tanım penceresinin altında görünür `printer.Print(“Hello World!”)` özgün dosyadaki bir satır. Pencerede, özgün dosyanızdaki kodlardan hiçbiri gizlenmez. Gelen satırlar `printer.Print(“Hello World!”)` çağrı tanım penceresinin altında görünür.  
   
-2.  İmleci, kod tanımı penceresinde farklı konumlara taşıyabilirsiniz. Özgün kod penceresinde tanım penceresinin altında veya üstünde gezinmeye devam edebilirsiniz.  
+2. İmleci, kod tanımı penceresinde farklı konumlara taşıyabilirsiniz. Özgün kod penceresinde tanım penceresinin altında veya üstünde gezinmeye devam edebilirsiniz.  
   
-3.  Dizeyi tanım penceresinden kopyalayıp özgün koda yapıştırabilirsiniz. Dizeyi tanım penceresinden sürükleyip özgün koda da bırakabilirsiniz (tanım penceresinden silinmeden).  
+3. Dizeyi tanım penceresinden kopyalayıp özgün koda yapıştırabilirsiniz. Dizeyi tanım penceresinden sürükleyip özgün koda da bırakabilirsiniz (tanım penceresinden silinmeden).  
   
-4.  Esc tuşunu seçerek tanım penceresini kapatabilirsiniz veya **kapatmak** tanım penceresi sekmesindeki düğmesi.  
+4. Esc tuşunu seçerek tanım penceresini kapatabilirsiniz veya **kapatmak** tanım penceresi sekmesindeki düğmesi.  
   
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Bir Özet Tanım penceresinin içinden Özet Tanım penceresi açmak için  
   
--   Zaten bir **Özet tanım** pencereniz açıksa çağırabilirsiniz **Özet tanım** Bu penceredeki kod üzerinde yeniden. Başka bir tanım penceresi açılır. Tanım penceresi sekmesinin yanında, tanım pencereleri arasında gezinmek için kullanabileceğiniz bir dizi içerik haritası noktası görünür. Her bir noktadaki araç ipucu, noktanın temsil ettiği tanım dosyasının dosya adını ve yolunu gösterir.  
+- Zaten bir **Özet tanım** pencereniz açıksa çağırabilirsiniz **Özet tanım** Bu penceredeki kod üzerinde yeniden. Başka bir tanım penceresi açılır. Tanım penceresi sekmesinin yanında, tanım pencereleri arasında gezinmek için kullanabileceğiniz bir dizi içerik haritası noktası görünür. Her bir noktadaki araç ipucu, noktanın temsil ettiği tanım dosyasının dosya adını ve yolunu gösterir.  
   
      ![Bir Özet penceresi içinde Özet penceresinde](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Özet Tanım komutunu birden çok sonuçla kullanmak için  
   
--   Kullanırsanız **Özet tanım** birden fazla tanıma (örneğin, parçalı sınıflar) sahip kod üzerinde kod tanımı görünümünün sağında bir sonuç listesi görünür. Listede istediğiniz sonucu seçerek tanımını görüntüleyebilirsiniz.  
+- Kullanırsanız **Özet tanım** birden fazla tanıma (örneğin, parçalı sınıflar) sahip kod üzerinde kod tanımı görünümünün sağında bir sonuç listesi görünür. Listede istediğiniz sonucu seçerek tanımını görüntüleyebilirsiniz.  
   
      ![Birden çok sonuç gözlem penceresinden](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Özet Tanım penceresinin içinde düzenlemek için  
   
--   İçinde düzenleme yapmaya başladığınızda bir **Özet tanım** penceresinde otomatik olarak değişiklik yaptığınız dosya olarak Kod Düzenleyicisi içinde ayrı bir sekmede açılır ve yapmış olduğunuz değişiklikleri yansıtır. Yapabilir, Geri Al ve kaydetmeye devam edebilirsiniz **Özet tanım** penceresi ve sekme bu değişiklikleri yansıtacak şekilde sürdürür. Değişikliklerinizi kaydetmeden pencereyi kapatsanız bile, tam olarak pencerede kaldığınız yeri seçerek, kalan değişikliklerinizi bu sekmede yapabilir, geri alabilir ve kaydedebilirsiniz.  
+- İçinde düzenleme yapmaya başladığınızda bir **Özet tanım** penceresinde otomatik olarak değişiklik yaptığınız dosya olarak Kod Düzenleyicisi içinde ayrı bir sekmede açılır ve yapmış olduğunuz değişiklikleri yansıtır. Yapabilir, Geri Al ve kaydetmeye devam edebilirsiniz **Özet tanım** penceresi ve sekme bu değişiklikleri yansıtacak şekilde sürdürür. Değişikliklerinizi kaydetmeden pencereyi kapatsanız bile, tam olarak pencerede kaldığınız yeri seçerek, kalan değişikliklerinizi bu sekmede yapabilir, geri alabilir ve kaydedebilirsiniz.  
   
      ![Bir Özet penceresi içinde düzenleme](../ide/media/peekedit.png "PeekEdit")  
   
 #### <a name="to-use-keyboard-shortcuts-for-peek-definition"></a>Özet Tanım klavye kısayollarını kullanmak için  
   
--   Bu klavye kısayollarını kullanabilirsiniz **Özet tanım** penceresi:  
+- Bu klavye kısayollarını kullanabilirsiniz **Özet tanım** penceresi:  
   
     |İşlevi|Klavye kısayolu|  
     |-------------------|-----------------------|  

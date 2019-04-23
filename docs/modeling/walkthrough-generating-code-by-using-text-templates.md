@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055671"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>İzlenecek yol: Metin şablonları kullanarak kod oluşturma
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>İzlenecek yol: Metin Şablonları Kullanarak Kod Oluşturma
 
 Kod oluşturma, türü kesin olarak belirtilmiş kaynak modeli değiştiğinde henüz kolayca değiştirilebilir program kodunu oluşturmak sağlar. Bunu daha esnek bir yapılandırma dosyası, kabul eden tamamen genel bir program yazma Alternatif yöntem ile karşılaştırın ancak ne kodu sonuçlarında çok kolay okumak ve değiştirmek ya da bu tür iyi bir performans sahiptir. Bu yönerge, bu Avantajdan gösterir.
 
@@ -83,9 +83,9 @@ Bu projede tek şablon dosyası türü belirtilmiş sürümünü mümkün kılan
 
 Bu teknik, herhangi bir kod projesine uygulayabilirsiniz. Bu kılavuzda bir C# projesi kullanır ve bir konsol uygulaması Test amaçları için kullanırız.
 
-1.  Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **proje**.
+1. Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **proje**.
 
-2.  Tıklayın **Visual C#** düğümünü ve ardından **şablonları** bölmesinde tıklayın **konsol uygulaması.**
+2. Tıklayın **Visual C#** düğümünü ve ardından **şablonları** bölmesinde tıklayın **konsol uygulaması.**
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Bir prototip XML dosyası projeye ekleyin.
 
@@ -93,13 +93,13 @@ Bu dosyanın amacı, okuyabilir, uygulamanızın istediğiniz XML düğüm türl
 
 Dosya, böylece şablon okuyabilir, ancak derlenmiş uygulamasına oluşturulmuyor projenin bir parçası olmalıdır.
 
-1.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle** ve ardından **yeni öğe**.
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle** ve ardından **yeni öğe**.
 
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **XML dosyası** gelen **şablonları** bölmesi.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **XML dosyası** gelen **şablonları** bölmesi.
 
-3.  Örnek içerik dosyasına ekleyin.
+3. Örnek içerik dosyasına ekleyin.
 
-4.  Bu kılavuz için dosya adı `exampleXml.xml`. Önceki bölümde gösterilenle XML olarak dosyanın içeriği ayarlayın.
+4. Bu kılavuz için dosya adı `exampleXml.xml`. Önceki bölümde gösterilenle XML olarak dosyanın içeriği ayarlayın.
 
 ### <a name="add-a-test-code-file"></a>Bir test kod dosyasına ekleyin
 
@@ -131,20 +131,20 @@ Daha kapsamlı bir testi bu test işlevi karşı örnek XML dosyası bilinen iç
 
 Bir metin şablonu dosyasını ekleyin ve çıkış uzantısı kümesine *.cs*.
 
-1.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle**ve ardından **yeni öğe**.
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle**ve ardından **yeni öğe**.
 
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** gelen **şablonları** bölmesi.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** gelen **şablonları** bölmesi.
 
     > [!NOTE]
     > Bir metin şablonu ve değil önceden işlenmiş metin şablonu eklediğinizden emin olun.
 
-3.  Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.
+3. Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.
 
      Bu değişiklik, şablonu kodu Visual Studio Hizmetleri'ne erişmek için etkinleştirir.
 
-4.  Çıktı yönergesinde, uzantı özniteliğine ".cs" değiştirin, böylece şablon bir C# dosyası oluşturur. Bir Visual Basic projesinde ".vb" için değiştirirsiniz.
+4. Çıktı yönergesinde, uzantı özniteliğine ".cs" değiştirin, böylece şablon bir C# dosyası oluşturur. Bir Visual Basic projesinde ".vb" için değiştirirsiniz.
 
-5.  Dosyayı kaydedin. Bu aşamada, metin şablonu dosyasını bu satırlar içermelidir:
+5. Dosyayı kaydedin. Bu aşamada, metin şablonu dosyasını bu satırlar içermelidir:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ XML Şeması değiştiğinde yeni sınıflar kolayca oluşturulabilir. Derleyici
 
 Bu izlenecek yol çeşitli teknikler ve kod oluşturma avantajlarını göstermektedir:
 
--   *Kod oluşturma* oluşturulmasını uygulamanızdan kaynak kodunun bir parçası olan bir *model*. Model, uygulama etki alanı için uygun bir biçimde bilgileri içerir ve uygulama ömrü boyunca değişebilir.
+- *Kod oluşturma* oluşturulmasını uygulamanızdan kaynak kodunun bir parçası olan bir *model*. Model, uygulama etki alanı için uygun bir biçimde bilgileri içerir ve uygulama ömrü boyunca değişebilir.
 
--   Güçlü bir kod avantajdır. Model bilgileri kullanıcıya daha uygun bir biçimde temsil ederken, oluşturulan kod bilgilerle türleri kümesi kullanarak çıkılacağını uygulamanın diğer bölümlerini sağlar.
+- Güçlü bir kod avantajdır. Model bilgileri kullanıcıya daha uygun bir biçimde temsil ederken, oluşturulan kod bilgilerle türleri kümesi kullanarak çıkılacağını uygulamanın diğer bölümlerini sağlar.
 
--   IntelliSense ve derleyicinin yeni kod yazdığınızda hem şemayı güncelleştirildiğinde modelinin şemasıyla uyumluysa kod oluşturmanıza yardımcı olur.
+- IntelliSense ve derleyicinin yeni kod yazdığınızda hem şemayı güncelleştirildiğinde modelinin şemasıyla uyumluysa kod oluşturmanıza yardımcı olur.
 
--   Bir tek eylemlerin şablon dosyası bir projeye eklenmesi, bu avantajlar sağlayabilir.
+- Bir tek eylemlerin şablon dosyası bir projeye eklenmesi, bu avantajlar sağlayabilir.
 
--   Bir metin şablonu geliştirilen ve hızlı bir şekilde ve artımlı olarak test.
+- Bir metin şablonu geliştirilen ve hızlı bir şekilde ve artımlı olarak test.
 
 Bu izlenecek yolda, program kodu modeli, temsili bir örnek uygulamanın işlem XML dosyalarının bir örnekten gerçekten oluşturulur. Daha resmi bir yaklaşım, XML şeması .xsd dosyasını veya etki alanına özgü dil tanımıma biçiminde şablonu girişi olacaktır. Bu yaklaşım, bir ilişkinin çoğulluk gibi özellikleri belirlemek şablon kolaylaştırmak.
 

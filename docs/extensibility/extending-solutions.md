@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2b34803ac047c411f3e77652949841227caef38e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055398"
 ---
 # <a name="extend-solutions"></a>Çözümleri genişletme
 Bir çözümü, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla proje gruplandırmasıdır.
@@ -21,6 +21,6 @@ Bir çözümü, bir uygulama oluşturmak için birlikte çalışan bir veya daha
 ## <a name="in-this-section"></a>Bu bölümde
  Aşağıdaki izlenecek yollar, çözümleri genişletebileceğiniz bazı yollarını gösterir.
 
-1.  [Çözüm Gezgini filtresini genişletme](../extensibility/extending-the-solution-explorer-filter.md) ne Çözüm Gezgini'nde görüntüler nasıl filtreleme yapılacağını açıklar.
+1. [Çözüm Gezgini filtresini genişletme](../extensibility/extending-the-solution-explorer-filter.md) ne Çözüm Gezgini'nde görüntüler nasıl filtreleme yapılacağını açıklar.
 
-2.  [Bir çözümde proje yüklemeyi yönetme](../extensibility/managing-project-loading-in-a-solution.md) bir kullanıcı bir çözüm yüklediğinde, performansı artırmak için proje yüklemeyi yönetme konusunda açıklanmaktadır.
+2. [Bir çözümde proje yüklemeyi yönetme](../extensibility/managing-project-loading-in-a-solution.md) bir kullanıcı bir çözüm yüklediğinde, performansı artırmak için proje yüklemeyi yönetme konusunda açıklanmaktadır.

@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045335"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio’da Çözümler ve Projeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Oluşturduğunuz sırada bir uygulama, uygulama, Web sitesi, Web uygulaması, be
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
--   [Çözümler ve Projeler Oluşturma](../ide/creating-solutions-and-projects.md)
+- [Çözümler ve Projeler Oluşturma](../ide/creating-solutions-and-projects.md)
 
--   [Proje öğeleri ekleme ve kaldırma](../ide/adding-and-removing-project-items.md)
+- [Proje öğeleri ekleme ve kaldırma](../ide/adding-and-removing-project-items.md)
 
--   [Proje ve Çözüm Özelliklerini Yönetme](../ide/managing-project-and-solution-properties.md)
+- [Proje ve Çözüm Özelliklerini Yönetme](../ide/managing-project-and-solution-properties.md)
 
--   [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
+- [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)
 
--   [Uygulama Özellikleri](../ide/application-properties.md)
+- [Uygulama Özellikleri](../ide/application-properties.md)
 
--   [Derleme ve Bildirim İmzalamayı Yönetme](../ide/managing-assembly-and-manifest-signing.md)
+- [Derleme ve Bildirim İmzalamayı Yönetme](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Nasıl yapılır: Uygulama simgesi belirtme (Visual Basic C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Nasıl yapılır: Uygulama Simgesi Belirtme (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)
+- [Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio IDE](../ide/visual-studio-ide.md)

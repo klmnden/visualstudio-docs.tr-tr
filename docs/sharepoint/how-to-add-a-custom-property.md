@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 575eb99f7bbc2a102c576cb4a0f256bd3acfc5f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056022"
 ---
 # <a name="how-to-add-a-custom-property"></a>Nasıl yapılır: Özel özellik ekleme
   Kullanarak modele özel özellikler ekleyebilirsiniz **Özellik Düzenleyici**. Bağlantı dizeleri gibi bilgileri ve diğer verileri çalışma zamanında almak için kod içinde bu özelliklere erişebilirsiniz.
 
 ### <a name="to-add-a-custom-property"></a>Özel bir özellik eklemek için
 
-1.  İçinde **BDC Gezgini**, özel bir özellik uygulamak istediğiniz model öğesi temsil eden düğümü seçin.
+1. İçinde **BDC Gezgini**, özel bir özellik uygulamak istediğiniz model öğesi temsil eden düğümü seçin.
 
-2.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
+2. Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
 
-3.  İçinde **özellikleri** penceresinde seçin **özel özellikler** özelliği ve ardından üç nokta düğmesini (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP. NET Mobil Tasarımcısı elips")).
+3. İçinde **özellikleri** penceresinde seçin **özel özellikler** özelliği ve ardından üç nokta düğmesini (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP. NET Mobil Tasarımcısı elips")).
 
      **Özellik Düzenleyici** iletişim kutusu görüntülenir.
 
-4.  Metin kutusunda **adı** , sütun özelliğin adını belirtin.
+4. Metin kutusunda **adı** , sütun özelliğin adını belirtin.
 
-5.  İçin **türü** özel özellik alanını uygun veri türü seçin.
+5. İçin **türü** özel özellik alanını uygun veri türü seçin.
 
-6.  İçin **değer** özel özellik alanı bir değer belirtin ve ardından **Tamam** düğmesi.
+6. İçin **değer** özel özellik alanı bir değer belirtin ve ardından **Tamam** düğmesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)

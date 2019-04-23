@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063185"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma
   Bu izlenecek yol, bir SharePoint özel ana sayfasını ve görüntüye sahip bir site sayfasını içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.
@@ -36,26 +36,26 @@ ms.locfileid: "59666000"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere sahip olmanız gerekir:
 
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
+- Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   SharePoint Designer 2010.
+- SharePoint Designer 2010.
 
 ## <a name="create-items-in-sharepoint-designer"></a>SharePoint Tasarımcısı'nda öğeleri oluşturma
  Bu örnekte, üç öğeye dışarı aktarma için SharePoint Tasarımcısı'nda oluşturma işlemi gösterilmektedir: özel bir ana sayfa, özel ana sayfa ve site sayfasında görünecek bir resim dosyası başvuran bir site sayfası. Görüntü, SharePoint /images/ klasörüne eklenir.
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>SharePoint Tasarımcısı'nda özel bir ana sayfa oluşturma
 
-1.  SharePoint Tasarımcı'da gezinti bölmesinde seçin **ana sayfalar** site nesnesi.
+1. SharePoint Tasarımcı'da gezinti bölmesinde seçin **ana sayfalar** site nesnesi.
 
-2.  Üzerinde **ana sayfalar** şeridinden **boş ana sayfa**.
+2. Üzerinde **ana sayfalar** şeridinden **boş ana sayfa**.
 
-3.  Yeni ana sayfa seçin ve ardından **ana sayfalar** şeridinden **dosya Düzenle**.
+3. Yeni ana sayfa seçin ve ardından **ana sayfalar** şeridinden **dosya Düzenle**.
 
-4.  SharePoint Designer'ın alt kısmında seçin **kod** sekmesi.
+4. SharePoint Designer'ın alt kısmında seçin **kod** sekmesi.
 
-5.  Mevcut biçimlendirme, aşağıdaki biçimlendirme ile değiştirin.
+5. Mevcut biçimlendirme, aşağıdaki biçimlendirme ile değiştirin.
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "59666000"
     </html>
     ```
 
-6.  Sayfayı kaydedin öğesini **ana sayfalar** sekmesini ve ana sayfa olarak yeniden adlandır **mybasic1.master**.
+6. Sayfayı kaydedin öğesini **ana sayfalar** sekmesini ve ana sayfa olarak yeniden adlandır **mybasic1.master**.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>SharePoint designer'daki içerik veritabanına resim ekleme
  Artık site sayfasında gösterilmek üzere görüntü ekleyebilirsiniz. Görüntü SharePoint içerik veritabanını dağıtılır.
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>SharePoint designer'daki içerik veritabanını bir görüntü eklemek için
 
-1.  Gezinti bölmesinde **tüm dosyaları** site nesnesi ve ardından, ağaç görünümünde **görüntüleri** klasör.
+1. Gezinti bölmesinde **tüm dosyaları** site nesnesi ve ardından, ağaç görünümünde **görüntüleri** klasör.
 
-2.  Üzerinde **tüm dosyaları** şeridinden **dosyalarını içeri aktarın**, seçtiğiniz bir dosya seçin ve ardından **Tamam** düğmesi. Bu örnekte, dosyanın nasıl adlandırıldığı **myimg1.png**.
+2. Üzerinde **tüm dosyaları** şeridinden **dosyalarını içeri aktarın**, seçtiğiniz bir dosya seçin ve ardından **Tamam** düğmesi. Bu örnekte, dosyanın nasıl adlandırıldığı **myimg1.png**.
 
      İsteğe bağlı olarak, görüntüleri düzenlenmesine yardımcı olmak için bir alt klasör oluşturabilirsiniz.
 
-3.  Kapat **alma** iletişim kutusu.
+3. Kapat **alma** iletişim kutusu.
 
 ## <a name="create-a-site-page"></a>Bir site sayfası oluşturma
  Bu temel site sayfası özel ana sayfasını kullanır ve önceki adımda eklediğiniz görüntüyü görüntüler.
 
 #### <a name="to-create-a-site-page"></a>Bir site sayfası oluşturmak için
 
-1.  Gezinti bölmesinde **Site sayfaları** nesne.
+1. Gezinti bölmesinde **Site sayfaları** nesne.
 
-2.  Üzerinde **sayfaları** şeridinden **sayfa** düğmesini öğesini **ASPX** sayfa türü ve yeni dosya adı **mycontentpage1.aspx**.
+2. Üzerinde **sayfaları** şeridinden **sayfa** düğmesini öğesini **ASPX** sayfa türü ve yeni dosya adı **mycontentpage1.aspx**.
 
      İsteğe bağlı olarak, site sayfaları düzenlenmesine yardımcı olmak için bir alt klasör oluşturabilirsiniz.
 
-3.  Site sayfaları listesinde **MyContentPage1.aspx** , Özellikler sayfasını açın ve ardından sayfanın alt kısmında **dosya Düzenle** bağlantı.
+3. Site sayfaları listesinde **MyContentPage1.aspx** , Özellikler sayfasını açın ve ardından sayfanın alt kısmında **dosya Düzenle** bağlantı.
 
      Bir ileti görüntülenir ve bu sayfa güvenli modda düzenlenebilir bir bölge içermediğini bildiren ve Gelişmiş kipte, bu sayfayı açın, isteyip istemediğinizi soran **Evet** düğmesi.
 
-4.  Sayfanın en altında seçin **kod** düğmesi.
+4. Sayfanın en altında seçin **kod** düğmesi.
 
-5.  Mevcut biçimlendirme, aşağıdaki biçimlendirme ile değiştirin.
+5. Mevcut biçimlendirme, aşağıdaki biçimlendirme ile değiştirin.
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "59666000"
     </asp:Content>
     ```
 
-6.  Güncelleştirilmiş site sayfası kaydedin.
+6. Güncelleştirilmiş site sayfası kaydedin.
 
 ## <a name="export-the-items-from-sharepoint"></a>SharePoint'ten öğeleri dışarı aktarma
  Öğeler için bir SharePoint çözümünü SharePoint'ten dışarı aktar (*.wsp*) dosyası.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>SharePoint Designer'daki öğeleri dışarı aktarmak için
 
-1.  SharePoint Tasarımcı'da gezinti bölmesinde seçin **ekip sitesi** nesnesi ve ardından **Site** şeridinden **şablon olarak Kaydet**.
+1. SharePoint Tasarımcı'da gezinti bölmesinde seçin **ekip sitesi** nesnesi ve ardından **Site** şeridinden **şablon olarak Kaydet**.
 
-2.  İçinde **şablon olarak Kaydet** iletişim kutusunda, bir dosya adı ve select şablon adı girin **dahil içerik** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
+2. İçinde **şablon olarak Kaydet** iletişim kutusunda, bir dosya adı ve select şablon adı girin **dahil içerik** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 
      Bu sitede içeriğini kaydeder *.wsp* dosya.
 
-3.  Çözümü dışarı aktarır sonra seçin **çözüm Galerisi** kullanılabilir çözüm dosyaları listesini görüntülemek için bağlantı.
+3. Çözümü dışarı aktarır sonra seçin **çözüm Galerisi** kullanılabilir çözüm dosyaları listesini görüntülemek için bağlantı.
 
-4.  Yeni kısayol menüsünü açın *.wsp* dosya ve ardından **Hedefi Farklı Kaydet** sistemine kaydetmek için.
+4. Yeni kısayol menüsünü açın *.wsp* dosya ve ardından **Hedefi Farklı Kaydet** sistemine kaydetmek için.
 
 ## <a name="import-the-items-into-visual-studio"></a>Öğeleri Visual Studio'ya içeri aktarma
  İçeri aktarma *.wsp* doyasını [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. İçerik alındıktan sonra özelleştirebilir, daha fazla öğe ekleyin ve dağıttıktan sonra.
@@ -166,9 +166,9 @@ ms.locfileid: "59666000"
 
     Mevcut bir ana sayfa varsayılan ana sayfa veya özel bir ana sayfa olarak işaretlenmişse, ana sayfa silinemiyor belirten bir dağıtım hata alırsınız. Bu sorunu önlemek için şunu yapın:
 
-   -   Geçici olarak mevcut ana sayfaya varsayılan ana sayfa ayarlanırsa, başka bir ana sayfa varsayılan ana sayfa ayarlayın. SharePoint için dosyaları dağıttıktan sonra yeni ana sayfanıza varsayılan ana sayfa ayarlayın.
+   - Geçici olarak mevcut ana sayfaya varsayılan ana sayfa ayarlanırsa, başka bir ana sayfa varsayılan ana sayfa ayarlayın. SharePoint için dosyaları dağıttıktan sonra yeni ana sayfanıza varsayılan ana sayfa ayarlayın.
 
-   -   Geçici olarak mevcut ana sayfaya özel bir ana sayfa olarak ayarlanırsa, başka bir ana sayfa özel bir ana sayfa olarak ayarlayın. SharePoint için dosyaları dağıttıktan sonra yeni ana sayfanıza özel bir ana sayfa olarak ayarlayın.
+   - Geçici olarak mevcut ana sayfaya özel bir ana sayfa olarak ayarlanırsa, başka bir ana sayfa özel bir ana sayfa olarak ayarlayın. SharePoint için dosyaları dağıttıktan sonra yeni ana sayfanıza özel bir ana sayfa olarak ayarlayın.
 
 6. Menü çubuğunda, **derleme** > **çözüm dağıtma**.
 

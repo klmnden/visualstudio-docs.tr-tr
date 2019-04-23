@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053305"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 > [!TIP]
 > Emin değil mi ihtiyacınız kullanılacak **iliştirme** hata ayıklama senaryonuz için? Bkz: [yaygın hata ayıklama senaryoları](#BKMK_Scenarios). IIS'ye dağıtılan, bkz: ASP.NET uygulamalarında hata ayıklamak istiyorsanız [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Yerel makinede çalışan bir işleme iliştirin
+## <a name="BKMK_Attach_to_a_running_process"></a> Yerel makinede çalışan bir işleme iliştirin
  Bir işleme iliştirmek için işlemin adını bilmeniz gerekir (bkz [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) birkaç ortak işlem adları için).
 
-1.  Visual Studio'da **hata ayıklama / iliştirme** (veya basın **CTRL + ALT + P**).
+1. Visual Studio'da **hata ayıklama / iliştirme** (veya basın **CTRL + ALT + P**).
 
-2.  İçinde **iliştirme** iletişim kutusunda, iliştirmek istediğiniz programı bulun **kullanılabilir işlemler** listesi.
+2. İçinde **iliştirme** iletişim kutusunda, iliştirmek istediğiniz programı bulun **kullanılabilir işlemler** listesi.
 
      İstediğiniz işlemi hızla seçmek için işlem adı ilk harflerini yazın. İşlem adını bilmiyorsanız, bkz. [yaygın hata ayıklama senaryoları](#BKMK_Scenarios).
 
@@ -59,17 +59,17 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 
      İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.
 
-3.  İçinde **ekleme** kutusunda, hata ayıklama kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** ayarı, hata ayıklamak istediğiniz kod türünü belirlemeye çalışır. Kod türünü el ile ayarlamak için aşağıdakileri yapın
+3. İçinde **ekleme** kutusunda, hata ayıklama kodun türünü listelendiğinden emin olun. Varsayılan **otomatik** ayarı, hata ayıklamak istediğiniz kod türünü belirlemeye çalışır. Kod türünü el ile ayarlamak için aşağıdakileri yapın
 
-    1.  İçinde **ekleme** kutusunun **seçin**.
+    1. İçinde **ekleme** kutusunun **seçin**.
 
-    2.  İçinde **kod türünü seç** iletişim kutusu, tıklayın **bu tür kodlarda hata ayıklama** ve ayıklanacak türleri seçin.
+    2. İçinde **kod türünü seç** iletişim kutusu, tıklayın **bu tür kodlarda hata ayıklama** ve ayıklanacak türleri seçin.
 
-    3.  **Tamam**'ı tıklatın.
+    3. **Tamam**'ı tıklatın.
 
-4.  Tıklayın **ekleme**.
+4. Tıklayın **ekleme**.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bilgisayardaki bir işleme ekleme
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bilgisayardaki bir işleme ekleme
  Bir işleme iliştirmek için işlemin adını bilmeniz gerekir (bkz [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) birkaç ortak işlem adları için). IIS'ye dağıtılan ASP.NET uygulamaları için daha eksiksiz yönergeler için bkz. [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Diğer uygulamalar için Görev Yöneticisi'nde işleminin adını bulma mümkün olabilir.
 
  Kullanırken **iliştirme** iletişim kutusunda, uzaktan hata ayıklama için ayarlanmış başka bir bilgisayara seçebilirsiniz. Daha fazla bilgi için [uzaktan hata ayıklama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Bir uzak bilgisayar seçtiğinizde, bu bilgisayar üzerinde çalışan kullanılabilir süreçlerin listesini görüntüleyebilir ve bir veya daha fazla hata ayıklama için iliştirin.
@@ -146,7 +146,7 @@ Uzaktan hata ayıklama senaryoları için Visual Studio'da açık kaynak kodu (v
 
 Uygulamayı doğru sembol dosyaları varsa bazı yerel hata ayıklama senaryolarında, Visual Studio'da kaynağına erişimi olmayan hata ayıklaması yapabilirsiniz (varsayılan olarak, bu, hata ayıklama derlemesi'gerektirir). Daha fazla bilgi için bkz. [belirtin, sembol ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Sorun giderme hataları iliştirme
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Sorun giderme hataları iliştirme
  Çalışan bir işleme hata ayıklayıcı ekler, işlemi bir veya daha fazla kod türlerini içerebilir. Hata ayıklayıcının iliştirebileceği kod türleri görüntülenir ve seçili **kod türünü seç** iletişim kutusu.
 
  Bazen, hata ayıklayıcı başarıyla bir kod türüne, ancak başka bir kod türüne ekleyebilirsiniz. Uzak bir bilgisayarda çalışan bir işlem eklemeye çalışıyorsanız, bu durum oluşabilir. Uzak bilgisayarda uzaktan hata ayıklama bileşenleri belirli kod türleri için kullanılabilir ancak diğerleri yüklü olabilir. Doğrudan veritabanı hata ayıklamaya iki veya daha fazla işlem eklemeye çalışırsanız da meydana gelebilir. SQL hata ayıklama için yalnızca tek bir işlem eklemeyi destekler.

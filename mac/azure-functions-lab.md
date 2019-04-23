@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650287"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053662"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -104,6 +104,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Varolan kaldırmak `Run` yöntemi ve Azure işlevinizi olarak sınıfına aşağıdaki yöntemi ekleyin:
 
     ```csharp
@@ -119,6 +120,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
         return x + y;
     }
     ```
+
 1. Parça parça yöntemi tanımıyla atalım.
 
     İlk şey göreceksiniz **FunctionName** özniteliği, bu yöntem bir Azure işlevi olarak işaretler. Öznitelik Genel işlevin adını belirtir. Öznitelik adı gerçek yöntemi adıyla eşleşmesi gerekmez.
@@ -180,6 +182,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     return x + y;
     ```
+
 1. Uygulamayı çalıştırın.
 
 1. Tarayıcı penceresine dönün ve dizesini `/?x=2&y=3` URL'si. URL'nin tamamı artık olmalıdır `http://localhost:7071/api/Add?x=2&y=3`. Yeni URL'ye gidin.
@@ -190,7 +193,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 ## <a name="exercise-4-working-with-functionjson"></a>Alıştırma 4: Function.json ile çalışma
 
-1.  Bir önceki alıştırmada, Mac için Visual Studio "bir işlevi kitaplıkta tanımlanan Azure işlevi için üretilen" bahsedilen. Azure işlevleri yöntem öznitelikleri çalışma zamanında gerçekten kullanmaz, ancak bunun yerine nerede yapılandırmak için bir derleme zamanı dosya sistemi kuralını kullanır ve Azure işlevleri kullanıma sunulan nasıl budur. Gelen **çözüm bölmesi**, proje düğümünüze sağ tıklayıp **Finder'da Göster**.
+1. Bir önceki alıştırmada, Mac için Visual Studio "bir işlevi kitaplıkta tanımlanan Azure işlevi için üretilen" bahsedilen. Azure işlevleri yöntem öznitelikleri çalışma zamanında gerçekten kullanmaz, ancak bunun yerine nerede yapılandırmak için bir derleme zamanı dosya sistemi kuralını kullanır ve Azure işlevleri kullanıma sunulan nasıl budur. Gelen **çözüm bölmesi**, proje düğümünüze sağ tıklayıp **Finder'da Göster**.
 
      ![Bulucu menü seçeneğini göster](media/azure-functions-lab-image23.png)
 
@@ -289,6 +292,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
         return x + y;
     }
     ```
+
 1. Tuşuna **F5** oluşturup projeyi çalıştırın.
 
 1. Derleme tamamlandığında ve platform sanal makineleri çalıştırır gibi Şimdi ikinci rota yeni eklenen yöntemiyle eşleşen bir istek için kullanılabilir olduğunu gösterir:
@@ -315,6 +319,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
         public int Sum { get; set; }
     }
     ```
+
 1. İçinde **Ekle** sınıfı, başka bir işlevi tanıtmak için aşağıdaki kodu ekleyin. Bir HTTP yanıtı içermeyen, bu kadar benzersiz olduğunu unutmayın. Yeni bir son satırı döndürür **TableRow'a** daha sonra almak kolay hale getirecek bazı temel bilgilerle doldurulur (**PartitionKey** ve **RowKey**), yanı sıra kendi parametreleri ve topla. Ayrıca metodu içindeki kod kullanan **TraceWriter** işlevi çalıştırıldığında bilmek daha kolay hale getirmek için.
 
     ```csharp
@@ -340,6 +345,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
         };
     }
     ```
+
 1. Tuşuna **F5** oluşturup projeyi çalıştırın.
 
 1. Tarayıcı sekmesinde gidin **http://localhost:7071/api/Process/4/6**. Bu başka bir ileti kuyruğuna sonunda başka bir satır tabloya eklenmekte sonuçlanmalıdır koyacaktır.
@@ -362,6 +368,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Yönteminin başına aşağıdaki kodu ekleyin. Varsa **TableRow'a** biz zaten istenen işlemi için sonuçları varsa ve hemen dönebilirsiniz null değil. Aksi halde, işlev önceki gibi devam eder. Bu verileri döndürmek için en güçlü şekilde olmayabilir ancak çok az kod ile birden çok ölçeklenebilir katman arasında son derece karmaşık işlemleri düzenleyebilirsiniz noktası gösterilmektedir.
 
     ```csharp
@@ -371,6 +378,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
         return null;
     }
     ```
+
 1. Tuşuna **F5** oluşturup projeyi çalıştırın.
 
 1. Tarayıcı sekmesinde URL'SİNDE Yenile **http://localhost:7071/api/Process/4/6**. Bu kaydın tabloda satır mevcut olmadığından, hemen ve hatasız döndürmelidir. HTTP çıktı olduğundan, Terminal çıktıda görebilirsiniz.

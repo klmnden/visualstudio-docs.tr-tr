@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057920"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme
 
@@ -54,69 +54,69 @@ Yapılandırmaları, temel özellikleri ayarlamak için **Çözüm Gezgini**, bi
 
 ## <a name="create-a-project-configuration"></a>Bir proje yapılandırması oluşturma
 
-1.  Açık **Configuration Manager** iletişim kutusu.
+1. Açık **Configuration Manager** iletişim kutusu.
 
-2.  Bir proje seçin **proje** sütun.
+2. Bir proje seçin **proje** sütun.
 
-3.  İçinde **yapılandırma** açılır listede bu proje için seçme **yeni**.
+3. İçinde **yapılandırma** açılır listede bu proje için seçme **yeni**.
 
      **Yeni proje yapılandırması** iletişim kutusu açılır.
 
-4.  İçinde **adı** kutusunda, yeni yapılandırma için bir ad girin.
+4. İçinde **adı** kutusunda, yeni yapılandırma için bir ad girin.
 
-5.  Varolan bir proje yapılandırma özelliği ayarlarından kullanılacağını **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.
+5. Varolan bir proje yapılandırma özelliği ayarlarından kullanılacağını **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.
 
-6.  Aynı anda çözüm genelindeki bir yapılandırma oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.
+6. Aynı anda çözüm genelindeki bir yapılandırma oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.
 
 ## <a name="rename-a-project-configuration"></a>Bir proje yapılandırması yeniden adlandır
 
-1.  Açık **Configuration Manager** iletişim kutusu.
+1. Açık **Configuration Manager** iletişim kutusu.
 
-2.  İçinde **proje** sütunu yeniden adlandırmak istediğiniz proje yapılandırmasını içeren projeyi seçin.
+2. İçinde **proje** sütunu yeniden adlandırmak istediğiniz proje yapılandırmasını içeren projeyi seçin.
 
-3.  İçinde **yapılandırma** açılır listede bu proje için seçme **Düzenle**.
+3. İçinde **yapılandırma** açılır listede bu proje için seçme **Düzenle**.
 
      **Proje yapılandırmalarını Düzenle** iletişim kutusu açılır.
 
-4.  Değiştirmek istediğiniz proje yapılandırması adı seçin.
+4. Değiştirmek istediğiniz proje yapılandırması adı seçin.
 
-5.  Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.
+5. Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Oluşturma ve değiştirme wide çözüm derleme yapılandırmaları
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırması oluşturmak için
 
-1.  Açık **Configuration Manager** iletişim kutusu.
+1. Açık **Configuration Manager** iletişim kutusu.
 
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **yeni**.
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **yeni**.
 
      **Yeni çözüm yapılandırması** iletişim kutusu açılır.
 
-3.  İçinde **adı** metin kutusunda, yeni yapılandırma için bir ad girin.
+3. İçinde **adı** metin kutusunda, yeni yapılandırma için bir ad girin.
 
-4.  Varolan bir çözüm yapılandırması ayarları kullanmak için **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.
+4. Varolan bir çözüm yapılandırması ayarları kullanmak için **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.
 
-5.  Proje yapılandırmaları aynı anda oluşturmak isteyip istemediğinizi seçin **yeni proje yapılandırmaları oluşturma** onay kutusu.
+5. Proje yapılandırmaları aynı anda oluşturmak isteyip istemediğinizi seçin **yeni proje yapılandırmaları oluşturma** onay kutusu.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırması yeniden adlandırmak için
 
-1.  Açık **Configuration Manager** iletişim kutusu.
+1. Açık **Configuration Manager** iletişim kutusu.
 
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **Düzenle**.
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **Düzenle**.
 
      **Çözüm yapılandırmalarını Düzenle** iletişim kutusu açılır.
 
-3.  Değiştirmek istediğiniz çözüm yapılandırma adı seçin.
+3. Değiştirmek istediğiniz çözüm yapılandırma adı seçin.
 
-4.  Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.
+4. Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırmasını değiştirmek için
 
-1.  Açık **Configuration Manager** iletişim kutusu.
+1. Açık **Configuration Manager** iletişim kutusu.
 
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde, istediğiniz yapılandırmayı seçin.
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde, istediğiniz yapılandırmayı seçin.
 
-3.  İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**da görüntülenip görüntülenmeyeceğini **Dağıt** bu.
+3. İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**da görüntülenip görüntülenmeyeceğini **Dağıt** bu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

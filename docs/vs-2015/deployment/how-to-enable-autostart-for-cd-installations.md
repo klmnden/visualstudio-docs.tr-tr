@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061106"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Nasıl yapılır: CD Yüklemeleri için AutoStart'ı Etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Dağıtım yaparken bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] u
   
 ### <a name="to-enable-autostart"></a>AutoStart'ı etkinleştirmek için  
   
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünü tıklatın **özellikleri**.  
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünü tıklatın **özellikleri**.  
   
-2.  Tıklayın **Yayımla** sekmesi.  
+2. Tıklayın **Yayımla** sekmesi.  
   
-3.  Tıklayın **seçenekleri** düğmesi.  
+3. Tıklayın **seçenekleri** düğmesi.  
   
      **Yayımlama seçeneği** iletişim kutusu görüntülenir.  
   
-4.  Tıklayın **dağıtım**.  
+4. Tıklayın **dağıtım**.  
   
-5.  Seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat** onay kutusu.  
+5. Seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat** onay kutusu.  
   
      Uygulama yayımlandığında Autorun.inf dosya yayımlama konumuna kopyalanacak.  
   

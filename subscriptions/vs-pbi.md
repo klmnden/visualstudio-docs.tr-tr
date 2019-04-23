@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 966db1966b6056b81f143b41db53f132c5b2755b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053279"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -96,26 +96,26 @@ Y:  Evet, iki önemli uyarılar ile bir üretim ortamında kullanabilirsiniz:
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>S:  Power BI Pro etkinleştirmeyi denediğinizde "Çalışma aracılığıyla bir hesap zaten" bir ileti alırsınız.  Avantajı kullanabilir miyim?
 Y:  Evet.  İleti üzerinde bir yöneticisiniz değil etkin Office 365 kiracıları zaten olan bir etki alanına oturum olduğunu gösterir.  Power BI Pro eklemek için bir kiracı için Kiracı yönetici olması gerekir.  Bu sorunu çözmek için kendi Kiracı oluşturmak için aşağıdaki adımları izleyin.
-1.  Zaten bir iş hesabıyla sahip ileti gördüğünüzde tıklayın **yeni bir hesap oluşturun**.
+1. Zaten bir iş hesabıyla sahip ileti gördüğünüzde tıklayın **yeni bir hesap oluşturun**.
 
-2.  Sonraki ekranda, iletişim bilgilerinizi girin ve tıklayın **sonraki**.
+2. Sonraki ekranda, iletişim bilgilerinizi girin ve tıklayın **sonraki**.
 
-3.  Kullanıcı kimliği ve parola oluşturun.  Ücretsiz tekliften yararlanabilmeniz için seçtiğinizden emin olun **. onmicrosoft.com** etki alanı olarak. Tıklayın **Hesabımı Oluştur**.
+3. Kullanıcı kimliği ve parola oluşturun.  Ücretsiz tekliften yararlanabilmeniz için seçtiğinizden emin olun **. onmicrosoft.com** etki alanı olarak. Tıklayın **Hesabımı Oluştur**.
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro avantajı özel Kiracı kimliği oluşturma](_img/vs-pbi/vs-pbi-work-userid.png)
 
-4.  İşlemdeki adımların geri kalan adım 6 ile başlayarak, makalenin gövdesinde listelenenlerle aynıdır.
+4. İşlemdeki adımların geri kalan adım 6 ile başlayarak, makalenin gövdesinde listelenenlerle aynıdır.
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>S:  Bir kamu kiracısı üzerinde istiyorum.  Avantajı kullanabilir miyim?
 Y:  Hayır.  Power BI Pro avantajı kamu kiracıları için eklenemez.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Power BI Pro yardıma mı ihtiyacınız var?
+- Power BI Pro yardıma mı ihtiyacınız var?
     - Kullanıma [çevrimiçi belgeleri](/power-bi/).
     - Kaydolma sorunları mı yaşıyorsunuz?  Kullanıma [Power BI bireysel olarak kaydolma](/power-bi/service-self-service-signup-for-power-bi)
     - En sık karşılaşılan sorunlar keşfedin, topluluktan yardım alın veya üzerinde bir destek bileti gönderin [destek sayfasını](https://powerbi.microsoft.com/support/).
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Power BI Pro avantajınızı etkinleştirmek için ziyaret edin [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

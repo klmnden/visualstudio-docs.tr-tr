@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063146"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Nasıl yapılır: Bir İş Akışı Projesine Yeni Öğe Ekleme (Eski)
 Eski kullanarak bir iş akışı projesi oluşturduktan sonra [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ekleyebileceğiniz [!INCLUDE[wf](../includes/wf-md.md)] öğeleri ve diğer tanıdık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projenize öğeleri.  
@@ -37,15 +37,15 @@ Eski kullanarak bir iş akışı projesi oluşturduktan sonra [!INCLUDE[wfd1](..
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Bir iş akışı projesine yeni bir öğe eklemek için  
   
-1.  Üzerinde **proje** menüsünde tıklatın **yeni bir öğe eklemek**.  
+1. Üzerinde **proje** menüsünde tıklatın **yeni bir öğe eklemek**.  
   
      **Yeni bir öğe eklemek** iletişim kutusu açılır.  
   
-2.  Bir öğe seçin.  
+2. Bir öğe seçin.  
   
      Önceki tabloda, kullanılabilen Windows Workflow Foundation seçimler listeler.  
   
-3.  Tıklayın **Ekle** iş akışı projesine öğe eklemek için.  
+3. Tıklayın **Ekle** iş akışı projesine öğe eklemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski İş Akışı Projeleri Oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)

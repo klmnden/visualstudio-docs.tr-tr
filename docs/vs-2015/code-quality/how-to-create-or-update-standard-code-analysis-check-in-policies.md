@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053162"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Analizi İade İlkeleri Oluşturma veya Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki
   
 ### <a name="to-open-the-check-in-policy-editor"></a>İade İlkesi Düzenleyicisi'ni açmak için  
   
-1.  Takım projesi adı Ekip Gezgini'nde sağ tıklatın, **takım projesi ayarları**ve ardından **kaynak denetimi**.  
+1. Takım projesi adı Ekip Gezgini'nde sağ tıklatın, **takım projesi ayarları**ve ardından **kaynak denetimi**.  
   
-2.  İçinde **kaynak denetimi** iletişim kutusunda **iade ilkesi** sekmesi.  
+2. İçinde **kaynak denetimi** iletişim kutusunda **iade ilkesi** sekmesi.  
   
-3.  Aşağıdakilerden birini yapın:  
+3. Aşağıdakilerden birini yapın:  
   
-    -   Tıklayın **Ekle** yeni bir iade ilkesi oluşturulacak.  
+    - Tıklayın **Ekle** yeni bir iade ilkesi oluşturulacak.  
   
-    -   Var olan çift **Kod Analizi** öğesi **ilke türü** ilkeyi değiştirmek için liste.  
+    - Var olan çift **Kod Analizi** öğesi **ilke türü** ilkeyi değiştirmek için liste.  
   
 ### <a name="to-set-policy-options"></a>İlke seçeneklerini ayarlamak için  
   
--   Seçin veya aşağıdaki seçenekleri temizleyin:  
+- Seçin veya aşağıdaki seçenekleri temizleyin:  
   
     |Seçenek|Açıklama|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki
     |**C/C++ kod analizini zorla (/ analyze)**|Tüm C veya C++ projeleri ile oluşturulması gerekir / analyze derleyici seçeneği, Kod Analizi iade edilmeden önce çalıştırılacak.|  
     |**Yönetilen kod için kod analizini zorla**|Tüm yönetilen projeleri için kod analizini Çalıştır ve iade edilmeden önce yapı gerektirir.|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>Bir yönetilen kural kümesi belirtmek için  
   
--   Gelen **bu kural kümesini Çalıştır** listesinde, aşağıdaki yöntemlerden birini kullanın:  
+- Gelen **bu kural kümesini Çalıştır** listesinde, aşağıdaki yöntemlerden birini kullanın:  
   
-    -   Bir Microsoft Standart kural kümesi seçin.  
+    - Bir Microsoft Standart kural kümesi seçin.  
   
-    -   Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >**, kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
+    - Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >**, kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Oluşturma ve bir özel iade ilkesi kuralı uygulamak hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulamaya özel iade ilkeleri](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    - Oluşturma ve bir özel iade ilkesi kuralı uygulamak hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulamaya özel iade ilkeleri](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

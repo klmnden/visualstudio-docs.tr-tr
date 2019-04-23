@@ -13,23 +13,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058310"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda etkin bağlantı olarak seçebilirsiniz. Bu özellik, URL'leri kullandığınızda:  
   
--   Altı çizili olarak görünür.  
+- Altı çizili olarak görünür.  
   
--   Görünen bir **araç ipucu** geldiğinizde bunlar üzerinde.  
+- Görünen bir **araç ipucu** geldiğinizde bunlar üzerinde.  
   
--   Ne zaman gösterilen Web sitesi açmayı deneyin, **CTRL** + bağlantıyı tıklatın. Varsayılan olarak, Web sitesinin iç Web tarayıcısında görüntülenir.  
+- Ne zaman gösterilen Web sitesi açmayı deneyin, **CTRL** + bağlantıyı tıklatın. Varsayılan olarak, Web sitesinin iç Web tarayıcısında görüntülenir.  
   
 > [!NOTE]
 >  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -38,17 +38,17 @@ Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda et
   
 #### <a name="to-display-urls-as-links"></a>URL'leri bağlantı olarak görüntülenecek  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  Tıklayın **metin düzenleyici**.  
+2. Tıklayın **metin düzenleyici**.  
   
-3.  Yalnızca bir dil seçeneğini değiştirmek için bu dil için klasörü genişletin ve seçin **genel**.  
+3. Yalnızca bir dil seçeneğini değiştirmek için bu dil için klasörü genişletin ve seçin **genel**.  
   
      —veya—  
   
      Tüm diller için seçeneği değiştirmek için genişletme **tüm diller** klasörü seçin **genel**.  
   
-4.  Altında **görünen**seçin **etkinleştirme tek tıkla URL gezinmesini**.  
+4. Altında **görünen**seçin **etkinleştirme tek tıkla URL gezinmesini**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   

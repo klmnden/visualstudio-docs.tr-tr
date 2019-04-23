@@ -14,19 +14,19 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3c71b90d0711bf317d0ed72d51c0d5d45297c80
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053411"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Kodlanacak URI geçersiz karakter içeriyor
 Bir dize URI'si (Tekdüzen Kaynak Tanımlayıcısı) kodlamak çalıştı, ancak geçersiz karakterler içeriyor. Çoğu karakter için bir URI'leri dönüştürülecek dize içinde geçerli olsa da, bazı Unicode karakter dizileri geçersizdir.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Kodlanacak dize yalnızca geçerli Unicode dizileri içeren emin olun. Tam bir URI bileşenlerini ayırıcıları ve bir dizi oluşur. Açılı ayraçlar adlarında bileşenleri temsil eder ve ":", "/", ";" ve "?" ayırıcı olarak kullanılan ayrılmış karakterler. Genel formu şöyledir:  
+- Kodlanacak dize yalnızca geçerli Unicode dizileri içeren emin olun. Tam bir URI bileşenlerini ayırıcıları ve bir dizi oluşur. Açılı ayraçlar adlarında bileşenleri temsil eder ve ":", "/", ";" ve "?" ayırıcı olarak kullanılan ayrılmış karakterler. Genel formu şöyledir:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

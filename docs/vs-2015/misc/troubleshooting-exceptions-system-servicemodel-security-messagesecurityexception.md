@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058882"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Özel durum sorunlarını giderme: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] bir ileti doğru güvenli olmayan veya oynanmış belirler. Hata, en sık aşağıdaki koşulların tümü doğru olduğunda oluşur:  
   
--   (.Svc) bir Web sitesi veya Web uygulama projesinde bir WCF Hizmeti ile iletişim kurmak için bir WCF hizmet başvurusu Uzak Masaüstü bağlantısı veya Terminal Services gibi uzak bir bağlantısı kullanın.  
+- (.Svc) bir Web sitesi veya Web uygulama projesinde bir WCF Hizmeti ile iletişim kurmak için bir WCF hizmet başvurusu Uzak Masaüstü bağlantısı veya Terminal Services gibi uzak bir bağlantısı kullanın.  
   
--   Uzak site üzerinde yönetici izinlerine sahip değil.  
+- Uzak site üzerinde yönetici izinlerine sahip değil.  
   
--   Uzak sitede localhost isteklerine tarafından işlendiğinden [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sunucusu.  
+- Uzak sitede localhost isteklerine tarafından işlendiğinden [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sunucusu.  
   
 ## <a name="associated-tips"></a>İlişkili ipuçları  
  **ASP.Net geliştirme sunucusu kullanırken, NTLM kimlik doğrulama sorunları çözün.**  
@@ -78,11 +78,11 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INC
   
 #### <a name="to-turn-off-ntlm-security"></a>NTLM güvenliğini devre dışı kapatmak için  
   
-1.  İçinde **Çözüm Gezgini**Web sitesi adına sağ tıklayın ve ardından **özellik sayfaları**.  
+1. İçinde **Çözüm Gezgini**Web sitesi adına sağ tıklayın ve ardından **özellik sayfaları**.  
   
-2.  Seçin **Başlat seçenekleri**ve ardından temizlemek **NTLM kimlik doğrulaması** onay kutusu.  
+2. Seçin **Başlat seçenekleri**ve ardından temizlemek **NTLM kimlik doğrulaması** onay kutusu.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

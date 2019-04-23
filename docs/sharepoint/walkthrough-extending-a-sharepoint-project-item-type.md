@@ -14,27 +14,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 150f267b7663bdb6335d1fe39f463e1b8635bfbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057868"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.
 
  Bu kılavuzda, bir uzantı için oluşturacağınız **iş verileri bağlantı modeli** proje öğesi. Geliştiriciler, BDC modeli verileri görüntüler, projede bir dış liste oluşturmak için uzantıyı kullanabilir. Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
+- Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
 
-    -   Bu, BDC modelindeki verileri görüntüleyen bir dış liste oluşturur. Uzantı SharePoint Proje sistemi için nesne modeli oluşturmak için kullanır. bir *Elements.xml* listeyi tanımlayan dosya. Böylece BDC modeliyle birlikte dağıtılır de proje dosyası ekler.
+    - Bu, BDC modelindeki verileri görüntüleyen bir dış liste oluşturur. Uzantı SharePoint Proje sistemi için nesne modeli oluşturmak için kullanır. bir *Elements.xml* listeyi tanımlayan dosya. Böylece BDC modeliyle birlikte dağıtılır de proje dosyası ekler.
 
-    -   Bir kısayol menü öğesi ekler **iş verileri bağlantı modeli** proje öğelerinde **Çözüm Gezgini**. Geliştiriciler, BDC modeli için bir dış liste oluşturmak için bu menü öğesine tıklayabilirsiniz.
+    - Bir kısayol menü öğesi ekler **iş verileri bağlantı modeli** proje öğelerinde **Çözüm Gezgini**. Geliştiriciler, BDC modeli için bir dış liste oluşturmak için bu menü öğesine tıklayabilirsiniz.
 
--   Uzantı derlemesini dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
+- Uzantı derlemesini dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
 
--   Uzantıyı test etme.
+- Uzantıyı test etme.
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:
@@ -60,76 +60,76 @@ ms.locfileid: "56620531"
 
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için
 
-1.  Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
+2. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-3.  İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
+3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
     >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
-4.  Üst kısmındaki listede **yeni proje** iletişim kutusunda **.NET Framework 4.5**.
+4. Üst kısmındaki listede **yeni proje** iletişim kutusunda **.NET Framework 4.5**.
 
      SharePoint araç uzantıları .NET Framework'ün bu sürümünde özellikleri gerektirir.
 
-5.  Seçin **VSIX projesi** şablonu.
+5. Seçin **VSIX projesi** şablonu.
 
-6.  İçinde **adı** kutusuna **GenerateExternalDataLists**ve ardından **Tamam** düğmesi.
+6. İçinde **adı** kutusuna **GenerateExternalDataLists**ve ardından **Tamam** düğmesi.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **GenerateExternalDataLists** için proje **Çözüm Gezgini**.
 
-7.  Source.extension.vsixmanifest dosyası otomatik olarak açılmazsa GenerateExternalDataLists projesinde kısayol menüsünü açın ve ardından **açın**
+7. Source.extension.vsixmanifest dosyası otomatik olarak açılmazsa GenerateExternalDataLists projesinde kısayol menüsünü açın ve ardından **açın**
 
-8.  Source.extension.vsixmanifest dosyası boş olmayan bir girdisi olduğunu doğrulayın (Contoso girin) Yazar alanı için dosyayı kaydedin ve kapatın.
+8. Source.extension.vsixmanifest dosyası boş olmayan bir girdisi olduğunu doğrulayın (Contoso girin) Yazar alanı için dosyayı kaydedin ve kapatın.
 
 #### <a name="to-create-the-extension-project"></a>Uzantı projesini oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **GenerateExternalDataLists** çözüm düğümüne seçin **Ekle**ve ardından **YeniProje**.
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **GenerateExternalDataLists** çözüm düğümüne seçin **Ekle**ve ardından **YeniProje**.
 
-2.  İçinde **Yeni Proje Ekle** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **Windows** düğümü.
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **Windows** düğümü.
 
-3.  İletişim kutusunun üst kısmındaki listede seçin **.NET Framework 4.5**.
+3. İletişim kutusunun üst kısmındaki listede seçin **.NET Framework 4.5**.
 
-4.  Proje şablonları listesinde seçin **sınıf kitaplığı**.
+4. Proje şablonları listesinde seçin **sınıf kitaplığı**.
 
-5.  İçinde **adı** kutusuna **Bdcprojectıtemextension**ve ardından **Tamam** düğmesi.
+5. İçinde **adı** kutusuna **Bdcprojectıtemextension**ve ardından **Tamam** düğmesi.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **Bdcprojectıtemextension** çözüme ve varsayılan Class1 kod dosyasını açar.
 
-6.  Projeden Class1 kod dosyasını silin.
+6. Projeden Class1 kod dosyasını silin.
 
 ## <a name="configure-the-extension-project"></a>Uzantı projesini yapılandırma
  Proje öğesi uzantısını oluşturmak için kod yazmadan önce kod dosyalarını ve derleme referanslarını uzantı projesine ekleyin.
 
 #### <a name="to-configure-the-project"></a>Proje yapılandırma
 
-1.  Bdcprojectıtemextension projesinde aşağıdaki adlara sahip iki kod dosyasını ekleyin:
+1. Bdcprojectıtemextension projesinde aşağıdaki adlara sahip iki kod dosyasını ekleyin:
 
-    -   Projectıtemextension
+    - Projectıtemextension
 
-    -   GenerateExternalDataLists
+    - GenerateExternalDataLists
 
-2.  Bdcprojectıtemextension projesini seçin ve ardından, menü çubuğunda, **proje** > **Başvuru Ekle**.
+2. Bdcprojectıtemextension projesini seçin ve ardından, menü çubuğunda, **proje** > **Başvuru Ekle**.
 
-3.  Altında **derlemeleri** düğümünü seçin **Framework** düğüm ve aşağıdaki derlemelerin her biri için onay kutusunu seçin:
+3. Altında **derlemeleri** düğümünü seçin **Framework** düğüm ve aşağıdaki derlemelerin her biri için onay kutusunu seçin:
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-    -   WindowsBase
+    - WindowsBase
 
-4.  Altında **derlemeleri** düğümünü seçin **uzantıları** düğüm ve onay kutusunu seçin aşağıdaki derleme:
+4. Altında **derlemeleri** düğümünü seçin **uzantıları** düğüm ve onay kutusunu seçin aşağıdaki derleme:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-5.  Seçin **Tamam** düğmesi.
+5. Seçin **Tamam** düğmesi.
 
 ## <a name="define-the-project-item-extension"></a>Proje öğesi uzantısı tanımlama
  Uzantıyı tanımlayan bir sınıf oluşturmanız **iş verileri bağlantı modeli** proje öğesi. Sınıfının Implements uzantısı tanımlamak için <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> arabirimi. Varolan bir proje öğesi türünü genişletmek istediğinizde bu arabirimi uygulayın.
 
 #### <a name="to-define-the-project-item-extension"></a>Proje öğe uzantısını tanımlamak için
 
-1.  Aşağıdaki kodu Projectıtemextension kod dosyasına yapıştırın.
+1. Aşağıdaki kodu Projectıtemextension kod dosyasına yapıştırın.
 
     > [!NOTE]
     >  Bu kodu ekledikten sonra projeyi bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
@@ -142,7 +142,7 @@ ms.locfileid: "56620531"
 
 #### <a name="to-create-the-external-data-lists"></a>Dış veri listeleri oluşturmak için
 
-1.  Aşağıdaki kodu GenerateExternalDataLists kod dosyasına yapıştırın.
+1. Aşağıdaki kodu GenerateExternalDataLists kod dosyasına yapıştırın.
 
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
@@ -152,35 +152,35 @@ ms.locfileid: "56620531"
 
 #### <a name="to-build-the-solution"></a>Çözümü derlemek için
 
-1.  Menü çubuğunda, **derleme** > **Çözümü Derle**.
+1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Proje öğesi uzantısını dağıtmak için VSIX paketi oluşturma
  Uzantıyı dağıtmak için VSIX paketi oluşturmak için çözümünüzdeki VSIX projesi kullanın. İlk olarak, VSIX projesine dahil olan source.extension.vsixmanifest dosyasını değiştirerek VSIX paketini yapılandırın. Ardından çözümü oluşturarak VSIX paketini oluşturun.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Yapılandırma ve VSIX paketini oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**source.extension.vsixmanifest dosyası için kısayol menüsünü GenerateExternalDataLists projesi içinde açın ve ardından **açın**.
+1. İçinde **Çözüm Gezgini**source.extension.vsixmanifest dosyası için kısayol menüsünü GenerateExternalDataLists projesi içinde açın ve ardından **açın**.
 
      Visual Studio, dosyayı bildirim düzenleyicisinde açar. .Vsixmanifest uzantı dosyası temeli, tüm VSIX paketleri tarafından gerekli source.extension.vsixmanifest dosyasıdır. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  İçinde **ürün adı** kutusuna **dış veri listesi Oluşturucu**.
+2. İçinde **ürün adı** kutusuna **dış veri listesi Oluşturucu**.
 
-3.  İçinde **Yazar** kutusuna **Contoso**.
+3. İçinde **Yazar** kutusuna **Contoso**.
 
-4.  İçinde **açıklama** kutusuna **dış veri listeleri oluşturmak için kullanılan iş verileri bağlantısı modeli proje öğeleri için bir uzantı**.
+4. İçinde **açıklama** kutusuna **dış veri listeleri oluşturmak için kullanılan iş verileri bağlantısı modeli proje öğeleri için bir uzantı**.
 
-5.  Üzerinde **varlıklar** sekmesini düzenleyicinin seçin **yeni** düğmesi.
+5. Üzerinde **varlıklar** sekmesini düzenleyicinin seçin **yeni** düğmesi.
 
      **Yeni varlık Ekle** iletişim kutusu görüntülenir.
 
-6.  İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
+6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
+7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
-8.  İçinde **proje** listesinde **Bdcprojectıtemextension**ve ardından **Tamam** düğmesi.
+8. İçinde **proje** listesinde **Bdcprojectıtemextension**ve ardından **Tamam** düğmesi.
 
 9. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
@@ -195,33 +195,33 @@ ms.locfileid: "56620531"
 
 #### <a name="to-start-debugging-the-extension"></a>Uzantı hata ayıklamasını başlatmak için
 
-1.  Gerekirse, yönetici kimlik bilgileriyle Visual Studio'yu yeniden başlatın ve ardından GenerateExternalDataLists çözümünü açın.
+1. Gerekirse, yönetici kimlik bilgileriyle Visual Studio'yu yeniden başlatın ve ardından GenerateExternalDataLists çözümünü açın.
 
-2.  Bdcprojectıtemextension projesinde Projectıtemextension kod dosyasını açın ve ardından kod satırına bir kesme noktası ekleyin `Initialize` yöntemi.
+2. Bdcprojectıtemextension projesinde Projectıtemextension kod dosyasını açın ve ardından kod satırına bir kesme noktası ekleyin `Initialize` yöntemi.
 
-3.  GenerateExternalDataLists kod dosyasını açın ve ardından ilk kod satırına bir kesme noktası ekleyin `GenerateExternalDataLists_Execute` yöntemi.
+3. GenerateExternalDataLists kod dosyasını açın ve ardından ilk kod satırına bir kesme noktası ekleyin `GenerateExternalDataLists_Execute` yöntemi.
 
-4.  Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
+4. Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
 
      Visual Studio, uzantıyı %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data listesi generator\1. 0'dizinine yükler ve Visual Studio'nun deneysel örneği başlar. Proje öğesi bu Visual Studio örneğinde test edeceksiniz.
 
 #### <a name="to-test-the-extension"></a>Uzantıyı test etmek için
 
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **dosya** > **yeni** > **proje**.
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **dosya** > **yeni** > **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **şablonları** düğümünü genişletin **Visual C#** düğümünü genişletin **SharePoint** düğümünü ve ardından seçin **2010**.
+2. İçinde **yeni proje** iletişim kutusunda **şablonları** düğümünü genişletin **Visual C#** düğümünü genişletin **SharePoint** düğümünü ve ardından seçin **2010**.
 
-3.  İletişim kutusunun üst kısmındaki listede olduğundan emin olun **.NET Framework 3.5** seçilir. Projeler için [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .NET Framework'ün bu sürümü gerekir.
+3. İletişim kutusunun üst kısmındaki listede olduğundan emin olun **.NET Framework 3.5** seçilir. Projeler için [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] .NET Framework'ün bu sürümü gerekir.
 
-4.  Proje şablonları listesinde seçin **SharePoint 2010 projesi**.
+4. Proje şablonları listesinde seçin **SharePoint 2010 projesi**.
 
-5.  İçinde **adı** kutusuna **SharePointProjectTestBDC**ve ardından **Tamam** düğmesi.
+5. İçinde **adı** kutusuna **SharePointProjectTestBDC**ve ardından **Tamam** düğmesi.
 
-6.  SharePoint Özelleştirme Sihirbazı'nda hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin **Grup çözümü olarak Dağıt**ve ardından **son** düğmesi.
+6. SharePoint Özelleştirme Sihirbazı'nda hata ayıklama için kullanmak istediğiniz sitenin URL'sini girin **Grup çözümü olarak Dağıt**ve ardından **son** düğmesi.
 
-7.  SharePointProjectTestBDC projesi için kısayol menüsünü açın, **Ekle**ve ardından **yeni öğe**.
+7. SharePointProjectTestBDC projesi için kısayol menüsünü açın, **Ekle**ve ardından **yeni öğe**.
 
-8.  İçinde **newItem - SharePointProjectTestBDC Ekle** iletişim kutusunda, yüklenen dil düğümünü genişletin, **SharePoint** düğümü.
+8. İçinde **newItem - SharePointProjectTestBDC Ekle** iletişim kutusunda, yüklenen dil düğümünü genişletin, **SharePoint** düğümü.
 
 9. Seçin **2010** düğümünü seçip **iş verileri bağlantı modeli (yalnızca Grup çözümü)** şablonu.
 
@@ -262,35 +262,35 @@ ms.locfileid: "56620531"
 
 #### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>Dış veri listesini SharePoint sitesinden kaldırmak için
 
-1.  SharePoint sitesinin hızlı başlat alanında seçin **Entity1DataList** listesi.
+1. SharePoint sitesinin hızlı başlat alanında seçin **Entity1DataList** listesi.
 
-2.  SharePoint sitesindeki Şeritte seçin **listesi** sekmesi.
+2. SharePoint sitesindeki Şeritte seçin **listesi** sekmesi.
 
-3.  Üzerinde **listesi** sekmesinde **ayarları** Grup öğesini **listesi ayarları**.
+3. Üzerinde **listesi** sekmesinde **ayarları** Grup öğesini **listesi ayarları**.
 
-4.  Altında **izinler ve Yönetim**, seçin **bu listeyi Sil**ve ardından **Tamam** listeyi Geri Dönüşüm Kutusu'na göndermek istediğinizi onaylayın.
+4. Altında **izinler ve Yönetim**, seçin **bu listeyi Sil**ve ardından **Tamam** listeyi Geri Dönüşüm Kutusu'na göndermek istediğinizi onaylayın.
 
-5.  Web tarayıcısını kapatın.
+5. Web tarayıcısını kapatın.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>BDC modelini SharePoint sitesinden kaldırmak için
 
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **derleme** > **geri çek**.
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **derleme** > **geri çek**.
 
      Visual Studio, SharePoint sitesinden BDC modelini kaldırır.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Visual Studio'dan proje öğesi uzantısını kaldırmak için
 
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
      **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.
 
-2.  Uzantılar listesinde seçin **dış veri listesi Oluşturucu**ve ardından **kaldırma** düğmesi.
+2. Uzantılar listesinde seçin **dış veri listesi Oluşturucu**ve ardından **kaldırma** düğmesi.
 
-3.  Görünen iletişim kutusunda **Evet** uzantının yüklemesini kaldırmak istediğinizi onaylayın.
+3. Görünen iletişim kutusunda **Evet** uzantının yüklemesini kaldırmak istediğinizi onaylayın.
 
-4.  Seçin **şimdi yeniden Başlat** kaldırma işlemini tamamlamak için.
+4. Seçin **şimdi yeniden Başlat** kaldırma işlemini tamamlamak için.
 
-5.  (Deneysel örneği ve GenerateExternalDataLists çözümünün açık olduğu örneği) Visual Studio'nun her iki örneklerini kapatın.
+5. (Deneysel örneği ve GenerateExternalDataLists çözümünün açık olduğu örneği) Visual Studio'nun her iki örneklerini kapatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)

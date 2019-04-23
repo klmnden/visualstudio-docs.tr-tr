@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055424"
 ---
 # <a name="registering-single-file-generators"></a>Tek Dosya Oluşturucuları Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54804937"
   
 ### <a name="to-register-a-custom-tool"></a>Özel bir aracı kaydetmek için  
   
-1.  Özel araç DLL ya da kayıt içinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yerel kayıt defteri veya sistem kayıt defterinde HKEY_CLASSES_ROOT altında.  
+1. Özel araç DLL ya da kayıt içinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yerel kayıt defteri veya sistem kayıt defterinde HKEY_CLASSES_ROOT altında.  
   
      Örneğin, ile sunulan yönetilen MSDataSetGenerator özel aracı için kayıt bilgileri işte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ ms.locfileid: "54804937"
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  İstenen bir kayıt defteri anahtarı oluşturma [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluşturucuları altında hive\\*GUID* burada *GUID* GUID belirli dil proje sistemi veya hizmet tarafından tanımlanır. Anahtar adı özel aracınızı programlı adı haline gelir. Özel araç anahtar aşağıdaki değerlere sahip:  
+2. İstenen bir kayıt defteri anahtarı oluşturma [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluşturucuları altında hive\\*GUID* burada *GUID* GUID belirli dil proje sistemi veya hizmet tarafından tanımlanır. Anahtar adı özel aracınızı programlı adı haline gelir. Özel araç anahtar aşağıdaki değerlere sahip:  
   
-    -   (Varsayılan)  
+    - (Varsayılan)  
   
          İsteğe bağlı. Özel aracın kullanıcı dostu bir açıklama sağlar. Bu parametre isteğe bağlıdır ancak önerilir.  
   
-    -   CLSID  
+    - CLSID  
   
          Gerekli. Sınıf kitaplığı uygulayan COM bileşeninin tanımlayıcısını belirtir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Gerekli. Bu özel araç tarafından üretilen dosyaları türlerinden görsel tasarımcılar için kullanılabilir olup olmadığını gösterir. Bu parametrenin değeri türleri görsel tasarımcılar için kullanılabilir değil (sıfır) 0 veya (bir adet) 1 türleri için görsel tasarımcılar kullanılabilir olması gerekir.  
   

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060338"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI testleriyle farklı web tarayıcıları kullanma
 
@@ -24,13 +24,13 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Ne tüm web tarayıcıları destekleniyor mu?
 
--   [Özellikleri denetlemek için özel kod ekleme](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) properties, search ve playback waiters gibi.
+- [Özellikleri denetlemek için özel kod ekleme](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) properties, search ve playback waiters gibi.
 
--   Açılır pencereler ve iletişim kutuları
+- Açılır pencereler ve iletişim kutuları
 
--   [Dönüş türü olmadan temel JavaScript yürütme](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Dönüş türü olmadan temel JavaScript yürütme](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Arama (akıllı eşleşme kullanarak) esneklik ve [performans geliştirmeleri](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Arama (akıllı eşleşme kullanarak) esneklik ve [performans geliştirmeleri](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Birden çok web tarayıcı türleri arasında kodlanmış UI testleri neden kullanmalıyım?
 
@@ -78,17 +78,17 @@ Daha fazla bilgi oluşturma ve kullanarak kodlanmış UI testleri için bkz. [Ol
 
 Web uygulamanızda hata ayıklamayı etkinleştirmek için aşağıdaki yapılandırma seçeneklerini tamamlamanız gerekir:
 
-1.  Yalnızca Kendi Kodumu Etkinleştir:
+1. Yalnızca Kendi Kodumu Etkinleştir:
 
-    1.  Üzerinde **Araçları** menüsünde seçin **seçenekleri** seçip **hata ayıklama**.
+    1. Üzerinde **Araçları** menüsünde seçin **seçenekleri** seçip **hata ayıklama**.
 
-    2.  Seçin **yalnızca kendi kodumu etkinleştir**.
+    2. Seçin **yalnızca kendi kodumu etkinleştir**.
 
-2.  CLR özel durumları devre dışı bırakın:
+2. CLR özel durumları devre dışı bırakın:
 
-    1.  Üzerinde **hata ayıklama** menüsünde seçin **özel durumları**.
+    1. Üzerinde **hata ayıklama** menüsünde seçin **özel durumları**.
 
-    2.  İçin **ortak dil çalışma zamanı özel durumları**, onay kutusunu temizleyin **kullanıcı-işlenmemiş**.
+    2. İçin **ortak dil çalışma zamanı özel durumları**, onay kutusunu temizleyin **kullanıcı-işlenmemiş**.
 
 Varsa değiştirme seçeneği görmüyorum `BrowserWindow.CurrentBrowser` kodlanmış UI testi, Visual Studio'nun çeşitli web tarayıcıları kullanarak kodlanmış UI testlerini desteklemeyen bir sürümünü kullanıyor olabilirsiniz. Bu tür kodlanmış UI testleri kullanmak için Visual Studio Enterprise edition'ı kullanmanız gerekir.
 

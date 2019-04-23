@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055794"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türde işler. Metot gövdeleri dışında çoğu değişiklikleri ve metot gövdeleri içindeki bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurmak ve kod yeni bir sürümle yeniden başlatmanız gerekir.
@@ -45,7 +45,7 @@ Aşağıdaki tabloda yapılan değişiklikleri gösterir C# ve Visual Basic kodu
 ## <a name="unsupported-changes-to-code"></a>Desteklenmeyen kod değişiklikleri
  Aşağıdaki değişiklikler uygulanamaz C# ve Visual Basic kodu hata ayıklama oturumu sırasında:
 
--   Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.
+- Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.
 
      Etkin deyimleri için geçerli durumunu almak için çağrılan işlevler çağrı yığını üzerinde herhangi bir deyim ekleyin.
 
@@ -90,19 +90,19 @@ Desteklenmeyen uygulamalar ve platformlar, ASP.NET 5, Silverlight 5 ve Windows 8
 ## <a name="unsupported-scenarios"></a>Desteklenmeyen senaryolar
  Düzenle ve devam et hata ayıklama aşağıdaki senaryolarda kullanılabilir değil:
 
--   Karma mod (yerel/yönetilen) hata ayıklama.
+- Karma mod (yerel/yönetilen) hata ayıklama.
 
--   SQL hata ayıklama.
+- SQL hata ayıklama.
 
--   Bir Dr hata ayıklama. Watson dökümü.
+- Bir Dr hata ayıklama. Watson dökümü.
 
--   Katıştırılmış çalışma zamanı uygulama hata ayıklama.
+- Katıştırılmış çalışma zamanı uygulama hata ayıklama.
 
--   Bir uygulama kullanarak hata ayıklama iliştirme (**hata ayıklama > iliştirme**) seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.
+- Bir uygulama kullanarak hata ayıklama iliştirme (**hata ayıklama > iliştirme**) seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.
 
--   En iyi duruma getirilmiş kodda hata ayıklama.
+- En iyi duruma getirilmiş kodda hata ayıklama.
 
--   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.
+- Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Düzenle ve Devam Et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0e944d2ed8538a72082bdc52ee72058907ed9d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055307"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA ve belge düzeyi özelleştirmelerini birleştirme
   Visual Basic for Applications (VBA) kodu Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir belgeyi kullanabilirsiniz. Özelleştirme bütünleştirilmiş koddan belgedeki VBA kodu çağırabilir veya özelleştirme derlemede kod çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi yapılandırabilirsiniz.
@@ -86,17 +86,17 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="requirements"></a>Gereksinimler
  VBA kodunu özelleştirme bütünleştirilmiş kod içine çağırmak için etkinleştirmeden önce projenize aşağıdaki gereksinimleri karşılaması gerekir:
 
--   Belge aşağıdaki dosya adı uzantıları birine sahip olmalıdır:
+- Belge aşağıdaki dosya adı uzantıları birine sahip olmalıdır:
 
-    -   Word: *.docm* veya *.doc*
+    - Word: *.docm* veya *.doc*
 
-    -   Excel: *.xlsm*, *.xltm*, *.xls*, veya *.xlt*
+    - Excel: *.xlsm*, *.xltm*, *.xls*, veya *.xlt*
 
--   Belge zaten VBA kodunun olduğu bir VBA projesi içermesi gerekir.
+- Belge zaten VBA kodunun olduğu bir VBA projesi içermesi gerekir.
 
--   Belgedeki VBA kodu kullanıcı makroları istemeden çalışmaya izin verilmesi gerekir. Office proje konumunu Word veya Excel için Güven Merkezi ayarlarında güvenilen konumlar listesine ekleyerek çalıştırılacak VBA kodu güvenebilir.
+- Belgedeki VBA kodu kullanıcı makroları istemeden çalışmaya izin verilmesi gerekir. Office proje konumunu Word veya Excel için Güven Merkezi ayarlarında güvenilen konumlar listesine ekleyerek çalıştırılacak VBA kodu güvenebilir.
 
--   Office proje için VBA bırakıyorsunuz bir veya daha fazla genel üyeleri içeren en az bir ortak sınıf içermelidir.
+- Office proje için VBA bırakıyorsunuz bir veya daha fazla genel üyeleri içeren en az bir ortak sınıf içermelidir.
 
      Yöntemler, özellikler ve olaylar VBA kullanıma sunabilirsiniz. Bir konak Item sınıfı, kullanıma sınıfı olabilir (gibi `ThisDocument` Word için veya `ThisWorkbook` ve `Sheet1` Excel için) veya projenize tanımlayan başka bir sınıf. Konak öğeleri hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 
@@ -109,11 +109,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
    Bunu yapmak için aşağıdaki temel adımları gerçekleştirmeniz gerekir:
 
-  1.  Vystavit sınıfı
+  1. Vystavit sınıfı
 
-  2.  Geçersiz kılma **GetAutomationObject** gösterme sınıfının bir örneğini dönmek için projenizdeki ana bilgisayar öğesi sınıfının yöntemi.
+  2. Geçersiz kılma **GetAutomationObject** gösterme sınıfının bir örneğini dönmek için projenizdeki ana bilgisayar öğesi sınıfının yöntemi.
 
-  3.  Ayarlama **ReferenceAssemblyFromVbaProject** projede herhangi bir ana bilgisayar öğesi sınıf özelliği **True**. Bu özelleştirme bütünleştirilmiş kodun tür kitaplığını derlemeye gömer ve belgedeki VBA projesine tür kitaplığına bir başvuru ekler.
+  3. Ayarlama **ReferenceAssemblyFromVbaProject** projede herhangi bir ana bilgisayar öğesi sınıf özelliği **True**. Bu özelleştirme bütünleştirilmiş kodun tür kitaplığını derlemeye gömer ve belgedeki VBA projesine tür kitaplığına bir başvuru ekler.
 
   Ayrıntılı yönergeler için bkz. [nasıl yapılır: Visual Basic projesinde kodu VBA ortaya](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) ve [nasıl yapılır: Visual c VBA kodu ortaya&#35; proje](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).
 
@@ -174,7 +174,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  Bu yöntem, kullanıma sunulan sınıf VBA için temsil eden bir nesne döndürür. Yöntem parametreleri döndürülen nesne ve üyeler Intellisense'te görünür.
 
-##  <a name="Guidelines"></a> VBA kodunu belgeye ekleme yönergeleri
+## <a name="Guidelines"></a> VBA kodunu belgeye ekleme yönergeleri
  Belge düzeyi özelleştirmesi çağrı yapan VBA kodu eklemek belgenin birkaç farklı kopyalarını vardır.
 
  Geliştirin ve çözümünüzü test etme gibi hata ayıklarken veya projeyi Visual Studio'da (diğer bir deyişle, yapı çıkış klasöründe belge) çalıştırın, açılır belgedeki VBA kodu yazabilirsiniz. Ancak, Visual Studio yapı çıkış klasöründe belge ana proje klasöründen belgenin bir kopyasını değiştirir çünkü bu belgeye eklediğiniz VBA kodlar projeyi sonraki açışınızda üzerine yazılır.
@@ -201,7 +201,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>Son kullanıcı bilgisayarda
  Son kullanıcılar için belge düzeyi özelleştirmesinde sağladığınız Hizmetleri çağıran VBA geliştiriciler varsa, bunları kullanarak nasıl kodunuzun söyleyebilirsiniz `CallVSTOAssembly` özelliği veya `GetManagedClass` belge kopyalarını yöntemi. Güncelleştirmeler çözümü yayımladığınızda, son kullanıcı bilgisayarında belgedeki VBA kodu yazılmaz, belge değiştirilmez çünkü güncelleştirmeleri yayımlayabilir.
 
-##  <a name="PropertyTasks"></a> Ana bilgisayar öğesi özellikleri tarafından gerçekleştirilen görevleri
+## <a name="PropertyTasks"></a> Ana bilgisayar öğesi özellikleri tarafından gerçekleştirilen görevleri
  Kullanırken **EnableVbaCallers** ve **ReferenceAssemblyFromVbaProject** özellikleri, Visual Studio farklı görevler kümesini gerçekleştirir.
 
 ### <a name="enablevbacallers"></a>EnableVbaCallers
@@ -229,9 +229,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. Belgedeki VBA projesinde aşağıdaki tür kitaplıkları için bir başvuru ekler:
 
-   -   Derlemenizi özelleştirme için tür kitaplığı.
+   - Derlemenizi özelleştirme için tür kitaplığı.
 
-   -   Office yürütme altyapısı 9.0 tür kitaplığı için Microsoft Visual Studio Araçları. Bu tür kitaplığı dahil [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+   - Office yürütme altyapısı 9.0 tür kitaplığı için Microsoft Visual Studio Araçları. Bu tür kitaplığı dahil [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
    Zaman **ReferenceAssemblyFromVbaProject** ayarlanırsa geri **False**, Visual Studio aşağıdaki görevleri gerçekleştirir:
 

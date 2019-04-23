@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065512"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Teslim etmeden ClickOnce uygulamaları için test ve üretim sunucuları dağıtma
 Bu makalede ClickOnce bildirimlerini yeniden imzalama veya ClickOnce değiştirmeden birden çok ağ konumundan ClickOnce uygulamalarının dağıtımını sağlayan sürüm 3.5 .NET Framework sunulan bir özelliğidir.
@@ -34,9 +34,9 @@ Bu makalede ClickOnce bildirimlerini yeniden imzalama veya ClickOnce değiştirm
 
  Üçüncü taraf geliştiriciler ve ISV'ler de bu özelliği, müşterilerine kendi uygulamalarınızı güncelleştirmeye gerek kolaylaştırmaya tercih edebilirsiniz. Aşağıdaki durumlarda bu özellik kullanılabilir:
 
--   Bir uygulamanın ilk yüklenmesi için bir uygulama güncelleştirilirken.
+- Bir uygulamanın ilk yüklenmesi için bir uygulama güncelleştirilirken.
 
--   Uygulamanın bir bilgisayarda yalnızca bir yapılandırma olduğunda. Örneğin, bir uygulama iki farklı veritabanına işaret edecek şekilde yapılandırıldıysa, bu özellik kullanamazsınız.
+- Uygulamanın bir bilgisayarda yalnızca bir yapılandırma olduğunda. Örneğin, bir uygulama iki farklı veritabanına işaret edecek şekilde yapılandırıldıysa, bu özellik kullanamazsınız.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Dağıtım bildirimlerinden deploymentProvider Dışla
  .NET Framework 2.0 ve .NET Framework 3.0, çevrimdışı kullanım için sisteme yüklenen herhangi bir ClickOnce uygulaması listelemelidir bir `deploymentProvider` , dağıtım bildiriminde. `deploymentProvider` Güncelleştirme konumu olarak; genellikle adlandırılır, ClickOnce Uygulama güncelleştirmeleri nerede denetler konumdur. Bu gereksinim, birlikte dağıtımlarını imzalamak uygulama yayımcıları için gereken bir satıcıdan veya diğer üçüncü taraf bir ClickOnce uygulamasını güncelleştirmek bir şirket için zorlaştırıyordu. Ayrıca, aynı uygulama aynı ağ üzerinde birden fazla konumdan dağıtmak daha zor kılar.

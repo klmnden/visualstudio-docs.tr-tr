@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 72f9f1a098d17d7e6dd0b5cd8218b35f3408695e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048729"
 ---
 # <a name="saving-data-in-project-files"></a>Proje Dosyalarında Verileri Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
   
 #### <a name="to-save-a-build-related-data-in-the-project-file"></a>İlgili verileri proje dosyasındaki bir yapı kaydetmek için  
   
--   Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> proje dosyasının tam yol kaydetmek için yöntemi.  
+- Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> proje dosyasının tam yol kaydetmek için yöntemi.  
   
     ```  
     private SpecializedProject project;  
@@ -49,7 +49,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
   
 #### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Proje dosyasından ilgili verileri derleme almak için  
   
--   Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> proje dosyasının tam yol almak için yöntemi.  
+- Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> proje dosyasının tam yol almak için yöntemi.  
   
     ```  
     private SpecializedProject project;  
@@ -66,7 +66,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
   
 #### <a name="to-save-non-build-related-data-in-the-project-file"></a>İlgili verileri proje dosyasındaki derleme olmayan kaydetmek için  
   
-1.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> kendi geçerli dosyasını bir XML parçası son başlatıldığından beri değiştirilip değiştirilmediğini saptamak için yönteminin kaydedildi.  
+1. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> kendi geçerli dosyasını bir XML parçası son başlatıldığından beri değiştirilip değiştirilmediğini saptamak için yönteminin kaydedildi.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -96,7 +96,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
     }  
     ```  
   
-2.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> proje dosyasında XML verileri kaydetmek için yöntemi.  
+2. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> proje dosyasında XML verileri kaydetmek için yöntemi.  
   
     ```  
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)  
@@ -147,7 +147,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
   
 #### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Derleme olmayan proje dosyasındaki ilgili verileri almak için  
   
-1.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> proje uzantısı özellikleri ve diğer yapı bağımsız veri başlatmak için yöntemi. XML yapılandırma verilerini proje dosyasında mevcut değilse bu yöntem çağrılır.  
+1. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> proje uzantısı özellikleri ve diğer yapı bağımsız veri başlatmak için yöntemi. XML yapılandırma verilerini proje dosyasında mevcut değilse bu yöntem çağrılır.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -163,7 +163,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
         return VSConstants.S_OK;  
     ```  
   
-2.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> proje dosyasından XML verileri yüklemek için yöntemi.  
+2. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> proje dosyasından XML verileri yüklemek için yöntemi.  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  

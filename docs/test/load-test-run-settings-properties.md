@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062379"
 ---
 # <a name="load-test-run-settings-properties"></a>Yük testi çalıştırma ayarları özellikleri
 
@@ -88,27 +88,27 @@ Daha fazla bilgi için [yapılandırma yük testi çalıştırma ayarları](../t
 |**WebTest Bağlantı modeli**|Bu, web sunucusu çalıştıran bir yük testi içinde web performans testleri için yük test aracısından bağlantı kullanımını denetler. Üç web performans testi bağlantı modeli seçenekleri kullanılabilir:<br /><br /> - **Kullanıcı başına bağlantı** model gerçek bir tarayıcı kullanarak bir kullanıcının davranışını taklit eder. Internet Explorer 6 ya da Internet Explorer 7 simülasyonu yapıldığında, bir web performans testi çalıştıran her bir sanal kullanıcı web sunucusuna bir veya iki adanmış bağlantıları kullanır. İlk istek web performans testinde verildiğinde, ilk bağlantı kurulur. İkinci bir bağlantı içeren bir sayfada birden fazla bağımlı istek olduğunda kullanılabilir. Bu istekler, iki bağlantı kullanarak paralel olarak verilir. Bu bağlantılar, web performans testinde istekler için yeniden kullanılır. Web performans testi tamamlandığında bağlantıları kapatılır. Bu model bir dezavantajı, aracı bilgisayarında açık tutulması bağlantı sayısı (iki kez kullanıcı yükü en fazla) yüksek olabilir ' dir. Sonuç olarak, bu yüksek bağlantı sayısını desteklemek için gerekli kaynakları tek yük test aracısından kullanıcı yükü sınırlayabilir. Internet Explorer 8 simülasyonu yapıldığında, altı adet eş zamanlı bağlantı desteklenir.<br />- **Bağlantı havuzu** modeli, web sunucusunun birden çok sanal web performans testi kullanıcıları arasında bağlantı paylaşarak kaynaklar üzerinde yük testi aracısı korur. Kullanıcı yükü bağlantı havuzu boyutundan daha büyükse, farklı sanal kullanıcılar tarafından çalıştırılan web performans testleri bir bağlantıyı paylaşır. Bu, bir web performans testini başka bir web performans testi bağlantısı kullanılırken bir isteği bildirmeden önce beklemeniz gerekebilir gelebilir. Yük testi başarım sayacı Ortalama bağlantı bekleme süresi tarafından izlenen bir istek gönderdiğinde, web performans testi ortalama süreyi bekler. Bu sayı, bir sayfa için ortalama yanıt süresi değerinden küçük olmalıdır. Yüklü değilse, bağlantı havuzu boyutu büyük olasılıkla çok küçük.<br />- **Test Yinelemesi başına bağlantı** modeli, her test yinelemesine için adanmış bağlantıları kullanımını belirtir.|
 |**WebTest Bağlantı havuzu boyutu**|Bu, yük testi aracısı ve Web sunucusu arasında bağlantı maksimum sayısını belirtir. Bu yalnızca geçerlidir **bağlantı havuzu** modeli.|
 
-##  <a name="change-run-setting-properties"></a>Çalıştırma ayarı Özellikleri Değiştir
+## <a name="change-run-setting-properties"></a>Çalıştırma ayarı Özellikleri Değiştir
  Yük testi farklı koşullar altında çalıştırabilmeniz için daha fazla yük testinize farklı özellik ayarları ile çalışma ayarları ekleyebilirsiniz. Örneğin, yeni bir test ayarı ekleyin ve farklı bir örnek hızı kullanabilir veya bir uzun çalıştırma süresi belirtin. Yalnızca bir çalışma ayarı teker teker kullanabilirsiniz ve etkin olarak işaretleyerek kullanmak için ayarı çalıştırdığınız belirtmeniz gerekir. Bir örnek için bkz [nasıl yapılır: Etkin çalışma ayarı için bir yük testi seçin](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Çalıştırma ayarlarını değiştirmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Genişletin **çalıştırma ayarları** klasör.
+2. Genişletin **çalıştırma ayarları** klasör.
 
-3.  Seçin bir **çalıştırma ayarları** düğümü.
+3. Seçin bir **çalıştırma ayarları** düğümü.
 
-4.  Üzerinde **görünümü** menüsünde seçin **Özellikler penceresi**.
+4. Üzerinde **görünümü** menüsünde seçin **Özellikler penceresi**.
 
      **Özellikler penceresi** görüntülenir ve seçili çalıştırma ayarı özellikleri görüntülenir.
 
-5.  Kullanım **Özellikler penceresi** çalıştırma ayarlarını değiştirmek için. Örneğin, çalışma süresini **00:05:00** testiniz için beş dakika çalıştırılacak.
+5. Kullanım **Özellikler penceresi** çalıştırma ayarlarını değiştirmek için. Örneğin, çalışma süresini **00:05:00** testiniz için beş dakika çalıştırılacak.
 
     > [!NOTE]
     > Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarı özellikleri](../test/load-test-run-settings-properties.md).
 
-6.  Özellikleri değiştirme işiniz bittiğinde, yük testinizi kaydedin. Üzerinde **dosya** menüsünde seçin **Kaydet**.
+6. Özellikleri değiştirme işiniz bittiğinde, yük testinizi kaydedin. Üzerinde **dosya** menüsünde seçin **Kaydet**.
 
 > [!NOTE]
 > Sayaç kümesi eşlemeleri çalışma ayarları, aynı zamanda bir parçasıdır. Daha fazla bilgi için [sayaç kümelerini ve eşik kurallarını bilgisayarlar için bir yük testinde belirtin](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

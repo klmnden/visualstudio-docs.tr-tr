@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043202"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Hatayı bildiren, "Uygulama alınamıyor. Dağıtımda eksik dosyaları"veya"uygulama indirme kesintiye, ağ hataları kontrol edin ve daha sonra yeniden deneyin"  
  Bu ileti, tarafından başvurulan bir veya daha fazla dosya gösterir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirimleri karşıdan yüklenemiyor. URL indirmek bu hata ayıklama için en kolay yolu denemektir, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] indiremiyorsa, diyor. Bazı olası nedenleri şunlardır:  
   
--   Günlük dosyası "(403) Yasak" diyorsa, veya "(404) bulunamadı" Web sunucusu, böylece bu dosyayı karşıdan yüklemeyi engellemez yapılandırıldığını doğrulayın. Daha fazla bilgi için [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Günlük dosyası "(403) Yasak" diyorsa, veya "(404) bulunamadı" Web sunucusu, böylece bu dosyayı karşıdan yüklemeyi engellemez yapılandırıldığını doğrulayın. Daha fazla bilgi için [sunucu ve istemci yapılandırma sorunları ClickOnce Dağıtımları içinde](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   .Config dosyası sunucu tarafından engelleniyorsa bölümüne bakın. "indirme hatası yüklemeye çalıştığınızda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .config dosyası olan bir uygulama" Bu konunun devamındaki.  
+- .Config dosyası sunucu tarafından engelleniyorsa bölümüne bakın. "indirme hatası yüklemeye çalıştığınızda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .config dosyası olan bir uygulama" Bu konunun devamındaki.  
   
--   Bu nedeniyle oluşup oluşmadığını belirlemek `deploymentProvider` etkinleştirmesi için kullanılan URL'den farklı bir konuma işaret dağıtım bildiriminde URL.  
+- Bu nedeniyle oluşup oluşmadığını belirlemek `deploymentProvider` etkinleştirmesi için kullanılan URL'den farklı bir konuma işaret dağıtım bildiriminde URL.  
   
--   Tüm dosyaları sunucu üzerinde mevcut olduğundan emin olun; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] günlük hangi dosya bulunamadı söyler.  
+- Tüm dosyaları sunucu üzerinde mevcut olduğundan emin olun; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] günlük hangi dosya bulunamadı söyler.  
   
--   Ağ bağlantısı sorunları olup olmadığını; Yükleme sırasında istemci bilgisayar çevrimdışı olursa bu ileti alabilir.  
+- Ağ bağlantısı sorunları olup olmadığını; Yükleme sırasında istemci bilgisayar çevrimdışı olursa bu ileti alabilir.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config dosyasına sahip bir ClickOnce uygulamasını yüklemeye çalıştığınızda indirme hatası  
  Varsayılan olarak, Visual Basic Windows tabanlı bir uygulama, bir App.config dosyası içerir. Bir kullanıcı, işletim sistemi yükleme .config dosyalarının güvenlik nedenleriyle engellediğinden kullanan Windows Server 2003, Web sunucusundan yüklemeye çalıştığında bir sorun olacaktır. Yüklenecek .config dosyasını etkinleştirmek için tıklayın **".deploy" dosya uzantısı** içinde **yayımlama seçeneği** iletişim kutusu.  
@@ -67,11 +67,11 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Sunucu uygulama güncelleştirildi, ancak istemci güncelleştirme karşıdan yüklemez  
  Bu sorun aşağıdaki görevlerden birini tamamlayarak:  
   
--   İnceleme `deploymentProvider` dağıtım bildiriminde URL. BITS ile aynı konumda güncelleştirmesini sağlamak, `deploymentProvider` işaret eder.  
+- İnceleme `deploymentProvider` dağıtım bildiriminde URL. BITS ile aynı konumda güncelleştirmesini sağlamak, `deploymentProvider` işaret eder.  
   
--   Dağıtım bildirimi içinde güncelleştirme aralığı doğrulayın. Bu aralık için altı saatte bir kez gibi düzenli bir aralıkta ayarlanırsa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bu aralığı geçinceye kadar güncelleştirme taramaz. Uygulama başladığında her zaman bir güncelleştirme için tarama bildirimi değiştirebilirsiniz. Güncelleştirmeler yükleniyor, ancak uygulama aktivasyonunu yavaşlatır doğrulamak için kullanışlı bir seçenektir geliştirme zamanı sırasında güncelleştirme aralığı değiştiriyor.  
+- Dağıtım bildirimi içinde güncelleştirme aralığı doğrulayın. Bu aralık için altı saatte bir kez gibi düzenli bir aralıkta ayarlanırsa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bu aralığı geçinceye kadar güncelleştirme taramaz. Uygulama başladığında her zaman bir güncelleştirme için tarama bildirimi değiştirebilirsiniz. Güncelleştirmeler yükleniyor, ancak uygulama aktivasyonunu yavaşlatır doğrulamak için kullanışlı bir seçenektir geliştirme zamanı sırasında güncelleştirme aralığı değiştiriyor.  
   
--   Uygulama başlangıç menüsünde yeniden başlatmayı deneyin. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Güncelleştirme arka planda tespit ettik ancak sonraki etkinleştirme BITS yüklemek isteyip istemediğinizi sorar.  
+- Uygulama başlangıç menüsünde yeniden başlatmayı deneyin. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Güncelleştirme arka planda tespit ettik ancak sonraki etkinleştirme BITS yüklemek isteyip istemediğinizi sorar.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Güncelleştirme sırasında aşağıdaki günlük Giriş bir hata alırsınız: "Başvuru dağıtımdaki uygulama bildiriminde tanımlanan kimlik eşleşmiyor."  
  El ile dağıtım ve uygulama bildirimleri düzenlediniz ve açıklamayı bir derlemenin kimliğinin bir bildirim ile eşitlenmemiş neden olduğundan, bu hata oluşabilir. Bir derlemenin kimliğini, adını, sürüm, kültür ve ortak anahtar belirteci oluşur. Bildirimlerinizi kimlik açıklamasında inceleyin ve farkları düzeltin.  
@@ -84,9 +84,9 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
   
  Şunları yapmanız:  
   
--   Dağıtım bildirimi kimliğini, uygulama bildiriminin kimlik ve kimlik EXE ana uygulamanın tüm benzersiz olduğundan emin olun.  
+- Dağıtım bildirimi kimliğini, uygulama bildiriminin kimlik ve kimlik EXE ana uygulamanın tüm benzersiz olduğundan emin olun.  
   
--   Dosya yolu 100 karakterden uzun olmadığını doğrulayın. Uygulamanız çok uzun dosya yollarını içeriyorsa, depolamanın en fazla yol sınırlamalar aşabilir. Yolları kısaltmayı deneyin ve yeniden yükleyin.  
+- Dosya yolu 100 karakterden uzun olmadığını doğrulayın. Uygulamanız çok uzun dosya yollarını içeriyorsa, depolamanın en fazla yol sınırlamalar aşabilir. Yolları kısaltmayı deneyin ve yeniden yükleyin.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Uygulama yapılandırma dosyasında PrivatePath ayarları onaylanmaz  
  PrivatePath (Fusion algılama yolları) kullanmak için uygulama tam güven izni istemeniz gerekir. Uygulama bildiriminin tam güven isteme ve yeniden deneyin değiştirmeyi deneyin.  
@@ -115,9 +115,9 @@ Bu konu, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sertifika deponuza ve alınan boş ileti kutusu içinde bir sertifika ile oturum açmaya  
  İçinde **imzalama** iletişim kutusunda, şunları yapmalısınız:  
   
--   Seçin **depolanan bir sertifika ile oturum**, ve  
+- Seçin **depolanan bir sertifika ile oturum**, ve  
   
--   Listeden bir sertifika seçin; ilk sertifikayı varsayılan seçim değil.  
+- Listeden bir sertifika seçin; ilk sertifikayı varsayılan seçim değil.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>"Oturum yok" düğmesine tıklayarak bir özel durum neden olur  
  Bu sorunun bilinen bir hatadır. Tüm [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirimlerinin imzalanmasını gerekli. İmzalama seçeneklerden birini seçin ve ardından **Tamam**.  

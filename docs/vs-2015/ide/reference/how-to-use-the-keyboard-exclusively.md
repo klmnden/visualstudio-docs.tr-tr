@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4cb5e4eadafb4ce3ea7600a2a179689945b9f16
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051589"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: Yalnızca Klavyeyi Kullanma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,48 +51,48 @@ ms.locfileid: "59655367"
   
 #### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Klavye iletişim kutusu seçenekleri ayarlamak için  
   
-1.  Kullanım **sekmesini** veya **SHIFT + SEKME** iletişim kutusu denetimleri ile yukarı ve aşağı taşımak için.  
+1. Kullanım **sekmesini** veya **SHIFT + SEKME** iletişim kutusu denetimleri ile yukarı ve aşağı taşımak için.  
   
-2.  Seçenek ayarlarını değiştirmek için:  
+2. Seçenek ayarlarını değiştirmek için:  
   
-    -   Radyo düğmeleri için **yukarı ok** ve **aşağı ok** seçimini değiştirmek için.  
+    - Radyo düğmeleri için **yukarı ok** ve **aşağı ok** seçimini değiştirmek için.  
   
-    -   Onay kutularını kullanın **boşluk** seçin veya seçimini kaldırın.  
+    - Onay kutularını kullanın **boşluk** seçin veya seçimini kaldırın.  
   
-    -   Aşağı açılan listeleri için **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW** ve **DARALTILDI** değiştirmek için Seçili öğe.  
+    - Aşağı açılan listeleri için **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW** ve **DARALTILDI** değiştirmek için Seçili öğe.  
   
-    -   Düğme için basın **ENTER** çağırmak için.  
+    - Düğme için basın **ENTER** çağırmak için.  
   
-    -   Kılavuzlar için gezinmek için ok tuşlarını kullanın. Kılavuzlar açılan listeleri için **SHIFT** + **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW**ve **DARALTILDI** seçili öğeyi değiştirmek için.  
+    - Kılavuzlar için gezinmek için ok tuşlarını kullanın. Kılavuzlar açılan listeleri için **SHIFT** + **ALT** + **DARALTILDI** öğelerini görüntülemek ve kullanmak üzere **UPARROW**ve **DARALTILDI** seçili öğeyi değiştirmek için.  
   
 ## <a name="window-and-file-navigation"></a>Pencere ve dosya gezintisi  
  IDE klavye kullanarak açık araç ve belge pencereleri arasında taşımak birkaç yol sağlar. Ayrıca, taşıyabilir ve farklı konumlardaki klavyeyi kullanarak araç pencereleri yerleştirme.  
   
 #### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Windows ve klavye IDE'den dosyaları arasında gezinmek için  
   
--   Bir düzenleyici veya tasarımcı dosyaları arasında taşımak için IDE Gezgini ile görüntülemek için CTRL + TAB tuşlarını seçin **etkin dosyaların** seçili. Vurgulanan dosyasına gitmek için Enter tuşuna basın.  
+- Bir düzenleyici veya tasarımcı dosyaları arasında taşımak için IDE Gezgini ile görüntülemek için CTRL + TAB tuşlarını seçin **etkin dosyaların** seçili. Vurgulanan dosyasına gitmek için Enter tuşuna basın.  
   
--   Sabitlenmiş araç pencereleri arasında taşımak için IDE Gezgini ile görüntülemek için Alt + F7 seçin **etkin aracı Windows** seçili. Keyto gidin Enter vurgulanmış pencereye'ı seçin.  
+- Sabitlenmiş araç pencereleri arasında taşımak için IDE Gezgini ile görüntülemek için Alt + F7 seçin **etkin aracı Windows** seçili. Keyto gidin Enter vurgulanmış pencereye'ı seçin.  
   
 #### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Taşıma ve klavyeden araç pencerelerini sabitlemek için  
   
-1.  Taşımak ve bunu odaklanmak için istediğinize araç penceresine gidin.  
+1. Taşımak ve bunu odaklanmak için istediğinize araç penceresine gidin.  
   
-2.  Üzerinde **penceresi** menüsünü tıklatın **sabitlenebilir**.  
+2. Üzerinde **penceresi** menüsünü tıklatın **sabitlenebilir**.  
   
-3.  Tuşuna **ALT** + **alanı** seçip **taşıma**.  
+3. Tuşuna **ALT** + **alanı** seçip **taşıma**.  
   
      Yerleştirme kılavuz elmas görünür.  
   
-4.  Kullanım **ok** pencerenin yeni bir konuma taşımak için anahtarları.  
+4. Kullanım **ok** pencerenin yeni bir konuma taşımak için anahtarları.  
   
      Kullandığınız gibi pencereye fare işaretçisi hareket **ok** anahtarları.  
   
-5.  Yeni konuma ulaştığında kullanın **ok** tuşlarını kullanarak kılavuz elmasını doğru bölümü fare işaretçisini taşıyın.  
+5. Yeni konuma ulaştığında kullanın **ok** tuşlarını kullanarak kılavuz elmasını doğru bölümü fare işaretçisini taşıyın.  
   
      Anahat araç penceresinin yeni bir yerleşik konumda görünür.  
   
-6.  Tuşuna **ENTER**.  
+6. Tuşuna **ENTER**.  
   
      Araç penceresi, yeni yerleşik konumda yer içine yapıştırır.  
   

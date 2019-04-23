@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f5dc8d361386417fe52706fbfc2049d5a420d4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045713"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısında Simge (.pdb) ve Kaynak Dosyaları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,22 +43,22 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
  Visual Studio 2012 önce uzak bir cihazda yönetilen kod hata ayıklaması yaparken sembol dosyalarını uzak makinede gerekli. Bu durum artık geçerli değildir. Tüm sembol dosyaları yerel makinede veya belirlenen bir konumda bulunan **Araçlar / Seçenekler / hata ayıklama / semboller** sayfası.
 
-##  <a name="BKMK_Find_symbol___pdb__files"></a> Hata ayıklayıcı .pdb dosyalarını nerede arar
+## <a name="BKMK_Find_symbol___pdb__files"></a> Hata ayıklayıcı .pdb dosyalarını nerede arar
 
-1.  DLL veya yürütülebilir dosyanın içinde belirtilen konum.
+1. DLL veya yürütülebilir dosyanın içinde belirtilen konum.
 
      (Varsayılan olarak, bilgisayarınızda bir DLL veya yürütülebilir dosya oluşturduysanız bağlayıcı, DLL veya yürütülebilir dosya içindeki ilgili .pdb dosyasının yolunu ve dosya adını tam olarak yerleştirir. Hata ayıklayıcı önce DLL'de veya yürütülebilir dosyada belirtilen konumda sembol dosyasının varolup olmadığını denetler. Her zaman bilgisayarınızda derlediğiniz kod için kullanılabilir semboller olduğundan bu yararlıdır.)
 
-2.  DLL veya yürütülebilir dosyayla aynı klasörde bulunabilecek .pdb dosyaları.
+2. DLL veya yürütülebilir dosyayla aynı klasörde bulunabilecek .pdb dosyaları.
 
-3.  Yerel sembol önbellek klasörleri.
+3. Yerel sembol önbellek klasörleri.
 
-4.  Etkinleştirildiyse Microsoft sembol sunucusu gibi sunucu üzerinde belirtilen tüm ağ, internet veya yerel sembol sunucuları ve konumları.
+4. Etkinleştirildiyse Microsoft sembol sunucusu gibi sunucu üzerinde belirtilen tüm ağ, internet veya yerel sembol sunucuları ve konumları.
 
-###  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Neden sembol dosyalarının yürütülebilir dosyalarla tam olarak eşleşmesi gerekiyor mu?
+### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Neden sembol dosyalarının yürütülebilir dosyalarla tam olarak eşleşmesi gerekiyor mu?
  Hata ayıklayıcı, yalnızca yürütülebilir dosya oluşturulduğunda, oluşturulan .pdb dosyasıyla tam olarak eşleşen bir yürütülebilir dosya için bir .pdb dosyasını yükler (yani, .pdb özgün olmalı veya özgün .pdb'nin kopyasını olmalıdır). Doğru ve verimli kod oluşturma olan temel görevinin yanı sıra derleyici derleme hızı için de optimize edilmiş olduğundan, kodun kendisi değişmese bile yürütülebilir dosyanın gerçek düzeni değişebilir. Daha fazla bilgi için [neden Visual Studio gerektiriyor hata ayıklayıcı sembol birlikte oluşturuldukları ikili dosyalarla tam olarak eşleşen dosyaları?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
 
-###  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Sembol konumları ve yükleme davranışı belirtin
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Sembol konumları ve yükleme davranışı belirtin
  VS IDE içinde bir projede hata ayıklaması yaparken, hata ayıklayıcı proje dizininde yer alan sembol dosyalarını otomatik olarak yükler. Alternatif arama yolları belirtin ve Microsoft, Windows veya üçüncü taraf bileşenleri için Sembol sunucularını **Araçlar / Seçenekler / hata ayıklama / semboller**. Hata ayıklayıcının sembolleri otomatik olarak istediğiniz belirli modülleri belirtebilirsiniz. Ve daha sonra etkin bir şekilde hata ayıklama yaparken bu ayarları el ile değiştirebilirsiniz.
 
 1. Visual Studio'da açın **Araçlar / Seçenekler / hata ayıklama / semboller** sayfası.
@@ -96,7 +96,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
    Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem DLL için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. DLL dışarı aktarma tablolarındaki işlev adları, hata ayıklayıcının başka bir yerinde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Yerel makinenizde olmayan sembol dosyalarını bulmak için Sembol sunucularını kullanın
+### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Yerel makinenizde olmayan sembol dosyalarını bulmak için Sembol sunucularını kullanın
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklama sembol dosyalarını symsrv protokolünü uygulayan sembol sunucularından indirebilirsiniz. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) ve [Windows için hata ayıklama araçları](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) , sembol Hizmetleri uygulayan iki araçtır. VS kullanılacak sembol sunucularını belirtirsiniz **seçenekleri** iletişim kutusu.
 
  Kullanabileceğiniz sembol sunucuları şunlardır:
@@ -118,7 +118,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 > [!NOTE]
 >  Microsoft ortak sembol sunucularından farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine maruz kalabilirsiniz.
 
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Bulma ve hata ayıklama sırasında sembolleri yükle
+### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Bulma ve hata ayıklama sırasında sembolleri yükle
  Hata ayıklayıcı kesme modundayken, hata ayıklayıcı seçenekleriyle daha önce hariç tutulan veya derleyicinin bulamadığı bir modül için semboller yükleyebilirsiniz. Çağrı Yığını, Modüller, Yereller, Otolar ve tüm Gözcü pencerelerinin kısayol menülerinden sembol yükleyebilirsiniz. Hata ayıklayıcısı sembol veya kaynak dosyalarına sahip olmayan kodu keserse, bir belge penceresi görüntülenir. Burada, eksik dosyaları ve bunları bulup yüklemek için yapılacak eylemler hakkında bilgi bulabilirsiniz.
 
  **Yüklü sembol yok belge sayfaları içeren sembolleri bulun**
@@ -160,7 +160,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 |**Sembol ayarları...**|Açılır **hata ayıklama** / **sembolleri** VS sayfası **seçenekleri** iletişim kutusu.|
 |**Her zaman otomatik olarak yükle**|Hata ayıklayıcı tarafından otomatik yüklenen dosya listesine sembol dosyası ekler.|
 
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Sembol dosyaları için derleyici seçeneklerini ayarlama
+### <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Sembol dosyaları için derleyici seçeneklerini ayarlama
  VS IDE'den projenizi ne zaman ve standart **hata ayıklama** yapı yapılandırması C++ ve yönetilen derleyiciler kodunuz için uygun semboller dosyalarını oluşturun. Sembol dosyaları oluşturmak için komut satırında derleyici seçeneklerini de ayarlayabilirsiniz.
 
  **C++ seçenekleri**
@@ -191,23 +191,23 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
   Uygulamanızın yapılandırma dosyası (Web.config) hata ayıklama moduna ayarlanmalıdır. Hata ayıklama modu ASP.NET'in dinamik olarak oluşturulan dosyalar için sembol oluşturmasına neden olur ve hata ayıklayıcının ASP.NET uygulamasına eklemesine olanak tanır. Web Proje şablonunu kullanarak projenizi oluşturduysanız, hata ayıklamayı başlattığınızda VS bunu otomatik olarak ayarlar.
 
-##  <a name="BKMK_Find_source_files"></a> Kaynak dosyaları bulun
+## <a name="BKMK_Find_source_files"></a> Kaynak dosyaları bulun
 
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Hata ayıklayıcı kaynak dosyaları nerede arar
+### <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> Hata ayıklayıcı kaynak dosyaları nerede arar
  Hata ayıklayıcı kaynak dosyaları aşağıdaki konumlarda arar:
 
-1.  Hata ayıklayıcı tarafından başlatılan Visual Studio örneğinin IDE'si içinde açık olan dosyalar.
+1. Hata ayıklayıcı tarafından başlatılan Visual Studio örneğinin IDE'si içinde açık olan dosyalar.
 
-2.  Visual Studio örneğinde açık olan Çözümdeki dosyalar.
+2. Visual Studio örneğinde açık olan Çözümdeki dosyalar.
 
-3.  Belirtilen dizinleri **ortak özellikler** / **kaynak dosyalarında Hata Ayıkla** çözüm özellikleri sayfasında. (İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **özellikleri**. )
+3. Belirtilen dizinleri **ortak özellikler** / **kaynak dosyalarında Hata Ayıkla** çözüm özellikleri sayfasında. (İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **özellikleri**. )
 
-4.  Modülün .pdb dosyasının kaynak bilgisi. Bu, modül oluşturulduğunda kaynak dosyanın konumu olabileceği gibi, bir kaynak sunucuya ilişkin komut da olabilir.
+4. Modülün .pdb dosyasının kaynak bilgisi. Bu, modül oluşturulduğunda kaynak dosyanın konumu olabileceği gibi, bir kaynak sunucuya ilişkin komut da olabilir.
 
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Kaynak dosyalarını içeren kaynak bilip / yüklü sembol yok sayfaları
+### <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Kaynak dosyalarını içeren kaynak bilip / yüklü sembol yok sayfaları
  Hata ayıklayıcı kaynak dosyasının olmadığı yerde yürütmeyi keserse, görüntüler **yüklü kaynak yok** veya **yüklü sembol yok** yardımcı olabilecek sayfaları kaynak dosyasını bulmaya. **Yüklü sembol yok** hata ayıklayıcı, arama işlemini tamamlamak üzere yürütülebilir dosya için bir simge (.pdb) dosyası bulamadığında görünür. Sembol Yok sayfası dosyayı aramak için seçenekler sağlar. Seçeneklerden birini çalıştırdıktan sonra .pdb bulunursa ve hata ayıklayıcı semboller dosyasındaki bilgileri kullanarak kaynak dosyayı alırsa, kaynak görüntülenir. Aksi takdirde, bir **yüklü kaynak yok** sorunu açıklayan sayfası görüntülenir. Sayfa, sorunu giderebilecek eylemleri gerçekleştirebilen seçenek bağlantıları görüntüler.
 
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Kaynak dosyası arama yollarını çözüme ekleme
+### <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Kaynak dosyası arama yollarını çözüme ekleme
  Kaynak dosyalarını aramak için ağ veya yerel dizin belirtebilirsiniz.
 
 1. Çözüm Gezgini içindeki çözümü seçin ve ardından **özellikleri** kısayol menüsünden.
@@ -220,7 +220,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
    Yalnızca belirtilen dizin arandığına dikkat edin. Arama yapmak istediğiniz alt dizinler için girdi eklemeniz gerekir.
 
-###  <a name="BKMK_Use_source_servers"></a> Kaynak sunucuları kullanma
+### <a name="BKMK_Use_source_servers"></a> Kaynak sunucuları kullanma
  Yerel makinede kaynak kod olmadığında veya .pdb dosyası kaynak kodla eşleşmediğinde, uygulamada hata ayıklamaya yardımcı olması için Kaynak Sunucuyu kullanabilirsiniz. Kaynak Sunucu, dosya isteklerini alır ve gerçek dosyaları döndürür. Kaynak Sunucu, srcsrv.dll adlı bir DLL dosyası ile çalışır. Kaynak Sunucu, kaynak kodu depodan almak için kullanılan komutların yanı sıra kaynak kodu deposuna işaretçiler içeren uygulamanın .pdb dosyasını okur. devenv.exe ve srcsrv.dll ile aynı dizine konması gereken srcsrv.ini adlı dosyadaki izin verilen komutları listeleyerek hangi komutlara uygulamanın .pdb dosyasından yürütülmesini izin verileceğini sınırlayabilirsiniz.
 
 > [!IMPORTANT]
@@ -228,19 +228,19 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
  **Bir kaynak sunucusunun kullanımını etkinleştirmek için**
 
-1.  Önceki bölümde açıklanan güvenlik önlemleri ile derlediğinizden emin olun.
+1. Önceki bölümde açıklanan güvenlik önlemleri ile derlediğinizden emin olun.
 
-2.  Üzerinde **Araçları** menüsünde seçin **seçenekleri**.
+2. Üzerinde **Araçları** menüsünde seçin **seçenekleri**.
 
      **Seçenekleri** iletişim kutusu görüntülenir.
 
-3.  İçinde **hata ayıklama** düğümünü seçin **genel**.
+3. İçinde **hata ayıklama** düğümünü seçin **genel**.
 
-4.  Seçin **kaynak sunucusu desteğini etkinleştir** onay kutusu.
+4. Seçin **kaynak sunucusu desteğini etkinleştir** onay kutusu.
 
      ![Kaynak sunucu seçenekleri etkinleştirme](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
-5.  (İsteğe bağlı) İstediğiniz alt seçeneği belirleyin.
+5. (İsteğe bağlı) İstediğiniz alt seçeneği belirleyin.
 
      Unutmayın hem **kısmi güven derlemeleri (sadece yönetilen) için kaynak sunucuya izin ver** ve **her zaman sormadan güvenilmeyen kaynak sunucu komutlarını Çalıştır** yukarıda açıklanan güvenlik risklerini artırabilir.
 

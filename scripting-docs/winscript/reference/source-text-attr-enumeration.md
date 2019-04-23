@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062456"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR Numaralandırması
 Kaynak metnin tek bir karakterinin özniteliklerini açıklar.  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Açıklamalar  
  Genellikle, `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, ve `IActiveScriptDebug::GetScriptTextAttributes` yöntemleri sürece her karakter, bir metin özniteliği döndürür:  
   
--   Bu durumda yöntem SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayrakları döndürebilir GETATTRTYPE_DEPSCAN bayrağı ayarlandığından,  
+- Bu durumda yöntem SOURCETEXT_ATTR_IDENTIFIER ve SOURCETEXT_ATTR_MEMBERLOOKUP bayrakları döndürebilir GETATTRTYPE_DEPSCAN bayrağı ayarlandığından,  
   
--   Bu durumda yöntem SOURCETEXT_ATTR_THIS bayrağı döndürebilir GETATTRFLAG_THIS bayrağı ayarlandığından,  
+- Bu durumda yöntem SOURCETEXT_ATTR_THIS bayrağı döndürebilir GETATTRFLAG_THIS bayrağı ayarlandığından,  
   
--   Bu durumda yöntem SOURCETEXT_ATTR_HUMANTEXT bayrağı döndürebilir GETATTRFLAG_HUMANTEXT bayrağı ayarlanır.  
+- Bu durumda yöntem SOURCETEXT_ATTR_HUMANTEXT bayrağı döndürebilir GETATTRFLAG_HUMANTEXT bayrağı ayarlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etkin Betik Hata Ayıklayıcı Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065486"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 
@@ -31,7 +31,7 @@ Genellikle, yerel makine en iyi yüklü uygulama yürütme çoğaltır. Windows 
 >[!NOTE]
 >Windows 7 veya üzerini kullanmak için gerekli [performans Profiler](../profiling/profiling-feature-tour.md).
 
-##  <a name="collect-cpu-usage-data"></a>CPU kullanım verileri toplama
+## <a name="collect-cpu-usage-data"></a>CPU kullanım verileri toplama
 
 1. Visual Studio projesinde çözüm yapılandırması ayarlanmış **yayın** seçip **yerel makine** dağıtım hedefi olarak.
 
@@ -59,7 +59,7 @@ Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en d
 Visual Studio 2019 ' başlayarak, tıklayabilirsiniz **etkin yolu Genişlet** ve **etkin yolu Göster** işlev çağrıları görmek için düğmeler çağrı ağacı Görünümü'nde en yüksek CPU yüzdesi kullanın.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> CPU kullanımı veri sütunları
+### <a name="BKMK_Call_tree_data_columns"></a> CPU kullanımı veri sütunları
 
 |||
 |-|-|
@@ -67,11 +67,11 @@ Visual Studio 2019 ' başlayarak, tıklayabilirsiniz **etkin yolu Genişlet** ve
 |**İç CPU [Birim, %]**|![Kendi kendine % Denklem](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> CPU yüzdesi seçili zaman aralığındaki işlev tarafından çağrılan işlevler hariç işlev için çağrılar tarafından kullanılan ve milisaniye.|
 |**Module**|İşlevi içeren modül adı.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU kullanımı çağrı ağacı
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU kullanımı çağrı ağacı
 
 Çağrı ağacı görüntülemek için raporun üst düğümü seçin. **CPU kullanımı** sayfası açılır **çağıran/çağrılan** görünümü. İçinde **Geçerli Görünüm** açılır menüsünde, select **çağrı ağacı**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Çağrı ağacı yapısı
+#### <a name="BKMK_Call_tree_structure"></a> Çağrı ağacı yapısı
 
 ::: moniker range=">=vs-2019"
 ![Ağaç yapısı çağrı](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "çağrı ağaç yapısı")
@@ -87,7 +87,7 @@ Visual Studio 2019 ' başlayarak, tıklayabilirsiniz **etkin yolu Genişlet** ve
 |![3. adım](../profiling/media/procguid_3.png "ProcGuid_3")|İkinci düzey düğümünün alt öğeleri, kullanıcı kodu yöntemleri ve çağrılan veya framework kodu ve ikinci düzey sistem tarafından oluşturulan zaman uyumsuz yordamlarını verilmiştir.|
 |![4. adım](../profiling/media/procguid_4.png "ProcGuid_4")|Bir yöntemin alt düğümleri yalnızca üst yöntem çağrıları için veri var. Zaman **harici kodu Göster** olduğundan devre dışı, uygulama yöntemlerini de içerebilir bir **[harici kod]** düğümü.|
 
-####  <a name="BKMK_External_Code"></a> Dış kod
+#### <a name="BKMK_External_Code"></a> Dış kod
 
 Kodunuz tarafından çalıştırılan sistem ve çerçeve işlevlerinin çağrılır *dış kod*. Dış kod işlevleri başlatmak ve uygulamayı durdurun, UI çizme, iş parçacığı denetimi ve uygulamayı diğer alt düzey hizmetler sağlar. CPU kullanımı çağırmak için ağaç toplar harici işlevler kullanıcı yönteminin birine çoğu durumda, dış kod içinde ilginizi kullanmadığınız **[harici kod]** düğümü.
 
@@ -108,7 +108,7 @@ Aradığınız bir işlev adı bulmak için arama kutusunu kullanın. Seçilen s
 ![İç içe geçmiş bir dış kod arama](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "iç içe geçmiş bir dış kod arama")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Zaman uyumsuz işlevleri CPU kullanımına çağrı ağacı
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Zaman uyumsuz işlevleri CPU kullanımına çağrı ağacı
 
  Derleyici, zaman uyumsuz bir yöntem karşılaştığında, yöntemin yürütmesini denetlemek için gizli bir sınıf oluşturur. Kavramsal olarak, bir durum makinesindeki bir sınıftır. Sınıfı, derleyici tarafından oluşturulan ve özgün yöntemleri ve geri çağırmaları, Zamanlayıcı ve bunları çalıştırmak için gereken yineleyiciler zaman uyumsuz çağırma işlevleri vardır. Bir üst yöntemi özgün yöntemini çağırdığında, derleyici üst yürütme bağlamında yöntemi kaldırır ve gizli sınıf yöntemlerini uygulama yürütme denetimleri sistem ve framework kod bağlamında çalışır. Zaman uyumsuz yöntemler genellikle, ancak her zaman, bir veya daha fazla farklı iş parçacıkları üzerinde yürütülür. Bu kod görünür **CPU kullanımı** alt öğeleri olarak çağrı ağacını **[harici kod]** düğümünün üst ağaç düğümünü hemen altındaki.
 

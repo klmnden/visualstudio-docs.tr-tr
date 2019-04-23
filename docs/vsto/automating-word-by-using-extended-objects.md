@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050939"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken
   Visual Studio'da Word çözümleri geliştirirken kullanabileceğiniz *konak öğelerini* ve *konak kontrolü*Çözümlerinizdeki s. Bunlar gibi Word nesne modeli (Word için birincil birlikte çalışma derlemesi tarafından sunulan diğer bir deyişle, nesne modeli) yaygın olarak kullanılan belirli nesneleri genişleten nesnelerdir <xref:Microsoft.Office.Interop.Word.Document> ve <xref:Microsoft.Office.Interop.Word.ContentControl> nesneleri. Genişletilmiş nesneler temel aldıkları Word nesneleri gibi davranırlar fakat nesnelere veri bağlama becerileri ve ek olaylar ekleyin.
@@ -46,13 +46,13 @@ ms.locfileid: "56598277"
 
  Word projelerinde kullanabileceğiniz konak denetimleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [İçerik denetimleri](../vsto/content-controls.md)
+- [İçerik denetimleri](../vsto/content-controls.md)
 
--   [Yer işareti denetimi](../vsto/bookmark-control.md)
+- [Yer işareti denetimi](../vsto/bookmark-control.md)
 
--   [XMLNode denetimi](../vsto/xmlnode-control.md)
+- [XMLNode denetimi](../vsto/xmlnode-control.md)
 
--   [XMLNodes denetimi](../vsto/xmlnodes-control.md)
+- [XMLNodes denetimi](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md)

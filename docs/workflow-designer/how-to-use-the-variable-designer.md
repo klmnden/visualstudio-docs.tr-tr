@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051478"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Nasıl yapılır: Değişken Tasarımcısını Kullanma
 
@@ -25,13 +25,13 @@ Değişken tasarımcısını kullanmak için değişkenler veri bağlama senaryo
 
 ## <a name="to-create-a-new-variable"></a>Yeni bir değişken oluşturmak için
 
-1.  Bir iş akışı veya etkinlik çözümünü Visual Studio'da açın.
+1. Bir iş akışı veya etkinlik çözümünü Visual Studio'da açın.
 
-2.  Tasarım tuvalde akışınızda bir etkinlik seçin.
+2. Tasarım tuvalde akışınızda bir etkinlik seçin.
 
-3.  Değişken tasarımcısını tıklatarak **değişkenleri** tasarım tuvalin sol alt köşesindeki düğme. Değişken tasarımcısını görünür.
+3. Değişken tasarımcısını tıklatarak **değişkenleri** tasarım tuvalin sol alt köşesindeki düğme. Değişken tasarımcısını görünür.
 
-4.  Etiketli boş satırı tıklatın **oluşturma değişken**. Bu aşağıdaki varsayılan değerleri kullanarak yeni bir değişken ile yeni bir satır ekler: variablex için **adı** x benzersiz değişken adları oluşturmak için otomatik olarak artırılır 1 başlangıç değeri bir tamsayı olduğu  **Dize** için **değişken türü**, ve **dizisi** için **kapsam**. Hiçbir değer için eklenen **varsayılan**. İş akışı tasarım işlemi sırasında herhangi bir zamanda bu değerleri değiştirebilirsiniz.
+4. Etiketli boş satırı tıklatın **oluşturma değişken**. Bu aşağıdaki varsayılan değerleri kullanarak yeni bir değişken ile yeni bir satır ekler: variablex için **adı** x benzersiz değişken adları oluşturmak için otomatik olarak artırılır 1 başlangıç değeri bir tamsayı olduğu  **Dize** için **değişken türü**, ve **dizisi** için **kapsam**. Hiçbir değer için eklenen **varsayılan**. İş akışı tasarım işlemi sırasında herhangi bir zamanda bu değerleri değiştirebilirsiniz.
 
     > [!NOTE]
     > Bir değişkeni silmek için değişken tıklayarak seçin ve tuşuna **Sil** anahtarı.
@@ -40,4 +40,4 @@ Değişken tasarımcısını kullanmak için değişkenler veri bağlama senaryo
 
 - [İş Akışı Tasarımcısını Kullanma](developing-applications-with-the-workflow-designer.md)
 - [Değişkenler ve Bağımsız Değişkenler](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
-- [Nasıl yapılır: Bağımsız değişken Tasarımcısını kullanma](../workflow-designer/how-to-use-the-argument-designer.md)
+- [Nasıl yapılır: Bağımsız Değişken Tasarımcısını Kullanma](../workflow-designer/how-to-use-the-argument-designer.md)

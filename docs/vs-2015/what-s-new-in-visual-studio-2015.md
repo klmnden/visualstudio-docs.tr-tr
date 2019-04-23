@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041841"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 ## <a name="cross-platform-debugging-support"></a>Platformlar arası hata ayıklama desteği
  Visual Studio, oluşturmak ve Windows, iOS ve Android cihazlarda çalışan yerel mobil uygulamalar hata ayıklamak için kullanabilirsiniz. Kullanım [Android için Visual Studio öykünücü](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), veya bir cihazı bağlayın ve kodunuzu doğrudan Visual Studio'da hata ayıklama.
 
--   **JavaScript / Cordova**. Kullanım [Apache Cordova için Visual Studio Araçları](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) Windows, iOS ve Android JavaScript ile yerel uygulamalar oluşturun.
+- **JavaScript / Cordova**. Kullanım [Apache Cordova için Visual Studio Araçları](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) Windows, iOS ve Android JavaScript ile yerel uygulamalar oluşturun.
 
      [Uygulamanızı hata ayıklama](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) hata ayıklama desteği Cordova için Visual Studio ayrıntılı bilgi MSDN Kitaplığı'nda olduğu.
 
--   **C# / Xamarin**. Kullanım [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) Windows, iOS ve Android Visual Studio'da C# ile yerel uygulamalar oluşturun.
+- **C# / Xamarin**. Kullanım [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) Windows, iOS ve Android Visual Studio'da C# ile yerel uygulamalar oluşturun.
 
      [Hata ayıklama](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) ve [cihazda hata ayıklama](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) içinde [Xamarin Geliştirici kılavuzlarındaki](http://developer.xamarin.com/guides) hata ayıklama deneyimini açıklar.
 
--   **C++ / Android**. Kullanım [platformlar arası Mobil Geliştirme için Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) üçüncü taraf araçlarla birlikte şablonları ister [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) Windows ve Android için yerel uygulamalar oluşturmak için.
+- **C++ / Android**. Kullanım [platformlar arası Mobil Geliştirme için Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) üçüncü taraf araçlarla birlikte şablonları ister [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) Windows ve Android için yerel uygulamalar oluşturmak için.
 
 ## <a name="debugging-and-diagnostics"></a>Hata Ayıklama ve Tanılama
 

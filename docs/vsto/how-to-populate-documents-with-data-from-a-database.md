@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061220"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Nasıl yapılır: Belgeleri veritabanı verileriyle doldurma
 
@@ -36,11 +36,11 @@ Aşağıdaki örnek, bir tasarımcı kullanarak belge düzeyinde projelerde veri
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>Bir belge bir veritabanındaki verilerle doldurmak için
 
-1.  Word belge düzeyi projede açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], belge tasarımcıda açık.
+1. Word belge düzeyi projede açın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], belge tasarımcıda açık.
 
-2.  Açık **veri kaynakları** penceresi ve bir veritabanından bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+2. Açık **veri kaynakları** penceresi ve bir veritabanından bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
 
-3.  İstediğiniz alanı sürükleyin **veri kaynakları** belgenize penceresi.
+3. İstediğiniz alanı sürükleyin **veri kaynakları** belgenize penceresi.
 
 Bir içerik denetimi, belgeye eklenir. İçerik denetimi türü, seçtiğiniz alan, veri türüne göre değişir. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
 
@@ -50,19 +50,19 @@ Veri alanını seçerek farklı bir denetim ekleyebilirsiniz **veri kaynakları*
 
 Denetimin yanı sıra aşağıdaki verilerle ilgili nesneleri otomatik olarak projenize eklenir:
 
--   Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
+- Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
--   A <xref:System.Windows.Forms.BindingSource> , Denetim türü belirtilmiş veri kümesine bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- A <xref:System.Windows.Forms.BindingSource> , Denetim türü belirtilmiş veri kümesine bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Bir TableAdapter veritabanına yazılan veri kümesi bağlar. Daha fazla bilgi için [oluştur ve TableAdapter yapılandırma](../data-tools/create-and-configure-tableadapters.md).
+- Bir TableAdapter veritabanına yazılan veri kümesi bağlar. Daha fazla bilgi için [oluştur ve TableAdapter yapılandırma](../data-tools/create-and-configure-tableadapters.md).
 
--   Hiyerarşik güncelleştirmeleri etkinleştirmek için veri kümesinde tablo bağdaştırıcıları koordine etmek için kullanılan bir TableAdapterManager. Daha fazla bilgi için [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md) ve [TableAdapterManager başvuru](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Hiyerarşik güncelleştirmeleri etkinleştirmek için veri kümesinde tablo bağdaştırıcıları koordine etmek için kullanılan bir TableAdapterManager. Daha fazla bilgi için [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md) ve [TableAdapterManager başvuru](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Projeyi çalıştırdığınızda, denetim veri kaynağındaki ilk kaydı görüntüler. Kullanabileceğiniz <xref:System.Windows.Forms.BindingSource> kayıtlarda gezinin olanağı.
 
 ### <a name="to-scroll-through-the-records"></a>Kayıtlarda gezinmek için
 
--   Kullanım <xref:System.Windows.Forms.BindingSource> gibi yöntemler <xref:System.Windows.Forms.BindingSource.MoveNext%2A> ve <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Kullanım <xref:System.Windows.Forms.BindingSource> gibi yöntemler <xref:System.Windows.Forms.BindingSource.MoveNext%2A> ve <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Güncelleştirmeleri yazılmış veri kümesi ve veritabanına gönderme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062834"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Yalıtılmış Kabuk uygulaması yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>MSI dağıtım için bir kabuk uygulaması hazırlamak için  
   
-1.  Çözümünüzdeki her .vsixmanifest dosyasını düzenleyin.  
+1. Çözümünüzdeki her .vsixmanifest dosyasını düzenleyin.  
   
      İçinde `Identifier` öğe, Ekle bir `InstalledByMSI` öğesi ve bir `SystemComponent` öğesini ve ardından değerlerine ayarlayın `true`.  
   
      Bu öğeleri kullanarak kaldırmasını bileşenlerinizi ve kullanıcı yüklemeye çalıştığınız VSIX yükleyicisi önlemek **Uzantılar ve güncelleştirmeler** iletişim kutusu.  
   
-2.  Bir VSIX bildirimi içeren her proje için içinden, MSI yükleyecek konumuna içerik çıkarmak için derleme görevleri düzenleyin. Oluşturma çıktısında VSIX bildirimi içerir, ancak bir .vsix dosyasını oluşturmayın.  
+2. Bir VSIX bildirimi içeren her proje için içinden, MSI yükleyecek konumuna içerik çıkarmak için derleme görevleri düzenleyin. Oluşturma çıktısında VSIX bildirimi içerir, ancak bir .vsix dosyasını oluşturmayın.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Bir MSI Kabuğunuzu oluşturma  
  MSI paketinizi oluşturmak için kullanmanızı öneririz [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=82720) standart bir kurulum projesi çok esneklik sağlar.  
@@ -85,7 +85,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Kabuk bileşenleri düzenini ayarlamak için  
   
-1.  Bir hiyerarşisini oluşturmak `Directory` tüm hedef bilgisayarda dosya sistemi aşağıdaki örnekte gösterildiği gibi oluşturmak için dizinleri temsil edecek öğeleri.  
+1. Bir hiyerarşisini oluşturmak `Directory` tüm hedef bilgisayarda dosya sistemi aşağıdaki örnekte gösterildiği gibi oluşturmak için dizinleri temsil edecek öğeleri.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
   
      Bu dizinler tarafından başvurulan `Id` yüklenmesi gereken dosyaları belirtildiği zaman.  
   
-2.  Kabuk ve Kabuk uygulamanızı, aşağıdaki örnekte gösterildiği gibi gerekli bileşenleri tanımlayın.  
+2. Kabuk ve Kabuk uygulamanızı, aşağıdaki örnekte gösterildiği gibi gerekli bileşenleri tanımlayın.  
   
     > [!NOTE]
     >  Bazı öğeleri .wxs tanımlarını bakabilirsiniz.  
@@ -123,7 +123,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
     </Feature>  
     ```  
   
-    1.  `ComponentRef` Öğesi geçerli bileşenin gerektirdiği dosyaları tanımlayan başka bir .wxs dosyasına başvuruyor. Örneğin, GeneralProfile aşağıdaki tanımını HelpAbout.wxs vardır.  
+    1. `ComponentRef` Öğesi geçerli bileşenin gerektirdiği dosyaları tanımlayan başka bir .wxs dosyasına başvuruyor. Örneğin, GeneralProfile aşağıdaki tanımını HelpAbout.wxs vardır.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
   
          `DirectoryRef` Öğesi, bu dosyalar, kullanıcının bilgisayarında nereye belirtir. `Directory` Öğesi belirtir, bir alt dizine ve her yüklenecek `File` öğesi oluşturulan veya MSI dosya oluşturulduğunda dosyanın nerede bulunabileceğini tanımlar ve çözümün bir parçası mevcut bir dosyayı temsil eder.  
   
-    2.  `ComponentGroupRef` Öğesi diğer bileşenleri (veya bileşenler ve bileşen grupları) grubuna başvuruyor. Örneğin, `ComponentGroupRef` altında ApplicationGroup içinde Application.wxs şu şekilde tanımlanır.  
+    2. `ComponentGroupRef` Öğesi diğer bileşenleri (veya bileşenler ve bileşen grupları) grubuna başvuruyor. Örneğin, `ComponentGroupRef` altında ApplicationGroup içinde Application.wxs şu şekilde tanımlanır.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Kayıt defteri girdileri MSI uygulamasına tümleştirmek için  
   
-1.  İçinde **Kabuğu özelleştirme** açık klasör *ProjectName*. kayıt  
+1. İçinde **Kabuğu özelleştirme** açık klasör *ProjectName*. kayıt  
   
-2.  Tüm örneklerini $RootFolder$ belirteç hedef yükleme dizini yolu ile değiştirin.  
+2. Tüm örneklerini $RootFolder$ belirteç hedef yükleme dizini yolu ile değiştirin.  
   
-3.  Uygulamanızın gerektirdiği herhangi bir kayıt defteri girdilerini ekleyin.  
+3. Uygulamanızın gerektirdiği herhangi bir kayıt defteri girdilerini ekleyin.  
   
-4.  ApplicationRegistry.wxs açın.  
+4. ApplicationRegistry.wxs açın.  
   
-5.  Her kayıt defteri girişi için *ProjectName*.reg, aşağıdaki örneklerde gösterildiği gibi karşılık gelen bir kayıt bloğunu ekleyin.  
+5. Her kayıt defteri girişi için *ProjectName*.reg, aşağıdaki örneklerde gösterildiği gibi karşılık gelen bir kayıt bloğunu ekleyin.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
 ## <a name="creating-a-setup-bootstrapper"></a>Kurulum bir önyükleyici oluşturma  
  Yalnızca önce tüm önkoşulların yüklü değilse, tamamlanan MSI yükler. Son kullanıcı deneyimini kolaylaştırmak için toplar ve uygulamanızı yüklemeden önce tüm önkoşulların yükleyen bir Kurulum programı oluşturun. Yükleme başarılı olmak için bu eylemleri gerçekleştirin:  
   
--   Yükleme Yöneticisi tarafından uygular.  
+- Yükleme Yöneticisi tarafından uygular.  
   
--   Visual Studio Kabuğu (yalıtılmış) yüklü olup olmadığını belirler.  
+- Visual Studio Kabuğu (yalıtılmış) yüklü olup olmadığını belirler.  
   
--   Biri veya ikisi de Kabuk yükleyicileri sırayla çalıştırın.  
+- Biri veya ikisi de Kabuk yükleyicileri sırayla çalıştırın.  
   
--   Yeniden başlatma istekleri işler.  
+- Yeniden başlatma istekleri işler.  
   
--   Msi dosyasını çalıştırın.  
+- Msi dosyasını çalıştırın.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Yükleme Yöneticisi tarafından zorlanması  
  Bu yordam, \Program dosyaları gibi gerekli dizinlere erişim için Kurulum programı etkinleştirmek için gerekli\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Yükleme Yöneticisi tarafından zorunlu kılmak için  
   
-1.  Kurulum projesi için kısayol menüsünü açın ve ardından **özellikleri**.  
+1. Kurulum projesi için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-2.  Altında **yapılandırma özellikleri/bağlayıcı/bildirim dosyası**ayarlayın **UAC yürütme düzeyi** için **requireAdministrator'a**.  
+2. Altında **yapılandırma özellikleri/bağlayıcı/bildirim dosyası**ayarlayın **UAC yürütme düzeyi** için **requireAdministrator'a**.  
   
      Bu özellik, yönetici olarak katıştırılmış bildirim dosyasına çalıştırılması için programın gerektirdiği öznitelik koyar.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Yeniden işlemek için bu eylemleri gerçekleştirin:  
   
--   Windows başladığında yüklemeye devam etmek için kayıt defteri ayarlayın.  
+- Windows başladığında yüklemeye devam etmek için kayıt defteri ayarlayın.  
   
--   Önyükleyici çift yeniden gerçekleştirin.  
+- Önyükleyici çift yeniden gerçekleştirin.  
   
--   Kabuk yükleyici ResumeData anahtarını silin.  
+- Kabuk yükleyici ResumeData anahtarını silin.  
   
--   Windows yeniden başlatın.  
+- Windows yeniden başlatın.  
   
--   MSI başlangıç yolu sıfırlayın.  
+- MSI başlangıç yolu sıfırlayın.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Windows başladığında kurulum devam etmek için kayıt defteri ayarı  
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ kayıt defteri anahtarı yönetim izinlerine sahip sistem başlangında yürütür ve ardından silinir. HKEY_CURRENT_USER benzer bir anahtar içeriyor, ancak normal bir kullanıcı olarak çalışır ve yüklemelerinde uygun değildir. Yükleme yükleyicinizi çağıran RunOnce anahtar bir dize değeri koyarak sürdürebilirsiniz. Ancak, kullanarak yükleyici çağırmanızı öneririz bir **/yeniden** veya sürdürme çalışmaya başlamak yerine uygulamaya bildirmek için benzer bir parametre. Birden çok kez yeniden gerektirebilecek yüklemelerini kullanışlıdır yükleme işleminde nerede göstermek için parametreleri de ekleyebilirsiniz.  

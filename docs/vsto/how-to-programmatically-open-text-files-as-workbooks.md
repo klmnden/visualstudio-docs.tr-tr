@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060144"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Nasıl yapılır: Metin dosyalarını program aracılığıyla çalışma kitapları olarak açma
   Bir çalışma kitabı olarak bir metin dosyasını açabilirsiniz. Açmak istediğiniz dosyanın adını geçmesi gerekir. Hangi satır numarası üzerinde ayrıştırma Başlat ve veri dosyasındaki sütun biçimi gibi çeşitli isteğe bağlı parametreleri belirtebilirsiniz.
@@ -33,9 +33,9 @@ ms.locfileid: "56633921"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek aşağıdaki bileşenleri gerektirir:
 
--   Adlı bir virgülle ayrılmış metin dosyası `Test.txt` en az üç satırlık metin içeren.
+- Adlı bir virgülle ayrılmış metin dosyası `Test.txt` en az üç satırlık metin içeren.
 
--   Metin dosyası `Test.txt` c sürücüsüne depolanması
+- Metin dosyası `Test.txt` c sürücüsüne depolanması
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)

@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060639"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme
   Microsoft Office Word belgelerine metin eklemek için başlıca üç yolu vardır:
 
--   Bir aralıktaki metin ekleyin.
+- Bir aralıktaki metin ekleyin.
 
--   Bir aralıktaki metin yeni metinle değiştirir.
+- Bir aralıktaki metin yeni metinle değiştirir.
 
--   Kullanım <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> yöntemi bir <xref:Microsoft.Office.Interop.Word.Selection> imlecin veya seçimin metin eklemek için nesne.
+- Kullanım <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> yöntemi bir <xref:Microsoft.Office.Interop.Word.Selection> imlecin veya seçimin metin eklemek için nesne.
 
 > [!NOTE]
 >  Ayrıca, içerik denetimleri ve yer işaretlerine metin ekleyebilirsiniz. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md) ve [yer işareti denetimi](../vsto/bookmark-control.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56654028"
 
 ### <a name="to-insert-text-in-a-range"></a>Bir aralıktaki metin eklemek için
 
-1.  Bir belgenin başında bir aralığı belirtin ve metin Ekle **yeni metin**.
+1. Bir belgenin başında bir aralığı belirtin ve metin Ekle **yeni metin**.
 
      Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654028"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Seçin <xref:Microsoft.Office.Interop.Word.Range> bir karakter eklenen metin uzunluğu genişletmiştir nesnesidir.
+2. Seçin <xref:Microsoft.Office.Interop.Word.Range> bir karakter eklenen metin uzunluğu genişletmiştir nesnesidir.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654028"
 
 ### <a name="to-replace-text-in-a-range"></a>Bir aralıktaki metni değiştirmek için
 
-1.  Oluşturma bir <xref:Microsoft.Office.Interop.Word.Range> belgedeki ilk 12 karakter içeren bir nesne.
+1. Oluşturma bir <xref:Microsoft.Office.Interop.Word.Range> belgedeki ilk 12 karakter içeren bir nesne.
 
      Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654028"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Bu karakter dizesi ile değiştirin **yeni metin**.
+2. Bu karakter dizesi ile değiştirin **yeni metin**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Aralık seçin.
+3. Aralık seçin.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

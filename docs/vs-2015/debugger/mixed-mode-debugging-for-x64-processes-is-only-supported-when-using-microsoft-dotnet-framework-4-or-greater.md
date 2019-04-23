@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 80a0c6d24bb1954a9d405c2f318dbb44642d1996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 189e5c622d19ce3e122e01bfbe4b886bd2a830b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063393"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft.NET Framework 4 veya daha yenisi kullanılırken desteklenir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ NET Framework sürümleri daha önce 4'ten x64 karma mod hata ayıklama için de
   
 ### <a name="workarounds"></a>Geçici Çözümler  
   
--   Microsoft .NET Framework 4 veya daha sonra kullanmak için projenizin güncelleştirin.  
+- Microsoft .NET Framework 4 veya daha sonra kullanmak için projenizin güncelleştirin.  
   
      – veya –  
   
@@ -42,23 +42,23 @@ NET Framework sürümleri daha önce 4'ten x64 karma mod hata ayıklama için de
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Platform 32-bit (Visual Basic veya C#) değiştirileceğini  
   
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.  
+2. Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.  
   
-3.  Tıklayın **Platform** x86 platformlar listesinden seçin.  
+3. Tıklayın **Platform** x86 platformlar listesinden seçin.  
   
      Varsayılan olarak, Visual Basic ve C# Derleyicileri varsayılan herhangi bir CPU üzerinde çalıştırmak için kod üretir. Bu ikili dosyalar, bir 64 bit bilgisayarda 64 bit işlem çalıştırın. Bir 32 bit işlemde çalıştırmak için seçmelisiniz **Win32**değil **AnyCPU**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>32-bit (C/C++) için platform değiştirmek için  
   
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri**.  
   
-2.  Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.  
+2. Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Bkz: [SQL hata ayıklamayı kurma](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Bkz: [SQL hata ayıklamayı kurma](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)

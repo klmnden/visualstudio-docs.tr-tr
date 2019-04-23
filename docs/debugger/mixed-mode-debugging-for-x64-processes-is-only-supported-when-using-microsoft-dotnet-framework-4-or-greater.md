@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba8186114fd976ec7e4704d97acb91ee0c97824
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057816"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft.NET Framework 4 veya daha yenisi kullanılırken desteklenir
 .NET framework sürümleri 4 sağlamadığı'den önceki x64 karma mod hata ayıklama için destek işler. Bu, yerel kod için yönetilen kod veya yerel koda yönetilen kod için hata ayıklama sırasında girilemiyor olduğunu gösterir.
 
 ### <a name="workarounds"></a>Geçici Çözümler
 
--   Microsoft .NET Framework 4 veya daha sonra kullanmak için projenizin güncelleştirin.
+- Microsoft .NET Framework 4 veya daha sonra kullanmak için projenizin güncelleştirin.
 
      -veya-
 
@@ -39,23 +39,23 @@ ms.locfileid: "56719541"
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Platform 32-bit (Visual Basic veya C#) değiştirileceğini
 
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından **özellikleri**.
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından **özellikleri**.
 
-2.  Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.
+2. Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.
 
-3.  Tıklayın **Platform** x86 platformlar listesinden seçin.
+3. Tıklayın **Platform** x86 platformlar listesinden seçin.
 
      Varsayılan olarak, Visual Basic ve C# Derleyicileri varsayılan herhangi bir CPU üzerinde çalıştırmak için kod üretir. Bu ikili dosyalar, bir 64 bit bilgisayarda 64 bit işlem çalıştırın. Bir 32 bit işlemde çalıştırmak için seçmelisiniz **Win32**değil **AnyCPU**.
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>32-bit (C/C++) için platform değiştirmek için
 
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri**.
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri**.
 
-2.  Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.
+2. Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
--   Bkz: [SQL hata ayıklamayı kurma](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Bkz: [SQL hata ayıklamayı kurma](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)

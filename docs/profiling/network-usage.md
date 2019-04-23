@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e9fb62abc7765d65c394e92b9a5e4cfa5fbe3fd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063055"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını analiz etme
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.
@@ -65,11 +65,11 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ### <a name="analysis-tips"></a>Çözümleme ipuçları
  Bu araç, ağla ilgili analizi çalıştırırken, yararlı olabilecek bazı alanları vurgular:
 
-1.  Önbellekten tam olarak sunulan istekleri olarak gösterilen **(önbellekten)** içinde **alınan** sütun. Bu, önbelleğin etkili bir şekilde kullanıcı bant genişliğinden tasarruf etmek kullanmanıza veya yanlışlıkla yanıtları önbelleğe alma ve güncel olmayan verileri ile uygulamanızın son kullanıcı sağlama belirlemenize yardımcı olabilir.
+1. Önbellekten tam olarak sunulan istekleri olarak gösterilen **(önbellekten)** içinde **alınan** sütun. Bu, önbelleğin etkili bir şekilde kullanıcı bant genişliğinden tasarruf etmek kullanmanıza veya yanlışlıkla yanıtları önbelleğe alma ve güncel olmayan verileri ile uygulamanızın son kullanıcı sağlama belirlemenize yardımcı olabilir.
 
-2.  Hata yanıtları (4xx veya 5xx) görüntülenir **sonuçları** kırmızı bir duruma sahip sütun kod ve Özet çubuğunda ayrıca vurgulanır. Bu, birçok olası istekler arasında kolay nokta hataları uygulamanızı sağlar.
+2. Hata yanıtları (4xx veya 5xx) görüntülenir **sonuçları** kırmızı bir duruma sahip sütun kod ve Özet çubuğunda ayrıca vurgulanır. Bu, birçok olası istekler arasında kolay nokta hataları uygulamanızı sağlar.
 
-3.  Yanıt düzgün yazdırmada düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yükleri içeriğin okunabilirliği artırarak ayrıştırmanıza yardımcı olabilir.
+3. Yanıt düzgün yazdırmada düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yükleri içeriğin okunabilirliği artırarak ayrıştırmanıza yardımcı olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

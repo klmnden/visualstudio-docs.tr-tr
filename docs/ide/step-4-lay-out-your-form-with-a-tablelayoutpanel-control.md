@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7083a8874b699716d834ea69ba88c30225acec88
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 63a99a35f7485dd6b2c9e80f552ce9364ce40f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057777"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme
 Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form denetimi. TableLayoutPanel, özel olarak daha sonra ekleyeceksiniz formda denetimleri düzgün şekilde hizalamaya yardımcı olur.
@@ -22,14 +22,14 @@ Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form de
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Formunuzu bir TableLayoutPanel denetimiyle düzenlemek için
 
-1.  Visual Studio IDE'nin sol tarafında bulun **araç kutusu** sekmesi. Seçin **araç kutusu** sekmesinde ve **araç kutusu** görünür. (Veya menü çubuğunda, **görünümü** > **araç kutusu**.)
+1. Visual Studio IDE'nin sol tarafında bulun **araç kutusu** sekmesi. Seçin **araç kutusu** sekmesinde ve **araç kutusu** görünür. (Veya menü çubuğunda, **görünümü** > **araç kutusu**.)
 
-2.  Yanındaki küçük üçgen sembolünü seçin **kapsayıcıları** grubu, aşağıdaki resimde gösterildiği gibi açın.
+2. Yanındaki küçük üçgen sembolünü seçin **kapsayıcıları** grubu, aşağıdaki resimde gösterildiği gibi açın.
 
      ![Kapsayıcılar grubu](../ide/media/express_toolbox.png)
 **kapsayıcıları** grubu
 
-3.  Formunuza düğmeler, onay kutuları ve etiketler gibi denetimler ekleyebilirsiniz. TableLayoutPanel denetiminde çift **araç kutusu**. (Ya da denetimi araç kutusundan forma sürükleyebilirsiniz.) Bunu yaptığınızda aşağıdaki resimde gösterildiği gibi IDE TableLayoutPanel denetimi form ekler.
+3. Formunuza düğmeler, onay kutuları ve etiketler gibi denetimler ekleyebilirsiniz. TableLayoutPanel denetiminde çift **araç kutusu**. (Ya da denetimi araç kutusundan forma sürükleyebilirsiniz.) Bunu yaptığınızda aşağıdaki resimde gösterildiği gibi IDE TableLayoutPanel denetimi form ekler.
 
      ![TableLayoutPanel denetimi](../ide/media/express_formtablelayout.png)
 **TableLayoutPanel** denetimi
@@ -42,26 +42,26 @@ Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form de
      ![Raptiye simgesi](../ide/media/express_pushpintoolbox.png)
 **Raptiye** simgesi
 
-4.  TableLayoutPanel seçili emin olun. Açılan listenin en üstündeki bakarak hangi denetimin seçili olduğunu doğrulayabilirsiniz **özellikleri** penceresinde, aşağıdaki resimde gösterildiği gibi.
+4. TableLayoutPanel seçili emin olun. Açılan listenin en üstündeki bakarak hangi denetimin seçili olduğunu doğrulayabilirsiniz **özellikleri** penceresinde, aşağıdaki resimde gösterildiği gibi.
 
      ![TableLayoutPanel denetimini gösteren Özellikler penceresi](../ide/media/express_controlspropwin.png)
 **özellikleri** gösteren penceresi **TableLayoutPanel** denetimi
 
-5.  Seçin **alfabetik** araç çubuğunda düğme **özellikleri** penceresi. Bu özellikler listesinden neden **özellikleri** penceresi, bu öğreticide özellikleri bulmak daha kolay bulabilmesini sağlar alfabetik sırada görüntüleyin.
+5. Seçin **alfabetik** araç çubuğunda düğme **özellikleri** penceresi. Bu özellikler listesinden neden **özellikleri** penceresi, bu öğreticide özellikleri bulmak daha kolay bulabilmesini sağlar alfabetik sırada görüntüleyin.
 
-6.  Aşağı açılan listesidir üst kısmındaki denetim seçiciyi **özellikleri** penceresi. Bu örnekte, bir denetim adlı gösterir `tableLayoutPanel1` seçilir. Ya da bir alanda göre seçerek denetimleri seçebilirsiniz **Windows Form Tasarımcısı** veya denetim seçiciden seçerek. TableLayoutPanel seçili, bulma **Dock** özelliği ve **Dock**, ayarlanması **hiçbiri**. Bir açılan liste okunu değerin yanında görüntülendiğine dikkat edin. Oku seçin ve ardından **dolgu** düğmesini (ortadaki büyük düğme), aşağıdaki resimde gösterildiği gibi.
+6. Aşağı açılan listesidir üst kısmındaki denetim seçiciyi **özellikleri** penceresi. Bu örnekte, bir denetim adlı gösterir `tableLayoutPanel1` seçilir. Ya da bir alanda göre seçerek denetimleri seçebilirsiniz **Windows Form Tasarımcısı** veya denetim seçiciden seçerek. TableLayoutPanel seçili, bulma **Dock** özelliği ve **Dock**, ayarlanması **hiçbiri**. Bir açılan liste okunu değerin yanında görüntülendiğine dikkat edin. Oku seçin ve ardından **dolgu** düğmesini (ortadaki büyük düğme), aşağıdaki resimde gösterildiği gibi.
 
      ![Doldur seçili Özellikler penceresi](../ide/media/express_docktable.png)
 **özellikleri** penceresiyle **dolgu** seçili
 
      *Yerleştirme* Visual Studio'da pencere başka bir pencereye veya alana IDE'de bağlı olduğu başvuruyor. Örneğin, **özellikleri** penceresi - yani eklenmemiş ve Visual Studio - yerleştirilmemiş veya takılmamış karşı yerleştirilmiş **Çözüm Gezgini**.
 
-7.  TableLayoutPanel ayarladıktan sonra **Dock** özelliğini **dolgu**, panel formun tamamını kaplar. Formu yeniden boyutlandırırsanız, TableLayoutPanel takılı kalır ve kendisini sığacak şekilde yeniden boyutlandırır.
+7. TableLayoutPanel ayarladıktan sonra **Dock** özelliğini **dolgu**, panel formun tamamını kaplar. Formu yeniden boyutlandırırsanız, TableLayoutPanel takılı kalır ve kendisini sığacak şekilde yeniden boyutlandırır.
 
     > [!NOTE]
     >  TableLayoutPanel, Microsoft Office Word'ün bir tablo gibi çalışır: Satırları ve sütunları vardır ve tek bir hücre birçok satırı ve sütunu kapsayabilir. Her hücre bir denetimi kontrol eder (düğme, onay kutusu veya etiket) barındırabilir. TableLayoutPanel denetiminiz olur bir <xref:System.Windows.Forms.PictureBox> denetimi üst satırı, kapsayan bir <xref:System.Windows.Forms.CheckBox> denetimi, sol alttaki hücreye ve dört <xref:System.Windows.Forms.Button> kendi sağ alt hücresinde denetimleri.
 
-8.  Şu anda TableLayoutPanel, iki eşit boyutta satıra ve iki eşit boyutta sütuna sahiptir. Size en üst satır ve sağ sütun için bunları yeniden boyutlandırın gerekiyor. İçinde **Windows Form Tasarımcısı**, Tablelayoutpanel'i seçin. Sağ üst köşedeki gibi görünen bir küçük siyah üçgen düğme yoktur.
+8. Şu anda TableLayoutPanel, iki eşit boyutta satıra ve iki eşit boyutta sütuna sahiptir. Size en üst satır ve sağ sütun için bunları yeniden boyutlandırın gerekiyor. İçinde **Windows Form Tasarımcısı**, Tablelayoutpanel'i seçin. Sağ üst köşedeki gibi görünen bir küçük siyah üçgen düğme yoktur.
 
      ![Üçgen düğme](../ide/media/express_iconblacktriangle.gif)
 **üçgen** düğmesi
@@ -87,6 +87,6 @@ Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form de
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).
+- Sonraki öğretici adımına gitmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).
 
--   Önceki öğretici adımına dönmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).
+- Önceki öğretici adımına dönmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).

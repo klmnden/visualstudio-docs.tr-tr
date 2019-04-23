@@ -11,12 +11,12 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c5995de05d5861ff407006d5926081a5b76c8b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050991"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Hata Ayıklayıcıyı Genişletmek için Yol Haritası
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Bu belgeler genişletmeye yönelik kılavuz ve başvuru bilgileri sağlar [!INCL
   
  Derleyici ve çıktısını ürününüzü hata ayıklama uygulamak için yapılması gerekenleri belirleyin. Varsa, derleyici:  
   
--   Windows yerel işletim sistemini hedefleyen ve yazan bir. PDB dosyası içinde tümleşik olarak yerel kod hata ayıklama altyapısı (DE) ile programlar ayıklayabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bir DE ya da ifade değerlendiricisi uygulama gerekmez. İfade değerlendirici, C++ programlama dilinin sözdizimi yazılır.  
+- Windows yerel işletim sistemini hedefleyen ve yazan bir. PDB dosyası içinde tümleşik olarak yerel kod hata ayıklama altyapısı (DE) ile programlar ayıklayabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bir DE ya da ifade değerlendiricisi uygulama gerekmez. İfade değerlendirici, C++ programlama dilinin sözdizimi yazılır.  
   
--   Microsoft Ara dili (MSIL) çıktı, içine tümleştirilmiştir yönetilen kod hata ayıklama altyapısıyla DE, programların ayıklayabilir üretir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu nedenle, yalnızca bir ifade değerlendiricisi uygulama. Örnek ifade değerlendiricisi sağlanır. Daha fazla bilgi için aşağıdaki konulara bakın:  
+- Microsoft Ara dili (MSIL) çıktı, içine tümleştirilmiştir yönetilen kod hata ayıklama altyapısıyla DE, programların ayıklayabilir üretir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu nedenle, yalnızca bir ifade değerlendiricisi uygulama. Örnek ifade değerlendiricisi sağlanır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
      [İfade Değerlendirme](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
@@ -41,7 +41,7 @@ Bu belgeler genişletmeye yönelik kılavuz ve başvuru bilgileri sağlar [!INCL
   
      [Ortak Dil Çalışma Zamanı İfade Değerlendiricisi Yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   Bir işletim sistemi veya başka bir çalışma zamanı ortamında özel hedefler, kendi DE yazmanız gerekir. ATL COM kullanarak basit bir DE oluşturan bir Öğreticisi sağlanır. Daha fazla bilgi için aşağıdaki konulara bakın:  
+- Bir işletim sistemi veya başka bir çalışma zamanı ortamında özel hedefler, kendi DE yazmanız gerekir. ATL COM kullanarak basit bir DE oluşturan bir Öğreticisi sağlanır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
      [Özel Hata Ayıklama Altyapısı Oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 180cf2cece705afb6094e49ef23a3dc3f953d0c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065525"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API’lerini kullanma
 
@@ -60,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Profil için kod oluşturmak için
 
-1.  Visual Studio'da yeni bir C# projesi oluşturun veya bir komut satırı derleme, tercihinize bağlı olarak kullanın.
+1. Visual Studio'da yeni bir C# projesi oluşturun veya bir komut satırı derleme, tercihinize bağlı olarak kullanın.
 
     > [!NOTE]
     >  Derleme başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık, *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin.
 
-2.  Kopyalama ve projenize aşağıdaki kodu yapıştırın:
+2. Kopyalama ve projenize aşağıdaki kodu yapıştırın:
 
     ```csharp
     using System;
@@ -148,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Toplamak ve komut satırında verileri görüntülemek için
 
-1.  Hata ayıklama sürümü "Profili kod oluşturma" yordamı, bu kılavuzda daha önce oluşturduğunuz örnek kodu derleyin.
+1. Hata ayıklama sürümü "Profili kod oluşturma" yordamı, bu kılavuzda daha önce oluşturduğunuz örnek kodu derleyin.
 
-2.  Yönetilen bir uygulama profili oluşturmak için uygun ortam değişkenlerini ayarlamak için aşağıdaki komutu yazın:
+2. Yönetilen bir uygulama profili oluşturmak için uygun ortam değişkenlerini ayarlamak için aşağıdaki komutu yazın:
 
      **VsPerfCLREnv /traceon**
 
-3.  Şu komutu yazın: **Vsınstr \<filename > .exe**
+3. Şu komutu yazın: **Vsınstr \<filename > .exe**
 
-4.  Şu komutu yazın: **VSPerfCmd çalıştığından/Output:\<filename > .vsp**
+4. Şu komutu yazın: **VSPerfCmd çalıştığından/Output:\<filename > .vsp**
 
-5.  Şu komutu yazın: **VSPerfCmd /globaloff**
+5. Şu komutu yazın: **VSPerfCmd /globaloff**
 
-6.  Programınızı çalıştırın.
+6. Programınızı çalıştırın.
 
-7.  Şu komutu yazın: **VSPerfCmd/Shutdown**
+7. Şu komutu yazın: **VSPerfCmd/Shutdown**
 
-8.  Şu komutu yazın: **VSPerfReport/calltrace:\<filename > .vsp**
+8. Şu komutu yazın: **VSPerfReport/calltrace:\<filename > .vsp**
 
      A. *csv* ortaya çıkan performans verileri geçerli dizin dosyası oluşturulur.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09301d9ebb85d12edf9c8df3d1879aad49ef8d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056321"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Nasıl yapılır: Çalışma sayfalarına Grafik denetimleri ekleme
   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> tasarım zamanında ve belge düzeyi özelleştirmeleri çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler. Ayrıca ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.Chart> VSTO eklentileri çalışma zamanında denetimler.
@@ -35,7 +35,7 @@ ms.locfileid: "56598070"
 
   Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.Chart> denetimlerini, [grafik denetimi](../vsto/chart-control.md).
 
-##  <a name="designtime"></a> Tasarım zamanında grafik denetimleri ekleme
+## <a name="designtime"></a> Tasarım zamanında grafik denetimleri ekleme
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> denetimine ekleme uygulamadan bir grafik aynı şekilde çalışma.
 
 > [!NOTE]
@@ -43,36 +43,36 @@ ms.locfileid: "56598070"
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Bir Excel çalışma sayfasında grafik konak denetimi eklemek için
 
-1.  Üzerinde **Ekle** sekmesinde **grafikleri** grubunda **sütun**grafiklerin bir kategoriye tıklayın ve ardından istediğiniz grafik türüne tıklayın.
+1. Üzerinde **Ekle** sekmesinde **grafikleri** grubunda **sütun**grafiklerin bir kategoriye tıklayın ve ardından istediğiniz grafik türüne tıklayın.
 
-2.  İçinde **Grafik Ekle** iletişim kutusu, tıklayın **Tamam**.
+2. İçinde **Grafik Ekle** iletişim kutusu, tıklayın **Tamam**.
 
-3.  Üzerinde **tasarım** sekmesinde **veri** grubunda **veri Seç**.
+3. Üzerinde **tasarım** sekmesinde **veri** grubunda **veri Seç**.
 
-4.  İçinde **veri kaynağı Seç** iletişim kutusu, tıklama **grafik** **veri aralığı** kutusuna ve herhangi bir varsayılan seçimi temizleyin.
+4. İçinde **veri kaynağı Seç** iletişim kutusu, tıklama **grafik** **veri aralığı** kutusuna ve herhangi bir varsayılan seçimi temizleyin.
 
-5.  İçinde **grafiği için veri** sayfa, grafik verilerini içeren hücre aralığını seçin (hücreleri **A5** aracılığıyla **D8**).
+5. İçinde **grafiği için veri** sayfa, grafik verilerini içeren hücre aralığını seçin (hücreleri **A5** aracılığıyla **D8**).
 
-6.  İçinde **veri kaynağı Seç** iletişim kutusu, tıklayın **Tamam**.
+6. İçinde **veri kaynağı Seç** iletişim kutusu, tıklayın **Tamam**.
 
-##  <a name="runtimedoclevel"></a> Belge düzeyi projesi çalışma zamanında grafik denetimleri ekleme
+## <a name="runtimedoclevel"></a> Belge düzeyi projesi çalışma zamanında grafik denetimleri ekleme
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.Chart> zamanında dinamik olarak denetim. Dinamik olarak oluşturulan grafikleri belgede sürdürülmez belge kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Grafik denetimi bir çalışma sayfasına programlı olarak eklemek için
 
-1.  İçinde <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisine `Sheet1`, eklemek için aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Excel.Chart> denetimi.
+1. İçinde <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisine `Sheet1`, eklemek için aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Excel.Chart> denetimi.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-##  <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesinde grafik denetimleri ekleme
+## <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesinde grafik denetimleri ekleme
  Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Chart> programlı bir şekilde bir VSTO eklenti projesinde herhangi bir açık çalışma sayfasına denetimi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  Dinamik olarak oluşturulan grafik denetimleri, çalışma sayfasında sürdürülmez çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [ekleme denetimleri Office belgelerine çalışma zamanında](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Grafik denetimi bir çalışma sayfasına programlı olarak eklemek için
 
-1.  Açık bir çalışma sayfasına göre ve ardından ekleyen bir çalışma sayfası konak öğesi aşağıdaki kod oluşturur bir <xref:Microsoft.Office.Tools.Excel.Chart> denetimi.
+1. Açık bir çalışma sayfasına göre ve ardından ekleyen bir çalışma sayfası konak öğesi aşağıdaki kod oluşturur bir <xref:Microsoft.Office.Tools.Excel.Chart> denetimi.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#9)]
      [!code-vb[Trin_Excel_Dynamic_Controls#9](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#9)]
@@ -80,7 +80,7 @@ ms.locfileid: "56598070"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek aşağıdaki gereksinimlere sahiptir:
 
--   Grafiği, A5-aralığında D8 çalışma sayfasındaki depolanan veriler.
+- Grafiği, A5-aralığında D8 çalışma sayfasındaki depolanan veriler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

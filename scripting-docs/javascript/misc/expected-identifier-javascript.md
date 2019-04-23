@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10b0c5fe888e41801801e1600c9fb79188d4fdec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065045"
 ---
 # <a name="expected-identifier-javascript"></a>Tanımlayıcı bekleniyor (JavaScript)
 Bir tanımlayıcı dışında bir şey, bir bağlamda, bir gerekli olduğu kullanılır. Bir tanımlayıcı olabilir:  
   
--   bir değişken  
+- bir değişken  
   
--   bir özelliği  
+- bir özelliği  
   
--   bir dizi  
+- bir dizi  
   
--   veya bir işlev adı.  
+- veya bir işlev adı.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Bir tanımlayıcı eşittir işareti solunda görünecek şekilde ifadeyi değiştirin.  
+- Bir tanımlayıcı eşittir işareti solunda görünecek şekilde ifadeyi değiştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizileri Kullanma](../../javascript/advanced/using-arrays-javascript.md)

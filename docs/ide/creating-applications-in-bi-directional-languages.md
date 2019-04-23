@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048185"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 
@@ -28,11 +28,11 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>Çift yönlü dil desteği uygulama türleri
 
--  Windows uygulamaları
+- Windows uygulamaları
 
    Tam olarak iki yönlü metnin sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için çift yönlü destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Web uygulamaları
+- Web uygulamaları
 
    Web Hizmetleri, UTF-8 ve çift yönlü diller gerektiren uygulamalar için uygun hale getirir, Unicode metni gönderip destekler. Web istemcisi uygulamalarını tarayıcılar için kullanıcı arabirimini kullanır, çift yönlü derecesini, destek için bir web uygulaması kullanıcı tarayıcısı bu çift yönlü Özellikler ne kadar iyi destekleyen bağlıdır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 

@@ -10,12 +10,12 @@ ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 38e47e918683d375f6a6baded2bf946a60020e64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d4b4ff425feb22b5057a8d1a76b7f73b8932d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062631"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Nasıl yapılır: Konak bir düzenleyicide başka bir düzenleyici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Visual Studio'da barındırma penceresi bir üst pencere olarak belirterek, içi
   
 ### <a name="to-set-up-the-window-frame-to-host-an-editor"></a>Bir düzenleyici barındırmak için Pencere çerçevesi ayarlamak için  
   
-1.  Bir düzenleyici bir alt pencere bölmesi oluşturarak barındırılan bir düzenleyici olarak belirleyin.  
+1. Bir düzenleyici bir alt pencere bölmesi oluşturarak barındırılan bir düzenleyici olarak belirleyin.  
   
      Bu bölme, düzenleyicinin metni gidecekleri ' dir.  
   
-2.  Kullanarak barındırma Düzenleyicisi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> yöntemi.  
+2. Kullanarak barındırma Düzenleyicisi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> yöntemi.  
   
-3.  Ayarlama <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> ve <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> bu özellikler için parametre olarak geçirerek barındırılan Düzenleyicisi penceresi çerçeve uygulama özelliklerinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> yöntemi, sırasıyla.  
+3. Ayarlama <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> ve <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> bu özellikler için parametre olarak geçirerek barındırılan Düzenleyicisi penceresi çerçeve uygulama özelliklerinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> yöntemi, sırasıyla.  
   
      Bu parametreleri almanız gerekiyorsa, bu özelliklerin geçirmek <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> yöntemi.  
   
-4.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> kapsanan Düzenleyicisi için yöntemi.  
+4. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> kapsanan Düzenleyicisi için yöntemi.  
   
      Düzenleyici içeren Düzenleyicisi barındırılan bölmesinde görünür.  
   

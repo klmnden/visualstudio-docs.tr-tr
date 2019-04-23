@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e13de2f53622923aef1d4870de30be1afdf891ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058142"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Nasıl yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma
 
@@ -33,17 +33,17 @@ Oluşturabileceğiniz <xref:System.Data.Linq.DataContext> sürükleyerek yöntem
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>DataContext oluşturmak için otomatik olarak döndüren yöntemler türü oluşturuldu
 
-1.  İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
+1. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
 
-2.  İstenen saklı yordamı bulun ve boş bir alanı sürükleyin **O/R Tasarımcısı**.
+2. İstenen saklı yordamı bulun ve boş bir alanı sürükleyin **O/R Tasarımcısı**.
 
      <xref:System.Data.Linq.DataContext> Yöntemi otomatik olarak oluşturulan bir dönüş türü ile oluşturulur ve görünür **yöntemleri** bölmesi.
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Bir varlık sınıfı dönüş türüne sahip bir DataContext yöntemi oluşturmak için
 
-1.  İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
+1. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
 
-2.  İstenen saklı yordamı bulun ve varolan bir varlık sınıfı sürükleyin **O/R Tasarımcısı**.
+2. İstenen saklı yordamı bulun ve varolan bir varlık sınıfı sürükleyin **O/R Tasarımcısı**.
 
      <xref:System.Data.Linq.DataContext> Yöntemi seçili varlık sınıfı, dönüş türü ile oluşturulur ve görünür **yöntemleri** bölmesi.
 

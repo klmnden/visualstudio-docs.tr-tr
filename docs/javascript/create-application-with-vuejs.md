@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047689"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
@@ -31,12 +31,17 @@ Aşağıdaki yeni özellikleri, Visual Studio'da Vue.js uygulama geliştirmeyi d
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 sürüm 15,8 Preview 3 veya üzeri yüklü olmalıdır ve **Node.js geliştirme** iş yükü.
+* Visual Studio 2017 sürüm 15,8 veya sonraki bir sürümü yüklü olmalıdır ve **Node.js geliştirme** iş yükü.
 
     > [!IMPORTANT]
-    > Bu makalede, yalnızca mevcut Visual Studio 2017 sürümünde 15,8 Preview 3 başlatma özellikleri gerektirir.
+    > Bu makalede, yalnızca Visual Studio 2017 sürüm 15,8 başlangıç kullanılabilen özellikleri gerektirir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    ::: moniker range=">=vs-2019"
+    Gerekli bir sürümü zaten yüklü değilse, yükleme [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
 
     İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043477"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Nasıl yapılır: Sınıf tasarımcısında koleksiyon ilişkilendirmesini Görselleştirme
 
@@ -28,11 +28,11 @@ ms.locfileid: "55910955"
 
 ## <a name="to-create-a-collection-association"></a>Koleksiyon ilişkilendirmesini oluşturmak için
 
-1.  Kod içinde bir özellik veya alan türü kendisi olan bir türü kesin belirlenmiş koleksiyon oluşturun.
+1. Kod içinde bir özellik veya alan türü kendisi olan bir türü kesin belirlenmiş koleksiyon oluşturun.
 
-2.  Sınıf diyagramında sınıf özellikler ve alanları gösterilen şekilde genişletin.
+2. Sınıf diyagramında sınıf özellikler ve alanları gösterilen şekilde genişletin.
 
-3.  Sınıfı, alan veya özellik sağ tıklatın ve seçin **koleksiyon ilişkilendirmesi olarak göster**.
+3. Sınıfı, alan veya özellik sağ tıklatın ve seçin **koleksiyon ilişkilendirmesi olarak göster**.
 
 Özellik veya alan için toplanan tür bağlama bir ilişkilendirme çizgisi olarak gösterilir.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048211"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>İzlenecek yol: Bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma
 Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi ile bir dosya *.myext* dosya adı uzantısı yüklenir.
@@ -26,11 +26,11 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Paket projesi şablonu için konumları
  Visual Studio Paket proje şablonu, üç farklı konumlarda bulunabilir **yeni proje** iletişim:
 
-1.  Altında **Visual Basic genişletilebilirliği**. Visual Basic proje varsayılan dildir.
+1. Altında **Visual Basic genişletilebilirliği**. Visual Basic proje varsayılan dildir.
 
-2.  Altında **C# genişletilebilirlik**. Varsayılan proje C# dilidir.
+2. Altında **C# genişletilebilirlik**. Varsayılan proje C# dilidir.
 
-3.  Altında **diğer proje türleri genişletilebilirlik**. C++ projesinin varsayılan dildir.
+3. Altında **diğer proje türleri genişletilebilirlik**. C++ projesinin varsayılan dildir.
 
 ### <a name="to-create-the-vspackage"></a>VSPackage'ı oluşturmak için
 

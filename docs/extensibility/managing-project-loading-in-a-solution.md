@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90a97097eed7b97ad96bfda1f5520d1a9b4f0203
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061313"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Bir çözümde proje yüklemeyi yönetme
 Visual Studio çözümleri, çok sayıda proje içerebilir. Varsayılan Visual Studio çözüm açıldığında bir çözümdeki tüm projeleri yüklemek ve bunların tümünü yükleme işlemini tamamlayana kadar projelerinden herhangi birinin erişmek kullanıcı izin vermeyecek şekilde davranışıdır. Proje yükleme işlemi iki dakikadan fazla en son, yüklenen projelerin sayısını ve projeleri toplam sayısını gösteren bir ilerleme çubuğu görüntülenir. Bir çözümde birden çok proje ile çalışırken, kullanıcı projeleri kaldırma, ancak bu yordamı bazı dezavantajları vardır: bir çözümü yeniden derle komutunu bir parçası olarak yüklenmemiş projeler oluşturulmadı ve IntelliSense açıklamaları türleri ve üyeleri kapalı projeleri görüntülenmez.
@@ -59,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>Çözüm yükleme olaylarını işleme
  Çözüm yükü olaylarına abone olmak için çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> çözüm Yükleme Yöneticisi'ni etkinleştirdiğinizde. Uygularsanız <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, özellikleri yükleniyor farklı projesiyle ilgili olaylara yanıt verebilir.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Bir çözüm açılmadan önce bu olay harekete geçirilir.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Bir çözüm açılmadan önce bu olay harekete geçirilir.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Çözüm tamamen yüklendikten, ancak önce arka plan proje yüklenirken yeniden başladıktan sonra bu olay harekete geçirilir.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Çözüm tamamen yüklendikten, ancak önce arka plan proje yüklenirken yeniden başladıktan sonra bu olay harekete geçirilir.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Bir çözüm tam olarak başlangıçta yüklendikten sonra var olup olmadığını bir çözüm yükleme yöneticisi bu olay harekete geçirilir. Ayrıca arka plan yük ya da isteğe bağlı yükledikten sonra çözüm tam yüklü durumuna geldiğinde tetiklenir. Aynı anda <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> yeniden etkinleştirilir.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Bir çözüm tam olarak başlangıçta yüklendikten sonra var olup olmadığını bir çözüm yükleme yöneticisi bu olay harekete geçirilir. Ayrıca arka plan yük ya da isteğe bağlı yükledikten sonra çözüm tam yüklü durumuna geldiğinde tetiklenir. Aynı anda <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> yeniden etkinleştirilir.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Bir proje (veya projeleri) yüklenmesini önce bu olay harekete geçirilir. Projeleri yüklenmeden önce diğer arka plan işlemleri tamamlandığından emin olmak için ayarlanmış `pfShouldDelayLoadToNextIdle` için **true**.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Bir proje (veya projeleri) yüklenmesini önce bu olay harekete geçirilir. Projeleri yüklenmeden önce diğer arka plan işlemleri tamamlandığından emin olmak için ayarlanmış `pfShouldDelayLoadToNextIdle` için **true**.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Projelerin bir toplu iş yaklaşık olarak yüklenmesi için olduğunda, bu olay harekete geçirilir. Varsa `fIsBackgroundIdleBatch` projeler varsa arka planda; yüklenecek true ise `fIsBackgroundIdleBatch` projeleri, örneğin kullanıcı, beklemedeki bir proje Çözüm Gezgini'nde genişletir, zaman uyumlu olarak bir kullanıcı isteği sonucunda yüklenecek false olur. Aksi takdirde yapılması gereken pahalı işlerini gerçekleştirmek için bu olay işleyebilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Projelerin bir toplu iş yaklaşık olarak yüklenmesi için olduğunda, bu olay harekete geçirilir. Varsa `fIsBackgroundIdleBatch` projeler varsa arka planda; yüklenecek true ise `fIsBackgroundIdleBatch` projeleri, örneğin kullanıcı, beklemedeki bir proje Çözüm Gezgini'nde genişletir, zaman uyumlu olarak bir kullanıcı isteği sonucunda yüklenecek false olur. Aksi takdirde yapılması gereken pahalı işlerini gerçekleştirmek için bu olay işleyebilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Projeleri toplu yüklendikten sonra bu olay harekete geçirilir.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Projeleri toplu yüklendikten sonra bu olay harekete geçirilir.
 
 ## <a name="detect-and-manage-solution-and-project-loading"></a>Algılama ve çözüm ve proje yüklemeyi yönetme
  Projeler ve çözümler yükleme durumunu saptamak amacıyla çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> aşağıdaki değerlerle:

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060663"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 |**Kullanmaya başlayın:** Oluşturma ve tür üyeleri'ı yapılandırmadan önce sınıf ayrıntıları penceresini açmalısınız.|-   [Sınıf ayrıntıları penceresini açma](../ide/creating-and-configuring-type-members-class-designer.md#OpenClassDetails)<br />-   [Sınıf ayrıntıları kullanım notları](../ide/creating-and-configuring-type-members-class-designer.md#ClassDetailsUsageNotes)<br />-   [Salt okunur bilgileri görüntüleme](../ide/creating-and-configuring-type-members-class-designer.md#ReadOnlyInfo)<br />-   [Klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)|  
 |**Oluşturma ve tür üyelerini değiştirme:** Yeni üyeler oluşturabilir, üyeleri değiştirebilir ve sınıf ayrıntıları penceresini kullanarak bir yönteme parametre ekleyin.|-   [Üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)<br />-   [Tür üyelerini değiştirme](../ide/creating-and-configuring-type-members-class-designer.md#ModifyTypeMembers)<br />-   [Yöntemlere parametreler ekleme](../ide/creating-and-configuring-type-members-class-designer.md#AddMethodParams)|  
   
-##  <a name="OpenClassDetails"></a> Sınıf ayrıntıları penceresini açma  
+## <a name="OpenClassDetails"></a> Sınıf ayrıntıları penceresini açma  
  Varsayılan olarak, yeni bir sınıf diyagramı açtığınızda sınıf Ayrıntıları penceresi otomatik olarak görünür. (bkz [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)). Ayrıca, aşağıdaki yollarla, Sınıf Ayrıntıları penceresini doğrudan da açabilirsiniz.  
   
 #### <a name="to-open-the-class-details-window"></a>Sınıf Ayrıntıları penceresini açmak için  
@@ -73,16 +73,16 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
    – veya -  
   
--   İşaret **diğer Windows** Görünüm menüsü ve ardından **sınıf ayrıntıları**.  
+- İşaret **diğer Windows** Görünüm menüsü ve ardından **sınıf ayrıntıları**.  
   
-##  <a name="CreateMembers"></a> Üyeleri oluşturma  
+## <a name="CreateMembers"></a> Üyeleri oluşturma  
  Üye oluşturmak için aşağıdaki araçlardan herhangi birini kullanabilirsiniz:  
   
--   Sınıf Tasarımcısı  
+- Sınıf Tasarımcısı  
   
--   Sınıf Ayrıntıları penceresi araç çubuğu  
+- Sınıf Ayrıntıları penceresi araç çubuğu  
   
--   Sınıf Ayrıntıları penceresi  
+- Sınıf Ayrıntıları penceresi  
   
 > [!NOTE]
 >  Bu bölümdeki yordamları kullanarak oluşturucular ve yıkıcılar da oluşturabilirsiniz. Oluşturucular ve Yıkıcılar özel yöntem türleri olduğunu ve bu nedenle, içinde görünürler olduğunu aklınızda Lütfen ayı **yöntemleri** sınıf diyagramı şekillerinde ve bölme **yöntemleri** sınıfının bölümüne Ayrıntıları pencere kılavuzunun.  
@@ -92,45 +92,45 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
 #### <a name="to-create-a-member-using-class-designer"></a>Sınıf Tasarımcısı'nı kullanarak üye oluşturmak için  
   
-1.  Bir üye eklemek istediğiniz türe sağ tıklayın **Ekle**, eklemek istediğiniz üye türünü seçin.  
+1. Bir üye eklemek istediğiniz türe sağ tıklayın **Ekle**, eklemek istediğiniz üye türünü seçin.  
   
      Yeni bir üye imzası oluşturulur ve türe eklenir. Değiştirebileceğiniz bir varsayılan ad verilir **Sınıf Tasarımcısı**, **sınıf ayrıntıları** penceresinde veya **özellikleri** penceresi.  
   
-2.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
+2. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
   
 #### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>Sınıf Ayrıntıları Penceresi araç çubuğunu kullanarak üye oluşturmak için  
   
-1.  Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.  
+1. Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.  
   
      Tür odağa gelir ve içeriği Sınıf Ayrıntıları penceresinde görüntülenir.  
   
-2.  Sınıf Ayrıntıları penceresi araç çubuğunda en üstteki simgeye tıklayıp **yeni \<üye >** açılan listeden.  
+2. Sınıf Ayrıntıları penceresi araç çubuğunda en üstteki simgeye tıklayıp **yeni \<üye >** açılan listeden.  
   
      İşaretçiyi taşır **adı** alanında eklemek istediğiniz üye türü için bir satır. Örneğin tıkladıysanız **yeni özellik**, imleci yeni bir satıra taşır **özellikleri** sınıf Ayrıntıları penceresinde bölümünü.  
   
-3.  Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın (ya da başka bir şekilde, örneğin, Sekme tuşuna basarak odağı taşıyın).  
+3. Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın (ya da başka bir şekilde, örneğin, Sekme tuşuna basarak odağı taşıyın).  
   
      Yeni bir üye imzası oluşturulur ve türe eklenir. Üye artık kodun içinde vardır ve görüntülenen **Sınıf Tasarımcısı**, sınıf Ayrıntıları penceresinde ve Özellikler penceresinde.  
   
-4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
+4. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
   
 #### <a name="to-create-a-member-using-the-class-details-window"></a>Sınıf Ayrıntıları Penceresini kullanarak üye oluşturmak için  
   
-1.  Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.  
+1. Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.  
   
      Tür odağa gelir ve içeriği Sınıf Ayrıntıları penceresinde görüntülenir.  
   
-2.  Sınıf Ayrıntıları penceresinde, eklemek istediğiniz üye türünü içeren bölümde tıklayın  **\<Üye Ekle >**. Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >**.  
+2. Sınıf Ayrıntıları penceresinde, eklemek istediğiniz üye türünü içeren bölümde tıklayın  **\<Üye Ekle >**. Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >**.  
   
-3.  Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın.  
+3. Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın.  
   
      Yeni bir üye imzası oluşturulur ve türe eklenir. Üye artık kodun içinde vardır ve görüntülenen **Sınıf Tasarımcısı**, sınıf Ayrıntıları penceresinde ve Özellikler penceresinde.  
   
-4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
+4. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
   
      **Not:** Üye oluşturmak için klavye kısayollarını da kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
-##  <a name="ModifyTypeMembers"></a> Tür üyelerini değiştirme  
+## <a name="ModifyTypeMembers"></a> Tür üyelerini değiştirme  
  Sınıf Tasarımcısı, diyagram görüntülenen türlerin üyelerinde değişiklik yapmanıza olanak sağlar. Sınıf diyagramında görüntülenen ve salt okunur olmayan her türün üyelerini değiştirebilirsiniz. (Bkz [(Sınıf Tasarımcısı) salt okunur bilgileri görüntüleme](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Tür üyelerini tasarım yüzeyinde, Özellikler penceresinde ve Sınıf Ayrıntıları penceresinde yerinde düzenleme yaparak değiştirirsiniz.  
   
  Sınıf Ayrıntıları penceresinde görüntülenen tüm üyeler sınıf diyagramındaki türlerin üyelerini temsil eder. Dört üye türü vardır: yöntemler, özellikler, alanlar ve olaylar.  
@@ -139,52 +139,52 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
  Her üye satırı aşağıdaki öğeleri görüntüler:  
   
--   **Üye simgesi**  
+- **Üye simgesi**  
   
      Her üyü türü kendi simgesiyle gösterilir. Üyenin imzasını görüntülemek için fareyi üye simgesinin üzerine getirin. Satırı seçmek için, üye simgesine ya da üye simgesinin solundaki boşluğa tıklayın.  
   
--   **Üye adı**  
+- **Üye adı**  
   
      **Adı** bir üye satırındaki sütunu üyenin adını görüntüler. Bu ad ayrıca görüntülenen **adı** Özellikler penceresindeki özellik. Okuma/Yazma izinlerine sahip herhangi bir üyenin adını değiştirmek için bu hücreyi kullanın.  
   
      Varsa **adı** sütundur tam adı, fare üye adının üzerine getirildiğinde adın görüntüler adın tamamını görüntüleyemeyecek kadar darsa.  
   
--   **Üye türü**  
+- **Üye türü**  
   
      **MemberType** hücresi geçerli projede veya başvurulan projelerde kullanılabilen tüm türlerin listesinden seçmenizi sağlar IntelliSense özelliğini kullanır.  
   
--   **Üye değiştiricisi**  
+- **Üye değiştiricisi**  
   
      Üye görünürlük değiştiricilerinin ya da değiştirme `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`), veya `Default`.  
   
--   **\<Üye Ekle >**  
+- **\<Üye Ekle >**  
   
      Sınıf ayrıntıları penceresindeki son satır metni içeren  **\<Üye Ekle >** içinde **adı** hücre. Bu hücreye tıklarsanız yeni bir üye oluşturabilirsiniz. Daha fazla bilgi için [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
--   **Özellikler penceresindeki üye özellikleri**  
+- **Özellikler penceresindeki üye özellikleri**  
   
      Sınıf Ayrıntıları penceresi, Özellikler penceresinde görüntülenen üye özelliklerinin bir alt kümesini görüntüler. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir. Değerinin diğer konumda görüntülenmesi de buna dahildir.  
   
--   **Özet**  
+- **Özet**  
   
      **Özet** hücresi üye hakkındaki bilgilerin bir özetini gösterir. Üç noktaya tıklayarak **özeti** hakkında bilgileri görüntüleyemez veya hücre **özeti**, **dönüş türü**, ve **açıklamalar** üyesi için .  
   
--   **Gizle**  
+- **Gizle**  
   
      Zaman **Gizle** onay kutusu seçiliyse, üye türü görüntülenmez.  
   
 #### <a name="to-modify-a-type-member"></a>Bir tür üyesini değiştirmek için  
   
-1.  Sınıf Tasarımcısı'nı kullanarak bir tür seçin.  
+1. Sınıf Tasarımcısı'nı kullanarak bir tür seçin.  
   
-2.  Sınıf Ayrıntıları penceresi görüntülenmiyorsa, tıklayın **sınıf Ayrıntıları penceresi** Sınıf Tasarımcısı araç çubuğunda.  
+2. Sınıf Ayrıntıları penceresi görüntülenmiyorsa, tıklayın **sınıf Ayrıntıları penceresi** Sınıf Tasarımcısı araç çubuğunda.  
   
-3.  Sınıf Ayrıntıları penceresi kılavuzunun alanlarındaki değerleri düzenleyin. Her düzenlemeden sonra ENTER'a basın ya da bir başka yolla, örneğin SEKME tuşuna basarak, odağı düzenlenen alanın dışına taşıyın. Düzenlemeleriniz anında koda yansır.  
+3. Sınıf Ayrıntıları penceresi kılavuzunun alanlarındaki değerleri düzenleyin. Her düzenlemeden sonra ENTER'a basın ya da bir başka yolla, örneğin SEKME tuşuna basarak, odağı düzenlenen alanın dışına taşıyın. Düzenlemeleriniz anında koda yansır.  
   
     > [!NOTE]
     >  Bir üyenin yalnızca adını değiştirmek istiyorsanız, bunu yerinde düzenlemeyi kullanarak yapabilirsiniz.  
   
-##  <a name="AddMethodParams"></a> Yöntemlere parametreler ekleme  
+## <a name="AddMethodParams"></a> Yöntemlere parametreler ekleme  
  Sınıf Ayrıntıları penceresini kullanarak yöntemlere parametreler ekleyin. Parametreler, zorunlu veya isteğe bağlı olacak şekilde yapılandırılabilir. İçin bir değer sağlanması **isteğe bağlı varsayılan** özelliği, tasarımcıya kodu isteğe bağlı bir parametre olarak bildirir.  
   
  Parametre satırı aşağıdaki öğeleri içerir:  
@@ -221,42 +221,42 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 > [!NOTE]
 >  Yıkıcı üyesi bir yöntem olmasına karşın, parametrelere sahip olamaz.  
   
-###  <a name="HowToAddParameterToMethod"></a> Bir yönteme parametre eklemek için  
+### <a name="HowToAddParameterToMethod"></a> Bir yönteme parametre eklemek için  
   
-1.  Diyagram yüzeyinde, parametre eklemek istediğiniz yöntemi içeren türe tıklayın.  
+1. Diyagram yüzeyinde, parametre eklemek istediğiniz yöntemi içeren türe tıklayın.  
   
      Tür odağa gelir ve içeriği Sınıf Ayrıntıları penceresinde görüntülenir.  
   
-2.  Sınıf Ayrıntıları penceresinde, parametre eklemek istediğiniz yöntemin satırını genişletin.  
+2. Sınıf Ayrıntıları penceresinde, parametre eklemek istediğiniz yöntemin satırını genişletin.  
   
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**  
   
-3.  Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.  
+3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.  
   
      Yeni parametre yönteme ve yöntemin koduna eklenir. Sınıf Ayrıntıları penceresinde ve Özellikler penceresinde görünür.  
   
-4.  İsteğe bağlı olarak, parametreyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
+4. İsteğe bağlı olarak, parametreyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.  
   
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Bir yönteme isteğe bağlı parametre eklemek için  
   
-1.  Diyagram yüzeyinde, isteğe bağlı parametre eklemek istediğiniz yöntemi içeren türe tıklayın.  
+1. Diyagram yüzeyinde, isteğe bağlı parametre eklemek istediğiniz yöntemi içeren türe tıklayın.  
   
      Tür odağa gelir ve içeriği Sınıf Ayrıntıları penceresinde görüntülenir.  
   
-2.  Sınıf Ayrıntıları penceresinde, isteğe bağlı parametre eklemek istediğiniz yöntemin satırını genişletin.  
+2. Sınıf Ayrıntıları penceresinde, isteğe bağlı parametre eklemek istediğiniz yöntemin satırını genişletin.  
   
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**  
   
-3.  Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.  
+3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.  
   
      Yeni parametre yönteme ve yöntemin koduna eklenir. Sınıf Ayrıntıları penceresinde ve Özellikler penceresinde görünür.  
   
-4.  Özellikler penceresinde için bir değer yazın **isteğe bağlı varsayılan** özelliği. Bir parametrenin İsteğe Bağlı Varsayılan özelliği ayarlandığında bu parametre isteğe bağlı olur.  
+4. Özellikler penceresinde için bir değer yazın **isteğe bağlı varsayılan** özelliği. Bir parametrenin İsteğe Bağlı Varsayılan özelliği ayarlandığında bu parametre isteğe bağlı olur.  
   
     > [!NOTE]
     >  İsteğe bağlı parametreler, parametre listesindeki en son parametreler olmalıdır.  
   
-##  <a name="ClassDetailsUsageNotes"></a> Sınıf ayrıntıları kullanım notları  
+## <a name="ClassDetailsUsageNotes"></a> Sınıf ayrıntıları kullanım notları  
  Sınıf Ayrıntıları penceresinin kullanımına ilişkin aşağıdaki ipuçlarına dikkat edin.  
   
  **Düzenlenebilir ve düzenlenemez hücreler**  
@@ -285,7 +285,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
   Sınıf Ayrıntıları penceresinden alanları veya satırları kopyalayabilir ya da kesebilir ve bunları başka bir türe yapıştırabilirsiniz. Bir satırı ancak salt okunur ise kesebilirsiniz. Satırı yapıştırdığınızda, Sınıf Ayrıntıları penceresi çakışma olmasını önlemek için yeni bir ad (kopyalanan satırın adından türetilir) atar.  
   
-##  <a name="ReadOnlyInfo"></a> Salt okunur bilgileri görüntüleme  
+## <a name="ReadOnlyInfo"></a> Salt okunur bilgileri görüntüleme  
  Sınıf Tasarımcısı ve Sınıf Ayrıntıları penceresi aşağıdaki öğeler için türleri (ve türlerin üyelerini) görüntüleyebilir:  
   
 - Sınıf diyagramı içeren bir proje  

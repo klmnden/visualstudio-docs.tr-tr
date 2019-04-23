@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053201"
 ---
 # <a name="inside-the-editor"></a>Düzenleyicinin içinde
 
@@ -152,7 +152,7 @@ Bir <xref:Microsoft.VisualStudio.Text.ITrackingSpan> bir dizi karakter yerine ya
 
 #### <a name="content-types"></a>İçerik türleri
 
-İçerik türleri, farklı içerik türleri tanımlamak için bir mekanizması mevcuttur. Bir içerik türü "metin", "code" veya "ikili" gibi bir dosya türü veya "xml", "vb" veya "C#" gibi bir teknoloji türü olabilir. Örneğin, word "kullanarak" hem C# ve Visual Basic'te, ancak diğer programlama dillerinin bir anahtar sözcüktür. Bu nedenle, bu anahtar sözcüğünün tanımını "C#" ve "vb" içerik türleri için sınırlı olacaktır.
+İçerik türleri, farklı içerik türleri tanımlamak için bir mekanizması mevcuttur. Bir içerik türü "metin", "code" veya "ikili" gibi bir dosya türü veya "xml", "vb" veya "c#" gibi bir teknoloji türü olabilir. Örneğin, word "kullanarak" hem C# ve Visual Basic'te, ancak diğer programlama dillerinin bir anahtar sözcüktür. Bu nedenle, bu anahtar sözcüğünün tanımını "c#" ve "vb" içerik türleri için sınırlı olacaktır.
 
 İçerik türleri, kenarlıklar ve diğer öğeleri Düzenleyicisi için filtre olarak kullanılır. Birçok Düzenleyicisi özellikleri ve uzantı noktaları içerik türü tanımlanır. Örneğin, metin renklendirmesi düz metin dosyaları, XML dosyalarını ve Visual Basic kaynak kodu dosyaları için farklıdır. Metin arabelleği, genellikle bunlar oluşturulur ve bir metin arabelleği içerik türü değiştirilebilir bir içerik türü atanır.
 
@@ -202,19 +202,19 @@ Bir metin görünümünü biçimleri <xref:Microsoft.VisualStudio.Text.ITextSnap
 
 Düzenleyici özelliklerini özellik tanımı, uygulamadan ayrı şekilde tasarlanmıştır. Düzenleyici, şu özellikleri içerir:
 
--   Etiketleri ve sınıflandırıcı
+- Etiketleri ve sınıflandırıcı
 
--   Kenarlıklar
+- Kenarlıklar
 
--   Projeksiyon
+- Projeksiyon
 
--   Anahat Oluşturma
+- Anahat Oluşturma
 
--   Fare ve anahtar bağlamaları
+- Fare ve anahtar bağlamaları
 
--   İşlemler ve temelleri
+- İşlemler ve temelleri
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Etiketleri ve sınıflandırıcı
 
@@ -262,7 +262,7 @@ Katıştırılmış Kenarlıklar biçimlendirilmiş metin görünümünü parça
 
 Açılır Kenarlıklar metin görünümü, örneğin, araç ipuçları yukarıda küçük bir pencerede görünen grafiklerdir.
 
-###  <a name="projection"></a> Projeksiyon
+### <a name="projection"></a> Projeksiyon
 
 Projeksiyon, gerçekte metin depolamaz, ancak bunun yerine diğer metin arabelleği metinleri birleştiren metin arabelleğini farklı bir tür oluşturmak için kullanılan bir tekniktir. Örneğin, bir projeksiyon arabellek diğer arabellekler iki metinden birleştirmek ve tek bir arabellek grubundaymış gibi sonucu sunmak için veya bir arabellek metin parçalarını gizlemek için kullanılabilir. Bir projeksiyon arabellek başka bir projeksiyon arabelleğe kaynak arabelleği üstlenebilir. Bir projeksiyon ile ilgili arabelleklerinin metin birçok farklı şekilde yeniden düzenlemek için oluşturulabilir. (Böyle bir küme olarak da bilinen olduğu bir *arabellek grafik*.) Daraltılmış metin gizlemek için bir yansıtma arabelleği kullanarak Visual Studio metin anahat oluşturma özelliğini uygulanır ve ASP.NET sayfaları için Visual Studio Düzenleyicisi, Visual Basic ve C# gibi katıştırılmış dilleri desteklemek için yansıtma kullanır.
 

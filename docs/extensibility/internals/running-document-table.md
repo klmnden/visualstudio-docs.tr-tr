@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c91aa3cbad7fd58fbd819e46f3f3428f68801e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060832"
 ---
 # <a name="running-document-table"></a>Çalıştırılan Belge Tablosu
 IDE, tüm açık belgelerde çalıştırılan Belge tablosu (RDT) olarak adlandırılan bir iç yapıyı listesini tutar. Bu liste, bellekte olup bu belgeler şu anda düzenlenmekte olan bağımsız olarak tüm açık belgeleri içerir. Kalıcı, dosyaları bir proje veya ana proje dosyasında (örneğin, bir .vcxproj dosyası) dahil olmak üzere herhangi bir öğeyi bir belgedir.
@@ -52,9 +52,9 @@ IDE, tüm açık belgelerde çalıştırılan Belge tablosu (RDT) olarak adland�
 
  IDE RDT resurface için de kullanır (bir Öne Getir) bir kullanıcı belge isterse açık bir belgede. Daha fazla bilgi için [Aç komutunu kullanarak dosyaları görüntüleme](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Bir dosya içinde RDT açık olup olmadığını belirlemek için aşağıdakilerden birini yapın.
 
--   Öğenin açık olup olmadığını öğrenmek belge ad (diğer bir deyişle, tam belge yolu) için sorgu.
+- Öğenin açık olup olmadığını öğrenmek belge ad (diğer bir deyişle, tam belge yolu) için sorgu.
 
--   Proje sistemi için tam belge yolu isteyin ve ardından öğesi içinde RDT aramak için hiyerarşi veya öğe kimliği kullanın.
+- Proje sistemi için tam belge yolu isteyin ve ardından öğesi içinde RDT aramak için hiyerarşi veya öğe kimliği kullanın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [RDT_ReadLock Kullanımı](../../extensibility/internals/rdt-readlock-usage.md)

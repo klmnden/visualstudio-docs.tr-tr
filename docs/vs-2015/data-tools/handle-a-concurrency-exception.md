@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060716"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
  Bu izlenecek yol aşağıdaki süreci alır:  
   
-1.  Yeni bir **Windows uygulama** proje.  
+1. Yeni bir **Windows uygulama** proje.  
   
-2.  Northwind üzerinde dayalı yeni bir veri kümesi oluşturma `Customers` tablo.  
+2. Northwind üzerinde dayalı yeni bir veri kümesi oluşturma `Customers` tablo.  
   
-3.  Bir formla oluşturma bir <xref:System.Windows.Forms.DataGridView> verileri görüntülemek için.  
+3. Bir formla oluşturma bir <xref:System.Windows.Forms.DataGridView> verileri görüntülemek için.  
   
-4.  Bir veri kümesini verilerle doldurmak `Customers` Northwind veritabanındaki tablo.  
+4. Bir veri kümesini verilerle doldurmak `Customers` Northwind veritabanındaki tablo.  
   
-5.  Kullanım [Visual veritabanı araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
+5. Kullanım [Visual veritabanı araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
   
-6.  Aynı kaydı başka bir değerle değiştirmek, veri kümesini güncelleştirin ve değişiklikleri gerçekleştirilen bir eşzamanlılık hatası sonuçları veritabanına yazma girişimi.  
+6. Aynı kaydı başka bir değerle değiştirmek, veri kümesini güncelleştirin ve değişiklikleri gerçekleştirilen bir eşzamanlılık hatası sonuçları veritabanına yazma girişimi.  
   
-7.  Hata catch ve ardından devam etmek ve veritabanını güncellemek için veya güncelleştirmeyi iptal etmek için karar vermek kullanıcıya kayıt farklı sürümlerini görüntüler.  
+7. Hata catch ve ardından devam etmek ve veritabanını güncellemek için veya güncelleştirmeyi iptal etmek için karar vermek kullanıcıya kayıt farklı sürümlerini görüntüler.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
+- Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
   
 > [!NOTE]
 >  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -62,13 +62,13 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-create-a-new-windows-application-project"></a>Yeni bir Windows uygulaması projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünden Yeni bir proje oluşturun.  
+1. Üzerinde **dosya** menüsünden Yeni bir proje oluşturun.  
   
-2.  İçinde **proje türleri** bölmesinde bir programlama dili seçin.  
+2. İçinde **proje türleri** bölmesinde bir programlama dili seçin.  
   
-3.  İçinde **şablonları** bölmesinde **Windows uygulama**.  
+3. İçinde **şablonları** bölmesinde **Windows uygulama**.  
   
-4.  Projeyi adlandırın `ConcurrencyWalkthrough`ve ardından **Tamam**.  
+4. Projeyi adlandırın `ConcurrencyWalkthrough`ve ardından **Tamam**.  
   
      Visual Studio projeyi ekler **Çözüm Gezgini** ve tasarımcıda yeni bir form görüntüler.  
   
@@ -77,35 +77,35 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-create-the-northwinddataset"></a>NorthwindDataSet oluşturmak için  
   
-1.  Üzerinde **veri** menüsünde seçin **ekleme yeni veri kaynağı**.  
+1. Üzerinde **veri** menüsünde seçin **ekleme yeni veri kaynağı**.  
   
      [Veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) açılır.  
   
-2.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**.  
+2. Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**.  
   
-3.  Bir bağlantı, Northwind örnek veritabanına kullanılabilir bağlantılar listesinden seçin. Bağlantı bağlantılar listesinde kullanılabilir durumda değilse, seçin**yeni bağlantı**  
+3. Bir bağlantı, Northwind örnek veritabanına kullanılabilir bağlantılar listesinden seçin. Bağlantı bağlantılar listesinde kullanılabilir durumda değilse, seçin**yeni bağlantı**  
   
     > [!NOTE]
     >  Bir yerel veritabanı dosyasına bağlanıyorsanız seçin **Hayır** sorulduğunda isterseniz ister dosyayı projenize ekleyin.  
   
-4.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**ekranındayken **sonraki**.  
+4. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**ekranındayken **sonraki**.  
   
-5.  Genişletin **tabloları** düğümünü seçip alt `Customers` tablo. Veri kümesi için varsayılan adı olması gereken `NorthwindDataSet`.  
+5. Genişletin **tabloları** düğümünü seçip alt `Customers` tablo. Veri kümesi için varsayılan adı olması gereken `NorthwindDataSet`.  
   
-6.  Seçin **son** veri kümesini projeye eklenecek.  
+6. Seçin **son** veri kümesini projeye eklenecek.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>DataGridView denetimine veri bağlama oluşturun  
  Bu bölümde, oluşturduğunuz bir <xref:System.Windows.Forms.DataGridView> sürükleyerek **müşteriler** öğesini **veri kaynakları** Windows formunuza penceresi.  
   
 #### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>Müşteriler tablosu için bağlı bir DataGridView denetimi oluşturmak için  
   
-1.  Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster** açmak için **veri kaynakları penceresi**.  
+1. Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster** açmak için **veri kaynakları penceresi**.  
   
-2.  İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** düğümüne tıklayın ve ardından **müşteriler** tablo.  
+2. İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** düğümüne tıklayın ve ardından **müşteriler** tablo.  
   
-3.  Tablo düğümü aşağı oku seçip ardından **DataGridView** aşağı açılan listesinde.  
+3. Tablo düğümü aşağı oku seçip ardından **DataGridView** aşağı açılan listesinde.  
   
-4.  Tablo boş bir alana formunuzu sürükleyin.  
+4. Tablo boş bir alana formunuzu sürükleyin.  
   
      A <xref:System.Windows.Forms.DataGridView> adlı Denetim `CustomersDataGridView` ve <xref:System.Windows.Forms.BindingNavigator> adlı `CustomersBindingNavigator` bağlı forma eklenen <xref:System.Windows.Forms.BindingSource>. Bu, kullanıma bağlı `Customers` tablosundaki `NorthwindDataSet`.  
   
@@ -114,11 +114,11 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-test-the-form"></a>Formu sınamak için  
   
-1.  Seçin **F5** uygulamayı çalıştırmak için  
+1. Seçin **F5** uygulamayı çalıştırmak için  
   
      Form görünür bir <xref:System.Windows.Forms.DataGridView> verilerle doldurulmuş denetim üzerindeki `Customers` tablo.  
   
-2.  Üzerinde **hata ayıklama** menüsünde**hata ayıklamayı Durdur**.  
+2. Üzerinde **hata ayıklama** menüsünde**hata ayıklamayı Durdur**.  
   
 ## <a name="handleconcurrency-errors"></a>Handleconcurrency hataları  
  Hataların nasıl işleneceğini olduğundan uygulamanız yöneten belirli iş kurallarına bağlıdır. Bu kılavuz için aşağıdaki stratejisi örnek için nasıl kullanıyoruz işlemek eşzamanlılık hatası.  
@@ -135,13 +135,13 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Eşzamanlılık hata işlemesini etkinleştirmek için  
   
-1.  Özel hata işleyicisi oluşturun.  
+1. Özel hata işleyicisi oluşturun.  
   
-2.  Kullanıcı için seçenekleri görüntüler.  
+2. Kullanıcı için seçenekleri görüntüler.  
   
-3.  Kullanıcının yanıt işler.  
+3. Kullanıcının yanıt işler.  
   
-4.  Güncelleştirmenin yeniden ya da veri kümesindeki verileri sıfırlayın.  
+4. Güncelleştirmenin yeniden ya da veri kümesindeki verileri sıfırlayın.  
   
 ### <a name="addcode-to-handle-the-concurrency-exception"></a>Eşzamanlılık özel durumu işlemek üzere Addcode  
  Bir güncelleştirme gerçekleştirmeyi denedi ve bir özel durum, genellikle özel durumu tarafından sağlanan bilgilerle bir şey yapmak istersiniz.  
@@ -153,12 +153,12 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Hata işleme için eşzamanlılık hatası eklemek için  
   
-1.  Aşağıdaki kodu ekleyin `Form1_Load` yöntemi:  
+1. Aşağıdaki kodu ekleyin `Form1_Load` yöntemi:  
   
      [!code-csharp[VbRaddataConcurrency#1](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#1)]
      [!code-vb[VbRaddataConcurrency#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#1)]  
   
-2.  Değiştirin `CustomersBindingNavigatorSaveItem_Click` çağrılacak yöntem `UpdateDatabase` yöntemi aşağıdaki gibi görünür:  
+2. Değiştirin `CustomersBindingNavigatorSaveItem_Click` çağrılacak yöntem `UpdateDatabase` yöntemi aşağıdaki gibi görünür:  
   
      [!code-csharp[VbRaddataConcurrency#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#2)]
      [!code-vb[VbRaddataConcurrency#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#2)]  
@@ -168,7 +168,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>Kullanıcıya görüntülenecek iletiyi oluşturmak için  
   
--   Aşağıdaki kodu ekleyerek iletiyi oluşturmak **Kod Düzenleyicisi**. Bu aşağıdaki kodu girin `UpdateDatabase` yöntemi.  
+- Aşağıdaki kodu ekleyerek iletiyi oluşturmak **Kod Düzenleyicisi**. Bu aşağıdaki kodu girin `UpdateDatabase` yöntemi.  
   
      [!code-csharp[VbRaddataConcurrency#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#4)]
      [!code-vb[VbRaddataConcurrency#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#4)]  
@@ -178,7 +178,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Kullanıcı işlenecek ileti kutusunda giriş  
   
--   Önceki bölümde eklenen kodun altına aşağıdaki kodu ekleyin.  
+- Önceki bölümde eklenen kodun altına aşağıdaki kodu ekleyin.  
   
      [!code-csharp[VbRaddataConcurrency#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConcurrency/CS/Form1.cs#3)]
      [!code-vb[VbRaddataConcurrency#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConcurrency/VB/Form1.vb#3)]  
@@ -188,24 +188,24 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 #### <a name="to-test-the-form"></a>Formu sınamak için  
   
-1.  Seçin **F5** uygulamayı çalıştırın.  
+1. Seçin **F5** uygulamayı çalıştırın.  
   
-2.  Form göründükten sonra çalışan bırakın ve geçiş yapmak için Visual Studio IDE.  
+2. Form göründükten sonra çalışan bırakın ve geçiş yapmak için Visual Studio IDE.  
   
-3.  Üzerinde **görünümü** menüsünde seçin **Sunucu Gezgini**.  
+3. Üzerinde **görünümü** menüsünde seçin **Sunucu Gezgini**.  
   
-4.  İçinde **Sunucu Gezgini**, uygulamanızı kullanma ve ardından bağlantıyı genişletin **tabloları** düğümü.  
+4. İçinde **Sunucu Gezgini**, uygulamanızı kullanma ve ardından bağlantıyı genişletin **tabloları** düğümü.  
   
-5.  Sağ **müşteriler** tablosuna sağ tıklayıp ardından **tablo verilerini Göster**.  
+5. Sağ **müşteriler** tablosuna sağ tıklayıp ardından **tablo verilerini Göster**.  
   
-6.  İlk kayda (`ALFKI`) değiştirmek `ContactName` için `Maria Anders2`.  
+6. İlk kayda (`ALFKI`) değiştirmek `ContactName` için `Maria Anders2`.  
   
     > [!NOTE]
     >  Değişikliği kaydetmek için farklı bir satıra gidin.  
   
-7.  Geçiş `ConcurrencyWalkthrough`form çalıştıran kullanıcının.  
+7. Geçiş `ConcurrencyWalkthrough`form çalıştıran kullanıcının.  
   
-8.  Formdaki ilk kayda (`ALFKI`), değiştirme`ContactName` için `Maria Anders1`.  
+8. Formdaki ilk kayda (`ALFKI`), değiştirme`ContactName` için `Maria Anders1`.  
   
 9. **Kaydet** düğmesini seçin.  
   

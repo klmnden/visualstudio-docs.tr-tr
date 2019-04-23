@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060299"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: Kaydedici eklentisi oluşturma
 
@@ -33,20 +33,20 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 ### <a name="to-create-a-recorder-plug-in"></a>Bir kaydedici eklentisi oluşturmak için
 
-1.  Web performans testi kaydedici eklentisi oluşturmak istediğiniz web performansı ve yük testi projesi içeren bir çözüm açın.
+1. Web performans testi kaydedici eklentisi oluşturmak istediğiniz web performansı ve yük testi projesi içeren bir çözüm açın.
 
-2.  Yeni bir **sınıf kitaplığı** çözüme bir proje.
+2. Yeni bir **sınıf kitaplığı** çözüme bir proje.
 
-3.  İçinde **Çözüm Gezgini**, yeni sınıf kitaplığı proje klasöründe, sağ **başvuruları** klasörü ve select **Başvuru Ekle**.
+3. İçinde **Çözüm Gezgini**, yeni sınıf kitaplığı proje klasöründe, sağ **başvuruları** klasörü ve select **Başvuru Ekle**.
 
     > [!TIP]
     > Yeni bir sınıf kitaplığı projesi klasörüne örnektir **RecorderPlugins**.
 
      **Başvuru Ekle** iletişim kutusu görüntülenir.
 
-4.  Seçin **.NET** sekmesi.
+4. Seçin **.NET** sekmesi.
 
-5.  Aşağı kaydırın ve select **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
+5. Aşağı kaydırın ve select **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** eklenir **başvuruları** klasöründe **Çözüm Gezgini**.
 
@@ -88,11 +88,11 @@ Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birin
 
 ### <a name="execute-the-recorder-plug-in"></a>Kaydedici eklentisini yürütün
 
-1.  Yeni bir web performans testi oluşturun.
+1. Yeni bir web performans testi oluşturun.
 
      **WebTestRecordPlugins'i Etkinleştir** iletişim kutusu görüntüler.
 
-2.  Kaydedici eklentisi onay kutusunu seçip **Tamam**.
+2. Kaydedici eklentisi onay kutusunu seçip **Tamam**.
 
      Web performans testi, kaydı tamamladıktan sonra yeni Kaydedici eklenti yürütülecektir.
 

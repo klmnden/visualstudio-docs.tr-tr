@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048198"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Visual Studio projeleri ayrı sürümü ve hata ayıklama yapılandırması, pro
   
 ### <a name="to-change-the-build-configuration"></a>Yapı yapılandırmasını değiştirmek için  
   
-1.  Yapı menüsünde: tıklayın **derleme / Configuration Manager**, ardından **hata ayıklama** veya **yayın**.  
+1. Yapı menüsünde: tıklayın **derleme / Configuration Manager**, ardından **hata ayıklama** veya **yayın**.  
   
-2.  Ya da araç çubuğunda **hata ayıklama** veya **yayın** gelen **çözüm yapılandırmaları** liste kutusu.  
+2. Ya da araç çubuğunda **hata ayıklama** veya **yayın** gelen **çözüm yapılandırmaları** liste kutusu.  
   
      ![araç derleme Yapılandırması](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

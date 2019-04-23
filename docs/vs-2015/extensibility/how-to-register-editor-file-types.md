@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042047"
 ---
 # <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Register Editor dosya türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Düzenleyici dosya türleri MPF sınıflarını kullanarak kaydetmek için  
   
-1.  Sağlamak <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> , VSPackage sınıfına düzenleyiciniz için uygun parametrelerle sınıfın.  
+1. Sağlamak <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> , VSPackage sınıfına düzenleyiciniz için uygun parametrelerle sınıfın.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
   
      `NameResourceID` BasicEditorUI proje Resources.h dosyasında tanımlanır ve Düzenleyici "My Düzenleyicisi" olarak tanımlar.  
   
-2.  Geçersiz kılma <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
+2. Geçersiz kılma <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
   
      Uygulamanızda <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi, çağrı <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> yöntemi ve örneği, düzenleyici fabrikası gösterilen aşağıda geçirin.  
   
@@ -61,7 +61,7 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
   
      Bu adım, düzenleyici fabrikası hem Düzenleyici dosya uzantıları kaydeder.  
   
-3.  Düzenleyici fabrikaları kaydını silin.  
+3. Düzenleyici fabrikaları kaydını silin.  
   
      VSPackage'ı çıkarıldığından, düzenleyici fabrikaları otomatik kaydı. Düzenleyici Üreteç nesnesi uyguluyorsa <xref:System.IDisposable> arabirimi, kendi `Dispose` ile Fabrika kaydını sonra yöntemi çağrıldığında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Editor konfigurace kaydetmek için kayıt defteri betik kullanarak türleri  
   
-1.  Kayıt defteri betiğinizde Düzenleyici üreteci ve GUID dize Düzenleyici fabrikası gösterildiği gibi tanımlayın `GUID_BscEditorFactory` aşağıdaki kayıt defteri betik bölümü. Ayrıca, uzantı ve düzenleyici uzantısı önceliğini tanımlayın:  
+1. Kayıt defteri betiğinizde Düzenleyici üreteci ve GUID dize Düzenleyici fabrikası gösterildiği gibi tanımlayın `GUID_BscEditorFactory` aşağıdaki kayıt defteri betik bölümü. Ayrıca, uzantı ve düzenleyici uzantısı önceliğini tanımlayın:  
   
     ```  
   
@@ -92,9 +92,9 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
   
      Bu örnekte Düzenleyicisi dosya uzantısı ".rtf" tanımlanır ve önceliği "50" olur. GUID dizeleri BscEdit kodunuzla Resource.h dosyasında tanımlanır.  
   
-2.  VSPackage kaydetme.  
+2. VSPackage kaydetme.  
   
-3.  Düzenleyici üreteci kaydettirir.  
+3. Düzenleyici üreteci kaydettirir.  
   
      Düzenleyici üreteci kaydedilmiştir <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> uygulaması.  
   

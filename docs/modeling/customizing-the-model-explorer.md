@@ -11,23 +11,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058013"
 ---
 # <a name="customizing-the-model-explorer"></a>Model Gezginini Özelleştirme
 İçin etki alanına özgü dil Tasarımcısı görünümünü ve davranışını Gezginin şu şekilde değiştirebilirsiniz:
 
--   Pencere Başlığı değiştirin.
+- Pencere Başlığı değiştirin.
 
--   Tab simgesi değiştirin.
+- Tab simgesi değiştirin.
 
--   Düğümler için simgeler olarak değişir.
+- Düğümler için simgeler olarak değişir.
 
--   Düğümleri gizleme.
+- Düğümleri gizleme.
 
 ## <a name="changing-the-window-title"></a>Pencere başlığını değiştirme
  Oluşturulan Gezgini'nin pencere başlığı değiştirmek için seçin **Gezgin davranışı** içinde **DSL Gezgini**ve ardından **özellikleri** penceresinde  **Başlık** özelliğini istediğiniz başlığı.
@@ -66,25 +66,25 @@ ms.locfileid: "55913294"
 
 #### <a name="to-display-a-property"></a>Bir özelliği görüntülemek için
 
-1.  Önceki yordamda oluşturduğunuz çözümü açın.
+1. Önceki yordamda oluşturduğunuz çözümü açın.
 
-2.  Emin olun **yorum** yalnızca bir tek etki alanı sınıfı, özellik adı ile rol'ün çoğulluğunun ayarlayarak başvuruyor **konuları** 0.. 1. Özellik adı olması gerektiğini **konu**, ve ilişki adı olması gerektiğini **CommentReferencesSubject**.
+2. Emin olun **yorum** yalnızca bir tek etki alanı sınıfı, özellik adı ile rol'ün çoğulluğunun ayarlayarak başvuruyor **konuları** 0.. 1. Özellik adı olması gerektiğini **konu**, ve ilişki adı olması gerektiğini **CommentReferencesSubject**.
 
-3.  İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **ekleme Yeni Gezgin düğümü ayarlarını**.
+3. İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **ekleme Yeni Gezgin düğümü ayarlarını**.
 
      Bir **ExplorerNodeSettings** düğümü altında görünür **özel düğüm ayarları** düğümü.
 
-4.  Seçin **ExplorerNodeSettings**ve ardından **özellikleri** penceresinde **sınıfı** için **yorum**.
+4. Seçin **ExplorerNodeSettings**ve ardından **özellikleri** penceresinde **sınıfı** için **yorum**.
 
-5.  Sağ **yorum** düğümünü ve ardından **yeni özellik yolu Ekle**.
+5. Sağ **yorum** düğümünü ve ardından **yeni özellik yolu Ekle**.
 
      Adlı yeni bir düğüm görünür **özelliği görüntülenen**.
 
-6.  Seçin **özelliği görüntülenen**ve ardından **özellikleri** penceresinde Değer alanını tıklatın **yolu için özellik**. Seçin **yorum**, ardından **CommentReferencesSubject**, ardından **FlowElement**. Sonuçlanan yolunu benzemelidir **CommentReferencesSubject.Subject/! Konu**.
+6. Seçin **özelliği görüntülenen**ve ardından **özellikleri** penceresinde Değer alanını tıklatın **yolu için özellik**. Seçin **yorum**, ardından **CommentReferencesSubject**, ardından **FlowElement**. Sonuçlanan yolunu benzemelidir **CommentReferencesSubject.Subject/! Konu**.
 
-7.  Değer alanında **özelliği**seçin **adı**.
+7. Değer alanında **özelliği**seçin **adı**.
 
-8.  Tüm Şablonları Dönüştür ve sonra çözümünüzün çalıştırın.
+8. Tüm Şablonları Dönüştür ve sonra çözümünüzün çalıştırın.
 
 9. Oluşturulan tasarımcıda örnek diyagramı açın.
 
@@ -97,17 +97,17 @@ ms.locfileid: "55913294"
 
 #### <a name="to-hide-an-explorer-node"></a>Gezgini düğümü gizlemek için
 
-1.  Önceki yordamda oluşturduğunuz çözümü açın.
+1. Önceki yordamda oluşturduğunuz çözümü açın.
 
-2.  İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **yeni etki alanı yolu Ekle**.
+2. İçinde **DSL Gezgini**, sağ **Gezgin davranışı** ve ardından **yeni etki alanı yolu Ekle**.
 
      A **etki alanı yolu** düğümü altında görünür **gizli düğümleri**.
 
-3.  Seçin **etki alanı yolu**ve ardından **özellikleri** penceresinde Değer alanını tıklatın **yol tanımı**. Seçin **FlowGraph**, ardından **FlowGraphHasComments**. Sonuçlanan yolunu benzemelidir **FlowGraphHasComments.Comments**
+3. Seçin **etki alanı yolu**ve ardından **özellikleri** penceresinde Değer alanını tıklatın **yol tanımı**. Seçin **FlowGraph**, ardından **FlowGraphHasComments**. Sonuçlanan yolunu benzemelidir **FlowGraphHasComments.Comments**
 
-4.  Tüm Şablonları Dönüştür ve sonra çözümünüzün çalıştırın.
+4. Tüm Şablonları Dönüştür ve sonra çözümünüzün çalıştırın.
 
-5.  Oluşturulan tasarımcıda örnek diyagramı açın.
+5. Oluşturulan tasarımcıda örnek diyagramı açın.
 
      Explorer yalnızca göstermelidir bir **aktörler** düğümünü ve değil gösterilip gösterilmeyeceğini **açıklamaları** düğümü.
 

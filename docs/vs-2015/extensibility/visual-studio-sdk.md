@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0c338648ebb69874781906c0eabff670e5158be8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050913"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
   
  Daha fazla bilgi bulabilirsiniz [VSX Arcana blog](http://blogs.msdn.com/b/vsx/) ve bloglar Microsoft MVPs tarafından yazılmış bir sayısı:  
   
--   [Sık kullandığınız Visual Studio uzantıları](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
+- [Sık kullandığınız Visual Studio uzantıları](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   
--   [Visual Studio genişletilebilirliği](http://www.visualstudioextensibility.com/overview/vs/)  
+- [Visual Studio genişletilebilirliği](http://www.visualstudioextensibility.com/overview/vs/)  
   
--   [Visual Studio'yu genişletme](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
+- [Visual Studio'yu genişletme](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 3: Onay dışarı geri alma | Microsoft Docs'
+title: 'Test Alanı 3: Onay dışarı geri alma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048094"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Test alanı 3: Kullanıma almayı geri al / gözden geçirin
+# <a name="test-area-3-check-outundo-checkout"></a>Test Alanı 3: Kullanıma almayı geri al / gözden geçirin
 Bu kaynak denetimi eklentisi test alanı sürüm deposu düzenleme ve geri döndürülüyor öğelerinden kapsar **kullanıma** ve **kullanıma almayı geri al** komutları.
 
 **Kullanıma**: Sürüm deposu olarak bir öğeyi kullanıma işaretleri okuma/yazma için yerel kopyayı değiştirir.
@@ -33,21 +33,21 @@ Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümle
 
 ##### <a name="check-out"></a>Kontrol etme:
 
--   **Dosya**, **kaynak denetimi**, **kullanıma**.
+- **Dosya**, **kaynak denetimi**, **kullanıma**.
 
--   **Dosya**, **kullanıma**.
+- **Dosya**, **kullanıma**.
 
--   Kısayol menüsünde, **kullanıma**.
+- Kısayol menüsünde, **kullanıma**.
 
--   Kullanıma almayı geri al: **Dosya**, **kaynak denetimi**, **geri alma**.
+- Kullanıma almayı geri al: **Dosya**, **kaynak denetimi**, **geri alma**.
 
 ## <a name="common-expected-behavior"></a>Ortak beklenen davranışı
 
--   İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
+- İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
 
--   Sürüm deposu kullanıma alma için doğru kullanıcı öznitelikleri.
+- Sürüm deposu kullanıma alma için doğru kullanıcı öznitelikleri.
 
--   Kullanıma alma tarih ve saat (kullanıcı ayarlarını) doğrudur.
+- Kullanıma alma tarih ve saat (kullanıcı ayarlarını) doğrudur.
 
 ## <a name="test-cases"></a>Test çalışmaları
 
@@ -74,11 +74,11 @@ Kullanıcı sürümüne bağlandığında depolamak, kullanıma alma durumunu t�
 
 #### <a name="expected-behavior"></a>Beklenen davranış
 
--   Kullanamazsınız **kullanıma özel kontrol** sürüm Mağazası'ndan bağlı değilken komutu.
+- Kullanamazsınız **kullanıma özel kontrol** sürüm Mağazası'ndan bağlı değilken komutu.
 
--   Kullanamazsınız **kullanıma almayı geri al** sürüm Mağazası'ndan bağlı değilken komutu.
+- Kullanamazsınız **kullanıma almayı geri al** sürüm Mağazası'ndan bağlı değilken komutu.
 
--   **Paylaşılan kullanıma** komut çalışır.
+- **Paylaşılan kullanıma** komut çalışır.
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Kullanıcı sürümüne bağlandığında depolamak, kullanıma alma durumunu t�
 
 #### <a name="expected-behavior"></a>Beklenen davranış
 
--   İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
+- İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
 
--   Sürüm deposu kullanıma için doğru kullanıcı öznitelikleri.
+- Sürüm deposu kullanıma için doğru kullanıcı öznitelikleri.
 
--   (Kullanıcı ayarlarını) göz atın, tarih ve saat doğrudur.
+- (Kullanıcı ayarlarını) göz atın, tarih ve saat doğrudur.
 
--   Hedef dosya veya klasörün yerel kopyayı yazılabilir.
+- Hedef dosya veya klasörün yerel kopyayı yazılabilir.
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Kullanıcı sürümüne bağlandığında depolamak, kullanıma alma durumunu t�
 
 #### <a name="expected-behavior"></a>Beklenen davranış
 
--   İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
+- İşlem teslim sonra hedef dosyaların ve/veya klasörleri sürüm deposuna kullanıma olarak işaretlenir.
 
--   Sürüm deposu kullanıma için doğru kullanıcı öznitelikleri.
+- Sürüm deposu kullanıma için doğru kullanıcı öznitelikleri.
 
--   Göz atın, tarih ve saat (kullanıcı ayarlarını) doğru.
+- Göz atın, tarih ve saat (kullanıcı ayarlarını) doğru.
 
--   Hedef dosya veya klasörün yerel kopyayı yazılabilir.
+- Hedef dosya veya klasörün yerel kopyayı yazılabilir.
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Kullanıcı sürümüne bağlandığında depolamak, kullanıma alma durumunu t�
 
 #### <a name="expected-behavior"></a>Beklenen davranış
 
--   Kullanıcının varsayılan alan **yerel sürümü kullanıma alma** ayarı. Yerel sürüm kullanıma denetlemek kullanıcı tarafından seçmiş, her zaman kullanıma aldığınız sürümle geri dönmek için geri alma için varsayılan değer yoktur.
+- Kullanıcının varsayılan alan **yerel sürümü kullanıma alma** ayarı. Yerel sürüm kullanıma denetlemek kullanıcı tarafından seçmiş, her zaman kullanıma aldığınız sürümle geri dönmek için geri alma için varsayılan değer yoktur.
 
--   Simgeleri geri almayı kabul ettiğiniz andan **Çözüm Gezgini** etkilenen güncelleştirilen dosyaları ve öğesi kaldırılır **Bekleyen İadeler** penceresi.
+- Simgeleri geri almayı kabul ettiğiniz andan **Çözüm Gezgini** etkilenen güncelleştirilen dosyaları ve öğesi kaldırılır **Bekleyen İadeler** penceresi.
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
 |------------|----------------|--------------------------------|

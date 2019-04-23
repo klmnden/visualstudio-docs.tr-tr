@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058128"
 ---
 # <a name="shader-designer-nodes"></a>Gölgelendirici Tasarımcısı düğümleri
 Belgelerin bu bölümdeki makaleleri grafik efektleri oluşturmak için kullanabileceğiniz çeşitli gölgelendirici Tasarımcısı düğümleri hakkında bilgiler içerir.
@@ -27,15 +27,15 @@ Belgelerin bu bölümdeki makaleleri grafik efektleri oluşturmak için kullanab
 ### <a name="promotion-of-inputs"></a>Giriş yükseltme
  Etkili bir oyunun veya uygulamanın içinde kullanılabilir, böylece gölgelendirici Tasarımcısı sonuçta HLSL kaynak kodu oluşturmanız gerekir, gölgelendirici Tasarımcısı düğümleri HLSL kullandığı türü promosyon kurallarını tabi olduğu. Grafik donanımının öncelikle kayan nokta değerleri üzerinde çalıştığından, farklı türler arasında yükseltme yazın — örneğin, `int` için `float`, veya `float` için `double`— seyrek olur. Bunun yerine, grafik donanımının bilgileri aynı anda birden çok parça aynı işlemi kullandığından, farklı türde bir yükseltme, daha kısa bir dizi girişleri boyutunu en uzun giriş uyacak şekilde uzatılmış oluşabilir. Giriş türü üzerinde ve üzerinde işlem nasıl uzatılmış bağlıdır:
 
--   **Küçük tür bir skaler değer ise:**
+- **Küçük tür bir skaler değer ise:**
 
      Skaler değerini, daha büyük giriş boyutu eşit olan bir vektörü olarak çoğaltılır. Örneğin, skaler giriş 5.0 (5.0, 5.0, 5.0) vektör haline gelir işlemi ne olursa olsun, bir üç öğeli vektör olduğunda işlemin en büyük giriş.
 
--   **Daha küçük bir vektör türüdür ve çarpma işlemi (\*, /, % vb.), ardından:**
+- **Daha küçük bir vektör türüdür ve çarpma işlemi (\*, /, % vb.), ardından:**
 
      Vektör değeri önde gelen büyük giriş boyutu eşit olan bir vektör öğelerinin kopyalanır ve sondaki öğeler 1.0 için ayarlanır. Örneğin, vektör giriş (5.0, 5.0) (5.0, 5.0, 1.0, 1.0) vektör haline gelir, bu çarpılır dört öğeli vektörü ile. Bu üçüncü ve dördüncü öğeleri çıkış çarpma kimliği, 1.0 kullanarak korur.
 
--   **Daha küçük bir vektör türüdür ve işlem eklenebilir (+,-, vb.), ardından:**
+- **Daha küçük bir vektör türüdür ve işlem eklenebilir (+,-, vb.), ardından:**
 
      Vektör değeri önde gelen büyük giriş boyutu eşit olan bir vektör öğelerinin kopyalanır ve sondaki öğeler 0.0 ayarlanır. Örneğin, vektör giriş (5.0, 5.0) (5.0, 5.0, 0.0, 0.0) vektör haline gelir, eklendiğinde için dört öğeli vektör. Bu, çıktının üçüncü ve dördüncü öğeleri 0,0 eklenebilir kimlik kullanarak korur.
 

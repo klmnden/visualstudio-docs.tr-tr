@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053591"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak Azure App Service'e bir Web uygulaması yayımlama
 
@@ -25,9 +25,9 @@ Azure App Service'e ASP.NET Core uygulamaları yayımlamak için Yayımla Aracı
 
 ## <a name="prerequisites"></a>Önkoşullar
 
- - [Mac için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) etkin ASP.NET Core ile yüklü.
- - Bir Azure aboneliği. Bir abonelik zaten yoksa [ücretsiz olarak kaydolun](https://azure.microsoft.com/free/dotnet/), içeren 200 ABD Doları değerinde kredi 30 gün ve popüler ücretsiz Hizmetleri 12 ay için.
- - Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- [Mac için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) etkin ASP.NET Core ile yüklü.
+- Bir Azure aboneliği. Bir abonelik zaten yoksa [ücretsiz olarak kaydolun](https://azure.microsoft.com/free/dotnet/), içeren 200 ABD Doları değerinde kredi 30 gün ve popüler ücretsiz Hizmetleri 12 ay için.
+- Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 

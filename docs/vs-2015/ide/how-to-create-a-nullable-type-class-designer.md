@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058505"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl yapılır: Boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Bur
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Sınıf Tasarımcısı kullanarak boş değer atanabilir bir tür eklemek için  
   
-1.  Sınıf diyagramında varolan bir sınıfı genişletebilir veya yeni bir sınıf oluşturun.  
+1. Sınıf diyagramında varolan bir sınıfı genişletebilir veya yeni bir sınıf oluşturun.  
   
-2.  Projeye bir sınıf eklemek için **sınıf diyagramı** menüsünde tıklatın **Ekle**ve ardından **sınıfı Ekle**.  
+2. Projeye bir sınıf eklemek için **sınıf diyagramı** menüsünde tıklatın **Ekle**ve ardından **sınıfı Ekle**.  
   
-3.  Sınıf şeklinin genişletme için **sınıf diyagramı** menüsünde tıklatın **genişletme**.  
+3. Sınıf şeklinin genişletme için **sınıf diyagramı** menüsünde tıklatın **genişletme**.  
   
-4.  Sınıf şekli seçin. Üzerinde **sınıf diyagramı** menüsünde tıklatın **Ekle**ve ardından **alan**. Varsayılan ada sahip yeni bir alan **alan** sınıf şeklinin ve ayrıca görünür **sınıf ayrıntıları** penceresi.  
+4. Sınıf şekli seçin. Üzerinde **sınıf diyagramı** menüsünde tıklatın **Ekle**ve ardından **alan**. Varsayılan ada sahip yeni bir alan **alan** sınıf şeklinin ve ayrıca görünür **sınıf ayrıntıları** penceresi.  
   
-5.  İçinde **adı** sütununun **sınıf ayrıntıları** penceresi (veya kendi sınıfında Şekil), yeni alan adı geçerli ve anlamlı bir adla değiştirin.  
+5. İçinde **adı** sütununun **sınıf ayrıntıları** penceresi (veya kendi sınıfında Şekil), yeni alan adı geçerli ve anlamlı bir adla değiştirin.  
   
-6.  İçinde **türü** sütununun **sınıf ayrıntıları** penceresinde, aşağıdaki kodda gösterildiği gibi boş değer atanabilir bir tür olarak türü bildirmek:  
+6. İçinde **türü** sütununun **sınıf ayrıntıları** penceresinde, aşağıdaki kodda gösterildiği gibi boş değer atanabilir bir tür olarak türü bildirmek:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,15 +71,15 @@ Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Bur
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Kod Düzenleyicisi'ni kullanarak boş değer atanabilir bir tür eklemek için  
   
-1.  Projeye bir sınıf ekleyin. İçinde proje düğümünü seçin **Çözüm Gezgini**ve **proje** menüsünde tıklatın **sınıfı Ekle**.  
+1. Projeye bir sınıf ekleyin. İçinde proje düğümünü seçin **Çözüm Gezgini**ve **proje** menüsünde tıklatın **sınıfı Ekle**.  
   
-2.  Yeni bir sınıf .cs veya .vb dosyasında yeni bir sınıf içinde bir veya daha fazla boş değer atanabilir türler için sınıf bildirimi ekleyin.  
+2. Yeni bir sınıf .cs veya .vb dosyasında yeni bir sınıf içinde bir veya daha fazla boş değer atanabilir türler için sınıf bildirimi ekleyin.  
   
-3.  Sınıf Görünümü'ndeki yeni sınıf simgesi Sınıf Tasarımcısı tasarım yüzeyine sürükleyin. Sınıf diyagramında sınıf şekline görünür.  
+3. Sınıf Görünümü'ndeki yeni sınıf simgesi Sınıf Tasarımcısı tasarım yüzeyine sürükleyin. Sınıf diyagramında sınıf şekline görünür.  
   
-4.  Sınıf şeklinin ayrıntılarını genişletin ve sınıf üyeleri fare işaretçisini taşıyın. Araç İpucu her üyesi bildirimi görüntüler.  
+4. Sınıf şeklinin ayrıntılarını genişletin ve sınıf üyeleri fare işaretçisini taşıyın. Araç İpucu her üyesi bildirimi görüntüler.  
   
-5.  Sınıf şeklinin sağ tıklatıp **sınıf ayrıntıları**. Görüntüleyebilir veya yeni türün özelliklerinde değişiklik **sınıf ayrıntıları** penceresi.  
+5. Sınıf şeklinin sağ tıklatıp **sınıf ayrıntıları**. Görüntüleyebilir veya yeni türün özelliklerinde değişiklik **sınıf ayrıntıları** penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Nullable%601>   

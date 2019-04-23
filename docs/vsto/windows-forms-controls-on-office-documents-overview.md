@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a233518f34fdafdb45822f4bc12c3edc452f50cb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055361"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms denetimlerine Office belgeleri genel bakış
   Windows Forms denetimlerini, kullanıcıların girin veya verileri işlemek için etkileşim kurabilir nesnelerdir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projeleri, Windows Forms denetimleri belge veya çalışma kitabındaki projenizde tasarım zamanında ekleyebileceğiniz veya program aracılığıyla çalışma zamanında bu denetimler ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belge veya çalışma zamanında VSTO eklenti Excel veya Word için ekleyebilirsiniz.
@@ -42,19 +42,20 @@ ms.locfileid: "56598862"
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="use-windows-forms-controls"></a>Windows Forms denetimlerini kullanma
- Windows Forms denetimleri, belgelere ve Eylemler bölmesi, özel görev bölmeleri ve Windows Forms dahil olmak üzere, özelleştirilebilir kullanıcı arabirimi (UI) öğeleri ekleyebilirsiniz. Windows Forms denetimlerine genel belgelerde bu bir kullanıcı Arabirimi öğelerinde aynı davranışa sahip, ancak bazı farklılıklar mevcuttur. Bilgi için [sınırlamalar, Windows Forms denetimleri Office belgelerini](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Windows Forms denetimleri bir belge veya başka bir kullanıcı Arabirimi öğesi eklemek çeşitli etkenlere bağlıdır karar. Windows Forms denetimleri kullanımlarını UI çözümünüzü tasarlarken, aşağıdaki tabloda açıklandığı gibi göz önünde bulundurun.
+Windows Forms denetimleri, belgelere ve Eylemler bölmesi, özel görev bölmeleri ve Windows Forms dahil olmak üzere, özelleştirilebilir kullanıcı arabirimi (UI) öğeleri ekleyebilirsiniz. Windows Forms denetimlerine genel belgelerde bu bir kullanıcı Arabirimi öğelerinde aynı davranışa sahip, ancak bazı farklılıklar mevcuttur. Bilgi için [sınırlamalar, Windows Forms denetimleri Office belgelerini](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
- Belge üzerinde.
- -   %100 zaman denetimlerini görüntülemek istediğinizde.
+Windows Forms denetimleri bir belge veya başka bir kullanıcı Arabirimi öğesi eklemek çeşitli etkenlere bağlıdır karar. Windows Forms denetimleri kullanımlarını UI çözümünüzü tasarlarken, aşağıdaki tabloda açıklandığı gibi göz önünde bulundurun.
+
+Belge üzerinde.
+- %100 zaman denetimlerini görüntülemek istediğinizde.
 
 - Kullanıcıların doğrudan belgedeki verileri, örneğin, form tabanlı belgeleri nerede düzenleme surface kilitli girmesini istediğinizde.
 
 - Belgedeki veriyi ayarlarına uygun olarak görüntülemek için denetimler istediğinizde. Örneğin, her satıra bir liste nesnesinin düğmeleri ekliyorsanız, bunları ayarlarına uygun olarak her bir liste öğesi istersiniz.
 
-  Eylemler bölmesinde veya bir özel görev bölmesi.
-  -   Kullanıcıya bağlamsal bilgi sağlamak istediğinizde.
+Eylemler bölmesinde veya bir özel görev bölmesi.
+- Kullanıcıya bağlamsal bilgi sağlamak istediğinizde.
 
 - Belge ve değil sorgu denetimleri ve verileri yalnızca sonuçların görünmesini istediğinizde.
 
@@ -62,8 +63,8 @@ ms.locfileid: "56598862"
 
 - Denetimler belgenin görüntüsüyle karışmadığına müdahale etmez sağlamak istediğinizde.
 
-  Bir Windows formunda.
-  -   Kullanıcı arabirimini boyutunu denetlemek istediğinizde.
+Bir Windows formunda.
+- Kullanıcı arabirimini boyutunu denetlemek istediğinizde.
 
 - Denetimleri gizleme veya kullanıcıların engellemek istediğinizde.
 
@@ -80,32 +81,32 @@ ms.locfileid: "56598862"
 ### <a name="create-custom-user-controls"></a>Özel kullanıcı denetimi oluşturma
  Projenize bir kullanıcı denetimi ekleyin ve ardından ekleyin **araç kutusu**. Ardından, belgenize bir Windows Forms denetimi eklemek tıpkı belgenizi doğrudan kullanıcı denetimi sürükleyebilirsiniz. Kullanıcı denetimleri oluşturduğunuzda göz önünde bulundurmanız gereken bazı hususlar vardır:
 
--   Oluşturma bir **korumalı** kullanıcı denetimi. Belgenize denetimi sürükleyin, Visual Studio yükseltime ve belge üzerinde kullanımını desteklemek için kullanıcı denetimi türetilen bir sarmalayıcı sınıf oluşturur. Kullanıcı denetimine ise **korumalı**, Visual Studio sarmalayıcı sınıfı oluşturamaz.
+- Oluşturma bir **korumalı** kullanıcı denetimi. Belgenize denetimi sürükleyin, Visual Studio yükseltime ve belge üzerinde kullanımını desteklemek için kullanıcı denetimi türetilen bir sarmalayıcı sınıf oluşturur. Kullanıcı denetimine ise **korumalı**, Visual Studio sarmalayıcı sınıfı oluşturamaz.
 
--   Kullanıcı denetimleri olmalıdır <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliğini **true**. Bir Office projesi içinde oluşturulan kullanıcı denetiminiz ayarlamak bu öznitelik **true** varsayılan, ancak kullanıcı tarafından dış projelerin bir parçası olan denetimler ayarlamak bu öznitelik olmayabilir **true**.
+- Kullanıcı denetimleri olmalıdır <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliğini **true**. Bir Office projesi içinde oluşturulan kullanıcı denetiminiz ayarlamak bu öznitelik **true** varsayılan, ancak kullanıcı tarafından dış projelerin bir parçası olan denetimler ayarlamak bu öznitelik olmayabilir **true**.
 
--   Belgeyi bir kullanıcı denetimi ekledikten sonra yeniden adlandırma silmeyin veya <xref:System.Windows.Forms.UserControl> projesinden sınıfı. Bir kullanıcı denetiminin adını değiştirmeniz gerekirse belgeden silmeden önce ve adı değiştirildikten sonra tekrar eklemeniz gerekir.
+- Belgeyi bir kullanıcı denetimi ekledikten sonra yeniden adlandırma silmeyin veya <xref:System.Windows.Forms.UserControl> projesinden sınıfı. Bir kullanıcı denetiminin adını değiştirmeniz gerekirse belgeden silmeden önce ve adı değiştirildikten sonra tekrar eklemeniz gerekir.
 
 ### <a name="arrange-controls-at-design-time"></a>Denetimleri tasarım zamanında düzenleme
  Tasarım zamanında Word ve Excel birden çok denetim eklerseniz, hızlı bir şekilde tüm seçili denetimleri hizalama kullanarak ayarlayabilirsiniz **Microsoft Office Word** ve **Microsoft Office Excel**Visual Studio'da araç çubukları. Bu araç çubukları, yalnızca bir belge veya çalışma sayfasını tasarımcıda açık olduğunda kullanılabilir.
 
  Birden çok denetim Tasarımcısı'nda seçtiğinizde, bu araç çubuklarında denetimlerini düzenlemek için aşağıdaki düğmelerden kullanabilirsiniz:
 
--   **Sola Hizala**
+- **Sola Hizala**
 
--   **Merkeze Hizala**
+- **Merkeze Hizala**
 
--   **Sağa Hizala**
+- **Sağa Hizala**
 
--   **Üste hizalama**
+- **Üste hizalama**
 
--   **Ortaya Hizala**
+- **Ortaya Hizala**
 
--   **Alta Hizala**
+- **Alta Hizala**
 
--   **Yatay Aralığı Eşit Yap**
+- **Yatay Aralığı Eşit Yap**
 
--   **Dikey aralığı eşit yap**
+- **Dikey aralığı eşit yap**
 
 > [!NOTE]
 >  Yalnızca Seçili denetimleri metinle yüklemiyorsanız bu düğmeler Word projelerinde etkinleştirilir. Varsayılan olarak, tasarım zamanında belgeye eklediğiniz metinle denetimlerdir.

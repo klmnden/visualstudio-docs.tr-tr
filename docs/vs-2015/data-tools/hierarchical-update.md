@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063406"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +99,11 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Yeni alt kayıtları eklemeden önce üst kayıtlar veri kümesini yürütmek için kodu eklemek için  
   
-1.  İçin bir olay işleyicisi oluşturun `OrdersBindingSource.AddingNew` olay.  
+1. İçin bir olay işleyicisi oluşturun `OrdersBindingSource.AddingNew` olay.  
   
-    -   Açık **Form1** Tasarım görünümünde seçin **OrdersBindingSource** bileşen tepsisinde seçin **olayları** içinde **özellikleri** penceresinde ve ardından çift **AddingNew** olay.  
+    - Açık **Form1** Tasarım görünümünde seçin **OrdersBindingSource** bileşen tepsisinde seçin **olayları** içinde **özellikleri** penceresinde ve ardından çift **AddingNew** olay.  
   
-2.  Çağıran olay işleyicisine kod satırını ekleyin `CustomersBindingSource.EndEdit` yöntemi. Kodda `OrdersBindingSource_AddingNew` olay işleyicisi aşağıdaki benzemesi gerekir:  
+2. Çağıran olay işleyicisine kod satırını ekleyin `CustomersBindingSource.EndEdit` yöntemi. Kodda `OrdersBindingSource_AddingNew` olay işleyicisi aşağıdaki benzemesi gerekir:  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

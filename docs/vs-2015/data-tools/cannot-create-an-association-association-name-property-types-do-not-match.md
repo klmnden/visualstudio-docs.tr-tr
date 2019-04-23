@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065123"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Bir ilişki oluşturulamıyor \<ilişkilendirme adı >-özellik türleri eşleş
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
-1.  İletisini inceleyin ve iletide çekilerek özellikleri not alın.  
+1. İletisini inceleyin ve iletide çekilerek özellikleri not alın.  
   
-2.  Tıklayın **Tamam** iletişim kutusunu kapatın.  
+2. Tıklayın **Tamam** iletişim kutusunu kapatın.  
   
-3.  İnceleme **ilişkilendirme özellikleri** ve aynı veri türünde özelliklerini seçin.  
+3. İnceleme **ilişkilendirme özellikleri** ve aynı veri türünde özelliklerini seçin.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasındaki ilişkiyi (ilişki) oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

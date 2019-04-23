@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614902"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043464"
 ---
 # <a name="saving-a-standard-document"></a>Standart Belge Kaydetme
 Ortam, kaydetme, Farklı Kaydet ve Tümünü Kaydet komutları işler. Bir kullanıcı seçtiğinde **Kaydet**, **Kaydet**, veya **Tümünü Kaydet** gelen **dosya** menüsü ya da sonuçta çözümü kapatır bir  **Tümünü Kaydet**, aşağıdaki süreç gerçekleşir.
@@ -50,11 +50,11 @@ Ortam, kaydetme, Farklı Kaydet ve Tümünü Kaydet komutları işler. Bir kulla
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Çeşitli dosyalar projeleri için dosya sahipliğini değiştirmek için
 
-1.  Hizmet için sorgu <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> arabirimi.
+1. Hizmet için sorgu <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> arabirimi.
 
      Bir işaretçi <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> döndürülür.
 
-2.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) yeni hiyerarşiye belge aktarmak için yöntemi. Farklı Kaydet komutu yürüttükten hiyerarşi bu yöntemi çağırır.
+2. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) yeni hiyerarşiye belge aktarmak için yöntemi. Farklı Kaydet komutu yürüttükten hiyerarşi bu yöntemi çağırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

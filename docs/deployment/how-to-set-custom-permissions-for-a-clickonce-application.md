@@ -15,35 +15,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc400b4e9b504b512fc8ed3ec6c6dec3e676310e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d275875b18941df63e0f6ee3c17f427334eab88a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058550"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama
 Dağıtabileceğiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Internet veya yerel Intranet bölgeleri için varsayılan izinler kullanan bir uygulama. Alternatif olarak, uygulamanız için gereken belirli izinleri için özel bir bölge oluşturabilirsiniz. Bunu şirket güvenlik izinlerini özelleştirerek yapmak **güvenlik** sayfasının **Proje Tasarımcısı**.
 
 ### <a name="to-customize-a-permission"></a>Bir izni özelleştirmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **güvenlik** sekmesi.
+2. Tıklayın **güvenlik** sekmesi.
 
-3.  Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
+3. Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
 
-4.  Seçin **kısmi güven uygulamasıdır** seçenek düğmesini.
+4. Seçin **kısmi güven uygulamasıdır** seçenek düğmesini.
 
      Denetimlerde **ClickOnce güvenlik izinleri** bölüm etkinleştirilir.
 
-5.  Gelen **uygulamanızı yükleneceği kaynak bölge** aşağı açılan listesinde, tıklayın **(özel)**.
+5. Gelen **uygulamanızı yükleneceği kaynak bölge** aşağı açılan listesinde, tıklayın **(özel)**.
 
-6.  Tıklayın **düzenleme izinleri XML**.
+6. Tıklayın **düzenleme izinleri XML**.
 
      *App.manifest* dosyasını XML düzenleyicisinde açar.
 
-7.  Önce `</applicationRequestMinimum>` öğesi, uygulamanızın gerektirdiği izinler için XML kodunu ekleyin.
+7. Önce `</applicationRequestMinimum>` öğesi, uygulamanızın gerektirdiği izinler için XML kodunu ekleyin.
 
     > [!NOTE]
     >  Kullanabileceğiniz `ToXml` yöntemi bir izin kümesi XML kodunu uygulama bildirimini oluşturmak için. Örneğin, için XML oluşturmak için <xref:System.Security.Permissions.EnvironmentPermission> izin kümesi, çağrı <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> yöntemi.

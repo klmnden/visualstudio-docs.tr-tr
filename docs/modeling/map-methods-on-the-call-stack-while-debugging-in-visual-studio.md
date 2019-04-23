@@ -28,21 +28,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 139e76911825866375a0f524c53dd23b8967f9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063172"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
+
 Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Haritası oluşturun. Hataları bulmaya odaklanabilmeniz amacıyla kodun ne yaptığını izlemek için harita üzerine not alabilirsiniz.
 
  ![Kod haritalarına çağrı yığınları ile hata ayıklama](../debugger/media/debuggermap_overview.png)
 
  Şunları yapmanız gerekir:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+ ::: moniker range="vs-2017"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+
+::: moniker-end
 
 - Visual C#, Visual Basic, C++, JavaScript veya X ++ gibi hatalarını ayıklayabileceğiniz kod
 
@@ -66,9 +77,9 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 ## <a name="MapStack"></a> Çağrı yığınını eşleme
 
-1.  Hata ayıklama başlatılamıyor. (Klavye: **F5**)
+1. Hata ayıklama başlatılamıyor. (Klavye: **F5**)
 
-2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
+2. Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
 
      ![Çağrı yığınını eşleme başlatmak için kod Haritası'nı seçin](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -79,16 +90,19 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
      Hata ayıklamaya devam et sırasında haritada otomatik olarak güncelleştirecektir. Bkz: [harita sonraki çağrı yığınıyla Güncelleştir](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Kodla ilgili notlar alın
+
  Kodda neler olduğunu izlemek için açıklamalar ekleyin. Bir açıklamaya yeni bir satır eklemek için basın **üst karakter + Return**.
 
  ![Kod haritasında çağrı yığını için açıklama ekleyin](../debugger/media/debuggermap_addcomment.png)
 
 ## <a name="UpdateMap"></a> Sonraki çağrı yığını ile eşlemeyi güncelleyin
+
  Uygulamanızı sonraki kesme noktasına kadar çalıştırın veya bir işleve adımlayın. Eşleme yeni bir çağrı yığını ekler.
 
  ![Kod Haritası sonraki çağrı yığınıyla güncelleştir](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Eşlemeye ilgili kodu ekleyin
+
  Artık bir harita - ne sonraki kendinizi? C# veya Visual Basic ile çalışıyorsanız, alanlar, özellikler ve kodda neler olduğunu izlemek için diğer yöntemler gibi öğeleri ekleyin.
 
  Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: Tuşuna basın ve harita yöntemi seçin **F12**)
@@ -113,6 +127,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
  ![Çağrı yığınını kod haritasında bir alanı kullanan yöntemleri](../debugger/media/debuggermap_foundallreferences.png)
 
 ## <a name="FindBugs"></a> Eşlemeyi kullanarak hataları bulun
+
  Kodunuzu görselleştirmeniz, hataları daha hızlı şekilde bulmanıza yardımcı olabilir. Örneğin, bir çizim programında bir hata araştırdığınızı varsayın. Bir çizgi çizip geri almayı denediğinizde, başka bir çizgi çizinceye kadar hiçbir şey olmaz.
 
  Kesme noktaları ayarlamak için `clear`, `undo`, ve `Repaint` yöntemleri, hata ayıklamayı başlatmak ve bunun gibi bir harita oluşturur:
@@ -149,11 +164,11 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
    Açık **Düzen** menüsünü harita araç çubuğunda:
 
-  -   Ekran düzenini değiştirin.
+  - Ekran düzenini değiştirin.
 
-  -   Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
+  - Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
 
-  -   Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
+  - Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
 
 - **Ben haritayı başkalarıyla paylaşabilir miyim?**
 
@@ -185,7 +200,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 - [Eşlemeyi kullanarak hataları bulun](#FindBugs)
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
 - [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)

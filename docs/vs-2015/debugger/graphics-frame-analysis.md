@@ -11,14 +11,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053539"
 ---
-# <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
+# <a name="graphics-frame-analysis"></a>Grafik Çerçeve Analizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
@@ -139,7 +139,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   
  Çerçeve analizi 10 yeniden deneme sayısını sınırlar. Platformunuza agresif güç yönetimi veya saat geçişi varsa, başarısız ve yeniden deneme sınırı aştığından bir hata rapor çerçeve analizi neden olabilir. Güç Yönetimi, platformun sıfırlayarak bu sorunu gidermek ve platform etkinleştirirse daha az agresiftir olmasını hızı azaltma saat mümkün olabilir.  
   
-##  <a name="HardwareSupport"></a> Donanım desteği  
+## <a name="HardwareSupport"></a> Donanım desteği  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Zaman damgaları ve kapatma sorguları  
  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir. Derinlik kapatma sorguları — piksel Occluded sayaç gerekli —, özellik düzeyi 9.2 veya üzeri destekleyen platformlarında desteklenir.  
@@ -182,7 +182,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 > [!NOTE]
 >  Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları özellik düzeylerini geçerlidir. Direct3D 11, Direct3D 11.1 ve Direct3D 11.2 API kullanmakta olduğunuz sürece, ne olursa olsun istediğiniz özellik düzeyi ve çerçeve analizi yalnızca çalışır kullanabilirsiniz.  
   
-##  <a name="Variants"></a> Çeşitleri  
+## <a name="Variants"></a> Çeşitleri  
  Çerçeve analizi bir kare, oynatma sırasında işlenir şekilde yaptığı her değişiklik olarak bilinen bir *değişken*. Çerçeve analizi inceler çeşitleri için uygulamanızın görsel kaliteyi ve işleme performansını iyileştirmek için yapabileceğiniz ortak, görece kolay değişiklikler karşılık gelen — örneğin, dokular boyutunu küçültme, doku sıkıştırma kullanmayı veya etkinleştirme Düzgünleştirme farklı türde. Çeşitleri normal işleme bağlamını ve uygulama parametreleri geçersiz. Bir özeti aşağıda verilmiştir:  
   
 |Değişken|Açıklama|  

@@ -9,28 +9,28 @@ caps.latest.revision: 7
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04eac41c65f00e27251a492ff503bb28a2cd9dac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4816783edabbd93fbb536c94f2638fcb4f8d6bb3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043061"
 ---
-# <a name="troubleshooting-code-analysis-issues"></a>Kod Çözümleme Sorunlarını Giderme
+# <a name="troubleshooting-code-analysis-issues"></a>Kod Analizi Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu aşağıdaki Visual Studio Kod Analizi sorunlarına yönelik sorun giderme bilgileri içerir.  
   
--   [Bir Visual Studio 2010 kural kümesi olan önceki Visual Studio sürümlerinde yansıtılan olmayan değişiklikler](#ChildRuleSetChangesInPreviousVersions)  
+- [Bir Visual Studio 2010 kural kümesi olan önceki Visual Studio sürümlerinde yansıtılan olmayan değişiklikler](#ChildRuleSetChangesInPreviousVersions)  
   
-##  <a name="ChildRuleSetChangesInPreviousVersions"></a> Bir Visual Studio 2010 kural kümesi olan önceki Visual Studio sürümlerinde yansıtılan olmayan değişiklikler  
+## <a name="ChildRuleSetChangesInPreviousVersions"></a> Bir Visual Studio 2010 kural kümesi olan önceki Visual Studio sürümlerinde yansıtılan olmayan değişiklikler  
  Bir kural kümesi oluşturduğunuzda [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] bir alt kural kümesi içeren, bir değişiklik alt kural kümesi için Kod Analizi yürütmeleri Visual Studio'nun önceki bir sürümünü kullanan bilgisayarlarda uygulanmayabilir. Bu sorunu çözmek için bir yeniden yazma alt kural kümesini içeren kural kümesi olan üst kural kümesinin zorlaması gerekir.  
   
-1.  Açık üst kural kümesinde [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
+1. Açık üst kural kümesinde [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].  
   
-2.  Ekleme veya bir kuralı kaldırma gibi bir değişiklik yapın ve sonra kural kümesi kaydedin.  
+2. Ekleme veya bir kuralı kaldırma gibi bir değişiklik yapın ve sonra kural kümesi kaydedin.  
   
-3.  Kural kümesi yeniden, değişikliğini tersine çevirebilir ve kural kümesi yeniden kaydedin.  
+3. Kural kümesi yeniden, değişikliğini tersine çevirebilir ve kural kümesi yeniden kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulama kalitesini analiz etme](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   

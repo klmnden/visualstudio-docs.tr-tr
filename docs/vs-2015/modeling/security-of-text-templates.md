@@ -11,21 +11,21 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0a5b008df683694a20cce360fbd5e779e408d8
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058662"
 ---
 # <a name="security-of-text-templates"></a>Metin Şablonlarının Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Metin şablonları aşağıdaki güvenlik sorunları vardır:  
   
--   Metin şablonları, rastgele kod eklemelerin savunmasızdır.  
+- Metin şablonları, rastgele kod eklemelerin savunmasızdır.  
   
--   Konağın bir yönerge işlemcisi bulmak için kullandığı mekanizması güvenli değilse, kötü amaçlı bir yönerge işlemcisi çalıştırabilir.  
+- Konağın bir yönerge işlemcisi bulmak için kullandığı mekanizması güvenli değilse, kötü amaçlı bir yönerge işlemcisi çalıştırabilir.  
   
 ## <a name="arbitrary-code"></a>Rastgele kod  
  Bir şablon yazdığınızda, içinde herhangi bir kodu koyabilirsiniz \<## > etiketleri. Bu, bir metin şablonu içinde yürütülmek üzere rastgele kod sağlar.  

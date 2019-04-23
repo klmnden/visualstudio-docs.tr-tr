@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2897a94dca8210f5ebf11ab43b884108cc7171dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8b611e1f501d2ef4f0677c8e9258e2950795197e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049990"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir toplama problemi oluşturma
 Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matematik soruları ekleyerek olun. Adlı bir yöntem de oluşturduğunuz `StartTheQuiz()` ve problemleri dolduran ve geri sayım Zamanlayıcısını başlatır. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorularını ekleyeceksiniz.
@@ -23,13 +23,13 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
 
 ## <a name="to-create-a-random-addition-problem"></a>Rasgele bir toplama problemi oluşturma
 
-1.  Form tasarımcısında formu (**Form1**).
+1. Form tasarımcısında formu (**Form1**).
 
-2.  Menü çubuğunda, **görünümü** > **kod**.
+2. Menü çubuğunda, **görünümü** > **kod**.
 
      *Form1.cs* veya *Form1.vb* biçimin ardındaki kodu görüntüleyebilirsiniz. böylece, kullanmakta olduğunuz programlama diline göre görünür.
 
-3.  Oluşturma bir <xref:System.Random> nesne ekleyerek bir `new` ekranın üst kısmında aşağıdaki gibi kod deyimi.
+3. Oluşturma bir <xref:System.Random> nesne ekleyerek bir `new` ekranın üst kısmında aşağıdaki gibi kod deyimi.
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
@@ -40,7 +40,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
 
      Yakında yanıtlarını sınavınız her problem için ürettiği rastgele sayıları depolamak için değişkenleri kullanmalısınız denetlemek için bir yöntem oluşturacaksınız. Bkz: [değişkenleri](/dotnet/visual-basic/programming-guide/language-features/variables/index) veya [türleri](/dotnet/csharp/programming-guide/types/index). Değişkenleri düzgün kullanmak için bunları, yani adlarını ve veri türlerini listeleme bildirmeniz gerekir.
 
-4.  Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.
+4. Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.
 
     > [!NOTE]
     >  Bir tamsayı değişkeni C# veya Visual Basic'te bir tamsayı tamsayı olarak bilinir. Bu türde bir değişken, -2147483648 ile 2147483647 arasında bir pozitif veya negatif sayı depolar ve ondalık değil yalnızca tam sayılara depolayabilirsiniz.
@@ -50,7 +50,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
      [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
      [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
 
-5.  Adlı bir yöntem ekleyin `StartTheQuiz()` rastgele nesnenin kullanan ve <xref:System.Random.Next> etiketleri rastgele sayıları göstermek için yöntemi. `StartTheQuiz()` sonunda tüm problemleri doldurun ve süreölçeri başlatacak, bu nedenle bir açıklama ekleyin. İşlev, aşağıdaki gibi görünmelidir.
+5. Adlı bir yöntem ekleyin `StartTheQuiz()` rastgele nesnenin kullanan ve <xref:System.Random.Next> etiketleri rastgele sayıları göstermek için yöntemi. `StartTheQuiz()` sonunda tüm problemleri doldurun ve süreölçeri başlatacak, bu nedenle bir açıklama ekleyin. İşlev, aşağıdaki gibi görünmelidir.
 
      [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
      [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
@@ -71,18 +71,18 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
 
      Deyimler **metin** özelliklerini **plusLeftLabel** ve **plusRightLabel** böylece bunlar iki rastgele sayı görüntüler. Bir tamsayının kullanmalısınız `ToString()` sayıları metne dönüştürmek için yöntemi. (Programlamada dize metin anlamına gelir. Etiket denetimleri, sayılar değil yalnızca metin görüntüler.
 
-6.  Tasarım penceresinde, çift tıklayın ya da **Başlat** düğmesini veya bunu seçin ve ardından **Enter** anahtarı.
+6. Tasarım penceresinde, çift tıklayın ya da **Başlat** düğmesini veya bunu seçin ve ardından **Enter** anahtarı.
 
      Sınavı alan bu düğmeyi seçtiğinde sınavın başlaması gerekir ve bu davranışı gerçekleştirmek için bir tıklama olayı işleyicisi yalnızca ekledik.
 
-7.  Aşağıdaki iki deyimi ekleyin.
+7. Aşağıdaki iki deyimi ekleyin.
 
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
      İlk deyim yeni çağıran `StartTheQuiz()` yöntemi. İkinci deyim ayarlar **etkin** özelliği **startButton** denetimini **False** böylece sınavı alanın sınav sırasında düğmeyi seçemezsiniz.
 
-8.  Kodunuzu kaydedin, çalıştırın ve ardından **Başlat** düğmesi.
+8. Kodunuzu kaydedin, çalıştırın ve ardından **Başlat** düğmesi.
 
      Rasgele bir toplama problemi, aşağıdaki çizimde gösterildiği gibi görünür.
 
@@ -92,6 +92,6 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).
+- Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).
 
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

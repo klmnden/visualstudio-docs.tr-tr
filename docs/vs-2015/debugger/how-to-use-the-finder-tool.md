@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053773"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Nasıl yapılır: Bulucu aracını kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Pencere Bul iletişim kutusunda Bulucu Aracı
   
 ### <a name="to-display-window-properties-or-messages"></a>Pencere özellikleri ve iletileri görüntülemek için  
   
-1.  Spy ++ hem hedef penceresi görünür, böylece windows düzenleyin.  
+1. Spy ++ hem hedef penceresi görünür, böylece windows düzenleyin.  
   
-2.  Gelen **Spy** menüsünde seçin **Bul penceresi**.  
+2. Gelen **Spy** menüsünde seçin **Bul penceresi**.  
   
      [Bul penceresi iletişim kutusu](../debugger/find-window-dialog-box.md) açılır.  
   
-3.  Sürükleme **Bulucu Aracı** hedef aralığında.  
+3. Sürükleme **Bulucu Aracı** hedef aralığında.  
   
      Aracı sürüklerken **Bul penceresi** iletişim kutusunda seçili penceresinde ayrıntılarını görüntüler.  
   
@@ -47,9 +47,9 @@ Pencere Bul iletişim kutusunda Bulucu Aracı
     > [!TIP]
     >  Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek yalnızca bırakarak ana Spy ++ penceresini gizler **Bul penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.  
   
-4.  Altında **Göster**, şunlardan birini seçin **özellikleri** veya **iletileri**.  
+4. Altında **Göster**, şunlardan birini seçin **özellikleri** veya **iletileri**.  
   
-5.  Tuşuna **Tamam**.  
+5. Tuşuna **Tamam**.  
   
      Seçtiyseniz **özellikleri**, [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md) açılır. Seçtiyseniz **iletileri**, [iletiler görünümünü](../debugger/messages-view.md) penceresi açılır.  
   

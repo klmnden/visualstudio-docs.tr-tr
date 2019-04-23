@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048547"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  Dil hizmeti eşleşen küme ayraçlarını desteklediği varsayılır.  
   
-1.  Kullanıcı, bir kapatma küme ayracından (}) yazar.  
+1. Kullanıcı, bir kapatma küme ayracından (}) yazar.  
   
-2.  İmleç bir Gelişmiş ve küme ayracı kaynak dosyadaki imlecin eklenir.  
+2. İmleç bir Gelişmiş ve küme ayracı kaynak dosyadaki imlecin eklenir.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yönteminde <xref:Microsoft.VisualStudio.Package.Source> sınıfı ile yazılan kapanış ayracı çağrılır.  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yönteminde <xref:Microsoft.VisualStudio.Package.Source> sınıfı ile yazılan kapanış ayracı çağrılır.  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> yönteminde <xref:Microsoft.VisualStudio.Package.Source> geçerli imleç konumu hemen önce bir konumda belirteci almak için sınıf. Bu belirteç için belirlenmiş bir kapanış ayracı karşılık gelir).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> yönteminde <xref:Microsoft.VisualStudio.Package.Source> geçerli imleç konumu hemen önce bir konumda belirteci almak için sınıf. Bu belirteç için belirlenmiş bir kapanış ayracı karşılık gelir).  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodunda <xref:Microsoft.VisualStudio.Package.Colorizer> geçerli satırdaki tüm belirteçleri elde etmek için nesne.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodunda <xref:Microsoft.VisualStudio.Package.Colorizer> geçerli satırdaki tüm belirteçleri elde etmek için nesne.  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodunda <xref:Microsoft.VisualStudio.Package.IScanner> nesneyi geçerli satırın metinle.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Yöntem çağrılarını <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodunda <xref:Microsoft.VisualStudio.Package.IScanner> nesneyi geçerli satırın metinle.  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Yöntemini tekrar tekrar çağırır <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodunda <xref:Microsoft.VisualStudio.Package.IScanner> geçerli satırından tüm belirteçlerin toplamak için nesne.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Yöntemini tekrar tekrar çağırır <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodunda <xref:Microsoft.VisualStudio.Package.IScanner> geçerli satırından tüm belirteçlerin toplamak için nesne.  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Yöntemi çağrıları özel bir yöntem <xref:Microsoft.VisualStudio.Package.Source> istenilen içeren belirteci almak için sınıf ve belirteçler listesinde geçişlerinde öğesinden alınan <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> yöntemi.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Yöntemi çağrıları özel bir yöntem <xref:Microsoft.VisualStudio.Package.Source> istenilen içeren belirteci almak için sınıf ve belirteçler listesinde geçişlerinde öğesinden alınan <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> yöntemi.  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yöntemi için bir belirteç tetikleyici bayrak görünür <xref:Microsoft.VisualStudio.Package.TokenTriggers> öğesinden döndürülen belirtecine <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> yöntemi; diğer bir deyişle, kapatma küme ayracından temsil eden bir belirteci).  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Yöntemi için bir belirteç tetikleyici bayrak görünür <xref:Microsoft.VisualStudio.Package.TokenTriggers> öğesinden döndürülen belirtecine <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> yöntemi; diğer bir deyişle, kapatma küme ayracından temsil eden bir belirteci).  
   
-6.  Tetikleyici, bayrak varsa <xref:Microsoft.VisualStudio.Package.TokenTriggers> bulunursa <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> yönteminde <xref:Microsoft.VisualStudio.Package.Source> sınıfı çağrılır.  
+6. Tetikleyici, bayrak varsa <xref:Microsoft.VisualStudio.Package.TokenTriggers> bulunursa <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> yönteminde <xref:Microsoft.VisualStudio.Package.Source> sınıfı çağrılır.  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Yöntemi ayrıştırma neden değeri ile bir ayrıştırma işlemi başlatır <xref:Microsoft.VisualStudio.Package.ParseReason>. Bu işlem sonunda çağırır <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodunda <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı. Zaman uyumsuz ayrıştırma etkinse, bu çağrı <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir arka plan iş parçacığında oluşur.  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Yöntemi ayrıştırma neden değeri ile bir ayrıştırma işlemi başlatır <xref:Microsoft.VisualStudio.Package.ParseReason>. Bu işlem sonunda çağırır <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodunda <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı. Zaman uyumsuz ayrıştırma etkinse, bu çağrı <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir arka plan iş parçacığında oluşur.  
   
-8.  Ayrıştırma işlemi tamamlandığında, adlı bir iç tamamlama işleyicisi (geri çağırma yöntemi olarak da bilinir) `HandleMatchBracesResponse` çağrılma yeri <xref:Microsoft.VisualStudio.Package.Source> sınıfı. Bu çağrı tarafından otomatik olarak yapılır <xref:Microsoft.VisualStudio.Package.LanguageService> temel sınıf ayrıştırıcı tarafından değil.  
+8. Ayrıştırma işlemi tamamlandığında, adlı bir iç tamamlama işleyicisi (geri çağırma yöntemi olarak da bilinir) `HandleMatchBracesResponse` çağrılma yeri <xref:Microsoft.VisualStudio.Package.Source> sınıfı. Bu çağrı tarafından otomatik olarak yapılır <xref:Microsoft.VisualStudio.Package.LanguageService> temel sınıf ayrıştırıcı tarafından değil.  
   
 9. `HandleMatchBracesResponse` Yöntemi yayılma listesini alır <xref:Microsoft.VisualStudio.Package.AuthoringSink> depolanan nesne <xref:Microsoft.VisualStudio.Package.ParseRequest> nesne. (Bir aralığı bir <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> kaynak dosyada bir dizi satır ve karakter belirten yapısı.) Yayılma oluşan bu liste, genellikle her biri açılış ve kapanış küme ayraçları için iki yayılma içerir.  
   

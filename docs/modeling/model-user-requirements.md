@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058531"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 
@@ -56,7 +56,7 @@ Kullanıcı gereksinimlerini birkaç farklı görünümler oluşturabilirsiniz. 
 
 Diyagram türlerin çoğu başka bir amaçla kullanılabilir dikkat edin. Diyagram türleri genel bakış için bkz. [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> İş kurallarını gösterme
+## <a name="BusinessRules"></a> İş kurallarını gösterme
 
 Bir iş kuralı, belirli kullanım örneği ile ilişkili değil ve sistem genelinde gözlenmelidir bir gereksinimdir.
 
@@ -76,19 +76,19 @@ Aşağıdaki konular, daha fazla bilgi sağlar:
 |-|-|
 |İş kurallarının aynılarını kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan
+## <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan
 
 Hizmet gereksinimi kalitesi birkaç işlem kategorisi vardır. Bunlar aşağıdakileri içerir:
 
--   Performans
+- Performans
 
--   Güvenlik
+- Güvenlik
 
--   Kullanılabilirlik
+- Kullanılabilirlik
 
--   Güvenilirlik
+- Güvenilirlik
 
--   Sağlamlık
+- Sağlamlık
 
 Bu gereksinimlerin bazıları belirli kullanım durumları açıklamasında içerebilir. Diğer gereksinimler kullanım örneklerine özgü olmayan ve ayrı bir belgede en etkili bir şekilde yazılır. Mümkün olduğunda, gereksinimler modeli tarafından tanımlanan sözlük izliyor kullanışlıdır. Aşağıdaki örnekte, özel olarak gereksinimini kullanılan ana sözcüklerin aktörleri kullanım örnekleri ve önceki çizimlerde sınıfları başlıklarını olduğuna dikkat edin:
 

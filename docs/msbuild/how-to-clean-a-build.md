@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045868"
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl yapılır: Derlemeyi temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
 
 #### <a name="to-create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturmak için
 
-1.  Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma *BuiltApp* proje ve kaynak dosyaları içeren dizine:
+1. Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma *BuiltApp* proje ve kaynak dosyaları içeren dizine:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:
+2. Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Bir dizin ve dizinde bulunan tüm dosyaları kaldırmak için
 
--   Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:
+- Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:
 
      `<RemoveDir Directories="$(builtdir)" />`
 

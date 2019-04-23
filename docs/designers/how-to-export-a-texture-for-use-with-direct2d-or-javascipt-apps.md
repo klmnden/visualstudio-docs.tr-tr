@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065252"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript uygulamaları kullanmak için dokuyu dışarı aktarma
 
@@ -21,31 +21,31 @@ Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile 
 
 Bu belgede şu faaliyetler gösterilmiştir:
 
--   Görüntü içeriği ardışık düzeni tarafından işlenecek kaynak görüntüyü yapılandırma.
+- Görüntü içeriği ardışık düzeni tarafından işlenecek kaynak görüntüyü yapılandırma.
 
--   Direct2D veya JavaScript uygulamasında kullanabileceğiniz bir doku oluşturmak için görüntü içeriği ardışık yapılandırma.
+- Direct2D veya JavaScript uygulamasında kullanabileceğiniz bir doku oluşturmak için görüntü içeriği ardışık yapılandırma.
 
-    -   Bir blok sıkıştırılmış oluşturmak *.dds* dosya.
+    - Bir blok sıkıştırılmış oluşturmak *.dds* dosya.
 
-    -   Ön çarpımlı alfa oluşturmak.
+    - Ön çarpımlı alfa oluşturmak.
 
-    -   Mipmap oluşturmayı devre dışı bırakın.
+    - Mipmap oluşturmayı devre dışı bırakın.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D içindeki işleme kuralları
 
 Direct2D bağlamında kullanılan dokular bu Direct2D iç işleme kurallarına uymalıdır:
 
--   Direct2D ön çarpımlı alfa kullanarak saydamlığı ve yarı saydamlığı uygular. Direct2D ile kullanılan dokular, doku geçirgenlik veya translucency kullanmıyor olsa bile, önceden çoğaltılmış alfa içermesi gerekir. Önceden çoğaltılmış alfa hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ön Çarpımlı alfa kullanan doku dışa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D ön çarpımlı alfa kullanarak saydamlığı ve yarı saydamlığı uygular. Direct2D ile kullanılan dokular, doku geçirgenlik veya translucency kullanmıyor olsa bile, önceden çoğaltılmış alfa içermesi gerekir. Önceden çoğaltılmış alfa hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ön Çarpımlı alfa kullanan doku dışa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
--   Doku sağlanması gereken *.dds* bu blok sıkıştırma biçimlerinden birini kullanarak biçimi:
+- Doku sağlanması gereken *.dds* bu blok sıkıştırma biçimlerinden birini kullanarak biçimi:
 
-    -   BC1_UNORM sıkıştırma
+    - BC1_UNORM sıkıştırma
 
-    -   BC2_UNORM sıkıştırma
+    - BC2_UNORM sıkıştırma
 
-    -   BC3_UNORM sıkıştırma
+    - BC3_UNORM sıkıştırma
 
--   Mipmaplar desteklenmiyor.
+- Mipmaplar desteklenmiyor.
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Direct2D işleme kuralları ile uyumlu olan bir doku oluşturmak için
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060845"
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML kod parçacıklarını oluşturma
 
@@ -23,23 +23,23 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 
  Yeni bir XML kodu oluşturmak için kod parçacığı yeni bir XML dosyası oluşturun ve kullanın **parçacık Ekle** özelliği.
 
-1.  Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **dosya**.
+1. Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **dosya**.
 
-2.  Tıklayın **XML dosyası** ve ardından **açık**.
+2. Tıklayın **XML dosyası** ve ardından **açık**.
 
-3.  Düzenleyici bölmesine sağ tıklayıp **parçacık Ekle**.
+3. Düzenleyici bölmesine sağ tıklayıp **parçacık Ekle**.
 
-4.  Seçin **kod parçacığı** tuşuna basın ve liste **Enter**.
+4. Seçin **kod parçacığı** tuşuna basın ve liste **Enter**.
 
-5.  Yeni kod parçacığını değişiklikleri yapın.
+5. Yeni kod parçacığını değişiklikleri yapın.
 
-6.  Gelen **dosya** menüsünü seçin **Kaydet XMLFile.xml**.
+6. Gelen **dosya** menüsünü seçin **Kaydet XMLFile.xml**.
 
      **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir.
 
-7.  Yeni kod parçacığı için bir ad girin ve seçin **kod parçacığı dosyaları** gelen **farklı kaydetme türü** açılır pencere.
+7. Yeni kod parçacığı için bir ad girin ve seçin **kod parçacığı dosyaları** gelen **farklı kaydetme türü** açılır pencere.
 
-8.  Kullanım **kaydetmek** açılır listede dosya konumunu değiştirmek için *My Documents\Visual Studio 2005\Code Snippets\XML\My XML kod parçacıklarını* klasörünü ve ardından ENTER tuşuna **Kaydet**.
+8. Kullanım **kaydetmek** açılır listede dosya konumunu değiştirmek için *My Documents\Visual Studio 2005\Code Snippets\XML\My XML kod parçacıklarını* klasörünü ve ardından ENTER tuşuna **Kaydet**.
 
 ## <a name="snippet-description"></a>Kod parçacığı açıklaması
 

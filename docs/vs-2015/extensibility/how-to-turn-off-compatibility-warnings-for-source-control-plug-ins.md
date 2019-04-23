@@ -11,12 +11,12 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9efe961774ef1939cfc95c2efe9146a59e46bc17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060585"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Nasıl yapılır: Kaynak Denetimi Eklentileri için Uyumluluk Uyarılarını Kapatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bir kullanıcı birden fazla uyumluluk uyarılarını görebilirsiniz, kaynak de
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Uyarıyı devre dışı bırakmak için: "... En iyi kaynak denetimi tümleştirmesi Visual Studio ile sağlamak için"  
   
--   (Gerekirse değeri ekleyerek) aşağıdaki kayıt defteri girdisini ayarlayın:  
+- (Gerekirse değeri ekleyerek) aşağıdaki kayıt defteri girdisini ayarlayın:  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD: 00000001  
   
@@ -33,7 +33,7 @@ Bir kullanıcı birden fazla uyumluluk uyarılarını görebilirsiniz, kaynak de
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Uyarıyı devre dışı bırakmak için: "Kurulan kaynak denetim sağlayıcısı tüm özellikleri... desteklemiyor"  
   
--   (Değer gerekirse ekleme), aşağıdaki iki kayıt defteri değerlerini ayarlayın:  
+- (Değer gerekirse ekleme), aşağıdaki iki kayıt defteri değerlerini ayarlayın:  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD: 00000000  
   

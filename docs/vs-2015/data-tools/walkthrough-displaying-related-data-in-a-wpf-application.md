@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065395"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
 #### <a name="to-create-a-new-wpf-project"></a>Yeni bir WPF projesi oluşturmak için  
   
-1.  Visual Studio’yu çalıştırın.  
+1. Visual Studio’yu çalıştırın.  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-3.  Genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows**.  
+3. Genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows**.  
   
-4.  Emin olun **.NET Framework 4** iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. <xref:System.Windows.Controls.DataGrid> Bu izlenecek yolda kullandığınız denetim, yalnızca .NET Framework 4'te kullanılabilir.  
+4. Emin olun **.NET Framework 4** iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. <xref:System.Windows.Controls.DataGrid> Bu izlenecek yolda kullandığınız denetim, yalnızca .NET Framework 4'te kullanılabilir.  
   
-5.  Seçin **WPF uygulaması** proje şablonu.  
+5. Seçin **WPF uygulaması** proje şablonu.  
   
-6.  İçinde **adı** kutusuna `AdventureWorksOrdersViewer`.  
+6. İçinde **adı** kutusuna `AdventureWorksOrdersViewer`.  
   
-7.  **Tamam**'ı tıklatın.  
+7. **Tamam**'ı tıklatın.  
   
      Visual Studio oluşturur `AdventureWorksOrdersViewer` proje.  
   
@@ -102,9 +102,9 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
 6. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**ve ardından aşağıdaki tablolar'ı seçin:  
   
-   -   **Satış siparişi ayrıntısını**  
+   - **Satış siparişi ayrıntısını**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. **Son**'a tıklayın.  
   
@@ -192,15 +192,15 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Tuşuna **F5**.  
+1. Tuşuna **F5**.  
   
      Uygulamayı derler ve çalıştırır. Aşağıdakileri doğrulayın:  
   
-    -   **Satış siparişi kodu** birleşik giriş kutusu görüntüler **71774**. Bu varlıktaki ilk sırada kimliğidir.  
+    - **Satış siparişi kodu** birleşik giriş kutusu görüntüler **71774**. Bu varlıktaki ilk sırada kimliğidir.  
   
-    -   Her siparişi için seçtiğiniz **satış siparişi kodu** Kombo kutusu ayrıntılı sipariş bilgilerini görüntülendiği <xref:System.Windows.Controls.DataGrid>.  
+    - Her siparişi için seçtiğiniz **satış siparişi kodu** Kombo kutusu ayrıntılı sipariş bilgilerini görüntülendiği <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Uygulamayı kapatın.  
+2. Uygulamayı kapatın.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Bu kılavuzu tamamladıktan sonra nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) ve [bağlama WPF denetimlerini bir veri kümesine](../data-tools/bind-wpf-controls-to-a-dataset.md).  

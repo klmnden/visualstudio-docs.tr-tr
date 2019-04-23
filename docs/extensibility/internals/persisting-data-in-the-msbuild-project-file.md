@@ -10,31 +10,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b6e2b7f5062bd1350012c5991348903efc6d746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060937"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild Proje Dosyasında Verileri Kalıcı Hale Getirme
 Daha sonra kullanmak için proje dosyası içine alt özgü verileri kalıcı hale getirmek bir proje alt gerekebilir. Proje alt türü, aşağıdaki gereksinimleri karşılaması için proje dosya kalıcılığına kullanır:
 
-1.  Proje oluşturmanın bir parçası olarak kullanılan verileri kalıcı hale getirin. (Microsoft Build Engine hakkında daha fazla bilgi için bkz. [MSBuild](../../msbuild/msbuild.md).) Derlemeyle ilgili bilgileri şunlardan birini yapabilirsiniz:
+1. Proje oluşturmanın bir parçası olarak kullanılan verileri kalıcı hale getirin. (Microsoft Build Engine hakkında daha fazla bilgi için bkz. [MSBuild](../../msbuild/msbuild.md).) Derlemeyle ilgili bilgileri şunlardan birini yapabilirsiniz:
 
-    1.  Bağımsız yapılandırma verileri. Diğer bir deyişle, MSBuild öğeleri boş veya eksik koşullarla depolanan veriler.
+    1. Bağımsız yapılandırma verileri. Diğer bir deyişle, MSBuild öğeleri boş veya eksik koşullarla depolanan veriler.
 
-    2.  Bağımlı yapılandırma verileri. Diğer bir deyişle, belirli bir proje yapılandırması için koşuluna MSBuild öğeleri depolanan veriler. Örneğin:
+    2. Bağımlı yapılandırma verileri. Diğer bir deyişle, belirli bir proje yapılandırması için koşuluna MSBuild öğeleri depolanan veriler. Örneğin:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         ```
 
-2.  Derlemek ilgili olmayan verileri kalıcı hale getirin. Bu veriler, bir XML şemasına göre doğrulanmadı serbest biçimli XML olarak ifade edilebilir.
+2. Derlemek ilgili olmayan verileri kalıcı hale getirin. Bu veriler, bir XML şemasına göre doğrulanmadı serbest biçimli XML olarak ifade edilebilir.
 
-    1.  Bağımsız yapılandırma verileri.
+    1. Bağımsız yapılandırma verileri.
 
-    2.  Bağımlı yapılandırma verileri.
+    2. Bağımlı yapılandırma verileri.
 
 ## <a name="persisting-build-related-information"></a>Derlemeyle ilgili bilgileri kalıcı hale getirme
  Bir proje oluşturmak için faydalı veri kalıcılığı MSBuild işlenir. MSBuild sistemi bir ana tablo derlemeyle ilgili bilgileri tutar. Proje alt türleri almak ve özellik değerlerini ayarlamak için bu verilere erişmek için sorumlu olursunuz. Proje alt türleri kalıcı için ek özellikler ekleyerek ve kalıcı olmayan şekilde özellikleri kaldırarak ayrıca derlemeyle ilgili veri tablosu genişletebilirsiniz.
@@ -45,9 +45,9 @@ Daha sonra kullanmak için proje dosyası içine alt özgü verileri kalıcı ha
 
 #### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>Bir MSBuild proje dosyasından bir özelliği kaldırmak için
 
-1.  Çağrı `QueryInterface` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> , proje alt türü.
+1. Çağrı `QueryInterface` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> , proje alt türü.
 
-2.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> ile `pszPropName` kaldırmak istediğiniz özelliğini ayarlayın.
+2. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> ile `pszPropName` kaldırmak istediğiniz özelliğini ayarlayın.
 
 ### <a name="persisting-non-build-related-information"></a>Derleme olmayan ilgili bilgileri kalıcı hale getirme
  Proje dosyaları oluşturmak için önemli değildir veri kalıcılığı aracılığıyla işlenir <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.
@@ -56,15 +56,15 @@ Daha sonra kullanmak için proje dosyası içine alt özgü verileri kalıcı ha
 
  Aşağıdaki noktaları kavramlarla ilgili derleme dışı ilgili bilgilerin Kalıcılık özetler.
 
--   Yükleme ve yapılandırma bağımsız veri kaydetmek için ana proje alt türü (diğer bir deyişle, en dıştaki proje alt) toplayıcısı nesne üzerinde temel projenin çağırır ve yüklemek veya bağımlı yapılandırmasını kaydetmek için proje alt proje yapılandırma nesneler üzerinde çağrılır veriler.
+- Yükleme ve yapılandırma bağımsız veri kaydetmek için ana proje alt türü (diğer bir deyişle, en dıştaki proje alt) toplayıcısı nesne üzerinde temel projenin çağırır ve yüklemek veya bağımlı yapılandırmasını kaydetmek için proje alt proje yapılandırma nesneler üzerinde çağrılır veriler.
 
--   Temel projenin yöntemlerini çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> birden çok kez her proje alt toplama düzeyi için ve her düzeyi bir GUID geçirir.
+- Temel projenin yöntemlerini çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> birden çok kez her proje alt toplama düzeyi için ve her düzeyi bir GUID geçirir.
 
--   Temel projenin geçer veya belirli proje alt türü için ayrılmış ve kalıcı hale getirme durumu toplama düzeyleri arasındaki bir yol olarak bu mekanizma kullanan bir XML parçası alır.
+- Temel projenin geçer veya belirli proje alt türü için ayrılmış ve kalıcı hale getirme durumu toplama düzeyleri arasındaki bir yol olarak bu mekanizma kullanan bir XML parçası alır.
 
--   Temel projenin en dıştaki proje alt'ın çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>GUID geçirme uygulaması. GUID için en dıştaki proje alt aitse, çağrı işler; Aksi takdirde GUID karşılık gelen proje alt bulunana kadar çağrısı bir iç proje alt türü ve benzeri atar.
+- Temel projenin en dıştaki proje alt'ın çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>GUID geçirme uygulaması. GUID için en dıştaki proje alt aitse, çağrı işler; Aksi takdirde GUID karşılık gelen proje alt bulunana kadar çağrısı bir iç proje alt türü ve benzeri atar.
 
--   Önce veya sonra çağrısı bir iç proje alt temsilcilerin bir proje alt XML parçası de değiştirebilirsiniz. Aşağıdaki örnek, burada bir proje alt türü için belirli özellikleri içeren dosyanın adını geçirilir, proje alt türü için bir proje dosyası kitabından gösterir.
+- Önce veya sonra çağrısı bir iç proje alt temsilcilerin bir proje alt XML parçası de değiştirebilirsiniz. Aşağıdaki örnek, burada bir proje alt türü için belirli özellikleri içeren dosyanın adını geçirilir, proje alt türü için bir proje dosyası kitabından gösterir.
 
     ```
     <ProjectExtensions>

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055827"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -79,17 +79,17 @@ Bağımlılık doğrulama, gerçek zamanlı olarak gerçekleşir ve hataları g�
 
 Katmanları Web sitelerine, Office belgeleri, düz metin dosyaları ve birden çok uygulama arasında paylaşılan projelerdeki dosyaları bağlayabilirsiniz, ancak doğrulama işlemi bunları içermeyecektir. Doğrulama hataları, aralarında hiçbir bağımlılığın görünmediği ayrı katmanlara bağlanmış projelere veya derlemelere olan başvurular için görünmez. Kod bu başvuruları kullanmazsa böyle başvurular bağımlılık olarak düşünülmez.
 
-1.  Bağımlılık diyagram üzerinde bir veya daha fazla katmanları seçin, seçiminize sağ tıklayın ve ardından **bağlantıları görüntüle**.
+1. Bağımlılık diyagram üzerinde bir veya daha fazla katmanları seçin, seçiminize sağ tıklayın ve ardından **bağlantıları görüntüle**.
 
-2.  İçinde **Katman Gezgini**, bakmak **doğrulamayı destekler** sütun. Değer false ise, öğe doğrulamayı desteklemez.
+2. İçinde **Katman Gezgini**, bakmak **doğrulamayı destekler** sütun. Değer false ise, öğe doğrulamayı desteklemez.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Diğer .NET derlemelerini ve projelerini doğrulama için dahil etme
 
 Öğeleri bağımlılık diyagramına sürüklediğinizde, karşılık gelen .NET derlemeleri veya projelerine başvurular otomatik olarak eklenir **katman başvuruları** modelleme projesindeki klasör. Bu klasör, doğrulama sırasında analiz edilen derlemeler ve projeler için başvurular içerir. Diğer .NET derlemelerini ve projelerini doğrulama için bağımlılık diyagramına sürükleyerek olmadan el ile ekleyebilirsiniz.
 
-1.  İçinde **Çözüm Gezgini**, modelleme projesine sağ tıklayın veya **katman başvuruları** klasörünü ve ardından **Başvuru Ekle**.
+1. İçinde **Çözüm Gezgini**, modelleme projesine sağ tıklayın veya **katman başvuruları** klasörünü ve ardından **Başvuru Ekle**.
 
-2.  İçinde **Başvuru Ekle** iletişim kutusunda, derlemeleri veya projeleri seçin ve ardından **Tamam**.
+2. İçinde **Başvuru Ekle** iletişim kutusunda, derlemeleri veya projeleri seçin ve ardından **Tamam**.
 
 ## <a name="validate-code-manually"></a>Kodu el ile doğrulama
 
@@ -97,19 +97,19 @@ Katmanları Web sitelerine, Office belgeleri, düz metin dosyaları ve birden ç
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Açık bir bağımlılık diyagramından kodu doğrulama
 
-1.  Diyagram yüzeyine sağ tıklayın ve ardından **Mimariyi Doğrula**.
+1. Diyagram yüzeyine sağ tıklayın ve ardından **Mimariyi Doğrula**.
 
     > [!NOTE]
     > Varsayılan olarak, **derleme eylemi** bağımlılık diyagramı (.layerdiagram) dosyasındaki özelliği **doğrulama** böylece doğrulama işleminde diyagramın dahildir.
 
      **Hata listesi** penceresi oluşan hataları bildirir. Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama sorunlarını giderme](#troubleshoot-layer-validation-issues).
 
-2.  Her hatanın kaynağını görüntülemek için hataya çift **hata listesi** penceresi.
+2. Her hatanın kaynağını görüntülemek için hataya çift **hata listesi** penceresi.
 
     > [!NOTE]
     > Visual Studio, hatanın kaynağı yerine bir kod Haritası gösterebilir. Bu kod, bağımlılık diyagram tarafından belirtilmemiş bir derleme üzerinde bağımlılık vardır veya kodu, bağımlılık diyagramı tarafından belirlenen bağımlılığı eksikse ortaya çıkar. Kod haritası veya bağımlılık var olup olmadığını belirlemek için kodu gözden geçirin. Kod haritaları hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Hataları yönetmek için bkz: [katman doğrulama hatalarını gidermek](#resolve-layer-validation-errors).
+3. Hataları yönetmek için bkz: [katman doğrulama hatalarını gidermek](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Komut isteminde kodu doğrulama
 
@@ -183,15 +183,15 @@ Modelleme projesi (.modelproj) dosyası açmak için metin düzenleyicisi kullan
 
 \- veya -
 
-1.  İçinde **Çözüm Gezgini**bağımlılık diyagramı veya diyagramları içeren modelleme projesine sağ tıklayın ve ardından **özellikleri**.
+1. İçinde **Çözüm Gezgini**bağımlılık diyagramı veya diyagramları içeren modelleme projesine sağ tıklayın ve ardından **özellikleri**.
 
-2.  İçinde **özellikleri** penceresinde modelleme projesinin ayarlayın **Mimariyi Doğrula** özelliğini **True**.
+2. İçinde **özellikleri** penceresinde modelleme projesinin ayarlayın **Mimariyi Doğrula** özelliğini **True**.
 
     Bu, doğrulama işlemi içinde modelleme projesini içerir.
 
-3.  İçinde **Çözüm Gezgini**, doğrulama için kullanmak istediğiniz bağımlılık diyagramı (.layerdiagram) dosyasına tıklayın.
+3. İçinde **Çözüm Gezgini**, doğrulama için kullanmak istediğiniz bağımlılık diyagramı (.layerdiagram) dosyasına tıklayın.
 
-4.  İçinde **özellikleri** penceresinde emin olun diyagramın **derleme eylemi** özelliği **doğrulama**.
+4. İçinde **özellikleri** penceresinde emin olun diyagramın **derleme eylemi** özelliği **doğrulama**.
 
     Bu bağımlılık diyagramı doğrulama işlemindeki içerir.
 

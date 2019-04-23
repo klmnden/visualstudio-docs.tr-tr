@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 6: Silme | Microsoft Docs'
+title: 'Test Alanı 6: Silme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050766"
 ---
-# <a name="test-area-6-delete"></a>Test alanı 6: Sil
+# <a name="test-area-6-delete"></a>Test Alanı 6: Sil
 Bu kaynak denetimi eklentisi test alanı silme eylemleri kapsar.
 
  Kaynak denetimi yanıt eylemleri silmek **Çözüm Gezgini**.
@@ -36,13 +36,13 @@ Bu kaynak denetimi eklentisi test alanı silme eylemleri kapsar.
 ## <a name="expected-behavior"></a>Beklenen davranış
  Test çalışmalarının silme test alanındaki beklenen davranıştır:
 
--   Silinmiş Öğe içinde görünür artık **Çözüm Gezgini**.
+- Silinmiş Öğe içinde görünür artık **Çözüm Gezgini**.
 
--   Silinen bir proje veya öğe üst (büyük olasılıkla bir istemiyle.) gerektiği şekilde kullanıma
+- Silinen bir proje veya öğe üst (büyük olasılıkla bir istemiyle.) gerektiği şekilde kullanıma
 
--   Çıkış kullanıma alınmış silin veya öğe eklendikten sonra bunu görünmez **Bekleyen İadeler** penceresi.
+- Çıkış kullanıma alınmış silin veya öğe eklendikten sonra bunu görünmez **Bekleyen İadeler** penceresi.
 
--   Öğe hala silindikten sonra bile kaynak denetim deposunda mevcut ve el ile temizlenmesi gerekir.
+- Öğe hala silindikten sonra bile kaynak denetim deposunda mevcut ve el ile temizlenmesi gerekir.
 
 |Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
 |------------|----------------|--------------------------------|
