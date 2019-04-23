@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068112"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Nasıl yapılır: Satır düzeyi örnekleme verileri toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ Satır düzeyi örnekleme nerede yüksek dışlamalı örnekleri olan bir işlev
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Yönetilen kod için satır düzeyi örnekleme devre dışı bırakma  
  Varsayılan olarak, satır düzeyi örnekleme etkinleştirilir. Aşağıdakilerden birini yaparak yönetilen kod için satır düzeyinde veri toplamayı kapatabilirsiniz:  
   
--   Profil oluşturmadan önce yazın **VSPerfCLREnv /samplelineoff**. Bu işlem, uygulamaları ve hizmetleri hem de etkiler.  
+- Profil oluşturmadan önce yazın **VSPerfCLREnv /samplelineoff**. Bu işlem, uygulamaları ve hizmetleri hem de etkiler.  
   
      — veya —  
   
--   Bir uygulama başlatma sırasında yazın **VSPerfCmd/lineoff \<diğer bağımsız değişkenleri >**.  
+- Bir uygulama başlatma sırasında yazın **VSPerfCmd/lineoff \<diğer bağımsız değişkenleri >**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

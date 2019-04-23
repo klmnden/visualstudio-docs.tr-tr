@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9a3aa9cdec8be345929ebea0109a472e79e716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8440c1bae9d9e405fd0bf0e1462467e7a51dad5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704351"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065538"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama
 A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışmaz bir WCF hizmeti veya [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] geliştirme sunucusu. Şirket içinde barındırılan bir WCF hata ayıklamak için en kolay yolu yapılandırmaktır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] seçtiğinizde, istemci ve sunucu başlatmak için **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.
 
  WCF hizmeti içinde veya NT hizmeti gibi bu yolla başlatılamıyor işlem kendi kendine barındırma olduğundan, bu yöntemi kullanamazsınız. Bunun yerine, aşağıdakilerden birini yapabilirsiniz:
 
--   El ile barındırma işleme hata ayıklayıcı ekleyin. Daha fazla bilgi için [çalışan işlemlere ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- El ile barındırma işleme hata ayıklayıcı ekleyin. Daha fazla bilgi için [çalışan işlemlere ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
      — veya —
 
--   İstemci hata ayıklamayı başlatmak ve hizmeti çağrısı Adımlama. Bu, app.config dosyasında hata ayıklama etkinleştirmenizi gerektirir. Daha fazla bilgi için [WCE hata ayıklama sınırlamaları](../debugger/limitations-on-wcf-debugging.md).
+- İstemci hata ayıklamayı başlatmak ve hizmeti çağrısı Adımlama. Bu, app.config dosyasında hata ayıklama etkinleştirmenizi gerektirir. Daha fazla bilgi için [WCE hata ayıklama sınırlamaları](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Hem istemci hem de konak Visual Studio'dan başlatmak için
 
@@ -41,17 +41,17 @@ A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışm
 
 2. Seçtiğinizde, istemci ve sunucu işlemleri başlatmak için çözüm yapılandırma **Başlat** üzerinde **hata ayıklama** menüsü.
 
-   1.  İçinde **Çözüm Gezgini**, çözüm adına sağ tıklayın.
+   1. İçinde **Çözüm Gezgini**, çözüm adına sağ tıklayın.
 
-   2.  Tıklayın **başlangıç projelerini ayarlama**.
+   2. Tıklayın **başlangıç projelerini ayarlama**.
 
-   3.  İçinde **çözüm \<adı > Özellikleri** iletişim kutusunda **birden fazla başlangıç projesi**.
+   3. İçinde **çözüm \<adı > Özellikleri** iletişim kutusunda **birden fazla başlangıç projesi**.
 
-   4.  İçinde **birden fazla başlangıç projesi** sunucu projesi için karşılık gelen satırda kılavuz **eylem** ve **Başlat**.
+   4. İçinde **birden fazla başlangıç projesi** sunucu projesi için karşılık gelen satırda kılavuz **eylem** ve **Başlat**.
 
-   5.  İstemci projesine karşılık gelen satırda tıklatın **eylem** ve **Başlat**.
+   5. İstemci projesine karşılık gelen satırda tıklatın **eylem** ve **Başlat**.
 
-   6.  **Tamam**'ı tıklatın.
+   6. **Tamam**'ı tıklatın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [WCF Hizmetlerinde Hata Ayıklama](../debugger/debugging-wcf-services.md)

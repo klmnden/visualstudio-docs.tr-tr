@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7f6f2fb35e4f0500e97cf762152955a3f4e5c10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063107"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>İzlenecek yol: XSLT IntelliSense kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Xsl ad özniteliğinde IntelliSense kullanılacak: param ile ve Call-şablon öğeleri  
   
-1.  Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
+1. Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -47,7 +47,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
     </xsl:stylesheet>  
     ```  
   
-2.  İmlecinizi sonra Ekle `<xsl:template name="msg23" match="msg23">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:call-template` öğesi:  
+2. İmlecinizi sonra Ekle `<xsl:template name="msg23" match="msg23">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:call-template` öğesi:  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -56,7 +56,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
   
      Şablon adları listesi görünür `name=""` özniteliği `xsl:call-template` yazarken öğesi.  
   
-3.  İmlecinizi sonra Ekle `<xsl:call-template name="localized-message">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:with-param` öğesi:  
+3. İmlecinizi sonra Ekle `<xsl:call-template name="localized-message">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:with-param` öğesi:  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -66,7 +66,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Xsl modu özniteliğinde IntelliSense kullanmak için: Uygulama Şablonları öğesi  
   
-1.  Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
+1. Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -113,7 +113,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
     </xsl:stylesheet>  
     ```  
   
-2.  İmlecinizi sonra Ekle `<xsl:apply-templates select="phone" />` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl: apply-templates` öğesi:  
+2. İmlecinizi sonra Ekle `<xsl:apply-templates select="phone" />` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl: apply-templates` öğesi:  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -123,7 +123,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>IntelliSense bir xsl: namespace stil sayfası öneki ve sonuç önek öznitelikleri kullanılacak-diğer ad öğesi  
   
-1.  Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
+1. Aşağıdaki kodda, yeni XSLT dosyası ve kopya oluşturun:  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -154,7 +154,7 @@ Bu yönerge, XSLT IntelliSense otomatik tamamlama için bazı özniteliklerin de
     </xsl:stylesheet>  
     ```  
   
-2.  İmlecinizi sonra Ekle `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:namespace-alias` öğesi:  
+2. İmlecinizi sonra Ekle `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` ve ENTER tuşuna basın. Aşağıdaki yazmaya başlayın `xsl:namespace-alias` öğesi:  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

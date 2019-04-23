@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051046"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Profil oluşturma araçları komut satırı araçları yolunu belirtme
 
@@ -34,21 +34,21 @@ Yolu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları
 64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin.
 
 ::: moniker range=">=vs-2019"
--   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+- 32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (yerel) *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+- 64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (yerel) *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\x64\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+- 32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (yerel) *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+- 64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (native) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

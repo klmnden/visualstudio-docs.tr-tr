@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077816"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET derleyici platformu çözümleyicilerini yükleme
 
@@ -24,14 +24,14 @@ Visual Studio .NET derleyici platformu çekirdek kümesini içerir (*Roslyn*) ç
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet Çözümleyicisi paketleri yüklemek için
 
-1. Üzerinde www.nuget.org yüklemek istediğiniz Çözümleyicisi paket bulun. Örneğin, isteyebileceğiniz [Microsoft FxCop Çözümleyicileri yükleme](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) kodunuzu diğerlerinin yanı sıra güvenlik ve performans sorunları için denetlenecek.
+1. Üzerinde www.nuget.org yüklemek istediğiniz Çözümleyicisi paket bulun.
+
+   Örneğin, isteyebileceğiniz [Microsoft FxCop Çözümleyicileri yükleme](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) kodunuzu diğerlerinin yanı sıra güvenlik ve performans sorunları için denetlenecek. Ya da yükleme [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) kod stili sorunları aramak için.
 
 2. Visual Studio kullanarak kullanarak paketi yükleyin [Paket Yöneticisi Konsolu](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) veya [Paket Yöneticisi UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Her bir çözümleyici paket www.nuget.org sayfa yapıştırmak için komutu gösterir **Paket Yöneticisi Konsolu**. Metni panoya kopyalamak için kullanışlı bir düğme bile yoktur.
-   >
-   > ![NuGet.org sayfasında Paket Yöneticisi Konsolu komut gösteriliyor](media/nuget-install-command.png)
 
    Çözümleyici bütünleştirilmiş kodlarının yüklenir ve görünür **Çözüm Gezgini** altında **başvuruları** > **Çözümleyicileri**.
 

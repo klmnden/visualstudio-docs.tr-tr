@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060819"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
 
@@ -33,7 +33,7 @@ Hangi Araçlar ve sonuçları karar vermenize yardımcı olması için aşağıd
 - Özel durum ve modül yükleme olayları kesintiye gibi gerekli hata ayıklayıcı işlemler yaptığı gibi hata ayıklayıcının kendisi performans süreleri değişir.
 - Yayın derleme performans numaraları **performans Profiler** araçlardır en hassas ve doğru. Hata ayıklayıcıyla tümleştirilmiş Aracı sonuçları diğer hata ayıklama ile ilgili ölçümleri ile Karşılaştırılacak ekseriyetle faydalıdır.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verilerini topla
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verilerini topla
 
 Başlattığınızda seçerek Visual Studio'da hata ayıklama **hata ayıklama** > **hata ayıklamayı Başlat** ya basarak **F5**, **Tanılamaaraçları** penceresi varsayılan olarak görünür. El ile açmak için seçmeniz **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**. **Tanılama araçları** penceresi olayları, işlem bellek ve CPU kullanımı hakkında bilgi gösterir.
 

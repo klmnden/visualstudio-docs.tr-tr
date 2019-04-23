@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051018"
 ---
 # <a name="error-list-window"></a>Hata Listesi Penceresi
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933983"
 
 **Hata listesi** penceresi, aşağıdaki görevleri gerçekleştirmenize olanak tanır:
 
--   Hatalar, uyarılar ve kod yazdığınız sırada üretilen iletileri görüntüleyin.
+- Hatalar, uyarılar ve kod yazdığınız sırada üretilen iletileri görüntüleyin.
 
--   IntelliSense tarafından fark edilen sözdizimi hatalarını bulur.
+- IntelliSense tarafından fark edilen sözdizimi hatalarını bulur.
 
--   Bulma dağıtım hatalarını, belirli statik analiz hatalarını ve kurumsal şablon ilkeleri uygulanırken saptanan hataları.
+- Bulma dağıtım hatalarını, belirli statik analiz hatalarını ve kurumsal şablon ilkeleri uygulanırken saptanan hataları.
 
--   Burada sorun ortaya çıkar ve hata konumuna gitmek dosyayı açmak için hata iletisini çift tıklayın.
+- Burada sorun ortaya çıkar ve hata konumuna gitmek dosyayı açmak için hata iletisini çift tıklayın.
 
--   Hangi girişlerin görüntüleneceğini ve her giriş için hangi bilgi sütunlarını görünür filtreleyin.
+- Hangi girişlerin görüntüleneceğini ve her giriş için hangi bilgi sütunlarını görünür filtreleyin.
 
--   Özel terimleri arayın ve yalnızca geçerli proje veya belgeyi aramayı kapsamına.
+- Özel terimleri arayın ve yalnızca geçerli proje veya belgeyi aramayı kapsamına.
 
 Görüntülenecek **hata listesi**, seçin **görünümü** > **hata listesi**, veya basın **Ctrl** + **\\** + **E**.
 
@@ -53,14 +53,14 @@ Araç çubuğunun sağ tarafında biri diğeri araç çubuğunun solunda iki aç
 
 Analiz etmek ve hata grupları üzerinde hareket için arama kapsamını sınırlandırabilirsiniz. Örneğin, bir projenin derlenmesini önleyen çekirdek hatalarına odaklanmak isteyebilirsiniz. Kapsam belirleme seçenekleri şunlardır:
 
-1.  **Açık belgeler**: Hataları, uyarıları ve iletileri açık belgelerin gösterir.
+1. **Açık belgeler**: Hataları, uyarıları ve iletileri açık belgelerin gösterir.
 
-2.  **Geçerli proje**: Hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.
+2. **Geçerli proje**: Hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.
 
     > [!NOTE]
     > Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.
 
-3.  **Geçerli belge**: Hataları, uyarıları ve iletileri için seçilmiş belgenin içinde Göster **Düzenleyicisi** veya **Çözüm Gezgini**.
+3. **Geçerli belge**: Hataları, uyarıları ve iletileri için seçilmiş belgenin içinde Göster **Düzenleyicisi** veya **Çözüm Gezgini**.
 
 Bir filtre o anda arama sonucuna uygulanırsa, filtrenin adını görünür **hata listesi** başlık çubuğu. **Hataları**, **uyarıları**, ve **iletileri** düğmeleri sonra toplam öğe sayısının yanı sıra gösterilen filtrelenmiş öğe sayısını da görüntüler. Örneğin, düğme Göster "x / y hata". Hiçbir filtre uygulanmamışsa başlık çubuğunda yalnızca "hata listesi" yazar.
 
@@ -88,7 +88,7 @@ Açıklama
 
 Giriş metni görüntüler.
 
-Proje
+Project
 
 Geçerli projenin adını görüntüler.
 

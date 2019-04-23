@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077764"
 ---
 # <a name="program-document-level-customizations"></a>Belge düzeyi özelleştirmelerini programlama
   Microsoft Office Word veya Microsoft Office Excel belge düzeyi özelleştirmesi kullanılarak genişlettiğinizde aşağıdaki görevleri gerçekleştirebilirsiniz:
@@ -62,13 +62,13 @@ ms.locfileid: "56624691"
 
 - Excel için belge düzeyi projelerine sahip birden çok oluşturulan sınıflar: çalışma kitabının kendisi için ve her çalışma sayfası için bir. Varsayılan olarak, bu sınıfları aşağıdaki adlara sahiptir:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   Oluşturulan sınıfın belge açıldığında veya çağrılan olayı işleyicilerini içerir. Belge açıldığında kodu çalıştırmak için kod ekleyin. `Startup` olay işleyicisi. Belge kapatılmadan hemen önce kodu çalıştırmak için kod ekleyin. `Shutdown` olay işleyicisi. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 

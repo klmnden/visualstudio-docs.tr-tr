@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063159"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Alana Özgü Dil Tasarımcısını Genişletme
 
@@ -26,23 +26,23 @@ Uzantınızı kodunu içeren bir proje ve proje dışarı aktaran bir VSIX proje
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Bir DSL Tasarımcısı uzantısı çözümü oluşturmak için
 
-1.  Kullanarak yeni bir proje oluşturma **sınıf kitaplığı** proje şablonu. Bu proje uzantılarınızı kodunu içerir.
+1. Kullanarak yeni bir proje oluşturma **sınıf kitaplığı** proje şablonu. Bu proje uzantılarınızı kodunu içerir.
 
-2.  Yeni bir **VSIX projesi** proje.
+2. Yeni bir **VSIX projesi** proje.
 
      Seçin **çözüme ekleyin**.
 
      *Source.extension.vsixmanifest* VSIX bildirim düzenleyicisinde açılır.
 
-3.  İçerik alanı **İçerik Ekle**.
+3. İçerik alanı **İçerik Ekle**.
 
-4.  İçinde **İçerik Ekle** iletişim kutusu, kümesi **içerik türünü seçin** için **MEF Bileşeni**, ayarlayıp **proje** sınıf kitaplığı projenize.
+4. İçinde **İçerik Ekle** iletişim kutusu, kümesi **içerik türünü seçin** için **MEF Bileşeni**, ayarlayıp **proje** sınıf kitaplığı projenize.
 
-5.  Tıklayın **sürümleri seçin** emin olun **Visual Studio Enterprise** denetlenir.
+5. Tıklayın **sürümleri seçin** emin olun **Visual Studio Enterprise** denetlenir.
 
-6.  VSIX projesinin çözümün başlangıç projesi olduğundan emin olun.
+6. VSIX projesinin çözümün başlangıç projesi olduğundan emin olun.
 
-7.  Sınıf kitaplığı projesinde aşağıdaki derlemelere başvurular ekleyin:
+7. Sınıf kitaplığı projesinde aşağıdaki derlemelere başvurular ekleyin:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Bu konuda herhangi bir uzantı sınamak için derleme ve çözümü çalıştır
 
 Uzantıları için ana Visual Studio ve diğer bilgisayarlara dağıtmak için aşağıdaki adımları izleyin:
 
-1.  VSIX projenizde depo VSIX yükleme dosyasını bulmak\\*\*\\\*.vsix
+1. VSIX projenizde depo VSIX yükleme dosyasını bulmak\\*\*\\\*.vsix
 
-2.  Bu dosyayı hedef bilgisayara kopyalayın ve ardından Windows Explorer (veya dosya Gezgini) çift tıklayın.
+2. Bu dosyayı hedef bilgisayara kopyalayın ve ardından Windows Explorer (veya dosya Gezgini) çift tıklayın.
 
      Uzantının yüklü olduğunu doğrulamak için Visual Studio Uzantı Yöneticisi açılır.
 
 Uzantıyı kaldırmak için aşağıdaki adımları izleyin:
 
-1.  Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
+1. Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
 
-2.  Uzantıyı seçin ve silin.
+2. Uzantıyı seçin ve silin.
 
 ## <a name="add-a-shortcut-menu-command"></a>Bir kısayol menü komutu ekleme
 

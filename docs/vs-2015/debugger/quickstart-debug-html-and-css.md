@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57870285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068164"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
   Diğer JavaScript kullanarak JavaScript Konsolu penceresi ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz: [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Dinamik DOM'u inceleniyor  
+## <a name="InspectingDOM"></a> Dinamik DOM'u inceleniyor  
  DOM Gezgini işlenen sayfanın bir görünümü gösterir ve değerleri değiştirebilir ve sonuçları hemen görmek için DOM Gezgini'ni kullanabilirsiniz. Bu, hata ayıklayıcıyı durdurup yeniden olmadan değişiklikleri test etmek sağlar. Bu yöntemi kullanarak sayfa ile etkileşim kurduğunuzda, kaynak kodu, projenizdeki değişmez istenen kod düzeltmeleri bulduğunuzda, kaynak kodunuzda değişiklikler yaparsınız.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Uygulamanızı hata ayıklama sırasında yenilemek için  
   
-1.  Uygulamayı hala devam ederken, Visual Studio'ya geçiş yapın.  
+1. Uygulamayı hala devam ederken, Visual Studio'ya geçiş yapın.  
   
-2.  Default.HTML açın ve yüksekliğini ve genişliğini değiştirerek kaynak kodunuzu değiştirmeniz `"fView"` % 100 DIV öğesi.  
+2. Default.HTML açın ve yüksekliğini ve genişliğini değiştirerek kaynak kodunuzu değiştirmeniz `"fView"` % 100 DIV öğesi.  
   
-3.  Seçin **Yenile Windows uygulama** hata ayıklama araç çubuğundan düğme (veya F4 tuşuna basın). Düğme şöyle görünür: ![Windows uygulama düğmesine Yenile](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Seçin **Yenile Windows uygulama** hata ayıklama araç çubuğundan düğme (veya F4 tuşuna basın). Düğme şöyle görünür: ![Windows uygulama düğmesine Yenile](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Uygulama sayfaları yeniden ve ön plana simülatörü veya Phone öykünücüsünde döndürür.  
   
      Yenileme özelliği hakkında daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Öğeleri seçme  
+## <a name="SelectingElements"></a> Öğeleri seçme  
  Bir uygulamanın hataları ayıklanırken üç yolla DOM öğeleri seçebilirsiniz:  
   
 - Öğelerini doğrudan DOM Gezgini penceresinde (veya ok tuşlarını kullanarak) tıklayarak.  
@@ -285,7 +285,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  Kullanarak öğeleri seçmek nasıl gösteren bir örnek için **Select öğesi** düğmesi, bkz: [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Tarayıcı ve Platform desteği  
+## <a name="BrowserSupport"></a> Tarayıcı ve Platform desteği  
  JavaScript ve DOM Gezgini JavaScript Konsolu penceresi için Visual Studio Araçları, aşağıdaki platformlarda desteklenir:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript ve HTML kullanarak Windows Phone Store uygulamaları  

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075330"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Geçmiş hata ayıklama (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ Geçmiş hata ayıklama IntelliTrace tarafından toplanan bilgiler bağımlı ha
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Geçmiş hata ayıklama kullanmaya nasıl başlarım?
 
- IntelliTrace varsayılan olarak açıktır. Yapmanız gereken şey, tam uygulama durumunun anlık görüntülerini görüntülemek istediğiniz ve hangi olayların ve işlev çağrılarının ilginizi çeken karar verin. Aramak istediğiniz tanımlama hakkında daha fazla bilgi için bkz. [IntelliTrace özellikleri](../debugger/intellitrace-features.md). Özellik desteği, dil ve uygulama tarafından değişir türü.
+IntelliTrace varsayılan olarak açıktır. Yapmanız gereken şey, tam uygulama durumunun anlık görüntülerini görüntülemek istediğiniz ve hangi olayların ve işlev çağrılarının ilginizi çeken karar verin. Aramak istediğiniz tanımlama hakkında daha fazla bilgi için bkz. [IntelliTrace özellikleri](../debugger/intellitrace-features.md). Özellik desteği, dil ve uygulama tarafından değişir türü.
 
- - Geçmiş hata ayıklama anlık görüntülerini görüntülemek için bkz: [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)
- - Değişkenleri incelemek ve koda gitmek öğrenmek için bkz: [geçmiş hata ayıklama ile uygulamanızı denetleyin](../debugger/historical-debugging-inspect-app.md)
- - IntelliTrace olayları ile hata ayıklama hakkında daha fazla bilgi için bkz: [izlenecek yol: IntelliTrace kullanarak](../debugger/walkthrough-using-intellitrace.md).
+- Geçmiş hata ayıklama anlık görüntülerini görüntülemek için bkz: [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)
+- Değişkenleri incelemek ve koda gitmek öğrenmek için bkz: [geçmiş hata ayıklama ile uygulamanızı denetleyin](../debugger/historical-debugging-inspect-app.md)
+- IntelliTrace olayları ile hata ayıklama hakkında daha fazla bilgi için bkz: [izlenecek yol: IntelliTrace kullanarak](../debugger/walkthrough-using-intellitrace.md).

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050515"
 ---
 # <a name="detect-system-requirements"></a>Sistem gereksinimlerini algılama
 VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Windows Installer, VSPackage'ı yüklemesini yönetmek için kullandığınız zaman, Visual Studio yüklü olup olmadığını algılamak için yükleyici yapılandırabilirsiniz. Ayrıca, örneğin sistemin diğer gereksinimleri denetlemek üzere, belirli bir Windows sürümü veya belirli bir RAM miktarını yapılandırabilirsiniz.
@@ -24,11 +24,11 @@ VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Wind
 ## <a name="detect-visual-studio-editions"></a>Visual Studio sürümleri algılayın
  Visual Studio sürümü yüklü olup olmadığını belirlemek için aşağıdakileri doğrulayın değerini **yükleme** kayıt defteri anahtarı *(REG_DWORD) 1* uygun klasöründe, aşağıdaki tabloda listelendiği gibi. Visual Studio sürümleri hiyerarşisini olduğuna dikkat edin:
 
-1.  Enterprise
+1. Enterprise
 
-2.  Professional
+2. Professional
 
-3.  Topluluk
+3. Topluluk
 
 Daha yeni bir sürümü yüklü olduğunda, bu sürüm için kayıt defteri anahtarlarını önceki sürümlerinde olduğu gibi de eklenir. Diğer bir deyişle, Enterprise edition yüklü değilse, **yükleme** anahtarı ayarlanır *1* Professional ve Community sürümlerinde yanı sıra, kuruluş için. Bu nedenle, gereksinim duyduğunuz yalnızca en son sürümü için denetlenecek gerekir.
 

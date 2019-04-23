@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0157b18c0b0dfce2ba69482dc1c61e1ddf3a996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056012"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Hata: Çalışma grubu uzak oturum açma hatası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,44 +41,44 @@ Bu hata görünür:
   
  Bir çalışma grubunda bir makineden hata ayıklama ve uzak makinesine bağlanmaya çalışırsanız, bu hata oluşabilir. Olası nedenler şunlardır:  
   
--   Uzak makinede eşleşen adı ve parola ile hesabı yoktur.  
+- Uzak makinede eşleşen adı ve parola ile hesabı yoktur.  
   
--   Çalışma gruplarında, hem Visual Studio bilgisayarı ve uzak makine varsa, bu hata nedeniyle varsayılan oluşabilir **yerel güvenlik ilkesi** uzak makinede ayarlama. Varsayılan ayarı **yerel güvenlik ilkesi** ayardır **yalnızca konuk - yerel kullanıcı konuk olarak kimlik doğrulaması**. Bu kurulum üzerinde hata ayıklamak için uzak makineye ayarları değiştirme **Klasik - yerel kullanıcıların kendileri olarak kimliklerini**.  
+- Çalışma gruplarında, hem Visual Studio bilgisayarı ve uzak makine varsa, bu hata nedeniyle varsayılan oluşabilir **yerel güvenlik ilkesi** uzak makinede ayarlama. Varsayılan ayarı **yerel güvenlik ilkesi** ayardır **yalnızca konuk - yerel kullanıcı konuk olarak kimlik doğrulaması**. Bu kurulum üzerinde hata ayıklamak için uzak makineye ayarları değiştirme **Klasik - yerel kullanıcıların kendileri olarak kimliklerini**.  
   
 > [!NOTE]
 >  Aşağıdaki görevleri gerçekleştirmek için yönetici olmanız gerekir.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Yerel Güvenlik İlkesi penceresini açmak için  
   
-1.  Başlangıç **secpol.msc** Microsoft Yönetim Konsolu ek bileşeni. Windows Search'te Windows Çalıştır kutusuna veya bir komut isteminde secpol.msc yazın.  
+1. Başlangıç **secpol.msc** Microsoft Yönetim Konsolu ek bileşeni. Windows Search'te Windows Çalıştır kutusuna veya bir komut isteminde secpol.msc yazın.  
   
 ### <a name="to-add-user-rights-assignments"></a>Kullanıcı hakları ataması eklemek için  
   
-1.  Yerel açın  
+1. Yerel açın  
   
-2.  Açık **yerel güvenlik ilkesi** penceresi.  
+2. Açık **yerel güvenlik ilkesi** penceresi.  
   
-3.  Genişletin **yerel ilkeler** klasör.  
+3. Genişletin **yerel ilkeler** klasör.  
   
-4.  Tıklayın **kullanıcı hakları ataması**.  
+4. Tıklayın **kullanıcı hakları ataması**.  
   
-5.  İçinde **ilke** sütunu, çift tıklatın **programları için hata ayıklama** geçerli yerel Grup İlkesi atamalarını görüntülemek için **Yerel Güvenlik İlkesi ayarının** iletişim kutusu.  
+5. İçinde **ilke** sütunu, çift tıklatın **programları için hata ayıklama** geçerli yerel Grup İlkesi atamalarını görüntülemek için **Yerel Güvenlik İlkesi ayarının** iletişim kutusu.  
   
      ![Yerel Güvenlik İlkesi kullanıcı hakları](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6.  Yeni kullanıcı eklemek için tıklatın **kullanıcı veya Grup Ekle** düğmesi.  
+6. Yeni kullanıcı eklemek için tıklatın **kullanıcı veya Grup Ekle** düğmesi.  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>Paylaşım ve güvenlik modeli değiştirmek için  
   
-1.  Açık **yerel güvenlik ilkesi** penceresi.  
+1. Açık **yerel güvenlik ilkesi** penceresi.  
   
-2.  Genişletin **yerel ilkeler** klasör.  
+2. Genişletin **yerel ilkeler** klasör.  
   
-3.  Tıklayın **güvenlik seçenekleri**.  
+3. Tıklayın **güvenlik seçenekleri**.  
   
-4.  İçinde **ilke** sütunu, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.  
+4. İçinde **ilke** sütunu, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.  
   
-5.  İçinde **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** iletişim kutusunda, bir değerle değiştirmek **Klasik - yerel kullanıcıların kendileri olarak kimliklerini** tıklatıp **Uygula** düğmesi.  
+5. İçinde **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** iletişim kutusunda, bir değerle değiştirmek **Klasik - yerel kullanıcıların kendileri olarak kimliklerini** tıklatıp **Uygula** düğmesi.  
   
      ![Yerel Güvenlik İlkesi güvenlik seçenekleri](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   

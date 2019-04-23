@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056035"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
 
 İçin yeni türleri tasarımı için C# ve Visual Basic projeleri, bunları bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: Varolan türleri görüntüleme](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Yeni tür oluşturma
+## <a name="CreateType"></a> Yeni tür oluşturma
 
-1.  İçinde **araç kutusu**altında **Sınıf Tasarımcısı**, aşağıdakilerden birini bir sınıf diyagramına sürükleyin:
+1. İçinde **araç kutusu**altında **Sınıf Tasarımcısı**, aşağıdakilerden birini bir sınıf diyagramına sürükleyin:
 
-    -   **Sınıf** veya **soyut sınıf**
+    - **Sınıf** veya **soyut sınıf**
 
-    -   **Sabit listesi**
+    - **Sabit listesi**
 
-    -   **Arabirimi**
+    - **Arabirimi**
 
-    -   **Yapı** (VB) veya **yapı** (C#)
+    - **Yapı** (VB) veya **yapı** (C#)
 
-    -   **Temsilci**
+    - **Temsilci**
 
-    -   **Modül** (yalnızca VB)
+    - **Modül** (yalnızca VB)
 
-2.  Türü adlandırın. Daha sonra erişim düzeyini seçin.
+2. Türü adlandırın. Daha sonra erişim düzeyini seçin.
 
-3.  Tür için başlangıç kodunu eklemek istediğiniz dosyayı seçin:
+3. Tür için başlangıç kodunu eklemek istediğiniz dosyayı seçin:
 
-    -   Yeni bir dosya oluşturun ve bunu geçerli projeye eklemek için **yeni dosya oluştur** ve dosyayı adlandırın.
+    - Yeni bir dosya oluşturun ve bunu geçerli projeye eklemek için **yeni dosya oluştur** ve dosyayı adlandırın.
 
-    -   Varolan bir dosyaya kod eklemek için seçin **varolan dosyaya ekleme**.
+    - Varolan bir dosyaya kod eklemek için seçin **varolan dosyaya ekleme**.
 
          Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, yalnızca ilgili sınıf dosyası aynı uygulama projesinde veya paylaşılan projede, ancak uygulama projesinde sınıf diyagramına yeni bir tür ekleyebilirsiniz.
 
-4.  Şimdi, türü tanımlamak için diğer öğeleri ekleyin:
+4. Şimdi, türü tanımlamak için diğer öğeleri ekleyin:
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ ms.locfileid: "55919650"
 
      Bkz: [üyeleri oluşturma](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Bir türe özel bir öznitelik uygulama
+## <a name="CustAttributeType"></a> Bir türe özel bir öznitelik uygulama
 
 1. Bir sınıf diyagramında türe ait şekle tıklayın.
 
@@ -77,7 +77,7 @@ ms.locfileid: "55919650"
 
    Özel öznitelikler türe uygulanır.
 
-##  <a name="CustAttributeMember"></a> Bir tür üyesine özel bir öznitelik uygulama
+## <a name="CustAttributeMember"></a> Bir tür üyesine özel bir öznitelik uygulama
 
 1. Bir sınıf diyagramında kendi türünün şeklinde üyenin adına veya Sınıf Ayrıntıları penceresinde satırına tıklayın.
 

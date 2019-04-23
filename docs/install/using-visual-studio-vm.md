@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070478"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -40,7 +40,7 @@ En son ana sürümleri, Visual Studio 2019, Visual Studio 2017 ve Visual Studio 
 | Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.22     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu)  |
+|         Visual Studio 2015: RTW                              |             None             | (Bakım için süresi doldu)  |
 
 > [!NOTE]
 > Hizmet İlkesi Microsoft uygun olarak hizmet vermek için Visual Studio 2015'in yayınlanmış (RTW) sürüm süresi doldu. Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün sınıfıyla sunulan yalnızca kalan sürümüdür.
@@ -77,13 +77,13 @@ Görüntüleri gerektiren bir Visual Studio özelliği dahil etmezseniz, sayfan�
 
 Azure sanal makine boyutları sunar. Visual Studio, güçlü, çok iş parçacıklı bir uygulama olduğundan, 7 GB bellek ve en az iki işlemcileri içeren bir VM boyutu istersiniz. Visual Studio görüntüleri için aşağıdaki VM boyutları öneririz:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 En son makine boyutları hakkında daha fazla bilgi için bkz. [boyutları için Windows azure'da sanal makineler](/azure/virtual-machines/windows/sizes).
 

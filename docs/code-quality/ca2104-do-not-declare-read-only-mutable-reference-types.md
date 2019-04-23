@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077712"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945020"
 |Yeni Değişiklik|Bölünemez|
 
 > [!NOTE]
-> Kural CA2104 kullanımdan kalkmıştır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak.
+> Kural CA2104 kullanımdan kalkmıştır ve Visual Studio'nun gelecekteki bir sürümde kaldırılacak. Olarak gerçekleştirilmez bir [Çözümleyicisi](roslyn-analyzers-overview.md) bir türün gerçek değiştirilemezlik belirlemek için gereken karmaşık analiz nedeniyle.
 
 ## <a name="cause"></a>Sebep
 

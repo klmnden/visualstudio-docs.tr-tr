@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072961"
 ---
 # <a name="program-control"></a>Program denetimi
 Visual Studio'da hata ayıklama, tüm aşağıdaki adımlama ve yordamları devam program düzeyinde gerçekleşir:
 
--   Sonraki deyimin ayarlanması, diğer bir deyişle, bilgisayarınızı belirli çerçeve ortamında yürütülecek sonraki yönergesi için ayarlama
+- Sonraki deyimin ayarlanması, diğer bir deyişle, bilgisayarınızı belirli çerçeve ortamında yürütülecek sonraki yönergesi için ayarlama
 
--   Yürütme, Adımlama modundan çıkmak diğer bir deyişle, devam
+- Yürütme, Adımlama modundan çıkmak diğer bir deyişle, devam
 
--   Sonraki yönergeyi Adımlama
+- Sonraki yönergeyi Adımlama
 
--   Geçerli bir atlama modu ile devam etme
+- Geçerli bir atlama modu ile devam etme
 
--   Program tarafından bulunan iş parçacıklarını askıya alma
+- Program tarafından bulunan iş parçacıklarını askıya alma
 
--   Program tarafından bulunan iş parçacıklarını sürdürme
+- Program tarafından bulunan iş parçacıklarını sürdürme
 
 > [!NOTE]
 >  Çağrı yığınını görüntüleme iş parçacığı düzeyinde uygulanır. Bir iş parçacığı için çağrı yığınını görüntülerken çerçeve bilgileri numaralandırmak için tüm yöntemleri uygulamalıdır [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) arabirimi.

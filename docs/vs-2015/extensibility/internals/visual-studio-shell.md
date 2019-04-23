@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065551"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54770371"
   
 - İzleme Kabuk genelinde seçimi, bağlam ve para birimi. Kabuk öğeleri aşağıdaki türde izler:  
   
-  -   Geçerli proje  
+  - Geçerli proje  
   
-  -   Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`  
+  - Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`  
   
-  -   Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı  
+  - Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı  
   
-  -   Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri  
+  - Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri  
   
-  -   Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri  
+  - Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri  
   
   Kabuk yüklü VSPackages ve geçerli Hizmetleri arasındaki iletişim de aracılık. Kabuk temel özellikleri destekler ve bunları tüm VSPackages tümleşik kullandırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu temel özellikleri, aşağıdaki öğeleri ekleyin:  
   

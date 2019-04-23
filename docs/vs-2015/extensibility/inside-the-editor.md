@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056048"
 ---
 # <a name="inside-the-editor"></a>Düzenleyicinin İçinde
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Düzenleyici metin görünümünü ve kullanıcı arabirimi düzenleyici metin m
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> Alt sistemler genel bakış  
+## <a name="overview"></a> Alt sistemler genel bakış  
   
 ### <a name="text-model-subsystem"></a>Metin modeli alt sistemi  
  Metin modeli alt metin temsil eden ve kendi işleme etkinleştirme sorumludur. Metin modeli alt içeren <xref:Microsoft.VisualStudio.Text.ITextBuffer> düzenleyici tarafından görüntülenecek olan karakter dizisini tanımlayan arabirimi. Bu metin değiştirildi, izlenen ve aksi takdirde pek çok şekilde değiştirilebilir. Metin model türleri için aşağıdaki konuları da sağlar:  
@@ -76,7 +76,7 @@ Düzenleyici metin görünümünü ve kullanıcı arabirimi düzenleyici metin m
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Metin modeli ve metin görünümünü daha yakından bakın  
   
-###  <a name="textmodel"></a> Metin modeli  
+### <a name="textmodel"></a> Metin modeli  
  Metin modeli alt metin türleri farklı gruplandırmalarını oluşur. Bunlar, metin arabelleği, metin anlık görüntü ve metin alanları içerir.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Metin arabelleği ve metin anlık görüntüleri  
@@ -149,7 +149,7 @@ abXefYj
   
  Geliştiriciler kendi içerik türlerini tanımlayın ve bunları kullanarak kaydetme <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Birçok düzenleyici özellikleri kullanarak belirli bir içerik türüne göre tanımlanabilir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Bunlar belirli içerik türlerini görüntülemek düzenleyiciler için geçerli olacak şekilde, örneğin, düzenleyici kenar boşlukları ve Kenarlıklar fare işleyicileri tanımlanabilir.  
   
-###  <a name="textview"></a> Metin görünümü  
+### <a name="textview"></a> Metin görünümü  
  Model görünüm denetleyicisi (MVC) deseni görünümü parçası biçimlendirme görünüm, kaydırma çubuğu ve giriş işaretini gibi grafik öğeleri metin görünümünü tanımlar. Visual Studio Düzenleyicisi tüm sunum öğelerini, WPF, temel alır.  
   
 #### <a name="text-views"></a>Metin görünümleri  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>Düzenleyici Özellikleri  
  Düzenleyici özelliklerini özellik tanımı, uygulamadan ayrı şekilde tasarlanmıştır. Düzenleyici, şu özellikleri içerir:  
   
--   Etiketleri ve sınıflandırıcı  
+- Etiketleri ve sınıflandırıcı  
   
--   Kenarlıklar  
+- Kenarlıklar  
   
--   Projeksiyon  
+- Projeksiyon  
   
--   Anahat Oluşturma  
+- Anahat Oluşturma  
   
--   Fare ve anahtar bağlamaları  
+- Fare ve anahtar bağlamaları  
   
--   İşlemler ve temelleri  
+- İşlemler ve temelleri  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> Etiketleri ve sınıflandırıcı  
+### <a name="tagsandclassifiers"></a> Etiketleri ve sınıflandırıcı  
  Etiketler, metin aralığı ile ilişkili olan işaretleyicileri şunlardır. Bunlar farklı yollarla, örneğin, metin renklendirme, alt çizgiler, grafik veya açılır pencereleri kullanarak sunulabilir. Etiketi bir tür sınıflandırıcıdır.  
   
  Etiketleri diğer türde <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> Metin vurgulama için <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> anahat oluşturma için ve <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> derleme hataları.  
@@ -230,14 +230,14 @@ abXefYj
   
  Bir <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> metin özellikleri biçimlendirme kümesi için bir sınıflandırma türünden bir eşlemesi. Sınıflandırma biçimlerinin dışarı aktarmaları uygulaması Düzenleyicisi'nde biçim eşlemesi işler.  
   
-###  <a name="adornments"></a> Kenarlıklar  
+### <a name="adornments"></a> Kenarlıklar  
  Kenarlıklar doğrudan metin görünümünü karakterleri rengini ve yazı tipi için ilgili olmayan grafik efektleri ' dir. Örneğin, çok sayıda programlama dilinde kod derlerken işaretlemek için kullanılan bir kırmızı dalgalı çizgi katıştırılmış bir kenarlığı olan ve açılır Kenarlıklar araç ipuçları şunlardır. Kenarlıklar türetilir <xref:System.Windows.UIElement> ve uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. İki özel türler kenarlığı etiketinin <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, metni bir görünüm olarak aynı alanı kaplayan kenarlıkları için ve <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, dalgalı çizgi için.  
   
  Katıştırılmış Kenarlıklar biçimlendirilmiş metin görünümünü parçasını grafiklerdir. Bunlar farklı Z düzenini katmanlarında düzenlenir. Üç yerleşik Katmanlar vardır: metin, giriş işaretini ve seçimi. Ancak, geliştiricilerin daha fazla katman tanımlayabilir ve bunları birbirine göre sırayla yerleştirebilirsiniz. (Metin silindiğinde, çalıştırdığınız ve metin hareket ettiğinde taşıma silinir) metin göreli Kenarlıklar ve (hangi görünümün metin olmayan bölümleriyle yapmak zorunda) görünümü-göreli Kenarlıklar sahibi tarafından denetlenen Kenarlıklar (embedded Kenarlıklar üç tür olan Geliştirici oluşuturun yönetmeniz gerekir).  
   
  Açılır Kenarlıklar metin görünümü, örneğin, araç ipuçları yukarıda küçük bir pencerede görünen grafiklerdir.  
   
-###  <a name="projection"></a> Projeksiyon  
+### <a name="projection"></a> Projeksiyon  
  Projeksiyon, gerçekte metin depolamaz, ancak bunun yerine diğer metin arabelleği metinleri birleştiren metin arabelleğini farklı bir tür oluşturmak için kullanılan bir tekniktir. Örneğin, bir projeksiyon arabellek diğer arabellekler iki metinden birleştirmek ve tek bir arabellek grubundaymış gibi sonucu sunmak için veya bir arabellek metin parçalarını gizlemek için kullanılabilir. Bir projeksiyon arabellek başka bir projeksiyon arabelleğe kaynak arabelleği üstlenebilir. Bir projeksiyon ile ilgili arabelleklerinin metin birçok farklı şekilde yeniden düzenlemek için oluşturulabilir. (Böyle bir küme olarak da bilinen olduğu bir *arabellek grafik*.) Daraltılmış metin gizlemek için bir yansıtma arabelleği kullanarak Visual Studio metin anahat oluşturma özelliğini uygulanır ve ASP.NET sayfaları için Visual Studio Düzenleyicisi, Visual Basic ve C# gibi katıştırılmış dilleri desteklemek için yansıtma kullanır.  
   
  Bir <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> kullanılarak oluşturulan <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Bir projeksiyon arabellek sıralı bir dizi tarafından temsil edilen <xref:Microsoft.VisualStudio.Text.ITrackingSpan> olarak bilinen nesneleri *kaynak yayılmaları*. Bu alanı, içeriğini, bir karakter dizisi sunulur. İçinden kaynak yayılmaları çizilmiştir metin arabelleği adlı *kaynak arabelleği*. İstemciler bir projeksiyon arabellek bir normal metin arabelleğinden farklı haberdar olmanız gerekmez.  
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Olayları ve projeksiyon arabellekler  
  Bir projeksiyon arabellek değiştirildiğinde, değişikliklerin bağımlı arabellekler projeksiyon arabelleğinden gönderilir. Tüm arabellekler değiştirildikten sonra en derin arabellek ile başlayan arabelleği değişikliği olaylar oluşturulur.  
   
-###  <a name="outlining"></a> Anahat oluşturma  
+### <a name="outlining"></a> Anahat oluşturma  
  Anahat oluşturma genişletmek veya daraltmak için farklı bir metin görünümündeki metin bloklarını yeteneğidir. Anahat oluşturma türü olarak tanımlanmış, <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, aynı şekilde kenarlıkları tanımlanmış gibi. A <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> genişletilmiş veya daraltılmış bir metin bölge tanımlayan bir etikettir. Anahat oluşturma kullanmak için aktarmalısınız <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> almak için bir <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Anahat oluşturma manager sıralar, daraltır ve olarak temsil edilen farklı bloklarını genişletir <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> nesneleri ve olayları buna uygun olarak oluşturur.  
   
-###  <a name="mousebindings"></a> Fare bağlamaları  
+### <a name="mousebindings"></a> Fare bağlamaları  
  Fare bağlamaları için farklı komutlar fare hareketlerini bağlayın. Fare bağlamalar tanımlandı kullanarak bir <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, ve tuş bağlamaları kullanılarak tanımlanmış bir <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Otomatik olarak tüm bağlantıları başlatır ve fare olayları görünümünde bağlanır.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Arabirimi farklı fare olayları için önceden işleme ve işlem sonrası olay işleyicilerini içerir. Bazı yöntemleri geçersiz olaylardan biri için tanıtıcı <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a> Düzenleyici işlemleri  
+### <a name="editoroperations"></a> Düzenleyici işlemleri  
  Komut Dosyası Düzenleyicisi veya başka amaçlarla etkileşim otomatik hale getirmek için düzenleyici işlemleri kullanılabilir. İçeri aktarabilirsiniz <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> erişim işlemleri için bir verilen <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Ardından bu nesneleri giriş işaretini görünümün farklı bölümlerine Taşı, görünümü kaydırarak ya da seçimi değiştirmek için de kullanabilirsiniz.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  IntelliSense deyim tamamlama, imza Yardımı (parametre bilgisi olarak da bilinir), hızlı bilgi ve ampuller destekler.  
   
  Deyim tamamlama açılır listesi yöntem adları, XML ve diğer biçimlendirme kodlama veya öğeler için olası tamamlamaları sağlar. Genel olarak, bir kullanıcı hareketi tamamlama oturumu çağırır. Oturum olası listesini görüntüler ve kullanıcının birini seçebilmesi veya listeyi kapatın. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> Oluşturma ve tetikleme sorumlu <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Hesaplar <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> oturumu için tamamlanma öğesi.  

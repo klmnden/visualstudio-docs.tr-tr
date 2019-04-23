@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082587"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Mevcut bir SharePoint sitesinden öğeleri içeri aktarma
   SharePoint çözüm paketini İçeri Aktar proje şablonu sayesinde yeni bir içerik türleri ve alanlarını mevcut SharePoint siteleri gibi öğeleri yeniden [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint çözüm. İçeri aktarılan çözümleri değişiklik yapılmadan en çalıştırabilirsiniz, ancak olup olmadığını belirli kısıtlamalar ve dikkate alınması gereken sorunları özellikle içeri aktardıktan sonra tüm öğeleri değiştirin.
@@ -119,9 +119,9 @@ ms.locfileid: "56645153"
 
  Bu hatayı alırsınız, öğe oluşturulmaz. Bu sorun genellikle içeri aktarılan modüllerle oluşur. Bu sorunu önlemek için aşağıdakileri yapın:
 
--   Onları girerken, projeniz için kısa adlar kullanın **Yeni Proje Ekle** iletişim kutusu.
+- Onları girerken, projeniz için kısa adlar kullanın **Yeni Proje Ekle** iletişim kutusu.
 
--   Kök klasör yolu kısaltmak için mümkün olduğunca yakın bir konuma projesi oluşturun.
+- Kök klasör yolu kısaltmak için mümkün olduğunca yakın bir konuma projesi oluşturun.
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion özniteliği
  Gibi SharePoint önceki bir sürümde oluşturulmuş bir çözümü içeri aktarırsanız [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] veya [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], 12.0 için paket bildirimi SharePointProductVersion öznitelik değeri değiştirin veya betik manager denetim tüm içeri aktarılan Web ekleme sayfalar ve bırakın SharePointProductVersion 14.0 için ayarlayın. Aksi takdirde, içeri aktarılan Web forms SharePoint'te görüntülenmez.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f407a3bc3236d76c4cf5418ed3aef2c3388867a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077933"
 ---
 # <a name="export-diagrams-as-images"></a>Diyagramları görüntü olarak dışarı aktarma
 Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio'nun aynı sürümünü kullanmayan proje ekibi üyesi ile bunları paylaşabileceği modelleme diyagramlarını salt okunur biçimde kaydedebilirsiniz.
@@ -25,19 +25,19 @@ Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Başka bir uygulamaya bir diyagram veya diyagram parçası kopyalamak için
 
-1.  Diyagram üzerinde bazı veya tüm şekilleri seçin.
+1. Diyagram üzerinde bazı veya tüm şekilleri seçin.
 
-2.  Seçiminize sağ tıklayın ve ardından **kopyalama**.
+2. Seçiminize sağ tıklayın ve ardından **kopyalama**.
 
-3.  Seçiminizi istediğiniz uygulamaya yapıştırın.
+3. Seçiminizi istediğiniz uygulamaya yapıştırın.
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Modelleme diyagramında bir XML Paper Specification (.xps) dosyası olarak kaydetmek için
 
-1.  Üzerinde **dosya** menüsünde tıklatın **yazdırma** açmak için **yazdırma** iletişim kutusu.
+1. Üzerinde **dosya** menüsünde tıklatın **yazdırma** açmak için **yazdırma** iletişim kutusu.
 
-2.  İçinde **adı** listesinden **Microsoft XPS Belge Yazıcısı**ve ardından **Tamam**.
+2. İçinde **adı** listesinden **Microsoft XPS Belge Yazıcısı**ve ardından **Tamam**.
 
-3.  İçinde **dosyayı farklı Kaydet** dosyayı farklı Kaydet iletişim kutusu bir **Dokument XPS (\*.xps)** dosya.
+3. İçinde **dosyayı farklı Kaydet** dosyayı farklı Kaydet iletişim kutusu bir **Dokument XPS (\*.xps)** dosya.
 
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği
 

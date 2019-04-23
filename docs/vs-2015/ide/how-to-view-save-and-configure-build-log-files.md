@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053577"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme Günlüğü Dosyalarını Görüntüleme, Kaydetme ve Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Visual Studio IDE içinde bir projeyi derledikten sonra bu yapı hakkındaki bil
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Bir C++ projesi için derleme günlük dosyasını görüntülemek için  
   
-1.  İçinde **Windows Explorer** veya **dosya Gezgini**, aşağıdaki dosyayı açın: \\...\Visual Studio *sürüm*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
+1. İçinde **Windows Explorer** veya **dosya Gezgini**, aşağıdaki dosyayı açın: \\...\Visual Studio *sürüm*\Projects\\  *ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Yönetilen kod projesi için derleme günlük dosyası oluşturmak için  
   
-1.  Menü çubuğunda, **derleme**, **Çözümü Derle**.  
+1. Menü çubuğunda, **derleme**, **Çözümü Derle**.  
   
-2.  İçinde **çıkış** penceresinde derleme bilgileri vurgulayın ve ardından panoya kopyalayın.  
+2. İçinde **çıkış** penceresinde derleme bilgileri vurgulayın ve ardından panoya kopyalayın.  
   
-3.  Not Defteri gibi bir metin düzenleyicisinde açın, bilgileri dosyasına yapıştırın ve kaydedin.  
+3. Not Defteri gibi bir metin düzenleyicisinde açın, bilgileri dosyasına yapıştırın ve kaydedin.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Yapı günlüğünde dahil bilgi miktarını değiştirmek için  
   
-1.  Menü çubuğunda, **Araçları**, **seçenekleri**.  
+1. Menü çubuğunda, **Araçları**, **seçenekleri**.  
   
-2.  Üzerinde **projeler ve çözümler** sayfasında **derleme ve çalıştırma** sayfası.  
+2. Üzerinde **projeler ve çözümler** sayfasında **derleme ve çalıştırma** sayfası.  
   
-3.  İçinde **MSBuild proje oluşturması çıkış ayrıntısı** listesinde, aşağıdaki değerlerden birini seçin ve ardından **Tamam** düğmesi.  
+3. İçinde **MSBuild proje oluşturması çıkış ayrıntısı** listesinde, aşağıdaki değerlerden birini seçin ve ardından **Tamam** düğmesi.  
   
     |Ayrıntı düzeyi|Açıklama|  
     |---------------------|-----------------|  

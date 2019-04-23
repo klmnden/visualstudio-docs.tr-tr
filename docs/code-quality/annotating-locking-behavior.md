@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053735"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 Çoklu iş parçacığı kullanan programınızda eşzamanlılık hataları önlemek için her zaman uygun kilitleme uzmanlık alanı izleyin ve SAL ek açıklamalarını kullanma.
@@ -55,11 +55,11 @@ ms.locfileid: "59653014"
 
  Aklınızda tutmanız gereken bazı iş parçacığı sahipliği kuralları:
 
--   Döndürme kilitlerini Temizle iş parçacığı sahipliğine uncounted kilitleri.
+- Döndürme kilitlerini Temizle iş parçacığı sahipliğine uncounted kilitleri.
 
--   NET iş parçacığı sahipliğine kilitleri Mutex'leri ve kritik bölüm sayılır.
+- NET iş parçacığı sahipliğine kilitleri Mutex'leri ve kritik bölüm sayılır.
 
--   Semafor ve olayları Temizle iş parçacığı sahipliği olmayan kilitleri sayılır.
+- Semafor ve olayları Temizle iş parçacığı sahipliği olmayan kilitleri sayılır.
 
 ## <a name="locking-annotations"></a>Kilitleme ek açıklamaları
  Aşağıdaki tabloda, kilitleme ek açıklamalar listelenmektedir.

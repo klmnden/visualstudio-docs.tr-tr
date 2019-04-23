@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6dd7f086a5e2163c1b2f6db2c6bd50c45c36e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796146"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065577"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl yapılır: Derlemede ortam değişkenlerini kullanma
 Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların değil bilgileri kullanarak yapı seçeneklerini ayarlamak gereklidir. Bu bilgiler genellikle ortam değişkenleri olarak depolanır.
@@ -38,7 +38,7 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>Bir özellik için varsayılan bir değer sağlamak için
 
--   Kullanım bir `Condition` özellik değeri yalnızca şu durumlarda ayarlamak için bir özellik özniteliğini değere sahip değil. Örneğin, aşağıdaki ayarlar kod `ToolsPath` özelliğini *c:\tools* yalnızca `ToolsPath` ortam değişkeninin ayarlı değil:
+- Kullanım bir `Condition` özellik değeri yalnızca şu durumlarda ayarlamak için bir özellik özniteliğini değere sahip değil. Örneğin, aşağıdaki ayarlar kod `ToolsPath` özelliğini *c:\tools* yalnızca `ToolsPath` ortam değişkeninin ayarlı değil:
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 

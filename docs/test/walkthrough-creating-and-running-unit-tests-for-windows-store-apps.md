@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: f02880e512f1030de0c53e2b68b463ac5ce2703a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1284dc529e4f150b282dcab2d919e027c9b606c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058454"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>İzlenecek yol: UWP uygulamaları için birim testleri oluşturma ve çalıştırma
 
@@ -30,19 +30,19 @@ Aşağıdaki yordamlar oluşturma, çalıştırma ve bir UWP uygulaması için b
 
 ## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Bir UWP uygulaması için birim test projesi oluşturma
 
-1.  Gelen **dosya** menüsünde seçin **yeni proje**.
+1. Gelen **dosya** menüsünde seçin **yeni proje**.
 
      **Yeni proje** iletişim kutusunu görüntüler.
 
-2.  Şablonlar'ın altında birim testleri oluşturun ve sonra kitaplık ilişkili Windows Evrensel birim testi için kullanmak istediğiniz programlama dilini seçin. Örneğin, **Visual C#** , ardından **Windows Evrensel**ve ardından **birim testi kitaplığı (Evrensel Windows)**.
+2. Şablonlar'ın altında birim testleri oluşturun ve sonra kitaplık ilişkili Windows Evrensel birim testi için kullanmak istediğiniz programlama dilini seçin. Örneğin, **Visual C#** , ardından **Windows Evrensel**ve ardından **birim testi kitaplığı (Evrensel Windows)**.
 
-3.  (İsteğe bağlı) İçinde **adı** metin kutusuna proje için kullanmak istediğiniz adı girin.
+3. (İsteğe bağlı) İçinde **adı** metin kutusuna proje için kullanmak istediğiniz adı girin.
 
-4.  (İsteğe bağlı) Girerek projeyi oluşturmak istediğiniz yolu değiştirmek **konumu** metin veya seçerek **Gözat** düğmesi.
+4. (İsteğe bağlı) Girerek projeyi oluşturmak istediğiniz yolu değiştirmek **konumu** metin veya seçerek **Gözat** düğmesi.
 
-5.  (İsteğe bağlı) İçinde **çözüm** ad metin kutusunda, çözümünüz için kullanmak istediğiniz ismi girin.
+5. (İsteğe bağlı) İçinde **çözüm** ad metin kutusunda, çözümünüz için kullanmak istediğiniz ismi girin.
 
-6.  Bırakın **çözüm için dizin oluştur** seçeneği seçili ve seçin **Tamam** düğmesi.
+6. Bırakın **çözüm için dizin oluştur** seçeneği seçili ve seçin **Tamam** düğmesi.
 
      ![Özel olarak uyarlanmış bir birim testi kitaplığı](../test/media/unit_test_win8_1.png)
 
@@ -52,13 +52,13 @@ Aşağıdaki yordamlar oluşturma, çalıştırma ve bir UWP uygulaması için b
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Birim test projesinin UWP uygulama bildirim dosyasını Düzenle
 
-1.  İçinde **Çözüm Gezgini**, sağ *Package.appxmanifest* seçin ve dosya **açık**.
+1. İçinde **Çözüm Gezgini**, sağ *Package.appxmanifest* seçin ve dosya **açık**.
 
      **Bildirim Tasarımcısı** düzenleme için görüntüler.
 
-2.  İçinde **bildirim Tasarımcısı**, seçin **özellikleri** sekmesi.
+2. İçinde **bildirim Tasarımcısı**, seçin **özellikleri** sekmesi.
 
-3.  Listenin altında **özellikleri**, birim sınamanız ve kod gereken yetenekleri seçin sahip sınamanız. Örneğin, **Internet** birim testi ve test ettiği kodun onay kutusu İnternet'e erişme özelliği olması gerekir.
+3. Listenin altında **özellikleri**, birim sınamanız ve kod gereken yetenekleri seçin sahip sınamanız. Örneğin, **Internet** birim testi ve test ettiği kodun onay kutusu İnternet'e erişme özelliği olması gerekir.
 
     > [!NOTE]
     > Seçtiğiniz yetenekler yalnızca birim testi düzgün çalışması gerekli olan yetenekleri içermelidir.
@@ -73,23 +73,23 @@ Aşağıdaki yordamlar oluşturma, çalıştırma ve bir UWP uygulaması için b
 
 ### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Çözümü derleyin ve Test Gezgini'ni kullanarak birim testini çalıştırmak için
 
-1.  Üzerinde **Test** menüsünde seçin **Windows**ve ardından **Test Gezgini**.
+1. Üzerinde **Test** menüsünde seçin **Windows**ve ardından **Test Gezgini**.
 
      **Test Gezgini** listelenmesini test görüntüler.
 
-2.  Gelen **derleme** menüsünde seçin **Çözümü Derle**.
+2. Gelen **derleme** menüsünde seçin **Çözümü Derle**.
 
      Birim testiniz artık listelenir.
 
     > [!NOTE]
     > Test Gezgini'nde birim testleri listesini güncelleme çözümünü oluşturmanız gerekir.
 
-3.  İçinde **Test Gezgini**, oluşturduğunuz birim sınamayı seçin.
+3. İçinde **Test Gezgini**, oluşturduğunuz birim sınamayı seçin.
 
     > [!TIP]
     > Test Gezgini kaynak koda bir bağlantı yanındaki sağlar **kaynak:**.
 
-4.  Seçin **çalıştırması**.
+4. Seçin **çalıştırması**.
 
      ![Birim Test Gezgini &#45; birim testi çalıştırma](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 

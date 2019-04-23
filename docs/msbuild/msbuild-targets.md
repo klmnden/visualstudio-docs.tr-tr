@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070683"
 ---
 # <a name="msbuild-targets"></a>MSBuild hedefleri
 Hedefler görevleri belirli bir sıraya göre gruplandırabilir ve daha küçük birimlere factored için derleme işlemindeki izin. Örneğin, bir hedef başka bir proje için girişler derler ve bunları boş dizine yerleştirir, derleme için hazırlamak için çıkış dizinindeki tüm dosyaları silebilirsiniz. Görevler hakkında daha fazla bilgi için bkz. [görevleri](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Hedefler görevleri belirli bir sıraya göre gruplandırabilir ve daha küçük
 ## <a name="target-build-order"></a>Hedef derleme sırası
  Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Hangi hedeflerin çalıştırma sırasını belirlemek için çeşitli yollar vardır.
 
--   Başlangıç hedefleri
+- Başlangıç hedefleri
 
--   Varsayılan hedefler
+- Varsayılan hedefler
 
--   İlk hedef
+- İlk hedef
 
--   Hedef bağımlılıklar
+- Hedef bağımlılıklar
 
--   `BeforeTargets` ve `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` ve `AfterTargets` (MSBuild 4.0)
 
 Bir sonraki hedef yapı ona bağlı olsa bile bir hedef iki kez tek bir yapı sırasında hiçbir zaman çalışır. Bir hedef çalıştırıldıktan sonra derleme katkısı tamamlanmıştır.
 

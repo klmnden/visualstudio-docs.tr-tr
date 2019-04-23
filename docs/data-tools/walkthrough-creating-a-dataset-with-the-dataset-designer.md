@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f91c24885cc6817889671dd7a1a6e7e1686ce93f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070531"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>İzlenecek yol: Veri kümesi Tasarımcısı ile veri kümesi oluşturma
 
@@ -28,9 +28,9 @@ Bu kılavuzda kullanarak bir veri kümesi oluşturursunuz **veri kümesi Tasarı
 
 Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır.
 
-1.  SQL Server Express LocalDB yoksa,'nden ya da yükleme [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio yükleyicisi, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
+1. SQL Server Express LocalDB yoksa,'nden ya da yükleme [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. Visual Studio yükleyicisi, SQL Server Express LocalDB parçası olarak yüklenebilir **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
 
-2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
+2. Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
     1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (Bir parçası olarak SQL Server Nesne Gezgini yüklü **veri depolama ve işleme** iş yükünü Visual Studio Yükleyicisi'nde.) Genişletin **SQL Server** düğümü. LocalDB Örneğinizde sağ tıklayıp **yeni sorgu**.
 
@@ -56,23 +56,23 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Uygulamaya yeni bir veri kümesi ekleyin
 
-1.  Üzerinde **proje** menüsünde **Yeni Öğe Ekle**.
+1. Üzerinde **proje** menüsünde **Yeni Öğe Ekle**.
 
      **Yeni Öğe Ekle** iletişim kutusu görünür.
 
-2.  Sol bölmede seçin **veri**, ardından **veri kümesi** orta bölmesinde.
+2. Sol bölmede seçin **veri**, ardından **veri kümesi** orta bölmesinde.
 
-3.  Veri kümesi adı **NorthwindDataset**ve ardından **Ekle**.
+3. Veri kümesi adı **NorthwindDataset**ve ardından **Ekle**.
 
      Visual Studio adlı bir dosya ekler **NorthwindDataset.xsd** projeye ve onu açar **veri kümesi Tasarımcısı**.
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Sunucu Gezgini'nde bir veri bağlantısı oluşturma
 
-1.  Üzerinde **görünümü** menüsünü tıklatın **Sunucu Gezgini**.
+1. Üzerinde **görünümü** menüsünü tıklatın **Sunucu Gezgini**.
 
-2.  İçinde **Sunucu Gezgini**, tıklayın **veritabanına bağlan** düğmesi.
+2. İçinde **Sunucu Gezgini**, tıklayın **veritabanına bağlan** düğmesi.
 
-3.  Northwind örnek veritabanına bağlantı oluşturun.
+3. Northwind örnek veritabanına bağlantı oluşturun.
 
 ## <a name="create-the-tables-in-the-dataset"></a>Dataset içinde tablolar oluşturmak
 
@@ -80,33 +80,33 @@ Bu bölümde, veri kümesi için tablo ekleme açıklanmaktadır.
 
 ### <a name="to-create-the-customers-table"></a>Müşteriler tablosu oluşturmak için
 
-1.  Oluşturduğunuz veri bağlantısı genişletin **Sunucu Gezgini**ve ardından **tabloları** düğümü.
+1. Oluşturduğunuz veri bağlantısı genişletin **Sunucu Gezgini**ve ardından **tabloları** düğümü.
 
-2.  Sürükleme **müşteriler** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
+2. Sürükleme **müşteriler** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
 
      A **müşteriler** veri tablosu ve **CustomersTableAdapter** veri kümesine eklenir.
 
 ### <a name="to-create-the-orders-table"></a>Siparişler tablosu oluşturmak için
 
--   Sürükleme **siparişler** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
+- Sürükleme **siparişler** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
 
      Bir **siparişler** veri tablosu **orderstableadapter bağdaştırıcısına**ve arasında veri ilişkisi **müşteriler** ve **siparişler** tabloları eklenir veri kümesi.
 
 ### <a name="to-create-the-orderdetails-table"></a>OrderDetails tablo oluşturmak için
 
--   Sürükleme **sipariş ayrıntıları** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
+- Sürükleme **sipariş ayrıntıları** tablosunda **Sunucu Gezgini** üzerine **veri kümesi Tasarımcısı**.
 
      Bir **sipariş ayrıntıları** veri tablosu **OrderDetailsTableAdapter**ve arasında veri ilişkisi **siparişler** ve **OrderDetails** tabloları veri kümesine eklenir.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
--   Veri kümesini kaydetme.
+- Veri kümesini kaydetme.
 
--   Öğe seçin **veri kaynakları** penceresi ve bunları formunuza sürükleyin. Daha fazla bilgi için [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+- Öğe seçin **veri kaynakları** penceresi ve bunları formunuza sürükleyin. Daha fazla bilgi için [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
--   Daha fazla sorgular için TableAdapter'ları ekleyin.
+- Daha fazla sorgular için TableAdapter'ları ekleyin.
 
--   Doğrulama mantığı eklemenize <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> veri kümesindeki veri tablolarının olayları. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).
+- Doğrulama mantığı eklemenize <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> veri kümesindeki veri tablolarının olayları. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
