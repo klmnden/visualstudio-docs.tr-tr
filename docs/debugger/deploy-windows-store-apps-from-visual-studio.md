@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065746"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio’dan UWP uygulamaları dağıtma
 
@@ -36,18 +36,18 @@ Dağıtım, kullanarak uygulamanızı Visual Studio'dan hata ayıklaması yapark
 
 - Başlatıldığında ayıklanacak bir uygulamayı başka bir uygulama veya metodu tarafından dağıtılıyor.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Bir UWP uygulaması dağıtma
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Bir UWP uygulaması dağıtma
  El ile uygulama dağıtma basit bir işlemdir:
 
-1.  Uzak cihaza dağıtıyorsanız, uygulamanın başlangıç projesi özellik Proje sayfasının adını veya cihazın IP adresini belirtin. (Bu olan yapmak için bu konudaki aşağıya listelenen adımları.).
+1. Uzak cihaza dağıtıyorsanız, uygulamanın başlangıç projesi özellik Proje sayfasının adını veya cihazın IP adresini belirtin. (Bu olan yapmak için bu konudaki aşağıya listelenen adımları.).
 
-2.  Yanındaki aşağı açılan listeden hata ayıklayıcı Visual Studio araç çubuğunda dağıtım hedefini seçin **hata ayıklamayı Başlat** düğmesi.
+2. Yanındaki aşağı açılan listeden hata ayıklayıcı Visual Studio araç çubuğunda dağıtım hedefini seçin **hata ayıklamayı Başlat** düğmesi.
 
      ![Yerel makinede çalıştırma](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  Üzerinde **derleme** menüsünde seçin **Dağıt**
+3. Üzerinde **derleme** menüsünde seçin **Dağıt**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Uzak cihaz belirtme
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Uzak cihaz belirtme
 
 **Önkoşullar**
 
@@ -92,7 +92,7 @@ Dağıtım, uygulama dosyaları uzak cihaza göndermek için uzaktan hata ayıkl
 
 10. Uzak cihaz ağ adını **uzak makine** kutusuna veya tıklayın **bulmak** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.
 
-##  <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri
+## <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri
 
 Aşağıdaki dağıtım seçeneklerinden başlangıç projesinin hata ayıklama özellik sayfasından ayarlayabilirsiniz.
 

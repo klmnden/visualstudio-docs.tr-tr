@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066045"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza tablo ekleme
 
@@ -47,9 +47,9 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
 
 4. İçinde **özellikleri** penceresinde aşağıdaki form özelliklerini ayarlayın.
 
-   1.  Formun değiştirme **metin** özelliğinden **Form1** için **eşleştirme oyunu**. Bu metin oyun penceresinin en üstünde görünür.
+   1. Formun değiştirme **metin** özelliğinden **Form1** için **eşleştirme oyunu**. Bu metin oyun penceresinin en üstünde görünür.
 
-   2.  Formun boyutunu 550 piksel genişliğe ve 550 piksel uzunluğa ayarlayın. Ayarlayarak ya da bunu yapabilirsiniz **boyutu** özelliğini **550, 550**, veya tümleşik geliştirme ortamı (sağ alt köşesinde doğru boyutu görünceye kadar formu köşesinden sürükleyerek IDE).
+   2. Formun boyutunu 550 piksel genişliğe ve 550 piksel uzunluğa ayarlayın. Ayarlayarak ya da bunu yapabilirsiniz **boyutu** özelliğini **550, 550**, veya tümleşik geliştirme ortamı (sağ alt köşesinde doğru boyutu görünceye kadar formu köşesinden sürükleyerek IDE).
 
 5. Seçerek araç kutusunu görüntüleyin **araç kutusu** IDE'nin sol tarafındaki sekmesi.
 
@@ -76,19 +76,19 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
 
     TableLayoutPanel seçili durumdayken araç kutusunu açın ve eklemek bir <xref:System.Windows.Forms.Label> denetimi (bulunan **ortak denetimleri** kategorisi) TableLayoutPanel öğesinin sol üst hücresine. Etiket denetimi artık IDE'de seçilmesi gerekir. Bu öğe için aşağıdaki özellikleri ayarlayın.
 
-   1.  Etiketin olduğundan emin olun **BackColor** özelliği **CornflowerBlue**.
+   1. Etiketin olduğundan emin olun **BackColor** özelliği **CornflowerBlue**.
 
-   2.  Ayarlama **AutoSize** özelliğini **False**.
+   2. Ayarlama **AutoSize** özelliğini **False**.
 
-   3.  Ayarlama **Dock** özelliğini **dolgu**.
+   3. Ayarlama **Dock** özelliğini **dolgu**.
 
-   4.  Ayarlama **TextAlign** özelliğini **MiddleCenter** özelliğin yanındaki açılan düğmeyi seçerek ve ardından Orta düğmeyi seçerek. Böylece, simgenin hücrenin ortasında görünmesi sağlanır.
+   4. Ayarlama **TextAlign** özelliğini **MiddleCenter** özelliğin yanındaki açılan düğmeyi seçerek ve ardından Orta düğmeyi seçerek. Böylece, simgenin hücrenin ortasında görünmesi sağlanır.
 
-   5.  Seçin **yazı tipi** özelliği. Üç nokta (**...** ) düğmesi görünmelidir.
+   5. Seçin **yazı tipi** özelliği. Üç nokta (**...** ) düğmesi görünmelidir.
 
-   6.  Üç nokta düğmesini seçin ve ayarlayın **yazı tipi** değerini **Webdings**, **yazı tipi stili** için **kalın**ve **boyutu** için **48**.
+   6. Üç nokta düğmesini seçin ve ayarlayın **yazı tipi** değerini **Webdings**, **yazı tipi stili** için **kalın**ve **boyutu** için **48**.
 
-   7.  Ayarlama **metin** harf etiketi özelliği **c**.
+   7. Ayarlama **metin** harf etiketi özelliği **c**.
 
         TableLayoutPanel öğesinin sol üst hücresinde şimdi, mavi arka plan üzerinde ortalanmış bir siyah kutu yer alıyor olmalıdır.
 
@@ -106,6 +106,6 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Sonraki öğretici adımına gitmek için bkz: [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Genel Bakış konusuna dönmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).
+- Genel Bakış konusuna dönmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).

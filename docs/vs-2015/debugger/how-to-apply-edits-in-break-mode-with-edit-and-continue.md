@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069932"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,46 +38,46 @@ Düzenle ve devam et, kesme modunda kodunuzu düzenleyin ve ardından durdurup y
   
  Düzenle ve devam et hata ayıklama aşağıdaki senaryolarda kullanılabilir değil:  
   
--   Karma mod (yerel/yönetilen) hata ayıklama.  
+- Karma mod (yerel/yönetilen) hata ayıklama.  
   
--   SQL hata ayıklama.  
+- SQL hata ayıklama.  
   
--   Bir Dr hata ayıklama. Watson dökümü.  
+- Bir Dr hata ayıklama. Watson dökümü.  
   
--   İşlenmeyen bir özel durumdan sonra kod düzenleme, **işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme** seçeneği belirlenmez.  
+- İşlenmeyen bir özel durumdan sonra kod düzenleme, **işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme** seçeneği belirlenmez.  
   
--   Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
+- Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
   
--   Bir uygulama ile hata ayıklama **ekleme** uygulamasıyla çalışan yerine **Başlat** gelen **hata ayıklama** menüsü.  
+- Bir uygulama ile hata ayıklama **ekleme** uygulamasıyla çalışan yerine **Başlat** gelen **hata ayıklama** menüsü.  
   
--   En iyi duruma getirilmiş kodda hata ayıklama.  
+- En iyi duruma getirilmiş kodda hata ayıklama.  
   
--   64 bitlik bir uygulama hedeflendiğinde, yönetilen kodda hata ayıklama. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (_Proje_**özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
+- 64 bitlik bir uygulama hedeflendiğinde, yönetilen kodda hata ayıklama. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (_Proje_**özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
   
--   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
+- Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
   
 ### <a name="to-edit-code-in-break-mode"></a>Kesme modunda kod düzenlemek için  
   
-1.  Aşağıdakilerden birini yaparak Kesme moduna girin:  
+1. Aşağıdakilerden birini yaparak Kesme moduna girin:  
   
-    -   Kodunuzda bir kesme noktası ayarlayın ve ardından **hata ayıklamayı Başlat** gelen **hata ayıklama** menü ve kesme noktasına isabet uygulamaya tamamlanmasını bekleyin.  
-  
-         – veya –  
-  
-    -   Hata ayıklamayı başlatın ve ardından **tümünü Kes** gelen **hata ayıklama** menüsü.  
+    - Kodunuzda bir kesme noktası ayarlayın ve ardından **hata ayıklamayı Başlat** gelen **hata ayıklama** menü ve kesme noktasına isabet uygulamaya tamamlanmasını bekleyin.  
   
          – veya –  
   
-    -   Bir özel durum oluştuğunda seçin **düzenlemeyi etkinleştir** üzerinde**özel durum Yardımcısı'nı**.  
+    - Hata ayıklamayı başlatın ve ardından **tümünü Kes** gelen **hata ayıklama** menüsü.  
   
-2.  İstenen ve yasal kod değişikliklerini yapın.  
+         – veya –  
+  
+    - Bir özel durum oluştuğunda seçin **düzenlemeyi etkinleştir** üzerinde**özel durum Yardımcısı'nı**.  
+  
+2. İstenen ve yasal kod değişikliklerini yapın.  
   
      Daha fazla bilgi için [desteklenmeyen düzenlemeler Visual Basic Düzenle ve devam et](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     >  Bir kod bu değişikliği yapmak için Düzenle ve devam et tarafından izin verilmiyor dener düzenlemeniz tarafından mor dalgalı çizgi altı çizili olacaktır ve bir görev görev listesinde görünür. Geçersiz kod değişikliği geri sürece kod yürütülmesine devam etmek mümkün olmayacaktır.  
   
-3.  Üzerinde **hata ayıklama** menüsünde tıklatın **devam** yürütme devam etmek için.  
+3. Üzerinde **hata ayıklama** menüsünde tıklatın **devam** yürütme devam etmek için.  
   
      Kodunuz artık projeye dahil uygulanan düzenlemeleriniz ile yürütür.  
   

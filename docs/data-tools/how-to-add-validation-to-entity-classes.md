@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f4f2f5e44ea95137f53019f52de94a5389fa6d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070244"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Nasıl yapılır: Varlık sınıflarına doğrulama ekleme
 *Doğrulama* varlık sınıfları olan veri nesnelerine girilen değerlerin bir nesnenin şeması ve ayrıca uygulama için belirlenen kurallara kısıtlamalarıyla uyumlu onaylanması işlemidir. Alttaki veritabanına güncelleştirmeleri göndermeden önce verileri doğrulamak hataları azaltan iyi bir uygulamadır. Ayrıca, bir uygulama ve veritabanı arasındaki gidiş gelişlerin potansiyel sayısını da azaltır.
@@ -33,23 +33,23 @@ ms.locfileid: "55913502"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Bir sütunun değeri değişikliği sırasında verileri doğrulamak için
 
-1.  Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde **O/R Tasarımcısı**. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
+1. Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde **O/R Tasarımcısı**. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
 
-2.  İçinde **O/R Tasarımcısı**, doğrulama ekleyin ve ardından istediğiniz sınıfı sağ **kodu görüntüle**.
+2. İçinde **O/R Tasarımcısı**, doğrulama ekleyin ve ardından istediğiniz sınıfı sağ **kodu görüntüle**.
 
      Seçilen varlık sınıfı için bir parçalı sınıf Kod Düzenleyicisi açılır.
 
-3.  Kısmi class içinde imleci yerleştirin.
+3. Kısmi class içinde imleci yerleştirin.
 
-4.  Visual Basic projeleri için:
+4. Visual Basic projeleri için:
 
-    1.  Genişletin **yöntem adı** listesi.
+    1. Genişletin **yöntem adı** listesi.
 
-    2.  Bulun **OnCOLUMNNAMEChanging** doğrulama eklemek istediğiniz sütun için yöntemi.
+    2. Bulun **OnCOLUMNNAMEChanging** doğrulama eklemek istediğiniz sütun için yöntemi.
 
-    3.  Bir `OnCOLUMNNAMEChanging` yöntemi kısmi sınıfa eklenir.
+    3. Bir `OnCOLUMNNAMEChanging` yöntemi kısmi sınıfa eklenir.
 
-    4.  İlk girilen değer ve ardından sütun için girilen değer emin olmak için uygulamanız için kabul edilebilir olduğunu doğrulamak için aşağıdaki kodu ekleyin. `value` Bağımsız değişken içeren önerilen değeri, bu nedenle bunun geçerli bir değer olduğunu doğrulamak için mantığı ekleyin:
+    4. İlk girilen değer ve ardından sütun için girilen değer emin olmak için uygulamanız için kabul edilebilir olduğunu doğrulamak için aşağıdaki kodu ekleyin. `value` Bağımsız değişken içeren önerilen değeri, bu nedenle bunun geçerli bir değer olduğunu doğrulamak için mantığı ekleyin:
 
         ```vb
         If value.HasValue Then
@@ -79,23 +79,23 @@ ms.locfileid: "55913502"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Bir varlık sınıfı için bir güncelleştirme sırasında verileri doğrulamak için
 
-1.  Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde **O/R Tasarımcısı**. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
+1. Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde **O/R Tasarımcısı**. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
 
-2.  Boş bir alana sağ **O/R Tasarımcısı** tıklatıp **kodu görüntüle**.
+2. Boş bir alana sağ **O/R Tasarımcısı** tıklatıp **kodu görüntüle**.
 
      Kısmi bir sınıf için kod düzenleyicisi açılır `DataContext`.
 
-3.  Kısmi sınıf için imleci yerleştirin `DataContext`.
+3. Kısmi sınıf için imleci yerleştirin `DataContext`.
 
-4.  Visual Basic projeleri için:
+4. Visual Basic projeleri için:
 
-    1.  Genişletin **yöntem adı** listesi.
+    1. Genişletin **yöntem adı** listesi.
 
-    2.  Tıklayın **UpdateENTITYCLASSNAME**.
+    2. Tıklayın **UpdateENTITYCLASSNAME**.
 
-    3.  Bir `UpdateENTITYCLASSNAME` yöntemi kısmi sınıfa eklenir.
+    3. Bir `UpdateENTITYCLASSNAME` yöntemi kısmi sınıfa eklenir.
 
-    4.  Kullanarak ayrı ayrı sütun değerlerine erişim `instance` bağımsız değişken, aşağıdaki kodda gösterildiği gibi:
+    4. Kullanarak ayrı ayrı sütun değerlerine erişim `instance` bağımsız değişken, aşağıdaki kodda gösterildiği gibi:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then

@@ -15,25 +15,25 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7ff48dec8d38b57d400f31f294a0d0b40ed6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065727"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Nasıl yapılır: İş Akışı Proje Özelliklerini Yapılandırma (Eski)
 İş akışı projeleri ile ilişkili özellikleri görüntülemek veya değiştirmek için aşağıdaki adımları izleyin.  
   
 ### <a name="to-view-or-modify-workflow-project-properties"></a>İş akışı proje özelliklerini görüntülemek veya değiştirmek için  
   
-1.  Varsa **Çözüm Gezgini** pencere görünür, select değil **Çözüm Gezgini** üzerinde **görünümü** menüsü.  
+1. Varsa **Çözüm Gezgini** pencere görünür, select değil **Çözüm Gezgini** üzerinde **görünümü** menüsü.  
   
-2.  İçinde **Çözüm Gezgini**, bir proje seçin.  
+2. İçinde **Çözüm Gezgini**, bir proje seçin.  
   
-3.  Varsa **özellikleri** pencere görünür, select değil **Özellikler penceresi** üzerinde **görünümü** menüsü.  
+3. Varsa **özellikleri** pencere görünür, select değil **Özellikler penceresi** üzerinde **görünümü** menüsü.  
   
-4.  Projedeki **özellikleri** penceresinde görüntülemek ve değiştirmek istediğiniz özelliklerini değiştirin.  
+4. Projedeki **özellikleri** penceresinde görüntülemek ve değiştirmek istediğiniz özelliklerini değiştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski İş Akışı Projeleri Oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)

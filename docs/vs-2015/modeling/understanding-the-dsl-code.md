@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068437"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
   
  Çözümü yeniden derlediğinizde, yaptığınız düzenlemeleri kaybolacağı için oluşturulan kodun doğrudan düzenlemenizi öneririz. Bunun yerine, DSL'nizi özelleştirmek için:  
   
--   DSL tanımındaki birçok parametreleri ayarlayın.  
+- DSL tanımındaki birçok parametreleri ayarlayın.  
   
--   Kısmi sınıflar ayrı kod dosyalarında tanımlanan veya devralınan tarafından üretilen sınıfları geçersiz kılma yöntemleri yazın. Bazı durumlarda ayarlamak zorunda **Generates Double Derived** oluşturulan bir yöntemi geçersiz kılmak için DSL tanımındaki bir sınıfın seçeneği.  
+- Kısmi sınıflar ayrı kod dosyalarında tanımlanan veya devralınan tarafından üretilen sınıfları geçersiz kılma yöntemleri yazın. Bazı durumlarda ayarlamak zorunda **Generates Double Derived** oluşturulan bir yöntemi geçersiz kılmak için DSL tanımındaki bir sınıfın seçeneği.  
   
--   DSL tanımındaki 'kancaları' için kendi kodunuzu sağlamak oluşturulan kodu neden seçeneklerini ayarlayın.  
+- DSL tanımındaki 'kancaları' için kendi kodunuzu sağlamak oluşturulan kodu neden seçeneklerini ayarlayın.  
   
      Örneğin ayarlarsanız, **sahip özel Oluşturucu** alan sınıfının seçeneğini ve ardından Çözümü derleyin, hata iletisi görürsünüz. Bu hata iletilerinden biri çift tıkladığınızda, özel kodunuz sağlamanız açıklayan oluşturulan kod açıklamaları görürsünüz.  
   
--   Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve bu oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları, kendi dosya yapısı ile başlatılır projeleri ayarlamak için.  
+- Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve bu oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları, kendi dosya yapısı ile başlatılır projeleri ayarlamak için.  
   
 ## <a name="generated-files-in-dsl"></a>Dsl içinde oluşturulan dosyalar  
  Aşağıdaki oluşturulan dosyalar görünür **Dsl** proje.  

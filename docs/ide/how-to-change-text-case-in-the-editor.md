@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067397"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Nasıl yapılır: Düzenleyicide büyük/küçük harf değiştirme
 
@@ -27,11 +27,11 @@ Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürü
 
 ## <a name="to-switch-text-to-upper-case"></a>Metni büyük harfe geçiş yapmak için
 
-1.  Dönüştürmek istediğiniz metni seçin.
+1. Dönüştürmek istediğiniz metni seçin.
 
-2.  Üzerinde **Düzenle** menüsünde **Gelişmiş**.
+2. Üzerinde **Düzenle** menüsünde **Gelişmiş**.
 
-3.  Metni büyük harfe dönüştürülecek seçin **olun büyük**, veya basın **Ctrl**+**Shift**+**U**.
+3. Metni büyük harfe dönüştürülecek seçin **olun büyük**, veya basın **Ctrl**+**Shift**+**U**.
 
     — veya —
 

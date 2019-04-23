@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068671"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Nasıl yapılır: Bir Bulucu metoduna filtre tanımlayıcısı ekleme
   Filtre tanımlayıcıları, yürütmeden önce değerleri yöntemlere geçirmek model tüketicilerinin etkinleştirin. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617788"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Bir Bulucu metoduna filtre tanımlayıcısı ekleme
 
-1.  İçinde **BDC yöntem ayrıntıları** penceresinde bir Bulucu yöntemi düğümünü genişletin, **parametreleri** düğümünü ve ardından giriş parametresi ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir yönteme parametre eklemek](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. İçinde **BDC yöntem ayrıntıları** penceresinde bir Bulucu yöntemi düğümünü genişletin, **parametreleri** düğümünü ve ardından giriş parametresi ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir yönteme parametre eklemek](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  İçinde **metot ayrıntıları** penceresinde, parametrenin tür tanımlayıcısını seçin.
+2. İçinde **metot ayrıntıları** penceresinde, parametrenin tür tanımlayıcısını seçin.
 
-3.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
+3. Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
 
-4.  İçinde **özellikleri** penceresinde **tür adı** özellik filtresi için uygun bir veri türü.
+4. İçinde **özellikleri** penceresinde **tür adı** özellik filtresi için uygun bir veri türü.
 
      Örneğin, bir filtre, sipariş tarihi yöntem tarafından döndürülen satış siparişleri sayısını sınırlamak için kullanabilirsiniz. Bu filtre desteklemek için **tür adı** tür tanımlayıcısı özelliği ayarlanmalıdır **System.DateTime**.
 
-5.  İçinde **metot ayrıntıları** penceresini genişletin **filtre tanımlayıcıları** düğümü.
+5. İçinde **metot ayrıntıları** penceresini genişletin **filtre tanımlayıcıları** düğümü.
 
-6.  İçinde **filtre tanımlayıcısı ekleme** listesinde **filtre tanımlayıcısı oluştur**.
+6. İçinde **filtre tanımlayıcısı ekleme** listesinde **filtre tanımlayıcısı oluştur**.
 
      Yeni filtre tanımlayıcısı düğmesinin altında görünür **filtre tanımlayıcıları** düğümü.
 
-7.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
+7. Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
 
-8.  İçinde **özellikleri** penceresinde seçin **türü** özelliği.
+8. İçinde **özellikleri** penceresinde seçin **türü** özelliği.
 
 9. İçin görüntülenen listedeki **türü** özelliğini istediğiniz filtre deseni seçin.
 

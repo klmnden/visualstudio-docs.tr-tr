@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068333"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML modelleme projeleri ve diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
 > [!NOTE]
 >  Başka tür bir program kodunu görselleştirmek için kullanılan .NET sınıf diyagramına diyagramın yoktur. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="CreatingModelingDiagrams"></a> Bir modelleme projesinde bir diyagram oluşturma  
+## <a name="CreatingModelingDiagrams"></a> Bir modelleme projesinde bir diyagram oluşturma  
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Bir diyagram oluşturma ve bunu projeye ekleyin  
@@ -61,9 +61,9 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
      \- veya -  
   
-   1.  Seçin **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
+   1. Seçin **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
   
-   2.  İçinde **yeni modelleme projesi** iletişim kutusu, bir ad ve yeni proje için bir konum yazın ve ardından **Tamam**.  
+   2. İçinde **yeni modelleme projesi** iletişim kutusu, bir ad ve yeni proje için bir konum yazın ve ardından **Tamam**.  
   
         ![Yeni modelleme projesi oluştur iletişim kutusu](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
@@ -73,16 +73,16 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Varolan bir modelleme projesine bir diyagramı eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
+1. İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
   
     > [!NOTE]
     >  Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
+2. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
-3.  İçinde **Yeni Öğe Ekle -**  *\<proje adı >* iletişim kutusunun **şablonları**, modelleme tıklayın diyagram türü, örneğin, **UML Bileşen Diyagramı**.  
+3. İçinde **Yeni Öğe Ekle -**  *\<proje adı >* iletişim kutusunun **şablonları**, modelleme tıklayın diyagram türü, örneğin, **UML Bileşen Diyagramı**.  
   
-4.  Diyagram için bir ad yazın ve ardından **Ekle**.  
+4. Diyagram için bir ad yazın ve ardından **Ekle**.  
   
      Modelleme Diyagramında açılır ve modelleme projesinde görünür.  
   
@@ -91,22 +91,22 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 #### <a name="to-create-a-blank-modeling-project"></a>Boş bir modelleme projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**, tıklayın **modelleme projeleri**.  
+2. İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**, tıklayın **modelleme projeleri**.  
   
-3.  Orta pencerede **modelleme projesine**.  
+3. Orta pencerede **modelleme projesine**.  
   
-4.  Projeyi adlandırın ve bir konumda belirtin **adı** ve **konumu** kutuları.  
+4. Projeyi adlandırın ve bir konumda belirtin **adı** ve **konumu** kutuları.  
   
-5.  İçinde **çözüm** kutusunda **eklemek için çözüm** zaten açık; bir çözüme yeni projeyi eklemek için veya **yeni çözüm oluşturma** herhangi bir açık çözümü kapatın ve eklemek için Yeni bir çözüme proje.  
+5. İçinde **çözüm** kutusunda **eklemek için çözüm** zaten açık; bir çözüme yeni projeyi eklemek için veya **yeni çözüm oluşturma** herhangi bir açık çözümü kapatın ve eklemek için Yeni bir çözüme proje.  
   
-##  <a name="RemovingModelingDiagrams"></a> Modelleme diyagramları bir projeden kaldırılıyor  
+## <a name="RemovingModelingDiagrams"></a> Modelleme diyagramları bir projeden kaldırılıyor  
  Bir diyagram kalıcı olarak silebilir veya geçici olarak bir diyagram bir projeden çıkarın ve sonra geri yükleyin.  
   
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Bir diyagram bir projeden kalıcı olarak silmek için  
   
--   İçinde **Çözüm Gezgini**diyagramda temsil eden ana dosyaya sağ tıklayın ve ardından **Sil**.  
+- İçinde **Çözüm Gezgini**diyagramda temsil eden ana dosyaya sağ tıklayın ve ardından **Sil**.  
   
      Diyagramı proje ve dosya sistemi kaldırılır. Diyagram üzerinde gösterilen öğeler kaldırılmaz **UML Model Gezgini**.  
   
@@ -115,7 +115,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Geçici olarak bir diyagram bir projeden Çıkart  
   
--   İçinde **Çözüm Gezgini**diyagram dosyasını sağ tıklayın ve ardından **projeden Çıkart**.  
+- İçinde **Çözüm Gezgini**diyagram dosyasını sağ tıklayın ve ardından **projeden Çıkart**.  
   
      Diyagram projeden kaldırıldı. Dosya sisteminden kaldırılmaz.  
   
@@ -124,30 +124,30 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Geçici olarak çıkarılmış bir diyagramı projeye geri yüklemek için  
   
-1.  İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
+1. İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
   
     > [!NOTE]
     >  Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
   
-2.  Üzerinde **proje** menüsünde tıklatın **varolan öğeyi Ekle**.  
+2. Üzerinde **proje** menüsünde tıklatın **varolan öğeyi Ekle**.  
   
-3.  İçinde **varolan öğeyi Ekle** iletişim kutusunda diyagram dosyasını bulun, dosyayı seçin ve ardından **Ekle**.  
+3. İçinde **varolan öğeyi Ekle** iletişim kutusunda diyagram dosyasını bulun, dosyayı seçin ve ardından **Ekle**.  
   
      Modelleme Diyagramında açılır ve modelleme projesinde görünür.  
   
     > [!NOTE]
     >  Her diyagram dosyalarının bir çiftini dosya sisteminde yok. Uzantılı bir dosya seçmeyin `.layout`. Ayrıca, Visual Studio için birden fazla modelleme projesine mevcut UML diyagramları eklemeyi desteklemez. Her diyagram dosyası içinde oluşturulmuş bir modelleme projesi içinde açılması gerekir. Bir UML diyagram, modelleme projesi tarafından sahip olunan bir modelin görüntüler olmasıdır.  
   
-##  <a name="NonModelDiagrams"></a> Modelleme projeleri gerektirmeyen diyagramları  
+## <a name="NonModelDiagrams"></a> Modelleme projeleri gerektirmeyen diyagramları  
  Aşağıdaki tür diyagramlar bir modelleme projesi parçası değildir:  
   
--   Sınıf diyagramları kaynak kodunun bir görünüm oluşturulur. Bunlar için UML sınıf diyagramları ilgili değildir. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](../ide/designing-and-viewing-classes-and-types.md).  
+- Sınıf diyagramları kaynak kodunun bir görünüm oluşturulur. Bunlar için UML sınıf diyagramları ilgili değildir. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Kod haritaları. Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
+- Kod haritaları. Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
   
--   UML diyagramları veya etki alanına özgü diller gibi katman diyagramları olmayan diyagramları.  
+- UML diyagramları veya etki alanına özgü diller gibi katman diyagramları olmayan diyagramları.  
   
-##  <a name="TroubleshootingModelingProjects"></a> Modelleme projeleri ve diyagramları sorunlarını giderme  
+## <a name="TroubleshootingModelingProjects"></a> Modelleme projeleri ve diyagramları sorunlarını giderme  
  Aşağıdaki tabloda modelleme projeleri veya diyagramları ve bunların nasıl çözüleceğine ile ortaya çıkabilecek sorunları açıklar:  
   
 |**Sorunu**|**Neden olur**|**Çözümleme**|  

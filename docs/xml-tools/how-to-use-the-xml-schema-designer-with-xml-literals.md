@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067618"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Nasıl yapılır: XML Şema Tasarımcısını XML değişmez değerleri ile kullanma
 
@@ -23,7 +23,7 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
 
 ## <a name="create-a-new-visual-basic-project"></a>Yeni bir Visual Basic projesi oluşturma
 
-1.  Visual Studio'yu açın.
+1. Visual Studio'yu açın.
 
 2. Yeni bir Visual Basic Oluştur **konsol uygulaması** adlı proje **XMLLiterals**.
 
@@ -31,11 +31,11 @@ Bu konuda, bir Visual Basic projesinde sabit değeri bir XML ile ilişkili bir �
 
 ## <a name="add-an-existing-xsd-file"></a>Mevcut bir XSD dosyası ekleme
 
-1.  Yeni bir metin dosyasını Not Defteri'nde açın. XML şema örnek koddan kopyalama [satın alma siparişi şeması](../xml-tools/sample-xsd-file-simple-schema.md) dosyasına yapıştırın.
+1. Yeni bir metin dosyasını Not Defteri'nde açın. XML şema örnek koddan kopyalama [satın alma siparişi şeması](../xml-tools/sample-xsd-file-simple-schema.md) dosyasına yapıştırın.
 
-2.  Dosya adı ile bir konuma kaydedin *PurchaseOrderSchema.xsd*.
+2. Dosya adı ile bir konuma kaydedin *PurchaseOrderSchema.xsd*.
 
-3.  İçinde **Çözüm Gezgini**, projenin adını sağ tıklayın, **Ekle**ve ardından **var olan öğe**. **AddExisting öğesi** iletişim kutusu görüntülenir. Gözat *PurchaseOrderSchema.xsd* dosya seçin ve ardından **Ekle**.
+3. İçinde **Çözüm Gezgini**, projenin adını sağ tıklayın, **Ekle**ve ardından **var olan öğe**. **AddExisting öğesi** iletişim kutusu görüntülenir. Gözat *PurchaseOrderSchema.xsd* dosya seçin ve ardından **Ekle**.
 
      XMLLiterals proje artık iki dosya içerir: *Module1.vb* ve *PurchaseOrderSchema.xsd*.
 

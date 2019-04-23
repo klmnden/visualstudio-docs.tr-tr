@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068010"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım durumu diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,71 +59,71 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
    Hangi kullanım örnekleri sisteminize veya onun alt sistemleri tarafından desteklenen bir kullanım durumu diyagramı gösterebilirsiniz.  
   
-##  <a name="BasicSteps"></a> Kullanım örneği diyagramları çizmek için temel adımlar  
+## <a name="BasicSteps"></a> Kullanım örneği diyagramları çizmek için temel adımlar  
   
 > [!NOTE]
 >  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Yeni bir kullanım durumu diyagramı oluşturmak için  
   
-1.  Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
   
-2.  Altında **şablonları**, tıklayın **UMLUse durumu diyagramı**.  
+2. Altında **şablonları**, tıklayın **UMLUse durumu diyagramı**.  
   
-3.  Diyagrama ad verin.  
+3. Diyagrama ad verin.  
   
-4.  İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
+4. İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
   
 #### <a name="to-draw-a-use-case-diagram"></a>Bir kullanım durumu diyagramı çizmek için  
   
-1.  Sürükleme **alt** tüm sisteminizi veya ana bileşenlerini göstermek için diyagramda, araç kutusundan sınırlar.  
+1. Sürükleme **alt** tüm sisteminizi veya ana bileşenlerini göstermek için diyagramda, araç kutusundan sınırlar.  
   
-    -   Sisteminizde veya bileşenleri tarafından hangi kullanım örneklerinin açıklamak istemiyorsanız sınırları desteklenen sistemi olmayan bir kullanım durumu diyagramı çizebilirsiniz.  
+    - Sisteminizde veya bileşenleri tarafından hangi kullanım örneklerinin açıklamak istemiyorsanız sınırları desteklenen sistemi olmayan bir kullanım durumu diyagramı çizebilirsiniz.  
   
-    -   Gerekliyse daha büyük, yapmak için bir sisteme köşesindeki sürükleyin.  
+    - Gerekliyse daha büyük, yapmak için bir sisteme köşesindeki sürükleyin.  
   
-    -   Uygun şekilde yeniden adlandırın.  
+    - Uygun şekilde yeniden adlandırın.  
   
-2.  Sürükleme **aktörler** (bunları herhangi bir sistem sınırları dışından yerleştirerek) Diyagram Araç kutusundan.  
+2. Sürükleme **aktörler** (bunları herhangi bir sistem sınırları dışından yerleştirerek) Diyagram Araç kutusundan.  
   
-    -   Aktör, kullanıcılar ve kuruluşlar sisteminizi etkileşimli dış sistemlerle sınıfları temsil eder.  
+    - Aktör, kullanıcılar ve kuruluşlar sisteminizi etkileşimli dış sistemlerle sınıfları temsil eder.  
   
-    -   Bunları yeniden adlandırın. Örneğin: **Müşteri, Restoran, kredi kartı kurumu.**  
+    - Bunları yeniden adlandırın. Örneğin: **Müşteri, Restoran, kredi kartı kurumu.**  
   
-3.  Sürükleme **kullanım durumları** ilgili sistemlere araç kutusundan.  
+3. Sürükleme **kullanım durumları** ilgili sistemlere araç kutusundan.  
   
-    -   Kullanım örnekleri, sisteminizin yardımıyla aktörler gerçekleştiren etkinlikler temsil eder.  
+    - Kullanım örnekleri, sisteminizin yardımıyla aktörler gerçekleştiren etkinlikler temsil eder.  
   
-    -   Bunları aktörlerin öğrenmesi başlıklarını kullanarak yeniden adlandırın. Kodunuz ile ilgili başlıkları kullanmayın. Örneğin: **Yemek için ödeme, teslim etmek, Yemek yemek siparişi**.  
+    - Bunları aktörlerin öğrenmesi başlıklarını kullanarak yeniden adlandırın. Kodunuz ile ilgili başlıkları kullanmayın. Örneğin: **Yemek için ödeme, teslim etmek, Yemek yemek siparişi**.  
   
-    -   Gibi önemli işlemler ile başlayan **Yemek Sipariş Et**, bırakma gibi daha küçük etkileşimler **seçin menü öğesi**.  
+    - Gibi önemli işlemler ile başlayan **Yemek Sipariş Et**, bırakma gibi daha küçük etkileşimler **seçin menü öğesi**.  
   
-    -   Her yerde, sistem veya (herhangi bir cephe veya bileşen yalnızca kullanıcıya bağlanmada dahil yoksayar) destekliyorsa büyük alt sistemi durumu kullanın.  
+    - Her yerde, sistem veya (herhangi bir cephe veya bileşen yalnızca kullanıcıya bağlanmada dahil yoksayar) destekliyorsa büyük alt sistemi durumu kullanın.  
   
-    -   Bir kullanım örneği, sisteminiz tarafından belki de bir belirli sürümünün veya desteklenmediğini göstermek için sistem sınırının dışında çizebilirsiniz.  
+    - Bir kullanım örneği, sisteminiz tarafından belki de bir belirli sürümünün veya desteklenmediğini göstermek için sistem sınırının dışında çizebilirsiniz.  
   
-4.  Tıklayın **ilişkilendirme** araç, sonra bir kullanım durumu ve kullanım örneğine katılan bir aktör üzerinde. Bu şekilde, kullanım örnekleri her aktör bağlayın.  
+4. Tıklayın **ilişkilendirme** araç, sonra bir kullanım durumu ve kullanım örneğine katılan bir aktör üzerinde. Bu şekilde, kullanım örnekleri her aktör bağlayın.  
   
-5.  Yapı kullanımı durumlarda ile **INCLUDE**, **Genişlet** ve **Genelleştirme** ilişkileri. Bu bağlantıların her birini oluşturmak için kaynak ardından durumda, ardından hedef aracı tıklayın. Aşağıdaki başlıklı bölüme bakın [kullanım örneklerini](#Structuring).  
+5. Yapı kullanımı durumlarda ile **INCLUDE**, **Genişlet** ve **Genelleştirme** ilişkileri. Bu bağlantıların her birini oluşturmak için kaynak ardından durumda, ardından hedef aracı tıklayın. Aşağıdaki başlıklı bölüme bakın [kullanım örneklerini](#Structuring).  
   
-6.  Kullanım örnekleri daha ayrıntılı açıklanmaktadır. Aşağıdaki başlıklı bölüme bakın [kullanım örneklerini açıklayan ayrıntılı](#Details).  
+6. Kullanım örnekleri daha ayrıntılı açıklanmaktadır. Aşağıdaki başlıklı bölüme bakın [kullanım örneklerini açıklayan ayrıntılı](#Details).  
   
-7.  Farklı alt sistemler veya ilgili kullanım farklı gruplara odaklanmak için farklı diyagramlar çizin. Bir modelleme projesindeki tüm diyagramları aynı modelin görünümleridir.  
+7. Farklı alt sistemler veya ilgili kullanım farklı gruplara odaklanmak için farklı diyagramlar çizin. Bir modelleme projesindeki tüm diyagramları aynı modelin görünümleridir.  
   
-##  <a name="Actors"></a> Çizim aktörler ve kullanım  
+## <a name="Actors"></a> Çizim aktörler ve kullanım  
  Ana amacı, bir kullanım durumu diyagramı, sisteminiz ve onunla ulaştıkları ana hedeflerinden ile kimin etkileşim kurar göstermektir.  
   
--   Oluşturma **aktörler** kişiler, kuruluşlar, diğer sistemler, yazılım veya sistem veya alt sistem ile etkileşimde bulunan cihazları sınıfları temsil etmek için.  
+- Oluşturma **aktörler** kişiler, kuruluşlar, diğer sistemler, yazılım veya sistem veya alt sistem ile etkileşimde bulunan cihazları sınıfları temsil etmek için.  
   
-    -   Aktörler ve diğer öğeleri nasıl çizileceğini bilgi edinmek için [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+    - Aktörler ve diğer öğeleri nasıl çizileceğini bilgi edinmek için [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
-    -   Fiziksel bir kişi veya varlıkları aynı olsa bile farklı her hedef için kümesi aktörler kendi türü veya rolüne göre belirleyin. Bir restoran çalışan bir müşteri bazen olsa bile, Restoran ve müşteri ayrı, birer aktördür.  
+    - Fiziksel bir kişi veya varlıkları aynı olsa bile farklı her hedef için kümesi aktörler kendi türü veya rolüne göre belirleyin. Bir restoran çalışan bir müşteri bazen olsa bile, Restoran ve müşteri ayrı, birer aktördür.  
   
--   Oluşturma **kullanım durumları** sistemiyle elde etmek için her aktör aradığı hedeflerinden her biri için.  
+- Oluşturma **kullanım durumları** sistemiyle elde etmek için her aktör aradığı hedeflerinden her biri için.  
   
-    -   Ad ve aktör öğrenmesi, uygulama koşulları yerine sözcükleri kullanım örneklerini tanımlayın.  
+    - Ad ve aktör öğrenmesi, uygulama koşulları yerine sözcükleri kullanım örneklerini tanımlayın.  
   
--   Kullanma **ilişkilendirmeleri** aktörleri kullanım örneklerine bağlanacak.  
+- Kullanma **ilişkilendirmeleri** aktörleri kullanım örneklerine bağlanacak.  
   
 ### <a name="inheritance-between-actors"></a>Aktörler arasında devralma  
  ![Devralma gösteren kullanım durumu diyagramı](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")  
@@ -140,19 +140,19 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 ##### <a name="to-change-the-appearance-of-an-actor"></a>Bir aktör görünümünü değiştirmek için  
   
-1.  Aktör sağ tıklayın ve ardından **özellikleri**.  
+1. Aktör sağ tıklayın ve ardından **özellikleri**.  
   
      **Özellikleri** penceresi görüntülenir.  
   
-2.  Ayarlama **görüntü yolu** özelliğini bir görüntü dosyasının konumu.  
+2. Ayarlama **görüntü yolu** özelliğini bir görüntü dosyasının konumu.  
   
-    -   .Gif, .jpg ve .bmp dahil olmak üzere çeşitli görüntü biçimlerinde kullanabilirsiniz.  
+    - .Gif, .jpg ve .bmp dahil olmak üzere çeşitli görüntü biçimlerinde kullanabilirsiniz.  
   
-    -   Çözüm veya projeyi kaynak denetimine dahil ve böylece çözümü taşınamaz veya kopyalanamaz hala olduğunda bir dosya kullanın.  
+    - Çözüm veya projeyi kaynak denetimine dahil ve böylece çözümü taşınamaz veya kopyalanamaz hala olduğunda bir dosya kullanın.  
   
-3.  Bu görünüm diğer kullanım durumu diyagramlarındaki çoğaltmak için aktör kopyalayın ve başka bir diyagrama yapıştırın.  
+3. Bu görünüm diğer kullanım durumu diyagramlarındaki çoğaltmak için aktör kopyalayın ve başka bir diyagrama yapıştırın.  
   
-    -   Görüntü değiştirmek, yalnızca belirli bir diyagram görünümünde uygulanır. Temel alınan model öğesi için geçerli değildir. Aktör UML Model Gezgini'nden başka bir diyagrama sürüklerseniz, standart çubuk görünür.  
+    - Görüntü değiştirmek, yalnızca belirli bir diyagram görünümünde uygulanır. Temel alınan model öğesi için geçerli değildir. Aktör UML Model Gezgini'nden başka bir diyagrama sürüklerseniz, standart çubuk görünür.  
   
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Aktörler ve kullanım örnekleri arasında Çeşitlilikler  
  Aktörün ve kullanım örneği arasındaki ilişkilendirmeyi gösterebilir bir *çoğulluk* her iki ucunda.  
@@ -202,22 +202,22 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Birden çok diyagram üzerinde bir aktör veya kullanım örneği kullanma  
  Aynı aktör Göster ve çeşitli diyagramlarda kullanım. Örneğin:  
   
--   Farklı diyagramlarda bir aktör dahil olduğu farklı kullanım örnekleri tanımlayabilirsiniz.  
+- Farklı diyagramlarda bir aktör dahil olduğu farklı kullanım örnekleri tanımlayabilirsiniz.  
   
--   Aktörler ve alt kullanım örneği ile ilişkili olduğu gösterilecek bir diyagram kullanın ve kullanım örneği dahildir ve genişletilmiş kullanım örneklerine nasıl yapılandırıldığını göstermek için başka bir diyagram kullanın.  
+- Aktörler ve alt kullanım örneği ile ilişkili olduğu gösterilecek bir diyagram kullanın ve kullanım örneği dahildir ve genişletilmiş kullanım örneklerine nasıl yapılandırıldığını göstermek için başka bir diyagram kullanın.  
   
 ##### <a name="to-show-the-same-actor-or-use-case-on-different-diagrams"></a>Aynı aktör göstermek veya farklı diyagramlarda kullanım örneği  
   
-1.  Aktör oluşturun veya bir diyagram üzerinde çalışması kullanın.  
+1. Aktör oluşturun veya bir diyagram üzerinde çalışması kullanın.  
   
-2.  Başka bir kullanım durumu diyagramı oluşturun.  
+2. Başka bir kullanım durumu diyagramı oluşturun.  
   
-3.  Aktörün sürükleyin ya da devre dışı kullanım **Model Gezgini** yeni diyagram üzerine.  
+3. Aktörün sürükleyin ya da devre dışı kullanım **Model Gezgini** yeni diyagram üzerine.  
   
     > [!NOTE]
     >  Yeni Diyagram üzerinde bir aktör ve ilişkili olan bir kullanım örneği yerleştirirseniz, bunları arasındaki ilişki otomatik olarak yeni diyagramda görünecektir.  
   
-##  <a name="Details"></a> Açıklayan ayrıntılı kullanım örnekleri  
+## <a name="Details"></a> Açıklayan ayrıntılı kullanım örnekleri  
  Kullanım örneği temsil eder:  
   
 - Bir hedef sistem gibi kullanarak aktörün **yemek satın**; ve  
@@ -230,9 +230,9 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 - Kullanım örneği başka bir diyagramı veya diyagramları projedeki bağlayın.  
   
-  -   Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
+  - Etkinlik diyagramı daha karmaşık bir işlem açıklayan yardımcı olan döngü, dal ve paralel iş parçacığı olduğu. Ayrıca, işlem bölümleri arasındaki veri akışını da gösterebilirsiniz. Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
-  -   Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
+  - Sıralı diyagram, farklı aktör arasındaki etkileşimler karmaşık bir dizi açıklayan yardımcı olur. Sistem her kullanım örneğine yanıt içinde neler göstermek için de kullanabilirsiniz. Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 - Kullanım örneği bir OneNote sayfası, bölüm veya ayrıntılı kullanım örneğini açıklanacak paragraf bağlayın.  
   
@@ -240,41 +240,41 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Bir kullanım durumu diyagramı veya aynı çözüm içindeki dosya bağlamak için  
   
-1.  Bir sıralı diyagram veya kullanım örneğinin bir senaryoyu göstermek üzere etkinlik diyagramı gibi bir diyagramı.  
+1. Bir sıralı diyagram veya kullanım örneğinin bir senaryoyu göstermek üzere etkinlik diyagramı gibi bir diyagramı.  
   
-2.  Kullanım durumu diyagramı geri dönün.  
+2. Kullanım durumu diyagramı geri dönün.  
   
-3.  Çözüm Gezgini'nden boş bir kısmına kullanım durumu diyagramı diyagram veya dosya sürükleyin.  
+3. Çözüm Gezgini'nden boş bir kısmına kullanım durumu diyagramı diyagram veya dosya sürükleyin.  
   
-4.  Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
+4. Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
   
 #### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Bir çözüm dosyası gibi bir Word belgesi veya PowerPoint sunumu bağlamak için  
   
-1.  Kullanım örneği senaryosu tanımlamak için metin, ekran görüntüleri, vb. kullanan bir belge yazma.  
+1. Kullanım örneği senaryosu tanımlamak için metin, ekran görüntüleri, vb. kullanan bir belge yazma.  
   
-2.  Belge ekleyin.  
+2. Belge ekleyin.  
   
-    1.  Word belgesi çözümü olarak aynı Windows klasöre taşıyın.  
+    1. Word belgesi çözümü olarak aynı Windows klasöre taşıyın.  
   
-    2.  Çözüm Gezgini'nde çözüme sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.  
+    2. Çözüm Gezgini'nde çözüme sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.  
   
-    3.  Word belgesine gelin ve tıklayın **Ekle**.  
+    3. Word belgesine gelin ve tıklayın **Ekle**.  
   
          Word belgesi bir çözüm klasörü Çözüm Gezgini'nde görünür.  
   
-3.  Çözüm Gezgini'nden kullanım durumu diyagramı boş bir kısmına Word belgesi sürükleyin.  
+3. Çözüm Gezgini'nden kullanım durumu diyagramı boş bir kısmına Word belgesi sürükleyin.  
   
      Yeni Yapıt görünür.  
   
-4.  Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
+4. Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
   
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Paylaşılan belge, OneNote öğesi veya web sayfası bağlamak için  
   
-1.  Paylaşılan öğe URL'sini alın. Bu, örneğin, bir ağ dosya yolu başlangıç olabilir '\\\\', veya bir web sayfası veya Sharepoint URL'si başına 'http://' veya bir OneNote bölümüne bir bağlantı sayfa, paragraf başına ' onenote:'.  
+1. Paylaşılan öğe URL'sini alın. Bu, örneğin, bir ağ dosya yolu başlangıç olabilir '\\\\', veya bir web sayfası veya Sharepoint URL'si başına 'http://' veya bir OneNote bölümüne bir bağlantı sayfa, paragraf başına ' onenote:'.  
   
-2.  Araç kutusunda tıklayın **Yapıt** ve kullanım örneği diyagramı'ye tıklayın.  
+2. Araç kutusunda tıklayın **Yapıt** ve kullanım örneği diyagramı'ye tıklayın.  
   
-3.  Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
+3. Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
   
 > [!NOTE]
 >  Diyagramı açın veya bağlandığı belge için yapıya çift tıklayabilirsiniz.  
@@ -284,13 +284,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  Şunları yapmanızı sağlar:  
   
--   Bağlantılı iş öğesi kullanım örneğini açıklar. Özellikle, projenizi Visual Studio, biçimsel işlem şablonu kullanıyorsa, bir kullanım durumu iş öğesine bağlayabilirsiniz. Bu iş öğesi türü, kullanım örneği senaryoları ve hedeflerinizi açıklamak için alan sağlar.  
+- Bağlantılı iş öğesi kullanım örneğini açıklar. Özellikle, projenizi Visual Studio, biçimsel işlem şablonu kullanıyorsa, bir kullanım durumu iş öğesine bağlayabilirsiniz. Bu iş öğesi türü, kullanım örneği senaryoları ve hedeflerinizi açıklamak için alan sağlar.  
   
--   Bağlantı test çalışmaları kullanım örneğine raporları alabilmeniz için geliştirilen ne kadar kod uygular kullanım örneği.  
+- Bağlantı test çalışmaları kullanım örneğine raporları alabilmeniz için geliştirilen ne kadar kod uygular kullanım örneği.  
   
--   Geliştirme çalışmanın ilerlemesini takip edebilmeniz, görevleri kullanım örneğine bağlayın.  
+- Geliştirme çalışmanın ilerlemesini takip edebilmeniz, görevleri kullanım örneğine bağlayın.  
   
-##  <a name="Structuring"></a> Kullanım örnekleri yapılandırma  
+## <a name="Structuring"></a> Kullanım örnekleri yapılandırma  
  Yalnızca birkaç önemli kullanım örneklerini sisteminizin davranışını açıklamak denemelisiniz. Her büyük kullanım örneği, bir aktör, bir ürün satın alma gibi veya, satıcının açısından, satış için ürünler sağlama elde eden ana hedefi tanımlar.  
   
  Bu hedefleri yaptıktan sonra temel hedefleri Çeşitlemeler ve her bir hedefe nasıl elde edildiğini hakkında daha fazla ayrıntıya gidebilirsiniz.  
@@ -299,13 +299,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  Büyük ve daha ayrıntılı kullanım örnekleri arasındaki ilişkileri bir kullanım durumu diyagramında özetleyebilir. Aşağıdaki bölümlerde bu açıklanmaktadır:  
   
--   [Bir kullanım örneği ile dahil etme ayrıntılarını gösterme](#Include)  
+- [Bir kullanım örneği ile dahil etme ayrıntılarını gösterme](#Include)  
   
--   [Hedefleri Genelleştirme ile paylaşma](#Inheritance)  
+- [Hedefleri Genelleştirme ile paylaşma](#Inheritance)  
   
--   [Değişken durumları genişletme ile ayrılması](#Extend)  
+- [Değişken durumları genişletme ile ayrılması](#Extend)  
   
-###  <a name="Include"></a> Bir kullanım örneği ile dahil etme ayrıntılarını gösterme  
+### <a name="Include"></a> Bir kullanım örneği ile dahil etme ayrıntılarını gösterme  
  Kullanan bir **INCLUDE** ilişkisi, bir kullanım durumu gösterilecek başka ayrıntılarını bazılarını açıklar. Çizimde, **yemek siparişi** içerir **ödeme**, **seçin menü**, ve **seçin menü öğesi**. Her dahil, daha ayrıntılı kullanım durumlarından biri aktör veya aktörleri dahil olmak üzere kullanım örneğinin genel kaydetme amacına ulaşmanız için gerçekleştirmesi gereken bir adımdır. Ok, ayrıntılı ve dahil edilen kullanım örneğine işaret etmelidir.  
   
 > [!CAUTION]
@@ -319,11 +319,11 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  Ayırma kullanım örneklerini dahil eden ve dahil edilen parçalar, aşağıdaki hedeflere ulaşmak kullanışlıdır:  
   
--   Ayrıntı farklı katmanlara kullanım örneği açıklamalarınızı yapılandırın.  
+- Ayrıntı farklı katmanlara kullanım örneği açıklamalarınızı yapılandırın.  
   
--   Paylaşılan senaryolarda farklı kullanım durumlarına yinelemekten kaçının.  
+- Paylaşılan senaryolarda farklı kullanım durumlarına yinelemekten kaçının.  
   
-####  <a name="Steps"></a> Ayrıntılı adımlar sıralamasını tanımlama  
+#### <a name="Steps"></a> Ayrıntılı adımlar sıralamasını tanımlama  
  Kullanım durumu diyagramı, hiçbir şey hakkında daha ayrıntılı adımlar gerçekleştirilmelidir siparişi ya da bunların her biri her zaman gerekli olup olmadığı hakkında diyor.  
   
  Sırasını yapmak için adımları temizleyin, kullanabileceğiniz bir **Yapıt** dahil olmak üzere ayrı bir belge kullanım örneği eklenecek. Aşağıdaki örnekte, bir etkinlik diyagramı siparişe yemek kullanım örneğine bağlı. Alternatif olarak, adımlar ve ekran görüntüleri bir dizi listesini içeren bir metin belgesi kullanabilirsiniz. Daha fazla bilgi için [kullanım örneklerini açıklayan ayrıntılı](#Details).  
@@ -338,7 +338,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
   ![Bağlı etkinlik diyagramında gösterilen kullanım örneği adımları](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
-###  <a name="Inheritance"></a> Hedefleri Genelleştirme ile paylaşma  
+### <a name="Inheritance"></a> Hedefleri Genelleştirme ile paylaşma  
  Genelleştirme ilişkisine gösteren kullanılacağını bir *özelleştirilmiş* kullanım örneği olan başka bir ifade hedeflere ulaşmak için belirli bir şekilde *genel* kullanım örneği. Açık ok ucu daha genel kullanım örneğine işaret etmelidir.  
   
  ![Genelleştirme ilişkisine gösteren kullanım](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")  
@@ -354,21 +354,21 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 ##### <a name="to-refactor-common-goals-from-two-or-more-use-cases"></a>Ortak yeniden düzenlemenin iki veya daha fazla kullanım  
   
-1.  Adı yeni genel kullanım örneği ve oluşturun.  
+1. Adı yeni genel kullanım örneği ve oluşturun.  
   
-2.  Oluşturma bir **Genelleştirme** yeni genel kullanım örneğini işaret eden büyük bir ok ile ilişkisi.  
+2. Oluşturma bir **Genelleştirme** yeni genel kullanım örneğini işaret eden büyük bir ok ile ilişkisi.  
   
-    1.  Tıklayın **Genelleştirme** araç.  
+    1. Tıklayın **Genelleştirme** araç.  
   
-    2.  Özelleştirilmiş kullanım örneğine tıklayın (**tarafından kredi kartıyla ödeme** örnekte).  
+    2. Özelleştirilmiş kullanım örneğine tıklayın (**tarafından kredi kartıyla ödeme** örnekte).  
   
-    3.  Genel kullanım örneğine tıklayın (**ödeme** örnekte).  
+    3. Genel kullanım örneğine tıklayın (**ödeme** örnekte).  
   
-3.  Özel durumlara ilişkin hedeflerini açıklanan, genel bir açıklama ortak parçalara kullanım taşıyın.  
+3. Özel durumlara ilişkin hedeflerini açıklanan, genel bir açıklama ortak parçalara kullanım taşıyın.  
   
-4.  Özelleştirilmiş kullanım örnekleri arasında paylaşılan aktörler için genel kullanım örneği taşınabilir.  
+4. Özelleştirilmiş kullanım örnekleri arasında paylaşılan aktörler için genel kullanım örneği taşınabilir.  
   
-###  <a name="Extend"></a> Değişken durumları ayrılması ile genişletme  
+### <a name="Extend"></a> Değişken durumları ayrılması ile genişletme  
  Bir kullanım örneği, belirli koşullar altında başka bir kullanım örneği işlevsellik ekleyen olduğunu göstermek için bir genişletme bağlantıyı kullanın. Oku, ana ve genişletilmiş kullanım örneğine işaret etmelidir.  
   
  ![Başka bir genişleyen bir kullanım örneği](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
@@ -384,11 +384,11 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 2. Oluşturma bir **Genişlet** genişletilmiş kullanım örneğine işaret eden bir ok ile ilişkisi.  
   
-   1.  Tıklayın **Genişlet** araç.  
+   1. Tıklayın **Genişlet** araç.  
   
-   2.  Genişletme kullanım örneğine tıklayın (**yeni kullanıcı Kaydet** örnekte).  
+   2. Genişletme kullanım örneğine tıklayın (**yeni kullanıcı Kaydet** örnekte).  
   
-   3.  Genişletilmiş kullanım örneğine tıklayın (**oturum açma** örnekte).  
+   3. Genişletilmiş kullanım örneğine tıklayın (**oturum açma** örnekte).  
   
        > [!NOTE]
        >  Diyagramda Genişlet ilişkileri döngüsünü oluşturmaktan kaçının. Bu, kendisinin bir uzantı bir kullanım örneği için doğru değil.  
@@ -401,13 +401,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
    Uzantıları ayırmak bu durumlar açıklamak için yararlı olabilir:  
   
--   Yalnızca uzantı kullanım örneğine katılan olan ek aktör vardır. Örneğin, bir yönetici, bir müşterinin kayıt Web sitesinde onaylamak için gereklidir.  
+- Yalnızca uzantı kullanım örneğine katılan olan ek aktör vardır. Örneğin, bir yönetici, bir müşterinin kayıt Web sitesinde onaylamak için gereklidir.  
   
--   Ayrı bir alt uzantısı kullanım örneği ile ilgilenecektir.  
+- Ayrı bir alt uzantısı kullanım örneği ile ilgilenecektir.  
   
--   Bu uzantı yalnızca sistem belirli sürümlerinde kullanıma sunulacak. Her sürüm ayrı bir alt kullanım örneği diyagramı sisteminde olarak gösterebilirsiniz.  
+- Bu uzantı yalnızca sistem belirli sürümlerinde kullanıma sunulacak. Her sürüm ayrı bir alt kullanım örneği diyagramı sisteminde olarak gösterebilirsiniz.  
   
-##  <a name="Subsystems"></a> Alt sistem sınırları kullanma  
+## <a name="Subsystems"></a> Alt sistem sınırları kullanma  
  Hangi kullanım göstermek için alt sınır olan sisteminizi kapsamında kullanın.  
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Bir alt sistem sınırının çizmek için  
@@ -442,10 +442,10 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
- [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML Sıralı Diyagramları: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)   
+ [UML Etkinlik Diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)   
  [Video: Kullanım örneklerine özelliklerini düzenleme](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)

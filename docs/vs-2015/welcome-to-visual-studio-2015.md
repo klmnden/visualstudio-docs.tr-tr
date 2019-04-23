@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067735"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
  Uygulama gereksinimlerinize ve kullanmak istediğiniz dil, ihtiyacınız olan araçları göre seçin.
 
-1.  [Visual Studio için Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Bir ortak kod temeli olarak C# tüm cihazlar için
+1. [Visual Studio için Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Bir ortak kod temeli olarak C# tüm cihazlar için
 
-2.  [Visual Studio ile Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Bir ortak kod için HTML, CSS ve JavaScript veya Typescript temeli
+2. [Visual Studio ile Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Bir ortak kod için HTML, CSS ve JavaScript veya Typescript temeli
 
-3.  [Unity için Visual Studio Araçları](./cross-platform/visual-studio-tools-for-unity.md): 2B/3B Oyun GeliştirmeC#
+3. [Unity için Visual Studio Araçları](./cross-platform/visual-studio-tools-for-unity.md): 2B/3B Oyun GeliştirmeC#
 
-4.  [C++ platformlar arası geliştirme için](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Paylaşılan kod kitaplıkları ve c++ uygulamaları
+4. [C++ platformlar arası geliştirme için](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Paylaşılan kod kitaplıkları ve c++ uygulamaları
 
-5.  [Android için Visual Studio öykünücüsü](./cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücüsü: IDE ne olursa olsun Android uygulamalarınızı test etmek ve hata ayıklama
+5. [Android için Visual Studio öykünücüsü](./cross-platform/visual-studio-emulator-for-android.md): Android için Visual Studio öykünücüsü: IDE ne olursa olsun Android uygulamalarınızı test etmek ve hata ayıklama
 
 ## <a name="connect-your-apps-to-services"></a>Uygulamalarınızı hizmetlere bağlayın
  Bu hizmetler (her hizmet için bir hesap olduğunu varsayarak) hazır bağlanabilirsiniz:
 
--   [Azure mobil hizmetler](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure mobil hizmetler](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure Depolama](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Depolama](http://azure.microsoft.com/documentation/services/storage/)
 
--   Bulutta depolanan verilere bağlanmak için kendi uygulamanızı Office 365 REST API'lerini tümleştirin. Daha fazla bilgi için [bu örnekleri](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+- Bulutta depolanan verilere bağlanmak için kendi uygulamanızı Office 365 REST API'lerini tümleştirin. Daha fazla bilgi için [bu örnekleri](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>ASP.NET ile harika Web uygulamaları yazma
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) MVC, Webapı ve SignalR önemli bir güncelleştirme ve Windows, Mac ve Linux üzerinde çalıştırır.  ASP.NET 5 baştan ayarlama, yalın ve birleştirilebilir bir .NET ile modern bulut tabanlı web uygulamaları ve hizmetleri oluşturmak için yığın sağlamak için tasarlanmıştır.
@@ -102,32 +102,32 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
 ## <a name="in-this-section"></a>Bu bölümde
 
--   [Visual Studio 2015’teki Yenilikler](./what-s-new-in-visual-studio-2015.md)
+- [Visual Studio 2015’teki Yenilikler](./what-s-new-in-visual-studio-2015.md)
 
--   [Visual Studio 2015'i Yükleme](./install/install-visual-studio-2015.md)
+- [Visual Studio 2015'i Yükleme](./install/install-visual-studio-2015.md)
 
--   [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Visual Studio IDE](./ide/visual-studio-ide.md)
+- [Visual Studio IDE](./ide/visual-studio-ide.md)
 
--   [Visual Studio'da Genişletilebilirlik](./extensibility/extensibility-in-visual-studio.md)
+- [Visual Studio'da Genişletilebilirlik](./extensibility/extensibility-in-visual-studio.md)
 
--   [Visual Studio'da verilere erişime](./data-tools/accessing-data-in-visual-studio.md)
+- [Visual Studio'da verilere erişime](./data-tools/accessing-data-in-visual-studio.md)
 
--   [Platformlar Arası Mobil Geliştirme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [Platformlar Arası Mobil Geliştirme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [C# ve Visual Basic programlama kavramları paylaşılan](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# ve Visual Basic programlama kavramları paylaşılan](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps ve uygulama yaşam döngüsü yönetimi](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps ve uygulama yaşam döngüsü yönetimi](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [Bizimle İletişime Geçin](./ide/talk-to-us.md)
+- [Bizimle İletişime Geçin](./ide/talk-to-us.md)

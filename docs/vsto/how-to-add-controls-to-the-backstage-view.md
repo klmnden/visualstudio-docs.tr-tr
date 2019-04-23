@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068372"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Nasıl yapılır: Backstage görünümüne denetimler ekleme
   Şerit Tasarımcısı tıkladığınızda açılan menüye denetimler eklemek için kullanabileceğiniz **dosya** sekmesi. Eklediğiniz denetimler uygulama çalıştırıldığında **dosya** sekmesinde görünen adlı bir grubu **eklentileri**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621350"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Backstage görünümüne denetimler ekleme
 
-1.  Şerit öğesi Tasarım Görünümü'nde açın.
+1. Şerit öğesi Tasarım Görünümü'nde açın.
 
      Ekleme hakkında daha fazla bilgi için bir **Şerit (Görsel Tasarımcı)** öğesi projeniz için bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  Şerit Tasarımcısı'nda tıklatın **dosya** sekmesi.
+2. Şerit Tasarımcısı'nda tıklatın **dosya** sekmesi.
 
      Menü Tasarımcısı görüntülenir. Bu tasarım yüzeyine denetimler içermiyor.
 
-3.  Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, aşağıdaki denetimleri menü tasarımcının üzerine sürükleyin:
+3. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, aşağıdaki denetimleri menü tasarımcının üzerine sürükleyin:
 
-    -   Düğme
+    - Düğme
 
-    -   CheckBox
+    - CheckBox
 
-    -   Galeri
+    - Galeri
 
-    -   Menü
+    - Menü
 
-    -   Ayırıcı
+    - Ayırıcı
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Bunları yeni konumlarına menüsünde taşımak için denetimleri sürükleyin.
+4. Bunları yeni konumlarına menüsünde taşımak için denetimleri sürükleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Şerite Genel Bakış](../vsto/ribbon-overview.md)

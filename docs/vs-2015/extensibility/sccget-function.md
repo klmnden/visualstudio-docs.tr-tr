@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068307"
 ---
 # <a name="sccget-function"></a>SccGet İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  Kaynak Denetimi sürümü, yerel önbellek burada kaynak denetimi veritabanı ile eşitlenmemiş hale gelir, bu sorunu çözmek için iki yolu vardır:  
   
-1.  Kaynak denetim veritabanında şu anda kullanıma alınmış dosya yeniden adlandırılırken izin vermez.  
+1. Kaynak denetim veritabanında şu anda kullanıma alınmış dosya yeniden adlandırılırken izin vermez.  
   
-2.  "Eski Sil"tarafından yeni Ekle"ve ardından" denk yapın. Bunu yapmanın bir yolu algoritmasıdır.  
+2. "Eski Sil"tarafından yeni Ekle"ve ardından" denk yapın. Bunu yapmanın bir yolu algoritmasıdır.  
   
-    1.  Çağrı [SccQueryChanges](../extensibility/sccquerychanges-function.md) işlevi için kaynak denetim veritabanındaki b.txt.txt, yeniden adlandırma hakkında bilgi edinmek için.  
+    1. Çağrı [SccQueryChanges](../extensibility/sccquerychanges-function.md) işlevi için kaynak denetim veritabanındaki b.txt.txt, yeniden adlandırma hakkında bilgi edinmek için.  
   
-    2.  Yerel.txt b.txt için yeniden adlandırın.  
+    2. Yerel.txt b.txt için yeniden adlandırın.  
   
-    3.  Çağrı `SccGet` .txt hem b.txt işlevi.  
+    3. Çağrı `SccGet` .txt hem b.txt işlevi.  
   
-    4.  .Txt kaynak denetim veritabanında var olmadığından, yerel sürüm önbelleğini eksik.txt sürüm bilgilerini temizlenir.  
+    4. .Txt kaynak denetim veritabanında var olmadığından, yerel sürüm önbelleğini eksik.txt sürüm bilgilerini temizlenir.  
   
-    5.  Kullanıma alınan b.txt dosyanın yerel b.txt dosyasının içeriğini ile birleştirilir.  
+    5. Kullanıma alınan b.txt dosyanın yerel b.txt dosyasının içeriğini ile birleştirilir.  
   
-    6.  Güncelleştirilmiş b.txt dosya artık denetlenebilir.  
+    6. Güncelleştirilmiş b.txt dosya artık denetlenebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   

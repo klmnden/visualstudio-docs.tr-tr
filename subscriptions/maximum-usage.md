@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: Yönetim Portalı'nda maksimum atanan abonelik sayısını görüntülemeyi öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070367"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Atanan abonelik sayısını izlemek için en fazla kullanım özelliğini kullanma
 
@@ -32,7 +32,7 @@ En yüksek herhangi bir anlaşma ve abonelik düzeyi için atanan abonelik sayı
     > [!div class="mx-imgBorder"]
     > ![En fazla Kullanım Özeti](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  En fazla sözleşme süresince atanan abonelik sayısını görmek için tıklayın **tam terimi** sekmesi.
+4. En fazla sözleşme süresince atanan abonelik sayısını görmek için tıklayın **tam terimi** sekmesi.
 
 ## <a name="viewing-assignment-history"></a>Atama geçmişini görüntüleme
 

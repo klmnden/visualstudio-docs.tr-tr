@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070270"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 Bu ileti, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunlarının veya güvenlik duvarı varlığını nedeniyle erişilemez olduğu için meydana gelebilir.
@@ -130,16 +130,16 @@ Uzaktan hata ayıklayıcı varsayılan olarak, yalnızca Yöneticiler grubunun �
 
 Bu aşağıdaki yollardan biriyle çözebilirsiniz:
 
--   Visual Studio kullanıcı uzaktan hata ayıklayıcının izinleri ekleyin (uzaktan hata ayıklayıcı penceresinde **Araçlar > izinleri**).
+- Visual Studio kullanıcı uzaktan hata ayıklayıcının izinleri ekleyin (uzaktan hata ayıklayıcı penceresinde **Araçlar > izinleri**).
 
--   Uzak bilgisayarda Visual Studio bilgisayarda kullandığınız parolanın ve aynı kullanıcı hesabı altında uzaktan hata ayıklayıcıyı yeniden başlatın.
+- Uzak bilgisayarda Visual Studio bilgisayarda kullandığınız parolanın ve aynı kullanıcı hesabı altında uzaktan hata ayıklayıcıyı yeniden başlatın.
 
     > [!NOTE]
     > Uzaktan hata ayıklayıcı uzak bir sunucuda çalışıyorsa, uzaktan hata ayıklayıcı uygulama sağ tıklatın ve seçin **yönetici olarak çalıştır** (veya, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak). Uzak bir sunucuda, çalıştırmıyorsanız yalnızca başlatın normalde.
 
--   Komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: `msvsmon /allow <username@computer>`.
+- Komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: `msvsmon /allow <username@computer>`.
 
--   Alternatif olarak, uzaktan hata ayıklama yapmak herhangi bir kullanıcı izin verebilirsiniz. Uzaktan hata ayıklayıcı penceresinde Git **Araçlar > Seçenekler** iletişim. Seçtiğinizde, **kimlik doğrulaması yok**, daha sonra kontrol edebilirsiniz **tüm kullanıcıların hata ayıklamasına izin**. Ancak, bu seçenek yalnızca diğer seçenekleri başarısız olursa veya özel bir ağda olduğunda denemelisiniz.
+- Alternatif olarak, uzaktan hata ayıklama yapmak herhangi bir kullanıcı izin verebilirsiniz. Uzaktan hata ayıklayıcı penceresinde Git **Araçlar > Seçenekler** iletişim. Seçtiğinizde, **kimlik doğrulaması yok**, daha sonra kontrol edebilirsiniz **tüm kullanıcıların hata ayıklamasına izin**. Ancak, bu seçenek yalnızca diğer seçenekleri başarısız olursa veya özel bir ağda olduğunda denemelisiniz.
 
 ### <a name="firewall"></a> Uzak makinedeki güvenlik duvarı uzaktan hata ayıklayıcı gelen bağlantılara izin vermiyor
  Visual Studio makinede güvenlik duvarı ve güvenlik duvarı uzak makinede Visual Studio uzaktan hata ayıklayıcı arasındaki iletişime izin verecek şekilde yapılandırılması gerekir. Uzaktan hata ayıklayıcıyı kullanarak bağlantı noktaları hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md). Windows Güvenlik duvarını yapılandırma hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklama için Windows Güvenlik Duvarı Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bce2eae7c9df527c9b40e8d7f68bda68033449f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065694"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Hızlı Başlangıç: Konsolu kullanarak JavaScript hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  JavaScript Konsolu penceresi kullanarak, hata ayıklayıcıyı durdurup yeniden olmadan uygulamanız ile etkileşebilirsiniz. Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md). Diğer JavaScript DOM Gezgini'ni kullanarak ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz: [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a> JavaScript Konsolu penceresi kullanarak hata ayıklama  
+## <a name="InteractiveConsole"></a> JavaScript Konsolu penceresi kullanarak hata ayıklama  
  Aşağıdaki adımlar oluşturur bir `FlipView` uygulama ve etkileşimli bir şekilde kodlama hatası JavaScript hata ayıklama işlemini göstermektedir.  
   
 > [!CAUTION]
@@ -71,13 +71,13 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>FlipView uygulamanın JavaScript kodunda hata ayıklamak için  
   
-1.  Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
+1. Seçerek Visual Studio'da yeni bir çözüm oluşturma **dosya** > **yeni proje**.  
   
-2.  Seçin **JavaScript** > **Store uygulamaları**, seçin ya da **Windows uygulamaları** veya **Windows Phone uygulamaları**, seçin **Boş uygulama**.  
+2. Seçin **JavaScript** > **Store uygulamaları**, seçin ya da **Windows uygulamaları** veya **Windows Phone uygulamaları**, seçin **Boş uygulama**.  
   
-3.  Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
+3. Proje için bir ad yazın `FlipViewApp`ve **Tamam** uygulamayı oluşturmak için.  
   
-4.  Default.html gövde öğesi içinde mevcut HTML kodu şu kodla değiştirin:  
+4. Default.html gövde öğesi içinde mevcut HTML kodu şu kodla değiştirin:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -91,7 +91,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     </div>  
     ```  
   
-5.  Default.css açın ve eklemek için CSS `#fView` Seçici:  
+5. Default.css açın ve eklemek için CSS `#fView` Seçici:  
   
     ```css  
     #fView {  
@@ -101,7 +101,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     }  
     ```  
   
-6.  Default.js açın ve aşağıdaki JavaScript kodunu ile kodu değiştirin:  
+6. Default.js açın ve aşağıdaki JavaScript kodunu ile kodu değiştirin:  
   
     ```javascript  
     (function () {  
@@ -153,11 +153,11 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     })();  
     ```  
   
-7.  Hata ayıklama hedefi zaten seçili değilse, seçin **simülatör** veya Windows Phone için **öykünücüsü 8.1 WVGA 4 inç 512MB** listesinde yanındaki açılan listeden **cihaz** düğmesini **hata ayıklama** araç çubuğu:  
+7. Hata ayıklama hedefi zaten seçili değilse, seçin **simülatör** veya Windows Phone için **öykünücüsü 8.1 WVGA 4 inç 512MB** listesinde yanındaki açılan listeden **cihaz** düğmesini **hata ayıklama** araç çubuğu:  
   
      ![Select hata ayıklama hedef liste](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Hata ayıklayıcıyı başlatmak için F5 tuşuna basın.  
+8. Hata ayıklayıcıyı başlatmak için F5 tuşuna basın.  
   
      Uygulama çalışır ancak görüntüleri eksik. JavaScript Konsolu penceresi APPHOST hataları görüntüleri eksik olduğunu gösterir.  
   
@@ -209,18 +209,18 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
      Örnek kodu içeren tam default.html sayfa düzeltildi için bkz: [hata ayıklama HTML, CSS ve JavaScript örnek kodu](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a> Etkileşimli hata ayıklama ve kesme modu  
+## <a name="InteractiveDebuggingBreakMode"></a> Etkileşimli hata ayıklama ve kesme modu  
  Kesme noktaları ve JavaScript hata ayıklama araçları gibi JavaScript Konsolu penceresi kullanırken, kodda ilerleyebilmeniz kullanabilirsiniz. Hata ayıklayıcıda çalışan bir programın bir kesme noktası karşılaştığında, hata ayıklayıcı programın yürütülmesini geçici olarak askıya alır. Yürütme askıya alındığında, programınız kesme modu için çalışma modundan geçer. Yürütme herhangi bir zamanda sürdürebilirsiniz.  
   
  Bir program kesme modundayken, JavaScript Konsolu penceresi betikleri ve geçerli betik yürütme bağlamında geçerli olmayan komutları çalıştırmak için kullanabilirsiniz. Bu yordamda, sabit sürümünü kullanacağınız `FlipView` Kesme moduna kullanımını göstermek için daha önce oluşturduğunuz uygulama.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Bir kesme noktası ayarlayın ve uygulama hatalarını ayıklamak için  
   
-1.  Default.html dosyasındaki `FlipView` , daha önce oluşturulan, kısayol menüsünü açın, uygulama `updateImages()` işlevi ve ardından **kesme noktası** > **kesme noktası Ekle**.  
+1. Default.html dosyasındaki `FlipView` , daha önce oluşturulan, kısayol menüsünü açın, uygulama `updateImages()` işlevi ve ardından **kesme noktası** > **kesme noktası Ekle**.  
   
-2.  Seçin **yerel makine** veya **öykünücüsü 8.1 WVGA 4 inç 512MB** yanındaki açılan liste **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç çubuğu.  
+2. Seçin **yerel makine** veya **öykünücüsü 8.1 WVGA 4 inç 512MB** yanındaki açılan liste **hata ayıklamayı Başlat** düğmesini **hata ayıklama** araç çubuğu.  
   
-3.  Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya F5 tuşuna basın.  
+3. Seçin **hata ayıklama** > **hata ayıklamayı Başlat**, veya F5 tuşuna basın.  
   
      Yürütme ulaştığında uygulama Kesme moduna girer `updateImages()` işlevi ve program yürütme geçerli satırı sarı renkle vurgulanır.  
   
@@ -228,36 +228,36 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
      Hemen geçerli hata ayıklama oturumunu sona erdirmeden program durumunu etkileyen değişkenlerin değerlerini değiştirebilirsiniz.  
   
-4.  Tür `updateImages` istemine yazıp Enter tuşuna basın. Görselleştirici işlevi için konsol penceresinde görünür.  
+4. Tür `updateImages` istemine yazıp Enter tuşuna basın. Görselleştirici işlevi için konsol penceresinde görünür.  
   
-5.  İşlev uygulaması göstermek için konsol penceresinde işlevi seçin.  
+5. İşlev uygulaması göstermek için konsol penceresinde işlevi seçin.  
   
      Aşağıdaki çizimde, bu noktada konsol penceresinde gösterir.  
   
      ![JavaScript Konsolu penceresi Görselleştirici gösteren](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
-6.  Tek satırlık bir işlev, giriş sorusu çıktı penceresinden kopyalayın ve 3 dizin değeri değiştirin:  
+6. Tek satırlık bir işlev, giriş sorusu çıktı penceresinden kopyalayın ve 3 dizin değeri değiştirin:  
   
     ```javascript  
     pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
     ```  
   
-7.  Kod satırının çalıştırmak için Enter tuşuna basın.  
+7. Kod satırının çalıştırmak için Enter tuşuna basın.  
   
      Satır satır kodda adım adım istiyorsanız F11 tuşuna basın veya program yürütme devam etmek için F5 tuşuna basın.  
   
-8.  Program yürütme devam etmek için F5 tuşuna basın. `FlipView` Uygulama görünür ve artık tüm dört sayfalar varsayılan olmayan görüntülerden birini gösterir.  
+8. Program yürütme devam etmek için F5 tuşuna basın. `FlipView` Uygulama görünür ve artık tüm dört sayfalar varsayılan olmayan görüntülerden birini gösterir.  
   
      Visual Studio'ya geçmek için F12 ya da Alt + Tab tuşuna basın.  
   
-##  <a name="SinglelineMultilineMode"></a> Tek satır modu ve JavaScript Konsolu penceresi çok satırlı modu  
+## <a name="SinglelineMultilineMode"></a> Tek satır modu ve JavaScript Konsolu penceresi çok satırlı modu  
  JavaScript Konsolu penceresi için giriş istemi tek satır modu hem de çok satırlı modunu destekler. Bu konuda etkileşimli hata ayıklama yordamda her iki modu kullanarak bir örnek sağlar. Modlar arasında geçiş yapmak için Ctrl + Alt + M tuşlarına basabilirsiniz.  
   
  Tek satır modu giriş geçmişi sağlar. Yukarı Ok ve aşağı ok tuşlarını kullanarak giriş geçmişinde gidebilirsiniz. Komut dosyalarını çalıştırdığınızda giriş istemi tek satır modu temizler. Tek satırlı modunda bir komut çalıştırmak için Enter tuşuna basın.  
   
  Komut dosyalarını çalıştırdığınızda, çok satırlı modunu giriş istemi temizlemez. Çok satırlı modunu tek satır modu arasında geçiş yaptığınızda tuşlarına basarak giriş satırının temizleyebilirsiniz **Temizle giriş** (kırmızı "X"). Çok satırlı modunda bir komut çalıştırmak için Ctrl + Enter tuşlarına basın veya pencerenin sağ alt köşesindeki ok simgesini seçin.  
   
-##  <a name="Switching"></a> Betik yürütme bağlamını değiştirme  
+## <a name="Switching"></a> Betik yürütme bağlamını değiştirme  
  JavaScript Konsolu penceresi bir kerede web platformu ana bilgisayarı (WWAHost.exe) tek bir örneğini temsil eder, tek bir yürütme bağlamı ile etkileşim sağlar. Bazı senaryolarda, uygulamanız başka bir örnek kullandığınızda, konağının başlatılabilir bir `iframe`, bir paylaşım sözleşmesi, bir web çalışanı veya `WebView` denetimi. Ana bilgisayar başka bir örneğini çalıştırıyorsa, yürütme bağlamındaki seçerek uygulama çalıştırılırken farklı yürütme bağlamı seçebilirsiniz **hedef** listesi.  
   
  Aşağıdaki çizimde, hedef liste JavaScript konsol penceresinde gösterir.  
@@ -266,14 +266,14 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  Yürütme bağlamı kullanarak da geçebilirsiniz `cd` komutu, ancak bir yürütme bağlamı adını bilmeniz gerekir ve kullandığınız başvuru kapsamda olmalıdır. **Hedef** listesi diğer yürütme bağlamları daha iyi erişim sağlar.  
   
-##  <a name="BrowserSupport"></a> Tarayıcı ve Platform desteği  
+## <a name="BrowserSupport"></a> Tarayıcı ve Platform desteği  
  JavaScript Konsolu penceresi, aşağıdaki platformlarda desteklenir:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript ve HTML kullanarak Windows Phone Store uygulamaları  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] JavaScript ve HTML kullanarak Windows Phone Store uygulamaları  
   
--   Internet Explorer 11'in üzerinde çalışan [!INCLUDE[win81](../includes/win81-md.md)]  
+- Internet Explorer 11'in üzerinde çalışan [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Üzerinde çalışan Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
+- Üzerinde çalışan Internet Explorer 10 [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da uygulamalarının hatalarını ayıklama](../debugger/debug-store-apps-in-visual-studio.md)   

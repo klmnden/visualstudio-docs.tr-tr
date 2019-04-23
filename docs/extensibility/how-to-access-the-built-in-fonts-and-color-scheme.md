@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068229"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Nasıl yapılır: Yerleşik yazı tiplerinin erişmek ve ccheme renk
 Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle ilişkilidir yazı tipleri ve renkler bir düzeni vardır. Bu düzen aracılığıyla erişebileceğiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.
@@ -34,26 +34,26 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Yerleşik yazı tipleri ve renkler kullanarak bir kategori tanımlamak için
 
-1.  Rastgele bir GUID oluşturun.
+1. Rastgele bir GUID oluşturun.
 
      Bu GUID, bir kategori benzersiz şekilde tanımlamak için kullanılır. Bu kategori, IDE'nin varsayılan yazı tipleri ve renkler belirtimi kullanır.
 
     > [!NOTE]
     >  Yazı tipi ve renk verilerle alınırken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> veya diğer arabirimleri VSPackages yerleşik bilgi başvurmak için bu GUID kullanın.
 
-2.  Kategori adı bir dize tablosu VSPackage'nın kaynakları içine eklenmesi gerekir (*.rc*), böylece IDE'de görüntülendiğinde gerektiğinde yerelleştirilebilen dosya.
+2. Kategori adı bir dize tablosu VSPackage'nın kaynakları içine eklenmesi gerekir (*.rc*), böylece IDE'de görüntülendiğinde gerektiğinde yerelleştirilebilen dosya.
 
      Daha fazla bilgi için [ekleme veya silme bir dize](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Yerleşik yazı tipleri ve renkler kullanarak bir kategori kaydetmek için
 
-1.  Özel bir kategori aşağıdaki konumda kayıt defteri girdisi türü oluşturun:
+1. Özel bir kategori aşağıdaki konumda kayıt defteri girdisi türü oluşturun:
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio sürümü > \FontAndColors\\\<Kategori >*]
 
      *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.
 
-2.  Stok yazı tipi ve renk şeması dört değerlerle kullanılacak kayıt defteri doldurun:
+2. Stok yazı tipi ve renk şeması dört değerlerle kullanılacak kayıt defteri doldurun:
 
     |Ad|Tür|Veri|Açıklama|
     |----------|----------|----------|-----------------|

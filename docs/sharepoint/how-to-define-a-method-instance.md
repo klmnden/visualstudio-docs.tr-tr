@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068502"
 ---
 # <a name="how-to-define-a-method-instance"></a>Nasıl yapılır: Metot örneği tanımlama
   Her yöntem için en az bir metot örneği modelinizde tanımlamanız gerekir.
@@ -29,15 +29,15 @@ ms.locfileid: "56608023"
 
 ### <a name="to-define-a-method-instance"></a>Metot örneği tanımlamak için
 
-1.  İçinde **BDC yöntem ayrıntıları** penceresinde bir yöntemin düğümünü genişletin ve ardından **örnekleri** düğümü.
+1. İçinde **BDC yöntem ayrıntıları** penceresinde bir yöntemin düğümünü genişletin ve ardından **örnekleri** düğümü.
 
-2.  İçinde **metot örneği Ekle** listesinde **Bulucu örneği oluştur**.
+2. İçinde **metot örneği Ekle** listesinde **Bulucu örneği oluştur**.
 
      Yeni metot örneği altında görünür **örnekleri** düğümü.
 
-3.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
+3. Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
 
-4.  İçinde **özellikleri** penceresinde metot örneği özelliklerini ayarlayın. Her bir özellik hakkında daha fazla bilgi için bkz: [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. İçinde **özellikleri** penceresinde metot örneği özelliklerini ayarlayın. Her bir özellik hakkında daha fazla bilgi için bkz: [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)

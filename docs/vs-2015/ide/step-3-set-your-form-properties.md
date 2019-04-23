@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067254"
 ---
 # <a name="step-3-set-your-form-properties"></a>3. Adım: Form Özelliklerinizi Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
   
 7. Sonraki adıma geçmeden önce programınızı durdurmak, IDE izin vermeyeceğinden çalışırken programınızı değiştirin. Unutmayın, programınızı durdurmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.  
   
-   -   Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.  
+   - Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.  
   
-   -   Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Durdur**.  
+   - Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Durdur**.  
   
-   -   Üst köşesinde X düğmesini **Form1** penceresi.  
+   - Üst köşesinde X düğmesini **Form1** penceresi.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Sonraki öğretici adımına gitmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).
+- Önceki öğretici adımına dönmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).

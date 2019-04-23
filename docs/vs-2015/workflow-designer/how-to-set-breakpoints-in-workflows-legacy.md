@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069971"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama (Eski)
 Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!INCLUDE[wf](../includes/wf-md.md)] uygulamaları oluşturmak eski kullanarak [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] olduğunda, [!INCLUDE[wf2](../includes/wf2-md.md)] uygulamanın gerekir ya da hedeflemek [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -30,11 +30,11 @@ Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!I
   
  Aşağıdaki yollarla bir etkinlik iş akışı tasarım yüzeyinde kesme noktaları ayarlayabilirsiniz:  
   
--   Etkinliğe sağ tıklayın ve seçin **kesme noktası \ kesme noktası Ekle**.  
+- Etkinliğe sağ tıklayın ve seçin **kesme noktası \ kesme noktası Ekle**.  
   
--   Etkinliği seçin ve F9 tuşuna basın.  
+- Etkinliği seçin ve F9 tuşuna basın.  
   
--   Seçin **yeni kesme noktası** gelen **hata ayıklama** menüsü.  
+- Seçin **yeni kesme noktası** gelen **hata ayıklama** menüsü.  
   
      Hata ayıklayıcı bir kesme noktasında durduğunda, hata ayıklama sırasında yeni bir kesme noktası ayarlamak için bu seçeneği'ni de kullanabilirsiniz.  
   
@@ -43,24 +43,24 @@ Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!I
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Hata ayıklama menüsünden Yeni kesme noktası seçeneğini kullanarak bir kesme noktası ayarlamak için  
   
-1.  Üzerinde **hata ayıklama** menüsünde **yeni kesme noktası**.  
+1. Üzerinde **hata ayıklama** menüsünde **yeni kesme noktası**.  
   
-2.  Tıklayın **sonu işlevi**.  
+2. Tıklayın **sonu işlevi**.  
   
      **Yeni kesme noktası** iletişim kutusu açılır.  
   
-3.  Bir etkinlik adını **işlevi** bu söz dizimini kullanarak metin kutusu: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
+3. Bir etkinlik adını **işlevi** bu söz dizimini kullanarak metin kutusu: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
     >  Etkinlik adı yerine isteğe bağlı olarak, **işlevi** metin kutusunda, iş akışı aktivitesi mutlak yolunu belirterek bir kesme noktası ayarlayabilirsiniz. Örneğin, adında bir iş akışı çözümü olduğunu varsayalım **WorkflowConsoleApplication1** ve bir iş akışında adlı çözüm **Workflow1** adlı bir etkinlik kullanan **Delay1**. Etkinlik adı kullanabileceğiniz **Delay1** veya yol olarak belirtmek **Delay1:WorkflowConsoleApplication1.Workflow1** veya **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
-4.  Seçin **kullanım IntelliSense** işlev adını doğrulamak için onay kutusunu işaretleyin.  
+4. Seçin **kullanım IntelliSense** işlev adını doğrulamak için onay kutusunu işaretleyin.  
   
      Bu onay kutusu seçili değilse, hiçbir kesme noktası adı doğrulama gerçekleştirilir.  
   
-5.  Seçin **iş akışı** gelen **dil** listesi.  
+5. Seçin **iş akışı** gelen **dil** listesi.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışlarında hata ayıklama](../workflow-designer/debugging-legacy-workflows.md)   

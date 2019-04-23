@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067358"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Derleme ve Visual Studio'da oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Visual Studio, uygulamalar ve derlemeler ve yürütülebilir programlar sık ara
 
  IDE içinde aşağıdaki ek görevleri gerçekleştirebilirsiniz:
 
--   [Derleme çıktı dizinini değiştirme](../ide/how-to-change-the-build-output-directory.md).
+- [Derleme çıktı dizinini değiştirme](../ide/how-to-change-the-build-output-directory.md).
 
--   [Doğru şekilde derlenmesi için başka bir proje çıkışı bağımlı olan projeler tanımlamak](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Doğru şekilde derlenmesi için başka bir proje çıkışı bağımlı olan projeler tanımlamak](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Derleme günlüğü veya çıkış penceresine derlemelerin dahil bilgi miktarını değiştirmek](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Derleme günlüğü veya çıkış penceresine derlemelerin dahil bilgi miktarını değiştirmek](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Visual C#, Visual C++ veya Visual Basic için belirli bir derleyici uyarılarını Gizle](../ide/how-to-suppress-compiler-warnings.md).
+- [Visual C#, Visual C++ veya Visual Basic için belirli bir derleyici uyarılarını Gizle](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Özel belirleme konumunun derleme öncesi ve sonrası eylemleri bir derleme için derleme](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Özel belirleme konumunun derleme öncesi ve sonrası eylemleri bir derleme için derleme](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Paralel yapılar kullanarak yapı performansını artırmakta. Daha fazla bilgi için [yapı paralel olarak birden çok proje](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) veya blog gönderisinde [ayarlama C++ derleme paralellik](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
+- Paralel yapılar kullanarak yapı performansını artırmakta. Daha fazla bilgi için [yapı paralel olarak birden çok proje](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) veya blog gönderisinde [ayarlama C++ derleme paralellik](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [derleme platformlarını anlama](../ide/understanding-build-platforms.md) [(derleme) Web sitesi projeleri derleme](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Nasıl Yapılır: Oluşturma ve proje bağımlılıkları Kaldır](../ide/how-to-create-and-remove-project-dependencies.md)
+ [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [derleme platformlarını anlama](../ide/understanding-build-platforms.md) [(derleme) Web sitesi projeleri derleme](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Nasıl Yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma](../ide/how-to-create-and-remove-project-dependencies.md)

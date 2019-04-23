@@ -12,12 +12,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066844"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Yönetilen Paket Çerçevesini Kullanarak Proje Türü Uygulama (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulama
   
  Bu proje VSPackage çözümünüze eklemek için aşağıdakileri yapın:  
   
-1.  MPFProj indirmek *MPFProjectDir*.  
+1. MPFProj indirmek *MPFProjectDir*.  
   
-2.  İçinde *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, aşağıdaki bloğu değiştirin:  
+2. İçinde *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, aşağıdaki bloğu değiştirin:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulama
   </PropertyGroup>  
 ```  
   
-1.  VSPackage projesi oluşturun.  
+1. VSPackage projesi oluşturun.  
   
-2.  VSPackage projeyi.  
+2. VSPackage projeyi.  
   
-3.  Diğer önce aşağıdaki blok ekleyerek VSPackage .csproj dosyasını düzenlemek `<Import>` blokları:  
+3. Diğer önce aşağıdaki blok ekleyerek VSPackage .csproj dosyasını düzenlemek `<Import>` blokları:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulama
   </PropertyGroup>  
 ```  
   
-1.  Projeyi kaydedin.  
+1. Projeyi kaydedin.  
   
-2.  VSPackage çözümü kapatıp yeniden açın.  
+2. VSPackage çözümü kapatıp yeniden açın.  
   
-3.  VSPackage projeyi yeniden açın. ProjectBase adlı yeni bir dizin görmeniz gerekir.  
+3. VSPackage projeyi yeniden açın. ProjectBase adlı yeni bir dizin görmeniz gerekir.  
   
-4.  VSPackage projesi şu başvuruyu ekleyin:  
+4. VSPackage projesi şu başvuruyu ekleyin:  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Projeyi oluşturun.  
+5. Projeyi oluşturun.  
   
 ## <a name="hierarchy-classes"></a>Hiyerarşi sınıfları  
  Proje hiyerarşi desteği MPFProj sınıflarda aşağıdaki tabloda özetlenmiştir. Daha fazla bilgi için [hiyerarşiler ve seçim](../../extensibility/internals/hierarchies-and-selection.md).  

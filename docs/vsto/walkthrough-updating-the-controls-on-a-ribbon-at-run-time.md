@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067241"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>İzlenecek yol: Çalışma zamanında Şerit denetimlerini güncelleştirme
 
@@ -34,13 +34,13 @@ Bu yönerge, Şerit nesne modeline Şerit Office uygulamasına yüklendikten son
 
 Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Yeni bir Outlook VSTO eklentisi projesi oluşturun.
+- Yeni bir Outlook VSTO eklentisi projesi oluşturun.
 
--   Özel Şerit grubuna tasarlayın.
+- Özel Şerit grubuna tasarlayın.
 
--   Özel bir grup yerleşik bir sekmeyi ekleyin.
+- Özel bir grup yerleşik bir sekmeyi ekleyin.
 
--   Çalışma zamanında Şerit üzerindeki denetimleri güncelleştirin.
+- Çalışma zamanında Şerit üzerindeki denetimleri güncelleştirin.
 
 > [!NOTE]
 > Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ Bu izlenecek yol aşağıdaki görevleri gösterir:
 
 Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklentisi projesi oluşturun
 
@@ -59,11 +59,11 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için
 
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesinde adlı oluşturun **Çalışma_Zamanında_Şerit_Güncelleme**.
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesinde adlı oluşturun **Çalışma_Zamanında_Şerit_Güncelleme**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **çözüm için dizin oluştur**.
+2. İçinde **yeni proje** iletişim kutusunda **çözüm için dizin oluştur**.
 
-3.  Projenin varsayılan proje dizinine kaydedin.
+3. Projenin varsayılan proje dizinine kaydedin.
 
      Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ Bir kullanıcı yeni bir posta iletisi yazdığında, bu örnek için Şerit gö
 
 ### <a name="to-design-a-custom-group"></a>Özel bir grup tasarlamak için
 
-1.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
+1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.
 
-3.  Yeni Şeridin adını değiştirmek **CustomerRibbon**ve ardından **Ekle**.
+3. Yeni Şeridin adını değiştirmek **CustomerRibbon**ve ardından **Ekle**.
 
      *CustomerRibbon.cs* veya *CustomerRibbon.vb* dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.
 
-4.  Şerit Tasarımcısı seçmek için tıklayın.
+4. Şerit Tasarımcısı seçmek için tıklayın.
 
-5.  İçinde **özellikleri** penceresinde, aşağı açılan oku tıklatın **RibbonType** özelliği ve ardından **Microsoft.Outlook.Mail.Compose**.
+5. İçinde **özellikleri** penceresinde, aşağı açılan oku tıklatın **RibbonType** özelliği ve ardından **Microsoft.Outlook.Mail.Compose**.
 
      Bu kullanıcı Outlook'ta yeni bir posta iletisi yazdığında Şerit sağlar.
 
-6.  Şerit Tasarımcısı'nda tıklatın **Group1** seçin.
+6. Şerit Tasarımcısı'nda tıklatın **Group1** seçin.
 
-7.  İçinde **özellikleri** penceresinde **etiket** için **Müşteri satın alımları**.
+7. İçinde **özellikleri** penceresinde **etiket** için **Müşteri satın alımları**.
 
-8.  Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **ComboBox** üzerine **Müşteri satın alımları** grubu.
+8. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **ComboBox** üzerine **Müşteri satın alımları** grubu.
 
 9. Tıklayın **ComboBox1** seçin.
 
@@ -111,17 +111,17 @@ Yerleşik bir sekmeyi bir Outlook Gezgini veya denetçisinin Şerit üzerinde za
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Yerleşik bir sekmeyi özel bir grup eklemek için
 
-1.  Tıklayın **TabAddins (yerleşik)** seçmek için sekmesinde.
+1. Tıklayın **TabAddins (yerleşik)** seçmek için sekmesinde.
 
-2.  İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **OfficeId** için **TabNewMailMessage**.
+2. İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **OfficeId** için **TabNewMailMessage**.
 
      Bu ekler **Müşteri satın alımları** grubunu **iletileri** yeni bir posta iletisi içinde görüntülenen bir Şerit sekmesinde.
 
-3.  Tıklayın **Müşteri satın alımları** grubu seçin.
+3. Tıklayın **Müşteri satın alımları** grubu seçin.
 
-4.  İçinde **özellikleri** penceresinde genişletin **konumu** özelliğinin yanındaki açılan oka tıklayın **PositionType** özelliği ve ardından  **BeforeOfficeId**.
+4. İçinde **özellikleri** penceresinde genişletin **konumu** özelliğinin yanındaki açılan oka tıklayın **PositionType** özelliği ve ardından  **BeforeOfficeId**.
 
-5.  Ayarlama **OfficeId** özelliğini **GroupClipboard**.
+5. Ayarlama **OfficeId** özelliğini **GroupClipboard**.
 
      Bu konumlandırır **Müşteri satın alımları** önce Grup **Pano** grubunu **iletileri** sekmesi.
 
@@ -131,31 +131,31 @@ Kullanım **veri kaynakları** penceresinin bir türü belirtilmiş veri kümesi
 
 ### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için
 
-1.  Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.
+1. Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.
 
      Bu başlatır **veri kaynağı Yapılandırma Sihirbazı**.
 
-2.  Seçin **veritabanı**ve ardından **sonraki**.
+2. Seçin **veritabanı**ve ardından **sonraki**.
 
-3.  Seçin **veri kümesi**ve ardından **sonraki**.
+3. Seçin **veri kümesi**ve ardından **sonraki**.
 
-4.  Northwind örnek Microsoft SQL Server Compact 4.0 veritabanını bir veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.
+4. Northwind örnek Microsoft SQL Server Compact 4.0 veritabanını bir veri bağlantısı seçin veya yeni bir bağlantı kullanarak eklemek **yeni bağlantı** düğmesi.
 
-5.  Bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.
+5. Bağlantı seçili veya oluşturulduktan sonra tıklayın **sonraki**.
 
-6.  Tıklayın **sonraki** bağlantı dizesini kaydedin.
+6. Tıklayın **sonraki** bağlantı dizesini kaydedin.
 
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**.
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**.
 
-8.  Aşağıdaki tabloların her biri yanındaki onay kutusunu seçin:
+8. Aşağıdaki tabloların her biri yanındaki onay kutusunu seçin:
 
-    1.  **Müşteriler**
+    1. **Müşteriler**
 
-    2.  **Sipariş Ayrıntıları**
+    2. **Sipariş Ayrıntıları**
 
-    3.  **Siparişler**
+    3. **Siparişler**
 
-    4.  **Ürünler**
+    4. **Ürünler**
 
 9. **Son**'a tıklayın.
 
@@ -163,11 +163,11 @@ Kullanım **veri kaynakları** penceresinin bir türü belirtilmiş veri kümesi
 
 Şerit nesne modeline, aşağıdaki görevleri gerçekleştirmek için kullanın:
 
--   Müşteri adları Ekle **müşteriler** birleşik giriş kutusu.
+- Müşteri adları Ekle **müşteriler** birleşik giriş kutusu.
 
--   Menü ve düğme denetimleri ekleme **satın alınan ürünlerle** satış orders ve products temsil eden bir menü satılır.
+- Menü ve düğme denetimleri ekleme **satın alınan ürünlerle** satış orders ve products temsil eden bir menü satılır.
 
--   Kime, konu ve gövde doldurmak verileri kullanarak yeni e-posta iletileri alanlarının **müşteriler** birleşik giriş kutusu ve **satın alınan ürünlerle** menüsü.
+- Kime, konu ve gövde doldurmak verileri kullanarak yeni e-posta iletileri alanlarının **müşteriler** birleşik giriş kutusu ve **satın alınan ürünlerle** menüsü.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Şerit nesne modelini kullanarak özel grup denetimleri güncelleştirmek için
 
@@ -257,31 +257,31 @@ Bir müşteri takip e-posta iletisi oluşturmak için bir müşteri seçin ve ar
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Özel grup denetimleri sınamak için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
      Outlook'u başlatır.
 
-2.  Outlook'ta, üzerinde **dosya** menüsünde **yeni**ve ardından **posta iletisi**.
+2. Outlook'ta, üzerinde **dosya** menüsünde **yeni**ve ardından **posta iletisi**.
 
      Aşağıdaki eylemler gerçekleşir:
 
-    -   Yeni bir posta iletisi Inspector penceresi görünür.
+    - Yeni bir posta iletisi Inspector penceresi görünür.
 
-    -   Üzerinde **ileti** Şerit sekmesinde **Müşteri satın alımları** grup görünür önce **Pano** grubu.
+    - Üzerinde **ileti** Şerit sekmesinde **Müşteri satın alımları** grup görünür önce **Pano** grubu.
 
-    -   **Müşteriler** grubu birleşik giriş kutusunda, Northwind veritabanındaki müşteriler adları ile güncelleştirilir.
+    - **Müşteriler** grubu birleşik giriş kutusunda, Northwind veritabanındaki müşteriler adları ile güncelleştirilir.
 
-3.  Üzerinde **ileti** Şerit sekmesinde, **Müşteri satın alımları** grubunda, müşteriden seçin **müşteriler** birleşik giriş kutusu.
+3. Üzerinde **ileti** Şerit sekmesinde, **Müşteri satın alımları** grubunda, müşteriden seçin **müşteriler** birleşik giriş kutusu.
 
      Aşağıdaki eylemler gerçekleşir:
 
-    -   **Satın alınan ürünlerle** menüsünde, Seçilen müşteri için her bir satış siparişi göstermek için güncelleştirilir.
+    - **Satın alınan ürünlerle** menüsünde, Seçilen müşteri için her bir satış siparişi göstermek için güncelleştirilir.
 
-    -   Her bir satış siparişi alt, o sırada satın alınan ürünleri göstermek için güncelleştirilir.
+    - Her bir satış siparişi alt, o sırada satın alınan ürünleri göstermek için güncelleştirilir.
 
-    -   Seçilen müşteri e-posta adresine eklenen **için** posta iletisi konu ve e-posta iletisinin gövdesi, satır metin ile doldurulur.
+    - Seçilen müşteri e-posta adresine eklenen **için** posta iletisi konu ve e-posta iletisinin gövdesi, satır metin ile doldurulur.
 
-4.  Tıklayın **ürünler satın alma işlemleri** menüsünden herhangi bir satış siparişinin noktası ve bir ürün satış siparişi'ye tıklayın.
+4. Tıklayın **ürünler satın alma işlemleri** menüsünden herhangi bir satış siparişinin noktası ve bir ürün satış siparişi'ye tıklayın.
 
      Ürün adı, e-posta iletisinin gövdesine eklenir.
 
@@ -289,11 +289,11 @@ Bir müşteri takip e-posta iletisi oluşturmak için bir müşteri seçin ve ar
 
 Aşağıdaki konulardan Office UI özelleştirme hakkında daha fazla bilgi edinebilirsiniz:
 
--   Tüm belge düzeyi özelleştirmesine Bağlam tabanlı UI ekleyin. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
+- Tüm belge düzeyi özelleştirmesine Bağlam tabanlı UI ekleyin. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
 
--   Bir standart veya özel Microsoft Office Outlook biçimini genişletin. Daha fazla bilgi için [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Bir standart veya özel Microsoft Office Outlook biçimini genişletin. Daha fazla bilgi için [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Özel görev bölmesini Outlook ekleyin. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
+- Özel görev bölmesini Outlook ekleyin. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 431978a10081ec50e9eaca7e88a37f1447f953e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16a509c5a8fa46620e60fb5f1497c38d97ff6330
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068320"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Nasıl yapılır: Aynı Anda Birden Fazla Yapılandırmayı Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Birden çok proje veya bile tüm yapı yapılandırmalarına aynı anda birçok 
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Birden çok oluşturma yapılandırmasında bir proje oluşturmak için  
   
-1.  Menü çubuğunda, **derleme**, **Toplu derleme**.  
+1. Menü çubuğunda, **derleme**, **Toplu derleme**.  
   
-2.  İçinde **derleme** onay kutularını bir projeyi derlemek istediğiniz yapılandırmaları için sütun seçin.  
+2. İçinde **derleme** onay kutularını bir projeyi derlemek istediğiniz yapılandırmaları için sütun seçin.  
   
     > [!TIP]
     >  Çözüm yapı yapılandırması oluşturun veya düzenlemek için seçin **derleme**, **Configuration Manager** açmak için menü çubuğunda **Configuration Manager** iletişim kutusu. Bir çözüm için bir derleme yapılandırması düzenledikten sonra seçin **yeniden** düğmesine **Toplu derleme** derleme yapılandırmaları Çözümdeki projeler için tüm güncelleştirmek için iletişim kutusu.  
   
-3.  Seçin **derleme** veya **yeniden** belirttiğiniz yapılandırmaları olan bir projeyi derlemek için düğmeler.  
+3. Seçin **derleme** veya **yeniden** belirttiğiniz yapılandırmaları olan bir projeyi derlemek için düğmeler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)   

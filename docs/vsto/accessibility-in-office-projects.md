@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070049"
 ---
 # <a name="accessibility-in-office-projects"></a>Office projelerinde erişilebilirlik
 
@@ -40,21 +40,21 @@ Microsoft Visual Studio ve Microsoft Office standart erişilebilirlik gereksinim
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Tasarımcıda Şerit sekmeler ve denetimler için kısayol tuşlarını görüntülemek için
 
-1.  Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.
+1. Visual Studio'da üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.
 
-2.  Genişletin **Office Araçları** düğüm ve select **Microsoft Office Excel Klavyesi** veya **Microsoft Office Word Klavyesi**uygun şekilde.
+2. Genişletin **Office Araçları** düğüm ve select **Microsoft Office Excel Klavyesi** veya **Microsoft Office Word Klavyesi**uygun şekilde.
 
-3.  Seçin **dinamik klavye düzeni**.
+3. Seçin **dinamik klavye düzeni**.
 
      Visual Studio değişikliğin etkili olması için yeniden başlatmanız gerektiğini belirten bir ileti görüntülenir.
 
-4.  **Tamam**'ı tıklatın.
+4. **Tamam**'ı tıklatın.
 
-5.  Visual Studio'yu yeniden başlatın ve projenizi yeniden açın.
+5. Visual Studio'yu yeniden başlatın ve projenizi yeniden açın.
 
-6.  Projeniz için belge veya çalışma kitabı Tasarımcısı'nı açın.
+6. Projeniz için belge veya çalışma kitabı Tasarımcısı'nı açın.
 
-7.  Tuşuna **F6** kısayol tuşları için Şerit görüntülenecek.
+7. Tuşuna **F6** kısayol tuşları için Şerit görüntülenecek.
 
 ## <a name="accessibility-at-runtime"></a>Çalışma zamanında erişilebilirlik
 

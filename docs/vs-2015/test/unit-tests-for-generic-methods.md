@@ -11,14 +11,14 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070114"
 ---
-# <a name="unit-tests-for-generic-methods"></a>Genel Metotlar için birim testleri
+# <a name="unit-tests-for-generic-methods"></a>Genel Yöntemler için birim testleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: Birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
@@ -29,20 +29,20 @@ Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi ge
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki örnekler, genel türler için birim testleri gösterir:  
   
--   [Oluşturulan Test kodu düzenleme](#EditingGeneratedTestCode). Bu örnekte oluşturulan Test kodu ve Test kodu düzenlenmiş iki bölümü vardır. Bu genel bir yöntemi yararlı test yönteme oluşturulan ham test kodu düzenleme gösterir.  
+- [Oluşturulan Test kodu düzenleme](#EditingGeneratedTestCode). Bu örnekte oluşturulan Test kodu ve Test kodu düzenlenmiş iki bölümü vardır. Bu genel bir yöntemi yararlı test yönteme oluşturulan ham test kodu düzenleme gösterir.  
   
--   [Bir tür kısıtlaması kullanarak](#TypeConstraintNotSatisfied). Bu örnek, bir tür kısıtlaması kullanan bir genel yöntem için birim testi gösterir. Bu örnekte, tür kısıtlaması karşılanmıyor.  
+- [Bir tür kısıtlaması kullanarak](#TypeConstraintNotSatisfied). Bu örnek, bir tür kısıtlaması kullanan bir genel yöntem için birim testi gösterir. Bu örnekte, tür kısıtlaması karşılanmıyor.  
   
-###  <a name="EditingGeneratedTestCode"></a> Örnek 1: Oluşturulan Test kod düzenleme  
+### <a name="EditingGeneratedTestCode"></a> Örnek 1: Oluşturulan Test kod düzenleme  
  Bu bölümdeki test kodu adlı bir test altındaki kod yöntemi test `SizeOfLinkedList()`. Bu yöntem, bağlantılı listesinde düğüm sayısını belirten bir tamsayı döndürür.  
   
  Visual Studio Enterprise tarafından oluşturulan gibi ilk kod örneği bölümde oluşturulan Test kodu, düzenlenmemiş test kodu gösterir. ' % S'bölümünde düzenlenen Test kodu, ikinci örnek, iki farklı veri türleri için SizeOfLinkedList yöntemi çalışmasını test nasıl yapabileceğiniz gösterir `int` ve `char`.  
   
  Bu kod, iki yöntem göstermektedir:  
   
--   bir test yardımcı yöntem `SizeOfLinkedListTestHelper<T>()`. Varsayılan olarak, bir test yardımcı yöntem adını "TestHelper" vardır.  
+- bir test yardımcı yöntem `SizeOfLinkedListTestHelper<T>()`. Varsayılan olarak, bir test yardımcı yöntem adını "TestHelper" vardır.  
   
--   bir test yöntemi `SizeOfLinkedListTest()`. Her test yönteminin TestMethod özniteliği ile işaretlenir.  
+- bir test yöntemi `SizeOfLinkedListTest()`. Her test yönteminin TestMethod özniteliği ile işaretlenir.  
   
 #### <a name="generated-test-code"></a>Oluşturulan Test kodu  
  Aşağıdaki test kodunu kaynaklandığı `SizeOfLinkedList()` yöntemi. Bu düzenlenmemiş oluşturulan test olduğundan, doğru test SizeOfLinkedList yöntemi için değiştirilmelidir.  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Test yardımcı yöntemi  
  Test yardımcı yöntemi, 1 ile 5. adım olarak etiketlenmiş kod satırlarına karşılık gelen aşağıdaki adımları gerçekleştirir.  
   
-1.  Genel olarak bağlı bir liste oluşturun.  
+1. Genel olarak bağlı bir liste oluşturun.  
   
-2.  Dört düğüm bağlı listeye ekleyin. Bu düğümler içeriğini veri türü bilinmiyor.  
+2. Dört düğüm bağlı listeye ekleyin. Bu düğümler içeriğini veri türü bilinmiyor.  
   
-3.  Bağlantılı listesinin beklenen boyut değişkene atayın `expected`.  
+3. Bağlantılı listesinin beklenen boyut değişkene atayın `expected`.  
   
-4.  İşlem bağlantılı liste gerçek boyutuna ve değişkene atayın `actual`.  
+4. İşlem bağlantılı liste gerçek boyutuna ve değişkene atayın `actual`.  
   
-5.  Karşılaştırma `actual` ile `expected` bir onay deyimi içinde. Gerçek beklenen eşit değilse, test başarısız olur.  
+5. Karşılaştırma `actual` ile `expected` bir onay deyimi içinde. Gerçek beklenen eşit değilse, test başarısız olur.  
   
 ##### <a name="test-method"></a>Test yöntemi  
  Test yöntemi SizeOfLinkedListTest adlı test çalıştırdığınızda, çağrılan kod derlenir. Bu adım 6 ve 7. adım olarak etiketlenmiş kod satırlarına karşılık gelen aşağıdaki adımları gerçekleştirir.  
   
-1.  Belirtin `<int>` test için çalıştığını doğrulamak için test yardımcı yöntemini çağırdığınızda `integer` değişkenleri.  
+1. Belirtin `<int>` test için çalıştığını doğrulamak için test yardımcı yöntemini çağırdığınızda `integer` değişkenleri.  
   
-2.  Belirtin `<char>` test için çalıştığını doğrulamak için test yardımcı yöntemini çağırdığınızda `char` değişkenleri.  
+2. Belirtin `<char>` test için çalıştığını doğrulamak için test yardımcı yöntemini çağırdığınızda `char` değişkenleri.  
   
 ```  
   
@@ -119,7 +119,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 >  Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma  
+### <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma  
  Bu örnek, bir birim testi karşılanmadı bir tür kısıtlaması kullanan bir genel yöntem için gösterir. İlk bölüm, kod test altındaki kod projesi gösterir. Tür kısıtlaması vurgulanır.  
   
  İkinci bölümde test projesinden kod gösterilmektedir.  
