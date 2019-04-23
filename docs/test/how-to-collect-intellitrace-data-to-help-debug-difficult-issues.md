@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065278"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Nasıl yapılır: Hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama
 
@@ -51,11 +51,11 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>IntelliTrace Tanılama veri bağdaştırıcısıyla toplanacak verileri yapılandırmak için
 
-1.  IntelliTrace verilerini toplamak için kullanılacak rolü seçin.
+1. IntelliTrace verilerini toplamak için kullanılacak rolü seçin.
 
-2.  Seçin **IntelliTrace**.
+2. Seçin **IntelliTrace**.
 
-3.  Bir ASP.NET web uygulaması veya web istemci rolü için IntelliTrace ekliyorsanız, da seçmelisiniz **IntelliTrace ve Test etkisi için ASP.NET İstemci Proxy'i**.
+3. Bir ASP.NET web uygulaması veya web istemci rolü için IntelliTrace ekliyorsanız, da seçmelisiniz **IntelliTrace ve Test etkisi için ASP.NET İstemci Proxy'i**.
 
      Bu proxy, IntelliTrace ve Test etkisi tanılama veri bağdaştırıcısı için bir web sunucusu istemciden gelen http çağrıları ile ilgili bilgi toplamanıza olanak sağlar.
 
@@ -64,22 +64,22 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Seçin **yapılandırma** için **IntelliTrace** varsayılan IntelliTrace ayarlarını değiştirmek için.
+4. Seçin **yapılandırma** için **IntelliTrace** varsayılan IntelliTrace ayarlarını değiştirmek için.
 
      Toplanacak verileri yapılandırmak için iletişim kutusu görüntülenir.
 
     > [!WARNING]
     > IntelliTrace verisi toplamayı etkinleştirirseniz, kod kapsam verisi toplama çalışmaz.
 
-5.  Seçin **genel** sekmesi. Seçin **yalnızca IntelliTrace olaylarını** test ettiğinizde performansı üzerinde çok az etkisi olan önemli tanılama olaylarını kaydetmek için.
+5. Seçin **genel** sekmesi. Seçin **yalnızca IntelliTrace olaylarını** test ettiğinizde performansı üzerinde çok az etkisi olan önemli tanılama olaylarını kaydetmek için.
 
      veya
 
      Seçin **IntelliTrace olayları ve çağrı bilgileri** tanılama olayları ve yöntemi kaydetmek için çağrı bilgileri, izleme düzeyini gösterir. Testlerinizi çalıştırdığınızda, bu izleme düzeyini performans etkisi olabilir.
 
-6.  Internet Information Services üzerinde çalışan ASP.NET uygulamanızın veri toplamak için seçin **Internet Information Services üzerinde çalışan ASP.NET uygulamalarından veri topla**. Ayarlama ve web sunucusu rolünde test aracınızı yapılandırmak. Bkz: [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
+6. Internet Information Services üzerinde çalışan ASP.NET uygulamanızın veri toplamak için seçin **Internet Information Services üzerinde çalışan ASP.NET uygulamalarından veri topla**. Ayarlama ve web sunucusu rolünde test aracınızı yapılandırmak. Bkz: [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-7.  Seçin **modülleri** sekmesi. Şunlardan birini seçin **şunlar hariç tüm modüllerden veri toplamak** ve **Ekle** modül listesine eklemek ve **Kaldır** modülü kaldırmak için. Bu seçenek, belirttiğiniz modüller hariç sistemde çalışan tüm modülleri dahil edildi sağlar.
+7. Seçin **modülleri** sekmesi. Şunlardan birini seçin **şunlar hariç tüm modüllerden veri toplamak** ve **Ekle** modül listesine eklemek ve **Kaldır** modülü kaldırmak için. Bu seçenek, belirttiğiniz modüller hariç sistemde çalışan tüm modülleri dahil edildi sağlar.
 
      veya
 
@@ -88,7 +88,7 @@ Bu yordamdaki adımları gerçekleştirmeden önce Microsoft Test Yöneticisi ve
     > [!NOTE]
     > Mümkünse, izlemek istediğiniz belirli işlemleri seçin. Bu en iyi performans için önerilir.
 
-8.  Seçin **işlemleri** sekmesi. Seçin **şunlar hariç tüm işlemlerden veri topla** ve **Ekle** işlemler listesine eklemek ve **Kaldır** işlemi kaldırmak için. Bu seçenek, belirttiğiniz işlemleri dışında sistemde çalışan tüm işlemler dahil sağlar.
+8. Seçin **işlemleri** sekmesi. Seçin **şunlar hariç tüm işlemlerden veri topla** ve **Ekle** işlemler listesine eklemek ve **Kaldır** işlemi kaldırmak için. Bu seçenek, belirttiğiniz işlemleri dışında sistemde çalışan tüm işlemler dahil sağlar.
 
      veya
 

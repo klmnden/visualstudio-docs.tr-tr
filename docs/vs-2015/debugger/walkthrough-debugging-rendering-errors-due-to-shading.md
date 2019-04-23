@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067163"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../inc
   
  Bu izlenecek yol gösterir nasıl yapılır:  
   
--   Sorunu gösteren piksel tanımlamak için grafik günlük belgesi inceleyin.  
+- Sorunu gösteren piksel tanımlamak için grafik günlük belgesi inceleyin.  
   
--   Kullanım **grafik piksel geçmişi** penceresini piksel durumu daha yakından inceleyin.  
+- Kullanım **grafik piksel geçmişi** penceresini piksel durumu daha yakından inceleyin.  
   
--   Kullanım **HLSL hata ayıklayıcısı** piksel ve köşe gölgelendiricileri incelemek için.  
+- Kullanım **HLSL hata ayıklayıcısı** piksel ve köşe gölgelendiricileri incelemek için.  
   
 ## <a name="scenario"></a>Senaryo  
  Yaygın olarak yanlış renklendirme nesneler üzerinde bir köşe gölgelendiricisi piksel geçtiğinde gerçekleşir gölgelendirici yanlış veya tamamlanmamış bilgiler.  

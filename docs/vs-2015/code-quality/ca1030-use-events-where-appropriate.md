@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072103"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olayları kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "54835076"
 ## <a name="cause"></a>Sebep
  Genel, korumalı veya özel yöntem adı aşağıdakilerden biri ile başlar:
 
--   Eklenti fiyatı
+- Eklenti fiyatı
 
--   RemoveOn
+- RemoveOn
 
--   Ateş
+- Ateş
 
--   artırma
+- artırma
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci ya da Yayımla-abone ol tasarım desenini izler; Bunlar, bir nesnede bir durum değişikliği diğer nesnelere iletileceği olduğunda kullanılır. Yanıt olarak açıkça tanımlanmış bir durum değişikliği bir yöntem çağrıldığında, bir olay işleyicisi tarafından yöntemin çağrılması gerekir. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.

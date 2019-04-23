@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083038"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Nasıl yapılır: Belgeleri nesne verileriyle doldurma
 
@@ -28,11 +28,11 @@ Windows Forms projelerinde olduğu gibi bir veri nesnesi içinde veri belirtilme
 
 Belgenin bir nesneyi verilerle doldurmak için üç temel adımlarını tamamlamanız gerekir:
 
--   Verilere bağlayabilirsiniz belge için bir denetim ekleyin.
+- Verilere bağlayabilirsiniz belge için bir denetim ekleyin.
 
--   Bir veri nesnesi belgeye ekleyin.
+- Bir veri nesnesi belgeye ekleyin.
 
--   Veri nesnesi için BindingSource bağlanın.
+- Veri nesnesi için BindingSource bağlanın.
 
 ## <a name="to-add-a-data-object"></a>Bir veri nesnesi eklemek için
 
@@ -48,23 +48,23 @@ VSTO eklentisi projeleri, denetimleri oluşturur ve bunları çalışma zamanın
 
 Veri nesnesi için BindingSource bağlanmak için:
 
-1.  İstediğiniz veri alanına sürükleyin **veri kaynakları** belgenize penceresi. Bu, bir denetimi otomatik olarak oluşturur.
+1. İstediğiniz veri alanına sürükleyin **veri kaynakları** belgenize penceresi. Bu, bir denetimi otomatik olarak oluşturur.
 
-2.  Kodunuzda, veri kaynağı için seçtiğiniz nesnenin türü örneği oluşturun.
+2. Kodunuzda, veri kaynağı için seçtiğiniz nesnenin türü örneği oluşturun.
 
-3.  Örneğine atadığınız <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
+3. Örneğine atadığınız <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Uygulama düzeyi projeleri
 
 Veri nesnesi için BindingSource bağlanmak için:
 
-1.  Kodunuzda, veri kaynağıyla ilişkili olan nesnenin türü örneği oluşturun.
+1. Kodunuzda, veri kaynağıyla ilişkili olan nesnenin türü örneği oluşturun.
 
-2.  Bir örneğini oluşturmak bir <xref:System.Windows.Forms.BindingSource>.
+2. Bir örneğini oluşturmak bir <xref:System.Windows.Forms.BindingSource>.
 
-3.  Veri kaynağı örneği atayın <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
+3. Veri kaynağı örneği atayın <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
 
-4.  Veri kaynağı bir veri bağlama denetimine ekleyin.
+4. Veri kaynağı bir veri bağlama denetimine ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080352"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek yol: Hesaplayıcı Gölgelendiricisinde hata ayıklamak için grafik tanılamayı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Bu izlenecek yol, Visual Studio grafik tanılama araçları hatalı sonuçlar ü
   
  Bu örneklerde bu görevler gösterilir:  
   
--   Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.  
+- Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.  
   
--   Kullanarak **grafik olay çağrı yığını** hangi compute gölgelendiricisinin yürütüleceğini tarafından DirectCompute belirlemek için `Dispatch` olay.  
+- Kullanarak **grafik olay çağrı yığını** hangi compute gölgelendiricisinin yürütüleceğini tarafından DirectCompute belirlemek için `Dispatch` olay.  
   
--   Kullanarak **grafik ardışık düzen aşamaları** penceresini ve HLSL hata ayıklayıcısı sorunun kaynağı olan compute gölgelendiriciyi incelemek için.  
+- Kullanarak **grafik ardışık düzen aşamaları** penceresini ve HLSL hata ayıklayıcısı sorunun kaynağı olan compute gölgelendiriciyi incelemek için.  
   
 ## <a name="scenario"></a>Senaryo  
  Bu senaryoda, benzetim güncelleştirmesinin hesaplama açısından en yoğun bölümlerini gerçekleştirmek için DirectCompute kullanan bir Akışkan dinamiği benzetimi yazdınız. Uygulamayı çalıştırdığınızda, veri kümesi ve UI işlenmesi doğru görünür, ancak benzetim beklendiği gibi davranmaz. Grafik tanılamayı kullanarak sorunu bir grafik günlüğüne böylece uygulamanın hatalarını ayıklayabilir miyim yakalayabilirsiniz. Sorun, uygulamada şu şekilde görünür:  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066786"
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş Direct3D olayları keşfetmek için Visual Studio grafik Çözümleyicisi'nde kullanın.
@@ -49,7 +49,7 @@ Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Olay listesi görünümü modu değiştirmek için
 
--   İçinde **grafik olay listesi** penceresinde, olayların listesinin üst bulun **görünümü** açılır ve seçeneğini **zaman çizelgesi** görünümü veya **GPUişi** görünümü.
+- İçinde **grafik olay listesi** penceresinde, olayların listesinin üst bulun **görünümü** açılır ve seçeneğini **zaman çizelgesi** görünümü veya **GPUişi** görünümü.
 
 ### <a name="filtering-events"></a>Olayları filtreleme
  Arama kutusunu kullanabilirsiniz — sağ üst köşesinde bulunan **grafik olay listesi** penceresi — yalnızca adında belirli anahtar sözcükler olayları dahil etmek için olayları listeyi filtrelemek için. İster tek anahtar sözcükleri belirtebilirsiniz `Vertex`— önceki resimde gösterildiği gibi — veya noktalı virgülle ayrılmış bir liste kullanarak birden çok anahtar sözcükleri `Draw;Primitive`— ya da sahip olayları eşleşen `Draw` veya `Primitive` adlarında. Aramalar için boşluk hassas — Örneğin, `VSSet` ve `VS Set` farklı aramalar — böylece form aramaları için dikkatli bir şekilde sağlayın.

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064589"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 
@@ -20,8 +20,8 @@ Bu makalede, Fakes kod oluşturma ve derleme seçeneklerini ve sorunlarını aç
 
 **Gereksinimler**
 
--   Visual Studio Enterprise
--   Bir .NET Framework projesi
+- Visual Studio Enterprise
+- Bir .NET Framework projesi
 
 > [!NOTE]
 > .NET standard projeleri desteklenmez.
@@ -62,23 +62,23 @@ Filtreler ayarlanabilir *.fakes* hangi türlerin heline getirilmesi gereken kıs
 
 Filtre dizeleri nasıl yapılması gerektiğini tanımlamak için basit bir dil bilgisi kullanın:
 
--   Filtreleri, varsayılan olarak büyük küçük harf duyarsız; eşleşen alt dizenin filtreleri uygulayın:
+- Filtreleri, varsayılan olarak büyük küçük harf duyarsız; eşleşen alt dizenin filtreleri uygulayın:
 
      `el` "hello" ile eşleşir
 
--   Ekleme `!` isteğe bağlı olarak filtre sonuna kadar kesin bir büyük küçük harfe duyarlı eşleşme yapar:
+- Ekleme `!` isteğe bağlı olarak filtre sonuna kadar kesin bir büyük küçük harfe duyarlı eşleşme yapar:
 
      `el!` "hello" ile eşleşmiyor
 
      `hello!` "hello" ile eşleşir
 
--   Ekleme `*` filtre sonuna kadar dizenin önek eşleşen kolaylaştırır:
+- Ekleme `*` filtre sonuna kadar dizenin önek eşleşen kolaylaştırır:
 
      `el*` "hello" ile eşleşmiyor
 
      `he*` "hello" ile eşleşir
 
--   Noktalı virgülle ayrılmış bir liste içinde birden çok filtre ayırım yaparak birleştirilebilir.
+- Noktalı virgülle ayrılmış bir liste içinde birden çok filtre ayırım yaparak birleştirilebilir.
 
      `el;wo` "hello" ve "world" ile eşleşir
 
@@ -114,9 +114,9 @@ Shim/dolgu türlerini ve Koçan türleri üretilen Fakes derlemeye görülebilen
 
  Shimmed derleme kesin şekilde adlandırıldığında ve derlemenin iç türlerine erişmek istediğiniz varsa:
 
--   Hem test derlemeniz hem de Fakes derlemeniz kesin adlandırılmış olmalıdır.
+- Hem test derlemeniz hem de Fakes derlemeniz kesin adlandırılmış olmalıdır.
 
--   Test ve Fakes derlemesinin ortak anahtarlarını ekleme **Internalsvisibletoattribute** shimmed derlemelerdeki öznitelikleri. Shimmed derleme kesin şekilde adlandırıldığında dolgu kullanılan derleme koduna örnek öznitelikleri nasıl görüneceğini aşağıda verilmiştir:
+- Test ve Fakes derlemesinin ortak anahtarlarını ekleme **Internalsvisibletoattribute** shimmed derlemelerdeki öznitelikleri. Shimmed derleme kesin şekilde adlandırıldığında dolgu kullanılan derleme koduna örnek öznitelikleri nasıl görüneceğini aşağıda verilmiştir:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Fakes derlemelerinin derlemesi yapım sürenizi önemli ölçüde artırabilir. 
 
 Birim test projelerinizden proje klasöründeki FakesAssemblies altında yerleştirilen derlenmiş Fakes derlemelerden açıkça başvuru ekleyin.
 
-1.  Test projelerinizle eşleşen .NET çalışma zamanı sürümünü ile yeni bir sınıf kitaplığı oluşturun. Şimdi fakes.prebuild diye çağıralım. Kaldırma *class1.cs* gerekli proje dosyası.
+1. Test projelerinizle eşleşen .NET çalışma zamanı sürümünü ile yeni bir sınıf kitaplığı oluşturun. Şimdi fakes.prebuild diye çağıralım. Kaldırma *class1.cs* gerekli proje dosyası.
 
-2.  Tüm sistem başvuru ekleyin ve üçüncü taraf derlemeler için Fakes gerekir.
+2. Tüm sistem başvuru ekleyin ve üçüncü taraf derlemeler için Fakes gerekir.
 
-3.  Ekleme bir *.fakes* her derleme için dosya ve oluşturun.
+3. Ekleme bir *.fakes* her derleme için dosya ve oluşturun.
 
-4.  Test projenizden
+4. Test projenizden
 
-    -   Fakes çalışma zamanı DLL başvuru sahip olduğunuzdan emin olun:
+    - Fakes çalışma zamanı DLL başvuru sahip olduğunuzdan emin olun:
 
          *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Fakes oluşturduğunuz her derleme için karşılık gelen DLL dosyasına bir başvuru ekleyin *Fakes.Prebuild\FakesAssemblies* projenizin klasör.
+    - Fakes oluşturduğunuz her derleme için karşılık gelen DLL dosyasına bir başvuru ekleyin *Fakes.Prebuild\FakesAssemblies* projenizin klasör.
 
 ### <a name="avoid-assembly-name-clashing"></a>Derleme adı çakışan kaçının
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Aşağıdaki kurallar özyinelemeli olarak uygulanır şunlardır:
 
--   Fakes kullandığından C# geçersiz oluşturur herhangi bir karakter Fakes derlemeleri oluşturmak için C# belirteci "_" (alt çizgi) kaçış.
+- Fakes kullandığından C# geçersiz oluşturur herhangi bir karakter Fakes derlemeleri oluşturmak için C# belirteci "_" (alt çizgi) kaçış.
 
--   Bildirim türü herhangi bir üyesi ile elde edilen adı çakışıyor, 01 ile başlayan iki basamaklı sayaç ekleyerek bir numaralandırma şeması kullanılır.
+- Bildirim türü herhangi bir üyesi ile elde edilen adı çakışıyor, 01 ile başlayan iki basamaklı sayaç ekleyerek bir numaralandırma şeması kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

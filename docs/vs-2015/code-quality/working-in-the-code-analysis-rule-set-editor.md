@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072259"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Kod Çözümleme Kural Kümesi Düzenleyici'de Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Kod Analizi kural kümesi Düzenleyici'sini, bir özel kural kümesinde bulunan 
   
  Düzenleyici kuralları, belirttiğiniz alan grupları kuralları bir kural tarafından ayarlanan bir ağaç yapısında görüntüler. Ekleme veya kuralları kural kümesinden kaldırmak için bir veya daha fazla aşağıdaki adımları gerçekleştirin:  
   
--   Seçin veya eklemek veya gruptaki tüm kurallar kaldırmak için Grup düğümü onay kutusunu temizleyin. Bir grubu seçtiğinizde, tüm kuralları ayarlandığından **uyarı** eylem.  
+- Seçin veya eklemek veya gruptaki tüm kurallar kaldırmak için Grup düğümü onay kutusunu temizleyin. Bir grubu seçtiğinizde, tüm kuralları ayarlandığından **uyarı** eylem.  
   
--   Tıklayın **eylem** bir grubun alan ve sonra gruptaki tüm kuralları uygulamak için eylem belirtin.  
+- Tıklayın **eylem** bir grubun alan ve sonra gruptaki tüm kuralları uygulamak için eylem belirtin.  
   
--   Seçin veya tek bir kural için onay kutusunu temizleyin. Bir kural için onay kutusunu seçtiğinizde, kural bir uyarı eylemi için ayarlanır.  
+- Seçin veya tek bir kural için onay kutusunu temizleyin. Bir kural için onay kutusunu seçtiğinizde, kural bir uyarı eylemi için ayarlanır.  
   
 ## <a name="rule-set-editor-toolbar"></a>Kural kümesi Düzenleyici araç çubuğu  
  Kural kümesi Düzenleyici araç çubuğunda, gruplandırma, filtreleme ve kural kümesi kılavuzunda görüntülenen verileri aramak için kullanabilirsiniz.  
@@ -73,6 +73,6 @@ Kod Analizi kural kümesi Düzenleyici'sini, bir özel kural kümesinde bulunan 
 ## <a name="sorting-and-filtering-rule-sets"></a>Sıralama ve filtreleme kural kümeleri  
  Kural kümesi kılavuz sütun üstbilgileri kaldırın, sıralama ve alan değerleriyle kurallarını Filtrele.  
   
--   Kural kümesi listeleri sıralamak için sıralamak istediğiniz alanın sütun başlığına tıklayın. Kural kümeleri gruplanması durumunda her grubu ayrı ayrı sıralanır.  
+- Kural kümesi listeleri sıralamak için sıralamak istediğiniz alanın sütun başlığına tıklayın. Kural kümeleri gruplanması durumunda her grubu ayrı ayrı sıralanır.  
   
--   Kural kümeleri bir alanın değerini göre filtrelemek için filtre düğmesini filtrelemek istediğiniz alanın sütun başlığına tıklayın. Göstermek istediğiniz değerler onay kutularını işaretleyin ve gizlemek istediğiniz değerleri onay kutularını temizleyin.
+- Kural kümeleri bir alanın değerini göre filtrelemek için filtre düğmesini filtrelemek istediğiniz alanın sütun başlığına tıklayın. Göstermek istediğiniz değerler onay kutularını işaretleyin ve gizlemek istediğiniz değerleri onay kutularını temizleyin.

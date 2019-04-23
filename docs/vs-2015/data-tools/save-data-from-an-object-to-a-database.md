@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074889"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Verileri bir nesneden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Yeni kayıtlar bir nesneden veritabanına kaydetme için  
   
--   İçin değerler geçirerek kayıtları oluşturma `TableAdapter.Insert` yöntemi.  
+- İçin değerler geçirerek kayıtları oluşturma `TableAdapter.Insert` yöntemi.  
   
      Aşağıdaki örnek, yeni bir müşteri kaydı oluşturur `Customers` değerler geçirerek tablo `currentCustomer` nesnesini `TableAdapter.Insert` yöntemi.  
   
@@ -54,7 +54,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Var olan bir nesne kayıtları bir veritabanına güncelleştirmek için  
   
--   Çağırarak kayıtların değiştirilmesi `TableAdapter.Update` kaydı güncelleştirmek için yeni değerler geçirerek ve kaydı bulmak için özgün değerlerine geçirme yöntemi.  
+- Çağırarak kayıtların değiştirilmesi `TableAdapter.Update` kaydı güncelleştirmek için yeni değerler geçirerek ve kaydı bulmak için özgün değerlerine geçirme yöntemi.  
   
     > [!NOTE]
     >  Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Update` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  
@@ -66,7 +66,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Mevcut kayıtlarını veritabanından silmek için  
   
--   Çağırarak kayıtları silmek `TableAdapter.Delete` yöntemi ve kaydı bulmak için özgün değerlerini geçirirsiniz.  
+- Çağırarak kayıtları silmek `TableAdapter.Delete` yöntemi ve kaydı bulmak için özgün değerlerini geçirirsiniz.  
   
     > [!NOTE]
     >  Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Delete` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  

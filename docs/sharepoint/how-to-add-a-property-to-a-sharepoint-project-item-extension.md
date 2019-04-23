@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc2c0588fa3078a805f9804263afcf521ae72ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068567"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Nasıl yapılır: Bir SharePoint Proje öğe uzantısına özellik ekleme
   Visual Studio'da yüklü herhangi bir SharePoint proje öğesi için bir özellik eklemek için bir proje öğesi uzantısı'nı kullanabilirsiniz. Özellik görünür **özellikleri** proje öğesi seçildiğinde penceresi **Çözüm Gezgini**.
@@ -28,11 +28,11 @@ ms.locfileid: "56644438"
 
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Bir proje öğe uzantısına özellik eklemek için
 
-1.  Eklediğiniz bir proje öğe türüne özellik temsil eden genel özelliğine sahip bir sınıfı tanımlar. Bir proje öğesi türü için birden çok özellik eklemek istiyorsanız, tüm özelliklerin aynı sınıftaki veya farklı sınıflardaki tanımlayabilirsiniz.
+1. Eklediğiniz bir proje öğe türüne özellik temsil eden genel özelliğine sahip bir sınıfı tanımlar. Bir proje öğesi türü için birden çok özellik eklemek istiyorsanız, tüm özelliklerin aynı sınıftaki veya farklı sınıflardaki tanımlayabilirsiniz.
 
-2.  İçinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> yöntemi, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> uygulama, tanıtıcısını <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> olayı *Projectıtemtype* parametresi.
+2. İçinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> yöntemi, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> uygulama, tanıtıcısını <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> olayı *Projectıtemtype* parametresi.
 
-3.  İçin olay işleyicisinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> olay özellikleri sınıfı bir örneğini ekleme <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> olay bağımsız değişkenleri parametre koleksiyonu.
+3. İçin olay işleyicisinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> olay özellikleri sınıfı bir örneğini ekleme <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> olay bağımsız değişkenleri parametre koleksiyonu.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki kod örneğinde adlı bir özellik eklemek gösterilmiştir **örnek özellik** olay alıcısı proje öğesi için.
@@ -48,22 +48,22 @@ ms.locfileid: "56644438"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Özel özellikler davranışını belirtin
  Özel bir özellik görünür ve davranır nasıl tanımlayabileceğiniz **özellikleri** öznitelikleri uygulayarak penceresi <xref:System.ComponentModel> özellik tanımı için ad alanı. Aşağıdaki öznitelikler pek çok senaryoda kullanışlıdır:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Görüntülenen özellik adını belirtir **özellikleri** penceresi.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Görüntülenen özellik adını belirtir **özellikleri** penceresi.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Görüntülenen açıklama dizesi tabanında belirtir **özellikleri** özelliği seçildiğinde penceresi.
+- <xref:System.ComponentModel.DescriptionAttribute>: Görüntülenen açıklama dizesi tabanında belirtir **özellikleri** özelliği seçildiğinde penceresi.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Özelliğin varsayılan değerini belirtir.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Özelliğin varsayılan değerini belirtir.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Görüntülenen dizeyi arasında özel bir dönüştürme belirtir **özellikleri** penceresi ve dize olmayan özellik değeri.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Görüntülenen dizeyi arasında özel bir dönüştürme belirtir **özellikleri** penceresi ve dize olmayan özellik değeri.
 
--   <xref:System.ComponentModel.EditorAttribute>: Özelliği değiştirmek için özel bir düzenleyici belirtir.
+- <xref:System.ComponentModel.EditorAttribute>: Özelliği değiştirmek için özel bir düzenleyici belirtir.
 
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnekler, aşağıdaki derlemelere başvurular içeren bir sınıf kitaplığı projesi gerektirir:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Uzantıyı dağıtmak
  Uzantıyı dağıtmak için oluşturun bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer tüm dosyalar için. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

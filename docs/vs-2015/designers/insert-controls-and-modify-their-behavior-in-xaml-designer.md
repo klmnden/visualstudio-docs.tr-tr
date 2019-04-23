@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082951"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>XAML Tasarımcısı'de denetimler ekleme ve bunların davranışlarını değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Denetimler, kullanıcıların uygulamanızla etkileşim kurmasına olanak sağla
   
  **Bu konuda:**  
   
--   [Çalışma yüzeyine denetimler ekleme](#Insert)  
+- [Çalışma yüzeyine denetimler ekleme](#Insert)  
   
--   [Denetimleri şeyler yap](#Modify)  
+- [Denetimleri şeyler yap](#Modify)  
   
-##  <a name="Insert"></a> Çalışma yüzeyine denetimler ekleme  
+## <a name="Insert"></a> Çalışma yüzeyine denetimler ekleme  
  Denetimlerden sürükleyebilirsiniz **varlıklar** üzerine panelinde **çalışma yüzeyine**ve bunları değiştirmek **özellikleri** penceresi.  
   
  ![Blend &#45; varlıklar &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Denetimler, kullanıcıların uygulamanızla etkileşim kurmasına olanak sağla
   
  Bir denetim yapmak için bir nesne seçin. Ardından **Araçları** menüsünde tıklatın **olun denetim**.  
   
-##  <a name="Modify"></a> Denetimleri şeyler yap  
+## <a name="Modify"></a> Denetimleri şeyler yap  
  Kullanıcılar bunlarla etkileşim kurduğunuzda denetimleri eylemleri gerçekleştirebilirsiniz. Örneğin, bunlar bir animasyon başlatabilir, bir veri kaynağını güncelleştirebilir veya bir videoyu oynatın.  
   
  Kullanım *Tetikleyicileri*, *davranışları*, ve *olayları* şeyler denetimleri yapma.  

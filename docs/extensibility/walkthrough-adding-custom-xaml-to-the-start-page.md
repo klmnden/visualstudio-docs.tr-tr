@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072182"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>İzlenecek yol: Başlangıç sayfasına özel XAML ekleme
 
@@ -25,11 +25,11 @@ Bu izlenecek yol, bir Web tarayıcısı içeren özel bir Visual Studio Başlang
 
 ## <a name="add-custom-xaml"></a>Özel XAML ekleme
 
-1.  Başlangıç Sayfası'ndaki yönergeleri takip ederek oluşturma [özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).
+1. Başlangıç Sayfası'ndaki yönergeleri takip ederek oluşturma [özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).
 
-2.  İçinde *MainWindow.xaml* dosya, bulma \<kılavuz > bölümü.
+2. İçinde *MainWindow.xaml* dosya, bulma \<kılavuz > bölümü.
 
-3.  Ekleme bir \<TabControl > öğesi ve bir \<TabItem > içinde \< kılavuz > öğesi, aşağıdaki örnekte gösterildiği gibi.
+3. Ekleme bir \<TabControl > öğesi ve bir \<TabItem > içinde \< kılavuz > öğesi, aşağıdaki örnekte gösterildiği gibi.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ Bu izlenecek yol, bir Web tarayıcısı içeren özel bir Visual Studio Başlang
     </Grid>
     ```
 
-4.  İkinci bir ekleme \<TabItem >, ile bir \<düğmesi > Yeni bir proje açılır öğe:
+4. İkinci bir ekleme \<TabItem >, ile bir \<düğmesi > Yeni bir proje açılır öğe:
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ Bu izlenecek yol, bir Web tarayıcısı içeren özel bir Visual Studio Başlang
 
 ## <a name="test-the-custom-start-page"></a>Özel başlangıç sayfasını test etme
 
-1.  Tuşuna **F5**.
+1. Tuşuna **F5**.
 
      Visual Studio'nun deneysel örneğinde yüklü ancak seçili özel başlangıç sayfası ile açılır.
 
-2.  Visual Studio'nun deneysel örneğinde açın **araçları/Options / ortam** sayfası.
+2. Visual Studio'nun deneysel örneğinde açın **araçları/Options / ortam** sayfası.
 
-3.  Seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinden, *.xaml* dosya ve tıklayın **Tamam**.
+3. Seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinden, *.xaml* dosya ve tıklayın **Tamam**.
 
-4.  Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.
+4. Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.
 
-5.  Tıklayın **Bing** sekmesi.
+5. Tıklayın **Bing** sekmesi.
 
      Bing web sayfası görmeniz gerekir.
 
-6.  Tıklayın **MyButton** sekmesi.
+6. Tıklayın **MyButton** sekmesi.
 
      Görmelisiniz bir **MyProject** düğmesini açan **yeni proje** iletişim.
 
-7.  Deneysel örneği kapatın.
+7. Deneysel örneği kapatın.
 
 Özel başlangıç sayfası olarak uygulamak için **Araçları** > **seçenekleri** > **ortam**seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinden, *.xaml* dosya ve tıklayın **Tamam**.
 

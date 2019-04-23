@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ee22f8d2055715a2ea64ebde473c8e491a724c25
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064771"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core kullanmaya başlama
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
 
 * `UseKestrel`: Kestrel'i sunucusu uygulama tarafından kullanılacak belirtir
@@ -104,8 +105,8 @@ public class Startup
 
 Bu başlangıç sınıfı, her zaman şu kurallara uymalıdır:
 
- - Her zaman genel olmalıdır
- - İki genel yöntemini içermelidir: `ConfigureServices` ve `Configure`
+- Her zaman genel olmalıdır
+- İki genel yöntemini içermelidir: `ConfigureServices` ve `Configure`
 
 `ConfigureServices` Uygulamanız tarafından kullanılan hizmetler yöntemi tanımlar.
 

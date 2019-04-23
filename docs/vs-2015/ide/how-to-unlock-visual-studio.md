@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072558"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio Kilidini Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum açtığınızda deneme süresi 90 gün kadar genişletebilirsiniz. Visual Studio kullanmaya devam etmek için tarafından IDE kilidini açmak
 
-1.  çevrimiçi bir abonelikle kullanma.
+1. çevrimiçi bir abonelikle kullanma.
 
-2.  Ürün anahtarı girme.
+2. Ürün anahtarı girme.
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Visual Studio kilidini açmak için çevrimiçi bir abonelikle kullanma
  Visual Studio kilidini açmak için bir MSDN veya Visual Studio online aboneliğe kullanarak bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkilendirildi:
 
-1.  IDE'nin sağ üst köşesindeki "Oturum Aç" düğmesine tıklayın (veya dosyaya gidin > hesap ayarları, hesap ayarları iletişim kutusunu açın ve "Oturum Aç" düğmesine tıklayın.)
+1. IDE'nin sağ üst köşesindeki "Oturum Aç" düğmesine tıklayın (veya dosyaya gidin > hesap ayarları, hesap ayarları iletişim kutusunu açın ve "Oturum Aç" düğmesine tıklayın.)
 
-2.  Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, bir MSDN aboneliği veya hesabınızla ilişkili Visual Studio Team Services aboneliği bulabilirsiniz.
+2. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, bir MSDN aboneliği veya hesabınızla ilişkili Visual Studio Team Services aboneliği bulabilirsiniz.
 
 > [!IMPORTANT]
 >  Takım Gezgini araç penceresinden bir Visual Studio Team Services hesabına bağlanma, visual Studio ilişkili çevrimiçi abonelikler için otomatik olarak arar. Visual Studio Team Services hesabınıza bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı kullanarak kilidini açmak için
 
-1.  Seçin **Dosya > Hesap Ayarları** tıklayın ve hesap ayarları iletişim kutusunu açmak için "**bir ürün anahtarı kullanarak lisansı**" bağlantısı.
+1. Seçin **Dosya > Hesap Ayarları** tıklayın ve hesap ayarları iletişim kutusunu açmak için "**bir ürün anahtarı kullanarak lisansı**" bağlantısı.
 
-2.  Ürün anahtarı, sağlanan alana girin.
+2. Ürün anahtarı, sağlanan alana girin.
 
 > [!TIP]
 >  Visual Studio'nun ön sürümlerini ürün anahtarları yoksa. IDE için yayın öncesi sürümler kullanmak için oturum açmanız gerekir.
@@ -68,9 +68,9 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum a�
 ### <a name="updating-expired-licenses"></a>Süresi dolan lisanslar güncelleştiriliyor
  Aboneliğinizin süresi tamamen ve artık Visual Studio için erişim hakkına sahip, şunları yapmalısınız:
 
-1.  Aboneliğinizi yenileyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için dosyaya Git > Hesap Ayarları iletişim kutusu ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın.
+1. Aboneliğinizi yenileyin. Kullanmakta olduğunuz lisans hakkında daha fazla bilgi için dosyaya Git > Hesap Ayarları iletişim kutusu ve iletişim kutusunun sağ tarafındaki lisans bilgilerini bakın.
 
-2.  Farklı bir hesap ile ilişkili başka bir abonelik varsa, o hesabı dosyasının sol tarafındaki tüm hesaplar listesine ekleyin > "eklentisi bir hesap..." tıklayarak hesap ayarları iletişim kutusu bağlantı.
+2. Farklı bir hesap ile ilişkili başka bir abonelik varsa, o hesabı dosyasının sol tarafındaki tüm hesaplar listesine ekleyin > "eklentisi bir hesap..." tıklayarak hesap ayarları iletişim kutusu bağlantı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)

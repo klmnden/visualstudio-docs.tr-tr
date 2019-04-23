@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062346"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da test ayarlarını kullanarak yük testleri için ASP.NET profil oluşturucuyu yapılandırma
 
@@ -35,26 +35,26 @@ Daha fazla bilgi için [nasıl yapılır: Dağıtılmış yük testi için bir t
 
 Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarlarınızı açmalı ve seçmeniz gerekir **veri ve tanılama** sayfası.
 
-1.  ASP.NET Profil Oluşturucu verileri toplamak için kullanılacak rolü seçin.
+1. ASP.NET Profil Oluşturucu verileri toplamak için kullanılacak rolü seçin.
 
     > [!WARNING]
     > Bu rol, bir web sunucusu olmalıdır.
 
-2.  Seçin **ASP.NET Profiler** ASP.NET profil oluşturma verisi toplamayı etkinleştirmek ve ardından **yapılandırma**.
+2. Seçin **ASP.NET Profiler** ASP.NET profil oluşturma verisi toplamayı etkinleştirmek ve ardından **yapılandırma**.
 
      ASP.NET profil oluşturma veri koleksiyonu yapılandırmak için iletişim kutusu görüntülenir.
 
-3.  İçinde **Profiler örnekleme aralığı**, ASP.NET profil oluşturma örnekleri alma arasında beklenecek döngüleri saat kaç durdurulmamış CPU gösteren bir değer girin.
+3. İçinde **Profiler örnekleme aralığı**, ASP.NET profil oluşturma örnekleri alma arasında beklenecek döngüleri saat kaç durdurulmamış CPU gösteren bir değer girin.
 
-4.  Katman etkileşim profili oluşturma'yı etkinleştirmek için seçin **Katman etkileşimi profil oluşturmayı etkinleştir**.
+4. Katman etkileşim profili oluşturma'yı etkinleştirmek için seçin **Katman etkileşimi profil oluşturmayı etkinleştir**.
 
      Katman etkileşim profili oluşturma, her bir yapıt için web sunucusuna gönderilen istek sayısını sayar (örneğin, *MyPage.aspx* veya *CompanyLogo.gif*) ve her isteğe hizmet vermek için geçen süre. Ayrıca, katman etkileşim profili oluşturma ve hangi ADO.NET bağlantı sayfası isteğin bir parçası olarak kullanılan kaç sorguları ve saklı yordam çağrılarını bu isteği hizmet parçası olarak dahil edilen toplar.
 
      İki farklı ayarlar, zamanlama bilgilerinin toplanır:
 
-    -   Her web isteğini bakım için zamanlama bilgileri (Min, Max, ortalama ve toplam).
+    - Her web isteğini bakım için zamanlama bilgileri (Min, Max, ortalama ve toplam).
 
-    -   Her sorguyu yürütmek için zamanlama bilgileri (Min, Max, ortalama ve toplam).
+    - Her sorguyu yürütmek için zamanlama bilgileri (Min, Max, ortalama ve toplam).
 
 Bir test ayarında yapılandırılan ASP.NET profiler tanılama veri bağdaştırıcısı ile ASP.NET profil oluşturma ASP.NET web uygulamanızı şirket verilerini toplayabilir.
 

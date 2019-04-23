@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062236"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki türlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırm
 > [!NOTE]
 >  Bu konu UML sınıf diyagramlarındaki türlerin özellikleri hakkındadır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+- [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki ilişkilendirmelerin özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Özellikler  
  Bu sınıf, arabirim veya numaralandırma özellikleridir.  
@@ -61,4 +61,4 @@ UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırm
  [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki İlişkilendirmelerin Özellikleri](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)
+ [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)

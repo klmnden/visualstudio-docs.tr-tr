@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069725"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Gösterilecek İş Parçacığı Etkinliği Yok (İş Parçacıkları Görünümü)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Bu alan mevcut görülebilir zaman aralığında görünür iş parçacıkları 
   
  Hiçbir bilgi görünür durumdaysa, aşağıdaki ayarları denetleyin:  
   
--   Yakınlaştırma düzeyi yüksek mi? Yakınlaştırmayı deneyin out ya da daha fazla iş parçacığı etkinliği aralığında getirmek için kaydırma.  
+- Yakınlaştırma düzeyi yüksek mi? Yakınlaştırmayı deneyin out ya da daha fazla iş parçacığı etkinliği aralığında getirmek için kaydırma.  
   
--   Çok fazla iş parçacığı gizlidir? Bu durumda, tüm iş parçacıklarının gösteren deneyin  
+- Çok fazla iş parçacığı gizlidir? Bu durumda, tüm iş parçacıklarının gösteren deneyin  
   
--   Varsa **yalnızca kendi kodum** olduğu belirlenirse, yalnızca veri kodunuz hakkında görüntüleyebilirsiniz. Herhangi bir sistem iş parçacığı etkinliği olup olmadığını belirlemek için bu ayarı temizleyerek deneyin.  
+- Varsa **yalnızca kendi kodum** olduğu belirlenirse, yalnızca veri kodunuz hakkında görüntüleyebilirsiniz. Herhangi bir sistem iş parçacığı etkinliği olup olmadığını belirlemek için bu ayarı temizleyerek deneyin.  
   
--   Gürültü azaltma bir düşük eşik ayarlandığından emin olun.  
+- Gürültü azaltma bir düşük eşik ayarlandığından emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

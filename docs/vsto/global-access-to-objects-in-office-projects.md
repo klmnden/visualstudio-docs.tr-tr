@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066773"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office projelerindeki nesnelere genel erişim
   Bir Office projesi oluşturduğunuzda, Visual Studio otomatik olarak adlı bir sınıf oluşturur `Globals` projedeki. Kullanabileceğiniz `Globals` projesinde herhangi bir koddan çalışma zamanında birçok farklı proje öğesine erişmek için sınıf.
@@ -57,13 +57,13 @@ ms.locfileid: "57525203"
 
 - Hedefleyen projeleri çalışma zamanında, Şerit denetimlerini oluşturmanıza ve barındırmanıza olanak tanıyan bir Fabrika nesnesine öğeler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Bu nesneyi kullanarak erişebileceğiniz `Globals.Factory` özelliği. Bu nesne, aşağıdaki arabirimlerinden birini uygulayan bir sınıf örneği verilmiştir:
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   Örneğin, kullanabileceğiniz `Globals.Sheet1` metnine eklemek için özellik bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi `Sheet1` bir kullanıcı Excel için belge düzeyi projesi eylemler bölmesinde bir düğmeyi tıkladığında.
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077426"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>SSS: Eklentileri VSPackage uzantılarına dönüştürme
 Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio uzantısı yapmak için bir VSIX uzantısı oluşturmak gerekir. Bir Visual Studio eklentisi, bir VSIX uzantısı dönüştürme hakkında sık sorulan soruların yanıtları aşağıdadır.
@@ -37,7 +37,7 @@ Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio 
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Bir VSIX projesine eklentisi Projem dönüştürebilir miyim?
  VSIX projelerinde kullanılan mekanizma olarak eklentisi projeleri dışındaki aynı olmadığından, bir eklenti projesi doğrudan bir VSIX projesi dönüştürülemiyor. VSIX proje şablonunu yanı sıra, doğru proje öğesi şablonları görece getirmek kolay ve VSIX uzantısı olarak çalışan kolaylaştırır kod vardır.
 
-##  <a name="BKMK_StartDeveloping"></a> VSIX uzantılarını geliştirmeye nasıl başlarım?
+## <a name="BKMK_StartDeveloping"></a> VSIX uzantılarını geliştirmeye nasıl başlarım?
  Bir menü komutu içeren bir VSIX nasıl yaptığınız aşağıda verilmiştir:
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Bir menü komutu içeren bir VSIX uzantısı yapmak için
@@ -52,7 +52,7 @@ Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio 
 
    Üzerinde **Araçları** menü (deneysel örneğinde) adlı bir düğme görmeniz **My komut adı**. Bu düğmeyi seçtiğinizde, bir ileti görünmelidir: **İçinde TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> Eklenti kodum içinde bir VSPackage'ı nasıl çalıştırırım?
+## <a name="BKMK_RunAddin"></a> Eklenti kodum içinde bir VSPackage'ı nasıl çalıştırırım?
 
 Eklenti kodu genellikle iki yöntemden biriyle çalıştırır:
 
@@ -158,24 +158,24 @@ Vspackage'ta aynı şey yapabilirsiniz. Geri çağırma yöntemi eklenti kod ekl
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Pencere Yönetimi kod bir eklentiyi Vspackage'a eklemek için
 
-1.  Bir menü komutu olarak içeren bir VSPackage'ı oluşturma [nasıl geliştirme VSIX uzantılarını başlarım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.
+1. Bir menü komutu olarak içeren bir VSPackage'ı oluşturma [nasıl geliştirme VSIX uzantılarını başlarım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.
 
-2.  VSPackage'ı tanımını içeren dosyayı açın. (C# projesinde, sahip  *\<, proje adı > Package.cs*.)
+2. VSPackage'ı tanımını içeren dosyayı açın. (C# projesinde, sahip  *\<, proje adı > Package.cs*.)
 
-3.  Bu ekleme `using` ifadeleri:
+3. Bu ekleme `using` ifadeleri:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Bulma `MenuItemCallback` yöntemi. Bir çağrı ekleyin <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi:
+4. Bulma `MenuItemCallback` yöntemi. Bir çağrı ekleyin <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Eklentinizi kodu ekleyin. Örneğin, yeni görevler ekler bazı kod işte **görev listesi**, görevlerin sayısını listeler ve bir görevi siler.
+5. Eklentinizi kodu ekleyin. Örneğin, yeni görevler ekler bazı kod işte **görev listesi**, görevlerin sayısını listeler ve bir görevi siler.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ Vspackage'ta aynı şey yapabilirsiniz. Geri çağırma yöntemi eklenti kod ekl
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Projeler ve çözümler vspackage'ta nasıl yönetebilirim?
  Eklenti kodu, eklenti projeler ve çözümler yönetiliyorsa, içinde bir VSPackage'ı çalışması gerekir. Örneğin, bu yordamı başlangıç projesi alır kodun nasıl ekleneceği gösterilmektedir.
 
-1.  Bir menü komutu olarak içeren bir VSPackage'ı oluşturma [nasıl geliştirme VSIX uzantılarını başlarım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.
+1. Bir menü komutu olarak içeren bir VSPackage'ı oluşturma [nasıl geliştirme VSIX uzantılarını başlarım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) bölümü.
 
-2.  VSPackage'ı tanımını içeren dosyayı açın. (C# projesinde, sahip  *\<, proje adı > Package.cs*.)
+2. VSPackage'ı tanımını içeren dosyayı açın. (C# projesinde, sahip  *\<, proje adı > Package.cs*.)
 
-3.  Bu ekleme `using` ifadeleri:
+3. Bu ekleme `using` ifadeleri:
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Bulma `MenuItemCallback` yöntemi. Bir çağrı ekleyin <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi:
+4. Bulma `MenuItemCallback` yöntemi. Bir çağrı ekleyin <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> almak için <xref:EnvDTE80.DTE2> nesnesi:
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  Eklentinizi kodu ekleyin. Örneğin, aşağıdaki kod, bir çözümde başlangıç projesinin adını alır. (Bu paketi çalıştığında çok projeli bir çözüm açık olması gerekir.)
+5. Eklentinizi kodu ekleyin. Örneğin, aşağıdaki kod, bir çözümde başlangıç projesinin adını alır. (Bu paketi çalıştığında çok projeli bir çözüm açık olması gerekir.)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6268f9bb6bb739d09b16a580d2923df4c7926e46
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0cc2a47fc505364ce5c693b496af2d14ecefcd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064721"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak yerel bir tek başına uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları komut satırı araçlarının profil oluşturucuyu çalışan yerel tek başına (istemci) uygulamasına ekleyip örnekleme yöntemini kullanarak performans istatistikleri toplamak için.
@@ -71,7 +71,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak
 
--   Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
+- Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
 
     |Seçenek|Açıklama|
     |------------|-----------------|
@@ -84,19 +84,19 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için
 
-1.  Hedef uygulamadaki profil oluşturucuyu ayırmak için aşağıdaki adımları gerçekleştirin.
+1. Hedef uygulamadaki profil oluşturucuyu ayırmak için aşağıdaki adımları gerçekleştirin.
 
-    -   Tür **VSPerfCmd / detach**
+    - Tür **VSPerfCmd / detach**
 
          veya
 
-    -   Hedef uygulamayı kapatın.
+    - Hedef uygulamayı kapatın.
 
-2.  Profil oluşturucuyu kapatın. Tür:
+2. Profil oluşturucuyu kapatın. Tür:
 
      **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 
-3.  (İsteğe bağlı) Profil oluşturma ortam değişkenlerini temizleyin. Tür:
+3. (İsteğe bağlı) Profil oluşturma ortam değişkenlerini temizleyin. Tür:
 
      **VSPerfClrEnv / kapatma**
 

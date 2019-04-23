@@ -14,35 +14,35 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b0356e524228e22def9b17dd134e3e011185203
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064810"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Döngü dışında 'continue' olamaz
 Kullanmaya çalıştığınız **devam** dışında bir döngü deyimi. **Devam** deyimi yalnızca y: gövdesi içinde kullanılabilir  
   
--   `do-while` döngü,  
+- `do-while` döngü,  
   
--   `while` döngü,  
+- `while` döngü,  
   
--   **için** döngüsü  
+- **için** döngüsü  
   
--   **için/** döngü.  
+- **için/** döngü.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Emin **devam** y: gövdesi içinde deyim görünür  
+- Emin **devam** y: gövdesi içinde deyim görünür  
   
-    -   `do-while` döngü,  
+    - `do-while` döngü,  
   
-    -   `while` döngü,  
+    - `while` döngü,  
   
-    -   **için** döngüsü  
+    - **için** döngüsü  
   
-    -   **için/** döngü.  
+    - **için/** döngü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [continue deyimi](../../javascript/reference/continue-statement-javascript.md)   

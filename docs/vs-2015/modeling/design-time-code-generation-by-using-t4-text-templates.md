@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065149"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio'da bir tasarım zamanı T4 şablonu oluşturmak için  
   
-1.  Oluşturma bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeye ya da mevcut bir açın.  
+1. Oluşturma bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeye ya da mevcut bir açın.  
   
      Örneğin, **dosya** menüsünde seçin **yeni**, **proje**.  
   
-2.  Bir metin şablonu dosyasını projenize ekleyin ve uzantısına sahip bir ad verin **.tt**.  
+2. Bir metin şablonu dosyasını projenize ekleyin ve uzantısına sahip bir ad verin **.tt**.  
   
      Bunu yapmak için **Çözüm Gezgini**, projenizin kısayol menüsünde **Ekle**, **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** Orta bölmeden.  
   
      Dikkat **özel araç** dosyanın özelliği **TextTemplatingFileGenerator**.  
   
-3.  Dosyasını açın. Ayrıca, aşağıdaki yönergeleri zaten içerecektir:  
+3. Dosyasını açın. Ayrıca, aşağıdaki yönergeleri zaten içerecektir:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
   
      Şablona eklediyseniz bir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projesi dil özniteliği olacaktır "`VB`".  
   
-4.  Metin, dosyanın sonuna ekleyin. Örneğin:  
+4. Metin, dosyanın sonuna ekleyin. Örneğin:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Dosyayı kaydedin.  
+5. Dosyayı kaydedin.  
   
      Görebileceğiniz bir **Güvenlik Uyarısı** şablonu çalıştırmak istediğinizi onaylamanızı isteyen bir ileti kutusu. **Tamam**'ı tıklatın.  
   
-6.  İçinde **Çözüm Gezgini**, şablon dosyası düğümünü genişletin ve uzantıya sahip bir dosyayı bulabilirsiniz **.txt**. Metin şablonundan oluşturulan bir dosya içerir.  
+6. İçinde **Çözüm Gezgini**, şablon dosyası düğümünü genişletin ve uzantıya sahip bir dosyayı bulabilirsiniz **.txt**. Metin şablonundan oluşturulan bir dosya içerir.  
   
     > [!NOTE]
     >  Projenizi Visual Basic projesi ise,'a tıklamalıdır **tüm dosyaları göster** çıktı dosyasını görmek için.  
@@ -150,9 +150,9 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
   
 #### <a name="to-generate-program-code-or-resources"></a>Program kodu veya kaynakları oluşturmak için  
   
-1.  Çıktı yönergesi .cs, .vb, .resx veya .xml gibi uygun türde bir dosya oluşturmak için değiştirin.  
+1. Çıktı yönergesi .cs, .vb, .resx veya .xml gibi uygun türde bir dosya oluşturmak için değiştirin.  
   
-2.  İstediğiniz çözümü kod üreten kodu ekleyin. Örneğin, bir sınıfta üç tamsayı alan bildirimleri oluşturmak istiyorsanız:  
+2. İstediğiniz çözümü kod üreten kodu ekleyin. Örneğin, bir sınıfta üç tamsayı alan bildirimleri oluşturmak istiyorsanız:  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ Tasarım zamanı T4 metin şablonları, program kodu ve diğer dosyaları oluşt
   
     ```  
   
-3.  Dosyayı kaydedin ve artık aşağıdaki kodu içeren oluşturulan dosyasını inceleyin:  
+3. Dosyayı kaydedin ve artık aşağıdaki kodu içeren oluşturulan dosyasını inceleyin:  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Bir metin şablonu, kendi uygulama etki alanında çalışan ve Hizmetleri hazırlama tarafından erişilir. Bu durumda GetCOMService() GetService() daha büyük/küçük harf güvenilirdir.  
   
-##  <a name="Regenerating"></a> Kodu otomatik olarak yeniden oluşturuluyor  
+## <a name="Regenerating"></a> Kodu otomatik olarak yeniden oluşturuluyor  
  Genellikle, birkaç dosya içinde bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm, bir giriş modeliyle oluşturulur. Her dosya, kendi şablon, ancak tüm aynı modele başvurur şablonları oluşturulur.  
   
  Kaynak modeli değişirse, Çözümdeki tüm şablonları yeniden çalıştırmanız gerekir. Bunu el ile yapmak için **tüm Şablonları Dönüştür** üzerinde **derleme** menüsü.  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Bir şablon için mevcut bir dosyayı dönüştürme  
+## <a name="Converting"></a> Bir şablon için mevcut bir dosyayı dönüştürme  
  Bunlar çok bunlar birlikte bazı eklenen program kodu üretir dosyaları gibi göründüğünü yer şablonları yararlı bir özelliğidir. Bu şablon oluşturma, kullanışlı bir yöntem önerir. Sıradan bir dosyası gibi bir prototip oluşturmanız bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] dosya ve sonuçta elde edilen dosyanın değişen kod kademeli olarak tanıtır.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Var olan bir dosya için bir tasarım zamanı şablonu dönüştürmek için  
   
-1.  İçin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gibi oluşturmak istediğiniz türde bir dosya eklemek, proje bir `.cs`, `.vb`, veya `.resx` dosya.  
+1. İçin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gibi oluşturmak istediğiniz türde bir dosya eklemek, proje bir `.cs`, `.vb`, veya `.resx` dosya.  
   
-2.  Yeni dosyanın çalıştığından emin olmak için test edin.  
+2. Yeni dosyanın çalıştığından emin olmak için test edin.  
   
-3.  Çözüm Gezgini'nde dosya adı uzantısı için değiştirme **.tt**.  
+3. Çözüm Gezgini'nde dosya adı uzantısı için değiştirme **.tt**.  
   
-4.  Aşağıdaki özelliklerini doğrulamanızı **.tt** dosyası:  
+4. Aşağıdaki özelliklerini doğrulamanızı **.tt** dosyası:  
   
     |||  
     |-|-|  
     |**Özel araç =**|**TextTemplatingFileGenerator**|  
     |**Build Action =**|**Yok.**|  
   
-5.  Dosyanın başına aşağıdaki satırları ekleyin:  
+5. Dosyanın başına aşağıdaki satırları ekleyin:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      Ayarlama `extension` , örneğin oluşturmak istediğiniz dosya türünü dosya adı uzantısı özniteliği `.cs`, `.resx`, veya `.xml`.  
   
-6.  Dosyayı kaydedin.  
+6. Dosyayı kaydedin.  
   
      Belirtilen uzantı ile paketinizle bir dosya oluşturulur. Özellikleri, dosya türü için doğrudur. Örneğin, **derleme eylemi** .cs dosyası özelliğini olacak **derleme**.  
   
      Oluşturulan dosyanın özgün dosyayla aynı içerik içerdiğini doğrulayın.  
   
-7.  Değiştirmek için istediğiniz dosya belirleyin. Örneğin, yalnızca belirli koşullar altında görünür bir bölümü veya bir bölümü, yinelenen veya belirli değerlerin nereden değişir. Oluşturma kodunu ekleyin. Dosyayı kaydedin ve dosyası doğru şekilde oluşturulduğunu doğrulayın. Bu adımı yineleyin.  
+7. Değiştirmek için istediğiniz dosya belirleyin. Örneğin, yalnızca belirli koşullar altında görünür bir bölümü veya bir bölümü, yinelenen veya belirli değerlerin nereden değişir. Oluşturma kodunu ekleyin. Dosyayı kaydedin ve dosyası doğru şekilde oluşturulduğunu doğrulayın. Bu adımı yineleyin.  
   
 ## <a name="guidelines-for-code-generation"></a>Kod oluşturma için yönergeler  
  Lütfen [için T4 metin şablonları yazma yönergeleri](../modeling/guidelines-for-writing-t4-text-templates.md).  

@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087800"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Görüntüler ve Visual Studio için simgeler
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio görüntü kullanımda
+## <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio görüntü kullanımda
  Yapma resmi oluşturmadan önce göz önünde bulundurun 1000'den fazla görüntüde kullanımını [Visual Studio görüntü kitaplığı](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Görüntü türleri
 
--   **Simgeler**. Komutlar, hiyerarşileri, şablon ve benzeri görünen küçük resimler. Visual Studio'da kullanılan varsayılan simge boyutu 16 x 16 PNG ' dir. Görüntü hizmeti tarafından otomatik olarak üretilen simgeler HDPI desteği için XAML biçiminde oluşturun.
+- **Simgeler**. Komutlar, hiyerarşileri, şablon ve benzeri görünen küçük resimler. Visual Studio'da kullanılan varsayılan simge boyutu 16 x 16 PNG ' dir. Görüntü hizmeti tarafından otomatik olarak üretilen simgeler HDPI desteği için XAML biçiminde oluşturun.
 
      **NOT:** Resimleri menü sisteminde kullanılırken, her komut için bir simge oluşturmamalısınız. Başvurun [menüler ve komutlar için Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) Komutunuz bir simge almalısınız görmek için.
 
--   **Küçük resim.** Yeni Proje iletişim kutusu gibi bir iletişim kutusu Önizleme bölümünde kullanılan görüntüler.
+- **Küçük resim.** Yeni Proje iletişim kutusu gibi bir iletişim kutusu Önizleme bölümünde kullanılan görüntüler.
 
--   **İletişim kutusu görüntüler.** Görünen iletişim kutuları veya sihirbazlar, açıklayıcı bir grafik veya ileti göstergeleri olarak görüntüler. Seyrek ve zor bir konsepti açıklamak veya kullanıcının dikkatini (uyarı, uyarı) elde etmek için yalnızca gerekli olduğunda kullanın.
+- **İletişim kutusu görüntüler.** Görünen iletişim kutuları veya sihirbazlar, açıklayıcı bir grafik veya ileti göstergeleri olarak görüntüler. Seyrek ve zor bir konsepti açıklamak veya kullanıcının dikkatini (uyarı, uyarı) elde etmek için yalnızca gerekli olduğunda kullanın.
 
--   **Animasyonlu görüntüler.** İlerleme göstergesi, durum çubukları ve işlem iletişim kutuları kullanılır.
+- **Animasyonlu görüntüler.** İlerleme göstergesi, durum çubukları ve işlem iletişim kutuları kullanılır.
 
--   **İmleç.** Burada bir nesne bırakılabilir vb. fareyi kullanarak bir işlem izin verilip verilmeyeceğini belirtmek için kullanılır.
+- **İmleç.** Burada bir nesne bırakılabilir vb. fareyi kullanarak bir işlem izin verilip verilmeyeceğini belirtmek için kullanılır.
 
-##  <a name="BKMK_IconDesign"></a> Simge tasarım
+## <a name="BKMK_IconDesign"></a> Simge tasarım
 
 ### <a name="overview"></a>Genel Bakış
  Visual Studio temiz geometri ve olumlu/olumsuz (Açık/Koyu) 50/50 dengesi ve doğrudan, anlaşılır metaphors kullanan modern stili simgeleri kullanır. Anlaşılabilir olması adına, basitleştirme ve bağlam önemli simgesi tasarım noktaları Merkezi.
@@ -210,19 +210,19 @@ ms.locfileid: "56683148"
 
 #### <a name="file-types"></a>Dosya türleri
 
--   **32-bit PNG:** simgeler için tercih edilen biçimi. Bir tek tarama (piksel) görüntüsü depolayabilirsiniz kayıpsız veri sıkıştırma dosya biçimi. alfa kanalı saydamlık, gama düzeltmesi ve titreşimli 32-bit PNG dosyalarını destekler.
+- **32-bit PNG:** simgeler için tercih edilen biçimi. Bir tek tarama (piksel) görüntüsü depolayabilirsiniz kayıpsız veri sıkıştırma dosya biçimi. alfa kanalı saydamlık, gama düzeltmesi ve titreşimli 32-bit PNG dosyalarını destekler.
 
--   **32-bit BMP:** olmayan WPF denetimleri için. Ayrıca XP ya da yüksek renk, 32-bit BMP bir alfa kanalı saydamlık rengi true görüntüsüyle bir RGB/bir görüntü biçimi çağırılır. Alfa kanalını bir bit eşlem (Dördüncü) bir ek olarak içinde kaydedildiği Adobe Photoshop belirtilen saydamlık katmanıdır renk kanalı. Siyah arka plan renk derinliği hakkında hızlı görsel bir ipucu sağlamak için tüm dosyalara 32-bit BMP resmi üretim sırasında eklenir. Bu siyah arka plan kullanıcı Arabiriminde kullanıma gizlenmeye alanını temsil eder.
+- **32-bit BMP:** olmayan WPF denetimleri için. Ayrıca XP ya da yüksek renk, 32-bit BMP bir alfa kanalı saydamlık rengi true görüntüsüyle bir RGB/bir görüntü biçimi çağırılır. Alfa kanalını bir bit eşlem (Dördüncü) bir ek olarak içinde kaydedildiği Adobe Photoshop belirtilen saydamlık katmanıdır renk kanalı. Siyah arka plan renk derinliği hakkında hızlı görsel bir ipucu sağlamak için tüm dosyalara 32-bit BMP resmi üretim sırasında eklenir. Bu siyah arka plan kullanıcı Arabiriminde kullanıma gizlenmeye alanını temsil eder.
 
--   **32-bit ICO:** proje simgeleri ve öğe ekleyin. 32-bit gerçek renk saydam alfa kanalı ile tüm ICO dosyalardır (RGB/A). Birden çok boyut ve renk derinliği ICO dosyalarını depolayabileceğiniz için Vista simgeleri genellikle 16 x 16, 32 x 32, 48 x 48 ve 256 x 256 boyutundaki resim boyutları içeren bir ICO biçimindedir. Windows Gezgini'nde düzgün görüntülenmesi için ICO dosyaları kaydedilen her görüntü boyutu için 24-bit ve 8-bit renk derinliği için aşağı gerekir.
+- **32-bit ICO:** proje simgeleri ve öğe ekleyin. 32-bit gerçek renk saydam alfa kanalı ile tüm ICO dosyalardır (RGB/A). Birden çok boyut ve renk derinliği ICO dosyalarını depolayabileceğiniz için Vista simgeleri genellikle 16 x 16, 32 x 32, 48 x 48 ve 256 x 256 boyutundaki resim boyutları içeren bir ICO biçimindedir. Windows Gezgini'nde düzgün görüntülenmesi için ICO dosyaları kaydedilen her görüntü boyutu için 24-bit ve 8-bit renk derinliği için aşağı gerekir.
 
--   **XAML:** tasarım yüzeyleriyle ve Windows donatıcıları. XAML, ölçeklendirme ve döndürme, dosyalama ve saydamlık destek vektör tabanlı görüntü dosyaları simgelerdir. Bunlar, bugün Visual Studio'da ortak değildir ancak kendi esnekliğinde nedeniyle daha yaygın hale gelmektedir.
+- **XAML:** tasarım yüzeyleriyle ve Windows donatıcıları. XAML, ölçeklendirme ve döndürme, dosyalama ve saydamlık destek vektör tabanlı görüntü dosyaları simgelerdir. Bunlar, bugün Visual Studio'da ortak değildir ancak kendi esnekliğinde nedeniyle daha yaygın hale gelmektedir.
 
--   **SVG**
+- **SVG**
 
--   **24 bit BMP:** Visual Studio komut çubuğu için. True-renk RGB görüntü biçimi, 24 bit BMP knock genişletme saydamlık katman için renk anahtar olarak Eflatun (R = 255, G = 0, B = 255) kullanarak bir katman saydamlığın örneklerinden biri oluşturur simgesi kuralıdır. İçinde 24 bit BMP, tüm pembe yüzey arka plan rengiyle görüntülenir.
+- **24 bit BMP:** Visual Studio komut çubuğu için. True-renk RGB görüntü biçimi, 24 bit BMP knock genişletme saydamlık katman için renk anahtar olarak Eflatun (R = 255, G = 0, B = 255) kullanarak bir katman saydamlığın örneklerinden biri oluşturur simgesi kuralıdır. İçinde 24 bit BMP, tüm pembe yüzey arka plan rengiyle görüntülenir.
 
--   **24 bit GIF:** Visual Studio komut çubuğu için. Saydamlığı destekleyen bir true renk RGB görüntü biçimi. GIF dosyaları, genellikle Sihirbazı resmi ve GIF animasyonları kullanılır.
+- **24 bit GIF:** Visual Studio komut çubuğu için. Saydamlığı destekleyen bir true renk RGB görüntü biçimi. GIF dosyaları, genellikle Sihirbazı resmi ve GIF animasyonları kullanılır.
 
 ### <a name="icon-construction"></a>Simge oluşturma
  Visual Studio'da küçük simge boyutu 16 x 16'dır. En büyük ortak 32 x 32 kullanılır. Tüm 16 x 16, 24 x 24 veya 32 x 32 çerçevesi simge tasarlarken değil doldurmaya göz önünde bulundurun. Kullanıcı tanımayı okunaklı ve Tekdüzen bir simge oluşturma gereklidir. Aşağıdaki noktalara simgeler derlerken uyar.
@@ -244,18 +244,18 @@ ms.locfileid: "56683148"
 
  Visual Studio simgeleri renk kullanarak daha fazla bilgi için bkz: [görüntülerde rengiyle](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Renk görüntülerini kullanma
+## <a name="BKMK_UsingColorInImages"></a> Renk görüntülerini kullanma
 
 ### <a name="overview"></a>Genel Bakış
  Visual Studio'da simgeler öncelikle tek renkli. Renk belirli bilgileri iletmek için ayrılmıştır ve düzenlemesi için hiçbir zaman. Renk kullanılır:
 
--   bir eylem belirtmek için
+- bir eylem belirtmek için
 
--   durum bildirimi için kullanıcıyı uyarmak için
+- durum bildirimi için kullanıcıyı uyarmak için
 
--   Dil ilişkisi atamak için
+- Dil ilişkisi atamak için
 
--   IntelliSense içinde öğeleri ayırmak için
+- IntelliSense içinde öğeleri ayırmak için
 
 ### <a name="accessibility"></a>Erişilebilirlik
  Visual Studio uyumluluk kuralları, tüm simgeleri renk ve karşıtlık erişilebilirlik gereksinimleri ürün geçişinde işaretli gerektirir. Görsel dil palet renkleri edilmiş ve bu gereksinimleri karşılar.

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066994"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Bu, bir geri çağırma işlevi tarafından kullanılan [SccQueryChanges](../extensibility/sccquerychanges-function.md) dosya adları topluluğu numaralandırır ve her bir dosyanın durumunu belirlemek için işlem.
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|İşlemeyi durdur.|
 |SCC_E_xxx|Herhangi bir uygun SCC hata işleme durdurmanız gerekir.|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA yapısı
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA yapısı
  Her dosya için geçirilen yapısı aşağıdaki gibi görünür:
 
 ```cpp

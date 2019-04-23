@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2102bc7f91570bf68616eb62520e5b955204c26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8bd5c4612b59f909ae623eb4092a209798f98c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085278"
 ---
 # <a name="xmlnode-control"></a>XMLNode denetimi
   **Önemli** Microsoft Word ile ilgili bu konu kümesindeki bilgileri avantajı ve kişiler ve kimin bulunur Amerika Birleşik Devletleri ve kendi bölgeler dışında veya servis kullanan kuruluşlar için özel olarak sunulan veya geliştirme üzerinde çalışan programlar Ocak Microsoft uygulaması belirli işlevlerin ne zaman kaldırıldı 2010'dan önce Microsoft lisanslı Microsoft Word ürünler, Microsoft Word için özel XML ilgili. Bu bilgileri Microsoft Word ile ilgili değil okuma veya kişi ve kuruluşların Amerika Birleşik Devletleri ya da kullanarak veya Microsoft tarafından 10 Ocak 2010'dan sonra lisansına sahip Microsoft Word ürünleri üzerinde çalışan programlar geliştirme alt bölgeleri tarafından kullanılan ; Bu ürünlerin bu tarihten önce lisanslı veya satın alınan ve Amerika Birleşik Devletleri dışında kullanım için lisanslı ürünleri aynı davranmaz.
@@ -37,23 +37,23 @@ ms.locfileid: "56599577"
 ## <a name="events"></a>Olaylar
  Aşağıdakiler için kullanılabilir <xref:Microsoft.Office.Tools.Word.XMLNode> denetimi:
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>
 
 ## <a name="compare-events"></a>Olayları karşılaştırın
  Kullanıcı belirli bir bağlamı bilgilendirilmesine imleci taşındığında bir olay yakalayabilirsiniz <xref:Microsoft.Office.Tools.Word.XMLNode> denetimi. Örneğin, olabilir bir <xref:Microsoft.Office.Tools.Word.XMLNode> adlı Denetim `Customer` alt öğesi olan <xref:Microsoft.Office.Tools.Word.XMLNode> adlı Denetim `Company`, ve `Company` iki çocuğu <xref:Microsoft.Office.Tools.Word.XMLNode> adlarında `CompanyName` ve `CompanyRegion` gibi:

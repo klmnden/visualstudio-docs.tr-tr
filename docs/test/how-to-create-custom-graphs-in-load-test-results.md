@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075135"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Nasıl yapılır: Test sonuçları yükleme özel grafikler oluşturma
 
@@ -26,7 +26,7 @@ Aşağıdaki yordamda, bir yük testi çalışırken veya çalışması bittikte
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Özel yük testi sonuçları grafiği oluşturmak için
 
-1.  Üzerinde **yük testi** araç seçin **yeni grafik Ekle**.
+1. Üzerinde **yük testi** araç seçin **yeni grafik Ekle**.
 
      \- veya -
 
@@ -34,11 +34,11 @@ Aşağıdaki yordamda, bir yük testi çalışırken veya çalışması bittikte
 
      **Grafik adı girin** iletişim kutusu görüntülenir.
 
-2.  Altında **grafik adı**grafik için bir ad girin ve seçin **Tamam**.
+2. Altında **grafik adı**grafik için bir ad girin ve seçin **Tamam**.
 
      Yeni grafik görünür **Yük Testi Çözümleyicisi**. Şu anda seçili graf panelinde görünür; Bu panelde görüntülenen graf değiştirir.
 
-3.  Yeni grafik sayaçları ekleyerek özelleştirin. Daha fazla bilgi için [nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Yeni grafik sayaçları ekleyerek özelleştirin. Daha fazla bilgi için [nasıl yapılır: Grafiklerde sayaç ekleme ve silme](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2b61569c7d1608372516fbc8a71b9bc6955775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067098"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: Eski dil hizmeti oluşturma
+# <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: Eski Dil Hizmeti oluşturma
 Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıfları kullanarak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] oldukça basittir. Dil hizmeti ve dil hizmeti diliniz için bir ayrıştırıcı barındırmak için bir VSPackage ihtiyacınız vardır.
 
 ## <a name="prerequisites"></a>Önkoşullar
@@ -26,11 +26,11 @@ Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıflar�
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Paket projesi şablonu için konumları
  Visual Studio Paket proje şablonu, üç farklı şablonu konumlarda bulunabilir **yeni proje** iletişim kutusunda:
 
-1.  Visual Basic genişletilebilirliği altında. Visual Basic proje varsayılan dildir.
+1. Visual Basic genişletilebilirliği altında. Visual Basic proje varsayılan dildir.
 
-2.  C# genişletilebilirlik altında. Varsayılan proje C# dilidir.
+2. C# genişletilebilirlik altında. Varsayılan proje C# dilidir.
 
-3.  Diğer proje türleri genişletilebilirliği altında. C++ projesinin varsayılan dildir.
+3. Diğer proje türleri genişletilebilirliği altında. C++ projesinin varsayılan dildir.
 
 ### <a name="create-a-vspackage"></a>VSPackage'ı oluşturma
 
@@ -56,46 +56,46 @@ Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıflar�
 
 ### <a name="create-the-language-service-class"></a>Dil hizmeti sınıfı oluşturma
 
-1.  İçinde **Çözüm Gezgini**, MyLanguagePackage projeye sağ tıklayın, seçin **Ekle**, **başvuru**ve ardından **Yeni Başvuru Ekle** düğmesi.
+1. İçinde **Çözüm Gezgini**, MyLanguagePackage projeye sağ tıklayın, seçin **Ekle**, **başvuru**ve ardından **Yeni Başvuru Ekle** düğmesi.
 
-2.  İçinde **Başvuru Ekle** iletişim kutusunda **Microsoft.VisualStudio.Package.LanguageService** içinde **.NET** sekmesine **Tamam**.
+2. İçinde **Başvuru Ekle** iletişim kutusunda **Microsoft.VisualStudio.Package.LanguageService** içinde **.NET** sekmesine **Tamam**.
 
      Bu dil paketi projesi için yalnızca bir kez gerçekleştirilmesi gerekir.
 
-3.  İçinde **Çözüm Gezgini**VSPackage projeye sağ tıklayın ve seçin **Ekle**, **sınıfı**.
+3. İçinde **Çözüm Gezgini**VSPackage projeye sağ tıklayın ve seçin **Ekle**, **sınıfı**.
 
-4.  Emin **sınıfı** şablonları listesinde seçilir.
+4. Emin **sınıfı** şablonları listesinde seçilir.
 
-5.  Girin **MyLanguageService.cs** tıklatın ve sınıf dosyası adını **Ekle**.
+5. Girin **MyLanguageService.cs** tıklatın ve sınıf dosyası adını **Ekle**.
 
      İstediğiniz herhangi bir adı kullanabilirsiniz. Bu yordamlar burada ayrıntıları varsayar `MyLanguageService` adı.
 
-6.  MyLanguageService.cs dosyasına aşağıdakileri ekleyin `using` deyimleri.
+6. MyLanguageService.cs dosyasına aşağıdakileri ekleyin `using` deyimleri.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
 
-7.  Değiştirme `MyLanguageService` öğesinden türetilen sınıfın <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı:
+7. Değiştirme `MyLanguageService` öğesinden türetilen sınıfın <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8.  Gelen ve "LanguageService" imleci konumlandırma **Düzenle**, **IntelliSense** menüsünde **soyut sınıf Uygula**. Bu, bir dil hizmeti sınıf uygulamak için en düşük gerekli yöntemleri ekler.
+8. Gelen ve "LanguageService" imleci konumlandırma **Düzenle**, **IntelliSense** menüsünde **soyut sınıf Uygula**. Bu, bir dil hizmeti sınıf uygulamak için en düşük gerekli yöntemleri ekler.
 
 9. Soyut metotlar açıklandığı gibi uygulamak [eski dil hizmetinde uygulama](../../extensibility/internals/implementing-a-legacy-language-service2.md).
 
 ### <a name="register-the-language-service"></a>Dil hizmetine kaydetme
 
-1.  MyLanguagePackagePackage.cs dosyasını açın ve aşağıdakileri ekleyin `using` ifadeleri:
+1. MyLanguagePackagePackage.cs dosyasını açın ve aşağıdakileri ekleyin `using` ifadeleri:
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
 
-2.  Dil hizmeti sınıfınıza açıklandığı kaydetme [eski dil hizmetinde kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md). Bu, "Dil hizmeti Proffering" bölümleri ve ProvideXX öznitelikleri içerir. Burada bu konuda TestLanguageService kullanan MyLanguageService kullanın.
+2. Dil hizmeti sınıfınıza açıklandığı kaydetme [eski dil hizmetinde kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md). Bu, "Dil hizmeti Proffering" bölümleri ve ProvideXX öznitelikleri içerir. Burada bu konuda TestLanguageService kullanan MyLanguageService kullanın.
 
 ### <a name="the-parser-and-scanner"></a>Ayrıştırıcısı ve tarayıcısı
 
-1.  Bir ayrıştırıcısı ve tarayıcısı dil açıklandığı gibi uygulamak [eski dil hizmeti ayrıştırıcısı ve tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
+1. Bir ayrıştırıcısı ve tarayıcısı dil açıklandığı gibi uygulamak [eski dil hizmeti ayrıştırıcısı ve tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
      Ayrıştırıcısı ve tarayıcısı nasıl uygulayacağınıza tamamen size bağlıdır ve bu konunun kapsamı dışındadır.
 
@@ -104,29 +104,29 @@ Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıflar�
 
 #### <a name="deriving-from-an-mpf-class"></a>Bir MPF sınıftan türetme
 
-1.  İçinde **Çözüm Gezgini**VSPackage projeye sağ tıklayın ve seçin **Ekle**, **sınıfı**.
+1. İçinde **Çözüm Gezgini**VSPackage projeye sağ tıklayın ve seçin **Ekle**, **sınıfı**.
 
-2.  Emin **sınıfı** şablonları listesinde seçilir.
+2. Emin **sınıfı** şablonları listesinde seçilir.
 
      Sınıf dosyası için uygun bir ad girin ve tıklayın **Ekle**.
 
-3.  Yeni sınıf dosyasında, aşağıdaki ekleyin `using` deyimleri.
+3. Yeni sınıf dosyasında, aşağıdaki ekleyin `using` deyimleri.
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
 
-4.  İstenen MPF sınıfından türetilir için sınıfı değiştirin.
+4. İstenen MPF sınıfından türetilir için sınıfı değiştirin.
 
-5.  En az temel sınıfın Oluşturucusu aynı parametreleri alan bir sınıf oluşturucu ekleyin ve Oluşturucusu parametreleri temel sınıf oluşturucusunu açın.
+5. En az temel sınıfın Oluşturucusu aynı parametreleri alan bir sınıf oluşturucu ekleyin ve Oluşturucusu parametreleri temel sınıf oluşturucusunu açın.
 
      Bir sınıf için oluşturucu gibi türetilen <xref:Microsoft.VisualStudio.Package.Source> sınıfı aşağıdaki gibi görünebilir:
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
 
-6.  Gelen **Düzenle**, **IntelliSense** menüsünde **soyut sınıf Uygula** temel sınıfta uygulanması gereken tüm soyut yöntemler varsa.
+6. Gelen **Düzenle**, **IntelliSense** menüsünde **soyut sınıf Uygula** temel sınıfta uygulanması gereken tüm soyut yöntemler varsa.
 
-7.  Aksi takdirde, giriş işaretini sınıf içinde getirin ve geçersiz kılınacak yöntemi girin.
+7. Aksi takdirde, giriş işaretini sınıf içinde getirin ve geçersiz kılınacak yöntemi girin.
 
      Örneğin `public override` bu sınıfta geçersiz kılınabilir tüm yöntemlerin listesini görmek için.
 

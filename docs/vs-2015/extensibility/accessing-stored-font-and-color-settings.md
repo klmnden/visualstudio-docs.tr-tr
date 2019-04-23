@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078102"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Saklı yazı tipi ve renk ayarlarını erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "54793452"
   
  Bu nedenle, Kalıcılık başlatmak için bir VSPackage gerekir:  
   
--   Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> çağırarak arabirim `QueryService` küresel hizmet sağlayıcısına.  
+- Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> çağırarak arabirim `QueryService` küresel hizmet sağlayıcısına.  
   
      `QueryService` bir hizmet kimliği bağımsız değişkeni kullanılarak çağrılmalıdır `SID_SVsFontAndColorStorage` ve arabirimi kimliği bağımsız değişkeninin `IID_IVsFontAndColorStorage`.  
   
--   Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> bağımsız değişken olarak kategorinin GUID ve modu bayrağını kullanarak kalıcı için bir kategori açmak için yöntemi.  
+- Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> bağımsız değişken olarak kategorinin GUID ve modu bayrağını kullanarak kalıcı için bir kategori açmak için yöntemi.  
   
      Tarafından belirtilen modu `fFlags` değerden bağımsız değişkeni, oluşturulan <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> sabit listesi. Bu modu denetler:  
   
-    -   Erişilebilir ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
+    - Erişilebilir ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
   
-    -   Tüm ayarları veya yalnızca kullanıcıları değiştiren ve aracılığıyla alınabilir olan <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
+    - Tüm ayarları veya yalnızca kullanıcıları değiştiren ve aracılığıyla alınabilir olan <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
   
-    -   Değişiklikleri kullanıcı ayarlarına yayma şekilde.  
+    - Değişiklikleri kullanıcı ayarlarına yayma şekilde.  
   
-    -   Kullanılan renk değerleri biçimi.  
+    - Kullanılan renk değerleri biçimi.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Yazı tipleri ve renkler durum Kalıcılığına kullanmak için  
  Kalıcı yazı tipleri ve renkler içerir:  

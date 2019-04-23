@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778850"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067020"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
 ## <a name="creating-a-gesture-handler"></a>Hareket İşleyici oluşturma  
  Bir UML tasarımcısı için bir hareket işleyicisi tanımlama için hareket işleyicisinin davranışını tanımlayan bir sınıf oluşturun ve bu sınıfı bir Visual Studio Tümleştirme Uzantısı'na (VSIX) katıştırmanız gerekir. VSIX işleyiciyi yükleyebilecek bir kapsayıcı gibi davranır. Bir hareket işleyicisini tanımlamanın iki farklı yöntemi vardır:  
   
--   **Bir proje şablonunu kullanarak kendi VSIX'inde bir hareket işleyici oluşturun.** Bu daha hızlı bir yöntemdir. Uzantı doğrulama uzantıları, özel araç kutusu öğeleri veya menü komutları gibi diğer tür işleyicinizi birleştirmek istemiyorsanız, bunu kullanın.  
+- **Bir proje şablonunu kullanarak kendi VSIX'inde bir hareket işleyici oluşturun.** Bu daha hızlı bir yöntemdir. Uzantı doğrulama uzantıları, özel araç kutusu öğeleri veya menü komutları gibi diğer tür işleyicinizi birleştirmek istemiyorsanız, bunu kullanın.  
   
--   **Ayrı hareket işleyicisi ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, hareket işleyiciniz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
+- **Ayrı hareket işleyicisi ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, hareket işleyiciniz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Kendi VSIX'inde bir hareket işleyicisi oluşturmak için  
   
@@ -56,9 +56,9 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 1. Bir sınıf kitaplığı projesini yeni bir oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözümü ya da var olan bir çözümde.  
   
-   1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+   1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-   2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki seçin **sınıf kitaplığı**.  
+   2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki seçin **sınıf kitaplığı**.  
   
 2. Projenize aşağıdaki başvuruları ekleyin.  
   
@@ -204,25 +204,25 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Bir VSIX projesine ayrı bir hareket işleyici eklemek için  
   
-1.  Kendi VSIX'i olan bir hareket işleyicisi oluşturduysanız, bu yordama ihtiyacınız yoktur.  
+1. Kendi VSIX'i olan bir hareket işleyicisi oluşturduysanız, bu yordama ihtiyacınız yoktur.  
   
-2.  Çözümünüz zaten içermiyorsa, bir VSIX projesi oluşturun.  
+2. Çözümünüz zaten içermiyorsa, bir VSIX projesi oluşturun.  
   
-    1.  İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
+    1. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
   
-3.  VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
+3. VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünde seçin **başlangıç projesi olarak ayarla**.  
+    - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünde seçin **başlangıç projesi olarak ayarla**.  
   
-4.  İçinde **source.extension.vsixmanifest**, hareket işleyicisi sınıf kitaplığı projesini MEF Bileşeni ekleyin:  
+4. İçinde **source.extension.vsixmanifest**, hareket işleyicisi sınıf kitaplığı projesini MEF Bileşeni ekleyin:  
   
-    1.  Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
+    1. Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
   
-    2.  Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
+    2. Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
   
-    3.  Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
+    3. Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
   
          **Tür** = **MEF Bileşeni**  
   
@@ -230,7 +230,7 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
          **Proje** = *, sınıf kitaplığı projesi*  
   
-##  <a name="Executing"></a> Hareket işlecini yürütme  
+## <a name="Executing"></a> Hareket işlecini yürütme  
  Test amaçları için hareket işleyicinizi hata ayıklama modunda yürütün.  
   
 #### <a name="to-test-the-gesture-handler"></a>Hareket işleyicisini test etmek için  
@@ -241,9 +241,9 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
     **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
   
-   -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
+   - Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
-   -   Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde Özellikler'i seçin. Proje Özellikleri düzenleyicisinden seçin **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
+   - Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde Özellikler'i seçin. Proje Özellikleri düzenleyicisinden seçin **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -255,17 +255,17 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
    **Sorun giderme**: Hareket işleyicisi çalışmıyorsa emin olun:  
   
--   Hareket işleyicisi projesini MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
+- Hareket işleyicisi projesini MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
   
--   Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
+- Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
   
--   `CanDragDrop` Yöntemi döndürmez `false`.  
+- `CanDragDrop` Yöntemi döndürmez `false`.  
   
--   Bir türü modelin diyagramı (UML sınıfı, dizisi ve benzeri) kullanıyorsanız bir hareket işleyicisi sınıfı öznitelikleri [ClassDesignerExtension], [SequenceDesignerExtension] vb. listelenir.  
+- Bir türü modelin diyagramı (UML sınıfı, dizisi ve benzeri) kullanıyorsanız bir hareket işleyicisi sınıfı öznitelikleri [ClassDesignerExtension], [SequenceDesignerExtension] vb. listelenir.  
   
--   Bu tür hedef ve bırakılan öğe için zaten tanımlanmış yerleşik işlevi yoktur.  
+- Bu tür hedef ve bırakılan öğe için zaten tanımlanmış yerleşik işlevi yoktur.  
   
-##  <a name="Implementing"></a> Hareket işlecini uygulama  
+## <a name="Implementing"></a> Hareket işlecini uygulama  
   
 ### <a name="the-gesture-handler-methods"></a>Hareket işleyici yöntemleri  
  Hareket işleyicisi sınıfı uygular ve dışarı aktarır <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Tanımlamanız gereken yöntemler aşağıdaki gibidir:  
@@ -280,17 +280,17 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
  Bu yöntemlerin parametreleri şunlardır:  
   
--   `ShapeElement target`. Şekil veya diyagram üzerine kullanıcı birşey sürüklediği.  
+- `ShapeElement target`. Şekil veya diyagram üzerine kullanıcı birşey sürüklediği.  
   
      `ShapeElement` bir sınıfta altını çizen UML modelleme araçları. UML model ve diyagramlarının tutarsız bir duruma koymanın riskini azaltmak için bu sınıfın yöntemlerini doğrudan kullanmamanızı öneririz. Bunun yerine öğenin kaydırma bir `IShape`ve sonra da açıklanmış yöntemleri kullanın [diyagramlar üzerinde bir UML modeli görüntüleme](../modeling/display-a-uml-model-on-diagrams.md).  
   
-    -   Elde etmek için bir `IShape`:  
+    - Elde etmek için bir `IShape`:  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   Sürükleme tarafından hedeflenen bir model öğesi elde etmek veya çift tıklama işlemleri için:  
+    - Sürükleme tarafından hedeflenen bir model öğesi elde etmek veya çift tıklama işlemleri için:  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -298,20 +298,20 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
          Bu daha belirli bir öğe türüne çevirebilirsiniz.  
   
-    -   UML modeli içeren bir UML model deposu elde etmek için:  
+    - UML modeli içeren bir UML model deposu elde etmek için:  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Ana bilgisayar ve hizmet sağlayıcısına erişim elde etmek için:  
+    - Ana bilgisayar ve hizmet sağlayıcısına erişim elde etmek için:  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Bu parametre sürükleme işleminin kaynak nesnesinin seri hala getirilmiş biçimini taşır:  
+- `DiagramDragEventArgs eventArgs`. Bu parametre sürükleme işleminin kaynak nesnesinin seri hala getirilmiş biçimini taşır:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -348,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  Daha fazla bilgi için [UML modelini gezme](../modeling/navigate-the-uml-model.md).  
   
-##  <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
+## <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
  Yükleyebileceğiniz bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hem kendi bilgisayarınıza hem de diğer bilgisayarlara uzantısı.  
   
 #### <a name="to-install-an-extension"></a>Bir uzantı yüklemek için  
   
-1.  Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
+1. Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
   
-    1.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
+    1. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
-2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
+2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   
      Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] belirttiğiniz **source.extension.vsixmanifest**.  
   
-3.  Hedef bilgisayarda açın **.vsix** dosya.  
+3. Hedef bilgisayarda açın **.vsix** dosya.  
   
      **Visual Studio Uzantı Yükleyicisi** açılır ve uzantıyı yükler.  
   
-4.  Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[sürüm] \Extensions**  
   
-##  <a name="DragExample"></a> Örnek  
+## <a name="DragExample"></a> Örnek  
  Aşağıdaki örnek nasıl oluştuğunu bileşen diyagramdan sürüklenen bileşenin bağlantı noktalarını ve parçaları temel bir sıralı diyagramda yaşam çizgilerini oluşturulacağını gösterir.  
   
  Test etmek için F5 tuşuna basın. Visual Studio deneysel örneği açılır. Bu örnekte, bir UML modeli açın ve bir bileşen diyagramı üzerinde bir bileşen oluşturun. Bu bileşeni bazı arayüzlere ve iç bileşen parçalarına ekleyin. Arabirimleri ve bölümleri seçin. Sonra arabirimleri ve parçaları bir sıralama diyagramına sürükleyin. (Sıralı diyagram ve sonra aşağı için sekmesinde kadar bileşen diyagramından sıra diyagramının içine sürükleyin.) Her arabirim ve parça için bir yaşam çizgisi görünecektir.  

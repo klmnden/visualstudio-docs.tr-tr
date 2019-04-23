@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072571"
 ---
 # <a name="property-functions"></a>Özellik işlevleri
 
@@ -177,7 +177,7 @@ MSBuild özellik işlevlerin bir listesi aşağıda verilmiştir:
 |Makerelatıve (dize basePath, dize yolu) dize|Yapar `path` göreli `basePath`. `basePath` mutlak bir dizin olmalıdır. Varsa `path` olamaz göreli yapılmadı, bu harfi harfine döndürülür. Benzer şekilde `Uri.MakeRelativeUri`.|
 |dize ValueOrDefault (dize conditionValue, dize defaultValue)|Yalnızca parametre 'conditionValue' else boşsa, dize 'defaultValue' parametresinde döndürür, değer conditionValue dönün.|
 
-##  <a name="nested-property-functions"></a>İç içe özellik işlevleri
+## <a name="nested-property-functions"></a>İç içe özellik işlevleri
 
 Özellik işlevleri aşağıdaki örnekte gösterildiği gibi daha karmaşık, işlev forma birleştirebilirsiniz.
 

@@ -10,12 +10,12 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ae3c134fb97b7ec899dc63c2f0d23420390302d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 975e8624a6ffbfe0c5ae7544f2b978487465e34e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082782"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Eski API'yi kullanarak erişen metin katmanları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Metin katmanı, genellikle bazı yönlerini metin düzenini kapsüller. Örneği
 ## <a name="text-layer-information"></a>Metin katmanı bilgileri  
  Aşağıdaki listede, metin katmanları nasıl çalıştığı açıklanmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:  
   
--   Metin katmanındaki metin söz dizimi renklendirme ve işaretçileri ile donatılmış.  
+- Metin katmanındaki metin söz dizimi renklendirme ve işaretçileri ile donatılmış.  
   
--   Şu anda kendi katmanları uygulayamaz.  
+- Şu anda kendi katmanları uygulayamaz.  
   
--   Kullanıma sunan bir katmana <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, türetilen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Metin arabelleği, ayrıca temel alınan katmanlarla polymorphically yarayan bir görünüm sağlayan bir katman olarak uygulanır.  
+- Kullanıma sunan bir katmana <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, türetilen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Metin arabelleği, ayrıca temel alınan katmanlarla polymorphically yarayan bir görünüm sağlayan bir katman olarak uygulanır.  
   
--   Görünüm ve arabellek arasında herhangi bir sayıda katmanları şekilde. Her katman yalnızca aşağıdaki katman ile ilgilidir ve görünüm büyük ölçüde en üst katman ile ilgilidir. (Görünüm arabellek hakkında bazı bilgiler yok.)  
+- Görünüm ve arabellek arasında herhangi bir sayıda katmanları şekilde. Her katman yalnızca aşağıdaki katman ile ilgilidir ve görünüm büyük ölçüde en üst katman ile ilgilidir. (Görünüm arabellek hakkında bazı bilgiler yok.)  
   
--   Bir katman altında olan katmanları etkileyebilir. Bu standart olayları kaynaklanan ötesinde üzerindeki katmanların etkilemez.  
+- Bir katman altında olan katmanları etkileyebilir. Bu standart olayları kaynaklanan ötesinde üzerindeki katmanların etkilemez.  
   
--   Düzenleyici'de, gizli metin ve yapay metin kaydırmayı katmanları olarak uygulanır. Gizli ve yapay metin katmanları ile doğrudan etkileşim olmadan uygulayabilirsiniz. Daha fazla bilgi için [eski dil hizmetinde ana hat oluşturmayı](../extensibility/internals/outlining-in-a-legacy-language-service.md) ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+- Düzenleyici'de, gizli metin ve yapay metin kaydırmayı katmanları olarak uygulanır. Gizli ve yapay metin katmanları ile doğrudan etkileşim olmadan uygulayabilirsiniz. Daha fazla bilgi için [eski dil hizmetinde ana hat oluşturmayı](../extensibility/internals/outlining-in-a-legacy-language-service.md) ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Her metin katmanı aracılığıyla kullanıma kendi yerel koordinat sistemini sahip <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> arabirimi. Temel alınan metin arabelleğini tek bir satır içerebilir ancak satır kaydırma katmanı, örneğin, iki satır içerebilir.  
+- Her metin katmanı aracılığıyla kullanıma kendi yerel koordinat sistemini sahip <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> arabirimi. Temel alınan metin arabelleğini tek bir satır içerebilir ancak satır kaydırma katmanı, örneğin, iki satır içerebilir.  
   
--   Görünüm katmanları iletişim kurar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> arabirimi. Bu arabirim görünümü koordinatları arabellek koordinatları ile mutabık kılmak için kullanın.  
+- Görünüm katmanları iletişim kurar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> arabirimi. Bu arabirim görünümü koordinatları arabellek koordinatları ile mutabık kılmak için kullanın.  
   
--   Kaynaklı metin yapay metin katmanı, bir yerel uygulaması sağlamalısınız gibi tüm katman <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
+- Kaynaklı metin yapay metin katmanı, bir yerel uygulaması sağlamalısınız gibi tüm katman <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Yanında <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, metin katmanı uygulamalıdır <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ve olayları yangın <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> arabirimi.  
+- Yanında <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, metin katmanı uygulamalıdır <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> ve olayları yangın <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel düzenleyicilerde söz dizimi renklendirmesi](../extensibility/syntax-coloring-in-custom-editors.md)   

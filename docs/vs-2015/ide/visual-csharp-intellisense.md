@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075765"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   
   Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına dayalı bir belirteç önceden seçmek akıllı. Daha fazla bilgi için [C# ' de filtrelenmiş tamamlanma listeleri](../misc/filtered-completion-lists-in-csharp.md) ve [Pre-selected tamamlanma listesi öğeleri, C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Kod parçacıkları tamamlanma listeleri  
+### <a name="CodeSnippets"></a> Kod parçacıkları tamamlanma listeleri  
  Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Tamamlanma listeleri dil anahtar sözcükleri  
+### <a name="Keywords"></a> Tamamlanma listeleri dil anahtar sözcükleri  
  Visual C# ' ta tamamlanma listesi dil anahtar sözcükleri de içerir. C# dil anahtar sözcükleri hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Tamamlama listelerinde genişletme yöntemleri  
+### <a name="ExtensionMethods"></a> Tamamlama listelerinde genişletme yöntemleri  
  Visual C# ' ta tamamlanma listesi kapsamlarındaki genişletme yöntemleri içerir.  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   
  Visual C# bu öğeler için görüntülenmesini tamamlanma listeleri filtreler:  
   
--   **Arabirimleri ve temel sınıfları.** IntelliSense arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildiriminin temel ve arabirimi listeler, hem de kısıtlaması listeleri öğeleri otomatik olarak kaldırır. Örneğin, sabit listeleri için temel sınıflar kullanılamadığı için temel sınıflar için tamamlama listesinde numaralandırmalar görünmez. Taban sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanları içerir. Listede bir öğe seçin ve ardından virgül girin, IntelliSense Visual C#, birden çok devralma desteklemediği için temel sınıflar tamamlama listesinden kaldırır. Aynı davranışı için kısıtlama yan tümceleri de gerçekleşir.  
+- **Arabirimleri ve temel sınıfları.** IntelliSense arabirimi ve temel sınıf tamamlanma listeleri, sınıf bildiriminin temel ve arabirimi listeler, hem de kısıtlaması listeleri öğeleri otomatik olarak kaldırır. Örneğin, sabit listeleri için temel sınıflar kullanılamadığı için temel sınıflar için tamamlama listesinde numaralandırmalar görünmez. Taban sınıflar tamamlanma listesi yalnızca arabirimleri ve ad alanları içerir. Listede bir öğe seçin ve ardından virgül girin, IntelliSense Visual C#, birden çok devralma desteklemediği için temel sınıflar tamamlama listesinden kaldırır. Aynı davranışı için kısıtlama yan tümceleri de gerçekleşir.  
   
--   **Öznitelikleri**: Bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.  
+- **Öznitelikleri**: Bir türe öznitelik uyguladığınızda, liste yalnızca bu türleri gibi içeren ad alanlarını Düzen bu türleri içeren tamamlanma listesi filtrelenir <xref:System.Attribute>.  
   
--   `as` ve `is` işleçleri.  
+- `as` ve `is` işleçleri.  
   
--   **Yan tümceleri yakalayın.**  
+- **Yan tümceleri yakalayın.**  
   
--   **Nesne başlatıcıları:** Yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.  
+- **Nesne başlatıcıları:** Yalnızca başlatılabilir üyeleri tamamlama listesinde görünür.  
   
--   **Yeni anahtar sözcük**: Yazdığınızda `new` ve tamamlanma listesi görünür boşluk tuşuna basın. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.  
+- **Yeni anahtar sözcük**: Yazdığınızda `new` ve tamamlanma listesi görünür boşluk tuşuna basın. Bir öğe, listede, kodunuzu bağlamda göre otomatik olarak seçilir. Örneğin, öğeleri yöntemleri return deyimleri ve bildirimler için tamamlama listesinde otomatik olarak seçilir.  
   
--   **olarak ve is işleçlerini:** Filtrelenmiş tamamlanma listesini otomatik olarak yazdığınız sonra boşluk tuşuna bastığınızda görüntülenen `as` veya `is` anahtar sözcüğü.  
+- **olarak ve is işleçlerini:** Filtrelenmiş tamamlanma listesini otomatik olarak yazdığınız sonra boşluk tuşuna bastığınızda görüntülenen `as` veya `is` anahtar sözcüğü.  
   
--   Olayları: Anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.  
+- Olayları: Anahtar sözcüğü yazdığınızda `event`, tamamlanma listesi yalnızca temsilci türleri içerir.  
   
--   Parametre Yardımı, onları girerken, parametrelerle eşleşen ilk yöntem aşırı yüklemesi için otomatik olarak sıralar. Birden çok yöntem aşırı yükleme varsa, yukarı ve aşağı oklarını sonraki olası aşırı yükleme listesindeki gidin.  
+- Parametre Yardımı, onları girerken, parametrelerle eşleşen ilk yöntem aşırı yüklemesi için otomatik olarak sıralar. Birden çok yöntem aşırı yükleme varsa, yukarı ve aşağı oklarını sonraki olası aşırı yükleme listesindeki gidin.  
   
 ## <a name="most-recently-used-members"></a>En son kullanılan üyeler  
  IntelliSense, yakın zamanda açılır pencerede seçtiğiniz üyeleri hatırlar [üyeleri Listele](../ide/using-intellisense.md) kutusu otomatik nesne adı tamamlama. Üye listesi, sonraki açışınızda, en son kullanılan üyeler en üstünde gösterilir. En son kullanılan üyeler geçmişi, her oturum IDE içindeki arasında temizlenir.  
@@ -83,7 +83,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
 ## <a name="override"></a>override  
  Yazdığınızda [geçersiz kılma](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) ve sürüklerken boşluk tuşuna basın, IntelliSense tüm bir açılır liste kutusunda geçersiz kılma geçerli bir temel sınıf üyelerini görüntüler. Sonraki yöntemin dönüş türü yazarak `override` yalnızca aynı türü döndüren yöntemler göstermek için IntelliSense ister. IntelliSense herhangi bir eşleşme bulamazsa, tüm temel sınıf üyelerinin görüntülenir.  
   
-## <a name="automatic-code-generation"></a>Otomatik Kod Oluşturma  
+## <a name="automatic-code-generation"></a>Otomatik Kod Üretimi  
   
 ### <a name="add-using"></a>using Ekle  
  IntelliSense işlemi kullanarak ekleme kodu yazmak yerine, kodun başka bir parçası, odağı gerek odaklanma tutmanıza olanak sağlar.  

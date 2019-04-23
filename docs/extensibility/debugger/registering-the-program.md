@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070153"
 ---
 # <a name="register-the-program"></a>Kayıt programı
 Hata ayıklama altyapısı bir bağlantı noktası aldıktan sonra tarafından temsil edilen bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi, ayıklanacak programın etkinleştirmenin sonraki adımı olan bağlantı noktası ile kaydetmek için. Kaydedildikten sonra program aşağıdaki yollardan birini kullanarak hata ayıklama için kullanılabilir:
 
--   Çalışan bir uygulamanın hata ayıklama tam denetim kazanmak hata ayıklayıcı sağlayan ekleme, işlemi.
+- Çalışan bir uygulamanın hata ayıklama tam denetim kazanmak hata ayıklayıcı sağlayan ekleme, işlemi.
 
--   Yalnızca hata ayıklama sonrasında-aslında bir hata ayıklayıcı bağımsız olarak çalışan bir programın hata ayıklama için izin veren zamanında (JIT). Çalışma zamanı mimari bir hataya yakalar, hata ayıklayıcı önce işletim sistemine bildirilir veya çalışma zamanı ortamı bellek ve hataya neden olan program kaynaklarını serbest bırakır.
+- Yalnızca hata ayıklama sonrasında-aslında bir hata ayıklayıcı bağımsız olarak çalışan bir programın hata ayıklama için izin veren zamanında (JIT). Çalışma zamanı mimari bir hataya yakalar, hata ayıklayıcı önce işletim sistemine bildirilir veya çalışma zamanı ortamı bellek ve hataya neden olan program kaynaklarını serbest bırakır.
 
 ## <a name="registering-procedure"></a>Yordam kaydedilemedi
 
 ### <a name="to-register-your-program"></a>Programınızı kaydetmek için
 
-1.  Çağrı [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) bağlantı noktası tarafından uygulanan yöntem.
+1. Çağrı [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) bağlantı noktası tarafından uygulanan yöntem.
 
      `IDebugPortNotify2::AddProgramNode` bir işaretçi gerektiren bir [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi.
 

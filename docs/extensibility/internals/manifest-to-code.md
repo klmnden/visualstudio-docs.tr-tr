@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075837"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Kod aracı bildirime .imagemanifest dosya Visual Studio Görüntü hizmeti için alan ve c++'da görüntü bildirim değerleri başvuru için bir sarmalayıcı dosya veya oluşturur bir konsol uygulamasıdır C#, VB veya .vsct dosyaları için Visual Studio uzantıları. Bu araç, Visual Studio Görüntü hizmeti doğrudan isteyen görüntülerden veya kodu kendi kullanıcı Arabirimi ve işleme işlemez API'ler aracılığıyla bildirim değerleri geçirme için kullanılabilir sarmalayıcı dosyaları oluşturur.
@@ -40,17 +40,17 @@ Kod aracı bildirime .imagemanifest dosya Visual Studio Görüntü hizmeti için
 
  **Örnekler**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:CSharp
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: benim:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: benim:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Notlar
 
--   Bu araç bildiriminden kaynakları aracı tarafından oluşturulan görüntüyü bildirimleri ile kullanmanızı öneririz.
+- Bu araç bildiriminden kaynakları aracı tarafından oluşturulan görüntüyü bildirimleri ile kullanmanızı öneririz.
 
--   Araç, yalnızca kod sarmalayıcılar için Sembol girişler arar. Bir görüntü bildirimi sembol içeriyorsa, oluşturulan kod sarmalayıcıları boş olur. Ardından, bir resim veya simge kullanmayan görüntü bildiriminde görüntü kümesi ise, bir kod sarmalayıcısını edilmeyecek.
+- Araç, yalnızca kod sarmalayıcılar için Sembol girişler arar. Bir görüntü bildirimi sembol içeriyorsa, oluşturulan kod sarmalayıcıları boş olur. Ardından, bir resim veya simge kullanmayan görüntü bildiriminde görüntü kümesi ise, bir kod sarmalayıcısını edilmeyecek.
 
 ## <a name="sample-output"></a>Örnek çıktı
  **C# sarmalayıcıları**

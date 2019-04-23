@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067072"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Yan yana dosya ilişkilendirmelerini yönetme
 
@@ -51,7 +51,7 @@ Birden çok yan yana VSPackages aynı uzantı kullanmak istiyorsanız, sürümü
 
   **Visual Studio'nun en son sürümü belirlemek özel tablo satırları**
 
-  |Eylem|Tür|Kaynak|Hedef|
+  |Eylem|Tür|Source|Hedef|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Dosya ilişkilendirmeleri için kayıt defteri girdileri yazan VSPackage kaldır
 
 - Kullanıcının dosya ilişkilendirmesi kendi istediği VSPackage'ı sürümünün bir onarım gerçekleştirin kullanıcıya bildirin.
 
--   Uygun kayıt defteri girdileri yeniden yazar ayrı bir yürütülebilir program belirtin.
+- Uygun kayıt defteri girdileri yeniden yazar ayrı bir yürütülebilir program belirtin.
 
--   Kullanıcıların dosya ilişkilendirmeleri seçin ve kayıp ilişkilendirmeleri geri kazan olanak tanıyan bir yapılandırma seçenekleri sayfası veya iletişim kutusu sağlar. Kullanıcıların kaldırılmasından sonra çalıştırmasına izin vermelerini isteyin.
+- Kullanıcıların dosya ilişkilendirmeleri seçin ve kayıp ilişkilendirmeleri geri kazan olanak tanıyan bir yapılandırma seçenekleri sayfası veya iletişim kutusu sağlar. Kullanıcıların kaldırılmasından sonra çalıştırmasına izin vermelerini isteyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

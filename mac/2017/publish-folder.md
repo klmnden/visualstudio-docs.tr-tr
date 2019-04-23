@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 9fbcdb0bd9b9bab2afc69a8896cc00bedb98998b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065941"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak bir klasör için bir Web uygulaması yayımlama
 
@@ -22,10 +22,10 @@ ASP.NET Core uygulamaları için bir klasör yayımlamak için Yayımla Aracı'n
 
 ## <a name="prerequisites"></a>Önkoşullar
 
- - [Mac için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) etkin ASP.NET Core ile yüklü.
- - Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- [Mac için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) etkin ASP.NET Core ile yüklü.
+- Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
-## <a name="publish-to-folder"></a>Klasöründe yayımlayın
+## <a name="publish-to-folder"></a>Klasöre Yayımlama
 
 Mac için Visual Studio kullanarak ASP.NET Core projeleriniz Yayımla Aracı'nı kullanarak bir klasöre yayımlayabilirsiniz. Bir klasöre yayımlamadan sonra farklı bir ortama almak için web sunucunuza dosyaları aktarabilirsiniz. Yayımlamak için bir klasör için şu adımları izleyin.
 

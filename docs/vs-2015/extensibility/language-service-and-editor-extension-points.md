@@ -10,35 +10,35 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085528"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil Hizmeti ve Düzenleyici Uzantı Noktaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzenleyici, çoğu dil hizmeti özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına genişletebilirsiniz uzantı noktaları sağlar. Ana uzantı noktası kategorileri şunlardır:  
   
--   İçerik türleri  
+- İçerik türleri  
   
--   Sınıflandırma türleri ve sınıflandırma biçimleri  
+- Sınıflandırma türleri ve sınıflandırma biçimleri  
   
--   Kenar boşlukları ve kaydırma çubukları  
+- Kenar boşlukları ve kaydırma çubukları  
   
--   Etiketler  
+- Etiketler  
   
--   Kenarlıklar  
+- Kenarlıklar  
   
--   Fare işlemcileri  
+- Fare işlemcileri  
   
--   Bırakma işleyicileri  
+- Bırakma işleyicileri  
   
--   Seçenekler  
+- Seçenekler  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>İçerik türlerini genişletme  
  Örneğin düzenleyici tarafından işlenen metin, "metin", "code" veya "CSharp" tür tanımlarını içerik türleridir. Yeni bir içerik türü türünün bir değişkeni bildirerek tanımladığınız <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> ve yeni içerik türü benzersiz bir ad verir. İçerik türü Düzenleyicisi ile kaydetmek için aşağıdaki öznitelikleri ile birlikte dışarı aktarın:  
@@ -409,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: Bu bırak işleyicisi olduğu geçerli metin biçimi. Şu biçimlerden yüksekten en düşüğe öncelik sırasına ele alınmıştır:  
   
-  1.  Herhangi bir özel biçim  
+  1. Herhangi bir özel biçim  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  DIF  
+  6. DIF  
   
-  7.  Yerel Ayar  
+  7. Yerel Ayar  
   
-  8.  Palet  
+  8. Palet  
   
   9. PenData  
   
@@ -507,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Bir IntelliSense kaynağı uygulama  
  Bir kaynak özelleştirmek için aşağıdaki kaynak arabirimlerinden birini (veya daha fazla) uygulamanız gerekir:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Ayrıca, aynı türden bir sağlayıcı uygulamanız gerekir:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Sağlayıcı aşağıdaki öznitelikleri ile birlikte dışarı aktarmanız gerekir:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: kaynağının adı.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: kaynağının adı.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: kaynak uygulandığı türde içerik (örneğin, "metin" veya "code").  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: kaynak uygulandığı türde içerik (örneğin, "metin" veya "code").  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: kaynak (göre diğer kaynakları) görünmelidir sırası.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: kaynak (göre diğer kaynakları) görünmelidir sırası.  
   
--   Aşağıdaki örnek, bir tamamlama kaynak sağlayıcısına dışarı aktarma öznitelikleri gösterir.  
+- Aşağıdaki örnek, bir tamamlama kaynak sağlayıcısına dışarı aktarma öznitelikleri gösterir.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  

@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc14e8751e11c53bb43041228a6556604d0d9641
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: edec23d840723e37ecb469aadc412e5659e95007
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071024"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Basit veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,35 +43,35 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
  Bu kılavuz boyunca, öğreneceksiniz nasıl yapılır:  
   
--   Yeni bir **Windows uygulama**.  
+- Yeni bir **Windows uygulama**.  
   
--   Yeni bir **kullanıcı denetimi** projenize.  
+- Yeni bir **kullanıcı denetimi** projenize.  
   
--   Görsel olarak kullanıcı denetiminin tasarım.  
+- Görsel olarak kullanıcı denetiminin tasarım.  
   
--   Uygulama `DefaultBindingProperty` özniteliği.  
+- Uygulama `DefaultBindingProperty` özniteliği.  
   
--   Bir veri kümesi oluşturmak **veri kaynağı yapılandırması** Sihirbazı.  
+- Bir veri kümesi oluşturmak **veri kaynağı yapılandırması** Sihirbazı.  
   
--   Ayarlama **telefon** sütununda **veri kaynakları** yeni denetimi kullanmak için pencere.  
+- Ayarlama **telefon** sütununda **veri kaynakları** yeni denetimi kullanmak için pencere.  
   
--   Verileri yeni denetimde görüntülemek için bir form oluşturun.  
+- Verileri yeni denetimde görüntülemek için bir form oluşturun.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim.
+- Northwind örnek veritabanına erişim.
   
 ## <a name="create-a-windows-application"></a>Bir Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**.  
   
 #### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için  
   
-1.  Visual Studio'da gelen **dosya** menüsünden Yeni bir **proje**.  
+1. Visual Studio'da gelen **dosya** menüsünden Yeni bir **proje**.  
   
-2.  Projeyi adlandırın **SimpleControlWalkthrough**.  
+2. Projeyi adlandırın **SimpleControlWalkthrough**.  
   
-3.  Seçin **Windows uygulama** tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama** tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SimpleControlWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -80,9 +80,9 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 #### <a name="to-add-a-user-control-to-the-project"></a>Projeye kullanıcı denetimi eklemek için  
   
-1.  Gelen **proje** menüsünde seçin **kullanıcı denetimi Ekle**.  
+1. Gelen **proje** menüsünde seçin **kullanıcı denetimi Ekle**.  
   
-2.  Tür `PhoneNumberBox` ad alanı seçeneğine tıklayıp **Ekle**.  
+2. Tür `PhoneNumberBox` ad alanı seçeneğine tıklayıp **Ekle**.  
   
      **PhoneNumberBox** denetim eklenir **Çözüm Gezgini**ve tasarımcıda açılır.  
   
@@ -91,50 +91,50 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 #### <a name="to-design-the-phonenumberbox-control"></a>Tasarım PhoneNumberBox denetimi  
   
-1.  Sürükleme bir <xref:System.Windows.Forms.MaskedTextBox> gelen **araç kutusu** kullanıcı denetiminin tasarım yüzeyine.  
+1. Sürükleme bir <xref:System.Windows.Forms.MaskedTextBox> gelen **araç kutusu** kullanıcı denetiminin tasarım yüzeyine.  
   
-2.  Akıllı etiket seçin <xref:System.Windows.Forms.MaskedTextBox> yalnızca sürüklenebilen ve seçin **maskesini ayarlama**.  
+2. Akıllı etiket seçin <xref:System.Windows.Forms.MaskedTextBox> yalnızca sürüklenebilen ve seçin **maskesini ayarlama**.  
   
-3.  Seçin **telefon numarası** içinde **giriş maskesi** iletişim kutusu seçeneğine tıklayıp **Tamam** maskeyi ayarlamak için.  
+3. Seçin **telefon numarası** içinde **giriş maskesi** iletişim kutusu seçeneğine tıklayıp **Tamam** maskeyi ayarlamak için.  
   
 ## <a name="add-the-required-data-binding-attribute"></a>Gerekli veri bağlama öznitelik Ekle  
  Basit, destek veri bağlama denetimleri için uygulama <xref:System.ComponentModel.DefaultBindingPropertyAttribute>.  
   
 #### <a name="to-implement-the-defaultbindingproperty-attribute"></a>DefaultBindingProperty öznitelik uygulamak için  
   
-1.  Anahtar `PhoneNumberBox` kod görünümü denetimi. (Üzerinde **görünümü** menüsünde seçin **kod**.)  
+1. Anahtar `PhoneNumberBox` kod görünümü denetimi. (Üzerinde **görünümü** menüsünde seçin **kod**.)  
   
-2.  Değiştirin `PhoneNumberBox` aşağıdaki:  
+2. Değiştirin `PhoneNumberBox` aşağıdaki:  
   
      [!code-csharp[VbRaddataDisplaying#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/PhoneNumberBox.cs#3)]
      [!code-vb[VbRaddataDisplaying#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/PhoneNumberBox.vb#3)]  
   
-3.  Gelen **derleme** menüsünde seçin **Çözümü Derle**.  
+3. Gelen **derleme** menüsünde seçin **Çözümü Derle**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Veritabanından bir veri kaynağı oluşturun  
  Bu adımı kullanan **veri kaynağı yapılandırması** bir veri kaynağı oluşturmak için Sihirbazı'nı temel alan `Customers` Northwind örnek veritabanındaki tablo. Bağlantı oluşturmak için Northwind örnek veritabanına erişiminiz olmalıdır.
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
+1. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
   
-2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.  
+2. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı**ve ardından **sonraki**.  
+3. Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı**ve ardından **sonraki**.  
   
-4.  Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdakilerden birini yapın:  
+4. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdakilerden birini yapın:  
   
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
-    -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
+    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
+5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
   
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.  
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.  
   
-8.  Seçin `Customers` tablosunu ve ardından **son**.  
+8. Seçin `Customers` tablosunu ve ardından **son**.  
   
      **NorthwindDataSet** projenize eklenir ve `Customers` tablo görünür **veri kaynakları** penceresi.  
   
@@ -143,24 +143,24 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 #### <a name="to-set-the-phone-column-to-bind-to-the-phonenumberbox-control"></a>PhoneNumberBox denetimine bağlamak için telefon sütununu ayarlamak için  
   
-1.  Açık **Form1** Tasarımcısı'nda.  
+1. Açık **Form1** Tasarımcısı'nda.  
   
-2.  Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.  
+2. Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.  
   
-3.  Aşağı açılan oka tıklayın **müşteriler** düğümünü seçip **ayrıntıları** denetim listesinden.  
+3. Aşağı açılan oka tıklayın **müşteriler** düğümünü seçip **ayrıntıları** denetim listesinden.  
   
-4.  Aşağı açılan oka tıklayın **telefon** sütunu seçip **Özelleştir**.  
+4. Aşağı açılan oka tıklayın **telefon** sütunu seçip **Özelleştir**.  
   
-5.  Seçin **PhoneNumberBox** listesinden **ilişkili denetimler** içinde **veri kullanıcı Arabirimi özelleştirme seçenekleri** iletişim kutusu.  
+5. Seçin **PhoneNumberBox** listesinden **ilişkili denetimler** içinde **veri kullanıcı Arabirimi özelleştirme seçenekleri** iletişim kutusu.  
   
-6.  Aşağı açılan oka tıklayın **telefon** sütunu seçip **PhoneNumberBox**.  
+6. Aşağı açılan oka tıklayın **telefon** sütunu seçip **PhoneNumberBox**.  
   
 ## <a name="addcontrols-to-the-form"></a>Forma Addcontrols  
  Öğe sürükleyerek veriye bağlı denetimler oluşturabilirsiniz **veri kaynakları** forma penceresi.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Form üzerinde veri bağlama denetimleri oluşturmak için  
   
--   Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** form penceresinden doğrulayın `PhoneNumberBox` denetim verileri görüntülemek için kullanılan `Phone` sütun.  
+- Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** form penceresinden doğrulayın `PhoneNumberBox` denetim verileri görüntülemek için kullanılan `Phone` sütun.  
   
      Araç şeridi yanı sıra form üzerindeki verilere bağlı denetimler, tanımlayıcı etiketlerle görünür (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
@@ -168,14 +168,14 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Uygulamayı çalıştırmak için F5'e basın.  
+- Uygulamayı çalıştırmak için F5'e basın.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, veri bağlamayı destekleyen bir denetim oluşturma sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Tipik bir sonraki adımlardan birkaçı şunlardır:  
   
--   Diğer uygulamalarda yeniden kullanabilir, böylece bir denetim kitaplığı içinde özel kontrollerinizi yapılıyor.  
+- Diğer uygulamalarda yeniden kullanabilir, böylece bir denetim kitaplığı içinde özel kontrollerinizi yapılıyor.  
   
--   Daha karmaşık veri bağlama senaryoları desteklemek denetimler oluşturma. Daha fazla bilgi için [karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) ve [arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
+- Daha karmaşık veri bağlama senaryoları desteklemek denetimler oluşturma. Daha fazla bilgi için [karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) ve [arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   

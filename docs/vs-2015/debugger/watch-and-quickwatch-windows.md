@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063536"
 ---
 # <a name="watch-and-quickwatch-windows"></a>İzleme ve QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  İnceleyebileceğiniz QuickWatch penceresinde gösterildiği gibi bir değişkeni:  
   
-1.  Bir kesme noktası ayarlamak `a = a + b;` satır.  
+1. Bir kesme noktası ayarlamak `a = a + b;` satır.  
   
-2.  Hata ayıklama başlatılamıyor. Yürütme kesme noktasında durur.  
+2. Hata ayıklama başlatılamıyor. Yürütme kesme noktasında durur.  
   
-3.  Açık **QuickWatch** penceresi (sağ tıklayın ardından **hata ayıklama / QuickWatch**, veya **SHIFT + F9**). Penceresi açın ve eklemek için bir değişken **ifade** penceresinde ardından **yeniden değerlendir**. Görmelisiniz bir değişkende **değerleri** penceresiyle değeri 2'dir.  
+3. Açık **QuickWatch** penceresi (sağ tıklayın ardından **hata ayıklama / QuickWatch**, veya **SHIFT + F9**). Penceresi açın ve eklemek için bir değişken **ifade** penceresinde ardından **yeniden değerlendir**. Görmelisiniz bir değişkende **değerleri** penceresiyle değeri 2'dir.  
   
-4.  **QuickWatch** penceresi olan bir kalıcı iletişim kutusu penceresinin açık olduğu sürece hata ayıklama devam edemiyor bu nedenle. Değişkene ekleyebilirsiniz **Watch** tıklayarak penceresi **Gözcü Ekle**.  
+4. **QuickWatch** penceresi olan bir kalıcı iletişim kutusu penceresinin açık olduğu sürece hata ayıklama devam edemiyor bu nedenle. Değişkene ekleyebilirsiniz **Watch** tıklayarak penceresi **Gözcü Ekle**.  
   
-5.  Kapat **QuickWatch** penceresi. Değeri gözlemleyin sırasında hata ayıklama devam edebilmeniz için artık **Watch** penceresi  
+5. Kapat **QuickWatch** penceresi. Değeri gözlemleyin sırasında hata ayıklama devam edebilmeniz için artık **Watch** penceresi  
   
 ## <a name="observing-variables-with-the-watch-window"></a>İzleme penceresi değişkenleri gözleme  
  Birden çok değişkenlerle inceleyebileceğiniz **Watch** penceresi. Örneğin, aşağıdaki kodu varsa:  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Güncel değil Gözcü değerlerini yenileme  
+## <a name="bkmk_refreshWatch"></a> Güncel değil Gözcü değerlerini yenileme  
  Bazı durumlarda (iki ok olan bir daire veya iki dalgalı çizgiler daire) bir yenileme simgesi görebilirsiniz ne zaman bir ifade değerlendirme içinde **Watch** penceresi.  Örneğin, özellik değerlendirmesini devre dışı varsa (**Araçlar / Seçenekler / hata ayıklama / özellik değerlendirmesini ve diğer örtük işlev çağrılarını etkinleştir**), ve şu kodu görürsünüz:  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   İş parçacıkları benzer iki dalgalı çizgiler daire bir simgeyi görürseniz, olası bir iş parçacıkları arası bağımlılık nedeniyle ifade Hesaplandı değil. Diğer bir deyişle, kodu değerlendirme, geçici olarak çalışması için uygulamanızı diğer iş parçacıkları gerektirir. Kesme modunda olduğunda, uygulamanızdaki tüm iş parçacıkları genellikle durdurulur. Diğer iş parçacıklarını geçici olarak çalışmasına izin vererek olabilir beklenmeyen etkiler, programınızın durumunu ve kesme noktaları ve bu iş parçacıkları üzerinde oluşturulan özel durumlar gibi olayları yok saymak hata ayıklayıcı neden olur.  
   
-##  <a name="bkmk_sideEffects"></a> Yan etkiler ve ifadeler  
+## <a name="bkmk_sideEffects"></a> Yan etkiler ve ifadeler  
  Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, aşağıdaki ifade değerlendirildiğinde değerini değiştirir `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  Bir başvuru ekleyebilirsiniz `Person` nesnesine **Watch** penceresi aşağıdaki gibi:  
   
-1.  Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
+1. Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
   
-2.  Hata ayıklamayı başlatmak ve yürütme bir kesme noktasına durdurulduğunda, değişkeni bulun **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.  
+2. Hata ayıklamayı başlatmak ve yürütme bir kesme noktasına durdurulduğunda, değişkeni bulun **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.  
   
-3.  Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.  
+3. Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.  
   
-4.  Nesne Kimliği İzle penceresine ekleyin.  
+4. Nesne Kimliği İzle penceresine ekleyin.  
   
-5.  Nesnenin davranışını gözlemlemek istediğiniz bir kesme noktası ayarlayın.  Yukarıdaki kod, olurdu içinde `DoSomething()` yöntemi.  
+5. Nesnenin davranışını gözlemlemek istediğiniz bir kesme noktası ayarlayın.  Yukarıdaki kod, olurdu içinde `DoSomething()` yöntemi.  
   
-6.  Hata ayıklamaya devam et ve yürütme durduğunda `DoSomething()` yöntemi **Watch** pencere görüntüler `Person` nesne.  
+6. Hata ayıklamaya devam et ve yürütme durduğunda `DoSomething()` yöntemi **Watch** pencere görüntüler `Person` nesne.  
   
 > [!NOTE]
 >  Nesnenin özellikleri gibi görmek istiyorsanız `Person.Name` yukarıdaki örnekte, özellik değerlendirmesini etkinleştirmiş olmanız gerekir.  

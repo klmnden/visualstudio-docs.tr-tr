@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063238"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM Gezgini'ni kullanarak düzen hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 #### <a name="to-fix-the-layout-issue"></a>Düzen sorunu düzeltmek için  
   
-1.  Visual Studio'da Hub/Pivot proje şablonu kullanan yeni bir Store uygulaması oluşturun.  
+1. Visual Studio'da Hub/Pivot proje şablonu kullanan yeni bir Store uygulaması oluşturun.  
   
-2.  Paylaşılan pages\hub klasöründe hub.css açın.  
+2. Paylaşılan pages\hub klasöründe hub.css açın.  
   
-3.  Aşağıdaki CSS kodunu değiştirin:  
+3. Aşağıdaki CSS kodunu değiştirin:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     }  
     ```  
   
-4.  AppName.WindowsPhone veya appName.Windows projesi ya da Çözüm Gezgini'nde seçin ve ardından **başlangıç projesi olarak ayarla** proje için kısayol menüsünden.  
+4. AppName.WindowsPhone veya appName.Windows projesi ya da Çözüm Gezgini'nde seçin ve ardından **başlangıç projesi olarak ayarla** proje için kısayol menüsünden.  
   
-5.  Başlangıç projeniz bağlı olarak seçin **öykünücüsü 8.1 WVGA 4 inç 512 MB** veya **simülatör** hata ayıklama araç çubuğundaki aşağı açılan listesinde (**yerel makine** varsayılandır değer).  
+5. Başlangıç projeniz bağlı olarak seçin **öykünücüsü 8.1 WVGA 4 inç 512 MB** veya **simülatör** hata ayıklama araç çubuğundaki aşağı açılan listesinde (**yerel makine** varsayılandır değer).  
   
      ![Hata ayıklama hedef seçme](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
+6. Uygulamanızı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
   
-7.  4. bölüm, kaydırma veya flicking açın.  
+7. 4. bölüm, kaydırma veya flicking açın.  
   
     > [!TIP]
     >  Seçimleri ve CSS stillerinde yaptığınız değişikliklerin sonuçlarını hemen görmek için Visual Studio penceresinde yanındaki Phone öykünücü veya benzetici sağ konumu.  
   
      4. Bölüm yüklediğinde, daha düşük görüntüleri doğru görünmüyor görebilirsiniz. Her öğe görüntü Kes (sol yarısına eksik olan) yarıya görünür.  
   
-8.  Seçin ve Visual Studio'ya **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner.  
+8. Seçin ve Visual Studio'ya **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner.  
   
     > [!TIP]
     >  HTML öğelerini doğrudan DOM Gezgini'nde seçmek için ok tuşlarını ya da diğer yöntemleri kullanabilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
@@ -105,11 +105,11 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
      Bu görünüm öğeyle ilgili bazı yararlı bilgiler sağlar:  
   
-    -   Renkleri vurgulama Simülatörde öğelerin üzerine gelindiğinde görüntülenen kutusu için karşılık gelir. Mavi rengi temsil \<img > öğesi boyutları. Tan rengi kenar boşluğu değerleri temsil eder.  
+    - Renkleri vurgulama Simülatörde öğelerin üzerine gelindiğinde görüntülenen kutusu için karşılık gelir. Mavi rengi temsil \<img > öğesi boyutları. Tan rengi kenar boşluğu değerleri temsil eder.  
   
-    -   (Siyah görüntüleri sol tarafında) belirti eşleştiği için hangi ipuçları sorunun nedenini sol kenar boşluğu (sol kenar boşluğu) ayarlanır.  
+    - (Siyah görüntüleri sol tarafında) belirti eşleştiği için hangi ipuçları sorunun nedenini sol kenar boşluğu (sol kenar boşluğu) ayarlanır.  
   
-    -   0 piksel (örneğin, kenarlık ve dolguyla) değerlerini göster kutuları karşılık gelen CSS özelliklerini büyük olasılıkla ayarlandığını önerir.  
+    - 0 piksel (örneğin, kenarlık ve dolguyla) değerlerini göster kutuları karşılık gelen CSS özelliklerini büyük olasılıkla ayarlandığını önerir.  
   
 11. Sol kenar boşluğu kural nasıl uygulandığını görmek için **hesaplanan** sekmesinde ve sol kenar boşluğu kuralı altına bakın. Bu kural 5em değeriyle ayarlanmış, ancak hesaplanan değer 66.66px ya da 146.66px, hedef cihazınıza bağlı olduğunu görebilirsiniz.  
   

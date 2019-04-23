@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e26cbc2a4c49f09f41e16287cef75beecdf4fdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065837"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,29 +35,29 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
   
  **Bu konudaki**  
   
--   [Sınıf diyagramını yakınlaştırma ve uzaklaştırma](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
+- [Sınıf diyagramını yakınlaştırma ve uzaklaştırma](../ide/how-to-customize-class-diagrams-class-designer.md#ZoomInOut)  
   
--   [Gruplandırma ve tür üyelerinin sıralamasını özelleştirme](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
+- [Gruplandırma ve tür üyelerinin sıralamasını özelleştirme](../ide/how-to-customize-class-diagrams-class-designer.md#CustomizeGroupingSorting)  
   
--   [Türe göre bölmeleri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
+- [Türe göre bölmeleri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideCompartments)  
   
--   [Türe göre tek tek üyeleri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
+- [Türe göre tek tek üyeleri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideMembers)  
   
--   [Türe göre gizli bölmeleri ve üyeleri gösterme](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
+- [Türe göre gizli bölmeleri ve üyeleri gösterme](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayHiddenCompartmentsAndMemberrs)  
   
--   [İlişkileri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
+- [İlişkileri gizleme](../ide/how-to-customize-class-diagrams-class-designer.md#HideAssociationAndInheritance)  
   
--   [Gizli ilişkileri gösterme](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
+- [Gizli ilişkileri gösterme](../ide/how-to-customize-class-diagrams-class-designer.md#DisplayAssociationAndInheritance)  
   
--   [Bir sınıf diyagramından şekil kaldırma](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
+- [Bir sınıf diyagramından şekil kaldırma](../ide/how-to-customize-class-diagrams-class-designer.md#RemoveCodeAndShape)  
   
--   [Bir tür şeklini ve temelini oluşturan kodu silme](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
+- [Bir tür şeklini ve temelini oluşturan kodu silme](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a> Sınıf diyagramını yakınlaştırma ve uzaklaştırma  
+## <a name="ZoomInOut"></a> Sınıf diyagramını yakınlaştırma ve uzaklaştırma  
   
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Sınıf Tasarımcısı araç çubuğunda **Yakınlaştır** veya **Uzaklaştır** Tasarımcı yüzeyinin yakınlaştırma seviyesini değiştirmek için.  
+2. Sınıf Tasarımcısı araç çubuğunda **Yakınlaştır** veya **Uzaklaştır** Tasarımcı yüzeyinin yakınlaştırma seviyesini değiştirmek için.  
   
      veya  
   
@@ -66,63 +66,63 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
     > [!NOTE]
     >  Yakınlaştırma seviyesinin değiştirilmesi sınıf diyagramı çıktınızın ölçeğini etkilemez.  
   
-##  <a name="CustomizeGroupingSorting"></a> Gruplandırma ve tür üyelerinin sıralamasını özelleştirme  
+## <a name="CustomizeGroupingSorting"></a> Gruplandırma ve tür üyelerinin sıralamasını özelleştirme  
   
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Tasarım yüzeyinde boş bir alana sağ tıklayın ve fareyle **Grup üyeleri**.  
+2. Tasarım yüzeyinde boş bir alana sağ tıklayın ve fareyle **Grup üyeleri**.  
   
-3.  Kullanılabilir seçeneklerden birini belirtin:  
+3. Kullanılabilir seçeneklerden birini belirtin:  
   
-    1.  **Göre grupla** tek tek tür üyelerini gruplandırılmış bir özellikleri, yöntemleri, olaylar ve alanlar listesi ayırır. Tek tek gruplar varlıklar tanımına göre değişir: Örneğin, bir sınıf için henüz hiç tanımlı olay yoksa, bu sınıf olaylar grubunu görüntülemez.  
+    1. **Göre grupla** tek tek tür üyelerini gruplandırılmış bir özellikleri, yöntemleri, olaylar ve alanlar listesi ayırır. Tek tek gruplar varlıklar tanımına göre değişir: Örneğin, bir sınıf için henüz hiç tanımlı olay yoksa, bu sınıf olaylar grubunu görüntülemez.  
   
-    2.  **Erişimine göre grupla** erişim değiştiricilerine göre üyenin üzerinde tek tek tür üyelerini gruplandırılmış bir liste halinde ayırır. Örneğin, Genel ve Özel.  
+    2. **Erişimine göre grupla** erişim değiştiricilerine göre üyenin üzerinde tek tek tür üyelerini gruplandırılmış bir liste halinde ayırır. Örneğin, Genel ve Özel.  
   
-    3.  **Alfabetik olarak Sırala** tek bir alfabetik liste olarak bir varlığı oluşturan öğeleri görüntüler. Liste artan düzende sıralanır.  
+    3. **Alfabetik olarak Sırala** tek bir alfabetik liste olarak bir varlığı oluşturan öğeleri görüntüler. Liste artan düzende sıralanır.  
   
-##  <a name="HideCompartments"></a> Türe göre bölmeleri gizleme  
+## <a name="HideCompartments"></a> Türe göre bölmeleri gizleme  
   
-1.  Sınıf tasarımcısında bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf tasarımcısında bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Özelleştirmek istediğiniz türde üye kategorisine sağ tıklayın (örneğin, **yöntemleri** düğümünde bir sınıf.  
+2. Özelleştirmek istediğiniz türde üye kategorisine sağ tıklayın (örneğin, **yöntemleri** düğümünde bir sınıf.  
   
-3.  Tıklayın **Gizle bölme**.  
+3. Tıklayın **Gizle bölme**.  
   
      Seçili bölme tür kapsayıcısından kaybolur.  
   
-##  <a name="HideMembers"></a> Türe göre tek tek üyeleri gizleme  
+## <a name="HideMembers"></a> Türe göre tek tek üyeleri gizleme  
   
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Gizlemek istediğiniz türde üyeye sağ tıklayın.  
+2. Gizlemek istediğiniz türde üyeye sağ tıklayın.  
   
-3.  Tıklayın **Gizle**.  
+3. Tıklayın **Gizle**.  
   
      Seçili üye tür kapsayıcısından kaybolur.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Türe göre gizli bölmeleri ve üyeleri gösterme  
+## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Türe göre gizli bölmeleri ve üyeleri gösterme  
   
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
-2.  Gizli bölmeyi içeren türün adına sağ tıklayın.  
+2. Gizli bölmeyi içeren türün adına sağ tıklayın.  
   
-3.  Tıklayın **tüm üyeleri Göster**.  
-  
-     Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.  
-  
-##  <a name="HideAssociationAndInheritance"></a> İlişkileri gizleme  
-  
-1.  Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
-  
-2.  Gizlemek istediğiniz ilişkilendirme veya devralma çizgisine sağ tıklayın.  
-  
-3.  Tıklayın **Gizle** ilişkilendirme çizgileri seçeneğine tıklayıp için **devralım çizgisi Gizle** devralım çizgileri içinse.  
-  
-4.  Tıklayın **tüm üyeleri Göster**.  
+3. Tıklayın **tüm üyeleri Göster**.  
   
      Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.  
   
-##  <a name="DisplayAssociationAndInheritance"></a> Gizli ilişkileri gösterme  
+## <a name="HideAssociationAndInheritance"></a> İlişkileri gizleme  
+  
+1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
+  
+2. Gizlemek istediğiniz ilişkilendirme veya devralma çizgisine sağ tıklayın.  
+  
+3. Tıklayın **Gizle** ilişkilendirme çizgileri seçeneğine tıklayıp için **devralım çizgisi Gizle** devralım çizgileri içinse.  
+  
+4. Tıklayın **tüm üyeleri Göster**.  
+  
+     Tüm gizli bölmeler ve üyeler tür kapsayıcısında görünür.  
+  
+## <a name="DisplayAssociationAndInheritance"></a> Gizli ilişkileri gösterme  
   
 1. Sınıf Tasarımcısı'nda bir sınıf diyagramı dosyasını açın ve seçin.  
   
@@ -130,20 +130,20 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
   
    Tıklayın **tüm üyeleri Göster** ilişkilendirme çizgileri seçeneğine tıklayıp için **temel sınıfı Göster** veya **türetilmiş sınıfları Göster** devralım çizgileri içinse.  
   
-##  <a name="RemoveCodeAndShape"></a> Bir sınıf diyagramından şekil kaldırma  
+## <a name="RemoveCodeAndShape"></a> Bir sınıf diyagramından şekil kaldırma  
  Türün temelini oluşturan koda etkisi olmaksızın, bir tür şeklini sınıf diyagramından kaldırabilirsiniz. Tür şekillerinin bir sınıf diyagramından kaldırılması yalnızca o diyagramı etkiler: Türü tanımlayan temel kod ve türü görüntüleyen diğer diyagramlar bundan etkilenmez.  
   
-1.  Sınıf diyagramında, diyagramdan kaldırmak istediğiniz tür şeklini seçin.  
+1. Sınıf diyagramında, diyagramdan kaldırmak istediğiniz tür şeklini seçin.  
   
-2.  Üzerinde **Düzenle** menüsünde seçin **diyagramdan Kaldır**.  
+2. Üzerinde **Düzenle** menüsünde seçin **diyagramdan Kaldır**.  
   
      Tür şekli ve varsa bu şekle bağlı ilişkilendirme ya da devralma çizgileri bundan böyle diyagramda görünmez.  
   
-##  <a name="DeleteTypeShapeAndCode"></a> Bir tür şeklini ve temelini oluşturan kodu silme  
+## <a name="DeleteTypeShapeAndCode"></a> Bir tür şeklini ve temelini oluşturan kodu silme  
   
-1.  Tasarım yüzeyinde şekle sağ tıklayın.  
+1. Tasarım yüzeyinde şekle sağ tıklayın.  
   
-2.  Seçin **kodu Sil** bağlam menüsünden.  
+2. Seçin **kodu Sil** bağlam menüsünden.  
   
      Şekil diyagramdan kaldırılır ve temelini oluşturan kod projeden silinir.  
   

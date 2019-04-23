@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6740755567c24ceb9b70d0e63e159e5d74b7955b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069906"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Nasıl yapılır: Visual Studio deneme sürümünden yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "54785970"
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Visual Studio Professional veya Enterprise deneme sürümünden yükseltmek için
 
-1.  Visual Studio'yu başlatın **yönetici olarak çalıştır** modu.
+1. Visual Studio'yu başlatın **yönetici olarak çalıştır** modu.
 
-2.  Menü çubuğunda, **yardımcı**, **ürünü kayıt ettir**.
+2. Menü çubuğunda, **yardımcı**, **ürünü kayıt ettir**.
 
-3.  Seçin **ürün Lisansımı Değiştir** bağlantı.
+3. Seçin **ürün Lisansımı Değiştir** bağlantı.
 
-4.  Geçerli bir ürün anahtarı girin ve ardından **Uygula** düğmesi.
+4. Geçerli bir ürün anahtarı girin ve ardından **Uygula** düğmesi.
 
     > [!NOTE]
     >  Visual Studio'nun herhangi bir sürümünü kayıt ettirmek ve kilidini kaldırmak için İnternet erişimi gerekir. Bununla birlikte, Visual Studio kayıt ettirildikten sonra İnternet bağlantısı isteğe bağlıdır.

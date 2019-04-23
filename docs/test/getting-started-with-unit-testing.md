@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58856466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072274"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -24,10 +24,19 @@ Visual Studio, tanımlamak ve kod durumunu korumak, kod kapsamından emin olmak 
 
 Bu bölümde, yüksek düzeyde birim testi projesi oluşturma işlemini açıklar.
 
-> [!TIP]
-> "HelloWorldCore", test altındaki projeye bir örnek projesidir ve hiçbir kodunu gösterilecek içindir. Test için bkz: bir "Merhaba Dünya" projesi oluşturmak istiyorsanız [ilk kez oluşturma C# konsol uygulaması](../ide/quickstart-csharp-console.md). İzlenecek tam yol makale için bkz: [oluşturma ve çalıştırma birim testleri için yönetilen kod](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Visual Studio'da test etmek istediğiniz projeyi açın.
+
+   Gösteren bir örnek birim testi amacıyla, bu makalede, basit bir "Merhaba Dünya" projesi sınar. Bu tür bir proje için örnek kod aşağıdaki gibidir:
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. İçinde **Çözüm Gezgini**, çözüm düğümü seçin. Ardından, üstteki menü çubuğundan **dosya** > **Ekle** > **yeni proje**.
 
@@ -62,6 +71,9 @@ Bu bölümde, yüksek düzeyde birim testi projesi oluşturma işlemini açıkla
 1. Kod için birim test yöntemini ekleyin.
 
    ![Visual Studio'da birim test yöntemine kod ekleyin](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Birim testleri oluşturma daha ayrıntılı kılavuz için bkz. [oluşturma ve çalıştırma birim testleri için yönetilen kod](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Birim testleri çalıştırma
 

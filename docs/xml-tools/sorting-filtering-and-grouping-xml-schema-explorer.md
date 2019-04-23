@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065032"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sıralama, filtreleme ve gruplandırma (XML Şeması Gezgini)
 
@@ -23,41 +23,41 @@ Bu konu başlığı üzerinden seçeneklerle **sıralama, filtreleme ve grupland
 
  Aşağıdaki filtre seçenekleri kullanılabilir. Varsayılan olarak, **ad alanlarını göster** ve **şema dosyalarını Göster** seçenekleri seçilidir.
 
--   **Ad alanlarını göster**.
+- **Ad alanlarını göster**.
 
--   **Şema dosyalarını Göster**.
+- **Şema dosyalarını Göster**.
 
--   **Oluşturucuları Göster (dizisi/seçim/tümü)**.
+- **Oluşturucuları Göster (dizisi/seçim/tümü)**.
 
 ## <a name="sorting-options"></a>Sıralama seçenekleri
 
  Aşağıdaki sıralama seçenekleri kullanılabilir. Varsayılan değer **türe göre sırala**. **Sıralama ölçütü** seçenekleri dosyalar ve ad alanları için geçerli değildir.
 
--   **Türe Göre Sırala**.
+- **Türe Göre Sırala**.
 
--   **Ada göre sırala**.
+- **Ada göre sırala**.
 
--   **Belge sırada**.
+- **Belge sırada**.
 
 ### <a name="sort-by-type"></a>Türe göre sırala
 
  Zaman **türe göre sırala** seçeneği seçildiğinde, genel düğümler, aşağıdaki düzende sıralanır. Düğüm, her grup alfabetik olarak sıralanır.
 
-1.  `import` düğümleri.
+1. `import` düğümleri.
 
-2.  `include` düğümleri.
+2. `include` düğümleri.
 
-3.  `redefine` düğümleri.
+3. `redefine` düğümleri.
 
-4.  `attribute` düğümleri.
+4. `attribute` düğümleri.
 
-5.  `attributeGroup` düğümleri.
+5. `attributeGroup` düğümleri.
 
-6.  `complexType` düğümleri.
+6. `complexType` düğümleri.
 
-7.  `simpleType` düğümleri.
+7. `simpleType` düğümleri.
 
-8.  `element` düğümleri.
+8. `element` düğümleri.
 
 9. `group` düğümleri.
 
@@ -65,13 +65,13 @@ Bu konu başlığı üzerinden seçeneklerle **sıralama, filtreleme ve grupland
 
  Zaman **ada göre sırala** seçeneği seçildiğinde, genel düğümler, aşağıdaki düzende sıralanır:
 
-1.  `import` düğümleri (alfabetik sırada ad alanları).
+1. `import` düğümleri (alfabetik sırada ad alanları).
 
-2.  `include` düğümleri (alfabetik sırada `schemaLocation` öznitelikleri).
+2. `include` düğümleri (alfabetik sırada `schemaLocation` öznitelikleri).
 
-3.  `redefine` düğümleri (alfabetik sırada `schemaLocation` öznitelikleri).
+3. `redefine` düğümleri (alfabetik sırada `schemaLocation` öznitelikleri).
 
-4.  Genel diğer düğümlere alfabetik olarak sıralayın.
+4. Genel diğer düğümlere alfabetik olarak sıralayın.
 
 ### <a name="document-order"></a>Belge sırada
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066942"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Profil Oluşturma Araçları Komut Satırı Araçları Yolunu Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Yolu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları komut satır
 ## <a name="64-bit-computers"></a>64 bit bilgisayarlar  
  64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin.  
   
--   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
+- 32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
   
      *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 11.0\Team Araçlar\Performans araçları  
   
--   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
+- 64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:  
   
      *Sürücü*\Program dosyaları (x86) \Microsoft Visual Studio 11.0\Team Araçlar\Performans Tools\x64

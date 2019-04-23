@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080585"
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Spy ++ iletiler görünümü
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Bir pencere, işlem veya iş parçacığı için bir iletiler görünümünü açmak için  
   
-1.  Odağı Taşı bir [Windows görünümü](../debugger/windows-view.md), [işlemler görünümü](../debugger/processes-view.md), veya [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi.  
+1. Odağı Taşı bir [Windows görünümü](../debugger/windows-view.md), [işlemler görünümü](../debugger/processes-view.md), veya [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi.  
   
-2.  Öğe için iletileri incelemek istediğiniz düğümü bulun ve seçin.  
+2. Öğe için iletileri incelemek istediğiniz düğümü bulun ve seçin.  
   
-3.  Gelen **Spy** menüsünde seçin **günlük iletilerini**.  
+3. Gelen **Spy** menüsünde seçin **günlük iletilerini**.  
   
      [İleti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) açılır.  
   
-4.  Görüntülemek istediğiniz iletisi için seçenekleri seçin.  
+4. Görüntülemek istediğiniz iletisi için seçenekleri seçin.  
   
-5.  Tuşuna **Tamam** günlük iletilerini başlatmak için.  
+5. Tuşuna **Tamam** günlük iletilerini başlatmak için.  
   
      Bir ileti Görünümü penceresini açar ve bir **iletileri** Spy ++ araç çubuğuna menü eklenir. Seçilen seçeneklere bağlı olarak, iletileri etkin iletileri görünüm penceresine akış başlayın.  
   
-6.  Yeterli sayıda ileti olduğunda seçin **Günlüğü Durdur** gelen **iletileri** menüsü.  
+6. Yeterli sayıda ileti olduğunda seçin **Günlüğü Durdur** gelen **iletileri** menüsü.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [İletiler görünümünü denetleme](../debugger/how-to-control-messages-view.md)  

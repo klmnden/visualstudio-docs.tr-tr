@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064745"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Oyunlarda veya Uygulamalarda 3B Varlıklar Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Bu makalede nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Projenize yapı özelleştirmeleri eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları**, **yapı özelleştirmeleri**. **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.  
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları**, **yapı özelleştirmeleri**. **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.  
   
-2.  Altında **kullanılabilir yapı özelleştirme dosyaları**, bu tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:  
+2. Altında **kullanılabilir yapı özelleştirme dosyaları**, bu tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:  
   
     |Varlık türü|Özelleştirme adı oluştur|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ Bu makalede nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../includes/
     |3B modeller|**MeshContentTask (.targets, .props)**|  
     |Gölgelendiriciler|**ShaderGraphContentTask (.targets, .props)**|  
   
-3.  Seçin **Tamam** düğmesi.  
+3. Seçin **Tamam** düğmesi.  
   
 ## <a name="including-assets-in-your-build"></a>Yapınızda varlıklar dahil olmak üzere  
  Projeniz hakkında kullanmak istediğiniz 3B varlıkların farklı türlerini bildiğine göre sonraki adım, hangi dosyaların 3B varlıklar olduğunu ve hangi türde varlıkları bunlar söylemek olacaktır.  
@@ -76,13 +76,13 @@ Bu makalede nasıl kullanabileceğinizi açıklar [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-configure-content-pipeline-properties"></a>İçerik ardışık düzeni özelliklerini yapılandırmak için  
   
-1.  İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.  
+1. İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.  
   
-2.  Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.  
+2. Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.  
   
-3.  Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin; örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için — ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.  
+3. Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin; örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için — ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.  
   
-4.  Seçin **Tamam** düğmesi.  
+4. Seçin **Tamam** düğmesi.  
   
 ### <a name="image-content-pipeline-configuration"></a>Görüntü içeriği ardışık düzeni yapılandırması  
  Bir doku varlığı oluşturmak için görüntü içeriği ardışık düzen aracını kullandığınızda, dokuyu çeşitli şekillerde sıkıştırma, MIP düzeylerinin oluşturma zamanında oluşturulup ve çıktı dosyası adını değiştirmek olup olmadığını gösterir.  

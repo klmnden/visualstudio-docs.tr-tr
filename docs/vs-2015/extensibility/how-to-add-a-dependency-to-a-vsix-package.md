@@ -13,12 +13,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97118134106614e1e04cd2bc328ad31480618116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cbd9426b7a9190872a2b04246d7f051b480a188d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066890"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Nasıl yapılır: VSIX Paketine Bağımlılık Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Zaten hedef bilgisayarda mevcut olmayan herhangi bir bağımlılığın yükleye
   
 #### <a name="to-add-a-dependency"></a>Bir bağımlılık eklemek için  
   
-1.  Source.extension.vsixmanifest dosyasını açın **tasarım** görünümü. Git **bağımlılıkları** sekmesine **yeni**.  
+1. Source.extension.vsixmanifest dosyasını açın **tasarım** görünümü. Git **bağımlılıkları** sekmesine **yeni**.  
   
-2.  Yüklü uzantı eklemek için: içinde **yeni bağımlılık Ekle** iletişim kutusunda **uzantısı yüklü** ve ardından **adı**, listedeki bir uzantı seçin.  
+2. Yüklü uzantı eklemek için: içinde **yeni bağımlılık Ekle** iletişim kutusunda **uzantısı yüklü** ve ardından **adı**, listedeki bir uzantı seçin.  
   
-3.  Yüklü başka bir VSIX eklemek için:: içinde **yeni bağımlılık Ekle** iletişim kutusunda **dosya sisteminde dosya** ve ardından **Gözat** düğmesine VSIX'i seçin.  
+3. Yüklü başka bir VSIX eklemek için:: içinde **yeni bağımlılık Ekle** iletişim kutusunda **dosya sisteminde dosya** ve ardından **Gözat** düğmesine VSIX'i seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   

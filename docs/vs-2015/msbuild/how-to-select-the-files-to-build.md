@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 276d3306d908fa8af4e58f38c965b73c1fff9284
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064849"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: Derlenecek Dosyaları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 #### <a name="to-declare-items-individually"></a>Bildirmek için ayrı ayrı öğeler  
   
--   Kullanım `Include` öznitelikleri benzer aşağıdaki:  
+- Kullanım `Include` öznitelikleri benzer aşağıdaki:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -45,7 +45,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için  
   
--   Kullanım `Include` öznitelikleri benzer aşağıdaki:  
+- Kullanım `Include` öznitelikleri benzer aşağıdaki:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -66,19 +66,19 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Görüntüleri dizin ve alt dizinleri içinde tüm .jpg dosyaları eklemek için  
   
--   Aşağıdaki `Include` özniteliği:  
+- Aşağıdaki `Include` özniteliği:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>"İmg" ile başlayan tüm .jpg dosyaları eklemek için  
   
--   Aşağıdaki `Include` özniteliği:  
+- Aşağıdaki `Include` özniteliği:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>"Jpg"formatından içinde sonlanan adlara sahip dizinlerinde tüm dosyaları eklemek için  
   
--   Aşağıdakilerden birini kullanın `Include` öznitelikleri:  
+- Aşağıdakilerden birini kullanın `Include` öznitelikleri:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -91,7 +91,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Tüm Visual C# veya Visual Basic dosyalarını girdi olarak kullanmak için  
   
--   Kullanım `Include` öznitelikleri aşağıdakine benzer:  
+- Kullanım `Include` öznitelikleri aşağıdakine benzer:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

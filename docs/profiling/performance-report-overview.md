@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c57b16ff9b866ffe36f89ed14b5353fd611a45b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073223"
 ---
 # <a name="performance-report-overview"></a>Performans raporuna genel bakış
 Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **performans raporu** penceresi Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamının (IDE). Profil oluşturma verilerinin .vsp .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntüleme ve uygulama performans sorunlarını analiz etmenize olanak sağlar.
@@ -79,19 +79,19 @@ Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **p
 ## <a name="customizable-filter-control"></a>Özelleştirilebilir filtre denetimi
  Özelleştirilebilir filtre denetimi şu seçeneklere sahiptir:
 
--   **Filtre alma** -özel önceden kaydedilmiş bir sorgu alır.
+- **Filtre alma** -özel önceden kaydedilmiş bir sorgu alır.
 
--   **Filtre dışarı** -özel sorgu belirtilen konuma kaydeder.
+- **Filtre dışarı** -özel sorgu belirtilen konuma kaydeder.
 
--   **Sorguyu** -sorgu özel sorgu denetimde görüntülenen gibi çalışır.
+- **Sorguyu** -sorgu özel sorgu denetimde görüntülenen gibi çalışır.
 
--   **Sorguyu Durdur** -çalışmakta olan bir sorgu yürütülmesini durdurur. Sorgu çalışıyorsa bu düğmesi kullanılamaz.
+- **Sorguyu Durdur** -çalışmakta olan bir sorgu yürütülmesini durdurur. Sorgu çalışıyorsa bu düğmesi kullanılamaz.
 
--   **Sorgu Göster** -gösterir/Özel sorgu denetimi gizler.
+- **Sorgu Göster** -gösterir/Özel sorgu denetimi gizler.
 
--   **Analyzed Kaydet** -raporu geçerli Analizine birlikte bir .vsps dosyası olarak kaydeder.
+- **Analyzed Kaydet** -raporu geçerli Analizine birlikte bir .vsps dosyası olarak kaydeder.
 
--   **Dışarı aktarma** -geçerli raporda kaydeder. CVS olarak biçimlendirilmiş veya. XML biçimli dosya için farklı görünümlerini kaydetme seçeneği ile.
+- **Dışarı aktarma** -geçerli raporda kaydeder. CVS olarak biçimlendirilmiş veya. XML biçimli dosya için farklı görünümlerini kaydetme seçeneği ile.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Performans araçları verilerini analiz etme](../profiling/analyzing-performance-tools-data.md)

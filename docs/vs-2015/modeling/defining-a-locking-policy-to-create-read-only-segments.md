@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062249"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Kilitleri kullanma  
  Aşağıdaki örnekler gibi düzenleri uygulamak için kilit kullanabilirsiniz:  
   
--   Tüm öğeleri ve ilişkileri açıklamaları temsil eden hariç değişiklikleri izin vermeyin. Bu, değişiklik yapmadan bir model öğesine açıklama eklemek kullanıcıların sağlar.  
+- Tüm öğeleri ve ilişkileri açıklamaları temsil eden hariç değişiklikleri izin vermeyin. Bu, değişiklik yapmadan bir model öğesine açıklama eklemek kullanıcıların sağlar.  
   
--   Değişiklikleri varsayılan bir bölüme izin verme, ancak Diyagram bölümünde yapılan değişikliklere izin. Kullanıcı diyagramda düzenleyebilir, ancak temel alınan model değiştirilemez.  
+- Değişiklikleri varsayılan bir bölüme izin verme, ancak Diyagram bölümünde yapılan değişikliklere izin. Kullanıcı diyagramda düzenleyebilir, ancak temel alınan model değiştirilemez.  
   
--   Ayrı bir veritabanında kayıtlı kullanıcılardan oluşan bir grubu dışında Store değişiklikleri izin vermeyin. Diğer kullanıcılar için diyagrama ve modele salt okunurdur.  
+- Ayrı bir veritabanında kayıtlı kullanıcılardan oluşan bir grubu dışında Store değişiklikleri izin vermeyin. Diğer kullanıcılar için diyagrama ve modele salt okunurdur.  
   
--   Diyagramın bir Boolean özelliği ayarlanmışsa değişiklikleri modele engellemek için true. Bu özelliği değiştirmek için bir menü komutu belirtin. Bu değişiklikleri yapmaları olmayan kullanıcıların yanlışlıkla olun yardımcı olur.  
+- Diyagramın bir Boolean özelliği ayarlanmışsa değişiklikleri modele engellemek için true. Bu özelliği değiştirmek için bir menü komutu belirtin. Bu değişiklikleri yapmaları olmayan kullanıcıların yanlışlıkla olun yardımcı olur.  
   
--   Eklenmesini ve silinmesini öğeleri ve ilişkileri belirli sınıfların izin verme, ancak özellik değişikliklerine izin. Bu kullanıcılar özelliklerini doldurabilirsiniz için sabit bir form sağlar.  
+- Eklenmesini ve silinmesini öğeleri ve ilişkileri belirli sınıfların izin verme, ancak özellik değişikliklerine izin. Bu kullanıcılar özelliklerini doldurabilirsiniz için sabit bir form sağlar.  
   
 ## <a name="lock-values"></a>Kilit değerler  
  Kilitleri Store, bölüm veya bireysel ModelElement ayarlayabilirsiniz. Kilitler olduğu bir `Flags` numaralandırma: kullanarak değerleri birleştirebilirsiniz '&#124;'.  
@@ -79,7 +79,7 @@ partition.SetLocks(Locks.Delete);
   
 |Değer|Yani `IsLocked(Value)` geçerlidir|  
 |-----------|------------------------------------------|  
-|Hiçbiri|Kısıtlama yok.|  
+|None|Kısıtlama yok.|  
 |Özellik|Öğelerin etki alanı özellikleri değiştirilemez. Bu rolü ilişkisinde bir etki alanı sınıfı tarafından oluşturulan özellikler için geçerli değildir.|  
 |Ekle|Bir bölümde yeni öğeleri ve bağlantılarına oluşturulamıyor veya depolar.<br /><br /> Uygulanamaz `ModelElement`.|  
 |Taşı|Öğesi, bölümler arasında taşınamaz `element.IsLocked(Move)` true ise veya `targetPartition.IsLocked(Move)` geçerlidir.|  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Bir kilitleme ilkesi tanımlama için için gerekenler:  
   
--   Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
+- Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
   
--   Bu sınıf, DSL'nin DocData kullanılabilir olan hizmetlerini ekleyin.  
+- Bu sınıf, DSL'nin DocData kullanılabilir olan hizmetlerini ekleyin.  
   
 ### <a name="to-define-a-locking-policy"></a>Kilitleme ilkesi tanımlama  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> Aşağıdaki tanımları içerir:  

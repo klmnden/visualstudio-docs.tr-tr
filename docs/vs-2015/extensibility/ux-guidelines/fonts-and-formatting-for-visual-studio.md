@@ -8,39 +8,39 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83ac80504314244f30bae50f219be125109a389c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075824"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
+## <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
  Visual Studio içindeki tüm yazı tiplerini özelleştirme için kullanıcıya sunulmalıdır. Bu temelde aracılığıyla gerçekleştirilir **yazı tipleri ve renkler** sayfasını **Araçlar > Seçenekler** iletişim. Yazı tipi ayarlarını üç ana kategoride şunlardır:
 
--   **Ortam yazı tipi** — iletişim kutuları, menüler, araç pencereleri ve belge pencereleri de dahil olmak üzere tüm arabirimi öğeleri için kullanılan birincil yazı tipini IDE (tümleşik geliştirme ortamı). Varsayılan olarak, ortam yazı tipi 9 pt Segoe UI'Windows ' ın geçerli sürümlerinde gibi görünen bir sistem yazı tipini bağlıdır. Bir yazı tipi için tüm arabirim öğeleri kullanılarak, bir IDE genelinde tutarlı bir yazı tipi görünümü sağlamaya yardımcı olur.
+- **Ortam yazı tipi** — iletişim kutuları, menüler, araç pencereleri ve belge pencereleri de dahil olmak üzere tüm arabirimi öğeleri için kullanılan birincil yazı tipini IDE (tümleşik geliştirme ortamı). Varsayılan olarak, ortam yazı tipi 9 pt Segoe UI'Windows ' ın geçerli sürümlerinde gibi görünen bir sistem yazı tipini bağlıdır. Bir yazı tipi için tüm arabirim öğeleri kullanılarak, bir IDE genelinde tutarlı bir yazı tipi görünümü sağlamaya yardımcı olur.
 
--   **Metin düzenleyici** — yüzey kod ve diğer metin tabanlı düzenleyiciler Metin Düzenleyicisi'nde özelleştirilebilir olduğunu öğeleri sayfasında **Araçlar > Seçenekler**.
+- **Metin düzenleyici** — yüzey kod ve diğer metin tabanlı düzenleyiciler Metin Düzenleyicisi'nde özelleştirilebilir olduğunu öğeleri sayfasında **Araçlar > Seçenekler**.
 
--   **Özel koleksiyonlar** — kullanıcı arabirimi öğeleri özelleştirmesini tasarımlarına için özel yazı tipleri kullanıma sunan Tasarımcı windows yüzey kendi Ayarları sayfasında **Araçlar > Seçenekler**.
+- **Özel koleksiyonlar** — kullanıcı arabirimi öğeleri özelleştirmesini tasarımlarına için özel yazı tipleri kullanıma sunan Tasarımcı windows yüzey kendi Ayarları sayfasında **Araçlar > Seçenekler**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Düzenleyici yazı tipi özelleştirme ve yeniden boyutlandırma
  Kullanıcıların genellikle büyütün veya boyutunun ve/veya genel kullanıcı arabirimi bağımsız kendi tercih göre düzenleyici metin rengi yakınlaştırma. Ortam yazı tipi, şirket içinde ya da bir düzenleyici/designer'ın bir parçası olarak görünebilir öğeleri kullanıldığından, bu yazı tipi sınıflandırmalar biri değiştiğinde Beklenen davranış dikkat edin önemlidir.
 
  Görünür kullanıcı Arabirimi öğeleri parçası Düzenleyicisi ancak olan oluştururken *içerik*, öğeleri tahmin edilebilir bir biçimde yeniden boyutlandırın. böylece ortam yazı tipini ve metin yazı kullanmak önemlidir.
 
-1.  Kod metin düzenleyicide kod metin yazı tipi ayarla yeniden boyutlandırabilir ve düzenleyici metin yakınlaştırma düzeyi için yanıt.
+1. Kod metin düzenleyicide kod metin yazı tipi ayarla yeniden boyutlandırabilir ve düzenleyici metin yakınlaştırma düzeyi için yanıt.
 
-2.  Arabirimin diğer tüm öğeleri ortam yazı tipi ayarına bağlı ve genel değişiklikleri ortamında yanıtlar. Bu içerir (ancak bunlarla sınırlı değil):
+2. Arabirimin diğer tüm öğeleri ortam yazı tipi ayarına bağlı ve genel değişiklikleri ortamında yanıtlar. Bu içerir (ancak bunlarla sınırlı değil):
 
-    -   Metin bağlam menüleri
+    - Metin bağlam menüleri
 
-    -   Ampul menüsü metin, hızlı gibi bir düzenleyici kenarlığı metin düzenleyicisi bölmesine bulun ve bölmesine gidin
+    - Ampul menüsü metin, hızlı gibi bir düzenleyici kenarlığı metin düzenleyicisi bölmesine bulun ve bölmesine gidin
 
-    -   Find dosyalar ya da yeniden düzenleyin gibi iletişim kutularında etiket metni
+    - Find dosyalar ya da yeniden düzenleyin gibi iletişim kutularında etiket metni
 
 ### <a name="accessing-the-environment-font"></a>Ortam yazı tipi erişme
  Yöntemini çağırarak, WinForms ya da yerel kod içinde ortam yazı tipi erişilebilir **IUIHostLocale::GetDialogFont** SID_SUIHostLocale hizmet arabirimden sorgulama sonra.
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-###  <a name="BKMK_Formatting"></a> Biçimlendirme (ölçeklendirme/kalın) başvurusu
+### <a name="BKMK_Formatting"></a> Biçimlendirme (ölçeklendirme/kalın) başvurusu
  Bazı iletişim kutularını kalın olarak belirli bir metin veya dışında ortam yazı tipi boyutu gerektirir. Yazı tipleri ortam yazı tipi daha büyük, daha önce "ortam yazı tipi + 2" olarak kodlanmış veya benzer. Sağlanan kod parçacıkları yüksek DPI monitör desteği ve görünen metin her zaman doğru boyut ve Ağırlık (açık veya Semilight gibi) göründüğünden emin olun.
 
 > **Not: Biçimlendirme uygulamak için önce bulunan yönergeleri takip ettiğiniz sağlayın [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Yazı tipi sıfırlamak için "kullanımı" altında Varsayılanlar **Araçlar > Seçenekler > ortam > yazı tipleri ve renkler**.
 
-##  <a name="BKMK_TextStyle"></a> Metin stili
+## <a name="BKMK_TextStyle"></a> Metin stili
  Metin stili yazı tipi boyutu, ağırlığı ve büyük/küçük harf ifade eder. Uygulama Kılavuzu için bkz. [ortam yazı tipi](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Metin büyük/küçük harf
@@ -382,9 +382,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Normal tümce düzeni
  Cümle, yazma, cümlenin yalnızca ilk sözcük büyük harfle, tüm uygun isimleri ve gelebildiği birlikte için standart büyük/küçük harf yöntemidir "I." Genel olarak, cümle okumak özellikle olduğunda içerik bir makine tarafından çevrilir dünya çapında bir kitle için daha kolay olur. Cümle için kullanın:
 
-1.  **Durum çubuğu iletileri.** Bu basit, kısa ve durum bilgileri sağlar. Örnek: "Proje dosyası yükleniyor"
+1. **Durum çubuğu iletileri.** Bu basit, kısa ve durum bilgileri sağlar. Örnek: "Proje dosyası yükleniyor"
 
-2.  **Diğer tüm kullanıcı Arabirimi öğeleri**dahil etiketleri, onay kutuları, radyo düğmeleri ve liste kutusu öğeleri. Örnek: "Tüm öğeler listeden seçin"
+2. **Diğer tüm kullanıcı Arabirimi öğeleri**dahil etiketleri, onay kutuları, radyo düğmeleri ve liste kutusu öğeleri. Örnek: "Tüm öğeler listeden seçin"
 
 ### <a name="text-formatting"></a>Metin biçimlendirme
  Visual Studio 2013'te biçimlendirme varsayılan metin tarafından kontrol edilir bir [ortam yazı tipi](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Bu hizmet bir IDE (tümleşik geliştirme ortamı) boyunca tutarlı yazı tipi görünümünü sağlar ve kullanıcılarınız için tutarlı bir deneyim sağlamak için kullanmalısınız.
@@ -396,36 +396,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Kalın metin
  Kalın metin, Visual Studio'da gerektiğinde kullanılır ve için ayrılmış olması gerekir:
 
--   Sihirbazlar soru etiketler
+- Sihirbazlar soru etiketler
 
--   Çözüm Gezgini'nde etkin proje belirleme
+- Çözüm Gezgini'nde etkin proje belirleme
 
--   Özellikler araç penceresinde geçersiz kılınmış değerleri
+- Özellikler araç penceresinde geçersiz kılınmış değerleri
 
--   Visual Basic Düzenleyicisi açılır listelerindeki belirli olaylar
+- Visual Basic Düzenleyicisi açılır listelerindeki belirli olaylar
 
--   Belge Anahattı web sayfaları için sunucu tarafından oluşturulan içeriği
+- Belge Anahattı web sayfaları için sunucu tarafından oluşturulan içeriği
 
--   bölüm başlıkları karmaşık iletişim veya Tasarımcısı kullanıcı Arabirimi
+- bölüm başlıkları karmaşık iletişim veya Tasarımcısı kullanıcı Arabirimi
 
 #### <a name="italics"></a>İtalik
  Visual Studio, italik veya kalın italik metin kullanmaz.
 
 #### <a name="color"></a>Renk
 
--   Mavi (gezinti ve komut vermeye genel) köprüler için ayrılmıştır ve yönlendirme için asla kullanılmamalıdır.
+- Mavi (gezinti ve komut vermeye genel) köprüler için ayrılmıştır ve yönlendirme için asla kullanılmamalıdır.
 
--   Daha büyük başlıklar (ortam yazı tipi veya daha fazla %155 x), bu amaçlar için renkli:
+- Daha büyük başlıklar (ortam yazı tipi veya daha fazla %155 x), bu amaçlar için renkli:
 
-    -   Visual Studio UI imzası Visual geçirmeye itraz et sağlamak için
+    - Visual Studio UI imzası Visual geçirmeye itraz et sağlamak için
 
-    -   Dikkat çekmek için belirli bir alana
+    - Dikkat çekmek için belirli bir alana
 
-    -   Standart koyu gri/siyah ortam metin renkten Tahliye sunmak için
+    - Standart koyu gri/siyah ortam metin renkten Tahliye sunmak için
 
--   Mevcut Visual Studio markası renkleri, öncelikli olarak ana mor #FF68217A başlıklarının rengi faydalanın.
+- Mevcut Visual Studio markası renkleri, öncelikli olarak ana mor #FF68217A başlıklarının rengi faydalanın.
 
--   Renk başlıklarında kullanırken uymalısınız [Windows renk yönergeleri](https://msdn.microsoft.com/library/dn742482.aspx)Karşıtlık oranı ve diğer erişilebilirlik konuları dahil olmak üzere.
+- Renk başlıklarında kullanırken uymalısınız [Windows renk yönergeleri](https://msdn.microsoft.com/library/dn742482.aspx)Karşıtlık oranı ve diğer erişilebilirlik konuları dahil olmak üzere.
 
 ### <a name="font-size"></a>Yazı tipi boyutu
  Visual Studio kullanıcı Arabirimi tasarımı, daha fazla boşluk ile daha açık bir görünümünü sunar. Mümkünse, chrome ve başlık çubukları sınırlı veya kaldırılan. Bilgi yoğunluklu Visual Studio'da bir gereksinim olsa da, tipografi önemli olan, daha açık satır aralığı ve yazı tipi boyutu ve ağırlıklarını çeşitlemesi Otomasyona olmaya devam eder.
@@ -485,11 +485,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Doldurma ve aralık
  Başlıklar, bunları uygun vurgulamak için onları boşluk gerektirir. Bu alanı noktası boyutu ve yatay bir kuralı ya da ortam yazı tipi metin satırı gibi başlık yaklaştı diğerlerine bağlı olarak değişir.
 
--   İdeal doldurma bir başlığın kendisi büyük harf karakter yükseklik alanı %90 olmalıdır. Örneğin, 26 pt cap yüksekliğini 28 pt Segoe UI Light başlığı var ve doldurma yaklaşık 23 pt ya da yaklaşık olarak 31 piksel olması gerekir.
+- İdeal doldurma bir başlığın kendisi büyük harf karakter yükseklik alanı %90 olmalıdır. Örneğin, 26 pt cap yüksekliğini 28 pt Segoe UI Light başlığı var ve doldurma yaklaşık 23 pt ya da yaklaşık olarak 31 piksel olması gerekir.
 
--   Başlık en az boşluk, büyük harf karakter yüksekliği yüzdesi 50 olmalıdır. Daha az alan başlığı bir kural veya diğer sıkı sığdırma öğesi ile birlikte kullanılabilir.
+- Başlık en az boşluk, büyük harf karakter yüksekliği yüzdesi 50 olmalıdır. Daha az alan başlığı bir kural veya diğer sıkı sığdırma öğesi ile birlikte kullanılabilir.
 
--   Kalın ortam yazı tipi, metin, varsayılan satır yüksekliği boşlukları ve doldurma izlemelidir.
+- Kalın ortam yazı tipi, metin, varsayılan satır yüksekliği boşlukları ve doldurma izlemelidir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [MSDN: Fonts (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN: Kullanıcı arabirimi metinlerini (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)

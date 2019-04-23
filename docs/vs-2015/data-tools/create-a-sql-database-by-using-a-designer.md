@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069789"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Bir tasarımcı kullanarak bir SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,16 +41,16 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
   
  Bu izlenecek yol boyunca, aşağıdaki görevler hakkında bilgi edineceksiniz:  
   
--   [Bir proje ve yerel veritabanı dosyası oluştur](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
+- [Bir proje ve yerel veritabanı dosyası oluştur](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
--   [Tablolar, sütunlar, birincil anahtarlar ve yabancı anahtarlar oluşturma](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
+- [Tablolar, sütunlar, birincil anahtarlar ve yabancı anahtarlar oluşturma](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
   
--   [Tabloları verilerle doldurma](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
+- [Tabloları verilerle doldurma](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için SQL Server veri araçları sahip olun. Üzerinde **görünümü** menüsünde görmeniz **SQL Server Nesne Gezgini**. Yoksa, Git **Program Ekle veya Kaldır**, tıklayın **Visual Studio 2015**seçin **değişiklik**ve yanındaki kutuyu işaretleyin **SQL Server veri Araçları**.  
   
-##  <a name="BKMK_CreateNewSQLDB"></a> Bir proje ve yerel veritabanı dosyası oluştur  
+## <a name="BKMK_CreateNewSQLDB"></a> Bir proje ve yerel veritabanı dosyası oluştur  
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Bir proje ve yerel veritabanı dosyası oluşturmak için  
   
@@ -72,22 +72,22 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
   
    Veritabanı için özellikler penceresini açarak bağlantı dizesini ve birincil .mdf dosyasının konumunu görüntüleyebilirsiniz. Veritabanı dosyası proje klasöründe olduğunu görürsünüz.  
   
--   Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğüm, Sampledatabase.mdf'nin kısayol menüsünü açarak ve ardından **özellikleri**.  
+- Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğüm, Sampledatabase.mdf'nin kısayol menüsünü açarak ve ardından **özellikleri**.  
   
--   Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü. Sampledatabase.mdf'nin kısayol menüsünü açın ve ardından **özellikleri**.  
+- Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü. Sampledatabase.mdf'nin kısayol menüsünü açın ve ardından **özellikleri**.  
   
-##  <a name="BKMK_CreateNewTbls"></a> Tablolar, sütunlar, birincil anahtarlar ve yabancı anahtarlar oluşturma  
+## <a name="BKMK_CreateNewTbls"></a> Tablolar, sütunlar, birincil anahtarlar ve yabancı anahtarlar oluşturma  
  Bu bölümde birkaç tablo, her tabloda bir birincil anahtar ve birkaç örnek veri satırı oluşturacaksınız. Sonraki izlenecek yolda, bu bilgilerin uygulamada nasıl görüneceği hakkında bir fikir elde edeceksiniz. Ayrıca, bir tablodaki kayıtların diğer tablodaki kayıtlara nasıl karşılık gelebileceğini belirtmek için yabancı anahtar da oluşturacaksınız.  
   
 #### <a name="to-create-the-customers-table"></a>Müşteriler tablosu oluşturmak için  
   
-1.  İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, genişletme **veri bağlantıları** düğümünü ve ardından **SampleDatabase.mdf**düğümü.  
+1. İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, genişletme **veri bağlantıları** düğümünü ve ardından **SampleDatabase.mdf**düğümü.  
   
-2.  Kısayol menüsünü açın **tabloları**ve ardından **Yeni Tablo Ekle**.  
+2. Kısayol menüsünü açın **tabloları**ve ardından **Yeni Tablo Ekle**.  
   
      **Tablo Tasarımcısı** açılır ve oluşturmakta olduğunuz tablodaki tek bir sütunu temsil eden tek bir varsayılan satır içeren bir kılavuz gösterir. Kılavuza satırlar ekleyerek, tabloda sütunlar ekleyeceksiniz.  
   
-3.  Kılavuzda, aşağıdaki girişlerin her biri için bir satır ekleyin:  
+3. Kılavuzda, aşağıdaki girişlerin her biri için bir satır ekleyin:  
   
     |Sütun adı|Veri türü|Null'lere izin ver|  
     |-----------------|---------------|-----------------|  
@@ -96,11 +96,11 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
     |`ContactName`|`nvarchar (50)`|True (seçili)|  
     |`Phone`|`nvarchar (24)`|True (seçili)|  
   
-4.  Kısayol menüsünü açın `CustomerID` satır ve ardından **birincil anahtarı Ayarla**.  
+4. Kısayol menüsünü açın `CustomerID` satır ve ardından **birincil anahtarı Ayarla**.  
   
-5.  Varsayılan satır için kısayol menüsünü açın ve ardından **Sil**.  
+5. Varsayılan satır için kısayol menüsünü açın ve ardından **Sil**.  
   
-6.  Betik bölmesindeki ilk satırı aşağıdaki örnekle eşleşecek şekilde değiştirerek Müşteriler tablosunu adlandırın:  
+6. Betik bölmesindeki ilk satırı aşağıdaki örnekle eşleşecek şekilde değiştirerek Müşteriler tablosunu adlandırın:  
   
     ```  
     CREATE TABLE [dbo].[Customers]  
@@ -110,15 +110,15 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
   
      ![Tablo Tasarımcısı](../data-tools/media/raddata-table-designer.png "raddata Tablo Tasarımcısı")  
   
-7.  Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
+7. Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
   
-8.  İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
+8. İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
   
      Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.  
   
 #### <a name="to-create-the-orders-table"></a>Siparişler tablosu oluşturmak için  
   
-1.  Başka bir tablo ekleyin ve sonra aşağıdaki tabloda her giriş için bir satır ekleyin:  
+1. Başka bir tablo ekleyin ve sonra aşağıdaki tabloda her giriş için bir satır ekleyin:  
   
     |Sütun adı|Veri türü|Null'lere izin ver|  
     |-----------------|---------------|-----------------|  
@@ -127,64 +127,64 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
     |`OrderDate`|`datetime`|True (seçili)|  
     |`OrderQuantity`|`int`|True (seçili)|  
   
-2.  Ayarlama **OrderID** birincil anahtar ve ardından varsayılan satırı silin.  
+2. Ayarlama **OrderID** birincil anahtar ve ardından varsayılan satırı silin.  
   
-3.  Betik bölmesindeki ilk satırı aşağıdaki örnekle eşleşecek şekilde değiştirerek Siparişler tablosunu adlandırın:  
+3. Betik bölmesindeki ilk satırı aşağıdaki örnekle eşleşecek şekilde değiştirerek Siparişler tablosunu adlandırın:  
   
     ```  
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
+4. Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
   
-5.  İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
+5. İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
   
      Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.  
   
 #### <a name="to-create-a-foreign-key"></a>Yabancı anahtar oluşturmak için  
   
-1.  Kılavuz sağ tarafında bulunan bağlam bölmesinde, kısayol menüsünü açın **yabancı anahtarlar**ve ardından **yeni yabancı anahtar Ekle**aşağıdaki çizimde gösterildiği gibi.  
+1. Kılavuz sağ tarafında bulunan bağlam bölmesinde, kısayol menüsünü açın **yabancı anahtarlar**ve ardından **yeni yabancı anahtar Ekle**aşağıdaki çizimde gösterildiği gibi.  
   
      ![Tablo Tasarımcısı'nda bir yabancı anahtar ekleme](../data-tools/media/foreignkey.png "ForeignKey")  
   
-2.  Görüntülenen metin kutusunda, yerine **ToTable** ile `Customers`.  
+2. Görüntülenen metin kutusunda, yerine **ToTable** ile `Customers`.  
   
-3.  T-SQL bölmesinde son satırı aşağıdaki örnekle eşleşecek şekilde güncelleştirin:  
+3. T-SQL bölmesinde son satırı aşağıdaki örnekle eşleşecek şekilde güncelleştirin:  
   
     ```  
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
+4. Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.  
   
-5.  İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
+5. İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.  
   
      Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.  
   
-##  <a name="BKMK_Populating"></a> Tabloları verilerle doldurma  
+## <a name="BKMK_Populating"></a> Tabloları verilerle doldurma  
   
 #### <a name="to-populate-the-tables-with-data"></a>Tabloları veriyle doldurmak için  
   
-1.  İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, örnek veritabanları düğümünü genişletin.  
+1. İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, örnek veritabanları düğümünü genişletin.  
   
-2.  Kısayol menüsünü açın **tabloları** düğümünü **Yenile**ve ardından **tabloları** düğümü.  
+2. Kısayol menüsünü açın **tabloları** düğümünü **Yenile**ve ardından **tabloları** düğümü.  
   
-3.  Müşteriler tablosu için kısayol menüsünü açın ve ardından **tablo verilerini Göster**.  
+3. Müşteriler tablosu için kısayol menüsünü açın ve ardından **tablo verilerini Göster**.  
   
-4.  En az üç müşteriye istediğiniz verileri ekleyin.  
+4. En az üç müşteriye istediğiniz verileri ekleyin.  
   
      Müşteri kimliklerini beş karakterli olarak istediğiniz gibi belirtebilirsiniz, ancak en azından bu yordamda daha sonra kullanmak üzere hatırlayabileceğiniz bir kimlik olmalıdır.  
   
-5.  Siparişler tablosu için kısayol menüsünü açın ve ardından **tablo verilerini Göster**.  
+5. Siparişler tablosu için kısayol menüsünü açın ve ardından **tablo verilerini Göster**.  
   
-6.  En az üç sipariş için veri ekleyin.  
+6. En az üç sipariş için veri ekleyin.  
   
     > [!IMPORTANT]
     >  Tüm sipariş kimlikleri ve sipariş miktarlarının tam sayılar olduğundan ve her müşteri kimliğinin Müşteriler tablosunun CustomerID sütununda belirttiğiniz bir değerle eşleştiğinden emin olun.  
   
-7.  Menü çubuğunda, seçin **dosya** > **Tümünü Kaydet**.  
+7. Menü çubuğunda, seçin **dosya** > **Tümünü Kaydet**.  
   
-8.  Menü çubuğunda, seçin **dosya** > **çözümü Kapat**.  
+8. Menü çubuğunda, seçin **dosya** > **çözümü Kapat**.  
   
     > [!NOTE]
     >  En iyi uygulama yöntemi olarak, az önce oluşturduğunuz veritabanı dosyasını kopyalayarak ve daha sonra kopyayı diğer bir konuma yapıştırarak ya da kopyaya başka bir ad vererek yedekleyebilirsiniz.  

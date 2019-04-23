@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58147949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064924"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 Gövdesi için karşılık gelen metni döndüren bir `IScriptEntry` betik bloğu, işlev bloğu veya kod oluşturma.  
@@ -39,11 +39,11 @@ HRESULT GetBody(
  `pbstr`  
  [out] Aşağıdakilerden birini gövdesinde metni:  
   
--   Bir `IScriptEntry` betik bloğu  
+- Bir `IScriptEntry` betik bloğu  
   
--   Bir `IScriptEntry` bir işlev bloğunda işlevi  
+- Bir `IScriptEntry` bir işlev bloğunda işlevi  
   
--   Bir `IScriptEntry` scriptlet olay işleyicisi  
+- Bir `IScriptEntry` scriptlet olay işleyicisi  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `HRESULT`. Olası değerler aşağıdaki tablodakileri içerir, ancak bunlarla da sınırlı değildir:  

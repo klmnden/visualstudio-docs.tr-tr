@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063679"
 ---
 # <a name="vsix-color-compiler"></a>VSIX Renk Derleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 |-|-|  
 |**Öznitelik**|**Tanım**|  
 |Tür|[Gerekli] Renk türü. Aşağıdakilerden biri olabilir:<br /><br /> *CT_INVALID:* Geçersiz ya da ayarlanmadığından rengi.<br /><br /> *CT_RAW:* Ham ARGB değeri.<br /><br /> *CT_COLORINDEX:* KULLANMAYIN.<br /><br /> *CT_SYSCOLOR:* Bir Windows sistem renk SysColor.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX bir Visual Studio renk.<br /><br /> *CT_AUTOMATIC:* Otomatik rengi.<br /><br /> *CT_TRACK_FOREGROUND:* KULLANMAYIN.<br /><br /> *CT_TRACK_BACKGROUND:* KULLANMAYIN.|  
-|Kaynak|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|  
+|Source|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|  
   
  Tür özniteliği yer alan şemada __VSCOLORTYPE numaralandırması tarafından desteklenen tüm değerleri desteklenir. Ancak, yalnızca CT_RAW ve CT_SYSCOLOR kullanmanızı öneririz.  
   
@@ -149,15 +149,15 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
   
  **Örnekler**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml/nologo  
+- VsixColorCompiler D:\xml\colors.xml/nologo  
   
 ## <a name="notes"></a>Notlar  
   
--   Bu araç, VC ++ Çalışma zamanı en son sürümü yüklü olmasını gerektirir.  
+- Bu araç, VC ++ Çalışma zamanı en son sürümü yüklü olmasını gerektirir.  
   
--   Yalnızca tek dosyalar desteklenir. Klasör yolları aracılığıyla toplu dönüştürme desteklenmiyor.  
+- Yalnızca tek dosyalar desteklenir. Klasör yolları aracılığıyla toplu dönüştürme desteklenmiyor.  
   
 ## <a name="sample-output"></a>Örnek çıktı  
  Aracı tarafından oluşturulan .pkgdef dosyası şuna benzeyecektir anahtarları aşağıda:  

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed3b8e62bbb2086581d89016d4609ab215f0de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064303"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama dağıtımına genel bakış
 Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güvenilir uygulama dağıtımı teknolojisini kullanarak yükseltilmiş izinlere sahip uygulamalar.
@@ -75,9 +75,9 @@ Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:
 
  Uygulamanızı Masaüstü yönetilen bir ortamda dağıtıyorsanız değil, bir sertifika güvenilen bir yayımcı deposuna eklemek için aşağıdaki seçenekleri vardır:
 
--   <xref:System.Security.Cryptography?displayProperty=fullName> Ad alanı.
+- <xref:System.Security.Cryptography?displayProperty=fullName> Ad alanı.
 
--   *CertMgr.exe*, Internet Explorer'ın bir bileşeni olan ve bu nedenle Windows 98 ve sonraki tüm sürümlerinde bulunmaktadır. Daha fazla bilgi için [Certmgr.exe (Sertifika Yöneticisi Aracı)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, Internet Explorer'ın bir bileşeni olan ve bu nedenle Windows 98 ve sonraki tüm sürümlerinde bulunmaktadır. Daha fazla bilgi için [Certmgr.exe (Sertifika Yöneticisi Aracı)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>ClickOnce uygulaması oluşturma
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] istemci uygulaması uygulamayı tanımlayan ve yükleme parametrelerini sağlayan bildirim dosyaları ile birlikte. Programınıza kapatabilirsiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanarak uygulama **Yayımla** komutunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Alternatif olarak, gerekli tüm dosyaları oluşturabilirsiniz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bulunan araçları kullanarak dağıtım [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Ayrıntılı adımlar için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bkz [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

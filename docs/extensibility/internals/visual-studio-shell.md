@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067085"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Kabuğu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kabuktur tümleştirmesi, birincil aracı [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ortak Hizmetleri paylaşan VSPackage'ı etkinleştirmek için gerekli işlevselliği sağlar. Çünkü mimari amacı, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] birincil işlevselliği Vspackage'larda vest kullanmaktır Kabuğu'nu temel işlevleri sağlar ve kendi bileşeni Vspackage'lar arasında arası iletişimi desteklemek için bir çerçevedir.
@@ -38,17 +38,17 @@ ms.locfileid: "56613290"
 
 - İzleme Kabuk genelinde seçimi, bağlam ve para birimi. Kabuk öğeleri aşağıdaki türde izler:
 
-  -   Geçerli proje
+  - Geçerli proje
 
-  -   Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - Geçerli proje öğe veya öğe kimliği geçerli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`
+  - Geçerli seçim için **özellikleri** penceresi veya `SelectionContainer`
 
-  -   Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı
+  - Kimlikleri veya komutlar, menüler ve araç çubukları görünürlüğünü denetleme CmdUIGuids UI bağlamı
 
-  -   Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri
+  - Etkin pencereyi, belge ve geri alma yöneticisi gibi şu anda etkin öğeleri
 
-  -   Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri
+  - Dinamik Yardım sürücü kullanıcı bağlamı öznitelikleri
 
   Kabuk yüklü VSPackages ve geçerli Hizmetleri arasındaki iletişim de aracılık. Kabuk temel özellikleri destekler ve bunları tüm VSPackages tümleşik kullandırır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Bu temel özellikleri, aşağıdaki öğeleri ekleyin:
 

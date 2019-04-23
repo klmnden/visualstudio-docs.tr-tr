@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d86834b82dbc130c9e2e4b3cf712b4d23a27e5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069919"
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ Kod oluşturma ve birim testleri çalıştırarak beklendiği gibi çalışıp �
   
  Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladıysanız birim testi çerçevelerini üçüncü taraf ve açık kaynak da çalıştırabilirsiniz. Birçok Visual Studio Uzantı Yöneticisi ve Visual Studio Galerisi aracılığıyla bu çerçevesini ekleyebilirsiniz. Bkz: [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
   
--   [Hızlı başlangıçlar](#BKMK_Quick_starts)  
+- [Hızlı başlangıçlar](#BKMK_Quick_starts)  
   
--   [MyBank çözümü örneği](#BKMK_The_MyBank_Solution_example)  
+- [MyBank çözümü örneği](#BKMK_The_MyBank_Solution_example)  
   
--   [Birim test projesi oluşturmak ve test yöntemleri](#BKMK_Creating_the_unit_test_projects)  
+- [Birim test projesi oluşturmak ve test yöntemleri](#BKMK_Creating_the_unit_test_projects)  
   
--   [Testlerinizi yazma](#BKMK_Writing_your_tests)  
+- [Testlerinizi yazma](#BKMK_Writing_your_tests)  
   
--   [Testleri Test Gezgini'nde çalıştırma](#BKMK_Running_tests_in_Test_Explorer)  
+- [Testleri Test Gezgini'nde çalıştırma](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Testleri görüntülemek ve çalıştırmak](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+- [Testleri görüntülemek ve çalıştırmak](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> Birim test genel bakış  
+## <a name="BKMK_Unit_testing_overview"></a> Birim test genel bakış  
   
-###  <a name="BKMK_Quick_starts"></a> Hızlı başlangıçlar  
+### <a name="BKMK_Quick_starts"></a> Hızlı başlangıçlar  
  Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan birine bakın:  
   
--   [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> MyBank çözümü örneği  
+## <a name="BKMK_The_MyBank_Solution_example"></a> MyBank çözümü örneği  
  Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi Çerçevesi'ni kullanarak, ancak kavramlardan kolayca diğer dillerde ve çerçevelerde aktarılır.  
   
  ![MyBank Solution](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")  
@@ -92,7 +92,7 @@ public void Withdraw(double amount)
   
  Biz bazı koda sahip olduğunuza göre bunu test etmek için zamanı geldi.  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> Birim test projesi oluşturmak ve test yöntemleri  
+## <a name="BKMK_Creating_the_unit_test_projects"></a> Birim test projesi oluşturmak ve test yöntemleri  
  Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızlı olur. Veya, gereksinimlerinize bağlı olarak el ile testleri ve birim testi projesi oluşturmak tercih edebilirsiniz.  
   
  **Birim testi projesi oluşturma ve birim testi saptamaları**  
@@ -130,19 +130,19 @@ public void Withdraw(double amount)
   
     Kod projesine bir başvuru oluşturmak için:  
   
-   1.  Çözüm Gezgini'nde projeyi seçin.  
+   1. Çözüm Gezgini'nde projeyi seçin.  
   
-   2.  Üzerinde **proje** menüsünde seçin **Başvuru Ekle**.  
+   2. Üzerinde **proje** menüsünde seçin **Başvuru Ekle**.  
   
-   3.  Başvuru Yöneticisi iletişim kutusunu açın **çözüm** düğümünü seçip **projeleri**. Kod proje adını seçin ve iletişim kutusunu kapatın.  
+   3. Başvuru Yöneticisi iletişim kutusunu açın **çözüm** düğümünü seçip **projeleri**. Kod proje adını seçin ve iletişim kutusunu kapatın.  
   
    Her birim testi projesi kod projesinde sınıfların adlarını yansıtan sınıfları içerir. Bizim örneğimizde `AccountsTests` proje aşağıdaki sınıfları içerebilir:  
   
--   `AccountInfoTests` sınıfı için birim test yöntemlerini içeren `AccountInfo` sınıfını `BankAccount` proje  
+- `AccountInfoTests` sınıfı için birim test yöntemlerini içeren `AccountInfo` sınıfını `BankAccount` proje  
   
--   `CheckingAccountTests` sınıfı için birim test yöntemlerini içeren `CheckingAccount` sınıfı.  
+- `CheckingAccountTests` sınıfı için birim test yöntemlerini içeren `CheckingAccount` sınıfı.  
   
-##  <a name="BKMK_Writing_your_tests"></a> Testlerinizi yazma  
+## <a name="BKMK_Writing_your_tests"></a> Testlerinizi yazma  
  Birim testi çerçevesi kullandığınız ve Visual Studio IntelliSense birim testleriniz için bir kod projesi için kod yazma aracılığıyla size yol gösterir. Test Gezgini'nde de çalıştırmak için çoğu çerçeveleri, birim test yöntemlerini tanımlamak için özel öznitelikler eklemeniz gerekir. Çerçeveleri ayrıca bir yol sağlar; genellikle aracılığıyla deyimleri ya da yöntem öznitelikleri assert — test yöntemi başarılı olup olmadığını belirtmek için. Diğer öznitelikleri sınıf başlatma ve her bir test yöntemi ve her test yönteminin sonra ve sınıf yok önce çalıştırılır kaldırma yöntemleri önce isteğe bağlı kurulum yöntemlerle belirleyin.  
   
  AAA (Düzenle, eylem, onay) düzeni, test edilen bir yöntem için birim testleri yazma genel bir yoludur.  
@@ -188,9 +188,9 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Microsoft birim testi çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
--   [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+- [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [C++ için Microsoft Birim Testi Çerçevesi ile C/C++ için Birim Testleri Yazma](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+- [C++ için Microsoft Birim Testi Çerçevesi ile C/C++ için Birim Testleri Yazma](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
 ## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarlayın  
  Bir bireysel test yönteminde bir zaman aşımı ayarlamak için:  
@@ -217,7 +217,7 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma  
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma  
  Test projesi oluşturduğunuzda, testler Test Gezgini'nde görünür. Test Gezgini görünür değilse seçin **Test** Visual Studio menüsünde **Windows**ve ardından **Test Gezgini**.  
   
  ![Birim Test Gezgini](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
@@ -226,7 +226,7 @@ public void My_Test ()
   
  Ayrıca, arama kutusuna genel düzeyde eşleşen metin veya önceden tanımlanmış filtrelerden birini seçerek herhangi bir görünümde testlere filtre uygulayabilirsiniz. Herhangi bir zamanda herhangi bir seçimi testler çalıştırabilirsiniz. Bir test çalıştırması sonuçlarını hemen Gezgini penceresinin en üstündeki geçer/başarısız çubuğunda görünür. Bir test yönteminin sonucunun ayrıntılarını test seçtiğinizde görüntülenir.  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Testleri görüntülemek ve çalıştırmak  
+### <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Testleri görüntülemek ve çalıştırmak  
  Test Gezgini araç çubuğu, keşfedin, düzenlemek ve ilginizi çeken testler yardımcı olur.  
   
  ![Test Gezgini araç çubuğundan testleri](../test/media/ute-toolbar.png "UTE_ToolBar")  
@@ -235,7 +235,7 @@ public void My_Test ()
   
  Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> Her derleme sonrasında Testleri Çalıştır  
+### <a name="BKMK_Running_tests_after_every_build"></a> Her derleme sonrasında Testleri Çalıştır  
   
 > [!WARNING]
 >  Her derleme yalnızca Visual Studio Enterprise'da desteklendikten sonra birim testleri çalıştırma.  
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|  
 |![Yapıdan sonra çalıştırmak](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Her bir yerel oluşturmadan sonra birim testlerinizi çalıştırmak için tercih **Test** standart menüsünde **oluşturmadan sonra Testleri Çalıştır** Test Gezgini araç çubuğundaki.|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Test listesini gruplandırma ve filtreleme  
+### <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Test listesini gruplandırma ve filtreleme  
  Çok sayıda test varsa, belirtilen dizeyle listeyi filtrelemek için Test Gezgini arama kutusuna yazabilirsiniz. Filtre etkinliğiniz filtre listeden seçerek daha fazla kısıtlayabilirsiniz.  
   
  ![Arama filtre kategorisi](../test/media/ute-searchfilter.png "UTE_SearchFilter")  

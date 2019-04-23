@@ -10,86 +10,86 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85561ff823362941b09b52189c0187dc65997e23
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064459"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>İzlenecek yol: Özel bir düzenleyici özellikleri ekleyin
 Özel bir düzenleyici oluşturduktan sonra daha fazla özellik ekleyebilirsiniz.
 
 ## <a name="to-create-an-editor-for-a-vspackage"></a>VSPackage için bir düzenleyici oluşturmak için
 
-1.  Visual Studio Paketi proje şablonunu kullanarak bir özel düzenleyici oluşturma.
+1. Visual Studio Paketi proje şablonunu kullanarak bir özel düzenleyici oluşturma.
 
      Daha fazla bilgi için [izlenecek yol: Özel bir düzenleyici oluşturmak](../extensibility/walkthrough-creating-a-custom-editor.md).
 
-2.  Düzenleyici tek bir görünüm veya birden çok görünüm desteklemek için istediğinize karar verin.
+2. Düzenleyici tek bir görünüm veya birden çok görünüm desteklemek için istediğinize karar verin.
 
      Destekleyen bir düzenleyici **yeni pencere** komutunu veya form görünümü ve kod görünümü, ayrı bir belge veri nesneleri ve belge görünümü nesneleri gerektirir. Yalnızca tek bir görünümde destekleyen bir düzenleyicide belge veri nesnesi ve belge view nesnesinin aynı nesne üzerinde uygulanabilir.
 
      Birden çok görünüm örneği için bkz: [birden çok belge görünümünü desteklemek](../extensibility/supporting-multiple-document-views.md).
 
-3.  Bir düzenleyici fabrikası ayarıyla uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.
+3. Bir düzenleyici fabrikası ayarıyla uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.
 
      Daha fazla bilgi için [Düzenleyici fabrikaları](../extensibility/editor-factories.md).
 
-4.  Yerinde etkinleştirme kullanmak üzere istediğiniz veya Basitleştirilmiş belge görünümü nesne penceresi yönetmek için ekleme isteyip istemediğinize karar.
+4. Yerinde etkinleştirme kullanmak üzere istediğiniz veya Basitleştirilmiş belge görünümü nesne penceresi yönetmek için ekleme isteyip istemediğinize karar.
 
      Yerinde etkinleştirme düzenleyici penceresinde bir ActiveX denetimi veya diğer etkin bir nesne, belge görünümü olarak sunarken bir standart belge görünümü basitleştirilmiş bir gömme Düzenleyicisi penceresini barındırır. Daha fazla bilgi için [Basitleştirilmiş ekleme](../extensibility/simplified-embedding.md) ve [yerinde etkinleştirme](../extensibility/in-place-activation.md).
 
-5.  Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komutları işlemek için arabirim.
+5. Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komutları işlemek için arabirim.
 
-6.  Belge Kalıcılık ve dış dosya değişikliklere yanıt sağlar:
+6. Belge Kalıcılık ve dış dosya değişikliklere yanıt sağlar:
 
-    1.  Dosya kalıcı hale getirmek için uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Düzenleyicisi'nin belge verileri nesne üzerinde.
+    1. Dosya kalıcı hale getirmek için uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> Düzenleyicisi'nin belge verileri nesne üzerinde.
 
-    2.  Dış dosya değişikliklerine yanıt verme uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> Düzenleyicisi'nin belge verileri nesne üzerinde.
+    2. Dış dosya değişikliklerine yanıt verme uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> Düzenleyicisi'nin belge verileri nesne üzerinde.
 
         > [!NOTE]
         >  Çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> işaretçisi almak için `IVsFileChangeEx`.
 
-7.  Belge düzenleme olaylarını kaynak kodu denetimi ile koordine edin. Aşağıdaki adımları uygulayın:
+7. Belge düzenleme olaylarını kaynak kodu denetimi ile koordine edin. Aşağıdaki adımları uygulayın:
 
-    1.  Bir işaretçi alma `IVsQueryEditQuerySave2` çağırarak `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
+    1. Bir işaretçi alma `IVsQueryEditQuerySave2` çağırarak `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
 
-    2.  İlk düzenleme olay gerçekleştiğinde çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> yöntemi.
+    2. İlk düzenleme olay gerçekleştiğinde çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> yöntemi.
 
          Bu yöntem henüz kullanıma alınmışsa, dosyayı kullanıma denetlemek için kullanıcıya sorar. "Dosyayı kullanıma alınmamış" durumu hatalarını engellemeye emin olun.
 
-    3.  Benzer şekilde, dosyayı kaydetmeden önce arama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> yöntemi.
+    3. Benzer şekilde, dosyayı kaydetmeden önce arama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> yöntemi.
 
          Bu yöntem, kaydedilmediyse veya son kaydetme işleminden sonra değiştirdiyseniz dosyayı kaydetmek ister.
 
-8.  Etkinleştirme **özellikleri** Metin Düzenleyicisi'nde seçili özelliklerini görüntülemek için penceresi. Aşağıdaki adımları uygulayın:
+8. Etkinleştirme **özellikleri** Metin Düzenleyicisi'nde seçili özelliklerini görüntülemek için penceresi. Aşağıdaki adımları uygulayın:
 
-    1.  Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> her zaman metin seçimi, geçirme uygulamanızda değişiklikleri <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
+    1. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> her zaman metin seçimi, geçirme uygulamanızda değişiklikleri <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
 
-    2.  Çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> bir işaretçi alma için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+    2. Çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> bir işaretçi alma için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
 
 9. Düzenleyici arasında öğeleri sürükleyip vermesine olanak sağlayan ve **araç kutusu**, ya da (Microsoft Word gibi) dış düzenleyicileri arasında ve **araç kutusu**. Aşağıdaki adımları uygulayın:
 
-    1.  Uygulama `IDropTarget` IDE düzenleyicinizi bir bırakma hedefi uyarmak için Düzenleyici üzerinde.
+    1. Uygulama `IDropTarget` IDE düzenleyicinizi bir bırakma hedefi uyarmak için Düzenleyici üzerinde.
 
-    2.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> düzenleyiciniz etkinleştirebilir ve öğeleri devre dışı bırakmak için Görünüm arabirimdeki **araç kutusu**.
+    2. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> düzenleyiciniz etkinleştirebilir ve öğeleri devre dışı bırakmak için Görünüm arabirimdeki **araç kutusu**.
 
-    3.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> ve çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> bir işaretçi alma için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> arabirimleri.
+    3. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> ve çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> bir işaretçi alma için hizmet <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> arabirimleri.
 
          Bu adımlar için yeni öğeler eklemek, VSPackage etkinleştirmek **araç kutusu**.
 
 10. Herhangi bir isteğe bağlı özellikler düzenleyiciniz için istediğinize karar verin.
 
-    -   Desteklemek için düzenleyicinizi istiyorsanız bulun ve komutların yerini, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
+    - Desteklemek için düzenleyicinizi istiyorsanız bulun ve komutların yerini, uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
 
-    -   Bir belge Anahat araç penceresinin düzenleyicinizde kullanmak istiyorsanız, uygulama `IVsDocOutlineProvider`.
+    - Bir belge Anahat araç penceresinin düzenleyicinizde kullanmak istiyorsanız, uygulama `IVsDocOutlineProvider`.
 
-    -   Durum Çubuğu Düzenleyicisi'nde kullanmak istiyorsanız, uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> ve çağrı `QueryService` için <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> işaretçisi almak için `IVsStatusBar`.
+    - Durum Çubuğu Düzenleyicisi'nde kullanmak istiyorsanız, uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> ve çağrı `QueryService` için <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> işaretçisi almak için `IVsStatusBar`.
 
          Örneğin, bir düzenleyici satırı görüntüleyebilirsiniz / sütun bilgileri, seçim modu (akışı / kutusuna) ve ekleme modu (ekleme / OVERSTRIKE).
 
-    -   Desteklemek için düzenleyicinizi istiyorsanız `Undo` komutu, önerilen yöntem, OLE geri alma yöneticisi modeli kullanmaktır. Alternatif olarak, düzenleyici tanıtıcı olabilir `Undo` doğrudan komutu.
+    - Desteklemek için düzenleyicinizi istiyorsanız `Undo` komutu, önerilen yöntem, OLE geri alma yöneticisi modeli kullanmaktır. Alternatif olarak, düzenleyici tanıtıcı olabilir `Undo` doğrudan komutu.
 
 11. Bilgi, GUID'leri VSPackage'ı, menüler, düzenleyici ve diğer özellikler dahil olmak üzere kayıt defteri oluşturun.
 
@@ -148,9 +148,9 @@ ms.locfileid: "56716421"
 
 - İki yerde vardır özel bir düzenleyici Otomasyon nesneleri getirebilir:
 
-  -   `Document.Object`
+  - `Document.Object`
 
-  -   `Window.Object`
+  - `Window.Object`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)

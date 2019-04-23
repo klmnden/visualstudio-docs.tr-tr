@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067137"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web sunucusunda hata ayıklama başlatılamıyor
 
@@ -104,7 +104,7 @@ Ayrıca, HOSTS dosyası kullanıyorsanız, doğru yapılandırıldığından emi
 
 - İzleyeceğiniz adımlar, çalışmaz veya uzaktan hata ayıklama, [IIS yapılandırmanızı denetleyin](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
 
 Bu sorunu çözmek için burada ayrıntıları verilen adımlar aldıktan sonra ve hata ayıklamak yeniden denemeden önce IIS'yi sıfırlayın gerekebilir. Yükseltilmiş bir komut istemi'ni açıp yazarak bunu yapabilirsiniz `iisreset`.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f17e863900eb1d1aa6414d28a7de0cee8f3c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075668"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme
   Yerleşik bir sekmeye grup ve denetim ekleyebilirsiniz. Yerleşik bir sekmeyi bir Microsoft Office uygulamasının Şerit üzerinde zaten var olan bir sekmedir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. Özel bir grup oluşturduğunuzda, son sekmede görünür, ancak grubunuzun sekmesinde istediğiniz yere taşıyabilirsiniz.
@@ -30,39 +30,39 @@ ms.locfileid: "56639550"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Yerleşik bir sekmeye gruplar eklemek için
 
-1.  Şerit kod dosyasını sağ tıklatın **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.
+1. Şerit kod dosyasını sağ tıklatın **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.
 
     > [!NOTE]
     >  Şerit kod dosyasını görünmüyorsa **Çözüm Gezgini**, eklemelisiniz bir **Şerit öğesi** projenize. Bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  Şerit Tasarımcısı'nda herhangi bir sekmesini sağ tıklatın ve ardından **özellikleri**.
+2. Şerit Tasarımcısı'nda herhangi bir sekmesini sağ tıklatın ve ardından **özellikleri**.
 
-3.  İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **ControlIdType** özelliğini **Office**.
+3. İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **ControlIdType** özelliğini **Office**.
 
-4.  Ayarlama **OfficeId** özelliğini *kimliği kontrol* özelleştirmek istediğiniz yerleşik bir sekmenin.
+4. Ayarlama **OfficeId** özelliğini *kimliği kontrol* özelleştirmek istediğiniz yerleşik bir sekmenin.
 
      Denetim Kimliği sekmeler, gruplar ve Microsoft Office uygulamalarında yerleşik denetimler benzersiz olarak tanımlayan addır.
 
      Denetim kimliklerinin bir listesi için bkz. [Office 2010 Yardım dosyaları: Office fluent kullanıcı arabirimi denetimi tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).
 
-5.  Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, grupları sekmenin sürükleyin.
+5. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, grupları sekmenin sürükleyin.
 
     > [!NOTE]
     >  Yerleşik gruplar Tasarımcısı'nda görünmez. Bu nedenle, yerleşik bir sekmeyi ile çalışma belirlemek için tek yolu incelemektir **ControlId** sekmesinin özelliği.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Grupları yerleşik bir sekmede konuma
 
-1.  Şerit Tasarımcısı'nda, özel bir grubu seçin.
+1. Şerit Tasarımcısı'nda, özel bir grubu seçin.
 
-2.  İçinde **özellikleri** penceresini genişletin **konumu** özelliği.
+2. İçinde **özellikleri** penceresini genişletin **konumu** özelliği.
 
-3.  Ayarlama **PositionType** uygun değere özelliği:
+3. Ayarlama **PositionType** uygun değere özelliği:
 
-    -   **BeforeOfficeId** grubun belirli bir yerleşik grubun önce yerleştirir.
+    - **BeforeOfficeId** grubun belirli bir yerleşik grubun önce yerleştirir.
 
-    -   **AfterOfficeId** grubun belirtilen yerleşik bir gruptan sonra yerleştirir.
+    - **AfterOfficeId** grubun belirtilen yerleşik bir gruptan sonra yerleştirir.
 
-4.  Ayarlama **OfficeId** yerleşik grup denetim kimliği özelliği.
+4. Ayarlama **OfficeId** yerleşik grup denetim kimliği özelliği.
 
      Denetim kimliklerinin bir listesi için bkz. [Office 2010 Yardım dosyaları: Office fluent kullanıcı arabirimi denetimi tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).
 

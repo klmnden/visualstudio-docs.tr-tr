@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069621"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Hesaplanan ve Özel Depolama Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,30 +37,30 @@ Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve d
   
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Hesaplanmış veya özel depolama özelliği tanımlamak için  
   
-1.  DslDefinition.dsl, diyagram veya etki alanı özelliği seçin **DSL Gezgini**.  
+1. DslDefinition.dsl, diyagram veya etki alanı özelliği seçin **DSL Gezgini**.  
   
-2.  İçinde **özellikleri** penceresinde **tür** alanı **hesaplanan** veya **özel depolama**.  
+2. İçinde **özellikleri** penceresinde **tür** alanı **hesaplanan** veya **özel depolama**.  
   
      Siz de ayarladığınızdan emin olun, **türü** istediğiniz.  
   
-3.  Tıklayın **tüm Şablonları Dönüştür** araç **Çözüm Gezgini**.  
+3. Tıklayın **tüm Şablonları Dönüştür** araç **Çözüm Gezgini**.  
   
-4.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+4. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
      Aşağıdaki hata iletisini alıyorsunuz: "*YourClass* Get için bir tanım içermiyor*YourProperty*."  
   
-5.  Hata iletisini çift tıklayın.  
+5. Hata iletisini çift tıklayın.  
   
      Dsl\GeneratedCode\DomainClasses.cs veya DomainRelationships.cs açılır. Vurgulanan yöntemi çağrısı, yorum, Get için bir uygulama sunmak amacıyla ister*YourProperty*().  
   
     > [!NOTE]
     >  Bu dosya, DslDefinition.dsl oluşturulur. Bu dosyayı düzenlerseniz, değişikliklerinizi bir sonraki tıklayışınızda olmalıdır **tüm Şablonları Dönüştür**. Bunun yerine ayrı bir dosyada gerekli yöntemi ekleyin.  
   
-6.  Oluşturun veya bir sınıf dosyası ayrı bir klasörde, örneğin CustomCode açın\\*YourDomainClass*. cs.  
+6. Oluşturun veya bir sınıf dosyası ayrı bir klasörde, örneğin CustomCode açın\\*YourDomainClass*. cs.  
   
      Ad alanı oluşturulan kod ile aynı olduğundan emin olun.  
   
-7.  Sınıf dosyasında, bir etki alanı sınıfı kısmi uygulaması yazma. Sınıfında, eksik bir tanımı yazma `Get` aşağıdaki örneğe benzer yöntemi:  
+7. Sınıf dosyasında, bir etki alanı sınıfı kısmi uygulaması yazma. Sınıfında, eksik bir tanımı yazma `Get` aşağıdaki örneğe benzer yöntemi:  
   
     ```  
     namespace Company.FamilyTree  
@@ -70,7 +70,7 @@ Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve d
     }  }  
     ```  
   
-8.  Ayarlarsanız **tür** için **özel depolama**, sağlamanız gerekecektir bir `Set` yöntemi. Örneğin:  
+8. Ayarlarsanız **tür** için **özel depolama**, sağlamanız gerekecektir bir `Set` yöntemi. Örneğin:  
   
     ```  
     void SetAgeValue(int value)  
@@ -85,7 +85,7 @@ Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve d
   
 10. Test özelliği. Denemek emin **geri** ve **Yinele**.  
   
-##  <a name="setters"></a> İşlemler ve özel ayarlayıcılar  
+## <a name="setters"></a> İşlemler ve özel ayarlayıcılar  
  Yöntemi genellikle etkin bir işlem çağrıldığı için özel depolama özellik kümesi yönteminde, açık bir işlem gerekmez.  
   
  Ancak, küme yöntemini kullanıcı geri alma veya yineleme çağırır veya bir işlem geri alınıyor çağrılabilir. Zaman <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> true kümesi yönteminizi davranış şu şekilde olur:  

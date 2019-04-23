@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064836"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>İşlemleri kullanarak UML model güncelleştirmelerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Uzantı, Visual Studio'da UML tasarımcılarına tanımladığınızda, birkaç 
   
  Aşağıdakilere dikkat edin:  
   
--   Her zaman dahil etmelisiniz `Commit()` işlem sonunda. Bir işlem uygulanmadan, işlem geri alınacaktır. Diğer bir deyişle, model işlemin başındaki durumuna geri yüklenecektir.  
+- Her zaman dahil etmelisiniz `Commit()` işlem sonunda. Bir işlem uygulanmadan, işlem geri alınacaktır. Diğer bir deyişle, model işlemin başındaki durumuna geri yüklenecektir.  
   
--   Eğer işlem içinde yakalanmamış özel bir durum oluşursa, işlem geri alınacaktır. İçine almak için sıklıkla kullanılan bir desendir `using` işlem içinde bloğunu bir `try…catch` blok.  
+- Eğer işlem içinde yakalanmamış özel bir durum oluşursa, işlem geri alınacaktır. İçine almak için sıklıkla kullanılan bir desendir `using` işlem içinde bloğunu bir `try…catch` blok.  
   
--   İşlemleri iç içe geçirebilirsiniz.  
+- İşlemleri iç içe geçirebilirsiniz.  
   
--   Herhangi bir boş olmayan ad sağlayabilirsiniz `BeginTransaction()`.  
+- Herhangi bir boş olmayan ad sağlayabilirsiniz `BeginTransaction()`.  
   
--   Yalnızca UML Model Store bu işlemlerden etkilenir. İşlemlerin modellenmesi şunları etkilemez: değişkenler, dosyalar ve veritabanları gibi harici depolar katman diyagramları ve kod modelleri.  
+- Yalnızca UML Model Store bu işlemlerden etkilenir. İşlemlerin modellenmesi şunları etkilemez: değişkenler, dosyalar ve veritabanları gibi harici depolar katman diyagramları ve kod modelleri.  
   
 ## <a name="example"></a>Örnek  
   

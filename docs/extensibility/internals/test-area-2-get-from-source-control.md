@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 2: Kaynak denetiminden almak | Microsoft Docs'
+title: 'Test Alanı 2: Kaynak denetiminden almak | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067189"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Test alanı 2: Kaynak denetiminden alma
+# <a name="test-area-2-get-from-source-control"></a>Test Alanı 2: Kaynak Denetiminden Alma
 Bu test alanı Get komutu aracılığıyla sürüm deposundan öğeleri almak için test çalışmaları kapsar. Bu test çalışmaları, yerel ve Web projeleri için uygulanabilir.
 
 ## <a name="command-menu-access"></a>Komut menü erişimi
@@ -26,13 +26,13 @@ Bu test alanı Get komutu aracılığıyla sürüm deposundan öğeleri almak i�
 
 ##### <a name="get-latest-version"></a>En son sürümü Al:
 
--   **Dosya**, **kaynak denetimi**, **en son sürümü Al**.
+- **Dosya**, **kaynak denetimi**, **en son sürümü Al**.
 
--   **Dosya**, **en son sürümü Al**.
+- **Dosya**, **en son sürümü Al**.
 
--   Kısayol menüsünde, **en son sürümü Al**.
+- Kısayol menüsünde, **en son sürümü Al**.
 
--   Al: **Dosya**, **kaynak denetimi**, **alma**.
+- Al: **Dosya**, **kaynak denetimi**, **alma**.
 
 ## <a name="expected-behavior"></a>Beklenen davranış
 

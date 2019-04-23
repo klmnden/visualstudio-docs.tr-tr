@@ -1,5 +1,5 @@
 ---
-title: 'Denetim listesi: Eski dil hizmeti oluşturma | Microsoft Docs'
+title: 'Yapılacaklar listesi: Eski dil hizmeti oluşturma | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077530"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Denetim listesi: Eski dil hizmeti oluşturma
+# <a name="checklist-creating-a-legacy-language-service"></a>Yapılacaklar listesi: Eski Dil Hizmeti oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Aşağıdaki denetim listesini için dil hizmeti oluşturmak için gerçekleştirmeniz gereken temel adımlar özetlenmektedir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çekirdek Düzenleyici. Dil hizmetleriyle tümleştirmeye yönelik [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], hata ayıklama ifade değerlendiricisi oluşturmanız gerekir. Daha fazla bilgi için [CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) içinde [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Dil hizmeti oluşturma adımları  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> arabirimini gerçekleştirin.  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> arabirimini gerçekleştirin.  
   
-    -   VSPackage içinde uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> dil hizmeti sağlamak için arabirim.  
+    - VSPackage içinde uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> dil hizmeti sağlamak için arabirim.  
   
-    -   Dil hizmetinizi tümleşik geliştirme ortamında (IDE) kullanılabilir hale getirmek, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması.  
+    - Dil hizmetinizi tümleşik geliştirme ortamında (IDE) kullanılabilir hale getirmek, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması.  
   
-2.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> ana dil hizmeti sınıfındaki arabirimi.  
+2. Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> ana dil hizmeti sınıfındaki arabirimi.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Arabirimi çekirdek düzenleyici ve dil hizmeti arasındaki etkileşimi başlangıç noktasıdır.  
   
@@ -121,7 +121,7 @@ Aşağıdaki denetim listesini için dil hizmeti oluşturmak için gerçekleşti
   
    Aşağıdaki yollardan biriyle Düzenleyici bağlam sağlayın:  
   
-  -   Bağlam için metin işaretçileri uygulayarak sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi.  
+  - Bağlam için metin işaretçileri uygulayarak sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi.  
   
   Tüm kullanıcı bağlamı uygulama tarafından sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> arabirimi.  
   

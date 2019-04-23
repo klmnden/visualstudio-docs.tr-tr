@@ -14,12 +14,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159a5dd0195cc0cbb244664d75e19d1ac6af3dec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064953"
 ---
 # <a name="vbarray-expected"></a>VBArray bekleniyor
 Temin ettiğiniz beklenen bir Visual Basic SAFEARRAY'i değil bir nesne.  
@@ -32,7 +32,7 @@ new VBArray(safeArray);
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Yalnızca geçirdiğiniz olun **VBArray** nesneleri için **VBArray** Oluşturucusu.  
+- Yalnızca geçirdiğiniz olun **VBArray** nesneleri için **VBArray** Oluşturucusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VBArray nesnesi](../../javascript/reference/vbarray-object-javascript.md)   

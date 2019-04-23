@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
 searchscope: VS Subscription
-ms.openlocfilehash: f0bc688f20b249b86c3a3d5512569feb47789c05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066981"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
@@ -24,8 +24,8 @@ Adımlar avantajınızı etkinleştirmek için seçtiğiniz sürüm bağlıdır.
 ### <a name="digital-edition"></a>Dijital sürüm
 Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 
-1.  Dijital MSDN Edition Magazine'in erişmek için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  MSDN Magazine kutucuk profesyonel geliştirme bölümünde bulun ve tıklatın **erişim**.
+1. Dijital MSDN Edition Magazine'in erişmek için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. MSDN Magazine kutucuk profesyonel geliştirme bölümünde bulun ve tıklatın **erişim**.
 
 ### <a name="printed-edition"></a>Yazdırılabilir sürüm
 1. İçin MSDN Magazine aboneliği almaya başlamak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
@@ -66,5 +66,5 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

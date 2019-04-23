@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078232"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi
 
 Dağıtıp için Yardım içeriği Yöneticisi komut satırı bağımsız değişkenleri kullanarak yerel Yardım içeriğini yönetmek nasıl belirtebilirsiniz (*HlpCtntMgr.exe*). Bu komut satırı aracı için komut dosyalarını yönetici izinleriyle çalıştırmalısınız ve bu betikler, hizmet olarak çalıştıramazsınız. Bu aracı kullanarak aşağıdaki görevleri gerçekleştirebilirsiniz:
 
--   Ekleyin veya bir disk veya buluttan yerel Yardım içeriğini güncelleştirin.
+- Ekleyin veya bir disk veya buluttan yerel Yardım içeriğini güncelleştirin.
 
--   Yerel Yardım içeriğini kaldırın.
+- Yerel Yardım içeriğini kaldırın.
 
--   Yerel Yardım içerik deposunu taşıyın.
+- Yerel Yardım içerik deposunu taşıyın.
 
--   Eklemek, güncelleştirmek, kaldırmak veya yerel Yardım içeriğini sessizce taşıyın.
+- Eklemek, güncelleştirmek, kaldırmak veya yerel Yardım içeriğini sessizce taşıyın.
 
 Sözdizimi:
 

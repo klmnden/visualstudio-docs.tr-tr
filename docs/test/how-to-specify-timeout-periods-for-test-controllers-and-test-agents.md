@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078193"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Nasıl yapılır: Test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları
 
@@ -26,7 +26,7 @@ Test denetleyicisi ve test aracısını hem ne kadar bunlar birbirinden veya bir
 
 Test denetleyicisi veya test aracısın çeşitli zaman aşımı ayarlarını düzenlemek için tablolardaki anahtar isimleri ve değerleri kullanarak aşağıdaki yapılandırma dosyalarını değiştirin:
 
--   Test denetleyicisi: *QTController.exe.config*
+- Test denetleyicisi: *QTController.exe.config*
 
     |Anahtar adı|Açıklama|Değer|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Test denetleyicisi veya test aracısın çeşitli zaman aşımı ayarlarını d�
     |AgentInitializeTimeout|Test çalıştırması iptal edilmeden önce tüm aracıların beklenecek saniye ve veri toplayıcılarının testinin başında başlatmak için çalıştırın. Bu değer, veri toplayıcıları kullanıyorsanız oldukça büyük olmalıdır.|"n" saniye. Varsayılan: "120" (iki dakika).|
     |AgentCleanupTimeout|Ve veri toplayıcılarının temizlemek, test tamamlanmadan önce tüm aracıları için beklenecek saniye sayısı'nı çalıştırın. Bu değer, veri toplayıcıları kullanıyorsanız oldukça büyük olmalıdır.|"n" saniye. Varsayılan: "120" (iki dakika).|
 
--   Test aracısı: *QTAgentService.exe.config*
+- Test aracısı: *QTAgentService.exe.config*
 
     |Anahtar adı|Açıklama|Değer|
     |-|-----------------|-|

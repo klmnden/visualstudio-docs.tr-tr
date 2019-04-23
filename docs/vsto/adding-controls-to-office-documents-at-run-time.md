@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075811"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Office belgelerine çalışma zamanında denetimler ekleme
   Microsoft Office Word belgesi ve Microsoft Office Excel çalışma zamanında denetimler ekleyebilirsiniz. Ayrıca bunları çalışma zamanında kaldırabilirsiniz. Çalışma zamanında ekleyip denetimleri çağrılır *Dinamik denetimleri*.
@@ -44,16 +44,16 @@ ms.locfileid: "56600848"
 
   ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Çalışma zamanında bir belge yüzeyine denetimler eklensin mi? ](http://go.microsoft.com/fwlink/?LinkId=132782).
 
-##  <a name="ControlsCollection"></a> Denetimlerini çalışma zamanında denetim koleksiyonu kullanarak yönetme
+## <a name="ControlsCollection"></a> Denetimlerini çalışma zamanında denetim koleksiyonu kullanarak yönetme
  Ekle, Al veya denetimlerini çalışma zamanında kaldırmak için yardımcı yöntemleri kullanmak <xref:Microsoft.Office.Tools.Excel.ControlCollection> ve <xref:Microsoft.Office.Tools.Word.ControlCollection> nesneleri.
 
  Bu nesnelere erişme şeklini geliştirdiğiniz projenin türüne bağlıdır:
 
--   Excel için belge düzeyi projesinde kullanmak <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> özelliği `Sheet1`, `Sheet2`, ve `Sheet3` sınıfları. Bu sınıflar hakkında daha fazla bilgi için bkz. [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).
+- Excel için belge düzeyi projesinde kullanmak <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> özelliği `Sheet1`, `Sheet2`, ve `Sheet3` sınıfları. Bu sınıflar hakkında daha fazla bilgi için bkz. [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).
 
--   Word için belge düzeyi projede kullanın <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliği `ThisDocument` sınıfı. Bu sınıf hakkında daha fazla bilgi için bkz: [belge konak öğesi](../vsto/document-host-item.md).
+- Word için belge düzeyi projede kullanın <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliği `ThisDocument` sınıfı. Bu sınıf hakkında daha fazla bilgi için bkz: [belge konak öğesi](../vsto/document-host-item.md).
 
--   Bir VSTO eklenti projesinde Excel veya Word kullanın `Controls` özelliği bir <xref:Microsoft.Office.Tools.Excel.Worksheet> veya <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında oluşturan. Çalışma zamanında bu nesneleri oluşturma hakkında daha fazla bilgi için bkz. [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+- Bir VSTO eklenti projesinde Excel veya Word kullanın `Controls` özelliği bir <xref:Microsoft.Office.Tools.Excel.Worksheet> veya <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında oluşturan. Çalışma zamanında bu nesneleri oluşturma hakkında daha fazla bilgi için bkz. [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ### <a name="add-controls"></a>Denetimler ekleme
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> Ve <xref:Microsoft.Office.Tools.Word.ControlCollection> türleri, belgeler ve çalışma için konak denetimleri ve ortak Windows Formları denetimleri eklemek için kullanabileceğiniz yardımcı yöntemler içerir. Her yöntem adı şu biçimdedir `Add` *denetim sınıf*burada *denetim sınıf* eklemek istediğiniz denetim sınıf adıdır. Örneğin, eklemek için bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi kullanın, belgeye <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> yöntemi.
@@ -76,7 +76,7 @@ ms.locfileid: "56600848"
 > [!NOTE]
 >  Program aracılığıyla denetimlerinde kaldırmayın `Shutdown` belgenin olay işleyicisi. UI öğeleri artık kullanılabilir `Shutdown` olayı oluşturulur. Denetimleri belge kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay için olay işleyicisi aşağıdaki gibi eklemek <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> veya <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> Word için veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> Excel için.
 
-##  <a name="HostControls"></a> Konak denetimleri belgelere ekleme
+## <a name="HostControls"></a> Konak denetimleri belgelere ekleme
 
 Konak denetimleri program aracılığıyla belgelere eklediğinizde, denetimin benzersiz olarak tanımlayan bir ad sağlamanız gerekir ve belgeye denetim eklemek nereye belirtmeniz gerekir. Ayrıntılı yönergeler için aşağıdaki konulara bakın:
 
@@ -97,7 +97,7 @@ Bir Belge kaydedildiğinde ve sonra kapalı olduğunda, tüm dinamik olarak olu�
 > [!NOTE]
 > Yardımcı yöntemler sağlanmadı aşağıdaki denetimleri barındırmak için bu denetimleri belgeleri program aracılığıyla eklenemez çünkü: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, ve <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
-##  <a name="WindowsForms"></a> Belgelerine Windows Forms denetimleri ekleme
+## <a name="WindowsForms"></a> Belgelerine Windows Forms denetimleri ekleme
  Belgeye program aracılığıyla bir Windows Forms denetimi eklediğinizde, konumunu denetimi ve denetimin benzersiz olarak tanımlayan bir ad sağlamanız gerekir. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Her denetim için yardımcı yöntemleri sağlar. Bir aralık veya denetimin konumu için belirli bir koordinat geçirebilmeniz bu yöntemler aşırı yüklenmesi sebebiyledir.
 
  Bir Belge kaydedildiğinde ve ardından kapatıldığında, dinamik olarak oluşturulan tüm Windows Formları denetimlerini belgeden kaldırılır. Çözümünüze belge açıldığında denetimleri yeniden oluşturmak için kod ekleyebilirsiniz. Bir VSTO eklentisi kullanarak Windows Forms denetimlerini dinamik oluşturursanız, denetimler için ActiveX sarmalayıcısının belgede kalır. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).

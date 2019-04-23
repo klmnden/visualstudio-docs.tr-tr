@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064290"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
 
 ### <a name="ShowThreadsInSource"></a>İş parçacığı işaret keşfedin  
 
-1.  Hata ayıklama araç seçin **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Hata ayıklama araç seçin **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Tuşuna **F11** hata ayıklayıcı tek satırlık bir kod ilerlemek için bir kez.
 
-3.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda göreceğiniz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") bükümlü iki iş parçacığı benzer şekilde görünür. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
+3. Pencerenin sol tarafındaki cilt payını bakın. Bu satırda göreceğiniz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") bükümlü iki iş parçacığı benzer şekilde görünür. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
 
     Bir iş parçacığı işaret kısmen bir kesme noktası tarafından altına gizlenmiş.
 
-4.  İşaretçi iş parçacığı işaret gelin. Durdurulan her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirten bir DataTip görünür. Bu durumda, muhtemelen adıdır `<noname>`.
+4. İşaretçi iş parçacığı işaret gelin. Durdurulan her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirten bir DataTip görünür. Bu durumda, muhtemelen adıdır `<noname>`.
 
-5.  Kısayol menüsünde kullanılabilir seçenekleri görmek için iş parçacığı işaret seçin.
+5. Kısayol menüsünde kullanılabilir seçenekleri görmek için iş parçacığı işaret seçin.
 
 ### <a name="ParallelStacks"></a>İş parçacığı konumları görüntüleyin
 
@@ -260,7 +260,7 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
     - İki iş parçacığı girmiş `ServerClass.InstanceMethod`, biri olan geçerli iş parçacığı (sarı ok), içinde başka bir iş parçacığı tarafından durdurulduğu sırada `Thread.Sleep`.
     - Yeni bir iş parçacığı (sağdaki) de başlangıç ancak üzerinde durduruldu `ThreadHelper.ThreadStart`.
 
-2.  Girişlere sağ **Paralel Yığınlar** penceresi kısayol menüsünde kullanılabilir seçenekleri görmek için.
+2. Girişlere sağ **Paralel Yığınlar** penceresi kısayol menüsünde kullanılabilir seçenekleri görmek için.
 
     Bu sağ tıklama menülerinde çeşitli eylemleri gerçekleştirebilirsiniz, ancak bu öğretici için size bu ayrıntıları birkaçını göstereceğiz **paralel izleme** penceresi (sonraki bölümlerde).
 
@@ -292,14 +292,14 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
 
     Tüm Seçili iş parçacıklarını işaretlenir. Artık, yalnızca bayraklı iş parçacıklarını gösterecek şekilde filtreleyebilirsiniz.
 
-3.  İçinde **paralel izleme** penceresinde **yalnızca bayraklı iş parçacıklarını Göster** düğmesi ![bayraklı iş parçacıklarını Göster](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. İçinde **paralel izleme** penceresinde **yalnızca bayraklı iş parçacıklarını Göster** düğmesi ![bayraklı iş parçacıklarını Göster](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Yalnızca bayraklı iş parçacıklarını listesinde görünür.
 
     > [!TIP]
     > Bazı iş parçacıkları işaretlediğiniz sonra bir satır kod düzenleyicisinde kod sağ tıklatın ve seçin **çalıştırma bayraklı iş parçacıklarını imlece kadar**. Bayraklı iş parçacıklarını tüm kod ulaşacak seçtiğinizden emin olun. Visual Studio tarafından yürütme sırasını denetlemek kolaylaştırarak seçili bir satır kod iş parçacıklarında duraklatacaktır [dondurma ve iş parçacıklarını çözme](#bkmk_freeze).
 
-4.  Seçin **yalnızca bayraklı iş parçacıklarını Göster** tekrar tekrar açıp kapatmak için düğme **tüm iş parçacıklarını Göster** modu.
+4. Seçin **yalnızca bayraklı iş parçacıklarını Göster** tekrar tekrar açıp kapatmak için düğme **tüm iş parçacıklarını Göster** modu.
 
 5. İş parçacıklarının bayraklarını Kaldır için bir veya daha fazla bayraklı iş parçacıklarını, sağ **paralel izleme** penceresi ve select **Unflag**.
 
@@ -308,17 +308,17 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
 > [!TIP]
 > Dondurma ve çözme (askıya alma ve sürdürme) iş parçacıkları iş gerçekleştirmek sırasını denetlemek için iş parçacığı. Bu, kilitlenmeler gibi eşzamanlılık sorunları çözün ve yarış durumlarına yardımcı olabilir.
 
-1.  İçinde **paralel izleme** penceresinde, seçili tüm sütunları içeren sütuna sağ tıklayıp **dondurma**.
+1. İçinde **paralel izleme** penceresinde, seçili tüm sütunları içeren sütuna sağ tıklayıp **dondurma**.
 
     İkinci sütunda, her satır için bir duraklatma simgesi görünür. Duraklatma simgesi, iş parçacığı'nın dondurulmuş olup olmadığını gösterir.
 
-2.  Diğer tüm satırlar yalnızca bir satır seçerek işaretini kaldırın.
+2. Diğer tüm satırlar yalnızca bir satır seçerek işaretini kaldırın.
 
-3.  Bir satırın sağ tıklayıp **çözme**.
+3. Bir satırın sağ tıklayıp **çözme**.
 
     Duraklatma simgesi iş parçacığı artık dondurulmuş olup olmadığını gösteren bu satırda kaybolduktan.
 
-4.  Geçiş tuşuna basın ve Kod Düzenleyicisi **F11**. Çözülmüş iş parçacığı çalıştırır.
+4. Geçiş tuşuna basın ve Kod Düzenleyicisi **F11**. Çözülmüş iş parçacığı çalıştırır.
 
     Uygulama, bazı yeni iş parçacıkları de örneği. Herhangi bir yeni iş parçacığı bayrak yok ve donuk değil.
 

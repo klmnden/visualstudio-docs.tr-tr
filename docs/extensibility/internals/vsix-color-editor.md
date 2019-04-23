@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074758"
 ---
 # <a name="vsix-color-editor"></a>VSIX Renk Düzenleyicisi
 Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Studio için özel renkler düzenleyebilirsiniz. Renkleri kodda kullanılabilir, böylece aracı tema kaynak anahtarlarını da oluşturabilirsiniz. Bu araç, renk teması oluşturma destekleyen Visual Studio uzantısı yapmak için kullanışlıdır. Bu araç, .pkgdef ve .xml dosyaları açabilirsiniz. Visual Studio temasından (.vstheme dosyaları) ile Visual Studio uzantısı renk Düzenleyicisi için .xml dosya uzantısı değiştirme tarafından kullanılabilir. Ayrıca, .vstheme dosya geçerli bir .xml dosyasına içeri aktarılabilir.
@@ -28,13 +28,13 @@ Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Stud
 
  Bir renk belirteci, dört öğeden oluşur:
 
--   **Kategori adı:** Renkler kümesi için mantıksal bir gruplandırması. İstenen kullanıcı Arabirimi öğesi veya kullanıcı Arabirimi öğeleri grup için özel renkler zaten varsa var olan bir kategori adı kullanın.
+- **Kategori adı:** Renkler kümesi için mantıksal bir gruplandırması. İstenen kullanıcı Arabirimi öğesi veya kullanıcı Arabirimi öğeleri grup için özel renkler zaten varsa var olan bir kategori adı kullanın.
 
--   **Belirteç adı:** Açıklayıcı bir ad için belirteç ve simge rengini ayarlar. Çiftleri ve, uygulandıkları durumları tanımlanması daha kolaydır, böylece bunlar adlandırılmalıdır ve tüm durumlarına yanı sıra arka plan ve ön plan (metin) belirteci adları ayarlar içerir.
+- **Belirteç adı:** Açıklayıcı bir ad için belirteç ve simge rengini ayarlar. Çiftleri ve, uygulandıkları durumları tanımlanması daha kolaydır, böylece bunlar adlandırılmalıdır ve tüm durumlarına yanı sıra arka plan ve ön plan (metin) belirteci adları ayarlar içerir.
 
--   **Renk değerleri (veya tonları):** Her renkli tema için gerekli. Her zaman arka plan ve metin rengi değerleri çiftlerinde oluşturun. Metin (ön plan) rengi her zaman çizilen arka plan rengi karşı okunabilir olması için arka plan/ön plan renkleri eşlenirler. Bu renklerin bağlanır ve kullanıcı Arabiriminde birlikte kullanılır. Arka plan metin ile kullanılmak üzere tasarlanmamıştır, ön plan rengi tanımlamaz.
+- **Renk değerleri (veya tonları):** Her renkli tema için gerekli. Her zaman arka plan ve metin rengi değerleri çiftlerinde oluşturun. Metin (ön plan) rengi her zaman çizilen arka plan rengi karşı okunabilir olması için arka plan/ön plan renkleri eşlenirler. Bu renklerin bağlanır ve kullanıcı Arabiriminde birlikte kullanılır. Arka plan metin ile kullanılmak üzere tasarlanmamıştır, ön plan rengi tanımlamaz.
 
--   **Sistem renk adı:** Yüksek Karşıtlık görüntüler kullanımına yöneliktir.
+- **Sistem renk adı:** Yüksek Karşıtlık görüntüler kullanımına yöneliktir.
 
 ## <a name="how-to-use-the-tool"></a>Aracı'nı kullanma
  Mümkün olduğunca ve uygun olan yerlerde, mevcut Visual Studio renkleri yenilerini yapmak yerine yeniden kullanılabilir. Ancak, hiçbir uygun renkler tanımlandığı durumlarda, özel renkler, bir uzantı Tema oluşturma uyumlu tutmak oluşturulmalıdır.
@@ -53,7 +53,7 @@ Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Stud
 
 5. Değişiklikler Visual Studio'daki test edin.
 
-   **1. adım: Yeni renk belirteçleri için kategori ve belirteç adlarını belirleyin.**
+   **1. Adım: Yeni renk belirteçleri için kategori ve belirteç adlarını belirleyin.**
 
    Tercih edilen adlandırma şeması için bir VSColor **[Category] [UI türü] [durumu]**. Yedekli olduğu gibi "renk" sözcüğü VSColor adları kullanmayın.
 
@@ -95,11 +95,11 @@ Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Stud
 
 - ListItemDisabledBorder
 
-  **2. adım: Kullanıcı Arabirimi öğesi için yüksek karşıtlık her teması ve sistem renk için kullanacağı tonları seçin.**
+  **2. Adım: Kullanıcı Arabirimi öğesi için yüksek karşıtlık her teması ve sistem renk için kullanacağı tonları seçin.**
 
   Özel renkler için kullanıcı Arabirimi seçerken, benzer ve var olan bir kullanıcı Arabirimi öğesi seçin ve renklerini temel olarak kullanın. Uygun ara ve tüm doğru şekilde davranmaz incelemesi ve testi, renkler, hazır kullanıcı Arabirimi öğeleri için yapılmıştır.
 
-  **3. adım: Yeni renk belirteçler oluşturmak için renk düzenleyicisini kullanın.**
+  **3. Adım: Yeni renk belirteçler oluşturmak için renk düzenleyicisini kullanın.**
 
   Renk düzenleyicisini başlatın ve yeni bir özel tema renkleri .xml dosyasını oluşturun veya açın. Seçin **Düzenle > Yeni renk** menüsünde. Bu kategoriyi belirten bir iletişim kutusu ve o kategorideki renk girişi için bir veya daha fazla adları açar:
 
@@ -129,7 +129,7 @@ Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Stud
 
   Renk belirteçlerini düzenleme oluşturma ve ayarlama işiniz bittiğinde, istenen .xml ya da .pkgdef biçiminde kaydedin. Hiçbiri ile bir arka plan rengi belirteçleri veya ön plan kümesi boş renkler .xml biçiminde olarak kaydedilir, ancak .pkgdef biçiminde atıldı. .Pkgdef dosyası için boş renklerini Kaydet denerseniz, bir iletişim kutusu rengi kaybı, sizi uyarır.
 
-  **4. adım: Visual Studio Uzantısı'nda renkleri kullanın.**
+  **4. Adım: Visual Studio Uzantısı'nda renkleri kullanın.**
 
   Yeni renk tanımlama sonra belirteçleri, "Derleme"İçerik"olarak ayarlama eylemi" ile proje dosyasında .pkgdef içerir ve "VSIX içinde dahil" "True" olarak ayarlayın.
 
@@ -179,7 +179,7 @@ namespace MyCustomColors
 </UserControl>
 ```
 
- **5. adım: Değişiklikler Visual Studio'daki test edin.**
+ **5. Adım: Değişiklikler Visual Studio'daki test edin.**
 
  Renk Düzenleyicisi Visual Studio uzantı paketi derlenmeden renkleri için Canlı değişiklikleri görüntülemek için çalışan örneklerini renk belirteçleri geçici olarak uygulayabilirsiniz. Bunu yapmak için her bir tema sütunun başlığına bulunan "Bu tema, Visual Studio windows çalıştıran için uygulama" düğmesini tıklatın. VSIX renk Düzenleyicisi kapalı olduğunda bu geçici bir tema kaybolur.
 

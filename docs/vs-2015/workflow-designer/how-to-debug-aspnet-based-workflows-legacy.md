@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069603"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Nasıl yapılır: ASP.NET Tabanlı İş Akışlarında Hata Ayıklama (Eski)
 Bu konu, hata ayıklamak açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-tabanlı [!INCLUDE[wf](../includes/wf-md.md)] ya da hedefleyen uygulamalar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] eski içinde [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -28,25 +28,25 @@ Bu konu, hata ayıklamak açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.m
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Bir ASP.NET tabanlı iş akışı hata ayıklama  
   
-1.  Ayarlayarak ASP.NET uygulaması için hata ayıklamayı etkinleştir **debug = true** web.config dosyasında.  
+1. Ayarlayarak ASP.NET uygulaması için hata ayıklamayı etkinleştir **debug = true** web.config dosyasında.  
   
-2.  İş akışı kitaplığı başlangıç projesi olarak ayarlayın ve iş akışını kesme noktaları ayarlayın.  
+2. İş akışı kitaplığı başlangıç projesi olarak ayarlayın ve iş akışını kesme noktaları ayarlayın.  
   
-3.  İş akışı Proje özelliklerinde varsayılan Web sayfasının URL'sini girin **hata ayıklama** seçeneği **dış URL ile başlangıç tarayıcı** metin kutusu.  
+3. İş akışı Proje özelliklerinde varsayılan Web sayfasının URL'sini girin **hata ayıklama** seçeneği **dış URL ile başlangıç tarayıcı** metin kutusu.  
   
-4.  Seçin **iliştirme** üzerinde **hata ayıklama** menüsü.  
+4. Seçin **iliştirme** üzerinde **hata ayıklama** menüsü.  
   
-5.  İşlem iliştirmek **kullanılabilir işlemler** listesi.  
+5. İşlem iliştirmek **kullanılabilir işlemler** listesi.  
   
      İş akışı barındıran w3wp.exe, webdev.webserver veya aspnet_wp işlemine iliştirin.  
   
-6.  Tıklayın **seçin** yanındaki **eklemek için** metin kutusu.  
+6. Tıklayın **seçin** yanındaki **eklemek için** metin kutusu.  
   
      **Kod türünü seç** iletişim kutusu görüntülenir.  
   
-7.  Seçin **bu tür kodlarda hata ayıklama** seçip **iş akışı**.  
+7. Seçin **bu tür kodlarda hata ayıklama** seçip **iş akışı**.  
   
-8.  **Tamam**'ı tıklatın.  
+8. **Tamam**'ı tıklatın.  
   
 9. Tıklayın **ekleme**.  
   

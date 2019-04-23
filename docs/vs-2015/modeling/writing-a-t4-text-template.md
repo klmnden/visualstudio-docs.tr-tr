@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067645"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -184,7 +184,7 @@ private void WriteSquareLine(int i)
   
 ## <a name="using-external-definitions"></a>Dış tanımlar kullanma  
   
-### <a name="assemblies"></a>Derlemeleri  
+### <a name="assemblies"></a>Bütünleştirilmiş kodlar  
  Kod blokları şablonunuzun en sık tanımlanan kullanım türleri kullanılabilir System.dll gibi .NET derlemeleri. Ayrıca, diğer .NET derlemelerini veya kendi derlemelere başvurabilir. Bir yol veya bir derlemenin tanımlayıcı ad sağlayabilirsiniz:  
   
 ```  
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
   
  Daha fazla bilgi için [T4 içe aktarma yönergesi](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a> Kod ve metin gibi  
+### <a name="Include"></a> Kod ve metin gibi  
  `include` Yönergesi, başka bir şablon dosyasından metin ekler. Örneğin, bu yönerge içeriğini ekler `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  

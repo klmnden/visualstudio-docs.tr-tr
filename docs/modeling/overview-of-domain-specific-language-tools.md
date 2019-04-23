@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078245"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 Visual Studio'da barındırılan, etki alanına özgü dil Araçları (DSL araçları), bir etki alanına özgü dil tasarlayın ve kullanıcıların diline dayalı modeller oluşturmak için gereken her şeyi oluşturmak olanak tanır.
 
  Aşağıdaki araçlar, DSL araçları dahil edilmiştir:
 
--   Alana özgü dilinizi geliştirmeye başlamanıza yardımcı olmak için farklı çözüm şablonları kullanan bir Proje Sihirbazı.
+- Alana özgü dilinizi geliştirmeye başlamanıza yardımcı olmak için farklı çözüm şablonları kullanan bir Proje Sihirbazı.
 
--   Oluşturma ve düzenleme, etki alanına özgü dil tanımı için bir grafik Tasarımcı.
+- Oluşturma ve düzenleme, etki alanına özgü dil tanımı için bir grafik Tasarımcı.
 
--   Etki alanına özgü dil tanımı iyi biçimlendirilmemiş ve ilgili sorun varsa, hataları ve uyarıları görüntüler xenapp'i doğrulama motoru.
+- Etki alanına özgü dil tanımı iyi biçimlendirilmemiş ve ilgili sorun varsa, hataları ve uyarıları görüntüler xenapp'i doğrulama motoru.
 
--   Etki alanına özgü dil tanımıma girdi olarak alır ve çıktı olarak kaynak kodu üretir bir kod Oluşturucu.
+- Etki alanına özgü dil tanımıma girdi olarak alır ve çıktı olarak kaynak kodu üretir bir kod Oluşturucu.
 
 ## <a name="the-dsl-tools-solution"></a>DSL araçları çözümü
  Etki alanına özgü Tasarımcısı Sihirbazı'nı aşağıdaki çözüm şablonlarını sunar:

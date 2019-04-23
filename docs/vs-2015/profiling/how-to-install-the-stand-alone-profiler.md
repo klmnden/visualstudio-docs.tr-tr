@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cbdffb9a1d2ec2631f87d47ae8146735296c0613
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069672"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Nasıl yapılır: Tek başına Profiler'ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,28 +29,28 @@ ms.locfileid: "54756964"
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Bağımsız profil oluşturucuyu yükleme  
   
-1.  Bağımsız Profil yükleyicisini (vs_profiler.exe) bulmak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yükleme medyasında dizine \Standalone Profiler yolu içerir ve çalıştırın.  
+1. Bağımsız Profil yükleyicisini (vs_profiler.exe) bulmak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yükleme medyasında dizine \Standalone Profiler yolu içerir ve çalıştırın.  
   
-2.  Vsintr.exe ve msdis150.dll yollarını sistem yoluna ekleyin.  
+2. Vsintr.exe ve msdis150.dll yollarını sistem yoluna ekleyin.  
   
     > [!NOTE]
     >  Varsayılan yüklemede [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe ve msdis150.dll \Program Files\Visual Studio 10\Team Araçlar\Performans araçları içinde bulunur.  
   
-3.  Komut isteminde **Vsınstr**.  
+3. Komut isteminde **Vsınstr**.  
   
     > [!NOTE]
     >  Vsinstr.exe yönelik kullanım bilgilerini gösterilirse, her şeyin doğru şekilde ayarlanır. Vsinstr.exe belirten bir hata göreceğiniz ya da bağımlılıklarından biri bulunamadı, cihazınızdaki yollar 2. adımda açıklandığı gibi doğru şekilde ayarlanmış olduğundan emin olun.  
   
-4.  Sembol sunucusu ayarlamak, **_NT_SYMBOL_PATH** değişkenini **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
+4. Sembol sunucusu ayarlamak, **_NT_SYMBOL_PATH** değişkenini **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
-5.  Sistem ortam değişkenlerini kullanarak sembol sunucunuz ayarladıktan sonra komut satırından profil oluşturucu Araçlar yeni bir komut isteminde çalıştırın. Bu, etkili olması yeni ortam değişkenlerini tanır. Komut İstemi penceresinde aşağıdaki komutu yazın:  
+5. Sistem ortam değişkenlerini kullanarak sembol sunucunuz ayarladıktan sonra komut satırından profil oluşturucu Araçlar yeni bir komut isteminde çalıştırın. Bu, etkili olması yeni ortam değişkenlerini tanır. Komut İstemi penceresinde aşağıdaki komutu yazın:  
   
      **COMSPEC % Başlat**  
   
     > [!NOTE]
     >  Sembol sunucusu paketi ayarlama konusunda ayrıntılı yönergeler için bkz: [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
-6.  Kullanım [VSPerfReport](../profiling/vsperfreport.md) aracı profil oluşturma veri (.vsp) dosyasına, semboller serileştirmek için. Kullanım **VSPerfReport userrulesdirectory packsymbols** anahtarlar. Veri dosyasına eklenmiş semboller yoksa _NT_SYMBOL_PATH ortam değişken kümesi olduğunu emin olun.  
+6. Kullanım [VSPerfReport](../profiling/vsperfreport.md) aracı profil oluşturma veri (.vsp) dosyasına, semboller serileştirmek için. Kullanım **VSPerfReport userrulesdirectory packsymbols** anahtarlar. Veri dosyasına eklenmiş semboller yoksa _NT_SYMBOL_PATH ortam değişken kümesi olduğunu emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md)   

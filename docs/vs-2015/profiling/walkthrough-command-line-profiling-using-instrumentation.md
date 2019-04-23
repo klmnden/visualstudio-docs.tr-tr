@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064699"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>İzlenecek yol: Komut satırı araçları kullanarak profil oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayrıntılı zamanlama toplayıp çağrı sayısı verileri profil oluşturma Araçları'nın izleme metodunu kullanarak tek başına uygulama. Bu kılavuzda, aşağıdaki görevleri yerine getirmiş olacaksınız:  
   
--   Kullanım [Vsınstr](../profiling/vsinstr.md) izleme eklenmiş ikili dosyaları oluşturmak için komut satırı aracı.  
+- Kullanım [Vsınstr](../profiling/vsinstr.md) izleme eklenmiş ikili dosyaları oluşturmak için komut satırı aracı.  
   
--   Kullanım [VSPerfCLREnv](../profiling/vsperfclrenv.md) .NET profil oluşturma verilerini toplamak için ortam değişkenlerini ayarlamak için aracı.  
+- Kullanım [VSPerfCLREnv](../profiling/vsperfclrenv.md) .NET profil oluşturma verilerini toplamak için ortam değişkenlerini ayarlamak için aracı.  
   
--   Kullanım [VSPerfCmd](../profiling/vsperfcmd.md) profil oluşturma verilerini toplamak için aracı.  
+- Kullanım [VSPerfCmd](../profiling/vsperfcmd.md) profil oluşturma verilerini toplamak için aracı.  
   
--   Kullanım [VSPerfReport](../profiling/vsperfreport.md) aracı profil oluşturma verilerinin dosya tabanlı raporlar oluşturmak için.  
+- Kullanım [VSPerfReport](../profiling/vsperfreport.md) aracı profil oluşturma verilerinin dosya tabanlı raporlar oluşturmak için.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   C# Ara anlama  
+- C# Ara anlama  
   
--   Komut satırı araçları ile çalışma anlama Ara  
+- Komut satırı araçları ile çalışma anlama Ara  
   
--   Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md)  
+- Bir kopyasını [PeopleTrax örneği](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir. Daha fazla bilgi için [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+- Profil oluşturma tarafından sağlanan bilgiler ile çalışmak için hata ayıklama sembol bilgisi kullanılabilir olması en iyisidir. Daha fazla bilgi için [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Komut satırı izleme metodunu kullanarak profili oluşturma  
  İzleme profili oluşturulmuş ikili dosyalar özel olarak oluşturulmuş sürümleri işaretlenmiş modülde işlevlere giriş ve çıkış zamanlama bilgilerini toplamak araştırma işlevleri içerir bir profil oluşturma yöntemidir. Bu profil oluşturma yöntemi örnekleme değerinden daha bozucu olduğu için büyük miktarda bir ek yük doğurur. İzlenen ikili dosyaların hatalarını ayıklama veya ikili dosyaları sürüm ve dağıtım için hedeflenmemiş büyük.  
@@ -53,19 +53,19 @@ Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../inc
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Araçlar yöntemini kullanarak PeopleTrax uygulama profiline  
   
-1.  PeopleTrax örneği uygulamayı yüklemek ve yayın sürümünü oluşturun.  
+1. PeopleTrax örneği uygulamayı yüklemek ve yayın sürümünü oluşturun.  
   
-2.  Bir komut istemi penceresi açın ve eklemek **profil oluşturma araçları** yerel yol ortam değişkenine dizin.  
+2. Bir komut istemi penceresi açın ve eklemek **profil oluşturma araçları** yerel yol ortam değişkenine dizin.  
   
-3.  Çalışma dizini PeopleTrax ikili dosyaları içeren dizine geçin.  
+3. Çalışma dizini PeopleTrax ikili dosyaları içeren dizine geçin.  
   
-4.  Dosya tabanlı raporlar içerecek bir dizin oluşturun. Şu komutu yazın:  
+4. Dosya tabanlı raporlar içerecek bir dizin oluşturun. Şu komutu yazın:  
   
     ```  
     md Reports  
     ```  
   
-5.  Uygulama içindeki ikili dosyaları araç haline getirmek için Vsınstr komut satırı aracını kullanın. Komut ayrı satırlarda aşağıdaki komutları yazın:  
+5. Uygulama içindeki ikili dosyaları araç haline getirmek için Vsınstr komut satırı aracını kullanın. Komut ayrı satırlarda aşağıdaki komutları yazın:  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../inc
   
      **Not** varsayılan olarak, özgün dosya belgelenmiş bir yedeğini Vsınstr kaydeder. Yedekleme dosya adı uzantısına sahip. orig. Örneğin, "MyApp.exe" orijinal sürümünü "MyApp.exe.orig" kaydedilecektir  
   
-6.  Uygun ortam değişkenlerini ayarlamak için aşağıdaki komutu yazın:  
+6. Uygun ortam değişkenlerini ayarlamak için aşağıdaki komutu yazın:  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  Profil oluşturucuyu başlatmak için aşağıdaki komutu yazın:  
+7. Profil oluşturucuyu başlatmak için aşağıdaki komutu yazın:  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Profil Oluşturucu izleme modunda başlattıktan sonra veri toplama PeopleTrax.exe işlemini belgelenmiş sürümünü çalıştırın.  
+8. Profil Oluşturucu izleme modunda başlattıktan sonra veri toplama PeopleTrax.exe işlemini belgelenmiş sürümünü çalıştırın.  
   
      **PeopleTrax** uygulama penceresi görünür.  
   

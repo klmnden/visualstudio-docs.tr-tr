@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006de0241b0e0c050670ccc14a835f11db1b260
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072584"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Nasıl yapılır: Hangi DLL'de kilitlendiğini programınızın bulma (C#, C++, Visual Basic F#)
 
@@ -35,19 +35,19 @@ ms.locfileid: "56691442"
 
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Modüller penceresini kullanarak bir kilitlenme burada bulmak için oluştu
 
-1.  Kilitlenme durumu oluştuğu adresini not edin.
+1. Kilitlenme durumu oluştuğu adresini not edin.
 
     Hata iletisinde adresi gösterilmez, DLL tanımlamak için alternatif yöntemler kullanmayı gerekebilir. Bir sistem DLL'i şüpheleniyorsanız yapabilecekleriniz [yük sembolleri](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Microsoft sembol sunucularından hata ayıklama sırasında. Aksi takdirde, gerekebilir [bir döküm dosyası oluşturma](../debugger/using-dump-files.md) yığın yerine bilgi olduğu. Çeşitli [Araçları](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) döküm dosyalarını oluşturmak kullanılabilir.
 
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.
+2. Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.
 
-3.  İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.
+3. İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.
 
-4.  Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.
+4. Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.
 
-5.  Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.
+5. Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.
 
-6.  Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.
+6. Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [DLL Projelerinde Hata Ayıklama](../debugger/debugging-dll-projects.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067046"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Yardım Görüntüleyici'de Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Bu konuda Yardım Görüntüleyici ile karşılaşabileceğiniz sorunlar açıkl
   
 #### <a name="to-activate-windows-search-service"></a>Windows Search hizmetini etkinleştirmek için  
   
-1.  Sunucu Yöneticisi'ni başlatın.  
+1. Sunucu Yöneticisi'ni başlatın.  
   
-2.  Sol gezinti bölmesinde **rolleri**.  
+2. Sol gezinti bölmesinde **rolleri**.  
   
-3.  Rollerin özeti bölmesinde **Rol Ekle**.  
+3. Rollerin özeti bölmesinde **Rol Ekle**.  
   
-4.  Dosya Hizmetleri rolünü seçin ve ardından **sonraki** düğmesi.  
+4. Dosya Hizmetleri rolünü seçin ve ardından **sonraki** düğmesi.  
   
-5.  Windows Search rol hizmetini seçin.  
+5. Windows Search rol hizmetini seçin.  
   
 ## <a name="additional-resources"></a>Ek Kaynaklar  
  Daha fazla bilgi edinin ve şu kaynakları kullanarak Yardım Görüntüleyici hakkında geri bildirim sağlayın:  
