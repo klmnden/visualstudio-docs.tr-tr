@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58807983"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59737320"
 ---
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
@@ -146,7 +146,7 @@ Bu bölümde, bazı Visual Studio ile yapabileceğiniz çok şey denemek için b
 
 ::: moniker range="vs-2017"
 
-Başlamak için [Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ve sisteminize yüklenecek. Modüler yükleyici seçin ve yüklemek sağlayan *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. İçin adımları [bir program oluşturma](#create-a-program), seçtiğinizden emin olun **.NET Core çoklu platform geliştirme** yüklemesi sırasında iş yükü.
+Başlamak için [Visual Studio'yu indirin](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ve sisteminize yüklenecek. Modüler yükleyici seçin ve yüklemek sağlayan *iş yükleri*, programlama dili veya tercih ettiğiniz platform için gerekli özellikler grupları olduğu. İçin adımları [bir program oluşturma](#create-a-program), seçtiğinizden emin olun **.NET Core çoklu platform geliştirme** yüklemesi sırasında iş yükü.
 
 ::: moniker-end
 

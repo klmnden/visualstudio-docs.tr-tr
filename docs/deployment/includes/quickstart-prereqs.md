@@ -1,22 +1,22 @@
 ---
-ms.openlocfilehash: 969b9ecb5dca1802acb70405421614b3c860247e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58051640"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59737318"
 ---
 ## <a name="prerequisites"></a>Önkoşullar
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
   * ASP.NET: **ASP.NET ve web geliştirme**
   * Python: **Python geliştirme**
   * Node.js: **Node.js geliştirme**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
   * ASP.NET: **ASP.NET ve web geliştirme**
   * Python: **Python geliştirme**
   * Node.js: **Node.js geliştirme**
