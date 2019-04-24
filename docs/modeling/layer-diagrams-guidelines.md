@@ -1,5 +1,5 @@
 ---
-title: 'Bağımlılık diyagramları: Kuralları'
+title: 'Bağımlılık Diyagramları: Kuralları'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090123"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 
@@ -39,21 +39,21 @@ Aşağıdaki adımlar, geliştirme süreci içinde bağımlılık diyagramları 
 > [!NOTE]
 > Bu adımlar, yaklaşık sırada görünür. Büyük olasılıkla, görevleri çakışma, bunları kendi durumunuza uygun olarak yeniden sıralayabilir ve bunları, projenizdeki her yineleme başlangıcında yeniden ziyaret isteyeceksiniz.
 
-1.  [Bir bağımlılık diyagramı oluşturma](#Create) tüm uygulama veya içerdiği bir katman.
+1. [Bir bağımlılık diyagramı oluşturma](#Create) tüm uygulama veya içerdiği bir katman.
 
-2.  [Birincil işlev alanı ve bileşenine göstermek için katman tanımlama](#CreateLayers) uygulamanızın. Bu katmanlar, işlevlerine göre örneğin, "Sunu" veya "Hizmetler" olarak adlandırın. Bir Visual Studio çözümünüz varsa, her katman koleksiyonu ile ilişkilendirebilirsiniz *yapıtları*projeleri, ad alanları, dosyalar vb. gibi.
+2. [Birincil işlev alanı ve bileşenine göstermek için katman tanımlama](#CreateLayers) uygulamanızın. Bu katmanlar, işlevlerine göre örneğin, "Sunu" veya "Hizmetler" olarak adlandırın. Bir Visual Studio çözümünüz varsa, her katman koleksiyonu ile ilişkilendirebilirsiniz *yapıtları*projeleri, ad alanları, dosyalar vb. gibi.
 
-3.  [Varolan bağımlılıkları keşfetme](#Generate) katmanlar arasında.
+3. [Varolan bağımlılıkları keşfetme](#Generate) katmanlar arasında.
 
-4.  [Katmanları ve bağımlılıkları düzenleme](#EditArchitecture) güncelleştirilmiş gösterecek şekilde yansıtmak için kodu istediğiniz tasarım.
+4. [Katmanları ve bağımlılıkları düzenleme](#EditArchitecture) güncelleştirilmiş gösterecek şekilde yansıtmak için kodu istediğiniz tasarım.
 
-5.  [Tasarım, uygulamanızın yeni alanlar](#NewAreas) asıl mimari blok veya bileşenleri temsil etmek için katmanlar oluşturarak ve her katmanın diğerlerinden nasıl kullandığını gösterilecek bağımlılıklarını tanımlama.
+5. [Tasarım, uygulamanızın yeni alanlar](#NewAreas) asıl mimari blok veya bileşenleri temsil etmek için katmanlar oluşturarak ve her katmanın diğerlerinden nasıl kullandığını gösterilecek bağımlılıklarını tanımlama.
 
-6.  [Düzen ve diyagram görünümünü Düzenle](#EditLayout) arkadaşlarınızla tartışmak yardımcı olacak.
+6. [Düzen ve diyagram görünümünü Düzenle](#EditLayout) arkadaşlarınızla tartışmak yardımcı olacak.
 
-7.  [Bağımlılık diyagramına karşı kodu doğrulamak](#Validate) kod ve mimari arasındaki çakışmaları vurgulayın.
+7. [Bağımlılık diyagramına karşı kodu doğrulamak](#Validate) kod ve mimari arasındaki çakışmaları vurgulayın.
 
-8.  [Yeni Mimarinizi uymak için kodu güncelleştirmeniz](#UpdateCode). Yinelemeli olarak geliştirin ve çakışma olmadığından doğrulama gösterir kadar kodu yeniden düzenleyin.
+8. [Yeni Mimarinizi uymak için kodu güncelleştirmeniz](#UpdateCode). Yinelemeli olarak geliştirin ve çakışma olmadığından doğrulama gösterir kadar kodu yeniden düzenleyin.
 
 9. [Derleme işleminde katman doğrulamasını içerecek](#BuildValidation) kod tasarımınıza devam etmesini sağlamak için.
 
@@ -79,11 +79,11 @@ Kod Haritaları, bilmediğiniz bir uygulamayı güncelleştirirken de oluşturab
 
 Bkz.
 
--   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
+- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
+- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Katmanlar arasındaki mevcut bağımlılıklara keşfedin
 
@@ -123,13 +123,13 @@ Durum bu değilse, kod ömrü boyunca değiştirmek daha zor olacaktır ve daha 
 
 Yeni projede yeni bir proje veya yeni bir alan geliştirme başlattığınızda, katmanları ve bağımlılıkları kod geliştirmeye başlamadan önce ana bileşenleri belirlemenize yardımcı olması için çizebilirsiniz.
 
--   **Tanımlanabilen mimari desenleri Göster** Mümkünse, bağımlılık diyagramları içinde. Örneğin, bir masaüstü uygulamasını tanımlayan bir bağımlılık diyagramı Katmanlar sunusu, etki alanı mantığı ve veri Store gibi içerebilir. Bir uygulama içinde tek bir özellik kapsayan bir bağımlılık diyagramı Katmanlar gibi Model, Görünüm ve denetleyici olabilir. Desenler hakkında daha fazla bilgi için bkz. [desenler ve uygulamalar: Uygulama Mimarisi](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Tanımlanabilen mimari desenleri Göster** Mümkünse, bağımlılık diyagramları içinde. Örneğin, bir masaüstü uygulamasını tanımlayan bir bağımlılık diyagramı Katmanlar sunusu, etki alanı mantığı ve veri Store gibi içerebilir. Bir uygulama içinde tek bir özellik kapsayan bir bağımlılık diyagramı Katmanlar gibi Model, Görünüm ve denetleyici olabilir. Desenler hakkında daha fazla bilgi için bkz. [desenler ve uygulamalar: Uygulama Mimarisi](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Her katman için bir kod yapısı oluşturma** gibi bir ad alanı, sınıf veya bileşeni. Bu kodu izler ve kod yapıları katmanlara bağlamak için kolaylaştırır. Her bir yapıt oluşturma hemen sonra uygun katmana bağlayın.
+- **Her katman için bir kod yapısı oluşturma** gibi bir ad alanı, sınıf veya bileşeni. Bu kodu izler ve kod yapıları katmanlara bağlamak için kolaylaştırır. Her bir yapıt oluşturma hemen sonra uygun katmana bağlayın.
 
--   **Çoğu sınıf ve diğer yapıları katmanlara bağlamak zorunda değilsiniz** katmanlara zaten bağlı ad alanları gibi daha büyük yapılar aralığında olduğundan.
+- **Çoğu sınıf ve diğer yapıları katmanlara bağlamak zorunda değilsiniz** katmanlara zaten bağlı ad alanları gibi daha büyük yapılar aralığında olduğundan.
 
--   **Yeni bir özellik için yeni bir diyagram oluşturma**. Genellikle, tüm uygulama tanımlayan bir veya daha fazla bağımlılık diyagramları olacaktır. Uygulamanın içinde yeni bir özellik tasarlıyorsanız, eklemeyin veya mevcut diyagramları değiştirin. Bunun yerine, yeni kod parçalarını yansıtır kendi diyagramı oluşturun. Yeni Diyagram Katmanlar sunusu, etki alanı mantığı ve yeni özellik için veritabanı katmanları içerebilir.
+- **Yeni bir özellik için yeni bir diyagram oluşturma**. Genellikle, tüm uygulama tanımlayan bir veya daha fazla bağımlılık diyagramları olacaktır. Uygulamanın içinde yeni bir özellik tasarlıyorsanız, eklemeyin veya mevcut diyagramları değiştirin. Bunun yerine, yeni kod parçalarını yansıtır kendi diyagramı oluşturun. Yeni Diyagram Katmanlar sunusu, etki alanı mantığı ve yeni özellik için veritabanı katmanları içerebilir.
 
      Uygulamayı oluşturduğunuzda, kodunuzu hem genel diyagramı ve daha ayrıntılı özellik diyagramınızı karşı doğrulanır.
 
@@ -137,11 +137,11 @@ Yeni projede yeni bir proje veya yeni bir alan geliştirme başlattığınızda,
 
 Katmanları ve bağımlılıkları tanımlayın veya bunları ekip üyeleriyle tartışmanıza yardımcı olması için aşağıdaki yollarla diyagramın düzenini ve görünümü düzenleyin:
 
--   Boyutları, şekiller ve Katmanlar konumlarını değiştirin.
+- Boyutları, şekiller ve Katmanlar konumlarını değiştirin.
 
--   Katmanları ve bağımlılıkları renklerini değiştirin.
+- Katmanları ve bağımlılıkları renklerini değiştirin.
 
-    -   Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.
+    - Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.
 
 ## <a name="Validate"></a> Kodu diyagrama karşı doğrulayın
 
@@ -149,17 +149,17 @@ Diyagram düzenledikten sonra oluşturduğunuz her zaman istediğiniz zaman el i
 
 Bkz.
 
--   [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
+- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Derleme işleminde katman doğrulamasını içerecek](#BuildValidation)
+- [Derleme işleminde katman doğrulamasını içerecek](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Yeni mimarinize uygun olması için kodu güncelleştirme
 
 Genellikle, hatalar ilk kez kodu güncelleştirilmiş bağımlılık diyagramıyla karşılaştırarak doğrulayın görünecektir. Bu hatalar, birkaç nedeni olabilir:
 
--   Yapı yanlış katmana atanmış. Bu durumda, yapıyı taşıyın.
+- Yapı yanlış katmana atanmış. Bu durumda, yapıyı taşıyın.
 
--   Sınıf gibi bir yapı, başka bir sınıfı mimarinizle çakışacak şekilde kullanıyor. Bu durumda, bağımlılığı kaldırmak için kodu yeniden düzenleyin.
+- Sınıf gibi bir yapı, başka bir sınıfı mimarinizle çakışacak şekilde kullanıyor. Bu durumda, bağımlılığı kaldırmak için kodu yeniden düzenleyin.
 
 Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene kadar kodu güncelleştirin. Bu genellikle yinelemeli bir işlemdir. Bu hatalar hakkında daha fazla bilgi için bkz. [bağımlılık diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MT
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102633"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Özel proje ve öğe şablonları Visual Studio 2017 için yükseltin
 
@@ -32,36 +32,36 @@ Diğer (kullanıcı olmayan) konumları için konumu ve diğer özellikleri de �
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Bir VSIX uzantısı, proje veya öğe şablonları ile güncelleştirme
 
-1.  Çözümü Visual Studio 2017'de açın. Yükseltme kodu istenir. **Tamam**'ı tıklatın.
+1. Çözümü Visual Studio 2017'de açın. Yükseltme kodu istenir. **Tamam**'ı tıklatın.
 
-2.  Yükseltme tamamlandıktan sonra yükleme hedef sürümünü değiştirmeniz gerekebilir. VSIX projesinde source.extension.vsixmanifest dosyasını açın ve seçin **hedefleri Yükle** sekmesi. Varsa **sürüm aralığı** alandır **[14.0]**, tıklayın **Düzenle** ve Visual Studio 2017 içerecek şekilde değiştirin. Örneğin, ayarlayabilirsiniz **[14.0,15.0]** Visual Studio 2015 veya Visual Studio 2017 veya için uzantıyı yüklemek için **[15.0]** yalnızca Visual Studio 2017'ye yüklemek için.
+2. Yükseltme tamamlandıktan sonra yükleme hedef sürümünü değiştirmeniz gerekebilir. VSIX projesinde source.extension.vsixmanifest dosyasını açın ve seçin **hedefleri Yükle** sekmesi. Varsa **sürüm aralığı** alandır **[14.0]**, tıklayın **Düzenle** ve Visual Studio 2017 içerecek şekilde değiştirin. Örneğin, ayarlayabilirsiniz **[14.0,15.0]** Visual Studio 2015 veya Visual Studio 2017 veya için uzantıyı yüklemek için **[15.0]** yalnızca Visual Studio 2017'ye yüklemek için.
 
-3.  Kodu yeniden derleyin.
+3. Kodu yeniden derleyin.
 
-4.  Visual Studio’yu kapatın.
+4. Visual Studio’yu kapatın.
 
-5.  VSIX yükleyin.
+5. VSIX yükleyin.
 
-6.  Güncelleştirme, aşağıdakileri yaparak test edebilirsiniz:
+6. Güncelleştirme, aşağıdakileri yaparak test edebilirsiniz:
 
-    1.  Dosya değişikliği tarama, aşağıdaki kayıt defteri anahtarı tarafından etkinleştirilir:
+    1. Dosya değişikliği tarama, aşağıdaki kayıt defteri anahtarı tarafından etkinleştirilir:
 
          **reg hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32 Ekle**
 
-    2.  Anahtarı ekledikten sonra Çalıştır **devenv /installvstemplates**.
+    2. Anahtarı ekledikten sonra Çalıştır **devenv /installvstemplates**.
 
-    3.  Visual Studio'yu yeniden açın. Beklenen konumda şablonunuzu bulmanız gerekir.
+    3. Visual Studio'yu yeniden açın. Beklenen konumda şablonunuzu bulmanız gerekir.
 
     > [!NOTE]
     >  Visual Studio genişletilebilirlik proje şablonları kayıt defteri anahtarı mevcut olduğunda kullanılabilir değil. Kayıt defteri anahtarı silmelisiniz (ve yeniden **devenv /installvstemplates**) bunları kullanmak için.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Proje ve öğe şablonlarını dağıtmak için diğer öneriler
 
--   Sıkıştırılmış şablon dosyaları kullanmaktan kaçının. Şablon kaynakları ve içerik almak için açılması gereken dosya daraltılmış, bu nedenle bunlar kullanılacak costlier olur. Bunun yerine, şablon başlatma ' hızlandırmak için kendi dizin altında tek tek dosya olarak proje ve öğe şablonlarını dağıtmanız gerekir. VSIX uzantıları için SDK derleme görevleri otomatik olarak herhangi bir daraltılmış şablon VSIX dosyasını oluştururken sıkıştırmasını.
+- Sıkıştırılmış şablon dosyaları kullanmaktan kaçının. Şablon kaynakları ve içerik almak için açılması gereken dosya daraltılmış, bu nedenle bunlar kullanılacak costlier olur. Bunun yerine, şablon başlatma ' hızlandırmak için kendi dizin altında tek tek dosya olarak proje ve öğe şablonlarını dağıtmanız gerekir. VSIX uzantıları için SDK derleme görevleri otomatik olarak herhangi bir daraltılmış şablon VSIX dosyasını oluştururken sıkıştırmasını.
 
--   Paket/kaynak kimliği girdileri, şablon adı, açıklaması, simge için kullanmaktan kaçının veya şablon keşfi sırasında gereksiz kaynak derleme yüklerini önlemek için Önizleme. Bunun yerine, yerelleştirilmiş bildirimler yerelleştirilmiş adlar veya özellikleri kullanan her yerel ayar için bir şablon girişi oluşturmak için kullanabilirsiniz.
+- Paket/kaynak kimliği girdileri, şablon adı, açıklaması, simge için kullanmaktan kaçının veya şablon keşfi sırasında gereksiz kaynak derleme yüklerini önlemek için Önizleme. Bunun yerine, yerelleştirilmiş bildirimler yerelleştirilmiş adlar veya özellikleri kullanan her yerel ayar için bir şablon girişi oluşturmak için kullanabilirsiniz.
 
--   Şablon olarak dosya öğeleri dahil olmak üzere, bildirim oluşturma, beklenen sonuçları sağlamayabilir. Bu durumda, VSIX projesine el ile oluşturulmuş bir bildirim eklemeniz gerekir.
+- Şablon olarak dosya öğeleri dahil olmak üzere, bildirim oluşturma, beklenen sonuçları sağlamayabilir. Bu durumda, VSIX projesine el ile oluşturulmuş bir bildirim eklemeniz gerekir.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Proje ve öğe şablonlarını dosya değişiklikleri
 Böylece yeni dosyaları doğru bir şekilde oluşturabilir Visual Studio 2015 ve Visual Studio 2017 sürümleri şablon dosyaları arasındaki fark noktalarını göstereceğiz.

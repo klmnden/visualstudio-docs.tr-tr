@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050316"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Nasıl yapılır: Paralel İzleme penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
   
 ### <a name="to-display-the-parallel-watch-window"></a>Paralel İzleme penceresini görüntülemek için  
   
-1.  Kodda bir kesme noktası ayarlayın.  
+1. Kodda bir kesme noktası ayarlayın.  
   
-2.  Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**. Uygulama kesme noktasına ulaşmak bekler.  
+2. Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**. Uygulama kesme noktasına ulaşmak bekler.  
   
-3.  Menü çubuğunda, **hata ayıklama**, **Windows**, **paralel izleme**, Gözcü penceresi seçin. Dört adede kadar windows açabilirsiniz.  
+3. Menü çubuğunda, **hata ayıklama**, **Windows**, **paralel izleme**, Gözcü penceresi seçin. Dört adede kadar windows açabilirsiniz.  
   
 ### <a name="to-add-a-watch-expression"></a>Bir Gözcü ifadesini eklemek için  
   
--   Seçin  **\<Gözcü Ekle >** ve ardından bir Gözcü ifadesini belirtin.  
+- Seçin  **\<Gözcü Ekle >** ve ardından bir Gözcü ifadesini belirtin.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Bir iş parçacığını işaretleme veya işaretini kaldırma için  
   
--   Satır için bayrak sütunu seçin veya iş parçacığı için kısayol menüsünü açın ve seçin **bayrağı** veya **Unflag**.  
+- Satır için bayrak sütunu seçin veya iş parçacığı için kısayol menüsünü açın ve seçin **bayrağı** veya **Unflag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için  
   
--   Sadece bayrak eklenmiş Göster düğmesini seçin sol üst köşesinde **paralel izleme** penceresi.  
+- Sadece bayrak eklenmiş Göster düğmesini seçin sol üst köşesinde **paralel izleme** penceresi.  
   
 ### <a name="to-switch-frames"></a>Çerçeve geçiş yapmak için  
   
--   Çerçeve sütunu çift tıklayın. (Klavye: Satırı seçin ve Enter tuşuna basın.)  
+- Çerçeve sütunu çift tıklayın. (Klavye: Satırı seçin ve Enter tuşuna basın.)  
   
 ### <a name="to-sort-a-column"></a>Bir sütunu sıralamak için  
   
--   Sütun başlığı seçin.  
+- Sütun başlığı seçin.  
   
 ### <a name="to-group-threads"></a>İş parçacıklarını gruplandırma  
   
--   Paralel İzleme penceresi kısayol menüsünü açın, **Group By**ve ardından uygun alt öğeyi seçin.  
+- Paralel İzleme penceresi kısayol menüsünü açın, **Group By**ve ardından uygun alt öğeyi seçin.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Dondurma veya çözme iş parçacığı  
   
--   Satır için kısayol menüsünü açın ve seçin **dondurma** veya **çözme**.  
+- Satır için kısayol menüsünü açın ve seçin **dondurma** veya **çözme**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Paralel İzleme penceresinde verileri dışarı aktarmak için  
   
--   Seçin **Excel'de Aç** düğmesine ve ardından **Excel'de Aç** veya **CSV'ye aktar**.  
+- Seçin **Excel'de Aç** düğmesine ve ardından **Excel'de Aç** veya **CSV'ye aktar**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Bir Boole ifadesine göre filtre uygulamak için  
   
--   Bir Boole ifadesi girin **Boole ifadesine göre filtrele** kutusu. Hata ayıklayıcı, her iş parçacığı bağlamı için ifadeyi hesaplar. Değeri satır `true` görüntülenir.  
+- Bir Boole ifadesi girin **Boole ifadesine göre filtrele** kutusu. Hata ayıklayıcı, her iş parçacığı bağlamı için ifadeyi hesaplar. Değeri satır `true` görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

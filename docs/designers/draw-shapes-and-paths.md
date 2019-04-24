@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104583"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 
@@ -21,7 +21,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
 Şekiller ve yollar iyi yüksek çözünürlüklü ekranlar için ölçeklendirme vektör grafik kullanın. Vektör grafikleri hakkında daha fazla bilgi edinmek istiyorsanız bkz [vektör grafikleri nelerdir](https://www.youtube.com/watch?v=MoCSwF0n-io) veya [vektör grafikleri](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Bir şekil çizme
+## <a name="Shape"></a> Bir şekil çizme
  Şekillerde bulabilirsiniz **varlıklar** paneli.
 
  ![Şekil kategorisini varlıklar paneli](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Bir yol çizin
+## <a name="Path"></a> Bir yol çizin
  Bir dizi bağlantılı çizgiler ve eğrilerdir yoludur. Kullanılamayan, ilginç şekiller oluşturmak için bir yol kullanın **varlıklar** paneli.
 
  Bir yolu, bir satır, Kalem ve kağıt kullanarak çizebilirsiniz. Bu araçlarda bulabilirsiniz **Araçları** paneli.
@@ -80,12 +80,12 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
  Kullanım **seçimi** aracı ![seçim aracını](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) yolunu seçin. Kullanım **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) noktası eklemek istediğiniz yola göre herhangi bir yeri tıklatın.
 
-##  <a name="Convert"></a> Bir şekli bir yola Dönüştür
+## <a name="Convert"></a> Bir şekli bir yola Dönüştür
  Bir şekli bir yolu değiştirmek yollarla değiştirmek için şekli bir yola Dönüştür.
 
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Yolları Birleştir
+## <a name="Combine"></a> Yolları Birleştir
  Tek bir yol, yol ve Şekil birleştirebilirsiniz.
 
  ![Yolları Birleştir](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Bileşik yol Oluştur
+## <a name="Compound"></a> Bileşik yol Oluştur
  Bileşik yol oluşturduğunuzda, yolların herhangi bir kesişen bölümleri sonuçtan çıkartılır ve sonuçlanan yol en alt yolun görsel özelliklerini kabul eder.
 
  Bileşik yol oluşturduktan sonra istediğiniz zaman parçalara ayırabilirsiniz.
@@ -107,7 +107,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Bir kırpma yolunu oluşturun
+## <a name="Clipping"></a> Bir kırpma yolunu oluşturun
  Bir kırpma yolu, kırpma yolu dışına düşen maskelenmiş nesnenin kısımlarını saklayarak, diğer nesneye uygulanan bir yol veya şekildir.
 
  ![Kırpma yolu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

@@ -8,26 +8,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0b0e50c54aa702fb05732a37b3b363b378fe9c3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087839"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 
 Bu makale, Visual Studio Yardım Görüntüleyicisi Tümleştiriciler için aşağıdaki görevleri içerir:
 
--   Bir konu (F1 desteği) oluşturma
+- Bir konu (F1 desteği) oluşturma
 
--   Yardım Görüntüleyici içeriği marka paket oluşturma
+- Yardım Görüntüleyici içeriği marka paket oluşturma
 
--   Makale bir kümesi dağıtma
+- Makale bir kümesi dağıtma
 
--   Visual Studio Kabuğu (tümleşik veya yalıtılmış) için ekleme Yardımı
+- Visual Studio Kabuğu (tümleşik veya yalıtılmış) için ekleme Yardımı
 
--   Ek Kaynaklar
+- Ek Kaynaklar
 
 ## <a name="create-a-topic-f1-support"></a>Bir konu (F1 desteği) oluşturma
 
@@ -43,37 +43,37 @@ Yardım Görüntüleyici içinde doğru işlenmek üzere ham konu içeriği W3C 
 
 Bir konu genellikle iki bölüm içerir:
 
--   Meta veri (içerik meta veri başvurusu bakın): konu, örneğin, konu benzersiz kimliği, anahtar değeri, içindekiler tablosu kimliği, konu hakkında daha fazla veri üst düğüm kimliği, vs.
+- Meta veri (içerik meta veri başvurusu bakın): konu, örneğin, konu benzersiz kimliği, anahtar değeri, içindekiler tablosu kimliği, konu hakkında daha fazla veri üst düğüm kimliği, vs.
 
--   Gövde içeriği: uyumlu W3C temel 1.1 XHTML ile içeren içerik davranışları (daraltılabilir alan, kod parçacığı, vb. desteklenen Tam bir listesi aşağıda gösterilmiştir).
+- Gövde içeriği: uyumlu W3C temel 1.1 XHTML ile içeren içerik davranışları (daraltılabilir alan, kod parçacığı, vb. desteklenen Tam bir listesi aşağıda gösterilmiştir).
 
 Visual Studio markalama paket denetimleri desteklenir:
 
--   Bağlantılar
+- Bağlantılar
 
--   CodeSnippet
+- CodeSnippet
 
--   CollapsibleArea
+- CollapsibleArea
 
--   Devralınan üye
+- Devralınan üye
 
--   LanguageSpecificText
+- LanguageSpecificText
 
 Desteklenen dil dizeleri (büyük/küçük harfe duyarlı değil):
 
--   JavaScript
+- JavaScript
 
--   CSharp veya c#
+- CSharp veya c#
 
--   cplusplus visualc ++ ya da c ++
+- cplusplus visualc ++ ya da c ++
 
--   JScript
+- JScript
 
--   VisualBasic veya vb
+- VisualBasic veya vb
 
--   f # veya fsharp veya fs
+- f # veya fsharp veya fs
 
--   diğer - dil adını temsil eden bir dize
+- diğer - dil adını temsil eden bir dize
 
 **Yardım Görüntüleyicisi'konusu oluşturuluyor**
 
@@ -94,15 +94,15 @@ ContosoTopic4.htm adlı yeni bir XHTML belge oluşturun ve başlık etiketi (aş
 
 Ardından, nasıl konu (kendi veya markalı), sunulacak nasıl tanımlamak için veri ekleme F1, Kimliğini (için diğer konulara bağlantı başvuruyla) TOC içinde konunun mevcut olduğu için bu konuda başvurmak için vs. Desteklenen meta verileri tam listesi için aşağıdaki "İçerik meta verileri" tabloya bakın.
 
--   Bu durumda, kendi marka paket, Visual Studio Yardım Görüntüleyicisi markalama paketinin bir değişken kullanacağız.
+- Bu durumda, kendi marka paket, Visual Studio Yardım Görüntüleyicisi markalama paketinin bir değişken kullanacağız.
 
--   F1 meta adı ve değeri ekleyin ("Microsoft.Help.F1" içerik "ContosoTopic4" =) IDE özellik paketinde sağlanan F1 değer eşleşir. (Daha fazla bilgi için F1 destek bölümüne bakın.) Bu için F1'e eşleşen değerdir IDE'de F1 seçildiğinde, bu konuda görüntülemek için IDE içinde arama öğesinden.
+- F1 meta adı ve değeri ekleyin ("Microsoft.Help.F1" içerik "ContosoTopic4" =) IDE özellik paketinde sağlanan F1 değer eşleşir. (Daha fazla bilgi için F1 destek bölümüne bakın.) Bu için F1'e eşleşen değerdir IDE'de F1 seçildiğinde, bu konuda görüntülemek için IDE içinde arama öğesinden.
 
--   Konu kimliği Ekle Diğer konular tarafından bu konuya bağlanmak için kullanılan dize budur. Bu konuda Yardım Görüntüleyici kimliği var.
+- Konu kimliği Ekle Diğer konular tarafından bu konuya bağlanmak için kullanılan dize budur. Bu konuda Yardım Görüntüleyici kimliği var.
 
--   TOC için bu konuda İçindekiler düğümü nerede görüneceğini tanımlamak için bu konunun üst düğüm ekleyin.
+- TOC için bu konuda İçindekiler düğümü nerede görüneceğini tanımlamak için bu konunun üst düğüm ekleyin.
 
--   TOC için bu konunun düğüm sırası ekleyin. Üst düğümün olduğunda `n` sayısı alt düğümler, bu konunun alt düğümleri sırasına göre tanımlayın. Örneğin, bu konu başlığı altında 4 4 alt konuları sayısıdır.
+- TOC için bu konunun düğüm sırası ekleyin. Üst düğümün olduğunda `n` sayısı alt düğümler, bu konunun alt düğümleri sırasına göre tanımlayın. Örneğin, bu konu başlığı altında 4 4 alt konuları sayısıdır.
 
 Örnek meta veriler bölümü:
 
@@ -131,17 +131,17 @@ Ardından, nasıl konu (kendi veya markalı), sunulacak nasıl tanımlamak için
 
 Konu gövdesi (üstbilgi ve altbilgi dahil değil) sayfa bağlantılarının, Not bölümü, daraltılabilir bir alan, bir kod parçacığı ve dile özgü metnin bir bölümünü içerir.  Bu alanların hakkında bilgi sunulan konunun marka bölümüne bakın.
 
-1.  Bir konu başlığı etiketi ekleyin:  `<div class="title">Contoso Topic 4</div>`
+1. Bir konu başlığı etiketi ekleyin:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Bir not bölümüne ekleyin: `<div class="alert"> add your table tag and text </div>`
+2. Bir not bölümüne ekleyin: `<div class="alert"> add your table tag and text </div>`
 
-3.  Daraltılabilir bir alan ekleyin:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Daraltılabilir bir alan ekleyin:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Bir kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Bir kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Dile özgü metin kodu ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Unutmayın `devLangnu=` diğer diller girmenizi sağlar. Örneğin, `devLangnu="Fortran"` Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
+5. Dile özgü metin kodu ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Unutmayın `devLangnu=` diğer diller girmenizi sağlar. Örneğin, `devLangnu="Fortran"` Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
 
-6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Not: için desteklenmeyen yeni "Görüntüleme dilini" (örneğin, F#, Cobol, Fortran) kod parçacığında kod renklendirme, tek renkli olacaktır.
@@ -280,27 +280,27 @@ F1 Akış Diyagramı:
 
 Ne zaman çevrimiçi (tarayıcıda başlatılacak) Yardım Görüntüleyicisi varsayılan Yardım içerik kaynağını ayarlayın:
 
--   Visual Studio iş ortağı (VSP) özellikleri F1 özellik paketi (özellik paketi prefix.keyword ve çevrimiçi URL ön eki kayıt defterinde bulundu) bir değer göstermiyor: F1 bir VSP URL + tarayıcıya parametreleri gönderir.
+- Visual Studio iş ortağı (VSP) özellikleri F1 özellik paketi (özellik paketi prefix.keyword ve çevrimiçi URL ön eki kayıt defterinde bulundu) bir değer göstermiyor: F1 bir VSP URL + tarayıcıya parametreleri gönderir.
 
--   Visual Studio özellikleri (dil Düzenleyicisi, Visual Studio özel menü öğeleri, vb.):  F1 bir Visual Studio URL için tarayıcının gönderir.
+- Visual Studio özellikleri (dil Düzenleyicisi, Visual Studio özel menü öğeleri, vb.):  F1 bir Visual Studio URL için tarayıcının gönderir.
 
 Ne zaman yerel Yardım'a (tanıtım Yardım Görüntüleyici'de) Yardım Görüntüleyicisi varsayılan Yardım içerik kaynağını ayarlayın:
 
--   F1 özellik paketi arasında yerel depolama dizini anahtar sözcüğü eşleştiği VSP özellikler (yani, özellik paketi prefix.keyword = yerel depolama dizinde bulunan değeri):  F1 Yardım Görüntüleyici konusundaki işler.
+- F1 özellik paketi arasında yerel depolama dizini anahtar sözcüğü eşleştiği VSP özellikler (yani, özellik paketi prefix.keyword = yerel depolama dizinde bulunan değeri):  F1 Yardım Görüntüleyici konusundaki işler.
 
--   Visual Studio özellikleri (Visual Studio özelliklerinden yayılan özellik paketi geçersiz kılmak VSP seçeneği): F1 Yardım Görüntüleyicisi'nde bir Visual Studio konu işler.
+- Visual Studio özellikleri (Visual Studio özelliklerinden yayılan özellik paketi geçersiz kılmak VSP seçeneği): F1 Yardım Görüntüleyicisi'nde bir Visual Studio konu işler.
 
 F1'e geri dönüş için satıcı Yardım içeriğini etkinleştirmek için aşağıdaki kayıt defteri değerlerini ayarlayın. F1'e geri dönüş, Yardım Görüntüleyici F1 Yardımı için içerik aramak için çevrimiçi ayarlanır ve satıcı içeriği yerel olarak kullanıcıların sabit diske yüklenecek anlamına gelir. Varsayılan ayar için çevrimiçi yardıma olsa bile Yardım Görüntüleyici yerel Yardım içerik için bakmak.
 
 1. Ayarlama **VendorContent** altındaki Yardım 2.3 kayıt defteri anahtarı değeri:
 
-   -   32 bit işletim sistemleri için:
+   - 32 bit işletim sistemleri için:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword: 00000001
 
-   -   64-bit işletim sistemleri için:
+   - 64-bit işletim sistemleri için:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -328,9 +328,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 F1 anahtar zaman üstbilgi/YÖNTEM karşılaşılanaa Biçim '/' karakteri, aşağıdaki yapısı içinde elde edilen ayrıştırılır:
 
--   Başlık: kayıt defterine kaydetmek için kullanılan ad olacaktır.
+- Başlık: kayıt defterine kaydetmek için kullanılan ad olacaktır.
 
--   YÖNTEM: Bu aracılığıyla iletilir anahtar sözcüğü olur.
+- YÖNTEM: Bu aracılığıyla iletilir anahtar sözcüğü olur.
 
 Örneğin, verilen CustomLibrary adlı özel bir kitaplık ve istek içinde gelen bir F1 olarak biçimlendirilmiş MyTestMethod, adında bir yöntem `CustomLibrary/MyTestMethod`.
 
@@ -383,55 +383,55 @@ Visual Studio sürüm, Visual Studio iş ortakları için yalıtılmış ve tüm
 
 Marka paketleri Yardım Görüntüleyicisi'ni içeren ürün tarafından yüklenir.  Visual Studio ürünleri için:
 
--   Bir geri dönüş marka paket (Branding_\<yerel ayar > .mshc) Yardım Görüntüleyicisi 2.3 uygulama kök dizininde yüklü (örnek: C:\Program dosyaları (x86) \Microsoft Help Viewer\v2.3) Yardım Görüntüleyicisi dil paketi tarafından.  Bu paket marka ürün yüklü olmayan durumlar için kullanılır (içerik yüklendi) veya yüklü paketleri şu marka burada bozuk.  Uygulama kök geri dönüş marka paketi kullanıldığında, Visual Studio öğelerini (logosu ve geri bildirim) göz ardı edilir.
+- Bir geri dönüş marka paket (Branding_\<yerel ayar > .mshc) Yardım Görüntüleyicisi 2.3 uygulama kök dizininde yüklü (örnek: C:\Program dosyaları (x86) \Microsoft Help Viewer\v2.3) Yardım Görüntüleyicisi dil paketi tarafından.  Bu paket marka ürün yüklü olmayan durumlar için kullanılır (içerik yüklendi) veya yüklü paketleri şu marka burada bozuk.  Uygulama kök geri dönüş marka paketi kullanıldığında, Visual Studio öğelerini (logosu ve geri bildirim) göz ardı edilir.
 
--   Visual Studio içeriği içerik paket hizmetini yüklendiğinde bir marka paket de (ilk zaman içerik yükleme senaryosu için) yüklenir.  Marka paketine bir güncelleştirme varsa, güncelleştirmeyi içerik İleri güncelleştirmeyi veya ek paket yükleme eylemi olduğunda yüklenir.
+- Visual Studio içeriği içerik paket hizmetini yüklendiğinde bir marka paket de (ilk zaman içerik yükleme senaryosu için) yüklenir.  Marka paketine bir güncelleştirme varsa, güncelleştirmeyi içerik İleri güncelleştirmeyi veya ek paket yükleme eylemi olduğunda yüklenir.
 
 Microsoft Yardım Görüntüleyici, konu meta verileri temel alarak konuları marka destekler.
 
--   Burada konu meta verilerini kendi kendine markalı tanımlar = true, olduğu gibi konu oluşturma, (sunulan ürünün kendinde markalama) hiçbir şey yapma.
+- Burada konu meta verilerini kendi kendine markalı tanımlar = true, olduğu gibi konu oluşturma, (sunulan ürünün kendinde markalama) hiçbir şey yapma.
 
--   Burada konu meta verilerini kendi kendine markalı tanımlar = false, TopicVendor meta verileri değeriyle ilişkili marka paketi kullanın.
+- Burada konu meta verilerini kendi kendine markalı tanımlar = false, TopicVendor meta verileri değeriyle ilişkili marka paketi kullanın.
 
--   Burada name="Microsoft.Help.TopicVendor konu meta verileri tanımlayan" içerik =\< satıcı MSHA marka paket adı >, içerik değeri tanımlanan marka paketi kullanın.
+- Burada name="Microsoft.Help.TopicVendor konu meta verileri tanımlayan" içerik =\< satıcı MSHA marka paket adı >, içerik değeri tanımlanan marka paketi kullanın.
 
--   Visual Studio katalog içinde bir öncelik uygulama paketlerinin marka yoktur.  İlk Visual Studio varsayılan marka uygulanır ve sonra konu meta verilerde tanımlanan ve desteklenen ilişkili markalama paketini (yükleme msha içinde tanımlandığı şekilde), satıcı tanımlı marka bir geçersiz kılma uygulanır.
+- Visual Studio katalog içinde bir öncelik uygulama paketlerinin marka yoktur.  İlk Visual Studio varsayılan marka uygulanır ve sonra konu meta verilerde tanımlanan ve desteklenen ilişkili markalama paketini (yükleme msha içinde tanımlandığı şekilde), satıcı tanımlı marka bir geçersiz kılma uygulanır.
 
 Marka öğeleri genellikle üç ana kategoriye ayrılır:
 
--   Üstbilgi öğeleri (örnekler geri bildirim bağlantısı, koşullu sorumluluk reddi metnini, logosu)
+- Üstbilgi öğeleri (örnekler geri bildirim bağlantısı, koşullu sorumluluk reddi metnini, logosu)
 
--   (Örnekler Genişlet/Daralt denetim metin öğelerini içerir ve kod parçacığı öğeleri) davranışlarını içerik
+- (Örnekler Genişlet/Daralt denetim metin öğelerini içerir ve kod parçacığı öğeleri) davranışlarını içerik
 
--   Alt öğeleri (örneğin telif hakkı)
+- Alt öğeleri (örneğin telif hakkı)
 
 Markalı öğeleri olarak dikkate öğeler (Bu belirtim ayrıntılı):
 
--   Katalog/ürün logo (örneğin, Visual Studio)
+- Katalog/ürün logo (örneğin, Visual Studio)
 
--   Geri bildirim bağlantısı ve e-posta öğeleri
+- Geri bildirim bağlantısı ve e-posta öğeleri
 
--   Vazgeçme
+- Vazgeçme
 
--   Telif Hakkı metin
+- Telif Hakkı metin
 
 Visual Studio Yardım Görüntüleyicisi marka paketindeki destek dosyalarını içerir:
 
--   Grafik (logolar, simgeler, vb.)
+- Grafik (logolar, simgeler, vb.)
 
--   Branding.js - destekleyici içerik davranışları betik dosyaları
+- Branding.js - destekleyici içerik davranışları betik dosyaları
 
--   Branding.xml - içerik arasında tutarlı bir şekilde kullanılan dizelerin katalog.  Not: Visual Studio yerelleştirme branding.xml metin öğeleri eklemek için _locID = "\<benzersiz değer >"
+- Branding.xml - içerik arasında tutarlı bir şekilde kullanılan dizelerin katalog.  Not: Visual Studio yerelleştirme branding.xml metin öğeleri eklemek için _locID = "\<benzersiz değer >"
 
--   Branding.CSS - stil tanımları için sunu tutarlılık
+- Branding.CSS - stil tanımları için sunu tutarlılık
 
--   Printing.css - tutarlı yazdırılan sunum için Stil tanımları
+- Printing.css - tutarlı yazdırılan sunum için Stil tanımları
 
 Yukarıda belirtildiği gibi marka paketleri konu ile ilişkilidir:
 
--   Zaman SelfBranded = false meta verilerde tanımlanan, konu paket marka Kataloğu devralır
+- Zaman SelfBranded = false meta verilerde tanımlanan, konu paket marka Kataloğu devralır
 
--   Veya SelfBranded = false ve var. benzersiz bir marka paketi MSHA ve kullanılabilir içeriği yüklendiğinde tanımlanır
+- Veya SelfBranded = false ve var. benzersiz bir marka paketi MSHA ve kullanılabilir içeriği yüklendiğinde tanımlanır
 
 VSPs özel marka paketleri uygulamak için (VSP içerik SelfBranded = True), devam etmek için bir yoludur (Yardım Görüntüleyici ile yüklü) geri dönüş marka paket başlayın ve uygun olarak dosyanın adını değiştirmek için.  Branding_\<yerel ayar > .mshc dosyasıdır .mshc için değiştirilen dosya uzantısına sahip bir zip dosyası, bu nedenle yalnızca uzantısı .mshc .zip olarak değiştirin ve içeriğini ayıklayın.  Marka paket öğeleri için aşağıya bakın ve uygun şekilde değiştirin (örneğin, VSP logosu ve başvuru Branding.xml dosya logo logosunu değiştirmek, Branding.xml güncelleştirme VSP özellikleri, vb.).
 
@@ -589,9 +589,9 @@ Bir dizi anahtar bilgileri açıklayan hangi içerik kümelerini yüklü bir bö
 
 Visual Studio Yardım Görüntüleyicisi marka paketi, Visual Studio Yardım tutarlı içerik sunum desteklemek için iki css dosyaları içerir:
 
--   Branding.css - where işlemeye css öğeleri içeren SelfBranded = false
+- Branding.css - where işlemeye css öğeleri içeren SelfBranded = false
 
--   Printer.css - where işlemeye css öğeleri içeren SelfBranded = false
+- Printer.css - where işlemeye css öğeleri içeren SelfBranded = false
 
 Branding.css dosyaları, Visual Studio konu sunu için tanımları içerir (uyarı olduğu branding.css Branding_ içinde yer alan\<yerel ayar > paket hizmetinden .mshc değişebilir).
 
@@ -649,11 +649,11 @@ Not: uygulaması aşağıdaki örnekte, marka paketini ekledik. Bu içerik davra
 </div>.
 ```
 
-1.  "C:\SampleContent" gibi yerel bir klasör oluşturun
+1. "C:\SampleContent" gibi yerel bir klasör oluşturun
 
-2.  Bu örnekte, konuları içerecek şekilde MSHC dosyaları kullanacağız.  Bir MSHC zip .zip olarak değiştirildi dosya uzantısına sahip olur. MSHC.
+2. Bu örnekte, konuları içerecek şekilde MSHC dosyaları kullanacağız.  Bir MSHC zip .zip olarak değiştirildi dosya uzantısına sahip olur. MSHC.
 
-3.  Oluşturma bir metin dosyası olarak HelpContentSetup.msha aşağıda (Not Defteri dosyası oluşturmak için kullanılan) ve yukarıda belirtilenler klasörüne kaydedin (1. adıma bakın).
+3. Oluşturma bir metin dosyası olarak HelpContentSetup.msha aşağıda (Not Defteri dosyası oluşturmak için kullanılan) ve yukarıda belirtilenler klasörüne kaydedin (1. adıma bakın).
 
 "Markalama" var ve benzersiz sınıfı. Marka mshc marka yüklü içeriği sahiptir ve marka pakette yer alan uygun destek öğeleri MSHCs içinde bulunan içerik davranışları olur böylece bu temel bilgiler dahil edilir. Sistem (yüklü) kopyalanan parçası olmayan destek öğeleri için içerik göründüğünde bu olmadan hatalara neden olabilecek.
 
@@ -703,9 +703,9 @@ Bu izlenecek yol, Yardım içeriğini bir Visual Studio Shell uygulamaya eklemen
 
 **Gereksinimler**
 
-1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
+1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Visual Studio 2013 Shell yeniden dağıtılabilir yalıtılmış](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+2. [Visual Studio 2013 Shell yeniden dağıtılabilir yalıtılmış](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **Genel bakış**
 
@@ -721,9 +721,9 @@ Yalıtılmış kabuk tabanlı bir uygulama ve onun Yardım oluşturmaya yönelik
 
 Visual Studio İçerik depolama alanı oluşturun. Tümleşik Kabuk senaryo için görsel Studio12 ürün kataloğu adına gibi değiştirin:
 
--   Klasör C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 oluşturun.
+- Klasör C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 oluşturun.
 
--   CatalogType.xml adlı bir dosya oluşturun ve klasöre ekleyin. Dosya, aşağıdaki kod satırlarını içermesi gerekir:
+- CatalogType.xml adlı bir dosya oluşturun ve klasöre ekleyin. Dosya, aşağıdaki kod satırlarını içermesi gerekir:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -744,13 +744,13 @@ Visual Studio İçerik depolama alanı oluşturun. Tümleşik Kabuk senaryo içi
 
 Yalıtılmış kabuk uzantısını oluşturmak için:
 
-1.  Visual Studio'da altında **dosya**, seçin **yeni proje**altında **diğer proje türleri** seçin **genişletilebilirlik**, seçin **Visual Studio Kabuğu yalıtılmış**. Projeyi adlandırın `ContosoHelpShell`) Visual Studio yalıtılmış Kabuğu şablonu temel alan bir genişletilebilirlik projesi oluşturmak için.
+1. Visual Studio'da altında **dosya**, seçin **yeni proje**altında **diğer proje türleri** seçin **genişletilebilirlik**, seçin **Visual Studio Kabuğu yalıtılmış**. Projeyi adlandırın `ContosoHelpShell`) Visual Studio yalıtılmış Kabuğu şablonu temel alan bir genişletilebilirlik projesi oluşturmak için.
 
-2.  Çözüm Gezgini'nde ApplicationCommands.vsct ContosoHelpShellUI projesinde, kaynak dosyalar klasöründe açın. Bu satırı ("No_Help" aratın) kılınmıştır emin olun: `<!-- <define name="No_HelpMenuCommands"/> -->`
+2. Çözüm Gezgini'nde ApplicationCommands.vsct ContosoHelpShellUI projesinde, kaynak dosyalar klasöründe açın. Bu satırı ("No_Help" aratın) kılınmıştır emin olun: `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3.  Derlemek ve çalıştırmak için F5 tuşuna basın **hata ayıklama**. Yalıtılmış Kabuk IDE Deneysel örneğini seçin **yardımcı** menüsü. Emin olun **Yardımı Görüntüle**, **kaldırmak Yardım içeriğini Ekle ve**, ve **Yardım tercihini Ayarla** komut belirir.
+3. Derlemek ve çalıştırmak için F5 tuşuna basın **hata ayıklama**. Yalıtılmış Kabuk IDE Deneysel örneğini seçin **yardımcı** menüsü. Emin olun **Yardımı Görüntüle**, **kaldırmak Yardım içeriğini Ekle ve**, ve **Yardım tercihini Ayarla** komut belirir.
 
-4.  Çözüm Gezgini'nde ContosoHelpShell.pkgdef ContosHelpShell projede Kabuğu özelleştirme klasörü açın. Contoso Yardım kataloğu tanımlamak için aşağıdaki satırları ekleyin:
+4. Çözüm Gezgini'nde ContosoHelpShell.pkgdef ContosHelpShell projede Kabuğu özelleştirme klasörü açın. Contoso Yardım kataloğu tanımlamak için aşağıdaki satırları ekleyin:
 
     ```
      [$RootKey$\Help]
@@ -760,7 +760,7 @@ Yalıtılmış kabuk uzantısını oluşturmak için:
     "BrandingPackage"="ContosoBrandingPackage.mshc"
     ```
 
-5.  Çözüm Gezgini'nde ContosoHelpShell.Application.pkgdef ContosHelpShell projede Kabuğu özelleştirme klasörü açın. F1 Yardımı'nı etkinleştirmek için aşağıdaki satırları ekleyin:
+5. Çözüm Gezgini'nde ContosoHelpShell.Application.pkgdef ContosHelpShell projede Kabuğu özelleştirme klasörü açın. F1 Yardımı'nı etkinleştirmek için aşağıdaki satırları ekleyin:
 
     ```
     // F1 Help Provider
@@ -776,9 +776,9 @@ Yalıtılmış kabuk uzantısını oluşturmak için:
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6.  Çözüm Gezgini'nde ContosoHelpShell çözümün bağlam menüsünü seçin **özellikleri** menü öğesi. Altında **yapılandırma özellikleri**seçin **Configuration Manager**. İçinde **yapılandırma** sütun, "Sürüm" için "Debug" her bir değeri değiştirin.
+6. Çözüm Gezgini'nde ContosoHelpShell çözümün bağlam menüsünü seçin **özellikleri** menü öğesi. Altında **yapılandırma özellikleri**seçin **Configuration Manager**. İçinde **yapılandırma** sütun, "Sürüm" için "Debug" her bir değeri değiştirin.
 
-7.  Çözümü oluşturun. Sonraki bölümde kullanılacak olan bir yayın klasördeki bir dosya kümesini oluşturur.
+7. Çözümü oluşturun. Sonraki bölümde kullanılacak olan bir yayın klasördeki bir dosya kümesini oluşturur.
 
 Dağıtılmışsa, bunu test etmek için:
 

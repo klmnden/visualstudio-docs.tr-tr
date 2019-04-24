@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099019"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu makale, Visual Studio Yardım Görüntüleyicisi Tümleştiriciler için aşağıdaki görevleri içerir:
 
--   Bir konu (F1 desteği) oluşturma
+- Bir konu (F1 desteği) oluşturma
 
--   Yardım Görüntüleyici içeriği marka paket oluşturma
+- Yardım Görüntüleyici içeriği marka paket oluşturma
 
--   Makale bir kümesi dağıtma
+- Makale bir kümesi dağıtma
 
--   Visual Studio Kabuğu (tümleşik veya yalıtılmış) için ekleme Yardımı
+- Visual Studio Kabuğu (tümleşik veya yalıtılmış) için ekleme Yardımı
 
--   Ek Kaynaklar
+- Ek Kaynaklar
 
 ### <a name="creating-a-topic-f1-support"></a>Bir konu (F1 desteği) oluşturma
  Bu bölümde sunulan bir konu, konunun gereksinimleri, işlenmiş sonucuyla (F1 destek gereksinimleri dahil) konu ve son olarak, bir örnek konusu oluşturma için kısa bir açıklama Bileşenleri'ne genel bakış sağlar.
@@ -132,17 +132,17 @@ Bu makale, Visual Studio Yardım Görüntüleyicisi Tümleştiriciler için aşa
 
  Konu gövdesi (üstbilgi ve altbilgi dahil değil) sayfa bağlantılarının, Not bölümü, daraltılabilir bir alan, bir kod parçacığı ve dil belirli metnin bir bölümünü içerir.  Bu alanların hakkında bilgi sunulan konunun marka bölümüne bakın.
 
-1.  Bir konu başlığı etiketi ekleyin:  `<div class="title">Contoso Topic 4</div>`
+1. Bir konu başlığı etiketi ekleyin:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Bir not bölümüne ekleyin: `<div class="alert"> add your table tag and text </div>`
+2. Bir not bölümüne ekleyin: `<div class="alert"> add your table tag and text </div>`
 
-3.  Daraltılabilir bir alan ekleyin:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Daraltılabilir bir alan ekleyin:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Bir kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Bir kod parçacığını ekleyin:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Kod dili belirli bir metni ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Bu devLangnu Not = diğer diller girmenizi sağlar. Örneğin, devLangnu = "Fortran" Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
+5. Kod dili belirli bir metni ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Bu devLangnu Not = diğer diller girmenizi sağlar. Örneğin, devLangnu = "Fortran" Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
 
-6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Not: için desteklenmeyen yeni "Görüntüleme dilini" (örneğin, F#, Cobol, Fortran) kod parçacığında kod renklendirme, tek renkli olacaktır.
@@ -296,13 +296,13 @@ some F# code
 
 1. Ayarlama **VendorContent** altındaki Yardım 2.1 kayıt defteri anahtarı değeri:
 
-   -   32 bit işletim sistemleri için:
+   - 32 bit işletim sistemleri için:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent" = dword: 00000001
 
-   -   64-bit işletim sistemleri için:
+   - 64-bit işletim sistemleri için:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -439,7 +439,7 @@ some F# code
 |Özellik:|**CollapsibleArea**|
 |Kullanım:|Daraltır içerik denetimi metni Genişlet|
 |**Öğe**|**Değer**|
-|ExpandText|Genişletin|
+|ExpandText|Expand|
 |CollapseText|Daralt|
 |Özellik:|**CodeSnippet**|
 |Kullanım:|Kod parçacığı denetim metin.  Not: Kod parçacığı içerikle "Bölünemez" alanı için alan değiştirilecektir.|

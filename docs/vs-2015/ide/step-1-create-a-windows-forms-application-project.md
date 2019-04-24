@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add477fd77731f81da4cc0ee94f7f7d0c7a09cb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110030"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Windows Forms Uygulaması Projesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
   
 ### <a name="to-create-a-windows-forms-application-project"></a>Bir Windows Forms uygulaması projesi oluşturmak için  
   
-1.  Menü çubuğunda, **dosya**, **yeni**, **proje**. İletişim kutusu şu şekilde görünmelidir.  
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**. İletişim kutusu şu şekilde görünmelidir.  
   
      ![Yeni Proje iletişim kutusu](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts")  
 Yeni Proje iletişim kutusu  
   
-2.  Seçin ya da **Visual C#** veya **Visual Basic** içinde **yüklü şablonlar** listesi.  
+2. Seçin ya da **Visual C#** veya **Visual Basic** içinde **yüklü şablonlar** listesi.  
   
-3.  Şablonlar listesinde **Windows Forms uygulaması** simgesi. Yeni form adı **pictureviewer olarak**ve ardından **Tamam** düğmesi.  
+3. Şablonlar listesinde **Windows Forms uygulaması** simgesi. Yeni form adı **pictureviewer olarak**ve ardından **Tamam** düğmesi.  
   
      Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm için tüm projeleri ve dosyaları, programınızın gerek duyduğu bir kapsayıcı görevi görür. Bu kullanım koşullarını, bu öğreticinin ilerleyen bölümlerinde daha ayrıntılı olarak açıklanacaktır.  
   
-4.  Artık Visual Studio arabiriminde görmeniz gereken aşağıda gösterilmiştir.  
+4. Artık Visual Studio arabiriminde görmeniz gereken aşağıda gösterilmiştir.  
   
     > [!NOTE]
     >  Pencere düzeniniz tam olarak bu çizim gibi görünmeyebilir. Kesin pencere düzeni, Visual Studio, kullandığınız programlama diline ve diğer etkenlere sürümüne bağlıdır. Ancak, tüm üç pencerenin de görüntülendiğini doğrulamanız gerekir.  
@@ -48,18 +48,18 @@ IDE penceresi
   
      Bu pencerelerden biri eksikse, menü çubuğundan seçerek varsayılan pencere düzenini geri **penceresi**, **pencere düzenini Sıfırla**. Windows, menü komutlarını kullanarak da görüntüleyebilirsiniz. Menü çubuğunda, **görünümü**, **Özellikler penceresi** veya **Çözüm Gezgini**. Başka bir pencere açıksa seçerek bunları kapatın **kapatmak** (x), sağ üst köşesinde düğmesini.  
   
-5.  Çizim aşağıdaki pencereleri (sol üst köşeden saat yönünde Giden) göstermektedir:  
+5. Çizim aşağıdaki pencereleri (sol üst köşeden saat yönünde Giden) göstermektedir:  
   
-    -   **Ana pencere** Bu pencerede formlarla çalışma ve kod düzenleme gibi işin çoğunu gerçekleştirirsiniz. Çizimde, pencere, Form Düzenleyicisi'nde bir form gösterir. Pencerenin üst kısmındaki **başlangıç sayfası** sekmesi ve **Form1.cs [Design]** sekmesi görüntülenir. (Visual Basic'te, sekme adı .cs yerine .vb ile biter. cs.)  
+    - **Ana pencere** Bu pencerede formlarla çalışma ve kod düzenleme gibi işin çoğunu gerçekleştirirsiniz. Çizimde, pencere, Form Düzenleyicisi'nde bir form gösterir. Pencerenin üst kısmındaki **başlangıç sayfası** sekmesi ve **Form1.cs [Design]** sekmesi görüntülenir. (Visual Basic'te, sekme adı .cs yerine .vb ile biter. cs.)  
   
-    -   **Çözüm Gezgini penceresinde** Bu pencerede, görüntüleyebilir ve çözümünüzdeki tüm öğelerine gidin. Bir dosyanın içeriğini seçerseniz **özellikleri** penceresi değişiklikler. (Bu .cs Visual C# ve Visual Basic uzantısı .vb ile biten) bir kod dosyası açarsanız kod dosyası veya kod dosyası için bir tasarımcı görünür. Bir tasarımcı, düğmeler ve listeler gibi denetimler ileride ekleyebileceğiniz görsel bir yüzeydir. Visual Studio formları için tasarımcı Windows Form Tasarımcısı olarak adlandırılır.  
+    - **Çözüm Gezgini penceresinde** Bu pencerede, görüntüleyebilir ve çözümünüzdeki tüm öğelerine gidin. Bir dosyanın içeriğini seçerseniz **özellikleri** penceresi değişiklikler. (Bu .cs Visual C# ve Visual Basic uzantısı .vb ile biten) bir kod dosyası açarsanız kod dosyası veya kod dosyası için bir tasarımcı görünür. Bir tasarımcı, düğmeler ve listeler gibi denetimler ileride ekleyebileceğiniz görsel bir yüzeydir. Visual Studio formları için tasarımcı Windows Form Tasarımcısı olarak adlandırılır.  
   
-    -   **Özellikler penceresi** Bu pencerede diğer pencerelerde seçtiğiniz öğelerin özelliklerini değiştirebilirsiniz. Form1 seçerseniz, örneğin, alt başlık ayarlayarak değiştirebileceğiniz **metin** özelliğini değiştirebilirsiniz arka plan rengi ayarlayarak **Backcolor** özelliği.  
+    - **Özellikler penceresi** Bu pencerede diğer pencerelerde seçtiğiniz öğelerin özelliklerini değiştirebilirsiniz. Form1 seçerseniz, örneğin, alt başlık ayarlayarak değiştirebileceğiniz **metin** özelliğini değiştirebilirsiniz arka plan rengi ayarlayarak **Backcolor** özelliği.  
   
     > [!NOTE]
     >  Üst satırı **Çözüm Gezgini** gösterir **çözüm 'Pictureviewer olarak' (1 proje)**, Visual Studio çözüm için oluşturduğunuz anlamına gelir. Bir çözüm birden fazla proje içerebilir ancak şu an için yalnızca bir proje içeren çözümlerle çalışacaksınız.  
   
-6.  Menü çubuğunda, **dosya**, **Tümünü Kaydet**.  
+6. Menü çubuğunda, **dosya**, **Tümünü Kaydet**.  
   
      Alternatif, **Tümünü Kaydet** aşağıdaki çizimin gösterdiği araç çubuğunda düğme.  
   
@@ -70,6 +70,6 @@ Tüm araç çubuğu düğmesi Kaydet
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).  
+- Sonraki öğretici adımına gitmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).  
   
--   Genel Bakış konusuna dönmek için bkz: [öğretici 1: Resim Görüntüleyici oluşturma](../ide/tutorial-1-create-a-picture-viewer.md).
+- Genel Bakış konusuna dönmek için bkz: [öğretici 1: Resim Görüntüleyici oluşturma](../ide/tutorial-1-create-a-picture-viewer.md).

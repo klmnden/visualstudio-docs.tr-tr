@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073438"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
   
 ##### <a name="to-access-unity-documentation"></a>Unity belgeleri erişmek için  
   
--   Visual Studio'da vurgulayın veya Unity hakkında bilgi edinin ve basın istediğiniz API imleci **Ctrl + Alt + M, Ctrl + H**  
+- Visual Studio'da vurgulayın veya Unity hakkında bilgi edinin ve basın istediğiniz API imleci **Ctrl + Alt + M, Ctrl + H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior komut dosyası Sihirbazı  
  Unity içinde çoğu betikleri MonoBehavior sınıftan türetme ve yöntemlerinden bazıları geçersiz kılma uygulanır. Hızlı bir şekilde MonoBehavior yöntemlerinin aşırı istediğiniz boş tanımları oluşturmak için MonoBehavior Sihirbazı'nı kullanabilirsiniz. Bu sihirbazı kullanarak, metotların listesinden aşırı yükleme, burada, kodunuza eklenir ve nasıl kullanıldıkları hakkında yorum eklenip eklenmeyeceğini karar'ı seçin, istediğiniz bir veya daha fazla yöntemleri belirtebilirsiniz.  
@@ -59,13 +59,13 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Hızlı MonoBehavior Sihirbazı'nı kullanarak bir boş MonoBehavior yöntem tanımını oluşturmak için  
   
-1.  Visual Studio'da, eklenmesi, ardından basın yöntemi istediğiniz imleci konumlandırma **Ctrl + Shift + Q** hızlı MonoBehavior sihirbazını başlatmak için. Diğer MonoBehavior Sihirbazı, imleç kasıtlı olarak yeni yönteme eklenen her zaman bu sihirbaz var kullanırken hizalamanız gerekir.  
+1. Visual Studio'da, eklenmesi, ardından basın yöntemi istediğiniz imleci konumlandırma **Ctrl + Shift + Q** hızlı MonoBehavior sihirbazını başlatmak için. Diğer MonoBehavior Sihirbazı, imleç kasıtlı olarak yeni yönteme eklenen her zaman bu sihirbaz var kullanırken hizalamanız gerekir.  
   
-2.  Emin olun sağ alt köşesinde görüntülenen framework sürümü **betik yöntemi oluşturma** penceresi kullandığınız sürüm eşleşir. Eşleşmiyorsa, açılan değerini kullanmak istediğiniz sürüm olarak değiştirin.  
+2. Emin olun sağ alt köşesinde görüntülenen framework sürümü **betik yöntemi oluşturma** penceresi kullandığınız sürüm eşleşir. Eşleşmiyorsa, açılan değerini kullanmak istediğiniz sürüm olarak değiştirin.  
   
-3.  Aşırı yükleme istediğiniz yöntemini bulun. Oluşturma betiği yöntemi penceresinde, metin kutusunda yöntemin adını yazmaya başlayın. Girmiş olduğunuz adları eşleşen yöntemlerin listesi görünür.  
+3. Aşırı yükleme istediğiniz yöntemini bulun. Oluşturma betiği yöntemi penceresinde, metin kutusunda yöntemin adını yazmaya başlayın. Girmiş olduğunuz adları eşleşen yöntemlerin listesi görünür.  
   
-4.  Aşırı yükleme istediğiniz yöntemi seçin. Listeden istediğiniz yöntemi görüntülendiğinde seçin fare ve ok tuşlarıyla tuşuna **Enter**. Listesindeki tek yöntem ise, yalnızca basabilirsiniz **Enter**. Yöntemi, kodunuza eklenir.  
+4. Aşırı yükleme istediğiniz yöntemi seçin. Listeden istediğiniz yöntemi görüntülendiğinde seçin fare ve ok tuşlarıyla tuşuna **Enter**. Listesindeki tek yöntem ise, yalnızca basabilirsiniz **Enter**. Yöntemi, kodunuza eklenir.  
   
 ### <a name="unity-project-explorer"></a>Unity Proje Gezgini  
  Unity Proje Gezgini, Visual Studio içinde Unity projenizde gitmek için kullanabilirsiniz.  
@@ -103,16 +103,16 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 ## <a name="unity-debugging"></a>Unity hata ayıklama  
  Unity için Visual Studio Araçları hem Düzenleyici hem de Visual Studio'nun güçlü hata ayıklayıcısını kullanarak Unity projeniz için oyun betikleri hatalarını ayıklamanıza olanak tanır.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Unity için Visual Studio bağlanma  
+### <a name="connecting-visual-studio-to-unity"></a> Unity için Visual Studio bağlanma  
  Unity için Visual Studio Araçları UDP bağlantı Unity ile iletişim kurar. Başka bir deyişle, yerel olarak çalışan bir Unity örneğine veya ağ üzerindeki herhangi bir tam olarak aynı şekilde bağlanabilirsiniz. Herhangi bir Unity örnekleri kullanarak ağınızda görebilirsiniz bağlanabilir **Unity örneği Seç** iletişim.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Unity örneği Seç iletişim kutusunu açmak için  
   
--   Visual Studio'da ana menüde seçin **hata ayıklama**, **Unity hata ayıklayıcı iliştirmek**.  
+- Visual Studio'da ana menüde seçin **hata ayıklama**, **Unity hata ayıklayıcı iliştirmek**.  
   
      ![Unity, hata ayıklayıcısını İliştir. ](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Veya*, Visual Studio durum çubuğunda Visual Studio'nun sağ alt köşedeki Tak simgesini seçin.  
+- *Veya*, Visual Studio durum çubuğunda Visual Studio'nun sağ alt köşedeki Tak simgesini seçin.  
   
      ![Bu simge, Unity için VSTU bağlı gösterir. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 > [!IMPORTANT]
 >  Unity ve Unity örneği için Visual Studio Araçları bir UDP ağ yuva iletişim kuran olduğundan, bu konuda, güvenlik duvarınızı isteyebilir. Böyle bir durumda VSTU ve Unity iletişim kurabilmesi için bağlantıyı yetkilendirmek zorunda kalırsınız.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Projenize Unity Player'da hata ayıklama  
+### <a name="debugging-your-project-in-a-unity-player"></a> Projenize Unity Player'da hata ayıklama  
  Unity için Visual Studio Araçları, Unity Editor çalışmadığında bir oynatıcı veya platforma özel sorunların hatalarını ayıklamak için çalışan doğrudan Unity uygulamanıza bağlanabilirsiniz.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Unity Player'da hata ayıklamayı etkinleştirmek için  

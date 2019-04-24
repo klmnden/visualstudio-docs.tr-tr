@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045348"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
@@ -128,9 +128,9 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
 
 4. Hata ayıklayıcıyı yüklemek istediğiniz modülleri belirtin **sembol dosyası (.pdb) konumlar** başladığı zaman.
 
-   -  Seçin **aktarılmadıysa tüm modülleri Yükle** (sembol dosyası konumu, özellikle hariç modüller hariç tüm modüller için tüm sembolleri yüklemek için varsayılan). Bazı modüller hariç tutmak için işaretleyin **dışlanan modülleri belirtin**seçin **+** simge modülleri hariç tutmak ve adlarını yazın **Tamam**.
+   - Seçin **aktarılmadıysa tüm modülleri Yükle** (sembol dosyası konumu, özellikle hariç modüller hariç tüm modüller için tüm sembolleri yüklemek için varsayılan). Bazı modüller hariç tutmak için işaretleyin **dışlanan modülleri belirtin**seçin **+** simge modülleri hariç tutmak ve adlarını yazın **Tamam**.
 
-   -  Sembol dosyası konumlardan belirttiğiniz modülleri yüklemek için işaretleyin **yük yalnızca belirtilen modüller**. Seçin **modülleri belirt dahil**seçin **+** simgesi ekleyin ve ardından modülleri adlarını yazın **Tamam**. Diğer modüller için Sembol dosyaları yüklü değil.
+   - Sembol dosyası konumlardan belirttiğiniz modülleri yüklemek için işaretleyin **yük yalnızca belirtilen modüller**. Seçin **modülleri belirt dahil**seçin **+** simgesi ekleyin ve ardından modülleri adlarını yazın **Tamam**. Diğer modüller için Sembol dosyaları yüklü değil.
 
 5. Seçin **Tamam**.
 
@@ -199,7 +199,7 @@ Visual Studio IDE'den standart bir proje oluşturduğunuzda **hata ayıklama** y
 
 Ayarlama *web.config* dosya, ASP.NET uygulamanızın hata ayıklama modu. Hata ayıklama modu ASP.NET'in dinamik olarak oluşturulan dosyalar için sembol oluşturmasına neden olur ve hata ayıklayıcının ASP.NET uygulamasına eklemesine olanak tanır. Visual Studio hata ayıklamak başlattığınızda web proje şablonunu projenizi oluşturduysanız bu otomatik olarak ayarlar.
 
-##  <a name="manage-symbols-while-debugging"></a>Hata ayıklama sırasında sembolleri yönetme
+## <a name="manage-symbols-while-debugging"></a>Hata ayıklama sırasında sembolleri yönetme
 
 Kullanabileceğiniz **modülleri**, **çağrı yığını**, **Yereller**, **Otolar**, veya herhangi **izleyin** penceresi yüklemek için simgeleri veya hata ayıklama sırasında sembol seçeneklerini değiştirin. Daha fazla bilgi için [Hata Ayıklayıcı'nın uygulamanıza nasıl ekleyen daha iyi tanımak](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Hata ayıklama sırasında **modülleri** penceresi kullanıcı kodu veya My Cod
 
 Hata ayıklayıcısı sembol veya kaynak dosyalarına sahip olmayan kod içine kesmeyle girmenin birkaç yolu vardır:
 
--  Kodda ilerleyebilmeniz.
--  Bir kesme noktası veya özel durum koda bölün.
--  Farklı bir iş parçacığına geçiş.
--  Bir çerçevede çift tıklayarak yığın çerçevesini değiştirme **çağrı yığını** penceresi.
+- Kodda ilerleyebilmeniz.
+- Bir kesme noktası veya özel durum koda bölün.
+- Farklı bir iş parçacığına geçiş.
+- Bir çerçevede çift tıklayarak yığın çerçevesini değiştirme **çağrı yığını** penceresi.
 
 Bu durumda, hata ayıklayıcı görüntüler **yüklü sembol yok** veya **yüklü kaynak yok** kaynak ve gerekli sembolleri bilip yardım sayfalarına.
 
@@ -235,11 +235,11 @@ Bu durumda, hata ayıklayıcı görüntüler **yüklü sembol yok** veya **yükl
 
 **Eksik sembolleri bilip yardımcı olmak için yüklü sembol yok belge sayfası kullanmak için:**
 
--   Arama yolunu değiştirmek için seçilmeyen bir yolu seçin veya seçin **yeni yol** veya **yeni VSTS yolu** girin veya yeni bir yol seçin. Seçin **yük** yolları tekrar aramak ve bulunursa sembol dosyasını yüklemek için.
--   Arama yollarını yeniden deneyin ve herhangi bir sembol seçeneklerini geçersiz kılmak için **Gözat ve Bul \<yürütülebilir dosya adı >**. Sembol dosyası bulunursa, yüklendikten veya **dosya Gezgini** sembol dosyasını el ile seçebilmeniz için açar.
--   Açmak için **seçenekleri** > **hata ayıklama** > **sembolleri** sayfasında **sembol ayarlarını değiştir**.
--   Yeni bir pencerede bir defa ayrıştırılmış kodu göstermek için seçin **ayrıştırılmış kodu görüntüle**, ya da seçin **Seçenekleri iletişim kutusu** dosyaları kaynak veya sembol bulunamadığında ayrıştırılmış kodu her zaman göstermek için seçeneği ayarlamak için.
--   Aranan konumları ve sonucu göstermek için genişletin **sembol yükleme bilgisi**.
+- Arama yolunu değiştirmek için seçilmeyen bir yolu seçin veya seçin **yeni yol** veya **yeni VSTS yolu** girin veya yeni bir yol seçin. Seçin **yük** yolları tekrar aramak ve bulunursa sembol dosyasını yüklemek için.
+- Arama yollarını yeniden deneyin ve herhangi bir sembol seçeneklerini geçersiz kılmak için **Gözat ve Bul \<yürütülebilir dosya adı >**. Sembol dosyası bulunursa, yüklendikten veya **dosya Gezgini** sembol dosyasını el ile seçebilmeniz için açar.
+- Açmak için **seçenekleri** > **hata ayıklama** > **sembolleri** sayfasında **sembol ayarlarını değiştir**.
+- Yeni bir pencerede bir defa ayrıştırılmış kodu göstermek için seçin **ayrıştırılmış kodu görüntüle**, ya da seçin **Seçenekleri iletişim kutusu** dosyaları kaynak veya sembol bulunamadığında ayrıştırılmış kodu her zaman göstermek için seçeneği ayarlamak için.
+- Aranan konumları ve sonucu göstermek için genişletin **sembol yükleme bilgisi**.
 
 Hata ayıklayıcı bulursa *.pdb* seçeneklerden birini yürütme ve kaynak dosya bilgileri kullanarak alabilir sonra dosya *.pdb* dosya, kaynak görüntülenir. Aksi halde görüntüler bir **yüklü kaynak yok** sorunu giderebilecek eylemleri için bağlantılarla birlikte sorunu açıklayan bir sayfa.
 

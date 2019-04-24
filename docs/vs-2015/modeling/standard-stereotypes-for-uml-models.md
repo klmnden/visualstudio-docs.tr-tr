@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116595"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML modelleri için standart stereotipler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Bir profili bir model veya paket bağlamak için  
   
-1.  Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
+1. Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
   
-2.  Bir paket veya profildeki stereotiplerin isteyeceksiniz tüm öğelerini içeren model bulun.  
+2. Bir paket veya profildeki stereotiplerin isteyeceksiniz tüm öğelerini içeren model bulun.  
   
-3.  Paket veya model sağ tıklayın ve ardından **özellikleri**.  
+3. Paket veya model sağ tıklayın ve ardından **özellikleri**.  
   
-4.  İçinde **özellikleri** penceresinde **profilleri** istediğiniz profillerine özelliği.  
+4. İçinde **özellikleri** penceresinde **profilleri** istediğiniz profillerine özelliği.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>Bir profili ve bir modeli arasındaki bağlantıyı kaldırın veya paket için  
   
-1.  UML Model Gezgini'nde, model veya paket sağ tıklayın ve ardından **özellikleri**.  
+1. UML Model Gezgini'nde, model veya paket sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Özellikler penceresinde ayarlayın **profilleri** özelliğine boş.  
+2. Özellikler penceresinde ayarlayın **profilleri** özelliğine boş.  
   
     > [!NOTE]
     >  Model veya paketin içinde öğelerin hiçbiri bu profilin stereotiplerini kullanıyorsanız yalnızca bir profili kesebilir.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Bir model öğesine bir stereotip uygulamak için  
   
-1.  Diyagram üzerinde veya buna model öğesine sağ tıklayın **UML Model Gezgini**ve ardından **özellikleri**.  
+1. Diyagram üzerinde veya buna model öğesine sağ tıklayın **UML Model Gezgini**ve ardından **özellikleri**.  
   
-2.  Tıklayın **stereotipler** özelliği ve uygulamak istediğiniz stereotipler seçin.  
+2. Tıklayın **stereotipler** özelliği ve uygulamak istediğiniz stereotipler seçin.  
   
      «Ayraç» içinde model öğesi çoğu öğe türleri için Seçili stereotipler görünür.  
   
     > [!NOTE]
     >  Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
   
-3.  Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
+3. Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
   
-###  <a name="L2"></a> UML profili standart L2  
+### <a name="L2"></a> UML profili standart L2  
  Profil bağlantısını modelden kaldırılmadığı sürece aşağıdaki stereotipler anlamı, UML model öğelerini özelleştirmek için kullanılabilir.  
   
  Bu stereotipler tam anlamı, modeli işlemek için kullanıyor olabileceğiniz herhangi bir aracı ve kendi yerel kuralları tarafından belirlenir.  
@@ -111,7 +111,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
 |türü|örneği|Nesnenin davranışını nasıl uygulandığını bildirmeden belirtir. Bir nesne belirtimine uygun bir tür üyesi ise.|  
 |yardımcı program|örneği|Statik işlevler koleksiyonu. Sınıfının hiçbir örneği yok.|  
   
-###  <a name="L3"></a> UML profili standart L3  
+### <a name="L3"></a> UML profili standart L3  
  Modelden profili bağlantılıysa aşağıdaki stereotipler anlamı, UML model öğelerini özelleştirmek için kullanılabilir.  
   
  Bu stereotipler tam anlamı, modeli işlemek için kullanıyor olabileceğiniz herhangi bir aracı ve kendi yerel kuralları tarafından belirlenir.  
@@ -122,7 +122,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
 |metaModel|Model|UML bir değişken gibi bir modelleme dili veya bir etki alanına özgü dil tanımlar.|  
 |systemModel|Model|Aynı sistemde, örneğin, bir belirtim, gerçekleştirme ve onlar arasındaki ilişkileri izleme geçerli modellerin bir koleksiyonu bir modeli.|  
   
-##  <a name="NetProfile"></a> C# profili  
+## <a name="NetProfile"></a> C# profili  
  Stereotiplerin bu profilde tanımlanan çeviri program kodu için bir model öğesini düşünüldüğünü belirtmenize olanak tanır. Her stereotip ayarlayabileceğiniz model öğesi üzerinde ek özellikleri tanımlar.  
   
  Bu stereotipler kullanılabilir hale getirmek için bir model veya paket için C# profilini bağlayın. Model veya paket model öğelerine stereotipler ardından uygulayabilirsiniz.  

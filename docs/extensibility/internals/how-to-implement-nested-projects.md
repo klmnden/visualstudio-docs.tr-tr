@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105001"
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: İç içe Projeler uygulama
 
@@ -24,18 +24,18 @@ Bir iç içe proje türü oluşturduğunuzda, uygulanması gereken birkaç ek ad
 
 ## <a name="create-nested-projects"></a>İç içe projeler oluşturma
 
-1.  Tümleşik geliştirme ortamı (IDE) çağırarak üst projenin proje dosyası ve başlangıç bilgileri yükler <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> arabirimi. Ana proje oluşturulur ve çözüme eklenir.
+1. Tümleşik geliştirme ortamı (IDE) çağırarak üst projenin proje dosyası ve başlangıç bilgileri yükler <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> arabirimi. Ana proje oluşturulur ve çözüme eklenir.
 
     > [!NOTE]
     > Bu noktada, ana proje alt projeler oluşturulmadan önce oluşturulması gerektiğinden, iç içe proje oluşturmak ana proje işleminde çok erken. Bu sıra ana proje alt projeler için ayarları uygulayabilirsiniz ve alt projeleri, gerekirse üst projelerinden bilgileri elde edebilirsiniz. Bu sırası üzerinde kaynak kodu denetimi (SCC) gibi istemcileri tarafından gerekli durumunda olduğundan ve **Çözüm Gezgini**.
 
      Ana proje beklemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> iç içe geçmiş (alt) projede veya projelerde oluşturmadan önce IDE tarafından çağrılacak yöntem.
 
-2.  IDE çağrıları `QueryInterface` için ana projedeki <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Bu çağrı başarılı olursa, IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> tüm iç içe projeler için ana proje açmak için üst yöntemi.
+2. IDE çağrıları `QueryInterface` için ana projedeki <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Bu çağrı başarılı olursa, IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> tüm iç içe projeler için ana proje açmak için üst yöntemi.
 
-3.  Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> projeleri iç içe geçmiş dinleyicileri bildirmek için yöntemi olan hakkında oluşturulacak. SCC, örneğin, çözüm ve proje oluşturma işlemi adımları sırayla ortaya çıkan öğrenmek için bu olayları dinler. Adımları sıralamaya meydana gelirse, çözümün kaynak kod denetimi ile doğru şekilde kaydedilmemiş olabilir.
+3. Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> projeleri iç içe geçmiş dinleyicileri bildirmek için yöntemi olan hakkında oluşturulacak. SCC, örneğin, çözüm ve proje oluşturma işlemi adımları sırayla ortaya çıkan öğrenmek için bu olayları dinler. Adımları sıralamaya meydana gelirse, çözümün kaynak kod denetimi ile doğru şekilde kaydedilmemiş olabilir.
 
-4.  Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> yöntemi her alt projeleri.
+4. Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> yöntemi her alt projeleri.
 
      Geçirdiğiniz <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> için `AddVirtualProject` yöntemi sanal (iç içe geçmiş) proje yapı tarafından çıkarıldı proje penceresi eklenmesi belirtmek için kaynak kodu denetimi ve benzeri eklendi. `VSADDVPFLAGS` iç içe proje görünürlüğünü denetleme ve işlevler ile ilişkili olduğunu belirten olanak sağlar.
 
@@ -43,15 +43,15 @@ Bir iç içe proje türü oluşturduğunuzda, uygulanması gereken birkaç ek ad
 
      Yoksa hiçbir GUID kullanılabilir gibi yeni bir iç içe geçmiş projesi eklediğinizde, çözüm bir proje için üst eklenen zaman oluşturur. Proje GUID, proje dosyasında kalıcı hale getirmek için üst projenin sorumluluğundadır. İç içe proje silerseniz, bu proje için GUID da silinebilir.
 
-5.  IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> üst projenin her bir alt projeyi yöntemi.
+5. IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> üst projenin her bir alt projeyi yöntemi.
 
      Ana proje uygulamalıdır `IVsParentProject` projeleri iç içe istiyorsanız. Ancak hiçbir zaman çağrıları proje üst `QueryInterface` için `IVsParentProject` üst projeleri altındaki olsa bile. Çözüm çağrısını işler `IVsParentProject` ve uygulanmışsa, çağıran `OpenChildren` iç içe projeler oluşturmak için. `AddVirtualProjectEX` her zaman çağrılır `OpenChildren`. Hiyerarşi oluşturma olayları düzenini korumak için ana proje tarafından hiçbir zaman çağrılmalıdır.
 
-6.  IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> alt projedeki yöntemi.
+6. IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> alt projedeki yöntemi.
 
-7.  Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> dinleyicileri üst alt projeler oluşturulduğunu bildirmek için yöntemi.
+7. Ana proje çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> dinleyicileri üst alt projeler oluşturulduğunu bildirmek için yöntemi.
 
-8.  IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> üst projedeki tüm alt projelerini açtıktan sonra yöntemi.
+8. IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> üst projedeki tüm alt projelerini açtıktan sonra yöntemi.
 
      Zaten yoksa, ana proje iç içe her proje için bir GUID çağırarak oluşturur `CoCreateGuid`.
 

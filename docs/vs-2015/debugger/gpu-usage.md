@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066721"
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Uygulama başlangıcından profil oluşturma ertelemek için:  
   
-1.  Ana menüde seçin **hata ayıklama**, ardından **performans ve tanılama** (klavye: Alt + F2 tuşuna basın).  
+1. Ana menüde seçin **hata ayıklama**, ardından **performans ve tanılama** (klavye: Alt + F2 tuşuna basın).  
   
-2.  Performans ve tanılama hub'ı izleyin **ayarları** yanındaki bağlantı **GPU kullanımı**.  
+2. Performans ve tanılama hub'ı izleyin **ayarları** yanındaki bağlantı **GPU kullanımı**.  
   
-3.  Altında **GPU profili oluşturma Yapılandırması**, **genel** özellik sayfası, NET **uygulama başlangıcında profil oluşturma başlamak** profil oluşturma ertelemek için onay kutusu.  
+3. Altında **GPU profili oluşturma Yapılandırması**, **genel** özellik sayfası, NET **uygulama başlangıcında profil oluşturma başlamak** profil oluşturma ertelemek için onay kutusu.  
   
      ![GPU kullanım verisi toplama başladığında, yapılandırma](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
   
  GPU kullanımı aracı altında uygulamanızı çalıştırdığınızda ek bir bağlantı koleksiyonu profil bilgilerini bu ayarı kullanarak ertelediğinizde, GPU kullanımı aracı pencerenin alt kısmında kullanılabilir hale gelir. Profil bilgilerini toplamaya başlamak için seçin **Başlat** bağlantısını **başlangıç ek toplama ayrıntılı GPU kullanım verilerini** ileti.  
   
-##  <a name="hwsupport"></a> Donanım ve sürücü desteği  
+## <a name="hwsupport"></a> Donanım ve sürücü desteği  
  Aşağıdaki GPU donanım ve sürücüler desteklenir:  
   
 |Satıcı|GPU açıklaması|Gerekli sürücü sürümü|  
@@ -143,10 +143,10 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
   
 ## <a name="see-also"></a>Ayrıca bkz.  
   
--   [Zor olan grafik çözmekte, oyun kullanarak DirectX Araçları (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Zor olan grafik çözmekte, oyun kullanarak DirectX Araçları (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [GPU kullanımı aracı Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [GPU kullanımı aracı Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [GPU kullanımı Aracı'nda Visual Studio 2013 güncelleştirme 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [GPU kullanımı Aracı'nda Visual Studio 2013 güncelleştirme 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [(Blog) Visual Studio'da DirectX GPU kullanımı](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [(Blog) Visual Studio'da DirectX GPU kullanımı](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
