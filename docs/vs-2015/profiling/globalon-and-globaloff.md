@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434234"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn ve GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ VSPerfCmd.exe **GlobalOff** ve **GlobalOn** seçenekleri duraklatma ve komut sat
   
  Belirtebileceğiniz **GlobalOn** ve **GlobalOff** VSPerfCmd.exe komut satırı veya tek seçenekler de içeren komut satırları içerebilir gibi **Başlat**, **Başlatma**, veya **iliştirme** seçenekleri.  
   
- **GlobalOn** ve **GlobalOff** ile birleştirilebilir **ProcessOn**, **ProcessOff**, **ThreadOn**ve ** ThreadOff** seçenekleri.  
+ **GlobalOn** ve **GlobalOff** ile birleştirilebilir **ProcessOn**, **ProcessOff**, **ThreadOn**ve  **ThreadOff** seçenekleri.  
   
  **GlobalOn** ve **GlobalOff** seçenekleri etkileşimde **ProcessOn** ve **ProcessOff** için veri toplamayı kontrol seçenekleri bir işlemi belirtilen ile **ThreadOn** ve **ThreadOff** belirtilen iş parçacığı için veri toplama denetleyen seçenekler.  
   
@@ -46,7 +46,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Hiçbiri  
+ Yok.  
   
 ## <a name="valid-options"></a>Geçerli seçenekler şunlardır:  
  **GlobalOn** ve **GlobalOff** aşağıdaki seçenekleri de içeren komut satırlarında belirtilebilir.  

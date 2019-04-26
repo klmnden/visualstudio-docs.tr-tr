@@ -14,7 +14,7 @@
 ### [Unity için Visual Studio Araçlarını Kullanma](using-visual-studio-tools-for-unity.md)
 ### [Unity için Visual Studio Araçlarını Programlama](programming-visual-studio-tools-for-unity.md)
 #### [Örnek: Proje Dosyası Oluşturma](customize-project-files-created-by-vstu.md)
-#### [Örnek: Günlük Geri Çağırma](share-the-unity-log-callback-with-vstu.md)
+#### [Örnek: Günlük Geri Arama](share-the-unity-log-callback-with-vstu.md)
 ### [Sorun Giderme ve Bilinen Sorunlar](troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)
 ### [Değişiklik Günlüğü](change-log-visual-studio-tools-for-unity.md)
 ### [Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)](application-lifecycle-management-alm-with-unity-apps.md)

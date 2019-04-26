@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 996f911f37b8226065feb4da311f736dd910550b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805993"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Yan yana dağıtımlar için dosya adı uzantılarını kaydetme
 Yan yana bir ortamda dağıtılan Vspackage'lar için dosyaları doğru sürümü ile ilişkilendirilecek dosya adı uzantıları kaydetmelisiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sürüme özgü dosya adı uzantısı kullanmıyorsanız, kayıt, kullanıcıların projenizi açın ve proje öğesi dosyaları uygun sürümünü de olanak tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

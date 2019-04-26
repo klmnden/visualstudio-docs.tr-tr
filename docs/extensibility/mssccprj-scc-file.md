@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806488"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC dosyası
 Bir Visual Studio çözüm veya projeyi IDE'yi kullanarak kaynak denetimi altında koyun, IDE iki temel bilgi parçasını alır. Kaynak Denetimi Eklentisi dizeleri biçiminde bilgi gelir. "AuxPath" ve "ProjName" Bu dizeler IDE donuk, ancak bunlar eklenti tarafından sürüm denetimine çözüm veya projeyi bulmak için kullanılırlar. IDE genellikle bu dizeler ilk kez çağırarak alır [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları gelecekteki çağrılar için çözüm veya proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallar, dallar veya sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında eklendiğinde, "AuxPath" ve "ProjName" dizeleri otomatik olarak güncelleştirilmez. Çözüm ve proje dosyaları sürüm denetiminde kendi doğru konuma işaret ettiğinden emin olmak için kullanıcıların el ile dizeler güncelleştirmeniz gerekir. Dizeleri donuk yöneliktir olduğundan, bu her zaman nasıl güncelleştirileceğini açık olmayabilir.
