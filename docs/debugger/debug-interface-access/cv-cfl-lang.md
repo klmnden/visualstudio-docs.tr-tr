@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555057"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Bağlantılı modül ve uygulama kaynak kod dilini belirtir.
@@ -49,7 +49,7 @@ typedef enum CV_CFL_LANG {
 ## <a name="elements"></a>Öğeleri
 C. CV_CFL_C uygulama dildir
 
-C++ CV_CFL_CXX uygulama dilidir.
+CV_CFL_CXX uygulama dilidir C++.
 
 FORTRAN CV_CFL_FORTRAN uygulama dilidir.
 

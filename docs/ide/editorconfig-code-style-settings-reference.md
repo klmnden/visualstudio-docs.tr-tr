@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557222"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -329,13 +329,14 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Bu kural kabul etmediği bir **true** veya **false** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
+Bu kural aşağıdaki tablodan bir değer kabul eder:
 
 | Değer | Açıklama |
 | ----- |:----------- |
 | Her zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih et |
-| için\_olmayan\_interface_members | Genel arabirim üyeleri hariç bildirilmesi için erişilebilirlik değiştiricileri tercih eder. Bu, aynı **her zaman** ve C# varsayılan arabirim yöntemleri eklerse, gelecekteki sağlama için eklendi. |
+| için\_olmayan\_interface_members | Genel arabirim üyeleri hariç bildirilmesi için erişilebilirlik değiştiricileri tercih eder. (Bu, aynı **her zaman** ve gelecekteki sağlama örneğin eklendiğinden C# varsayılan arabirim yöntemleri ekler.) |
 | hiçbir zaman | Erişilebilirlik değiştiricileri belirtilmesi tercih ediyorsunuz |
+| omit_if_default | Erişilebilirlik değiştiricileri dışında varsayılan değiştirici olup olmadıklarını belirtilmesi tercih et |
 
 Kod örnekleri:
 

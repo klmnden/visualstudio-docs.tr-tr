@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555977"
 ---
 # <a name="customizing-the-isolated-shell"></a>Yalıtılmış Kabuğu özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio kullanıcı arabirimini farklı yönlerini değiştirme ve özel u
  Uygulama adı uygulama başlık çubuğunda görüntülenen simge uygulama simgesine özelleştirebilirsiniz. Farklı bir simgeye simgesi dizinine kopyalayın. İçinde **Çözüm Gezgini**, kaynak dosyaları klasöre simgesi ekleyin. Ardından VSShellStub.rc dosyasını açın ve IDI_STUBPROGRAM yeni simgesine adıyla değiştirin. Daha fazla ayrıntı için [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Komut satırı logosu  
- Uygulama "CommandLineLogo" satırın değerini değiştirerek komut satırından başlatıldığında görüntülenen metni komut satırı logosu, özelleştirebileceğiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Uygulama "CommandLineLogo" satırın değerini değiştirerek komut satırından başlatıldığında görüntülenen metni komut satırı logosu, özelleştirebileceğiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Temel Yalıtılmış Kabuk Uygulaması Oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Kullanıcı dosyaları alt klasör adı  
  Uygulamanız için kullanıcı dosyaları "UserFilesSubFolderName" satırın değerini değiştirerek tutar klasörün adını değiştirebilirsiniz *SolutionName*. Application.pkgdef dosyası.  
@@ -58,7 +58,7 @@ Visual Studio kullanıcı arabirimini farklı yönlerini değiştirme ve özel u
  Web tarayıcısı penceresi açıldığında, "DefaultSearchPage" satırın değerini değiştirerek, görüntülenen sayfadır web tarayıcı sayfası özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası.  
   
 ##### <a name="the-default-home-page"></a>Varsayılan giriş sayfası  
- Giriş sayfasında "DefaultHomePage" satırın değerini değiştirerek özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Giriş sayfasında "DefaultHomePage" satırın değerini değiştirerek özelleştirebilirsiniz *SolutionName*. Application.pkgdef dosyası. Daha fazla ayrıntı için [izlenecek yol: Temel Yalıtılmış Kabuk Uygulaması Oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Çözüm kavramı Gizle gerekip gerekmediğini  
  "HideSolutionConcept" satırın değerini değiştirerek uygulamanızdaki çözüm Gizle gerekip gerekmediğini belirtin *SolutionName*. Application.pkgdef dosyası. Çözüm gizlemek için değer ayarlama `dword:00000001`ve çözüm göstermek için değeri ayarlayın `dword:00000000`.  

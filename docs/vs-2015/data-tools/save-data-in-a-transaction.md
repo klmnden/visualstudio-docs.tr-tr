@@ -21,13 +21,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559204"
 ---
-# <a name="save-data-in-a-transaction"></a>Bir işlemde veri kaydetme
+# <a name="save-data-in-a-transaction"></a>İşleme veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:System.Transactions> ad alanı. Bu örnekte `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.  

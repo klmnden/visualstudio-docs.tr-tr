@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553659"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio Kullanıcı Deneyimi Yönergeleri
 Visual Studio için yeni özellikler tasarlıyorsanız, Visual Studio kullanıcı deneyimi yönergeleri izleyin. Yeni kullanıcı arabirimi (UI) tasarımcıları sorunsuz ve tutarlı bir geliştirme ortamında kullanıcı deneyimleri oluşturabilirsiniz. böylece bu yönergeleri ortak kullanıcı modeller ve etkileşim desenleri hakkında bilgi içerir.

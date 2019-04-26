@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564980"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Atama Kancaları ve C Çalışma Zamanı Bellek Ayırmaları
 Atama kanca işlevleri çok önemli bir kısıtlama bunlar açıkça yoksayması gereken olduğu `_CRT_BLOCK` engeller. Bu, iç bellek C çalışma zamanı kitaplık işlevleri yapılan her çağrı yaparsanız C çalışma zamanı kitaplığı işlevleri tarafından dahili olarak yapılan bellek ayırmaları taşlarıdır. Yoksayabilirsiniz `_CRT_BLOCK` , ayrılan başına aşağıdaki kodu ekleyerek blok kanca işlevini:

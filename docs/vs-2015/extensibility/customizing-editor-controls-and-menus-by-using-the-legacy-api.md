@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556057"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Düzenleyici denetimleri ve menüler eski API'yi kullanarak özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Dil hizmeti veya bir metin görünümü bağlam menüleri ve denetimleri Düzenl
  [Bağlam Menüleri](../extensibility/context-menus.md)  
  Düzenleyici bağlam menüleri açıklar.  
   
- [Nasıl yapılır: Durum çubuğunda güncelleştirme](../extensibility/how-to-update-the-status-bar.md)  
+ [Nasıl yapılır: Durum Çubuğunu Güncelleştirme](../extensibility/how-to-update-the-status-bar.md)  
  Güncelleştirme için yönergeler sağlar **durum çubuğu**.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

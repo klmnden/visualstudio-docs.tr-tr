@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552869"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Komut satırından temel profil oluşturma raporları oluşturma
 Bu makalede, virgülle ayrılmış değer oluşturan temel VSPerfReport komutlarını (. *CSV*) raporlarına bir. *vsp* veya. *vsps* profil oluşturma veri dosyası. Tüm rapor seçeneklerinin bir açıklaması için bkz: [VSPerfReport](../profiling/vsperfreport.md).

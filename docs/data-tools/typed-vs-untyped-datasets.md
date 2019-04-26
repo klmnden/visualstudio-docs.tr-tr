@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6a16b8f0752ca2ab063f8bbbaa966836856eb4f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565814"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılan ve yazılmayan veri kümelerinin karşılaştırması
 Yazılan veri kümesi temel ilk türetilmiş bir veri kümesidir <xref:System.Data.DataSet> sınıfı ve ardından bilgilerinden **veri kümesi Tasarımcısı**, depolandığı .xsd dosyasına yeni, oluşturmak için bir veri kümesi sınıfı türü kesin belirlenmiş. (Tablolar, sütunlar ve benzeri) şema bilgileri oluşturulur ve bu yeni veri kümesi sınıfına birinci sınıf nesneleri ve özellikleri kümesi olarak derlenir. Yazılan veri kümesi temel devraldığından <xref:System.Data.DataSet> sınıfı, belirlenmiş bir sınıf tüm işlevlerini varsayar <xref:System.Data.DataSet> sınıfı ve bir örneği ele yöntemleriyle kullanılabilir bir <xref:System.Data.DataSet> bir parametre olarak sınıf.

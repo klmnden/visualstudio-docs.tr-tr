@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560039"
 ---
 # <a name="best-practices-and-examples-sal"></a>En İyi Yöntemler ve Örnekler (SAL)
 Kaynak kod ek açıklama dili (SAL) dışında en iyi şekilde yararlanmak ve bazı yaygın sorunları önlemek için bazı yollar şunlardır.
@@ -238,7 +238,7 @@ Bu örnekte, `_Out_opt_` diyor işaretçi önkoşuluna bir parçası olarak NULL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[C azaltmak için SAL ek açıklamalarını kullanma /C++ kod kusurlarını](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [SAL anlama](../code-quality/understanding-sal.md)
 [işlev parametrelerini ve dönüş değerlerini açıklama](../code-quality/annotating-function-parameters-and-return-values.md) 
  [İşlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)

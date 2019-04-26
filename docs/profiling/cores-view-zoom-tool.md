@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553051"
 ---
 # <a name="cores-view-zoom-tool"></a>Çekirdekler görünümü Yakınlaştırma aracı
 Yakınlaştırma, belirli ilgi alanlarına odaklanabilmeniz için zaman çizelgesinde yakınlaştırma ve uzaklaştırma olanak sağlayan bir kaydırıcı denetimidir. Bu denetim üzerinde geçerli görünüm merkezinin yakınlaştırır, ekranı önce görünümü şekilde ayarlayın.

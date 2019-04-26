@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557326"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
 Adlandırma kuralları, sınıflar, özellikler ve yöntemler gibi kod öğeleri adlandırma ilgilendiriyor. Örneğin, Genel üyeler büyük harfle yazılmalıdır veya zaman uyumsuz yöntemler "Async" sonlandırması gerektiğini belirtebilirsiniz. Bunları belirterek bu kuralları zorunlu kılabilir bir [.editorconfig dosyasındaki](../ide/create-portable-custom-editor-options.md). Adlandırma kuralı ihlallerini ya da görünür **hata listesi** veya adı altında bir öneri olarak önem derecesine bağlı olarak, kuralınız için seçin. İhlalleri görmek için projeyi derlemek için gerek yoktur.
 
-Adlandırma kuralları en belirgin sıralı çok az özel olarak *.editorconfig* dosya. Uygulanabilir ilk kuralı karşılaştı uygulanan yalnızca bir kuraldır.
+Adlandırma kuralları en belirgin sıralı çok az özgü EditorConfig dosyasında. Uygulanabilir ilk kuralı karşılaştı uygulanan yalnızca bir kuraldır. Ancak, birden çok kural varsa *özellikleri* bu ada sahip özelliği önceliklidir aynı ada sahip en son bulunamadı. Daha fazla bilgi için [dosya hiyerarşisi ve öncelik](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Her bir adlandırma kuralı için aşağıda açıklanan özelliklerini kullanarak geçerli simgeleri ve adlandırma stili kuralı zorunlu tutmak için bir önem derecesi belirtmelisiniz. Özelliklerin sırası önemli değildir.
 

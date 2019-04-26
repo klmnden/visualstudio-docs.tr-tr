@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74a5cecbdf3bba942c888a5cde3d49236047f4ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553194"
 ---
 # <a name="console"></a>Konsol
 VSPerfCmd.exe **konsol** seçenek, yeni bir komut istemi penceresinde belirtilen uygulamayı başlatır. **Konsol** VSPerfCmd ile yalnızca kullanılabilir **başlatma** seçeneği. Uygulamayı bir komut satırı uygulaması değilse **konsol** hiçbir etkisi olmaz.
@@ -25,7 +25,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```
 
 #### <a name="parameters"></a>Parametreler
- Hiçbiri
+ None
 
 ## <a name="required-options"></a>Gerekli seçenekleri
  **Konsol** yalnızca de içeren bir komut satırında belirtilebilir **başlatma** seçeneği.

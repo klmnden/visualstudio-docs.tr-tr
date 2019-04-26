@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12ccb2770cc15962f3899b99f14dd8c7f342c3cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553038"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] Döndürür `TRUE` C++ özel durum işleme döndürür yürürlükte; Aksi halde ise `FALSE`.  
+ [out] Döndürür `TRUE` varsa C++ özel durum işleme döndürür yürürlükte; Aksi takdirde, olan `FALSE`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yapılandırılmış özel durum belirlemek için işleme (C++ özel durum işleme gelen çok farklı olmayan) etkindir, çağrı [Idiaframedata::get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) yöntemi.  
+ Yapılandırılmış özel durum belirlemek için işleme etkindir (çok farklı olduğu C++ özel durum işleme), çağrı [Idiaframedata::get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)   

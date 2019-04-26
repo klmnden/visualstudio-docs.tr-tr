@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556141"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod Windows özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ Kod penceresi
  `Customizing Code Windows by Using the Legacy API`  
  Kodu windows eski API'yi kullanarak özelleştirmek nasıl açıklar.  
   
- [Nasıl yapılır: Konak bir düzenleyicide başka bir düzenleyici](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Nasıl yapılır: Bir Düzenleyiciyi Başka Bir Düzenleyicide Barındırma](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Bir düzenleyici penceresi içine ikinci bir düzenleyici barındırmak nasıl açıklar.  
   
- [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları tetiklemesine](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Nasıl yapılır: Düzenleyici Odağı Kaybettiğinde Olayları Başlatma](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Bir belge veri nesnesine bir belge görünümü ekleme açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

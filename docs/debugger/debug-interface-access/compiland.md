@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555267"
 ---
 # <a name="compiland"></a>Compiland
 Bir `SymTagCompiland` her derlenecek .exe dosyasına bağlı için simge. Derlenecek bilgi simgeleri ile arasında bölünür bir `SymTagCompiland` ek derlenecek semboller yükleniyor olmadan alınabilir, etiketleme ve simgeler ile bir `SymTagCompilandDetails` etiketini ek semboller yükleniyor gerektirebilir.
