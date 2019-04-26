@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924220"
 documentType: LandingData
 title: AI için Visual Studio Araçları
 metadata:
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: AI için Visual Studio Araçları, derleme, test etme ve derin öğrenme çözümlerini dağıtmak için bir tümleşik geliştirme ortamıdır. Bizim hızlı başlangıç kılavuzlarımız, öğreticilerimiz ve örneklerimizle, yapay ZEKA araçları kullanmayı öğrenin.
+  description: 'AI için Visual Studio Araçları, derleme, test etme ve derin öğrenme çözümlerini dağıtmak için bir tümleşik geliştirme ortamıdır. Bizim hızlı başlangıç kılavuzlarımız, öğreticilerimiz ve örneklerimizle, yapay ZEKA araçları kullanmayı öğrenin.'
 sections:
-- title: 5 dakikalık hızlı Başlangıçlar
-  items:
-  - type: paragraph
-    text: 'Derin öğrenme çözümüyle çalıştırmayı öğrenin:'
-  - type: list
-    style: icon48
+  - title: 5 dakikalık hızlı Başlangıçlar
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow ve Python
-      href: tensorflow-local.md
-- title: Adım adım öğreticiler
-  items:
-  - type: paragraph
-    text: 'Bir derin öğrenme çözüm oluşturmayı öğrenin:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Derin öğrenme çözümüyle çalıştırmayı öğrenin:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow ve Python
+            href: tensorflow-local.md
+  - title: Adım adım öğreticiler
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Bulutta bir TensorFlow modeli eğitme</a>
-- title: Örnekler
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Bir derin öğrenme çözüm oluşturmayı öğrenin:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Bulutta bir TensorFlow modeli eğitme</a>
+  - title: Örnekler
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Örnekleri deposu</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Machine Learning Galerisi</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Örnekleri deposu</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Machine Learning Galerisi</a>'
