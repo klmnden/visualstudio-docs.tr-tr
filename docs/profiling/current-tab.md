@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552794"
 ---
 # <a name="current-tab"></a>Geçerli sekme
 Tıklayarak **geçerli** sekmesinde, gördüğünüz bir çağrı yığını (varsa) olan geçerli seçimi noktası Zaman Çizelgesi'nde en yakın bir CPU iş parçacığı segment seçtiyseniz.  Bu durumda, seçimi noktası bir siyah ok ya da giriş işaretini zaman çizelgesinin üzerindeki tarafından temsil edilir. Bir engelleme segmentini seçildiğinde hiçbir yürütme olduğundan giriş işaretini görüntülenmez. Ancak, kesim hala vurgulanır ve çağrı yığını görüntülenir.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549339"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: Derleme olayları belirtme (Visual Basic)
 
