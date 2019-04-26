@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571374"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
 Microsoft temel tasarım yönerge kuralları kural kodunuzu anlamayı ve kullanmayı daha kolay hale odaklanmak için kümesi kullanabilirsiniz. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod için en iyi yöntemler zorlamak istiyorsanız kümesini içermelidir.
