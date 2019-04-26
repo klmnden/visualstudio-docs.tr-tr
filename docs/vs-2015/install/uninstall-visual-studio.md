@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546908"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Visual Studio ve diğer ilgili dosyaları kaldırmak (diğer bir deyişle, neredeyse her şeyi kaldırmak)
 
-1.  Visual Studio'nun .exe dosyasını (örneğin, "vs_enterprise.exe" bulun).
+1. Visual Studio'nun .exe dosyasını (örneğin, "vs_enterprise.exe" bulun).
 
     > [!NOTE]
     > Dosya, örneğin, "%ProgramData%\Package Cache", bir alt klasöründe olmalıdır: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
-2.  Kullanarak .exe dosyasını çalıştırın. / uninstall/force komut satırı parametrelerini.
+2. Kullanarak .exe dosyasını çalıştırın. / uninstall/force komut satırı parametrelerini.
 
      Örneğin, ```vs_enterprise.exe /uninstall /force```, hangi kaldırılır Visual Studio ve çoğu geride bıraktığı temel bileşenleri, içinde bir varsayılan kaldırma. Ancak, ek içeriğin tümünü Visual Studio eklentileri kaldırmaz ve uzantıları (örneğin, Visual Studio güncelleştirmeleri ve diğer isteğe bağlı bileşenler) yükleyebilirsiniz.
 
@@ -53,9 +53,9 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 
 ## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Visual Studio'yu Sessiz ya da pasif modda kaldırmak (diğer bir deyişle, kaynaktan kaldırmak)
 
-1.  Visual Studio'nun yüklü olduğu bilgisayarda Windows komut istemini açın.
+1. Visual Studio'nun yüklü olduğu bilgisayarda Windows komut istemini açın.
 
-2.  Aşağıdaki parametreleri girin:
+2. Aşağıdaki parametreleri girin:
 
      *DVDRoot* \\< yükleme dosyası\> \</quiet&#124;/passive > [/ norestart] / uninstall
 
