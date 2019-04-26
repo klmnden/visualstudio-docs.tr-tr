@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575435"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma
   İle çalışıyorsanız bir <xref:Microsoft.Office.Interop.Word.Range> veya <xref:Microsoft.Office.Interop.Word.Selection> nesnesi, metnin üstüne yazarak önlemek için metin eklemeden önce bir ekleme noktasını seçimi değiştirmek isteyebilirsiniz. Hem <xref:Microsoft.Office.Interop.Word.Range> ve <xref:Microsoft.Office.Interop.Word.Selection> nesneleri kullanan bir Daralt yöntemi sahip <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> sabit listesi değerleri:

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575136"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Nasıl yapılır: Program aracılığıyla yeni belgeler oluşturma
   Bir belge programlı olarak oluşturduğunuzda, yerel bir yeni belge olduğu <xref:Microsoft.Office.Interop.Word.Document> nesne. Bu nesne ek olaylar ve veri bağlama yeteneklerine sahip değil bir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).

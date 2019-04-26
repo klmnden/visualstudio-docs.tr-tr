@@ -112,7 +112,7 @@
             - name: Bir işlemi kullanarak veri kaydetme
               href: save-data-by-using-a-transaction.md
               items:
-                - name: 'İzlenecek yol: Bir işlemde veri kaydetme'
+                - name: 'İzlenecek yol: İşleme veri kaydetme'
                   href: save-data-in-a-transaction.md
             - name: Bir veritabanına (birden çok tablo) veri kaydetme
               href: save-data-to-a-database-multiple-tables.md

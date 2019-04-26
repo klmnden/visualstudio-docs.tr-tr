@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575656"
 ---
 # <a name="getting-started-with-python"></a>Python’ı Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Ipython ve bilimsel hesaplama kitaplıkları (matplotlib, scipy, numpy, vb.) alm
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[PTVS kullanmaya Başlarken: Visual Studio'yu ayarlama](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[PTVS Kullanmaya Başlama: Visual Studio'yu ayarlama](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [PTVS ile çalışmaya başlama: (Projeler) kodlamaya başlayın](../python/getting-started-with-ptvs-start-coding-projects.md)
 [PTVS kullanmaya Başlarken: Kod düzenleme](../python/getting-started-with-ptvs-editing-code.md)
 [PTVS kullanmaya Başlarken: Hata ayıklama](../python/getting-started-with-ptvs-debugging.md)
 [PTVS kullanmaya Başlarken: Etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS kullanmaya Başlarken: Azure'da bir Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS kullanmaya Başlarken: Azure'da Web sitesi oluşturma](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

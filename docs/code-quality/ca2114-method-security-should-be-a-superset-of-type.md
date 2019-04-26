@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545491"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metot güvenliği türün bir üst kümesi olmalıdır
 

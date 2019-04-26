@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551262"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions Öğesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Sağlar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proje dosyalar�
  Yok.  
   
 ### <a name="child-elements"></a>Alt Öğeler  
- None  
+ Yok.  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563118"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Sunucudaki belgelerde verilere
   Microsoft Office Word veya Microsoft Office Excel nesne modelini kullanmak zorunda kalmadan belge düzeyinde özelleştirme veriye karşı programlama yapabilirsiniz. Bu belgede sözcük olmayan bir sunucuda bulunan verilere erişebilir veya Excel yüklü anlamına gelir. Örneğin, bir sunucu üzerinde kod (örneğin, bir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfası) bir belgedeki verileri özelleştirebilir ve özelleştirilmiş belgeyi bir son kullanıcıya gönderin. Son kullanıcıya belgeyi açtığında, çözüm derlemesine veri bağlama kodunu belgeye özelleştirilmiş veri bağlar. Belgedeki verileri kullanıcı arabiriminden ayrıldığı için bu olasıdır. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).

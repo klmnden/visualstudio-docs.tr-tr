@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574843"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma
   Yeni Microsoft Office Visio çizim belgesi oluşturduğunuzda, ona ekleme `Microsoft.Office.Interop.Visio.Documents` açık Visio belgeleri koleksiyonu. Sonuç olarak, `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi yeni bir Visio çizim belgesi oluşturur. Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) yöntemi.
