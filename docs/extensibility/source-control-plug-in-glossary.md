@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0df624a27513fa0eb18b2643bb7c680d71d94c0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432427"
 ---
 # <a name="source-control-plug-in-glossary"></a>Kaynak Denetimi Eklentisi Sözlüğü
 Aşağıdaki yardımcı terimleri ve tanımları kaynak denetimi eklentisi SDK belgelerine ilgilidir.

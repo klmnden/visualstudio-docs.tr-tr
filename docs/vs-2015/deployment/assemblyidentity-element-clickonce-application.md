@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428540"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +72,4 @@ Dağıtılan uygulamayı tanımlayan bir [!INCLUDE[ndptecclick](../includes/ndpt
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [\<assemblyIdentity> Öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)

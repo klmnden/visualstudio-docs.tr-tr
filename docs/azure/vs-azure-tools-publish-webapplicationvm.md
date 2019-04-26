@@ -1,27 +1,31 @@
 ---
 title: Yayımlama WebApplicationVM | Microsoft Docs
 description: Bir sanal makine bir web uygulamasına dağıtmayı öğrenin. Bu betik, mevcut olmaması durumunda Azure aboneliğinizde gerekli kaynakları oluşturur.
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572291"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell betiği)
 Bir sanal makine için bir web uygulaması dağıtır. Mevcut olmaması durumunda betik, Azure aboneliğinizde gerekli kaynakları oluşturur.
 
 ```
 Publish-WebApplicationVM
-–Configuration <configuration>
+-Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -118,7 +122,7 @@ JSON yapılandırma dosyası, dağıtılacak nedir ayrıntılarını belirtir. B
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "West US",
+            "location": "China North",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -180,3 +184,6 @@ JSON yapılandırma dosyası, dağıtılacak nedir ayrıntılarını belirtir. B
 ```
 
 Ne sağlanan değiştirmek için JSON yapılandırma dosyasını düzenleyebilirsiniz. Bir sanal makine ve bulut hizmeti gerekli, ancak veritabanı bölümü isteğe bağlıdır.
+
+
+<!-- Update_Description: update metedata properties -->
