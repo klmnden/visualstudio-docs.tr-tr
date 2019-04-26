@@ -1,38 +1,35 @@
 ---
 title: Idiaenumsymbols::reset | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols::Reset method
 ms.assetid: dd3c41a5-ebdf-4a9e-bc84-2fe985be0075
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.workload:
+- multiple
 ms.openlocfilehash: 7dc0b82f512fb4852178b8d4bbae78944aae326a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563239"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Bir numaralandırma sıralı başlangıç durumuna sıfırlar.
 
-Bir numaralandırma sıralı başlangıç durumuna sıfırlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp#  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `S_OK`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+ Döndürür `S_OK`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

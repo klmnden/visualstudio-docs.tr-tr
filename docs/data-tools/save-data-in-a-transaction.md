@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Bir işlemde veri kaydetme'
+title: 'İzlenecek yol: İşleme veri kaydetme'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565723"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: Bir işlemde veri kaydetme
+# <a name="walkthrough-save-data-in-a-transaction"></a>İzlenecek yol: İşleme veri kaydetme
 
 Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:System.Transactions> ad alanı. Bu kılavuzda, bir Windows Forms uygulaması oluşturacaksınız. Northwind örnek veritabanındaki iki tablo için bir veri kümesi oluşturmak için veri kaynağı Yapılandırma Sihirbazı'nı kullanacaksınız. Bir Windows forma veri sınırı denetimleri ve veritabanının bir TransactionScope içinde güncelleştirilecek BindingNavigator'ın Kaydet düğmesi için kod değiştireceksiniz ekleyeceksiniz.
 

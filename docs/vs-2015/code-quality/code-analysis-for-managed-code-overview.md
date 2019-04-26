@@ -15,13 +15,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539198"
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Çözümlemesine Genel Bakış
+# <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Analizine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemeler, programlama ve Microsoft .NET Framework tasarım yönergeleri ile ortaya konan Tasarım Kuralları ihlalleri gibi bilgileri raporlar.  

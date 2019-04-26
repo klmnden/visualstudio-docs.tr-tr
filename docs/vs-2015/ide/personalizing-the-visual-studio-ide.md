@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540231"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Visual Studio IDE’yi kişiselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bu bölümde, Visual Studio'yu en iyi geliştirme tarzınıza ve gereksinimlerin
 ### <a name="environment-color-themes"></a>Ortam Renk temalarını
  Renk teması açık, koyu mavi yazıp ortamında arasında değiştirmek için **hızlı başlatma** ve **ortam &#124; genel**. Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** ve **ortam &#124; yazı tipleri ve renkler**. Ayrıca bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
-### <a name="menus-and-toolbars"></a>Menüleri ve araç çubukları
+### <a name="menus-and-toolbars"></a>Menüler ve araç çubukları
  Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
