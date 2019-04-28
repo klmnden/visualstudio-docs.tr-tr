@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965199"
 ---
 # <a name="walkthrough-display-statement-completion"></a>İzlenecek yol: Deyim tamamlama görüntüleme
 Dil tabanlı deyim tamamlama tamamlama sağlamak istediğiniz tanımlayıcıları tanımlama ve ardından tamamlama oturumu tetiklemeden uygulayabilir. Deyim tamamlama dil hizmeti bağlamında tanımlayın, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve ardından bu tür için tamamlama görüntüleyebilirsiniz. Veya mevcut bir içerik türü için tamamlama tetikleyebilirsiniz — Örneğin, "Düz". Bu izlenecek yol, içerik türü metin dosyaları olan "Düz" içerik türü için deyim tamamlama tetikleme işlemi gösterilmektedir. Kod ve XML dosyaları dahil tüm diğer içerik türleri, üst "metin" içerik türü değil.

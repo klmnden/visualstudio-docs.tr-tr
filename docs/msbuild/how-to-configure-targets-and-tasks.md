@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946670"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Nasıl yapılır: Hedefleri ve görevleri yapılandırma
 Bunlar geliştirme bilgisayarının ortamı bağımsız olarak hedef ortamdaki çalıştırmak için seçili MSBuild görevleri ayarlanabilir. Örneğin, bir 64 bit bilgisayar hedefleri 32 bit mimari bir uygulama oluşturmak için kullandığınızda, seçili görevleri bir 32 bit işlemde çalıştırılır.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c03bc81c9455cf33a439ca6e80fc646212cfd4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950422"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Birden fazla bilgisayara Visual Studio ayarları eşitleme
 
@@ -75,7 +75,7 @@ Araç penceresi düzeni gibi belirli ayarların, Visual Studio farklı yan yana 
 
 3. Açık **VS 2017 için geliştirici komut istemi** çalıştırıp `devenv /resetuserdata`.
 
-1. Visual Studio’yu başlatın ve dışarı aktarılan ayarlar dosyasından kayıtlı ayarları içeri aktarın.
+1. Visual Studio'yu açın ve dışarı aktarılan ayarlar dosyasından kayıtlı ayarları içeri aktarın.
 
 ::: moniker-end
 

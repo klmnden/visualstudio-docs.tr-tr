@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961647"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Nasıl yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma
   Microsoft Office Word ile çalışırken, kullanıcı girişi için iletişim kutularını görüntülemek için gerektiğinde zamanlar vardır. Kendi oluşturabilirsiniz, ancak aynı zamanda sunulan yerleşik Word iletişim kutularını, kullanarak yaklaşımı isteyebileceğiniz <xref:Microsoft.Office.Interop.Word.Dialogs> koleksiyonunu <xref:Microsoft.Office.Interop.Word.Application> nesne. Bu, 200'den fazla yerleşik iletişim kutuları, sabit listeleri temsil edilen erişmenize olanak sağlar.

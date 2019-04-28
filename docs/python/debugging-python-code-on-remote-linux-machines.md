@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962567"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux'ta Python kodu uzaktan hata ayıklama
 

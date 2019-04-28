@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951508"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -40,7 +40,7 @@ En son ana sürümleri, Visual Studio 2019, Visual Studio 2017 ve Visual Studio 
 | Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.22     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             None             | (Bakım için süresi doldu)  |
+|         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu)  |
 
 > [!NOTE]
 > Hizmet İlkesi Microsoft uygun olarak hizmet vermek için Visual Studio 2015'in yayınlanmış (RTW) sürüm süresi doldu. Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün sınıfıyla sunulan yalnızca kalan sürümüdür.

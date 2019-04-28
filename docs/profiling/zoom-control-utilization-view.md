@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960113"
 ---
 # <a name="zoom-control-utilization-view"></a>Yakınlaştırma Denetimi (Kullanım Görünümü)
 Yakınlaştırma denetimini CPU kullanım grafiği belirli ilgilenilen alanlara odaklanmak için yakınlaştırın yardımcı olur. Bu denetimin görünümü Merkezi'nde yakınlaştırır. Bu nedenle, ilgi alanı, yakınlaştırma önce Merkezi.

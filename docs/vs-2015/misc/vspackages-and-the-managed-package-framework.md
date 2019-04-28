@@ -12,11 +12,11 @@ ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
 ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002122"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages ve yönetilen paket çerçevesini
 VSPackage ile yönetilen paket framework (MPF) sınıfları yerine COM birlikte çalışma sınıflarını kullanarak oluşturarak geliştirme süresini azaltabilirsiniz.  

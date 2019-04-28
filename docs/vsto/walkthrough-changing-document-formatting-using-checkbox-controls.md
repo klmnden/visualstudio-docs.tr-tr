@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982105"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>İzlenecek yol: CheckBox denetimlerini kullanarak belge biçimlendirmesini değiştirme
   Bu yönerge Windows Forms denetimleri Microsoft Office Word için belge düzeyi özelleştirmesinde metin biçimlendirmesini değiştirmek için nasıl kullanılacağını gösterir.

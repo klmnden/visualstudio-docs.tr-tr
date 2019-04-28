@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400554"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Alır kısmını veya tamamını ve bir adı bir c++ ile düzenlenmiş adın (bağlantı).
@@ -38,19 +38,19 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Düzenlenmemiş adını bir C++ ile düzenlenmiş adın döndürür.
+[out] Düzenlenmemiş adını döndürür bir C++ ile düzenlenmiş adın.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
  `undecorateOptions` Aşağıdaki bayrakların birleşimi olabilir.
 
 > [!NOTE]
->  Bildirimleri kodunuza ekleyin ya da kullandığınız ham değerler gerek bayrağı adları DIA SDK içinde tanımlı değil.
+> Bildirimleri kodunuza ekleyin ya da kullandığınız ham değerler gerek bayrağı adları DIA SDK içinde tanımlı değil.
 
 |Bayrağı|Değer|Açıklama|
 |----------|-----------|-----------------|

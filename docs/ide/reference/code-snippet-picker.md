@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953211"
 ---
 # <a name="code-snippet-picker"></a>Kod Parçacığı Seçici
 
@@ -59,4 +59,4 @@ Kod parçacıkları ekleme veya kod parçacıkları içeren klasörler listesini
 - [Kod Parçacıkları İçin En İyi Uygulamalar](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense kod parçacıkları](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Kodda Yer İşaretleri Ayarlama](../../ide/setting-bookmarks-in-code.md)
-- [Nasıl yapılır: Surround-with kod parçacıklarını kullanma](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Nasıl yapılır: Surround-with Kod Parçacıklarını Kullanma](../../ide/how-to-use-surround-with-code-snippets.md)

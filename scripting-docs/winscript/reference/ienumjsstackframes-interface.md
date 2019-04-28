@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963331"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames Arabirimi
 Yığın sağlamak için hata ayıklayıcı tarafından uygulanır için JavaScript jscript9diag.DLL'si için geriye doğru izleme.  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977945"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office çözümleri geliştirmesine genel bakış (VSTO)
   Çözümleri Microsoft Office'in ön ucu olarak kullanarak, tanıdık Microsoft Office kullanıcı arabirimleri ve sözcük işlem özellikleri Word, Excel verilerini analiz özelliklerini ve Outlook e-posta yönetimi özelliklerini gibi araçları yararlanabilir . Office uygulamalarını özelleştirin ve iş süreçleriniz için gereken belirli özellikleri eklemek için Visual Studio çözümleri geliştirebilirsiniz. Örneğin, Word'ün kullanıma sözleşmeleri düzenlenebilir veya düzenlenemez yapılabilmesi için önceden varolan parçaların çeviren bir sözleşme oluşturucuyu kapatabilirsiniz. Excel ile farklı projeler için özelleştirilmiş bir otomatik bütçe çalışma sayfası oluşturabilirsiniz. Kullanıcılarınızın, karmaşık çözümleri web tabanlı bir mimari kullanırsanız, duruma göre daha pratik hale getiren office çözümlerini çevrimdışı da yararlanabilirsiniz.

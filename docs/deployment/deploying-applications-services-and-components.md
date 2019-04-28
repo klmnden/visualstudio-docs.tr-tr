@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929052"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı da ilk bakma
 
@@ -44,7 +44,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
-- **Windows Masaüstü** Windows masaüstü uygulaması bir klasöre ClickOnce dağıtımını kullanarak yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). C + +/ CLR bkz [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C/C++ için bkz. [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Masaüstü** Windows masaüstü uygulaması bir klasöre ClickOnce dağıtımını kullanarak yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). İçin C++/CLR, bkz: [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C /C++, bkz: [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Azure'a Yayımlama
 
@@ -83,7 +83,7 @@ Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son d
 
     Ayrıca, ASP.NET uygulamaları ve Hizmetleri diğer çeşitli yollarla dağıtabilirsiniz. Daha fazla bilgi için [dağıtma ASP.NET web uygulamaları ve Hizmetleri](http://www.asp.net/aspnet/overview/deployment).
 
-- **Windows Masaüstü** Windows masaüstü uygulaması için bir web sunucusu veya ClickOnce dağıtımını kullanarak bir ağ dosya paylaşımına yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). C + +/ CLR bkz [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C/C++ için bkz. [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Masaüstü** Windows masaüstü uygulaması için bir web sunucusu veya ClickOnce dağıtımını kullanarak bir ağ dosya paylaşımına yayımlayabilirsiniz. Kullanıcılar, daha sonra uygulamayı tek bir tıklamayla yükleyebilir. Daha fazla bilgi için [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ve Visual Basic). İçin C++/CLR, bkz: [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C /C++, bkz: [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Microsoft Store için yayımlama
 

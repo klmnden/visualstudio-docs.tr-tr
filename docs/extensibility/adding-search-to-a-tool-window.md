@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843767"
 ---
 # <a name="add-search-to-a-tool-window"></a>Araç penceresine arama ekleme
 Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde görünür aynı arama işlevleri ekleyebilirsiniz. Bu işlev, aşağıdaki özellikleri içerir:

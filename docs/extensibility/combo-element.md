@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7cfce045531a871e4630a6175d2fc24f4a50ebd8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926624"
 ---
 # <a name="combo-element"></a>Combos öğesi
 Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşik giriş kutuları dört çeşit vardır: Aşağı açılan, DynamicCombo, IndexCombo ve MRUCombo.
@@ -43,7 +43,7 @@ Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşi
 |defaultWidth|Gerekli. Birleşik giriş kutusu için bir piksel genişliği belirten bir tamsayı.|
 |idCommandList|Gerekli. Etkin komut hedefinin birleşik giriş kutusunda görüntülenecek öğelerin listesini almak için gönderilen bir kimliği. Kimlik denetimi ile aynı GUID kapsamda olur.|
 |öncelik|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|
-| türü|İsteğe bağlı. Düğmenin türü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Aşağı açılan<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurma için sorumludur. Kullanıcının herhangi bir şey bu açılan metin kutusuna yazamazsınız.<br /><br /> DynamicCombo<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurmak için sorumludur. Kullanıcı bu birleşik düzenleyebilir ve ayrıca öğeleri seçin.<br /><br /> IndexCombo<br /> BT'nin dışında DynamicCombo aynı metin yerine öğenin dizinini oluşturur.<br /><br /> MRUCombo<br /> VSPackage'ı adına tümleşik geliştirme ortamı (IDE) tarafından doldurulur.  Kullanıcı bu birleşik giriş kutusunda düzenleyebilirsiniz. Son 16 girişleri birleşik giriş kutusu başına en fazla IDE hatırlar.<br /><br /> Kullanıcı bir birleşik giriş kutusunda seçerse ya da yeni bir şeyler girer, IDE uygun VSPackage size bildirir.|
+|türü|İsteğe bağlı. Düğmenin türü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Aşağı açılan<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurma için sorumludur. Kullanıcının herhangi bir şey bu açılan metin kutusuna yazamazsınız.<br /><br /> DynamicCombo<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurmak için sorumludur. Kullanıcı bu birleşik düzenleyebilir ve ayrıca öğeleri seçin.<br /><br /> IndexCombo<br /> BT'nin dışında DynamicCombo aynı metin yerine öğenin dizinini oluşturur.<br /><br /> MRUCombo<br /> VSPackage'ı adına tümleşik geliştirme ortamı (IDE) tarafından doldurulur.  Kullanıcı bu birleşik giriş kutusunda düzenleyebilirsiniz. Son 16 girişleri birleşik giriş kutusu başına en fazla IDE hatırlar.<br /><br /> Kullanıcı bir birleşik giriş kutusunda seçerse ya da yeni bir şeyler girer, IDE uygun VSPackage size bildirir.|
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Alt öğeleri

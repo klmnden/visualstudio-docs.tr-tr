@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950328"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
@@ -52,13 +52,13 @@ Herhangi bir şablon tarafından kullanılan ayrılmış şablon parametreleri a
 |clrversion|Geçerli sürümü ortak dil çalışma zamanı (CLR).|
 |ext_*|Ekleme `ext_` üst şablonun değişkenlerine başvurmak için herhangi bir parametre öneki. Örneğin: `ext_safeprojectname`|
 |1-10 GUID|' % S'projesi bir proje dosyasında GUID değiştirmek için kullanılan bir GUID. En fazla 10 benzersiz GUID'ler belirtebilirsiniz (örneğin, `guid1`).|
-|ItemName|Kullanıcı tarafından sağlanan adı **Yeni Öğe Ekle** iletişim kutusu.|
+|ItemName|Parametresi kullanılıyor dosyasının adı.|
 |MachineName|Geçerli bilgisayar adı (örneğin, Computer01).|
 |ProjectName|Projeyi oluşturduğunuzda, kullanıcı tarafından sağlanan adı.|
 |RegisteredOrganization|Kayıt defteri anahtar değeri HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |RootNamespace|Geçerli projenin kök ad alanı. Bu parametre, yalnızca öğe şablonları için geçerlidir.|
-|safeitemname|Kullanıcı tarafından sağlanan adı **Yeni Öğe Ekle** olan tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış bir iletişim kutusu.|
-|safeprojectname|Tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış ancak, projeyi oluşturduğunuzda kullanıcı tarafından sağlanan adı.|
+|safeitemname|Aynı `itemname` ancak olan tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış.|
+|safeprojectname|Tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış ancak projeyi oluşturduğunuzda kullanıcı tarafından sağlanan adı.|
 |zaman|GG/AA/YYYY biçiminde geçerli saati 00:00:00.|
 |SpecificSolutionName|Çözüm adı. "Çözüm dizini oluşturma" işaretlendiğinde `SpecificSolutionName` çözüm adına sahip. "Çözüm dizini oluşturma" işaretli olduğunda `SpecificSolutionName` boştur.|
 |USERDOMAIN|Geçerli kullanıcı etki alanı.|

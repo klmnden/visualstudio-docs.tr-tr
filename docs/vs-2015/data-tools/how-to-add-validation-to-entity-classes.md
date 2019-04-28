@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5381c33790cbe9a7b5083f29d2602af39387bf61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386751"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Nasıl yapılır: Varlık sınıflarına doğrulama ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59668359"
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) , ekleme, güncelleştirme sırasında çalışan ve tüm varlıkların ve ayrıca sırasında ve sonrasında tek tek sütun siler tasarımcı tarafından oluşturulan kodu genişletme açmasına olanak tanıyan kısmi yöntemler sağlar değiştirir.  
   
 > [!NOTE]
->  Bu konuda, kullanarak varlık sınıflarına doğrulama ekleme için temel adımlar sağlanır [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Bir varlığa sınıfa başvuruda bulunmadan genel adımları takip etmek zor olabilir çünkü kullanan gerçek veri izlenecek yollar sağlanmıştır.  
+> Bu konuda, kullanarak varlık sınıflarına doğrulama ekleme için temel adımlar sağlanır [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Bir varlığa sınıfa başvuruda bulunmadan genel adımları takip etmek zor olabilir çünkü kullanan gerçek veri izlenecek yollar sağlanmıştır.  
   
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Belirli bir sütundaki değer değişiklikleri için doğrulama ekleme  
  Bu yordamda, bir sütundaki değeri değiştiğinde verileri doğrulamak gösterilmiştir. Sınıf tanımı içinde doğrulama gerçekleştirildiğinden (yerine kullanıcı arabiriminde) değeri doğrulama başarısız olmasına neden olursa bir özel durum oluşturulur. Hata işleme için sütun değerlerini değiştirmeye çalışırsa, uygulamanızın kodunda uygulayın.  
@@ -78,7 +78,7 @@ ms.locfileid: "59668359"
  Değerleri değişiklik sırasında denetlemenin yanı sıra, tam varlık sınıfı güncelleştirilecek denemesi yapıldığında veri da doğrulayabilirsiniz. Doğrulama güncelleştirme girişimi sırasında iş kurallarını bu gerekiyorsa birden fazla sütundaki değerleri karşılaştırmak sağlar. Aşağıdaki yordam, tam varlık sınıfı güncelleştirilecek denemesi yapıldığında doğrulamak gösterilmektedir.  
   
 > [!NOTE]
->  Doğrulama kodu güncelleştirmelerin varlık sınıfları tamamlamak kısmi yürütüldüğünde <xref:System.Data.Linq.DataContext> sınıfı (yerine bir varlığa sınıfın kısmi sınıftaki).  
+> Doğrulama kodu güncelleştirmelerin varlık sınıfları tamamlamak kısmi yürütüldüğünde <xref:System.Data.Linq.DataContext> sınıfı (yerine bir varlığa sınıfın kısmi sınıftaki).  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Bir varlık sınıfı için bir güncelleştirme sırasında verileri doğrulamak için  
   

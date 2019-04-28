@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387528"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Nasıl yapılır: Gizli hata ayıklayıcı komutlarını geri yükleme
 Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir dizi varsayılan seçmeniz istenir. Bazı diller için varsayılan IDE ayarları belirli hata ayıklayıcı komutları gizlemek.
@@ -47,7 +47,7 @@ Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir d
 7. Tıklayın **Kapat** tamamladığınızda menüsüne komut ekleme.
 
     > [!WARNING]
-    >  Bazı menü öğeleri yalnızca hata ayıklayıcı çalışma modunda veya kesme moduna gibi belirli modda olduğunda görünür. Bu nedenle, bu adımları tamamladıktan sonra eklenen öğenin hemen görünür olmayabilir.
+    > Bazı menü öğeleri yalnızca hata ayıklayıcı çalışma modunda veya kesme moduna gibi belirli modda olduğunda görünür. Bu nedenle, bu adımları tamamladıktan sonra eklenen öğenin hemen görünür olmayabilir.
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Geri yükleme komutları kullanılamaz Özelleştir iletişim kutusu
  Bazı komutlar, özellikle hiyerarşik menülerinde bulunan geri yüklenemez **Özelleştir** iletişim kutusu. Bu komutları geri yüklemek için IDE ayarları yeni bir koleksiyonu içeri aktarmanız gerekir.

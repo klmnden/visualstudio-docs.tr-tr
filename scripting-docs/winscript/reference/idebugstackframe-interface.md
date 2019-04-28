@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8f645d6460ff15734348267b5138b1b6edea071
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005884"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame Arabirimi
 İş parçacığı yığınında bir mantıksal yığın çerçevesini temsil eder. Çağrı `IDebugStackFrame::QueryInterface` elde etmek için yöntemi `IDebugExpressionContext` ifade değerlendirme ve İzle pencereleri sağlayan arabirim.  

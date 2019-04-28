@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d6875baf72d94494a1abaea9260e344b236f83c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925591"
 ---
 # <a name="implement-a-port-supplier"></a>Bağlantı noktası sağlayıcısı uygulama
 Bağlantı noktası sağlayıcısı oturum hata ayıklama Yöneticisi (SDM) istek bağlantı noktaları sağlar. Bağlantı noktası sağlayıcısı, DCOM olmayan bir makine ya da yeni bir cihaz desteği gerektirdiğinde için hata ayıklama sırasında uygulanmalıdır. Örneğin, bir cep telefonu için hata ayıklama sağlamak için cep telefonu (belki de yoluyla veya bir hücre bağlantı IR) bağlanma ve bir telefonda çalışan programlar ve işlemleri numaralandırır bağlantı noktaları sağlayan bir bağlantı noktası sağlayıcısı ayarlayabilirsiniz.

@@ -11,11 +11,11 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009331"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
 Windows altyapısı komut dosyasına eklenecek kod kod parçacıklarını ham metni sağlar veya çalışma zamanında değerlendirilecek ifade metin sağlayan komut bunu uygulayan olup `IActiveScriptParse32` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IPersist*`) komut dosyası altyapısı kod almak ve kod parçacıkları için çeşitli nesne iliştirmek için olaylar.  

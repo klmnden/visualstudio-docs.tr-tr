@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948936"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl yapılır: XSD şema dosyası oluşturma ve düzenleme
 
 Bu konuda, yeni bir XML Şeması (XSD) dosyası oluşturun ve ardından içerik için XSD dosyası ekleme açıklanmaktadır.
 

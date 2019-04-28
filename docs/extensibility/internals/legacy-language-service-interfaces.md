@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909581"
 ---
 # <a name="legacy-language-service-interfaces"></a>Eski Dil Hizmeti Arabirimleri
 Belirli bir programlama dili için aynı anda bir dil hizmeti yalnızca bir örneği olabilir. Ancak, bir tek dil hizmeti birden fazla Düzenleyicisi görebilir.
@@ -52,4 +52,4 @@ Belirli bir programlama dili için aynı anda bir dil hizmeti yalnızca bir örn
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Eski Dil Hizmeti Geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [Denetim listesi: Eski dil hizmeti oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Yapılacaklar listesi: Eski Dil Hizmeti Oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

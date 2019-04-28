@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965047"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü
 Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebilirlik Çerçevesi (MEF) uzantılarını kullanarak bağlamak için bir dosya adı uzantısı. Bazı durumlarda, dosya adı uzantısı, bir dil hizmeti tarafından zaten tanımlandı. Ancak, MEF ile kullanmak için yine de bunu bir içerik türüyle bağlamanız gerekir.

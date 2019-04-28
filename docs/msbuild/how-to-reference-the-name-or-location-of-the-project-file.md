@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f001b73b97723db177706b6625cbfa827bc2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386812"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Nasıl yapılır: Adı veya proje dosyasının konumuna başvurma
 Kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini adına veya konumuna projenin kullanabilirsiniz. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosya adına başvuran ayrılmış özellikleri ve proje ile ilgili diğer özellikleri sağlar. Ayrılmış özellikler hakkında daha fazla bilgi için bkz. [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -42,7 +42,7 @@ Kendi özellik oluşturmak zorunda kalmadan proje dosyasının kendisini adına 
   Ayrılmış bir özellik kullanmanın bir avantajı, herhangi bir değişiklik proje dosya adına otomatik olarak eklenen ' dir. Projeyi sonraki açışınızda çıkış dosyası, yapmanız gereken başka bir işlem ile yeni bir ada sahip olacaktır.
 
 > [!NOTE]
->  Ayrılmış özellikler, proje dosyasında tanımlanamaz.
+> Ayrılmış özellikler, proje dosyasında tanımlanamaz.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki örnek proje dosyası, proje adı çıkış için bir ad belirtmek için ayrılmış bir özellik olarak başvurur.

@@ -15,11 +15,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944080"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Öğretici: Bir depodan proje açma
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399513"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend'de XAML hatalarını ayıklama
 Kullanabileceğiniz araçları [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] XAML uygulamanızda hata ayıklamak için. Bir proje oluşturduğunuzda, tüm hataları görüntülenebilir **sonuçları** paneli. Hatayla ilgili biçimlendirme bulmak için bir hataya çift tıklayın. Çalışmak için daha fazla yer gerekirse gizleyebilirsiniz **sonuçları** F12 tuşuna basarak paneli.
@@ -27,7 +27,7 @@ Kullanabileceğiniz araçları [!INCLUDE[blend_first](../debugger/includes/blend
  XAML veya arka plan kod dosyalarını dilin biçimlendirme kurallarına uygulamazsanız sözdizimi hataları ortaya çıkar. Hatanın açıklaması, nasıl düzeltileceğini anlamanıza yardımcı olabilir. Liste dosyasının adını ve hatanın oluştuğu satırın numarasını da belirtir. XAML hataları listelenen **biçimlendirme** sekmesinde **sonuçları** paneli.
 
 > [!TIP]
->  XAML, XML-tabanlı işaretleme dilidir ve XML sözdizimi kurallarına uyar.
+> XAML, XML-tabanlı işaretleme dilidir ve XML sözdizimi kurallarına uyar.
 
  XAML söz dizimi hataları bazı yaygın nedenleri:
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903775"
 ---
 # <a name="process-search-dialog-box"></a>İşlem Arama İletişim Kutusu
 Bulmak ve belirli bir işlem düğümü seçmek için bu iletişim kutusunu kullanın [işlemler görünümü](../debugger/processes-view.md). Bu iletişim kutusunu görüntülemek için odağı taşıyın. bir **işlemleri** Görünümü penceresi. Ardından **bulma işlemi** gelen **arama** menüsü.

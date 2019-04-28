@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974988"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -62,7 +62,7 @@ Kod parçacığı yazarının adını belirtir. **Kod parçacıkları Yöneticis
 
 Kısa kod blokları için bir kapsayıcı sağlar.
 
-### <a name="keywords"></a>Anahtar Sözcükler
+### <a name="keywords"></a>anahtar sözcükler
 
 Metninde kullanılabilecek iki ayrılmış sözcük `Code` öğesi: `$end$` ve `$selected$`. `$end$` kod parçacığı eklendikten sonra imlecin yerleştirileceği konumu işaretler. `$selected$` çağrıldığında kod parçacığına eklenecek olan belgedeki seçili metni temsil eder. Örneğin, içeren bir kod parçacığı verilen:
 
@@ -318,10 +318,7 @@ Bir metin değeri gereklidir. Bu metin, nesne veya değişmez değer için benze
 
 ## <a name="import-element"></a>İçeri aktarma öğesi
 
-Bir IntelliSense Kod Parçacığı tarafından kullanılan içeri aktarılan ad alanlarını belirtir.
-
-> [!NOTE]
-> `Import` Öğesi yalnızca Visual Basic projeleri için desteklenir.
+Bir IntelliSense kod parçacığı tarafından kullanılan içeri aktarılan ad alanlarını belirtir.
 
 ```xml
 <Import>
@@ -340,9 +337,6 @@ Bir IntelliSense Kod Parçacığı tarafından kullanılan içeri aktarılan ad 
 ## <a name="imports-element"></a>Imports öğesi
 
 Grupları tek tek `Import` öğeleri.
-
-> [!NOTE]
-> `Imports` Öğesi yalnızca Visual Basic projeleri için desteklenir.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Değişmez değerler ve nesneler içeremez bir **kimliği** öğe değerini sele
 
 ## <a name="namespace-element"></a>Namespace öğesi
 
-Kod parçacığının derlenip çalışması için içeri aktarılması gereken ad alanını belirtir. Belirtilen ad alanı `Namespace` öğesi eklenen otomatik olarak bir `Imports` zaten yoksa, kod deyimi başında.
-
-> [!NOTE]
-> `Namespace` Öğesi yalnızca Visual Basic projeleri için desteklenir.
+Kod parçacığının derlenip çalışması için içeri aktarılması gereken ad alanını belirtir. Belirtilen ad alanı `Namespace` öğesi eklenen otomatik olarak bir `using` yönergesi veya `Imports` başında bir deyim zaten yoksa kod.
 
 ```xml
 <Namespace>
@@ -515,7 +506,7 @@ Grupları tek tek `Reference` öğeleri.
 Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin değerini bir `Shortcut` öğesi yalnızca alfasayısal karakterler içerebilir tire (-) ve alt çizgi (_).
 
 > [!CAUTION]
-> _ ve - C++ kod parçacığı kısayollarında desteklenmeyen karakterlerdir değildir.
+> _ ve - desteklenen karakter olmayan C++ kod parçacığı kısayollarında.
 
 ```xml
 <Shortcut>
@@ -569,11 +560,11 @@ Visual Studio'nun kod parçacığını nasıl eklediğini belirtir.
 
 Metin değeri şu değerlerden biri olmalıdır:
 
--   `SurroundsWith`: kod parçacığının, seçilen bir kod parçasının etrafına yerleştirilmesini sağlar.
+- `SurroundsWith`: kod parçacığının, seçilen bir kod parçasının etrafına yerleştirilmesini sağlar.
 
--   `Expansion`: kod parçacığının imlece eklenmesini sağlar.
+- `Expansion`: kod parçacığının imlece eklenmesini sağlar.
 
--   `Refactoring`: kod parçacığının C# yeniden düzenlemesi sırasında kullanıldığını belirtir. `Refactoring` özel kod parçacıklarında kullanılamaz.
+- `Refactoring`: kod parçacığının C# yeniden düzenlemesi sırasında kullanıldığını belirtir. `Refactoring` özel kod parçacıklarında kullanılamaz.
 
 ## <a name="snippettypes-element"></a>SnippetTypes öğesi
 

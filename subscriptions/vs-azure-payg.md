@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Azure Kullandıkça Öde hesabınızı ayarlama konusunda bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948278"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Azure geliştirme ve Test Kullandıkça Öde aboneliği ayarlama
 Ekibinizle bulutta işbirliği yapın.  Diğer abonelerle işbirliğine yandan ekipler ve ortamlar arasında yalıtımı da sağlar etkinleştirme, çeşitli geliştirme ve Test Kullandıkça Öde abonelikleri oluşturun.  Geliştirme/test için özel indirimli saat ücretleri alın ve kullanım hakları, azure'da abonelik yazılımınızın bulut.

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387506"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Bir model oluşturmayı desteklemiyor Visual Studio sürümünde bir modeli açt
  Bir UML diyagram veya katman diyagramı, okumak istiyorsanız bu nedenle, ayrıca içinde oluşturulmuş bir modelleme projesine erişiminiz olmalıdır. Projeden erişerek ya da bunu yapabilirsiniz [!INCLUDE[esprscc](../includes/esprscc-md.md)], ya da proje dosyalarının bir kopyasını alma.  
   
 > [!NOTE]
->  Bu kod için geçerli değildir haritaları ve .NET sınıf diyagramları koddan oluşturulan. Bu diyagramlar bir modelleme projesi bağımsız olarak görüntülenebilir.  
+> Bu kod için geçerli değildir haritaları ve .NET sınıf diyagramları koddan oluşturulan. Bu diyagramlar bir modelleme projesi bağımsız olarak görüntülenebilir.  
   
  Bir UML diyagram ya da bir katman diyagramı okumak için gereken dosyalar en düşük kümesini şu şekildedir:  
   
 - İki dosyaları okumak için örneğin, istediğiniz diyagram için diyagram **MyDiagram.classdiagram ve MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Katman diyagramları için adlı bir dosya da olmalıdır _Diyagramım_**. layerdiagram.suppressions**.  
+    > Katman diyagramları için adlı bir dosya da olmalıdır _Diyagramım_**. layerdiagram.suppressions**.  
   
 - Modelleme Proje dosyası (**MyModel.modelproj**)  
   

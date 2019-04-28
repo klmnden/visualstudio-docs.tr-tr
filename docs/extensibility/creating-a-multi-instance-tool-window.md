@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891091"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Çok örnekli araç penceresi oluşturma
 Böylece aynı anda birden çok örneğini açılabilir bir araç penceresi programlayabilirsiniz. Varsayılan olarak, araç pencerelerini açmak yalnızca bir örneğine sahip olabilirsiniz.

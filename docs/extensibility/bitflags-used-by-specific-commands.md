@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891693"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel komutlar tarafından kullanılan bit bayrakları
 Kaynak Denetimi Eklentisi API işlevleri bir dizi davranışını bir veya daha fazla BITS tek bir değer olarak ayarlayarak değiştirilebilir. Bu değerleri bit bayrakları bilinir. Kaynak Denetimi Eklentisi API tarafından kullanılan çeşitli bit bayrakları, bunları kullanan bir işlev tarafından gruplandırılmış burada açıklanmıştır.

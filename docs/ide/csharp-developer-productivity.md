@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: MT
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973365"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Visual Studio üretkenliği Kılavuzu C# geliştiriciler
 
@@ -154,10 +154,12 @@ Visual Studio aramanıza yardımcı olması için birçok özelliklere sahiptir 
 Visual Studio 2017'den itibaren çok sayıda test deneyimi geliştirmeleri vardır. Test çerçeveleri, MSTest v1, MSTest v2, NUnit veya XUnit test edebilirsiniz.
 
 - **Test Gezgini** test bulma işleminin hızlı.
-- Testlerinizde düzenlemek **Test Gezgini** ile *hiyerarşik sıralama*.
-- [Live unit Testing](../test/live-unit-testing.md) sürekli olarak kod değişikliklerinizden etkilenen testleri çalıştırır ve testlerinizi durumunu bildirmek için satır içi Düzenleyicisi simgeleri güncelleştirir. Dahil belirli testleri hariç veya test projelerinden, Canlı test kümesi.
 
-![Visual Studio'da metin Gezgini hiyerarşi görünümü](../ide/media/VSGuide_Testing.png)
+- Testlerinizde düzenlemek **Test Gezgini** ile *hiyerarşik sıralama*.
+
+   ![Visual Studio'da metin Gezgini hiyerarşi görünümü](../ide/media/VSGuide_Testing.png)
+
+- [Live unit Testing](../test/live-unit-testing.md) sürekli olarak kod değişikliklerinizden etkilenen testleri çalıştırır ve testlerinizi durumunu bildirmek için satır içi Düzenleyicisi simgeleri güncelleştirir. Dahil belirli testleri hariç veya test projelerinden, Canlı test kümesi. (Yalnızca visual Studio Enterprise sürümü.)
 
 ## <a name="debugging"></a>Hata Ayıklama
 
@@ -211,5 +213,5 @@ Kod yazma daha verimli hale getirmek için düzenleyici ve üretkenlik özellikl
 | Tam çözüm analizini etkinleştirme | Çözümünüzdeki tüm hataları görmek **hata listesi** | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Tam çözüm analizini etkinleştirme** |
 | Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir | Tür/üye dış kaynaklardan tanıma ver ve metot gövdeleri gösterilecek yetenek kaynak koda dönüştürücü kullanma | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir** |
 | Tamamlanma/öneri modu | IntelliSense tamamlanma davranışı değiştirir. Intellij arka planlar geliştiricilere, varsayılan olmayan bir ayarı burada kullanma eğilimindedir. | **Menü** > **Düzenle** > **IntelliSense** > **tamamlama modunu Değiştir** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Başvuru bilgileri kod ve değişiklik geçmişi Düzenleyicisi'nde görüntüler | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >   **CodeLens** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Başvuru bilgileri kod ve değişiklik geçmişi Düzenleyicisi'nde görüntüler. (Kaynak denetimi CodeLens göstergeleri içinde Visual Studio Community sürümü kullanıma sunulmaz.) | **Araçlar** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >   **CodeLens** |
 | [Kod parçacıkları](../ide/visual-csharp-code-snippets.md) | Ortak Demirbaş kodu saplama Yardım | Bir kod parçacığı adı yazıp basın **sekmesini** iki kez. |

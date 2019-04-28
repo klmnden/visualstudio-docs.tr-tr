@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896626"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı C++ için biçim belirticileri
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch**, **Otolar**, ve **Yereller** biçim belirticilerini kullanarak windows.
@@ -37,7 +37,7 @@ ms.locfileid: "57870599"
 İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi içinde [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve hatta kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç görünür bir [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). DataTip görünen biçim belirticisini yansıtır.
 
 > [!NOTE]
-> Visual Studio yerel hata ayıklayıcı için yeni bir hata ayıklama motoru değiştiğinde, bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır hata ayıklamayı C + +/ CLI.
+> Visual Studio yerel hata ayıklayıcı için yeni bir hata ayıklama motoru değiştiğinde, bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır, hata ayıklama C++/CLI.
 
 ## <a name="set-format-specifiers"></a>Biçim belirticileri kümesi
 Aşağıdaki kod örneği kullanacağız:

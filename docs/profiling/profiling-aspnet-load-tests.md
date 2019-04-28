@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994972"
 ---
 # <a name="profile-aspnet-load-tests"></a>ASP.NET yük testlerinin profilini
 Toplamak profil oluşturma verileri otomatik [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] web ASP.NET Web siteleri projeleri üzerinde çalıştırdığınız testleri. Örnekleme ve katman etkileşim verileri toplayabilir. Daha fazla bilgi için aşağıdaki konulara bakın:

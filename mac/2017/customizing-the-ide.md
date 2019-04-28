@@ -1,5 +1,5 @@
 ---
-title: IDE'yi özelleştirme
+title: IDE’yi Özelleştirme
 description: Mac için Visual Studio hem verimlilik hem de estetik gereksinimlerini karşılayan bir ortamda uygulamalar geliştirmek kullanıcıların çeşitli şekillerde özelleştirilebilir. Mac uygulamanızı gereksinimlerinize uyacak şekilde uyarlanabilir için bu konuda çeşitli yollarla Visual Studio keşfediyor.
 author: conceptdev
 ms.author: crdun
@@ -7,13 +7,13 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931677"
 ---
-# <a name="customizing-the-ide"></a>IDE'yi özelleştirme
+# <a name="customizing-the-ide"></a>IDE’yi Özelleştirme
 
 Mac için Visual Studio hem verimlilik hem de estetik ihtiyaçlarını karşılayan bir ortamda uygulamalar geliştirmek kullanıcıların çeşitli şekillerde özelleştirilebilir. Bu makalede, çeşitli yollarla Mac için Visual Studio ihtiyaçlarınızı uyarlanabilir keşfediyor.
 

@@ -6,11 +6,11 @@ author: bytesguy
 ms.author: adhartle
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982716"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac için Visual Studio'daki klavye kısayolları
 
@@ -105,7 +105,7 @@ Uygun klavye kısayolunu kullanarak Mac için Visual Studio komutları çeşitli
 |Kaydet|**⌘S**|
 |Tümünü Kaydet|**⇧⌘S**|
 
-## <a name="help"></a>Yardım
+## <a name="help"></a>Help
 
 |Komutlar|Klavye kısayolları|
 |-|-|

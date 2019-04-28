@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977399"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.

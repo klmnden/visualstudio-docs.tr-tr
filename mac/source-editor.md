@@ -6,15 +6,15 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000193"
 ---
 # <a name="source-editor"></a>Kaynak Düzenleyicisi
 
-Güvenilir bir kaynak Düzenleyicisi kod temellerini ve verimli bir şekilde yazmak için gereklidir. Mac için Visual Studio IDE ile etkileşimlerinizde ortasına bir Gelişmiş kaynak Düzenleyicisi sağlar. Kaynak Düzenleyicisi beklediğiniz ve kolayca çalışmanızı yapmanız gereken özellikleri sağlar: temel tür kendi Roslyn derleyici tümleştirmesinin avantajları için söz dizimi vurgulama, kod parçacıkları ve kod katlamayı, tam olarak işlevsel IntelliSense gibi kod tamamlama.
+Güvenilir bir kaynak Düzenleyicisi kod temellerini ve verimli bir şekilde yazmak için gereklidir. Mac için Visual Studio IDE ile etkileşimlerinizde ortasına bir Gelişmiş kaynak Düzenleyicisi sağlar. Kaynak Düzenleyicisi beklediğiniz ve kolayca çalışmanızı yapmanız gereken özellikleri sağlar: Temel tür söz dizimi vurgulama, kod parçacıkları ve kod katlamayı, avantajlarını kendi Roslyn derleyici tümleştirme gibi tam olarak işlevsel IntelliSense kod tamamlama.
 
 Mac için Visual Studio kaynak düzenleyicisinde, yeniden düzenleme, hata ayıklama ve sürüm denetimi tümleştirmesi gibi IDE içindeki diğer tüm işlevlere sahip için benzersiz bir deneyim sağlar.
 
@@ -50,7 +50,7 @@ Bu menü öğesi, etkinleştirme veya devre dışı kod katlamayı de kullanıla
 
 Görünmez karakterler kaynak kodunda görüntülemeniz için gerekli olabilir. Kod standartlarımız, koda ve gereksiz yere değil yer harcama bağlılığı emin olmak için görünür bir yoludur. Ayrıca yazarken kullanışlıdır F#, kod değerlendirmek için tam olarak girintili satırlarına bağlıdır.
 
-Boşluk giderek göstermek için seçenekleri ayarlayın **Visual Studio > Tercihler > Metin Düzenleyicisi > işaretleyiciler ve Cetveller**. Bu seçenek olanak ayarı _olduğunda_ görünmez karakterler gösterilir: hiçbir zaman seçimde veya her zaman:
+Boşluk giderek göstermek için seçenekleri ayarlayın **Visual Studio > Tercihler > Metin Düzenleyicisi > işaretleyiciler ve Cetveller**. Bu seçenek olanak ayarı _olduğunda_ görünmez karakterler gösterilir: Hiçbir zaman seçimi veya her zaman:
 
 ![Görünmez karakterler seçeneklerini göster](media/source-editor-image3.png)
 

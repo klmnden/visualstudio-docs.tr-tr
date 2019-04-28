@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a1548784de8ad2cfc9d6368691da1b68a1bc1e3f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58153623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963318"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
 Bir numaralandırma sıralı segmentleri belirtilen sayıda atlar.  

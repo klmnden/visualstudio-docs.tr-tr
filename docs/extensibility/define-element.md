@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccb14705b4d799e1f7fa6de4728ee8f7fc7b3fb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912669"
 ---
 # <a name="define-element"></a>Define öğesi
 Sembol ad ve değer çifti tanımlar. Bu simge, koşullu özniteliklere göre değerlendirilebilir. Daha fazla bilgi için [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md). Ayrıca bkz: [Symbols öğesi](../extensibility/symbols-element.md).

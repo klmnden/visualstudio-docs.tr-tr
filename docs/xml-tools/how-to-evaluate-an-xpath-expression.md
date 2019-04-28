@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002077"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath ifadelerini değerlendirme
 
@@ -28,7 +28,7 @@ Bir XPath ifadesi değerlendirilirken:
 > [!NOTE]
 > XSLT hata ayıklama yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
 
-## <a name="evaluate-an-xpath-expression"></a>Bir XPath ifadesini değerlendirme
+## <a name="evaluate-an-xpath-expression"></a>XPath ifadesini değerlendirme
 
 Aşağıdaki yordam kullanır *average.xsl aşağıda* ve *books.xml* dosyalarını [izlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) sayfası.
 

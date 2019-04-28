@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925214"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Bekleyen kesme noktası koşulu stili için belirtir ve bağlı kesme noktaları.

@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969065"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Oluşturma Öncesi Olay/Oluşturma Sonrası Olay Komut Satırı İletişim Kutusu
 Ön veya derleme sonrası olay için yazdığınız [derleme olayları sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) Düzenle doğrudan kutusu veya öncesi ve sonrası derleme makroları kullanılabilir makroların bir listeden seçebilirsiniz.

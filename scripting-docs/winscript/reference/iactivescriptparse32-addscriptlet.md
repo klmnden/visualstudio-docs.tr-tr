@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954900"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Kod oluşturma yöntemini komut dosyasına ekler. Bu yöntem, burada betik kalıcı durumunu, konak belgeyle birbirine ve ana betik döndürmekten sorumludur ortamlarda kullanılır yerine ile bir `IPersist*` arabirimi. Kod parçacıklarını iç olayları eklenmesi HTML belgesinde gömülü kod izin HTML komut dosyası dilleri birincil örnekler (örneğin, ONCLICK="button1.text='Exit'").  

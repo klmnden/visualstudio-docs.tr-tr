@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967363"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme
   Visual Studio'da geliştirme bilgisayarında yerel SharePoint sitelerine kullanarak bağlanabilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini** penceresi. Bu düğüm, birçok yerel SharePoint sitelerine bileşenlerinin bir hiyerarşik ağaç görünümünde görüntüler. Örneğin, yerel sitelerinde listeler, belge kitaplıkları ve içerik türlerini görüntüleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **Sunucu Gezgini** yerel SharePoint sitelerine bağlanmak için bkz: [Sunucu Gezgini kullanarak SharePoint Gözat bağlantıları](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).

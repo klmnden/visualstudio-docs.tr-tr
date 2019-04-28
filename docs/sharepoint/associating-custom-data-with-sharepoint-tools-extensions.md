@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a2c1869791b250fb90c6a634f057797f3c57a62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987972"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint araç uzantıları ile özel verileri ilişkilendirme
   SharePoint araç uzantıları belirli nesneleri özel veri ekleyebilirsiniz. Daha sonra uzantınızı diğer koddan erişmek istediğiniz uzantınızı bir bölümünde veriniz olduğunda bu kullanışlıdır. Depolamak ve verilere erişmek için özel bir yol uygulamak yerine, verileri aynı nesneden daha sonra almak ve verileri uzantınızı bir nesne ile ilişkilendirin.

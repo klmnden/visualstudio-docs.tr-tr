@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6b61c62e8a3b69963bd56129fd3e7168271fc07
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951210"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData Öğesi (Visual Studio Şablonları)
 
@@ -109,4 +109,4 @@ Standart proje şablonu için meta veriler aşağıdaki örnekte bir C# Windows 
 - [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
 - [Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)
 - [WizardExtension Öğesi (Visual Studio Şablonları)](../extensibility/wizardextension-element-visual-studio-templates.md)
-- [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Nasıl yapılır: Proje Şablonlarıyla Sihirbazlar Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

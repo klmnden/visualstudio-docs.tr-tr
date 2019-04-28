@@ -1,22 +1,24 @@
 ---
 title: Filtre dizeleri oluşturmak için Tablo Tasarımcısı | Microsoft Docs
 description: Filtre dizeleri oluşturmak için Tablo Tasarımcısı
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev14
+ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/18/2016
-ms.author: ghogen
+origin.date: 11/18/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961931"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Tablo Tasarımcısı için Filtre Dizelerini Oluşturma
 ## <a name="overview"></a>Genel Bakış
@@ -35,15 +37,15 @@ Aşağıdaki mantıksal işleçler için tüm özellik türleri desteklenir:
 | lt |Küçüktür |Fiyat lt 20 |
 | le |Küçük veya eşittir |Fiyat le 100 |
 | ne |Eşit değildir |Şehir ne 'Londra' |
-| and |Ve |Fiyat le 200 ve fiyat gt 3.5 |
-| veya |Veya |Fiyat le 3.5 veya 200 fiyat gt |
+| and |And |Fiyat le 200 ve fiyat gt 3.5 |
+| veya |Or |Fiyat le 3.5 veya 200 fiyat gt |
 | not |değil |IsAvailable değil |
 
 Bir filtre dizesi oluştururken aşağıdaki kuralları önemlidir:
 
-* Mantıksal işleçler bir özelliği bir değerle karşılaştırmak için kullanılır. Bir özelliği dinamik değerle karşılaştırmak mümkün değil olduğunu unutmayın. ifadenin bir tarafı sabit olmalıdır.
-* Filtre dizesinin tüm parçalarını büyük/küçük harfe duyarlıdır.
-* Sabit değer, geçerli sonuçlar döndürmesi için aynı veri türünde özellikle filtrenin olmalıdır. Desteklenen özellik türleri hakkında daha fazla bilgi için bkz. [tablo hizmeti veri modelini anlama](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+- Mantıksal işleçler bir özelliği bir değerle karşılaştırmak için kullanılır. Bir özelliği dinamik değerle karşılaştırmak mümkün değil olduğunu unutmayın. ifadenin bir tarafı sabit olmalıdır.
+- Filtre dizesinin tüm parçalarını büyük/küçük harfe duyarlıdır.
+- Sabit değer, geçerli sonuçlar döndürmesi için aynı veri türünde özellikle filtrenin olmalıdır. Desteklenen özellik türleri hakkında daha fazla bilgi için bkz. [tablo hizmeti veri modelini anlama](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Dize özellikleri üzerinde filtreleme
 Dize özellikleri filtrelerken, dize sabiti tek tırnak işaretleri içine alın.
@@ -92,3 +94,5 @@ Bir DateTime değeri filtrelemek için belirtin **datetime** tek tırnak işaret
 Aşağıdaki örnek, CustomerSince özelliği 10 Temmuz 2008'e eşit olduğu varlıklar döndürür:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
+
+<!-- Update_Description: update metedata properties -->

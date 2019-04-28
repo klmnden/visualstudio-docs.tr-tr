@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955097"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Komut dosyası için ad alanı için bir tür kitaplığı ekler. Bu benzer `#include` C/C++'ta yönergesi. Sınıf tanımları gibi önceden tanımlanmış öğelerin kümesi sağlayan `typedefs`ve komut dosyası çalışma zamanı ortamına eklenecek sabitleri adlı.  

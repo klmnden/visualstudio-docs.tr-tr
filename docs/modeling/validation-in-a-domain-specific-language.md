@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385845"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamalarını tanımlayabilirsiniz. Örneğin, kullanıcılar, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek DSL'nizi izin veriyorsa, alt kendi üst öğeleri sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.
@@ -25,7 +25,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
  Metin şablonları ya da kullanıcılarınızın modelleri işleyen diğer araçları yazıyorsanız doğrulama özellikle önemlidir. Modelleri tarafından bu Araçları'nı varsayıldı önkoşulları karşılayan doğrulama sağlar.
 
 > [!WARNING]
->  Ayrıca yanı sıra uzantısı menü komutları ve hareket işleyicileri DSL'nizi uzantıları ayrı tanımlanması için doğrulama kısıtlamaları izin verebilirsiniz. Kullanıcılar DSL'nizi yanı sıra bu uzantıları yüklemeyi tercih edebilirsiniz. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).
+> Ayrıca yanı sıra uzantısı menü komutları ve hareket işleyicileri DSL'nizi uzantıları ayrı tanımlanması için doğrulama kısıtlamaları izin verebilirsiniz. Kullanıcılar DSL'nizi yanı sıra bu uzantıları yüklemeyi tercih edebilirsiniz. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Doğrulama çalışıyor
  Diğer bir deyişle, bir kullanıcı bir model düzenlerken, aşağıdaki eylemleri doğrulama, etki alanına özgü dil örneğini çalıştırabilirsiniz:
@@ -48,7 +48,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
  Her doğrulama yöntemi, bulduğu hataları bildirir.
 
 > [!NOTE]
->  Doğrulama yöntemlerinin hataları bildirin, ancak modelin değiştirmeyin. İsterseniz ayarlamak veya bazı değişiklikleri önlemek için bkz: [doğrulama alternatifleri](#alternatives).
+> Doğrulama yöntemlerinin hataları bildirin, ancak modelin değiştirmeyin. İsterseniz ayarlamak veya bazı değişiklikleri önlemek için bkz: [doğrulama alternatifleri](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Doğrulama kısıtlaması tanımlamak için
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Bir yöntemle kadar ön ek `[ValidationMethod()]` istediğiniz öznitelikler. Bir yöntem hem özel hem de standart kategorisine ekleyebilirsiniz.
+> Bir yöntemle kadar ön ek `[ValidationMethod()]` istediğiniz öznitelikler. Bir yöntem hem özel hem de standart kategorisine ekleyebilirsiniz.
 
  Özel doğrulama çağırmak için:
 

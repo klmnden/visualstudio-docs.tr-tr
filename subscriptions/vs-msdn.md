@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
 searchscope: VS Subscription
 ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947442"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 

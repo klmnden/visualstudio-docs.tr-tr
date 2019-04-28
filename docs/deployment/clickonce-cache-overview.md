@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900541"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce önbelleğine genel bakış
 Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları, yerel olarak yüklü veya çevrimiçi barındırılan depolanır istemci bilgisayarda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulama *önbellek*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Documents and Settings klasörü geçerli kullanıcının yerel ayarlarını dizininin altında gizli dizinler ailesinin bir önbellektir. Bu önbellek, derlemeleri, yapılandırma dosyaları, uygulama ve kullanıcı ayarlarını ve veri dizini gibi uygulamanın tüm dosyaları içerir. Önbellek, uygulamanın veri dizini en son sürüme geçirmek için sorumludur. Veri geçişi hakkında daha fazla bilgi için bkz. [erişen yerel ve uzak veri ClickOnce uygulamalarında](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).

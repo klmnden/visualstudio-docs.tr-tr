@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009417"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>İzlenecek yol: Temel bir site tanımı projesi oluşturma
   Bu izlenecek yol, üzerinde bazı denetimler içeren bir görsel Web bölümü içeren bir temel site tanımını nasıl oluşturulacağını gösterir. Açıklık için oluşturduğunuz görsel Web Bölümü, yalnızca birkaç denetimlerine sahiptir. Ancak, daha fazla işlevsellik içeren daha karmaşık SharePoint site tanımları oluşturabilirsiniz.

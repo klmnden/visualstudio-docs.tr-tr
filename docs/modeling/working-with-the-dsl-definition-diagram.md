@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951237"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL Tanım Diyagramı ile Çalışma
 Diyagramı bir [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] tanımı etki alanına özgü dil tanımlamak için önemli bir araçtır. Etki alanınıza öğeleri modelini ve diyagramda ilişkileri tanımlamak ve daha okunabilir yapmak için diyagramın düzenini değiştirebilirsiniz ekleyebilirsiniz.

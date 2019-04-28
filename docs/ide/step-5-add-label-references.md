@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc94660debb3d4668fb5d9d50e68466fe7631e5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968942"
 ---
 # <a name="step-5-add-label-references"></a>5. Adım: Etiket başvuruları ekleme
 Program oyuncunun seçtiği etiket kontrollerini izlemesi gerekir. Şu anda program oyuncunun seçtiği tüm etiketleri göstermektedir. Ancak bunun değişmesini sağlayacağız. İlk etiket seçildikten sonra program etiketin simgesini göstermelidir. İkinci etiket seçildikten sonra iki simgeyi de kısa bir süre göstermeli ve ardından iki simgeyi de tekrar gizlemelidir. Programınız şimdi hangi etiket denetiminin ilk ve kullanarak, ikinci seçilir izlemek *başvuru değişkenlerini*.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928968"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama bildirimi
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi kullanılarak dağıtılan bir uygulamayı tanımlayan bir XML dosyası olduğunu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -31,7 +31,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bil
 | - | - | - |
 | [\<assembly> Öğesi](../deployment/assembly-element-clickonce-application.md) | Gerekli. En üst düzey öğe. | `manifestVersion` |
 | [\<assemblyIdentity> Öğesi](../deployment/assemblyidentity-element-clickonce-application.md) | Gerekli. Birincil derlemenin tanımlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo> Öğesi](../deployment/trustinfo-element-clickonce-application.md) | Uygulama güvenlik gereksinimlerini tanımlar. | None |
+| [\<trustInfo> Öğesi](../deployment/trustinfo-element-clickonce-application.md) | Uygulama güvenlik gereksinimlerini tanımlar. | Yok. |
 | [\<entryPoint> Öğesi](../deployment/entrypoint-element-clickonce-application.md) | Gerekli. Uygulama kodu giriş noktasını tanımlar. | `name` |
 | [\<dependency> Öğesi](../deployment/dependency-element-clickonce-application.md) | Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar. | Yok. |
 | [\<file> Öğesi](../deployment/file-element-clickonce-application.md) | İsteğe bağlı. Uygulama tarafından kullanılan her nonassembly dosyayı tanımlar. Dosya ile ilgili Bileşen Nesne Modeli (COM) yalıtım veriler içerebilir. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |

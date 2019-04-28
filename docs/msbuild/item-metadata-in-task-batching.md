@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996782"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev işlemede öğe meta verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir görevi, her batch ile bir kez çalıştırın. Tam olarak hangi batch ile hangi öğeleri geçirilen anlamak kafa karıştırıcı olabilir. Bu konu, toplu işleme içeren aşağıdaki yaygın senaryoları kapsar.

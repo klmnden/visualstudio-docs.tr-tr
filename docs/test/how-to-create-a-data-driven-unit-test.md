@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979246"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri temelli birim testi oluşturma
 
@@ -128,7 +128,7 @@ DataSource özniteliği üç Oluşturucusu vardır.
 
 Depolanan bağlantı bilgilerini bir parametre ile bir oluşturucu kullanan *app.config* çözüm dosyası. *DataSourceSettingsName* bağlantı bilgilerini belirten yapılandırma dosyasında Xml öğesi adı.
 
-Kullanarak bir *app.config* dosya, birim testinin kendisi değişiklikler olmadan veri kaynağının konumunu değiştirmek olanak sağlar. Oluşturma ve kullanma hakkında bilgi için bir *app.config* bkz [izlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Kullanarak bir *app.config* dosya, birim testinin kendisi değişiklikler olmadan veri kaynağının konumunu değiştirmek olanak sağlar. Oluşturma ve kullanma hakkında bilgi için bir *app.config* bkz [izlenecek yol: Veri Kaynağı Tanımlamak İçin Yapılandırma Dosyası Kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]

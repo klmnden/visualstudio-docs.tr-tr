@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Bulun ve Visual Studio aboneliğinize dahil olan Microsoft ürünleri indirmeniz öğrenin.
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953757"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde kullanarak abone indirmeleri
 Abone Avantajlarınızı bir parçası olarak çok çeşitli yazılım indirme işlemleri erişebilirsiniz.

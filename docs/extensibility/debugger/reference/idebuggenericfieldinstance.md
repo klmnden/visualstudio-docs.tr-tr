@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b9da35f705f066e32c91a0dfc955d9f98104e8ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919109"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Yönetilen kod genel bir tür için bir alan örneğini temsil eder.

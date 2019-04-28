@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio abonelikleri Microsoft Ürün ve hizmet sözleşmesi (MPSA)
 searchscope: VS Subscription
 ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002315"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio abonelikleri Microsoft Products and Services Sözleşmesi (MPSA)
 

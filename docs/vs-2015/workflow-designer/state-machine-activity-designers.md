@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949168"
 ---
 # <a name="state-machine-activity-designers"></a>Durum Makinesi Etkinlik Tasarımcıları
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz etkinlik tasarımcıları içerir. Bu bölüm, oluşturun ve durum makine iş akışları yönetmek için kullanılan sistem tarafından sağlanan etkinlik tasarımcıları içerir. Aşağıdaki konular bu tasarımcıları açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  

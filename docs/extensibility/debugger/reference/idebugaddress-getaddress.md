@@ -1,51 +1,52 @@
 ---
 title: IDebugAddress::GetAddress | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugAddress::GetAddress
 helpviewer_keywords:
 - IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-author: gregvanl
+caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924119"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Bir nesne ve onun kapsamındaki veya kapsayıcı konumunu tanımlayan bir yapıyı döndürür.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sözdizimi
-
-```cpp
-HRESULT GetAddress (
-   DEBUG_ADDRESS * pAddress
-);
-```
-
-```csharp
-int GetAddress(
-   DEBUG_ADDRESS[] pAddress
-);
-```
-
-#### <a name="parameters"></a>Parametreler
- `pAddress`
-
- [out içinde] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) bu yöntem tarafından girilir yapısının.
-
-## <a name="return-value"></a>Dönüş Değeri
- Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
-
-## <a name="remarks"></a>Açıklamalar
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı, ilgili bilgileri ile oturum kaplayacak şekilde bu yönteme geçirilir. Bu bilgileri nasıl yorumlanacağını döndürülen bilgileri ve sembol işleyici türüne bağlıdır. Bkz: [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) daha fazla ayrıntı için.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+Bir nesne ve onun kapsamındaki veya kapsayıcı konumunu tanımlayan bir yapıyı döndürür.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp  
+HRESULT GetAddress (  
+   DEBUG_ADDRESS * pAddress  
+);  
+```  
+  
+```csharp  
+int GetAddress(  
+   DEBUG_ADDRESS[] pAddress  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `pAddress`  
+ [out içinde] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) bu yöntem tarafından girilir yapısının.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı, ilgili bilgileri ile oturum kaplayacak şekilde bu yönteme geçirilir. Bu bilgileri nasıl yorumlanacağını döndürülen bilgileri ve sembol işleyici türüne bağlıdır. Bkz: [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) daha fazla ayrıntı için.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982092"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: Bir VSTO eklenti projesinde bir hizmetten verilere bağlama
   Verileri, VSTO eklentisi projelerine konak denetimlere bağlayabilirsiniz. Bu izlenecek yol, bir Microsoft Office Word belgesi için denetimler ekleme, MSDN içerik hizmetinden alınan verilere denetimler bağlama ve çalışma zamanında olaylara yanıt gösterilmektedir.

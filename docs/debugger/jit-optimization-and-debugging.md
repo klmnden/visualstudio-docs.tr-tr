@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846329"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT İyileştirmesi ve Hata Ayıklaması
 **En iyi duruma getirme,. NET'te nasıl:** Kod hatalarını ayıklamak çalışıyorsanız, bu kod olduğunu daha kolay olduğunda **değil** en iyi duruma getirilmiş. Kodun en iyilenmesi, böylece daha hızlı çalışır ancak özgün kaynak kodu doğrudan bir eşlemeye sahip derleyici ve çalışma zamanı yayılan CPU koda değişiklik olmasıdır. Başka bir deyişle, hata ayıklayıcıları yerel değişkenlerin değerini söyleyin ve kod atlama sık belirleyemiyoruz ve kesme noktaları beklediğiniz gibi çalışmayabilir.

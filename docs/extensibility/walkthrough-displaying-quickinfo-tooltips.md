@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965212"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme
 Hızlıbilgi yöntem imzaları görüntüleyen bir IntelliSense özelliğidir ve açıklamaları bir kullanıcı işaretçiyi bir yöntem adı üzerinde taşır. Quickınfo'da açıklamaları sağlamak istediğiniz tanımlayıcıları tanımlayıp ardından, içeriği görüntülemek bir araç ipucu oluşturma dil tabanlı özellikleri gibi Hızlıbilgi uygulayabilirsiniz. Bir dil hizmeti bağlamında Hızlıbilgi tanımlayabilirsiniz kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için Hızlıbilgi görüntülemek veya mevcut bir içerik türü (örneğin, "metin") için Hızlıbilgi görüntüleyebilirsiniz. Bu izlenecek yol, Hızlıbilgi görüntülemek için "metin" içerik türü gösterilmektedir.

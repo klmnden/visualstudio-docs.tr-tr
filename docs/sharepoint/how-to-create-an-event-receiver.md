@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966763"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: Olay alıcısı oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeleri gibi veya liste öğesi ile etkileşim kurduğunda, yanıt verebilirsiniz. Örneğin, bir kullanıcı takvimi değiştirir veya bir ad kişiler listeden silmesi olay alıcısı kodda tetiklenebilir. Bu konuyu takip ederek, bir liste örneği için bir olay alıcısı ekleme konusunda bilgi edinebilirsiniz.

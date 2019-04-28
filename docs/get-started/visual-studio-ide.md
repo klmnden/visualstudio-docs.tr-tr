@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cfe4735dac41b4bdd85e85e2987f242e96fcfff9
-ms.sourcegitcommit: 4fcd33d10e459e4e34cba7a10c8a03e153121703
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2019
-ms.locfileid: "57867390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966249"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9942df0084924543149eb78f245a996559d594ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926658"
 ---
 # <a name="commandtable-element"></a>CommandTable öğesi
 CommandTable olan kök öğesini *.vsct* dosya. Bu gerçek düzeni ve IDE VSPackage sağlayan komut türü tanımlayan dosyasıdır. Komutlarını, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları içerebilir. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -67,7 +67,7 @@ CommandTable olan kök öğesini *.vsct* dosya. Bu gerçek düzeni ve IDE VSPack
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|Hiçbiri||
+|Yok.||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

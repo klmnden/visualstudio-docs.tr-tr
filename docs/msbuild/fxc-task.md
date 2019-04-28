@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - multiple
 ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931476"
 ---
 # <a name="fxc-task"></a>FXC görevi
 

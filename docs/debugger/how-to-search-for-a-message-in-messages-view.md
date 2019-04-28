@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5830076ab3bd0ea59912900e8a14c807d7c0941
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 37f99c30c23461ada406bb0650f86d45d2a4a2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388399"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Nasıl yapılır: İletiler görünümünde ileti arama
 Arama ölçütü olarak kendi tanıtıcı, tür veya ileti kimliği'ni kullanarak iletiler görünümünde belirli bir ileti için arama yapabilirsiniz. Bunlardan herhangi birini — veya bir birleşimini — geçerli arama ölçütleri olacaktır. İlk arama yönünü de belirtilebilir. Alanları iletişim kutusunda, seçili ileti özniteliklerle önceden yüklenir.
@@ -43,7 +43,7 @@ Arama ölçütü olarak kendi tanıtıcı, tür veya ileti kimliği'ni kullanara
 4. Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.
 
    > [!TIP]
-   >  Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek yalnızca bırakarak ana Spy ++ penceresini gizler **Bul penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.
+   > Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek yalnızca bırakarak ana Spy ++ penceresini gizler **Bul penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.
 
 5. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.
 

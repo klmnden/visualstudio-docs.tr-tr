@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964306"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL Tanımının Özellikleri
 DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü numaralandırma gibi tanımı özellikleri. DslDefinition özellikleri görünür **özellikleri** pencere, diyagramdaki boş bir alanı tıkladığınızda *etki alanına özgü dil tasarımcısını*.
@@ -37,7 +37,7 @@ DslDefinition özelliklerini tanımlayın *etki alanına özgü dil* sürümü n
 |Açıklama|Bu etki alanı sınıfı için açıklama.|\<yok >|
 |Görünen Ad|Bu etki alanı sınıfı için oluşturulan tasarımcıda görüntülenecek ad.|\<yok >|
 |Yardım anahtar sözcüğü|Bu alan sınıfıyla ilişkili Yardım anahtar sözcüğü.|\<yok >|
-|Derleme|Bu etki alanına özgü dil tanımı için artımlı derleme numarası.|0|
+|Yapı|Bu etki alanına özgü dil tanımı için artımlı derleme numarası.|0|
 |Ana sürüm|Bu etki alanına özgü dil tanımı için artımlı başlıca yapı numarası.|1.|
 |Alt sürüm|Bu etki alanına özgü dil tanımı için artımlı alt yapı numarası.|0|
 |Gözden geçirme|Artımlı düzeltme numarası için bu etki alanına özgü dil tanımı oluşturun.|0|

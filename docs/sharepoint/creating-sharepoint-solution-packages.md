@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952740"
 ---
 # <a name="create-sharepoint-solution-packages"></a>SharePoint çözüm paketleri oluşturma
   Paket Tasarımcısı'nı kullanarak oluşturun ve dağıtım paketleri özelleştirin. Örneğin, SharePoint Proje öğeleri ve özellikleri, IIS sunucusu sıfırlandığında, özellik etkinleştirme kapsamı ayarla ve özellik bağımlılıkları tanımlayın ekleyebilirsiniz. Tasarımcı, ayrıca her paket açıklayan bir XML dosyasını bir bildirim oluşturur.

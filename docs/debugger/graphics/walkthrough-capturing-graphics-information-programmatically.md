@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848526"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek yol: Grafik bilgilerini programla yakalama
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek yol: Grafik Bilgilerini Program Aracılığıyla Yakalama
 Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik tanılama Direct3D uygulamadan grafik bilgilerini programla yakalama.
 
 Programlı yakalama gibi senaryolarda kullanışlıdır:

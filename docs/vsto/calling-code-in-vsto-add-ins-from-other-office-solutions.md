@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939254"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentilerinde diğer Office Çözümlerinden kod arama
   Bir nesne için diğer Microsoft Office çözümleri gibi diğer çözümlerle VSTO eklenti içinde kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir Web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.

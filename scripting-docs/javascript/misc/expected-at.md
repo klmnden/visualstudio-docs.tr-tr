@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935258"
 ---
 # <a name="expected-"></a>Beklenen '\@'
 Kullanarak koşullu derleme deyimleri ile kullanılmak üzere bir değişken oluşturmaya çalıştı `@set` deyimi, ancak değil yerleştirin bir at işareti "**@**" önce değişken adı.  

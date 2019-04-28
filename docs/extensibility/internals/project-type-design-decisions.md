@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909117"
 ---
 # <a name="project-type-design-decisions"></a>Proje Türü Tasarım Kararları
 Yeni bir proje türü oluşturmadan önce proje türü ile ilgili çeşitli tasarım kararları yapmalısınız. Hangi türde projelerinizi içerecek öğeleri, proje dosyaları kalıcı nasıl ve hangi taahhüt modeli kullanacağınıza karar vermeniz gerekir.
@@ -57,7 +57,7 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili çeşitli tasa
  Veri nesneleri, hizmetteki modunu kullanarak açıldığında değişiklikleri bellekte geçici bir konuma kaydedilir ve kullanıcı dosyayı kaydetmeyi el ile seçer kadar iletilmez. O zaman tüm değişiklikleri birlikte olmalıdır veya hiçbir değişiklik yapılmaz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Yapılacaklar listesi: Yeni Proje Türleri Oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Proje Öğelerini Açma ve Kaydetme](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Proje Kalıcılığı](../../extensibility/internals/project-persistence.md)
 - [Proje Modeli Öğeleri](../../extensibility/internals/elements-of-a-project-model.md)

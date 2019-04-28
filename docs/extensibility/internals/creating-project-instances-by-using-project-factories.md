@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910000"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Proje üreteçlerini kullanarak proje örnekleri oluşturma
 Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanan bir *proje fabrikası* proje nesnelerin örneklerini oluşturmak için. Bir proje fabrikası cocreatable COM nesneleri için bir standart sınıf üreteci benzer. Ancak, proje nesnelerini cocreatable değildir; Bunlar, bir proje fabrikası kullanarak yalnızca oluşturulabilir.
@@ -48,4 +48,4 @@ Proje türlerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] k
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>
-- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)

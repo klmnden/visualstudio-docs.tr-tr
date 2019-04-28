@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910403"
 ---
 # <a name="command-routing-algorithm"></a>Komut yönlendirme algoritması
 Visual Studio'da komutlar çeşitli farklı bileşenler tarafından işlenir. Komutlar, en dıştaki (genel olarak da bilinir) bağlamına geçerli seçime göre en içteki bağlamından yönlendirilir. Daha fazla bilgi için [komutu kullanılabilirlik](../../extensibility/internals/command-availability.md).

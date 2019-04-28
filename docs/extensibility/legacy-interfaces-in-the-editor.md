@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907473"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Eski arabirimleri Düzenleyicisi
 Visual Studio Düzenleyicisi eski arabirimlerden erişebilirsiniz. Visual Studio SDK'sı olarak da bilinen bağdaştırıcıları içerir *dolgular*, bu arabirimleri Düzenleyicisi ile etkileşim kurmak etkinleştirin. Bununla birlikte, yeni bir düzenleyici API kullanmak için eski kodunuzu güncelleştirmenizi öneririz. Kodunuzu daha iyi performans ve Windows Presentation Foundation (WPF) ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) gibi yeni teknolojileri kullanabilirsiniz.

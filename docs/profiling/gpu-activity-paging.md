@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bd28c7b41a01992ad52fa343b098b0a02460806
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969621"
 ---
 # <a name="gpu-activity-paging"></a>GPU Etkinliği (Disk Belleği)
 **GPU etkinliği (disk belleği)** üzerinde kesim **iş parçacıkları** sekmesinde temsil saatleri zaman GPU işleme sayfalandırma istekleri.  Bir segmenti uzunluğunu GPU doğrudan bellek erişimi (DMA) disk belleği paket işliyordu süreyi temsil eder. Genellikle, disk belleği paketleri bellek CPU ve GPU arasında aktarımı ile ilişkilidir.

@@ -13,18 +13,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d702699aa2e980c3be9d4d05eef96261a788788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ea8f3f983cf7279cf6dc9600813a08268cef8301
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383488"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110 Arabirimi
 Betik hata ayıklayıcıları tarafından çağrılabilir ve işlem içi çağıranlar yeni özellikler sağlamak için kullanılır.  
   
 > [!IMPORTANT]
->  Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  
+> Bu arabirim PDM v11.0 ve sonraki sürümler tarafından uygulanır. activdbg100.h içinde bulunur.  
   
 ## <a name="methods"></a>Yöntemler  
  `IRemoteDebugApplication110` Arabirimi aşağıdaki yöntemleri sunar.  

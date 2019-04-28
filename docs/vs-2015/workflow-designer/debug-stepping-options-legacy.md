@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976957"
 ---
 # <a name="debug-stepping-options-legacy"></a>Hata Ayıklama Adımlama Seçenekleri (Eski)
 Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../includes/wf-md.md)] eşzamanlı etkinliğin eski uygulamaları [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -37,4 +37,4 @@ Bu konu, hata ayıklamak açıklar [!INCLUDE[wf](../includes/wf-md.md)] eşzaman
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışlarında hata ayıklama](../workflow-designer/debugging-legacy-workflows.md)   
- [Nasıl yapılır: Hata ayıklama Adımlama seçeneğini (eski) değiştirme](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Nasıl yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

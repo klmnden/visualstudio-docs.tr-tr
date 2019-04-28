@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 056bd3ffa6a1e637e5fdb920d0ea5f45a58c1d69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998987"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Bir uygulama için performans verilerini toplamak için VSPerfMon Aracı'nı kullanabilirsiniz; Genellikle bu aracı tarafından başlatılan *VSPerfCmd.exe*. VSPerfMon görüntüler işlem hakkında ek bilgi ekleme veya ayırma, VSPerfCmd aracı kullanarak mevcut değil. Bu bilgileri görüntülemek için ayrı bir pencerede VSPerfMon başlatın. VSPerfMon çağırmak için aşağıdaki sözdizimini kullanın:

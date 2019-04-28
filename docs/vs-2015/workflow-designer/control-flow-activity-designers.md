@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977304"
 ---
 # <a name="control-flow-activity-designers"></a>Akış Etkinliği Tasarımcılarını denetleme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  
@@ -23,7 +23,7 @@ ms.locfileid: "57871810"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Belirtilen bir koşulu olana kadar kendi gövdesinde en az bir kez yer alan bir etkinliği yürütür **true**.  
   
- [ForEach\<T >](foreach-t-activity-designer.md)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Belirtilen koleksiyondaki her öğe için gövdesinde yer alan bir etkinliği yürütür.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -32,7 +32,7 @@ ms.locfileid: "57871810"
  [Parallel](../workflow-designer/parallel-activity-designer.md)  
  Bağımlı etkinlikler koleksiyonu aynı anda yürütür.  
   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)  
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Bir koleksiyonun öğeleri listeler ve bir katıştırılmış deyim koleksiyonundaki her öğe için paralel olarak yürütür.  
   
  [Pick](../workflow-designer/pick-activity-designer.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "57871810"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Sırayla yürütülen bir alt etkinlik sıralı bir koleksiyonunu içerir.  
   
- [Anahtar\<T >](switch-t-activity-designer.md)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Belirtilen ifadeyi hesaplar ve bir koleksiyon değerlendirmesinden gelen alınan değer ilişkili anahtarı eşleşen etkinlik gelen bir etkinliği yürütür.  
   
  [While](../workflow-designer/while-activity-designer.md)  

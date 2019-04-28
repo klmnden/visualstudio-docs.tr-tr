@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900392"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım örnekleri ve izlenecek yollar
 Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows Forms, WPF ve konsol uygulamaları dağıtmak için kullanılan teknikleri gösteren adım adım talimatları içerir.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007415"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl yapılır: Kullanılacak XML şemalarını seçin
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl yapılır: Kullanılacak XML şemalarını seçme
 
 XML Düzenleyicisi bulunan bir şema önbelleği sağlar *%VSInstallDir%\xml\Schemas* dizin. Şema önbelleği, IntelliSense ve XML belgesi doğrulama için kullanılan XML şemaları iyi bilinen içerir.
 

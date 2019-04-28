@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001114"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Eşzamanlılık Görselleştiricisi SDK
 Eşzamanlılık Görselleştiricisindeki ek bilgileri görüntülemek için eşzamanlılık görselleştiricisi SDK'sını kullanarak kaynak kodunuz izleyebilirsiniz. Ek veri kodunuzda aşamaları ve olaylarla ilişkilendirebilirsiniz. Bu ek görselleştirmeler olarak bilinen *işaretçileri*.  Tanıtım amaçlı bir kılavuz için bkz. [eşzamanlılık görselleştiricisi SDK'sı ile tanışın](http://go.microsoft.com/fwlink/?LinkId=235405).

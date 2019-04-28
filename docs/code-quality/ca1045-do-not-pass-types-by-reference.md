@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387488"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Türleri başvuru olarak geçmeyin
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922881"
  Dönüş değerleri sıradan bir hale ve yoğun olarak kullanılan, doğru uygulama olsa da `out` ve `ref` Ara tasarım ve kodlama becerilerinde parametrelerine gereksinim duyar. Genel kitle asıl kullanıcılara beklememelidir bilgilendirmelidir tasarım Kütüphane mimarları `out` veya `ref` parametreleri.
 
 > [!NOTE]
->  Büyük yapılar olan parametreler ile çalışırken, değere göre geçirdiğinizde bu yapıları kopyalamak için gereken ek kaynakları bir performans etkisi neden olabilir. Bu gibi durumlarda kullanmayı düşünebilirsiniz `ref` veya `out` parametreleri.
+> Büyük yapılar olan parametreler ile çalışırken, değere göre geçirdiğinizde bu yapıları kopyalamak için gereken ek kaynakları bir performans etkisi neden olabilir. Bu gibi durumlarda kullanmayı düşünebilirsiniz `ref` veya `out` parametreleri.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Bir değer türü tarafından neden bu kural ihlalini düzeltmek için yöntemin dönüş değeri olarak nesneyi döndürmek sahip. Yöntemi, birden çok değer döndürmelidir, tek bir örneği değerleri içeren nesneyi döndürmek için yeniden tasarlayın.

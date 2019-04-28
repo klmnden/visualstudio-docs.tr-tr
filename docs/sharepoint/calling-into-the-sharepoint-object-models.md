@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988404"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>SharePoint nesne modellerini çağırma
   Visual Studio'da SharePoint araçları için uzantıları oluşturduğunuzda, bazı görevleri gerçekleştirmek için SharePoint API'leri çağırmak zorunda kalabilirsiniz. Örneğin, SharePoint projeleri için bir özel dağıtım adımı oluşturmak, SharePoint çözümlerini dağıtmak için görevlerden bazılarını gerçekleştirmek için API'leri çağırmak olabilir.

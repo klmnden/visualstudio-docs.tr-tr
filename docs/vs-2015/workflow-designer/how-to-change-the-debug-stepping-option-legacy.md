@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954459"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Nasıl yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)
 Bu konu için hata ayıklama Adımlama seçeneğini değiştirme açıklar [!INCLUDE[wf](../includes/wf-md.md)] eski uygulamalarda [!INCLUDE[wfd1](../includes/wfd1-md.md)] eşzamanlı eylemler vardır. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
