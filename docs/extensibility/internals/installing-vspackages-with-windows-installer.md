@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9cd5f25e1e87ba3db360b328b4f5a245697cba45
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860288"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer ile VSPackage Yükleme
 İçinde VSPackage'ı tümleştirme [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] daha fazlasını bir kullanıcının bilgisayarına dosyaları kopyalama gerektirir. VSPackage'nın yükleyici gerekir VSPackage'ı ve onun bağımlı dosyaları yüklemek ve kaydettirmek ve bunları tümleştirmek [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. VSPackage'ı bir simge görüntülemek gibi tümleştirme özellikleri yararlanabilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tanıtım ekran ve hakkında kutusu.
@@ -56,7 +56,7 @@ ms.locfileid: "56600434"
 
  Yönetilen kod proje türleri için yeni proje türü Toplayıcısı'nı kullanmayı açıklar.
 
-- [Nasıl yapılır: Bir yükleyicinin kayıt defteri bilgilerini oluşturma](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
+- [Nasıl yapılır: Yükleyicinin Kayıt Defteri Bilgilerini Oluşturma](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
  Yönetilen bir VSPackage için bir kayıt bildirim oluşturmak üzere RegPkg.exe kullanmayı açıklar.
 

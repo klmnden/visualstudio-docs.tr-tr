@@ -1,5 +1,5 @@
 ---
-title: Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma
+title: Uygulamalarınızda hata ayıklamak için kod eşlemelerini kullanma
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e421c65e83bca88c01ea58cfd5cc402c6011cb23
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907612"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma
+# <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod eşlemelerini kullanma
 
 Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski kodda kafanız karışmadan önlemenize yardımcı olabilir. Örneğin, hata ayıklama işlemi yaparken birçok dosya ve proje arasında koda göz atmak zorunda kalabilirsiniz. Kod parçaları gidin ve onlar arasındaki ilişkileri anlamak için kod haritalarını kullanma. Bu şekilde, bu kodu birikimine izlemek ya da ayrı bir şeklini çizmeniz gerekmez. Bu nedenle, çalışmanızı kesintiye uğradığında, bellek, üzerinde çalıştığınız kod hakkında Yardım yenileme kod eşlemeleri.
 

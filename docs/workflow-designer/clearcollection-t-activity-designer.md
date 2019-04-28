@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cab7ea023524da7e28e2baa2d4e5018cd091c60d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950000"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > etkinlik Tasarımcısı
 
@@ -45,5 +45,5 @@ Aşağıdaki tabloda <xref:System.Activities.Statements.ClearCollection%601> öz
 
 - [Koleksiyon](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
-- [Existsıncollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)
-- [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)
+- [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)
+- [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

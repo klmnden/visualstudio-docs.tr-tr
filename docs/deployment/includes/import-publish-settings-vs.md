@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899173"
+---
 
 1. Visual Studio'da açın ASP.NET projesi bulunduğu bilgisayarda, Çözüm Gezgini'nde projeye sağ tıklayıp seçin **Yayımla**.
 

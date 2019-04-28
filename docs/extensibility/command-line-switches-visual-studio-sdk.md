@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891387"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Komut satırı anahtarları (Visual Studio SDK)
 *Devenv.exe*, başlayan yürütülebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), özellikle VSPackage geliştirme için komut satırı anahtarları destekler. VSPackage de kendi anahtarlar kullanılabilir Devenv komut satırında yapabilirsiniz. Aşağıdaki konular IDE içinde komut satırı anahtarları kullanma hakkında bilgi sağlar.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7387cc54e96aec4deea6a65875f693d704d51859
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973974"
 ---
 # <a name="how-to-configure-performance-rules"></a>Nasıl yapılır: Performans kurallarını yapılandırma
 Th Visual Studio Profil Araçları Performans uyarılarını, program yürütme yavaşlatabilir profili oluşturulmuş bir uygulamada sorunları gösterir. Uyarı toplama metotlarını daha kullanışlı verileri toplamak için değiştirmeniz gerekebilir de belirtebilir. Performans uyarıları profil oluşturma oturumunu otomatik olarak oluşturulur ve görünür **hata listesi** bir profil oluşturma veri dosyasını açıldığında penceresi [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Belirli uyarıları ilgilendiğiniz ve bazı uyarılar oluştu zamanlayıcılara harekete Geçirilmemesi senaryoları için geçerli olmayabilir. Belirli uyarıları gizlemek veya göstermek için Performans uyarılarını yapılandırabilirsiniz.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894319"
 ---
 # <a name="how-to-display-message-properties"></a>Nasıl yapılır: İleti özelliklerini görüntüleme
 Listelenen bir ileti hakkında daha fazla bilgi için [iletiler görünümünü](../debugger/messages-view.md), kullanın [ileti özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md).

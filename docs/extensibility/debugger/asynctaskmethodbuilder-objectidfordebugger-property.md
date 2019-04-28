@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1178abab23119e5e6714a9d6c91bfe704f1084e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926126"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Asynctaskmethodbuilder.objectıdfordebugger özelliği
 Hata ayıklayıcı bu oluşturucuya benzersiz olarak tanımlanabilmesi için kullanılabilecek bir nesneyi alır.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ac5fafb3e89ed414fd64843e4f6336127d9665a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917138"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 Bir program bağlı olduğu bu arabirimi hata ayıklama altyapısı (DE) oturum hata ayıklama Yöneticisi (SDM) gönderilir.

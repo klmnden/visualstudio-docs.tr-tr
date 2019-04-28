@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895456"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>İzlenecek yol: Cihaz Durumu Nedeniyle Eksik Nesneler
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nedeni eksik bir nesne incelemek için grafik Tanılama, cihaz durumu yanlış.
 
  Bu izlenecek yol gösterir nasıl yapılır:

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904241"
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
 İşlemler görünümü tüm etkin işlemlerin ağacının sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen

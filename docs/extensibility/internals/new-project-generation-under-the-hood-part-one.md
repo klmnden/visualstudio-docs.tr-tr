@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860312"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Arka Plan, 1. Bölüm
 Hiç kendi proje türünüzü oluşturmak hakkında düşündüğünüz? Yeni bir proje oluşturduğunuzda, gerçekte ne olacağını merak ediyorsunuz? Şimdi başlık altında bir göz atalım ve gerçekten neler olup bittiğini bakın.
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Yeni Proje Oluşturma: Arka Plan, 2. Bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975633"
 ---
 # <a name="build-actions"></a>Derleme eylemleri
 
@@ -40,6 +40,6 @@ Bir dosyanın derleme eylemi ayarlamak için dosyanın özelliklerinde açın **
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [C#Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
+- [C# derleyici seçenekleri](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Visual Basic derleyici seçenekleri](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
 - [Derleme eylemleri (Mac için Visual Studio)](/visualstudio/mac/build-actions)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908939"
 ---
 # <a name="source-control-vspackage-features"></a>Kaynak Denetimi VSPackage’ı Özellikleri
 Bu bölümde, kaynak denetimi VSPackage'nin çeşitli özelliklerini açıklar. Kayıt özetler ve seçim gibi bir VSPackage için ayrıntıları ve üç ana kaynak denetim ile ilgili özellikleri açıklar: Sorgu düzenleme sorgu kaydetme (QEQS) olayları, glif değiştirme ve kaynak denetimi için özel kullanıcı arabirimi (UI) işleme İşlevler.

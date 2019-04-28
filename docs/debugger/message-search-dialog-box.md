@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931291"
 ---
 # <a name="message-search-dialog-box"></a>İleti Arama İletişim Kutusu
 Bulmak ve belirli bir iletiyi düğümü seçmek için bu iletişim kutusunu kullanın [iletiler görünümünü](../debugger/messages-view.md). Bu iletişim kutusunu görüntülemek için iletiler görünümü Pencere odağı Taşı. Ardından **ileti Bul** gelen **arama** menüsü.

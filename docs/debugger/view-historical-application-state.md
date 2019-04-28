@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901742"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio'da (Visual Studio Enterprise) IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 

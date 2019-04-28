@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907557"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Hangi&#39;da kaynak denetimi eklentisi API sürümü 1.2
 Bu bölümde, kaynak denetimi eklentisi API sürümü 1.2 Gelişmiş kaynak kod denetimi işlevlerini vurgular. 1.2 sürümündeki yeni özellikler listelenmektedir:

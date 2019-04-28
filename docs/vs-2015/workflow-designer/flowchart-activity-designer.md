@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943468"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Flowchart> Etkinliği iş akışlarını tanımlamak ve yönetmek karmaşık akış denetimleri oluşturmak için kullanılır. A <xref:System.Activities.Statements.Flowchart> veya kod kullanarak yazılabilir [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Bu konu belgeleri [!INCLUDE[wfd2](../includes/wfd2-md.md)] karşılaşırsınız. [!INCLUDE[wfd1](../includes/wfd1-md.md)] İş akışı etkinlik Tasarımcısı, doğal bir şekilde iş akışları yazabilirsiniz geliştiricilerin sağlar.  
@@ -46,4 +46,4 @@ ms.locfileid: "54784864"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

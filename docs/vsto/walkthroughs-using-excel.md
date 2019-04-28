@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4d6c092daf02ccd6546621fbeff3422cd87fb0db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947837"
 ---
 # <a name="walkthroughs-using-excel"></a>Excel kullanarak izlenecek yollar
   Aşağıdaki izlenecek yollar, Microsoft Office Excel otomatikleştirmek ve kullanıcı arabirimini (UI) özelleştirmek için belge düzeyi özelleştirmeleri ve VSTO eklentileri kullanabileceğiniz yollar gösterilir.

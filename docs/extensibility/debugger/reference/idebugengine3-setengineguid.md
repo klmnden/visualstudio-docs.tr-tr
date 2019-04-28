@@ -1,48 +1,50 @@
 ---
 title: IDebugEngine3::SetEngineGuid | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugEngine3::SetEngineGuid
 helpviewer_keywords:
 - IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 14c1ad0e659df29c462d145e8c98166079857275
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875245"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Bu yöntem, hata ayıklama altyapısının (DE) ayarlar `GUID`.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sözdizimi
-
-```cpp
-HRESULT SetEngineGuid(
-   GUID* guidEngine
-);
-```
-
-```csharp
-int SetEngineGuid(
-   ref Guid guidEngine
-);
-```
-
-#### <a name="parameters"></a>Parametreler
- `guidEngine`
-
- [in] `GUID` altyapısı.
-
-## <a name="return-value"></a>Dönüş Değeri
- Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-- [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
+Bu yöntem, hata ayıklama altyapısının (DE) ayarlar `GUID`.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp  
+HRESULT SetEngineGuid(  
+   GUID* guidEngine  
+);  
+```  
+  
+```  
+[C#]  
+int SetEngineGuid(  
+   ref Guid guidEngine  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `guidEngine`  
+ [in] `GUID` altyapısı.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

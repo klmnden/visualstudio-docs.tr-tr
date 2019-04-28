@@ -1,5 +1,5 @@
 ---
-title: 'Örnek XSD dosyası: İlişkiler'
+title: 'Örnek XSD Dosyası: İlişkiler'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955572"
 ---
 # <a name="sample-xsd-file-relationships"></a>Örnek XSD dosyası: İlişkiler
 

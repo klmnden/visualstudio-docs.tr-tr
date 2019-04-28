@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908427"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Yönetilen Paket Çerçevesini Kullanarak Proje Türü Uygulama (C#)
 Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulamak için devralınan C# sınıfları sağlar. MPF Visual Studio sağlamak için bir proje türü bekliyor arabirimlerin çoğu proje türünüz Bununla uygulamaya odaklanmasına olanak boş bırakarak uygular.

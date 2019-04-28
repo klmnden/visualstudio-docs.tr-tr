@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924872"
 ---
 # <a name="core-interfaces"></a>Temel Arabirimler
 Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıdaki arabirimdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].

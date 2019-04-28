@@ -1,18 +1,18 @@
 ---
-title: Görev açıklamaları
+title: Görev Açıklamaları
 description: Kodunuza Görev açıklamalarını ekleme
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
 ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987059"
 ---
-# <a name="task-comments"></a>Görev açıklamaları
+# <a name="task-comments"></a>Görev Açıklamaları
 
 Kod yazarken, tamamlanmamış veya şüpheli kod veya uyarılar ile Hızlı çözümler açıkça açıklama standart bir uygulamadır. Mac için Visual Studio tarafından sağlanan varsayılan sinyal TODO, HACK, FIXME ve UNDONE belirteçleridir. Kişiselleştirilmiş belirteçleri altında tanımlanabilir **Visual Studio > Tercihler > ortam > görevleri**aşağıdaki görüntüde gösterildiği gibi:
 

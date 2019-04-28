@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906091"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 Çalışan XAML kodunuzu ile gerçek zamanlı bir görünümünü elde edebilirsiniz **Live Visual Tree** ve **Live Property Explorer**. Bu araçlar, çalışan XAML uygulamanızın kullanıcı Arabirimi öğelerini ağaç görünümünü sağlar ve seçtiğiniz herhangi bir kullanıcı Arabirimi öğesi çalışma zamanı özelliklerini göster.

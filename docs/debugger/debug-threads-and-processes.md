@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852882"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>İş parçacıklarında ve işlemlerde Visual Studio'da hata ayıklama araçları
 *İş parçacığı* ve *işlemleri* bilgisayar biliminde ilişkili kavramlardır. Her ikisi de belirli bir sırayla yürütülmesi gereken yönerge sıralarını temsil eder. Ayrı iş parçacıkları veya işlemlerdeki, yönergeleri, ancak paralel olarak çalıştırabilirsiniz.

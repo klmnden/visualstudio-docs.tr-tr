@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 09ab1bb7e44ee2772023a73632ca194796bbb33e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910104"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Özel kullanıcı arabirimi (kaynak denetimi VSPackage'ı)
 Alt menü öğelerini ve varsayılan durumlarına Visual Studio komut tablosu aracılığıyla VSPackage bildirir (*.vsct*) dosyası. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) VSPackage yüklenene kadar bu menü öğeleri varsayılan durumlarını görüntüler. Sonuç olarak, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> etkinleştirmek ya da menü öğelerini devre dışı yöntemi çağrılır.
@@ -51,7 +51,7 @@ Alt menü öğelerini ve varsayılan durumlarına Visual Studio komut tablosu ar
 
 | Kullanıcı Arabirimi öğesi | Açıklama |
 | - | - |
-| Menüleri ve araç çubukları | Kaynak Denetim paketi kaynak denetimi paket Kimliğini ilk menü ve araç çubuğu görünürlük durumlarını ayarlamalısınız [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) bölümünü *.vsct* dosya. Böylece [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage'ı yükleme ve uygulaması çağırma menü öğelerinin durumunu uygun şekilde ayarlamak için IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi. |
+| Menüler ve araç çubukları | Kaynak Denetim paketi kaynak denetimi paket Kimliğini ilk menü ve araç çubuğu görünürlük durumlarını ayarlamalısınız [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) bölümünü *.vsct* dosya. Böylece [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage'ı yükleme ve uygulaması çağırma menü öğelerinin durumunu uygun şekilde ayarlamak için IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi. |
 | Araç pencereleri | Kaynak denetimi VSPackage'ı devre dışı yapıldığında sahip olduğu tüm araç pencereleri gizler. |
 | Kaynak denetimi VSPackage'ı özgü seçenekler sayfaları | Kayıt defteri anahtarı **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** sağlar bir VSPackage'ı ayarlama bağlamları içinde görüntülenecek seçenekler sayfalarını gerektiriyor. Bu anahtar altındaki bir kayıt defteri girişi, hizmet kimliği (SID), kaynak denetimi hizmetini kullanarak ve DWORD değerini 1 atama oluşturulması gerekir. Her bir kullanıcı Arabirimi olay kaynak denetimi VSPackage'ı ile kayıtlı bir bağlamda gerçekleştiğinde VSPackage etkin olursa çağrılır. |
 

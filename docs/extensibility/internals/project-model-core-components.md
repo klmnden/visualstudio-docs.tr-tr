@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859617"
 ---
 # <a name="project-model-core-components"></a>Proje Modeli Çekirdek Bileşenleri
 Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa açıklamaları arabirimleri ve model ve arabirimleri ve belirli nesneleri ile ilişkili hizmetleri tanımlanan hizmetleri sunar. Ayrıca, proje oluşturma ve belirli proje türünüzü gereksinimlerine bağlı olarak bakım isteğe bağlı olan diğer arabirimleri tabloları ayrıntılarını gösterir.
@@ -101,7 +101,7 @@ Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa a�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
-- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Yapılacaklar listesi: Yeni Proje Türleri Oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Derlemede değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [Sembol Tarama Araçlarını Destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Proje Modeli Öğeleri](../../extensibility/internals/elements-of-a-project-model.md)

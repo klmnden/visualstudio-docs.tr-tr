@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909238"
 ---
 # <a name="project-priority"></a>Proje Önceliği
 Bir proje öğesi genellikle yalnızca bir proje çözümde üyesidir. Bu nedenle, IDE kolayca hangi proje öğesini açmak için kullanılan belirleyebilirsiniz. Ancak, bir öğe birden çok proje üyesi ise, IDE öğesini açmak için en iyi proje belirlemek için bir öncelik düzenini kullanır.
@@ -34,5 +34,5 @@ Bir proje öğesi genellikle yalnızca bir proje çözümde üyesidir. Bu nedenl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Çeşitli Dosyalar Projesi](../../extensibility/internals/miscellaneous-files-project.md)
-- [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Nasıl yapılır: Açık Belgeler için Düzenleyiciler Açma](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Proje ve Proje Öğesi Şablonları Ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)

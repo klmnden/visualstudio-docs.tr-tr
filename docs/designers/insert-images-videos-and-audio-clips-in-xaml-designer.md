@@ -1,5 +1,5 @@
 ---
-title: XAML Tasarımcısı’nda görüntü, video ve ses klipleri ekleme
+title: XAML Tasarımcısı’nda resim, video ve ses klipleri ekleme
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 8ef1c82e18b99383f61ccbad298102b4db1fcb24
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896998"
 ---
-# <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML Tasarımcısı’nda görüntü, video ve ses klipleri ekleme
+# <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML Tasarımcısı’nda resim, video ve ses klipleri ekleme
 Görüntü, video ve ses klipleri visual geçirmeye itraz et uygulamanıza ekleyin.
 
  ![Sığacak şekilde görüntü](../designers/media/b5_memory_images_sized.png)

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851425"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Düzenle ve devam et iletişim kutusu (C++)
 Düzenle ve devam yerel koda yapılan değişiklikleri uygulanamadı. Bu geçici bir durum olabilir. Bazen Düzenle ve devam et yerel kod değişikliklerini hemen uygulanamaz, ancak bunları daha sonra (örneğin, tamamlandıktan sonra artık çalıştırma yordamı için geçerli çağrının) hata ayıklama oturumu sırasında uygulayabilirsiniz. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md).

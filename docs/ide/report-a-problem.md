@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980190"
 ---
-# <a name="overview-report-a-problem"></a>Genel bakış: Sorun bildir
+# <a name="overview-report-a-problem"></a>Genel bakış: Sorun Bildirme
 
 Sorun raporu sorunları göndermek Visual Studio Geliştirici topluluğu sağlar. Her biri, sorun raporları, sistem tasarımı, etkili sorunlarını belirleyin ve çözün yardımcı olmak için doğrudan ürün ekiplerimiz ile etkileşim kurmak için güçlendirin bizim core'da bir iş öğesi olur. Visual Studio ürün ailesi geliştirmek için zengin tanılama bilgileriyle birlikte gönderilen Geri bildiriminiz önemlidir. Biz aslında, sorunları bildirmek zaman ayırdığınız için teşekkür ederiz.
 

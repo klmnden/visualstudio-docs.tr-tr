@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3ea73fa57a4a5da0b2fab1199e8770dfbf9e7b29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952872"
 ---
 # <a name="error-handling-activity-designers"></a>Hata İşleme Etkinlik Tasarımcıları
 Hata işleme etkinlik tasarımcıları, hata işleme yönetmek için kullanılan [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Bu bölümde bulunan konularda nasıl kullanılacağı hakkında rehberlik [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  

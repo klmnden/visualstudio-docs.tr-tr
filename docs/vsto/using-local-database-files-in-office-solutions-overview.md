@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982246"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Office çözümlerine genel bakış yerel veritabanı dosyaları kullanma
   SQL Server Express gibi bir veritabanı dosyası içerebilir (*.mdf*) dosya veya bir Microsoft Office Access (*.mdb*) dosyasında Office çözümünüzü. Bu, son kullanıcıların merkezi bir veritabanındaki bakım çözümünde yalnızca tek bir bilgisayarda kullanılan örneğin yerel Envanter gerekli olduğu durumlarda yerel bir veritabanı bakımı olanak tanır.

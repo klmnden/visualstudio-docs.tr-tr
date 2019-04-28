@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62888987"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Kesme noktası çözünürlüğü konumu yapısını belirtir.

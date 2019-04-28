@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910013"
 ---
 # <a name="create-project-types"></a>Proje türleri oluşturma
 Genişletebileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturarak yeni bir proje türü. Yeni bir proje türü oluşturmak için birkaç kavramları anlamanıza ve birkaç adımı tamamlamanız gerekir. Aşağıdaki konular, proje türleri oluşturma konusunda genel bir bakış sağlar.
@@ -26,7 +26,7 @@ Genişletebileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 
  Öğesi, proje dosya kalıcılığına ve yeni bir proje türü oluşturmadan önce yapmanız taahhüt teknisyenin tasarım kararları açıklar.
 
-- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
 
  Kod düzenleme ve derleme, derleme, hata ayıklama ve projenizdeki uygulamalarını dağıtma gibi programlama görevleri destekleyen yeni bir proje türü oluşturmak için izlemeniz gereken adımlara genel bir bakış sağlar.
 

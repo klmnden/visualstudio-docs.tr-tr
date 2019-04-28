@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 519602b09ea1adcf00ed534ecb22b4a082018464
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838047"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 Sistem özel durum işleme etkin olup olmadığını gösteren bir bayrak alır.
@@ -41,7 +41,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>Açıklamalar
  Sistem özel durum işleme yapılandırılmış özel durum işleme de denir. C++ özel durum işleme ile aynı şeydir değil.
 
- C++ özel durum işleme etkin olup olmadığını belirlemek için çağrı [Idiastackframe::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) yöntemi.
+ Belirlemek için C++ özel durum işleme etkindir, çağrı [Idiastackframe::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) yöntemi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
