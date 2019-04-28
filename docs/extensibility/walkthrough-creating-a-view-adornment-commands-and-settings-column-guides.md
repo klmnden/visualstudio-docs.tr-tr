@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796455"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: Görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle genişletebilirsiniz. Bu makalede, bir popüler uzantısı özelliği, sütun kılavuzları ile çalışmaya başlama işlemini göstermektedir. Sütun, kodunuzda belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde görsel olarak ışık çizgileri kılavuzlardır. Özellikle, biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya hata raporları örnekleri için önemli olabilir.

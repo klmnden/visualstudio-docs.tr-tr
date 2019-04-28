@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800083"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi Bulmak için Anahtar Olarak Kullanılan Dizeler
 Eklenti kaynak denetimi hakkında bilgi bulmak için kayıt defteri erişim tuşları dizelerdir.
@@ -48,5 +48,5 @@ Eklenti kaynak denetimi hakkında bilgi bulmak için kayıt defteri erişim tuş
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)
-- [Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Nasıl yapılır: Kaynak Denetimi Eklentisi Yükleme](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [MSSCCPRJ.SCC Dosyası](../extensibility/mssccprj-scc-file.md)

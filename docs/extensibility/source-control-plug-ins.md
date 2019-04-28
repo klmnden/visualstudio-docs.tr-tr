@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a717fdb885669ae4893dc4234c58233dec2957be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800135"
 ---
 # <a name="source-control-plug-ins"></a>Kaynak Denetimi Eklentileri
 Kaynak Denetimi Eklentisi SDK başvuru bölümüne ile tümleşik kaynak denetimi sistemlerini sağlayan eksiksiz arabirim belirtimi içeren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Sözdizimi ve semantiği ile arabirim oluşturmak için kaynak denetimi eklentisi uygulamalıdır çeşitli işlevleri ve veri türlerini belirtir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE).

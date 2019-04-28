@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550507"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proje öğelerinde paketleme ve dağıtım bilgileri sağlayın
   Tüm SharePoint Proje öğeleri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] için SharePoint projesi dağıtıldığında ek veri sağlamak için kullanabileceğiniz özelliklere sahiptir. Bu özellikler aşağıdaki gibidir:
