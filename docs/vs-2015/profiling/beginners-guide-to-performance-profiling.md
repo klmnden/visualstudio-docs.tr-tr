@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433816"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Performans Profili Oluşturma Başlangıç Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
  Varsa **örnekleme** duyduğunuz verileri sağlamazsa diğer profil oluşturma araçları koleksiyonu yöntemleri size yardımcı olabilecek bilgiler farklı türde sağlayın. Bu diğer yöntemler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Windows işlevlerini çağıran kodu yazıyorsanız, en güncel .pdb dosyalarına sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
+> Windows işlevlerini çağıran kodu yazıyorsanız, en güncel .pdb dosyalarına sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Oluşturma ve performans oturumu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve ardından çalıştırmanız gerekir. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
@@ -46,7 +46,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 1. Visual Studio içinde çözümü açın. Yapılandırması yayın olarak ayarlanmış. (Bul **çözüm yapılandırmaları** ayarlamak için araç çubuğundaki **hata ayıklama** varsayılan olarak. Değiştirin **yayın**.)  
   
     > [!IMPORTANT]
-    >  Kullanmakta olduğunuz bilgisayarda yönetici değilseniz, profil oluşturucuyu kullanırken, Visual Studio Yönetici olarak çalıştırmalısınız. (Visual Studio uygulama simgesini sağ tıklatın ve ardından **yönetici olarak çalıştır**.  
+    > Kullanmakta olduğunuz bilgisayarda yönetici değilseniz, profil oluşturucuyu kullanırken, Visual Studio Yönetici olarak çalıştırmalısınız. (Visual Studio uygulama simgesini sağ tıklatın ve ardından **yönetici olarak çalıştır**.  
   
 2. Üzerinde **hata ayıklama** menüsünü tıklatın **performans Profiler**.  
   

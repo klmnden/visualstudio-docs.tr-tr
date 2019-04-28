@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440059"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: Dosyaları Derlemeden Dışlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
     ```  
   
     > [!NOTE]
-    >  Her iki öznitelik yolunu belirtmeniz gerekir. İçinde dosya konumlarını belirtme mutlak yol kullanıyorsanız `Include` özniteliği içinde mutlak bir yol da kullanmanız gerekir `Exclude` göreli bir yol kullanır; öznitelik `Include` özniteliği, göreli bir yol kullanmalısınız`Exclude`özniteliği.  
+    > Her iki öznitelik yolunu belirtmeniz gerekir. İçinde dosya konumlarını belirtme mutlak yol kullanıyorsanız `Include` özniteliği içinde mutlak bir yol da kullanmanız gerekir `Exclude` göreli bir yol kullanır; öznitelik `Include` özniteliği, göreli bir yol kullanmalısınız`Exclude`özniteliği.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Girişler, bir dosya veya dizin, bir derleme için hariç tutmak için koşul kullanma  
  Dahil etmek istediğiniz öğeleri varsa, örneğin, hata ayıklama derlemesi ancak bir yayın yapısı kullanabileceğiniz `Condition` öğesi dahil edileceği koşullarda belirtmek için özniteliği.  
@@ -127,4 +127,4 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğeleri](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [nasıl yapılır: Derlenecek dosyaları seçme](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [nasıl yapılır: Derlenecek Dosyaları Seçme](../msbuild/how-to-select-the-files-to-build.md)

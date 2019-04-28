@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444828"
 ---
 # <a name="adding-a-tool-window"></a>Araç Penceresi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Bu kılavuzda bir araç penceresi oluşturun ve aşağıdaki yollarla Visual Stu
 1. Adlı bir proje oluşturma **FirstToolWin** VSIX şablonuyla ve adlı bir özel araç penceresi öğesi şablonu ekleme **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Denetim için araç penceresi ekleme  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      İlk adlandırılmış parametre `Style` ve değeri `Tabbed`, yani pencere varolan pencereye bir sekmede olacaktır. Yerleştirme konumunu tarafından belirtilen `Window` parametresi, bu durumda, n GUID **Çözüm Gezgini**.  
   
     > [!NOTE]
-    >  IDE'de pencereleri türleri hakkında daha fazla bilgi için bkz. <xref:EnvDTE.vsWindowType>.  
+    > IDE'de pencereleri türleri hakkında daha fazla bilgi için bkz. <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Araç penceresi test etme  
   

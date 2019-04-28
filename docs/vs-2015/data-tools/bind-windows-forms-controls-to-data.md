@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439481"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Verilere Windows Forms denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Nesnelerden sürükleyerek veri kaynakları denetimlerine bağlayabilirsiniz **v
  ![Veri kaynağı ayrıntıları bağlama](../data-tools/media/raddata-bind-data-source-to-details.png "raddata bağlama veri kaynağı ayrıntıları")  
   
 > [!IMPORTANT]
->  Önceki resimde unutmayın, Siparişler tablosundan Müşteriler tablosundaki siparişler özelliğinden sürükleyin. Customer.Orders özelliğine bağlama tarafından yaptığınız Datagrindview'daki Gezinti komutları hemen ayrıntıları denetimlerinde yansıtılır. Siparişler tablosundan Sürüklediyseniz, denetimleri yine de veri kümesine bağlı, ancak bunlar değil DataGridView ile eşitlenmemiş.  
+> Önceki resimde unutmayın, Siparişler tablosundan Müşteriler tablosundaki siparişler özelliğinden sürükleyin. Customer.Orders özelliğine bağlama tarafından yaptığınız Datagrindview'daki Gezinti komutları hemen ayrıntıları denetimlerinde yansıtılır. Siparişler tablosundan Sürüklediyseniz, denetimleri yine de veri kümesine bağlı, ancak bunlar değil DataGridView ile eşitlenmemiş.  
   
  Aşağıda varsayılan siparişler Müşteriler tablosunda "Ayrıntılar" özelliğe sonra forma eklenen verilere bağlı denetimler gösterilir **veri kaynakları** penceresi.  
   

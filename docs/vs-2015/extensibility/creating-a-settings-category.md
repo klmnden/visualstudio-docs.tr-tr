@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435537"
 ---
 # <a name="creating-a-settings-category"></a>Ayarlar Kategorisi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kayded
      Adı "My Category" kategorisi, nesne "ayarlarım" ve "OptionInteger ve OptionFloat" Kategori açıklaması bu kaynakları oluşturur.  
   
     > [!NOTE]
-    >  Bu üç, yalnızca kategori adı içeri ve dışarı aktarma ayarları Sihirbazı'nda görünmez.  
+    > Bu üç, yalnızca kategori adı içeri ve dışarı aktarma ayarları Sihirbazı'nda görünmez.  
   
 3. MyToolsOptionsPackage.cs içinde ekleme bir `float` adlı özellik `OptionFloat` için `OptionPageGrid` , aşağıdaki örnekte gösterildiği gibi sınıf.  
   
@@ -77,7 +77,7 @@ Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kayded
     ```  
   
     > [!NOTE]
-    >  `OptionPageGrid` Artık "My Category" adlı kategoriden oluşuyorsa iki özelliklerini `OptionInteger` ve `OptionFloat`.  
+    > `OptionPageGrid` Artık "My Category" adlı kategoriden oluşuyorsa iki özelliklerini `OptionInteger` ve `OptionFloat`.  
   
 4. Ekleme bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> için `MyToolsOptionsPackage` sınıfı ve "My Category" CategoryName adı verin, "My ayarları" ObjectName verin ve isToolsOptionPage true olarak ayarlayın. CategoryResourceID objectNameResourceID ve DescriptionResourceID kimlikleri daha önce oluşturduğunuz karşılık gelen dize kaynağını ayarlayın.  
   

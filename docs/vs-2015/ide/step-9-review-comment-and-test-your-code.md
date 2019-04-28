@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428576"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  **ShowButton** düğmenin Click olay işleyicisi artık tamamlandı ve çalışıyor. Kodu yazmaya başlayarak başlattığınız bir `if` deyimi. Bir `if` deyimdir nasıl programınıza "Bu şeyi denetle ve true ise, şu eylemleri gerçekleştir." Bu durumda programınıza size **Dosya Aç** iletişim kutusu, ve kullanıcı bir dosya seçer ve seçer **Tamam** düğmesi, o dosyayı PictureBox'a yüklemesini yük.  
+    > **ShowButton** düğmenin Click olay işleyicisi artık tamamlandı ve çalışıyor. Kodu yazmaya başlayarak başlattığınız bir `if` deyimi. Bir `if` deyimdir nasıl programınıza "Bu şeyi denetle ve true ise, şu eylemleri gerçekleştir." Bu durumda programınıza size **Dosya Aç** iletişim kutusu, ve kullanıcı bir dosya seçer ve seçer **Tamam** düğmesi, o dosyayı PictureBox'a yüklemesini yük.  
   
     > [!TIP]
-    >  IDE kod yazmanızı kolaylaştırmak amacıyla oluşturulmuştur ve *kod parçacıkları* bunu yapmanın bir yoludur. Bir kod parçacığı, küçük bir kod bloğuna genişletilmiş kısayoldur.  
+    > IDE kod yazmanızı kolaylaştırmak amacıyla oluşturulmuştur ve *kod parçacıkları* bunu yapmanın bir yoludur. Bir kod parçacığı, küçük bir kod bloğuna genişletilmiş kısayoldur.  
     >   
     >  Tüm kullanılabilir kod parçacıkları görebilirsiniz. Menü çubuğunda, **Araçları**, **kod parçacıkları Yöneticisi**. Visual C#, `if` kod parçacığı olan **Visual C#** . Visual Basic'te `if` parçacıkları **Koşullular ve döngüler**, **kod desenleri**. Varolan parçacıklara gözatmak veya kendi parçalarınızı eklemek için bu Yöneticisi'ni kullanabilirsiniz.  
     >   
@@ -83,7 +83,7 @@ Resim Görüntüleyici
 2. Seçin **resim Göster** az önce yazdığınız kodu çalıştırmak için düğme. İlk olarak, programı açar bir **açık dosya** iletişim kutusu. Filtrelerinizi göründüğünü doğrulayın **dosya türü** iletişim kutusunun altındaki açılır listede. Ardından bir resme gidin ve açın. Windows işletim sistemi ile gönderilen örnek resimler çoğunlukla olabilir, **Belgelerim** klasöründe **resimlerim\örnek Resimlerim** klasör.  
   
     > [!NOTE]
-    >  Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun "tüm dosyalar (*.\*)" filtresinin seçili iletişim kutusunun alt sağ tarafındaki aşağı açılan listesinde.  
+    > Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun "tüm dosyalar (*.\*)" filtresinin seçili iletişim kutusunun alt sağ tarafındaki aşağı açılan listesinde.  
   
 3. Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle TableLayoutPanel ve FlowLayoutPanel kapsayıcılarını kullandınız: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.  
   

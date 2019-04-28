@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445970"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Kodlanmış UI testleri içindeki bir SharePoint uygulaması da dahil olmak üze
  ![SharePoint web bölümleri](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Eylem kaydı yapıyorsanız, eylemleri, kod oluşturmadan önce doğrulayın. Bazı davranışları fareyle üzerine gelindiğinde ile ilişkili olduğundan, varsayılan olarak açıktır. Yedekli eklenmemesi, kodlanmış UI testlerini kaldırmak dikkatli olun. Test için kod düzenleme veya kullanarak bunu yapabilirsiniz [kodlanmış UI Test Düzenleyicisi](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Eylem kaydı yapıyorsanız, eylemleri, kod oluşturmadan önce doğrulayın. Bazı davranışları fareyle üzerine gelindiğinde ile ilişkili olduğundan, varsayılan olarak açıktır. Yedekli eklenmemesi, kodlanmış UI testlerini kaldırmak dikkatli olun. Test için kod düzenleme veya kullanarak bunu yapabilirsiniz [kodlanmış UI Test Düzenleyicisi](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>SharePoint uygulamanız içinde Office 2010 denetimlerin testi dahil olmak üzere  
  Bazı office 2010 web bölümleri SharePoint uygulamanızda Otomasyon etkinleştirmek için bazı küçük bir kod değişikliği yapmanız gerekir.  
   
 > [!WARNING]
->  Visio ve PowerPoint 2010 denetimleri için desteği desteklenmiyor.  
+> Visio ve PowerPoint 2010 denetimleri için desteği desteklenmiyor.  
   
 ### <a name="excel-2010-cell-controls"></a>Excel 2010 hücre denetimleri  
  Excel hücre denetimleri eklemek için kodlanmış UI test kodu bazı değişiklikler yapmanız gerekir.  
   
 > [!WARNING]
->  Ok anahtar eylemi tarafından izlenen herhangi bir Excel hücreyi metin girme doğru kaydetmez. Hücreleri seçmek için fare kullanın.  
+> Ok anahtar eylemi tarafından izlenen herhangi bir Excel hücreyi metin girme doğru kaydetmez. Hücreleri seçmek için fare kullanın.  
   
  Boş bir hücreye eylemleri kaydediyorsanız, double hücreyi tıklayarak ve ardından kümesi metin işlemi gerçekleştirme kodu değiştirmeniz gerekir. Tüm klavye eylemi tarafından izlenen hücrenin click etkinleştirir çünkü bu gerekli `textarea` hücresi içinde. Yalnızca kaydı bir `setvalue` boş hücreyi aramak `editbox` tıklanan hücre kadar mevcut değil. Örneğin:  
   

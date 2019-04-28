@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433046"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Nasıl yapılır: Oluşturma ve Visual Studio katılımsız yükleme çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040552"
      İçin yükleme uygulamasının ağ yolu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] benzer \\ \\ *ServerName*\IDEinstall\\*ürün*.exe.
 
     > [!NOTE]
-    >  Herhangi bir yol ve dosya adı birleşimi 260 karakterden uzunsa kurulum başarısız olabilir. Bir yolda uzunluğu en fazla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 221 karakterdir.  Yerel yol adı 70 karakteri aşmamalıdır ve ağ yolu adı 39 karakteri aşmamalıdır.
+    > Herhangi bir yol ve dosya adı birleşimi 260 karakterden uzunsa kurulum başarısız olabilir. Bir yolda uzunluğu en fazla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 221 karakterdir.  Yerel yol adı 70 karakteri aşmamalıdır ve ağ yolu adı 39 karakteri aşmamalıdır.
 
      Yükleme de çalışmayabilir yol içinde klasör adlarında gömülü boşluklar varsa (örneğin, "\\\\*ServerName*\IDE yükleme" veya \\ \\ *ServerName*\Visual studio\\).
 
@@ -46,16 +46,16 @@ ms.locfileid: "60040552"
  Dağıtılacak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katılımsız modda AdminDeployment.xml dosyasını değiştirmeniz gerekir. Bunu yapmak için önce AdminDeployment.xml dosyasını kullanarak oluşturmalısınız `/CreateAdminFile`  *\<dosya konumu >* komut satırı parametresi. Ağınıza bir Visual Studio dağıtımı gönderin veya bu dosyayı koyarsanız bir kurulum içine çeker. Bu dosya daha sonra kullanabileceğiniz *sürücü*: \IDEinstall\packages dizin. AdminDeployment.xml dosyası bir işletim sistemi, mimari, Visual Studio ya da işletim sistemi dil sürümü için benzersiz değil.
 
 > [!CAUTION]
->  Bazı durumlarda, seçili AdminDeployment.xml dosyasında listelenen öğelerin yüklenmemiş. Bu sorunu çözmek için işaretlenen öğeleri Yerleştir "Seçili ="yes"", **son** AdminDeployment.xml dosyası.
+> Bazı durumlarda, seçili AdminDeployment.xml dosyasında listelenen öğelerin yüklenmemiş. Bu sorunu çözmek için işaretlenen öğeleri Yerleştir "Seçili ="yes"", **son** AdminDeployment.xml dosyası.
 >
->  Ardından bir öğesi isteğe bağlı bağımlılıklar yüklemek istemiyorsanız, üst ilk öğesini seçin ve ardından isteğe bağlı bağımlılıklar aşağıdaki ekran görüntüsünde gösterildiği gibi ana sonra seçimini gerekir:
+> Ardından bir öğesi isteğe bağlı bağımlılıklar yüklemek istemiyorsanız, üst ilk öğesini seçin ve ardından isteğe bağlı bağımlılıklar aşağıdaki ekran görüntüsünde gösterildiği gibi ana sonra seçimini gerekir:
 >
->  ![Yükleme öğeleri AdminDeployment.xml dosyasını sonunda](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Yükleme öğeleri AdminDeployment.xml dosyasını sonunda](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Yalnızca bir üst isteğe bağlı alt öğeleri atlamak için bunu yapmak için başka bir yolu olan — herhangi diğer bir deyişle, olarak eklemeyin "Seçili"Hayır"=" öğeleri — ancak yine de tüm yerleştirmeniz gerekir "Seçili ="yes"" AdminDeployment.xml dosyasını sonunda öğeleri.
+> Yalnızca bir üst isteğe bağlı alt öğeleri atlamak için bunu yapmak için başka bir yolu olan — herhangi diğer bir deyişle, olarak eklemeyin "Seçili"Hayır"=" öğeleri — ancak yine de tüm yerleştirmeniz gerekir "Seçili ="yes"" AdminDeployment.xml dosyasını sonunda öğeleri.
 
 > [!IMPORTANT]
->  Yükleme sırasında bilgisayar otomatik olarak bir veya daha fazla kez yeniden başlatılabilir. Yeniden başlatıldıktan sonra bilgisayar yeniden başlatılmadan önce yüklemeyi gerçekleştirmek için oturum açıldıysa yeniden aynı kullanıcı hesabıyla oturum açmalısınız. Katılımsız yükleme çalıştırmadan önce Önkoşul bileşenlerini yükleyerek otomatik yeniden başlatmaları engelleyebilirsiniz. İçinde "Önlemek yeniden Kurulum sırasında" başlıklı bölüme daha fazla bilgi için bkz [Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md).
+> Yükleme sırasında bilgisayar otomatik olarak bir veya daha fazla kez yeniden başlatılabilir. Yeniden başlatıldıktan sonra bilgisayar yeniden başlatılmadan önce yüklemeyi gerçekleştirmek için oturum açıldıysa yeniden aynı kullanıcı hesabıyla oturum açmalısınız. Katılımsız yükleme çalıştırmadan önce Önkoşul bileşenlerini yükleyerek otomatik yeniden başlatmaları engelleyebilirsiniz. İçinde "Önlemek yeniden Kurulum sırasında" başlıklı bölüme daha fazla bilgi için bkz [Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md).
 
  AdminDeployment dosyası şeması aşağıdaki öğeleri içerir:
 
@@ -71,7 +71,7 @@ ms.locfileid: "60040552"
 |BundleCustomizations|NoCacheOnlyMode|Evet&#124;varsayılan|Paket önbelleğinin önceden doldurulmasını engeller.|
 
 > [!WARNING]
->  Yükleme uygulaması, gizli olsa bile Selectableıtem öğesinin seçili durumuna uyar. Her zaman seçilebilir bir öğeyi yüklemek istiyorsanız, örneğin, onu gizli ve seçili olarak işaretleyebilirsiniz.
+> Yükleme uygulaması, gizli olsa bile Selectableıtem öğesinin seçili durumuna uyar. Her zaman seçilebilir bir öğeyi yüklemek istiyorsanız, örneğin, onu gizli ve seçili olarak işaretleyebilirsiniz.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Visual Studio katılımsız yükleme oluşturmak için
 
@@ -100,7 +100,7 @@ ms.locfileid: "60040552"
  Açarsanız **Denetim Masası** ve yükleme uygulamasını yeniden çalıştırırsanız Visual Studio'nun özelliklerini değiştirebilir, programlama dillerini kaldırabilir ve onarmak veya Visual Studio'yu kaldırın.
 
 > [!NOTE]
->  Bakım modunu kullanmak için yerel bilgisayarda yönetici kimlik bilgileriniz olmalıdır.
+> Bakım modunu kullanmak için yerel bilgisayarda yönetici kimlik bilgileriniz olmalıdır.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Bir istemci bilgisayar yüklemesi korumak için
 

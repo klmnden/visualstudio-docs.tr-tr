@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442084"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Android için Visual Studio öykünücüsü Android cihaz öykünen bir masaüst
  Denetim Masası'ndaki Program Ekle/Kaldır'ı kullanarak Android için Visual Studio öykünücü kaldırabilirsiniz.  
   
 > [!NOTE]
->  Visual Studio'nun öykünücü kaldırmaz. Öykünücü ayrı olarak kaldırmanız gerekir.  
+> Visual Studio'nun öykünücü kaldırmaz. Öykünücü ayrı olarak kaldırmanız gerekir.  
   
  Android için Visual Studio öykünücü kaldırdığınızda, Hyper-V sanal Ethernet öykünücü kullanmak oluşturulan bağdaştırıcıların otomatik olarak kaldırılmaz. Hyper-V Yöneticisi'ni açarak ve sonra öykünücü VHD görüntüleri birini seçerek ağ sekmesini seçerek seçerek bu sanal bağdaştırıcılar (Eğer kullanımda olmayan) el ile kaldırabilirsiniz **Kaldır** bu sekmede görünür anahtarların her biri için.  
   

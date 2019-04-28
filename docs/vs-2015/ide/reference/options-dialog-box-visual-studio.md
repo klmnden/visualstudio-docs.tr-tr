@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17abd78c193eb103597aa94f048bd715434e27a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bf656ed94b232e2ce19986696f4155dc225c8ad0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433634"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59649660"
 **Seçenekleri** iletişim kutusu ihtiyaçlarınıza tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, projeleriniz için bir varsayılan kaydetme konumu kurmak, varsayılan görünümünü ve davranışını Windows alter ve sık kullanılan komutlar için kısayollar oluşturmanıza. Ayrıca seçenekleri geliştirme diliniz ve platformunuz için özgü vardır. Erişebildiğiniz **seçenekleri** gelen **Araçları** menüsü.
 
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Seçenekler iletişim kutusu düzeni
  **Seçenekleri** iletişim kutusu, iki bölüme ayrılmıştır: sol ve sağ taraftaki görüntüleme alanı bir gezinti bölmesi. Ağaç denetimi Gezinti bölmesinde, ortam, metin düzenleyici, kaynak denetimi, projeler ve çözümler gibi klasör düğümleri içerir. İçerdiği seçenekler sayfalarını listelemek için herhangi bir klasör düğümünü genişletin. Belirli bir sayfa için düğümü seçin, seçeneklerini görünüm alanında görünür.
@@ -37,7 +37,7 @@ ms.locfileid: "59649660"
  Özellik belleğe yüklenene kadar bir IDE özelliği için seçenekleri Gezinti bölmesinde görünmez. Bu nedenle, son tamamlandı olarak görüntülenen yeni bir oturum başlatmak gibi aynı seçeneklere görüntülenmeyebilir. Bir proje oluşturun veya belirli bir uygulamayı kullanan bir komut çalıştırdığınızda, uygun seçenekleri için düğümleri için Seçenekler iletişim kutusu eklenir. Bunlar, IDE özelliği bellekte kaldığı sürece seçenekleri ardından kullanılabilecektir eklendi.
 
 > [!NOTE]
->  Bazı ayar koleksiyonlarından, Seçenekler iletişim kutusu Gezinti bölmesinde görünen sayfaların sayısını kapsam. Olası tüm sayfaları görüntülemek için seçtiğiniz **tüm ayarları göster**.
+> Bazı ayar koleksiyonlarından, Seçenekler iletişim kutusu Gezinti bölmesinde görünen sayfaların sayısını kapsam. Olası tüm sayfaları görüntülemek için seçtiğiniz **tüm ayarları göster**.
 
 ## <a name="how-options-are-applied"></a>Seçenekler nasıl uygulanır
  Tamam'ı tıklatarak **seçenekleri** iletişim kutusu üzerindeki bütün sayfaların tüm ayarlar kaydeder. Herhangi bir sayfa üzerinde İptal'i tıklatarak, yaptığınız diğer dahil tüm değişiklik isteklerini iptal **seçenekleri** sayfaları. Seçenek ayarlarına yapılan olanlar gibi bazı değişiklikler [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)yalnızca sonra close etkili ve Visual Studio'yu yeniden açın.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794332"
 ---
 # <a name="per-thread-summary-report"></a>Her iş parçacığı özet raporu
 Bu çubuk grafik, mevcut görülebilir zaman aralığında her etkinlik kategorisinde görünür her bir iş parçacığı harcadığı zamanı oranını gösterir. İş parçacığını yürütmeye "Yürütme" anlamına gelir; diğer tüm kategorileri, iş parçacığı bir şey beklediğini anlamına gelir.

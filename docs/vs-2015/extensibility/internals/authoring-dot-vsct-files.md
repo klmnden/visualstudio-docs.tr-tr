@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437664"
 ---
 # <a name="authoring-vsct-files"></a>Authoring .Vsct Files
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI
     Ayarlama `guid` ve `id` özniteliklerini `Menu` öğesini ve ardından `type` istediğiniz menü türü için öznitelik. Ayrıca ayarlayabilir `priority` menünün göreli konum üst grubu oluşturmak için öznitelik.  
   
    > [!NOTE]
-   >  `priority` Özniteliği araç çubukları ve bağlam menüleri için geçerli değildir.  
+   > `priority` Özniteliği araç çubukları ve bağlam menüleri için geçerli değildir.  
   
 2. Visual Studio IDE'deki tüm komutları menüleri ve araç çubuklarını doğrudan alt komut gruplarınca barındırılması gerekir. Yeni menü veya araç çubukları IDE ekliyorsanız, bu yeni komut grubu içermesi gerekir. Görsel olarak komutlarınızı gruplayabilirsiniz, böylece var olan menüleri ve araç çubuklarını komut gruplarıyla da ekleyebilirsiniz.  
   
@@ -99,14 +99,14 @@ Bu belge, menü öğeleri, araç çubukları ve diğer kullanıcı arabirimi (UI
    1. Ayarlama `guid` ve `id` öznitelikleri her `Button` öğesini ve ardından `type` istediğiniz düğme türü için öznitelik. Ayrıca ayarlayabilir `priority` komutu göreli konumunu üst grubu oluşturmak için öznitelik.  
   
       > [!NOTE]
-      >  Kullanım `type="button"` standart menü komutları ve araç çubuğu düğmeleri için.  
+      > Kullanım `type="button"` standart menü komutları ve araç çubuğu düğmeleri için.  
   
    2. İçinde `Button` öğe, Ekle bir [dizeleri](../../extensibility/strings-element.md) öğesini içeren bir [ButtonText](../../extensibility/buttontext-element.md) öğesi ve bir [CommandName](../../extensibility/commandname-element.md) öğesi. `ButtonText` Öğesi için menü öğesi ya da araç çubuğu düğmesi için araç ipucu metin etiketi sağlar. `CommandName` Öğesi de komut içinde kullanmak için komutu adını sağlar.  
   
    3. Komutunuz bir simge varsa, oluşturun bir [simgesi](../../extensibility/icon-element.md) öğesinde `Button` öğesi ve kümesi kendi `guid` ve `id` özniteliklerini `Bitmap` öğesi simgesi.  
   
       > [!NOTE]
-      >  Araç çubuğu düğmeleri simgeler olması gerekir.  
+      > Araç çubuğu düğmeleri simgeler olması gerekir.  
   
       Daha fazla bilgi için [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   

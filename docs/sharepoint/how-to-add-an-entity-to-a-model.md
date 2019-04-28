@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431242"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Nasıl yapılır: Modele bir varlık ekleme
   Bir varlık oluşturmak için Visual Studio'dan bir varlık denetimi ekleme **araç kutusu** İş Verileri Bağlantısı (BDC) tasarımcıya.
@@ -40,7 +40,7 @@ ms.locfileid: "60089464"
      Yeni bir tanımlayıcı varlık üzerinde görünür.
 
     > [!NOTE]
-    >  Varlık ve tanımlayıcı adını değiştirebilirsiniz **özellikleri** penceresi.
+    > Varlık ve tanımlayıcı adını değiştirebilirsiniz **özellikleri** penceresi.
 
 4. Varlık alanlarını bir sınıfta tanımlayın. Projeye yeni bir sınıf ekleyin veya Object Relational Designer (O/R Tasarımcısı) gibi diğer araçları kullanarak oluşturduğunuz var olan bir sınıfı kullanın. Aşağıdaki örnek, kişi adlı bir varlık sınıfı gösterir.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b6c5dcbd3601a6075097a44d2cd5dd625b4a87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799489"
 ---
 # <a name="symbols-element"></a>Symbols Öğesi
 GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar. Yönetilmeyen kod için bu bilgiler genellikle tarafından belirtilen üst bilgi dosyaları geldiği [Extern öğesi](../extensibility/extern-element.md). Kod kullanan bu bilgileri tanımlamak için semboller öğenin alt öğeleri yönetilen.
@@ -41,7 +41,7 @@ GUID'leri ve kimlikleri diğer VSCT öğeleri tarafından kullanılan tanımlar.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|Hiçbiri||
+|Yok.||
 
 ### <a name="child-elements"></a>Alt Öğeler
 

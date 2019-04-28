@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426446"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Bir Çözümde Proje Yüklemeyi Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Genel yükleme çözümü yönetmek için çözüm yükleme yöneticisi geliyorsa, VSPackage bir parçası olarak uygulanabilir. Paket ekleyerek otomatik yükleme için ayarlanmalıdır <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> değeriyle VSPackage'ı üzerinde <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Çözüm yükü Yöneticisi'ni, sonra etkinleştirilebilir <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
   
 > [!NOTE]
->  Autoloading paketler hakkında daha fazla bilgi için bkz. [VSPackage yükleme](../extensibility/loading-vspackages.md).  
+> Autoloading paketler hakkında daha fazla bilgi için bkz. [VSPackage yükleme](../extensibility/loading-vspackages.md).  
   
  Visual Studio etkinleştirilmesi için yalnızca son çözüm yükleme yöneticisi algılar olduğundan, genel çözüm yük yöneticileri olup var olan bir yükleme yöneticisi kendilerini etkinleştirmeden önce her zaman algılanmalıdır. Çözüm Service'i GetProperty() çağırır <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> döndürür `null`, hiçbir etkin çözüm yükü Yöneticisi yoktur. Null döndürmezse, nesnenin, çözüm yükleme yöneticisi ile aynı olup olmadığını denetleyin.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: Bu yöntemi çağırmadan, projede zorlar `guidProjectID` yöntemi döndürmeden önce yüklenecek.  
   
 > [!NOTE]
->  biçimindeki telefon numarasıdır. Varsayılan olarak yalnızca isteğe bağlı olan projelerin yüklenmesi ve arka plan yük öncelikleri yüklenir, ancak <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> bayrağı yönteme geçirilir, açıkça yüklemek için işaretlenmiş olanlar dışında tüm projeleri yüklenir.
+> biçimindeki telefon numarasıdır. Varsayılan olarak yalnızca isteğe bağlı olan projelerin yüklenmesi ve arka plan yük öncelikleri yüklenir, ancak <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> bayrağı yönteme geçirilir, açıkça yüklemek için işaretlenmiş olanlar dışında tüm projeleri yüklenir.

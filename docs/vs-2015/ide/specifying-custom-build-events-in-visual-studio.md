@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441954"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio'da Özel Derleme Olayları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60054163"
      Örnek: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
     > [!NOTE]
-    >  `%I` Yukarıdaki kodda kullanılmalıdır `%%I` toplu komut.
+    > `%I` Yukarıdaki kodda kullanılmalıdır `%%I` toplu komut.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md) [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild özel karakterleri](../msbuild/msbuild-special-characters.md) [izlenecek yol: Uygulama Oluşturma](../ide/walkthrough-building-an-application.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445353"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Nasıl yapılır: Eylemler bölmelerindeki Düzen denetim yönetme
   Eylemler bölmesi varsayılan belge veya çalışma sağa yerleştirilir; Ancak, sol, üst veya alt yerleştirilmiş olabilir. Birden çok kullanıcı denetimleri kullanıyorsanız, Eylemler bölmesinde kullanıcı denetimleri düzgün yığın için kod yazabilirsiniz. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
@@ -29,10 +29,10 @@ ms.locfileid: "60094620"
  Eylemler bölmesinde yatay veya dikey olarak yerleştirilmiş üzerinde denetimleri yığın sırasını bağlıdır.
 
 > [!NOTE]
->  Kullanıcının çalışma zamanında eylemler bölmesinde yeniden boyutlandırırsa, Eylemler bölmesi için denetimleri ayarlayabilirsiniz. Kullanabileceğiniz <xref:System.Windows.Forms.Control.Anchor%2A> eylemler bölmesindeki denetimlere bağlantı için bir Windows Forms denetiminin özelliği. Daha fazla bilgi için [nasıl yapılır: Windows formlarında denetimleri sabitleme](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Kullanıcının çalışma zamanında eylemler bölmesinde yeniden boyutlandırırsa, Eylemler bölmesi için denetimleri ayarlayabilirsiniz. Kullanabileceğiniz <xref:System.Windows.Forms.Control.Anchor%2A> eylemler bölmesindeki denetimlere bağlantı için bir Windows Forms denetiminin özelliği. Daha fazla bilgi için [nasıl yapılır: Windows formlarında denetimleri sabitleme](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Eylemler bölmesi denetimlerinin yığın sırasını ayarlamak için
 

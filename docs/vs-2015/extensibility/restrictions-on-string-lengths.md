@@ -10,12 +10,12 @@ ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7abc4290f784808f98b2c5833c896866ab51799
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432531"
 ---
 # <a name="restrictions-on-string-lengths"></a>Dize Uzunluğu Kısıtlamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Kaynak Denetimi Eklentisi API çeşitli işlevler için kullanılan dizelerin uz
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  Uzunluğu sonlandırma içermez `null`. Bir "_LEN" yerine "_boyut" soneki ile diğer sabitleri sonlandırmak için boşluk `null`.  
+> Uzunluğu sonlandırma içermez `null`. Bir "_LEN" yerine "_boyut" soneki ile diğer sabitleri sonlandırmak için boşluk `null`.  
   
 |Sabit|Değer|  
 |--------------|-----------|  

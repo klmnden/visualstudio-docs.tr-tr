@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444142"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Nasıl yapılır: İçerik Haritalı Gezinmeyi Kullanma
 Görüntülenen etkinlikler kümesini değiştirmek için üç ana yolu vardır [!INCLUDE[wfd1](../includes/wfd1-md.md)]:  
@@ -38,7 +38,7 @@ Görüntülenen etkinlikler kümesini değiştirmek için üç ana yolu vardır 
 2. Düğmeye tıklayarak durumu genişletme durumu değiştirildiğinde, yeni genişletme durumunu XAML içinde kaydedilir.  
   
     > [!WARNING]
-    >  Tüm etkinlikleri yerinde genişletilebilir. İki durum vardır etkinlik yerinde genişletildiğinde: ya da etkinliğin üst alt yerinde genişletilecek izin vermez, (örneğin, bir akış etkinlikleri yerinde genişletilemez), veya etkinlik Tasarımcısı kendisine izin vermiyor yerinde genişletilebilir. Dahil etkinlik tasarımcıları hiçbiri rağmen [!INCLUDE[wfd2](../includes/wfd2-md.md)] ikinci davranışa sahip, bazı özel etkinlikleri bu davranışı sergiler.  
+    > Tüm etkinlikleri yerinde genişletilebilir. İki durum vardır etkinlik yerinde genişletildiğinde: ya da etkinliğin üst alt yerinde genişletilecek izin vermez, (örneğin, bir akış etkinlikleri yerinde genişletilemez), veya etkinlik Tasarımcısı kendisine izin vermiyor yerinde genişletilebilir. Dahil etkinlik tasarımcıları hiçbiri rağmen [!INCLUDE[wfd2](../includes/wfd2-md.md)] ikinci davranışa sahip, bazı özel etkinlikleri bu davranışı sergiler.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Tüm genişletme veya daraltma tüm etkinlikler  
   
@@ -47,7 +47,7 @@ Görüntülenen etkinlikler kümesini değiştirmek için üç ana yolu vardır 
 2. Tüm genişletme uyguladığınız veya tüm durum Daralt sonra tıklayabilirsiniz **geri** her etkinliğe daha önce uyguladığınız durumu bakarak için geri dönmek için görüntülenen düğme.  
   
     > [!WARNING]
-    >  Bir etkinlik ise gibi <xref:System.Activities.Statements.Flowchart>, ettikten dışında bir yerde genişletin, işlevselliği ile ilişkili **Tümünü Genişlet** ve **Tümünü Daralt** düğmeleri devre **akış çizelgesi**  Tasarımcısı. [!INCLUDE[crabout](../includes/crabout-md.md)] **akış** Tasarımcı, bkz: [akış](../workflow-designer/flowchart-activity-designer.md) konu.  
+    > Bir etkinlik ise gibi <xref:System.Activities.Statements.Flowchart>, ettikten dışında bir yerde genişletin, işlevselliği ile ilişkili **Tümünü Genişlet** ve **Tümünü Daralt** düğmeleri devre **akış çizelgesi**  Tasarımcısı. [!INCLUDE[crabout](../includes/crabout-md.md)] **akış** Tasarımcı, bkz: [akış](../workflow-designer/flowchart-activity-designer.md) konu.  
   
     > [!WARNING]
-    >  Tümünü Genişlet de sahip bir özel efekt **anahtar** ve **TryCatch** etkinlik tasarımcıları. Tıkladığınızda **Tümünü Genişlet**, tüm anahtar durumlarında ve try/catch/finally bloğu görüntülenir. Tıklayarak **geri** veya **Tümünü Daralt** bu tasarımcıları içinden tıklayabilirsiniz varsayılan durumlarına, bir tek çalışması/içeriğini görüntülemek için bloğu döndüren.
+    > Tümünü Genişlet de sahip bir özel efekt **anahtar** ve **TryCatch** etkinlik tasarımcıları. Tıkladığınızda **Tümünü Genişlet**, tüm anahtar durumlarında ve try/catch/finally bloğu görüntülenir. Tıklayarak **geri** veya **Tümünü Daralt** bu tasarımcıları içinden tıklayabilirsiniz varsayılan durumlarına, bir tek çalışması/içeriğini görüntülemek için bloğu döndüren.

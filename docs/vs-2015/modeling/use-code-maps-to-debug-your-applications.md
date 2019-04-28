@@ -18,14 +18,14 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439665"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma
+# <a name="use-code-maps-to-debug-your-applications"></a>Uygulamalarınızda hata ayıklamak için kod eşlemelerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski kodda kafanız karışmadan önlemenize yardımcı olabilir. Örneğin, hata ayıklama işlemi yaparken birçok dosya ve proje arasında koda bakmanız gerekebilir. Kod parçaları gidin ve onlar arasındaki ilişkileri anlamak için kod haritalarını kullanma. Bu şekilde, bu kodu birikimine izlemek ya da ayrı bir şeklini çizmeniz gerekmez. Bu nedenle, çalışmanızı kesintiye uğradığında, bellek, üzerinde çalıştığınız kod hakkında Yardım yenileme kod eşlemeleri.  
@@ -53,7 +53,7 @@ Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski ko
  ![Kod Haritası &#45; yöntemi ve ilgili alanları göster](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  Yeşil vurgu eşlemeye eklenen son öğeleri gösterir. Yeşil bir ok, imlecinizin koddaki konumunu gösterir. Öğeler arasındaki oklar farklı ilişkileri temsil eder. Harita üzerinde bunlar üzerinde fareyi hareket ve kendi araç ipuçlarını inceleyerek öğeler hakkında daha fazla bilgi alabilirsiniz.  
+> Yeşil vurgu eşlemeye eklenen son öğeleri gösterir. Yeşil bir ok, imlecinizin koddaki konumunu gösterir. Öğeler arasındaki oklar farklı ilişkileri temsil eder. Harita üzerinde bunlar üzerinde fareyi hareket ve kendi araç ipuçlarını inceleyerek öğeler hakkında daha fazla bilgi alabilirsiniz.  
   
  ![Kod Haritası &#45; araç ipuçlarını göster](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski ko
  ![Kod Haritası &#45; alan tanımı inceleyin](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  Kod düzenleyicisinde imleci hareket ettirerek yeşil oku eşlemede taşıyabilirsiniz.  
+> Kod düzenleyicisinde imleci hareket ettirerek yeşil oku eşlemede taşıyabilirsiniz.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Kod parçaları arasındaki ilişkileri anlama  
  Bilmek istediğiniz artık başka hangi kodun etkileşim `history` ve `paintObjects` alanları. Bu alanlara başvuran tüm yöntemleri eşlemeye ekleyebilirsiniz. Bunu eşlemeden veya kod düzenleyicisinden yapabilirsiniz.  
@@ -75,14 +75,14 @@ Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski ko
  ![Kod düzenleyiciden bir kod Haritası açın](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Ardından Windows Phone veya Windows Store, gibi birden fazla uygulama arasında paylaşılan bir projeden öğeler eklediğinizde bu öğeler harita üzerinde şu anda etkin uygulama projesiyle olmadığını her zaman görünür. Harita üzerinde bağlamı için de değişir. daha sonra başka bir uygulama projesi bağlamı değiştirirseniz, bu nedenle, yeni öğeleri paylaşılan projeden eklenen tüm. Eşleme üzerinde bir öğeyle gerçekleştirdiğiniz işlemler, yalnızca aynı bağlamı paylaşılan öğeler için geçerlidir.  
+> Ardından Windows Phone veya Windows Store, gibi birden fazla uygulama arasında paylaşılan bir projeden öğeler eklediğinizde bu öğeler harita üzerinde şu anda etkin uygulama projesiyle olmadığını her zaman görünür. Harita üzerinde bağlamı için de değişir. daha sonra başka bir uygulama projesi bağlamı değiştirirseniz, bu nedenle, yeni öğeleri paylaşılan projeden eklenen tüm. Eşleme üzerinde bir öğeyle gerçekleştirdiğiniz işlemler, yalnızca aynı bağlamı paylaşılan öğeler için geçerlidir.  
   
  İlişkilerin akışını yeniden düzenlemek ve eşlemenin okunmasını kolaylaştırmak için düzeni değiştirin. Ayrıca, öğeleri sürükleyerek de eşleme etrafında taşıyabilirsiniz.  
   
  ![Kod Haritası &#45; düzenini değiştir](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Varsayılan olarak, **artan düzen** açıktır. Yeni öğeler eklediğinizde, bu eşlemeyi mümkün olduğunca az yeniden düzenler. Yeni öğeler eklemek her zaman tüm eşlemeyi yeniden düzenlemek için devre dışı **artan düzen**.  
+> Varsayılan olarak, **artan düzen** açıktır. Yeni öğeler eklediğinizde, bu eşlemeyi mümkün olduğunca az yeniden düzenler. Yeni öğeler eklemek her zaman tüm eşlemeyi yeniden düzenlemek için devre dışı **artan düzen**.  
   
  ![Kod Haritası &#45; düzenini değiştir](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Kod Haritaları, büyük kod tabanlarında, bilmediğiniz bir kodda veya eski ko
  ![Kod Haritası &#45; güncelleştirilmiş harita yöntemi çağrısıyla](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Eşlemeyi güncelleştirdiğinizde, eşlemeyi oluşturmak için kullanılan kod dizininin güncelleştirdiğini belirten bir ileti görebilirsiniz. Bu, birisinin kodu eşlemenizin geçerli kodla eşleşmemesine neden olacak şekilde değiştirdiği anlamına gelir. Bu sizi eşlemeyi güncelleştirmekten alıkoymaz, ancak kodla eşleştiğini doğrulamak için eşlemeyi yeniden oluşturmak zorunda kalabilirsiniz.  
+> Eşlemeyi güncelleştirdiğinizde, eşlemeyi oluşturmak için kullanılan kod dizininin güncelleştirdiğini belirten bir ileti görebilirsiniz. Bu, birisinin kodu eşlemenizin geçerli kodla eşleşmemesine neden olacak şekilde değiştirdiği anlamına gelir. Bu sizi eşlemeyi güncelleştirmekten alıkoymaz, ancak kodla eşleştiğini doğrulamak için eşlemeyi yeniden oluşturmak zorunda kalabilirsiniz.  
   
  Artık araştırmanızı bitirdiniz. Kodu eşleştirerek sorunu başarıyla buldunuz ve giderdiniz. Ayrıca kodda gezinmeye ve öğrendiklerinizi hatırlamanıza yardımcı olan ve sorunu gidermek için attığınız adımları gösteren bir eşlemeniz de vardır.  
   

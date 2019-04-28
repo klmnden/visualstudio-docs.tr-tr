@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49b9f88dd00321e00f5c64dad3616cd5a0ddb51a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 00c77675b1a2300468c7848facf498ac3816e136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437217"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59654288"
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.  
   
 > [!TIP]
->  Yazarak `>alias` herhangi bir bağımsız değişken görüntüler olmadan geçerli diğer adlar ve tanımlarının listesi.  
+> Yazarak `>alias` herhangi bir bağımsız değişken görüntüler olmadan geçerli diğer adlar ve tanımlarının listesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

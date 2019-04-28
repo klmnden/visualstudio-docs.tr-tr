@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445576"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook form bölgeleri oluşturma
   Form bölgeleri, Microsoft Office Outlook formları özelleştirmek için kullanabilirsiniz. Visual Studio tasarlamak, geliştirmek ve hata ayıklama form bölgeleri kolaylaştıran gelişmiş araçlar sağlar.
@@ -90,7 +90,7 @@ ms.locfileid: "60092766"
 - Outlook Form Depolama (*.ofs*) dosyası.
 
     > [!NOTE]
-    >  Outlook'ta tasarlanan form bölgesini içeri aktarırsanız bu dosya projeye eklenir.
+    > Outlook'ta tasarlanan form bölgesini içeri aktarırsanız bu dosya projeye eklenir.
 
 #### <a name="form-region-factory-class"></a>Form bölgesi fabrikası sınıfı
  Form bölgesi dosyasını uygulayan bir parçalı sınıf içeren <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> arabirimi. Bu form bölgesi fabrikası sınıftır. Form bölgesi fabrikası sınıfı form bölgesinin yeni örneklerini oluşturmaktan sorumludur.
@@ -110,7 +110,7 @@ ms.locfileid: "60092766"
  Form bölgesi tasarımcısı düzeninin ve görünümünün bir form bölgesinin tasarlamanıza yardımcı olur. Yönetilen denetimleri Tasarımcı yüzeyine sürükleyin, olay işleyicileri açmak için denetimleri çift tıklayın ve kümesinde özellikleri **özellikleri** penceresi.
 
 > [!NOTE]
->  Form bölgesinin Outlook'ta görünümünü etkileyen özellikler bulabilirsiniz **bildirim** düğümünde **özellikleri** penceresi.
+> Form bölgesinin Outlook'ta görünümünü etkileyen özellikler bulabilirsiniz **bildirim** düğümünde **özellikleri** penceresi.
 
  Form bölgesi tasarımcısı yalnızca seçerseniz kullanılabilir **yeni bir Form Bölgesi Tasarla** içinde **nasıl form bölgesi oluşturmak istediğinizi seçin** sayfasının **yeni Outlook Form bölgesi** Sihirbaz.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092766"
  Form bölgesi özelliklerini değiştirebilirsiniz `InitializeManifest` form bölgesi fabrikası sınıfının yöntemi.
 
 > [!NOTE]
->  Form bölgesini içeri aktarmak için geliştirme bilgisayarında yüklü olan Outlook aynı sürümünü hedefleyen bir projede çalışıyor olmalıdır. Outlook 2010 yüklüyse, örneğin, form bölgesi olacak yalnızca iş projesinde içeri aktarma kullanılarak oluşturulmuş **Outlook 2010 Eklentisi** proje şablonu.
+> Form bölgesini içeri aktarmak için geliştirme bilgisayarında yüklü olan Outlook aynı sürümünü hedefleyen bir projede çalışıyor olmalıdır. Outlook 2010 yüklüyse, örneğin, form bölgesi olacak yalnızca iş projesinde içeri aktarma kullanılarak oluşturulmuş **Outlook 2010 Eklentisi** proje şablonu.
 
 ### <a name="update-an-imported-form-regions-design"></a>Bir içeri aktarılan form bölgesinin tasarımını güncelleştir
  Ekleme, kaldırma veya form bölgesinin denetimlere değiştirme. Bunu yapmadan önce form bölgesi kod dosyasına eklemiş olduğunuz koddan yedekleyin. Ardından, açın *.ofs* dosyası Outlook'taki form bölgesini değiştirin ve değişiklikleri kaydedin. Kullanım **yeni Outlook Form bölgesi** değiştirilmiş içeri aktarmak için sihirbaz *.ofs* dosya. Ardından, kodunuzu yeni form bölgesi kod dosyasına yapıştırabilirsiniz.

@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412329"
 ---
 # <a name="managing-universal-windows-projects"></a>Evrensel Windows Projelerini Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricile
     ```  
   
     > [!IMPORTANT]
-    >  Kullanıcı deneysel örneğinde C++ Evrensel Windows uygulama projesi açtıysa, yukarıdaki kod bir özel durum oluşturur. Bu bilinen bir sorundur. Özel durumdan kaçınmak için yerine `foreach` aşağıdakilerle block yukarıda:  
+    > Kullanıcı deneysel örneğinde C++ Evrensel Windows uygulama projesi açtıysa, yukarıdaki kod bir özel durum oluşturur. Bu bilinen bir sorundur. Özel durumdan kaçınmak için yerine `foreach` aşağıdakilerle block yukarıda:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricile
 9. Paylaşılan öğe değiştirin. Bir platform projesindeki paylaşılan öğeleri değiştiremez; Bunun yerine, bunları paylaşılan projede gerçek sahibi bu öğe değiştirmelisiniz. Karşılık gelen öğe kimliği ile paylaşılan projede alabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, paylaşılan öğenin tam yolunu sunar. Ardından, paylaşılan öğeyi değiştirebilirsiniz. Değişiklik platform projelere yayılır.  
   
     > [!IMPORTANT]
-    >  Olup olmadığı bir proje öğesi paylaşılan öğeyi değiştirmeden önce olduğunu bulmanız gerekir.  
+    > Olup olmadığı bir proje öğesi paylaşılan öğeyi değiştirmeden önce olduğunu bulmanız gerekir.  
   
      Aşağıdaki yöntem, bir proje öğesi dosya adını değiştirir.  
   

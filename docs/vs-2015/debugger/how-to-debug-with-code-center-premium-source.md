@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438327"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Nasıl yapılır: Kod Merkezi birincil kaynağı ile hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "60039883"
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
+   > Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
   
      Bu konumlar, bu sembolleri ilk yüklenmesini sağlamak için listenin en üstüne taşıyın.  
   
    > [!NOTE]
-   >  Yüklenen ilk konumları olmasını sağlamak Bu kod merkezi birincil konumlar listelenmesi gerekir. Visual Studio 2010'da, yukarıdaki herhangi bir sunucuya taşınamaz **Microsoft sembol sunucuları** onay kutusunu temizlemeniz gerekir neden olan giriş.  
+   > Yüklenen ilk konumları olmasını sağlamak Bu kod merkezi birincil konumlar listelenmesi gerekir. Visual Studio 2010'da, yukarıdaki herhangi bir sunucuya taşınamaz **Microsoft sembol sunucuları** onay kutusunu temizlemeniz gerekir neden olan giriş.  
    > 
    >  Sembolleri Microsoft hata ayıklama oturumu sırasında sembolleri için şunu yapın:  
    > 
@@ -113,7 +113,7 @@ ms.locfileid: "60039883"
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
+   > Eğik yazdığınızdan emin olun<strong>/</strong> yolun sonuna.  
   
 4. Çözümünüzdeki her yönetilen proje için aşağıdakileri yapın  
   

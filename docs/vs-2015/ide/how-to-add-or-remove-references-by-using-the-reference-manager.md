@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445678"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi'ni kullanarak başvuruları kaldırın veya ekleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
 - Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çıktılarına dosya başvuruları aynı çözümde eklemekten kaçının. Bunun yerine, **projeleri** sekmesinde **Başvuru Ekle** projeden projeye başvuru oluşturmak için iletişim kutusu. Bu takım geliştirme projelerinizde oluşturduğunuz sınıf kitaplıklarının daha iyi yönetimine etkinleştirerek kolaylaştırır. Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  Visual Studio 2015'te, bir projenin .NET Framework hedef sürümü sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje başvurusu yerine dosya başvurusu oluşturulur.  
+    > Visual Studio 2015'te, bir projenin .NET Framework hedef sürümü sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje başvurusu yerine dosya başvurusu oluşturulur.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Bir derlemeyi Başvuru Ekle iletişim kutusunda görüntülemek için  
   
@@ -181,7 +181,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
  SDK, Visual Studio'nun tek bir bileşen olarak kabul ettiği dosyalar topluluğudur. Uzantılar sekmesinde, proje için geçerli bir SDK'ları **başvuru Yöneticisi** iletişim kutusunun çağrıldığı tek varlıklar halinde listelenir. Bir projeye eklendiğinde, SDK içeriğinin tümü Visual Studio tarafından kullanılır; öyle ki kullanıcının IntelliSense, araç kutusu, tasarımcılar, Nesne Tarayıcısı, yapı, dağıtım, hata ayıklama ve paketleme içinde SDK içeriğinden faydalanmak için başka hiçbir işlem yapmasına gerek kalmaz. Uzantılar sekmesinde SDK'nızı görüntüleme hakkında daha fazla bilgi için bkz: [yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Proje başka bir SDK'ya bağımlı olan bir SDK'ya başvuruda bulunursa, kullanıcı ikinci SDK için el ile bir başvuru eklemediği sürece Visual Studio ikinci SDK'yı kullanmaz. Ne zaman bir kullanıcının seçtiği bir SDK'sı üzerinde **uzantıları** sekmesinde **başvuru Yöneticisi** iletişim kutusu yalnızca adı ve SDK sürüm aynı zamanda tüm SDK adı listeleyerek SDK bağımlılıklarını tanımlamak kullanıcı yardımcı olur Ayrıntılar bölmesinde bağımlılıkları. Kullanıcı bağımlılıkları fark etmez ve yalnızca SDK'yı eklerse, MSBuild kullanıcıdan bağımlılıkları eklemesini ister.  
+> Proje başka bir SDK'ya bağımlı olan bir SDK'ya başvuruda bulunursa, kullanıcı ikinci SDK için el ile bir başvuru eklemediği sürece Visual Studio ikinci SDK'yı kullanmaz. Ne zaman bir kullanıcının seçtiği bir SDK'sı üzerinde **uzantıları** sekmesinde **başvuru Yöneticisi** iletişim kutusu yalnızca adı ve SDK sürüm aynı zamanda tüm SDK adı listeleyerek SDK bağımlılıklarını tanımlamak kullanıcı yardımcı olur Ayrıntılar bölmesinde bağımlılıkları. Kullanıcı bağımlılıkları fark etmez ve yalnızca SDK'yı eklerse, MSBuild kullanıcıdan bağımlılıkları eklemesini ister.  
   
  Bir proje türü desteklemiyorsa **uzantıları**, sekmesinde görünmez **başvuru Yöneticisi** iletişim kutusu.  
   
@@ -207,7 +207,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
     ```  
   
     > [!NOTE]
-    >  Özelliği eklerseniz, yapı daha yavaş çalışabilir.  
+    > Özelliği eklerseniz, yapı daha yavaş çalışabilir.  
   
 ## <a name="recent"></a>En Son  
  Derlemeler, COM, Windows ve Gözat'ın her biri, bir En Son sekmesini destekler ve bu sekme projelere yakın zamanda eklenmiş bileşenlerin listesini numaralandırır.  

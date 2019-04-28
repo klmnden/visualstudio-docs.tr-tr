@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443730"
 ---
 # <a name="manage-channels"></a>Kanalları Yönet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54758380"
 |Eşitleme|İş parçacığı eşitleme harcanan sürenin yüzdesi göre sıralar.|  
 |G/Ç|İş parçacıkları (veri okuma ve yazma) I/O için harcanan sürenin yüzdesi göre sıralar.|  
 |Uyku|İş parçacıkları, uyku modunda harcanan sürenin yüzdesi olarak sıralar.|  
-|Disk belleği|İş parçacıkları disk belleği harcanan sürenin yüzdesi göre sıralar.|  
+|Disk Belleği|İş parçacıkları disk belleği harcanan sürenin yüzdesi göre sıralar.|  
 |Önalım|İş parçacıkları önalım harcanan sürenin yüzdesi olarak sıralar.|  
 |UI işleme|İş parçacıkları, kullanıcı arabirimi işlenmesinde harcanan sürenin yüzdesi olarak sıralar.|  
   
@@ -50,7 +50,7 @@ ms.locfileid: "54758380"
  Kanalları gizlemek istediğinizde bu denetimi seçin. Bir iş parçacığını ömrü boyunca yönetilen işleminizi yüzde 100 eşitleme ise, diğer iş parçacıklarını analiz ederken gibi gizlemek.  
   
 > [!NOTE]
->  Bir iş parçacığını gizleme Ayrıca, etkin açıklama ve profili raporlarda gösterilen hesaplama zamanı kaldırır.  
+> Bir iş parçacığını gizleme Ayrıca, etkin açıklama ve profili raporlarda gösterilen hesaplama zamanı kaldırır.  
   
 ## <a name="show-all-channels"></a>Tüm kanalları Göster  
  Bu denetim, bir veya daha fazla kanal gizlendiğinde etkin değil. Seçerseniz, tüm gizli öğeleri gösterilir ve saat hesaplamaları için döndürülür.  

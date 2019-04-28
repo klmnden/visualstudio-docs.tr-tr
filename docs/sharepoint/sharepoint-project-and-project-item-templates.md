@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438989"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint projesi ve proje öğesi şablonları
   Aşağıdaki bölümlerde kullanılabilir SharePoint Proje açıklamak ve proje öğesi şablonları ve bunların nasıl kullanıldığı.
@@ -80,7 +80,7 @@ ms.locfileid: "60040345"
  *İçerik türü* öğeleri, bir belge, duyuru veya bir görev gibi mevcut (Temel) içerik türüne göre özel içerik türleri oluşturmanıza olanak sağlar. Özel bir içerik türü tanımlarsınız sitesi sütunlar (alanlar) ile birlikte temel içerik türü olarak aynı öznitelikleri ve alanlar sağlar. Örneğin, SharePoint'te gelen temel kişi içerik türü temel alan özel bir içerik kişi türü oluşturabilirsiniz. İçerik türü var olan site sütunlarını değiştirme ya da daha fazla site sütunları temel içerik türü zaten bulunan ekleyerek özelleştirebilirsiniz.
 
 > [!NOTE]
->  Bir SharePoint sınırlama nedeniyle, bir korumalı çözüm içerik türüne göre grup çözümü içerik türü oluşturulamıyor.
+> Bir SharePoint sınırlama nedeniyle, bir korumalı çözüm içerik türüne göre grup çözümü içerik türü oluşturulamıyor.
 
  Daha fazla bilgi için [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) ve [yapı taşı: İçerik türü](http://go.microsoft.com/fwlink/?LinkId=179413).
 

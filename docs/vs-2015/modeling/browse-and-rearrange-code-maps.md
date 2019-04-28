@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433415"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Kod eşlemelerine göz atma ve bunları yeniden düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 - Toplu bir bağlantının iki grupları arasında aynı yönde işaret eden tüm ilişkiler temsil eder.  
   
 > [!TIP]
->  Varsayılan olarak, çapraz grup bağlantılarını seçili düğümler için yalnızca eşlemeyi gösterir. Gruplar arasında toplanmış bağlantıları göstermek veya gizlemek için bu davranışı değiştirmek için tıklayın **Düzen** kodu seçin ve araç harita **Gelişmiş**, ardından **tüm çapraz grup bağlantılarını göster** veya **Tüm çapraz grup bağlantılarını Gizle**. Bkz: [Gizle veya Göster düğümlere ve bağlantılara](#HidingShowing) daha fazla ayrıntı için.  
+> Varsayılan olarak, çapraz grup bağlantılarını seçili düğümler için yalnızca eşlemeyi gösterir. Gruplar arasında toplanmış bağlantıları göstermek veya gizlemek için bu davranışı değiştirmek için tıklayın **Düzen** kodu seçin ve araç harita **Gelişmiş**, ardından **tüm çapraz grup bağlantılarını göster** veya **Tüm çapraz grup bağlantılarını Gizle**. Bkz: [Gizle veya Göster düğümlere ve bağlantılara](#HidingShowing) daha fazla ayrıntı için.  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
  Düğümlerin gizlenmesi, düzen algoritmasına katılmalarını engeller. Varsayılan olarak, çapraz grup bağlantıları gizlidir. Çapraz grup bağlantıları, düğümleri gruplar arasında bağlayan tek bağlantılardır. Gruplar daraltıldığında, haritada tüm çapraz grup bağlantılarını gruplar arasındaki tek bağlantılar içinde toplar. Bir grubu genişlettiğinizde veya grup içindeki düğümleri seçtiğinizde, çapraz grup bağlantıları görünür ve o gruptaki bağımlılıkları gösterir.  
   
 > [!CAUTION]
->  Visual Studio Enterprise Visual Studio Professional kullanıcılarıyla oluşturulmuş bir harita paylaşmadan önce tüm düğümlerin veya başkalarının görmesini istediğiniz çapraz grup bağlantılarının gizlenmediğinden emin olun. Aksi takdirde, bu kullanıcılar bu öğelerin gizliliğini kaldıramayacaktır.  
+> Visual Studio Enterprise Visual Studio Professional kullanıcılarıyla oluşturulmuş bir harita paylaşmadan önce tüm düğümlerin veya başkalarının görmesini istediğiniz çapraz grup bağlantılarının gizlenmediğinden emin olun. Aksi takdirde, bu kullanıcılar bu öğelerin gizliliğini kaldıramayacaktır.  
   
 ### <a name="to-hide-or-show-nodes"></a>Düğümleri gizlemek veya göstermek için  
   
@@ -153,7 +153,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
  Detaya gitme veya haritayı basitleştirmek için daha fazla veya daha az öğe bir haritada görüntüleyebilirsiniz. Öğeleri yeniden adlandırmak ve açıklama öğeleri ekleyin.  
   
 > [!CAUTION]
->  Visual Studio Enterprise Visual Professional kullanıcılarıyla kullanılarak oluşturulmuş bir harita paylaşmadan önce başkalarının görmesini istediğiniz tüm kod öğelerini harita üzerinde görünür olduğundan emin olun. Aksi halde bu kullanıcılar silinmiş kod öğeleri almak mümkün olmayacaktır.  
+> Visual Studio Enterprise Visual Professional kullanıcılarıyla kullanılarak oluşturulmuş bir harita paylaşmadan önce başkalarının görmesini istediğiniz tüm kod öğelerini harita üzerinde görünür olduğundan emin olun. Aksi halde bu kullanıcılar silinmiş kod öğeleri almak mümkün olmayacaktır.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Bir kod öğesi için bir düğüm Ekle  
   
@@ -267,7 +267,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 3. Liste kategori veya özellik içermiyorsa seçin **+** içinde **gösterge** kutusuna ve ardından **düğüm özelliği**, **düğüm kategorisi** , **Bağlantı özelliğinin**, veya **bağlantı kategorisi**. Özellik veya kategori seçin. Kategori veya özellik artık görünür **gösterge** kutusu.  
   
     > [!NOTE]
-    >  Oluşturma ve bir kategori veya özellik için bir kod öğesi atamak için haritanın .dgml dosyasını düzenleyebilirsiniz; bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Oluşturma ve bir kategori veya özellik için bir kod öğesi atamak için haritanın .dgml dosyasını düzenleyebilirsiniz; bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. İçinde **gösterge** kutusunda, kategori veya özellik eklediğiniz yanındaki simgeye tıklamanız veya değiştirmek istediğiniz.  
   
@@ -290,7 +290,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
     |Belirli bir rengi veya simgeyi|Kategori veya özellik değer listesini açın. Bir rengi veya simgeyi seçin.|  
   
     > [!NOTE]
-    >  Yeniden düzenleyebilir, silebilir veya geçici olarak stillerini devre dışı bırak **gösterge** kutusu. Bkz: [Gösterge kutusunu Düzenle](#ModifyLegend).  
+    > Yeniden düzenleyebilir, silebilir veya geçici olarak stillerini devre dışı bırak **gösterge** kutusu. Bkz: [Gösterge kutusunu Düzenle](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Gösterge kutusunu Düzenle  
  Yeniden düzenleyebilir, silebilir veya geçici olarak stillerini devre dışı bırak **gösterge** kutusunda:  

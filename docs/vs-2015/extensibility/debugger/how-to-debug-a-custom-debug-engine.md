@@ -11,23 +11,23 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436368"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama
+# <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: Özel Hata Ayıklama Altyapısında Hata Ayıklama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Yani DE örneğini denetiminde başlatılır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje türü denetleme. Ancak, söz konusu örneğine [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] DE hata ayıklaması yapılamıyor. Aşağıda, özel DE hata ayıklama için izin vermek için adımlar yer almaktadır.  
   
 > [!NOTE]
->  :     "Hata ayıklama bir özel hata ayıklama altyapısı" yordamda iliştirebilmek için önce başlatmak DE beklemelisiniz. Başlangıcına DE başlatıldığında görüntülenen sizin DE yakın bir ileti kutusu yerleştirin, bu noktada eklemek ve ardından devam etmek için ileti kutusunu temizleyin. Tümünü yakala bu şekilde DE olayları.  
+> :     "Hata ayıklama bir özel hata ayıklama altyapısı" yordamda iliştirebilmek için önce başlatmak DE beklemelisiniz. Başlangıcına DE başlatıldığında görüntülenen sizin DE yakın bir ileti kutusu yerleştirin, bu noktada eklemek ve ardından devam etmek için ileti kutusunu temizleyin. Tümünü yakala bu şekilde DE olayları.  
   
 > [!WARNING]
->  Aşağıdaki yordamlar denemeden önce yüklenmiş uzaktan hata ayıklama olması gerekir. Bkz: [uzaktan hata ayıklama](../../debugger/remote-debugging.md) Ayrıntılar için.  
+> Aşağıdaki yordamlar denemeden önce yüklenmiş uzaktan hata ayıklama olması gerekir. Bkz: [uzaktan hata ayıklama](../../debugger/remote-debugging.md) Ayrıntılar için.  
   
 ### <a name="debugging-a-custom-debug-engine"></a>Özel hata ayıklama altyapısında hata ayıklama  
   

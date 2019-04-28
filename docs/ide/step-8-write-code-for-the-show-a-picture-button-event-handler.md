@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d548a3a6ad0c381d6119c06ba7d2cb56e6a9440e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420421"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Bir resim düğme olayı işleyicisi Göster için kod yazma
 
@@ -79,7 +79,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
          DialogResult hakkında daha fazla bilgi için bkz: [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
-        >  Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.
+        > Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.
         >
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`
         >

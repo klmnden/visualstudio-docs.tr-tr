@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 50cac2607a27443ef5a24ce00f34425ca418c513
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798406"
 ---
 # <a name="usedcommand-element"></a>UsedCommand Öğesi
 VSPackage'ı başka bir .vsct dosyası içinde tanımlanan bir komutuna erişmek üzere etkinleştirir. Örneğin, standart, VSPackage'ı kullanıyorsa, **kopyalama** tanımlanan komutu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell ekleyebileceğiniz komut bir menü veya araç yeniden uygulamadan.
@@ -42,7 +42,7 @@ VSPackage'ı başka bir .vsct dosyası içinde tanımlanan bir komutuna erişmek
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|Hiçbiri||
+|None||
 
 ### <a name="parent-elements"></a>Üst Öğeler
 

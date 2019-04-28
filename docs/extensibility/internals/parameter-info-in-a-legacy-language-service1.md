@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423975"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetinde parametre bilgisi
 Parametre bilgisi IntelliSense araç ipucu, kullanıcılara bir dil yapısı içinde olduğu hakkında ipuçları sağlar.
@@ -27,7 +27,7 @@ Parametre bilgisi IntelliSense araç ipucu, kullanıcılara bir dil yapısı iç
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz. [düzenleyiciyi ve dil hizmetlerini genişletme](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Parametre bilgisi araç ipuçlarının nasıl çalışır?
  Düzenleyicide bir deyimi yazdığınızda, yazılan deyiminin tanımını içeren küçük bir araç ipucu penceresi VSPackage'ı görüntüler. Örneğin, bir Microsoft Foundation Classes (MFC) ifadeyi yazın (gibi `pMainFrame ->UpdateWindow`) ve parantez tanımını görüntüleme metot ipucu görünür parametreleri listeleme başlamak için bir tuşa basın `UpdateWindow` yöntemi.

@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442962"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API kullanarak sıralama diyagramlarını düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Sıralı diyagramlar iki tür vardır: bir UML modelleme projesinde el ile oluşturulan ve program kodundan oluşturulan olanlar. Kullanım `UmlMode` hangi sıralı diyagram bulunacak özelliğine sahiptir.  
   
 > [!NOTE]
->  Bu özellik yalnızca sıralı diyagramlar false Visual Studio 2013'ü kullanarak koddan oluşturulan ve önceki döndürür. Bu koddan oluşturulan sıralı diyagramları 2013'ten ve daha önce geçirilen içerir. Yeni bir sıralı diyagramlar oluşturma Visual Studio'nun bu sürümü desteklemiyor.  
+> Bu özellik yalnızca sıralı diyagramlar false Visual Studio 2013'ü kullanarak koddan oluşturulan ve önceki döndürür. Bu koddan oluşturulan sıralı diyagramları 2013'ten ve daha önce geçirilen içerir. Yeni bir sıralı diyagramlar oluşturma Visual Studio'nun bu sürümü desteklemiyor.  
   
  Örneğin, bir menü komutu yalnızca UML sıralı diyagramlar üzerinde görünür hale getirmek isterseniz sonra `QueryStatus()` yöntemi aşağıdaki deyim içerir:  
   

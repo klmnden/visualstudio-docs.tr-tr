@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442268"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>İzlenecek yol: Çekirdek düzenleyici oluşturma ve bir düzenleyici dosya türü kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Paket projesi şablonu için konumları  
  Visual Studio Paket proje şablonu, üç farklı konumlarda bulunabilir **yeni proje** iletişim:  
   
-1.  Visual Basic genişletilebilirliği altında. Visual Basic proje varsayılan dildir.  
+1. Visual Basic genişletilebilirliği altında. Visual Basic proje varsayılan dildir.  
   
-2.  C# genişletilebilirlik altında. Varsayılan proje C# dilidir.  
+2. C# genişletilebilirlik altında. Varsayılan proje C# dilidir.  
   
-3.  Diğer proje türleri genişletilebilirliği altında. C++ projesinin varsayılan dildir.  
+3. Diğer proje türleri genişletilebilirliği altında. C++ projesinin varsayılan dildir.  
   
 ### <a name="to-create-the-vspackage"></a>VSPackage'ı oluşturmak için  
   
--   Başlangıç [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturup bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: Bir menü komutu VSPackage'ı oluşturma](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Başlangıç [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturup bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] adlı VSPackage `MyPackage`açıklandığı gibi [izlenecek yol: Bir menü komutu VSPackage'ı oluşturma](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Düzenleyici üreteci eklemek için  
   
-1.  Sağ **MyPackage** proje, işaret **Ekle** ve ardından **sınıfı**.  
+1. Sağ **MyPackage** proje, işaret **Ekle** ve ardından **sınıfı**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda, emin **sınıfı** şablonu seçili türü `EditorFactory.cs` adı ve ardından **Ekle** sınıfı projenize eklemek için.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda, emin **sınıfı** şablonu seçili türü `EditorFactory.cs` adı ve ardından **Ekle** sınıfı projenize eklemek için.  
   
      Otomatik olarak EditorFactory.cs dosyanın açılması gerekir.  
   
-3.  Aşağıdaki derlemelere de kodunuzdan başvurur.  
+3. Aşağıdaki derlemelere de kodunuzdan başvurur.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,7 +69,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
     ```  
   
-4.  Bir GUID değeri ekleyin `EditorFactory` ekleyerek sınıfı `Guid` özniteliği sınıf bildiriminden hemen önce.  
+4. Bir GUID değeri ekleyin `EditorFactory` ekleyerek sınıfı `Guid` özniteliği sınıf bildiriminden hemen önce.  
   
      Yeni bir GUID guidgen.exe programı kullanarak oluşturabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut istemi veya tıklayarak komut **GUID Oluştur** üzerinde **Araçları** menüsü. Burada kullanılan GUID yalnızca bir örnektir; Projenizde kullanmayın.  
   
@@ -81,7 +81,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  Sınıf tanımında üst pakete ve bir hizmet sağlayıcısı içerecek şekilde iki özel değişkeni ekleyin.  
+5. Sınıf tanımında üst pakete ve bir hizmet sağlayıcısı içerecek şekilde iki özel değişkeni ekleyin.  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
     ```  
   
-6.  Türünden bir parametre alan bir genel sınıf oluşturucu Ekle <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Türünden bir parametre alan bir genel sınıf oluşturucu Ekle <xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
     }  
     ```  
   
-7.  Değiştirme `EditorFactory` sınıf türetmek için bildirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
+7. Değiştirme `EditorFactory` sınıf türetmek için bildirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,7 +124,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
     ```  
   
-8.  Sağ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, tıklayın **arabirim uygulama**ve ardından **uygulama arabirimi açıkça**.  
+8. Sağ <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, tıklayın **arabirim uygulama**ve ardından **uygulama arabirimi açıkça**.  
   
      Bu, uygulanması gereken dört yöntemleri ekler <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> arabirimi.  
   
@@ -320,20 +320,20 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
 ### <a name="to-register-the-editor-factory"></a>Düzenleyici üreteci kaydetmek için  
   
-1.  İçinde **Çözüm Gezgini**, olan dize tablosuna açın Resources.resx dosyasına çift tıklayarak giriş **Dize1** seçili.  
+1. İçinde **Çözüm Gezgini**, olan dize tablosuna açın Resources.resx dosyasına çift tıklayarak giriş **Dize1** seçili.  
   
-2.  Tanımlayıcı için adını değiştirmek `IDS_EDITORNAME` ve metni **MyPackage Düzenleyici.** Bu dize Düzenleyici adı olarak görünür.  
+2. Tanımlayıcı için adını değiştirmek `IDS_EDITORNAME` ve metni **MyPackage Düzenleyici.** Bu dize Düzenleyici adı olarak görünür.  
   
-3.  VSPackage.resx dosyasını açın ve yeni bir dize, adı kümesine **101** ve değeri `IDS_EDITORNAME`. Bu, az önce oluşturduğunuz dize erişmek için bir kaynak kimliği ile paket sağlar.  
+3. VSPackage.resx dosyasını açın ve yeni bir dize, adı kümesine **101** ve değeri `IDS_EDITORNAME`. Bu, az önce oluşturduğunuz dize erişmek için bir kaynak kimliği ile paket sağlar.  
   
     > [!NOTE]
-    >  Başka VSPackage.resx dosya içeriyorsa, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.  
+    > Başka VSPackage.resx dosya içeriyorsa, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.  
   
-4.  İçinde **Çözüm Gezgini**, MyPackagePackage.cs dosyasını açın.  
+4. İçinde **Çözüm Gezgini**, MyPackagePackage.cs dosyasını açın.  
   
      Ana paket dosyası budur.  
   
-5.  Aşağıdaki kullanıcı öznitelikleri hemen önüne ekleyin `Guid` özniteliği.  
+5. Aşağıdaki kullanıcı öznitelikleri hemen önüne ekleyin `Guid` özniteliği.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -349,7 +349,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Özniteliği böylece uzantısı yüklenir, Düzenleyicisi Fabrika çağrılan sahip bir dosya için istediğiniz zaman bu .myext dosya uzantısı, düzenleyici fabrikası ile ilişkilendirir.  
   
-6.  Özel bir değişken ekleyin `MyPackage` , sınıf oluşturucusu hemen önce ve türü verin `EditorFactory`.  
+6. Özel bir değişken ekleyin `MyPackage` , sınıf oluşturucusu hemen önce ve türü verin `EditorFactory`.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
     private EditorFactory editorFactory;  
     ```  
   
-7.  Bulma `Initialize` yöntemi (açmanız gerekebilir `Package Members` gizli bölge) ve çağrısından sonra aşağıdaki kodu ekleyin `base.Initialize()`.  
+7. Bulma `Initialize` yöntemi (açmanız gerekebilir `Package Members` gizli bölge) ve çağrısından sonra aşağıdaki kodu ekleyin `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -374,7 +374,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
   
     ```  
   
-8.  Program derleyin ve hiçbir hata olmadığından emin olun.  
+8. Program derleyin ve hiçbir hata olmadığından emin olun.  
   
      Bu adım için Deneysel kayıt defteri kovanında Düzenleyici üreteci kaydeder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Resource.h dosyasını geçersiz kılmak isteyip istemediğiniz sorulur tıklatmak **Tamam**.  
   

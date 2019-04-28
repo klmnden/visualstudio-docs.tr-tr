@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445860"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Birim Testlerinde Microsoft.VisualStudio.TestTools.UnitTesting Üyelerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Birim test, birim testi çerçevesi destekler [!INCLUDE[vsprvs](../includes/vspr
 > [!NOTE]
 > Adları dize özniteliği sonlandırma, öznitelik öğeleri ile ya da dize özniteliği olmadan kullanılabilir. Örneğin, aşağıdaki iki kod örnekleri aynı şekilde işlev:
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Veri tabanlı test için kullanılan öğeleri
  Veri temelli birim testleri ayarlamak için aşağıdaki öğeleri kullanın. Daha fazla bilgi için [nasıl yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md) ve [izlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanarak](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

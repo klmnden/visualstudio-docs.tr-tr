@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442546"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60095847"
 Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekilde Visual Studio performans araçları de yapılan önemli değişiklikler bu platformlarda veri toplama gerekli. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bu konuda, Windows 8 ve Windows Server 2012 platformlarda değişiklikleri için performans araçları açıklanmaktadır.  
   
 > [!NOTE]
->  Windows (Windows 7, Windows Server 2008 R2) desteklenen diğer sürümleri için performans araçları değişmedi.  
+> Windows (Windows 7, Windows Server 2008 R2) desteklenen diğer sürümleri için performans araçları değişmedi.  
   
 ## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Visual Studio IDE Windows Store uygulamalarından şirket veri toplama](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -105,7 +105,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
 - Kopyalama ve bilgisayarınızda Visual Studio bağımsız profil oluşturucuyu araçları yükleme programını çalıştırın. Yükleme programları bulunan *VSInstallDir %* **tools\performance Tools\Setups** klasör. Uzak bilgisayarın işletim sistemi (x86/x64) için Kurulum programı seçin.  
   
 > [!NOTE]
->  İpucu profil oluşturma verilerini toplamak için uzak bilgisayardaki Visual Studio makinenizden bağımsız profil oluşturucuyu yüklemeniz gerekir.  
+> İpucu profil oluşturma verilerini toplamak için uzak bilgisayardaki Visual Studio makinenizden bağımsız profil oluşturucuyu yüklemeniz gerekir.  
   
  Bu profil özellikleri ve seçenekleri komut satırından Windows 8 ve Windows Server 2012 uygulamalarında profil oluşturma sırasında desteklenmez:  
   

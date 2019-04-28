@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442292"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60071440"
     2. Dış dosya değişikliklerine yanıt verme uygulamak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> Düzenleyicisi'nin belge verileri nesne üzerinde.  
   
         > [!NOTE]
-        >  Çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> bir işaretçi alma için `IVsFileChangeEx`.  
+        > Çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> bir işaretçi alma için `IVsFileChangeEx`.  
   
 7. Belge düzenleme olaylarını kaynak kodu denetimi ile koordine edin. Bunu yapmak için:  
   
@@ -138,7 +138,7 @@ ms.locfileid: "60071440"
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent` Arabirimi OLE 2 menü birleştirme önlemek için kullanılır.  
+    > `IOleInPlaceComponent` Arabirimi OLE 2 menü birleştirme önlemek için kullanılır.  
   
      `IOleCommandTarget` Uygulama işleme komutları gibi **Kes**, **kopyalama**, ve **Yapıştır**. Uygularken `IOleCommandTarget`, düzenleyiciniz kendi komutu menüsü yapısı tanımlamak için kendi .vsct dosyası gerekli olup olmadığını veya tarafından tanımlanan standart komutları uygulama, karar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Genellikle, Düzenleyicileri kullanın ve IDE'nin menüleri genişletin ve kendi araç çubukları tanımlayın. Ancak, genellikle IDE'nin standart komut kümesi kullanmanın yanı sıra kendi özel komutları tanımlamak bir düzenleyici için gereklidir. Bunu yapmak için düzenleyici kullanır ve ardından yeni komutlar, bağlam menüleri, üst düzey menüler ve araç çubukları .vsct dosyası tanımlamak için standart komutları bildirmeniz gerekir. Düzenleyicisi bir yerinde etkinleştirme oluşturursanız, daha sonra uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> ve araç çubukları ve menüler OLE 2 menü birleştirme kullanmak yerine .vsct dosyası düzenleyicide tanımlarsınız.  
   
@@ -156,4 +156,4 @@ ms.locfileid: "60071440"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Nasıl yapılır: Düzenleyiciler için bağlam sağlayın](../extensibility/how-to-provide-context-for-editors.md)
+ [Nasıl yapılır: Düzenleyiciler İçin Bağlam Sağlama](../extensibility/how-to-provide-context-for-editors.md)

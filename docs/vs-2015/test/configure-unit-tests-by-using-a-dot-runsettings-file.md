@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442790"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings dosyasını kullanarak birim testlerini yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
  Özel bir yapılandırma gerçekleştirmek istiyorsanız, bir *.runsettings dosyası gerekmez. Özelleştirme için sıkça kullanılır [kod kapsamı](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
->  **.runsettings ve .testsettings**  
+> **.runsettings ve .testsettings**  
 >   
->  Testleri yapılandırma dosyasının iki türü vardır. *.runsettings birim testleri için kullanılır. Ve \*için .testsettings [laboratuvar ortamında test](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), web performansı ve yük testleri ve IntelliTrace ve olay günlüğünü bağdaştırıcıları gibi tanılama veri bağdaştırıcılarının bazı türlerini özelleştirme.  
+> Testleri yapılandırma dosyasının iki türü vardır. *.runsettings birim testleri için kullanılır. Ve \*için .testsettings [laboratuvar ortamında test](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), web performansı ve yük testleri ve IntelliTrace ve olay günlüğünü bağdaştırıcıları gibi tanılama veri bağdaştırıcılarının bazı türlerini özelleştirme.  
 >   
->  Visual Studio 2010'da, en fazla birim testleri de *.testsettings dosyalarını kullanarak özelleştirilmiş önceki sürümleri. Yine de bunu yapabilirsiniz, ancak testleri eşdeğer yapılandırmalarında kullanıyorsanız daha yavaş çalışır bir \*.runsettings dosyası.  
+> Visual Studio 2010'da, en fazla birim testleri de *.testsettings dosyalarını kullanarak özelleştirilmiş önceki sürümleri. Yine de bunu yapabilirsiniz, ancak testleri eşdeğer yapılandırmalarında kullanıyorsanız daha yavaş çalışır bir \*.runsettings dosyası.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Bir .runsettings dosyası ile testleri özelleştirme  
   

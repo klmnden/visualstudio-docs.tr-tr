@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436191"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
  Visual Studio için Blend yeniyseniz, çalışma alanının benzersiz özellikleri ile aşina olmak için bir dakikanızı ayırın. Bu konu üzerinde hızlı bir tura alır.
 
 > [!NOTE]
->  Çalışma yüzeyi, Belge Anahattı penceresi ve cihaz penceresi gibi paylaşılan tasarım özelliklerini anlatan bir tura için bkz: [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Çalışma yüzeyi, Belge Anahattı penceresi ve cihaz penceresi gibi paylaşılan tasarım özelliklerini anlatan bir tura için bkz: [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **Bu konudaki**:
 

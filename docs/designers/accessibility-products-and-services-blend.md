@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5b43ddfea6a7392c2e2c6c6bc1467740d25043
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72f1df430da25b480d812e89c4ea0c765995d530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405974"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Erişilebilirlik ürünleri ve Hizmetleri (Blend)
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki bölümler, Microsoft Windows'u engelli kişiler için daha kolay erişilebilir duruma getiren özellikler, ürünler ve hizmetler konusunda bilgi sağlar.
@@ -27,7 +27,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 - Daha fazla bilgi için
 
 > [!NOTE]
->  Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte gelen yan kuruluş bilgi kartını kullanabilir veya ziyaret [Microsoft Erişilebilirlik sitesi](http://go.microsoft.com/fwlink/?LinkID=75069) Microsoft listesi için Destek Hizmetleri telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgeniz olup olmadığını öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
+> Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte gelen yan kuruluş bilgi kartını kullanabilir veya ziyaret [Microsoft Erişilebilirlik sitesi](http://go.microsoft.com/fwlink/?LinkID=75069) Microsoft listesi için Destek Hizmetleri telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgeniz olup olmadığını öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
 
 ## <a name="accessibility-features-of-windows"></a>Windows'un erişilebilirlik Özellikleri
  Windows işletim sistemi, klavyede yazma veya fare kullanma güçlüğü olan, görme engelli veya görme kapasitesi düşük, işitme engelli ya da işitme zorluğu olan bireyler için faydalı çok sayıda yerleşik erişilebilirlik özelliği içerir. Özellikler Kurulum sırasında yüklenir. Bu özellikler hakkında daha fazla bilgi için bkz. Windows Yardım ve [Microsoft Erişilebilirlik sitesi](http://go.microsoft.com/fwlink/?LinkID=75069).

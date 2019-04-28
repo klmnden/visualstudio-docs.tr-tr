@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438428"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Nasıl yapılır: Temel Phong gölgelendiricisi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bu belge, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendir
    Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve çaydanlık modeline uygulanan gölgelendiricinin önizlemesini gösterir.  
   
 > [!NOTE]
->  Bu çizimde gösterilen gölgelendirici etkisini daha iyi göstermek için turuncu renk kullanarak belirtilmiş **MaterialDiffuse** kullanarakgölgelendiricivemetalikgörünümlübirsonparametresibelirtilmedi**MaterialSpecular** ve **MaterialSpecularPower** parametreleri. Gölgelendiricileri Önizleme bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz. [gölgelendirici Tasarımcısı](../designers/shader-designer.md).  
+> Bu çizimde gösterilen gölgelendirici etkisini daha iyi göstermek için turuncu renk kullanarak belirtilmiş **MaterialDiffuse** kullanarakgölgelendiricivemetalikgörünümlübirsonparametresibelirtilmedi**MaterialSpecular** ve **MaterialSpecularPower** parametreleri. Gölgelendiricileri Önizleme bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz. [gölgelendirici Tasarımcısı](../designers/shader-designer.md).  
   
  ![Gölgelendirici grafiği ve etkisini önizlemesini](../designers/media/digit-lighting-graph.png "basamak aydınlatma grafiği")  
   
@@ -62,9 +62,9 @@ Bu belge, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendir
  Aşağıdaki çizim, 3B modeline uygulanan bu belgede açıklanan gölgelendirici gösterir. **MaterialSpecular** özelliği ayarlanmış (1.00, 0,50, 0,20, 0,00 için) ve onun **MaterialSpecularPower** 16'özelliği ayarlanmış.  
   
 > [!NOTE]
->  **MaterialSpecular** özelliği yüzey malzeme görünen bitişi belirler. Cam veya plastik gibi bir parlak yüzeyinin beyaz parlak gölgeye olan Yansımalı renk sahip eğilimindedir. Metalik surface, yayınık renk yakın bir yansımalı renk sahip eğilimindedir. Saten bitiş surface, gri koyu bir gölge Yansımalı renk sahip eğilimindedir.  
+> **MaterialSpecular** özelliği yüzey malzeme görünen bitişi belirler. Cam veya plastik gibi bir parlak yüzeyinin beyaz parlak gölgeye olan Yansımalı renk sahip eğilimindedir. Metalik surface, yayınık renk yakın bir yansımalı renk sahip eğilimindedir. Saten bitiş surface, gri koyu bir gölge Yansımalı renk sahip eğilimindedir.  
 >   
->  **MaterialSpecularPower** özelliği belirler nasıl yoğun olan Yansımalı vurgular. Yüksek Yansımalı powers düzeyi benzetimini yapmak, daha fazla yerelleştirilmiş vurgular. Çok düşük Yansımalı powers oversaturate ve tüm surface rengini gizlediklerinden güçlü, davrandığınızdan vurgular benzetimini yapar.  
+> **MaterialSpecularPower** özelliği belirler nasıl yoğun olan Yansımalı vurgular. Yüksek Yansımalı powers düzeyi benzetimini yapmak, daha fazla yerelleştirilmiş vurgular. Çok düşük Yansımalı powers oversaturate ve tüm surface rengini gizlediklerinden güçlü, davrandığınızdan vurgular benzetimini yapar.  
   
  ![Bir modele uygulandı Phong aydınlatma](../designers/media/digit-lighting-model.png "basamak aydınlatma modeli")  
   

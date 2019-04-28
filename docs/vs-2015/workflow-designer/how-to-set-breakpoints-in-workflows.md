@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444143"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama
 Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodunda yaptığınız gibi grafik iş akışlarında kesme noktalarını ayarlayabilir. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.  
@@ -22,13 +22,13 @@ Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodu
  Bir kesme noktası üç durumu vardır: *Bekleyen*, *bağlı*, ve *hata*. Bir kesme noktası ayarlarsanız, bekleyen ve düz kırmızı bir simge ile temsil edilir. Çalışma zamanı iş akışı türü yüklendiğinde bağlı olur. Geçerli olmayan bir etkinliği adı gibi kesme noktası için yanlış biçim belirtirseniz bir hata penceresinde görünür. Kesme noktası hala kesme noktası penceresine eklenir, ancak küçük "x" ile işaretlenir.  
   
 > [!NOTE]
->  Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
+> Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
 > 
 > [!WARNING]
->  Seçeneğini belirlediğinizden emin olun **yalnızca benim kodumu etkinleştir (sadece yönetilen)** gelen **Araçları**, **seçenekleri**, **hata ayıklama** , önce menüsü hata ayıklama. Başka bir dizi içinde iç içe iki diziyi varsa ve ilk iç dizisi üzerinde bir kesme noktası ayarlayın, tuşuna basarak **F11** ikinci iç dizisi hata ayıklaması değil <strong>yalnızca benim kodumu etkinleştir (sadece yönetilen)</strong>seçeneği belirlenmez.  
+> Seçeneğini belirlediğinizden emin olun **yalnızca benim kodumu etkinleştir (sadece yönetilen)** gelen **Araçları**, **seçenekleri**, **hata ayıklama** , önce menüsü hata ayıklama. Başka bir dizi içinde iç içe iki diziyi varsa ve ilk iç dizisi üzerinde bir kesme noktası ayarlayın, tuşuna basarak **F11** ikinci iç dizisi hata ayıklaması değil <strong>yalnızca benim kodumu etkinleştir (sadece yönetilen)</strong>seçeneği belirlenmez.  
 > 
 > [!WARNING]
->  XAML dosya özelliği tam yolu doğru değilse, bir iş akışında kesme noktaları ulaşırsınız değil. Proje/çözüm taşıdıktan sonra başka bir klasöre veya başka bir makineye özelliği XAML dosyasının tam yolu doğru değil. Kaydet ve tam yolunu özelliği güncelleştirmek için CTRL + S seçin.  
+> XAML dosya özelliği tam yolu doğru değilse, bir iş akışında kesme noktaları ulaşırsınız değil. Proje/çözüm taşıdıktan sonra başka bir klasöre veya başka bir makineye özelliği XAML dosyasının tam yolu doğru değil. Kaydet ve tam yolunu özelliği güncelleştirmek için CTRL + S seçin.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Tasarım görünümünde bir etkinlikte bir kesme noktası ayarlamak için  
   

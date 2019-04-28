@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445189"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için bir şablondan bir Visual Studio çözümü oluşturun. Anahtar çözüm DslDefinition.dsl içinde depolanan DSL tanımı diyagramı parçasıdır. DSL tanımını DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri eklemek, DSL daha ayrıntılı bir şekilde özelleştirmek için program kodu ekleyebilirsiniz.
@@ -106,7 +106,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
  Visual Studio'nun deneysel örneği kapatın.
 
 > [!NOTE]
->  DSL değiştirildiğinde, artık test dosyası şekilleri örneği görmek mümkün olacaktır. Ancak, yeni öğeleri oluşturmak mümkün olacaktır.
+> DSL değiştirildiğinde, artık test dosyası şekilleri örneği görmek mümkün olacaktır. Ancak, yeni öğeleri oluşturmak mümkün olacaktır.
 
 ### <a name="modifying-the-template-dsl"></a>DSL şablonu değiştirme
  Yeniden adlandırmak ve bazı veya tüm etki alanı sınıflarını ve şekil sınıfları DSL tanımını şablonda tutun. Yeni, sınıf adları, boşluk veya noktalama işareti olmadan geçerli CLR adları olmalıdır.
@@ -135,7 +135,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
   Aşağıdaki bölümlerde, DSL özellikleri en kullanışlı türlerini oluşturmak nasıl açıklanmaktadır. Bir DSL ile oluşturulabilir birçok desen vardır ancak bunlar en sık kullanılır.
 
 > [!NOTE]
->  Özelliği ekledikten sonra tıklamayı değil **tüm Şablonları Dönüştür** DSL'nizi çalıştıran ve Çözüm Gezgini araç çubuğunda, önce oluşturun.
+> Özelliği ekledikten sonra tıklamayı değil **tüm Şablonları Dönüştür** DSL'nizi çalıştıran ve Çözüm Gezgini araç çubuğunda, önce oluşturun.
 
  Aşağıdaki şekilde, bu konudaki örnek olarak kullanılan DSL sınıflar ve ilişkiler parçası gösterilmiştir.
 
@@ -146,7 +146,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
  ![Oluşturulan bir DSL örnek modeli](../modeling/media/music_instance.png)
 
 > [!NOTE]
->  "Modeli" kullanıcıların oluşturun ve genellikle bir diyagramı olarak görüntülenen DSL'nizi örneğine başvurur. DSL tanım diyagramı hem DSL'nizi kullanıldığında görüntülenen modeli diyagramları, bu konuda ele alınmıştır.
+> "Modeli" kullanıcıların oluşturun ve genellikle bir diyagramı olarak görüntülenen DSL'nizi örneğine başvurur. DSL tanım diyagramı hem DSL'nizi kullanıldığında görüntülenen modeli diyagramları, bu konuda ele alınmıştır.
 
 ## <a name="classes"></a> Etki alanı sınıfları tanımlama
  Etki alanı sınıfları DSL'nizi kavramlarını temsil eder. Örnekleri *model öğeleri*. Örneğin bir **MusicLibrary** DSL adlı etki alanı sınıfları olabilir **albüm** ve **şarkı**.
@@ -183,7 +183,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
  Daha fazla bilgi için [etki alanı ilişkilerinin özellikleri](../modeling/properties-of-domain-relationships.md) ve [etki alanı rollerinin özellikleri](../modeling/properties-of-domain-roles.md).
 
 > [!NOTE]
->  Gömme devralma ile aynı değil. Gömme ilişkisi çocuklarını özellikleri devralması değil.
+> Gömme devralma ile aynı değil. Gömme ilişkisi çocuklarını özellikleri devralması değil.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Her etki alanı sınıfı için etki alanı özellikleri ekleyin
  Etki alanı özellikleri değerlerini depolar. Örnekler şunlardır: Ad, Unvan, yayın tarihi.
@@ -294,7 +294,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
    2. Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.
 
        > [!NOTE]
-       >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.
+       > Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.
 
    3. Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.
 
@@ -462,7 +462,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
          Altında **görüntüleme özelliği**, listede görüntülenmesi gereken özelliği seçin. Örnekte, başlık budur.
 
 > [!NOTE]
->  Yol alanları dekoratörünün Dekoratör eşlemesindeki ve bölme harita alanları kullanarak, daha karmaşık ilişkileri bölme şekli ile alan sınıfları arasındaki yapabilirsiniz.
+> Yol alanları dekoratörünün Dekoratör eşlemesindeki ve bölme harita alanları kullanarak, daha karmaşık ilişkileri bölme şekli ile alan sınıfları arasındaki yapabilirsiniz.
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Şekli oluşturmak için bir araç tanımlamak için
 
@@ -473,7 +473,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
 3. Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.
 
     > [!NOTE]
-    >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.
+    > Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.
 
 4. Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.
 

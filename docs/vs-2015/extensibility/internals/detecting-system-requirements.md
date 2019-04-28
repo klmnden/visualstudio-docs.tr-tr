@@ -11,12 +11,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445249"
 ---
 # <a name="detecting-system-requirements"></a>Sistem Gereksinimlerini Algılama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Wind
    "Yüksek" sürümü yüklendiğinde, kayıt defteri anahtarlarını bu sürümünde de "Düşük" sürümleri gibi eklenir. Diğer bir deyişle, Enterprise edition yüklediyseniz, yükleme anahtar 1 Professional ve Community sürümlerinde yanı sıra, kuruluş için ayarlanır. Bu nedenle, gereksinim duyduğunuz yalnızca "Yüksek" sürümü için denetlemeniz gerekir.  
   
 > [!NOTE]
->  Kayıt Defteri Düzenleyicisi'ni 64-bit sürümünde 32 bit anahtarlar HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node altında görüntülenen\\. Visual Studio anahtarları HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing altında olan\\.  
+> Kayıt Defteri Düzenleyicisi'ni 64-bit sürümünde 32 bit anahtarlar HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node altında görüntülenen\\. Visual Studio anahtarları HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing altında olan\\.  
   
 |Ürün|Anahtar|  
 |-------------|---------|  

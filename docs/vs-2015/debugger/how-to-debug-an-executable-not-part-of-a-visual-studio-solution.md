@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434486"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Nasıl yapılır: Visual Studio çözümünün parçası olmayan yürütülebilir öğede hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bazen, hata ayıklama olmayan yürütülebilir bir dosya isteyebilirsiniz parça
 5. Yürütülebilir bir yürütme komutu seçerek Başlat **Başlat**, gelen **hata ayıklama** menüsü.  
   
     > [!NOTE]
-    >  Programlama dillerinin tümü EXE projelerini desteklemez. Yükleme [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] bu özelliği kullanmak istiyorsanız.  
+    > Programlama dillerinin tümü EXE projelerini desteklemez. Yükleme [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] bu özelliği kullanmak istiyorsanız.  
   
      Kaynak kodu olmayan yürütülebilir bir dosyada hata ayıklama, çalışan bir yürütülebilir ekleme ya da yürütülebilir dosyasına ekleyin kullanılabilir hata ayıklama özellikleri sınırlıdır bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm. Yürütülebilir dosya uyumlu biçimde hata ayıklama bilgileri olmadan oluşturulduysa, kullanılabilir özellikler daha da sınırlı. Kaynak kodu varsa, kaynak koda içeri aktarmak için en iyi yaklaşım olan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve yürütülebilir dosya hata ayıklama yapısını oluşturmak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

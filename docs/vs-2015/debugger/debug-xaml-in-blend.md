@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434092"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend'de XAML hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Kullanabileceğiniz araçları [!INCLUDE[blend_first](../includes/blend-first-md
  XAML veya arka plan kod dosyalarını dilin biçimlendirme kurallarına uygulamazsanız sözdizimi hataları ortaya çıkar. Hatanın açıklaması, nasıl düzeltileceğini anlamanıza yardımcı olabilir. Liste dosyasının adını ve hatanın oluştuğu satırın numarasını da belirtir. XAML hataları listelenen **biçimlendirme** sekmesinde **sonuçları** paneli.  
   
 > [!TIP]
->  XAML, XML-tabanlı işaretleme dilidir ve XML sözdizimi kurallarına uyar.  
+> XAML, XML-tabanlı işaretleme dilidir ve XML sözdizimi kurallarına uyar.  
   
  XAML söz dizimi hataları bazı yaygın nedenleri:  
   

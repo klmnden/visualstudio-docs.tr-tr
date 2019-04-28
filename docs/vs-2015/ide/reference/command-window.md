@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441450"
 ---
 # <a name="command-window"></a>Komut Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59650440"
 |Pencere aşağı kaydırın.|Komut penceresi içeriği|Aşağı Ok veya CTRL + AŞAĞI OK|  
   
 > [!TIP]
->  İçin kaydırma, bir kısmını veya tamamını vurgulama ve ardından ENTER tuşuna basarak, giriş satırına önceki komutun bir kısmını veya tamamını kopyalayabilirsiniz.  
+> İçin kaydırma, bir kısmını veya tamamını vurgulama ve ardından ENTER tuşuna basarak, giriş satırına önceki komutun bir kısmını veya tamamını kopyalayabilirsiniz.  
   
 ## <a name="mark-mode"></a>İşaret modu  
  İçinde herhangi bir önceki satırdaki tıkladığınızda **komut** penceresinde tıklattığınızda, otomatik olarak işaretleme moduna. Bu, seçin, düzenleme ve herhangi bir metin düzenleyicisinde yaptığınız ve bunları geçerli satıra yapıştırmanıza gibi önceki komutların metnini kopyalamak sağlar.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` ve `oldpar` parametreleri  
   
   > [!NOTE]
-  >  Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.  
+  > Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.  
   
   Anahtarlar ve parametreleri konumunu serbestçe dışında komut satırında deyimleri [Kabuk](../../ide/reference/shell-command.md) komutu, belirli bir sırayla parametreler ve anahtarlar gerektirir.  
   

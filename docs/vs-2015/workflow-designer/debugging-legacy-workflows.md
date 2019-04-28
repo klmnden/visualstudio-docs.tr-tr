@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439186"
 ---
 # <a name="debugging-legacy-workflows"></a>Eski İş Akışlarında Hata Ayıklama
 Eski kullanıyorsanız [!INCLUDE[wfd1](../includes/wfd1-md.md)] içinde [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] oluşturmak için [!INCLUDE[wf](../includes/wf-md.md)] target.NET Framework 3.0 veya 3.5, başka bir programı gibi iş akışlarınızı kesme noktaları ayarlama işlemlere ekleme ve iş parçacığı İnceleme ayıklanabilmesi, uygulamaları ve çağrı yığını. Uzaktan hata ayıklama seçeneğiniz de vardır.  
   
 > [!NOTE]
->  Visual Studio'nun birden çok sürümünü yüklediyseniz ve makinenizde kaldırılması WF3 hata ayıklama iki aşağıdaki olasılıkları biriyle başarısız olabilir:  
+> Visual Studio'nun birden çok sürümünü yüklediyseniz ve makinenizde kaldırılması WF3 hata ayıklama iki aşağıdaki olasılıkları biriyle başarısız olabilir:  
 > 
 > - Kesme noktalarınız ulaşılmıyor.  
 >   - Aşağıdaki ileti görüntülenir:  

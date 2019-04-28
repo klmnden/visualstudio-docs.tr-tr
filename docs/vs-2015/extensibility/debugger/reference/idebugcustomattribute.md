@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5db7f060e630c0b4175ecf4708f14fc03869e431
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568944"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Bir blobu bayt olarak öznitelik bilgileri alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Özel bir öznitelik için belirli bir sınıf veya yöntemi ile ilişkili özel meta verileri sağlayan #c bir yapıdır.  
+ Bir yapı için özel bir özniteliktir C# belirli bir sınıf veya yöntemi ile ilişkili özel meta verileri sağlar.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: sh.h  

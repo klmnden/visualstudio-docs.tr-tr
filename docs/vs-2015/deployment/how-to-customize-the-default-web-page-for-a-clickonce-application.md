@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec63fe5ae4b99252321b86b44066c46842a0851
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433902"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Varsayılan Web Sayfasını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60107066"
 ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.  
   
 > [!NOTE]
->  Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.  
+> Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.  
   
  Publish.htm Web sayfası için varsayılan adıdır; adı değiştirebilirsiniz **Proje Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
  Publish.htm Web sayfası, yalnızca daha yeni bir sürümü algılanırsa yayımlanır.  
   
 > [!NOTE]
->  Yaptığınız değişiklikler, **Yayımla** Publish.htm sayfası, bir özel durum ayarlarını etkilemez: başlangıçta yayımladıktan sonra önkoşulları ekleyip, Önkoşullar listesinde artık doğru olacaktır. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.  
+> Yaptığınız değişiklikler, **Yayımla** Publish.htm sayfası, bir özel durum ayarlarını etkilemez: başlangıçta yayımladıktan sonra önkoşulları ekleyip, Önkoşullar listesinde artık doğru olacaktır. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.  
   
 ### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme  
   

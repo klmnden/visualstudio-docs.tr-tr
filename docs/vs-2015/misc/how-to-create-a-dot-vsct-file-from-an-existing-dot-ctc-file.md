@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443014"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Ctc dosyası
 Varolan komut tablosu .ctc kaynak dosyasından bir XML tabanlı .vsct dosyası oluşturabilirsiniz. Bunu yaptığınızda yeni avantajlarından yararlanabilirsiniz XML tabanlı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut tablosu (VSCT) derleyici biçimi.  
@@ -42,7 +42,7 @@ Varolan komut tablosu .ctc kaynak dosyasından bir XML tabanlı .vsct dosyası o
      Bu yeni .vsct XML komut tablosu kaynak dosyası oluşturur. Diğer .vsct dosyası gibi dosya Vsct.exe, VSCT derleyici kullanarak derleyebilirsiniz.  
   
     > [!NOTE]
-    >  XML açıklamaları'yeniden biçimlendirme .vsct dosyası okunabilirliğini artırabilir.  
+    > XML açıklamaları'yeniden biçimlendirme .vsct dosyası okunabilirliğini artırabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Oluşturma bir. Vsct dosyası](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

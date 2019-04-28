@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428918"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VS Kabuğuna VSPackage Dosya Konumunu Belirtme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage'ı yüklemek için DLL derlemeyi bulabilir olması gerekir. Bunun çeşitli yollarla aşağıdaki tabloda açıklandığı gibi bulabilirsiniz.
@@ -29,4 +29,4 @@ ms.locfileid: "59664235"
 | DLL içine yerleştirin **Publicassembly'ler** dizin. | Son olarak, derlemeyi ayrıca içine yerleştirilebilir **Publicassembly'ler** alt. Derlemeleri bulunan **Publicassembly'ler** otomatik olarak algılanır ve ayrıca görünür **Add References** iletişim kutusunda [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> VSPackage derlemeler yalnızca yerleştirilmelidir **Publicassembly'ler** bunlar içeriyorsa, dizin yönetilen bileşenlerin diğer VSPackage geliştiriciler tarafından kullanılabilmeleri için tasarlanmıştır. Çoğu derleme, bu ölçütü karşılamıyor. |
 
 > [!NOTE]
->  Tanımlayıcı adlı, imzalı derlemeler tüm bağımlı bütünleştirilmiş kodlarınızı için kullanın. Bu derlemeler de dizininizin veya genel derleme önbelleği (GAC) yüklenmesi gerekir. Bu, zayıf adı bağlaması olarak bilinen aynı temel dosya adı olan derlemeler çakışıyor karşı korur.
+> Tanımlayıcı adlı, imzalı derlemeler tüm bağımlı bütünleştirilmiş kodlarınızı için kullanın. Bu derlemeler de dizininizin veya genel derleme önbelleği (GAC) yüklenmesi gerekir. Bu, zayıf adı bağlaması olarak bilinen aynı temel dosya adı olan derlemeler çakışıyor karşı korur.

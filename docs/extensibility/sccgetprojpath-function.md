@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434603"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath işlevi
 Bu işlev, yalnızca kaynak denetimi eklentisi anlamlı bir dize olan bir proje yolu kullanıcıya sorar. Kullanıcı olduğunda çağrılır:
 
--   Yeni proje oluşturma
+- Yeni proje oluşturma
 
--   Mevcut bir projeyi sürüm denetimine ekleme
+- Mevcut bir projeyi sürüm denetimine ekleme
 
--   Var olan sürüm denetimi projesinde bulunmaya çalışılıyor
+- Var olan sürüm denetimi projesinde bulunmaya çalışılıyor
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  İçin `lpUser`, IDE bir kullanıcı adı olarak oldfashionedgoat ya da yalnızca boş bir dizeye bir işaretçi iletebilir. Bir kullanıcı adı varsa, kaynak denetimi eklentisi, varsayılan olarak kullanmanız gerekir. Ancak, adsız aktarılırsa veya verilen ada sahip bir oturum açma başarısız olursa, eklentinin bir oturum açma adı yeniden geçişi için kullanıcı isteyecektir `lpUser` aldığında geçerli bir oturum açma. Bu dize eklenti değişebilir olduğundan, IDE her zaman bir arabellek boyutunu tahsis (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  IDE yaptığı ilk eylemi ya da bir çağrı olabilir `SccOpenProject` işlevi veya `SccGetProjPath` işlevi. Bu nedenle, her ikisi de aynı sahip `lpUser` parametresini ya da zaman kullanıcının oturumunu açmak için eklenti kaynak denetimi sağlar. İşlev dönüş bir hata gösteriyor olsa bile, eklentinin bir geçerli oturum açma adı Bu dizeyle doldurmanız gerekir.
+> IDE yaptığı ilk eylemi ya da bir çağrı olabilir `SccOpenProject` işlevi veya `SccGetProjPath` işlevi. Bu nedenle, her ikisi de aynı sahip `lpUser` parametresini ya da zaman kullanıcının oturumunu açmak için eklenti kaynak denetimi sağlar. İşlev dönüş bir hata gösteriyor olsa bile, eklentinin bir geçerli oturum açma adı Bu dizeyle doldurmanız gerekir.
 
  `lpLocalPath` Burada kullanıcının proje tutar dizindir. Boş bir dize olabilir. (Durumunda, kaynak denetim sisteminden proje yüklemeyi deneyen bir kullanıcı gibi) şu anda tanımlanmış hiçbir dizin varsa ve `bAllowChangePath` olduğu `TRUE`, kaynak denetimi eklentisi giriş kullanıcıdan veya yerleştirmek için başka bir yöntem kullanın, kendi dizeye `lpLocalPath`. Varsa `bAllowChangePath` olduğu `FALSE`, kullanıcı belirtilen dizinde zaten çalıştığından eklentinin dize değiştirmemesi gerekir.
 

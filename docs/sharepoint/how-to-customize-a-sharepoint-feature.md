@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429223"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Nasıl yapılır: Bir SharePoint özelliğini özelleştirme
   Oluşturun ve Visual Studio özellik Tasarımcısı kullanarak SharePoint özelliklerini özelleştirin. Örneğin, özellik kapsamı ayarlayın ve diğer özellikleri bağımlılıkları olarak ekleyin. Çözüm Gezgini veya SharePoint paket Gezgini içinde yeni bir özellik eklediğinizde, varsayılan olarak, özellik Tasarımcısı açılır.
@@ -49,7 +49,7 @@ ms.locfileid: "60067267"
 2. Özellikleri'ni genişletin, FeatureName genişletin, FeatureName.feature genişletin ve ardından açın  *\<FeatureName >. Template.xml* dosya.
 
     > [!NOTE]
-    >  Özellik şablon bildirimi XML dosyasını açtığınızda, dosyaları otomatik olarak doğrulanır ve Hata Listesi penceresinde görünen uyarıların yoksayılabilir.
+    > Özellik şablon bildirimi XML dosyasını açtığınızda, dosyaları otomatik olarak doğrulanır ve Hata Listesi penceresinde görünen uyarıların yoksayılabilir.
 
 ## <a name="change-the-manifest-template"></a>Bildirim şablonu değiştirme
  Özellik bildirimi dosyasını Visual Studio XML Düzenleyicisi'ni veya bildirim şablonu bölmesindeki için XML kodu değiştirebilirsiniz. XML kodu herhangi bir değişiklik, paket bildirim dosyası özellik için birleştirilir. Örneğin, bir özellik özelleştirmek için bildirim şablonu değiştirmek isteyebilirsiniz.
@@ -70,7 +70,7 @@ ms.locfileid: "60067267"
  Özellik Tasarımcısı devre dışı bırakabilir ve oluşturma *gt;Feature.xml* el ile dosya. Bu yordamı gerçekleştirmek ilk kez özellik Tasarımcısı'nda geçerli ayarları özellik şablonu XML dosyasına kaydedilir. Ardından, değiştirebilir veya XML üzerine yazın.
 
 > [!NOTE]
->  Bu proje öğeleri ekleyin veya özellik Tasarımcısı devre dışıyken XML dosyasında SharePoint Proje öğeleri kaldırın, paketlenmiş değil.
+> Bu proje öğeleri ekleyin veya özellik Tasarımcısı devre dışıyken XML dosyasında SharePoint Proje öğeleri kaldırın, paketlenmiş değil.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Tasarımcı devre dışı bırakarak paket bildirim dosyasının üzerine yazmak için
 

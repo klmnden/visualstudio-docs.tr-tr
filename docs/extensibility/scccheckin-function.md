@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62803001"
 ---
 # <a name="scccheckin-function"></a>SccCheckin işlevi
 Bu işlev, daha önce kullanıma dosyalardaki değişiklikleri depolamak ve yeni bir sürüm oluşturma kaynak denetim sistemine denetler. Bu işlev, bir sayı ve bir dizi adını dosyaların iade edilmesine çağrılır.

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422764"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.  
   
     > [!NOTE]
-    >  Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.  
+    > Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.  
   
 3. İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.  
   
@@ -80,7 +80,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 5. Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
 > [!NOTE]
->  Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız  
+> Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız  
   
  Artık Windows tabanlı bir uygulama oluşturun ve COM bileşenine bir başvuru ekleyin.  
   
@@ -128,7 +128,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
    Şimdi ne zaman uygulama beklendiği gibi çalıştığını F5 tuşuna basın, ancak artık Kayıtsız COM altında çalışıyor Bu, kanıtlamak için VB6Hello.dll bileşen kaydı RegFreeComDemo1.exe Visual Studio IDE dışında çalıştırmayı deneyin. Düğme tıklandığında bu süre hala çalışır. Uygulama bildirimi geçici olarak yeniden adlandırma, yeniden başarısız olur.  
   
 > [!NOTE]
->  Geçici olarak kaydını silerek bir COM bileşeni olmaması benzetimini yapabilirsiniz. Bir komut istemi açın, yazarak sistem klasörünüze gidin `cd /d %windir%\system32`, ardından yazarak bileşeninin kaydı `regsvr32 /u VB6Hello.dll`. Yeniden yazarak kaydedebilirsiniz `regsvr32 VB6Hello.dll`.  
+> Geçici olarak kaydını silerek bir COM bileşeni olmaması benzetimini yapabilirsiniz. Bir komut istemi açın, yazarak sistem klasörünüze gidin `cd /d %windir%\system32`, ardından yazarak bileşeninin kaydı `regsvr32 /u VB6Hello.dll`. Yeniden yazarak kaydedebilirsiniz `regsvr32 VB6Hello.dll`.  
   
  Kullanarak uygulamayı yayımlamak için son adımdır [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

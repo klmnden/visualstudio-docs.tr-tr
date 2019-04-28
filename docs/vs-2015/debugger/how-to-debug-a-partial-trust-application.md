@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437312"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Windows ve konsol uygulamaları için geçerlidir.
  Daha sonra geri dönün ve hata ayıklama sırasında eklenen hangi izinlerin bakın. Hata ayıklama sırasında bir izin eklemek zorunda kalırsa, onu büyük olasılıkla bir kullanıcı onay istemi bu noktada kodunuza ekleyin gerektiğini belirtir.  
   
 > [!NOTE]
->  Hata ayıklama görselleştiricileri kısmi güven uygulama tarafından izin verilenden daha yüksek ayrıcalıklar gerektirir. Kısmi güven ile koddaki durdurulduğunda görselleştiriciler yüklemez. Görselleştirici kullanarak hata ayıklama için tam güven ile kodu çalıştırmanız gerekir.  
+> Hata ayıklama görselleştiricileri kısmi güven uygulama tarafından izin verilenden daha yüksek ayrıcalıklar gerektirir. Kısmi güven ile koddaki durdurulduğunda görselleştiriciler yüklemez. Görselleştirici kullanarak hata ayıklama için tam güven ile kodu çalıştırmanız gerekir.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Kısmi güven uygulamanız için bir bölge seçmek için  
   

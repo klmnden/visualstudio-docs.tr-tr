@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443494"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint çözümlerinde hata ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklamayı başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyaları SharePoint sunucusuna dağıtır ve ardından Web tarayıcısında SharePoint sitesine bir örneğini açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama işlemleri açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060806"
 8. SharePoint kitaplığı, liste veya seçtiğiniz site iş akışları, iş akışı ilişkilendirir **SharePoint Özelleştirme Sihirbazı**.
 
    > [!NOTE]
-   >  Yalnızca seçtiyseniz, bu ilişkiyi gerçekleşir **otomatik olarak ilişkilendirme iş akışı** Sihirbazı'nda.
+   > Yalnızca seçtiyseniz, bu ilişkiyi gerçekleşir **otomatik olarak ilişkilendirme iş akışı** Sihirbazı'nda.
 
 9. Özelleştirilebilir dağıtım sonrası komutları çalıştırır.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060806"
  İş akışı projeleri, hata ayıklaması yaparken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (bağlı olarak, türü) iş akışı şablonu bir kitaplığı veya bir listesine ekler. Ardından, el ile eklemek veya bir öğe güncelleştirme iş akışı şablonu başlayabilirsiniz. Ardından [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] iş akışı hata ayıklama.
 
 > [!NOTE]
->  Diğer derlemelere başvurular ekleyin, bu derlemeler genel derleme önbelleğinde yüklü olduğundan emin olun ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışını bir belge veya öğeyi Başlat](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Diğer derlemelere başvurular ekleyin, bu derlemeler genel derleme önbelleğinde yüklü olduğundan emin olun ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Aksi takdirde, iş akışı çözümü başarısız olur. Derlemeleri yükleme hakkında daha fazla bilgi için bkz: [el ile bir iş akışını bir belge veya öğeyi Başlat](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Ancak, dağıtım işlemi, iş akışı başlamıyor. İş akışı SharePoint Web sitesinden başlatmanız gerekir. Ayrıca, Microsoft Office Word 2010 gibi bir istemci uygulaması kullanarak veya ayrı bir sunucu tarafı kod kullanarak iş akışı başlatabilirsiniz. Belirtilen yaklaşımlardan birini kullanın **SharePoint Özelleştirme Sihirbazı**.
 

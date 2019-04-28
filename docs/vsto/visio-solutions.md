@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beb51866fdce18c640e41cb90a5f357fda6e5190
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d2e47227f9da4e691575b7136011deff15db25db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438741"
 ---
 # <a name="visio-solutions"></a>Visio çözümleri
   Visual Studio, Microsoft Office Visio için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, Visio otomatikleştirmek, Visio özellikleri genişletmek veya Visio kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.
@@ -32,7 +32,7 @@ ms.locfileid: "56628903"
  **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler Visio 2010 VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 ## <a name="automate-visio-by-using-the-visio-object-model"></a>Visio nesne modelini kullanarak Visio otomatikleştirin
  Visio nesne modeline Visio diyagramları kuruluş şemaları, akış çizelgeleri, proje zaman çizelgesi, ağ şemaları, office alanları ve daha fazlasını oluşturmak için otomatik hale getirmek için kullanabileceğiniz çok sayıda sınıfa kullanıma sunar. API ortak görevleri gerçekleştirmek için kod yazmanıza olanak tanır:

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446958"
 ---
 # <a name="ribbon-overview"></a>Şerite Genel Bakış
   Şerit, bunlar daha kolay olacak şekilde ilgili komutları düzenlemek için bir yoldur. Komutlar, Şerit üzerindeki denetimleri olarak görünür. Denetimler halinde düzenlenir *grupları* uygulama penceresinin üst kenarındaki yatay bir çubuk boyunca. Sekmelerde ilgili gruplar halinde düzenlenir.
@@ -49,7 +49,7 @@ ms.locfileid: "60040152"
 - Özel gruplar için yerleşik veya özel bir sekme ekleyin.
 
   > [!NOTE]
-  >  Bir yerleşik bir sekmeyi veya grup zaten bir Microsoft Office uygulamasının Şerit üzerinde var olan bir örneğidir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. **Bağlantıları** grup yerleşik bir gruptur üzerinde **veri** sekmesi.
+  > Bir yerleşik bir sekmeyi veya grup zaten bir Microsoft Office uygulamasının Şerit üzerinde var olan bir örneğidir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. **Bağlantıları** grup yerleşik bir gruptur üzerinde **veri** sekmesi.
 
 - Özel denetimler için özel bir grup ekleyin.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040152"
 - Outlook için Şerit oluşturma *denetçiler*. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Bir denetçi kullanıcılar bir e-posta iletisi oluşturmak gibi belirli görevleri gerçekleştirdiğinde, açılan bir penceredir.
+    > Bir denetçi kullanıcılar bir e-posta iletisi oluşturmak gibi belirli görevleri gerçekleştirdiğinde, açılan bir penceredir.
 
 - Çalışma zamanında görüntülemek için hangi Şerit'i seçin.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040152"
  Çalışma zamanında görüntülemek için Şerit'i seçmek için geçersiz kılma `CreateRibbonExtensibilityObject` yönteminde `ThisAddin`, `ThisWorkbook`, veya `ThisDocument` proje ve dönüş görüntülemek istediğiniz Şerit sınıfı. Aşağıdaki örnek adlı bir alanın değerini denetler `myCondition` ve uygun Şerit döndürür.
 
 > [!NOTE]
->  Bu örnekte kullanılan sözdizimi kullanılarak oluşturulmuş bir Şerit döndürür **Şerit (Görsel Tasarımcı)** öğesi. Söz dizimi kullanılarak oluşturulan bir Şerit döndüren bir **Ribbon (XML)** madde biraz farklıdır. Döndürme hakkında daha fazla bilgi için bir **Ribbon (XML)** öğesi için bkz: [Ribbon XML](../vsto/ribbon-xml.md).
+> Bu örnekte kullanılan sözdizimi kullanılarak oluşturulmuş bir Şerit döndürür **Şerit (Görsel Tasarımcı)** öğesi. Söz dizimi kullanılarak oluşturulan bir Şerit döndüren bir **Ribbon (XML)** madde biraz farklıdır. Döndürme hakkında daha fazla bilgi için bir **Ribbon (XML)** öğesi için bkz: [Ribbon XML](../vsto/ribbon-xml.md).
 
  Aşağıdaki kodu ekleyin:
 

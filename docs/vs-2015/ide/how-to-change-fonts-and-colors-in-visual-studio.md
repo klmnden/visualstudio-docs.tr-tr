@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247780815af4357fb8a529946e901b41c5d4a83c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439237"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Nasıl yapılır: Yazı tipleri ve renkler Visual Studio'da değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060624"
 IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerde rengini özelleştirebilirsiniz.
 
 > [!TIP]
->  Kod düzenleyicinin renklerini değiştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Kod düzenleyicinin renklerini değiştirme konusunda daha fazla bilgi için bkz: [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>IDE'nin renk temasını değiştirme
 
@@ -36,7 +36,7 @@ IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerd
 3. İçinde **renk teması** ya da varsayılan liste öğesini **mavi** tema **koyu** veya **ışık**.
 
     > [!IMPORTANT]
-    >  Renk teması değiştirdiğinizde, IDE içindeki metin varsayılana veya daha önce yazı tiplerine ve boyutlarına özelleştirilmiş.
+    > Renk teması değiştirdiğinizde, IDE içindeki metin varsayılana veya daha önce yazı tiplerine ve boyutlarına özelleştirilmiş.
     >
     >  Visual Studio Professional, Visual Studio Premium veya Visual Studio Ultimate varsa, ek öntanımlı Renk temalarını yükleyebilir ve kendi tarafından indirerek ve yükleyerek [Visual Studio 2013 renk teması Düzenleyicisi](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
 
@@ -45,7 +45,7 @@ IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerd
 - Seçin Sol Alt + Sol Shift + Print Screen tuşlarına.
 
     > [!WARNING]
-    >  Bu seçenek geçerli bilgisayarda tüm uygulamalar ve UI için yüksek karşıtlık ayarını belirler.
+    > Bu seçenek geçerli bilgisayarda tüm uygulamalar ve UI için yüksek karşıtlık ayarını belirler.
 
 ## <a name="change-ide-fonts"></a>IDE yazı tiplerini değiştirme
  Tüm pencereler ve iletişim kutuları IDE içindeki yazı tipini ve metin boyutunu değiştirebilirsiniz. Yalnızca belirli pencereleri ve diğer metin öğelerini özelleştirmeyi seçebilirsiniz.
@@ -59,7 +59,7 @@ IDE çerçevesinin ve araç pencerelerinin Visual Studio'da çeşitli şekillerd
 3. İçinde **ayarlarını göster** listesinde **ortam yazı tipi**.
 
     > [!TIP]
-    >  Yalnızca, araç pencerelerinin yazı tipini değiştirmek isterseniz, **ayarlarını göster** listesinde **[tüm metin aracı Windows]**.
+    > Yalnızca, araç pencerelerinin yazı tipini değiştirmek isterseniz, **ayarlarını göster** listesinde **[tüm metin aracı Windows]**.
 
 4. İçinde **yazı tipi** listesinde, bir yazı tipi seçin.
 

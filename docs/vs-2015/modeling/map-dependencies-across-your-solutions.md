@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440926"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 - Visual Studio Professional: Kod haritalarını açmak, sınırlı düzenlemeler yapmak ve koda gitmek.  
   
 > [!WARNING]
->  Visual Studio Professional kullanan Visual Studio Enterprise'da başkalarıyla oluşturulan haritalar paylaşmadan önce (örneğin, gizli öğeler, genişletilmiş gruplar ve çapraz grup bağlantılarını) eşlemedeki tüm öğelerin görünür yapıldığından emin olun.  
+> Visual Studio Professional kullanan Visual Studio Enterprise'da başkalarıyla oluşturulan haritalar paylaşmadan önce (örneğin, gizli öğeler, genişletilmiş gruplar ve çapraz grup bağlantılarını) eşlemedeki tüm öğelerin görünür yapıldığından emin olun.  
   
  **Bu diller, kod için bağımlılıkları eşleyebilirsiniz**:  
   
@@ -142,7 +142,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
     Veya öğeyi seçtikten sonra artı tuşuna basarak klavye kullanın (**+**). Kodu daha ayrıntılı düzeyde keşfetmek için ad alanları, türler ve üyeler için de aynısını yapın.  
   
    > [!TIP]
-   >  Kodu ile çalışma hakkında daha fazla ayrıntı için kullanarak fare, klavye ve dokunma, bkz: eşler [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).  
+   > Kodu ile çalışma hakkında daha fazla ayrıntı için kullanarak fare, klavye ve dokunma, bkz: eşler [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Haritayı basitleştirmek ve tek tek parçaları üzerinde odaklanmak için seçin **filtreleri** yalnızca seçin ve kod Haritası araç çubuğu üzerinde düğüm ve bağlantı türleri, ilgilendiğiniz. Örneğin, tüm derleme ve çözüm klasörü kapsayıcıları gizleyebilirsiniz.  
   
@@ -157,7 +157,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
     Bu örnekte, mor bağlantıları çağrılarıdır, başvuruları noktalı bağlantılardır ve açık mavi alan erişimini bağlantılardır. Yeşil bağlantıları, devralma olabilir ya da olabilir *toplama bağlantıları* birden fazla ilişki türünü belirtin (veya *kategori*).  
   
    > [!TIP]
-   >  Yeşil bir bağlantı görürseniz, bu yalnızca bir devralma ilişkisi anlamına gelmez. Ayrıca yöntem çağrısı da olabilir, ancak bu devralma ilişkisi tarafından gizlenir. Belirli bağlantı türlerini görmek için onay kutularını kullanın. **filtreleri** ilginizi olmayan türleri gizlemek için bölmesi.  
+   > Yeşil bir bağlantı görürseniz, bu yalnızca bir devralma ilişkisi anlamına gelmez. Ayrıca yöntem çağrısı da olabilir, ancak bu devralma ilişkisi tarafından gizlenir. Belirli bağlantı türlerini görmek için onay kutularını kullanın. **filtreleri** ilginizi olmayan türleri gizlemek için bölmesi.  
   
 7. Bir öğe veya bağlantı hakkında daha fazla bilgi almak için bir araç ipucu görünene kadar üstüne işaretçiyi taşıyın. Bu, bir kod öğesi veya bir bağlantıyı temsil eden kategorileri ayrıntılarını gösterir.  
   
@@ -196,7 +196,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 2. Derlemeleri veya ikili dosyaları harita üzerine dış Visual Studio'dan eşlemek istediğiniz sürükleyin. Örneğin, derlemeleri veya ikili dosyaları Windows Gezgini'nden veya dosya Gezgini'dan sürükleyin.  
   
 > [!NOTE]
->  Yalnızca Visual Studio ve aynı kullanıcı erişim denetimi (UAC) izni düzeyinde çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini'nden derlemeleri veya ikili dosyaları sürükleyebilirsiniz. Örneğin, UAC açıksa ve Visual Studio'yu yönetici olarak çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini sürükleme işlemini engelleyecektir. Bu sorunu çözmek için hem aynı izin düzeyindeki çalıştıran veya UAC'yi kapatın emin olun.  
+> Yalnızca Visual Studio ve aynı kullanıcı erişim denetimi (UAC) izni düzeyinde çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini'nden derlemeleri veya ikili dosyaları sürükleyebilirsiniz. Örneğin, UAC açıksa ve Visual Studio'yu yönetici olarak çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini sürükleme işlemini engelleyecektir. Bu sorunu çözmek için hem aynı izin düzeyindeki çalıştıran veya UAC'yi kapatın emin olun.  
   
 ## <a name="SeeSpecificSource"></a> Belirli bağımlılıkları bakın  
  Örneğin, bazı dosyalar ile bekleyen değişiklikleri gerçekleştirmek için bir kod incelemesi olduğunu varsayın. Bu değişiklikleri bağımlılıkları görmek için bu dosyalardan bir kod Haritası oluşturabilirsiniz.  
@@ -218,7 +218,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
      Ayrıca, Çözüm Gezgini, sınıf görünümü veya nesne tarayıcısı bir boş veya mevcut bir kod Haritası öğeleri sürükleyebilirsiniz. Boş bir harita oluşturmak için bkz: [bir boş bir kod Haritası oluşturun](#GetStarted). Öğelerinize ilişkin üst öğe hiyerarşisini dahil etmek için basın ve basılı tutun **CTRL** öğeleri sürükleyin ya da kullanmak anahtar **üst öğeleri dahil** varsayılan eylemi belirtmek için kod Haritası araç çubuğu düğmesi.  
   
     > [!NOTE]
-    >  Windows Phone veya Windows Mağazası gibi birden fazla uygulama arasında paylaşılan bir projeden öğeler eklediğinizde, bu öğeler etkin olan projeyle eşlemede görünür. Bağlamı başka bir uygulama projesi olarak değiştirirseniz ve paylaşılan projeden daha fazla öğe eklerseniz, bu öğeler yeni etkin olan uygulama projesiyle görünür. Eşleme üzerinde bir öğeyle gerçekleştirdiğiniz işlemler, yalnızca aynı bağlamı paylaşılan öğeler için geçerlidir.  
+    > Windows Phone veya Windows Mağazası gibi birden fazla uygulama arasında paylaşılan bir projeden öğeler eklediğinizde, bu öğeler etkin olan projeyle eşlemede görünür. Bağlamı başka bir uygulama projesi olarak değiştirirseniz ve paylaşılan projeden daha fazla öğe eklerseniz, bu öğeler yeni etkin olan uygulama projesiyle görünür. Eşleme üzerinde bir öğeyle gerçekleştirdiğiniz işlemler, yalnızca aynı bağlamı paylaşılan öğeler için geçerlidir.  
   
 4. Öğeleri keşfetmek için onları genişletin. Fare işaretçisini bir öğenin üzerine taşıyın ve göründüğünde çift köşeli ayraç (aşağı ok) simgesine tıklayın.  
   
@@ -353,13 +353,13 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
  Visual Studio harita diğer Visual Studio Enterprise ve Visual Studio Professional kullanıcılarıyla paylaşabileceğiniz bir .dgml dosyası olarak kaydeder.  
   
 > [!NOTE]
->  Bir harita Visual Studio Professional kullanıcılarıyla paylaşmadan önce grupları genişlettiğinizden, gizli düğümleri göstermek ve çapraz grup bağlantılarını ve başkalarının haritanızda görmesini istediğiniz silinmiş düğümleri aldığınızdan emin olun. Aksi takdirde, diğer kullanıcıların bu öğeleri görmesi mümkün olmayacaktır.  
+> Bir harita Visual Studio Professional kullanıcılarıyla paylaşmadan önce grupları genişlettiğinizden, gizli düğümleri göstermek ve çapraz grup bağlantılarını ve başkalarının haritanızda görmesini istediğiniz silinmiş düğümleri aldığınızdan emin olun. Aksi takdirde, diğer kullanıcıların bu öğeleri görmesi mümkün olmayacaktır.  
 >   
->  Bir modelleme projesinde olan ya da bir modelleme projesinden başka bir konuma kopyalanan bir harita kaydettiğinizde aşağıdaki hata oluşabilir:  
+> Bir modelleme projesinde olan ya da bir modelleme projesinden başka bir konuma kopyalanan bir harita kaydettiğinizde aşağıdaki hata oluşabilir:  
 >   
->  "Kaydedilemiyor *fileName* proje dizininin dışına. Bağlantılı öğeler desteklenmez."  
+> "Kaydedilemiyor *fileName* proje dizininin dışına. Bağlantılı öğeler desteklenmez."  
 >   
->  Visual Studio hatayı gösterir, ancak kaydedilen sürümü de oluşturur. Hatayı önlemek için harita modelleme projesinin dışında oluşturun. Ardından istediğiniz konuma kaydedebilirsiniz. Yalnızca çözümdeki başka bir konuma dosya kopyalama ve onu kaydetmeye çalışmak başarısızlıkla sonuçlanacaktır.  
+> Visual Studio hatayı gösterir, ancak kaydedilen sürümü de oluşturur. Hatayı önlemek için harita modelleme projesinin dışında oluşturun. Ardından istediğiniz konuma kaydedebilirsiniz. Yalnızca çözümdeki başka bir konuma dosya kopyalama ve onu kaydetmeye çalışmak başarısızlıkla sonuçlanacaktır.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Microsoft Word veya PowerPoint gibi diğer uygulamalara kopyalayabilmeniz için eşlemeyi bir görüntü olarak dışarı aktarma  
   

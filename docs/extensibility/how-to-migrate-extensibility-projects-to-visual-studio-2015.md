@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415287"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2015'e geçirme
 Uzantınızı yükseltme açıklanmıştır.
 
 > [!IMPORTANT]
->  Visual Studio'nun önceki bir sürümü için uzantı çözümünüzü sürümünü korumak istiyorsanız, yükseltmeden önce bir kopyasını emin olun. Yükseltilmiş sürümü önceki durumuna geri döndürmek zor olabilir.
+> Visual Studio'nun önceki bir sürümü için uzantı çözümünüzü sürümünü korumak istiyorsanız, yükseltmeden önce bir kopyasını emin olun. Yükseltilmiş sürümü önceki durumuna geri döndürmek zor olabilir.
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>Genişletilebilirlik çözümünü yükseltmek için
 
@@ -52,4 +52,4 @@ Uzantınızı yükseltme açıklanmıştır.
 5. Ayrıca NuGet sürümü VS SDK derleme araçlarını kullanarak geçiş yapabilirsiniz. Bu NuGet paketi [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) ve bir kez eklenen projenize gerekli araçlar içerir ve hedef dosyaların genişletilebilirlik projenize bir bilgisayarda yüklü VS SDK oluşturmanıza olanak sağlar.
 
 > [!NOTE]
->  Bu, var olan genişletilebilirlik projeleri NuGet başvuru bütünleştirilmiş kodları ve araçları kullanmak için güncelleştirme gerekiyor.  Bunlar, başvuru bütünleştirilmiş kodları ve araçları VS SDK'sı ile yüklü kullanarak oluşturmaya devam edebilirsiniz.
+> Bu, var olan genişletilebilirlik projeleri NuGet başvuru bütünleştirilmiş kodları ve araçları kullanmak için güncelleştirme gerekiyor.  Bunlar, başvuru bütünleştirilmiş kodları ve araçları VS SDK'sı ile yüklü kullanarak oluşturmaya devam edebilirsiniz.

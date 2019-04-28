@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429346"
 ---
 # <a name="web-project-essentials"></a>Web Projesi Temel Bileşenleri
 Web projeleri, Web uygulamaları oluşturun. Akıllı Web sayfaları bir Web uygulaması oluşturmak için bir Web projesi kullanabilirsiniz. Akıllı bir Web sayfasında, isteğe bağlı Web sayfasını işler sunucu tarafındaki kod vardır.
@@ -35,7 +35,7 @@ Web projeleri, Web uygulamaları oluşturun. Akıllı Web sayfaları bir Web uyg
 - Ayrı olarak Web sitesinin kendisinde bir Web projesi için çözüm dosyası bulunur. Varsayılan olarak çözüm dosyaları \Documents ve ayarları bulunur\\*hesabınız*\My belgeleri\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Web sitesinin Çözüm dosyasıyla tutmak istiyorsanız, hemen taşıyın ve yeniden açın.
+  > Web sitesinin Çözüm dosyasıyla tutmak istiyorsanız, hemen taşıyın ve yeniden açın.
 
 - Hiçbir çözüm dosyasını Visual Studio'da bir Web sitesini açın, yeni bir çözüm dosyası için otomatik olarak oluşturulur.
 

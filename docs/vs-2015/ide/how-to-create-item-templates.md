@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417046"
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Adımları [ilk yordam](#to-add-a-custom-project-item-template-to-the-add-new-it
      Şablonun dosyaları .zip dosyası olarak eklenir ve iletişim kutusunda belirttiğiniz her dizin kopyalanır. Varsayılan konum **... \Users\\< kullanıcı adı\>\Documents\Visual Studio \<sürüm > \My dışarı aktarılan şablonları\\**  klasör.  
   
     > [!WARNING]
-    >  Visual Studio'nun önceki sürümlerinde varsayılan konumdur **... \Users\\< kullanıcı adı\>\Documents\Visual Studio \<sürüm > \Templates\ItemTemplates**.  
+    > Visual Studio'nun önceki sürümlerinde varsayılan konumdur **... \Users\\< kullanıcı adı\>\Documents\Visual Studio \<sürüm > \Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Bir depolama projesinde kullanılacak öğe şablonunu etkinleştirme  
   

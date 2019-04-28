@@ -33,17 +33,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808177"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML araçları
 
 *Genişletilebilir Biçimlendirme Dili (XML)* veri tanımlamak için bir biçim sağlayan bir biçimlendirme dilidir. XML verileri ayırır ve Genişletilebilir Stil Sayfası Dili (XSL) gibi stil sayfaları ve geçişli stil sayfaları (CSS) kullanarak kendi sunu ilişkili. Visual Studio Araçları ve şemaları XML, XSLT ve XML ile çalışmak daha kolay hale getiren özellikleri içerir.
 
-## <a name="xml-editor"></a>XML Düzenleyicisi
+## <a name="xml-editor"></a>XML düzenleyicisi
 
 [XML Düzenleyicisi](xml-editor.md) XML belgeleri düzenlemek için kullanılır. Bu, tam XML sözdizimi denetimi, şema doğrulaması sırasında tür, renk kodlaması ve IntelliSense sağlar. Bir şema veya belge türü tanımı sağlanırsa, izin verilen öğeler ve öznitelikler listelemek için IntelliSense tarafından kullanılır.
 

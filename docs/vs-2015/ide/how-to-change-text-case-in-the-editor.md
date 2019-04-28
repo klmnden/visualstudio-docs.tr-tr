@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439251"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Nasıl yapılır: Düzenleyicide büyük/küçük harf değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060325"
 Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürülecek menü komutlarını veya klavye kısayollarını kullanabilirsiniz.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Yordam  
   
@@ -42,7 +42,7 @@ Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürü
      Metni küçük harfe dönüştürmek için **olun küçük**, veya basın **CTRL**+**U**.  
   
     > [!TIP]
-    >  Bu değişiklikten önce biçimlendirme önceki durumuna geri döndürmek için seçin **geri** gelen **Düzenle** menüsü.  
+    > Bu değişiklikten önce biçimlendirme önceki durumuna geri döndürmek için seçin **geri** gelen **Düzenle** menüsü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)   

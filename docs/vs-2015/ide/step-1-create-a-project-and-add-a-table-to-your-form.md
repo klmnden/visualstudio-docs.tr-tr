@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441917"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1. Adım: Proje Oluşturma ve Formunuza Tablo Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
    1. Ayarlama **BackColor** özelliğini **CornflowerBlue**. Bunu yapmak için açık **BackColor** yanındaki aşağı açılır oku seçerek iletişim kutusu **BackColor** özelliğinde **özellikleri** penceresi.  Ardından, **Web** sekmesinde **BackColor** iletişim kutusu, kullanılabilir renk adlarının bir listesini görüntülemek için.  
   
       > [!NOTE]
-      >  Renkler alfabetik sırada değildir ve CornflowerBlue listenin sonuna yakın bir yerdedir.  
+      > Renkler alfabetik sırada değildir ve CornflowerBlue listenin sonuna yakın bir yerdedir.  
   
    2. Ayarlama **Dock** özelliğini **dolgu** özelliğin yanındaki açılan düğmeyi seçerek ve büyük Orta düğmeyi seçerek. Böylece tablo formun tamamını kaplayacak şekilde yayılır.  
   
@@ -77,12 +77,12 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
         TableLayoutPanel öğesinin sol üst hücresinde şimdi, mavi arka plan üzerinde ortalanmış bir siyah kutu yer alıyor olmalıdır.  
   
        > [!NOTE]
-       >  Webdings yazı tipi, simgelerden oluşan bir yazı tipi olup Windows işletim sistemiyle birlikte gelir. Eşleştirme oyununuzda oyuncunun simge çiftlerini eşleştirmesi gerektiğinden, eşleştirilecek simgeleri göstermek için bu yazı tipini kullanıyorsunuz. Yerine **c** içinde **metin** özelliği, hangi simgelerin gösterildiğini görmek için farklı harfler girmeyi deneyin. Ünlem işareti bir örümcek, büyük N harfi bir göz ve virgül ise kırmızı biberdir.  
+       > Webdings yazı tipi, simgelerden oluşan bir yazı tipi olup Windows işletim sistemiyle birlikte gelir. Eşleştirme oyununuzda oyuncunun simge çiftlerini eşleştirmesi gerektiğinden, eşleştirilecek simgeleri göstermek için bu yazı tipini kullanıyorsunuz. Yerine **c** içinde **metin** özelliği, hangi simgelerin gösterildiğini görmek için farklı harfler girmeyi deneyin. Ünlem işareti bir örümcek, büyük N harfi bir göz ve virgül ise kırmızı biberdir.  
   
 8. Etiket denetiminizi seçin ve TableLayoutPanel içinde sonraki hücreye kopyalayın. (Ctrl + C tuşlarına basın veya menü çubuğunda, **Düzenle**, **kopyalama**.) Sonra da yapıştırın. (Ctrl + V tuşlarına basın veya menü çubuğunda, **Düzenle**, **Yapıştır**.) TableLayoutPanel denetiminin ikinci hücresinde ilk etiketin bir kopyası görünür. Yeniden yapıştırdığınızda, üçüncü hücrede bir başka etiket görünür. Yapıştırmayı sürdürün `Label` hücrelerin tümü doluncaya kadar denetler.  
   
    > [!NOTE]
-   >  Çok fazla kez yapıştırırsanız, yeni etiket denetiminizi ekleyecek bir yer olması için IDE TabloLayoutPanel öğesine yeni bir satır yapıştırır. Bunu geri alabilirsiniz. Yeni hücreyi kaldırmak için Ctrl + Z tuşlarına basın veya menü çubuğunda, **Düzenle**, **geri**.  
+   > Çok fazla kez yapıştırırsanız, yeni etiket denetiminizi ekleyecek bir yer olması için IDE TabloLayoutPanel öğesine yeni bir satır yapıştırır. Bunu geri alabilirsiniz. Yeni hücreyi kaldırmak için Ctrl + Z tuşlarına basın veya menü çubuğunda, **Düzenle**, **geri**.  
   
     Artık formunuz hazırdır. Aşağıdaki resimde olduğu gibi görünmesi gerekir.  
   

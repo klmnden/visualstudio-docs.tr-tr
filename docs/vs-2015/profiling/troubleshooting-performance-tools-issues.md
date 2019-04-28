@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431624"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Performans sorunlarını giderme araçları sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Profil oluşturma Araçları'nı kullandığınızda aşağıdaki sorunlardan bi
 - Sembol bilgilerini profil oluşturma veri (.vsp) dosyasına ekleyin. Daha fazla bilgi için [performans veri dosyalarıyla kaydetme sembol bilgilerini](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Analiz altyapısı, .pdb dosyasını derlenmiş uygulama dosyası aynı sürümde olmasını gerektirir. Önceki veya sonraki bir derleme uygulama dosyasının .pdb dosyasından çalışmaz.
+> Analiz altyapısı, .pdb dosyasını derlenmiş uygulama dosyası aynı sürümde olmasını gerektirir. Önceki veya sonraki bir derleme uygulama dosyasının .pdb dosyasından çalışmaz.

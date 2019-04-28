@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444854"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Çok yüksek oranda kilit çakışması
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639030"
  Bu kural, bir profil oluşturma çalışması süresince alınan ölçümlere aşırı yüksek miktarda bir kilit çakışması var. belirttiğinizde tetikler. Kilit çakışması kilit için bekleyen iş parçacıklarının yürütülmesini geciktirmek. Kilit çakışması birim testlerini veya daha düşük bir son donanım üzerinde çalışan yük testlerini bile oldukça küçük miktarlarda araştırılmalıdır.
 
 > [!NOTE]
->  Profil oluşturma verilerinin bildirilen kilit çakışması oranını önemli ancak değil aşırı olduğunda [DA0038: Yüksek oranda kilit çakışması](../profiling/da0038-high-rate-of-lock-contentions.md) bilgi iletisi yerine bu uyarı iletisi tetiklenir.
+> Profil oluşturma verilerinin bildirilen kilit çakışması oranını önemli ancak değil aşırı olduğunda [DA0038: Yüksek oranda kilit çakışması](../profiling/da0038-high-rate-of-lock-contentions.md) bilgi iletisi yerine bu uyarı iletisi tetiklenir.
 
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma
  İletiyi gitmek için çift tıklatın [işaretleri](../profiling/marks-view.md) profil oluşturma verilerinin görünümü.  Bulma **.NET CLR LocksAndThreads\Contention hızı / sn** sütun. Varsa belirli program yürütme aşamaları kilit çakışması diğer aşamaları ağır olduğu belirleyin.

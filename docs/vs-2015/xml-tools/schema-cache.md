@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435338"
 ---
 # <a name="schema-cache"></a>Şema Önbelleği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde bulunan bir şema önb
  XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikler için izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bir bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırılmışsa, bellek içi dizinden otomatik olarak kaldırılır. Bir şema güncelleştirildiyse, bu şema bellek içi önbellek otomatik olarak çıkarır.  
 
 > [!NOTE]
->  Şema önbellek dizini bilgisayarınıza genel olduğundan, yalnızca standart ve bilgisayarınızda oluşturduğunuz tüm Visual Studio projelerine yararlı şemaları burada eklemeniz gerekir.  
+> Şema önbellek dizini bilgisayarınıza genel olduğundan, yalnızca standart ve bilgisayarınızda oluşturduğunuz tüm Visual Studio projelerine yararlı şemaları burada eklemeniz gerekir.  
 
  XML Düzenleyicisi şema katalog dosyaları herhangi bir sayıda şema önbellek dizini de destekler. Şema kataloglarının Düzenleyicisi hakkında bilmek istediğiniz her zaman şemaları için başka bir konuma işaret edebilir. Catalog.xsd dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. Varsayılan katalog catalog.xml dosyasıdır ve Installdır % bulunan diğer şemaların bağlantılar içerir. Bir örnekleme catalog.xml dosyanın verilmiştir:  
 
@@ -105,7 +105,7 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde bulunan bir şema önb
  Şema önbelleği kullanmaya konumu özelleştirebilirsiniz **çeşitli** seçenekler sayfası. Sık kullanılan şema bir dizininiz varsa, düzenleyici bu şemaları kullanacak şekilde yapılandırılabilir.  
 
 > [!NOTE]
->  Bu değişiklik, yalnızca geçerli Visual Studio kullanıcı etkiler.  
+> Bu değişiklik, yalnızca geçerli Visual Studio kullanıcı etkiler.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Şema önbellek konumunu değiştirmek için  
 

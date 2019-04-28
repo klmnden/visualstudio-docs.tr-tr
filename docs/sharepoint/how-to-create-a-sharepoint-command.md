@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435463"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint komutu oluşturma
   Sunucu nesne modeli SharePoint Araçlar uzantısından kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'sini çağırmak için. Sunucu nesne modeline doğrudan çağırabilir miyim bir derlemede SharePoint komutunun tanımlarsınız.
@@ -33,7 +33,7 @@ ms.locfileid: "60082327"
     - AnyCPU veya x64 hedef platformu. Varsayılan olarak, hedef sınıf kitaplığı projeleri için AnyCPU platformudur. Hedef platformu seçme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  .NET Framework 3.5 ve SharePoint araçları uzantıları hedef SharePoint komutları hedef, bir SharePoint komutu, SharePoint Araçlar uzantısından tanımlar aynı projede uygulanamıyor [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Uzantınızı ayrı bir proje tarafından kullanılan herhangi bir SharePoint komut tanımlamanız gerekir. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > .NET Framework 3.5 ve SharePoint araçları uzantıları hedef SharePoint komutları hedef, bir SharePoint komutu, SharePoint Araçlar uzantısından tanımlar aynı projede uygulanamıyor [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Uzantınızı ayrı bir proje tarafından kullanılan herhangi bir SharePoint komut tanımlamanız gerekir. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Aşağıdaki derlemelere başvurular ekleyin:
 

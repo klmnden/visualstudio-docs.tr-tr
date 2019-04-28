@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443101"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Nasıl yapılır: ASPX işaretlemesini yerelleştirme
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) sayfası genellikle sabit kodlanmış dize değerleri kullanır. Bu dizelerini yerelleştirmek için yerelleştirilmiş kaynaklara başvuran deyimleri ile değiştirin.
@@ -36,7 +36,7 @@ ms.locfileid: "60057574"
     2. Bir .resources dosyası eklemek için **Çözüm Gezgini**, bir SharePoint proje öğesi için kısayol menüsünü açın ve ardından **Ekle** > **yeni öğe**. Ya da altında **Visual Basic** veya **Visual C#**  düğümünü seçin **kaynak dosyası** şablonu.
 
     > [!NOTE]
-    >  Dağıtım türü özelliğini etkinleştirmek için bir SharePoint proje öğesi için kaynak dosyaları eklediğinizden emin olun. Bu yordamda daha sonra bu özellik gereklidir. Çözümünüze bir SharePoint proje öğesi yoksa, boş bir SharePoint projesine ekleyin ve varsayılan kaldırmak *Elements.xml* dosya.
+    > Dağıtım türü özelliğini etkinleştirmek için bir SharePoint proje öğesi için kaynak dosyaları eklediğinizden emin olun. Bu yordamda daha sonra bu özellik gereklidir. Çözümünüze bir SharePoint proje öğesi yoksa, boş bir SharePoint projesine ekleyin ve varsayılan kaldırmak *Elements.xml* dosya.
 
 2. Varsayılan kaynak dosyasına protokolün kendi tercih ettiğiniz bir ad verin bir *.resx* MyAppResources.resx gibi bir uzantı. Her bir yerelleştirilmiş kaynak dosyası için aynı temel adı kullanın, ancak kültür ekleme [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Örneğin, kaynak adı Almanca yerelleştirilmiş *MyAppResources.de-DE.resx*.
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427887"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme
   Bir standart veya özel Microsoft Office Outlook biçimini kullanarak genişletmek için bir form bölgesi oluşturabilir **yeni Outlook Form bölgesi** Sihirbazı. Yeni bir form bölgesi oluşturabilir ve Visual Studio kullanıcı arabiriminde tasarım ya da Outlook'ta tasarlanan form bölgesini içeri aktarabilir ve Visual Basic ekleyin veya C# kod.
@@ -48,7 +48,7 @@ ms.locfileid: "60083952"
 6. Üzerinde **nasıl form bölgesi oluşturmak istediğinizi seçin** sayfasında, yönetilen denetimleri bir görsel tasarımcıya sürükleyerek form bölgesi tasarla ya da Outlook'ta tasarlanan form bölgesini almak isteyip istemediğinizi seçin.
 
     > [!NOTE]
-    >  Outlook'ta tasarlanan form bölgesini içeri aktarmak seçtiğiniz ardından Outlook Form depolama konumu belirtmeniz gerekir (*.ofs*) dosyası. Form bölgesini Outlook tasarım yönetilen denetimleri eklenemiyor; yalnızca var olan kullanıcı arabirimini arka plan kod ekleyebilirsiniz. Daha fazla bilgi için [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
+    > Outlook'ta tasarlanan form bölgesini içeri aktarmak seçtiğiniz ardından Outlook Form depolama konumu belirtmeniz gerekir (*.ofs*) dosyası. Form bölgesini Outlook tasarım yönetilen denetimleri eklenemiyor; yalnızca var olan kullanıcı arabirimini arka plan kod ekleyebilirsiniz. Daha fazla bilgi için [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
 
 7. Üzerinde **oluşturmak istediğiniz form bölgesi türünü seçin** sayfasında form bölgesi türleri gözden geçirin ve seçin ve ardından **sonraki**. Form bölgesi türleri hakkında daha fazla bilgi için bkz. [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
 

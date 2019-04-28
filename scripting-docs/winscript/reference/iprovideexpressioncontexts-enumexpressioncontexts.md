@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410144"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Bu bileşen tarafından bilinen ifade bağlamları bir numaralandırıcı döndürür.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  İşlem Hata Ayıklama Yöneticisi, belirli bir iş parçacığıyla ilişkilendirilmiş tüm genel ifade içerikleri bulmak için bu yöntemi kullanır.  
   
 > [!NOTE]
->  Bu yöntem ilgilendiğiniz iş parçacığı içinde çağrılır. Bu, geçerli iş parçacığı tanımlamak ve uygun bir numaralandırıcıyı döndürmek için en fazla uygulayan olur.  
+> Bu yöntem ilgilendiğiniz iş parçacığı içinde çağrılır. Bu, geçerli iş parçacığı tanımlamak ve uygun bir numaralandırıcıyı döndürmek için en fazla uygulayan olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IProvideExpressionContexts Arabirimi](../../winscript/reference/iprovideexpressioncontexts-interface.md)

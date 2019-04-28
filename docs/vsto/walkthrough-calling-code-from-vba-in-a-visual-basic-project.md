@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca0c160cb9a1cb6f76f64293db7858c0609d2d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438663"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>İzlenecek yol: Visual Basic projesinde VBA'dan kod çağırabilir
   Bu kılavuzda bir yöntem belge düzeyi özelleştirmesinde için Microsoft Office Word Visual Basic'ten belgedeki Applications (VBA) kodu için nasıl çağrılacağını gösterir. Yordamı üç temel adımdan oluşur: bir yöntem ekleyin `ThisDocument` konak öğesi sınıfına, VBA kodu yöntemi kullanıma sunar ve belgedeki VBA kodu, ardından yöntemi çağırın.
@@ -46,7 +46,7 @@ ms.locfileid: "60069984"
 - VBA koddan yöntemini çağırma.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -69,7 +69,7 @@ ms.locfileid: "60069984"
 3. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. İçinde **kod** grubunda **Visual Basic**.
 
@@ -180,7 +180,7 @@ ms.locfileid: "60069984"
  Artık çağırabilirsiniz `CreateTable` belgedeki VBA kodu yöntemi.
 
 > [!NOTE]
->  Bu izlenecek yolda, proje hata ayıklama sırasında VBA kodunu belgeye ekleyeceksiniz. Visual Studio ana proje klasöründen belgenin bir kopyasını ile belge derleme çıktısı klasörü içinde değiştirdiğinden projeyi sonraki açışınızda bu belgeye eklediğiniz VBA kodu üzerine yazılır. VBA kodu kaydetmek istiyorsanız, proje klasöründeki belgesine kopyalayabilirsiniz. Daha fazla bilgi için [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).
+> Bu izlenecek yolda, proje hata ayıklama sırasında VBA kodunu belgeye ekleyeceksiniz. Visual Studio ana proje klasöründen belgenin bir kopyasını ile belge derleme çıktısı klasörü içinde değiştirdiğinden projeyi sonraki açışınızda bu belgeye eklediğiniz VBA kodu üzerine yazılır. VBA kodu kaydetmek istiyorsanız, proje klasöründeki belgesine kopyalayabilirsiniz. Daha fazla bilgi için [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA kodu yöntemini çağırmak için
 

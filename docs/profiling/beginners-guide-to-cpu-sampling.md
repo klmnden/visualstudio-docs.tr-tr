@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60c1ef43854e3fd4a08851afadf4e1caf43334c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440275"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme Başlangıç Kılavuzu
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **örnekleme** veri.
 
 > [!NOTE]
->  Kullanmanızı öneririz [CPU kullanımı](../profiling/beginners-guide-to-performance-profiling.md) aracı yerine eski CPU örnekleme aracı tanılama araçları Penceresi'nde izleme desteği gibi özelleştirilmiş özellik gerekmedikçe.
+> Kullanmanızı öneririz [CPU kullanımı](../profiling/beginners-guide-to-performance-profiling.md) aracı yerine eski CPU örnekleme aracı tanılama araçları Penceresi'nde izleme desteği gibi özelleştirilmiş özellik gerekmedikçe.
 
  **Örnekleme** uygulamada çoğu kullanıcı modu yapmakta olduğunuz işlevler çalışma gösteren bir istatistik profil oluşturma yöntemidir. Örnekleme, uygulamanızı hızlandırmak alanlar aramaya başlamak için iyi bir yerdir.
 
@@ -35,7 +35,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
  Varsa **örnekleme** duyduğunuz verileri sağlamazsa diğer profil oluşturma araçları koleksiyonu yöntemleri size yardımcı olabilecek bilgiler farklı türde sağlayın. Bu diğer yöntemler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
->  Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows sembol bilgilerini başvuru](../profiling/how-to-reference-windows-symbol-information.md).
+> Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows sembol bilgilerini başvuru](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Oluşturma ve performans oturumu çalıştırma
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve ardından çalıştırmanız gerekir. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.
@@ -47,7 +47,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 1. Visual Studio içinde çözümü açın. Yapılandırması yayın olarak ayarlanmış. (Bul **çözüm yapılandırmaları** ayarlamak için araç çubuğundaki **hata ayıklama** varsayılan olarak. Değiştirin **yayın**.)
 
     > [!IMPORTANT]
-    >  Kullanmakta olduğunuz bilgisayarda yönetici değilseniz, profil oluşturucuyu kullanırken, Visual Studio Yönetici olarak çalıştırmalısınız. (Visual Studio uygulama simgesini sağ tıklatın ve ardından **yönetici olarak çalıştır**.
+    > Kullanmakta olduğunuz bilgisayarda yönetici değilseniz, profil oluşturucuyu kullanırken, Visual Studio Yönetici olarak çalıştırmalısınız. (Visual Studio uygulama simgesini sağ tıklatın ve ardından **yönetici olarak çalıştır**.
 
 2. Üzerinde **hata ayıklama** menüsünde **Profiler**ve ardından **performans Profiler**.
 

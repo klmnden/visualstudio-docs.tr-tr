@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446134"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  DOM Gezgini işlenen sayfanın bir görünümü gösterir ve değerleri değiştirebilir ve sonuçları hemen görmek için DOM Gezgini'ni kullanabilirsiniz. Bu, hata ayıklayıcıyı durdurup yeniden olmadan değişiklikleri test etmek sağlar. Bu yöntemi kullanarak sayfa ile etkileşim kurduğunuzda, kaynak kodu, projenizdeki değişmez istenen kod düzeltmeleri bulduğunuzda, kaynak kodunuzda değişiklikler yaparsınız.  
   
 > [!TIP]
->  Durdurup kaynak kodunuzda değişiklikler yaptığınızda hata ayıklayıcı önlemek için uygulamanızı kullanarak yenileyebilirsiniz **Yenile Windows uygulama** düğme hata ayıklama araç çubuğu (veya, F4 tuşuna basarak). Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Durdurup kaynak kodunuzda değişiklikler yaptığınızda hata ayıklayıcı önlemek için uygulamanızı kullanarak yenileyebilirsiniz **Yenile Windows uygulama** düğme hata ayıklama araç çubuğu (veya, F4 tuşuna basarak). Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
  DOM Gezgini kullanabilirsiniz:  
   
@@ -74,12 +74,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   Hata ayıklama uygulamaları, genellikle DOM Gezgini'nde öğeleri seçmeniz gerekir. Bir öğe seçtiğinizde, DOM Gezgini sağ tarafındaki sekmeler otomatik olarak görünen değerlerin DOM Gezgini'nde seçilen öğenin yansıtacak şekilde güncelleştirin. Sekmeleri şunlardır: **Stilleri**, **hesaplanan**, **Düzen**. Windows Store apps de destek **olayları** ve **değişiklikleri** sekmeler. Öğeleri seçme hakkında daha fazla bilgi için bkz. [öğeleri seçme](#SelectingElements).  
   
 > [!TIP]
->  DOM Gezgini penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **DOM Gezgini** yeniden açın. Pencere, yalnızca bir betik hata ayıklama oturumu sırasında görünür.  
+> DOM Gezgini penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **DOM Gezgini** yeniden açın. Pencere, yalnızca bir betik hata ayıklama oturumu sırasında görünür.  
   
  Aşağıdaki yordamda, etkileşimli bir uygulama, DOM Gezgini'ni kullanarak hata ayıklama işleminde gideceğiz. Kullanan bir uygulama oluşturacağız bir `FlipView` denetlemek ve sonra hata ayıklama. Uygulama çeşitli hatalar içeriyor.  
   
 > [!WARNING]
->  Aşağıdaki örnek bir Windows Store uygulaması uygulamadır. Cordova için aynı özellikleri desteklenir, ancak uygulama farklı olacaktır.  
+> Aşağıdaki örnek bir Windows Store uygulaması uygulamadır. Cordova için aynı özellikleri desteklenir, ancak uygulama farklı olacaktır.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Dinamik DOM'u inceleyerek hata ayıklamak için  
   
@@ -183,14 +183,14 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 10. Seçin ve Visual Studio'ya **DOM Gezgini** sekmesi.  
   
     > [!TIP]
-    >  Çalıştırılan uygulama ve Visual Studio arasında geçiş yapmak için Alt + sekme veya F12 tuşuna basabilirsiniz.  
+    > Çalıştırılan uygulama ve Visual Studio arasında geçiş yapmak için Alt + sekme veya F12 tuşuna basabilirsiniz.  
   
 11. DIV öğesi Kimliğine sahip bölüm için DOM Gezgini penceresinde seçin `"fView"`. Görüntülemek ve doğru DIV öğesinin seçmek için ok tuşlarını kullanın. (Bir öğenin alt öğelerini görüntülemek için sağ ok tuşu sağlar.)  
   
      ![DOM Gezgini](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Yazarak JavaScript konsol penceresinin sol alt köşesinde DIV öğesinin seçebilirsiniz `select(fView)` adresindeki >> giriş istemi ve sonra Enter tuşuna basın.  
+    > Yazarak JavaScript konsol penceresinin sol alt köşesinde DIV öğesinin seçebilirsiniz `select(fView)` adresindeki >> giriş istemi ve sonra Enter tuşuna basın.  
   
      DOM Gezgini penceresinin sağ tarafındaki sekmeler otomatik olarak görünen değerlerin geçerli öğenin DOM Gezgini'nde yansıtacak şekilde güncelleştirin.  
   
@@ -209,7 +209,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 15. Seçin `width: 100px;height: 100px;`Delete tuşuna basın ve ardından Enter tuşuna basın. Enter tuşuna bastıktan sonra hata ayıklama oturumunuzu durdurdu henüz olsa da yeni değerlerini hemen simülatörü veya Phone öykünücüsü yansıtılır.  
   
     > [!IMPORTANT]
-    >  DOM Gezgini penceresi özniteliklerinde güncelleştirebilirsiniz gibi görünen değerleri de güncelleştirebilirsiniz **stilleri**, **hesaplanan**, ve **Düzen** sekmeler. Daha fazla bilgi için bkz. [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md) ve [DOM Gezgini'ni kullanarak hata ayıklama Düzen](../debugger/debug-layout-using-dom-explorer.md).  
+    > DOM Gezgini penceresi özniteliklerinde güncelleştirebilirsiniz gibi görünen değerleri de güncelleştirebilirsiniz **stilleri**, **hesaplanan**, ve **Düzen** sekmeler. Daha fazla bilgi için bkz. [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md) ve [DOM Gezgini'ni kullanarak hata ayıklama Düzen](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Simülatör veya Phone öykünücüsü'nü seçerek ya da Alt + Tab tuşlarını kullanarak uygulamaya geçin.  
   
@@ -281,7 +281,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   Öğeleri vurgulama seçtiğinizde, Simülatörde üzerine öğeler vurgulanmıştır. Görünür kutu modeli vurgulanan öğelerle eşleme için renk **Düzen** DOM Gezgini sekmesi.  
   
 > [!NOTE]
->  Üzerine gelerek öğeleri vurgulama, Windows Phone öykünücüsü'nde kısmen desteklenir.  
+> Üzerine gelerek öğeleri vurgulama, Windows Phone öykünücüsü'nde kısmen desteklenir.  
   
  Kullanarak öğeleri seçmek nasıl gösteren bir örnek için **Select öğesi** düğmesi, bkz: [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md).  
   

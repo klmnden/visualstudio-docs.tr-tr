@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417443"
 ---
 # <a name="debugger-user-interface-xslt"></a>Hata Ayıklayıcı Kullanıcı Arabirimi (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Bu konu, hata ayıklayıcı pencereleri ve iletişim kutuları açıklar. Yalnı
  Görev listesi, komut dosyası blokları XSLT dosyasında oluşan hataları içerir.  
   
 > [!NOTE]
->  Hiçbir zaman görev listesinde görünmesini XSLT hata ayıklayıcısı, uyarı var.  
+> Hiçbir zaman görev listesinde görünmesini XSLT hata ayıklayıcısı, uyarı var.  
   
 ## <a name="breakpoints-window"></a>Kesme noktaları penceresi  
  Kesme noktaları penceresi tüm kesme noktalarını ayarlayın geçerli projedeki gösterir. Pencerenin görünümde olduğu sürece bir kesme noktası eklenirse, pencerenin yeni kesme noktası gösterecek şekilde otomatik olarak güncelleştirilir.  

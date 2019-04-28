@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441057"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
    - Seçin **Minimal dil** diğer durumlarda, veya emin değilseniz.  
   
        > [!NOTE]
-       >  Bir sınıf diyagramında veya bileşen diyagramı oluşturmak istiyorsanız, UML modelleri kullanarak göz önünde bulundurun. UML modelleme araçlarının tek bir model tümleşik diyagramları kümesi sağlar. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
+       > Bir sınıf diyagramında veya bileşen diyagramı oluşturmak istiyorsanız, UML modelleri kullanarak göz önünde bulundurun. UML modelleme araçlarının tek bir model tümleşik diyagramları kümesi sağlar. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
   
    - Seçin **Minimal WinForm Tasarımcısı** veya **en az bir WPF Tasarımcısı** bir Windows Formları ya da WPF yüzeyinde görüntülenen bir DSL oluşturmak için. Düzenleyici tanımlamak için kod yazmanız gerekir. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
@@ -108,7 +108,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
  Deneysel örneği kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  DSL değiştirildiğinde, artık test dosyası şekilleri örneği görmek mümkün olacaktır. Ancak, yeni öğeleri oluşturmak mümkün olacaktır.  
+> DSL değiştirildiğinde, artık test dosyası şekilleri örneği görmek mümkün olacaktır. Ancak, yeni öğeleri oluşturmak mümkün olacaktır.  
   
 ### <a name="modifying-the-template-dsl"></a>DSL şablonu değiştirme  
  Yeniden adlandırmak ve bazı veya tüm etki alanı sınıflarını ve şekil sınıfları DSL tanımını şablonda tutun. Yeni, sınıf adları, boşluk veya noktalama işareti olmadan geçerli CLR adları olmalıdır.  
@@ -137,7 +137,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
   Aşağıdaki bölümlerde, DSL özellikleri en kullanışlı türlerini oluşturmak nasıl açıklanmaktadır. Bir DSL ile oluşturulabilir birçok desen vardır ancak bunlar en sık kullanılır.  
   
 > [!NOTE]
->  Özelliği ekledikten sonra tıklamayı değil **tüm Şablonları Dönüştür** DSL'nizi çalıştıran ve Çözüm Gezgini araç çubuğunda, önce oluşturun.  
+> Özelliği ekledikten sonra tıklamayı değil **tüm Şablonları Dönüştür** DSL'nizi çalıştıran ve Çözüm Gezgini araç çubuğunda, önce oluşturun.  
   
  Aşağıdaki şekilde, bu konudaki örnek olarak kullanılan DSL sınıflar ve ilişkiler parçası gösterilmiştir.  
   
@@ -148,7 +148,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
  ![Oluşturulan bir DSL örneği modelinin](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Modeli" kullanıcıların oluşturun ve genellikle bir diyagramı olarak görüntülenen DSL'nizi örneğine başvurur. DSL tanım diyagramı hem DSL'nizi kullanıldığında görüntülenen modeli diyagramları, bu konuda ele alınmıştır.  
+> "Modeli" kullanıcıların oluşturun ve genellikle bir diyagramı olarak görüntülenen DSL'nizi örneğine başvurur. DSL tanım diyagramı hem DSL'nizi kullanıldığında görüntülenen modeli diyagramları, bu konuda ele alınmıştır.  
   
 ## <a name="classes"></a> Etki alanı sınıfları tanımlama  
  Etki alanı sınıfları DSL'nizi kavramlarını temsil eder. Örnekleri *model öğeleri*. Örneğin bir **MusicLibrary** DSL adlı etki alanı sınıfları olabilir **albüm** ve **şarkı**.  
@@ -185,7 +185,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
  Daha fazla bilgi için [etki alanı ilişkilerinin özellikleri](../modeling/properties-of-domain-relationships.md) ve [etki alanı rollerinin özellikleri](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  Gömme devralma ile aynı değil. Gömme ilişkisi çocuklarını özellikleri devralması değil.  
+> Gömme devralma ile aynı değil. Gömme ilişkisi çocuklarını özellikleri devralması değil.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Her etki alanı sınıfı için etki alanı özellikleri ekleyin  
  Etki alanı özellikleri değerlerini depolar. Örnekler şunlardır: Ad, Unvan, yayın tarihi.  
@@ -296,7 +296,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
    2. Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.  
   
        > [!NOTE]
-       >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
+       > Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
   
    3. Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.  
   
@@ -464,7 +464,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
          Altında **görüntüleme özelliği**, listede görüntülenmesi gereken özelliği seçin. Örnekte, başlık budur.  
   
 > [!NOTE]
->  Yol alanları dekoratörünün Dekoratör eşlemesindeki ve bölme harita alanları kullanarak, daha karmaşık ilişkileri bölme şekli ile alan sınıfları arasındaki yapabilirsiniz.  
+> Yol alanları dekoratörünün Dekoratör eşlemesindeki ve bölme harita alanları kullanarak, daha karmaşık ilişkileri bölme şekli ile alan sınıfları arasındaki yapabilirsiniz.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Şekli oluşturmak için bir araç tanımlamak için  
   
@@ -475,7 +475,7 @@ Bir etki alanına özgü dil (DSL) tanımlamak için oluşturduğunuz bir [!INCL
 3. Düğümü altında **araç kutusu sekmeleri** örneğin MusicLibrary DSL'nizi aynı ada sahip. Tıklayın **öğesi aracı Ekle**.  
   
     > [!NOTE]
-    >  Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
+    > Sağ varsa **Araçları** düğümünü görmezsiniz **öğesi aracı ekleme**. Bunun yerine, yukarıdaki düğüme tıklayın.  
   
 4. Yeni öğe aracı seçiliyken Özellikler penceresinde ayarlayın **sınıfı** son eklediğiniz etki alanı sınıfı için.  
   

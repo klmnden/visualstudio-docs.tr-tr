@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437469"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
  Metin şablonları ya da kullanıcılarınızın modelleri işleyen diğer araçları yazıyorsanız doğrulama özellikle önemlidir. Modelleri tarafından bu Araçları'nı varsayıldı önkoşulları karşılayan doğrulama sağlar.  
   
 > [!WARNING]
->  Ayrıca yanı sıra uzantısı menü komutları ve hareket işleyicileri DSL'nizi uzantıları ayrı tanımlanması için doğrulama kısıtlamaları izin verebilirsiniz. Kullanıcılar DSL'nizi yanı sıra bu uzantıları yüklemeyi tercih edebilirsiniz. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).  
+> Ayrıca yanı sıra uzantısı menü komutları ve hareket işleyicileri DSL'nizi uzantıları ayrı tanımlanması için doğrulama kısıtlamaları izin verebilirsiniz. Kullanıcılar DSL'nizi yanı sıra bu uzantıları yüklemeyi tercih edebilirsiniz. Daha fazla bilgi için [MEF kullanarak DSL'nizi genişletme](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Doğrulama çalışıyor  
  Diğer bir deyişle, bir kullanıcı bir model düzenlerken, aşağıdaki eylemleri doğrulama, etki alanına özgü dil örneğini çalıştırabilirsiniz:  
@@ -52,7 +52,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
  Her doğrulama yöntemi, bulduğu hataları bildirir.  
   
 > [!NOTE]
->  Doğrulama yöntemlerinin hataları bildirin, ancak modelin değiştirmeyin. İsterseniz ayarlamak veya bazı değişiklikleri önlemek için bkz: [doğrulama alternatifleri](#alternatives).  
+> Doğrulama yöntemlerinin hataları bildirin, ancak modelin değiştirmeyin. İsterseniz ayarlamak veya bazı değişiklikleri önlemek için bkz: [doğrulama alternatifleri](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Doğrulama kısıtlaması tanımlamak için  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Bir yöntemle kadar ön ek `[ValidationMethod()]` istediğiniz öznitelikler. Bir yöntem hem özel hem de standart kategorisine ekleyebilirsiniz.  
+> Bir yöntemle kadar ön ek `[ValidationMethod()]` istediğiniz öznitelikler. Bir yöntem hem özel hem de standart kategorisine ekleyebilirsiniz.  
   
  Özel doğrulama çağırmak için:  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Geçersiz bir değişiklik yapılmaya çalışılırsa, işlem geri alma.** Ayrıca bu amaç için bir kural tanımlayabilirsiniz, ancak bazı durumlarda bir özellik işleyicisi geçersiz kılmak olası **OnValueChanging()**, veya gibi bir yöntemi geçersiz kılmak için `OnDeleted().` bir işlem geri almak için kullanmak `this.Store.TransactionManager.CurrentTransaction.Rollback().` daha fazla bilgi için bilgi edinmek bkz [etki alanı özellik değeri değişiklik işleyicileri](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Kullanıcının değişiklik ayarlanır veya bırakıldığı geri olduğunu bilir emin olun. Örneğin, kullanın `System.Windows.Forms.MessageBox.Show("message").`  
+> Kullanıcının değişiklik ayarlanır veya bırakıldığı geri olduğunu bilir emin olun. Örneğin, kullanın `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gezinme ve Program kodundaki modeli güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)   

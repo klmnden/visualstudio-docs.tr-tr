@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438809"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma
   Microsoft Office Excel koruma özelliği, kullanıcıları ve kod çalışma sayfasındaki nesneleri değiştirmesini önlemeye yardımcı olur. Korumayı etkinleştirme sonra varsayılan olarak, tüm hücreler kilitlenir.
@@ -30,7 +30,7 @@ ms.locfileid: "60062223"
  Belge düzeyi özelleştirmelerde çalışma sayfalarını Excel Tasarımcısı kullanarak koruyabilirsiniz. Ayrıca çalışma programlı olarak çalışma zamanında herhangi bir proje türünde koruyabilirsiniz.
 
 > [!NOTE]
->  Windows Forms denetimleri için korumalı alanlarına çalışma sayfası eklenemiyor.
+> Windows Forms denetimleri için korumalı alanlarına çalışma sayfası eklenemiyor.
 
 ## <a name="use-the-designer"></a>Tasarımcısını kullanma
 

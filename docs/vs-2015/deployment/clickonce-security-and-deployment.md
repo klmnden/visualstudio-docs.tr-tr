@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423267"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +78,13 @@ ms.locfileid: "54753931"
  Uygulama kullanıcının eklenebilir **Başlat** menü ve **Program Ekle veya Kaldır** grubu **Denetim Masası**. Diğer dağıtım teknolojileri farklı olarak, hiçbir şey eklenir **Program dosyaları** klasör veya kayıt defteri ve yönetici hakları yok yüklemesi için gerekli  
   
 > [!NOTE]
->  Uygulamanın eklenmesini önlemek mümkündür **Başlat** menü ve **Program Ekle veya Kaldır** grup, etkin bir Web uygulaması gibi davranır kolaylaştırır. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+> Uygulamanın eklenmesini önlemek mümkündür **Başlat** menü ve **Program Ekle veya Kaldır** grup, etkin bir Web uygulaması gibi davranır kolaylaştırır. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçme](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
 ### <a name="updating-clickonce-applications"></a>Updating ClickOnce Applications  
  Uygulama geliştiricileri, uygulamanın güncelleştirilmiş sürümünü oluşturduğunuzda, bunlar yeni bir uygulama bildirimi oluşturmak ve bir dağıtım konuma dosyaları kopyalayın — genellikle bir kardeş klasör özgün uygulamanın dağıtım klasörü. Yönetici, dağıtım bildirimi, uygulamanın yeni sürümü konumunu işaret edecek şekilde güncelleştirir.  
   
 > [!NOTE]
->  **Yayımlama Sihirbazı** Visual Studio'da bu adımları gerçekleştirmek için kullanılabilir.  
+> **Yayımlama Sihirbazı** Visual Studio'da bu adımları gerçekleştirmek için kullanılabilir.  
   
  Dağıtım konumu ek olarak, dağıtım bildirimini ayrıca burada uygulama için güncelleştirilmiş sürümleri denetler bir güncelleştirme konumu (Web sayfası veya ağ dosya paylaşımı) içerir. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Yayımlama** özellikleri ne zaman ve ne sıklıkta uygulama güncelleştirmeleri denetlesin belirtmek için kullanılır. Güncelleştirme davranışı dağıtım bildiriminde belirtilebilir ve uygulamanın kullanıcı arabirimi yoluyla kullanıcı seçenekleri sunulabilir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API'leri. Ayrıca, **Yayımla** özellikleri işe güncelleştirmeleri zorunlu kılmak için veya önceki bir sürümüne geri almak için. Daha fazla bilgi için [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).  
   

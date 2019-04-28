@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440395"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Office belgelerine çalışma zamanında denetimler ekleme
   Microsoft Office Word belgesi ve Microsoft Office Excel çalışma zamanında denetimler ekleyebilirsiniz. Ayrıca bunları çalışma zamanında kaldırabilirsiniz. Çalışma zamanında ekleyip denetimleri çağrılır *Dinamik denetimleri*.
@@ -74,7 +74,7 @@ ms.locfileid: "60075811"
  Statik denetimlerini çalışma zamanında kaldırılamıyor. Kullanmayı denerseniz `Delete` veya `Remove` yöntemi statik bir denetimi kaldırmak için bir <xref:Microsoft.Office.Tools.CannotRemoveControlException> oluşturulur.
 
 > [!NOTE]
->  Program aracılığıyla denetimlerinde kaldırmayın `Shutdown` belgenin olay işleyicisi. UI öğeleri artık kullanılabilir `Shutdown` olayı oluşturulur. Denetimleri belge kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay için olay işleyicisi aşağıdaki gibi eklemek <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> veya <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> Word için veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> Excel için.
+> Program aracılığıyla denetimlerinde kaldırmayın `Shutdown` belgenin olay işleyicisi. UI öğeleri artık kullanılabilir `Shutdown` olayı oluşturulur. Denetimleri belge kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay için olay işleyicisi aşağıdaki gibi eklemek <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> veya <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> Word için veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>, veya <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> Excel için.
 
 ## <a name="HostControls"></a> Konak denetimleri belgelere ekleme
 
@@ -103,7 +103,7 @@ Bir Belge kaydedildiğinde ve sonra kapalı olduğunda, tüm dinamik olarak olu�
  Bir Belge kaydedildiğinde ve ardından kapatıldığında, dinamik olarak oluşturulan tüm Windows Formları denetimlerini belgeden kaldırılır. Çözümünüze belge açıldığında denetimleri yeniden oluşturmak için kod ekleyebilirsiniz. Bir VSTO eklentisi kullanarak Windows Forms denetimlerini dinamik oluşturursanız, denetimler için ActiveX sarmalayıcısının belgede kalır. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 > [!NOTE]
->  Windows Forms denetimleri için korumalı belgeleri program aracılığıyla eklenemez. Program aracılığıyla bir Word belgesi veya Excel çalışma sayfası, bir denetim eklemek için korumasını, belge kapatıldığında denetimin ActiveX sarmalayıcısının üretimi kaldırmak için ek kod yazmanız gerekir. Denetimin ActiveX sarmalayıcısının üretimi, korumalı belgeleri otomatik olarak silinmez.
+> Windows Forms denetimleri için korumalı belgeleri program aracılığıyla eklenemez. Program aracılığıyla bir Word belgesi veya Excel çalışma sayfası, bir denetim eklemek için korumasını, belge kapatıldığında denetimin ActiveX sarmalayıcısının üretimi kaldırmak için ek kod yazmanız gerekir. Denetimin ActiveX sarmalayıcısının üretimi, korumalı belgeleri otomatik olarak silinmez.
 
 ### <a name="add-custom-controls"></a>Özel denetim ekleme
  Eklemek istiyorsanız bir <xref:System.Windows.Forms.Control> kullanılabilir yardımcı yöntemler gibi özel bir kullanıcı denetimi tarafından desteklenmiyor, aşağıdaki yöntemleri kullanın:

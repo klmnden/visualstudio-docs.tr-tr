@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440045"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Nasıl yapılır: Hedefleri ve Görevleri Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "59659000"
 Bunlar geliştirme bilgisayarının ortamı bağımsız olarak hedef ortamdaki çalıştırmak için seçili MSBuild görevleri ayarlanabilir. Örneğin, bir 64 bit bilgisayar hedefleri 32 bit mimari bir uygulama oluşturmak için kullandığınızda, seçili görevleri bir 32 bit işlemde çalıştırılır.  
   
 > [!NOTE]
->  Bir derleme görevi, Visual C# veya Visual Basic gibi bir .NET dilinde yazılmış ve yerel kaynakları veya araçları kullanmaz, uyarlama olmadan herhangi bir hedef bağlamında çalışır.  
+> Bir derleme görevi, Visual C# veya Visual Basic gibi bir .NET dilinde yazılmış ve yerel kaynakları veya araçları kullanmaz, uyarlama olmadan herhangi bir hedef bağlamında çalışır.  
   
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask öznitelikleri ve görev parametreleri  
  Aşağıdaki `UsingTask` öznitelikleri belirli derleme sürecinde bir görevin tüm işlemleri etkiler:  
   
--   `Runtime` Öznitelik varsa, ortak dil çalışma zamanı (CLR) sürümünü ayarlar ve bu değerlerden herhangi birini alabilir: `CLR2`, `CLR4`, `CurrentRuntime`, veya `*` (çalışma zamanı herhangi).  
+- `Runtime` Öznitelik varsa, ortak dil çalışma zamanı (CLR) sürümünü ayarlar ve bu değerlerden herhangi birini alabilir: `CLR2`, `CLR4`, `CurrentRuntime`, veya `*` (çalışma zamanı herhangi).  
   
--   `Architecture` Öznitelik varsa, platform ve bit genişliği ayarlar ve bu değerlerden herhangi birini alabilir: `x86`, `x64`, `CurrentArchitecture`, veya `*` (herhangi bir mimari).  
+- `Architecture` Öznitelik varsa, platform ve bit genişliği ayarlar ve bu değerlerden herhangi birini alabilir: `x86`, `x64`, `CurrentArchitecture`, veya `*` (herhangi bir mimari).  
   
--   `TaskFactory` Özniteliği varsa, ayarlar oluşturur ve görev örneğini çalıştıran ve yalnızca değerini alır görev fabrikasını `TaskHostFactory`. Daha fazla bilgi için bu belgenin sonraki bölümlerinde görev oluşturucular bölümüne bakın.  
+- `TaskFactory` Özniteliği varsa, ayarlar oluşturur ve görev örneğini çalıştıran ve yalnızca değerini alır görev fabrikasını `TaskHostFactory`. Daha fazla bilgi için bu belgenin sonraki bölümlerinde görev oluşturucular bölümüne bakın.  
   
 ```  
 <UsingTask TaskName="SimpleTask"   
@@ -53,7 +53,7 @@ Bunlar geliştirme bilgisayarının ortamı bağımsız olarak hedef ortamdaki �
  MSBuild görevi çalışmadan önce bir eşleştirme için görünüyor `UsingTask` aynı hedef bağlam sahip.  Belirtilen parametreleri `UsingTask` ancak eşleştirilecek karşılık gelen görevin değil olarak kabul edilir.  Görev ancak karşılık gelen içinde belirtilen parametreleri `UsingTask` eşleştirilecek değerlendirilir. Parametre değerlerini ya da belirtilmezse `UsingTask` veya değerleri varsayılan olarak, görev `*` (herhangi bir parametre).  
   
 > [!WARNING]
->  Birden fazla ise `UsingTask` var ve tüm eşleşen sahip `TaskName`, `Runtime`, ve `Architecture` öznitelikleri, değerlendirilecek sonuncu diğerleri değiştirir.  
+> Birden fazla ise `UsingTask` var ve tüm eşleşen sahip `TaskName`, `Runtime`, ve `Architecture` öznitelikleri, değerlendirilecek sonuncu diğerleri değiştirir.  
   
  MSBuild görevi parametreleri ayarlarsanız bulmaya çalışır bir `UsingTask` , aşağıdaki parametrelerle eşleşen veya en azından, bunları çakışıyor değil.  Birden fazla `UsingTask` aynı hedef bağlamı belirtebilirsiniz.  Örneğin, farklı bir hedef ortamlar için farklı yürütülebilir dosyaları içeren bir görev bu şuna benzeyebilir:  
   
@@ -103,12 +103,12 @@ Bunlar geliştirme bilgisayarının ortamı bağımsız olarak hedef ortamdaki �
  Diğer görev parametreleri aksine `MSBuildRuntime` ve `MSBuildArchitecture` görev için görünür değildir.  İçinde çalıştığı bağlamı kullanan bir görev yazmak için .NET Framework çağrı yaparak içerik test, veya diğer görev parametreleri aracılığıyla bağlam bilgilerini geçirmek için derleme özelliklerini kullanın.  
   
 > [!NOTE]
->  `UsingTask` öznitelikleri araç takımını kullanmanız ve ortam özelliklerinden ayarlayabilirsiniz.  
+> `UsingTask` öznitelikleri araç takımını kullanmanız ve ortam özelliklerinden ayarlayabilirsiniz.  
   
  `MSBuildRuntime` Ve `MSBuildArchitecture` parametreleri hedef bağlam, aynı zamanda en sınırlı kapsamı en esnek bir yolunu sağlar.  Bir yandan, çünkü bunlar görev örneği kendisini ayarlamak ve çalıştırmak üzere görev olana kadar değerlendirilmeyen, değerlendirme süresi hem de derleme sırasında mevcut özelliklerin tam kapsamı değerinden türetebilirsiniz.  Öte yandan, bu parametreler yalnızca belirli bir hedefe bir görev belirli bir örneği için geçerlidir.  
   
 > [!NOTE]
->  Görev parametreleri olmayan görev ana bağlamında, üst düğüm bağlamında değerlendirilir. Çalışma zamanı veya mimarisi-(örneğin, Program dosyalarının konumu) bağımlıdır ortam değişkenlerini üst düğümün eşleşen değeri değerlendirir.  Aynı ortam değişkenini görev tarafından doğrudan salt okunursa, ancak bunu doğru görev ana bağlamında değerlendirilir.  
+> Görev parametreleri olmayan görev ana bağlamında, üst düğüm bağlamında değerlendirilir. Çalışma zamanı veya mimarisi-(örneğin, Program dosyalarının konumu) bağımlıdır ortam değişkenlerini üst düğümün eşleşen değeri değerlendirir.  Aynı ortam değişkenini görev tarafından doğrudan salt okunursa, ancak bunu doğru görev ana bağlamında değerlendirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hedefleri ve Görevleri Yapılandırma](../msbuild/configuring-targets-and-tasks.md)

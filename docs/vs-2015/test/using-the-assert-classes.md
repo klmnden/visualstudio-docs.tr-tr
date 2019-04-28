@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408390"
 ---
 # <a name="using-the-assert-classes"></a>Onay Sınıfları Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Onay sınıfları UnitTestingFramework ad alanı, belirli işlevselliğini doğr
  Her bir test, yetersiz bir sonuç üretir assertınconclusiveexception oluşturur oluşturulur. Genellikle, hala henüz çalıştırılmaya hazır değil belirtmek için çalışmakta olduğunuz bir test için Assert.Inconclusive deyimi ekleyin.  
   
 > [!NOTE]
->  Ignore özniteliği ile çalıştırmaya hazır değil bir test işaretlemek için alternatif bir strateji olacaktır. Ancak, bu kolayca uygulamak için sol testlerin sayısı bir rapor oluşturulamıyor dezavantajı vardır.  
+> Ignore özniteliği ile çalıştırmaya hazır değil bir test işaretlemek için alternatif bir strateji olacaktır. Ancak, bu kolayca uygulamak için sol testlerin sayısı bir rapor oluşturulamıyor dezavantajı vardır.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436845"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Analizi İade İlkeleri Oluşturma veya Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053162"
 Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki tüm kod projeleri üzerinde çalıştırılması gerektirebilir. Kod Analizi gerektiren kod tabanında denetlenen kodun kalitesini artırabilir.  
   
 > [!NOTE]
->  Bu özellik yalnızca Team Foundation Server kullanıyorsanız kullanılabilir.  
+> Bu özellik yalnızca Team Foundation Server kullanıyorsanız kullanılabilir.  
   
  Kod çözümleme iade ilkeleri, takım proje ayarlarında belirlenir ve her kod projesini takım projesinde geçerli. Kod Analizi yürütmeleri kod projesi için proje (.xxproj) dosyasında kod projeleri için yapılandırılır. Kod Analizi yürütmeleri yerel bilgisayarda gerçekleştirilir. İade Kod Analizi ilkesini etkinleştirmek, son kullanıcıların düzenlemeden sonra iade edilmesi için bir kod projesi dosyalarda derlenmiş ve en az bir kod analizini çalıştırdığınızda, içeren takım projesi ayarlarını kurallarında bilgisayarda gerçekleştirilmesi gereken yere c değişiklikleri yapıldı.  
   

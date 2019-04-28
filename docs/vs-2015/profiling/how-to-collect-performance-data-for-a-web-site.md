@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432794"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: Bir Web sitesi için performans verilerini topla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060560"
 Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplamak için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması. Açık olan bir Web uygulaması profilini oluşturabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya profil bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] yerel bilgisayarınızda bulunan ve açık değil Web sitesi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
->  **Performans Sihirbazı** Katman etkileşimi (TIP) verileri, JScript performans verilerini veya hem toplanan profil oluşturma verilerinin eklemenize olanak tanır. İpucu seçeneği, sunucu tarafı işlemlerden veri toplar. JScript profil oluşturmayı yerel veya uzak bir Web sitesi üzerinde çalıştırılan betikler veri toplar. Çoğu durumda, seçeneklerden yalnızca birini seçmeniz gerekir.  
+> **Performans Sihirbazı** Katman etkileşimi (TIP) verileri, JScript performans verilerini veya hem toplanan profil oluşturma verilerinin eklemenize olanak tanır. İpucu seçeneği, sunucu tarafı işlemlerden veri toplar. JScript profil oluşturmayı yerel veya uzak bir Web sitesi üzerinde çalıştırılan betikler veri toplar. Çoğu durumda, seçeneklerden yalnızca birini seçmeniz gerekir.  
   
  Yönetici kullanımına kullanıcı erişim izinleri ayarlarına bağlı olarak tek bir kullanıcı olabilir veya ASP.NET işleminin barındıran bilgisayarda bir profil oluşturucu oturumu oluşturmak için güvenlik izni olmayabilir. Aşağıdaki örneklerde kullanıcılar arasındaki olası farklar gösterilmektedir:  
   

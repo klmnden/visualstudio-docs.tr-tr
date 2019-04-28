@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445605"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ ms.locfileid: "60096588"
  Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derleyicisi `Csc` görevi tek görevdir. Derlenecek kaynak dosyaların listesini bekler ve bu değeri tarafından verilen `Compile` öğesi. `Compile` Öğesi yalnızca bir kaynak dosyasına: HelloWorld.cs'ye başvuruyor.  
   
 > [!NOTE]
->  Öğede, aşağıdaki gibi .cs dosya adı uzantısına sahip tüm dosyalara başvurmak için yıldız işareti joker karakter (*) kullanabilirsiniz:  
+> Öğede, aşağıdaki gibi .cs dosya adı uzantısına sahip tüm dosyalara başvurmak için yıldız işareti joker karakter (*) kullanabilirsiniz:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  Hata ayıklamayı ve Seçici yaptığından ancak joker karakter kullanımını önermeyiz kaynak dosyalar eklenirse veya silinirse hedeflemeyi daha zor.  
+> Hata ayıklamayı ve Seçici yaptığından ancak joker karakter kullanımını önermeyiz kaynak dosyalar eklenirse veya silinirse hedeflemeyi daha zor.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Yolu, Msbuild'i içerecek şekilde genişletme  
  MSBuild'e erişmeden önce PATH ortam değişkenini .NET Framework klasörünü içerecek şekilde genişletmeniz gerekir.  
@@ -182,9 +182,9 @@ ms.locfileid: "60096588"
      **Hello, world!** iletisi görüntülenmelidir.  
   
 > [!NOTE]
->  Ayrıntı düzeyini yükselterek, yapı hakkında daha fazla ayrıntı görebilirsiniz. Ayrıntı düzeyini "ayrıntılı" ayarlamak için komut isteminde aşağıdaki komutlardan birini yazın:  
+> Ayrıntı düzeyini yükselterek, yapı hakkında daha fazla ayrıntı görebilirsiniz. Ayrıntı düzeyini "ayrıntılı" ayarlamak için komut isteminde aşağıdaki komutlardan birini yazın:  
 >   
->  **MSBuild, helloworld.csproj /t:Build /verbosity: ayrıntılı**  
+> **MSBuild, helloworld.csproj /t:Build /verbosity: ayrıntılı**  
   
 ## <a name="adding-build-properties"></a>Derleme özellikleri ekleme  
  Daha fazla denetim derleme proje dosyasına yapı özellikleri ekleyebilirsiniz. Şimdi bu özellikleri ekleyin:  
@@ -243,17 +243,17 @@ ms.locfileid: "60096588"
 ```  
   
 > [!NOTE]
->  Ters eğik çizgi eklemenizi öneririz (\\) yol sınırlayıcısını öğesinde belirttiğinizde klasör adının sonunda `OutputPath` eklemek yerine öğesi `OutputAssembly` özniteliği `Csc` görev. Bu nedenle,  
+> Ters eğik çizgi eklemenizi öneririz (\\) yol sınırlayıcısını öğesinde belirttiğinizde klasör adının sonunda `OutputPath` eklemek yerine öğesi `OutputAssembly` özniteliği `Csc` görev. Bu nedenle,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  daha iyidir  
+> daha iyidir  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Derleme özelliklerini test etme  
  Artık, çıkış klasörünü ve uygulama adını belirtmek için derleme özelliklerini kullandığınız proje dosyasını kullanarak uygulamayı oluşturabilirsiniz.  

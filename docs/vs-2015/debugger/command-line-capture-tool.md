@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437797"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  Doğrulama modunda `events` grafik olaylarını anında sonuçlarını karşılaştırılır kümesini belirtir. Örneğin, `-examine present,draw,copy,clear` karşılaştırma yalnızca bu kategoriye ait olan olaylar için sınırlar.  
   
 > [!TIP]
->  İle başlamanızı öneririz `-examine present,draw,copy,clear` çünkü bu çoğu sorunu ortaya ancak olaylar daha kapsamlı bir dizi daha önemli ölçüde daha az zaman alır. Gerekirse, bu olayları doğrulamak ve diğer türlerdeki sorunları ortaya çıkarmak için olayları daha büyük ya da farklı bir dizi belirtebilirsiniz.  
+> İle başlamanızı öneririz `-examine present,draw,copy,clear` çünkü bu çoğu sorunu ortaya ancak olaylar daha kapsamlı bir dizi daha önemli ölçüde daha az zaman alır. Gerekirse, bu olayları doğrulamak ve diğer türlerdeki sorunları ortaya çıkarmak için olayları daha büyük ya da farklı bir dizi belirtebilirsiniz.  
   
  `-haltonfail`  
  Doğrulama modunda `-haltonfail` WARP oluşturucusu ve donanım arasındaki farklar algılandığında doğrulama durdurur. Bir tuşa basıldığında sonra doğrulama devam eder.  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  Yukarıdaki örnekteki komut, 3B içeriği işlemek için WebGL API kullanan www.fishgl.com bulunan Web sayfası görüntülerken Internet Explorer'ın Masaüstü sürümünü grafik bilgileri yakalar.  
   
 > [!NOTE]
->  Sonra uygulamayı görünen komut satırı bağımsız değişkenleri için geçirildiğinden, kullanmadan önce DXCap.exe için hedeflenen bağımsız değişkenleri belirtmeniz gerekir `–c` seçeneği.  
+> Sonra uygulamayı görünen komut satırı bağımsız değişkenleri için geçirildiğinden, kullanmadan önce DXCap.exe için hedeflenen bağımsız değişkenleri belirtmeniz gerekir `–c` seçeneği.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Windows Store uygulamadan grafik bilgilerini yakalama.  
  Windows Store uygulamadan grafik bilgilerini yakalayabilirsiniz.  

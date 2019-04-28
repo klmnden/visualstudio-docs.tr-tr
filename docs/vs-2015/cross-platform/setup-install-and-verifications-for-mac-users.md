@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 54297754fcc85484a90e25686b0fd14aa7841946
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 543401b0e3fcebee22c1c9581f22ec96a76000af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433881"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac kullanıcıları için kurulum, yükleme ve doğrulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Bu konuda, Mac'te bir Windows sanal makine içinde Visual Studio isteğe bağlı
      ![Xamarin güncelleştirmeleri Visual Studio seçenekleri](../cross-platform/media/cross-plat-xamarin-setup-3.png "çapraz-Plat Xamarin Kurulum 3")  
   
     > [!NOTE]
-    >  Önceki Xamarin lisans sorunları önlemek için daha yüksek veya Xamarin 4.0.3.214 sürümüne güncelleştirmek emin olun.  Güncelleştirmeleri denetlemek ve derleme araçları bir hatayı Microsoft hakkında çalışırsanız, iş parçacığı bakın [Xamarin'in forumları](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
+    > Önceki Xamarin lisans sorunları önlemek için daha yüksek veya Xamarin 4.0.3.214 sürümüne güncelleştirmek emin olun.  Güncelleştirmeleri denetlemek ve derleme araçları bir hatayı Microsoft hakkında çalışırsanız, iş parçacığı bakın [Xamarin'in forumları](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
   
 6. Xamarin hem Windows hem de Mac bilgisayarlara yükleme işlemini tamamladıktan sonra yönergeleri takip edin [XMA kullanarak Mac bilgisayara bağlayarak](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) Visual Studio'dan iOS ile çalışabilirsiniz.  
   

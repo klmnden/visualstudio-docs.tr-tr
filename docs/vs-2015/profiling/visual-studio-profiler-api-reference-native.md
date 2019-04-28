@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 911d80c0116664d93eebe431719a3e834eea6d8e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 3b296ae403658f4d39558c28e11a425adee7650a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431114"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio Profil Oluşturucu API Başvurusu (Yerel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54774834"
 Visual Studio Profiler API'leri, toplanan veri miktarı program aracılığıyla denetlemenize izin veren ve profil oluşturma sırasında zaman damgası ve profillerinin ikisi de işareti koyun. Yerel API'leri kullanmak için VSPerf.h üstbilgi dosyasını dahil edin ve VSPerf.lib projenize ekleyin.  
   
 > [!NOTE]
->  Varsayılan olarak, VSPerf.h ve VSPerf.lib bulunan \<sürücü >: \Program Visual Studio 9\Team Araçlar\Performans Tools\PerfSDK dizin.  
+> Varsayılan olarak, VSPerf.h ve VSPerf.lib bulunan \<sürücü >: \Program Visual Studio 9\Team Araçlar\Performans Tools\PerfSDK dizin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

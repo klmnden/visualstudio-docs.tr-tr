@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443428"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>İzlenecek yol: Önce test desteği kullanımdan üret özelliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Yeni Proje iletişim kutusu
 2. Sınıf bildirimi bulun `UnitTest1` ve yeniden adlandırın `AutomobileTest`. C# ' ta, bir `UnitTest1()` Oluşturucusu varsa, yeniden adlandırın `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense için IntelliSense deyim tamamlamada artık iki seçenek sunar: *tamamlama modunu* ve *öneri modu*. Öneri Modu tanımlanmadan önce sınıflar ve üyeler kullanılır durumlar için kullanın. Bir IntelliSense penceresinin açık olduğunda, tamamlama modu ile öneri modu arasında geçiş yapmak için CTRL + ALT + ARA ÇUBUĞU tuşlarına basabilirsiniz. Bkz: [IntelliSense kullanarak](../ide/using-intellisense.md) daha fazla bilgi için. Öneri Modu yardımcı olacak yazarken `Automobile` sonraki adımda.  
+    > IntelliSense için IntelliSense deyim tamamlamada artık iki seçenek sunar: *tamamlama modunu* ve *öneri modu*. Öneri Modu tanımlanmadan önce sınıflar ve üyeler kullanılır durumlar için kullanın. Bir IntelliSense penceresinin açık olduğunda, tamamlama modu ile öneri modu arasında geçiş yapmak için CTRL + ALT + ARA ÇUBUĞU tuşlarına basabilirsiniz. Bkz: [IntelliSense kullanarak](../ide/using-intellisense.md) daha fazla bilgi için. Öneri Modu yardımcı olacak yazarken `Automobile` sonraki adımda.  
   
 3. Bulun `TestMethod1()` yöntemi ve yeniden adlandırın `DefaultAutomobileIsInitializedCorrectly()`. Bu yöntemde, bir sınıf adlı yeni bir örneğini oluşturma `Automobile`aşağıdaki resimlerde gösterildiği gibi. Bir derleme zamanı hatası gösteren dalgalı çizgi görünür ve akıllı etiket türü adı altında görünür. Akıllı etiket konumunu tam değişir, kullanmanıza bağlı olarak [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] veya [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

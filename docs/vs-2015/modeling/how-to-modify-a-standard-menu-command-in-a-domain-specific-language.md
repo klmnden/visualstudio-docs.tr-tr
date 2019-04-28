@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441035"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
    Bu konu, bu yordamı açıklar.  
   
 > [!NOTE]
->  Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Menü komutlarınızı oluşturmak istiyorsanız, bkz. [nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> Hangi komutların, değişiklik yapabilirsiniz?  
   
@@ -52,7 +52,7 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
 5. Dosyayı, yaptığınız düzenlemeleri kaydetmeden kapatın.  
   
     > [!NOTE]
-    >  Genellikle, oluşturulan dosyaları düzenleme yapmamanız gerekir. Tüm düzenlemeleri dosyalar oluşturulur bir sonraki açışınızda kaybolur.  
+    > Genellikle, oluşturulan dosyaları düzenleme yapmamanız gerekir. Tüm düzenlemeleri dosyalar oluşturulur bir sonraki açışınızda kaybolur.  
   
 ## <a name="extend"></a> Uygun komut kümesi sınıfını genişletir  
  Komut kümesi sınıfının bir kısmi bildirimi içeren yeni bir dosya oluşturun.  
@@ -90,7 +90,7 @@ DSL'nizi içinde otomatik olarak tanımlanan standart komutlardan bazıları dav
  Aşağıdaki örnek kullanıcının birden fazla şekil seçildiğinde Sil menü öğesi devre dışı bırakır.  
   
 > [!NOTE]
->  Bu yöntem, komutu bir tuş vuruşu kullanılabilir olup olmadığını etkilemez. Örneğin, Sil menü öğesi devre dışı bırakma komutu Delete tuşuna çağrılan engellemez.  
+> Bu yöntem, komutu bir tuş vuruşu kullanılabilir olup olmadığını etkilemez. Örneğin, Sil menü öğesi devre dışı bırakma komutu Delete tuşuna çağrılan engellemez.  
   
 ```  
 /// <summary>  

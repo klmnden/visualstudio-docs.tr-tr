@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437532"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Sınıfları ve Türleri Tasarlama (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,22 +25,22 @@ ms.locfileid: "54795518"
 Kullanarak **Sınıf Tasarımcısı**, yalnızca sınıfları ve türleri görselleştirebilir değil, ancak de tasarlayın. Aşağıdaki konularda, bunun nasıl yapılacağı açıklanmaktadır.  
   
 > [!NOTE]
->  Sınıf Tasarımcısı ile çalışırken, güvenlik bağlamı için uygun kodu doğrulamak için yürütmeden önce yaydığı kod incelemeniz gerekir.  
+> Sınıf Tasarımcısı ile çalışırken, güvenlik bağlamı için uygun kodu doğrulamak için yürütmeden önce yaydığı kod incelemeniz gerekir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Nasıl yapılır: Sınıf Tasarımcısı Kullanarak Tür Oluşturma](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Sınıf diyagramına bir türü oluşturmak için nasıl kullanılacağını açıklar.  
   
- [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralma oluşturma](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Nasıl yapılır: Türler Arasında Devralma Oluşturma (Sınıf Tasarımcısı)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Türler arasında devralma ilişkisi tanımlanacağını açıklar.  
   
- [Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Nasıl yapılır: Türler Arasında İlişkilendirme Oluşturma (Sınıf Tasarımcısı)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Sınıf diyagramında ilişkilerini tanımlamayı açıklar.  
   
- [Nasıl yapılır: (Sınıf Tasarımcısı) koleksiyon ilişkilendirmesini Görselleştirme](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Nasıl yapılır: Koleksiyon İlişkilendirmesini Görselleştirme (Sınıf Tasarımcısı)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Sınıf Tasarımcısı'nda koleksiyon ilişkilendirmesini tanımlanacağını açıklar.  
   

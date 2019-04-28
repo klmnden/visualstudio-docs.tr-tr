@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441539"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Proje Öğesinin Özelliğini Kalıcı Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bir kaynak dosyasının yazar gibi bir proje öğesi eklediğiniz bir özellik k
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE nesnesi ile proje hiyerarşisi edinme  
   
-1.  VSPackage için aşağıdaki kodu ekleyin:  
+1. VSPackage için aşağıdaki kodu ekleyin:  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ Bir kaynak dosyasının yazar gibi bir proje öğesi eklediğiniz bir özellik k
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Proje öğesi özelliği DTE nesnesi ile kalıcı hale getirmek için  
   
-1.  Yöntemin önceki yordamda verilen kod için aşağıdaki kodu ekleyin:  
+1. Yöntemin önceki yordamda verilen kod için aşağıdaki kodu ekleyin:  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ Bir kaynak dosyasının yazar gibi bir proje öğesi eklediğiniz bir özellik k
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection kullanarak proje hiyerarşisi edinme  
   
-1.  VSPackage için aşağıdaki kodu ekleyin:  
+1. VSPackage için aşağıdaki kodu ekleyin:  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ Bir kaynak dosyasının yazar gibi bir proje öğesi eklediğiniz bir özellik k
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Seçilen proje öğesi özelliği, proje hiyerarşisi verilen kalıcı hale getirmek için  
   
-1.  Yöntemin önceki yordamda verilen kod için aşağıdaki kodu ekleyin:  
+1. Yöntemin önceki yordamda verilen kod için aşağıdaki kodu ekleyin:  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ Bir kaynak dosyasının yazar gibi bir proje öğesi eklediğiniz bir özellik k
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>Özellik kalıcı olduğunu doğrulamak için  
   
-1.  Başlangıç [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve ardından açın veya bir çözüm oluşturun.  
+1. Başlangıç [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve ardından açın veya bir çözüm oluşturun.  
   
-2.  Projeyi seçin, VsPkg.cs öğesi **Çözüm Gezgini**.  
+2. Projeyi seçin, VsPkg.cs öğesi **Çözüm Gezgini**.  
   
-3.  Bir kesme noktası kullanın veya aksi halde, VSPackage yüklenir ve SetItemAttribute çalıştığını belirler.  
+3. Bir kesme noktası kullanın veya aksi halde, VSPackage yüklenir ve SetItemAttribute çalıştığını belirler.  
   
     > [!NOTE]
-    >  Sorsorgu UI bağlamı VSPackage yapabilecekleriniz <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Daha fazla bilgi için [VSPackage yükleme](../extensibility/loading-vspackages.md).  
+    > Sorsorgu UI bağlamı VSPackage yapabilecekleriniz <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Daha fazla bilgi için [VSPackage yükleme](../extensibility/loading-vspackages.md).  
   
-4.  Kapat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve proje dosyasını Not Defteri'nde açın. Görmelisiniz \<Yazar > değeriyle Tom, aşağıda gösterildiği gibi etiketleyin:  
+4. Kapat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve proje dosyasını Not Defteri'nde açın. Görmelisiniz \<Yazar > değeriyle Tom, aşağıda gösterildiği gibi etiketleyin:  
   
     ```  
     <Compile Include="VsPkg.cs">  

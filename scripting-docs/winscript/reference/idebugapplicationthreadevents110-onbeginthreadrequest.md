@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47791151bcfe43966c166dfbd21e1135592d8249
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: cd18e6db3e1dc050ffd4da6f2991889f28355192
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440488"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
 Çağrı akışına PDM'ın iş parçacığı kullanarak geçiş başladı.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthreadevents110 arabirimi](../../winscript/reference/idebugapplicationthreadevents110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
+> [Idebugapplicationthreadevents110 arabirimi](../../winscript/reference/idebugapplicationthreadevents110-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

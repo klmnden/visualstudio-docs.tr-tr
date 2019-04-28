@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437162"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656033"
 **Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. Renk değişiklikleri başka bir Visual Studio örneği açma ve yaptığınız değişiklikleri uygulamak için altında beklediğiniz koşullar üretme değerlendirebilirsiniz.  
   
@@ -56,7 +56,7 @@ ms.locfileid: "59656033"
    Yazı tipi stili, boyutu ve rengi görüntü ayarları yazıcı için yapılan değişiklikler, yazdırılan belgelerde metin görünümünü etkiler.  
   
   > [!NOTE]
-  >  Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.  
+  > Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.  
   
 - **Deyim tamamlama**  
   
@@ -75,7 +75,7 @@ ms.locfileid: "59656033"
    Yazı tipi stili, boyutu ve rengi değişiklikler, çıkış bölmeleri sahip IDE'de araç pencereleri, bu öğeyi etkileyen metin görünümünü için ayarları görüntüleyin. Örneğin, çıkış penceresine, komut penceresinde, komut penceresi, vb.  
   
   > [!NOTE]
-  >  Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.  
+  > Değişiklikleri için metni **[tüm metin aracı Windows]** öğeleri etkili olmaz, yaptığınız bunları oturumu sırasında. Visual Studio'nun başka bir örneğini açarak bu tür değişiklikleri değerlendirebilirsiniz.  
   
   **Varsayılanları Kullan**  
   Yazı tipi ve renk değerleri seçili liste öğesini sıfırlar **ayarlarını göster**. **Kullanım** diğer ekran düzenleri seçim için kullanılabilir hale geldiğinde düğmesi görünür. Örneğin, yazıcı için iki düzeni seçebilirsiniz.  
@@ -90,7 +90,7 @@ ms.locfileid: "59656033"
   Ön ve arka plan rengi değiştirebileceğiniz öğeler listelenir.  
   
 > [!NOTE]
->  **Düz metin** varsayılan görünen öğedir. Özellikler bu nedenle, atanan **düz metin** diğer görüntü öğelerine atanan özellikler tarafından geçersiz kılınır. Örneğin, mavi renk atarsanız **düz metin** ve için yeşil renk **tanımlayıcısı**, tüm tanımlayıcılar yeşil renkte görünür. Bu örnekte, **tanımlayıcı** özelliklerini geçersiz kılma **düz metin** özellikleri.  
+> **Düz metin** varsayılan görünen öğedir. Özellikler bu nedenle, atanan **düz metin** diğer görüntü öğelerine atanan özellikler tarafından geçersiz kılınır. Örneğin, mavi renk atarsanız **düz metin** ve için yeşil renk **tanımlayıcısı**, tüm tanımlayıcılar yeşil renkte görünür. Bu örnekte, **tanımlayıcı** özelliklerini geçersiz kılma **düz metin** özellikleri.  
   
  Bazı görüntü öğeleri şunlardır:  
   
@@ -214,7 +214,7 @@ ms.locfileid: "59656033"
  Görüntü öğeleri listesinde seçili öğe için özel bir renk ayarlamanızı izin vermek için renk iletişim kutusu görüntüler.  
   
 > [!NOTE]
->  Renk ayarlarını bilgisayar ekranınızın tarafından özel renkler tanımlama yeteneğiniz sınırlı olabilir. Örneğin, bilgisayar, 256 renkleri görüntülemek için ayarlanır ve özel bir renk seçin **renk** iletişim kutusu, IDE varsayılan olarak en yakın kullanılabilir **temel renk** ve görüntüler, siyah renk **Renk** Önizleme kutusu.  
+> Renk ayarlarını bilgisayar ekranınızın tarafından özel renkler tanımlama yeteneğiniz sınırlı olabilir. Örneğin, bilgisayar, 256 renkleri görüntülemek için ayarlanır ve özel bir renk seçin **renk** iletişim kutusu, IDE varsayılan olarak en yakın kullanılabilir **temel renk** ve görüntüler, siyah renk **Renk** Önizleme kutusu.  
   
  **Öğe arka planı**  
  Seçili öğe için bir arka plan rengi içinden seçebileceğiniz bir renk paletini sağlar **görüntü öğeleri**. Bazı öğeler ilgilidir ve bu nedenle bir ekran düzeni korumanız gerekir çünkü metin arka plan rengini değiştirme derleyici hatası, anahtar sözcük veya işleç gibi öğeler için varsayılanları de değişir.  

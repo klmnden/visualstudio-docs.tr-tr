@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411460"
 ---
 # <a name="t4-template-directive"></a>T4 Şablon Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  Ayrıca sıradan bir elle yazılmış sınıfı taban sınıf olarak kullanabilirsiniz. Taban sınıfın, türetilmiş sınıf tarafından kullanılan yöntemleri sağlaması gerekir.  
   
 > [!WARNING]
->  Kullanırsanız `inherits` ve `hostspecific` öznitelikleri birlikte belirtin hostspecific = "trueFromBase" türetilmiş bir sınıf ve ana bilgisayar = "ve taban sınıfta true". Bu bir çift tanımını önler `Host` oluşturulan kodda özelliği.  
+> Kullanırsanız `inherits` ve `hostspecific` öznitelikleri birlikte belirtin hostspecific = "trueFromBase" türetilmiş bir sınıf ve ana bilgisayar = "ve taban sınıfta true". Bu bir çift tanımını önler `Host` oluşturulan kodda özelliği.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Tasarım zamanı metin şablonunda devralma  
  Tasarım zamanı metin şablonu, bir dosyadır **özel araç** ayarlanır **TextTemplatingFileGenerator**. Şablon kod veya metin parçasını çıktı dosyası oluşturur, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje. Çıktı dosyasını oluşturmak için, şablon ilk olarak genellikle görmediğiniz bir ara program kod dosyasına çevrilir. `inherits` Özniteliği, bu Ara kod için temel sınıfı belirtir.  

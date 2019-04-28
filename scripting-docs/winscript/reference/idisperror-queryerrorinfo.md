@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32d887cad92de28df7e84f71fe6b991ada9067e2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446811"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 Belirli bir tür hata bilgilerini alır.  
@@ -54,7 +54,7 @@ HRESULT QueryErrorInfo(
  `QueryErrorInfo` Yöntemi hata bilgilerinin belirli bir tür alır.  
   
 > [!NOTE]
->  Bu yöntem uygulanmadı.  
+> Bu yöntem uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDispError Arabirimi](../../winscript/reference/idisperror-interface.md)

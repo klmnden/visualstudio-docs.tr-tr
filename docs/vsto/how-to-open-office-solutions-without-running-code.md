@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441775"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma
   Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.
@@ -39,7 +39,7 @@ ms.locfileid: "60117206"
 - Açık belgeler ve çalışma kitaplarından **dosya** menüsünü tutarken **Shift** Word ve Excel belge açılırken başlatma olayları oluşturma önlemek için anahtarı.
 
     > [!NOTE]
-    >  Bir belge veya çalışma kitabından açarsanız **Başlarken** görev bölmesi, basılı **Shift** kodu atlamaz. Ayrıca SHIFT tuşunu basılı olayları belge açıldıktan sonra gerçekleştirilen engellemez.
+    > Bir belge veya çalışma kitabından açarsanız **Başlarken** görev bölmesi, basılı **Shift** kodu atlamaz. Ayrıca SHIFT tuşunu basılı olayları belge açıldıktan sonra gerçekleştirilen engellemez.
 
      Bu yöntem, kodu çalıştıran ve belgeyi değiştirmeden olmadan değişiklik yapmak için bir belge açmak istiyorsanız kullanışlıdır.
 

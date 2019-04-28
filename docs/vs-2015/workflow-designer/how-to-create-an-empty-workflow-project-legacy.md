@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 323a9c845aca2547666e689372ce2ad33b85fbe3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d82130af81338254a98fe9c8a24115c0dcceeff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428086"
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Nasıl yapılır: Boş İş Akışı Projesi Oluşturma (Eski)
 Eski kullanarak boş bir iş akışı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Eski kullanarak boş bir iş akışı projesi oluşturmak için bu adımları [!
 3. Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
   
     > [!NOTE]
-    >  Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
+    > Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
   
 4. İçinde **proje türleri** bölmesinde, seçme Visual C# veya Visual Basic (altında **diğer diller**) ve ardından **iş akışı**.  
   

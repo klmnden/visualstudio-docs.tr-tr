@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446009"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109074"
 Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri için Visual Studio Enterprise aşağıdaki tabloda listelenmiştir. Bu yapılandırmalar kullanılarak oluşturulan eylem kayıtları için de geçerlidir. [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  Kodlanmış kullanıcı arabirimi test işlemi, test altındaki uygulama ile aynı ayrıcalıklara sahip olmalıdır.  
+> Kodlanmış kullanıcı arabirimi test işlemi, test altındaki uygulama ile aynı ayrıcalıklara sahip olmalıdır.  
   
  **Gereksinimler**  
   
@@ -39,7 +39,7 @@ Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri için
 |.NET|.NET 2.0, 3.0, 3.5, 4 ve 4.5. **Not:** [!INCLUDE[TCMext](../includes/tcmext-md.md)] ve Visual Studio her ikisinin çalışması .NET 4. Ancak, listelenen .NET sürümleri kullanılarak geliştirilen uygulamalar desteklenir.|  
   
 > [!NOTE]
->  *UI Eşitlemesi* kayıttan yürütme her denetimin ileti kuyrukta doğrulanan burada bir özelliktir. Bir denetim kendisine gönderilen olaya yanıt vermiyorsa, olay yeniden gönderilir.  
+> *UI Eşitlemesi* kayıttan yürütme her denetimin ileti kuyrukta doğrulanan burada bir özelliktir. Bir denetim kendisine gönderilen olaya yanıt vermiyorsa, olay yeniden gönderilir.  
   
 ## <a name="platform-support"></a>Platform Desteği  
   

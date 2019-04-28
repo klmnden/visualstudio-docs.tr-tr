@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438112"
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komut** penceresi komutları veya doğrudan diğer adlar yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir araç çubuğunda hem menü komutları hem de görünmez komutları yürütebilir. Görüntülenecek **komut** penceresinde seçin **diğer Windows** gelen **görünümü** seçin ve menü **komut penceresi**.
@@ -89,7 +89,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` ve `oldpar` parametreleri
 
     > [!NOTE]
-    >  Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.
+    > Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.
 
 Anahtarlar ve parametreleri konumunu serbestçe dışında komut satırında deyimleri [Kabuk](../../ide/reference/shell-command.md) komutu, belirli bir sırayla parametreler ve anahtarlar gerektirir.
 

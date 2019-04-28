@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431147"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext yöntemi (O/R Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri için eşleme yöntemlerini yöntemleri bölmesinde görüntülenen [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Yöntemler bölmesini tarafında bölmesidir **varlıkları** bölmesinde (ana tasarım yüzeyi). Yöntemler bölmesini listeler <xref:System.Data.Linq.DataContext> kullanarak oluşturduğunuz yöntemleri [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Yöntemler bölmesini varsayılan olarak boştur; saklı yordamları ve işlevleri sürükleyin **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] oluşturmak için <xref:System.Data.Linq.DataContext> yöntemleri ve yöntemler bölmesi doldurabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).  
   
 > [!NOTE]
->  Açın ve sağ tıklayarak yöntemler bölmesini kapatmak [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tıklayıp **yöntemler Bölmesini Gizle** veya **yöntemler bölmesini göster**, veya klavye kısayolunu CTRL + 1 kullanın.  
+> Açın ve sağ tıklayarak yöntemler bölmesini kapatmak [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tıklayıp **yöntemler Bölmesini Gizle** veya **yöntemler bölmesini göster**, veya klavye kısayolunu CTRL + 1 kullanın.  
   
 ## <a name="two-types-of-datacontext-methods"></a>İki tür DataContext yöntemi  
  DataContext yöntemi saklı yordamları ve işlevleri veritabanında eşleyen bu yöntemlerdir. Oluşturun ve yöntemleri bölmesinde DataContext yöntemler [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. İki ayrı türü vardır <xref:System.Data.Linq.DataContext> yöntemleri; Bu, bir veya daha fazla sonuç kümesi döndüren ve desteklemeyenler:  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  Saklı yordamları ve işlevleri sürüklediğinizde **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], dönüş türü oluşturulan <xref:System.Data.Linq.DataContext> yöntemi farklıdır Öğeyi Bırak yere bağlı olarak. Öğeleri doğrudan mevcut bir varlık sınıfı üzerine bırakarak oluşturur bir <xref:System.Data.Linq.DataContext> yöntemi varlık sınıfı dönüş türüne sahip; bırakma öğeleri boş bir alanı üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] oluşturur (ya da bölmesinde) bir <xref:System.Data.Linq.DataContext> döndüren yöntem bir otomatik olarak oluşturulan tür. Oluşturulan otomatik olarak oluşturulan tür saklı yordam veya işlev adı ve saklı yordamı veya işlevi tarafından döndürülen alanlarla eşlenen özellikler eşleşen bir ada sahip.  
   
 > [!NOTE]
->  Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> yöntemleri bölmesine ekledikten sonra yöntemi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve İnceleme **dönüş türü** özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: (O/R Tasarımcısı) bir DataContext yöntemin dönüş türünü değiştirmek](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+> Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> yöntemleri bölmesine ekledikten sonra yöntemi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve İnceleme **dönüş türü** özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: (O/R Tasarımcısı) bir DataContext yöntemin dönüş türünü değiştirmek](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
  Veritabanından O/R Tasarımcısı yüzeyine sürükleyin nesneleri veritabanındaki nesneleri adına göre otomatik olarak yeniden adlandırılacaktır. Aynı nesne birden çok kez sürüklerseniz, bir sayı adlarını ayırır yeni adın sonuna eklenir. Veritabanı nesne adları, boşluk veya Visual Basic veya C# içinde desteklenmeyen karakterler içerdiğinde, boşluk veya geçersiz bir karakter bir alt çizgi ile değiştirilir.  
   

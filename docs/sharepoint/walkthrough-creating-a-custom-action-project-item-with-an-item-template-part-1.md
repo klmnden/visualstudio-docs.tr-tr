@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430483"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>İzlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma
   Visual Studio'da SharePoint Proje sistemi kendi proje öğesi türleri oluşturarak genişletebilirsiniz. Bu kılavuzda, bir SharePoint sitesinde özel eylem oluşturmak için bir SharePoint projesine eklenen bir proje öğesi oluşturur. Bir menü öğesi özel eylemi ekler **Site eylemleri** SharePoint sitesinin menüsü.
@@ -44,7 +44,7 @@ ms.locfileid: "60059129"
   Tek başına bir gidiş yolu budur. Bu kılavuzu tamamladıktan sonra proje öğesi için öğe şablonu sihirbaz ekleyerek geliştirebilirsiniz. Daha fazla bilgi için [izlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
->  Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.
+> Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:
@@ -81,7 +81,7 @@ ms.locfileid: "60059129"
 4. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 5. Seçin **VSIX projesi** şablonu.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059129"
 2. Proje öğeleri listesinde seçin **simge dosyası** öğesi.
 
     > [!NOTE]
-    >  Visual Basic projelerinde, seçmelisiniz **genel** görüntülemek için **simge dosyası** öğesi.
+    > Visual Basic projelerinde, seçmelisiniz **genel** görüntülemek için **simge dosyası** öğesi.
 
 3. İçinde **adı** kutusuna **CustomAction_SolutionExplorer.ico**ve ardından **Ekle** düğmesi.
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059129"
 3. Dosyanın içeriğini aşağıdaki XML ile değiştirin ve ardından dosyasını kaydedin ve kapatın.
 
     > [!NOTE]
-    >  Aşağıdaki XML Visual C# öğesi yönelik bir şablondur. Visual Basic öğe şablonu oluşturuyorsanız değiştirin `ProjectType` öğeyle `VisualBasic`.
+    > Aşağıdaki XML Visual C# öğesi yönelik bir şablondur. Visual Basic öğe şablonu oluşturuyorsanız değiştirin `ProjectType` öğeyle `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059129"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.ItemTemplate**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `ItemTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje öğesi şablon içeren VSIX paketi tanımlar. Daha fazla bilgi için [ItemTemplate öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    > Bu değer karşılık gelen `ItemTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje öğesi şablon içeren VSIX paketi tanımlar. Daha fazla bilgi için [ItemTemplate öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059129"
 10. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059129"
      Özel eylem paketlenir ve belirtilen SharePoint sitesine dağıtılan **Site URL'si** projenin özelliği. Web tarayıcısı bu sitenin varsayılan sayfasına açılır.
 
     > [!NOTE]
-    >  Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
+    > Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
 
 4. Üzerinde **Site eylemleri** menüsünde seçin **SharePoint Geliştirici Merkezi**, tarayıcının Web sitesi açılır doğrulayın https://docs.microsoft.com/sharepoint/dev/ve ardından web tarayıcısını kapatın.
 

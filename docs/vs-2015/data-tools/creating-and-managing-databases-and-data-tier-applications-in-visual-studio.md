@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431153"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Veritabanlarını ve Visual Studio'daki veri katmanı uygulamaları oluşturma ve yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ÖNEMLİ]
->  ' In önceki sürümlerinde bulunan veritabanı projeleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] artık sağlanan [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] araçları. Daha fazla bilgi için [SQL Server Geliştirici Araçları](http://go.microsoft.com/fwlink/?LinkId=228126).
+> ' In önceki sürümlerinde bulunan veritabanı projeleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] artık sağlanan [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] araçları. Daha fazla bilgi için [SQL Server Geliştirici Araçları](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Veritabanı projeleri yeni veritabanları oluşturmak için kullanabileceğiniz yeni veri katmanı uygulamaları (Dac'ler) ve var olan veritabanlarını ve veri katmanı uygulamaları güncelleştirmek için. Hem veritabanı projeleri hem de DAC projeleri çok yönetilen veya yerel kod için bu teknikler uyguladığınız aynı şekilde, veritabanı geliştirme çalışmalarınızda kullanmanız için sürüm denetimi ve proje yönetimi teknikleri uygulanmasını sağlar. Geliştirme ekibiniz oluşturarak veritabanları ve veritabanı sunucuları için değişiklikleri yönetmenize yardımcı olabilir bir *DAC proje*, *veritabanı projesi*, veya bir *sunucu projesi* ve onu koyma Sürüm denetimi altında. Ekip üyelerinin sonra kontrol edebilirsiniz olun, derleme ve değişiklikleri test etmek için dosyaları bir *yalıtılmış bir geliştirme ortamı*, veya önce onları takım ile paylaşım korumalı alan. Kod kalitesinin sağlanmasına yardımcı olmak için takımınızın tamamlayın ve değişiklikleri üretime dağıtmadan önce tüm değişiklikleri veritabanını belirli bir sürümü için bir hazırlama ortamında test.
 

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441831"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.
@@ -82,7 +82,7 @@ ms.locfileid: "60094859"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Program aracılığıyla denetimleri sırasında kaldırmayın **kapatma** belgenin olay işleyicisi. UI öğeleri artık kullanılabilir **kapatma** olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisine aşağıdaki gibi ekleyin **BeforeClose** veya **BeforeSave**.
+> Program aracılığıyla denetimleri sırasında kaldırmayın **kapatma** belgenin olay işleyicisi. UI öğeleri artık kullanılabilir **kapatma** olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisine aşağıdaki gibi ekleyin **BeforeClose** veya **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Olay işleyicisi yöntem bildirimleri
  Her olay işleyicisi yöntem bildiriminde geçirilen aynı bağımsız değişkenlere sahiptir: *gönderen* ve *e*. Excel'de *gönderen* bağımsız değişken başvuran sayfa gibi `Sheet1` veya `Sheet2`; Word *gönderen* bağımsız değişken belgeye başvuruyor. *e* bağımsız değişkeni, bu durumda kullanılmayan standart için bağımsız değişkenler için olaya başvurur.
@@ -95,7 +95,7 @@ ms.locfileid: "60094859"
  Aşağıdaki kod örneği, Excel için belge düzeyi projelerine varsayılan olay işleyicileri gösterilmektedir.
 
 > [!NOTE]
->  Aşağıdaki kod örneği, olay işleyicileri gösterilmektedir `Sheet1` sınıfı. Diğer ana bilgisayar öğesi sınıflardaki olay işleyicileri adlarını sınıf adına karşılık gelir. Örneğin, `Sheet2` sınıfı **başlangıç** olay işleyicisi adlı `Sheet2_Startup`. İçinde `ThisWorkbook` sınıfı **başlangıç** olay işleyicisi adlı `ThisWorkbook_Startup`.
+> Aşağıdaki kod örneği, olay işleyicileri gösterilmektedir `Sheet1` sınıfı. Diğer ana bilgisayar öğesi sınıflardaki olay işleyicileri adlarını sınıf adına karşılık gelir. Örneğin, `Sheet2` sınıfı **başlangıç** olay işleyicisi adlı `Sheet2_Startup`. İçinde `ThisWorkbook` sınıfı **başlangıç** olay işleyicisi adlı `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094859"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Olayı <xref:Microsoft.Office.Interop.Outlook.Explorer> nesne.
 
 > [!NOTE]
->  Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Yönetici bu ayarı döndürüyorsa, ancak herhangi için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıkar olduğunda çalışır. Daha fazla bilgi için [kapatma Outlook 2010 için değişiklikleri](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Yönetici bu ayarı döndürüyorsa, ancak herhangi için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıkar olduğunda çalışır. Daha fazla bilgi için [kapatma Outlook 2010 için değişiklikleri](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)

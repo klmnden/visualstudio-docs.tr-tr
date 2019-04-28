@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446729"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Bir modele erişen metin şablonunda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087124"
 Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüştürürken, Değiştir veya metin şablonları bir etki alanına özgü dil çözümünde eklediğinizde, hatalar alabilirsiniz. Aşağıdaki örneklerde bir metin şablonunda hata ayıklama için yapabileceğiniz şeylerden bazıları gösterilmektedir.  
   
 > [!NOTE]
->  Metin hakkında daha fazla bilgi için genel olarak, bkz: şablonları [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları hata ayıklama hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir metin şablonunda hata ayıklama](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Metin hakkında daha fazla bilgi için genel olarak, bkz: şablonları [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonları hata ayıklama hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir metin şablonunda hata ayıklama](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma  
  Bu yordamda aşağıdaki özelliklere sahip bir etki alanına özgü dil çözümü oluşturun:  
@@ -58,7 +58,7 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 1. DebugTest.tt kodu aşağıdaki kodla değiştirin:  
   
     > [!NOTE]
-    >  Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.  
+    > Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 1. DebugTest.tt kodu aşağıdaki kodla değiştirin:  
   
     > [!NOTE]
-    >  Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.  
+    > Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

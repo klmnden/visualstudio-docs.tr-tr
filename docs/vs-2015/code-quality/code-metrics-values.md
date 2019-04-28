@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437095"
 ---
 # <a name="code-metrics-values"></a>Kod Ölçüm Değerleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Kod ölçümleri, geliştiricilere, geliştirdikleri daha iyi bir anlayış kod 
 - **Döngüsel karmaşıklık** – kod yapısal karmaşıklığını ölçer. Program akışını farklı kod yollarında sayısını hesaplayarak oluşturulur. Karmaşık denetim akışı olan bir program daha sürdürülebilir ve daha iyi kod kapsamını elde etmek için daha fazla test gerektirir.  
   
     > [!NOTE]
-    >  Bazı durumlarda, bir yöntem için döngüzel karmaşıklığına hesaplanması [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] önceki sürümlerden farklıdır. Daha fazla bilgi için "değişiklikleri, Visual Studio 2010 kod karmaşıklığı hesaplamalar bölümünde" olmadığını [kod ölçümleri sorunlarını giderme](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > Bazı durumlarda, bir yöntem için döngüzel karmaşıklığına hesaplanması [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] önceki sürümlerden farklıdır. Daha fazla bilgi için "değişiklikleri, Visual Studio 2010 kod karmaşıklığı hesaplamalar bölümünde" olmadığını [kod ölçümleri sorunlarını giderme](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Devralma derinliği** – sınıf hiyerarşisini köküne genişleten sınıf tanımları sayısını gösterir. Belirli yöntemleri ve alanları tanımlandığı anlamak için olabilir derinde hiyerarşi daha zor veya / ve yeniden tanımlanan.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427242"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60040075"
  Veri dizini uygulama açıkça depolar ve tutar veriler, yönetilen uygulama verileri için tasarlanmıştır. Tüm statik uygulama bildiriminde "veri" olarak işaretlenen değil (nondependency) dosyalar yerine uygulama dizininde bulunur. Uygulamanın yürütülebilir (.exe) dosyaları ve derlemeleri bulunduğu bu dizindir.  
   
 > [!NOTE]
->  Olduğunda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulaması kaldırıldığında, kendi veri dizini de kaldırılır. Hiçbir zaman son kullanıcı tarafından yönetilen belgeler gibi verilerini depolamak için veri dizini kullanın.  
+> Olduğunda bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulaması kaldırıldığında, kendi veri dizini de kaldırılır. Hiçbir zaman son kullanıcı tarafından yönetilen belgeler gibi verilerini depolamak için veri dizini kullanın.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>ClickOnce dağıtım veri dosyalarında işaretleme  
  Mevcut bir dosyayı veri dizini içine koymak için var olan dosyayı bir veri dosyası olarak işaretlemelisiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın uygulama bildirim dosyası. Daha fazla bilgi için [nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
@@ -52,7 +52,7 @@ ms.locfileid: "60040075"
  Veri dizini okuma gerektirir, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama isteği okuma izni; benzer şekilde, dizine yazma izni gerektirir. Tam güven ile çalışacak şekilde yapılandırılmışsa, uygulamanızın otomatik olarak bu izne sahip. İzin yükseltilmesi ya da güvenilir uygulama dağıtımı'nı kullanarak uygulamanız için yükseltme yaptığınıza izinler hakkında daha fazla bilgi için bkz. [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Kuruluşunuz güvenilen uygulama dağıtımı kullanmaz ve izin yükseltme devre dışı bırakılmış ise, izinleri sunduğundan başarısız olur.  
+> Kuruluşunuz güvenilen uygulama dağıtımı kullanmaz ve izin yükseltme devre dışı bırakılmış ise, izinleri sunduğundan başarısız olur.  
   
  Uygulamanızın bu izinlere sahip olduktan sonra veri dizini içindeki sınıflarda yöntem çağrıları kullanarak erişebildiğinizi <xref:System.IO>. Bir Windows Forms içinde veri dizini yolunu elde edebilirsiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kullanarak uygulama <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> tanımlanan özellik <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> özelliği <xref:System.Deployment.Application.ApplicationDeployment>. Verilerinize erişmek için en uygun ve önerilen yöntem budur. Aşağıdaki kod örneği, bir veri dosyası olarak dağıtımınızda bulunan alan ve csv.txt olarak adlı bir metin dosyası için bunun nasıl yapılacağını gösterir.  
   

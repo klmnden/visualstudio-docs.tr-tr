@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415201"
 ---
 # <a name="expose-types-to-visual-designers"></a>Türleri görsel tasarımcıların kullanıma sunma
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sınıfı ve tür tanımlarını tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Geçerli proje (başvurular ve bunların bağımlılıklarını) tam bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden sınıfları yüklenir. Görsel tasarımcılar için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyaları içinde tanımlanan türler için de olabilir.
@@ -27,7 +27,7 @@ ms.locfileid: "60104076"
  Bu değişiklikler özel aracın çalıştırmanın sonuçlarını olması koşuluyla proje sistemi bir özel aracı çıkış dosyasına değişiklikleri izlemek için tam destek sağlar. Özel aracın her çalıştırıldığında yeni bir geçici PE oluşturulur ve tasarımcılar, uygun bildirimler gönderilir.
 
 > [!NOTE]
->  Geçici program oluşturma yürütülebilir dosyası arka planda gerektiğinden, derleme başarısız olursa hata kullanıcıya raporlanır.
+> Geçici program oluşturma yürütülebilir dosyası arka planda gerektiğinden, derleme başarısız olursa hata kullanıcıya raporlanır.
 
  Geçici PE destekten yararlanın özel araçlar, aşağıdaki kurallara uymalıdır:
 

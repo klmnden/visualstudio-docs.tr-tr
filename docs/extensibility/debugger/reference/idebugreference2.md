@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412635"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Bu arabirim, yığın çerçeve özelliği veya diğer bir özelliği bir başvuruyu temsil eder.
 
 > [!NOTE]
->  `IDebugReference2` Gelecekte kullanım ve tüm metotlarını döndürmelidir için ayrılmış `E_NOTIMPL`.
+> `IDebugReference2` Gelecekte kullanım ve tüm metotlarını döndürmelidir için ayrılmış `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu kullanım "özelliğinin" ile bir sınıfın üye değişkeni anlamı olsa da karıştırılmamalıdır bir `IDebugReference2` böyle bir varlık temsil edebilir.
+> Bu kullanım "özelliğinin" ile bir sınıfın üye değişkeni anlamı olsa da karıştırılmamalıdır bir `IDebugReference2` böyle bir varlık temsil edebilir.
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) bir özelliği temsil ederken `IDebugReference2` genellikle hata ayıklanan programa içinde bir nesneye başvuru bir özelliğe başvuruyu temsil eder.
 

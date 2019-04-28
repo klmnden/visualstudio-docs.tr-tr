@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437575"
 ---
 # <a name="creating-solutions-and-projects"></a>Çözümler ve Projeler Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109822"
 Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıksal kapsayıcılardır. Seçerek bir proje oluşturduğunuzda **dosya &#124; yeni &#124; proje** ana menüden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] içerdiği için bir çözüm oluşturur. Gerekirse daha fazla yeni veya mevcut projeleri çözüme daha sonra ekleyebilirsiniz. Geçici projeler (yalnızca .NET) oluşturabilir ve varolan kod dosyalarından projeler oluşturabilir, silinecek ile işiniz bittiğinde.  
   
 > [!NOTE]
->  Açıklamalar bu konuda, Visual Studio Community edition temel alır. İletişim kutuları ve menü komutları gördüğünüz ayarları ya da Visual Studio sürümü bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Açıklamalar bu konuda, Visual Studio Community edition temel alır. İletişim kutuları ve menü komutları gördüğünüz ayarları ya da Visual Studio sürümü bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Bir yüklü proje şablonundan bir proje oluşturun  
  **Dosya &#124; yeni &#124; proje** yeni proje iletişim kutusunu açmak için ana menüden. Sol bölmede altında **Intalled &#124; şablonları** programlama dil ve platform veya teknoloji seçtiğiniz, ardından Orta bölmede bir kullanılabilir şablonlardan seçin.  
@@ -42,7 +42,7 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
  Gevşek kaynak dosyaları koleksiyonunu varsa, bunları içeren bir proje kolayca oluşturabilirsiniz. Seçin **dosya &#124; yeni &#124;varolan koddan proje** başlatmak için **varolan kod dosyaları sihirbazından proje oluştur** ve yönergeleri izleyin.  
   
 > [!TIP]
->  Bu seçenek, dosyaları görece basit koleksiyonları için en iyi çalışır.  
+> Bu seçenek, dosyaları görece basit koleksiyonları için en iyi çalışır.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Geçici bir proje (C# ve Visual Basic) oluşturma  
  Geçici projeler ile birlikte çalışarak oluşturabilir ve bir disk konumu belirtmeden bir .NET projesi ile denemeler yapın. Bir proje oluşturduğunuzda, yalnızca bir proje türü ve şablon seçin ve bir ad belirtin **yeni proje** iletişim kutusu. Dilediğiniz zaman geçici projeyle çalışırken, kaydedebilirsiniz veya iptal edebilirsiniz.  
@@ -83,7 +83,7 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
  Bir çözüm kalıcı olarak silebilirsiniz ancak kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bir çözüm silmeden önce başka bir çözüm içinde yeniden kullanmak isteyebileceğiniz herhangi bir projeyi taşıyın. Ardından .sln ve .suo çözüm dosyalarını içeren dizini silmek için dosya Gezgini'ni kullanın.  
   
 > [!NOTE]
->  Varsayılan dosya Gezgini ayarlar altında görüntülenmez gizli bir dosya .suo dosyasıdır.  
+> Varsayılan dosya Gezgini ayarlar altında görüntülenmez gizli bir dosya .suo dosyasıdır.  
   
 ##### <a name="to-delete-a-solution"></a>Bir çözümü silmek için  
   

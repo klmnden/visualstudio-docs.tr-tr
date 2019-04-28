@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437236"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO eklentilerinde genişletme
   Bir VSTO eklentisi Word belgelerini ve Excel çalışma kitapları aşağıdaki yollarla özelleştirmek için kullanabilirsiniz:
@@ -89,7 +89,7 @@ ms.locfileid: "60049476"
  Windows Forms denetimleri ekleyebilirsiniz veya *konak denetimlerini*. Bir ana bilgisayar denetim tarafından sağlanan bir denetimdir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word veya Excel birincil birlikte çalışma derlemesi içinde karşılık gelen bir denetim sonuna geldik. Bir konak denetimi tüm temel alınan yerel Office nesnesinin davranışını kullanıma sunar. Ayrıca, olayları başlatır ve verilere Windows Forms veri bağlama modelini kullanarak bağlanabilir. Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimi bir çalışma sayfasına veya <xref:Microsoft.Office.Tools.Word.XMLNode> veya <xref:Microsoft.Office.Tools.Word.XMLNodes> denetlemek için VSTO eklentisi kullanarak bir belge. Bu konak denetimleri program aracılığıyla eklenemez. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimi bir çalışma sayfasına veya <xref:Microsoft.Office.Tools.Word.XMLNode> veya <xref:Microsoft.Office.Tools.Word.XMLNodes> denetlemek için VSTO eklentisi kullanarak bir belge. Bu konak denetimleri program aracılığıyla eklenemez. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Kalıcı hale getirmek ve denetimlerini kaldırma
  Yönetilen denetimleri bir belge veya çalışma sayfasına eklediğinizde, belgenin kaydedilip kapatılan denetimleri kalıcı değildir. Tüm konak denetimleri, böylece yalnızca arka plandaki yerel Office nesneleri geride kaldırılır. Örneğin, bir <xref:Microsoft.Office.Tools.Excel.ListObject> olur bir <xref:Microsoft.Office.Interop.Excel.ListObject>. Tüm Windows Formları denetimleri de kaldırılır, ancak denetimler için ActiveX sarmalayıcısının belgede kalır. Kod, VSTO eklenti denetimleri temizlemek için ya da belgeyi bir sonraki açılışında denetimleri yeniden eklemeniz gerekir. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).

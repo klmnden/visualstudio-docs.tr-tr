@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444326"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. Git **hata ayıklama konumu** araç çubuğu ve tıklatın **iş parçacığı** listesi.  
   
     > [!NOTE]
-    >  Bu araç üç tanınmış listeleri tarafından tanınmasını sağlayabilir: **İşlem**, **iş parçacığı**, ve **yığın çerçeve**.  
+    > Bu araç üç tanınmış listeleri tarafından tanınmasını sağlayabilir: **İşlem**, **iş parçacığı**, ve **yığın çerçeve**.  
   
 3. Ne kadar iş parçacığı listede göründüğüne dikkat edin.  
   

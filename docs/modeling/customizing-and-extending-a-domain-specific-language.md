@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414854"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
 Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları tanımlamak birden fazla düzeyleri sağlar:
@@ -28,7 +28,7 @@ Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları
 3. Program kodunu kullanarak, modelleme araçları genişletir. VMSDK uzantılarınızı DSL tanımını oluşturan kod ile tümleştirmeyi kolaylaştırmak için tasarlanmıştır.  Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
->  DSL tanımlarına dosya güncelleştirildiğinde tıklamayı değil **tüm Şablonları Dönüştür** çözümünüzü yeniden oluşturmayı önce Çözüm Gezgini araç çubuğundaki.
+> DSL tanımlarına dosya güncelleştirildiğinde tıklamayı değil **tüm Şablonları Dönüştür** çözümünüzü yeniden oluşturmayı önce Çözüm Gezgini araç çubuğundaki.
 
 ## <a name="customShapes"></a> Bu bölümde
 

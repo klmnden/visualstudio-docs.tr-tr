@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441522"
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma Seçeneklerine Genel Bakış
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Projelerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oluşturulabilir, h
 |MyConfig|Yok|\<MyConfig Win64 Ayarları >|  
   
 > [!NOTE]
->  "Win32" platformu hedeflediğiniz proje Win32 desteklemiyor sürece bırakan bir "MyConfig" çözüm yapılandırması oluşturulamıyor.  
+> "Win32" platformu hedeflediğiniz proje Win32 desteklemiyor sürece bırakan bir "MyConfig" çözüm yapılandırması oluşturulamıyor.  
   
  Etkin bir çözüm yapılandırmasını değiştirme bu çözümde oluşturulan, çalıştırma, hata ayıklama veya dağıtıldığı proje yapılandırmaları kümesini seçer. Örneğin, hata ayıklama sürümü etkin çözüm yapılandırmasını değiştirirseniz, bu çözüm içindeki tüm projeleri otomatik olarak çözümün hata ayıklama yapılandırmasında belirtilen proje yapılandırması oluşturulur. Kullanıcı el ile yapılan değişiklikler ortam Yapılandırma Yöneticisi'nde yapmamışsa projelerin genellikle ayrıca adlı hata ayıklama yapılandırmalardır.  
   

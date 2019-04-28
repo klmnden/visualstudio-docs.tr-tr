@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437925"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetinde parametre bilgisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ IntelliSense parametre bilgisi, kullanıcı, parametre listesi yazdığında, y�
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz. [düzenleyiciyi ve dil hizmetlerini genişletme](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
 ## <a name="implementation"></a>Uygulama  
  Ayrıştırıcının tetikleyici değer ayarlamalısınız <xref:Microsoft.VisualStudio.Package.TokenTriggers> bir parametre listesi başlangıç karakteri (genellikle bir açık parantez) bulduğunda ayarlanır. Ayarlamanız gerekir bir <xref:Microsoft.VisualStudio.Package.TokenTriggers> parametre ayırıcı (genellikle bir virgül) bulduğunda tetikleyin. Bu, güncelleştirilmesi ve bir sonraki parametreyi kalın olarak göstermek bir parametre bilgisi araç ipucu neden olur. Ayrıştırıcının tetikleyici değer ayarlamalısınız <xref:Microsoft.VisualStudio.Package.TokenTriggers> olduğunda, parametre listesi son karakter (genellikle bir kapatma ayracı) bulur.  
@@ -37,7 +37,7 @@ IntelliSense parametre bilgisi, kullanıcı, parametre listesi yazdığında, y�
  <xref:Microsoft.VisualStudio.Package.TokenTriggers> Tetikleyicisi değeri başlatan bir çağrı <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> sırayla çağıran yöntem <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi ayrıştırıcı bir ayrıştırma nedeni ile <xref:Microsoft.VisualStudio.Package.ParseReason>. Ayrıştırıcının parametre listesi'ı başlatmadan önce karakter tanımlayıcı tanınan bir yöntem adı olduğunu belirlerse, yöntem imzalarının eşleştirilmesi listesini döndürür. <xref:Microsoft.VisualStudio.Package.AuthoringScope> nesne. Herhangi bir yöntem imzaları bulunmazsa, parametre bilgisi araç ipucu listedeki ilk imzayla görüntülenir. Bu araç ipucu sonra daha fazla imzası yazıldığında güncelleştirilir. Parametre listesi son karakter yazıldığında, parametre bilgisi araç ipucu görünümünden kaldırılır.  
   
 > [!NOTE]
->  Parametre bilgisi araç ipucu düzgün biçimlendirildiğinden, özellikleri geçersiz kılmalısınız emin olmak için <xref:Microsoft.VisualStudio.Package.Methods> uygun karaktere sağlamak için sınıf. Temel <xref:Microsoft.VisualStudio.Package.Methods> sınıfı varsayar C#-style metodu imzası. Bkz: <xref:Microsoft.VisualStudio.Package.Methods> sınıfı bu nasıl yapılabilir ilişkin ayrıntılar için.  
+> Parametre bilgisi araç ipucu düzgün biçimlendirildiğinden, özellikleri geçersiz kılmalısınız emin olmak için <xref:Microsoft.VisualStudio.Package.Methods> uygun karaktere sağlamak için sınıf. Temel <xref:Microsoft.VisualStudio.Package.Methods> sınıfı varsayar C#-style metodu imzası. Bkz: <xref:Microsoft.VisualStudio.Package.Methods> sınıfı bu nasıl yapılabilir ilişkin ayrıntılar için.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Parametre bilgisi desteğini etkinleştirme  
  Parametre bilgisi araç ipuçları desteklemek için ayarlamalısınız `ShowCompletion` parametresinin adlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> için `true`. Dil hizmeti bu kayıt defteri girdisinden değerini okur <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> özelliği.  

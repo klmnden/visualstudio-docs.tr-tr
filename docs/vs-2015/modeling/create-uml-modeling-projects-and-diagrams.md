@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433371"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML modelleme projeleri ve diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
  UML modelleme diyagramları ve katman diyagramları, yalnızca bir modelleme projesinin içinde bulunabilir. Her bir modelleme projesi, paylaşılan bir UML model ve birkaç UML diyagramları içerir. Her diyagram, modeli kısmi bir görünümüdür. UML modeli diyagramlarındaki tüm öğelerini içeren ve UML Model Gezgini kullanılarak görüntülenebilir. Modelleri ve diyagramları ilişkilerini hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md). Modelleme projeleri sürüm denetimi altında hakkında daha fazla bilgi için bkz: [sürüm denetimi altındaki modelleri ve diyagramları yönetme](../modeling/manage-models-and-diagrams-under-version-control.md) ve [modelleme çözümünüzün yapısını oluşturma](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  Başka tür bir program kodunu görselleştirmek için kullanılan .NET sınıf diyagramına diyagramın yoktur. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Başka tür bir program kodunu görselleştirmek için kullanılan .NET sınıf diyagramına diyagramın yoktur. Daha fazla bilgi için [tasarlama ve görüntüleme sınıfları ve türleri](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="CreatingModelingDiagrams"></a> Bir modelleme projesinde bir diyagram oluşturma  
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -76,7 +76,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
 1. İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
   
     > [!NOTE]
-    >  Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
+    > Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
   
 2. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
@@ -87,7 +87,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
      Modelleme Diyagramında açılır ve modelleme projesinde görünür.  
   
     > [!CAUTION]
-    >  Değil ekleme, kopyalama veya var olan diyagram dosyaları diğer modelleme projeleri veya iş çözümdeki diğer konumlara sürükleyin. Bu, öğelerin kopyalanan diyagramları ya da diyagram açtığınızda hata kaybolmasına neden olur. İçinde oluşturulmuş bir modelleme projesinden diyagram dosyasını açmanız gerekir. Bir UML diyagram, modelleme projesi tarafından sahip olunan modelinin bir görünüm olduğundan budur. Bir diyagram dosyasını kopyalamak için yeni bir diyagram oluşturun ve ardından öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Daha fazla bilgi için [sorun giderme modelleme projeleri ve diyagramları](#TroubleshootingModelingProjects).  
+    > Değil ekleme, kopyalama veya var olan diyagram dosyaları diğer modelleme projeleri veya iş çözümdeki diğer konumlara sürükleyin. Bu, öğelerin kopyalanan diyagramları ya da diyagram açtığınızda hata kaybolmasına neden olur. İçinde oluşturulmuş bir modelleme projesinden diyagram dosyasını açmanız gerekir. Bir UML diyagram, modelleme projesi tarafından sahip olunan modelinin bir görünüm olduğundan budur. Bir diyagram dosyasını kopyalamak için yeni bir diyagram oluşturun ve ardından öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Daha fazla bilgi için [sorun giderme modelleme projeleri ve diyagramları](#TroubleshootingModelingProjects).  
   
 #### <a name="to-create-a-blank-modeling-project"></a>Boş bir modelleme projesi oluşturmak için  
   
@@ -111,7 +111,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
      Diyagramı proje ve dosya sistemi kaldırılır. Diyagram üzerinde gösterilen öğeler kaldırılmaz **UML Model Gezgini**.  
   
     > [!NOTE]
-    >  Her diyagram iki dosya için başka bir yan kuruluşu çalışanı vardır. Örneğin, bir bileşen diyagramı adıyla varsa `CD1`, adlı dosyayı silmeniz gerekir `CD1.componentdiagram`. Adlı dosyası `CD1.componentdiagram.layout` otomatik olarak silinir.  
+    > Her diyagram iki dosya için başka bir yan kuruluşu çalışanı vardır. Örneğin, bir bileşen diyagramı adıyla varsa `CD1`, adlı dosyayı silmeniz gerekir `CD1.componentdiagram`. Adlı dosyası `CD1.componentdiagram.layout` otomatik olarak silinir.  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Geçici olarak bir diyagram bir projeden Çıkart  
   
@@ -120,14 +120,14 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
      Diyagram projeden kaldırıldı. Dosya sisteminden kaldırılmaz.  
   
     > [!NOTE]
-    >  Diyagram üzerinde gösterilen öğeler kaldırılmaz **UML Model Gezgini**.  
+    > Diyagram üzerinde gösterilen öğeler kaldırılmaz **UML Model Gezgini**.  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Geçici olarak çıkarılmış bir diyagramı projeye geri yüklemek için  
   
 1. İçinde **Çözüm Gezgini**, modelleme tıklayın proje düğümü.  
   
     > [!NOTE]
-    >  Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
+    > Adlı bir model tanımı klasör modelleme projesini içerir **ModelDefinition**.  
   
 2. Üzerinde **proje** menüsünde tıklatın **varolan öğeyi Ekle**.  
   
@@ -136,7 +136,7 @@ UML anlamanıza, tartışın ve tasarım yazılım sistemlerinin Yardım modelle
      Modelleme Diyagramında açılır ve modelleme projesinde görünür.  
   
     > [!NOTE]
-    >  Her diyagram dosyalarının bir çiftini dosya sisteminde yok. Uzantılı bir dosya seçmeyin `.layout`. Ayrıca, Visual Studio için birden fazla modelleme projesine mevcut UML diyagramları eklemeyi desteklemez. Her diyagram dosyası içinde oluşturulmuş bir modelleme projesi içinde açılması gerekir. Bir UML diyagram, modelleme projesi tarafından sahip olunan bir modelin görüntüler olmasıdır.  
+    > Her diyagram dosyalarının bir çiftini dosya sisteminde yok. Uzantılı bir dosya seçmeyin `.layout`. Ayrıca, Visual Studio için birden fazla modelleme projesine mevcut UML diyagramları eklemeyi desteklemez. Her diyagram dosyası içinde oluşturulmuş bir modelleme projesi içinde açılması gerekir. Bir UML diyagram, modelleme projesi tarafından sahip olunan bir modelin görüntüler olmasıdır.  
   
 ## <a name="NonModelDiagrams"></a> Modelleme projeleri gerektirmeyen diyagramları  
  Aşağıdaki tür diyagramlar bir modelleme projesi parçası değildir:  

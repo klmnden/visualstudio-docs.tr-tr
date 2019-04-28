@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Son kullanıcılarınıza, MPN iş ortakları için Visual Studio abonelikleri atama işlemini.
 searchscope: VS Subscription
-ms.openlocfilehash: 1cd8e25a0ba1eaddf6f0ab5096e366f577f510e6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412395"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan Visual Studio aboneliklerini yönetme
 
@@ -65,7 +65,7 @@ Microsoft eylem paketi abonesi ve Visual Studio abonelikleri
 
 > [!NOTE]
 > Visual Studio abonelikleri için teknik konular ilgili kişisi rolü gereklidir
->     - PG 8 – atama Visual Studio abonelikleri uzmanlık iş ortakları için
+> - PG 8 – atama Visual Studio abonelikleri uzmanlık iş ortakları için
 
 ## <a name="need-help"></a>Yardıma mı ihtiyacınız var?
 Aboneler ve Program yöneticileri, abonelikleri erişme aboneliği olan herhangi bir sorunu çözmek için doğrudan Microsoft iş ortağı ağı Destek ekibiyle birlikte çalışmalıdır. Ziyaret [iş ortakları için destek](https://partner.microsoft.com/support) Yardım sayfası. (MPN oturum açma kimlik bilgilerinizi gerekli olacaktır.)

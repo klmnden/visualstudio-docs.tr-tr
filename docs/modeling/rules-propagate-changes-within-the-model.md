@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437414"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 Bir değişiklik bir öğeden diğerine Görselleştirme ve modelleme SDK'sı (VMSDK) yaymak için bir depo oluşturabilirsiniz. Store herhangi bir öğeye bir değişiklik meydana geldiğinde, kuralları genellikle en dıştaki işlem tamamlandığında, yürütülmek üzere zamanlanır. Farklı türde bir öğe ekleme veya silme gibi olaylar, farklı türleri için kuralları vardır. Belirli öğeleri, şekilleri ve diyagramları türleri için kurallar ekleyebilirsiniz. Birçok yerleşik özellik kuralları tarafından tanımlanır: Örneğin, kuralları modeli değiştiğinde, diyagram güncelleştirildiğinden emin olun. Kendi kurallarınızı ekleyerek, etki alanına özgü dil özelleştirebilirsiniz.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  Store içinde öğeleri durumunu yalnızca bir kural kodunu değiştirmeniz gerekir; diğer bir deyişle, kuralı, yalnızca model öğelerini, ilişkileri, şekiller, bağlayıcılar, diyagram veya özelliklerini değiştirmeniz gerekir. Mağaza dışındaki kaynaklar için değişiklikleri yayan istiyorsanız, Store olaylarını tanımlayın. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Store içinde öğeleri durumunu yalnızca bir kural kodunu değiştirmeniz gerekir; diğer bir deyişle, kuralı, yalnızca model öğelerini, ilişkileri, şekiller, bağlayıcılar, diyagram veya özelliklerini değiştirmeniz gerekir. Mağaza dışındaki kaynaklar için değişiklikleri yayan istiyorsanız, Store olaylarını tanımlayın. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Bir kural tanımlamak için
 

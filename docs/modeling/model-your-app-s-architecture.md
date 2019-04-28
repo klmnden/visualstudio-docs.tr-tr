@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436888"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da genel yapısı, açıklamasını ve yazılım sisteminin veya uygulamanın davranışını bir parçası olarak modeller oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller mevcut mimarisini anlama, değişiklikleri tartışmak ve amacınızı NET bir şekilde iletişim kurmasına yardımcı olur.
@@ -24,7 +24,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
  Bir modelinin amacı, doğal dil açıklamasında ortaya belirsizlikleri azaltma ve iş arkadaşlarınızla tasarım görselleştirin ve Alternatif tasarımlar tartışmak için yardımcı olmak için ' dir. Bir model, diğer belgelerin ya da tartışmalar ile birlikte kullanılmalıdır. Tek başına bir model mimarinin eksiksiz bir belirtimi göstermiyor.
 
 > [!NOTE]
->  Bu konu başlığı altında yaptığımız, geliştirmekte olduğunuz yazılımı "Sistem" anlamına gelir. Büyük bir koleksiyonu, çok sayıda yazılım ve donanım bileşenleri, tek bir uygulama veya uygulamanın bir parçası olabilir.
+> Bu konu başlığı altında yaptığımız, geliştirmekte olduğunuz yazılımı "Sistem" anlamına gelir. Büyük bir koleksiyonu, çok sayıda yazılım ve donanım bileşenleri, tek bir uygulama veya uygulamanın bir parçası olabilir.
 
  Bir sistem mimarisi, iki alana ayrılabilir:
 

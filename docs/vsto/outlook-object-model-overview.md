@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442403"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilir. Outlook nesne modeline sınıflar ve kullanıcı arabirimi öğelerini temsil eden arabirim sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eder tüm uygulama <xref:Microsoft.Office.Interop.Outlook.Folder> nesne e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.
@@ -65,7 +65,7 @@ ms.locfileid: "60061937"
   Bir kopyasını almak için <xref:Microsoft.Office.Interop.Outlook.Application> nesne, uygulama alanın kullanın `ThisAddIn` projenizdeki sınıfı. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Outlook nesne özelliklerini ve Outlook nesne modeli Koruması tarafından engellenen yöntemlerini kullandığınızda güvenlik uyarılarını önlemek için uygulama alanından Al `ThisAddIn` sınıfı. Daha fazla bilgi için [Office çözümleriyle ilgili belirli güvenlik konuları](../vsto/specific-security-considerations-for-office-solutions.md).
+> Outlook nesne özelliklerini ve Outlook nesne modeli Koruması tarafından engellenen yöntemlerini kullandığınızda güvenlik uyarılarını önlemek için uygulama alanından Al `ThisAddIn` sınıfı. Daha fazla bilgi için [Office çözümleriyle ilgili belirli güvenlik konuları](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Nesne Gezgini
  <xref:Microsoft.Office.Interop.Outlook.Explorer> Nesnesi e-posta iletileri, görevler veya randevu gibi öğeler içeren bir klasörün içeriğini görüntüleyen bir pencereyi temsil eder. <xref:Microsoft.Office.Interop.Outlook.Explorer> Yöntemleri ve penceresini değiştirmek için kullanabileceğiniz özellikler ve pencere değiştiğinde başlatılan olaylara nesne içerir.

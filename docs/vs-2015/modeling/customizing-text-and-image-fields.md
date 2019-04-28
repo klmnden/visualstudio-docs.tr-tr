@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433251"
 ---
 # <a name="customizing-text-and-image-fields"></a>Metin ve Görüntü Alanlarını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Aksi takdirde, daha sonra geçersiz `InitializeShapeFields` şekli sınıfı ve atama için uygun bir değer yöntemi `Default...` metin alanının özelliği.  
   
 > [!WARNING]
->  Geçersiz kılınacak `InitializeShapeFields()`, ayarlamalısınız **Generates Double Derived** için Şekil sınıfın özelliği `true` DSL tanımındaki.  
+> Geçersiz kılınacak `InitializeShapeFields()`, ayarlamalısınız **Generates Double Derived** için Şekil sınıfın özelliği `true` DSL tanımındaki.  
   
  Bu örnekte, bir şekil kullanıcı yorumları için kullanılacak bir metin alanı vardır. Standart bir yorum yazı tipi kullanılacak istiyoruz. Standart bir yazı tipi stili kümesinde olduğundan, biz varsayılan yazı tipi kimliği ayarlayabilirsiniz:  
   
@@ -202,7 +202,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Bu örnek, bir simge Değiştir şeklin model öğesi durumu bağımlı hale getirir.  
   
 > [!WARNING]
->  Bu örnek, dinamik görüntü dekoratör yapmak nasıl gösterir. Ancak yalnızca bir model değişken durumunu bağlı olarak bir veya iki görüntü arasında geçiş yapmak istiyorsanız, daha basit birkaç görüntü dekoratörler oluşturun, bunları şekli üzerinde aynı konumda bulun ve ardından modelin belirli değerlerine bağımlı görünürlük filtresini ayarlayın değişken. Bu filtre ayarlamak için DSL tanımındaki şekil eşlemesi seçin, DSL Ayrıntıları penceresi açın ve dekoratörler sekmesine tıklayın.  
+> Bu örnek, dinamik görüntü dekoratör yapmak nasıl gösterir. Ancak yalnızca bir model değişken durumunu bağlı olarak bir veya iki görüntü arasında geçiş yapmak istiyorsanız, daha basit birkaç görüntü dekoratörler oluşturun, bunları şekli üzerinde aynı konumda bulun ve ardından modelin belirli değerlerine bağımlı görünürlük filtresini ayarlayın değişken. Bu filtre ayarlamak için DSL tanımındaki şekil eşlemesi seçin, DSL Ayrıntıları penceresi açın ve dekoratörler sekmesine tıklayın.  
   
  Bu kod örneği çalıştırmak için en az bir dil şablonu kullanarak yeni bir DSL çözüm oluşturun. Bir Boolean etki alanı özelliği Ekle `AlternateState` ExampleElement alan sınıfına. Bir simge dekoratör ExampleShape sınıfa ekleyin ve bir bit eşlem dosyasına görüntüsünü ayarlayın. Tıklayın **tüm şablonları dönüştürme**. DSL projesinde yeni bir kod dosyası ekleyin ve aşağıdaki kodu ekleyin.  
   

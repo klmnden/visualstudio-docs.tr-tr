@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445517"
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML bölümlerine genel bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML veri ekleyebilir. Bir belgedeki XML verileri ekleme, veriler adlı bir *özel XML bölümleri*.
@@ -38,7 +38,7 @@ ms.locfileid: "60052785"
  **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler, Excel, PowerPoint ve Word için belge düzeyi projelerine ve VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Visual Studio ayrıca, veri nesnelerini belge düzeyi özelleştirmelerdeki önbelleğe sağlar. Bazı benzerlikler olsa bu özel XML bölümleri, farklı bir özelliğidir. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).
+> Visual Studio ayrıca, veri nesnelerini belge düzeyi özelleştirmelerdeki önbelleğe sağlar. Bazı benzerlikler olsa bu özel XML bölümleri, farklı bir özelliğidir. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Özel XML bölümleri anlama
  Özel XML bölümleri 2007 Microsoft Office sistemindeki açık XML Biçimleri birlikte sunulur. Bu yeni XML tabanlı bir dosya biçimleri Excel, PowerPoint ve Word için biçimler (gibi *.xlsx*, *.pptx*, ve *.docx*). Bu biçimlerdeki belgeler oluşur XML dosyaları (olarak da adlandırılan *XML bölümleri*) ZIP arşivindeki klasörlerde düzenlenir. XML bölümleri çoğunu, yapısı ve belge durumunu tanımlamanıza yardımcı olur yerleşik bölümleri şunlardır. Bununla birlikte, belgeleri belgelerde rasgele XML verilerini depolamak için kullanabileceğiniz özel XML bölümleri de içerebilir.
@@ -56,7 +56,7 @@ ms.locfileid: "60052785"
 - [Word 2007 belgelerini açık XML biçimleri kullanarak derleme](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Ayrıca Excel, Word ve PowerPoint ikili dosya biçimlerinde kaydedilir belgelerde özel XML bölümleri kullanmanıza olanak sağlar. Ancak, ikili biçimde bir belge kaydedilirse, ekleyemez veya Microsoft Office uygulamasını başlatmadan özel XML bölümleri değiştirin.
+> Ayrıca Excel, Word ve PowerPoint ikili dosya biçimlerinde kaydedilir belgelerde özel XML bölümleri kullanmanıza olanak sağlar. Ancak, ikili biçimde bir belge kaydedilirse, ekleyemez veya Microsoft Office uygulamasını başlatmadan özel XML bölümleri değiştirin.
 
 ## <a name="create-and-modify-custom-xml-parts"></a>Oluşturma ve değiştirme özel XML bölümleri
  Oluşturabilir veya belgeyi Office uygulamasında açık olduğunda ya da belge kapatıldığında özel XML bölümleri değiştirmek — bile Microsoft Office yüklü değil.

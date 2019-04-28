@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433579"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Nasıl yapılır: PolicyActivity Kural Kümesi Oluşturma (Eski)
 Bu konu eski kullanılarak ayarlanan ilke etkinlik kuralının nasıl oluşturulacağını açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -28,7 +28,7 @@ Bu konu eski kullanılarak ayarlanan ilke etkinlik kuralının nasıl oluşturul
  Sürüklenen sonra bir **ilke** etkinlik öğesinden **araç kutusu** iş akışı tasarım yüzeyine, mevcut bir kuralı seçin veya yeni bir kural kümesini oluşturmak isteyeceksiniz [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) etkinlik. Mevcut bir kuralı ayarlamak için seçtiğiniz [seçin kuralı Ayarla iletişim kutusu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md) ve kullanarak kural kümeleri oluşturma [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  Açabileceğiniz [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) doğrudan çift tıklatarak iletişim kutusunu bir [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) iş akışı tasarım yüzeyinde etkinlik.  
+> Açabileceğiniz [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) doğrudan çift tıklatarak iletişim kutusunu bir [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) iş akışı tasarım yüzeyinde etkinlik.  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Seçmek veya PolicyActivity etkinliği için bir kural oluşturmak için  
   

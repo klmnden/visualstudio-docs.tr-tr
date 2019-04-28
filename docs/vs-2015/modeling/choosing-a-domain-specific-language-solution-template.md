@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433395"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Bir etki alanına özgü dil çözümü oluşturmak için etki alanına özgü d
  Aşağıdaki çözüm şablonları, etki alanına özgü dil Tasarımcısı Sihirbazı'nda mevcuttur.  
   
 > [!NOTE]
->  Şablonları amacı, bir başlangıç DSL sağlamaktır. Sınıf ve Bileşen diyagramları adlı şablonları tam UML diyagramları değildir. Bir UML modeli oluşturmak istiyorsanız, UML modelleme araçları, tek bir model tümleşik diyagramları kümesi sağlayan göz önünde bulundurun. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
+> Şablonları amacı, bir başlangıç DSL sağlamaktır. Sınıf ve Bileşen diyagramları adlı şablonları tam UML diyagramları değildir. Bir UML modeli oluşturmak istiyorsanız, UML modelleme araçları, tek bir model tümleşik diyagramları kümesi sağlayan göz önünde bulundurun. Bunlar genişletilebilir ve ModelBus kullanarak DSL'nizi ile tümleştirilebilir. Daha fazla bilgi için [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md).  
   
 |Şablon|Özellikler|Açıklama|  
 |--------------|--------------|-----------------|  

@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403580"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio yalıtılmış Kabuğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek baş
  Yalıtılmış Kabuk uygulaması oluşturmak için Visual Studio Kabuğu yalıtılmış bir projeyle başlayın. Bu proje kendi yalıtılmış Kabuk uygulaması geliştirin ve çalıştırın gereken her şeyi içerir. Dağıtır, uygulamanızın Kurulum programını yazmak hazır olduğunuzda, yalıtılmış Kabuk yeniden dağıtılabilir paketi almalısınız [Microsoft Visual Studio Kabuğu (yalıtılmış) yeniden dağıtılabilir paket](http://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
->  Yalıtılmış Kabuk yeniden dağıtılabilir paketi erişebilmeniz için önce bir kısa bir müşteri anketini doldurmanız istenir.  Anketi doldurduktan sonra yeniden dağıtılabilir paket indirme bağlantılarının ile Visual Studio Connect sayfasına yönlendirilirsiniz.  Visual Studio Connect sitesi altında daha sonra gerçekleştirdiğiniz ziyaretlerde indirme bağlantıları bulabilirsiniz **programlar &#124; VISUAL STUDIO 2015 TÜMLEŞİK ve YALITILMIŞ KABUK** sekmesi.  
+> Yalıtılmış Kabuk yeniden dağıtılabilir paketi erişebilmeniz için önce bir kısa bir müşteri anketini doldurmanız istenir.  Anketi doldurduktan sonra yeniden dağıtılabilir paket indirme bağlantılarının ile Visual Studio Connect sayfasına yönlendirilirsiniz.  Visual Studio Connect sitesi altında daha sonra gerçekleştirdiğiniz ziyaretlerde indirme bağlantıları bulabilirsiniz **programlar &#124; VISUAL STUDIO 2015 TÜMLEŞİK ve YALITILMIŞ KABUK** sekmesi.  
   
 > [!NOTE]
->  Yalıtılmış kabuk tabanlı bir uygulama dağıtma hakkında daha fazla bilgi için bkz. [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Yalıtılmış kabuk tabanlı bir uygulama dağıtma hakkında daha fazla bilgi için bkz. [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Yalıtılmış Kabuk ile çalışma  
  Visual Studio yalıtılmış Kabuk uygulaması, Visual Studio services tam erişimi olduğundan ve özel özelleştirme ve markalama destekler. Yalıtılmış Kabuk uygulaması özelleştirebilirsiniz birkaç yolu vardır:  
@@ -59,7 +59,7 @@ Visual Studio yalıtılmış Kabuğu yan yana çalıştırabileceğiniz tek baş
 |IDE özellikleri|Ayarları içeri/dışarı aktarma<br /><br /> Araç kutusu denetimi yükleyici<br /><br /> Görev listesi & hata listesi<br /><br /> Çıktı Penceresi<br /><br /> Başlangıç Sayfası<br /><br /> Özellikler Penceresi<br /><br /> Araç Kutusu<br /><br /> Çözüm Gezgini<br /><br /> Yer işareti penceresi<br /><br /> Sınıf Görünümü<br /><br /> Nesne Tarayıcısı<br /><br /> Komut Penceresi<br /><br /> Belge Anahattı<br /><br /> Kaynak Görünümü<br /><br /> Dış Aracı<br /><br /> Windows Communication Foundation (WCF) hizmet Başvurusu Ekle<br /><br /> Dil tümleşik sorgu (LINQ) desteği|  
 |Düzenleyici/Tasarımcısı|Koda göz atma (birleştirilmiş arama, kaynak tanımı, devralma) araçları<br /><br /> IntelliSense<br /><br /> Akıllı etiketler<br /><br /> Kod parçacıkları Yöneticisi<br /><br /> Kod Parçacıkları<br /><br /> Yeniden Düzenle<br /><br /> Düzgün listeleme<br /><br /> IntelliSense filtreleme<br /><br /> Kod tanımı penceresi<br /><br /> Uygulama Tasarımcısı<br /><br /> Windows Form Tasarımcısı<br /><br /> Windows Presentation Foundation (WPF) Tasarımcısı|  
 |Hata Ayıklama|C# ifade değerlendiricisi<br /><br /> Yerel hata ayıklama<br /><br /> Yönetilen hata ayıklama<br /><br /> Düzenle ve Devam Et<br /><br /> Çoklu iş parçacığı hata ayıklama<br /><br /> görselleştirmeler<br /><br /> DataTips<br /><br /> Yerel hata ayıklama<br /><br /> Betik hata ayıklama<br /><br /> Birlikte çalışma hata ayıklama<br /><br /> Just-in-time (JIT) hata ayıklama<br /><br /> Çok işlemli hata ayıklama<br /><br /> XSLT hata ayıklama<br /><br /> Yerel işleme<br /><br /> İzleme noktaları<br /><br /> Kesme noktası kısıtlamaları|  
-|Veri|Sunucu Gezgini (Basitleştirilmiş - yalnızca verileri)<br /><br /> Veri bağlama için yerel veri (. MDF veya. MDB)<br /><br /> Nesne veri bağlama<br /><br /> Web hizmeti için veri bağlama<br /><br /> Eksiksiz bir veri denetimleri listesi<br /><br /> XML Düzenleyicisi<br /><br /> Verilerin bağlanacağı yerel veritabanı sunucusu<br /><br /> Veri Kaynakları penceresi|  
+|Veri|Sunucu Gezgini (Basitleştirilmiş - yalnızca verileri)<br /><br /> Veri bağlama için yerel veri (. MDF veya. MDB)<br /><br /> Nesne veri bağlama<br /><br /> Web hizmeti için veri bağlama<br /><br /> Eksiksiz bir veri denetimleri listesi<br /><br /> XML düzenleyicisi<br /><br /> Verilerin bağlanacağı yerel veritabanı sunucusu<br /><br /> Veri Kaynakları penceresi|  
 |Web|HTML Düzenleyicisi<br /><br /> Web tarayıcısı<br /><br /> Web formları Tasarımcısı<br /><br /> Web sitesi projesi<br /><br /> Web Application Project|  
 |Genişletilebilirlik|VSPackages ve MEF Bileşenleri kullanır|  
   

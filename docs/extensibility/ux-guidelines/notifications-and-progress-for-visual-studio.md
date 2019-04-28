@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428742"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Bildirimler ve Visual Studio için ilerleme durumu
 ## <a name="BKMK_NotificationSystems"></a> Bildirim sistemleri
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - İçine bir belge sekmesi
 
 > [!IMPORTANT]
->  Genel bağlamı hakkında bir ileti vermek için bir bilgi çubuğu konumlandırmak mümkündür. Bu, araç çubukları ve belgenin iyi arasında görünür. "Atlamak ve jerk" sorunların neden olduğu için bu önerilmez IDE ve sürece kaçınılmalıdır kesinlikle gerekli ve uygun.
+> Genel bağlamı hakkında bir ileti vermek için bir bilgi çubuğu konumlandırmak mümkündür. Bu, araç çubukları ve belgenin iyi arasında görünür. "Atlamak ve jerk" sorunların neden olduğu için bu önerilmez IDE ve sürece kaçınılmalıdır kesinlikle gerekli ve uygun.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>İçinde bir ToolWindowPane bir bilgi çubuğu yerleştirme
  ToolWindowPane.AddInfoBar(IVsInfoBar) yöntemi, bir bilgi çubuğu için araç penceresi eklemek için kullanılabilir. Bu API ya da (hangi InfoBarModel varsayılan bir uygulama olduğu), bir IVsInfoBar ekleyebilir veya bir IVsUIElement.

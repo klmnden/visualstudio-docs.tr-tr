@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425504"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107079"
 Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım yönergeler sağlar. Müşteriler ve siparişler tablolarından Northwind kullanarak, bir form kullanıcıların bir müşteri seçmesine izin verir ve Seçilen müşteri siparişleri ikinci bir form görüntüler. Bu izlenecek yol, ikinci formdaki verileri ilk formdan alan bir yöntem oluşturma işlemi gösterilmektedir.  
   
 > [!NOTE]
->  Bu yönerge, formlar arasında veri iletmek için yalnızca bir yol gösterir. Bir ortak özellik oluşturma verilerle ilk formdan ayarlanabilir veya forma veri almak için ikinci bir oluşturucu oluşturma gibi verileri geçirmek için diğer seçenekleri vardır.  
+> Bu yönerge, formlar arasında veri iletmek için yalnızca bir yol gösterir. Bir ortak özellik oluşturma verilerle ilk formdan ayarlanabilir veya forma veri almak için ikinci bir oluşturucu oluşturma gibi verileri geçirmek için diğer seçenekleri vardır.  
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
@@ -142,7 +142,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
     ```  
   
     > [!NOTE]
-    >  Veritabanınız için doğru parametre sözdizimini doğrulayın. Örneğin, Microsoft Access, WHERE yan tümcesi şöyle görünmelidir: `WHERE CustomerID = ?`.  
+    > Veritabanınız için doğru parametre sözdizimini doğrulayın. Örneğin, Microsoft Access, WHERE yan tümcesi şöyle görünmelidir: `WHERE CustomerID = ?`.  
   
 6. **İleri**'ye tıklayın.  
   

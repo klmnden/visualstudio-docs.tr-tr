@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435977"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: Özel metin işaretçileri oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
     *\<PackageGUID >* Otomasyon nesnesi uygulayan VSPackage GUID'idir.  
   
    > [!NOTE]
-   >  Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
 2. Dört değer hkey_local_machıne\software\microsoft\visualstudio altında oluşturma\\*\<sürüm >* \Text Editor\External işaretçileri\\*\<MarkerGUID >*  
   
@@ -93,4 +93,4 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
  [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
- [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)

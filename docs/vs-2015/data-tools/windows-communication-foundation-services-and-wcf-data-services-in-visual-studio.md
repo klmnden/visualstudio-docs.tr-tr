@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443867"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
     ```
 
     > [!NOTE]
-    >  Değiştirin *ServiceReference* değiştirin ve hizmet başvurusu için ad alanı ile *Service1Client* hizmetin adı.
+    > Değiştirin *ServiceReference* değiştirin ve hizmet başvurusu için ad alanı ile *Service1Client* hizmetin adı.
 
 3. Bir IntelliSense listesi için oluşturucu aşırı yüklemeleri ile görüntülenir. Seçin `endpointConfigurationName As String` aşırı yükleme.
 
 4. Aşırı yükleme yazın `=` *ConfigurationName*burada *ConfigurationName* kullanmak istediğiniz uç noktaya adıdır.
 
     > [!NOTE]
-    >  Kullanılabilir uç noktalar adını bilmiyorsanız, app.config dosyasında bulabilirsiniz.
+    > Kullanılabilir uç noktalar adını bilmiyorsanız, app.config dosyasında bulabilirsiniz.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Bir WCF hizmeti için kullanılabilir uç noktalar bulmak için
 
@@ -164,7 +164,7 @@ Visual Studio, Windows Communication Foundation (WCF) ile çalışmaya yönelik 
  Bir hizmet başvurusu için bir proje eklendiğinde varsayılan olarak, zaman uyumlu yöntemleri çağırmak için yapılandırılır. Bir ayarı değiştirerek zaman uyumsuz yöntemleri çağırma davranışını değiştirebilirsiniz **hizmet başvurusu yapılandırma** iletişim kutusu.
 
 > [!NOTE]
->  Bu seçenek, bir hizmet başına temelinde ayarlanır. Zaman uyumsuz olarak bir hizmet için bir yöntem çağrılırsa, tüm yöntemlerin zaman uyumsuz olarak çağrılmalıdır.
+> Bu seçenek, bir hizmet başına temelinde ayarlanır. Zaman uyumsuz olarak bir hizmet için bir yöntem çağrılırsa, tüm yöntemlerin zaman uyumsuz olarak çağrılmalıdır.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

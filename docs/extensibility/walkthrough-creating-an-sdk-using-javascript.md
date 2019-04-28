@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76aa6fe6218205874ab616f5c0ffb09f5c5c3cbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796349"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>İzlenecek yol: JavaScript kullanarak SDK oluşturma
 Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX) olarak oluşturmak için JavaScript kullanmayı öğretir.  İzlenecek yol, şu bölümlere ayrılmıştır:
@@ -27,19 +27,19 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createSimpleMathVSIX"></a> SimpleMathVSIX uzantı SDK projesi oluşturmak için
+## <a name="createSimpleMathVSIX"></a> SimpleMathVSIX uzantı SDK projesi oluşturmak için
 
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2.  Şablon kategoriler listesinde altında **Visual C#** seçin **genişletilebilirlik**ve ardından **VSIX projesi** şablonu.
+2. Şablon kategoriler listesinde altında **Visual C#** seçin **genişletilebilirlik**ve ardından **VSIX projesi** şablonu.
 
-3.  İçinde **adı** metin kutusunda, belirtin `SimpleMathVSIX` ve **Tamam** düğmesi.
+3. İçinde **adı** metin kutusunda, belirtin `SimpleMathVSIX` ve **Tamam** düğmesi.
 
-4.  Varsa **Visual Studio Paket Sihirbazı'nı** görüntülenirse, seçin **sonraki** düğmesini **Hoş Geldiniz** sayfasında ve ardından **sayfa 1 / 7**, seçin **Son** düğmesi.
+4. Varsa **Visual Studio Paket Sihirbazı'nı** görüntülenirse, seçin **sonraki** düğmesini **Hoş Geldiniz** sayfasında ve ardından **sayfa 1 / 7**, seçin **Son** düğmesi.
 
      Ancak **bildirim Tasarımcısı** açar, biz tutacağız Bu izlenecek yol basit doğrudan bildirim dosyasını değiştirerek.
 
-5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest** dosya ve ardından **kodu görüntüle**. Dosyanın mevcut içeriğini değiştirmek için bu kodu kullanın.
+5. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest** dosya ve ardından **kodu görüntüle**. Dosyanın mevcut içeriğini değiştirmek için bu kodu kullanın.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +61,11 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
     </PackageManifest>
     ```
 
-6.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMathVSIX** proje ve ardından **Ekle** > **yeni öğe**.
+6. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMathVSIX** proje ve ardından **Ekle** > **yeni öğe**.
 
-7.  İçinde **veri** kategorisi seçin **XML dosyası**, dosya adı `SDKManifest.xml`ve **Ekle** düğmesi.
+7. İçinde **veri** kategorisi seçin **XML dosyası**, dosya adı `SDKManifest.xml`ve **Ekle** düğmesi.
 
-8.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SDKManifest.xml** dosya ve ardından **açın** dosyasını görüntüleyecek şekilde **XMLDüzenleyicisi**.
+8. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SDKManifest.xml** dosya ve ardından **açın** dosyasını görüntüleyecek şekilde **XMLDüzenleyicisi**.
 
 9. Aşağıdaki kodu ekleyin **SDKManifest.xml** dosya.
 
@@ -126,9 +126,9 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
 
 17. İçinde **Çözüm Gezgini**, kısayol menüsünde **arithmetic.js** dosya öğesini **özellikleri**. Bu özellik değişiklikleri yapın:
 
-    -   Ayarlama **VSIX Ekle** özelliğini **True**.
+    - Ayarlama **VSIX Ekle** özelliğini **True**.
 
-    -   Ayarlama **çıkış dizinine Kopyala** özelliğini **her zaman Kopyala**.
+    - Ayarlama **çıkış dizinine Kopyala** özelliğini **her zaman Kopyala**.
 
 18. İçinde **Çözüm Gezgini**, kısayol menüsünde **SimpleMathVSIX** projesinin **yapı**.
 
@@ -138,7 +138,7 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
 
 21. Visual Studio'yu yeniden başlatın.
 
-##  <a name="createSampleApp"></a> SDK'sını kullanan örnek bir uygulama oluşturmak için
+## <a name="createSampleApp"></a> SDK'sını kullanan örnek bir uygulama oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 

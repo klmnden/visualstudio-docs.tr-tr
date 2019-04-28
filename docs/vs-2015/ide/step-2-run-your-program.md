@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434053"
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Hata ayıklama araç çubuğu
     - Üst köşesinde X düğmesini **Form1** penceresi.  
   
     > [!NOTE]
-    >  IDE içinde programınızı çalıştırdığınızda, çağrıldığı *hata ayıklama* bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız olduğundan. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md).  
+    > IDE içinde programınızı çalıştırdığınızda, çağrıldığı *hata ayıklama* bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız olduğundan. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md).  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

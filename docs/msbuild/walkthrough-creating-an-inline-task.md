@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445331"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>İzlenecek yol: Satır içi göre oluşturma
 MSBuild görevleri, derleme uygulayan bir sınıf tarafından genellikle oluşturulur <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).
@@ -103,7 +103,7 @@ Oluşturma ve görevleri çalıştırmak için Visual Studio'yu kullanın ve **V
     `Hello, world!`
 
    > [!NOTE]
-   >  Selamlama iletisine görmüyorsanız, proje dosyasını kaydetmeyi tekrar deneyin ve sonra başlangıç görevi çalıştırın.
+   > Selamlama iletisine görmüyorsanız, proje dosyasını kaydetmeyi tekrar deneyin ve sonra başlangıç görevi çalıştırın.
 
    Kod Düzenleyicisi arasında geçiş yapma tarafından ve **komut istemi penceresi**, proje dosyasını değiştirebilir ve sonuçları hızlı bir şekilde görmek.
 

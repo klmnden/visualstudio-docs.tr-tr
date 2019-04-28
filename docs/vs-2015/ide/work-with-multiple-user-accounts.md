@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441645"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
 2. Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle > bağlı hizmet**. Bağlı Sihirbazı görünür ve gösterir Hizmet Ekle, Visual Studio oturum açma ile ilişkili Azure hesabındaki hizmetlerin listesi kimliği Azure için ayrı ayrı oturum açmanız gerekmez unutmayın. Ancak, diğer hesapları için belirli bir bilgisayardan kullanıcıların kaynaklara erişmeye ilk kez oturum açmanız gerekir.  
   
     > [!WARNING]
-    >  Bu ilk kez kullanıyorsanız, belirli bir bilgisayarda Visual Studio 2015'te bir Store uygulaması oluşturuyorsanız, Cihazınızı geliştirme modu için ekranına giderek etkinleştirirsiniz istenir **ayarları &#124; . Güncelleştirmeler ve güvenlik &#124; geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için [Cihazınızı geliştirme için etkinleştirme](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    > Bu ilk kez kullanıyorsanız, belirli bir bilgisayarda Visual Studio 2015'te bir Store uygulaması oluşturuyorsanız, Cihazınızı geliştirme modu için ekranına giderek etkinleştirirsiniz istenir **ayarları &#124; . Güncelleştirmeler ve güvenlik &#124; geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için [Cihazınızı geliştirme için etkinleştirme](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
 ### <a name="access_azure"></a> Web projesinde erişimi Azure Active Directory  
  Azure AD, son kullanıcı çoklu oturum açma ASP.NET MVC web uygulamaları veya Web API hizmetlerindeki AD kimlik doğrulaması için destek sağlar. Etki alanı kimlik doğrulaması, kullanıcı hesabı kimlik doğrulamasını farklıdır; Active Directory etki alanınıza erişimi olan kullanıcılar, mevcut Azure AD hesaplarına web uygulamalarınıza bağlanmak için kullanabilirsiniz. Office 365 uygulamaları, etki alanı kimlik doğrulaması olarak da kullanabilirsiniz. Bu uygulamada görmek için bir web uygulaması oluşturma (**Dosya > Yeni Proje > C# > bulut > ASP.NET Web uygulaması**). Yeni ASP.NET projesi iletişim kutusunda seçin **kimlik doğrulamayı Değiştir**. Kimlik doğrulaması Sihirbazı görünür ve uygulamanızda kullanılacak kimlik doğrulaması türünü seçmenize olanak tanır.  

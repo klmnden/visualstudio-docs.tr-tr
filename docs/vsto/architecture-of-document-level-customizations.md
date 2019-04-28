@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440370"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge düzeyi özelleştirmeler mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmelerini oluşturmak için projeleri içerir. Bu konu, belge düzeyinde özelleştirmeler şu yönlerini açıklar:
@@ -49,7 +49,7 @@ ms.locfileid: "60052006"
  Her derleme farklı uygulama etki alanında bir kullanıcı aynı anda birden çok belge düzeyi özelleştirmeleri açarsa yüklenir. Başka bir deyişle, hatalı davranan tek bir çözüm diğer çözümlerin başarısız olmasına neden olmayabilir. Belge düzeyi özelleştirmeleri, tek bir uygulama etki alanındaki tek bir belge ile çalışacak şekilde tasarlanmıştır. Belgeler arası iletişim için tasarlanmamıştır. Uygulama etki alanları hakkında daha fazla bilgi için bkz. [uygulama etki alanları](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Visual Studio Office geliştirici araçları kullanarak oluşturduğunuz belge düzeyi özelleştirmeleri, yalnızca bir son kullanıcı tarafından uygulama başlatıldığında kullanılmak üzere tasarlanmıştır. Uygulamayı programlı olarak başlatılırsa, örneğin, otomasyon, kullanarak özelleştirme beklendiği gibi çalışmayabilir.
+> Visual Studio Office geliştirici araçları kullanarak oluşturduğunuz belge düzeyi özelleştirmeleri, yalnızca bir son kullanıcı tarafından uygulama başlatıldığında kullanılmak üzere tasarlanmıştır. Uygulamayı programlı olarak başlatılırsa, örneğin, otomasyon, kullanarak özelleştirme beklendiği gibi çalışmayabilir.
 
 ### <a name="design-time-and-run-time-experiences"></a>Tasarım zamanı ve çalışma zamanı deneyimleri
  Belge düzeyi özelleştirmeler mimarisi anlamak için bir çözüm tasarlamak ve bir çözüm çalıştırma deneyimleri anlamanıza yardımcı olur.
@@ -118,7 +118,7 @@ ms.locfileid: "60052006"
  ![2007 office Özelleştirme mimarisi](../vsto/media/office07-custom.png "2007 Office Özelleştirme mimarisi")
 
 > [!NOTE]
->  Office çözümlerinde hedef [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], konak uygulama tarafından nesne modeline çağrı PIA içine doğrudan çağırmak yerine çözüm derlemesindeki gömülü birincil birlikte çalışma derlemesi (PIA) tür bilgileri kullanılarak çözümler. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
+> Office çözümlerinde hedef [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], konak uygulama tarafından nesne modeline çağrı PIA içine doğrudan çağırmak yerine çözüm derlemesindeki gömülü birincil birlikte çalışma derlemesi (PIA) tür bilgileri kullanılarak çözümler. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Yükleme işlemi
  Aşağıdaki adımlar, bir kullanıcı bir Microsoft Office çözümünün parçası olan bir belgeyi açtığında gerçekleşir.

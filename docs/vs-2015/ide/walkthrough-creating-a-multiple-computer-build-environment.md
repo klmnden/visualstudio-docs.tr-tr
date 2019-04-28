@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438134"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   Program dosyaları klasörünün adı yüklü işletim sisteminde olduğuna dikkat edin. X x86 bilgisayar adı olan \Program dosyaları\\; x x64 bilgisayar adı olan \Program dosyaları (x86)\\. Sistem Mimarisi ne olursa olsun, bu İnceleme % ProgramFiles % olarak Program dosyaları klasörüne başvurur.  
   
 > [!NOTE]
->  Yapı bilgisayarında, tüm ilgili dosyalar aynı sürücüde olmalıdır; Ancak, söz konusu sürücünün sürücü harfi, Visual Studio ana bilgisayarında yüklü olduğu sürücünün sürücü harfi farklı olabilir. Her iki durumda da, bu belgenin sonraki bölümlerinde açıklandığı şekilde kayıt defteri girdileri oluşturduğunuzda dosyalarının konumunu dikkate alması gerekir.  
+> Yapı bilgisayarında, tüm ilgili dosyalar aynı sürücüde olmalıdır; Ancak, söz konusu sürücünün sürücü harfi, Visual Studio ana bilgisayarında yüklü olduğu sürücünün sürücü harfi farklı olabilir. Her iki durumda da, bu belgenin sonraki bölümlerinde açıklandığı şekilde kayıt defteri girdileri oluşturduğunuzda dosyalarının konumunu dikkate alması gerekir.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK dosyalarını yapı bilgisayarına kopyalamak için  
   
@@ -223,7 +223,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
 1. Kayıt defteri girişleri için ana klasörü belirleyin. Tüm kayıt defteri girdilerini aynı üst anahtar altında oluşturulur. X x86, üst anahtar bilgisayardır HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. X x64 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft bilgisayarında üst anahtar olduğunu\\. Sistem Mimarisi ne olursa olsun, bu İnceleme % RegistryRoot % olarak üst anahtara başvurur.  
   
    > [!NOTE]
-   >  Ana bilgisayarınızın mimarisi yapı farklıysa, her bilgisayarda uygun üst anahtarı kullandığınızdan emin olun. Bu dışarı aktarma işlemini otomatikleştiriyorsanız özellikle önem taşır.  
+   > Ana bilgisayarınızın mimarisi yapı farklıysa, her bilgisayarda uygun üst anahtarı kullandığınızdan emin olun. Bu dışarı aktarma işlemini otomatikleştiriyorsanız özellikle önem taşır.  
    >   
    >  Ayrıca, yapı bilgisayarında ana bilgisayarda kullandığınız olandan farklı bir sürücü harfi kullanıyorsanız, eşleşmesi için kayıt defteri girdilerinin değerlerini değiştirdiğinizden emin olun.  
   
@@ -334,7 +334,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
      **Gacutil -i \<dosyası >**  
   
     > [!NOTE]
-    >  Bir derlemenin GAC öğesine tam olarak yüklemek için bir yeniden başlatma gerekebilir.  
+    > Bir derlemenin GAC öğesine tam olarak yüklemek için bir yeniden başlatma gerekebilir.  
   
 ## <a name="BuildingProjects"></a> Proje oluşturma  
  Team Foundation derlemesi oluşturmak için kullanabileceğiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projeleri ve çözümleri veya oluşturabilirsiniz onları komut satırında. Projeleri derlemek için Team Foundation derlemesi kullandığınızda, sistem mimarisine karşılık gelen MSBuild yürütülebilir dosyasını çağırır.  Komut satırında, 32-bit MSBuild veya 64-bit MSBuild kullanabilirsiniz ve PATH ortam değişkenini ayarlayarak veya doğrudan mimariye özgü MSBuild yürütülebilir dosyasını çağırarak MSBuild'in mimarisini seçebilirsiniz.  
@@ -346,17 +346,17 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
  Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Oluşturulacak [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projeleri, "v110" Platform araç takımını kullanmanız gerekir. Düzenlenecek istemiyorsanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] proje dosyaları, bu komut satırı bağımsız değişkenini kullanarak Platform araç takımını ayarlayabilirsiniz:  
+> Oluşturulacak [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] projeleri, "v110" Platform araç takımını kullanmanız gerekir. Düzenlenecek istemiyorsanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] proje dosyaları, bu komut satırı bağımsız değişkenini kullanarak Platform araç takımını ayarlayabilirsiniz:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Böylece kaynak denetimine iade derleme ortamı oluşturma  
  GAC'ing dosyalarını gerektirmeyen veya kayıt defteri ayarlarının değiştirilmesini gerektirmeyen ve çeşitli bilgisayarlara dağıtılan bir yapı ortamı oluşturabilirsiniz. Aşağıdaki adımlarda bunu yapmanın tek yoludur. Bu adımları yapı ortamınızın benzersiz karakteristiğine uyarlayın.  
   
 > [!NOTE]
->  Tracker.exe derleme sırasında bir hata oluşturmayacaksa, artımlı oluşturmayı devre dışı bırakmanız gerekir. Artımlı oluşturmayı devre dışı bırakmak için bu yapı parametresini ayarlayın:  
+> Tracker.exe derleme sırasında bir hata oluşturmayacaksa, artımlı oluşturmayı devre dışı bırakmanız gerekir. Artımlı oluşturmayı devre dışı bırakmak için bu yapı parametresini ayarlayın:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Kaynak denetimine iade edilebilen bir yapı ortamı oluşturmak için  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422242"
 ---
 # <a name="active-script-profiler-interfaces"></a>Etkin Komut Dosyası Profil Oluşturucu Arabirimleri
 Etkin komut dosyası Profiler arabirimleri etkinleştirmek, profil oluşturma olayları almaya [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] altyapısı.  
@@ -47,9 +47,9 @@ Etkin komut dosyası Profiler arabirimleri etkinleştirmek, profil oluşturma ol
 - [Etkin Betik Profil Oluşturucu Sabitleri, Sabit Listeleri ve Yapıları](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Etkin komut dosyası Profiler arabirimleri, Internet Explorer 8 ile ilk yayımlanmıştır. `IActiveScriptProfilerControl2` Ve `IActiveScriptProfilerCallback2` arabirimleri önce Internet Explorer 9 ile kullanıma sunuldu. [Iactivescriptprofilercontrol3 arabirimi](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [Iactivescriptprofilercallback3 arabirimi](../../winscript/reference/iactivescriptprofilercallback3-interface.md), ve [Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) olan arabirimler Internet Explorer 10 ile ilk yayımladı. [Iactivescriptprofilercontrol5 arabirimi](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) Internet Explorer 11 ile ilk yayınlanmıştır.  
+> Etkin komut dosyası Profiler arabirimleri, Internet Explorer 8 ile ilk yayımlanmıştır. `IActiveScriptProfilerControl2` Ve `IActiveScriptProfilerCallback2` arabirimleri önce Internet Explorer 9 ile kullanıma sunuldu. [Iactivescriptprofilercontrol3 arabirimi](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [Iactivescriptprofilercallback3 arabirimi](../../winscript/reference/iactivescriptprofilercallback3-interface.md), ve [Iactivescriptprofilerheapenum arabirimi](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) olan arabirimler Internet Explorer 10 ile ilk yayımladı. [Iactivescriptprofilercontrol5 arabirimi](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) Internet Explorer 11 ile ilk yayınlanmıştır.  
 >   
->  Internet Explorer 8 ve Internet Explorer 9, yalnızca [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dil komut dosyası profil oluşturma desteklemek için bu arabirimleri kullanır.  
+> Internet Explorer 8 ve Internet Explorer 9, yalnızca [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dil komut dosyası profil oluşturma desteklemek için bu arabirimleri kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Betik Arabirimleri Başvurusu](../../winscript/reference/windows-script-interfaces-reference.md)

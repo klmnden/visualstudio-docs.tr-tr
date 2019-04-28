@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424534"
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 2. Desteklenmeyen uzantı SDK'sine sahip satıcının sitesine gidin ve projenizin hedeflediği platformun sürümü ile uyumlu olan bağımlılıkları içeren uzantı SDK'SİNİN sürümünü yükleyin.  
   
     > [!NOTE]
-    >  Bir uzantı SDK bağımlılıklar başka uzantı SDK'lar üzerinde olup bulmanın bir yolu olan Visual Studio'yu yeniden başlatın, yeni bir C# Windows Store projesi oluşturun, projeye sağ tıklayın ve seçin **Başvuru Ekle**Git  **Windows** sekmesine gidin **uzantıları** alt sekmesinde, uzantı SDK'yı seçip sağ bölmede bakmak **başvuru Yöneticisi**. Bağımlılıkları varsa, burada listelenir.  
+    > Bir uzantı SDK bağımlılıklar başka uzantı SDK'lar üzerinde olup bulmanın bir yolu olan Visual Studio'yu yeniden başlatın, yeni bir C# Windows Store projesi oluşturun, projeye sağ tıklayın ve seçin **Başvuru Ekle**Git  **Windows** sekmesine gidin **uzantıları** alt sekmesinde, uzantı SDK'yı seçip sağ bölmede bakmak **başvuru Yöneticisi**. Bağımlılıkları varsa, burada listelenir.  
   
     > [!IMPORTANT]
-    >  Windows 10 projenizin hedeflediği ve önceki adımda yüklenen uzantı SDK'de Microsoft Visual C++ çalışma zamanı paketinde bağımlılık vardır, Microsoft Visual C++ çalışma zamanı sürümü Windows 10 ile uyumlu olan v14.0 olduğu ve yüklü Visual Studio 2015 ile.  
+    > Windows 10 projenizin hedeflediği ve önceki adımda yüklenen uzantı SDK'de Microsoft Visual C++ çalışma zamanı paketinde bağımlılık vardır, Microsoft Visual C++ çalışma zamanı sürümü Windows 10 ile uyumlu olan v14.0 olduğu ve yüklü Visual Studio 2015 ile.  
   
 3. Önceki adımda yüklenen uzantı SDK'de başka uzantı SDK'lar üzerinde bağımlılıkları varsa, sdk'lerinde bağımlılıklar siteleri için Git ve platformun sürümü ile uyumlu olan bu bağımlılıkların sürümlerini yükleyin, projenin hedeflediği.  
   
@@ -89,9 +89,9 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 - Aynı çözüm içindeki diğer proje dizinleri. (Bu derlemeleri bulabilirsiniz **projeleri** sekmesini.)  
   
 > [!NOTE]
->  Tüm projeler, mscorlib öğesine dolaylı bir başvuru içerir. Visual Basic projeleri dolaylı bir başvuru içeren `Microsoft.VisualBasic`.  
+> Tüm projeler, mscorlib öğesine dolaylı bir başvuru içerir. Visual Basic projeleri dolaylı bir başvuru içeren `Microsoft.VisualBasic`.  
 >   
->  Tüm projeleri Visual Studio'da dolaylı bir başvuru içeren `System.Core`bile `System.Core` başvurular listesinden kaldırılır.  
+> Tüm projeleri Visual Studio'da dolaylı bir başvuru içeren `System.Core`bile `System.Core` başvurular listesinden kaldırılır.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Çalışma zamanında başvuruları için paylaşılan bileşenleri  
  Çalışma zamanında bileşenler projenin veya çıkış yolunda olmalıdır [genel derleme önbelleği](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Bu konumlardan birinde olmayan bir nesneye başvuru içeriyorsa, projeyi oluşturduğunuzda projenin çıktı yoluna başvuruyu kopyalamanız gerekir. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Özelliği, bu kopyanın çıkarılmak zorunda olup olmadığını gösterir. Değer ise **True**, projeyi oluşturduğunuzda proje dizinine başvuru kopyalanır. Değer ise **False**, ise başvuru kopyalanmaz.  
@@ -111,7 +111,7 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
  Bir derleme üreten bir proje varsa, proje başvurusu ve bir dosya başvurusu (aşağıya bakın) kullanmamanız gerekir. Bir proje-proje başvurusunun avantajı yapı sistemindeki projeler arasında bağımlılık oluşturmasıdır. Bağımlı proje başvuran proje oluşturulan son daraltılmasından değişmiş ise oluşturulacaktır. Bu nedenle bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz hale gelebilir bir dosya başvurusu bir yapı bağımlılığı oluşturmaz. (Diğer bir deyişle, proje proje daha önce oluşturulmuş bir sürümüne başvuruda bulunabilir.) Bu mümkün değildir bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir. Bu çakışma oluştuğunda, bir ileti gibi görürsünüz [Uyarı: Bu 'dosya' başvurusunun üzerine yazacağından 'proje' projesindeki ' dosya' bağımlılığı çalıştırma dizinine kopyalanamıyor ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md) ve [nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Bir projenin .NET Framework hedef sürümü, sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje proje başvurusu yerine dosya başvurusu oluşturulur.  
+> Bir projenin .NET Framework hedef sürümü, sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje proje başvurusu yerine dosya başvurusu oluşturulur.  
   
 ## <a name="file-references"></a>Dosya başvuruları  
  Dosya başvuruları, derlemelere bir Visual Studio projesinin bağlamı dışından doğrudan başvurulardır; bunları kullanarak oluşturduğunuz **Gözat** sekmesinde **başvuru Yöneticisi**. Yalnızca bir derleme veya bileşen ve çıktı olarak oluşturan Proje yoksa bir dosya başvurusu kullanın.  

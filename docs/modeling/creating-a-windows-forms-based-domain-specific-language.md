@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438176"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konuda, bir Windows formu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bağlama aracılığıyla açıklanmaktadır.
@@ -80,7 +80,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
      Adlı ek bir etki alanı özellikleri vermek `Size` türü **Int32**, ve `IsOrganic` türü **Boole**.
 
     > [!NOTE]
-    >  Kök etki alanı sınıfını silmek ve ardından yeni bir kök oluşturun, düzenleyici kök sınıfı özelliği döndürme gerekecektir. İçinde **DSL Gezgini**seçin **Düzenleyicisi**. Özellikler penceresinde ayarlayın **kök sınıfı** için `Farm`.
+    > Kök etki alanı sınıfını silmek ve ardından yeni bir kök oluşturun, düzenleyici kök sınıfı özelliği döndürme gerekecektir. İçinde **DSL Gezgini**seçin **Düzenleyicisi**. Özellikler penceresinde ayarlayın **kök sınıfı** için `Farm`.
 
 4. Kullanım **adlı etki alanı sınıfı** aşağıdaki alan sınıfları oluşturmak için aracı:
 
@@ -105,7 +105,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 10. Derleme **Dsl** proje.
 
     > [!NOTE]
-    >  Bu aşamada, diğer projeleri hatasız derleme değil. Ancak, böylece kendi derlemesi için veri kaynağı Sihirbazı kullanılabilir Dsl projesi oluşturmak istiyoruz.
+    > Bu aşamada, diğer projeleri hatasız derleme değil. Ancak, böylece kendi derlemesi için veri kaynağı Sihirbazı kullanılabilir Dsl projesi oluşturmak istiyoruz.
 
 ## <a name="updating-the-ui-project"></a>UI projesi güncelleştiriliyor
  Şimdi, DSL modelde tutulan haliyle bilgileri görüntüleyen yeni bir kullanıcı denetimi oluşturabilirsiniz. Veri bağlamaları ile kullanıcı denetimi modele bağlanmak için en kolay yoludur. Veri bağdaştırıcısı türü adlı bağlama **ModelingBindingSource** VMSDK olmayan arabirimleri DSL'ler bağlanmak için özel olarak tasarlanmıştır.
@@ -149,7 +149,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 6. Araç kutusunu kullanma iki örneğini oluşturma **DataGridView**ve bunları `AnimalGridView` ve `FieldGridView`.
 
    > [!NOTE]
-   >  Alternatif bir adım veri kaynakları penceresinden denetimin üzerine hayvanlar ve alanları öğeleri sürüklemektir. Bu eylem, veri kılavuzları ve bağlamaları kılavuz görünümünü ve veri kaynağı arasında otomatik olarak oluşturur. Ancak, bu bağlama için DSL'ler düzgün çalışmaz. Bu nedenle daha iyi veri kılavuzları ve bağlamaları oluşturmak el ile.
+   > Alternatif bir adım veri kaynakları penceresinden denetimin üzerine hayvanlar ve alanları öğeleri sürüklemektir. Bu eylem, veri kılavuzları ve bağlamaları kılavuz görünümünü ve veri kaynağı arasında otomatik olarak oluşturur. Ancak, bu bağlama için DSL'ler düzgün çalışmaz. Bu nedenle daha iyi veri kılavuzları ve bağlamaları oluşturmak el ile.
 
 7. Araç kutusu içermiyorsa **ModelingBindingSource** aracı, ekleyin. Kısayol menüsünde **veri** sekmesini, **öğelerini Seç**. İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **ModelingBindingSource** gelen **.NET Framework sekmesinde**.
 
@@ -221,7 +221,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
      `Goat1` görünür **hayvanlar** görünümü.
 
     > [!WARNING]
-    >  Kısayol menüsünü kullanmanız gerekir **grubu** düğümünü değil **hayvanlar** düğümü.
+    > Kısayol menüsünü kullanmanız gerekir **grubu** düğümünü değil **hayvanlar** düğümü.
 
 4. Seçin **grubu** kök düğümü ve özelliklerini görüntüleyin.
 

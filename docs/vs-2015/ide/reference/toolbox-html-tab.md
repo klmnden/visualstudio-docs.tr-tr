@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419755"
 ---
 # <a name="toolbox-html-tab"></a>Araç Kutusu, HTML Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "60097537"
  Daha fazla bilgi için [HTML giriş denetimlerine](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputText sunucu denetimi bildirim temelli sözdizimi](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Web sunucusu için TextBox denetimine genel bakış](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText>, ve <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Giriş (dosya)**  
  ![HTML sayfası dosya alanı](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ ms.locfileid: "60097537"
  Daha fazla bilgi için [HTML giriş denetimlerine](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputFile Sunucu denetimi bildirim temelli sözdizimi](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6), ve <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Giriş (parola)**  
  ![Visual Studio parola alanı](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ ms.locfileid: "60097537"
  Daha fazla bilgi için [HTML giriş denetimlerine](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword Sunucu denetimi bildirim temelli sözdizimi](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [nasıl yapılır: Parola girişi için bir TextBox Web sunucusu denetimi ayarlama](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310), ve [izlenecek yol: Bir Web uygulamasında kullanıcı girdisi doğrulama Forms sayfası](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, Web sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak için yapılandırmanız gerekir. Daha fazla bilgi için bkz: "Bağlantı SSL ile güvenli hale getirme" [IIS işlemler Kılavuzu](http://go.microsoft.com/fwlink/?linkid=47856). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Uygulamanızın kullanıcı adları ve parolalar gönderiyorsa, Web sitenizi iletim şifrelemek için Güvenli Yuva Katmanı (SSL) kullanmak için yapılandırmanız gerekir. Daha fazla bilgi için bkz: "Bağlantı SSL ile güvenli hale getirme" [IIS işlemler Kılavuzu](http://go.microsoft.com/fwlink/?linkid=47856). Ayrıca, tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Giriş (onay kutusu)**  
  ![HTML Web sayfası araç onay kutusu seçeneğini](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ ms.locfileid: "60097537"
  Daha fazla bilgi için [HtmlTextArea sunucu denetimi bildirim temelli sözdizimi](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea>, ve <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Tüm kullanıcı girişi doğrulamanız önerilir. Daha fazla bilgi için [kullanıcı girişini doğrulama ASP.NET Web Pages'de](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Tablo**  
  ![HTMLpageToolbarTable ekran](../../ide/reference/media/vxtable.gif "vxTable")  

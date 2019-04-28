@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444390"
 ---
 # <a name="signfile-task"></a>SignFile Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.
  SHA-256'yı sertifikaları izin verilen .NET 4.5 olan makinelere ve daha yüksek olduğunu unutmayın.  
   
 > [!WARNING]
->  Visual Studio 2013 güncelleştirme 3'te başlayarak, bu görevin dosyası için hedef framework sürümünü belirtmenizi sağlayan yeni bir imzası vardır. SHA-256'yı MSBuild işleminde kullandığı için mümkün olan karma yere yalnızca hedef Framework'ü .NET 4.5 olduğunda yeni imza kullanmak için kullanmaları ya da daha yüksek olursunuz. Aşağıda veya .NET 4.0 hedef çerçeve ise SHA-256 karma kullanılmayacak.  
+> Visual Studio 2013 güncelleştirme 3'te başlayarak, bu görevin dosyası için hedef framework sürümünü belirtmenizi sağlayan yeni bir imzası vardır. SHA-256'yı MSBuild işleminde kullandığı için mümkün olan karma yere yalnızca hedef Framework'ü .NET 4.5 olduğunda yeni imza kullanmak için kullanmaları ya da daha yüksek olursunuz. Aşağıda veya .NET 4.0 hedef çerçeve ise SHA-256 karma kullanılmayacak.  
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
@@ -70,7 +70,7 @@ Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.
 ```  
   
 > [!NOTE]
->  Sertifika parmak izini sertifika SHA-1 karmasını ' dir. Daha fazla bilgi için [güvenilen kök CA sertifikasının SHA-1 karması elde](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> Sertifika parmak izini sertifika SHA-1 karmasını ' dir. Daha fazla bilgi için [güvenilen kök CA sertifikasının SHA-1 karması elde](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte `Exec` belirtilen dosyaları imzalamak için görev `FilesToSign` koleksiyon öğesi tarafından belirtilen sertifika ile `Certificate` özelliği. Derleme işlemi sırasında Windows Installer dosyaları imzalamak için bunu kullanabilirsiniz.  

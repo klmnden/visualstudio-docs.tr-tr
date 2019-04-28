@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435467"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Nasıl yapılır: BDC modeli oluşturma
   Bir iş verileri bağlantısı (BDC) modeli, o tür öğeye şablonu kullanarak ve ardından modeli herhangi bir SharePoint projesine ekleme oluşturabilirsiniz. Daha fazla bilgi için [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md). Modelin nasıl tasarlanabileceğiyle ilgili daha fazla bilgi için bkz. [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106663"
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
     > [!NOTE]
-    >  IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.
+    > IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.
 
      **Yeni proje** iletişim kutusu açılır.
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106663"
      Belirttiğiniz SharePoint sitesindeki modeli test eder.
 
     > [!IMPORTANT]
-    >  İVB modelleri sadece grup çözümlerini desteklediğinden projeyi bir Grup çözümü olarak dağıtmanız gerekir.
+    > İVB modelleri sadece grup çözümlerini desteklediğinden projeyi bir Grup çözümü olarak dağıtmanız gerekir.
 
      Boş bir SharePoint projesi oluşturulur.
 

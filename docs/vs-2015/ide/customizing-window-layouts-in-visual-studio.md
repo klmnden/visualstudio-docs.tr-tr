@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437550"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio’da pencere düzenlerini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
   Araç ve belge pencereleri düzenlenmiş, komutlar kullanılarak sürükleyerek **penceresi** menüsünde ve düzenlenmesini pencerenin başlık çubuğuna sağ tıklanarak.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Windows yerleştirme
  ' A tıklayın ve bir araç penceresinin başlık çubuğunda veya belge penceresi için sekmesinde sürükleyin, kılavuz elmas görünür. Fare imleci üzerine elmas okları olduğunda sürükleme işlemi sırasında artık fare düğmesini serbest bırakırsanız penceresi nereye yerleştirilir gösteren gölgeli bir alanı görünür.
@@ -106,16 +106,16 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
  ![Otomatik Gizle](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Otomatik Gizle mi çalışacağını ayarlamak için windows ayrı ayrı veya sabitlenmiş gruplar halinde seçin veya temizleyin **otomatik gizle düğmesi sadece etkin araç pencerelerini etkiler** içinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için [genel, ortam, Seçenekler iletişim kutusu](../ide/reference/general-environment-options-dialog-box.md).
+> Otomatik Gizle mi çalışacağını ayarlamak için windows ayrı ayrı veya sabitlenmiş gruplar halinde seçin veya temizleyin **otomatik gizle düğmesi sadece etkin araç pencerelerini etkiler** içinde **seçenekleri** iletişim kutusu. Daha fazla bilgi için [genel, ortam, Seçenekler iletişim kutusu](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  Pencere odaklandığında Otomatik Gizle özelliği etkin olan araç pencereleri geçici olarak görüntüye girebilir. Pencereyi yeniden gizlemek için geçerli pencere dışında bir öğe seçin. Pencere odağı kaybettiğinde, görünümden çıkar.
+> Pencere odaklandığında Otomatik Gizle özelliği etkin olan araç pencereleri geçici olarak görüntüye girebilir. Pencereyi yeniden gizlemek için geçerli pencere dışında bir öğe seçin. Pencere odağı kaybettiğinde, görünümden çıkar.
 
 ### <a name="specifying-a-monitor"></a>İzleyici belirtme
  İkinci bir monitörünüz varsa ve işletim sisteminizin destekliyorsa, hangi monitörün pencere görüntüleyeceğini seçebilirsiniz. Hatta birden fazla windows "rafts" içinde diğer monitörlerde gruplayabilirsiniz.
 
 > [!TIP]
->  Birden çok örneğini oluşturduğunuz **Çözüm Gezgini** ve başka bir monitöre taşıyabilirsiniz. Pencereye sağ tıklatın ve seçin **Yeni Çözüm Gezgini görünümü**. Ctrl tuşunu seçip çift tıklayarak tüm windows özgün monitöre geri dönebilirsiniz.
+> Birden çok örneğini oluşturduğunuz **Çözüm Gezgini** ve başka bir monitöre taşıyabilirsiniz. Pencereye sağ tıklatın ve seçin **Yeni Çözüm Gezgini görünümü**. Ctrl tuşunu seçip çift tıklayarak tüm windows özgün monitöre geri dönebilirsiniz.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Sıfırlama, adı ve pencere düzenlerini arasında geçiş yapma
  Kullanarak ayarlar koleksiyonunuz için özgün pencere düzenini IDE döndürebilir **pencere düzenini Sıfırla** komutu. Bu komutu çalıştırdığınızda, aşağıdaki eylemler gerçekleşir:

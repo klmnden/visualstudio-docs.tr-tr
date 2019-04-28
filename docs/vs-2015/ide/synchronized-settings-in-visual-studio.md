@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428264"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio'da Eşitlenmiş Ayarlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio için birden çok bilgisayarda oturum açmak için aynı kişisell
  Visual Studio 2015 Express ve topluluk sürümleri dahil olmak üzere, herhangi bir sürümünü ayarları eşitlenebilir. Ayarları ayrıca Blend gibi Visual Studio ailesi ürünler arasında eşitlenir. Ancak, her biri bu ailesi ürünler Visual Studio ile paylaşılmayan kendi ayarlarına sahip olabilir. Bilgisayar b Blend ile ancak bilgisayar A veya b Visual Studio ile değil bilgisayarındaki Blend için özel ayarları gibi paylaşılır
 
 > [!WARNING]
->  Ayarlar, Visual Studio 2015 ve Visual Studio 2013 arasında eşitlenmez. Visual Studio 2015'te, ilk açtığınızda, ayarlarınızı Visual Studio 2013'ten geçirilir, ancak Visual Studio 2013 için geri bundan sonra geçirilemezler.
+> Ayarlar, Visual Studio 2015 ve Visual Studio 2013 arasında eşitlenmez. Visual Studio 2015'te, ilk açtığınızda, ayarlarınızı Visual Studio 2013'ten geçirilir, ancak Visual Studio 2013 için geri bundan sonra geçirilemezler.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [IDE’yi Kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)

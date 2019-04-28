@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433124"
 ---
 # <a name="define-a-work-item-link-handler"></a>İş öğesi bağlantı işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Test amaçları için Bağlantı işleyicinizi hata ayıklama modunda yürütün.  
   
 > [!WARNING]
->  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
+> Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
   
 #### <a name="to-test-the-link-handler"></a>Bağlantı işleyicisini test etmek için  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Bu örneğin çalışması için bir proje başvurusu eklemelisiniz `System.Drawing.dll`ve ad alanı içe `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Ancak, bu eklemeler diğer uygulamaları için gerekli değildir `OnWorkItemLinked`.  
+> Bu örneğin çalışması için bir proje başvurusu eklemelisiniz `System.Drawing.dll`ve ad alanı içe `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Ancak, bu eklemeler diğer uygulamaları için gerekli değildir `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Bağlantı kaldırmaya yönelik dinleme  
  `OnWorkItemRemoved` silinmeden hemen her iş öğesi bağlantısı önce bir kez çağrılır. Bir model öğesi silinirse, onun tüm bağlantıları kaldırılacak.  

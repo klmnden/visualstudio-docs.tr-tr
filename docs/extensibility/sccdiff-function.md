@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434686"
 ---
 # <a name="sccdiff-function"></a>SccDiff işlevi
 Bu işlev görüntüler (veya isteğe bağlı olarak yalnızca denetler) geçerli dosya (yerel diskte) ile son iade sürümü arasındaki farkları kaynak denetim sistemi.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Performans iyileştirme, bir sağlama toplamı veya bir zaman damgası için çağıran bayt bayt karşılaştırma yerine göre alternatif kaynak denetimi eklentisi kullanabilir `SCC_DIFF_CONTENTS`: Bu formları karşılaştırma açıkça daha hızlı ancak daha az güvenilir. Tüm kaynak denetimi sistemlerini bu alternatif karşılaştırma yöntemleri destekleyebilir ve eklenti içeriğini karşılaştırma dönmesi gerekebilir. Tüm kaynak denetimi eklentileri en az bir içindekiler karşılaştırmayı desteklemesi gerekir.
 
 > [!NOTE]
->  Hızlı fark bayrakları birbirini dışlar. Bayrak geçirmek için geçerlidir, ancak aynı anda birden fazla geçirmek için geçerli değil. `SCC_DIFF_QUICK_DIFF`, test etmek için tüm bayrakları bir araya getiren bir maskesi olan kullanılabilir, ancak hiçbir zaman bir parametre olarak geçirilmelidir.
+> Hızlı fark bayrakları birbirini dışlar. Bayrak geçirmek için geçerlidir, ancak aynı anda birden fazla geçirmek için geçerli değil. `SCC_DIFF_QUICK_DIFF`, test etmek için tüm bayrakları bir araya getiren bir maskesi olan kullanılabilir, ancak hiçbir zaman bir parametre olarak geçirilmelidir.
 
 |`fOption`|Açıklama|
 |---------------|-------------|

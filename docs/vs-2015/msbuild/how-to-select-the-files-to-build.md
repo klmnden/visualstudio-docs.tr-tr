@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437901"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: Derlenecek Dosyaları Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`  
+    > Proje dosyası ile aynı dizinde bir öğe koleksiyonu öğeleri emin değilseniz, öğenin tam veya göreli yol belirtmeniz gerekir. Örneğin: `Include="..\..\form2.cs"`  
   
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için  
   
@@ -100,9 +100,9 @@ Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasın
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Joker karakterler ile kısa öğelerine girişleri bir derleme için kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:  
+> Joker karakterler ile kısa öğelerine girişleri bir derleme için kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği, tüm giriş dosyalarını ayrı olarak içeren bir proje gösterir.  

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436509"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>İzlenecek yol: Akıllı etiketler görüntüleme
 Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [izlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
  Akıllı etiketler Düzenleyicisi IntelliSense uygulamasında bir parçası olsa da, sınıflara göre akıllı etiketler uygulayabilirsiniz <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>ve ardından uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> arabirimi ve <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> arabirimi.  
   
 > [!NOTE]
->  Benzer şekilde diğer türlerdeki etiketler uygulanabilir.  
+> Benzer şekilde diğer türlerdeki etiketler uygulanabilir.  
   
  Aşağıdaki örneklerde, iki önerilen eylemleri geçerli kelimenin görünür ve bir akıllı etiket oluşturma işlemi gösterilmektedir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**.  
   
@@ -183,4 +183,4 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
 5. Düğmeye tıkladığınızda, iki önerilen eylemleri görüntülenmesi gerekir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**. İlk eylem tıklarsanız, geçerli kelimenin tüm metni büyük harfe dönüştürülmelidir. İkinci eylem tıklarsanız, bütün metni küçük harflere dönüştürülmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

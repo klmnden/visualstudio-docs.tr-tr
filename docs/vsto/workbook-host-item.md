@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445536"
 ---
 # <a name="workbook-host-item"></a>Çalışma kitabı konak öğesi
   <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Excel.Workbook> Excel için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesne, ancak ayrıca ek özellikler sağlar.
@@ -49,7 +49,7 @@ ms.locfileid: "56625273"
  <xref:Microsoft.Office.Tools.Excel.Workbook> Konak denetimler için kapsayıcı olarak ana bilgisayar öğesi davranmaz. Bu nedenle, çalışma kitabına görünür bir denetim ekleyemezsiniz, ancak bileşenler gibi ekleyebilirsiniz bir <xref:System.Data.DataSet>, böylece bileşenlerin tüm çalışma sayfalarını tarafından paylaşılabilir. Bir belge düzeyi projede çalışma kitabına kullanılabilir bileşenler bulunabilir **bileşen** sekmesinde **veri** sekmesinde ve **tüm Windows Formları** sekmesinde  **Araç kutusu**.
 
 > [!NOTE]
->  Visual Studio'da Office geliştirme araçları, paylaşılan çalışma kitapları desteklemez.
+> Visual Studio'da Office geliştirme araçları, paylaşılan çalışma kitapları desteklemez.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>VSTO eklentisi projelerinde çalışma kitabı konak öğeleri anlama
  VSTO eklentisi projelerinde oluşturabileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Workbook> Excel'de herhangi bir çalışma kitabında çalışma zamanında konak öğesi. Oluşturulacak bir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi, kullanım `GetVstoObject` yöntemi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).

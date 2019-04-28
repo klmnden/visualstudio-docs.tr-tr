@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434872"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
  Hata ayıklama desteklenir [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)], ve [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Yazılım benzetmesi üzerinde hata ayıklama [!INCLUDE[win8](../includes/win8-md.md)], veya [!INCLUDE[winserver8](../includes/winserver8-md.md)] gereklidir. Donanım üzerinde hata ayıklamak için ekran kartınızın sürücülerini yüklemeniz gerekir. Tüm donanım satıcıları, tüm hata ayıklayıcı özellikler uygular. Sınırlamalar satıcı belgelerine bakın.  
   
 > [!NOTE]
->  Visual Studio GPU hata ayıklama desteklemek istediğiniz bağımsız donanım satıcıları kendi sürücüleri hedefleri ve VSD3DDebug arabirimi uygulayan bir DLL oluşturmanız gerekir.  
+> Visual Studio GPU hata ayıklama desteklemek istediğiniz bağımsız donanım satıcıları kendi sürücüleri hedefleri ve VSD3DDebug arabirimi uygulayan bir DLL oluşturmanız gerekir.  
   
 ## <a name="configuring-gpu-debugging"></a>GPU hata ayıklama yapılandırma  
  Hata ayıklayıcı, hem CPU kod hem de GPU kodu aynı uygulama yürütme kesemez. Varsayılan olarak, hata ayıklayıcı CPU kodu keser. GPU kodunda hata ayıklamak için aşağıdaki iki adımlardan birini kullanın:  

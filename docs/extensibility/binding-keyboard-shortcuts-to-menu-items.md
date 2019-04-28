@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410104"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Menü öğelerine klavye kısayolları bağlama
 Özel menü komut için klavye kısayolu bağlama için bir girdi eklemeniz yeterlidir *.vsct* paket dosyası. Bu konu, bir özel düğme, menü öğesi ya da araç çubuğu komutuna bir klavye kısayolu eşlemeyle ilgili bilgi ve varsayılan Düzenleyicisi'nde klavye eşleme uygulamak veya özel bir düzenleyici sınırlandırmak nasıl açıklar.
@@ -42,7 +42,7 @@ ms.locfileid: "56705865"
 4. Anahtarları farklı birleşimlerini eşlenmemiş bir tane bulana kadar deneyin.
 
    > [!NOTE]
-   >  Klavye kısayolları kullanmak **Alt** bir menüyü açabilirsiniz ve doğrudan bir komut yürütün. Bu nedenle, **şu anda kullandığı kısayolunu** içeren bir kısayol yazarken kutusu boş olabilir **Alt**. Kısayol menü kapanış açmaz doğrulayabilirsiniz **seçenekleri** iletişim kutusunu ve ardından tuşlarına basarak.
+   > Klavye kısayolları kullanmak **Alt** bir menüyü açabilirsiniz ve doğrudan bir komut yürütün. Bu nedenle, **şu anda kullandığı kısayolunu** içeren bir kısayol yazarken kutusu boş olabilir **Alt**. Kısayol menü kapanış açmaz doğrulayabilirsiniz **seçenekleri** iletişim kutusunu ve ardından tuşlarına basarak.
 
    Aşağıdaki yordamda, bir menü komutu ile var olan bir VSPackage sahibi olduğunuzu varsayar. Böylece yardıma ihtiyacınız olursa, göz atın [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -53,7 +53,7 @@ ms.locfileid: "56705865"
 2. Boş bir oluşturma `<KeyBindings>` sonra bölüm `<Commands>` zaten mevcut değilse.
 
    > [!WARNING]
-   >  Tuş bağlamaları hakkında daha fazla bilgi için bkz: [tuş](../extensibility/keybinding-element.md).
+   > Tuş bağlamaları hakkında daha fazla bilgi için bkz: [tuş](../extensibility/keybinding-element.md).
 
     İçinde `<KeyBindings>` bölümünde, oluşturun bir `<KeyBinding>` girişi.
 

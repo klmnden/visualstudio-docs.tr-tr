@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797566"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;giriş noktaları&gt; öğesi (Visual Studio'da Office Geliştirme)
   `entryPoints` Öğesinin `vstav3` ad alanı içeren tüm `entryPoint` bir Office çözümü ile ilişkili öğeleri.

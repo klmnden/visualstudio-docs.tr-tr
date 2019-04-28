@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794463"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Gösterilecek disk etkinliği yok (iş parçacıkları görünümü) göstermek için
 Disk g/ç kanalda geçerli zaman aralığı için disk etkinlik görüntülenemiyor. Disk etkinliği yok, uzaklaştırmak ya da kaydırma görüntülenebilir. Ayrıca, hiçbir disk kanallar gizlidir emin olun.
