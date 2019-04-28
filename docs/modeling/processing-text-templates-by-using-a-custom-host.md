@@ -1,5 +1,5 @@
 ---
-title: Bir Özel Konak kullanarak Metin Şablonlarını İşleme
+title: Bir Özel Ana Bilgisayar kullanarak Metin Şablonlarını İşleme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969325"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Özel bir Konak kullanarak Metin Şablonlarını İşleme
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950464"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Örnek projeleri Visual Studio için R araçları
 
@@ -81,7 +81,7 @@ Aşağıdaki karşılaştırmaya MLS ve MRO MKL ile R ve MRO MKL olmadan belirli
 
 ![MLS ve MRO MKL r ile ve MRO MKL olmadan karşılaştırma](media/samples-speed-comparison.png)
 
-R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
+R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
 
 Aşağıdaki şekilde, lojistik regresyon modellerini oluşturmaya, uçuş gecikme 15 dakikadan fazla tahmin etmek için kullanılan saniye sonra geçen süre karşılaştırır.  Geçen süre CRAN R kullanılan MLS yalnızca yaklaşık iki kez artarken küçük bir satır sayısını artırmak, büyük ölçüde artar. Bu kıyaslama ayrıntılarını gözden geçirin *Kıyaslama/rxGlm_benchmark. R* örnek.
 
