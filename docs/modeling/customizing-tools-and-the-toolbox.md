@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445789"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
@@ -175,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Bu özelleştirmeler için bazı program kodu sağlamanıza gerek. Hangi kod sağlamanız gerekir bulmak için bu kutularından birini işaretleyin, tüm Şablonları Dönüştür'e tıklayın ve ardından çözümünüzü oluşturun. Bir hata raporu neden olur. Eklemeniz gerekir, hangi kod anlatan bir açıklama görmek için hata raporuna çift tıklayın.
 
 > [!NOTE]
->  Özel kod eklemek için bir parçalı sınıf tanımı bir kod dosyasında GeneratedCode klasörlerdeki kod dosyalarından ayrı oluşturun. İş kaybını önlemek için oluşturulan kod dosyaları düzenleme yapmamanız gerekir. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).
+> Özel kod eklemek için bir parçalı sınıf tanımı bir kod dosyasında GeneratedCode klasörlerdeki kod dosyalarından ayrı oluşturun. İş kaybını önlemek için oluşturulan kod dosyaları düzenleme yapmamanız gerekir. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Özel bağlantı kod oluşturma
  Her bir bağlantısını bağlanma yönergesi, **Kaynak rolü yönergeleri** sekmesini tanımlayan gelen ne türleri sürükleyebilirsiniz. Benzer şekilde, **hedef rolü yönergeleri** için sekmesinde tanımlar, türleri sürükleyebilirsiniz. Her türü için daha fazla ayarlayarak bağlantı için (Bu bağlantı bağlama yönergesi) izin verip vermeyeceğinizi belirtebilirsiniz **özel kabul** bayrak ve ardından ek bir kod sağlama.

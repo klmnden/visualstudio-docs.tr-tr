@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445698"
 ---
 # <a name="hosting-process-vshostexe"></a>Barındırma Süreci (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788140"
 Barındırma işlemi, Visual Studio'da hata ayıklama performansını artırır, kısmi güvende hata ayıklamayı etkinleştirir ve tasarım zamanı ifade değerlendirmesi sağlayan bir özelliktir. Barındırma işlemi dosyaları, dosya adında vshost içerir ve projenizin çıkış klasörüne yerleştirilir. Daha fazla bilgi için [hata ayıklama ve barındırma işlemi](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  İşlem dosyalarını barındıran (. vshost.exe) Visual Studio tarafından kullanılacak olan ve doğrudan çalıştırmak olmamalı veya uygulamanızla birlikte dağıtılır.  
+> İşlem dosyalarını barındıran (. vshost.exe) Visual Studio tarafından kullanılacak olan ve doğrudan çalıştırmak olmamalı veya uygulamanızla birlikte dağıtılır.  
   
 ## <a name="improved-debugging-performance"></a>Hata ayıklama performansı  
  Barındırma işlemi, bir uygulama etki alanı oluşturur ve hata ayıklayıcı uygulamayla ilişkilendirir. Bu görevleri gerçekleştirmek tanıtmak belirgin bir hata ayıklama zaman arasında gecikme başlatılır ve zaman uygulama çalıştırır. Barındırma işlemi uygulama etki alanı oluşturma ve hata ayıklayıcı arka planda ilişkilendirme ve uygulama etki alanı kaydetme performansı artırmak yardımcı olur ve uygulaması arasında hata ayıklayıcı durumu çalıştırır. Uygulama etki alanları hakkında daha fazla bilgi için bkz. [uygulama etki alanları](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  

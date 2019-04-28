@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580706"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,4 +138,4 @@ Visual Studio'da XAML Tasarımcısı, XAML tabanlı Windows Store, Windows Phone
  Her bir özellik sağındaki değer bir *özelliği işaretçisi* kutusu simgesi olarak görünür. Özellik işaretçisi görünümünü veri bağlama veya özelliğine uygulanan bir kaynak olup olmadığını belirtir. Örneğin, beyaz kutu simgesi varsayılan bir değer belirtir, yerel kaynak uygulanan ve turuncu bir kutu, genellikle bir veri bağlamayı uygulanan gösterir genellikle bir siyah kutu simgesi gösterir. Özellik işaretçisi tıkladığınızda stili tanımına gidin, veri bağlama Oluşturucusu'nu açmak veya Kaynak Seçici'yi açın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md) [oluşturma ve bir kaynağı uygulama](../designers/how-to-create-and-apply-a-resource.md) [izlenecek yol: XAML Tasarımcısı'nda verilere bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md) [oluşturma ve bir kaynağı uygulama](../designers/how-to-create-and-apply-a-resource.md) [izlenecek yol: XAML Tasarımcısı'ndaki verilere bağlama](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

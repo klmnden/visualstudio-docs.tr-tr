@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447108"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office geliştirme örnekleri ve izlenecek yollar
   Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Microsoft Office çözümleri oluşturmak için kullanılan teknikleri gösteren adım adım talimatları içerir.
@@ -35,7 +35,7 @@ ms.locfileid: "56623651"
  Uygulamalarının güvenliğini sağlama hakkında daha fazla bilgi için bkz: [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 ## <a name="in-this-section"></a>Bu bölümde
 

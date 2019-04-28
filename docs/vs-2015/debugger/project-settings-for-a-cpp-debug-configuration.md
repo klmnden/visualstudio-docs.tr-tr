@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446166"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ Hata Ayıklama Yapılandırması Proje Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "54799192"
 Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
   
 > [!WARNING]
->  Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategori Windows Store uygulamaları ve C++ ile yazılmış bileşenler için farklıdır. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows geliştirme Merkezi'nde.  
+> Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategori Windows Store uygulamaları ve C++ ile yazılmış bileşenler için farklıdır. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows geliştirme Merkezi'nde.  
   
  Hangi hata ayıklayıcının kullanılacağını belirtin **başlatmak için hata ayıklayıcı** liste kutusu. Seçiminiz hangi özelliklerin görülebileceğini etkiler.  
   

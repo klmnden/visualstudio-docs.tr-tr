@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447050"
 ---
 # <a name="project-solutions"></a>Proje çözümleri
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Project için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, proje otomatikleştirmek, proje özellikleri genişletmek veya proje kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.
@@ -32,7 +32,7 @@ ms.locfileid: "56642202"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>Proje projenin nesne modelini kullanarak otomatik hale getirin.
  Proje nesne modeli proje otomatikleştirmek için kullanabileceğiniz birçok türü ortaya çıkarır. Bu tür, program aracılığıyla oluşturma ve bir projede görevleri değiştirme gibi ortak görevleri gerçekleştirmek için kod yazmanıza olanak sağlar.
@@ -47,7 +47,7 @@ ms.locfileid: "56642202"
  Tüm nesnelerin ve üyelerin VBA nesne modeli başvurusu türlerine ve üyelerine proje birincil birlikte çalışma derlemesi (PIA) karşılık gelir. VBA nesne modeli başvurusu Takvim nesnesinde, karşılık gelen `Microsoft.Office.Interop.MSProject.Calendar` proje PIA'yı yazın. VBA nesne modeli başvurusu çoğu özellikleri, yöntemleri ve olayları için kod örnekleri sağlasa da, bunları Visual kullanarak oluşturduğunuz bir proje VSTO eklenti projesinde kullanmak istiyorsanız, Visual Basic veya Visual C# bu başvuruyu VBA kodu Çevir gerekir Studio.
 
 > [!NOTE]
->  Şu anda proje birincil birlikte çalışma derlemesi için başvuru belgeleri yoktur.
+> Şu anda proje birincil birlikte çalışma derlemesi için başvuru belgeleri yoktur.
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Proje birincil birlikte çalışma derlemesi altyapı türleri
  Proje PIA'yı kullanan kod yazarken, VBA başvurusunda bahsedilmeyen birçok tür fark edebilirsiniz. Bu ek türleri, yönetilen kod için projenin COM tabanlı nesne modelinde Çevir yardımcı, kodunuzda doğrudan kullanılmak üzere tasarlanmamıştır.

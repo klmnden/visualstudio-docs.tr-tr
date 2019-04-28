@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403606"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` İşlevi belirtilen işlem veya iş parçacığı bir dize atar.
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Bir işlem veya iş parçacığı geçerli dışında belirtirseniz, başlatılır ve bunu önce çalışmaya başladığı emin emin olmanız gerekir. Aksi takdirde NameProfile yöntemi başarısız olur.
 
 > [!IMPORTANT]
->  İş parçacığı önce CreateProcess() ve CreateThread() API işlevleri döndürebilir veya işlem başlatılır.
+> İş parçacığı önce CreateProcess() ve CreateThread() API işlevleri döndürebilir veya işlem başlatılır.
 
 ## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri
  *Microsoft.VisualStudio.Profiler.dll*

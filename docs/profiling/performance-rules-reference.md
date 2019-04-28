@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad4cdb96a8d342e191e5c6e92e2916f49fd6406d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798342"
 ---
 # <a name="performance-rules-reference"></a>Performans Kuralları Başvurusu
 Profil Araçları performans kurallarını, ek uyarılar ve uygulamanızın performansı hakkında bilgi sağlar. Performans kuralları profil oluşturma yürütmesine Windows ve işlemci performans sayaçları gibi kaynaklardan toplanan verileri analiz edin. Kural iletileri hata çıkış penceresinde görünür [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tümleşik geliştirme ortamı. İletiler, aşağıdaki kural düzeylerinden birini listelenmiştir:

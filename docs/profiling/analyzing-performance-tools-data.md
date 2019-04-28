@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34cf1d58250568da1ed64ad0f296f1f8efe43e2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777313"
 ---
 # <a name="analyze-performance-tools-data"></a>Performans araçları verilerini analiz etme
 Performans raporları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.

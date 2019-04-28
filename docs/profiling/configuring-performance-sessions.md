@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405775"
 ---
 # <a name="configure-performance-sessions"></a>Performans oturumlarını yapılandırma
 Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, çok çeşitli çok sayıda uygulama türleri için performans verilerini toplayabilir. Bu bölümde, ilginizi çeken verileri toplamak için profil oluşturma Araçları'nı yapılandırmak için performans oturumu ve hedef ikili performans Wizardand özelliklerini kullanmayı gösterir. Profil oluşturma araçları yapılandırma özellikleri de içinde profil oluşturma yürütmesine toplanan veri miktarını denetlemek için kullanılabilir. Daha fazla bilgi için [veri toplamayı kontrol](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
->  Çoğu durumda, varsayılan özellikleri ve performans Sihirbazı kullanarak profil oluşturma verilerinin toplanması etkili bir yoludur. Daha fazla bilgi için [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md) ve [Başlarken](../profiling/getting-started-with-performance-tools.md).
+> Çoğu durumda, varsayılan özellikleri ve performans Sihirbazı kullanarak profil oluşturma verilerinin toplanması etkili bir yoludur. Daha fazla bilgi için [yeni başlayanlar için performans profili oluşturma Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md) ve [Başlarken](../profiling/getting-started-with-performance-tools.md).
 
 ## <a name="common-tasks"></a>Ortak görevler
 

@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99fa06086bfad56b266b043716e82181aa4c97d5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386166"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld Arabirimi
 Kaynak kod metni komut dosyasına eklenecek yordamlar sağlar. VBScript gibi bağımsız bir geliştirme ortamı olmayan yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IActiveScriptParse` veya `IPersist*`) betik yordamları ad alanına eklemek için.  
   
 > [!NOTE]
->  Bu arabirim sunulmasıyla kullanım dışı `IActiveScriptParseProcedure` arabirimi.  
+> Bu arabirim sunulmasıyla kullanım dışı `IActiveScriptParseProcedure` arabirimi.  
   
 ## <a name="methods"></a>Yöntemler  
  Devralınan yöntemleri yanı sıra `IUnknown`, `IActiveScriptParseProcedureOld` arabirimi aşağıdaki yöntemleri sunar.  

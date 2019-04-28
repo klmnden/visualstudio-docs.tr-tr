@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384019"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Nasıl yapılır: Düzenle ve Devam Et’i kullanma (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Düzenle ve devam et için C# ile hata ayıklama sırasında kodunuzda kesme mod
  Kesme modunda değişiklikleri yapın ve ardından bir hata ayıklayıcı yürütme seçin, Düzenle ve devam et otomatik olarak çağrılır komutu gibi **devam**, **adım**, veya **sonraki deyimi Ayarla**, veya hata ayıklayıcı penceresindeki bir işlevi değerlendirin.  
   
 > [!NOTE]
->  Düzenle ve devam et desteklenmez karma yerel/yönetilen kodda ya da SQL Server ortak dil çalışma zamanı (CLR) tümleştirme kodunda Compact Framework'te, en iyi duruma getirilmiş kodu, hata ayıklama. Bu senaryolardan birinde kod değişiklikleri uygulamaya çalışırsanız, hata ayıklayıcı bir iletişim kutusunu Düzenle ve devam et desteklenmediğini Et'in koyar.  
+> Düzenle ve devam et desteklenmez karma yerel/yönetilen kodda ya da SQL Server ortak dil çalışma zamanı (CLR) tümleştirme kodunda Compact Framework'te, en iyi duruma getirilmiş kodu, hata ayıklama. Bu senaryolardan birinde kod değişiklikleri uygulamaya çalışırsanız, hata ayıklayıcı bir iletişim kutusunu Düzenle ve devam et desteklenmediğini Et'in koyar.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Düzenleme çağrılacak ve otomatik olarak devam et  
   

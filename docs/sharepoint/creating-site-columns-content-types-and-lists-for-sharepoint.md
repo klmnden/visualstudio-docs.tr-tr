@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8cecb3e78cea90b927dc6b67b5b4a2cb50bfa87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581102"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint için site sütunları, içerik türleri ve listeler oluşturma
   Visual Studio da dahil olmak üzere birçok farklı temel SharePoint öğeleri için proje öğesi şablonları sağlar *listeler* ve *içerik türlerine*, ikisi için de site sütunları dahil edebilirsiniz (veya  *alanları*). İçerik türleri ve listeler için yeni tasarımcılar, bu öğeler her zamankinden daha kolay oluşturma olun.

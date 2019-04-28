@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b82196d2440c3bf5d5c5c24471bc094f8bc5b7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8860668452a22413db8c6fc3d0fdc664c7ba36dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401384"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 Bu işlev, işlev satır içi olarak işaretlenmiş olup olmadığını belirten bir bayrak alır (birini kullanarak [satır içi, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) öznitelikleri).
@@ -39,7 +39,7 @@ HRESULT get_inlSpec(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
