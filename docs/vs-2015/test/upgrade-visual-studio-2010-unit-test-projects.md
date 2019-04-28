@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445913"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Visual Studio 2010 birim testi projelerini yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788645"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Birim testi için birkaç değişiklik getirir. Bu değişiklikler nedeniyle, Visual Studio'nun önceki sürümleri arasındaki uyumluluk sorunları anlamak önemlidir ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Birim testi için değişiklikler arasında önemli bir değişiklik olan [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] bir birim test projesi şablonunu dahil olmak üzere birden fazla test projesi şablonunu içerir. Yeni birim testleri, yeni birim test projesi şablonunu eklenir. Birim testleri, kodlanmış UI test projesi şablonunu adlı başka bir yeni test projesi şablonu da eklenebilir. Yeni test proje şablonları hakkında daha fazla bilgi için bkz. [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Yeni birim testi projeleri, artık varsayılan olarak bir test ayarları dosyası içerir. Test ayarları dosyası tarafından hariç, birim testleriniz performansını artırır. Uyumluluk için Visual Studio 2010 kullanarak oluşturduğunuz mevcut test projelerinizi kullanmaya devam edebilirsiniz. Ancak, performansı artırmak için test projesi için test ayarları dosyası belirli bir gereksiniminiz olmadığı sürece ilişkilendirilmiş test ayarları dosyasını kaldırmanızı öneririz. Örneğin, dağıtılmış bir ortamda birim testlerinizi çalıştırmak veya belirli tanılama verilerini toplamak ihtiyacınız varsa, test ayarları dosyasını korumak seçebilirsiniz. Yeni birim testi proje şablonunu kullanarak benzer bir gereksinimi varsa, veya kodlanmış UI testi proje şablonunu el ile test ayarları dosyası için de ekleyebilirsiniz.
 
 > [!NOTE]
->  Mevcut birim testleri uygulamanızın [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 test projeleri arasında sorunsuz bir şekilde çalışır [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Birim testlerini içeren bir Visual Studio 2010 test projesi açıldığında test proje dosyaları için hiçbir değişiklik yapılmaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya tam tersi.
+> Mevcut birim testleri uygulamanızın [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 test projeleri arasında sorunsuz bir şekilde çalışır [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Birim testlerini içeren bir Visual Studio 2010 test projesi açıldığında test proje dosyaları için hiçbir değişiklik yapılmaz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya tam tersi.
 
 > [!CAUTION]
->  Visual Studio 2010 açamıyor C + +/ CLI bu hedefleri 11.0 araç takımı proje — diğer bir deyişle, Visual Studio 2012'de oluşturulan bir proje. Bu kısıtlamanın uygulandığı tüm C + +/ CLI projeleri, değil yalnızca C + +/ CLI birim testi projeleri.
+> Visual Studio 2010 açamıyor C + +/ CLI bu hedefleri 11.0 araç takımı proje — diğer bir deyişle, Visual Studio 2012'de oluşturulan bir proje. Bu kısıtlamanın uygulandığı tüm C + +/ CLI projeleri, değil yalnızca C + +/ CLI birim testi projeleri.
 
 > [!NOTE]
->  Komut satırından vstest.console.exe kullanarak yeni birim testleri çalıştırabilirsiniz. Vstest.console.exe kullanımı hakkında daha fazla bilgi için bkz. [VSTest.Console.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), ya da Yardım anahtarını kullanarak komutu çalıştırın: **vstest.console.exe /?**. MStest.exe kullanarak mevcut birim testleri çalıştırmaya devam edebilirsiniz. Daha fazla bilgi için [otomatikleştirilmiş testleri mstest'i kullanarak komut satırından çalıştırma](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) ve [MSTest.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Komut satırından vstest.console.exe kullanarak yeni birim testleri çalıştırabilirsiniz. Vstest.console.exe kullanımı hakkında daha fazla bilgi için bkz. [VSTest.Console.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), ya da Yardım anahtarını kullanarak komutu çalıştırın: **vstest.console.exe /?**. MStest.exe kullanarak mevcut birim testleri çalıştırmaya devam edebilirsiniz. Daha fazla bilgi için [otomatikleştirilmiş testleri mstest'i kullanarak komut satırından çalıştırma](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) ve [MSTest.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Başka bir önemli değişiklik Yeni Test Gezgini ' dir. İçinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], bazı test windows aşina Visual Studio'nun önceki sürümden olabilir, Test Görünümü penceresi gibi kullanım dışı bırakıldı. Test Gezgini, daha iyi destek geliştiriciler ve birim testi içinde yazılım geliştirme yöntemleri bünyesine takımlar için tasarlanmıştır. Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md).
 

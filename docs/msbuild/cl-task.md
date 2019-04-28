@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569699"
 ---
 # <a name="cl-task"></a>CL görevi
 Visual C++ Derleyici aracı sarmalar *cl.exe*. Derleyici çalıştırılabilir dosyası oluşturur (*.exe*) dosyaları, dinamik bağlantı kitaplığı (*.dll*) dosyaları ya da kod modülünü (*.netmodule*) dosyaları. Daha fazla bilgi için [derleyici seçenekleri](/cpp/build/reference/compiler-options).

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446926"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>İzlenecek yol: NamedRange denetimi olaylarına karşı programlama
   Bu izlenecek yolda nasıl ekleneceğini gösterir. bir <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel çalışma ve Visual Studio'da Office geliştirme araçlarını kullanarak olaylarına karşı programlama denetimi.
@@ -37,7 +37,7 @@ ms.locfileid: "60049938"
 - Projenizi test edin.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -119,7 +119,7 @@ ms.locfileid: "60049938"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Excel'de bir hücreye çift tıklayarak düzenleme moduna girmesidir çünkü bir <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> olay metin için hiçbir değişiklik olmasa bile seçimi aralığın dışında hareket ettiğinde gerçekleşir.
+    > Excel'de bir hücreye çift tıklayarak düzenleme moduna girmesidir çünkü bir <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> olay metin için hiçbir değişiklik olmasa bile seçimi aralığın dışında hareket ettiğinde gerçekleşir.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>SeçimDeğiştirme olaya yanıt vermek için kod ekleyin
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049938"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Excel'de bir hücreye çift seçimi aralığı taşımanız neden olduğu bir <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> olaylarının önce <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> olayı oluşur.
+    > Excel'de bir hücreye çift seçimi aralığı taşımanız neden olduğu bir <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> olaylarının önce <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> olayı oluşur.
 
 ## <a name="test-the-application"></a>Uygulamayı test etme
  Olayları açıklayan bu metin doğrulamak için çalışma kitabınızı sınayabilirsiniz artık bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetim olayları oluştuğunda başka bir adlandırılmış aralığına eklenir.

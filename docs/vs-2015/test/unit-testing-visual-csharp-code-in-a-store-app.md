@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445935"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Visual C# kod bir Store uygulaması birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
  Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya birim testleri ve DLL için ayrı çözümler oluşturabilirsiniz.  
   
 > [!NOTE]
->  Visual Studio Community, Kurumsal. ve Professional birim testi için ek özellikler sağlar.  
+> Visual Studio Community, Kurumsal. ve Professional birim testi için ek özellikler sağlar.  
 > 
 > - Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf ve açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testler için kod kapsamı bilgileri görüntüleyebilirsiniz.  
 >   - Her derlemeden sonra testlerinizi çalıştırın.  
@@ -211,7 +211,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
     ```  
   
     > [!TIP]
-    >  Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
+    > Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
     >   
     >  Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.  
   
@@ -222,7 +222,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
      ![RangeTest başarısız](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
+    > Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
   
 4. Yeni test geçer, test edilen kod geliştirin. Değişiklik `SqareRoot` işlevi **Rooter.cs** bu:  
   
@@ -247,7 +247,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
      Üç testi şimdi geçirin.  
   
 > [!TIP]
->  Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
+> Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
   
@@ -332,7 +332,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
 2. Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
   
 > [!TIP]
->  Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
+> Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
   
  **Yinelenen kod ortadan kaldırmak için test kodu yeniden düzenleyin.**  
   
@@ -365,4 +365,4 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
 2. Seçin **tümünü Çalıştır** UIMap'e yeniden işlenmiş yöntemi test ve hata sunulan henüz emin olun.  
   
 > [!NOTE]
->  Bir test sınıfı için bir yardımcı yöntem eklemek, eklemeyin `[TestMethod]` özniteliğini yöntemine. Test Gezgini, çalıştırılacak yöntemi kaydetmez.
+> Bir test sınıfı için bir yardımcı yöntem eklemek, eklemeyin `[TestMethod]` özniteliğini yöntemine. Test Gezgini, çalıştırılacak yöntemi kaydetmez.

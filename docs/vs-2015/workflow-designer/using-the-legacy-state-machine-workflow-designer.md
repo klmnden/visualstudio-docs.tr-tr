@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444118"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Eski Durum Makinesi İş Akışı Tasarımcısını Kullanma
 Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ya da kullanmayı da tercih edebilirsiniz **Durum makinesi iş akışı konsol uygulaması** veya  **Durum makinesi iş akışı Kitaplığı** eski proje şablonu. Bu durum makine proje şablonlarından birini seçerseniz, durum makine Tasarımcı eski iş akışı Tasarımcısı kullanıcı arabirimi olarak sunulur. Eski Durum makinesi proje şablonları hakkında daha fazla bilgi için bkz: [nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) ve [nasıl yapılır: Bir Durum makinesi iş akışı kitaplığı oluşturma (eski)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Oluştururken yeni bir Durum makinesi iş akışı projesi [!INCLUDE[vs2010](../
  Yeni bir sürüklediğinizde **buraya StateActivity** iş akışı tasarım yüzeyine sürükleyin, eklediğiniz [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), veya ek **buraya StateActivity** alt etkinlik olarak etkinlikler.  
   
 > [!CAUTION]
->  İş akışları oluşturmak için Durum makinesi iş akışı Tasarımcısı'nı kullandığınızda tasarlama konusunda iş akışının yapı izleme **belge anahattı** Görünümü penceresi. Durum makinesi iş akışı içinde yapısını görünümünü **belge anahattı** Görünüm penceresi etkinlikler iş akışı işaretleme dosyasının, mantıksal düzenini yansıtır. Tasarım yüzeyinde göründükleri gibi fiziksel düzenini iş akışı etkinlikleri iş akışı işaretleme dosyasının etkinliklerin mantıksal düzenini yansıtma değil.  
+> İş akışları oluşturmak için Durum makinesi iş akışı Tasarımcısı'nı kullandığınızda tasarlama konusunda iş akışının yapı izleme **belge anahattı** Görünümü penceresi. Durum makinesi iş akışı içinde yapısını görünümünü **belge anahattı** Görünüm penceresi etkinlikler iş akışı işaretleme dosyasının, mantıksal düzenini yansıtır. Tasarım yüzeyinde göründükleri gibi fiziksel düzenini iş akışı etkinlikleri iş akışı işaretleme dosyasının etkinliklerin mantıksal düzenini yansıtma değil.  
 >   
->  Açmak için **belge anahattı** penceresi, **görünümü** menüsünde **diğer Windows**ve ardından **belge anahattı**.  
+> Açmak için **belge anahattı** penceresi, **görünümü** menüsünde **diğer Windows**ve ardından **belge anahattı**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Durum makinesi iş akışı konsol uygulamaları oluşturma (eski)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

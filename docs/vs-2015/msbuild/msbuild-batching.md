@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439369"
 ---
 # <a name="msbuild-batching"></a>MSBuild Toplu İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664342"
  İstediğinizi belirtin [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] görevle kullanarak toplu işleme gerçekleştirmek için %(*ItemMetaDataName*) görev özniteliklerinden biri olarak gösterimi. Aşağıdaki örnek böler `Example` toplu iş öğesi listesine dayalı `Color` öğesi meta veri değeri ve geçişleri her toplu `MyTask` ayrı olarak görev.  
   
 > [!NOTE]
->  Öğeyi listeden başka bir yerde görev öznitelikleri başvurmadığından veya meta veri adı belirsiz olabilir, kullanabileceğiniz %(*ItemCollection.ItemMetaDataName*) için toplu işlem kullanma için öğe meta veri değeri tam olarak nitelemek için gösterimi.  
+> Öğeyi listeden başka bir yerde görev öznitelikleri başvurmadığından veya meta veri adı belirsiz olabilir, kullanabileceğiniz %(*ItemCollection.ItemMetaDataName*) için toplu işlem kullanma için öğe meta veri değeri tam olarak nitelemek için gösterimi.  
   
 ```  
 <Project  

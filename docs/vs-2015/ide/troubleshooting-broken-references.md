@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443266"
 ---
 # <a name="troubleshooting-broken-references"></a>Bozuk Başvurularda Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   Bu sorunları çözümler aşağıda verilmiştir.  
   
 > [!NOTE]
->  Derlemelerde dosyaları, proje dosyasındaki mutlak yollar ile başvurulur. Bu nedenle, başvurulan bir derlemenin yerel ortamlarında eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için projeden projeye başvurular eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) ve [Derlemelerle programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Derlemelerde dosyaları, proje dosyasındaki mutlak yollar ile başvurulur. Bu nedenle, başvurulan bir derlemenin yerel ortamlarında eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için projeden projeye başvurular eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) ve [Derlemelerle programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Başvuru yolu yanlış  
  Farklı bilgisayarlarda Paylaşılan projeleri, bir bileşen farklı bir dizinde her bilgisayarda bulunan, bazı başvuruları bulunmayabilir. Başvurular (örneğin, MyComponent) bileşen dosyası adı altında depolanır. Bir projeye bir başvuru eklendiğinde, Bileşen dosyası klasör konumuna (örneğin, C:\MyComponents\\) eklenir **ReferencePath** proje özelliği.  
@@ -50,7 +50,7 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
  Bu sorunu gidermek için kırık referans silebilir ve Başvuru Ekle iletişim kutusunu kullanarak değiştirin. Başka bir çözüm **başvuru yolu** öğesini projenin özellik sayfaları'nda ve klasörler listesinde, doğru konuma işaret edecek şekilde değiştirin. **Başvuru yolu** özelliği, her bilgisayardaki her kullanıcı için kalıcıdır. Bu nedenle, Başvuru yolunuza değiştirme projenin diğer kullanıcıların etkilemez.  
   
 > [!TIP]
->  Projeden projeye başvurular, bu sorun yoktur. Mümkünse, bu nedenle, bunları dosya başvuruları yerine kullanın.  
+> Projeden projeye başvurular, bu sorun yoktur. Mümkünse, bu nedenle, bunları dosya başvuruları yerine kullanın.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Bozuk bir proje başvurusu, başvuru yolu düzelterek düzeltmek için  
   

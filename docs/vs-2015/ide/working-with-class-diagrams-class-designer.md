@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443397"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Başkalarının yazmış (veya uzun zaman önce yazdığınız) projelerin sın�
  Bir veya daha fazla sınıf diyagramları ince ayar sonra Microsoft Office belgelerine kopyalamak ve yazdırmak veya görüntü dosyaları olarak dışarı. Daha fazla bilgi için [nasıl yapılır: Bir (Sınıf Tasarımcısı) Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [nasıl yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarını yazdırma](../ide/how-to-print-class-diagrams-class-designer.md) ve [nasıl yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
->  Sınıf Tasarımcısı proje şekilde değiştirilmesi, kaynak dosyalarının konumunu izlemez veya proje kaynak dosyalarında taşımanız, Sınıf Tasarımcısı'nın türü, özellikle kaynak türü bir tür tanımı, temel sınıflar veya ilişki türlerini kaybetmesine neden olabilir. Gibi bir hata alabilirsiniz **Sınıf Tasarımcısı bu türü görüntüleyemiyor**. Bunu yaparsanız, değiştirilmiş ya da yeni yerlerine kaynak kodu yeniden görüntülemek için sınıf diyagramına sürükleyin.  
+> Sınıf Tasarımcısı proje şekilde değiştirilmesi, kaynak dosyalarının konumunu izlemez veya proje kaynak dosyalarında taşımanız, Sınıf Tasarımcısı'nın türü, özellikle kaynak türü bir tür tanımı, temel sınıflar veya ilişki türlerini kaybetmesine neden olabilir. Gibi bir hata alabilirsiniz **Sınıf Tasarımcısı bu türü görüntüleyemiyor**. Bunu yaparsanız, değiştirilmiş ya da yeni yerlerine kaynak kodu yeniden görüntülemek için sınıf diyagramına sürükleyin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+ [Nasıl yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  Projelere sınıf diyagramları ekleme işlemini açıklamaktadır.  
   
- [Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)  
+ [Nasıl yapılır: Sınıf Diyagramlarını Özelleştirme (Sınıf Tasarımcısı)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  Sınıf diyagramlarını özelleştirme hakkında bilgi sağlar.  
   
- [Nasıl yapılır: Bir (Sınıf Tasarımcısı) Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
+ [Nasıl yapılır: Microsoft Office Belgesine Sınıf Diyagramı Öğeleri Kopyalama (Sınıf Tasarımcısı)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)  
   
  Bir Office belgesine sınıf diyagramından kopyalamak nasıl açıklar.  
   
- [Nasıl yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
+ [Nasıl yapılır: Sınıf Diyagramlarını Görüntü Olarak Dışarı Aktarma (Sınıf Tasarımcısı)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)  
   
  Sınıf diyagramlarını görüntü olarak dışarı aktarma işlemini açıklamaktadır.  
   
- [Nasıl yapılır: Yazdırma sınıf diyagramları (Sınıf Tasarımcısı)](../ide/how-to-print-class-diagrams-class-designer.md)  
+ [Nasıl yapılır: Sınıf Diyagramlarını Yazdırma (Sınıf Tasarımcısı)](../ide/how-to-print-class-diagrams-class-designer.md)  
   
  Sınıf diyagramlarını yazdırma açıklanmaktadır.  
   
- [Nasıl yapılır: (Sınıf Tasarımcısı) sınıf diyagramlarına açıklamalar ekleme](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
+ [Nasıl yapılır: Sınıf Diyagramlarına Açıklamalar Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
   
  Sınıf diyagramına açıklama eklemeyi açıklar.  
   

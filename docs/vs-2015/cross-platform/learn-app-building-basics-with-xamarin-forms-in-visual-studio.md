@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444514"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 - [Yerel bir görünüme kullanıcı Arabirimiyle platformlar arasında son](#finish)
 
 > [!TIP]
->  Bu proje için tam kaynak kodunu bulabilirsiniz [xamarin forms örnekleri GitHub deposunda](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Bu proje için tam kaynak kodunu bulabilirsiniz [xamarin forms örnekleri GitHub deposunda](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Çözümünüzü ayarlama
  Bu adımlar paylaşılan kod için bir PCL ve iki eklenen NuGet paketlerini içeren bir Xamarin.Forms çözümü oluşturun.
@@ -59,7 +59,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     - **(Windows Phone 8.1) WeatherApp.WinPhone**: yerel Windows Phone kod içeren bir proje.
 
     > [!NOTE]
-    >  Projelerin değil hedeflediğiniz platform için silmek boş. Bu izlenecek yolda amacı doğrultusunda, biz Android, iOS ve Windows Phone 8.1 projeleri başvuran. UWP ve Windows 8.1 ile çalışma projeleri Windows Phone 8.1 projesiyle çalışmaya çok benzer.
+    > Projelerin değil hedeflediğiniz platform için silmek boş. Bu izlenecek yolda amacı doğrultusunda, biz Android, iOS ve Windows Phone 8.1 projeleri başvuran. UWP ve Windows 8.1 ile çalışma projeleri Windows Phone 8.1 projesiyle çalışmaya çok benzer.
 
      Her yerel proje içinde karşılık gelen bir platform için yerel Tasarımcı erişimi vardır ve platform belirli ekranları ve gerektiğinde işlevi uygulayabilirsiniz.
 

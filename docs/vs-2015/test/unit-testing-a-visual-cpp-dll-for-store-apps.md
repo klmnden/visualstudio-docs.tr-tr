@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445967"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Bir Visual C++ DLL Store uygulamaları için birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
     ```  
   
     > [!TIP]
-    >  Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
+    > Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
     >   
     >  Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.  
   
@@ -231,7 +231,7 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
      ![RangeTest başarısız](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
+    > Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
   
 4. Yeni test geçer, test edilen kod geliştirin. Ekleyin **RooterLib.cpp**:  
   
@@ -259,7 +259,7 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
      Her iki testler başarılı.  
   
 > [!TIP]
->  Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
+> Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
   
@@ -346,6 +346,6 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
 2. Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
   
     > [!TIP]
-    >  Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
+    > Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
     >   
     >  Diğer değişikliklerden ayrı düzenlemesi tutun.

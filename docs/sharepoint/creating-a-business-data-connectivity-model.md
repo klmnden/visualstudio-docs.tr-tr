@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443560"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli oluşturma
   Bir iş verileri bağlantısı (BDC) modeli oluşturabilir veya Visual Studio kullanarak mevcut bir BDC modelini özelleştirin. Her SharePoint projesi, yalnızca bir modeli içerebilir. Daha fazla bilgi için [iş verilerini SharePoint ile tümleştirmeyi](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605737"
  Yeni bir modeli oluşturmak için bir **iş verileri bağlantı modeli** ekleyin veya proje bir **iş verileri bağlantı modeli** öğesinin bir **boş SharePoint projesi**.
 
 > [!NOTE]
->  Olmalıdır [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] bilgisayarınızda yüklü.
+> Olmalıdır [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] bilgisayarınızda yüklü.
 
  Visual Studio, projeye bir klasör ekler. Bu klasör için belirttiğiniz ada sahip **iş verileri bağlantı modeli** öğesi **Yeni Öğe Ekle** iletişim kutusu. Yeni bir oluşturursanız **iş verileri bağlantı modeli** proje, Visual Studio klasör adları **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605737"
  Visual Studio, Projeyi derlediğinizde, bir derleme oluşturur. Proje bütünleştirilmiş kodu için kod ekleme proje diğer öğeleri eklemediğinizden emin olun (örneğin: bir **sıralı iş akışı** öğesi veya bir **Web Bölümü** öğesi). Çözüm paketi derlemeyi genel bütünleştirilmiş kod önbelleğine kopyalamaz çünkü çözümünü dağıttığınızda, bu öğe için kod çalışmaz.  Çözüm paketi İVB veritabanına SharePoint yalnızca derleme dağıtır.
 
 > [!NOTE]
->  Projede hata ayıklaması yaparken visual Studio derleme konumlarının her ikisinde de yerel bilgisayarınıza kopyalar.
+> Projede hata ayıklaması yaparken visual Studio derleme konumlarının her ikisinde de yerel bilgisayarınıza kopyalar.
 
 ## <a name="add-an-existing-model"></a>Mevcut bir model ekleme
  SharePoint Designer gibi diğer araçları kullanılarak oluşturulmuş bir modeli içeri aktarabilirsiniz. Projenize aşağıdaki durumlarda var olan bir model almayı da tercih edebilirsiniz:

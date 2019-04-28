@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c93b0c9a651bd23c34179bc9e21fcd77bad15f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445314"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan bir MSBuild proje dosyası oluşturma
 .NET Framework'ü hedefleyen programlama dilleri, tanımlamak ve uygulama oluşturma işlemini denetlemek için MSBuild proje dosyaları kullanın. Bir MSBuild proje dosyası oluşturmak için Visual Studio kullandığınızda, uygun XML dosyasına otomatik olarak eklenir. Ancak, XML'in nasıl düzenlendiğini anlamak yararlı ve bunu bir yapıyı denetlemek üzere nasıl değiştirebilirsiniz.
@@ -148,11 +148,13 @@ Minimal proje dosyanız, aşağıdaki koda benzemelidir:
 Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derleyicisi `Csc` görevi tek görevdir. Derlenecek kaynak dosyaların listesini bekler ve bu değeri tarafından verilen `Compile` öğesi. `Compile` Öğesi yalnızca bir kaynak kod dosyasına başvuran *: HelloWorld.cs'ye*.
 
 > [!NOTE]
->  Öğede, yıldız işareti joker karakter kullanabilirsiniz (\*) sahip tüm dosyalara başvurmak için *.cs* dosya adı uzantısı, şu şekilde:
+> Öğede, yıldız işareti joker karakter kullanabilirsiniz (\*) sahip tüm dosyalara başvurmak için *.cs* dosya adı uzantısı, şu şekilde:
 >
->  `<Compile Include="*.cs" />`
+> ```xml
+> <Compile Include="*.cs" />
+> ```
 >
->  Hata ayıklamayı ve Seçici yaptığından ancak joker karakter kullanımını önermeyiz kaynak dosyalar eklenirse veya silinirse hedeflemeyi daha zor.
+> Hata ayıklamayı ve Seçici yaptığından ancak joker karakter kullanımını önermeyiz kaynak dosyalar eklenirse veya silinirse hedeflemeyi daha zor.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Yolu, Msbuild'i içerecek şekilde genişletin
  MSBuild'e erişmeden önce PATH ortam değişkenini .NET Framework klasörünü içerecek şekilde genişletmeniz gerekir.
@@ -179,9 +181,9 @@ Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derl
      **Hello, world!** iletisi görüntülenmelidir.
 
 > [!NOTE]
->  Ayrıntı düzeyini yükselterek, yapı hakkında daha fazla ayrıntı görebilirsiniz. Ayrıntı düzeyini "ayrıntılı" ayarlamak için komut isteminde bu komutu yazın:
+> Ayrıntı düzeyini yükselterek, yapı hakkında daha fazla ayrıntı görebilirsiniz. Ayrıntı düzeyini "ayrıntılı" ayarlamak için komut isteminde bu komutu yazın:
 >
->  **MSBuild, helloworld.csproj - t: derleme - ayrıntı: ayrıntılı**
+> **MSBuild, helloworld.csproj - t: derleme - ayrıntı: ayrıntılı**
 
 ## <a name="add-build-properties"></a>Derleme özellikleri ekleme
  Daha fazla denetim derleme proje dosyasına yapı özellikleri ekleyebilirsiniz. Şimdi bu özellikleri ekleyin:
@@ -240,17 +242,17 @@ Proje dosyanız şimdi aşağıdaki kodu benzemelidir:
 ```
 
 > [!NOTE]
->  Ters eğik çizgi eklemenizi öneririz (\\) yol sınırlayıcısını öğesinde belirttiğinizde klasör adının sonunda `OutputPath` eklemek yerine öğesi `OutputAssembly` özniteliği `Csc` görev. Bu nedenle,
+> Ters eğik çizgi eklemenizi öneririz (\\) yol sınırlayıcısını öğesinde belirttiğinizde klasör adının sonunda `OutputPath` eklemek yerine öğesi `OutputAssembly` özniteliği `Csc` görev. Bu nedenle,
 >
->  `<OutputPath>Bin\</OutputPath>`
+> `<OutputPath>Bin\</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
 >
->  daha iyidir
+> daha iyidir
 >
->  `<OutputPath>Bin</OutputPath>`
+> `<OutputPath>Bin</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Yapı özelliklerini test etme
  Artık, çıkış klasörünü ve uygulama adını belirtmek için derleme özelliklerini kullandığınız proje dosyasını kullanarak uygulamayı oluşturabilirsiniz.

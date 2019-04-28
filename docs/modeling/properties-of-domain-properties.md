@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443126"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örneğin, `Person` etki alanı sınıfı özellikleri vardır `Name` ve `BirthDate`. DSL tanımındaki etki alanı özellikleri, etki alanı sınıfı kutusuna Diyagramı'nda ve etki alanı sınıfı, DSL Gezgini altında listelenir. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  "Özelliği" sözcüğü iki kullanımı vardır. A *domain özelliği* üzerinde bir etki alanı sınıfı tanımlayan bir özelliktir. Bunun aksine, DSL'nin birçok öğe sahip *özellikleri*, bu makalenin **özellikleri** DSL tanımı penceresinde. Örneğin, her etki alanı özelliği, bu konuda açıklanan özellikler kümesi vardır.
+> "Özelliği" sözcüğü iki kullanımı vardır. A *domain özelliği* üzerinde bir etki alanı sınıfı tanımlayan bir özelliktir. Bunun aksine, DSL'nin birçok öğe sahip *özellikleri*, bu makalenin **özellikleri** DSL tanımı penceresinde. Örneğin, her etki alanı özelliği, bu konuda açıklanan özellikler kümesi vardır.
 
  Çalışma zamanında, bir kullanıcı etki alanı sınıfı örneğini oluşturduğunda, etki alanı özelliklerinin değerlerini Özellikler penceresinde görülebilir ve diyagramdaki şekilleri görüntülenebilir.
 

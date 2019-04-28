@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444978"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
  Şu anda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yüklemeler yalnızca dağıtım bildirimini URL, Internet Explorer'ı kullanarak açıldığında başlatılır. Yalnızca Internet Explorer varsayılan Web tarayıcısı ayarlanırsa URL'si Microsoft Office Outlook gibi başka bir uygulamadan başlatılan bir dağıtım başarılı bir şekilde başlatılır.  
   
 > [!NOTE]
->  Mozilla Firefox, dağıtım sağlayıcısı boş veya Microsoft .NET Framework Assistant uzantı yüklü değilse desteklenir. Bu uzantı, .NET Framework 3.5 SP1 ile paketlenmiştir. XBAP desteği NPWPF eklentisi gerektiğinde etkinleştirilir.  
+> Mozilla Firefox, dağıtım sağlayıcısı boş veya Microsoft .NET Framework Assistant uzantı yüklü değilse desteklenir. Bu uzantı, .NET Framework 3.5 SP1 ile paketlenmiştir. XBAP desteği NPWPF eklentisi gerektiğinde etkinleştirilir.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>ClickOnce uygulamalarını tarayıcı betikler aracılığıyla etkinleştirme  
  Geliştirilmiş başlatan özel bir Web sayfası, bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] etkin komut dosyası kullanarak uygulamanın uygulama bazı makinelerde başlatmaz bulabilirsiniz. Internet Explorer olarak adlandırılan bir ayar içeriyor **Dosya indirmeleri için otomatik olarak sor**, bu davranışı etkiler. Bu ayar, üzerinde kullanılabilir **güvenlik** sekmesinde kendi **seçenekleri** bu davranışı etkiler menüsü. Çağrıldığı **Dosya indirmeleri için otomatik olarak sor**, ve altında listelenen **indirir** kategorisi. Özellik kümesine **etkinleştirme** intranet Web sayfaları ve için varsayılan **devre dışı** Internet Web sayfaları için varsayılan olarak. Bu ayar ayarlandığında **devre dışı**, yapmaya etkinleştirmek bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama program aracılığıyla (örneğin, gerçekleşen tarafından `document.location` özelliği) engellenir. Bu durumda, kullanıcıların yalnızca kullanıcı tarafından başlatılan bir indirme aracılığıyla uygulamaları gibi uygulamanın URL'sine ayarlayın bir köprüyü tıklatarak başlatabilirsiniz.  
@@ -78,7 +78,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 ```  
   
 > [!NOTE]
->  Site için varsayılan kimlik bilgilerinizi dışında kimlik bilgileri ister ve tıkladığınız güvenlik iletişim kutusunda, NTLM (NT sınama-yanıt) kimlik doğrulaması yapabilir **Tamam** sorulduğunda sağlanan kaydetmek istiyorsanız sonraki oturumlarda kimlik bilgileri. Ancak, bu çözüm için temel kimlik doğrulaması çalışmaz.  
+> Site için varsayılan kimlik bilgilerinizi dışında kimlik bilgileri ister ve tıkladığınız güvenlik iletişim kutusunda, NTLM (NT sınama-yanıt) kimlik doğrulaması yapabilir **Tamam** sorulduğunda sağlanan kaydetmek istiyorsanız sonraki oturumlarda kimlik bilgileri. Ancak, bu çözüm için temel kimlik doğrulaması çalışmaz.  
   
 ## <a name="using-third-party-web-servers"></a>Üçüncü taraf Web sunucularını kullanma  
  Dağıtıyorsanız bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulaması dışında bir IIS Web sunucusundan, sorun yaşayabilirsiniz sunucu anahtarı için hatalı içerik türü döndürmesi durumunda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimini ve uygulama bildirimi gibi dosyaları. Bu sorunu çözmek için Web sunucunuzun Yardım belgeleri sunucuya yeni içerik türlerini ekleyin ve tüm dosya adı uzantısı eşlemeler aşağıdaki tabloda listelenen emin hakkında mevcut olduğunu doğrulama bakın.  

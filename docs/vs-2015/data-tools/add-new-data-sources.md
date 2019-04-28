@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445755"
 ---
 # <a name="add-new-data-sources"></a>Yeni veri kaynağı ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* 
 - Bir sınıf veya çözümünüzdeki koleksiyonu.  
   
 > [!NOTE]
->  Veri bağlama özellikleri kullanmıyorsanız, veri kümeleri, Entity Framework, LINQ to SQL, WCF ya da SharePoint, "veri kaynağı" kavramını geçerli değildir. Yalnızca SQLCommand nesnesi kullanarak veritabanına doğrudan bağlanmak ve veritabanıyla doğrudan iletişim kurar.  
+> Veri bağlama özellikleri kullanmıyorsanız, veri kümeleri, Entity Framework, LINQ to SQL, WCF ya da SharePoint, "veri kaynağı" kavramını geçerli değildir. Yalnızca SQLCommand nesnesi kullanarak veritabanına doğrudan bağlanmak ve veritabanıyla doğrudan iletişim kurar.  
   
  Oluşturma ve kullanarak veri kaynaklarını düzenleme **veri kaynağı Yapılandırma Sihirbazı** bir Windows Forms veya Windows Presentation Foundation uygulaması içinde. Entity Framework için ilk, varlık sınıfları oluşturun ve ardından seçerek Sihirbazı başlatın **proje** > **yeni veri kaynağı Ekle** (Bu makalenin sonraki bölümlerinde daha ayrıntılı açıklanmıştır).  
   
@@ -84,7 +84,7 @@ Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* 
 - Web Hizmetleri.  
   
     > [!NOTE]
-    >  Görünen öğeler **veri kaynakları** penceresi, bağımlı hizmetin döndürdüğü verileri. Bazı hizmetler için yeterli bilgi sağlamayabilir **veri kaynağı Yapılandırma Sihirbazı** bağlanabilir nesneleri oluşturmak için. Hizmet yazılmamış bir veri kümesi döndürürse, örneğin, hiçbir öğe görünmez **veri kaynakları** Sihirbazı tamamladığınızda penceresi. Yazılmayan veri kümeleri, bir şema sağlamaması ve bu nedenle sihirbazın veri kaynağını oluşturmak için yeterli bilgi yok nedeni budur.  
+    > Görünen öğeler **veri kaynakları** penceresi, bağımlı hizmetin döndürdüğü verileri. Bazı hizmetler için yeterli bilgi sağlamayabilir **veri kaynağı Yapılandırma Sihirbazı** bağlanabilir nesneleri oluşturmak için. Hizmet yazılmamış bir veri kümesi döndürürse, örneğin, hiçbir öğe görünmez **veri kaynakları** Sihirbazı tamamladığınızda penceresi. Yazılmayan veri kümeleri, bir şema sağlamaması ve bu nedenle sihirbazın veri kaynağını oluşturmak için yeterli bilgi yok nedeni budur.  
   
 ## <a name="data-source-for-an-object"></a>Bir nesne için veri kaynağı  
  Bir veya daha fazla ortak özellik gösteren herhangi bir nesneden bir veri kaynağı oluşturabilirsiniz **veri kaynağı Yapılandırma Sihirbazı** seçip **nesne** veri kaynağı türü. Bir nesnenin tüm ortak özellikleri görüntülenir **veri kaynakları** penceresi.   Entity Framework kullanan ve bir modeli oluşturulmasını, uygulamanız için veri kaynakları olacak varlık sınıflarının nerede budur.  
@@ -94,10 +94,10 @@ Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* 
  Derleme veya ağaç görünümünde görünmez projesinde bir nesneyi bağlamak isterseniz **Başvuru Ekle** ve **başvuru iletişim kutusunu** derlemeyi veya projeyi bir başvuru eklemek için. Başvuru ekledikten sonra derleme veya proje ağaç görünümüne eklenir.  
   
 > [!NOTE]
->  Nesneleri, ağaç görünümünde görünmesi nesnelerinizi içeren proje oluşturmanız gerekebilir.  
+> Nesneleri, ağaç görünümünde görünmesi nesnelerinizi içeren proje oluşturmanız gerekebilir.  
   
 > [!NOTE]
->  Sürükle ve bırak veri bağlama uygulayan nesneler desteklemek için <xref:System.ComponentModel.ITypedList> veya <xref:System.ComponentModel.IListSource> arabirimi, bir varsayılan oluşturucusu olmalıdır. Aksi takdirde, Visual Studio, veri kaynağı nesnesi başlatılamıyor ve öğe tasarım yüzeyine sürüklediğinizde bir hata görüntülenir.  
+> Sürükle ve bırak veri bağlama uygulayan nesneler desteklemek için <xref:System.ComponentModel.ITypedList> veya <xref:System.ComponentModel.IListSource> arabirimi, bir varsayılan oluşturucusu olmalıdır. Aksi takdirde, Visual Studio, veri kaynağı nesnesi başlatılamıyor ve öğe tasarım yüzeyine sürüklediğinizde bir hata görüntülenir.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Veri kaynağı için bir SharePoint listesi  
  Çalıştırarak, bir SharePoint listesinden bir veri kaynağı oluşturabilirsiniz **veri kaynağı Yapılandırma Sihirbazı** seçerek **SharePoint** veri kaynağı türü. SharePoint üzerinden veri sunar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], SharePoint veri kaynağı oluşturma hizmetten veri kaynağı oluşturma ile aynıdır. Seçme **SharePoint** öğesi **veri kaynağı Yapılandırma Sihirbazı** açılır **hizmet Başvurusu Ekle** SharePoint veri hizmetine eriştiğiniz, iletişim kutusu SharePoint sunucusuna işaret ederek.  Bu, SharePoint SDK'sını gerektirir.  

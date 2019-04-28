@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb31cf48194f48188b714fb7afb14de053cb584d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445743"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild çoklu sürüm desteğine genel bakış
 MSBuild kullanarak, .NET Framework'ün çeşitli sürümlerinden herhangi birini ve birkaç sistemi platformları herhangi birini çalıştırmak için bir uygulamayı derleyebilirsiniz. Örneğin, bir 32 bit platformda .NET Framework 2.0 üzerinde çalışacak bir uygulama derlemek ve bir 64-bit platformda .NET Framework 4.5 üzerinde çalıştırılacak aynı uygulamayı derleyin.
 
 > [!IMPORTANT]
->  Adı "çoklu hedefleme rağmen", bir proje aynı anda yalnızca bir çerçeve ve tek bir platform hedefleyebilirsiniz.
+> Adı "çoklu hedefleme rağmen", bir proje aynı anda yalnızca bir çerçeve ve tek bir platform hedefleyebilirsiniz.
 
  MSBuild hedefleme özelliklerinden bazıları şunlardır:
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3d9de68392bbb7f8e4f9c1ecd43211725f61d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443420"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>MSBuild satır içi görevleri RoslynCodeTaskFactory ile
 Benzer şekilde [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory satır içi görevleri olarak kullanım için bellek içi görev derlemeleri oluşturmak için platformlar arası Roslyn derleyicileri kullanır.  RoslynCodeTaskFactory görevleri hedef .NET Standard ve .NET Framework ve .NET Core çalışma zamanlarını ve bunun yanı sıra Linux ve Mac OS gibi diğer platformlarda çalışabilir.
@@ -65,7 +65,7 @@ Kalan öğeleri `DoNothing` görev boştur ve satır içi göre yapısını ve s
 `Reference` ve `Using` dilden öğeleridir. Satır içi görevleri desteklenen .NET CodeDom diller, örneğin, Visual Basic veya Visual C# herhangi birinde yazılabilir.
 
 > [!NOTE]
->  Tarafından bulunan öğeleri `Task` öğesi görev fabrikasını için bu durumda, kod görev fabrikasını özeldir.
+> Tarafından bulunan öğeleri `Task` öğesi görev fabrikasını için bu durumda, kod görev fabrikasını özeldir.
 
 ### <a name="code-element"></a>Kod öğesi
 İçinde görüntülenecek son alt öğenin `Task` öğesi `Code` öğesi. `Code` Öğe içeriyor veya bir görevle derlenecek istediğiniz kodu bulur. Yerleştirme `Code` öğesi nasıl, görev yazmak istediğinize bağlıdır.
@@ -85,7 +85,7 @@ Kod genellikle arasında görünür bir `<![CDATA[` işaret ve `]]>` işaretçis
 Alternatif olarak, `Source` özniteliği `Code` göreviniz için kod içeren bir dosya konumunu belirtmek için öğesi. Kaynak dosyada kod tarafından belirtilen türde olması gerekir `Type` özniteliği. Varsa `Source` öznitelik varsa varsayılan değer olan `Type` olduğu `Class`. Varsa `Source` olduğundan, varsayılan değer yoksa `Fragment`.
 
 > [!NOTE]
->  Görev sınıfın kaynak dosyada tanımlarken, sınıf adı ile kabul etmelisiniz `TaskName` karşılık gelen öznitelik [UsingTask](../msbuild/usingtask-element-msbuild.md) öğesi.
+> Görev sınıfın kaynak dosyada tanımlarken, sınıf adı ile kabul etmelisiniz `TaskName` karşılık gelen öznitelik [UsingTask](../msbuild/usingtask-element-msbuild.md) öğesi.
 
 ## <a name="hello-world"></a>Merhaba Dünya
  Daha güçlü bir satır içi görev RoslynCodeTaskFactory ile aşağıda verilmiştir. HelloWorld görev görüntüler "Hello, world!" Varsayılan hata günlüğünü cihazda olduğu genellikle sistem konsolu veya Visual Studio **çıkış** penceresi. `Reference` Öğesinde örnek yalnızca gösterim amacıyla dahildir.

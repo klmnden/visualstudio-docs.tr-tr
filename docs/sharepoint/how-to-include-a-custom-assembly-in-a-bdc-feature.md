@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443109"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Nasıl yapılır: İçinde bir BDC özelliğine özel bir derlemeyi etme
   Projenizi derlemeleri aynı çözümdeki diğer projelerden başvuruda bulunabilir. Projenin özellik dosyasına kullanarak bu derlemeleri ancak eklemelisiniz **Ata başvurulan bütünleştirilmiş kodları LobSystem için** iletişim kutusu.
@@ -40,12 +40,12 @@ ms.locfileid: "60059629"
 4. İçinde **bir derleme seçin** listesinde, özel bir derlemeyi seçin.
 
     > [!NOTE]
-    >  Derlemeleri yalnızca görünür **Ata başvurulan bütünleştirilmiş kodları LobSystem için** derlemeyi içeren projeye başvuru eklediyseniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Derlemeleri yalnızca görünür **Ata başvurulan bütünleştirilmiş kodları LobSystem için** derlemeyi içeren projeye başvuru eklediyseniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 5. İçinde **başvurusu özellikleri** için açılan listeyi açın, grup **LobSystem kapsamı** özelliği, özel bir derlemeyi kullanın ve ardından yöntemleri LOB sistemine seçin **Tamam**  düğmesi.
 
     > [!NOTE]
-    >  Özel derleme kodunda hata ayıklamak için derleme çözüm paketine eklemeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Ek derlemeler ekleyip](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Özel derleme kodunda hata ayıklamak için derleme çözüm paketine eklemeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Ek derlemeler ekleyip](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

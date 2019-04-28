@@ -10,16 +10,18 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786087"
 ---
-# <a name="introducing-live-unit-testing"></a>Live Unit Testing ile tanışın
+# <a name="live-unit-testing-introduction"></a>Live Unit Testing giriş
 
-Live Unit Testing, Visual Studio 2017'de kullanılmaya başlanan bir teknolojidir. Kod değişiklikleri yapabilir, birim testleriniz otomatik olarak gerçek zamanlı olarak yürütür. Live Unit Testing:
+Live Unit Testing, Visual Studio 2017'de kullanılmaya başlanan bir teknolojidir. Kod değişiklikleri yapabilir, birim testleriniz otomatik olarak gerçek zamanlı olarak yürütür.
+
+Live Unit Testing:
 
 - Daha büyük bir güvenle yeniden düzenleme ve kod değişikliği olanak tanır. Değişikliklerinizi testleri kesintiye uğratmadığından emin olmak için kodunuzu düzenlediğiniz sırada Live Unit Testing tüm etkilenen testleri otomatik olarak yürütür.
 
@@ -27,15 +29,18 @@ Live Unit Testing, Visual Studio 2017'de kullanılmaya başlanan bir teknolojidi
 
 Bir veya daha fazla birim testi projeleri içeren bir çözümü varsa, Live Unit Testing seçerek etkinleştirebilirsiniz **Test** > **Live Unit Testing** > **Başlat**  en üst düzey Visual Studio menüsünde.
 
+> [!NOTE]
+> Live Unit Testing, yalnızca Visual Studio Enterprise Edition'da kullanılabilir.
+
 Live Unit Testing hakkında daha fazla bilgi için:
 
-- Giriş niteliğindeki öğreticinin deneyin [Visual Studio Live Unit Testing kullanmaya başlama](live-unit-testing-start.md).
+- Giriş niteliğindeki öğreticinin deneyin [Live Unit Testing ile çalışmaya başlama](live-unit-testing-start.md).
 
 - Ayrıntılı belgelere okuma [kullanım Live Unit Testing ile Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Okuma [Live Unit Testing SSS](live-unit-testing-faq.md) Live Unit Testing yenilikleri öğrenmek için hem de Live Unit Testing kullanmaya ilişkin ipuçları ve teknikler hakkında bilgi edinin.
+- Okuma [Live Unit Testing SSS](live-unit-testing-faq.md) Live Unit Testing yenilikleri öğrenmek için hem de ipuçları ve teknikler hakkında bilgi edinin.
 
-- Channel 9 Live Unit Testing ve özellikleri genel bir bakış için videoyu izleyin. </p>
+- Channel 9 Live Unit Testing ve özelliklerine genel bakış için videoyu izleyin. </p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

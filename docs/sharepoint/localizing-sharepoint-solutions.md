@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444356"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint Çözümlerini Yerelleştirme
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639927"
  Bir çözümü yerelleştirmek için sabit kodlanmış dizeleri koddan kaldırın ve onları kaynak dosyalarına soyut olarak ekleyin. Kaynak dosya, bir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-ile dosya tabanlı bir *.resx* uzantısı. Kaynak dosya çözümünüzde kullanılan dizelerin çevrilmiş versiyonlarını içerir. Daha fazla bilgi için [uygulamalardaki kaynaklar](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  SharePoint çözüm kaynak dosyalarına dize kaynakları ekleyin. Kaynak Düzenleyicisi dize olmayan kaynaklar eklemenize olanak sağlar, ancak dize olmayan kaynaklar SharePoint'e dağıtılmaz.
+> SharePoint çözüm kaynak dosyalarına dize kaynakları ekleyin. Kaynak Düzenleyicisi dize olmayan kaynaklar eklemenize olanak sağlar, ancak dize olmayan kaynaklar SharePoint'e dağıtılmaz.
 
 ## <a name="resource-files"></a>Kaynak dosyaları
  Kaynak dosyaları üç tür vardır: varsayılan, dil nötr ve dile özgü.
@@ -76,7 +76,7 @@ $Resources:String ID
  Ayarlama **dağıtım türü** özelliği için her kaynak dosyasının **AppGlobalResource**. Bu, tüm ASPX sayfaları ve denetimleri çözümdeki kullanılabilir olduğu App_GlobalResources klasörüne dağıtılacak kaynak dosyalar neden olur. App_GlobalResources klasörüne C:\inetpub\wwwroot\wss\VirtualDirectories içinde bulunan\\< bağlantı noktası numarası\>\App_GlobalResources.
 
 > [!NOTE]
->  Genel olmayan kaynak dosyaları kullanıyorsanız, bunları dağıtım türü özelliğini ve diğer SharePoint'e özgü özellikleri etkinleştirmek için proje öğesi klasörüne taşıyın.
+> Genel olmayan kaynak dosyaları kullanıyorsanız, bunları dağıtım türü özelliğini ve diğer SharePoint'e özgü özellikleri etkinleştirmek için proje öğesi klasörüne taşıyın.
 
  ASPX biçimlendirme kaynak dosyaları kod yerelleştirmek için de kullanılabilir. ASPX biçimlendirmeye ek olarak kodu yerelleştirmek için kaynakları kullanıyorsanız, bir uydu derlemeye derlemek için derleme eylemi özelliği ayarı her dosyanın kaynak neden gömülü kaynak olarak bırakın. Ancak, kaynak dosyalarını yalnızca biçimlendirmeyi yerelleştirmek için kullanıyorsanız, yapı eylemi dosyanın ana uygulama derlemesine eklenmesini derlenmiş önlemek için içeriği için isteğe bağlı olarak değiştirebilirsiniz.
 

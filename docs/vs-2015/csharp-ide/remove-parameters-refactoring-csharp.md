@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444627"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Parametreleri Kaldır Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045804"
  Parametreleri Kaldır işlemi, ilk yöntem, dizin oluşturucu veya temsilci imleci konumlandırma gerçekleştirin. İmleç konumu Kaldır çağrılacak alanındayken `Parameters` işlemi tıklayın **yeniden düzenleme** menüsünde, klavye kısayol tuşlarına basın veya komutu kısayol menüsünden seçin.  
   
 > [!NOTE]
->  Genişletme yönteminin ilk parametresi kaldırılamıyor.  
+> Genişletme yönteminin ilk parametresi kaldırılamıyor.  
   
 ### <a name="to-remove-parameters"></a>Parametreleri kaldırmak için  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045804"
  Yöntem bildiriminde veya yöntem çağrısı parametreleri kaldırabilirsiniz. Yöntem bildiriminde ya da temsilci adı imleci yerleştirin ve parametreleri Kaldır çağırın.  
   
 > [!CAUTION]
->  Parametreleri etkinleştirir, başvurulmayan parametre üyesi, ancak gövdesinde kaldırmak için bu parametre başvuruları yöntemin gövdesinde kaldırmaz kaldırın. Bu, kodunuzda yapı hatalara neden olabilir. Ancak, kullanabileceğiniz **Değişiklikleri Önizle** iletişim kutusunu yeniden düzenleme işlemi çalıştırmadan önce kodunuzu gözden geçirin.  
+> Parametreleri etkinleştirir, başvurulmayan parametre üyesi, ancak gövdesinde kaldırmak için bu parametre başvuruları yöntemin gövdesinde kaldırmaz kaldırın. Bu, kodunuzda yapı hatalara neden olabilir. Ancak, kullanabileceğiniz **Değişiklikleri Önizle** iletişim kutusunu yeniden düzenleme işlemi çalıştırmadan önce kodunuzu gözden geçirin.  
   
  Kaldırılmakta olan bir parametreyi, bir yöntem çağrısı sırasında değiştirilirse, parametre kaldırılmasını değişikliği de kaldırılır. Bir yöntem çağırırsanız, değiştirilirse  
   

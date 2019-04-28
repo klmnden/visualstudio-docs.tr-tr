@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442637"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rastgele Nesne ve Simge Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, fo
 IntelliSense penceresi  
   
     > [!NOTE]
-    >  IntelliSense penceresi yalnızca kodu el ile girdiğinizde görünür. Kodu kopyalayıp yapıştırırsanız görünmez.  
+    > IntelliSense penceresi yalnızca kodu el ile girdiğinizde görünür. Kodu kopyalayıp yapıştırırsanız görünmez.  
   
      Kodu (ve açıklamaları) küçük bölümler halinde incelerseniz anlaması daha kolay olur. Programlarınız `List` farklı türlerde öğeler izlemek için nesneleri. Bir liste; sayıları, doğru/yanlış değerlerini, metinleri veya diğer nesneleri barındırabilir. Bile olabilir bir `List` diğer tutan nesne `List` nesneleri. Bir listedeki öğeler adlı *öğeleri*, ve her liste yalnızca öğesi bir tür tutar. Öyleyse, bir sayı listesi yalnızca sayıları tutabilir; bu listeye metin ekleyemezsiniz. Benzer şekilde, doğru/yanlış değerlerini içeren bir listeye sayı ekleyemezsiniz.  
   
@@ -51,7 +51,7 @@ IntelliSense penceresi
      Bir koleksiyon Başlatıcısı kullandığınızda bir `new` ifade, sonra yeni `List` nesnesi oluşturulur, program, kaşlı ayraçlar içinde sağladığınız verilerle doldurur. Bu durumda, adlı dize listesi elde **simgeler**, ve bu liste on altı dize içeren başlatılır. Bu dizelerin her biri tek bir harftir ve bunların tümü etiketlerde yer alacak simgelere karşılık gelir. Dolayısıyla, oyunda bir çift ünlem işareti, bir çift büyük N harfi, bir çift virgül vs. olacaktır. (Bu karakterler Webdings yazı tipine ayarlandığında, otobüs, bisiklet, örümcek vb. simgeler olarak görünür.) `List` Nesne TableLayoutPanel panelindeki her hücreye tüm, on altı dize olacaktır.  
   
     > [!NOTE]
-    >  Visual Basic'te, aynı sonucu elde etmek, ancak dizeler ardından dönüştürülür geçici bir dizinin ilk şekilde yerleştirilir bir `List` nesne. Örneğin, dizilerin sabit boyutlu oluşturulması dışında, dizi bir listeye benzer. Listelerin gerektiğinde daralabilmesi ve genişleyebilmesi bu programda önem taşır.  
+    > Visual Basic'te, aynı sonucu elde etmek, ancak dizeler ardından dönüştürülür geçici bir dizinin ilk şekilde yerleştirilir bir `List` nesne. Örneğin, dizilerin sabit boyutlu oluşturulması dışında, dizi bir listeye benzer. Listelerin gerektiğinde daralabilmesi ve genişleyebilmesi bu programda önem taşır.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

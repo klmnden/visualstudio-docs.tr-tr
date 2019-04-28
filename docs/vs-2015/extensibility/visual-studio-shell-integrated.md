@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445730"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Kabuğu (tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
  Visual Studio tümleşik kabuğu, Visual Studio yalıtılmış Kabuğu yanı sıra tümleşik Kabuk belirli bileşenler içeren bir ek yükleme aslında bir birleşiminden oluşur.  Tümleşik Kabuk uygulamanızı hem yalıtılmış Kabuk yeniden dağıtılabilir paketi içermelidir [Microsoft Visual Studio Kabuğu (yalıtılmış) yeniden dağıtılabilir paket](http://go.microsoft.com/fwlink/?LinkId=616022) tümleşik Kabuk yeniden dağıtılabilir paketi yanı sıra gelen [Microsoft Visual Studio Kabuğu (tümleşik) yeniden dağıtılabilir paket](http://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
->  Yalıtılmış ve tümleşik Kabuk yeniden dağıtılabilir paketlerine erişebilmeniz için önce bir kısa bir müşteri anketini doldurmanız istenir.  Anketi doldurduktan sonra yeniden dağıtılabilir paket indirme bağlantılarının ile Visual Studio Connect sayfasına yönlendirilirsiniz.  Visual Studio Connect sitesi altında daha sonra gerçekleştirdiğiniz ziyaretlerde indirme bağlantıları bulabilirsiniz **programlar &#124; VISUAL STUDIO 2015 TÜMLEŞİK ve YALITILMIŞ KABUK** sekmesi.  
+> Yalıtılmış ve tümleşik Kabuk yeniden dağıtılabilir paketlerine erişebilmeniz için önce bir kısa bir müşteri anketini doldurmanız istenir.  Anketi doldurduktan sonra yeniden dağıtılabilir paket indirme bağlantılarının ile Visual Studio Connect sayfasına yönlendirilirsiniz.  Visual Studio Connect sitesi altında daha sonra gerçekleştirdiğiniz ziyaretlerde indirme bağlantıları bulabilirsiniz **programlar &#124; VISUAL STUDIO 2015 TÜMLEŞİK ve YALITILMIŞ KABUK** sekmesi.  
   
  Tümleşik Kabuk uygulamanızı Visual Studio'nun tam sürümünü aynı bilgisayara yüklerseniz, uygulamanızın bileşenleri doğrudan Visual Studio'ya tümleştirilecektir.  
   

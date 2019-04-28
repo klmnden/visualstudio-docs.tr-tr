@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444411"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML sıralı diyagramlarındaki öğelerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54802111"
 UML sıralı diyagramı her öğe diyagram üzerindeki özellikleri vardır. Öğenin özelliklerini görmek için diyagram üzerinde veya öğeye sağ tıklayın **UML Model Gezgini** ve ardından **özellikleri**. Özellikleri görünür **özellikleri** penceresi.  
   
 > [!NOTE]
->  Bu konu UML sıralı diyagramlarındaki öğelerin özellikleri hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Bu konu UML sıralı diyagramlarındaki öğelerin özellikleri hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Öğelerin özellikleri  
   
@@ -51,6 +51,6 @@ UML sıralı diyagramı her öğe diyagram üzerindeki özellikleri vardır. Ö�
 |**İletiler**|(boş)|Göz önünde bulundurun ve<br /><br /> Birleştirilmiş parçaları yoksay|Dikkate alınan veya bu parçada göz ardı iletiler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Denetim akışını UML sıralı diyagramlarında parçalarla açıklama](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)

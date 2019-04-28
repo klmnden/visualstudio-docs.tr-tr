@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445358"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows Forms denetimlerine Office belgeleri genel bakış
   Windows Forms denetimlerini, kullanıcıların girin veya verileri işlemek için etkileşim kurabilir nesnelerdir. Microsoft Office Excel ve Microsoft Office Word için belge düzeyi projeleri, Windows Forms denetimleri belge veya çalışma kitabındaki projenizde tasarım zamanında ekleyebileceğiniz veya program aracılığıyla çalışma zamanında bu denetimler ekleyebilirsiniz. Program aracılığıyla bu denetimleri herhangi bir açık belge veya çalışma zamanında VSTO eklenti Excel veya Word için ekleyebilirsiniz.
@@ -109,7 +109,7 @@ Bir Windows formunda.
 - **Dikey aralığı eşit yap**
 
 > [!NOTE]
->  Yalnızca Seçili denetimleri metinle yüklemiyorsanız bu düğmeler Word projelerinde etkinleştirilir. Varsayılan olarak, tasarım zamanında belgeye eklediğiniz metinle denetimlerdir.
+> Yalnızca Seçili denetimleri metinle yüklemiyorsanız bu düğmeler Word projelerinde etkinleştirilir. Varsayılan olarak, tasarım zamanında belgeye eklediğiniz metinle denetimlerdir.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Eski veri yükleme sırasında Excel çalışma kitaplarını görünmesini engellemek
  Windows Forms denetimleri belge veya çalışma sayfaları için tasarım zamanında eklediğiniz zaman, kullanıcının belgeyi kapandığında denetimleri belgede kalır. Tasarım zamanında eklenen denetimler de denir *statik denetim*.

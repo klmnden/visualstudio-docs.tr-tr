@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0411d40a4b156e24fcdf4fb3e9de5353787333f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445565"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office'i genişleten .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçları kullanabilirsiniz. Bu uygulamalar olarak da adlandırılır *Office çözümleri*.
@@ -25,7 +25,7 @@ ms.locfileid: "60070927"
  Çeşitli iş gereksinimlerini karşılayan Office çözümleri oluşturma yardımcı olan özellikleri Office geliştirici araçları sağlar. Yardımcı olan görsel tasarımcılar, Office çözümleri için özel kullanıcı arabirimleri oluşturun ve araçları, Visual Basic veya Visual C# kullanarak Office çözümleri oluşturmanıza yardımcı olacak proje şablonları içerir.
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
  Office geliştirme hakkında son bilgiler için MSDN'de aşağıdaki Geliştirme Merkezleri bakın:
 

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439693"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>İzlenecek yol: Komut satırı araçları kullanarak profil oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Bu izlenecek yol, profil oluşturma ile alır. bir [!INCLUDE[dnprdnshort](../inc
  İzleme profili oluşturulmuş ikili dosyalar özel olarak oluşturulmuş sürümleri işaretlenmiş modülde işlevlere giriş ve çıkış zamanlama bilgilerini toplamak araştırma işlevleri içerir bir profil oluşturma yöntemidir. Bu profil oluşturma yöntemi örnekleme değerinden daha bozucu olduğu için büyük miktarda bir ek yük doğurur. İzlenen ikili dosyaların hatalarını ayıklama veya ikili dosyaları sürüm ve dağıtım için hedeflenmemiş büyük.  
   
 > [!NOTE]
->  İzleme eklenmiş ikili dosyalar, müşterilerinize göndermeyin. İzleme eklenmiş ikili dosyalar, çeşitli riskleri taşıyabilir. İkili dosyaları, uygulamanızı ters mühendislik, yanı sıra güvenlik risklerini daha kolay anlaşılır bilgileri içerir.  
+> İzleme eklenmiş ikili dosyalar, müşterilerinize göndermeyin. İzleme eklenmiş ikili dosyalar, çeşitli riskleri taşıyabilir. İkili dosyaları, uygulamanızı ters mühendislik, yanı sıra güvenlik risklerini daha kolay anlaşılır bilgileri içerir.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Araçlar yöntemini kullanarak PeopleTrax uygulama profiline  
   

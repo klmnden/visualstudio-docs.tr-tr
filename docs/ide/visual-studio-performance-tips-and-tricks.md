@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6af35b4532b14adc914ab2358745df53f68804
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581797"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -105,7 +105,17 @@ Bazı araçları veya uzantıları performansını artırmak için kapatılabili
 
     Yeni işlevsellik sağlayan veya var olan işlevselliği genişletmek için Visual Studio eklenen ek yazılım bileşenleri uzantılarıdır. Uzantılar genellikle bellek kaynağı sorunları kaynağı olabilir. Bellek kaynak sorun yaşıyorsanız, iş akışı ve senaryoya nasıl etkilediğini görmek için bir defada tek uzantıları devre dışı bırakma deneyin.
 
+   ::: moniker range="vs-2017"
+
     Uzantıları devre dışı bırakmak için Git **Araçları** > **Uzantılar ve güncelleştirmeler**ve belirli bir uzantıyı devre dışı bırakın.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Uzantıları devre dışı bırakmak için Git **uzantıları** > **uzantıları yönetme**ve belirli bir uzantıyı devre dışı bırakın.
+
+   ::: moniker-end
 
 - **XAML Tasarımcısı devre dışı bırak**
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440380"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Eylemler bölmesi bir özelleştirilebilirdir **belge eylemleri** görev bölmesi, belirli Microsoft Office Word belgesi ya da Microsoft Office Excel çalışma kitabına eklenmiş. Eylemler bölmesinde içindeki diğer yerleşik görev bölmeleri yanı sıra Office görev bölmesi gibi barındırılan **XML kaynağı** görev bölmesinde Excel veya **stilleri ve biçimlendirme** Word görev bölmesinde. Windows Forms veya WPF denetimleri, Eylemler bölmesi kullanıcı arabirimini tasarlamak için kullanabilirsiniz.
@@ -30,7 +30,7 @@ ms.locfileid: "60099747"
  Word veya Excel için belge düzeyi özelleştirmesinde yalnızca eylemler bölmesi oluşturabilirsiniz. VSTO eklentisi içinde eylemler bölmesi oluşturamazsınız. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Eylemler bölmesinde özel görev bölmeleri farklıdır. Özel görev bölmeleri, uygulama, belirli bir belge ile ilişkilidir. Özel görev bölmeleri VSTO eklentileri için bazı Microsoft Office uygulamaları oluşturabilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
+> Eylemler bölmesinde özel görev bölmeleri farklıdır. Özel görev bölmeleri, uygulama, belirli bir belge ile ilişkilidir. Özel görev bölmeleri VSTO eklentileri için bazı Microsoft Office uygulamaları oluşturabilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Excel eylemler bölmesindeki içinde WPF denetimleri kullanılsın mı? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099747"
 2. Windows Forms denetimlerine ekleme <xref:System.Windows.Forms.UserControl> Tasarımcısını kullanarak ya da kod yazarak.
 
    > [!NOTE]
-   >  Bir WPF ekleyerek Eylemler bölmesi WPF denetimleri ekleyebilirsiniz <xref:System.Windows.Controls.UserControl> Windows Forms'a <xref:System.Windows.Forms.UserControl>. Daha fazla bilgi için [kullanım WPF denetimleri Office çözümlerinde](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Bir WPF ekleyerek Eylemler bölmesi WPF denetimleri ekleyebilirsiniz <xref:System.Windows.Controls.UserControl> Windows Forms'a <xref:System.Windows.Forms.UserControl>. Daha fazla bilgi için [kullanım WPF denetimleri Office çözümlerinde](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Özel kullanıcı denetimi örneğini bulunan denetimler ekleyin `ActionsPane` alanını `ThisWorkbook` (Excel için) veya `ThisDocument` (Word için) projenizde sınıf.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099747"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Son kullanıcılar, herhangi bir zamanda görev bölmesinde elle konumlandırabilirsiniz. Görev bölmesi programlı olarak belirttiğiniz konumda yerleşik kalacağından emin olmanın bir yolu yoktur. Ancak, yönlendirme değişiklikleri denetlemek ve Eylemler bölmesindeki denetimlere doğru yönde Yığılmış emin olun. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmelerindeki düzen denetimi yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Son kullanıcılar, herhangi bir zamanda görev bölmesinde elle konumlandırabilirsiniz. Görev bölmesi programlı olarak belirttiğiniz konumda yerleşik kalacağından emin olmanın bir yolu yoktur. Ancak, yönlendirme değişiklikleri denetlemek ve Eylemler bölmesindeki denetimlere doğru yönde Yığılmış emin olun. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmelerindeki düzen denetimi yönetme](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Ayarı <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> ve <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> özelliklerini <xref:Microsoft.Office.Tools.ActionsPane> çünkü konumunu değiştirmez <xref:Microsoft.Office.Tools.ActionsPane> görev bölmesinde katıştırılmış nesne.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794137"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma
 
@@ -25,7 +25,7 @@ Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlen
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio'da EditorConfig](/visualstudio/mac/editorconfig).
 
-## <a name="coding-consistency"></a>Kodlama tutarlılık
+## <a name="code-consistency"></a>Kod tutarlılık
 
 Tutarlı kodlama stili ve girinti stili, sekme genişliği, satır sonu karakterleri, gibi kod tabanında kodlama, ayarları korumak EditorConfig dosyaları ayarlarında etkinleştirmeniz ve daha fazlasını düzenleyicimizi veya IDE'mizi bağımsız olarak kullanırsınız. Örneğin, kod temelinizde girintileri her zaman beş boşluk karakterlerinden oluşamaz tercih edilmesi bir kuralı varsa, C# kodlama, UTF-8 kodlamasını, belgeleri kullanın ve her satırı bir CR/LF ile her zaman sona erer, yapılandırabileceğiniz bir *.editorconfig* Bunu yapmak için dosya.
 
@@ -51,7 +51,7 @@ Visual Studio düzenleyicisinde çekirdek kümesini destekleyen [EditorConfig ö
 
 EditorConfig Düzenleyici ayarları XML dışında tüm Visual Studio tarafından desteklenen dillerde desteklenir. Ayrıca, EditorConfig destekler [kod stili](../ide/editorconfig-code-style-settings-reference.md) ve [adlandırma](../ide/editorconfig-naming-conventions.md) C# ve Visual Basic kuralları.
 
-## <a name="adding-and-removing-editorconfig-files"></a>Ekleme ve kaldırma EditorConfig dosyaları
+## <a name="add-and-remove-editorconfig-files"></a>EditorConfig dosyaları ekleyip
 
 Bir EditorConfig ekleme dosyası projenize veya codebase mevcut stilleri yenilerini dönüştürmez. Örneğin, sekmeler olarak biçimlendirilen girintileri dosyanızdaki sahip ve boşluklarla girinti bir EditorConfig dosyası eklerseniz, girinti karakterleri otomatik olarak boşluklara dönüştürülmez. Ancak, yeni bir kod satırlarını EditorConfig dosyanın göre biçimlendirilir. Ayrıca, belgeyi Biçimlendir (**Düzenle** > **Gelişmiş** > **belgeyi Biçimlendir** veya **Ctrl** + **K**, **Ctrl**+**D**), mevcut kod satırlarına EditorConfig dosyasındaki ayarları uygulanır.
 
@@ -94,7 +94,7 @@ EditorConfig dosyayı projenize ekleyebilirsiniz birkaç yolu vardır:
 
 - Denemenin [Intellicode uzantısı](/visualstudio/intellicode/intellicode-visual-studio). Bu Deneysel uzantı mevcut koddan, kod stilleri algılar ve ardından boş olmayan oluşturur *.editorconfig* dosya ile kod stili tercihlerinizden zaten tanımlanmış.
 
-## <a name="override-editorconfig-settings"></a>EditorConfig ayarlarını geçersiz kıl
+## <a name="file-hierarchy-and-precedence"></a>Dosya hiyerarşisi ve önceliği
 
 Eklediğinizde bir *.editorconfig* dosya dosya hiyerarşinizdeki bir klasöre tüm ilgili dosyalar aynı düzeyde ve altı ayarlarını uygulayın. Diğer bölümlerini kod tabanının daha farklı kurallar kullanır, ayrıca belirli proje, codebase veya bir kod temeli bir parçası için EditorConfig ayarları geçersiz kılabilirsiniz. Başka bir yerde koddan birleştirmek ve kendi kuralları değiştirmek istemiyorsanız, bu yararlı olabilir.
 
@@ -109,9 +109,9 @@ Bazı geçersiz kılmak istiyorsanız, ancak tüm ayarları yalnızca ayarların
 root = true
 ```
 
-Üstten alta EditorConfig dosyaları okuma ve en yakın EditorConfig dosyaları son okuyun. Kuralları daha yakından dosyalarında önceliklidir. Bu nedenle EditorConfig bölümleri eşleşen gelen kuralları okundu, sırayla uygulanır.
+EditorConfig dosyaları yukarıdan okunur. Aynı ada sahip birden çok özellik varsa, en yakın zamanda bu ada sahip özelliği önceliklidir bulundu.
 
-## <a name="editing-editorconfig-files"></a>EditorConfig dosyaları düzenleme
+## <a name="edit-editorconfig-files"></a>EditorConfig dosyaları düzenleme
 
 Visual Studio düzenlemenize yardımcı olur *.editorconfig* IntelliSense tamamlanma listelerinde sağlayarak dosyaları.
 
@@ -148,7 +148,7 @@ Bastığınızda artık **sekmesini** anahtar, sekme karakterlerini yerine boşl
 
 ![Sekme tuşunu sekme karakteri ekler.](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>EditorConfig ayarları sorunlarını giderme
+## <a name="troubleshoot-editorconfig-settings"></a>EditorConfig ayarlarında sorun giderme
 
 Varsa bir EditorConfig dosyası herhangi bir dizin yapısına veya projenizin konumunu üzerindeki Visual Studio Düzenleyicisi ayarları, dosya düzenleyiciniz için geçerlidir. Bu durumda, durum çubuğundaki şu iletiyi görebilirsiniz:
 

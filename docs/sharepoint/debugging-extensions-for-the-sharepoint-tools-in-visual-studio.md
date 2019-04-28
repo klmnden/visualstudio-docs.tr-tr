@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443513"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama
   SharePoint araç uzantıları deneysel örneğinde veya normal örneğinde Visual Studio'nun hata ayıklaması yapabilirsiniz. Uzantının davranış sorun gidermeniz gerekiyorsa, ek hata bilgileri görüntülemek ve Visual Studio'nun SharePoint komutlarını nasıl yürüteceğini yapılandırmak için kayıt defteri değerlerini de değiştirebilirsiniz.
@@ -102,7 +102,7 @@ ms.locfileid: "60094404"
 3. İçinde **kullanılabilir işlemler** listesinde *vssphost.exe*.
 
     > [!NOTE]
-    >  Vssphost.exe listede görünmüyorsa, başlamalıdır *vssphost4.exe* uzantı içinde çalıştırdığınız Visual Studio örneğinde işlem. Genellikle, Visual Studio'nun geliştirme bilgisayarında SharePoint sitesine bağlanmasına neden olan eylemi gerçekleştirerek yaparsınız. Örneğin, Visual Studio başlatılır *vssphost4.exe* altında bir site bağlantı düğümü (site URL'sini görüntüleyen bir düğümü) genişlettiğinizde **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**  penceresinde veya eklediğinizde, belirli bir SharePoint Proje öğeleri gibi **liste örneği** veya **olay alıcısı** , bir SharePoint projesine öğeler.
+    > Vssphost.exe listede görünmüyorsa, başlamalıdır *vssphost4.exe* uzantı içinde çalıştırdığınız Visual Studio örneğinde işlem. Genellikle, Visual Studio'nun geliştirme bilgisayarında SharePoint sitesine bağlanmasına neden olan eylemi gerçekleştirerek yaparsınız. Örneğin, Visual Studio başlatılır *vssphost4.exe* altında bir site bağlantı düğümü (site URL'sini görüntüleyen bir düğümü) genişlettiğinizde **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**  penceresinde veya eklediğinizde, belirli bir SharePoint Proje öğeleri gibi **liste örneği** veya **olay alıcısı** , bir SharePoint projesine öğeler.
 
 4. Seçin **iliştirme** düğmesi.
 

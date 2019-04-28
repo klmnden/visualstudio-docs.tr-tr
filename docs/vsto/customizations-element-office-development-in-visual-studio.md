@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445502"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;Özelleştirmeleri&gt; öğesi (Visual Studio'da Office Geliştirme)
   `customizations` Öğesinin `vstov4` ad alanı, yükleme ve her Office çözüm yüklenirken ilgili tüm bilgileri içerir.
@@ -72,7 +72,7 @@ ms.locfileid: "54864247"
  Aşağıdaki kod örneğinde gösterilmiştir `customizations` belge düzeyi özelleştirmesi için öğesi.
 
 > [!NOTE]
->  Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
+> Bu kod örneği, sağlanan daha büyük bir örneğin parçasıdır [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Kod
 

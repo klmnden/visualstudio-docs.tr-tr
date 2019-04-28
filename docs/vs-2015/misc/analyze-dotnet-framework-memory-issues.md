@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444660"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework bellek sorunlarını çözümleme
 Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET Framework kodu içindeki bellek sızıntılarını ve verimsiz bellek kullanımını bulun. En düşük .NET Framework sürümü hedef kodun .NET Framework 4. 5 ' dir.  
@@ -59,7 +59,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
  Bellek analizi aracı bilgileri analiz eder *düküm dosyalarında* yığın bilgileri içerir. Visual Studio'da döküm dosyaları oluşturabilir veya gibi bir araç kullanabilirsiniz [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) gelen [Windows SysInternals](http://technet.microsoft.com/sysinternals). Bkz: [döküm nedir ve biri nasıl oluşturabilirim?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio Debugger Team blogunda.  
   
 > [!NOTE]
->  Çoğu araç, döküm bilgisini, tam yığın belleği verilerini içerecek veya içermeyecek şekilde toplayabilir. Visual Studio bellek çözümleyicisi tam yığın bilgisi gerektirir.  
+> Çoğu araç, döküm bilgisini, tam yığın belleği verilerini içerecek veya içermeyecek şekilde toplayabilir. Visual Studio bellek çözümleyicisi tam yığın bilgisi gerektirir.  
   
  **Visual Studio'dan bir döküm toplamak için**  
   

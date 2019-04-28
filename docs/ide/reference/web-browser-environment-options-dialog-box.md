@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788960"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Seçenekler iletişim kutusu: Ortam \> Web tarayıcısı
 

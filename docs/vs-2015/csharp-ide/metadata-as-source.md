@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444600"
 ---
 # <a name="metadata-as-source"></a>Kaynak olarak Meta Veriler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54791053"
 Kaynak olarak meta veriler, C# kaynak kodu bir salt okunur arabellek olarak belirir meta verilerini görüntülemenizi sağlar. Bu türler ve üyeler (uygulamalar) olmadan bildirimlerini bir görünümünü sağlar. Çalıştırarak bir kaynak olarak meta verileri görüntüleyebilirsiniz **tanıma** komutunu türleri veya üyeleri kaynak kodu, proje veya çözüm kullanılabilir değil.  
   
 > [!NOTE]
->  Çalıştırılacak çalıştığınızda **tanıma** komut türleri veya iç olarak işaretlenmiş üyeleri için tümleşik geliştirme ortamı (IDE) görüntülemiyor meta verilerinin bağımsız olarak bir kaynak olarak başvurulan derleme arkadaş veya olur.  
+> Çalıştırılacak çalıştığınızda **tanıma** komut türleri veya iç olarak işaretlenmiş üyeleri için tümleşik geliştirme ortamı (IDE) görüntülemiyor meta verilerinin bağımsız olarak bir kaynak olarak başvurulan derleme arkadaş veya olur.  
   
  Ya da Kod Düzenleyicisi'nde kaynak olarak meta verilerini görüntüleyin veya **kod tanımı** penceresi.  
   

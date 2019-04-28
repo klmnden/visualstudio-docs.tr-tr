@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443202"
 ---
 # <a name="viewing-the-structure-of-code"></a>Kod Yapısını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
  Visual Studio Enterprise yüklüyse tüm çözümdeki yapısını kodunuzu ve bağımlılıklarını görselleştirin ve sizi ilgilendiren kod bölümlerini aşağı ayrıntıya kod haritaları'nı kullanabilirsiniz. Daha fazla bilgi için [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  Visual Studio sürümü ve kullandığınız ayarlar IDE içindeki özellikleri etkileyebilir. Bunlar, bu konuda açıklanan olanlardan farklı olabilir.  
+> Visual Studio sürümü ve kullandığınız ayarlar IDE içindeki özellikleri etkileyebilir. Bunlar, bu konuda açıklanan olanlardan farklı olabilir.  
   
 ## <a name="BKMK_ClassView"></a> Sınıf Görünümü (Visual Basic, C#, C++)  
  **Sınıf Görünümü** parçası olarak gösterilen **Çözüm Gezgini** gibi ayrı bir pencerede iyi. **Sınıf görünümü** penceresi uygulamanın öğelerini görüntüler. Üst bölme ad alanlarını, türleri, arabirimleri, numaralandırmalar ve sınıflar ve alt bölmesinde üst bölmede seçilen türe ait üyelerini görüntüler. Bu pencere öğesini kullanarak, kaynak kodu üye tanımlarında taşıyabilirsiniz (veya **Nesne Tarayıcısı** öğe çözümünüzü dışında tanımlı ise).  

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443388"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ Kodu ile Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Sınıf Tasarımcısı görüntüler olarak adlandırılan bir görsel tasarım 
 - tür tanımı  
   
 > [!NOTE]
->  Bu bir modelleme projesinde oluşturduğunuz UML sınıf diyagramı ile aynı değildir. Daha fazla bilgi için [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
+> Bu bir modelleme projesinde oluşturduğunuz UML sınıf diyagramı ile aynı değildir. Daha fazla bilgi için [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Tür çözümlemesi ve görüntü sorunları giderme  
   

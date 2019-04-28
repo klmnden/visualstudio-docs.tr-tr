@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444175"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama (Eski)
 Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!INCLUDE[wf](../includes/wf-md.md)] uygulamaları oluşturmak eski kullanarak [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] olduğunda, [!INCLUDE[wf2](../includes/wf2-md.md)] uygulamanın gerekir ya da hedeflemek [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!I
      Hata ayıklayıcı bir kesme noktasında durduğunda, hata ayıklama sırasında yeni bir kesme noktası ayarlamak için bu seçeneği'ni de kullanabilirsiniz.  
   
     > [!NOTE]
-    >  Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
+    > Çağrılan iş akışlarında kesme noktaları ayarlama desteklenmiyor.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Hata ayıklama menüsünden Yeni kesme noktası seçeneğini kullanarak bir kesme noktası ayarlamak için  
   
@@ -52,7 +52,7 @@ Kesme noktaları ayarlama hakkında bilgi için bu konuda açıklanmaktadır [!I
 3. Bir etkinlik adını **işlevi** bu söz dizimini kullanarak metin kutusu: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Etkinlik adı yerine isteğe bağlı olarak, **işlevi** metin kutusunda, iş akışı aktivitesi mutlak yolunu belirterek bir kesme noktası ayarlayabilirsiniz. Örneğin, adında bir iş akışı çözümü olduğunu varsayalım **WorkflowConsoleApplication1** ve bir iş akışında adlı çözüm **Workflow1** adlı bir etkinlik kullanan **Delay1**. Etkinlik adı kullanabileceğiniz **Delay1** veya yol olarak belirtmek **Delay1:WorkflowConsoleApplication1.Workflow1** veya **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Etkinlik adı yerine isteğe bağlı olarak, **işlevi** metin kutusunda, iş akışı aktivitesi mutlak yolunu belirterek bir kesme noktası ayarlayabilirsiniz. Örneğin, adında bir iş akışı çözümü olduğunu varsayalım **WorkflowConsoleApplication1** ve bir iş akışında adlı çözüm **Workflow1** adlı bir etkinlik kullanan **Delay1**. Etkinlik adı kullanabileceğiniz **Delay1** veya yol olarak belirtmek **Delay1:WorkflowConsoleApplication1.Workflow1** veya **Delay1:WorkflowConsoleApplication1.Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Seçin **kullanım IntelliSense** işlev adını doğrulamak için onay kutusunu işaretleyin.  
   

@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42b5df2f6d3ff0958784463c5c48d457597945a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443889"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Visual Studio mimari genelleştirilmiş görünümü
   
  Projeleri, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla proje gruplandırmasıdır bir çözümde de toplanan. İlgili çözüme proje ve durum bilgilerini iki çözüm dosyaları, metin tabanlı çözüm (.sln) dosyasını ve ikili çözüm kullanıcı seçeneği (.suo) dosyası depolanır. Bu dosyalar, önceki sürümlerinde kullanılan Grup (.vbg) dosyaları benzer [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], çalışma alanı (.dsw) ve kullanıcı seçeneklerini'nın önceki sürümlerinde kullanılan (.opt) dosyaları [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Daha fazla bilgi için [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions.md).  
+ Daha fazla bilgi için [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Proje ve Öğe Şablonları  
  Visual Studio, önceden tanımlanmış proje şablonları ve proje öğesi şablonları içerir. Ayrıca kendi şablonlarınızı olun veya topluluk şablonlarını almak ve sonra bunları Visual Studio ile tümleştirin. [MSDN Kod Galerisi](https://code.msdn.microsoft.com/site/search?query=visual%20studio) şablonları ve uzantılar için Git yerdir.  
@@ -98,7 +98,7 @@ Visual Studio mimari genelleştirilmiş görünümü
  Şablonlar, Proje yapısı ve belirli bir uygulama, Denetim, kitaplık veya sınıf türünü oluşturmak için gereken temel dosyaları içerir. Şablonlardan birini benzer yazılım geliştirme istediğinizde, şablonu temel alan bir proje oluşturun ve ardından bu projedeki dosyaları değiştirin.  
   
 > [!NOTE]
->  Bu şablonu mimarisi için desteklenmiyor [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projeleri. Nasıl oluşturulacağı hakkında daha fazla bilgi için [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proje şablonları, bkz: [sihirbaz tasarlama](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Bu şablonu mimarisi için desteklenmiyor [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projeleri. Nasıl oluşturulacağı hakkında daha fazla bilgi için [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proje şablonları, bkz: [sihirbaz tasarlama](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Daha fazla bilgi için [ekleme proje ve proje öğesi şablonları](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

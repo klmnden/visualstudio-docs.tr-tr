@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445033"
 ---
 # <a name="how-to-use-the-registers-window"></a>Nasıl yapılır: Yazmaçlar penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değils
  Yazmaçlar ve yazmaçlar penceresi kavramları üst düzey bir giriş için bkz [hata ayıklama temelleri: Yazmaçlar penceresi](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Yazmaçlar penceresini görüntülemek için  
   
@@ -55,7 +55,7 @@ Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değils
      Hata ayıklayıcı, çalışan veya kesme modunda olması gerekir.  
   
     > [!NOTE]
-    >  Betik veya SQL uygulamalar için kayıt bilgileri kullanılamıyor.  
+    > Betik veya SQL uygulamalar için kayıt bilgileri kullanılamıyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklamanın Temelleri: Yazmaçlar penceresi](../debugger/debugging-basics-registers-window.md)   

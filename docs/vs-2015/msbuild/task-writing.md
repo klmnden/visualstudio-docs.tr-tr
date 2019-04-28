@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445396"
 ---
 # <a name="task-writing"></a>Görev Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks dosyasıdır listesini içeren bir proje dosyası `UsingTask` ile sağlanan tüm görevler Kaydet öğeleri [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Bu dosya, her proje oluşturma sırasında otomatik olarak dahil edilir. Microsoft.Common.Tasks içinde kayıtlı bir görevi de geçerli proje dosyasında kayıtlı değilse, geçerli proje dosyası öncelik kazanır; diğer bir deyişle, kendi görevle aynı ada sahip bir varsayılan görev geçersiz kılabilirsiniz.  
   
 > [!TIP]
->  İle sağlanan görevlerinin listesini görebilirsiniz [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks içeriğini görüntüleyerek.  
+> İle sağlanan görevlerinin listesini görebilirsiniz [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks içeriğini görüntüleyerek.  
   
 ## <a name="raising-events-from-a-task"></a>Bir görevden olaylar oluşturma  
  Göreviniz türetildiği varsa <xref:Microsoft.Build.Utilities.Task> yardımcı sınıf kullanabileceğiniz aşağıdaki yardımcı yöntemlerinden herhangi birini üzerinde <xref:Microsoft.Build.Utilities.Task> yakalandı ve herhangi kayıtlı günlükçüleri tarafından görüntülenen olay için sınıf:  

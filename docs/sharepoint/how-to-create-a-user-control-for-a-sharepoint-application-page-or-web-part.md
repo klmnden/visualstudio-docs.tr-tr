@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446514"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Nasıl yapılır: Bir SharePoint uygulama sayfası veya web bölümü için bir kullanıcı denetimi oluşturma
   SharePoint çözümünüz için özel işlevler sağlayan özel kullanıcı denetimi oluşturabilir ve projenize içinde bu işlevi kullanabilirsiniz. Bir web bölümü veya uygulamadaki kullanıcı denetimleri dahil edebileceğiniz sayfasında, diğer ASP.NET denetimleri ve SharePoint denetimleri ekleyin ve denetimi için özellikleri ve yöntemleri tanımlar. Kullanıcı denetimleri hakkında daha fazla bilgi için bkz: [web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) ve [kullanıcı denetimleri ve SharePoint Server denetimlerinde](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -40,7 +40,7 @@ ms.locfileid: "60072051"
 5. SharePoint şablonları listesinde seçin **kullanıcı denetimi (yalnızca Grup çözümü)**.
 
     > [!NOTE]
-    >  Kullanıcı denetimleri, yalnızca Grup çözümlerinde çalışır.
+    > Kullanıcı denetimleri, yalnızca Grup çözümlerinde çalışır.
 
 6. İçinde **adı** kutusunda, kullanıcı denetimi için bir ad belirtin ve ardından **Ekle** düğmesi.
 

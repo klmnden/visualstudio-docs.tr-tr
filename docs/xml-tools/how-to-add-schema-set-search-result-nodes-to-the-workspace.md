@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5ba709e90de580aacda2034eca319a419583dac0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783696"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Nasıl yapılır: Şema kümesi arama sonucu düğümlerini çalışma alanına ekleme
 
@@ -26,15 +26,15 @@ Bu konu içinde vurgulanmıştır düğümlerini ekleme işlemi açıklanmaktad�
 
 ## <a name="to-add-schema-set-result-nodes"></a>Şema kümesi sonucu düğümlerini eklemek için
 
-1.  Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  "PurchaseOrder" yazın arama metin kutusuna [XML Gezgini](../xml-tools/xml-schema-explorer.md) araç çubuğu ve Ara düğmesine tıklayın.
+2. "PurchaseOrder" yazın arama metin kutusuna [XML Gezgini](../xml-tools/xml-schema-explorer.md) araç çubuğu ve Ara düğmesine tıklayın.
 
      ![XML şema Gezgini anahtar sözcük arama](../xml-tools/media/schemaexplorersearch.gif)
 
      İçindeki arama sonuçlarında vurgulanır **XML Şeması Gezgini** ve dikey kaydırma çubuğu üzerinde işaretleri olarak işaretlendi.
 
-3.  Arama sonuçlarını tıklayarak çalışma alanına ekleme **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine.
+3. Arama sonuçlarını tıklayarak çalışma alanına ekleme **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine.
 
      ![XML şema Gezgini arama sonucu](../xml-tools/media/schemaexplorersearchresult.gif)
 

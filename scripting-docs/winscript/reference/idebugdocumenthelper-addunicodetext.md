@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e47934dd8aa2cea7a89f6e2ca0ff777227eba745
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58144959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446620"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
 Bir Unicode dize bu belgenin sonuna ekler.  
@@ -51,7 +51,7 @@ HRESULT AddUnicodeText(
  Bu yöntem oluşturur `IDebugDocumentTextEvents` bildirimleri.  
   
 > [!NOTE]
->  Sonra bu yöntemi çağrılırsa `AddDeferredText` çağrıldı, `E_FAIL` döndürülür.  
+> Sonra bu yöntemi çağrılırsa `AddDeferredText` çağrıldı, `E_FAIL` döndürülür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   

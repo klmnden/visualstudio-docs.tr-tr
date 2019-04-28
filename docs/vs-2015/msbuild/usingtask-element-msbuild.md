@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445645"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask Öğesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Başvurulduğundan görev eşleyen bir [görev](../msbuild/task-element-msbuild.
  Ortam değişkenleri, komut satırı özelliklerini ve proje düzeyi özellikleri herhangi bir yerde başvurulabilir `UsingTask` proje dosyasında açıkça ya da bir içeri aktarılan proje dosyası üzerinden görünürse öğesi. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
->  Proje düzeyi özellikleri varsa hiçbir anlamı `UsingTask` öğesi genel olarak MSBuild altyapı kayıtlı .tasks dosyaları birinden geliyor. Proje düzeyi özellikleri MSBuild'e genel değil.  
+> Proje düzeyi özellikleri varsa hiçbir anlamı `UsingTask` öğesi genel olarak MSBuild altyapı kayıtlı .tasks dosyaları birinden geliyor. Proje düzeyi özellikleri MSBuild'e genel değil.  
   
  MSBuild 4. 0'da, görevleri kullanarak .overridetask dosyalarından yüklenebilir.  
   

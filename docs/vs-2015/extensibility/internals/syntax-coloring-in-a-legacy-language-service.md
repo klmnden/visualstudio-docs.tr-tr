@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441265"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103582"
 Basit Renklendirici modeli  
   
 > [!NOTE]
->  Söz dizimi renklendirme hizmeti genel ayrı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] metin renklendirmesi mekanizma. Genel hakkında daha fazla bilgi için [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] renklendirme, destekleyici mekanizması bkz [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).  
+> Söz dizimi renklendirme hizmeti genel ayrı [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] metin renklendirmesi mekanizma. Genel hakkında daha fazla bilgi için [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] renklendirme, destekleyici mekanizması bkz [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).  
   
  Renklendirici yanı sıra özel renklendirilebilir öğeler sağlayan advertising tarafından düzenleyici tarafından kullanılan özel renklendirilebilir öğeler dil hizmeti sağlayabilirsiniz. Bunu uygulayarak yapabilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> arabirimi uygulayan aynı nesne üzerinde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> arabirimi. Düzenleyici çağırdığında, özel renklendirilebilir öğeler sayısını döndürür. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> Yöntemi Düzenleyicisi çağırdığında, ayrı bir özel renklendirilebilir öğe döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> yöntemi.  
   
@@ -51,7 +51,7 @@ Basit Renklendirici modeli
 2. VSPackage'ı şimdi alabilir ve Renklendirici nesnesini şu şekilde kullanın:  
   
     > [!NOTE]
-    >  Çekirdek Düzenleyicisi'ni VSPackage'ları, bir dil hizmetin Renklendirici nesneleri açıkça almak sahip değilsiniz. Çekirdek Düzenleyici örneği uygun dil hizmeti edinir hemen sonra burada gösterilen tüm renklendirme görevleri gerçekleştirir.  
+    > Çekirdek Düzenleyicisi'ni VSPackage'ları, bir dil hizmetin Renklendirici nesneleri açıkça almak sahip değilsiniz. Çekirdek Düzenleyici örneği uygun dil hizmeti edinir hemen sonra burada gösterilen tüm renklendirme görevleri gerçekleştirir.  
   
     1. Uygulayan dil hizmetin Renklendirici nesnesi elde `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> çağırarak arabirimleri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> dil hizmetin metodunda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> nesne.  
   
@@ -62,13 +62,13 @@ Basit Renklendirici modeli
     3. Tarafından döndürülen renklendirme bilgileri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> seçili metni görüntülemek için yöntemi.  
   
 > [!NOTE]
->  Dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage'ı da genel amaçlı kullanabilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mekanizması renklendirme metin. Bu mekanizması hakkında daha fazla bilgi için bkz. [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).  
+> Dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage'ı da genel amaçlı kullanabilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mekanizması renklendirme metin. Bu mekanizması hakkında daha fazla bilgi için bkz. [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Söz Dizimi Renklendirmesi Uygulama](../../extensibility/internals/implementing-syntax-coloring.md)  
  Bir düzenleyici bir dil hizmetin söz dizimi renklendirme ve dil hizmeti gerekir sözdizimini desteklemek üzere uygulama renklendirme nasıl eriştiğini açıklanır.  
   
- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeler Kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Dil hizmeti yerleşik renklendirilebilir öğeleri kullanma işlemini gösterir.  
   
  [Özel Renklendirilebilir Öğeler](../../extensibility/internals/custom-colorable-items.md)  

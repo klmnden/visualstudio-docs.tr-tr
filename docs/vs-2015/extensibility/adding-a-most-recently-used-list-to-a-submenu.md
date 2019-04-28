@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444870"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Bir Alt Menüye Son Kullanılanlar Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensib
 2. Üzerinde **TestMenu** menüsünde tıklatın **çağırma TestCommand**. Bunun yapılması, komut seçilmiş olduğunu belirten bir ileti kutusu görüntüler.  
   
     > [!NOTE]
-    >  VSPackage'ı yüklemek ve doğru şekilde MRU listesi görüntülemek için zorlamak için bu adım gereklidir. Bu adımı atlarsanız MRU listesi görüntülenmez.  
+    > VSPackage'ı yüklemek ve doğru şekilde MRU listesi görüntülemek için zorlamak için bu adım gereklidir. Bu adımı atlarsanız MRU listesi görüntülenmez.  
   
 3. Üzerinde **Test menüsü** menüsünde tıklatın **alt menü**. Dört öğe listesini bir ayırıcı aşağıdaki alt sonunda görüntülenir. Tıkladığınızda **madde 3**, bir ileti kutusu görünür ve "Seçili öğesi 3" metni görüntüler. (Dört öğe listesini görüntülenmiyorsa, önceki adımda'ndaki yönergeleri izlediğinizden emin olun.)  
   

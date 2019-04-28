@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446763"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir yönerge işlemcisine ana bilgisayar bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
  Yönerge işlemcileri çağıran metin şablonlarını destekler, böylece bu kılavuzda, özel bir ana bilgisayar genişletin. Bu, bir etki alanına özgü dil tanımladığınızda, oluşturur bir *yönerge işlemcisi* için etki alanı modeli. Yönerge işlemcisini bütünleştirilmiş kod yazma ve içeri aktarma yönergeleri şablonlarındaki gereksinimini azaltır modeline erişim şablonları yazmak kullanıcılar için kolaylaştırır.  
   
 > [!WARNING]
->  Bu izlenecek yolda yapılar [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol önce gerçekleştirin.  
+> Bu izlenecek yolda yapılar [izlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md). Bu izlenecek yol önce gerçekleştirin.  
   
  Bu izlenecek yol aşağıdaki görevleri içerir:  
   
@@ -68,7 +68,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
 2. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
    > [!IMPORTANT]
-   >  Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.  
+   > Bu adım, yönerge işlemcisi oluşturur ve anahtar için bunu kayıt defterine ekler.  
   
 3. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
@@ -120,7 +120,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
 5. Bir özellik için kodu bulun `StandardAssemblyReferences`, aşağıdaki kodla değiştirin:  
   
     > [!NOTE]
-    >  Bu adımda, ana destekleyecek oluşturulan yönerge işlemcisi tarafından gerekli derlemelere başvurular ekleyin.  
+    > Bu adımda, ana destekleyecek oluşturulan yönerge işlemcisi tarafından gerekli derlemelere başvurular ekleyin.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
 6. İşlev kodunu bulun `ResolveDirectiveProcessor`, aşağıdaki kodla değiştirin:  
   
     > [!IMPORTANT]
-    >  Bu kod, bağlanmak istediğiniz üretilen bir yönerge işlemcisine adını sabit kodlanmış başvurular içerir. Kolayca bu daha genel yapabileceğiniz, kayıt defterinde listelenen tüm yönerge işlemcileri için bu durumda görünüyor ve bir eşleşme bulmayı dener. Bu durumda, konak ile üretilen bir yönerge işlemcisine işe yarar.  
+    > Bu kod, bağlanmak istediğiniz üretilen bir yönerge işlemcisine adını sabit kodlanmış başvurular içerir. Kolayca bu daha genel yapabileceğiniz, kayıt defterinde listelenen tüm yönerge işlemcileri için bu durumda görünüyor ve bir eşleşme bulmayı dener. Bu durumda, konak ile üretilen bir yönerge işlemcisine işe yarar.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
 2. Aşağıdakileri metin dosyasına ekleyin:  
   
     > [!NOTE]
-    >  Metin şablonunun programlama diline özel ana bilgisayarı eşleşmesi gerekmez.  
+    > Metin şablonunun programlama diline özel ana bilgisayarı eşleşmesi gerekmez.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer**ve ardından da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
+    > Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer**ve ardından da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
   
 3. Bir boşluk yazın.  
   
@@ -336,7 +336,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Adresi yazmak yerine TestTemplateWithDP.txt dosyasına göz atabilir, **Windows Explorer**ve ardından da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
+    > Adresi yazmak yerine TestTemplateWithDP.txt dosyasına göz atabilir, **Windows Explorer**ve ardından da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
   
      Özel ana bilgisayar uygulaması çalışır ve metin şablonu dönüştürme süreci başlar.  
   

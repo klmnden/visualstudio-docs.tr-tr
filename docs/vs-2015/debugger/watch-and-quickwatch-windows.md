@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444233"
 ---
 # <a name="watch-and-quickwatch-windows"></a>İzleme ve QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, bu değişken kapsam dışına geçti sonra bir yerel değişkeni tarafından başvurulan nesne izlemek isteyebilirsiniz. C# ve Visual Basic nesne kimlikleri belirli örneklerini başvuru türleri için oluşturabilir ve bunları İzleme penceresinde ve kesme noktası koşulları kullanın. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  
   
 > [!NOTE]
->  Nesne kimlikleri, zayıf başvuru oluşturmak ve nesnenin çöp olarak toplanacak yüklenmesini engellemez. Bunlar, yalnızca geçerli hata ayıklama oturumu için geçerli olur.  
+> Nesne kimlikleri, zayıf başvuru oluşturmak ve nesnenin çöp olarak toplanacak yüklenmesini engellemez. Bunlar, yalnızca geçerli hata ayıklama oturumu için geçerli olur.  
   
  Aşağıdaki kodda bir yöntem oluşturur bir `Person` ne yaptığını öğrenmek yerel bir değişken, ancak kullanarak istediğiniz `Person`ait farklı bir yöntemde adıdır:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Hata ayıklamaya devam et ve yürütme durduğunda `DoSomething()` yöntemi **Watch** pencere görüntüler `Person` nesne.  
   
 > [!NOTE]
->  Nesnenin özellikleri gibi görmek istiyorsanız `Person.Name` yukarıdaki örnekte, özellik değerlendirmesini etkinleştirmiş olmanız gerekir.  
+> Nesnenin özellikleri gibi görmek istiyorsanız `Person.Name` yukarıdaki örnekte, özellik değerlendirmesini etkinleştirmiş olmanız gerekir.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Kayıtları kullanarak izleme penceresinde (yalnızca C++)  
  Yerel kod hata ayıklaması yapıyorsanız, değişken adları kullanarak yanı sıra yazmaç adlarını ekleyebilirsiniz  **$ \<adını kaydetmek >** veya  **@ \<adını kaydetmek >**.  Daha fazla bilgi için [sözde değişken](../debugger/pseudovariables.md).  

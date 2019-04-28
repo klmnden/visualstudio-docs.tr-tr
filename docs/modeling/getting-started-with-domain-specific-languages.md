@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442370"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Alana Özgü Dilleri Kullanmaya Başlama
 
@@ -294,7 +294,7 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
          Örneğin, adını ayarlayın **belediye**.
 
         > [!NOTE]
-        >  Gömme hedefi bir sınıftan devralmalıdır veya en az bir gömme ilişkisi hedef modelin kökü dışındaki her etki alanı sınıfı olmalıdır. Bu nedenle, sık gömme ilişkisi aracını kullanarak bir etki alanı sınıfı oluşturmak uygun.
+        > Gömme hedefi bir sınıftan devralmalıdır veya en az bir gömme ilişkisi hedef modelin kökü dışındaki her etki alanı sınıfı olmalıdır. Bu nedenle, sık gömme ilişkisi aracını kullanarak bir etki alanı sınıfı oluşturmak uygun.
 
     2. Yeni sınıfa, bir alan özelliği ekleyin, örneğin **adı**.
 
@@ -305,7 +305,7 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
          ![DSL tanımının parçası: ailesi Ağaç kökü](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Başvuru ilişkilerini çapraz model ağacına bir bölümünden diğerine temsil eder.
+        > Başvuru ilişkilerini çapraz model ağacına bir bölümünden diğerine temsil eder.
 
 3. Model diyagramlarda kasabalarında şubeleri temsil etmek için bir şekil ekleyin.
 

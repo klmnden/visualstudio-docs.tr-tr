@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446082"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Yüklendikten sonra uzaktan hata ayıklayıcı hedef makinede çalıştığında
 1. ASP.NET proje dizini Visual Studio bilgisayarı yerel bir dizine kopyalayın (hangi sizi ararız **C:\Publish**) Windows Server bilgisayarında. Projeyi el ile kopyalayın, Xcopy, Web dağıtımı, Robocopy, Powershell veya diğer seçenekleri kullanın.
 
     > [!CAUTION]
-    >  Kod veya yeniden oluşturma için değişiklikler yapmanız gerekirse yeniden yayımlamanız ve bu adımı yineleyin. Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.
+    > Kod veya yeniden oluşturma için değişiklikler yapmanız gerekirse yeniden yayımlamanız ve bu adımı yineleyin. Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.
 1. Web.config dosyasının doğru sürümü .NET Framework'ün gösterdiğinden emin olun.  Örneğin, Windows Server 2008 R2 üzerinde varsayılan olarak yüklü .NET Framework sürüm 4.0.30319 ancak bir ASP.NET 4.5.2 oluşturduğumuz sürümü. Windows Server bilgisayarında ASP.NET 4.0 uygulama çalışıyorsa, sürümü değiştirmek gerekir:
   
     ```xml

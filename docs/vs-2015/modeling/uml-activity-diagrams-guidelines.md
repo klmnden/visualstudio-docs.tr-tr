@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439733"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML etkinlik diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
      Diyagram üzerinde ana etkinlikleri yerleştirme, bağlamayı ve sonra Son dokunuşları gibi ilk ve son düğümleri ekleyerek başlayın.  
   
     > [!NOTE]
-    >  UML Model Gezgini'nden varolan öğeleri diyagram üzerine tasarıcıya sürükleyemezsiniz.  
+    > UML Model Gezgini'nden varolan öğeleri diyagram üzerine tasarıcıya sürükleyemezsiniz.  
   
 2. Öğeleri bağlamak için şu adımları izleyin:  
   
@@ -87,7 +87,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
     3. Hedef öğeye tıklayın.  
   
         > [!NOTE]
-        >  Birden çok kez bir aracı kullanmak için araç kutusunda araca çift tıklayın.  
+        > Birden çok kez bir aracı kullanmak için araç kutusunda araca çift tıklayın.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Bir etkinlik başka bir pakete taşımak için  
   
@@ -98,7 +98,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 - İçinde **UML Model Gezgini**, etkinliğe sağ tıklayın ve tıklayın **Kes**. Ardından, pakete sağ tıklayın ve tıklayın **Yapıştır**.  
   
     > [!NOTE]
-    >  Etkinlik, UML Model Gezgini'nde görünecektir yalnızca ilk öğeyi diyagrama eklerken.  
+    > Etkinlik, UML Model Gezgini'nde görünecektir yalnızca ilk öğeyi diyagrama eklerken.  
   
 ## <a name="SimpleControlFlow"></a> Denetim akışı açıklayan  
  Etkinlik diyagramı bir dizi eylem bir iş işlem veya yazılım algoritması açıklar. Bağlayıcı oklar nasıl denetim sırayla bir eylemden geçtiğini gösterir. Normalde, yalnızca önceki eylemi tamamlandıktan sonra eylemin başlayabilirsiniz.  
@@ -112,7 +112,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 - Oluşturma bir **eylem** (1) için bir kullanıcı, sistem veya işbirliği içinde her ikisi tarafından gerçekleştirilen her ana görev.  
   
   > [!NOTE]
-  >  İşlem veya yalnızca birkaç eylemleri algoritmasıyla açıklamaya çalışın. Kullanabileceğiniz **çağrı davranış eylemleri** açıklandığı gibi daha ayrıntılı olarak ayrı bir diyagramda her bir eylemin tanımlamak için [çağrı davranış eylemleri alt etkinliklerle açıklayan](#Subactivities).  
+  > İşlem veya yalnızca birkaç eylemleri algoritmasıyla açıklamaya çalışın. Kullanabileceğiniz **çağrı davranış eylemleri** açıklandığı gibi daha ayrıntılı olarak ayrı bir diyagramda her bir eylemin tanımlamak için [çağrı davranış eylemleri alt etkinliklerle açıklayan](#Subactivities).  
   
 - Genellikle neyi hedeflediğini her eylemin başlık açıkça belirttiğinden emin olun.  
   
@@ -133,12 +133,12 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 - Kullanım bir **birleştirme düğümünü** , dallandırılmış iki veya daha fazla alternatif akışlar bir araya getirmek için (5) bir **karar düğümünde**.  
   
     > [!NOTE]
-    >  Kullanmanız gereken bir **birleştirme düğümünü** akışlar bir eylemde bir araya getirmek yerine alternatif akışlar, bir araya getirmek için. Örnekte, bu kararı düğümünden bağlanmak doğru olmaz doğrudan tekrar **seçin menü öğesi**. Bu durum, tüm gelen bağlayıcılar denetimin iş parçacıklarını gelmiş kadar bir eylem başlatılamıyor çünkü. Bu nedenle, eşzamanlı akışlar yalnızca bir eylemde birlikte getirmelisiniz. Daha fazla bilgi için [eşzamanlı akışlar](#Concurrent).  
+    > Kullanmanız gereken bir **birleştirme düğümünü** akışlar bir eylemde bir araya getirmek yerine alternatif akışlar, bir araya getirmek için. Örnekte, bu kararı düğümünden bağlanmak doğru olmaz doğrudan tekrar **seçin menü öğesi**. Bu durum, tüm gelen bağlayıcılar denetimin iş parçacıklarını gelmiş kadar bir eylem başlatılamıyor çünkü. Bu nedenle, eşzamanlı akışlar yalnızca bir eylemde birlikte getirmelisiniz. Daha fazla bilgi için [eşzamanlı akışlar](#Concurrent).  
   
 - Dallar, örnekte gösterildiği gibi döngüleri açıklamak için kullanın.  
   
     > [!NOTE]
-    >  Program kodunda yaptığınız gibi döngüler iyi yapılandırılmış bir biçimde iç içe deneyin. Mevcut bir iş sürecini tanımlar, bu geliştirecek bazı fırsatları açığa çıkarabilir.  
+    > Program kodunda yaptığınız gibi döngüler iyi yapılandırılmış bir biçimde iç içe deneyin. Mevcut bir iş sürecini tanımlar, bu geliştirecek bazı fırsatları açığa çıkarabilir.  
   
 ### <a name="starting-the-activity"></a>Etkinlik Başlangıç  
  İçinde bir etkinlik giriş noktaları göstermenin iki yolu vardır:  
@@ -182,7 +182,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 - Kullanım bir **çıkış PIN** ve **PIN girişi**. Bu yöntem, ayrı ayrı bir eylem ve başka bir girişleri çıkışları açıklamak sağlar. PIN, programdaki parametreler gibidir. PIN burada nesneleri girin ve bir eylem bırakın bağlantı noktalarını gösterir.  
   
     > [!NOTE]
-    >  Bu bölümde kullanılan öğelere genel bakış için bkz. veri akışları konunun bölümüne bakın [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md).  
+    > Bu bölümde kullanılan öğelere genel bakış için bkz. veri akışları konunun bölümüne bakın [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Nesne düğümleri ile veri akışını açıklama  
  Çoğu denetim akışları veri taşır. Örneğin, "Müşteri ayrıntıları sağlar" eylem çıkış akışından teslimat adresini başvuru yapar.  
@@ -198,7 +198,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
  Ayarlayabileceğiniz **türü** Özellikler penceresindeki nesne düğümünün. Tür, tamsayı veya sınıf, arabirim veya tanımladığınız bir sınıf diyagramında sabit listesi'gibi basit bir tür olabilir. Örneğin, bir sınıf sevkiyat adresi sokak adresi, şehir ve müşteri adlı başka bir sınıf için bir ilişkilendirme birlikte öznitelikleriyle oluşturabilirsiniz. Daha fazla bilgi için [UML Class Diagrams: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Altında henüz tanımlanmadı bir türün adını yazarsanız, öğeyi eklenecek **belirtilmemiş türler** UML Model Gezgini'nde. Bir sınıf diyagramında bir tür adı daha sonra tanımlarsanız, böylece yeni türe başvurur nesne düğümü türü sıfırlamalısınız.  
+> Altında henüz tanımlanmadı bir türün adını yazarsanız, öğeyi eklenecek **belirtilmemiş türler** UML Model Gezgini'nde. Bir sınıf diyagramında bir tür adı daha sonra tanımlarsanız, böylece yeni türe başvurur nesne düğümü türü sıfırlamalısınız.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Nesne düğümleri veri arabelleğe alma  
  Bir nesne düğümü birden çok nesne için bir arabellek olarak çalışabilir. Aşağıdaki çizimde, bir kullanıcının gidebileceği denetim akışı gösterilmektedir. [daha fazla seçin] (1) çoğu zaman, seçili menü öğeleri nesne düğümü (2) kullanıcının seçimlerini toplarken döngü. Son olarak, kullanıcının kendi seçimi tamamlandığında Denetim seçenekleri seçili menü öğeleri arabellekteki tam listesini kabul eden siparişi onayla eylemi (3) geçirir.  
@@ -265,7 +265,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 4. Ayarlama **davranışı** özelliği **Davranış Eylemi Çağırma** çağrılan davranış diyagrama başvurmak için.  
   
     > [!NOTE]
-    >  Alt etkinlik diyagramı üzerinde bazı öğelere sahip olmalıdır veya diyagram için aşağı açılan listesinde kullanılabilir olmayacak **davranışı** özelliği. Ayrıca, trident simgesi görünmez, **Davranış Eylemi Çağırma** ayarladığınız kadar şekil kendi **davranışı** özelliği.  
+    > Alt etkinlik diyagramı üzerinde bazı öğelere sahip olmalıdır veya diyagram için aşağı açılan listesinde kullanılabilir olmayacak **davranışı** özelliği. Ayrıca, trident simgesi görünmez, **Davranış Eylemi Çağırma** ayarladığınız kadar şekil kendi **davranışı** özelliği.  
   
 5. Ayarlama **olduğu zaman uyumlu** özelliği eylemin, çağrılan bir etkinliğin tamamlanmasını bekleyip beklemediğini belirtin.  
   
@@ -279,7 +279,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
 - Alt etkinlik diyagramında oluşturma bir **etkinlik parametre düğümü** (2) için her giriş ve çıkış PIN çağıran eylem. Her düğüm, karşılık gelen PIN aynı adı verin.  
   
   > [!NOTE]
-  >  Bir etkinlik parametre düğümü bir nesne düğümü benzer. Aradığınız düğüm türünü denetlemek için düğümüne sağ tıklayın ve ardından **özellikleri**. Düğüm türü, Özellikler penceresinde üst bilgisinde gösterilir.  
+  > Bir etkinlik parametre düğümü bir nesne düğümü benzer. Aradığınız düğüm türünü denetlemek için düğümüne sağ tıklayın ve ardından **özellikleri**. Düğüm türü, Özellikler penceresinde üst bilgisinde gösterilir.  
   
 - Alt etkinlik diyagramında içine veya dışına her etkinlik parametresi düğüm nesneleri akışını göstermek bağlayıcıları çizin.  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446601"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>İzlenecek yol: Bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma
   Bu kılavuzda SharePoint Designer 2010 içinde oluşturulan bir yeniden kullanılabilir iş akışını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint iş akışı projesi.
@@ -124,7 +124,7 @@ ms.locfileid: "60053942"
  Çünkü [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] yalnızca içeri aktarabilirsiniz *.wsp* dosyaları, yeniden kullanılabilir iş akışı olarak kaydetmelisiniz bir *.wsp* dosya ve içine aktarmadan önce SharePoint'e dağıtmanıza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 > [!IMPORTANT]
->  Aşağıdaki yordamı gerçekleştirmeden bir çalışma zamanı hatası alırsanız, SharePoint sitesine erişimi olan bir sisteme yordamı uygulamak zorunda.
+> Aşağıdaki yordamı gerçekleştirmeden bir çalışma zamanı hatası alırsanız, SharePoint sitesine erişimi olan bir sisteme yordamı uygulamak zorunda.
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Yeniden kullanılabilir iş akışını kaydetmek ve dağıtmak için
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053942"
 6. İçinde **yeni proje kaynağını belirtin** sayfasında, daha önce kaydettiğiniz konuma gidin sistem üzerindeki *.wsp* dosya, dosyayı açın ve ardından **sonraki** düğmesi.
 
    > [!NOTE]
-   >  Seçin **son** içindeki kullanılabilir tüm öğeleri içe aktarmak için düğmeyi *.wsp* dosya.
+   > Seçin **son** içindeki kullanılabilir tüm öğeleri içe aktarmak için düğmeyi *.wsp* dosya.
 
     Bu, yeniden kullanılabilir iş akışlarını içeri aktarma için kullanılabilir bir listesini görüntüler.
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053942"
 12. İçinde **yeni bir iş akışının başlatılacağı** bölümünde, için bağlantıyı seçin **SPD iş akışı Test**ve ardından **Başlat** iş akışını başlatmak için düğmeye.
 
     > [!NOTE]
-    >  Alternatif olarak, otomatik-bir iş akışı içeren bir liste iş akışı ayarları sihirbazını çalıştırma ve otomatik ilişkilendirilmesine yönelik iş akışı ayarlayarak ilişkilendirme.
+    > Alternatif olarak, otomatik-bir iş akışı içeren bir liste iş akışı ayarları sihirbazını çalıştırma ve otomatik ilişkilendirilmesine yönelik iş akışı ayarlayarak ilişkilendirme.
 
      İki eylem iş akışı tarafından gerçekleştirilen dikkat edin: görevin içinde göründüğü adınız **atanmış** sütun ve duyuru görünür **duyuruları** listesi.
 
