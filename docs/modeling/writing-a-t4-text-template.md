@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386076"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 Metin Şablonu Yazma
 Bir metin şablonu, ondan oluşturulan metni içerir. Örneğin, bir web sayfası oluşturan bir şablonu içerir "\<html >..." ve tüm diğer standart bölümlerini bir HTML sayfası. Şablona eklenmiş olan *denetim blokları*, program kodu parçalarını olduğu. Denetim blokları, değişken değerlerini sağlayın ve bölümlerini koşullu ve tekrarlanan olmasını sağlar.
@@ -94,7 +94,7 @@ Hello!
  Bir metin ekleyebilirsiniz yerde engelleyecek bir `Write();` deyimine kodda izin.
 
 > [!NOTE]
->  Bir metin bloğu veya koşullu bir döngü gibi bileşik deyim içinde eklediğinizde, her zaman küme ayraçları {…} kullanın metin bloğu içerecek şekilde.
+> Bir metin bloğu veya koşullu bir döngü gibi bileşik deyim içinde eklediğinizde, her zaman küme ayraçları {…} kullanın metin bloğu içerecek şekilde.
 
 ### <a name="expression-control-blocks"></a>İfade denetim blokları
  Bir ifade denetim bloğu bir ifadeyi değerlendirir ve bir dizeye dönüştürür. Bu çıktı dosyasına eklenir.

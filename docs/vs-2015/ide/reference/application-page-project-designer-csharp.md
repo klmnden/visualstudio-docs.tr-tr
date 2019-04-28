@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c1c463e95ab81c0331b12aaea692afe7005eff9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437250"
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
  Varsayılan olarak, seçtiğiniz hedef Framework'ü aynı değerdir **yeni proje** iletişim kutusu.  
   
 > [!NOTE]
->  Listelenen önkoşul paketleri [Önkoşullar iletişim kutusu](../../ide/reference/prerequisites-dialog-box.md) iletişim kutusunu ilk açışınızda otomatik olarak ayarlanır. Projenin hedef çerçevesi daha sonra değiştirirseniz, yeni hedef Framework'ü el ile eşleştirmek için önkoşulları seçmeniz gerekecektir.  
+> Listelenen önkoşul paketleri [Önkoşullar iletişim kutusu](../../ide/reference/prerequisites-dialog-box.md) iletişim kutusunu ilk açışınızda otomatik olarak ayarlanır. Projenin hedef çerçevesi daha sonra değiştirirseniz, yeni hedef Framework'ü el ile eşleştirmek için önkoşulları seçmeniz gerekecektir.  
   
  Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) ve [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -62,7 +62,7 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
  Belirtirseniz **WinMD dosyası** seçenek türleri tüm Windows programlama dilini çalışma zamanına öngörülen. Proje bir WinMD dosyası olarak çıkış paketleme tarafından uygulamanın birden çok dilde kod ve kodu yazdığınız gibi birlikte çalışmak tümü aynı dilde. Windows çalışma zamanı kitaplıkları dahil olmak üzere, hedef çözümleri için bu seçeneği belirtebilirsiniz [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] uygulamalar. Daha fazla bilgi için [C# ve Visual Basic'te Windows çalışma zamanı bileşenleri oluşturma](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Windows çalışma zamanı türleri, böylece bunları hangi dil kullanır yerel nesneler olarak görünürler yansıtabilirsiniz. Örneğin, isteğe bağlı olarak, Windows çalışma zamanı ile etkileşim JavaScript uygulamaları JavaScript nesneleri bir dizi kullanın ve C# uygulamaları kitaplığı bir .NET nesneleri koleksiyon olarak kullanın. Projenin çıkış bir WinMD dosyası olarak paketleyerek Windows çalışma zamanı kullanan aynı teknolojiyi yararlanabilir.  
+> Windows çalışma zamanı türleri, böylece bunları hangi dil kullanır yerel nesneler olarak görünürler yansıtabilirsiniz. Örneğin, isteğe bağlı olarak, Windows çalışma zamanı ile etkileşim JavaScript uygulamaları JavaScript nesneleri bir dizi kullanın ve C# uygulamaları kitaplığı bir .NET nesneleri koleksiyon olarak kullanın. Projenin çıkış bir WinMD dosyası olarak paketleyerek Windows çalışma zamanı kullanan aynı teknolojiyi yararlanabilir.  
   
  Hakkında daha fazla bilgi için **uygulama türü** özelliğine bakın [/target (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

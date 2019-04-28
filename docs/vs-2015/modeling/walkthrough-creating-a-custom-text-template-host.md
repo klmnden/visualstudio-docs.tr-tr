@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446737"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Ana Bilgisayarı Oluşturma.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştü
  Kullanmak istiyorsanız özel bir ana bilgisayar yazabilirsiniz *metin şablonu dönüştürme* işlevi dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya bu işlevi özel araçlarla tümleştirmek istiyorsanız. Özel bir ana bilgisayar oluşturmak için devralınan bir sınıf oluşturmanız gerekir <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Her bir yöntem için belgelere bakın <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Yazıyorsanız bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı veya paketi, kendi bilgisayarınızı oluşturmak yerine metin şablonu oluşturma hizmetini kullanmayı düşünün. Daha fazla bilgi için [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Yazıyorsanız bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı veya paketi, kendi bilgisayarınızı oluşturmak yerine metin şablonu oluşturma hizmetini kullanmayı düşünün. Daha fazla bilgi için [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
@@ -732,7 +732,7 @@ A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştü
 2. Aşağıdakileri dosyaya ekleyin:  
   
     > [!NOTE]
-    >  Metin şablonunun programlama dilinin, özel ana bilgisayarınkiyle eşleşmesi gerekmez.  
+    > Metin şablonunun programlama dilinin, özel ana bilgisayarınkiyle eşleşmesi gerekmez.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştü
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
+    > Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
   
 3. Bir boşluk yazın.  
   
@@ -796,7 +796,7 @@ A *metin şablonu*<em>konak</em> bir ortam sağlayan *metin şablonu dönüştü
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Adresi yazmak yerine, TestTemplate.tt dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
+    > Adresi yazmak yerine, TestTemplate.tt dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
   
      Özel ana bilgisayar uygulaması çalışır ve metin şablonu dönüştürme işlemini tamamlar.  
   

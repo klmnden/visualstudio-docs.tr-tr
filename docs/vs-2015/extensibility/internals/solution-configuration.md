@@ -10,12 +10,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432086"
 ---
 # <a name="solution-configuration"></a>Çözüm Yapılandırması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "54781418"
  Standart Visual Studio araç Başlat düğmesi ve aşağı açılan Başlat düğmesinin sağında bir çözüm yapılandırması içerir. Bu liste, F5 tuşuna basıldığında başlatılması için yapılandırmayı seçin, kendi çözüm yapılandırmaları oluşturmak veya mevcut bir yapılandırmayı düzenlemek kullanıcıların sağlar.  
   
 > [!NOTE]
->  Oluşturma veya düzenleme çözüm yapılandırmaları hiçbir genişletilebilirlik arabirimleri vardır. Kullanmalısınız `DTE.SolutionBuilder`. Ancak, çözüm derlemesi yönetmek için genişletilebilirlik API'leri vardır. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Oluşturma veya düzenleme çözüm yapılandırmaları hiçbir genişletilebilirlik arabirimleri vardır. Kullanmalısınız `DTE.SolutionBuilder`. Ancak, çözüm derlemesi yönetmek için genişletilebilirlik API'leri vardır. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
  Proje türü tarafından desteklenen çözüm yapılandırmaları nasıl uygulayacağınıza dair aşağıda verilmiştir:  
   
-- Proje  
+- Project  
   
    Geçerli çözümde bulunan projelerinin adlarını görüntüler.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54781418"
   
    Proje platformlarını desteklemiyor, bu proje için platform sütun yok görüntüler ve devre dışı bırakıldı.  
   
-- Derleme  
+- Yapı  
   
    Projenin geçerli çözüm yapılandırması tarafından oluşturulmuş olup olmadığını belirtir. Çözüm düzeyinde derleme komutları içerdikleri proje bağımlılıkları rağmen çağrıldığında seçili olmayan projeler oluşturulmadı. Oluşturulacak seçili olmayan projeler, hata ayıklama, çalışan, paketleme ve çözümün dağıtımı yine de eklenir.  
   

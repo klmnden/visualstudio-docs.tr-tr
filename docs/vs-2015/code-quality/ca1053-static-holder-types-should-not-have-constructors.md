@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea9f91635e7d618fb439ec8212d3e987a6d1a451
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444560"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Static tutucu türlerin oluşturucuları olmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "54770519"
  Bu kural ihlalini düzeltmek için varsayılan oluşturucu kaldırın veya özel yapın.
 
 > [!NOTE]
->  Türünü hiçbir oluşturucu tanımlamıyorsa bazı derleyiciler, ortak varsayılan oluşturucusu otomatik olarak oluşturun. Türünüz Durum buysa, ihlalin ortadan kaldırmak için özel varsayılan bir oluşturucu ekleyin.
+> Türünü hiçbir oluşturucu tanımlamıyorsa bazı derleyiciler, ortak varsayılan oluşturucusu otomatik olarak oluşturun. Türünüz Durum buysa, ihlalin ortadan kaldırmak için özel varsayılan bir oluşturucu ekleyin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Bu kuraldan uyarıyı bastırmayın. Oluşturucu varlığını türü statik bir tür değil önerir.

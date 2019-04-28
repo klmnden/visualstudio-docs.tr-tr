@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 804260be1adbfa0a7188088543f83eac14a1e0fc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872114"
 documentType: LandingData
 title: Visual Studio IDE belgeleri
 metadata:
@@ -19,97 +13,97 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: Visual Studio ile çalışmaya başlama
-  items:
-  - type: paragraph
-    text: Yükleme ve Visual Studio tümleşik geliştirme ortamı (IDE hakkında) öğrenin
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 4
+  - title: Visual Studio ile çalışmaya başlama
     items:
-    - href: ../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Visual Studio'yu yükleme
-    - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Visual Studio IDE'de gezinme
-    - href: ../ide/whats-new-visual-studio-2017.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Visual Studio 2017’deki Yenilikler
-    - href: ../ide/whats-new-visual-studio-2019.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Visual Studio 2019’daki Yenilikler
-- title: Öğreticiler
-  items:
-  - type: paragraph
-    text: Visual Studio ile dilediğiniz dilde kullanmaya başlayın.
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: Yükleme ve Visual Studio tümleşik geliştirme ortamı (IDE hakkında) öğrenin
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 4
+        items:
+          - href: ../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Visual Studio'yu yükleme
+          - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: Visual Studio IDE'de gezinme
+          - href: ../ide/whats-new-visual-studio-2017.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Visual Studio 2017’deki Yenilikler
+          - href: ../ide/whats-new-visual-studio-2019.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Visual Studio 2019’daki Yenilikler
+  - title: Öğreticiler
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_csharp.svg
-      text: C#
-      href: /visualstudio/get-started/csharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_fsharp.svg
-      text: F#
-      href: /dotnet/fsharp
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      text: Visual Basic
-      href: /visualstudio/get-started/visual-basic/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_cplusplus.svg
-      text: C++
-      href: /cpp/get-started/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_python.svg
-      text: Python
-      href: /visualstudio/python/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_js.svg
-      text: JavaScript
-      href: /visualstudio/javascript/
-- title: Uygulamalar geliştirin
-  items:
-  - type: paragraph
-    text: Uygulama geliştirip test etmek için Visual Studio kullanarak daha ayrıntılı öğreticiler ile daha fazla bilgi edinin
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: Visual Studio ile dilediğiniz dilde kullanmaya başlayın.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
+            text: 'C#'
+            href: /visualstudio/get-started/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            text: Visual Basic
+            href: /visualstudio/get-started/visual-basic/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_cplusplus.svg'
+            text: C++
+            href: /cpp/get-started/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_python.svg'
+            text: Python
+            href: /visualstudio/python/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: /visualstudio/javascript/
+  - title: Uygulamalar geliştirin
     items:
-    - href: ../ide/index-writing-code.md
-      html: <p>Kod Düzenleyicisi Visual Studio'nun en iyi</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: Yazma ve kod düzenleme
-    - href: ../ide/compiling-and-building-in-visual-studio.md
-      html: <p>Derleyicinizin yapılandırın ve uygulamanızı oluşturun.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Derleme ve oluşturma
-    - href: ../debugger/debugger-feature-tour.md
-      html: <p>Sorunları araştırmak için hata ayıklayıcı altında uygulamanızı çalıştırın.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: Hata ayıklama
-    - href: ../test/getting-started-with-unit-testing.md
-      html: <p>Kodlanmış UI testi ve birim testi yönetmek için Visual Studio'yu kullanın.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_test.svg
-      title: Test
-    - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
-      html: <p>Visual Studio veritabanı tasarım araçlarını kullanarak bir SQL veritabanı oluşturun.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
-      title: Verilere erişme
+      - type: paragraph
+        text: Uygulama geliştirip test etmek için Visual Studio kullanarak daha ayrıntılı öğreticiler ile daha fazla bilgi edinin
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../ide/index-writing-code.md
+            html: <p>Kod Düzenleyicisi Visual Studio'nun en iyi</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: Yazma ve kod düzenleme
+          - href: ../ide/compiling-and-building-in-visual-studio.md
+            html: <p>Derleyicinizin yapılandırın ve uygulamanızı oluşturun.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Derleme ve oluşturma
+          - href: ../debugger/debugger-feature-tour.md
+            html: <p>Sorunları araştırmak için hata ayıklayıcı altında uygulamanızı çalıştırın.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: Hata ayıklama
+          - href: ../test/getting-started-with-unit-testing.md
+            html: <p>Kodlanmış UI testi ve birim testi yönetmek için Visual Studio'yu kullanın.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_test.svg'
+            title: Test
+          - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
+            html: <p>Visual Studio veritabanı tasarım araçlarını kullanarak bir SQL veritabanı oluşturun.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+            title: Verilere erişme

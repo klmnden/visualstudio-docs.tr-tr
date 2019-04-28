@@ -8,34 +8,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807731"
 ---
-# <a name="xml-document-validation"></a>XML belgesi doğrulama
+# <a name="xml-document-validation"></a>XML belgesini doğrulama
 
 XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve siz yazarken veri doğrulaması da gerçekleştirir. Düzenleyici, bir belge türü tanımı (DTD'nin) ya da bir şema kullanarak doğrulayabilirsiniz. Kırmızı dalgalı alt çizgiler, doğru biçimlendirilmiş XML 1.0 hataları vurgulayın. Mavi dalgalı alt çizgiler DTD'nin veya şema doğrulamasını anlamsal hata gösterir. Her bir hata hata listesinde bir ilişkili giriş var. Dalgalı alt çizginin fare duraklatarak, hata iletisi de görüntüleyebilirsiniz.
 
  Doğrulama kullanılan şemalar ile eşleştirerek bulundu `targetNamespace` öğenin xmlns bildirimi ile derlenmiş bir şema. Derlenen şemalar bir öncelik sırasına göre listelenen aşağıdaki konumlara yüklenir:
 
--   Belirtilen dosya adından **şemaları** belge alanını **özellikleri** penceresi.
+- Belirtilen dosya adından **şemaları** belge alanını **özellikleri** penceresi.
 
--   Satır içi şema veya DTD'nin.
+- Satır içi şema veya DTD'nin.
 
--   Bir dış DTD'nin veya `xsd:schemaLocation` ve `xsd:noNamespaceSchemaLocation` özniteliği
+- Bir dış DTD'nin veya `xsd:schemaLocation` ve `xsd:noNamespaceSchemaLocation` özniteliği
 
--   Bir "x-schema" XDR Şema ad alanı URI.
+- Bir "x-schema" XDR Şema ad alanı URI.
 
 Boş hedef ad alanı şema sahip olduğunda şemaları de aşağıdaki ek konumlarda bulunabilir:
 
--   Şema içeren başka bir düzenleyici penceresi.
+- Şema içeren başka bir düzenleyici penceresi.
 
--   Geçerli çözümdeki şema.
+- Geçerli çözümdeki şema.
 
--   Şema önbellek dizini bir şema.
+- Şema önbellek dizini bir şema.
 
 ## <a name="xslt-files"></a>XSLT dosyaları
  XSLT dosyası düzenlenirken *xslt.xsd* doğrulama için şema önbelleğinde bulunan dosya kullanılır. Doğrulama hatalarını, Mavi dalgalı çizgiler gösterilir. XSLT derleyici hatalarını, kırmızı dalgalı alt çizgiler gösterilir.

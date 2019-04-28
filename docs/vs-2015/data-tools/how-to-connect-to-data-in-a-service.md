@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386105"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Nasıl yapılır: Bir hizmetteki verilere bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Uygulamanızı çalıştırarak bir hizmetten döndürülen veri bağlama [veri 
  Sihirbaz tamamlandıktan sonra bir hizmet başvurusu projenize eklenir ve hemen kullanılabilir [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
->  Görünen öğeler **veri kaynakları** penceresinde bağımlı hizmetin döndürdüğü bilgileri bulunur. Bazı hizmetler için yeterli bilgi sağlamayabilir **veri kaynağı Yapılandırma Sihirbazı** bağlanabilir nesneleri oluşturmak için. Hizmet yazılmamış bir veri kümesi döndürürse, örneğin, daha sonra hiçbir öğe görünür **veri kaynakları penceresi** sihirbaz. Yazılmayan veri kümeleri, şema sağlamaz, bu nedenle sihirbazın veri kaynağını oluşturmak için yeterli bilgi yok olmasıdır.  
+> Görünen öğeler **veri kaynakları** penceresinde bağımlı hizmetin döndürdüğü bilgileri bulunur. Bazı hizmetler için yeterli bilgi sağlamayabilir **veri kaynağı Yapılandırma Sihirbazı** bağlanabilir nesneleri oluşturmak için. Hizmet yazılmamış bir veri kümesi döndürürse, örneğin, daha sonra hiçbir öğe görünür **veri kaynakları penceresi** sihirbaz. Yazılmayan veri kümeleri, şema sağlamaz, bu nedenle sihirbazın veri kaynağını oluşturmak için yeterli bilgi yok olmasıdır.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -52,7 +52,7 @@ Uygulamanızı çalıştırarak bir hizmetten döndürülen veri bağlama [veri 
 4. İsteğe bağlı olarak, yeni **Namespace** yerine varsayılan değer türü belirtilmiş olmalıdır.  
   
     > [!NOTE]
-    >  Tıklayın **Gelişmiş** açmak için [hizmeti başvuru iletişim kutusunu](../data-tools/configure-service-reference-dialog-box.md).  
+    > Tıklayın **Gelişmiş** açmak için [hizmeti başvuru iletişim kutusunu](../data-tools/configure-service-reference-dialog-box.md).  
   
 5. Tıklayın **Tamam** projenize bir hizmet başvurusu eklemek için.  
   

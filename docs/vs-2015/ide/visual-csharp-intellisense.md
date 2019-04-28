@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443173"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
  Visual C# ' ta tamamlanma listesi kapsamlarındaki genişletme yöntemleri içerir.  
   
 > [!NOTE]
->  Tamamlanma listesi için tüm genişletme yöntemleri görüntülemez <xref:System.String> nesneleri.  
+> Tamamlanma listesi için tüm genişletme yöntemleri görüntülemez <xref:System.String> nesneleri.  
   
  Genişletme yöntemleri örnek yöntemleri farklı bir simge kullanın. Liste simgelerin bir listesi için bkz: [sınıf görünümü ve Nesne Tarayıcısı simgeleri](../ide/class-view-and-object-browser-icons.md). Bir örnek yöntemi ve aynı ada sahip bir uzantı yöntemi kapsam içinde her ikisi de olduğunda tamamlanma listesi uzantısı yöntemi simgesi görüntüler.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
  ![Olay işleyicisi oluşturmak](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  IntelliSense tarafından oluşturulan yeni bir temsilci, mevcut bir olay işleyicisi başvuruyorsa, IntelliSense araç ipucu için bu bilgiyi iletişim kurar. Ardından bu başvuruyu değiştirebilirsiniz; metin, Kod Düzenleyicisi'nde zaten seçildi. Aksi takdirde otomatik olay birleştirme bu noktada tamamlanmıştır.  
+> IntelliSense tarafından oluşturulan yeni bir temsilci, mevcut bir olay işleyicisi başvuruyorsa, IntelliSense araç ipucu için bu bilgiyi iletişim kurar. Ardından bu başvuruyu değiştirebilirsiniz; metin, Kod Düzenleyicisi'nde zaten seçildi. Aksi takdirde otomatik olay birleştirme bu noktada tamamlanmıştır.  
   
  Sekme tuşuna basarsanız, IntelliSense doğru imzaya sahip bir yöntemi çıkış Saplamaları ve imleç, olay işleyicisi gövdesinde koyar.  
   
 > [!NOTE]
->  Kullanım **Navigate Backward** komutunu **görünümü** menü (CTRL +-) olay birleştirme deyimine geri dönmek için.  
+> Kullanım **Navigate Backward** komutunu **görünümü** menü (CTRL +-) olay birleştirme deyimine geri dönmek için.  
   
  IntelliSense adlı bir olay işleyicisi otomatik olarak nasıl kancaları aşağıdaki görevleri gösterir `button1_Click` bir olayı alana adlı `button1.Click`.  
   

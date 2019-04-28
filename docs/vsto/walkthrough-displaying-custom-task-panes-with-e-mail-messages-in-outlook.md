@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440879"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>İzlenecek yol: Outlook'ta e-posta iletileri ile birlikte özel görev bölmelerini görüntüleme
   Bu izlenecek yolda oluşturulan veya açılan her e-posta iletisiyle bir özel görev bölmesi benzersiz bir örneğini görüntülemek nasıl gösterir. Kullanıcılar, görüntülemek veya her e-posta iletisini Şeritteki bir düğmeyi kullanarak özel görev bölmesini gizle.
@@ -31,7 +31,7 @@ ms.locfileid: "60062563"
  Birden çok Gezgini veya Inspector'ı windows ile bir özel görev bölmesini görüntülemek için özel görev bölmesi açıldığında her penceresi için bir örneğini oluşturmanız gerekir. Özel görev bölmeleri Outlook Windows davranış hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  Bu izlenecek yol, VSTO eklentisi kod kod ardındaki mantığı hakkında konuşmak amacıyla kolaylaştırmak için küçük bölümler sunar.
+> Bu izlenecek yol, VSTO eklentisi kod kod ardındaki mantığı hakkında konuşmak amacıyla kolaylaştırmak için küçük bölümler sunar.
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062563"
 - Birlikte özel görev bölmesini Şerit iki durumlu düğme eşitleniyor.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

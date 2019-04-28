@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441072"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  Ayarlama `e.Handled` için `true`, olayın kapsayan Şekil veya diyagram geçirilecek istemediğiniz sürece.  
+> Ayarlama `e.Handled` için `true`, olayın kapsayan Şekil veya diyagram geçirilecek istemediğiniz sürece.  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>Dekoratörler tıklar ele alınması için  
  Görüntü dekoratörler OnDoubleClick yöntemi olan ImageField sınıfının bir örneği taşınır. ImageField alt yazarsanız tıklama yakalayabilirsiniz. Alanlar InitializeShapeFields yönteminde ayarlanır. Bu nedenle, normal ImageField yerine, alt sınıfı örneğini oluşturmak için bu yöntemi değiştirmeniz gerekir. Shape sınıfının üretilen kodda InitializeShapeFields yöntemidir. Ayarlarsanız shape sınıfı geçersiz kılabilirsiniz, `Generates Double Derived` aşağıdaki yordamda açıklandığı gibi özellik.  

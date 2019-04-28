@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445989"
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Kod oluşturma ve birim testleri çalıştırarak beklendiği gibi çalışıp �
 ### <a name="BKMK_Quick_starts"></a> Hızlı başlangıçlar  
  Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan birine bakın:  
   
-- [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Sınanacak `Accounts` proje örneğimiz, proje garip gelse `AccountsTests`.  
   
    > [!WARNING]
-   >  Tüm üçüncü taraf ve açık kaynak birim testi çerçevelerini bir Visual Studio Proje şablonu sağlar. Bir proje oluşturma hakkında daha fazla bilgi için framework belgeye başvurun.  
+   > Tüm üçüncü taraf ve açık kaynak birim testi çerçevelerini bir Visual Studio Proje şablonu sağlar. Bir proje oluşturma hakkında daha fazla bilgi için framework belgeye başvurun.  
   
 8. Birim test projenizde örneğimizde hesapları projesi için test edilen kod projesine bir başvuru ekleyin.  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Her derleme sonrasında Testleri Çalıştır  
   
 > [!WARNING]
->  Her derleme yalnızca Visual Studio Enterprise'da desteklendikten sonra birim testleri çalıştırma.  
+> Her derleme yalnızca Visual Studio Enterprise'da desteklendikten sonra birim testleri çalıştırma.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.  
   
    > [!NOTE]
-   >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
+   > Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.  
   
 2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünden.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **Y:** Evet. *Veri tabanlı test yöntemleri* , bir tek birim test yöntemi ile bir aralıktaki değerleri test olanak tanır. Kullanım bir `DataSource` test etmek istediğiniz değişken değerleri veri kaynağını seçin ve bu tablo belirten test yöntemini içeren özniteliği.  Yöntem gövdesinde, satır değerlerini kullanarak değişkenlere atamak `TestContext.DataRow[` *ColumnName* `]` dizin oluşturucu.  
   
 > [!NOTE]
->  Yalnızca yönetilen kod için Microsoft birim testi çerçevesini kullanarak yazma yöntemleri test etmek için bu yordamları uygulayın. Farklı bir framework kullanıyorsanız, eşdeğer bir işlevselliği için framework belgelerine bakın.  
+> Yalnızca yönetilen kod için Microsoft birim testi çerçevesini kullanarak yazma yöntemleri test etmek için bu yordamları uygulayın. Farklı bir framework kullanıyorsanız, eşdeğer bir işlevselliği için framework belgelerine bakın.  
   
  Örneğin, gereksiz bir yönteme eklediğimiz varsayın `CheckingAccount` adlı sınıfı `AddIntegerHelper`. `AddIntegerHelper` iki tamsayı ekler.  
   

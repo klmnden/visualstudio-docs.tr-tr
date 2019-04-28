@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445373"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio tümleştirmesi (MSBuild)
 Visual Studio ana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Bazı öğe türü adları özel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ancak bu açılır menüde listelenmez.
+> Bazı öğe türü adları özel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ancak bu açılır menüde listelenmez.
 
 ## <a name="in-process-compilers"></a>İşlem içi derleyiciler
  Mümkün olduğunda, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] işlemde sürümünü kullanmayı dener [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] performansı artırmak için derleyici. (Uygulanamaz [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Bunun düzgün çalışması için aşağıdaki koşullar karşılanmalıdır:

@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431095"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Nasıl yapılır: Web şablonlarını elle oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54782216"
 Bir Web şablonu oluşturma, diğer türlerdeki şablonları oluşturmaktan daha farklıdır. Web projesi şablonları görünür çünkü **yeni Web sitesi Ekle** iletişim kutusu ve Web proje öğesi kategorilere ayrılabilir programlama dili, .vstemplate dosyası şablonu bir Web şablonu belirtin ve programlama tanımlayın dili.  
   
 > [!NOTE]
->  Web şablonları kullanılarak belirtilen bir boş .webproj dosyası içermelidir `File` özniteliği `Project` öğesi. Web projeleri, proje dosyalarını gerektirmeyen rağmen bir Web şablonu düzgün çalışır, böylece bu dosya gereklidir.  
+> Web şablonları kullanılarak belirtilen bir boş .webproj dosyası içermelidir `File` özniteliği `Project` öğesi. Web projeleri, proje dosyalarını gerektirmeyen rağmen bir Web şablonu düzgün çalışır, böylece bu dosya gereklidir.  
   
 ### <a name="to-manually-create-a-web-template"></a>El ile bir Web şablonu oluşturmak için  
   

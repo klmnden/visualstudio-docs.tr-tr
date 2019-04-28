@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420434"
 ---
 # <a name="implementing-syntax-coloring"></a>Söz Dizimi Renklendirmesi Uygulama
 Söz dizimi renklendirme dil hizmetinin sağladığı, ayrıştırıcının metin satırı renklendirilebilir öğeleri bir diziye dönüştürür ve belirteç türleri bu renklendirilebilir öğeleri karşılık gelen döndürür. Ayrıştırıcının renklendirilebilir öğeler listesine ait belirteç türleri döndürmeniz gerekir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] renklendirilebilir her öğe için uygun belirteç türü Renklendirici nesne tarafından atanan öznitelikler göre kod penceresinde görüntüler.
@@ -27,7 +27,7 @@ Söz dizimi renklendirme dil hizmetinin sağladığı, ayrıştırıcının meti
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Sözdizimi renklendirme uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Metin vurgulama](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Metin renklendirmek için bir düzenleyici tarafından izlenen adımları
 
@@ -63,7 +63,7 @@ Söz dizimi renklendirme dil hizmetinin sağladığı, ayrıştırıcının meti
  Yönetilen paket çerçevesini (MPF) bir Renklendirici uygulamak için gereken tüm sınıflar sağlar. Dil hizmeti sınıfınıza alması gerektiğini <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve gerekli yöntemleri uygular. Uygulayarak, bir tarayıcı ve ayrıştırıcı sağlamalısınız <xref:Microsoft.VisualStudio.Package.IScanner> arabirim ve arabirimden örneğini döndürmesi <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> yöntemi (içinde uygulanması gereken yöntemlerden birini <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı). Daha fazla bilgi için [eski dil hizmetinde söz dizimi renklendirme](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeler Kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Özel Renklendirilebilir Öğeler](../../extensibility/internals/custom-colorable-items.md)
 - [Eski Dil Hizmeti Geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

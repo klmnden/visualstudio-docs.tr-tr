@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435133"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: Derleme Olayları Belirtme (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
  Derleme olayları belirtilir **Build Events** iletişim kutusu, kullanılabilir **derleme** sayfasının **Proje Tasarımcısı**.  
   
 > [!NOTE]
->  Visual Basic Express derleme olayları girişi desteklemez. Bu, yalnızca Visual Studio ürününün tam desteklenir.  
+> Visual Basic Express derleme olayları girişi desteklemez. Bu, yalnızca Visual Studio ürününün tam desteklenir.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Derleme öncesi ve sonrası derleme olayları belirtme  
   
@@ -45,10 +45,10 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
 4. Derleme öncesi veya derleme sonrası eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.  
   
     > [!NOTE]
-    >  Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.  
+    > Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgilerini değiştirme  
  Aşağıdaki yordamda, bir derleme sonrası olay olarak adlandırılan bir .exe komutunu kullanarak uygulama bildiriminde en düşük işletim sistemi sürümünü ayarlama işlemi gösterilmektedir (. exe.manifest dosya proje dizininde). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:  

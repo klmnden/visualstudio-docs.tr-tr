@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807998"
 ---
-# <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense özellikleri
+# <a name="xml-editor-intellisense-features"></a>XML düzenleyicisi IntelliSense özellikleri
 
 XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karşılaştırılabilir tam IntelliSense özelliklerini sağlar. Bu bölümde, XSLT belgeleri ve XML Şeması Tanım Dili (XSD) ile IntelliSense nasıl kullanabileceğiniz açıklanmaktadır.
 
@@ -129,4 +129,4 @@ IntelliSense ve otomatik tamamlama özellikleri varsayılan olarak etkindir. Anc
 
 - [XML Düzenleyicisi](../xml-tools/xml-editor.md)
 - [IntelliSense Kullanma](../ide/using-intellisense.md)
-- [İzlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [İzlenecek yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)

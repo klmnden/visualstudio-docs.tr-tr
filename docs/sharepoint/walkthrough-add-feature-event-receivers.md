@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008305"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>İzlenecek yol: Özellik Olay alıcıları ekleme
   Özellik Olay alıcıları SharePoint'te özelliği ile ilgili aşağıdaki olaylardan biri meydana geldiğinde yürütülen yöntemler şunlardır:

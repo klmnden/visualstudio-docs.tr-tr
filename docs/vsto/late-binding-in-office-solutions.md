@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583952"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office çözümlerinde geç bağlama
   Nesne modellerinde Office uygulamalarının bazı türleri geç bağlama özellikleri kullanılabilir olan işlevsellik sağlar. Örneğin, yöntemler ve özellikler farklı türde Office uygulamasının bağlama nesneleri döndürebilir ve bazı türleri farklı yöntemler veya farklı bağlamlardaki özelliklerinde kullanıma sunabilirsiniz.

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5956414b7d298c5bf198d6e1e7daf3bceb6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f0d592eca22b6f07bc4f938edcd0370ecf9d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434032"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5. Adım: NumericUpDown Denetimleri için Giriş Olay İşleyicileri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60056373"
 Bu Eğitimin beşinci kısmında girme sınav sorularının yanıtlarını biraz daha kolay hale getirmek için gir olayı işleyicilerini ekleyeceksiniz. Bu kodu seçin ve her NumericUpDown denetimindeki geçerli değeri sınava seçer ve farklı bir değer girmeye başladığında sürede temizleyin.  
   
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-verify-the-default-behavior"></a>Varsayılan davranışı doğrulama  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435377"
 ---
 # <a name="transition-activity-designer"></a>Transition Etkinlik Tasarımcısı
 A <xref:System.Activities.Statements.Transition> iki durum arasında geçiş temsil eder.  
@@ -40,7 +40,7 @@ A <xref:System.Activities.Statements.Transition> iki durum arasında geçiş tem
  Geçişler, bir çizgi bir durumdan diğerine sürükleyerek ya da bir durumda bir durum başka bir duruma sürüklediğinizde görüntülenen üçgenler üzerine bırakarak oluşturulur. Sürükleyerek bir geçiş oluşturmak için kaynak durumu edge üzerinde fareyi üzerine gelin ve bir satır kaynak durumu hedef durumuna sürükleyin. Bırakarak bir geçiş oluşturmak için hedef durumu ve kaynak durumu gelin, sürükleyip görünen dört üçgenler birini sürüklediğinizde kaynak durumu. Hedef durumu gelen sürüklediğiniz ya da yeni bir durum olabilir **araç kutusu**, ya da mevcut bir durumu, iş akışı Tasarımcısı'ndan sürüklediğiniz.  
   
 > [!NOTE]
->  Kadar 76 geçiş iş akışı Tasarımcısı'nı kullanarak oluşturulan bir durum makinesindeki tek bir durumda olabilir. İş Akışı Tasarımcısı dışında oluşturulan bir durum geçişlerini sınırı yalnızca sistem kaynaklarının yetersizliği sınırlıdır.  
+> Kadar 76 geçiş iş akışı Tasarımcısı'nı kullanarak oluşturulan bir durum makinesindeki tek bir durumda olabilir. İş Akışı Tasarımcısı dışında oluşturulan bir durum geçişlerini sınırı yalnızca sistem kaynaklarının yetersizliği sınırlıdır.  
   
  Paylaşılan tetikleyici geçişi, aynı olayın paylaşan geçişleri kümesidir. Paylaşılan tetikleyici koşullu ilerleme ortak bir tetikleyici olaya paylaşan birden çok geçiş için yapılandırılmış bir ifade değerlendirme göre bir hedef duruma olanak tanır. Geçiş için ek eylemler eklemek ve paylaşılan bir geçiş oluşturmak için istenen geçiş başlangıcını gösteren daireye tıklayın ve istenen duruma sürükleyin. Aynı tetikleyici olarak ilk geçiş yeni geçişi paylaşır, ancak benzersiz bir koşulu ve eylem gerekir. Paylaşılan geçişleri de oluşturulabilir gelen geçiş Tasarımcısı'nda tıklayarak **paylaşılan tetikleyici geçişi Ekle** geçiş Tasarımcısı'nı seçip ardından istediğiniz hedef durumu alt kısmındaki  **Bağlanmak için kullanılabilir durumları** açılır.  
   

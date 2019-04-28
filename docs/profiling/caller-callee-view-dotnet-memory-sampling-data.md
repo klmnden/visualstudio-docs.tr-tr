@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f3e07510f38c18f7d8e4a52d788935400b5a9388
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776750"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Arayan/Aranan görünümü - .NET bellek örnekleme verileri
 Arayan/Aranan görünümü seçili işlev ve üst ve alt işlevleri için profil oluşturma verilerini .NET bellek görüntüler. Arayan/Aranan görünümü üç Kılavuzlar içerir.

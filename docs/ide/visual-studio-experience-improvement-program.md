@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582025"
 ---
-# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
+# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimini Geliştirme Programı
 
 Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde Visual Studio geliştirmesine yardımcı olmak için tasarlanmıştır. Bu program [hatalar hakkında bilgi toplar](../ide/diagnostic-data-collection.md), bilgisayar donanımı ve nasıl kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kişiler Visual Studio kullanın. Toplanan bilgiler, Microsoft'un hangi özellikleri belirlemesine yardımcı olur. Bu belgenin içine veya dışına VSCEIP nasıl ele alınmaktadır.
 

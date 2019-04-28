@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430296"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Nasıl yapılır: Çağrı yığını penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
  Kısayol menüsünü kullanarak iş parçacıkları arasındaki çağrıları görmek isteyip istemediğinizi seçebilirsiniz.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Çağrı yığını penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   

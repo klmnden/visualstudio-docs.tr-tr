@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432831"
 ---
 # <a name="how-to-choose-sampling-events"></a>Nasıl yapılır: Örnekleme olayları seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluştur
 - Performans sayacı - alt düzey performans sorunları için CPU sayaçları.  
   
 > [!IMPORTANT]
->  .NET bellek verileri (ayırmalar veya nesne kullanım ömrü veya her ikisi de) örnekleme yöntemini kullanarak topladığınız gerekirse tüm kullanıcı tarafından belirtilen örnekleme olayları göz ardı edilir ve uygun bellek ayırmaları veya çöp toplama olayları veya her ikisi de, veri toplamak üzere kullanılır.  
+> .NET bellek verileri (ayırmalar veya nesne kullanım ömrü veya her ikisi de) örnekleme yöntemini kullanarak topladığınız gerekirse tüm kullanıcı tarafından belirtilen örnekleme olayları göz ardı edilir ve uygun bellek ayırmaları veya çöp toplama olayları veya her ikisi de, veri toplamak üzere kullanılır.  
   
 ### <a name="to-select-a-sample-event"></a>Örnek olay seçmek için  
   
@@ -51,7 +51,7 @@ Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluştur
 3. Gelen **örnek olay** aşağı açılan listesinde, uygulamanızın profilini için kullanmak istediğiniz örnek olayı seçin.  
   
     > [!NOTE]
-    >  **Ulaşılabilir performans sayaçları** yalnızca seçerseniz etkin **performans sayacı** gelen **örnek olay** aşağı açılan listesi.  
+    > **Ulaşılabilir performans sayaçları** yalnızca seçerseniz etkin **performans sayacı** gelen **örnek olay** aşağı açılan listesi.  
   
 4. Seçerseniz **performans sayacı**, alınan belirli bir CPU sayaçlarını seçin **ulaşılabilir performans sayaçları** ağaç görünümü denetimi.  
   

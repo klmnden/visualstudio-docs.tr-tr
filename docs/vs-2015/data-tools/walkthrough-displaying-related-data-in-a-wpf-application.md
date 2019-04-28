@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424784"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
 1. İçinde **veri kaynakları** penceresinde bulun **SalesOrderDetails** alt düğümü **SalesOrderHeaders** düğümü.  
   
    > [!NOTE]
-   >  Ayrıca bir **SalesOrderDetails** eşi olan düğümün **SalesOrderHeaders** düğümü. Alt düğüm seçtiğinizden emin olun **SalesOrderHeaders** düğümü.  
+   > Ayrıca bir **SalesOrderDetails** eşi olan düğümün **SalesOrderHeaders** düğümü. Alt düğüm seçtiğinizden emin olun **SalesOrderHeaders** düğümü.  
   
 2. Alt genişletin **SalesOrderDetails** düğümü.  
   

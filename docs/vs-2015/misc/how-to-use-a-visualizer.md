@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446425"
 ---
 # <a name="how-to-use-a-visualizer"></a>Nasıl yapılır: Görselleştirici kullanma
 Görselleştirici, veri türü için anlamlı bir şekilde bir değişken veya nesne içeriğini görüntülemek için kullanabilirsiniz. Görselleştiriciler dan kullanabileceğiniz **DataTips**, **izleme** penceresinde **Otolar** penceresinde veya **Yereller** penceresi.  
@@ -36,7 +36,7 @@ Görselleştirici, veri türü için anlamlı bir şekilde bir değişken veya n
  Görselleştiriciler Compact Framework'te desteklenmez.  
   
 > [!NOTE]
->  İçinde **Store** uygulamalar, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.  
+> İçinde **Store** uygulamalar, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.  
   
 ### <a name="to-open-a-visualizer"></a>Görselleştirici açmak için  
   

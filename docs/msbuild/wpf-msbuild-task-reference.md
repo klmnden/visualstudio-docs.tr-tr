@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778332"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild görev başvurusu
 Windows Presentation Foundation (WPF) derleme işlemi derleme görevleri işaretlemesi ve işlem kaynaklarını derlemek için görevleri de dahil olmak üzere, ek bir kümesi Microsoft build engine (MSBuild) genişletir.

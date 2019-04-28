@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437482"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Katman diyagramları ile kod doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
   Visual Studio'daki açık bir katman diyagramından veya komut isteminden kodu el ile doğrulayabilirsiniz. Ayrıca yerel yapıları veya Team Foundation Yapısı'nı çalıştırırken kodu otomatik olarak doğrulayabilirsiniz. Bkz: [kanal 9 Video: Tasarlama ve doğrulama katman diyagramlarını kullanarak Mimarinizi](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
->  Team Foundation Yapısı ile katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.  
+> Team Foundation Yapısı ile katman doğrulaması çalıştırmak istiyorsanız, yapı sunucunuzda ayrıca Visual Studio'nun aynı sürümünü yüklemeniz gerekir.  
   
 - [Bir öğenin doğrulamayı destekleyip desteklemediğini görme](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
 1. Diyagram yüzeyine sağ tıklayın ve ardından **Mimariyi Doğrula**.  
   
     > [!NOTE]
-    >  Varsayılan olarak, **derleme eylemi** özelliği için katman diyagramı (.layerdiagram) dosyasındaki **doğrulama** böylece doğrulama işleminde diyagramın dahildir.  
+    > Varsayılan olarak, **derleme eylemi** özelliği için katman diyagramı (.layerdiagram) dosyasındaki **doğrulama** böylece doğrulama işleminde diyagramın dahildir.  
   
      **Hata listesi** penceresi oluşan hataları bildirir. Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).  
   
 2. Her hatanın kaynağını görüntülemek için hataya çift **hata listesi** penceresi.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir kod Haritası hata kaynağı yerine gösterebilir. Bu, kodun katman diyagramı tarafından belirlenmeyen derlemesinde bağımlılığı varsa ya da kodun katman diyagramı tarafından belirlenen bağımlılığı eksikse ortaya çıkar. Kod haritası veya bağımlılık var olup olmadığını belirlemek için kodu gözden geçirin. Kod haritaları hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir kod Haritası hata kaynağı yerine gösterebilir. Bu, kodun katman diyagramı tarafından belirlenmeyen derlemesinde bağımlılığı varsa ya da kodun katman diyagramı tarafından belirlenen bağımlılığı eksikse ortaya çıkar. Kod haritası veya bağımlılık var olup olmadığını belirlemek için kodu gözden geçirin. Kod haritaları hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).  
   
 3. Hataları yönetmek için bkz: [doğrulama hatalarını Yönet](#ManageErrors).  
   
@@ -145,7 +145,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
  Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmaların bazılarını gizlemek isteyebilirsiniz. Örneğin, zaten çözdüğünüz veya özel senaryonuzla ilgili olmayan hataları gizlemek isteyebilirsiniz. Hatayı gizlediğinizde, bir iş öğesi oturum açmak için iyi bir uygulamadır [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
->  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
+> Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Doğrulama hatası için bir öğesi oluşturmak üzere  
   

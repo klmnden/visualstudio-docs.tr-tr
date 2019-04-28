@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444638"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Nasıl yapılır: Etkinlik Tasarımcısı Kitaplığı Oluşturma
 Özel Etkinlik tasarımcıları bir standart veya özel bir etkinlik için bir kullanıcı arabirimi oluşturmanıza imkan tanır. Artık kullanıcı arabiriminin karmaşıklığı denetlemek ve bir etkinliğin birden fazla etkinlik Tasarımcısı oluşturma olanağı. Bu senaryo için birden çok İzleyici uyarlandığından tasarımcıları oluşturmanıza olanak sağlar.  
@@ -36,14 +36,14 @@ ms.locfileid: "60090608"
 7. İçinde **çözüm** kutusunda, çözümünüz için açıklayıcı bir ad yazın ve ardından tıklayın **Tamam**.  
   
     > [!NOTE]
-    >  Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
+    > Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
   
 8. Proje şablonu, XAML ve arka plan kod uygulama kaynak kodu dosyasında bir etkinlik tasarımcısının tanımı oluşturur. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Açılır ve tuval, etkinlik Tasarımcısı için görüntüler.  
   
 9. Sürükleme [!INCLUDE[avalon1](../includes/avalon1-md.md)] denetimler **araç kutusu** özel etkinlik Tasarımcısı'nda kullanılacak tasarım yüzeyine bırakın.  Özel Etkinlik Tasarımcısı uygulamak nasıl bir örnek için bkz [nasıl yapılır: Özel Etkinlik Tasarımcısı oluşturma](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
-    >  Özel Etkinlik tasarımcıları, varsayılan hem de özel etkinlikler için kullanılabilir [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]etkinlikler.  
+    > Özel Etkinlik tasarımcıları, varsayılan hem de özel etkinlikler için kullanılabilir [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]etkinlikler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

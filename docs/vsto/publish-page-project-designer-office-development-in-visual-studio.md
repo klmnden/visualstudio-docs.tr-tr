@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447021"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Yayımlama Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
   **Yayımla** sayfasının **Proje Tasarımcısı** dağıtım özelliklerini yapılandırmak için kullanılır.
@@ -29,7 +29,7 @@ ms.locfileid: "60103536"
  Bu sayfaya erişmek için projeyi seçin **Çözüm Gezgini**ve ardından **proje** menüsünde seçin *Projectname* **özellikleri** . Varsa **Yayımla** sayfası görüntülenmez öğesini **Yayımla** sekmesi.
 
 > [!NOTE]
->  De Yayınlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> De Yayınlama konumu ayarlayabilirsiniz **Yayımlama Sihirbazı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce kullanarak Office çözümü yayımlama](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>UIElement listesi
  **Yayımlama klasörü konumu (web sitesi, ftp sunucusu veya dosya yolu)** gerekli.

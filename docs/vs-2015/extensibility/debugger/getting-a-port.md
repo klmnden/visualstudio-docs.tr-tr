@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436404"
 ---
 # <a name="getting-a-port"></a>Bağlantı Noktası Alma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Bir bağlantı noktası işlemleri çalıştırdığınız bir makine bağlantı
  Bu kod parçasını sağlanan bağlantı noktası kullanma işlemini gösterir [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) program düğümünde kaydedilecek [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Bu kavramı için doğrudan ilgili parametreleri açıklık için atlandı.  
   
 > [!NOTE]
->  Bu örneği başlatın ve işlemi sürdürmek için bağlantı noktası kullanır ve varsayar [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) arabirimi, bağlantı noktası üzerinde uygulanır. Olmadığı göre Hayır bu görevleri gerçekleştirmek için tek yol budur ve bağlantı noktası bile dışında programın için ilişkili olabilir değil, mümkündür [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) verilen.  
+> Bu örneği başlatın ve işlemi sürdürmek için bağlantı noktası kullanır ve varsayar [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) arabirimi, bağlantı noktası üzerinde uygulanır. Olmadığı göre Hayır bu görevleri gerçekleştirmek için tek yol budur ve bağlantı noktası bile dışında programın için ilişkili olabilir değil, mümkündür [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) verilen.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

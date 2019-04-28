@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441021"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DSL model herhangi bir uygulama açabilirsiniz.
 3. Proje Özellikleri penceresinde üzerinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** alanı **.NET Framework 4**.  
   
 > [!NOTE]
->  Seçtiyseniz, bunu yapmak ihtiyacınız olabilecek **.NET Framework 4** proje oluşturma iletişim kutusunda. Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.  
+> Seçtiyseniz, bunu yapmak ihtiyacınız olabilecek **.NET Framework 4** proje oluşturma iletişim kutusunda. Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.  
   
 ## <a name="references"></a>Referanslar  
  Bu başvuruları eklemeniz gerekir, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulama projesi:  

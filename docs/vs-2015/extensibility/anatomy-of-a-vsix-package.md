@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443938"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX Paketinin Anatomisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Bir VSIX paketi bir veya daha fazla Visual Studio uzantıları, sınıflandırma
  VSIX paket biçimi açık paketleme kuralları (OPC) standart izler. Paket ikili dosyalarını içerir ve destekleyen dosyaları, birlikte [Content_Types] .xml dosyası ve bir .vsix bildirim dosyası. Bir VSIX paketi birden çok proje veya kendi bildirimleri olan bile birden çok paketleri çıktısını içerebilir.  
   
 > [!NOTE]
->  VSIX paketlerinde dosyalarının adlarını boşluklar içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> VSIX paketlerinde dosyalarının adlarını boşluklar içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>VSIX bildirimi  
  VSIX bildirimi uzantının yüklenmesini ve aşağıdaki VSX şeması hakkında bilgi içerir. Daha fazla bilgi için [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Bir örnek VSIX bildirimi için bkz: [PackageManifest öğesi (kök öğe, VSX şema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785742"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Bir Web sitesi veya bir test karışımı modeli kullanarak bir yük testinde uygulamanın beklenen gerçek hayatta kullanımı öykünün
 

@@ -12,12 +12,12 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436652"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Hızlı Bilgiler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Hızlı bilgi IntelliSense kullanıcı giriş işaretini bir tanımlayıcıda ye
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz: [izlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
  Yönetilen paket framework (MPF) dil hizmeti sınıfları, hızlı bilgi IntelliSense araç ipucu görüntülemek için tam destek sağlar. Yapmanız gereken tek şey görüntülenmesi ve hızlı bilgi özelliği etkinleştirmek için metin girin.  
   

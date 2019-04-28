@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 521347b2398f88252224f9002fbdd33d36945229
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438536"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>İzlenecek yol: Yer işaretleri için kısayol menüleri oluşturma
   Bu izlenecek yol için kısayol menüleri oluşturma işlemini gösterir <xref:Microsoft.Office.Tools.Word.Bookmark> Word için belge düzeyi özelleştirmesinde denetimleri. Kullanıcı yer işaretindeki metnin tıkladığında bir kısayol menü görünür ve metni biçimlendirmek için kullanıcı seçeneklerini sunar.
@@ -42,25 +42,25 @@ ms.locfileid: "56599044"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]
 
-##  <a name="BKMK_CreateProject"></a> Proje oluşturma
+## <a name="BKMK_CreateProject"></a> Proje oluşturma
  İlk adım, Visual Studio'da bir Word belgesi projesi oluşturmaktır.
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
--   Bu ada sahip bir Word belgesi projesi oluşturma **My yer işareti kısayol menüsünü**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- Bu ada sahip bir Word belgesi projesi oluşturma **My yer işareti kısayol menüsünü**. Sihirbazda **yeni belge oluşturma**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio tasarımcıda yeni Word belgesi açar ve ekler **My yer işareti kısayol menüsünü** için proje **Çözüm Gezgini**.
 
-##  <a name="BKMK_addtextandbookmarks"></a> Belgeye metin ve yer işaretlerini Ekle
+## <a name="BKMK_addtextandbookmarks"></a> Belgeye metin ve yer işaretlerini Ekle
  Metin belgenize ekleyin ve ardından iki örtüşen yer işareti ekleyin.
 
 ### <a name="to-add-text-to-your-document"></a>Belgeye metin ekleme
 
--   Proje Tasarımcısı'nda görüntülenen belgede aşağıdaki metni yazın.
+- Proje Tasarımcısı'nda görüntülenen belgede aşağıdaki metni yazın.
 
      **Bu, yer işaretindeki metnin sağ tıklattığınızda, bir kısayol menü oluşturma bir örnektir.**
 
@@ -79,35 +79,35 @@ ms.locfileid: "56599044"
     `bookmark2` belgeye eklenir.
 
    > [!NOTE]
-   >  "Metnin sağ tıklayın", olan hem de sözcükler `bookmark1` ve `bookmark2`.
+   > "Metnin sağ tıklayın", olan hem de sözcükler `bookmark1` ve `bookmark2`.
 
    Tasarım zamanında, bir belge için bir yer işareti eklediğinizde bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim oluşturulur. Yer işareti birkaç olaylarına karşı programlama yapabilirsiniz. Kod yazabileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> olay işaretinin kullanıcı yer imi metinde tıklattığında kısayol menüsü görüntülenir.
 
-##  <a name="BKMK_AddCmndsShortMenu"></a> Bir kısayol menüsüne komut ekleme
+## <a name="BKMK_AddCmndsShortMenu"></a> Bir kısayol menüsüne komut ekleme
  Düğmeler, belge sağ tıkladığınızda görüntülenen kısayol menüsüne ekleyin.
 
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Bir kısayol menüsüne komut eklemek için
 
-1.  Ekleme bir **Ribbon XML** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
+1. Ekleme bir **Ribbon XML** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  İçinde **Çözüm Gezgini**seçin **ThisDocument.vb** veya **ThisDocument.vb**.
+2. İçinde **Çözüm Gezgini**seçin **ThisDocument.vb** veya **ThisDocument.vb**.
 
-3.  Menü çubuğunda, **görünümü** > **kod**.
+3. Menü çubuğunda, **görünümü** > **kod**.
 
      **ThisDocument** sınıf dosyası Kod Düzenleyicisi'nde açılır.
 
-4.  Aşağıdaki kodu ekleyin **ThisDocument** sınıfı. Bu kod yöntemini geçersiz kılar ve Şerit XML sınıf Office uygulamasına döndürür.
+4. Aşağıdaki kodu ekleyin **ThisDocument** sınıfı. Bu kod yöntemini geçersiz kılar ve Şerit XML sınıf Office uygulamasına döndürür.
 
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5.  İçinde **Çözüm Gezgini**, Şerit XML dosyasını seçin. Varsayılan olarak, Ribbon XML dosyasındaki Ribbon1.xml olarak adlandırılır.
+5. İçinde **Çözüm Gezgini**, Şerit XML dosyasını seçin. Varsayılan olarak, Ribbon XML dosyasındaki Ribbon1.xml olarak adlandırılır.
 
-6.  Menü çubuğunda, **görünümü** > **kod**.
+6. Menü çubuğunda, **görünümü** > **kod**.
 
      Şerit xml dosyası Kod Düzenleyicisi'nde açılır.
 
-7.  Kod Düzenleyicisi'nde Şerit XML dosyasının içeriğini aşağıdaki kodla değiştirin.
+7. Kod Düzenleyicisi'nde Şerit XML dosyasının içeriğini aşağıdaki kodla değiştirin.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -125,7 +125,7 @@ ms.locfileid: "56599044"
 
      Bu kod, iki düğme belge sağ tıkladığınızda görüntülenen kısayol menüsüne ekler.
 
-8.  İçinde **Çözüm Gezgini**, sağ `ThisDocument`ve ardından **kodu görüntüle**.
+8. İçinde **Çözüm Gezgini**, sağ `ThisDocument`ve ardından **kodu görüntüle**.
 
 9. Aşağıdaki değişkenleri ve sınıf düzeyinde yer işareti değişkenini bildirir.
 
@@ -143,30 +143,30 @@ ms.locfileid: "56599044"
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
 
-##  <a name="BKMK_formattextbkmk"></a> Yer işareti metni Biçimlendir
+## <a name="BKMK_formattextbkmk"></a> Yer işareti metni Biçimlendir
 
 ### <a name="to-format-the-text-in-the-bookmark"></a>Yer işareti metni biçimlendirmek için
 
-1.  Şerit kod dosyasında, ekleme bir `ButtonClick` işaretine biçimlendirme uygulamak için olay işleyicisi.
+1. Şerit kod dosyasında, ekleme bir `ButtonClick` işaretine biçimlendirme uygulamak için olay işleyicisi.
 
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2.  **Çözüm Gezgini**seçin **ThisDocument.vb** veya **ThisDocument.vb**.
+2. **Çözüm Gezgini**seçin **ThisDocument.vb** veya **ThisDocument.vb**.
 
-3.  Menü çubuğunda, **görünümü** > **kod**.
+3. Menü çubuğunda, **görünümü** > **kod**.
 
      **ThisDocument** sınıf dosyası Kod Düzenleyicisi'nde açılır.
 
-4.  Aşağıdaki kodu ekleyin **ThisDocument** sınıfı.
+4. Aşağıdaki kodu ekleyin **ThisDocument** sınıfı.
 
      [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
      [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
 
     > [!NOTE]
-    >  Yer işaretleri çakıştığı durumu işlemek için kod yazmanız gerekir. Varsayılan olarak, bunu değil, kod Seçimdeki tüm yer imlerini için çağrılır.
+    > Yer işaretleri çakıştığı durumu işlemek için kod yazmanız gerekir. Varsayılan olarak, bunu değil, kod Seçimdeki tüm yer imlerini için çağrılır.
 
-5.  C# ' ta yer işareti denetimleri için olay işleyicileri eklemelisiniz <xref:Microsoft.Office.Tools.Word.Document.Startup> olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. C# ' ta yer işareti denetimleri için olay işleyicileri eklemelisiniz <xref:Microsoft.Office.Tools.Word.Document.Startup> olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
 
@@ -175,22 +175,22 @@ ms.locfileid: "56599044"
 
 ### <a name="to-test-your-document"></a>Belgenizi test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  İlk yer işaretinde sağ tıklayın ve ardından **kalın**.
+2. İlk yer işaretinde sağ tıklayın ve ardından **kalın**.
 
-3.  Doğrulayın tüm metinde `bookmark1` kalın olarak biçimlendirilir.
+3. Doğrulayın tüm metinde `bookmark1` kalın olarak biçimlendirilir.
 
-4.  Çakıştığı yer işaretleri, metnin sağ tıklayın ve ardından **italik**.
+4. Çakıştığı yer işaretleri, metnin sağ tıklayın ve ardından **italik**.
 
-5.  Doğrulayın tüm metinde `bookmark2` italik ve yalnızca metin parçası `bookmark1` çakışan `bookmark2` italik.
+5. Doğrulayın tüm metinde `bookmark2` italik ve yalnızca metin parçası `bookmark1` çakışan `bookmark2` italik.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Sonraki gelebilir bazı görevler aşağıda verilmiştir:
 
--   Excel'de ana bilgisayar denetim olaylarına tepki vermek için kod yazın. Daha fazla bilgi için [izlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
+- Excel'de ana bilgisayar denetim olaylarına tepki vermek için kod yazın. Daha fazla bilgi için [izlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
--   Bir yer işaretine biçimlendirme değiştirmek için bir onay kutusunu kullanın. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak belge biçimlendirmesini](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Bir yer işaretine biçimlendirme değiştirmek için bir onay kutusunu kullanın. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak belge biçimlendirmesini](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)

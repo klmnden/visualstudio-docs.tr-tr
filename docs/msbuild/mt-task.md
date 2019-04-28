@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437832"
 ---
 # <a name="mt-task"></a>MT görevi
 Microsoft bildirim aracı, sarmalar *mt.exe*. Daha fazla bilgi için [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Microsoft bildirim aracı, sarmalar *mt.exe*. Daha fazla bilgi için [Mt.exe](ht
  Parametreleri aşağıdaki tabloda açıklanmıştır **MT** görev. Çoğu görev parametreleri ve parametrelerin birkaç kümeleri bir komut satırı seçeneğine karşılık gelir.
 
 > [!NOTE]
->  *Mt.exe* belgeler kullanan bir tire (**-**) komut satırı seçenekleri, ancak bu konu için ön ek bir eğik çizgi kullanır (**/**). Ya da kabul edilebilir önekidir.
+> *Mt.exe* belgeler kullanan bir tire (**-**) komut satırı seçenekleri, ancak bu konu için ön ek bir eğik çizgi kullanır (**/**). Ya da kabul edilebilir önekidir.
 
 |Parametre|Açıklama|
 |---------------|-----------------|

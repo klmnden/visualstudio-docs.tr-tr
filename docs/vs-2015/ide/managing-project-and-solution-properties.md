@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424625"
 ---
 # <a name="managing-project-and-solution-properties"></a>Proje ve Çözüm Özelliklerini Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Proje derleme, hata ayıklama, test etme ve dağıtma birçok yönüyle yönetir
  ![Çözüm Gezgini ağacındaki özellikler düğümü](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  Çözüm birkaç özellik vardır ve bu nedenle proje öğeleri; Bu özelliklere erişir [Özellikler penceresi](../ide/reference/properties-window.md)değil **Proje Tasarımcısı**.  
+> Çözüm birkaç özellik vardır ve bu nedenle proje öğeleri; Bu özelliklere erişir [Özellikler penceresi](../ide/reference/properties-window.md)değil **Proje Tasarımcısı**.  
   
 ## <a name="project-properties"></a>Proje Özellikleri  
  Proje Özellikleri gruplar halinde düzenlenir ve her grubun kendi özellik sayfası vardır ve sayfalar farklı diller ve proje türleri için farklı olabilir.  

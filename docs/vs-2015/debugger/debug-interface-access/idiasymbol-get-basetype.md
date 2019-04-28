@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d090df12a8b19d81717a71496f47c753c4acee7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430318"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_baseType ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Temel türü bir sembol için öncelikle sembol türü alma ve türü temel tür için döndürülen interrogating tarafından belirlenebilir. Bazı simgeleri bir taban türü olmayabilir Not — Örneğin, bir yapı adı.  

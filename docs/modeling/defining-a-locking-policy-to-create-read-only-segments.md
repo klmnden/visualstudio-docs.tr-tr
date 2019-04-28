@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445838"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 Visual Studio Görselleştirme ve modelleme SDK'sı Değiştirilemezlik API, böylece okunan ancak değiştirilmemiş bölümünü veya tümünü bir etki alanına özgü dil (DSL) modeli kilitlemek bir program sağlar. Bu salt okunur seçeneği, örneğin, bir kullanıcı iş arkadaşlarınızı Not ekleme ve bir DSL model gözden geçirmek isteyebilirsiniz ancak bunları özgün değiştirmesini engelleyebilirsiniz kullanılabilir.
@@ -20,7 +20,7 @@ Visual Studio Görselleştirme ve modelleme SDK'sı Değiştirilemezlik API, bö
  Ayrıca, bir DSL yazarı olarak tanımlayabilirsiniz bir *kilitleme ilkesi.* İzin verilen, izin verilmiyor veya zorunlu hangi kilitleri kilitleme ilkesi tanımlar. Örneğin, bir DSL yayımladığınızda, yeni komutları ile genişletmek için üçüncü taraf geliştiriciler teşvik edebilir. Ancak belirli bölümlerini model salt okunur durumunu değiştirmesini önlemek için kilitleme ilkesi kullanabilirsiniz.
 
 > [!NOTE]
->  Yansıma kullanarak kilitleme ilkesi atlatılabilir. Üçüncü taraf geliştiriciler için açık bir sınır sağlar, ancak güçlü güvenlik sağlamaz.
+> Yansıma kullanarak kilitleme ilkesi atlatılabilir. Üçüncü taraf geliştiriciler için açık bir sınır sağlar, ancak güçlü güvenlik sağlamaz.
 
  Daha fazla bilgi ve örnekler Visual Studio'da kullanılabilen [Görselleştirme ve modelleme SDK'sı](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) Web sitesi.
 

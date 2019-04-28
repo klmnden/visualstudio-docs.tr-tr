@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791550"
 ---
 # <a name="assembly-information-dialog-box"></a>Derleme Bilgileri İletişim Kutusu
 **Derleme bilgileri** iletişim kutusu değerlerini belirtmek için kullanılır [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] genel bütünleştirilmiş kod öznitelikleri, projenize otomatik olarak oluşturulan AssemblyInfo dosyasında depolanır. İçinde **Çözüm Gezgini**, dosya bulunan **Projem** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklayın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikleri** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme öznitelikleri hakkında daha fazla bilgi için bkz: [öznitelikleri](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).

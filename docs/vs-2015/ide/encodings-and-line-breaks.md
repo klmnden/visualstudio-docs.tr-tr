@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f04720610bad5064f7f9d7a43beef2410b045f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ceec5e44ade219f069e72f712129a137d70875f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437529"
 ---
 # <a name="encodings-and-line-breaks"></a>Kodlamalar ve Satır Sonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54787472"
 Visual Studio'da kullanabileceğiniz **dosya/Gelişmiş kaydetme seçenekleri** karakterler satır sonu türünü belirlemek için ayarları istiyorsunuz. Ayrıca, aynı ayarlarla bir dosyanın kodlamasını değiştirebilirsiniz.  
   
 > [!NOTE]
->  Belirli türlerdeki geliştirme ayarları varsa (Visual Basic F#, Web geliştirme) değil de görebileceğiniz **Gelişmiş kaydetme seçenekleri** menüsünde. Ayarlarınızı (örneğin genel) değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Belirli türlerdeki geliştirme ayarları varsa (Visual Basic F#, Web geliştirme) değil de görebileceğiniz **Gelişmiş kaydetme seçenekleri** menüsünde. Ayarlarınızı (örneğin genel) değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Visual Studio'da şu karakterler satır sonu yorumlanır:  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430409"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: Bir SharePoint proje uzantısı oluşturma
   Bu izlenecek yol, bir SharePoint proje uzantısı oluşturma işlemini gösterir. Bir proje ne zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyinde olaylara yanıt vermek için bir proje uzantısı'nı kullanabilirsiniz. Ayrıca, özel özellikler ekleme veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantıları, proje uzantılarını belirli bir SharePoint proje türüyle ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir türden SharePoint projesi açıldığında uzantınızı yüklediği [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -65,7 +65,7 @@ ms.locfileid: "60062359"
 3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  Bu düğüm, yalnızca Visual Studio SDK'yı yüklerseniz kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > Bu düğüm, yalnızca Visual Studio SDK'yı yüklerseniz kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 4. İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinden seçip **VSIX projesi** şablonu.
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062359"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MEFComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MEFComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje** seçenek düğmesini.
 

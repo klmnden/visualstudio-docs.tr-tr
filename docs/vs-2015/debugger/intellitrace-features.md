@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5c5c775dc309c02ca24d27e8b8ac19d2c9d9d588
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440171"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığın�
  Intellitrace'in açık olduğunu doğrulamak için açık **Araçlar / Seçenekler / IntelliTrace** seçenekler sayfası. **IntelliTrace'i etkinleştirme** varsayılan olarak işaretlenmelidir.  
   
 > [!NOTE]
->  Tüm ayarlar kapsamını **IntelliTrace** seçenekler sayfası olan Visual Studio bir bütün, bunları ayrı projeler veya çözümler. Bu ayarlar bir değişiklik, Visual Studio, tüm hata ayıklama oturumları ve tüm projeler veya çözümlerden tüm örneklerine uygulanır.  
+> Tüm ayarlar kapsamını **IntelliTrace** seçenekler sayfası olan Visual Studio bir bütün, bunları ayrı projeler veya çözümler. Bu ayarlar bir değişiklik, Visual Studio, tüm hata ayıklama oturumları ve tüm projeler veya çözümlerden tüm örneklerine uygulanır.  
   
 ## <a name="ChooseEvents"></a> Intellitrace'in kaydettiği olayları seçin  
  Veya belirli IntelliTrace olaylarının kaydı devre dışı bırakabilirsiniz.  
@@ -54,9 +54,9 @@ IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığın�
  Bu, çağrı yığını geçmişini görmenizi ve kodunuzdaki çağrılar arasında ileri geri adım sağlar. IntelliTrace yöntem adları, yöntemi giriş ve çıkış noktaları ve belirli parametre değerleri ve dönüş değerleri gibi verileri kaydeder.  
   
 > [!TIP]
->  Önemli ölçüde gider eklediğinden bu seçenek varsayılan olarak etkin değil. Yalnızca IntelliTrace sağlar, uygulamanızın her yöntem çağrısının müdahale gerekmez, ancak Ayrıca ekranda gösteren veya diske kalıcı söz konusu olduğunda çok daha büyük bir veri ile dağıtılacak içerir.  
+> Önemli ölçüde gider eklediğinden bu seçenek varsayılan olarak etkin değil. Yalnızca IntelliTrace sağlar, uygulamanızın her yöntem çağrısının müdahale gerekmez, ancak Ayrıca ekranda gösteren veya diske kalıcı söz konusu olduğunda çok daha büyük bir veri ile dağıtılacak içerir.  
 >   
->  Intellitrace'in kaydettiği olayları listesi kısıtlayarak performans yükünü azaltabilir ve modül sayısı tutarak en topluyoruz. Daha fazla bilgi için [denetimi ne kadar çağrı bilgilerini Intellitrace'in kaydettiği](../debugger/intellitrace-features.md#ControlCallData).  
+> Intellitrace'in kaydettiği olayları listesi kısıtlayarak performans yükünü azaltabilir ve modül sayısı tutarak en topluyoruz. Daha fazla bilgi için [denetimi ne kadar çağrı bilgilerini Intellitrace'in kaydettiği](../debugger/intellitrace-features.md#ControlCallData).  
   
 ### <a name="using-the-navigation-gutter"></a>Gezinti kanalını kullanma  
  Görüntülenen gezinti cilt payını sola kod penceresinin kullanabilirsiniz. Gezinti kanalını göremiyorsanız, Git **Araçlar / Seçenekler / IntelliTrace / Gelişmiş**seçip **hata ayıklama modunda Gezinti kanalını görüntüleme**.  
@@ -88,7 +88,7 @@ IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığın�
  Otomatik olarak giderek bir dosyaya kaydetmek için IntelliTrace'i yapılandırabilirsiniz **Araçlar / Seçenekler / IntelliTrace / Gelişmiş** seçerek **Store IntelliTrace kayıtlarını bu dizinde**. Alan tükendiğinde eski verilerin üzerine yazılacak IntelliTrace neden oluşturulan bir dosyanın boyutunu Ayarla de yapılandırabilirsiniz. Visual Studio, ne zaman otomatik olarak kaydedilir ve Visual Studio barındırma süreci (vshost.exe) etkinleştirilir her IntelliTrace oturumu için iki dosya oluşturur.  
   
 > [!TIP]
->  Disk alanından kazanmak için artık gerekmediğinde dosyaları otomatik olarak kaydetmeyi devre dışı bırakın. Var olan dosyalar silinmez. Her zaman isteğe bağlı dosya için bağlam menüsünden tasarruf sağlayabilirsiniz.  
+> Disk alanından kazanmak için artık gerekmediğinde dosyaları otomatik olarak kaydetmeyi devre dışı bırakın. Var olan dosyalar silinmez. Her zaman isteğe bağlı dosya için bağlam menüsünden tasarruf sağlayabilirsiniz.  
   
  IntelliTrace verilerini dosyasını kaydettiğinizde, toplanan IntelliTrace her işlem için bir .itrace dosyası alın. Ardından .itrace dosyasını Visual Studio'da giderek açabileceğiniz **dosya / açın / dosya** ve Dosya Aç iletişim kutusundan .itrace dosyasını seçme. Daha fazla bilgi için [kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md).  
   

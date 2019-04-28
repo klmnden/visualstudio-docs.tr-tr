@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a69b6fd2f96f737d032676e5cd250a985bf69fb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446472"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
    Grafik araçları özelliğinin de, Windows 10 SDK'yı yüklediğinizde otomatik olarak yüklenir.
 
 > [!TIP]
->  Windows 10 'un isteğe bağlı grafik araçları özelliğinin basit yakalama ve kayıttan yürütme işlevlerini sağlar — komut satırı yakalama program gibi **dxcap.exe**— desteği, test etme ve tanılama senaryoları kullanılabilir makineler, geliştirici araçları yüklü değil. Daha fazla bilgi için [komut satırı Yakalama aracı](../debugger/command-line-capture-tool.md) konu.
+> Windows 10 'un isteğe bağlı grafik araçları özelliğinin basit yakalama ve kayıttan yürütme işlevlerini sağlar — komut satırı yakalama program gibi **dxcap.exe**— desteği, test etme ve tanılama senaryoları kullanılabilir makineler, geliştirici araçları yüklü değil. Daha fazla bilgi için [komut satırı Yakalama aracı](../debugger/command-line-capture-tool.md) konu.
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>İlk kez grafik tanılamayı kullanma
  İhtiyacınız olan her şey sahip olduğunuza göre grafik Tanılama'yı kullanmaya başlamak hazırsınız. Şu adımları izlemeniz yeterlidir.
@@ -80,7 +80,7 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
  Artık ilk grafik tanılama oturumunuzu başlamak hazırsınız. Visual Studio'da ana menüde seçin **hata ayıklama, grafik tanılamayı Başlat**, veya tuşuna basarak **Alt + F5 tuşlarına**. Bu, uygulamanızı grafik tanılama altında başlar ve Visual Studio'da Tanılama oturumu windows görüntüler.
 
 > [!IMPORTANT]
->  Uygulamanızı Windows 10'da çalıştırıyorsanız ve isteğe bağlı grafik araçları özelliğinin henüz yüklemediyseniz, bunu şimdi yapmak istenir. Windows 10'da grafik tanılama kullanmadan önce yüklemeniz gerekir.
+> Uygulamanızı Windows 10'da çalıştırıyorsanız ve isteğe bağlı grafik araçları özelliğinin henüz yüklemediyseniz, bunu şimdi yapmak istenir. Windows 10'da grafik tanılama kullanmadan önce yüklemeniz gerekir.
 
 ### <a name="3---capture-frames"></a>3 - kareleri yakalayın
  Uygulamanız başlar başlamaz kareleri yakalayın hazırsınız demektir.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445848"
 ---
 # <a name="customizing-the-model-explorer"></a>Model Gezginini Özelleştirme
 İçin etki alanına özgü dil Tasarımcısı görünümünü ve davranışını Gezginin şu şekilde değiştirebilirsiniz:
@@ -59,7 +59,7 @@ ms.locfileid: "60058013"
     Gezgin üç göstermelidir **aktör** simge olan düğümleri.
 
 > [!NOTE]
->  Oluşturulan Gezgini'nde görüntülenen herhangi bir öğe için bir düğüm simgesi ayarlarsanız, tüm Gezgini düğümleri simgesi görüntüler. Herhangi bir simge ayarlarsanız düğümleri varsayılan simge görüntüler.
+> Oluşturulan Gezgini'nde görüntülenen herhangi bir öğe için bir düğüm simgesi ayarlarsanız, tüm Gezgini düğümleri simgesi görüntüler. Herhangi bir simge ayarlarsanız düğümleri varsayılan simge görüntüler.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Bir Gezgini düğümünde görüntülenen adını değiştirme
  Model öğelerinin adlarını gezgininizde nasıl görüntüleneceğini değiştirebilirsiniz. Aşağıdaki yordamı, adını görüntülemek gösterilmektedir **görev** tarafından başvurulan bir **yorum** açıklama düğümünde.

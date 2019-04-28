@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442122"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama gelişt
   Tüm Xamarin özellikleriyle birlikte çalışabilirsiniz [herhangi bir Visual Studio 2015 sürümünü](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional ve Enterprise). Ayrıca, 31 Mart 2016,'dan itibaren Xamarin ile Visual Studio 2015'in tüm sürümleri dahil edilir ve artık ayrı bir lisans gerektirdiği unutmayın. Visual Studio 2013 için Xamarin'i yükleyin ayrı ayrı olarak [Kurulum ve yükleme](../cross-platform/setup-and-install.md) konu başlığı altında açıklanır.  
   
 > [!NOTE]
->  Bu yönergeler, Windows ve Visual Studio arka plan sahip olanlar için kolay ve en kolay bilgisayar yapılandırması açıklanmaktadır. İnternet paylaşımlı cihaz ve iOS simülatörü kullanmak için bir Mac ile etkileşim kurmak yalnızca gerekir çünkü bu yapılandırma ile genel geliştirme deneyimini basitleştirilmiştir. Bunun yerine bir Mac arka planından geliyorsa, Visual Studio Parallels/VMWare içinde çalışan veya Xamarin Studio Community kullanımına öneririz. Başvurmak [Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için](../cross-platform/setup-install-and-verifications-for-mac-users.md) yönergeler için.  
+> Bu yönergeler, Windows ve Visual Studio arka plan sahip olanlar için kolay ve en kolay bilgisayar yapılandırması açıklanmaktadır. İnternet paylaşımlı cihaz ve iOS simülatörü kullanmak için bir Mac ile etkileşim kurmak yalnızca gerekir çünkü bu yapılandırma ile genel geliştirme deneyimini basitleştirilmiştir. Bunun yerine bir Mac arka planından geliyorsa, Visual Studio Parallels/VMWare içinde çalışan veya Xamarin Studio Community kullanımına öneririz. Başvurmak [Kurulum, yükleme ve Doğrulamalar Mac kullanıcıları için](../cross-platform/setup-install-and-verifications-for-mac-users.md) yönergeler için.  
   
 > [!NOTE]
->  HTML ve CSS tabanlı bir platformlar arası geliştirme çözümü arıyorsanız, Visual Studio Araçları Apache Cordova için açıklandığı gibi kontrol [Visual Studio'da platformlar arası geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> HTML ve CSS tabanlı bir platformlar arası geliştirme çözümü arıyorsanız, Visual Studio Araçları Apache Cordova için açıklandığı gibi kontrol [Visual Studio'da platformlar arası geliştirme](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

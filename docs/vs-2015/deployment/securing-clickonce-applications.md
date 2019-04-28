@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445030"
 ---
 # <a name="securing-clickonce-applications"></a>ClickOnce Uygulamalarının Güvenliğini Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076204"
  Bir komut satırı veya veritabanı için olan sorgu dizesi aracılığıyla elde edilen bağımsız değişkenleri güvenli oldukları konusunda emin olmadan geçirmeyin. Güvenli olmayan bağımsız değişkenler rasgele komutları çalıştırarak uygulamanızı yönetmek için kötü amaçlı kullanıcılara izin verebilecek veritabanı ve komut satırı kaçış karakterlerini içeren dizelerdir.  
   
 > [!NOTE]
->  Sorgu dizesi bağımsız değişkenler bağımsız değişkenler tek yolu bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamasına başlangıçta. Bağımsız değişken geçiremezsiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] komut satırından uygulama.  
+> Sorgu dizesi bağımsız değişkenler bağımsız değişkenler tek yolu bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamasına başlangıçta. Bağımsız değişken geçiremezsiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] komut satırından uygulama.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Gizlenmiş (Obfuscated) Derlemeleri Dağıtma  
  Başkaları tarafından kod üzerine tersine mühendislik yapılmasını engellemek için Dotfuscator kullanarak uygulamanızı gizleyebilirsiniz. Bunun yanında, derleme gizleme Visual Studio IDE veya ClickOnce dağıtım sürecine tümleşikleştirilmemiştir. Bu nedenle, gizleme işlemini dağıtım sürecinin dışında belki bir bağlama sonrası adımı kullanarak gerçekleştirebilirsiniz. Projeyi derledikten sonra, aşağıdaki adımları Visual Studio'nun dışında el ile gerçekleştirmelisiniz.  

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5589c587437fc75059e296b17838798b9d169812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b1aa0eafe321f41d5f9dcf9622e44f9079fc946
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423005"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_isSplitted(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  [Idiasymbol::get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md) yöntemi döndürür `TRUE` bölünmüş sembol parçası olan tüm sembolleri için.  

@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437937"
 ---
 # <a name="graphics-frame-analysis"></a>Grafik Çerçeve Analizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053539"
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.  
   
 > [!IMPORTANT]
->  Grafik Çözümleyicisi çerçeve analizi Direct3D 11 Windows 10 dahil olmak üzere, desteklenen platformlarda kullanan uygulamaları destekler. Çerçeve analizi Direct3D 12 kullanan uygulamalar için şu anda desteklenmiyor.  
+> Grafik Çözümleyicisi çerçeve analizi Direct3D 11 Windows 10 dahil olmak üzere, desteklenen platformlarda kullanan uygulamaları destekler. Çerçeve analizi Direct3D 12 kullanan uygulamalar için şu anda desteklenmiyor.  
   
 ## <a name="frame-analysis"></a>Çerçeve analizi  
  Çerçeve analizi tanılama amacıyla bir grafik günlük dosyasında yakalanır ama bunun yerine işleme performansını özetlemek için kullandığı aynı olan bilgileri kullanır. Performans bilgilerini yakalama sırasında günlüğe kayıtlı değil; Çerçeve kayıttan gibi bunun yerine performans bilgileri daha sonra çerçeve analizi sırasında zamanlama olayları ve toplama istatistiklerini tarafından oluşturulur. Bu yaklaşım, yakalama sırasında performans bilgilerini kaydetme üzerinde çeşitli avantajları vardır:  
@@ -118,7 +118,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
  Donanım sayaç bilgileri, performans sorunlarına neden çok kesin olarak belirlemenize yardımcı olabilecek her çizim çağrısı için belirli donanım platformlar davranışı çok ayrıntılı bir görünümünü sağlar.  
   
 > [!NOTE]
->  Farklı donanım platformları farklı sayaçları desteği: Standart yoktur. Sayaçlar ve neyi gösterdikleri yalnızca her GPU üreticisi tarafından belirlenir.  
+> Farklı donanım platformları farklı sayaçları desteği: Standart yoktur. Sayaçlar ve neyi gösterdikleri yalnızca her GPU üreticisi tarafından belirlenir.  
   
 ### <a name="marker-regions-and-events"></a>İşaret bölgeler ve olaylar  
  Çerçeve analizi, kullanıcı tanımlı olay işaretçileri ve olay gruplarını destekler. Bunlar, Özet tablosunu ve ayrıntı tabloları görüntülenir.  
@@ -145,7 +145,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir. Derinlik kapatma sorguları — piksel Occluded sayaç gerekli —, özellik düzeyi 9.2 veya üzeri destekleyen platformlarında desteklenir.  
   
 > [!NOTE]
->  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir ancak doğruluğunu ve zaman damgaları tutarlılık platformdan platforma değişir.  
+> Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir ancak doğruluğunu ve zaman damgaları tutarlılık platformdan platforma değişir.  
   
 ### <a name="gpu-counters"></a>GPU sayaçları  
  GPU donanım sayaçları desteği donanım bağlıdır.  
@@ -159,7 +159,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   Çerçeve analizi destekleyen herhangi bir platform GPU donanım sayaçlarını toplar.  
   
 > [!NOTE]
->  GPU donanım sayaçları donanım kaynaklar olduğundan, uygulamanın her işleme değişken için donanım sayaçları kümesinin tamamını toplamak için birden çok geçiş sürebilir. Sonuç olarak, hangi GPU'yu sayaçlar toplanır belirtilmeyen sırasıdır.  
+> GPU donanım sayaçları donanım kaynaklar olduğundan, uygulamanın her işleme değişken için donanım sayaçları kümesinin tamamını toplamak için birden çok geçiş sürebilir. Sonuç olarak, hangi GPU'yu sayaçlar toplanır belirtilmeyen sırasıdır.  
   
 ### <a name="windows-phone"></a>Windows phone  
  Zaman damgaları ve kapatma sorgu GPU donanım sayaçları yalnızca ilk olarak Windows Phone 8.1 ile birlikte Windows Phone ahizeleri üzerinde desteklenir. Çerçeve analizi günlük dosyası grafikleri kayıttan yürütmek için bu gerektirir. İlk olarak Windows Phone 8 ile birlikte gelen Windows Phone ahizeleri, hatta Windows Phone 8.1 için güncelleştirilmiş ahizeleri için çerçeve analizi desteklemez.  
@@ -174,13 +174,13 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
  Kayıttan yürütme makinesi desteklediğinden daha yüksek bir özellik düzeyi kullanan bir grafik günlük dosyasını kayıttan yürütürken grafik Çözümleyicisi'nde, otomatik olarak geri için WARP döner. Çerçeve analizi, açıkça için WARP dönmesi değil ve bir hata oluşturur — WARP, Direct3D uygulamanızı doğruluğunu İnceleme için ancak performansı inceleniyor değil için kullanışlıdır.  
   
 > [!NOTE]
->  Özellik düzeyinde sorunları akılda tutulması gereken önemli olsa da, yakalama ve günlük dosyaları farklı donanım yapılandırmaları ve cihazlarda grafikleri kayıttan yürütme. Örneğin, bir Windows Phone üzerinde grafik bilgisi yakalamak ve bir masaüstü bilgisayarda yürütmek ve tersi de desteklenir. Her iki durumda da, grafik günlüğü günlük dosyası değil veya API'leri içeren kayıttan yürütme makinesinde desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.  
+> Özellik düzeyinde sorunları akılda tutulması gereken önemli olsa da, yakalama ve günlük dosyaları farklı donanım yapılandırmaları ve cihazlarda grafikleri kayıttan yürütme. Örneğin, bir Windows Phone üzerinde grafik bilgisi yakalamak ve bir masaüstü bilgisayarda yürütmek ve tersi de desteklenir. Her iki durumda da, grafik günlüğü günlük dosyası değil veya API'leri içeren kayıttan yürütme makinesinde desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 ve daha düşük  
  Çerçeve analizi yalnızca Direct3D 11 API'si için desteklenir. Uygulamanızı Direct3D 10 API'sini çağırıyorsa, çerçeve analizi tanı veya tanınır ve diğer grafik Çözümleyicisi araçları tarafından kullanılan olsa da bunları profil olmaz. Uygulamanız Direct3D11 hem Direct3D 10 API'leri kullanıyorsa, Direct3D 11 çağrıları profillenen.  
   
 > [!NOTE]
->  Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları özellik düzeylerini geçerlidir. Direct3D 11, Direct3D 11.1 ve Direct3D 11.2 API kullanmakta olduğunuz sürece, ne olursa olsun istediğiniz özellik düzeyi ve çerçeve analizi yalnızca çalışır kullanabilirsiniz.  
+> Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları özellik düzeylerini geçerlidir. Direct3D 11, Direct3D 11.1 ve Direct3D 11.2 API kullanmakta olduğunuz sürece, ne olursa olsun istediğiniz özellik düzeyi ve çerçeve analizi yalnızca çalışır kullanabilirsiniz.  
   
 ## <a name="Variants"></a> Çeşitleri  
  Çerçeve analizi bir kare, oynatma sırasında işlenir şekilde yaptığı her değişiklik olarak bilinen bir *değişken*. Çerçeve analizi inceler çeşitleri için uygulamanızın görsel kaliteyi ve işleme performansını iyileştirmek için yapabileceğiniz ortak, görece kolay değişiklikler karşılık gelen — örneğin, dokular boyutunu küçültme, doku sıkıştırma kullanmayı veya etkinleştirme Düzgünleştirme farklı türde. Çeşitleri normal işleme bağlamını ve uygulama parametreleri geçersiz. Bir özeti aşağıda verilmiştir:  

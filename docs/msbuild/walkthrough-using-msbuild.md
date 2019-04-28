@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445299"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -130,7 +130,7 @@ MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla
  Nden Msbuild'i çalıştırın **Geliştirici komut istemi** yukarıda tanımlanan HelloWorld hedefini oluşturmak Visual Studio için. Kullanım hedefi seçmek için hedef veya -t komut satırı anahtarı.
 
 > [!NOTE]
->  Anılacaktır **Geliştirici komut istemi** olarak **komut penceresi** aşağıdaki bölümlerde yer.
+> Anılacaktır **Geliştirici komut istemi** olarak **komut penceresi** aşağıdaki bölümlerde yer.
 
 **Hedefi oluşturmak için**
 
@@ -156,7 +156,7 @@ MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla
     ```
 
 > [!NOTE]
->  Bunun yerine, görürseniz `The target "HelloWorld" does not exist in the project` büyük olasılıkla proje dosyasını Kod düzenleyicisinde kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.
+> Bunun yerine, görürseniz `The target "HelloWorld" does not exist in the project` büyük olasılıkla proje dosyasını Kod düzenleyicisinde kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.
 
  Kod düzenleyicisi ve komut penceresi arasında değişerek proje dosyasını değiştirebilir ve sonuçları hızlı bir şekilde görebilirsiniz.
 
@@ -239,7 +239,7 @@ $(PropertyName)
     ::: moniker-end
 
 > [!NOTE]
->  Bu satırları görmüyorsanız, büyük olasılıkla kod düzenleyicisinde proje dosyasını kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.
+> Bu satırları görmüyorsanız, büyük olasılıkla kod düzenleyicisinde proje dosyasını kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.
 
 ### <a name="conditional-properties"></a>Koşullu Özellikler
 
@@ -337,7 +337,7 @@ Daha fazla bilgi için [MSBuild özel karakterleri](../msbuild/msbuild-special-c
 Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).
 
 > [!NOTE]
->  Dosya yolları MSBuild proje dosyasını içeren klasörle ilişkilidir.
+> Dosya yolları MSBuild proje dosyasını içeren klasörle ilişkilidir.
 
 ## <a name="examine-item-type-values"></a>Öğe türü değerlerini İnceleme
 

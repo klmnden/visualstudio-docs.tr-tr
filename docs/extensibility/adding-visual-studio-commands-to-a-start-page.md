@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68bea9ff0d91819146cc5d89167373e0e8ed6f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410110"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Visual Studio komutları için bir başlangıç sayfası Ekle
 
@@ -50,7 +50,7 @@ Kullanabileceğiniz `vscom:` Visual Studio komutları için XAML bağlamak için
 ```
 
 > [!NOTE]
->  `x:` Tüm komutları başında XAML şemaya gösterir, diğer ad gereklidir.
+> `x:` Tüm komutları başında XAML şemaya gösterir, diğer ad gereklidir.
 
  Değerini ayarlayabilirsiniz `Command` erişilebilen herhangi bir komuta özelliği **komut** penceresi. Kullanılabilir komutların bir listesi için bkz. [Visual Studio komut diğer adları](../ide/reference/visual-studio-command-aliases.md).
 
@@ -66,7 +66,7 @@ Kullanabileceğiniz `vscom:` Visual Studio komutları için XAML bağlamak için
  Diğer Visual Studio komutları çağırmak için kullanılan aynı sözdizimini kullanarak kayıtlı VSPackages komutları çağırabilirsiniz. Yüklü bir VSPackage ekler, örneğin, bir **giriş sayfası** komutunu **görünümü** menüsünde ayarlayarak bu komut çağırabilirsiniz `CommandParameter` için `View.HomePage`.
 
 > [!NOTE]
->  VSPackage'ı ile ilişkili bir komut çağırırsanız, komut çağrıldığında paketin yüklenmesi gerekir.
+> VSPackage'ı ile ilişkili bir komut çağırırsanız, komut çağrıldığında paketin yüklenmesi gerekir.
 
 ## <a name="add-commands-from-assemblies"></a>Derlemelerden komutları eklendi
  Bir komutu bir derlemeden veya vspackage'ta bir menü komutu ile ilişkilendirilmemiş erişim kodu çağırmak için derleme için bir diğer ad oluşturmak ve diğer ad'ı çağırın.
@@ -90,7 +90,7 @@ Kullanabileceğiniz `vscom:` Visual Studio komutları için XAML bağlamak için
     ```
 
 > [!NOTE]
->  Derlemenizi kopyalayın ve ardından yapıştırın *... \\{Visual Studio yükleme klasörü} \Common7\IDE\PrivateAssemblies\* bunu çağrılmadan önce yüklendiği emin olmak için.
+> Derlemenizi kopyalayın ve ardından yapıştırın *... \\{Visual Studio yükleme klasörü} \Common7\IDE\PrivateAssemblies\* bunu çağrılmadan önce yüklendiği emin olmak için.
 
 ## <a name="add-commands-with-the-dte-object"></a>DTE nesnesi ile komutları eklendi
  Bir başlangıç sayfası, hem işaretleme ve kod DTE nesnesine erişebilir.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440356"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Form bölgesini Outlook ileti sınıfıyla ilişkilendirme
   Form bölgesi her bir öğenin ileti sınıfıyla ilişkilendirme tarafından bir form bölgesi hangi Microsoft Office Outlook öğeleri görüntülemek belirtebilirsiniz. Örneğin, bir posta öğesinin altına bir form bölgesi eklemek istiyorsanız, form bölgesi ile ilişkilendirebilirsiniz `IPM.Note` ileti sınıfı.
@@ -45,7 +45,7 @@ ms.locfileid: "60063549"
  Özel ileti sınıfların adlarını belirtebilirsiniz. Outlook'ta tanımladığınız özel formlar özel ileti sınıflarını tanımlayın.
 
 > [!NOTE]
->  Değiştirme ve tümünü değiştirme form bölgeleri için yeni bir özel ileti sınıfı adı belirtebilirsiniz. Var olan bir özel formu ileti sınıfı adını kullanın gerekmez. Özel ileti sınıfı adı benzersiz olmalıdır. Adının benzersiz olduğundan emin olmanın bir yolu, aşağıdakine benzer bir adlandırma kuralı kullanmaktır: \<*StandardMessageClassName*>.\< *Şirket*>.\< *MessageClassName*> (örneğin: `IPM.Note.Contoso.MyMessageClass`).
+> Değiştirme ve tümünü değiştirme form bölgeleri için yeni bir özel ileti sınıfı adı belirtebilirsiniz. Var olan bir özel formu ileti sınıfı adını kullanın gerekmez. Özel ileti sınıfı adı benzersiz olmalıdır. Adının benzersiz olduğundan emin olmanın bir yolu, aşağıdakine benzer bir adlandırma kuralı kullanmaktır: \<*StandardMessageClassName*>.\< *Şirket*>.\< *MessageClassName*> (örneğin: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Form bölgesini Outlook ileti sınıfıyla ilişkilendirme
  Form bölgesini ileti sınıfıyla ilişkilendirme iki yolu vardır:
@@ -76,7 +76,7 @@ ms.locfileid: "60063549"
   **Yeni Outlook Form bölgesi** Sihirbazı tıkladığınızda giriş biçimini doğrular **son**.
 
 > [!NOTE]
->  **Yeni Outlook Form bölgesi** Sihirbazı sağlayan ileti sınıf adları doğru ya da geçerli olduğunu doğrulamaz.
+> **Yeni Outlook Form bölgesi** Sihirbazı sağlayan ileti sınıf adları doğru ya da geçerli olduğunu doğrulamaz.
 
  Sihirbazı tamamladığınızda **yeni Outlook Form bölgesi** sihirbaz, belirtilen ileti sınıfı adları içeren form bölgesi sınıfı öznitelikleri uygular. Bu öznitelikleri el ile de uygulayabilirsiniz.
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063549"
   Proje oluşturduğunuzda, visual Studio ileti sınıf adları biçimini doğrular.
 
 > [!NOTE]
->  Visual Studio sağlayan ileti sınıf adları doğru ya da geçerli olduğunu doğrulamaz.
+> Visual Studio sağlayan ileti sınıf adları doğru ya da geçerli olduğunu doğrulamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)

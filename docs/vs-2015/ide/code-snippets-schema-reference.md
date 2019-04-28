@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436235"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod Parçacıkları Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IntelliSense kod parçacıkları, ile uygulamanıza eklenmeye hazır önceden ya
  Kod parçacığının başvurduğu derlemenin adını belirtir.  
   
 > [!NOTE]
->  `Assembly` Öğesi yalnızca Visual Basic kod parçacıkları tarafından desteklenir.  
+> `Assembly` Öğesi yalnızca Visual Basic kod parçacıkları tarafından desteklenir.  
   
  Metin değeri **derleme** öğedir derlemenin kolay adı gibi `System.dll`, ya da tanımlayıcı gibi ad `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Değişmez değer veya nesne Visual Studio'da odağa geldiğinde yürütülecek bir işlevi belirtir.  
   
 > [!NOTE]
->  `Function` Öğesi yalnızca Visual C# kod parçacıkları desteklenir.  
+> `Function` Öğesi yalnızca Visual C# kod parçacıkları desteklenir.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Bir kod parçacığı hakkında daha fazla bilgi sağlayan URL'yi belirtir.  
   
 > [!NOTE]
->  Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.  
+> Visual Studio kullanmayan `HelpUrl` öğesi. Öğe, IntelliSense Kod Parçacığı XML şemasının bir parçasıdır ve öğeyi içeren her kod parçacığı doğrulanacaktır, ancak öğenin değeri hiçbir zaman kullanılmaz.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Bir IntelliSense Kod Parçacığı tarafından kullanılan içeri aktarılan ad alanlarını belirtir.  
   
 > [!NOTE]
->  `Import` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `Import` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Grupları tek tek `Import` öğeleri.  
   
 > [!NOTE]
->  `Imports` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `Imports` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Kod parçacığının derlenip çalışması için içeri aktarılması gereken ad alanını belirtir. Belirtilen ad alanı `Namespace` öğesi eklenen otomatik olarak bir `Imports` zaten yoksa, kod deyimi başında.  
   
 > [!NOTE]
->  `Namespace` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `Namespace` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Kod parçacığının gerek duyduğu derleme başvuruları hakkındaki bilgileri belirtir.  
   
 > [!NOTE]
->  `Reference` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `Reference` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Grupları tek tek `Reference` öğeleri.  
   
 > [!NOTE]
->  `References` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `References` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Kod parçacığını eklemek için kullanılan kısayol metnini belirtir. Metin değerini bir `Shortcut` öğesi yalnızca alfasayısal karakterler içerebilir tire (-) ve alt çizgi (_).  
   
 > [!CAUTION]
->  _ ve – C++ kod parçacığı kısayollarında desteklenmeyen karakterlerdir.  
+> _ ve – C++ kod parçacığı kısayollarında desteklenmeyen karakterlerdir.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Başvurulan derleme hakkında daha fazla bilgi sağlayan bir URL'yi belirtir.  
   
 > [!NOTE]
->  `Url` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
+> `Url` Öğesi yalnızca Visual Basic projeleri için desteklenir.  
   
 ```xml  
 <Url>  

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778498"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>Seçenekler, metin düzenleyici, JavaScript, doğrulama kodu
 Kullanım **kod doğrulama** sayfasının **seçenekleri** JavaScript hataları işleyecek şekilde etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **kod doğrulama** seçerek sayfası **Araçları** > **seçenekleri** menü çubuğu ve ardından genişletme **MetinDüzenleyicisi**  >  **JavaScript** > **doğrulama kodu.**

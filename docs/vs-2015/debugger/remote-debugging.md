@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446109"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Uzak Araçlar cihaz veya hata ayıklama veya, kaydetmek istediğiniz sunucu üze
 2. İndirme sayfasında, işletim sistemiyle (x 86, x64 veya sürüm ARM) eşleşen araçları sürümünü seçin ve uzak araçları indirmek.
   
     > [!IMPORTANT]
-    >  Visual Studio sürümünüzle eşleşen uzak Araçlar'ın en son sürümünü yüklemeniz önerilir. Eşleşmeyen sürümler önerilmez.  
+    > Visual Studio sürümünüzle eşleşen uzak Araçlar'ın en son sürümünü yüklemeniz önerilir. Eşleşmeyen sürümler önerilmez.  
     >   
     >  Ayrıca, yüklemek istediğiniz işletim sistemi olarak aynı mimariye sahip uzak araçları yüklemeniz gerekir. Diğer bir deyişle, bir 64-bit işletim sistemi çalıştıran bir uzak bilgisayarda bir 32 bit uygulama hata ayıklamak istiyorsanız, uzak bilgisayarda Uzak Araçlar'ın 64 bit sürümü yüklemeniz gerekir.  
   
@@ -145,7 +145,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
    Varsayılan olarak kullanılan bağlantı noktası numaraları listesi için bkz. [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya tehlikeli trafik karşı risk altında olduğunu eminseniz kimlik doğrulaması yok modu seçin.
+  > Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya tehlikeli trafik karşı risk altında olduğunu eminseniz kimlik doğrulaması yok modu seçin.
 
 ## <a name="bkmk_configureService"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırma
  ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıklayıcı yönetici olarak çalıştırın veya gerekir, her zaman çalışır, isterseniz, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırın.
@@ -221,7 +221,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 11. Visual Studio bilgisayarda yürütme kesme noktasında durdurulduğunu görmeniz gerekir.  
   
     > [!TIP]
-    >  Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.  
+    > Alternatif olarak, dosyaların ayrı bir adım olarak dağıtabilirsiniz. İçinde **Çözüm Gezgini** sağ **mymfc** düğümünü seçip **Dağıt**.  
   
     Uygulama tarafından kullanılması gereken kod dışı dosyalara varsa, bunları Visual Studio projenize eklemeniz gerekir. Ek dosyalar için bir proje klasörü oluşturun (içinde **Çözüm Gezgini**, tıklayın **Ekle / yeni klasör**.) Dosyaları klasöre eklersiniz (içinde **Çözüm Gezgini**, tıklayın **Ekle / var olanı öğesi**, ardından dosyaları seçin.). Üzerinde **özellikleri** sayfasında her dosya için **çıkış dizinine Kopyala** için **her zaman Kopyala**.  
   
@@ -253,7 +253,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 10. Yalnızca Visual Studio bilgisayarınızdan için yeni oluşturulan klasör uzak bilgisayarda oluşturulan yürütülebilir dosya kopyalayın.
   
     > [!CAUTION]
-    >  Değişiklik kod veya yeniden yapmayın (veya bu adımı tekrarlamalısınız). Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.
+    > Değişiklik kod veya yeniden yapmayın (veya bu adımı tekrarlamalısınız). Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.
 
     Projeyi el ile kopyalayın, Xcopy, Robocopy, Powershell veya diğer seçenekleri kullanın.
   

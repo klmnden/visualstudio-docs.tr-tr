@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409980"
 ---
 # <a name="launch-a-program"></a>Bir program Başlat
 Bir programda hata ayıklamak istediğiniz kullanıcıları basabilirsiniz **F5** IDE'den hata ayıklayıcıyı çalıştırmak için. Bu, bir dizi nihai olarak hangi sırayla bağlı veya bağlı, programa şu şekilde bir hata ayıklama altyapısı (DE), IDE'nin bağlanırken neden olayı başlar:
@@ -30,12 +30,12 @@ Bir programda hata ayıklamak istediğiniz kullanıcıları basabilirsiniz **F5*
     Bir DE belirtilmezse, bağlantı noktası programın çalışma zamanı ortamı yüklemeye neden programını başlatmak için işletim sistemi çağırır.
 
    > [!NOTE]
-   >  Bir programı başlatmak için kullanılan bir DE, aynı DE programa bağlı olasıdır.
+   > Bir programı başlatmak için kullanılan bir DE, aynı DE programa bağlı olasıdır.
 
 3. Olup DE veya bağlantı noktası program başlatıldı, bağlı olarak DE veya çalışma zamanı ortamı daha sonra bir program açıklaması veya düğümü oluşturur ve program çalışırken bağlantı noktasını bildirir.
 
    > [!NOTE]
-   >  Basit bir gösterimiyse hata ayıklaması yapılabilir bir program, program düğümü olduğu için çalışma zamanı ortamı program düğümü oluşturmanız önerilir. Yalnızca oluşturup bir program düğümünü kaydetmek için tüm DE yüklemek için gerek yoktur. DE tasarlanmışsa IDE, ancak hiçbir IDE sürecinde çalıştırmak için gerçekten çalıştıran, var. bağlantı noktasına bir program düğümü ekleyebilirsiniz bir bileşeni olması gerekir.
+   > Basit bir gösterimiyse hata ayıklaması yapılabilir bir program, program düğümü olduğu için çalışma zamanı ortamı program düğümü oluşturmanız önerilir. Yalnızca oluşturup bir program düğümünü kaydetmek için tüm DE yüklemek için gerek yoktur. DE tasarlanmışsa IDE, ancak hiçbir IDE sürecinde çalıştırmak için gerçekten çalıştıran, var. bağlantı noktasına bir program düğümü ekleyebilirsiniz bir bileşeni olması gerekir.
 
    Diğer programları yanı sıra yeni oluşturulan programı ilişkili ilgisi olmayan, başlatılan veya aynı IDE'den hata ayıklama oturumu oluşturmak için ekli.
 

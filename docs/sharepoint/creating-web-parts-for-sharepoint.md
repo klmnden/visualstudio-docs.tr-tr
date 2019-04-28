@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580960"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint için Web bölümleri oluşturma
   Web Bölümleri'ni kullanarak, içeriğini, görünümünü ve davranışını bir SharePoint sitesi sayfalarının bir tarayıcı kullanarak değiştirebilirsiniz. Web Bölümleri olan bir web bölümü sayfasının içinde çalışan sunucu tarafı denetimleri: bir SharePoint sitesinde görünen sayfaların yapı taşları oldukları. Bkz: [yapı taşı: Web Bölümleri](http://go.microsoft.com/fwlink/?LinkID=182097).

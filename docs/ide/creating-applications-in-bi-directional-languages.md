@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793445"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 

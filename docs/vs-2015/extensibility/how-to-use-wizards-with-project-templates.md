@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432555"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: Sihirbazları Proje Şablonlarıyla Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
 1. Bir C# proje şablonu projesi oluşturma (Visual Studio'da **dosya / yeni / Project / Visual C# / genişletilebilirlik / C# proje şablonu**). Adlandırın **MyProjectTemplate**.  
   
     > [!NOTE]
-    >  Visual Studio SDK'yı yüklemeyi istenebilir. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
+    > Visual Studio SDK'yı yüklemeyi istenebilir. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
   
 2. Yeni projeye VSIX ekleme (**dosya / yeni / Project / Visual C# / genişletilebilirlik / VSIX projesi**) proje şablonu projesi olarak aynı çözüm içindeki (içinde **Çözüm Gezgini**, çözüm düğümü seçin sağ tıklatın ve seçin **Ekle / yeni proje**). Adlandırın **MyProjectWizard.**  
   

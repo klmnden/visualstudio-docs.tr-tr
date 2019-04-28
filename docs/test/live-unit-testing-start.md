@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787592"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 
@@ -34,7 +34,7 @@ Visual Basic çözümü indirilebileceğini [MicrosoftDocs/visualstudio-docs](ht
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu öğretici, .NET Core 2.0 iş yüküyle Visual Studio Enterprise Edition yüklediğinizi gerektirir.
+Bu öğretici, .NET Core 2.0 iş yüküyle Visual Studio Enterprise sürümünde yüklediğinizi gerektirir.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Çözüm ve sınıf kitaplığı projesi oluşturma
 
@@ -94,11 +94,11 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Boş b
 
    `StringLibrary` üç statik yöntemleri vardır:
 
-      - `StartsWithUpper` döndürür `true` Aksi halde, bir dizeyi büyük harfli bir karakterle; başlarsa döndürür `false`.
+   - `StartsWithUpper` döndürür `true` Aksi halde, bir dizeyi büyük harfli bir karakterle; başlarsa döndürür `false`.
 
-      - `StartsWithLower`döndürür `true` Aksi halde, bir dize bir küçük harf karakteri ile; başlarsa döndürür `false`.
+   - `StartsWithLower`döndürür `true` Aksi halde, bir dize bir küçük harf karakteri ile; başlarsa döndürür `false`.
 
-      - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
+   - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
 
 6. Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
 
@@ -140,11 +140,11 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Boş b
 
    `StringLibrary` üç statik yöntemleri vardır:
 
-      - `StartsWithUpper` döndürür `true` Aksi halde, bir dizeyi büyük harfli bir karakterle; başlarsa döndürür `false`.
+   - `StartsWithUpper` döndürür `true` Aksi halde, bir dizeyi büyük harfli bir karakterle; başlarsa döndürür `false`.
 
-      - `StartsWithLower`döndürür `true` Aksi halde, bir dize bir küçük harf karakteri ile; başlarsa döndürür `false`.
+   - `StartsWithLower`döndürür `true` Aksi halde, bir dize bir küçük harf karakteri ile; başlarsa döndürür `false`.
 
-      - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
+   - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
 
 6. StringLibrary projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri**. İçinde **uygulama** sekmesinde, metni silmek **kök ad alanı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi. Kök ad alanı tarafından tanımlanan [Namespace deyimi](/dotnet/visual-basic/language-reference/statements/namespace-statement) kaynak kodunda.
 

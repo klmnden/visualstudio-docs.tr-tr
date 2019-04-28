@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420194"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme
   Paket Tasarımcısı oluşturmak ve bir paket özelleştirmek için kullanabileceğiniz (*.wsp*). Örneğin, SharePoint Proje öğeleri ve Özellik Ekle, Web sunucusu çözümü dağıtıldığında sıfırlama ve dağıtım sunucusu türü,'nı belirtin.
@@ -47,7 +47,7 @@ ms.locfileid: "60074927"
 2. Paket genişletin Package.package genişletin ve ardından açın *Package.Template.xml* dosya.
 
     > [!NOTE]
-    >  Paket şablon bildirim XML dosyasını açtığınızda, dosyaları otomatik olarak doğrulanır ve Hata Listesi penceresinde görünen uyarıları gözardı edebilirsiniz.
+    > Paket şablon bildirim XML dosyasını açtığınızda, dosyaları otomatik olarak doğrulanır ve Hata Listesi penceresinde görünen uyarıları gözardı edebilirsiniz.
 
 ## <a name="change-the-manifest-template"></a>Bildirim şablonu değiştirme
  Visual Studio XML Düzenleyicisi'ni veya şablon bildirim bölmesini paket bildirim dosyasında XML kodunu değiştirebilirsiniz. XML kodu herhangi bir değişiklik, paket için paket bildirim dosyası kullanılarak birleştirilir.
@@ -68,7 +68,7 @@ ms.locfileid: "60074927"
  Paket Tasarımcısı devre dışı bırakabilir ve oluşturma *manifest.xml* el ile dosya. Bu yordamı gerçekleştirmek ilk kez geçerli ayarları paket Tasarımcısı içinde paket şablonu XML dosyasına kaydedilir. Ardından, değiştirebilir veya XML üzerine yazın.
 
 > [!NOTE]
->  Bu proje öğeleri ve özellikleri ekleyin veya paket Tasarımcısı devre dışı bırakıldığında, SharePoint Proje öğeleri ve Özellikler XML dosyasında kaldırırsanız, paketlenmiş değildir.
+> Bu proje öğeleri ve özellikleri ekleyin veya paket Tasarımcısı devre dışı bırakıldığında, SharePoint Proje öğeleri ve Özellikler XML dosyasında kaldırırsanız, paketlenmiş değildir.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Tasarımcı devre dışı bırakarak paket bildirim dosyasının üzerine yazmak için
 

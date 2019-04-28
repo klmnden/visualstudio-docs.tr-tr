@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443910"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Özellikler, Görev Listesi, Çıktı ve Seçenekler Pencerelerini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek y
 1. Adlı bir proje oluşturma **TodoList** VSIX şablonuyla ve adlı bir özel araç penceresi öğesi şablonu ekleme **TodoWindow**.  
   
     > [!NOTE]
-    >  Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="set-up-the-tool-window"></a>Araç penceresi ayarlama  
  Bir metin kutusunda, yeni bir ToDo öğesi, listesine yeni öğe eklemek için bir düğme ve listedeki öğeleri görüntülemek için bir ListBox türüne ekleyin.  
@@ -43,7 +43,7 @@ Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek y
 1. TodoWindow.xaml içinde düğme, metin kutusu ve StackPanel denetimlerini UserControl silin.  
   
     > [!NOTE]
-    >  Bu silmediği **button1_Click** olay işleyicisi, daha sonraki bir adımda yeniden kullanır.  
+    > Bu silmediği **button1_Click** olay işleyicisi, daha sonraki bir adımda yeniden kullanır.  
   
 2. Gelen **tüm WPF denetimleri** bölümünü **araç kutusu**, sürükleyin bir **tuval** kılavuz denetimi.  
   

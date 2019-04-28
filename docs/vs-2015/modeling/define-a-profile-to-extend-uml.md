@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433125"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>UML’yi genişletmek için profil tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
   Kendi profillerinizi ekibinize dağıtabilirsiniz. Her ekip üyesi profilinizi yükleyebilir. Bu, bunları düzenlemek ve stereotiplerini kullanan modelleri oluşturmak sağlar.  
   
 > [!NOTE]
->  Bir profil düzenleme ve model diğer kişilerle paylaşın, bir modelde stereotipleri uygularsanız, bunlar aynı profili kendi bilgisayarlarına yüklemeniz gerekir. Aksi halde, kullandığınız stereotipleri görme olanakları olmayacaktır.  
+> Bir profil düzenleme ve model diğer kişilerle paylaşın, bir modelde stereotipleri uygularsanız, bunlar aynı profili kendi bilgisayarlarına yüklemeniz gerekir. Aksi halde, kullandığınız stereotipleri görme olanakları olmayacaktır.  
   
  Bir profil genellikle daha büyük bir parçası olan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantısı. Örneğin, bazı bölümlerini koda bir model çeviren komut tanımlayabilirsiniz. Kullanıcıların çevirmek istedikleri paketlere uygulamaları gereken bir profil tanımlayabilirsiniz. Yeni komutunuz ile birlikte profilinizi tek bir dağıtmanız gerekir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] uzantısı.  
   
@@ -83,7 +83,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
 1. Visual Studio uzantı projesi oluşturun.  
   
    > [!NOTE]
-   >  Yüklemiş olmanız gerekir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] için bu yordamı kullanın.  
+   > Yüklemiş olmanız gerekir [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] için bu yordamı kullanın.  
   
    1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
@@ -194,7 +194,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
 2. Varsayılan profil dosyası ile aynı dizinde yeni bir dizin ekleyin.  
   
     > [!NOTE]
-    >  Visual Studio uzantı projesi kullanarak uzantı oluşturuyorsanız, projeye yeni bir klasör eklemek için Çözüm Gezgini'ni kullanın.  
+    > Visual Studio uzantı projesi kullanarak uzantı oluşturuyorsanız, projeye yeni bir klasör eklemek için Çözüm Gezgini'ni kullanın.  
   
 3. Yeni dizinin adını ISO kısa koduna yerelleştirilmiş kültür için gibi değiştirmek `bg` Bulgarca için veya `fr` Fransızca için. Bağımsız kültür kodu, genellikle iki harf, belirli bir kültür gibi kullanmalısınız `fr-CA`. Kültür kodları hakkında daha fazla bilgi için bkz. [CultureInfo.GetCultures yöntemi](http://go.microsoft.com/fwlink/?LinkId=160782), kültür kodlarının tam listesini sağlar.  
   
@@ -211,7 +211,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  İçine eklememelisiniz `extension.vsixmanifest` Profillerin yerelleştirilmiş sürümlerine başvuru. Kopyalanmış profil dosyaları ana klasördeki profil adıyla aynı olmalıdır.  
+    > İçine eklememelisiniz `extension.vsixmanifest` Profillerin yerelleştirilmiş sürümlerine başvuru. Kopyalanmış profil dosyaları ana klasördeki profil adıyla aynı olmalıdır.  
   
 5. Gibi kullanıcıya görünür olacak tüm parçaları hedef dile çevirerek profilin yeni kopyasını düzenleyin `displayName` öznitelikleri.  
   
@@ -247,7 +247,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
 ```  
   
 > [!NOTE]
->  Adlandırılan öznitelik `name` boşluklar veya noktalama işareti içermemelidir. Öznitelik `displayName`, kullanıcı arabiriminde görünen geçerli XML dizesi olmalıdır.  
+> Adlandırılan öznitelik `name` boşluklar veya noktalama işareti içermemelidir. Öznitelik `displayName`, kullanıcı arabiriminde görünen geçerli XML dizesi olmalıdır.  
   
  Her profil üç ana bölüm içerir. Ters sırada aşağıdakileri kullanabilirsiniz:  
   
@@ -310,7 +310,7 @@ Tanımlayabileceğiniz bir *UML profili* belirli amaçlar için standart model �
  `name` Özniteliği `metaclassMoniker` içindeki bir öğeye bir bağlantıdır `<metaClasses>` bölümü.  
   
 > [!NOTE]
->  Takma ad ile başlamalıdır `/yourProfileName/`burada `yourProfileName` tanımlanan `name` özniteliği ' % s'profil (Bu örnekte "CSharpProfile"). Bilinen ad, metaclasses bölümündeki girdilerin birinin adı ile sona erer.  
+> Takma ad ile başlamalıdır `/yourProfileName/`burada `yourProfileName` tanımlanan `name` özniteliği ' % s'profil (Bu örnekte "CSharpProfile"). Bilinen ad, metaclasses bölümündeki girdilerin birinin adı ile sona erer.  
   
  Her stereotip için uygulandığı herhangi bir model öğeye eklediği sıfır veya daha çok özelliği listeleyebilir. `<propertyType>` Tanımlanan türlerden biri için bir bağlantı içeren `<propertyTypes>` bölümü. Bağlantı aşağıdakilerden biri olması gereken bir `<externalTypeMoniker>` başvurmak için bir `<externalType>,` veya `<enumerationTypeMoniker>` başvurmak için bir `<enumerationType>`. Tekrar, bağlantı profilinizin adı ile başlar.  
   

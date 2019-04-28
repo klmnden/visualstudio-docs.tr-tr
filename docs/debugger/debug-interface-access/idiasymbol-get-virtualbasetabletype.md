@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be75efa175e281378e722e3d10a36cf4b612f7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: edbd1d8ae66e58611ab538cf0bfe695cb22b3412
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400878"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Bir sanal temel tablo işaretçi türünü alır.
@@ -40,7 +40,7 @@ HRESULT get_virtualBaseTableType(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
  Bir sanal temel tablo işaretçi (`vbtptr`), gizli bir işaretçi bir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] devralma sanal temel sınıflardan işleme vtable. A `vbtptr` devralınan sınıflar bağlı olarak farklı boyutlarda olabilir.

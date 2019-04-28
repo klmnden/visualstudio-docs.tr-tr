@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407591"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Windows Formunda hata ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.
@@ -112,7 +112,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
      Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Daha fazla bilgi için [kesme noktaları](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz.
 
     > [!NOTE]
-    >  Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.
+    > Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.
 
 2. ON **hata ayıklama** menüsünde seçin **Başlat**.
 

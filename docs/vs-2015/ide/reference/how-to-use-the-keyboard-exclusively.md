@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405921"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Nasıl yapılır: Yalnızca Klavyeyi Kullanma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60051589"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gidin ve tümleşik geliştirme ortamında (IDE) kodu kolaylaştıran birçok varsayılan kısayol tuş birleşimleri sağlar. Visual Studio'da kullanılan kısayol tuşları tam bir listesi için bkz. [varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Diğer Microsoft ürünleri için kullanılabilen klavye kısayolları hakkında daha fazla bilgi için bkz: [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="toolbox-controls"></a>Araç kutusu denetimleri  
  Bir form veya klavyeyi kullanarak Tasarımcısı araç kutusu denetim ekleyebilirsiniz.  

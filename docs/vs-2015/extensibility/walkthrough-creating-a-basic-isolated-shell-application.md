@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e92fa99a266dc1d1b537387f3dae848a6ecb285d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442278"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>İzlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
 ## <a name="creating-an-isolated-shell-solution"></a>Bir yalıtılmış Kabuk çözümü oluşturma  
  Bu bölümde, yalıtılmış Kabuk çözümünü oluşturmak için Visual Studio Kabuğu yalıtılmış proje şablonu kullanmayı gösterir. Çözüm, aşağıdaki projeler içeriyor:  
   
--   *SolutionName*. AboutBoxPackage proje Yardım/hakkında kutusu görünümünü özelleştirmenize olanak sağlar.  
+- *SolutionName*. AboutBoxPackage proje Yardım/hakkında kutusu görünümünü özelleştirmenize olanak sağlar.  
   
--   Yalıtılmış Kabuk uygulaması farklı bileşenleri tanımlayan source.extension.vsixmanifest dosyasını içeren ShellExtensionsVSIX projesi.  
+- Yalıtılmış Kabuk uygulaması farklı bileşenleri tanımlayan source.extension.vsixmanifest dosyasını içeren ShellExtensionsVSIX projesi.  
   
--   *SolutionName* yalıtılmış Kabuk uygulaması çağıran yürütülebilir dosya üreten bir proje. Bu proje, özelleşt görünümünü ve davranışını yalıtılmış Kabuk uygulaması sağlayan Kabuğu özelleştirme klasör içerir.  
+- *SolutionName* yalıtılmış Kabuk uygulaması çağıran yürütülebilir dosya üreten bir proje. Bu proje, özelleşt görünümünü ve davranışını yalıtılmış Kabuk uygulaması sağlayan Kabuğu özelleştirme klasör içerir.  
   
--   *SolutionName* etkin menü komutları ve yerelleştirilebilir dize tanımlayan bir uydu derleme oluşturan UI projesi.  
+- *SolutionName* etkin menü komutları ve yerelleştirilebilir dize tanımlayan bir uydu derleme oluşturan UI projesi.  
   
 #### <a name="to-create-a-basic-isolated-shell-solution"></a>Temel yalıtılmış Kabuk çözüm oluşturmak için  
   
-1.  Visual Studio'yu açın ve yeni bir proje oluşturun.  
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.  
   
-2.  İçinde **yeni proje** penceresini genişletin **diğer proje türleri** ardından **genişletilebilirlik**. Seçin **Visual Studio Kabuğu yalıtılmış** proje şablonu.  
+2. İçinde **yeni proje** penceresini genişletin **diğer proje türleri** ardından **genişletilebilirlik**. Seçin **Visual Studio Kabuğu yalıtılmış** proje şablonu.  
   
-3.  Projeyi adlandırın `MyVSShellStub` ve konumu belirtin. Emin olun **çözüm için dizin oluştur** denetlenir ve ardından **Tamam**.  
+3. Projeyi adlandırın `MyVSShellStub` ve konumu belirtin. Emin olun **çözüm için dizin oluştur** denetlenir ve ardından **Tamam**.  
   
      Yeni çözüm görünür **Çözüm Gezgini**.  
   
-4.  Çözümü derleyin ve yalıtılmış Kabuk uygulaması hata ayıklamaya başlayın.  
+4. Çözümü derleyin ve yalıtılmış Kabuk uygulaması hata ayıklamaya başlayın.  
   
      Visual Studio yalıtılmış Kabuğu görüntülenir. Başlık çubuğunda okur **MyVSShellStub**. Başlık çubuğu simgesi \MyVSShellStub\Resource Files\ApplicationIcon.ico oluşturulur.  
   
@@ -57,13 +57,13 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 #### <a name="to-customize-the-application-name-and-icon"></a>Uygulama adı ve simgesi özelleştirmek için  
   
-1.  In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2.  Değişiklik `AppName` öğe değeri **"AppName" = "Fabrikam müzik Editor"**  
+2. Değişiklik `AppName` öğe değeri **"AppName" = "Fabrikam müzik Editor"**  
   
-3.  Uygulama simgesi değiştirmek için farklı bir simgeye \MyVSShellStub\MyVSShellStub\MyVSShellStub\ dizinine kopyalayın. Mevcut ApplicationIcon.ico dosyayı ApplicationIcon1.ico için yeniden adlandırın. Yeni dosya için ApplicationIcon.ico yeniden adlandırın.  
+3. Uygulama simgesi değiştirmek için farklı bir simgeye \MyVSShellStub\MyVSShellStub\MyVSShellStub\ dizinine kopyalayın. Mevcut ApplicationIcon.ico dosyayı ApplicationIcon1.ico için yeniden adlandırın. Yeni dosya için ApplicationIcon.ico yeniden adlandırın.  
   
-4.  Çözümü derleyin ve hata ayıklamaya başlayın. Yalıtılmış Kabuğu IDE görünür. Başlık çubuğunda sözcükleri yanında, yeni simgesine sahip **Fabrikam müzik Düzenleyicisi**.  
+4. Çözümü derleyin ve hata ayıklamaya başlayın. Yalıtılmış Kabuğu IDE görünür. Başlık çubuğunda sözcükleri yanında, yeni simgesine sahip **Fabrikam müzik Düzenleyicisi**.  
   
 ## <a name="customizing-the-default-web-browser-home-page"></a>Varsayılan Web tarayıcısı giriş sayfasını özelleştirme  
  Bu bölümde, varsayılan giriş sayfası değiştirmek gösterilmektedir **Web tarayıcısı** paket tanımlama dosyasını değiştirerek penceresi.  
@@ -87,46 +87,46 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
   
 #### <a name="to-remove-the-print-command"></a>Yazdır komutu kaldırmak için  
   
-1.  Doğrulayın **yazdırma** komut görünür **dosya** yalıtılmış Kabuk uygulaması menüsünde.  
+1. Doğrulayın **yazdırma** komut görünür **dosya** yalıtılmış Kabuk uygulaması menüsünde.  
   
-2.  MyVSShellStubUI projesinde \Resource Files\MyVSShellStubUI.vsct düzenleme için açın.  
+2. MyVSShellStubUI projesinde \Resource Files\MyVSShellStubUI.vsct düzenleme için açın.  
   
-3.  Bu satırı açıklamadan çıkarın:  
+3. Bu satırı açıklamadan çıkarın:  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4.  Bu, yazdırma komutu kaldırır.  
+4. Bu, yazdırma komutu kaldırır.  
   
-5.  Yalıtılmış Kabuk uygulaması hatalarını ayıklamaya başlayın. Doğrulayın **dosya / yazdırma** komuttur kayboldu.  
+5. Yalıtılmış Kabuk uygulaması hatalarını ayıklamaya başlayın. Doğrulayın **dosya / yazdırma** komuttur kayboldu.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Yalıtılmış Kabuğu'ndan özellikleri kaldırma  
  Bazı özel yalıtılmış Kabuk uygulamanızda bu özellikleri istemiyorsanız .pkgundef dosyası düzenleyerek Visual Studio ile yüklenen paketler kaldırabilir. Paketi $RootKey$ \Packages kayıt defteri anahtarının alt anahtarlarından birini belirtin.  
   
 > [!NOTE]
->  Visual Studio GUID'leri özellikleri bulmak için bkz: [paket GUID'leri, Visual Studio özellikleri](../extensibility/package-guids-of-visual-studio-features.md).  
+> Visual Studio GUID'leri özellikleri bulmak için bkz: [paket GUID'leri, Visual Studio özellikleri](../extensibility/package-guids-of-visual-studio-features.md).  
   
  Aşağıdaki yordam, yalıtılmış Kabuk düzenleyicisinden XML kaldırma gösterir.  
   
 #### <a name="to-remove-the-xml-editor"></a>XML Düzenleyicisi'ni kaldırmak için  
   
-1.  MyVSShellStub projenin Kabuğu özelleştirme klasöründeki MyVSShellStub.pkgundef dosyasını açın.  
+1. MyVSShellStub projenin Kabuğu özelleştirme klasöründeki MyVSShellStub.pkgundef dosyasını açın.  
   
-2.  Aşağıdaki satırı açıklamadan çıkarın:  
+2. Aşağıdaki satırı açıklamadan çıkarın:  
   
      [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
-3.  Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın. Örneğin, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct bir XML dosyasını açın. XML dosyasındaki anahtar sözcükleri yok renklendirilmiş doğrulayın ve söz konusu yazarak "<" bir satıra XML tooltips neden olmaz.  
+3. Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın. Örneğin, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct bir XML dosyasını açın. XML dosyasındaki anahtar sözcükleri yok renklendirilmiş doğrulayın ve söz konusu yazarak "<" bir satıra XML tooltips neden olmaz.  
   
 ## <a name="customizing-the-helpabout-box"></a>Özelleştirme Yardım/hakkında kutusu  
  Özelleştirebileceğiniz Yardım/hakkında kutusu, yalıtılmış Kabuk proje şablonunun bir parçası oluşturulur.  
   
 #### <a name="to-customize-the-company-name"></a>Şirket adı özelleştirmek için  
   
-1.  Şirket adı, telif hakkı bilgileri, ürün sürümü ve ürün açıklaması MyVSShellStub.AboutBoxPackage projesinde \Properties\AssemblyInfo.cs dosyasında bulunamadı. Bu dosyayı açın.  
+1. Şirket adı, telif hakkı bilgileri, ürün sürümü ve ürün açıklaması MyVSShellStub.AboutBoxPackage projesinde \Properties\AssemblyInfo.cs dosyasında bulunamadı. Bu dosyayı açın.  
   
-2.  Değişiklik `AssemblyCompany` değerini **Fabrikam**, `AssemblyProduct` ve `AssemblyTitle` değerler **Fabrikam müzik Düzenleyicisi**ve `AssemblyCopyright` değerini **telif hakkı © Fabrikam 2015**:  
+2. Değişiklik `AssemblyCompany` değerini **Fabrikam**, `AssemblyProduct` ve `AssemblyTitle` değerler **Fabrikam müzik Düzenleyicisi**ve `AssemblyCopyright` değerini **telif hakkı © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3.  Ürün açıklamasını eklemek, değiştirmek `AssemblyDescription` değerini **Fabrikam müzik Düzenleyicisi açıklaması.**:  
+3. Ürün açıklamasını eklemek, değiştirmek `AssemblyDescription` değerini **Fabrikam müzik Düzenleyicisi açıklaması.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4.  Yalıtılmış Kabuk uygulaması içinde açın ve hata ayıklamayı Başlat **Yardım / hakkında** kutusu. Değiştirilen dizelerin görmeniz gerekir. Yardım/hakkında kutusu başlığı aynıdır `AssemblyTitle` AssemblyInfo.cs değeri.  
+4. Yalıtılmış Kabuk uygulaması içinde açın ve hata ayıklamayı Başlat **Yardım / hakkında** kutusu. Değiştirilen dizelerin görmeniz gerekir. Yardım/hakkında kutusu başlığı aynıdır `AssemblyTitle` AssemblyInfo.cs değeri.  
   
-5.  Özelliklerini **Yardım/hakkında** kendisi MyVSShellStub.AboutBoxPackage\AboutBox.xaml dosyasında bulunur. Yardım/hakkında kutusu genişliği değiştirmek için Git `AboutDialogStyle` engelleme ve ayarlama `Width` 200 özelliği:  
+5. Özelliklerini **Yardım/hakkında** kendisi MyVSShellStub.AboutBoxPackage\AboutBox.xaml dosyasında bulunur. Yardım/hakkında kutusu genişliği değiştirmek için Git `AboutDialogStyle` engelleme ve ayarlama `Width` 200 özelliği:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,7 +160,7 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
     </Style>  
     ```  
   
-6.  Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın. Yardım/hakkında kutusu yaklaşık kare olmalıdır.  
+6. Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın. Yardım/hakkında kutusu yaklaşık kare olmalıdır.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Yalıtılmış Kabuk uygulaması dağıtmadan önce  
  Visual Studio Kabuğu (yalıtılmış) yeniden dağıtılabilir paketi olan herhangi bir bilgisayarda, yalıtılmış Kabuk uygulaması yüklenebilir. Yeniden dağıtılabilir paketi hakkında daha fazla bilgi için bkz: [Visual Studio genişletilebilirlik indirmeleri](http://go.microsoft.com/fwlink/?LinkID=119298) Web sitesi.  
@@ -185,50 +185,50 @@ Bu izlenecek yol, yalıtılmış Kabuk çözümünü oluşturun, Yardım konusu 
     InstallShield Limited Edition zaten yüklü değilse InstallShield karşıdan yükleme sayfası görüntülenir. İndirip Visual Studio sürümünüzle uyumlu InstallShield sürümünü seçerek bu ürünü yüklemek için yönergeleri izleyin. InstallShield yüklemenizin kaydetmek veya değerlendirme sürümü kullanmak karar vermeniz gerekir. Yüklemeyi tamamladıktan sonra Visual Studio'yu yeniden başlatmanız gerekir.  
   
    > [!IMPORTANT]
-   >  InstallShield projesi oluşturmadan önce Visual Studio'yu yönetici olarak başlatmanız gerekir. Bunu yaparsanız projeyi oluşturduğunuzda bir hata alırsınız.  
+   > InstallShield projesi oluşturmadan önce Visual Studio'yu yönetici olarak başlatmanız gerekir. Bunu yaparsanız projeyi oluşturduğunuzda bir hata alırsınız.  
   
    Sonraki adımlar, Kurulum projesini yapılandırma gösterilmektedir.  
   
 > [!IMPORTANT]
->  Kurulum projesi yapılandırmadan önce en az bir kez sürüm yapılandırmasını yalıtılmış Kabuk projenizin oluşturduğunuzdan emin olun.  
+> Kurulum projesi yapılandırmadan önce en az bir kez sürüm yapılandırmasını yalıtılmış Kabuk projenizin oluşturduğunuzdan emin olun.  
   
 #### <a name="to-configure-the-setup-project"></a>Kurulum projesi yapılandırmak için  
   
-1.  İçinde **Çözüm Gezgini**altında **MySetup** projesinin **proje Yardımcısı**. En alttaki **proje Yardımcısı** penceresinde seçin **uygulama bilgilerini**. Girin **Fabrikam** şirket adınızı olarak ve **Fabrikam müzik Düzenleyicisi** olarak uygulamanızın adı. Sağ alt köşesindeki ileri oku seçin **proje Yardımcısı**.  
+1. İçinde **Çözüm Gezgini**altında **MySetup** projesinin **proje Yardımcısı**. En alttaki **proje Yardımcısı** penceresinde seçin **uygulama bilgilerini**. Girin **Fabrikam** şirket adınızı olarak ve **Fabrikam müzik Düzenleyicisi** olarak uygulamanızın adı. Sağ alt köşesindeki ileri oku seçin **proje Yardımcısı**.  
   
-2.  Seçin **Evet** altında **uygulamanızı herhangi bir yazılımı makinede yüklü olmasını gerektiriyor mu?** seçip **Microsoft .NET Framework 4.5 tam paket**.  
+2. Seçin **Evet** altında **uygulamanızı herhangi bir yazılımı makinede yüklü olmasını gerektiriyor mu?** seçip **Microsoft .NET Framework 4.5 tam paket**.  
   
-3.  Seçin **uygulama dosyaları** düğmesini pencerenin alt kısmında ve emin olun **Fabrikam müzik Düzenleyicisi** klasör seçili.  
+3. Seçin **uygulama dosyaları** düğmesini pencerenin alt kısmında ve emin olun **Fabrikam müzik Düzenleyicisi** klasör seçili.  
   
-4.  Seçin **Add Files** düğmesi. İçinde **Add Files** iletişim kutusunda, aşağıdaki dosyaları ekleyin **MyVSShellStub\Release** klasörü:  
+4. Seçin **Add Files** düğmesi. İçinde **Add Files** iletişim kutusunda, aşağıdaki dosyaları ekleyin **MyVSShellStub\Release** klasörü:  
   
-    1.  MyVSShellStub.exe.config  
+    1. MyVSShellStub.exe.config  
   
-    2.  DebuggerProxy.dll  
+    2. DebuggerProxy.dll  
   
-    3.  DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll.manifest  
   
-    4.  MyVSShellStub.pkgdef  
+    4. MyVSShellStub.pkgdef  
   
-    5.  MyVSShellStub.pkgundef  
+    5. MyVSShellStub.pkgundef  
   
-    6.  MyVSShellStub.winprf  
+    6. MyVSShellStub.winprf  
   
-    7.  Splash.bmp  
+    7. Splash.bmp  
   
-5.  Tıklayın **proje çıktıları Ekle** düğmesine tıklayın ve Ekle **MyVSShellStub/birincil çıkış**. **Tamam**'ı tıklatın.  
+5. Tıklayın **proje çıktıları Ekle** düğmesine tıklayın ve Ekle **MyVSShellStub/birincil çıkış**. **Tamam**'ı tıklatın.  
   
-6.  Sol bölmede altında **hedef bilgisayar**, sağ tıklayın **Fabrikam müzik Düzenleyicisi [INSTALLDIR]** düğüm ekleyin bir **yeni klasör** adlı **uzantıları** .  
+6. Sol bölmede altında **hedef bilgisayar**, sağ tıklayın **Fabrikam müzik Düzenleyicisi [INSTALLDIR]** düğüm ekleyin bir **yeni klasör** adlı **uzantıları** .  
   
-7.  Sağ **uzantıları** sol bölmedeki düğüm ve adlı yeni bir klasör eklemek **uygulama**.  
+7. Sağ **uzantıları** sol bölmedeki düğüm ve adlı yeni bir klasör eklemek **uygulama**.  
   
-8.  Seçin **uygulama** klasörü ve tıklatın **proje çıktıları Ekle** düğmesine ve ardından birincil çıkışının MyVSShellStub.AboutBoxPackage projeden seçin.  
+8. Seçin **uygulama** klasörü ve tıklatın **proje çıktıları Ekle** düğmesine ve ardından birincil çıkışının MyVSShellStub.AboutBoxPackage projeden seçin.  
   
 9. Tıklayın **Add Files** düğmesi ve \MyVSShellStub\Release\Extensions\Application\ klasöründen aşağıdaki dosyaları ekleyin:  
   
-    -   MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub.AboutBoxPackage.pkgdef  
   
-    -   MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub.Application.pkgdef  
   
 10. Sağ **Fabrikam müzik Düzenleyicisi [INSTALLDIR]** sol bölmedeki düğüm ve adlı yeni bir klasör eklemek **1033**.  
   

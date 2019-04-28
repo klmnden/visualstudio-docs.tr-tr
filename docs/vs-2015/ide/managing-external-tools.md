@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445432"
 ---
 # <a name="managing-external-tools"></a>Dış Araçları Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
 6. WCF Hizmeti Yapılandırma Düzenleyicisi: Oluşturma ve WCF hizmetleri için yapılandırma ayarlarını değiştirmenize olanak sağlar.  
   
 > [!WARNING]
->  Dış araçların farklı bir liste görebilirsiniz, hangi Visual Studio sürümü bağlı olarak, yüklediğiniz ve uyguladığınız ayarları profili. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dış araçların farklı bir liste görebilirsiniz, hangi Visual Studio sürümü bağlı olarak, yüklediğiniz ve uyguladığınız ayarları profili. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Yeni araçları ekleme  
  Harici bir aracı için ekleyebilirsiniz **Araçları** menüsü. Açık **dış Araçlar** iletişim kutusu ve tıklatın **Ekle**, ardından bilgileri doldurun. Örneğin, Windows Explorer'ın şu anda dosya dizininde açmak için şu girdiyi Visual Studio'da Aç nedenleri:  
@@ -100,7 +100,7 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
  Şu bağımsız değişkenler bir dış Aracı'nı başlattığınızda, atanmış olan Visual Studio değişkenlerdir. Not Defteri'ni veya Spy ++ hakkında listelenebilir gibi dış araçlara bağlantıları **Araçları** dış Araçlar iletişim kutusunu kullanarak menüsü.  
   
 > [!NOTE]
->  IDE durum çubuğu ekleme noktasını etkin Kod Düzenleyicisi'nde nerede göstermek için geçerli satır ve sütun geçerli değişkenlerini görüntüler. Geçerli metin değişkeni, bu konumda seçili kod ve metin döndürür.  
+> IDE durum çubuğu ekleme noktasını etkin Kod Düzenleyicisi'nde nerede göstermek için geçerli satır ve sütun geçerli değişkenlerini görüntüler. Geçerli metin değişkeni, bu konumda seçili kod ve metin döndürür.  
   
 |Ad|Bağımsız Değişken|Açıklama|  
 |----------|--------------|-----------------|  

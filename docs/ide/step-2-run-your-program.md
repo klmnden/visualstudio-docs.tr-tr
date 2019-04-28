@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eedfa6104b5462b0fe61682635338cb9337a408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430792"
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı çalıştırma
 Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşik. Çok henüz — yalnızca gösteren boş bir pencere görüntüler **Form1** başlık çubuğundaki. Ancak hakkında bilgi edinmek için oluşturuyoruz, çalıştırın.
@@ -52,7 +52,7 @@ Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşi
     - Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
 
     > [!NOTE]
-    >  IDE içinde programınızı çalıştırdığınızda, bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız çünkü hata ayıklama çağrılır. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
+    > IDE içinde programınızı çalıştırdığınızda, bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız çünkü hata ayıklama çağrılır. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 

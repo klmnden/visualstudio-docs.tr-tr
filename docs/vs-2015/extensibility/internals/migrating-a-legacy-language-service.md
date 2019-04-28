@@ -10,12 +10,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe6870046d1dd15c7bc5795dd82d393272ca6b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434384"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Eski Dil Hizmetini Geçirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Dil hizmeti uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Bir Visual Studio 2008 dil hizmeti çözümü sonraki bir sürüme geçirme  
  Aşağıdaki adımlarda, uyum RegExLanguageService adlı bir Visual Studio 2008 örneği gösterilmektedir. Bu örnek, bir Visual Studio 2008 SDK'sını yükleme bulabilirsiniz *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ klasör.  
   
 > [!IMPORTANT]
->  Dil hizmetinizi renkleri tanımlamıyorsa, açıkça ayarlamalısınız <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> için `true` VSPackage'ı üzerinde:  
+> Dil hizmetinizi renkleri tanımlamıyorsa, açıkça ayarlamalısınız <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> için `true` VSPackage'ı üzerinde:  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  

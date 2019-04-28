@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76d61520bf17ad3230a437c295de387a910f808f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc7c68fe767d2add0842e30f66c51a3dcc84905f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447294"
 ---
 # <a name="source-server-security-alert"></a>Kaynak Sunucu Güvenlik Uyarısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Kaynak Sunucusu'nu kullanırken, yalnızca bilinen ve güvenilen bir konumdan ge
  Kaynak sunucu desteğini etkinleştirdiğinizde, bu uyarı görüntülenir. Kaynak sunucu komutları hata ayıklama simge dosyalarına (PDB dosyaları) gömülüdür. PDB dosyalarınızın nereden geldiğini bildiğinizden emin olun.  
   
 > [!IMPORTANT]
->  Kaynak Sunucusu'nu kullanırken, aşağıdaki olası güvenlik tehditlerini hesaba atılmalıdır: Rastgele komutlar uygulamanın PDB dosyasına eklenebilir, bu nedenle, sadece srcsrv.ini dosyasında yürütmek istediğiniz istediklerinizi koyduğunuzdan emin olun. srcsvr.ini dosyasında olmayan bir komutu yürütme girişimi, bir onay iletişim kutusunun görüntülenmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Komut parametrelerinde doğrulama yapılmadı, bu nedenle güvenilir komutlara dikkat edin. Örneğin, cmd.exe'ye güvendiyseniz, kötü niyetli bir kullanıcı, komutu tehlikeli duruma getirecek parametreler belirtebilir.  
+> Kaynak Sunucusu'nu kullanırken, aşağıdaki olası güvenlik tehditlerini hesaba atılmalıdır: Rastgele komutlar uygulamanın PDB dosyasına eklenebilir, bu nedenle, sadece srcsrv.ini dosyasında yürütmek istediğiniz istediklerinizi koyduğunuzdan emin olun. srcsvr.ini dosyasında olmayan bir komutu yürütme girişimi, bir onay iletişim kutusunun görüntülenmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Komut parametrelerinde doğrulama yapılmadı, bu nedenle güvenilir komutlara dikkat edin. Örneğin, cmd.exe'ye güvendiyseniz, kötü niyetli bir kullanıcı, komutu tehlikeli duruma getirecek parametreler belirtebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

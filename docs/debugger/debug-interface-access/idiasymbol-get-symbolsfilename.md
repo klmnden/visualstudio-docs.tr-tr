@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b78c62ad096600254ddeb2ebd82d6174a950ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: eced26fe8316966807dab68c5361535cb551f5d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401260"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 İçinden simgeleri yüklenen dosyanın adını alır.
@@ -39,7 +39,7 @@ HRESULT get_symbolsFileName ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu özellik yalnızca olan semboller için geçerli bir [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) değerini `SymTagExe` genel kapsam da vardır.

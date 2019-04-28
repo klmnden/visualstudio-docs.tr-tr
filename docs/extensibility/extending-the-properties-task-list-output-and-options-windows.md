@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417232"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Özellikleri, görev listesi, çıktı ve Seçenekler pencerelerini genişletme
 Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek yol, araç penceresi hakkında bilgi yeni bir tümleştirme işlemi açıklanır **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfası ve nasıl için yazacağınız **görevlistesi** ve **çıkış** windows.
@@ -33,7 +33,7 @@ Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek y
 1. Adlı bir proje oluşturma **TodoList** VSIX şablonuyla ve adlı bir özel araç penceresi öğesi şablonu ekleme **TodoWindow**.
 
     > [!NOTE]
-    >  Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Araç penceresi ayarlama
  Bir metin kutusunda, yeni bir ToDo öğesi, listesine yeni öğe eklemek için bir düğme ve listedeki öğeleri görüntülemek için bir ListBox türüne ekleyin.
@@ -41,7 +41,7 @@ Visual Studio'da herhangi bir araç penceresine erişebilirsiniz. Bu izlenecek y
 1. İçinde *TodoWindow.xaml*, düğme, metin kutusu ve StackPanel denetimleri UserControl Sil.
 
     > [!NOTE]
-    >  Bu silmediği **button1_Click** olay işleyicisi, daha sonraki bir adımda yeniden kullanır.
+    > Bu silmediği **button1_Click** olay işleyicisi, daha sonraki bir adımda yeniden kullanır.
 
 2. Gelen **tüm WPF denetimleri** bölümünü **araç kutusu**, sürükleyin bir **tuval** kılavuz denetimi.
 

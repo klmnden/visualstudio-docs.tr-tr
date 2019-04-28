@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446121"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Hızlı Başlangıç: Konsolu kullanarak JavaScript hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 - [Betik yürütme bağlamını değiştirme](#Switching)  
   
 > [!TIP]
->  JavaScript Konsolu penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **JavaScript Konsolu** yeniden açın. Betik hata ayıklama oturumu yalnızca sırasında penceresi görünür.  
+> JavaScript Konsolu penceresi kapatılırsa seçin **hata ayıklama**>**Windows** > **JavaScript Konsolu** yeniden açın. Betik hata ayıklama oturumu yalnızca sırasında penceresi görünür.  
   
  JavaScript Konsolu penceresi kullanarak, hata ayıklayıcıyı durdurup yeniden olmadan uygulamanız ile etkileşebilirsiniz. Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md). Diğer JavaScript DOM Gezgini'ni kullanarak ve kesme noktaları, ayarlama gibi özellikler, hata ayıklama hakkında bilgi için bkz: [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md) ve [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Aşağıdaki adımlar oluşturur bir `FlipView` uygulama ve etkileşimli bir şekilde kodlama hatası JavaScript hata ayıklama işlemini göstermektedir.  
   
 > [!CAUTION]
->  Burada örnek uygulaması Windows Store uygulamasıdır. Bununla birlikte, burada açıklanan konsol özellikleri, Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için de geçerlidir.  
+> Burada örnek uygulaması Windows Store uygulamasıdır. Bununla birlikte, burada açıklanan konsol özellikleri, Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için de geçerlidir.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>FlipView uygulamanın JavaScript kodunda hata ayıklamak için  
   
@@ -182,7 +182,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
      Bu kodu kopyalayıp giriş JavaScript Konsolu komut isteminden yapıştırın.  
   
     > [!TIP]
-    >  Çok satırlı kod yapıştırdığınızda JavaScript Konsolu'nu istemi giriş, giriş Konsolu komut isteminde, otomatik olarak çok satırlı moda geçer. Çok satırlı modunu açıp kapatmak için Ctrl + Alt + M tuşlarına basabilirsiniz. Çok satırlı modunda bir komut çalıştırmak için Ctrl + Enter tuşlarına basın veya pencerenin sağ alt köşesindeki ok simgesini seçin. Daha fazla bilgi için bkz. [tek satır modu ve çok satırlı modu JavaScript konsol penceresinde](#SinglelineMultilineMode).  
+    > Çok satırlı kod yapıştırdığınızda JavaScript Konsolu'nu istemi giriş, giriş Konsolu komut isteminde, otomatik olarak çok satırlı moda geçer. Çok satırlı modunu açıp kapatmak için Ctrl + Alt + M tuşlarına basabilirsiniz. Çok satırlı modunda bir komut çalıştırmak için Ctrl + Enter tuşlarına basın veya pencerenin sağ alt köşesindeki ok simgesini seçin. Daha fazla bilgi için bkz. [tek satır modu ve çok satırlı modu JavaScript konsol penceresinde](#SinglelineMultilineMode).  
   
 12. Düzeltme `push` işlevi çağırır isteminde değiştirerek `pages.push` ile `Data.items.setAt`. Düzeltilen kod gibi görünmelidir:  
   
@@ -193,7 +193,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     ```  
   
     > [!TIP]
-    >  Kullanmak istiyorsanız `pages` yerine nesne `Data.items`, tutmak için kodunuzda bir kesme noktasını ayarlamanız gerekir `pages` kapsam nesnesi.  
+    > Kullanmak istiyorsanız `pages` yerine nesne `Data.items`, tutmak için kodunuzda bir kesme noktasını ayarlamanız gerekir `pages` kapsam nesnesi.  
   
 13. Betiği çalıştırmak için yeşil ok simgesini seçin.  
   

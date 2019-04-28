@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784252"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -128,27 +128,27 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
 ### <a name="to-change-the-load-pattern"></a>Yük Düzeni değiştirmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  İçinde **Yük Testi Düzenleyicisi**, *senaryoları* klasöründe yük düzeni için Düzenle ve senaryosu için yük desenini seçin istediğiniz senaryoyu genişletin.
+2. İçinde **Yük Testi Düzenleyicisi**, *senaryoları* klasöründe yük düzeni için Düzenle ve senaryosu için yük desenini seçin istediğiniz senaryoyu genişletin.
 
     > [!NOTE]
     > Yük testiniz senaryo ağacında görüntülenen yük desen düğüm ifade yük oluştururken seçtiğiniz test yük profili yansıtır. Ya da olabilir **sabit yük profili** veya **Adım yük profili**.
 
-3.  Tuşuna **F4** görüntülenecek **özellikleri** penceresi.
+3. Tuşuna **F4** görüntülenecek **özellikleri** penceresi.
 
      **Yük düzeni** ve **parametreleri** kategorileri görüntülenir **özellikleri** penceresi.
 
-4.  (İsteğe bağlı) Değişiklik **deseni** özelliğinde **yük düzeni** kategorisi.
+4. (İsteğe bağlı) Değişiklik **deseni** özelliğinde **yük düzeni** kategorisi.
 
      İlgili seçimlerinizi **deseni** özelliği olan **adım**, **sabit**, ve **hedefe dayalı**. Yük düzeni türleri hakkında daha fazla bilgi için bkz. [yük desenleriyle bir yük testi senaryosunda sanal kullanıcı sayısını belirtin](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-5.  (İsteğe bağlı) İçinde **parametreleri** kategori değerleri değiştirin.
+5. (İsteğe bağlı) İçinde **parametreleri** kategori değerleri değiştirin.
 
     > [!NOTE]
     > İçin ayarlanan değerlerle **parametreleri** için seçtiğiniz değere göre farklı **deseni** özelliği.
 
-6.  Özelliklerini değiştirme işlemini tamamladıktan sonra seçin **Kaydet** üzerinde **dosya** menüsü. Sonra yeni yük düzeni ile yük testi çalıştırabilirsiniz.
+6. Özelliklerini değiştirme işlemini tamamladıktan sonra seçin **Kaydet** üzerinde **dosya** menüsü. Sonra yeni yük düzeni ile yük testi çalıştırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

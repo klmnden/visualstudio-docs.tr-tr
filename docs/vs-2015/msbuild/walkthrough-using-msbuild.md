@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445586"
 ---
 # <a name="walkthrough-using-msbuild"></a>İzlenecek yol: MSBuild Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
  Nden Msbuild'i çalıştırın **Visual Studio komut istemi** yukarıda tanımlanan HelloWorld hedefini oluşturmak için. Hedefi seçmek için /target veya /t komut satırı anahtarını kullanın.  
   
 > [!NOTE]
->  Anılacaktır **Visual Studio komut istemi** olarak **komut penceresi** aşağıdaki bölümlerde yer.  
+> Anılacaktır **Visual Studio komut istemi** olarak **komut penceresi** aşağıdaki bölümlerde yer.  
   
 #### <a name="to-build-the-target"></a>Hedefi oluşturmak için  
   
@@ -154,12 +154,12 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
     ```  
   
 > [!NOTE]
->  Bunun yerine, görürseniz `The target "HelloWorld" does not exist in the project` büyük olasılıkla proje dosyasını Kod düzenleyicisinde kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.  
+> Bunun yerine, görürseniz `The target "HelloWorld" does not exist in the project` büyük olasılıkla proje dosyasını Kod düzenleyicisinde kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.  
   
  Kod düzenleyicisi ve komut penceresi arasında değişerek proje dosyasını değiştirebilir ve sonuçları hızlı bir şekilde görebilirsiniz.  
   
 > [!NOTE]
->  /t komut anahtarı olmadan msbuild'i çalıştırırsanız msbuild, Proje öğesinin DefaultTarget özniteliği tarafından verilen hedefi, bu durumda "Yapı"yı oluşturur. Bu, BuildApp.exe Windows Formları uygulamasını oluşturur.  
+> /t komut anahtarı olmadan msbuild'i çalıştırırsanız msbuild, Proje öğesinin DefaultTarget özniteliği tarafından verilen hedefi, bu durumda "Yapı"yı oluşturur. Bu, BuildApp.exe Windows Formları uygulamasını oluşturur.  
   
 ## <a name="build-properties"></a>Yapı Özellikleri  
  Yapı özellikleri, yapıya rehberlik eden ad-değer çiftleridir. Birkaç yapı özelliği proje dosyasının üst kısmında zaten tanımlanmıştır:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Bu satırları görmüyorsanız, büyük olasılıkla kod düzenleyicisinde proje dosyasını kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.  
+> Bu satırları görmüyorsanız, büyük olasılıkla kod düzenleyicisinde proje dosyasını kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.  
   
 ### <a name="conditional-properties"></a>Koşullu Özellikler  
  Yapılandırma gibi birçok özellik koşullu olarak tanımlanmıştır, yani Koşul özniteliği özellik öğesi içinde görünür. Koşullu özellikler, yalnızca koşul "doğru" olarak değerlendirilirse tanımlanır veya yeniden tanımlanır. Tanımlanmamış özelliklere boş bir dizenin varsayılan değeri verildiğini unutmayın. Örneğin,  
@@ -319,7 +319,7 @@ $(PropertyName)
  Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Dosya yolları MSBuild proje dosyasını içeren klasörle ilişkilidir.  
+> Dosya yolları MSBuild proje dosyasını içeren klasörle ilişkilidir.  
   
 ## <a name="examining-item-type-values"></a>Öğe Türü Değerlerini İnceleme  
  Bir öğe türünün değerlerini almak için, ItemType'ın öğe türünün adı olduğu aşağıdaki söz dizimini kullanın:  

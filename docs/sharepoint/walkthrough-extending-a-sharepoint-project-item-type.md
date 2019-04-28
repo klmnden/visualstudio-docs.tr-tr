@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430351"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.
@@ -67,7 +67,7 @@ ms.locfileid: "60057868"
 3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 4. Üst kısmındaki listede **yeni proje** iletişim kutusunda **.NET Framework 4.5**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057868"
 1. Aşağıdaki kodu Projectıtemextension kod dosyasına yapıştırın.
 
     > [!NOTE]
-    >  Bu kodu ekledikten sonra projeyi bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
+    > Bu kodu ekledikten sonra projeyi bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057868"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 

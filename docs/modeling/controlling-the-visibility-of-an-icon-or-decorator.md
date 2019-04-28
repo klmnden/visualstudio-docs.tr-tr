@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421505"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde görünen metin satırı. Dekoratör görünmesi ve modelinde özelliklerini durumuna bağlı olarak kaybolur. Örneğin, bir kişiyi temsil eden bir şekli üzerinde alt sayıda kişinin cinsiyet bağlı olarak görünür ve benzeri farklı simgeler olabilir.

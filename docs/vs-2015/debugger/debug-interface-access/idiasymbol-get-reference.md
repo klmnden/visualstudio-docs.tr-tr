@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f76b95b2ef4cafedf9c65f68dc056b49db94176
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b76dad15f715aa624880d10b3391107c1c2d8724
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437378"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_reference ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

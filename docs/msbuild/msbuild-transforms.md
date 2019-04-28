@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414694"
 ---
 # <a name="msbuild-transforms"></a>MSBuild dönüşümleri
 Dönüşüm bir bire bir öğe listesinin başka bir dönüştürmedir. Bir proje öğesi listeleri dönüştürmek etkinleştirmeye ek olarak, bir dönüştürme giriş ve çıkışlarını arasında doğrudan bir eşleme tanımlamak bir hedef sağlar. Bu konu, dönüşümler açıklar ve nasıl [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri daha verimli bir şekilde oluşturmak için bunları kullanır.
@@ -33,7 +33,7 @@ Aşağıdaki örnekte, bir listesini *.resx* dosyaları bir listeye dönüştür
 Örneğin, @(RESXFile) öğesi listedeki öğeler varsa *Form1.resx*, *Form2.resx*, ve *Form3.resx*, dönüştürülen listesinde çıktılar olacağını  *Form1.Resources*, *Form2.resources*, ve *Form3.resources*.
 
 > [!NOTE]
->  Ayırıcı standart öğesi listesi için belirttiğiniz aynı şekilde dönüştürülmüş öğesi listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgül (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> Ayırıcı standart öğesi listesi için belirttiğiniz aynı şekilde dönüştürülmüş öğesi listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgül (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Birden çok değiştiriciler kullanın
  Bir dönüştürme ifadesi herhangi bir sırada birleştirilebilen ve yinelenebilen birden çok değiştiriciler içerebilir. Aşağıdaki örnekte, dosyaları içeren dizine adı değiştirildi, ancak dosya özgün adı ve dosya adı uzantısı korunur.

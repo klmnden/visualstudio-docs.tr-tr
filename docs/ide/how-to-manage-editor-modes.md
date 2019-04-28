@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429788"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 

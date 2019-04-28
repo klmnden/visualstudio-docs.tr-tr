@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16875b7f12512c70def4b737d64323fd32d772b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 359d36ed7eb74394e63af39cdbc9986b02385f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403613"
 ---
 # <a name="modules-view---sampling-data"></a>Modüller görünümü - örnekleme verileri
 Örnekleme profil oluşturma verileri örneklenen modüller tarafından gruplandırılmış veri görüntüler performans verileri modülleri görünümü. Her bir hiyerarşik ağaç kökünde modülüdür. Örneklenen modülündeki işlevlerin modülü düğümünün altında listelenir.
 
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  İşlevi çalıştırıldığında zaman örnekleri toplandı (diğer bir deyişle, işlev çağrı yığınının en üstünde olduğu), yürütülmekte yönerge adresi ve kaynak satırları işlevi düğümünün altında listelenir. Satırı veya yönerge yürüttüğünde veri kaynak satırı veya bir yönerge işaretçisini toplandığından, dahil ve hariç olan değerler her zaman satır verileri hem de yönerge veri için aynıdır.
 

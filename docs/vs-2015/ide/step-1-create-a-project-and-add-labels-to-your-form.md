@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441978"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071882"
 Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etiketler, bir düğme ve diğer denetimleri ekleyin. Ayrıca eklediğiniz her denetimin özelliklerini ayarlarsınız. Proje formu, denetimleri, içerir ve (öğreticide daha ilerideki) kodu. Etiketler sınav sorularını gösterir düğme sınavı başlatır ve diğer denerimler ise sınav yanıtlarını ve sınavı bitirmek için kalan süreyi gösterir.  
   
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Bir proje oluşturun ve bir formun özelliklerini ayarlamak için  
   
@@ -145,7 +145,7 @@ Matematik sınavının ilk satırı
 9. Dördüncü satır için ilk etiketin adını **dividedLeftLabel**, İkinci etiketin değiştirme **metin** özelliğini **bölü;** (bölme oturum) üçüncü etiketi adı  **dividedRightLabel**ve NumericUpDown denetimini **bölümü**.  
   
     > [!NOTE]
-    >  Bu öğreticide çarpı işareti × ve bölme oturum bölü; kopyalayın ve bunları form üzerine yapıştırın.  
+    > Bu öğreticide çarpı işareti × ve bölme oturum bölü; kopyalayın ve bunları form üzerine yapıştırın.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Bir başlatma düğmesi ekleme ve sekme indisi sırasını ayarlama  
   
@@ -162,7 +162,7 @@ Matematik sınavının ilk satırı
 6. Değerini **TabIndex** özelliği **startButton** denetimini **1**.  
   
     > [!NOTE]
-    >  **TabIndex** özelliği, sınava giren Tab tuşunu seçtiğinde denetimlerin sırasını ayarlar. Nasıl çalıştığını görmek için herhangi bir iletişim kutusunu açın (örneğin, menü çubuğunda, **dosya**, **açın**) ve ardından Tab tuşuna birkaç kez basın. Nasıl imlecinizin denetimden denetime her zaman, SEKME tuşuna hareket ettiğini izleyin. Programcı sipariş oluşturan oluştururken verdi.  
+    > **TabIndex** özelliği, sınava giren Tab tuşunu seçtiğinde denetimlerin sırasını ayarlar. Nasıl çalıştığını görmek için herhangi bir iletişim kutusunu açın (örneğin, menü çubuğunda, **dosya**, **açın**) ve ardından Tab tuşuna birkaç kez basın. Nasıl imlecinizin denetimden denetime her zaman, SEKME tuşuna hareket ettiğini izleyin. Programcı sipariş oluşturan oluştururken verdi.  
   
 7. Değerini **TabIndex** özelliğinin değerini NumericUpDown toplam denetimi için için **2**, fark denetimi için **3**, ürün denetimi için **4**ve bölüm denetimi için **5**.  
   

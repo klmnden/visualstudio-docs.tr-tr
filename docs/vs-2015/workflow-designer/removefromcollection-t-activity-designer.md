@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 45a426d4703ed2a402ee7f06341e55d65ae410ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797719"
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; etkinlik Tasarımcısı
 **RemoveFromCollection\<T >** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.RemoveFromCollection%601> etkinlik.  
@@ -44,4 +44,4 @@ ms.locfileid: "54784093"
  [Koleksiyon](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
  [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
- [Existsıncollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)
+ [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)

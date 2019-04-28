@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446056"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Test yapma amacıyla Windows Mağazası Denetimleri için Benzersiz Otomasyon Özelliği ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalı�
  **Visual Studio için blend:** Visual Studio için Blend Bunu yapmak için aşağıdaki yöntemlerden birini kullanın.  
   
 > [!NOTE]
->  Yalnızca statik olarak XAML kullanılarak oluşturulan denetimler için bu yöntemi kullanabilirsiniz.  
+> Yalnızca statik olarak XAML kullanılarak oluşturulan denetimler için bu yöntemi kullanabilirsiniz.  
   
  **Varolan denetimler için benzersiz bir ad vermek için**  
   
@@ -136,7 +136,7 @@ XAML tabanlı Windows Store uygulamanız için kodlanmış UI testlerini çalı�
  Bu örneklerin her ikisi için ardından Itemsource'u, ToString() yöntemine aşağıdaki kodu kullanarak gösterildiği geçersiz kılmanız gerekir. Bu kod AutomationProperties.Name değeri ayarlanır ve bağlama kullanarak her bir veri bağlı liste öğesi için benzersiz Otomasyon özelliği ayarlanamıyor benzersiz olduğundan emin olur. Otomasyon Properties.Name için benzersiz bir değere ayarlanması bu durumda yeterli olur.  
   
 > [!NOTE]
->  Bu yaklaşımı kullanarak, liste öğesinin iç içeriği de çalışan sınıfı içindeki bir dizeye bağlama aracılığıyla ayarlanabilir. Örnekte gösterildiği gibi düğme denetimini her liste öğesi içinde çalışan kimliği olan bir benzersiz Otomasyon kimliği atanır  
+> Bu yaklaşımı kullanarak, liste öğesinin iç içeriği de çalışan sınıfı içindeki bir dizeye bağlama aracılığıyla ayarlanabilir. Örnekte gösterildiği gibi düğme denetimini her liste öğesi içinde çalışan kimliği olan bir benzersiz Otomasyon kimliği atanır  
   
 ```  
   

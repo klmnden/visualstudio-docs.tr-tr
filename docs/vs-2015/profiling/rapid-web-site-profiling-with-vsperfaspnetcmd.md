@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438899"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile Hızlı Web Sitesi Profili Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "60049835"
 **VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: Tek başına Profiler yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Eşzamanlılık verileri toplama veya duraklatma ve sürdürme kullanarak profil oluşturma gibi bazı senaryolarda **VSPerfCmd** tercih edilen profil oluşturma yöntemidir.  
   
 > [!NOTE]
->  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda, 32 bit tools\performance araçları dizininde VSPerfASPNETCmd aracını kullanın. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda, 32 bit tools\performance araçları dizininde VSPerfASPNETCmd aracını kullanın. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="profiling-an-aspnet-application"></a>Bir ASP.NET uygulaması için profil oluşturma  
  Profil için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması, aşağıdaki bölümlerde açıklanan komutlardan birini yazın. Web sitesi başlatılır ve Profil Oluşturucu veri toplamaya başlar. Uygulamanızın çalışma ve tarayıcıyı kapatın. Profil oluşturmayı durdurmak için komut istemi penceresinde Enter tuşuna basın.  
   
 > [!NOTE]
->  Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Kullanabileceğiniz **/nowait** döndürmek için komut istemi zorlamak için seçeneği. Bkz: [/nowait seçeneğini kullanarak](#UsingNoWait).  
+> Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Kullanabileceğiniz **/nowait** döndürmek için komut istemi zorlamak için seçeneği. Bkz: [/nowait seçeneğini kullanarak](#UsingNoWait).  
   
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak uygulama istatistikleri toplamak için  
  Örnekleme profili oluşturma yöntemi, varsayılan değerdir **VSPerfASPNETCmd** araç ve komut satırında belirtilmesi gerekmez. Aşağıdaki komut satırı belirtilen Web uygulamasından uygulama istatistikleri toplar:  
@@ -66,9 +66,9 @@ ms.locfileid: "60049835"
 ## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verileri toplamak için  
   
 > [!WARNING]
->  Katman etkileşimli profil oluşturma (TIP) veri kullanarak toplanması [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Katman etkileşimli profil oluşturma (TIP) veri kullanarak toplanması [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma (**/trace**) seçeneği.  
+> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma (**/trace**) seçeneği.  
   
  Veri örnekleme ile Katman etkileşim verileri toplamak için:  
   

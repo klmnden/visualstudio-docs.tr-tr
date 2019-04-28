@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437142"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ay
  Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Yordam  
   
@@ -49,7 +49,7 @@ Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ay
 4. Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.  
   
     > [!NOTE]
-    >  Bu anımsatıcı okları kodunuza eklenmez: yalnızca görüntüleme amacıyla oldukları.  
+    > Bu anımsatıcı okları kodunuza eklenmez: yalnızca görüntüleme amacıyla oldukları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   

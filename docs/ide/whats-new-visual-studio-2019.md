@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 04/11/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ca411e0c66033ea923a979f68ed19c1ec02b6ed9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432025"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -84,7 +84,7 @@ Intellicode hakkında daha fazla bilgi için bkz: [daha fazla kod, daha az Visua
 
 Yeni bir belge sistem durumu göstergesi ile eşleştirilmiş bir yeni kod temizleme komutudur. Bu yeni komut belirlemek ve ardından uyarılar hem bir düğmeye tıklayarak önerileri gidermek için kullanabilirsiniz.
 
-Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından önerilen uygulama [geçerli ayarları](code-styles-and-quick-actions.md), [.editorconfig dosyalarını](create-portable-custom-editor-options.md), veya [Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
+Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından önerilen uygulama [geçerli ayarları](code-styles-and-quick-actions.md) ve [.editorconfig dosyalarını](create-portable-custom-editor-options.md).
 
    ![Visual Studio 2019 yeni kod temizleme denetimi görüntüsü](media/vs-2019/code-cleanup-profile.png)
 

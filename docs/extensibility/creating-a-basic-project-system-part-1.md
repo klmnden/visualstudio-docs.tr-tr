@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409997"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1. Bölüm temel proje sistemi oluşturma
 Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenlemek için geliştiricilerin kullanan kapsayıcılardır. Projeleri görünür çözümlerin alt öğeleri olarak **Çözüm Gezgini**. Projeleri, düzenleme, derleme, hata ayıklama ve kaynak kod dağıtma ve Web Hizmetleri, veritabanları ve diğer kaynaklara başvurular oluşturma olanak tanır.
@@ -25,7 +25,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
  Projeleri tanımlanmış proje dosyalarında, örneğin bir *.csproj* Visual C# proje dosyası. Kendi proje dosya adı uzantısına sahip kendi proje türünüzü oluşturabilirsiniz. Proje türleri hakkında daha fazla bilgi için bkz: [proje türleri](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Visual Studio bir özel proje türüyle genişletmeniz gerekiyorsa, yararlanarak öneririz [Visual Studio Proje sistemi](https://github.com/Microsoft/VSProjectSystem) (VSPS) birkaç sıfırdan bir proje sistemi oluşturmanın avantajları vardır:
+> Visual Studio bir özel proje türüyle genişletmeniz gerekiyorsa, yararlanarak öneririz [Visual Studio Proje sistemi](https://github.com/Microsoft/VSProjectSystem) (VSPS) birkaç sıfırdan bir proje sistemi oluşturmanın avantajları vardır:
 >
 > - Daha kolay ekleme.  On binlerce kod satırı bile temel proje sistemi gerektirir.  I ihtiyaçlarınıza göre özelleştirmek önce VSPS yararlanarak için birkaç tıklamayla ekleme maliyeti azaltır.
 > - Bakım daha kolay.  VSPS yararlanarak, yalnızca kendi senaryolarınızı sürdürmeniz gerekir.  Proje sistemi altyapısının sürdürülmesinden işleme.
@@ -35,7 +35,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
  Bu izlenecek yol, proje dosya adı uzantısına sahip bir proje türünün nasıl oluşturacağını gösterir *.myproj*. Bu izlenecek yol, mevcut Visual C# proje sistemi taşır.
 
 > [!NOTE]
->  Uzantı projelerinin daha fazla örnek için bkz. [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
+> Uzantı projelerinin daha fazla örnek için bkz. [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
 
  Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğretir:
 
@@ -101,7 +101,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
    ```
 
    > [!IMPORTANT]
-   >  Bu son biçiminde değil *Program.cs* kodudur parametreler ele ile daha sonraki bir adımda değiştirme. Görebileceğiniz derleme hataları, ancak olduğu sürece dosyanın **BuildAction** olduğu **içerik**, oluşturun ve projeyi zamanki çalıştırmak mümkün olması gerekir.
+   > Bu son biçiminde değil *Program.cs* kodudur parametreler ele ile daha sonraki bir adımda değiştirme. Görebileceğiniz derleme hataları, ancak olduğu sürece dosyanın **BuildAction** olduğu **içerik**, oluşturun ve projeyi zamanki çalıştırmak mümkün olması gerekir.
 
 7. Dosyayı kaydedin.
 
@@ -110,7 +110,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
 9. İçinde *Projects\SimpleProject* klasörü Ekle adlı bir XML dosyası *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  Bu türün tüm projeleri için dosya adı uzantısı *.myproj*. Bunu değiştirmek istiyorsanız, bu kılavuzda açıklanan her yerde değiştirmelisiniz.
+   > Bu türün tüm projeleri için dosya adı uzantısı *.myproj*. Bunu değiştirmek istiyorsanız, bu kılavuzda açıklanan her yerde değiştirmelisiniz.
 
 10. Var olan içeriğin aşağıdaki satırlarla değiştirin.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  Yolun sonuna ters eğik çizgi unutmayın.
+        > Yolun sonuna ters eğik çizgi unutmayın.
 
     3. Projeyi yeniden yükleyin.
 

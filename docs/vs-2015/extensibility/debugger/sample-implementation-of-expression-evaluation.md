@@ -12,18 +12,18 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49fd700120e819bb0b38cb8d91401869a364714c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436688"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Örnek İfade Değerlendirme Uygulaması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  İçin bir **Watch** penceresi ifadesini, Visual Studio çağrıları [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) üretmek için bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne. `IDebugExpressionContext2::ParseText` ifade değerlendiricisi (EE) ve çağrı başlatır [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) almak için bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) nesne.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039459"
 3. Döndürür `IDebugParsedExpression` alanından arabirim `CParsedExpression` nesne.  
   
 > [!NOTE]
->  Aşağıdaki örneklerde ve MyCEE örnek ifade değerlendiricisi değerlendirmesinden gelen ayrıştırma ayrı değil.  
+> Aşağıdaki örneklerde ve MyCEE örnek ifade değerlendiricisi değerlendirmesinden gelen ayrıştırma ayrı değil.  
   
 ## <a name="managed-code"></a>Yönetilen kod  
  Bu uygulamasıdır `IDebugExpressionEvaluator::Parse` yönetilen kod. Yöntemi bu sürümü için ayrıştırma erteler Not [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ayrıştırma kodunu da aynı anda değerlendirirken (bkz [bir Gözcü ifadesini değerlendirme](../../extensibility/debugger/evaluating-a-watch-expression.md)).  

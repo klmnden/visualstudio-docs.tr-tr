@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788702"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework işlevi
   Bu API Office altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.

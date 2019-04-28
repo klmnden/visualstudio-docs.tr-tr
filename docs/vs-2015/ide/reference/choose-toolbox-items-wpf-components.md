@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433694"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Araç Kutusu Öğelerini, WPF Bileşenlerini Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarı
 - Bir bileşen yanındaki onay kutusunu seçtiğinizde, söz konusu bileşen için bir simge görüntülenir **araç kutusu**.  
   
   > [!TIP]
-  >  Örneği WPF denetiminin proje belge düzenlenmesi için açıldı eklemek için sürükleyin, **araç kutusu** Tasarım görünümü yüzeyine simgesi. Varsayılan işaretleme ve kod bileşeni için projenize değiştirmek hazır eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini yönetme](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılır: Araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Örneği WPF denetiminin proje belge düzenlenmesi için açıldı eklemek için sürükleyin, **araç kutusu** Tasarım görünümü yüzeyine simgesi. Varsayılan işaretleme ve kod bileşeni için projenize değiştirmek hazır eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini yönetme](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılır: Araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Bir bileşen yanındaki onay kutusunu temizlendiğinde, karşılık gelen simgeyi kaldırılacak **araç kutusu.**  
   
   > [!NOTE]
-  >  Bunlar için simgeler görüntülenir olup olmadığını bilgisayarınızda yüklü .NET Framework bileşenlerini sunulmaya **araç kutusu**.  
+  > Bunlar için simgeler görüntülenir olup olmadığını bilgisayarınızda yüklü .NET Framework bileşenlerini sunulmaya **araç kutusu**.  
   
   Sütunlarda **WPF bileşenleri** sekmesine aşağıdaki bilgileri içerir:  
   

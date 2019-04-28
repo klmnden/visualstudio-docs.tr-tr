@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441663"
 ---
 # <a name="threads-view-parallel-performance"></a>İş Parçacıkları Görünümü (Paralel Performans)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60114801"
  Bir yürütme Segmentte bir nokta seçtiğinizde, eşzamanlılık görselleştiricisi ilgili çağrı yığınında saat için o noktadan arar ve ardından seçili belirli noktaya yukarıda siyah şapka işareti yürütme kesimdeki görüntüler ve çağrı yığınını görüntüler  **Geçerli yığın** sekmesi. Birden çok yürütme kesim noktalarını seçebilirsiniz.  
   
 > [!NOTE]
->  Eşzamanlılık görselleştiricisi yürütme segmentine bir seçim çözmek mümkün olmayabilir. Genellikle, kesim süresi kısa bir milisaniyeden kısa olduğunda bu gerçekleşir.  
+> Eşzamanlılık görselleştiricisi yürütme segmentine bir seçim çözmek mümkün olmayabilir. Genellikle, kesim süresi kısa bir milisaniyeden kısa olduğunda bu gerçekleşir.  
   
  Tüm Seçili zaman aralığında (görünür) iş parçacığı etkinleştirilmiş bir yürütme profili almak için seçtiğiniz **yürütme** düğmesi etkin göstergesi.  
   

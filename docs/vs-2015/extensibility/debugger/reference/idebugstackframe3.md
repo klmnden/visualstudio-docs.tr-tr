@@ -12,12 +12,12 @@ ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 261e71173e98e0ccee5e37f1c37d5825c42f5d93
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438159"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Hata ayıklayıcı bir özel durum uğratarak ayıklanan programın durumunu değişiklikleri yapın ve ardından burada özel durumun oluştuğu noktada yürütmeyi devam etmesi izin verebilirsiniz.  
   
 > [!NOTE]
->  Ele geçirilen özel durumlar yalnızca yönetilen kodda, diğer bir deyişle, ortak dil çalışma zamanı (CLR) altında çalışan bir program verilir.  
+> Ele geçirilen özel durumlar yalnızca yönetilen kodda, diğer bir deyişle, ortak dil çalışma zamanı (CLR) altında çalışan bir program verilir.  
   
  Hata ayıklama altyapısı "metricExceptions" ayarlayarak araya giren özel durumları desteklediğini değerini 1 olarak çalışma zamanında gösterir `SetMetric` işlevi. Daha fazla bilgi için [hata ayıklama için SDK Yardımcıları](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   

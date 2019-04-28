@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7d8b859efa5fac2e3643f4d3a0bd694cd2edd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446186"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Windows Mağazası uygulamaları için önceden getirilmiş içerikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
    Artık, hata ayıklama, test veya önceden getirilmiş web kaynakları uygulamanızla analiz edin.  
   
 > [!NOTE]
->  Belirtilen web içerik eklediğinizde veya zaman bu adımları yineleyin.  
+> Belirtilen web içerik eklediğinizde veya zaman bu adımları yineleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Blog postası: Visual Studio 2013 güncelleştirme 2'de Windows Store uygulamaları için tetikleme önceden getirme](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

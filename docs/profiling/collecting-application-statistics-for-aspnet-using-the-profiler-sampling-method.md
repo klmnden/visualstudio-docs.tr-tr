@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f8fd108e71a49e8860a0fd4fec8751da4bc81644
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405761"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET web uygulamaları için istatistikleri toplama
 
 Bu bölümdeki yordamları ve kullanarak bir ASP.NET Web uygulaması için performans istatistikleri toplama seçeneklerini açıklar **VSPerfASPNETCmd** ve **VSPerfCmd** komut satırı aracı ve örnekleme profili oluşturma yöntemi.
 
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 > [!NOTE]
->  Ancak **VSPerfCmd** aracı, size tam erişim duraklatma ve profil oluşturma, yeniden başlatma da dahil olmak üzere profil oluşturma araçları işlevsellik ve ek veri işlemci ve Windows performans sayaçlarından toplanan kullanmanız gerekir **VSPerfASPNETCmd** bu işlevselliği gerekmediğinde komut satırı aracı. **VSPerfASPNETCmd** komut satırı aracı, tercih edilen yöntem, olduğunuz bağımsız profil oluşturucuyu kullanarak ASP.NET Web sitesi profili oluşturma. İle karşılaştırıldığında [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracını hiçbir ortam değişkenleri ayarlamanız gerekir ve bilgisayarın yeniden başlatılması gerekli değildir. Daha fazla bilgi için [VSPerfASPNETCmd ile hızlı web sitesi profili oluşturma](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+> Ancak **VSPerfCmd** aracı, size tam erişim duraklatma ve profil oluşturma, yeniden başlatma da dahil olmak üzere profil oluşturma araçları işlevsellik ve ek veri işlemci ve Windows performans sayaçlarından toplanan kullanmanız gerekir **VSPerfASPNETCmd** bu işlevselliği gerekmediğinde komut satırı aracı. **VSPerfASPNETCmd** komut satırı aracı, tercih edilen yöntem, olduğunuz bağımsız profil oluşturucuyu kullanarak ASP.NET Web sitesi profili oluşturma. İle karşılaştırıldığında [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracını hiçbir ortam değişkenleri ayarlamanız gerekir ve bilgisayarın yeniden başlatılması gerekli değildir. Daha fazla bilgi için [VSPerfASPNETCmd ile hızlı web sitesi profili oluşturma](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Ortak görevler
 

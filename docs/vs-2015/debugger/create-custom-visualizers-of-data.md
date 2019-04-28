@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434904"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Verilerin özel Görselleştiricilerini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Görselleştiriciler bileşenlerinin [!INCLUDE[vs_current_short](../includes/vs-
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Hata ayıklayıcı altı standart görselleştiriciler içerir. Bunlar, metin, HTML, XML ve JSON görselleştiriciler, her biri dize nesneler üzerinde çalışmak, bir WPF nesne görsel ağacı özelliklerini görüntülemek için WPF ağacı görselleştiricisini, ve veri kümesi, DataView ve DataTable nesneleri için çalışan bir veri kümesi görselleştiricisi. Ek görselleştiriciler, gelecekte Microsoft Corporation'ın indirilebilir olabilir ve üçüncü taraflar ve topluluktan kullanılabilir. Ayrıca, kendi görselleştiriciler yazabilir ve bunları yüklemek [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hata ayıklayıcı.  
   
 > [!NOTE]
->  İçinde **Store** uygulamalar, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.  
+> İçinde **Store** uygulamalar, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.  
   
  Görselleştiriciler hata ayıklayıcıda bir Büyüteç simgesi ile gösterilir. Büyüteç simgesini gördüğünüzde bir **DataTip**, hata ayıklayıcı değişken penceresinde veya buna **QuickWatch** iletişim kutusu, veri türüne uygun Görselleştirici seçmek için Büyüteç tıklayabilirsiniz karşılık gelen nesne.  
   
  Görselleştiriciler Compact Framework'te desteklenmez.  
   
 > [!NOTE]
->  Hata ayıklama görselleştiricileri kısmi güven uygulama tarafından izin verilenden daha yüksek ayrıcalıklar gerektirir. Sonuç olarak, kısmi güven ile koddaki durdurulduğunda görselleştiriciler yüklenmiyor. Görselleştirici kullanarak hata ayıklama için tam güven ile kodu çalıştırmanız gerekir.  
+> Hata ayıklama görselleştiricileri kısmi güven uygulama tarafından izin verilenden daha yüksek ayrıcalıklar gerektirir. Sonuç olarak, kısmi güven ile koddaki durdurulduğunda görselleştiriciler yüklenmiyor. Görselleştirici kullanarak hata ayıklama için tam güven ile kodu çalıştırmanız gerekir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Nasıl yapılır: Görselleştirici Yazma](../debugger/how-to-write-a-visualizer.md)  

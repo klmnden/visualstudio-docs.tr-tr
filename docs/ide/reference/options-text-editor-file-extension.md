@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778625"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 
@@ -60,4 +60,4 @@ Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Düzenleyici modlarını yönetme](../../ide/how-to-manage-editor-modes.md)
+- [Nasıl yapılır: Düzenleyici Modlarını Yönetme](../../ide/how-to-manage-editor-modes.md)

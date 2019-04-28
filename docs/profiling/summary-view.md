@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e95e532e97253fc8ba338e27879d80dd9d664118
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420109"
 ---
 # <a name="summary-view"></a>Özet görünümü
 Özet görünümü profil oluşturma yürütmesine en pahalı performans işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünümde bir zaman çizelgesi grafiği sağlar ve profil oluşturma yöntemine performans ölçümleri temelinde en pahalı işlevleri veya nesneleri iki veya daha fazla listesini alan. Bu görünümdeki veriler kullanılan profil oluşturma yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanmadı.

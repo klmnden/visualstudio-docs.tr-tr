@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaf71c7b04229fd8c7b08bb8d24212c15f6f5724
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: febbdd44935ee51136049157f7f04c0a10115267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440690"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_callingConvention ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

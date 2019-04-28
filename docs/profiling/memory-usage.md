@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ed4c8032133f08b975a22d56de4911efbd50a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426658"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 
@@ -46,7 +46,7 @@ Bu öğreticide şunları yapacaksınız:
     Burada, bir bellek sorunu şüphelendiğiniz bir alan varsa, bellek sorunu gerçekleşmeden önce ilk kesme noktası ayarlayın.
 
     > [!TIP]
-    >  Uygulamanız sıklıkla ayırır ve belleği serbest bırakır ilginizi çeken bir işlem bellek profilini yakalamak için bu zor olabilir çünkü başlangıç ve bitiş tam noktası bulmak için işlemi (veya adım işlemi aracılığıyla) kesme noktaları ayarlayın bellek değişti.
+    > Uygulamanız sıklıkla ayırır ve belleği serbest bırakır ilginizi çeken bir işlem bellek profilini yakalamak için bu zor olabilir çünkü başlangıç ve bitiş tam noktası bulmak için işlemi (veya adım işlemi aracılığıyla) kesme noktaları ayarlayın bellek değişti.
 
 2. İşlev veya bölge analiz etmek istediğiniz kodu sonunda ikinci bir kesme noktası ayarlayın (veya bir tespit edildiğinde alınan önlemlerin bir bellek sorunu gerçekleştikten sonra).
 
@@ -63,7 +63,7 @@ Bu öğreticide şunları yapacaksınız:
      ![Tanılama araçları Özet sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamalarında etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, seçin **bellek kullanımı** sekmesine ve ardından **yığın profili oluşturmayı**.
+     > Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamalarında etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, seçin **bellek kullanımı** sekmesine ve ardından **yığın profili oluşturmayı**.
      >
      >  ![Anlık görüntüleri etkinleştir](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
@@ -74,7 +74,7 @@ Bu öğreticide şunları yapacaksınız:
     ![Anlık Görüntü Al](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  Bellek karşılaştırmaları için bir temel oluşturmak için bir anlık görüntü hata ayıklama oturumunuzu başlangıcında alma göz önünde bulundurun.
+     > Bellek karşılaştırmaları için bir temel oluşturmak için bir anlık görüntü hata ayıklama oturumunuzu başlangıcında alma göz önünde bulundurun.
 
 6. İlk kesme noktasına ulaşılmasına neden olacak senaryo çalıştırın.
 

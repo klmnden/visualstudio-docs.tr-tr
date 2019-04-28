@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65f17d9c37cf885460be8a2c9c3560d12f64dd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8a28551656c7cb47185713a6246479ef2bd96325
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446832"
 ---
 # <a name="detach"></a>Ayır
 VSPerfCmd.exe **ayırma** seçeneği keser profil oluşturucu belirtilen işlemleri veya tüm işlemlerden hiçbiri belirtilmezse. Profil oluşturma için örnekleme yöntemini kullanarak başlatılmış olması gerekir.
@@ -23,7 +23,7 @@ VSPerfCmd.exe **ayırma** seçeneği keser profil oluşturucu belirtilen işleml
  **Ayırma** profil oluşturma veri dosyasını kapatmak değil. Kullanım **kapatma** son profil oluşturma ve veri dosyasını kapatırsınız.
 
 > [!NOTE]
->  Varsa **Başlat** seçeneği ile belirtilen **Crosssession** seçeneğini çağrıları **VSPerfCmd /Attach** veya **VSPerfCmd/detach** gerekir Ayrıca belirtin **Crosssession**.
+> Varsa **Başlat** seçeneği ile belirtilen **Crosssession** seçeneğini çağrıları **VSPerfCmd /Attach** veya **VSPerfCmd/detach** gerekir Ayrıca belirtin **Crosssession**.
 
 ## <a name="syntax"></a>Sözdizimi
 

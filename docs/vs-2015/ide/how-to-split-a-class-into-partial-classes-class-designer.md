@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15c57de4a8f51283692b21bcaa148c86bb4deb2d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435168"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Kullanarak bir sınıf veya yapı çeşitli bildirimler arasında bildirimi böl
  Aşağıdaki örnekler sınıfının tanımını bölme `Employee` alanına iki bildirimler, her biri farklı bir yordam tanımlar. İki kısmi tanım örneklerde, bir kaynak dosyasında veya iki farklı kaynak dosyalar olabilir.  
   
 > [!NOTE]
->  Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır: kullanıcı tarafından yazılan koddan oluşturulan kod. Kod ayrı kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmeniz gerekir.  
+> Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır: kullanıcı tarafından yazılan koddan oluşturulan kod. Kod ayrı kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmeniz gerekir.  
   
  Visual Basic'te kısmi türleri hakkında daha fazla bilgi için bkz. [kısmi](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
   

@@ -11,18 +11,18 @@ ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29744e3e981c62b5c941cf9e59745913fb329803
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409374"
 ---
 # <a name="displaying-locals"></a>Yerel Öğeleri Görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Her zaman yürütme yöntemini içeren yöntemi olarak da bilinen veya geçerli yöntemi bağlamında gerçekleştirilir. Yürütme durakladığında Visual Studio hata ayıklama altyapısı yerel değişkenler listesini almak için (DE) ve topluca Yereller yöntemin adı bağımsız değişkeni çağırır. Visual Studio bu Yereller ve değerlerini görüntüler **Yereller** penceresi.  
   
@@ -31,7 +31,7 @@ ms.locfileid: "54834653"
  DE çağrıları [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) almak için bir [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , yalnızca yerel öğeler döndürür ve bir listesini oluşturmak için numaralandırılmış nesnesini [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)yapıları. Her yapı adı, türü ve yerel değerini içerir. Tür ve değer, biçimlendirilmiş dizeler görüntülemek için uygun olarak depolanır. Adı, türü ve değeri genellikle birlikte bir satırında görüntülenen **Yereller** penceresi.  
   
 > [!NOTE]
->  **QuickWatch** ve **Watch** windows değişkenleriyle aynı ada, değere ve türü biçimi de görüntüler. Ancak, bu değerleri çağırarak elde edilen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) yerine `IDebugProperty2::EnumChildren`.  
+> **QuickWatch** ve **Watch** windows değişkenleriyle aynı ada, değere ve türü biçimi de görüntüler. Ancak, bu değerleri çağırarak elde edilen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) yerine `IDebugProperty2::EnumChildren`.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Örnek Yerel Öğeler Uygulaması](../../extensibility/debugger/sample-implementation-of-locals.md)  

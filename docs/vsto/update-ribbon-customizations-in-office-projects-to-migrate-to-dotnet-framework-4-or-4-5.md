@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446939"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içerip içermediğini **Şerit (Görsel Tasarımcı)** proje öğesi, hedef Framework'ü değiştirilirse proje kodunuzu aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.
@@ -75,7 +75,7 @@ ms.locfileid: "60096549"
 3. İçinde `InitializeComponent` yöntemi, Şerit denetimi oluşturur ve böylece kod yerine yardımcı yöntemlerinden birini kullanan herhangi bir kod değiştirme <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> nesne.
 
     > [!NOTE]
-    >  Visual C# projelerinde, adlı bölgeyi Genişlet gerekir `Component Designer generated code` görmek için `InitializeComponent` yöntemi.
+    > Visual C# projelerinde, adlı bölgeyi Genişlet gerekir `Component Designer generated code` görmek için `InitializeComponent` yöntemi.
 
      Örneğin, dosyanızın örneğini oluşturan kod aşağıdaki satırı içerdiğini varsayın. bir <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> adlı `button1` içinde .NET Framework 3. 5'i hedefleyen bir proje.
 

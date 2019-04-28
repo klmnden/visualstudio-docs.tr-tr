@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438822"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme
   Kullanabileceğiniz `ServerDocument` sınıfını [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word ve Microsoft Office Excel yüklü değilse, belge düzeyinde özelleştirmeler, çeşitli yönlerini yönetmek için. Aşağıdaki görevleri gerçekleştirebilirsiniz:
@@ -38,7 +38,7 @@ ms.locfileid: "60045493"
  Hakkında daha fazla bilgi için Visual Studio 2010 Araçları Office çalışma zamanı ve Office uzantıları için .NET Framework için bkz: [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Kullanan eski bir uygulama varsa `ServerDocument` sınıfını `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), uygulamayı çalıştıran bilgisayarlarda yüklü olması gerekir. `Visual Studio 2010 Tools for Office runtime` Bu uygulamaları çalıştıramazsınız.
+> Kullanan eski bir uygulama varsa `ServerDocument` sınıfını `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), uygulamayı çalıştıran bilgisayarlarda yüklü olması gerekir. `Visual Studio 2010 Tools for Office runtime` Bu uygulamaları çalıştıramazsınız.
 
 ## <a name="CachedData"></a> Belge önbelleğe alınan verilerle çalışın
  `ServerDocument` Özelleştirilmiş belgeleri veri önbelleğindeki çalışmak için kullanabileceğiniz üyeleri sınıf sağlar. Önbelleğe alınan veriler hakkında daha fazla bilgi için bkz. [veriyi önbelleğe alma](../vsto/caching-data.md) ve [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).

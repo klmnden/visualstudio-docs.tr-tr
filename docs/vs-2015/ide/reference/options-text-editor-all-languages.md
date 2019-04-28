@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7271b9cb45e2a8bf53e5f5aedc10eefc05830e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc37f11d5f01af041610e066a9896f8e0e244fcc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443370"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "59661457"
 Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değiştirmenizi sağlar. Bu ayarları temel üzerine Kod düzenleyicisinde, HTML Tasarımcısı'nın kaynak görünümü gibi diğer düzenleyiciler için de geçerlidir. Bu iletişim kutusunu açmak için seçmeniz **seçenekleri** gelen **Araçları** menüsü. İçinde **metin düzenleyici** klasörünü genişletin **tüm diller** alt seçip **genel**.  
   
 > [!CAUTION]
->  Bu sayfa, tüm geliştirme diller için varsayılan seçenekleri ayarlar. Bu iletişim kutusunda bir seçenek sıfırlama genel seçenekleri tüm dillerde hangi seçenekler burada seçilen için sıfırlar olduğunu unutmayın. Yalnızca bir dilin metin düzenleyici seçenekleri değiştirmek için bu dil için alt klasörü genişletin ve seçeneği sayfalarını seçin.  
+> Bu sayfa, tüm geliştirme diller için varsayılan seçenekleri ayarlar. Bu iletişim kutusunda bir seçenek sıfırlama genel seçenekleri tüm dillerde hangi seçenekler burada seçilen için sıfırlar olduğunu unutmayın. Yalnızca bir dilin metin düzenleyici seçenekleri değiştirmek için bu dil için alt klasörü genişletin ve seçeneği sayfalarını seçin.  
   
  Bazı programlama dilleri, ancak diğerleri genel seçenekler sayfalarındaki seçeneği seçildiğinde, gri bir onay işareti görüntülenir.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="statement-completion"></a>Deyim Tamamlama  
  Üyeleri otomatik Listele  
@@ -58,7 +58,7 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
  Seçili olduğunda, yatay olarak görüntülenebilir Düzenleyicisi alan genişletir bir satır herhangi bir kısmını sonraki satırda otomatik olarak görüntülenir. Bu seçenek belirlendiğinde **sözcük kaydırma için görsel karakterleri Göster** seçeneği.  
   
 > [!NOTE]
->  **Sanal adres alanı** özelliğin açık kapalı durumdayken **sözcük kaydırma** açıktır.  
+> **Sanal adres alanı** özelliğin açık kapalı durumdayken **sözcük kaydırma** açıktır.  
   
  Sözcük kaydırma için görsel karakterleri Göster  
  Seçili olduğunda, burada bir uzun satır ikinci satıra sarmalar dönüş ok göstergesi görüntülenir.  
@@ -68,7 +68,7 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
  Bu göstergeler görüntülemeyecek tercih ederseniz bu seçeneği temizleyin.  
   
 > [!NOTE]
->  Bu anımsatıcı okları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.  
+> Bu anımsatıcı okları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.  
   
  Seçim olduğunda Kes veya Kopyala komutlarını boş satırlara Uygula  
  Bu seçenek, ekleme noktasını boş bir satıra yerleştirin, hiçbir şey seçin ve ardından kopyaladığınızda veya Kes Düzenleyicisi davranışını ayarlar.  
@@ -80,14 +80,14 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
   Bir satır boş olmadığında bu ayar Kopyala veya Kes üzerinde etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya Kes. Ardından yapıştırırsanız, tüm satırı ve kendi endline karakter yapıştırılan metin.  
   
 > [!TIP]
->  Boşluklar, sekmeler ve uçları göstergelerini görüntüleme ve bu nedenle, tamamen boş satırları girintili satırları ayırt etmek için **Gelişmiş** gelen **Düzenle** menüsünü seçip **görünümü beyaz Alanı**.  
+> Boşluklar, sekmeler ve uçları göstergelerini görüntüleme ve bu nedenle, tamamen boş satırları girintili satırları ayırt etmek için **Gelişmiş** gelen **Düzenle** menüsünü seçip **görünümü beyaz Alanı**.  
   
 ## <a name="display"></a>Ekran  
  Satır numaraları  
  Bu onay kutusu seçildiğinde, her kod satırının yanındaki satır numarası görüntülenir.  
   
 > [!NOTE]
->  Bu satır numaraları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.  
+> Bu satır numaraları kodunuza eklenmez ve yazdırılmaz. Bunlar yalnızca başvuru amaçlıdır.  
   
  Tek tıkla URL gezinmesini etkinleştir  
  Bir URL'yi Düzenleyici üzerinden geçerken seçili olduğunda, fare imlecini işaret eden bir ele değiştirir. Belirtilen sayfayı, Web tarayıcınızda görüntülemek için URL tıklayabilirsiniz.  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430333"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme
   Visual Studio'da kullanabileceğiniz **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** bileşenleri SharePoint sitelerinde görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** böylece Web Bölümü Galerisi'ne görüntüler her SharePoint sitesine bağlı.
@@ -40,7 +40,7 @@ ms.locfileid: "60040578"
 - Hata ayıklama ve uzantıyı test etme.
 
 > [!NOTE]
->  İstemci nesne modelini SharePoint için bunun yerine sunucu nesne modeli kullanır. Bu kılavuzda alternatif bir sürümü için bkz: [izlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> İstemci nesne modelini SharePoint için bunun yerine sunucu nesne modeli kullanır. Bu kılavuzda alternatif bir sürümü için bkz: [izlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:
@@ -75,7 +75,7 @@ ms.locfileid: "60040578"
 3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 4. İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040578"
 1. WebPartNodeExtension proje SiteNodeExtension kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
 
     > [!NOTE]
-    >  Ne zaman bu kodu ekleyin, proje bazı derleme hataları olacaktır, ancak bunlar kaybolur sonra sonraki adımlarda kod ekleyin.
+    > Ne zaman bu kodu ekleyin, proje bazı derleme hataları olacaktır, ancak bunlar kaybolur sonra sonraki adımlarda kod ekleyin.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040578"
 1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
     > [!WARNING]
-    >  Bu noktada, VSIX bildirim dosyası yazma için bir değer olmadığından WebPartNode proje derleme hatası olabilir. Sonraki adımlarda bir değer eklediğinizde, bu hata kaybolur.
+    > Bu noktada, VSIX bildirim dosyası yazma için bir değer olmadığından WebPartNode proje derleme hatası olabilir. Sonraki adımlarda bir değer eklediğinizde, bu hata kaybolur.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Uzantıyı dağıtmak için VSIX paketi oluşturma
  Uzantıyı dağıtmak için VSIX paketi oluşturmak için çözümünüzdeki VSIX projesi kullanın. İlk olarak, VSIX projesinde source.extension.vsixmanifest dosyasını değiştirerek VSIX paketini yapılandırın. Ardından çözümü oluşturarak VSIX paketini oluşturun.
@@ -290,7 +290,7 @@ ms.locfileid: "60040578"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040578"
 10. İçinde **türü** kutusuna **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Bu öğe, Visual Studio Uzantısı'nda dahil etmek istediğiniz özel bir uzantı belirtir. Daha fazla bilgi için [varlık öğesi (VSX şema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Bu öğe, Visual Studio Uzantısı'nda dahil etmek istediğiniz özel bir uzantı belirtir. Daha fazla bilgi için [varlık öğesi (VSX şema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. İçinde **kaynak** listesinde **mevcut çözümde bir proje** liste öğesi.
 

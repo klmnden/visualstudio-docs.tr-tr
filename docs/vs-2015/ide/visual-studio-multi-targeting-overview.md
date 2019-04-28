@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443153"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio Çoklu Sürüm Desteğine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58194567"
 Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belirtebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] uygulamanız için gerekli olmasıdır. Bu nedenle, bu sürümü kullanmak istiyorsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] önceki bir sürümde başlatılan bir projeyi geliştirmeye devam etmek için çerçeve hedefini değiştirmeniz gerekmez. Ayrıca, farklı sürümlerini hedefleyen framework'ün projeleri içeren bir çözüm oluşturabilirsiniz. Çerçeve hedefleme ayrıca uygulamanın yalnızca belirtilen çerçeve sürümünde kullanılabilir olan işlevleri kullanmasının garantilenmesine yardımcı olur.
 
 > [!TIP]
->  Ayrıca, farklı platformlar için uygulamaları hedefleyebilirsiniz. Daha fazla bilgi için [çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
+> Ayrıca, farklı platformlar için uygulamaları hedefleyebilirsiniz. Daha fazla bilgi için [çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
 
 ## <a name="framework-targeting-features"></a>Çerçeve hedefleme özellikleri
  Çerçeve hedefleme şu özellikleri içerir:
@@ -57,19 +57,19 @@ Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belir
 - Derlemeler için derleyici ve derleyici seçenekleri hedeflenen sürüm için uygun sürümünü kullanır.
 
 > [!NOTE]
->  Çerçeve hedefleme, uygulamanızın doğru şekilde çalışacağını garanti etmez. Hedeflenen sürümde çalışacağından çalıştığından emin olmak için uygulamanızı test etmeniz gerekir. .NET Framework 2. 0 ' daha eski framework sürümlerini hedefleyemezsiniz.
+> Çerçeve hedefleme, uygulamanızın doğru şekilde çalışacağını garanti etmez. Hedeflenen sürümde çalışacağından çalıştığından emin olmak için uygulamanızı test etmeniz gerekir. .NET Framework 2. 0 ' daha eski framework sürümlerini hedefleyemezsiniz.
 
 ## <a name="selecting-a-target-framework-version"></a>Hedef Framework sürüm seçme
  Bir proje oluşturduğunuzda, hedef seçin [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümünde **yeni proje** iletişim kutusu. Kullanılabilir proje şablonları listesinde, seçime göre filtrelenir. Varolan bir projede, hedef değiştirebilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümünü Proje Özellikleri iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
->  Visual Studio'nun Express sürümlerinde hedef Framework'ü olarak ayarlanamıyor **yeni proje** iletişim kutusu.
+> Visual Studio'nun Express sürümlerinde hedef Framework'ü olarak ayarlanamıyor **yeni proje** iletişim kutusu.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözümleme
  Bir .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. .NET Framework sürüm 2.0, 3.0 ve 3.5 için derleme başvuruları karşıdan yükleyebileceğiniz .NET Framework 3.5 SP1, dahil edilecek [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) Web sitesi. .NET Framework 3.5 istemci profili, .NET Framework 4, .NET Framework 4 istemci profili ve Silverlight için derleme başvuruları web'da ayrıca [Visual Studio indirmeleri](http://go.microsoft.com/fwlink/?LinkId=179687) Web sitesi.
 
 > [!NOTE]
->  .NET Framework istemci profili, kitaplıkların ve özelliklerin sınırlı bir kümesini sağlayan .NET Framework'ün bir alt kümesidir. İstemci profilleri hakkında daha fazla bilgi için bkz. [.NET Framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
+> .NET Framework istemci profili, kitaplıkların ve özelliklerin sınırlı bir kümesini sağlayan .NET Framework'ün bir alt kümesidir. İstemci profilleri hakkında daha fazla bilgi için bkz. [.NET Framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
  **Başvuru Ekle** iletişim kutusu, hedefine ait olmayan sistem derlemelerini devre dışı bırakır [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürüm böylece bunlar yanlışlıkla bir projeye eklenemez. (Sistem derlemeleri, dahil olan .dll dosyaları bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümü.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözmeyecek ve böyle bir başvuruya dayanan denetimler eklenemez. Böyle bir başvuruyu etkinleştirmek istiyorsanız, sıfırlama [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hedef başvuru içeren bir proje.  Daha fazla bilgi için [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 

@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433551"
 ---
 # <a name="import-element-msbuild"></a>İçeri Aktarma Öğesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
  Şema içeri aktarılan bir proje, standart bir proje için aynıdır. Ancak [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] olabilir bir içeri aktarılan proje genellikle kümesi veya hedefleri çalıştırın sırayı hangi özellikleri hakkında bilgi içermiyor içeri aktarılan bir proje oluşturmak kullanabilirsiniz, olası olmasıdır. İçeri aktarılan proje içine bu bilgileri sağlamak için aktarılır projeye bağlıdır.  
   
 > [!NOTE]
->  Koşullu içeri aktarma deyimlerini komut satırı MSBuilds içinde çalışırken, bunlar ile Msbuild'de çalışmaz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE). Proje yüklendiğinde ayarlanır yapılandırma ve platform değerleri kullanarak koşullu içeri aktarmalar değerlendirilir. Daha sonra proje dosyasında koşullar'ın bir yeniden değerlendirme gerektiren değişiklikler, örneğin, platform değiştirme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] özellikleri ve öğeleri, ancak içeri aktarmalar koşulları reevaluates. İçeri aktarma, içeri aktarma koşullu değerlendirilmez çünkü atlanır.  
+> Koşullu içeri aktarma deyimlerini komut satırı MSBuilds içinde çalışırken, bunlar ile Msbuild'de çalışmaz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE). Proje yüklendiğinde ayarlanır yapılandırma ve platform değerleri kullanarak koşullu içeri aktarmalar değerlendirilir. Daha sonra proje dosyasında koşullar'ın bir yeniden değerlendirme gerektiren değişiklikler, örneğin, platform değiştirme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] özellikleri ve öğeleri, ancak içeri aktarmalar koşulları reevaluates. İçeri aktarma, içeri aktarma koşullu değerlendirilmez çünkü atlanır.  
 >   
->  Bu sorunu çözmek için koşullu içeri aktarmalar .targets dosyalarında put veya kodu gibi bir koşullu blok içinde koyun bir [Seç öğesi (MSBuild)](../msbuild/choose-element-msbuild.md) blok.  
+> Bu sorunu çözmek için koşullu içeri aktarmalar .targets dosyalarında put veya kodu gibi bir koşullu blok içinde koyun bir [Seç öğesi (MSBuild)](../msbuild/choose-element-msbuild.md) blok.  
   
 ## <a name="wildcards"></a>Joker karakterler  
  .NET Framework 4'te MSBuild proje öznitelik joker karakterler sağlar. Joker karakterler olduğunda, tüm eşleşme bulundu (için yeniden üretilebilirliğini) sıralanır ve sırasını açıkça ayarlanmış olarak daha sonra bu sırayla aktarıldıkları.  
@@ -116,4 +116,4 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Nasıl yapılır: Birden Çok Proje Dosyasında Aynı Hedefi Kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

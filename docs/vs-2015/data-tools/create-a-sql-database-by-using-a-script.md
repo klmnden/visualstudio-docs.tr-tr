@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436949"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Bir komut dosyası kullanarak SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
 2. Altında **yüklü**, genişletme **şablonları** düğümünü genişletin **diğer diller** düğümünü **SQL Server** kategorisi ve ardından seçin **SQL Server veritabanı projesi** şablonu.  
   
     > [!NOTE]
-    >  **Diğer diller** düğümü, Visual Studio'nun tüm yüklemelerinde görünmez.  
+    > **Diğer diller** düğümü, Visual Studio'nun tüm yüklemelerinde görünmez.  
   
 3. İçinde **adı** kutusuna `Small Database`.  
   

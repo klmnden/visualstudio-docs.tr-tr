@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439927"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
  Değiştirirseniz [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kendi kullanıcı hesabı altında çalışacak şekilde çalışan işlemi IIS çalıştıran sunucuda yönetici olmanız gerekmez.  
   
 > [!CAUTION]
->  Değiştirmeden önce [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.  
+> Değiştirmeden önce [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432994"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için Intell
  Bu onay kutusu seçiliyken ve bir projenin bağlamı dışında açılmış bir JavaScript dosyanız varsa, Visual Studio IntelliSense bilgilerini sağlamak amacıyla dosyada başvurulan uzak JavaScript dosyalarını indirir. Bu seçenek işaretliyse, JavaScript dosyanıza bir başvuru olarak eklediğiniz dosyalar indirilir.  
   
 > [!NOTE]
->  Web projeleri için, projenizde başvurulan uzak dosyalar varsayılan olarak indirilir.  
+> Web projeleri için, projenizde başvurulan uzak dosyalar varsayılan olarak indirilir.  
   
 ## <a name="statement-completion"></a>Deyim Tamamlama  
  IntelliSense deyim tamamlama davranışını değiştirmek için bu seçenekleri kullanabilirsiniz.  
@@ -74,7 +74,7 @@ Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için Intell
   Bu seçenek, dil hizmetinin bağlamına dosyaların yüklendiği sırayı belirtir. Sırayı kullanarak yapılandırabilirsiniz **Kaldır**, **Yukarı Taşı**, ve **Aşağı Taşı** düğmeleri. IntelliSense'in düzgün çalışması için, bir diğer dosyaya bağımlı olan dosya söz konusu bu diğer dosyadan sonra yüklenmelidir.  
   
 > [!CAUTION]
->  Bir nesne iki veya daha fazla örtük başvuruda koşulsuz olarak tanımlanırsa, nesneyi tanımlamak için bu listedeki son başvuru kullanılır.  
+> Bir nesne iki veya daha fazla örtük başvuruda koşulsuz olarak tanımlanırsa, nesneyi tanımlamak için bu listedeki son başvuru kullanılır.  
   
  **Grup bir başvuru ekleyin**  
  Bu seçenek, uygun dosyaların bulunduğu yere giderek ek IntelliSense .js dosyalarını eklemek için bir yol sağlar.  

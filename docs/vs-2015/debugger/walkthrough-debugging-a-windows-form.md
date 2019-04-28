@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56c4270bd878ef127d60df80aa97d9d65f3d3132
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e75ab095284ec4021d3555de27b43205e17b1128
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444302"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Windows Formunda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
      Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Daha fazla bilgi için [kesme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz.  
   
     > [!NOTE]
-    >  Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.  
+    > Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.  
   
 2. ON **hata ayıklama** menüsünde seçin **Başlat**.  
   

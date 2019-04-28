@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d76eb9882eaf51de031d886c15954df8d5180e25
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432709"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Aracı bir .NET Framework hizmetini ve Profiler komut satırını kullanarak bellek verilerini toplamak
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,12 +22,12 @@ ms.locfileid: "60113618"
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aracı profil oluşturma araçları komut satırı araçlarını bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ve bellek kullanım verilerini toplamak. Bellek ayırma verisini toplayabilir veya hem bellek ayırma ve nesne yaşam verisi toplayabilir.  
 
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
->  Bilgisayar başlatıldıktan sonra hizmeti yeniden başlatılamıyor ise izleme yöntemi ile bir hizmetin profilini oluşturamazsınız, böyle bir hizmet, işletim sistemi başlatıldığında başlar.  
+> Bilgisayar başlatıldıktan sonra hizmeti yeniden başlatılamıyor ise izleme yöntemi ile bir hizmetin profilini oluşturamazsınız, böyle bir hizmet, işletim sistemi başlatıldığında başlar.  
 >   
->  Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Profil araçlarının komut satırı araçları tools\performance Tools alt dizininde içinde bulunan [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yükleme dizini. 64 bit bilgisayarlarda araçların 64-bit hem 32 bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir. Daha fazla bilgi için [komut satırı araçları yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
 ## <a name="starting-the-profiling-session"></a>Profil oluşturma oturumu başlatılıyor  
  Performans verileri toplamak için bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hizmeti kullandığınız [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) uygun ortam değişkenlerini başlatmak için araç ve [VSInstr.exe](../profiling/vsinstr.md) aracını belgelenmiş bir oluşturmak için Hizmet ikili dosyasının bir kopyası.  
@@ -72,7 +72,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
      Aşağıdaki seçeneklerle dilediğinizi kullanabilirsiniz **/start:sample** seçeneği.  
 
    > [!NOTE]
-   >  **/User** ve **/crosssession** seçenekleri genellikle hizmetler için gereklidir.  
+   > **/User** ve **/crosssession** seçenekleri genellikle hizmetler için gereklidir.  
 
    |                                 Seçenek                                  |                                                                                                                                                   Açıklama                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

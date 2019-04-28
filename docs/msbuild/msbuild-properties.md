@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efd267de85cd8cd32ba442e2fd4f394b6c6209fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443598"
 ---
 # <a name="msbuild-properties"></a>MSBuild özellikleri
 Özellikler, yapıları yapılandırmak için kullanılabilen ad-değer çiftleridir. Özellikler, değerlerin görevlere geçirilmesinde, koşulların değerlendirilmesinde ve proje dosyası boyunca başvurulacak olan değerlerin depolanmasında yararlıdır.
@@ -54,7 +54,7 @@ ms.locfileid: "60083276"
  İçinde bir ortam değişkeninin geçerli değerini almak için kullanmak [özellik işlevleri](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. Ancak tercih edilen yöntem, <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> görev parametresinin kullanılmasıdır. Bu dize dizisinde ayarlanan ortam özellikleri, sistem ortamı değişkenlerini etkilemeden oluşturulan araca gönderilebilir.
 
 > [!TIP]
->  Tüm ortam değişkenleri, başlangıç özellikleri olması için okunmaz. Değil geçerli bir MSBuild özellik adı, "386" gibi adları olan tüm ortam değişkenleri göz ardı edilir.
+> Tüm ortam değişkenleri, başlangıç özellikleri olması için okunmaz. Değil geçerli bir MSBuild özellik adı, "386" gibi adları olan tüm ortam değişkenleri göz ardı edilir.
 
  Daha fazla bilgi için [nasıl yapılır: Derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).
 

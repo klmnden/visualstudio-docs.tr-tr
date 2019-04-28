@@ -12,12 +12,12 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408565"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Ana Hat Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Anahat oluşturma, karmaşık bir program bir genel bakış veya anahat Daralt m
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz: [izlenecek yol: Anahat oluşturma](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
 ## <a name="enabling-support-for-outlining"></a>Anahat oluşturma için desteğini etkinleştirme  
  `AutoOutlining` Kayıt defteri girişini otomatik anahatlandırma etkinleştirmek için 1 olarak ayarlanır. Bir dosya yüklendiğinde veya gizli bölgeleri belirleyin ve ana hat oluşturma karakterleri göstermek için değiştirilen otomatik anahat oluşturma tüm kaynak bir ayrıştırma ayarlar. Ana hat oluşturmayı da el ile kullanıcı tarafından denetlenebilir.  

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdbcf16139c1f0b48554b3bf14f314a73a641012
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443975"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme
   Bu yönerge, kullanıcıların Gizle veya Şerit üzerindeki iki durumlu bir düğmenin tıklayarak özel görev bölmesi oluşturma işlemini gösterir. Her zaman Microsoft Office uygulamaları, kullanıcıların özel görev bölmeleri göstermek veya gizlemek varsayılan bir yol sağlamaz çünkü, kullanıcıların, özel görev bölmesini Gizle veya görüntülemek için tıklayabileceği bir düğme gibi bir kullanıcı arabirimi (UI) öğesi oluşturmanız gerekir.
@@ -46,7 +46,7 @@ ms.locfileid: "60040670"
 - İki durumlu düğme özel görev bölmesi ile eşitleniyor.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

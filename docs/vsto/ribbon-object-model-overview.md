@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446987"
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit nesne modeline genel bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve çalışma zamanında Şerit denetimlerinin özelliklerini ayarlamak için kullanabileceğiniz sağlam biçimde yazılmış nesne modeli sunar. Örneğin, dinamik olarak menü denetimlerini doldurmak veya gösterebilir ve bağlamsal denetimlerini gizle. Şerit, ancak yalnızca Şerit tarafından Office uygulamasına yüklenmeden önce sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için [salt okunur özelliklerini ayarlama](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040722"
  Aşağıdaki tabloda, Şerit yüklemeden önce yalnızca ayarlanabilir özelliklerini gösterir.
 
 > [!NOTE]
->  Herhangi bir zamanda Dinamik menüdeki denetimlerin özelliklerini ayarlayabilirsiniz. Bu tabloda bu durumda geçerli değildir.
+> Herhangi bir zamanda Dinamik menüdeki denetimlerin özelliklerini ayarlayabilirsiniz. Bu tabloda bu durumda geçerli değildir.
 
 |Özellik|Şerit denetimi sınıfı|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040722"
  Şerit diğer örnekleri oluşturulduğunda, bu özelliklerden herhangi birini farklı bir değer ayarlar, koşullu mantık varsa, bu kodu herhangi bir etkisi gerekir.
 
 > [!NOTE]
->  Emin **adı** Outlook Şeridine eklediğiniz her denetimin özelliğini ayarlayın. Outlook Şeridine çalışma zamanında denetim ekleme, kodunuzda bu özelliği ayarlayın gerekir. Outlook Şeridine tasarım zamanında denetim ekleme, Name özelliği otomatik olarak ayarlanır.
+> Emin **adı** Outlook Şeridine eklediğiniz her denetimin özelliğini ayarlayın. Outlook Şeridine çalışma zamanında denetim ekleme, kodunuzda bu özelliği ayarlayın gerekir. Outlook Şeridine tasarım zamanında denetim ekleme, Name özelliği otomatik olarak ayarlanır.
 
 ## <a name="ribbon-control-events"></a>Şerit denetim olayları
  Her denetim sınıfı bir veya daha fazla etkinlik içermiyor. Aşağıdaki tabloda, bu olayları açıklar.

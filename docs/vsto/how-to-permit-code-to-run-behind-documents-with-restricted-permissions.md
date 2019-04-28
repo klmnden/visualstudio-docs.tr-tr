@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445335"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin
   Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını arkasındaki kodun, çalışmasına izin verilmez. Varsayılan nesne modeli, yönetilen kod uzantıları erişebilir ve çözümünüzü çalışır böylece değiştirebilirsiniz.
@@ -38,7 +38,7 @@ ms.locfileid: "56637665"
 2. Tıklayın **dosya** sekmesinde, işaret **hazırlama**, işaret **izinleri kısıtla**ve ardından **kısıtlı erişim**.
 
    > [!NOTE]
-   >  İlk kez kullanıldığında, Windows Rights Management istemcisi yüklemeniz istenir. İstemciyi yükledikten sonra adımları tekrarlamanız gerekebilir.
+   > İlk kez kullanıldığında, Windows Rights Management istemcisi yüklemeniz istenir. İstemciyi yükledikten sonra adımları tekrarlamanız gerekebilir.
 
 3. İçinde **izni** iletişim kutusunda **bu belgeye erişimi kısıtlamak**ve ardından **diğer seçenekler**.
 

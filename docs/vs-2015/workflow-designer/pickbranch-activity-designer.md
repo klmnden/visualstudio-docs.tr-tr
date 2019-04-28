@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d83b4945b41c26ace1b36a294f1830fdbb24d319
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798978"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.PickBranch> Yürütme içinde olay-tabanlı bir yolunu sağlayan bir <xref:System.Activities.Statements.Pick> , gelen bir olay tarafından tetiklenebilecek bir etkinlik.  

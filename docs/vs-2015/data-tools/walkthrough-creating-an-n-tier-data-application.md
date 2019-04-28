@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424740"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
  Bu kılavuzun ilk adımı bir çözüm ve iki sınıf kitaplığı projesi oluşturmaktır. Birinci sınıf kitaplığı veri kümesini tutacaktır (uygulama verilerini tutacak, üretilen türü belirtilmiş DataSet sınıfı ve DataTable tabloları). Bu proje uygulamanın veri varlık katmanı olarak kullanılır ve genellikle orta katmanda bulunur. Dataset Designer, ilk veri kümesini oluşturmak ve otomatik olarak kod iki sınıf kitaplığına ayırmak için kullanılır.  
   
 > [!NOTE]
->  Tıklamadan önce projeyi ve çözümü doğru adlandırdığınızdan emin olun **Tamam**. Böylece bu kılavuzu tamamlamanız kolaylaşır.  
+> Tıklamadan önce projeyi ve çözümü doğru adlandırdığınızdan emin olun **Tamam**. Böylece bu kılavuzu tamamlamanız kolaylaşır.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N katmanlı çözüm ve DataEntityTier sınıf kitaplığı oluşturmak için  
   
 1. Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
   
     > [!NOTE]
-    >  **Veri kümesi Tasarımcısı** desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Yeni projeyi bu dillerden birinde oluşturun.  
+    > **Veri kümesi Tasarımcısı** desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Yeni projeyi bu dillerden birinde oluşturun.  
   
 2. İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **Windows**.  
   
@@ -125,7 +125,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
 6. Veritabanına parola gerekiyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
     > [!NOTE]
-    >  Bir yerel veritabanı dosyası (SQL Server'a bağlanmak yerine) seçtiyseniz projeye dosya eklemek isteyip istemediğiniz sorulabilir. Tıklayın **Evet** veritabanı dosyası projeye eklenecek.  
+    > Bir yerel veritabanı dosyası (SQL Server'a bağlanmak yerine) seçtiyseniz projeye dosya eklemek isteyip istemediğiniz sorulabilir. Tıklayın **Evet** veritabanı dosyası projeye eklenecek.  
   
 7. Tıklayın **sonraki** üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfası.  
   
@@ -153,7 +153,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
    Veri kümesi ve TableAdapter bağdaştırıcıları iki sınıf kitaplığı projesine ayrılır. Başlangıçta tüm veri kümesini (DataAccessTier) içeren projede şimdi yalnızca TableAdapter bağdaştırıcıları bulunur. Proje **DataSet projesi** özelliği (DataEntityTier) türü belirtilmiş veri kümesi içerir: NorthwindDataSet.Dataset.Designer.vb (veya NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
+> Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları taşınmaz otomatik olarak. Mevcut veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
   
 ## <a name="creating-a-new-service-application"></a>Yeni Hizmet Uygulaması Oluşturma  
  Bu kılavuz bir WCF hizmetini kullanarak veri erişim katmanına nasıl erişileceğini gösterdiğinden yeni bir WCF hizmeti uygulaması oluşturun.  
@@ -220,7 +220,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
  Şimdi veri erişim katmanında veri döndürme yöntemleri bulunduğuna göre, veri erişim katmanındaki yöntemleri çağırmak için veri hizmetinde yöntemler oluşturun.  
   
 > [!NOTE]
->  C# projelerinde aşağıdaki kodu derlemek için `System.Data.DataSetExtensions` derlemesine bir başvuru eklemeniz gerekir.  
+> C# projelerinde aşağıdaki kodu derlemek için `System.Data.DataSetExtensions` derlemesine bir başvuru eklemeniz gerekir.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Veri hizmetinde GetCustomers ve GetOrders işlevlerini oluşturmak için  
   
@@ -322,7 +322,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
 3. Seçin **Service1** tıklatıp **Tamam**.  
   
     > [!NOTE]
-    >  Geçerli bilgisayarda birden çok hizmetiniz varsa, bu kılavuzda önceden oluşturduğunuz hizmeti seçin (GetCustomers ve GetOrders yöntemlerini içeren hizmet).  
+    > Geçerli bilgisayarda birden çok hizmetiniz varsa, bu kılavuzda önceden oluşturduğunuz hizmeti seçin (GetCustomers ve GetOrders yöntemlerini içeren hizmet).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Veri Hizmetinin Döndürdüğü Verileri Görüntülemek İçin Forma DataGridView Görünümleri Ekleme  
  Veri hizmetine hizmet başvurusunu ekledikten sonra **veri kaynakları** penceresi hizmet tarafından döndürülen verilerle otomatik olarak doldurulur.  
@@ -361,7 +361,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
  Hizmet, Customers ve Orders tablolarından veri döndürdüğünden, maxReceivedMessageSize için varsayılan değer verileri tutabilecek kadar büyük değildir ve artırılması gerekir. Bu kılavuz için değeri 6553600 olarak değiştirin. İstemcideki değeri değişirin; bunu yaptığınızda hizmet başvurusu otomatik olarak güncelleştirilir.  
   
 > [!NOTE]
->  Varsayılan alt sınır boyutu hizmet reddi (DoS) saldırılarına maruz kalmayı sınırlamak içindir. Daha fazla bilgi için bkz. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> Varsayılan alt sınır boyutu hizmet reddi (DoS) saldırılarına maruz kalmayı sınırlamak içindir. Daha fazla bilgi için bkz. <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>MaxReceivedMessageSize değerini artırmak için  
   

@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447083"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları
   Her bir ana bilgisayar öğesi ve konak kontrolü ek işlevlere sahip karşılık gelen yerel Microsoft Office Word veya Microsoft Office Excel nesnesi gibi davranacak şekilde tasarlanmıştır. Ancak, konak denetimlerinin ve konak öğelerinin davranışını ve çalışma zamanında yerel Office nesneler arasındaki bazı temel farklar vardır.
@@ -57,7 +57,7 @@ ms.locfileid: "56596160"
  Konak denetimleri yerel eklenemiyor <xref:Microsoft.Office.Interop.Word.Document> veya <xref:Microsoft.Office.Interop.Excel.Worksheet>.
 
 > [!NOTE]
->  Aşağıdaki konak denetimleri, program aracılığıyla çalışma sayfaları veya belgeler için eklenemiyor: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, ve <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> Aşağıdaki konak denetimleri, program aracılığıyla çalışma sayfaları veya belgeler için eklenemiyor: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, ve <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Konak öğeleri, konak denetimleri ve yerel Office nesneler arasındaki türü farkları
  Her ana bilgisayar öğesi ve konak kontrolü için temel alınan yerel Microsoft Office Word veya Microsoft Office Excel nesne yok. Temel alınan nesnede konak öğesi ya da konak kontrolü InnerObject özelliğini kullanarak erişebilirsiniz. Ancak, yerel bir Office nesnesi kendi ilgili konak öğesi ya da konak kontrolü hiçbir yolu yoktur. Yerel bir Office nesne türüne bir ana bilgisayar öğesi ya da konak kontrolü dönüştürmeyi denerseniz bir <xref:System.InvalidCastException> oluşturulur.

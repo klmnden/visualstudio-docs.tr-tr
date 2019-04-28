@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799068"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Özel Düzenleyicilerde Söz Dizimi Renklendirmesi
 Çekirdek Düzenleyici dahil olmak üzere visual Studio ortamı SDK düzenleyicileri, belirli bir söz dizimi öğeleri tanımlamak ve bunları belirtilen belge görünümü için belirtilen renklerle görüntülemek için dil hizmetlerini kullanın.
@@ -58,5 +58,5 @@ ms.locfileid: "60060676"
 
 - [Eski Dil Hizmetinde Söz Dizimi Renklendirmesi](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Söz Dizimi Renklendirmesi Uygulama](../extensibility/internals/implementing-syntax-coloring.md)
-- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeler Kullanma](../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Özel Renklendirilebilir Öğeler](../extensibility/internals/custom-colorable-items.md)

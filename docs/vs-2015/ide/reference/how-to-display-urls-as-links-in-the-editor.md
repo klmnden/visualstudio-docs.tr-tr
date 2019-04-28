@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21f37bab9b0c1405742af7fd4c3490486a7aa7bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441689"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda et
 - Ne zaman gösterilen Web sitesi açmayı deneyin, **CTRL** + bağlantıyı tıklatın. Varsayılan olarak, Web sitesinin iç Web tarayıcısında görüntülenir.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Yordam  
   

@@ -11,12 +11,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 27
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ff63e13dc3723cff9e87ce40e6a57b062179f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b8dd75f7d293ee4e7dc412b2ff8f1983d936e3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446267"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>64 bitlik bir işlem olarak birim testi çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Bir 64 bit makineniz varsa, birim testleri çalıştırma ve 64-bit işlem olara
 1. Kod veya testleri 32-bit/x86 derlendi ancak artık bunları 64 bit işlem olarak çalıştırmak istediğiniz, olarak yeniden derleyin **herhangi bir CPU**, ya da isteğe bağlı olarak **64-bit**.  
   
     > [!TIP]
-    >  Maksimum esneklik için test projelerinizi derlemelisiniz **herhangi bir CPU** yapılandırma. Ardından, 32 ve 64 bit aracıların çalıştırabilirsiniz. İle test projelerini derlemek için herhangi bir avantaj sağlamaz **64-bit** yapılandırma.  
+    > Maksimum esneklik için test projelerinizi derlemelisiniz **herhangi bir CPU** yapılandırma. Ardından, 32 ve 64 bit aracıların çalıştırabilirsiniz. İle test projelerini derlemek için herhangi bir avantaj sağlamaz **64-bit** yapılandırma.  
   
 2. Visual Studio menüsünden **Test**, ardından **ayarları**ve ardından **İşlemci mimarisi**. Seçin **x64** testleri 64 bit işlem olarak çalıştırılacak.  
   

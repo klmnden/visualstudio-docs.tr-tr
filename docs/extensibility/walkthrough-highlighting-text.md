@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444997"
 ---
 # <a name="walkthrough-highlight-text"></a>İzlenecek yol: Metni vurgulama
 Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına oluşturarak farklı görsel efektler Düzenleyicisi'ne ekleyebilirsiniz. Bu izlenecek yol, bir metin dosyasındaki geçerli kelimenin her geçtiği vurgulamak gösterilmektedir. Bir sözcük, bir metin dosyasına birden fazla kez gerçekleşir ve giriş işaretini bir yineleme getirin, her oluşumu vurgulanır.
@@ -351,7 +351,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına oluştu
  Etiketlerde oluşturmak için uygulamanız gereken bir <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Bu sınıf bir MEF Bileşeni parçası olduğundan bu uzantı tanınan böylece doğru öznitelikleri ayarlamanız gerekir.
 
 > [!NOTE]
->  MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
+> MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-create-a-tagger-provider"></a>Etiketlerde sağlayıcısı oluşturmak için
 

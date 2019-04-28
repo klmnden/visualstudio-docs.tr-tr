@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447043"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerini çalıştırmak için gereken değişiklikler
   Bir Office projesi hedef Framework'ü değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha önceki .NET Framework sürümünden çözüm geliştirme bilgisayarında ve son kullanıcı bilgisayarlarında çalışabildiğinden emin olmak için aşağıdaki görevleri gerçekleştirmeniz gerekir:
@@ -44,7 +44,7 @@ ms.locfileid: "60072825"
 2. Altında **özellikleri** düğümü (C#) veya **Projem** (Visual Basic) düğümünü AssemblyInfo kod dosyası Kod Düzenleyicisi'nde açmak için çift tıklayın.
 
     > [!NOTE]
-    >  Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
+    > Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
 
 3. Bulun <xref:System.Security.SecurityTransparentAttribute> ve dosyanın kaldırmak veya yorum çıkarın.
 

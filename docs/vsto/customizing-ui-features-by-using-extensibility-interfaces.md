@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445485"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme
   Visual Studio'da Office geliştirme araçları, sınıflar ve VSTO eklentisi içinde özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma kullanıldıklarında birçok uygulama ayrıntıları işleyen tasarımcılar sağlar. Ancak, aynı zamanda uygulayabileceğiniz *genişletilebilirlik arabirimi* her özel gereksinimleriniz varsa, kendiniz özelliği.
@@ -63,7 +63,7 @@ ms.locfileid: "56622936"
 - `TaskPaneUI` Sınıfı görev bölmesinin kullanıcı Arabirimi sağlar. Özniteliklerini `TaskPaneUI` sınıfı sınıfı sınıfı bulmak Microsoft Office uygulamaları sağlayan COM görünür hale. Bu örnekte, boş bir kullanıcı Arabirimi olan <xref:System.Windows.Forms.UserControl>, ancak kodu değiştirerek denetimler ekleyebilirsiniz.
 
   > [!NOTE]
-  >  Kullanıma sunmak için `TaskPaneUI` sınıfı, COM de ayarlamanız gerekir **kaydetme COM birlikte çalışması için** proje özelliği.
+  > Kullanıma sunmak için `TaskPaneUI` sınıfı, COM de ayarlamanız gerekir **kaydetme COM birlikte çalışması için** proje özelliği.
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

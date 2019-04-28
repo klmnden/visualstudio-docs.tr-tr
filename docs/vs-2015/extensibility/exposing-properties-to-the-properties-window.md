@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432113"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Özellikleri ve Özellik Penceresini Kullanıma Sunma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Bu izlenecek yol için bir nesnenin genel özellikleri gösterir **özellikleri*
 10. Onay kutusunu iade **MyToolWindow** penceresi. **IsChecked** içinde **özellikleri** penceresi değişiklikleri **True**. Onay kutusundaki işareti kaldırın **MyToolWindow** penceresi. **IsChecked** içinde **özellikleri** penceresi değişiklikleri **False**. Değiştirin **IsChecked** içinde **özellikleri** penceresi. Onay kutusuna **MyToolWindow** penceresi değişiklikleri, yeni değer ile eşleşmelidir.  
   
     > [!NOTE]
-    >  Görüntülenen bir nesneyi elden gerekir, **özellikleri** penceresinin, çağrı `OnSelectChange` ile bir `null` seçim kapsayıcısı ilk. Özellik veya nesne disposing sonra güncelleştirilmiş bir seçim kapsayıcısı değiştirebilirsiniz <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> ve <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listeler.  
+    > Görüntülenen bir nesneyi elden gerekir, **özellikleri** penceresinin, çağrı `OnSelectChange` ile bir `null` seçim kapsayıcısı ilk. Özellik veya nesne disposing sonra güncelleştirilmiş bir seçim kapsayıcısı değiştirebilirsiniz <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> ve <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listeler.  
   
 ## <a name="changing-selection-lists"></a>Seçim listeleri değiştiriliyor  
  Bu bölümde, bir özelliği temel sınıf için bir seçim listesi ekleyin ve araç penceresi arabirimi hangi seçim listesini görüntülemek için kullanın.  
@@ -261,7 +261,7 @@ Bu izlenecek yol için bir nesnenin genel özellikleri gösterir **özellikleri*
 6. Onay kutusunu seçin **MyToolWindow** penceresi. **Özellikleri** pencere görüntüler `Simple` nesnesinin özelliklerini, **SomeText** ve **salt okunur**. Onay kutusunu temizleyin. Ortak Özellikler penceresinin görünür **özellikleri** penceresi.  
   
     > [!NOTE]
-    >  Görünen adı **SomeText** olduğu **Metnim**.  
+    > Görünen adı **SomeText** olduğu **Metnim**.  
   
 ## <a name="best-practice"></a>En iyi uygulama  
  Bu izlenecek yolda, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> seçilebilir nesne koleksiyonu ve seçili nesne koleksiyonu aynı koleksiyonda olacak şekilde uygulanır. Yalnızca seçilen nesneyi özellik tarayıcısı listesinde görüntülenir. Daha eksiksiz bir ISelectionContainer uygulaması Reference.ToolWindow örneklere bakın.  

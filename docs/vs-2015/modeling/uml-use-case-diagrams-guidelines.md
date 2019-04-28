@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424301"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım durumu diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
 ## <a name="BasicSteps"></a> Kullanım örneği diyagramları çizmek için temel adımlar  
   
 > [!NOTE]
->  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+> Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Yeni bir kullanım durumu diyagramı oluşturmak için  
   
@@ -133,7 +133,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
  Özelleştirilmiş bir aktör diğer aktörler için kullanılabilir değil, kendi ek kullanım örnekleri olabilir.  
   
 > [!CAUTION]
->  Döngüler aktörün kendisini genelleştiriliyor neden Genelleştirme ilişkilerinin yapmamanız gerekir. Döngüler, hatalara neden.  
+> Döngüler aktörün kendisini genelleştiriliyor neden Genelleştirme ilişkilerinin yapmamanız gerekir. Döngüler, hatalara neden.  
   
 ### <a name="alternative-actor-icons"></a>Alternatif bir aktör simge  
  Özel simge yerine standart çubuk aktörün temsil etmek için kullanabilirsiniz. Örneğin, bir cihaz, Restoran, Banka ve benzeri benzer şekilde değiştirebilirsiniz.  
@@ -160,7 +160,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
  ![Bire bir aktör ile kullanım](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Her ikisi de bir ilişkilendirmenin bir kullanım durumu diyagramı üzerinde çeşitliliği gizlenir **1**.  
+> Her ikisi de bir ilişkilendirmenin bir kullanım durumu diyagramı üzerinde çeşitliliği gizlenir **1**.  
   
  Varsayılan olarak, her çoğulluk, **1**. Model katı bir yorumu çokluğu 1, örneğin, yalnızca bir müşteri, her bir paket sıralamada karmaşıktır ve her müşteri aynı anda yalnızca bir Yemek Sipariş anlamına gelir.  
   
@@ -197,7 +197,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
    - **\\*** Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
   
 > [!NOTE]
->  Birçok ekip varsayılan değer olan 1 çeşitliliği bırakarak kullanım örneği diyagramları çoğulluk bilgi yerleştirmeyin. Bunun yerine, kullanım örneklerini ayrı açıklamalarını bilgileri sağlar. Bu durumda, tüm kullanım örneği diyagramları Çeşitlilikler gizlenir.  
+> Birçok ekip varsayılan değer olan 1 çeşitliliği bırakarak kullanım örneği diyagramları çoğulluk bilgi yerleştirmeyin. Bunun yerine, kullanım örneklerini ayrı açıklamalarını bilgileri sağlar. Bu durumda, tüm kullanım örneği diyagramları Çeşitlilikler gizlenir.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Birden çok diyagram üzerinde bir aktör veya kullanım örneği kullanma  
  Aynı aktör Göster ve çeşitli diyagramlarda kullanım. Örneğin:  
@@ -215,7 +215,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
 3. Aktörün sürükleyin ya da devre dışı kullanım **Model Gezgini** yeni diyagram üzerine.  
   
     > [!NOTE]
-    >  Yeni Diyagram üzerinde bir aktör ve ilişkili olan bir kullanım örneği yerleştirirseniz, bunları arasındaki ilişki otomatik olarak yeni diyagramda görünecektir.  
+    > Yeni Diyagram üzerinde bir aktör ve ilişkili olan bir kullanım örneği yerleştirirseniz, bunları arasındaki ilişki otomatik olarak yeni diyagramda görünecektir.  
   
 ## <a name="Details"></a> Açıklayan ayrıntılı kullanım örnekleri  
  Kullanım örneği temsil eder:  
@@ -277,7 +277,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
 3. Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
   
 > [!NOTE]
->  Diyagramı açın veya bağlandığı belge için yapıya çift tıklayabilirsiniz.  
+> Diyagramı açın veya bağlandığı belge için yapıya çift tıklayabilirsiniz.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Kullanım örnekleri, iş öğelerine bağlama  
  Projeniz kullanıyorsa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] ve [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], her kullanım örneği, bir iş öğesine bağlayabilirsiniz [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Bu bağlantılar yapmayı öğrenmek için bkz: [bağlantı model öğelerini ve iş öğeleri](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
  Kullanan bir **INCLUDE** ilişkisi, bir kullanım durumu gösterilecek başka ayrıntılarını bazılarını açıklar. Çizimde, **yemek siparişi** içerir **ödeme**, **seçin menü**, ve **seçin menü öğesi**. Her dahil, daha ayrıntılı kullanım durumlarından biri aktör veya aktörleri dahil olmak üzere kullanım örneğinin genel kaydetme amacına ulaşmanız için gerçekleştirmesi gereken bir adımdır. Ok, ayrıntılı ve dahil edilen kullanım örneğine işaret etmelidir.  
   
 > [!CAUTION]
->  Bir kullanım örneği, kendisi de dahil olmak üzere neden ilişkileri döngüleri yapmamanız gerekir. Döngüler, hatalara neden olabilir.  
+> Bir kullanım örneği, kendisi de dahil olmak üzere neden ilişkileri döngüleri yapmamanız gerekir. Döngüler, hatalara neden olabilir.  
   
  Dahil olan kullanım örneklerini paylaşabilirsiniz. Örnekte, **yemek siparişi** ve **abone olmak için gözden geçirmeleri** iki dahil kullanım **ödeme**.  
   
@@ -346,7 +346,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
  Örneğin, **ödeme** genelleştirir **tarafından kredi kartıyla ödeme** ve **nakit göre ödeme**.  
   
 > [!CAUTION]
->  Aktörün kendisi genelleştiriliyor neden Genelleştirme ilişki, döngü yapmamanız gerekir. Döngüler, hatalara neden.  
+> Aktörün kendisi genelleştiriliyor neden Genelleştirme ilişki, döngü yapmamanız gerekir. Döngüler, hatalara neden.  
   
  Özelleştirilmiş kullanım örnekleri, sisteminizi aynı kaydetme amacına ulaşmanız farklı yollar gösterir yardımcı olabilir.  
   
@@ -374,7 +374,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
  ![Başka bir genişleyen bir kullanım örneği](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Aktörün kendisi genelleştiriliyor neden olan ilişkilerini genişletmek döngüleri yapmamanız gerekir. Döngüler, hatalara neden.  
+> Aktörün kendisi genelleştiriliyor neden olan ilişkilerini genişletmek döngüleri yapmamanız gerekir. Döngüler, hatalara neden.  
   
  Örneğin, **oturum açma** kullanım örneği tipik bir Web sitesinin içerebilir **yeni kullanıcı Kaydet** - ancak yalnızca, kullanıcı zaten bir hesabınız yok.  
   
@@ -391,7 +391,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
    3. Genişletilmiş kullanım örneğine tıklayın (**oturum açma** örnekte).  
   
        > [!NOTE]
-       >  Diyagramda Genişlet ilişkileri döngüsünü oluşturmaktan kaçının. Bu, kendisinin bir uzantı bir kullanım örneği için doğru değil.  
+       > Diyagramda Genişlet ilişkileri döngüsünü oluşturmaktan kaçının. Bu, kendisinin bir uzantı bir kullanım örneği için doğru değil.  
   
 3. Genişletilmiş kullanım örneği senaryoları zaten oluşturduysanız, uzantının senaryoya ilgili adımları taşıyın.  
   
@@ -425,7 +425,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
    Doğrudan alt sistemde yeni bir kullanım örneği oluşturmak için tıklayın **kullanım örneği** araç kutusundan alt sistemin içine'ye tıklayın.  
   
 > [!NOTE]
->  **Konuları** kullanım özelliği bulunan içinde hangi alt sistemi belirtir.  
+> **Konuları** kullanım özelliği bulunan içinde hangi alt sistemi belirtir.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Sistem kapsamı dışında kullanım örnekleri  
  İş bir parçasıdır ancak ile geliştirdiğiniz sistem tarafından ele değil diyagram kullanım örneklerini eklemek genellikle yararlıdır. Bu, geliştiricilerin iş bağlamında anlamasına yardımcı olur. Örneğin, Restoran ve müşteri aktörleri içeren bir kullanım örneği, ancak sorumluluk, yemek siparişi Web Sitesi'nin dışında Yemek Dağıt gösterilebilir.  

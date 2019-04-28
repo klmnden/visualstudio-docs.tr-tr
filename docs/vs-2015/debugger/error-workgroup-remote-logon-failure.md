@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438344"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Hata: Çalışma grubu uzak oturum açma hatası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Bu hata görünür:
 - Çalışma gruplarında, hem Visual Studio bilgisayarı ve uzak makine varsa, bu hata nedeniyle varsayılan oluşabilir **yerel güvenlik ilkesi** uzak makinede ayarlama. Varsayılan ayarı **yerel güvenlik ilkesi** ayardır **yalnızca konuk - yerel kullanıcı konuk olarak kimlik doğrulaması**. Bu kurulum üzerinde hata ayıklamak için uzak makineye ayarları değiştirme **Klasik - yerel kullanıcıların kendileri olarak kimliklerini**.  
   
 > [!NOTE]
->  Aşağıdaki görevleri gerçekleştirmek için yönetici olmanız gerekir.  
+> Aşağıdaki görevleri gerçekleştirmek için yönetici olmanız gerekir.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Yerel Güvenlik İlkesi penceresini açmak için  
   

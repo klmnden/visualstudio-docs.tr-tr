@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433528"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Nasıl yapılır: Araç Kutusuna Etkinlik Ekleme
 Etkinlikleri eklenebilir **araç kutusu** çözümünüzdeki birkaç farklı yolla. Bunları içinde geçerli projenize ekleyin, bunları farklı bir proje başvurusu veya bunları farklı bir derlemeden başvurulacak.  
@@ -28,13 +28,13 @@ Etkinlikleri eklenebilir **araç kutusu** çözümünüzdeki birkaç farklı yol
 3. Projeyi oluşturun. Derleme başarılı olursa yeni bir kategoride **araç kutusu** adlı "\<*proje adı*>", kategorisindeki özel etkinlik ile görüntülenir.  
   
     > [!NOTE]
-    >  Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılacak. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden için yeniden [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+    > Araç kutusu sıfırlarsanız, çözümü yeniden oluşturulmuş olsa bile özel etkinlikler kaldırılacak. Özel etkinlikler araç kutusu sıfırlandı sonra yeniden için yeniden [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
     > [!NOTE]
-    >  Araç yalnızca belirli bir ada bir etkinlik gösterebilirsiniz. İki etkinliği farklı derlemelerden aynı sınıf adı varsa, yalnızca biri görüntülenir.  
+    > Araç yalnızca belirli bir ada bir etkinlik gösterebilirsiniz. İki etkinliği farklı derlemelerden aynı sınıf adı varsa, yalnızca biri görüntülenir.  
   
     > [!NOTE]
-    >  Uygulama etki alanı Düzenleyicisi örnekleri arasında paylaşılan; statik değişken kullanılması durumunda da Düzenleyicisi örnekleri arasında paylaşılır. Bu, istenen davranışı değilse, bir hizmet değişken örneklerini izlemek için kullanılmalıdır. Bkz: [ModelItem düzenleme bağlamını kullanarak](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) tasarımcısı içindeki Hizmetleri kullanımı hakkında bilgi.  
+    > Uygulama etki alanı Düzenleyicisi örnekleri arasında paylaşılan; statik değişken kullanılması durumunda da Düzenleyicisi örnekleri arasında paylaşılır. Bu, istenen davranışı değilse, bir hizmet değişken örneklerini izlemek için kullanılmalıdır. Bkz: [ModelItem düzenleme bağlamını kullanarak](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) tasarımcısı içindeki Hizmetleri kullanımı hakkında bilgi.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Etkinliği içinde farklı bir projeye eklemek için  
   

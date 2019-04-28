@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444732"
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59648360"
  Erişim için **Hizmetleri** sayfasında, içinde bir proje düğümü seçin **Çözüm Gezgini**ve ardından **özellikleri** üzerinde **proje** menüsü. Zaman **Proje Tasarımcısı** görünen tıklayın **Hizmetleri** sekmesi.  
   
 > [!NOTE]
->  İstemci uygulama hizmetleri, .NET Framework'ün tam sürümünü gerektirir ve .NET Framework istemci profili içinde desteklenmez. Varsa **istemci uygulama hizmetlerini etkinleştirmek** onay kutusunu devre dışı bırakıldı, doğrulayın **hedef Framework'ü** .NET Framework 3.5 veya sonraki bir sürüme ayarlayın. Görüntülenecek **hedef Framework'ü** C# ' de ayarı, Proje Tasarımcısı'nı açın ve ardından **uygulama** sayfası. Görüntülenecek **hedef Framework'ü** Visual Basic'te ayarlama, Proje Tasarımcısı'nı açın, **derleme** sayfasında ve ardından **Gelişmiş derleme seçenekleri**.  
+> İstemci uygulama hizmetleri, .NET Framework'ün tam sürümünü gerektirir ve .NET Framework istemci profili içinde desteklenmez. Varsa **istemci uygulama hizmetlerini etkinleştirmek** onay kutusunu devre dışı bırakıldı, doğrulayın **hedef Framework'ü** .NET Framework 3.5 veya sonraki bir sürüme ayarlayın. Görüntülenecek **hedef Framework'ü** C# ' de ayarı, Proje Tasarımcısı'nı açın ve ardından **uygulama** sayfası. Görüntülenecek **hedef Framework'ü** Visual Basic'te ayarlama, Proje Tasarımcısı'nı açın, **derleme** sayfasında ve ardından **Gelişmiş derleme seçenekleri**.  
   
 ## <a name="task-list"></a>Görev Listesi  
  [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442748"
 ---
 # <a name="how-to-start-spy"></a>Nasıl yapılır: Spy++'ı başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.
  Başladığınızda Spy ++'ta, değişiklikler yapmak için izin istemek için bir ileti görüntülenirse **Evet**.  
   
 > [!NOTE]
->  Spy ++ yalnızca bir örneği çalıştırabilirsiniz. Yalnızca başka bir örneği çalıştırmayı denerseniz, odağı almak o sırada çalıştırılan örneğinden neden olur.  
+> Spy ++ yalnızca bir örneği çalıştırabilirsiniz. Yalnızca başka bir örneği çalıştırmayı denerseniz, odağı almak o sırada çalıştırılan örneğinden neden olur.  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Spy ++ Visual Studio'dan başlatmak için  
   
@@ -35,7 +35,7 @@ Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.
      Başladıktan sonra Spy ++ birbirinden bağımsız olarak çalıştığından, Visual Studio'yu kapatabilirsiniz.  
   
     > [!NOTE]
-    >  İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.  
+    > İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Spy ++ bir komut isteminden başlatmak için  
   

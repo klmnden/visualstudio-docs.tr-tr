@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446614"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>İzlenecek yol: Mevcut bir SharePoint sitesinden öğeleri içeri aktarma
   Bu izlenecek yol bir SharePoint sitesinden öğeleri içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.
@@ -75,7 +75,7 @@ ms.locfileid: "60110881"
  Ardından, SharePoint öğelerini ve içeri aktarmak istediğiniz öğeleri içeren bir SharePoint kurulumu (.wsp) dosyası elde etmek, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje. .Wsp dosyası zaten yoksa, ardından, var olan bir SharePoint sitesinden oluşturmanız gerekir. Bu örnekte, varsayılan SharePoint sitesini .wsp dosyası olarak dışa aktarmak.
 
 > [!IMPORTANT]
->  Aşağıdaki yordamı gerçekleştirmeden bir çalışma zamanı hatası alırsanız, SharePoint sitesine erişimi olan bir sisteme yordamı uygulamak zorunda.
+> Aşağıdaki yordamı gerçekleştirmeden bir çalışma zamanı hatası alırsanız, SharePoint sitesine erişimi olan bir sisteme yordamı uygulamak zorunda.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Mevcut bir SharePoint sitesi dışarı aktarmak için
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110881"
 6. İçinde **yeni proje kaynağını belirtin** sayfasında, sistem üzerindeki kaydettiğiniz konuma *.wsp* daha önce dosya ve ardından **sonraki** düğmesi.
 
    > [!NOTE]
-   >  Seçerseniz **son** bu sayfadaki tüm kullanılabilir öğeleri düğmesine *.wsp* dosya içeri aktarılacak.
+   > Seçerseniz **son** bu sayfadaki tüm kullanılabilir öğeleri düğmesine *.wsp* dosya içeri aktarılacak.
 
 7. İçinde **içeri aktarılacak öğeleri seçin** kutusunda, tüm dışında listesinde onay kutularını temizleyin **Test sütun**ve ardından **son** düğmesi.
 

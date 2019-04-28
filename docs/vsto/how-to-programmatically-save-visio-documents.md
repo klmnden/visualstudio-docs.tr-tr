@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419384"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Nasıl yapılır: Program aracılığıyla Visio belgelerini kaydetme
   Microsoft Office Visio belgelerini kaydetme için birkaç yol vardır:
@@ -40,7 +40,7 @@ ms.locfileid: "60069447"
      Bu kod örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
 
     > [!NOTE]
-    >  `Microsoft.Office.Interop.Visio.Document.Save` Yöntemi yeni bir Visio belgesi henüz kaydedilmedi, bir özel durum oluşturur.
+    > `Microsoft.Office.Interop.Visio.Document.Save` Yöntemi yeni bir Visio belgesi henüz kaydedilmedi, bir özel durum oluşturur.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]

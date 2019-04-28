@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388481"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme (C#, VB, C++)
 
@@ -46,7 +46,7 @@ Yerel c++ **Düzenle ve devam et** kullanılması `/INCREMENTAL` seçeneği. C++
 1. İçinde **Araçları** > **seçenekleri** > (veya **hata ayıklama** > **seçenekleri**) > **hataayıklama**  >  **Genel**seçin **Düzenle ve devam et** sağ bölmede.
 
     > [!NOTE]
-    >  Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [IntelliTrace](../debugger/intellitrace.md).
+    > Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [IntelliTrace](../debugger/intellitrace.md).
 
 1. C++ kodu için emin **etkinleştirme yerel Düzenle ve devam et** seçilir ve diğer seçenekleri ayarlayın:
     - **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam**

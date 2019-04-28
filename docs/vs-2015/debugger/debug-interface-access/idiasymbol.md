@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447239"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDiaSymbol`.  
   
 > [!NOTE]
->  Sembolleri sembol türüne bağlı olarak bu yöntem yalnızca bazıları için anlamlı veri döndürür. Bir yöntem döndürürse `S_OK`, sonra da bu yöntem, anlamlı veri döndürdü.  
+> Sembolleri sembol türüne bağlı olarak bu yöntem yalnızca bazıları için anlamlı veri döndürür. Bir yöntem döndürürse `S_OK`, sonra da bu yöntem, anlamlı veri döndürdü.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  Bu örnek, bir işlev için yerel değişkenler belirli bir göreli sanal adresine görüntülenecek gösterilmektedir. Ayrıca, farklı türdeki semboller birbirleriyle nasıl ilişkili olduğunu gösterir.  
   
 > [!NOTE]
->  `CDiaBSTR` sarmalayan bir sınıf bir `BSTR` ve dize örnekleme kapsam dışına çıktığında boşaltma otomatik olarak işler.  
+> `CDiaBSTR` sarmalayan bir sınıf bir `BSTR` ve dize örnekleme kapsam dışına çıktığında boşaltma otomatik olarak işler.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

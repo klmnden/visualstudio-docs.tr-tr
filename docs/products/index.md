@@ -5,6 +5,12 @@ title: Visual Studio ürünleri | Microsoft Docs
 description: Visual Studio ürün ailesi keşfedin.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777456"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

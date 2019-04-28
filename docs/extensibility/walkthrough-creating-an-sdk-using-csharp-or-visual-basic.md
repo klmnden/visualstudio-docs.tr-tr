@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443857"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:
@@ -50,7 +50,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 8. İçinde **yapılandırma** sütun doğrulayın **SimpleMath** satır kümesine **yayın**ve ardından **Kapat** kabul etmek için düğmeyi değiştirin.
 
    > [!IMPORTANT]
-   >  Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **yapı**.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34727c0949ab4ad6baf8e91b27b20115cf074b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441786"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme
   Microsoft Office kullanıcı arabirimini (UI) ve başarısız olursa, işlemek VSTO eklentisi eşleşmeye çalışıyorsa, varsayılan olarak, hata iletisi görüntülenir. Ancak, Microsoft Office uygulamaları için kullanıcı Arabirimi ile ilgili hata iletileri görüntülemek için yapılandırabilirsiniz. Bu iletiler, özel bir Şerit bulunmamasının veya neden bir Şerit görünür ancak denetim yok görünür belirlemeye yardımcı olması için kullanabilirsiniz.
@@ -40,7 +40,7 @@ ms.locfileid: "60096367"
 5. Ayrıntılar bölmesinde seçin **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi**ve ardından **Tamam**.
 
     > [!NOTE]
-    >  Outlook için **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi** onay kutusu bulunan **Geliştirici** Ayrıntılar bölümünde. Diğer uygulamalar için onay kutusunu bulunan **genel** Ayrıntılar bölümünde.
+    > Outlook için **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi** onay kutusu bulunan **Geliştirici** Ayrıntılar bölümünde. Diğer uygulamalar için onay kutusunu bulunan **genel** Ayrıntılar bölümünde.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)

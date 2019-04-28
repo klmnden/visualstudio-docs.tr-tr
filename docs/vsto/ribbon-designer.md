@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447003"
 ---
 # <a name="ribbon-designer"></a>Şerit Tasarımcısı
   Şerit Tasarımcısı bir görsel tasarım tuvalidir. Bir Microsoft Office uygulamasının Şeritine özel sekmeler, gruplar ve denetimler eklemek için Şerit Tasarımcısını kullanın.
@@ -47,7 +47,7 @@ ms.locfileid: "60103647"
 - [Backstage görünümüne denetimler ekleme](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Şerit Tasarımcısını kullanarak yapamayacağınız bazı görevler vardır. Bu görevler ve bunları nasıl yapabileceğinizle ilgili daha fazla bilgi için bkz. [Şerite Genel Bakış](../vsto/ribbon-overview.md).
+> Şerit Tasarımcısını kullanarak yapamayacağınız bazı görevler vardır. Bu görevler ve bunları nasıl yapabileceğinizle ilgili daha fazla bilgi için bkz. [Şerite Genel Bakış](../vsto/ribbon-overview.md).
 
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Şerit Tasarımcısı şeridi Outlook'ta özelleştirmek için kullanılır? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

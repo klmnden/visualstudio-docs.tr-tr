@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441014"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041295"
  ModelBus benzersiz bir Modeli'ne veya bir model içinde belirli bir öğeye başvuru oluşturmanıza olanak sağlar. Bu başvuru modeli dışında Örneğin, başka bir modelinde bir öğedeki depolanabilir. Bir sonraki fırsatta, bir aracı öğeye erişmek istediğinde, Model veri yolu altyapı uygun model yüklenemiyor ve öğesini döndürür. İsterseniz, model kullanıcıya görüntüleyebilirsiniz. Dosyayı önceki konumuna erişilemiyor, ModelBus bulmak için kullanıcı sorar. Kullanıcı dosyasını bulursa, bu dosyaya yapılan tüm başvurular ModelBus düzeltir.
 
 > [!NOTE]
->  Geçerli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulaması ModelBus, bağlantılı model öğeleri aynı olmalıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.
+> Geçerli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulaması ModelBus, bağlantılı model öğeleri aynı olmalıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.
 
  Ek bilgi ve örnek kod için bkz:
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041295"
 5. Tıklayın **Tamam**ve ardından **tüm Şablonları Dönüştür** Çözüm Gezgini araç.
 
     > [!WARNING]
-    >  Geçerli model veya varlık seçmediyseniz, Tamam düğmesine etkin görünebilir olsa bile hiçbir etkisi gerekir.
+    > Geçerli model veya varlık seçmediyseniz, Tamam düğmesine etkin görünebilir olsa bile hiçbir etkisi gerekir.
 
 6. Company.FamilyTree.Person gibi hedef türlerinin bir listesi belirtilmişse, ardından bir bütünleştirilmiş kod başvurusu DSL projenize DLL hedef DSL, örneğin Company.FamilyTree.Dsl.dll başvuru eklemeniz gerekir
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041295"
 3. Deneysel örneğinde hata ayıklama projede [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], her DSL örneklerini dosyaları ekleyin.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
 
 4. Bazı öğeleri ve bağlantılarına sunulan DSL örneğini oluşturun ve kaydedin.
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041295"
  Bir öğe başvurusu oluşturmak için model dosyası ve başvurmak istediğiniz öğeyi için bir bağdaştırıcı gerekir.
 
 > [!NOTE]
->  İle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, oluşturabileceğiniz öğelere başvurular yalnızca aynı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.
+> İle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, oluşturabileceğiniz öğelere başvurular yalnızca aynı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>İfşa edilen DSL derlemeler Al
  Kullanan projenin proje başvurularına sunulan DSL DSL ve ModelBusAdapter derlemeleri ekleyin.
@@ -197,7 +197,7 @@ using System.Linq;
  AdapterManager modelinde öğelere erişim sağlayan bir bağdaştırıcı elde edebilirsiniz.
 
 > [!NOTE]
->  İşiniz bittiğinde ile bir bağdaştırıcı dispose gerekir. Bunu yapmanın en kolay yolu olan bir `using` deyimi. Aşağıdaki örnek bunu göstermektedir.
+> İşiniz bittiğinde ile bir bağdaştırıcı dispose gerekir. Bunu yapmanın en kolay yolu olan bir `using` deyimi. Aşağıdaki örnek bunu göstermektedir.
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

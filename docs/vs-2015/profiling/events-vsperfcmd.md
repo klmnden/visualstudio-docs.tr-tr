@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcfd234f67245ee39e8ba278ec256ba68b158785
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444002"
 ---
 # <a name="events-vsperfcmd"></a>Olaylar (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,14 +79,14 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  CLR ETW olaylarını etkin olduğunda, ek başlatma verileri de izleme görünümü raporda toplanır. Başlangıç olayları raporda görünmesini dışarıda bırakmak için aşağıdaki komutu kullanın:  
+> CLR ETW olaylarını etkin olduğunda, ek başlatma verileri de izleme görünümü raporda toplanır. Başlangıç olayları raporda görünmesini dışarıda bırakmak için aşağıdaki komutu kullanın:  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Başlangıç olayları dışlamazsanız, çünkü bu olaylar Yönetilen Nesne Biçimi (MOF) dosyasında listelenmeyen ardından GUID'leri raporda görünürler. Daha fazla bilgi için Microsoft Web sitesindeki bu sayfaya bakın: [Örnek Yönetilen Nesne Biçimi (MOF) dosyası](http://go.microsoft.com/fwlink/?linkid=37118).  
+> Başlangıç olayları dışlamazsanız, çünkü bu olaylar Yönetilen Nesne Biçimi (MOF) dosyasında listelenmeyen ardından GUID'leri raporda görünürler. Daha fazla bilgi için Microsoft Web sitesindeki bu sayfaya bakın: [Örnek Yönetilen Nesne Biçimi (MOF) dosyası](http://go.microsoft.com/fwlink/?linkid=37118).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

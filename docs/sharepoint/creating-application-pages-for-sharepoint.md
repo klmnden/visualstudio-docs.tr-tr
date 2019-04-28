@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443546"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint için uygulama sayfaları oluşturma
   Bir *uygulama sayfası* bir SharePoint Web sitesinde kullanılmak üzere tasarlanmış bir ASP.NET Web sayfası. Uygulama sayfaları, ASP.NET sayfasının özelleştirilmiş bir türüdür. Uygulama sayfası ve standart bir ASP.NET sayfası arasındaki birincil fark bir uygulama sayfasını SharePoint ana sayfası ile birleştirilmiş içerik içermesidir. Ana sayfa görünümünü ve davranışını sitesindeki diğer sayfalara paylaşım uygulama sayfaları sağlar.
@@ -36,7 +36,7 @@ ms.locfileid: "56644451"
  Uygulama sayfaları, bu işlemleri yapamazsınız. Ancak bir uygulama sayfası özel kodu içermesi için sayfayı istiyorsanız oluşturmak için sayfanın en iyi türüdür. Bir site sayfası için özel kod ekleyebilirsiniz, ancak kodu çalıştıran kullanıcının SharePoint Tasarımcısı gibi araçları kullanarak sayfa özelleştirir durdurur.
 
 > [!NOTE]
->  Visual Studio sağlamaz yardımcı şablonları, bir SharePoint sitesi için site sayfaları oluşturun. Daha fazla bilgi için [SharePoint sayfası türleri](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio sağlamaz yardımcı şablonları, bir SharePoint sitesi için site sayfaları oluşturun. Daha fazla bilgi için [SharePoint sayfası türleri](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Uygulama sayfası oluşturma
  Uygulama sayfası oluşturmak için bir **uygulama sayfası** bir SharePoint proje öğesi. Uygulama sayfası oluşturduğunuzda, Visual Studio projenize aşağıdaki klasörleri ekler:
@@ -58,7 +58,7 @@ ms.locfileid: "56644451"
  Visual Studio'da Tasarımcı görünümü kullanarak bir uygulama sayfası içeriğini tasarlayın. Bu tasarımcı projenizde uygulama sayfasını açtığınızda görüntülenen (çift tıklayarak veya kısayol menüsünü açarak ve ardından **açın**) ve ardından **tasarım** kısmındaki düğmesi Düzenleyici.
 
 > [!NOTE]
->  Sayfa tasarlayabilirsiniz yalnızca **kaynak** Tasarımcı görünümü. **Tasarım** uygulama sayfaları için tasarımcı görünümünü devre dışı.
+> Sayfa tasarlayabilirsiniz yalnızca **kaynak** Tasarımcı görünümü. **Tasarım** uygulama sayfaları için tasarımcı görünümünü devre dışı.
 
  Diğer SharePoint Proje öğeleri Visual Studio'da hata ayıklama gibi bir uygulama sayfası ayıklayabilirsiniz. Visual Studio hata ayıklayıcısını başlattığınızda, Visual Studio SharePoint sitesi açılır.
 

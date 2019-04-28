@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435294"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Yerel iOS, Android ve Windows oluşturmak için uygulamalardan genel C# / .NET k
 Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sorunuzu gönderin [forums.xamarin.com](http://forums.xamarin.com/).
   
 > [!NOTE]
->  31 Mart 2016 ' tüm Xamarin dahil ile gibi hiçbir ek Visual Studio'nun tüm sürümlerinde, maliyet ve ayrı bir lisans gerekmez. Mac için Xamarin Studio Community, ayrıca Öğrenciler, OSS geliştiricileri ve küçük takımlar için ücretsizdir. Not ile önceki Xamarin lisanslarını yapılandırılan mevcut yüklemelerinde Visual Studio'nun Xamarin 4.0.3.214 sürümüne güncelleştirmeniz gerekir ya da daha yüksek. Bunu yapmak için Git **Araçlar > Seçenekler > Xamarin > diğer**, tıklayın **şimdi denetle** bağlantı ve indirme 4.0.3.214 güncelleştirme. Visual Studio'yu yeniden başlatın, Git **Araçlar > Xamarin hesabı...**  güncel durumunu görmeniz gerekir.  
+> 31 Mart 2016 ' tüm Xamarin dahil ile gibi hiçbir ek Visual Studio'nun tüm sürümlerinde, maliyet ve ayrı bir lisans gerekmez. Mac için Xamarin Studio Community, ayrıca Öğrenciler, OSS geliştiricileri ve küçük takımlar için ücretsizdir. Not ile önceki Xamarin lisanslarını yapılandırılan mevcut yüklemelerinde Visual Studio'nun Xamarin 4.0.3.214 sürümüne güncelleştirmeniz gerekir ya da daha yüksek. Bunu yapmak için Git **Araçlar > Seçenekler > Xamarin > diğer**, tıklayın **şimdi denetle** bağlantı ve indirme 4.0.3.214 güncelleştirme. Visual Studio'yu yeniden başlatın, Git **Araçlar > Xamarin hesabı...**  güncel durumunu görmeniz gerekir.  
   
  **Bu konuda:**  
   
@@ -56,7 +56,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
 ## <a name="windows"></a> Windows Kurulum (Visual Studio ve Xamarin)  
   
 > [!TIP]
->  Bu yönergeler, Visual Studio 2015 için geçerlidir. Xamarin ile Visual Studio 2013 kullanmak için (güncelleştirme 2 gereklidir) yönergelerini izleyin [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+> Bu yönergeler, Visual Studio 2015 için geçerlidir. Xamarin ile Visual Studio 2013 kullanmak için (güncelleştirme 2 gereklidir) yönergelerini izleyin [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1. [İndirin ve herhangi bir sürümünü Visual Studio 2015 için yükleyiciyi başlatın](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional veya Enterprise). Visual Studio 2015 Community ücretsiz bir sürümüdür; Professional ve Enterprise sürümleri 30 gün sonra bir lisans satın almanız gerekecektir deneme olarak kullanılabilir.  
   
@@ -83,7 +83,7 @@ Bu kurulum ve yükleme yaptıktan sonra Xamarin kullanarak sorunları varsa, sor
     ![Xamarin güncelleştirmeleri Visual Studio seçenekleri](../cross-platform/media/cross-plat-xamarin-setup-3.png "çapraz-Plat Xamarin Kurulum 3")  
   
    > [!NOTE]
-   >  Daha önce belirtildiği gibi önceki Xamarin lisans sorunları önlemek için daha yüksek veya Xamarin 4.0.3.214 sürümüne güncelleştirmek emin olun.  
+   > Daha önce belirtildiği gibi önceki Xamarin lisans sorunları önlemek için daha yüksek veya Xamarin 4.0.3.214 sürümüne güncelleştirmek emin olun.  
 
    Xamarin için bir seçenek görmüyorsanız **Araçlar > Seçenekler**yüklemenizi denetleyin veya Visual Studio'yu yeniden başlatmayı deneyin. Seçenekler iletişim kutusunda Xamarin için arama da yapabilirsiniz.
       

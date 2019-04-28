@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446200"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
    **Bir testte hata ayıklamak için:** Bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.  
   
 > [!IMPORTANT]
->  Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.  
+> Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.  
   
 > [!NOTE]
->  Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ## <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
  Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [ABD farklı test çerçevesi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
@@ -152,7 +152,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 1. Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.  
   
     > [!TIP]
-    >  Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, özel olarak, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.  
+    > Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, özel olarak, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.  
   
      Test sınıfınızda, bir girdi değerleri aralığını çalıştığında şu test ekleyin:  
   
@@ -257,7 +257,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 1. Kodu basitleştirin, ancak testleri değiştirmeyin.  
   
     > [!TIP]
-    >  A *yeniden düzenleme* daha iyi kod yapmak veya kodu anlamayı kolaylaştırmak için hedeflenen bir değişikliktir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.  
+    > A *yeniden düzenleme* daha iyi kod yapmak veya kodu anlamayı kolaylaştırmak için hedeflenen bir değişikliktir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.  
     >   
     >  Yeniden düzenleme adımları ayrı ayrı işlevselliği genişleten adımlardan gerçekleştirmenizi öneririz. Testlerin değiştirmeden tutmak, yanlışlıkla hataları yeniden düzenleme sırasında oluşturmadığından emin olmanızı sağlar.  
   

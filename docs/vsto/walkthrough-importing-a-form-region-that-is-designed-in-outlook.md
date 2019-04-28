@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c679f9a322d079f5037cea1e48fa8690daceb496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446980"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma
   Bu izlenecek yol, bir Microsoft Office Outlook form bölgesi tasarlama ve kullanarak bu form bölgesini Outlook VSTO eklenti projesi almak gösterilmiştir **Yeni Form bölgesi** Sihirbazı. Outlook form bölgesi tasarlama, yerel Outlook denetimleri form bölgesini Outlook verilere bağlama eklemek mümkün kılar. Form bölgesini içeri aktardıktan sonra her denetim olayları işleyebilir.
@@ -43,7 +43,7 @@ ms.locfileid: "60101086"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Visual Studio 2008'i kullanarak Outlook form bölgeleri oluşturma? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Outlook form bölgesi tasarımcısı kullanarak bir form bölgesi tasarla

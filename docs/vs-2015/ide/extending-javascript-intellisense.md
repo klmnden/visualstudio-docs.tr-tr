@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441459"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Diğer örnekler için konum \\ \\ *Visual Studio yükleme yolu*\JavaScript\References klasör. Standart JavaScript açıklama etiketleri için varsayılan IntelliSense desteği sağlamak amacıyla diğer olayları kullanarak örnekler showPlainComments.js dosyayı bu klasöre sağlar (/ /). Underscorefilter.js gibi showPlainComments.js zaten çalışma uzantısı olarak kullanılabilir ve değişkenler, İşlevler ve nesneler için kodunuza açıklama etiketleri kullanırken, IntelliSense bilgilerine görebilirsiniz. Diğer örnekler için [kod örnekleri](#CodeExamples).  
   
 > [!WARNING]
->  Visual Studio'ya dahil edildi uzantılarını değiştirirseniz, JavaScript IntelliSense veya uzantı tarafından desteklenen özelliğini devre dışı bırakabilir.  
+> Visual Studio'ya dahil edildi uzantılarını değiştirirseniz, JavaScript IntelliSense veya uzantı tarafından desteklenen özelliğini devre dışı bırakabilir.  
   
  Uzantı kodunuzu kullanarak aşağıdaki olay türleri için işleyiciler oluşturabilirsiniz `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Deyim tamamlama, parametre bilgileri ve hızlı bilgi gibi IntelliSense özelliklerini gösteren örnekler için bkz [IntelliSense kullanarak](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  JavaScript'te hızlı bilgi tamamlanma listesi sağında görünen açılır kutusunda ifade eder. Hızlı Bilgi'yi el ile çağrılamaz.  
+> JavaScript'te hızlı bilgi tamamlanma listesi sağında görünen açılır kutusunda ifade eder. Hızlı Bilgi'yi el ile çağrılamaz.  
   
 ## <a name="intellisenseObject"></a> IntelliSense nesnesi  
  Aşağıdaki tablo, kullanılabilen işlevler gösterir `intellisense` nesne. `intellisense` Nesne yalnızca tasarım zamanında kullanılabilir.  

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432609"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: Gereç için Web.Config dosyalarını değiştirme ve profil ASP.NET Web uygulamaları dinamik olarak derlenmiş.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
  Bu konu, izlemeyi ve profillerinin oluşturulmasını etkinleştirmek için web.config yapılandırma dosyası değiştirilecek açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları.  
   
 > [!NOTE]
->  Örnekleme profili oluşturma yöntemi kullandığınızda veya önceden derlenmiş bir araç haline getirmek istediğinizde web.config dosyasını değiştirmeniz gerekmez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modülü.  
+> Örnekleme profili oluşturma yöntemi kullandığınızda veya önceden derlenmiş bir araç haline getirmek istediğinizde web.config dosyasını değiştirmeniz gerekmez [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] modülü.  
   
  Kök web.config dosyasının **yapılandırma** öğesi. İzleme ve dinamik olarak derlenmiş bir profil için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması, aşağıdaki öğeleri eklediğinizde veya gerekir:  
   

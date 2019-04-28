@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a10e75ce50441b8c32ff734e6f2d30e9604bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386182"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: Derleme dosyaları seçin
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.
@@ -97,7 +97,7 @@ Bir proje dosyasında kullanabileceğiniz @ görevler bir derleme için giriş o
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Bir derleme için girişler belirtmek için öğeleriyle joker karakterler kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:
+> Bir derleme için girişler belirtmek için öğeleriyle joker karakterler kullanmanız gerekir; kullanarak girişleri belirtemezsiniz `Sources` özniteliğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gibi görevleri [Csc](../msbuild/csc-task.md) veya [Vbc](../msbuild/vbc-task.md). Aşağıdaki örnek bir proje dosyasında geçerli değil:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

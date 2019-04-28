@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443832"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme
   Bu yönerge, düğmeler ve belge düzeyi özelleştirmesinde metin kutuları için Microsoft Office Word nasıl kullanılacağını gösterir.
@@ -60,7 +60,7 @@ ms.locfileid: "60071765"
 2. Gelen **ortak denetimleri** sekmesinde **araç kutusu**, sürükleyin bir <xref:Microsoft.Office.Tools.Word.Controls.TextBox> belgeye denetim.
 
    > [!NOTE]
-   >  Word'de denetimleri bırakılan satır içi varsayılan metin. Yol denetimlerini değiştirebilirsiniz ve şekil nesneleri üzerinde varsayılan değiştirerek eklenir **Düzenle** sekmesinde **seçenekleri** iletişim kutusundaki Word.
+   > Word'de denetimleri bırakılan satır içi varsayılan metin. Yol denetimlerini değiştirebilirsiniz ve şekil nesneleri üzerinde varsayılan değiştirerek eklenir **Düzenle** sekmesinde **seçenekleri** iletişim kutusundaki Word.
 
 3. Üzerinde **görünümü** menüsünde tıklatın **Özellikler penceresi**.
 

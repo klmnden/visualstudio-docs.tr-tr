@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dc891c47042fe93ac6be8fa28c2967484c9d6c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5882f81eefb55bb0dc4451b8ffa43c2acfbf1df5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438680"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama
   Bu yönerge, Microsoft Office Excel eylemler bölmesindeki denetimlere veri bağlama gösterir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.
@@ -40,7 +40,7 @@ ms.locfileid: "60050159"
 - Uygulama açıldığında eylemler bölmesini gösterme.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

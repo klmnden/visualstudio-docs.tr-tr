@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432594"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML Tasarımcısı’nda nesneleri düzen kapsayıcılarına yerleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
  Bu sayfa, Düzen bölmeleri ve denetimleri açıklar ve ardından size yardımcı olacak kısa videolar ile başlama yönlendirir.  
   
 > [!NOTE]
->  Bazı videoları Blend veya Expression Blend, Visual Studio ve Visual Studio için Blend olarak aynı XAML Tasarımcısı'nı kullanan başvurabilir.  
+> Bazı videoları Blend veya Expression Blend, Visual Studio ve Visual Studio için Blend olarak aynı XAML Tasarımcısı'nı kullanan başvurabilir.  
   
 ## <a name="layout-panels"></a>Düzen bölmeleri  
  Sayfanız, bu düzen bölmelerini birini seçerek başlatın. Sayfanız birden fazla olabilir. Örneğin, ile başlayabilir bir **kılavuz** Düzen paneli ve ardından eklemek bir **StackPanel** bir alanda **kılavuz** böylece o öğenin dikey denetimlerinde düzenleyebilirsiniz.  

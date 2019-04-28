@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9d30433f5b1fa8f8fe6dc1cd10a30ae9ef1ad5bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437133"
 ---
 # <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59667203"
 Renk temaları, durum çubuğu ayarları ve tümleşik geliştirme ortamı (IDE) için diğer seçenekler arasında dosya uzantısı ilişkilendirmelerini değiştirmek için bu sayfayı kullanın. Erişebileceğiniz **seçenekleri** iletişim kutusunu açarak **Araçları** menüsünde, seçme **seçenekleri**açarak **ortam** klasörünü ve ardından seçme **genel** sayfası. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** onay kutusuna **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Görsel deneyim  
  **Renk teması**  

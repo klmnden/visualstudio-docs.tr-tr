@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425056"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Verileri bir nesneden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
  Varsayılan olarak, doğrudan veritabanında çalıştırılabilir bir TableAdapter DBDirect yöntemleri oluşturulur. Bu yöntem doğrudan çağrılabilir ve gerektirmeyen <xref:System.Data.DataSet> veya <xref:System.Data.DataTable> güncelleştirmeleri bir veritabanına göndermek için değişiklikleri mutabık kılınacak nesneleri.  
   
 > [!NOTE]
->  Bir TableAdapter'ı yapılandırırken, ana sorguda yeterli bilgi oluşturulacak DBDirect yöntemleri için sağlamanız gerekir. Örneğin, bir TableAdapter tanımlı bir birincil anahtar sütunu yok. bir tablodan verileri sorgulamak için yapılandırılmışsa, DBDirect yöntemleri oluşturmaz.  
+> Bir TableAdapter'ı yapılandırırken, ana sorguda yeterli bilgi oluşturulacak DBDirect yöntemleri için sağlamanız gerekir. Örneğin, bir TableAdapter tanımlı bir birincil anahtar sütunu yok. bir tablodan verileri sorgulamak için yapılandırılmışsa, DBDirect yöntemleri oluşturmaz.  
   
 |TableAdapter DBDirect yöntemi|Açıklama|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
 - Çağırarak kayıtların değiştirilmesi `TableAdapter.Update` kaydı güncelleştirmek için yeni değerler geçirerek ve kaydı bulmak için özgün değerlerine geçirme yöntemi.  
   
     > [!NOTE]
-    >  Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Update` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  
+    > Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Update` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  
   
      Aşağıdaki örnek, mevcut kaydı güncelleştirir `Customers` yeni ve özgün değerler geçirerek tablo `Customer` nesnesini `TableAdapter.Update` yöntemi.  
   
@@ -69,7 +69,7 @@ Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yön
 - Çağırarak kayıtları silmek `TableAdapter.Delete` yöntemi ve kaydı bulmak için özgün değerlerini geçirirsiniz.  
   
     > [!NOTE]
-    >  Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Delete` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  
+    > Nesneniz için geçirmek için orijinal değerleri tutması gerekir `Delete` yöntemi. Bu örnekte bu özelliklere sahip bir `orig` orijinal değerleri depolamak için önek.  
   
      Aşağıdaki örnek, bir kaydı siler `Customers` özgün değerler geçirerek tablo `Customer` nesnesini `TableAdapter.Delete` yöntemi.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437822"
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114240"
 - Klavyede Print Screen tuşuna basın.  
   
   > [!NOTE]
-  >  Bir uygulama altında çalışırken **grafik tanılama**, Print Screen tuşu yalnızca grafik bilgisi karesi yakalamak için kullanılabilir; normal işlevini gerçekleştirmez. Başka bir uygulama odakta olsa bile, grafik bilgilerini yakalamayı durduruncaya kadar (genellikle hata ayıklamayı durdurarak veya uygulamadan normal yolla çıkarak) bu durum devam eder.  
+  > Bir uygulama altında çalışırken **grafik tanılama**, Print Screen tuşu yalnızca grafik bilgisi karesi yakalamak için kullanılabilir; normal işlevini gerçekleştirmez. Başka bir uygulama odakta olsa bile, grafik bilgilerini yakalamayı durduruncaya kadar (genellikle hata ayıklamayı durdurarak veya uygulamadan normal yolla çıkarak) bu durum devam eder.  
   
 - Visual Studio yakalama arabiriminde seçtiğiniz **kare Yakala** düğmesi bulunan yukarıda **Tanılama oturumu** zaman çizelgesi veya büyük seçin **kare Yakala** düğmesi Aşağıda bulunan **Saniyedeki** yüzme kulvarı ve daha önce yakalanan çerçeve sağındaki. Her iki düğme, aşağıdaki resimde vurgulanmıştır.  
   

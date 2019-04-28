@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434046"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4. Adım: Her Etikete Bir Tıklama Olayı İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Tıklama olayını gösteren Özellikler penceresi
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  Kopyalar ve yapıştırırsanız `label_Click()` varolan değiştirdiğinizden emin kodu el ile girmek yerine kod bloğunu `label_Click()` kod. Aksi takdirde, yinelenen bir kod bloğu ile karşı karşıya kalırsınız.  
+    > Kopyalar ve yapıştırırsanız `label_Click()` varolan değiştirdiğinizden emin kodu el ile girmek yerine kod bloğunu `label_Click()` kod. Aksi takdirde, yinelenen bir kod bloğu ile karşı karşıya kalırsınız.  
   
     > [!NOTE]
-    >  Size tanıdık gelebilir `object sender` olarak kullanılan hizmet örneğiyle aynı olay işleyicisinin üst [öğretici 2: Bir zaman aşımına matematik sınavı oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md) öğretici. Tek bir olay işleyicisi yöntemine farklı etiket denetimi Tıklama olayı tutturduğunuzdan, kullanıcının seçtiği etiket hangisi olursa olsun aynı yöntem çağrılır. Olay işleyicisi yöntemi adı kullanması için hangi etiketin seçildiğini bilmesi gerekir **gönderen** etiket denetimini tanımlamak için. Yöntemin ilk satırında program, olmayan genel bir nesne, ancak özellikle bir etiket denetimi olduğunu ve adını kullandığını söyler **clickedLabel** etiketin özelliklerine ve yöntemlere erişmek için.  
+    > Size tanıdık gelebilir `object sender` olarak kullanılan hizmet örneğiyle aynı olay işleyicisinin üst [öğretici 2: Bir zaman aşımına matematik sınavı oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md) öğretici. Tek bir olay işleyicisi yöntemine farklı etiket denetimi Tıklama olayı tutturduğunuzdan, kullanıcının seçtiği etiket hangisi olursa olsun aynı yöntem çağrılır. Olay işleyicisi yöntemi adı kullanması için hangi etiketin seçildiğini bilmesi gerekir **gönderen** etiket denetimini tanımlamak için. Yöntemin ilk satırında program, olmayan genel bir nesne, ancak özellikle bir etiket denetimi olduğunu ve adını kullandığını söyler **clickedLabel** etiketin özelliklerine ve yöntemlere erişmek için.  
   
      Bu yöntem ilk denetler olmadığını **clickedLabel** başarıyla dönüştürüldü (bir nesneden bir etiket kontrolüne atama). Başarısız bir değeri olup olmadığını `null` (C#) veya `Nothing` (Visual Basic) ve yöntemde kodun geri kalanını yürütmek istemiyorsanız. Ardından, yöntem etiketin kullanarak seçilen etiketin metin rengini denetler **ForeColor** özelliği. Etiketin metin rengi siyah ise, simge zaten seçilmiş ve yöntem bitmiş demektir. (Budur `return` deyiminin yaptığı: Bu programa yöntemi yürütmeyi durdurmasını söyler.) Aksi takdirde simge seçilmemiş demektir ve dolayısıyla program etiketin metin rengini siyah olarak değiştirir.  
   

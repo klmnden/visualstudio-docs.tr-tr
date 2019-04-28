@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446708"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek yol: Metin şablonları kullanarak kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Kod oluşturma, türü kesin olarak belirtilmiş kaynak modeli değiştiğinde h
  Bu örnek proje, şablon bir örnek XML dosyasını okur ve her düğüm türü için karşılık gelen sınıflar oluşturur. El ile yazılmış kod içinde XML dosyasına gitmek için bu sınıfları kullanabilirsiniz. Uygulamanız üzerinde aynı düğüm türleri kullanan diğer dosyaları da çalıştırabilirsiniz. Örnek XML dosyası amacı uğraşmanız uygulamanızın istediğiniz tüm düğüm türleri sağlamaktır.  
   
 > [!NOTE]
->  Uygulama [XSD.exe'nin](http://go.microsoft.com/fwlink/?LinkId=178765), birlikte bulunan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], türü kesin belirlenmiş sınıf XML dosyaları oluşturabilirsiniz. Burada gösterilen şablonu, bir örnek olarak verilmiştir.  
+> Uygulama [XSD.exe'nin](http://go.microsoft.com/fwlink/?LinkId=178765), birlikte bulunan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], türü kesin belirlenmiş sınıf XML dosyaları oluşturabilirsiniz. Burada gösterilen şablonu, bir örnek olarak verilmiştir.  
   
  Örnek dosyası şu şekildedir:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. İçinde **Yeni Öğe Ekle** iletişim kutusu seç **metin şablonu** gelen **şablonları** bölmesi.  
   
    > [!NOTE]
-   >  Bir metin şablonu ve değil önceden işlenmiş metin şablonu eklediğinizden emin olun.  
+   > Bir metin şablonu ve değil önceden işlenmiş metin şablonu eklediğinizden emin olun.  
   
 3. Şablon yönergesinde dosyasını değiştirmek `hostspecific` özniteliğini `true`.  
   

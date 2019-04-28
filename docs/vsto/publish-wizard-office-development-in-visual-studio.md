@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447061"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Yayımlama Sihirbazı (Visual Studio'da Office Geliştirme)
   Kullanım **Yayımlama Sihirbazı** çözüm dosyaları belirtilen bir konuma kopyalamak için bildirim dosyalarını oluşturmak ve bir Kurulum programı oluşturma.
@@ -46,7 +46,7 @@ ms.locfileid: "56604847"
   Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* IIS yüklü veya bunu yaparsanız yayınla\ dizini IIS yüklü.
 
 > [!NOTE]
->  Hedef bilgisayarın Windows Vista çalıştırıyorsa, daha fazla ilgili önemli noktalar vardır. Yerel yayımlama seçeneğini kullanmak için Windows Vista bilgisayarda yönetici olması gerekir. Ayrıca, her zaman varsayılan konumu: *yayımlama\\*  IIS yüklü olup olmadığından bağımsız olarak dizin.
+> Hedef bilgisayarın Windows Vista çalıştırıyorsa, daha fazla ilgili önemli noktalar vardır. Yerel yayımlama seçeneğini kullanmak için Windows Vista bilgisayarda yönetici olması gerekir. Ayrıca, her zaman varsayılan konumu: *yayımlama\\*  IIS yüklü olup olmadığından bağımsız olarak dizin.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında varsayılan yükleme yolu nedir?
  Yükleme yolu isteğe bağlıdır. İsterseniz, yükleme yolu daha sonra ayarlayabilirsiniz. Ayrıntılar için bkz [nasıl yapılır: Office çözümünü yükleme yolunu değiştirmek](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).

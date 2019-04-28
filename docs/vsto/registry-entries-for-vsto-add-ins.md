@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447030"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO eklentileri için kayıt defteri girişleri
   Visual Studio kullanılarak oluşturulan VSTO Add-Ins dağıttığınızda, belirli bir kayıt defteri girdileri oluşturmanız gerekir. Bu kayıt defteri girdileri bulmak ve VSTO eklentisi yükleme Microsoft Office uygulamasını sağlayan bilgiler sağlar.
@@ -33,7 +33,7 @@ ms.locfileid: "60071814"
  Kayıt defteri girdilerini VSTO eklentileri için yükleme işlemi sırasında nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Bu konuda, metin *eklenti kimliği* VSTO eklenti için benzersiz bir kimliği temsil eder. Varsayılan olarak VSTO eklentisi derlemenizin adını kimliğidir.
+> Bu konuda, metin *eklenti kimliği* VSTO eklenti için benzersiz bir kimliği temsil eder. Varsayılan olarak VSTO eklentisi derlemenizin adını kimliğidir.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>VSTO eklentileri için tüm kullanıcılar ve geçerli kullanıcının kayıt
  Bir VSTO Eklenti yüklendiğinde, iki yolla kaydedilebilir:

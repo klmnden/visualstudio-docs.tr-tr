@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437971"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Test Çerçevesi ile C/C++ için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     ```  
   
     > [!TIP]
-    >  Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
+    > Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.  
     >   
     >  Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.  
   
@@ -258,7 +258,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
      ![RangeTest başarısız](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
+    > Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
   
 3. Yeni test geçer, test edilen kod geliştirir:  
   
@@ -286,7 +286,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
      ![Birim Test Gezgini &#45; aralığı geçirilen Test](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
+    > Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
 ### <a name="debug"></a> Başarısız bir test hatalarını ayıklama  
   
@@ -361,7 +361,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
      ![All tests pass](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
+> Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
 ### <a name="refactor"></a> Testleri değiştirmeden kodu yeniden düzenleme  
   
@@ -378,7 +378,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
 2. Çözümü derleyin ve seçin **tümünü Çalıştır**, size bir hata oluşturmadığından emin emin olmak için.  
   
     > [!TIP]
-    >  İyi bir dizi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
+    > İyi bir dizi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
     >   
     >  Diğer değişikliklerden ayrı düzenlemesi tutun.  
   

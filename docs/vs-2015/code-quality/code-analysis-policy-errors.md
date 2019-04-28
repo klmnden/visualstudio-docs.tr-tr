@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9b61d7d9718e9557ef153474718542f889ad7629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576750"
 ---
-# <a name="code-analysis-policy-errors"></a>Kod Çözümleme İlkesi Hataları
+# <a name="code-analysis-policy-errors"></a>Kod Analiz İlkesi Hataları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kod Analizi İlkesi iade aşamasında karşılanmıyor aşağıdaki hatalar oluşur:  

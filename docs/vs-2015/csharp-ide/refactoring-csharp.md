@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444534"
 ---
 # <a name="refactoring-c"></a>Yeniden Düzenleme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Yeniden düzenleme, kod dış davranışını değiştirmeden kodu iç yapısın
  Derleyici, programınızın tam bir anlayışa sahip değil ve yeniden düzenleme altyapısı tüm uygun başvuruları güncelleştirilemeyebilir mümkündür, uyarı iletişim kutusu görüntülenir. Bu uyarı iletişim kutusunda da kodunuzda önizlemek bir fırsat sağlar **Değişiklikleri Önizle** değişiklikleri göndermeden önce iletişim kutusu.  
   
 > [!NOTE]
->  Bir yöntem (gösteren IDE dalgalı kırmızı alt çizgi ile) bir sözdizimi hatası içeriyorsa, yeniden düzenleme altyapısı yöntemin içindeki bir öğeye yönelik tüm başvuruları güncelleştirmez. Aşağıdaki örnek, bu davranış gösterir.  
+> Bir yöntem (gösteren IDE dalgalı kırmızı alt çizgi ile) bir sözdizimi hatası içeriyorsa, yeniden düzenleme altyapısı yöntemin içindeki bir öğeye yönelik tüm başvuruları güncelleştirmez. Aşağıdaki örnek, bu davranış gösterir.  
   
  Varsayılan olarak çalışırsa, başvuru Önizleme olmadan bir yeniden düzenleme işlemi değiştirir ve bir derleme hatası programınızda algılanır ve sonra geliştirme ortamı bu uyarı iletişim kutusu görüntüler.  
   

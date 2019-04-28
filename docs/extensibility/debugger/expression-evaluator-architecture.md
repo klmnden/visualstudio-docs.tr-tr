@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2f32cde96d7be482d0283510bcc3f0c127db9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d486234bd220fd1a7b2a93ca88fd89e5119b2dbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411302"
 ---
 # <a name="expression-evaluator-architecture"></a>İfade değerlendirici mimarisi
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Özel bir dil paketinin Hatalarını Ayıkla, anlamına gelir. Visual Studio Tümleştirme, gerekli bir ifade değerlendirici (EE) arabirimlerini Ayarla gerekir ve bağlayıcı arabirimleri ve ortak dil çalışma zamanı sembol sağlayıcısı (SP) çağırın. SP ve bağlayıcı, geçerli yürütme adresi birlikte ifadelerin değerlendirilme bağlam nesneleridir. Bu arabirimler oluşturmak ve kullanma bilgileri bir EE mimarisini temel kavramlar temsil eder.
 

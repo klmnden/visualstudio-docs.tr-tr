@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443532"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint iş akışı çözümleri oluşturma
 
@@ -57,7 +57,7 @@ SharePoint ile ilgili daha fazla bilgi için bkz. [Microsoft SharePoint Ürünle
  İş akışını oluşturduktan sonra özelliklerini Özellikler penceresinde değiştirebilirsiniz. Çoğu iş akışı özelliklerini Özellikler penceresinde doğrudan değiştirilebilir rağmen bazı, üç nokta düğmesine tıklamanız gerekir (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) için bunların değerlerini değiştirin. Bu düğmeyi yeniden **SharePoint Özelleştirme Sihirbazı**. Özelliği öğesini değer değişiklikleri yaptıktan sonra **son** bunları sonlandırmak için düğme.
 
 > [!NOTE]
->  **İş akışı türü** özelliği salt okunurdur ve değiştirilemez. İş akışı türü değiştirmek istiyorsanız, başka bir iş akışı oluşturmanız gerekir.
+> **İş akışı türü** özelliği salt okunurdur ve değiştirilemez. İş akışı türü değiştirmek istiyorsanız, başka bir iş akışı oluşturmanız gerekir.
 
 ## <a name="design-a-sharepoint-workflow"></a>Bir SharePoint iş akışı tasarlayın
  İş süreci içinde tüm adımları tanımladıktan sonra kullanın [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint iş akışı tasarlamak için iş akışı Tasarımcısı. Tasarımcısını açmak için çift tıklayın Workflow1.cs veya içinde Workflow1.vb **Çözüm Gezgini**, ya da bu dosyalar için kısayol menüsünü açın ve ardından **açın**.

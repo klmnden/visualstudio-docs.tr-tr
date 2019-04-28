@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c1585555c4c8039687bc514338fc86b61a7002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5fcbf5c7361fe2035730f52807073092f3433e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442044"
 ---
 # <a name="step-6-add-a-timer"></a>6. Adım: Zamanlayıcı ekleme
 Ardından, eklediğiniz bir <xref:System.Windows.Forms.Timer> eşleştirme oyunu denetimi. Zamanlayıcı belirtilen milisaniye sayısı kadar bekler ve ardından olarak adlandırılan bir olayı tetikler bir *değer çizgisi*. Bu olay, bir eylemi başlatmak veya eylemi düzenli aralıklarla yinelemek için kullanışlıdır. Bu durumda, oyuncuların iki simge seçmesini sağlamak ve simgeler eşleşmez ise, kısa bir süre sonra bu iki simgeyi yeniden gizlemek için bir zamanlayıcı kullanacaksınız.
@@ -26,7 +26,7 @@ Ardından, eklediğiniz bir <xref:System.Windows.Forms.Timer> eşleştirme oyunu
 **Zamanlayıcı**
 
     > [!NOTE]
-    >  Araç kutusu boş ise, araç kutusunu açmadan önce formun arkasındaki kodu değil de, form tasarımcısını seçtiğinizden emin olun.
+    > Araç kutusu boş ise, araç kutusunu açmadan önce formun arkasındaki kodu değil de, form tasarımcısını seçtiğinizden emin olun.
 
 2. Seçin **Süreölçer1** Zamanlayıcıyı seçmek için simge. İçinde **özellikleri** penceresi, Özellikler olayları görüntüleme alanından anahtar. Ardından Zamanlayıcının **aralığı** özelliğini **750**, ancak kendi **etkin** özelliğini **False**. **Aralığı** özelliği Zamanlayıcı arasında beklenecek süreyi belirten *ticks*, veya ne zaman tetikleyeceğini kendi <xref:System.Windows.Forms.Timer.Tick> olay. 750 değeri zamanlayıcıya, Tick olayını tetiklemeden önce saniyenin dörtte üçü kadar (750 milisaniye) beklemesini bildirir. Sizi ararız <xref:System.Windows.Forms.Timer.Start> yalnızca oyuncu ikinci etiketi seçtikten sonra zamanlayıcıyı başlatmak için yöntemi.
 
@@ -38,7 +38,7 @@ Ardından, eklediğiniz bir <xref:System.Windows.Forms.Timer> eşleştirme oyunu
      Tick olayı işleyicisi üç şeyi yapar: İlk olarak, çağırarak Zamanlayıcının çalışmadığından emin olur <xref:System.Windows.Forms.Timer.Stop> yöntemi. İki başvuru değişkeni kullanıyorsa `firstClicked` ve `secondClicked`, oyuncunun seçtiği iki etiketin simgelerini yeniden görünmez yapmak için. Son olarak, sıfırlar `firstClicked` ve `secondClicked` başvuru değişkenlerini `null` Visual C# ve `Nothing` Visual Basic'te. Programın kendini sıfırlama şekli olması nedeniyle bu adım önemlidir. Bunu hiçbirini izlememektedir anda <xref:System.Windows.Forms.Label> denetimleri ve oyuncunun yeniden bir etiket seçmesi için hazır.
 
     > [!NOTE]
-    >  Bir zamanlayıcı nesnesi olan bir `Start()` Zamanlayıcıyı başlatan bir yöntemi ve bir `Stop()` yöntemi. Zamanlayıcının ayarlandığında **etkin** özelliğini **True** içinde **özellikleri** penceresinde başladıktan program başlar başlamaz yolunda. Ancak çıktığınızda ayarlı olarak **False**, çağrılıncaya kadar işlemeye başlamaz kendi `Start()` yöntemi çağrılır. Normalde, bir Zamanlayıcının Tick olayını tekrar tekrar kullanarak tetiklemeden **aralığı** saat döngüleri arasında kaç milisaniye belirlemek için özellik. Fark etmiş olabilirsiniz nasıl Zamanlayıcının `Stop()` Tick olayı içinde yöntemi çağrılır. Zamanlayıcıyı koyar *tek sefer moduna*, yani `Start()` yöntemi çağrıldığında, belirtilen aralık kadar bekleyip, tek bir Tick olayını tetikler ve sonra durur.
+    > Bir zamanlayıcı nesnesi olan bir `Start()` Zamanlayıcıyı başlatan bir yöntemi ve bir `Stop()` yöntemi. Zamanlayıcının ayarlandığında **etkin** özelliğini **True** içinde **özellikleri** penceresinde başladıktan program başlar başlamaz yolunda. Ancak çıktığınızda ayarlı olarak **False**, çağrılıncaya kadar işlemeye başlamaz kendi `Start()` yöntemi çağrılır. Normalde, bir Zamanlayıcının Tick olayını tekrar tekrar kullanarak tetiklemeden **aralığı** saat döngüleri arasında kaç milisaniye belirlemek için özellik. Fark etmiş olabilirsiniz nasıl Zamanlayıcının `Stop()` Tick olayı içinde yöntemi çağrılır. Zamanlayıcıyı koyar *tek sefer moduna*, yani `Start()` yöntemi çağrıldığında, belirtilen aralık kadar bekleyip, tek bir Tick olayını tetikler ve sonra durur.
 
 4. Zamanlayıcıyı iş başında görmek için kod düzenleyicisine gidin ve üst ve alt için aşağıdaki kodu ekleyin `label_Click()` olay işleyicisi yöntemi. (Ekliyorsunuz bir `if` deyimi üst ve alt kısmına; üç deyimi yöntemin geri kalanı aynı kalır.)
 

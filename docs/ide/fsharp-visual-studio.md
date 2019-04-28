@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793423"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Görselle geliştirme F# Visual Studio'da
 
@@ -49,7 +49,7 @@ Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 |Simge ve bildirim|Hayır|Derleyici komut satırı seçenekleri aracılığıyla kullanılabilir.|
 |ASP.NET İstemci Hizmetleri|Hayır||
 |ClickOnce|Hayır|Bir istemci projesi varsa başka bir .NET Framework dil kullanın.|
-|Tanımlayıcı ad oluşturma|Hayır|Derleyici komut satırı seçenekleri aracılığıyla kullanılabilir.|
+|Kesin adlandırma|Hayır|Derleyici komut satırı seçenekleri aracılığıyla kullanılabilir.|
 |Yayımlama derleme ve sürüm oluşturma|Hayır||
 |Kod Analizi|Hayır|Kod çözümleme araçları, el ile veya bir derleme sonrası komutunun bir parçası olarak çalıştırılabilir.|
 |Güvenlik (güven düzeylerini değiştirme)|Hayır||
@@ -61,7 +61,7 @@ Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 |Proje Tasarımcısı sayfası|İlgili bağlantılar|Açıklama|
 | - |-------------|-----------|
 |Uygulama|[Uygulama sayfası, Proje Tasarımcısı](reference/application-page-project-designer-csharp.md)|Uygulama düzeyi ayarları ve özellikleri, bir kitaplık veya yürütülebilir bir dosya, uygulama hangi .NET Framework sürümünü hedefliyor ve burada kaynak dosyaları hakkında bilgi oluşturmakta olduğunuz gibi belirtmenize olanak tanıyan uygulama kullanan depolanır.|
-|Derleme|[Derleme sayfası, Proje Tasarımcısı](reference/build-page-project-designer-csharp.md)|Kodun nasıl derlendiğini denetlemenize olanak verir.|
+|Yapı|[Derleme sayfası, Proje Tasarımcısı](reference/build-page-project-designer-csharp.md)|Kodun nasıl derlendiğini denetlemenize olanak verir.|
 |Derleme olayları|[Derleme olayları sayfası, Proje Tasarımcısı](reference/build-events-page-project-designer-csharp.md)|Önce veya sonra bir derleme için komutları belirtmenizi sağlar.|
 |Hata ayıklama|[Hata Ayıklama Sayfası, Proje Tasarımcısı](reference/debug-page-project-designer.md)|Hata ayıklama sırasında uygulamanın nasıl çalışacağını denetlemesine olanak sağlar. Yerel kod ve SQL gibi etkinleştirmek istediğiniz herhangi bir özel hata ayıklama modlarını ve bu dizin ne kullanın ve uygulamanızın başlangıç komutları içerir.|
 |Paket (yalnızca .NET SDK)|Yok|NuGet paketi meta verileri bir NuGet paketi olarak yayımlarken tanımlamanızı sağlar.|
@@ -74,8 +74,8 @@ Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 
 |Proje Tasarımcısı sayfası|Ayar|Açıklama|
 | - |-------|-----------|
-|Derleme|Kuyruk çağrıları oluştur|Seçili olduğunda, Microsoft Ara dil (MSIL) yönerge kuyruğunu kullanımını etkinleştirir. Bu yığın çerçevesinin tail özyinelemeli işlevler için yeniden neden olur. Eşdeğer `--tailcalls` derleyici seçeneği.|
-|Derleme|Diğer bayrakları|Ek derleyici komut satırı seçenekleri belirtmenizi sağlar.|
+|Yapı|Kuyruk çağrıları oluştur|Seçili olduğunda, Microsoft Ara dil (MSIL) yönerge kuyruğunu kullanımını etkinleştirir. Bu yığın çerçevesinin tail özyinelemeli işlevler için yeniden neden olur. Eşdeğer `--tailcalls` derleyici seçeneği.|
+|Yapı|Diğer bayrakları|Ek derleyici komut satırı seçenekleri belirtmenizi sağlar.|
 
 ## <a name="code-and-text-editor-features"></a>Kod ve metin düzenleyici özellikleri
 
@@ -85,7 +85,7 @@ Visual Studio kodu ve metin düzenleyiciler, aşağıdaki özellikleri desteklen
 |-------|-----------|----------------|
 |Otomatik olarak açıklaması|Açıklama satırı yapın veya kodun bölümlerine sağlar.|Evet|
 |Otomatik olarak Biçimlendir|Standart girinti ve stil kod yeniden biçimlendirir.|Hayır|
-|Yer işaretleri|Düzenleyicide yerler kaydetmenizi sağlar.|Evet|
+|Yer İşaretleri|Düzenleyicide yerler kaydetmenizi sağlar.|Evet|
 |Girinti değiştirme|Girintileri veya seçili satırları girintilemez.|Evet|
 |Akıllı girintileme|Otomatik olarak Girintiler ve imleci göre XML'deki girintiler F# kapsama kuralları.|Evet|
 |[Metin bulma ve değiştirme](finding-and-replacing-text.md)|Bir dosya, proje veya çözüm arayın ve potansiyel olarak metin değiştirmek etkinleştirir.|Evet|

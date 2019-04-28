@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430111"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Metin işaretçileri eski API'si ile kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,16 +25,16 @@ Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni k
  Metin işaretçileri ile ilişkili performans yükü nedeniyle, metin arabelleği için çok sayıda işaretçileri oluşturmayın. Kullanıcı arabelleği içeriği düzenler her zaman her işaret güncelleştirilir.  
   
 > [!NOTE]
->  Kullanıcılara görünür işaret türü ancak kendi şekil ve stil rengini değiştirebilirsiniz. Daha fazla bilgi için [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Kullanıcılara görünür işaret türü ancak kendi şekil ve stil rengini değiştirebilirsiniz. Daha fazla bilgi için [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>İlgili Konular  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)|Bir standart metin işaretçisi türü tarafından sağlanan eklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metni görünümü çekirdek Düzenleyici.|  
-|[Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)|Uygulama örneğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kırmızı dalgalı alt çizgiler kullanarak hataları göstermek için kullanılan işaretçisi.|  
-|[Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)|Oluşturma ve bir özel metin işaretçisi türü metin görünümü ekleme işlemini açıklamaktadır.|  
-|[Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)|Metin işaretçileri ekleme işlemi açıklanmaktadır.|  
+|[Nasıl yapılır: Standart Metin İşaretçileri Ekleme](../extensibility/how-to-add-standard-text-markers.md)|Bir standart metin işaretçisi türü tarafından sağlanan eklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metni görünümü çekirdek Düzenleyici.|  
+|[Nasıl yapılır: Hata İşaretçileri Uygulama](../extensibility/how-to-implement-error-markers.md)|Uygulama örneğini açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kırmızı dalgalı alt çizgiler kullanarak hataları göstermek için kullanılan işaretçisi.|  
+|[Nasıl yapılır: Özel Metin İşaretçileri Oluşturma](../extensibility/how-to-create-custom-text-markers.md)|Oluşturma ve bir özel metin işaretçisi türü metin görünümü ekleme işlemini açıklamaktadır.|  
+|[Nasıl yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)|Metin işaretçileri ekleme işlemi açıklanmaktadır.|  
 |[Temel Düzenleyicinin İçinde](../extensibility/inside-the-core-editor.md)|Çekirdek Düzenleyici özelliklerini açıklar ve çekirdek Düzenleyici özelleştirme hakkında ayrıntılar sağlar.|  
 |[Düzenleyici Özellikleri](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Uygulamasında kullanılabilen özellikleri açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyici.|  
   

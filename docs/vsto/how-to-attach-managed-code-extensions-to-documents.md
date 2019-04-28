@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441797"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme
   Bir mevcut Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını özelleştirme bütünleştirilmiş kodu ekleyebilirsiniz. Belge veya çalışma kitabı Microsoft Office projeleri ve Visual Studio geliştirme araçları tarafından desteklenen herhangi bir dosya biçiminde olabilir. Daha fazla bilgi için [belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044270"
  Bir Word veya Excel belgesi için bir özelleştirme eklemek için kullanın <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> yöntemi <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı. Çünkü <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı Microsoft Office'in yüklü olmayan bir bilgisayarda çalıştırılması için tasarlanmıştır, bu yöntem doğrudan Microsoft Office geliştirme (örneğin, bir konsolu veya Windows Forms uygulaması) için ilgili olmayan çözümleri kullanabilirsiniz.
 
 > [!NOTE]
->  Özelleştirme kodunu belirtilen belgeyi sahip olmayan denetimleri bekliyorsa yüklenmesi başarısız olur.
+> Özelleştirme kodunu belirtilen belgeyi sahip olmayan denetimleri bekliyorsa yüklenmesi başarısız olur.
 
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Ekleme veya bir Word belgesi VSTO derlemesinden ayırma? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

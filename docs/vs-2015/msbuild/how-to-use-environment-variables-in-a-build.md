@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437886"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl yapılır: Derlemede Ortam Değişkenlerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
  Tüm ortam değişkenleri kullanılabilir [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) özellikleri olarak proje dosyası.  
   
 > [!NOTE]
->  Proje dosyası açık bir ortam değişkeni ile aynı ada sahip bir özellik tanımı içeriyorsa, proje dosyasındaki özellik ortam değişkeninin değerini geçersiz kılar.  
+> Proje dosyası açık bir ortam değişkeni ile aynı ada sahip bir özellik tanımı içeriyorsa, proje dosyasındaki özellik ortam değişkeninin değerini geçersiz kılar.  
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>İçinde bir MSBuild Projesi bir ortam değişkenini kullanmak için  
   
@@ -46,7 +46,7 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
     > [!NOTE]
-    >  Özellik adlarını büyük küçük harfe duyarlı olmayan şekilde hem `$(ToolsPath)` ve `$(TOOLSPATH)` aynı özellik veya ortam değişkeni başvurusu.  
+    > Özellik adlarını büyük küçük harfe duyarlı olmayan şekilde hem `$(ToolsPath)` ve `$(TOOLSPATH)` aynı özellik veya ortam değişkeni başvurusu.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki proje dosyası, dizin konumunu belirtmek için ortam değişkenlerini kullanır.  
@@ -71,4 +71,4 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
 
 [MSBuild Özellikleri](../msbuild/msbuild-properties1.md)
 
-[Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Nasıl yapılır: Aynı Kaynak Dosyalarını Farklı Seçeneklerle Derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

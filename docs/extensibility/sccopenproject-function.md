@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52976875be5d3b6544701e1a52e45d436f1cc6c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1cc82f81475f742a05abb063bfd3b5a51b7fe2b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434622"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject İşlevi
 Bu işlev, kaynak denetimi varolan projeyi açar veya yeni bir tane oluşturur.
@@ -95,14 +95,14 @@ SCCRTN SccOpenProject (
  IDE bir kullanıcı adı olarak oldfashionedgoat (`lpUser`), veya yalnızca boş bir dizeye bir işaretçi iletebilir. Bir kullanıcı adı varsa, kaynak denetimi eklentisi, varsayılan olarak kullanmanız gerekir. Ancak, adsız aktarılırsa veya verilen ada sahip bir oturum açma başarısız olursa, eklenti kullanıcıdan oturum açmak için ve geçerli adı döndürür `lpUser` geçerli bir oturum açma aldığında`.` kullanıcı adı dizesi eklenti değişebilir olduğundan , IDE her zaman bir arabellek boyutunu tahsis (`SCC_USER_LEN`+ 1 ya da null sonlandırıcıyı ortasının içeren SCC_USER_SIZE).
 
 > [!NOTE]
->  İlk eylemi gerçekleştirmek için IDE gerekebilir bir çağrı olabilir `SccOpenProject` işlevi veya [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Bu nedenle, her ikisi de aynı sahip `lpUser` parametresi.
+> İlk eylemi gerçekleştirmek için IDE gerekebilir bir çağrı olabilir `SccOpenProject` işlevi veya [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Bu nedenle, her ikisi de aynı sahip `lpUser` parametresi.
 
  `lpAuxProjPath` ve`lpProjName` çözüm dosyasından okumak veya çağrısından döndürülen `SccGetProjPath` işlevi. Bu parametreler, kaynak denetimi eklentisi projesi ile ilişkilendiren dizeleri içeren ve yalnızca eklenti için anlamlı olan. Bu tür bir dize içinde çözüm dosyası ve kullanıcı göz atmak için çalışandan değil (bir dize içinde dönmek, `SccGetProjPath` işlevi), IDE boş dizeler için her ikisi de geçirir `lpAuxProjPath` ve `lpProjName`ve bu değerleri güncelleştirilmesi bekleniyor Bu işlev tarafından eklenti olduğunda döndürür.
 
  `lpTextOutProc` Kaynak denetimi eklentisi komut sonuç çıktısı görüntüleme amacıyla IDE tarafından sağlanan bir geri çağırma işlevi için bir işaretçidir. Bu geri çağırma işlevi, ayrıntılı olarak açıklanan [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
 > [!NOTE]
->  Kaynak Denetimi Eklentisi bu yararlanmak planlıyorsa, ayarlamış olmanız gerekir `SCC_CAP_TEXTOUT` bayrağını [Sccınitialize](../extensibility/sccinitialize-function.md). Bu bayrağı ayarlı değil veya bu özellik, IDE desteklemiyorsa `lpTextOutProc` olacaktır `NULL`.
+> Kaynak Denetimi Eklentisi bu yararlanmak planlıyorsa, ayarlamış olmanız gerekir `SCC_CAP_TEXTOUT` bayrağını [Sccınitialize](../extensibility/sccinitialize-function.md). Bu bayrağı ayarlı değil veya bu özellik, IDE desteklemiyorsa `lpTextOutProc` olacaktır `NULL`.
 
  `dwFlags` Parametre açılmasını proje zaten var olmadığından olay, sonucu denetler. İki bit bayrakları oluşur `SCC_OP_CREATEIFNEW` ve `SCC_OP_SILENTOPEN`. Zaten açık proje yoksa işlev yalnızca projeyi açar ve döndürür `SCC_OK`. Proje yoksa ve `SCC_OP_CREATEIFNEW` bayrağı açıktır, kaynak denetimi eklentisi proje kaynak denetimi sisteminizden oluşturabilir, açın ve dönüş `SCC_OK`. Proje yoksa ve `SCC_OP_CREATEIFNEW` bayrağı kapalıdır, eklenti ardından için denetlemelisiniz `SCC_OP_SILENTOPEN` bayrağı. Bu bayrağı açık değilse, eklentinin kullanıcı için bir proje adı isteyebilir. Bu bayrak üzerindeyse, eklenti yalnızca döndürmelidir `SCC_E_UNKNOWNPROJECT`.
 
@@ -112,7 +112,7 @@ SCCRTN SccOpenProject (
  Kaynak Denetimi Eklentisi kümeleri `SCC_CAP_REENTRANT` içindeki bit `SccInitialize`, sonra da yukarıdaki oturum sırası paralel olarak birçok defa yinelenebilir. Farklı `pvContext` yapıları her farklı oturumları izlemek `pvContext` aynı anda bir Proje Aç ile ilişkilidir. Temel`pvContext` parametresi, eklentinin proje belirli herhangi bir çağrıda başvuruluyor belirleyebilirsiniz. Özellik bit varsa `SCC_CAP_REENTRANT` , nonreentrant ayarlı değil kaynak denetimi eklentileri birden çok projeleriyle çalışmak için kendi yeteneği sınırlıdır.
 
 > [!NOTE]
->  `SCC_CAP_REENTRANT` Bit, kaynak denetimi eklentisi API 1.1 sürümünde tanıtılmıştır. Ayarlı değil veya sürüm 1.0 göz ardı edilir ve tüm sürüm 1.0 kaynak denetimi eklentileri nonreentrant olduğu varsayılır.
+> `SCC_CAP_REENTRANT` Bit, kaynak denetimi eklentisi API 1.1 sürümünde tanıtılmıştır. Ayarlı değil veya sürüm 1.0 göz ardı edilir ve tüm sürüm 1.0 kaynak denetimi eklentileri nonreentrant olduğu varsayılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405621"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051628"
  Ayrıca, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] desteklediği en sık olun Dvorak klavye düzenleri, yazılan karakter daha erişilebilir. Kullanılabilir olan varsayılan kısayol tuşlarını da özelleştirebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Düzenleyicilerde, iletişim kutuları ve araç Windows  
  Varsayılan olarak, iletişim kutuları ve araç pencerelerinde tarafından [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] renkleri ve yazı tipi boyutu aynı işletim sistemi olarak kullanın. İletişim kutuları, araç çubukları ve araç pencerelerini IDE, çerçeve için renk ayarlarını dayalı bir renk şeması: açık veya koyu. Geçerli renk teması olarak değiştirebileceğiniz [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md).  
@@ -63,7 +63,7 @@ ms.locfileid: "60051628"
 6. İçinde **boyutu**, yeni bir yazı tipi boyutu seçin.  
   
     > [!NOTE]
-    >  Metin tabanlı araç pencereleri ve düzenleyiciler için metin boyutu Sıfırla tercih **Varsayılanlar kullan**.  
+    > Metin tabanlı araç pencereleri ve düzenleyiciler için metin boyutu Sıfırla tercih **Varsayılanlar kullan**.  
   
 7. **Tamam**’ı seçin.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051628"
  Metin, kenar boşluğu göstergeleri, boşluk ve düzenleyicide kod öğeleri için varsayılan renkleri değiştirmek seçebilirsiniz.  
   
 > [!NOTE]
->  Tüm uygulama windows işletim sisteminizdeki yüksek karşıtlık renklerini kullanmak için sol basın <strong>ALT +</strong>sol **SHIFT + PRINT SCREEN**. Varsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] açık, kapatın ve yeniden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tam yüksek karşıtlık renklerini uygulamak için.  
+> Tüm uygulama windows işletim sisteminizdeki yüksek karşıtlık renklerini kullanmak için sol basın <strong>ALT +</strong>sol **SHIFT + PRINT SCREEN**. Varsa [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] açık, kapatın ve yeniden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tam yüksek karşıtlık renklerini uygulamak için.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Düzenleyicide öğelerinin rengini değiştirmek için  
   

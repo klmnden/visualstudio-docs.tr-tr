@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403255"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Saklı yazı tipi ve renk ayarlarını erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60078102"
   Varsayılan olarak, olay oluşturma etkin değil. Olay oluşturma etkinleştirmek için bir kategori kullanarak açılmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Bu uygun çağırmak IDE neden <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> bir VSPackage'ı uygulayan bir yöntem.  
   
 > [!NOTE]
->  Değişiklikleri **yazı tipi ve renk** özellik sayfası oluşturma bağımsız olayları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Kullanabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> yöntemleri çağrılmadan önce önbelleğe alınmış yazı tipi ve renk ayarlarını güncelleştirmesi gerekli olup olmadığını belirlemek için arabirim <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> sınıfı.  
+> Değişiklikleri **yazı tipi ve renk** özellik sayfası oluşturma bağımsız olayları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Kullanabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> yöntemleri çağrılmadan önce önbelleğe alınmış yazı tipi ve renk ayarlarını güncelleştirmesi gerekli olup olmadığını belirlemek için arabirim <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> sınıfı.  
   
 ### <a name="storing-and-retrieving-information"></a>Depolama ve bilgileri alınıyor  
  VSPackage elde etmek veya bir kullanıcı için açık bir kategorideki bir adlandırılmış görüntü öğesini değiştirebilirsiniz bilgi yapılandırmak için çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> yöntemleri.  
@@ -69,12 +69,12 @@ ms.locfileid: "60078102"
  Yazı tipi hakkında bilgi için belirli bir kategoriye kullanılarak elde öznitelikleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> yöntemleri.  
   
 > [!NOTE]
->  `fFlags` Geçirilen bağımsız değişken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> kategori açıldığında yöntemi davranışını tanımlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> yöntemleri. Varsayılan olarak, bu yöntemler yalnızca dönüş bilgi aboutdisplay itemsthat değişti. Ancak, bir kategori kullanarak açtıysanız <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> bayrak, hem güncelleştirildi ve değişmeden görünen öğeler tarafından erişilebilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+> `fFlags` Geçirilen bağımsız değişken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> kategori açıldığında yöntemi davranışını tanımlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> yöntemleri. Varsayılan olarak, bu yöntemler yalnızca dönüş bilgi aboutdisplay itemsthat değişti. Ancak, bir kategori kullanarak açtıysanız <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> bayrak, hem güncelleştirildi ve değişmeden görünen öğeler tarafından erişilebilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Varsayılan olarak, yalnızca değiştirilen **görünen öğeler** bilgileri, kayıt defterinde tutulur. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Arabirimi, yazı tipleri ve renkler için tüm ayarları almak için kullanılamaz.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> yöntemleri REGDB_E_KEYMISSING, (bilgi almaya kullanıldıklarında 0x80040152L) hakkında değişmeden döndürür **görünen öğeler**.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> yöntemleri REGDB_E_KEYMISSING, (bilgi almaya kullanıldıklarında 0x80040152L) hakkında değişmeden döndürür **görünen öğeler**.  
   
  Tüm ayarları **görünen öğeler** belirli bir **kategori** yöntemleri kullanılarak elde edilebilir `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` arabirimi.  
   

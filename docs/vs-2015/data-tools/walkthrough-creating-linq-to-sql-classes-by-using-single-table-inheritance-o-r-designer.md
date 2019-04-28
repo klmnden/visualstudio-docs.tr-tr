@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424692"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111980"
 1. İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, sağ **tabloları** düğüm ve tıklatın **Yeni Tablo Ekle**.  
   
     > [!NOTE]
-    >  Northwind veritabanına veya tabloya eklediğiniz herhangi bir veritabanını kullanabilirsiniz.  
+    > Northwind veritabanına veya tabloya eklediğiniz herhangi bir veritabanını kullanabilirsiniz.  
   
 2. Tablo Tasarımcısı'nda tabloda aşağıdaki sütunları ekleyin:  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111980"
 2. Projeyi adlandırın **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Visual Basic ve C# projelerinde desteklenir. Yeni projeyi bu dillerden birinde oluşturun.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Visual Basic ve C# projelerinde desteklenir. Yeni projeyi bu dillerden birinde oluşturun.  
   
 3. Tıklayın **Windows Forms uygulaması** şablonu ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

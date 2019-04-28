@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d1d13c071d8eb291a857dd0afc3da664b0ddca7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435324"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -28,7 +28,7 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
  Örneğin, bir tablo veya diyagramını olarak bir iş akışını tanımlayan bir model olabilir. Modelden, iş akışı yürüten yazılım oluşturabilirsiniz. Kullanıcıların gereksinimleri değiştiğinde, kullanıcılar ile yeni bir iş akışı tartışmak kolay bir işlemdir. İş akışı kodu yeniden kodu el ile güncelleştirme değerinden daha güvenilir oldu.
 
 > [!NOTE]
->  A *modeli* uygulamanın belirli bir yönüyle açıklayan bir veri kaynağıdır. Dosyadan veya veritabanından herhangi bir türden herhangi formunun olabilir. Herhangi bir UML modeli veya etki alanına özgü dil modeli gibi belirli bir biçimde olmasını yok. Tablolar ya da XML dosyası biçiminde tipik modelleridir.
+> A *modeli* uygulamanın belirli bir yönüyle açıklayan bir veri kaynağıdır. Dosyadan veya veritabanından herhangi bir türden herhangi formunun olabilir. Herhangi bir UML modeli veya etki alanına özgü dil modeli gibi belirli bir biçimde olmasını yok. Tablolar ya da XML dosyası biçiminde tipik modelleridir.
 
  Büyük olasılıkla kod oluşturma ile ilgili bilgi sahibi olduğunuz. Kaynakları tanımladığınızda bir **.resx** dosyası Visual Studio çözümünüzü, sınıflar ve yöntemler kümesi otomatik olarak oluşturulur. Kaynaklar dosyası sınıflar ve yöntemler düzenlemek sahip olması durumuna göre çok daha kolay ve daha güvenilir düzenlemek için kaynaklar kolaylaştırır. Metin şablonları ile aynı şekilde kendi tasarımının bir kaynaktan kod oluşturabilirsiniz.
 
@@ -132,9 +132,9 @@ Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için progra
   Şablon çalıştırın ve kesme noktalarında durdurun. Değişkenleri incelemek ve her zamanki yolla kodda adım adım.
 
 > [!TIP]
->  `debug="true"` oluşturulan kodun daha doğru bir şekilde daha fazla satır yönergeleri oluşturulan koda numaralandırmasını ekleyerek metin şablonu için eşleme sağlar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış çalıştırmasında durabilir.
+> `debug="true"` oluşturulan kodun daha doğru bir şekilde daha fazla satır yönergeleri oluşturulan koda numaralandırmasını ekleyerek metin şablonu için eşleme sağlar. Teslim değiştirmeden bırakırsanız, kesme noktaları durumu yanlış çalıştırmasında durabilir.
 >
->  Ancak bile, değil hata ayıklaması yaparken şablon yönergesinde yan tümcesi bırakabilirsiniz. Bu performans çok küçük bir bırakma neden olur.
+> Ancak bile, değil hata ayıklaması yaparken şablon yönergesinde yan tümcesi bırakabilirsiniz. Bu performans çok küçük bir bırakma neden olur.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Koda veya kaynaklara çözümünüz için oluşturma
  Bir modeline bağlı olarak farklılık gösterir. program dosyaları oluşturabilirsiniz. Bir model, bir veritabanı, yapılandırma dosyası, UML model, DSL model veya diğer kaynak gibi bir giriştir. Bazı program dosyaları genellikle aynı modelden oluşturur. Bunu başarmak için her oluşturulan program dosyası için bir şablon dosyası oluşturun ve tüm şablonları aynı modelin okuma.

@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443926"
 ---
 # <a name="extending-the-isolated-shell"></a>Yalıtılmış Kabuğu genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054098"
 Visual Studio yalıtılmış kabuğu, yalıtılmış Kabuk uygulaması için bir VSPackage'ı, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçası veya genel bir VSIX projesi ekleyerek genişletebilirsiniz.  
   
 > [!NOTE]
->  Aşağıdaki adımlar, bir temel yalıtılmış Kabuk uygulaması Visual Studio Kabuğu yalıtılmış proje şablonunu kullanarak oluşturduğunuz presuppose. Bu proje şablonu hakkında daha fazla bilgi için bkz: [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Aşağıdaki adımlar, bir temel yalıtılmış Kabuk uygulaması Visual Studio Kabuğu yalıtılmış proje şablonunu kullanarak oluşturduğunuz presuppose. Bu proje şablonu hakkında daha fazla bilgi için bkz: [izlenecek yol: Yalıtılmış Kabuk uygulaması temel bir oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Paket projesi şablonu için konumları  
  Visual Studio Paket proje şablonu, üç farklı konumlarda bulunabilir **yeni proje** iletişim:  
@@ -121,4 +121,4 @@ Visual Studio yalıtılmış kabuğu, yalıtılmış Kabuk uygulaması için bir
 8. Derleme ve çözümü çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [İzlenecek yol: Temel Yalıtılmış Kabuk Uygulaması Oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

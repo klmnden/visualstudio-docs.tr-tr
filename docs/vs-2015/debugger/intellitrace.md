@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440157"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 |**Desteklenmiyor**|-C++, diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../includes/winmobile-md.md)] uygulamaları|  
   
 > [!NOTE]
->  Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, IntelliTrace kullanamazsınız. IntelliTrace'i işlem başladığında başlatmanız gerekir.  
+> Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, IntelliTrace kullanamazsınız. IntelliTrace'i işlem başladığında başlatmanız gerekir.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Neden IntelliTrace ile hata ayıklama?  
  Geleneksel veya *canlı* hata ayıklama sadece uygulamanızın geçerli durumunu gösterir, geçmiş olaylar hakkında sınırlı veri ile. Bu olayları uygulamanın mevcut durumuna göre ya da sahip veya bu olayları uygulamanızı yeniden çalıştırarak yeniden oluşturmanız gerekir.  
@@ -161,7 +161,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 - Birinci düzey alt nesnelerin işaretçileri, ancak değerleri yalnızca boş veya değil şeklinde verilir  
   
 > [!NOTE]
->  IntelliTrace yalnızca dizilerdeki ilk 256 nesneyi ve dizelerdeki ilk 256 karakteri toplar.  
+> IntelliTrace yalnızca dizilerdeki ilk 256 nesneyi ve dizelerdeki ilk 256 karakteri toplar.  
   
  Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

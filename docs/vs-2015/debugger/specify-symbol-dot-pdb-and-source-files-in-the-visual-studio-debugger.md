@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447306"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısında Simge (.pdb) ve Kaynak Dosyaları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 4. Sembol geliştirmek için yükleme performansını yazın sembolleri kopyalanabildiği sembol sunucuları tarafından yerel bir dizin yolu **önbellek sembolleri bu dizinde** sembolleri kopyalanabilir yerel bir dizin kutusu.
 
    > [!NOTE]
-   >  Sembol önbelleğinizi korunan klasöre (C:\Windows folder veya bunun alt klasörlerinden biri) koymayın. Bunun yerine okuma-yazma klasörü kullanın.
+   > Sembol önbelleğinizi korunan klasöre (C:\Windows folder veya bunun alt klasörlerinden biri) koymayın. Bunun yerine okuma-yazma klasörü kullanın.
 
    **Sembol yükleme davranışı belirtin**
 
@@ -116,7 +116,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
  Üçüncü taraf Windows uygulamaları ve kitaplıkları sağlayıcılar internet üzerinden sembol sunucusuna erişim sağlayabilir. Bu sembol sunucularının URL'sini de girin **hata ayıklama**/**sembolleri** sayfası
 
 > [!NOTE]
->  Microsoft ortak sembol sunucularından farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine maruz kalabilirsiniz.
+> Microsoft ortak sembol sunucularından farklı bir sembol sunucusu kullanıyorsanız, sembol sunucusunun ve yolunun güvenilir olduğundan emin olun. Sembol dosyası rastgele yürütülebilir kod içerebileceğinden güvenlik tehditlerine maruz kalabilirsiniz.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Bulma ve hata ayıklama sırasında sembolleri yükle
  Hata ayıklayıcı kesme modundayken, hata ayıklayıcı seçenekleriyle daha önce hariç tutulan veya derleyicinin bulamadığı bir modül için semboller yükleyebilirsiniz. Çağrı Yığını, Modüller, Yereller, Otolar ve tüm Gözcü pencerelerinin kısayol menülerinden sembol yükleyebilirsiniz. Hata ayıklayıcısı sembol veya kaynak dosyalarına sahip olmayan kodu keserse, bir belge penceresi görüntülenir. Burada, eksik dosyaları ve bunları bulup yüklemek için yapılacak eylemler hakkında bilgi bulabilirsiniz.
@@ -224,7 +224,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
  Yerel makinede kaynak kod olmadığında veya .pdb dosyası kaynak kodla eşleşmediğinde, uygulamada hata ayıklamaya yardımcı olması için Kaynak Sunucuyu kullanabilirsiniz. Kaynak Sunucu, dosya isteklerini alır ve gerçek dosyaları döndürür. Kaynak Sunucu, srcsrv.dll adlı bir DLL dosyası ile çalışır. Kaynak Sunucu, kaynak kodu depodan almak için kullanılan komutların yanı sıra kaynak kodu deposuna işaretçiler içeren uygulamanın .pdb dosyasını okur. devenv.exe ve srcsrv.dll ile aynı dizine konması gereken srcsrv.ini adlı dosyadaki izin verilen komutları listeleyerek hangi komutlara uygulamanın .pdb dosyasından yürütülmesini izin verileceğini sınırlayabilirsiniz.
 
 > [!IMPORTANT]
->  Rastgele komutlar uygulamanın .pdb dosyasına katıştırılabildiğinden yalnızca yürütmek istediğiniz komutları srcsrv.ini dosyasına koyduğunuzdan emin olun. srcsvr.ini dosyasında olmayan bir komutu yürütme girişimi, bir onay iletişim kutusunun görüntülenmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Komut parametrelerinde bir doğrulama yapılmadı, bu nedenle güvenilir komutlara dikkat edin. Örneğin, cmd.exe'ye güvendiyseniz, kötü niyetli bir kullanıcı, komutu tehlikeli duruma getirecek parametreler belirtebilir.
+> Rastgele komutlar uygulamanın .pdb dosyasına katıştırılabildiğinden yalnızca yürütmek istediğiniz komutları srcsrv.ini dosyasına koyduğunuzdan emin olun. srcsvr.ini dosyasında olmayan bir komutu yürütme girişimi, bir onay iletişim kutusunun görüntülenmesine neden olur. Daha fazla bilgi için [güvenlik uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Komut parametrelerinde bir doğrulama yapılmadı, bu nedenle güvenilir komutlara dikkat edin. Örneğin, cmd.exe'ye güvendiyseniz, kötü niyetli bir kullanıcı, komutu tehlikeli duruma getirecek parametreler belirtebilir.
 
  **Bir kaynak sunucusunun kullanımını etkinleştirmek için**
 

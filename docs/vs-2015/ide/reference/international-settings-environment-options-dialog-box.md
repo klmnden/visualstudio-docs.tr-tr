@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 871069c2620274f008250cd4f3166de7a6d419e2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2594c7a6cf648c52f44ea9ee2f71d9481742a94b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441670"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "59670023"
 Uluslararası Ayarlar sayfasında birden fazla dilde tümleşik geliştirme ortamının (IDE), makinenizde yüklü olduğunda varsayılan dili değiştirmenizi sağlar. Bu iletişim kutusunu seçerek erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından **uluslararası ayarlar** gelen **ortamı** klasör. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Dil**  
  Mevcut diller yüklü ürün dil sürümlerini listeler. Birden fazla dil sürümü, makinenizde yüklü olmadığı sürece, bu seçenek kullanılamaz. Birden çok ürünlerin dil veya bir karma dil yüklemesi ürün ortamı paylaşıyorsa, dil seçimi değiştirildi **Microsoft Windows ile aynı**.  
   
 > [!CAUTION]
->  Birden çok dil yüklü bir sistemde Visual C++ derleme Araçları (cl.exe, link.exe, nmake.exe, bscmake.exe'yi ve ilişkili dosyaları), bu ayardan etkilenmez. Bu araçları yüklü son dil sürümü kullanın ve Visual C++ derleme araçları, uydu DLL modeli kullanmayın çünkü daha önce yüklenen dil araçları üzerine yazılır.  
+> Birden çok dil yüklü bir sistemde Visual C++ derleme Araçları (cl.exe, link.exe, nmake.exe, bscmake.exe'yi ve ilişkili dosyaları), bu ayardan etkilenmez. Bu araçları yüklü son dil sürümü kullanın ve Visual C++ derleme araçları, uydu DLL modeli kullanmayın çünkü daha önce yüklenen dil araçları üzerine yazılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

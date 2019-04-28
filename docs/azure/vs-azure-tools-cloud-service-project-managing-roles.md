@@ -4,17 +4,19 @@ description: Ekleme ve Visual Studio ile Azure bulut hizmetlerindeki roller kald
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550967"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio ile Azure bulut Hizmetleri'nde rollerini yönetme
 Azure bulut hizmetinizi oluşturduktan sonra yeni rolleri eklemek veya var olan rolleri kaldırın. Ayrıca, mevcut bir projeyi içeri aktar ve rol dönüştürün. Örneğin, bir ASP.NET web uygulamasını içeri aktarabilir ve bir web rolü olarak belirleyin.
@@ -28,7 +30,7 @@ Aşağıdaki adımlar Visual Studio'da bir Azure bulut hizmeti projesi için bir
 
 1. Sağ **rolleri** bağlam menüsünü görüntülemek için düğümü. Bağlam menüsünden seçin **Ekle**, geçerli çözümden bir var olan web rolü veya çalışan rolü seçin veya bir web veya çalışan rolü projesi oluşturun. Ayrıca, bir ASP.NET web uygulaması projesi gibi uygun bir projeyi seçin ve bir rol projesi ile ilişkilendiren.
 
-   ![Bir rol için bir Azure bulut hizmeti projesi eklemek için menü seçenekleri](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+    ![Bir rol için bir Azure bulut hizmeti projesi eklemek için menü seçenekleri](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Bir rol bir Azure bulut Hizmeti'nden kaldırılıyor
 Aşağıdaki adımlar Visual Studio'da bir Azure bulut hizmeti projesinden bir web veya çalışan rolü kaldırma aracılığıyla Kılavuzu.
@@ -41,7 +43,7 @@ Aşağıdaki adımlar Visual Studio'da bir Azure bulut hizmeti projesinden bir w
 
 1. Kaldırın ve bağlam menüsünden seçmek için istediğiniz düğüme sağ **Kaldır**.
 
-   ![Bir rol bir Azure bulut hizmetine eklemek için menü seçenekleri](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+    ![Bir rol bir Azure bulut hizmetine eklemek için menü seçenekleri](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Bir rol için bir Azure bulut hizmeti projesi yeniden ekleniyor
 Bulut hizmeti projenizi bir rolünü kaldırmak, ancak daha sonra rolü yeniden projeye eklemek karar yalnızca Rol bildirimi ve uç noktaları ve tanılama bilgileri gibi temel öznitelikler eklenir. Ek kaynaklar veya başvurular eklenen `ServiceDefinition.csdef` dosya veya `ServiceConfiguration.cscfg` dosya. Bu bilgiyi eklemek istiyorsanız, bu dosyalar onu el ile eklemeniz gerekir.

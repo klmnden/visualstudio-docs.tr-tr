@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416839"
 ---
 # <a name="how-to-customize-search-results"></a>Nasıl yapılır: Arama sonuçlarını özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Arama sonuçları şurada görüntülenir nasıl özelleştirebileceğiniz **ara
  Belge içeriğini İngilizce dışında bir dilde içerebilir. Belirli bir dilde içerik arama sonuçlarınızı daraltabilirsiniz. Ayrıca, arama Sorgunuzla eşleşen İngilizce dilinde herhangi bir içerik içerebilir.  
   
 > [!WARNING]
->  Bu özellik, yüklü içeriği birincil dili İngilizce değilse etkinleştirilir.  
+> Bu özellik, yüklü içeriği birincil dili İngilizce değilse etkinleştirilir.  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Başka bir dilde içerik yanı sıra İngilizce içerik eklemek için  
   

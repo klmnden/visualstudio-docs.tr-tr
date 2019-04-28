@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406588"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Nasıl yapılır: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projedeki uygulama, tüm kod dışı dosyalara yanı sıra uygulama dağıtılır. Bazı durumlarda değil istediğiniz veya belirli dosyaları yayımlamanız gerekir veya koşullara göre belirli dosyaları yüklemek isteyebilirsiniz. Visual Studio dosyaları dışarıda bırak, dosyalar, veri dosyalarını veya önkoşul olarak işaretleme ve koşullu yüklemek için dosya grupları oluşturmak için özellikler sunar.
@@ -92,7 +92,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 4. İçinde **uygulama dosyaları** iletişim kutusunda **grubu** yeni gruba dahil etmek istediğiniz bir dosya için alan.
 
     > [!NOTE]
-    >  Dosyaları olmalıdır **derleme eylemi** özelliğini **içerik** dosya adlarını görünmesi **uygulama dosyaları** iletişim kutusu.
+    > Dosyaları olmalıdır **derleme eylemi** özelliğini **içerik** dosya adlarını görünmesi **uygulama dosyaları** iletişim kutusu.
 
 5. İçinde **indirme grubu** alanın, Seç  **\<yeni … >** aşağı açılan listeden.
 
@@ -111,7 +111,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 5. İçinde **indirme grubu** alanında, aşağı açılan listeden bir grubu seçin.
 
     > [!NOTE]
-    >  Değiştiremezsiniz **indirme grubu** uygulamayı çalıştırmak gerekli olan dosyalar için.
+    > Değiştiremezsiniz **indirme grubu** uygulamayı çalıştırmak gerekli olan dosyalar için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)

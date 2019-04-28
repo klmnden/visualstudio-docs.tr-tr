@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8b84e16ec3a1905866add7bd62962501b32cc46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fdeef3a21407b4473ed412019e936d7b30389c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402887"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde tek dosyalı veri kümesine (tek bir projede bir dataset) doğrulama ekleme ile aynı olur. Veri üzerine doğrulama yapmak için önerilen konum sırasındadır <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosundaki olayları.
@@ -28,10 +28,10 @@ Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde
  Veri kümesi, kullanıcı kodu kümesindeki veri tablolarının sütun ve satır değiştiren olaylarına ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) veya [kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
->  Veri kümelerini Tableadapters'dan ayırdığınızda ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Varolan kısmi veri kümesi sınıfları, veri kümesi projesine el ile taşınmalıdır.
+> Veri kümelerini Tableadapters'dan ayırdığınızda ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Varolan kısmi veri kümesi sınıfları, veri kümesi projesine el ile taşınmalıdır.
 
 > [!NOTE]
->  Veri kümesi Tasarımcısı otomatik olarak oluşturmaz olay işleyicileri, C# ' ta <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging> olayları. El ile bir olay işleyicisi oluşturun ve temeldeki olaya olay işleyiciye bağlama gerekir. Aşağıdaki yordamlar Visual Basic ve C# içinde gerekli olay işleyicilerini oluşturma işlemini açıklar.
+> Veri kümesi Tasarımcısı otomatik olarak oluşturmaz olay işleyicileri, C# ' ta <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging> olayları. El ile bir olay işleyicisi oluşturun ve temeldeki olaya olay işleyiciye bağlama gerekir. Aşağıdaki yordamlar Visual Basic ve C# içinde gerekli olay işleyicilerini oluşturma işlemini açıklar.
 
 ## <a name="validate-changes-to-individual-columns"></a>Tek tek sütunlara yapılan değişiklikleri doğrulama
  İşleyerek, tek tek sütunlardaki değerleri doğrulayın <xref:System.Data.DataTable.ColumnChanging> olay. <xref:System.Data.DataTable.ColumnChanging> Olayı, bir sütundaki bir değer değiştirildiğinde oluşturulur. İçin bir olay işleyicisi oluşturun <xref:System.Data.DataTable.ColumnChanging> istediğiniz sütunu çift tıklatarak olay **veri kümesi Tasarımcısı**.
@@ -47,7 +47,7 @@ End Sub
 ```
 
 > [!NOTE]
->  C# projelerinde, Dataset Designer yalnızca veri kümesi ve tek tek tablolar için kısmi sınıflar oluşturur. Veri kümesi Tasarımcısı otomatik olarak olay işleyiciler oluşturmaz <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging> olayları C# ' de Visual Basic'te yaptığı gibi. C# projelerinde, olayı işlemek ve temeldeki olaya yöntemi bağlama için bir yöntem el ile oluşturmak gerekir. Aşağıdaki yordam Visual Basic ve C# içinde gerekli olay işleyicilerini oluşturma adımlarını sağlar.
+> C# projelerinde, Dataset Designer yalnızca veri kümesi ve tek tek tablolar için kısmi sınıflar oluşturur. Veri kümesi Tasarımcısı otomatik olarak olay işleyiciler oluşturmaz <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.RowChanging> olayları C# ' de Visual Basic'te yaptığı gibi. C# projelerinde, olayı işlemek ve temeldeki olaya yöntemi bağlama için bir yöntem el ile oluşturmak gerekir. Aşağıdaki yordam Visual Basic ve C# içinde gerekli olay işleyicilerini oluşturma adımlarını sağlar.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -58,7 +58,7 @@ End Sub
 2. Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.
 
     > [!NOTE]
-    >  Dataset Designer C# olayı için olay işleyicisi otomatik olarak oluşturmaz. C# ' taki olayı işlemek gerekli olan kod, sonraki bölümde eklenmiştir. `SampleColumnChangingEvent` oluşturulur ve en fazla kancalandı <xref:System.Data.DataTable.ColumnChanging> olayında <xref:System.Data.DataTable.EndInit%2A> yöntemi.
+    > Dataset Designer C# olayı için olay işleyicisi otomatik olarak oluşturmaz. C# ' taki olayı işlemek gerekli olan kod, sonraki bölümde eklenmiştir. `SampleColumnChangingEvent` oluşturulur ve en fazla kancalandı <xref:System.Data.DataTable.ColumnChanging> olayında <xref:System.Data.DataTable.EndInit%2A> yöntemi.
 
 3. Doğrulamak için kod ekleme `e.ProposedValue` uygulamanızın gereksinimlerini karşılayan verileri içerir. Önerilen değer kabul edilemezse, hata içerdiğini belirtmek için sütunu ayarlayın.
 
@@ -117,7 +117,7 @@ End Sub
      Kısmi sınıf oluşturulur bir `RowChanging` olay işleyicisi ve Kod Düzenleyicisi'nde açılır.
 
     > [!NOTE]
-    >  Veri kümesi Tasarımcısı için bir olay işleyicisi otomatik olarak oluşturmaz <xref:System.Data.DataTable.RowChanging> C# projelerinde olay. İşlemek için bir yöntem oluşturmak sahip olduğunuz <xref:System.Data.DataTable.RowChanging> olay ve olayı tablonun başlatma yöntemine denetime kodu çalıştırın.
+    > Veri kümesi Tasarımcısı için bir olay işleyicisi otomatik olarak oluşturmaz <xref:System.Data.DataTable.RowChanging> C# projelerinde olay. İşlemek için bir yöntem oluşturmak sahip olduğunuz <xref:System.Data.DataTable.RowChanging> olay ve olayı tablonun başlatma yöntemine denetime kodu çalıştırın.
 
 3. Kısmi sınıf bildirimi içerisine kullanıcı kodu ekleyin.
 

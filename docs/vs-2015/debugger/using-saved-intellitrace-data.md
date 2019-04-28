@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3409cf6f5f86ea4e4649049f3cc1c49fbb1f5c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437772"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kayıtlı IntelliTrace verilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
     - Altında **yineleme adımları**, seçin **IntelliTrace** bağlantı.  
   
 > [!TIP]
->  Hata ayıklama sırasında IntelliTrace dosyasını kapattıysanız, kolayca yeniden açabilirsiniz. Git **hata ayıklama** menüsünde seçin **IntelliTrace**, **günlük özetini göster**. Ayrıca seçebilirsiniz **günlük özetini göster** içinde **IntelliTrace** penceresi. Yalnızca IntelliTrace ile hata ayıklama sırasında bu kullanılabilir.  
+> Hata ayıklama sırasında IntelliTrace dosyasını kapattıysanız, kolayca yeniden açabilirsiniz. Git **hata ayıklama** menüsünde seçin **IntelliTrace**, **günlük özetini göster**. Ayrıca seçebilirsiniz **günlük özetini göster** içinde **IntelliTrace** penceresi. Yalnızca IntelliTrace ile hata ayıklama sırasında bu kullanılabilir.  
   
 ## <a name="Understand"></a> IntelliTrace günlüğünün anlama  
  Yalnızca, belirli bir kaynaktan Örneğin, Test Yöneticisi'nden veya SharePoint uygulamalardan toplanan veriler, bazı .iTrace dosyasın içinde aşağıdaki bölümlerde görünür.  

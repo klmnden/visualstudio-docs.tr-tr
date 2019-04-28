@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788479"
 ---
 # <a name="unit-test-your-code"></a>Birim testi kod
 

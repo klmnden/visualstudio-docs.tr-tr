@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446693"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  Seçtiğiniz seçenek olan, profil oluşturma üç tür kullandığınıza bağlıdır: örnekleme, izleme, ya da genel. Katman etkileşim verileri profil oluşturma verileri dahil etmek için ayrı bir seçenek gereklidir. Her seçeneği söz dizimi aşağıdaki tablolarda açıklanmıştır.  
   
 > [!NOTE]
->  İşiniz bittiğinde profil oluşturma, çalıştırma **VSPerfCLREnv** ile **/ off** veya **/globaloff** profil oluşturmak için gereken ortam değişkenlerini silmeniz için seçeneği. Daha fazla bilgi için VSPerfCLREnv seçenekleri ortam burada gösterilen ayarları silmek için bkz.  
+> İşiniz bittiğinde profil oluşturma, çalıştırma **VSPerfCLREnv** ile **/ off** veya **/globaloff** profil oluşturmak için gereken ortam değişkenlerini silmeniz için seçeneği. Daha fazla bilgi için VSPerfCLREnv seçenekleri ortam burada gösterilen ayarları silmek için bkz.  
   
  **Katman etkileşim verileri ekleme VSPerfCLREnv seçenekleri**  
   
 > [!WARNING]
->  Katman etkileşim profili oluşturma toplanacak kullanarak [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Katman etkileşim profili oluşturma toplanacak kullanarak [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  Katman etkileşim profili oluşturma, çok katmanlı uygulamalarda ADO.NET sorgularının hakkında ek bilgi sağlar. Verileri yalnızca zaman uyumlu işlev çağrıları için toplanır. Herhangi bir profil oluşturma yöntemini kullanarak tüm profil oluşturma yürütmesine etkileşim verileri eklenebilir.  
   

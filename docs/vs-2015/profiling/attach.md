@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2aa44ee0d7d4a1b9965e653ac089c4c5dd78821b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b9adb5a0a47c1ee98e0e390cfaf8b3a6dc78146
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433788"
 ---
 # <a name="attach"></a>İliştir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ VSPerfCmd.exe **iliştirme** seçeneği, çalışan işlemin işlem kimliği (PI
  Kullanılacak **iliştirme** seçeneğini belirtmelisiniz **örnek** başlangıç seçeneği yöntemi.  
   
 > [!NOTE]
->  Varsa **Başlat** seçeneği ile belirtilen **Crosssession** seçeneğini çağrıları **VSPerfCmd /Attach** veya **VSPerfCmd/detach** gerekir Ayrıca belirtin **Crosssession**.  
+> Varsa **Başlat** seçeneği ile belirtilen **Crosssession** seçeneğini çağrıları **VSPerfCmd /Attach** veya **VSPerfCmd/detach** gerekir Ayrıca belirtin **Crosssession**.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

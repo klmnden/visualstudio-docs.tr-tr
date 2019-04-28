@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436548"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Özel durum sorunlarını giderme: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] bir ileti doğru güvenli olmayan veya oynanmış belirler. Hata, en sık aşağıdaki koşulların tümü doğru olduğunda oluşur:  
@@ -35,7 +35,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INC
  Kullanarak bir uzak kullanıcının Web sitesi çalışabilir, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme Sunucusu'nda ve ayrıca bir Web hizmeti veya WCF Hizmeti ile çalışma, bir özel hizmet bağlaması oluşturun veya NTLM güvenliği devre dışı.  
   
 > [!IMPORTANT]
->  NTLM güvenliğin devre dışı bırakılması önerilmez ve bir güvenlik tehdidi yol açabilir.  
+> NTLM güvenliğin devre dışı bırakılması önerilmez ve bir güvenlik tehdidi yol açabilir.  
   
  Özel hizmet bağlaması oluşturursanız, yine de NTLM kimlik doğrulaması tarafından korunur.  
   
@@ -74,7 +74,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INC
    Bir WCF hizmet başvurusu ile çalışırken, NTLM güvenliğini devre dışı bırakmak için aşağıdaki adımları izleyebilirsiniz.  
   
 > [!IMPORTANT]
->  NTLM güvenliğin devre dışı bırakılması önerilmez ve bir güvenlik tehdidi yol açabilir.  
+> NTLM güvenliğin devre dışı bırakılması önerilmez ve bir güvenlik tehdidi yol açabilir.  
   
 #### <a name="to-turn-off-ntlm-security"></a>NTLM güvenliğini devre dışı kapatmak için  
   

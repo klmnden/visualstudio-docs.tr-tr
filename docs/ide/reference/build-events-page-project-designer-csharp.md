@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790908"
 ---
 # <a name="build-events-page-project-designer-c"></a>Derleme Olayları Sayfası, Proje Tasarımcısı (C#)
 Kullanım **Build Events** sayfasının **Proje Tasarımcısı** yapı yapılandırma yönergeleri belirtmek için. Altında herhangi bir derleme sonrası olayı çalıştığı koşulları belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Derleme olayları belirtme (C#)](../../ide/how-to-specify-build-events-csharp.md)ve [nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).

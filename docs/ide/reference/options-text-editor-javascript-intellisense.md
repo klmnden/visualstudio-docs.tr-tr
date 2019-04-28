@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778585"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfası **Araçları** > **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**  >  **JavaScript** > **IntelliSense.**

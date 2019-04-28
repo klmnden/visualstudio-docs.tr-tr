@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425344"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 |Geçerli|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  İçinde `preserveChanges = true` senaryosu, varsa <xref:System.Data.DataSet.RejectChanges%2A> hedef dataset kaydı yöntemi çağrılır, ardından özgün verilerin geri döner *kaynak* veri kümesi. Bu, hedef veri kümesi ile özgün veri kaynağını güncelleştirmek çalışırsanız, güncelleştirilecek özgün satır bulmak mümkün olmayabilir, anlamına gelir. Güncelleştirilmiş kayıtları veri kaynağından başka bir dataset doldurma ve ardından bir tutarlılık ihlali önlemek için birleştirme işlemi, bir eşzamanlılık ihlali engelleyebilirsiniz. (Veri kümesi doldurulmuş sonra başka bir kullanıcı bir veri kaynağındaki kaydı değiştirir. eşzamanlılık ihlali meydana gelir.)  
+> İçinde `preserveChanges = true` senaryosu, varsa <xref:System.Data.DataSet.RejectChanges%2A> hedef dataset kaydı yöntemi çağrılır, ardından özgün verilerin geri döner *kaynak* veri kümesi. Bu, hedef veri kümesi ile özgün veri kaynağını güncelleştirmek çalışırsanız, güncelleştirilecek özgün satır bulmak mümkün olmayabilir, anlamına gelir. Güncelleştirilmiş kayıtları veri kaynağından başka bir dataset doldurma ve ardından bir tutarlılık ihlali önlemek için birleştirme işlemi, bir eşzamanlılık ihlali engelleyebilirsiniz. (Veri kümesi doldurulmuş sonra başka bir kullanıcı bir veri kaynağındaki kaydı değiştirir. eşzamanlılık ihlali meydana gelir.)  
   
 ## <a name="update-constraints"></a>Kısıtlamaları güncelleştir  
  Mevcut bir veri satırı için değişiklik yapmak için ekleyin veya tek tek sütunlardaki verileri güncelleştirin. Veri kümesi (örneğin, yabancı anahtarlar veya NULL olmayan kısıtlamaları) kısıtlamaları içeriyorsa, bu güncelleştirme gibi kayıt geçici olarak bir hata durumunda olabilir mümkündür. Diğer bir deyişle, bir sütunu güncelleştirme işlemini tamamladıktan sonra ancak bir sonrakine geçmeden önce bir hata durumunda olabilir.  
@@ -110,7 +110,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   Güncelleştirme tamamlandıktan sonra kısıtlama denetimi, da güncelleştirme olaylarını yeniden etkinleştirir ve bunları başlatır, yeniden etkinleştirebilirsiniz.  
   
 > [!NOTE]
->  Windows Formları datagrid içinde yerleşik veri bağlama mimarisi odağı bir satır dışında taşır ve açıkça çağırmanız gerekmez kadar denetleme kısıtlaması askıya alır. <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, veya <xref:System.Data.DataRow.CancelEdit%2A> yöntemleri.  
+> Windows Formları datagrid içinde yerleşik veri bağlama mimarisi odağı bir satır dışında taşır ve açıkça çağırmanız gerekmez kadar denetleme kısıtlaması askıya alır. <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, veya <xref:System.Data.DataRow.CancelEdit%2A> yöntemleri.  
   
  Kısıtlamaları olan otomatik olarak devre dışı <xref:System.Data.DataSet.Merge%2A> yöntemi, bir veri kümesi üzerinde çağrılır. Birleştirme işlemi tamamlandığında kısıtlamalardan etkinleştirilemez, bir veri kümesini ise bir <xref:System.Data.ConstraintException> oluşturulur. Bu durumda <xref:System.Data.DataSet.EnforceConstraints%2A> özelliği `false,` ve tüm sabiti ihlallerini sıfırlamadan önce çözümlenmelidir <xref:System.Data.DataSet.EnforceConstraints%2A> özelliğini `true`.  
   
@@ -182,12 +182,12 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 - Sonra veri kümesine yükler. Bir veri kümesi, yük TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi sonra bağdaştırıcı otomatik olarak tamamlar değişiklikleri sizin için. Bir veri kümesi içine başka bir veri kümesini birleştirerek yüklerseniz, ancak, daha sonra değişiklikleri el ile kaydetmek gerekir.  
   
   > [!NOTE]
-  >  Bağdaştırıcı çağırdığınızda otomatik olarak değişiklikleri yürütmeyi öğesinden engelleyebilirsiniz `Fill` ayarlayarak yöntemi `AcceptChangesDuringFill` bağdaştırıcısının özellik `false`. Bu ayarlanırsa `false`, ardından <xref:System.Data.DataRow.RowState%2A> doldurma sırasında eklenen her bir satır kümesine <xref:System.Data.DataRowState>.  
+  > Bağdaştırıcı çağırdığınızda otomatik olarak değişiklikleri yürütmeyi öğesinden engelleyebilirsiniz `Fill` ayarlayarak yöntemi `AcceptChangesDuringFill` bağdaştırıcısının özellik `false`. Bu ayarlanırsa `false`, ardından <xref:System.Data.DataRow.RowState%2A> doldurma sırasında eklenen her bir satır kümesine <xref:System.Data.DataRowState>.  
   
 - XML Web hizmeti gibi başka bir işlem için veri kümesi değişiklikleri gönderdikten sonra.  
   
   > [!CAUTION]
-  >  Bu şekilde ardından değişikliği uygulamayı herhangi bir değişiklik bilgi siler. Değil değişiklikleri kadar çalıştırdıktan sonra uygulamanızı kümesinde hangi değişiklikler yapılmıştır bilmek gerektiren işlemler gerçekleştirme son.  
+  > Bu şekilde ardından değişikliği uygulamayı herhangi bir değişiklik bilgi siler. Değil değişiklikleri kadar çalıştırdıktan sonra uygulamanızı kümesinde hangi değişiklikler yapılmıştır bilmek gerektiren işlemler gerçekleştirme son.  
   
   Bu yöntem, aşağıdakileri yerine getirir:  
   
@@ -208,7 +208,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Değişiklik kümesinin tüm tablolardaki tüm satırları üzerinde uygulanır.|  
   
 > [!NOTE]
->  Bir veri kümesi, yük TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi, açıkça değişiklikleri kabul etmek zorunda değilsiniz. Varsayılan olarak, `Fill` yöntem çağrılarını `AcceptChanges` veri tablosunu doldurmak bittikten sonra yöntemi.  
+> Bir veri kümesi, yük TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi, açıkça değişiklikleri kabul etmek zorunda değilsiniz. Varsayılan olarak, `Fill` yöntem çağrılarını `AcceptChanges` veri tablosunu doldurmak bittikten sonra yöntemi.  
   
  İlgili bir yöntem `RejectChanges`, değişikliklerin etkisini kopyalayarak alır <xref:System.Data.DataRowVersion> sürümüne geri <xref:System.Data.DataRowVersion> kayıtları sürümü. Ayrıca ayarlar <xref:System.Data.DataRow.RowState%2A> , her kayıt geri <xref:System.Data.DataRowState>.  
   
@@ -224,7 +224,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 - Veri kaynağına veri gönderen tarafından arka uç, verileri — Örneğin, veritabanı — ve kabul etme veya reddetme veri olanak tanır. Verileri doğrulama ve hata bilgilerini sağlayarak olanakları karmaşık bir veritabanı ile çalışıyorsanız, verilerin nereden geldiğini ne olursa olsun doğrulayabilirsiniz çünkü bu pratik bir yaklaşım olabilir. Ancak, bu yaklaşım uygulamaya özgü doğrulama gereksinimlerini karşılamaya değil. Ayrıca, verileri doğrulama veri kaynağına sahip çok sayıda gidiş dönüş içinde nasıl, uygulamanızın arka ucu tarafından oluşturulan doğrulama hatalarını çözümlenmesi kolaylaştırır bağlı olarak veri kaynağına neden olabilir.  
   
   > [!IMPORTANT]
-  >  Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Bir veri kümesinde değişiklik yapıldıktan sonra değişiklikleri veri kaynağına aktarabilir. En yaygın olarak, çağrı yaparak bunu `Update` yöntemi bir TableAdapter (veya veri bağdaştırıcısı). Her bir veri tablosu kayıt yöntemi döner belirler ne tür bir güncelleştirme gerekli değildir (güncelleştirme, ekleme veya silme), varsa, ve ardından uygun komutu çalıştırır.  
   
@@ -256,7 +256,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
 - Değiştirilen sütun yeni değerleri ayarlamak için SET yan tümcesi iletilen SQL deyimi içerir.  
   
     > [!NOTE]
-    >  TableAdapter bağdaştırıcısının `UpdateCommand` özelliği bir saklı yordam adı için ayarlandı, bağdaştırıcı SQL deyimi oluşturmak değil. Bunun yerine uygun parametrelerle geçirilen saklı yordamını çağırır.  
+    > TableAdapter bağdaştırıcısının `UpdateCommand` özelliği bir saklı yordam adı için ayarlandı, bağdaştırıcı SQL deyimi oluşturmak değil. Bunun yerine uygun parametrelerle geçirilen saklı yordamını çağırır.  
   
 ## <a name="passing-parameters"></a>Parametreleri geçirme  
  Genellikle veritabanında güncelleştirilebilir gidip kayıtlar için değerleri geçirmek için parametreleri kullanın.  TableAdapter bağdaştırıcısının `Update` yöntemi bir UPDATE deyimi çalıştırır, parametre değerlerini doldurmanız gerekir. Bu değerleri alır `Parameters` uygun veri komutu için koleksiyon — bu durumda, `UpdateCommand` TableAdapter nesne.  
@@ -268,7 +268,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
  UPDATE deyiminde, her iki yeni değerler (Bu kaydı için yazılır) eski değerleri olarak (kayıt veritabanında konumlandırılabilir böylece) belirtmeniz gerekir. Bu nedenle her bir değer için iki parametre vardır: biri SET yan tümcesi, farklı bir WHERE yan tümcesi için. Her iki parametre güncelleştirilmekte kayıttan veri okuma, ancak bunlar farklı sürümlerini parametresine ait bağlı sütun değeri elde [SqlParameter.SourceVersion özelliği](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Geçerli sürüm parametresi SET yan tümcesi için alır ve özgün sürümle WHERE yan tümcesi için parametre alır.  
   
 > [!NOTE]
->  De değerlerini ayarlayabilirsiniz `Parameters` koleksiyon kendiniz bir olay işleyicisi veri bağdaştırıcının için genellikle yaptığınız kodlarda <xref:System.Data.DataTable.RowChanging> olay.  
+> De değerlerini ayarlayabilirsiniz `Parameters` koleksiyon kendiniz bir olay işleyicisi veri bağdaştırıcının için genellikle yaptığınız kodlarda <xref:System.Data.DataTable.RowChanging> olay.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)   

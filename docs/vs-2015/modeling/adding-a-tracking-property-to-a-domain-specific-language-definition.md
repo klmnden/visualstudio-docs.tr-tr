@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432385"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Etki Alanına Özgü Dil Tanımıma İzleme Özelliği Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
  Uygulama `GetCustomProperties` yöntemi tür tanımlayıcısı için `ExampleModel` etki alanı sınıfı.  
   
 > [!NOTE]
->  DSL araçları için özel tür tanımlayıcısının oluşturan kodu `ExampleModel` çağrıları `GetCustomProperties`; ancak, DSL araçları yöntemini uygulayan kod oluşturmaz.  
+> DSL araçları için özel tür tanımlayıcısının oluşturan kodu `ExampleModel` çağrıları `GetCustomProperties`; ancak, DSL araçları yöntemini uygulayan kod oluşturmaz.  
   
  Bu yöntem tanımlama oluşturur izleme özelliği izleme Namespace özelliği tanımlayıcısı. Ayrıca öznitelikler için izleme özelliği sağlayan sağlayan **özellikleri** özelliği doğru bir şekilde görüntülemek için penceresi.  
   
@@ -344,7 +344,7 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
  Uygulama `GetCustomElementsValue` yöntemi `ExampleModel` etki alanı sınıfı.  
   
 > [!NOTE]
->  DSL araçları için oluşturan kodu `ExampleModel` çağrıları `GetCustomElementsValue`; ancak, DSL araçları yöntemini uygulayan kod oluşturmaz.  
+> DSL araçları için oluşturan kodu `ExampleModel` çağrıları `GetCustomElementsValue`; ancak, DSL araçları yöntemini uygulayan kod oluşturmaz.  
   
  Tanımlama `GetCustomElementsValue` yöntemi hesaplanan CustomElements özelliği için mantığı sağlar `ExampleModel`. Bu yöntem sayar `ExampleElement` kullanıcı güncelleştirilmiş bir değeri yok ve bu sayı bütünün modelinde toplam öğe olarak temsil eden bir dize döndürür özelliği izleme bir Namespace sahip alan sınıfları.  
   
@@ -425,7 +425,7 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
  Ayrıca, depolama için ve almak ve Namespace özel depolama özelliğini ayarlamak için yöntemleri ekleyin `ExampleElement` etki alanı sınıfı.  
   
 > [!NOTE]
->  DSL araçları için oluşturan kodu `ExampleModel` get çağrıları ve ayarlamanıza yöntemleri; ancak, DSL araçları yöntemlerini uygulayan kod oluşturmaz.  
+> DSL araçları için oluşturan kodu `ExampleModel` get çağrıları ve ayarlamanıza yöntemleri; ancak, DSL araçları yöntemlerini uygulayan kod oluşturmaz.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Özel tür tanımlayıcısının yöntemi eklemek için  
   
@@ -591,7 +591,7 @@ Bu izlenecek yol, bir etki alanı modeline izleme özelliği ekleme işlemi gös
  XML serileştirme için özel yükleme sonrası davranışı desteklemek için kod ekleyin.  
   
 > [!NOTE]
->  DSL araçları çağrıları oluşturmak, kod `OnPostLoadModel` ve `OnPostLoadModelAndDiagram` yöntemleri; ancak, DSL araçları bu yöntemleri uygulayan kod oluşturmaz.  
+> DSL araçları çağrıları oluşturmak, kod `OnPostLoadModel` ve `OnPostLoadModelAndDiagram` yöntemleri; ancak, DSL araçları bu yöntemleri uygulayan kod oluşturmaz.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Özel yükleme sonrası davranışı desteklemek üzere kod eklemek için  
   

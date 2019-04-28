@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 04f85cf678052427ca5395c8b33c4786c2316de0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443625"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets dosyaları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birkaç içeren *.targets* öğeleri, özellikleri, hedefleri ve görevleri sık karşılaşılan senaryolara yönelik içeren dosyaları. Bu dosyaları en otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyaları, Bakım ve okunabilirliği kolaylaştırmak.
@@ -31,7 +31,7 @@ ms.locfileid: "56623755"
  `$(MSBuildToolsPath)` Değeri bu ortak yolu belirtir *.targets* dosyaları. Varsa `ToolsVersion` 4.0, dosyaları şu konumda: *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  Kendi hedefleri oluşturma hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md). Nasıl kullanılacağı hakkında daha fazla bilgi için `Import` öğesinin başka bir proje dosyasına bir proje dosyası eklemek için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md) ve [nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
+> Kendi hedefleri oluşturma hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md). Nasıl kullanılacağı hakkında daha fazla bilgi için `Import` öğesinin başka bir proje dosyasına bir proje dosyası eklemek için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md) ve [nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
 
 ## <a name="common-targets-files"></a>Ortak .targets dosyaları
 

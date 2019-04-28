@@ -12,12 +12,12 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b2b5ca848da4ca680be819e41a8053b21a7d0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b2fd8f3d7e4f3637957ef11c4acb20ba51261d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442670"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Nasıl yapılır: Eski Dil Hizmetinde Genişletilmiş Ana Hat Oluşturma Desteği Sağlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,6 +53,6 @@ Ana hat oluşturma desteği destekleyen ötesinde dil genişletmek için iki se�
 3. Metin oturum zaten var ve ardından, biri ve var olan bir işaretçi oluşturmak ihtiyacınız yoktur, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> nesne döndürülür. Bu işaretçinin, listeleme ve ana hat bölgeler oluşturmak için kullanın. Aksi takdirde, çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> arabellek için gizli metin oturum oluşturmak için. Bir işaretçi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> nesne döndürülür.  
   
     > [!NOTE]
-    >  Çağırdığınızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, gizli metin istemci belirtebilirsiniz (diğer bir deyişle, bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> nesne). Bu istemci gizli metin olduğunda sizi bilgilendirir veya ana bölge genişletilmiş veya daraltılmış kullanıcı tarafından.  
+    > Çağırdığınızda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, gizli metin istemci belirtebilirsiniz (diğer bir deyişle, bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> nesne). Bu istemci gizli metin olduğunda sizi bilgilendirir veya ana bölge genişletilmiş veya daraltılmış kullanıcı tarafından.  
   
 4. Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> yapısı) parametre: Bir değer belirleyebilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> içinde `iType` üyesi <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> yapısı gizli bölge yerine bir anahat bölgesi oluşturmakta olduğunuz belirtmek için. Bölge istemci tarafından denetlenen veya Düzenleyicisi tarafından denetlenen içinde olup olmadığını belirtin `dwBehavior` üyesi <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> yapısı. Akıllı ana hat oluşturma uygulamanız anahat bölgeleri Düzenleyicisi ve istemci denetlenen bir karışımını içerebilir. Anahat bölgeniz, "... gibi", buna daraltıldığında görüntülenen başlık metnini belirtin `pszBanner` üyesi <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> yapısı. Editör'ün varsayılan başlık metni gizli bölge için "...".

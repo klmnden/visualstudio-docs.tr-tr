@@ -1,6 +1,6 @@
 ---
 title: Projelerin bir alt kümesini yükleme
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,16 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
-ms.translationtype: MT
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439823"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio'da filtrelenmiş çözümleri
 
-**Visual Studio 2019'te yeni eklendi**
-
-Genellikle büyük geliştirme takımları ile çok sayıda proje tek büyük bir çözümde kullanarak işbirliği yapın. Ancak, bireysel geliştiriciler genellikle bu projeler küçük bir kısmı üzerinde çalışır. Büyük çözümlerde açılırken performansını geliştirmek için Visual Studio 2019 tanıtır *çözüm filtreleme*. Çözüm filtreleme yalnızca yüklenen seçmeli projeleriyle bir çözüm açın sağlar. Bir alt kümesini bir çözümde proje yüklemeyi çözüm yükü, yapı ve test çalışma zamanı azaltır ve etkinleştirir gözden geçirme daha odaklı.
+Genellikle büyük geliştirme takımları ile çok sayıda proje tek büyük bir çözümde kullanarak işbirliği yapın. Ancak, bireysel geliştiriciler genellikle bu projeler küçük bir kısmı üzerinde çalışır. Büyük çözümlerde açılırken performansını geliştirmek için Visual Studio 2019 sunulan *çözüm filtreleme*. Çözüm filtreleme yalnızca yüklenen seçmeli projeleriyle bir çözüm açın sağlar. Bir alt kümesini bir çözümde proje yüklemeyi çözüm yükü, yapı ve test çalışma zamanı azaltır ve etkinleştirir gözden geçirme daha odaklı.
 
 Aşağıdaki özellikler mevcuttur:
 
@@ -33,7 +31,11 @@ Aşağıdaki özellikler mevcuttur:
 
 ## <a name="open-a-filtered-solution"></a>Filtrelenmiş bir çözüm açın
 
-Yalnızca bazı yüklenen projeleri ile bir çözümü açmak için şu adımları izleyin:
+Doğrudan projeleri yüklemeden bir çözüm açabilmek **Proje Aç** iletişim aracılığıyla veya [komut satırı](#command-line).
+
+### <a name="open-project-dialog"></a>Açık proje iletişim kutusu
+
+Bir çözümü kullanarak tüm projeleri yüklemeden açmak için **Proje Aç** iletişim:
 
 1. Seçin **dosya** > **açık** > **proje/çözüm** menü çubuğundan.
 
@@ -51,15 +53,31 @@ Yalnızca bazı yüklenen projeleri ile bir çözümü açmak için şu adımlar
 
    Visual Studio çözümünü yerel olarak bir sonraki açışınızda hangi projelerin yüklenen hatırlanır.
 
+### <a name="command-line"></a>Komut satırı
+
+(Yeni Visual Studio 2019 sürüm 16.1.)
+
+Komut satırından yüklemeden, tüm projeleri bir çözümü açmak için kullanmak [ `/donotloadprojects` ](../ide/reference/donotloadprojects-devenv-exe.md) aşağıdaki örnekte gösterildiği gibi geçin:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Yüklenmemiş proje görünürlüğünü Değiştir
 
 Çözümdeki tüm projeleri veya yalnızca aşağıdaki seçeneklerden birini kullanarak yüklü olanları görmek seçebileceğiniz **Çözüm Gezgini**:
 
 - Çözümü sağ tıklatın **yüklenmemiş projeleri göster** veya **yüklenmemiş projeleri Gizle**.
 
-- Seçin **tüm dosyaları göster** yüklenmemiş projeleri görünürlüğünü açıp kapatmak için düğme.
+- Çözümü etkinleştirmek için düğümü seçin **tüm dosyaları göster** düğmesini; ardından yüklenmemiş projeleri görünürlüğünü açıp kapatmak için düğmeyi tıklayın.
 
    ![Visual Studio Çözüm Gezgini'nde tüm dosyaları düğmesini göster](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Proje bağımlılıkları yükleyin
+
+Yalnızca seçili projeleri burada yüklü olan bir çözümde bir proje proje bağımlılıklarınızı yüklenen tüm olmayabilir. Kullanım **yük proje bağımlılıkları** menü seçeneğini bir proje bağımlı tüm projeleri aynı zamanda yüklendiğinden emin olun. Bir veya daha fazla yüklenmiş projelerinde sağ **Çözüm Gezgini** ve **yük proje bağımlılıkları**.
+
+![Visual Studio 2019 yük proje bağımlılıkları](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>Çözüm filtresi dosyaları
 

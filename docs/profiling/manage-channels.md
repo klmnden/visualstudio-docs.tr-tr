@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435625"
 ---
 # <a name="manage-channels"></a>Kanalları Yönet
 İçinde **iş parçacıkları görünümü** belirli desenleri inceleyebilirsiniz için eşzamanlılık görselleştiricisi içinde kanalları süreciniz için düzenleyebilirsiniz. Kanalları sıralamak, yukarı ve aşağı taşıyın ve gizlemek veya göstermek.
@@ -33,7 +33,7 @@ ms.locfileid: "56646505"
 |Eşitleme|İş parçacığı eşitleme harcanan sürenin yüzdesi göre sıralar.|
 |G/Ç|İş parçacıkları (veri okuma ve yazma) I/O için harcanan sürenin yüzdesi göre sıralar.|
 |Uyku|İş parçacıkları, uyku modunda harcanan sürenin yüzdesi olarak sıralar.|
-|Disk belleği|İş parçacıkları disk belleği harcanan sürenin yüzdesi göre sıralar.|
+|Disk Belleği|İş parçacıkları disk belleği harcanan sürenin yüzdesi göre sıralar.|
 |Önalım|İş parçacıkları önalım harcanan sürenin yüzdesi olarak sıralar.|
 |UI işleme|İş parçacıkları, kullanıcı arabirimi işlenmesinde harcanan sürenin yüzdesi olarak sıralar.|
 
@@ -47,7 +47,7 @@ ms.locfileid: "56646505"
  Kanalları gizlemek istediğinizde bu denetimi seçin. Bir iş parçacığını ömrü boyunca yönetilen işleminizi yüzde 100 eşitleme ise, diğer iş parçacıklarını analiz ederken gibi gizlemek.
 
 > [!NOTE]
->  Bir iş parçacığını gizleme Ayrıca, etkin açıklama ve profili raporlarda gösterilen hesaplama zamanı kaldırır.
+> Bir iş parçacığını gizleme Ayrıca, etkin açıklama ve profili raporlarda gösterilen hesaplama zamanı kaldırır.
 
 ## <a name="show-all-channels"></a>Tüm kanalları Göster
  Bu denetim, bir veya daha fazla kanal gizlendiğinde etkin değil. Seçerseniz, tüm gizli öğeleri gösterilir ve saat hesaplamaları için döndürülür.

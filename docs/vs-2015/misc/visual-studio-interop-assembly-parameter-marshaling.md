@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436521"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama
 Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -46,7 +46,7 @@ Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod 
  Bazı durumlarda, bir COM arabirimi oluşturan bir `IUnknown` nesne ve COM arabirimi sonra geçirir, türü olarak `void **`. Bu arabirimler özellikle önemlidir çünkü değişken olarak tanımlanmışsa [out] IDL ile sonra `IUnknown` nesne başvuru sayılan ile `AddRef` yöntemi. Bir bellek sızıntısı, nesneyi doğru işlenmiyor oluşur.  
   
 > [!NOTE]
->  Bir `IUnknown` COM arabirimi tarafından oluşturulan ve bir [out] değişkeninde döndürülen nesne açıkça serbest, bellek sızıntısı neden olur.  
+> Bir `IUnknown` COM arabirimi tarafından oluşturulan ve bir [out] değişkeninde döndürülen nesne açıkça serbest, bellek sızıntısı neden olur.  
   
  Bu nesneleri işlemek, yönetilen yöntemleri kabul <xref:System.IntPtr> işaretçisi olarak bir `IUnknown` nesne ve çağrı <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> nesne elde etmek için yöntemi. Çağıran, hangi tür uygun olan dönüş değeri ardından atamalısınız. Nesne artık gerekmediğinde çağrı <xref:System.Runtime.InteropServices.Marshal.Release%2A> bunu serbest bırakmak için.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  Geçirmek için aşağıdaki yöntemlerden bilinen `IUnknown` nesne işaretçileri türü <xref:System.IntPtr>. Bunları, bu bölümde açıklanan şekilde işleyin.  
+> Geçirmek için aşağıdaki yöntemlerden bilinen `IUnknown` nesne işaretçileri türü <xref:System.IntPtr>. Bunları, bu bölümde açıklanan şekilde işleyin.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

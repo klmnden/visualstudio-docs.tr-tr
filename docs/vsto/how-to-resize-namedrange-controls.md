@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422482"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Nasıl yapılır: NamedRange denetimlerinin boyutunu değiştirme
   Boyutu ayarlayabileceğiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel belgeye eklediğiniz zaman denetimi; ancak daha sonraki bir zamanda yeniden boyutlandırmak isteyebilirsiniz.
@@ -59,7 +59,7 @@ ms.locfileid: "60099617"
  Kullanarak, program aracılığıyla bir adlandırılmış aralık boyutlandırabilirsiniz <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> özelliği.
 
 > [!NOTE]
->  İçinde **özellikleri** penceresinde <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> özelliği salt okunur olarak işaretlenmiş.
+> İçinde **özellikleri** penceresinde <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> özelliği salt okunur olarak işaretlenmiş.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Adlandırılmış aralık programlı olarak yeniden boyutlandırmak için
 

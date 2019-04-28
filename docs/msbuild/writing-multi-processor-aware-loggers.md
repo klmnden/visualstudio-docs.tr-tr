@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecae68c3c5d9569f2c63d484c53696bbec42e55
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443146"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Birden çok işlemciye duyarlı günlükçüler yazma
 Yeteneğini [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemci yararlanmak için süre oluşturmanın proje azaltabilir, ancak ayrıca olay günlüğü oluşturmak için karmaşıklık ekler. Bir tek işlemcili ortamda olaylar, iletiler, uyarıları ve hataları sırasında Günlükçü sıralı tahmin edilebilir bir şekilde ulaşır. Ancak, bir çok işlemcili ortamda farklı kaynaklardan gelen olaylar aynı anda veya sıra dışı ulaşır. Bunun için sağlamak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birden çok işlemciye duyarlı bir Günlükçü ve yeni bir günlük modeli sağlar ve özel "iletme günlükçüleri." oluşturmanıza olanak sağlar
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  Bir yıldız işareti (*) iki Günlükçü adlarında ayırmalısınız `-dl` geçin.
+> Bir yıldız işareti (*) iki Günlükçü adlarında ayırmalısınız `-dl` geçin.
 
  ConfigurableForwardingLogger kullanmaktır başka bir Günlükçü kullanma gibi (açıklandığı şekilde [derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md)) tipik yerine ConfigurableForwardingLogger Günlükçü ekleme dışında [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Günlükçü ve Merkezi düğüme geçmesine ConfigurableForwardingLogger istediğiniz olayları parametre olarak belirtin.
 

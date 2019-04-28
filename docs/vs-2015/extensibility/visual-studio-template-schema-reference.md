@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422129"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio Şablon Şeması Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Bu bölüm; proje şablonları, öğe şablonları ve Başlangıç Paketleri iç
   
 |Öğe|Alt Öğeler|Öznitelikler|  
 |-------------|--------------------|----------------|  
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Hiçbiri|Hiçbiri|  
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|None|None|  
 |[Assembly (şablon)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Assembly (Sihirbaz uzantısı)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -73,7 +73,7 @@ Bu bölüm; proje şablonları, öğe şablonları ve Başlangıç Paketleri iç
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|  
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|  
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|RequiredPlatformVersion|--|  
-|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Proje<br /><br /> Referanslar<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
+|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|ProjectCollection<br /><br /> Project<br /><br /> Referanslar<br /><br /> ProjectItem<br /><br /> CustomParameters|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Ad<br /><br /> Açıklama<br /><br /> Simge<br /><br /> PreviewImage<br /><br /> ProjectType<br /><br /> ProjectSubType<br /><br /> TemplateID<br /><br /> TemplateGroupID<br /><br /> SortOrder<br /><br /> CreateNewFolder<br /><br /> DefaultName<br /><br /> ProvideDefaultName<br /><br /> PromptForSaveOnCreation<br /><br /> EnableLocationBrowseButton<br /><br /> EnableEditOfLocationField<br /><br /> Hidden<br /><br /> DisplayInParentCategories<br /><br /> LocationFieldMRUPrefix<br /><br /> NumberOfParentCategoriesToRollUp<br /><br /> CreateInPlace<br /><br /> BuildOnLoad<br /><br /> BuildProjectOnload<br /><br /> ShowByDefault<br /><br /> LocationField<br /><br /> SupportsMasterPage<br /><br /> SupportsCodeSeparation<br /><br /> SupportsLanguageDropDown<br /><br /> RequiredFrameworkVersion<br /><br /> FrameworkVersion<br /><br /> MaxFrameworkVersion<br /><br /> CustomDataSignature<br /><br /> TargetPlatformName|--|  
 |[Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md)|--|--|  
 |[Templateıd](../extensibility/templateid-element-visual-studio-templates.md)|--|--|  
@@ -83,4 +83,4 @@ Bu bölüm; proje şablonları, öğe şablonları ve Başlangıç Paketleri iç
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: Başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)
+ [Nasıl yapılır: Başlangıç Paketleri Oluşturma](../ide/how-to-create-starter-kits.md)

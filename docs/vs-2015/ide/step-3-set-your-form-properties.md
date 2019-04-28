@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ba03e1a5dea0ee03b1799a3afe038c867fa7d64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442588"
 ---
 # <a name="step-3-set-your-form-properties"></a>3. Adım: Form Özelliklerinizi Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
 2. Form içinde herhangi bir yeri seçin **Form1** seçin. Bakmak **özellikleri** şimdi form özelliklerini gösteren penceresinde. Formlar çeşitli özelliklere sahiptir. Örneğin, ön plan ve arka plan rengi, görünen başlık metnini ayarlayabileceğiniz formun üst kısmında, form ve diğer özellikleri boyutunu.  
   
    > [!NOTE]
-   >  Varsa **özellikleri** penceresi görünmüyorsa, kare seçerek programınızı durdurmak **hata ayıklamayı Durdur** düğme araç çubuğundan veya pencereyi kapatmanız yeterlidir. Program durdurulursa ve hala görmüyorsanız **özellikleri** menü çubuğunda, pencere **görünümü**, **Özellikler penceresi**.  
+   > Varsa **özellikleri** penceresi görünmüyorsa, kare seçerek programınızı durdurmak **hata ayıklamayı Durdur** düğme araç çubuğundan veya pencereyi kapatmanız yeterlidir. Program durdurulursa ve hala görmüyorsanız **özellikleri** menü çubuğunda, pencere **görünümü**, **Özellikler penceresi**.  
   
 3. Form seçildikten sonra bulma **metin** özelliğinde **özellikleri** penceresi. Listenin nasıl sıralandığına bağlı olarak aşağı kaydırmanız gerekebilir. Seçin **metin**, türü **resim görüntüleyici**ve ardından ENTER TUŞUNA basın.  Formunuzda şimdi metin olmalıdır **resim görüntüleyici** , başlık çubuğunda ve **özellikleri** penceresi aşağıdaki resme benzer görünmelidir.  
   
@@ -38,7 +38,7 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
    Özellik penceresi  
   
    > [!NOTE]
-   >  Özellikler, kategorilere ayrılmış veya alfabetik görünüm ile sıralanabilir. Düğmeleri kullanarak bu iki görünüm arasında geçiş yapabilirsiniz **özellikleri** penceresi. Bu öğreticide, özellikleri alfabetik görünüm aracılığıyla bulmak daha kolay olur.  
+   > Özellikler, kategorilere ayrılmış veya alfabetik görünüm ile sıralanabilir. Düğmeleri kullanarak bu iki görünüm arasında geçiş yapabilirsiniz **özellikleri** penceresi. Bu öğreticide, özellikleri alfabetik görünüm aracılığıyla bulmak daha kolay olur.  
   
 4. Windows Forms Tasarımcısı'na geri dönün. Formun alt sağ altındaki küçük beyaz kare olan ve aşağıdaki gibi görünür, formun sağ alt sürükleme işleyicisini seçin.  
   

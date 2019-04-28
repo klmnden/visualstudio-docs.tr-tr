@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407557"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Yöntemi, bir zaman damgası değeri, sayısal işareti ve bir açıklama dizesi olarak ekler. *Vsp* dosya. Zaman damgası değeri, dış olayları eşitlemek için kullanılabilir. CommentMarkAtProfile işlevi içeren bir iş parçacığı için profil oluşturma işareti ve yorum eklenecek için açık olmalıdır.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  İşaretler ve açıklama işareti komutu veya API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı profil durumu olmalıdır. Profil işaretleri kapsam içinde geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç veya bitiş .vsp dosyasının içinde herhangi bir iş parçacığı bir veri parçasının işaretlemek için kullanılabilir.
 
 > [!IMPORTANT]
->  CommentMarkAtProfile yöntemleri, yalnızca izleme ile kullanılmalıdır.
+> CommentMarkAtProfile yöntemleri, yalnızca izleme ile kullanılmalıdır.
 
 ## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri
  *Microsoft.VisualStudio.Profiler.dll*

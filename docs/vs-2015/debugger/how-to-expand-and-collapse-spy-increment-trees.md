@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f028370c5790b6e22339f39eacaac5e2b552e213
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438276"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Nasıl yapılır: Spy ++ ağaçlarını daraltma ve genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Genişletin ve iki yöntemi kullanarak Windows, işlemleri ve iş parçacığı 
 |**Daralt**|Seçili öğenin tam olarak daraltır.|  
   
 > [!TIP]
->  Bir işlem genişletirseniz, işleme sahip tüm iş parçacıkları bakın. Bir iş parçacığı genişletirseniz, sahip olduğu tüm windows listesini görürsünüz.  
+> Bir işlem genişletirseniz, işleme sahip tüm iş parçacıkları bakın. Bir iş parçacığı genişletirseniz, sahip olduğu tüm windows listesini görürsünüz.  
   
 ### <a name="to-expand-or-collapse-spy-trees"></a>Genişlet veya daralt Spy ++ ağaçlarını için  
   
-1.  Windows, işlemleri veya iş parçacıkları görünümünde öğelerden birini seçin.  
+1. Windows, işlemleri veya iş parçacıkları görünümünde öğelerden birini seçin.  
   
-2.  Gelen **ağaç** menüsünde genişletme birini seçin veya komutları daraltın.  
+2. Gelen **ağaç** menüsünde genişletme birini seçin veya komutları daraltın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Spy ++ kullanma](../debugger/using-spy-increment.md)   

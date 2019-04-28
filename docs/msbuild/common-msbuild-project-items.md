@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569893"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.

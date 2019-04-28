@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419607"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "57868178"
     **Yeni Proje** iletişim kutusu görünür.
 
    > [!NOTE]
-   >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).
+   > Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).
 
 2. Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868178"
 4. Proje şablonları listesinde, VSTO eklentisi proje şablonu seçin. Kullanılabilir VSTO eklenti projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.
+   > Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.
 
 5. İçinde **adı** proje için bir ad yazın. Varsayılan olarak, proje adı çözüm adı olarak da kullanılır.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868178"
    - Yüzde işareti (%)
 
    > [!NOTE]
-   >  Varolan bir belgeyi kullanıyorsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca programında oluşturulan veya buna dönüştürülen belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, bir sözcükteki var olan bir belgeyi kullanıyorsanız, 2010 projesinde, yalnızca programında oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belgeyi kullanıyorsanız, bazı özellikler belgesinde devre dışı bırakılır. Bu özellikleri kullanan kod yazmayı denerseniz projenizde hatalarla karşılaşabilirsiniz. Bir belgeyi dönüştürmek için açılır [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ve Word 2010 üzerinde **dosya** sekmesini Şerit üzerinde **bilgisi** > **Dönüştür**.
+   > Varolan bir belgeyi kullanıyorsanız, bir [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] proje, yalnızca programında oluşturulan veya buna dönüştürülen belgeleri kullanın [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Benzer şekilde, bir sözcükteki var olan bir belgeyi kullanıyorsanız, 2010 projesinde, yalnızca programında oluşturulan veya Word 2010 dönüştürülen belgeleri kullanın. Word'ün önceki bir sürümde oluşturulmuş bir belgeyi kullanıyorsanız, bazı özellikler belgesinde devre dışı bırakılır. Bu özellikleri kullanan kod yazmayı denerseniz projenizde hatalarla karşılaşabilirsiniz. Bir belgeyi dönüştürmek için açılır [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ve Word 2010 üzerinde **dosya** sekmesini Şerit üzerinde **bilgisi** > **Dönüştür**.
 
 8. Seçin **son**.
 

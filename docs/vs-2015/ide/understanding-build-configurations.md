@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443257"
 ---
 # <a name="understanding-build-configurations"></a>Yapı Yapılandırmalarını Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077283"
 Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Bunu, menü çubuğundan açmak için seçin **derleme**, **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** içinde **Hızlı Başlat** kutusu. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.  
   
 > [!NOTE]
->  Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+> Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
  Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).  
   
@@ -49,9 +49,9 @@ ms.locfileid: "60077283"
  Her giriş **proje bağlamları** bir çözüm yapılandırması kutusunda çözümde bir proje temsil eder. Her bir birleşimi için **etkin çözüm yapılandırması** ve **etkin çözüm platformu**, her proje nasıl kullanıldığını ayarlayabilirsiniz. (Çözüm platformları hakkında daha fazla bilgi için bkz: [derleme platformlarını anlama](../ide/understanding-build-platforms.md).)  
   
 > [!NOTE]
->  Ne zaman yeni bir çözüm yapılandırması tanımlama ve seçme **yeni proje yapılandırmaları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni yapılandırma tüm projeleri için otomatik olarak atar. Benzer şekilde, zaman, yeni bir çözüm platformu tanımlama ve seçme **yeni proje platformları Oluştur** onay kutusunu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni platformu tüm projeleri için otomatik olarak atar. Ayrıca, yeni bir platformu hedefleyen bir projeye eklerseniz, Visual Studio, platform çözüm platformları listesine ekler ve tüm projeleri yeniden atar.  
+> Ne zaman yeni bir çözüm yapılandırması tanımlama ve seçme **yeni proje yapılandırmaları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni yapılandırma tüm projeleri için otomatik olarak atar. Benzer şekilde, zaman, yeni bir çözüm platformu tanımlama ve seçme **yeni proje platformları Oluştur** onay kutusunu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni platformu tüm projeleri için otomatik olarak atar. Ayrıca, yeni bir platformu hedefleyen bir projeye eklerseniz, Visual Studio, platform çözüm platformları listesine ekler ve tüm projeleri yeniden atar.  
 >   
->  Yine de her proje için ayarları değiştirebilirsiniz.  
+> Yine de her proje için ayarları değiştirebilirsiniz.  
   
  Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, bir proje üzerinde çalışıyorsanız ve belirten yapılandırma, bir mobil cihaz için oluşturulacak **araç kutusu** bir mobil cihaz projesinde kullanılan öğeleri görüntüler.  
   

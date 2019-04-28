@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435948"
 ---
 # <a name="how-to-implement-undo-management"></a>Nasıl yapılır: Uygulama geri alma yönetimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
    `OleUndoManager` Sınıfı, bir tek geri alma yığını örneği temsil eder. Bu nedenle, veri varlığı geri alma veya yineleme için izlenen her bir geri alma Yöneticisi nesnesi yok.  
   
 > [!NOTE]
->  Geri alma Yöneticisi nesnesi metin düzenleyici tarafından yaygın olarak kullanılır, ancak belirli hiçbir metin düzenleyicisi desteği olan bir genel bileşen var. Çok düzeyli geri alma veya yineleme desteklemek istiyorsanız, bunu yapmak için bu nesneyi kullanırsınız.  
+> Geri alma Yöneticisi nesnesi metin düzenleyici tarafından yaygın olarak kullanılır, ancak belirli hiçbir metin düzenleyicisi desteği olan bir genel bileşen var. Çok düzeyli geri alma veya yineleme desteklemek istiyorsanız, bunu yapmak için bu nesneyi kullanırsınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Nasıl yapılır: Geri alma yığını Temizle](../extensibility/how-to-clear-the-undo-stack.md)
+ [Nasıl yapılır: Geri Alma Yığınını Temizleme](../extensibility/how-to-clear-the-undo-stack.md)

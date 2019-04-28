@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443714"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: Ekleme ve ayırma işlemleri çalıştırmak için performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095749"
 Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha kolay hale getirmek için çalışan bir işlemden ayırmak için kullanılabilir. Uygulama yükleme süresi hakkında veri toplama kaçınmak istiyorsanız ya da sonraki bir işlemin performansını izlemek için belirli bir duruma ulaştığında bir işlem profili için bu yöntemi kullanabilirsiniz.  
   
 > [!NOTE]
->  Ekleme ve ayırma işlemleri içinden aşağıdaki adımları uygulamak [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] tümleşik geliştirme environmnent (IDE). Komut satırı araçlarının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md). Profil hizmetler hakkında daha fazla bilgi için bkz. [profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md).  
+> Ekleme ve ayırma işlemleri içinden aşağıdaki adımları uygulamak [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] tümleşik geliştirme environmnent (IDE). Komut satırı araçlarının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [komut satırından profil oluşturma](../profiling/using-the-profiling-tools-from-the-command-line.md). Profil hizmetler hakkında daha fazla bilgi için bkz. [profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md).  
   
  Profili için kullanılabilir olan işlemleri, bilgisayarın yönetici tarafından ayarlanan kullanıcı erişimi izinleri bağlıdır. Örneğin, bir kullanıcı hesabı izni aşağıdakilerden herhangi biri olabilir:  
   

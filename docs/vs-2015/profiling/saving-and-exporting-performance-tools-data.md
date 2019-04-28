@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428099"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Verileri kaydetme ve dışarı aktarma performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Bu konuda, kaydedin ve performans veri dosyalarını dışarı aktarma açıklan
  Bir veya daha fazla rapor görünümlerini .vsp dosyasının veya .vsps profil oluşturma veri dosyası ya da bir virgülle ayrılmış olarak veya bir XML dosyasını dışarı aktarabilirsiniz. Rapor Görünümü penceresi verileri dışarı veya rapor görünümlerini tüm veri dosyasından dışarı aktarabilirsiniz önce filtreleyebilirsiniz **performans Gezgini** penceresi.  
   
 > [!NOTE]
->  Ayrıca, kopyalayın ve rapor görünümü penceresi seçili satırları sekmeyle ayrılmış değerler olarak yapıştırın.  
+> Ayrıca, kopyalayın ve rapor görünümü penceresi seçili satırları sekmeyle ayrılmış değerler olarak yapıştırın.  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Performans Gezgini penceresinden performans raporları dışarı aktarmak için  
   

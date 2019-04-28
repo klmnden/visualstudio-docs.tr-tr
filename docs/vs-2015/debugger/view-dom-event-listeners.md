@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437680"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Listede **olayları** sekmesini dinamiktir. Uygulama çalışırken, bir olay dinleyicisi eklerseniz, yeni olay dinleyicisi Burada görünecek. Ekleme ve kaldırma olay dinleyicileri hakkında daha fazla bilgi için bkz. [olay dinleyicileri ile sorunları çözmek için ipuçları](#Tips) bu konuda.
 
 > [!NOTE]
->  DOM öğeleri gibi olmayan kod öğeleri için olay dinleyicileri `xhr`, üzerinde görünmez **olayları** sekmesi.
+> DOM öğeleri gibi olmayan kod öğeleri için olay dinleyicileri `xhr`, üzerinde görünmez **olayları** sekmesi.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>DOM öğeleri için Görünüm olay dinleyicileri
  Bu örnek, bir Windows Phone Store uygulaması gösterir. Burada açıklanan DOM Gezgini özellikleri Windows Store uygulamaları için de desteklenir.

@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438894"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural Kümesi Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
  **Kural kümesi Düzenleyicisi** iletişim kutusu oluşturmak ve değiştirmek için kullanılan [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) .rules dosya serileştirilmiş kümeleri, kural.  
   
 > [!NOTE]
->  .Rules dosyasıyla açmak isteyip istemediğiniz **kodlama ile XML Düzenleyicisi**, etkinlik ve iş akışı için ilişkili Tasarımcı penceresini kapatın.  
+> .Rules dosyasıyla açmak isteyip istemediğiniz **kodlama ile XML Düzenleyicisi**, etkinlik ve iş akışı için ilişkili Tasarımcı penceresini kapatın.  
   
  Nasıl erişileceği hakkında daha fazla bilgi için **kural kümesi Düzenleyicisi** iletişim kutusu, bkz: [nasıl yapılır: (Eski) PolicyActivity kural kümesi oluşturma](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  Eski kural düzenleyiciyi [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek için kullanılan [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] çoklu hedefleme desteklemez.  
+> Eski kural düzenleyiciyi [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek için kullanılan [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] çoklu hedefleme desteklemez.  
   
  Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **kural kümesi Düzenleyicisi** iletişim kutusu.  
   

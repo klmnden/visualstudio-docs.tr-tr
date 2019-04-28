@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b801c1b00569f841cb031ae965565597367ff2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 318229dfdef0bd20048b287e7973c05a40879250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443788"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_hasAssignmentOperator ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426557"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
  Bir takım projesi için özel bir kural oluşturmak için önce kümesinde iade ilkesi kuralı için özel bir klasör oluşturun **Kaynak Denetim Gezgini**. Ardından, kural kümesi dosyası oluşturun ve dosyayı sürüm denetimine ekleyin. Son olarak, kural olarak kod çözümleme iade ilkesi takım projesi için kümesi belirtin.  
   
 > [!NOTE]
->  Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Sürüm denetimi klasörü İade İlkesi kural kümesi oluşturmak için  
   
@@ -72,7 +72,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
 4. İçinde **iade** iletişim kutusu, bir açıklama ekleyin ve ardından seçeneğine sahip **iade**.  
   
     > [!NOTE]
-    >  Takım projeniz için Kod Analizi İlkesi iade zaten yapılandırdıysanız ve seçtiğiniz **yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade zorunlu**, bir ilke hatası uyarısı tetikler. İlke hatası iletişim kutusunda **ilke hatası geçersiz kıl ve iade etmeye devam et**. Gerekli bir açıklama ekleyin ve ardından **Tamam**.  
+    > Takım projeniz için Kod Analizi İlkesi iade zaten yapılandırdıysanız ve seçtiğiniz **yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade zorunlu**, bir ilke hatası uyarısı tetikler. İlke hatası iletişim kutusunda **ilke hatası geçersiz kıl ve iade etmeye devam et**. Gerekli bir açıklama ekleyin ve ardından **Tamam**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Dosyası kural belirtmek için iade ilke olarak ayarlayın  
   
@@ -91,7 +91,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Yolu aşağıdaki yordamlardan birini kullanarak kopyalayabilirsiniz **Kaynak Denetim Gezgini**:  
+    > Yolu aşağıdaki yordamlardan birini kullanarak kopyalayabilirsiniz **Kaynak Denetim Gezgini**:  
   
     - İçinde **klasörleri** bölmesinde, kural kümesi dosyası içeren klasörü tıklatın. Görünen klasörün sürüm denetim yolu Kopyala **kaynak** kutusuna ve kural kümesi dosyası adını elle yazın.  
   

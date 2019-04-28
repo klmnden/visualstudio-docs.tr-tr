@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445943"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Yöntemler için birim testleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma  
  Bu örnek, bir birim testi karşılanmadı bir tür kısıtlaması kullanan bir genel yöntem için gösterir. İlk bölüm, kod test altındaki kod projesi gösterir. Tür kısıtlaması vurgulanır.  

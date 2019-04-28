@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994674"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı metin şablonunda hata ayıklama için metin şablonu dosyasını kaydedin ve ardından **T4 şablonunda Hata Ayıkla** Çözüm Gezgini içinde dosyanın kısayol menüsünde. Bir çalışma zamanı metin şablonunda hata ayıklama için yalnızca ait olduğu uygulama hata ayıklama.
@@ -67,7 +67,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |Gerekli parametre '{0}'for 'yönergesine{1}' bulunamadı. Yönerge yoksayılacak.|Sistem, gerekli bir yönerge parametre sağlamaz oluşur. Eksik parametre adı, yönerge adı ve satır numarası ileti sağlar.|Eksik parametre belirtin.|
 |Adlı İşlemci '{0}'adlı yönergeyi desteklemiyor'{1}'. Yönerge yoksayılacak.|Bir yönerge işlemcisi bir yönergeyi desteklemiyor oluşur. İleti adı yönerge işlemcisinin yanı sıra sorunlu yönergesi adı ve satır sayısını sağlar.|Yönergenin adı düzeltin.|
 |Dosyasının içerme yönergesi '{0}' sonsuz bir döngüye neden olur.|Döngüsel yönergelerinde görüntülenir belirtilen (örneğin, dosya bir dosya içerir B, dosya içerir).|Döngüsel belirtmeyin yönergeleri içerir.|
-|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Uygulanamaz.|
+|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Geçerli değildir.|
 |Bir blok içinde beklenmeyen başlangıç veya bitiş etiketi bulundu. Bir başlangıç veya bitiş etiketini yanlış yazmadınız ve şablonda iç içe geçmiş bir bloğu yok emin olun.|Beklenmeyen bir olduğunda görüntülenen \<# veya #>. Diğer bir deyişle, varsa bir \<# değil kapatılmış olan başka bir açık etiketinden sonra veya sahip bir #> önceki kapatılmamış bir açma etiketi yok olduğunda. İleti eşleşmeyen etiketi satır sayısını sağlar.|Eşleşmeyen başlangıç veya bitiş etiketi kaldırmak veya kaçış karakterini kullanın.|
 |Bir yönerge yanlış biçimde belirtildi. Yönerge yoksayılacak. Lütfen yönerge biçiminde belirtin `<#@ name [parametername="parametervalue"]*  #>`|Bir yönerge doğru biçimde belirtilmemiş ayrıştırıcı tarafından görüntülenir. İletinin hatalı yönergenin satır numarası sağlar.|Tüm yönergeleri biçiminde olduğundan emin olun `<#@ name [parametername="parametervalue"]*  #>`. Daha fazla bilgi için [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).|
 |Bütünleştirilmiş kodu yüklenemedi '{0}'for 'kayıtlı yönerge işlemcisi{1}'<br /><br /> {2}|Bir yönerge işlemcisine ana bilgisayar tarafından yüklenemedi oluşur. Yönerge işlemcisini ve yönerge işlemcisinin adı için sağlanan derleme ileti tanımlar.|Yönerge işlemcisini doğru şekilde kaydedildiğini ve derleme var olduğundan emin olun.|

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432267"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Özellikler penceresinden alan tanımlarını alma
 Sayfanın alt kısmında **özellikleri** penceresinde bir açıklama alanını seçili özellik alanıyla ilgili bilgileri görüntüler. Bu özellik varsayılan olarak etkinleştirilir. Açıklama alanı gizlemek istiyorsanız, sağ **özellikleri** penceresini açın ve **açıklama**. Bunun yapılması ayrıca kaldırır onay işaretinin yanındaki **açıklama** menü penceresinin başlık. Geçiş yapmak için aynı adımları izleyerek alanı yeniden görüntüleyebilirsiniz **açıklama** yeniden açın.  
@@ -26,7 +26,7 @@ Sayfanın alt kısmında **özellikleri** penceresinde bir açıklama alanını 
 1. Ekleme `helpstringdll` özniteliği tür kitaplığının Kitaplık ifadeye (`typelib`).  
   
    > [!NOTE]
-   >  Bu adım, bir nesne kitaplığı (.olb) dosyasında tür kitaplığı ise isteğe bağlıdır.  
+   > Bu adım, bir nesne kitaplığı (.olb) dosyasında tür kitaplığı ise isteğe bağlıdır.  
   
 2. Belirtin `helpstringcontext` dizeleri için öznitelikler. Ayrıca belirtebileceğiniz `helpstring` öznitelikleri.  
   

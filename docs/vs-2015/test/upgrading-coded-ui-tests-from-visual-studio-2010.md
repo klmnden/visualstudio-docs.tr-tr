@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445902"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio, birden fazla test proje türü içerir. Yeni kodlanmış UI testi oluşturursanız, bir kodlanmış UI testi proje türü oluşturulur. Daha fazla bilgi için [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio, birden fazla test proje türü içerir. Yeni kodlanmış UI testi oluşturursanız, bir kodlanmış UI testi proje türü oluşturulur. Daha fazla bilgi için [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Kodlanmış UI testleri içeren test projelerini gerekir yeniden test projesini açtığınızda [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] yan yana ile [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Kodlanmış UI testleri içeren test projelerini gerekir yeniden test projesini açtığınızda [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] yan yana ile [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  İçinde oluşturulan bir test projesi [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] ve yalnızca birim testleri içeren açılır [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodlanmış UI testleri için eklenemez. Benzer şekilde, oluşturulan birim test projesi kodlanmış UI test ekleyemezsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> İçinde oluşturulan bir test projesi [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] ve yalnızca birim testleri içeren açılır [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodlanmış UI testleri için eklenemez. Benzer şekilde, oluşturulan birim test projesi kodlanmış UI test ekleyemezsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Visual Studio 2010 ve Visual Studio 2012 arasındaki uyumluluk sorunları
  Aşağıdaki tabloda, geçiş kodlanmış UI testleri arasında dikkat etmeniz sorunlarını listeler [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] ve [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Kodlanmış UI test projeleri Çözüm Gezgini'nde görünmeyen başvuruları ile ilgili bilinen bir sorun yoktur. Daha fazla bilgi için dahil Benioku dosyasına bakın [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] yükleme medyası.
+> Kodlanmış UI test projeleri Çözüm Gezgini'nde görünmeyen başvuruları ile ilgili bilinen bir sorun yoktur. Daha fazla bilgi için dahil Benioku dosyasına bakın [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] yükleme medyası.
 
 |Kodlanmış kullanıcı Arabirimi işlevleri|Sorun|Çözüm|
 |----------------------------|-----------|--------------|

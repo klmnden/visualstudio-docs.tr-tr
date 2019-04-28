@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442646"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11. Adım: Programınızı Çalıştırma ve Diğer Özellikleri Deneme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Renk iletişim kutusu
 3. PictureBox arka plan rengini ayarlamak için bir renk seçin. Yakından bakın `backgroundButton_Click()` nasıl çalıştığını anlamanız için yöntemi.  
   
     > [!NOTE]
-    >  Resim URL'sini yapıştırarak Internet'ten yükünü **açık dosya** iletişim kutusu. Arka plan renkleriniz görünsün saydam bir arka plan görüntüsüne bulmaya çalışın.  
+    > Resim URL'sini yapıştırarak Internet'ten yükünü **açık dosya** iletişim kutusu. Arka plan renkleriniz görünsün saydam bir arka plan görüntüsüne bulmaya çalışın.  
   
 4. Seçin **resmi Temizle** temizlendiğinden emin olmak için düğme. Sonra programdan çıkmak **Kapat** düğmesi.  
   

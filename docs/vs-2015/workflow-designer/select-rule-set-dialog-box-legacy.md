@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445418"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Kural Kümesi Seç İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi seç** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Bu konu açıklar nasıl **kural kümesi seç** eski iletişim kutusunda [!INCLU
  Kural kümelerini düzenleme ve oluşturma hakkında daha fazla bilgi için bkz. [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!WARNING]
->  Eski kural düzenleyiciyi [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek için kullanılan [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] çoklu hedefleme desteklemez.  
+> Eski kural düzenleyiciyi [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek için kullanılan [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] çoklu hedefleme desteklemez.  
   
  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://go.microsoft.com/fwlink?LinkID=65009).  
   

@@ -13,11 +13,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 96965a2b0861e7c4df4a43e4d258afc0a48090bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784549"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.StateMachine> Etkinliği durumları koleksiyonunu içeren ve tanıdık durum makine paradigma kullanarak iş akışları modeller.  

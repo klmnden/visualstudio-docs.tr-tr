@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445690"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
 - Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.  
   
   > [!TIP]
-  >  Yardım için varsayılan kaynağı, HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp kayıt defteri anahtarını değiştirerek değiştirebilirsiniz. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+  > Yardım için varsayılan kaynağı, HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp kayıt defteri anahtarını değiştirerek değiştirebilirsiniz. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
 - İstemcileri, Visual Studio'nun ilk başlatma sırasında temel Yardım içeriğini yüklemek için yine de istenir. HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection kayıt defteri anahtarını değiştirerek bu istemi devre dışı bırakabilirsiniz.  
   
@@ -78,7 +78,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
 - Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.  
   
   > [!TIP]
-  >  Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
+  > Kullanıcıların yönetici hakları yoksa, Yardım Görüntüleyicisi'nde içeriği Yönet sekmesini devre dışı bırakmanız önerilir. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../ide/help-content-manager-overrides.md).  
   
   Uyarılar:  
   

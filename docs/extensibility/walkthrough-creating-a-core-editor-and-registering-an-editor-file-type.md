@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411030"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>İzlenecek yol: Bir çekirdek Düzenleyicisi ve bir düzenleyici dosya türü kayıt oluşturma
 Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyicisi ile bir dosya *.myext* dosya adı uzantısı yüklenir.
@@ -325,7 +325,7 @@ Bu izlenecek yol başlatan bir VSPackage'ı oluşturma işlemini gösterir [!INC
 3. Açık **VSPackage.resx** dosya, yeni bir dize ekleyin, adı kümesine **101**ve değerine `IDS_EDITORNAME`. Bu adım, oluşturduğunuz dize erişmek için bir kaynak kimliği ile paket sağlar.
 
    > [!NOTE]
-   >  Varsa **VSPackage.resx** dosyasını içeren başka bir, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.
+   > Varsa **VSPackage.resx** dosyasını içeren başka bir, dize `name` özniteliğini **101**, başka bir benzersiz, sayısal değer, burada ve aşağıdaki adımları değiştirin.
 
 4. İçinde **Çözüm Gezgini**açın **MyPackagePackage.cs** dosya.
 

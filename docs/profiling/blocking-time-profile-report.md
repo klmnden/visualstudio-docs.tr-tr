@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777469"
 ---
 # <a name="blocking-time-profile-report"></a>Engelleme zamanı Profil raporu
 Profil raporlarını engelleme her kategorisi (örneğin, "G/ç" veya "Eşitleme") belirli çağrı yığınlarını engelleme zamanı veri toplama sağlayın. Önalım raporu geçerli işlem önalım örneklerinin birlikte etkisiz işlemleri listeler. Engelleme Profil raporu oluşturmak için araç engelleme API çağrıları toplar ve bunları çağrı yığınlarını ağacının toplanır. Bu raporlarda gösterilen verileri geçerli zaman aralığı, gizli dizileri ve uygulanabilir aşağıdaki iki filtre olarak değişir:

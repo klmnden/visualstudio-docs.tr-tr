@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421134"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Dil Hizmeti ve Düzenleyici Uzantılarıyla Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Düzenleyici uzantıları yazmaya başlamak için Visual Studio SDK'ın bir parçası olarak yüklenen Düzenleyici proje şablonlarını kullanın. Visual Studio SDK VSPackage'ları kullanarak ya da Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak Visual Studio uzantıları, geliştirme kolaylaştıran Araçlar indirilebilir bir kümesidir.  
   
 > [!NOTE]
->  Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Kendi Düzenleyici uzantıları yazmadan önce aşağıdaki kavramları ve teknolojileri hakkında bilgi öneririz.  
   
@@ -36,7 +36,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Visual Studio Düzenleyicisi, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri ve uzantıları yönetmek için kullanır. MEF, ayrıca geliştiricilerin daha fazla uzantıları Visual Studio gibi bir ana bilgisayar uygulaması için kolayca oluşturmanıza olanak tanır. Bu çerçeve, MEF sözleşmesi göre bir uzantı tanımlayın ve MEF Bileşeni parçası olarak dışarı aktarın. Ana bilgisayar uygulaması bileşen parçalarına bunları bulma, bunları kaydetme ve doğru bağlamına uygulanan sağlamaktan yönetir.  
   
 > [!NOTE]
->  MEF Düzenleyicisi'nde hakkında daha fazla bilgi için bkz: [düzenleyicide Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> MEF Düzenleyicisi'nde hakkında daha fazla bilgi için bkz: [düzenleyicide Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio Düzenleyici uzantı noktaları ve uzantıları  
  Düzenleyici uzantı noktaları, özelleştirme ve genişletme MEF Bileşeni bölümleri şunlardır. Bazı durumlarda bir arabirim uygulama ve doğru meta verilerle birlikte dışarı uzantı noktası genişletin. Diğer durumlarda, yalnızca bir uzantı bildirme ve belirli bir tür olarak verme.  
@@ -61,7 +61,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Uzantı bir bilgisayara yüklediğinizde, ikili dosyaları ve bildirim Visual Studio için bilinen bir klasörün bir alt klasör içerir.  
   
 > [!WARNING]
->  Visual Studio'daki Düzenleyici genişletilebilirlik şablonlardan birini kullanırsanız, bildirimleri ve dağıtım konumuyla ilgili ayrıntıları endişelenmeniz gerekmez. Şablonları kaydolun ve bir uzantısını dağıtmak için gereken her şeyi içerir.  
+> Visual Studio'daki Düzenleyici genişletilebilirlik şablonlardan birini kullanırsanız, bildirimleri ve dağıtım konumuyla ilgili ayrıntıları endişelenmeniz gerekmez. Şablonları kaydolun ve bir uzantısını dağıtmak için gereken her şeyi içerir.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Deneysel örneğinde çalışan uzantıları  
  Aşağıdaki Deneysel klasöründe (Windows Vista ve Windows 7) dağıtarak bir uzantı geliştirirken çalışma sürümünüz, Visual Studio'nun verenlerden:  
@@ -84,9 +84,9 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
   
  Visual Studio Paket uzantısından MEF Bileşenleri Düzenleyicisi de oluşturabilirsiniz. Ayrıntılar için aşağıdaki izlenecek yollara bakın:  
   
-- [İzlenecek yol: Bir düzenleyici uzantısı ile Kabuk komutu kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [İzlenecek yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [İzlenecek yol: Bir düzenleyici uzantısı ile kısayol tuşu kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [İzlenecek yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)

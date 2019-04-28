@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd3d32873b98187f2a24a0e31e8d24ae8b0a6a01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63941028b4bf461184c4ea203d6b529c00195faf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584354"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Nasıl yapılır: Ortak Çıkış Dizinine Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Varsayılan olarak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm içind
   
 ### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Tüm çözüm yerleştirmek için ortak bir dizine çıkarır.  
   
-1.  Çözümde bir proje tıklayın.  
+1. Çözümde bir proje tıklayın.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
-3.  Proje türüne bağlı olarak, üzerinde tıklayın **derleme** sekmesini veya **derleme** sekmesini tıklatıp ayarlayın **çıkış yolu** Çözümdeki tüm projeleri için kullanılacak bir klasöre.  
+3. Proje türüne bağlı olarak, üzerinde tıklayın **derleme** sekmesini veya **derleme** sekmesini tıklatıp ayarlayın **çıkış yolu** Çözümdeki tüm projeleri için kullanılacak bir klasöre.  
   
-4.  Çözümdeki tüm projeleri için 1-3. adımları tekrarlayın.  
+4. Çözümdeki tüm projeleri için 1-3. adımları tekrarlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
- [Nasıl yapılır: Derleme çıktı dizinini değiştirme](../ide/how-to-change-the-build-output-directory.md)
+ [Nasıl yapılır: Derleme Çıkış Dizinini Değiştirme](../ide/how-to-change-the-build-output-directory.md)

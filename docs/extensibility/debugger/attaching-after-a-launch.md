@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409956"
 ---
 # <a name="attach-after-a-launch"></a>Başlatmadan sonra ekleme
 Bir programı başlattıktan sonra hata ayıklama oturumu için söz konusu program hata ayıklama altyapısı (DE) eklemek hazırdır.
@@ -28,7 +28,7 @@ Bir programı başlattıktan sonra hata ayıklama oturumu için söz konusu prog
 - KODU ve program arasındaki iletişim kurmak için daha anlamlı olur, çalışma zamanı ortamı DE birlikte oluşturur. Bu tasarım SDM bir adres alanı ve DE, çalışma zamanı ortamı ve programın başka bir araya bırakır. Bu tipik komut dosyası dilleri çalıştırmak için yorumlayıcıyı ile uygulanan bir DE bir tasarımdır.
 
     > [!NOTE]
-    >  Ne DE programına iliştirir uygulamaya bağlıdır. KODU ve program arasındaki iletişimi de uygulamaya bağlıdır.
+    > Ne DE programına iliştirir uygulamaya bağlıdır. KODU ve program arasındaki iletişimi de uygulamaya bağlıdır.
 
 ## <a name="implementation"></a>Uygulama
  Programlı olarak oturum hata ayıklama Yöneticisi (SDM) ilk kez aldığında [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) başlatılacak programı temsil eden bir nesne çağırır [iliştirme](../../extensibility/debugger/reference/idebugprogram2-attach.md) iletmeden yöntemi, bir [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) sonraki nesne kullanılan geri SDM için hata ayıklama olaylarını geçirilecek. `IDebugProgram2::Attach` Sonra yöntemi çağırır [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) yöntemi. SDM nasıl alan hakkında daha fazla bilgi için `IDebugProgram2` arabirim için bkz: [bağlantı noktasına bildirme](../../extensibility/debugger/notifying-the-port.md).

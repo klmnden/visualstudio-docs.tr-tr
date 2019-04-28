@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439658"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bir Bellek sızıntısını bulma (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 2. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 8**, ardından da **Evrensel** veya  **Windows Phone uygulamaları**.  
   
     > [!IMPORTANT]
-    >  Bu konu başlığında gösterilen bellek kullanım sonuçları, bir Windows 8 uygulaması karşı test edilmez.  
+    > Bu konu başlığında gösterilen bellek kullanım sonuçları, bir Windows 8 uygulaması karşı test edilmez.  
   
 3. Seçin **boş uygulama** Orta bölmede, proje şablonu.  
   
@@ -55,7 +55,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     ```  
   
     > [!IMPORTANT]
-    >  Windows 8.1 Evrensel uygulama şablonunu kullanıyorsanız, hem de HTML ve CSS kodu güncelleştirmeniz gerekiyor. Windows ve. WindowsPhone projeleri.  
+    > Windows 8.1 Evrensel uygulama şablonunu kullanıyorsanız, hem de HTML ve CSS kodu güncelleştirmeniz gerekiyor. Windows ve. WindowsPhone projeleri.  
   
 6. Default.css açın ve aşağıdaki CSS kodunu ekleyin:  
   
@@ -137,7 +137,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 1. Üzerinde **hata ayıklama** araç, **hata ayıklamayı Başlat** listesinde, güncelleştirilmiş proje için hata ayıklama hedefi seçin: Windows Phone Öykünücüleri birini veya **simülatör**.  
   
    > [!TIP]
-   >  Bir Windows Store uygulaması için de seçebilirsiniz **yerel makine** veya **uzak makine** bu listede. Ancak, bir öykünücü veya benzetici kullanmanın avantajı yanındaki Visual Studio yerleştirin ve çalıştırılan uygulama ve JavaScript bellek Çözümleyicisi arasında kolayca geçiş ' dir. Daha fazla bilgi için bkz. [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md) ve [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Bir Windows Store uygulaması için de seçebilirsiniz **yerel makine** veya **uzak makine** bu listede. Ancak, bir öykünücü veya benzetici kullanmanın avantajı yanındaki Visual Studio yerleştirin ve çalıştırılan uygulama ve JavaScript bellek Çözümleyicisi arasında kolayca geçiş ' dir. Daha fazla bilgi için bkz. [Visual Studio'dan uygulamaları çalıştırma](../debugger/run-store-apps-from-visual-studio.md) ve [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Üzerinde **hata ayıklama** menüsünde seçin **performans Profiler...** .  
   
@@ -152,7 +152,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     Düğme, olay işleme kodunu bir bellek sızıntısı neden olabilecek default.js yoksa iş seçtiğinizde. Bu tanılama amacıyla kullanacaksınız.  
   
    > [!TIP]
-   >  Bir bellek sızıntısı için test etmek istediğiniz senaryoyu yinelenen öbek için uygulama başlatma sırasında veya bir sayfa yüklenirken eklenen nesneleri gibi sizi ilgilendirmeyen bilgilerini filtrelemek kolaylaştırır.  
+   > Bir bellek sızıntısı için test etmek istediğiniz senaryoyu yinelenen öbek için uygulama başlatma sırasında veya bir sayfa yüklenirken eklenen nesneleri gibi sizi ilgilendirmeyen bilgilerini filtrelemek kolaylaştırır.  
   
 5. Çalışan uygulamayı, Visual Studio (Alt + Sekme) geçin.  
   
@@ -171,14 +171,14 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     ![Temel anlık görüntü ve anlık görüntü 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Windows Phone öykünücüsü, anlık görüntünün alındığı zaman uygulama görüntüsü göstermez.  
+   > Windows Phone öykünücüsü, anlık görüntünün alındığı zaman uygulama görüntüsü göstermez.  
   
 9. Uygulamasına geçin ve seçin **bellek sızıntısı** düğmesini tekrar.  
   
 10. Seçin ve Visual Studio'ya **yığın. anlık görüntü Al** üçüncü kez.  
   
     > [!TIP]
-    >  Bu iş akışında üçüncü bir anlık görüntüsünü alarak temel anlık görüntüden ikinci anlık bellek sızıntılarını ile ilişkili olmayan değişiklikleri filtre uygulayabilirsiniz. Örneğin, üstbilgiler ve altbilgiler bazı değişiklikler, bellek kullanımı oluşturur, ancak bellek sızıntılarını ilişkisiz bir sayfasında güncelleştirme gibi beklenen değişiklikler olabilir.  
+    > Bu iş akışında üçüncü bir anlık görüntüsünü alarak temel anlık görüntüden ikinci anlık bellek sızıntılarını ile ilişkili olmayan değişiklikleri filtre uygulayabilirsiniz. Örneğin, üstbilgiler ve altbilgiler bazı değişiklikler, bellek kullanımı oluşturur, ancak bellek sızıntılarını ilişkisiz bir sayfasında güncelleştirme gibi beklenen değişiklikler olabilir.  
   
      Bu örnekte, anlık görüntü #2 ve anlık görüntü #3 gösterilmiştir.  
   
@@ -191,7 +191,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     - (Kırmızı yukarı ok sol tarafından gösterilen) yığın boyutu birkaç KB anlık görüntü # 1'e kıyasla arttı.  
   
       > [!IMPORTANT]
-      >  Tam bellek kullanım değerlerini yığın boyutu için hata ayıklama hedefi üzerinde bağlıdır.  
+      > Tam bellek kullanım değerlerini yığın boyutu için hata ayıklama hedefi üzerinde bağlıdır.  
   
     - (Yukarı ok sağda kırmızı tarafından gösterilen) yığındaki nesnelerin sayısı, anlık görüntü #1 kıyasla arttı. Bir nesne (+ 1) eklendi ve hiçbir nesne kaldırıldı (-0).  
   
@@ -222,7 +222,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
       Uygulamayı biraz bilgi bu noktada yardımcı olur: Seçme **bellek sızıntısı** düğmesi bir DIV öğesine kaldırmak ve kod sağ çalışıyor gibi görünüyor bir öğe ekleyin (diğer bir deyişle, bellek sızıntıları). Sonraki bölümde bunu düzeltelim açıklanmaktadır.  
   
     > [!TIP]
-    >  Bazı durumlarda, bir nesne olarak bulma `Global` nesne, nesneyi tanımlamak yardımcı olabilir. Bunu yapmak için tanımlayıcısı için kısayol menüsünü açın ve ardından **kök görünümünde göster**.  
+    > Bazı durumlarda, bir nesne olarak bulma `Global` nesne, nesneyi tanımlamak yardımcı olabilir. Bunu yapmak için tanımlayıcısı için kısayol menüsünü açın ve ardından **kök görünümünde göster**.  
   
 ## <a name="FixingMemory"></a> Bellek sorunu düzeltme  
   

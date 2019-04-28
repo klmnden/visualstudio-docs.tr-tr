@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447098"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -84,7 +84,7 @@ Visual Studio'daki her Office proje şablonu, tek bir Microsoft Office uygulamas
 Derlemelerin bu sürümleri yüklediyseniz ve PIA'lar genel derleme önbelleğinde kayıtlı görünür **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Bunları kullanırken oluşabilecek bazı geliştirme sorunları olduğundan, derlemelerin bu sürümlerine başvuruları eklemekten kaçının. Genel derleme önbelleğinde PIA'ların farklı sürümlerini kayıtlıysanız, örneğin, projeniz otomatik olarak en son kaydedilen derleme sürümüne bağlanır; üzerinde farklı bir derleme sürümü belirtseniz dahi  **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu.
 
 > [!NOTE]
->  Onlara başvuran bir derleme eklendiğinde, bazı derlemeler otomatik olarak projeye eklenir. Örneğin, başvurular *Office.dll* ve *Microsoft.VBE.Interop.dll* derlemelere başvuru Word, Excel, Outlook, Microsoft Forms veya grafik eklediğinizde otomatik olarak eklenir bütünleştirilmiş kodları.
+> Onlara başvuran bir derleme eklendiğinde, bazı derlemeler otomatik olarak projeye eklenir. Örneğin, başvurular *Office.dll* ve *Microsoft.VBE.Interop.dll* derlemelere başvuru Word, Excel, Outlook, Microsoft Forms veya grafik eklediğinizde otomatik olarak eklenir bütünleştirilmiş kodları.
 
 <a name="pialist"></a>
 

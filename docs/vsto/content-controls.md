@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445593"
 ---
 # <a name="content-controls"></a>İçerik denetimleri
   İçerik denetimleri tasarım belgeleri ve bu özelliklere sahip şablonları sağlamak sizin için bir yol:
@@ -72,7 +72,7 @@ ms.locfileid: "60062184"
   Belge düzeyinde projelerde belgenize tasarım zamanında veya çalışma zamanında içerik denetimlerine ekleyebilirsiniz. VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 > [!NOTE]
->  Open XML biçiminde kaydedilen belgelerde içerik denetimleri kullanabilirsiniz. Word 97-2003 belgesi kaydedilen belgelerde içerik denetimlerini kullanamazsınız (*.doc*) biçimi.
+> Open XML biçiminde kaydedilen belgelerde içerik denetimleri kullanabilirsiniz. Word 97-2003 belgesi kaydedilen belgelerde içerik denetimlerini kullanamazsınız (*.doc*) biçimi.
 
 ## <a name="types-of-content-controls"></a>İçerik denetimi türleri
  Dokuz farklı belgelere ekleyebileceğiniz içerik denetimi türleri vardır. İçerik denetimleri çoğunu olmayan karşılık gelen türü <xref:Microsoft.Office.Tools.Word> ad alanı. Genel kullanabilirsiniz <xref:Microsoft.Office.Tools.Word.ContentControl>, hangi temsil edebilir kullanılabilir içerik denetimleri. Her kullanılabilir içerik denetimlerini nasıl kullanılacağını gösteren bir kılavuz için bkz. [izlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
@@ -137,7 +137,7 @@ ms.locfileid: "60062184"
   Korumak istediğiniz alanı içinde bir içerik denetimi değilse veya içerik denetimleri ve diğer içerik türlerini içeren bir alan korumak istiyorsanız, size tüm alanı koyabilirsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diğer içerik denetimleri farklı bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanıcıya görünür olan kullanıcı Arabirimi sağlar. Tek amacı, kullanıcıların düzenleyemeyeceği bir bölge tanımlamaktır.
 
 > [!NOTE]
->  Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanmalısınız **LockContents** her özellik katıştırılmış kullanıcıların içeriklerini düzenlemesini önlemek için denetimi.
+> Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanmalısınız **LockContents** her özellik katıştırılmış kullanıcıların içeriklerini düzenlemesini önlemek için denetimi.
 
  İçerik denetimleri belge bölümlerini koruma için nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062184"
  İçerik denetimleri de denetiminde değişiklikleri veri kaynağına güncelleştirilir, iki yönlü veri bağlamayı destekler. Daha fazla bilgi için [nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 > [!NOTE]
->  İçerik denetimleri, karmaşık veri bağlamayı desteklemez. Bağlarsanız bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> veya <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> denetimi tıkladıklarında bir veri kaynağına Windows Forms veri modelini kullanarak, kullanıcılar yalnızca tek bir değer görürsünüz. Bu denetimler, kullanıcıların seçebileceği veri değerlerini bir dizi bağlamak istiyorsanız, özel bir XML parçasına öğeleri bu denetimler bağlayabilirsiniz.
+> İçerik denetimleri, karmaşık veri bağlamayı desteklemez. Bağlarsanız bir <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> veya <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> denetimi tıkladıklarında bir veri kaynağına Windows Forms veri modelini kullanarak, kullanıcılar yalnızca tek bir değer görürsünüz. Bu denetimler, kullanıcıların seçebileceği veri değerlerini bir dizi bağlamak istiyorsanız, özel bir XML parçasına öğeleri bu denetimler bağlayabilirsiniz.
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>İçerik denetimlerini özel XML bölümlerine bağlama
  Bazı içerik denetimleri, belgeye gömülü özel XML bölümleri öğelerine bağlayabilirsiniz. Özel XML bölümleri hakkında daha fazla bilgi için bkz. [özel XML bölümlerine genel bakış](../vsto/custom-xml-parts-overview.md).

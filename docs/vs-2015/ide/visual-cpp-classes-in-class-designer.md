@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443174"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf Tasarımcısında Visual C++ Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787082"
 Sınıf Tasarımcısı, C++ sınıflarını destekler ve C++ sınıfları birden çok devralma ilişkisi olabilir dışında Visual Basic ve Visual C# sınıfı şekiller, aynı şekilde yerel C++ sınıfları görselleştirir. Daha fazla alanlar ve yöntemler sınıfında göstermek veya alanından tasarruf etmek için daraltılabilir sınıf şeklinin genişletebilirsiniz.  
   
 > [!NOTE]
->  Sınıf Tasarımcısı, birleşimler (bellek tahsis sınıfı özel bir tür yalnızca Birliği'nin en büyük veri üyesi için gerekli miktarıdır) desteklemez.  
+> Sınıf Tasarımcısı, birleşimler (bellek tahsis sınıfı özel bir tür yalnızca Birliği'nin en büyük veri üyesi için gerekli miktarıdır) desteklemez.  
   
 ## <a name="simple-inheritance"></a>Basit devralma  
  Birden fazla sınıf bir sınıf diyagramına sürükleyin ve sınıfların sınıf devralma ilişkisi olan bir ok bunları birbirine bağlar. Yönde taban sınıfının ok işaret eder. Aşağıdaki sınıflar, bir sınıf diyagramında görüntülendiğinde, örneğin, bir ok, B'den y: için işaret eden bağlanır  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Sınıf şeklinin sağ tıklatıp **temel sınıfları Göster** seçilen sınıf için temel sınıflarını görüntüler.  
   
 > [!NOTE]
->  **Türetilmiş sınıfları Göster** komutu, C++ kodu için desteklenmiyor. Türetilen sınıfların sınıf genişletme türü düğümünü genişleterek görünümüne giderek görüntüleyebilirsiniz **türetilen türler** alt ve sonra bu türleri sınıf diyagramına sürükleyebilir sürükleyerek.  
+> **Türetilmiş sınıfları Göster** komutu, C++ kodu için desteklenmiyor. Türetilen sınıfların sınıf genişletme türü düğümünü genişleterek görünümüne giderek görüntüleyebilirsiniz **türetilen türler** alt ve sonra bu türleri sınıf diyagramına sürükleyebilir sürükleyerek.  
   
  Birden çok sınıf devralma hakkında daha fazla bilgi için bkz: [(NOTINBUILD) birden çok devralma](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) ve [birden çok temel sınıflar](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408586"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama dağıtımının önkoşulları
 
@@ -48,7 +48,7 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için 
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eksik Önkoşullar algılayabilir ve bir önyükleyici kullanarak önkoşulları yükleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasıyla Önkoşulları Yükleme](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
->  Bildirimleri gibi araçları tarafından oluşturulan değerleri değiştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve *MageUI.exe*, uygulama bildirimi bir metin düzenleyicisinde düzenleyin ve ardından uygulama ve dağıtım bildirimlerini yeniden imzalama gerekiyor. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Bildirimleri gibi araçları tarafından oluşturulan değerleri değiştirmek için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve *MageUI.exe*, uygulama bildirimi bir metin düzenleyicisinde düzenleyin ve ardından uygulama ve dağıtım bildirimlerini yeniden imzalama gerekiyor. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Uygulamanızı dağıtmak için Visual Studio ve ClickOnce kullanırsanız, varsayılan olarak seçili önyükleyici paketleri çözümdeki .NET Framework sürümü bağlıdır. Ancak, hedef .NET Framework sürümünü değiştirirseniz seçeneklerinde güncelleştirmeniz gerekir **Önkoşullar iletişim kutusu** el ile.
 

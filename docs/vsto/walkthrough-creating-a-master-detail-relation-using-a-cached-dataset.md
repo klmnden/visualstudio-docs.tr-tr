@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438549"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>İzlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma
   Bu izlenecek yol, bir çalışma sayfasına bir ana/ayrıntı ilişkisi oluşturma ve böylece bu çözüm çevrimdışı kullanılabilir verileri önbelleğe alma gösterir.
@@ -36,7 +36,7 @@ ms.locfileid: "60091505"
 - Projenizi test edin.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

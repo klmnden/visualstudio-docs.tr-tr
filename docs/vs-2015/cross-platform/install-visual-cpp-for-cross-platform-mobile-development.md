@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444587"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Görsel C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com
 - Yükleme gereksinimleri için bkz [Visual Studio 2015 sistem gereksinimleri](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
   > [!IMPORTANT]
-  >  Windows 7 veya Windows Server 2008 R2 kullanıyorsanız, Klasik Windows uygulamaları, Android yerel etkinlik uygulamaları ve kitaplıkları ve uygulamaları için kodu ve kod kitaplıkları için iOS ve Windows Store veya evrensel Windows uygulamaları geliştirebilirsiniz.  
+  > Windows 7 veya Windows Server 2008 R2 kullanıyorsanız, Klasik Windows uygulamaları, Android yerel etkinlik uygulamaları ve kitaplıkları ve uygulamaları için kodu ve kod kitaplıkları için iOS ve Windows Store veya evrensel Windows uygulamaları geliştirebilirsiniz.  
   
   Belirli cihaz platformları için uygulamalar oluşturmak için bazı ek gereksinimleri vardır:  
   
@@ -75,12 +75,12 @@ Görsel C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com
 4. Yükleme tamamlandığında yükleyiciyi kapatın ve bilgisayarınızı yeniden başlatın. Bazı kurulum eylemleri üçüncü taraf bileşenleri için bilgisayar yeniden başlatılana kadar etkili olmaz.  
   
     > [!IMPORTANT]
-    >  Her şeyin doğru şekilde yüklendiğinden emin olmak için yeniden başlatmanız gerekir.  
+    > Her şeyin doğru şekilde yüklendiğinden emin olmak için yeniden başlatmanız gerekir.  
   
      Android bileşen için Microsoft Visual Studio öykünücü yüklenemedi, bilgisayarınızda Hyper-V etkin olmayabilir. Kullanım **kapatma Windows özelliklerini aç veya Kapat** Denetim Masası uygulaması Hyper-V ve ardından Visual Studio yükleyicisini yeniden çalıştırın.  
   
     > [!NOTE]
-    >  Bilgisayarınız veya Windows sürümünüzü Hyper-V desteklemiyorsa, Microsoft Visual Studio öykünücüsü Android bileşeni için kullanamazsınız. Home Edition'ın Windows Hyper-V desteği içermez.  
+    > Bilgisayarınız veya Windows sürümünüzü Hyper-V desteklemiyorsa, Microsoft Visual Studio öykünücüsü Android bileşeni için kullanamazsınız. Home Edition'ın Windows Hyper-V desteği içermez.  
   
 5. Visual Studio'yu açın. Bu, Visual Studio'yu çalıştırdığınız ilk kez ise, yapılandırma ve oturum açma için biraz zaman alabilir. Visual Studio olduğunda hazır üzerinde **Araçları** menüsünde **Uzantılar ve güncelleştirmeler**, **güncelleştirmeleri**. Visual Studio için Visual C++ platformlar arası Mobil Geliştirme için veya Microsoft Visual Studio öykünücüsü Android için güncelleştirmesi vardır, bunları yükleyin.  
   
@@ -91,7 +91,7 @@ Görsel C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com
  Bir yüklememeye karar veya daha fazla üçüncü taraf bağımlılıkları, Visual C++ mobil geliştirme seçeneği yüklediğinizde Visual Studio Yükleyicisi'ni kullanarak bunları daha sonra adımları kullanarak yükleyebileceğiniz [Araçları'nı yükleme](#InstallTheTools). Ayrıca, yükleme veya bunları bağımsız olarak Visual Studio güncelleştirme.  
   
 > [!CAUTION]
->  Java dışındaki herhangi bir sırada bağımlılıklarını yükleyebilirsiniz. Yükleme ve Android SDK'yı yüklemeden önce JDK yapılandırmanız gerekir.  
+> Java dışındaki herhangi bir sırada bağımlılıklarını yükleyebilirsiniz. Yükleme ve Android SDK'yı yüklemeden önce JDK yapılandırmanız gerekir.  
   
  Aşağıdaki bilgileri okuyun ve bağımlılıkları el ile yüklemek için aşağıdaki bağlantıları kullanın.  
   

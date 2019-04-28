@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440948"
 ---
 # <a name="link-model-elements-and-work-items"></a>Model öğelerini ve iş öğelerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Bağlantılar oluşturmak ve açmak için Takım Gezgini'ni kullanmanız gerekir. Modelleme projenizin ve diyagramlarınızın, başkalarının bağlantılı diyagramları açamaması için sürüm denetimine iade edildiğinden emin olun.  
+> Bağlantılar oluşturmak ve açmak için Takım Gezgini'ni kullanmanız gerekir. Modelleme projenizin ve diyagramlarınızın, başkalarının bağlantılı diyagramları açamaması için sürüm denetimine iade edildiğinden emin olun.  
   
  Örneğin, şunları bağlayabilirsiniz:  
   
@@ -61,7 +61,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
 - Diyagramlar. Bir diyagram seçmek için diyagramın boş bir kısmını seçin.  
   
 > [!WARNING]
->  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
+> Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
   
 - [Bir takım projesine Bağlan](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
      Visual Studio model öğesini yeni iş öğesine bağlar. Simge model öğesi üzerinde veya yakınında görünür.  
   
 > [!WARNING]
->  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
+> Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
   
 ## <a name="LinkExisting"></a> Bir model öğesini varolan iş öğesine bağlama  
  Model öğelerini iş öğelerine bağladığınızda, iş öğesinden değil, model öğesinden başlayın.  
@@ -123,7 +123,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
      İşiniz bittiğinde **iş öğelerini** model öğesi özelliği öncekinden daha büyük bir sayıyı gösterir. Simge model öğesi üzerinde veya yakınında da görünür.  
   
 > [!WARNING]
->  Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
+> Zaten için TFS kaynak kod denetimi (oluşturmak veya bir çalışma öğesiyle bağlantılandırmak için SCC) bağlı olmanız gerekir. Farklı bir TFS SCC bağlantı açmayı denerseniz, Visual Studio otomatik olarak geçerli çözümü kapatır. Zaten için uygun SCC oluşturmak veya bir çalışma öğesiyle bağlantılandırmak denemeden önce bağlı olduğunuzdan emin olun. Visual Studio daha sonraki sürümleri için bir SCC bağlı değilseniz, menü komutlarını kullanılamaz.  
   
 ## <a name="OpenWorkItem"></a> Bir model öğesine bağlı iş öğelerini görüntüle  
   
@@ -132,7 +132,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
 2. Modelleme diyagramında veya **UML Model Gezgini**, model öğesinin kısayol menüsünü açın. Seçin **iş öğelerini görüntüle** bağlı iş öğelerinin listesini görüntülemek için.  
   
     > [!NOTE]
-    >  Yalnızca bağlı olan sunucudaki iş öğeleri görünür. Tüm iş öğelerini, doğru sunucuya bağlı olduğunuzdan emin olun görmüyorsanız **Takım Gezgini**.  
+    > Yalnızca bağlı olan sunucudaki iş öğeleri görünür. Tüm iş öğelerini, doğru sunucuya bağlı olduğunuzdan emin olun görmüyorsanız **Takım Gezgini**.  
   
 ## <a name="ViewLinkedModels"></a> Bir iş öğesine bağlı model öğelerini görüntüleme  
  Modelleme diyagramları ve bir iş öğesi Visual Studio Team Services ve Team Foundation Server 2012 veya sonraki sürümlerde bağlı öğeleri görüntüleyebilirsiniz. Örneğin, bir iş öğesi uygulanacak yeni sınıfların tasarımını gösteren sınıf modellerine bağlı olabilir.  
@@ -140,7 +140,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
 1. İçinde **Takım Gezgini**, bağlı olduğunuz takım projesi için burada model öğelerini iş öğesine bağlı olduğundan emin olun.  
   
     > [!NOTE]
-    >  Bağlantılı model öğelerini görüntülemek için yalnızca Takım Gezgini'ni kullanabilirsiniz; Team Web Access'i kullanamazsınız. Çalışma alanınızın modelleme diyagramlarını veya öğeleri içeren modelleme projesiyle eşleştiğinden emin olun. Çalışma alanınız yoksa, oluşturmanız gerekir. Bkz: [sorun giderme](#Troubleshooting) ve [oluşturma ve çalışma alanlarıyla çalışma](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Bağlantılı model öğelerini görüntülemek için yalnızca Takım Gezgini'ni kullanabilirsiniz; Team Web Access'i kullanamazsınız. Çalışma alanınızın modelleme diyagramlarını veya öğeleri içeren modelleme projesiyle eşleştiğinden emin olun. Çalışma alanınız yoksa, oluşturmanız gerekir. Bkz: [sorun giderme](#Troubleshooting) ve [oluşturma ve çalışma alanlarıyla çalışma](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. İş öğesini açın, **bağlantıları**. Altında **Model bağlantısı**, bağlantılı model öğesinin kısayol menüsünü açın. Seçin **bağlı öğeyi Aç**.  
   
@@ -160,7 +160,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
     2. İçinde **iş öğelerini** özelliği, üç nokta düğmesini **[...]** .  
   
         > [!NOTE]
-        >  Yalnızca geçerli sunucudaki iş öğeleri görünür. Liste boşsa, ancak iş öğelerinin sayısı sıfır değil, doğru sunucuya bağlandığınızdan emin olun **Takım Gezgini**.  
+        > Yalnızca geçerli sunucudaki iş öğeleri görünür. Liste boşsa, ancak iş öğelerinin sayısı sıfır değil, doğru sunucuya bağlandığınızdan emin olun **Takım Gezgini**.  
   
 3. Altında **iş öğelerinin bağlantılarını Kaldır**, bağlantısını kaldırmak istediğiniz seçili öğeleri temizleyin. **Tamam**’ı seçin.  
   

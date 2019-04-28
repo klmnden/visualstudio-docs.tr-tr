@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388722"
 ---
-# <a name="graphics-frame-analysis"></a>Grafik Çerçeve Çözümlemesi
+# <a name="graphics-frame-analysis"></a>Grafik Çerçeve Analizi
 Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalarda işleme performansını iyileştirmek için Visual Studio grafik Çözümleyicisi'nde kullanın.
 
 ## <a name="frame-analysis"></a>Çerçeve analizi
@@ -111,7 +111,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
  Donanım sayaç bilgileri, performans sorunlarına neden çok kesin olarak belirlemenize yardımcı olabilecek her çizim çağrısı için belirli donanım platformlar davranışı çok ayrıntılı bir görünümünü sağlar.
 
 > [!NOTE]
->  Farklı donanım platformları farklı sayaçları desteği: Standart yoktur. Sayaçlar ve neyi gösterdikleri yalnızca her GPU üreticisi tarafından belirlenir.
+> Farklı donanım platformları farklı sayaçları desteği: Standart yoktur. Sayaçlar ve neyi gösterdikleri yalnızca her GPU üreticisi tarafından belirlenir.
 
 ### <a name="marker-regions-and-events"></a>İşaret bölgeler ve olaylar
  Çerçeve analizi, kullanıcı tanımlı olay işaretçileri ve olay gruplarını destekler. Bunlar, Özet tablosunu ve ayrıntı tabloları görüntülenir.
@@ -132,13 +132,13 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
 
  Çerçeve analizi 10 yeniden deneme sayısını sınırlar. Platformunuza agresif güç yönetimi veya saat geçişi varsa, başarısız ve yeniden deneme sınırı aştığından bir hata rapor çerçeve analizi neden olabilir. Güç Yönetimi, platformun sıfırlayarak bu sorunu gidermek ve platform etkinleştirirse daha az agresiftir olmasını hızı azaltma saat mümkün olabilir.
 
-##  <a name="HardwareSupport"></a> Donanım desteği
+## <a name="HardwareSupport"></a> Donanım desteği
 
 ### <a name="timestamps-and-occlusion-queries"></a>Zaman damgaları ve kapatma sorguları
  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir. Derinlik kapatma sorguları — piksel Occluded sayaç gerekli —, özellik düzeyi 9.2 veya üzeri destekleyen platformlarında desteklenir.
 
 > [!NOTE]
->  Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir ancak doğruluğunu ve zaman damgaları tutarlılık platformdan platforma değişir.
+> Zaman damgaları çerçeve analizi destekleyen tüm platformlarda desteklenir ancak doğruluğunu ve zaman damgaları tutarlılık platformdan platforma değişir.
 
 ### <a name="gpu-counters"></a>GPU sayaçları
  GPU donanım sayaçları desteği donanım bağlıdır.
@@ -150,7 +150,7 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
   Çerçeve analizi destekleyen herhangi bir platform GPU donanım sayaçlarını toplar.
 
 > [!NOTE]
->  GPU donanım sayaçları donanım kaynaklar olduğundan, uygulamanın her işleme değişken için donanım sayaçları kümesinin tamamını toplamak için birden çok geçiş sürebilir. Sonuç olarak, hangi GPU'yu sayaçlar toplanır belirtilmeyen sırasıdır.
+> GPU donanım sayaçları donanım kaynaklar olduğundan, uygulamanın her işleme değişken için donanım sayaçları kümesinin tamamını toplamak için birden çok geçiş sürebilir. Sonuç olarak, hangi GPU'yu sayaçlar toplanır belirtilmeyen sırasıdır.
 
 ## <a name="unsupported-scenarios"></a>Desteklenmeyen senaryolar
  Çerçeve analizi kullanarak belirli yollar desteklenmeyen ya da kötü bir fikir.
@@ -159,18 +159,18 @@ Grafik çerçevesi analizi, çözümlemek ve Direct3D oyunlarda veya uygulamalar
  Kayıttan yürütme makinesi desteklediğinden daha yüksek bir özellik düzeyi kullanan bir grafik günlük dosyasını kayıttan yürütürken grafik Çözümleyicisi'nde, otomatik olarak geri için WARP döner. Çerçeve analizi, açıkça için WARP dönmesi değil ve bir hata oluşturur — WARP, Direct3D uygulamanızı doğruluğunu İnceleme için ancak performansı inceleniyor değil için kullanışlıdır.
 
 > [!NOTE]
->  Özellik düzeyinde sorunları akılda tutulması gereken önemli olsa da, yakalama ve günlük dosyaları farklı donanım yapılandırmaları ve cihazlarda grafikleri kayıttan yürütme. Grafik günlüğü, günlük dosyası değil veya API'leri içeren kayıttan yürütme makinesinde desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.
+> Özellik düzeyinde sorunları akılda tutulması gereken önemli olsa da, yakalama ve günlük dosyaları farklı donanım yapılandırmaları ve cihazlarda grafikleri kayıttan yürütme. Grafik günlüğü, günlük dosyası değil veya API'leri içeren kayıttan yürütme makinesinde desteklenmeyen özellik düzeylerini kullanın geri sürece çalınabilir.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 ve daha düşük
  Uygulamanızı Direct3D 10 API'sini çağırıyorsa, çerçeve analizi tanı veya tanınır ve diğer grafik Çözümleyicisi araçları tarafından kullanılan olsa da bunları profil olmaz.
 
 > [!NOTE]
->  Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları özellik düzeylerini geçerlidir.
+> Bu, kullanmakta olduğunuz yalnızca Direct3D API çağrıları özellik düzeylerini geçerlidir.
 
 ### <a name="warp"></a>EĞRİLTME
  Çerçeve analizi, profil ve gerçek donanıma işleme performansını geliştirmek için kullanılmak üzere tasarlanmıştır. Çerçeve analizi WARP cihaz üzerinde çalışan engellenmez, ancak genellikle faydalı takip WARP yüksek kaliteli bir CPU üzerinde çalışan daha az özellikli modern Gpu'lar yavaş olduğundan ve WARP performans belirli CPU bağlı olarak büyük ölçüde farklılık gösterebileceğinden değil üzerinde çalıştığı.
 
-##  <a name="Variants"></a> Çeşitleri
+## <a name="Variants"></a> Çeşitleri
  Çerçeve analizi bir kare, oynatma sırasında işlenir şekilde yaptığı her değişiklik olarak bilinen bir *değişken*. Çerçeve analizi inceler çeşitleri için uygulamanızın görsel kaliteyi ve işleme performansını iyileştirmek için yapabileceğiniz ortak, görece kolay değişiklikler karşılık gelen — örneğin, dokular boyutunu küçültme, doku sıkıştırma kullanmayı veya etkinleştirme Düzgünleştirme farklı türde. Çeşitleri normal işleme bağlamını ve uygulama parametreleri geçersiz. Bir özeti aşağıda verilmiştir:
 
 |Değişken|Açıklama|

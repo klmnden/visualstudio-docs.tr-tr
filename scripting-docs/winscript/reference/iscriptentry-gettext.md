@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 24b314443644558b9900fc7d702dcd1b96a7cea4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787717"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
 Karşılık gelen metni döndürür `IScriptEntry` betik bloğu ya da yer alan kaynak kodu `IScriptScriptlet` olay işleyicisi.  

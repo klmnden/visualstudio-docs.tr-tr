@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439327"
 ---
 # <a name="call-tree-view"></a>Çağrı Ağacı Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54752129"
  Çağrı ağacı görünümü sunulan veri miktarını sınırlamak için gürültü azaltma yapılandırılabilir. Gürültü azaltma kullanarak performans sorunlarını Görünümü'nde daha belirgin. Performans sorunlarını kolayca ayırt etmek için analiz daha kolay olur. Daha fazla bilgi için [nasıl yapılır: Rapor görünümlerinde gürültü azaltmayı yapılandırma](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
->  Gürültü azaltma etkinleştirildiğinde, bir uyarı görüntüleyecek şekilde yapılandırılması durumunda rapora bir bilgi çubuğu görüntülenir.  
+> Gürültü azaltma etkinleştirildiğinde, bir uyarı görüntüleyecek şekilde yapılandırılması durumunda rapora bir bilgi çubuğu görüntülenir.  
   
  Çağrı ağacı görünümü içinde sütunların tanımları hakkında daha fazla bilgi için aşağıdakilere bakın:  
   

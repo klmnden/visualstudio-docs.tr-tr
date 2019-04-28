@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444543"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Parametreleri Yeniden Sırala (C#) yeniden düzenlemesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54784134"
  Gerçekleştirilecek `Reorder Parameters` işlemi ya da bir yöntem, dizin oluşturucu veya temsilci yanındaki imleci yerleştirin. İmleç konumda olduğunda, çağırma `Reorder Parameters` klavye kısayol tuşuna basarak veya kısayol menüsünden komut tıklayarak işlemi.  
   
 > [!NOTE]
->  Genişletme yönteminin ilk parametre sıralayamazsınız.  
+> Genişletme yönteminin ilk parametre sıralayamazsınız.  
   
 ### <a name="to-reorder-parameters"></a>Parametreleri yeniden sıralamak için  
   
-1.  Adlı bir sınıf kitaplığı oluşturma `ReorderParameters`ve ardından `Class1` ile aşağıdaki kod örneği.  
+1. Adlı bir sınıf kitaplığı oluşturma `ReorderParameters`ve ardından `Class1` ile aşağıdaki kod örneği.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "54784134"
     }  
     ```  
   
-2.  İmleci üzerine getirin `MethodB`, yöntem bildiriminde veya yöntem çağrısı.  
+2. İmleci üzerine getirin `MethodB`, yöntem bildiriminde veya yöntem çağrısı.  
   
-3.  Üzerinde **yeniden düzenleme** menüsünü tıklatın **parametreleri yeniden Sırala**.  
+3. Üzerinde **yeniden düzenleme** menüsünü tıklatın **parametreleri yeniden Sırala**.  
   
      **Parametreleri yeniden Sırala** iletişim kutusu görüntülenir.  
   
-4.  İçinde **parametreleri yeniden Sırala** iletişim kutusunda `int i` içinde **parametreleri** listelemek ve sonra aşağı düğmesine tıklayın.  
+4. İçinde **parametreleri yeniden Sırala** iletişim kutusunda `int i` içinde **parametreleri** listelemek ve sonra aşağı düğmesine tıklayın.  
   
      Alternatif olarak, sürükleyebilirsiniz `int i` sonra `bool b` içinde **parametreleri** listesi.  
   
-5.  İçinde **parametreleri yeniden Sırala** iletişim kutusu, tıklayın **Tamam**.  
+5. İçinde **parametreleri yeniden Sırala** iletişim kutusu, tıklayın **Tamam**.  
   
      Varsa **başvuru değişikliklerini önizle** seçeneği seçildiğinde, **parametreleri yeniden Sırala** iletişim kutusu, **Değişiklikleri Önizle - Parametreleri Yeniden Sırala** iletişim kutusu görüntülenir. Önizleme değişiklikleri için parametre listesinde sağlar `MethodB` imza hem de yöntem çağrısı.  
   
-    1.  Varsa **Değişiklikleri Önizle - Parametreleri Yeniden Sırala** iletişim kutusu görüntülendikten sonra **Uygula**.  
+    1. Varsa **Değişiklikleri Önizle - Parametreleri Yeniden Sırala** iletişim kutusu görüntülendikten sonra **Uygula**.  
   
          Bu örnekte, yöntem bildiriminde ve tüm yöntemini çağırma siteleri `MethodB` güncelleştirilir.  
   

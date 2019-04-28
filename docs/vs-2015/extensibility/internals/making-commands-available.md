@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436255"
 ---
 # <a name="making-commands-available"></a>Komutları Kullanılabilir Yapma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi 
 - Bağlam kapatma `GUID`s açma ve kapatma (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> yöntemi).  
   
     > [!CAUTION]
-    >  Diğer VSPackage'ları bunlara bağımlı çünkü, VSPackage'ı tüm mevcut bir bağlamı GUID durumunu etkilemez emin olun.  
+    > Diğer VSPackage'ları bunlara bağımlı çünkü, VSPackage'ı tüm mevcut bir bağlamı GUID durumunu etkilemez emin olun.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek bir VSPackage komutunun VSPackage'ı yüklemeden komut bağlamları tarafından yönetilen bir komut dinamik görünürlüğünü gösterir.  
