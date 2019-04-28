@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429372"
 ---
 # <a name="how-to-create-starter-kits"></a>Nasıl yapılır: Başlangıç paketleri oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Starter Kit tam bir uygulama ve değiştirme veya uygulama genişletin eklemeye 
   
  Aşağıdaki konular, şablonları oluşturma hakkında bilgi içerir.  
   
- [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)  
+ [Nasıl yapılır: Proje Şablonları Oluşturma](../ide/how-to-create-project-templates.md)  
  Nasıl kullanılacağını açıklar **şablonu dışarı aktar** bir şablon oluşturmak için Sihirbazı.  
   
- [Nasıl yapılır: Mevcut şablonları güncelleştirme](../ide/how-to-update-existing-templates.md)  
+ [Nasıl yapılır: Mevcut Şablonları Güncelleştirme](../ide/how-to-update-existing-templates.md)  
  Dışarı aktarılan bir şablonu düzenlemeyi açıklar. Başlangıç Seti özelleştirmek için .vstemplate dosyasını değiştirmek için bu yordamı kullanın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

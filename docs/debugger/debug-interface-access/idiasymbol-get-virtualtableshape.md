@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead0db08427d6116671637f943059904555b4480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ef18d56bb993ee5761bb59dcf5fb0758d44f4d61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401372"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Symbol arabirimi sanal tablo kullanıcı tanımlı bir tür için tür alır.
@@ -39,7 +39,7 @@ HRESULT get_virtualTableShape ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

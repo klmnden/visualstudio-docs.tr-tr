@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416650"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ```  
   
 > [!WARNING]
->  Sembol çözünürlük özellikle pek çok derlemeyle uzak dosya konumu kullanırken zaman alabilir. Bu nedenle, ikili (.dll ve .exe) dosyaları ile aynı yerel konuma uzak .pdb dosyalarını kopyalamayı düşünün.  
+> Sembol çözünürlük özellikle pek çok derlemeyle uzak dosya konumu kullanırken zaman alabilir. Bu nedenle, ikili (.dll ve .exe) dosyaları ile aynı yerel konuma uzak .pdb dosyalarını kopyalamayı düşünün.  
   
 ### <a name="excluding-and-including"></a>Dahil ve hariç  
  Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örneğin:  
@@ -134,7 +134,7 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ```  
   
 > [!WARNING]
->  Atlatılamayan ve eşleşmeyen parantezler gibi normal ifadede bir hata varsa kod kapsamı çözümleme çalışmaz.  
+> Atlatılamayan ve eşleşmeyen parantezler gibi normal ifadede bir hata varsa kod kapsamı çözümleme çalışmaz.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Öğeleri içerecek veya dışlayacak diğer yollar  
  Bkz: [bu konunun sonundaki örnek](#sample) örnekler.  

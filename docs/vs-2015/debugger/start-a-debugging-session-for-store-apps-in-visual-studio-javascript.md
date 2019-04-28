@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427292"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>(JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Bu konu, HTML5 ve JavaScript ile yazılan Windows Store uygulamaları için hata ayıklama oturumu başlatmak açıklar. Tek bir tuş vuruşu ile hata ayıklama başlayabilir veya hata ayıklama oturumu belirli senaryolar için yapılandırmak ve uygulamayı başlatmak için yol seçin.
 
 > [!NOTE]
->  XAML ve Visual C#, Visual C++ veya Visual Basic içinde yazılan uygulamalar için [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu başlatın](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> XAML ve Visual C#, Visual C++ veya Visual Basic içinde yazılan uygulamalar için [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu başlatın](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> Bu konudaki
  [Bu konudaki](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
    ![Uzaktan hata ayıklayıcı bağlantısı Seç](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  Yerel alt ağı üzerinde olan makinelere ve Visual Studio makinesine, bir Ethernet kablosuyla doğrudan bağlı sanal makinelere uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusu görüntüler. Başka bir makine belirtmek için adı girin. **makine adı** kutusu.
+  > Yerel alt ağı üzerinde olan makinelere ve Visual Studio makinesine, bir Ethernet kablosuyla doğrudan bağlı sanal makinelere uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusu görüntüler. Başka bir makine belirtmek için adı girin. **makine adı** kutusu.
 
   ![Windows Phone için yalnızca geçerli](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Hata ayıklama modunda çalıştırmak için yüklü bir uygulama için bunu yapmanız gerekir:
 
 > [!NOTE]
->  Bu yordamı başlattığınızda, uygulama çalışmıyor olması gerekir.
+> Bu yordamı başlattığınızda, uygulama çalışmıyor olması gerekir.
 
 1. Üzerinde **hata ayıklama** menüsünde seçin **yüklenen uygulama paketinin hatalarını ayıklama**
 
@@ -226,9 +226,9 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ### <a name="BKMK_Attach_the_debugger"></a> Hata ayıklayıcının
 
 > [!TIP]
->  JavaScript uygulamaları wwahost.exe işlem örneğinde çalışır. Uygulamaya ekleme yaptığınızda diğer JavaScript uygulamaları çalıştırıyorsanız, uygulamanın çalıştığı wwahost.exe sayısal işlem kimliğini (PID) bilmeniz gerekir.
+> JavaScript uygulamaları wwahost.exe işlem örneğinde çalışır. Uygulamaya ekleme yaptığınızda diğer JavaScript uygulamaları çalıştırıyorsanız, uygulamanın çalıştığı wwahost.exe sayısal işlem kimliğini (PID) bilmeniz gerekir.
 >
->  Bu durumu düzeltmek için en kolay yolu, tüm diğer JavaScript uygulamaları kapatmak sağlamaktır. Aksi takdirde, uygulamayı başlatın ve wwahost.exe işlemlerin kimlikleri Not önce Windows Görev Yöneticisi'ni açın. Uygulamasındaki eklemek için bir işlem belirttiğinizde **kullanılabilir işlemler** iletişim kutusu, uygulamanın wwahost.exe not almış olanlardan çok farklı bir kimlik olacaktır.
+> Bu durumu düzeltmek için en kolay yolu, tüm diğer JavaScript uygulamaları kapatmak sağlamaktır. Aksi takdirde, uygulamayı başlatın ve wwahost.exe işlemlerin kimlikleri Not önce Windows Görev Yöneticisi'ni açın. Uygulamasındaki eklemek için bir işlem belirttiğinizde **kullanılabilir işlemler** iletişim kutusu, uygulamanın wwahost.exe not almış olanlardan çok farklı bir kimlik olacaktır.
 
  Hata ayıklayıcıyı iliştirmek için:
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428111"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Nasıl yapılır: Şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme
   Visual Studio'da çalışma açıkken bir XML Şeması çalışma sayfasına eşleyebilirsiniz. Visual Studio'nun dışında çalışma kitabını açtığınızda kullandığınız aynı Microsoft Office Excel araçları kullanırsınız. Office project, çalışma sayfasında önce şemayı eşleştirdiğinizde veya Excel çözümünüzü oluşturduktan sonra aynı nesneleri oluşturur.
@@ -30,7 +30,7 @@ ms.locfileid: "60057179"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Excel çözümleri, çok bölümlü XML şemaları kullanamazsınız.
+> Excel çözümleri, çok bölümlü XML şemaları kullanamazsınız.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Visual Studio'da bir Excel çalışma sayfasına bir XML Şeması eşlemek için
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057179"
 3. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. İçinde **XML** grubunda **kaynak**.
 

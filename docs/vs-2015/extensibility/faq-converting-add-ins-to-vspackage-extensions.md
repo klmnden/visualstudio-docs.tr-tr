@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433745"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>SSS: Eklentileri VSPackage uzantılarına dönüştürme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,14 +21,14 @@ ms.locfileid: "60048681"
 Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio uzantısı yapmak için bir VSIX uzantısı oluşturmak gerekir. Bir Visual Studio eklentisi, bir VSIX uzantısı dönüştürme hakkında sık sorulan soruların yanıtları aşağıdadır.  
   
 > [!WARNING]
->  C# ve Visual Basic projeleri için Visual Studio 2015'te başlangıç VSIX projesi kullanın ve menü komutları, araç pencereleri ve VSPackages için öğe şablonları ekleyin. Daha fazla bilgi için [Visual Studio 2015 SDK'sındaki yenilikler](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+> C# ve Visual Basic projeleri için Visual Studio 2015'te başlangıç VSIX projesi kullanın ve menü komutları, araç pencereleri ve VSPackages için öğe şablonları ekleyin. Daha fazla bilgi için [Visual Studio 2015 SDK'sındaki yenilikler](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
->  Çoğu durumda bir VSPackage proje öğesi ile bir VSIX projesine eklentisi kodunuzu yalnızca aktarabilirsiniz. Çağırarak DTE Otomasyon nesnesi alabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> içinde <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
+> Çoğu durumda bir VSPackage proje öğesi ile bir VSIX projesine eklentisi kodunuzu yalnızca aktarabilirsiniz. Çağırarak DTE Otomasyon nesnesi alabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> içinde <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  Daha fazla bilgi için [VSPackage içinde eklenti kodumu nasıl çalıştırırım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) aşağıda.  
+> Daha fazla bilgi için [VSPackage içinde eklenti kodumu nasıl çalıştırırım?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) aşağıda.  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>VSIX Uzantıları Geliştirme hangi yazılım gerekiyor?  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

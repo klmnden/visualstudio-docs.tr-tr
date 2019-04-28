@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435719"
 ---
 # <a name="how-to-debug-optimized-code"></a>Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)derleyici seçeneği (Visual Studio güncelleştirme 3'te sunulmuştur) en iyi duruma getirilmiş kodu için daha zengin hata ayıklama bilgileri oluşturur (ile oluşturulmamış projeleri **/Od** derleyici seçeneği. Bkz: [/O seçenekler (kodu İyileştir)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Bu yerel değişkenleri ve satır içine alınmış işlevlerin hata ayıklama için gelişmiş destek içerir.  
+> [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)derleyici seçeneği (Visual Studio güncelleştirme 3'te sunulmuştur) en iyi duruma getirilmiş kodu için daha zengin hata ayıklama bilgileri oluşturur (ile oluşturulmamış projeleri **/Od** derleyici seçeneği. Bkz: [/O seçenekler (kodu İyileştir)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Bu yerel değişkenleri ve satır içine alınmış işlevlerin hata ayıklama için gelişmiş destek içerir.  
 >   
->  [Düzenle ve devam et](../debugger/edit-and-continue-visual-csharp.md) ne zaman devre dışı **/Zo** ocompiler seçeneği kullanılır.  
+> [Düzenle ve devam et](../debugger/edit-and-continue-visual-csharp.md) ne zaman devre dışı **/Zo** ocompiler seçeneği kullanılır.  
   
  Kod derleyici en iyi duruma getirir, yeniden konumlandırır ve yönergeleri yeniden düzenler. Bu, daha verimli derlenmiş kodda sonuçlanır. Bu yeniden nedeniyle hata ayıklayıcı her zaman yönergeleri için karşılık gelen kaynak kodunu tanımlanamıyor.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "54790751"
 9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve ekleyin `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` için **ek seçenekler** metin kutusu.  
   
     > [!WARNING]
-    >  `/Zo` Visual Studio 2013 güncelleştirme 3 veya sonraki bir sürümü gerektirir.  
+    > `/Zo` Visual Studio 2013 güncelleştirme 3 veya sonraki bir sürümü gerektirir.  
     >   
     >  Ekleme `/Zo` devre dışı bırakacak [Düzenle ve devam et](../debugger/edit-and-continue-visual-csharp.md).  
   

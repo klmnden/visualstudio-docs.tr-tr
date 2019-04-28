@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411125"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX Bildirim Tasarımcısı
 Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bildirim dosyası, değiştirir.
@@ -29,7 +29,7 @@ Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bi
  Açmak için **VSIX bildirim Tasarımcısı**, bulun bir *source.extension.vsixmanifest* dosyası **Çözüm Gezgini**, dosyasını açın. Bildirim Tasarımcısı dosyayı geçerli XML içermiyorsa açılamaz.
 
 > [!NOTE]
->  *Source.extension.vsixmanifest* çıkış dosyası için *extension.vsixmanifest* paketin ne zaman oluşturulur.
+> *Source.extension.vsixmanifest* çıkış dosyası için *extension.vsixmanifest* paketin ne zaman oluşturulur.
 
 ## <a name="uielement-list"></a>UIElement listesi
  **VSIX bildirim Tasarımcısı** şemanın en üst düzey bu öğelere karşılık gelen dört bölüm içerir:
@@ -40,7 +40,7 @@ Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bi
 
 - Varlıklar
 
-- Bağımlılıkları
+- Bağımlılıklar
 
   Başlık alanı aşağıdaki denetimleri içerir.
 

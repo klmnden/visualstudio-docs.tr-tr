@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427058"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
     İki proje içeren bir çözümü oluşturulur. Bunlar, Dsl ve DslPackage adlandırılır. Bir diyagram dosyası başka bir deyişle, adlandırılmış DslDefinition.dsl açılır.  
   
    > [!NOTE]
-   >  İki proje klasörlerdeki gördüğünüz kodu çoğunu DslDefinition.dsl oluşturulur. Bu nedenle, bu dosyada DSL'nizi çoğu değişiklikler yapılır.  
+   > İki proje klasörlerdeki gördüğünüz kodu çoğunu DslDefinition.dsl oluşturulur. Bu nedenle, bu dosyada DSL'nizi çoğu değişiklikler yapılır.  
   
    Kullanıcı arabirimi artık aşağıdaki resme benzer.  
   
@@ -104,7 +104,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 1. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç. Bu, çoğu DslDefinition.dsl kaynak kodundan yeniden oluşturur.  
   
    > [!NOTE]
-   >  DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. F5 tuşuna basın veya **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
@@ -171,7 +171,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
    Metin şablonu dosyaları herhangi bir sayıda projeye ekleyebilirsiniz. Her şablon bir sonuç dosyası oluşturur.  
   
 > [!NOTE]
->  DSL tanımı değiştirdiğinizde, güncelleştirmeniz sürece örnek metin şablonunun kod çalışmaz.  
+> DSL tanımı değiştirdiğinizde, güncelleştirmeniz sürece örnek metin şablonunun kod çalışmaz.  
   
  Daha fazla bilgi için [bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md) ve [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
  DSL tanımını değiştirmek istediğinizde, deneysel örneği kapatın ve ana tanım güncelleştirme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] örneği.  
   
 > [!NOTE]
->  DSL tanımını değiştirdikten sonra önceki sürümlerini kullanarak oluşturulan test modelleri bilgileri kaybedilebilir.  Örneğin, hata ayıklama çözüm bazı şekilleri ve bağlayıcıları içeren örnek adlı bir dosya içeriyor. DSL tanımınızı geliştirmek başlattıktan sonra bunların görünür olmaz ve dosyayı kaydettiğinizde, bunlar kaybolacak.  
+> DSL tanımını değiştirdikten sonra önceki sürümlerini kullanarak oluşturulan test modelleri bilgileri kaybedilebilir.  Örneğin, hata ayıklama çözüm bazı şekilleri ve bağlayıcıları içeren örnek adlı bir dosya içeriyor. DSL tanımınızı geliştirmek başlattıktan sonra bunların görünür olmaz ve dosyayı kaydettiğinizde, bunlar kaybolacak.  
   
  DSL'nizi için çok çeşitli uzantıları yapabilirsiniz. Aşağıdaki örnekler size bir izlenimi olanakları sunar.  
   
@@ -285,7 +285,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
          Örneğin, adını ayarlayın **belediye**.  
   
         > [!NOTE]
-        >  Gömme hedefi bir sınıftan devralmalıdır veya en az bir gömme ilişkisi hedef modelin kökü dışındaki her etki alanı sınıfı olmalıdır. Bu nedenle, sık gömme ilişkisi aracını kullanarak bir etki alanı sınıfı oluşturmak uygun.  
+        > Gömme hedefi bir sınıftan devralmalıdır veya en az bir gömme ilişkisi hedef modelin kökü dışındaki her etki alanı sınıfı olmalıdır. Bu nedenle, sık gömme ilişkisi aracını kullanarak bir etki alanı sınıfı oluşturmak uygun.  
   
     2. Yeni sınıfa, bir alan özelliği ekleyin, örneğin **adı**.  
   
@@ -296,7 +296,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
          ![DSL tanımının parçası: ailesi Ağaç kökü](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Başvuru ilişkilerini çapraz model ağacına bir bölümünden diğerine temsil eder.  
+        > Başvuru ilişkilerini çapraz model ağacına bir bölümünden diğerine temsil eder.  
   
 3. Model diyagramlarda kasabalarında şubeleri temsil etmek için bir şekil ekleyin.  
   

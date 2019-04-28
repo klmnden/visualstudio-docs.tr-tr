@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007847"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Çözüme dosyaları dahil etmek için modül kullanma
   Ne zaman dosyalarını yeni ana sayfalar gibi dosya türlerinin bakılmaksızın SharePoint sunucusuna dağıtmak isteyebilirsiniz zamanlar olabilir. Bunu yapmak için kullanabileceğiniz *modülleri* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] kod modülleri). Modüller, dosyaları bir SharePoint çözümünü kapsayıcılardır. Çözüm dağıtılırken, modül dosyalarında SharePoint sunucusundaki belirtilen klasöre kopyalanır.

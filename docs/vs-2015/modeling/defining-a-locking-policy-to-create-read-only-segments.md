@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422649"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Salt Okunur Kesimler Oluşturmak için Kilitleme İlkesi Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Olan Değiştirilemezlik API'si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gö
  Ayrıca, bir DSL yazarı olarak tanımlayabilirsiniz bir *kilitleme ilkesi.* İzin verilen, izin verilmiyor veya zorunlu hangi kilitleri kilitleme ilkesi tanımlar. Örneğin, bir DSL yayımladığınızda, yeni komutları ile genişletmek için üçüncü taraf geliştiriciler teşvik edebilir. Ancak belirli bölümlerini model salt okunur durumunu değiştirmesini önlemek için kilitleme ilkesi kullanabilirsiniz.  
   
 > [!NOTE]
->  Yansıma kullanarak kilitleme ilkesi atlatılabilir. Üçüncü taraf geliştiriciler için açık bir sınır sağlar, ancak güçlü güvenlik sağlamaz.  
+> Yansıma kullanarak kilitleme ilkesi atlatılabilir. Üçüncü taraf geliştiriciler için açık bir sınır sağlar, ancak güçlü güvenlik sağlamaz.  
   
  Daha fazla bilgi ve örnekler kullanılabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkId=186128) Web sitesi.  
   

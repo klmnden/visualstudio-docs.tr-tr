@@ -1,6 +1,6 @@
 ---
 title: Çözümleyicisi için kural kümeleri
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387694"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn çözümleyicilerini için kural kümeleri
 
@@ -25,7 +25,7 @@ Eski "FxCop" statik kod analizi için Roslyn Çözümleyicileri geçiriyorsanız
 
 ## <a name="use-analyzer-rule-sets"></a>Çözümleyicisi için kural kümeleri kullanma
 
-Çalıştırdıktan sonra [NuGet Çözümleyicisi paket yükleme](install-roslyn-analyzers.md), önceden tanımlanmış kural kümesi bulun, *rulesets* örneğin dizinine *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.analyzers\<sürüm > \rulesets*. Buradan, sürükleyin ve bırakın veya kopyalayıp yapıştırabilirsiniz, bir veya daha fazla Visual Studio projenize rulesets **Çözüm Gezgini**.
+Çalıştırdıktan sonra [NuGet Çözümleyicisi paket yükleme](install-roslyn-analyzers.md), önceden tanımlanmış kural kümesi bulun, *rulesets* dizin. Örneğin, başvurulan, `Microsoft.CodeAnalysis.FxCopAnalyzers` Çözümleyicisi paketini kendi rulesets dizininde bulabilirsiniz sonra *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<sürümü \>\rulesets*. Buradan, sürükleyin ve bırakın veya kopyalayıp yapıştırabilirsiniz, bir veya daha fazla Visual Studio projenize rulesets **Çözüm Gezgini**.
 
 Analizi için etkin kural kümesi bir kural oluşturmak için projeye sağ **Çözüm Gezgini** ve **özellikleri**. Proje özellik sayfaları'nda seçin **Kod Analizi** sekmesi. Altında **bu kural kümesini Çalıştır**seçin **Gözat**ve ardından proje dizinine kopyalanır istenen kural kümesi seçin. Artık yalnızca seçili kural kümesinde etkin bu kuralları için kural ihlalleri görürsünüz.
 

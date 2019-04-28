@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428719"
 ---
 # <a name="how-to-add-a-finder-method"></a>Nasıl yapılır: Bir Bulucu yöntemi ekleme
   Bir web bölümü veya listedeki varlıkların listesini görüntülemek İş Verileri Bağlantısı (BDC) hizmeti etkinleştirmek için oluşturmalısınız bir *Bulucu* yöntemi. Varlığın örneklerinin bir koleksiyonunu döndüren özel bir yöntem bir Bulucu metodudur. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608077"
 4. Tür tanımlayıcısını bir varlık koleksiyon türü tanımlayıcısı yapılandırın. Bir varlık koleksiyon türü tanımlayıcısı oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Varlığa bir belirli Bulucu metodunu eklediyseniz, bu adımı gerçekleştirmeniz gerekmez. Visual Studio, belirli Bulucu metodunu içinde tanımlanan tür tanımlayıcısını kullanır.
+   > Varlığa bir belirli Bulucu metodunu eklediyseniz, bu adımı gerçekleştirmeniz gerekmez. Visual Studio, belirli Bulucu metodunu içinde tanımlanan tür tanımlayıcısını kullanır.
 
 5. İçinde **Çözüm Gezgini**, oluşturulan hizmet kodu dosyası varlık için kısayol menüsünü açın ve ardından **kodu görüntüle**. Hizmet kodu dosyası hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608077"
      Aşağıdaki örnek bir koleksiyonunu döndürür `Contact` AdventureWorks örnek veritabanındaki verileri kullanarak SQL Server için varlıklar.
 
    > [!NOTE]
-   >  Değiştirin `ServerName` alanını sunucunuzun adıyla.
+   > Değiştirin `ServerName` alanını sunucunuzun adıyla.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

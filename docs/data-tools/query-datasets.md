@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402735"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 Bir veri kümesindeki belirli kayıtları aramak için kullanın `FindBy` DataTable yöntemi yazma tablonun satır koleksiyon üzerinde döngü veya kullanmak için kendi foreach deyimi [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -25,7 +25,7 @@ Bir veri kümesindeki belirli kayıtları aramak için kullanın `FindBy` DataTa
 Tablo ve sütun adları bir veri kümesi içinde varsayılan olarak büyük küçük harf duyarsız — diğer bir deyişle, "Müşteri" adlı bir veri kümesi tablosunda da için "Müşteri" olarak adlandırılabilir Bu, SQL Server dahil olmak üzere çok sayıda veritabanı adlandırma kuralları ile eşleşir. SQL Server'da veri öğelerinin adlarını yalnızca büyük küçük harfle ayırt varsayılan davranıştır.
 
 > [!NOTE]
->  Şemalarda tanımlanan veri öğelerinin adlarını büyük küçük harfe duyarlı olacak şekilde veri kümeleri farklı olarak XML belgeleri, duyarlıdır. Örneğin, "Müşteri" ve "Müşteri" olarak adlandırılan farklı bir tablo adında bir tablo tanımlamak şema şema protokol sağlar Küçük harfe göre farklılık öğeleri içeren bir şema, bir veri kümesi sınıfı oluşturmak için kullanıldığında, bu ad çakışmalarını yol açabilir.
+> Şemalarda tanımlanan veri öğelerinin adlarını büyük küçük harfe duyarlı olacak şekilde veri kümeleri farklı olarak XML belgeleri, duyarlıdır. Örneğin, "Müşteri" ve "Müşteri" olarak adlandırılan farklı bir tablo adında bir tablo tanımlamak şema şema protokol sağlar Küçük harfe göre farklılık öğeleri içeren bir şema, bir veri kümesi sınıfı oluşturmak için kullanıldığında, bu ad çakışmalarını yol açabilir.
 
 Büyük/küçük harfe duyarlılık ancak veri kümesi içinde verileri nasıl yorumlanacağını bir etken olabilir. Örneğin, bir veri kümesi tablodaki verileri filtreleme, arama ölçütlerini karşılaştırma büyük/küçük harfe olmasına bağlı olarak farklı sonuçlar döndürebilir. Filtreleme, aramayı ve veri kümesinin ayarlayarak sıralama büyük/küçük harf duyarlılığı denetleyebilirsiniz <xref:System.Data.DataSet.CaseSensitive%2A> özelliği. Veri kümesindeki tüm tabloları, varsayılan olarak bu özelliğin değerini devralır. (Bu özellik tek tek her tablo için tablo ayarlayarak kılabilirsiniz <xref:System.Data.DataTable.CaseSensitive%2A> özellik.)
 
@@ -68,7 +68,7 @@ Kullanabileceğiniz bir <xref:System.Data.DataRelation> çağırarak ilgili kay�
 Bu sayfa, türü belirlenmiş veri kümelerini kullanan örnekler sağlar. Yazılmayan veri kümeleri ilişkilerinde gezinme hakkında daha fazla bilgi için bkz: [gezinme DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Bir Windows Forms uygulamasında çalışan ve verileri görüntülemek için veri bağlama özellikleri kullanarak, tasarımcı tarafından oluşturulan form uygulamanız için yeterli işlevler sağlayabilir. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md). Özellikle, görmek [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
+> Bir Windows Forms uygulamasında çalışan ve verileri görüntülemek için veri bağlama özellikleri kullanarak, tasarımcı tarafından oluşturulan form uygulamanız için yeterli işlevler sağlayabilir. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md). Özellikle, görmek [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
 
 Aşağıdaki kod örnekleri, yazılan veri kümelerindeki ilişkiler yukarı ve aşağı gitmek nasıl ekleyebileceğiniz gösterilmektedir. Yazılan kod örneklerini kullanımı <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) ve oluşturulan FindBy*PrimaryKey* (`FindByCustomerID`) istenen satırı bulun ve ilgili kayıtları döndürmek için yöntemleri. Örnekleri derleme ve yalnızca varsa doğru bir şekilde çalıştırın:
 

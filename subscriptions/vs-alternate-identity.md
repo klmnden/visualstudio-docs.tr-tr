@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Azure DevOps ve Azure için kullanılacak Visual Studio aboneliğiniz için alternatif bir kimlik ekleme
 searchscope: vs subscription
 ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428111"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio aboneleri için kimlikleri
 

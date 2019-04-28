@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a600b3ce956867c98fb94435e6461b7bf7f73e1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1cb4a34f9947d2f5ee50488876d44042b4cb228
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400680"
 ---
 # <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 Sanal işlev tablosuna bir sanal işlev uzaklığını alır.
@@ -39,7 +39,7 @@ HRESULT get_virtualBaseOffset ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408480"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   [Kodunuzu geliştirmek için birim testleri kullanın](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Bu izlenecek yol, yönetilen kod için Microsoft birim testi çerçevesini kullanır. Test Gezgini testleri Test Gezgini için bağdaştırıcıları olan test çerçevelerini üçüncü parti birim çalıştırabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
+> Bu izlenecek yol, yönetilen kod için Microsoft birim testi çerçevesini kullanır. Test Gezgini testleri Test Gezgini için bağdaştırıcıları olan test çerçevelerini üçüncü parti birim çalıştırabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [izlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için bkz: [izlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
@@ -71,12 +71,12 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
 5. İçinde **adı** kutusuna `Bank` ve ardından **Tamam**.  
   
    > [!NOTE]
-   >  "Banka" zaten kullanılıyorsa proje için başka bir ad seçin.  
+   > "Banka" zaten kullanılıyorsa proje için başka bir ad seçin.  
   
     Yeni Banka projesi oluşturulur ve Çözüm Gezgini'nde Class1.cs dosyası Kod Düzenleyicisi'nde görüntülenir.  
   
    > [!NOTE]
-   >  Class1.cs dosyası Kod Düzenleyicisi'nde açık değilse, açmak için Çözüm Gezgini'nde Class1.cs dosyasını çift tıklayın.  
+   > Class1.cs dosyası Kod Düzenleyicisi'nde açık değilse, açmak için Çözüm Gezgini'nde Class1.cs dosyasını çift tıklayın.  
   
 6. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md).  
   

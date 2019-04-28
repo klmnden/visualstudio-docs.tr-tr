@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ef550f18a0d26e6e0cea9894382ff8fdecb4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 33ee57dc2576a9f8f40f1baa7c95f9e3bede2f7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406592"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce uygulamaları için kod erişimi güvenliği
 ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sınırlamalarına tabi olan. Bu nedenle, uygulamaları kod erişim güvenliği ve ClickOnce uygulamalarınızı buna göre yazma anlamak önemlidir.
@@ -43,7 +43,7 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
 - Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcının uygulama izinlerini vermek için istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.
 
   > [!NOTE]
-  >  Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).
+  > Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [güvenilir uygulama dağıtımına genel bakış](../deployment/trusted-application-deployment-overview.md).
 
   ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek için uygulamanıza kod erişim güvenlik izinlerini değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı bölge seçebilirsiniz. Örneğin, uygulamanız bir kuruluş uygulaması ise, kullanabileceğiniz **yerel Intranet** bölge. Uygulamanız bir Internet uygulaması ise, kullanabileceğiniz **Internet** bölge.
 

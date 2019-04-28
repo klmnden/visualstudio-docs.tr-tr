@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387799"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın
   Yerel SharePoint bağlantıları gözatabilirsiniz **Sunucu Gezgini**. Bu tekniği kullanarak, bir SharePoint sitesi bileşenleriyle sisteminizde gidebilirsiniz. SharePoint site bileşenlerini liste tanımları ve içerik türleri gibi görünen adlı bir düğüm **SharePoint bağlantıları** ağaç görünümünde **Sunucu Gezgini**. Görüntülenecek **Sunucu Gezgini**, menü çubuğunda, **görünümü** > **Sunucu Gezgini**. SharePoint site bileşenlerini görüntülenmesinin yanı sıra öğeleri kaldırma, özelliklerini görüntülemek veya kısayol menüsünden komutlarını kullanarak ağaç görünümü yenileyin.
 
 > [!IMPORTANT]
->  Bir SharePoint sitesi göz atmak için SharePoint site koleksiyonu yöneticisi olmalı ve Visual Studio yerel bilgisayarın yönetici olarak çalıştırıyor olmalısınız. Site Aksi takdirde, görünür **Sunucu Gezgini**, ancak kendi düğüm genişletilemiyor. Site koleksiyonu yöneticisi olup olmadığını doğrulamak için bir web tarayıcısında, açık sitesini açın **Site eylemleri** menüsünde seçin **Site izinleri**ve ardından **izinleri: Ekip sitesi** sayfasında **Site koleksiyonu yöneticileri** komutunu **Yönet** Şeritteki grubu. Bir site koleksiyonu yöneticisi olduğunuz adınızı metin kutusunda görüntülenir. Varsa **Site koleksiyonu yöneticileri** komut grubu Yönet Şerit üzerindeki görünmüyorsa, site koleksiyonu için Yönetici değilseniz ve site yöneticisinden uygun izinleri almak.
+> Bir SharePoint sitesi göz atmak için SharePoint site koleksiyonu yöneticisi olmalı ve Visual Studio yerel bilgisayarın yönetici olarak çalıştırıyor olmalısınız. Site Aksi takdirde, görünür **Sunucu Gezgini**, ancak kendi düğüm genişletilemiyor. Site koleksiyonu yöneticisi olup olmadığını doğrulamak için bir web tarayıcısında, açık sitesini açın **Site eylemleri** menüsünde seçin **Site izinleri**ve ardından **izinleri: Ekip sitesi** sayfasında **Site koleksiyonu yöneticileri** komutunu **Yönet** Şeritteki grubu. Bir site koleksiyonu yöneticisi olduğunuz adınızı metin kutusunda görüntülenir. Varsa **Site koleksiyonu yöneticileri** komut grubu Yönet Şerit üzerindeki görünmüyorsa, site koleksiyonu için Yönetici değilseniz ve site yöneticisinden uygun izinleri almak.
 
 ## <a name="server-explorer-nodes"></a>Sunucu Gezgini düğümü
  Her bir SharePoint sitesi bileşeninin bir düğüm tarafından temsil edilen **Sunucu Gezgini** ağaç görünümü altında **SharePoint bağlantıları**. Örneğin, görüntüleyen bir tartışma türünü temsil eden bir tartışma olarak adlandırılan bir içerik türü varsayılan SharePoint sitelerinde yer **tartışmaları** SharePoint sitesinin sayfası. Tartışma içerik türü, çeşitli alanları içerir. Bu alanları görüntülemek için **Sunucu Gezgini**, genişletme **içerik türü** düğümünü ve ardından **tartışma** düğümü. Altında bu var. gövdesi ve tartışma konu başlığı gibi birkaç alan düğümü

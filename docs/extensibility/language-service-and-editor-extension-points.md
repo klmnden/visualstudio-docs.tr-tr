@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4df68cc8a1f9271b43de59b7196e61ab82cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430999"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil hizmeti ve düzenleyici uzantı noktaları
 Düzenleyici, çoğu dil hizmeti özellikleri dahil olmak üzere Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşen parçalarına genişletebilirsiniz uzantı noktaları sağlar. Ana uzantı noktası kategorileri şunlardır:
@@ -113,7 +113,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Dosya adı uzantısına sahip bir içerik türüyle ilişkilendirmek için kullanmak <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.
 
 > [!NOTE]
->  Visual Studio'da dosya adı uzantılarını kullanarak kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> dil hizmeti paketi üzerinde. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF içerik türü, bu şekilde kayıtlı bir dosya adı uzantısı ile ilişkilendirir.
+> Visual Studio'da dosya adı uzantılarını kullanarak kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> dil hizmeti paketi üzerinde. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF içerik türü, bu şekilde kayıtlı bir dosya adı uzantısı ile ilişkilendirir.
 
  Dosya adı uzantısı içerik türü tanımını dışarı aktarmak için öznitelikleri şunlardır:
 
@@ -269,7 +269,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: bir kenarlığı ile ilişkili.
 
   > [!NOTE]
-  >  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).
+  > Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: genişletilmiş veya daraltılmış anahat içinde bölge ile ilişkilendirilmiş.
 
@@ -315,7 +315,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Bu biçim tanımı için bir etiket uygulamak için ayarladığınız (görünen adı değil) sınıfın ad özniteliği adı başvuru.
 
 > [!NOTE]
->  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).
+> Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).
 
 ## <a name="extend-adornments"></a>Kenarlıklar genişletme
  Kenarlıklar ya da bir metin görünümünde görüntülenen metin eklenebilir veya metnin kendisini görüntülemek görsel efektler tanımlayın. Her tür kendi kenarlığı tanımlayabilirsiniz <xref:System.Windows.UIElement>.
@@ -507,7 +507,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
 
  Ayrıca, aynı türden bir sağlayıcı uygulamanız gerekir:
 
@@ -520,7 +520,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
 
  Sağlayıcı aşağıdaki öznitelikleri ile birlikte dışarı aktarmanız gerekir:
 

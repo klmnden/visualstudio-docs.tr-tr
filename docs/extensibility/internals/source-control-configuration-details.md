@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428993"
 ---
 # <a name="source-control-configuration-details"></a>Kaynak Denetimi Yapılandırma Ayrıntıları
 Kaynak denetimi uygulamak için proje sistemi ya da aşağıdakileri yapmak için düzenleyici düzgün şekilde yapılandırmak gerekir:
@@ -41,7 +41,7 @@ Kaynak denetimi uygulamak için proje sistemi ya da aşağıdakileri yapmak içi
  Bir proje veya düzenleyen bir dosyayı kaydetmeden önce çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Proje dosyaları için bu çağrılar zaman bir proje dosyasını kaydetmeyi bilir çözümü tarafından otomatik olarak doldurulur. Düzenleyiciler sürece bu çağrıları yapmaktan sorumlu Düzenleyicisi uygulamasını `IVsPersistDocData2` yardımcı işlevini kullanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Düzenleyici uyguluyorsa `IVsPersistDocData2` bu şekilde, ardından çağrısı içinde `IVsQueryEditQuerySave2::QuerySaveFile` veya `IVsQueryEditQuerySave2::QuerySaveFiles` sizin yerinize yapılır.
 
 > [!NOTE]
->  Bu çağrılar sıd'lerde yaptığınız her zaman — diğer bir deyişle, birer birer düzenleyicinizi olduğunda iptal alabilirsiniz.
+> Bu çağrılar sıd'lerde yaptığınız her zaman — diğer bir deyişle, birer birer düzenleyicinizi olduğunda iptal alabilirsiniz.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Ekleme, kaldırma veya projedeki dosyaları yeniden adlandırmak için izin istemesi
  Bir proje eklemek, yeniden adlandırmak veya bir dosya veya dizin kaldırmadan önce uygun çağırmalıdır `IVsTrackProjectDocuments2::OnQuery*` ortamından izin istemek yöntemi. İzni verildi sonra proje işlemi tamamlayın ve ardından uygun çağrı `IVsTrackProjectDocuments2::OnAfter*` ortamı işleminin tamamlandığını bildirmek için yöntemi. Proje yöntemlerini çağırmanız gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> tüm dosyalar (örneğin, özel dosyaları) ve yalnızca üst dosyaları için arabirim. Dosya aramaları zorunludur, ancak dizin çağrıları isteğe bağlıdır. Dizin bilgileri projenizi sahip sonra uygun çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> yöntemleri, ancak bu bilgiler yok sonra ortamı dizin bilgileri çıkarımlar.

@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386004"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
  Güncelleştirmeleri gerçekleştirmek için sırasını ayarlama ekler, güncelleştirir ve silme işlemlerini ayrı ayrı sırasını ayarlar tüm değiştirilmiş verileri bir veri kümesinin tüm tablolarda kaydetmek için gereklidir. Hiyerarşik güncelleştirme etkinleştirildiğinde, ekler önce gerçekleştirilir sonra güncelleştirir ve siler. `TableAdapterManager` Sağlayan bir `UpdateOrder` özelliği, ilk olarak, güncelleştirmeleri gerçekleştirmek üzere sonra ekler ve siler.  
   
 > [!NOTE]
->  Güncelleştirme sırası her şey dahil olduğunu anlamak önemlidir. Güncelleştirme yapıldığında, diğer bir deyişle, ekleme ve silme kümesindeki tüm tabloların gerçekleştirilir.  
+> Güncelleştirme sırası her şey dahil olduğunu anlamak önemlidir. Güncelleştirme yapıldığında, diğer bir deyişle, ekleme ve silme kümesindeki tüm tabloların gerçekleştirilir.  
   
  Ayarlanacak `UpdateOrder` sürüklemeye sonra özelliği [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) bir forma seçin `TableAdapterManager` bileşeni Tepsi ve ardından `UpdateOrder` özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: Hiyerarşik güncelleştirme yaparken sırayı ayarlama](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
  Ancak, bazen dataset yedek kopyadan geri yüklemek isteyebilirsiniz. Otomatik artış değerlerini kullanırken bu gerçekleşebilir. Örneğin, kaydetme işlemi başarılı değil, otomatik artış değerleri kümesinde sıfırlanır ve veri kümesini otomatik artan değerleri oluşturmak devam eder. Bu, uygulamanızda kabul edilebilir olmayabilir, numaralandırma, boşluk bırakır. Durumlarda bu bir sorun olduğu `TableAdapterManager` sağlayan bir `BackupDataSetBeforeUpdate` özelliği, işlem başarısız olursa mevcut veri kümesini bir yedek kopyasıyla değiştirir.  
   
 > [!NOTE]
->  Yedekleme sırasında bellekte yalnızca kopyasıdır `TableAdapterManager.UpdateAll` yöntemi çalışıyor. Bu nedenle, programlı erişimi yoktur yedekleme bu veri kümesine özgün veri kümesinden değiştirir ya kapsamın dışına çıkıncaya çünkü hemen sonra `TableAdapterManager.UpdateAll` yöntemi tamamlandıktan çalışıyor.  
+> Yedekleme sırasında bellekte yalnızca kopyasıdır `TableAdapterManager.UpdateAll` yöntemi çalışıyor. Bu nedenle, programlı erişimi yoktur yedekleme bu veri kümesine özgün veri kümesinden değiştirir ya kapsamın dışına çıkıncaya çünkü hemen sonra `TableAdapterManager.UpdateAll` yöntemi tamamlandıktan çalışıyor.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Oluşturulan kodu hiyerarşik güncelleştirmeyi gerçekleştirmek için ' değiştirin  
  Değişiklik kümesindeki ilgili veri tablolarında veritabanına çağırarak kaydetmek `TableAdapterManager.UpdateAll` yöntemi ve ilişkili tabloları içeren bir veri kümesi adını geçirerek. Örneğin, `TableAdapterManager.UpdateAll(NorthwindDataset)` NorthwindDataset tüm tablolardaki için arka uç veritabanı güncelleştirmeleri göndermek için yöntemi.  
@@ -81,7 +81,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
  Oluşturulan kodu kaydetmek bir çağıran kod satırı içerecek `CustomersBindingSource.EndEdit` yöntemi. Özellikle, çağıran <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi ilk <xref:System.Windows.Forms.BindingSource>formuna eklenir. Diğer bir deyişle, bu kod yalnızca gelen sürüklediğiniz ilk tablo için oluşturulan **veri kaynakları** forma penceresi. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> Çağrısı şu anda düzenlenmekte olan herhangi bir veriye bağlı denetim işleminde değişiklikleri kaydeder. Odak ve bu nedenle, bir veri bağlı denetim hala varsa tıklayın **Kaydet** denetim kaydedilir, gerçek kaydetme önce tüm bekleyen düzenlemeler düğmesine ( `TableAdapterManager.UpdateAll` yöntemi).  
   
 > [!NOTE]
->  Dataset Designer yalnızca ekler `BindingSource.EndEdit` forma bırakılan ilk tablo için kod. Bu nedenle, bir çağırmak için kod satırı eklemeniz gerekir `BindingSource.EndEdit` formunda ilgili her tablo için yöntemi. Bu kılavuz için bu çağrı eklemek sahip olduğunuz anlamına gelir `OrdersBindingSource.EndEdit` yöntemi.  
+> Dataset Designer yalnızca ekler `BindingSource.EndEdit` forma bırakılan ilk tablo için kod. Bu nedenle, bir çağırmak için kod satırı eklemeniz gerekir `BindingSource.EndEdit` formunda ilgili her tablo için yöntemi. Bu kılavuz için bu çağrı eklemek sahip olduğunuz anlamına gelir `OrdersBindingSource.EndEdit` yöntemi.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Kod değişiklikleri kaydetmeden önce ilişkili tabloları için güncelleştirmek için  
   
@@ -95,7 +95,7 @@ Hiyerarşik güncelleştirme * tutarlılığı korurken (bir veri kümesinden ik
    Verileri bir veritabanına kaydetme önce ilgili alt tablo üzerinde değişiklikler işleniyor ek olarak, bir veri kümesi için yeni alt kayıtları eklemeden önce yeni oluşturulan işleme üst kayıtlar için de olabilir. Yeni alt kayıtları (veri kümesine eklenecek siparişler) yabancı anahtar kısıtlamalarını etkinleştirmeden önce başka bir deyişle, yeni üst kayıt (müşteri) eklemek veri kümesine olabilir. Bunu yapmak için alt kullanabilirsiniz `BindingSource.AddingNew` olay.  
   
 > [!NOTE]
->  Yeni üst kayıtlar işleme gerekip gerekmediğini, veri kaynağına bağlamak için kullanılan denetim türünü bağlıdır. Bu kılavuzda, üst tabloya bağlamak için tek tek denetimleri kullanın. Bu, yürütme yeni üst kaydı için ek kod gerektirir. Bunun yerine üst kayıtlar Karmaşık bağlama denetimde görüntülenen hoşlanıyorsanız <xref:System.Windows.Forms.DataGridView>, bu ek <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ana kayıt gerekli olmaz için çağırın. Temel alınan veri bağlama denetimi işlevlerini yürüten yeni kayıtları işleme olmasıdır.  
+> Yeni üst kayıtlar işleme gerekip gerekmediğini, veri kaynağına bağlamak için kullanılan denetim türünü bağlıdır. Bu kılavuzda, üst tabloya bağlamak için tek tek denetimleri kullanın. Bu, yürütme yeni üst kaydı için ek kod gerektirir. Bunun yerine üst kayıtlar Karmaşık bağlama denetimde görüntülenen hoşlanıyorsanız <xref:System.Windows.Forms.DataGridView>, bu ek <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ana kayıt gerekli olmaz için çağırın. Temel alınan veri bağlama denetimi işlevlerini yürüten yeni kayıtları işleme olmasıdır.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Yeni alt kayıtları eklemeden önce üst kayıtlar veri kümesini yürütmek için kodu eklemek için  
   

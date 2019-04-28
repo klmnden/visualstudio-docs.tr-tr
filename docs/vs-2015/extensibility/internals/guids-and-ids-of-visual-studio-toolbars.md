@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436273"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio Araç Çubuklarının GUID’leri ve Kimlikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775008"
 Bu konu Visual Studio tümleşik geliştirme ortamında (IDE) dahil edilen araç çubuklarını GUID ve ID değerlerini numaralandırır ve gruplarını içerir. Bu değerler, Visual Studio SDK'ın bir parçası olarak yüklenen .vsct dosyaları içinde tanımlanır. Daha fazla bilgi için [IDE-Defined komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Birçok Visual Studio için kullanılabilir araç çubukları Visual Studio ve GUID tanımlanmaz ve kimlik değerleri ortak değildir. Bu konu Visual Studio SDK .vsct dosyaları içinde tanımlanan araç çubukları listeler.
+> Birçok Visual Studio için kullanılabilir araç çubukları Visual Studio ve GUID tanımlanmaz ve kimlik değerleri ortak değildir. Bu konu Visual Studio SDK .vsct dosyaları içinde tanımlanan araç çubukları listeler.
 
  .Vsct dosyaları içinde tanımlanan IDE nesneleri ile çalışma hakkında daha fazla bilgi için bkz. [genişletme menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).
 
@@ -110,7 +110,7 @@ Bu konu Visual Studio tümleşik geliştirme ortamında (IDE) dahil edilen araç
  Araç çubukları görüntülenebilir doğrudan IDE'de veya araç pencereleri gibi **Çözüm Gezgini**. Araç pencereleri .vsct dosyaları içinde tanımlı değil çünkü araç penceresi araç çubukları tanımlı üst öğeye sahip değil. Bunun yerine, bunlar kodu yerleştirilir. Aşağıdaki tabloda, araç pencerelerini IDE içinde görünen araç çubuklarını ve içerdikleri komut gruplarını gösterir.
 
 > [!NOTE]
->  Araç çubukları ve grupları kullanma GUID `guidSHLMainMenu`, GUID:ID sözdizimi kullanılarak aksi belirtilmedikçe burada hariç. Araç için bir GUID belirtilmedikçe, bu araç çubuğundan Düzen grupları için de geçerlidir.
+> Araç çubukları ve grupları kullanma GUID `guidSHLMainMenu`, GUID:ID sözdizimi kullanılarak aksi belirtilmedikçe burada hariç. Araç için bir GUID belirtilmedikçe, bu araç çubuğundan Düzen grupları için de geçerlidir.
 
 |Araç penceresi|Araç Çubuğu|Gruplar|
 |-----------------|-------------|------------|

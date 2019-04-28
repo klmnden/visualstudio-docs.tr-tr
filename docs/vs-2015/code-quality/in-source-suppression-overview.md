@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426608"
 ---
 # <a name="in-source-suppression-overview"></a>Kaynak Bastırmaya Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Kaynak gizleme özelliği ekleyerek yönetilen kodda Kod Analizi ihlallerini gö
  Kaynak gizlemeleri yayın derlemelerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Kaynak gizleme işlem maliyetini nedeniyle, kaynak gizleme meta veriler dahil ederek uygulamanızın performansını da düşebilir.  
   
 > [!NOTE]
->  El kod bu öznitelikler kendiniz erişiminiz yok. Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Menü öğesi, C++ kodu için kullanılamıyor.  
+> El kod bu öznitelikler kendiniz erişiminiz yok. Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Menü öğesi, C++ kodu için kullanılamıyor.  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage özniteliği  
  Kod Analizi uyarı olarak sağ tıkladığınızda **hata listesi** ve ardından **iletileri gösterme**, **SuppressMessage** özniteliği, kodunuzda veya çok eklenir Projenin genel dosyası.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Ad alanı kapsamında bir uyarıyla gizlediğinizde, ad karşı uyarı bastırır. Ad alanı içindeki türleri karşı uyarı engellemez.  
+> Ad alanı kapsamında bir uyarıyla gizlediğinizde, ad karşı uyarı bastırır. Ad alanı içindeki türleri karşı uyarı engellemez.  
   
  Açık bir kapsam belirterek herhangi bir gizleme ifade edilebilir. Bu gizlemeleri genel düzeyde bulunmalıdır. Bir tür tasarlayarak üye düzeyinde gizleme belirtemezsiniz.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Hedef, her zaman tam öğe adı içerir.  
+> Hedef, her zaman tam öğe adı içerir.  
   
 ## <a name="global-suppression-file"></a>Küresel bir gizleme dosyası  
  Küresel bir gizleme dosyası genel düzeyi gizlemelerinin ya da bir hedef belirtmeyin gizlemeleri gizlemeleri tutar. Örneğin, derleme düzeyi ihlalleri gizlemeleri bu dosyada depolanır. Ayrıca, proje düzeyi ayarları bir formun arkasındaki kod için kullanılabilir olmadığından bazı ASP.NET gizlemeleri bu dosyada depolanır. Küresel bir gizleme oluşturulur ve projeniz için seçtiğiniz ilk kez eklendi **proje gizleme dosyası** seçeneği **iletileri gösterme** Hata Listesi penceresindeki komutu. Daha fazla bilgi için [nasıl yapılır: Menü öğesini kullanarak uyarıları bastırma](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388626"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL Gölgelendirici Hata Ayıklayıcısı
 Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgelendirici kodunun uygulamanızın gerçek koşullar altında nasıl çalıştığını anlamanıza yardımcı olur.
@@ -55,7 +55,7 @@ Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgele
 2. Ardışık Düzen aşamasının başlığının altındaki seçin **hata ayıklamayı Başlat**, küçük yeşil bir ok görünür.
 
     > [!NOTE]
-    >  HLSL hata ayıklayıcısına bu giriş noktası, karşılık gelen aşamanın yalnızca ilk gölgelendirici iş parçacığında (yani işlenen ilk köşe veya piksel) hata ayıklar. Piksel geçmişi bu gölgelendirici aşamalarının diğer iş parçacıklarına erişmek için kullanabilirsiniz.
+    > HLSL hata ayıklayıcısına bu giriş noktası, karşılık gelen aşamanın yalnızca ilk gölgelendirici iş parçacığında (yani işlenen ilk köşe veya piksel) hata ayıklar. Piksel geçmişi bu gölgelendirici aşamalarının diğer iş parçacıklarına erişmek için kullanabilirsiniz.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>HLSL hata ayıklayıcısını Grafik Piksel Geçmişi'nden başlatmak için
 
@@ -68,7 +68,7 @@ Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgele
     Seçilen gölgelendiricinin sağında, seçin **hata ayıklamayı Başlat**, küçük yeşil bir ok görünür.
 
    > [!NOTE]
-   >  HLSL hata ayıklayıcısına bu giriş noktası, ya seçilen çizim çağrısına, temel öğeye ve seçtiğiniz piksele karşılık gelen piksel gölgelendiricisi iş parçacığına ya da sonuçları çizim çağrısı, temel öğe ve seçmiş olduğunuz piksel tarafından ilişkilendirilen köşe gölgelendiricisi iş parçacıklarına hata ayıklama uygular. Köşe gölgelendiricileri durumunda, köşe gölgelendiricisi ayrıntılarını genişleterek giriş noktasını belirli bir köşeye kadar iyice daraltabilirsiniz.
+   > HLSL hata ayıklayıcısına bu giriş noktası, ya seçilen çizim çağrısına, temel öğeye ve seçtiğiniz piksele karşılık gelen piksel gölgelendiricisi iş parçacığına ya da sonuçları çizim çağrısı, temel öğe ve seçmiş olduğunuz piksel tarafından ilişkilendirilen köşe gölgelendiricisi iş parçacıklarına hata ayıklama uygular. Köşe gölgelendiricileri durumunda, köşe gölgelendiricisi ayrıntılarını genişleterek giriş noktasını belirli bir köşeye kadar iyice daraltabilirsiniz.
 
    HLSL hata ayıklayıcısı, gölgelendirici hatalarını ayıklamaya yönelik kullanma hakkında daha fazla örnek için bkz: [örnekler](graphics-diagnostics-examples.md) veya izlenecek yollar bağlantılı ayrıca bölümünde.
 

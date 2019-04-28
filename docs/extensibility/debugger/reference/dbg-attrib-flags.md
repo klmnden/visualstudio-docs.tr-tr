@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831d1326d88e70ffaba2cc0c242c55d7325be705
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 16e8b53985ab18a4b279fc645bde10f8ad0b2d79
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414233"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Çeşitli özniteliklerini açıklayan bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) veya [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) arabirimi. Üyesi [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapısı.
@@ -254,7 +254,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
->  Bu numaralandırma değerleri için C# derlemesinde gerçekten tanımlanmamış. Bunun yerine, kaynak dosyanız için tanımları kopyalamanız gerekir.
+> Bu numaralandırma değerleri için C# derlemesinde gerçekten tanımlanmamış. Bunun yerine, kaynak dosyanız için tanımları kopyalamanız gerekir.
 
  Bu bayraklar ayrıca bir nesne, örneğin, alt bağımsız değişkeni olarak geçirildiğinde filtrelemek için kullanılan [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Değerleri ile bit düzeyinde birleştirilebilir `OR`.
 

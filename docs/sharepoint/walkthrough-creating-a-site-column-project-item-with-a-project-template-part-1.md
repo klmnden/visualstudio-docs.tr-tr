@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430398"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>İzlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma
   SharePoint projeleri, bir veya daha fazla SharePoint Proje öğeleri için kapsayıcılardır. Visual Studio'da SharePoint Proje sisteminin, kendi SharePoint proje öğesi türleri oluşturarak ve ardından bunları bir proje şablonu ile ilişkilendirerek genişletebilirsiniz. Bu kılavuzda, bir site sütunu oluşturmak için bir proje öğesi türü tanımlayacağınızı ve bir site sütunu proje öğesi içeren yeni bir proje oluşturmak için kullanılan bir proje şablonu oluşturup.
@@ -75,7 +75,7 @@ ms.locfileid: "60060000"
 4. Genişletin **Visual Basic** veya **Visual C#** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 5. Proje şablonları listesinde seçin **VSIX projesi**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "60060000"
 2. Adlı bir SharePoint 2010 projesi oluşturma **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   >  İçinde **SharePoint Özelleştirme Sihirbazı**, seçmeyin **Grup çözümü olarak Dağıt** seçenek düğmesini.
+   > İçinde **SharePoint Özelleştirme Sihirbazı**, seçmeyin **Grup çözümü olarak Dağıt** seçenek düğmesini.
 
 3. Projeye bir boş öğe öğe ekleyin ve ardından öğe adı **alan1**.
 
@@ -175,7 +175,7 @@ ms.locfileid: "60060000"
 7. BaseSharePointProject projesini içeren dizin key.snk dosyasını seçin ve ardından **Ekle** düğmesi.
 
    > [!NOTE]
-   >  Bu kılavuzda, oluşturduğunuz proje şablonu, şablonu kullanılarak oluşturulan her proje oturum açmak için aynı key.snk dosyasını kullanır. Her bir proje örneği için bir başka key.snk dosyası oluşturmak için bu örnek genişletme öğrenmek için bkz: [izlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+   > Bu kılavuzda, oluşturduğunuz proje şablonu, şablonu kullanılarak oluşturulan her proje oturum açmak için aynı key.snk dosyasını kullanır. Her bir proje örneği için bir başka key.snk dosyası oluşturmak için bu örnek genişletme öğrenmek için bkz: [izlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 8. Aşağıdaki dosyalar BaseSharePointProject dizinde belirtilen klasörlerdeki eklemek için 5-8 adımları yineleyin:
 
@@ -654,7 +654,7 @@ ms.locfileid: "60060000"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `ProjectTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje şablonu içeren VSIX paketi tanımlar. Daha fazla bilgi için [ProjectTemplate öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
+    > Bu değer karşılık gelen `ProjectTemplate` extension.vsixmanifest dosyasındaki öğesi. Bu öğe, alt proje şablonu içeren VSIX paketi tanımlar. Daha fazla bilgi için [ProjectTemplate öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -667,7 +667,7 @@ ms.locfileid: "60060000"
 10. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -715,14 +715,14 @@ ms.locfileid: "60060000"
      Bu adım, hata ayıklama için kullanmak istediğiniz geliştirme bilgisayarında yerel SharePoint sitesini belirtir.
 
     > [!NOTE]
-    >  **Site URL'si** Site sütunu proje şablonu proje oluşturulduğunda, bu değer toplanması için bir sihirbazını sağlamadığından özelliği varsayılan olarak boştur. Bu değer için bir geliştirici ister ve ardından bu özelliği yeni projede yapılandıran bir sihirbaz ekleme konusunda bilgi edinmek için [izlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+    > **Site URL'si** Site sütunu proje şablonu proje oluşturulduğunda, bu değer toplanması için bir sihirbazını sağlamadığından özelliği varsayılan olarak boştur. Bu değer için bir geliştirici ister ve ardından bu özelliği yeni projede yapılandıran bir sihirbaz ekleme konusunda bilgi edinmek için [izlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 3. Seçin **F5** anahtarı.
 
      Site sütunu paketlenir ve belirtilen SharePoint sitesine dağıtılan **Site URL'si** projenin özelliği. Web tarayıcısı bu sitenin varsayılan sayfasına açılır.
 
     > [!NOTE]
-    >  Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
+    > Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
 
 4. Üzerinde **Site eylemleri** menüsünde seçin **Site Ayarları**.
 

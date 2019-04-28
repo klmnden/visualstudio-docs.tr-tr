@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423018"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Nasıl yapılır: Kaynaklara sahip olan bir projeyi derleme
 Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı arabirimi öğeleri kaynak dosyalara farklı diller için ayrılmış olması gerekir. Projeyi yalnızca dizeler kullanıyorsa, kaynak dosyalar metin dosyaları kullanabilirsiniz. Alternatif olarak, *.resx* dosyaları olarak kaynak dosyaları.

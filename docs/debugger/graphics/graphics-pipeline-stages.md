@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 042eebc6d672000aa43425a30e96a8ac41bcd8af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388534"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağrısı Direct3D grafik Ardışık düzenin her aşaması tarafından nasıl dönüştürdüğünü anlamanıza yardımcı olur.
@@ -46,7 +46,7 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
 - İçinde **grafik ardışık düzen aşamaları** penceresinde gölgelendirici için karşılık gelen gölgelendirici aşamasını bulun incelemeniz gerekebilir. Daha sonra Önizleme görüntüsünü gölgelendirici aşaması odkaz na nadpis izleyin — Örneğin, bağlantıyı izleyerek **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.
 
     > [!TIP]
-    >  Nesne sayısı **obj:30**, olduğu gibi nesne tablosu ve piksel geçmişini penceresi gibi grafik Çözümleyicisi arabirimi içinde bu gölgelendiriciyi tanımlar.
+    > Nesne sayısı **obj:30**, olduğu gibi nesne tablosu ve piksel geçmişini penceresi gibi grafik Çözümleyicisi arabirimi içinde bu gölgelendiriciyi tanımlar.
 
 #### <a name="to-debug-a-shader"></a>Gölgelendirici hata ayıklamak için
 
@@ -56,21 +56,21 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
  Ardışık Düzen Aşamaları penceresinde yalnızca çizim çağrısı sırasında etkin ardışık düzen aşamaları görselleştirir. Grafik ardışık düzeninin her aşamasında, önceki aşamaya girişten dönüştürür ve sonuç sonraki aşamaya geçer. İlk aşama — giriş derleyici — dizin ve köşe verileri uygulamanızdan; giriş olarak alır son aşama — çıkış Birleştiricisi — yeni piksel framebuffer geçerli içerikle birlikte çizilir veya işleme hedefi çıktısı, ekranda gördüğünüz son görüntü üretmek için olarak birleştirir.
 
 > [!NOTE]
->  Hesaplayıcı gölgelendiricilerde desteklenmez **grafik ardışık düzen aşamaları** penceresi.
+> Hesaplayıcı gölgelendiricilerde desteklenmez **grafik ardışık düzen aşamaları** penceresi.
 
  **Giriş Birleştiricisi** giriş derleyicisi, uygulamanız tarafından belirtilen dizin ve köşe verileri okur ve için grafik donanımının birleştirir.
 
  Ardışık Düzen Aşamaları penceresinde giriş Assembler çıkışı Tel Çerçeve model olarak görselleştirilir. Sonuç birine daha yakından bakalım için seçin **giriş Assembler** içinde **grafik ardışık düzen aşamaları** tam 3B Model Düzenleyicisi'ni kullanarak içinde birleştirilmiş köşeleri görüntülemek üzere penceresi.
 
 > [!NOTE]
->  Varsa `POSITION` anlam giriş derleyici çıktısında mevcut değil ve hiçbir şey görüntülenen **giriş derleyici** aşaması.
+> Varsa `POSITION` anlam giriş derleyici çıktısında mevcut değil ve hiçbir şey görüntülenen **giriş derleyici** aşaması.
 
  **Köşe gölgelendirici** köşe gölgelendirici aşaması skinning ve ışık dönüşüm gibi işlemleri genellikle köşeleri işler. Köşe gölgelendirici oluşturmak, alan köşeler aynı sayıda girdi olarak.
 
  Ardışık Düzen Aşamaları penceresinde, köşe gölgelendiricisi çıkışı bir Tel Çerçeve ızgara görüntüsü olarak görselleştirilir. Sonuç birine daha yakından bakalım için seçin **köşe gölgelendiricisi** içinde **grafik ardışık düzen aşamaları** Resim Düzenleyicisi'nde işlenen köşeleri görüntülemek üzere windows.
 
 > [!NOTE]
->  Varsa `POSITION` veya `SV_POSITION` köşe gölgelendiricisi çıkışı semantiği bulunmaz ve hiçbir şey görüntülenen **köşe gölgelendiricisi** aşaması.
+> Varsa `POSITION` veya `SV_POSITION` köşe gölgelendiricisi çıkışı semantiği bulunmaz ve hiçbir şey görüntülenen **köşe gölgelendiricisi** aşaması.
 
  **Kabuk gölgelendiricisi** (Direct3D 11 ve Direct3D 12) tanımlayan bir satır, üçgen veya dört gibi düşük düzey yüzey denetim noktaları Kabuk gölgelendirici aşaması işler. Çıktı olarak daha yüksek sıralı geometri düzeltme eki ve düzeltme eki sabitleri, sabit işlevi Mozaik döşeme aşaması için geçirilen oluşturur.
 

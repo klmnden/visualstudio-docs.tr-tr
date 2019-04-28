@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ada6ac52a9eacbd8ec0dee3940a9231564d79a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401526"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 İşlev bir kullanımını içerip içermediğini belirten bir bayrak alır [setjmp](/cpp/c-runtime-library/reference/setjmp) komut (ile eşleştirilmiş [longjmp](/cpp/c-runtime-library/reference/longjmp) komutu, C stili yöntemi özel durum işleme gelerek).
@@ -39,7 +39,7 @@ HRESULT get_hasSetJump(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 

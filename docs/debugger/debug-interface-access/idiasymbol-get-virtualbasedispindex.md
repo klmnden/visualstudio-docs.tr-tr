@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ad15c3474157f9858c4647c47249121bd386d9a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 435957fed1d6805adb8e1c982368d9b16ca76885
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400150"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 Sanal Taban öteleme tablosundaki simgenin dizinini alır.
@@ -39,7 +39,7 @@ HRESULT get_virtualBaseDispIndex (
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

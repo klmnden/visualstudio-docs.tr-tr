@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af4ac9e8dad60c28e5017c09f1f94ed7aaa00dfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430880"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio'da özel derleme olayları belirtme
 
@@ -53,7 +53,7 @@ DOS komut aynı söz dizimini derleme olayları izleyin, ancak makroları derlem
    Örnek: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
   > [!NOTE]
-  >  `%I` Yukarıdaki kodda kullanılmalıdır `%%I` toplu komut.
+  > `%I` Yukarıdaki kodda kullanılmalıdır `%%I` toplu komut.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

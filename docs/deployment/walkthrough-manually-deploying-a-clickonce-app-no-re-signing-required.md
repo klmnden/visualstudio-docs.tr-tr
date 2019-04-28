@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405849"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
  Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, uygulama müşterinin marka kullanabilirsiniz veya marka bilgilerinizi koruyabilirsiniz. Örneğin, uygulamanın tek bir özel uygulama ise, markanızı isteyebilirsiniz. Uygulamanın her müşteri için yüksek oranda özelleştirilmiş ise, müşterinin marka kullanmak isteyebilirsiniz. Dağıtmak üzere bir uygulama için bir kuruluş verdiğinizde .NET Framework 3.5, markanızı, yayımcı bilgileri ve güvenlik imza sağlar. Daha fazla bilgi için [başkalarının dağıtmak ClickOnce oluşturma uygulamaları](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  Bu izlenecek yolda dağıtımları el ile kullanarak komut satırı aracı oluşturduğunuz *Mage.exe* veya grafik aracı *MageUI.exe*. Dağıtımlar hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> Bu izlenecek yolda dağıtımları el ile kullanarak komut satırı aracı oluşturduğunuz *Mage.exe* veya grafik aracı *MageUI.exe*. Dağıtımlar hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolda adımları gerçekleştirmek için aşağıdakiler gerekir:
@@ -51,7 +51,7 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 2. Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.
 
    > [!NOTE]
-   >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.
+   > Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.
 
 3. Adlı bir alt dizin oluşturma **bin** ve yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere tüm uygulama dosyalarınızı buraya kopyalayın.
 
@@ -101,7 +101,7 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 3. Geçerli dağıtım sürümünün adını bir dizin oluşturun. Bu uygulamayı ilk kez ise, büyük olasılıkla seçeceğiniz **1.0.0.0**.
 
    > [!NOTE]
-   >  Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.
+   > Dağıtımınızın sürümünden uygulama dosyalarınızı sürümünden farklı olabilir.
 
 4. Taşıma \\ **bin** 2. adımda oluşturduğunuz dizine dizin.
 

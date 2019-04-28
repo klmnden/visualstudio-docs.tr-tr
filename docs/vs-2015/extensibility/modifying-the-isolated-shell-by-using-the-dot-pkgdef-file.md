@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386030"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Kullanarak yalıtılmış Kabuğu değiştirme. Pkgdef dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663972"
 .Pkgdef dosyası, yalıtılmış Kabuk uygulaması özelleştirmek için kullanabileceğiniz ayarları destekler. Bu, uygulamanın bir bilgisayarda yüklendiğinde ve uygulama başladığında, Visual Studio shell tarafından başvurulan oluşturulan değerleri belirtir. Ayarlar dosyasındaki ilgili kayıt defteri anahtara göre düzenlenir.  
 
 > [!WARNING]
->  Visual Studio başladığında VSPackage .vsixmanifest dosyasında bildirilmeyen .pkgdef dosyalar taranmaz olduğunu unutmayın.  
+> Visual Studio başladığında VSPackage .vsixmanifest dosyasında bildirilmeyen .pkgdef dosyalar taranmaz olduğunu unutmayın.  
 
  Her bir anahtar tarafından ya da tanımlanmış bölümleri .pkgdef dosyası içeren `[$RootKey$]` veya `[$RootKey$\` *alt*`]`, uygulama için kök anahtarı $RootKey$ olduğu yer.  
 
@@ -53,7 +53,7 @@ ms.locfileid: "59663972"
  Aşağıdaki bölümlerde, Visual Studio Kabuğu yalıtılmış modda davranışını etkileyen belirli kayıt defteri değerleri açıklanmaktadır. Ayrıca, bu dosyada uygulama için ek kayıt defteri değerlerini tanımlayabilirsiniz.  
 
 > [!NOTE]
->  Ardından bir ayar .pkgdef dosyasında sağlanmazsa, karşılık gelen bir giriş kayıt defterinde yapılır.  
+> Ardından bir ayar .pkgdef dosyasında sağlanmazsa, karşılık gelen bir giriş kayıt defterinde yapılır.  
 
 ## <a name="settings"></a>Ayarlar  
  Aşağıdaki tabloda tanımlanan [altında $RootKey$] değerleri açıklanmaktadır.  

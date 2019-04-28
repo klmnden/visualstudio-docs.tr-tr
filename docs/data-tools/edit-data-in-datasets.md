@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402852"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri tablolardaki verileri düzenleyin. İşlem ekleme, güncelleştirme ve tablodaki kayıtları silme içerebilir. Verilere bağlı formunda, hangi alanların kullanıcı tarafından düzenlenebilir olduğunu belirtebilirsiniz. Bu gibi durumlarda, böylece değişiklikleri veritabanına geri daha sonra gönderilebilecek tüm değişiklik izleme veri bağlama altyapı işler. Verileri program aracılığıyla düzenlemeleri yapın ve bu değişiklikleri veritabanına geri göndermek istediğinize, nesneleri ve değişiklik izleme bunu yöntemleri kullanmanız gerekir.
@@ -58,7 +58,7 @@ Güncelleştirmeleri veri kaynağına geri göndermek uygulamanızı gereksinimi
      Bu yöntem, fiziksel olarak kayıt kaldırmaz. Bunun yerine, kayıt silme işlemi için işaretler.
 
     > [!NOTE]
-    >  Count özelliği alırsanız bir <xref:System.Data.DataRowCollection>, sonuçta elde edilen sayı silinme için işaretlenmiş kayıtları içerir. Doğru bir silme için işaretlenen olmayan kayıt sayısını almak için bakarak koleksiyon döngü <xref:System.Data.DataRow.RowState%2A> her kaydın özellik. (Kayıt silinmek üzere işaretlenmiş bir <xref:System.Data.DataRow.RowState%2A> , <xref:System.Data.DataRowState.Deleted>.) Alternatif olarak, filtreleri satır durumuna dayalı bir veri kümesinin veri görünümü oluşturabilir ve buradan count özelliği edinin.
+    > Count özelliği alırsanız bir <xref:System.Data.DataRowCollection>, sonuçta elde edilen sayı silinme için işaretlenmiş kayıtları içerir. Doğru bir silme için işaretlenen olmayan kayıt sayısını almak için bakarak koleksiyon döngü <xref:System.Data.DataRow.RowState%2A> her kaydın özellik. (Kayıt silinmek üzere işaretlenmiş bir <xref:System.Data.DataRow.RowState%2A> , <xref:System.Data.DataRowState.Deleted>.) Alternatif olarak, filtreleri satır durumuna dayalı bir veri kümesinin veri görünümü oluşturabilir ve buradan count özelliği edinin.
 
 Aşağıdaki örnek nasıl çağrılacağını gösterir <xref:System.Data.DataRow.Delete%2A> yöntemin ilk satırında işaretlemek için `Customers` tablo silindi olarak:
 

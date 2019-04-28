@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426327"
 ---
 # <a name="finding-and-replacing-text"></a>Metin Bulma ve Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Bul ve Visual Studio Kod Düzenleyicisi ve belirli metin temelli çıktı pencer
  Bul ve Değiştir normal ifadeler için bkz: [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md).  
   
 > [!TIP]
->  **Bul/komut** kutusu araç çubuğu denetimi olarak hala kullanılabilir, ancak artık varsayılan olarak görünür. Görüntüleyebileceğiniz **Bul/komut** kutusunu **Düğme Ekle veya Kaldır** üzerinde **standart** araç çubuğu ve ardından **Bul**. Daha fazla bilgi için [Bul/komut kutusu](../ide/find-command-box.md).  
+> **Bul/komut** kutusu araç çubuğu denetimi olarak hala kullanılabilir, ancak artık varsayılan olarak görünür. Görüntüleyebileceğiniz **Bul/komut** kutusunu **Düğme Ekle veya Kaldır** üzerinde **standart** araç çubuğu ve ardından **Bul**. Daha fazla bilgi için [Bul/komut kutusu](../ide/find-command-box.md).  
   
 ## <a name="find-and-replace-control"></a>Bul ve Değiştir denetimi  
  **Bul ve Değiştir** denetimi kod düzenleyici penceresinin sağ alt köşesinde görünür. **Bul ve Değiştir** denetimi belirtilen arama dizesinin geçerli belgede her geçtiği yeri hemen vurgular. Seçim yaparak başka bir oluşumdan diğerine gidebilirsiniz **Sonrakini Bul** düğmesini veya **Öncekini Bul** arama denetimin üzerindeki düğme.  

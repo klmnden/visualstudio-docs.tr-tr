@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416731"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl yapılır: Bulma ve düzenleme proje ve öğe şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60091245"
  Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları, yüklü ve özel şablon konumları mevcut dizin yapılarını yansıtır. Sizin için anlamlı bir şekilde şablonlarınızı düzenlemek için bu dizin yapılarını değiştirebilirsiniz.  
   
 > [!NOTE]
->  Yeni bir kategori programlama dili düzeyinde oluşturulamıyor. Yeni kategori her bir dilin yalnızca oluşturulabilir.  
+> Yeni bir kategori programlama dili düzeyinde oluşturulamıyor. Yeni kategori her bir dilin yalnızca oluşturulabilir.  
   
  Belirli bir dil için yüklü ve özel şablonlar için dizin yapıları aynı yapıda değilse (diğer bir deyişle, vardır altında diğer var olmayan dizinleri altında bir klasör) görünür kategoriler dizisine **yeni Proje** iletişim tüm kategorilerin birleşme olacaktır.  
   

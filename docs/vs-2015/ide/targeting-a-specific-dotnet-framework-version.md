@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429242"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Belirli Bir .NET Framework Sürümünü Hedefleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio sürümünü veya profilini projenizi hedefleyecek şekilde istedi
  [Visual Studio Çoklu Sürüm Desteğine Genel Bakış](../ide/visual-studio-multi-targeting-overview.md)  
  Visual Studio çoklu sürüm desteğinin özelliklerine genel bakış sağlar.  
   
- [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET Framework’ün Bir Sürümünü Hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Belirli bir belirleme konusunda ayrıntıları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , Visual Basic, Visual C# veya görsel F# proje.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

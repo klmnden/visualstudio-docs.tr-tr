@@ -17,12 +17,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433403"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Kod Oluşturma ve T4 Metin Şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ namespace Fabrikam.FirstJob
  Daha fazla bilgi için [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Şablonları sözdizimi hakkında daha fazla bilgi için bkz. [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Terim *modeli* bazen bir veya daha fazla şablonları tarafından okunan veriler tanımlamak için kullanılır. Modeli, herhangi bir dosyadan veya veritabanından herhangi bir biçimdeki olabilir. Bir UML modeli veya bir etki alanına özgü dil modeli yok. 'Model' yalnızca veri kod benzeyen yerine iş kavramlarını bağlamında tanımlanabilir gösterir.  
+> Terim *modeli* bazen bir veya daha fazla şablonları tarafından okunan veriler tanımlamak için kullanılır. Modeli, herhangi bir dosyadan veya veritabanından herhangi bir biçimdeki olabilir. Bir UML modeli veya bir etki alanına özgü dil modeli yok. 'Model' yalnızca veri kod benzeyen yerine iş kavramlarını bağlamında tanımlanabilir gösterir.  
   
  Metin şablonu dönüştürme özelliği adlı *T4*.  
   
@@ -110,7 +110,7 @@ namespace Fabrikam.FirstJob
  [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)  
  Bir metin şablonu dosyasının söz dizimi.  
   
- [İzlenecek yol: Metin şablonları kullanarak kod oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [İzlenecek yol: Metin Şablonları Kullanarak Kod Oluşturma](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Kod oluşturmayı kullan yollarından biri Tanıtımı.  
   
  [Bir T4 Metin Şablonuna İlişkin Hata Ayıklama](../modeling/debugging-a-t4-text-template.md)  

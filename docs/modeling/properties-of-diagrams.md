@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999259"
 ---
 # <a name="properties-of-diagrams"></a>Diyagramların özellikleri
 Diyagramları oluşturulan tasarımcıdaki nasıl görüntüleneceğini belirten özellikleri ayarlayabilirsiniz. Örneğin, bir metin için varsayılan rengi diyagramda belirtebilirsiniz.
@@ -33,7 +33,7 @@ Diyagramları oluşturulan tasarımcıdaki nasıl görüntüleneceğini belirten
 |Özel Öznitelikler|Oluşturulan kodun sınıf için öznitelikleri eklemek için kullanılır.|\<yok >|
 |Çift oluşturur türetilmiş|Varsa `True`, hem temel sınıf hem de (geçersiz kılmalar aracılığıyla özelleştirmeyi desteklemek için) bir kısmi sınıf oluşturulur. Daha fazla bilgi için [geçersiz kılmak ve oluşturulan sınıflar genişletmek](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Özel oluşturucu vardır.|Varsa `True`, kaynak kodunda özel bir oluşturucu sağlanacaktır. Daha fazla bilgi için [geçersiz kılmak ve oluşturulan sınıflar genişletmek](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Devralma değiştiricisi|Devralma diyagramından oluşturulan kaynak kodu sınıf türünü açıklar (`none`, `abstract`, veya `sealed`).|Hiçbiri|
+|Devralma değiştiricisi|Devralma diyagramından oluşturulan kaynak kodu sınıf türünü açıklar (`none`, `abstract`, veya `sealed`).|Yok.|
 |Temel Diyagram|Bu diyagram, temel sınıf.|(hiçbiri)|
 |Ad|Bu diyagram adı.|Geçerli ad|
 |Ad Alanı|Bu diyagram ile bağlantılı olan ad alanı.|Geçerli ad alanı|

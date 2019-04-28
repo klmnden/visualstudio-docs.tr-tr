@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402640"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Bir WebView denetiminde bir UWP uygulamasında hata ayıklama
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081768"
 4. (İsteğe bağlı) Visual Studio Express olmayan sürümleri, seçerek just-in-time (JIT) hata ayıklama devre dışı **Araçlar > Seçenekler > hata ayıklama > Just-ın-Time**, ve JIT devre dışı bırakmak için betik hata ayıklama.
 
     > [!NOTE]
-    >  JIT hata ayıklama devre dışı bırakarak, iletişim kutuları için bazı sayfalarında meydana gelen işlenmeyen özel durumları gizleyebilirsiniz. Visual Studio Express JIT hata ayıklama her zaman devre dışı bırakıldı.
+    > JIT hata ayıklama devre dışı bırakarak, iletişim kutuları için bazı sayfalarında meydana gelen işlenmeyen özel durumları gizleyebilirsiniz. Visual Studio Express JIT hata ayıklama her zaman devre dışı bırakıldı.
 
 5. Hata ayıklamayı başlatmak için F5 tuşuna basın.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081768"
      ![Hedef seçimi JavaScript konsol penceresinde](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  Konsolunu kullanarak, tek bir etkileşim kurabilir `WebView`, `iFrame`, paylaşmak sözleşme veya aynı anda çalışan web. Her öğesi, web platformu ana bilgisayarı (WWAHost.exe) ayrı bir örneğini gerektirir. Bir kerede bir ana bilgisayar ile etkileşim kurabilir.
+    > Konsolunu kullanarak, tek bir etkileşim kurabilir `WebView`, `iFrame`, paylaşmak sözleşme veya aynı anda çalışan web. Her öğesi, web platformu ana bilgisayarı (WWAHost.exe) ayrı bir örneğini gerektirir. Bir kerede bir ana bilgisayar ile etkileşim kurabilir.
 
 6. Görüntüleme ve uygulamanızda değişkenleri değiştirin ya da açıklandığı gibi konsol komutlarını kullanın [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).
 

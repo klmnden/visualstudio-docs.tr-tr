@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 71d7da44eacecfc8a06f202a27f7758d6eb2ca98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415651"
 ---
 # <a name="supported-event-types"></a>Desteklenen olay türleri
 Visual Studio hata ayıklama, şu anda aşağıdaki olay türlerini destekler:
@@ -43,7 +43,7 @@ Visual Studio hata ayıklama, şu anda aşağıdaki olay türlerini destekler:
     Arabirimler [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) ve [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) durdurma olayları örnekleridir.
 
   > [!NOTE]
-  >  Zaman uyumsuz durdurma olayları desteklenmez. Bu zaman uyumsuz durdurma olay göndermek için bir hatadır.
+  > Zaman uyumsuz durdurma olayları desteklenmez. Bu zaman uyumsuz durdurma olay göndermek için bir hatadır.
 
 ## <a name="discussion"></a>Tartışma
  Olayların kullanımınız, sizin DE tasarımına bağlıdır. Gönderilen her olay türünü DE tasarlarken hangi ayarlanan kendi özniteliklere göre belirlenir. Örneğin, bir DE gönderebiliriz bir [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) olarak zaman uyumsuz olay sırasında başka bir durdurma olay olarak gönderebilir.
@@ -51,7 +51,7 @@ Visual Studio hata ayıklama, şu anda aşağıdaki olay türlerini destekler:
  Aşağıdaki tabloda, hangi olayları, ek olarak olay türleri hangi program ve iş parçacığı parametreler gereklidir belirtir. Herhangi bir olay, zaman uyumlu olabilir. Hiçbir olay, zaman uyumlu olması gerekiyor.
 
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) arabirimi tüm olaylar için gereklidir.
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) arabirimi tüm olaylar için gereklidir.
 
 |Olay|IDebugProgram2|IDebugThread2|Olayları durduruluyor|
 |-----------|--------------------|-------------------|---------------------|

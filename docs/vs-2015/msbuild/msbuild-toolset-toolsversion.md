@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426311"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
  Bu konunun önceki kısımlarında açıklandığı gibi MSBuild olan temel araçları yolunu belirtmek için bir kayıt defteri anahtarını kullanır. Bir alt anahtar varsa, MSBuild ek araçlarını içeren bir alt-araç yolu belirlemek için kullanır. Bu durumda, araç takımını hem anahtarlarında tanımlanan özellik tanımları birleştirerek tanımlanır.  
   
 > [!NOTE]
->  Araç takımı özellik adları çakışıyorsa, alt anahtar yolunu tanımlanan değerin kök anahtar yolu için tanımlanan değer geçersiz kılar.  
+> Araç takımı özellik adları çakışıyorsa, alt anahtar yolunu tanımlanan değerin kök anahtar yolu için tanımlanan değer geçersiz kılar.  
   
  Alt araç takımları varken etkin hale `VisualStudioVersion` özellik oluşturun. Bu özellik, bu değerlerden birini alabilir:  
   

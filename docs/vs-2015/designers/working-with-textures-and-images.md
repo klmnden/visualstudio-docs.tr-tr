@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403470"
 ---
 # <a name="working-with-textures-and-images"></a>Dokularla ve Görüntülerle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54795938"
 İçerisinde Resim Düzenleyicisi kullanabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dokuları ve görüntüleri oluşturmak ve değiştirmek için. Resim Düzenleyicisi, DirectX uygulaması geliştirmede kullanılan olanlar gibi zengin doku ve resim biçimleri destekler.  
   
 > [!NOTE]
->  Resim Düzenleyicisi simgeleri veya işaretçiler gibi düşük Renk görüntülerini desteklemiyor. Oluşturun veya bu tür görüntülerini değiştirmek için kullanın [simgeler için görüntü Düzenleyicisi](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> Resim Düzenleyicisi simgeleri veya işaretçiler gibi düşük Renk görüntülerini desteklemiyor. Oluşturun veya bu tür görüntülerini değiştirmek için kullanın [simgeler için görüntü Düzenleyicisi](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Dokularla ve görüntülerle  
  Dokularla ve görüntülerle, temel düzeyde, yalnızca tablolar Grafik uygulamalarında visual ayrıntı sağlamak için kullanılan veri var. Nasıl kullanıldığına bağlı bir dokuyu veya görüntü sağlayan ayrıntı türüne bağlıdır, ancak rengi örnekleri, alfa (saydam) değerlerini, yüzey için normal değerler ve yükseklik değerlerini ortak örnek verilebilir. Bir doku şekli gösterimi ile birlikte kullanılmak üzere tasarlanmıştır doku ve resim arasındaki birincil fark olduğu — genellikle bir 3B modeli — tam bir nesneyi veya Sahneyi, ancak görüntü ifade etmek için genellikle bir tek başına bir nesneyi veya Sahneyi gösterimidir .  

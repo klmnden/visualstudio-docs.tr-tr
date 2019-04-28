@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420931"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Bir VSTO eklentisinin performansını iyileştirme
   Office uygulamaları kapatın ve böylece bunlar, hızlı başlangıç için oluşturduğunuz VSTO Add-Ins iyileştirerek kullanıcılarınıza daha iyi bir deneyim sunmak, öğeleri ve diğer görevleri gerçekleştirebilirsiniz. Ayrıca, VSTO eklentisi için Outlook ise, VSTO eklenti olacak olasılığını azaltabilirsiniz kötü performans nedeniyle devre dışı. Aşağıdaki stratejileri uygulayarak, VSTO eklentisinin performansını artırabilirsiniz:
@@ -93,7 +93,7 @@ ms.locfileid: "60071827"
 - Dağıtım bildirimleri dijital imzalarını doğrulama.
 
   > [!NOTE]
-  >  Bu yaklaşım, kullanıcıların bilgisayarlarında güvenli bir konuma VSTO eklenti dağıtırsanız, gerekli değildir.
+  > Bu yaklaşım, kullanıcıların bilgisayarlarında güvenli bir konuma VSTO eklenti dağıtırsanız, gerekli değildir.
 
   Daha fazla bilgi için [Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071827"
  Ayrı bir iş parçacığı (örneğin, uzun süre çalışan görevleri, veritabanı bağlantıları veya diğer ağ çağrıları tür) uzun süren görevler gerçekleştirmeyi düşünün. Daha fazla bilgi için [Office'te iş parçacığı desteği](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Office nesne modelini çağıran tüm kod ana iş parçacığında yürütmeniz gerekir.
+> Office nesne modelini çağıran tüm kod ana iş parçacığında yürütmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

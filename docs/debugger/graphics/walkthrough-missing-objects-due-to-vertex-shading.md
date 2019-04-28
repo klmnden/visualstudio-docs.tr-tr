@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388610"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek yol: Köşe Gölgeleme Nedeniyle Eksik Nesneler
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] köşe gölgelendirici aşaması sırasında oluşan bir hata nedeniyle eksik bir nesne incelemek için grafik tanılama araçları.
 
  Bu örneklerde bu görevler gösterilir:
 
--   Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.
+- Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.
 
--   Kullanarak **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.
+- Kullanarak **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.
 
--   Kullanarak **HLSL hata ayıklayıcısı** köşe gölgelendiricisi incelemek için.
+- Kullanarak **HLSL hata ayıklayıcısı** köşe gölgelendiricisi incelemek için.
 
--   Kullanarak **grafik olay çağrı yığını** yanlış bir HLSL sabiti kaynağını bulmaya yardımcı olacak.
+- Kullanarak **grafik olay çağrı yığını** yanlış bir HLSL sabiti kaynağını bulmaya yardımcı olacak.
 
 ## <a name="scenario"></a>Senaryo
  Eksik bir nesnenin bir 3B uygulamada sık karşılaşılan nedenlerinden oluşur köşe gölgelendiricisi nesnenin köşe hatalı veya beklenmedik bir şekilde dönüştürür — Örneğin, nesne çok küçük bir boyuta ölçeklendirilir veya kamera göründüğü şekilde dönüştürülmüş , yerine önündeki.
@@ -61,7 +61,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../
     İçinde **grafik ardışık düzen aşamaları** penceresinde **giriş Assembler** aşaması nesne geometrisinin, dönüştürülen önce gösterir ve **köşe gölgelendiricisi** aşama aynı gösterir Bunu dönüştürüldükten sonra nesne. Bu senaryoda, görüntülendiğinde eksik nesne buldunuz bilmeniz **giriş Assembler** aşama ve hiçbir şey görüntülenir **köşe gölgelendiricisi** aşaması.
 
    > [!NOTE]
-   >  Varsa diğer geometri aşamaları — Örneğin, kabuk gölgelendiricisi, etki alanı gölgelendiricisi ve geometri gölgelendirici aşamaları — nesneyi işlemek, sorunun nedenini olması olabilir. Genellikle, erken aşama sonucu görüntülenmez veya beklenmedik bir şekilde görüntülenir sorun ilgilidir.
+   > Varsa diğer geometri aşamaları — Örneğin, kabuk gölgelendiricisi, etki alanı gölgelendiricisi ve geometri gölgelendirici aşamaları — nesneyi işlemek, sorunun nedenini olması olabilir. Genellikle, erken aşama sonucu görüntülenmez veya beklenmedik bir şekilde görüntülenir sorun ilgilidir.
 
 4. Eksik bir nesneye karşılık gelen bir çizim çağrısı ulaştığında durdurun. Bu senaryoda, **grafik ardışık düzen aşamaları** penceresi geometri (giriş Assembler küçük resim gösterilir) GPU verildiğini gösterir, ancak yanlış sırasında bir sorun nedeniyle işleme hedefi görünmüyor Köşe gölgelendirici aşaması (köşe gölgelendiricisi küçük resim gösterilir):
 
@@ -104,7 +104,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../
     ![Nesnenin sabit arabelleğini ayarlayan kodu](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Uygulamanız aynı anda hata ayıklaması yapıyorsanız bu konumda bir kesme noktası ayarlayabilirsiniz ve sonraki kare işlendiğinde ulaşılır. Ardından üyelerini inceleyebilirsiniz `m_marbleConstantBufferData` onaylamak için değerini `projection` üyesi sabit arabelleğini dolduğunda tümü sıfır olarak ayarlayın.
+   > Uygulamanız aynı anda hata ayıklaması yapıyorsanız bu konumda bir kesme noktası ayarlayabilirsiniz ve sonraki kare işlendiğinde ulaşılır. Ardından üyelerini inceleyebilirsiniz `m_marbleConstantBufferData` onaylamak için değerini `projection` üyesi sabit arabelleğini dolduğunda tümü sıfır olarak ayarlayın.
 
    Burada sabit arabelleğini doldurulur konum bulun ve değerleri değişkeninden geldiğini bulmak sonra `m_marbleConstantBufferData`, sonraki adıma nereden bulmaktır `m_marbleConstantBufferData.projection` üye tümü sıfır olarak ayarlanır. Kullanabileceğiniz **tüm başvuruları Bul** hızla değerini değiştirir kodunu tarama `m_marbleConstantBufferData.projection`.
 

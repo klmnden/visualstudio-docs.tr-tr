@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402682"
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 Kullanarak yüklü bir ayırma kanca işlevini [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), bellek tahsis, bırakılan veya serbest her zaman çağrılır. Bu tür bir kanca birçok farklı amaçlar için kullanabilirsiniz. Daha sonra çözümlemek için ayırma bilgileri günlüğe kaydetmek veya nasıl bir uygulama yetersiz bellek durumları gibi ayırma desenlerini incelenmesi işleme test kullanın.
 
 > [!NOTE]
->  Kısıtlama C çalışma zamanı kitaplık işlevleri açıklandığı bir ayırma kanca işlevini kullanma hakkında bilmeniz [ayırma kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
+> Kısıtlama C çalışma zamanı kitaplık işlevleri açıklandığı bir ayırma kanca işlevini kullanma hakkında bilmeniz [ayırma kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
  Bir ayırma kanca işlevini, aşağıdaki örnekte olduğu gibi bir prototipe sahip olmalıdır:
 

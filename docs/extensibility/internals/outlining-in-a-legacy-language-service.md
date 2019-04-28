@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422859"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Ana Hat Oluşturma
 Anahat oluşturma, karmaşık bir program bir genel bakış veya anahat Daralt mümkün kılar. Örneğin, C# ' de tüm yöntemler yöntem imzası gösteren tek bir satır için daraltılabilirler. Ayrıca, yapılar ve sınıflar yalnızca yapılar ve sınıflar adlarını göstermek üzere daraltılabilir. Tek bir yöntem içinde deyim yalnızca ilk satır göstererek genel akışını göstermek için karmaşık mantık daratılmadan `foreach`, `if`, ve `while`.
@@ -25,7 +25,7 @@ Anahat oluşturma, karmaşık bir program bir genel bakış veya anahat Daralt m
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz: [izlenecek yol: Anahat oluşturma](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="enabling-support-for-outlining"></a>Anahat oluşturma için desteğini etkinleştirme
  `AutoOutlining` Kayıt defteri girişini otomatik anahatlandırma etkinleştirmek için 1 olarak ayarlanır. Bir dosya yüklendiğinde veya gizli bölgeleri belirleyin ve ana hat oluşturma karakterleri göstermek için değiştirilen otomatik anahat oluşturma tüm kaynak bir ayrıştırma ayarlar. Ana hat oluşturmayı da el ile kullanıcı tarafından denetlenebilir.

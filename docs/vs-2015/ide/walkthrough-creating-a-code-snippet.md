@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388340"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>İzlenecek yol: Kod parçacığı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109815"
 Yalnızca birkaç adımda bir kod parçacığı oluşturabilirsiniz. Tek yapmak için ihtiyacınız olan bir XML dosyası oluşturun, uygun öğeleri doldurmak ve kodunuzu ekleyin. Kodunuza başvurular ve değiştirme parametreleri de ekleyebilirsiniz. Kod parçacığını kod parçacıkları yöneticisindeki İçe Aktar düğmesini kullanarak Visual Studio yüklemenize ekleyebilirsiniz (**Araçlar/kod parçacıkları Yöneticisi**).  
   
 > [!TIP]
->  Kod parçacıkları daha kolayca yazılacağı hakkında daha fazla bilgi için aşağıdaki gibi topluluk araçları için CodePlex Web sitesinde arama [parçacık Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Kod parçacıkları daha kolayca yazılacağı hakkında daha fazla bilgi için aşağıdaki gibi topluluk araçları için CodePlex Web sitesinde arama [parçacık Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Parçacık şablonu  
  Temel parçacık şablonu aşağıda verilmiştir:  

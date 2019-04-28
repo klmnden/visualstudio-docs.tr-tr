@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420229"
 ---
 # <a name="messaging-activity-designers"></a>Mesajlaşma Etkinlik Tasarımcıları
 Mesajlaşma etkinlik tasarımcıları oluşturmak ve göndermek ve almak Mesajlaşma etkinlikleri yapılandırmak için kullanılan [!INCLUDE[indigo1](../includes/indigo1-md.md)] iletileri içinden bir [!INCLUDE[wf](../includes/wf-md.md)] uygulama. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] Beş Mesajlaşma etkinlikleri tanıtır ve [!INCLUDE[wfd1](../includes/wfd1-md.md)] bir iş akışı içinde Mesajlaşma yönetmenizi sağlayan iki yeni Şablon tasarımcıları sağlar. Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular Kılavuzu nasıl kullanılacağı hakkında sağlamaya [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  

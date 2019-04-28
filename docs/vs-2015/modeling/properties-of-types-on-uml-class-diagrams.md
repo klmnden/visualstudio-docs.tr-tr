@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387782"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki türlerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60062236"
 UML sınıf diyagramında bir *türü* bir sınıf, arabirim veya numaralandırma.  
   
 > [!NOTE]
->  Bu konu UML sınıf diyagramlarındaki türlerin özellikleri hakkındadır. Daha fazla bilgi için aşağıdaki konulara bakın:  
+> Bu konu UML sınıf diyagramlarındaki türlerin özellikleri hakkındadır. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
 - [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
   

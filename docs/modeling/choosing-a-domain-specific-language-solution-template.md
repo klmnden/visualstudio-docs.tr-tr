@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62424069"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Etki Alanına Özgü Dil Çözümü Şablonu Seçme
 Bir etki alanına özgü dil çözümü oluşturmak için etki alanına özgü dil Tasarımcısı Sihirbazı'nda kullanılabilir olan çözüm şablonlarından birini seçin. Oluşturmak istediğiniz dili en çok benzeyen bir şablon seçerek başlangıç çözüme yapmanız değişiklikleri en aza indirebilirsiniz.

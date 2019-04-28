@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387722"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC modeli tasarım araçlarına genel bakış
   İVB Tasarımcısı kullanarak bir iş verileri bağlantısı (BDC) modeli tasarlayabilirsiniz **BDC yöntem ayrıntıları** penceresinde ve **BDC Gezgini**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596574"
  Düğümler seçerken **BDC Gezgini**, seçtiğiniz her bir düğümün özellikleri görünür **özellikleri** penceresi. Bu özelliklerin çoğu model dosyası özniteliğine karşılık gelir. En üstündeki arama kutusunu kullanarak model arayabilirsiniz **BDC Gezgini**.
 
 > [!NOTE]
->  **BDC Gezgini** tanımlayıcıları, özel özellikler, yerelleştirilmiş dizeleri, ilişkilendirme grupları, Eylemler, filtre tanımlayıcıları, eylem denetim listeleri ve varsayılan parametre değerlerini görüntülemez.
+> **BDC Gezgini** tanımlayıcıları, özel özellikler, yerelleştirilmiş dizeleri, ilişkilendirme grupları, Eylemler, filtre tanımlayıcıları, eylem denetim listeleri ve varsayılan parametre değerlerini görüntülemez.
 
 ### <a name="define-type-descriptors"></a>Tür tanımlayıcıları tanımlayın
  Kullanım **BDC Gezgini** tür tanımlayıcısı tanımlamak için. BDC Gezgini, bir tür tanımlayıcı bir kez tanımlamanızı ve daha sonra bu tür tanımlayıcıyı modelinizdeki başka bir yerde yeniden sağlar. Bunu gerçekleştirmek için bir tür tanımlayıcı kopyalayıp başka bir parametre yapıştırın veya tür tanımlayıcısı.
 
 > [!NOTE]
->  Özgün bir tür tanımlayıcı değişiklikler, bu tür tanımlayıcıyı kopyalarını etkilemez.
+> Özgün bir tür tanımlayıcı değişiklikler, bu tür tanımlayıcıyı kopyalarını etkilemez.
 
  Daha fazla bilgi için [nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

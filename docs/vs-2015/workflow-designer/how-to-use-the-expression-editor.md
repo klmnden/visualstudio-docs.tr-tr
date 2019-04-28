@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408376"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: İfade Düzenleyicisini Kullanma
 İfade Düzenleyicisi olduğu bir [!INCLUDE[wfd1](../includes/wfd1-md.md)] birçok iş akışı etkinliklerinde girme ve şu ifadeleri değerlendirme bir yol kullanılan bir denetim. İfade Düzenleyicisi düzenleme deneyimi, IntelliSense dahil olmak üzere tam özellikli bir IDE sağlar, renklendirme Paramınfo, diğer özellikler arasında hata ilişkilendirmelerini. Bunu girildikten sonra derleyici ifadesini doğrular. İfade geçersizse, bir hata simgesi görüntülenir. Düzenleyici olarak de açılabilir bir **ifade Düzenleyicisi** iletişim kutusu.  
@@ -32,7 +32,7 @@ ms.locfileid: "60057192"
 - Daha sonra yeniden barındırılan iş akışı Tasarımcısı'nda ifade Düzenleyicisi üzerinde odaklanmak, bir metin kutusu gibi davranır. Yeniden barındırılan iş akışı Tasarımcısı'nda odağı kaybettiğinde ifade Düzenleyicisi gibi normal bir TextBlock yeniden görünür.  
   
 > [!NOTE]
->  IntelliSense için ifade Düzenleyicisi yalnızca içinde kullanılabilir [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Hem de [!INCLUDE[vs2010](../includes/vs2010-md.md)] ve derleyici ifade girildiği sonra ifade geçersiz bir hata simgesi ifade düzenleyicisini görüntüler yeniden barındırılan senaryoları doğrular.  
+> IntelliSense için ifade Düzenleyicisi yalnızca içinde kullanılabilir [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Hem de [!INCLUDE[vs2010](../includes/vs2010-md.md)] ve derleyici ifade girildiği sonra ifade geçersiz bir hata simgesi ifade düzenleyicisini görüntüler yeniden barındırılan senaryoları doğrular.  
   
 ### <a name="using-the-expression-editor"></a>İfade Düzenleyicisi kullanma  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60057192"
 2. Ekleme, örneğin, <xref:System.Activities.Statements.Assign> etkinlik akışınıza.  
   
     > [!NOTE]
-    >  Birden çok iş akışı etkinlikleri ifade düzenleyicileri vardır. İfade TextBlock'lar değişken tasarımcısını, bağımsız değişken tasarımcısını ve dinamik bağımsız değişken tasarımcısını da görünür. <xref:System.Activities.Statements.Assign> Etkinliği, örnek olarak kullanılır.  
+    > Birden çok iş akışı etkinlikleri ifade düzenleyicileri vardır. İfade TextBlock'lar değişken tasarımcısını, bağımsız değişken tasarımcısını ve dinamik bağımsız değişken tasarımcısını da görünür. <xref:System.Activities.Statements.Assign> Etkinliği, örnek olarak kullanılır.  
   
 3. Sol ifade Düzenleyicisi için etkinlik Tasarımcısı'nda <xref:System.Activities.Statements.Assign> etkinlik.  
   

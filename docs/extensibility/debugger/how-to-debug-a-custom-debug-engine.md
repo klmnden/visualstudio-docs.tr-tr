@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411236"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama
 Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> yöntemi. Yani DE örneğini denetiminde başlatılır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proje türü denetleme. Ancak, söz konusu örneğine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DE hata ayıklaması yapılamıyor. Aşağıda, özel DE hata ayıklama olanak tanıyan adımlardır.
 
 > [!NOTE]
->  :     "Bir özel hata ayıklama altyapısında hata ayıklama" yordamda iliştirebilmek için önce başlatmak DE beklemelisiniz. Başlangıcına DE başlatıldığında görüntülenen sizin DE yakın bir ileti kutusu yerleştirin, bu noktada eklemek ve ardından devam etmek için ileti kutusunu temizleyin. Tümünü yakala bu şekilde DE olayları.
+> :     "Bir özel hata ayıklama altyapısında hata ayıklama" yordamda iliştirebilmek için önce başlatmak DE beklemelisiniz. Başlangıcına DE başlatıldığında görüntülenen sizin DE yakın bir ileti kutusu yerleştirin, bu noktada eklemek ve ardından devam etmek için ileti kutusunu temizleyin. Tümünü yakala bu şekilde DE olayları.
 
 > [!WARNING]
->  Aşağıdaki yordamlar denemeden önce yüklenmiş uzaktan hata ayıklama olması gerekir. Bkz: [uzaktan hata ayıklama](../../debugger/remote-debugging.md) Ayrıntılar için.
+> Aşağıdaki yordamlar denemeden önce yüklenmiş uzaktan hata ayıklama olması gerekir. Bkz: [uzaktan hata ayıklama](../../debugger/remote-debugging.md) Ayrıntılar için.
 
 ## <a name="debug-a-custom-debug-engine"></a>Özel hata ayıklama altyapısında hata ayıklama
 

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384051"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL araçlarını Visual Studio'da
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
  ![LINQ to SQL Tasarımcı](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL Tasarımcı")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Yalnızca 1:1 eşleme ilişkileri desteklediğinden, bir Basit Nesne İlişkisel eşleyicisidir. Diğer bir deyişle, bir varlık sınıfı yalnızca 1:1 eşleme ilişkisi olan bir veritabanı tablosu veya görünümü olabilir. Birleştirilmiş bir tabloya bir varlık sınıfı eşleme gibi karmaşık eşleme desteklenmiyor; Entity Framework için karmaşık eşleme kullanın. Ayrıca, bir tek yönlü bir kod oluşturucuyu Tasarımcısı olur. Başka bir deyişle, Tasarımcı yüzeyine yaptığınız değişiklikleri kod dosyasında yansıtılır. El ile yapılan kod dosyası değil yansıtılır [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Kod dosyasında el ile yaptığınız tüm değişiklikler Tasarımcı kaydedilir ve kod yeniden oluşturulursa üzerine yazılır. Kullanıcı kodu ekleyin ve tarafından oluşturulan sınıflar genişletme hakkında daha fazla bilgi için [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], bkz: [nasıl yapılır: O/R tasarımcısı tarafından oluşturulan kodu genişletme](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Yalnızca 1:1 eşleme ilişkileri desteklediğinden, bir Basit Nesne İlişkisel eşleyicisidir. Diğer bir deyişle, bir varlık sınıfı yalnızca 1:1 eşleme ilişkisi olan bir veritabanı tablosu veya görünümü olabilir. Birleştirilmiş bir tabloya bir varlık sınıfı eşleme gibi karmaşık eşleme desteklenmiyor; Entity Framework için karmaşık eşleme kullanın. Ayrıca, bir tek yönlü bir kod oluşturucuyu Tasarımcısı olur. Başka bir deyişle, Tasarımcı yüzeyine yaptığınız değişiklikleri kod dosyasında yansıtılır. El ile yapılan kod dosyası değil yansıtılır [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Kod dosyasında el ile yaptığınız tüm değişiklikler Tasarımcı kaydedilir ve kod yeniden oluşturulursa üzerine yazılır. Kullanıcı kodu ekleyin ve tarafından oluşturulan sınıflar genişletme hakkında daha fazla bilgi için [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], bkz: [nasıl yapılır: O/R tasarımcısı tarafından oluşturulan kodu genişletme](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="creating-and-configuring-the-datacontext"></a>DataContext yapılandırma ve oluşturma
  Siz ekledikten sonra bir **LINQ to SQL sınıfları** öğesi projeye ve açık [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], boş bir tasarım yüzeyinde boş bir temsil eden <xref:System.Data.Linq.DataContext> yapılandırılması hazır. <xref:System.Data.Linq.DataContext> tasarım yüzeyine sürüklediğiniz ilk öğesi tarafından sağlanan bağlantı bilgileriyle yapılandırıldı... Bu nedenle, <xref:System.Data.Linq.DataContext> ilk öğesinden tasarım yüzeyine bırakılan bağlantı bilgilerini kullanarak yapılandırılır. Hakkında daha fazla bilgi için <xref:System.Data.Linq.DataContext> sınıfı bakın [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -53,7 +53,7 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
  Oluşturabileceğiniz <xref:System.Data.Linq.DataContext> çağıran yöntemleri (eşleştirilmiş) saklı yordamları ve işlevleri sürükleyerek **Sunucu Gezgini**/**veritabanı Gezgini** üzerine[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Saklı yordamları ve işlevleri eklenir [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] yöntemleri olarak <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
->  Saklı yordamları ve işlevleri sürüklediğinizde **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], dönüş türü oluşturulan <xref:System.Data.Linq.DataContext> yöntemi farklıdır Öğeyi Bırak yere bağlı olarak. Daha fazla bilgi için [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
+> Saklı yordamları ve işlevleri sürüklediğinizde **Sunucu Gezgini**/**veritabanı Gezgini** üzerine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], dönüş türü oluşturulan <xref:System.Data.Linq.DataContext> yöntemi farklıdır Öğeyi Bırak yere bağlı olarak. Daha fazla bilgi için [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Bir DataContext varlık sınıfları ve veritabanı arasında veri kaydetmek için saklı yordamları kullanmak için yapılandırma
  Daha önce belirtildiği gibi oluşturabileceğiniz <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri çağıran yöntemleri. Ayrıca, aynı zamanda için varsayılan kullanılabilir saklı yordamlar atayabilirsiniz [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ekleme, güncelleştirme gerçekleştiren ve siler çalışma zamanı davranışı. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).

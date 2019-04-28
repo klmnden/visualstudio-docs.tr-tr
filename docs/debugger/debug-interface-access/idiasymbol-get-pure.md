@@ -1,45 +1,47 @@
 ---
 title: Idiasymbol::get_pure | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_pure method
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 3958558a46af614a4ecb4b73577b3bafa491b4fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2ee8b08c724f88c2fcbde7e2001aa89b47442e61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401246"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
-Saf işlev olup olmadığını belirten bir bayrak alır sanal.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sözdizimi
-
-```C++
-HRESULT get_pure ( 
-   BOOL* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parametreler
- `pRetVal`
-
-[out] Döndürür `TRUE` işlev saf ise sanal; Aksi halde döndürür `FALSE`.
-
-## <a name="return-value"></a>Dönüş Değeri
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
-
+Saf işlev olup olmadığını belirten bir bayrak alır sanal.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp#  
+HRESULT get_pure (   
+   BOOL* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `pRetVal`  
+ [out] Döndürür `TRUE` işlev saf ise sanal; Aksi halde döndürür `FALSE`.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
+  
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

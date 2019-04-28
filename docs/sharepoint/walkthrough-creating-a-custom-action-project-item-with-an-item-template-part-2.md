@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430461"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>İzlenecek yol: Bir öğe şablonu, bölüm 2 ile özel bir eylem proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve Visual Studio'da bir öğe şablonunu ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonunuzu yeni bir proje öğesi örneğini bir projeye eklemek için kullandıkları, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.
@@ -34,7 +34,7 @@ ms.locfileid: "60081144"
 - Hata ayıklama ve test Sihirbazı.
 
 > [!NOTE]
->  Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.
+> Bir örnekten indirebileceğiniz [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , özel etkinlikler için iş akışı oluşturma işlemi gösterilmektedir.
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu kılavuzu izlemeden için öncelikle CustomActionProjectItem çözüm tamamlayarak oluşturmanız gerekir [izlenecek yol: Bir öğe şablonu, bölüm 1 ile özel bir eylem proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081144"
 2. XAML Görünümü'nde geçerli XAML aşağıdaki XAML ile değiştirin. XAML başlık içerir, denetimleri özel eylem ve Gezinti düğmelerinin pencerenin alt kısmındaki davranışını belirtmek için bir kullanıcı Arabirimi tanımlar.
 
     > [!NOTE]
-    >  Bu kodu ekledikten sonra projenizi bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
+    > Bu kodu ekledikten sonra projenizi bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  Bu XAML içinde oluşturulan pencerenin türetilir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> temel sınıfı. Visual Studio için özel bir WPF iletişim kutusu eklediğinizde, bu sınıf diğer iletişim kutuları Visual Studio ile tutarlı bir stil sağlamak için ve kalıcı iletişim kutuları ile oluşabilecek sorunları önlemek için iletişim kutusu türetilmesi öneririz. Daha fazla bilgi için [oluşturma ve yönetme kalıcı iletişim kutuları](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Bu XAML içinde oluşturulan pencerenin türetilir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> temel sınıfı. Visual Studio için özel bir WPF iletişim kutusu eklediğinizde, bu sınıf diğer iletişim kutuları Visual Studio ile tutarlı bir stil sağlamak için ve kalıcı iletişim kutuları ile oluşabilecek sorunları önlemek için iletişim kutusu türetilmesi öneririz. Daha fazla bilgi için [oluşturma ve yönetme kalıcı iletişim kutuları](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Visual Basic projesi geliştiriyorsanız kaldırmak `ItemTemplateWizard` ad alanından `WizardWindow` sınıf adını `x:Class` özniteliği `Window` öğesi. XAML ilk satırında öğesidir. İşiniz bittiğinde, ilk satırı aşağıdaki koda benzemelidir:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081144"
      Özel eylem paketlenir ve tarafından belirtilen SharePoint sitesine dağıtılan **Site URL'si** projeyi ve web tarayıcısı özelliği bu sitenin varsayılan sayfasına açılır.
 
     > [!NOTE]
-    >  Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** düğmesi.
+    > Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** düğmesi.
 
 2. SharePoint sitesinin listeleri alanında seçin **görevleri** bağlantı.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081144"
 - [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Nasıl yapılır: Proje Şablonlarıyla Sihirbazlar Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Varsayılan özel eylem konumları ve kimlikleri](http://go.microsoft.com/fwlink/?LinkId=181964)

@@ -1,52 +1,54 @@
 ---
 title: Idiasymbol::get_container | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_container method
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
-author: mikejo5000
+caps.latest.revision: 9
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 9ca0b183f0616705ec61475c4570fa11ce89640d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 23b8d43931b880ff61ec9871f9f5984b98833c28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402045"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-Bu işlev, bu sembol üst/kapsayıcı temsil eden bir sembol için bir işaretçi alır.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sözdizimi
-
-```C++
-HRESULT get_container(
-   IDiaSymbol **pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parametreler
- `pRetVal`
-
-[out] Bir işaretçi döndüren bir `IDiaSymbol` bu simgenin kapsayıcı hakkında bilgileri içeren.
-
-## <a name="return-value"></a>Dönüş Değeri
- Başarılıysa S_OK döndürür; Aksi takdirde S_FALSE veya bir hata kodu döndürür.
-
+Bu işlev, bu sembol üst/kapsayıcı temsil eden bir sembol için bir işaretçi alır.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp#  
+HRESULT get_container(  
+   IDiaSymbol **pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `pRetVal`  
+ [out] Bir işaretçi döndüren bir `IDiaSymbol` bu simgenin kapsayıcı hakkında bilgileri içeren.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılıysa S_OK döndürür; Aksi takdirde S_FALSE veya bir hata kodu döndürür.  
+  
 > [!NOTE]
->  S_FALSE dönüş değeri, özellik simge için kullanılabilir olmadığı anlamına gelir.
-
-## <a name="requirements"></a>Gereksinimler
-
-|Gereksinim|Açıklama|
-|-----------------|-----------------|
-|Üst bilgi:|dia2.h|
-|Sürüm:|DIA SDK v8.0|
-
-## <a name="see-also"></a>Ayrıca Bkz.
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> S_FALSE dönüş değeri, özellik simge için kullanılabilir olmadığı anlamına gelir.  
+  
+## <a name="requirements"></a>Gereksinimler  
+  
+|Gereksinim|Açıklama|  
+|-----------------|-----------------|  
+|Üst bilgi:|dia2.h|  
+|Sürüm:|DIA SDK v8.0|  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

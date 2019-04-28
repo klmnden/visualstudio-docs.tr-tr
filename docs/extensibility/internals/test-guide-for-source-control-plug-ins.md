@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429918"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak Denetimi Eklentileri için Test Kılavuzu
 Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Test en yaygın alanlara ek olarak bazı sorunlu olabilecek daha karmaşık alanları kapsamlı bir bakış sağlanır. Bu genel bakış, test çalışmalarının kapsamlı bir liste olarak tasarlanmamıştır.
 
 > [!NOTE]
->  Bazı hata düzeltmeleri ve geliştirmeleri en son [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, var olan kaynak denetimi daha önce önceki sürümlerini kullanırken karşılaşılan değil eklentileri ile ilgili sorunlar ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hiçbir eklenti için önceki sürümden itibaren yapılan değişiklikler olsa bile, var olan kaynak denetimi eklentisi Bu bölümde, numaralandırılan alanlarda test önemle tavsiye edilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Bazı hata düzeltmeleri ve geliştirmeleri en son [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, var olan kaynak denetimi daha önce önceki sürümlerini kullanırken karşılaşılan değil eklentileri ile ilgili sorunlar ortaya [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hiçbir eklenti için önceki sürümden itibaren yapılan değişiklikler olsa bile, var olan kaynak denetimi eklentisi Bu bölümde, numaralandırılan alanlarda test önemle tavsiye edilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="common-preparation"></a>Ortak hazırlama
  Bir makine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve yüklü, hedef kaynak denetimi eklentisi gereklidir. Benzer şekilde yapılandırılmış bir ikinci makine, açık kaynak denetimi testlerden bazıları için kullanılabilir.
@@ -51,7 +51,7 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
 ## <a name="test-areas-covered-in-this-section"></a>Bu bölümde yer alan test alanlarını
 
-- [Test alanı 1: / Açık kaynak denetiminden Ekle](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Test Alanı 1: Kaynak Denetimine Ekleme/Kaynak Denetiminden Açma](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle
 
@@ -59,9 +59,9 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
     - Durum 1c: Kaynak denetiminden çözüm ekleyin
 
-- [Test alanı 2: Kaynak denetiminden alma](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Test Alanı 2: Kaynak Denetiminden Alma](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Test alanı 3: Kullanıma almayı geri al / gözden geçirin](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Test Alanı 3: Kullanıma Alma/Kullanıma Almayı Geri Alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - 3. durum: Kullanıma almayı geri al / gözden geçirin
 
@@ -75,7 +75,7 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
     - Büyük/küçük harf 3e: Kullanıma almayı geri al
 
-- [Test alanı 4: Teslim etme](../../extensibility/internals/test-area-4-check-in.md)
+- [Test Alanı 4: İade Etme](../../extensibility/internals/test-area-4-check-in.md)
 
     - Büyük/küçük harf 4a: Değiştirilen öğeler
 
@@ -83,7 +83,7 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
     - 4c. durum: Ekleme projeleri
 
-- [Test alanı 5: Kaynak denetimini Değiştir](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Test Alanı 5: Kaynak Denetimini Değiştirme](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - Büyük/küçük harf 5a: bağlama
 
@@ -91,11 +91,11 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
     - Durum 5c: yeniden bağlayın
 
-- [Test alanı 6: DELETE](../../extensibility/internals/test-area-6-delete.md)
+- [Test Alanı 6: Silme](../../extensibility/internals/test-area-6-delete.md)
 
-- [Test alanı 7: Paylaş](../../extensibility/internals/test-area-7-share.md)
+- [Test Alanı 7: Paylaşma](../../extensibility/internals/test-area-7-share.md)
 
-- [Test alanı 8: Eklenti değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Test Alanı 8: Eklenti Değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - Büyük/küçük harf 8a: Otomatik değiştirme
 

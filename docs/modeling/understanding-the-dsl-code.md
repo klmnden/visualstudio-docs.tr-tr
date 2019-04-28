@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386700"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 
@@ -131,7 +131,7 @@ Tuşuna **F5** ve bu çözüm şablonu ile aşina değilseniz denemeler yapın. 
   Etki alanı modeli temsil eden sınıf. Öğesinden türetilen <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  Bu modelin kök sınıfı ile aynı değildir.
+> Bu modelin kök sınıfı ile aynı değildir.
 
  Kopyalama ve Sil kapanışlar tanımlamak diğer öğeleri olması gereken bir öğe kopyalandığında veya dahil. Ayarlayarak bu davranışı denetleyebilirsiniz **yayar kopyalama** ve **yayar Sil** rollerinin her ilişkinin her iki tarafındaki özellikleri. Değerleri dinamik olarak belirlendiği istiyorsanız, kapanış sınıflarının yöntemleri geçersiz kılmak için kod yazabilirsiniz.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Bu dosyayı özelleştirmek için düzenleme `.tt` dosya.
 
 > [!WARNING]
->  Simgeler veya görüntü gibi kaynakları içerecek şekilde .tt dosyayı düzenlerseniz, kaynak dahil olduğundan emin olun. VSIX derleme. Çözüm Gezgini'nde dosyayı seçin ve emin **VSIX Ekle** özelliği `True`.
+> Simgeler veya görüntü gibi kaynakları içerecek şekilde .tt dosyayı düzenlerseniz, kaynak dahil olduğundan emin olun. VSIX derleme. Çözüm Gezgini'nde dosyayı seçin ve emin **VSIX Ekle** özelliği `True`.
 
  Bu dosya, bir Visual Studio Tümleştirme Uzantısı (VSIX) DSL nasıl paketlenmiştir denetler. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
 

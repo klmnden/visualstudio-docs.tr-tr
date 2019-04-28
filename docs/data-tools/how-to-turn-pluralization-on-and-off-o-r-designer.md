@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402775"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma
 Varsayılan olarak, s ya da gelen zellikleri sonlanan adlara sahip veritabanı nesneleri sürüklediğinizde **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md), üretilen varlık sınıflarının adları çoğul için tekil değiştirilir. Bu, daha doğru bir şekilde oluşturulan varlık sınıfı verilerin tek bir kaydına eşler olgu temsil etmek için gerçekleştirilir. Örneğin, bir `Customers` tablo **O/R Tasarımcısı** sonuçları adlı bir varlık sınıfında `Customer` sınıfın yalnızca tek bir müşterinin verilerini tutacak çünkü.
 
 > [!NOTE]
->  Çoğullaştırma yalnızca İngilizce sürümü Visual Studio'nun içinde varsayılan olarak açıktır.
+> Çoğullaştırma yalnızca İngilizce sürümü Visual Studio'nun içinde varsayılan olarak açıktır.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -30,7 +30,7 @@ Varsayılan olarak, s ya da gelen zellikleri sonlanan adlara sahip veritabanı n
 2. İçinde **seçenekleri** iletişim kutusunda **veritabanı araçları**.
 
     > [!NOTE]
-    >  Seçin **tüm ayarları göster** varsa **veritabanı araçları** düğümü görünür değil.
+    > Seçin **tüm ayarları göster** varsa **veritabanı araçları** düğümü görünür değil.
 
 3. Tıklayın **O/R Tasarımcısı**.
 

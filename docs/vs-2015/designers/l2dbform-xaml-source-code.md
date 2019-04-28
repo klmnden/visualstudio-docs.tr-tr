@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403492"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.XAML kaynak kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Açıklama  
   
 > [!NOTE]
->  Satır numaralarını izlemek daha kolay olacaktır, böylece C# kaynak kod Düzenleyicisi'nde Visual Studio gibi bir kod düzenleyicisi altına aşağıdaki kodu kopyalayın öneririz.  
+> Satır numaralarını izlemek daha kolay olacaktır, böylece C# kaynak kod Düzenleyicisi'nde Visual Studio gibi bir kod düzenleyicisi altına aşağıdaki kodu kopyalayın öneririz.  
   
 ### <a name="code"></a>Kod  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431275"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Nasıl yapılır: Belirli bir Bulucu yöntemi ekleme
   Tek varlık örneğini oluşturarak döndürebilir bir *belirli Bulucu* yöntemi. Bir kullanıcı, bir iş verileri web bölümü veya dış listedeki bir varlık seçtiğinde belirli Bulucu metodunu İş Verileri Bağlantısı (BDC) hizmeti yürütür. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615292"
 5. Dönüş parametrenin tür tanımlayıcısını bir varlık türü tanımlayıcısı yapılandırın. Bir varlık türü tanımlayıcısı oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Varlığa bir Bulucu yöntemi eklediyseniz, bu adımı gerçekleştirmeniz gerekmez. Visual Studio Bulucu yönteminde tanımlanan tür tanımlayıcısını kullanır.
+   > Varlığa bir Bulucu yöntemi eklediyseniz, bu adımı gerçekleştirmeniz gerekmez. Visual Studio Bulucu yönteminde tanımlanan tür tanımlayıcısını kullanır.
 
    > [!NOTE]
-   >  Varlık türünün tanımlayıcı alanı otomatik olarak oluşturulan bir veritabanı tablosundaki bir alanı temsil ediyorsa, ayarlama **salt okunur** özelliği tanımlayıcı alanı **True**.
+   > Varlık türünün tanımlayıcı alanı otomatik olarak oluşturulan bir veritabanı tablosundaki bir alanı temsil ediyorsa, ayarlama **salt okunur** özelliği tanımlayıcı alanı **True**.
 
 6. İçinde **metot ayrıntıları** penceresinde yöntemi yöntemi örneğini seçin.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615292"
      Aşağıdaki örnekte, AdventureWorks örnek veritabanındaki SQL Server için bir kişi döndürür.
 
      > [!NOTE]
-     >  Değiştirin `ServerName` alanını sunucunuzun adıyla.
+     > Değiştirin `ServerName` alanını sunucunuzun adıyla.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

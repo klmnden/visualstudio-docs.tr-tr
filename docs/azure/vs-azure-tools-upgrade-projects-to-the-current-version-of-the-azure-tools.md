@@ -4,17 +4,19 @@ description: Azure Visual Studio projesinde Azure Araçları'nın geçerli sür�
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: e007e7a3f3e8ddeb62167a04debfe879dad1778c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427968"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Projeleri Visual Studio için Azure Araçları'nın güncel sürümüne yükseltme
 ## <a name="overview"></a>Genel Bakış
@@ -32,13 +34,13 @@ Yükseltmek istediğinizi belirtin veya bir proje otomatik olarak yükseltilir, 
 
 > [!IMPORTANT]
 > İçin F# projeleri, böylece bu derlemelerin yeni sürümlerini oldukları Azure derlemelere başvuruları el ile güncelleştirmeniz gerekir.
->
->
+> 
+> 
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Bir Azure projesi geçerli sürüme yükseltme
 1. Yükseltilen proje için kullanmak istediğiniz Visual Studio yüklemesini içine Azure Araçları'nın geçerli sürümü yükleyin ve ardından yükseltmek istediğiniz projeyi açın. Projeyi Azure Araçları ile oluşturulmuş olsa bile yayın önce 1.6 (Kasım 2011) projeyi otomatik olarak geçerli sürümüne yükseltilir. Projenizi oluşturduysanız ile Kasım 2011 sürüm ve sürümü yüklüdür, bu sürümde projeyi açar.
 2. Çözüm Gezgini'nde proje düğümü için kısayol menüsünü açın, **özellikleri**ve ardından **uygulama** görüntülenen iletişim kutusunda sekmesi.
-
+   
     **Uygulama** sekmesi, projeyle ilişkili Araçlar sürümü gösterir. Azure Araçları'nın geçerli sürümü varsa, proje zaten yükseltildi. Hangi sekmesini gösteren daha araçları daha yeni bir sürümünü yüklediyseniz bir **yükseltme** düğmesi görünür.
 3. Seçin **yükseltme** Araçları'nın geçerli sürümüne bir projeyi yükseltmesine düğmesi.
 4. Projeyi oluşturmak ve ardından API değişikliklerden kaynaklanan hataları çözün. Kodunuz için yeni sürümü değiştirme hakkında daha fazla bilgi için özel API belgelerine bakın.

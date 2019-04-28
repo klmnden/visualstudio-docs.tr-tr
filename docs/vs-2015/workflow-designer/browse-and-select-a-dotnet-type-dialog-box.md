@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417552"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET Türüne Gözat ve Seç İletişim Kutusu
 İçinde **özellikleri** pencere, iletişim kutuları ve tasarımcıları gibi değişken tasarımcısını seçtiğinizde, **vyhledat Typy...** veri türleri bir listede olan **göz atın ve bir .NET türü seçin** iletişim kutusu (kısaltılmış biçimdeki "türü tarayıcı" olarak adlandırılır). Bu iletişim kutusunda, derlemeleri ve projeleri bir ağaç görünümünden bir türü seçebilirsiniz.  
@@ -31,7 +31,7 @@ ms.locfileid: "60079843"
 - Bir catch eklenirken <xref:System.Activities.Statements.TryCatch> etkinlik.  
   
 > [!NOTE]
->  Tür tarayıcı olmayan çok boyutlu dizi türleri, ancak Visual Basic Basit dizi türlerini görüntüleyebilirsiniz. Bkz: [basit diziler](http://go.microsoft.com/fwlink/?LinkId=195226) ve [çok boyutlu diziler](http://go.microsoft.com/fwlink/?LinkId=195227) Ayrıntılar için.  
+> Tür tarayıcı olmayan çok boyutlu dizi türleri, ancak Visual Basic Basit dizi türlerini görüntüleyebilirsiniz. Bkz: [basit diziler](http://go.microsoft.com/fwlink/?LinkId=195226) ve [çok boyutlu diziler](http://go.microsoft.com/fwlink/?LinkId=195227) Ayrıntılar için.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türü tür tarayıcısından seçme  
   

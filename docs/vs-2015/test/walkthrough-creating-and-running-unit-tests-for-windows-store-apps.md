@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428209"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>İzlenecek yol: Oluşturma ve Windows Store uygulamaları için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069856"
 Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar ve Visual C#, Visual Basic ve Visual C++ için birim sınaması kitaplığı şablonları içerir.  
   
 > [!TIP]
->  Geliştirme hakkında daha fazla bilgi için [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar, [Windows Store uygulamaları kullanmaya başlama](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Geliştirme hakkında daha fazla bilgi için [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamalar, [Windows Store uygulamaları kullanmaya başlama](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio aşağıdaki birim sınama işlevleri sağlar:  
   
@@ -54,7 +54,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
 2. Şablonlar'ın altında birim sınamasını oluşturmak ve ardından ilişkili programlama dili [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] birim testi kitaplığı. Örneğin, **Visual C#** , ardından **Windows Store**ve ardından **birim testi kitaplığı (Windows Store apps)**.  
   
     > [!NOTE]
-    >  Visual Studio, Visual C#, Visual Basic ve Visual C++ için birim sınaması kitaplığı şablonları içerir.  
+    > Visual Studio, Visual C#, Visual Basic ve Visual C++ için birim sınaması kitaplığı şablonları içerir.  
   
 3. (İsteğe bağlı) İçinde **adı** metin için kullanmak istediğiniz adı girin [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]birim testi projesi.  
   
@@ -84,7 +84,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
 3. Listenin altında **özellikleri**, birim sınamanız ve kod gereken yetenekleri seçin sahip sınamanız. Örneğin, **Internet** birim testi ve test ettiği kodun onay kutusu İnternet'e erişme özelliği olması gerekir.  
   
     > [!NOTE]
-    >  Seçtiğiniz yetenekler yalnızca için gerekli olan yetenekleri içermelidir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] düzgün çalışması için birim testi. Özellikleri hiçbir zaman olmayan yetenekleri içermesi gerekmez parçası [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamasının genellikle için belirtilen yeteneklerin bir alt kümesi olmalıdır ve test [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]test altındaki uygulama.  
+    > Seçtiğiniz yetenekler yalnızca için gerekli olan yetenekleri içermelidir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] düzgün çalışması için birim testi. Özellikleri hiçbir zaman olmayan yetenekleri içermesi gerekmez parçası [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamasının genellikle için belirtilen yeteneklerin bir alt kümesi olmalıdır ve test [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]test altındaki uygulama.  
   
      Bildirim Tasarımcısı hakkında daha fazla bilgi için bkz: [bildirim Tasarımcısını kullanarak bir Windows 8.1 uygulama paketini Yapılandır](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
      Birim testiniz artık listelenir.  
   
     > [!NOTE]
-    >  Test Gezgini'nde birim testleri listesini güncelleme çözümünü oluşturmanız gerekir.  
+    > Test Gezgini'nde birim testleri listesini güncelleme çözümünü oluşturmanız gerekir.  
   
     > [!WARNING]
-    >  Visual Studio bilinen sorun: Test Gezgini test projesini oluşturmadan önce açmanız gerekir.  
+    > Visual Studio bilinen sorun: Test Gezgini test projesini oluşturmadan önce açmanız gerekir.  
   
 3. Test Gezgini'nde oluşturduğunuz birim sınamayı seçin.  
   
     > [!TIP]
-    >  Test Gezgini kaynak koda bir bağlantı yanındaki sağlar **kaynak:**.  
+    > Test Gezgini kaynak koda bir bağlantı yanındaki sağlar **kaynak:**.  
   
 4. Seçin **çalıştırması**.  
   
      ![Birim Test Gezgini &#45; birim testi çalıştırma](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Explorer'da listelenen bir veya daha fazla birim testleri seçebilir ve ardından sağ tıklatın ve seçin **seçili Testleri Çalıştır**.  
+    > Explorer'da listelenen bir veya daha fazla birim testleri seçebilir ve ardından sağ tıklatın ve seçin **seçili Testleri Çalıştır**.  
     >   
     >  Ayrıca, seçebileceğiniz **seçilen Testlerde Hata Ayıkla**, **açık Test**ve **özellikleri** seçeneği.  
     >   

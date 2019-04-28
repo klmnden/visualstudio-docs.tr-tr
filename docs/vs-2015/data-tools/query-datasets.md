@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425366"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
  Tablo ve sütun adları bir veri kümesi içinde varsayılan olarak büyük küçük harf duyarsız — diğer bir deyişle, "Müşteri" adlı bir veri kümesi tablosunda da için "Müşteri" olarak adlandırılabilir Bu SQL Server.In SQL Server dahil olmak üzere çok sayıda veritabanı adlandırma kuralları ile eşleşir, veri öğelerinin adlarını yalnızca büyük küçük harfle ayırt varsayılan davranıştır.  
   
 > [!NOTE]
->  Şemalarda tanımlanan veri öğelerinin adlarını büyük küçük harfe duyarlı olacak şekilde veri kümeleri farklı olarak XML belgeleri, duyarlıdır. Örneğin, "Müşteri" ve "Müşteri" olarak adlandırılan farklı bir tablo adında bir tablo tanımlamak şema şema protokol sağlar Küçük harfe göre farklılık öğeleri içeren bir şema, bir veri kümesi sınıfı oluşturmak için kullanıldığında, bu ad çakışmalarını yol açabilir.  
+> Şemalarda tanımlanan veri öğelerinin adlarını büyük küçük harfe duyarlı olacak şekilde veri kümeleri farklı olarak XML belgeleri, duyarlıdır. Örneğin, "Müşteri" ve "Müşteri" olarak adlandırılan farklı bir tablo adında bir tablo tanımlamak şema şema protokol sağlar Küçük harfe göre farklılık öğeleri içeren bir şema, bir veri kümesi sınıfı oluşturmak için kullanıldığında, bu ad çakışmalarını yol açabilir.  
   
  Büyük/küçük harfe duyarlılık ancak veri kümesi içinde verileri nasıl yorumlanacağını bir etken olabilir. Örneğin, bir veri kümesi tablodaki verileri filtreleme, arama ölçütlerini karşılaştırma büyük/küçük harfe olmasına bağlı olarak farklı sonuçlar döndürebilir. Filtreleme, aramayı ve veri kümesinin ayarlayarak sıralama büyük/küçük harf duyarlılığı denetleyebilirsiniz <xref:System.Data.DataSet.CaseSensitive%2A> özelliği. Veri kümesindeki tüm tabloları, varsayılan olarak bu özelliğin değerini devralır. (Bu özellik tek tek her tablo için tablo ayarlayarak kılabilirsiniz <xref:System.Data.DataTable.CaseSensitive%2A> özellik.)  
   

@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5648bfc823230998a324aedb0e21cf6606174d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416295"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan Yürütme Sırasında Belirli Olaylar için Kodlanmış UI Testlerini Bekletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için iler
  Visual Studio Enterprise  
   
 > [!TIP]
->  Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -105,7 +105,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Playback.Wait() içten Thread.Sleep() çağırır (sonra hesaplama yukarıda) için-kullanıcı cancel\break işlemi için denetlenirken döngü içinde daha küçük öbekler halinde. Diğer bir deyişle, kayıttan yürütme ise bekleme bitiminden önce iptal Playback.Wait() uyku değil veya özel durum.  
   
 > [!TIP]
->  Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi düzenleyin. UI eylemlerini ve bunların ilişkili denetimleri UI kontrol haritasında de düzenleyebilirsiniz. Daha fazla bilgi için [düzenleme kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testleri](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi düzenleyin. UI eylemlerini ve bunların ilişkili denetimleri UI kontrol haritasında de düzenleyebilirsiniz. Daha fazla bilgi için [düzenleme kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testleri](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
  **Kılavuz**  
   

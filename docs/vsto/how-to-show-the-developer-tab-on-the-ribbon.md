@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418851"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme
   Erişim için **Geliştirici** sekmesini bir Office uygulamasının Şerit üzerinde varsayılan olarak görünmez sekmenin gösterileceği şekilde yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirmeyi için.
 
 > [!NOTE]
->  Bu kılavuz, Office 2010 veya yalnızca sonraki uygulamalar için geçerlidir. Bu sekmeyi 2007 Microsoft Office System'da göstermek istiyorsanız, bu konunun aşağıdaki sürümü görmek [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Bu kılavuz, Office 2010 veya yalnızca sonraki uygulamalar için geçerlidir. Bu sekmeyi 2007 Microsoft Office System'da göstermek istiyorsanız, bu konunun aşağıdaki sürümü görmek [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Erişim yok bir **Geliştirici** sekmesi.
+> Erişim yok bir **Geliştirici** sekmesi.
 
 ## <a name="to-show-the-developer-tab"></a>Geliştirici sekmesini göstermek için
 

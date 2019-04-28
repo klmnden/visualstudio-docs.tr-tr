@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403455"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60045146"
      Kenar boşluğu donatıcısı açın ve ters kenar boşluğu ayarlı değil, ters kenar çalışma yüzeyine öğenin konumuna göre doğru değerine ayarlanır. Ters kenar boşlukları için gibi **sol** ve **sağ** kenar boşlukları, en az bir özelliği ayarlandığında her zaman.  
   
     > [!IMPORTANT]
-    >  Öğelerin yerleştirilmesi bazı Düzen kapsayıcıları içinde gibi bir <xref:Windows.UI.Xaml.Controls.Canvas>, kenar boşluğu donatıcıları yok. Öğelerin yerleştirilmesi içinde bir <xref:Windows.UI.Xaml.Controls.StackPanel> kenar boşluğu donatıcıları ya da sol ve sağ kenar boşluklarının veya yönünü bağlı olarak üst ve alt kenar boşluklarını sahip `StackPanel`.  
+    > Öğelerin yerleştirilmesi bazı Düzen kapsayıcıları içinde gibi bir <xref:Windows.UI.Xaml.Controls.Canvas>, kenar boşluğu donatıcıları yok. Öğelerin yerleştirilmesi içinde bir <xref:Windows.UI.Xaml.Controls.StackPanel> kenar boşluğu donatıcıları ya da sol ve sağ kenar boşluklarının veya yönünü bağlı olarak üst ve alt kenar boşluklarını sahip `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Gruplandırma ve öğeleri gruplarını çözme  
  XAML Tasarımcısı'nda iki veya daha fazla öğe gruplandırma, yeni bir düzen kapsayıcısı oluşturur ve bu öğeler bu kapsayıcı içinde yerleştirir. İki veya daha fazla öğe birlikte bir düzen kapsayıcısına yerleştirerek kolayca seçin, taşıma ve o gruptaki öğeleri bir öğe olarak varsa dönüştürmenize olanak sağlar. Gruplama, bir gezinti öğesini oluşturan düğmeler gibi bir şekilde birbiriyle ilgili öğeleri tanımlamak için yararlıdır. Öğeleri çözdüğünüzde, basitçe öğeleri içeren düzen kapsayıcısının siliyorsunuz.  
@@ -106,7 +106,7 @@ ms.locfileid: "60045146"
 2. Seçili öğeye sağ tıklayın, fareyle **halinde Gruplandır**ve ardından ve grubun yer almasını istediğiniz düzen kapsayıcısı türüne tıklayın.  
   
     > [!TIP]
-    >  Seçerseniz <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer> öğelerinizin gruplandırmak için öğelerin yeni bir yerleştirilir <xref:Windows.UI.Xaml.Controls.Grid> içinde panelinde <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Öğeleri yalnızca bu düzen kapsayıcıları birinde'ungroup <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer> silindi ve <xref:Windows.UI.Xaml.Controls.Grid> paneli kalır. Silinecek `Grid` panelinde, öğeleri grubunu tekrar çözün.  
+    > Seçerseniz <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer> öğelerinizin gruplandırmak için öğelerin yeni bir yerleştirilir <xref:Windows.UI.Xaml.Controls.Grid> içinde panelinde <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Öğeleri yalnızca bu düzen kapsayıcıları birinde'ungroup <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, veya <xref:Windows.UI.Xaml.Controls.ScrollViewer> silindi ve <xref:Windows.UI.Xaml.Controls.Grid> paneli kalır. Silinecek `Grid` panelinde, öğeleri grubunu tekrar çözün.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Öğe grubunu Çöz ve düzenini silmek için  
   

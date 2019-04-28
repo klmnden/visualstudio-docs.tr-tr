@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406642"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama dağıtımına genel bakış
 Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güvenilir uygulama dağıtımı teknolojisini kullanarak yükseltilmiş izinlere sahip uygulamalar.
@@ -29,7 +29,7 @@ Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndpte
  Güvenilir uygulama dağıtımı, parçası [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım teknolojisi, kuruluşların kullanıcıya sormadan daha güvenli bir şekilde yönetilen bir uygulama için ek izinler vermek için her boyuttaki kolaylaştırır. Güvenilir uygulama dağıtımı ile bir kuruluş yalnızca Authenticode sertifikaları kullanarak tanımlanan güvenilir yayımcılar, bir listesi için bir istemci bilgisayarı yapılandırabilirsiniz. Bundan sonra tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bunlardan biri tarafından imzalanmış bir uygulamaya güvenilen yayımcılar, daha yüksek bir güven düzeyi alır.
 
 > [!NOTE]
->  Güvenilir uygulama dağıtımı tek seferlik bir kullanıcının bilgisayarına yapılandırılmasını gerektirir. Yönetilen Masaüstü ortamlarında, bu yapılandırma genel ilke kullanılarak gerçekleştirilebilir. İzin yükseltilmesi, bu uygulama için istediğinize değil ise, bunun yerine kullanın. Daha fazla bilgi için [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).
+> Güvenilir uygulama dağıtımı tek seferlik bir kullanıcının bilgisayarına yapılandırılmasını gerektirir. Yönetilen Masaüstü ortamlarında, bu yapılandırma genel ilke kullanılarak gerçekleştirilebilir. İzin yükseltilmesi, bu uygulama için istediğinize değil ise, bunun yerine kullanın. Daha fazla bilgi için [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).
 
 ## <a name="trusted-application-deployment-basics"></a>Güvenilen uygulama dağıtımıyla ilgili temel bilgiler
  Aşağıdaki tabloda nesneleri ve söz konusu olan rolleri güvenilir uygulama dağıtımı'gösterilmektedir.
@@ -88,7 +88,7 @@ Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:
  Sertifikanızı aldıktan sonra dağıtımınız imzalamak için kullanmanız gerekir. Uygulamanızı kullanarak dağıtıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama Sihirbazı, bir sertifikayı kendiniz değil belirttiyseniz Sihirbazı otomatik olarak bir test sertifikası sizin için oluşturur. Ayrıca [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Proje Tasarımcısı penceresinde, ancak bir CA tarafından sağlanan bir sertifika sağlamak için.  Ayrıca bkz: [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  Uygulama bir test sertifikası ile dağıtılması önermiyoruz.
+> Uygulama bir test sertifikası ile dağıtılması önermiyoruz.
 
  Uygulamayı kullanarak da oturum açabilirsiniz *Mage.exe* veya *MageUI.exe* SDK Araçları. Daha fazla bilgi için [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım imzalama ile ilgili komut satırı seçeneklerinin tam listesi için bkz. [Mage.exe (bildirim üretme ve düzenleme aracı)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

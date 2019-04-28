@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402684"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak SQL sınıflarına LINQ oluşturma
 [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ilişkisel sistemlerde genellikle uygulandığı şekilde tek tablolu devralmayı destekler. Bu kılavuzda sağlanan genel adımları sırasında genişletir [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) konu ve devralma kullanımını göstermek için gerçek bazı verileri sağlayan [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -45,7 +45,7 @@ ms.locfileid: "60114346"
 1. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, sağ **tabloları** düğüm ve tıklatın **Yeni Tablo Ekle**.
 
     > [!NOTE]
-    >  Northwind veritabanına veya tabloya eklediğiniz herhangi bir veritabanını kullanabilirsiniz.
+    > Northwind veritabanına veya tabloya eklediğiniz herhangi bir veritabanını kullanabilirsiniz.
 
 2. İçinde **Tablo Tasarımcısı**, tabloda aşağıdaki sütunları ekleyin:
 

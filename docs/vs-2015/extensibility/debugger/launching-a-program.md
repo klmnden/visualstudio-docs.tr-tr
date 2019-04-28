@@ -11,12 +11,12 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd23fdc3baf4afd6dde50a4310abf1b5c1841fd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430206"
 ---
 # <a name="launching-a-program"></a>Program Başlatma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Bir programda hata ayıklamak istediğiniz kullanıcıları, IDE'den hata ayıkl
     Bir DE belirtilmezse, bağlantı noktası programın çalışma zamanı ortamı yüklenmesine neden programını başlatmak için işletim sistemi çağırır.  
   
    > [!NOTE]
-   >  Bir programı başlatmak için kullanılan bir DE, aynı DE programa bağlı olasıdır.  
+   > Bir programı başlatmak için kullanılan bir DE, aynı DE programa bağlı olasıdır.  
   
 3. Olup DE veya bağlantı noktası program başlatıldı, bağlı olarak DE veya çalışma zamanı ortamı daha sonra bir program açıklaması veya düğümü oluşturur ve program çalışırken bağlantı noktasını bildirir.  
   
    > [!NOTE]
-   >  Basit bir gösterimiyse hata ayıklaması yapılabilir bir program, program düğümü olduğu için çalışma zamanı ortamı program düğümü oluşturmanız önerilir. Yalnızca oluşturup bir program düğümünü kaydetmek için tüm DE yüklemek için gerek yoktur. DE tasarlanmışsa IDE, ancak hiçbir IDE sürecinde çalıştırmak için gerçekten çalıştıran, var. bağlantı noktasına bir program düğümü ekleyebilirsiniz bir bileşeni olması gerekir.  
+   > Basit bir gösterimiyse hata ayıklaması yapılabilir bir program, program düğümü olduğu için çalışma zamanı ortamı program düğümü oluşturmanız önerilir. Yalnızca oluşturup bir program düğümünü kaydetmek için tüm DE yüklemek için gerek yoktur. DE tasarlanmışsa IDE, ancak hiçbir IDE sürecinde çalıştırmak için gerçekten çalıştıran, var. bağlantı noktasına bir program düğümü ekleyebilirsiniz bir bileşeni olması gerekir.  
   
    Diğer programları yanı sıra yeni oluşturulan programı ilişkili ilgisi olmayan, başlatılan veya aynı IDE'den hata ayıklama oturumu oluşturmak için ekli.  
   

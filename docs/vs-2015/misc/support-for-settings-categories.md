@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436558"
 ---
 # <a name="support-for-settings-categories"></a>Ayarlar kategorileri için destek
 Ayarları kategorisi tümleşik geliştirme ortamı (IDE) özelleştirme seçenekleri grubundan oluşur. Örneğin, ayarları düzenini denetleyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows ve menüler içeriği. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Ayarları kategorisi tümleşik geliştirme ortamı (IDE) özelleştirme seçene
  Bu sayfanın gezinti bölmesindeki ağaç denetimi kategorilerini listeler. Bir kategori olan bir "özel ayarları noktası olarak", diğer bir deyişle, bir onay kutusu olarak görünmesini ilgili ayarları grubudur. .Vsettings dosyada kalıcı hale getirmek için bir kategori seçmek için bu onay kutularını kullanın. Sihirbaz, .vsettings dosya adı ve yolu belirtin sağlar.  
   
 > [!NOTE]
->  Ayarlar kaydedildi veya kategori olarak geri ve tek ayar adları Sihirbazı'nda görüntülenmez.  
+> Ayarlar kaydedildi veya kategori olarak geri ve tek ayar adları Sihirbazı'nda görüntülenmez.  
   
  Yönetilen paket çerçevesini (MPF) en az ek kod oluşturma ayarlarını kategorileri destekler.  
   
@@ -48,7 +48,7 @@ Ayarları kategorisi tümleşik geliştirme ortamı (IDE) özelleştirme seçene
  Kayıt defteri yolu ayarları kategorisi birleştirerek belirlenir <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, word, kullanıcı ayarlarını, ayarları kategorisi ve özel ayarları noktası adı. Ayarları kategorisi ve özel ayarları noktası adlarını alanına ve kayıt defterinde görüntülenen canonical, yerelleştirilmemiş adı oluşturmak için bir alt çizgi ile ayrılmış. Örneğin, ayarları kategorisi "My Category" ise, özel ayarları ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp yanı sıra adı "My ayarları"'ye gelin ve kayıt defteri anahtarı HKEY_LOCAL_ ayarları kategorisi vardır MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My ayarları.  
   
 > [!NOTE]
->  Kurallı ad, kullanıcı arabiriminde (UI) görünmüyor. Okunabilir bir adı bir programlı tanımlayıcısı (ProgID) gibi ayarları kategorisi ilişkilendirmek için kullanılır.  
+> Kurallı ad, kullanıcı arabiriminde (UI) görünmüyor. Okunabilir bir adı bir programlı tanımlayıcısı (ProgID) gibi ayarları kategorisi ilişkilendirmek için kullanılır.  
   
 ### <a name="settings-category-attribute"></a>Ayarları kategorisi özniteliği  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Kategorileri özel ayarları noktalarına eşleme belirler **içeri ve dışarı aktarma ayarları Sihirbazı** sağladığı VSPackage içeren bir kategori ilişkilendirerek. Aşağıdaki kod parçasını göz önünde bulundurun:  

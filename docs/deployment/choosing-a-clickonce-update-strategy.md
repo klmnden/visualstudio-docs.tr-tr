@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406835"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce güncelleştirme stratejisini seçin
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] otomatik uygulama güncelleştirme imkanı verir. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması düzenli aralıklarla uygulama güncelleştirmeleri kullanılabilir olup olmadığını görmek için dağıtım bildirimi dosyasını okur. Kullanılabilir olması durumunda uygulamanın yeni sürümü indirilir ve çalıştırılır. Verimlilik için, sadece değişen dosyalar indirilir.
@@ -31,10 +31,10 @@ ms.locfileid: "56608503"
  Ayrıca, uygulama güncelleştirmelerinin ne sıklıkta denetleneceğini belirleyebilirsiniz ve gerekli güncelleştirmeleri yapabilirsiniz.
 
 > [!NOTE]
->  Uygulama güncelleştirmeleri, ağ bağlantısı gerektirir. Ağ bağlantısı mevcut değilse, uygulama güncelleştirme stratejisi ne olursa olsun güncelleştirmeleri denetlemeden çalışacaktır.
+> Uygulama güncelleştirmeleri, ağ bağlantısı gerektirir. Ağ bağlantısı mevcut değilse, uygulama güncelleştirme stratejisi ne olursa olsun güncelleştirmeleri denetlemeden çalışacaktır.
 
 > [!NOTE]
->  .NET Framework 2.0 ve .NET Framework 3.0 herhangi uygulamanız güncelleştirmeler için önce veya sonra başlangıç ya da kullanarak denetlediğinde \<xref:System.Deployment.Application > API'leri ayarlamalısınız `deploymentProvider` dağıtım bildirimi içinde. `deploymentProvider` Karşılık gelen öğe için Visual Studio'da **güncelleştirme konumu** alanını **güncelleştirmeleri** iletişim kutusunun **Yayımla** sekmesi. .NET Framework 3.5'te bu kural yumuşatılmıştır. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları test etme ve üretim sunucularına Resigning olmadan](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> .NET Framework 2.0 ve .NET Framework 3.0 herhangi uygulamanız güncelleştirmeler için önce veya sonra başlangıç ya da kullanarak denetlediğinde \<xref:System.Deployment.Application > API'leri ayarlamalısınız `deploymentProvider` dağıtım bildirimi içinde. `deploymentProvider` Karşılık gelen öğe için Visual Studio'da **güncelleştirme konumu** alanını **güncelleştirmeleri** iletişim kutusunun **Yayımla** sekmesi. .NET Framework 3.5'te bu kural yumuşatılmıştır. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları test etme ve üretim sunucularına Resigning olmadan](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Uygulama başlangıcından sonra güncelleştirmeleri denetleme
  Bu stratejiyi kullanarak, uygulama çalışırken, arka planda dağıtım dosyası bildiriminin yerini belirleyip okumayı deneyecektir. Bir güncelleştirme erişilebilirse, kullanıcının uygulamayı sonraki çalıştırmasında, kullanıcı güncelleştirmeyi indirmek ve kurmak için uyarılacaktır.
@@ -76,7 +76,7 @@ ms.locfileid: "56608503"
  Kullanıcıların uygulamanızın güncelleştirilmiş bir sürümünü çalıştırmasını istediğiniz durumlar olabilir. Örneğin, çalışan uygulamanızın daha eski bir sürümünün doğru olarak çalışmasını engelleyen bir Web hizmeti gibi harici bir kaynakta değişiklik yapabilirsiniz. Bu durumda, güncelleştirmenizi gerekli olarak işaretlemek ve kullanıcıların daha eski sürümleri çalıştırmasını engellemek isteyeceksinizdir.
 
 > [!NOTE]
->  Bir güncelleştirme stratejileri kullanarak güncelleştirmeleri gerekmesine rağmen denetimi **Uygulama başlatılmadan önce** eski bir sürümün çalışmasını engellemenin tek yoludur. Zorunlu güncelleştirme başlangıçta algılandığında, kullanıcının ya güncelleştirmeyi kabul etmesi ya da uygulamayı kapatması gerekir.
+> Bir güncelleştirme stratejileri kullanarak güncelleştirmeleri gerekmesine rağmen denetimi **Uygulama başlatılmadan önce** eski bir sürümün çalışmasını engellemenin tek yoludur. Zorunlu güncelleştirme başlangıçta algılandığında, kullanıcının ya güncelleştirmeyi kabul etmesi ya da uygulamayı kapatması gerekir.
 
  Güncelleştirme gerekli tıklatın olarak işaretlemek için **bu uygulama için gerekli en düşük sürüm belirtin** içinde **uygulama güncelleştirmeleri** iletişim kutusuna ve ardından yayınlama sürümünü belirtin (**ana**, **Küçük**, **derleme**, **düzeltme**), uygulamanın yüklenebilmesi için en düşük sürüm numarasını belirtir.
 

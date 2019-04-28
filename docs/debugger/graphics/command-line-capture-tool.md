@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389686"
 ---
 # <a name="command-line-capture-tool"></a>Komut Satırı Yakalama Aracı
 DXCap.exe, grafik tanılama yakalama ve kayıttan yürütme için bir komut satırı aracıdır. Bu, Direct3D 10 ila Direct3D 12 arasında tüm özellik düzeylerini destekler.
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` Doğrulama modunda `events` grafik olaylarını anında sonuçlarını karşılaştırılır kümesini belirtir. Örneğin, `-examine present,draw,copy,clear` karşılaştırma yalnızca bu kategoriye ait olan olaylar için sınırlar.
 
 > [!TIP]
->  İle başlamanızı öneririz `-examine present,draw,copy,clear` çünkü bu çoğu sorunu ortaya ancak olaylar daha kapsamlı bir dizi daha önemli ölçüde daha az zaman alır. Gerekirse, bu olayları doğrulamak ve diğer türlerdeki sorunları ortaya çıkarmak için olayları daha büyük ya da farklı bir dizi belirtebilirsiniz.
+> İle başlamanızı öneririz `-examine present,draw,copy,clear` çünkü bu çoğu sorunu ortaya ancak olaylar daha kapsamlı bir dizi daha önemli ölçüde daha az zaman alır. Gerekirse, bu olayları doğrulamak ve diğer türlerdeki sorunları ortaya çıkarmak için olayları daha büyük ya da farklı bir dizi belirtebilirsiniz.
 
  `-haltonfail` Doğrulama modunda `-haltonfail` WARP oluşturucusu ve donanım arasındaki farklar algılandığında doğrulama durdurur. Bir tuşa basıldığında sonra doğrulama devam eder.
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  Yukarıdaki örnekteki komut, 3B içeriği işlemek için WebGL API kullanan www.fishgl.com bulunan Web sayfası görüntülerken Internet Explorer'ın Masaüstü sürümünü grafik bilgileri yakalar.
 
 > [!NOTE]
->  Sonra uygulamayı görünen komut satırı bağımsız değişkenleri için geçirildiğinden, kullanmadan önce DXCap.exe için hedeflenen bağımsız değişkenleri belirtmeniz gerekir `-c` seçeneği.
+> Sonra uygulamayı görünen komut satırı bağımsız değişkenleri için geçirildiğinden, kullanmadan önce DXCap.exe için hedeflenen bağımsız değişkenleri belirtmeniz gerekir `-c` seçeneği.
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Bir UWP uygulamadan grafik bilgilerini yakalama.
  Bir UWP uygulamadan grafik bilgilerini yakalayabilirsiniz.

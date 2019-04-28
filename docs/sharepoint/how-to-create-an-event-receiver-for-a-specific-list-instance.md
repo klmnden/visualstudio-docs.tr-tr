@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408547"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Nasıl yapılır: Belirli bir liste örneği için olay alıcı oluşturma
   Bir liste örneği olay alıcısı, herhangi bir örneğini liste tanımı gerçekleşen olaylara yanıt verir. Olay alıcısı şablonu belirli bir liste örneğini hedefleme etkinleştirmez olsa da, belirli bir liste örneği olaylara yanıt vermek için bir liste tanımı için kapsamlı bir olay alıcısı değiştirebilirsiniz.
@@ -43,7 +43,7 @@ ms.locfileid: "60094352"
 6. İçinde **ne tür bir olay alıcısı istiyor musunuz?** listesinde **liste öğesi etkinlikleri**.
 
     > [!NOTE]
-    >  Başka bir tür için bir liste tanımı, örneğin, kapsamları olay alıcısının belirleyebilirsiniz **listesi e-posta olayları** veya **liste iş akışı etkinlikleri**.
+    > Başka bir tür için bir liste tanımı, örneğin, kapsamları olay alıcısının belirleyebilirsiniz **listesi e-posta olayları** veya **liste iş akışı etkinlikleri**.
 
 7. İçinde **olay kaynağı hangi öğe olmalıdır?** listesinde **duyuruları**.
 

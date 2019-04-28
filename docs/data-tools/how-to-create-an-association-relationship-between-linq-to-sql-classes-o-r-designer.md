@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402790"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma
 Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanındaki tablolar arasında ilişki benzer. Kullanarak varlık sınıfları arasında ilişkiler oluşturabilirsiniz **ilişkilendirme Düzenleyicisi** iletişim kutusu.
@@ -21,7 +21,7 @@ Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../da
 Kullandığınızda, bir üst ve alt sınıfı seçmelisiniz **ilişkilendirme Düzenleyicisi** ilişkilendirme oluşturmak için iletişim kutusu. Birincil anahtarı içeren varlık sınıfı üst sınıftır; yabancı anahtar içeren varlık sınıfı alt sınıfıdır. Örneğin, varlık sınıfları eşleştiren oluşturulup oluşturulmadığını `Northwind Customers` ve `Orders` tablolar `Customer` sınıfı üst sınıfın olacaktır ve `Order` sınıfı alt sınıfı olması.
 
 > [!NOTE]
->  Tablodan sürüklediğinizde **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine **Object Relational Designer** (**O/R Tasarımcısı**), ilişkileri otomatik olarak var olan bir yabancı anahtar ilişkileri veritabanında temel alınarak oluşturulur.
+> Tablodan sürüklediğinizde **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine **Object Relational Designer** (**O/R Tasarımcısı**), ilişkileri otomatik olarak var olan bir yabancı anahtar ilişkileri veritabanında temel alınarak oluşturulur.
 
 ## <a name="association-properties"></a>İlişki özellikleri
 İlişkilendirmeyi seçtiğinizde bir ilişkilendirme oluşturduktan sonra **O/R Tasarımcısı**, içindeki bazı yapılandırılabilir özellik vardır **özellikleri** penceresi. (Satır ilgili sınıflar arasında bir ilişkilendirmedir.) Aşağıdaki tabloda bir ilişkilendirmenin özellikleri için açıklamalar sağlar.

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58157769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416003"
 ---
 # <a name="windows-script-engines"></a>Windows Komut Dosyası Motorları
 Microsoft Windows betik altyapısı uygulamak için aşağıdaki arabirimlerinden destekleyen bir OLE COM nesnesi oluşturun.  
@@ -31,7 +31,7 @@ Microsoft Windows betik altyapısı uygulamak için aşağıdaki arabirimlerinde
 |IPersist *|Kalıcılık desteği sağlar. Uygulama aşağıdaki arabirimlerinden en az birinin ise gerekli [Iactivescriptparse](../winscript/reference/iactivescriptparse.md) uygulanmadı.<br /><br /> IPersistStorage: VERİLER için destek sağlayan = {url} özniteliğini nesne etiketi.<br /><br /> IPersistStreamInit: Aynı için destek sağlar `IPersistStorage` verilerin yanı sıra = "dizesi olarak kodlanmış bayt akışı" özniteliğini nesne etiketi.<br /><br /> IPersistPropertyBag: PARAM için destek sağlar = özniteliğini nesne etiketi.|  
   
 > [!NOTE]
->  Komut dosyası altyapısı asla üzerine kaydetmek veya bir betik durumu ile geri yüklemek için çağrılmaz, mümkündür `IPersist*`. Bunun yerine, [Iactivescriptparse](../winscript/reference/iactivescriptparse.md) çağırarak kullanılan [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) boş bir komut dosyası oluşturmak için ardından kod parçacıklarını eklenmiş ve olaylar ile bağlı [Iactivescriptparse:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) ve genel kod ile eklenen [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Öte yandan, bir komut dosyası altyapısı tam olarak en az bir uygulamalıdır `IPersist*` arabirimi (tercihen `IPersistStreamInit`), diğer uygulamaları barındırmak yapmaya çünkü bunları kullanın.  
+> Komut dosyası altyapısı asla üzerine kaydetmek veya bir betik durumu ile geri yüklemek için çağrılmaz, mümkündür `IPersist*`. Bunun yerine, [Iactivescriptparse](../winscript/reference/iactivescriptparse.md) çağırarak kullanılan [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) boş bir komut dosyası oluşturmak için ardından kod parçacıklarını eklenmiş ve olaylar ile bağlı [Iactivescriptparse:: AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) ve genel kod ile eklenen [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Öte yandan, bir komut dosyası altyapısı tam olarak en az bir uygulamalıdır `IPersist*` arabirimi (tercihen `IPersistStreamInit`), diğer uygulamaları barındırmak yapmaya çünkü bunları kullanın.  
   
  Aşağıdaki bölümlerde, bir Windows komut dosyası altyapısı uygulama daha ayrıntılı olarak açıklanmaktadır.  
   

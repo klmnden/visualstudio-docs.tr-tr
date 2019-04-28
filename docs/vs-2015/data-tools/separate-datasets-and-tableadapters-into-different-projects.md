@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425091"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Veri kümeleri ile TableAdapter’ları farklı projelere ayırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.mic
 1. Bir veri kümesi (.xsd dosyasını) içeren bir çözüm açın.  
   
    > [!NOTE]
-   >  Veri kümesi kodunuzu ayırmak istediğiniz proje çözüm içermiyorsa, projeyi oluşturmak veya mevcut bir projeyi çözüme ekleyin.  
+   > Veri kümesi kodunuzu ayırmak istediğiniz proje çözüm içermiyorsa, projeyi oluşturmak veya mevcut bir projeyi çözüme ekleyin.  
   
 2. Türü belirtilmiş veri kümesi dosyası (.xsd dosyasını) çift tıklayın **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.  
   
@@ -54,7 +54,7 @@ Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.mic
     Veri kümesi kodunu oluşturmak istediğiniz projeyi seçin sonra **veri kümesi dosyası** özelliği, bir varsayılan dosya adıyla doldurulur. Gerekirse, bu adı değiştirebilirsiniz. Ayrıca, belirli bir dizine veri kümesi kodunu oluşturmak istiyorsanız, ayarlayabileceğiniz **proje klasörü** özelliğini bir klasörün adı.  
   
    > [!NOTE]
-   >  Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Var olan veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
+   > Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Var olan veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
   
 6. Veri kümesini kaydetme.  
   
@@ -63,7 +63,7 @@ Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.mic
    Veri kümesi ayırdıktan sonra varsayılan olarak ve `TableAdapter` kod sonucu olan her proje bir parçalı sınıf dosyasında. Adlı bir dosya özgün proje sahip DatasetName.Designer.vb (veya DatasetName.Designer.cs) içeren `TableAdapter` kod. İçinde belirtilen projeyi **Dataset projesi** özelliğine sahip bir dosya DatasetName.DataSet.Designer.vb (veya DatasetName.DataSet.Designer.cs) adlı, veri kümesi kodunu içerir.  
   
 > [!NOTE]
->  Oluşturulan sınıf dosyayı görüntülemek için veri kümesi seçin veya `TableAdapter` proje. Ardından **Çözüm Gezgini**seçin **tüm dosyaları göster** .  
+> Oluşturulan sınıf dosyayı görüntülemek için veri kümesi seçin veya `TableAdapter` proje. Ardından **Çözüm Gezgini**seçin **tüm dosyaları göster** .  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md)   

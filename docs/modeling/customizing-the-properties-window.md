@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414736"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde davranışını ve görünümünü özelleştirebilirsiniz. DSL tanımındaki her etki alanı sınıfı üzerinde etki alanı özelliklerini tanımlayın. Diyagram üzerinde veya Model Gezgini'nde sınıfının bir örneğini seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramdaki şekil alanları eşlenmedi olsa bile bu görmek ve etki alanı özelliklerinin değerlerini düzenlemek, sağlar.
@@ -59,7 +59,7 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
  Bir özellik iletmek için bir etki alanı tür tanımlayıcısı tanımlayın. İki alan sınıfı arasındaki bir etki alanı ilişkisi varsa, ikinci etki alanı sınıfı, bir etki alanı özelliğinin değeri ilk sınıf bir etki alanı özelliği ayarlamak için bir etki alanı tür tanımlayıcısı'nı kullanabilirsiniz. Arasında bir ilişki varsa, örneğin, bir **kitap** etki alanı sınıfı ve bir **Yazar** etki alanı sınıfı, bir etki alanı tür tanımlayıcısı yapmak için kullanabileceğiniz **adı** özelliği bir Kitaptaki **Yazar** kullanıcının kitaptan seçtiğinde, Özellikler penceresinde görünür.
 
 > [!NOTE]
->  Kullanıcı bir model düzenlerken iletme özelliği yalnızca Özellikler penceresini etkiler. Alıcı sınıfta bir alan özelliği tanımlamıyor. İletilen domain özelliği DSL tanımının diğer bölümlerinde veya program kodunda erişmek istiyorsanız, iletme öğesi erişmeniz gerekir.
+> Kullanıcı bir model düzenlerken iletme özelliği yalnızca Özellikler penceresini etkiler. Alıcı sınıfta bir alan özelliği tanımlamıyor. İletilen domain özelliği DSL tanımının diğer bölümlerinde veya program kodunda erişmek istiyorsanız, iletme öğesi erişmeniz gerekir.
 
  Aşağıdaki yordam, DSL oluşturmuş olduğunuzu varsayar. İlk birkaç adım önkoşulları özetler.
 
@@ -117,7 +117,7 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.
 
        > [!WARNING]
-       >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.
+       > Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.
 
    2. Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.
 
@@ -177,7 +177,7 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
   Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
->  Ayrı bir kod dosyasında kod ekleme **Dsl** proje.
+> Ayrı bir kod dosyasında kod ekleme **Dsl** proje.
 
  Örneğin:
 
@@ -207,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Aralarından seçim yapabileceğiniz bir kullanıcı için değerler listesini sağlayabilirsiniz.
 
 > [!NOTE]
->  Bu teknik, çalışma zamanında değiştirebileceğiniz değerler listesini sağlar. Değişmeyen bir listesini sağlamak istiyorsanız, bunun yerine göz önünde bulundurun, etki alanı özellik türü olarak bir listeden seçimli türü kullanarak.
+> Bu teknik, çalışma zamanında değiştirebileceğiniz değerler listesini sağlar. Değişmeyen bir listesini sağlamak istiyorsanız, bunun yerine göz önünde bulundurun, etki alanı özellik türü olarak bir listeden seçimli türü kullanarak.
 
  Standart değerlerin bir listesini tanımlamak için aşağıdaki biçimde bir CLR özniteliğinin, etki alanı özelliğine ekleyin:
 

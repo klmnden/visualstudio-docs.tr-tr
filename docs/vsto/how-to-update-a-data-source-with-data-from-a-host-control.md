@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421012"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme
   Konak kontrolü bir veri kaynağına bağlama ve veri kaynağını denetimi verilerde yapılan değişikliklerle güncelleştirin. Bu işlemde iki ana adım vardır:
@@ -61,7 +61,7 @@ ms.locfileid: "60097498"
    - Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged bu özelliği ayarlayın.
 
      > [!NOTE]
-     >  Word Belge değişikliği veya denetim değişikliği bildirimleri gerçekleştirdiğinden System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged seçeneği Word konak denetimleri için geçerli değildir. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
+     > Word Belge değişikliği veya denetim değişikliği bildirimleri gerçekleştirdiğinden System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged seçeneği Word konak denetimleri için geçerli değildir. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
 
      Aşağıdaki örnek yapılandırır bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetiminde değeri değiştiğinde otomatik olarak veri kaynağını güncelleştirmek için denetimi. Bu örnekte, sahibi olduğunuzu varsayar bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `namedRange1` ile kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğe bir veri kaynağında bir alan için.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097498"
     - Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için seçin **OnPropertyChanged**.
 
         > [!NOTE]
-        >  **OnPropertyChanged** seçeneği çünkü Word Belge değişikliği veya denetim değişikliği bildirimlerini Word konak denetimleri için uygulanmaz. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
+        > **OnPropertyChanged** seçeneği çünkü Word Belge değişikliği veya denetim değişikliği bildirimlerini Word konak denetimleri için uygulanmaz. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
 
 6. Kapat **biçimlendirme ve Gelişmiş bağlama** iletişim kutusu.
 

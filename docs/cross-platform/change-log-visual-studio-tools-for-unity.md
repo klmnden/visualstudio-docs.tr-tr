@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7af4a9ad558630350ff64d4a1739a54437c4086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403189"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
@@ -1075,7 +1075,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 - Visual Studio temasından bölümlerini işlenmesini düzeltin.
 
 > [!IMPORTANT]
->  C# Unity ekosisteminde - yeni örnek varlıkları hakim dili olan C# ' de, Unity belgeleri varsayılan C# - C# deneyimi daha fazla odaklanması UnityScript ve hata için temel destek kaldırdık. Sonuç olarak, VSTU çözümleri artık yalnızca C# değildir ve yüklemek için daha hızlıdır.
+> C# Unity ekosisteminde - yeni örnek varlıkları hakim dili olan C# ' de, Unity belgeleri varsayılan C# - C# deneyimi daha fazla odaklanması UnityScript ve hata için temel destek kaldırdık. Sonuç olarak, VSTU çözümleri artık yalnızca C# değildir ve yüklemek için daha hızlıdır.
 
 ## <a name="1820"></a>1.8.2.0
  7 Ocak 2014'te yayımlamıştır
@@ -1414,7 +1414,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 - Çeviri .pdb simgeleri Unity 4'te düzeltilmiştir.
 
 > [!IMPORTANT]
->  Visual Studio 2012 desteği nedeniyle birkaç dosyalarını yeniden adlandırın ve başka gezinme vardı. Unity içeri aktarmak için UnityVS paket artık UnityVS 2010 veya UnityVS 2012'de, sırasıyla Visual Studio 2010 ve Visual Studio 2012 için olarak adlandırılır. Bu sürüm ayrıca UnityVS proje dosyalarını yeniden oluşturulduğunu gerektirir.
+> Visual Studio 2012 desteği nedeniyle birkaç dosyalarını yeniden adlandırın ve başka gezinme vardı. Unity içeri aktarmak için UnityVS paket artık UnityVS 2010 veya UnityVS 2012'de, sırasıyla Visual Studio 2010 ve Visual Studio 2012 için olarak adlandırılır. Bu sürüm ayrıca UnityVS proje dosyalarını yeniden oluşturulduğunu gerektirir.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - iç yapı
  12 Eylül 2012 yayımlanan

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436717"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.
@@ -222,7 +222,7 @@ ms.locfileid: "60059116"
  Kullanıcı Arabirimi Sihirbazı penceresinin ve sihirbaz sayfaları için kullanıcı Arabirimi sağlayan iki kullanıcı denetimleri tanımlamak için XAML ekleyin ve penceresi ve kullanıcı denetimleri davranışını tanımlamak için kodu ekleyin. Visual Studio'da SharePoint projeleri için yerleşik sihirbaz, Oluşturma Sihirbazı'nı benzer.
 
 > [!NOTE]
->  XAML veya kod projenize ekledikten sonra aşağıdaki adımlarda, projenize bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
+> XAML veya kod projenize ekledikten sonra aşağıdaki adımlarda, projenize bazı derleme hataları olacaktır. Sonraki adımlarda kod eklediğinizde, bu hatalar kaybolur.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Sihirbazdan kullanıcı Arabirimi oluşturmak için
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059116"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  Bu XAML içinde oluşturulan pencerenin türetilir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> temel sınıfı. Visual Studio için özel bir WPF iletişim kutusu eklediğinizde, bu sınıftan başka bir Visual Studio iletişim kutusu ile tutarlı bir stil sağlamak için ve oluşabilecek kalıcı iletişim sorunlarını önlemek için iletişim kutusu türetilen öneririz. Daha fazla bilgi için [oluşturma ve yönetme kalıcı iletişim kutuları](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Bu XAML içinde oluşturulan pencerenin türetilir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> temel sınıfı. Visual Studio için özel bir WPF iletişim kutusu eklediğinizde, bu sınıftan başka bir Visual Studio iletişim kutusu ile tutarlı bir stil sağlamak için ve oluşabilecek kalıcı iletişim sorunlarını önlemek için iletişim kutusu türetilen öneririz. Daha fazla bilgi için [oluşturma ve yönetme kalıcı iletişim kutuları](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Visual Basic projesi geliştiriyorsanız kaldırmak `ProjectTemplateWizard` ad alanından `WizardWindow` sınıf adını `x:Class` özniteliği `Window` öğesi. XAML ilk satırında öğesidir. İşiniz bittiğinde, ilk satırın aşağıdaki örnekteki gibi görünmelidir.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059116"
      Site sütunu paketlenir ve SharePoint'e dağıtılan sitenin **Site URL'si** projenin özelliği belirtir. Web tarayıcısı bu sitenin varsayılan sayfasına açılır.
 
     > [!NOTE]
-    >  Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
+    > Varsa **betik hata ayıklamasını devre dışı bırakılmış** iletişim kutusu görüntülenirse, seçin **Evet** proje hatalarını ayıklamaya devam etmek için düğme.
 
 2. Üzerinde **Site eylemleri** menüsünde seçin **Site Ayarları**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059116"
 - [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint Proje Öğeleri için Öğe Şablonları ve Proje Şablonları Oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Nasıl yapılır: Proje Şablonlarıyla Sihirbazlar Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

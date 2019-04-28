@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412300"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], Bir AJAX etkinleştirilmiş ASP.NET Web uygulamasında çalışıyor.
 
     > [!NOTE]
-    >  HTML öğelerinde olay işleyicisi öznitelikleri içinde olan veya içinde tanımlandığından, komut dosyası için IntelliSense desteklenmez `href` öznitelikleri.
+    > HTML öğelerinde olay işleyicisi öznitelikleri içinde olan veya içinde tanımlandığından, komut dosyası için IntelliSense desteklenmez `href` öznitelikleri.
 
 ## <a name="ProcessingIntelliSenseInformation"></a> IntelliSense bilgilerini işleme
  JavaScript IntelliSense sağlamak için dil hizmeti aşağıdaki işlemleri gerçekleştirir:
@@ -189,7 +189,7 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  Web Uygulama Projeleri'nde (WAP), Web hizmeti (.asmx) dosyaları içinde yer alan komut dosyası için JavaScript IntelliSense desteklenmez.
+> Web Uygulama Projeleri'nde (WAP), Web hizmeti (.asmx) dosyaları içinde yer alan komut dosyası için JavaScript IntelliSense desteklenmez.
 
  Aşağıdaki örnekte, sayfa tabanlı komut dosyasına nasıl başvurulacağı gösterilmektedir:
 
@@ -233,18 +233,18 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
   Çoğu senaryoda başvuru gruplarını değiştirmeniz gerekmez. Ancak, değişiklikler yapmak istiyorsanız, başvuru gruplarında yer alan dosyaları belirtmek için JavaScript Kodu Düzenleyicisi'ne ilişkin yapılandırma seçeneklerini kullanabilirsiniz. Bu özelliğin kullanımı hakkında yönergeler için bkz: [seçenekler, metin düzenleyici, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
->  IntelliSense başvuruları normalde IntelliSense ve genel nesneler için IntelliSense desteği sağlamak için kullanılan [uzantıları](#Extensibility). Bu seçeneği ayrıca, komut dosyası yükleyici kullanılarak çalışma zamanında yüklenmesi gereken komut dosyaları için de kullanabilirsiniz.
+> IntelliSense başvuruları normalde IntelliSense ve genel nesneler için IntelliSense desteği sağlamak için kullanılan [uzantıları](#Extensibility). Bu seçeneği ayrıca, komut dosyası yükleyici kullanılarak çalışma zamanında yüklenmesi gereken komut dosyaları için de kullanabilirsiniz.
 
 ### <a name="remote-file-references"></a>Uzak Dosya Başvuruları
  Uzak bir dosya veya kitaplık için IntelliSense desteği sağlamak amacıyla, Visual Studio'ya bir JavaScript dosyasında başvurulan uzak JavaScript dosyalarını indirme talimatı verebilirsiniz. Bu özelliği kullandığınızda, JavaScript dosyanıza bir başvuru olarak eklediğiniz dosyalar indirilir.
 
 > [!NOTE]
->  Web projeleri dışında, bu özelik yalnızca projenin bağlamı dışında açılan JavaScript dosyaları için çalışır. Web projeleri için, projenizde başvurulan uzak dosyalar varsayılan olarak indirilir.
+> Web projeleri dışında, bu özelik yalnızca projenin bağlamı dışında açılan JavaScript dosyaları için çalışır. Web projeleri için, projenizde başvurulan uzak dosyalar varsayılan olarak indirilir.
 
  Bu özelliğin kullanımı hakkında yönergeler için bkz: [seçenekler, metin düzenleyici, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!WARNING]
->  Bu özelliği etkinleştirir ve Kod Düzenleyicisi'nde daha yavaş bir performans gözlemlerseniz, özelliği devre dışı bırakmanızı öneririz.
+> Bu özelliği etkinleştirir ve Kod Düzenleyicisi'nde daha yavaş bir performans gözlemlerseniz, özelliği devre dışı bırakmanızı öneririz.
 
 ### <a name="XMLDocComments"></a> XML belge açıklamaları
  XML belgeleri yorumları, komut dosyasına eklediğiniz kod öğelerinin metin açıklamalarıdır. Bu metin açıklamaları IntelliSense'te, yorumda bulunulan komut dosyasına başvurduğunuz zamanlarda görüntülenir. Örneğin, bir işlevin parametreleri ve dönüş değeri hakkında bilgi verebilirsiniz. XML belgeleri yorumlarına yalnızca dosyalardan, derlemelerden ve hizmetlerden ulaşılabilir. Daha fazla bilgi için [XML belgeleri yorumları](../ide/xml-documentation-comments-javascript.md) ve [XML belge açıklamaları oluşturma](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
@@ -263,7 +263,7 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
  ASP.NET AJAX da JavaScript IntelliSense'i destekler. ASP.NET AJAX, ECMAScript (JavaScript) içinde kullanılabilen standart türlerin kapsamını genişleten bir istemci çerçevesi içerir. ASP.NET AJAX nesneleri hakkında daha fazla ayrıntı sağlamak JavaScript IntelliSense sağlamak için XML belge açıklamaları boyunca eklenen [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. ASP.NET AJAX Kitaplığı'nda yer alan türleri ve üyeleri kullandığınızda bu XML belgeleri yorumları görüntülenir.
 
 > [!NOTE]
->  Özel üyeler JavaScript IntelliSense tarafından görüntülenmez. Özel üyeler, ASP.NET AJAX içinde, bir alt çizgi (_) ile başlayan üyeler olarak belirtilir.
+> Özel üyeler JavaScript IntelliSense tarafından görüntülenmez. Özel üyeler, ASP.NET AJAX içinde, bir alt çizgi (_) ile başlayan üyeler olarak belirtilir.
 
 ## <a name="Extensibility"></a> JavaScript IntelliSense genişletilebilirliği
  JavaScript dil servisi, üçüncü taraf kitaplıkları kullanan geliştiriciler için IntelliSense deneyimini değiştirmenize olanak sağlayan nesneleri ve işlevleri sunar. Özellikle de varsayılan dil servisinin müşterilere vermek istediğiniz tüm bilgileri sağlayamadığı durumlarda bu özellikler yararlı olur. Daha fazla bilgi için [JavaScript IntelliSense genişletme](../ide/extending-javascript-intellisense.md).

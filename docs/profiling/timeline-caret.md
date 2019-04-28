@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999664"
 ---
 # <a name="timeline-caret"></a>Zaman Çizelgesi düzeltme işareti
 Bir noktası zaman çizelgesi üzerinde yürütülen bir iş parçacığı segmenti seçtiğinizde, bir zaman çizelgesi düzeltme işareti görünür. Geçerli yığın sekmesinde görüntülenen çağrı yığını zaman en yakın kesim tıklattığınız için olur. Giriş işaretini altında görüntülenir çağrı yığını ilişkilendirmek için kullanılan **geçerli** sekmesiyle bunu örneklendiğinde anlık. Giriş işaretini kullanıcı seçili konuma yakın çağrı yığını çağrı yığını kesin konumunu gösterir.

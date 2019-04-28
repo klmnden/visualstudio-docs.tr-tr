@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio abonelikleri dahil profesyonel gelişim avantajları
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59018369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007712"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri profesyonel geliştirme avantajları
 
