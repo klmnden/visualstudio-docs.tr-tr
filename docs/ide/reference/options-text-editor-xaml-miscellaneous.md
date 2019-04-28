@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969247"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Seçenekler, metin düzenleyici, XAML çeşitli
 
@@ -50,7 +50,7 @@ Etiketleri ve teklifler ne zaman otomatik olarak oluşturulan denetlemek için b
 |**Küme ayraçları Markupextension'lar için kapanış**|İşaretleme uzantısı kapanış ayracı olup olmadığını belirtir (**}**) açma yazarken otomatik olarak oluşturulan ayracı karakteri (**{**).|
 |**MarkupExtension parametrelerini ayıran ayırmak için virgül**|Birden fazla parametre bir işaretleme uzantısı'nda yazarken virgül oluşturulup oluşturulmadığını belirtir.|
 
-## <a name="errors-and-warnings"></a>Hatalar ve uyarılar
+## <a name="errors-and-warnings"></a>Hatalar ve Uyarılar
 
 Hataları ve Uyarıları ne zaman otomatik olarak oluşturulan denetlemek için bu ayarı kullanın. Daha fazla bilgi için [XAML hataları ve Uyarıları](../../designers/xaml-errors-warnings.md).
 

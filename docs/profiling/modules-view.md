@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829976"
 ---
 # <a name="modules-view"></a>Modüller Görünümü
 Modüller görünümü, profil oluşturma verilerinin modülleri listeler. Her bir hiyerarşik ağaç kök düğümü modülüdür. Profili oluşturulan işlevler modülü, modül düğümünün altında listelenir. Profil oluşturma verilerinin örnekleme metodu kullanılarak tarafından toplanan, satır bilgileri işlevi düğümünün altında listelenir ve yönerge işaretçisi veri satırı düğümünün altında listelenir.

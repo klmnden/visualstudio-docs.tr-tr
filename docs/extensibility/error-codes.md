@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863973"
 ---
 # <a name="error-codes"></a>Hata kodları
 Bir kaynak denetimi eklentisi API işlevi bir hata geri döndüğünde, aşağıdaki hata kodları biri olması beklenir. Tüm hataları uyarı veya bilgilendirme hatası kodları pozitif, negatif ve başarı 0'dır.

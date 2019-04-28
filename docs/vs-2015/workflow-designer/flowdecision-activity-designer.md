@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46ff7dc7ae79ae8bf269a7a3d3cad780ad7654bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943376"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.FlowDecision> Sağlayan bir dal denetim akışı için belirtilen bir koşulu gerçekleşmiş demektir göre iki alternatifleri birine koşullu bir düğümü düğümüdür. Akış ikiden fazla dalları gerektiriyorsa, kullanın <xref:System.Activities.Statements.FlowSwitch%601> yerine.  
@@ -45,4 +45,4 @@ ms.locfileid: "54760632"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)   
  [Akış Çizelgesi](../workflow-designer/flowchart-activity-designer.md)   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

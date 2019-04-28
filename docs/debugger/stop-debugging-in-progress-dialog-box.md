@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3b2a3382fe9ac11f07d7fa9ebc5c1bc094cd526
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902510"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu
 Bu iletişim kutusu, hata ayıklama oturumunu durdurmak hata ayıklayıcı çalışırken görünür, ancak oturumunu durdurmak için biraz zaman olan. Hata ayıklama oturumunu durdurmak normalde çok hızlı olması ve bu iletişim kutusunda görünmez. Bazı durumlarda, ayıklanan tüm işlemleri ayırma için ek süre sürer ancak. Birkaç saniye sürer oturum durduruluyor (veya bir ayırma hatası oluşursa), bu iletişim kutusu görüntülenir. Bu sıklıkla ortaya çıkarsa, dahili bir sorun nedeniyle olabilir ve Ürün Destek Hizmetleri'ne başvurun isteyebilirsiniz.

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849940"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısındaki ifadeler
 Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değerlendiricilerini içerir **QuickWatch** iletişim kutusu, **Watch** penceresinde veya **hemen** penceresi. İş yerinizde de ifade değerlendiricilerini olan **kesme noktaları** penceresi ve hata ayıklayıcı içindeki diğer pek çok yerde.
@@ -106,7 +106,7 @@ Hata ayıklayıcı iç işlevleri:
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Bu işlevler, Windows 8 üzerinde çalıştırılması ayıklanmakta olan işlem gerekir. Bir Windows 8 cihazında döküm dosyalarında hata ayıklanırken ayrıca Visual Studio bilgisayarı olmasını gerektirir Windows 8 çalıştıran. Ancak, Windows 8 cihazını uzaktan ayıklıyorsanız, Visual Studio bilgisayarı Windows 7 çalışabilir.|
 |**Çeşitli**|__log2<br /><br /> Günlük taban 2 daha düşük en yakın tamsayıya yuvarlanır, belirtilen bir tamsayı döndürür.|
 
-## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - desteklenmeyen ifadeler
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - desteklenmeyen ifadeler
 
 - İşaretçiler içeren atamaları veya kullanıcı tanımlı atamalar desteklenmez.
 

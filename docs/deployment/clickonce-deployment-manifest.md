@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900485"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce dağıtım bildirimi
 Bir dağıtım bildirimi açıklayan bir XML dosyasıdır bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] geçerli tanımlaması dahil olmak üzere, dağıtım [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtmak için uygulama sürümü.

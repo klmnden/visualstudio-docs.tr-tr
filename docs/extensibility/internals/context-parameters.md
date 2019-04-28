@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9131ce7950246d878c091f320e22700ba2b1f3ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910729"
 ---
 # <a name="context-parameters"></a>Bağlam parametreleri
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), sihirbazlar ekleyebilirsiniz **yeni proje**, **Yeni Öğe Ekle**, veya **alt proje Ekle** iletişim kutuları. Eklenen sihirbazlar mevcuttur **dosya** menüsü veya bir projeye sağ tıklayarak **Çözüm Gezgini**. IDE bağlam parametreleri Sihirbazı uygulamaya geçirir. IDE Sihirbazı çağırdığında proje durumunu bağlam parametreleri tanımlayın.

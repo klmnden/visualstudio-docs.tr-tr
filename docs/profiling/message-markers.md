@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830084"
 ---
 # <a name="message-markers"></a>İleti işaretçileri
 Bir ileti işaret günlük çıktısını temsil eder. Bir ileti belirli bir süre boyunca belirli bir iş parçacığı tarafından verilen bir dizedir. İletilerin diğer araçlar ile kullanmak için bir metin dosyasına dışarı aktarabilirsiniz. İleti dizesini görüntülemek için bir ileti eşzamanlılık görselleştiricisi'ndeki işaretçisini. İleti işaretçileri tüm görüntüleyebilirsiniz [işaretçiler raporu](../profiling/markers-report.md).  Aşağıdaki çizimde, bir ileti işaret gösterir.

@@ -10,11 +10,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 860ca971d8c3e42ef6d690c7f55b3ce2716b1c4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946823"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Visual C++ ile platformlar arası mobil uygulamalar oluşturun
 Platformlar arası Mobil Geliştirme için Visual C++ kullanarak Android, iOS ve Windows cihazları için platformlar arası kod oluşturabilirsiniz. Bu isteğe bağlı kod iOS, Android ve Visual C++ kullanarak Windows için platformlar arası geliştirmeyi sağlayan Visual Studio 2015'te kullanılabilen bir özelliktir.  

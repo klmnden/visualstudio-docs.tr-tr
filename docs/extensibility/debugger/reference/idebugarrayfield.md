@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0eb59553196b6397f7c222c4fc8d0eae048012d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62924011"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Bu arabirim, bir dizi simge ya da türü açıklar.

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cd7252605fd8c642c0bb331667543b1c67f9d95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938510"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 veya .NET 3.5 Framework’ü Hedefleyen İş Akışı Uygulamaları Geliştirme
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] sağlar [!INCLUDE[wfd1](../includes/wfd1-md.md)] oluşturmak için [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Tasarımcı bilinen kullanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik oluşturma ve hata ayıklama iş akışı uygulamaları için kullanıcı arabirimi.  

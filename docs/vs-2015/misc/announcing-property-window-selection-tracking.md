@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002447"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>İzleme özelliği pencere seçimi ile tanışın
 Çalışmak istiyorsanız **özellikleri** penceresi veya **özelliği** , örneğin, form, metin ve istediğiniz özelliklerini görmek nasıl eksiksiz bilinmesini olmalıdır sonra bir seçim sayfaları, Seçimi koordine edin. Örneğin, tek bir seçim veya birden çok seçimin sahip olup olmadığını bilmeniz gerekir. Daha sonra IDE kullanarak seçimi türünüzü (tek veya birden çok) duyurmaktan gerek <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> arabirimi. Bu arabirim tarafından gerekli olan bilgileri sağlar **özellikleri** penceresi.  

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901934"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Simge Yükleme Bilgileri İletişim Kutusu
 **Sembol yükleme bilgisi** iletişim kutusu açılır, üzerinde sağ tıklattığınızda **modülleri** penceresi ve **sembol yükleme bilgisi**.

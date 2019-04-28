@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916910"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ad ve tanımlayıcı bir programı çalıştırma hata ayıklama altyapısı (DE) alır.
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>Parametreler
  `pbstrEngine`
 
- [out] Programın çalıştırılması DE adını döndürür (C++ diline özgü: Bu çağrı altyapısı adını ilgilenen değil gösteren null bir işaretçi olabilir).
+ [out] Programın çalıştırılması DE adını döndürür (C++-belirli: Bu çağrı altyapısı adını ilgilenen değil gösteren null bir işaretçi olabilir).
 
  `pguidEngine`
 
- [out] Programın çalıştırılması DE genel benzersiz tanımlayıcısını döndürür (C++ diline özgü: Bu çağırana ilişkin GUID'i altyapısının ilgilenen değil gösteren null bir işaretçi olabilir).
+ [out] Programın çalıştırılması DE genel benzersiz tanımlayıcısını döndürür (C++-belirli: Bu çağırana ilişkin GUID'i altyapısının ilgilenen değil gösteren null bir işaretçi olabilir).
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

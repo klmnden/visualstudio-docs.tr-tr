@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823497"
 ---
 # <a name="utilization-navigator"></a>Kullanım Gezgini
 Kullanım Gezgini, bir zaman aralığı içinde bir izleme seçmek için eşzamanlılık görselleştiricisi içinde kullanabilirsiniz. Eşzamanlılık görselleştiricisi, zaman içinde hedef işlem CPU Çekirdek kullanımını gösterir. Bu, CPU kullanım desenlerini incelenmesi kolaylaştırır ve kullanım verileri ve diğer görünümlerde verileri arasında karşılaştırma sağlar. Kullanım Gezgini en üstündeki eşzamanlılık görselleştiricisi her görünümünde görünür. Kullanım Gezgini aşağıda gösterilmiştir.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62878078"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 Bu yapı bir adresi temsil eder.
@@ -57,7 +57,7 @@ Bir Adr [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-ad
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı geçirilir [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) doldurulması için yöntemi.
 
-**Uyarı [yalnızca C++]**
+**Uyarı [C++ yalnızca]**
 
 Varsa `addr.dwKind` olduğu `ADDRESS_KIND_METADATA_LOCAL` ve `addr.addr.addrLocal.pLocal` çağırmalısınız sonra boş bir değer değil `Release` belirteci işaretçinin:
 

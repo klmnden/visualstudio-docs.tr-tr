@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829621"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Veri kaynağında bulunan çeşitli kaynak dosyaları listeler.

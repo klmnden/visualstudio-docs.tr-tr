@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821789"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation Arabirimi
 Hata ayıklama işlemi Yöneticisi uygulayan `IDebugAsyncOperation` arabirimi. Bir dil altyapısı çağırır `IDebugApplication::CreateAsyncDebugOperation` bu arabirim için bir başvuru almak için yöntemi. Dil altyapısı kullanabilirsiniz `IDebugAsyncOperation` bir zaman uyumlu hata ayıklama işlemi zaman uyumsuz erişim sağlamak için arabirim.  

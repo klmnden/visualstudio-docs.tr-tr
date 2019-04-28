@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971283"
 ---
 # <a name="primitives-activity-designers"></a>Temel Öğeler Etkinlik Tasarımcıları
 Temel öğeler etkinlik tasarımcıları oluşturmak ve çeşitli etkinlikler yapılandırmak için kullanılan <xref:System.Activities.Statements> atayın ve gecikme gibi ad alanı. Bu bölümde bulunan konularda nasıl kullanılacağı hakkında rehberlik [!INCLUDE[wfd2](../includes/wfd2-md.md)] etkinliği ve Şablon tasarımcıları.  

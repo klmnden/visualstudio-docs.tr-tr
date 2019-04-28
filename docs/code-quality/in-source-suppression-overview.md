@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825833"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -27,7 +27,7 @@ Genellikle, bir uyarı geçerli olmadığını göstermek kullanışlıdır. Bu,
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Yalnızca derleme zamanında code_analysıs derleme simge tanımlanmışsa, yönetilen kod derlemenizin IL meta verilerde bulunan conditional özniteliği bir özniteliktir.
 
-C + +/ CLI, CA makroları\_BASTIR\_ileti veya CA\_genel\_öznitelik eklemek için üst bilgi dosyasının SUPPRESS_MESSAGE.
+İçinde C++/CLI, CA makroları\_BASTIR\_ileti veya CA\_genel\_öznitelik eklemek için üst bilgi dosyasının SUPPRESS_MESSAGE.
 
 > [!NOTE]
 > Kaynak gizlemeleri yayın derlemelerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Ayrıca, kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansı düşebilir.

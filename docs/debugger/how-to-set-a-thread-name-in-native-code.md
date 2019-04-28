@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847544"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Nasıl yapılır: Yerel kodda iş parçacığı adı ayarlama
 İş parçacığı adlandırma herhangi bir sürümünü Visual Studio mümkündür. İş parçacığı adlandırma, ilgilendiğiniz iş parçacıkları tanımlamak için yararlıdır **iş parçacıkları** çalışan bir işleme hata ayıklama sırasında penceresi. İş parçacığı recognizably adlı sahip ayrıca kilitlenme dökümü İnceleme aracılığıyla ve performansını analiz etme çeşitli araçları kullanarak yakaladığında son İnceleme hata ayıklama gerçekleştirirken yararlı olabilir.

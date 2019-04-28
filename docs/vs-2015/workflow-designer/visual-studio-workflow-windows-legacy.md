@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857539"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio İş Akışı Pencereleri (Eski)
 Eski [!INCLUDE[wfd2](../includes/wfd2-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)] kullanılabilir hedef [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Eski Tasarımcı, bir iş akışı oluşturmak için kullanabileceğiniz bir Görsel Tasarımcı ' dir. Etkinlikler sürükleyebilirsiniz **araç kutusu** tasarım yüzeyine ve ardından var. yapılandırın. Olarak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyicisi penceresinde, tarafından kullanılan ana pencere alanını kaplar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] düzenleyici pencereleri. İş akışının adı görüntülenen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] penceresinin başlık çubuğu.  

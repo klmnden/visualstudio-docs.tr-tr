@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859196"
 ---
 # <a name="running-document-table"></a>Çalıştırılan Belge Tablosu
 IDE, tüm açık belgelerde çalıştırılan Belge tablosu (RDT) olarak adlandırılan bir iç yapıyı listesini tutar. Bu liste, bellekte olup bu belgeler şu anda düzenlenmekte olan bağımsız olarak tüm açık belgeleri içerir. Kalıcı, dosyaları bir proje veya ana proje dosyasında (örneğin, bir .vcxproj dosyası) dahil olmak üzere herhangi bir öğeyi bir belgedir.

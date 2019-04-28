@@ -1,59 +1,58 @@
 ---
 title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 4ad86b7bbd68a6fc449efe650a134ab92458d12e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868197"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
-Belirtilen tür ve size bir dizi oluşturur.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sözdizimi
-
-```cpp
-HRESULT CreateArrayOfType (
-   IDebugField*  pTypeField,
-   DWORD         rank,
-   IDebugField** pArrayOfTypeField
-);
-```
-
-```csharp
-int CreateArrayOfType (
-   IDebugField     pTypeField,
-   uint            rank,
-   out IDebugField pArrayOfTypeField
-);
-```
-
-#### <a name="parameters"></a>Parametreler
- `pTypeField`
-
- [in] Dizi tutacak öğelerin türü.
-
- `rank`
-
- [in] Dizideki öğelerin sayısı.
-
- `pArrayOfTypeField`
-
- [out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) yeni bir dizi temsil eden nesneleri.
-
-## <a name="return-value"></a>Dönüş Değeri
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
-
-## <a name="see-also"></a>Ayrıca Bkz.
-- [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)
+Belirtilen tür ve size bir dizi oluşturur.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```cpp#  
+HRESULT CreateArrayOfType (  
+   IDebugField*  pTypeField,  
+   DWORD         rank,  
+   IDebugField** pArrayOfTypeField  
+);  
+```  
+  
+```csharp  
+int CreateArrayOfType (  
+   IDebugField     pTypeField,  
+   uint            rank,  
+   out IDebugField pArrayOfTypeField  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `pTypeField`  
+ [in] Dizi tutacak öğelerin türü.  
+  
+ `rank`  
+ [in] Dizideki öğelerin sayısı.  
+  
+ `pArrayOfTypeField`  
+ [out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) yeni bir dizi temsil eden nesneleri.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

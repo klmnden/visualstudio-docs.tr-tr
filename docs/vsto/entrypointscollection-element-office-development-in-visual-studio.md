@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951898"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; öğesi (Visual Studio'da Office Geliştirme)
   `entryPointsCollection` Öğesinin `vstav3` ad alanı içeren tüm `entryPoints` Office çözümleri ile ilgili öğeleri.

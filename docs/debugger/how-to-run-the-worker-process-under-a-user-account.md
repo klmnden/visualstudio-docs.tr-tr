@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847777"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
 Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bir kullanıcı hesabı altında çalışan işlemi (aspnet_wp.exe veya w3wp.exe) aşağıdaki adımları izleyin.
@@ -45,21 +45,22 @@ Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[
 
 4. Üzerinde [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], IIS 6.0, varsayılan olarak yüklenir. Çalışan işlemi olarak aspnet_wp.exe ile IIS 6.0 modunda çalıştırılması w3wp.exe.To ilgili çalışan işlemi, şu adımları uygulamanız gerekir:
 
-   1.  Tıklayın **Başlat**, tıklayın **Yönetimsel Araçlar** seçip **Internet Information Services**.
+   1. Tıklayın **Başlat**, tıklayın **Yönetimsel Araçlar** seçip **Internet Information Services**.
 
-   2.  İçinde **Internet Information Services** iletişim kutusu, sağ **Web siteleri** klasörü seçin **özellikleri**.
+   2. İçinde **Internet Information Services** iletişim kutusu, sağ **Web siteleri** klasörü seçin **özellikleri**.
 
-   3.  İçinde **Web siteleri özellikleri** iletişim kutusunda **hizmet**.
+   3. İçinde **Web siteleri özellikleri** iletişim kutusunda **hizmet**.
 
-   4.  Seçin **IIS6.0 yalıtım modunda çalıştır WWW hizmetini**.
+   4. Seçin **IIS6.0 yalıtım modunda çalıştır WWW hizmetini**.
 
-   5.  Kapat **özellikleri** iletişim kutusu ve **Internet Hizmetleri Yöneticisi'ni**.
+   5. Kapat **özellikleri** iletişim kutusu ve **Internet Hizmetleri Yöneticisi'ni**.
 
 5. Bir Windows komut istemi açın ve sunucu çalıştırarak sıfırlayın:
 
    ```cmd
    iisreset
    ```
+
    — veya —
 
    ```cmd
