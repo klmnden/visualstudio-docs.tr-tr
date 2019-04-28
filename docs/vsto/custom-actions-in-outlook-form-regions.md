@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951168"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook form bölgelerindeki özel eylemler
   Bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan bir düğme eylemleri görüntüler. Örneğin, bir posta öğesine yanıt vermek için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmeleri. Bu eylemlerin her biri yeni bir posta öğesi oluşturur ve öğenin alan özgün öğeden bilgileri kullanarak doldurur.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927658"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio kullanarak yerel bir klasöre uygulama dağıtma
 
@@ -24,7 +24,7 @@ Kullanabileceğiniz **Yayımla** ASP.NET, ASP.NET Core, .NET Core ve Python uygu
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Yerel bir klasöre bir Windows Masaüstü uygulamasını yayınlamak gerekiyorsa bkz [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# veya Visual Basic). C + +/ CLR bkz [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C/C++ için bkz. [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Yerel bir klasöre bir Windows Masaüstü uygulamasını yayınlamak gerekiyorsa bkz [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# veya Visual Basic). İçin C++/CLR, bkz: [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) veya C /C++, bkz: [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Yerel klasöre dağıtma
 

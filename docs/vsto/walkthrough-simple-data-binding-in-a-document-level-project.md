@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981068"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede basit veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede veri bağlama ilişkin temel bilgileri gösterir. Bir SQL Server veritabanı bir tek veri alanında Microsoft Office Excel adlandırılmış aralıkta bağlıdır. İzlenecek yol, ayrıca tablodaki tüm kayıtları arasında kaydırma olanak tanıyan denetimlerin nasıl ekleneceğini gösterir.

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946582"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Koşullu derleme kapalı
 Üzerinde koşullu derleme değişken ilk açma koşullu derleme olmadan kullanma girişimi. Üzerinde koşullu derleme bildirir [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] derleyici ile @ koşullu derleme değişkenleri olarak başlayan tanımlayıcılar yorumlamak için. Koşullu kodunuzu ifadesiyle başlayarak yapın:  

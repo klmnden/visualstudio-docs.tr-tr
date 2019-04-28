@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğinize dahil hakkında bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948918"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 

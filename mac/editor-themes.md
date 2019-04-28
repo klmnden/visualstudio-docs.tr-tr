@@ -1,16 +1,16 @@
 ---
-title: Düzenleyici temaları
+title: Düzenleyici Temaları
 description: Bu makalede, düzenleyici temasını düzenlemek veya Mac için Visual Studio'da kendi eklemek açıklanır
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 55ef6a5de9ed0876228d7cca2344b639342e4b91
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
-ms.translationtype: HT
+ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983752"
 ---
 # <a name="editor-themes"></a>Düzenleyici temaları
 
@@ -28,7 +28,7 @@ Desteklenen biçimlerden birinde olması koşuluyla yeni renk temaları eklenebi
 
 Bulunamadı veya yeni bir tema oluşturduğunuza ve yerel makinenize indirilen sonra aşağıdaki adımları uygulayarak ekleyin:
 
-1. Seçin **Ekle** renk temaları seçenek kutusu düğmesine: ![Tema rengi Ekle](media/source-editor-image20.png)
+1. Seçin **Ekle** düğmesi renk temaları seçeneği iletişim kutusunda:  ![Renk teması ekleyin](media/source-editor-image20.png)
 2. Temanın tuşuna basın ve yerel makine üzerinde göz atma **açık**.
-3. Tema önceden yüklenmiş listesine alt kısmına eklenir. Tema önizlemek için onu seçin: ![renk teması Önizleme](media/source-editor-image21.png)
+3. Tema önceden yüklenmiş listesine alt kısmına eklenir. Tema önizlemek için onu seçin: ![Renk teması Önizleme](media/source-editor-image21.png)
 4. Temayı uygulamak için basın **Tamam** düğmesi.

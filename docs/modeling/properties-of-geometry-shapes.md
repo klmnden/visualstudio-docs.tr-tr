@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998976"
 ---
 # <a name="properties-of-geometry-shapes"></a>Geometri Şekillerinin Özellikleri
 Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına özgü dil nasıl görüntüleneceğini belirtmek için kullanabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -41,7 +41,7 @@ Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına ö
 |Temel geometrik şekil|Bu şeklin temel sınıf.|(hiçbiri)|
 |Ad|Bu şeklin adı.|Geçerli ad|
 |Ad Alanı|Bu şeklin ile bağlantılı olan ad alanı.|Geçerli ad alanı|
-|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|Hiçbiri|
+|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|Yok.|
 |Notlar|Bu öğeyle ilişkili resmi olmayan notlar.|\<yok >|
 |İlk yükseklik|Bu şeklin inç cinsinden başlangıç yüksekliği.|1.|
 |Başlangıç genişliği|Bu şeklin inç cinsinden başlangıç genişliği.|1,5|

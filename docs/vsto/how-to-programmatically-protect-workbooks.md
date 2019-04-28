@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955917"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla koruma
   Kullanıcıların ekleme yapılamıyor veya çalışma sayfaları silme ve ayrıca da programlı olarak çalışma kitabının korumasını kaldırmak, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, isterseniz (kullanıcılar sayfası taşınamıyor şekilde) korunan yapı ve korumalı çalışma kitabının windows isteyip istemediğinizi belirtin olup olmadığını gösterir.

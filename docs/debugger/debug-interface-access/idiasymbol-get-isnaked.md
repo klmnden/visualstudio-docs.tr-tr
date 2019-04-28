@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b7dcdfe5f101a3b832a550c53d02007d9afba1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400496"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 İşlev olup olmadığını belirten bir bayrak alır [naked](/cpp/cpp/naked-cpp) özniteliği (diğer bir deyişle, işlev derleyici tarafından eklenen giriş veya çıkış kodu olmayan).
@@ -39,7 +39,7 @@ HRESULT get_isNaked(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 

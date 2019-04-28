@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947239"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 

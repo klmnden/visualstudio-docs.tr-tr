@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b8a3f7cfe9dea56ca7abc0f2e82506e3edef1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385909"
 ---
 # <a name="createitem-task"></a>CreateItem görevi
 Öğe koleksiyonlarını girdi öğelerinin ile doldurur. Bu, bir listeden diğerine kopyalanmasına öğeleri sağlar.
 
 > [!NOTE]
->  Bu görevi kullanım dışı bırakılmıştır. İçinde .NET Framework 3.5 ile öğesi grupları başlangıç yerleştirilebilir [hedef](../msbuild/target-element-msbuild.md) öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).
+> Bu görevi kullanım dışı bırakılmıştır. İçinde .NET Framework 3.5 ile öğesi grupları başlangıç yerleştirilebilir [hedef](../msbuild/target-element-msbuild.md) öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).
 
 ## <a name="attributes"></a>Öznitelikler
  Parametreleri aşağıdaki tabloda açıklanmıştır `CreateItem` görev.

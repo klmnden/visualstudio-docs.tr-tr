@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387651"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin ortamınızı doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
  ![Boş uygulamadan yeni proje oluşturma sonuçlarını &#40;yerel taşınabilir&#41; şablon](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin doğrula 1")  
   
 > [!NOTE]
->  Şablonları olan değil, görürseniz [eksik Xamarin projesi şablonlar? Bu deneyin](#missing) bu sayfanın alt kısmındaki.  
+> Şablonları olan değil, görürseniz [eksik Xamarin projesi şablonlar? Bu deneyin](#missing) bu sayfanın alt kısmındaki.  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ Yükleyicileri tamamladıktan sonra (bkz [Kurulum ve yükleme](../cross-platform
         - Windows 7 ve önceki sürümleri: açılan menü Android için Xamarin Player yerine seçin ve çalıştırmak için F5 tuşuna basın. Xamarin Player hakkında ayrıntılı bilgi için Aygıt Yöneticisi'ni ve sorun giderme ipuçları, okuma [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
   
 > [!NOTE]
->  Visual Studio'da Android öykünücü Yöneticisi'ni (AVD) düğmesini özellikle Google Android öykünücüsü'nü yapılandırmak için kullanılan Aygıt Yöneticisi'ni açar (show aşağıdaki), araç çubuğundaki varlığını fark edebilirsiniz.  Bu üzerinde Visual Studio öykünücüsü Android veya Xamarin Player profillerini yapılandırmak için her biri kendi Aygıt Yöneticisi'ni sahip, bir etkisi yoktur.  Bkz: [Karşınızda Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blogu) ve [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) Ayrıntılar için.  
+> Visual Studio'da Android öykünücü Yöneticisi'ni (AVD) düğmesini özellikle Google Android öykünücüsü'nü yapılandırmak için kullanılan Aygıt Yöneticisi'ni açar (show aşağıdaki), araç çubuğundaki varlığını fark edebilirsiniz.  Bu üzerinde Visual Studio öykünücüsü Android veya Xamarin Player profillerini yapılandırmak için her biri kendi Aygıt Yöneticisi'ni sahip, bir etkisi yoktur.  Bkz: [Karşınızda Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blogu) ve [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) Ayrıntılar için.  
 > ![CrossPlat Xamarin doğrulayın 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin 7 doğrulayın")  
   
 ## <a name="windows-phone"></a>Windows Phone  

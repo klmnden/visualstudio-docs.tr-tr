@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Seçili Visual Studio Enterprise aboneliklerine dahil olan ürünleri ModernRequirements paketi hakkında bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947806"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>MODERNRequirements4TFS avantaj olarak Visual Studio abonelikleri
 

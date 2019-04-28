@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e21caa6b73d6cf23a41bd7691fa19b1f7ff8e2f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996552"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8. Adım: Oyuncunun kazanıp kazanmadığını doğrulamak için yöntem ekleme
 Eğlenceli bir oyun oluşturdunuz, ancak bitirmek için bir şeye daha ihtiyaç var. Oyuncu eklemeniz gerekir. Bu nedenle oyun bitmeli; bu bir `CheckForWinner()` oyuncunun kazanıp kazanmadığını doğrulamak için yöntem.

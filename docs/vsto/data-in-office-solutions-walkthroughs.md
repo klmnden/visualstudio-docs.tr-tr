@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956036"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office çözümlerindeki verilerde izlenecek yol
   Aşağıdaki izlenecek yollar, Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmeleri ve VSTO eklentileri verilerle çalışmak nasıl ekleyebileceğiniz gösterilmektedir.

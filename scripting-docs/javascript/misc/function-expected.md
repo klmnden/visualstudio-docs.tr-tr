@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007112"
 ---
 # <a name="function-expected"></a>İşlev bekleniyor
 Ya da birini çağırmaya çalıştığınız **işlev prototipi** yöntemleri olmayan bir nesne üzerinde bir `Function` nesne veya işlev çağrı bağlamındaki nesne kullanılan. Örneğin, aşağıdaki kod çünkü bu hatayı üretir **örnek** bir işlev değil.  

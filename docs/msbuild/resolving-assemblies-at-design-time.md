@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a18082810feeabe0dcb17796f65e3dbd744e2da2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996725"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Tasarım zamanında derlemeleri çözme
 Bir derlemeye bir başvuru eklediğinizde **.NET** sekmesinde **Başvuru Ekle** iletişim kutusunda, bir ara başvuru bütünleştirilmiş kodu başvuru işaret eder; diğer bir deyişle, tüm türü içeren bir bütünleştirilmiş kod ve imza bilgilerini ancak mutlaka içermediğinden herhangi bir kod. **.NET** sekmesi, .NET Framework çalışma zamanı derlemeleri karşılık gelen başvuru derlemelerini listeler. Ayrıca, çalışma zamanı derlemeleri üçüncü taraflar tarafından kullanılan kayıtlı AssemblyFoldersEx klasörlerdeki karşılık gelen başvuru derlemelerini listeler.

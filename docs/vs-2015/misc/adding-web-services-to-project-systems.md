@@ -11,11 +11,11 @@ ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: f5b192be8e5f68ad9314fe08fff963c032013cb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002657"
 ---
 # <a name="adding-web-services-to-project-systems"></a>Proje sistemleri için Web Hizmetleri ekleme
 XML Web Hizmetleri, genel olarak, SOAP (Basit Nesne Erişim Protokolü) protokolünü kullanarak proje sistemi programlı bilgi döndüren URL'yi adreslenebilir kaynaklardır. VSPackage proje sisteminizi kullanarak Web Hizmetleri tümleştirebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2> arabirimi.  

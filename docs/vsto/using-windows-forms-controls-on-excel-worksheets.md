@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982314"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Excel çalışma sayfalarında Windows Forms denetimlerini kullanma
   Windows Forms'a denetimler ekleme aynı şekilde, Windows Forms denetimleri için Microsoft Office Excel çalışma kitaplarınızı ekleyebilirsiniz. Belgelerindeki denetimler ile çalışma hakkında genel bilgi için bkz. [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).

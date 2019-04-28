@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
 ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947140"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop avantajı
 

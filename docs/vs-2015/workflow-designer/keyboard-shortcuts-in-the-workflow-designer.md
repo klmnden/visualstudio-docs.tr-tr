@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951963"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafından erişilebilir.  

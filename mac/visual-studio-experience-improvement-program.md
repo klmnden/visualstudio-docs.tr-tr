@@ -1,18 +1,18 @@
 ---
-title: Visual Studio Müşteri Deneyimi Geliştirme Programı
+title: Visual Studio Müşteri Deneyimini Geliştirme Programı
 description: Mac için Visual Studio'da gizlilik ayarlarının nasıl yönetileceğini öğrenin
 author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965700"
 ---
-# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
+# <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimini Geliştirme Programı
 
 Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), Visual Studio Mac için zaman içinde geliştirmesine yardımcı olmak için tasarlanmış bir programdır. Bu program bilgisayar donanımıyla ve kişiler Visual Studio Mac için kullanıcıların bilgisayardaki görevlerini kesintiye uğratmadan kullanma hakkında bilgi toplar. Toplanan bilgiler, Microsoft'un hangi özellikleri belirlemesine yardımcı olur. Bu makalede, içine veya dışına VSCEIP iyileştirilmiş açıklar.
 
@@ -30,7 +30,7 @@ VSCEIP varsayılan olarak etkinleştirilir. Devre dışı ya da, aşağıdaki y�
 
     ![Katılım tercihinizi yansıtmak için bir radyo düğmesini seçin](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

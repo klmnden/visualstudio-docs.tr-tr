@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
 ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948424"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 

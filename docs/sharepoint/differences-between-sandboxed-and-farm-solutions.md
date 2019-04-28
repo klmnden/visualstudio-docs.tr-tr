@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967552"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Korumalı arasındaki farklar ve Grup çözümleri
   Bir SharePoint çözüm derlediğinizde, SharePoint sunucusuna dağıtır ve hata ayıklamak için bir hata ayıklayıcı ekler. Çözüm hata ayıklamak için kullanılan işlem Korumalı çözüm özelliğinin ayarına bağlıdır: Korumalı çözüm veya Grup çözümü.

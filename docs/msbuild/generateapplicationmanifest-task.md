@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003630"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest görevi
 Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.

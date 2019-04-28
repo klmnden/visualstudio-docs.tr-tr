@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943399"
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart Etkinlik Tasarımcıları
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, akış çizelgeleri iş akışı içinde yönetmek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  
@@ -24,7 +24,7 @@ ms.locfileid: "54752101"
  **İş akışlarını tanımlamak ve yönetmek karmaşık akış denetimleri oluşturmak için kullanılır.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)  
  Bir dal denetim akışı için tek bir belirtilen bir koşulu gerçekleşmiş demektir göre iki alternatifler sağlar.  
   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)  
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)  
  İkiden fazla alternatif dalları gerekli olduğunda eşleştirme ölçütü temel alan denetim akışı için dallanma sağlar.  
   
 ## <a name="reference"></a>Başvuru  

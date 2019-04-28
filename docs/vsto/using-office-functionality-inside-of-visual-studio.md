@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982341"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio içinde Office işlevselliğini kullanma
   Bir belge düzeyi projesi oluşturduğunuzda, belge ve ilişkili uygulama tasarlayın ve doğrudan belge ile çalışmak için Visual Studio içinde barındırılır. Uygulamayı açmak Visual Studio'da Microsoft Office olduğunda, genellikle beklendiği gibi çalışır. Ancak, uygulamanın işlevselliğini bazıları, farklı veya erişilemez.

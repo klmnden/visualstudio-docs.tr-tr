@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385809"
 ---
 # <a name="bscmake-task"></a>BscMake görevi
 > [!IMPORTANT]
->  BscMake artık Visual Studio IDE tarafından kullanılır. Visual Studio 2008'den itibaren gözatma bilgilerini otomatik olarak depolanan bir *.sdf* dosyası *çözüm* klasör.
+> BscMake artık Visual Studio IDE tarafından kullanılır. Visual Studio 2008'den itibaren gözatma bilgilerini otomatik olarak depolanan bir *.sdf* dosyası *çözüm* klasör.
 
  Microsoft gözatma bilgisi bakım Yardımcısı aracı sarmalar (*bscmake.exe'yi*).  *Bscmake.exe'yi* aracı gözatma bilgisi dosyası oluşturur (*.bsc*) öğesinden kaynak tarayıcı dosyaları (*.sbr*) derleme sırasında oluşturulur. Kullanım **Nesne Tarayıcısı** görüntülemek için bir *.bsc* dosya. Daha fazla bilgi için [BSCMAKE başvurusu](/cpp/build/reference/bscmake-reference).
 

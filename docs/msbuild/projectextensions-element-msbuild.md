@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002417"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions öğesi (MSBuild)
 Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyalarını içerecek olmayan[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bilgileri. Herhangi bir şey içinde bir `ProjectExtensions` öğesi tarafından yoksayılacak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -42,10 +42,10 @@ Sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
 ### <a name="attributes"></a>Öznitelikler
- Hiçbiri
+ Yok.
 
 ### <a name="child-elements"></a>Alt öğeleri
- Hiçbiri
+ Yok.
 
 ### <a name="parent-elements"></a>Üst öğeler
 

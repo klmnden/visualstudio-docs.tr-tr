@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961907"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Nasıl yapılır: Belirli klasör içinde program aracılığıyla arama yapma
   Bu kod örneği kullanan `Find` ve `FindNext` metin e-posta iletilerinin bulunan konu alanında aranacak yöntemleri **gelen**. Bu yöntem bir dize filtresi T harfiyle başlayan harfini denetlemek için kullanılır. `Subject` metin.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a2f26a1488500f256b6ba9a0ec96eca9b952f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400099"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Dosyaların konumudur yönergesi güvenli bir arabellek için kullanılıp kullanılmayacağını belirten bir bayrak alır. Şu durumlarda kullanın [SymTagEnum numaralandırması](../../debugger/debug-interface-access/symtagenum.md) ayarlanır `SymTagFunction`.
@@ -39,7 +39,7 @@ HRESULT get_isSafeBuffers( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
 

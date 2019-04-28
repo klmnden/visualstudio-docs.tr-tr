@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966880"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Nasıl yapılır: Bir SharePoint proje uzantısı oluşturma
   Visual Studio'da açık olduğundan herhangi bir SharePoint projesine işlevselliği eklemek istediğinizde bir proje uzantısı oluşturma. Daha fazla bilgi için [SharePoint Proje sistemini genişletmek](../sharepoint/extending-the-sharepoint-project-system.md).

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001198"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Itemdefinitiongroup öğesi (MSBuild)
 `ItemDefinitionGroup` Öğesi varsayılan olarak uygulanır, projedeki tüm öğeleri meta verileri değerler öğesi tanımları kümesini tanımlamak olanak tanır. Itemdefinitiongroup yerini gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için [öğesi tanımları](../msbuild/item-definitions.md).

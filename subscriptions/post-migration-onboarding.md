@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Bilgi nasıl başarılı bir şekilde eklemek için Visual Studio abonelikleri Yönetim Portalı'na taşıdıktan sonra kuruluşunuzun.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008268"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Sonra kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na katılabilirsiniz geçirilir
 

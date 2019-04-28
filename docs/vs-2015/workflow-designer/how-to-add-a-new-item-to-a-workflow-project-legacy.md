@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954784"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Nasıl yapılır: Bir İş Akışı Projesine Yeni Öğe Ekleme (Eski)
 Eski kullanarak bir iş akışı projesi oluşturduktan sonra [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)] ya da hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], ekleyebileceğiniz [!INCLUDE[wf](../includes/wf-md.md)] öğeleri ve diğer tanıdık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projenize öğeleri.  

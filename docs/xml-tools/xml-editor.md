@@ -1,5 +1,5 @@
 ---
-title: XML Düzenleyicisi
+title: XML düzenleyicisi
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002490"
 ---
-# <a name="xml-editor"></a>XML Düzenleyicisi
+# <a name="xml-editor"></a>XML düzenleyicisi
 
 Visual Studio XML düzenleyicisinde metin düzenleyicisi üzerinde temel alır ve XML diller için ek destek içerir. Visual Studio'da bir XML dosyasını açtığınızda, XML Düzenleyicisi'nde açılır.
 
@@ -46,7 +46,7 @@ XML Düzenleyicisi gibi iyi bilinen dosya uzantıları için çağrılan *.xml*,
 
 [XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) otomatik tamamlama öznitelik kümesi adları, şablon modları ve adları sağlar ve parametre adları için belirtilen bir mod ya da belirtilen bir şablon adı.
 
-## <a name="xslt-profiler"></a>XSLT Profil Oluşturucusu
+## <a name="xslt-profiler"></a>XSLT profil oluşturucusu
 
 [XSLT Profil Oluşturucusu](../xml-tools/xslt-profiler.md) ayrıntılı XSLT performansı ölçmesine, değerlendirmek ve performans ile ilgili sorunları XSLT kodda hedef yardımcı olan raporlar oluşturur. XSLT Profiler, XSL ve XSLT stil sayfası iyileştirmeler için faydalı ipuçları da içerir.
 

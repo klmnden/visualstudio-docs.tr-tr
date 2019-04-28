@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948832"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 

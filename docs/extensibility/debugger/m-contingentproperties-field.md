@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bfbcfcbca544694fa1a8db95d23a006e45f89bbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925443"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties field
 Ek özellikleri depolar <xref:System.Threading.Tasks.Task> nesne.

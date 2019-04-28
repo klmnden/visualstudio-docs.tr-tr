@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001509"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint Arabirimi
 Açıklayan ve belirli bir bağlantı noktasında harekete geçirilen olayları numaralandırma için basit bir yol sağlar. Bu arabirim de takma kolaylaştırır bir `IDispatch` olaylar için nesne. Bu arabirim, işlem hata ayıklama Yöneticisi (PDM) tarafından uygulanan ve komut dosyası motoru tarafından kullanılan.  

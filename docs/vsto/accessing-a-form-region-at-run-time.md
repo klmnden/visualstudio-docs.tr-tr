@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eed4d9dee7cc6c7de387d590662c47d90a99a2ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001158"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Form bölgesine çalışma zamanında erişme
 
 |Uygulandığı öğe:|
 |----------------|
-|Bu konudaki bilgiler, yalnızca aşağıdaki Microsoft Office proje türleri ve sürümleri için geçerlidir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Proje türü**<br /><br /> -VSTO eklentisi projeleri<br /><br /> **Microsoft Office sürümü**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|Bu konunun içerdiği bilgiler, yalnızca Microsoft Office'in aşağıdaki proje türleri ve sürümleri için geçerlidir. Daha fazla bilgi için [Office uygulaması ve proje türüne göre kullanılabilen özellikler](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Proje türü**<br /><br /> -VSTO eklentisi projeleri<br /><br /> **Microsoft Office sürümü**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
  Kullanım `Globals` erişim form bölgeleri için bir sınıf her yerden Outlook projenizin içinde. Hakkında daha fazla bilgi için `Globals` sınıfı [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
 

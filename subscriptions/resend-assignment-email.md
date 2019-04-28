@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Manage.visualstudio.com veya VLSC abonelere abonelik atamasını yeniden öğrenin
 searchscope: VS Subscription
 ms.openlocfilehash: 12348428304892d4a4bc248d94bb5d0b484c7684
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951229"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Nasıl abonelik Visual Studio aboneliği Yönetim Portalı'nda postalarını yeniden gönder
 

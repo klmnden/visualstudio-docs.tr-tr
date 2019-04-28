@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399434"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yapabilirsiniz. GPU hata ayıklama desteği Visual Studio'da yarış algılama işlemlerini başlatma ve bunları ve hata ayıklama Windows tümleştirme ekleme içerir.
@@ -27,7 +27,7 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
  Hata ayıklama desteklenir [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], ve [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Yazılım benzetmesi üzerinde hata ayıklama [!INCLUDE[win8](../debugger/includes/win8_md.md)], veya [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] gereklidir. Donanım üzerinde hata ayıklamak için ekran kartınızın sürücülerini yüklemeniz gerekir. Tüm donanım satıcıları, tüm hata ayıklayıcı özellikler uygular. Sınırlamalar satıcı belgelerine bakın.
 
 > [!NOTE]
->  Visual Studio GPU hata ayıklama desteklemek istediğiniz bağımsız donanım satıcıları kendi sürücüleri hedefleri ve VSD3DDebug arabirimi uygulayan bir DLL oluşturmanız gerekir.
+> Visual Studio GPU hata ayıklama desteklemek istediğiniz bağımsız donanım satıcıları kendi sürücüleri hedefleri ve VSD3DDebug arabirimi uygulayan bir DLL oluşturmanız gerekir.
 
 ## <a name="configuring-gpu-debugging"></a>GPU hata ayıklama yapılandırma
  Hata ayıklayıcı, hem CPU kod hem de GPU kodu aynı uygulama yürütme kesemez. Varsayılan olarak, hata ayıklayıcı CPU kodu keser. GPU kodunda hata ayıklamak için aşağıdaki iki adımlardan birini kullanın:
@@ -80,6 +80,6 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
  Windows zaman aşımı algılama ve kurtarma işlemi (TDR) tarafından ayarlanmış varsayılan zaman aralığını aşan C++ AMP hesaplamalar için mümkündür. Bu durum oluştuğunda, hesaplama iptal edilir ve veriler kaybolur. Daha fazla bilgi için [işleme TDRs C++ amp'de](http://go.microsoft.com/fwlink/p/?LinkId=249154).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ Hata Ayıklama Yapılandırması Proje Ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Visual Studio GPU hata ayıklamayı Başlat](http://go.microsoft.com/fwlink/p/?LinkId=255381)

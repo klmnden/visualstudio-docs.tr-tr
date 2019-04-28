@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Nasıl Yöneticiler bireysel abonelerinizde veya grupları Yönetici portalı'nda bulabilirsiniz öğrenin.
 searchscope: VS Subscription
 ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008209"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri arama ve filtre aboneler
 

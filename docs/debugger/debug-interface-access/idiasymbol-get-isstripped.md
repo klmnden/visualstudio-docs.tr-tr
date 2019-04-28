@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e21e212bc425a1cdbbe51ba6039167b42a186814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c46319714e24a64ad71951b78c55c140028c3ab0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400119"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Özel sembolleri sembol dosyasından kesilmiş belirten alır bayrak.
@@ -39,7 +39,7 @@ HRESULT get_isStripped(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu özellik kullanılabilir `SymTagExe` sembol türü (bkz [Exe](../../debugger/debug-interface-access/exe.md)).

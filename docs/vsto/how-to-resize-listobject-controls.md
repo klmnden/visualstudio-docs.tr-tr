@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ff4080b7b658af5911a0372562954899628bb92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961523"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma kitabına eklediğinizde denetimi; ancak daha sonraki bir zamanda yeniden boyutlandırmak isteyebilirsiniz. Örneğin, iki sütunlu bir liste için üç sütun değiştirmek isteyebilirsiniz.

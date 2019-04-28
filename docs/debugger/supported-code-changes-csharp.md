@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929726"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türde işler. Metot gövdeleri dışında çoğu değişiklikleri ve metot gövdeleri içindeki bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurmak ve kod yeni bir sürümle yeniden başlatmanız gerekir.

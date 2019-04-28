@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949662"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart Etkinlik Tasarımcısı
 
@@ -50,4 +50,4 @@ Aşağıdaki tabloda <xref:System.Activities.Statements.Flowchart> özellikleri 
 
 - [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
-- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

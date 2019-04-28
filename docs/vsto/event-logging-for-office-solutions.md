@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951950"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office çözümleri için olay günlüğüne kaydetme
   Tarafından yakalanan özel durum iletilerini görmek için Windows Olay Görüntüleyicisi'ni kullanabilirsiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] yüklediğinizde veya Office çözümleri kaldırın. Olay günlüğü ileti, yükleme ve dağıtım sorunlarını gidermek için kullanabilirsiniz.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a9a7199e035336b080f8d7b19d6e12eb5fe651b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95c3f83f67eb2a20b058300abaf96d37ad16687d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387577"
 ---
 # <a name="introducing-spy"></a>Spy++'a Giriş
 Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:
@@ -37,7 +37,7 @@ Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:
   Çeşitli Spy ++ windows, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Hangi komutlar işaretçi nerede olduğuna bağlıdır. Örneğin, pencere görünümünde bir girişi sağ tıklatın ve Seçili pencerenin görünür olup, ardından **vurgulayın** kısayol menüsünde, daha kolay bulunabilir yükleyebilmeleri için seçilen pencere kenarlığını neden olur.
 
 > [!NOTE]
->  Spy ++ benzeyen iki diğer yardımcı programları vardır: PView işlemler, iş parçacıkları ve DDESPY hakkında ayrıntılı bilgiler gösterilir. EXE, dinamik veri değişimi (DDE) iletileri izlemenize izin verir.
+> Spy ++ benzeyen iki diğer yardımcı programları vardır: PView işlemler, iş parçacıkları ve DDESPY hakkında ayrıntılı bilgiler gösterilir. EXE, dinamik veri değişimi (DDE) iletileri izlemenize izin verir.
 
 ## <a name="64-bit-operating-systems"></a>64-bit işletim sistemleri
  Spy ++'ın iki sürümü vardır. Spy ++ (spyxx.exe) adlı ilk sürümü, 32 bit işlemde çalışan bir pencere gönderilen iletileri görüntülemek için tasarlanmıştır. Örneğin, Visual Studio 32-bit işlem içinde çalışır. Bu nedenle, Spy ++ gönderilen iletileri görüntülemek için kullanabileceğiniz **Çözüm Gezgini**. Visual Studio'da çoğu derlemeler için varsayılan yapılandırma bir 32-bit işlem içinde çalıştırmak için bu ilk sürümünde Spy ++ kullanılabilir olanı olduğu **Araçları** Visual Studio'da, menü, [bileşenler gereklidir yüklü](../debugger/how-to-start-spy-increment.md).
@@ -49,7 +49,7 @@ Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:
  Her iki sürümünde de Spy ++ doğrudan komut satırından çalıştırabilirsiniz.
 
 > [!NOTE]
->  Spy ++ (64-bit) dosya adı "amd" içerse de, Windows işletim sistemi üzerinde herhangi bir x64 çalıştırır.
+> Spy ++ (64-bit) dosya adı "amd" içerse de, Windows işletim sistemi üzerinde herhangi bir x64 çalıştırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Nasıl yapılır: Spy++ Başlatma](../debugger/how-to-start-spy-increment.md)

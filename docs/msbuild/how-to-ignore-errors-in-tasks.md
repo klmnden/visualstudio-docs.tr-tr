@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000296"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Nasıl yapılır: Görevlerdeki hataları yoksayma
 Bazen bir derleme hatalarının bazı görevler dayanıklı olmasını istersiniz. Kritik olmayan bu görev başarısız olursa yine de gerekli çıktı üretebilir çünkü devam etmek için yapı istediğinizde. Örneğin, bir proje kullanıyorsa bir `SendMail` her bileşenin oluşturulduktan sonra bir e-posta iletisi göndermek için görev posta sunucuları kullanılamaz ve durum iletilerinin gönderilemez bile tamamlanana kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz. Veya Ara dosyaları derleme sırasında genellikle silinir, örneğin, bu dosyaları silinemez, tamamlanana kadar devam etmek derleme için kabul edilebilir düşünebilirsiniz.

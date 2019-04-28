@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001058"
 ---
 # <a name="concurrency-visualizer-markers"></a>Eşzamanlılık görselleştiricisi işaretleyicileri
 Eşzamanlılık görselleştiricisi içinde temsil eden bir uygulama olayları simgeleri işaretleyicileri şunlardır.  Genellikle, bu olayları aşamaları veya bir uygulamadaki oluşum belirlemek için bir uygulama oluşturur.  Olayları, uygulama veya kitaplıkları ve uygulamanın kullandığı çalışma zamanları oluşturulabilir.

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387479"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenler
 Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri birleştirin. Tutarlılık açısından en önemli bileşik desenler Visual Studio'da bazıları şunlardır:
@@ -431,7 +431,7 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
  Liste seçimdeki en önemli kavram olan satır tabanlı, tam satır seçimi yapıldığında, yani bir birim olarak seçilir. Aksine, kılavuzlar, belirli bir satırın herhangi bir özelliği etkilemeden seçilmesi hücrelere izin verebilirsiniz. Kılavuzlar hiyerarşisi seçili ve üst satırları ile etkileşim kurarak seçimi için hiyerarşinin tüm dalları sağlayan iç içe geçmiş satırlar (olduğu gibi bir TreeGrid gibi) de içerebilir. Seçim listeleri tüm veri satırı üzerinde basit Vurgu rengi tarafından gösterilir. Odağı geçerli düzenlenebilir satır veya hücre (satır tüm hücreler salt okunur ise) çevresine tek pikselli noktalı bir kenarlık tarafından gösterilir.
 
 > [!NOTE]
->  **Odak** ve **seçimi** farklı kavram olmasıdır. *Odak* göstergesidir hangi UI öğesi hedeflediği açıkça başka bir nesnede yönlendirilmiş giriş almaya çalışırken *seçimi* sonraki olan bir nesne nesnenin edilme durumunu gösterir işlemleri yer alabilir.
+> **Odak** ve **seçimi** farklı kavram olmasıdır. *Odak* göstergesidir hangi UI öğesi hedeflediği açıkça başka bir nesnede yönlendirilmiş giriş almaya çalışırken *seçimi* sonraki olan bir nesne nesnenin edilme durumunu gösterir işlemleri yer alabilir.
 
  Bitişik, ayrık, seçim listelerindeki olabilir veya bölge. Ne zaman birden çok seçime izin verilen, sürekli ve ayrık seçimi her zaman, bölge (kutu) seçimleri için destek sırasında desteklenmelidir isteğe bağlıdır. Bölge seçim listesi gövdesi içinde beyaz boşluk sürükleyerek başlatılır.
 

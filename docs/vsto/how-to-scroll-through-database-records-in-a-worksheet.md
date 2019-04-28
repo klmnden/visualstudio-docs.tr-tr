@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961234"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
   Aşağıdaki yordam bir Microsoft Office Excel çalışma sayfasındaki tüm kayıtlarda gezinin son kullanıcının etkinleştirme denetimleri ile bir veritabanı tablosundan tek bir alan görüntülemek için tasarımcı kullanmayı gösterir.

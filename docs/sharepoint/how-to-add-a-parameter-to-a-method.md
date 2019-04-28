@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967241"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Nasıl yapılır: Bir yönteme bir parametre ekleyin
   Bir parametre bilgileri yönteme geçirmek için veya bir yöntemden bilgi almak için kullanın. Tüm yöntemler, en az bir parametreye sahip olmalıdır. Oluşturmak istediğiniz yöntemi türünü desteklemek için bir parametre tasarlama hakkında daha fazla bilgi için bkz: [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).

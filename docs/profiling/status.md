@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967878"
 ---
 # <a name="status"></a>Durum
 *VSPerfCmd.exe* **durumu** seçeneği profil oluşturucuyu ve şu anda profillenen herhangi bir işlem durumuyla ilgili bilgileri görüntüler.
@@ -27,7 +27,7 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>Parametreler
- Hiçbiri
+ Yok.
 
 ## <a name="remarks"></a>Açıklamalar
  **Durumu** seçeneği profil oluşturucu için aşağıdaki durum bilgileri görüntülenir.

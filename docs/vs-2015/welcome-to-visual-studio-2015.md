@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383424"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067735"
 Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüstü uygulamaları, Web ve bulut oluşturmak için ihtiyacınız olan her şeyi yapılandırdığımıza göre. İOS, Android ve Windows için kod, bir IDE içinde yazın. Harika IntelliSense, kolayca kod gezintisi, hızlı derlemeler ve hızlı dağıtım alın. Visual Studio, üretkenliğinizi artıran ve tek başına ya da daha büyük bir ekibin parçası olarak işinizi yapmanız kolaylaştırır.
 
 > [!NOTE]
->  Yayın notlarını görmek için buraya tıklayın [Visual Studio 2015 güncelleştirme 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Yayın notlarını görmek için buraya tıklayın [Visual Studio 2015 güncelleştirme 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Yayın notlarını görmek için buraya tıklayın [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Yayın notlarını görmek için buraya tıklayın [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  İndirme [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) ücretsiz hemen kodlamaya başlamak için. Platformlar arası geliştirme yapmak istiyorsanız, isteğe bağlı paketleri yüklediğinizden emin olun. (Daha fazla özellik ile alabilirsiniz [Visual Studio'nun diğer sürümlerinde](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

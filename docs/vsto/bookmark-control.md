@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939404"
 ---
 # <a name="bookmark-control"></a>Yer işareti denetimi
   <xref:Microsoft.Office.Tools.Word.Bookmark> Verilere bağlı benzersiz bir ada sahip ve olayları ortaya koyan bir yer işareti bir denetimdir. Yer işareti, bir öğe veya Microsoft Office Word belgesindeki bir konumu işaretlemek için yer tutucu olarak kullanılabilir. <xref:Microsoft.Office.Tools.Word.Bookmark> Denetimi bir birleşimi olan bir <xref:Microsoft.Office.Interop.Word.Bookmark> nesnesi ve bir <xref:Microsoft.Office.Interop.Word.Range> nesne.

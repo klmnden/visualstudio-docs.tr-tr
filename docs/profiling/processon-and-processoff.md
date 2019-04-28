@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972424"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn ve ProcessOff
 VSPerfCmd.exe **ProcessOff** ve **ProcessOn** alt komutları duraklatma ve komut satırı profil oluşturma oturumu içinde belirtilen işlem için profil oluşturmayı sürdürün. **ProcessOff** profil oluşturma işlemi durdurur ve **ProcessOn** işlemi profil oluşturmaya başlar.
@@ -41,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Başlatma veya durdurma işlemini tamsayı tanımlayıcısı. İşlem kimliklerini listelenen **işlem** Windows Görev Yöneticisi'nin sekmesinde.
 
 ## <a name="required-subcommands"></a>Gerekli bir alt komutları
- Hiçbiri
+ Yok.
 
 ## <a name="valid-subcommands"></a>Geçerli alt komutları
  **ProcessOn** ve **ProcessOff** de aşağıdaki komutları içeren komut satırlarında belirtilebilir.

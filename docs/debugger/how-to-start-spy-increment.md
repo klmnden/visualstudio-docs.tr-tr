@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387527"
 ---
 # <a name="how-to-start-spy"></a>Nasıl yapılır: Spy++'ı başlatma
 
@@ -24,7 +24,7 @@ Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.
  Başladığınızda Spy ++'ta, değişiklik bilgisayara select izni istemek için bir ileti görüntülenirse **Evet**.
 
 > [!NOTE]
->  Spy ++ yalnızca bir örneği çalıştırabilirsiniz. Yalnızca ikinci bir örneğini başlatmayı denerseniz, odağı almak o sırada çalıştırılan örneğinden neden olur.
+> Spy ++ yalnızca bir örneği çalıştırabilirsiniz. Yalnızca ikinci bir örneğini başlatmayı denerseniz, odağı almak o sırada çalıştırılan örneğinden neden olur.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -42,7 +42,7 @@ Herhangi bir değişiklik yaptıysanız, bu bileşenleri yüklemek için istemle
 Başladıktan sonra Spy ++ birbirinden bağımsız olarak çalıştığından, Visual Studio'yu kapatabilirsiniz.
 
 > [!NOTE]
->  İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.
+> İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Spy ++ bir komut isteminden başlatmak
 

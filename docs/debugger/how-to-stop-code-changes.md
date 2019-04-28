@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388358"
 ---
 # <a name="how-to-stop-code-changes"></a>Nasıl yapılır: Kod değişikliklerini durdurma
 Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.
 
 > [!CAUTION]
->  Yönetilen kodda kod değişikliklerini durdurma beklenmeyen sonuçlara neden olabilir. Yönetilen kodda kod değişikliklerini durdurma gerek seyrek olduğundan yönetilen kod için değişiklikler uygulanırken normal olarak bir hızlı işlemdir.
+> Yönetilen kodda kod değişikliklerini durdurma beklenmeyen sonuçlara neden olabilir. Yönetilen kodda kod değişikliklerini durdurma gerek seyrek olduğundan yönetilen kod için değişiklikler uygulanırken normal olarak bir hızlı işlemdir.
 
 ### <a name="to-stop-applying-code-changes"></a>Kod değişiklikleri uygulanırken durdurmak için
 

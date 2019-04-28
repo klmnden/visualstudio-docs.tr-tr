@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386977"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile birlikte, DSL tanımı dosyası tarafından tanımlanır. DSL çözüm program kodunda çoğu bu dosyadan oluşturulur.
@@ -93,7 +93,7 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
  Bir model kaydedildiğinde serileştirme özelleştirmediyseniz XML biçiminde dosyasına katıştırılmış öğeleri ebeveynleri yerleştirilir.
 
 > [!NOTE]
->  Gömme devralma ile aynı değil. Gömme ilişkisi, alt, üst öğenin özelliklerini devralmaz. Gömme model öğeleri arasında bağlantı türüdür. Devralma sınıfları arasındaki bir ilişkidir ve model öğeleri arasında bağlantılar oluşturmaz.
+> Gömme devralma ile aynı değil. Gömme ilişkisi, alt, üst öğenin özelliklerini devralmaz. Gömme model öğeleri arasında bağlantı türüdür. Devralma sınıfları arasındaki bir ilişkidir ve model öğeleri arasında bağlantılar oluşturmaz.
 
 ### <a name="embedding-rules"></a>Kuralları ekleme
  Her bir örnek modeli öğesinde modelin kökü dışında tam olarak bir gömme bağlantı hedefi olması gerekir.

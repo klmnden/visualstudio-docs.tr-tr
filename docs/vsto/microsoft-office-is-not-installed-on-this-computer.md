@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f75ffccf8aa9e3c6252583ad1cfd87baa37ba94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970324"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office bu bilgisayarda yüklü değil
   Visual Studio Proje türü için karşılık gelen Microsoft Office uygulamasını bulamıyor. Bir VSTO eklentisi proje geliştiriyorsanız, hata ayıklama yapılamıyor veya projeyi çalıştırın, anlamına gelir. Belge düzeyi projesi oluşturmaya çalışıyorsanız, bu proje oluşturulamıyor anlamına gelir.

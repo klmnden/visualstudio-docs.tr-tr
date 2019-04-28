@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964293"
 ---
 # <a name="properties-of-compartment-shapes"></a>Bölme Şekillerinin Özellikleri
 Bölme şekilleri bir etki alanı sınıfı bir etki alanına özgü dil görüntülemek için kullanabileceğiniz şekilleri biridir. Genişletin ve bölmeleri daraltın.
@@ -41,7 +41,7 @@ Bölme şekilleri bir etki alanı sınıfı bir etki alanına özgü dil görün
 |Özel Öznitelikler|Bu bölme şekli oluşturulan kaynak kod sınıfı öznitelikler eklemek için kullanılır|\<yok >|
 |Çift oluşturur türetilmiş|Varsa `True`, hem temel sınıf hem de (geçersiz kılmalar aracılığıyla özelleştirmeyi desteklemek için) bir kısmi sınıf oluşturulur. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Özel oluşturucu vardır.|Varsa `True`, kaynak kodunda özel bir oluşturucu sağlanacaktır. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Devralma değiştiricisi|Bölme şekli oluşturulan kaynak kodu sınıf devralma türü açıklar (`none`, `abstract` veya `sealed`).|Hiçbiri|
+|Devralma değiştiricisi|Bölme şekli oluşturulan kaynak kodu sınıf devralma türü açıklar (`none`, `abstract` veya `sealed`).|None|
 |Temel bölme şekli|Bu şeklin temel sınıf.|(hiçbiri)|
 |Ad|Bu şeklin adı.|Geçerli ad|
 |Ad Alanı|Bu şeklin ile bağlantılı olan ad alanı.|Geçerli ad alanı|

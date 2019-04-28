@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387662"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Nasıl yapılır: Bulucu aracını kullanma
 Bulucu Aracı kullanabileceğiniz **Bul penceresi** penceresi özellikleri ve iletileri görüntülemek için iletişim kutusu. Bulucu aracını da devre dışı bırakılmış bir alt öğe pencerelerini bulun ve varsa vurgulamak için hangi pencerenin alt pencereler çakışıyorsa devre dışı keşfedilir.
@@ -41,7 +41,7 @@ Bulucu Aracı kullanabileceğiniz **Bul penceresi** penceresi özellikleri ve il
      (Örneğin, hata ayıklayıcı'dan kopyalanan) incelemek istediğiniz pencere tanıtıcısı varsa, içine yazın **işlemek** metin kutusu.
 
    > [!TIP]
-   >  Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek yalnızca bırakarak ana Spy ++ penceresini gizler **Bul penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.
+   > Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek yalnızca bırakarak ana Spy ++ penceresini gizler **Bul penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.
 
 4. Altında **Göster**, şunlardan birini seçin **özellikleri** veya **iletileri**.
 

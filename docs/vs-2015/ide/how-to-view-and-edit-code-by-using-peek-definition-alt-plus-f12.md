@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386851"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanımı (Alt + F12) kullanarak kod düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzakl
  Kullanabileceğiniz **Özet tanım** C#, Visual Basic ve C++ koduna sahip. Visual Basic'te **Özet tanım** bir bağlantısı gösterir **Nesne Tarayıcısı** tanım meta verileri (yerleşik olarak bulunan Örneğin, .NET Framework türleri) olmayan simgeler için.  
   
 > [!IMPORTANT]
->  Visual Studio 2013'ün herhangi bir Express sürümünde bu komutu kullanamazsınız.  
+> Visual Studio 2013'ün herhangi bir Express sürümünde bu komutu kullanamazsınız.  
   
 ## <a name="working-with-peek-definition"></a>Özet Tanım ile Çalışma  
   
@@ -76,7 +76,7 @@ Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzakl
     |Kod düzenleyicisi penceresi ile tanım penceresi arasında geçiş yapma|Shift+Esc|  
   
     > [!NOTE]
-    >  Kodu düzenleme için aynı klavye kısayollarını kullanabilirsiniz bir **Özet tanım** aynı pencereyi kullanırsınız başka bir yerde Visual Studio'da.  
+    > Kodu düzenleme için aynı klavye kısayollarını kullanabilirsiniz bir **Özet tanım** aynı pencereyi kullanırsınız başka bir yerde Visual Studio'da.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)

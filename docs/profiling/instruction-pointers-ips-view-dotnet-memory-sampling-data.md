@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8443f17507b7e4225e6f04d914c115bf17f7d091
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995424"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Yönerge işaretçileri (IP) görünümü - .NET bellek örnekleme verileri
 Örnekleme metodu kullanılarak tarafından toplanan .NET bellek ayırma profil oluşturma verisini IP'ler görünümünü ayrılan bellek profil oluşturma çalışması süresince derleme yönergeleri listeler. Görünümün sütunlarını ayrıca ayırmaların sayısı ve boyutu listeleyin.

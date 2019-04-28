@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939421"
 ---
 # <a name="cache-data"></a>Verileri önbelleğe
   Böylece veriler erişilebilir, çevrimdışı veya Microsoft Office Word veya Microsoft Office Excel açmadan belge düzeyi özelleştirmesinde veri nesneleri önbelleğe alabilir. Nesne, nesne önbelleğe almak için belirli gereksinimleri karşılayan bir veri türü olmalıdır. .NET Framework'teki birçok ortak veri türleri dahil olmak üzere, bu gereksinimleri karşılayan <xref:System.String>, <xref:System.Data.DataSet>, ve <xref:System.Data.DataTable>.

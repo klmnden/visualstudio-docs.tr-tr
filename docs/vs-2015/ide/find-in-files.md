@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383382"
 ---
 # <a name="find-in-files"></a>Dosyalarda Bul
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Find dosyalar ** belirtilen bir dosya kümesi aramanıza olanak sağlar. Eşleş
    Bulma işlemi iptal etmek için CTRL + BREAK tuşlarına basın.  
   
 > [!NOTE]
->  Bul ve Değiştir araç dizinlerle aramaz `Hidden` veya `System` öznitelik kümesi.  
+> Bul ve Değiştir araç dizinlerle aramaz `Hidden` veya `System` öznitelik kümesi.  
   
 ## <a name="find-what"></a>Sonrakini Bul  
  Yeni metin dizesi veya ifadesi için arama yapmak için kutuya belirtin. Herhangi biri için en son Aranan 20 dizeleri aramak için listeyi açın ve arama yapmak istediğiniz dizesi seçin. Bitişik seçin **ifade oluşturucu** bir veya daha fazla normal ifadeler, arama dizesinde kullanmak istiyorsanız düğmesi. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ Find dosyalar ** belirtilen bir dosya kümesi aramanıza olanak sağlar. Eşleş
  Seçilen seçeneği **konum** açılır listede belirler olmadığını **dosyalarda Bul** aramaları yalnızca şu anda etkin dosyalar veya belirli klasörlerde depolanan tüm dosyalar. Listeden bir arama kapsamı seçin veya **Gözat (...)**  görüntülemek için düğmeyi **arama klasörlerini Seç** iletişim kutusu ve kendi dizinlerinin girin. Doğrudan bir yolu da yazabilirsiniz **konum** kutusu.  
   
 > [!WARNING]
->  İle **çözümün tamamında** veya **geçerli proje** seçenekleri, proje ve çözüm dosyaları değil aranır. Proje dosyalarında aramak istiyorsanız, bir arama klasörü seçin.  
+> İle **çözümün tamamında** veya **geçerli proje** seçenekleri, proje ve çözüm dosyaları değil aranır. Proje dosyalarında aramak istiyorsanız, bir arama klasörü seçin.  
   
 > [!NOTE]
->  Varsa **konum** seçeneğe kullanıma kaynak kod denetiminden yalnızca yerel makinenize indirilen dosyanın sürüm aranır dosya arama neden olur.  
+> Varsa **konum** seçeneğe kullanıma kaynak kod denetiminden yalnızca yerel makinenize indirilen dosyanın sürüm aranır dosya arama neden olur.  
   
 ## <a name="include-subfolders"></a>Alt klasörleri dahil et  
  Belirtir, alt **konum** klasörü aranır.  

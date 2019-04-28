@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991061"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 Hata ayıklama çıkış olayını işler.  

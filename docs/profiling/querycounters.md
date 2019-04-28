@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 501818d000b2db69b0744649d8e4a472cb87a55b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982596"
 ---
 # <a name="querycounters"></a>QueryCounters
 **QueryCounters** seçeneği bilgisayarda kullanılabilir CPU (Donanım) performans sayaçları listeler.
@@ -27,7 +27,7 @@ VSPerfCmd.exe /QueryCounters
 ```
 
 #### <a name="parameters"></a>Parametreler
- Hiçbiri
+ Yok.
 
 ## <a name="remarks"></a>Açıklamalar
  Araçlar yöntemini kullanırken, profil oluşturucu her veri koleksiyonu olayı, bir veya daha fazla CPU performans sayacı değerlerini toplayabilirsiniz. Örnekleme profili oluşturma yöntemi kullanırken, bir sayaç olay ve örnekleme aralığı kullanılacak olay oluşum sayısını belirtebilirsiniz.

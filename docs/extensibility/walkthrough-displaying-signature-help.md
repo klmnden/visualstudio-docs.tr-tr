@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965173"
 ---
 # <a name="walkthrough-display-signature-help"></a>İzlenecek yol: İmza Yardımı görüntüleme
 İmza Yardımı (diğer adıyla *parametre bilgisi*) kullanıcı parametre listesi başlangıç karakteri (genellikle bir açma ayracı) yazdığında bir yöntem imzası bir araç ipucunda görüntüler. Bir parametre ve parametre ayırıcı (genellikle bir virgül) yazılı olarak araç ipucu bir sonraki parametreyi kalın olarak göstermek için güncelleştirilir. Aşağıdaki yollarla imza Yardımı tanımlayabilirsiniz: bir dil hizmeti bağlamında, kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bu tür için imza Yardımı'nı görüntülemek veya mevcut bir içerik türünü (örneğin, "metin") için imza Yardımı'nı görüntülemek. Bu yönerge "metin" içerik türü için imza Yardımı'nı görüntülemek nasıl gösterir.

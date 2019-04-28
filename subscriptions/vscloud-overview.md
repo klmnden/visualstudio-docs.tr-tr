@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
 searchscope: VS Subscription
 ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978900"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 

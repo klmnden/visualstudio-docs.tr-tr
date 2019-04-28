@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969894"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor dosyasına dışarı profil oluşturma verileri sınırlamak için veri dosyaları için filtre uygulayabilirsiniz. Bir rapor için zaman damgası değerlerini arasındaki verileri sınırlayabilir ve belirli işlem ve iş parçacıkları için verileri sınırlayabilirsiniz. Filtreler bir dosyaya kaydedin ve kaydedilmiş filtre içeri aktararak Bu filtre üzerinde farklı bir profil oluşturma veri dosyasını oluşturun.

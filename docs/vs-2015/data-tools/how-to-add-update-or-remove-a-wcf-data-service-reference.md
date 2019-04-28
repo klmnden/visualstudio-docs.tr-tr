@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387033"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 2. İçinde **adresi** kutusuna hizmeti için URL girin ve ardından **Git** hizmet için aranacak. Hizmet kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.  
   
     > [!NOTE]
-    >  Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.  
+    > Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.  
   
      URL'den belirleyebilirsiniz **adresi** listesinde, geçerli hizmet meta verileri bulundu önceki 15 URL depolar.  
   
@@ -91,7 +91,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
      Hizmet istemcisi çözümden kaldırılır ve hizmeti tanımlayan meta verileri app.config dosyasından kaldırılır.  
   
     > [!NOTE]
-    >  Hizmet başvuru yapan tüm kodları el ile kaldırılması gerekir.  
+    > Hizmet başvuru yapan tüm kodları el ile kaldırılması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

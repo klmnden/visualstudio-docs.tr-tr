@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383414"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
     Dosya menüsünde **seçili öğeleri Kaydet** seçtiğiniz kural kümesi hakkında bilgi ve ayarları ile proje dosyası güncelleştirilemedi.  
   
    > [!TIP]
-   >  Gerçek bir durumda, Kod Analizi ile hedeflemek için hangi sorunların öncelik için kullanılacak bir başlamak alışkanlıktır **önerilen Minimum kurallar** kural kümesi ve istenen sorunları düzeltin ve artımlı olarak ekleyin Daha fazla kural veya kural bulmak ve ek sorunları düzeltmek için ayarlar.  
+   > Gerçek bir durumda, Kod Analizi ile hedeflemek için hangi sorunların öncelik için kullanılacak bir başlamak alışkanlıktır **önerilen Minimum kurallar** kural kümesi ve istenen sorunları düzeltin ve artımlı olarak ekleyin Daha fazla kural veya kural bulmak ve ek sorunları düzeltmek için ayarlar.  
   
    Sonra CA1704 ihlallerini göstermek için kullanılan sınıf kitaplığı için bazı kodlar ekleyeceksiniz "Tanımlayıcıları yazıldığından" Kod Analizi kural. Daha fazla bilgi için [CA1704: Tanımlayıcıları yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

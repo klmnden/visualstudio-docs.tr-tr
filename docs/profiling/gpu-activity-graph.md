@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969572"
 ---
 # <a name="gpu-activity-graph"></a>GPU Etkinlik Grafiği
 Eşzamanlılık görselleştiricisi'ndeki GPU Etkinlik Grafiği sistem zaman içinde kullanılmakta olan DirectX altyapıları sayısına göre ölçülen DirectX etkinliği düzeyini görüntüler.  Graf, hangi belirli altyapıları kullanılan göstermez.  Altyapının herhangi bir GPU iş işliyorsa kullanımda olarak kabul edilir.

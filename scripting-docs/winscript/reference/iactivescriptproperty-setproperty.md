@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385966"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Parametresiyle belirtilen özelliği ayarlar.  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Ne zaman desteklenecek dil özellikleri kümesi seçmek için [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] komut dosyası altyapısı başlatılır, çağırma `SetProperty` SCRIPTPROP_INVOKEVERSIONING için etkinleştirilmesi için dil özelliği için karşılık gelen bir değer geçirirsiniz. Bu özellik (SCRIPTLANGUAGEVERSION_5_7) 1 olarak ayarlarsanız, kullanılabilir dil özellikleri sürümünü 5.7 görünen aynıdır [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] komut dosyası altyapısı. 2 (SCRIPTLANGUAGEVERSION_5_8)'ye ayarlanmışsa kullanılabilir dil özellikleri 5.7 Sürüm 5.8 sürümünde eklenen yeni özellikler ek olarak görünen olanlardır. Varsayılan olarak, bu özellik, konak farklı varsayılan davranışını desteklemediği sürece, 5.7 sürümünde görünen dil özellik kümesine eşdeğer olan (SCRIPTLANGUAGEVERSION_DEFAULT) 0 olarak ayarlanır. Örneğin, Internet Explorer 8 olarak kabul eder [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 5.8 sürümü tarafından desteklenen dil özellikleri [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Internet Explorer 8 varsayılan belge modu "Internet Explorer 8 standartları" modunda olduğunda varsayılan komut dosyası altyapısı. Internet Explorer 8 belge modu, Internet Explorer 7 standartları için veya süslemeler moduna geçiş sıfırlar [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 5.7 sürümde var olan dil özellik kümesini desteklemek için komut dosyası altyapısı [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] komut dosyası altyapısı.  
   
 > [!NOTE]
->  Yalnızca SCRIPTPROP_INVOKEVERSIONING ayarlanmalıdır [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] komut dosyası altyapısı başlatılan.  
+> Yalnızca SCRIPTPROP_INVOKEVERSIONING ayarlanmalıdır [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] komut dosyası altyapısı başlatılan.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, Tamsayı bölme kullanmak için komut dosyası altyapısı zorlanması ve karşılaştırma işlev aşırı yüklemesi kullanmasının nasıl sağlanacağını gösterir.  

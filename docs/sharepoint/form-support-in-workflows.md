@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967415"
 ---
 # <a name="form-support-in-workflows"></a>İş akışlarında form desteği
   Bir iş akışında formlarının dört türleri kullanılabilir: İlişkilendirme ve başlatma, görev ve değiştirme. Bu form türleri ASPX form ya da bir InfoPath formunu temel alabilir. Destek düzeyini [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] belirli bir form aşağıdaki tablolarda açıklanan çeşitli etkenlere bağlıdır sağlar. İş akışı form türleri hakkında daha fazla bilgi için bkz. [iş akışı Forms'a genel bakış](http://go.microsoft.com/fwlink/?LinkId=185228).
@@ -44,7 +44,7 @@ ms.locfileid: "56604138"
 |İlişkilendirme|-Formun başvurulduğundan *Elements.xml* iş akışı dosyası.<br />- *Elements.xml* formu yeniden adlandırılmış veya silinmiş veya onun dağıtım yolu değiştiğinde iş akışının dosya yeniden.|-Formun alındı, ancak başvurulan değil *Elements.xml* iş akışı.<br />- *Elements.xml* iş akışının dosya yeniden değil.|
 |Başlatma|-İş akışı tarafından başvurulan formu *Elements.xml* iş akışı dosyası.<br />- *Elements.xml* formu yeniden adlandırılmış veya silinmiş veya onun dağıtım yolu değiştiğinde iş akışının dosya yeniden.|-Formun alındı, ancak başvurulan değil *Elements.xml* iş akışı.<br />- *Elements.xml* iş akışının dosya yeniden değil. **Not:**  Kurallar ve Özellikler gerekir eklenebilen ve bu senaryo için çalışacak şekilde değiştirildi.|
 |Görev|-Formun başvurulduğundan *Elements.xml* iş akışı dosyası.<br />- *Elements.xml* iş akışının dosya yeniden değil.|-Formun alındı, ancak başvurulan değil *Elements.xml* iş akışı.<br />- *Elements.xml* iş akışının dosya yeniden değil. **Not:**  Kurallar ve Özellikler gerekir eklenebilen ve bu senaryo için çalışacak şekilde değiştirildi.|
-|Değişiklik|Uygulanamaz. ASPX değişiklik formları SharePoint Tasarımcısı'nda oluşturulamıyor.|Uygulanamaz. InfoPath değişiklik formları, iş akışı dışarı aktardığınızda, .wsp dosyasında yer almayan yerleşik SharePoint Server iş akışı hariç, SharePoint Tasarımcısı'nda oluşturulamıyor.|
+|Değişiklik|Geçerli değildir. ASPX değişiklik formları SharePoint Tasarımcısı'nda oluşturulamıyor.|Geçerli değildir. InfoPath değişiklik formları, iş akışı dışarı aktardığınızda, .wsp dosyasında yer almayan yerleşik SharePoint Server iş akışı hariç, SharePoint Tasarımcısı'nda oluşturulamıyor.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [İzlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)

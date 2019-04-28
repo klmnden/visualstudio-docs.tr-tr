@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981443"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma
   Bu tanıtıcı kılavuz Microsoft Office Excel için uygulama düzeyi eklentiyi oluşturma işlemini gösterir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin çalışma kitaplarını açık olan bağımsız olarak kullanılabilir.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968063"
 ---
 # <a name="thread-details-view---contention-data"></a>İş parçacığı Ayrıntıları görünümü - çakışma verileri
 İş parçacığı Ayrıntıları görünümü kaynaklar üzerinde Çekişme tarafından neden Seçili iş parçacığı profil oluşturma çalıştırmasını engelleme olayları bir zaman çizelgesi grafiği gösterir. İş parçacığı başka bir iş parçacığının bir kaynağa erişim kilitlediği için yürütmeyi askıya almak zorunda engelleyen bir olayı oluşur.

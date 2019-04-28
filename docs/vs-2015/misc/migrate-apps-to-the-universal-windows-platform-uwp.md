@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001252"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Uygulamaları Evrensel Windows Platformu’na (UWP) geçirme
 Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ya da Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için gerekli el ile değişiklikleri yapın. (Windows 8.1 Evrensel uygulamasıyla bir Windows uygulaması projesi ve Windows Phone projesi varsa, her projeyi geçirmek için adımları izlemeniz gerekir.)  

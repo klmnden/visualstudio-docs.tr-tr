@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1e4d9932e64cbbd862c5784073ed4dbe7cb85709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944849"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio araçlarındaki derlemeler
   Bir Office projesi oluşturduğunuzda, Visual Studio başvuruları otomatik olarak ekler. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proje türü ve hedef projenin .NET Framework için kullanılan derlemeler. .NET Framework 3.5 için Office uzantılarındaki derlemeler farklı vardır [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], ve [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Office uzantıları hakkında daha fazla bilgi için bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
