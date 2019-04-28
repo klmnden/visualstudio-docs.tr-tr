@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829963"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modüller görünümü - .NET bellek örnekleme verileri
 Örnekleme metodu kullanılarak toplanan .NET bellek ayırma verisini modülleri görünümünü bellek verileri profil oluşturma çalıştırmasını içinde yürütülen modülleri göre gruplandırır. Her bir hiyerarşik ağaç kökünde modülüdür. Modülündeki işlevlerin modülü düğümünün altında listelenir.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823549"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
 Microsoft yönetilen önerilen kurallar kural potansiyel güvenlik boşluklarını, uygulama kilitlenmesi ve diğer önemli mantık ve tasarım hataları gibi yönetilen kodunuzda en kritik sorunlara odaklanmak için kümesi kullanabilirsiniz. Bu kural projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi kümesini içermelidir.

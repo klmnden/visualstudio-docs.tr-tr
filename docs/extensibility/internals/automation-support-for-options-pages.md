@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862036"
 ---
 # <a name="automation-support-for-options-pages"></a>Seçenekler sayfaları için Otomasyon desteği
 VSPackage özel sağlayabilir **seçenekleri** iletişim kutuları için **Araçları** menü (**Araçlar Seçenekler** sayfaları) içinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve bunları Otomasyon için kullanılabilir hale getirebilirsiniz Model.

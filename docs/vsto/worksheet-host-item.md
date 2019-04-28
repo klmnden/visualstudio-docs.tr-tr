@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4a5287648d515d1aca340ab55d5f21b494610b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814737"
 ---
 # <a name="worksheet-host-item"></a>Çalışma sayfası konak öğesi
   <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Excel.Worksheet> Excel için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne, ancak ayrıca ek olayları ortaya koyan ve konak denetimleri ve Windows Forms denetimleri için kapsayıcı işlevi görür.

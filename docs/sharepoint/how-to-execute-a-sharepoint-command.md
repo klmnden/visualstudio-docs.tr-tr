@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813895"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint komutu yürütme
   Sunucu nesne modeli SharePoint Araçlar uzantısından kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'sini çağırmak için. Komut tanımlayıp, SharePoint Araçlar uzantısından ile dağıttıktan sonra uzantınızı komutu SharePoint sunucusu nesne modeline çağrı yürütebilir. Komutu yürütmek için ExecuteCommand yöntemlerinden birini kullanın: bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne.

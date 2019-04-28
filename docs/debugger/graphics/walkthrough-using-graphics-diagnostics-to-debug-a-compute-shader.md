@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849168"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek yol: Hesaplayıcı Gölgelendiricisinde hata ayıklamak için grafik tanılamayı kullanma
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>İzlenecek yol: Hesaplayıcı Gölgelendiricisinde Hata Ayıklamak için Grafik Tanılamayı Kullanma
 Bu izlenecek yol, Visual Studio grafik tanılama araçları hatalı sonuçlar üreten bir compute gölgelendiriciyi incelemek için nasıl kullanılacağını gösterir.
 
  Bu örneklerde bu görevler gösterilir:

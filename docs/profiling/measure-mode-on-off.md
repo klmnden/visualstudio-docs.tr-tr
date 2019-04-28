@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830830"
 ---
 # <a name="measure-mode-onoff"></a>Ölçüm modu açık/kapalı
 Bu aracı kullanarak zaman çizelgesinde süreyi tam olarak ölçebilirsiniz. Ölçüm modu etkinleştirmek için (cetvel simgesi olan) ölçü düğmesine tıklayın ve ardından zaman çizelgesinde sürükleyin. Sürüklediğinizde, işaretçi altındaki alan sarı renkle vurgulanır ve araç çubuğu düğmesinin sağındaki ölçülen zaman görünür olduğuna dikkat edin. Bu değer, belirli bir olay ne kadar sürüyor hemen görmenize olanak tanıyan sürüklerken dinamik olarak hesaplanır. Fare düğmesini bıraktığınızda, saat değeri görünür kalır.

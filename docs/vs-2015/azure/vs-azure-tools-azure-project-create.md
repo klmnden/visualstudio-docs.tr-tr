@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964059"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile bir Azure bulut hizmeti projesi oluşturma
 Visual Studio için Azure Araçları oluşturmanıza imkan tanıyan bir proje şablonu sağlar bir [Azure bulut hizmeti](/azure/cloud-services/cloud-services-choose-me), basit bir genel amaçlı Azure hizmet. Visual Studio projesi oluşturulduktan sonra yapılandırma, hata ayıklama ve bulut hizmetini Azure'a dağıtmak sağlar.

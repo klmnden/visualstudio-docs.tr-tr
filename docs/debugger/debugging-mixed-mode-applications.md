@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852053"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Karışık Mod Uygulamalarında Hata Ayıklama
 Bir karma mod uygulaması yerel kod (C++)'yı yönetilen kodla (örneğin, Visual Basic, Visual C# veya ortak dil çalışma zamanında çalışan C++) bir araya getiren herhangi bir uygulamadır. Karışık mod uygulamaları hata ayıklaması neredeyse şeffaftır içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; tek modlu uygulama hata ayıklamasından çok farklı değildir. Ancak birkaç özel nokta vardır.

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6abc8b0bf2af5b22910bc4ad90fa16a21ecdb386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822418"
 ---
 # <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>Nasıl yapılır: Bir Dekoratörün görünürlüğünü denetleme-yeniden yönlendirme
 Bu konuda başka ile birleştirilmiştir. Lütfen [diyagramda sunuyu özelleştirme](../modeling/customizing-presentation-on-the-diagram.md).

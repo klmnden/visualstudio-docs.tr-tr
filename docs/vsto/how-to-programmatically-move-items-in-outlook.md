@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812578"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma
   Bu örnekte okunmamış e-posta iletileri taşır **gelen** adlı bir klasöre **Test**. Örneğin, yalnızca Word'ün iletileri taşır **Test** içinde `Subject` alan.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818150"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Platformlar arası Mobil Geliştirme için Visual C++
 Yerel C++ uygulamaları oluşturabileceğinizi iOS, Android ve Windows cihazları ve iOS, Android ve Windows için oluşturulan kitaplıklarda ortak kod paylaşın, kullanarak Visual C++ platformlar arası Mobil Geliştirme için. Yerel uygulamalar ile paylaşılan kitaplıklar ve platformlar arası geliştirme için ihtiyaç duyduğunuz araçları ve SDK'larını yükleyen Visual Studio 2015'te kullanılabilecek bir seçenek budur. Yüklendiğinde, iOS ve Android cihazlar ve platformlar, yanı sıra Windows, Windows Phone ve Xbox üzerinde çalışan kod oluşturmak için Visual C++ kullanabilirsiniz.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84fef8d0f63f76c7810c94ade2e1eb58e55b94cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861317"
 ---
 # <a name="extend-properties"></a>Özellikleri genişletme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Özellikleri** penceresi COM ve COM + bileşenleri için bir evrensel özellik tarayıcısı ve tüm destekler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ürünleri. **Özellikleri** penceresinde çalışır `ITypeInfo` bilgi ve herhangi bir tümleşik geliştirme ortamı (IDE) penceresinde şu anda seçili nesne için tasarım zamanı özellikleri listelemek için COM + meta verileri yazın.

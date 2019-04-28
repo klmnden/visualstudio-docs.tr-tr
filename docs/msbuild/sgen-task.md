@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993247"
 ---
 # <a name="sgen-task"></a>SGen görevi
 Bir XML serileştirme derleme türleri için belirtilen derlemesinde oluşturur. Bu görev sarmalar XML serileştiricisi Oluşturma Aracı (*Sgen.exe*). Daha fazla bilgi için [XML serileştiricisi Oluşturma Aracı (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).

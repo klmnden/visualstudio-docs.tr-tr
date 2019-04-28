@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817505"
 ---
 # <a name="lc-task"></a>LC görevi
 Sarmalar *LC.exe*, oluşturduğu bir *.license* dosyasını bir *.licx* dosya. Daha fazla bilgi için *LC.exe*, bkz: [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).

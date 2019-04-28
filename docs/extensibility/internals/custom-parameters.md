@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861281"
 ---
 # <a name="custom-parameters"></a>Özel Parametreler
 Bir sihirbaz başlatıldıktan sonra özel parametreler sihirbaz işlemi denetleyin. İlgili *.vsz* dosyası tümleşik geliştirme ortamı (IDE) paketlenir ve Sihirbazı başlattığınızda sihirbaz dize dizisi geçirilen kullanıcı tanımlı parametre dizisi sağlar. Sihirbaz dizisini ayrıştırır ve gerçek işlem sihirbazın denetlemek için bu bilgileri kullanır. Bu şekilde, bir sihirbaz işlevselliği içeriğine bağlı olarak özelleştirebilirsiniz *.vsz* dosya.

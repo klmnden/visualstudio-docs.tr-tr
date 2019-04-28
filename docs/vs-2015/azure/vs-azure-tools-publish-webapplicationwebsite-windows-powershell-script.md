@@ -1,34 +1,37 @@
 ---
 title: Yayımlama WebApplicationWebSite (Windows PowerShell Betiği) | Microsoft Docs
 description: Bir Azure Web sitesine bir web projesi yayımlamayı öğrenin. Bu betik, mevcut olmaması durumunda Azure aboneliğinizde gerekli kaynakları oluşturur.
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev14
+ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 6953d8944bb8619560ade4c7b3924dc9e89d3b11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830530"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell betiği)
 ## <a name="syntax"></a>Sözdizimi
 Bir Azure Web sitesine bir web projesi yayımlar. Mevcut olmaması durumunda betik, Azure aboneliğinizde gerekli kaynakları oluşturur.
 
     Publish-WebApplicationWebSite
-    –Configuration <configuration>
+    -Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
+
 
 ## <a name="configuration"></a>Yapılandırma
 Dağıtım ayrıntılarını açıklayan JSON yapılandırma dosyası yolu.
@@ -99,7 +102,7 @@ JSON yapılandırma dosyası, dağıtılacak nedir ayrıntılarını belirtir. B
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "West US"
+                "location": "China North"
             },
             "databases": [
                 {
@@ -111,7 +114,7 @@ JSON yapılandırma dosyası, dağıtılacak nedir ayrıntılarını belirtir. B
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "West US"
+                    "location": "China North"
                 }
             ]
         }
@@ -121,3 +124,6 @@ Ne dağıtılır değiştirmek için JSON yapılandırma dosyasını düzenleyeb
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Daha fazla bilgi için [Yayımla-WebApplicationVM (Windows PowerShell komut dosyası)](vs-azure-tools-publish-webapplicationvm.md)
+
+
+<!-- Update_Description: update metedata properties -->

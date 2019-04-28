@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859950"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyaları) bir listesini alır ve Visual Studio Görüntü hizmeti ile kullanılmak üzere bu görüntüleri izin veren bir .imagemanifest dosyası oluşturur bir konsol uygulamasıdır. Ayrıca, bu aracı için mevcut bir .imagemanifest görüntüleri eklemek için kullanılabilir. Bu araç, Visual Studio uzantısı görüntülere yüksek DPI ve Tema oluşturma desteği eklemek için yararlıdır. Oluşturulan .imagemanifest dosya dahil ve Visual Studio Uzantısı (.vsix) bir parçası olarak dağıtılabilir.

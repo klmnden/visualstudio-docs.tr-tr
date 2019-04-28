@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820667"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Yerel Minimum Kurallar kural kümesi
 Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi yerel, kodunuzda en kritik sorunlara odaklanır. Doğal projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.

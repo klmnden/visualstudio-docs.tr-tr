@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0850f043d763077ef9a33ad35e82ad924574b6d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872891"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 Sinyaller [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı semboller için başlatılan yürütülebilir dosya bulunamadı, kullanıcıyı uyarmak için kullanıcı Arabirimi.

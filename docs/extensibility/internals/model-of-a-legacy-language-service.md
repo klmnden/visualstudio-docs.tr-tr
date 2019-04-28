@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860106"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Eski Dil Hizmetinin Modeli
 Dil hizmeti belirli bir dil özellikleri ve öğeleri tanımlar ve bilgileri o dile özgü Düzenleyici sağlamak için kullanılır. Örneğin, düzenleyici söz dizimi renklendirmesi desteklemek için öğeleri ve dil anahtar sözcükleri bilmesi gerekir.

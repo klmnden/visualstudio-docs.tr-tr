@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952756"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint özellikleri oluşturma
   Kolay dağıtım için ilgili SharePoint Proje öğeleri gruplandırmak için bir SharePoint özelliğini kullanabilirsiniz. Özellikler oluşturmak, kapsamı ayarla ve diğer özellikleri, SharePoint özellik Tasarımcısı kullanarak bağımlılıkları olarak işaretleyin. Tasarımcı, aynı zamanda her bir özellik açıklayan bir XML dosyası olan bir bildirim oluşturur.

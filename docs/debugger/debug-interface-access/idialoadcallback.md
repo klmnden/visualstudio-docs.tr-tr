@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828417"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Yordamı bulmak, bu nedenle konumu denemesinin ilerleme üzerinde rapor için bir kullanıcı arabirimi etkinleştirme DIA Sembol'nden geri çağırmaları alır.

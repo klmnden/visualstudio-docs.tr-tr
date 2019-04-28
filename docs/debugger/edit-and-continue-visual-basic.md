@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851257"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Düzenle ve Devam Et (Visual Basic)
 Düzenle ve devam et özelliği olan [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] , hata ayıklama kesme modunda yürütülürken kodunuzu değiştirmenize olanak sağlar. Kod düzenlemeler uygulandıktan sonra yeni düzenlemeler yerinde ile kod yürütmeyi devam etmek ve etkisine bakın.

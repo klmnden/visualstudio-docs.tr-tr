@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838447"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
 Hata ayıklama akış sayısını alır.

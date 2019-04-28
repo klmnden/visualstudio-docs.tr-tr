@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977173"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma
 Birkaç yazdıysanız [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyaları, olduğunu keşfetti., aynı görevleri ve hedefleri, farklı proje dosyalarında kullanmanız gerekebilir. Bu görevler veya hedefleri eksiksiz bir açıklaması her proje dosyasında dahil olmak üzere yerine ayrı proje dosyasında hedef kaydedebilir ve sonra proje hedef kullanması gereken diğer proje alın.

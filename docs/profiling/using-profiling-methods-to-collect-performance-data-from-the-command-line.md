@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831450"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Komut satırından performans verileri toplamak için profil oluşturma metotlarını kullanma
 Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları komut satırı araçlarını ve seçeneklerini etkenlere bağlıdır uygulama türü gibi profil olduğunu, kullanmak istediğiniz ve olup hedef uygulamanın yazıldığı yerel ya da Profiloluşturmayöntemine[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kod.
@@ -37,17 +37,17 @@ Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prof
 
  **Hedef uygulama türü**
 
--   [.NET framework bağımsız bileşenler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [.NET framework bağımsız bileşenler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Yerel bağımsız bileşenler](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Yerel bağımsız bileşenler](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Statik olarak derlenmiş ASP.NET web uygulamaları](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Statik olarak derlenmiş ASP.NET web uygulamaları](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Dinamik olarak derlenmiş ASP.NET web uygulamaları](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Dinamik olarak derlenmiş ASP.NET web uygulamaları](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [.NET Hizmetleri](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [.NET Hizmetleri](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Yerel Hizmetleri](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Yerel Hizmetleri](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Bellek ayırma ve nesne yaşam verisi toplamak için .NET bellek yöntemleri kullanın.
  Profil oluşturma araçlar .NET bellek yöntemi toplamanızı sağlayan [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bellek ayırma verilerinin ve nesne yaşam süresi hakkında bilgi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

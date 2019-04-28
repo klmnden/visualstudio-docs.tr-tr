@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e66c8b597e999f1eab3a52c663537ee94fe4f40a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817446"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild Gelişmiş kavramları
 Bu bölümdeki belgeler gelişmiş teknikleri Msbuild'i kullanarak çalışan yapılar geliştirmek için nasıl kullanılacağını açıklar.

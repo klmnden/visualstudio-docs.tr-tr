@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51534979a96e0fb924d164dd1cc8d2fcc7bab04a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817266"
 ---
 # <a name="lib-task"></a>LIB görevi
 Microsoft 32-Bit Kitaplık Yöneticisi aracını sarmalar *lib.exe*. Kitaplık Yöneticisi'ni oluşturur ve ortak nesne dosyası biçimi (COFF) nesne dosyası kitaplığı yönetir. Kitaplık Yöneticisi'ni de dışarı aktarma dosyaları oluşturabilir ve kitaplıkları dışarı başvuru tanımlarını içeri aktarma. Daha fazla bilgi için [LIB başvurusu](/cpp/build/reference/lib-reference) ve [çalıştıran LIB](/cpp/build/reference/running-lib).

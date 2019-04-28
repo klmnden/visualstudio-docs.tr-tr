@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822982"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Kodlanmış UI testleri için en iyi uygulamalar
 

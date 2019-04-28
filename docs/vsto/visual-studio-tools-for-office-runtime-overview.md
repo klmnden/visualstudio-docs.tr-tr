@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982348"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Office çalışma zamanına genel bakış için Visual Studio Araçları
   Visual Studio'da Microsoft Office geliştirici araçlarını kullanarak oluşturulan çözümleri çalıştırmak için son kullanıcı bilgisayarlarında Office çalışma zamanı için Visual Studio 2010 Araçları yüklenmesi gerekir. Daha fazla bilgi için [nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Office çalışma zamanı için Visual Studio 2010 Araçları iki ana bileşenden oluşur:

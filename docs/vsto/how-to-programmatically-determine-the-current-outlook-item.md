@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814960"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Nasıl yapılır: Program aracılığıyla geçerli Outlook öğesini belirleme
   Bu örnekte `Explorer.SelectionChange` adı geçerli klasörde ve seçtiğiniz öğe hakkındaki bazı bilgileri görüntülenecek olayı. Kod, daha sonra seçilen öğeyi görüntüler.

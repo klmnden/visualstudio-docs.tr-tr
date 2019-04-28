@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977292"
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl yapılır: Derlemeyi temizleme
 Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 874e05c0ba738f3730c23dcd092921e4b8c02829
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399972"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Modülün yerel bir modül için bir ortak Ara dil (CIL) modülünden dönüştürülüp dönüştürülmediğini belirten bir bayrak alır.
@@ -39,7 +39,7 @@ HRESULT get_isCVTCIL(
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu özellik kullanılabilir `SymTagCompilandDetails` sembol türü (bkz [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).

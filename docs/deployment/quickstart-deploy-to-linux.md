@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899122"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio kullanarak Linux üzerinde App Service'e bir ASP.NET Core uygulaması yayımlama
 

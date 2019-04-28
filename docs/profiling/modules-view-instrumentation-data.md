@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be1c3b972397246823512f67e6fe2a0e2ecabbd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830039"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modüller görünümü - izleme verileri
 Modüller görünümü, profil oluşturma verileri olan modüller tarafından gruplandırılmış performans verilerini görüntüler. Modülündeki işlevlerin modülü düğümün altında listelenir.

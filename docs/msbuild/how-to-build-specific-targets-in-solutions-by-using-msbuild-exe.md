@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977252"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Nasıl yapılır: MSBuild.exe kullanarak çözümlerde belirli hedefleri derleme
 Kullanabileceğiniz *MSBuild.exe* belirli projelerin bir çözümde belirli hedefler oluşturmak için.

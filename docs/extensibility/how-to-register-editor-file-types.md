@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862933"
 ---
 # <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Düzenleyici dosya türlerini kaydetme
 Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri Düzenleyicisi kaydetmek için en kolay yolu olan [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yönetilen paket framework (MPF) sınıfları. Yerel paketinizi uyguluyorsanız [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], düzenleyici ve ilişkili uzantıları kaydeden bir kayıt defteri betik da yazabilirsiniz.

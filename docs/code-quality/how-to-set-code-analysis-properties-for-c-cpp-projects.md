@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815853"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Nasıl yapılır: C/C++ Projeleri için Kod Analizi Özelliklerini Ayarlama
 Kod çözümleme aracı her projenizin yapılandırmasını kodda çözümlemek için hangi kuralları kullanacağını yapılandırabilirsiniz. Ayrıca, oluşturulan ve projenize bir üçüncü taraf araç tarafından eklenen koddan uyarıları bastırmak için Kod Analizi yönlendirebilir.

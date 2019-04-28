@@ -7,11 +7,11 @@ ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 0555aeb722132ba7b9628be9096847d45efb66ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59737313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820160"
 ---
 Visual Studio ile kolayca oluşturun, hata ayıklama ve kapsayıcılı ASP.NET Core uygulamaları çalıştırın ve Azure Container Registry (ACR), Docker Hub, Azure App Service veya kendi kapsayıcı kayıt defteri yayımlarsınız. Bu makalede, biz ACR'ye yayınlayacaksınız.
 

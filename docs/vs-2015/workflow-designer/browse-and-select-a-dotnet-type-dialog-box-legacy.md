@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d1ba2a1276ba5c752b712c6131048546ca8f69ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977468"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>.NET Türüne Gözat ve Seç İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **göz atın ve bir .NET türü seçin** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

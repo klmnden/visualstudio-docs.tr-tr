@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 26213477e7cec69da9171c5197371772973be5d3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812757"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme
   Tanımladıktan sonra bir <xref:Microsoft.Office.Interop.Word.Range> değiştirmeniz, başlangıç ve bitiş noktalarını kullanarak bir Microsoft Office Word belgesinde nesne <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> Ve <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> yöntemleri aynı iki bağımsız değişkeni alır *birim* ve *sayısı*. *Sayısı* değişkendir taşımak için birim sayısını ve *birim* bağımsız değişkeni, aşağıdakilerden biri olabilir <xref:Microsoft.Office.Interop.Word.WdUnits> değerleri:

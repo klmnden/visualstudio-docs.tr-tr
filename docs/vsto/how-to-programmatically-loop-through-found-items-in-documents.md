@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812421"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Nasıl yapılır: Program aracılığıyla bulunan öğeler arasında döngü
   <xref:Microsoft.Office.Interop.Word.Find> Sınıfında bir <xref:Microsoft.Office.Interop.Word.Find.Found%2A> döndüren özellik **true** olduğunda Aranan öğe bulundu. Bulunan tüm örnekleri arasında döngü bir <xref:Microsoft.Office.Interop.Word.Range> kullanarak <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi.

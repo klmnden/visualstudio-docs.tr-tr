@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3362404fab0777202407aa47fea7e3d8c3044b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812895"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri
   Oluşturduğunuz her bir <xref:Microsoft.Office.Interop.Word.Range> bir paragraf paragraf işaretlerini gibi tüm yazdırılamayan karakterler temel nesne aralığında dahil edilir. Kaynak paragrafı hedef paragrafa metin eklemek isteyebilirsiniz. Hedef paragraf farklı paragraflara ayırmak istemiyorsanız, ilk paragraf işaretlerini kaynak paragrafın kaldırmalısınız. Ayrıca, paragraf işaretleri içinde paragraf biçimlendirme bilgilerini depolandığından, varolan paragrafa aralığı eklediğinizde bu içerecek şekilde istemeyebilirsiniz.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 2bc5c60b9f93a0eba9cbbf2456803929f1bff3e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819901"
 ---
 # <a name="import-an-xcode-project"></a>Bir XCode Projesini İçeri Aktarma
 Microsoft Visual C++ platformlar arası Mobil Geliştirme için Visual Studio'yla, platformlar arası kitaplıklar oluşturun ve diğer projeleri ile kod paylaşın, XCode projelerinizi taşımak için destek içerir. İçeri Aktar Sihirbazı XCode projeleri içeri aktarma işlemini basitleştirir ve C++ kodunu, XCode hedefler için bölme bir statik kitaplık kullanmak ya da paylaşılan kod projesi. İOS özel kodunuzu Visual Studio yönetin ve XCode film şeritleri ve yapıları yapmak için kullanmaya devam edebilirsiniz. Kodu sürekli Visual Studio ve XCode arasında kolaylıkla geçiş hakkında daha fazla bilgi için XCode arasında taşıma değişiklikleri ve Visual Studio bakın.

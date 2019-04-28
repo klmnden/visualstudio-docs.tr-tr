@@ -16,11 +16,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 9a4d7baa970008c2de7a3bc28966f7edbad68b21
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819509"
 ---
 # <a name="android-debugger-properties"></a>Android hata ayıklayıcıyı özellikleri
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821600"
 ---
 # <a name="use-the-task-list"></a>Görev Listesini Kullanma
 
@@ -83,6 +83,9 @@ Varsayılan olarak, Visual Studio aşağıdaki belirteçleri içerir: `HACK`, `T
 4. İçinde **öncelik** aşağı açılan listesinde, yeni belirteç için varsayılan bir öncelik seçin.
 
 5. Seçin **ekleme**.
+
+> [!TIP]
+> **Ekle** bir ad girdikten sonra düğmesi etkin hale gelir. Tıklamadan önce bir ad girmelisiniz **Ekle**.
 
 ### <a name="c-todo-comments"></a>C++ TODO açıklamaları
 

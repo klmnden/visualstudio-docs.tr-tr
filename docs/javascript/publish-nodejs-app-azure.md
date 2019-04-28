@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62841465"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 

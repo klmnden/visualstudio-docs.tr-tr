@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813978"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Nasıl yapılır: Bir SharePoint çözümünü yerel bir SharePoint sitesi için yayımlama ve dağıtma
   Dağıtın veya SharePoint çözümleri geliştirme bilgisayarınızda yerel bir SharePoint sunucusuna yayımlama. Dağıtım işlemi kopyaları *.wsp* dosyasını SharePoint sunucusuna çözümü yükler ve ardından özellikleri etkinleştirir. Yayımlama işlemi yalnızca kopyaları *.wsp* dosyasını SharePoint sunucusuna ve yükler. SharePoint'te etkinleştirmek için el ile etkinleştirmeniz gerekir.

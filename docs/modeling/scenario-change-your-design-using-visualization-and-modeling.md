@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824181"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -95,7 +95,7 @@ Bkz.
 
 - [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Nasıl yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:
 
 Keşfedin ve var olan sınıfları tartışmak için başlangıç noktası olarak, koddan sınıf diyagramları oluşturmak için Sınıf Tasarımcısı'nı kullanabilirsiniz.
 
-- [Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Nasıl yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Özet: Sınıf Şemalarının Gücü
  Sınıf diyagramları, tanımlamanıza yardımcı olur:

@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817577"
 ---
 # <a name="midl-task"></a>MIDL görevi
 Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*. Daha fazla bilgi için [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).

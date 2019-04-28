@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8366b8a18c2512aa55f2bab70ac9523e9265f5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ac19a3e59e70d0a1fb03b78e64036bd2ac23219
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865842"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -62,12 +62,12 @@ Bu yöntem veya işlev ya da başka bir değer (dile özgü) yerel değişken di
 Bu yapı, birleşim içinde parçasıdır [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) ne zaman yapısı `dwKind` alanını `DEBUG_ADDRESS_UNION` yapısı ayarlandığında `ADDRESS_KIND_LOCAL` (arasında bir değer [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) sabit listesi).
 
 > [!WARNING]
-> [Yalnızca C++] Varsa `pLocal` çağırmalısınız sonra null değil `Release` belirteci işaretçinin (`addr` bir alandır [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı):
+> [C++ yalnızca] Varsa `pLocal` çağırmalısınız sonra null değil `Release` belirteci işaretçinin (`addr` bir alandır [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) yapısı):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
 > {
-     addr.addr.addrLocal.pLocal->Release();
+>     addr.addr.addrLocal.pLocal->Release();
 > }
 > ```
 

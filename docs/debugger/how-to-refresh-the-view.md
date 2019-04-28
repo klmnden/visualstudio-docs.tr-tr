@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847713"
 ---
 # <a name="how-to-refresh-the-view"></a>Nasıl yapılır: Görünümü yenileyin
 Spy ++ sistem tablolarının "snapshot" alır ve bu bilgilere dayanarak bir görünümü yeniler. Düzenli aralıklarla, sistem görünümleri yenileme önemlidir. Açın ve görünüm yenilenmemiş Spy ++ görünüm varsa, bu işlemler, iş parçacıkları ve daha sonra oluşturulan windows tarafından görülmez. Ayrıca, artık öğeleri görebilirsiniz. **Yenile** komutu, iletiler görünümünü dışında tüm görünümlerde kullanılabilir.

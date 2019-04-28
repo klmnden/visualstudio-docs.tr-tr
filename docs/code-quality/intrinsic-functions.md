@@ -16,11 +16,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820726"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ ifade olabilir — örneğin, ++,--ve işlev çağrıları bu bağlamda tümüne sahip yan etkiler.  SAL ancak, bazı işlev benzeri nesnelerin ve SAL ifadelerde kullanılabilir ayrılmış bazı semboller sağlar. Bunlar olarak adlandırılır *iç işlevleri*.

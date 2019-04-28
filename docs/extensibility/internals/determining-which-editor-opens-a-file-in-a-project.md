@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13b39d52f574c90cf1a4ead8e47e7d24aac94708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861206"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Hangi Düzenleyicisi, bir projede bir dosya açar belirleme
 Bir kullanıcı bir projede bir dosya açıldığında, ortam sonunda açma uygun Düzenleyici veya tasarımcı bu dosya için bir yoklama işlemine geçer. Ortamı tarafından kullanılan ilk yordam, hem standart hem de özel düzenleyiciler için aynıdır. Bir dosyayı açmak için kullanılacak düzenleyicileri yoklanırken ölçütleri çeşitli ortam kullanır ve VSPackage ortamıyla bu işlem sırasında koordine etmek gerekir.

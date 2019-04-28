@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836908"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 Sembol için karşılık gelen olup olmadığını gösteren bir bayrak alır *tanımı aralığı sembol* bir C++ AMP Hızlandırıcısı için derlenmiş kodda bir işaretçi değişkeninin etiketi bileşeni. Tanımı aralığı sembol adres aralığı için bir değişken konumudur.

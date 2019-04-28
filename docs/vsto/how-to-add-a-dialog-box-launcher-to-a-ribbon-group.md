@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826450"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Nasıl yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme
   Herhangi bir Şerit grubuna iletişim kutusu başlatıcısı ekleyebilirsiniz. İletişim kutusu başlatıcısı içinde bir grup görünür küçük bir simgedir. Kullanıcılar, ilgili iletişim kutusu veya Grup ile ilgili daha fazla seçenek sağlayan görev bölmeleri açmak için bu simgeye tıklayın.

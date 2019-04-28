@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816617"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
 Microsoft genişletilmiş tasarım yönerge kuralları kural kümesi bildirilir ve yaşatılabilirlik en üst düzeye çıkarmak için temel tasarım yönerge kuralları genişletir. Kuralları adlandırma üzerinde fazladan Vurgu yerleştirilir. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod yazmak için en yüksek standartları zorlamak istiyorsanız kümesi dahil olmak üzere düşünmelisiniz.

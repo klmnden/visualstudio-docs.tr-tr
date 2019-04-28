@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838486"
 ---
 # <a name="debugging-xslt"></a>XSLT hata ayıklama
 
@@ -86,7 +86,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="xslt-profiler"></a>XSLT Profil Oluşturucusu
+## <a name="xslt-profiler"></a>XSLT profil oluşturucusu
 
 [XSLT Profil Oluşturucusu](../xml-tools/xslt-profiler.md) ölçmesine, değerlendirme ve performans ile ilgili sorunları XSLT kodda ayrıntılı XSLT performans raporlar oluşturarak hedef geliştiricilerinin bir araçtır. Daha fazla bilgi için [XSLT Profil Oluşturucusu](../xml-tools/xslt-profiler.md).
 

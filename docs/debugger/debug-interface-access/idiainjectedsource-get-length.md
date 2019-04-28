@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828635"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Kod bayt sayısını alır.

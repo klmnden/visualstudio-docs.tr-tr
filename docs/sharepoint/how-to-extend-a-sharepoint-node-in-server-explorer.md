@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814003"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme
   Altındaki düğümleri genişletebilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Yeni alt düğümleri, kısayol menü öğeleri ve özellikleri için var olan bir düğüm eklemek istediğinizde bu kullanışlıdır. Daha fazla bilgi için [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

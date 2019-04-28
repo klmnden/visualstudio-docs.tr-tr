@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Genel müşteri numarasını (PCN) veya yetkilendirme numaranızı bulmak hakkında bilgi edinin
 searchscope: VS Subscription
 ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946138"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Benim "Genel Müşteri Numaramı (PCN) veya yetkilendirme numarasını nasıl bulabilirim?
 

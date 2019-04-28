@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812468"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Nasıl yapılır: Metin dosyalarını program aracılığıyla çalışma kitapları olarak açma
   Bir çalışma kitabı olarak bir metin dosyasını açabilirsiniz. Açmak istediğiniz dosyanın adını geçmesi gerekir. Hangi satır numarası üzerinde ayrıştırma Başlat ve veri dosyasındaki sütun biçimi gibi çeşitli isteğe bağlı parametreleri belirtebilirsiniz.

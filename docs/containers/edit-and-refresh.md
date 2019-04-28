@@ -10,11 +10,11 @@ ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
 ms.openlocfilehash: 5cc386ae0d9a9d19acf3590786773e9efbda2725
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820002"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 

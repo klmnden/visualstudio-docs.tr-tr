@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817830"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>Seçenekler, metin düzenleyici, C#, kod stili, biçimlendirme
 
@@ -49,7 +49,7 @@ Bu ayarları yapılandırmak **belgeyi Biçimlendir** bir dosyada ek kod temizle
 
 |Etiketle|Açıklama|Karşılık gelen EditorConfig ve Araçlar > Seçenekler kuralları|
 |-----------|-----------------|-----------------|-----------------|
-|**Tüm biçimlendirme kuralları (Girinti, sarmalama, aralık) #c Uygula**|**Belgeyi Biçimlendir** her zaman biçimlendirme sorunları giderir komutu. Bu ayar değiştirilemez.| [Çekirdek EditorConfig seçeneği](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig biçimlendirme seçenekleri](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Araçlar** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >   **Biçimlendirme** > [**girinti** veya **yeni satırlar** veya **aralığı** veya **sarmalama**]|
+|**Tüm uygulama C# biçimlendirme kurallarını (Girinti, sarmalama, aralık)**|**Belgeyi Biçimlendir** her zaman biçimlendirme sorunları giderir komutu. Bu ayar değiştirilemez.| [Çekirdek EditorConfig seçeneği](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig biçimlendirme seçenekleri](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Araçlar** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >   **Biçimlendirme** > [**girinti** veya **yeni satırlar** veya **aralığı** veya **sarmalama**]|
 |**Biçimlendirme sırasında ekleme kodu temizleme gerçekleştirin**|Bu onay kutusu seçildiğinde, düzeltmeler aşağıda belirtilen kuralları geçerlidir **Edit.FormatDocument** komutu.| Yok |
 |**Gereksiz kullanımları Kaldır**|Seçili olduğunda, gereksiz kaldırır `using` yönergeleri olduğunda **Edit.FormatDocument** tetiklenir.| Yok |
 |**Kullanımları sıralama**|Bu onay kutusu seçildiğinde, sıralar `using` yönergeleri olduğunda **Edit.FormatDocument** tetiklenir.| dotnet_sort_system_directives_first<br/><br/>**Araçlar** > **seçenekleri** > **metin düzenleyici** > **C#** > **Gelişmiş**   >  **Yer 'System' yönergelerini ilk kullanımları sıralarken** |

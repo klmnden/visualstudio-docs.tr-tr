@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 045a7366546e85ad2e9588ce2a14077f8b18a331
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842566"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild koşullu yapıları
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [olduğunda](../msbuild/when-element-msbuild.md), ve [Aksi takdirde](../msbuild/otherwise-element-msbuild.md) öğeleri.

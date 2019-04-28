@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822232"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread Arabirimi
 Dil altyapıları ve ana iş parçacığı eşitleme sağlamak ve iş parçacığına özgü hata ayıklama durum bilgilerini korumak için sağlar. Bu arabirim genişletir `IRemoteDebugApplicationThread` iş parçacığı olmayan uzaktan erişim sağlamak için arabirim.  

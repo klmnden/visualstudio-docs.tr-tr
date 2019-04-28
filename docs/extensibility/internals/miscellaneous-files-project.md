@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860091"
 ---
 # <a name="miscellaneous-files-project"></a>Çeşitli Dosyalar Projesi
 Proje öğeleri bir kullanıcı oturum açtığında, IDE bir çözümde bir proje üyesi olmayan tüm öğeler için çeşitli dosyalar projeleri atar.
@@ -39,7 +39,7 @@ Proje öğeleri bir kullanıcı oturum açtığında, IDE bir çözümde bir pro
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
-- [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)
-- [Nasıl yapılır: Open Standard Editors](../../extensibility/how-to-open-standard-editors.md)
+- [Nasıl yapılır: Projeye Özgü Düzenleyiciler Açma](../../extensibility/how-to-open-project-specific-editors.md)
+- [Nasıl yapılır: Standart Düzenleyiciler Açma](../../extensibility/how-to-open-standard-editors.md)
 - [Proje ve Proje Öğesi Şablonları Ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Proje ve Proje Öğesi Şablonları Ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md)

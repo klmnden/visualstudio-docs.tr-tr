@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2c042d75ad74cc42d94596d60008dc43704e612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854885"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 Her ortak sembol (en bir en düşük, her genel işlev ve veri simgesi) .exe dosya oluşturulduğunda, verilen bir `SymTagPublicSymbol` etiketi.

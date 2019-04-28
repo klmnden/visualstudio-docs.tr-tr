@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817315"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Nasıl yapılır: Program aracılığıyla web sayfasını Outlook klasörüyle ilişkilendirme
   Bu örnek adlı bir klasör için denetler `HtmlView` Microsoft Office Outlook'ta. Klasör mevcut değilse, kod klasörü oluşturur ve bir Web sayfası atar. Klasör varsa, kod klasör içeriğini görüntüler.

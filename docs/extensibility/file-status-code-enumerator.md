@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 50312caddf0ce2b5c64d1ec83e1707e2e0ee086e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863070"
 ---
 # <a name="file-status-code-enumerator"></a>Dosya durumu kod numaralandırıcısı
 `SccStatus` Numaralandırıcı kaynak denetimi sisteminizden bir dosya durumunu belirten adlandırılmış sabit değerleri içerir. Bu sabit listesi tarafından kullanılan [Sccqueryınfo](../extensibility/sccqueryinfo-function.md) ve `POPLISTFUNC` geri çağırma işlevi (bkz [POPLISTFUNC](../extensibility/poplistfunc.md) Ayrıntılar için).

@@ -10,11 +10,11 @@ ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822594"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Bir projenin varsayılan Namespace belirleme
 İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `CustomToolNamespace` özelliği değeri, ardından giriş dosyası ayarlanmış `CustomToolNamespace` geçirilen varsayılan ad alanı parametre değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemi. Aksi takdirde, `wszDefaultNamespace` geçirilen `Generate` her zaman kök ad alanına eşittir. Ad alanları hakkında daha fazla bilgi için bkz. [Namespace anahtar sözcükleri](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2f5f38205770b7b7574a37b700b3c9b23b4fe90
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832443"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 Satır numarası bilgisi tüm işlevlerin satır içine alınmış, doğrudan veya dolaylı olarak bu sembol yinelemek bir istemci sağlayan bir sabit listesi alır.

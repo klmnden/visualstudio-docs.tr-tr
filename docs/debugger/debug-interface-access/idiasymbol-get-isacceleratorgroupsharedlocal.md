@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836842"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Sembol grubu paylaşılan yerel değişkene bir C++ AMP Hızlandırıcısı için derlenmiş kodda karşılık gelen olup olmadığını gösteren bir bayrak alır.
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Parametreler
  `pFlag`
 
-[out] Bir işaretçi bir `BOOL` simgesi grubu paylaşılan yerel değişkene bir C++ AMP Hızlandırıcısı için derlenmiş kodda karşılık gelen olup olmadığını gösterir. Varsa `TRUE`, `get_baseDataSlot` ve `get_baseDataOffset` yöntemleri değişken için depolama konumu bilgilerini almak için kullanılabilir.
+[out] Bir işaretçi bir `BOOL` simgesi grubu paylaşılan yerel değişkene için derlenmiş kodda karşılık gelen olmadığını bildiren bir C++ AMP Hızlandırıcısı. Varsa `TRUE`, `get_baseDataSlot` ve `get_baseDataOffset` yöntemleri değişken için depolama konumu bilgilerini almak için kullanılabilir.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.

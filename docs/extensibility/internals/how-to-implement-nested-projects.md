@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860769"
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: İç içe Projeler uygulama
 
@@ -88,6 +88,6 @@ Aşağıdaki konular, iç içe projeler uygularken dikkate alınması gereken ç
 
 - [Yeni Öğe Ekle iletişim kutusu öğeleri Ekle](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)
 - [Sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

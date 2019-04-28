@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852247"
 ---
 # <a name="debugging-applications"></a>Uygulamalarda Hata Ayıklama
 Aşağıdaki bölümlerde, belirli türde uygulamalar için hata ayıklama ile ilgilidir. Farklı uygulama türleri ve farklı dillerde farklı ayarlar ve teknikleri gerektirir ve hata ayıklama için gereken farklı mevcut verir.

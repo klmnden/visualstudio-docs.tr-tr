@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891706"
 ---
 # <a name="button-element"></a>Button öğesi
 Kullanıcının etkileşime geçtiği bir öğe tanımlar. Düğmeler, farklı türde olabilir: Düğme, MenuButton ve SplitDropDown.
@@ -42,7 +42,7 @@ Kullanıcının etkileşime geçtiği bir öğe tanımlar. Düğmeler, farklı t
 |GUID|Gerekli. GUID/ID komut tanımlayıcısı GUİD'si.|
 |kimlik|Gerekli. Kimliği bir GUID/ID komut tanımlayıcısı.|
 |öncelik|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|
-| türü|İsteğe bağlı. Düğme türünü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Düğme<br /> Araç çubuklarında (genellikle icon bir düğme olarak), menüler ve bağlam menüleri görünür bir standart komutu.<br /><br /> MenuButton<br /> Komut yürütme değil, ancak başka bir menü üreten bir menü öğesi.<br /><br /> SplitDropDown<br /> Microsoft Word standart araç çubuğundaki Geri Al ve Yinele düğmeler gibi denetimler.|
+|türü|İsteğe bağlı. Düğme türünü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Düğme<br /> Araç çubuklarında (genellikle icon bir düğme olarak), menüler ve bağlam menüleri görünür bir standart komutu.<br /><br /> MenuButton<br /> Komut yürütme değil, ancak başka bir menü üreten bir menü öğesi.<br /><br /> SplitDropDown<br /> Microsoft Word standart araç çubuğundaki Geri Al ve Yinele düğmeler gibi denetimler.|
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Alt Öğeler

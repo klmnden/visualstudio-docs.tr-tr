@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cc030fed25409f5c034abfd07f1f9358bfea593b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812702"
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Nasıl yapılır: Program aracılığıyla çalışma sayfası açıklamalarını görüntüleme
   Programlı olarak göster ve Microsoft Office Excel çalışma sayfalarında açıklamaları gizle.

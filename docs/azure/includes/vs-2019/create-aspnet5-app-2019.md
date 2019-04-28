@@ -7,11 +7,11 @@ ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
 ms.openlocfilehash: d01cba0f947752e9f1e277d6f23e74efa39d47fd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820000"
 ---
 1. Visual Studio Başlangıç penceresinden seçin **yeni bir proje oluşturma**.
 1. Seçin **ASP.NET Core Web uygulaması**ve **sonraki**.

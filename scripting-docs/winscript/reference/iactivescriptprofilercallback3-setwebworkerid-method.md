@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993109"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId Yöntemi
 Profil Oluşturucu bu profil oluşturma oturumu için kullanılacak alt kimliği hakkında bilgilendirir. İşlevi, sayfa bağlamında yürütülmüyor, bu yöntem çağrılır değil. Değerini `webWorkerId` 1'den başlayarak, her bir çalışan için 1 artar. Kimliği değerleri bir oturumu kararlı ve çalışanlar oluşturulduğu sırada yalnızca karşılık gelen kullanılmaya yönelik değildir.  

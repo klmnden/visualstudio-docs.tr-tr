@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811693"
 ---
 # <a name="create-models-for-your-app"></a>Uygulamanız için model oluşturma
 
@@ -38,7 +38,7 @@ Bir sistem veya var olan kod mimarisini görselleştirmek için aşağıdaki diy
 
 |**Diyagramı**|**Gösterir**|
 |-|-|
-|[Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|
+|[Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)|Sistemin üst düzey mimarisi|
 |Kod haritaları<br /><br /> [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)|Bağımlılıklar ve diğer mevcut koddaki ilişkileri|
 |Kod tarafından oluşturulan sınıf diyagramları<br /><br /> [Sınıf Diyagramları ile Çalışma (Sınıf Tasarımcısı)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Türlerini ve ilişkilerini .NET kod|
 

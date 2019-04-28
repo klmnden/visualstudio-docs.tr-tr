@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
 searchscope: VS Subscription
 ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833977"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri Yönetme
 
@@ -153,7 +153,7 @@ Y: Satın alma kanal bağlı olarak, Microsoft müşteri verileri için farklı 
 |--------------------------------------------------------|-----------------|
 |    Perakende (örneğin aracılığıyla Microsoft Store)               |    360          |
 |    Toplu Lisanslama hizmeti Merkezi (VLSC)              |    180          |
-|    Microsoft Ürün ve hizmet sözleşmesi (MPSA)    |    180          |
+|    Microsoft Ürün ve Hizmet Sözleşmesi (MPSA)    |    180          |
 |    Visual Studio bulut abonelikleri                   |    180          |
 |    Program (örneğin MCT, BizSpark, MPN, Imagine)          |    180          |
 |    Satılamaz (örneğin, MVP, MSP)                      |    180          |

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858119"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Gezinti Çubuğu için Destek
 Düzenleyici görünümü, üst gezinti çubuğunda, türler ve üyeler dosyayı görüntüler. Türleri sol açılan menü gösterilir ve üyeleri sağındaki açılan gösterilir. Kullanıcı türü seçtiğinde kelimeyi ilk satırın türü yerleştirilir. Kullanıcı bir üye seçtiğinde, giriş işaretini üyenin tanımını yerleştirilir. Açılan kutu, geçerli giriş işareti konumunu gösterecek şekilde güncelleştirilir.

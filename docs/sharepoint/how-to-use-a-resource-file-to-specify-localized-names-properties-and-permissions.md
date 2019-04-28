@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813055"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma
   Bir kaynak dosyası kullanarak, yerelleştirilmiş adlar sağlamak, özelliklerini tanımlayın ve bir iş verileri bağlantısı (BDC) modelde tanımlı izinleri tor nesneleri geçerli. Bu bilgileri belirtmek için eklediğiniz bir **iş verileri bağlantısı kaynak** içeren bir proje öğesine bir **iş verileri bağlantı modeli** öğesi. Ardından, adları, özellikler ve izinleri XML kaynak dosyası için düzenleyerek belirtin.

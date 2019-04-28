@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816640"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
 Microsoft genişletilmiş doğruluk kuralları kural kümesi Kod Analizi tarafından raporlanan mantığı ve framework kullanım hatalarını en üst düzeye çıkarır. Ekstra Vurgu COM birlikte çalışabilirlik ve mobil uygulamaları gibi spesifik senaryolarda yer alır. Bu kural Bu senaryolardan biri, projenize veya projenize ek sorunları bulmak için geçerliyse kümesi dahil olmak üzere düşünmelisiniz.

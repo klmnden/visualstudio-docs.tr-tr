@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Seçili Visual Studio aboneliğine dahildir Xamarin University eğitimi aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
 ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810560"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 

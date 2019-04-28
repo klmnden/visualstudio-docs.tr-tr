@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813949"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Nasıl yapılır: Uzak bir sunucudaki SharePoint çözümlerini yükseltmek dağıtma ve yayımlama
   SharePoint çözümleri için yerel sistem dağıtmanın yanı sıra, uzak sitelerin veya yerel SharePoint sitelerine korumalı SharePoint çözümlerine yayımlayabilirsiniz. Uzaktan yayımlama işlemi kopyaları *.wsp* dosyasını SharePoint sunucusuna çözümü yükler ve ardından çözümü etkinleştirmek sağlar. Ona değişiklikler yapıldıktan sonra uzak bir SharePoint çözüm yükleme yükseltebilirsiniz.

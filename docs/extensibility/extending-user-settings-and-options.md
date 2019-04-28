@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863171"
 ---
 # <a name="extend-user-settings-and-options"></a>Kullanıcı ayarlarını ve seçeneklerini genişletme
 Visual Studio'da kullanıcı tercihlerini korumak başlıca iki yolu vardır. **Araçları** > **seçenekleri** sayfalarına izin ayarları, genel ve dile özgü birçok farklı türde için kendi değerlerini ayarlamak kullanıcılar. Kullanıcı ayarları genel Visual Studio yapılandırması özelliklerini belirtmek kullanıcılardan izin verir. Seçenekler sayfaları hakkında daha fazla bilgi için bkz: [seçenekler ve Seçenekler sayfaları](../extensibility/internals/options-and-options-pages.md). Kullanıcı ayarları hakkında daha fazla bilgi için bkz. [kullanıcı ayarları desteği](../extensibility/internals/support-for-user-settings.md).

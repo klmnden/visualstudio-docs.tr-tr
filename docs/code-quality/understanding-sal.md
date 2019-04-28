@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820412"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 
@@ -110,9 +110,9 @@ Bu uygulama, ortak bir kapalı tek hata içeriyor. Neyse ki, kod yazar SAL arabe
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio Kod Analizi araçları ve SAL'ı kullanmak için
 
-1.  Visual Studio'da SAL ek açıklamaları içeren bir C++ projesini açın.
+1. Visual Studio'da SAL ek açıklamaları içeren bir C++ projesini açın.
 
-2.  Menü çubuğunda, **derleme**, **çözüm üzerinde kod analizini Çalıştır**.
+2. Menü çubuğunda, **derleme**, **çözüm üzerinde kod analizini Çalıştır**.
 
      Göz önünde bulundurun \_içinde\_ bu bölümdeki örnek. Kod Analizi üzerinde çalıştırıyorsanız, bu uyarı görüntülenir:
 
@@ -122,15 +122,15 @@ Bu uygulama, ortak bir kapalı tek hata içeriyor. Neyse ki, kod yazar SAL arabe
 
 `_In_` Ek açıklama gösterir:
 
--   Parametresi, geçerli olması gerekir ve değiştirilmeyecek.
+- Parametresi, geçerli olması gerekir ve değiştirilmeyecek.
 
--   İşlevi yalnızca tek öğeli arabelleğinden okur.
+- İşlevi yalnızca tek öğeli arabelleğinden okur.
 
--   Çağıranın arabellek sağlayın ve başlatmanız gerekir.
+- Çağıranın arabellek sağlayın ve başlatmanız gerekir.
 
--   `_In_` "salt okunur" belirtir. Sıkça uygulamaktır `_In_` olması gereken bir parametreye `_Inout_` ek açıklama yerine.
+- `_In_` "salt okunur" belirtir. Sıkça uygulamaktır `_In_` olması gereken bir parametreye `_Inout_` ek açıklama yerine.
 
--   `_In_` Ancak, işaretçi olmayan skalerler Çözümleyicisinde tarafından göz ardı izin verilir.
+- `_In_` Ancak, işaretçi olmayan skalerler Çözümleyicisinde tarafından göz ardı izin verilir.
 
 ```cpp
 void InCallee(_In_ int *pInt)
