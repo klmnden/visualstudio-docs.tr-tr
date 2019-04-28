@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428604"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Resim Göster Düğmesi Olay İşleyicisi için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual C# kodu
     3. Bir nokta (`.`) (birçok Programcı bunu nokta olarak adlandırır.) Hemen sonra bir nokta yazdığınız için **openFileDialog1**e **IntelliSense** penceresi açılır; tamamının dolu **OpenFileDialog** bileşenin özellikleri ve yöntemleri. Bu görünen, aynı özelliklerdir **özellikleri** Windows Form Tasarımcısı'nda seçtiğinizde penceresi. Bileşenin bir şeyler (bir iletişim kutusu açmak gibi) yöntemleri de seçebilirsiniz.  
   
         > [!NOTE]
-        >  **IntelliSense** penceresi gösterebilir size hem özellikleri hem de yöntemleri. Ne gösterilmekte olduğunu belirlemek için her öğe sol tarafındaki simgeye bakın **IntelliSense** penceresi. Her özelliğin yanında her yöntemin yanında bir blok resmi ve İngiliz anahtarı (veya spanner) resmi görürsünüz. Ayrıca her olayın yanında bir Şimşek simgesi vardır. Bu resimler aşağıdaki gibi görüntülenir.  
+        > **IntelliSense** penceresi gösterebilir size hem özellikleri hem de yöntemleri. Ne gösterilmekte olduğunu belirlemek için her öğe sol tarafındaki simgeye bakın **IntelliSense** penceresi. Her özelliğin yanında her yöntemin yanında bir blok resmi ve İngiliz anahtarı (veya spanner) resmi görürsünüz. Ayrıca her olayın yanında bir Şimşek simgesi vardır. Bu resimler aşağıdaki gibi görüntülenir.  
   
          ![Yöntem simgesi](../ide/media/express-iconmethod.png "Express_IconMethod")  
 Yöntem simgesi  
@@ -72,21 +72,21 @@ Olay simgesi
     5. Kullandığınızda, bir yöntem bir denetim veya bileşen üzerinde (olarak adlandırılan *bir yöntemi çağırmak*), parantezler eklemeniz gerekir. Bu nedenle açılış ve kapanış ayraçlarını hemen "g sonra" girin `ShowDialog`: `()` "OpenFileDialog1.ShowDialog()" gibi görünmelidir.  
   
         > [!NOTE]
-        >  Yöntemler, tüm önemli bir parçasıdır ve Bu öğreticide, yöntemleri kullanmak için birkaç yol göstermiştir. Bir bileşenin yöntemini nasıl aradığınız gibi şeyler yapmak için söylemek için çağırabilirsiniz **OpenFileDialog** bileşenin `ShowDialog()` yöntemi. Programınız bir anda, gibi şeyler yapmak için kendi yöntemlerinizi oluşturabilirsiniz adlı `showButton_Click()` bir kullanıcı bir düğmeyi seçtiğinde bir iletişim kutusu ve resim açan yöntemi.  
+        > Yöntemler, tüm önemli bir parçasıdır ve Bu öğreticide, yöntemleri kullanmak için birkaç yol göstermiştir. Bir bileşenin yöntemini nasıl aradığınız gibi şeyler yapmak için söylemek için çağırabilirsiniz **OpenFileDialog** bileşenin `ShowDialog()` yöntemi. Programınız bir anda, gibi şeyler yapmak için kendi yöntemlerinizi oluşturabilirsiniz adlı `showButton_Click()` bir kullanıcı bir düğmeyi seçtiğinde bir iletişim kutusu ve resim açan yöntemi.  
   
     6. Visual C# için bir alan ekleyin ve ardından iki eşittir işareti ekleyin (`==`). Visual Basic'te bir alan ekleyin ve ardından tek bir eşittir işareti (`=`). (Visual C# ve Visual Basic farklı eşitlik operatörleri kullanır.)  
   
     7. Başka bir alan ekleyin. Bunu yaptığınızda hemen başka **IntelliSense** penceresi açılır. Yazmaya başlayın `DialogResult` ve eklemek için SEKME tuşunu seçin.  
   
         > [!NOTE]
-        >  Bir yöntem çağırmak için kod yazdığınızda, bazen bir değer döndürür. Bu durumda, **OpenFileDialog** bileşenin `ShowDialog()` yöntemi, bir DialogResult değeri döndürür. DialogResult, iletişim kutusunda ne olduğunu söyleyen özel bir değerdir. Bir **OpenFileDialog** bileşen, kullanıcı seçme içinde sonuçlanabilir **Tamam** veya **iptal**, bu nedenle kendi `ShowDialog()` yöntemi döndürür ya da DialogResult.OK veya DialogResult.Cancel döndürür.  
+        > Bir yöntem çağırmak için kod yazdığınızda, bazen bir değer döndürür. Bu durumda, **OpenFileDialog** bileşenin `ShowDialog()` yöntemi, bir DialogResult değeri döndürür. DialogResult, iletişim kutusunda ne olduğunu söyleyen özel bir değerdir. Bir **OpenFileDialog** bileşen, kullanıcı seçme içinde sonuçlanabilir **Tamam** veya **iptal**, bu nedenle kendi `ShowDialog()` yöntemi döndürür ya da DialogResult.OK veya DialogResult.Cancel döndürür.  
   
     8. DialogResult değeri açmak için bir nokta yazın **IntelliSense** penceresi. Harfini girmek `O` ve eklemek için TAB tuşunu **Tamam**.  
   
          Hakkında daha fazla bilgi edinmek için `DialogResult`, bkz: [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
-        >  Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.  
+        > Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   

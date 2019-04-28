@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427940"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office projelerindeki nesnelere genel erişim
   Bir Office projesi oluşturduğunuzda, Visual Studio otomatik olarak adlı bir sınıf oluşturur `Globals` projedeki. Kullanabileceğiniz `Globals` projesinde herhangi bir koddan çalışma zamanında birçok farklı proje öğesine erişmek için sınıf.
@@ -74,7 +74,7 @@ ms.locfileid: "60066773"
  Kullanmayı denerse kod `Globals` belge veya VSTO eklentisi başlatılmadan önce sınıfı, bir çalışma zamanı özel durum throw. Örneğin, kullanarak `Globals` ne zaman bir sınıf düzeyi değişkenleri bildirme başarısız olabilir, çünkü `Globals` sınıfı atanamaz tüm ana bilgisayar öğesi başvuruları ile bildirilen nesnenin örneği oluşturulmadan önce.
 
 > [!NOTE]
->  `Globals` Sınıfı tasarım zamanında hiçbir zaman başlatılmaz, ancak denetim örnekleri tasarımcı tarafından oluşturuldu. Bir özelliği kullanan bir kullanıcı denetimi oluşturmak istiyorsanız buna `Globals` sınıfı gelen bir kullanıcı denetimi sınıf içinde özellik döndürüp döndürmediğini işaretlemeniz gerekir **null** döndürülen nesneyi kullanmayı denemeden önce.
+> `Globals` Sınıfı tasarım zamanında hiçbir zaman başlatılmaz, ancak denetim örnekleri tasarımcı tarafından oluşturuldu. Bir özelliği kullanan bir kullanıcı denetimi oluşturmak istiyorsanız buna `Globals` sınıfı gelen bir kullanıcı denetimi sınıf içinde özellik döndürüp döndürmediğini işaretlemeniz gerekir **null** döndürülen nesneyi kullanmayı denemeden önce.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)

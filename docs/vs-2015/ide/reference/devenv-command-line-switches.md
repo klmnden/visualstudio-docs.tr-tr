@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444741"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050718"
 Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de derleme, hata ayıklama ve projeleri, komut satırından dağıtma olanak tanır. Bu anahtarlar, IDE bir betik veya .bat dosyası, örneğin, Gecelik Yapı betiği çalıştırmak için veya belirli bir yapılandırmada IDE başlatmak için kullanın.  
   
 > [!NOTE]
->  Derlemeyle ilgili görevler için devenv yerine MSBuild kullanmak artık önerilir. Daha fazla bilgi için [komut satırı başvurusu](../../msbuild/msbuild-command-line-reference.md).  
+> Derlemeyle ilgili görevler için devenv yerine MSBuild kullanmak artık önerilir. Daha fazla bilgi için [komut satırı başvurusu](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Devenv kullanmak için bir yönetici çalıştırmalısınız [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) ve [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) anahtarlar.  
+> Devenv kullanmak için bir yönetici çalıştırmalısınız [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) ve [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) anahtarlar.  
   
 ## <a name="devenv-switch-syntax"></a>Devenv anahtarı sözdizimi  
  Varsayılan olarak, devenv komutları anahtarları devenv.com yardımcı programı geçirin.  
@@ -57,7 +57,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 - Bir proje dosyası adı bir çözüm dosyası adı yerine sağladığında bir `devenv` komut aynı ada sahip bir çözüm dosyası için proje dosyasının üst klasörü arar. Örneğin, komut `devenv /build myproject1.vbproj` üst klasör için "myproject1.sln" adlı bir çözüm dosyası arar.  
   
     > [!NOTE]
-    >  Bu projeye başvuran bir ve yalnızca bir çözüm dosyası, kendi üst klasörde bulunmalıdır. Üst klasör bu projeye başvuran hiçbir çözüm dosyasını içeren ya da üst klasör ona başvuran iki veya daha fazla çözüm dosyası içeriyorsa, bir geçici çözüm dosyası oluşturulur, bu proje için adı ve başvurduğu.  
+    > Bu projeye başvuran bir ve yalnızca bir çözüm dosyası, kendi üst klasörde bulunmalıdır. Üst klasör bu projeye başvuran hiçbir çözüm dosyasını içeren ya da üst klasör ona başvuran iki veya daha fazla çözüm dosyası içeriyorsa, bir geçici çözüm dosyası oluşturulur, bu proje için adı ve başvurduğu.  
   
 - Dosya yolları ve dosya adı boşluklar, bunları çift tırnak içine almalısınız (""). Örneğin, "c:\project bir\\".  
   

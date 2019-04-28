@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437451"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath için Şerit özelleştirme
   Microsoft Office InfoPath Şeritte'nı özelleştirdiğinizde, Şerit uygulamada nerede görüneceğini dikkate almanız gerekir. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] Şerit InfoPath windows uygulaması aşağıdaki üç tür görüntüleyebilirsiniz:
@@ -36,7 +36,7 @@ ms.locfileid: "56602249"
   Baskı önizleme penceresi tasarımcıları ve kullanıcıların bir form veya form şablonu sayfaları yazdırmadan önce önizleme sağlar.
 
 > [!NOTE]
->  **Eklentileri** sekmesini Baskı Önizleme penceresinde görünmez. Özel sekme Baskı Önizleme penceresinde görünmesini istiyorsanız, emin **OfficeId** sekmesinde özelliği ayarlanmadı **TabAddIns**.
+> **Eklentileri** sekmesini Baskı Önizleme penceresinde görünmez. Özel sekme Baskı Önizleme penceresinde görünmesini istiyorsanız, emin **OfficeId** sekmesinde özelliği ayarlanmadı **TabAddIns**.
 
  İçinde Şerit görünmesini istediğiniz her bir pencere Şerit türünü belirtmeniz gerekir.
 

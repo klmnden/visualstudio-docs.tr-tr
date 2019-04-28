@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434494"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 - Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  İzlenecek yol, yeni bir Windows uygulaması oluşturarak başlayın.  
@@ -86,7 +86,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 3. Bir bağlantı, Northwind örnek veritabanına kullanılabilir bağlantılar listesinden seçin. Bağlantı bağlantılar listesinde kullanılabilir durumda değilse, seçin**yeni bağlantı**  
   
     > [!NOTE]
-    >  Bir yerel veritabanı dosyasına bağlanıyorsanız seçin **Hayır** sorulduğunda isterseniz ister dosyayı projenize ekleyin.  
+    > Bir yerel veritabanı dosyasına bağlanıyorsanız seçin **Hayır** sorulduğunda isterseniz ister dosyayı projenize ekleyin.  
   
 4. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet**ekranındayken **sonraki**.  
   
@@ -149,7 +149,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
  Bu bölümde, veritabanını güncellemek için çalışan kod ekleyin. Tüm de ele <xref:System.Data.DBConcurrencyException> , yükseltilmiş, yanı sıra diğer tüm özel durumlar.  
   
 > [!NOTE]
->  `CreateMessage` Ve `ProcessDialogResults` yöntemi bu izlenecek yolda eklenir.  
+> `CreateMessage` Ve `ProcessDialogResults` yöntemi bu izlenecek yolda eklenir.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Hata işleme için eşzamanlılık hatası eklemek için  
   
@@ -201,7 +201,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 6. İlk kayda (`ALFKI`) değiştirmek `ContactName` için `Maria Anders2`.  
   
     > [!NOTE]
-    >  Değişikliği kaydetmek için farklı bir satıra gidin.  
+    > Değişikliği kaydetmek için farklı bir satıra gidin.  
   
 7. Geçiş `ConcurrencyWalkthrough`form çalıştıran kullanıcının.  
   

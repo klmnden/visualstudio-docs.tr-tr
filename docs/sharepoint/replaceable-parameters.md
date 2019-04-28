@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422909"
 ---
 # <a name="replaceable-parameters"></a>Değiştirilebilir parametreler
   Değiştirilebilir parametreler veya *belirteçleri*, gerçek değerleri, tasarım zamanında bilinen olmayan SharePoint çözüm öğeleri için değerler sağlamak için proje dosyaları içinde kullanılabilir. Bunlar standart işlevinde benzer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] şablon belirteçleri. Daha fazla bilgi için [şablon parametreleri](../ide/template-parameters.md).
@@ -86,7 +86,7 @@ ms.locfileid: "56611873"
   Ancak, ek dosya uzantıları listesine ekleyebilirsiniz. Ekleme bir `<TokenReplacementFileExtensions>` önce tanımlanan tüm PropertyGroup SharePoint proje dosyasında öğesine \<alma > SharePoint hedefler dosyasının.
 
 > [!NOTE]
->  Proje derlendikten sonra belirteç değiştirme oluştuğu için aşağıdaki gibi derlenen dosya türleri için dosya uzantıları eklememelisiniz *.cs*, *.vb* veya *.resx*. Belirteçleri değil derlenen dosyalarında değiştirilir.
+> Proje derlendikten sonra belirteç değiştirme oluştuğu için aşağıdaki gibi derlenen dosya türleri için dosya uzantıları eklememelisiniz *.cs*, *.vb* veya *.resx*. Belirteçleri değil derlenen dosyalarında değiştirilir.
 
  Örneğin, dosya adı uzantısı eklemek için (*.myextension* ve *.yourextension*) belirteç değiştirme dosya adı uzantıları listesine bir projeye aşağıdaki eklersiniz (*.csproj* ) dosyası:
 

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440980"
 ---
 # <a name="layer-diagrams-reference"></a>Katman diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Visual Studio'da kullanabileceğiniz bir *katman diyagramı* sisteminizin üst d
      **Katman Gezgini** açılır ve Seçili katmanlara bağlanmış yapılar gösterir. **Katman Gezgini** her yapı bağlantılarını özelliklerini gösteren bir sütun vardır.  
   
     > [!NOTE]
-    >  Bu özelliklerin tümünü göremiyorsanız genişletin **Katman Gezgini** penceresi.  
+    > Bu özelliklerin tümünü göremiyorsanız genişletin **Katman Gezgini** penceresi.  
   
     |**Katman Gezgini'nde sütun**|**Açıklama**|  
     |----------------------------------|---------------------|  

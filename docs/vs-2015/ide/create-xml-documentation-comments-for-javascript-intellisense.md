@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437635"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense için XML belge açıklamaları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079285"
  Bu konuda, XML belgeleri yorumları kullanma hakkında temel bir öğretici sağlar. Diğer öğeleri gibi kullanma hakkında bilgi için [ \<var >](../ide/var-javascript.md) ve [ \<değer >](../ide/value-javascript.md)ve ek kod örnekleri için bkz: [XML belge açıklamaları ](../ide/xml-documentation-comments-javascript.md). Zaman uyumsuz bir geri çağırma için IntelliSense bilgisi gibi sağlama hakkında bilgi için bir `Promise`, bkz: [ \<döndürür >](../ide/returns-javascript.md).  
   
 > [!NOTE]
->  XML belgeleri yorumlarına yalnızca dosyalardan, derlemelerden ve hizmetlerden ulaşılabilir.  
+> XML belgeleri yorumlarına yalnızca dosyalardan, derlemelerden ve hizmetlerden ulaşılabilir.  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Bir JavaScript işlevi için XML belge açıklamaları oluşturma  
   
 - İşlevinde [ \<Özet >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), ve [ \<döndürür >](../ide/returns-javascript.md) öğeleri ve her bir öğeyle koyun üç (/ / /) işaretleri eğik çizgi.  
   
     > [!NOTE]
-    >  Her öğe, tek bir satırda olmalıdır.  
+    > Her öğe, tek bir satırda olmalıdır.  
   
      Aşağıdaki örnek, bir JavaScript işlevi gösterir.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079285"
 1. Belge açıklamaları OpenAjax MessageBundle biçime sahip bir XML dosyası oluşturun.  
   
     > [!IMPORTANT]
-    >  MessageBundle önerilen bir biçimidir. Bu biçim, Microsoft AJAX veya .winmd dosyalarında desteklenmiyor. Alternatif kullanma hakkında bilgi için `VSDoc` biçimlendirmek için bkz: [ \<loc >](../ide/loc-javascript.md).  
+    > MessageBundle önerilen bir biçimidir. Bu biçim, Microsoft AJAX veya .winmd dosyalarında desteklenmiyor. Alternatif kullanma hakkında bilgi için `VSDoc` biçimlendirmek için bkz: [ \<loc >](../ide/loc-javascript.md).  
   
      Aşağıdaki örnek yerelleştirilmiş IntelliSense bilgilerini içeren bir sepet dosyasında içerik gösterir. Bu, JA gibi kültüre özgü bir klasörde bulunan bir XML dosyasıdır. Klasör içeren .js dosyası ile aynı konumda olmalıdır `<loc>` öğesi. XML dosyasının dosya adı eşleşmelidir `filename` belirtilen parametre `<loc>` öğesi.  
   

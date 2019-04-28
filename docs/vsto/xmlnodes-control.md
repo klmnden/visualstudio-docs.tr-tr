@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421529"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes denetimi
   **Önemli** Microsoft Word ile ilgili bu konu kümesindeki bilgileri avantajı ve kişiler ve kimin bulunur Amerika Birleşik Devletleri ve kendi bölgeler dışında veya servis kullanan kuruluşlar için özel olarak sunulan veya geliştirme üzerinde çalışan programlar Ocak Microsoft uygulaması belirli işlevlerin ne zaman kaldırıldı 2010'dan önce Microsoft lisanslı Microsoft Word ürünler, Microsoft Word için özel XML ilgili. Bu bilgileri Microsoft Word ile ilgili değil okuma veya kişi ve kuruluşların Amerika Birleşik Devletleri ya da kullanarak veya Microsoft tarafından 10 Ocak 2010'dan sonra lisansına sahip Microsoft Word ürünleri üzerinde çalışan programlar geliştirme alt bölgeleri tarafından kullanılan ; Bu ürünlerin bu tarihten önce lisanslı veya satın alınan ve Amerika Birleşik Devletleri dışında kullanım için lisanslı ürünleri aynı davranmaz.
@@ -30,7 +30,7 @@ ms.locfileid: "60090586"
  Visual Studio XML düğümü koleksiyonunu oluşturduktan sonra Word nesne modeline geçiş yapmak zorunda kalmadan doğrudan denetim karşı programlama yapabilirsiniz. <xref:Microsoft.Office.Tools.Word.XMLNodes> Denetimi yalnızca belgeden öğe eşlemesi kaldırarak silinebilir.
 
 > [!NOTE]
->  Bir alt öğenin erişim <xref:Microsoft.Office.Tools.Word.XMLNodes> aracılığıyla denetim <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> özelliği döndürür bir <xref:Microsoft.Office.Interop.Word.XMLNode> nesne yerine <xref:Microsoft.Office.Tools.Word.XMLNode> denetimi. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Bir alt öğenin erişim <xref:Microsoft.Office.Tools.Word.XMLNodes> aracılığıyla denetim <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> özelliği döndürür bir <xref:Microsoft.Office.Interop.Word.XMLNode> nesne yerine <xref:Microsoft.Office.Tools.Word.XMLNode> denetimi. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Veriyi denetime bağlama
  Bir <xref:Microsoft.Office.Tools.Word.XMLNodes> denetimi veri bağlamayı desteklemez. Bunun nedeni, <xref:Microsoft.Office.Tools.Word.XMLNodes> denetim karmaşık veri bağlama yeteneğine sahip değil ve basit veri bağlama temsil edemez yinelenen veriler.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427900"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Nasıl yapılır: Word Belgelerine veya Excel Çalışma Kitaplarına Eylemler Bölmesi Ekleme
   Microsoft Office Word belgesi veya Microsoft Excel çalışma kitabına Eylemler bölmesi ekleme için önce bir Windows Forms kullanıcı denetimi oluşturun. Ardından, kullanıcı denetimine ekleyin <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> özelliği `ThisDocument.ActionsPane` alan (Word) veya `ThisWorkbook.ActionsPane` projenizdeki alan (Excel).
@@ -28,7 +28,7 @@ ms.locfileid: "60085850"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Kullanıcı denetimi oluşturma
  Aşağıdaki yordam, Word kullanıcı denetimi oluşturma veya Excel proje gösterir. Ayrıca bir düğme tıklandığında, metin belge veya çalışma kitabındaki Yazar kullanıcı denetimine ekler.
@@ -42,12 +42,12 @@ ms.locfileid: "60085850"
 3. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Eylemler bölmesi denetimi**, adlandırın **HelloControl**, tıklatıp **Ekle**.
 
     > [!NOTE]
-    >  Alternatif olarak ekleyebileceğiniz bir **kullanıcı denetimi** projenize öğesi. Tarafından oluşturulan sınıflar **Eylemler bölmesi denetimi** ve **kullanıcı denetimi** öğeleri işlevsel olarak eşdeğerdir.
+    > Alternatif olarak ekleyebileceğiniz bir **kullanıcı denetimi** projenize öğesi. Tarafından oluşturulan sınıflar **Eylemler bölmesi denetimi** ve **kullanıcı denetimi** öğeleri işlevsel olarak eşdeğerdir.
 
 4. Gelen **Windows Forms** sekmesinde **araç** sürükleyin bir **düğmesi** denetimi denetimi sürükleyin.
 
     > [!NOTE]
-    >  Denetim Tasarımcısı'nda görünür değilse, çift tıklayarak **HelloControl** içinde **Çözüm Gezgini**.
+    > Denetim Tasarımcısı'nda görünür değilse, çift tıklayarak **HelloControl** içinde **Çözüm Gezgini**.
 
 5. Koda ekleme <xref:System.Windows.Forms.Control.Click> düğmesi olay işleyicisi. Aşağıdaki örnek, bir Microsoft Office Word belgesi için kod gösterir.
 

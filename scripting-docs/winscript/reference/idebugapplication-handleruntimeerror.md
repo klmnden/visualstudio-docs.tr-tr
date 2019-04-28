@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412431"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Geçerli iş parçacığını engellemek neden olur ve hata ayıklayıcıya IDE hatanın bir bildirim gönderir.  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Bir dil altyapısı, bir çalışma zamanı hatası neden olan bir iş parçacığının bağlamında bu yöntemi çağırır. Bu yöntem geçerli iş parçacığını engelleme neden olur ve IDE hata ayıklayıcı için gönderilecek bir hata bildirimi gönderir. IDE hata ayıklayıcı uygulama devam ettiğinde, bu yöntem gerçekleştirilecek eylem döndürür.  
   
 > [!NOTE]
->  Çalışma zamanı hata, dil altyapısı yığın çerçevelerini numaralandırma veya nevyhodnocovat gibi görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
+> Çalışma zamanı hata, dil altyapısı yığın çerçevelerini numaralandırma veya nevyhodnocovat gibi görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436171"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Bu belge gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendiri
    Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve bir küre için uygulanan gölgelendiricinin önizlemesini gösterir.  
   
 > [!NOTE]
->  Bu çizimde, daha iyi gölgelendirici etkisini göstermek için turuncu renk belirtildi, ancak Önizleme şekli, dünya alanındaki herhangi bir konum olduğundan, gölgelendirici tam gölgelendirici Tasarımcısı'nda önizlenemiyor. Gölgelendirici efekti tamamen göstermek için gerçek sahnede önizlemesi gerekir.  
+> Bu çizimde, daha iyi gölgelendirici etkisini göstermek için turuncu renk belirtildi, ancak Önizleme şekli, dünya alanındaki herhangi bir konum olduğundan, gölgelendirici tam gölgelendirici Tasarımcısı'nda önizlenemiyor. Gölgelendirici efekti tamamen göstermek için gerçek sahnede önizlemesi gerekir.  
   
  ![Gölgelendirici grafiği ve etkisini önizlemesini](../designers/media/digit-gradient-effect-graph.png "gradyan efekt grafik basamak")  
   

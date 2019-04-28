@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c68f8b61adab90f8437658d6efd04f0ca47818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428121"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API’lerini kullanma
 
@@ -63,7 +63,7 @@ DataCollection.CurrentId);
 1. Visual Studio'da yeni bir C# projesi oluşturun veya bir komut satırı derleme, tercihinize bağlı olarak kullanın.
 
     > [!NOTE]
-    >  Derleme başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık, *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin.
+    > Derleme başvurmalıdır *Microsoft.VisualStudio.Profiler.dll* bulunan kitaplık, *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin.
 
 2. Kopyalama ve projenize aşağıdaki kodu yapıştırın:
 

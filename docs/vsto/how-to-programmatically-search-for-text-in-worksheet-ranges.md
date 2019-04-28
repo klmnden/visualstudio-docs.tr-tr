@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419542"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Nasıl yapılır: Metin için çalışma sayfası aralıklarında program aracılığıyla arama yapma
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne aralık içinde metin araması olanak sağlar. Bu metin herhangi bir çalışma sayfası hücresinde gibi görünebilir hata dizelerini de olabilir `#NULL!` veya `#VALUE!`. Hata dizeleri hakkında daha fazla bilgi için bkz. [hücre hata değerlerini](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616982"
  Aşağıdaki örnekte adlı bir aralık arar `Fruits` ve "apples" sözcüğünü içeren hücrelerin yazı tipi değiştirir. Ayrıca, bu yordamı kullanır <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> önceden ayarlanmış kullanan yöntemi aramak için arama tekrarlama için ayarlar. Aramanın yapılacağı hücreyi belirtin ve <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> yöntemi rest işler.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Yöntemin arama aralığın sonuna ulaştıktan sonra geri arama aralığının başlangıcına kadar kaydırır. Kodunuzu arama sonsuz bir döngüde sarma olmayan emin emin olmanız gerekir. Örnek yordamı kullanarak bu durumu çözmek için bir yol gösterir <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> özelliği.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Yöntemin arama aralığın sonuna ulaştıktan sonra geri arama aralığının başlangıcına kadar kaydırır. Kodunuzu arama sonsuz bir döngüde sarma olmayan emin emin olmanız gerekir. Örnek yordamı kullanarak bu durumu çözmek için bir yol gösterir <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> özelliği.
 
  ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Excel bir eklenti içinde bulma yöntemi kullanabilir? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

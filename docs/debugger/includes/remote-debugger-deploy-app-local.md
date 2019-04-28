@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407779"
 ---
 1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Yayımla** (Web formları için **Web uygulaması yayımlama**).
 
@@ -43,7 +43,7 @@ ms.locfileid: "56723883"
 1. ASP.NET proje dizini Visual Studio bilgisayarı ASP.NET uygulaması için yapılandırılan yerel dizine kopyalayın (Bu örnekte, **C:\Publish**) Windows Server bilgisayarında. Bu öğreticide, el ile kopyalama ve PowerShell, Xcopy veya Robocopy gibi diğer araçları kullanabilirsiniz varsayıyoruz.
 
     > [!CAUTION]
-    >  Kod veya yeniden oluşturma için değişiklikler yapmanız gerekirse yeniden yayımlamanız ve bu adımı yineleyin. Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.    Bu alırsınız gerçekleştirmezseniz bir `cannot find or open the PDB file` Visual Studio'da hata ayıklama işlemini denediğinizde uyarı.
+    > Kod veya yeniden oluşturma için değişiklikler yapmanız gerekirse yeniden yayımlamanız ve bu adımı yineleyin. Yerel kaynak ve simgeler, uzak makineye kopyaladığınız yürütülebilir dosyanın tam olarak eşleşmelidir.    Bu alırsınız gerçekleştirmezseniz bir `cannot find or open the PDB file` Visual Studio'da hata ayıklama işlemini denediğinizde uyarı.
 
 1. Windows Server'da, uygulamanın doğru şekilde uygulamayı tarayıcınızda açarak çalıştırabildiğinizi doğrulayın.
 

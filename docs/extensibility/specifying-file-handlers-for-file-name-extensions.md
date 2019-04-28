@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434544"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Dosya Adı Uzantıları için Dosya İşleyicileri Belirtme
 Belirli bir dosya uzantısı olan bir dosya işler uygulamayı belirlemek için çeşitli yollarla vardır. OpenWithList ve OpenWithProgids fiilleri dosya uzantısı için kayıt defteri girdisinin altındaki dosya işleyicileri belirtmek için kullanabileceğiniz iki yöntemdir.
@@ -34,7 +34,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  Uygulamalar belirtilerek HKEY_CLASSES_ROOT\Applications altındaki listeden anahtarlarıdır.
+> Uygulamalar belirtilerek HKEY_CLASSES_ROOT\Applications altındaki listeden anahtarlarıdır.
 
  Bir OpenWithList anahtarı ekleyerek, başka bir uygulama uzantısı sahiplenir olsa bile, uygulamanızın bir dosya uzantısı desteklediğini bildirin. Bu, gelecek bir sürümünde uygulamanızı veya başka bir uygulama olabilir.
 
@@ -50,7 +50,7 @@ HKEY_CLASSES_ROOT\
  Tutulan Progid'ler değerleri olarak i HKEY_CLASSES_ROOT olarak ekleyerek belirli bir dosya uzantısı açmanız mümkün olan farklı uygulamaları kaydedebilir\\*\<uzantısı >* \OpenWithProgids anahtarı. Bu kayıt defteri anahtarı, dosya uzantısıyla ilişkili alternatif ProgIDs bir listesini içerir. Listelenen Progid'ler ile ilişkili uygulamalar görünür **birlikte Aç**_ürün adı_ alt. Aynı uygulama içinde her ikisi de belirtilirse `OpenWithList` ve `OpenWithProgids` yinelenen anahtarlar, işletim sistemi birleştirir.
 
 > [!NOTE]
->  `OpenWithProgids` Anahtarı yalnızca Windows XP'de desteklenir. Diğer işletim sistemlerinin bu anahtarı yok saymak için dosya işleyicileri için tek bir kayıt kullanmayın. Windows XP'de daha iyi bir kullanıcı deneyimi sağlamak için bu anahtarı kullanırsınız.
+> `OpenWithProgids` Anahtarı yalnızca Windows XP'de desteklenir. Diğer işletim sistemlerinin bu anahtarı yok saymak için dosya işleyicileri için tek bir kayıt kullanmayın. Windows XP'de daha iyi bir kullanıcı deneyimi sağlamak için bu anahtarı kullanırsınız.
 
  İstenen Progid'ler REG_NONE türünde bir değerler ekleyin. Aşağıdaki kod örneği ProgIDs bir dosya uzantısı için kaydetme sağlar (. *ext*).
 

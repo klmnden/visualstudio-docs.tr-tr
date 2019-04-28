@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435890"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Nasıl yapılır: Bir Visual Studio Uzantısını Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uz
 1. Visual Studio'da, güncelleştirmek istediğiniz uzantısı için çözümü açın. Değişiklikleri yapın.
 
     > [!IMPORTANT]
-    >  İmzalanmamış tüm kullanıcı uzantıları otomatik olarak güncelleştirilmesini değil. Her zaman uzantılarınızı imzalamanız gerekir.
+    > İmzalanmamış tüm kullanıcı uzantıları otomatik olarak güncelleştirilmesini değil. Her zaman uzantılarınızı imzalamanız gerekir.
 
 2. İçinde **Çözüm Gezgini**, source.extension.manifest açın.
 
@@ -60,7 +60,7 @@ Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uz
      Etkinleştirebilir veya alt kısmındaki güncelleştirmeleri için otomatik denetimini devre dışı bırakmak **güncelleştirmeleri** bölmesinde (**etkinleştir/devre dışı bırak mevcut güncelleştirmeleri otomatik olarak algılanmasını**), hangi değişikliklerin **denetle güncelleştirmeleri** ayarı **Araçlar / Seçenekler / ortam / Uzantılar ve güncelleştirmeler**.
 
     > [!NOTE]
-    >  Visual Studio 2015 güncelleştirme 2'de başlayarak, belirtebilirsiniz (içinde **Araçlar / Seçenekler / ortam / Uzantılar ve güncelleştirmeler**) kullanıcı başına uzantılar, tüm kullanıcı uzantıları veya hem de (varsayılan ayar) için Otomatik Güncelleştirmeler isteyip istemediğinizi.
+    > Visual Studio 2015 güncelleştirme 2'de başlayarak, belirtebilirsiniz (içinde **Araçlar / Seçenekler / ortam / Uzantılar ve güncelleştirmeler**) kullanıcı başına uzantılar, tüm kullanıcı uzantıları veya hem de (varsayılan ayar) için Otomatik Güncelleştirmeler isteyip istemediğinizi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md) [bulma ve Visual Studio uzantıları kullanma](../ide/finding-and-using-visual-studio-extensions.md)

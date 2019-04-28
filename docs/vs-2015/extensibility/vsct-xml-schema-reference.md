@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441471"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML Şeması Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğel
  Bir XML tabanlı komut tablosu (.vsct) yapılandırma dosyası tümleşik geliştirme ortamı (IDE) bir VSPackage sağlayan komut öğeleri tanımlar. Menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları bu öğeleri içerir.  
   
 > [!NOTE]
->  VSCT derleyici bir önişlemci .vsct dosyası üzerinde çalıştırabilirsiniz. Bu genellikle olduğundan C++ önişlemcisi tanımlayabileceğiniz içerir ve makroları, C++ dosyalarında kullanılan aynı söz dizimine sahip. Bu örnekler .vsct sağlanan dosya **yeni proje** sihirbaz VSPackage projesi oluşturur.  
+> VSCT derleyici bir önişlemci .vsct dosyası üzerinde çalıştırabilirsiniz. Bu genellikle olduğundan C++ önişlemcisi tanımlayabileceğiniz içerir ve makroları, C++ dosyalarında kullanılan aynı söz dizimine sahip. Bu örnekler .vsct sağlanan dosya **yeni proje** sihirbaz VSPackage projesi oluşturur.  
   
 ## <a name="optional-elements"></a>İsteğe bağlı öğeler  
- Bazı VSCT öğeler isteğe bağlıdır. Varsa bir `Parent` bağımsız değişkeni belirtilmezse, Group_Undefined:0 kapsanan. Varsa bir `Icon` bağımsız değişkeni belirtilmezse, guidOfficeIcon:msotcidNoIcon kapsanan. Bir kısayol tuşu tanımlandığında, genellikle kullanılmaz, öykünme isteğe bağlıdır.  
+ Bazı VSCT öğeler isteğe bağlıdır. Varsa bir `Parent` bağımsız değişken belirtilmezse, Group_Undefined:0 Kapsanan. Varsa bir `Icon` bağımsız değişkeni belirtilmezse, guidOfficeIcon:msotcidNoIcon kapsanan. Bir kısayol tuşu tanımlandığında, genellikle kullanılmaz, öykünme isteğe bağlıdır.  
   
  Bit eşlem öğeleri katıştırılmış derleme zamanında bit eşlem şeridinde konumunu belirterek `href` bağımsız değişken. Bit eşlem Şerit birleştirme sırasında kopyalanan yerine DLL kaynaklarından ayıklanan. Olduğunda bir `href` bağımsız değişkeni sağlanmışsa `usedList` bağımsız değişken isteğe bağlı olur ve tüm yuvalarda bit eşlem Şerit kullanılan olarak kabul edilir.  
   

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406757"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce güvenliği ve dağıtımı
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
@@ -75,13 +75,13 @@ ms.locfileid: "56612913"
  Uygulama kullanıcının eklenebilir **Başlat** menü ve **Program Ekle veya Kaldır** grubu **Denetim Masası**. Diğer dağıtım teknolojileri farklı olarak, hiçbir şey eklenir **Program dosyaları** klasör veya kayıt defteri ve yönetici hakları yok yüklemesi için gerekli
 
 > [!NOTE]
->  Uygulamanın eklenmesini önlemek mümkündür **Başlat** menü ve **Program Ekle veya Kaldır** grup, etkin bir Web uygulaması gibi davranır kolaylaştırır. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçin](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Uygulamanın eklenmesini önlemek mümkündür **Başlat** menü ve **Program Ekle veya Kaldır** grup, etkin bir Web uygulaması gibi davranır kolaylaştırır. Daha fazla bilgi için [ClickOnce dağıtım stratejisini seçin](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>ClickOnce uygulamaları güncelleştirme
  Uygulama geliştiricileri, uygulamanın güncelleştirilmiş sürümünü oluşturduğunuzda, bunlar yeni bir uygulama bildirimi oluşturmak ve bir dağıtım konuma dosyaları kopyalayın — genellikle bir kardeş klasör özgün uygulamanın dağıtım klasörü. Yönetici, dağıtım bildirimi, uygulamanın yeni sürümü konumunu işaret edecek şekilde güncelleştirir.
 
 > [!NOTE]
->  **Yayımlama Sihirbazı** Visual Studio'da bu adımları gerçekleştirmek için kullanılabilir.
+> **Yayımlama Sihirbazı** Visual Studio'da bu adımları gerçekleştirmek için kullanılabilir.
 
  Dağıtım konumu ek olarak, dağıtım bildirimini ayrıca burada uygulama için güncelleştirilmiş sürümleri denetler bir güncelleştirme konumu (Web sayfası veya ağ dosya paylaşımı) içerir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Yayımlama** özellikleri ne zaman ve ne sıklıkta uygulama güncelleştirmeleri denetlesin belirtmek için kullanılır. Güncelleştirme davranışı dağıtım bildiriminde belirtilebilir ve uygulamanın kullanıcı arabirimi yoluyla kullanıcı seçenekleri sunulabilir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API'leri. Ayrıca, **Yayımla** özellikleri işe güncelleştirmeleri zorunlu kılmak için veya önceki bir sürümüne geri almak için. Daha fazla bilgi için [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438712"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>İzlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama
   Bu yönerge, içerik denetimleri belge içinde depolanan XML verilerini Word için belge düzeyi özelleştirmesinde bağlamak nasıl gösterir.
@@ -85,7 +85,7 @@ ms.locfileid: "60041624"
 5. Şerit üzerinde **Geliştirici** sekmesi.
 
    > [!NOTE]
-   >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. İçinde **denetimleri** Grup öğesini **metin** düğmesi ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") bir eklemekiçin<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>ilk hücreye.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4016597d6c88cfe03ebf823e2fea17730b69562
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417449"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Nasıl yapılır: Sıralı İş Akışı Konsol Uygulamaları Oluşturma (Eski)
 Eski kullanarak bir sıralı iş akışı konsol uygulaması projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Eski kullanarak bir sıralı iş akışı konsol uygulaması projesi oluşturmak
 3. Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
   
     > [!NOTE]
-    >  Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
+    > Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
   
 4. İçinde **proje türleri** bölmesi, seçme Visual C# projeleri veya Visual Basic projeleri (altında **diğer diller**) ve ardından **iş akışı**.  
   

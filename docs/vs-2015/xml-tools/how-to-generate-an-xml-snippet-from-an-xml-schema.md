@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431010"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML Şemasından XML Kod Parçacığı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parça
  Bu bölümdeki adımlar, şema tarafından oluşturulan XML kod parçacığı özelliği XML Düzenleyicisi'nin kullanımını gösterir.  
   
 > [!NOTE]
->  Bu yordamlar başlatmadan önce şema dosyasını yerel bilgisayarınıza kaydedin.  
+> Bu yordamlar başlatmadan önce şema dosyasını yerel bilgisayarınıza kaydedin.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturun ve bir XML şeması ile ilişkilendirmek için  
   

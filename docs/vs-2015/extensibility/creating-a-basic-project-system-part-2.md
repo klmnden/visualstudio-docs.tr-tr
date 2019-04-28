@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435545"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje Sistemi Oluşturma, Bölüm 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
 - Proje özellik sayfası oluşturun.  
   
 > [!NOTE]
->  Bu kılavuzda açıklanan adımları bir C# projesini temel alıyor. Ancak, dosya adı uzantıları ve kod gibi özellikleri dışında bir Visual Basic projesi için aynı adımları kullanabilirsiniz.  
+> Bu kılavuzda açıklanan adımları bir C# projesini temel alıyor. Ancak, dosya adı uzantıları ve kod gibi özellikleri dışında bir Visual Basic projesi için aynı adımları kullanabilirsiniz.  
   
 ## <a name="creating-a-visual-studio-template"></a>Visual Studio şablon oluşturma  
  [1. bölüm bir temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md) temel proje şablonu oluşturma ve proje sisteme ekleme işlemi gösterilmektedir. Ayrıca bu şablonu kullanarak Visual Studio ile kaydetme işlemini gösterir <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> \Templates\Projects\SimpleProject\ klasörün tam yolunu sistem kayıt defterine yazma özniteliği.  
@@ -100,7 +100,7 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
 - \<ProjectType > öğesi içindeki proje türü adları **yeni proje** iletişim kutusu. Bu ad, proje adı parametresi ProvideProjectFactory özniteliğinin değiştirir.  
   
   > [!NOTE]
-  >  \<ProjectType > öğesi eşleşmelidir `LanguageVsTemplate` bağımsız değişkeni `ProvideProjectFactory` SimpleProjectPackage.cs dosya özniteliği.  
+  > \<ProjectType > öğesi eşleşmelidir `LanguageVsTemplate` bağımsız değişkeni `ProvideProjectFactory` SimpleProjectPackage.cs dosya özniteliği.  
   
   \<TemplateContent > bölümü, yeni bir proje oluşturulduğunda, oluşturulan bu dosyaları açıklar:  
   
@@ -115,7 +115,7 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
   Visual Studio şablon şeması öğeleri hakkında daha fazla bilgi için bkz: [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Bir projenin birden fazla Visual Studio şablon varsa, her ayrı bir klasöre şablonudur. Klasördeki her bir dosya olmalıdır **derleme eylemi** kümesine **ZipProject**.  
+> Bir projenin birden fazla Visual Studio şablon varsa, her ayrı bir klasöre şablonudur. Klasördeki her bir dosya olmalıdır **derleme eylemi** kümesine **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Bir Minimal .vsct dosyası ekleme  
  Visual Studio, yeni veya değiştirilmiş bir Visual Studio şablonu tanıyabilmesi için Kurulum modunda çalıştırılmalıdır. Kurulum modu .vsct dosyası mevcut olmasını gerektirir. Bu nedenle, en az .vsct dosyası projeye eklemeniz gerekir.  

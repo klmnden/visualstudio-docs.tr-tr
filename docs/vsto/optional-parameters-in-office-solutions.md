@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442411"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office çözümlerinde isteğe bağlı parametreler
   Çoğu Microsoft Office uygulamasının nesne modellerini yöntemlere, isteğe bağlı parametreleri kabul eder. Office çözümünü Visual Studio'da geliştirme için Visual Basic kullanıyorsanız, her eksik parametre için varsayılan değerleri otomatik olarak kullanıldığından isteğe bağlı parametreler için bir değer geçirmek zorunda değildir. Çoğu durumda, Visual C# projelerinde isteğe bağlı parametreler atlayabilirsiniz. Ancak, isteğe bağlı atlayamazsınız **ref** parametrelerinin `ThisDocument` belge düzeyi Word projelerinde sınıfı.
@@ -33,7 +33,7 @@ ms.locfileid: "56639277"
  Visual C# ve Visual Basic projelerinde isteğe bağlı parametreler ile çalışma hakkında daha fazla bilgi için bkz. [adlandırılmış ve isteğe bağlı bağımsız değişkenler &#40;C&#35; Programlama Kılavuzu&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) ve [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).
 
 > [!NOTE]
->  Visual Studio'nun önceki sürümlerini, Visual C# projelerinde isteğe bağlı her parametre için bir değer geçmesi gerekir. Kolaylık olması için bu projeleri adlı bir genel değişken dahil `missing` parametresinin varsayılan değeri kullanmak istediğinizde isteğe bağlı bir parametre geçirebilirsiniz. Visual Studio'da Office için Visual C# projeleri yine de dahil `missing` değişkeni, ancak genellikle zorunda kalmadan Office çözümleri geliştirirken kullanmak [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], isteğe bağlı olan yöntemleri olarak çağırdığınızda dışında **ref** parametrelerinde `ThisDocument` Word için belge düzeyi projelere sınıf.
+> Visual Studio'nun önceki sürümlerini, Visual C# projelerinde isteğe bağlı her parametre için bir değer geçmesi gerekir. Kolaylık olması için bu projeleri adlı bir genel değişken dahil `missing` parametresinin varsayılan değeri kullanmak istediğinizde isteğe bağlı bir parametre geçirebilirsiniz. Visual Studio'da Office için Visual C# projeleri yine de dahil `missing` değişkeni, ancak genellikle zorunda kalmadan Office çözümleri geliştirirken kullanmak [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], isteğe bağlı olan yöntemleri olarak çağırdığınızda dışında **ref** parametrelerinde `ThisDocument` Word için belge düzeyi projelere sınıf.
 
 ## <a name="example-in-excel"></a>Örnek Excel
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> Yöntemi birçok isteğe bağlı parametreye sahiptir. Bazı parametreler için değerleri belirtin ve aşağıdaki kod örneğinde gösterildiği gibi diğer varsayılan değerini kabul edebilirsiniz. Bu örnek, bir çalışma sayfası sınıf adlı bir belge düzeyi projesi gerektirir `Sheet1`.

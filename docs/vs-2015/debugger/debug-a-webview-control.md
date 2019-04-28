@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422079"
 ---
 # <a name="debug-a-webview-control"></a>WebView denetiminde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 4. (İsteğe bağlı) Visual Studio Express olmayan sürümleri, seçerek just-in-time (JIT) hata ayıklama devre dışı **Araçları**, **seçenekleri**, **hata ayıklama**, **Just-ın-Time**, ve JIT devre dışı bırakmak için betik hata ayıklama.  
   
     > [!NOTE]
-    >  JIT hata ayıklama devre dışı bırakarak, iletişim kutuları için bazı sayfalarında meydana gelen işlenmeyen özel durumları gizleyebilirsiniz. Visual Studio Express JIT hata ayıklama her zaman devre dışı bırakıldı.  
+    > JIT hata ayıklama devre dışı bırakarak, iletişim kutuları için bazı sayfalarında meydana gelen işlenmeyen özel durumları gizleyebilirsiniz. Visual Studio Express JIT hata ayıklama her zaman devre dışı bırakıldı.  
   
 5. Hata ayıklamayı başlatmak için F5 tuşuna basın.  
   
@@ -82,7 +82,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
      ![Hedef seçimi JavaScript konsol penceresinde](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  Konsolunu kullanarak, tek bir etkileşim kurabilir `WebView`, `iFrame`, paylaşmak sözleşme veya aynı anda çalışan web. Her öğesi, web platformu ana bilgisayarı (WWAHost.exe) ayrı bir örneğini gerektirir. Bir kerede bir ana bilgisayar ile etkileşim kurabilir.  
+    > Konsolunu kullanarak, tek bir etkileşim kurabilir `WebView`, `iFrame`, paylaşmak sözleşme veya aynı anda çalışan web. Her öğesi, web platformu ana bilgisayarı (WWAHost.exe) ayrı bir örneğini gerektirir. Bir kerede bir ana bilgisayar ile etkileşim kurabilir.  
   
 6. Görüntüleme ve uygulamanızda değişkenleri değiştirin ya da açıklandığı gibi konsol komutlarını kullanın [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md) ve [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md).  
   

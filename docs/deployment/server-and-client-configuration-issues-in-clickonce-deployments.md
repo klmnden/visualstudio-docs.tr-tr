@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406778"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce dağıtımlarında sunucu ve istemci yapılandırma sorunları
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınızın başarılı olmaz.
@@ -57,7 +57,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
  Şu anda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklemeler yalnızca dağıtım bildirimini URL, Internet Explorer'ı kullanarak açıldığında başlatılır. Yalnızca Internet Explorer varsayılan Web tarayıcısı ayarlanırsa URL'si Microsoft Office Outlook gibi başka bir uygulamadan başlatılan bir dağıtım başarılı bir şekilde başlatılır.
 
 > [!NOTE]
->  Mozilla Firefox, dağıtım sağlayıcısı boş veya Microsoft .NET Framework Assistant uzantı yüklü değilse desteklenir. Bu uzantı, .NET Framework 3.5 SP1 ile paketlenmiştir. XBAP desteği NPWPF eklentisi gerektiğinde etkinleştirilir.
+> Mozilla Firefox, dağıtım sağlayıcısı boş veya Microsoft .NET Framework Assistant uzantı yüklü değilse desteklenir. Bu uzantı, .NET Framework 3.5 SP1 ile paketlenmiştir. XBAP desteği NPWPF eklentisi gerektiğinde etkinleştirilir.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>ClickOnce uygulamaları tarayıcı betikler aracılığıyla etkinleştirme
  Geliştirilmiş başlatan özel bir Web sayfası, bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] etkin komut dosyası kullanarak uygulamanın uygulama bazı makinelerde başlatmaz bulabilirsiniz. Internet Explorer olarak adlandırılan bir ayar içeriyor **Dosya indirmeleri için otomatik olarak sor**, bu davranışı etkiler. Bu ayar, üzerinde kullanılabilir **güvenlik** sekmesinde kendi **seçenekleri** bu davranışı etkiler menüsü. Çağrıldığı **Dosya indirmeleri için otomatik olarak sor**, ve altında listelenen **indirir** kategorisi. Özellik kümesine **etkinleştirme** intranet Web sayfaları ve için varsayılan **devre dışı** Internet Web sayfaları için varsayılan olarak. Bu ayar ayarlandığında **devre dışı**, yapmaya etkinleştirmek bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama program aracılığıyla (örneğin, gerçekleşen tarafından `document.location` özelliği) engellenir. Bu durumda, kullanıcıların yalnızca kullanıcı tarafından başlatılan bir indirme aracılığıyla uygulamaları gibi uygulamanın URL'sine ayarlayın bir köprüyü tıklatarak başlatabilirsiniz.
@@ -75,7 +75,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 ```
 
 > [!NOTE]
->  Site için varsayılan kimlik bilgilerinizi dışında kimlik bilgileri ister ve tıkladığınız güvenlik iletişim kutusunda, NTLM (NT sınama-yanıt) kimlik doğrulaması yapabilir **Tamam** sorulduğunda sağlanan kaydetmek istiyorsanız sonraki oturumlarda kimlik bilgileri. Ancak, bu çözüm için temel kimlik doğrulaması çalışmaz.
+> Site için varsayılan kimlik bilgilerinizi dışında kimlik bilgileri ister ve tıkladığınız güvenlik iletişim kutusunda, NTLM (NT sınama-yanıt) kimlik doğrulaması yapabilir **Tamam** sorulduğunda sağlanan kaydetmek istiyorsanız sonraki oturumlarda kimlik bilgileri. Ancak, bu çözüm için temel kimlik doğrulaması çalışmaz.
 
 ## <a name="use-third-party-web-servers"></a>Üçüncü taraf Web sunucuları kullanın
  Dağıtıyorsanız bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması dışında bir IIS Web sunucusundan, sorun yaşayabilirsiniz sunucu anahtarı için hatalı içerik türü döndürmesi durumunda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimini ve uygulama bildirimi gibi dosyaları. Bu sorunu çözmek için Web sunucunuzun Yardım belgeleri sunucuya yeni içerik türlerini ekleyin ve tüm dosya adı uzantısı eşlemeler aşağıdaki tabloda listelenen emin hakkında mevcut olduğunu doğrulama bakın.

@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e901e5b34fb807a17cfc5143decc3a63b75194d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438013"
 ---
 # <a name="shell-command"></a>Kabuk Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  Önceden tanımlanmış bir diğer ad `Shell` yerine kullanılan `Tools.Shell`.  
   
 > [!CAUTION]
->  Varsa `path` bağımsız değişkeni, dosya adının yanı sıra dizin yolu sağlar, tüm yol adını değişmez değer tırnak içine alın ("" "), aşağıdaki gibi:  
+> Varsa `path` bağımsız değişkeni, dosya adının yanı sıra dizin yolu sağlar, tüm yol adını değişmez değer tırnak içine alın ("" "), aşağıdaki gibi:  
   
 ```  
 Tools.Shell """C:\Program Files\SomeFile.exe"""  
@@ -73,7 +73,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```  
   
 > [!CAUTION]
->  Yol dizesi değişmez değer tırnak işaretleri içine almayın varsa ("" "), Windows kadar ilk alanı yalnızca dize bölümünü kullanır. Örneğin, yukarıdaki yol dizesi düzgün alıntılanmadı değil, Windows "Program C:\ kök dizininde bulunan" adlı bir dosya için görünür. C:\Program.exe yürütülebilir dosya kullanılabileceğinden, hatta bir gerçekleşiyorsa kurcalama tarafından yüklü Windows istenen "c:\Program Files\SomeFile.exe" program yerine bu program yürütülmeye çalışıyordu.  
+> Yol dizesi değişmez değer tırnak işaretleri içine almayın varsa ("" "), Windows kadar ilk alanı yalnızca dize bölümünü kullanır. Örneğin, yukarıdaki yol dizesi düzgün alıntılanmadı değil, Windows "Program C:\ kök dizininde bulunan" adlı bir dosya için görünür. C:\Program.exe yürütülebilir dosya kullanılabileceğinden, hatta bir gerçekleşiyorsa kurcalama tarafından yüklü Windows istenen "c:\Program Files\SomeFile.exe" program yerine bu program yürütülmeye çalışıyordu.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki komut dosyasını kopyalamak için xcopy.exe kullanır `MyText.txt` içine `Text` klasör. Xcopy.exe çıktısı her ikisinde de görüntülenir **komut penceresi** ve **çıkış** penceresi.  

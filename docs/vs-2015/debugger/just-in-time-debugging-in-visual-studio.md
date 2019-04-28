@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431437"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio'da Tam Zamanında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 5. Kapat **Kayıt Defteri Düzenleyicisi'ni** penceresi.
 
 > [!NOTE]
->  Tam zamanında hata ayıklama için bir sunucu tarafı uygulama devre dışı bırakmaya çalıştığınız ve bu adımlar sorunu yok, IIS uygulama ayarlarında, sunucu tarafı hata ayıklamayı kapatmanız ve yeniden deneyin.
+> Tam zamanında hata ayıklama için bir sunucu tarafı uygulama devre dışı bırakmaya çalıştığınız ve bu adımlar sorunu yok, IIS uygulama ayarlarında, sunucu tarafı hata ayıklamayı kapatmanız ve yeniden deneyin.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Etkinleştirme Just-ın-Time hata ayıklama için bir Windows formu
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Çalışmak için bu yordamı sırayla bir [yayın Yapılandırması](../debugger/how-to-set-debug-and-release-configurations.md), devre dışı bırakmak gereksinim [yalnızca kendi kodum](../debugger/just-my-code.md). Visual Studio'da **Araçlar / Seçenekler**. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama**. Denetimden Kaldır **yalnızca benim kodumu etkinleştir**.
+> Çalışmak için bu yordamı sırayla bir [yayın Yapılandırması](../debugger/how-to-set-debug-and-release-configurations.md), devre dışı bırakmak gereksinim [yalnızca kendi kodum](../debugger/just-my-code.md). Visual Studio'da **Araçlar / Seçenekler**. İçinde **seçenekleri** iletişim kutusunda **hata ayıklama**. Denetimden Kaldır **yalnızca benim kodumu etkinleştir**.
 
  Çözümü derleyin (Visual Studio'da **derleme / zümü**). Hata ayıklama veya sürüm yapılandırmasını seçebilirsiniz. Derleme yapılandırmaları hakkında daha fazla bilgi için bkz. [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Tıklamayın **iptal**! Birkaç saniye sonra iki düğme görmelisiniz **hata ayıklama** ve **Programı Kapat**. Tıklayın **hata ayıklama**.
 
 > [!CAUTION]
->  Uygulamanızda güvenilmeyen kod varsa, bir güvenlik uyarısı iletişim kutusu görünür. Bu iletişim kutusu, hata ayıklamaya devam edip etmemeyi karar vermenize olanak sağlar. Hata ayıklamaya devam etmeden önce kodun güvenilir olup olmadığına karar verin. Size kodu kendiniz mi yazdınız? Kodlayıcıya güveniyor musunuz? Uygulama uzak makinede çalışıyorsa, işlemin adını hatırlar mısınız? Uygulamayı yerel olarak çalışıyor olsa bile, mutlaka güvenilir olabildiği anlamına gelmez. Bilgisayarınızda kötü amaçlı kod olasılığını göz önünde bulundurun. Kod üzeresiniz, karar verirseniz, güvenilir hata ayıklama, tıklayın **hata ayıklama**. ' A tıklayıp **hata ayıklama**.
+> Uygulamanızda güvenilmeyen kod varsa, bir güvenlik uyarısı iletişim kutusu görünür. Bu iletişim kutusu, hata ayıklamaya devam edip etmemeyi karar vermenize olanak sağlar. Hata ayıklamaya devam etmeden önce kodun güvenilir olup olmadığına karar verin. Size kodu kendiniz mi yazdınız? Kodlayıcıya güveniyor musunuz? Uygulama uzak makinede çalışıyorsa, işlemin adını hatırlar mısınız? Uygulamayı yerel olarak çalışıyor olsa bile, mutlaka güvenilir olabildiği anlamına gelmez. Bilgisayarınızda kötü amaçlı kod olasılığını göz önünde bulundurun. Kod üzeresiniz, karar verirseniz, güvenilir hata ayıklama, tıklayın **hata ayıklama**. ' A tıklayıp **hata ayıklama**.
 
  **Visual Studio anlık hata ayıklayıcısı** penceresi görüntülenir:
 

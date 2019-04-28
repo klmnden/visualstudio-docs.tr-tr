@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433937"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Verilen metni kullanılabilir, ancak karakterleri sağlamaz yardımcı bildirir.  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  Varsayılır tek bir çağrı `IDebugDocumentText::GetText` karakter birden çok çağrı alabilirsiniz `AddDeferredText`. Yardımcı sınıfları da birden çok kez aynı ertelenmiş karakter aralığının isteyebilir.  
   
 > [!NOTE]
->  Çağrılar `AddDeferredText` çağrılarıyla karma olmayan `AddUnicodeText` veya `AddDBCSText`. Bu meydana gelirse, `E_FAIL` döndürülür.  
+> Çağrılar `AddDeferredText` çağrılarıyla karma olmayan `AddUnicodeText` veya `AddDBCSText`. Bu meydana gelirse, `E_FAIL` döndürülür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idebugdocumenthelper arabirimi](../../winscript/reference/idebugdocumenthelper-interface.md)   

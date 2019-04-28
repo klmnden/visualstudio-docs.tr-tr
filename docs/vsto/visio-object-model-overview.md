@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438766"
 ---
 # <a name="visio-object-model-overview"></a>Visio nesne modeline genel bakış
   Office çözümleri geliştirmek için Microsoft Office Visio için Visio nesne modeli ile etkileşim kurabilir. Bu nesne modeli sınıfları ve arabirimleri Visio için birincil birlikte çalışma derlemesi olarak sağlanır ve tanımlanan oluşur `Microsoft.Office.Interop.Visio` ad alanı.
@@ -67,7 +67,7 @@ ms.locfileid: "60096562"
  Tüm nesnelerin ve üyelerin VBA nesne modeli başvurusu türlerine ve üyelerine Visio birincil birlikte çalışma derlemesi (PIA) karşılık gelir. Örneğin, `Document` VBA nesne modeli başvurusu nesnesinde Visio PIA Microsoft.Office.Interop.Visio.Document türü karşılık gelir. VBA nesne modeli başvurusu çoğu özellikleri, yöntemleri ve olayları için kod örnekleri sağlasa da bu başvuru Visual Basic veya Visual VBA kodu çevir C# bunları kullanarak oluşturduğunuz bir Visio VSTO eklenti projesinde kullanmak istiyorsanız Visual Studio.
 
 > [!NOTE]
->  Şu anda Visio birincil birlikte çalışma derlemesi için başvuru belgeleri yoktur.
+> Şu anda Visio birincil birlikte çalışma derlemesi için başvuru belgeleri yoktur.
 
  İlgili kod örnekleri ve Visio çözümleri oluşturmak için ek araçlar için bkz: [Visio 2010 Yazılım Geliştirme Seti](http://go.microsoft.com/fwlink/?LinkId=196501).
 

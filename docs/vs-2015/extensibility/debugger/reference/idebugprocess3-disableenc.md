@@ -12,12 +12,12 @@ ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4dcbcd49ea834dcc432382efad4cc31d842bb61a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0db9eb44b8074a5c5e3b35a5a5dadcf04f37fb2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405730"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ HRESULT DisableENC(
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.  
   
 > [!NOTE]
->  Özel bağlantı noktası sağlayıcısı her zaman döndürmelidir `E_NOTIMPL`.  
+> Özel bağlantı noktası sağlayıcısı her zaman döndürmelidir `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Düzenleme ve devam et için bir işlemi devre dışı bırakıldı, bu işlem yalnızca yeniden başlatarak yeniden etkinleştirilebilir.  

@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684afac90741bbac56a0fc295c21c96a2001859e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424939"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[vsindigo](..
      ![WCF hizmet kitaplığı projesi](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
-    >  Bu, test ve erişilen bir çalışma hizmet oluşturur. Aşağıdaki iki adımı farklı bir veri türü kullanılacak varsayılan yöntemini nasıl değişiklik yapabileceğiniz gösterir. Gerçek bir uygulamada hizmete kendi işlevlerinizi eklersiniz.  
+    > Bu, test ve erişilen bir çalışma hizmet oluşturur. Aşağıdaki iki adımı farklı bir veri türü kullanılacak varsayılan yöntemini nasıl değişiklik yapabileceğiniz gösterir. Gerçek bir uygulamada hizmete kendi işlevlerinizi eklersiniz.  
   
 3. ![Iservice1 dosya](../data-tools/media/wcf2.png "wcf2")  
   

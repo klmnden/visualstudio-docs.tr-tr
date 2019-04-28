@@ -1,5 +1,5 @@
 ---
-title: Kod Çözümleme Uygulama Hataları
+title: Kod Analiz Uygulama Hataları
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,13 +15,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422753"
 ---
-# <a name="code-analysis-application-errors"></a>Kod Çözümleme Uygulama Hataları
+# <a name="code-analysis-application-errors"></a>Kod Analiz Uygulama Hataları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Bu bölüm, yönetilen kod analizi aracı tarafından oluşturulan hata iletileri bir başvurudur. Belirli hata iletileri için Yardım almak için hata numarası yazın **Ara** dizinde kutusu.
 

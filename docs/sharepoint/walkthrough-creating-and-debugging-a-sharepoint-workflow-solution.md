@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430358"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama
   Bu izlenecek yol, temel sıralı iş akışı şablonunun nasıl oluşturulacağını gösterir. İş akışı, bir belgeyi gözden olup olmadığını belirlemek için paylaşılan belge kitaplığı özelliğini denetler. Belgeyi gözden, iş akışı tamamlanır.
@@ -35,9 +35,9 @@ ms.locfileid: "60109562"
 - İşleme iş akışı etkinlik olayları.
 
 > [!NOTE]
->  Bu kılavuzda bir sıralı iş akışı projesi kullansa da, bir Durum makinesi iş akışı projesi için işlem aynıdır.
+> Bu kılavuzda bir sıralı iş akışı projesi kullansa da, bir Durum makinesi iş akışı projesi için işlem aynıdır.
 >
->  Ayrıca, bilgisayarınız Visual Studio kullanıcı bazıları için farklı adlar veya konumlar arabirimi öğeleri aşağıdaki yönergelerde yer gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Ayrıca, bilgisayarınız Visual Studio kullanıcı bazıları için farklı adlar veya konumlar arabirimi öğeleri aşağıdaki yönergelerde yer gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:

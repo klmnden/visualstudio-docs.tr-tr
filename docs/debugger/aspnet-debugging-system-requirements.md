@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ed4c8fc4129c4e21123d359a088f6eac5cfca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402707"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hata ayıklama senaryoları:
@@ -49,7 +49,7 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
  Değiştirirseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kendi kullanıcı hesabı altında çalışacak şekilde çalışan işlemi IIS çalıştıran sunucuda yönetici olmanız gerekmez.
 
 > [!CAUTION]
->  Değiştirmeden önce [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.
+> Değiştirmeden önce [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441629"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML dosyalarını düzenleyerek kod haritalarını özelleştirme
 
@@ -117,7 +117,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 - Kod öğeleri ve belirli koşullara göre bağlantı grupları
 
 > [!TIP]
->  Stilleri birçok kod öğeleri veya bağlantı arasında tekrarlanan varsa, bu kod öğeleri veya bağlantılara bir kategoriyi uygulama ve ardından bu kategoriye bir stil uygulamadan düşünebilirsiniz. Daha fazla bilgi için [kod öğeleri ve bağlantılara kategori atama](#AssignCategories) ve [kod öğeleri ve bağlantılara özellikler atama](#AssignProperties).
+> Stilleri birçok kod öğeleri veya bağlantı arasında tekrarlanan varsa, bu kod öğeleri veya bağlantılara bir kategoriyi uygulama ve ardından bu kategoriye bir stil uygulamadan düşünebilirsiniz. Daha fazla bilgi için [kod öğeleri ve bağlantılara kategori atama](#AssignCategories) ve [kod öğeleri ve bağlantılara özellikler atama](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Bir tek bir kod öğesi için özel bir stil uygulamak için
 
@@ -555,7 +555,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
  Belgeler veya URL'ler için kod öğeleri veya bağlantılara haritanın .dgml dosyasını düzenleyerek ve ekleyerek bağlayabilirsiniz bir `Reference` özniteliğini `<Node/>` öğesi için bir kod öğesi veya `<Link/>` bağlantısını için öğesi. Ardından, açın ve kod öğesi veya bağlantı bu içeriği görüntüleme. `Reference` Özniteliği o içeriğin yolunu belirtir. Bu, .dgml dosya konumu veya mutlak yol ile göreli bir yol olabilir.
 
 > [!CAUTION]
->  Göreli yollar kullanıyorsanız ve .dgml dosyası farklı bir konuma taşınırsa, bu yollar artık çözümlenmez. Bağlantılı içeriği açmaya ve görüntülemeye çalıştığınızda, içeriğin görüntülenemediğini bildiren bir hata ortaya çıkar.
+> Göreli yollar kullanıyorsanız ve .dgml dosyası farklı bir konuma taşınırsa, bu yollar artık çözümlenmez. Bağlantılı içeriği açmaya ve görüntülemeye çalıştığınızda, içeriğin görüntülenemediğini bildiren bir hata ortaya çıkar.
 
  Örneğin, aşağıdaki kod öğeleri bağlamak isteyebilirsiniz:
 
@@ -580,7 +580,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
    - İçinde `<Node/>` veya `<Link/>` öğe, Ekle bir `Reference` kod öğesinin konumunu belirtmek için özniteliği.
 
      > [!NOTE]
-     >  Tek sahip `Reference` öğe başına özniteliği.
+     > Tek sahip `Reference` öğe başına özniteliği.
 
      Örneğin:
 

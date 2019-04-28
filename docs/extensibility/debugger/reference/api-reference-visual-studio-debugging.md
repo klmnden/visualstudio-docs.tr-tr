@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b61cb7f3f5d739a80a0ce18ba62baa92aed48319
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414165"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API Başvurusu (Visual Studio Hata Ayıklama)
 Başvuru bölümünde, API, sözdizimi ve kullanımı için tüm API öğeleri gösteren bir kılavuz kavramsal bir genel bakış ve kod örnekleri kaynaklardan içerir. Tüm başvurular, kategoriye göre alfabetik olarak listelenir.
@@ -37,10 +37,10 @@ Başvuru bölümünde, API, sözdizimi ve kullanımı için tüm API öğeleri g
 |E_ACCESSDENIED|Genel erişim reddedildi hatası.|0x80070005|
 
 > [!NOTE]
->  Olduğunda bir [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] yöntemi hata ayıklama döndürür `S_OK`, varsayılır parametresi işaretçiler geçerli olan her şeyi, diğer bir deyişle, doğrulama üzerinde parametresi işaretçileri yürütülür, `S_OK` döndürülür.
+> Olduğunda bir [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] yöntemi hata ayıklama döndürür `S_OK`, varsayılır parametresi işaretçiler geçerli olan her şeyi, diğer bir deyişle, doğrulama üzerinde parametresi işaretçileri yürütülür, `S_OK` döndürülür.
 >
 > [!NOTE]
->  Geçersiz veya `NULL` [out] parametreleri IDE'nin kilitlenmesine neden.
+> Geçersiz veya `NULL` [out] parametreleri IDE'nin kilitlenmesine neden.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Arabirimler](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

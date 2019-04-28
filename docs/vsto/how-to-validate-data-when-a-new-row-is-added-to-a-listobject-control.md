@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420948"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Nasıl yapılır: ListObject denetimine yeni bir satır eklendiğinde verileri doğrulama
   Kullanıcı için yeni satır ekleme bir <xref:Microsoft.Office.Tools.Excel.ListObject> veriye bağlı denetim. Veri kaynağına değişiklikler yapmadan önce kullanıcının verileri doğrulayabilirsiniz.
@@ -30,7 +30,7 @@ ms.locfileid: "60039317"
  Her bir satır eklendiğinde bir <xref:Microsoft.Office.Tools.Excel.ListObject> verilere bağlı <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> olayı oluşturulur. Veri doğrulama gerçekleştirmek için bu olay işleyebilir. Örneğin, uygulamanız yalnızca çalışanlar 18 yaş ve 65 arasında veri kaynağına eklenebilir gerektiriyorsa, satır eklenmeden önce girilen yaş, aralığa denk gelen doğrulayın.
 
 > [!NOTE]
->  Her zaman, sunucunun istemci yanı sıra kullanıcı girdisi denetlemeniz gerekir. Daha fazla bilgi için [güvenli istemci uygulamaları](/dotnet/framework/data/adonet/secure-client-applications).
+> Her zaman, sunucunun istemci yanı sıra kullanıcı girdisi denetlemeniz gerekir. Daha fazla bilgi için [güvenli istemci uygulamaları](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Veri ListObject denetimine yeni bir satır verileri doğrulamak için eklendi
 

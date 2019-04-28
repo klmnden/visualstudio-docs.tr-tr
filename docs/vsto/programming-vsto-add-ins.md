@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425842"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO eklentilerini programlama
   Bir VSTO eklentisi oluşturma tarafından bir Microsoft Office uygulamasının genişlettiğinizde, karşı doğrudan kod yazma `ThisAddIn` projenizdeki sınıfı. Bu sınıf, Microsoft Office konak uygulamanın nesne modeline erişme, uygulamanın kullanıcı arabirimini (UI) özelleştirmek ve diğer Office çözümleri için VSTO eklenti içinde nesnelerini kullanıma sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.
@@ -54,7 +54,7 @@ ms.locfileid: "60079025"
  İki varsayılan olay işleyicileri vardır `ThisAddIn` sınıfı. VSTO Eklenti yüklendiğinde kodu çalıştırmak için kod ekleyin. `ThisAddIn_Startup` olay işleyicisi. VSTO eklentisi kaldırılmadan hemen önce kodu çalıştırmak için kod ekleyin. `ThisAddIn_Shutdown` olay işleyicisi. Bu olay işleyicileri hakkında daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  Outlook'ta, varsayılan olarak `ThisAddIn_Shutdown` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
+> Outlook'ta, varsayılan olarak `ThisAddIn_Shutdown` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Konak uygulamanın nesne modeline erişme
  Konak uygulamanın nesne modeli erişmek için `Application` alanını `ThisAddIn` sınıfı. Bu alan, ana uygulamanın geçerli örneğini temsil eden bir nesne döndürür. Aşağıdaki tablo, dönüş değeri türünü listeler `Application` her VSTO eklenti projesinde alan.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438586"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>İzlenecek yol: Bir Windows formu kullanarak veri toplama
   Bu izlenecek yol, bir Windows Form Microsoft Office Excel için belge düzeyi özelleştirmesinde açın, kullanıcıdan bilgi toplar ve bu bilgileri çalışma sayfası hücresine yazma gösterilmektedir.
@@ -37,7 +37,7 @@ ms.locfileid: "60116140"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
  İlk adım, bir Excel çalışma kitabı projesi oluşturmaktır.
@@ -91,7 +91,7 @@ ms.locfileid: "60116140"
 2. İçinde <xref:Microsoft.Office.Tools.Excel.Workbook.Open> olay işleyicisine `ThisWorkbook`, form için bir değişken bildirmek için aşağıdaki kodu ekleyin `GetInputString` ve formu gösterin.
 
    > [!NOTE]
-   >  C# içinde bir olay işleyicisi gösterildiği eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> aşağıdaki olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > C# içinde bir olay işleyicisi gösterildiği eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> aşağıdaki olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]

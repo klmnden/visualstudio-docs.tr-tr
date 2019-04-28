@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438498"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Word için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin belgeler açık olduğu bağımsız olarak kullanılabilir.
@@ -83,7 +83,7 @@ ms.locfileid: "60079298"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Bu kod, ilk paragrafa erişmek için bir dizin değeri 1 kullanır. <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> koleksiyonu. Visual Basic ve Visual C#, 0 tabanlı diziler kullanmasına karşın, birçok koleksiyonun Word nesne modelinde alt dizi sınırları 1'dir. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
+   > Bu kod, ilk paragrafa erişmek için bir dizin değeri 1 kullanır. <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> koleksiyonu. Visual Basic ve Visual C#, 0 tabanlı diziler kullanmasına karşın, birçok koleksiyonun Word nesne modelinde alt dizi sınırları 1'dir. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
 
 2. C# kullanıyorsanız, aşağıdaki gerekli kodu eklemek `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanmak için kullanılan `Application_DocumentBeforeSave` olay işleyicisi ile <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olay.
 

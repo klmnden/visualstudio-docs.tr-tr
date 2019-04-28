@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442887"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Nasıl yapılır: El ile bir uzantı (VSIX dağıtımı) paketi
 Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dağıtım için uzantısı. Paketi oluşturmak için üç yolu vardır:  
@@ -29,7 +29,7 @@ Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprv
  El ile bir uzantı paketini için extension.manifest dosya ve uzantı projesini bir [Content_Types] .xml dosyasına koymak bunları derleme çıkışınızı birlikte sıkıştırılmış bir dosya ekleyin ve böylece bir .vsix dosya adı uzantısına sahip sıkıştırılmış dosyayı yeniden adlandırın. Paketlenmiş uzantı tarafından desteklenen bir türde olmalıdır [VSIX şema](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
->  VSIX paketlerini dosyaların adları boşluk içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> VSIX paketlerini dosyaların adları boşluk içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>El ile bir VSIX paketi oluşturmak için  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432581"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Gelişmiş**|Gelişmiş komutları ve seçenekleri içerir.<br /><br /> **Dışarı aktarma**: Gölgelendirici çeşitli biçimlerde verilmesini sağlar.<br /><br /> **Dışarı Aktar**: Gölgelendirici ya da HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarır. Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik motorları**: Tasarım yüzeyinde görüntülemek için kullanılan Oluşturucu seçimini etkinleştirir.<br /><br /> **D3d11 ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 kullanır.<br /><br /> **D3d11warp ile işle**: Gölgelendirici Tasarımcısı tasarım yüzeyini işlemek için Direct3D 11 Windows Gelişmiş Pikselleştirme Platformu'nu (WARP) kullanır.<br /><br /> **Görünüm**: Gölgelendirici Tasarımcısı hakkında ek bilgi sağlar.<br /><br /> **Kare hızı**: Etkin olduğunda, tasarım yüzeyinin sağ üst köşesinde bulunan geçerli kare hızını görüntüler. Kare hızı, saniye başına çizilen çerçeve sayısıdır.  Bu seçenek, etkinleştirdiğinizde kullanışlıdır **gerçek zamanlı işleme modu** seçeneği.|  
   
 > [!TIP]
->  Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.  
+> Seçebileceğiniz **Gelişmiş** düğmesine son komutu yeniden çalıştırın.  
   
 ### <a name="working-with-nodes-and-connections"></a>Düğümler ve bağlantılar ile çalışma  
  Kullanım **seçin** eklemek, kaldırmak, yeniden konumlandırma, bağlanma ve düğümleri yapılandırmak için modu. Bu temel işlemleri gerçekleştirmek nasıl aşağıda verilmiştir:  

@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442801"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Oluşturma ve Visual Studio'da bir Store uygulaması için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086773"
 Visual Studio 2012 Express Windows 8 için birim testi araçları, geliştiricilerin ve birim testi içinde yazılım geliştirme yöntemleri bünyesine ekipleri desteklemek üzere tasarlanmıştır. Birim testleri, geliştiricilere Visual C#, Visual Basic ve Visual C++ projelerindeki sınıfların yöntemlerinde mantık hataları aramak için verimli ve sürdürülebilir bir yol verin.
 
 > [!NOTE]
->  Bu bölümdeki konular, Visual Studio 2012 Express Windows 8 için işlevselliğini açıklar. Visual Studio Ultimate, VS Premium ve Professional VS birim testi için ek özellikler sağlar.
+> Bu bölümdeki konular, Visual Studio 2012 Express Windows 8 için işlevselliğini açıklar. Visual Studio Ultimate, VS Premium ve Professional VS birim testi için ek özellikler sağlar.
 >
 > - VS Ultimate, Premium VS ve VS Professional içinde bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanabilirsiniz. Ayrıca, analiz ve testlerinizi ile VS Ultimate ve VS Premium için kod kapsamı bilgileri görüntüleyebilirsiniz.
 >   - VS Ultimate içinde testlerinizi her yapıdan sonra çalıştırabilirsiniz. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.

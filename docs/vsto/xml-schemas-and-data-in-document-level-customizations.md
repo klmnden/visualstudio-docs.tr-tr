@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421688"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML şemaları ve belge düzeyi özelleştirmelerdeki veriler
   **Önemli** Microsoft Word ile ilgili bu konu kümesindeki bilgileri avantajı ve kişiler ve kimin bulunur Amerika Birleşik Devletleri ve kendi bölgeler dışında veya servis kullanan kuruluşlar için özel olarak sunulan veya geliştirme üzerinde çalışan programlar Ocak Microsoft uygulaması belirli işlevlerin ne zaman kaldırıldı 2010'dan önce Microsoft lisanslı Microsoft Word ürünler, Microsoft Word için özel XML ilgili. Bu bilgileri Microsoft Word ile ilgili değil okuma veya kişi ve kuruluşların Amerika Birleşik Devletleri ya da kullanarak veya Microsoft tarafından 10 Ocak 2010'dan sonra lisansına sahip Microsoft Word ürünleri üzerinde çalışan programlar geliştirme alt bölgeleri tarafından kullanılan ; Bu ürünlerin bu tarihten önce lisanslı veya satın alınan ve Amerika Birleşik Devletleri dışında kullanım için lisanslı ürünleri aynı davranmaz.
@@ -33,7 +33,7 @@ ms.locfileid: "60117935"
  Visual Studio kullanıma sunan bir programlama modeli denetimlerinde olarak belge düzeyi özelleştirmeleri şeması öğeleri eşlendi. Excel için Visual Studio, veritabanları, Web Hizmetleri ve nesneleri verilere denetimler bağlama için destek ekler. Word ve Excel için Visual Studio şema eşlenmiş bir belgeyle çözümleriniz için bir Gelişmiş son kullanıcı deneyimi oluşturmak için kullanılabilen eylemler bölmesi için destek ekler. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  Excel çözümleri, çok bölümlü XML şemaları kullanamazsınız.
+> Excel çözümleri, çok bölümlü XML şemaları kullanamazsınız.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Excel çalışma kitaplarına şemaları eklendiğinde oluşturulan nesneleri
  Bir çalışma kitabına bir şema eklediğinizde, Visual Studio otomatik olarak birkaç nesnesi oluşturur ve bunları projenize ekler. Excel tarafından yönetildiği bu nesneler, Visual Studio araçları kullanarak silinmemelidir. Silmek için çalışma sayfasından eşlenmiş öğeleri kaldırma veya Excel araçlarını kullanarak şema ayırma.
@@ -52,13 +52,13 @@ ms.locfileid: "60117935"
 - BindingSource. Oluştururken bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> çalışma için yinelenmeyen bir şema öğesine eşleyerek bir <xref:System.Windows.Forms.BindingSource> oluşturulur ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimin bağlı <xref:System.Windows.Forms.BindingSource>. Bağlamalısınız <xref:System.Windows.Forms.BindingSource> belirlenmiş örneği gibi bir belge için eşlenen şemaya uyan veri kaynağının bir örneği için <xref:System.Data.DataSet> oluşturulan sınıf. Bağlama ayarlayarak oluşturma <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> sunulan özellikler **özellikleri** penceresi.
 
     > [!NOTE]
-    >  <xref:System.Windows.Forms.BindingSource> İçin oluşturulmamış <xref:Microsoft.Office.Tools.Excel.ListObject> nesneleri. El ile bağlamanız gerekir <xref:Microsoft.Office.Tools.Excel.ListObject> ayarlayarak veri kaynağına <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> özelliklerinde **özellikleri** penceresi.
+    > <xref:System.Windows.Forms.BindingSource> İçin oluşturulmamış <xref:Microsoft.Office.Tools.Excel.ListObject> nesneleri. El ile bağlamanız gerekir <xref:Microsoft.Office.Tools.Excel.ListObject> ayarlayarak veri kaynağına <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> özelliklerinde **özellikleri** penceresi.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office şemaları ve Visual Studio veri kaynakları penceresi eşlenmiş.
  Her iki eşlenen şema işlevselliğini Office ve Visual Studio **veri kaynakları** penceresi, raporlama veya düzenlemek için Excel çalışma sayfasındaki veri sunmanıza yardımcı olabilir. Her iki durumda da Excel çalışma sayfasına veri öğelerini sürükleyebilirsiniz. Her iki yöntem üzerinden veriye olan denetimler oluşturma bir <xref:System.Windows.Forms.BindingSource> gibi bir veri kaynağına bir <xref:System.Data.DataSet> veya bir web hizmeti.
 
 > [!NOTE]
->  Bir çalışma sayfasına yinelenen bir şema öğesine eşlediğinizde, Visual Studio oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Otomatik olarak verilerine bağlı <xref:System.Windows.Forms.BindingSource>. El ile bağlamanız gerekir <xref:Microsoft.Office.Tools.Excel.ListObject> ayarlayarak veri kaynağına <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> özelliklerinde **özellikleri** penceresi.
+> Bir çalışma sayfasına yinelenen bir şema öğesine eşlediğinizde, Visual Studio oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Otomatik olarak verilerine bağlı <xref:System.Windows.Forms.BindingSource>. El ile bağlamanız gerekir <xref:Microsoft.Office.Tools.Excel.ListObject> ayarlayarak veri kaynağına <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> özelliklerinde **özellikleri** penceresi.
 
  Aşağıdaki tabloda bazı iki yöntem arasındaki farklar gösterilmektedir.
 

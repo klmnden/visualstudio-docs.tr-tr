@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439800"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Dil Hizmeti ve Düzenleyici Uzantı Noktaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Dosya adı uzantısına sahip bir içerik türüyle ilişkilendirmek için kullanmak <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.  
   
 > [!NOTE]
->  Visual Studio'da dosya adı uzantılarını kullanarak kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> dil hizmeti paketi üzerinde. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF içerik türü, bu şekilde kayıtlı bir dosya adı uzantısı ile ilişkilendirir.  
+> Visual Studio'da dosya adı uzantılarını kullanarak kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> dil hizmeti paketi üzerinde. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF içerik türü, bu şekilde kayıtlı bir dosya adı uzantısı ile ilişkilendirir.  
   
  Dosya adı uzantısı içerik türü tanımını dışarı aktarmak için öznitelikleri şunlardır:  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: bir kenarlığı ile ilişkili.  
   
   > [!NOTE]
-  >  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
+  > Bir örneği bir <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, HighlightWordTag tanımında bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: genişletilmiş veya daraltılmış anahat içinde bölge ile ilişkilendirilmiş.  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Bu biçim tanımı için bir etiket uygulamak için ayarladığınız (görünen adı değil) sınıfın ad özniteliği adı başvuru.  
   
 > [!NOTE]
->  Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
+> Bir örneği bir <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition bkz [izlenecek yol: Metin vurgulama](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Kenarlıklar genişletme  
  Kenarlıklar ya da bir metin görünümünde görüntülenen metin eklenebilir veya metnin kendisini görüntülemek görsel efektler tanımlayın. Her tür kendi kenarlığı tanımlayabilirsiniz <xref:System.Windows.UIElement>.  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Ayrıca, aynı türden bir sağlayıcı uygulamanız gerekir:  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> sunulmasıyla kullanım dışı <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Sağlayıcı aşağıdaki öznitelikleri ile birlikte dışarı aktarmanız gerekir:  
   
@@ -551,11 +551,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  IntelliSense kaynakları uygulama hakkında daha fazla bilgi için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [İzlenecek yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [İzlenecek yol: İmza yardımını görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
+ [İzlenecek yol: İmza Yardımını Görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [İzlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [İzlenecek yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>Bir IntelliSense denetleyicisi uygulama  
  Bir denetleyici özelleştirmek için uygulamanız gereken <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> arabirimi. Ayrıca, aşağıdaki öznitelikleri ile birlikte bir denetleyici sağlayıcısı uygulamanız gerekir:  
@@ -578,4 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  IntelliSense denetleyicileri kullanma hakkında daha fazla bilgi için aşağıdaki izlenecek yollara bakın:  
   
- [İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [İzlenecek yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

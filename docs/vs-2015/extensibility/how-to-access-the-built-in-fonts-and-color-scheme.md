@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430918"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Nasıl yapılır: Yerleşik yazı tipi ve renk şeması erişim
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
     Bir kategoriyi benzersiz olarak tanımlanabilmesi için kullanılan bu GUID<strong>.</strong> Bu kategori, IDE'nin varsayılan yazı tipleri ve renkler belirtimi kullanır.  
   
    > [!NOTE]
-   >  Yazı tipi ve renk verilerle alınırken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> veya diğer arabirimleri VSPackages yerleşik bilgi başvurmak için bu GUID kullanın.  
+   > Yazı tipi ve renk verilerle alınırken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> veya diğer arabirimleri VSPackages yerleşik bilgi başvurmak için bu GUID kullanın.  
   
 2. Kategori adı, böylece IDE'de görüntülendiğinde gerektiğinde yerelleştirilebilen VSPackage'nın kaynakları (.rc) dosyasında bir dize tablosu eklenmelidir.  
   

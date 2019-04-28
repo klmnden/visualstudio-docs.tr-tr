@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414819"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 Visual Studio Görselleştirme ve modelleme SDK'sı ile oluşturulan bir etki alanına özgü dil (DSL), kullanıcı kopyalar ve öğeleri yapıştırır ne olur değiştirebilirsiniz.
@@ -232,7 +232,7 @@ Bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/
  Birçok yönden bir DSL'nin davranış kopyalama, yapıştırma, oluşturma ve nesnelerin silinmesi ile ilgili bir örneği tarafından yönetilir <xref:Microsoft.VisualStudio.Modeling.ElementOperations> diyagrama eşleşmiş. Kendi sınıftan türetme tarafından DSL'NİZİN davranışı değiştirebilirsiniz <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ve geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> diyagram sınıfınızın özelliği.
 
 > [!TIP]
->  Program kodu kullanarak model özelleştirme hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Program kodu kullanarak model özelleştirme hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Kopyalama işlemi için sıralı diyagram](../modeling/media/dslcopyseqdiagram.png)
 

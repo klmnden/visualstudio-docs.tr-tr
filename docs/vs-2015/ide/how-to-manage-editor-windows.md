@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430505"
 ---
 # <a name="how-to-manage-editor-windows"></a>Nasıl yapılır: Düzenleyici Windows yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089932"
 Çeşitli konumlarda kod üzerinde aynı anda çalışabilirsiniz. Bir düzenleyici penceresi bölme ya da birden çok örneği Düzenleyici pencerelerini açarak bunu.  
   
 > [!NOTE]
->  Tüm Düzenleyici pencerelerini birden çok örneği destekler.  
+> Tüm Düzenleyici pencerelerini birden çok örneği destekler.  
   
 ## <a name="splitting-an-editor-window"></a>Bir düzenleyici penceresi bölme  
  Bir düzenleyici penceresi örneği daha kolay düzenlemek için iki ayrı görünümler bölünebilir.  
@@ -41,7 +41,7 @@ ms.locfileid: "60089932"
      Bir ayırıcı çubukla ayırarak iki bölme düzenleme alanı ayırır. Bağımsız olarak görüntüleyin ve aynı anda farklı kısımlarını etkin belgeyi düzenlemek için bu bölmeleri gezinebilirsiniz. Bir bölmede yapılan değişiklikler diğer yansıtılır.  
   
     > [!TIP]
-    >  Bir bölme diğerinden daha büyük hale getirmek için bölme çubuğunu yukarı veya aşağı sürükleyin.  
+    > Bir bölme diğerinden daha büyük hale getirmek için bölme çubuğunu yukarı veya aşağı sürükleyin.  
   
 #### <a name="to-return-to-single-pane-view"></a>Tek bölmeli görünümüne dönmek için  
   

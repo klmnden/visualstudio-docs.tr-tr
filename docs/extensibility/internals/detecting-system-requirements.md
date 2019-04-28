@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420699"
 ---
 # <a name="detect-system-requirements"></a>Sistem gereksinimlerini algılama
 VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Windows Installer, VSPackage'ı yüklemesini yönetmek için kullandığınız zaman, Visual Studio yüklü olup olmadığını algılamak için yükleyici yapılandırabilirsiniz. Ayrıca, örneğin sistemin diğer gereksinimleri denetlemek üzere, belirli bir Windows sürümü veya belirli bir RAM miktarını yapılandırabilirsiniz.
@@ -33,7 +33,7 @@ VSPackage Visual Studio'nun yüklü olduğu sürece çalışamaz. Microsoft Wind
 Daha yeni bir sürümü yüklü olduğunda, bu sürüm için kayıt defteri anahtarlarını önceki sürümlerinde olduğu gibi de eklenir. Diğer bir deyişle, Enterprise edition yüklü değilse, **yükleme** anahtarı ayarlanır *1* Professional ve Community sürümlerinde yanı sıra, kuruluş için. Bu nedenle, gereksinim duyduğunuz yalnızca en son sürümü için denetlenecek gerekir.
 
 > [!NOTE]
->  Kayıt Defteri Düzenleyicisi'ni 64-bit sürümünde 32 bit anahtarlar altında görüntülenen **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\\**. Visual Studio anahtarları altındadır **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> Kayıt Defteri Düzenleyicisi'ni 64-bit sürümünde 32 bit anahtarlar altında görüntülenen **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\\**. Visual Studio anahtarları altındadır **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Ürün|Anahtar|
 |-------------|---------|

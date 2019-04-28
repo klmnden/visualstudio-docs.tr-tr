@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433584"
 ---
 # <a name="item-definitions"></a>Öğe Tanımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090765"
  Bir Itemdefinitiongroup içinde tanımlanan öğe meta verileri yalnızca bir varsayılan meta veri bildirimidir. Meta veri değerleri içeren bir ItemGroup kullanan bir öğeyi tanımlamak sürece meta veriler geçerli değildir.  
   
 > [!NOTE]
->  Çoğu bu konudaki örnekler, Itemdefinitiongroup öğesi gösterilir ancak karşılık gelen ItemGroup tanımına açıklık için atlanır.  
+> Çoğu bu konudaki örnekler, Itemdefinitiongroup öğesi gösterilir ancak karşılık gelen ItemGroup tanımına açıklık için atlanır.  
   
  Bir ItemGroup içinde açıkça tanımlanmış meta verileri Itemdefinitiongroup meta verilerinde daha önceliklidir. Itemdefinitiongroup meta veriler, yalnızca bir ItemGroup meta verilerinde tanımsız için uygulanır. Örneğin:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090765"
  "M" meta veri öğesi "i" tarafından açıkça tanımlanmadığından Bu örnekte, "m" varsayılan meta veri "i" öğesine uygulanır. Ancak, varsayılan meta veri "n", "n" meta veri öğesi "i" tarafından zaten tanımlı olduğundan, "i" öğesine uygulanmaz.  
   
 > [!NOTE]
->  XML öğesi ve parametre adları olan çalışması\-hassas. Öğe meta verileri ve öğe\/özellik adları büyük/küçük harf olmayan\-hassas. Bu nedenle, yalnızca büyük küçük harfle farklı adlara sahip Itemdefinitiongroup öğeleri aynı ItemGroup değerlendirilmelidir.  
+> XML öğesi ve parametre adları olan çalışması\-hassas. Öğe meta verileri ve öğe\/özellik adları büyük/küçük harf olmayan\-hassas. Bu nedenle, yalnızca büyük küçük harfle farklı adlara sahip Itemdefinitiongroup öğeleri aynı ItemGroup değerlendirilmelidir.  
   
 ## <a name="value-sources"></a>Değer kaynakları  
  Bir Itemdefinitiongroup içinde tanımlanmış meta verileri değerlerini gibi birçok farklı kaynaklardan gelebilir:  
@@ -83,7 +83,7 @@ ms.locfileid: "60090765"
 - CDATA bölümü \< \! \[CDATA\[burada bir şey ayrıştırılmaz\]\]\>  
   
 > [!NOTE]
->  Itemdefinitiongroup öğeler ItemGroup öğelerini önce işlendiğinden bir ItemGroup öğesi meta verilerini bir Itemdefinitiongroup meta veri bildiriminde faydalı değil.  
+> Itemdefinitiongroup öğeler ItemGroup öğelerini önce işlendiğinden bir ItemGroup öğesi meta verilerini bir Itemdefinitiongroup meta veri bildiriminde faydalı değil.  
   
 ## <a name="additive-and-multiple-definitions"></a>Eklenebilir ve birden çok tanım  
  Tanımları ekleme veya birden çok ItemDefinitionGroups kullandığınızda aşağıdakileri unutmayın:  
@@ -128,7 +128,7 @@ ms.locfileid: "60090765"
  Bu örnekte, "m" meta veriler için önceden tanımlanmış değer \(m1\) yeni değere eklenen \(m2\), böylece son değeri "m1; m2".  
   
 > [!NOTE]
->  Bu ayrıca aynı Itemdefinitiongroup ortaya çıkabilir.  
+> Bu ayrıca aynı Itemdefinitiongroup ortaya çıkabilir.  
   
  Önceden tanımlanmış meta verileri geçersiz kılma son belirtimi önceliklidir. Aşağıdaki örnekte, "m" meta veri son değerini "m1" "m1a için" gider.  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090765"
  Bu durumda, yalnızca "Yapılandırma" özelliğinin değeri "Debug" ise "m1" öğesinde "i" varsayılan meta dahil edilir.  
   
 > [!NOTE]
->  Yalnızca yerel meta veri başvurularının koşullarda desteklenir.  
+> Yalnızca yerel meta veri başvurularının koşullarda desteklenir.  
   
  Öğesi, tanım grubu içinde önceki bir Itemdefinitiongroup tanımlı meta veri başvurularını yereldir. Başvuruları kapsamı olan öğeyi diğer bir deyişle,\-belirli. Örneğin:  
   

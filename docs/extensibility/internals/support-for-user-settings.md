@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428774"
 ---
 # <a name="support-for-user-settings"></a>Kullanıcı Ayarları için Destek
 VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir veya daha fazla ayarları kategorileri tanımlayabilir **içeri/dışarı aktarma ayarları** komutunu **Araçları** menüsü. Bu kalıcılığını sağlamak için ayarları API'leri kullanın. içinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -34,7 +34,7 @@ VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir vey
  Özel ayarları noktaları bir kayıt defteri girişini şu konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`burada `<CSPName>` VSPackage'ı destekleyen özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.
 
 > [!NOTE]
->  Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* bir alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamıdır (IDE) başlatılmamış. Daha fazla bilgi için [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* bir alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamıdır (IDE) başlatılmamış. Daha fazla bilgi için [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  Kayıt defteri girdisi yapısı aşağıda gösterilmiştir:
 

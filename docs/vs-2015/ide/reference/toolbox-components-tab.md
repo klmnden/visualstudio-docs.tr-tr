@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: b4e7cb0a1a55402ee457204227bad540a6120dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419673"
 ---
 # <a name="toolbox-components-tab"></a>Araç Kutusu, Bileşenler Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Görüntüler ekleyebilirsiniz bileşenleri [!INCLUDE[vbprvb](../../includes/vbp
  Oluşturur bir <xref:System.Windows.Forms.Timer> bileşen örneği, Windows tabanlı uygulamalar için zamana bağlı işlevselliği eklemek için kullanabilirsiniz. Daha fazla bilgi için [süreölçer bileşeni](http://msdn.microsoft.com/library/6700e534-6382-43d5-98ed-14205435fff7).  
   
 > [!NOTE]
->  De mevcuttur sistem tabanlı <xref:System.Timers.Timer> için ekleyebileceğiniz **araç kutusu** bu <xref:System.Timers.Timer> sunucu uygulamaları ve Windows Forms için optimize edilmiştir <xref:System.Windows.Forms.Timer> Windows formlarında kullanmak için uygundur.  
+> De mevcuttur sistem tabanlı <xref:System.Timers.Timer> için ekleyebileceğiniz **araç kutusu** bu <xref:System.Timers.Timer> sunucu uygulamaları ve Windows Forms için optimize edilmiştir <xref:System.Windows.Forms.Timer> Windows formlarında kullanmak için uygundur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bileşenler ile programlama](http://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   

@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434403"
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
  Yeni oluşturduğunuz görüntüyle çalışmaya başlamadan önce varsayılan yapılandırmasını değiştirebilirsiniz. Örneğin, Boyutlar veya kullandığı renk biçimi değiştirebilirsiniz. Bunlar ve diğer görüntü özelliklerini nasıl yapılandırılacağı hakkında daha fazla bilgi için bkz. [görüntü özellikleri](#ImageProperties).  
   
 > [!NOTE]
->  İş kaydetmeden önce ayarladığınızdan emin olun **renk biçimi** belirli renk biçimi kullanmak istiyorsanız özelliği. Dosya biçimi, sıkıştırmayı destekliyorsa, ilk kez veya seçtiğiniz dosyayı kaydettiğinizde sıkıştırma ayarlarını ayarlayabilirsiniz **Kaydet**.  
+> İş kaydetmeden önce ayarladığınızdan emin olun **renk biçimi** belirli renk biçimi kullanmak istiyorsanız özelliği. Dosya biçimi, sıkıştırmayı destekliyorsa, ilk kez veya seçtiğiniz dosyayı kaydettiğinizde sıkıştırma ayarlarını ayarlayabilirsiniz **Kaydet**.  
   
 ## <a name="working-with-the-image-editor"></a>Resim Düzenleyicisi ile çalışma  
  Bu bölümde, dokuları ve görüntüleri değiştirmek için görüntü Düzenleyicisi kullanmayı açıklar.  
@@ -136,7 +136,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Kırpma**|Etkin seçimin görüntüye kırpar.|  
   
 ### <a name="working-with-mip-levels"></a>MIP düzeyleri ile çalışma  
- Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — MIP düzeyleri doku alanı düzeyi ayrıntı düzeyi için (LOD) destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme](../designers/how-to-create-and-modify-mip-levels.md)  
+ Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — MIP düzeyleri doku alanı düzeyi ayrıntı düzeyi için (LOD) destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MIP Düzeyleri Oluşturma ve Değiştirme](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Saydamlık ile çalışma  
  Bazı görüntü biçimleri — Örneğin, doğrudan çizim yüzeyi (.dds) — saydamlık destekler. Saydamlık, kullandığınız araç bağlı olarak kullanılabileceğini birkaç yolu vardır. Bir renk seçimi için saydamlık düzeyini belirtmek için **özellikleri** penceresinde **A** renk seçimi bileşeninin (alfa). Saydamlık nasıl uygulanacağını araçları denetimi nasıl farklı tür aşağıda verilmiştir:  
@@ -166,7 +166,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Derinlik dilimi|Geçerli derinlik dilimi. Yalnızca ilk dilim görüntülenebilir; görüntüyü kaydederken diğer dilimleri kaybolur.|  
   
 > [!NOTE]
->  Çünkü **Döndür** özelliğinin uygulanması tüm araçları ve seçili bölgeler, sonunda her zaman görünür **özellikleri** birlikte diğer araç özellikleri penceresi. **Döndürme tarafından** diğer seçimi veya etkin araç olduğunda görüntünün tamamını örtük olarak seçili olduğundan her zaman görüntülenir. Hakkında daha fazla bilgi için **Döndür** özelliğine bakın [araç özellikleri](#ToolProperties).  
+> Çünkü **Döndür** özelliğinin uygulanması tüm araçları ve seçili bölgeler, sonunda her zaman görünür **özellikleri** birlikte diğer araç özellikleri penceresi. **Döndürme tarafından** diğer seçimi veya etkin araç olduğunda görüntünün tamamını örtük olarak seçili olduğundan her zaman görüntülenir. Hakkında daha fazla bilgi için **Döndür** özelliğine bakın [araç özellikleri](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Görüntüleri yeniden boyutlandırma  
  Bir görüntüyü yeniden boyutlandırmak için iki yolu vardır. Her iki durumda da, görüntü yeniden örneklemek için BI doğrusal enterpolasyon Resim Düzenleyicisi'ni kullanır.  

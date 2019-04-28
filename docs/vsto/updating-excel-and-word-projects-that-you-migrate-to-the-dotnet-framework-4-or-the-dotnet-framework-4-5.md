@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1a814e71563f8b31c54fb9caaeb062a505c186e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd80f4a72151fdebb3f0445024963a65db981e63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436469"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Excel ve Word projelerini güncelleştirme
   Aşağıdaki özelliklerden herhangi birini kullanan bir Excel veya Word'den projeniz varsa, hedef Framework'ü değiştirilirse kodunuzu değiştirmelisiniz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra:
@@ -48,7 +48,7 @@ ms.locfileid: "60087266"
 2. Altında **özellikleri** düğümü (C#) veya **Projem** (Visual Basic) düğümünü AssemblyInfo kod dosyası Kod Düzenleyicisi'nde açmak için çift tıklayın.
 
     > [!NOTE]
-    >  Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
+    > Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
 
 3. Bulun `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` ve dosyanın kaldırmak veya yorum çıkarın.
 

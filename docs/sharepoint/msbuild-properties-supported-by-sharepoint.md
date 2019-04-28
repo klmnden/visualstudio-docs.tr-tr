@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429203"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint tarafından desteklenen MsBuild özellikleri
   Tüm [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Microsoft.VisualStudio.SharePoint.targets dosyası, proje dosyası veya proje kullanıcı dosyası içinde tanımlanan bir özellik kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint projeleri. Ortak yanı sıra [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] SharePoint Proje tarafından sağlanan özellikleri SharePoint projelerine özgü ek özellikleri tanımlar.
@@ -49,7 +49,7 @@ ms.locfileid: "56599694"
  Esneklik, sabit kodlanmış dizeleri kullanmak yerine **dağıtım öncesi komut satırını** ve **dağıtım sonrası komut satırı** kutuları SharePoint Özellikler sayfasında SharePoint kullanabilirsiniz. bağımsız değişkenler olarak özellikleri. Örneğin, belirli bir belirtme yerine [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] dize SharePoint sitesi için bunların yerine kullanabileceğiniz `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Kullanabilirsiniz [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] değişkeni sözdizimini `$(` *propertyName* `)` veya ortam değişkeni sözdizimini `%` *propertyName* `%` bir özellik belirtmek için.
+> Kullanabilirsiniz [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] değişkeni sözdizimini `$(` *propertyName* `)` veya ortam değişkeni sözdizimini `%` *propertyName* `%` bir özellik belirtmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

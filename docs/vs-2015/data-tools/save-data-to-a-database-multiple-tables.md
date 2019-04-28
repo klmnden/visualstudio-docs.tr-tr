@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425013"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
  Çağırarak veritabanına uygulamanızdaki verileri kaydedebilirsiniz `Update` TableAdapter bağdaştırıcısının yöntemi. Tablodan sürüklediğinizde **veri kaynakları** forma, verileri kaydetmek için gereken kod penceresi otomatik olarak eklenir. Bir forma eklenmiş herhangi bir ek tablolar bu kodu el ile eklenmesi gerekir. Bu izlenecek yol, birden fazla tablodan güncelleştirmeleri kaydetmek için kod ekleme işlemi gösterilmektedir.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
@@ -118,7 +118,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
 2. İlgili sürükleyin **siparişler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
     > [!NOTE]
-    >  İlgili **siparişler** düğümü altında bulunan **faks** sütun ve bir alt düğüm **müşteriler** düğümü.  
+    > İlgili **siparişler** düğümü altında bulunan **faks** sütun ve bir alt düğüm **müşteriler** düğümü.  
   
      A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. Bir OrdersTableAdapter ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
   
@@ -126,7 +126,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
  Çağırarak veritabanı güncelleştirebilirsiniz `Update` yöntemlerinin **müşteriler** ve **siparişler** TableAdapter bağdaştırıcıları. Varsayılan olarak, bir olay işleyicisi için **Kaydet** düğmesini<xref:System.Windows.Forms.BindingNavigator> veritabanına güncelleştirmeleri göndermek için formun koduna eklenir. Bu yordamı doğru sırayla güncelleştirmeleri göndermek için kod değiştirir. Bu bilgi tutarlılığını hataları oluşturma olanağına ortadan kaldırır. Kod ayrıca hata güncelleştirme çağrısında bir try-catch bloğu içinde sarmalama tarafından işleme uygular. Kod, uygulamanızın ihtiyaçlarına uyacak şekilde değiştirebilirsiniz.  
   
 > [!NOTE]
->  Anlaşılsın diye, bu izlenecek yol, bir işlem kullanmaz. Ancak, iki güncelleştirilmiyor ya da tabloları ilgili daha fazla işlem içindeki tüm güncelleştirme mantığı içerir. Bir işlem değişiklikleri uygulanmadan önce bir veritabanındaki tüm ilgili değişiklikler başarılı olduğunu garantiler bir işlemdir. Daha fazla bilgi için [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Anlaşılsın diye, bu izlenecek yol, bir işlem kullanmaz. Ancak, iki güncelleştirilmiyor ya da tabloları ilgili daha fazla işlem içindeki tüm güncelleştirme mantığı içerir. Bir işlem değişiklikleri uygulanmadan önce bir veritabanındaki tüm ilgili değişiklikler başarılı olduğunu garantiler bir işlemdir. Daha fazla bilgi için [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Uygulama güncelleştirme mantığı eklemek için  
   

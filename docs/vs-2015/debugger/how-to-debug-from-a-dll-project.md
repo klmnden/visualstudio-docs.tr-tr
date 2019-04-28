@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438484"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Nasıl yapılır: Bir DLL projesinde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağır
  Yönetilen bir DLL'yi yerel kod tarafından çağrılır ve her ikisi de hata ayıklamak istiyorsanız, proje özelliklerinde belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Karışık modda hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  Visual Studio'nun Express sürümlerinde, bir dış çağıran uygulama belirtemezsiniz. Bunun yerine, çözüme bir yürütülebilir proje ekleyin için başlangıç projesi olarak ayarla ve yöntemler DLL dosyanız içinde yürütülebilir projeden çağırın.  
+> Visual Studio'nun Express sürümlerinde, bir dış çağıran uygulama belirtemezsiniz. Bunun yerine, çözüme bir yürütülebilir proje ekleyin için başlangıç projesi olarak ayarla ve yöntemler DLL dosyanız içinde yürütülebilir projeden çağırın.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Bir C++ projesinde çağıran uygulama belirtmek için  
   

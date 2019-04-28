@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253289862ae341e0682f5fe19616720e74799a1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c662b9b813be33ca57c8c31dff69eb86968ab3eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411221"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Uygulama ve bağlantı noktası sağlayıcısı kaydetme
 Bağlantı noktası sağlayıcısı izlemek ve sırayla işlemlerini yönetmek bağlantı noktaları sağlamanız için rolüdür. Bir bağlantı noktası oluşturulması gerektiğinde, bağlantı noktası sağlayıcısı (oturum hata ayıklama Yöneticisi [SDM] proje sistemi tarafından seçilen kullanıcıya veya bağlantı noktası sağlayıcısı belirtilen bağlantı noktası sağlayıcısı kullanırsınız) bağlantı noktası tedarikçi GUID'e sahip CoCreate kullanılarak başlatılır. SDM sonra çağıran [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) tüm bağlantı noktaları eklenip eklenemeyeceğini görmek için. Bir bağlantı noktası eklenebilir, yeni bir bağlantı noktası çağırarak istenen [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) ve geçirerek bir [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) , bağlantı noktası açıklar. `AddPort` tarafından temsil edilen yeni bir bağlantı noktası döndüren bir [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) arabirimi.
@@ -55,7 +55,7 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
->  [Hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` ve `RemoveMetric` statik işlevler tanımlanan *dbgmetric.h* ve içine derlenmiş *ad2de.lib*. `metrictypePortSupplier`, `metricCLSID`, Ve `metricName` Yardımcıları tanımlanmış ayrıca *dbgmetric.h*.
+> [Hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` ve `RemoveMetric` statik işlevler tanımlanan *dbgmetric.h* ve içine derlenmiş *ad2de.lib*. `metrictypePortSupplier`, `metricCLSID`, Ve `metricName` Yardımcıları tanımlanmış ayrıca *dbgmetric.h*.
 
  Bağlantı noktası sağlayıcısı yöntemlerle GUID ve ad sağlayabilirsiniz [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) ve [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)sırasıyla.
 

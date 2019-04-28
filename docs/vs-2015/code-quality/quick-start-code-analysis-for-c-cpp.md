@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436702"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Hızlı Başlangıç: C/C++ için Kod Analizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kali
     2. Varsayılan olarak, Kod Analizi uyarıları otomatik olarak dış araçları tarafından oluşturulan kodu raporlamaz. Üretilen koddan gelen uyarıları görüntülemek için temizleyin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
   
         > [!NOTE]
-        >  Bu seçenek hataları ve Uyarıları formları ve şablonlar görüntülendiğinde kod çözümleme hataları ve Uyarıları üretilen koddan gelen engellemez. Hem görüntüleyebilir ve bir form veya şablon için kaynak kodunu korumak.  
+        > Bu seçenek hataları ve Uyarıları formları ve şablonlar görüntülendiğinde kod çözümleme hataları ve Uyarıları üretilen koddan gelen engellemez. Hem görüntüleyebilir ve bir form veya şablon için kaynak kodunu korumak.  
   
 3. Seçili yapılandırma kullanarak proje oluşturulan her zaman, Kod Analizi çalıştırmak için seçin **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu. Ayrıca kod analizini el ile açıp çalıştırabilirsiniz **Çözümle** menüsüne ve ardından **kod çözümlemeyi Çalıştır** *ProjectName*.  
   
@@ -94,7 +94,7 @@ Kod Analizi düzenli olarak C veya C++ kodu çalıştırarak uygulamanızı kali
  Sorun anladıktan sonra kodunuzu çözebilirsiniz. Ardından uyarı artık Kod Analizi penceresi açılır ve düzeltmenizi henüz yeni uyarılar ortaya emin olmak için kod analizini yeniden çalıştırın.  
   
 > [!TIP]
->  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.  
+> Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.  
   
 ## <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme  
  Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.  

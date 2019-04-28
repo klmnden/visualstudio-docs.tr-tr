@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 074c877e8fd8f1e29aee440bf54e73ceab68767a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406140"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.
 
 > [!NOTE]
->  Visual Studio 2013 itibariyle, Concurrency Visualizer isteğe bağlı uzantısıdır. (Daha önce Visual Studio'ya dahil.) İndirebileceğiniz [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) İndirme Merkezi'nden.
+> Visual Studio 2013 itibariyle, Concurrency Visualizer isteğe bağlı uzantısıdır. (Daha önce Visual Studio'ya dahil.) İndirebileceğiniz [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) İndirme Merkezi'nden.
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programını indirin
  Komut satırı yardımcı programını yüklemek ve indirmek için Git [Eşzamanlılık Görselleştirici toplama araçları Visual Studio 2015 için](http://www.microsoft.com/download/details.aspx?id=49103) ve yönergeleri izleyin. Varsayılan olarak, *CVCollectionCmd.exe* %ProgramFiles%\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde yüklenir (% ProgramFiles (x86) %\Microsoft eşzamanlılık görselleştiricisi koleksiyon Tools\ içinde x64 bilgisayarlar).
@@ -54,7 +54,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
  Ardından CVCollectionCmd izlemeleri toplamak için kullanın ve koleksiyon ayarlarını özelleştirmek istiyorsanız, bunları belirtmek için bir yapılandırma dosyası kullanın.
 
 > [!NOTE]
->  İzlemeleri toplamak için Visual Studio kullandığınızda, yapılandırma dosyasını doğrudan değiştirmeyin.  Bunun yerine, [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ayarlarını değiştirmek için iletişim kutusu.
+> İzlemeleri toplamak için Visual Studio kullandığınızda, yapılandırma dosyasını doğrudan değiştirmeyin.  Bunun yerine, [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ayarlarını değiştirmek için iletişim kutusu.
 
  Koleksiyon ayarlarını değiştirmek için bir yapılandırma dosyası CVCollectionCmd yardımcı programı çalıştıracağınız makinede oluşturun. Yapılandırma dosyası sıfırdan oluşturabilir veya Visual Studio'nun yüklü olduğu bilgisayarda yapılandırma dosyasını kopyalayıp, değiştirebilirsiniz. Dosyanın nasıl adlandırıldığı *UserConfig.xml* ve bulunan *Yerel AppData* klasör. Yardımcı programını çalıştırdığınızda, yapılandırma seçeneği başlatma, Attach veya Analiz komutu ile birlikte kullanın.  Yapılandırma seçeneği ile ilişkili parametresinde yapılandırma dosyasının yolunu belirtin.
 

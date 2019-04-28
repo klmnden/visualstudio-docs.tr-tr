@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440973"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Kullanım örneğini belgelere ve diyagramlara bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Bir kullanım örneği bir kullanım durumu diyagramı, başka bir diyagrama vey
 3. Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
   
     > [!NOTE]
-    >  Bir dosya yolu sağlamak istiyorsanız, bir dosya ya da ortak bir çalışma alanı seçmek en iyi (başlayarak '\\\\'), veya Visual Studio çözümündeki bir dosya. Bu dosya yolu başka bir takım üyesinin bilgisayarda geçerli olarak kalmasını sağlar veya çözüm taşınır. Bir Word belgesi gibi bir belge çözümünüze eklemek için Çözüm Gezgini'nde çözüme sağ tıklatın, **Ekle** ve ardından **var olan öğe**.  
+    > Bir dosya yolu sağlamak istiyorsanız, bir dosya ya da ortak bir çalışma alanı seçmek en iyi (başlayarak '\\\\'), veya Visual Studio çözümündeki bir dosya. Bu dosya yolu başka bir takım üyesinin bilgisayarda geçerli olarak kalmasını sağlar veya çözüm taşınır. Bir Word belgesi gibi bir belge çözümünüze eklemek için Çözüm Gezgini'nde çözüme sağ tıklatın, **Ekle** ve ardından **var olan öğe**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430229"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlama konusunda ya da arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz seçin ve renkleri atamak için paket tanım dosyalarında mevcut belirteci adları kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
@@ -307,7 +307,7 @@ Sütun üst bilgilerini arka plan, kenarlık, başlık metnini ve kılavuz, süt
 | --- | --- |
 | Arka Plan | `TreeView.SelectedItemActive` |
 | Ön plan (metin) | `TreeView.SelectedItemActiveText` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Liste öğeleri görüntüle: etkin olmayan duruma**
 
@@ -735,7 +735,7 @@ Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri 
 | --- | --- |
 | Arka Plan | Yok. |
 | Ön plan (karakter) | `SearchControl.ActionButtonDisabledGlyph` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Odaklanmış arama açılan düğmesi**
 
@@ -884,7 +884,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.Background` |
 | Ön plan (metin) | `TreeView.Background` |
 | Ön plan (karakter) | `TreeView.GlyphMouseOver` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: durum sürükleyin.**
 
@@ -895,7 +895,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.DragOverItem` |
 | Ön plan (metin) | `TreeView.DragOverItem` |
 | Ön plan (karakter) | `TreeView.DragOverItemGlyph` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Ağaç görünümü öğesi: Seçili, odaklanmış durumu**
 
@@ -1105,7 +1105,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Ön plan (karakter) | `Environment.CommandBarTextInactive` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 #### <a name="menu-items"></a>Menü öğeleri
 Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.
@@ -1413,7 +1413,7 @@ Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden ol
 #### <a name="BKMK_CommandDropDown"></a> Komut çubuğu açılır listeleri
 
 > [!IMPORTANT]
->  Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Renk belirteçleri için açılan bir düzenlenebilir metin bölgesi içeriyorsa kullanmak [komut çubuğu birleşik giriş kutuları](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Renk belirteçleri için açılan bir düzenlenebilir metin bölgesi içeriyorsa kullanmak [komut çubuğu birleşik giriş kutuları](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Komut açılır (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Komut açılır (kırmızı çizgi)
 

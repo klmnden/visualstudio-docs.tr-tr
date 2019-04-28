@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434856"
 ---
 # <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş parçacıkları penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ ms.locfileid: "60092103"
  Yönetilen kodda dondurma veya çözme iş parçacığı askıda sayma değiştirin. Yönetilen kodda dondurulmuş bir iş parçacığı askıda sayısı 1 ' var. Yerel kodda iş parçacığı tarafından askıya alındı sürece askıya alınmış sayısı 0 dondurulmuş bir iş parçacığı sahip bir `SuspendThread` çağırın.  
   
 > [!NOTE]
->  Yönetilen koda yerel koddan bir çağrı hata ayıklaması yaparken, yönetilen kod aynı fiziksel iş parçacığında adlı yerel kod olarak çalışır. Yönetilen kod da askıya alma ya da yerel iş parçacığını dondurma donuyor.  
+> Yönetilen koda yerel koddan bir çağrı hata ayıklaması yaparken, yönetilen kod aynı fiziksel iş parçacığında adlı yerel kod olarak çalışır. Yönetilen kod da askıya alma ya da yerel iş parçacığını dondurma donuyor.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Dondurma veya çözme iş parçacığı yürütme için  
   

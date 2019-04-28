@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416796"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Nasıl yapılır: Menüleri ve Visual Studio araç çubuklarını özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094534"
 Araç çubuklarını ve menü çubuğundaki menüleri ekleyip kaldırmanın yanı sıra herhangi bir araç çubuğundaki veya menüdeki komutları ekleyip kaldırmak suretiyle de Visual Studio'yu özelleştirebilirsiniz.
 
 > [!WARNING]
->  Bir araç çubuğunu veya menüyü özelleştirdikten sonra ilgili onay kutusunun seçili kaldığından emin olun **Özelleştir** iletişim kutusu. Aksi takdirde, Visual Studio'yu kapatıp yeniden açtıktan sonra değişiklikleriniz kalıcı olmaz.
+> Bir araç çubuğunu veya menüyü özelleştirdikten sonra ilgili onay kutusunun seçili kaldığından emin olun **Özelleştir** iletişim kutusu. Aksi takdirde, Visual Studio'yu kapatıp yeniden açtıktan sonra değişiklikleriniz kalıcı olmaz.
 
  **Bu konuda:**
 
@@ -84,14 +84,14 @@ Araç çubuklarını ve menü çubuğundaki menüleri ekleyip kaldırmanın yan�
     - Özel bir araç çubuğunu kaldırmak için onu seçin **araç çubukları** listeleyin ve ardından **Sil** düğmesi.
 
         > [!IMPORTANT]
-        >  Kendi oluşturduğunuz araç çubuklarını silebilir, ancak varsayılan araç çubuklarını silemezsiniz.
+        > Kendi oluşturduğunuz araç çubuklarını silebilir, ancak varsayılan araç çubuklarını silemezsiniz.
 
     - Bir araç çubuğunu farklı bir yerleştirme konumuna taşımak için projeyi seçin **araç çubukları** listesinde **Seçimi Değiştir** düğmesini ve ardından görüntülenen listede bir konum seçin.
 
          Ayrıca, bir araç çubuğunu, ana yerleştirme alanında herhangi bir konuma taşımak için sol kenarından sürükleyebilirsiniz.
 
         > [!NOTE]
-        >  Kullanılabilirliğini ve erişilebilirliğini araç çubuklarının geliştirme konusunda daha fazla bilgi için bkz. [nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Kullanılabilirliğini ve erişilebilirliğini araç çubuklarının geliştirme konusunda daha fazla bilgi için bkz. [nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Bir menü veya araç çubuğunu özelleştirme
 

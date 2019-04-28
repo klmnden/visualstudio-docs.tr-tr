@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419748"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60105623"
  **Araç kutusu** içinde çalıştığınız dosya türü için uygun olan öğeleri görüntüler. Daha fazla filtre uygulamak için araç kutusu içinde görüntülenen öğe arayabilirsiniz. Projenize istemci profili tarafından desteklenmeyen bir denetim gerekiyorsa, projenizin proje özelliklerini düzenleyerek tüm çerçeveyi hedeflemek üzere ayarlayabilirsiniz.  
   
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Araç kutusu sekmelerindeki Yardım  
  Aşağıdaki belgeler özel hakkında daha fazla bilgi sağlayan **araç kutusu** sekmeler.  

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422876"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluştur
     **Proje bağımlılıkları** iletişim kutusu açılır.  
   
    > [!NOTE]
-   >  **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.  
+   > **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.  
   
 3. Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.  
   
@@ -56,7 +56,7 @@ Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluştur
      **Proje bağımlılıkları** iletişim kutusu açılır.  
   
     > [!NOTE]
-    >  **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.  
+    > **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.  
   
 3. Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.  
   

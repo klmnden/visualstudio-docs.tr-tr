@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432670"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Nasıl yapılır: Sınırı izlemeyi belirli DLL'ler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60091323"
 7. İsteğe bağlı. Daha fazla .dll dosyaları eklemek için sağ **hedefleri** seçip **hedef ikili Ekle**. Dosyaları Seç **hedef ikili Ekle** iletişim kutusu.  
   
     > [!NOTE]
-    >  DLL'leri sınayan yürütülebilir (.exe) dosyayı belirtmeyin.  
+    > DLL'leri sınayan yürütülebilir (.exe) dosyayı belirtmeyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri toplama denetimi](../profiling/controlling-data-collection.md)   

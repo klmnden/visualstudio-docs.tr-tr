@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423299"
 ---
 # <a name="project-configuration-for-output"></a>Çıkış için Proje Yapılandırması
 Her yapılandırma bir dizi yürütülebilir dosyası ya da kaynak dosyaları gibi çıkış öğeleri oluşturan yapı işlemlerini destekler. Bu çıkış öğeleri kullanıcıya özeldir ve yürütülebilir dosyalar (.exe, .dll, .lib) ve kaynak dosyaları (.idl, .h dosyaları) gibi bir çıkış ilgili türü bağlantı gruplardaki yerleştirilebilir.
@@ -25,7 +25,7 @@ Her yapılandırma bir dizi yürütülebilir dosyası ya da kaynak dosyaları gi
  Yapı geliştirilen uygulayarak `IVsOutputGroup` projeleri kullanım göre grup çıkışlarına izin verir. Örneğin, bir DLL, program veritabanı (PDB) ile gruplandırılmış olabilir.
 
 > [!NOTE]
->  Bir PDB dosyası hata ayıklama bilgileri içerir ve .dll veya .exe oluştururken 'Hata ayıklama bilgisi Oluştur' seçeneği belirtildiğinde oluşturulur. .Pdb dosyası, genellikle yalnızca hata ayıklama proje yapılandırması için oluşturulur.
+> Bir PDB dosyası hata ayıklama bilgileri içerir ve .dll veya .exe oluştururken 'Hata ayıklama bilgisi Oluştur' seçeneği belirtildiğinde oluşturulur. .Pdb dosyası, genellikle yalnızca hata ayıklama proje yapılandırması için oluşturulur.
 
  Bir gruptaki çıktı sayısı yapılandırma yapılandırması değişebilir olsa bile Proje grupları desteklediği her bir yapılandırma için aynı sayıda döndürmesi gerekir. Örneğin, projenin Matt DLL mattd.dll ve mattd.pdb hata ayıklama yapılandırmasını da dahil, ancak yalnızca matt.dll perakende yapılandırmasında dahildir.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419774"
 ---
 # <a name="createitem-task"></a>CreateItem Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59649565"
 Öğe koleksiyonlarını girdi öğelerinin ile doldurur. Bu, bir listeden diğerine kopyalanmasına öğeleri sağlar.  
   
 > [!NOTE]
->  Bu görevi kullanım dışı bırakılmıştır. İçinde .NET Framework 3.5 ile öğesi grupları başlangıç yerleştirilebilir [hedef](../msbuild/target-element-msbuild.md) öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).  
+> Bu görevi kullanım dışı bırakılmıştır. İçinde .NET Framework 3.5 ile öğesi grupları başlangıç yerleştirilebilir [hedef](../msbuild/target-element-msbuild.md) öğeleri. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Öznitelikler  
  Parametreleri aşağıdaki tabloda açıklanmıştır `CreateItem` görev.  

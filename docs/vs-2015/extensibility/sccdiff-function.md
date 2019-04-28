@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432471"
 ---
 # <a name="sccdiff-function"></a>SccDiff İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Performans iyileştirme, bir sağlama toplamı veya bir zaman damgası için çağıran bayt bayt karşılaştırma yerine göre alternatif kaynak denetimi eklentisi kullanabilir `SCC_DIFF_CONTENTS`: Bu formları karşılaştırma açıkça daha hızlı ancak daha az güvenilir. Tüm kaynak denetimi sistemlerini bu alternatif karşılaştırma yöntemleri destekleyebilir ve eklenti içeriğini karşılaştırma dönmesi gerekebilir. Tüm kaynak denetimi eklentileri en az bir içindekiler karşılaştırmayı desteklemesi gerekir.  
   
 > [!NOTE]
->  Hızlı fark bayrakları birbirini dışlar. Bayrak geçirmek için geçerlidir, ancak aynı anda birden fazla geçirmek için geçerli değil. `SCC_DIFF_QUICK_DIFF`, test etmek için tüm bayrakları bir araya getiren bir maskesi olan kullanılabilir, ancak hiçbir zaman bir parametre olarak geçirilmelidir.  
+> Hızlı fark bayrakları birbirini dışlar. Bayrak geçirmek için geçerlidir, ancak aynı anda birden fazla geçirmek için geçerli değil. `SCC_DIFF_QUICK_DIFF`, test etmek için tüm bayrakları bir araya getiren bir maskesi olan kullanılabilir, ancak hiçbir zaman bir parametre olarak geçirilmelidir.  
   
 |`fOption`|Açıklama|  
 |---------------|-------------|  

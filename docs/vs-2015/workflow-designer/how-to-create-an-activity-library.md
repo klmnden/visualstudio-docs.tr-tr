@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444571"
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: Etkinlik Kitaplığı Oluşturma
 Özel etkinlikler, bir iş akışındaki belirli İş süreçlerinizi modelleyin için kullanılır. Etkinlik kitaplığı şablonu [!INCLUDE[vs2010](../includes/vs2010-md.md)] sağlamak görsel olarak kullanarak bu tür özel etkinlikler oluşturmak sağlanan [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -38,14 +38,14 @@ ms.locfileid: "60068105"
 7. İçinde **çözüm** kutusunda, çözümünüz için açıklayıcı bir ad yazın ve ardından tıklayın **Tamam**.  
   
     > [!NOTE]
-    >  Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
+    > Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
   
 8. Proje şablonu, XAML içinde bir etkinlik tanımı oluşturur. [!INCLUDE[wfd1](../includes/wfd1-md.md)] açılır ve özel etkinliğinizin tuval görüntüler.  
   
 9. Etkinliği sürükleyin **araç kutusu** özel etkinliklerinizi içerecek şekilde tasarım yüzeyine bırakın.  
   
     > [!CAUTION]
-    >  Yalnızca bir alt etkinlik özel etkinliğinizin gövdesinde izin verilir; Ancak, bu alt etkinlik bileşik bir etkinlik gibi olabilir bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Flowchart> etkinlik.  
+    > Yalnızca bir alt etkinlik özel etkinliğinizin gövdesinde izin verilir; Ancak, bu alt etkinlik bileşik bir etkinlik gibi olabilir bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Flowchart> etkinlik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Bir etkinlik oluşturma](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   

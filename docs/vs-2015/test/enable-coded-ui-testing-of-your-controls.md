@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416516"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Denetimlerinizin Kodlanmış UI Testlerini Etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolay t
 4. Geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, ve <xref:System.Windows.Forms.AccessibleObject.Select%2A> alt denetimin erişilebilirlik nesne için özellikleri ve yöntemleri.  
   
 > [!NOTE]
->  Bu konuda erişilebilirlik örnek başlayan <xref:System.Windows.Forms.AccessibleObject> Bu yordam ve ardından yapılarında kalan yordamları, şirket içinde. Erişilebilirlik örnek çalışan sürümü oluşturmak istiyorsanız, bir konsol uygulaması oluşturun ve ardından program.cs'deki kodu örnek kod ile değiştirin. Erişilebilirlik ve System.Drawing System.Windows.Forms başvurular eklemeniz gerekir. Değiştirmeniz **birlikte çalışma türlerini katıştır** erişilebilirlik için **False** bir yapı uyarısı ortadan kaldırmak için. Projenin çıktı türünden için değiştirebileceğiniz **konsol uygulaması** için **Windows uygulama** böylece bir konsol penceresi görünmez çalıştırdığınızda uygulama.  
+> Bu konuda erişilebilirlik örnek başlayan <xref:System.Windows.Forms.AccessibleObject> Bu yordam ve ardından yapılarında kalan yordamları, şirket içinde. Erişilebilirlik örnek çalışan sürümü oluşturmak istiyorsanız, bir konsol uygulaması oluşturun ve ardından program.cs'deki kodu örnek kod ile değiştirin. Erişilebilirlik ve System.Drawing System.Windows.Forms başvurular eklemeniz gerekir. Değiştirmeniz **birlikte çalışma türlerini katıştır** erişilebilirlik için **False** bir yapı uyarısı ortadan kaldırmak için. Projenin çıktı türünden için değiştirebileceğiniz **konsol uygulaması** için **Windows uygulama** böylece bir konsol penceresi görünmez çalıştırdığınızda uygulama.  
   
 ## <a name="customproprties"></a> Bir özellik sağlayıcısı uygulayarak özel özellik doğrulama desteği  
  Kayıt ve kayıttan yürütme ve özelliği doğrulama için temel destek uyguladık sonra denetiminizin özel özellikler kodlanmış UI testleri kullanılabilir uygulayarak yapabileceğiniz bir <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> eklenti. Örneğin, aşağıdaki yordam grafik denetiminin CurveLegend alt denetimlerin durumu özelliğine erişmek kodlanmış UI testleri sağlayan bir özellik sağlayıcısı oluşturur.  
@@ -324,7 +324,7 @@ Kodlanmış UI test çerçevesi için destek uygularsanız, denetim daha kolay t
 11. İkili dosyalarınızı oluşturmak ve kopyalamak için **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Bu uzantı paketi "Metin" türünde herhangi bir denetimi için geçerlidir. Aynı türden birden çok denetim test ediyorsanız bunları ayrı ayrı test edin ve hangi uzantı paketleri testleri kaydettiğinizde dağıtılan yönetmek gerekir.  
+> Bu uzantı paketi "Metin" türünde herhangi bir denetimi için geçerlidir. Aynı türden birden çok denetim test ediyorsanız bunları ayrı ayrı test edin ve hangi uzantı paketleri testleri kaydettiğinizde dağıtılan yönetmek gerekir.  
   
 ## <a name="codegeneration"></a> Özel özelliklere erişmek için bir sınıf uygulayarak kod oluşturma desteği  
  Kodlanmış UI test Oluşturucusu'nu oturumu kaydından kodu oluşturduğunda, kullandığı <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> denetimlerinizi erişmek için sınıf.  
@@ -512,7 +512,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 4. İkili dosyalarınızı oluşturun ve bunları %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages kopyalayın.  
   
 > [!NOTE]
->  Eylem filtresi erişilebilirlik uygulamaları ya da özellik sağlayıcısı bağlı değildir.  
+> Eylem filtresi erişilebilirlik uygulamaları ya da özellik sağlayıcısı bağlı değildir.  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>Özellik sağlayıcısı veya eylem filtresi hata ayıklama  
  Özellik sağlayıcısı ve eylem filtresi, yüklenen ve uygulamanızdan ayrı bir işlemde kodlanmış UI test oluşturucusu tarafından çalıştırılan bir uzantı paketi uygulanır.  

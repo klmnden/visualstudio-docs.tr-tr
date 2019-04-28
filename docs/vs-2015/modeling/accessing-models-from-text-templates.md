@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442863"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110498"
 Metin şablonları kullanarak rapor dosyaları, kaynak kodu dosyaları ve etki alanına özgü dil modelleri tabanlı diğer metin dosyaları oluşturabilirsiniz. Temel metin şablonları hakkında daha fazla bilgi için [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonlarını DSL'nizi ayıklanırken Deneysel modda çalışır ve DSL dağıtmış olan bir bilgisayar üzerinde de çalışır.  
   
 > [!NOTE]
->  Bir DSL çözümü, örnek metin şablonu oluşturduğunuzda  **\*.tt** dosyaları, hata ayıklama projede oluşturulur. Etki alanı sınıflarının adları değiştirdiğinizde, bu şablonları artık çalışmayacak. Bununla birlikte, bunlar gereken temel yönergeleri içerir ve DSL'nizi eşleşecek şekilde güncelleştirebilirsiniz örnekler sunar.  
+> Bir DSL çözümü, örnek metin şablonu oluşturduğunuzda  **\*.tt** dosyaları, hata ayıklama projede oluşturulur. Etki alanı sınıflarının adları değiştirdiğinizde, bu şablonları artık çalışmayacak. Bununla birlikte, bunlar gereken temel yönergeleri içerir ve DSL'nizi eşleşecek şekilde güncelleştirebilirsiniz örnekler sunar.  
   
  Bir model bir metin şablonundan erişmek için:  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Bir metin şablonundan birden çok modellere erişme  
   
 > [!NOTE]
->  Bu yöntem, aynı şablonu birden çok modeli okumanıza izin verir ancak ModelBus odkazy entit. ModelBus başvurularını birbirine modelleri için bkz [metin şablonunda Visual Studio ModelBus kullanarak](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+> Bu yöntem, aynı şablonu birden çok modeli okumanıza izin verir ancak ModelBus odkazy entit. ModelBus başvurularını birbirine modelleri için bkz [metin şablonunda Visual Studio ModelBus kullanarak](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
  Birden fazla model aynı metin şablonundan erişmek istiyorsanız, üretilen bir yönerge işlemcisine her model için bir kez çağırmanız gerekir. Her model dosya adını belirtmeniz gerekir `requires` parametresi. Kök etki alanı sınıfı için kullanmak istediğiniz adları belirtmelisiniz `provides` parametresi. İçin farklı değerler belirtmeniz gerekir `provides` her yönerge çağrılarının parametreleri. Örneğin, üç model dosyaları Library.xyz School.xyz ve Work.xyz adlı sahip olduğunuzu varsaymaktadır. Bunları aynı metin şablonundan erişmek için aşağıdaki sorguyu benzer üç yönerge çağrıları yazmanız gerekir.  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Bu kod örneği, en az bir dil çözümü şablonu temel alan bir dil içindir.  
+> Bu kod örneği, en az bir dil çözümü şablonu temel alan bir dil içindir.  
   
  Metin şablonunuzu modellerinde erişmek için artık aşağıdaki örnekte koda benzer bir kod yazabilirsiniz.  
   

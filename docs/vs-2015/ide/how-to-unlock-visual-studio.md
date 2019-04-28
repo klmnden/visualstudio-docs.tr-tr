@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435092"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio Kilidini Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum a�
 2. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, bir MSDN aboneliği veya hesabınızla ilişkili Visual Studio Team Services aboneliği bulabilirsiniz.
 
 > [!IMPORTANT]
->  Takım Gezgini araç penceresinden bir Visual Studio Team Services hesabına bağlanma, visual Studio ilişkili çevrimiçi abonelikler için otomatik olarak arar. Visual Studio Team Services hesabınıza bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
+> Takım Gezgini araç penceresinden bir Visual Studio Team Services hesabına bağlanma, visual Studio ilişkili çevrimiçi abonelikler için otomatik olarak arar. Visual Studio Team Services hesabınıza bağlandığınızda, hem Microsoft hem de iş kullanarak oturum açın ya da Okul hesapları. Bu kullanıcı hesabı için çevrimiçi bir abonelikle varsa Visual Studio IDE sizin için kilidini otomatik.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı kullanarak kilidini açmak için
 
@@ -43,7 +43,7 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum a�
 2. Ürün anahtarı, sağlanan alana girin.
 
 > [!TIP]
->  Visual Studio'nun ön sürümlerini ürün anahtarları yoksa. IDE için yayın öncesi sürümler kullanmak için oturum açmanız gerekir.
+> Visual Studio'nun ön sürümlerini ürün anahtarları yoksa. IDE için yayın öncesi sürümler kullanmak için oturum açmanız gerekir.
 
 ## <a name="addressing-license-problem-states"></a>Lisans sorun durumlarını adresleme
 
@@ -63,7 +63,7 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum a�
    Kimlik bilgilerinizi girmek değil, eski gitmek belirteç başlatır. Bu durumda, hesap ayarları iletişim kutusu, belirtecinizi tamamen süresinin dolmasına bıraktığınız kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanmaya devam etmeden önce bu hesabınız veya lisansınız için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
 
 > [!IMPORTANT]
->  Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramasını önlemek için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.
+> Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramasını önlemek için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.
 
 ### <a name="updating-expired-licenses"></a>Süresi dolan lisanslar güncelleştiriliyor
  Aboneliğinizin süresi tamamen ve artık Visual Studio için erişim hakkına sahip, şunları yapmalısınız:

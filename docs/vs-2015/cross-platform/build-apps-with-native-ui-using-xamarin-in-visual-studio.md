@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443061"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 - [Sonraki adımlar](#next)
 
 > [!TIP]
->  Bu proje için tam kaynak kodunu bulabilirsiniz [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Bu proje için tam kaynak kodunu bulabilirsiniz [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
->   Güçlük veya hatalarla karşılaşırsanız lütfen hakkında sorularınızı [forums.xamarin.com](http://forums.xamarin.com). Birçok hataları açıklanan olan en son SDK Xamarin tarafından gerekli güncelleştirerek çözülebilir [Xamarin sürüm notları](https://developer.xamarin.com/releases/) her platform için.
+> Güçlük veya hatalarla karşılaşırsanız lütfen hakkında sorularınızı [forums.xamarin.com](http://forums.xamarin.com). Birçok hataları açıklanan olan en son SDK Xamarin tarafından gerekli güncelleştirerek çözülebilir [Xamarin sürüm notları](https://developer.xamarin.com/releases/) her platform için.
 >
 > [!NOTE]
->  Xamarin Geliştirici belgeleri, aşağıda listelenen birkaç izlenecek yollar hem hızlı başlangıç hem de yakından bölümleri ile de sunar. Tüm bu sayfalarda "Visual Studio" Visual Studio özel Kılavuzlar görmek için sağ üst köşede sayfanın seçili olduğundan emin olun.
+> Xamarin Geliştirici belgeleri, aşağıda listelenen birkaç izlenecek yollar hem hızlı başlangıç hem de yakından bölümleri ile de sunar. Tüm bu sayfalarda "Visual Studio" Visual Studio özel Kılavuzlar görmek için sağ üst köşede sayfanın seçili olduğundan emin olun.
 >
 > - Xamarin uygulamaları yerel UI ile:
 >
@@ -230,7 +230,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 1. İçinde **Çözüm Gezgini**, genişletme **WeatherApp.Droid**>**kaynakları**>**Düzen** klasörü ve Açık **Main.axml**. Bu dosya Görsel tasarımcıda açılır. (Java ile ilgili bir hata varsa, bkz. Bu [blog gönderisi](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    >  Projede diğer birçok dosyası vardır. Bunları keşfetmeye biraz daha fazla, bir Android projesi yapısına başlamak istiyorsanız ancak bu konunun kapsamı dışında olup [Kısım 2 yakından](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) xamarin.com üzerinde Hello Android konu.
+    > Projede diğer birçok dosyası vardır. Bunları keşfetmeye biraz daha fazla, bir Android projesi yapısına başlamak istiyorsanız ancak bu konunun kapsamı dışında olup [Kısım 2 yakından](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) xamarin.com üzerinde Hello Android konu.
 
 2. Seçip Tasarımcısı'nda görüntülenen varsayılan düğme silin.
 
@@ -239,7 +239,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
 4. Gelen **araç kutusu**, sürükleyin bir **RelativeLayout** tasarımcıya denetim. Bu denetim, diğer denetimler için üst kapsayıcı olarak kullanacaksınız.
 
     > [!TIP]
-    >  Herhangi bir zamanda düzenini düzgün görüntülenmesi yaramadı, dosyayı kaydedin ve arasında geçiş yapma **tasarım** ve **kaynak** yenilemek için sekmeler.
+    > Herhangi bir zamanda düzenini düzgün görüntülenmesi yaramadı, dosyayı kaydedin ve arasında geçiş yapma **tasarım** ve **kaynak** yenilemek için sekmeler.
 
 5. İçinde **özellikleri** penceresinde **arka plan** (stil grubunda) özelliğine `#545454`.
 
@@ -256,7 +256,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
     |**metin stili**|`bold`|
 
     > [!TIP]
-    >  Pek çok özellik seçebileceğiniz değerler, aşağı açılan listesini içermeyen dikkat edin.  Belirli bir özellik için kullanılacak dize değeri tahmin etmek zor olabilir. Öneriler için bir özelliğin adını aramayı deneyin [R.attr](http://developer.android.com/reference/android/R.attr.html) sınıfı sayfası.
+    > Pek çok özellik seçebileceğiniz değerler, aşağı açılan listesini içermeyen dikkat edin.  Belirli bir özellik için kullanılacak dize değeri tahmin etmek zor olabilir. Öneriler için bir özelliğin adını aramayı deneyin [R.attr](http://developer.android.com/reference/android/R.attr.html) sınıfı sayfası.
     >
     >  Ayrıca, hızlı web arama genellikle bir sayfaya müşteri adayları [ http://stackoverflow.com/ ](http://stackoverflow.com/) başkalarının kullanıldığı aynı özellik.
 
@@ -523,7 +523,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
      ![Android ve Windows Phone için hava durumu uygulaması](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
->  Bu proje için tam kaynak kodu [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Bu proje için tam kaynak kodu [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="Windows"></a> Windows Phone için kullanıcı Arabirimi tasarımı
  Şimdi biz Windows Phone için kullanıcı arabirimini tasarlayabileceğiniz paylaşılan kodunuza bağlayın ve sonra uygulamayı çalıştırın.
@@ -629,7 +629,7 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
      ![Windows sürümü çalışan uygulamanın](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
->  Bu proje için tam kaynak kodu [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Bu proje için tam kaynak kodu [github'daki mobil-samples deposuna](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="next"></a> Sonraki adımlar
  **Kullanıcı Arabirimi, iOS için çözüme ekleyin.**

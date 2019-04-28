@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428901"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Deyim Tamamlama
 Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazarak başlatılan öğenin son kullanıcılara yardımcı olur işlemidir. Bu konuda, deyim tamamlama nasıl çalıştığını ve dil hizmetinizde nasıl ele alır.
@@ -24,7 +24,7 @@ Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekird
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Deyim tamamlama uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlamayı görüntüleme](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="implementing-statement-completion"></a>Deyim tamamlama uygulama
  Çekirdek Düzenleyicisi'nde, deyim tamamlama etkileşimli olarak daha kolay yardımcı olur ve hızlı bir şekilde kod yazan özel bir kullanıcı arabirimini etkinleştirir. Deyim tamamlama, gerektiğinde, ilgili nesneleri veya sınıflar, belirli öğeleri anımsamak veya bir Yardım başvuru konusundaki aramak zorunda kalmadan önler görüntüleyerek yardımcı olur.

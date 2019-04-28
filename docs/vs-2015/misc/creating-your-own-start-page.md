@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432294"
 ---
 # <a name="creating-your-own-start-page"></a>Kendi başlangıç sayfası oluşturma
 Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sayfası oluşturarak, özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -31,7 +31,7 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
 1. İndirme ve yükleme [başlangıç sayfası proje şablonu](http://go.microsoft.com/fwlink/?LinkId=186204) Visual Studio Galerisi.  
   
     > [!WARNING]
-    >  Şu anda Visual Studio 2010 Başlangıç sayfası proje şablonu yükseltilmedi. Bu şablon yükseltme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > Şu anda Visual Studio 2010 Başlangıç sayfası proje şablonu yükseltilmedi. Bu şablon yükseltme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Şablonunu yükledikten sonra yeni bir başlangıç sayfası projesi oluşturur.  
   
@@ -101,4 +101,4 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   
- [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

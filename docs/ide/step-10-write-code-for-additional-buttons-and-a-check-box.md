@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 889cf092ae77eae7ef190c48b2949ddca646dc2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a397646823d133b66e66bb2bb5d10c2ae358ae53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430874"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10. Adım: Ek düğmeler ve onay kutusu için kod yazma
 Diğer dört yöntemi tamamlamaya artık hazırsınız. Bu kodu kopyalayıp, ancak bilgi almak istiyorsanız bu öğreticiden en iyi kodu yazıp IntelliSense kullanın.
@@ -23,7 +23,7 @@ Diğer dört yöntemi tamamlamaya artık hazırsınız. Bu kodu kopyalayıp, anc
  ![video bağlantısı](../data-tools/media/playvideo.gif)bu konunun video sürümü için bkz: [öğretici 1: Visual Basic'te - Video 5 resim görüntüleyici oluşturma](http://go.microsoft.com/fwlink/?LinkId=205216) veya [öğretici 1: İçinde resim görüntüleyici oluşturma C# -Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar olduğundan bu videolarda Visual Studio'nun önceki bir sürümü kullanın. Ancak, kavramlar ve yordamlar benzer şekilde Visual Studio'nun geçerli sürümünde çalışır.
 
 > [!NOTE]
->  En iyi uygulama olarak: Her zaman kodunuza yorum yapın. Yorumlar bir kişinin okuması için için bilgilerdir ve kodunuzu anlaşılır hale getirmek için zaman ayırmanız iyidir. Bir yorum satırındaki her şey program tarafından göz ardı edilir. Visual C# içinde bir satır başına iki eğik yazarak yorum (/ /), ve Visual Basic'te, bir satır tek tırnak işaretiyle (') başlatarak yorum yazabilirsiniz.
+> En iyi uygulama olarak: Her zaman kodunuza yorum yapın. Yorumlar bir kişinin okuması için için bilgilerdir ve kodunuzu anlaşılır hale getirmek için zaman ayırmanız iyidir. Bir yorum satırındaki her şey program tarafından göz ardı edilir. Visual C# içinde bir satır başına iki eğik yazarak yorum (/ /), ve Visual Basic'te, bir satır tek tırnak işaretiyle (') başlatarak yorum yazabilirsiniz.
 
 ## <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Ek düğmeler ve onay kutusu için kod yazma
 

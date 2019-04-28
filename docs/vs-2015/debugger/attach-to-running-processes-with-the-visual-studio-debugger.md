@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436804"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ Bazı uygulama türlerini (örneğin, Windows Store apps) için doğrudan bir i�
 |Visual Studio'dan başlatmamış bir Windows Evrensel (UWP), OneCore, HoloLens ve IOT uygulamasında hata ayıklama|Yüklenen uygulama paketinin hatalarını ayıklama|Yok|Kullanım **hata ayıklama / diğer hata ayıklama hedefleri / yüklenen uygulama paketinin hatalarını ayıklama** yerine **iliştirme**|
 
 > [!WARNING]
->  JavaScript'te yazılmış bir Windows Evrensel uygulaması iliştirmek için önce uygulama için hata ayıklamayı etkinleştirmeniz gerekir. Bkz: [hata ayıklayıcının](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows geliştirme Merkezi'nde.
+> JavaScript'te yazılmış bir Windows Evrensel uygulaması iliştirmek için önce uygulama için hata ayıklamayı etkinleştirmeniz gerekir. Bkz: [hata ayıklayıcının](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows geliştirme Merkezi'nde.
 
 > [!NOTE]
->  C++ programında yazılan koda eklenmesi hata ayıklayıcı için kod yayması gerekir `DebuggableAttribute`. Bu, kodunuzu otomatik olarak ile bağlayarak ekleyebileceğiniz [assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) bağlayıcı seçeneği.
+> C++ programında yazılan koda eklenmesi hata ayıklayıcı için kod yayması gerekir `DebuggableAttribute`. Bu, kodunuzu otomatik olarak ile bağlayarak ekleyebileceğiniz [assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) bağlayıcı seçeneği.
 
 ## <a name="what-debugger-features-can-i-use"></a>Hangi hata ayıklayıcısı özellikleri kullanabilir miyim?
 

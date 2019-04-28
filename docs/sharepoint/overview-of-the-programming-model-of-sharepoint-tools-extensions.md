@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421284"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Araç uzantılarının programlama modeline SharePoint genel bakış
   Visual Studio'da SharePoint araçları için bir uzantı oluşturduğunuzda, SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimlerini uygulayarak başlayın. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda Visual Studio ve SharePoint tarafından sağlanan diğer nesne modellerini türleri de kullanabilirsiniz. Bu nesne modellerinin her biri amacı anlamak ve bunları birbiriyle SharePoint araçları için uzantıları oluşturmak için nasıl kullanılacağını bilmek gerekir.
@@ -50,7 +50,7 @@ ms.locfileid: "60038476"
 - *Visual Studio Otomasyonu ve tümleştirme nesne modellerini*. SharePoint araçları nesne modeli kapsamı dışındaki bir Visual Studio özelliklerine erişmek için bu nesne modellerini kullanın.
 
     > [!NOTE]
-    >  Bazı nesneler Visual Studio Otomasyon nesneleri için SharePoint araçları nesne modeli ve tümleştirme nesne modelleri ve tersi, SharePoint Proje hizmetini kullanarak dönüştürebilirsiniz. Daha fazla bilgi için [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Bazı nesneler Visual Studio Otomasyon nesneleri için SharePoint araçları nesne modeli ve tümleştirme nesne modelleri ve tersi, SharePoint Proje hizmetini kullanarak dönüştürebilirsiniz. Daha fazla bilgi için [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *SharePoint sunucu ve istemci nesne modellerini*. Bu nesne modeli, bir SharePoint sitesi değiştirmek veya SharePoint Araçlar uzantısından bağlamında bir SharePoint sitesinden veri almak için kullanın.
 

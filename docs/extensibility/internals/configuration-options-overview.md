@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415151"
 ---
 # <a name="configuration-options-overview"></a>Yapılandırma seçeneklerine genel bakış
 Projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturulabilir, hatası ayıklanmış, çalıştırma ve/veya dağıtılan birden fazla yapılandırmaları destekler. Açıklanan özellikler, genellikle derleyici anahtarları ve dosya konumlarını adlandırılmış kümesi ile bir yapı türünü bir yapılandırmadır. Varsayılan olarak, yeni çözümleri iki yapılandırması içeren *hata ayıklama* ve *yayın*. Bu yapılandırmalar, kendi varsayılan ayarları kullanarak veya değiştirilmiş çözüm veya proje belirli gereksinimlerinizi karşılamak için uygulanabilir. Bazı paketler iki şekilde oluşturulabilir: yerinde bileşeni olarak veya bir ActiveX Düzenleyici. Projeleri birden çok yapılandırmada ancak destek gerekmez. Kullanılabilir tek yapılandırması varsa, bu yapılandırma tüm çözüm yapılandırmaları eşlenir.
@@ -36,7 +36,7 @@ Projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşt
 |*MyConfig*|Yok|\<MyConfig Win64 Ayarları >|
 
 > [!NOTE]
->  Oluşturamazsınız bir *MyConfig* Win32 platformu hedeflediğiniz proje sürece bırakan çözüm yapılandırma Win32 desteklemez.
+> Oluşturamazsınız bir *MyConfig* Win32 platformu hedeflediğiniz proje sürece bırakan çözüm yapılandırma Win32 desteklemez.
 
  Etkin bir çözüm yapılandırmasını değiştirme bu çözümde oluşturulan, çalıştırma, hata ayıklama dağıtılan veya proje yapılandırmaları kümesini seçer. Örneğin, etkin çözüm yapılandırmasını değiştirirseniz *yayın* için *hata ayıklama*, tüm projeler, çözüm içinde belirtilen proje yapılandırması ile otomatik olarak oluşturulur çözümün hata ayıklama yapılandırması. Ayrıca proje yapılandırmaları adlı *hata ayıklama* sürece kullanıcı ortamının Yapılandırma Yöneticisi'nde el ile değişiklikler yaptı.
 

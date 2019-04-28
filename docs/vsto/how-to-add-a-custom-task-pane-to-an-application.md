@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ac74d0e2c666926c5b88976146878991729628
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427918"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme
   VSTO eklentisi kullanarak bir özel görev bölmesi uygulamaları için yukarıda listelenen ekleyebilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
@@ -26,7 +26,7 @@ ms.locfileid: "60039849"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="add-a-custom-task-pane-to-an-application"></a>Uygulamaya özel görev bölmesi ekleme
 
@@ -55,7 +55,7 @@ ms.locfileid: "60039849"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  Bu kod, özel görev bölmesi uygulamasında etkin pencere ilişkilendirir. Bazı uygulamalar için görev bölmesinde diğer belgelerin veya öğelerin uygulamada göründüğüne emin olmak için bu kodu değiştirmek isteyebilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
+    > Bu kod, özel görev bölmesi uygulamasında etkin pencere ilişkilendirir. Bazı uygulamalar için görev bölmesinde diğer belgelerin veya öğelerin uygulamada göründüğüne emin olmak için bu kodu değiştirmek isteyebilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)

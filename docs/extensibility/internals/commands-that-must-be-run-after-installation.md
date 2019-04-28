@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418718"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Yükleme sonrasında çalıştırılması gereken komutları
 Uzantınızı aracılığıyla dağıtırsanız bir *.msi* dosyasını çalıştırmalısınız **devenv/Setup** sırayla uzantılarınızı bulmak Visual Studio yüklemenizin bir parçası olarak.
 
 > [!NOTE]
->  Bulma için bu konudaki bilgiler, geçerli *devenv.exe* Visual Studio 2008 ve önceki sürümleri. Bulma hakkında daha fazla bilgi için *devenv.exe* daha sonra Visual Studio sürümleriyle bkz [sistem gereksinimlerini algılama](../../extensibility/internals/detecting-system-requirements.md).
+> Bulma için bu konudaki bilgiler, geçerli *devenv.exe* Visual Studio 2008 ve önceki sürümleri. Bulma hakkında daha fazla bilgi için *devenv.exe* daha sonra Visual Studio sürümleriyle bkz [sistem gereksinimlerini algılama](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Devenv.exe Bul
  Her sürümün bulabilirsiniz *devenv.exe* , kayıt defterinden değerleri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yükleyicileri yazma, kayıt defteri değerlerini özellikleri olarak depolamak için RegLocator tablosu ve AppSearch tabloları kullanarak. Daha fazla bilgi için [sistem gereksinimlerini algılama](../../extensibility/internals/detecting-system-requirements.md).
@@ -58,7 +58,7 @@ Uzantınızı aracılığıyla dağıtırsanız bir *.msi* dosyasını çalışt
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Devenv.exe çalıştırılacak özel tablo satırları
 
-|Eylem|Tür|Kaynak|Hedef|
+|Eylem|Tür|Source|Hedef|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|
@@ -68,7 +68,7 @@ Uzantınızı aracılığıyla dağıtırsanız bir *.msi* dosyasını çalışt
  Özel Eylemler, bunları yüklenmesi sırasında yürütülmek üzere zamanlamak için InstallExecuteSequence tabloya yazılması gerekir. Özel eylemin durumunda çalıştırılmasını engellemek için karşılık gelen özelliği koşul sütununda her bir satırdaki kullanın sürümünü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sistemde yüklü değil.
 
 > [!NOTE]
->  Null değerli özellikleri değerlendirmek için `False` koşullarında kullanıldığında.
+> Null değerli özellikleri değerlendirmek için `False` koşullarında kullanıldığında.
 
  Her özel eylemiyle ilgili dizisini sütununun değeri, Windows Installer paketi diğer sırası değerleri bağlıdır. Sıralı değerleri olmalıdır şekilde *devenv.exe* InstallFinalize standart eylem hemen önce mümkün olduğunca Çalıştır özel eylemler kapatın.
 

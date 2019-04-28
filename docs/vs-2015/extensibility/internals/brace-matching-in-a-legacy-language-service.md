@@ -11,12 +11,12 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437643"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Ayraç Eşleştirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Ayraç eşleştirme ayraçlar ve küme ayraçlarının gibi birlikte gerçekleş
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Ayraç eşleştirme uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Eşleşen küme ayraçlarını görüntüleme](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink> Sınıf hem çiftleri destekler ve ile triples <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> ve <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> yöntemleri.  
   

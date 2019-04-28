@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440333"
 ---
 # <a name="build-office-solutions"></a>Office çözümleri oluşturun
   Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](../ide/compiling-and-building-in-visual-studio.md).
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 ## <a name="project-output-for-office-projects"></a>Office projeleri için proje çıktısı
  Office projeleri çıkış konumu *projectname*\bin\release veya *projectname*\bin\debug. Bir dağıtım dizinine oluşturulamıyor.
@@ -56,7 +56,7 @@ ms.locfileid: "60078934"
 - Bir program veritabanı (*PDB*) dosyası.
 
 > [!NOTE]
->  Yerel bilgisayar yerine bir uzak konuma bir belge düzeyi çözüm oluşturuyorsanız, tam yolunu uygulamanın Güven Merkezi'ndeki güvenilen konumlar listesine ekleyin. Daha fazla bilgi için bkz belgelere güven verme adlı bölüme [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+> Yerel bilgisayar yerine bir uzak konuma bir belge düzeyi çözüm oluşturuyorsanız, tam yolunu uygulamanın Güven Merkezi'ndeki güvenilen konumlar listesine ekleyin. Daha fazla bilgi için bkz belgelere güven verme adlı bölüme [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Uygulama düzeyi projeleri
  Bir VSTO eklenti projesi oluşturduğunuzda, proje çıktısına aşağıdakiler dahildir:

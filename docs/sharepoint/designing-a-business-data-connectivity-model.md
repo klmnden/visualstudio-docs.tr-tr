@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431295"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>İş verileri bağlantı modeli tasarlama
   Varlıklar ve yöntemleri için bir model dosyası ekleyerek iş verileri bağlantısı (BDC) hizmeti için bir model geliştirebilirsiniz. Bir varlık koleksiyonu veri alanlarını açıklar. Örneğin, bir varlık, bir veritabanındaki bir tabloda temsil edebilir. Bir yöntemi ekleme, silme veya varlıklar tarafından temsil edilen veri güncelleştirme gibi bir görevi gerçekleştirir. Daha fazla bilgi için [iş verilerini SharePoint ile tümleştirmeyi](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628422"
  Tek tek veya dış içerik türleri için güvenlik izinleri de ayarlayabilirsiniz. Bir modelin güvenlik izinleri ayarlama hakkında daha fazla bilgi için bkz. [İVB model Yönetimi](http://go.microsoft.com/fwlink/?LinkID=178884). Dış içerik türü güvenlik izinleri ayarlama hakkında daha fazla bilgi için bkz. [dış içerik türü Yönetim](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Bir çözüm yerel SharePoint sunucunuz üzerinde hata ayıklamak için bu ayarları kullanın. Üretim SharePoint sunucusunda İVB ilgili güvenlik ayarlarını yapılandırma hakkında daha fazla bilgi için bkz. [İş Verileri Bağlantı Hizmetleri güvenliğine genel bakış](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Bir çözüm yerel SharePoint sunucunuz üzerinde hata ayıklamak için bu ayarları kullanın. Üretim SharePoint sunucusunda İVB ilgili güvenlik ayarlarını yapılandırma hakkında daha fazla bilgi için bkz. [İş Verileri Bağlantı Hizmetleri güvenliğine genel bakış](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Bozuk model Ayıkla
  İlk kez hata ayıklayıcıyı başlattığınızda, Visual Studio için SharePoint modelin tamamı dağıtır. Her zaman için bundan sonra dağıtımlar arasında yaptığınız tüm değişiklikler Visual Studio SharePoint modelde güncelleştirir.

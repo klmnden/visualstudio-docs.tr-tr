@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414277"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>İzlenecek yol: Eylemler bölmesinden belgeye metin ekleme
   Bu yönerge, Microsoft Office Word belgesinde Eylemler bölmesi oluşturma işlemini gösterir. Eylemler bölmesinde girişini toplamak ve ardından metin belgeye gönderen iki denetimleri içerir.
@@ -34,7 +34,7 @@ ms.locfileid: "60088528"
 - Uygulama açıldığında eylemler bölmesini görüntüler.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -78,7 +78,7 @@ ms.locfileid: "60088528"
 2. Sözcük Seç **adı**olmadan paragraf işaretlerini seçerek ve tıklayın **Tamam**.
 
     > [!NOTE]
-    >  Paragraf işaretlerini, yer işareti dışında olmalıdır. Paragraf işaretlerini belgede görünmüyorsa tıklayın **Araçları** menüsünde **Microsoft Office Word Araçları** ve ardından **seçenekleri**. Tıklayın **görünümü** sekmesine tıklayın ve **paragraf işaretleri** onay kutusuna **Biçimlendirme işaretleri** bölümünü **seçenekleri** iletişim kutusu.
+    > Paragraf işaretlerini, yer işareti dışında olmalıdır. Paragraf işaretlerini belgede görünmüyorsa tıklayın **Araçları** menüsünde **Microsoft Office Word Araçları** ve ardından **seçenekleri**. Tıklayın **görünümü** sekmesine tıklayın ve **paragraf işaretleri** onay kutusuna **Biçimlendirme işaretleri** bölümünü **seçenekleri** iletişim kutusu.
 
 3. İçinde **özellikleri** penceresinde değişiklik **adı** özelliği **Bookmark1** için **showName**.
 

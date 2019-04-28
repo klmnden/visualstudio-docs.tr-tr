@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409364"
 ---
 # <a name="custom-colorable-items"></a>Özel Renklendirilebilir Öğeler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "54771711"
  IDE içinde renklendirilebilir öğeleri kullanıcı geçersiz kılmaları hallettiğinden **yazı tipleri ve renkler** iletişim kutusunda, gereken yalnızca özel renklendirilebilir öğeleri bir ad sağlayın. Bu ad görünür ne olduğunu **görüntü öğeleri** listesi. Renklendirilebilir öğeleri alfabetik sırada görünür. Dil hizmetinizin özel renklendirilebilir öğeleri gruplandırmak için dil adınızla her adı örneğin başlayabilirsiniz **NewLanguage - açıklama** ve **NewLanguage - anahtar sözcüğü**.  
   
 > [!CAUTION]
->  Dil adı, mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğesi adını içermelidir. Geliştirme sırasında renklendirilebilir öğelerinizden birini adını değiştirirseniz, renklendirilebilir öğelerinizi erişildiğini ilk kez oluşturulan önbelleğini sıfırlamanız gerekir. Deneysel önbellek dizininde genellikle Visual Studio SDK ile birlikte yüklenen Createexpınstance aracıyla sıfırlayabilir  
+> Dil adı, mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğesi adını içermelidir. Geliştirme sırasında renklendirilebilir öğelerinizden birini adını değiştirirseniz, renklendirilebilir öğelerinizi erişildiğini ilk kez oluşturulan önbelleğini sıfırlamanız gerekir. Deneysel önbellek dizininde genellikle Visual Studio SDK ile birlikte yüklenen Createexpınstance aracıyla sıfırlayabilir  
 >   
->  **C:\Program dosyaları (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program dosyaları (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Önbelleği sıfırlamak için çağrı `CreateExpInstance /Reset`. Createexpınstance hakkında daha fazla bilgi için bkz: [Createexpınstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md).  
+> Önbelleği sıfırlamak için çağrı `CreateExpInstance /Reset`. Createexpınstance hakkında daha fazla bilgi için bkz: [Createexpınstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md).  
   
  Listesindeki ilk öğe renklendirilebilir öğeleri hiçbir zaman başvuruluyor. İlk öğe için bir renklendirilebilir öğe dizini 0 karşılık gelir ve [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] her zaman varsayılan metin rengini ve bu öğenin öznitelikleri sağlar. Bir yer tutucu renklendirilebilir öğesi listesindeki ilk öğe olarak sağlamak için bu başvurulmayan öğesi uğraşmanızı en kolay yolu olan.  
   
@@ -71,4 +71,4 @@ ms.locfileid: "54771711"
  [Özel düzenleyicilerde söz dizimi renklendirmesi](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Eski dil hizmetinde söz dizimi renklendirmesi](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Söz dizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Nasıl yapılır: Yerleşik Renklendirilebilir Öğeler Kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

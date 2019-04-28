@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c045acab8741b7b20e830aa9969b575a399edff5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442249"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Nasıl yapılır: Performans verileri toplamayı duraklatma ve sürdürme
 Profil oluşturma oturumu sayfa penceresinden verileri etkileşimli olarak profil oluşturma koleksiyonu denetleyebilirsiniz.
@@ -25,7 +25,7 @@ Profil oluşturma oturumu sayfa penceresinden verileri etkileşimli olarak profi
  ![Profil oluşturma oturumu sayfasında](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
->  Performans oturumu ile profil oluşturma duraklatıldı başlayın sonra program yürütmesinde daha sonraki bir noktada profil oluşturmayı sürdürün. Performans başlatmak için profil oluşturma oturumu durduruldu, seçin **profil oluşturma duraklatıldı ile Performans Analizi Başlat** komutunu **hata ayıklama** menüsü.
+> Performans oturumu ile profil oluşturma duraklatıldı başlayın sonra program yürütmesinde daha sonraki bir noktada profil oluşturmayı sürdürün. Performans başlatmak için profil oluşturma oturumu durduruldu, seçin **profil oluşturma duraklatıldı ile Performans Analizi Başlat** komutunu **hata ayıklama** menüsü.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Duraklatmak için sürdürmek veya profil oluşturmayı durdur
 

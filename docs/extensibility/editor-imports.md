@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417353"
 ---
 # <a name="editor-imports"></a>Düzenleyici içeri aktarımları
 Bir dizi Düzenleyicisi Hizmetleri, fabrikaları ve erişim farklı türde çekirdek Düzenleyici uzantınızı sağlayan aracıları içeri aktarabilirsiniz. Örneğin, aktarabilirsiniz <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> sunmak için bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> için belirli bir içerik türü. (Bu Gezgin, bir metin arabelleği farklı türde aramaları gerçekleştirme sağlar.)
@@ -23,7 +23,7 @@ Bir dizi Düzenleyicisi Hizmetleri, fabrikaları ve erişim farklı türde çeki
  Bir düzenleyici içeri aktarma kullanılacak bir alan veya özellik bir Yönetilen Genişletilebilirlik Çerçevesi bileşen bölümü dışarı aktaran bir sınıfın aktarmadan.
 
 > [!NOTE]
->  Yönetilen Genişletilebilirlik Çerçevesi hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
+> Yönetilen Genişletilebilirlik Çerçevesi hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](/dotnet/framework/mef/index).
 
 ## <a name="import-syntax"></a>Söz dizimi içeri aktarma
  Aşağıdaki örnek, düzenleyici içeri aktarma seçenekleri factory hizmeti gösterir.
@@ -73,7 +73,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Dosya uzantıları arasındaki ilişki ve <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Koleksiyonu <xref:Microsoft.VisualStudio.Utilities.IContentType> nesneleri.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>nesneleri.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Nesneleri.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Birçok Düzenleyicisi bağdaştırıcısı nesneler:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Bir <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> verilen metni görünümü için nesne.|
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Bir <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|

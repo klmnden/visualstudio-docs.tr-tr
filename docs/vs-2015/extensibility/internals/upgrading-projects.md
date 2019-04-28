@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441249"
 ---
 # <a name="upgrading-projects"></a>Projeleri Yükseltme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Proje modeli için bir sürümünden değişiklikleri [!INCLUDE[vsprvs](../../in
  Tüm ilgili genel dosyaları güncelleştirdikten sonra her proje fabrikası, bir proje oluşturmak seçebilirsiniz. Proje uygulama desteklemelidir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Yöntemi tüm ilgili proje öğeleri yükseltmek sonra çağrılır.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Yöntemi SVsUpgradeLogger hizmet sağlamaz. Bu hizmet, çağrılarak alınabilir <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Yöntemi SVsUpgradeLogger hizmet sağlamaz. Bu hizmet, çağrılarak alınabilir <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>En İyi Yöntemler  
  Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> hizmetinin, bir dosya düzenlemeden önce düzenleyebilir ve kaydetmeden önce kaydedebilirsiniz olmadığını denetleyin. Bu yedekleme yardımcı olur ve yükseltme uygulamaları işlemek için kaynak denetimi altında proje dosyaları, dosyaları yetersiz izinler ve benzeri.  

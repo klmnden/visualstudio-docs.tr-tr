@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430497"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>UML model öğelerine stereotipler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ UML model öğesine açıklama eklemek ve özel özellikler sağlamak için bir 
 1. Model öğe veya ilişki, diyagram üzerinde veya sağ **UML Model Gezgini**ve ardından **özellikleri**.  
   
     > [!NOTE]
-    >  Birkaç öğe için aynı stereotipler eklemek, birçok öğeyi seçin ve ardından bunları birine sağ tıklayın.  
+    > Birkaç öğe için aynı stereotipler eklemek, birçok öğeyi seçin ve ardından bunları birine sağ tıklayın.  
   
 2. Tıklayın **stereotipler** özelliği ve uygulamak istediğiniz stereotipler seçin.  
   
      «Ayraç» içinde model öğesi çoğu öğe ve ilişki türleri için Seçili stereotipler görünür.  
   
     > [!NOTE]
-    >  Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
+    > Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
   
 3. Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
   

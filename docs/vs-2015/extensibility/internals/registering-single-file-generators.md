@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436603"
 ---
 # <a name="registering-single-file-generators"></a>Tek Dosya Oluşturucuları Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60055424"
          Gerekli. Bu özel araç tarafından üretilen dosyaları türlerinden görsel tasarımcılar için kullanılabilir olup olmadığını gösterir. Bu parametrenin değeri türleri görsel tasarımcılar için kullanılabilir değil (sıfır) 0 veya (bir adet) 1 türleri için görsel tasarımcılar kullanılabilir olması gerekir.  
   
     > [!NOTE]
-    >  Ayrı ayrı, özel aracın kullanılabilir olmasını istediğiniz her dil için özel aracı kaydetmeniz gerekir.  
+    > Ayrı ayrı, özel aracın kullanılabilir olmasını istediğiniz her dil için özel aracı kaydetmeniz gerekir.  
   
      Örneğin, MSDataSetGenerator kendini kez her dil için kaydeder:  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2e2b21f69d0688f3554aec8cf751cf674c2b5e30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411469"
 ---
 # <a name="text-template-control-blocks"></a>Metin Şablonu Denetim Blokları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Found another one!
 ```  
   
 > [!WARNING]
->  Her zaman {...}'ni kullanın Katıştırılmış düz metin içeren iç içe geçmiş deyimler sınırlandırmak için. Aşağıdaki örnek düzgün şekilde çalışmayabilir:  
+> Her zaman {...}'ni kullanın Katıştırılmış düz metin içeren iç içe geçmiş deyimler sınırlandırmak için. Aşağıdaki örnek düzgün şekilde çalışmayabilir:  
 >   
->  `<# if (ShouldPrint) #> Some text. -- WRONG`  
+> `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
->  Bunun yerine {küme ayraçları}, şu şekilde içermelidir:  
+> Bunun yerine {küme ayraçları}, şu şekilde içermelidir:  
   
 ```  
   
@@ -120,7 +120,7 @@ Some text.
 ```  
   
 > [!NOTE]
->  Bir sınıf özelliği denetim bloğu, standart denetim blokları aynı şablon dosyasında tarafından izlenmemelidir. Ancak, bu kısıtlama kullanarak sonucu için geçerli değildir `<#@include#>` yönergeleri. Eklenen her dosya, sınıf özelliği bloklarını tarafından izlenen standart blokları olabilir.  
+> Bir sınıf özelliği denetim bloğu, standart denetim blokları aynı şablon dosyasında tarafından izlenmemelidir. Ancak, bu kısıtlama kullanarak sonucu için geçerli değildir `<#@include#>` yönergeleri. Eklenen her dosya, sınıf özelliği bloklarını tarafından izlenen standart blokları olabilir.  
   
  Bir sınıf özelliği denetim bloğu metin ve ifade bloklarında ekleyerek çıkış oluşturan bir işlev oluşturabilirsiniz. Örneğin:  
   

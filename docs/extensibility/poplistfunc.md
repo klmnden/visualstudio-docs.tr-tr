@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434232"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Bu geri çağırma için sağlanan [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE tarafından ve kaynak denetimi eklentisi tarafından bir dosya veya dizinlerin listesini güncelleştirmek için kullanılır (Ayrıca sağlanan `SccPopulateList` işlevi).
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  İsteğe bağlı olarak ekleyin veya dosya listeden silmek için kaynak denetimi eklentisi isteyen her dosya için tümleştirilmesidir, bu işlevi çağıran `lpFileName`. `fAddRemove` Bayrak listeye eklemek için yeni bir dosya veya silmek için eski bir dosyayı belirtir. `nStatus` Parametre dosyanın durumunu sağlar. Eklenti SCC dosya eklemeye ve silmeye sona erdiğinde arasında döndürür [SccPopulateList](../extensibility/sccpopulatelist-function.md) çağırın.
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Özelliği bit Visual Studio için gereklidir.
+> `SCC_CAP_POPULATELIST` Özelliği bit Visual Studio için gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)

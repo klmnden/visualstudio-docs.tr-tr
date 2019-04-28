@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436118"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubu
  Üst düzey öğesi `Symbols` bölüm [GuidSymbol öğesi](../../extensibility/guidsymbol-element.md). `GuidSymbol` öğe adları IDE tarafından paketleri ve bunların bileşen parçalarına tanımlamak için kullanılan GUID'lere eşleyin.  
   
 > [!NOTE]
->  GUID'ler, Visual Studio Paket şablon tarafından otomatik olarak oluşturulur. Tıklayarak benzersiz bir GUID oluşturabilirsiniz **GUID Oluştur** üzerinde **Araçları** menüsü.  
+> GUID'ler, Visual Studio Paket şablon tarafından otomatik olarak oluşturulur. Tıklayarak benzersiz bir GUID oluşturabilirsiniz **GUID Oluştur** üzerinde **Araçları** menüsü.  
   
  İlk `GuidSymbol` öğesi, "GUID [PackageName] Pkg", paket GUID'idir. Paketi yüklemek için Visual Studio tarafından kullanılan GUID budur. Genellikle, alt öğe yok.  
   

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430694"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint sitesi sütunlar oluşturma işlemini göstermektedir: veya *alanları*— site sütunlarını kullanan bir içerik türü yanı sıra. Ayrıca, yeni içerik türü kullanan bir liste oluşturma işlemini gösterir.
@@ -112,7 +112,7 @@ ms.locfileid: "60057738"
 6. Sonra içerik türü Tasarımcısı görünen **sütunları** sekmesinde, üç site daha önce tanımlanan sütunları ekleyin: **Hasta adı**, **hasta kimliği**, ve **Doktor adı**. Bu sütunlar eklemek için site sütunları listesinde ilk liste kutusunu seçin. **görünen ad**, her bir site sütunu aynı anda listeden birini seçin.
 
     > [!TIP]
-    >  Daha hızlı bir şekilde site sütunları seçmek için sütunun adını ilk birkaç harfini girerek listeyi filtreleyin.
+    > Daha hızlı bir şekilde site sütunları seçmek için sütunun adını ilk birkaç harfini girerek listeyi filtreleyin.
 
 7. Üç özel site sütunu ek olarak, ekleme **açıklamaları** site sütunları listeden site sütunu.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057738"
      Özel liste sütun bu listede yalnızca geçerlidir. Özel liste sütunu bir listesine eklediğinizde, listeye eklenen tüm sütunları içeren yeni bir liste içerik türü, oluşturulur ve varsayılan liste olarak ayarlayın.
 
     > [!TIP]
-    >  Site sütunlar listesinden bir sütun seçerseniz, varolan bir site sütunu kullanılır. Hiçbir sütun listesinde seçerek olmadan bir sütun adı değerini girerseniz, aynı ada sahip bir sütun zaten listede mevcut olsa bile ancak bir özel liste sütunu oluşturulur.
+    > Site sütunlar listesinden bir sütun seçerseniz, varolan bir site sütunu kullanılır. Hiçbir sütun listesinde seçerek olmadan bir sütun adı değerini girerseniz, aynı ada sahip bir sütun zaten listede mevcut olsa bile ancak bir özel liste sütunu oluşturulur.
 
      İsteğe bağlı olarak, özel liste sütunu için veri türünü ayarlamak yerine **tek satır metin**, arama için bunun yerine bu sütunun veri türünü ayarlayabilirsiniz ve değerlerinin bir tablo ya da başka bir listeye alınması. Arama sütunları hakkında daha fazla bilgi için bkz. [listesi ilişkileri SharePoint 2010'daki](http://go.microsoft.com/fwlink/?LinkId=224994) ve [aramalar ve liste ilişkileri](http://go.microsoft.com/fwlink/?LinkID=224995).
 

@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443784"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
  Bu yaklaşımın avantajı, tek bir dağıtımı oluşturur ve yerelleştirilmiş dağıtım sürecinizi basitleştirir içindir. Çalışma zamanında, uygun bir uydu derlemesini, kullanıcının Windows işletim sistemine bağlı olarak kullanılan varsayılan kültürü kullanılır. Bu yaklaşımın bir dezavantajı, uygulama yüklendiğinde veya güncelleştirildiğinde bir istemci bilgisayar üzerinde olduğunda, tüm uydu derlemeleri indirir ' dir. Uygulamanız çok sayıda dizeleri veya müşterilerinizin yavaş ağ bağlantınız varsa bu işlem sırasında uygulama güncelleştirmesi performansını etkileyebilir.  
   
 > [!NOTE]
->  Bu yaklaşım, uygulamanızın yüksekliğini, genişliğini ve farklı kültürler farklı bir metin dizesi boyutlarının otomatik olarak uyum sağlayacak şekilde denetimleri konumunu ayarlar varsayar. Windows Forms denetimleri ve kolayca yerelleştirilebilir dahil olmak üzere bir form Tasarım olanak tanıyan teknolojileri çeşitli içeren <xref:System.Windows.Forms.FlowLayoutPanel> ve <xref:System.Windows.Forms.TableLayoutPanel> denetimlerin yanı sıra <xref:System.Windows.Forms.Control.AutoSize%2A> özelliği.  Ayrıca bkz: [nasıl yapılır: AutoSize ve TableLayoutPanel denetimini kullanarak Windows Forms'ta yerelleştirmeyi destekleme](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Bu yaklaşım, uygulamanızın yüksekliğini, genişliğini ve farklı kültürler farklı bir metin dizesi boyutlarının otomatik olarak uyum sağlayacak şekilde denetimleri konumunu ayarlar varsayar. Windows Forms denetimleri ve kolayca yerelleştirilebilir dahil olmak üzere bir form Tasarım olanak tanıyan teknolojileri çeşitli içeren <xref:System.Windows.Forms.FlowLayoutPanel> ve <xref:System.Windows.Forms.TableLayoutPanel> denetimlerin yanı sıra <xref:System.Windows.Forms.Control.AutoSize%2A> özelliği.  Ayrıca bkz: [nasıl yapılır: AutoSize ve TableLayoutPanel denetimini kullanarak Windows Forms'ta yerelleştirmeyi destekleme](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Her bir kültür için bir dağıtım oluşturun  
  Bu dağıtım stratejisini içinde birden çok dağıtım oluşturun. Her dağıtımda, yalnızca belirli bir kültür için gereken uydu derleme içerir ve dağıtım kültüre özgü olarak işaretleyin.  

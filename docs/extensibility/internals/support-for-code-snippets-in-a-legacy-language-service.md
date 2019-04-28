@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428811"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kod Parçacıkları için Destek
 Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacığının kendisi bir XML tabanlı bir alan kümesi ile şablonudur. Kod parçacığı eklenir ve, kod parçacığının eklenmiş olduğu bağlama bağlı olarak farklı değerlere sahip olabilir, bu alanlar vurgulanır. Hemen kod parçacığı eklendikten sonra kod parçacığı dil hizmeti biçimlendirebilirsiniz.
@@ -27,7 +27,7 @@ Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacı
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz: [izlenecek yol: Kod parçacıkları uygulama](../../extensibility/walkthrough-implementing-code-snippets.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Yönetilen kod parçacıkları için paket Framework desteği
  Kod parçacığını eklemek için şablonu okuma gelen çoğu kod parçacığı işlevleri (MPF) yönetilen paket çerçevesini destekler ve özel etkinleştirme düzenleme modunda. Destek aracılığıyla yönetilir <xref:Microsoft.VisualStudio.Package.ExpansionProvider> sınıfı.
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [Eski Dil Hizmeti Özellikleri](../../extensibility/internals/legacy-language-service-features1.md)
 - [Eski Dil Hizmeti Kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Kod Parçacıkları](../../ide/code-snippets.md)
-- [İzlenecek yol: (Eski uygulama) yüklü kod parçacıklarının listesini alma](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [İzlenecek yol: Yüklü Kod Parçacıklarının Listesini Alma (Eski Uygulama)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

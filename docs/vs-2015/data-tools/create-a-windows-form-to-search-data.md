@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436935"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
--   Yeni bir Windows Forms uygulaması projesi oluşturma.  
+- Yeni bir Windows Forms uygulaması projesi oluşturma.  
   
--   Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.  
+- Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.  
   
--   İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları** penceresi.  
+- İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları** penceresi.  
   
--   Öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.  
+- Öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.  
   
--   Formdaki verileri görüntülemek için denetimler ekleme.  
+- Formdaki verileri görüntülemek için denetimler ekleme.  
   
--   Tamamlama **arama ölçütü Oluşturucu** iletişim kutusu.  
+- Tamamlama **arama ölçütü Oluşturucu** iletişim kutusu.  
   
--   Parametreleri forma girme ve parametreli sorguyu yürütme.  
+- Parametreleri forma girme ve parametreli sorguyu yürütme.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için şunlar gerekir:  
   
--   Northwind örnek veritabanına erişim.  
+- Northwind örnek veritabanına erişim.  
   
 ## <a name="create-the-windows-application"></a>Windows uygulaması oluşturma  
  İlk adım oluşturmaktır bir **Windows uygulama**. Projeye bir ad atamak Bu adımda isteğe bağlıdır, ancak daha sonra kaydetmeniz çünkü Buraya bir ad vermeniz.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Yeni bir Windows Uygulaması projesi oluşturmak için  
   
-1.  Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
+1. Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
   
-2.  Projeyi adlandırın `WindowsSearchForm`.  
+2. Projeyi adlandırın `WindowsSearchForm`.  
   
-3.  Seçin **Windows uygulama** tıklatıp **Tamam**.  
+3. Seçin **Windows uygulama** tıklatıp **Tamam**.  
   
      **WindowsSearchForm** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -75,25 +75,25 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
+1. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
   
-2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.  
+2. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.  
   
-3.  Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
+3. Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
   
-4.  Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:  
+4. Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:  
   
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
-    -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
+    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
+5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.  
   
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.  
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.  
   
-8.  Seçin **müşteriler** tablosunu ve ardından **son**.  
+8. Seçin **müşteriler** tablosunu ve ardından **son**.  
   
      **NorthwindDataSet** projenize eklenir ve **müşteriler** tablo görünür **veri kaynakları** penceresi.  
   
@@ -102,9 +102,9 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Form üzerinde veri bağlama denetimleri oluşturmak için  
   
-1.  Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.  
+1. Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.  
   
-2.  Sürükleme **müşteriler** düğümünden **veri kaynakları** penceresinden formunuza.  
+2. Sürükleme **müşteriler** düğümünden **veri kaynakları** penceresinden formunuza.  
   
      A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
@@ -113,11 +113,11 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Parametreleri girmek üzere parametreli sorgu ve denetimler oluşturmak için  
   
-1.  Seçin <xref:System.Windows.Forms.DataGridView> denetlemek ve ardından **Sorgu Ekle** üzerinde **veri** menüsü.  
+1. Seçin <xref:System.Windows.Forms.DataGridView> denetlemek ve ardından **Sorgu Ekle** üzerinde **veri** menüsü.  
   
-2.  Tür `FillByCity` içinde **yeni sorgu adı** alanı **arama ölçütü Oluşturucu** iletişim kutusu.  
+2. Tür `FillByCity` içinde **yeni sorgu adı** alanı **arama ölçütü Oluşturucu** iletişim kutusu.  
   
-3.  Ekleme `WHERE City = @City` sorguya **sorgu metni** alan.  
+3. Ekleme `WHERE City = @City` sorguya **sorgu metni** alan.  
   
      Sorgu aşağıdakine benzemelidir:  
   
@@ -128,9 +128,9 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Erişim ve OLE DB veri kaynakları, soru işareti kullanın ('? ') parametreleri belirtmek için bu nedenle WHERE yan tümcesi şuna benzeyecektir: `WHERE City = ?`.  
+    > Erişim ve OLE DB veri kaynakları, soru işareti kullanın ('? ') parametreleri belirtmek için bu nedenle WHERE yan tümcesi şuna benzeyecektir: `WHERE City = ?`.  
   
-4.  Tıklayın **Tamam** kapatmak için **arama ölçütü Oluşturucu** iletişim kutusu.  
+4. Tıklayın **Tamam** kapatmak için **arama ölçütü Oluşturucu** iletişim kutusu.  
   
      A **FillByCityToolStrip** formuna eklenir.  
   
@@ -139,18 +139,18 @@ Sık rastlanan bir uygulama senaryosu seçilen verileri form üzerinde görünt�
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Uygulamayı çalıştırmak için F5'e basın.  
+1. Uygulamayı çalıştırmak için F5'e basın.  
   
-2.  Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.  
+2. Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.  
   
      Veri Kılavuzu ölçütlere uyan müşterilerle doldurulur. Bu örnekte, veri kılavuzu yalnızca değeri olan müşterileri görüntüler **Londra** içinde kendi **Şehir** sütun.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, parametreli form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
--   İlgili verileri görüntüleyen denetimler ekleme.  
+- İlgili verileri görüntüleyen denetimler ekleme.  
   
--   Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

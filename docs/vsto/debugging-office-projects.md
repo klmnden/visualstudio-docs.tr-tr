@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441875"
 ---
 # <a name="debug-office-projects"></a>Office projelerinde hata ayıklama
   Office projeleri aynı Microsoft kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diğer için kullandığınız araçları [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı, kesme noktaları yerleştirin ve değişkenleri görüntüleme olanağı gibi özellikleri **Yereller** penceresinde, Office projelerinde hata ayıklaması yaparken de kullanılabilir. Hakkında daha fazla bilgi için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklama araçları, bkz: [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Hata ayıklamayı kolaylaştırmak için derleme ve hata ayıklama önce Office uygulamasının tüm örneklerini kapatın.
+> Hata ayıklamayı kolaylaştırmak için derleme ve hata ayıklama önce Office uygulamasının tüm örneklerini kapatın.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 ## <a name="start-and-stop-the-debugger"></a>Başlatma ve durdurma hata ayıklayıcı
  Diğer hata ayıklama Başlat gibi bir Office projesi hata ayıklamaya başlayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeleri; Örneğin, basabilirsiniz **F5** anahtarı. Bir VSTO eklenti projesinde hata ayıklamaya başladığınızda, hedeflenen Office uygulaması için yeni bir işlem başlatıldı ve VSTO eklentisi yüklenir.

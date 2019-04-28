@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426940"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
    Örnekler için bkz: [Görselleştirme ve modelleme SDK'sı Web sitesi](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  Kesme, yapıştırma, Tümünü Seç ve yazdırma gibi bazı mevcut komutları davranışını CommandSet.cs yöntemleri geçersiz kılarak de değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> Kesme, yapıştırma, Tümünü Seç ve yazdırma gibi bazı mevcut komutları davranışını CommandSet.cs yöntemleri geçersiz kılarak de değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>MEF kullanarak bir komut tanımlama  
  Yönetilen uzantı çerçevesi (MEF) diyagram menüsünden menü komutlarını tanımlama alternatif bir yöntem sağlar. Birincil amacı, sizin tarafınızdan veya diğer üçüncü taraflarca genişletilmesi DSL etkinleştirmektir. Kullanıcılar yalnızca DSL yüklemeyi seçebilirsiniz veya DSL ve uzantılarını yükleyebilirsiniz. Ancak, MEF MEF DSL üzerinde etkinleştirmek için ilk iş sonra kısayol menü komutlarını tanımlama işlemlerini de azaltır.  
@@ -90,7 +90,7 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
     ```  
   
     > [!NOTE]
-    >  Her bir düğme veya grubu bir tamsayı kimliği bir GUID ile tanımlanır Çeşitli gruplar ve düğmeleri aynı GUID ile oluşturabilirsiniz. Ancak, farklı kimlikleri olması gerekir. GUID adlarına ve kimliği adları gerçek GUID'leri ve kimlikleri sayısal çevrilir `<Symbols>` düğümü.  
+    > Her bir düğme veya grubu bir tamsayı kimliği bir GUID ile tanımlanır Çeşitli gruplar ve düğmeleri aynı GUID ile oluşturabilirsiniz. Ancak, farklı kimlikleri olması gerekir. GUID adlarına ve kimliği adları gerçek GUID'leri ve kimlikleri sayısal çevrilir `<Symbols>` düğümü.  
   
 3. Komutu için görünürlük kısıtlama ekleyebilirsiniz, böylece yalnızca, etki alanına özgü dil bağlamında yüklenir. Daha fazla bilgi için [VisibilityConstraints öğesi](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ Kullanıcılarınız için DSL'nizi özel görevleri gerçekleştirebilmeleri i�
 5. Değiştirin `{000...000}` grupları ve menü öğeleri tanımlayan GUID. Yeni bir GUID almak için kullanın **GUID Oluştur** aracındaki **Araçları** menüsü.  
   
     > [!NOTE]
-    >  Daha fazla grup veya menü öğeleri eklerseniz, aynı GUID kullanabilirsiniz. İçin yeni değerler ancak kullanmalıdır `IDSymbols`.  
+    > Daha fazla grup veya menü öğeleri eklerseniz, aynı GUID kullanabilirsiniz. İçin yeni değerler ancak kullanmalıdır `IDSymbols`.  
   
 6. Bu yordamdan kopyaladığınız kodunda kendi dizelerle aşağıdaki dizelerden her örneğini değiştirin:  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Eklenen, aynı GUID değeri kullanın **Commands.vsct**.  
   
 > [!NOTE]
->  VSCT dosyasının sembolleri bölümünü değiştirirseniz, ayrıca bu bildirimler eşleşecek şekilde değiştirmeniz gerekir. Ayrıca Package.tt sürüm numarası artmalıdır  
+> VSCT dosyasının sembolleri bölümünü değiştirirseniz, ayrıca bu bildirimler eşleşecek şekilde değiştirmeniz gerekir. Ayrıca Package.tt sürüm numarası artmalıdır  
   
  Menü komutlarınızı bu komutu kümenin bir parçası olarak kaydedin. `GetMenuCommands()` Diyagram, başlatıldıktan sonra çağrılır:  
   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427780"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme
   Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler.
@@ -94,7 +94,7 @@ ms.locfileid: "60104531"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  Oluşturmak istiyorsanız bir <xref:Microsoft.Office.Tools.Word.Bookmark> varolan bir denetimi <xref:Microsoft.Office.Interop.Word.Bookmark>, kullanın <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> yöntemi ve mevcut geçişi <xref:Microsoft.Office.Interop.Word.Bookmark>.
+    > Oluşturmak istiyorsanız bir <xref:Microsoft.Office.Tools.Word.Bookmark> varolan bir denetimi <xref:Microsoft.Office.Interop.Word.Bookmark>, kullanın <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> yöntemi ve mevcut geçişi <xref:Microsoft.Office.Interop.Word.Bookmark>.
 
 ## <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesinde yer işareti denetimi ekleme
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> programlı bir şekilde herhangi bir açık belgeye bir VSTO eklenti kullanarak çalışma zamanında denetimler. Bunu yapmak için oluşturmak bir <xref:Microsoft.Office.Tools.Word.Document> barındıran bir açık belgeye dayalı öğesini ve ardından yöntemlerinin <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> bu konak öğesi özelliği. Eklemek için kullanabileceğiniz iki yöntem aşırı yüklemesi vardır bir <xref:Microsoft.Office.Tools.Word.Bookmark> aşağıdaki yollarla denetimi:

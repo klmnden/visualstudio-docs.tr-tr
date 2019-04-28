@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420789"
 ---
 # <a name="register-an-expression-evaluator"></a>İfade değerlendiricisi kaydetme
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  İfade değerlendirici (EE) kendisi Windows COM ortam ve Visual Studio ile bir sınıf üreteci olarak kaydetmeniz gerekir. Böylece hata ayıklama altyapısı (DE) adres alanı veya varlık EE başlatır, bağlı olarak Visual Studio adres alanı eklenen bir EE DLL olarak ayarlanır.
 
@@ -101,7 +101,7 @@ namespace EEMC
  EE DLL uygulayan `DllRegisterServer` COM ortam yanı sıra Visual Studio kendisini kaydetmek için işlevi.
 
 > [!NOTE]
->  Örnek kayıt defteri kod MyCEE kod dosyasında bulabilirsiniz *dllentry.cpp*, VSIP yüklemesinde EnVSDK\MyCPkgs\MyCEE altında bulunur.
+> Örnek kayıt defteri kod MyCEE kod dosyasında bulabilirsiniz *dllentry.cpp*, VSIP yüklemesinde EnVSDK\MyCPkgs\MyCEE altında bulunur.
 
 ### <a name="dll-server-process"></a>DLL sunucu işlemi
  EE DLL sunucu kaydı sırasında:
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`Bu EE çalışma hata ayıklama altyapısı (DE) s|
 
     > [!NOTE]
-    >  `metricLanguage``GUID` Tanımlayan adı, ancak dil olan `guidLang` bağımsız değişkeni `SetEEMetric` , dil seçer. Derleyici hata ayıklama bilgileri dosyası oluşturduğunda, uygun yazmalısınız `guidLang` DE kullanmak için hangi EE bilebilmesi. DE genellikle bu dil için Sembol sağlayıcısı ister `GUID`, hata ayıklama bilgileri dosyasında depolanır.
+    > `metricLanguage``GUID` Tanımlayan adı, ancak dil olan `guidLang` bağımsız değişkeni `SetEEMetric` , dil seçer. Derleyici hata ayıklama bilgileri dosyası oluşturduğunda, uygun yazmalısınız `guidLang` DE kullanmak için hangi EE bilebilmesi. DE genellikle bu dil için Sembol sağlayıcısı ister `GUID`, hata ayıklama bilgileri dosyasında depolanır.
 
 3. Visual Studio ile anahtarları hkey_local_machıne\software\microsoft\visualstudio altında oluşturarak kaydettirir\\*X.Y*burada *X.Y* kaydetmek için Visual Studio sürümüdür.
 

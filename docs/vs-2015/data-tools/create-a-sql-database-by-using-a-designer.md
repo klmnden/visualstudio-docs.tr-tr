@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436962"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Bir tasarımcı kullanarak bir SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası ol
 6. En az üç sipariş için veri ekleyin.  
   
     > [!IMPORTANT]
-    >  Tüm sipariş kimlikleri ve sipariş miktarlarının tam sayılar olduğundan ve her müşteri kimliğinin Müşteriler tablosunun CustomerID sütununda belirttiğiniz bir değerle eşleştiğinden emin olun.  
+    > Tüm sipariş kimlikleri ve sipariş miktarlarının tam sayılar olduğundan ve her müşteri kimliğinin Müşteriler tablosunun CustomerID sütununda belirttiğiniz bir değerle eşleştiğinden emin olun.  
   
 7. Menü çubuğunda, seçin **dosya** > **Tümünü Kaydet**.  
   
 8. Menü çubuğunda, seçin **dosya** > **çözümü Kapat**.  
   
     > [!NOTE]
-    >  En iyi uygulama yöntemi olarak, az önce oluşturduğunuz veritabanı dosyasını kopyalayarak ve daha sonra kopyayı diğer bir konuma yapıştırarak ya da kopyaya başka bir ad vererek yedekleyebilirsiniz.  
+    > En iyi uygulama yöntemi olarak, az önce oluşturduğunuz veritabanı dosyasını kopyalayarak ve daha sonra kopyayı diğer bir konuma yapıştırarak ya da kopyaya başka bir ad vererek yedekleyebilirsiniz.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Bazı örnek verilerle bir yerel veritabanı dosyasına sahip olduğunuza göre veritabanı görevlerini gösteren izlenecek yollar tamamlayabilirsiniz.

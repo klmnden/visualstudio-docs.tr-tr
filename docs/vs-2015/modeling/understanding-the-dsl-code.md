@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426954"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
  Bu konudaki örnekler çoğu kaynağı olan çözümü oluşturmak için gelen bir DSL oluşturma **bileşeni modelleri** çözüm şablonu. Bu, yeni bir DSL çözümü oluşturduğunuzda görüntülenen standart şablonların biridir.  
   
 > [!NOTE]
->  Bileşen diyagramları DSL şablonu Visual Studio'da mimari menüsü kullanarak oluşturabileceğiniz UML Bileşen diyagramları ilgili değildir. İçinde **yeni proje** iletişim kutusunda **diğer proje Types\Extensibility** ve ardından **etki alanına özgü dil tasarımcısını**.  
+> Bileşen diyagramları DSL şablonu Visual Studio'da mimari menüsü kullanarak oluşturabileceğiniz UML Bileşen diyagramları ilgili değildir. İçinde **yeni proje** iletişim kutusunda **diğer proje Types\Extensibility** ve ardından **etki alanına özgü dil tasarımcısını**.  
   
  Bu çözüm şablonu ile aşina değilseniz F5 ve deneyi tuşuna basın. Bir bağlantı noktası aracını bileşenin üzerine sürükleyerek bağlantı noktaları oluşturma ve bağlantı noktaları bağlanabildiğinizi özellikle dikkat edin.  
   
@@ -133,7 +133,7 @@ Bir etki alanına özgü dil (DSL) çözümü okumak ve DSL içinde örneklerini
   Etki alanı modeli temsil eden sınıf. Öğesinden türetilen <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  Bu modelin kök sınıfı ile aynı değildir.  
+> Bu modelin kök sınıfı ile aynı değildir.  
   
  Kopyalama ve Sil kapanışlar tanımlamak diğer öğeleri olması gereken bir öğe kopyalandığında veya dahil. Ayarlayarak bu davranışı denetleyebilirsiniz **yayar kopyalama** ve **yayar Sil** rollerinin her ilişkinin her iki tarafındaki özellikleri. Değerleri dinamik olarak belirlendiği istiyorsanız, kapanış sınıflarının yöntemleri geçersiz kılmak için kod yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kopyalama ve yapıştırma davranışını programlama - yeniden yönlendirme](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Bu dosyayı özelleştirmek için düzenleme `.tt` dosya.  
   
 > [!WARNING]
->  Simgeler veya görüntü gibi kaynakları içerecek şekilde .tt dosyayı düzenlerseniz, kaynak dahil olduğundan emin olun. VSIX derleme. Çözüm Gezgini'nde dosyayı seçin ve emin **VSIX Ekle** özelliği `True`.  
+> Simgeler veya görüntü gibi kaynakları içerecek şekilde .tt dosyayı düzenlerseniz, kaynak dahil olduğundan emin olun. VSIX derleme. Çözüm Gezgini'nde dosyayı seçin ve emin **VSIX Ekle** özelliği `True`.  
   
  Bu dosya, bir Visual Studio Tümleştirme Uzantısı (VSIX) DSL nasıl paketlenmiştir denetler. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).  
   

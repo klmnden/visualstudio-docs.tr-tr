@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426617"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
  Bkz: [öykünücüsünde çalıştırın, Windows Phone uygulamaları](../debugger/run-windows-phone-apps-in-the-emulator.md) Windows Phone bilgi.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 simülatör coğrafi konum düğmesi içermez. Bu durum, Windows 10 simülatör coğrafi konum simülasyonu içermez çünkü. Bu tür bir simülasyon yapmanız gerekiyorsa, Windows 8.1 veya önceki işletim sistemlerinde Visual Studio 2013 simülatör kullanabilirsiniz.  
+> Visual Studio 2015 simülatör coğrafi konum düğmesi içermez. Bu durum, Windows 10 simülatör coğrafi konum simülasyonu içermez çünkü. Bu tür bir simülasyon yapmanız gerekiyorsa, Windows 8.1 veya önceki işletim sistemlerinde Visual Studio 2013 simülatör kullanabilirsiniz.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Simülatör hedef olarak ayarlanmış.  
  Windows Store uygulamanızı simulator'da çalıştırmak için seçin **simülatör** listesinde yanındaki açılan listeden **hata ayıklamayı Başlat** hata ayıklayıcı düğmesinde **standart** araç çubuğu.  
@@ -86,10 +86,10 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
  90 derece herhangi bir yönde simülatör döndürerek cihaz yönü dikey ve yatay arasında geçiş yapabilirsiniz.  
   
 > [!NOTE]
->  Simülatör saygı [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) projenin özellik. Örneğin, projeniz yönlendirmesini ayarlar `Landscape`ve ardından dikey yönlendirme simülatöre döndürme, simülatör'ü görünen görüntünün ayrıca döndürülmüş ve yeniden boyutlandırıldı. Bu ayarlar gerçek bir cihaz üzerinde test edin.  
+> Simülatör saygı [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) projenin özellik. Örneğin, projeniz yönlendirmesini ayarlar `Landscape`ve ardından dikey yönlendirme simülatöre döndürme, simülatör'ü görünen görüntünün ayrıca döndürülmüş ve yeniden boyutlandırıldı. Bu ayarlar gerçek bir cihaz üzerinde test edin.  
   
 > [!NOTE]
->  Simülatör bir kenarında görüntülendiği ekran daha büyük olması simülatör döndürürseniz, simülatör içinde ekrana sığacak şekilde otomatik olarak boyutlandırılır. Simülatör özgün boyutuna boyutlandırılır yeniden döndürürseniz değil.  
+> Simülatör bir kenarında görüntülendiği ekran daha büyük olması simülatör döndürürseniz, simülatör içinde ekrana sığacak şekilde otomatik olarak boyutlandırılır. Simülatör özgün boyutuna boyutlandırılır yeniden döndürürseniz değil.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Benzetimli ekran boyutunu ve çözümleme değiştirme  
  Benzetimli ekran boyutunu ve çözümleme değiştirmek için seçin **değiştirme çözümleme** paletinde düğmesini ve listeden yeni boyutu ve çözümü seçin.  
@@ -97,13 +97,13 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
  Ekran boyutunu ve çözüm olarak listelenen *ekran genişliği inç, piksel genişlik X piksel yüksekliği*. Not ekran boyutunu ve çözümleme benzetimi yapılır. Simülatör üzerinde ortak ordinates konum, seçili cihaz boyutu ve çözümleme için ortak ordinates çevrilir.  
   
 > [!NOTE]
->  Bit eşlem resimleri ölçeklendirilmiş sürümlerini uygulamanızda kaydedebilir ve Windows geçerli ölçek için doğru görüntüyü yükler. Daha fazla bilgi için [duyarlı tasarım 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Ancak, bu Windows farklı bir görüntü çözünürlüğünü uyacak şekilde seçer için simülatör çözümleme değiştirirseniz, yeni resmi görmek için hata ayıklama oturumunuzu yeniden başlatın ve durdurun gerekir.  
+> Bit eşlem resimleri ölçeklendirilmiş sürümlerini uygulamanızda kaydedebilir ve Windows geçerli ölçek için doğru görüntüyü yükler. Daha fazla bilgi için [duyarlı tasarım 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Ancak, bu Windows farklı bir görüntü çözünürlüğünü uyacak şekilde seçer için simülatör çözümleme değiştirirseniz, yeni resmi görmek için hata ayıklama oturumunuzu yeniden başlatın ve durdurun gerekir.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Uygulamanızı göndermek üzere Windows Store görüntüsü yakalama  
  Bir uygulamayı Windows app Store'a gönderdiğinizde, uygulama ekran görüntüleri eklemeniz gerekir.  
   
 > [!NOTE]
->  Ekran görüntüsü, simülatör geçerli çözünürlükte kaydedilir. Çözünürlüğünü değiştirmek için seçin **değiştirme çözümleme** düğmesi.  
+> Ekran görüntüsü, simülatör geçerli çözünürlükte kaydedilir. Çözünürlüğünü değiştirmek için seçin **değiştirme çözümleme** düğmesi.  
   
 - Simülatör uygulama ekran görüntüleri oluşturmak için seçin **panoya ekran yakalama** düğmesi.  
   

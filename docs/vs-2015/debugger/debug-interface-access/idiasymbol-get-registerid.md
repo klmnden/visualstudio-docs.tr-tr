@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2634bfbd2e6870976965c81c314756cb3abb7de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437348"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_registerId ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
   
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
+> Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Simge bir kayıt göre diğer bir deyişle, ise, sembolün [LocationType numaralandırması](../../debugger/debug-interface-access/locationtype.md) ayarlanır `LocIsRegRel`, kullanın `get_registerId` yöntemine bir çağrı tarafından izlenen [Idiasymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) uzaklık simgenin bulunduğu kasadan almak için yöntemi.  

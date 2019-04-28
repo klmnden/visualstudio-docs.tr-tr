@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434503"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF uygulamalarında arama tabloları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
     - Nesneleri. Daha fazla bilgi için [nasıl yapılır: Nesnelerdeki verilere bağlanma](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
-    >  Arama tablosu oluşturmadan önce iki ilişkili tablolar veya nesneleri projesi için veri kaynağı olarak mevcut olmalıdır.  
+    > Arama tablosu oluşturmadan önce iki ilişkili tablolar veya nesneleri projesi için veri kaynağı olarak mevcut olmalıdır.  
   
 2. Açık**WPF Tasarımcısı**ve tasarımcı geçerli bırakma hedefi öğeleri için bir kapsayıcı içerdiğinden emin olun **veri kaynakları** penceresi.  
   
@@ -58,7 +58,7 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
 4. Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo veya nesne ve ilgili alt tablo veya nesne görene kadar penceresi.  
   
     > [!NOTE]
-    >  İlgili alt tablo veya nesne olarak üst tablo veya nesne Genişletilebilir alt düğümünde görüntülenen düğümüdür.  
+    > İlgili alt tablo veya nesne olarak üst tablo veya nesne Genişletilebilir alt düğümünde görüntülenen düğümüdür.  
   
 5. Alt düğümü için aşağı açılan menüsünü tıklatın ve seçin **ayrıntıları**.  
   
@@ -73,12 +73,12 @@ Terim *arama tablosu* (olarak da adlandırılan bir *arama bağlama*) bir veri t
     - **ListView**  
   
         > [!NOTE]
-        >  Varsa **ListBox** veya **ListView** denetimi görünmez listesinde, bu denetimleri listesine ekleyebilirsiniz. Bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        > Varsa **ListBox** veya **ListView** denetimi görünmez listesinde, bu denetimleri listesine ekleyebilirsiniz. Bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
     - Öğesinden türetilen herhangi bir özel denetimin <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Öğe denetimleri listesine özel denetimleri ekleme hakkında bilgi seçebilirsiniz **veri kaynakları** penceresinde görmek [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        > Öğe denetimleri listesine özel denetimleri ekleme hakkında bilgi seçebilirsiniz **veri kaynakları** penceresinde görmek [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 8. Alt düğümünden sürükleyin **veri kaynakları** penceresinden WPF tasarımcısına bir kapsayıcıda. (Önceki örnekte, alt düğümüdür **siparişler** düğümü.)  
   

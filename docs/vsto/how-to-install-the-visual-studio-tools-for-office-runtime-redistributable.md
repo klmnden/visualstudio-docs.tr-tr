@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412595"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
   Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Yükleme sırasında çalışma zamanı otomatik olarak yüklenen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
@@ -32,7 +32,7 @@ ms.locfileid: "60101463"
 - Çalışma zamanı yüklü Office çözümleri için diğer tüm Önkoşullar zaten olan bir bilgisayara yüklemeniz gerekir.
 
     > [!NOTE]
-    >  .NET Framework'ü yüklemek için yönetici geliştirme bilgisayarında olmalıdır ve [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+    > .NET Framework'ü yüklemek için yönetici geliştirme bilgisayarında olmalıdır ve [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio Araçları'nı yüklemek için
 

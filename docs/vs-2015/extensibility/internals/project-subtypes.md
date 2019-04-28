@@ -11,12 +11,12 @@ ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2e1fe4a2ad528ac32bdd0b3535a8566f630b970e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421838"
 ---
 # <a name="project-subtypes"></a>Proje Alt Türleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54764379"
 Proje alt türleri özelleştirebilirsiniz veya proje sistemleri davranışını flavor izin [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Özelleştirmeleri içeren proje dosyasında ekleme veya öğeleri filtreleme ek veri kaydetme **Yeni Öğe Ekle** iletişim kutusunda, derlemeleri nasıl hata ayıklama ve dağıtılan, denetleme ve proje genişletme **özelliği Sayfaları** iletişim kutusu. VSPackage proje alt türleri COM toplama kullanarak uygulayın.  
   
 > [!NOTE]
->  Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proje alt türleri kendi SQL Server ve akıllı cihaz projeleri uygulamak için kullanır.  
+> Visual C++ proje sistemi proje alt türleri desteklemez. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proje alt türleri kendi SQL Server ve akıllı cihaz projeleri uygulamak için kullanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Proje Alt Türleri Tasarımı](../../extensibility/internals/project-subtypes-design.md)  

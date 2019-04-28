@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420598"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma
 Sembol tarama araçlarını **sınıf görünümü**, **Nesne Tarayıcısı**, **çağrı tarayıcısı** ve **sembol sonuçları Bul**, yeni veriler için istekleri geçirin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi. Nesne yöneticisine uygun kitaplıkları bulur ve simgelerin yeni listeleri ister. İstenen veriler için sağlayarak kitaplıkları yanıt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nesnesi Yöneticisi üzerinden <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesne Yöneticisi çağrıları yöntemleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> verileri almak için arabirim ve doldurmak veya sembol tarama araçlarını görünümlerini güncelleştirmek için kullanır.
@@ -27,9 +27,9 @@ Sembol tarama araçlarını **sınıf görünümü**, **Nesne Tarayıcısı**, *
  Bir kitaplık, aracı çağrılır, düğümün genişletilmiş veya görünümün yenilenmesi veri istekleri alabilirsiniz. Bir sembol Tarama Aracı ilk kez çağrıldığında, nesne yöneticisine kitaplık en üst düzey listesi sağlamak için ister. Kullanıcı bir liste düğümünü genişlettiğinde, kitaplığı alt düğüm altında bir listesini sağlar. Her nesne Yöneticisi'ni sorgulama, ilgi alanı öğenin dizinini içerir. Yeni bir listesini görüntülemek için nesne yöneticisine kaç öğelerdir listeden öğeleri, adları, erişilebilirlik ve diğer özellikleri türünü belirlemeniz gerekir.
 
 > [!NOTE]
->  Listeleri aracılığıyla uygulama simgeleri sağlamak nasıl aşağıdaki yönetilen kod örnekleri göstermek <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. Nesne Yöneticisi, bu arabirimde yöntemlerini çağırır ve doldurmak veya sembol tarama araçlarını güncelleştirmek için alınan verileri kullanır.
+> Listeleri aracılığıyla uygulama simgeleri sağlamak nasıl aşağıdaki yönetilen kod örnekleri göstermek <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> arabirimi. Nesne Yöneticisi, bu arabirimde yöntemlerini çağırır ve doldurmak veya sembol tarama araçlarını güncelleştirmek için alınan verileri kullanır.
 >
->  Yerel kod sembol sağlayıcısı uygulamasını için <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimi.
+> Yerel kod sembol sağlayıcısı uygulamasını için <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimi.
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Sembollerin listelerini nesne yöneticisine sağlamak için
 

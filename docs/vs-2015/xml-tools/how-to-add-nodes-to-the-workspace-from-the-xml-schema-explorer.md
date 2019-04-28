@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417453"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Nasıl yapılır: XML Şema Gezgininden Çalışma Alanına Düğüm Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043980"
 Bu konuda nasıl düğüm ekleneceği açıklanmaktadır [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md) XML şema gezgininden. Bu düğüm XSD Tasarımcısı görünümü üzerine XML şema gezgininden sürükleyip bırakarak veya XML şema Gezgini'nin bağlam menüsünü kullanarak gerçekleştirilebilir. XML şema Gezgini tarafından gerçekleştirilen bir arama sonucunda vurgulanmıştır düğümlerini de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Şema kümesi arama sonucu düğümlerini çalışma alanına ekleme](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
->  Yalnızca genel düğümler eklenebilir [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md).  
+> Yalnızca genel düğümler eklenebilir [XML şema Tasarımcısı çalışma](../xml-tools/xml-schema-designer-workspace.md).  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>XML Gezgini bağlam menüsü aracılığıyla düğümler eklemek için  
   

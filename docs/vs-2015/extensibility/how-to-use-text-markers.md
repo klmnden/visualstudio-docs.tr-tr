@@ -10,12 +10,12 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bca32c007e29e910f167df66c92d04bec637f9b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430955"
 ---
 # <a name="how-to-use-text-markers"></a>Nasıl yapılır: Metin işaretçileri kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Düzenlemek için metin işaretçileri uygulanabilir bir <xref:Microsoft.VisualS
 1. Bir örneği elde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> sınıfı.  
   
     > [!NOTE]
-    >  Çekirdek Düzenleyici düzenlemekte olduğu herhangi bir belge otomatik olarak standart metin işaretçileri uygular ve standart metin işaretçileri açıkça uygulamak gerekli olmamalıdır.  
+    > Çekirdek Düzenleyici düzenlemekte olduğu herhangi bir belge otomatik olarak standart metin işaretçileri uygular ve standart metin işaretçileri açıkça uygulamak gerekli olmamalıdır.  
   
 2. İşaret türü kimliği, ilgilendiğiniz çağırarak işaretinin elde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> yöntemiyle `GUID` , çalışmak istediğiniz metin işaretçisi.  
   
     > [!NOTE]
-    >  Kullanmayın `GUID` VSPackage'ı veya metin işaretçisi sağlayan hizmet.  
+    > Kullanmayın `GUID` VSPackage'ı veya metin işaretçisi sağlayan hizmet.  
   
 3. İşaret türü kimliği elde çağırarak kullanım <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> yöntemi çağırmak için bir parametre olarak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> yöntemi veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metin işaretçisi metnin belirli bir bölgeye uygulamak için yöntemi.  
   
@@ -58,4 +58,4 @@ Düzenlemek için metin işaretçileri uygulanabilir bir <xref:Microsoft.VisualS
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
  [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)
+ [Nasıl yapılır: Hata İşaretçileri Uygulama](../extensibility/how-to-implement-error-markers.md)

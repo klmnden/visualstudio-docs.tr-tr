@@ -11,12 +11,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408575"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "54795617"
  Proje dosyası proje ve yapılandırma özelliklerini kalıcı hale getirmek için projenin sorumluluğundadır.  
   
 > [!NOTE]
->  Bir proje kalıcılığı, varsayılan değerleri farklı kalıcı tek özellik değerleri ile en iyi duruma getirebilirsiniz.  
+> Bir proje kalıcılığı, varsayılan değerleri farklı kalıcı tek özellik değerleri ile en iyi duruma getirebilirsiniz.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek  
  `Microsoft.VisualStudio.Package.SettingsPage` Yapılandırma özellik sayfaları sınıfı uygular. Varsayılan uygulaması `SettingsPage` genel özellik kılavuzunda kullanıcıya ortak özellikler sunar. `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` Yöntemini seçerse öğelerinden türetilen sınıfları `SettingsPage` proje özellik kılavuzları için. `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` Yöntemini seçerse öğelerinden türetilen sınıfları `SettingsPage` yapılandırma özellik kılavuzları için. Proje türünüzü uygun özellik sayfaları seçmek için bu yöntemleri geçersiz kılmalıdır.  
@@ -65,7 +65,7 @@ ms.locfileid: "54795617"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` ve `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` yapılandırma özellikleri kalıcı.  
   
   > [!NOTE]
-  >  Uygulamaları `Microsoft.VisualStudio.Package.SettingsPage` ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfları kullanın `Microsoft.Build.BuildEngine` almak ve proje dosyasından proje ve yapılandırma özelliklerini ayarlamak için yöntemleri (MSBuild).  
+  > Uygulamaları `Microsoft.VisualStudio.Package.SettingsPage` ve `Microsoft.VisualStudio.Package.ProjectNode` sınıfları kullanın `Microsoft.Build.BuildEngine` almak ve proje dosyasından proje ve yapılandırma özelliklerini ayarlamak için yöntemleri (MSBuild).  
   
   Türetilen sınıf `SettingsPage` uygulamalıdır `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` ve `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` proje dosyasının proje veya yapılandırma özelliklerini kalıcı hale getirmek için.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "54795617"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, Ve <xref:System.ComponentModel.DescriptionAttribute> öznitelikler düzeni, etiketleme ve açıklama genel özellik sayfası, proje ve yapılandırma özelliklerini belirler. Bu öznitelikler kategorisi belirlemek için sırasıyla görünen adı ve açıklaması seçeneği.  
   
 > [!NOTE]
->  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [projeler - Visual Studio 2013 için MPF](http://mpfproj12.codeplex.com/).  
+> Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [projeler - Visual Studio 2013 için MPF](http://mpfproj12.codeplex.com/).  
   
  Aşağıdaki kod parçasını göz önünde bulundurun:  
   

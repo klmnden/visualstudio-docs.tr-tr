@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417129"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Nasıl yapılır: Projeye özgü düzenleyicileri açma
 Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje için belirli düzenleyiciye bağlıysa, proje dosyası bir projeye özgü Düzenleyicisi'ni kullanarak açmanız gerekir. Dosya bir düzenleyicide seçme IDE'nin mekanizması aşağı temsilci olarak seçilemez. Örneğin, standart bir bit eşlem Düzenleyicisi kullanmak yerine, projeniz için benzersiz olan bilgileri tanıdığı bir belirli bir bit eşlem Düzenleyicisi belirtmek için bu projeye özgü Düzenleyicisi seçeneği kullanabilirsiniz.
@@ -29,7 +29,7 @@ Bir proje tarafından açılmış bir öğe dosyası doğası gereği bu proje i
 1. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> yöntemi (`RDT_EditLock`) (belge veri nesnesi) dosya zaten açık olup olmadığını belirlemek için.
 
     > [!NOTE]
-    >  Belge verileri ve belge görünümü nesneleri hakkında daha fazla bilgi için bkz. [belge verileri ve belge görünümü özel düzenleyicilerde](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Belge verileri ve belge görünümü nesneleri hakkında daha fazla bilgi için bkz. [belge verileri ve belge görünümü özel düzenleyicilerde](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Dosya zaten açık değilse, dosya çağırarak resurface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> yöntemi ve IDO_ActivateIfOpen için bir değer belirterek `grfIDO` parametresi.
 

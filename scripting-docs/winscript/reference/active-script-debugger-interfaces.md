@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422455"
 ---
 # <a name="active-script-debugger-interfaces"></a>Etkin Komut Dosyası Hata Ayıklayıcı Arabirimleri
 Activdbg.h ve activdbg100.h üst bilgi dosyaları, arabirimler, numaralandırmaları ve yapıları Bu bölümde listelenen sağlar. Betik hata ayıklama için değildirler.  
   
 > [!NOTE]
->  `IJSDebug*` Arabirimleri ve `IEnumJsStackFrames` arabirimi ilk kez kullanıma sunulan Internet Explorer 11'de betik ile yerel kod hata ayıklama için. Bu arabirimler için üst bilgi jscript9diag.h dosyasıdır.  
+> `IJSDebug*` Arabirimleri ve `IEnumJsStackFrames` arabirimi ilk kez kullanıma sunulan Internet Explorer 11'de betik ile yerel kod hata ayıklama için. Bu arabirimler için üst bilgi jscript9diag.h dosyasıdır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  Aşağıdaki arabirimlerinden dilden, konak nötr hata ayıklama izin ver:  

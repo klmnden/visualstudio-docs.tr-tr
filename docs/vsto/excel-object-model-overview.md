@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441814"
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilirsiniz. Bu konuda en önemli nesneleri sunar:
@@ -80,7 +80,7 @@ ms.locfileid: "60104557"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> nesne Excel uygulamasını temsil eder. <xref:Microsoft.Office.Interop.Excel.Application> Nesnesi, çalışan bir uygulama, bu örneğe uygulanan seçenekleri hakkında bilgi büyük ölçüde kullanıma sunar ve geçerli kullanıcı nesnelerini örneğinde açın.
 
 > [!NOTE]
->  Ayarlı değil <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> özelliği <xref:Microsoft.Office.Interop.Excel.Application> Excel'e nesnesinde **false**. Bu özellik false olarak ayarlamayı Excel konak denetimleri dahil, herhangi bir olayı göndermesini engelleme engeller.
+> Ayarlı değil <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> özelliği <xref:Microsoft.Office.Interop.Excel.Application> Excel'e nesnesinde **false**. Bu özellik false olarak ayarlamayı Excel konak denetimleri dahil, herhangi bir olayı göndermesini engelleme engeller.
 
 ### <a name="workbook-object"></a>Çalışma kitabı nesnesi
  <xref:Microsoft.Office.Interop.Excel.Workbook> Nesne tek bir çalışma kitabını Excel uygulamasında temsil eder.

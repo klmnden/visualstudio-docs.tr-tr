@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443049"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105038"
 Bu bölümde, Unity için Visual Studio Araçları yükleme ve Unity projeniz Visual Studio ile çalışmak için yapılandırma öğreneceksiniz.  
   
 > [!IMPORTANT]
->  5.2 Unity Proje kurulumu kolaylaştırır Unity 2.1 Visual Studio Araçları için yerleşik desteği ekler. Bu yararlanmak için Unity sürüm 5.2.0 gerekir ya da Windows ve Visual Studio Araçları 2.1 veya üzeri bir sürüm Unity için daha yüksek.  
+> 5.2 Unity Proje kurulumu kolaylaştırır Unity 2.1 Visual Studio Araçları için yerleşik desteği ekler. Bu yararlanmak için Unity sürüm 5.2.0 gerekir ya da Windows ve Visual Studio Araçları 2.1 veya üzeri bir sürüm Unity için daha yüksek.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Unity için Visual Studio Araçları kullanmak için ihtiyacınız olacak:  
@@ -55,7 +55,7 @@ Bu bölümde, Unity için Visual Studio Araçları yükleme ve Unity projeniz Vi
      [Unity için Visual Studio 2010 Araçları'nı indirin](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio'nun Express sürümleri, Unity için Visual Studio Araçları gibi uzantıları desteklemez. Visual Studio Community, Visual Studio'nun Unity ve diğer uzantılar için Visual Studio Araçları destekleyen ücretsiz bir sürümüdür. Çoğu kullanıcı için Visual Studio Community Express daha iyi bir seçimdir.  
+> Visual Studio'nun Express sürümleri, Unity için Visual Studio Araçları gibi uzantıları desteklemez. Visual Studio Community, Visual Studio'nun Unity ve diğer uzantılar için Visual Studio Araçları destekleyen ücretsiz bir sürümüdür. Çoğu kullanıcı için Visual Studio Community Express daha iyi bir seçimdir.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>İlk Unity projenize Unity için Visual Studio Araçları ile  
  Artık ihtiyaç duyduğunuz her şeyi sahip olduğunuza göre Visual Studio ile ilk Unity projeniz için hazırsınız demektir. Unity projenize Unity'nın hangi sürümleri bağlı olarak farklı ayardır ve Unity için Visual Studio Araçları yüklenir. Unity ve yüklemiş olduğunuz Unity için Visual Studio Araçları sürümü için aşağıdaki adımları izleyin.  

@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433709"
 ---
 # <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "59649413"
 - **Kod tanımı penceresi**, açıksa, kod için seçilen üyenin adını görüntüler. Bu pencere, C# ve C++ dillerinde kullanılabilir. Bu pencere hakkında daha fazla bilgi için bkz. [Structure of Code görüntüleme](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  Çağrı hiyerarşisi grubu başvuruları burada bir yöntem bir olay işleyicisi eklenir veya bir temsilciye atanmış basamak içeren yöntemi bulmaz. Bir yöntem için tüm başvuruları Bul için kullanabileceğiniz **tüm başvuruları Bul** komutu.  
+> Çağrı hiyerarşisi grubu başvuruları burada bir yöntem bir olay işleyicisi eklenir veya bir temsilciye atanmış basamak içeren yöntemi bulmaz. Bir yöntem için tüm başvuruları Bul için kullanabileceğiniz **tüm başvuruları Bul** komutu.  
   
 ## <a name="shortcut-menu-items"></a>Kısayol menü öğesi  
  Aşağıdaki tabloda, bir düğüm ağaç görünümü bölmesinde sağ tıklattığınızda, kullanılabilen birkaç kısayol menü seçenekleri açıklanmaktadır.  

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6152e374aee2eac273e0feca28c068c666e23d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432969"
 ---
 # <a name="active-script-profiling-overview"></a>Etkin Komut Dosyası Profil Oluşturmaya Genel Bakış
 [Etkin komut dosyası Profiler arabirimleri](../winscript/reference/active-script-profiler-interfaces.md) bir komut dosyası altyapısı profil oluşturmayı etkinleştirin. Etkin betik profil oluşturma, aşağıdaki bölümden oluşur:  
@@ -35,7 +35,7 @@ ms.locfileid: "60110992"
  Dil altyapısı uygulayan [Iactivescriptprofilercontrol arabirimi](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Dil çalışma zamanı JS_PROFILER ortam değişkeni oluşturulurken, profil oluşturma etkinleştirilmesi gerekip gerekmediğini belirlemek için denetler. Bu değişken için profil oluşturucu CLSID değeri ayarlarsanız, dil çalışma zamanı oluşturmak için hangi profil oluşturucu belirlemek için değişkenin değerini kullanarak profil oluşturucu COM nesnesinin örneği oluşturur.  
+> [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Dil çalışma zamanı JS_PROFILER ortam değişkeni oluşturulurken, profil oluşturma etkinleştirilmesi gerekip gerekmediğini belirlemek için denetler. Bu değişken için profil oluşturucu CLSID değeri ayarlarsanız, dil çalışma zamanı oluşturmak için hangi profil oluşturucu belirlemek için değişkenin değerini kullanarak profil oluşturucu COM nesnesinin örneği oluşturur.  
   
 ## <a name="host"></a>Ana bilgisayar  
  Konağın dil altyapısı oluşturur ve yürütülecek komut dosyaları ile dil altyapısı sağlar. Bir akıllı ana bilgisayar ayrıca, hata ayıklama veya profil oluşturma daha iyi bilgi sağlamak için hata ayıklayıcı veya profil oluşturucu tarafından kullanılabilir belge bağlamı sağlar.  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444904"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Kullanıcı Ayarları Deposuna Yazma
 Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekler** iletişim ve özellikleri windows belirli bir iletişim kutusu. Visual Studio uzantıları bunlar küçük miktarlarda veri depolamak için kullanabilirsiniz. Bu izlenecek yolda not defteri için Visual Studio dış bir araç olarak okuma ve kullanıcı ayarları deposuna yazma tarafından nasıl ekleneceğini gösterir.
@@ -27,7 +27,7 @@ Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekl
 3. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External araçları gidin\\.
 
     > [!NOTE]
-    >  \14.0Exp\ ve değil \14.0 içeren anahtar baktığınızdan emin olun\\. Visual Studio'nun deneysel örneği çalıştırdığınızda, kullanıcı ayarlarınızı kayıt defteri kovanında "14.0Exp" dir.
+    > \14.0Exp\ ve değil \14.0 içeren anahtar baktığınızdan emin olun\\. Visual Studio'nun deneysel örneği çalıştırdığınızda, kullanıcı ayarlarınızı kayıt defteri kovanında "14.0Exp" dir.
 
 4. \External Tools\ alt sağ tıklayın ve ardından **dışarı**. Emin olun **Seçili dal** seçilir.
 

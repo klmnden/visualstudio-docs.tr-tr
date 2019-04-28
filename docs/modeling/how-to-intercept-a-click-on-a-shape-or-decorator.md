@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445182"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 Aşağıdaki yordamlar bir şekil veya bir simge dekoratörde bir click için araya girme nasıl ekleyebileceğiniz gösterilmektedir. Tıklama kesebilir, çift tıkladığında, sürüklediğinde, ve diğer hareketlerine yanıt öğesi.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Ayarlama `e.Handled` için `true`, olayın kapsayan Şekil veya diyagram geçirilecek istemediğiniz sürece.
+> Ayarlama `e.Handled` için `true`, olayın kapsayan Şekil veya diyagram geçirilecek istemediğiniz sürece.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Dekoratörler tıklar ele alınması için
  Görüntü dekoratörler OnDoubleClick yöntemi olan ImageField sınıfının bir örneği taşınır. ImageField alt yazarsanız tıklama yakalayabilirsiniz. Alanlar InitializeShapeFields yönteminde ayarlanır. Bu nedenle, normal ImageField yerine, alt sınıfı örneğini oluşturmak için bu yöntemi değiştirmeniz gerekir. Shape sınıfının üretilen kodda InitializeShapeFields yöntemidir. Ayarlarsanız shape sınıfı geçersiz kılabilirsiniz, `Generates Double Derived` aşağıdaki yordamda açıklandığı gibi özellik.

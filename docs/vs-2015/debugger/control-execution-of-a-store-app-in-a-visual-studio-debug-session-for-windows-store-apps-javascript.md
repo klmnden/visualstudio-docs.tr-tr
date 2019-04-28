@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437753"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Bir Store uygulamasının yürütülmesini denetleme (JavaScript) Windows Store uygulamaları için Visual Studio hata ayıklama oturumunda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklayıcıda gitme ve bir oturu
  **Hata ayıklayıcı, klavye kısayolları.** Visual Studio hata ayıklayıcı gezintisi, hem fare ve klavye için optimize edilmiştir. Bu konu başlığı altındaki adımların birçok klavye kısayol tuşu veya kısayol tuşu parantez içinde bir açıklama içerir. Örneğin, (klavye: F5) yazarak F5 başlatır veya hata ayıklayıcı yürütme devam eder, anahtar gösterir.
 
 > [!NOTE]
->  **Modül deseni**
+> **Modül deseni**
 >
->  Sık kullandığınız JavaScript Windows Store apps *modülü deseni* verileri ve işlevleri sayfasında yalıtılacak. Modül düzeni tek, kendi kendine çalışan ve anonim bir kapanış sayfa işlevselliği genel ad alanından ayrı tutmak için kullanır. Bu konuda, bu işlev diyoruz *Modülü*.
+> Sık kullandığınız JavaScript Windows Store apps *modülü deseni* verileri ve işlevleri sayfasında yalıtılacak. Modül düzeni tek, kendi kendine çalışan ve anonim bir kapanış sayfa işlevselliği genel ad alanından ayrı tutmak için kullanır. Bu konuda, bu işlev diyoruz *Modülü*.
 
 ## <a name="in-this-topic"></a>Bu konuda
  Bilgi edinmek nasıl yapılır:

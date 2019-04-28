@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410032"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Bir VSIX paketinin anatomisi
 Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bir veya daha fazla Visual Studio uzantıları, Visual Studio meta verileri ile birlikte içeren bir dosya kullanır. Meta verilerin yer alan VSIX bildirimi içinde ve *[Content_Types] .xml* dosya. Bir VSIX paketi de bir veya daha fazla içerebilir *Extension.vsixlangpack* sağlamak üzere dosyaları Kurulum metninde yerelleştirilmiş ve bağımlılıklarını yüklemek için ek VSIX paketleri içerebilir.
@@ -25,7 +25,7 @@ Bir VSIX paketi bir *.vsix* sınıflandırmak ve uzantıları yüklemek için bi
  VSIX paket biçimi açık paketleme kuralları (OPC) standart izler. Paket ile birlikte ikili dosyalar ve Destek dosyalarını içeren bir *[Content_Types] .xml* dosyası ve bir *.vsix* bildirim dosyası. Bir VSIX paketi birden çok proje veya kendi bildirimleri olan bile birden çok paketleri çıktısını içerebilir.
 
 > [!NOTE]
->  VSIX paketlerinde dosyalarının adlarını boşluklar içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> VSIX paketlerinde dosyalarının adlarını boşluklar içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
 
 ## <a name="the-vsix-manifest"></a>VSIX bildirimi
  VSIX bildirimi uzantının yüklenmesini ve aşağıdaki VSX şeması hakkında bilgi içerir. Daha fazla bilgi için [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Bir örnek VSIX bildirimi için bkz: [PackageManifest öğesi (kök öğe, VSX şema)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).

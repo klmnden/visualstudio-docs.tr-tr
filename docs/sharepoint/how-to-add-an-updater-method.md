@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431256"
 ---
 # <a name="how-to-add-an-updater-method"></a>Nasıl yapılır: Bir güncelleyici metodu ekleme
   Kullanıcılar oluşturarak dış bir SharePoint listesindeki iş verileri güncelleştirmek etkinleştirebilirsiniz bir *güncelleştirici* yöntemi. Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596965"
      Daha fazla bilgi için [iş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Varlık türü tanımlayıcısı bir alan otomatik olarak oluşturulan bir veritabanı tablosundaki temsil ediyorsa, ayarlama **güncelleştirici öncesi alanı** özelliğini **True**.
+   > Varlık türü tanımlayıcısı bir alan otomatik olarak oluşturulan bir veritabanı tablosundaki temsil ediyorsa, ayarlama **güncelleştirici öncesi alanı** özelliğini **True**.
 
 4. İçinde **Çözüm Gezgini**, oluşturulan hizmet kodu dosyası varlık için kısayol menüsünü açın ve ardından **kodu görüntüle**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596965"
 5. Verileri güncelleştirmek için güncelleştirme yöntemine kod ekleyin. Aşağıdaki örnek, SQL Server için bir kişinin AdventureWorks örnek veritabanındaki bilgileri güncelleştirir.
 
    > [!NOTE]
-   >  Değiştirin `ServerName` alanını sunucunuzun adıyla.
+   > Değiştirin `ServerName` alanını sunucunuzun adıyla.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442426"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML sınıf diyagramları aracılığıyla kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 2. İçinde **özellikleri** penceresinde, aşağı açılan oku seçin **stereotipler** özelliği ve ardından uygulamak istediğiniz stereotip için onay kutusunu seçin.  
 
    > [!TIP]
-   >  C# stereotipleri görünmezse, ilgilendiğiniz model öğelerini içeren model veya paket için C# Profilini etkinleştirin. Paket veya model içinde kök seçin **UML Model Gezgini**. Ardından **özellikleri** penceresinde seçin **profili**ve C# profilini etkinleştirin.  
+   > C# stereotipleri görünmezse, ilgilendiğiniz model öğelerini içeren model veya paket için C# Profilini etkinleştirin. Paket veya model içinde kök seçin **UML Model Gezgini**. Ardından **özellikleri** penceresinde seçin **profili**ve C# profilini etkinleştirin.  
 
 3. Genişletin **stereotipler** ayarlayabileceğiniz ek özellikleri görmek için özellik.  
 
@@ -144,7 +144,7 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
  Model öğesine birden fazla şablon uygulanabilir. Her model öğesinden birden fazla dosya oluşturabilirsiniz.  
 
 > [!NOTE]
->  Modelin köküne eklenen bağlamalar, modeldeki tüm öğeler için varsayılanlar olarak görev görür. Bu varsayılan bağlamaları görmek için **UML Model Gezgini**. Modelleme projesinin kısayol menüsünü açın ve sonra seçin **kod oluşturma ayarlamak**. Alternatif olarak, UML Model Gezgini'nde modelin kökünü seçebilirsiniz. Özellikler penceresinde **[...]**  içinde **metin şablon bağlamaları** özelliği. Bağlamaları kullanılana dek görünmeyecektir **kod üret** en az bir kez komutu. Şablon bağlamaları bir diyagrama eklenemez.  
+> Modelin köküne eklenen bağlamalar, modeldeki tüm öğeler için varsayılanlar olarak görev görür. Bu varsayılan bağlamaları görmek için **UML Model Gezgini**. Modelleme projesinin kısayol menüsünü açın ve sonra seçin **kod oluşturma ayarlamak**. Alternatif olarak, UML Model Gezgini'nde modelin kökünü seçebilirsiniz. Özellikler penceresinde **[...]**  içinde **metin şablon bağlamaları** özelliği. Bağlamaları kullanılana dek görünmeyecektir **kod üret** en az bir kez komutu. Şablon bağlamaları bir diyagrama eklenemez.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Metin şablon bağlamalarını bir pakete veya başka bir model öğesine eklemek için  
 

@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52df78eea2f8dac5f513514348fbc9cd435c989a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409820"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Gözcü penceresi ifadesini değerlendirme
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Yürütme durakladığında Visual Studio hata ayıklama altyapısı kendi izleme listesindeki her bir ifadenin geçerli değerini belirlemek için (DE) çağırır. DE (EE) ifade değerlendiricisi'ni kullanarak her bir ifade değerlendirir ve Visual Studio görüntüler değeriyle **Watch** penceresi.
 
@@ -45,7 +45,7 @@ ms.locfileid: "60094976"
  Karmaşık bir ifade ayrıştırma değerlendirme daha çok daha uzun sürebilir olduğundan bir ifade değerlendirme işlemi iki adımlamayla ayrılmıştır: ifade (1) ayrıştırma ve 2) ayrıştırılmış ifadeyi değerlendirir. Bu şekilde, birden çok kez değerlendirme oluşabilir, ancak yalnızca bir kez ayrıştırılacak ifade gerekiyor. Ara ayrıştırılmış ifade içinde EE döndürüldüğü bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) sırayla kapsüllenmiş ve DE döndürülen nesne bir [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) nesne. `IDebugExpression` Nesne için tüm değerlendirmesi erteler `IDebugParsedExpression` nesne.
 
 > [!NOTE]
->  Bir EE rağmen bu Visual Studio varsayar, bu iki adımlı işleme uyması gerekli değildir; EE ayrıştırabilir ve aynı adımda değerlendirme zaman [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) çağrılır (MyCEE örnek, örneğin işleyişi budur). Dilinizi karmaşık ifadeleri biçimlendiriyorsa ayrıştırma adım değerlendirme adımdan ayırmak isteyebilirsiniz. Çoğu ifadeleri izlerken bu Visual Studio hata ayıklayıcısında performans artırabilir gösterilir.
+> Bir EE rağmen bu Visual Studio varsayar, bu iki adımlı işleme uyması gerekli değildir; EE ayrıştırabilir ve aynı adımda değerlendirme zaman [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) çağrılır (MyCEE örnek, örneğin işleyişi budur). Dilinizi karmaşık ifadeleri biçimlendiriyorsa ayrıştırma adım değerlendirme adımdan ayırmak isteyebilirsiniz. Çoğu ifadeleri izlerken bu Visual Studio hata ayıklayıcısında performans artırabilir gösterilir.
 
 ## <a name="in-this-section"></a>Bu bölümde
  [Örnek İfade değerlendirme uygulaması](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) MyCEE örnek ifade değerlendirme işlemi için kullanır.

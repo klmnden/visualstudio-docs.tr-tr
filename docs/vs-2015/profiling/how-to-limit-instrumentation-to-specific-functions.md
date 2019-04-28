@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c20918aab20b41a108242d91b20ec010be19bd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432649"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Nasıl yapılır: Belirli işlevler için izlemeyi sınırı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Bir veya daha fazla işlev için izleme ve veri toplama seçeneklerini ayarlayar
   Yalnızca izleme profili oluşturma metodu seçildiğinde, bu şekilde veri toplama sınırlaması desteklenir.  
   
 > [!NOTE]
->  Ayrıca **Gelişmiş** sayfasının **performans oturumu** profil oluşturma araçları için kullanılabilir diğer seçenekleri ayarlamak için özellik sayfaları [Vsınstr](../profiling/vsinstr.md) komut satırı izleme aracı.  
+> Ayrıca **Gelişmiş** sayfasının **performans oturumu** profil oluşturma araçları için kullanılabilir diğer seçenekleri ayarlamak için özellik sayfaları [Vsınstr](../profiling/vsinstr.md) komut satırı izleme aracı.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Performans oturumu içinde belirli işlevler için izlemeyi sınırlama  
   
@@ -47,7 +47,7 @@ Bir veya daha fazla işlev için izleme ve veri toplama seçeneklerini ayarlayar
     `FuncSpec` ad alanı ve işlev adıdır. Şu biçimdedir `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ include: MyNS::\\*** MyNS ad alanındaki tüm işlevleri belirtir.  
   
    > [!NOTE]
-   >  Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle tools\performance Araçlar dizini altında [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] yükleme dizini) ve ardından yazın **vsınstr / DumpFuncs**  
+   > Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle tools\performance Araçlar dizini altında [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] yükleme dizini) ve ardından yazın **vsınstr / DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Bir ikili dosyada belirli işlevler için izlemeyi sınırlama  
   
@@ -66,7 +66,7 @@ Bir veya daha fazla işlev için izleme ve veri toplama seçeneklerini ayarlayar
     `FuncSpec` ad alanı ve işlev adıdır. Şu biçimdedir `Namespace` **::**`FunctionName`. Birden çok işlevleri ayırmak için noktalı virgül kullanın. Bir yıldız işareti kullanın (\*) bir veya daha fazla karakter için joker karakter belirtmek için. Örneğin, **/ include: MyNS::\\*** MyNS ad alanındaki tüm işlevleri belirtir.  
   
    > [!NOTE]
-   >  Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle tools\performance Araçlar dizini altında [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] yükleme dizini) ve ardından yazın **vsınstr / DumpFuncs**  
+   > Bir ikili işlevlerde listelemek için profil oluşturma araçları yükleme dizininde bir komut istemi penceresi açın (genellikle tools\performance Araçlar dizini altında [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] yükleme dizini) ve ardından yazın **vsınstr / DumpFuncs**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri toplama denetimi](../profiling/controlling-data-collection.md)   

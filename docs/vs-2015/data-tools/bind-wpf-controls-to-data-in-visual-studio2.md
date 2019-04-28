@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437048"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
      Farklı bir denetimi seçmek için öğesinin yanındaki açılan oka tıklayın ve bir denetim seçin. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Belirli bir sütun veya özellik görüntülenecek istemiyorsanız, alt öğelerini görüntülemek için öğeyi genişletin. Sütun veya görüntüler ve ardından istemediğiniz özelliğin yanındaki açılan oka tıklayın **hiçbiri**.
+    > Belirli bir sütun veya özellik görüntülenecek istemiyorsanız, alt öğelerini görüntülemek için öğeyi genişletin. Sütun veya görüntüler ve ardından istemediğiniz özelliğin yanındaki açılan oka tıklayın **hiçbiri**.
 
 3. Öğeyi Tasarımcısı'nda geçerli bir kapsayıcı gibi sürüklemek bir <xref:System.Windows.Controls.Grid>. Geçerli kapsayıcıları hakkında daha fazla bilgi için bkz. [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
 2. Seçin ve öğe yanındaki açılan oka tıklayın **ayrıntıları**.
 
     > [!NOTE]
-    >  Belirli bir sütun veya özellik görüntülenecek istemiyorsanız, alt öğelerini görüntülemek için öğeyi genişletin. Sütun veya görüntüler ve ardından istemediğiniz özelliğin yanındaki açılan oka tıklayın **hiçbiri**.
+    > Belirli bir sütun veya özellik görüntülenecek istemiyorsanız, alt öğelerini görüntülemek için öğeyi genişletin. Sütun veya görüntüler ve ardından istemediğiniz özelliğin yanındaki açılan oka tıklayın **hiçbiri**.
 
 3. Öğeyi Tasarımcısı'nda geçerli bir kapsayıcı gibi sürüklemek bir <xref:System.Windows.Controls.Grid>. Geçerli kapsayıcıları hakkında daha fazla bilgi için bkz. [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] ve denetimini verilere bağlama için kod. Daha fazla bilgi için [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Denetim verileri zaten bağlıysa, veri bağlama denetimi için denetimin en son sürüklenen öğeye sıfırlanır.
+    > Denetim verileri zaten bağlıysa, veri bağlama denetimi için denetimin en son sürüklenen öğeye sıfırlanır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF uygulamalarında ilgili verileri görüntüleyen](../data-tools/display-related-data-in-wpf-applications.md) [denetimleriverikümesineWPFbağlama](../data-tools/bind-wpf-controls-to-a-dataset.md) [Denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

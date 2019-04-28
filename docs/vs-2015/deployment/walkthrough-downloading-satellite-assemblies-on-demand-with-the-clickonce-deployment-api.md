@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417061"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kül
  Bu yönerge, uydu derlemeleri isteğe bağlı olarak işaretleme ve istemci makinesi, geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi indirme nasıl gösterir. Aşağıdaki yordam kullanılabilen araçlar kullanır [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Bu görev ile de gerçekleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Ayrıca bkz: [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) veya [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile uydu derlemelerini indirme](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
->  Test amacıyla, aşağıdaki kod örneği programlı olarak kültürü ayarlar `ja-JP`. Bir üretim ortamı için bu kodu ayarlama konusunda bilgi için bu konunun ilerleyen bölümlerindeki "Sonraki adımlar" bölümüne bakın.  
+> Test amacıyla, aşağıdaki kod örneği programlı olarak kültürü ayarlar `ja-JP`. Bir üretim ortamı için bu kodu ayarlama konusunda bilgi için bu konunun ilerleyen bölümlerindeki "Sonraki adımlar" bölümüne bakın.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu konuda, Visual Studio'yu kullanarak uygulamanıza yerelleştirilmiş kaynaklar ekleme bildiğiniz varsayılır. Ayrıntılı yönergeler için bkz. [izlenecek yol: Windows formlarının konumunu bulma](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424914"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   Ayrıca dosya sürümü SQL Server Express veya şu anda yüklü olan LocalDB örneği ile uyumlu değilse veya SQL Server Express LocalDB önceki bir sürümü ile oluşturulmuş bir veritabanı dosyanız yükseltme istenebilir. Sorunu çözmek için Visual Studio dosyayı yükseltme yapmanızı ister.  
   
 > [!IMPORTANT]
->  Yükseltmeden önce veritabanı dosyasını yedekleyin öneririz.  
+> Yükseltmeden önce veritabanı dosyasını yedekleyin öneririz.  
   
 > [!WARNING]
->  LocalDB 2014 (V12) 32 bit LocalDB 2016'ya (V13) içinde oluşturulmuş bir .mdf dosyası yükseltirseniz, dosyayı açmayı LocalDB 32-bit sürümünde mümkün olmayacaktır.  Güncelleştirme 2'de LocalDB V13 yalnızca 64 bit ' dir.  
+> LocalDB 2014 (V12) 32 bit LocalDB 2016'ya (V13) içinde oluşturulmuş bir .mdf dosyası yükseltirseniz, dosyayı açmayı LocalDB 32-bit sürümünde mümkün olmayacaktır.  Güncelleştirme 2'de LocalDB V13 yalnızca 64 bit ' dir.  
   
  Bir veritabanını yükseltmeden önce aşağıdaki ölçütleri dikkate alın:  
   

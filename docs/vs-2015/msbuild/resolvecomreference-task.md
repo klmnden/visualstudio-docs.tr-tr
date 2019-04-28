@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439343"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Bir veya daha fazla tür kitaplığı adları veya .tlb dosyaları listesini al�
 |`WrapperTool`|İsteğe bağlı öğe meta verileri.<br /><br /> Bu tür kitaplığı için derleme sarmalayıcısı oluşturmak için kullanılan sarmalayıcı aracı belirtir. Bu öğe meta verileri belirtilmezse görev "tlbimp", varsayılan bir sarmalayıcı aracı kullanır. Typelibs'ın büyük/küçük harf duyarsız, kullanılabilir seçenekler şunlardır:<br /><br /> -   `Primary`: Önceden oluşturulmuş birincil birlikte çalışma derlemesi için COM bileşeni kullanmak istediğinizde bu sarmalayıcı aracı kullanın. Bu sarmalayıcı aracı kullandığınızda, görev başarısız olmasına neden olacağından bir sarmalayıcı çıktı dizini belirtmeyin.<br />-   `TLBImp`: COM bileşeni için birlikte çalışma derlemesi oluşturmak istediğinizde bu sarmalayıcı aracı kullanın.<br />-   `AXImp`: Bu sarmalayıcı aracı, bir ActiveX denetimi için birlikte çalışma derlemesi oluşturmak istediğinizde kullanın.|  
   
 > [!NOTE]
->  Büyük bir tür kitaplığı görevi doğru dosyanın disk üzerinde çözümlenmesi olasılığını benzersiz şekilde tanımlamak için sağladığınız daha fazla bilgi.  
+> Büyük bir tür kitaplığı görevi doğru dosyanın disk üzerinde çözümlenmesi olasılığını benzersiz şekilde tanımlamak için sağladığınız daha fazla bilgi.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [görev temel sınıf](../msbuild/task-base-class.md).  

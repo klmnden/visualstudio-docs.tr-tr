@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412260"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Arama İfadelerindeki Mantıksal İşleçler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760076"
 Mantıksal işleçleri kullanarak aramanızı içerik için daha basit olanlardan daha karmaşık arama ifadeler oluşturarak iyileştirebilirsiniz. Aşağıdaki tabloda gösterildiği gibi arama sorgusu birden çok arama terimlerini birleştirilmelidir mantıksal işleçler belirtin.  
   
 > [!IMPORTANT]
->  Mantıksal işleçler tanıması arama motoru için tüm büyük harfler girmeniz gerekir.  
+> Mantıksal işleçler tanıması arama motoru için tüm büyük harfler girmeniz gerekir.  
   
 |Aramak için|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|Örnek|Sonuç|  
 |-------------------|---------|-------------|------------|  

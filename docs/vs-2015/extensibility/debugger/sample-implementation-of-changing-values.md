@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436680"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Örnek Değer Değiştirme Uygulaması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Görüntülenen her yerel **Yereller** penceresine sahip bir [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) ilişkili nesne. Bu `IDebugProperty2` nesnesi, yerel'ın adı, değeri ve türü içerir. Kullanıcı bir yerel değerini değiştirdiğinde, Visual Studio çağırır [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) yerel bellek değerini güncelleştirmek için. Bu örnekte, yerel tarafından temsil edilen `CFieldProperty` uygulayan sınıf `IDebugProperty2` arabirimi.  
   
 > [!NOTE]
->  İçin **Watch** ve **QuickWatch** ifadeleri, değişmekte olan değer tarafından temsil edilen `CValueProperty` MyCEE örnek bir sınıfta. Bununla birlikte, uygulanması `IDebugProperty2::SetValueAsString` burada gösterilen aynıdır.  
+> İçin **Watch** ve **QuickWatch** ifadeleri, değişmekte olan değer tarafından temsil edilen `CValueProperty` MyCEE örnek bir sınıfta. Bununla birlikte, uygulanması `IDebugProperty2::SetValueAsString` burada gösterilen aynıdır.  
   
  Bu uygulaması `IDebugProperty2::SetValueAsString` aşağıdaki görevleri gerçekleştirir:  
   

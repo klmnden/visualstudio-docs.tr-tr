@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 305f24204c1be7186b2d2d49fa61a0c32c52c8cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d248fb0805c83feb64b2f0a28a645b1fa29d49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422500"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla kopyalama
   Çalışma kopyasını oluşturma ve çalışma önce veya sonra mevcut bir çalışma kitabında ekleyin. Çalışma sayfası ekleneceği konum belirtmezseniz, Excel çalışma sayfası yeni içeren yeni bir çalışma kitabı oluşturur.
@@ -26,7 +26,7 @@ ms.locfileid: "60104401"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 > [!NOTE]
->  Program aracılığıyla çalışma sayfası kopyalama ya da son kullanıcının çalışma el ile kopyalar, yeni çalışma arkasındaki kod yok ve yeni çalışma sayfasındaki denetimleri çalışmaz. Yeni kopyalanan bir çalışma sayfası olmasıdır bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesnesi ve bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi. Konak denetimlerinin ve Windows Forms denetimleri, ana bilgisayar öğeleri yalnızca eklenebilir. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Program aracılığıyla çalışma sayfası kopyalama ya da son kullanıcının çalışma el ile kopyalar, yeni çalışma arkasındaki kod yok ve yeni çalışma sayfasındaki denetimleri çalışmaz. Yeni kopyalanan bir çalışma sayfası olmasıdır bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesnesi ve bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi. Konak denetimlerinin ve Windows Forms denetimleri, ana bilgisayar öğeleri yalnızca eklenebilir. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesindeki bir çalışma kitabı kopyalanan bir çalışma sayfası eklemek için
 

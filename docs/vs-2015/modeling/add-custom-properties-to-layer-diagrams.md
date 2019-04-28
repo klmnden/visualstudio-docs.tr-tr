@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430512"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Katman diyagramlarına özel özellikler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Katman diyagramları için uzantı kodu yazdığınızda, herhangi bir öğeyle 
  **İlk Hazırlık**  
   
 > [!IMPORTANT]
->  Özellikleri görünür yapmak için katman özellikleri görünür olmasını istediğiniz her bilgisayarda aşağıdaki değişikliği yapmanız gerekir.  
+> Özellikleri görünür yapmak için katman özellikleri görünür olmasını istediğiniz her bilgisayarda aşağıdaki değişikliği yapmanız gerekir.  
 > 
 >  1. Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. açın `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 >  

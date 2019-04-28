@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406987"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Nasıl yapılır: Bir özel yerel ayara sahip olan bir projeyi yayımlama
 Farklı yerel ayarlara sahip bileşenleri içeren bir uygulama için durumdur. Bu senaryoda, birkaç proje sahip bir çözüm oluşturun ve ardından her yerel ayar için ayrı projeler yayımlama. Bu yordam, bir makro 'tr' yerel ayarı kullanarak bir çözümde ilk projenizi yayımlamak için nasıl kullanılacağını gösterir. Bu yordamı 'tr' dışında bir yerel ayar ile deneyin istiyorsanız, ayarladığınızdan emin olun `localeString` (örneğin, 'de' veya 'de-DE') kullanarak yerel ayarına uyan makroda.
 
 > [!NOTE]
->  Bu makro kullandığınızda, yayımlama konumu geçerli bir URL ya da evrensel adlandırma kuralı (UNC) paylaşımı olmalıdır. Ayrıca, Internet Information Services (IIS) bilgisayarınızda yüklü olması gerekir. IIS yüklemek için **Başlat** menüsünü tıklatın **Denetim Masası**. Çift **Program Ekle veya Kaldır**. İçinde **Program Ekle veya Kaldır**, tıklayın **Windows Bileşenlerini Ekle/Kaldır**. İçinde **Windows Bileşenleri Sihirbazı'nı**seçin **Internet Information Services (IIS)** onay kutusuna **bileşenleri** listesi. Ardından **son** sihirbazı kapatın.
+> Bu makro kullandığınızda, yayımlama konumu geçerli bir URL ya da evrensel adlandırma kuralı (UNC) paylaşımı olmalıdır. Ayrıca, Internet Information Services (IIS) bilgisayarınızda yüklü olması gerekir. IIS yüklemek için **Başlat** menüsünü tıklatın **Denetim Masası**. Çift **Program Ekle veya Kaldır**. İçinde **Program Ekle veya Kaldır**, tıklayın **Windows Bileşenlerini Ekle/Kaldır**. İçinde **Windows Bileşenleri Sihirbazı'nı**seçin **Internet Information Services (IIS)** onay kutusuna **bileşenleri** listesi. Ardından **son** sihirbazı kapatın.
 
 ### <a name="to-create-the-publishing-macro"></a>Yayımlama makro oluşturmak için
 

@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437222"
 ---
 # <a name="error-list-window"></a>Hata Listesi Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [NOT]
->  Hata listesi, belirli bir hata iletisi hakkındaki bilgileri görüntüler. Hata numarasını veya hata dizesi metnini çıktı penceresinden kopyalayabilirsiniz. Çıktı penceresini görüntülemek için Ctrl + Alt + O tuşlarına basın. Bkz: [çıkış penceresi](../../ide/reference/output-window.md).  
+> Hata listesi, belirli bir hata iletisi hakkındaki bilgileri görüntüler. Hata numarasını veya hata dizesi metnini çıktı penceresinden kopyalayabilirsiniz. Çıktı penceresini görüntülemek için Ctrl + Alt + O tuşlarına basın. Bkz: [çıkış penceresi](../../ide/reference/output-window.md).  
   
  Kullanarak uygulamalarınızı daha hızlı geliştirebilirsiniz **hata listesi** penceresi. Örneğin, aşağıdaki görevleri gerçekleştirebilirsiniz:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "59658155"
   Listeyi sıralamak için herhangi bir sütun başlığına tıklayın. Başka bir sütuna göre yeniden sıralamak için SHIFT tuşunu basılı tutun ve başka bir sütun başlığına tıklayın. Hangi sütunların görüntülenip hangilerinin gizlendiğini seçmek için seçin **sütunları göster** kısayol menüsünden. Sütunların görüntülenme sırasını değiştirmek için herhangi bir sütun başlığını sola veya sağa sürükleyin.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için tıklayın **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz, etkin ayarlarınıza ve sürüm bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için tıklayın **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Hata listesi filtreleri  
  Araç çubuğunun sağ tarafında biri diğeri araç çubuğunun solunda iki açılır liste kutusu filtrede iki tür vardır. Araç çubuğunun sol tarafta açılır listeden kullanılacak kod dosyalarını belirtir (**çözümün tamamında**, **açık belgeler**, **geçerli proje**,  **Geçerli belge**).  
@@ -62,7 +62,7 @@ ms.locfileid: "59658155"
 2. **Geçerli proje**: Hataları, uyarıları ve iletileri seçilmiş belgenin projesinden **Düzenleyicisi** veya seçilen projede **Çözüm Gezgini**.  
   
    > [!NOTE]
-   >  Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.  
+   > Şu anda seçili olan belgenin projesi seçili projeden farklıysa, filtrelenmiş liste hataları, uyarıları ve iletileri değiştirecek **Çözüm Gezgini**.  
   
 3. **Geçerli belge**: Hataları, uyarıları ve iletileri için seçilmiş belgenin içinde Göster **Düzenleyicisi** veya **Çözüm Gezgini**.  
   

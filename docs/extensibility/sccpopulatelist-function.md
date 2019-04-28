@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434583"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList İşlevi
 Bu işlev, belirli bir kaynak denetim komut için dosyaları listesini güncelleştirir ve tüm belirli dosyalar kaynak denetimi durumunu sağlar.
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  Çağırmak eklenti devam `pfnPopulate` ekler ve tamamlandı ve ardından döndürür kadar dosyaları, siler, işlev `SccPopulateList` işlevi. IDE, daha sonra kendi listesini görüntüleyebilirsiniz. `lpStatus` Dizi IDE tarafından geçirilen orijinal listesindeki tüm dosyaları temsil eder. Tüm bu dosya ayrıca için yapma durumunu eklenti doldurur, geri çağırma işlevini kullanın.
 
 > [!NOTE]
->  Kaynak Denetimi Eklentisi, yalnızca hemen listesi olduğu gibi bırakarak bu işlevden döndürülecek seçeneği her zaman vardır. Bir eklenti bu işlevi uyguluyorsa, bu ayarlayarak gösterebilir `SCC_CAP_POPULATELIST` özelliği bit bayrak yapılan ilk çağrıda [Sccınitialize](../extensibility/sccinitialize-function.md). Varsayılan olarak, eklentinin her zaman geçirilen tüm öğeleri dosyalarıdır varsaymanız gerekir. Ancak, IDE ayarlarsa `SCC_PL_DIR` bayrağını `fOptions` parametresi, geçirilen tüm öğeleri olan dizin olarak kabul edilmesi için. Eklenti ait tüm dosyaların dizinlerinde eklemelisiniz. IDE karışımını dosyalar ve dizinler hiçbir zaman geçer.
+> Kaynak Denetimi Eklentisi, yalnızca hemen listesi olduğu gibi bırakarak bu işlevden döndürülecek seçeneği her zaman vardır. Bir eklenti bu işlevi uyguluyorsa, bu ayarlayarak gösterebilir `SCC_CAP_POPULATELIST` özelliği bit bayrak yapılan ilk çağrıda [Sccınitialize](../extensibility/sccinitialize-function.md). Varsayılan olarak, eklentinin her zaman geçirilen tüm öğeleri dosyalarıdır varsaymanız gerekir. Ancak, IDE ayarlarsa `SCC_PL_DIR` bayrağını `fOptions` parametresi, geçirilen tüm öğeleri olan dizin olarak kabul edilmesi için. Eklenti ait tüm dosyaların dizinlerinde eklemelisiniz. IDE karışımını dosyalar ve dizinler hiçbir zaman geçer.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Kaynak Denetimi Eklentisi API İşlevleri](../extensibility/source-control-plug-in-api-functions.md)

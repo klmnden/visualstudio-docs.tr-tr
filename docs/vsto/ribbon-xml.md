@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436504"
 ---
 # <a name="ribbon-xml"></a>Şerit XML
   Şerit (XML) öğesini Şerit XML kullanarak özelleştirmenize olanak sağlar. Şerit (Görsel Tasarımcı) öğesi tarafından desteklenmeyen bir biçimde Şerit özelleştirmek istiyorsanız Şerit (XML) öğesini kullanın. Her bir öğeyle neler yapabileceğinizi bir karşılaştırması için bkz [Şerite Genel Bakış](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117550"
 - Geri çağırma yöntemi, Şerit sınıfında tanımlayın.
 
 > [!NOTE]
->  Outlook için ek bir adım gereklidir. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
+> Outlook için ek bir adım gereklidir. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Şeritte bir uygulamanın nasıl oluşturulduğunu gösteren bir kılavuz için bkz. [izlenecek yol: Şerit XML kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

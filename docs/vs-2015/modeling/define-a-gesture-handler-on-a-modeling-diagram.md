@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433159"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
 3. Projeye bir sınıf dosyası ekleyin ve içeriğini aşağıdaki koda göre ayarlayın.  
   
    > [!NOTE]
-   >  Ad alanını ve sınıf adını tercihinize göre değiştirin.  
+   > Ad alanını ve sınıf adını tercihinize göre değiştirin.  
   
    ```  
    using System.ComponentModel.Composition;  

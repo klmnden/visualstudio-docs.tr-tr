@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405714"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Yeniden Kullanılabilir Düğme Grupları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Bir komut grubuyla, her zaman birlikte bir menü veya araç çubuğunda görüne
     ```  
   
     > [!NOTE]
-    >  Önceliği alanının değeri, yeni komut grubu komutu konumunu belirler. Öğe öğe tanımında ayarlanan geçersiz kılar CommandPlacement öncelikler ayarlayın. Düşük öncelikli değerlere sahip komutları önce daha yüksek öncelik değerine sahip komutlar görüntülenir. Yinelenen öncelik değerleri izin verilir, ancak aynı öncelik değerine sahip komutları göreli konumunu, çünkü garanti edilemez sırayı **devenv/Setup** komut, kayıt defterinden son arabirimi oluşturur tutarlı olmayabilir.  
+    > Önceliği alanının değeri, yeni komut grubu komutu konumunu belirler. Öğe öğe tanımında ayarlanan geçersiz kılar CommandPlacement öncelikler ayarlayın. Düşük öncelikli değerlere sahip komutları önce daha yüksek öncelik değerine sahip komutlar görüntülenir. Yinelenen öncelik değerleri izin verilir, ancak aynı öncelik değerine sahip komutları göreli konumunu, çünkü garanti edilemez sırayı **devenv/Setup** komut, kayıt defterinden son arabirimi oluşturur tutarlı olmayabilir.  
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Düğmeleri yeniden kullanılabilir bir grup bir menüye yerleştirmek için  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406621"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce ile COM bileşenleri dağıtma
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.
@@ -62,7 +62,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.
 
     > [!NOTE]
-    >  Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.
+    > Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.
 
 3. İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.
 
@@ -77,7 +77,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 5. Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.
 
 > [!NOTE]
->  Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız
+> Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız
 
  Artık Windows tabanlı bir uygulama oluşturun ve COM bileşenine bir başvuru ekleyin.
 
@@ -125,7 +125,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
    Şimdi ne zaman uygulama beklendiği gibi çalıştığını F5 tuşuna basın, ancak artık Kayıtsız COM altında çalışıyor Bu, kanıtlamak için VB6Hello.dll bileşen kaydı RegFreeComDemo1.exe Visual Studio IDE dışında çalıştırmayı deneyin. Düğme tıklandığında bu süre hala çalışır. Uygulama bildirimi geçici olarak yeniden adlandırma, yeniden başarısız olur.
 
 > [!NOTE]
->  Geçici olarak kaydını silerek bir COM bileşeni olmaması benzetimini yapabilirsiniz. Bir komut istemi açın, yazarak sistem klasörünüze gidin `cd /d %windir%\system32`, ardından yazarak bileşeninin kaydı `regsvr32 /u VB6Hello.dll`. Yeniden yazarak kaydedebilirsiniz `regsvr32 VB6Hello.dll`.
+> Geçici olarak kaydını silerek bir COM bileşeni olmaması benzetimini yapabilirsiniz. Bir komut istemi açın, yazarak sistem klasörünüze gidin `cd /d %windir%\system32`, ardından yazarak bileşeninin kaydı `regsvr32 /u VB6Hello.dll`. Yeniden yazarak kaydedebilirsiniz `regsvr32 VB6Hello.dll`.
 
  Kullanarak uygulamayı yayımlamak için son adımdır [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 

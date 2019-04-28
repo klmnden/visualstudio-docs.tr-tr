@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434074"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasıyla Önkoşulları Yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Tüm [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamaları gerekt
  Paketleme ve önkoşulları yerine bileşenler için indirme konumu belirtebilirsiniz. Örneğin, yayımladığınız her uygulamasına Önkoşullar dahil olmak üzere yerine, bir merkezi dosya paylaşımı veya tüm önkoşulların için yükleyicileri içeren Web konumu kullanabilirsiniz — yükleme zamanında bileşenler indirilir ve Bu konumdan yüklü.  
   
 > [!IMPORTANT]
->  İlk yayımlamadan önce önkoşul yükleyicisi paketleri geliştirme bilgisayarınıza eklemelisiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil etme](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+> İlk yayımlamadan önce önkoşul yükleyicisi paketleri geliştirme bilgisayarınıza eklemelisiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil etme](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Önkoşullar yönetilen **önkoşulları** iletişim kutusu, erişilebilir **Yayımla** bölmesinde **Proje Tasarımcısı**.  
   
 > [!NOTE]
->  Önceden belirlenmiş Önkoşullar listesine ek olarak kendi bileşenleri listesine ekleyebilirsiniz. Daha fazla bilgi için [önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md).  
+> Önceden belirlenmiş Önkoşullar listesine ek olarak kendi bileşenleri listesine ekleyebilirsiniz. Daha fazla bilgi için [önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md).  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Yükleme ClickOnce uygulamasıyla önkoşulları belirlemek için  
   
@@ -68,7 +68,7 @@ Tüm [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamaları gerekt
 6. Aşağı açılan listeden bir konum seçin veya bir URL, dosya yolunu veya FTP konumu girin ve ardından **Tamam.**  
   
     > [!NOTE]
-    >  Belirtilen bileşenler için yükleyicileri belirtilen konumda bulunduğundan emin olmanız gerekir.  
+    > Belirtilen bileşenler için yükleyicileri belirtilen konumda bulunduğundan emin olmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   

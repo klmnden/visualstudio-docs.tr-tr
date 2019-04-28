@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419648"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma
   Visual Basic'te olay işleyicileri oluşturmanın birkaç yolu vardır ve C#. Tasarım görünümünde, varsayılan olay işleyicileri denetimleri için denetimi çift tıklayarak oluşturabilir, veya olayları bölmesini kullanarak **özellikleri** herhangi bir olay işleyicileri denetimi oluşturmak için pencere. Ancak, kod Görünümü'nde, bir olay işleyicisi oluşturmak için Tasarım görünümüne geçiş yapmak istemeyebilirsiniz.
@@ -34,7 +34,7 @@ ms.locfileid: "60054527"
 1. Gelen **sınıf adı** Kod Düzenleyicisi'nin üst aşağı açılan listesinde, istediğiniz nesneyi seçin için bir olay işleyicisi oluşturun.
 
     > [!NOTE]
-    >  Olay işleyicileri oluşturmak istiyorsanız `ThisDocument` veya `ThisWorkbook`, seçmelisiniz **(ThisDocument olayları)** veya **(ThisWorkbook olayları)** içinde **sınıf adı**aşağı açılan listesi
+    > Olay işleyicileri oluşturmak istiyorsanız `ThisDocument` veya `ThisWorkbook`, seçmelisiniz **(ThisDocument olayları)** veya **(ThisWorkbook olayları)** içinde **sınıf adı**aşağı açılan listesi
 
 2. Gelen **yöntem adı** açılır listede Kod Düzenleyicisi'nin en üstünde, olayı seçin.
 

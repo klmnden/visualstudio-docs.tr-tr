@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440826"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT Derleyici Komut Satırı Bayrakları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Karakter - (dash) ve / (eğik çizgi) komut satırı parametrelerini belirten için kabul edilen iki gösterimdir.  
+> Karakter - (dash) ve / (eğik çizgi) komut satırı parametrelerini belirten için kabul edilen iki gösterimdir.  
   
  Kabul edilebilir bayrakları ve bunların anlamı aşağıda verilmiştir.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Ek tanımlı simgeleri belirtin.|  
 |-I|Ek dosya başvuruları çözümlenirken kullanılacak yol eklemeyi gösterir.|  
 |-L|Belirtin <xref:System.Globalization.CultureInfo> kültür adı, örneğin "en-US".|  
-|-E|Yayma C# tarafından izlenen nesneleri komut öğeler için belirtilen ad alanı [C&#124;H&#124;N]:*filename*nerede C = C#, H C++ üst bilgi, N = ad alanı =. Ad alanı, C# için gereklidir.|  
+|-E|Yayma C# tarafından izlenen nesneleri komut öğeler için belirtilen ad alanı [C&#124;H&#124;N]:*filename*nerede C = C#, H = C++ üst N ad alanı =. Ad alanı, C# için gereklidir.|  
 |-v|Ayrıntılı çıkış.|  
   
  -L anahtar dizeler için karşılık gelen ikili .cto dosyasını oluşturmak için bir grup seçmek için derleyiciye belirtilen <xref:System.Globalization.CultureInfo> kültür adı. Bir veya daha fazla dil özniteliğinde belirtilen kültür adı eşleşmelidir [Strings öğesi](../../extensibility/strings-element.md) .vsct dosyası içinde. Strings öğesi hiçbir dil özniteliği varsa, içeren uyarıdan devralınır [CommandTable öğesi](../../extensibility/commandtable-element.md).  

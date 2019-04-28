@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433282"
 ---
 # <a name="customizing-deletion-behavior"></a>Silme Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Genellikle bir öğeyi silme ilgili öğeleri de silinmesine neden olur. Tüm il
  DSL tanımı dosyasında seçenekleri yalnızca için hemen bir komşu silme işlemi yayar olmadığını seçmenize olanak tanır. Daha karmaşık bir delete yayma düzenini uygulamak için program kodu yazabilirsiniz.  
   
 > [!NOTE]
->  Program kodu için DSL tanımını eklemek için ayrı bir kod dosyasında oluşturma **Dsl** proje ve oluşturulan kod klasörü sınıfları genişletmek için kısmi tanımları yazma. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Program kodu için DSL tanımını eklemek için ayrı bir kod dosyasında oluşturma **Dsl** proje ve oluşturulan kod klasörü sınıfları genişletmek için kısmi tanımları yazma. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Bir silme kapanış tanımlama  
  Silme işlemi sınıfın kullandığı _YourModel_**DeleteClosure** , bir başlangıç seçimi silmek için hangi öğelerin belirlemek için. Çağrı `ShouldVisitRelationship()` ve `ShouldVisitRolePlayer()` tekrar tekrar ilişkilerin grafik yürüyen. Bu yöntemleri geçersiz kılabilirsiniz. ShouldVisitRolePlayer bağlantı ve bağlantının rollerden biri öğe kimliği ile sağlanır. Aşağıdaki değerlerden birini döndürmesi gerekir:  
@@ -213,7 +213,7 @@ partial class Artist
      Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Bir öğe silindiğinde, etki alanı özellik değerlerine erişebilirsiniz, ancak ilişki bağlantılarını gidilemiyor. Ancak, silinen bir olay bir ilişkiye ayarlarsanız, kendi rol oyuncuları olan iki öğe de erişebilirsiniz. Bu nedenle, bir model öğesini silme işlemi için yanıt, ancak bağlı bir öğeye erişmeyi istediğiniz istiyorsanız, model öğesinin etki alanı sınıfı yerine ilişkiyi silme olayı ayarlayın.  
+    > Bir öğe silindiğinde, etki alanı özellik değerlerine erişebilirsiniz, ancak ilişki bağlantılarını gidilemiyor. Ancak, silinen bir olay bir ilişkiye ayarlarsanız, kendi rol oyuncuları olan iki öğe de erişebilirsiniz. Bu nedenle, bir model öğesini silme işlemi için yanıt, ancak bağlı bir öğeye erişmeyi istediğiniz istiyorsanız, model öğesinin etki alanı sınıfı yerine ilişkiyi silme olayı ayarlayın.  
   
 ### <a name="example-deletion-rules"></a>Örnek silme kuralları  
   

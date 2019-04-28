@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420083"
 ---
 # <a name="graphics-pixel-history"></a>Grafik Piksel Geçmişi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde belir
 3. İlgilendiğiniz temel altında gölgelendirici başlık bağlantıyı — Örneğin, bağlantıyı **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.  
   
     > [!TIP]
-    >  Nesne sayısı **obj:30**, bu gölgelendirici grafik Çözümleyicisi arabirimi nesne tablosu ve ardışık düzen Aşamaları penceresinde olduğu gibi böyle boyunca tanımlar.  
+    > Nesne sayısı **obj:30**, bu gölgelendirici grafik Çözümleyicisi arabirimi nesne tablosu ve ardışık düzen Aşamaları penceresinde olduğu gibi böyle boyunca tanımlar.  
   
 ##### <a name="to-debug-a-shader"></a>Gölgelendirici hata ayıklamak için  
   

@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388573"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle eksik nesneler
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek yol: Yanlış Yapılandırılmış Ardışık Düzen Nedeniyle Eksik Nesneler
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nedeniyle bir unset piksel gölgelendiricisi eksik olan bir nesne incelemek için grafik tanılama araçları.
 
  Bu örneklerde bu görevler gösterilir:
@@ -61,7 +61,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../
     İçinde **grafik ardışık düzen aşamaları** penceresinde **giriş Assembler** aşama, dönüştürülen önce nesne geometrisinin gösterir ve **köşe gölgelendiricisi** aşama aynı gösterir Bunu dönüştürüldükten sonra nesne. Bu senaryoda, dikkat **grafik ardışık düzen aşamaları** penceresi şunu gösterir **giriş Assembler** ve **köşe gölgelendiricisi** aşamaları ancak **piksel gölgelendiricisi**  aşaması için bir çizim çağrıları.
 
    > [!NOTE]
-   >  Diğer, ardışık düzen aşamaları — Örneğin, kabuk gölgelendiricisi, etki alanı gölgelendiricisi ve geometri gölgelendirici aşamalarının — nesneyi işlemek, sorunun nedenini herhangi biri olabilir. Genellikle, erken aşama sonucu görüntülenmez veya beklenmedik bir şekilde görüntülenir sorun ilgilidir.
+   > Diğer, ardışık düzen aşamaları — Örneğin, kabuk gölgelendiricisi, etki alanı gölgelendiricisi ve geometri gölgelendirici aşamalarının — nesneyi işlemek, sorunun nedenini herhangi biri olabilir. Genellikle, erken aşama sonucu görüntülenmez veya beklenmedik bir şekilde görüntülenir sorun ilgilidir.
 
 4. Eksik bir nesneye karşılık gelen bir çizim çağrısı ulaştığında durdurun. Bu senaryoda, **grafik ardışık düzen aşamaları** pencere geometri GPU'ya verildiğini gösterir (yokluğuyla **giriş Assembler** aşama) ve dönüştürülen ( tarafındanbelirtilir **Köşe gölgelendirici** aşama), bir etkin piksel gölgelendiricisi olması değil gözükmüyor olduğundan işleme hedefi görünmez, ancak (yokluğuyla **piksel gölgelendiricisi** aşama). Bu senaryoda, eksik nesnesinin siluet bile görebilirsiniz **çıkış Birleştiricisi** aşama:
 
@@ -84,7 +84,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../
 1. Bulma `PSSetShader` eksik nesnesine karşılık gelen çağrı. İçinde **grafik olay listesi** penceresinde "Çiz; girin "İçinde PSSetShader **arama** sağ üst köşesinde kutusunda **grafik olay listesi** penceresi. Bu, yalnızca "PSSetShader" olaylar ve kendi başlıklarında "Çiz" olan olaylar içeren listenin filtreler. İlk seçin `PSSetShader` eksik nesnesinin çizim çağrısından önce görüntülenen çağrısı.
 
    > [!NOTE]
-   >  `PSSetShader` görünmez **grafik olay listesi** penceresini bu çerçevesinde ayarlanmadı. Bu genellikle yalnızca tek bir piksel gölgelendiricisi tüm nesneleri için kullanılıyorsa veya gerçekleşir `PSSetShader` çağrısı sırasında bu çerçeve istemeden atlandı. Her iki durumda da, uygulamanın kaynak kodunu arama olan öneririz `PSSetShader` bu çağrılar davranışını incelemek için çağrıları ve geleneksel hata ayıklama teknikleri kullanın.
+   > `PSSetShader` görünmez **grafik olay listesi** penceresini bu çerçevesinde ayarlanmadı. Bu genellikle yalnızca tek bir piksel gölgelendiricisi tüm nesneleri için kullanılıyorsa veya gerçekleşir `PSSetShader` çağrısı sırasında bu çerçeve istemeden atlandı. Her iki durumda da, uygulamanın kaynak kodunu arama olan öneririz `PSSetShader` bu çağrılar davranışını incelemek için çağrıları ve geleneksel hata ayıklama teknikleri kullanın.
 
 2. Açık **grafik olay çağrı yığını** penceresi. Üzerinde **grafik tanılama** araç seçin **grafik olay çağrı yığını**.
 
@@ -93,7 +93,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../
     ![Piksel gölgelendirici başlatmak olmayan kod](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Çağrı yığını inceleyerek kaynağı null değerini bulamazsanız, üzerinde bir koşullu kesme noktası ayarlamanızı öneririz `PSSetShader` çağrı piksel gölgelendiricisi ayarladığınızda, programın yürütülmesini keser, null. Sonra uygulamayı hata ayıklama modunda yeniden başlatın ve null değer kaynağı bulmak için geleneksel hata ayıklama teknikleri kullanabilirsiniz.
+   > Çağrı yığını inceleyerek kaynağı null değerini bulamazsanız, üzerinde bir koşullu kesme noktası ayarlamanızı öneririz `PSSetShader` çağrı piksel gölgelendiricisi ayarladığınızda, programın yürütülmesini keser, null. Sonra uygulamayı hata ayıklama modunda yeniden başlatın ve null değer kaynağı bulmak için geleneksel hata ayıklama teknikleri kullanabilirsiniz.
 
    Sorunu gidermek için ilk parametresini kullanarak doğru piksel gölgelendiricisi atama `ID3D11DeviceContext::PSSetShader` API çağrısı.
 

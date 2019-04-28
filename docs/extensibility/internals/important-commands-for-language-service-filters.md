@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418434"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Dil Hizmeti Filtreleri için Önemli Komutlar
 Tam özellikli dil hizmeti filtresi oluşturmak istiyorsanız, aşağıdaki komutları işleme göz önünde bulundurun. Tam komut tanımlayıcıları listesini tanımlanan <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> numaralandırması yönetilen kod ve Stdidcmd.h üstbilgi dosyası yönetilmeyen [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kod. Stdidcmd.h dosyasında bulabilirsiniz *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Common\Inc.
@@ -24,7 +24,7 @@ Tam özellikli dil hizmeti filtresi oluşturmak istiyorsanız, aşağıdaki komu
 ## <a name="commands-to-handle"></a>Komutları işlemek için
 
 > [!NOTE]
->  Aşağıdaki tabloda her komut için filtre uygulamak için zorunlu değildir.
+> Aşağıdaki tabloda her komut için filtre uygulamak için zorunlu değildir.
 
 |Komut|Açıklama|
 |-------------|-----------------|

@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424578"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
 2. Çözüm Gezgini'ndeki projeden bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.  
   
    > [!WARNING]
-   >  Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:  
+   > Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:  
    > 
    > - Diyagramı içeren uygulama projesi  
    >   - Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje  
@@ -50,12 +50,12 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
    Sınıf Görünümü'ndeki proje düğümünden bir veya daha fazla türü sınıf diyagramına sürükleyerek projedeki türleri de görüntüleyebilirsiniz.  
   
 > [!TIP]
->  Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Türleri diyagram üzerinde varsayılan konumlarda görüntülemek için Sınıf Görünümü'nde bir veya daha fazla tür seçin, seçili türlere sağ tıklayın ve seçin **sınıf diyagramını görüntüle**.  
   
 > [!NOTE]
->  Türü içeren bir kapalı sınıf diyagramı projede zaten varsa, sınıf diyagramı açılarak tür şeklini görüntüler. Ancak, proje içinde bu türü içeren hiçbir sınıf diyagramı yoksa, Sınıf Tasarımcısı proje içinde yeni bir sınıf diyagramı oluşturur ve bu diyagramı açarak türü görüntüler.  
+> Türü içeren bir kapalı sınıf diyagramı projede zaten varsa, sınıf diyagramı açılarak tür şeklini görüntüler. Ancak, proje içinde bu türü içeren hiçbir sınıf diyagramı yoksa, Sınıf Tasarımcısı proje içinde yeni bir sınıf diyagramı oluşturur ve bu diyagramı açarak türü görüntüler.  
   
  Bir türü diyagram üzerinde ilk kez görüntülediğinizde, bu türe ait şekil varsayılan olarak daraltılmış görünür. Şekli genişleterek içeriğini görüntüleyebilirsiniz.  
   

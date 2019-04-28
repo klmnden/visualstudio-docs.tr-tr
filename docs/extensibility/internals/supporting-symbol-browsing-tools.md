@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428765"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Sembol Tarama Araçlarını Destekleme
 **Nesne Tarayıcısı**, **sınıf görünümü**, **çağrı tarayıcısı** ve **sembol sonuçları Bul** sembol göz atma özellikleri Visual Studio araçları sağlar. Bu araçlar, hiyerarşik ağaç görünümleri simgeleri görüntüler ve simgeler ağacında arasındaki ilişkileri göstermek. Simgeler, ad alanları, nesneler, sınıflar, sınıf üyeleri ve çeşitli bileşenlerinde bulunan diğer dil öğeleri temsil edebilir. Visual Studio projeleri, dış bileşenleri dahil [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] bileşenleri ve tür (.tlb) kitaplıkları. Daha fazla bilgi için [Structure of Code görüntüleme](../../ide/viewing-the-structure-of-code.md).
@@ -46,9 +46,9 @@ ms.locfileid: "56617008"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Nesnesi Yöneticisi çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> belirtilen liste öğesi genişletilebilir ve alt öğelerine sahip belirlemek için yöntemi. UI öğe genişletmek için bir istek gönderirse, nesne yöneticisine alt simge listesi çağırarak istekleri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> yöntemi. İşlem, isteğe bağlı olarak oluşturulmakta ağacı farklı kısımlarını ile devam eder.
 
 > [!NOTE]
->  Yerel kod sembol sağlayıcısı uygulamak için kullanma <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimleri.
+> Yerel kod sembol sağlayıcısı uygulamak için kullanma <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> arabirimleri.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Nasıl yapılır: Nesne yöneticisine kitaplık kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-- [Nasıl yapılır: Bir kitaplıktaki sembolleri tanımlama](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [Nasıl yapılır: Nesne Yöneticisine Kitaplık Kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Nasıl yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Nasıl yapılır: Bir Kitaplıktaki Sembolleri Tanımlama](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

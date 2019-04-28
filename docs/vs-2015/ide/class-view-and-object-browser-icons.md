@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422835"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Sınıf Görünümü ve Nesne Tarayıcısı Simgeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Sınıf Görünümü ** ve **Nesne Tarayıcısı** kod varlıklar, örneğin tem
  Aşağıdaki sinyal simgeleri, önceki tüm simgeleri uygulamak ve kendi erişilebilirlik gösterir.  
   
 > [!NOTE]
->  Projenize bir kaynak denetim veritabanında yer alıyorsa ek sinyal simgeleri kaynak denetimi durumunu belirtmek için görüntülenen, gibi iade veya olabilir kullanıma alındı.  
+> Projenize bir kaynak denetim veritabanında yer alıyorsa ek sinyal simgeleri kaynak denetimi durumunu belirtmek için görüntülenen, gibi iade veya olabilir kullanıma alındı.  
   
 |Simge|Açıklama|  
 |----------|-----------------|  

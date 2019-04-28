@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418462"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Nasıl yapılır: .Vsct dosyası oluşturma
 
@@ -80,7 +80,7 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir komut tablosu dosyasından
     Bu eylem yeni bir oluşturur *.vsct* XML komut tablosu kaynak dosyası. Kullanarak dosyanın derleme *Vsct.exe*, siz VSCT derleyici olduğu diğer *.vsct* dosya.
 
    > [!NOTE]
-   >  Okunabilirliğini geliştirmek *.vsct* XML açıklamaları yeniden biçimlendirme tarafından dosya.
+   > Okunabilirliğini geliştirmek *.vsct* XML açıklamaları yeniden biçimlendirme tarafından dosya.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir ikili dosyadan *.cto* dosy
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Bir .cto dosyasından .vsct dosyası oluşturmak için
 
-1.  Kopyalarını almak *.cto* dosya ve kendi ilişkili *.ctsym* dosya.
+1. Kopyalarını almak *.cto* dosya ve kendi ilişkili *.ctsym* dosya.
 
-2.  Dosyaları ile aynı dizine yerleştirin *vsct.exe* derleyici.
+2. Dosyaları ile aynı dizine yerleştirin *vsct.exe* derleyici.
 
-3.  Visual Studio komut isteminde içeren dizine gidin *.cto* ve *.ctsym* dosyaları.
+3. Visual Studio komut isteminde içeren dizine gidin *.cto* ve *.ctsym* dosyaları.
 
-4.  Tür
+4. Tür
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir ikili dosyadan *.cto* dosy
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Projenin derlenmesi için .vsct dosyası eklemek için
 
-1.  Proje dosyanız, düzenleyicide açın. Proje yüklenirse, onu önce bellekten gerekir.
+1. Proje dosyanız, düzenleyicide açın. Proje yüklenirse, onu önce bellekten gerekir.
 
-2.  Ekleme bir [ItemGroup öğesi](../../msbuild/itemgroup-element-msbuild.md) içeren bir `VSCTCompile` öğesi, aşağıdaki örnekte gösterildiği gibi.
+2. Ekleme bir [ItemGroup öğesi](../../msbuild/itemgroup-element-msbuild.md) içeren bir `VSCTCompile` öğesi, aşağıdaki örnekte gösterildiği gibi.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir ikili dosyadan *.cto* dosy
 
      `ResourceName` Öğe her zaman ayarlanmalıdır `Menus.ctmenu`.
 
-3.  Projeniz varsa bir *.resx* ekleyin bir `EmbeddedResource` öğesini içeren bir `MergeWithCTO` öğesi, aşağıdaki örnekte gösterildiği gibi:
+3. Projeniz varsa bir *.resx* ekleyin bir `EmbeddedResource` öğesini içeren bir `MergeWithCTO` öğesi, aşağıdaki örnekte gösterildiği gibi:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ XML tabanlı oluşturabilirsiniz *.vsct* var olan bir ikili dosyadan *.cto* dosy
 
      Bu işaretleme içinde gitmesi gereken `ItemGroup` katıştırılmış kaynaklar içeren öğe.
 
-4.  Genellikle, bir paket dosyası açmak  *\<ProjectName\>Package.cs* veya  *\<ProjectName\>Package.vb*, düzenleyicide.
+4. Genellikle, bir paket dosyası açmak  *\<ProjectName\>Package.cs* veya  *\<ProjectName\>Package.vb*, düzenleyicide.
 
-5.  Ekleme bir `ProvideMenuResource` aşağıdaki örnekte gösterildiği gibi paket sınıfına özniteliği.
+5. Ekleme bir `ProvideMenuResource` aşağıdaki örnekte gösterildiği gibi paket sınıfına özniteliği.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

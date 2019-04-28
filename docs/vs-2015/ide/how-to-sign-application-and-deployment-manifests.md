@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435189"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
  Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .pfx uzantılı yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .pfx uzantılı yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Uygulama ve dağıtım bildirimlerini imzalamak için bir sertifika kullanıyor  
   
@@ -48,7 +48,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
      **Bir sertifika seçin** iletişim kutusu görünür ve Windows sertifika deposunun içeriğini görüntüler.  
   
     > [!TIP]
-    >  Tıklarsanız **sertifika özelliklerini görüntülemek için burayı tıklatın**, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusu sertifika ile ilgili ayrıntılı bilgiler içerir ve ek seçenekler içerir. Tıklayabilirsiniz **sertifikaları** Ek Yardım bilgilerini görüntülemek için.  
+    > Tıklarsanız **sertifika özelliklerini görüntülemek için burayı tıklatın**, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusu sertifika ile ilgili ayrıntılı bilgiler içerir ve ek seçenekler içerir. Tıklayabilirsiniz **sertifikaları** Ek Yardım bilgilerini görüntülemek için.  
   
 3. Bildirimleri imzalamak için kullanmak istediğiniz sertifikayı seçin.  
   
@@ -65,7 +65,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 3. İçinde **Dosya Seç iletişim** kutusunda, kullanmak ve ardından istediğiniz anahtar dosyanın (.pfx) konumuna göz atın **açık**.  
   
     > [!NOTE]
-    >  Bu seçenek yalnızca .pfx uzantılı dosyaları destekler. Bir anahtar dosyası veya başka bir biçim, Windows sertifika deposuna kaydedin ve sertifikayı seçin sertifika varsa önceki yordamda açıklanmıştır. Seçilen sertifikanın amacı kod imzalamayı içermelidir.  
+    > Bu seçenek yalnızca .pfx uzantılı dosyaları destekler. Bir anahtar dosyası veya başka bir biçim, Windows sertifika deposuna kaydedin ve sertifikayı seçin sertifika varsa önceki yordamda açıklanmıştır. Seçilen sertifikanın amacı kod imzalamayı içermelidir.  
   
      **Dosyasını açmak için parola gir** iletişim kutusu görüntülenir. (.Pfx dosyası zaten Windows sertifika deponuza depolanır ve parola korumalı ise, bir parola girmeniz istenmez.)  
   
@@ -83,7 +83,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
  ClickOnce bildirimlerini imzalanması, .exe tabanlı uygulamalar için isteğe bağlıdır. Aşağıdaki yordamlar imzasız ClickOnce bildirimlerinin nasıl oluşturulacağını gösterir.  
   
 > [!IMPORTANT]
->  İmzalanmamış bildirimler, geliştirme ve test uygulamanızın basitleştirebilir. Ancak, imzalanmamış bildirimler üretim ortamında önemli güvenlik riskleri tanıtır. Yalnızca ClickOnce uygulamanız Internet veya diğer kötü amaçlı kod kaynaklarından tamamen yalıtılmış bir intranet bilgisayarda çalışıyorsa imzalanmamış bildirimleri kullanmayı düşünün.  
+> İmzalanmamış bildirimler, geliştirme ve test uygulamanızın basitleştirebilir. Ancak, imzalanmamış bildirimler üretim ortamında önemli güvenlik riskleri tanıtır. Yalnızca ClickOnce uygulamanız Internet veya diğer kötü amaçlı kod kaynaklarından tamamen yalıtılmış bir intranet bilgisayarda çalışıyorsa imzalanmamış bildirimleri kullanmayı düşünün.  
   
  Varsayılan olarak, üretilen karmada bir veya daha fazla dosya özellikle hariç tutulmadığı sürece ClickOnce otomatik olarak imzalı bildirimler üretir. Diğer bir deyişle, tüm dosyalar karmaya uygulama sonuçları imzalı Bildirimlerde yayımlarken, bile **ClickOnce bildirimlerini imzala** onay kutusu işaretli değilse.  
   
@@ -104,7 +104,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 2. Açık **uygulama dosyaları** iletişim kutusu ve kümesi **karma** için **hariç** ve oluşturulan karmadan hariç tutmak istediğiniz dosyaları için.  
   
     > [!NOTE]
-    >  Bir dosyayı karma oluşturmadan hariç, böylece önceki yordamda gösterildiği imzalı bildirimleri önce yayınlamanız gerekmez bildirimler, otomatik imzalama devre dışı bırakmak üzere ClickOnce yapılandırır.  
+    > Bir dosyayı karma oluşturmadan hariç, böylece önceki yordamda gösterildiği imzalı bildirimleri önce yayınlamanız gerekmez bildirimler, otomatik imzalama devre dışı bırakmak üzere ClickOnce yapılandırır.  
   
 3. Uygulamayı yayınlayın.  
   

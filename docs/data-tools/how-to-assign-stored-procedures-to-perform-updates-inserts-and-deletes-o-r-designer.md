@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402825"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
 
@@ -59,7 +59,7 @@ Varsayılan olarak, bir veritabanı (ekleme, güncelleştirme ve silme) veri LIN
 10. Tıklayın **Tamam** veya **uygulamak**.
 
     > [!NOTE]
-    >  Tıkladığınız sürece her sınıf ve davranış birleşimini davranışını yapılandırmak devam **Uygula** her değişikliği yaptıktan sonra. Tıklamadan önce sınıf veya davranış değiştirirseniz **Uygula**, bir uyarı iletişim kutusu görünür ve yaptığınız değişiklikleri uygulamak için bir fırsat sunar.
+    > Tıkladığınız sürece her sınıf ve davranış birleşimini davranışını yapılandırmak devam **Uygula** her değişikliği yaptıktan sonra. Tıklamadan önce sınıf veya davranış değiştirirseniz **Uygula**, bir uyarı iletişim kutusu görünür ve yaptığınız değişiklikleri uygulamak için bir fırsat sunar.
 
 Güncelleştirmeler için varsayılan çalışma zamanı mantığını kullanarak geri almak için yanındaki tıklayın **Ekle**, **güncelleştirme**, veya **Sil** komutunu **özellikleri**  penceresi ve ardından **çalışma zamanı kullanmak** içinde **davranışı Yapılandır** iletişim kutusu.
 

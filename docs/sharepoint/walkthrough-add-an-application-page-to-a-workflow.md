@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409555"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme
   Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -295,7 +295,7 @@ ms.locfileid: "60083049"
     ```
 
     > [!WARNING]
-    >  "TestServer" kodda SharePoint çalıştıran geçerli bir sunucu adı ile değiştirdiğinizden emin olun.
+    > "TestServer" kodda SharePoint çalıştıran geçerli bir sunucu adı ile değiştirdiğinizden emin olun.
 
 ## <a name="test-the-application-page"></a>Uygulama sayfasını sınama
  Ardından, uygulama sayfasına gider verileri doğru şekilde görüntülenip görüntülenmeyeceğini belirler.

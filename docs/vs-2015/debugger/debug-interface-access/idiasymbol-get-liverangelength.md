@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e3f3e83fecf6a3e8ff8282a4581dfd10893b8ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423248"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeLength ( 
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
   
 > [!NOTE]
->  Döndürülen hata kodu sembol Canlı aralığı bilgisi yok anlamına gelir.  
+> Döndürülen hata kodu sembol Canlı aralığı bilgisi yok anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
   

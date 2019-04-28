@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418656"
 ---
 # <a name="develop-a-legacy-language-service"></a>Eski dil hizmeti geliştirme
 Bu bölüm yardımcı olacak konulara bağlantılar eski dil hizmeti oluşturun.
@@ -29,7 +29,7 @@ Bu bölüm yardımcı olacak konulara bağlantılar eski dil hizmeti oluşturun.
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Dil hizmeti uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [düzenleyici ve dil hizmeti uzantıları](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
 
 ## <a name="in-this-section"></a>Bu bölümde
 - [Eski dil hizmetinin modeli](../../extensibility/internals/model-of-a-legacy-language-service.md)
@@ -52,7 +52,7 @@ Bu bölüm yardımcı olacak konulara bağlantılar eski dil hizmeti oluşturun.
 
  Dil hizmeti bir hata ayıklayıcı destekleyecek şekilde süreçlerinizi nasıl sağlayabilirsiniz açıklar.
 
-- [Denetim listesi: Eski dil hizmeti oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Yapılacaklar listesi: Eski dil hizmeti oluşturma](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  Oluşturma ve çekirdek Düzenleyicisi için bir dil hizmeti tümleştirmek için adım adım yönergeler sağlar.
 

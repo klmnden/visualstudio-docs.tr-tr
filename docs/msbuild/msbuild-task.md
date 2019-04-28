@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f600e3872de2211d893fa32b7cbcd2600825bd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437850"
 ---
 # <a name="msbuild-task"></a>MSBuild görevi
 Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.
@@ -65,7 +65,7 @@ Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, Bununla birlikte, iki yeni meta veri öğeleri, Özellikler ayrılmış ve farklı özellikleri farklı geçirmek için esnek bir şekilde sağladığınız AdditionalProperties projeleri durdurulmasını sağlar kullanılarak oluşturulan [MSBuild görevi](../msbuild/msbuild-task.md).
 
 > [!NOTE]
->  Bu yeni meta veri öğeleri projeleri özniteliğinde geçirilen öğelere uygulanabilir [MSBuild görevi](../msbuild/msbuild-task.md).
+> Bu yeni meta veri öğeleri projeleri özniteliğinde geçirilen öğelere uygulanabilir [MSBuild görevi](../msbuild/msbuild-task.md).
 
 ## <a name="multi-processor-build-benefits"></a>Birden çok işlemcili derlemenin avantajları
  Çok işlemcili bir sistemde projelerinizi paralel oluşturduğunuzda bu yeni meta veriler kullanmanın en önemli avantajlarından biri gerçekleşir. Meta veriler, tüm projeleri bir tek birleştirmenize olanak tanır [MSBuild görevi](../msbuild/msbuild-task.md) arama herhangi toplu işleme yapmak zorunda veya koşul olmadan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. Ve yalnızca tek bir çağırdığınızda [MSBuild görevi](../msbuild/msbuild-task.md), tüm projeleri öznitelikte listelenen projeleri paralel olarak derlenir. (Ancak, yalnızca, `BuildInParallel=true` özniteliği mevcut [MSBuild görevi](../msbuild/msbuild-task.md).) Daha fazla bilgi için [paralel olarak birden çok proje derleme](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
@@ -74,7 +74,7 @@ Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
  Kullanarak birden çok çözüm dosyalarını oluştururken sık karşılaşılan bir senaryodur [MSBuild görevi](../msbuild/msbuild-task.md), yalnızca farklı derleme yapılandırmalarında kullanarak. Çözüm a1 oluşturmak isteyebilir hata ayıklama yapılandırması ve çözüm a2 kullanarak sürüm yapılandırmasını kullanarak. İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, bu proje dosyasını aşağıdaki gibi görünür:
 
 > [!NOTE]
->  Aşağıdaki örnekte, "..." ek çözüm dosyalarını temsil eder.
+> Aşağıdaki örnekte, "..." ek çözüm dosyalarını temsil eder.
 
 ### <a name="aproj"></a>a.proj
 

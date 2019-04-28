@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439170"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Özel Durumları Hata Ayıklayıcısı ile Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata dur
 - ayarladıysanız [yalnızca kendi kodum](../debugger/just-my-code.md), ve hata ayıklayıcının kullanıcı kodunda işlenmemiş bir özel durumla kesmek ayarlanır.  
   
 > [!NOTE]
->  ASP.NET hata sayfalarını bir tarayıcıda gösteren bir üst düzey özel durum işleyicisine sahiptir. Bu yürütme sürece kesmez **yalnızca kendi kodum** açıktır. Bir örnek için bkz. [kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı ayarlama](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) aşağıda.  
+> ASP.NET hata sayfalarını bir tarayıcıda gösteren bir üst düzey özel durum işleyicisine sahiptir. Bu yürütme sürece kesmez **yalnızca kendi kodum** açıktır. Bir örnek için bkz. [kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı ayarlama](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) aşağıda.  
   
 > [!NOTE]
->  Üzerinde hata stili hata işleyicilerini kullansanız bile, bir Visual Basic uygulamasında hata ayıklayıcı tüm hataları özel durumlar olarak yönetir.  
+> Üzerinde hata stili hata işleyicilerini kullansanız bile, bir Visual Basic uygulamasında hata ayıklayıcı tüm hataları özel durumlar olarak yönetir.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Özel durumlar özel durum Ayarları penceresi ile yönetme  
  Kullanabileceğiniz **özel durum ayarları** hangi özel durumları (veya özel durumların kümeleri) belirtmek için penceresi, hata ayıklayıcının neden olur ve bu noktaya ulaşıldığında kesmek istediğiniz. Ekle veya özel durumları silin veya kesmek için özel durumları belirtin. Tıklayarak bir çözüm açıkken bu pencereyi açın **hata ayıklama / Windows / özel durum ayarları**.  
@@ -162,7 +162,7 @@ Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata dur
  GPU bellek erişimi özel durumlarını, JavaScript çalışma zamanı özel durumları veya Win32 özel durumlar kategorisi için bir özel durum eklemek istiyorsanız, hata kodu ve bunun yanı sıra açıklama eklemeniz gerekir.  
   
 > [!TIP]
->  İmlanızı kontrol edin! **Özel durum ayarları** penceresini değil eklenen bir özel durum varlığını denetleyin. Yazarsanız, bu nedenle **Sytem.UriTemplateMatchException**, bir giriş için başka bir özel durum alırsınız (için **System.UriTemplateMatchException**).  
+> İmlanızı kontrol edin! **Özel durum ayarları** penceresini değil eklenen bir özel durum varlığını denetleyin. Yazarsanız, bu nedenle **Sytem.UriTemplateMatchException**, bir giriş için başka bir özel durum alırsınız (için **System.UriTemplateMatchException**).  
   
  Bunlar için belirli bir çözümü uygulamak için özel durum ayarları çözümün .suo dosyasında kalır. Belirli bir özel durum ayarları çözümlerinde yeniden kullanamazsınız. Bu noktada, eklenen özel durumlar kalıcıdır; Silinen bir özel durum değildir. Diğer bir deyişle, bir özel durum, yakın ekleyin ve çözümü yeniden açın ve özel durum kalmaya devam eder. Ancak, bir özel durum silin ve çözümü Kapat/yeniden, özel durum yeniden görünür.  
   

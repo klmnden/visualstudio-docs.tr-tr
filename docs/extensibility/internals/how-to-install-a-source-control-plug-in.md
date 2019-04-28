@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420521"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
@@ -45,7 +45,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|
 
    > [!NOTE]
-   >  SCCServerPath SourceSafe eklentisinde tam yoludur. Kaynak Denetimi Eklentisi, aynı kayıt defteri girişi yolları ancak farklı şirket ve ürün adlarını kullanır.
+   > SCCServerPath SourceSafe eklentisinde tam yoludur. Kaynak Denetimi Eklentisi, aynı kayıt defteri girişi yolları ancak farklı şirket ve ürün adlarını kullanır.
 
 2. Aşağıdaki isteğe bağlı bir kayıt defteri girdilerini, kaynak denetimi eklentiniz davranışını değiştirmek için kullanılabilir. Bu girişler aynı alt Git **SccServerName** ve **SccServerPath**.
 
@@ -73,7 +73,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  Kaynak Denetimi Eklentisi giriş adları ve aynı alt kullanır ancak değeri farklı olacaktır.
+   > Kaynak Denetimi Eklentisi giriş adları ve aynı alt kullanır ancak değeri farklı olacaktır.
 
 4. Adlı bir alt anahtarını oluşturmak **InstalledSCCProviders** altında **SourceCodeControlProvider** alt anahtarını ve ardından bu alt anahtarı altında bir girdi yerleştirebilirsiniz.
 
@@ -86,7 +86,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
    |Visual SourceSafe HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  Birden çok kaynak denetimi bu şekilde kayıtlı eklentileri olabilir. Bu, nasıl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tüm yüklü kaynak denetimi eklentisi API tabanlı eklentiler bulur.
+   > Birden çok kaynak denetimi bu şekilde kayıtlı eklentileri olabilir. Bu, nasıl [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tüm yüklü kaynak denetimi eklentisi API tabanlı eklentiler bulur.
 
 ## <a name="how-an-ide-locates-the-dll"></a>Bir IDE DLL nasıl bulur
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE olan iki kaynak bulma yolları denetleyen eklentisi DLL'sini:
@@ -98,14 +98,14 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
   İlk yol DLL bulmak için altında IDE arar **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider** giriş için alt anahtar **ProviderRegKey**. Bu giriş değerini başka bir alt anahtarına işaret eder. IDE ardından adlı bir giriş için görünür **SccServerPath** altında bu ikinci alt **HKEY_LOCAL_MACHINE**. Bu giriş değerini IDE DLL'ye işaret eder.
 
 > [!NOTE]
->  IDE göreli yolları DLL'leri yüklenmez (örneğin, *.\NewProvider.DLL*). DLL tam yolun belirtilmesi gerekir (örneğin, *c:\Providers\NewProvider.DLL*). Bu, yetkisiz veya başkasının kimliğine bürünülerek gerçekleştirilen eklentisi DLL'sini yüklemesini engelleyerek IDE güvenliğini güçlendirir.
+> IDE göreli yolları DLL'leri yüklenmez (örneğin, *.\NewProvider.DLL*). DLL tam yolun belirtilmesi gerekir (örneğin, *c:\Providers\NewProvider.DLL*). Bu, yetkisiz veya başkasının kimliğine bürünülerek gerçekleştirilen eklentisi DLL'sini yüklemesini engelleyerek IDE güvenliğini güçlendirir.
 
  İkinci bir yolla DLL bulmak için altında IDE arar **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders** tüm girişleri için alt anahtar. Her girişin bir ada ve değere sahip. IDE, kullanıcıya bu adlarının bir listesini görüntüler. Kullanıcı adları seçtiğinde, IDE bir alt anahtarına işaret eden seçilen adı değeri bulur. Adlı bir giriş için IDE arar **SccServerPath** altında bu alt **HKEY_LOCAL_MACHINE**. Bu giriş değerini doğru DLL'ye IDE işaret eder.
 
  Kaynak Denetimi Eklentisi DLL bulma her iki yönde desteklemesi gerekir ve sonuç olarak, ayarlar **ProviderRegKey**, önceki bir ayarı üzerine. Daha da önemlisi, kendisini listesine eklemelisiniz **InstalledSccProviders** kullanıcı kullanmak için hangi kaynak denetimi eklentisi, bir seçim olabilir.
 
 > [!NOTE]
->  Çünkü **HKEY_LOCAL_MACHINE** anahtarı kullanılır, yalnızca bir kaynak denetimi eklentisi, varsayılan kaynak denetimi eklentisi belirli bir makinede olarak kaydedilebilir (ancak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılara hangi kaynak denetimi eklentisi belirlemek Bunlar aslında belirli bir çözüm için kullanmak istediğiniz). Yükleme işlemi sırasında kaynak denetimi eklentisi zaten ayarlanmış olup olmadığını denetleyin; Bu durumda, kullanıcı yeni kaynak denetimi eklentisi varsayılan olarak yüklenen ayarlama gerekip gerekmediğini sorun. Kaldırma sırasında tüm kaynak denetimi eklentilerini için ortak olan diğer kayıt defteri alt anahtarları kaldırmayın **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; yalnızca belirli, SCC alt kaldırın.
+> Çünkü **HKEY_LOCAL_MACHINE** anahtarı kullanılır, yalnızca bir kaynak denetimi eklentisi, varsayılan kaynak denetimi eklentisi belirli bir makinede olarak kaydedilebilir (ancak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılara hangi kaynak denetimi eklentisi belirlemek Bunlar aslında belirli bir çözüm için kullanmak istediğiniz). Yükleme işlemi sırasında kaynak denetimi eklentisi zaten ayarlanmış olup olmadığını denetleyin; Bu durumda, kullanıcı yeni kaynak denetimi eklentisi varsayılan olarak yüklenen ayarlama gerekip gerekmediğini sorun. Kaldırma sırasında tüm kaynak denetimi eklentilerini için ortak olan diğer kayıt defteri alt anahtarları kaldırmayın **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; yalnızca belirli, SCC alt kaldırın.
 
 ## <a name="how-the-ide-detects-version-1213-support"></a>IDE sürüm 1.2/1.3 desteği nasıl algılar
  Nasıl mu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir eklentiyi destekler kaynak denetimi eklentisi API sürümü 1.2 ve 1.3 işlevsellik olup olmadığını Algıla? Gelişmiş beceri bildirmek için kaynak denetimi eklentisi karşılık gelen işlev uygulamanız gerekir:

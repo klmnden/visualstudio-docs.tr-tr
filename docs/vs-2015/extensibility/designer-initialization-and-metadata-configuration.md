@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439049"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
 1. Bir nesneyi uygulama oluşturma <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> sınıfı.  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Sınıfı hiçbir zaman uygulanmasını aynı nesne üzerinde <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Sınıfı hiçbir zaman uygulanmasını aynı nesne üzerinde <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
   
 2. Sınıf uygulama kaydetme <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> örneklerini uygulayarak VSPackage'nın Tasarımcı uzantıları için destek sunarak olarak <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> ve <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage'nın uygulaması sağlama sınıfa <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Bir tasarımcı veya Tasarımcısı bileşen ile ilişkili meta verileri ve filt
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  Mevcut zaman tasarım yüzeyine bileşenler oluşturma yalnızca destekler ve bu nedenle yalnızca bileşenleri yerel meta verilerine de sahip. Yukarıdaki örnekte, biz bir özelliği değiştirmek çalıştığınız `Color` özelliği bir nesne. Varsa `false` genel bayrak için geçirilen `CustomBrowser` Tasarımcı örneği asla gerçekten oluşturur çünkü hiçbir zaman görüneceği `Color`. Genel Bayrak ayarlayarak `false` denetimleri, zamanlayıcılar ve iletişim kutuları gibi bileşenleri için kullanışlıdır.  
+> Mevcut zaman tasarım yüzeyine bileşenler oluşturma yalnızca destekler ve bu nedenle yalnızca bileşenleri yerel meta verilerine de sahip. Yukarıdaki örnekte, biz bir özelliği değiştirmek çalıştığınız `Color` özelliği bir nesne. Varsa `false` genel bayrak için geçirilen `CustomBrowser` Tasarımcı örneği asla gerçekten oluşturur çünkü hiçbir zaman görüneceği `Color`. Genel Bayrak ayarlayarak `false` denetimleri, zamanlayıcılar ve iletişim kutuları gibi bileşenleri için kullanışlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

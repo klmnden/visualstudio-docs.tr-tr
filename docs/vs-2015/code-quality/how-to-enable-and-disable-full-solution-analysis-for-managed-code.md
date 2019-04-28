@@ -11,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436833"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
->  Bu konu, yalnızca Visual Studio 2015 güncelleştirme 3 RC ve daha sonra uygulanır.  
+> Bu konu, yalnızca Visual Studio 2015 güncelleştirme 3 RC ve daha sonra uygulanır.  
   
  *Tam çözüm analizini* çözümünüzdeki ya da açık ve kapalı Visual C# veya Visual Basic dosyalarında çözümünüzdeki açık Visual C# veya Visual Basic dosyaları, yalnızca kod analizi sorunlarına görüp görmediğinizi seçmenize olanak tanıyan bir Visual Studio özelliğidir.  
   

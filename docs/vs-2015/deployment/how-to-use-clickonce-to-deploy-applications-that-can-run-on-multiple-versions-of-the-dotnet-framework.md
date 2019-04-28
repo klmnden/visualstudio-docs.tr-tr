@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432919"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095483"
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümünü hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturmak ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.  
   
 > [!NOTE]
->  Birden çok .NET Framework sürümünü hedefleyecek şekilde uygulamayı değiştirmeden önce uygulamanızın birden çok .NET Framework sürümü ile çalıştığından emin olmalısınız. Sürümü ortak dil çalışma zamanı arasında farklı [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] .NET Framework 2.0, .NET Framework 3.0 ve .NET Framework 3.5 karşılaştırması.  
+> Birden çok .NET Framework sürümünü hedefleyecek şekilde uygulamayı değiştirmeden önce uygulamanızın birden çok .NET Framework sürümü ile çalıştığından emin olmalısınız. Sürümü ortak dil çalışma zamanı arasında farklı [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] .NET Framework 2.0, .NET Framework 3.0 ve .NET Framework 3.5 karşılaştırması.  
   
  Bu işlem, aşağıdaki adımları gerektirir:  
   

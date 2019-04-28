@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443989"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin ile mobil geliştirme hakkında bilgi edinin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097394"
 Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anlamanıza yardımcı olan genel bakış malzeme için yönlendirir. Henüz Visual Studio ve Xamarin yüklü değilse, başlangıç [Kurulum ve yükleme](../cross-platform/setup-and-install.md) işlemi ilk olarak, daha sonra dönmek burada yükleyicileri çalışırken bu kaynak ile çalışmak için.  
   
 > [!NOTE]
->  Aksi belirtilmediği sürece, başlangıçta yalnızca bu doğrudan bağlı burada sayfalarını ve değil paketinizle sayfaları okuma öneririz. Bu liste tamamladıktan sonra yükleme işlemi hala çalışıyor, geri dönün ve diğer konu başlıklarını keşfedin çekinmeyin.  
+> Aksi belirtilmediği sürece, başlangıçta yalnızca bu doğrudan bağlı burada sayfalarını ve değil paketinizle sayfaları okuma öneririz. Bu liste tamamladıktan sonra yükleme işlemi hala çalışıyor, geri dönün ve diğer konu başlıklarını keşfedin çekinmeyin.  
 >   
->  Ayrıca, "Temel" olarak işaretlenmiş başlıklara çekinmeyin ve "Daha yakından bakın" konulara daha sonra tekrar deneyin.  
+> Ayrıca, "Temel" olarak işaretlenmiş başlıklara çekinmeyin ve "Daha yakından bakın" konulara daha sonra tekrar deneyin.  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Temel bileşenler: Xamarin giriş  
  *10-20 dakika*  

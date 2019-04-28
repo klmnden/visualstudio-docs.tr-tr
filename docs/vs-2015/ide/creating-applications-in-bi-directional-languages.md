@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437588"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift Yönlü Dillerde Uygulamalar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104986"
 Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüleyen uygulamalar oluşturmak için Visual Studio kullanabilirsiniz. Bazı özellikler için özellikleri ayarlayabilirsiniz. Diğer durumlarda, kod özellikleri uygulamalıdır.  
   
 > [!NOTE]
->  Girin ve çift yönlü diller görüntülemek için uygun dili ile yapılandırılmış bir Windows sürümü ile çalışmalısınız. Bu bir İngilizce sürümüyle ilgili dil paketi yüklü olan Windows veya Windows uygun şekilde yerelleştirilmiş sürümünü olabilir.  
+> Girin ve çift yönlü diller görüntülemek için uygun dili ile yapılandırılmış bir Windows sürümü ile çalışmalısınız. Bu bir İngilizce sürümüyle ilgili dil paketi yüklü olan Windows veya Windows uygun şekilde yerelleştirilmiş sürümünü olabilir.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Uygulama bu destek çift yönlü diller türleri  
   
@@ -66,7 +66,7 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 - Dosya içerikleri. Açabilir veya dosyaları Unicode kodlama veya seçili bir kod sayfası ile kaydedin.  
   
     > [!NOTE]
-    >  Kod Düzenleyicisi, bir özel durumdur. Ayrıntılar için aşağıya bakın.  
+    > Kod Düzenleyicisi, bir özel durumdur. Ayrıntılar için aşağıya bakın.  
   
 - Veri öğeleri. **Sunucu Gezgini** bu öğeleri doğru görüntüler ve bunları düzenlemenize izin.  
   
@@ -79,10 +79,10 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 - Kod ve metin. (Aynı zamanda olan metin düzenleyiciyi) Kod düzenleyicisinde, Arapça veya İbranice adı sınıfları, İşlevler, değişkenler, özellikler, dize değişmez değerleri, öznitelikleri ve benzeri kullanabilirsiniz. Ancak, düzenleyici sağdan sola okuma düzeni desteklemez; metin her zaman sol kenar boşluğunda başlatır.  
   
     > [!TIP]
-    >  Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri koyun önerilir. Daha fazla bilgi için [izlenecek yol: Windows formlarının konumunu bulma](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri koyun önerilir. Daha fazla bilgi için [izlenecek yol: Windows formlarının konumunu bulma](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Nasıl, bu dillerde adlı nesnelere başvurmak için tutarlı olması gerekir. Örneğin, Arapça bir değişkeni adlandırmada Kaşida kullanırsanız, bu değişkene söz konusu olduğunda her zaman Kaşida kullanmalısınız veya hatalara neden olabilecek.  
+    > Nasıl, bu dillerde adlı nesnelere başvurmak için tutarlı olması gerekir. Örneğin, Arapça bir değişkeni adlandırmada Kaşida kullanırsanız, bu değişkene söz konusu olduğunda her zaman Kaşida kullanmalısınız veya hatalara neden olabilecek.  
   
 - Kod açıklamaları. Açıklamalar, Arapça veya İbranice oluşturabilirsiniz. Açıklama Oluşturucu aracında bu diller de kullanabilirsiniz.  
   

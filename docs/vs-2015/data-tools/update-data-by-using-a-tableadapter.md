@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424900"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak verileri güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113836"
 Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen verileri bir databaseby çağırmaya gönderebilirsiniz `Update` TableAdapter bağdaştırıcısının yöntemi. `Update` Yöntemi tek bir veri tablosunu güncelleştirir ve göre doğru komutu (INSERT, UPDATE veya DELETE) çalıştıran <xref:System.Data.DataRow.RowState%2A> tablodaki her veri satırının. Bir veri kümesi ilişkili tabloları, Visual Studio güncelleştirmeleri yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı veritabanında tanımlanan yabancı anahtar kısıtlamaları göre doğru sırada güncelleştirmeler yapılmasını sağlar. Verilere bağlı denetimler kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfın üye değişkeni oluşturur. Daha fazla bilgi için [hiyerarşik güncelleştirme genel bakış](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
->  Bir veri kümesi içeriği ile bir veri kaynağını güncelleştirmek çalıştığınızda hatalar alabilirsiniz. Hataları önlemek için kutusu yerleştirin bağdaştırıcının çağıran kodu öneririz `Update` yöntem içinde bir `try` / `catch` blok.  
+> Bir veri kümesi içeriği ile bir veri kaynağını güncelleştirmek çalıştığınızda hatalar alabilirsiniz. Hataları önlemek için kutusu yerleştirin bağdaştırıcının çağıran kodu öneririz `Update` yöntem içinde bir `try` / `catch` blok.  
   
  Tam bir veri kaynağını güncelleştirme yordamı, iş gereksinimlerinize bağlı olarak farklılık gösterebilir, ancak aşağıdaki adımları içerir:  
   

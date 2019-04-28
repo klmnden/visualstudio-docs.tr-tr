@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430427"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio, belirli bir sırayla bir dizi dağıtım adımı yürütür. Visual Studio, birçok yerleşik dağıtım adımlarını içerir, ancak kendi oluşturabilirsiniz.
@@ -74,7 +74,7 @@ ms.locfileid: "60040178"
 3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
-    >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
+    > **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
 4. İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040178"
 1. İçinde **DeploymentStepExtension** proje UpgradeStep kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
 
     > [!NOTE]
-    >  Ne zaman bu kodu ekleyin, proje bazı derleme hataları olacaktır, ancak bunlar kaybolur sonra sonraki adımlarda kod ekleyin.
+    > Ne zaman bu kodu ekleyin, proje bazı derleme hataları olacaktır, ancak bunlar kaybolur sonra sonraki adımlarda kod ekleyin.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040178"
 6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040178"
 10. İçinde **türü** listesinde, girin **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Bu öğe, Visual Studio Uzantısı'nda dahil etmek istediğiniz özel bir uzantı belirtir. Daha fazla bilgi için [varlık öğesi (VSX şema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Bu öğe, Visual Studio Uzantısı'nda dahil etmek istediğiniz özel bir uzantı belirtir. Daha fazla bilgi için [varlık öğesi (VSX şema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040178"
 6. Altında **bu SharePoint çözümünün güven düzeyi nedir**, seçin **Grup çözümü olarak Dağıt** seçenek düğmesini.
 
    > [!NOTE]
-   >  Yükseltme dağıtım adımı korumalı alana alınan çözümler desteklemiyor.
+   > Yükseltme dağıtım adımı korumalı alana alınan çözümler desteklemiyor.
 
 7. Seçin **son** düğmesi.
 

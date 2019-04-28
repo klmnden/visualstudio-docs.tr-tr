@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f732fd66439897b67f150ddb9603b7d67003eff2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431379"
 ---
 # <a name="workflow-designer-shell-features"></a>İş Akışı Tasarımcısı Kabuk Özellikleri
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] üç temel kullanıcı Arabirimi alanları oluşur: tasarım yüzeyinde, içerik haritası çubuğu üstünde ve altındaki Kabuk. Ekranın en üstünde konumlandırılmış içerik haritası çubuğu, geçerli bir kök etkinlik öncüleri listesini görüntülemek için kullanılır. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Nasıl Yapılır: İçerik haritası gezintisini kullanma](../workflow-designer/how-to-use-breadcrumb-navigation.md). Tasarımcı yüzeyine konumlandırılmış ekranın merkezinde, iş akışları oluşturmak için kullanılır. Ekranın alt kısmında konumlandırılmış Kabuk geçerli görünümü yönetme düğmelerini içerir.  
@@ -28,7 +28,7 @@ ms.locfileid: "54790546"
  Genel Bakış haritasını, tüm alt öğelerini ve tüm genişletilmiş bunların alt öğeleri dahil olmak üzere geçerli içerik haritası kökündeki tüm etkinlik küçük bir sürümünü görüntüler. Görünüm penceresi, şu anda Düzenleyicisi içinde görüntülenen bir etkinlik kısmını vurgular turuncu bir kenarlık ile bir dikdörtgen yoktur. Genel Bakış haritasını çevresinde bir dikdörtgen sürükleyerek iş akışı Tasarımcısı kaydırılır ve düzenleyici görünümünü değiştirir.  
   
 > [!NOTE]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] Kullanıcı arabirimi sanallaştırılmış. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışının bir kısmını hiçbir zaman Tasarımcı yüzeyinde düzenlendi, söz konusu bölümü genel bakış harita üzerinde beyaz olarak görünür. Genel Bakış haritasını tamamen kaydırma iş akışı çizer.  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] Kullanıcı arabirimi sanallaştırılmış. Etkinlik tasarımcıları, yalnızca gerekli olduğunda işlenir. İş akışının bir kısmını hiçbir zaman Tasarımcı yüzeyinde düzenlendi, söz konusu bölümü genel bakış harita üzerinde beyaz olarak görünür. Genel Bakış haritasını tamamen kaydırma iş akışı çizer.  
   
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopyalama veya görüntü olarak iş akışları kaydediliyor  
  İş akışları, bit eşlem biçiminde kopyalanamaz veya bit eşlem ya da vektör biçiminde kaydedilmiş. Kopyalama veya görüntü kaydetme kökünde tüm alt öğelerini ve tüm genişletilmiş alt öğelerini başka bir programa dahil olmak üzere geçerli içerik haritası, tüm etkinlik görünümünü dışarı aktarmak için bir yol sağlar.  

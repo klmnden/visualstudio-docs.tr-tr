@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440576"
 ---
 # <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML Kod Parçacıklarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
  Aşağıdaki yordamlar nasıl erişileceğini açıklar **parçacık Ekle** komutu.  
   
 > [!NOTE]
->  **Parçacık Ekle** komuttur ayrıca klavye kısayolunu (CTRL + K, ardından CTRL + X) kullanılabilir.  
+> **Parçacık Ekle** komuttur ayrıca klavye kısayolunu (CTRL + K, ardından CTRL + X) kullanılabilir.  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Kısayol menüsünden kod parçacığı eklemek için  
   
@@ -60,7 +60,7 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
 4. Sekme tuşuna basın, XML kod parçacığı çağırmak için SEKMESİNDE.  
   
 > [!NOTE]
->  XML kod parçacığı çağrılmayacağı durumlar olabilir. Örneğin, eklemeye çalışırsanız bir `xs:complexType` öğesi içinde bir `xs:element` düğüm, düzenleyici XML kod parçacığı oluşturmaz. Olduğunda bir `xs:complexType` öğesi içinde kullanılan bir `xs:element` düğüm, düzenleyici eklemek için herhangi bir veri içermez gerekli öznitelikleri veya alt öğeleri, yoktur.  
+> XML kod parçacığı çağrılmayacağı durumlar olabilir. Örneğin, eklemeye çalışırsanız bir `xs:complexType` öğesi içinde bir `xs:element` düğüm, düzenleyici XML kod parçacığı oluşturmaz. Olduğunda bir `xs:complexType` öğesi içinde kullanılan bir `xs:element` düğüm, düzenleyici eklemek için herhangi bir veri içermez gerekli öznitelikleri veya alt öğeleri, yoktur.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Kısayol adı kullanarak kod parçacığı eklemek için  
   
@@ -76,7 +76,7 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
  Aşağıdaki yordamlar nasıl erişileceğini açıklar **Surround With** komutu.  
   
 > [!NOTE]
->  **Surround With** komuttur ayrıca klavye kısayolunu (CTRL + K, ardından CTRL + S) kullanılabilir.  
+> **Surround With** komuttur ayrıca klavye kısayolunu (CTRL + K, ardından CTRL + S) kullanılabilir.  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Bağlam menüsünden çevrelemeyi kullanmak için  
   

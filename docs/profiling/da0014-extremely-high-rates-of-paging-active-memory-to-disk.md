@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6486fc204942553a58e437d56fc7d0ffee548b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425476"
 ---
-# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Diske etkin bellek Sayfalaması son derece yüksek oranları
+# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Çok yüksek oranda diske etkin bellek sayfalaması
 
 |||
 |-|-|
@@ -41,7 +41,7 @@ ms.locfileid: "56630398"
  Genellikle, sayfalar diskten okunan veya toplu işlemleri içinde yazılan. Sayfa çıkış/sn örneğin sık çok sayfa Yazma/sn, sayıdan büyüktür. Sayfa çıktısı/sn sistem dosya önbelleği değiştirilen verileri sayfalarından da içerdiği için. Ancak, her zaman işlemi için disk belleği doğrudan sorumlu olduğunu belirlemek kolay değildir veya neden.
 
 > [!NOTE]
->  Bu kural active bellek düzeyi yüksek bir hızda ulaştığında tetikler. Disk belleği düzeyini önemli, ancak değil aşırı olduğunda, bilgilendirici kural [DA0017: Yüksek oranda diske etkin bellek Sayfalaması Sayfalaması](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) yerine tetikler.
+> Bu kural active bellek düzeyi yüksek bir hızda ulaştığında tetikler. Disk belleği düzeyini önemli, ancak değil aşırı olduğunda, bilgilendirici kural [DA0017: Yüksek oranda diske etkin bellek Sayfalaması Sayfalaması](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) yerine tetikler.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işaretleri](../profiling/marks-view.md) görünümü. Bulma **Bellek\Sayfa/sn** sütun. Varsa belirli program yürütme aşamaları sayfalama g/ç etkinliği diğerlerinden daha ağır olduğu belirleyin.

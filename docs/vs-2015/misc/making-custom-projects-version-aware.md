@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422735"
 ---
 # <a name="making-custom-projects-version-aware"></a>Özel projeler sürüm ile uyumlu hale getirme
 Özel proje sisteminizi projeleri Visual Studio birden çok sürümünü yüklemek için bu türdeki izin verebilirsiniz. Bu tür projeleri, Visual Studio'nun bir önceki sürümünde yüklenmesini de engelleyebilirsiniz. Proje Proje Onar, dönüştürme ya da kullanımdan kaldırma gerektiriyor durumunda sonraki bir sürüme kendisini tanımlamak de etkinleştirebilirsiniz.  
@@ -37,7 +37,7 @@ ms.locfileid: "60096601"
 6. `VSPUVF_PROJECT_DEPRECATED`: Bu proje artık desteklenip desteklenmediğini gösterir.  
   
 > [!NOTE]
->  Bunları ayarladığınızda, Karışıklığı önlemek için yükseltme bayraklarını birleştirmek yok. Örneğin, belirsiz bir yükseltme durumu gibi oluşturmayın `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Bunları ayarladığınızda, Karışıklığı önlemek için yükseltme bayraklarını birleştirmek yok. Örneğin, belirsiz bir yükseltme durumu gibi oluşturmayın `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
   
  Proje Özellikleri işlevi uygulamak `UpgradeProjectFlavor_CheckOnly` gelen `IVsProjectFlavorUpgradeViaFactory2` arabirimi. İş, bu işlev yapmak için `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` uygulamayı daha önce bahsedilen, çağırması gerekir. Bu çağrı, Visual Basic veya C# temel proje sistemde zaten uygulanır. Bu işlev etkisini de ne temel proje sistemi belirledi ek olarak, bir proje yükseltme gereksinimlerini belirlemek proje özellikleri sağlar. En önemlisi, iki gereksinimden uyumluluk iletişim kutusunu gösterir.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60096601"
      Bu kod uygularsanız, bir proje uyumluluğu iletişim kutusu görünür. İletişim kutusu olacak kullanıcı için belirtilen tüm projeleri uyumsuz işaretlemek izin ister. Kullanıcı kabul ederse `AskForUserConsentToBreakAssetCompat` döndürür `S_OK`; Aksi takdirde `AskForUserConsentToBreakAssetCompat` döndürür `OLE_E_PROMPTSAVECANCELLED`.  
   
     > [!WARNING]
-    >  En yaygın senaryolarda `IVsHierarchy` yalnızca bir öğe dizisi içerir.  
+    > En yaygın senaryolarda `IVsHierarchy` yalnızca bir öğe dizisi içerir.  
   
 3. Varsa `AskForUserConsentToBreakAssetCompat` döndürür `S_OK`, bileşen yapar veya uyumluluk kesme değişiklikleri kabul eder.  
   
@@ -98,7 +98,7 @@ ms.locfileid: "60096601"
      Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  Uygulamanız gereken `VSHPROPID_MinimumDesignTimeCompatVersion` proje uyumlu veya uyumsuz olarak işaretlemek için özellik. Örneğin, proje sistemi bir MSBuild proje dosyası kullanıyorsa, proje dosyasına ekleyin. bir `<MinimumVisualStudioVersion>` eşit karşılık gelen bir değere sahip özellik yapı `VSHPROPID_MinimumDesignTimeCompatVersion` özellik değeri.  
+> Uygulamanız gereken `VSHPROPID_MinimumDesignTimeCompatVersion` proje uyumlu veya uyumsuz olarak işaretlemek için özellik. Örneğin, proje sistemi bir MSBuild proje dosyası kullanıyorsa, proje dosyasına ekleyin. bir `<MinimumVisualStudioVersion>` eşit karşılık gelen bir değere sahip özellik yapı `VSHPROPID_MinimumDesignTimeCompatVersion` özellik değeri.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Uyumsuz algılama olup olmadığını bir proje olan  
  Geçerli Visual Studio sürümü ile uyumlu olan proje yüklenmesini tutulması gerekir. Ayrıca, uyumsuz olan proje yükseltme veya onarılamıyor. Bu nedenle, bir proje uyumluluğu için iki kez denetlenmesi gerekir: ilk bunu kabul edilir, yükseltme veya onarım ve saniye önce yüklendiği.  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    Yeni uygulamalarında `IVsProjectUpgradeViaFactory4` ve `IVsProjectFlavorUpgradeViaFactory2` geçiş türü daha kesin olarak belirterek etkinleştirin.  
   
 > [!NOTE]
->  Uyumluluk denetimi tarafından sonucunu önbelleğe alabilir `UpgradeProject_CheckOnly` BT'nin ayrıca sonraki çağrı tarafından kullanılabilmesi için yöntemi `CreateProject`.  
+> Uyumluluk denetimi tarafından sonucunu önbelleğe alabilir `UpgradeProject_CheckOnly` BT'nin ayrıca sonraki çağrı tarafından kullanılabilmesi için yöntemi `CreateProject`.  
   
  Örneğin, varsa `UpgradeProject_CheckOnly` ve `CreateProject` için yazılan yöntemleri bir [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 proje sistemi bir proje dosyasını inceleyin ve Bul `<MinimumVisualStudioVersion>` yapı özelliği "11.0", Visual Studio 2010 SP1 ile projeyi yüklenemediğini. Ayrıca, **Çözüm Gezgini** proje "uyumsuz" ve onu yüklenmiyor gösterir.  
   

@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435859"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Yüksek oranda diske etkin bellek Sayfalaması Sayfalaması
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Yüksek oranda diske etkin bellek sayfalaması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0017 |  
@@ -37,7 +37,7 @@ Kural Kimliği | DA0017 |
 ## <a name="rule-description"></a>Kural Tanımı  
   
 > [!NOTE]
->  Bilgilendirme bu kural active bellek disk belleği düzeyde önemli ölçüde ulaştığında tetiklenir. Disk belleği çok yüksek bir düzeyde oluştuğunda, uyarı kuralı [DA0014: Diske etkin bellek Sayfalaması son derece yüksek oranlı](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) yerine tetikler.  
+> Bilgilendirme bu kural active bellek disk belleği düzeyde önemli ölçüde ulaştığında tetiklenir. Disk belleği çok yüksek bir düzeyde oluştuğunda, uyarı kuralı [DA0014: Diske etkin bellek Sayfalaması son derece yüksek oranlı](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) yerine tetikler.  
   
  Diske aşırı disk belleği yetersiz fiziksel bellek tarafından neden olabilir. Disk belleği dosyasının bulunduğu fiziksel disk kullanımını sayfalandırma işlemleri baskındır varsa, bunlar aynı disk için diğer uygulama odaklı disk işlemleri yavaşlatabilir.  
   

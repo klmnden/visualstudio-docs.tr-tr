@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412614"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Nasıl yapılır: Çalışma sayfasında satırları program aracılığıyla Grup
   Bir veya daha fazla satırı gruplayabilirsiniz. Çalışma grubu oluşturmak için bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.
@@ -43,7 +43,7 @@ ms.locfileid: "60076660"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  Satırları çözmek için çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> yöntemi.
+    > Satırları çözmek için çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> yöntemi.
 
 ## <a name="use-native-excel-ranges"></a>Yerel Excel aralıkları kullanın
  Kod üç Excel aralıkları adlı olduğunu varsayar `data2001`, `data2002`, ve `dataAll` çalışma sayfasında.
@@ -56,7 +56,7 @@ ms.locfileid: "60076660"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  Satırları çözmek için çağrı <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> yöntemi.
+    > Satırları çözmek için çağrı <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> yöntemi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)

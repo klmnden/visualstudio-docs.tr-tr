@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7237cd9991dcd2140ed13bb082a5efc43d85dc47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422930"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dinamik olarak ayrıntılı zamanlama verileri, .NET bellek ayırma verilerinin ve .NET nesne ömür verilerini toplamak için profil oluşturma araçları izleme metodunu derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.
@@ -21,7 +21,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
  Bu konu nasıl değiştirileceğini açıklar *web.config* araçları ve profillerinin oluşturulmasını etkinleştirmek için yapılandırma dosyası [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.
 
 > [!NOTE]
->  Değişiklik gerekmez *web.config* dosya örnekleme profili oluşturma yöntemi kullanırken ya da önceden derlenmiş bir araç haline getirmek istediğinizde [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modülü.
+> Değişiklik gerekmez *web.config* dosya örnekleme profili oluşturma yöntemi kullanırken ya da önceden derlenmiş bir araç haline getirmek istediğinizde [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] modülü.
 
  Kök bir *web.config* dosyasıdır **yapılandırma** öğesi. İzleme ve dinamik olarak derlenmiş bir profil için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, aşağıdaki öğeleri eklediğinizde veya gerekir:
 

@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430976"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Hata Ayıklayıcısı ile Kodlarda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
  Hata ayıklarken kod (her deyim) her bir satırda durdurmak için kullanın **F11** klavye kısayolu (veya **hata ayıklama** / **içine adımla** menüsünde).  
   
 > [!TIP]
->  Her kod satırının yürütürken, değerlerine bakın veya değişkenleri gelerek [Yereller](../debugger/autos-and-locals-windows.md) ve [Watch](../debugger/autos-and-locals-windows.md) değerlerini değiştirmek izlemek için windows.  
+> Her kod satırının yürütürken, değerlerine bakın veya değişkenleri gelerek [Yereller](../debugger/autos-and-locals-windows.md) ve [Watch](../debugger/autos-and-locals-windows.md) değerlerini değiştirmek izlemek için windows.  
   
  Davranışı hakkında bazı Ayrıntılar **içine adımla**:  
   
@@ -87,7 +87,7 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
 |**Shift+F11**|**Dışına adımla**|**Step Out** kod çalışmaya devam eder ve geçerli işlev (hata ayıklayıcı atlar geçerli işlev aracılığıyla) döndüğünde yürütmeyi askıya alır.|  
   
 > [!TIP]
->  Giriş noktası uygulamanızda bulmanız gerekiyorsa, başlayan **F10** veya **F11**. Uygulama durumunu incelemek veya çalışırken, yürütme akışı hakkında daha fazla bilgi şu komutları çoğunlukla yararlı olur.  
+> Giriş noktası uygulamanızda bulmanız gerekiyorsa, başlayan **F10** veya **F11**. Uygulama durumunu incelemek veya çalışırken, yürütme akışı hakkında daha fazla bilgi şu komutları çoğunlukla yararlı olur.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Belirli bir konuma veya işleve kadar çalıştırma  
  Tam olarak hangi kodun incelemek istediğiniz bildiğinizde genellikle kodda hata ayıklama, tercih edilen yöntem, bu yöntemleri yararlıdır ve hata ayıklamaya başlamak istediğiniz en az bildiğiniz.  
@@ -140,7 +140,7 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
 - Ayrıştırma penceresinde, imleci sağ tıklayın, sonraki yürütmek istediğiniz derleme talimatına bir seçip **sonraki deyimi Ayarla**.  
   
 > [!CAUTION]
->  Sonraki deyimin ayarlanması program sayacının doğrudan yeni konuma atlamasına neden olur. Bu komutu dikkatli kullanın:  
+> Sonraki deyimin ayarlanması program sayacının doğrudan yeni konuma atlamasına neden olur. Bu komutu dikkatli kullanın:  
 > 
 > - Eski ve yeni yürütme noktaları arasındaki talimatlar hariç tutulur.  
 >   - Yürütme noktasını geriye taşırsanız, müdahaleci talimatlar geri alınmaz.  
@@ -149,7 +149,7 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
 >   - Düzenle ve devam et etkinken, **sonraki deyimi Ayarla** , Düzenle ve devam et düzenlemeler yaptıysanız başarısız hemen yeniden eşleyemeyeceği. Bir catch bloğu içinde kod düzenlediyseniz, örneğin, ortaya çıkabilir. Bu durumda, bir işlem desteklenen söyleyen bir hata iletisi görürsünüz.  
 > 
 > [!NOTE]
->  Yönetilen kodda aşağıdaki koşullarda sonraki deyimi taşıyamazsınız:  
+> Yönetilen kodda aşağıdaki koşullarda sonraki deyimi taşıyamazsınız:  
 > 
 > - Sonraki deyimi başka bir yöntem geçerli deyimden bileşenidir.  
 >   - Hata ayıklama başlatıldı Just-ın-Time kullanarak hata ayıklama.  
@@ -166,7 +166,7 @@ Hata ayıklayıcısı koda gitmek için komutlar ve kısayolları hakkında bilg
  Just My Code'u devre dışı bırakıldığında, hata ayıklayıcı kullanıcı olmayan kod içinde adım ve kullanıcı olmayan kod hata ayıklayıcı pencerelerinde görünür.  
   
 > [!NOTE]
->  Yalnızca benim kodum cihaz projeleri için desteklenmiyor.  
+> Yalnızca benim kodum cihaz projeleri için desteklenmiyor.  
   
  **Sistem çağrılarına adımlamayla girme**  
   

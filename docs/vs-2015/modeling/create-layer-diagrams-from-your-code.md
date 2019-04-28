@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433372"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Kodunuz aracılığıyla katman diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
  Bir katman diyagramı oluşturmadan önce, çözümünüzde bir modelle projesi olduğundan emin olun. Bkz: [oluşturma UML modelleme projeleri ve diyagramları](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Varolan katman diyagramını bir modelleme projesinden başka bir modelleme projesine veya çözüm içindeki başka bir yere eklemeyin, kopyalamayın veya sürüklemeyin. Bu, diyagramı değiştirseniz bile orijinal diyagramdan yapılan başvuruları korur. Bu, katman doğrulamasının doğru çalışmasını da engeller ve siz diyagramı açmaya çalışırken kayıp öğeler veya başka hatalar gibi diğer sorunlara da neden olabilir.  
+> Varolan katman diyagramını bir modelleme projesinden başka bir modelleme projesine veya çözüm içindeki başka bir yere eklemeyin, kopyalamayın veya sürüklemeyin. Bu, diyagramı değiştirseniz bile orijinal diyagramdan yapılan başvuruları korur. Bu, katman doğrulamasının doğru çalışmasını da engeller ve siz diyagramı açmaya çalışırken kayıp öğeler veya başka hatalar gibi diğer sorunlara da neden olabilir.  
 >   
->  Bunun yerine, modelleme projesine yeni bir katman diyagramı ekleyin. Öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Hem modelleme projesini hem de yeni katman diyagramını kaydedin.  
+> Bunun yerine, modelleme projesine yeni bir katman diyagramı ekleyin. Öğeleri kaynak diyagramdan yeni diyagrama kopyalayın. Hem modelleme projesini hem de yeni katman diyagramını kaydedin.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Modelleme projesine yeni bir katman diyagramı eklemek için  
   
@@ -53,7 +53,7 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
      Seçin **yeni modelleme projesi oluşturma** çözüme yeni bir modelleme projesi eklemek için.  
   
     > [!NOTE]
-    >  Katman diyagramı modelleme projesinin içinde olmalıdır. Bununla birlikte, bunu çözümün herhangi bir yerindeki öğelere bağlayabilirsiniz.  
+    > Katman diyagramı modelleme projesinin içinde olmalıdır. Bununla birlikte, bunu çözümün herhangi bir yerindeki öğelere bağlayabilirsiniz.  
   
 5. Hem modelleme projesini hem de katman diyagramını kaydettiğinizden emin olun.  
   
@@ -106,7 +106,7 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
  Bir bağımlılık, bir katman ile ilişkili yapının başka bir katman ile ilişkili bir yapıya başvurusu olduğu yerde var olur. Örneğin, bir katmandaki sınıf başka bir katmanda sınıfı olan değişkeni bildirir. Diyagramdaki katmanlara bağlanmış yapılar için varolan bağımlılıklara ters mühendislik uygulayabilirsiniz.  
   
 > [!NOTE]
->  Bağımlılıklarda belirli türdeki yapılar için ters mühendislik uygulanamaz. Örneğin, hiçbir bağımlılıkta metin dosyasına bağlı katmandan veya katmana ters mühendislik uygulanmaz. Hangi yapıların ters mühendislik uygulayabileceğiniz bağımlılıkları olduğunu görmek için bir veya daha fazla katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**. İçinde **Katman Gezgini**, inceleyin **doğrulamayı destekler** sütun. Bağımlılıklar, bu sütunda görüntülenir yapıtlar için ters mühendislik olmayacak **False**.  
+> Bağımlılıklarda belirli türdeki yapılar için ters mühendislik uygulanamaz. Örneğin, hiçbir bağımlılıkta metin dosyasına bağlı katmandan veya katmana ters mühendislik uygulanmaz. Hangi yapıların ters mühendislik uygulayabileceğiniz bağımlılıkları olduğunu görmek için bir veya daha fazla katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**. İçinde **Katman Gezgini**, inceleyin **doğrulamayı destekler** sütun. Bağımlılıklar, bu sütunda görüntülenir yapıtlar için ters mühendislik olmayacak **False**.  
   
 - Bir veya birden fazla katman seçin, seçilen katmanın kısayol menüsünü açın ve ardından **Bağımlılıklar Oluştur**.  
   

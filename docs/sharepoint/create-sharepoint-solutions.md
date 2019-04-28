@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436422"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint çözümleri oluşturma
   Bunları SharePoint Tasarımcı'da oluşturmaya alternatif olarak, SharePoint uygulamalarını Visual Studio'da oluşturabilirsiniz. Visual Studio hata ayıklama araçları Gelişmiş, IntelliSense, ifade tamamlama ve proje şablonları gibi özellikler sağlayarak hızlı SharePoint geliştirmesi yükseltir. Visual Studio, .NET Framework tabanlı Gelişmiş araçları ve dilleri de yararlanır. Visual Basic veya Visual C# kullanarak SharePoint projeleri geliştirebilir ve JavaScript kullanarak SharePoint projeleri için uygulama geliştirebilirsiniz.
@@ -25,7 +25,7 @@ ms.locfileid: "57869921"
  SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) ve [SharePoint için uygulamalar oluşturun](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Yeni nasıl öğrenmek [SharePoint eklenti modeli](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) kullanıcılarınızın SharePoint deneyimini genişletmek için. Bu eklentiler SharePoint çözümlerine kıyasla çok küçük kaplama sahiptir ve neredeyse tüm web teknolojisi HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Yeni nasıl öğrenmek [SharePoint eklenti modeli](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) kullanıcılarınızın SharePoint deneyimini genişletmek için. Bu eklentiler SharePoint çözümlerine kıyasla çok küçük kaplama sahiptir ve neredeyse tüm web teknolojisi HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
 |||
 |-|-|

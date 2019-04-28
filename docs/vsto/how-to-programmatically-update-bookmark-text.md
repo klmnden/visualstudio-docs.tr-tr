@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a64f35e7d530b80e44f3098035093509766c60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418956"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme
   Sonraki bir zamanda ya da yer işaretindeki metnin yerine metnin alabilmeleri Microsoft Office Word belgesindeki bir yer tutucu yer işareti içinde metin ekleyebilirsiniz. Ayrıca belge düzeyinde özelleştirme geliştiriyorsanız metinde güncelleştirebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> veriye bağlı denetim. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -45,7 +45,7 @@ ms.locfileid: "60113035"
 1. İsteyen bir yordamı oluşturmak bir `bookmark` yer işaretinin adı bağımsız değişkeni ve `newText` atamak dize bağımsız değişkeni <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> özelliği.
 
     > [!NOTE]
-    >  Metne atama <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> veya <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> özelliği bir <xref:Microsoft.Office.Tools.Word.Bookmark> silinecek yer işareti denetimi neden olmaz.
+    > Metne atama <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> veya <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> özelliği bir <xref:Microsoft.Office.Tools.Word.Bookmark> silinecek yer işareti denetimi neden olmaz.
 
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
@@ -62,7 +62,7 @@ ms.locfileid: "60113035"
 1. Sahip bir yordam oluşturma bir `bookmark` bağımsız değişken adını <xref:Microsoft.Office.Interop.Word.Bookmark>ve `newText` atamak dize bağımsız değişkeni <xref:Microsoft.Office.Interop.Word.Range.Text%2A> yer işaretinin özelliği.
 
     > [!NOTE]
-    >  Yerel bir sözcüğe metin atama <xref:Microsoft.Office.Interop.Word.Bookmark> nesnenin silinmesi yer işareti neden olur.
+    > Yerel bir sözcüğe metin atama <xref:Microsoft.Office.Interop.Word.Bookmark> nesnenin silinmesi yer işareti neden olur.
 
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]

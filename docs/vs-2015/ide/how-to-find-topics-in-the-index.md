@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416826"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Nasıl yapılır: Dizinde Konu Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Dizin, yüklü içeriği konularındaki ile ilişkili anahtar sözcüklerin list
       Sekme üst kısmındaki filtre düğmesini seçerek, belirttiğiniz metni içeren tüm girişleri veya yalnızca belirttiğiniz metni içeren başlangıç girişleri görüntüleyebilirsiniz.  
   
      > [!NOTE]
-     >  Filtre düğmesine daha koyu bir kenarlık arka plan üzerinde göründüğünde, belirttiğiniz metni girişleri içermelidir. Girişler, arka planını ve kenarlığı görünmüyorsa, belirttiğiniz metni içeren başlatmanız gerekir.  
+     > Filtre düğmesine daha koyu bir kenarlık arka plan üzerinde göründüğünde, belirttiğiniz metni girişleri içermelidir. Girişler, arka planını ve kenarlığı görünmüyorsa, belirttiğiniz metni içeren başlatmanız gerekir.  
   
    - Dizin gidin ve bir anahtar seçin.  
   

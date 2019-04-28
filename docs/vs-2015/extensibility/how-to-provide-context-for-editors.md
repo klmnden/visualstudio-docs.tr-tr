@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435904"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Nasıl yapılır: Düzenleyiciler için bağlam sağlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Yalnızca Düzenleyici odaklı veya araç penceresine odak hemen taşınmadan ö
      Zaman **dinamik Yardım** penceresi çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> , güncelleştirme, düzenleyici veya tasarımcı bağlamı uygun şekilde üst içerik paketi hem de tüm üzere paketleri için o anda güncelleştirebilirsiniz belirtmek için.  
   
     > [!NOTE]
-    >  `SetDirty` Bayrağı otomatik olarak ayarlandığında `true` her içerik eklendiğinde veya içerik paketinden kaldırıldı. **Dinamik Yardım** penceresi yalnızca çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> üzerinde içerik paketi, `SetDirty` bayrağı ayarlandığında `true`. İçin sıfırlama `false` güncelleştirme sonrası.  
+    > `SetDirty` Bayrağı otomatik olarak ayarlandığında `true` her içerik eklendiğinde veya içerik paketinden kaldırıldı. **Dinamik Yardım** penceresi yalnızca çağıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> üzerinde içerik paketi, `SetDirty` bayrağı ayarlandığında `true`. İçin sıfırlama `false` güncelleştirme sonrası.  
   
 3. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> bağlam etkin bağlam koleksiyona eklenecek veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> bağlamı kaldırmak için.  
   
@@ -75,7 +75,7 @@ Yalnızca Düzenleyici odaklı veya araç penceresine odak hemen taşınmadan ö
  Kendi düzenleyicinizi yazıyorsanız üçü için düzenleyici bağlam sağlamak için bu konudaki yordamları tamamlamanız gerekir.  
   
 > [!NOTE]
->  Düzgün bir düzenleyici veya tasarımcı penceresini etkinleştir ve komut yönlendirme düzgün bir şekilde güncelleştirildiğinden emin olmak için çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> bileşende odaklama penceresine olun.  
+> Düzgün bir düzenleyici veya tasarımcı penceresini etkinleştir ve komut yönlendirme düzgün bir şekilde güncelleştirildiğinden emin olmak için çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> bileşende odaklama penceresine olun.  
   
  SEID seçim temel alınarak değiştiren özellikler koleksiyonudur. SEID bilgi genel seçimi kullanılabilir. Genel seçimi tarafından tetiklenen olayları kablolu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> arabirimi ve bir liste her şeyin (geçerli Düzenleyici, geçerli araç penceresi, geçerli hiyerarşi vb.) seçti.  
   

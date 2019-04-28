@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434648"
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, bir veya daha fazla dosyaları görüntülemek ve derleme ancak düzenleme için bir kopyasını alır. Çoğu sistemde, dosyaları salt okunur olarak etiketlenir.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Bayrağı ile birleştirilebilir `SCC_GET_RECURSIVE` belirli dizinlerdeki tüm dosyaları ve tüm alt dizinler de almak için bayrak.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` hiçbir zaman olmadan geçirilmelidir `SCC_GET_ALL`. Ayrıca unutmayın dizinleri *C:\A* ve *C:\A\B* özyinelemeli get, geçirilen *C:\A\B* ve tüm alt dizinlerinde aslında iki kez alınır. IDE'nin sorumluluğundadır — ve kaynak denetim eklentinin — bunun gibi yinelenen dizinin dışında tutulduğundan emin olmak için.
+> `SCC_GET_RECURSIVE` hiçbir zaman olmadan geçirilmelidir `SCC_GET_ALL`. Ayrıca unutmayın dizinleri *C:\A* ve *C:\A\B* özyinelemeli get, geçirilen *C:\A\B* ve tüm alt dizinlerinde aslında iki kez alınır. IDE'nin sorumluluğundadır — ve kaynak denetim eklentinin — bunun gibi yinelenen dizinin dışında tutulduğundan emin olmak için.
 
  Son olarak, bir kaynak denetim bile eklenti belirtilen `SCC_CAP_GET_NOUI` başlatma, Get komutu için bir kullanıcı arabirimi yok, bu işlev hala dosyaları almak için IDE tarafından çağrılan belirten bayrağı. Bayrağı yalnızca IDE Get menü öğesini görüntülemez ve herhangi bir UI sağlamak eklenti değil, beklenen anlamına gelir.
 

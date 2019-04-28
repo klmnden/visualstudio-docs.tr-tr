@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d5c680499da99dfdaadc6ee82f4a16f6cc46652
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2ea1803e702ba7f133f9194b993464eabfcc24aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423041"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
   
 > [!NOTE]
->  Döndürülen hata kodu sembol Canlı aralığı bilgisi yok anlamına gelir.  
+> Döndürülen hata kodu sembol Canlı aralığı bilgisi yok anlamına gelir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Uzaklık ve bölümü doğru biçimlendirilmiş bir adres simgenin geçerli aralığın başlangıcıdır.  

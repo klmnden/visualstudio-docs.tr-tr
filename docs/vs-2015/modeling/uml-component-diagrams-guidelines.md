@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424444"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML Bileşen Diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
  Tasarım aşamasında Bileşen diyagramlarının nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+> Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Bir bileşen diyagramı oluşturmak için  
   
@@ -157,7 +157,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
          Sağlanan arabirim bileşende görünür. Yakında bir Eylem etiketi görünür.  
   
         > [!NOTE]
-        >  Kullanırsanız **Yapıştır** yerine **başvuruyu Yapıştır**, yeni bir ada sahip bir yeni arabirim oluşturulacaktır.  
+        > Kullanırsanız **Yapıştır** yerine **başvuruyu Yapıştır**, yeni bir ada sahip bir yeni arabirim oluşturulacaktır.  
   
     3. Gerekli arabirimi oluşturmak istediyseniz, eylem'e ve ardından **gerekli arabirime Dönüştür**.  
   

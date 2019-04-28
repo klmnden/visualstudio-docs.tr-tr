@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436628"
 ---
 # <a name="registering-a-project-type"></a>Proje Türü Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
  Aşağıdaki örnekte, kayıt defterinden deyimleri varsayılan yollarını sağlar ve veri uygunsa girişlerinden for each deyimi kayıt betiği içeren bir tablo ardından. Tabloları, komut dosyası girişleri ve deyimler hakkında ek bilgiler sağlar.  
   
 > [!NOTE]
->  Aşağıdaki kayıt defteri bilgileri, örnek türü ve girişleri, proje türünü kaydetmek için yazacaksınız kayıt defteri betiklerdeki amaçları olması amaçlanmıştır. Gerçek girişlerinizi ve kullanımları proje türünüz belirli gereksinimlerine bağlı olarak değişebilir. Geliştirdiğiniz projenin türünü çok benzeyen bir bulmak kullanılabilir örneklerin gözden geçirin ve sonra bu örnek için kayıt betiği gözden geçirin.  
+> Aşağıdaki kayıt defteri bilgileri, örnek türü ve girişleri, proje türünü kaydetmek için yazacaksınız kayıt defteri betiklerdeki amaçları olması amaçlanmıştır. Gerçek girişlerinizi ve kullanımları proje türünüz belirli gereksinimlerine bağlı olarak değişebilir. Geliştirdiğiniz projenin türünü çok benzeyen bir bulmak kullanılabilir örneklerin gözden geçirin ve sonra bu örnek için kayıt betiği gözden geçirin.  
   
  HKEY_CLASSES_ROOT verilebilir.  
   
@@ -195,7 +195,7 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Hiçbiri|Çeşitli dosyalar projeleri girişleri aşağıdaki girişleri gösterir varsayılan değeri.|  
+|`@`|REG_SZ|Yok.|Çeşitli dosyalar projeleri girişleri aşağıdaki girişleri gösterir varsayılan değeri.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Yeni öğe ekleme şablon dosyaları için kaynak kimliği değeri.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Varsayılan yol olarak görüntülenen öğelerin **Yeni Öğe Ekle** iletişim kutusu.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Ağaç düğümünde görüntülemek için sıralama düzeni oluşturur **Yeni Öğe Ekle** iletişim kutusu.|  
@@ -267,6 +267,6 @@ Yeni bir proje türü oluşturduğunuzda, sağlayan kayıt defteri girdileri olu
  Yani bir PROJECT_TYPE içerip içermediğini = EF girişi .vsz dosyasında, .vsz dosyaları daha önce belirtilen ProductDir dizinde ortam bulur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md)   
  [Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

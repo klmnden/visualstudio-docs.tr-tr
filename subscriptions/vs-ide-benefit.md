@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: ecd0baa87b2fd7cfddcc3e5f9bd1298393b5d7ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420808"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 
@@ -55,8 +55,10 @@ IDE indirmek için:
 14. Visual Studio açılır. Visual Studio kullanmaya başlamak hazırsınız!
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Visual Studio Enterprise'ı kullanmaya başlayın](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Uygunluk

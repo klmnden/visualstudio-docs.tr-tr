@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441837"
 ---
 # <a name="design-and-create-office-solutions"></a>Office çözümleri oluşturma ve tasarlama
 
@@ -54,7 +54,7 @@ Visual Studio, birkaç farklı türde Office çözümleri oluşturmak için kull
   Visual Studio projeniz için hedef .NET Framework değiştirir ve çözümünüzü dağıtmak için ClickOnce'ı kullanıyorsanız, aynı zamanda ilgili .NET Framework sürümünü seçtiğinizden emin **önkoşulları** iletişim kutusu. Projeniz için hedef Framework'ü değiştirdiğinizde, bu seçenek otomatik olarak değiştirmez. Daha fazla bilgi için [nasıl yapılır: Son kullanıcı bilgisayarlarında Office çözümlerinin çalışması için Önkoşulları Yükleme](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  .NET Framework 3.5 veya Office projelerinde kullanarak oluşturduğunuz önceki hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> .NET Framework 3.5 veya Office projelerinde kullanarak oluşturduğunuz önceki hedefleyemez [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Kullanarak oluşturduğunuz office projeleri [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] sürümünde ilk yapılan özellikleri gerektirir [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Son kullanıcı bilgisayarlarında Office PIA'ların gerektiğinde anlama
  Varsayılan olarak, Office birincil birlikte çalışma derlemeleri (PIA), son kullanıcı bilgisayarlarında yüklü olması gerekmez **birlikte çalışma türlerini katıştır** özelliği projedeki her Office PIA başvurusu **True**, Varsayılan değer olan. Projeyi oluşturduğunuzda bu senaryoda, çözümünüz tarafından kullanılan PIA türler için tür bilgileri çözüm derlemesine eklenir. Çalışma zamanında, Office uygulamasının COM tabanlı nesne modeline çağrı yapmak yerine PIA'ların gömülü tür bilgileri kullanılır. PIA'ların türlerinden çözümünüze nasıl katıştırılmış hakkında daha fazla bilgi için bkz. [tür eşdeğerliği ve katıştırılmış birlikte çalışma türleri](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

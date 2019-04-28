@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d772a2c3f8654d458ea1ba1b9d0661b290361b54
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446001"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
      Solution Explorer'da Codeduıtest1.vb dosyasını açın ve sonra Codeduıtestmethod1() test yöntemi kodunda otomatik olarak eklenen onay yöntemi çağrısını sağ `Me.UIMap.AssertMethod1()` ve **tanıma**. Bu görünümü onay yöntemi ve denetimler için eklenen kodu görüntüleyebilmeniz için UIMap.Designer.vb dosyasını Kod düzenleyicisinde açar.  
   
     > [!WARNING]
-    >  UIMap.Designer.cs veya UIMap.Designer.vb dosyasını doğrudan değiştirmeyin. Bunu yaparsanız, dosyadaki değişikliklerin testin üretildiği her seferinde üzerine yazılır.  
+    > UIMap.Designer.cs veya UIMap.Designer.vb dosyasını doğrudan değiştirmeyin. Bunu yaparsanız, dosyadaki değişikliklerin testin üretildiği her seferinde üzerine yazılır.  
   
      **Assert yöntemi**  
   

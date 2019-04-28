@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427032"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>IDataObject nesnesinden UML model öğelerini alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54755102"
 Kullanıcı öğeleri herhangi bir kaynaktan diyagram üzerine sürüklediğinde, sürüklenen öğeler içinde kodlanır bir `System.Windows.Forms.IDataObject`. Kodlama, kaynak nesnenin türüne bağlıdır. Aşağıdaki parçası, kaynak UML diyagram olduğunda öğelerin nasıl alındığını gösterir.  
   
 > [!NOTE]
->  UML modeller üzerinde yapmak zorunda işlemlerin çoğunu türleri kullanarak gerçekleştirilebilir derlemede tanımlanan **Microsoft.VisualStudio.Uml.Interfaces** ve  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ancak bu amaç için UML modelleme araçları uygulamasının parçaları olan bazı sınıfları kullanmanız gerekir. Örneğin, `ShapeElement` bu parçada UML aynı değil `IShape`. UML model ve diyagramlarının tutarsız bir duruma koymanın riskini azaltmak için bu durumlar dışında bu uygulama sınıfları üzerinde yöntemleri kullanmaktan kaçınmak en iyisidir istisnası yoktur.  
+> UML modeller üzerinde yapmak zorunda işlemlerin çoğunu türleri kullanarak gerçekleştirilebilir derlemede tanımlanan **Microsoft.VisualStudio.Uml.Interfaces** ve  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Ancak bu amaç için UML modelleme araçları uygulamasının parçaları olan bazı sınıfları kullanmanız gerekir. Örneğin, `ShapeElement` bu parçada UML aynı değil `IShape`. UML model ve diyagramlarının tutarsız bir duruma koymanın riskini azaltmak için bu durumlar dışında bu uygulama sınıfları üzerinde yöntemleri kullanmaktan kaçınmak en iyisidir istisnası yoktur.  
   
 ## <a name="code-sample"></a>Kod örneği  
  Projenize aşağıdaki başvurmalıdır [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] derlemeler:  

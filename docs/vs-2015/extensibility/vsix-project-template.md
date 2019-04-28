@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436898"
 ---
 # <a name="vsix-project-template"></a>VSIX Proje Şablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Bir veya daha fazla Visual Studio uzantıları içinde VSIX projesi sarmalamak i
  VSPackage'ları, derlemeleri, MEF Bileşenleri, proje şablonları, öğe şablonları, araç kutusu denetimleri ve özel uzantı türleri VSIX dağıtımı destekler.  
   
 > [!NOTE]
->  VSIX projeleri kullanmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> VSIX projeleri kullanmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>VSIX proje şablonunu nerede bulacağını  
  VSIX proje şablonu kullanılabilir **yeni proje** iletişim kutusu. Ya da genişletin **Visual Basic** düğümü veya **Visual C#** düğümünü seçip **genişletilebilirlik**.  
   
 > [!TIP]
->  Bu .NET Framework 4.5 emin olmanız gerekir veya en üstündeki açılan yüksek belirtilen **yeni proje** iletişim kutusu.  
+> Bu .NET Framework 4.5 emin olmanız gerekir veya en üstündeki açılan yüksek belirtilen **yeni proje** iletişim kutusu.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX proje şablonunu kullanır  
  VSIX proje şablonu, iki temel kullanım sahiptir:  

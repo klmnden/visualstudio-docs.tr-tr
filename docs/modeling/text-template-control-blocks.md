@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434167"
 ---
 # <a name="text-template-control-blocks"></a>Metin Şablonu Denetim Blokları
 Denetim blokları çıktıyı değiştirmek için metin şablonunuza kod yazmanıza olanak sağlar. Denetim blokları, bunların açma köşeli parantez ayırt üç tür vardır:
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Her zaman {...}'ni kullanın Katıştırılmış düz metin içeren iç içe geçmiş deyimler sınırlandırmak için. Aşağıdaki örnek düzgün şekilde çalışmayabilir:
+> Her zaman {...}'ni kullanın Katıştırılmış düz metin içeren iç içe geçmiş deyimler sınırlandırmak için. Aşağıdaki örnek düzgün şekilde çalışmayabilir:
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  Bunun yerine {küme ayraçları}, şu şekilde içermelidir:
+> Bunun yerine {küme ayraçları}, şu şekilde içermelidir:
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Bir sınıf özelliği denetim bloğu, standart denetim blokları aynı şablon dosyasında tarafından izlenmemelidir. Ancak, bu kısıtlama kullanarak sonucu için geçerli değildir `<#@include#>` yönergeleri. Eklenen her dosya, sınıf özelliği bloklarını tarafından izlenen standart blokları olabilir.
+> Bir sınıf özelliği denetim bloğu, standart denetim blokları aynı şablon dosyasında tarafından izlenmemelidir. Ancak, bu kısıtlama kullanarak sonucu için geçerli değildir `<#@include#>` yönergeleri. Eklenen her dosya, sınıf özelliği bloklarını tarafından izlenen standart blokları olabilir.
 
  Bir sınıf özelliği denetim bloğu metin ve ifade bloklarında ekleyerek çıkış oluşturan bir işlev oluşturabilirsiniz. Örneğin:
 

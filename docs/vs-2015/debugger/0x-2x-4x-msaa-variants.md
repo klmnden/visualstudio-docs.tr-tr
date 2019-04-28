@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439983"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA çeşitleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Geçersiz kılmalar birden çok örnek düzgünleştirme (MSAA) ayarları tüm i
  Uygulamanız zaten etkin MSAA yoksa, 2 x MSAA ve 4 x MSAA çeşitleri bunları uygulamanızda etkinleştirme göreli performans maliyetini gösterir. Maliyet çalışarak düşük olduğunda, uygulamanızın resim kalitesini artırmak MSAA etkinleştirme göz önünde bulundurun.  
   
 > [!NOTE]
->  Donanımınız için tüm biçimler MSAA tam olarak desteklemeyebilir. Bu çeşitleri birini çalışan olamaz etrafında bir donanım sınırlama karşılaşırsanız, kendi sütununda bir performans Özet Tablo boş olur ve bir hata iletisi oluşturulur.  
+> Donanımınız için tüm biçimler MSAA tam olarak desteklemeyebilir. Bu çeşitleri birini çalışan olamaz etrafında bir donanım sınırlama karşılaşırsanız, kendi sütununda bir performans Özet Tablo boş olur ve bir hata iletisi oluşturulur.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Örnek sayısı ve örnek kalitesi bağımsız değişkenler için çağrılar üzerinde bu çeşitleri geçersiz kılma `ID3DDevice::CreateTexture2D` işleme hedefleri oluşturun. Özellikle, bu parametreleri geçersiz olduğunda:  

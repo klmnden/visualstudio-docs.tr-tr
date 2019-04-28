@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410048"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Görev Listesi, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Bu seçenekler sayfası, ekleme, silme ve oluşturma yorum belirteçleri değiş
  Bir kullanıcı görevini gelen silindiğinde seçili olduğunda, bir ileti kutusu görüntülenir **görev listesi**, silmeyi onaylamak etmenize imkan sağlar. Bu seçenek varsayılan olarak seçilidir.  
   
 > [!NOTE]
->  Bir görev açıklamasının silmek için bir açıklama bulmak için bağlantıyı kullanın ve ardından kodunuzdan kaldırır.  
+> Bir görev açıklamasının silmek için bir açıklama bulmak için bağlantıyı kullanın ve ardından kodunuzdan kaldırır.  
   
  Yalnızca dosya adını göster  
  Seçili olduğunda, **dosya** sütununun **görev listesi** yalnızca düzenlenmesi için dosya adlarını görüntüler kendi tam yolu.  
@@ -53,7 +53,7 @@ Bu seçenekler sayfası, ekleme, silme ve oluşturma yorum belirteçleri değiş
  Belirteçlerin listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Açıklama, Visual C# ve Visual C++'ta, ancak Visual Basic'de büyük/küçük harfe duyarlı belirteçleridir.  
   
 > [!NOTE]
->  Tam olarak gösterildiği gibi istenen belirteç yazmazsanız **belirteç listesi**, yorum görev içinde görüntülenmeyecek **görev listesi**.  
+> Tam olarak gösterildiği gibi istenen belirteç yazmazsanız **belirteç listesi**, yorum görev içinde görüntülenmeyecek **görev listesi**.  
   
  Öncelik  
  Seçili olan belirteci kullanan görevler önceliğini ayarlar. Bu belirteç ile başlayan Görev açıklamalarını otomatik olarak belirlenen öncelik atanmış **görev listesi**.  
@@ -71,7 +71,7 @@ Bu seçenekler sayfası, ekleme, silme ve oluşturma yorum belirteçleri değiş
  Girilen değerleri kullanarak mevcut bir belirteç değişiklik yapmak için tıklatın **adı** ve **öncelik** alanları.  
   
 > [!NOTE]
->  Yeniden adlandırma veya varsayılan yorum belirteci silin, ancak öncelik düzeyini değiştirebilirsiniz.  
+> Yeniden adlandırma veya varsayılan yorum belirteci silin, ancak öncelik düzeyini değiştirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev listesini kullanma](../../ide/using-the-task-list.md)   

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427616"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Nasıl yapılır: İçerik ekleme denetimlerine Word belgeleri
   Belge düzeyi Word projelerinde, içerik denetimleri belgeye projenizde tasarım zamanında veya çalışma zamanında ekleyebilirsiniz. Word VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz.
@@ -78,10 +78,10 @@ ms.locfileid: "60080417"
     - Bir içerik denetimi **araç kutusu** belge. İçerik denetimi, fare işaretçisi konumunu değil, geçerli seçime belgedeki eklenir.
 
 > [!NOTE]
->  Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanarak **araç kutusu**. Yalnızca ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word veya çalışma zamanında.
+> Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanarak **araç kutusu**. Yalnızca ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word veya çalışma zamanında.
 
 > [!NOTE]
->  Visual Studio araç kutusu bir onay kutusu içerik denetimi sağlamaz. Belgeye bir onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> programlı olarak nesnesi. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
+> Visual Studio araç kutusu bir onay kutusu içerik denetimi sağlamaz. Belgeye bir onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> programlı olarak nesnesi. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Word belgesinde bir içerik denetimi eklemek için
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080417"
 2. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. İçinde **denetimleri** grubunda, eklemek istediğiniz içerik denetiminin simgesine tıklayın.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080417"
   Dinamik olarak belge kapatıldığında içerik denetimleri kaybolacağından belgede oluşturuldu. Ancak, yerel bir içerik denetimi belgede kalır. Belgeyi bir sonraki açılışında bir yerel içerik denetimine bağlı bir içerik denetimi yeniden oluşturabilirsiniz. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Word 2010 projesinde bir belge onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
+> Word 2010 projesinde bir belge onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Geçerli seçimde bir içerik denetimi eklemek için
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080417"
   VSTO eklentisi projeleri, ana bilgisayar öğeleri oluşturma hakkında daha fazla bilgi için bkz. [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Belge onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
+> Belge onay kutusu içerik denetimi eklemek için oluşturmalısınız bir <xref:Microsoft.Office.Tools.Word.ContentControl> nesne. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Geçerli seçimde bir içerik denetimi eklemek için
 

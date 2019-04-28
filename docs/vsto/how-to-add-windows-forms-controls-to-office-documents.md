@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427484"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme
   Belge düzeyi projesinde tasarım zamanında Microsoft Office Excel ve Microsoft Office Word belgelerine Windows Forms denetimleri ekleyebilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri çalışma zamanında denetimler ekleyebilirsiniz. Örneğin, ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> denetlemek için çalışma böylece kullanıcılar bir seçeneklerini listeden seçebilirsiniz.
@@ -49,7 +49,7 @@ ms.locfileid: "60047117"
 2. İçinde **ortak denetimleri** sekmesinde **araç kutusu**, eklemek istediğiniz denetim tıklayın ve belgeye sürükleyin.
 
     > [!NOTE]
-    >  Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
+    > Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Belgedeki bir Windows Forms denetimi çizmek için
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047117"
      Denetim belgeye belirtilen konum ve boyut ile eklenir.
 
     > [!NOTE]
-    >  Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
+    > Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Tek-denetim tıklayarak belgeye bir Windows Forms denetimi eklemek için
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047117"
      Denetimin varsayılan boyutu belgeyle eklenir.
 
     > [!NOTE]
-    >  Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
+    > Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Denetime çift tıklayarak, belgeye bir Windows Forms denetimi eklemek için
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047117"
      Denetim, belgenin veya etkin bölmeyi merkezindeki belgeye eklenir.
 
     > [!NOTE]
-    >  Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
+    > Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Enter tuşuna basarak, belgeye bir Windows Forms denetimi eklemek için
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047117"
      Denetim, belgenin veya etkin bölmeyi merkezindeki belgeye eklenir.
 
     > [!NOTE]
-    >  Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
+    > Excel'de bir denetimi seçtiğinizde göreceğiniz **=EMBED("WinForms.Control.Host","")** içinde **formül çubuğu**. Bu metin, gereklidir ve silinmemelidir.
 
 ## <a name="runtimedoclevel"></a> Belge düzeyi projelere çalışma zamanında denetimler ekleme
  Bir belgeye çalışma zamanında Windows Forms denetimlerine programlı olarak ekleyebilirsiniz. Word'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> özelliği `ThisDocument` sınıfı. Excel'de yöntemlerini kullanın <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> özelliği bir `Sheet` *n* sınıfı. Her yöntem farklı şekillerde denetimin konumunu belirtmenize olanak sağlayan birçok aşırı yüklemeye sahip.
@@ -125,7 +125,7 @@ ms.locfileid: "60047117"
 1. Ekle adına sahip bir yöntem kullanmak\<*denetim sınıf*> (burada *denetim sınıf* sınıfı adı gibi eklemek istediğiniz Windows Forms denetiminin <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    >  VSTO eklenti hedefleyen projeleri [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bir başvuru eklemelisiniz *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* veya *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Ekle erişebilmeniz için önce derleme\<*denetim sınıf*> yöntemleri.
+    > VSTO eklenti hedefleyen projeleri [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bir başvuru eklemelisiniz *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* veya *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Ekle erişebilmeniz için önce derleme\<*denetim sınıf*> yöntemleri.
 
      Aşağıdaki kod örneğinde nasıl ekleneceğini gösterir. bir <xref:Microsoft.Office.Tools.Word.Controls.Button> etkin belgenin bir sözcük VSTO eklentisi kullanarak ilk paragrafa.
 

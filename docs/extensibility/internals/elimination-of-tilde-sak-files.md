@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418638"
 ---
 # <a name="elimination-of-sak-files"></a>Saydamlığından ~ SAK dosyalarının
 Kaynak Denetimi Eklentisi API 1.2 içindeki *~ SAK* özellik bayraklarının dosyalar değiştirildi ve bir kaynak olup olmadığını algılayan yeni işlevleri denetim eklentisini destekler *MSSCCPRJ* dosya ve paylaşımlı kullanıma Almalarla.
@@ -48,7 +48,7 @@ Kaynak Denetimi Eklentisi API 1.2 ile sağlanan gelişmiş işlevleri destekleye
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*
 
 > [!NOTE]
->  Bu kayıt defteri anahtarı ayarlanırsa *DWORD: 00000000*, varolmayan olan anahtarına eşdeğerdir ve Visual Studio geçici dosyalar oluşturmak yine de çalışır. Ancak, kayıt defteri anahtarı ayarlanırsa *DWORD: 00000001*, geçici dosyalar oluşturmak Visual Studio denemez. Bunun yerine kaynak denetimi eklentisi desteklemediği varsayar *MSSCCPRJ.SCC* dosya ve paylaşımlı kullanıma Almalarla desteklemez.
+> Bu kayıt defteri anahtarı ayarlanırsa *DWORD: 00000000*, varolmayan olan anahtarına eşdeğerdir ve Visual Studio geçici dosyalar oluşturmak yine de çalışır. Ancak, kayıt defteri anahtarı ayarlanırsa *DWORD: 00000001*, geçici dosyalar oluşturmak Visual Studio denemez. Bunun yerine kaynak denetimi eklentisi desteklemediği varsayar *MSSCCPRJ.SCC* dosya ve paylaşımlı kullanıma Almalarla desteklemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Kaynak Denetimi Eklentisi API sürümü 1.2 yenilikler nelerdir?](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

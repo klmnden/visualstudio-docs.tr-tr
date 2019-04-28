@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440433"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio'da (VB, C#, C++ ve XAML) bir Store uygulaması için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Bu konu, XAML ve Visual C++, Visual C# veya Visual Basic içinde yazılan Store uygulamaları için hata ayıklama oturumu başlatmak açıklar. Uygulama hata ayıklama, hem hata ayıklama oturumu yapılandırma ve uygulamayı başlatmak için yol seçme içerir.
 
 > [!NOTE]
->  HTML ve JavaScript ile yazılan uygulamaları görmek için [(JavaScript) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> HTML ve JavaScript ile yazılan uygulamaları görmek için [(JavaScript) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> Bu konudaki
  [Hata ayıklama başlamanın en kolay yolu](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     ![Select uzaktan hata ayıklayıcı bağlantısı iletişim kutusu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  **Uzaktan hata ayıklayıcı bağlantısı Seç** yerel alt ağı üzerinde olan makinelere ve Visual Studio makinesine, bir Ethernet kablosuyla doğrudan bağlı sanal makinelere iletişim kutusu görüntüler. Başka bir makine belirtmek için adı girin. **makine adı** kutusu.
+  > **Uzaktan hata ayıklayıcı bağlantısı Seç** yerel alt ağı üzerinde olan makinelere ve Visual Studio makinesine, bir Ethernet kablosuyla doğrudan bağlı sanal makinelere iletişim kutusu görüntüler. Başka bir makine belirtmek için adı girin. **makine adı** kutusu.
 
   ![Windows Phone için yalnızca geçerli](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Varsayılan olarak, uzaktan hata ayıklayıcıyı çalıştırmak için kimlik bilgilerini sağlamanız gerekir.
 
 > [!IMPORTANT]
->  Uzaktan hata ayıklayıcıyı kimlik doğrulaması yok modunda çalıştırmayı da seçebilirsiniz, ancak bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Ağın, kötü amaçlı veya tehlikeli trafik riskinden uzak olduğundan eminseniz Kimlik Doğrulaması Yok modunu seçin.
+> Uzaktan hata ayıklayıcıyı kimlik doğrulaması yok modunda çalıştırmayı da seçebilirsiniz, ancak bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Ağın, kötü amaçlı veya tehlikeli trafik riskinden uzak olduğundan eminseniz Kimlik Doğrulaması Yok modunu seçin.
 
  Kimlik doğrulama gereksinimini kaldırmak için:
 
@@ -250,7 +250,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Hata ayıklama modunda çalıştırmak için yüklü bir uygulama için bunu yapmanız gerekir:
 
 > [!NOTE]
->  Bu yordamı başlattığınızda, uygulama çalışmıyor olması gerekir.
+> Bu yordamı başlattığınızda, uygulama çalışmıyor olması gerekir.
 
 1. Üzerinde **hata ayıklama** menüsünde seçin **yüklenen uygulama paketinin hatalarını ayıklama**
 

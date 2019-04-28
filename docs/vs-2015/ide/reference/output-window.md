@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438073"
 ---
 # <a name="output-window"></a>Çıktı Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668918"
 **Çıkış** penceresi, tümleşik geliştirme ortamında (IDE) çeşitli özellikler için durum iletilerini görüntüleyebilirsiniz. Açmak için **çıkış** menü çubuğunda, pencere **görünüm/çıkış** (veya CTRL + ALT + O).  
   
 > [!WARNING]
->  Çıkış penceresi, Visual Studio Express sürümlerinde Görünüm menüsünde görünmüyor. Bu ortaya çıkarmak için kısayol tuşu kullanma CTRL + ALT + o  
+> Çıkış penceresi, Visual Studio Express sürümlerinde Görünüm menüsünde görünmüyor. Bu ortaya çıkarmak için kısayol tuşu kullanma CTRL + ALT + o  
   
 ## <a name="toolbar"></a>Araç Çubuğu  
  **Çıktıyı Göster**  

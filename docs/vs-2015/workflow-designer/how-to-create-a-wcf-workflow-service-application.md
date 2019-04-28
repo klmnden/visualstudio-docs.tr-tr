@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7cf338139da88fd4d3507ac7f6c7ab71dd881e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433519"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Nasıl yapılır: WCF İş Akışı Hizmeti Uygulaması Oluşturma
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] İş akışı hizmeti uygulamaları iletileri istemcileri ile kendisi arasında işlem sınırları arasında geçen dağıtılmış iletişimleri hizmetleridir. Hizmet tarafında hizmet sözleşmesinin uygulamasını bildirimli olarak iş akışı etkinliklerinde aracılığıyla gerçekleştirilir [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] .NET Framework 3.5 eski iş akışı hizmetlerine benzer şekilde.  
@@ -38,7 +38,7 @@ ms.locfileid: "60054919"
 7. İçinde **çözüm** kutusunda, yeni bir çözüm oluşturup ardından seçin **Tamam**.  
   
     > [!NOTE]
-    >  Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
+    > Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
   
 8. Proje şablonunu bir hizmet tanımı XAML olarak oluşturur. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Tasarım görünümü ile açılır bir <xref:System.Activities.Statements.Sequence> içeren bir dizi etkinlik <xref:System.ServiceModel.Activities.Receive> ve <xref:System.ServiceModel.Activities.SendReply> etkinlikler.  
   

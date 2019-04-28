@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432402"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Katman diyagramlarına özel mimari doğrulaması ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
  Kullanıcı seçtiğinde **Mimariyi Doğrula** standart doğrulama yöntemi çağrılır, yüklenmiş herhangi bir doğrulama uzantısı tarafından izlenen bir katman diyagramı üzerinde komutu.  
   
 > [!NOTE]
->  Doğrulama bir katman diyagramındaki doğrulama, UML diyagramlarındaki ile aynı değil. Bir katman diyagramındaki ana amacı çözümün diğer bölümlerinde program koduyla diyagramı Karşılaştırılacak sağlamaktır.  
+> Doğrulama bir katman diyagramındaki doğrulama, UML diyagramlarındaki ile aynı değil. Bir katman diyagramındaki ana amacı çözümün diğer bölümlerinde program koduyla diyagramı Karşılaştırılacak sağlamaktır.  
   
  İçine bir Visual Studio Tümleştirme Uzantısı (diğer Visual Studio kullanıcılarına dağıtabilirsiniz, VSIX), katman doğrulama uzantınızı paketleyebilirsiniz. Doğrulayıcı bir VSIX kendisi tarafından yerleştirebilir veya onu diğer uzantılarla aynı VSIX içinde birleştirebilirsiniz. Doğrulayıcının kodunu yazmanız kendi Visual Studio projesi, diğer uzantılarla aynı proje içinde değil.  
   
 > [!WARNING]
->  Doğrulama projesi oluşturduktan sonra kopyalama [örnek kod](#example) sonunda, bu konuda ve kendi gereksinimleriniz doğrultusunda, düzenleyin.  
+> Doğrulama projesi oluşturduktan sonra kopyalama [örnek kod](#example) sonunda, bu konuda ve kendi gereksinimleriniz doğrultusunda, düzenleyin.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Bkz: [gereksinimleri](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
     Şablon, küçük bir örnek içeren bir proje oluşturur.  
   
    > [!WARNING]
-   >  Okunabilmesini sağlamak şablonu çalışmak düzgün şekilde:  
+   > Okunabilmesini sağlamak şablonu çalışmak düzgün şekilde:  
    > 
    > - Çağrılarını düzenleyin `LogValidationError` isteğe bağlı bağımsız değişkenlerini kaldırmak için `errorSourceNodes` ve `errorTargetNodes`.  
    >   - Özel özellikleri kullanırsanız, belirtilen güncelleştirmesini [katman diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 4. Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
    > [!NOTE]
-   >  Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
+   > Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
 5. Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası *bin\\*. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
@@ -115,7 +115,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 7. Uzantıyı test etmek için bkz: [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
     > [!NOTE]
-    >  Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
+    > Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
 8. Ana örneğine VSIX'i yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'ndeki VSIX dosyasına çift tıklayın. (Windows 8'de dosya Gezgini.)  
   
@@ -147,7 +147,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
 - Bir hata bulduğunuzda, bunu kullanarak bildirebilirsiniz `LogValidationError()`.  
   
   > [!WARNING]
-  >  İsteğe bağlı parametreleri kullanmayın `LogValidationError`.  
+  > İsteğe bağlı parametreleri kullanmayın `LogValidationError`.  
   
   Kullanıcı ne zaman çağırır **Mimariyi Doğrula** menü komutunu, katman çalışma zamanı sistemi olmaktadır katmanları ve onların yapılarını bir grafik oluşturur. Grafik dört bölümden oluşur:  
   
@@ -162,7 +162,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   Grafik oluşturulduğunda standart doğrulama yöntemi çağrılır. Bu tamamlandığında, yüklenen uzantı doğrulama yöntemleri belirtilmemiş sırayla çağrılır. Graf geçirilir `ValidateArchitecture` yöntemi grafiği tarar ve bulduğu tüm hataları bildirin.  
   
 > [!NOTE]
->  Bu UML diyagramlarına uygulanan doğrulama işlemi ile aynı değildir ve bu etki alanına özgü dillerde kullanılabilecek doğrulama işlemi ile aynı değil.  
+> Bu UML diyagramlarına uygulanan doğrulama işlemi ile aynı değildir ve bu etki alanına özgü dillerde kullanılabilecek doğrulama işlemi ile aynı değil.  
   
  Doğrulama yöntemlerinin katman modelini ya da Doğrulanmakta olan kodu değiştirmemesi gerekir.  
   

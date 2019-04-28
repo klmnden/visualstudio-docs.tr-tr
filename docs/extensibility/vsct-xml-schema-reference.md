@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2643c88eaf133d41fba7a8112f9b92150be3148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411096"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML Şeması Başvurusu
 Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğeler ve öznitelikler için her sağlar.
@@ -24,7 +24,7 @@ Komut tablosu derleyici şema öğelerinin bir tablo ile izin verilen alt öğel
  Bir XML tabanlı komut tablosu (.vsct) yapılandırma dosyası tümleşik geliştirme ortamı (IDE) bir VSPackage sağlayan komut öğeleri tanımlar. Menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları bu öğeleri içerir.
 
 > [!NOTE]
->  VSCT derleyici bir önişlemci .vsct dosyası üzerinde çalıştırabilirsiniz. Bu genellikle olduğundan C++ önişlemcisi tanımlayabileceğiniz içerir ve makroları, C++ dosyalarında kullanılan aynı söz dizimine sahip. Bu örnekler .vsct sağlanan dosya **yeni proje** sihirbaz VSPackage projesi oluşturur.
+> VSCT derleyici bir önişlemci .vsct dosyası üzerinde çalıştırabilirsiniz. Bu genellikle olduğundan C++ önişlemcisi tanımlayabileceğiniz içerir ve makroları, C++ dosyalarında kullanılan aynı söz dizimine sahip. Bu örnekler .vsct sağlanan dosya **yeni proje** sihirbaz VSPackage projesi oluşturur.
 
 ## <a name="optional-elements"></a>İsteğe bağlı öğeler
  Bazı VSCT öğeler isteğe bağlıdır. Varsa bir `Parent` bağımsız değişken belirtilmezse, Group_Undefined:0 Kapsanan. Varsa bir `Icon` bağımsız değişkeni belirtilmezse, guidOfficeIcon:msotcidNoIcon kapsanan. Bir kısayol tuşu tanımlandığında, genellikle kullanılmaz, öykünme isteğe bağlıdır.

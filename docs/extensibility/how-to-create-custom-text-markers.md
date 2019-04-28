@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415553"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Nasıl yapılır: Özel metin işaretçileri oluşturma
 Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak istiyorsanız, aşağıdaki adımları izlemelisiniz:
@@ -41,7 +41,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
     `<PackageGUID>` VSPackage'ı GUİD'si Otomasyon nesnesi uygular.
 
    > [!NOTE]
-   >  Kök yolu **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm >** Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Kök yolu **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm >** Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Dört değer altında oluşturma **hkey_local_machıne\software\microsoft\visualstudio\\\<sürüm > \Text Editor\External işaretçileri\\\<MarkerGUID >**
 

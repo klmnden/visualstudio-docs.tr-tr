@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422897"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları Oluşturma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
 - İçinde **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Configuration Manager**.  
   
   > [!NOTE]
-  >  Varsa **Configuration Manager** komutu görünmezse kısayol menüsünde, arama altında **derleme** menü çubuğundaki menü. Seçin ya da menü çubuğunda, burada görünmüyorsa **Araçları**, **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda **projeler ve Çözümleri**, **genel**, sağ bölmede seçip **Show Gelişmiş derleme yapılandırmaları** onay kutusu.  
+  > Varsa **Configuration Manager** komutu görünmezse kısayol menüsünde, arama altında **derleme** menü çubuğundaki menü. Seçin ya da menü çubuğunda, burada görünmüyorsa **Araçları**, **seçenekleri**ve ardından sol bölmesinde **seçenekleri** iletişim kutusunda **projeler ve Çözümleri**, **genel**, sağ bölmede seçip **Show Gelişmiş derleme yapılandırmaları** onay kutusu.  
   
    İçinde **Configuration Manager** kullanabileceğiniz iletişim kutusu, **etkin çözüm yapılandırması** aşağı açılan listesinin bir çözüm çapında yapı yapılandırması, mevcut bir değiştirme veya yeni oluşturun yapılandırma. Kullanabileceğiniz **etkin çözüm platformu** platform yapılandırma hedefler, mevcut bir değiştirin veya yeni platform Ekle seçmek için aşağı açılan listesi. **Proje bağlamları** bölmesinde çözüm içindeki projeleri listeler. Her proje için bir projeye özgü yapılandırma ve platform seçebilir, var olanları düzenleyin veya yeni bir yapılandırma oluşturmak veya yeni bir platform Ekle. Derleme veya dağıtım çözümü için çözüm genelindeki bir yapılandırma kullandığınızda her proje dahil olup olmadığını gösteren onay kutularını de seçebilirsiniz.  
   

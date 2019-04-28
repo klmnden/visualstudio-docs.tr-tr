@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435480"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Nasıl yapılır: SharePoint bağlantıları Ekle Kaldır
   Sunucu Gezgini veri bağlantıları yanı sıra, SharePoint sitelerine göz atmanıza olanak tanır. Bir SharePoint sitesi içeriğine göz atabilirsiniz önce ancak kendisine eklemeniz gerekir **SharePoint bağlantıları** düğümü.
@@ -41,7 +41,7 @@ ms.locfileid: "60077374"
 3. Site seçin ve ardından, menü çubuğunda, **Düzenle** > **Sil**.
 
     > [!NOTE]
-    >  Bu adım, temel alınan site silinmez; yalnızca bağlantısından siler **Sunucu Gezgini**.
+    > Bu adım, temel alınan site silinmez; yalnızca bağlantısından siler **Sunucu Gezgini**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

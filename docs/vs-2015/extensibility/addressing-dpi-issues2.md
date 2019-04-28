@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443956"
 ---
 # <a name="addressing-dpi-issues"></a>DPI Sorunlarını Çözme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Yardımcı işlevleri Modül düzeyinde veya sınıf düzeyi statik değişkenler kullanmayın. Kitaplığı statikler iş parçacığı eşitleme için de kullanır ve başlatma sırası sorunlarla karşılaşabilirsiniz. Statik olmayan üye değişkenleri için bu statikler dönüştürün ya da (bunlar ilk erişimde oluşturulmuş için), bunları bir işleve kaydır.  
+> Yardımcı işlevleri Modül düzeyinde veya sınıf düzeyi statik değişkenler kullanmayın. Kitaplığı statikler iş parçacığı eşitleme için de kullanır ve başlatma sırası sorunlarla karşılaşabilirsiniz. Statik olmayan üye değişkenleri için bu statikler dönüştürün ya da (bunlar ilk erişimde oluşturulmuş için), bunları bir işleve kaydır.  
   
  Visual Studio ortamı içinde çalışır, yönetilen koddan DPI yardımcı işlevleri erişmek için:  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431426"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Konsolu komutları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  JavaScript Konsolu penceresi kapatıldığında, Visual Studio'da seçerek hata ayıklarken bunu açabilirsiniz **hata ayıklama** > **Windows** > **JavaScript Konsol**.  
   
 > [!NOTE]
->  Penceresi bir hata ayıklama oturumu sırasında kullanılabilir durumda değilse, hata ayıklayıcı türü ayarlandığından emin olun **betik** proje için hata ayıklama özellikleri.  
+> Penceresi bir hata ayıklama oturumu sırasında kullanılabilir durumda değilse, hata ayıklayıcı türü ayarlandığından emin olun **betik** proje için hata ayıklama özellikleri.  
   
 ## <a name="console-object-commands"></a>Konsol nesne komutları  
  Bu tablo için söz dizimi görülmektedir `console` nesne komutları JavaScript konsol penceresinde kullanabilirsiniz veya konsola kodunuzdan iletileri göndermek için kullanabilirsiniz. Böylece bilgi iletilerini ve hata iletileri ayırt etmek isterseniz, bu nesne forms sayısını sağlar.  
@@ -43,7 +43,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Daha uzun komut formun kullanabileceğiniz `window.console.[command]` konsol adlı yerel nesneleriyle olası Karışıklığı önlemek gerekiyorsa.  
   
 > [!TIP]
->  Visual Studio'nun eski sürümlerini komutların tam bir set desteklemez. IntelliSense konsol nesne üzerinde desteklenen komutlar hakkında hızlı bilgi almak için kullanın.  
+> Visual Studio'nun eski sürümlerini komutların tam bir set desteklemez. IntelliSense konsol nesne üzerinde desteklenen komutlar hakkında hızlı bilgi almak için kullanın.  
   
 |Komut|Açıklama|Örnek|  
 |-------------|-----------------|-------------|  

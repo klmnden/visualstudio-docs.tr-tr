@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443079"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Nasıl yapılır: Denetimleri güvenli denetim olarak işaretleme
   Güvenlik için SharePoint, betik ekleme karşı korumalı Web denetimleri ve olmayan Web denetimleri ayırır. Denetimler, korumalı veya *güvenli denetimler*, güvenilir olmayan kullanıcılar tarafından erişilebilir. Denetimleri güvenli denetim girdileri özelliğini bir SharePoint Proje öğesinin veya güvende olarak işaretleyebilirsiniz **paket Tasarımcısı** eklediğinizde bir derleme paketi. Daha fazla bilgi için bkz.
@@ -27,7 +27,7 @@ ms.locfileid: "60082041"
 - [Web.config dosyasının ayarlarını değiştir](http://go.microsoft.com/fwlink/?LinkId=178965) ve [güvenli denetim olarak bir Web Bölümü derlemeyi Kaydettirdikten](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Bu yordamlar yalnızca tanım amaçlıdır. Yalnızca güvenli olduğundan eminseniz güvenli işareti denetler.
+> Bu yordamlar yalnızca tanım amaçlıdır. Yalnızca güvenli olduğundan eminseniz güvenli işareti denetler.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Güvenli denetimler güvenli denetim girdileri özelliğinde işaretleme
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082041"
     |Betiğe karşı güvenli|Bırakın **karşı güvenli betik** onay kutusunun işaretini kaldırın.|
 
     > [!NOTE]
-    >  **Derleme adı** aracılığıyla eklenen derlemeler için değer **Gelişmiş** sekmesinde **paket Tasarımcısı** edilemez bir belirteç olması, bu kesin adlandırılmış bütünleştirilmiş kod olmalıdır. Daha fazla bilgi için [bkz](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > **Derleme adı** aracılığıyla eklenen derlemeler için değer **Gelişmiş** sekmesinde **paket Tasarımcısı** edilemez bir belirteç olması, bu kesin adlandırılmış bütünleştirilmiş kod olmalıdır. Daha fazla bilgi için [bkz](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Seçin **sekmesini** başka bir güvenli denetim girişi oluşturmak için anahtar.
 

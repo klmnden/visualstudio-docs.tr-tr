@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438952"
 ---
 # <a name="options-and-options-pages"></a>Seçenekler ve Seçenekler Sayfaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Tıklayarak **seçenekleri** üzerinde **Araçları** menüsü açılır **seçe
 - <xref:System.ComponentModel.DescriptionAttribute> seçenek tanımı belirler.  
   
   > [!NOTE]
-  >  Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [yönetilen proje örnek](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Eşdeğer öznitelikleri, SRCategory LocDisplayName ve SRDescription, yerelleştirme için dize kaynaklarını kullanın ve tanımlanan [yönetilen proje örnek](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Aşağıdaki kod parçasını göz önünde bulundurun:  
   
@@ -86,4 +86,4 @@ Tıklayarak **seçenekleri** üzerinde **Araçları** menüsü açılır **seçe
  Otomasyon özelliği, kayıt defteri yolu birleştirerek belirlenir <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, word, AutomationProperties ve seçenekleri sayfasında kategori ve adı. Örneğin, Seçenekler sayfasında My kategorisi kategori, kılavuz sayfam adı varsa ve <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp ve Otomasyon özelliği HKEY_LOCAL_MACHINE\SOFTWARE\ kayıt defteri anahtarı var Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My kılavuz sayfası.  
   
 > [!NOTE]
->  Kurallı ad, My Category.My kılavuz sayfası, bu anahtarın adı alt değeridir.
+> Kurallı ad, My Category.My kılavuz sayfası, bu anahtarın adı alt değeridir.

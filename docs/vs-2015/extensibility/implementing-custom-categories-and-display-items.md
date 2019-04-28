@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414602"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Uygulama özel kategoriler ve öğeleri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
   - Her üye için bilgi görüntüler **kategori**.  
   
   > [!NOTE]
-  >  Her **kategori** en az bir içeren **görüntü öğesi**.  
+  > Her **kategori** en az bir içeren **görüntü öğesi**.  
   
 - IDE kullanır `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` çeşitli kategorileri birleşimini tanımlamak için arabirim.  
   
@@ -122,7 +122,7 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
      Bu sistem uygulanan yapılabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi. Öncelikle desteği için Kalıcılık, ancak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> yöntemi, yazı tipi ve renk bilgilerini almak için kullanılabilir **görüntü öğeleri**. Daha fazla bilgi için [erişme depolanan yazı tipi ve renk ayarlarını](../extensibility/accessing-stored-font-and-color-settings.md).  
   
     > [!NOTE]
-    >  Emin olmak için yoklama işlemi tarafından elde edilen sonuçları doğru olduğundan, kullanmak yararlı olabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
+    > Emin olmak için yoklama işlemi tarafından elde edilen sonuçları doğru olduğundan, kullanmak yararlı olabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> önbellek temizleme ve güncelleştirme alma yöntemleri çağrılmadan önce gerekli olup olmadığını belirlemek için arabirimi <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   

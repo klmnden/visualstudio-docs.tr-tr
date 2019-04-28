@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c36922b3ce5dfa729099010dd7cdec3d92c40c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403036"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşılaşabileceğiniz sorunları çözmenize yardımcı olacak bilgiler içerir.
@@ -70,7 +70,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
  ![Android&#95;AB&#95;yükleme&#95;sorunu](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Bu ileti, hem Visual Studio öykünücüsü Android ve Windows Phone öykünücüsü için geçerlidir. Öykünücü, Windows 8.1 ve Windows 10'u destekler.
+> Bu ileti, hem Visual Studio öykünücüsü Android ve Windows Phone öykünücüsü için geçerlidir. Öykünücü, Windows 8.1 ve Windows 10'u destekler.
 
  Bu iletiyi görürseniz denetleyin [Android için Visual Studio öykünücüsü sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) öykünücüyü çalıştırmak olup olmadığını görmek için.
 

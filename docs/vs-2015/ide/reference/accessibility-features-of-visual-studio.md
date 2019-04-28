@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa41d340aff0c56975d2af66031b5d0d2343a0ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441137"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun Erişilebilirlik Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aş
 - Yöntem ve parametreler için otomatik tamamlama
 
 > [!IMPORTANT]
->  Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerlidir. Bu ürünü birleşik Devletler'in dışında alınan yazılım paketinizle birlikte gelen yan kuruluşu olan bilgi kartını kullanabilirsiniz ya da ziyaret edebilirsiniz [bize sayfa for Microsoft Support](http://support.microsoft.com/ContactUs) tıklatıp  **Microsoft ofisleri dünya çapındaki bulmak** bağlantısını (sayfanın altına). Bu sayfa telefon numaralarının listesini sağlar ve adresleri Microsoft Destek Hizmetleri. Olup, bu bölümde açıklanan ürün ve hizmetlerin türlerini Bölgenizde kullanılabilir olduğunu öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
+> Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerlidir. Bu ürünü birleşik Devletler'in dışında alınan yazılım paketinizle birlikte gelen yan kuruluşu olan bilgi kartını kullanabilirsiniz ya da ziyaret edebilirsiniz [bize sayfa for Microsoft Support](http://support.microsoft.com/ContactUs) tıklatıp  **Microsoft ofisleri dünya çapındaki bulmak** bağlantısını (sayfanın altına). Bu sayfa telefon numaralarının listesini sağlar ve adresleri Microsoft Destek Hizmetleri. Olup, bu bölümde açıklanan ürün ve hizmetlerin türlerini Bölgenizde kullanılabilir olduğunu öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
 
  Daha fazla bilgi için aşağıdaki konulara bakın:
 

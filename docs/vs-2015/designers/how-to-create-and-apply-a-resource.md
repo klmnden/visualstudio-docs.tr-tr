@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434466"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adl�
    - Bir stil veya denetim şablon kaynağı, bir denetim için geçerlidir. Açık Belge Anahattı penceresi denetiminde için bağlam menüsünü seçin **şablonu Düzen** veya **Düzenle ek şablonlar**, seçin **kaynağı Uygula**seçin Görüntülenen listeden denetim şablonunun adı.  
   
      > [!NOTE]
-     >  **Şablonu Düzen** denetim şablonları uygulamak için kullanılır. **Ek şablonlar Düzenle** diğer şablon türlerini uygulamak için kullanılır.  
+     > **Şablonu Düzen** denetim şablonları uygulamak için kullanılır. **Ek şablonlar Düzenle** diğer şablon türlerini uygulamak için kullanılır.  
   
      Uyumlu oldukları yerde kaynakları uygulanabilir. Örneğin, bir fırça kaynağı için uygulanabilir **ön plan** özelliği bir <xref:Windows.UI.Xaml.Controls.TextBox> denetimi.  
   

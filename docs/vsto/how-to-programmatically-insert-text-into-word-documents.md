@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412581"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme
   Microsoft Office Word belgelerine metin eklemek için başlıca üç yolu vardır:
@@ -33,7 +33,7 @@ ms.locfileid: "60060639"
 - Kullanım <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> yöntemi bir <xref:Microsoft.Office.Interop.Word.Selection> imlecin veya seçimin metin eklemek için nesne.
 
 > [!NOTE]
->  Ayrıca, içerik denetimleri ve yer işaretlerine metin ekleyebilirsiniz. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md) ve [yer işareti denetimi](../vsto/bookmark-control.md).
+> Ayrıca, içerik denetimleri ve yer işaretlerine metin ekleyebilirsiniz. Daha fazla bilgi için [içerik denetimleri](../vsto/content-controls.md) ve [yer işareti denetimi](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

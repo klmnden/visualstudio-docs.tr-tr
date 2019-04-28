@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415568"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Dil hizmeti ve düzenleyici uzantılarıyla çalışmaya başlama
 Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ayraç eşleştirme, IntelliSense ve ampuller gibi dil hizmeti özellikleri eklemek için düzenleyici Uzantıları'nı kullanabilirsiniz. Ayrıca, Visual Studio Düzenleyicisi, Örneğin Renklendirme, kenar boşlukları, kenarlıklar ve diğer görsel öğelere metin davranışını ve görünümünü özelleştirebilirsiniz. Ayrıca, kendi içerik türünü tanımlayın ve görünümünü ve davranışını içeriğinizi göründüğü metin görünümlerinin belirtin.
@@ -23,7 +23,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Düzenleyici uzantıları yazmaya başlamak için Visual Studio SDK'ın bir parçası olarak yüklenen Düzenleyici proje şablonlarını kullanın. Visual Studio SDK VSPackage'ları kullanarak ya da Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak Visual Studio uzantıları, geliştirme kolaylaştıran Araçlar indirilebilir bir kümesidir.
 
 > [!NOTE]
->  Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Visual Studio SDK'sı hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Kendi Düzenleyici uzantıları yazmadan önce aşağıdaki kavramları ve teknolojileri hakkında bilgi öneririz.
 
@@ -34,7 +34,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Visual Studio Düzenleyicisi, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri ve uzantıları yönetmek için kullanır. MEF, ayrıca geliştiricilerin daha fazla uzantıları Visual Studio gibi bir ana bilgisayar uygulaması için kolayca oluşturmanıza olanak tanır. Bu çerçeve, MEF sözleşmesi göre bir uzantı tanımlayın ve MEF Bileşeni parçası olarak dışarı aktarın. Ana bilgisayar uygulaması bileşen parçalarına bunları bulma, bunları kaydetme ve doğru bağlamına uygulanan sağlamaktan yönetir.
 
 > [!NOTE]
->  MEF Düzenleyicisi'nde hakkında daha fazla bilgi için bkz: [düzenleyicide Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> MEF Düzenleyicisi'nde hakkında daha fazla bilgi için bkz: [düzenleyicide Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio Düzenleyici uzantı noktaları ve uzantıları
  Düzenleyici uzantı noktaları, özelleştirme ve genişletme MEF Bileşeni bölümleri şunlardır. Bazı durumlarda bir arabirim uygulama ve doğru meta verilerle birlikte dışarı uzantı noktası genişletin. Diğer durumlarda, yalnızca bir uzantı bildirme ve belirli bir tür olarak verme.
@@ -59,7 +59,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Uzantı bir bilgisayara yüklediğinizde, ikili dosyaları ve bildirim Visual Studio için bilinen bir klasörün bir alt klasör içerir.
 
 > [!WARNING]
->  Visual Studio'daki Düzenleyici genişletilebilirlik şablonlardan birini kullanırsanız, bildirimleri ve dağıtım konumuyla ilgili ayrıntıları endişelenmeniz gerekmez. Şablonları kaydolun ve bir uzantısını dağıtmak için gereken her şeyi içerir.
+> Visual Studio'daki Düzenleyici genişletilebilirlik şablonlardan birini kullanırsanız, bildirimleri ve dağıtım konumuyla ilgili ayrıntıları endişelenmeniz gerekmez. Şablonları kaydolun ve bir uzantısını dağıtmak için gereken her şeyi içerir.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Deneysel örneğinde uzantıların çalıştırma
  Aşağıdaki Deneysel klasöründe (Windows Vista ve Windows 7) dağıtarak bir uzantı geliştirirken çalışma sürümünüz, Visual Studio'nun verenlerden:

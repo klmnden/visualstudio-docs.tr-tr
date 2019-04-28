@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435962"
 ---
 # <a name="how-to-implement-error-markers"></a>Nasıl yapılır: Uygulama hata işaretçileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için met
 1. Filtre uygulanan bir görünümde, filtre bu görünümün verilerle ilişkili görev sağlayıcı için bir işaretçi alır.  
   
     > [!NOTE]
-    >  Aynı komut filtre yöntemi ipuçları, deyim tamamlama, hata işaretçileri ve benzeri için kullanabilirsiniz.  
+    > Aynı komut filtre yöntemi ipuçları, deyim tamamlama, hata işaretçileri ve benzeri için kullanabilirsiniz.  
   
 2. Filtrenin başka bir satıra taşınır gösteren bir olay aldığında, hataları denetlemek için bir görev oluşturulur.  
   
@@ -59,4 +59,4 @@ Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için met
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
  [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)

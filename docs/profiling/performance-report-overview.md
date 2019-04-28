@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c57b16ff9b866ffe36f89ed14b5353fd611a45b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432016"
 ---
 # <a name="performance-report-overview"></a>Performans raporuna genel bakış
 Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **performans raporu** penceresi Visual Studio Team System geliştirme sürümü tümleşik geliştirme ortamının (IDE). Profil oluşturma verilerinin .vsp .vsps dosyalarında kaydedilir. Rapor görünümü windows görüntüleme ve uygulama performans sorunlarını analiz etmenize olanak sağlar.
 
 > [!CAUTION]
->  Bir profil oluşturma veri dosyasını, bilgisayar adı gibi hassas bilgileri, işletim sistemi, dosya yolları, bellek bilgileri ve diğer bilgisayar kurulum bilgilerini sürümünü içerir. Verilerin hem de kendi yerel dağıtım üzerinde kesin denetim korumanız gerekir. *vsp* biçimi ve için dışarı aktarılmasından sonra bir. *CSV* veya. *XML* dosya.
+> Bir profil oluşturma veri dosyasını, bilgisayar adı gibi hassas bilgileri, işletim sistemi, dosya yolları, bellek bilgileri ve diğer bilgisayar kurulum bilgilerini sürümünü içerir. Verilerin hem de kendi yerel dağıtım üzerinde kesin denetim korumanız gerekir. *vsp* biçimi ve için dışarı aktarılmasından sonra bir. *CSV* veya. *XML* dosya.
 >
->  Olay izleme verileri performans oturumu bir parçası olarak toplanır, ek bilgiler olay izleme günlüğü görünebilir (. *etl*) dosyası. Bu bilgiler, etki alanı ve kullanıcı adınızı içerir; Bu nedenle, günlük dosyasının dağıtım üzerinde kesin denetim korumanız gerekir.
+> Olay izleme verileri performans oturumu bir parçası olarak toplanır, ek bilgiler olay izleme günlüğü görünebilir (. *etl*) dosyası. Bu bilgiler, etki alanı ve kullanıcı adınızı içerir; Bu nedenle, günlük dosyasının dağıtım üzerinde kesin denetim korumanız gerekir.
 
 ## <a name="performance-report-window"></a>Performans Rapor penceresi
  Performans raporu görüntüleyin, yönetin ve performans verilerini filtrelemek için kullanılan bir araç penceresidir ve özelleştirilebilir sorgu denetimi içerir.

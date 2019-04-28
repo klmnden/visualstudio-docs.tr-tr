@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408400"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Arama İfadelerindeki Gelişmiş Arama İşleçleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54775580"
 Gelişmiş arama işleçleri kullanarak aramanızı içerik için daha basit olanlardan daha karmaşık arama ifadeler oluşturarak iyileştirebilirsiniz. Aşağıdaki tabloda gösterildiği gibi bu işleçler, bir sorgu çalıştığı bağlam kısıtlayın.  
   
 > [!WARNING]
->  Son iki nokta üst üste ve arama motoru için iki noktadan önce boşluk olmaması Gelişmiş arama işleçleri tanıması için girmeniz gerekir.  
+> Son iki nokta üst üste ve arama motoru için iki noktadan önce boşluk olmaması Gelişmiş arama işleçleri tanıması için girmeniz gerekir.  
   
 |Aramak için|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|Örnek|Sonuç|  
 |-------------------|---------|-------------|------------|  
-|Bir konu başlığının terimi|Başlık:|title:binaryreader|Kendi başlıklarında "binaryreader" içeren konulardır.|  
+|Bir konu başlığının terimi|başlık:|title:binaryreader|Kendi başlıklarında "binaryreader" içeren konulardır.|  
 |Bir kod örneği bir terimi|Kod:|Kod: readdouble|Bir kod örneğinde "readdouble" içeren konulardır.|  
 |Bir terimi belirli bir programlama dili örneği|Kod: vb:|code:vb:string|Visual Basic örneği "dize" içeren konulardır.|  
 |Belirli bir dizin anahtar sözcüğüyle ilişkili konu|Anahtar:|keyword:readbyte|"Readbyte" dizin anahtar sözcüğü ile ilgili konular.|  
@@ -43,7 +43,7 @@ Gelişmiş arama işleçleri kullanarak aramanızı içerik için daha basit ola
 |Programlama dili|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |--------------------------|---------|  
 |Visual Basic|Kod: vb<br /><br /> veya<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> veya<br /><br /> code:csharp|  
+|C#|code:c#<br /><br /> veya<br /><br /> code:csharp|  
 |C++|Kod: cpp<br /><br /> veya<br /><br /> Kod: c ++<br /><br /> veya<br /><br /> code:cplusplus|  
 |F#|Kod: f #<br /><br /> veya<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> veya<br /><br /> Kod: js|  

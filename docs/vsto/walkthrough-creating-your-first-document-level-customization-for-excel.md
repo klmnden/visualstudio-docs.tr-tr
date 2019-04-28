@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438520"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Excel için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir çalışma kitabı açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir çalışma kitabını açtığınızda yeni bir Şerit sekmesi görüntüleme gibi.
@@ -106,7 +106,7 @@ ms.locfileid: "60104505"
      **Bu metin, tasarımcıyı kullanarak eklendi.**
 
 > [!WARNING]
->  Bu metin satırı hücrenin eklerseniz **A2**, bu örnekte başka bir kod tarafından üzerine yazılır.
+> Bu metin satırı hücrenin eklerseniz **A2**, bu örnekte başka bir kod tarafından üzerine yazılır.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Bir çalışma sayfasına program aracılığıyla metin ekleme
  Ardından, kod Sayfa1 kod dosyasına ekleyin. Yeni kod, çalışma kitabına metin ikinci satırı eklemek için Excel nesne modeli kullanır. Varsayılan olarak, aşağıdaki oluşturulan kodun Sheet1 kod dosyasını içerir:

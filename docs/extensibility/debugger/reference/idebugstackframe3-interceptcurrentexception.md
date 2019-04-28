@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412672"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Geçerli yığın çerçevesinde hata ayıklayıcı tarafından müdahale geçerli özel durumun istediğinde çağrılır.
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  Hata ayıklayıcı özel durum kesildi bilmek istediğinde, geçerli yığın çerçevesi nesne üzerinde bu yöntemi çağırır. Bu yöntem, özel durumun tüm ayrıntıları işlenmesinden sorumludur. Varsa [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) arabirimi uygulanmadı veya `InterceptStackException` yöntemi herhangi bir hata döndürür ve hata ayıklayıcı özel durum normal işleme devam eder.
 
 > [!NOTE]
->  Ayıklanan programın çalışma zamanı .NET altında çalışırken özel durum diğer bir deyişle, yalnızca yönetilen kodda geçirilebilir. Elbette, üçüncü taraf dil uygulayıcılar uygulayabilirsiniz `InterceptStackException` , bu nedenle seçerseniz, kendi hata ayıklama altyapısı.
+> Ayıklanan programın çalışma zamanı .NET altında çalışırken özel durum diğer bir deyişle, yalnızca yönetilen kodda geçirilebilir. Elbette, üçüncü taraf dil uygulayıcılar uygulayabilirsiniz `InterceptStackException` , bu nedenle seçerseniz, kendi hata ayıklama altyapısı.
 
  Durdurma işlemi tamamlandıktan sonra bir [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) işareti verilen.
 

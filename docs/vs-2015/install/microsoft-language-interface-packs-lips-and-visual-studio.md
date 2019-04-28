@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433004"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Dil Arabirim Paketleri (LIP'ler) ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir Windows Dil Arabirim Paketi (LIP) kullanarak Windows dil sürümünü yükle
  Visual Studio birleşik dil paketi kullanır. Bu ürünler birden fazla dil sürümünü yüklemek için tam dil ürününü yükleyin ve ardından bir veya daha fazla dil paketlerini yükleyin.
 
 > [!NOTE]
->  Visual Studio tam dil ürün birden çok dil sürümünü aynı bilgisayara yükleme desteklemiyor. Bir tam dil ürünü yükledikten sonra dil paketlerini kullanarak dil sürümleri eklemeniz gerekir. Bu gibi durumlarda, Express sürümleri birden çok ürünlerin tam dil yine de aynı bilgisayara yükleyebilirsiniz.
+> Visual Studio tam dil ürün birden çok dil sürümünü aynı bilgisayara yükleme desteklemiyor. Bir tam dil ürünü yükledikten sonra dil paketlerini kullanarak dil sürümleri eklemeniz gerekir. Bu gibi durumlarda, Express sürümleri birden çok ürünlerin tam dil yine de aynı bilgisayara yükleyebilirsiniz.
 
 ### <a name="support-for-code-pages"></a>Kod sayfaları için destek
  Bazı Visual Studio Araçları metin geçerli kod sayfasında karakter içerdiğinde metin düzgün görüntülemez. Bunun yerine, soru işareti görünür veya metin bozuk olabilir. Aşağıdaki araçlar veya alanlar etkilenir:
@@ -76,7 +76,7 @@ Bir Windows Dil Arabirim Paketi (LIP) kullanarak Windows dil sürümünü yükle
 1. Tıklayın **Başlat**, tıklayın **Denetim Masası**ve ardından açın **bölge ve Dil Seçenekleri** (veya **bölge** içinde [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Bu adımları izlemek için bilgisayarda yönetici olması gerekir.
+    > Bu adımları izlemek için bilgisayarda yönetici olması gerekir.
 
 2. Tıklayın **Gelişmiş** sekmesi.
 
@@ -88,7 +88,7 @@ Bir Windows Dil Arabirim Paketi (LIP) kullanarak Windows dil sürümünü yükle
  Birden çok dil sürümünü yüklediğinizde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aynı bilgisayarda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI varsayılanları **Microsoft Windows ile aynı**. Bu ayar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI metni, işletim sistemi için görüntüleme dili olarak belirttiğiniz dilde görüntülenir.
 
 > [!NOTE]
->  Visual Studio kullanmak üzere ayarlanmışsa **Microsoft Windows ile aynı**ve eşleşen Visual Studio dil paketi yüklü değil, Visual Studio, ilk Visual Studio yüklemesinin kullanacaktır.
+> Visual Studio kullanmak üzere ayarlanmışsa **Microsoft Windows ile aynı**ve eşleşen Visual Studio dil paketi yüklü değil, Visual Studio, ilk Visual Studio yüklemesinin kullanacaktır.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Visual Studio UI metinde kullanılan dili ayarlamak için
 

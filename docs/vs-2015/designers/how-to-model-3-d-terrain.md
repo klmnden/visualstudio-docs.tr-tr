@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434450"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Nasıl yapılır: Model 3B Arazi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Bu belge, 3B Arazi modeli oluşturmak için Model Düzenleyicisi nasıl yapılac
 2. Düzlem sahneye ekleyin. İçinde **araç kutusu**altında **şekiller**seçin **düzlemi** ve tasarım yüzeyine taşıyın.  
   
    > [!TIP]
-   >  Düzlem nesne çalışmak kolaylaştırmak için tasarım yüzeyini çerçevesi. İçinde **seçin** modu düzlemi nesneyi seçin ve ardından Model Düzenleyicisi araç çubuğunda **çerçeve nesnesi** düğmesi.  
+   > Düzlem nesne çalışmak kolaylaştırmak için tasarım yüzeyini çerçevesi. İçinde **seçin** modu düzlemi nesneyi seçin ve ardından Model Düzenleyicisi araç çubuğunda **çerçeve nesnesi** düğmesi.  
   
 3. Yüz seçim moduyla girin. Model Düzenleyicisi araç çubuğunda **seçin yüz**.  
   
@@ -62,7 +62,7 @@ Bu belge, 3B Arazi modeli oluşturmak için Model Düzenleyicisi nasıl yapılac
 7. Arazi özelliği oluşturmak için bir noktayı değiştirin. Nokta seçim moduyla noktalarından birini seçin ve ardından Model Düzenleyicisi araç çubuğunda **çevir** aracı. Bir noktayı temsil eden bir kutu tasarım yüzeyinde görünür. Yeşil ok kutusuna gidin ve böylece noktası yüksekliğini değiştirmek için kullanın. İlginç Arazi özellikleri oluşturmak farklı noktaları için bu adımı yineleyin.  
   
    > [!TIP]
-   >  Tek seferde bir tutum değiştirmek üzere birkaç noktası seçebilirsiniz.  
+   > Tek seferde bir tutum değiştirmek üzere birkaç noktası seçebilirsiniz.  
   
    Arazi modeli tamamlanmıştır. İşte son modelin yeniden uygulanan Phong gölgelendirme ile:  
   

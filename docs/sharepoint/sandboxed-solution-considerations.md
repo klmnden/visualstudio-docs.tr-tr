@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435444"
 ---
 # <a name="sandboxed-solution-considerations"></a>Korumalı çözümle ilgili konular
   *Korumalı çözümler* kendi özel kod çözümlerini karşıya yüklemek site koleksiyonu kullanıcıları sağlayan Microsoft SharePoint 2010'daki bir özelliktir. Genel korumalı bir çözüm, kendi Web Bölümleri yükleme kullanıcı sayısıdır.
@@ -34,7 +34,7 @@ ms.locfileid: "56621701"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] bir Boolean projesi özelliği aracılığıyla korumalı alana alınan çözümler adlı destekler *Korumalı çözüm*. Bu özelliği, projedeki herhangi bir zamanda ayarlanabilir veya projeyi oluşturduğunuzda belirtilebilir **SharePoint Özelleştirme Sihirbazı**.
 
 > [!NOTE]
->  Değiştirme *Korumalı çözüm* oluşturulduktan sonra bir projenin özellik doğrulama hatalarına neden olabilir.
+> Değiştirme *Korumalı çözüm* oluşturulduktan sonra bir projenin özellik doğrulama hatalarına neden olabilir.
 
  Çözüm Grup kapsamlı bir çözüm kabul edildiği *Korumalı çözüm* özelliği **false** veya seçtiğiniz **Grup çözümü olarak Dağıt** seçeneği. Ancak, çözümü farklı bir grup çözümünden anlamına gelir *Korumalı çözüm* özelliği **true** veya seçtiğiniz **bir korumalı çözüm olarak Dağıt** Sihirbazı'nda seçeneği.
 

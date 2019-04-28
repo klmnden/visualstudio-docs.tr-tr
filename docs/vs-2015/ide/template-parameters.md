@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419630"
 ---
 # <a name="template-parameters"></a>Şablon Parametreleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60077348"
  Aşağıdaki tabloda, herhangi bir şablon kullanılabilecek ayırtılmış şablon parametreleri listeler.  
   
 > [!NOTE]
->  Şablon parametreleri büyük/küçük harfe duyarlıdır.  
+> Şablon parametreleri büyük/küçük harfe duyarlıdır.  
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  

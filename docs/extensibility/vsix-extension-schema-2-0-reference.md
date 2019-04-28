@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411134"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 başvurusu
 VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler eklemek bu şema 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Yükleyici bildirimi XML öğeleri ve onu anlamıyor öznitelikleri yok sayar.
 
 > [!IMPORTANT]
->  Visual Studio 2015, Visual Studio 2010, Visual Studio 2012 veya Visual Studio 2013 biçimlerde VSIX dosyalarını yükleyebilir.
+> Visual Studio 2015, Visual Studio 2010, Visual Studio 2012 veya Visual Studio 2013 biçimlerde VSIX dosyalarını yükleyebilir.
 
 ## <a name="package-manifest-schema"></a>Paket bildirim şeması
  Bildirim XML dosyasının kök öğe `<PackageManifest>`. Tek bir öznitelikle `Version`, bildirim biçimi sürümünü olduğu. Biçimine büyük değişiklikler yaptıysanız, sürüm biçimi değiştirilir. Bu makalede bildirim biçimi sürüm 2.0, ayarlayarak bildiriminde belirtilen `Version` öznitelik değeri olarak sürüm = "2.0".

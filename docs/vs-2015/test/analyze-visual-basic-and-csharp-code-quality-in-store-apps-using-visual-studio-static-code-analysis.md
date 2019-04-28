@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442853"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 
@@ -27,7 +27,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Visual Studio Express'te kod analizi aracı, kodunuz için bir dizi yaygın hataları ve programlama iyi yöntem ihlallerini inceler. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için kod analizi aracı arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir. Kod Analizi, kodunuzda test sürecinde bulmak zor olan hataları da bulabilirsiniz. Kod çözümleme aracı, geliştirme sürecinde düzenli aralıklarla çalışan tamamlanmış uygulamanızın kalitesini artırabilirsiniz.
 
 > [!NOTE]
->  Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod analizi tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
+> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod analizi tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
 
 ## <a name="in-this-topic"></a>Bu konuda
  Hakkında bilgi edinebilirsiniz:
@@ -69,7 +69,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Sorunu anladıktan sonra kodunuzu çözebilirsiniz. Ardından uyarı artık Kod Analizi penceresi açılır ve düzeltmenizi henüz yeni uyarılar ortaya emin olmak için kod analizini yeniden çalıştırın.
 
 > [!TIP]
->  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Tıklayın **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.
+> Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Tıklayın **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.
 
 ## <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
  Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.

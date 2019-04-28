@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422533"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Denetim akışını UML sıralı diyagramlarında parçalarla açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
  Bir veya daha fazla birleştirilmiş parça oluşur *etkileşim işlenenleri*, ve bunların her biri bir veya daha fazla iletiler, etkileşim kullanımları veya birleştirilmiş parçaları barındırır.  
   
 > [!NOTE]
->  Bu konu, sıralı diyagramlar parçalarında hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Bu konu, sıralı diyagramlar parçalarında hakkındadır. UML sıralı diyagramlar okuma hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Başvuru](../modeling/uml-sequence-diagrams-reference.md). UML sıralı diyagramlar çizin hakkında daha fazla bilgi için bkz. [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Birleşik iki Etkileşim İşleneniyle parça](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
 3. İçinde tıklayarak her etkileşim işlenen ayrı ayrı seçebilirsiniz. Alt sınır görülebilir böylece bu örnekte, üst etkileşim işlenen seçilir. Genellikle, yalnızca arasındaki çizgi etkileşim işlenenleri görülebilir.  
   
     > [!NOTE]
-    >  Üst etkileşim işlenen seçmek için çok yakın birleştirilmiş parça üst kısmına tıklamanız gerekir değil.  
+    > Üst etkileşim işlenen seçmek için çok yakın birleştirilmiş parça üst kısmına tıklamanız gerekir değil.  
   
 4. Cf. Bir koruma her etkileşim işlenen verebilirsiniz. Bu, altında etkileşim işleneni içinde iletileri gerçekleştirilecek koşul açıklar.  
   
@@ -57,7 +57,7 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
 1. Bir iletiyi veya iletileri tümü aynı yaşam çizgisinin veya yürütme oluşması başlatmak, bir dizi seçin.  
   
    > [!NOTE]
-   >  Birden fazla ileti seçerseniz, kesintisiz bir dizi oluşturması gerekir.  
+   > Birden fazla ileti seçerseniz, kesintisiz bir dizi oluşturması gerekir.  
   
 2. İletileri birine sağ tıklayın, fareyle **Surround With**ve gibi istediğiniz birleştirilmiş parça türü ardından **Alt birleştirilmiş parça**.  
   
@@ -100,7 +100,7 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
 - Birleştirilmiş parça başlığında sağ tıklayın ve ardından **özellikleri**.  
   
     > [!NOTE]
-    >  Birleştirilmiş parça farklı türlerde farklı özelliklere sahiptir.  
+    > Birleştirilmiş parça farklı türlerde farklı özelliklere sahiptir.  
   
 ## <a name="KindsOfFragment"></a> Birleştirilmiş parça türü  
   

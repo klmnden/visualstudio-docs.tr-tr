@@ -13,12 +13,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 585208150047b32adfdac916146268751a2a1287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441236"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Söz dizimi renklendirme, farklı bir kaynak dosyada farklı renkler ve stil gö
  Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Daha fazla bilgi için bkz. [düzenleyiciyi ve dil hizmetlerini genişletme](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
+> Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
   
 ## <a name="implementation"></a>Uygulama  
  Renklendirme desteklemek için yönetilen paket çerçevesini (MPF) içeren <xref:Microsoft.VisualStudio.Package.Colorizer> sınıfını <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimi. Bu sınıf ile etkileşime giren bir <xref:Microsoft.VisualStudio.Package.IScanner> renkleri ve belirteç belirlemek için. Tarayıcılar hakkında daha fazla bilgi için bkz. [eski dil hizmeti ayrıştırıcısı ve tarayıcısı](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Sınıfı sonra her karakteri renk bilgilerini belirteciyle işaretler ve kaynak dosyasını görüntülemeden Düzenleyicisi için bu bilgileri döndürür.  
@@ -39,10 +39,10 @@ Söz dizimi renklendirme, farklı bir kaynak dosyada farklı renkler ve stil gö
  Kendi özel renklendirilebilir öğeler sağlamak için geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> ve <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodunda <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı. İlk yöntem, dil hizmeti destekleyen özel renklendirilebilir öğeler verir ve ikinci özel renklendirilebilir öğesi dizine göre alır. Size özel renklendirilebilir öğeler varsayılan liste oluşturur. Oluşturucu, dil hizmetinin tek yapmanız gereken olan tedarik renklendirilebilir her öğe bir ada sahip. Visual Studio, kullanıcının renklendirilebilir öğeleri farklı bir dizi seçebileceği durumu otomatik olarak işler. Bu ad görünür ne olduğunu **yazı tipleri ve renkler** özellik sayfasında **seçenekleri** iletişim kutusu (Visual Studio'dan kullanılabilir **Araçları** menüsü) ve bu ad belirler bir kullanıcı geçersiz kılınmış rengi. Kullanıcının seçenekleri kayıt defteri önbellekte depolanır ve renk adı tarafından erişilebilir. **Yazı tipleri ve renkler** özellik sayfası listeler, tüm alfabetik sırayla rengi adları, her renk adı; dil adınızla koyarak, özel renkler gruplayabilirsiniz, böylece Örneğin, "**TestLanguage - açıklama**"ve"**TestLanguage - anahtar sözcüğü**". Veya, renklendirilebilir öğeleri türüne göre gruplandırabilirsiniz "**yorum (TestLanguage)**"ve"**anahtar sözcüğü (TestLanguage)**". Dil adı gruplandırarak tercih edilir.  
   
 > [!CAUTION]
->  Mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğe adı dil adı dahil önemle tavsiye edilir.  
+> Mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğe adı dil adı dahil önemle tavsiye edilir.  
   
 > [!NOTE]
->  Geliştirme sırasında renkleri birinin adını değiştirirseniz, Visual Studio renkleri erişildiğini ilk kez oluşturulan önbellek sıfırlamanız gerekir. Çalıştırarak bunu **Deneysel Hive sıfırlama** Visual Studio SDK program menüsünden komutu.  
+> Geliştirme sırasında renkleri birinin adını değiştirirseniz, Visual Studio renkleri erişildiğini ilk kez oluşturulan önbellek sıfırlamanız gerekir. Çalıştırarak bunu **Deneysel Hive sıfırlama** Visual Studio SDK program menüsünden komutu.  
   
  Listesindeki ilk öğe renklendirilebilir öğeleri hiçbir zaman başvurulan unutmayın. Visual Studio, her zaman varsayılan metin rengini ve bu öğenin öznitelikleri sağlar. İlk öğe olarak bir yer tutucu renklendirilebilir öğesi sağlamak için bu uğraşmanızı en kolay yolu olan.  
   

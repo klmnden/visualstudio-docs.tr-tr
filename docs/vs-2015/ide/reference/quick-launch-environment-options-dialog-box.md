@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416685"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Kullanabileceğiniz **hızlı başlatma** hızlıca arayıp seçenekleri, şablo
 |Belgeler|@doc<br /><br /> Örneğin, `@doc font`|Arama ölçütlerine dosya adlarını ve yollarını açık belgelerin arama sınırlanır ancak dosyaları içindeki metin arama yapmaz.|  
   
 > [!NOTE]
->  Kısayol tuşlarını değiştirebileceğiniz **genel**, **klavye** sayfasını **seçenekleri** iletişim kutusu.  
+> Kısayol tuşlarını değiştirebileceğiniz **genel**, **klavye** sayfasını **seçenekleri** iletişim kutusu.  
   
 ## <a name="show-previous-results"></a>Önceki sonuçları göster  
  Varsayılan olarak, girdiğiniz arama terimi arama oturumları arasında tutarlı olmaz. Arama dizesi, bir dönem için arama yaparsanız temizlenir dışında imleci taşıma **hızlı başlatma** alan ve ardından Git yedekleyin. Arama sonuçlarını tutmak için şuraya gidin: **seçenekleri** iletişim kutusunda **hızlı başlatma**ve ardından **hızlı başlatma etkinleştirildiğinde önceki aramaya ait Show arama sonuçları.** Onay kutusunu seçin. Bir arama yapın, hızlı başlat alanında bırakın ve geri gelen Hızlı Başlat son kullanılan arama terimi korumak ve ayrıca, arama sonuçlarını gösterir.  

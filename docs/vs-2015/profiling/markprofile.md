@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 105e81ed15a540a0c008eb94cb4af49caa099879
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434961"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  İşaretler ve açıklama işareti komutu veya API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı profil durumu olmalıdır.  
   
 > [!IMPORTANT]
->  MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.  
+> MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
  Microsoft.VisualStudio.Profiler.dll  

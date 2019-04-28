@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428295"
 ---
 # <a name="step-9-try-other-features"></a>9. Adım: Diğer Özellikleri Deneme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanl
 - Simgelerin ve renklerin yerine kendi tercih ettiklerinizi kullanın.  
   
     > [!TIP]
-    >  Etiketin bakmayın deneyin [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) özelliği.  
+    > Etiketin bakmayın deneyin [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) özelliği.  
   
 - Oyuncunun oyunu kazanmasının ne kadar sürdüğünü izleyen bir oyun zamanlayıcısı ekleyin.  
   
     > [!TIP]
-    >  Bunun için, TableLayoutPanel üzerindeki forma geçen süreyi gösterecek bir etiket ekleyebilir ve süreyi izlemek için de forma bir diğer zamanlayıcı ekleyebilirsiniz. Oyuncu oyuna başladığında zamanlayıcıyı başlatmak ve son iki simgeyi eşleştirdikten sonra zamanlayıcıyı durdurmak için kod kullanın.  
+    > Bunun için, TableLayoutPanel üzerindeki forma geçen süreyi gösterecek bir etiket ekleyebilir ve süreyi izlemek için de forma bir diğer zamanlayıcı ekleyebilirsiniz. Oyuncu oyuna başladığında zamanlayıcıyı başlatmak ve son iki simgeyi eşleştirdikten sonra zamanlayıcıyı durdurmak için kod kullanın.  
   
 - Oyuncu bir eşleşme bulduğunda çalacak bir ses, eşleşmeyen iki simgeyi açtığında çalacak başka bir ses ve program simgeleri yeniden gizlediğinde çalacak üçüncü bir ses ekleyin.  
   
     > [!TIP]
-    >  Sesleri çalmak için System.media ad alanını kullanabilirsiniz. Bkz: [Play Sounds in Windows Forms uygulaması (C# .NET)](http://youtu.be/qOh4ooHg1UU) veya [nasıl için Play Audio ın Visual Basic](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.  
+    > Sesleri çalmak için System.media ad alanını kullanabilirsiniz. Bkz: [Play Sounds in Windows Forms uygulaması (C# .NET)](http://youtu.be/qOh4ooHg1UU) veya [nasıl için Play Audio ın Visual Basic](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.  
   
 - Oyun tahtasını büyüterek oyunu zorlaştırın.  
   
     > [!TIP]
-    >  TableLayoutPanel denetimine satır ve sütunları eklemekten fazlasını yapmanız ve oluşturduğunuz simge sayısını da düşünmeniz gerekir.  
+    > TableLayoutPanel denetimine satır ve sütunları eklemekten fazlasını yapmanız ve oluşturduğunuz simge sayısını da düşünmeniz gerekir.  
   
 - Oyuncunun tepki verirken çok yavaş davranması ve belirli bir süre dolmadan önce ikinci simgeyi seçmemesi durumunda ilk simgeyi gizleyerek oyunu daha zorlu hale getirin.  
   

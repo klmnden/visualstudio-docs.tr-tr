@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440664"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
 3. Package.xml adlı paket bildirimi oluşturma, güncelleştirme dizeleri ve kültür ve dosyanın yeni klasöre yerleştirin. Visual Studio'nun bir önyükleyici hedef dilde zaten oluşturduysanız, Visual Studio package.xml dosyasını kopyalayıp, bu adımda değiştirebilirsiniz.  
   
 > [!NOTE]
->  Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.  
+> Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

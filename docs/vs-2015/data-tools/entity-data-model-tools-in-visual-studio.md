@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431933"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Varlık veri modeli Visual Studio Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework, .NET geliştiricilerinin etki alanına özel nesneler kullanar
 - Kullanabileceğiniz **güncelleştirme modeli Sihirbazı** temel alınan veritabanına değişiklikler yapıldığında, kavramsal model, depolama model ve eşleme güncelleştirilecek.
 
   > [!NOTE]
-  >  Visual Studio 2010 ile başlayarak [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları desteklemez [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > Visual Studio 2010 ile başlayarak [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları desteklemez [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   Araçlar oluşturmak veya bir .edmx dosyasını değiştirin. Bu dosya, bunları arasındaki eşlemeleri kavramsal model ve depolama modeli açıklayan bilgileri içerir. Daha fazla bilgi için [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 

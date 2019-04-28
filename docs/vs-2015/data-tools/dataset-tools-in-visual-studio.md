@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431135"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio'da veri kümesi araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
->  Veri kümeleri ve ilgili sınıflar, bellekteki verileri veritabanından uygulamaları değilken çalışmak uygulamaları etkinleştirme erken 2000'li yıllardan eski .NET teknolojiden var. Bunlar, kullanıcıların verileri değiştirme ve veritabanına değişiklikleri kalıcı hale getirmek uygulamalar için özellikle yararlıdır. Veri kümeleri çok başarılı bir teknoloji olacak şekilde kanıtlanmış olsa da, yeni .NET uygulamalarını Entity Framework kullanmanızı öneririz. Entity Framework tablosal verileri nesne modellerini olarak çalışmak için daha doğal bir yol sağlar ve daha basit bir programlama arabirimi vardır.
+> Veri kümeleri ve ilgili sınıflar, bellekteki verileri veritabanından uygulamaları değilken çalışmak uygulamaları etkinleştirme erken 2000'li yıllardan eski .NET teknolojiden var. Bunlar, kullanıcıların verileri değiştirme ve veritabanına değişiklikleri kalıcı hale getirmek uygulamalar için özellikle yararlıdır. Veri kümeleri çok başarılı bir teknoloji olacak şekilde kanıtlanmış olsa da, yeni .NET uygulamalarını Entity Framework kullanmanızı öneririz. Entity Framework tablosal verileri nesne modellerini olarak çalışmak için daha doğal bir yol sağlar ve daha basit bir programlama arabirimi vardır.
 
  Bir veri kümesi nesnesi temelde kısa bir veritabanı olan bir bellek içi nesnedir. Bu, depolayabilir ve açık bir bağlantı korumak zorunda kalmadan bir veya daha fazla veritabanlarındaki verileri değiştirme DataTable ve DataColumn DataRow nesnelerini içerir. Güncelleştirmeleri izlenen ve uygulamanızı bağlandığınızda olur veritabanına geri gönderilen veri kümesi, verilerde yapılan değişiklikleri ilgili bilgileri tutar.
 

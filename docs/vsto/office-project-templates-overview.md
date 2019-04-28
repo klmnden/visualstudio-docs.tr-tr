@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438770"
 ---
 # <a name="office-project-templates-overview"></a>Office proje şablonlarına genel bakış
   Visual Studio'da Microsoft Office geliştirici araçları, aşağıdaki Office çözüm türlerini oluşturmak için proje şablonları içerir:
@@ -77,7 +77,7 @@ ms.locfileid: "60054579"
   Word Şablonu ve Excel Şablonu proje şablonları, Word Belgesi ve Excel Çalışma Kitabı proje şablonlarıyla aynı şekilde davranır. Bununla birlikte, Word Şablonu ve Excel Şablonu proje şablonları, kullanıcıların çözümünüzdeki özelleştirilmiş şablonun yeni yerel belge veya çalışma kitabı kopyalarını oluşturmasını kolaylaştırır. Çözümünüzdeki özellikler, kullanıcının şablondan oluşturduğu yeni belgeden kullanılabilir.
 
 > [!NOTE]
->  Yönetilen kod uzantılarına başvuran Word şablonları genel VSTO eklentileri kullanılamaz. Şablon Word'ün Başlangıç dizininden yüklenirse, derleme çağrılmaz. Daha fazla bilgi için [genel şablonların ve Excel eklentilerinin (.xla dosyaları) sınırlamaları](#Limitations)
+> Yönetilen kod uzantılarına başvuran Word şablonları genel VSTO eklentileri kullanılamaz. Şablon Word'ün Başlangıç dizininden yüklenirse, derleme çağrılmaz. Daha fazla bilgi için [genel şablonların ve Excel eklentilerinin (.xla dosyaları) sınırlamaları](#Limitations)
 
  Bu proje türleriyle çalışmaya başlama hakkında bilgi için aşağıdaki konulara bakın:
 

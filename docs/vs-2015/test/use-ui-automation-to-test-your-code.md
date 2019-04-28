@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442900"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
     **Kaydı Duraklat için**, gelen e-posta ile uğraşmak zorunda kalırsanız örnek seçin için **duraklatmak**.
 
    > [!WARNING]
-   >  Masaüstü üzerinde gerçekleştirilen tüm eylemler kaydedilir. Hassas veriler kayda eklenmesini açabilir eylemleri gerçekleştiriyorsanız kaydı duraklatın.
+   > Masaüstü üzerinde gerçekleştirilen tüm eylemler kaydedilir. Hassas veriler kayda eklenmesini açabilir eylemleri gerçekleştiriyorsanız kaydı duraklatın.
 
     **Eylemleri silmek** yanlışlıkla kaydettiğiniz öğesini **düzenleme eylemleri**.
 
@@ -113,7 +113,7 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
     ![Öğesini hedefleyen kodlanmış UI testi](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Eylemlerini kaydederek ve değerlerini doğrulama arasında geçiş yapar. Her bir dizi eylem veya doğrulamaları sonunda kod oluşturur. İsterseniz, daha sonra yeni eylemler ve Doğrulamalar eklemeniz mümkün olacaktır.
+   > Eylemlerini kaydederek ve değerlerini doğrulama arasında geçiş yapar. Her bir dizi eylem veya doğrulamaları sonunda kod oluşturur. İsterseniz, daha sonra yeni eylemler ve Doğrulamalar eklemeniz mümkün olacaktır.
 
     Daha fazla ayrıntı için [denetimleri, doğrulama özellikleri](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
   UI denetimini seçmek için klavyeyi kullanmak için fareyi denetimin üzerine gelin. Ardından basılı **Ctrl** anahtarı ve **miyim** aynı zamanda anahtar. Anahtarları bırakın. Denetim kodlanmış UT Test Oluşturucusu tarafından kaydedilir.
 
 > [!WARNING]
->  Microsoft Lync kullanırsanız, kodlanmış UI Test Oluşturucusu başlamadan önce Lync kapatmanız gerekir. Microsoft Lync Engellemesi ile **Ctrl + ı** klavye kısayol.
+> Microsoft Lync kullanırsanız, kodlanmış UI Test Oluşturucusu başlamadan önce Lync kapatmanız gerekir. Microsoft Lync Engellemesi ile **Ctrl + ı** klavye kısayol.
 
  *Bir bir denetimi fareyle üzerine gelindiğinde kaydedemiyorum. Bu geçici bir yolu var mı?*
  **El ile kayıt fare geldiğinde**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Gerekirse, Ctrl + Shift + fare vurgulama olayları kodlanmış UI testleri uygulamak için kullanılan R varsayılan klavye atamasını farklı anahtarları kullanacak şekilde yapılandırılabilir.
 
 > [!WARNING]
->  Normal koşullar altında fare vurgulu olayları için klavye atamaları değiştirmek sahip olmamalıdır. Klavye atama elemanına dikkatli olun. Seçtiğiniz zaten Visual Studio veya test edilen uygulamanın başka bir yere kapsamında kullanımda olabilir.
+> Normal koşullar altında fare vurgulu olayları için klavye atamaları değiştirmek sahip olmamalıdır. Klavye atama elemanına dikkatli olun. Seçtiğiniz zaten Visual Studio veya test edilen uygulamanın başka bir yere kapsamında kullanımda olabilir.
 
  Klavye atamaları değiştirmek için aşağıdaki yapılandırma dosyasını değiştirmeniz gerekir:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Daha fazla test oluşturduğunuzda, yeniden oluşturulacak çünkü bu dosyayı düzenlemeniz değil.
+  > Daha fazla test oluşturduğunuzda, yeniden oluşturulacak çünkü bu dosyayı düzenlemeniz değil.
 
    Bu yöntemlerin uyarlanmış sürümleri için UIMap.cs kopyalayarak yapabilirsiniz. Örneğin, bir test yöntemi çağırabilir parametreli bir sürüm yapabilirsiniz:
 
@@ -487,7 +487,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [İzlenecek yol: Kodlanmış UI Testi Oluşturma, Düzenleme ve Sürdürme](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 - [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
 - [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)

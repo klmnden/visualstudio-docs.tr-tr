@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba760660a6dfaf97040a296a3ce7991b7ab4555
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5fa7521d569267d0ff070b54139fafe3befe0e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401943"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Modül ile derlenen olup olmadığını belirten bir bayrak alır [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](/cpp/build/reference/z7-zi-zi-debug-information-format) derleyici anahtarı.
@@ -39,7 +39,7 @@ HRESULT get_editAndContinueEnabled ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 

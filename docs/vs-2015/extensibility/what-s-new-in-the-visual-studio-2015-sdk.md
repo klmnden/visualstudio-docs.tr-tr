@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408704"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Hangi&#39;'teki Visual Studio 2015 SDK'sı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ Visual Studio 2017'den itibaren özel Proje ve öğe şablonları için tarama a
  VS SDK'sı öğe şablonları NuGet başvurularını için kullanın ve varsayılan olarak NuGet avantajlarını elde derleme araçları.
 
 > [!NOTE]
->  Projelerinizi VS SDK'sı başvuru derlemelerini kullanmaya devam edebilirsiniz (altında bulunan \<Visual Studio yükleme konumu > \ VSSDK\VisualStudioIntegration\Common\Assemblies) ve mevcut genişletilebilirlik projeleri olması gerekmez NuGet paketlerini kullanacak şekilde yükseltildi.  Proje **başvuran / başvuru ekleme** VS SDK'sı başvuru bütünleştirilmiş kodlarını kullanan iletişim devam etmektedir.
+> Projelerinizi VS SDK'sı başvuru derlemelerini kullanmaya devam edebilirsiniz (altında bulunan \<Visual Studio yükleme konumu > \ VSSDK\VisualStudioIntegration\Common\Assemblies) ve mevcut genişletilebilirlik projeleri olması gerekmez NuGet paketlerini kullanacak şekilde yükseltildi.  Proje **başvuran / başvuru ekleme** VS SDK'sı başvuru bütünleştirilmiş kodlarını kullanan iletişim devam etmektedir.
 >
->  Mevcut projelerinize NuGet kullanmak üzere değiştirmek istiyorsanız, [nasıl yapılır: VSPackage'ı Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) genişletilebilirlik projeleri için NuGet paketlerini güncelleştirme bir bölümü vardır.
+> Mevcut projelerinize NuGet kullanmak üzere değiştirmek istiyorsanız, [nasıl yapılır: VSPackage'ı Visual Studio 2015'e geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) genişletilebilirlik projeleri için NuGet paketlerini güncelleştirme bir bölümü vardır.
 
 ## <a name="light-bulbs"></a>Ampuller
  Uzantı kod yazmayı en heyecan verici yeni yollardan biriyle Roslyn proje tarafından sağlanır. Daha fazla bilgi için [Roslyn](https://github.com/dotnet/Roslyn).

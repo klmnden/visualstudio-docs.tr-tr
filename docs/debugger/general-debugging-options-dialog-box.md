@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399371"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -85,7 +85,7 @@ Koşullarda 2 ve 3, özel durum bazen yönetilen kod tarafından yakalandı `msc
 **Kaynak bağlantısı desteğini etkinleştir**: Kaynak dosyalarını indirmek için Visual Studio hata ayıklayıcıya bildirir *.pdb* kaynak bağlantısı bilgiler içeren dosyaları. Kaynak bağlantısı hakkında daha fazla bilgi için bkz: [kaynak bağlantı belirtimi](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Kaynak bağlantısı http veya https kullanarak dosyaları indirileceğinden güvendiğinizden emin olun *.pdb* dosya.
+> Kaynak bağlantısı http veya https kullanarak dosyaları indirileceğinden güvendiğinizden emin olun *.pdb* dosya.
 
 - **Geri Git kimlik bilgisi Yöneticisi kimlik doğrulaması için Fall için tüm kaynak bağlantısı isteklerine**:   Kaynak bağlantı desteği etkindir ve bir kaynak bağlantısı isteği kimlik doğrulaması başarısız olduğunda, Visual Studio Git Credential Manager daha sonra çağırır.
 

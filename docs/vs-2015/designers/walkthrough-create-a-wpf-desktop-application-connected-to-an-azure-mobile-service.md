@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421246"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
 3. Sol bölmede seçin **WindowsAzure.MobileServices**seçip sağ bölmede **yükleme** düğmesi.  
   
     > [!NOTE]
-    >  Varsa bir **Önizleme** iletişim kutusu açılır, önerilen değişiklikleri gözden geçirin ve ardından **Tamam** düğmesi.  
+    > Varsa bir **Önizleme** iletişim kutusu açılır, önerilen değişiklikleri gözden geçirin ve ardından **Tamam** düğmesi.  
   
 4. İçinde **lisans kabulü** iletişim kutusunda, lisans koşulları ve daha sonra bunları seçerek kabul İnceleme **kabul ediyorum** düğmesi.  
   
      Gerekli başvuruları eklenecek **Çözüm Gezgini**.  
   
     > [!NOTE]
-    >  Lisans koşullarını kabul etmiyorsanız, seçin **reddediyorum** düğmesi. Gözden geçirme geri kalanını tamamlamak mümkün olmayacaktır.  
+    > Lisans koşullarını kabul etmiyorsanız, seçin **reddediyorum** düğmesi. Gözden geçirme geri kalanını tamamlamak mümkün olmayacaktır.  
   
 ## <a name="create-the-user-interface"></a>Kullanıcı arabirimi oluşturma  
  Sonraki adımda, uygulama için kullanıcı arabirimi oluşturmaktır. İlk standart yan yana iki bölme Düzen görüntüleyen bir yeniden kullanılabilir kullanıcı denetimi oluşturacaksınız. Ana uygulama penceresini kullanıcı denetimi ekleyin ve girin ve verileri görüntülemek için denetimler ekleme sonra mobil hizmet arka ucu ile etkileşimi tanımlamak için kod yazma.  
@@ -288,7 +288,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
      ![Tasarımcı MainWindow](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Sonraki birkaç yordamları izleyerek sırasında hatalar görebilirsiniz **hata listesi** açıksa. Endişelenmeyin; Kalan yordamları tamamladıktan sonra bu hatalar kaybolur.  
+    > Sonraki birkaç yordamları izleyerek sırasında hatalar görebilirsiniz **hata listesi** açıksa. Endişelenmeyin; Kalan yordamları tamamladıktan sonra bu hatalar kaybolur.  
   
 6. İçinde **Çözüm Gezgini**, genişletme **MainWindow.xaml** düğüm ve açık **MainWindow.xaml.cs** veya **MainWindow.xaml.vb** dosya.  
   
@@ -482,7 +482,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
 3. İçinde **yeni mobil hizmet** iletişim kutusunda seçin **URL** metin girin `wpfquickstart01`.  
   
     > [!NOTE]
-    >  URL sayısal bölümünü değiştirmeniz gerekebilir. Microsoft Azure, her mobil hizmetiniz için benzersiz bir URL gerektirir.  
+    > URL sayısal bölümünü değiştirmeniz gerekebilir. Microsoft Azure, her mobil hizmetiniz için benzersiz bir URL gerektirir.  
   
      Bu hizmete URL'sini ayarlar `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
 5. İçinde **bölge** mobil hizmet dağıtma ve ardından istediğiniz veri merkezinde liste öğesini **sonraki** (sağ ok) düğmesini.  
   
     > [!NOTE]
-    >  Bu hizmet için varsayılan kullanacağınız **arka UÇ** ayarını **JavaScript**.  
+    > Bu hizmet için varsayılan kullanacağınız **arka UÇ** ayarını **JavaScript**.  
   
 6. Yeni bir veritabanı oluşturuyorsanız **veritabanı ayarlarını belirt** sayfasında **sunucu** liste seçin **yeni SQL veritabanı sunucusu**, girin, **SQL oturum açma ADI** ve **parola**ve ardından **tam** (onay işareti) düğmesi.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433167"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: UI yanıtlama hızı (HTML) geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
 1. Visual Studio'da yeni bir Windows Evrensel JavaScript projesi oluşturun. (Seçmek **dosya / yeni / Project**. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 10**, ardından da **Evrensel**, veya  **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Bu konu başlığında gösterilen Tanılama sonuçları için bir Windows 8 uygulaması gösterilmektedir.  
+    > Bu konu başlığında gösterilen Tanılama sonuçları için bir Windows 8 uygulaması gösterilmektedir.  
   
 3. Orta bölmede gibi boş proje şablonlarından birini seçin **boş uygulama**.  
   

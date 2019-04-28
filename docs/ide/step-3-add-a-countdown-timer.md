@@ -8,18 +8,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a703c7d4e28dd2287dff301727872b64e40b9ce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430760"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3. Adım: Bir geri sayım Zamanlayıcısı ekleme
 Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısını izlemek için bir geri sayım Zamanlayıcısı ekleyeceksiniz.
 
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Bir geri sayım Zamanlayıcısı ekleme
 
@@ -54,7 +54,7 @@ Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısın
      Az önce eklediğiniz bir `if else` kararlar programların nasıl size deyimi. Bir `if else` deyimi aşağıdaki gibi görünür.
 
     > [!NOTE]
-    >  Aşağıdaki örnek yalnızca gösterim amaçlıdır-projenize eklemeyin.
+    > Aşağıdaki örnek yalnızca gösterim amaçlıdır-projenize eklemeyin.
 
     ```vb
     If (something that your program will check) Then

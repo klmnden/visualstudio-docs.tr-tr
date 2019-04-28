@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438868"
 ---
 # <a name="working-with-xml-data"></a>XML Verileriyle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ XML ve kendi ilgili teknolojileri, verilerin işlenme şekilde bir büyük bir r
  Visual Studio hata ayıklama XSLT stil sayfaları destekler. Hata ayıklayıcıyı kullanarak bir XSLT stil sayfası bir XSLT stil sayfası bir adımla koddan, kesme noktaları ayarlayın ve benzeri.  
   
 > [!NOTE]
->  XSLT hata ayıklama, Professional ve takım sürümleri kullanılabilir.  
+> XSLT hata ayıklama, Professional ve takım sürümleri kullanılabilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)  

@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8d2aff47737443b998cfae8d16c3d95a5eb1d2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439949"
 ---
 # <a name="allocation-hook-functions"></a>Atama Kanca İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54794944"
 Kullanarak yüklü bir ayırma kanca işlevini [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), bellek tahsis, yeniden tahsis veya serbest her zaman çağrılır. Bu tür bir kanca birçok farklı amaçlarla kullanılabilir. Bunu nasıl bir uygulama yetersiz bellek durumları, örneğin, işleme test etmek için veya ayırma desenlerini incelenmesi veya daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için kullanın.  
   
 > [!NOTE]
->  Kısıtlama C çalışma zamanı kitaplık işlevleri açıklandığı bir ayırma kanca işlevini kullanma hakkında bilmeniz [ayırma kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+> Kısıtlama C çalışma zamanı kitaplık işlevleri açıklandığı bir ayırma kanca işlevini kullanma hakkında bilmeniz [ayırma kancaları ve C çalışma zamanı bellek ayırmaları](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
  Bir ayırma kanca işlevini aşağıdaki gibi bir prototipe sahip olmalıdır:  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430931"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` Yöntemi profili işareti ekler. *Vsp* dosya. Profil oluşturma için iş parçacığı içeren `MarkProfile` işlevi eklenecek işareti için açık olması gerekir.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  İşaretler ve açıklama işareti komutu veya API işlevleri (CommentMarkAtProfile, CommentMarkProfile veya MarkProfile) ile eklendiğinde işareti profili işlevi içeren iş parçacığı profil durumu olmalıdır.
 
 > [!IMPORTANT]
->  MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.
+> MarkProfile yöntemi yalnızca izleme profil ile kullanılmalıdır.
 
 ## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri
  *Microsoft.VisualStudio.Profiler.dll*

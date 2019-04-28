@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eb0b8b58d133a26c7970071b422e0c20f42c063
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433232"
 ---
 # <a name="customizing-the-model-explorer"></a>Model Gezginini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60078921"
      Gezgin üç göstermelidir **aktör** simge olan düğümleri.  
   
 > [!NOTE]
->  Oluşturulan Gezgini'nde görüntülenen herhangi bir öğe için bir düğüm simgesi ayarlarsanız, tüm Gezgini düğümleri simgesi görüntüler. Herhangi bir simge ayarlarsanız düğümleri varsayılan simge görüntüler.  
+> Oluşturulan Gezgini'nde görüntülenen herhangi bir öğe için bir düğüm simgesi ayarlarsanız, tüm Gezgini düğümleri simgesi görüntüler. Herhangi bir simge ayarlarsanız düğümleri varsayılan simge görüntüler.  
   
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Bir Gezgini düğümünde görüntülenen adını değiştirme  
  Model öğelerinin adlarını gezgininizde nasıl görüntüleneceğini değiştirebilirsiniz. Aşağıdaki yordamı, adını görüntülemek gösterilmektedir **görev** tarafından başvurulan bir **yorum** açıklama düğümünde.  

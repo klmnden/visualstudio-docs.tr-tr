@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424314"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML Kullanım durumu diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sis
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Bu konu, kullanım örneği diyagramları kullanılabilir öğeleri açıklar. Kullanım örneği diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md). Modelleme diyagramları çizmek ve oluşturma hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+> Bu konu, kullanım örneği diyagramları kullanılabilir öğeleri açıklar. Kullanım örneği diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md). Modelleme diyagramları çizmek ve oluşturma hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Kullanım örneği diyagramları okuma  
  Aşağıdaki bölümlerde tablolarında ana özellikleri ile birlikte bir kullanım durumu diyagramı üzerinde kullanılabilir olan öğeler açıklanmaktadır. Özelliklerinin tam listesi için bkz. [UML öğeleri özelliklerini kullanma örneği diyagramları](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -65,9 +65,9 @@ Visual Studio'da bir *kullanım örneği diyagramı* kullanan uygulama ya da sis
 |11 (gösterilmez)|**Paketleri**|Kullanım örnekleri, aktörler ve alt sistemlerin paketler içinde yer alabilir. Paket şekilleri diyagram üzerinde görünmez, ancak ayarlayabileceğiniz **LinkedPackage** diyagramın özelliği. Diyagram üzerinde daha sonra oluşturduğunuz öğeleri paket içine yerleştirilir. Daha fazla bilgi için [paketleri ve ad alanlarını tanımlama](../modeling/define-packages-and-namespaces.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [UML Kullanım Örneği Diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)

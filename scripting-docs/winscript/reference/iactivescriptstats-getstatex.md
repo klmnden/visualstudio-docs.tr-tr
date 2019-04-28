@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442773"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Özel betik istatistiği döndürür.  
@@ -59,7 +59,7 @@ HRESULT GetStatEx(
  Bu yöntem için özel bir ana bilgisayar istatistikleri anlamlı döndürmek bir özel betik altyapısı sağlar.  
   
 > [!NOTE]
->  Bu yöntem henüz uygulanmadı.  
+> Bu yöntem henüz uygulanmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437423"
 ---
 # <a name="attaching-to-the-program"></a>Programa Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +52,12 @@ Programlarınızın uygun bağlantı noktası ile kaydettikten sonra hata ayıkl
      Bu döndürür bir `GUID` program tanımlamak için kullanılır. `GUID` Temsil yerel için DE program ve bunu ne zaman döndürülmelidir nesnede depolanan `IDebugProgram2::GetProgramId` yöntemi çağrıldığında `IDebugProgram2` arabirimi.  
   
     > [!NOTE]
-    >  Uygularsanız `IDebugProgramNodeAttach2` arabirim, programın `GUID` geçirilir `IDebugProgramNodeAttach2::OnAttach` yöntemi. Bu `GUID` programın için kullanılan `GUID` tarafından döndürülen `IDebugProgram2::GetProgramId` yöntemi.  
+    > Uygularsanız `IDebugProgramNodeAttach2` arabirim, programın `GUID` geçirilir `IDebugProgramNodeAttach2::OnAttach` yöntemi. Bu `GUID` programın için kullanılan `GUID` tarafından döndürülen `IDebugProgram2::GetProgramId` yöntemi.  
   
 3. Gönder bir [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM bildirmek üzere olay nesnesi, yerel `IDebugProgram2` nesne program için DE göstermek için oluşturuldu. Ayrıntılar için bkz [olayları gönderme](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
-    >  Bu aynı değil `IDebugProgram2` yöntemlere geçirilen nesne `IDebugEngine2::Attach` yöntemi. Daha önce geçirilen `IDebugProgram2` nesne yalnızca bağlantı noktası tarafından kabul edilir ve ayrı bir nesnedir.  
+    > Bu aynı değil `IDebugProgram2` yöntemlere geçirilen nesne `IDebugEngine2::Attach` yöntemi. Daha önce geçirilen `IDebugProgram2` nesne yalnızca bağlantı noktası tarafından kabul edilir ve ayrı bir nesnedir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlatma tabanlı ek](../../extensibility/debugger/launch-based-attachment.md)   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419512"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Nasıl yapılır: Bir görselde VBA kodu ortaya C# proje
   Bir görseldeki kodunu getirebilir C# iki birbiriyle etkileşim kurmak için kod istiyorsanız, Visual Basic Applications (VBA) kodu için proje.
@@ -42,7 +42,7 @@ ms.locfileid: "56604485"
     Makrolar destekleyen belge dosya biçimleri hakkında daha fazla bilgi için bkz. [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   >  Bu özellik Word şablonu projelerinde kullanılamaz.
+   > Bu özellik Word şablonu projelerinde kullanılamaz.
 
 2. Belgedeki VBA kodu kullanıcı makroları istemeden çalışmaya izin verildiğinden emin olun. Office proje konumunu Word veya Excel için Güven Merkezi ayarlarında güvenilen konumlar listesine ekleyerek çalıştırılacak VBA kodu güvenebilir.
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604485"
 10. İçinde **özellikleri** penceresinde **ReferenceAssemblyFromVbaProject** özellik ve değere değiştirin **True**.
 
     > [!NOTE]
-    >  Çalışma kitabı veya belge VBA kodu zaten içermiyor veya belgedeki VBA kodu çalıştırmak için güvenilir değilse, ayarlarken bir hata iletisi alırsınız **ReferenceAssemblyFromVbaProject** özelliğini **True**. Bu durum, Visual Studio, bu durumda belgedeki VBA projesine değiştirilemiyor çünkü.
+    > Çalışma kitabı veya belge VBA kodu zaten içermiyor veya belgedeki VBA kodu çalıştırmak için güvenilir değilse, ayarlarken bir hata iletisi alırsınız **ReferenceAssemblyFromVbaProject** özelliğini **True**. Bu durum, Visual Studio, bu durumda belgedeki VBA projesine değiştirilemiyor çünkü.
 
 11. Tıklayın **Tamam** iletisinde görüntülenir. Bu ileti eklerseniz VBA kodunu çalışma kitabına veya belge projeden çalıştırırken gerektiğini hatırlatır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], projeyi sonraki açışınızda VBA kodu kaybolacak. Klasör projeyi her seferinde üzerine yazılır yapı içinde belge çıkış olmasıdır.
 

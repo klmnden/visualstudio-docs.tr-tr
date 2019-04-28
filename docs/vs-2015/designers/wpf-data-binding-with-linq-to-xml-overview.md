@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403409"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
  Varolan bir yöntem işlevselliği yinelenen özel çalışma zamanı özelliklerini ve özellikler bu dinamik özellikler olur <xref:System.Xml.Linq.XAttribute> ve <xref:System.Xml.Linq.XElement> sınıfları. Bunlar yalnızca bunları WPF için dinamik veri kaynağı olarak davranacak şekilde etkinleştirmek için bu sınıfların eklendi. Bu gereksinimi karşılamak için değişiklik bildirimleri bu dinamik özellikler uygular. Sonraki bölümde, bu dinamik özelliklerin ayrıntılı bir başvuru sağlanmıştır [LINQ to XML dinamik özellikleri](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Standart genel özelliklerin çoğu bulunan çeşitli sınıflarda <xref:System.Xml.Linq> ad alanı, tek seferlik veri bağlama için kullanılabilir. Bununla birlikte, kaynak ya da hedef dinamik olarak altında bu düzeni güncelleştirileceğini unutmayın.  
+> Standart genel özelliklerin çoğu bulunan çeşitli sınıflarda <xref:System.Xml.Linq> ad alanı, tek seferlik veri bağlama için kullanılabilir. Bununla birlikte, kaynak ya da hedef dinamik olarak altında bu düzeni güncelleştirileceğini unutmayın.  
   
 ### <a name="accessing-dynamic-properties"></a>Dinamik özelliklerine erişme  
  Dinamik Özellikler <xref:System.Xml.Linq.XAttribute> ve <xref:System.Xml.Linq.XElement> sınıflar gibi standart özelliklere erişilemez. Örneğin, C# gibi CLR uyumlu dilde bunlar olamaz:  

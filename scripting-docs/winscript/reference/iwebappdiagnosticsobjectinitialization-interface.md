@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67cf59965d47b2a0e29bbe6280d69acf0000a20d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: a992f8512d4927eeb58d6437ccb830abda688b28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443689"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>IWebAppDiagnosticsObjectInitialization Arabirimi
 Bu arabirimi uygulayan sınıflar uygulanabilir [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [Iwebappdiagnosticssetup arabirimi](../../winscript/reference/iwebappdiagnosticssetup-interface.md) uygulayan bir nesne tarafından uygulanan [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Çoğu durumda bu PDM nesnedir.  
@@ -26,7 +26,7 @@ Bu arabirimi uygulayan sınıflar uygulanabilir [IWebAppDiagnosticsSetup::Create
  Nesne oluşturulduktan sonra [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM hata ayıklama uygulama başvurusuyla çağrılır ve `hPassToObject` parametresinin `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization` activdbg100.h içinde bulunur.  
+> `IWebAppDiagnosticsObjectInitialization` activdbg100.h içinde bulunur.  
   
 ## <a name="methods"></a>Yöntemler  
  Bu arabirim, aşağıdaki yöntemi kullanıma sunar.  

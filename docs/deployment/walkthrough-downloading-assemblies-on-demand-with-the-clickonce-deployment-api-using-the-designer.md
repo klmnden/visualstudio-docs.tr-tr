@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406068"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme
 Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı ilk kez çalıştırdığınızda, uygulama yüklenir. Bununla birlikte, küçük bir grup kullanıcı tarafından kullanılan uygulamanızın parçalarını olabilir. Bu durumda, yalnızca türlerinden oluşturduğunuzda bir derlemeyi indirmek istediğiniz. Aşağıdaki örneklerde, belirli bütünleştirilmiş kodların "isteğe bağlı" olarak, uygulamanızda işaretlenecek gösterilmiştir ve yer alan kullanarak indirmek nasıl sınıfları <xref:System.Deployment.Application> bunları ortak dil çalışma zamanı talep ettiğinde ad alanı.
@@ -40,7 +40,7 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deploy
 1. Yeni bir Windows Forms projesi oluşturun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Üzerinde **dosya** menüsünde **Ekle**ve ardından **yeni proje**. Seçin bir **sınıf kitaplığı** adlandırın ve proje iletişim kutusunda `ClickOnceLibrary`.
 
    > [!NOTE]
-   >  Bu proje için kök ad alanı değiştirmek için proje özelliklerini değiştirmek tavsiye ederiz Visual Basic'te `Microsoft.Samples.ClickOnceOnDemand` veya tercih ettiğiniz bir ad alanı. Kolaylık olması için bu kılavuzda iki proje aynı ad alanında görüntülenir.
+   > Bu proje için kök ad alanı değiştirmek için proje özelliklerini değiştirmek tavsiye ederiz Visual Basic'te `Microsoft.Samples.ClickOnceOnDemand` veya tercih ettiğiniz bir ad alanı. Kolaylık olması için bu kılavuzda iki proje aynı ad alanında görüntülenir.
 
 2. Adlı bir sınıf tanımlama `DynamicClass` adlı tek bir özellik ile `Message`.
 
@@ -50,7 +50,7 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deploy
 3. Windows Forms projesinde seçin **Çözüm Gezgini**. Bir başvuru ekleyin <xref:System.Deployment.Application> derleme ve bir proje başvurusu `ClickOnceLibrary` proje.
 
    > [!NOTE]
-   >  Bu proje için kök ad alanı değiştirmek için proje özelliklerini değiştirmek tavsiye ederiz Visual Basic'te `Microsoft.Samples.ClickOnceOnDemand` veya tercih ettiğiniz bir ad alanı. Kolaylık olması için bu kılavuzda iki proje aynı ad alanında bulunur.
+   > Bu proje için kök ad alanı değiştirmek için proje özelliklerini değiştirmek tavsiye ederiz Visual Basic'te `Microsoft.Samples.ClickOnceOnDemand` veya tercih ettiğiniz bir ad alanı. Kolaylık olması için bu kılavuzda iki proje aynı ad alanında bulunur.
 
 4. Formun sağ tıklayın, **kodu görüntüle** menüsünde ve formu aşağıdaki başvuruları ekleyin.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424377"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML Bileşen Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
  Tasarım aşamasında Bileşen diyagramlarının nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Bu konuda, bileşeni diyagramlarda kullanabileceğiniz öğeleri açıklar. Daha ayrıntılı Bileşen diyagramlarının nasıl hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md). Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+> Bu konuda, bileşeni diyagramlarda kullanabileceğiniz öğeleri açıklar. Daha ayrıntılı Bileşen diyagramlarının nasıl hakkında daha fazla bilgi için bkz: [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md). Genel olarak modelleme diyagramları çizmek hakkında daha fazla bilgi için bkz. [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Bileşen diyagramları okuma  
  Aşağıdaki tabloda, bileşen diyagramında ana özellikleri ile birlikte kullandığınız öğeleri açıklar. Öğelerin özelliklerinin tam listesi için bkz. [Bileşen diyagramlarındaki öğelerin özellikleri](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

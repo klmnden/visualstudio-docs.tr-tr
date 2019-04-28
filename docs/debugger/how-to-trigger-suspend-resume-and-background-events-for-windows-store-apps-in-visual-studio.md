@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84b454ba663760c4d8cc600dcc0d508e56547619
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388492"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Nasıl tetikleyeceğinizi askıya alma, sürdürme ve UWP uygulamaları Visual Studio'da hata ayıklarken arka plan olayları
 Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uygulamanızın yürütme durumunu denetler — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve cihaz durumu olarak sonlandırılıyor. Windows hata ayıklaması yapıyorsanız, bu etkinleştirme olaylarını devre dışı bırakır. Bu konu, hata ayıklayıcı bu olayları tetiklemesine açıklar.
@@ -52,7 +52,7 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
  Uygulamanız için arka plan görevleri, hata ayıklayıcı'dan başlayan olayları tetikleyebilir.
 
 > [!NOTE]
->  Hata ayıklayıcı, cihaz durumu değişikliği belirten olaylar gibi verileri içermeyen olayları tetikleyebilir. Kullanıcı girişini veya diğer veri gerektiren bir arka plan görevleri el ile tetiklemek sahip.
+> Hata ayıklayıcı, cihaz durumu değişikliği belirten olaylar gibi verileri içermeyen olayları tetikleyebilir. Kullanıcı girişini veya diğer veri gerektiren bir arka plan görevleri el ile tetiklemek sahip.
 
  Uygulamanız çalışmıyorken bir arka plan görev olayı tetiklemek için en gerçekçi yoludur. Ancak, standart hata ayıklama oturumunda olarak olay tetiklemeyi de desteklenir.
 

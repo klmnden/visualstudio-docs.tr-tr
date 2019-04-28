@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402916"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
 A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel olarak bir yerel ağ veya Internet üzerinde.
@@ -37,7 +37,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 2. İçinde **adresi** kutusuna hizmeti için URL girin ve ardından **Git** hizmet için aranacak. Hizmet kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.
 
     > [!NOTE]
-    >  Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.
+    > Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.
 
      URL'den belirleyebilirsiniz **adresi** listesinde, geçerli hizmet meta verileri bulundu önceki 15 URL depolar.
 
@@ -88,7 +88,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
      Hizmet istemcisi çözümden kaldırılacak ve hizmeti tanımlayan meta veriler kaldırılacak *app.config* dosya.
 
     > [!NOTE]
-    >  Hizmet başvuru yapan tüm kodları el ile kaldırılması gerekir.
+    > Hizmet başvuru yapan tüm kodları el ile kaldırılması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

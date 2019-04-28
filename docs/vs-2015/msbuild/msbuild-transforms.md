@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426033"
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Dönüşüm bir bire bir öğe listesinin başka bir dönüştürmedir. Bir proj
 ```  
   
 > [!NOTE]
->  Ayırıcı standart öğesi listesi için belirttiğiniz aynı şekilde dönüştürülmüş öğesi listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgül (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın.  
+> Ayırıcı standart öğesi listesi için belirttiğiniz aynı şekilde dönüştürülmüş öğesi listesi için özel bir ayırıcı belirtebilirsiniz. Örneğin, varsayılan noktalı virgül (;) yerine bir virgül (,) kullanarak dönüştürülmüş öğesi listesini ayırmak için aşağıdaki XML kullanın.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [Nasıl yapılır: Artımlı olarak derleme](../msbuild/how-to-build-incrementally.md)
+ [Nasıl yapılır: Artımlı Olarak Derleme](../msbuild/how-to-build-incrementally.md)

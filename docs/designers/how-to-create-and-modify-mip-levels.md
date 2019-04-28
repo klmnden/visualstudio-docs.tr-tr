@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65b2be057836811c8b91ef5ee0d1f1743b24ea9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408612"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme
 Bu belgenin nasıl kullanılacağını gösteren **Resim Düzenleyicisi** oluşturmak ve değiştirmek amacıyla *MIP düzeyleri* doku alanı düzeyi ayrıntı düzeyi (LoD) için.
@@ -39,7 +39,7 @@ Bu belgenin nasıl kullanılacağını gösteren **Resim Düzenleyicisi** oluşt
 2. Değiştirmek istediğiniz MIP düzeyini seçtikten sonra diğer MIP düzeylerinin içeriğini değiştirmeden değiştirmek için çizim araçlarını kullanabilirsiniz. Çizim Araçları mevcuttur **Resim Düzenleyicisi** araç çubuğu. Bir aracı seçtikten sonra özelliklerini değiştirebilirsiniz **özellikleri** penceresi. Çizim araçları ve özellikleri hakkında daha fazla bilgi için bkz. [Resim Düzenleyicisi](../designers/image-editor.md).
 
 > [!NOTE]
->  Bireysel MIP seviyelerindeki içeriği değiştirmek gerekmez, — bazı efektler elde etmek için yapabileceğiniz gibi — derleme zamanında kaynak dokudan Mipmap üretmek öneririz. Bu, MIP düzeyinde yapılan değişiklikler diğer düzeylere otomatik olarak yayılmadığından dolayı MIP düzeylerinin kaynak doku ile eşit kalmasını sağlamaya yardımcı olur. Derleme zamanında Mipmap konusunda daha fazla bilgi için bkz. [nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Bireysel MIP seviyelerindeki içeriği değiştirmek gerekmez, — bazı efektler elde etmek için yapabileceğiniz gibi — derleme zamanında kaynak dokudan Mipmap üretmek öneririz. Bu, MIP düzeyinde yapılan değişiklikler diğer düzeylere otomatik olarak yayılmadığından dolayı MIP düzeylerinin kaynak doku ile eşit kalmasını sağlamaya yardımcı olur. Derleme zamanında Mipmap konusunda daha fazla bilgi için bkz. [nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

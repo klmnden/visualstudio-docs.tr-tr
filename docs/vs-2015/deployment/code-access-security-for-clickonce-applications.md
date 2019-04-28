@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423272"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ClickOnce uygulamaları, .NET Framework tabanlı ve kod erişim güvenliği sın
 - Bir uygulama tam güven izinleri gerektirdiğinde, son kullanıcının uygulama izinlerini vermek için istenebilir. Bu uygulamayı gerçek anlamda bir ClickOnce deneyimi sağlamaz ve istemi potansiyel olarak daha az deneyimli kullanıcılar için kafa karıştırıcı olabilir anlamına gelir.  
   
   > [!NOTE]
-  >  Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Bir uygulamayı bir CD-ROM gibi çıkarılabilir medyadan yüklemek, kullanıcıya sorulmaz. Ayrıca, böylece kullanıcılar uygulamanın güvenilir bir kaynaktan yüklediklerinde istenmez bir ağ yöneticisi ağ ilkesi yapılandırabilirsiniz. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   ClickOnce uygulaması için izinleri kısıtlamak için uygulamanızın gerektirdiği izinler için en uygun bölgeyi istemek için uygulamanıza kod erişim güvenlik izinlerini değiştirebilirsiniz. Çoğu durumda, uygulamanın dağıtıldığı bölge seçebilirsiniz. Örneğin, uygulamanız bir kuruluş uygulaması ise, kullanabileceğiniz **yerel Intranet** bölge. Uygulamanız bir Internet uygulaması ise, kullanabileceğiniz **Internet** bölge.  
   

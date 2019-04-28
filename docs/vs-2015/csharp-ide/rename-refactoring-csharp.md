@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439950"
 ---
 # <a name="rename-refactoring-c"></a>Yeniden Düzenlemeyi (C#) yeniden adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114738"
 **Yeniden adlandırma** alanlar, yerel değişkenler, yöntemleri, ad alanları, özellikleri ve türleri gibi kod simgeleri tanımlayıcıları yeniden adlandırmak için kolay bir yolunu sağlayan Visual Studio tümleşik geliştirme ortamı (IDE) yeniden düzenleme bir özelliktir. **Yeniden adlandırma** açıklamalarında ve Dizelerdeki adlarını değiştirmek için ve bir tanımlayıcının çağrıları ve bildirimleri değiştirmek için kullanılabilir.  
   
 > [!NOTE]
->  Yeniden adlandırma düzenlemesi gerçekleştirmeye çalışmadan önce kaynak denetimi Visual Studio için kullanılırken, kaynakları en son sürümünü alın.  
+> Yeniden adlandırma düzenlemesi gerçekleştirmeye çalışmadan önce kaynak denetimi Visual Studio için kullanılırken, kaynakları en son sürümünü alın.  
   
  Yeniden adlandırma düzenlemesi aşağıdaki Visual Studio özellikleri kullanılabilir:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114738"
 2. Öğesinin bildiriminde `MethodB`yazın veya yöntem tanımlayıcısının üzerine geri al. Akıllı etiket istemi bu tanımlayıcının altında görünür.  
   
     > [!NOTE]
-    >  Yalnızca bir tanımlayıcının bildirimi akıllı etiketleri kullanarak yeniden adlandırma düzenlemesi de çağırabilirsiniz.  
+    > Yalnızca bir tanımlayıcının bildirimi akıllı etiketleri kullanarak yeniden adlandırma düzenlemesi de çağırabilirsiniz.  
   
 3. SHIFT + ALT + F10 klavye kısayolunu yazın ve ardından akıllı etiket menüsündeki görüntülemek için aşağı ok tuşuna basın.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114738"
  Varsa **yeniden adlandırma, aşırı** seçiliyse, yeniden düzenleme altyapısı yeniden adlandırır `Derived.Method(int i)` aşırı `Derived.Method()`, `Base.Method(int i)` tarafından geçersiz olduğundan `Derived.Method(int i)`, ve `Base.Method()` çünkü bu bir aşırı yüklemesini `Base.Method(int i)`.  
   
 > [!NOTE]
->  Başvurulan bir derlemede tanımlanan üye yeniden adlandırdığınızda, yeniden adlandırma yapı hatalarına neden olacak bir iletişim kutusu açıklar.  
+> Başvurulan bir derlemede tanımlanan üye yeniden adlandırdığınızda, yeniden adlandırma yapı hatalarına neden olacak bir iletişim kutusu açıklar.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Anonim türler özelliklerini yeniden adlandırma  
  Anonim türler özelliğinde yeniden adlandırdığınızda, yeniden adlandırma işlemi için aynı özelliklere sahip olan diğer anonim türler özelliklerinde yayılır. Aşağıdaki örnekler, bu davranış görülmektedir.  

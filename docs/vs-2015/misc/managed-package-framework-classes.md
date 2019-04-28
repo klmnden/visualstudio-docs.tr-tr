@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422763"
 ---
 # <a name="managed-package-framework-classes"></a>Yönetilen paket Framework sınıfları
 Yönetilen paket framework (MPF) sınıfları, yönetilen kod kullanarak VSPackage'ları oluşturmak için kullanılabilir. Bunlar, birçok VSPackage arabirimleri için varsayılan uygulamalarını sağlar. Uygulama Ayrıntıları ve karmaşıklık gizleyerek MPF oluşturmanızı sağlayan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] minimum miktarda kod ürünleriyle tümleştirme.  
   
 > [!WARNING]
->  Visual Studio SDK'sı ile yönetilen paket çerçevesini sınıflar içeren derlemeler çoğunu gönderilir. Yönetilen paketlenmiş Framework projesi için kaynak kodunu indirebilirsiniz [projeleri için yönetilen paket çerçevesini](http://mpfproj11.codeplex.com/).  
+> Visual Studio SDK'sı ile yönetilen paket çerçevesini sınıflar içeren derlemeler çoğunu gönderilir. Yönetilen paketlenmiş Framework projesi için kaynak kodunu indirebilirsiniz [projeleri için yönetilen paket çerçevesini](http://mpfproj11.codeplex.com/).  
   
 ## <a name="mpf-namespaces"></a>MPF ad alanları  
  Tarafından sağlanan MPF ad alanları aşağıdaki tabloda [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  

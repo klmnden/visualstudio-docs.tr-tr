@@ -17,25 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406976"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme
 ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.
 
 > [!NOTE]
->  Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.
+> Sayfada gördüğünüz gerçek bağlantıları burada sayfası görüntülendiğinde bilgisayar ve hangi bağlıdır Önkoşullar dahil.
 
  Web sayfası için varsayılan ad *Publish.htm*; adı değiştirebilirsiniz **Proje Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: ClickOnce uygulaması için bir yayımlama sayfası belirtme](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  *Publish.htm* Web sayfası, yalnızca daha yeni bir sürümü algılanırsa yayımlanır.
 
 > [!NOTE]
->  Yaptığınız değişiklikler, **Yayımla** ayarlarını etkilemez *Publish.htm* sayfası, bir özel durum: başlangıçta yayımladıktan sonra önkoşulları ekleyip, önkoşullarının listesi olur. artık doğru olmayabilir. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.
+> Yaptığınız değişiklikler, **Yayımla** ayarlarını etkilemez *Publish.htm* sayfası, bir özel durum: başlangıçta yayımladıktan sonra önkoşulları ekleyip, önkoşullarının listesi olur. artık doğru olmayabilir. Değişiklikleri yansıtacak şekilde önkoşul bağlantı metnini düzenlemek gerekir.
 
 ### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme
 

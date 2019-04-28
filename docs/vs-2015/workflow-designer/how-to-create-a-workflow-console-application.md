@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444604"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Nasıl yapılır: İş Akışı Konsol Uygulaması Oluşturma
 [!INCLUDE[wf](../includes/wf-md.md)] Sistem ya da insan işlemleri yürütmek iş akışları oluşturmanıza olanak sağlar. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Bu iş akışları oluşturmak için tasarım yüzeyi sağlar. [!INCLUDE[wfd2](../includes/wfd2-md.md)] İçinden iş akışları oluşturmak için kullanılan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya tasarımcıyı yeniden barındırma diğer uygulamalarda tümleştirilebilir.  
@@ -40,7 +40,7 @@ ms.locfileid: "60044358"
 7. İçinde **çözüm** kutusunda, yeni çözüm için bir ad girin. Tıklayın **Tamam** uygulama oluşturmak için.  
   
     > [!NOTE]
-    >  Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
+    > Varolan bir çözüm için bir iş akışı konsol uygulaması eklemek istiyorsanız, bu çözümde açık [!INCLUDE[vs2010](../includes/vs2010-md.md)], çözüme sağ tıklayın **Çözüm Gezgini**seçip **Ekle**, ardından  **Yeni proje...** açmak için **yeni proje** iletişim kutusu. Bu yordamda yukarıda açıklanan şekilde devam edin.  
   
 8. Proje şablonu, XAML içinde bir iş akışı tanımı oluşturur ve kaynak kodunda konsol uygulamanın tanımıdır. [!INCLUDE[wfd2](../includes/wfd2-md.md)] Açılır ve oluşturduğunuz iş akışı için tuvalde görüntüler.  
   

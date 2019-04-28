@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419473"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri kaydetme
   Microsoft Office Word belgeleri kaydetmek için çeşitli yollar vardır. Belge adını değiştirmeden bir belgeyi kaydedebilirsiniz veya yeni bir adla bir belgeyi kaydedebilirsiniz.
@@ -54,14 +54,14 @@ ms.locfileid: "60056282"
  Belgeye yeni bir adla kaydetmek için Farklı Kaydet yöntemi kullanın. Bu yöntemi kullanabilirsiniz <xref:Microsoft.Office.Tools.Word.Document> Word belge düzeyi projesi veya yerel konak öğesi <xref:Microsoft.Office.Interop.Word.Document> herhangi bir sözcük projede nesne. Bu yöntem, yeni dosya adı belirtin, ancak diğer bağımsız değişken isteğe bağlı gerektirir.
 
 > [!NOTE]
->  Gösteriyorsa, **Farklı Kaydet** iletişim kutusu içine <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olay işleyicisine `ThisDocument` ve *iptal* parametresi **false**, uygulamadan beklenmedik bir şekilde çıkın. Ayarlarsanız *iptal* parametresi **true**, otomatik kaydetme devre dışı olduğunu belirten bir hata iletisi görüntülenir.
+> Gösteriyorsa, **Farklı Kaydet** iletişim kutusu içine <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> olay işleyicisine `ThisDocument` ve *iptal* parametresi **false**, uygulamadan beklenmedik bir şekilde çıkın. Ayarlarsanız *iptal* parametresi **true**, otomatik kaydetme devre dışı olduğunu belirten bir hata iletisi görüntülenir.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Belge düzeyi özelleştirmesinde yeni bir adla ilişkilendirilmiş belgeyi kaydetme
 
 1. Çağrı <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi `ThisDocument` tam yol ve dosya adı kullanarak, projenizdeki sınıfı. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır. Bu kod örneği kullanmak için çalıştırın `ThisDocument` sınıfı.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Yöntemi, bir hedef dizin mevcut değil veya dosya kaydetme diğer sorunları varsa bir özel durum oluşturur. Kullanmak için iyi bir uygulamadır bir **try... catch** geçici olarak engellemek <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi veya içinde bir çağırma yöntemi.
+    > <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Yöntemi, bir hedef dizin mevcut değil veya dosya kaydetme diğer sorunları varsa bir özel durum oluşturur. Kullanmak için iyi bir uygulamadır bir **try... catch** geçici olarak engellemek <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi veya içinde bir çağırma yöntemi.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056282"
      Aşağıdaki kod örneği, etkin belgeyi yeni bir adla kaydeder. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Yöntemi, bir hedef dizin mevcut değil veya dosya kaydetme diğer sorunları varsa bir özel durum oluşturur. Kullanmak için iyi bir uygulamadır bir **try... catch** geçici olarak engellemek <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> yöntemi veya içinde bir çağırma yöntemi.
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Yöntemi, bir hedef dizin mevcut değil veya dosya kaydetme diğer sorunları varsa bir özel durum oluşturur. Kullanmak için iyi bir uygulamadır bir **try... catch** geçici olarak engellemek <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> yöntemi veya içinde bir çağırma yöntemi.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

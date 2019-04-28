@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431211"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter’lar oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
      Seçilen saklı yordamın parametreleri veri tablosunda karşılık gelen sütunlara eşleyin. Örneğin, depolanmış yordamınızdaki adlı bir parametre kabul eder `@CompanyName` için geçen `CompanyName` tablodaki sütun kümesini **kaynak sütunu** , `@CompanyName` parametresi `CompanyName`.  
   
     > [!NOTE]
-    >  SELECT komutu için atanan saklı yordamı, sihirbazın bir sonraki adımda isimlendirdiğiniz TableAdapter'ın yöntemi çağrılarak çalıştırılır. İçin varsayılan yöntemdir `Fill`, genellikle SELECT yordamı çalıştırmak için kullanılan kod, bu nedenle `TableAdapter.Fill(tableName)`. Varsayılan adı değiştirirseniz `Fill`, yedek `Fill` adıyla atayın ve "TableAdapter" TableAdapter'ın gerçek adıyla değiştirin (örneğin, `CustomersTableAdapter`).  
+    > SELECT komutu için atanan saklı yordamı, sihirbazın bir sonraki adımda isimlendirdiğiniz TableAdapter'ın yöntemi çağrılarak çalıştırılır. İçin varsayılan yöntemdir `Fill`, genellikle SELECT yordamı çalıştırmak için kullanılan kod, bu nedenle `TableAdapter.Fill(tableName)`. Varsayılan adı değiştirirseniz `Fill`, yedek `Fill` adıyla atayın ve "TableAdapter" TableAdapter'ın gerçek adıyla değiştirin (örneğin, `CustomersTableAdapter`).  
   
 - **Gelişmiş Seçenekler** sihirbazda göre tanımlanan bir SELECT deyimi INSERT, UPDATE ve DELETE deyimleri oluşturmasını sağlayan **oluşturmak SQL deyimleri** sayfası. İyimser eşzamanlılığı kullanın ve sonra INSERT ve UPDATE veri tablosunu yenilemek için deyimleri çalıştırılıp çalıştırılmayacağını belirtin.  
   
@@ -82,7 +82,7 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
 3. Üzerinde **veri bağlantınızı seçin** ekran, seçin veya sorguyu bir bağlantı oluşturun.  
   
     > [!NOTE]
-    >  Bu ekran Tasarımcısı'nı kullanmak için uygun bağlantı belirleyemediğinde veya bağlantı kullanılabilir olduğunda yalnızca görünür.  
+    > Bu ekran Tasarımcısı'nı kullanmak için uygun bağlantı belirleyemediğinde veya bağlantı kullanılabilir olduğunda yalnızca görünür.  
   
 4. Üzerinde **komut türü seçin** ekranında, verileri veritabanından getirmekten aşağıdaki yöntemleri arasından seçim:  
   
@@ -97,7 +97,7 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
 - Varolan bir TableAdapter sorgu düzenliyorsanız, sorguyu sağ tıklayın ve ardından **yapılandırma** kısayol menüsünden.  
   
     > [!NOTE]
-    >  TableAdapter bağdaştırıcısının ana sorguda sağ TableAdapter yeniden yapılandırır ve <xref:System.Data.DataTable> şema. Bir TableAdapter üzerindeki ek bir sorgu sağ tıklayarak, ancak yalnızca seçilen sorgu yapılandırır. **TableAdapter Yapılandırma Sihirbazı'nı** TableAdapter sorgu Yapılandırma Sihirbazı'nı yalnızca seçili sorguyu yeniden yapılandırır. ancak TableAdapter tanımının yeniden yapılandırır.  
+    > TableAdapter bağdaştırıcısının ana sorguda sağ TableAdapter yeniden yapılandırır ve <xref:System.Data.DataTable> şema. Bir TableAdapter üzerindeki ek bir sorgu sağ tıklayarak, ancak yalnızca seçilen sorgu yapılandırır. **TableAdapter Yapılandırma Sihirbazı'nı** TableAdapter sorgu Yapılandırma Sihirbazı'nı yalnızca seçili sorguyu yeniden yapılandırır. ancak TableAdapter tanımının yeniden yapılandırır.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Bir TableAdapter için genel bir sorgu eklemek için  
   
@@ -108,7 +108,7 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
 - Örneğin, istenen bir görevi gerçekleştiren bir sorgu sağlamanız `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  Sürükleyerek bir **sorgu** doğrudan nesne **veri kümesi Tasarımcısı** yalnızca skaler (tek) değer döndüren bir yöntem oluşturur. Sorgu veya saklı yordam seçtiğiniz birden çok tek bir değer döndürebilir sırasında sihirbaz tarafından oluşturulan yöntemi yalnızca tek bir değer döndürür. Örneğin, sorgu döndürülen verileri ilk satırının ilk sütununu döndürebilir.  
+    > Sürükleyerek bir **sorgu** doğrudan nesne **veri kümesi Tasarımcısı** yalnızca skaler (tek) değer döndüren bir yöntem oluşturur. Sorgu veya saklı yordam seçtiğiniz birden çok tek bir değer döndürebilir sırasında sihirbaz tarafından oluşturulan yöntemi yalnızca tek bir değer döndürür. Örneğin, sorgu döndürülen verileri ilk satırının ilk sütununu döndürebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)

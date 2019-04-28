@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8983b027eb82ac9ac09b3f753333af9f7d08e2a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435152"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl yapılır: .NET Framework sürümü hedefleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60114853"
 Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir projenin nasıl oluşturulacağını ve varolan bir Visual Basic, Visual C# veya Visual F# projesinde hedeflenen sürümün nasıl değiştirileceğini belirtir.  
   
 > [!IMPORTANT]
->  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **Bu konudaki**  
   
@@ -37,7 +37,7 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
  Bir proje oluştururken, hedeflediğiniz .NET Framework sürümü hangi şablonları kullanabileceğinizi belirler.  
   
 > [!NOTE]
->  Visual Studio'nun Express sürümlerinde, önce projeyi oluşturmalısınız ve hedef olarak daha sonra değiştirebilirsiniz [hedef sürümü değiştirme](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) bu konunun ilerleyen bölümlerinde açıklanmıştır.  
+> Visual Studio'nun Express sürümlerinde, önce projeyi oluşturmalısınız ve hedef olarak daha sonra değiştirebilirsiniz [hedef sürümü değiştirme](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) bu konunun ilerleyen bölümlerinde açıklanmıştır.  
   
 #### <a name="to-target-a-version-when-you-create-a-project"></a>Projenizi oluştururken bir sürümü hedeflemek için  
   
@@ -46,7 +46,7 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
 2. Üst kısmındaki listede **yeni proje** iletişim kutusunda, projenizin hedeflemesini istediğiniz .NET Framework sürümünü seçin.  
   
     > [!NOTE]
-    >  Normalde, yalnızca bir .NET Framework sürümü Visual Studio ile birlikte yüklenir. Başka bir sürümü hedeflemek istiyorsanız, önce bu sürümün yüklü olduğundan emin olmalısınız. Bkz: [Visual Studio çoklu sürüm desteğine genel bakış](../ide/visual-studio-multi-targeting-overview.md).  
+    > Normalde, yalnızca bir .NET Framework sürümü Visual Studio ile birlikte yüklenir. Başka bir sürümü hedeflemek istiyorsanız, önce bu sürümün yüklü olduğundan emin olmalısınız. Bkz: [Visual Studio çoklu sürüm desteğine genel bakış](../ide/visual-studio-multi-targeting-overview.md).  
   
 3. Yüklü Şablonlar listesinde, oluşturmak, projeyi adlandırın ve ardından istediğiniz proje türünü seçin **Tamam** düğmesi.  
   
@@ -62,14 +62,14 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
      ![Visual Studio Solution Explorer Properties](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef Framework ve Platform araç kümesini değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. Özellikler penceresinin sol sütununda seçin **uygulama** sekmesi.  
   
      ![Visual Studio uygulama özellikleri uygulama sekmesi](../ide/media/vs-slnexplorer-properties-applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  Bir Windows Store uygulaması oluşturduktan sonra hedeflenen Windows ya da .NET Framework sürümü değiştirilemiyor.  
+    > Bir Windows Store uygulaması oluşturduktan sonra hedeflenen Windows ya da .NET Framework sürümü değiştirilemiyor.  
   
 3. İçinde **hedef Framework'ü** listesinde, istediğiniz sürümü seçin.  
   
@@ -78,7 +78,7 @@ Bu belge, proje oluştururken bir .NET Framework sürümünü hedefleyen bir pro
      Projenin yüklemesi kaldırılır. Yeniden yüklediğinde, seçtiğiniz .NET Framework sürümünü hedefler.  
   
     > [!NOTE]
-    >  Kodunuz hedeflediğinizden farklı bir .NET Framework sürümüne başvurular içeriyorsa, kodu derlediğinizde veya çalıştırdığınızda hata iletileri görülebilir. Bu hataları gidermek için başvuruları değiştirmeniz gerekir. Bkz: [.NET Framework hedefleme hatalarının sorunlarını giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
+    > Kodunuz hedeflediğinizden farklı bir .NET Framework sürümüne başvurular içeriyorsa, kodu derlediğinizde veya çalıştırdığınızda hata iletileri görülebilir. Bu hataları gidermek için başvuruları değiştirmeniz gerekir. Bkz: [.NET Framework hedefleme hatalarının sorunlarını giderme](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio çoklu sürüm desteğine genel bakış](../ide/visual-studio-multi-targeting-overview.md)   

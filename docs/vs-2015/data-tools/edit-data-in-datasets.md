@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425381"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
      Bu yöntem, fiziksel olarak kayıt kaldırmaz. Bunun yerine, kayıt silme işlemi için işaretler.  
   
     > [!NOTE]
-    >  Count özelliği alırsanız bir <xref:System.Data.DataRowCollection>, sonuçta elde edilen sayı silinme için işaretlenmiş kayıtları içerir. Doğru bir silme için işaretlenen olmayan kayıt sayısını almak için bakarak koleksiyon döngü <xref:System.Data.DataRow.RowState%2A> her kaydın özellik. (Kayıt silinmek üzere işaretlenmiş bir <xref:System.Data.DataRow.RowState%2A> , <xref:System.Data.DataRowState>.) Alternatif olarak, filtreleri satır durumuna dayalı bir veri kümesinin veri görünümü oluşturabilir ve buradan count özelliği edinin.  
+    > Count özelliği alırsanız bir <xref:System.Data.DataRowCollection>, sonuçta elde edilen sayı silinme için işaretlenmiş kayıtları içerir. Doğru bir silme için işaretlenen olmayan kayıt sayısını almak için bakarak koleksiyon döngü <xref:System.Data.DataRow.RowState%2A> her kaydın özellik. (Kayıt silinmek üzere işaretlenmiş bir <xref:System.Data.DataRow.RowState%2A> , <xref:System.Data.DataRowState>.) Alternatif olarak, filtreleri satır durumuna dayalı bir veri kümesinin veri görünümü oluşturabilir ve buradan count özelliği edinin.  
   
      Aşağıdaki örnek nasıl çağrılacağını gösterir <xref:System.Data.DataRow.Delete%2A> yöntemin ilk satırında işaretlemek için `Customers` tablo silindi olarak:  
   

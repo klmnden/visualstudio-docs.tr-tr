@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427463"
 ---
 # <a name="saving-a-custom-document"></a>Özel Belge Kaydetme
 Ortam tutamaçları **Kaydet**, **Kaydet**, ve **Tümünü Kaydet** komutları. Kullanıcı tıkladığında **Kaydet**, **Kaydet**, **veya Tümünü Kaydet** üzerinde **dosya** menüsü veya bir Tümünü Kaydet içinde aşağıdaki kaynaklanan çözümü kapatır işlem gerçekleşir.
@@ -39,7 +39,7 @@ Ortam tutamaçları **Kaydet**, **Kaydet**, ve **Tümünü Kaydet** komutları. 
      Özel bir düzenleyici söz konusu olduğunda belge veri nesnesi ile proje arasındaki iletişimi özeldir. Bu nedenle, bu iki nesne herhangi bir özel Kalıcılık konuları ele alınır.
 
     > [!NOTE]
-    >  Kendi Kalıcılık uygularsanız, çağırdığınızdan emin olun <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> zaman kazanmak için yöntemi. Dosyayı kaydetmek güvenli olduğundan emin olmak için bu yöntem denetler (örneğin, dosyayı salt okunur değildir).
+    > Kendi Kalıcılık uygularsanız, çağırdığınızdan emin olun <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> zaman kazanmak için yöntemi. Dosyayı kaydetmek güvenli olduğundan emin olmak için bu yöntem denetler (örneğin, dosyayı salt okunur değildir).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

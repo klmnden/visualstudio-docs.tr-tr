@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442357"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 
@@ -118,7 +118,7 @@ Yöntemi, bu konudaki kullanın:
 5. Değiştirin `{000...000}` grupları ve menü öğeleri tanımlayan GUID. Yeni bir GUID almak için kullanın **GUID Oluştur** aracındaki **Araçları** menüsü.
 
     > [!NOTE]
-    >  Daha fazla grup veya menü öğeleri eklerseniz, aynı GUID kullanabilirsiniz. İçin yeni değerler ancak kullanmalıdır `IDSymbols`.
+    > Daha fazla grup veya menü öğeleri eklerseniz, aynı GUID kullanabilirsiniz. İçin yeni değerler ancak kullanmalıdır `IDSymbols`.
 
 6. Bu yordamdan kopyaladığınız kodunda kendi dizelerle aşağıdaki dizelerden her örneğini değiştirin:
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Eklenen, aynı GUID değeri kullanın **Commands.vsct**.
 
 > [!NOTE]
->  VSCT dosyasının sembolleri bölümünü değiştirirseniz, ayrıca bu bildirimler eşleşecek şekilde değiştirmeniz gerekir. Ayrıca Package.tt sürüm numarası artmalıdır
+> VSCT dosyasının sembolleri bölümünü değiştirirseniz, ayrıca bu bildirimler eşleşecek şekilde değiştirmeniz gerekir. Ayrıca Package.tt sürüm numarası artmalıdır
 
  Menü komutlarınızı bu komutu kümenin bir parçası olarak kaydedin. `GetMenuCommands()` Diyagram, başlatıldıktan sonra çağrılır:
 

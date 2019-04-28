@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429189"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -318,7 +318,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
   Aşağıdaki tabloda, ek alt dizeler daha fazla ek açıklama anlamını nitelemek için ek açıklama adı eklenir.  Çeşitli alt dizeler olan `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, ve `_to_`.  
   
 > [!IMPORTANT]
->  COM yorumlama arabirimi ise bu ek açıklamalar COM biçimini kullanın. COM ek açıklamalar, başka bir tür arabirimiyle kullanmayın.  
+> COM yorumlama arabirimi ise bu ek açıklamalar COM biçimini kullanın. COM ek açıklamalar, başka bir tür arabirimiyle kullanmayın.  
   
  **Ek açıklamalar ve açıklamaları**  
   
@@ -474,7 +474,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
      Aralık (dahil) gelen parametre, alan veya sonuç bulunduğu `low` için `hi`.  Eşdeğer `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` uygun önceden eyalet veya il sonrası koşulları birlikte açıklamalı nesneye uygulanır.  
   
     > [!IMPORTANT]
-    >  "İçinde" ve "dışarı" olmak semantiği adlarını içerse de `_In_` ve `_Out_` yapmak **değil** bu ek açıklamalar için geçerlidir.  
+    > "İçinde" ve "dışarı" olmak semantiği adlarını içerse de `_In_` ve `_Out_` yapmak **değil** bu ek açıklamalar için geçerlidir.  
   
 - `_Pre_equal_to_(expr)`  
   

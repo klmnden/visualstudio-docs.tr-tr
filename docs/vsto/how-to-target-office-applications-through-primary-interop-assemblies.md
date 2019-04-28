@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421037"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme
   Yeni bir Office projesi oluşturduğunuzda, Visual Studio, projenizi yaratmanız için gerekli olan Microsoft Office birincil birlikte çalışma derlemeleri (PIA) başvurular otomatik olarak ekler. Aşağıdaki senaryolarda diğer pıa'lara başvuru eklemeniz gerekir:
@@ -45,7 +45,7 @@ ms.locfileid: "60079643"
      Projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da sonraki **birlikte çalışma türlerini katıştır** özelliği için bütünleştirilmiş kod başvurusu **True** varsayılan olarak. Bu ayarı kullanarak, son kullanıcı bilgisayarlarında PIA çözümünüzü gerektirmez. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    >  Her zaman Office projelerinde kullanarak Office PIA başvuruları eklemek **.NET** sekmesinde **Başvuru Ekle** iletişim yerine **COM** sekmesi. Daha fazla bilgi için [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
+    > Her zaman Office projelerinde kullanarak Office PIA başvuruları eklemek **.NET** sekmesinde **Başvuru Ekle** iletişim yerine **COM** sekmesi. Daha fazla bilgi için [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
 
 4. **Tamam**'ı tıklatın.
 

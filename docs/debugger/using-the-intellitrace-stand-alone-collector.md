@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407622"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace tek başına toplayıcıyı kullanma (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077661"
  IntelliTrace'i çalışırken izleyin: [Toplama ve analiz etme (kanal 9 videosu) hata ayıklama için üretimde IntelliTrace verilerini](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Ayrıca web ve SharePoint uygulamaları kullanarak uzak makinelerde çalışan için aynı IntelliTrace verisi toplayabilir **Microsoft Monitoring Agent** içinde **izleme** modu.
+> Ayrıca web ve SharePoint uygulamaları kullanarak uzak makinelerde çalışan için aynı IntelliTrace verisi toplayabilir **Microsoft Monitoring Agent** içinde **izleme** modu.
 >
->  Aracısı'nı çalıştırarak performansı ile ilgili olayları IntelliTrace verisi toplayabilir **İzleyici** modu. **İzleyici** modu olan küçük bir performans etkisi **izleme** modu veya **IntelliTrace collector**. Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirir. Bkz: [Microsoft Monitoring Agent'ı kullanarak](../debugger/using-the-microsoft-monitoring-agent.md).
->  IntelliTrace collector işlemi anlık görüntülerini desteklemiyor.
+> Aracısı'nı çalıştırarak performansı ile ilgili olayları IntelliTrace verisi toplayabilir **İzleyici** modu. **İzleyici** modu olan küçük bir performans etkisi **izleme** modu veya **IntelliTrace collector**. Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirir. Bkz: [Microsoft Monitoring Agent'ı kullanarak](../debugger/using-the-microsoft-monitoring-agent.md).
+> IntelliTrace collector işlemi anlık görüntülerini desteklemiyor.
 
  **Gereksinimler**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077661"
 - Visual Studio .iTrace dosyalarını açmak için Kurumsal (ancak değil Professional veya Community sürümlerini) bir geliştirme bilgisayarı ya da diğer bilgisayar üzerinde
 
   > [!NOTE]
-  >  Sembol (.pdb) dosyalarını kaydettiğinizden emin olun. IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
+  > Sembol (.pdb) dosyalarını kaydettiğinizden emin olun. IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
 
   **SSS**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077661"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  Süre (**.**) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.
+       > Süre (**.**) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Toplayıcı dizini için izinleri ayarla
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077661"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
 
     > [!IMPORTANT]
-    >  Bu komutu çalıştırdıktan sonra yazın **Y** veri toplamaya başlamak istediğinizi onaylayın.
+    > Bu komutu çalıştırdıktan sonra yazın **Y** veri toplamaya başlamak istediğinizi onaylayın.
 
      Örneğin, bir SharePoint uygulamasından veri toplamak için **SharePoint - 80** uygulama havuzu:
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077661"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`
 
     > [!IMPORTANT]
-    >  Bu komutu çalıştırdıktan sonra yazın **Y** veri toplamayı durdurmak istediğinizi onaylamak için. Aksi halde, Toplayıcı, verileri, iTrace toplama dosyası kilitli kalır veya dosya hiç yararlı veri içermeyebilir devam edebilir.
+    > Bu komutu çalıştırdıktan sonra yazın **Y** veri toplamayı durdurmak istediğinizi onaylamak için. Aksi halde, Toplayıcı, verileri, iTrace toplama dosyası kilitli kalır veya dosya hiç yararlı veri içermeyebilir devam edebilir.
 
 6. [Visual Studio Enterprise'da .iTrace dosyasını açın](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077661"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise'da .iTrace dosyasını açın
 
 > [!NOTE]
->  IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
+> IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarınız olmalıdır. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
 
 1. .İTrace dosyasını taşıyın veya Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) olan bir bilgisayara kopyalayın.
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077661"
      Visual Studio gösterir **IntelliTrace özeti** sayfası. Çoğu bölümde, olayları ve diğer nesneleri gözden geçirebilir, bir öğe seçin ve IntelliTrace ile hata ayıklamaya başlamak bir olayın gerçekleştiği yerde ve. Bkz: [kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarını geliştirme makinenizde olması gerekir. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
+    > IntelliTrace ile hata ayıklamak ve kodunuz içinde adım adım için eşleşen kaynak dosyaları ve sembol dosyalarını geliştirme makinenizde olması gerekir. Bkz: [dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?
  Dolayısıyla, uygulamanızın performansı üzerindeki etkisi Intellitrace'in topladığı veriye ve çözümlediği kod üzerinde IntelliTrace pek çok veri toplayabilir. Bkz: [üretim sunucularında IntelliTrace koleksiyonu en iyileştirme](http://go.microsoft.com/fwlink/?LinkId=255233).

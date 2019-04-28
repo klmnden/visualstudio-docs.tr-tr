@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428227"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
 2. SimpleWPFApp uygulaması için bir masaüstü kısayolu oluşturun. SimpleWPFApp.exe sağ tıklatın ve seçin **kopyalama**. Masaüstünüzde sağ tıklatın ve seçin **kısayolu Yapıştır**.  
   
     > [!TIP]
-    >  Uygulamaya bir kısayol eklenmesi, uygulamayı hızlıca başlatmanızı sağladığından uygulamanız açısından Kodlanmış UI testleri ekleyip değiştirmenizi kolaylaştırır.  
+    > Uygulamaya bir kısayol eklenmesi, uygulamayı hızlıca başlatmanızı sağladığından uygulamanız açısından Kodlanmış UI testleri ekleyip değiştirmenizi kolaylaştırır.  
   
 3. Çözüm Gezgini'nde çözüme sağ tıklayın, seçin **Ekle** seçip **yeni proje**.  
   
@@ -154,7 +154,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
      ![Kaydı Duraklat](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Masaüstü üzerinde gerçekleştirilen tüm eylemler kaydedilir. Hassas veriler kayda eklenmesini açabilir eylemleri gerçekleştiriyorsanız kaydı duraklatın.  
+    > Masaüstü üzerinde gerçekleştirilen tüm eylemler kaydedilir. Hassas veriler kayda eklenmesini açabilir eylemleri gerçekleştiriyorsanız kaydı duraklatın.  
   
 9. Masaüstü kısayolunu kullanarak SimpleWPFApp başlatın.  
   
@@ -203,7 +203,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
 3. Bu sorunu düzeltmek için kodlanmış UI testinin CheckBox denetiminin kullanarak devam etmeden önce etkin olmasını bekleyin yapabilir `WaitForControlEnabled()` yöntemi.  
   
     > [!WARNING]
-    >  UIMap.Designer.cs dosyasını değiştirmeyin. UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu her oluşturduğunuzda, UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
+    > UIMap.Designer.cs dosyasını değiştirmeyin. UIMap - Kodlanmış UI Test Oluşturucusu kullanarak kodu her oluşturduğunuzda, UIMapDesigner.cs dosyasında yaptığınız herhangi bir kod değişikliğinin üzerine yazılır. Kayıtlı bir yöntemi değiştirmeniz gerekiyorsa, yöntemi UIMap.cs dosyasına kopyalayıp yeniden adlandırmanız gerekir. UIMap.cs dosyası, UIMapDesigner.cs dosyasındaki yöntemleri ve özellikleri geçersiz kılmak için kullanılabilir. Kodlanmış UITest.cs dosyasındaki orijinal yönteme başvuruyu kaldırıp yeniden adlandırılan yöntem adıyla değiştirmelisiniz.  
   
 4. Çözüm Gezgini'nde bulun **UIMap.uitest** kodlanmış UI test projenizdeki.  
   
@@ -224,7 +224,7 @@ Bu yönergede kodlanmış UI testinin nasıl oluşturulduğunu, düzenlendiğini
      Test yöntemi güncelleştirmeleri UIMap.Designer dosyasında kaydedilir.  
   
     > [!CAUTION]
-    >  Yöntemi taşıdığınızda Kodlanmış UI Test Düzenleyicisi'ni kullanarak artık düzenleyemezsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız.  
+    > Yöntemi taşıdığınızda Kodlanmış UI Test Düzenleyicisi'ni kullanarak artık düzenleyemezsiniz. Özel kodunuzu eklemeli ve Kod Düzenleyicisi'ni kullanarak korumalısınız.  
   
 10. Yöntemden Yeniden Adlandır `SimpleAppTest()` için `ModifiedSimpleAppTest()`  
   

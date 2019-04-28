@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439222"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
 ```  
   
 > [!NOTE]
->  Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürümü için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm için 8.0.0.0 ayarlayın.  
+> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürümü için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm için 8.0.0.0 ayarlayın.  
   
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlama  
  Sağlayıcı belirli bilgileri veri kaynaklarına erişim için bağlantı dizelerini tanımlar. Bağlantı dizelerini yapılandırma dosyalarında tanımlanan bir uygulama arasında yeniden kullanılabilir veri sağlayıcısı bilgileri sağlar. Bu bölümde, özel yapılandırma bölümünde tanımlanan veri kaynakları tarafından kullanılacak olan iki bağlantı dizesi oluşturun.  
@@ -266,10 +266,10 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
 4. Çözümünüzü oluşturun ve MyTestMethod ve MyTestMethod2 testleri çalıştırın.  
   
 > [!IMPORTANT]
->  Böylece bunlar dağıtım dizinine öğesindeki teste erişilebilir veri kaynakları gibi öğeleri dağıtın.  
+> Böylece bunlar dağıtım dizinine öğesindeki teste erişilebilir veri kaynakları gibi öğeleri dağıtın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [Oluşturma ve varolan kod için birim testleri çalıştırma](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Nasıl yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)
+ [Nasıl yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

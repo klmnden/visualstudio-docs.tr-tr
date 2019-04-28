@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438185"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: Projeleri hedef platformlar için yapılandırma
 
@@ -46,7 +46,7 @@ Visual Studio uygulamalarınızı 64 bit platformlar da dahil olmak üzere, fark
     2. İçinde **yazın veya seçin yeni platformu** listesinde **x64**.
 
         > [!NOTE]
-        >  Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.
+        > Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.
 
     3. Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.
 

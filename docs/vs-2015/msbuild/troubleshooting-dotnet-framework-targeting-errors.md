@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430444"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework Hedefleme Hatalarının Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır soru
 ```  
   
 > [!NOTE]
->  Projenizi kapatıp sonra ayrıca tüm başvuruları doğru çözümleyemiyorsa emin olmak için yeniden oluşturmalısınız.  
+> Projenizi kapatıp sonra ayrıca tüm başvuruları doğru çözümleyemiyorsa emin olmak için yeniden oluşturmalısınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   

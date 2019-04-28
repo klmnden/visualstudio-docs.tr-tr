@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419476"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kaydetme
   Bir çalışma kitabını kaydetmek için çeşitli yollar vardır. Bir çalışma kitabı yolu değiştirmeden kaydedebilirsiniz. Çalışma kitabını önce kaydedilmedi, yolu belirterek, çalışma kitabını kaydetmeniz gerekir. Açık bir yol Microsoft Office Excel dosya oluşturulduğunda verilen ada sahip geçerli klasöre kaydeder. Ayrıca, çalışma kitabını Aç bellekte değiştirmeden çalışma kitabının bir kopyasını kaydedebilirsiniz.
@@ -46,7 +46,7 @@ ms.locfileid: "60093065"
  Belirtilen çalışma kitabı, bir dosya biçimi, bir parola, bir erişim modu ve isteğe bağlı olarak belirterek yeni bir konuma veya yeni bir adla kaydedebilirsiniz.
 
 > [!NOTE]
->  Ayarlamak isteyebilirsiniz <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> özelliğini **False** etkileşimi gerektirir çünkü bazı biçimlerde ile yeni bir yol çalışma kitabını kaydetmeden önce. Bu özelliği ayarlamak **False** Excel'in tüm varsayılanlar kullanmasına neden olur.
+> Ayarlamak isteyebilirsiniz <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> özelliğini **False** etkileşimi gerektirir çünkü bazı biçimlerde ile yeni bir yol çalışma kitabını kaydetmeden önce. Bu özelliği ayarlamak **False** Excel'in tüm varsayılanlar kullanmasına neden olur.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Belge düzeyi özelleştirme ile ilişkilendirilmiş bir çalışma kitabını kaydetmek için
 

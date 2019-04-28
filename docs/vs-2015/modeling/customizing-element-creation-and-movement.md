@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433278"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Öğe Oluşturma ve Hareketini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
    Örneğin, veri modelinde yeni konumuna kullanarak birleştirilmiş öğesinde özellikleri ayarlayabilirsiniz.  
   
 > [!NOTE]
->  Özel birleştirme kodu yazarsanız, bu EMD kullanılarak gerçekleştirilen yalnızca birleştirmeler etkiler. Aynı nesne türünü birleştirme diğer EMDs varsa veya EMD kullanmadan bu nesneleri oluşturan diğer özel kodu varsa, ardından bunların özel birleştirme kodunuz tarafından etkilenmez.  
+> Özel birleştirme kodu yazarsanız, bu EMD kullanılarak gerçekleştirilen yalnızca birleştirmeler etkiler. Aynı nesne türünü birleştirme diğer EMDs varsa veya EMD kullanmadan bu nesneleri oluşturan diğer özel kodu varsa, ardından bunların özel birleştirme kodunuz tarafından etkilenmez.  
 >   
->  Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).  
+> Yeni bir öğe veya yeni ilişki her zaman özel kodunuz tarafından işlendiğinden emin olmak istiyorsanız, tanımlama göz önünde bir `AddRule` gömme ilişkisinde ve `DeleteRule` öğenin etki alanı sınıfı üzerinde. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Örnek: Özel kod olmadan bir EMD tanımlama  
  Aşağıdaki örnek, bir öğe ve bir bağlayıcı aynı anda var olan bir şekil araç kutusundan sürükleyip oluşturmasına olanak verir. Örneğin DSL tanımı için bir EMD ekler. Bu değişiklikten önce kullanıcıların araçları mevcut şekiller üzerine değil ancak diyagram üzerine sürükleyebilirsiniz.  

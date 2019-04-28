@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438383"
 ---
 # <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Bu konu, uygulamalarınızı Windows Evrensel uygulamaları için bir performans
 4. İsteğe bağlı olarak, kullanıcı işaretlerini kullanarak kod ekleme [kod analizi için işaretleyin](#ProfileMark).  
   
     > [!TIP]
-    >  Kullanıcı işaretleri profil oluşturucu verileri görüntülerken yanıt verme hızını sorunu belirlemenize yardımcı olabilir. Örneğin, bir yanıt verdiğini soruna neden olan kod bölümünün başında ve sonunda bir kullanıcı işareti ekleyebilirsiniz.  
+    > Kullanıcı işaretleri profil oluşturucu verileri görüntülerken yanıt verme hızını sorunu belirlemenize yardımcı olabilir. Örneğin, bir yanıt verdiğini soruna neden olan kod bölümünün başında ve sonunda bir kullanıcı işareti ekleyebilirsiniz.  
   
 5. Önceki bölümdeki yönergeleri takip ederek kullanıcı Arabirimi yanıtlama hızı Profiler çalıştırın.  
   
@@ -127,7 +127,7 @@ Bu konu, uygulamalarınızı Windows Evrensel uygulamaları için bir performans
     - Belirtilen diğer olayları [Profiler olay başvurusunu](#ProfilerEvents).  
   
     > [!TIP]
-    >  Profil Oluşturucu kullanılabilir bilgilerin çoğu zaman çizelgesi ayrıntıları grafikte görünür.  
+    > Profil Oluşturucu kullanılabilir bilgilerin çoğu zaman çizelgesi ayrıntıları grafikte görünür.  
   
 12. CPU kullanımı veya görsel üretilen iş (FPS) grafik seçili ile bir alanı seçin **yakınlaştırmak** (daha ayrıntılı bilgi almak için düğme ya da bağlam menüsü). Zaman Çizelgesi grafiği değişerek yalnızca seçilen zaman aralığı için.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  Kullanıcı işareti fare işaretçisini getirdiğinizde olayın açıklamasını bir araç ipucu olarak görüntülenir. Gereksinim duyduğunuz kadar çok kullanıcı işaretlerini ekleyebilirsiniz.  
   
 > [!NOTE]
->  `console.timeStamp`, bir Chrome komutu, bir kullanıcı işareti da görünür.  
+> `console.timeStamp`, bir Chrome komutu, bir kullanıcı işareti da görünür.  
   
  Tek kullanıcı işareti ve araç ipucu ile tanılama cetvel aşağıda gösterilmiştir.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  CPU kullanım grafiği, CPU kullanımı değerleri tek bir yüzde değeri bir veya daha fazla CPU için birleştirme tüm uygulama iş parçacığı üzerinde harcanan süreyi gösterir. Birden fazla CPU kullanımda olduğunda değerin CPU kullanımı yüzde 100 aşabilir.  
   
 > [!NOTE]
->  GPU kullanımı grafiğinde görünmüyor.  
+> GPU kullanımı grafiğinde görünmüyor.  
   
  Bu örnek, CPU kullanım grafiği nasıl göründüğünü gösterir:  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  Grafik kullanıcı Arabirimi iş parçacığı iş ve iş görsel güncelleştirmeleri yavaş katkıda bulunmak arka plan iş parçacıklarında gösterir. Graf JavaScript JIT iş, zaman uyumsuz GPU işi, (örneğin, iş RuntimeBroker.exe ve dwm.exe) ana bilgisayar işlemi dışında gerçekleştirilen iş veya iş için Windows çalışma zamanı henüz (disk g/ç gibi) için izleme eklenmiş profil oluşturma henüz alanlarını göstermez.  
   
 > [!TIP]
->  Arka plan iş parçacığında bir olay meydana geldiğinde, iş parçacığı kimliği olay adının yanındaki köşeli ayraç içinde görünür.  
+> Arka plan iş parçacığında bir olay meydana geldiğinde, iş parçacığı kimliği olay adının yanındaki köşeli ayraç içinde görünür.  
   
  Bu örnek, olay için bir DOM olay dinleyicisi tıkladığınızda seçili ayrıntılarını graph görülüyor ne zaman çizelgesini gösterir:  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Seçilen olay ve tüm alt öğelerini renk kodlu özetini zamanlayıcıları, olay dinleyicileri (DOM olayları), Düzen olayları ve animasyonlu çerçeve geri çağırmalarını için görünür **sınırları içeren zaman özeti** bölümü (renk kodlu halka). Her renk kodlu dilimi görüntünün bir olay türünü temsil eder. Araç ipuçları, olay türü adını sağlayın.  
   
     > [!TIP]
-    >  Zaman Çizelgesi ayrıntıları grafiği ve **sınırları içeren zaman özeti** iyileştirme için alanları tanımlamanıza yardımcı olabilir. Bu görünüm ya da çok sayıda küçük görevlere gösteriyorsa, olay iyileştirme için bir aday olabilir. Örneğin, bir uygulama düzenini ve HTML olayları ayrıştırma çok sayıda içinde elde edilen yenileme DOM öğeleri sık de olabilir. Bu iş'toplu işlem performansına mümkün olabilir.  
+    > Zaman Çizelgesi ayrıntıları grafiği ve **sınırları içeren zaman özeti** iyileştirme için alanları tanımlamanıza yardımcı olabilir. Bu görünüm ya da çok sayıda küçük görevlere gösteriyorsa, olay iyileştirme için bir aday olabilir. Örneğin, bir uygulama düzenini ve HTML olayları ayrıştırma çok sayıda içinde elde edilen yenileme DOM öğeleri sık de olabilir. Bu iş'toplu işlem performansına mümkün olabilir.  
   
 ### <a name="FilterTimelineDetails"></a> Filtre zaman çizelgesi ayrıntıları  
  Belirli bir olay için zaman çizelgesi Ayrıntıları görünümünde seçerek filtreleyebilirsiniz **olaya filtre** belirli bir olaya ilişkin bağlam menüsünden. Bu seçeneği belirlediğinizde, zaman çizelgesi ve ızgara görünümü seçilen olaya kapsanır. CPU kullanım grafiği seçiminde de belirli bir olay için kapsamları.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  UI iş parçacığı faaliyeti filtrelemek için Temizle **UI etkinliği** seçeneği.  
   
 > [!TIP]
->  Bu seçeneği temizleyin ve ağ gecikmesi sorunları araştırmak için ağ trafiği seçeneğini belirleyin.  
+> Bu seçeneği temizleyin ve ağ gecikmesi sorunları araştırmak için ağ trafiği seçeneğini belirleyin.  
   
  Kullanıcı ölçümleri filtrelemek için Temizle **kullanıcı ölçümleri** seçeneği. Kullanıcı ölçümleri, alt ile üst düzey olaylardır.  
   

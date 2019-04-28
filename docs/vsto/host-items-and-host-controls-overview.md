@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427971"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Konak öğelerine ve denetimlerine genel bakış
   Konak denetimlerinin ve konak öğelerinin programlama modeli için Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office çözümlerini sağlamaya yardımcı türleridir. Konak denetimlerinin ve konak öğelerinin Microsoft Office Word ve Microsoft Office Excel, COM, Windows Forms denetimleri gibi yönetilen nesnelerle etkileşim gibi daha fazla alan nesne modelleri ile etkileşim kurma olun.
@@ -113,7 +113,7 @@ ms.locfileid: "56607115"
   Windows Forms denetimleri, Office çözümlerinde doğrudan Word ve Excel belge yüzeyine ekleyerek de kullanabilirsiniz. Daha fazla bilgi için [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
->  Bir Word alt konak veya Windows Forms denetimleri ekleme desteklenmiyor.
+> Bir Word alt konak veya Windows Forms denetimleri ekleme desteklenmiyor.
 
 ### <a name="add-host-controls-to-your-documents"></a>Konak denetimleri, belgelere ekleme
  Belge düzeyinde projelerde, konak denetimleri Word belgelerine veya Excel çalışma sayfaları için tasarım zamanında aşağıdaki yollarla ekleyebilirsiniz:
@@ -148,7 +148,7 @@ ms.locfileid: "56607115"
  Bir konak denetimi sürüklediğinizde **araç kutusu** belgenize denetimi otomatik olarak denetim türü, sonunda artan bir sayı ile kullanarak olarak adlandırılır. Örneğin, yer işaretleri adlandırılır **bookmark1**, **bookmark2**ve benzeri. Denetim eklemek için yerel bir işlev Word veya Excel kullanıyorsanız, kodu oluşturduğunuz sırada belirli bir ad verebilirsiniz. Değerini değiştirerek denetimlerinizi de yeniden adlandırabilirsiniz **adı** özelliğinde **özellikleri** penceresi.
 
 > [!NOTE]
->  Konak denetimleri adı ayrılmış sözcükler kullanılamaz. Örneğin eklerseniz, bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetiminin çalışma sayfasına ve adla değiştirin **sistem**, projeyi oluşturduğunuzda hatalar oluşur.
+> Konak denetimleri adı ayrılmış sözcükler kullanılamaz. Örneğin eklerseniz, bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetiminin çalışma sayfasına ve adla değiştirin **sistem**, projeyi oluşturduğunuzda hatalar oluşur.
 
 ### <a name="delete-host-controls"></a>Konak denetimleri Sil
  Belge düzeyinde projelerde, konak denetimleri tasarım zamanında denetimi Word belgesi veya Excel çalışma sayfası seçip tuşlarına basarak silebilirsiniz **Sil** anahtarı. Ancak kullanmalıdır **ad tanımla** silmek için Excel'de iletişim kutusu <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri.
@@ -160,13 +160,13 @@ ms.locfileid: "56607115"
  Çözüm, son kullanıcıların, belgeye çalışma zamanında konak kontrolü silerseniz, beklenmedik bir şekilde başarısız olabilir. Belge koruma özelliklerini Word ve Excel konak denetimleri silinmesini korumak için kullanabilirsiniz. Daha fazla bilgi için [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
 
 > [!NOTE]
->  Program aracılığıyla denetimleri sırasında kaldırmayın `Shutdown` belge veya çalışma olay işleyicisi. UI öğeleri artık kullanılabilir `Shutdown` olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisi aşağıdaki gibi ekleyin `BeforeClose` veya `BeforeSave`.
+> Program aracılığıyla denetimleri sırasında kaldırmayın `Shutdown` belge veya çalışma olay işleyicisi. UI öğeleri artık kullanılabilir `Shutdown` olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisi aşağıdaki gibi ekleyin `BeforeClose` veya `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Konak denetimi olaylarına karşı programlama
  Konak denetimleri Office nesnelerinin genişleten bir yöntem, olayları eklemektir. Örneğin, <xref:Microsoft.Office.Interop.Excel.Range> Excel'de nesne ve <xref:Microsoft.Office.Interop.Word.Bookmark> Word nesne olayları gerekmez ancak [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] programlanabilir olayları ekleyerek bu nesneleri genişletir. Erişebilir ve bu olaylara karşı aynı kodu Windows Forms'da denetimlerin olaylarını erişim yol: olay aşağı açılan listeden Visual Basic ve C# olay özellik sayfası aracılığıyla. Daha fazla bilgi için [izlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
->  Ayarlı değil <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> özelliği <xref:Microsoft.Office.Interop.Excel.Application> Excel'e nesnesinde **false**. Bu özelliği ayarlamak **false** Excel konak denetimleri dahil, herhangi bir olayı göndermesini engelleme engeller.
+> Ayarlı değil <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> özelliği <xref:Microsoft.Office.Interop.Excel.Application> Excel'e nesnesinde **false**. Bu özelliği ayarlamak **false** Excel konak denetimleri dahil, herhangi bir olayı göndermesini engelleme engeller.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

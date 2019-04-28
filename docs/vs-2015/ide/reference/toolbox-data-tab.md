@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419788"
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663922"
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç kutusu** ilişkili bir tasarımcı sahip bir proje oluşturduğunuzda görünür. **Araç kutusu** görüntülemek istiyorsanız varsayılan olarak Visual Studio tümleşik geliştirme ortamı; görünen **araç kutusu**seçin **araç kutusu** gelen**Görünümü** menüsü.  
   
 > [!TIP]
->  Veri Kaynağı Yapılandırma Sihirbazı'nı çalıştıran otomatik olarak oluşturun ve çoğu veri öğelerini yapılandırın. Daha fazla bilgi için [Visual Studio ile veri uygulamaları oluşturma](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Veri Kaynağı Yapılandırma Sihirbazı'nı çalıştıran otomatik olarak oluşturun ve çoğu veri öğelerini yapılandırın. Daha fazla bilgi için [Visual Studio ile veri uygulamaları oluşturma](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>UI öğe listesi  
  Bir bileşen için .NET Framework başvuru sayfasına doğrudan gitmek için basın **F1** öğesine **araç kutusu** veya tasarımcının tepsisinde bileşen öğesi.  

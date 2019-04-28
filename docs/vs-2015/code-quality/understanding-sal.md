@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435395"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` işlev tarafından değiştirilebilir bir işaretçi parametresi açıklama eklemek için kullanılır. İşaretçi çağırmadan önce geçerli başlatılmış veriler işaret etmelidir ve değişiklik olsa bile, geçerli bir değer geri hala olmalıdır. Ek açıklama işlevi serbestçe okuma ve tek öğeli arabelleğe yazmak belirtir. Çağıranın arabellek sağlayın ve başlatmanız gerekir.  
   
 > [!NOTE]
->  Gibi `_Out_`, `_Inout_` değiştirilebilir bir değer için uygulamanız gerekir.  
+> Gibi `_Out_`, `_Inout_` değiştirilebilir bir değer için uygulamanız gerekir.  
   
 ```cpp  
   

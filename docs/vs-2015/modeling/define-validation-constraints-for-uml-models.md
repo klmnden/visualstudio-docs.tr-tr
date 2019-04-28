@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422717"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Modelin belirttiğiniz koşulu karşılayıp karşılamadığını test eden do�
     Daha fazla bilgi için [doğrulama kısıtlamayı değerlendirme](#Implementing).  
   
    > [!IMPORTANT]
-   >  Emin olun, **.cs** dosyalarınızda aşağıdaki `using` deyimi:  
+   > Emin olun, **.cs** dosyalarınızda aşağıdaki `using` deyimi:  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  Doğrulama yöntemi, uygulamak istediğiniz doğrulama kısıtlamasının doğru veya yanlış olup olmadığını belirlemeniz gerekir. TRUE ise, hiçbir şey yapmamalıdır. False, bunu tarafından sağlanan yöntemleri kullanarak hatayı bildirmelidir varsa `ValidationContext` parametresi.  
   
 > [!NOTE]
->  Doğrulama yöntemlerinin modeli değiştirmemesi gerekir. Garantisi yoktur ne zaman veya ne sırada kısıtlamaları yürütüleceğinin. Doğrulama çalışması içinde doğrulama yönteminin birbirini izleyen yürütmeleri arasında bilgi geçirmek varsa, altında açıklanan bağlam önbelleğini kullanabilirsiniz [koordine birden çok doğrulamayı düzenleme](#ContextCache).  
+> Doğrulama yöntemlerinin modeli değiştirmemesi gerekir. Garantisi yoktur ne zaman veya ne sırada kısıtlamaları yürütüleceğinin. Doğrulama çalışması içinde doğrulama yönteminin birbirini izleyen yürütmeleri arasında bilgi geçirmek varsa, altında açıklanan bağlam önbelleğini kullanabilirsiniz [koordine birden çok doğrulamayı düzenleme](#ContextCache).  
   
  Örneğin, her türün (sınıf, arabirim veya numaralandırıcı) en az üç karakter uzunluğunda bir ad olduğundan emin olmak istiyorsanız, bu yöntemi kullanabilirsiniz:  
   

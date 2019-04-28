@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431025"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullanıcının bilgisayarında Windows Yükleyici bileşenlerini (bazen WICs veya yalnızca bileşenleri olarak adlandırılır) olarak adlandırılan birimler içinde bu görevleri gerçekleştirmeye kaldırır. Bir GUID, yükleme ve başvuru sayımı Windows Installer kullanarak ayarları için temel birimdir her WIC tanımlar.
@@ -53,7 +53,7 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
  İki kural kümesi kurulumunuzu ait bileşenleri kaynaklarında dağıtımını belirleyin. İkinci Küme yükleme yazarı olarak uygulamalıdır sırada bir kural kümesi Windows Installer kendisi tarafından korunur.
 
 > [!NOTE]
->  Yalnızca .msi dosyasının bir doğrulama çalıştırırsanız, Windows Installer kural zorlama gerçekleşir. Bununla birlikte, bu kurallar en iyi yöntemler olarak değerlendirilecek dikkatli olmalıdır. Daha fazla bilgi için [yükleme veritabanı doğrulanıyor](/windows/desktop/Msi/validating-an-installation-database) ve [paket doğrulama](/windows/desktop/Msi/package-validation).
+> Yalnızca .msi dosyasının bir doğrulama çalıştırırsanız, Windows Installer kural zorlama gerçekleşir. Bununla birlikte, bu kurallar en iyi yöntemler olarak değerlendirilecek dikkatli olmalıdır. Daha fazla bilgi için [yükleme veritabanı doğrulanıyor](/windows/desktop/Msi/validating-an-installation-database) ve [paket doğrulama](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Yükleyici tarafından zorlanan kuralları
 

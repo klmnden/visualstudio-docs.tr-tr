@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431045"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Nasıl yapılır: XML Düzenleyicisinden XSLT Dönüştürmesi Yürütme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ XML Düzenleyicisi'ni dönüştürmeyi gerçekleştirmek ve çıktısını gör�
 3. Tıklayın **ShowXSL çıkış** düğmesini **XML Düzenleyicisi** araç çubuğu.  
   
     > [!NOTE]
-    >  XML belge ile ilişkilendirilmiş hiç stil sayfası varsa, bir iletişim kutusu kullanmak için stil sayfası girmenizi ister.  
+    > XML belge ile ilişkilendirilmiş hiç stil sayfası varsa, bir iletişim kutusu kullanmak için stil sayfası girmenizi ister.  
     >   
     >  XSLT dönüşümü sonuç çıktısı, yeni bir belge penceresi görüntülenir.  
   
@@ -51,7 +51,7 @@ XML Düzenleyicisi'ni dönüştürmeyi gerçekleştirmek ve çıktısını gör�
 2. Bir XML belgesinde belirtin **giriş** belge alanını **özellikleri** penceresi.  
   
     > [!NOTE]
-    >  XML belge dönüştürme için kullanılan giriş belgesidir. XSLT dönüşümü başlatıldığında, bir belge belirtilmezse **Dosya Aç** iletişim kutusu görünür ve o anda bir belge belirtebilirsiniz.  
+    > XML belge dönüştürme için kullanılan giriş belgesidir. XSLT dönüşümü başlatıldığında, bir belge belirtilmezse **Dosya Aç** iletişim kutusu görünür ve o anda bir belge belirtebilirsiniz.  
   
 3. Tıklayın **ShowXSLT çıkış** düğmesini **XML Düzenleyicisi** araç çubuğu.  
   

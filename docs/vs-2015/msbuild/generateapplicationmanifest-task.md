@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424140"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,10 +90,10 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
  Bu basit olası bildirim oluşturma senaryosunu göstermektedir burada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bildirimleri, tek bir program için oluşturulur. Bildirimi için bir derlemeden bir varsayılan adını ve kimlik olayla.  
   
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
   
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -143,10 +143,10 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
  Kimliğini ve adını açıkça belirtilmesi dışında bu örnek önceki örneğe benzerdir. Ayrıca, bu örnek, yüklü bir uygulama yerine çevrimiçi bir uygulama olarak yapılandırılır.  
   
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
   
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -201,10 +201,10 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
  Bu örnekte `GenerateApplicationManifest` ve `GenerateDeploymentManifest` oluşturmak için görevler [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve dağıtım birden çok dosya ve derlemesi olan bir uygulama için bildirimleri.  
   
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
   
 > [!NOTE]
->  Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
+> Daha fazla bilgi için `Thumbprint` kullanılan özellik `SignFile` görev Bu örnekte, bkz: [SignFile görevi](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -321,7 +321,7 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
  Bu örnek uygulamayı XCOPY dağıtılabilir yararlanarak ücretsiz COM kayıt yapma, Test.exe.manifest üretir.  
   
 > [!NOTE]
->  Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
+> Aşağıdaki örnekte, tüm uygulama ikilileri, bildirim oluşturma görünüşlerine odaklanabilmek için önceden oluşturulmuş. Bu örnek tam olarak çalışan üretir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım.  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

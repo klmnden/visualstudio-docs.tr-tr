@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431953"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters'ı kullanarak veri kümelerini doldurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656784"
 Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya belirttiğiniz saklı yordamlar göre veritabanındaki verilerle doldurur. TableAdapter'ları da gerçekleştirebilirsiniz ekler, güncelleştirir ve veri kümesine yaptığınız değişiklikleri kalıcı hale getirmek için veritabanında siler. Ayrıca, belirli bir tabloya ilişkisiz genel komutları da verebilir.  
   
 > [!NOTE]
->  TableAdapter bağdaştırıcılarını Visual Studio tasarımcılar tarafından oluşturulur. Veri kümeleri programlı olarak oluşturuyorsanız, bir .NET Framework sınıf olan DataAdapter'ni kullanın.  
+> TableAdapter bağdaştırıcılarını Visual Studio tasarımcılar tarafından oluşturulur. Veri kümeleri programlı olarak oluşturuyorsanız, bir .NET Framework sınıf olan DataAdapter'ni kullanın.  
   
  TableAdapter işlemleri hakkında ayrıntılı bilgi için doğrudan aşağıdaki konulardan birine atlayabilirsiniz:  
   
@@ -98,7 +98,7 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
  Bir TableAdapter kullandığınızda, aynı işlemleri genelde uyguladığınız komutlarla etkin bir şekilde gerçekleştirir. Örneğin, bağdaştırıcının çağırdığınızda `Fill` yöntemi, bağdaştırıcı veri komutu çalıştırır kendi `SelectCommand` özelliği ve bir veri okuyucu kullanır (örneğin, <xref:System.Data.SqlClient.SqlDataReader>) sonuç kümesini veri tablosuna yüklemek için. Benzer şekilde, bağdaştırıcının çağırdığınızda `Update` yöntemi, uygun komutu çalıştırır (içinde `UpdateCommand`, `InsertCommand`, ve `DeleteCommand` özellikleri) her biri için veri tablosundaki kayıt değiştirildi.  
   
 > [!NOTE]
->  Ana sorguda yeterli bilgi varsa `InsertCommand`, `UpdateCommand` ve `DeleteCommand` komutları TableAdapter oluşturulduğunda varsayılan olarak oluşturulur. TableAdapter bağdaştırıcısının ana sorgusunda tek tablolu bir SELECT deyimi birden fazla ise, Tasarımcı oluşturmak mümkün olmayacak olası `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`. Bu komutlar oluşturulmazsa, çalışırken bir hata alabilirsiniz `TableAdapter.Update` yöntemi.  
+> Ana sorguda yeterli bilgi varsa `InsertCommand`, `UpdateCommand` ve `DeleteCommand` komutları TableAdapter oluşturulduğunda varsayılan olarak oluşturulur. TableAdapter bağdaştırıcısının ana sorgusunda tek tablolu bir SELECT deyimi birden fazla ise, Tasarımcı oluşturmak mümkün olmayacak olası `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`. Bu komutlar oluşturulmazsa, çalışırken bir hata alabilirsiniz `TableAdapter.Update` yöntemi.  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDBDirectMethods Özelliği  
  Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'ları doğrudan veritabanında çalıştırılabilen yöntemleri ile oluşturulur. Bu yöntemler (`TableAdapter.Insert`, `TableAdapter.Update` ve `TableAdapter.Delete`) veritabanındaki verileri işlemek için doğrudan çağrılabilir. Yani, koddan çağırmak yerine bu tek tek yöntemleri çağırabilir `TableAdapter.Update` ekleme, güncelleştirme ve bekleyen silme işlemek için ilişkili veri tablosu için.  

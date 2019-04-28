@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436800"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev İşlemede Öğe Meta Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668203"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] birden çok öğe listesi, aynı meta verileri temel alarak gruplayın bölebilirsiniz. Bu, farklı öğe listeleri birden çok derleme oluşturmak için yığınlara ayırmak kolaylaştırır. Örneğin, bir öğe listesini bir uygulama toplu bir derleme toplu işlemi ve kaynak dosyaların bir uygulama batch ve bir derleme toplu iş bir öğe listesi bölünmüş .cs dosya olabilir. Bu öğe listeleri bir görevle geçirmek ve hem uygulama hem de derleme oluşturmak için toplu işleme sonra kullanabilirsiniz.  
   
 > [!NOTE]
->  Bir göreve geçirilen bir öğe listesi başvurulan meta verilerle hiçbir öğe içeriyorsa, her öğe, öğe listesinde her toplu iş içine geçirilir.  
+> Bir göreve geçirilen bir öğe listesi başvurulan meta verilerle hiçbir öğe içeriyorsa, her öğe, öğe listesinde her toplu iş içine geçirilir.  
   
  Aşağıdaki örnek, birden çok öğe listesi öğesi meta verileri temel alarak gruplayın bölme gösterilmektedir. `ExampColl` Ve `ExampColl2` öğesi listeleri her ayrılmıştır göre üç gruplayın `Number` öğe meta verileri. Varlığını `%(Number)`içinde `Text` öznitelik bildirir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] toplu işleme gerçekleştirilmesi. `ExampColl` Ve `ExampColl2` öğesi listeleri göre üç toplu işler halinde bölünmüştür `Number` meta verileri ve her toplu işin geçirilen ayrı olarak görevle.  
   

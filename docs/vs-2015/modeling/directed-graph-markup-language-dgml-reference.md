@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442992"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıkl�
  Visual Studio'nun bazı sürümlerinin yalnızca bir alt kümesini DGML özellikleri desteği, bkz: Not [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Bir .dgml dosyasını düzenlerken, IntelliSense her öğe için kullanılabilen öznitelikleri ve değerlerini belirlemenize yardımcı olur. Bir öznitelikte renk belirlemek için "Mavi" gibi genel renklerin adlarını veya "#ffa0b1c3" gibi ARGB onaltılık değerlerini kullanın. DGML Windows Presentation Foundation (WPF) renk tanımı biçimlerinin küçük bir alt kümesini kullanır. Daha fazla bilgi için [renkler sınıfı](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Bir .dgml dosyasını düzenlerken, IntelliSense her öğe için kullanılabilen öznitelikleri ve değerlerini belirlemenize yardımcı olur. Bir öznitelikte renk belirlemek için "Mavi" gibi genel renklerin adlarını veya "#ffa0b1c3" gibi ARGB onaltılık değerlerini kullanın. DGML Windows Presentation Foundation (WPF) renk tanımı biçimlerinin küçük bir alt kümesini kullanır. Daha fazla bilgi için [renkler sınıfı](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> DGML söz dizimi  
  Aşağıdaki tabloda, DGML'de kullanılan öğelerin türleri açıklanmaktadır:  
@@ -70,7 +70,7 @@ Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıkl�
    Bu isteğe bağlı öğe listesini içeren `<Node/>` haritada düğümleri tanımlayan öğeleri. Daha fazla bilgi için `<Node/>` öğesi.  
   
   > [!NOTE]
-  >  İçinde tanımlanmamış bir düğüme başvurduğunuzda bir `<Link/>` harita öğesi, oluşturur bir `<Node/>` öğe otomatik olarak.  
+  > İçinde tanımlanmamış bir düğüme başvurduğunuzda bir `<Link/>` harita öğesi, oluşturur bir `<Node/>` öğe otomatik olarak.  
   
    Örnek:  
   
@@ -151,7 +151,7 @@ Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıkl�
    Bu öğe, bir kaynak düğümünü hedef düğüme bağlayan tek bir bağlantıyı tanımlar. İçinde görünür `<Links></Links>` öğe listesi.  
   
   > [!NOTE]
-  >  Bu öğe tanımlanmamış bir düğüme başvuruyorsa, harita belge belirtilen öznitelikleri, varsa var olan bir düğümü otomatik olarak oluşturur.  
+  > Bu öğe tanımlanmamış bir düğüme başvuruyorsa, harita belge belirtilen öznitelikleri, varsa var olan bir düğümü otomatik olarak oluşturur.  
   
    Bu öğenin öznitelikleri şunlardır:  
   

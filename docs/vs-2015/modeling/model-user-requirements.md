@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417807"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   Kullanıcıları veya temsilciler ile tartışmalara odaklanmak için kullanın ve bunu her yineleme başlangıcında yeniden ziyaret gereksinimler modelini en büyük avantajı sağlar. Ayrıntılı olarak kod yazmadan önce tamamlamanız gerekmez. Kısmen çalışan bir uygulama, çok Basitleştirilmiş bile genellikle kullanıcıların gereksinimleriyle irdelemesi en cazip temelini oluşturur. Model, bu tartışmaların sonuçları özetlemek için etkili bir yoludur. Daha fazla bilgi için [geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  Bu konular boyunca sistem ya da geliştirmekte olduğunuz uygulamanın "Sistem" anlamına gelir. Birçok yazılım ve donanım bileşenleri büyük koleksiyonu olabilir; ya da tek bir uygulama; veya daha büyük bir sistemde içinde bir yazılım bileşeni. Her durumda, bir kullanıcı arabirimi ya da API aracılığıyla sistemin dışından görülemediğinden, davranışı gereksinimler modelini açıklar.  
+> Bu konular boyunca sistem ya da geliştirmekte olduğunuz uygulamanın "Sistem" anlamına gelir. Birçok yazılım ve donanım bileşenleri büyük koleksiyonu olabilir; ya da tek bir uygulama; veya daha büyük bir sistemde içinde bir yazılım bileşeni. Her durumda, bir kullanıcı arabirimi ya da API aracılığıyla sistemin dışından görülemediğinden, davranışı gereksinimler modelini açıklar.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
  Kullanıcı gereksinimlerini birkaç farklı görünümler oluşturabilirsiniz.  Her görünüm, belirli türde bilgi sağlar.  Bu görünümler oluşturduğunuzda, sık birinden diğerine taşımak idealdir. Herhangi bir görüntüden yeniden başlatabilirsiniz.  

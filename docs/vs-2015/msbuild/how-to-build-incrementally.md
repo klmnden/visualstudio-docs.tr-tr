@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431402"
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl yapılır: Artımlı Olarak Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
  Giriş ve çıkışları bir hedef olarak belirtildiğinde, her çıkış için yalnızca bir girişi eşleyebilirsiniz veya doğrudan bir eşleme girişleri ve çıkışları arasında olabilir. Önceki [Csc görevi](../msbuild/csc-task.md), örneğin, çıkış hello.exe, herhangi bir tek giriş eşleştirilemez – hepsinde bağlıdır.  
   
 > [!NOTE]
->  Giriş ve çıkışları arasında doğrudan eşleme olduğu bir hedef her zaman, her çıkış eşlenebilir yalnızca bir giriş için bir hedef çok sık oluşturacaksınız [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hangi çıkışları bazı girişleri değiştirdiyseniz yeniden derlenmesi gerekiyor belirlenemiyor .  
+> Giriş ve çıkışları arasında doğrudan eşleme olduğu bir hedef her zaman, her çıkış eşlenebilir yalnızca bir giriş için bir hedef çok sık oluşturacaksınız [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] hangi çıkışları bazı girişleri değiştirdiyseniz yeniden derlenmesi gerekiyor belirlenemiyor .  
   
  Hangi belirleyebilirsiniz giriş ve çıkışları arasında doğrudan bir eşleme gibi görevleri [LC görevi](../msbuild/lc-task.md), aşağıdakiler gibi görevleri farklı olarak, artımlı derlemeleri için en uygun olan `Csc` ve [Vbc](../msbuild/vbc-task.md), hangi üretebilir bir giriş bir sayı derlemesinden çıkış.  
   
@@ -70,7 +70,7 @@ Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri 
   Bu proje dosyasını içeren `Convert` ve `Build` hedefler. `GenerateContentFiles` Ve `BuildHelp` görevleri yerleştirildiğinde `Convert` ve `Build` her hedef artımlı olarak derlenebilir, sırasıyla hedefler. Kullanarak `Output` öğesinde, çıkışlarına `GenerateContentFiles` görev yerleştirildiğinde `ContentFile` öğesi listesinin nerede bunlar kullanılabilir için girdi olarak `BuildHelp` görev. Kullanarak `Output` öğesi bu şekilde otomatik olarak sağlar bir görev çıkışları girdi olarak başka bir görev için bireysel öğeleri listelemek veya her bir görevin elle listelerinde öğe sahip değil.  
   
 > [!NOTE]
->  Ancak `GenerateContentFiles` hedef artımlı olarak oluşturabilirsiniz, hedefleyen tüm çıkışları için girdi olarak her zaman gereklidir `BuildHelp` hedef. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kullanırken bir hedef tüm çıktılarını başka bir hedef için girdi olarak otomatik olarak sağlar `Output` öğesi.  
+> Ancak `GenerateContentFiles` hedef artımlı olarak oluşturabilirsiniz, hedefleyen tüm çıkışları için girdi olarak her zaman gereklidir `BuildHelp` hedef. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kullanırken bir hedef tüm çıktılarını başka bir hedef için girdi olarak otomatik olarak sağlar `Output` öğesi.  
   
 ```  
 <Project DefaultTargets="Build"  

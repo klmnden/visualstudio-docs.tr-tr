@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424796"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı, varlık sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112123"
 2. Projeyi adlandırın **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Bu nedenle, yeni projeyi bu dillerden birinde oluşturun.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Bu nedenle, yeni projeyi bu dillerden birinde oluşturun.  
   
 3. Tıklayın **Windows Forms uygulaması** şablonu ve tıklatın **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112123"
      Adlı bir varlık sınıfı **müşteri** oluşturulur. Müşteriler tablosundaki sütunlara karşılık gelen özelliklerle var. Varlık sınıfı adlı **müşteri** (değil **müşteriler**) olduğundan Müşteriler tablosundan tek bir müşteri temsil eder.  
   
     > [!NOTE]
-    >  Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    > Bu yeniden adlandırma adlandırılır *çoğullaştırma*. Bunu açılıp kapatılabilir [Seçenekler iletişim kutusu](../ide/reference/options-dialog-box-visual-studio.md). Daha fazla bilgi için [nasıl yapılır: Çoğullaştırmayı açıp (O/R Tasarımcısı) kapatma](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3. Üzerinde **derleme** menüsünde tıklatın **derleme UpdatingwithSProcsWalkthrough** Projeyi derlemek için.  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112123"
 7. Genişletin **UpdatingwithSProcsWalkthrough** düğümünü bulun ve seçin **müşteri** sınıfı.  
   
     > [!NOTE]
-    >  Varsa **müşteri** sınıf kullanılabilir değil, Sihirbazı iptal etmeniz, projeyi derleyin ve sihirbazı yeniden çalıştırın.  
+    > Varsa **müşteri** sınıf kullanılabilir değil, Sihirbazı iptal etmeniz, projeyi derleyin ve sihirbazı yeniden çalıştırın.  
   
 8. Tıklayın **son** veri kaynağı oluşturma ve ekleme **müşteri** varlık sınıfı için **veri kaynakları** penceresi.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112123"
 2. Gelen **veri kaynakları** penceresinde Sürükle **müşteri** düğümünü Form1 üzerine.  
   
     > [!NOTE]
-    >  Görüntülenecek **veri kaynakları** penceresinde tıklayın **veri kaynaklarını Göster** üzerinde **veri** menüsü.  
+    > Görüntülenecek **veri kaynakları** penceresinde tıklayın **veri kaynaklarını Göster** üzerinde **veri** menüsü.  
   
 3. Form1 kod Düzenleyicisi'nde açın.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112123"
 9. Tıklayın **Uygula** seçilen sınıf ve davranış için yapılandırmayı kaydetmek için.  
   
     > [!NOTE]
-    >  Tıkladığınız sürece her bir sınıf/davranışını bileşimi davranışını yapılandırmak devam **Uygula** her değişikliği yaptıktan sonra. Tıklamadan önce sınıf veya davranış değiştirirseniz **Uygula**, bir uyarı iletişim kutusu sağlama değişiklikleri uygulamak için bir fırsat görünür.  
+    > Tıkladığınız sürece her bir sınıf/davranışını bileşimi davranışını yapılandırmak devam **Uygula** her değişikliği yaptıktan sonra. Tıklamadan önce sınıf veya davranış değiştirirseniz **Uygula**, bir uyarı iletişim kutusu sağlama değişiklikleri uygulamak için bir fırsat görünür.  
   
 10. Seçin **güncelleştirme** içinde **davranışı** listesi.  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112123"
 13. Harita **Original_CustomerID** metot bağımsız değişkeni **CustomerID (özgün)** sınıf özelliği.  
   
     > [!NOTE]
-    >  Adları eşleştiğinde varsayılan olarak, yöntem bağımsız değişkenleri sınıfın özelliklerine eşlenir. Özellik adlarının değiştirilir ve tablo arasında varlık sınıfı artık eşleşen, O/R Tasarımcısı doğru Eşleme belirleyemiyorsa eşlemek için eşdeğer sınıf özelliği seçmek olabilir. Yöntem bağımsız değişkenleri eşlemek için geçerli bir sınıf özellikleri yoksa, ayrıca, ayarlayabilirsiniz **sınıfı özellikleri** değerini **(hiçbiri)**.  
+    > Adları eşleştiğinde varsayılan olarak, yöntem bağımsız değişkenleri sınıfın özelliklerine eşlenir. Özellik adlarının değiştirilir ve tablo arasında varlık sınıfı artık eşleşen, O/R Tasarımcısı doğru Eşleme belirleyemiyorsa eşlemek için eşdeğer sınıf özelliği seçmek olabilir. Yöntem bağımsız değişkenleri eşlemek için geçerli bir sınıf özellikleri yoksa, ayrıca, ayarlayabilirsiniz **sınıfı özellikleri** değerini **(hiçbiri)**.  
   
 14. Tıklayın **Uygula** seçilen sınıf ve davranış için yapılandırmayı kaydetmek için.  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112123"
 19. **Tamam**'ı tıklatın.  
   
 > [!NOTE]
->  Bu belirli yönlendirme sorunu olmasa da, hatalarının ayıklanabileceğini belirtmekte yarar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ekleme sırasında otomatik olarak kimlik (otomatik artış), rowguıdcol (veritabanı tarafından oluşturulan GUID) ve zaman damgası sütunları için veritabanı tarafından oluşturulan değerleri işleme ve güncelleştirmeler. Veritabanı üretilmiş değerler diğer sütun türlerinde beklenmedik bir null değer neden olur. Veritabanı tarafından oluşturulan değerleri döndürülecek el ile ayarlamanız <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Bu belirli yönlendirme sorunu olmasa da, hatalarının ayıklanabileceğini belirtmekte yarar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ekleme sırasında otomatik olarak kimlik (otomatik artış), rowguıdcol (veritabanı tarafından oluşturulan GUID) ve zaman damgası sütunları için veritabanı tarafından oluşturulan değerleri işleme ve güncelleştirmeler. Veritabanı üretilmiş değerler diğer sütun türlerinde beklenmedik bir null değer neden olur. Veritabanı tarafından oluşturulan değerleri döndürülecek el ile ayarlamanız <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Uygulamayı Test Etme  
  Yeniden doğrulamak için uygulamayı çalıştırmak **UpdateCustomers** saklı yordam doğru veritabanında müşteri kaydı güncelleştirir.  

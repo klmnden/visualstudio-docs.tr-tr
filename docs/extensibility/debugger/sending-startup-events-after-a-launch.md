@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2f82ab0b28c1052a0d6a4cb0b2db7e6bbaaba8cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420592"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Başlatmadan sonra Başlangıç olaylarını gönderme
 Programın hata ayıklama altyapısı (DE) bağlandıktan sonra hata ayıklama oturumu başlatma olay serisi olarak gönderir.
@@ -31,7 +31,7 @@ Programın hata ayıklama altyapısı (DE) bağlandıktan sonra hata ayıklama o
 - Kod yüklenmiş ve çalıştırılmaya hazır olduğunda, ancak herhangi bir kod yürütülmeden önce gönderilen yük gibi tam bir olay.
 
   > [!NOTE]
-  >  Bu olay devam ettirildiğinde, genel değişkenler başlatılır ve başlangıç yordamları çalıştırın.
+  > Bu olay devam ettirildiğinde, genel değişkenler başlatılır ve başlangıç yordamları çalıştırın.
 
 - Diğer olası iş parçacığı oluşturma ve modül yükleme olayları.
 

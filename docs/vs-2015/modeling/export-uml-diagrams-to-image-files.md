@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442944"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML diyagramlarını görüntü dosyalarına aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Bir UML belgeden verebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pro
  Aşağıdaki kod, görüntü bir dosyaya kaydeden olarak da bilinen bir bağlam menüsü komutu bir kısayol menü komutu tanımlar.  
   
 > [!NOTE]
->  Bu kod bir menü komutu olarak çalışmasını sağlamak için bir MEF Bileşeni eklemeniz gerekir. Daha fazla bilgi için [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Bu kod bir menü komutu olarak çalışmasını sağlamak için bir MEF Bileşeni eklemeniz gerekir. Daha fazla bilgi için [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  Kod ilk kullanır <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> almak için <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> temel uygulama. Bu tür bir yönteme sahip <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   

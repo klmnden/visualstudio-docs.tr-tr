@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9dae0161e3337411a56e316e04cf467a1f05e6a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443652"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND Listelemesi
 Oluşan özel durumun türünü gösterir. Bu sabit listesi tarafından kullanılan [Iactivescripterrordebug110::getexceptionthrownkind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) yöntemi.  
   
 > [!IMPORTANT]
->  Bu sabitler PDM sürüm 11.0 ve daha sonraki sürümleri tarafından uygulanır. activdbg100.h içinde bulunur.  
+> Bu sabitler PDM sürüm 11.0 ve daha sonraki sürümleri tarafından uygulanır. activdbg100.h içinde bulunur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

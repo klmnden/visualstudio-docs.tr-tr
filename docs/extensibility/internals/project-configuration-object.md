@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25e2f2359cabff9a4e95a7d64d2f0846df8f49f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d96766918f554e2b99dd8abc5faea9badaf69b5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423090"
 ---
 # <a name="project-configuration-object"></a>Proje Yapılandırması Nesnesi
 Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabiriminde görünen yönetir.
@@ -26,7 +26,7 @@ Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabi
  Proje yapılandırma sağlayıcısı, proje yapılandırmalarını yönetir. Ortamı ve ve bir projenin yapılandırmalar hakkında bilgi almak için proje yapılandırma sağlayıcısı nesnesine bağlı arabirimler çağrı erişim elde etmek için diğer paketleri.
 
 > [!NOTE]
->  Oluşturamaz veya program aracılığıyla çözüm yapılandırma dosyalarını düzenleyebilirsiniz. Kullanmalısınız `DTE.SolutionBuilder`. Bkz: [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md) daha fazla bilgi için.
+> Oluşturamaz veya program aracılığıyla çözüm yapılandırma dosyalarını düzenleyebilirsiniz. Kullanmalısınız `DTE.SolutionBuilder`. Bkz: [çözüm yapılandırması](../../extensibility/internals/solution-configuration.md) daha fazla bilgi için.
 
  Kullanıcı Arabirimi yapılandırmasında kullanılacak bir görünen ad yayımlamak için projenizi uygulamalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. Ortam çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, listesini döndürür `IVsCfg` ortamın kullanıcı Arabiriminde listelenecek yapılandırma ve Platform bilgileri için görünen adları almak için kullanabileceğiniz işaretçileri. Etkin yapılandırma ve platform etkin çözüm yapılandırmasındaki, depolanan projenin yapılandırması tarafından belirlenir. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Yöntemi, etkin proje yapılandırmasını almak için kullanılabilir.
 
@@ -35,7 +35,7 @@ Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabi
  Bir uygulamasını sağlamak üzere, projeler için ortam ve diğer projeler için proje yapılandırmalarını erişmesini sağlamak için başka bir yolu ise `IVsCfgProvider2::GetCfgs` bir veya daha fazla yapılandırma nesneleri döndürmek için yöntemi. Projeleri de uygulayabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, işlevinden devralan `IVsProjectCfg` ve böylece `IVsCfg`, yapılandırmaya özgü bilgileri sağlamak için. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> platformlar ve işlevselliği ekleme, silme ve yeniden adlandırma proje yapılandırmaları destekler.
 
 > [!NOTE]
->  Visual Studio için iki yapılandırma türü sınırlı artık yapılandırmaları işleyen kodu değil yazılması varsayımlar ile yapılandırmaları sayısı hakkında ya da varsayımıyla yazılmalıdır bu yana, tek sahip bir proje yapılandırma, hata ayıklama veya perakende mutlaka olması. Bu kullanımını kolaylaştırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> artık kullanılmıyor.
+> Visual Studio için iki yapılandırma türü sınırlı artık yapılandırmaları işleyen kodu değil yazılması varsayımlar ile yapılandırmaları sayısı hakkında ya da varsayımıyla yazılmalıdır bu yana, tek sahip bir proje yapılandırma, hata ayıklama veya perakende mutlaka olması. Bu kullanımını kolaylaştırır <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> artık kullanılmıyor.
 
  Çağırma `QueryInterface` yönteminden döndürülen nesne üzerinde`IVsGetCfgProvider::GetCfgProvider` alır `IVsCfgProvider2`. Varsa `IVsGetCfgProvider` çağırarak bulunamadı `QueryInterface` üzerinde `IVsProject3` proje nesne, çağırarak yapılandırma sağlayıcısı nesnesi erişebilir `QueryInterface` için döndürülen nesne hiyerarşisi kök tarayıcı nesnede `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, aracılığıyla veya bir yapılandırma sağlayıcısı için döndürülen işaretçiye `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.
 

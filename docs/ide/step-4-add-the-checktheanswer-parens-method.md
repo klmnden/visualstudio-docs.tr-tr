@@ -8,18 +8,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0890a153569f8a07c27cb56f4bade7ae89d706ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12dd70ef42ed988129efa3ca84a7b2da4861f3c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430730"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4. Adım: CheckTheAnswer() yöntemi ekleme
 Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()`, matematik sorularının yanıtlarını doğru olup olmadığını belirler. Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
->  Visual Basic'te izliyorsanız, kullanacağınız `Function` anahtar sözcüğü yerine `Sub` anahtar sözcüğü çünkü bu yöntem bir değer döndürür. Bu gerçekten bu kadar kolaydır: bir alt bir değer döndürmez ama bir işlev.
+> Visual Basic'te izliyorsanız, kullanacağınız `Function` anahtar sözcüğü yerine `Sub` anahtar sözcüğü çünkü bu yöntem bir değer döndürür. Bu gerçekten bu kadar kolaydır: bir alt bir değer döndürmez ama bir işlev.
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Yanıtların doğru olup olmadığını doğrulamak için
 
@@ -42,7 +42,7 @@ Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()
 3. Programınızı kaydedin, çalıştırın, bir sınav başlatın ve ek soruya doğru yanıtı sağlayın.
 
     > [!NOTE]
-    >  Yanıtınızı girerken, varsayılan değeri Seçmeli başlangıç veya sıfırı el ile silmelisiniz önce ya da seçmeniz gerekir. Bu öğreticinin ilerleyen bölümlerinde bu davranışı düzelteceksiniz.
+    > Yanıtınızı girerken, varsayılan değeri Seçmeli başlangıç veya sıfırı el ile silmelisiniz önce ya da seçmeniz gerekir. Bu öğreticinin ilerleyen bölümlerinde bu davranışı düzelteceksiniz.
 
      Doğru yanıtı verdiğinizde bir ileti kutusu açılır, **Başlat** düğmesi kullanılabilir olur ve Zamanlayıcı durur.
 

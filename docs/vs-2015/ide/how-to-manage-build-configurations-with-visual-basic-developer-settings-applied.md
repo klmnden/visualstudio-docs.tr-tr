@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430542"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: Visual Basic Geliştirici Ayarları Uygulanmış Olarak Derleme Yapılandırmalarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Varsayılan olarak, tüm Gelişmiş derleme yapılandırma seçenekleri ile gizl
 2. Genişletin **projeler ve çözümler**, tıklatıp **genel**.  
   
     > [!NOTE]
-    >  **Genel** düğümüdür görünür bile **tüm ayarları göster** seçeneği olarak işaretli değildir. Tüm kullanılabilir seçenekleri görmek istiyorsanız, tıklayın **tüm ayarları göster**.  
+    > **Genel** düğümüdür görünür bile **tüm ayarları göster** seçeneği olarak işaretli değildir. Tüm kullanılabilir seçenekleri görmek istiyorsanız, tıklayın **tüm ayarları göster**.  
   
 3. Tıklayın **Show Gelişmiş derleme yapılandırmaları**.  
   

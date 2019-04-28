@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412463"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri ve belge parçalarını koruma
   Kullanıcılar belgeyi düzenlemeler yapmasını önlemek için Microsoft Office Word belgeleri koruma ekleyebilirsiniz.
@@ -29,7 +29,7 @@ ms.locfileid: "60062624"
  Böylece belirtilen kullanıcılar yalnızca belgenin alanları düzenleyebilir, belgedeki belirli alanların özel durumlar olarak işaretleyebilirsiniz. Örneğin, belirli bir yer işareti hariç tüm belgeyi korumak isteyebilirsiniz. Böylece parola alışık oldukları sürece kullanıcılar Belge korumasını kaldıramaz, isteğe bağlı olarak bir parola ekleyebilirsiniz.
 
 > [!NOTE]
->  Aşağıdaki örnek, parola koruması kullanmaz; Ancak, bir parola belge koruması eklerken göz önünde bulundurmak isteyebilirsiniz. Daha fazla bilgi için belge koruyucu örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
+> Aşağıdaki örnek, parola koruması kullanmaz; Ancak, bir parola belge koruması eklerken göz önünde bulundurmak isteyebilirsiniz. Daha fazla bilgi için belge koruyucu örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
 
  İçerik denetimleri, belge bölümlerini koruma için de kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 

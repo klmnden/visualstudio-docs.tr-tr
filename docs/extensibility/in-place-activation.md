@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415266"
 ---
 # <a name="in-place-activation"></a>Yerinde etkinleştirme
 Düzenleyici görünümü ActiveX veya diğer etkin denetimleri barındırıyorsa, bir ActiveX denetimi veya yerinde etkinleştirme modeli kullanarak etkin belgeyi veri nesnesi olarak Düzenleyicisi görünümünüzü uygulamalıdır.
@@ -22,7 +22,7 @@ Düzenleyici görünümü ActiveX veya diğer etkin denetimleri barındırıyors
  ActiveX denetimi uygularsanız, katıştırılmış diğer nesneleri barındırabilir. Bir belge veri nesnesi uygularsanız, pencere çerçevesi ActiveX denetimlerini kullanma yeteneğinizi kısıtlar.
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> Ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> arabirimleri izin vermek için veri görünümü ve bir ayrım. Ancak, Visual Studio bu işlevselliği desteklemiyor ve bu arabirimler yalnızca belge view nesnesinin temsil etmek için kullanılır.
+> <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> Ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> arabirimleri izin vermek için veri görünümü ve bir ayrım. Ancak, Visual Studio bu işlevselliği desteklemiyor ve bu arabirimler yalnızca belge view nesnesinin temsil etmek için kullanılır.
 
  Kullanan düzenleyicileri <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> hizmet sağlayabilir menü ve araç çubuğu komut tümleştirme yöntemleri çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> arabirim uygulandığında tarafından <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> hizmeti. Ayrıca düzenleyicileri izleme seçimi gibi diğer Visual Studio işlevselliği sunar ve yönetim geri. Daha fazla bilgi için [özel düzenleyiciler ve tasarımcılar oluşturma](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ Düzenleyici görünümü ActiveX veya diğer etkin denetimleri barındırıyors
  ![İçinde&#45;etkinleştirme Düzenleyicisi yerleştirin](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor") yerinde etkinleştirme Düzenleyicisi
 
 > [!NOTE]
->  Bu, yalnızca çizim nesneleri `CYourEditorFactory` nesnesi, standart bir düzenleyici oluşturmak için gereklidir. Özel bir düzenleyici oluşturuyorsanız, uygulama gerekmez <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> düzenleyiciniz büyük olasılıkla kendi özel Kalıcılık mekanizması olduğundan. Daha fazla bilgi için [özel düzenleyiciler ve tasarımcılar oluşturma](../extensibility/creating-custom-editors-and-designers.md).
+> Bu, yalnızca çizim nesneleri `CYourEditorFactory` nesnesi, standart bir düzenleyici oluşturmak için gereklidir. Özel bir düzenleyici oluşturuyorsanız, uygulama gerekmez <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> düzenleyiciniz büyük olasılıkla kendi özel Kalıcılık mekanizması olduğundan. Daha fazla bilgi için [özel düzenleyiciler ve tasarımcılar oluşturma](../extensibility/creating-custom-editors-and-designers.md).
 
  Tek bir yerinde etkinleştirme düzenleyici oluşturmak için uygulanan tüm arabirimler gösterilir `CYourEditorDocument` nesne, ancak bu yapılandırma yalnızca belge verilerini tek bir görünüm destekler. Belge verilerinizi birden çok görünüm destekleme hakkında daha fazla bilgi için bkz. [birden çok belge görünümünü desteklemek](../extensibility/supporting-multiple-document-views.md).
 

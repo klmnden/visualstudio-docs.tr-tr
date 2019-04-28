@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435220"
 ---
 # <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: Derleme Olayları Belirtme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
 4. İçinde **derleme öncesi olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
   
     > [!NOTE]
-    >  Derleme öncesi olayları, projenin güncel olduğundan ve hiçbir derlemenin tetiklenmesinin çalıştırmayın.  
+    > Derleme öncesi olayları, projenin güncel olduğundan ve hiçbir derlemenin tetiklenmesinin çalıştırmayın.  
   
 5. İçinde **derleme sonrası olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
   
     > [!NOTE]
-    >  Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6. İçinde **oluşturma sonrası olayı çalıştırılsın** kutusunda, hangi derleme sonrası olay çalıştırmak için koşullar altında belirtin.  
   
     > [!NOTE]
-    >  Uzun söz dizimi eklemek ya da seçmek için herhangi bir makrolarından derleme [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), üç nokta düğmesini (**...** ) düzenleme kutusu görüntülenecek.  
+    > Uzun söz dizimi eklemek ya da seçmek için herhangi bir makrolarından derleme [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), üç nokta düğmesini (**...** ) düzenleme kutusu görüntülenecek.  
   
      Yapı olay sözdizimi geçerli bir komut isteminde veya bir .bat dosyası herhangi bir komutu içerebilir. Tarafından bir toplu iş dosyası adı gelmelidir `call` tüm komutlar yürütülür emin olmak için.  
   

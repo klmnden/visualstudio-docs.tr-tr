@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436013"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Nasıl yapılır: Standart metin işaretçileri Ekle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60089217"
      Bu yöntem çağrısında bir işaret türü bir işaretçi üzerinde oluşturmak için metin aralığı belirtin ve bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimi. Bu yöntem, ardından yeni oluşturulan metin işaretçisi için bir işaretçi döndürür. İşaretçi türleri verilerinden alınır <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> sabit listesi. Belirtin bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> işaret olayları hakkında bilgi sahibi olmak istiyorsanız, arabirim.  
   
     > [!NOTE]
-    >  Ana kullanıcı Arabirimi iş parçacığı üzerinde yalnızca metin işaretçileri oluşturun. Çekirdek düzenleyici metin işaretçileri oluşturmak için metin arabelleği içeriğine kullanır ve metin arabelleğini iş parçacığı güvenli değildir.  
+    > Ana kullanıcı Arabirimi iş parçacığı üzerinde yalnızca metin işaretçileri oluşturun. Çekirdek düzenleyici metin işaretçileri oluşturmak için metin arabelleği içeriğine kullanır ve metin arabelleğini iş parçacığı güvenli değildir.  
   
 ## <a name="adding-a-custom-command"></a>Özel komut ekleme  
  Uygulama `IVsTextMarkerClient` arabirimi ve bir işaretçi kendisine işaretten itibaren sağlayarak işaret davranışını çeşitli şekillerde geliştirir. İlk olarak, bu, işaretçinizi için ipuçları sağlar ve komutları yürütmek için sağlar. Bu ayrıca, tek tek işaretçileri için olay bildirimleri alması ve özel bağlam menüsü işaret oluşturmak için sağlar. İşaret bağlam menüsüne bir özel komut eklemek için aşağıdaki yordamı kullanın.  
@@ -52,4 +52,4 @@ ms.locfileid: "60089217"
  [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Nasıl yapılır: Uygulama hata işaretçileri](../extensibility/how-to-implement-error-markers.md)   
  [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+ [Nasıl yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)

@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407879"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ hata ayıklama yapılandırması proje ayarları
 Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.
 
 > [!NOTE]
->  Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategorisi için UWP uygulamaları ve C++ ile yazılmış bileşenler için farklı. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategorisi için UWP uygulamaları ve C++ ile yazılmış bileşenler için farklı. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Her hata ayıklama özelliği ayarı otomatik olarak yazılır ve kaydedilen "kullanıcı başına" dosyaya (. vcxproj.user) çözümünüzü her kaydettiğinizde, çözümünüz için.
 
@@ -190,4 +190,4 @@ Projenize dış DLL'lerin hata ayıklamak için bkz: [hata ayıklama DLL projele
 - [Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)
 - [Visual C++ proje oluşturma ve yönetme](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (DebuggableAttribute Ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
-- [Genel derleme komutları ve Özellikler makroları](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Derleme komutları ve özellikleri için genel makrolar](/cpp/ide/common-macros-for-build-commands-and-properties)

@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436729"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint çözüm paketleri yükseltme dağıtma ve yayımlama
   Bir SharePoint çözümünü Visual Studio'da geliştirdiğiniz sonra paket (.wsp) dosyası yerel SharePoint sunucusuna dağıtın veya bir uzak veya yerel SharePoint sunucusuna yayımlama. Dosyaları dağıtırsanız, paket dosyaları (.wsp) nasıl dağıtılacağını özelleştirebilirsiniz.
 
 > [!NOTE]
->  Şu anda yalnızca korumalı çözümler için Uzak SharePoint sunucularını yayımlanabilir. Daha fazla bilgi için [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).
+> Şu anda yalnızca korumalı çözümler için Uzak SharePoint sunucularını yayımlanabilir. Daha fazla bilgi için [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Dağıtma, yayımlama ve yükseltme
  *Dağıtımı* bir SharePoint Proje Visual Studio'da bir yerel ana bilgisayarı için oluşturulmuş bir SharePoint çözüm dosyası kopyalama işlemini ifade eder. Dağıtılmış bir çözümde dağıtımdan sonra çözümün etkinleştirilmesi Internet Information Services (IIS) havuzu geri dönüştürülüyor gibi dağıtım adımları, yapılandırma ve VS. Dağıtmak için **Dağıt** komutunu **derleme** menüsü. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) ve [nasıl yapılır: Dağıtma ve bir SharePoint çözümünü yerel bir SharePoint sitesine yayımlama](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438622"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>İzlenecek yol: CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini değiştirme
   Bu izlenecek yol, onay kutularını biçimini değiştirmek için bir Microsoft Office Excel çalışma sayfasında kullanmanın temellerini gösterir. Oluşturma ve kod projenize eklemek için Visual Studio'da Office geliştirme araçlarını kullanın. Sonuç tamamlanmış bir örnek görmek için Excel denetimleri örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061695"
 - Projenizi test edin.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -94,7 +94,7 @@ ms.locfileid: "60061695"
      Ardından, sürükleyin bir <xref:Microsoft.Office.Tools.Excel.NamedRange> çalışma denetimi.
 
     > [!NOTE]
-    >  Ayrıca ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> yazarak denetim **textFont** içine **adı** kutusu.
+    > Ayrıca ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> yazarak denetim **textFont** içine **adı** kutusu.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Metin NamedRange denetimine eklemek için
 

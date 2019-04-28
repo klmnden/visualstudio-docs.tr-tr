@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd39ec744e88c2a9334f31c2974ed92f1f6b9a12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddf7bd222b61b3eb72a571857336c69deba6499f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421781"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>İzlenecek yol: Bir çalışma kitabından bir sunucuda önbelleğe alınmış verileri alma
   Bu kılavuzda bir Microsoft Office Excel çalışma kitabını Excel kullanarak başlatmadan önbelleğe alınan bir veri kümesinden veri almayı gösterir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.
@@ -43,7 +43,7 @@ ms.locfileid: "60101424"
   Bu izlenecek yol, geliştirme bilgisayarınızda kodun çalıştığını varsayar olsa da, bu izlenecek yol gösterilen kod Excel yüklü olmayan bir sunucu üzerinde kullanılabilir.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -259,7 +259,7 @@ ms.locfileid: "60101424"
    - A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> çalışma kitabındaki verileri önbelleğe erişmek için kullanılacak nesne.
 
      > [!NOTE]
-     >  Aşağıdaki kodu kullanarak, çalışma kitabını kaydettiğiniz varsayar *.xlsx* uzantısı. Projenizdeki çalışma kitabının farklı bir uzantısı varsa, yol gerekli olarak değiştirin.
+     > Aşağıdaki kodu kullanarak, çalışma kitabını kaydettiğiniz varsayar *.xlsx* uzantısı. Projenizdeki çalışma kitabının farklı bir uzantısı varsa, yol gerekli olarak değiştirin.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]

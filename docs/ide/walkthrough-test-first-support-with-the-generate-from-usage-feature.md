@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2084b2768a4b93b6174dfdb637b91d69a2072902
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432043"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce test geliştirmesi
 
@@ -65,7 +65,7 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
 2. Sınıf bildirimi bulun `UnitTest1` ve yeniden adlandırın `AutomobileTest`.
 
    > [!NOTE]
-   >  IntelliSense için IntelliSense deyim tamamlamada artık iki seçenek sunar: *tamamlama modunu* ve *öneri modu*. Öneri Modu tanımlanmadan önce sınıflar ve üyeler kullanılır durumlar için kullanın. Olduğunda bir **IntelliSense** penceresi açıksa, basabilirsiniz **Ctrl**+**Alt**+**alanı** arasında geçiş yapmak için tamamlama modu ile öneri modu. Bkz: [kullanım IntelliSense](../ide/using-intellisense.md) daha fazla bilgi için. Öneri Modu yardımcı olacak yazarken `Automobile` sonraki adımda.
+   > IntelliSense için IntelliSense deyim tamamlamada artık iki seçenek sunar: *tamamlama modunu* ve *öneri modu*. Öneri Modu tanımlanmadan önce sınıflar ve üyeler kullanılır durumlar için kullanın. Olduğunda bir **IntelliSense** penceresi açıksa, basabilirsiniz **Ctrl**+**Alt**+**alanı** arasında geçiş yapmak için tamamlama modu ile öneri modu. Bkz: [kullanım IntelliSense](../ide/using-intellisense.md) daha fazla bilgi için. Öneri Modu yardımcı olacak yazarken `Automobile` sonraki adımda.
 
 3. Bulun `TestMethod1()` yöntemi ve yeniden adlandırın `DefaultAutomobileIsInitializedCorrectly()`. Bu yöntemde, bir sınıf adlı yeni bir örneğini oluşturma `Automobile`aşağıdaki ekran görüntülerinde gösterildiği gibi. Bir derleme zamanı hatası gösteren dalgalı çizgi görünür ve bir [hızlı Eylemler](../ide/quick-actions.md) hata ampul, sol kenar boşluğunda veya doğrudan dalgalı çizgi aşağıda geldiğinizde varsa görünür.
 

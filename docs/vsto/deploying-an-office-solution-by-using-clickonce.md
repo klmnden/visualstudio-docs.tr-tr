@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441852"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce kullanarak Office çözümü dağıtma
   ClickOnce kullanırsanız Office çözümünüzü daha az sayıda adımla dağıtabilirsiniz. Güncelleştirmeleri yayımlarsanız, çözümünüz bunları otomatik olarak algılar ve yükler. Bununla birlikte, ClickOnce, çözümünüzü bir bilgisayarın her kullanıcısı için ayrı ayrı yüklemenizi gerektirir. Bu nedenle, Windows Installer kullanmayı düşünmeniz gerekir (*.msi*) aynı bilgisayarda çözümünüzü birden fazla kullanıcı çalıştıracaksa.
@@ -83,7 +83,7 @@ ms.locfileid: "60060747"
 9. Çözümünüz .NET Framework 4.5 hedefliyse, ayrıca seçin **Office çalışma zamanı için Visual Studio 2010 Araçları** onay kutusu.
 
     > [!NOTE]
-    >  Varsayılan olarak, bu onay kutusu görünmez. Bu onay kutusunu göstermek için bir Önyükleyici paketi oluşturmanız gerekir. Bkz: [Visual Studio 2012 ile bir önyükleyici paketi için bir Office 2013 VSTO eklentisi oluşturma](create-vsto-add-ins-for-office-by-using-visual-studio.md).
+    > Varsayılan olarak, bu onay kutusu görünmez. Bu onay kutusunu göstermek için bir Önyükleyici paketi oluşturmanız gerekir. Bkz: [Visual Studio 2012 ile bir önyükleyici paketi için bir Office 2013 VSTO eklentisi oluşturma](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
 10. Altında **Önkoşullar için yükleme konumunu belirtin**, görüntülenen ve ardından seçeneklerden birini **Tamam** düğmesi.
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060747"
 11. Seçin **güncelleştirmeleri** düğmesi, her bir son kullanıcı VSTO eklenti veya özelleştirme güncelleştirmeleri denetlemek ve ardından istediğiniz sıklığı belirtin **Tamam** düğmesi.
 
     > [!NOTE]
-    >  Bir CD veya çıkarılabilir sürücü kullanarak dağıtım yapıyorsanız seçin **asla güncelleştirmeleri denetleme** seçenek düğmesini.
+    > Bir CD veya çıkarılabilir sürücü kullanarak dağıtım yapıyorsanız seçin **asla güncelleştirmeleri denetleme** seçenek düğmesini.
 
      Bir güncelleştirmenin nasıl yayımlanacağı hakkında daha fazla bilgi için bkz. [güncelleştirme yayımlama](#Update).
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060747"
       ![Klasör yapısını yayımlama](../vsto/media/publishfolderstructure.png "klasör yapısını yayımlama")
 
     > [!NOTE]
-    >  ClickOnce ekler *.deploy* derlemelere uzantısı böylece güvenli bir Internet Information Services (IIS) yüklemesi, güvenli olmayan bir uzantı nedeniyle dosyaları engellemez. Kullanıcı çözümü yüklediğinde ClickOnce kaldırır *.deploy* uzantısı.
+    > ClickOnce ekler *.deploy* derlemelere uzantısı böylece güvenli bir Internet Information Services (IIS) yüklemesi, güvenli olmayan bir uzantı nedeniyle dosyaları engellemez. Kullanıcı çözümü yüklediğinde ClickOnce kaldırır *.deploy* uzantısı.
 
 14. Çözüm dosyalarını, bu yordamda daha önce belirttiğiniz yükleme konumuna kopyalayın.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060747"
 6. İçinde **MIME türü** penceresinde girin **.vsto** uzantısını girin **application/x-ms-vsto** MIME olarak yazın ve ardından yeni ayarları uygulayın.
 
     > [!NOTE]
-    >  Değişikliklerin etkili olması için, World Wide Web Yayımlama Hizmeti'ni yeniden başlatmalı veya çalışan işleminin tekrar geri dönmesini beklemelisiniz. Sonra tarayıcının disk önbelleğini temizlemeli ve açmayı denerseniz *.vsto* yeniden dosya.
+    > Değişikliklerin etkili olması için, World Wide Web Yayımlama Hizmeti'ni yeniden başlatmalı veya çalışan işleminin tekrar geri dönmesini beklemelisiniz. Sonra tarayıcının disk önbelleğini temizlemeli ve açmayı denerseniz *.vsto* yeniden dosya.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>IIS 7.0 .vsto MIME türünü eklemek için
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060747"
     ```
 
     > [!NOTE]
-    >  Değişikliklerin etkili olması için, World Wide Web Yayımlama Hizmeti'ni yeniden başlatmalı veya çalışan işleminin tekrar geri dönmesini beklemelisiniz. Sonra tarayıcının disk önbelleğini temizlemeli ve açmayı denerseniz *.vsto* yeniden dosya.
+    > Değişikliklerin etkili olması için, World Wide Web Yayımlama Hizmeti'ni yeniden başlatmalı veya çalışan işleminin tekrar geri dönmesini beklemelisiniz. Sonra tarayıcının disk önbelleğini temizlemeli ve açmayı denerseniz *.vsto* yeniden dosya.
 
 ## <a name="Put"></a> Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler) yerleştirin.
  Çözümünüzün belgesini, son kullanıcının bilgisayarına bunları için dağıtım sonrası eylemi oluşturarak kopyalayabilirsiniz. Böylece, çözümünüzü yükledikten sonra belgeyi kendi bilgisayarlarına yükleme konumundan el ile kopyalamak kullanıcı yok. Dağıtım sonrası eylemi tanımlayan bir sınıf oluşturun, derleme ve çözüm yayımlama, uygulama bildirimini değiştirin ve uygulama ve dağıtım bildirimini yeniden imzalamanız gerekecektir.
@@ -300,7 +300,7 @@ ms.locfileid: "60060747"
     ```
 
     > [!NOTE]
-    >  Önceki örnekte, MostRecentVersionNumber çözümünüzün en son yayımlanan sürümünün sürüm numarasıyla değiştirin (örneğin, **1_0_0_4**).
+    > Önceki örnekte, MostRecentVersionNumber çözümünüzün en son yayımlanan sürümünün sürüm numarasıyla değiştirin (örneğin, **1_0_0_4**).
 
      "ExcelWorkbook.vsto başarıyla imzalandı" iletisi görüntülenir.
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060747"
   Bir çözümün yükleme yolunu değiştirmek için kurulum programını güncelleştirmelisiniz; daha sonra da kullanıcıların bunu çalıştırması gerekir. Belge düzeyinde özelleştirmeler için, kullanıcıların ayrıca belgelerindeki bir özelliği de yeni konuma işaret edecek şekilde güncelleştirmeleri gerekir.
 
 > [!NOTE]
->  Kullanıcılardan belge özelliklerini güncelleştirmelerini talep etmek istemiyorsanız, güncelleştirilen belgeyi yükleme konumundan almak için kullanıcıları sorabilir.
+> Kullanıcılardan belge özelliklerini güncelleştirmelerini talep etmek istemiyorsanız, güncelleştirilen belgeyi yükleme konumundan almak için kullanıcıları sorabilir.
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>Kurulum programındaki yükleme konumunu değiştirmek için
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060747"
    ```
 
    > [!NOTE]
-   >  Bir ileti ekrana gelir ve yürütülebilir öğenin imzasının geçersiz kılınacağını belirtirse, çözümü imzalamak için kullanılan sertifika artık geçerli değil ve yayımcısı bilinmiyor demektir. Sonuç olarak, kullanıcıların, çözümü yüklemeden önce çözümün kaynağına güvendiklerini onaylamaları gerekecektir.
+   > Bir ileti ekrana gelir ve yürütülebilir öğenin imzasının geçersiz kılınacağını belirtirse, çözümü imzalamak için kullanılan sertifika artık geçerli değil ve yayımcısı bilinmiyor demektir. Sonuç olarak, kullanıcıların, çözümü yüklemeden önce çözümün kaynağına güvendiklerini onaylamaları gerekecektir.
 
    > [!NOTE]
-   >  URL geçerli değerini görüntülemek için Çalıştır `setup.exe /url`.
+   > URL geçerli değerini görüntülemek için Çalıştır `setup.exe /url`.
 
    Belge düzeyinde özelleştirmeler için kullanıcıların belgeyi açın ve ardından kendi _AssemblyLocation özelliğini güncelleştirmek gerekir. Aşağıdaki adımlarda kullanıcıların bu görevi nasıl yerine getirecekleri açıklanmaktadır.
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060747"
      Kullanıcının uygulamayı ya da özelleştirilmiş belgeyi bir sonraki açışında, dağıtım bildirimindeki değişiklik algılanır. Office çözümünün önceki sürümü ClickOnce önbelleğinden çalışır.
 
 > [!NOTE]
->  Yerel veriler çözümün sadece bir önceki sürümü için kaydedilir. İki sürüm geri alırsanız, yerel veriler korunmaz. Yerel veriler hakkında daha fazla bilgi için bkz. [ClickOnce uygulamalarında yerel ve uzak veri erişim](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+> Yerel veriler çözümün sadece bir önceki sürümü için kaydedilir. İki sürüm geri alırsanız, yerel veriler korunmaz. Yerel veriler hakkında daha fazla bilgi için bkz. [ClickOnce uygulamalarında yerel ve uzak veri erişim](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

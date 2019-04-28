@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440841"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Yerel nesnelerin özel görünümlerini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pen
  Natvis yerini **autoexp.dat** Visual Studio ve teklifler XML sözdizimi, daha iyi tanılama, sürüm oluşturma ve birden çok dosya desteği önceki sürümlerinde kullanılan dosya.  
 
 > [!NOTE]
->  Natvis çerçevesi için görselleştirmeler kullanılamaz olduğunda:  
+> Natvis çerçevesi için görselleştirmeler kullanılamaz olduğunda:  
 > 
 > - Hata ayıklayıcı türü ayarlanan bir C++ Windows Masaüstü proje hata ayıklama **karma**.  
 >   - Windows masaüstü uygulamasında yönetilen uyumluluk modu karışık modda hata ayıklama yapıyorsunuz (**Araçlar / Seçenekler / hata ayıklama / genel / yönetilen Uyumluluk modunu kullan**).  
@@ -304,7 +304,7 @@ Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pen
  İçinde `DisplayString` ifade `x` ve `y`, üyeleri `CPoint`, kaşlı ayraçlar içinde olduğundan ve bunların değerleri değerlendirilir. İfade ayrıca çift kaşlı ayraçlar kullanarak bir küme ayracından nasıl kaçış gösterir ( `{{` veya `}}` ).  
 
 > [!NOTE]
->  `DisplayString` Rastgele dize ve küme ayracı sözdizimi kabul eden tek öğe bir öğedir. Diğer tüm görselleştirme öğeleri yalnızca hata ayıklayıcı tarafından değerlendirilen ifadeleri kabul eder.  
+> `DisplayString` Rastgele dize ve küme ayracı sözdizimi kabul eden tek öğe bir öğedir. Diğer tüm görselleştirme öğeleri yalnızca hata ayıklayıcı tarafından değerlendirilen ifadeleri kabul eder.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  `StringView` Öğe değeri yerleşik metin görselleştiriciye gönderilecek giden ifade tanımlar. Örneğin, aşağıdaki görselleştirme için sahip olduğumuz varsayalım `ATL::CStringT` türü:  
@@ -336,7 +336,7 @@ Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pen
  ![CStringT verilerle StringView Görselleştirici](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Unutmayın ifade `{m_pszData,su}` C++ biçim belirticisini içerir `su` değeri bir Unicode dize görüntülemek için. Bkz: [C++ içindeki Biçim belirticileri](../debugger/format-specifiers-in-cpp.md) daha fazla bilgi için.  
+> Unutmayın ifade `{m_pszData,su}` C++ biçim belirticisini içerir `su` değeri bir Unicode dize görüntülemek için. Bkz: [C++ içindeki Biçim belirticileri](../debugger/format-specifiers-in-cpp.md) daha fazla bilgi için.  
 
 ### <a name="BKMK_Expand"></a> Genişletin  
  `Expand` Düğümü, kullanıcı, değişken pencerelerinde genişlettiğinde görselleştirilen türün alt öğeleri özelleştirmek için kullanılır. Bu, alt öğeleri tanımlayan alt düğümlerin listesini kabul eder.  
@@ -368,7 +368,7 @@ Visual Studio Natvis çerçevesi Visual Studio hata ayıklayıcı değişken pen
  Belirtilen ifadeler `Width` ve `Height` öğeler değerlendirilir ve değer sütununda gösterilir. `[Raw View]` Özel genişletme kullanılan her durumda düğüm hata ayıklayıcı tarafından otomatik olarak oluşturulur. Bunu nasıl nesnenin ham görünümünün kendi görselleştirmesinden farklı olduğunu göstermek için yukarıdaki ekran görüntüsünde genişletilmiştir. Visual Studio varsayılan genişletmesi, temel sınıfın bir alt ağacını oluşturur ve tüm veri üyeleri temel sınıfın alt öğeleri olarak listeler.  
 
 > [!NOTE]
->  Öğenin ifadesi karmaşık bir türü işaret ediyorsa `Item` düğümü genişletilebilir.  
+> Öğenin ifadesi karmaşık bir türü işaret ediyorsa `Item` düğümü genişletilebilir.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> Arrayıtems genişletme  
  Kullanım `ArrayItems` düğümünü türü bir dizi olarak yorumlamasını ve tek tek öğelerini görüntülemek ve Visual Studio hata. Görselliğini `std::vector` iyi bir örnektir:  

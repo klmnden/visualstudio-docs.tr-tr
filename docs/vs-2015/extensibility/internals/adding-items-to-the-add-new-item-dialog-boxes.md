@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443480"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Yeni Öğe Ekleme İletişim Kutularına Öğe Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54835067"
 Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu, kayıt defteri anahtarları ile başlar. Aşağıdaki kayıt defteri girdilerini gösterildiği gibi AddItemTemplates bölümü içinde kullanılabilir hale hangi öğelerin dizin adını ve yolunu içeren **Yeni Öğe Ekle** iletişim kutusu konur.  
   
 > [!NOTE]
->  Hemen kod kesimi aşağıdaki tabloda, kayıt defteri girişi hakkında ek bilgiler içerir.  
+> Hemen kod kesimi aşağıdaki tabloda, kayıt defteri girişi hakkında ek bilgiler içerir.  
   
  Bu bölümde, [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects] altında yer alır.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "54835067"
 |VAL SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Ağaç düğümünde görüntülenen dosyaların sıralama düzeni belirler **Yeni Öğe Ekle** iletişim kutusu.|  
   
 > [!NOTE]
->  Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  Dizin, % TEMPLATE_PATH%\SomeProjectItems olan TemplateDirs sol tarafındaki düğümü için listelenen **Yeni Öğe Ekle** iletişim kutusu ağaç. Ek öğeler ağacında, kök dizin içinde alt dizini temel alır. Dosyalar projeye eklenecek kullanılabilir maddelerinin sağ bölmede **Yeni Öğe Ekle** iletişim kutusu.  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54835067"
  Ancak, her şeyi bir .vsdir dosyasında olması gerekmez. Dizindeki her öğe için bir .vsdir dosyası olabilir. Daha fazla bilgi için [Sihirbazı (. Vsz) dosya](../../extensibility/internals/wizard-dot-vsz-file.md) ve [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  Şablon dizinlerde .vsdir dosyalarını isteğe bağlıdır. Yalnızca görüntüleyin ve bir proje öğesi koymak istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, TemplatesDir deyiminde belirtilen şablonları dizininde bu dosyayı koyabilir. Dosyayı daha sonra sağ bölmede görüntülenir **Yeni Öğe Ekle** iletişim kutusu için proje. Ancak, yerelleştirilmiş bir açıklamalı alt yazı dosyası veya bir simge görüntülemek istiyorsanız, şablonları dizinde .vsdir en az bir dosya içermelidir.  
+> Şablon dizinlerde .vsdir dosyalarını isteğe bağlıdır. Yalnızca görüntüleyin ve bir proje öğesi koymak istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, TemplatesDir deyiminde belirtilen şablonları dizininde bu dosyayı koyabilir. Dosyayı daha sonra sağ bölmede görüntülenir **Yeni Öğe Ekle** iletişim kutusu için proje. Ancak, yerelleştirilmiş bir açıklamalı alt yazı dosyası veya bir simge görüntülemek istiyorsanız, şablonları dizinde .vsdir en az bir dosya içermelidir.  
   
 ## <a name="grouping-project-items"></a>Proje öğeleri gruplandırma  
  Şablon grupları klasörlerdeki içermesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu ağacında, bunları öğelerle şablon dizin alt dizinler olması gerekir. Zaman **Yeni Öğe Ekle** kullanıcılara iletişim kutusu görüntülenir, bunlar ayrıca alt klasörleri görebilir ve bunları proje öğelerini seçebilirsiniz.  

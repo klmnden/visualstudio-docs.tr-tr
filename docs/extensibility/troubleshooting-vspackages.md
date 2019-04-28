@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434245"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 İle VSPackage olabilir ve bu sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.
@@ -46,7 +46,7 @@ ms.locfileid: "60039739"
 4. Açık **çıkış** penceresi örneğinin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage'ı yüklemek başarısız. VSPackage'ı yüklemek neden başarısız olduğunu hakkında bilgi pencerede görüntülenebilir.
 
    > [!NOTE]
-   >  Deneysel sürümüne başlatıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gelen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), inceleme **çıkış** iki sürümünü penceresi.
+   > Deneysel sürümüne başlatıyorsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gelen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), inceleme **çıkış** iki sürümünü penceresi.
 
 5. Etkinlik günlüğünü inceleyin.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60039739"
     4. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** veya F5 tuşuna basın.
 
         > [!NOTE]
-        >  Bir proje hata ayıklaması yapıyorsanız veya projenize mevcut bir örneğini artık yüklenemiyor.
+        > Bir proje hata ayıklaması yapıyorsanız veya projenize mevcut bir örneğini artık yüklenemiyor.
 
 2. Etkinlik günlüğü'nü kullanın.
 

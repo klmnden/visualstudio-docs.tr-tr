@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a99a35f7485dd6b2c9e80f552ce9364ce40f89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 94e0c5999f8d8e6bdfbc96a24a1a51b7c093aca1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431471"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme
 Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form denetimi. TableLayoutPanel, özel olarak daha sonra ekleyeceksiniz formda denetimleri düzgün şekilde hizalamaya yardımcı olur.
@@ -35,7 +35,7 @@ Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form de
 **TableLayoutPanel** denetimi
 
     > [!NOTE]
-    >  Formunuza başlığıyla içinde bir pencere görünürse, TableLayoutPanel ekledikten sonra **TableLayoutPanel görevleri**, herhangi bir yeri kapatmak için form içinde seçin. Bu pencere hakkında daha fazla öğreticinin ilerleyen bölümlerinde öğreneceksiniz.
+    > Formunuza başlığıyla içinde bir pencere görünürse, TableLayoutPanel ekledikten sonra **TableLayoutPanel görevleri**, herhangi bir yeri kapatmak için form içinde seçin. Bu pencere hakkında daha fazla öğreticinin ilerleyen bölümlerinde öğreneceksiniz.
 
      Bildirim nasıl **araç kutusu** sekmesini seçtiğinizde formunuzun kapsayacak şekilde genişler ve bunun dışında herhangi bir yeri seçtikten sonra kapatır. Bu IDE otomatik gizleme özelliğidir. Açıp pencereler için geçiş otomatik gizleme ve kilitleme penceresinin üst sağ üst köşedeki Raptiye simgesini seçerek açabilirsiniz. Raptiye simgesi aşağıdaki gibi görünür.
 
@@ -59,7 +59,7 @@ Bu adımda eklediğiniz bir <xref:System.Windows.Forms.TableLayoutPanel> form de
 7. TableLayoutPanel ayarladıktan sonra **Dock** özelliğini **dolgu**, panel formun tamamını kaplar. Formu yeniden boyutlandırırsanız, TableLayoutPanel takılı kalır ve kendisini sığacak şekilde yeniden boyutlandırır.
 
     > [!NOTE]
-    >  TableLayoutPanel, Microsoft Office Word'ün bir tablo gibi çalışır: Satırları ve sütunları vardır ve tek bir hücre birçok satırı ve sütunu kapsayabilir. Her hücre bir denetimi kontrol eder (düğme, onay kutusu veya etiket) barındırabilir. TableLayoutPanel denetiminiz olur bir <xref:System.Windows.Forms.PictureBox> denetimi üst satırı, kapsayan bir <xref:System.Windows.Forms.CheckBox> denetimi, sol alttaki hücreye ve dört <xref:System.Windows.Forms.Button> kendi sağ alt hücresinde denetimleri.
+    > TableLayoutPanel, Microsoft Office Word'ün bir tablo gibi çalışır: Satırları ve sütunları vardır ve tek bir hücre birçok satırı ve sütunu kapsayabilir. Her hücre bir denetimi kontrol eder (düğme, onay kutusu veya etiket) barındırabilir. TableLayoutPanel denetiminiz olur bir <xref:System.Windows.Forms.PictureBox> denetimi üst satırı, kapsayan bir <xref:System.Windows.Forms.CheckBox> denetimi, sol alttaki hücreye ve dört <xref:System.Windows.Forms.Button> kendi sağ alt hücresinde denetimleri.
 
 8. Şu anda TableLayoutPanel, iki eşit boyutta satıra ve iki eşit boyutta sütuna sahiptir. Size en üst satır ve sağ sütun için bunları yeniden boyutlandırın gerekiyor. İçinde **Windows Form Tasarımcısı**, Tablelayoutpanel'i seçin. Sağ üst köşedeki gibi görünen bir küçük siyah üçgen düğme yoktur.
 

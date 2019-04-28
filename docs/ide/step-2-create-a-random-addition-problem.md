@@ -8,18 +8,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b611e1f501d2ef4f0677c8e9258e2950795197e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430783"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir toplama problemi oluşturma
 Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matematik soruları ekleyerek olun. Adlı bir yöntem de oluşturduğunuz `StartTheQuiz()` ve problemleri dolduran ve geri sayım Zamanlayıcısını başlatır. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorularını ekleyeceksiniz.
 
 > [!NOTE]
->  Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Rasgele bir toplama problemi oluşturma
 
@@ -43,7 +43,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
 4. Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.
 
     > [!NOTE]
-    >  Bir tamsayı değişkeni C# veya Visual Basic'te bir tamsayı tamsayı olarak bilinir. Bu türde bir değişken, -2147483648 ile 2147483647 arasında bir pozitif veya negatif sayı depolar ve ondalık değil yalnızca tam sayılara depolayabilirsiniz.
+    > Bir tamsayı değişkeni C# veya Visual Basic'te bir tamsayı tamsayı olarak bilinir. Bu türde bir değişken, -2147483648 ile 2147483647 arasında bir pozitif veya negatif sayı depolar ve ondalık değil yalnızca tam sayılara depolayabilirsiniz.
 
      Aşağıdaki kodun gösterdiği gibi rastgele bir nesne eklemek için yaptığınız gibi bir tam sayı değişkeni eklemek için benzer bir söz dizimi kullanın.
 
@@ -62,7 +62,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
      Bir nesneden sonra bir nokta girdiğinizde, IntelliSense nesnenin üyeleri, özellikler, yöntemler ve olaylar gibi bir listesini gösterir.
 
     > [!NOTE]
-    >  Kullandığınızda `Next()` yöntemiyle `Random` çağırdığınızda gibi nesne `randomizer.Next(50)`, (Başlangıç, 0 ile 49 arasında) 50'den küçük rastgele bir sayı alın. Bu örnekte, aradığınız `randomizer.Next(51)`. Böylece iki rastgele sayı 0 ile 100 arası bir yanıt ekleyecek 51 ve 50 değil kullanılır. 50 geçirirseniz `Next()` yöntemi, bir sayı seçer 0 ile 49 arasında en yüksek olası yanıt 100 değil 98, bu nedenle. Her iki tamsayı değişkenleri, bir yöntemin ilk iki deyim, çalıştırdıktan sonra **addend1** ve **addend2**, 0 ile 50 arasında rastgele bir sayı tutun. Bu ekran Visual C# kodunu göstermektedir, ancak IntelliSense Visual Basic için aynı şekilde çalışır.
+    > Kullandığınızda `Next()` yöntemiyle `Random` çağırdığınızda gibi nesne `randomizer.Next(50)`, (Başlangıç, 0 ile 49 arasında) 50'den küçük rastgele bir sayı alın. Bu örnekte, aradığınız `randomizer.Next(51)`. Böylece iki rastgele sayı 0 ile 100 arası bir yanıt ekleyecek 51 ve 50 değil kullanılır. 50 geçirirseniz `Next()` yöntemi, bir sayı seçer 0 ile 49 arasında en yüksek olası yanıt 100 değil 98, bu nedenle. Her iki tamsayı değişkenleri, bir yöntemin ilk iki deyim, çalıştırdıktan sonra **addend1** ve **addend2**, 0 ile 50 arasında rastgele bir sayı tutun. Bu ekran Visual C# kodunu göstermektedir, ancak IntelliSense Visual Basic için aynı şekilde çalışır.
 
      Bu deyimlere daha yakından bakalım.
 

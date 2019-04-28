@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430403"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te, OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu izlenecek yol, bir Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturma işlemi gösterilmektedir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için [SharePoint Foundation REST arabirimi](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -35,7 +35,7 @@ ms.locfileid: "60058258"
  İlk olarak, Visual Studio'da bir Silverlight uygulaması oluşturursunuz. Silverlight uygulaması, SharePoint duyuruları listeden ListData.svc hizmetini kullanarak verileri alır.
 
 > [!NOTE]
->  Silverlight 4.0 önce hiçbir sürümü, SharePoint listesini veri başvurmak için gerekli arabirimlere destekler.
+> Silverlight 4.0 önce hiçbir sürümü, SharePoint listesini veri başvurmak için gerekli arabirimlere destekler.
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Bir Silverlight uygulaması ve Silverlight web bölümü oluşturmak için
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058258"
 2. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **başvuruları**ve ardından **hizmet Başvurusu Ekle**.
 
     > [!NOTE]
-    >  Visual Basic kullanıyorsanız seçmelisiniz **tüm dosyaları göster** simgesi en üstündeki **Çözüm Gezgini** görüntülenecek **başvuruları** düğümü.
+    > Visual Basic kullanıyorsanız seçmelisiniz **tüm dosyaları göster** simgesi en üstündeki **Çözüm Gezgini** görüntülenecek **başvuruları** düğümü.
 
 3. Adresi kutusunda **hizmet Başvurusu Ekle** iletişim kutusunda, SharePoint sitenizin URL'sini girin **http://MySPSite**ve ardından **Git** düğmesi.
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058258"
      Silverlight web bölümü artık SharePoint sitesinden duyuru verileri görüntüleme. Varsayılan olarak, SharePoint sitesi sayfalarının listeden sayfa depolanır.
 
     > [!NOTE]
-    >  Silverlight veri alanlarında erişirken, Silverlight web uygulamaları yararlanmak için kullanılan güvenlik açıklarına karşı korur. Silverlight'ta uzaktan verilere erişirken sorun yaşarsanız bkz [bir hizmet üzerinden etki alanı sınırlarında kullanılabilir hale getirme](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Silverlight veri alanlarında erişirken, Silverlight web uygulamaları yararlanmak için kullanılan güvenlik açıklarına karşı korur. Silverlight'ta uzaktan verilere erişirken sorun yaşarsanız bkz [bir hizmet üzerinden etki alanı sınırlarında kullanılabilir hale getirme](http://go.microsoft.com/fwlink/?LinkId=223276).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)

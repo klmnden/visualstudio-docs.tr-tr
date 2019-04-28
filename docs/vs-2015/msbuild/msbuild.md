@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425906"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60050406"
   Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanarak Çalıştır. Başka bir alternatif olarak IDE içindeki kodu geliştirme bilgisayarında oluşturabilirsiniz, ancak birden çok geliştiriciden tümleştirilen kodu oluşturmak için MSBuild komut satırını kullanın.  
   
 > [!NOTE]
->  Otomatik olarak derlemek, test ve uygulamanızı dağıtmak için Team Foundation Build'ı kullanabilirsiniz. Geliştiriciler kodu (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) iade ettiğinde veya uygun bir zamanlama (örneğin, bir gecelik yapı doğrulama testi derlemesinde) otomatik olarak yapı sistemi kullanabilirsiniz. Team Foundation derlemesi kodunuzu Msbuild'i kullanarak derler. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Otomatik olarak derlemek, test ve uygulamanızı dağıtmak için Team Foundation Build'ı kullanabilirsiniz. Geliştiriciler kodu (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) iade ettiğinde veya uygun bir zamanlama (örneğin, bir gecelik yapı doğrulama testi derlemesinde) otomatik olarak yapı sistemi kullanabilirsiniz. Team Foundation derlemesi kodunuzu Msbuild'i kullanarak derler. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
  Bu konu, MSBuild genel bir bakış sağlar. Giriş niteliğindeki bir eğitim için bkz. [izlenecek yol: MSBuild kullanarak](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Hakkında daha fazla bilgi için [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] komut satırı seçenekleri görmek [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).  
   
 > [!IMPORTANT]
->  Bir proje indirmeden önce kodun güvenilirliğini belirleyin.  
+> Bir proje indirmeden önce kodun güvenilirliğini belirleyin.  
   
 ## <a name="BKMK_ProjectFile"></a> Proje dosyası  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kolay anlaşılan ve genişletilebilen XML tabanlı proje dosyası biçimi kullanır. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Proje dosyası biçimi, geliştiricilerin derlenecek öğeleri sağlar ve ayrıca nasıl bunlar farklı işletim sistemleri ve yapılandırmalar için oluşturulacak. Ayrıca, proje dosyası biçimi ayrı dosyalara faktörlenebilen ve böylece yapılar ürün içindeki farklı projelerde tutarlı bir şekilde gerçekleştirilebilir geliştiriciler Yazar yeniden kullanılabilir yapı kuralları yazmasını sağlar.  
@@ -193,8 +193,8 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
-|[İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio IDE kapatılmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
+|[İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
+|[İzlenecek yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio IDE kapatılmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
 |[MSBuild Kavramları](../msbuild/msbuild-concepts.md)|MSBuild'in dört yapı bloğunu sunar: özellikler, öğeleri, hedefler ve görevler.|  
 |[Öğeler](../msbuild/msbuild-items.md)|Ardındaki genel kavramları açıklar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dosya biçimi ve nasıl parçaları bir araya getireceğinizi.|  
 |[MSBuild Özellikleri](msbuild-properties1.md)|Özellikler ve özellik koleksiyonları tanıtır. Özellikler, yapıları yapılandırmak için kullanılan anahtar/değer çiftleri olur.|  

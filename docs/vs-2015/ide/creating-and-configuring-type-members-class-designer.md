@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437601"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 |Modül (Yalnızca VB)|yöntem, özellik, alan, olay, oluşturucu, sabit|  
   
 > [!NOTE]
->  Bir özelliğin get ve set erişimcileri ek mantığa gerek duymadığında, otomatik uygulanan özellikleri (yalnızca C#) kullanarak özellik bildirimini daha kısa yapın. Tam imzayı göstermek için **sınıf diyagramı** menüsünde seçin **üyeler formatını Değiştir**, **tam imzayı görüntüle**. Otomatik uygulanan özellikler hakkında daha fazla bilgi için bkz: [Implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Bir özelliğin get ve set erişimcileri ek mantığa gerek duymadığında, otomatik uygulanan özellikleri (yalnızca C#) kullanarak özellik bildirimini daha kısa yapın. Tam imzayı göstermek için **sınıf diyagramı** menüsünde seçin **üyeler formatını Değiştir**, **tam imzayı görüntüle**. Otomatik uygulanan özellikler hakkında daha fazla bilgi için bkz: [Implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
   
@@ -85,10 +85,10 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 - Sınıf Ayrıntıları penceresi  
   
 > [!NOTE]
->  Bu bölümdeki yordamları kullanarak oluşturucular ve yıkıcılar da oluşturabilirsiniz. Oluşturucular ve Yıkıcılar özel yöntem türleri olduğunu ve bu nedenle, içinde görünürler olduğunu aklınızda Lütfen ayı **yöntemleri** sınıf diyagramı şekillerinde ve bölme **yöntemleri** sınıfının bölümüne Ayrıntıları pencere kılavuzunun.  
+> Bu bölümdeki yordamları kullanarak oluşturucular ve yıkıcılar da oluşturabilirsiniz. Oluşturucular ve Yıkıcılar özel yöntem türleri olduğunu ve bu nedenle, içinde görünürler olduğunu aklınızda Lütfen ayı **yöntemleri** sınıf diyagramı şekillerinde ve bölme **yöntemleri** sınıfının bölümüne Ayrıntıları pencere kılavuzunun.  
   
 > [!NOTE]
->  Bir temsilciye ekleyebileceğiniz tek varlık parametredir. 'Sınıf Ayrıntıları Penceresi araç çubuğunu kullanarak üye oluşturmak için' başlıklı yordamın bu eylem için geçerli olmadığını unutmayın.  
+> Bir temsilciye ekleyebileceğiniz tek varlık parametredir. 'Sınıf Ayrıntıları Penceresi araç çubuğunu kullanarak üye oluşturmak için' başlıklı yordamın bu eylem için geçerli olmadığını unutmayın.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Sınıf Tasarımcısı'nı kullanarak üye oluşturmak için  
   
@@ -182,7 +182,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 3. Sınıf Ayrıntıları penceresi kılavuzunun alanlarındaki değerleri düzenleyin. Her düzenlemeden sonra ENTER'a basın ya da bir başka yolla, örneğin SEKME tuşuna basarak, odağı düzenlenen alanın dışına taşıyın. Düzenlemeleriniz anında koda yansır.  
   
     > [!NOTE]
-    >  Bir üyenin yalnızca adını değiştirmek istiyorsanız, bunu yerinde düzenlemeyi kullanarak yapabilirsiniz.  
+    > Bir üyenin yalnızca adını değiştirmek istiyorsanız, bunu yerinde düzenlemeyi kullanarak yapabilirsiniz.  
   
 ## <a name="AddMethodParams"></a> Yöntemlere parametreler ekleme  
  Sınıf Ayrıntıları penceresini kullanarak yöntemlere parametreler ekleyin. Parametreler, zorunlu veya isteğe bağlı olacak şekilde yapılandırılabilir. İçin bir değer sağlanması **isteğe bağlı varsayılan** özelliği, tasarımcıya kodu isteğe bağlı bir parametre olarak bildirir.  
@@ -216,10 +216,10 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   Özellikler penceresi sınıf Ayrıntıları penceresinde görüntülenen parametre özelliklerinin görüntüler: **Adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).  
   
 > [!NOTE]
->  Bir temsilciye parametre eklemek için bkz [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Bir temsilciye parametre eklemek için bkz [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Yıkıcı üyesi bir yöntem olmasına karşın, parametrelere sahip olamaz.  
+> Yıkıcı üyesi bir yöntem olmasına karşın, parametrelere sahip olamaz.  
   
 ### <a name="HowToAddParameterToMethod"></a> Bir yönteme parametre eklemek için  
   
@@ -254,7 +254,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 4. Özellikler penceresinde için bir değer yazın **isteğe bağlı varsayılan** özelliği. Bir parametrenin İsteğe Bağlı Varsayılan özelliği ayarlandığında bu parametre isteğe bağlı olur.  
   
     > [!NOTE]
-    >  İsteğe bağlı parametreler, parametre listesindeki en son parametreler olmalıdır.  
+    > İsteğe bağlı parametreler, parametre listesindeki en son parametreler olmalıdır.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Sınıf ayrıntıları kullanım notları  
  Sınıf Ayrıntıları penceresinin kullanımına ilişkin aşağıdaki ipuçlarına dikkat edin.  

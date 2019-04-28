@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b22d53e9773893cc7cedb6b42728bd617a6841e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: add36da660b9ab8130884db0a4088b693af18a6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400672"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
 Bir veri sembolü konum türünü alır.
@@ -39,7 +39,7 @@ HRESULT get_locationType ( 
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
 
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+> Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429118"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye ba�
  Öğeleri oluşturmak için verilere bağlı denetimler seçme hakkında daha fazla bilgi için **veri kaynakları** penceresinde görmek [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünde **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünde **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Bir veri türü için bağlanabilir denetim listesini özelleştirme  
  Ekleme veya öğe mevcut denetimlerin listesinin denetimleri kaldırma için **veri kaynakları** aşağıdaki adımları uygulayın, bir özel veri türüne sahip bir pencere.  
@@ -66,7 +66,7 @@ Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye ba�
 5. İçinde **ilişkili denetimler** kutusuna, seçilen veri türü için kullanılabilir olmasını istediğiniz her bir denetim seçin veya listeden kaldırmak istediğiniz herhangi bir denetim seçimini temizleyin.  
   
     > [!NOTE]
-    >  Olarak seçmek istediğiniz denetim belirmiyorsa **ilişkili denetimler** kutusunda denetim listesine eklemeniz gerekir. Daha fazla bilgi için [listesini, ilişkili denetimler veri türü için ekleme denetimlerini](#addingcontrols).  
+    > Olarak seçmek istediğiniz denetim belirmiyorsa **ilişkili denetimler** kutusunda denetim listesine eklemeniz gerekir. Daha fazla bilgi için [listesini, ilişkili denetimler veri türü için ekleme denetimlerini](#addingcontrols).  
   
 6. **Tamam**'ı tıklatın.  
   
@@ -94,7 +94,7 @@ Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye ba�
 3. İçinde **ilişkili denetimler** kutusunda, az önce eklediğiniz denetimin **araç kutusu** artık görünmelidir.  
   
     > [!NOTE]
-    >  Geçerli çözüm içindeki ya da başvurulan bir derlemede bulunan denetimler yalnızca ilişkili denetimler listesine eklenebilir. (Denetimler de veri bağlama özniteliklerinden biri önceki tabloda uygulamanız gerekir.) Veri bulunmayan özel bir denetim bağlamak için **veri kaynakları** penceresinde denetimi **araç kutusu** tasarım yüzeyi ve gelen bağlamak için öğeyi sürükleyin **veri Kaynakları** içerisindeyse denetimdeki penceresi.  
+    > Geçerli çözüm içindeki ya da başvurulan bir derlemede bulunan denetimler yalnızca ilişkili denetimler listesine eklenebilir. (Denetimler de veri bağlama özniteliklerinden biri önceki tabloda uygulamanız gerekir.) Veri bulunmayan özel bir denetim bağlamak için **veri kaynakları** penceresinde denetimi **araç kutusu** tasarım yüzeyi ve gelen bağlamak için öğeyi sürükleyin **veri Kaynakları** içerisindeyse denetimdeki penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)

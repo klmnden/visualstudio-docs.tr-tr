@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45da81c91cf654fe41fb903314dce662beac7a23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 05d8cafce91fa55c515457b9f44779a06586387a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409496"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM Gezgini'ni kullanarak CSS stillerinde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 - Kullanım **hesaplanan** stilin hesaplanan değerlerini görüntülemek için sekmesinde. Örneğin, 1em için bir boyut ayarlarsanız, Internet Explorer tarafından hesaplanan değer 16px olabilir. Bu sekmedeki stiller, düzenlenir stil adına göre gibi `height`. Bu sekmeyi, belirli stilleri etkinleştirmek veya devre dışı bırakmak, değerleri el ile düzenlemek ve bu değişikliklerin sonuçlarını hemen görmek için de kullanabilirsiniz.  
   
     > [!NOTE]
-    >  Bilgi sağlanan Visual Studio 2013 Update 2 ' **izleme** ile sekmesindeki birleştirildiği **hesaplanan** sekmesinde ve **izleme** sekmesi kaldırılmıştır.  
+    > Bilgi sağlanan Visual Studio 2013 Update 2 ' **izleme** ile sekmesindeki birleştirildiği **hesaplanan** sekmesinde ve **izleme** sekmesi kaldırılmıştır.  
   
 - Kullanım **değişiklikleri** tanımlamak ve hata ayıklama oturumu sırasında değiştirdiğiniz CSS stillerini izlemek için sekmesinde (yalnızca Windows Store ve Windows Phone Store uygulamaları).  
   
 > [!TIP]
->  Stillerde yaptığınız değişiklikler **stilleri** ve **hesaplanan** sekmeleri kalıcı değildir. Hata ayıklamayı durdurduğunuzda kaybolurlar. Kaynak kodu değiştirmek ve hata ayıklayıcıyı durdurup yeniden olmadan sayfaları yeniden yüklemek için kullanarak uygulamanızı yenileyin ![Yenile Windows uygulama düğmesine](../debugger/media/js-refresh.png "JS_Refresh") düğmesine (**Yenile Windows uygulaması** ) üzerinde **hata ayıklama** araç çubuğu (yalnızca Windows Store ve Windows Phone Store uygulamaları). Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Stillerde yaptığınız değişiklikler **stilleri** ve **hesaplanan** sekmeleri kalıcı değildir. Hata ayıklamayı durdurduğunuzda kaybolurlar. Kaynak kodu değiştirmek ve hata ayıklayıcıyı durdurup yeniden olmadan sayfaları yeniden yüklemek için kullanarak uygulamanızı yenileyin ![Yenile Windows uygulama düğmesine](../debugger/media/js-refresh.png "JS_Refresh") düğmesine (**Yenile Windows uygulaması** ) üzerinde **hata ayıklama** araç çubuğu (yalnızca Windows Store ve Windows Phone Store uygulamaları). Daha fazla bilgi için bkz. [uygulamayı yenileme (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>CSS kuralı düzeltme örneği  
  Bu örnekte, CSS kurallarının nasıl inceleneceği ve stil sorunlarında nasıl hata ayıklanacağı gösterilmiştir. Bu örnekte, varsayalım grup başlıklarını görüntülemek için kullanılan bir yazı tipi rengini değiştirmek istediğiniz [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] bölünmüş uygulama şablonunda.  
   
 > [!NOTE]
->  Bu örnek, bir Windows Store uygulaması gösterir, ancak gösterilen tüm DOM Gezgini özellikleri Windows Phone Store App ve Apache Cordova için Visual Studio araçları kullanarak oluşturulan bir uygulama değişiklikleri sekmesinde dışında de geçerlidir.  
+> Bu örnek, bir Windows Store uygulaması gösterir, ancak gösterilen tüm DOM Gezgini özellikleri Windows Phone Store App ve Apache Cordova için Visual Studio araçları kullanarak oluşturulan bir uygulama değişiklikleri sekmesinde dışında de geçerlidir.  
   
 #### <a name="to-view-and-change-css-rules"></a>CSS kurallarını görüntülemek ve değiştirmek için  
   
@@ -98,19 +98,19 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
      Uygulama yüklemesi tamamlandığında, arama liste öğelerinin başlıkları gibi yüklenirken **grup başlığı: 1**. Renk değişmez ve dolayısıyla turuncu renk uygulama girişimi işe yaramamıştır. Neyin yanlış gittiğini bulalım ve DOM Gezgini'ndeki CSS sekmelerini kullanarak düzeltelim.  
   
     > [!TIP]
-    >  Uygulama Simulator'da göründükten sonra, CSS stillerinde yaptığınız seçimlerin ve değişikliklerin sonuçlarını hemen görebilmek için Simulator'ı hemen Visual Studio penceresinin yanına konumlandırın.  
+    > Uygulama Simulator'da göründükten sonra, CSS stillerinde yaptığınız seçimlerin ve değişikliklerin sonuçlarını hemen görebilmek için Simulator'ı hemen Visual Studio penceresinin yanına konumlandırın.  
   
 6. Visual Studio'ya geçip tıklatın **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner. İşte **öğe seçin** düğmesi. ![DOM Gezgini'nde öğe düğmesini seçme](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  HTML öğelerini doğrudan DOM Gezgini'nde de seçebilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
+    > HTML öğelerini doğrudan DOM Gezgini'nde de seçebilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
   
 7. Simulator'da, listedeki ilk öğeyi başlığının üzerine geldiğinizde **grup başlığı: 1**, giriş sayfasının sol bölmesinde. Başlık aşağıda gösterildiği gibi vurgulanır:  
   
      ![Öğe seçin düğmesini kullanarak](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
-    >  Windows Phone öykünücüsü gelerek vurgulama öğeleri yalnızca kısmen destekler.  
+    > Windows Phone öykünücüsü gelerek vurgulama öğeleri yalnızca kısmen destekler.  
   
 8. Seviyelendirilmiş başlığını tıklatın. DOM Gezgini ilgili HTML öğesini otomatik olarak seçer ve bu da aşağıdaki gibidir.  
   
@@ -127,12 +127,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     - Biz değiştiren değiştirdiğimiz CSS Seçici `.itemspage .itemslist .item`, (üstü çizili metin olarak görünür) son stil hesaplamasında kullanılmadığını. Başka birkaç örneği `color` stili de kullanılmaz.  
   
         > [!TIP]
-        >  Uzun seçici adları söz konusu olduğunda, araç ipucunda tam ad görüntülenir.  
+        > Uzun seçici adları söz konusu olduğunda, araç ipucunda tam ad görüntülenir.  
   
     - Son hesaplanan CSS değeri `rgba(255, 255, 255, 0.87)`, özel olarak şu CSS Seçici için ayarlanır: `.itemspage .itemslist .item .item-overlay .item-title`, items.CSS'de tanımlıdır ayrıca tanımlanan.  
   
         > [!TIP]
-        >  Başlık renginin nerede ayarlandığını öğrendiğimize göre, nerede değiştirebileceğimizi de biliyoruz demektir. Ancak, kalan adımlarda gösterildiği gibi, uygulamayı yenilemeden değişiklikleri DOM Gezgini'nde test edebiliriz.  
+        > Başlık renginin nerede ayarlandığını öğrendiğimize göre, nerede değiştirebileceğimizi de biliyoruz demektir. Ancak, kalan adımlarda gösterildiği gibi, uygulamayı yenilemeden değişiklikleri DOM Gezgini'nde test edebiliriz.  
   
 9. İlk oluşum için onay kutusunu temizleyin `color` stilinin, `.itemspage .itemslist .item .item-overlay .item-title` Seçici. Şimdi Simulator'da, öğenin rengini istediğimiz ve biz, CSS Seçici değiştiren tüm değişiklik turuncu, başlıklar görmeniz `.itemspage .itemslist .item`, artık geçersiz kılınmadığı (diğer bir deyişle, artık uygulanan üstü çizili metin vardır). İşte **hesaplanan** biz onay kutusunu temizledikten sonra sekmesi.  
   

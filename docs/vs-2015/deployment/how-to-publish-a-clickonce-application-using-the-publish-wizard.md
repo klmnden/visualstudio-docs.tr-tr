@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442696"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için 
  Yayımlama Sihirbazı'nı çalıştırmadan önce yayınlama özelliklerini uygun şekilde ayarlamanız gerekir. ClickOnce uygulamanızı imzalamak için bir anahtar belirlemek istiyorsanız, örneğin, vb. yapabileceğiniz **imzalama** sayfasının **Proje Tasarımcısı**. Daha fazla bilgi için [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  ClickOnce kullanarak bir uygulamanın birden fazla sürüm yüklediğinizde, yükleme uygulamanın önceki sürümlerini belirttiğiniz yayımlama konum arşivinde adlı bir klasöre taşır. Yükleme dizini temizler önceki sürümünden önceki sürümleri bu şekilde korur arşivleme.  
+> ClickOnce kullanarak bir uygulamanın birden fazla sürüm yüklediğinizde, yükleme uygulamanın önceki sürümlerini belirttiğiniz yayımlama konum arşivinde adlı bir klasöre taşır. Yükleme dizini temizler önceki sürümünden önceki sürümleri bu şekilde korur arşivleme.  
   
 > [!NOTE]
->  İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için tıklayın **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için tıklayın **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Bir dosya paylaşımı ya da yolu yayımlamak için  
   
@@ -83,7 +83,7 @@ Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için 
 4. Üzerinde **nasıl kullanıcılar uygulamayı yükleyecek?** sayfasında, gelen bir **CD-ROM veya DVD-ROM**ve ardından **sonraki**.  
   
    > [!NOTE]
-   >  Yüklemenin otomatik olarak çalışmasını istiyorsanız, CD-ROM'dan eklenir sürücüsüne açık **Yayımla** sayfasını **Proje Tasarımcısı** tıklatıp **seçenekleri** düğmesini ve ardından **yayımlama seçeneği** seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat**.  
+   > Yüklemenin otomatik olarak çalışmasını istiyorsanız, CD-ROM'dan eklenir sürücüsüne açık **Yayımla** sayfasını **Proje Tasarımcısı** tıklatıp **seçenekleri** düğmesini ve ardından **yayımlama seçeneği** seçin **için CD yüklemeleri, CD takıldığında Kurulumu otomatik olarak Başlat**.  
   
 5. Uygulamanızı CD-ROM üzerinde dağıtırsanız, güncelleştirmeleri bir Web sitesinden sağlamak isteyebilirsiniz. İçinde **burada Uygulama Güncelleştirmeleri denetle?** sayfasında, güncelleştirme bir seçeneği belirleyin:  
   
@@ -98,7 +98,7 @@ Bir ClickOnce uygulamasını kullanıcılar tarafından kullanılabilmesi için 
     Yayımlama durumu, durum bildirim alanında görüntülenir.  
   
    > [!NOTE]
-   >  Yayınlama tamamlandıktan sonra CD-ROM veya DVD-ROM medyaya dosyaları belirttiğiniz konuma kopyalamak için DVD-Rewriter adım 3 ya da CD-Rewriter kullanmanız gerekecektir.  
+   > Yayınlama tamamlandıktan sonra CD-ROM veya DVD-ROM medyaya dosyaları belirttiğiniz konuma kopyalamak için DVD-Rewriter adım 3 ya da CD-Rewriter kullanmanız gerekecektir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

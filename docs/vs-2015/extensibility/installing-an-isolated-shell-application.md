@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414537"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Yalıtılmış Kabuk uygulaması yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
 2. Kabuk ve Kabuk uygulamanızı, aşağıdaki örnekte gösterildiği gibi gerekli bileşenleri tanımlayın.  
   
     > [!NOTE]
-    >  Bazı öğeleri .wxs tanımlarını bakabilirsiniz.  
+    > Bazı öğeleri .wxs tanımlarını bakabilirsiniz.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
         ```  
   
     > [!NOTE]
-    >  Shell (yalıtılmış) uygulamalar için gerekli bağımlılıkların şunlardır: DebuggerProxy, MasterPkgDef, kaynakları (özellikle .winprf dosyası), uygulama ve PkgDefs.  
+    > Shell (yalıtılmış) uygulamalar için gerekli bağımlılıkların şunlardır: DebuggerProxy, MasterPkgDef, kaynakları (özellikle .winprf dosyası), uygulama ve PkgDefs.  
   
 ### <a name="registry-entries"></a>Kayıt defteri girdileri  
  Shell (yalıtılmış) proje şablonu içeren bir *ProjectName*.reg dosyasını yüklemede birleştirmek kayıt defteri anahtarları için. Bu kayıt defteri girdileri MSI yükleme hem de temizleme amaçlar için bir parçası olmalıdır. Ayrıca ApplicationRegistry.wxs eşleşen kayıt defteri blokları oluşturmanız gerekir.  
@@ -211,7 +211,7 @@ Bir kabuk uygulaması yüklemek için aşağıdaki adımları gerçekleştirmeni
  Visual Studio Kabuğu (yalıtılmış) yüklü olup olmadığını belirlemek için önce bunu HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install kayıt defteri değerini denetleyerek yüklü olup olmadığını belirleyin.  
   
 > [!NOTE]
->  Bu değerleri de Product.wxs Kabuk algılama bloğunda tarafından okunur.  
+> Bu değerleri de Product.wxs Kabuk algılama bloğunda tarafından okunur.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder burada Visual Studio Kabuğu yüklendi ve dosya için kontrol edebilirsiniz konumunu belirtir.  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [İzlenecek yol: Temel Yalıtılmış Kabuk Uygulaması Oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

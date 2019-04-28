@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440782"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage Kurulum Senaryoları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Paylaşılan VSPackage yükleyici
  Çizimde gösterildiği gibi paylaşılan bileşenler her zaman yüklü Feat_Common özelliğinin bir parçası olarak yapılır. Feat_VS2002 ve Feat_VS2003 özellikleri görünür hale getirerek kullanıcıların hangi sürümlere yükleme sırasında seçebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage'ı tümleştirmek için istedikleri. Kullanıcılar ayrıca kullanabilir Windows Installer Bakım modu ekleyip özellikleri, bu durumda ekler veya VSPackage kayıt bilgilerini farklı sürümlerinden kaldırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Bir özelliğin görüntü sütunu 0 olarak ayarlanması gizler. 1 gibi bir alt düzey sütun değeri her zaman yüklenecek sağlar. Daha fazla bilgi için [INSTALLLEVEL özelliği](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) ve [özellik tablosu](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Bir özelliğin görüntü sütunu 0 olarak ayarlanması gizler. 1 gibi bir alt düzey sütun değeri her zaman yüklenecek sağlar. Daha fazla bilgi için [INSTALLLEVEL özelliği](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) ve [özellik tablosu](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Senaryo 2: Paylaşılan VSPackage'ı güncelleştirme  
  Bu senaryoda, Senaryo 1 VSPackage yükleyicide güncelleştirilmiş bir sürümünü sevk edilir. Tartışma için güncelleştirme için destek ekler [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ancak daha basit bir güvenlik düzeltme eki veya hata düzeltmesi hizmet paketi olabilir. Zaten sistemde değişmeden bileşenleri değil yeniden yeni bileşenleri yüklemek için Windows Installer'ın kuralları zorunlu kılar. Bu durumda, sürüm 1.0 zaten sistemiyle güncelleştirilen bileşenin Comp_MyVSPackage.dll üzerine ve kullanıcıların kendi bileşeniyle Comp_VS2005_Reg Feat_VS2005 yeni özellik eklemek seçin.  
   
 > [!CAUTION]
->  VSPackage birden çok sürümünü arasında paylaşılan her [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], sonraki sürümlerini VSPackage'nın önceki sürümleriyle geriye dönük uyumluluk korumak önemlidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Geriye dönük uyumluluk koruyamadığını burada yan yana, özel VSPackages kullanmanız gerekir. Daha fazla bilgi için [destekleyen birden çok Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> VSPackage birden çok sürümünü arasında paylaşılan her [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], sonraki sürümlerini VSPackage'nın önceki sürümleriyle geriye dönük uyumluluk korumak önemlidir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Geriye dönük uyumluluk koruyamadığını burada yan yana, özel VSPackages kullanmanız gerekir. Daha fazla bilgi için [destekleyen birden çok Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![VS VS paket güncelleştirme resmi paylaşılan](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 VSPackage'ı güncelleştirme yükleyicisi paylaşılan  

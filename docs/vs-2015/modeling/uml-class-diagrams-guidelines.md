@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424504"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML sınıf diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
  Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Bu konu UML sınıf diyagramları hakkındadır. Program kodunu görselleştirmek için oluşturabileceğiniz ve kullanabileceğiniz başka tür bir sınıf diyagramı vardır. Bkz: [sınıfları ve türleri tasarlama ve görüntüleme](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Bu konu UML sınıf diyagramları hakkındadır. Program kodunu görselleştirmek için oluşturabileceğiniz ve kullanabileceğiniz başka tür bir sınıf diyagramı vardır. Bkz: [sınıfları ve türleri tasarlama ve görüntüleme](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> UML sınıf diyagramlarını kullanma  
  Bir UML sınıf diyagramını çeşitli amaçlarla kullanabilirsiniz:  
@@ -82,7 +82,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
  UML sınıf diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+> Herhangi bir modelleme diyagramının oluşturmaya yönelik ayrıntılı adımlar açıklanmıştır [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>Bir UML Sınıf diyagramı oluşturmak için  
   
@@ -185,7 +185,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   Henüz modelinizde tanımlamadığınız bir türün adını da yazabilirsiniz. Adı altında listelenen **belirtilmemiş türler** UML Model Gezgini'nde.  
   
 > [!NOTE]
->  Modelinizde o adın sınıfını veya arabirimini daha sonra tanımlarsanız, eski öznitelikler ve işlemler hala Belirtilmemiş Türler'deki öğeye başvuracaktır. Yeni sınıfa başvurmak için onları değiştirmek istiyorsanız, her özniteliği veya işlemi ziyaret etmeli ve aşağı açılan menüden yeni sınıfı seçerek türü sıfırlamalısınız.  
+> Modelinizde o adın sınıfını veya arabirimini daha sonra tanımlarsanız, eski öznitelikler ve işlemler hala Belirtilmemiş Türler'deki öğeye başvuracaktır. Yeni sınıfa başvurmak için onları değiştirmek istiyorsanız, her özniteliği veya işlemi ziyaret etmeli ve aşağı açılan menüden yeni sınıfı seçerek türü sıfırlamalısınız.  
   
 #### <a name="multiple-types"></a>Çoklu Türler  
  Herhangi bir öznitelik, işlem veya parametre türünün çokluğunu ayarlayabilirsiniz.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Her tür modelde tanımladığınız türlere, Tamsayı veya Dize gibi standart türlere veya henüz tanımlamadığınız yeni türün adına sahip olabilir.  
   
 > [!NOTE]
->  Bir parametre listesinde türü içermeyen bir ad yazarsanız, bu parametrenin türü yerine adını gösterir. Bu örnekte, MenuItem ve Tamsayı belirtilmemiş türlere sahip iki parametrenin adı olur:  
+> Bir parametre listesinde türü içermeyen bir ad yazarsanız, bu parametrenin türü yerine adını gösterir. Bu örnekte, MenuItem ve Tamsayı belirtilmemiş türlere sahip iki parametrenin adı olur:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Bir imzada türün çokluğunu ayarlamak için tür adından sonra köşeli ayraçlar içinde çokluğu yazın, örneğin:  
   

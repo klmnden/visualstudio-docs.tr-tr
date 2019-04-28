@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ece5c23a04901eaf0c17e7dfbf59f1ce7c5ccfa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a7b3edb0262e3e2b4f0cde51b499e25b04aba51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442903"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Simge Türlerinin Sınıf Hiyerarşisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Aşağıdaki tabloda, sınıf hiyerarşisindeki sembol türleri açıklanmaktad�
 |[Boyut](../../debugger/debug-interface-access/dimension.md)|Dizi boyutları simgesi.|  
   
 > [!NOTE]
->  Her simge, diğer sembol başvuruları yanı sıra sembol bilgilerini tutan özelliklere sahip olabilir. Bu özellikleri tek tek sembol konularında listelenmiştir.  
+> Her simge, diğer sembol başvuruları yanı sıra sembol bilgilerini tutan özelliklere sahip olabilir. Bu özellikleri tek tek sembol konularında listelenmiştir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CV_access_e numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)   

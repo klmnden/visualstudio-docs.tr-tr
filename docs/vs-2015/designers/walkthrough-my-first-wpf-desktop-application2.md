@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421144"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>İzlenecek yol: İlk WPF Masaüstü Uygulamam
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliş
      Değiştirdiğinizde dikkat `<Window` etiketini `<NavigationWindow`, IntelliSense otomatik olarak kapanış etiketi için değişiklikleri `</NavigationWindow>` de.  
   
     > [!NOTE]
-    >  Etiket, değiştirdikten sonra **hata listesi** penceresi açıksa, çeşitli hatalar da görebilirsiniz. Endişelenmeyin, bu Git hemen sonraki birkaç adımda yaptığınız değişiklikler yapar.  
+    > Etiket, değiştirdikten sonra **hata listesi** penceresi açıksa, çeşitli hatalar da görebilirsiniz. Endişelenmeyin, bu Git hemen sonraki birkaç adımda yaptığınız değişiklikler yapar.  
   
 3. Seçin `<Grid>` ve `</Grid>` etiketleri ve silebilirsiniz.  
   
@@ -307,14 +307,14 @@ name = "Giriş" ></a> bu kılavuzda Windows Presentation Foundation (WPF) geliş
      ![Filigran resmi için izlenecek yol](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  Alternatif olarak kendi görüntünüzü oluşturabilir ve kaydedileceği `watermark.png`.  
+    > Alternatif olarak kendi görüntünüzü oluşturabilir ve kaydedileceği `watermark.png`.  
   
 2. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **ExpenseIt** düğüm ve **Ekle**, **var olan öğe**.  
   
 3. İçinde **varolan öğeyi Ekle** iletişim kutusunda, bulmak **watermark.png** eklediğiniz, onu seçin ve ardından görüntüyü **Ekle** düğmesi.  
   
     > [!NOTE]
-    >  Genişletmeniz gerekebilir **dosya türleri** listesindeki **görüntü dosyaları**.  
+    > Genişletmeniz gerekebilir **dosya türleri** listesindeki **görüntü dosyaları**.  
   
 4. Açık **ExpenseItHome.XAML** dosyasını açıp aşağıdaki XAML kodu ekleyin hemen üzerinde `</Grid>` etiketi arka plan görüntüsü oluşturmak için:  
   

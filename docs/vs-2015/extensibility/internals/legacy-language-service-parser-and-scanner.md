@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434372"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Eski Dil Hizmeti Ayrıştırıcısı ve Tarayıcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ namespace MyNamespace
  (Burada belirteçleri yürütülebilir kod bazı biçimine dönüştürülür) bir derleyici bir parçası olarak kullanılan bir ayrıştırıcı, bir dil hizmeti ayrıştırıcısı birçok farklı nedenlerle ve birçok farklı bağlamlardaki volat pouze jednou. Bu yaklaşımda nasıl uygulayacağınıza <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yönteminde <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı, size kalmıştır. Bunu göz önünde bulundurmanız önemlidir, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir arka plan iş parçacığında çağrıldı.  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Yapısı bir başvuru içermektedir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne. Bu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne arka plan iş parçacığında kullanılamaz. Aslında, çoğu temel MPF sınıflarının arka plan iş parçacığında kullanılamaz. Bunlar <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> sınıfları ve doğrudan veya dolaylı olarak görünümü ile iletişim kurduğu herhangi bir sınıf.  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Yapısı bir başvuru içermektedir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne. Bu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne arka plan iş parçacığında kullanılamaz. Aslında, çoğu temel MPF sınıflarının arka plan iş parçacığında kullanılamaz. Bunlar <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> sınıfları ve doğrudan veya dolaylı olarak görünümü ile iletişim kurduğu herhangi bir sınıf.  
   
  Bu çözümleyici genellikle adlandırılır veya ne zaman ayrıştırma neden değerini tüm kaynak dosyası birinci zaman ayrıştırır <xref:Microsoft.VisualStudio.Package.ParseReason> verilir. Yapılan sonraki çağrılar <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi ayrıştırılmış kodu küçük bir bölümünü işlemek ve çok daha hızlı bir şekilde önceki tam ayrıştırma işleminin sonuçlarını kullanarak yürütülebilir. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Yöntemi ayrıştırma işleminin sonuçlarını iletişim kuran <xref:Microsoft.VisualStudio.Package.AuthoringSink> ve <xref:Microsoft.VisualStudio.Package.AuthoringScope> nesneleri. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Nesnesi bilgilerini belirli ayrıştırma için bir neden, küme ayraçları veya parametre listeleri olan yöntem imzaları eşleşen örneğin yayılma hakkında bilgi toplamak için kullanılır. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Bildirimleri ve yöntem imzaları ve ayrıca destek koleksiyonları gitmek için Gelişmiş Düzenleme seçeneği sağlar (**Tanıma Git**, **bildirimine gidin**, **gidin Başvuru**).  
   

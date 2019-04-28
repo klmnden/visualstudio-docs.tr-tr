@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433671"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Seçenekler iletişim kutusu, projeler ve çözümler, derleme ve çalıştırma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ ya da Visual C
   
  **Çalıştırmada, projelerin güncel olduğunda**  
  > [!NOTE]
->  Bu liste uygulandığı [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] yalnızca projeleri.  
+> Bu liste uygulandığı [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] yalnızca projeleri.  
   
  Bir proje yapılandırması F5 tuşuna basın veya seçin, güncel değil ise, varsayılan olarak, bir ileti görünür **hata ayıklama**, **Başlat** menü çubuğundaki. Projeyi yine de oluşturmak ve iletinin görüntülenip belirtebilirsiniz. İletinin görüntülenip görüntülenmeyeceğini belirtir ve yapı davranışını ileti görünmüyorsa ne olması gerektiğini belirtmek için bu seçeneği kullanın.  
   
@@ -54,7 +54,7 @@ Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ ya da Visual C
  Derlemeden başlattığınızda yapı hataları oluşursa **derleme** menüsünde, bir ileti görüntülenir. Uygulama ve her zaman, yapı hataları iletinin görüntülenip ortaya başlatarak devam edilip edilmeyeceğini belirtebilirsiniz. İletinin görüntülenip görüntülenmeyeceğini belirtir ve ileti görünmüyorsa davranışı neler olması gerektiğini belirtmek için bu seçeneği kullanın.  
   
 > [!NOTE]
->  Bu seçenek uygulanır [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] yalnızca projeleri.  
+> Bu seçenek uygulanır [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] yalnızca projeleri.  
   
  **Başlatırken uyar**  
  Her bir ileti kutusunda görüntüler, derleme hataları oluşur.  
@@ -73,7 +73,7 @@ Bu iletişim kutusunda, aynı anda oluşturabilirsiniz Visual C++ ya da Visual C
   
  **MSBuild proje derleme günlük dosyası ayrıntısı**  
  > [!NOTE]
->  Bu seçenek yalnızca Visual C++ projeleri için geçerlidir.  
+> Bu seçenek yalnızca Visual C++ projeleri için geçerlidir.  
   
  Şu konumdadır derleme günlüğü dosyası için ne kadar bilgi yazılacağını belirler \\... \\ *ProjectName*\Debug\\*ProjectName*. günlük.  
   

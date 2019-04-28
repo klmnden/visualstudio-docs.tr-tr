@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f083e97427b44256ac565e2fc6822586825aef4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ff9ce80d9c0988d38dfe86e193e8390b4719cbcb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429615"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Visual Studio Birlikte Çalışma Bütünleştirilmiş Kodlarını Kullanma
 Visual Studio birlikte çalışma derlemelerini yönetilen uygulamaların, Visual Studio genişletilebilirlik sağlayan COM arabirimleri erişmesine izin verin. Düz COM arabirimleri ile birlikte çalışma sürümlerine arasındaki bazı farklar vardır. Örneğin, HRESULTs genellikle tamsayı değerleri olarak temsil edilir ve özel durumlar olarak aynı şekilde ele alınmaları gerekir ve parametreleri (özellikle out Parametreleri) farklı olarak kabul edilir.
@@ -28,7 +28,7 @@ Visual Studio birlikte çalışma derlemelerini yönetilen uygulamaların, Visua
  Varsayılan olarak, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> değeri sıfırdan küçük olan bir HRESULT geçirilen her bir özel durum oluşturur. Ek HRESULTS değerlerini olduğu gibi HRESULTs kabul edilebilir değerler ve hiçbir özel durum durumlarda iletilmesi gereken <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> değerleri test sonra. Test edilen HRESULT açıkça geçirilecek herhangi bir HRESULT değerlerini eşleşip eşleşmediğini <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, hiçbir özel durum.
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Sınıfı sabitler gibi ortak HRESULT'ları için içeren <xref:Microsoft.VisualStudio.VSConstants.S_OK> ve <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, örneğin, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> ve <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> Ayrıca sağlar <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> ve <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> com başarılı ve başarısız makrolarındaki karşılık gelen yöntemleri
+> <xref:Microsoft.VisualStudio.VSConstants> Sınıfı sabitler gibi ortak HRESULT'ları için içeren <xref:Microsoft.VisualStudio.VSConstants.S_OK> ve <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, örneğin, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> ve <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> Ayrıca sağlar <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> ve <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> com başarılı ve başarısız makrolarındaki karşılık gelen yöntemleri
 
  Örneğin, aşağıdaki işlev çağrısı göz önünde bulundurun <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> kabul edilebilir bir dönüş değeri başka bir HRESULT hata küçüktür sıfır temsil nesnesidir.
 
@@ -46,7 +46,7 @@ Visual Studio birlikte çalışma derlemelerini yönetilen uygulamaların, Visua
  Hangi özel durum throw emin değilseniz ancak HRESULT biliyorsanız döndürmek için COM, kullanabileceğiniz istediğiniz <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> uygun özel durum için yöntemi. Bu standart olmayan hatayla bile bir örneğin çalışır <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> kesin türü belirtilmiş bir özel durum girişimi HRESULT eşlemek için geçirilen. Erişilemiyorsa, bunun yerine genel bir COM özel durumu oluşturur. Ultimate sonucudur HRESULT için geçirdiğiniz olduğunu <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> yönetilen koddan adlı COM işlevi döndürülür.
 
 > [!NOTE]
->  Özel durumlar, performans tehlikeye ve anormal program koşullarını göstermek için tasarlanmıştır. Genellikle ortaya koşullarını oluşan bir özel durum yerine işlenmiş satır içi olması gerekir.
+> Özel durumlar, performans tehlikeye ve anormal program koşullarını göstermek için tasarlanmıştır. Genellikle ortaya koşullarını oluşan bir özel durum yerine işlenmiş satır içi olması gerekir.
 
 ## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parametreleri türü void ** geçirildi
  [Out] türü olarak tanımlanmış parametreleri Ara `void **` COM arabirimi, ancak tanımlı olarak `[``iid_is``]` içinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] birlikte çalışma derlemesi yöntemi prototip.
@@ -54,7 +54,7 @@ Visual Studio birlikte çalışma derlemelerini yönetilen uygulamaların, Visua
  Bazı durumlarda, bir COM arabirimi oluşturan bir `IUnknown` nesne ve COM arabirimi sonra geçirir, türü olarak `void **`. Bu arabirimler özellikle önemlidir çünkü değişken olarak tanımlanmışsa [out] IDL ile sonra `IUnknown` nesne başvuru sayılan ile `AddRef` yöntemi. Bir bellek sızıntısı, nesneyi doğru işlenmiyor oluşur.
 
 > [!NOTE]
->  Bir `IUnknown` COM arabirimi tarafından oluşturulan ve bir [out] değişkeninde döndürülen nesne açıkça serbest, bellek sızıntısı neden olur.
+> Bir `IUnknown` COM arabirimi tarafından oluşturulan ve bir [out] değişkeninde döndürülen nesne açıkça serbest, bellek sızıntısı neden olur.
 
  Bu nesneleri işlemek, yönetilen yöntemleri kabul <xref:System.IntPtr> işaretçisi olarak bir `IUnknown` nesne ve çağrı <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> nesne elde etmek için yöntemi. Çağıran, hangi tür uygun olan dönüş değeri ardından atamalısınız. Nesne artık gerekmediğinde çağrı <xref:System.Runtime.InteropServices.Marshal.Release%2A> bunu serbest bırakmak için.
 
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
->  Geçirmek için aşağıdaki yöntemlerden bilinen `IUnknown` nesne işaretçileri türü <xref:System.IntPtr>. Bunları, bu bölümde açıklanan şekilde işleyin.
+> Geçirmek için aşağıdaki yöntemlerden bilinen `IUnknown` nesne işaretçileri türü <xref:System.IntPtr>. Bunları, bu bölümde açıklanan şekilde işleyin.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 

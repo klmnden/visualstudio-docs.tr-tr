@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406836"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
 Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya bir yazılım lisans koşulları (gibi bir *eula.rtf*) ve bir paket bildirimi (*package.xml*).
@@ -31,7 +31,7 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
 3. Adlı bir paket bildirimi oluşturma *package.xml*, kültür ve dizeleri güncelleştirmek ve dosyanın yeni klasöre yerleştirin. Visual Studio'nun bir önyükleyici hedef dilde zaten oluşturduysanız, Visual Studio kopyalayabilirsiniz *package.xml* dosya ve bu adımda değiştirin.
 
 > [!NOTE]
->  Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.
+> Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

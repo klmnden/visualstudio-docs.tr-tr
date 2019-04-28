@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431230"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Nasıl yapılır: Ekleme ve özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak kaldırma
   SharePoint öğeleri ve özellikleri dağıtacağınız bir paket yapılandırmak için paketleme Gezgini'ni kullanabilirsiniz. .Wsp dosyanız içinde SharePoint Proje öğeleri ve özellikleri ayarlayabilirsiniz.
@@ -51,7 +51,7 @@ ms.locfileid: "60104466"
     - Bir özellik için kısayol menüsünü açın, **Kes**, özelliği taşıyın ve sonra istediğiniz proje için kısayol menüsünü açın **Yapıştır**.
 
     > [!NOTE]
-    >  Çözümünüzde birden fazla SharePoint projeniz varsa, bu yordamı kullanın.
+    > Çözümünüzde birden fazla SharePoint projeniz varsa, bu yordamı kullanın.
 
 ## <a name="validate-a-feature-or-package"></a>Bir özellik veya paket doğrulama
  Dosyaları doğrulayarak SharePoint özellikleriniz ve paketleriniz olası sorunları tespit edebilirsiniz. Uyarılar ve hatalar çıkış penceresinde ve Hata Listesi penceresinde görüntülenir.

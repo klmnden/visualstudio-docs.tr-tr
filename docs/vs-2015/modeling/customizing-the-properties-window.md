@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433227"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60088801"
  Bir özellik iletmek için bir etki alanı tür tanımlayıcısı tanımlayın. İki alan sınıfı arasındaki bir etki alanı ilişkisi varsa, ikinci etki alanı sınıfı, bir etki alanı özelliğinin değeri ilk sınıf bir etki alanı özelliği ayarlamak için bir etki alanı tür tanımlayıcısı'nı kullanabilirsiniz. Arasında bir ilişki varsa, örneğin, bir **kitap** etki alanı sınıfı ve bir **Yazar** etki alanı sınıfı, bir etki alanı tür tanımlayıcısı yapmak için kullanabileceğiniz **adı** özelliği bir Kitaptaki **Yazar** kullanıcının kitaptan seçtiğinde, Özellikler penceresinde görünür.  
   
 > [!NOTE]
->  Kullanıcı bir model düzenlerken iletme özelliği yalnızca Özellikler penceresini etkiler. Alıcı sınıfta bir alan özelliği tanımlamıyor. İletilen domain özelliği DSL tanımının diğer bölümlerinde veya program kodunda erişmek istiyorsanız, iletme öğesi erişmeniz gerekir.  
+> Kullanıcı bir model düzenlerken iletme özelliği yalnızca Özellikler penceresini etkiler. Alıcı sınıfta bir alan özelliği tanımlamıyor. İletilen domain özelliği DSL tanımının diğer bölümlerinde veya program kodunda erişmek istiyorsanız, iletme öğesi erişmeniz gerekir.  
   
  Aşağıdaki yordam, DSL oluşturmuş olduğunuzu varsayar. İlk birkaç adım önkoşulları özetler.  
   
@@ -121,7 +121,7 @@ ms.locfileid: "60088801"
         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.  
   
        > [!WARNING]
-       >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.  
+       > Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.  
   
    2. Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60088801"
   Grafik gösterimi özellik kılavuzunda görüntülenecek özelliğin değerini de sağlayabilirsiniz. Bunu yapmak için geçersiz kılma `GetPaintValueSupported`, ve `PaintValue`.  Daha fazla bilgi için bkz. <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Ayrı bir kod dosyasında kod ekleme **Dsl** proje.  
+> Ayrı bir kod dosyasında kod ekleme **Dsl** proje.  
   
  Örneğin:  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Aralarından seçim yapabileceğiniz bir kullanıcı için değerler listesini sağlayabilirsiniz.  
   
 > [!NOTE]
->  Bu teknik, çalışma zamanında değiştirebileceğiniz değerler listesini sağlar. Değişmeyen bir listesini sağlamak istiyorsanız, bunun yerine göz önünde bulundurun, etki alanı özellik türü olarak bir listeden seçimli türü kullanarak.  
+> Bu teknik, çalışma zamanında değiştirebileceğiniz değerler listesini sağlar. Değişmeyen bir listesini sağlamak istiyorsanız, bunun yerine göz önünde bulundurun, etki alanı özellik türü olarak bir listeden seçimli türü kullanarak.  
   
  Standart değerlerin bir listesini tanımlamak için aşağıdaki biçimde bir CLR özniteliğinin, etki alanı özelliğine ekleyin:  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431524"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "60069542"
  Aşağıdaki iki yordamdan kullanmayı gösteren bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sorgu dize bilgilerini almak için uygulama.  
   
 > [!NOTE]
->  Bir dosya paylaşımına veya yerel dosya sistemi kullanmak yerine HTTP kullanarak, uygulamanız başlatıldığında, bir sorgu dizesinde yalnızca bilgi geçirebilirsiniz.  
+> Bir dosya paylaşımına veya yerel dosya sistemi kullanmak yerine HTTP kullanarak, uygulamanız başlatıldığında, bir sorgu dizesinde yalnızca bilgi geçirebilirsiniz.  
   
  İlk yordam gösterir nasıl, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama, uygulama başlatıldığında bu değerleri okumak için küçük bir kod parçasını kullanabilirsiniz.  
   
  Sonraki yordam nasıl yapılandırılacağı gösterilmektedir, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama MageUI.exe kullanarak sorgu dizesi parametreleri kabul edebilir. Uygulamanızı yayımlayın olduğunda bunu gerekecektir.  
   
 > [!NOTE]
->  Bu özelliği etkinleştirmek için bir karar almadan önce bu konunun ilerleyen bölümlerindeki "Güvenlik" bölümüne bakın.  
+> Bu özelliği etkinleştirmek için bir karar almadan önce bu konunun ilerleyen bölümlerindeki "Güvenlik" bölümüne bakın.  
   
  Nasıl oluşturulacağı hakkında daha fazla bilgi için bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Mage.exe veya MageUI.exe kullanarak dağıtım bkz [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
->  .NET Framework 3.5 SP1'de başlayarak, komut satırı bağımsız değişkenleri için çevrimdışı geçirilecek mümkündür [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Uygulamaya bağımsız değişkenler sağlamak istiyorsanız, kısayolu ile parametrelere geçirebilirsiniz. MS APPREF uzantısı.  
+> .NET Framework 3.5 SP1'de başlayarak, komut satırı bağımsız değişkenleri için çevrimdışı geçirilecek mümkündür [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama. Uygulamaya bağımsız değişkenler sağlamak istiyorsanız, kısayolu ile parametrelere geçirebilirsiniz. MS APPREF uzantısı.  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Bir ClickOnce uygulamasında sorgu dize bilgilerini almak için  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60069542"
 4. Gelen **dosya** menüsünde **Kaydet**.  
   
 > [!NOTE]
->  Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.  
+> Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.  
   
 ## <a name="robust-programming"></a>Güçlü Programlama  
  Sorgu dizesi parametrelerini kullanırken dikkat etmenizi uygulamanıza nasıl yüklü ve etkin. Uygulama, kullanıcının bilgisayarında Web'den veya bir ağ paylaşımından yüklemek için yapılandırılmışsa, kullanıcı uygulamayı yalnızca bir kez URL aracılığıyla etkinleştirecektir olasıdır. Bundan sonra kullanıcı kısayolunu kullanarak uygulamanızı genellikle etkinleştirecektir **Başlat** menüsü. Sonuç olarak, uygulamanızın yaşam süresi boyunca sorgu dizesi bağımsız değişkenleri yalnızca bir kez alması sağlanır. Gelecekte kullanım için kullanıcının makinede bu bağımsız değişkenler depolamayı seçerseniz, güvenli bir şekilde depolamak için sorumlu olursunuz.  

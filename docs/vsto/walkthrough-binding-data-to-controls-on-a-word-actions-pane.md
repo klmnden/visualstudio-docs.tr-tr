@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438691"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>İzlenecek yol: Word eylemler bölmesindeki denetimlere veri bağlama
   Bu yönerge, Word eylemler bölmesindeki denetimlere veri bağlama gösterir. Bir SQL Server veritabanındaki tablolar arasında bir ana/ayrıntı ilişkisi denetimleri gösterir.
@@ -38,7 +38,7 @@ ms.locfileid: "60063614"
 - Uygulama açıldığında eylemler bölmesini göster.
 
 > [!NOTE]
->  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -78,7 +78,7 @@ ms.locfileid: "60063614"
 1. Varsa **veri kaynakları** penceresi görünür değilse, bunu, menü çubuğundan seçme görüntüleyebilir **görünümü** > **diğer Windows**  >   **Veri kaynakları**.
 
    > [!NOTE]
-   >  Varsa **veri kaynaklarını Göster** kullanılabilir değil, Word belgesi tıklayın ve sonra tekrar denetleyin.
+   > Varsa **veri kaynaklarını Göster** kullanılabilir değil, Word belgesi tıklayın ve sonra tekrar denetleyin.
 
 2. Tıklayın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063614"
 4. Seçin `SuppliersBindingNavigator` içinde **bileşen** Tepsisi ve ENTER tuşuna **Sil**. Kullanmayacaksınız `SuppliersBindingNavigator` Bu izlenecek yolda.
 
     > [!NOTE]
-    >  Silme `SuppliersBindingNavigator` tüm için oluşturulan kodun kaldırmaz. Bu kod kaldırabilirsiniz.
+    > Silme `SuppliersBindingNavigator` tüm için oluşturulan kodun kaldırmaz. Bu kod kaldırabilirsiniz.
 
 5. Birleşik giriş kutusu etiket ve değişiklik altında olduğu şekilde taşıyın **boyutu** özelliğini **171, 21**.
 

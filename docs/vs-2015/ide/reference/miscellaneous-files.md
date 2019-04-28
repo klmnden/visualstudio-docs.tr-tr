@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441697"
 ---
 # <a name="miscellaneous-files"></a>Çeşitli Dosyalar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Kullanmak istediğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bağıms�
  Diğer dosyalar klasörünü görüntülerseniz, dosyaların bağlantı olarak temsil eder. Bir çözümü açtığınızda bu klasör bir çözümün bir parçası olmasa da, bazı veya tüm çözüm kapatıldığında açıldıkları çeşitli dosyalar, klasör ayarlarını bağlı olarak yeniden açılır.  
   
 > [!NOTE]
->  Çeşitli dosyalar klasörüne görünmeyen dosyaların bazıları şunlardır: .zip dosyalarını gibi IDE içinden değiştiremezsiniz dosyaları ve .doc dosyaları. IDE, yalnızca bir dış düzenleyici ile değiştirilebilir dosyaları izlemek değildir.  
+> Çeşitli dosyalar klasörüne görünmeyen dosyaların bazıları şunlardır: .zip dosyalarını gibi IDE içinden değiştiremezsiniz dosyaları ve .doc dosyaları. IDE, yalnızca bir dış düzenleyici ile değiştirilebilir dosyaları izlemek değildir.  
   
 ## <a name="commands-available-in-the-ide"></a>IDE içinde kullanılabilir komutları  
  Menüleri, araç çubukları ve dosyanın biçimi temel alarak değişiklik içerdikleri komutlar, açın. Örneğin, bir metin dosyasını açtığınızda, metin düzenleyici araç çubuğu görünür ve kendi komutları kullanılabilir. Ardından bir XML şeması dosyasını açın, XML şema araç çubuğu görünür. XML şema kümenizdeki düzenlerken, metin düzenleyici araç çubuğunun komutları (veya araç) kullanılamaz. XML Şeması etkin pencere olup, bu nedenle, geçerli seçim bağlamı içerir. Bir proje dosyası ve çeşitli dosyası arasında geçiş yaptığınızda, projeyle ilgili tüm komutlar kaybolur ve yalnızca çeşitli dosyayı doğrudan ilgili görünür.  

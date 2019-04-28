@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434102"
 ---
 # <a name="debug-multiple-processes"></a>Birden çok işlemde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60039714"
 - [Visual Studio çözümünde birden çok işlem hata ayıklamayı Başlat](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [başlangıç projesini değiştirme](#BKMK_Change_the_startup_project) • [bir çözümde belirli bir proje başlatın](#BKMK_Start_a_specific_project_in_a_solution) • [birden çok proje başlatın bir Çözüm](#BKMK_Start_multiple_projects_in_a_solution) • [bir işleme iliştirin](#BKMK_Attach_to_a_process) • [otomatik olarak hata ayıklayıcıda bir işlem başlatma](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Alt projenin aynı çözüm içinde olsa bile hata ayıklayıcı hata ayıklaması yapılmış bir işlem tarafından başlatılan bir alt işleme otomatik olarak eklemez. Bir alt işlemde hata ayıklamak için:  
+> Alt projenin aynı çözüm içinde olsa bile hata ayıklayıcı hata ayıklaması yapılmış bir işlem tarafından başlatılan bir alt işleme otomatik olarak eklemez. Bir alt işlemde hata ayıklamak için:  
 > 
 > - Başlatıldıktan sonra alt işleme ekleyin.  
 > 
@@ -166,7 +166,7 @@ ms.locfileid: "60039714"
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Kesme, adım ve devam etme komutları  
   
 > [!NOTE]
->  Varsayılan olarak, kesme, devam etmek ve atlama hata ayıklayıcı komutları, hatası ayıklanan tüm işlemleri etkiler. Bu davranışı değiştirmek için bkz: [birden çok işlem yürütme davranışını Yapılandır](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Varsayılan olarak, kesme, devam etmek ve atlama hata ayıklayıcı komutları, hatası ayıklanan tüm işlemleri etkiler. Bu davranışı değiştirmek için bkz: [birden çok işlem yürütme davranışını Yapılandır](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ ms.locfileid: "60039714"
   Örneğin, bir Visual Studio çözümünden bir işlemin hatalarını ayıklamaya başlatırsanız, zaten çalışan başka bir işleme iliştirin ve ardından **hata ayıklamayı Durdur**, hata ayıklama oturumu sona erer, Visual Studio'da başlatılan işlem eklediğiniz işlem çalışır durumda kalır ancak, sonlandırılır. Hata ayıklamayı durdurma biçiminizi denetlemek için aşağıdaki yordamları kullanabilirsiniz.  
   
 > [!NOTE]
->  **Bir işlem kesildiğinde tüm işlemleri Kes** seçeneği hata ayıklama veya sonlandırma ve ayırma işlemleri durduruluyor etkilemez.  
+> **Bir işlem kesildiğinde tüm işlemleri Kes** seçeneği hata ayıklama veya sonlandırma ve ayırma işlemleri durduruluyor etkilemez.  
   
  **Hata ayıklamayı Durdur tek bir işlemi nasıl etkilediğini değiştirmek için**  
   

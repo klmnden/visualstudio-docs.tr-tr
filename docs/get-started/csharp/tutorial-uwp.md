@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cbb5eeaaa69852b43d2189c4ca9d308cff75ba98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435054"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Öğretici: Visual Studio'da XAML ve C ile Evrensel Windows platformu ilk uygulamanızı oluşturma&#35;
 
@@ -70,7 +70,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    > [!NOTE]
    > Bu ilk kez ise bir UWP uygulaması oluşturmak için Visual Studio'yu kullandınız bir **ayarları** iletişim kutusu görünebilir. Seçin **Geliştirici modu**ve ardından **Evet**.<br><br>
-   ![UWP Ayarları iletişim kutusunda geliştirici modunu etkinleştir](media/enable-developer-mode.png)<br><br>Visual Studio sizin için ek bir geliştirici modu paketi yükler. Paket yüklemesi tamamlandıktan sonra kapatın **ayarları** iletişim kutusu.
+   > ![UWP Ayarları iletişim kutusunda geliştirici modunu etkinleştir](media/enable-developer-mode.png)<br><br>Visual Studio sizin için ek bir geliştirici modu paketi yükler. Paket yüklemesi tamamlandıktan sonra kapatın **ayarları** iletişim kutusu.
 
 ## <a name="create-the-application"></a>Uygulama oluşturma
 

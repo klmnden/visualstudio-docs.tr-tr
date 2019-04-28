@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412386"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Geçerli iş parçacığını engellemek neden olur ve IDE hata ayıklayıcı kesme noktası bir bildirim gönderir.  
@@ -54,7 +54,7 @@ HRESULT HandleBreakPoint(
  Bir dil altyapısı, bir kesme noktasına denk gelir, bir iş parçacığının bağlamında bu yöntemi çağırır. Bu yöntem, geçerli iş parçacığını engeller ve IDE hata ayıklayıcı bir kesme noktası bildirim gönderir. Hata ayıklayıcı, uygulama devam ettiğinde `pbra` parametresi, gerçekleştirilecek eylemi belirtir.  
   
 > [!NOTE]
->  Dil altyapısı, yığın numaralandırma gibi çerçeveleri veya sırasında kesme noktası nevyhodnocovat görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
+> Dil altyapısı, yığın numaralandırma gibi çerçeveleri veya sırasında kesme noktası nevyhodnocovat görevleri gerçekleştirmek için iş parçacığı tarafından çağrılabilir.  
   
  Bu yöntem neden `IApplicationDebugger::onHandleBreakPoint` çağrılabilir.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433180"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Özel bir modelleme araç kutusu öğesi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
 - Gözlemci deseni temsil etmek için bir ilişkilendirme tarafından bağlantılı sınıfları çifti.  
   
 > [!NOTE]
->  Öğe araçlarını oluşturmak için bu yöntemi kullanabilirsiniz. Diğer bir deyişle, bir diyagram üzerine araç kutusundan sürükleyin araçları oluşturabilirsiniz. Bağlayıcı araçları oluşturamazsınız.  
+> Öğe araçlarını oluşturmak için bu yöntemi kullanabilirsiniz. Diğer bir deyişle, bir diyagram üzerine araç kutusundan sürükleyin araçları oluşturabilirsiniz. Bağlayıcı araçları oluşturamazsınız.  
   
 ## <a name="DefineTool"></a> Özel araç modelleme tanımlama  
   
@@ -136,7 +136,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
  Visual Studio bit eşlem dosyasında düzenleyebilir ve yüksekliğini ve genişliğini 16 Özellikler penceresinde ayarlayın.  
   
 > [!NOTE]
->  Diyagram dosyaları kendi kullanmayı denedikten sonra .tbxinfo dosyası kullanmaya başlamak, araç hem eski hem de bir araç kutusu öğesi yeni sürümleri içerdiğini fark edebilirsiniz. Diyagram dosyasının adını .tbxinfo dosyasında girildiyse bu da meydana gelebilir. Bu meydana gelirse, araç kısayol menüsünden seçin **sıfırlama araç kutusu**. Özel araç kutusu öğeleri kaybolur. Visual Studio'yu yeniden başlatın ve doğru özel öğeleri görünür.  
+> Diyagram dosyaları kendi kullanmayı denedikten sonra .tbxinfo dosyası kullanmaya başlamak, araç hem eski hem de bir araç kutusu öğesi yeni sürümleri içerdiğini fark edebilirsiniz. Diyagram dosyasının adını .tbxinfo dosyasında girildiyse bu da meydana gelebilir. Bu meydana gelirse, araç kısayol menüsünden seçin **sıfırlama araç kutusu**. Özel araç kutusu öğeleri kaybolur. Visual Studio'yu yeniden başlatın ve doğru özel öğeleri görünür.  
   
 ## <a name="Extension"></a> Araç kutusu öğeleri Visual Studio Uzantısı'nda dağıtım yapma  
  Diğer araç kutusu öğeleri dağıtabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bunları Visual Studio Uzantısı (VSIX) paketleme tarafından kullanıcılar. Komutlar, profilleri ve diğer uzantılarla aynı VSIX dosyasına paketleyebilirsiniz. Daha fazla bilgi için [Visual Studio uzantılarını dağıtma](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
     - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **Ekle**, **var olan öğe**. İletişim kutusunda ayarlanan **tür nesneleri: Tüm dosyaları**. Dosyaları bulun, tüm bunları seçin ve ardından **Ekle**.  
   
         > [!NOTE]
-        >  Bu projede model Düzenleyicisi, diyagram dosyaları açamaz.  
+        > Bu projede model Düzenleyicisi, diyagram dosyaları açamaz.  
   
 5. Yeni eklediğiniz tüm dosyaların aşağıdaki özellikleri ayarlayın. Tüm Çözüm Gezgini'nde seçerek aynı anda özelliklerini ayarlayabilirsiniz. Diğer dosyalar projesinde özelliklerini değiştirilmemesi dikkat edin.  
   
@@ -185,7 +185,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
     - Tür = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Bu açılır listedeki seçeneklerden birini değildir. Klavyeyi kullanarak girmek zorunda.  
+        > Bu açılır listedeki seçeneklerden birini değildir. Klavyeyi kullanarak girmek zorunda.  
   
     - **Kaynak** = **FileSystem'daki**.  
   

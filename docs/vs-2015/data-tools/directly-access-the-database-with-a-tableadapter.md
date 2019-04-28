@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431957"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Bir TableAdapter ile veritabanına doğrudan erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
 - TableAdapter bağdaştırıcısının çağrı `Insert` değerler her sütun için parametre olarak geçirmeyi yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
   
     > [!NOTE]
-    >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
+    > Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
   
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
@@ -58,7 +58,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
 - TableAdapter bağdaştırıcısının çağrı `Update` yöntemi, yeni ve orijinal değerleri her sütun için parametre olarak geçirerek.  
   
     > [!NOTE]
-    >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
+    > Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
   
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
      [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
@@ -68,7 +68,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
 - TableAdapter bağdaştırıcısının çağrı `Delete` değerleri her sütun için parametre olarak geçirerek yöntemini `Delete` yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
   
     > [!NOTE]
-    >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
+    > Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
   
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
      [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  

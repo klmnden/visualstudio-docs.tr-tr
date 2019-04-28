@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417773"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
  Bir modelinin amacı, doğal dil açıklamasında ortaya belirsizlikleri azaltma ve iş arkadaşlarınızla tasarım görselleştirin ve Alternatif tasarımlar tartışmak için yardımcı olmak için ' dir. Bir model, diğer belgelerin ya da tartışmalar ile birlikte kullanılmalıdır. Tek başına bir model mimarinin eksiksiz bir belirtimi göstermiyor.  
   
 > [!NOTE]
->  Bu konu başlığı altında yaptığımız, geliştirmekte olduğunuz yazılımı "Sistem" anlamına gelir. Büyük bir koleksiyonu, çok sayıda yazılım ve donanım bileşenleri, tek bir uygulama veya uygulamanın bir parçası olabilir.  
+> Bu konu başlığı altında yaptığımız, geliştirmekte olduğunuz yazılımı "Sistem" anlamına gelir. Büyük bir koleksiyonu, çok sayıda yazılım ve donanım bileşenleri, tek bir uygulama veya uygulamanın bir parçası olabilir.  
   
  Bir sistem mimarisi, iki alana ayrılabilir:  
   

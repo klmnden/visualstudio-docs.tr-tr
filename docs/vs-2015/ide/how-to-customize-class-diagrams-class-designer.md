@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416852"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Nasıl yapılır: Sınıf diyagramlarını özelleştirme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
  Örneğin, tüm bir sınıf diyagramının yakınlaştırma seviyesini ayarlayabilir, tek tek üyelerin gruplandırılma ve sıralanma şeklini değiştirebilir, ilişkileri gizleyebilir ya da gösterebilir ve tek tek türleri ya da tür kümelerini diyagram üzerinde istediğiniz yere taşıyabilirsiniz.  
   
 > [!NOTE]
->  Şekillerin diyagram üzerinde görünme biçimi özelleştirildiğinde, diyagramda temsil edilen türlerin temelini oluşturan kod değişmez.  
+> Şekillerin diyagram üzerinde görünme biçimi özelleştirildiğinde, diyagramda temsil edilen türlerin temelini oluşturan kod değişmez.  
   
  Tür üyelerini içeren bölümlere (bir sınıf içindeki Özellikler bölümü gibi) bölmeler adı verilir. Tek tek bölmeleri ve tür üyelerini gizleyebilir veya gösterebilirsiniz.  
   
@@ -64,7 +64,7 @@ Sınıf diyagramlarının bilgileri görüntüleme biçimini değiştirebilirsin
      Belirli bir yakınlaştırma değeri belirtin. Kullanabileceğiniz **yakınlaştırma** açılan liste veya geçerli bir yakınlaştırma seviyesi girebilirsiniz (geçerli aralık: % 10 ile 400 arasında).  
   
     > [!NOTE]
-    >  Yakınlaştırma seviyesinin değiştirilmesi sınıf diyagramı çıktınızın ölçeğini etkilemez.  
+    > Yakınlaştırma seviyesinin değiştirilmesi sınıf diyagramı çıktınızın ölçeğini etkilemez.  
   
 ## <a name="CustomizeGroupingSorting"></a> Gruplandırma ve tür üyelerinin sıralamasını özelleştirme  
   

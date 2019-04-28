@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8c5c2f7afd885e295e9c9f462f5effe016fc5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adad85955805aa9349a3655ec9b817e17fd3c712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430750"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3. Adım: Her etikete rasgele simge atama
 Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bunu önlemek için simgeler rasgele formunuzdaki etiket denetimlerine kullanarak Ata bir `AssignIconsToSquares()` yöntemi.
@@ -33,7 +33,7 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
 
     > [!NOTE]
-    >  "iconLabel" (simge etiketi) ve "control" (denetim) kullanılmasının nedeni bu adların açıklayıcı olmasıdır. Bu adların yerine istediğiniz adları kullanabilirsiniz; ilgili adı döngüdeki her bir deyimde de değiştirdiğiniz sürece kod tamamen aynı şekilde çalışacaktır.
+    > "iconLabel" (simge etiketi) ve "control" (denetim) kullanılmasının nedeni bu adların açıklayıcı olmasıdır. Bu adların yerine istediğiniz adları kullanabilirsiniz; ilgili adı döngüdeki her bir deyimde de değiştirdiğiniz sürece kod tamamen aynı şekilde çalışacaktır.
 
      `AssignIconsToSquares()` Yöntemi TableLayoutPanel içindeki her etiket denetiminde yinelenir ve bunların her biri için aynı deyimleri yürütür. Bu deyimler eklediğiniz listeden rasgele bir simge çeker [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (İşte bu listeye dahil iki her simge, böylece için rastgele bir çift simge atanan olacaktır etiket denetimleri.)
 
@@ -67,7 +67,7 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
      Henüz gizlemediğiniz için simgeler şimdilik görünmektedir. Bunları oyuncudan gizlemek için her bir etiketin ayarlayabilirsiniz **ForeColor** aynı renge özelliğine kendi **BackColor** özelliği.
 
     > [!TIP]
-    >  Etiket gibi denetimleri gizlemenin bir diğer yolu ayarlamaktır kendi **görünür** özelliğini **False**.
+    > Etiket gibi denetimleri gizlemenin bir diğer yolu ayarlamaktır kendi **görünür** özelliğini **False**.
 
 6. Simgeleri gizlemek için kod içinde derleme dışı bırakılan satırı açıklama işaretlerini kaldırın ve programı durdurmak `For Each` döngü.
 

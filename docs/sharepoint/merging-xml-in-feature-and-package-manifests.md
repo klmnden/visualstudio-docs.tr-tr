@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429281"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>XML özellik ve paket Bildirimlerde Birleştir
   Özellikleriniz ve paketleriniz tarafından tanımlanmıştır [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim dosyaları. Bu paket bildirimleri tasarımcıları ve özel oluşturulan verileri bir bileşimidir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim şablonunda kullanıcı tarafından girilen. Paketleme zaman [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] özel birleştirir [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tasarımcısı tarafından sağlanan ifadelerle [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] paket oluşturmak üzere [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] bildirim dosyası. Benzer öğeleri daha sonra birleştirme özel durumları, belirtilen özel durum ile birleştirilir önlemek için [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] dosyaları SharePoint'e dağıtmanıza ve bildirim yapmak için daha küçük ve daha verimli dosyaları sonra doğrulama hataları.
@@ -55,7 +55,7 @@ ms.locfileid: "56646310"
 |CustomUpgradeActionParameter|Ad|
 
 > [!NOTE]
->  Özel CustomUpgradeAction öğeyi değiştirmek için tek yolu olduğundan [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Düzenleyicisi değil birleştirme etkisini düşük.
+> Özel CustomUpgradeAction öğeyi değiştirmek için tek yolu olduğundan [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Düzenleyicisi değil birleştirme etkisini düşük.
 
 ## <a name="package-manifest-elements"></a>Paket bildirim öğeleri
  Aşağıdaki tabloda, birleştirilebilir tüm paket bildirim öğeleri ve eşleştirmek için kullanılan kendi benzersiz anahtar listesidir.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408604"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>UWP uygulamalarında önceden getirilmiş içeriğin Visual Studio kullanarak hata ayıklama
 
@@ -37,7 +37,7 @@ ms.locfileid: "56701283"
    Artık, hata ayıklama, test veya önceden getirilmiş web kaynakları uygulamanızla analiz edin.
 
 > [!NOTE]
->  Belirtilen web içerik eklediğinizde veya zaman bu adımları yineleyin.
+> Belirtilen web içerik eklediğinizde veya zaman bu adımları yineleyin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Blog postası: Visual Studio 2013 güncelleştirme 2'de Windows Store uygulamaları için tetikleme önceden getirme](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

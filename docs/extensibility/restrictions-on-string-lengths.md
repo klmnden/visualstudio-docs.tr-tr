@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434747"
 ---
 # <a name="restrictions-on-string-lengths"></a>Dize uzunluğu kısıtlamaları
 Kaynak Denetimi Eklentisi API çeşitli işlevler için kullanılan dizelerin uzunluklarının sınırlar.
@@ -30,7 +30,7 @@ Kaynak Denetimi Eklentisi API çeşitli işlevler için kullanılan dizelerin uz
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  Uzunluğu sonlandırma içermez `null`. Bir "_LEN" yerine "_boyut" soneki ile diğer sabitleri sonlandırmak için boşluk `null`.
+> Uzunluğu sonlandırma içermez `null`. Bir "_LEN" yerine "_boyut" soneki ile diğer sabitleri sonlandırmak için boşluk `null`.
 
 |Sabit|Değer|
 |--------------|-----------|

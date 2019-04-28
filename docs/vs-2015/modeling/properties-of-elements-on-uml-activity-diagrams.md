@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a442d3a116fa527271cad5acd2ffc7f7fec5d076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444444"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Etkinlik diyagramlarındaki öğelerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54760644"
 UML etkinlik diyagramı üzerinde her öğe diyagram üzerindeki özellikleri vardır. Öğenin özelliklerini görmek için diyagram üzerinde veya öğeye sağ tıklayın **UML Model Gezgini** ve ardından **özellikleri**. Özellikleri görünür **özellikleri** penceresi.  
   
 > [!NOTE]
->  Bu konuda, etkinlik diyagramlarındaki öğelerin özellikleri hakkındadır. UML etkinlik diyagramları okuma hakkında daha fazla bilgi için bkz: [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md). UML etkinlik diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
+> Bu konuda, etkinlik diyagramlarındaki öğelerin özellikleri hakkındadır. UML etkinlik diyagramları okuma hakkında daha fazla bilgi için bkz: [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md). UML etkinlik diyagramları çizmek hakkında daha fazla bilgi için bkz. [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Öğelerin özellikleri  
   
@@ -47,7 +47,7 @@ UML etkinlik diyagramı üzerinde her öğe diyagram üzerindeki özellikleri va
 |      **İşlem**       |         (hiçbiri)         |                           İşlem çağırma                            |                                                                                                                                                         -İşlem çağrılır.                                                                                                                                                         |
 |    **Sıradan çıkarılmaya olduğu**     |         False          |                            Olay kabul edin                             |                                                                                                       -Doğruysa, birden çok çıktı pini olabilir ve veri açtığına döndürülür. False ise, tüm verilerini tek bir PIN'in görünür.                                                                                                        |
 |     **Üst sınır**      |        **\\**\*        |                   Nesne düğümü, Etkinlik parametresi                   |                                                                                                      **0** veri akış boyunca doğrudan geçmesi gerektiğini gösterir.<br /><br /> **\\**\* veri akışı depolanabileceğini belirtir.                                                                                                      |
-|      **Seçimi**       |         (hiçbiri)         | Düğüm, Etkinlik parametresi, giriş PIN, PIN çıkış, akış nesne nesnesi |                                                                                                                          Verilere filtre işlemi çağırır. Bu işlem, başka bir diyagrama tanımlanabilir.                                                                                                                          |
+|      **Seçim**       |         (hiçbiri)         | Düğüm, Etkinlik parametresi, giriş PIN, PIN çıkış, akış nesne nesnesi |                                                                                                                          Verilere filtre işlemi çağırır. Bu işlem, başka bir diyagrama tanımlanabilir.                                                                                                                          |
 |       **Sıralama**       |         (hiçbiri)         |       Nesne düğümü, Etkinlik parametresi giriş PIN, PIN çıkış        |                                                                                                                                                    -Birden çok belirteç nasıl depolanır.                                                                                                                                                     |
 |      **Denetimi**      |         False          |                        Giriş PIN, PIN çıkış                        |                                                                                                                            -True Bu PIN akış denetim akışı olur. Bu, yanlışsa, bir nesne akışıdır.                                                                                                                            |
 |         **Tür**         |         (hiçbiri)         |       Giriş PIN, PIN çıkış, nesne düğümü, Etkinlik parametresi        |                              -Aktarılan nesnelerin türü.<br />-Türü tamsayı gibi basit bir tür olabilir veya bir sınıflandırıcı başka bir yerde modelde tanımlı. Tanımlanmamış bir türün adını girerseniz, görüneceği **belirtilmemiş türler** UML Model Gezgini bölümü.                               |
@@ -58,5 +58,5 @@ UML etkinlik diyagramı üzerinde her öğe diyagram üzerindeki özellikleri va
 | **Tek Yürütme**  |         False          |                          Etkinlik diyagramı                           |                                                                                                                                   -Eğer ayarlanmış, bu diyagramda, tek bir yürütme aynı anda en fazla yoktur.                                                                                                                                    |
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)   
- [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)
+ [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)   
+ [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)

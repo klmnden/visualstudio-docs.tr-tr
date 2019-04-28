@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431723"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl yapılır: İşlemler görünümünde işlem arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi 
 4. Değerleri belirtmek istediğiniz değil herhangi bir alanı temizleyin.  
   
    > [!TIP]
-   >  Bulma modülü tarafından sahip olunan tüm işlemler için temizleyin **işlem** kutusuna ve modül adı yazın **Modülü** kutusu. Ardından **Sonrakini Bul** işlemleri için aramaya devam etmek için.  
+   > Bulma modülü tarafından sahip olunan tüm işlemler için temizleyin **işlem** kutusuna ve modül adı yazın **Modülü** kutusu. Ardından **Sonrakini Bul** işlemleri için aramaya devam etmek için.  
   
 5. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
   

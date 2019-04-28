@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416352"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim Testlerini .NET Framework'ün Önceki Sürümünü Hedefleyecek Şekilde Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Microsoft Visual Studio ile bir test projesi oluşturduğunuzda, .NET Framework'
      **Yeni proje** iletişim kutusu görüntülenir.  
   
     > [!WARNING]
-    >  İçin derleme C + +/ CLI birim testlerini .NET framework'ün önceki bir sürümü için Visual C++ için ilgili Visual Studio sürümünü kullanmanız gerekir. Örneğin, .NET Framework 3.5 hedeflemek için yüklemelisiniz [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] ve [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
+    > İçin derleme C + +/ CLI birim testlerini .NET framework'ün önceki bir sürümü için Visual C++ için ilgili Visual Studio sürümünü kullanmanız gerekir. Örneğin, .NET Framework 3.5 hedeflemek için yüklemelisiniz [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] ve [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
   
 2. Altında **yüklü şablonlar**, genişletme **Visual C ++**. Seçin **Test** seçip **Test projesi** şablonu.  
   

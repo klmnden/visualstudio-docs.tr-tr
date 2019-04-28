@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417168"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Metin renklendirmesi yazı tipi ve renk bilgilerini al
 İşler veya kullanıcı arabirimi (UI) öğeleri renklendirildi metni görüntüler işlem, proje, teknoloji ve geliştirici tercihleri türüne bağlıdır. **Yazı tipleri ve renkler** özellik sayfası ayarları depolar.
@@ -24,7 +24,7 @@ ms.locfileid: "60042413"
  Renklendirilmiş metnini uygulamalarının çoğu gereksinim <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> ve arabirimleri sunma, almaya ve metin depolama ayarlarını görüntülemek için ilişkili.
 
 > [!NOTE]
->  Çekirdek Düzenleyici özelleştirirken (destekleyen **metin EditorCategory**), renklendirme teknoloji dil hizmeti kullanmanız önerilir. Daha fazla bilgi için [yazı tipi ve renk genel bakış](../extensibility/font-and-color-overview.md).
+> Çekirdek Düzenleyici özelleştirirken (destekleyen **metin EditorCategory**), renklendirme teknoloji dil hizmeti kullanmanız önerilir. Daha fazla bilgi için [yazı tipi ve renk genel bakış](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Varsayılan yazı tipi ve renk bilgilerini al
  Tüm **yazı tipleri ve renkler** metin görüntüleme herhangi bir pencerenin ayarları belirtilmelidir **görünen öğeler** birinin **kategori**. Daha fazla bilgi için [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440017"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Hesaplanan ve Özel Depolama Özellikleri
 Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve dil gezgininizde kullanıcıya görüntülenen ve program kodu tarafından erişilebilir. Ancak, özellikleri değerlerini depolanan şekilde farklılık gösterir.
@@ -50,7 +50,7 @@ Tüm etki alanı özellikleri bir etki alanına özgü dil (DSL) diyagramı ve d
      Dsl\GeneratedCode\DomainClasses.cs veya DomainRelationships.cs açılır. Vurgulanan yöntemi çağrısı, yorum, Get için bir uygulama sunmak amacıyla ister*YourProperty*().
 
     > [!NOTE]
-    >  Bu dosya, DslDefinition.dsl oluşturulur. Bu dosyayı düzenlerseniz, değişikliklerinizi bir sonraki tıklayışınızda olmalıdır **tüm Şablonları Dönüştür**. Bunun yerine ayrı bir dosyada gerekli yöntemi ekleyin.
+    > Bu dosya, DslDefinition.dsl oluşturulur. Bu dosyayı düzenlerseniz, değişikliklerinizi bir sonraki tıklayışınızda olmalıdır **tüm Şablonları Dönüştür**. Bunun yerine ayrı bir dosyada gerekli yöntemi ekleyin.
 
 6. Oluşturun veya bir sınıf dosyası ayrı bir klasörde, örneğin CustomCode açın\\*YourDomainClass*. cs.
 

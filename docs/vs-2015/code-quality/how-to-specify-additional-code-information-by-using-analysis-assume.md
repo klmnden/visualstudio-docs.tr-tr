@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426639"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Nasıl yapılır: __analysis_assume Kullanarak Ek Kod Bilgileri Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Analiz işlemine yardımcı olmak ve Uyarıları azaltmak C/C++ kodu için kod a
  Kod Analizi aracı ifade tarafından temsil edilen koşul true işlevi burada görünür ve ifade, örneğin, bir değişkene atama ile değiştirilinceye kadar doğrudur noktada olduğunu varsayar.  
   
 > [!NOTE]
->  `__analysis_assume` kod iyileştirme etkilemez. Kod Analizi aracı dışında `__analysis_assume` bir İşlemsiz tanımlanır.  
+> `__analysis_assume` kod iyileştirme etkilemez. Kod Analizi aracı dışında `__analysis_assume` bir İşlemsiz tanımlanır.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod `__analysis_assume` Kod Analizi uyarısı düzeltmek için [C6388](../code-quality/c6388.md):  

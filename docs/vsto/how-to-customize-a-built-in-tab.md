@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419453"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme
   Yerleşik bir sekmeye grup ve denetim ekleyebilirsiniz. Yerleşik bir sekmeyi bir Microsoft Office uygulamasının Şerit üzerinde zaten var olan bir sekmedir. Örneğin, **veri** Excel yerleşik bir sekmede sekmesidir. Özel bir grup oluşturduğunuzda, son sekmede görünür, ancak grubunuzun sekmesinde istediğiniz yere taşıyabilirsiniz.
@@ -26,14 +26,14 @@ ms.locfileid: "60075668"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Yerleşik bir sekmeye gruplar ekleyebilirsiniz, ancak yerleşik bir sekmeden varsayılan grupları silemezsiniz.
+> Yerleşik bir sekmeye gruplar ekleyebilirsiniz, ancak yerleşik bir sekmeden varsayılan grupları silemezsiniz.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Yerleşik bir sekmeye gruplar eklemek için
 
 1. Şerit kod dosyasını sağ tıklatın **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.
 
     > [!NOTE]
-    >  Şerit kod dosyasını görünmüyorsa **Çözüm Gezgini**, eklemelisiniz bir **Şerit öğesi** projenize. Bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Şerit kod dosyasını görünmüyorsa **Çözüm Gezgini**, eklemelisiniz bir **Şerit öğesi** projenize. Bkz: [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Şerit Tasarımcısı'nda herhangi bir sekmesini sağ tıklatın ve ardından **özellikleri**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075668"
 5. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, grupları sekmenin sürükleyin.
 
     > [!NOTE]
-    >  Yerleşik gruplar Tasarımcısı'nda görünmez. Bu nedenle, yerleşik bir sekmeyi ile çalışma belirlemek için tek yolu incelemektir **ControlId** sekmesinin özelliği.
+    > Yerleşik gruplar Tasarımcısı'nda görünmez. Bu nedenle, yerleşik bir sekmeyi ile çalışma belirlemek için tek yolu incelemektir **ControlId** sekmesinin özelliği.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Grupları yerleşik bir sekmede konuma
 

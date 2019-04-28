@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d930ab12d6ac1338ec112091ed9ea8fb11a25587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422088"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>EventSource olaylarını işaretleyici olarak Görselleştirme
 Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olarak görüntüleyebilir ve işaretçileri nasıl görüntüleneceğini denetleyebilirsiniz. EventSource işaretlerinin görüntülemek için kullanarak ETW sağlayıcısı GUID kaydetme [Gelişmiş ayarlar](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) iletişim kutusu. EventSource olaylarını olarak göstermek için varsayılan kuralları eşzamanlılık görselleştiricisi sahip [bayrak işaretleyicileri](../profiling/flag-markers.md), [yayılma işaretçileri](../profiling/span-markers.md), ve [ileti işaretçileri](../profiling/message-markers.md). EventSource olaylarını olaylara özel alanlar ekleyerek nasıl görüntüleneceğini özelleştirebilirsiniz. İşaretçiler hakkında daha fazla bilgi için bkz: [eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md). EventSource olaylarını hakkında daha fazla bilgi için bkz: <xref:System.Diagnostics.Tracing>.
@@ -91,7 +91,7 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
  Olay çifti ile eşleşen için bir int cvSpanId alanını kullanın. Her bir çifti Başlat/Durdur olayların bir aralığı temsil eden değeri benzersiz olmalıdır. Genellikle eş zamanlı kod için bu eşitleme temellerine gibi gerektirir <xref:System.Threading.Interlocked.Exchange%2A> (CvSpanID için kullanılan değer) anahtarının doğru olduğundan emin olmak için.
 
 > [!NOTE]
->  Kısmen aynı iş parçacığında üst üste veya bir iş parçacığında başlatmaya izin vermek için yayılma içine yerleştirmek için SpanID kullanılmasına izin verin ve diğer uçta desteklenmiyor.
+> Kısmen aynı iş parçacığında üst üste veya bir iş parçacığında başlatmaya izin vermek için yayılma içine yerleştirmek için SpanID kullanılmasına izin verin ve diğer uçta desteklenmiyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Eşzamanlılık görselleştiricisi işaretleyicileri](../profiling/concurrency-visualizer-markers.md)

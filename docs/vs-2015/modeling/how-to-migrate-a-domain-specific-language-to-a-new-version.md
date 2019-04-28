@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441043"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Alana Özgü Dili Yeni Sürüme Geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
    - Bir proje veya çözüm, araç haline getiren değişikliklerin bir listesini görmek için seçin.  
   
        > [!NOTE]
-       >  Klasör adları yanında görünen onay kutularını hiçbir etkisi yoktur. Projeler ve çözümler incelemek için klasörleri genişletmeniz gerekir.  
+       > Klasör adları yanında görünen onay kutularını hiçbir etkisi yoktur. Projeler ve çözümler incelemek için klasörleri genişletmeniz gerekir.  
   
 4. Projeleri dönüştürün.  
   
@@ -78,7 +78,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
    2. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini başlığını düğmesi.  
   
        > [!NOTE]
-       >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Özel kodunuz dönüştürülmüş projelerinde güncelleştirin.  
   

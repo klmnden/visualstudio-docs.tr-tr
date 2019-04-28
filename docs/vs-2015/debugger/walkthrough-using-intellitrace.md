@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444256"
 ---
 # <a name="walkthrough-using-intellitrace"></a>İzlenecek yol: IntelliTrace’i kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
 5. Zamanki gibi hata ayıklamaya başlayın. (Tuşuna **F5** veya **hata ayıklama / hata ayıklamayı Başlat**.  
   
     > [!TIP]
-    >  Tutun **Yereller** ve **Otolar** windows görmek ve bu pencerelerde değerlerini kaydetmek için hata ayıklarken açın.  
+    > Tutun **Yereller** ve **Otolar** windows görmek ve bu pencerelerde değerlerini kaydetmek için hata ayıklarken açın.  
   
 6. Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
   
@@ -87,7 +87,7 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
 1. Çağrı koleksiyonunu açın. (Üzerinde **Araçlar / Seçenekler / IntelliTrace / genel**seçin **IntelliTrace olayları ve çağrı bilgileri**. IntelliTrace sonraki hata ayıklama oturumu başladığında bu bilgileri toplamaya başlar.  
   
     > [!TIP]
-    >  Bu sizin uygulamanızı yavaşlatabilir ve diske kaydettiğiniz herhangi IntelliTrace günlük dosyasının (.iTrace dosyaları) boyutunu artırın. Çoğu arama verilerini almak ancak etkilerini en aza indirmek için ilginizi çeken modüllerden veri kaydedin. .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçlar / Seçenekler / IntelliTrace / Gelişmiş**ve en fazla disk alanı miktarını belirtin. Varsayılan değer 250 MB ' dir.  
+    > Bu sizin uygulamanızı yavaşlatabilir ve diske kaydettiğiniz herhangi IntelliTrace günlük dosyasının (.iTrace dosyaları) boyutunu artırın. Çoğu arama verilerini almak ancak etkilerini en aza indirmek için ilginizi çeken modüllerden veri kaydedin. .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçlar / Seçenekler / IntelliTrace / Gelişmiş**ve en fazla disk alanı miktarını belirtin. Varsayılan değer 250 MB ' dir.  
   
 2. C# konsol uygulaması önceki bölümde oluşturduğunuz hatalarını ayıklamaya başlayın. Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
   
@@ -98,6 +98,6 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
      İşlev çağrıları birini seçin ve çift tıklayın. İşlev giriş ve çıkış noktaları yanı sıra geçerli çağrının diğer işlevlere ve çağrı tarafından tetiklenen IntelliTrace olayları için yapılan çağrıları görmeniz gerekir. Açık geçmiş hata ayıklama yoksa, bu eylem, açar. Geçmiş hata ayıklama hakkında daha fazla bilgi için bkz: [geçmiş hata ayıklama](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Bazı çağrıları soluklaştırılır görebilirsiniz. IntelliTrace karşılık gelen modüllerden veri kaydetmediği için budur. Bu verileri görmek için bu modüllerden veri toplamak IntelliTrace sahip. Modüller belirtme hakkında daha fazla bilgi için bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
+    > Bazı çağrıları soluklaştırılır görebilirsiniz. IntelliTrace karşılık gelen modüllerden veri kaydetmediği için budur. Bu verileri görmek için bu modüllerden veri toplamak IntelliTrace sahip. Modüller belirtme hakkında daha fazla bilgi için bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Sonraki Adımlar

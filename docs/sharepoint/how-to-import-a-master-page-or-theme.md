@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427394"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Nasıl yapılır: Ana sayfa veya temayı içeri aktarma
   Sayfaları SharePoint sitenizde tutarlı bir görünüm oluşturma ve ana sayfalar ve Temalar kullanarak verebilirsiniz. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bu öğeler için şablonlar içermez, ancak bunları SharePoint Tasarımcısı'nda oluşturabilir ve bunları içe [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [yapı taşı: Sayfalar ve kullanıcı arabirimi](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft Web sitesinde.
@@ -48,7 +48,7 @@ ms.locfileid: "60081912"
 8. Ana sayfa eklediyseniz, değiştirme, **dağıtım çakışması çözümü** ayarını **otomatik** modülün özellikleri.
 
     > [!NOTE]
-    >  Ana sayfa adını varsayılan ana sayfa veya özel bir ana sayfa olarak işaretlenmiş var olan bir ana sayfa adı ile aynı olduğunda hatalar oluşabilir. Bu sorunun nasıl giderileceği hakkında daha fazla bilgi için bkz. [izlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Ana sayfa adını varsayılan ana sayfa veya özel bir ana sayfa olarak işaretlenmiş var olan bir ana sayfa adı ile aynı olduğunda hatalar oluşabilir. Bu sorunun nasıl giderileceği hakkında daha fazla bilgi için bkz. [izlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. Modülde açın *Elements.xml*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081912"
      Değerini **Web** geçerli projede belirtilen Web sitesinin ana sayfaya uygulandığı anlamına gelir. Değerini **Site** ana sayfanın tüm alt siteleri ve kök web içeren geçerli site koleksiyonuna uygulanacağı anlamına gelir. Diğer değerleri için geçerli değildir.
 
     > [!NOTE]
-    >  Temalar yalnızca site koleksiyonu düzeyi için geçerli olduğundan, bir tema kapsamı için herhangi bir şey dışında ayarladığınız yoksa öneririz **Site**. Bir alt sitede bir tema kullanılıyorsa hatalar oluşabilir.
+    > Temalar yalnızca site koleksiyonu düzeyi için geçerli olduğundan, bir tema kapsamı için herhangi bir şey dışında ayarladığınız yoksa öneririz **Site**. Bir alt sitede bir tema kullanılıyorsa hatalar oluşabilir.
 
 12. Menü çubuğunda, **derleme** > **çözüm dağıtma**.
 

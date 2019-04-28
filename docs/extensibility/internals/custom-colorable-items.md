@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415179"
 ---
 # <a name="custom-colorable-items"></a>Özel renklendirilebilir öğeler
 Özel renklendirilebilir öğeler, dil hizmetinin bir parçası olarak uygulayarak, renklendirme, anahtar sözcükleri ve açıklamalar gibi türlerinin listesi kılabilirsiniz.
@@ -28,11 +28,11 @@ ms.locfileid: "56641539"
  IDE içinde renklendirilebilir öğeleri kullanıcı geçersiz kılmaları hallettiğinden **yazı tipleri ve renkler** iletişim kutusunda, gereken yalnızca özel renklendirilebilir öğeleri bir ad sağlayın. Bu ad görünür ne olduğunu **görüntü öğeleri** listesi. Renklendirilebilir öğeleri alfabetik sırada görünür. Dil hizmetinizin özel renklendirilebilir öğeleri gruplandırmak için dil adınızla her adı örneğin başlayabilirsiniz **NewLanguage - açıklama** ve **NewLanguage - anahtar sözcüğü**.
 
 > [!CAUTION]
->  Dil adı, mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğesi adını içermelidir. Geliştirme sırasında renklendirilebilir öğelerinizden birini adını değiştirirseniz, renklendirilebilir öğelerinizi erişildiğini ilk kez oluşturulan önbelleğini sıfırlamanız gerekir. Deneysel önbellekle sıfırlayabilirsiniz **Createexpınstance** dizininde genellikle Visual Studio SDK ile birlikte yüklenen aracı:
+> Dil adı, mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğesi adını içermelidir. Geliştirme sırasında renklendirilebilir öğelerinizden birini adını değiştirirseniz, renklendirilebilir öğelerinizi erişildiğini ilk kez oluşturulan önbelleğini sıfırlamanız gerekir. Deneysel önbellekle sıfırlayabilirsiniz **Createexpınstance** dizininde genellikle Visual Studio SDK ile birlikte yüklenen aracı:
 >
->  *C:\Program dosyaları (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program dosyaları (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Önbelleği sıfırlamak için girin **Createexpınstance reset**. Hakkında daha fazla bilgi için **Createexpınstance**, bkz: [Createexpınstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md).
+> Önbelleği sıfırlamak için girin **Createexpınstance reset**. Hakkında daha fazla bilgi için **Createexpınstance**, bkz: [Createexpınstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md).
 
  Listesindeki ilk öğe renklendirilebilir öğeleri hiçbir zaman başvuruluyor. İlk öğe için bir renklendirilebilir öğe dizini 0 karşılık gelir ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] her zaman varsayılan metin rengini ve bu öğenin öznitelikleri sağlar. Bir yer tutucu renklendirilebilir öğesi listesindeki ilk öğe olarak sağlamak için bu başvurulmayan öğesi uğraşmanızı en kolay yolu olan.
 

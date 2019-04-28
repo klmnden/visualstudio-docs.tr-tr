@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff97af6b45242a884d7067f74f486c13356f8d8b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442345"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Aşırı GC CPU süresi
 
@@ -42,7 +42,7 @@ ms.locfileid: "56625406"
  Toplam uygulama işleme süresi ile karşılaştırıldığında çöp toplamaya harcanan süreyi aşırı yüksek olduğunda, bu kural tetiklenir.
 
 > [!NOTE]
->  Ne zaman zaman oranını çöp toplamaya harcanan önemlidir, ancak değil aşırı toplam uygulama işleme süresi ile karşılaştırıldığında [DA0023: Yüksek GC CPU süresi](../profiling/da0023-high-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.
+> Ne zaman zaman oranını çöp toplamaya harcanan önemlidir, ancak değil aşırı toplam uygulama işleme süresi ile karşılaştırıldığında [DA0023: Yüksek GC CPU süresi](../profiling/da0023-high-gc-cpu-time.md) yerine bu kural uyarı ateşlenir.
 
 ## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma
  Hata Listesi penceresindeki iletiyi gitmek için çift tıklatın [işaret görünümü](../profiling/marks-view.md) profil oluşturma verilerinin. Bulma **.NET CLR bellek\\% gc'de zaman** sütun. Varsa belirli program yürütme aşamaları çöp toplamanın yönetilen bellek yükü diğer aşamaları ağır olduğu belirleyin. Gc'de zaman % değerlerini değer çöp toplama oranını karşılaştırma bildirilen içinde **Gen 0 toplamaları sayısı**, **Gen 1 toplamaları sayısı**, **Gen 2 toplamaları sayısı** değerleri .

@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432317"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki Klavye Kısayollarını Tanımlama ve Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio komutları için kısayollar tanımlayabilir, bu kısayolları öz
   Bir komuta Genel bağlamda kısayol atanmış ve diğer bağlamlarda atanmamışsa, ilgili kısayol her zaman bu komutu çağırır. Ancak bir kısayol, Genel bağlamda bir komuta ve özel bağlamda farklı bir komuta atanabilir. Böyle bir komutu özel bağlamda kullanırsanız, özel bağlama ilişkin komutu çağırır (Genel bağlama ilişkin komutu çağırmaz).
 
 > [!NOTE]
->  Ayarlarınıza ve Visual Studio sürümünüze göre, menü komutlarının adları ve konumları ve iletişim kutularında görünen seçenekler değişik olabilir. Bu konuda dayanır **genel geliştirme ayarları**.
+> Ayarlarınıza ve Visual Studio sürümünüze göre, menü komutlarının adları ve konumları ve iletişim kutularında görünen seçenekler değişik olabilir. Bu konuda dayanır **genel geliştirme ayarları**.
 
 ## <a name="bkmk_identify"></a> Klavye kısayolu tanımlama
 
@@ -91,12 +91,12 @@ Visual Studio komutları için kısayollar tanımlayabilir, bu kısayolları öz
      Örneğin, seçebileceğiniz **genel** kısayolun her bağlamda çalışmasını istiyorsanız. Başka bir düzenleyicide Genel olarak eşlenmemiş herhangi bir kısayolu kullanabilirsiniz. Aksi takdirde düzenleyici kısayolu geçersiz kılar.
 
     > [!NOTE]
-    >  Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: Ekran/Sys Rq, Scroll Lock, Pause/Break, sekme, Caps Lock, INSERT, giriş, End, Page Up, Page Down, Windows logosu tuşu, uygulama tuşu, ok tuşlarını veya Enter'ı yazdırmak; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin veya Ctrl + Alt + Delete.
+    > Bir klavye kısayolunu parçası olarak şu tuşları atayamazsınız **genel**: Ekran/Sys Rq, Scroll Lock, Pause/Break, sekme, Caps Lock, INSERT, giriş, End, Page Up, Page Down, Windows logosu tuşu, uygulama tuşu, ok tuşlarını veya Enter'ı yazdırmak; Num Lock, Delete veya sayısal tuş takımındaki; temizleyin veya Ctrl + Alt + Delete.
 
 6. İçinde **kısayol tuşlarına basın** kutusunda, kullanmak istediğiniz kısayolu girin.
 
     > [!NOTE]
-    >  Bir harfi; Alt tuşu, Ctrl tuşu veya her ikisiyle birden birleştiren bir kısayol oluşturabilirsiniz. Ayrıca Shift tuşu ve bir harfi; Alt tuşu, Ctrl tuşu veya her ikisiyle birden birleştiren bir kısayol da oluşturabilirsiniz.
+    > Bir harfi; Alt tuşu, Ctrl tuşu veya her ikisiyle birden birleştiren bir kısayol oluşturabilirsiniz. Ayrıca Shift tuşu ve bir harfi; Alt tuşu, Ctrl tuşu veya her ikisiyle birden birleştiren bir kısayol da oluşturabilirsiniz.
 
      Bir kısayol zaten başka bir komuta atanmışsa görünür **şu anda kullandığı kısayolunu** kutusu. Bu durumda, farklı birini denemden önce kısayolu silmek için Geri Al tuşunu seçin.
 
@@ -105,7 +105,7 @@ Visual Studio komutları için kısayollar tanımlayabilir, bu kısayolları öz
 7. Seçin **atama** düğmesi.
 
     > [!NOTE]
-    >  Bir komut için farklı bir kısayol belirtirseniz **atama** düğmesine ve ardından **iptal** düğmesi, iletişim kutusu kapanır, ancak değişiklik geri alınır.
+    > Bir komut için farklı bir kısayol belirtirseniz **atama** düğmesine ve ardından **iptal** düğmesi, iletişim kutusu kapanır, ancak değişiklik geri alınır.
 
 ## <a name="bkmk_transfer"></a> Özel klavye kısayollarını paylaşma
  Özel klavye kısayollarınızı bir dosyaya dışarı aktararak ve verileri içeri aktarabilmeleri için bu dosyayı başkalarına vererek, klavye kısayollarınızı paylaşabilirsiniz.

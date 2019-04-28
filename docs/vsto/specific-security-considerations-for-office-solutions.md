@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436481"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office çözümleriyle ilgili belirli güvenlik konuları
   Microsoft Office ve Microsoft .NET Framework tarafından sağlanan güvenlik özelliklerine Office çözümünüzü olası güvenlik tehditlerine karşı korunmasına yardımcı olabilir. Bu konu, bu tehditleri bazıları açıklanmıştır ve bunlara karşı koruma sağlamak için öneriler sağlar. Ayrıca, Microsoft Office güvenlik ayarları Office çözümlerini nasıl etkilediği hakkında bilgi içerir.
@@ -74,7 +74,7 @@ ms.locfileid: "60081326"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Outlook ile Exchange kullanılırsa, tüm Outlook nesnelerden elde etme `ThisAddIn.Application` VSTO eklenti tüm Outlook nesne modeline erişme olanağına olacağını garanti etmez. Exchange yönetici Outlook otomatik olarak ayarlar, Outlook için özelliğe erişmek bir önceki kod örneğinde vermez, bu kod örneği kullansa bile, tüm Outlook nesne modeli kullanarak adres bilgilerine erişme girişimi Reddet Güvenilen `ThisAddIn.Application` alan.
+> Outlook ile Exchange kullanılırsa, tüm Outlook nesnelerden elde etme `ThisAddIn.Application` VSTO eklenti tüm Outlook nesne modeline erişme olanağına olacağını garanti etmez. Exchange yönetici Outlook otomatik olarak ayarlar, Outlook için özelliğe erişmek bir önceki kod örneğinde vermez, bu kod örneği kullansa bile, tüm Outlook nesne modeli kullanarak adres bilgilerine erişme girişimi Reddet Güvenilen `ThisAddIn.Application` alan.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Exchange kullanıldığında güvenmek için hangi eklentileri belirtin
  Outlook ile Exchange kullanıldığında, yöneticilerin belirli VSTO eklentileri nesne modeli koruması karşılaşılmadan çalıştırabilirsiniz belirtebilirsiniz. Outlook VSTO Add-Ins Visual Studio'da Office çözümleri kullanılarak oluşturulan tek tek güvenilir olamaz; Bunlar yalnızca bir grup olarak güvenilir olabilir.

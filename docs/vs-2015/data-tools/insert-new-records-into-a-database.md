@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384072"
 ---
 # <a name="insert-new-records-into-a-database"></a>Veritabanına yeni kayıtlar ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Veritabanına yeni kayıtlar eklemek için kullanabileceğiniz `TableAdapter.Upd
 - TableAdapter bağdaştırıcısının çağrı `Insert` değerler her sütun için parametre olarak geçirmeyi yöntemi.  
   
     > [!NOTE]
-    >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
+    > Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
   
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  

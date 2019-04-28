@@ -11,14 +11,14 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437072"
 ---
-# <a name="creating-and-using-code-analysis-check-in-policies"></a>Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma
+# <a name="creating-and-using-code-analysis-check-in-policies"></a>Kod Analizi İade İlkeleri Oluşturma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Team Foundation sürüm denetimi (TFVC) kullandığınızda, .NET Framework ve doğal (C/C++) kod projeleri bir takım projesi için iade Kod Analizi ilkesi oluşturabilirsiniz. Denetim ve kod tabanında denetlenen kodun kalitesini artırmak için kod çözümleme İade İlkesi'ni kullanabilirsiniz.  
@@ -26,7 +26,7 @@ Team Foundation sürüm denetimi (TFVC) kullandığınızda, .NET Framework ve d
  İlke, yerel yapı güncel olduğunda ve kod analizini en son kaynak dosyalarında Çalıştır geçirir. En azından kod projesinde etkin Kod Analizi kuralları, takım projesi iade ilkede tanımlanan aynı kuralları içermesi gerekir. Takım Proje ayarlarında hata olarak belirtilen kurallar, kod projesinde hata olarak de belirtilmelidir  
   
 > [!IMPORTANT]
->  Kod çözümleme iade ilkeleri web sitesi projeleri için uygulanamaz. Web uygulaması projelerine uygulanabilirler.  
+> Kod çözümleme iade ilkeleri web sitesi projeleri için uygulanamaz. Web uygulaması projelerine uygulanabilirler.  
   
  Takım proje ayarlarını kullanarak kod çözümleme iade ilkeleri oluşturma [!INCLUDE[esprscc](../includes/esprscc-md.md)]. İade ilkeleri belirtilir ve bir takım projesi için zorunlu, ancak kod analizi yürütmeleri yapılandırılır ve yerel geliştirme bilgisayarlarda bireysel kod projeleri için çalıştırın. Bu bölümde, bir takım projesi için kod çözümleme iade ilkeleri belirtme ve yönetilen kod için özel kod analizi ilkeleri uygulamak nasıl açıklanmaktadır.  
   

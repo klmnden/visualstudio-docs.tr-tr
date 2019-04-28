@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440188"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` İşlev, sayısal bir işaret ve bir metin dizesi ekler. *Vsp* dosya. Eklenecek, açıklama ve işareti için içeren iş parçacığı profil oluşturma `CommentMarkProfile` işlevi açık olması gerekir.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Profil işaretleri kapsam içinde geneldir. Örneğin, bir iş parçacığında eklenen bir profili işareti başlangıç veya bitiş içinde herhangi bir iş parçacığı bir veri parçasının işaretlemek için kullanılabilir. *vsp* dosya.
 
 > [!IMPORTANT]
->  CommentMarkProfile yöntemi yalnızca izleme ile kullanılabilir.
+> CommentMarkProfile yöntemi yalnızca izleme ile kullanılabilir.
 
 ## <a name="net-framework-equivalent"></a>.NET framework eşdeğeri
  Microsoft.VisualStudio.Profiler.dll

@@ -18,28 +18,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 674050711e69ae97c7e1faa361122bee0d755ae7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7342524d1e7682fd088c4f7ea44037a32c220e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441751"
 ---
 # <a name="infopath-solutions"></a>InfoPath çözümleri
   Visual Studio, Microsoft Office InfoPath 2013 ve InfoPath 2010 için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. InfoPath Office 2016'da kullanılamıyor.
 
 > [!NOTE]
->  Office 2016'yı yükledikten olsa bile, yine de bir VSTO eklentisi InfoPath için oluşturabilirsiniz. Yalnızca InfoPath 2013 veya Office 2013 yan yana ile Office 2016 yükleyin.
+> Office 2016'yı yükledikten olsa bile, yine de bir VSTO eklentisi InfoPath için oluşturabilirsiniz. Yalnızca InfoPath 2013 veya Office 2013 yan yana ile Office 2016 yükleyin.
 
  [!INCLUDE[appliesto_infoallapp](../vsto/includes/appliesto-infoallapp-md.md)]
 
 > [!NOTE]
->  Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümleri için karşılaştırma küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
 
  VSTO eklentileri InfoPath için VSTO eklentileri için diğer Microsoft Office uygulamalarına benzerdir. Bu tür çözümler, uygulama tarafından yüklenen bir derlemeyi oluşur. Son kullanıcılar, bu derlemenin hangi form veya form ne olursa olsun, işlev şablonu açık erişim sağlayabilirler. VSTO eklentileri hakkında daha fazla bilgi için bkz. [VSTO eklentileri programlama başlama](../vsto/getting-started-programming-vsto-add-ins.md) ve [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Visual Studio 2015, Visual Studio'nun önceki sürümlerinde sağlanan InfoPath form şablon projelerini içermez. Ayrıca, açın veya Visual Studio'nun önceki bir sürümde oluşturulmuş bir InfoPath form şablonu projesi düzenlemek için Visual Studio 2015 kullanamazsınız. Ancak, açın ve bir InfoPath form şablonu projesi uygulamalar için Visual Studio araçları kullanarak düzenleyin. Daha fazla bilgi için [InfoPath 2010 VSTO 2008 projelerde çalışabilirsiniz.](http://go.microsoft.com/fwlink/?LinkID=218903).
+> Visual Studio 2015, Visual Studio'nun önceki sürümlerinde sağlanan InfoPath form şablon projelerini içermez. Ayrıca, açın veya Visual Studio'nun önceki bir sürümde oluşturulmuş bir InfoPath form şablonu projesi düzenlemek için Visual Studio 2015 kullanamazsınız. Ancak, açın ve bir InfoPath form şablonu projesi uygulamalar için Visual Studio araçları kullanarak düzenleyin. Daha fazla bilgi için [InfoPath 2010 VSTO 2008 projelerde çalışabilirsiniz.](http://go.microsoft.com/fwlink/?LinkID=218903).
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>InfoPath eklenti kullanarak otomatik hale getirin.
  InfoPath nesne modelini Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan Office VSTO ek bileşeni erişmek için kullanın `Application` alanını `ThisAddIn` projenizdeki sınıfı. `Application` Alan döndürür bir <xref:Microsoft.Office.Interop.InfoPath.Application> InfoPath'ün geçerli örneğini temsil eden nesne. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446213"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Visual Studio'da Store uygulamaları için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104186"
 Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini çalıştırmak açıklar
 
 > [!NOTE]
->  Bu bölümdeki konular, Visual Studio Express Windows 8 için işlevselliğini açıklar. Visual Studio Community, Enterprise ve Professional birim testi için ek özellikler sağlar.
+> Bu bölümdeki konular, Visual Studio Express Windows 8 için işlevselliğini açıklar. Visual Studio Community, Enterprise ve Professional birim testi için ek özellikler sağlar.
 >
 > - Bir eklenti bağdaştırıcısı Microsoft Test Gezgini için oluşturduğu tüm üçüncü taraf veya açık kaynak birim testi çerçevesini kullanın. Ayrıca, analiz ve testleriniz için kod kapsamı bilgileri görüntüleyebilirsiniz.
 >   - Her derlemeden sonra testlerinizi çalıştırın. Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yönetilen kod için bir yalıtım çerçevesi de kullanabilirsiniz.
@@ -118,7 +118,7 @@ Bu konu, Microsoft Visual Studio ile Test Gezgini'ni kullanarak birim testlerini
 1. Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.
 
    > [!NOTE]
-   >  Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.
+   > Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.
 
 2. Test Gezgini'nde test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünde.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419601"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme
   Office yüklediğinizde, Microsoft Office birincil birlikte çalışma derlemeleri (PIA) yükleyin.
@@ -30,7 +30,7 @@ ms.locfileid: "60109510"
 2. Microsoft Office yükleyin ve emin **.NET programlama desteğinin** özelliği, genişletmek istediğiniz uygulamalar için seçili (Bu özellik, varsayılan yükleme bulunur).
 
     > [!WARNING]
-    >  PIA, VSTO eklenti veya özelleştirme kullanarak bir önkoşul olarak kullanıcılara dağıtmak zorunda kalmamak için oluşturma sırasında varsayılan olarak, çözümünüzde PIA'ın katıştırılır.
+    > PIA, VSTO eklenti veya özelleştirme kullanarak bir önkoşul olarak kullanıcılara dağıtmak zorunda kalmamak için oluşturma sırasında varsayılan olarak, çözümünüzde PIA'ın katıştırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)

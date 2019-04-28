@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431330"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Nasıl yapılır: Yönetilen kodda birden çok iş parçacığı yönetme
 Visual Studio UI iş parçacığı dışında iş parçacığı üzerinde yürütülen işlemler zaman uyumsuz yöntemleri çağırır veya yönetilen bir VSPackage uzantısı varsa, aşağıda verilen yönergeleri izlemelidir. Bunu tamamlamak için başka bir iş parçacığı üzerinde iş için beklemesi gerekmez çünkü UI iş parçacığı hızlı yanıt veren tutabilirsiniz. Yığın yer kaplar ek iş parçacıkları sahip olmadığınızdan, kodunuzu daha verimli hale getirebilir ve daha güvenilir ve daha kolay Kilitlenmeler ve kilitlenmelerini önlemek için hata ayıklama yapabilirsiniz.
@@ -21,7 +21,7 @@ Visual Studio UI iş parçacığı dışında iş parçacığı üzerinde yürü
  Genel olarak, farklı bir iş parçacığı UI iş parçacığından geçebilir veya bunun tersi de geçerlidir. Yöntem döndürüldüğünde, geçerli iş parçacığı içinden verilmiş olan başlangıçtaki parçacığıdır.
 
 > [!IMPORTANT]
->  API'leri aşağıdaki kılavuzları kullanın <xref:Microsoft.VisualStudio.Threading> ad alanı, özellikle de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> sınıfı. Bu ad alanındaki API'leri yeni [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Örneği alabileceğiniz bir <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> gelen <xref:Microsoft.VisualStudio.Shell.ThreadHelper> özelliği `ThreadHelper.JoinableTaskFactory`.
+> API'leri aşağıdaki kılavuzları kullanın <xref:Microsoft.VisualStudio.Threading> ad alanı, özellikle de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> sınıfı. Bu ad alanındaki API'leri yeni [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Örneği alabileceğiniz bir <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> gelen <xref:Microsoft.VisualStudio.Shell.ThreadHelper> özelliği `ThreadHelper.JoinableTaskFactory`.
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>UI iş parçacığından bir arka plan iş parçacığına geçiş
 

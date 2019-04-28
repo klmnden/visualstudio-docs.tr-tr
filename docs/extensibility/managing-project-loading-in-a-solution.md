@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431313"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Bir çözümde proje yüklemeyi yönetme
 Visual Studio çözümleri, çok sayıda proje içerebilir. Varsayılan Visual Studio çözüm açıldığında bir çözümdeki tüm projeleri yüklemek ve bunların tümünü yükleme işlemini tamamlayana kadar projelerinden herhangi birinin erişmek kullanıcı izin vermeyecek şekilde davranışıdır. Proje yükleme işlemi iki dakikadan fazla en son, yüklenen projelerin sayısını ve projeleri toplam sayısını gösteren bir ilerleme çubuğu görüntülenir. Bir çözümde birden çok proje ile çalışırken, kullanıcı projeleri kaldırma, ancak bu yordamı bazı dezavantajları vardır: bir çözümü yeniden derle komutunu bir parçası olarak yüklenmemiş projeler oluşturulmadı ve IntelliSense açıklamaları türleri ve üyeleri kapalı projeleri görüntülenmez.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Genel yükleme çözümü yönetmek için çözüm yükleme yöneticisi geliyorsa, VSPackage bir parçası olarak uygulanabilir. Paket ekleyerek otomatik yükleme için ayarlanmalıdır <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> değeriyle VSPackage'ı üzerinde <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Çözüm yükü Yöneticisi'ni, sonra etkinleştirilebilir <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.
 
 > [!NOTE]
->  Autoloading paketler hakkında daha fazla bilgi için bkz. [VSPackage yükleme](../extensibility/loading-vspackages.md).
+> Autoloading paketler hakkında daha fazla bilgi için bkz. [VSPackage yükleme](../extensibility/loading-vspackages.md).
 
  Visual Studio etkinleştirilmesi için yalnızca son çözüm yükleme yöneticisi algılar olduğundan, genel çözüm yük yöneticileri olup var olan bir yükleme yöneticisi kendilerini etkinleştirmeden önce her zaman algılanmalıdır. Çağırma varsa `GetProperty()` çözüm Service'i [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) döndürür `null`, hiçbir etkin çözüm yükü Yöneticisi yoktur. Null döndürmezse, nesnenin, çözüm yükleme yöneticisi ile aynı olup olmadığını denetleyin.
 

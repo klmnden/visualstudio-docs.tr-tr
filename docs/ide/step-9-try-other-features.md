@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee28eba43bd323679b4175d8144b1836ac606a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430981"
 ---
 # <a name="step-9-try-other-features"></a>9. Adım: Diğer özellikleri deneme
 Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanlayıcısı ve sesler eklemeyi deneyin. Oyunu daha zorlu hale getirmek için tahtayı büyütmeyi ve zamanlayıcıyı ayarlamayı deneyin.
@@ -25,22 +25,22 @@ Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanl
 - Simgelerin ve renklerin yerine kendi tercih ettiklerinizi kullanın.
 
     > [!TIP]
-    >  Etiketin bakmayın deneyin [Forecolor](<xref:System.Windows.Forms.Control.ForeColor%2A>) özelliği.
+    > Etiketin bakmayın deneyin [Forecolor](<xref:System.Windows.Forms.Control.ForeColor%2A>) özelliği.
 
 - Oyuncunun oyunu kazanmasının ne kadar sürdüğünü izleyen bir oyun zamanlayıcısı ekleyin.
 
     > [!TIP]
-    >  Bunu yapmak için yukarıdaki forma geçen süreyi gösterecek bir etiket ekleyebilirsiniz <xref:System.Windows.Forms.TableLayoutPanel>, ve süreyi izlemek için forma bir diğer Zamanlayıcı ekleyin. Oyuncu oyuna başladığında zamanlayıcıyı başlatmak ve son iki simgeyi eşleştirdikten sonra zamanlayıcıyı durdurmak için kod kullanın.
+    > Bunu yapmak için yukarıdaki forma geçen süreyi gösterecek bir etiket ekleyebilirsiniz <xref:System.Windows.Forms.TableLayoutPanel>, ve süreyi izlemek için forma bir diğer Zamanlayıcı ekleyin. Oyuncu oyuna başladığında zamanlayıcıyı başlatmak ve son iki simgeyi eşleştirdikten sonra zamanlayıcıyı durdurmak için kod kullanın.
 
 - Oyuncu bir eşleşme bulduğunda çalacak bir ses, eşleşmeyen iki simgeyi açtığında çalacak başka bir ses ve program simgeleri yeniden gizlediğinde çalacak üçüncü bir ses ekleyin.
 
     > [!TIP]
-    >  Sesleri çalmak için kullanabileceğiniz <xref:System.Media> ad alanı. Bkz: [Windows Forms uygulamasında sesleri çalmak (C#)](http://youtu.be/qOh4ooHg1UU) veya [Visual Basic'te ses kaydını oynatın nasıl](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.
+    > Sesleri çalmak için kullanabileceğiniz <xref:System.Media> ad alanı. Bkz: [Windows Forms uygulamasında sesleri çalmak (C#)](http://youtu.be/qOh4ooHg1UU) veya [Visual Basic'te ses kaydını oynatın nasıl](http://youtu.be/-4oPDeQrtMs) daha fazla bilgi için.
 
 - Oyun tahtasını büyüterek oyunu zorlaştırın.
 
     > [!TIP]
-    >  Daha fazlasını satırları ve sütunları TableLayoutPanel denetimine - eklemeniz gerekir, ayrıca oluşturduğunuz simge sayısını göz önünde bulundurmanız gerekir.
+    > Daha fazlasını satırları ve sütunları TableLayoutPanel denetimine - eklemeniz gerekir, ayrıca oluşturduğunuz simge sayısını göz önünde bulundurmanız gerekir.
 
 - Oyuncunun tepki verirken çok yavaş davranması ve belirli bir süre dolmadan önce ikinci simgeyi seçmemesi durumunda ilk simgeyi gizleyerek oyunu daha zorlu hale getirin.
 

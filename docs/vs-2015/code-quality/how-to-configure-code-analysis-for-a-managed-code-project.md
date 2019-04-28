@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429163"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104323"
 İçinde [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ve [!INCLUDE[vsPro](../includes/vspro-md.md)], Kod Analizi listesinden seçtiğiniz *kural kümeleri* yönetilen kod projesi için uygulanacak. Varsayılan kuralı Microsoft en az önerilen kurallar kümesidir. Başka bir kural bir proje veya Çözümdeki tüm projeleri kümesi uygulayabilirsiniz.  
   
 > [!NOTE]
->  ASP.NET Web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET Web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> ASP.NET Web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET Web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework projesi için bir kural yapılandırmak için  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60104323"
 5. Varsayılan olarak, Kod Analizi uyarıları otomatik olarak dış araçları tarafından oluşturulan kodu raporlamaz. Üretilen koddan gelen uyarıları görüntülemek için temizleyin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
   
     > [!NOTE]
-    >  Bu seçenek hataları ve Uyarıları formları ve şablonlar görüntülendiğinde kod çözümleme hataları ve Uyarıları üretilen koddan gelen engellemez. Hem görüntüleyebilir ve bir form veya şablon için kaynak kodunu korumak.  
+    > Bu seçenek hataları ve Uyarıları formları ve şablonlar görüntülendiğinde kod çözümleme hataları ve Uyarıları üretilen koddan gelen engellemez. Hem görüntüleyebilir ve bir form veya şablon için kaynak kodunu korumak.  
   
 6. İçinde **bu kural kümesini Çalıştır** listesinde, aşağıdakilerden birini yapın:  
   

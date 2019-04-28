@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418686"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusu öğeleri Ekle
 Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu, kayıt defteri anahtarları ile başlar. Aşağıdaki kayıt defteri girdilerini gösterildiği gibi **AddItemTemplates** bölüm içeren yolu ve adı dizinde bulunan yapılan hangi öğelerin **Yeni Öğe Ekle** iletişim kutusu konur.
 
 > [!NOTE]
->  Hemen kod kesimi aşağıdaki tabloda, kayıt defteri girişi hakkında ek bilgiler içerir.
+> Hemen kod kesimi aşağıdaki tabloda, kayıt defteri girişi hakkında ek bilgiler içerir.
 
  Bu bölümde altında bulunan **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "59651311"
 | VAL SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Ağaç düğümünde görüntülenen dosyaların sıralama düzeni belirler **Yeni Öğe Ekle** iletişim kutusu. |
 
 > [!NOTE]
->  Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir:
+> Visual C# ve Visual Basic proje türleri GUID'LERİNİ aşağıdaki gibidir:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ ms.locfileid: "59651311"
  Ancak, her şeyi birinde olması gerekmez *.vsdir* dosya. Bir sahip *.vsdir* dizindeki her öğe için dosya. Daha fazla bilgi için [sihirbaz (.vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md) ve [şablon dizin açıklaması (.vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  *.Vsdir* şablon dizinlerde dosyaları isteğe bağlı. Yalnızca görüntüleyin ve bir proje öğesi koymak istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, belirtilen şablonları dizininde bu dosyayı koyabilir **TemplatesDir** deyimi. Dosyayı daha sonra sağ bölmede görüntülenir **Yeni Öğe Ekle** iletişim kutusu için proje. Yerelleştirilmiş bir açıklamalı alt yazı dosyası veya bir simge görüntülemek istiyorsanız, ancak en az bir tane eklemeniz gerekir *.vsdir* şablonları dizinde dosya.
+> *.Vsdir* şablon dizinlerde dosyaları isteğe bağlı. Yalnızca görüntüleyin ve bir proje öğesi koymak istiyorsanız **Yeni Öğe Ekle** iletişim kutusu, belirtilen şablonları dizininde bu dosyayı koyabilir **TemplatesDir** deyimi. Dosyayı daha sonra sağ bölmede görüntülenir **Yeni Öğe Ekle** iletişim kutusu için proje. Yerelleştirilmiş bir açıklamalı alt yazı dosyası veya bir simge görüntülemek istiyorsanız, ancak en az bir tane eklemeniz gerekir *.vsdir* şablonları dizinde dosya.
 
 ## <a name="group-project-items"></a>Proje öğeleri gruplandırma
  Şablon grupları klasörlerdeki içermesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu ağacında, bunları öğelerle şablon dizin alt dizinler olması gerekir. Zaman **Yeni Öğe Ekle** kullanıcılara iletişim kutusu görüntülenir, bunlar ayrıca alt klasörleri görebilir ve bunları proje öğelerini seçebilirsiniz.

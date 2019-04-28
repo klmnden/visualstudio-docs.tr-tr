@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419710"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663985"
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  Belirli dosyaları veya bileşenleri, Web'ten bilgisayarınızda kod yürütebilir.  
+> Belirli dosyaları veya bileşenleri, Web'ten bilgisayarınızda kod yürütebilir.  
   
  Giriş sayfası  
  IDE Web tarayıcısı açtığınızda görüntülenen sayfa ayarlar.  
@@ -61,7 +61,7 @@ ms.locfileid: "59663985"
   Internet Explorer seçeneklerini değiştirmek için tıklayın **Internet Özellikleri** iletişim kutusu. Bu iletişim kutusunda yapılan değişiklikler, iç Web tarayıcısı ve Internet Explorer'ın dışında (örneğin, Başlat menüsünden) Visual Studio IDE başlatılan örneklerini etkiler.  
   
 > [!NOTE]
->  Farklı, harici bir Web tarayıcısı kullanarak Internet Explorer'ın bir sürümü olan Visual Studio iç Web tarayıcısı, değiştirilecek şununla Gözat iletişim kutusunu kullanın.  
+> Farklı, harici bir Web tarayıcısı kullanarak Internet Explorer'ın bir sürümü olan Visual Studio iç Web tarayıcısı, değiştirilecek şununla Gözat iletişim kutusunu kullanın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   

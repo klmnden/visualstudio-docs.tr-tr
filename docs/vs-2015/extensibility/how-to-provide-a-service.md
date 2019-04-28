@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435917"
 ---
 # <a name="how-to-provide-a-service"></a>Nasıl yapılır: Hizmet Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak a
  Hizmetleri hakkında daha fazla bilgi için bkz. [hizmet temel bileşenleri](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  VSPackage kaldırılmak üzere olduğunda, Visual Studio tüm istekler VSPackage sağladığı hizmetler için teslim edilinceye kadar bekler. Bu hizmetler için yeni istek izin vermez. Değil açıkça çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> kaldırma hizmet iptal için yöntemi.  
+> VSPackage kaldırılmak üzere olduğunda, Visual Studio tüm istekler VSPackage sağladığı hizmetler için teslim edilinceye kadar bekler. Bu hizmetler için yeni istek izin vermez. Değil açıkça çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> kaldırma hizmet iptal için yöntemi.  
   
 #### <a name="implementing-a-service"></a>Hizmet uygulama  
   
@@ -91,7 +91,7 @@ VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak a
      Bu öznitelik kaydeder `SMyService` Visual Studio ile.  
   
     > [!NOTE]
-    >  Aynı ada sahip başka bir hizmete yerini alan bir hizmeti kaydetmek için kullanın <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Not, yalnızca bir geçersiz kılma bir hizmetin izin verilir.  
+    > Aynı ada sahip başka bir hizmete yerini alan bir hizmeti kaydetmek için kullanın <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Not, yalnızca bir geçersiz kılma bir hizmetin izin verilir.  
   
 ### <a name="adding-a-service"></a>Bir hizmet ekleme  
   
@@ -119,7 +119,7 @@ VSPackage diğer VSPackages kullanan hizmetleri sağlar. Bir hizmeti sağlamak a
     ```  
   
     > [!NOTE]
-    >  Visual Studio, bir hizmet isteği reddedebilir. VSPackage'ı başka bir hizmet zaten sağlıyorsa, bunu yapar.  
+    > Visual Studio, bir hizmet isteği reddedebilir. VSPackage'ı başka bir hizmet zaten sağlıyorsa, bunu yapar.  
   
 3. Artık hizmet alma ve onun yöntemlerini kullanın. Bu Başlatıcı göstereceğiz, ancak herhangi bir hizmet kullanmak istediğiniz hizmet alabilirsiniz.  
   

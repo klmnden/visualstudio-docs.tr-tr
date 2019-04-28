@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436872"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "59661912"
  Projenin genel özellikler ayarlamak için aşağıdaki seçenekleri kullanın.  
   
 > [!NOTE]
->  Bazı seçenekler yalnızca Windows Store uygulamalarında kullanılabilir.  
+> Bazı seçenekler yalnızca Windows Store uygulamalarında kullanılabilir.  
   
  **Çıkış yolu**  
  Projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yol görelidir; mutlak bir yol girerseniz, mutlak yol projeye kaydedilir. Bin\Debug varsayılan yoldur.  
@@ -62,7 +62,7 @@ ms.locfileid: "59661912"
  Davranış projesinde hata ayıklama özelliklerini ayarlamak için aşağıdaki seçenekleri kullanın.  
   
 > [!NOTE]
->  Bazı seçenekler yalnızca Windows Store uygulamalarında kullanılabilir.  
+> Bazı seçenekler yalnızca Windows Store uygulamalarında kullanılabilir.  
   
  **Hata ayıklayıcıyı başlatmak için**  
  Hata ayıklayıcı için varsayılan ana bilgisayar belirtir.  

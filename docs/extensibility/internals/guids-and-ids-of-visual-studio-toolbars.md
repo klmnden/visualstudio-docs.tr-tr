@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418448"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID'leri ve kimlikleri, Visual Studio araç çubukları
 Bu konu Visual Studio tümleşik geliştirme ortamında (IDE) dahil edilen araç çubuklarını GUID ve ID değerlerini numaralandırır ve gruplarını içerir. Bu değerleri tanımlanan *.vsct* Visual Studio SDK'ın bir parçası olarak yüklenen dosyalar. Daha fazla bilgi için [IDE tanımlı komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Birçok Visual Studio için kullanılabilir araç çubukları Visual Studio ve GUID tanımlanmaz ve kimlik değerleri ortak değildir. Bu konu Visual Studio SDK'da tanımlanan araç çubukları listeler *.vsct* dosyaları.
+> Birçok Visual Studio için kullanılabilir araç çubukları Visual Studio ve GUID tanımlanmaz ve kimlik değerleri ortak değildir. Bu konu Visual Studio SDK'da tanımlanan araç çubukları listeler *.vsct* dosyaları.
 
  Tanımlanan IDE nesneler ile çalışma hakkında daha fazla bilgi için *.vsct* dosyaları görmek [genişletmek menüler ve komutlar](../../extensibility/extending-menus-and-commands.md).
 
@@ -42,7 +42,7 @@ Bu konu Visual Studio tümleşik geliştirme ortamında (IDE) dahil edilen araç
 |-------------|--------|
 |Standart|IDM_VS_TOOL_STANDARD|
 |Derleme|IDM_VS_TOOL_BUILD|
-|Metin Düzenleyici|IDM_VS_TOOL_TEXTEDITOR|
+|Metin düzenleyici|IDM_VS_TOOL_TEXTEDITOR|
 |Hata ayıklama|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|
 |Hata ayıklama konumu|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|
 
@@ -108,7 +108,7 @@ Bu konu Visual Studio tümleşik geliştirme ortamında (IDE) dahil edilen araç
  Araç çubukları görüntülenebilir doğrudan IDE'de veya araç pencereleri gibi **Çözüm Gezgini**. Araç pencereleri içinde tanımlı değil çünkü *.vsct* dosyaları, araç penceresi araç çubukları sahip tanımlanmamış üst öğeleri. Bunun yerine, bunlar kodu yerleştirilir. Aşağıdaki tabloda, araç pencerelerini IDE içinde görünen araç çubuklarını ve içerdikleri komut gruplarını gösterir.
 
 > [!NOTE]
->  Araç çubukları ve grupları kullanma GUID `guidSHLMainMenu`, GUID:ID sözdizimi kullanılarak aksi belirtilmedikçe burada hariç. Araç için bir GUID belirtilmedikçe, bu araç çubuğundan Düzen grupları için de geçerlidir.
+> Araç çubukları ve grupları kullanma GUID `guidSHLMainMenu`, GUID:ID sözdizimi kullanılarak aksi belirtilmedikçe burada hariç. Araç için bir GUID belirtilmedikçe, bu araç çubuğundan Düzen grupları için de geçerlidir.
 
 |Araç penceresi|Araç Çubuğu|Gruplar|
 |-----------------|-------------|------------|

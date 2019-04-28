@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433260"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dosya Depolamayı ve XML Serileştirmeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Kullanıcı bir örneği kaydettiğinde veya *modeli*, içinde bir etki alanına
  Ayrıca, daha gelişmiş özelleştirme için program kodu yazabilirsiniz.  
   
 > [!NOTE]
->  Modelin belirli bir biçimde kaydetmek istediğiniz, ancak bu formdan yeniden gerekmez modelinden özel serileştirme düzeni yerine çıktı üretmek için metin şablonlarını kullanmayı düşünün. Daha fazla bilgi için [bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Modelin belirli bir biçimde kaydetmek istediğiniz, ancak bu formdan yeniden gerekmez modelinden özel serileştirme düzeni yerine çıktı üretmek için metin şablonlarını kullanmayı düşünün. Daha fazla bilgi için [bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Model ve diyagram dosyaları  
  Her model, genellikle iki dosyalarında kaydedilir:  

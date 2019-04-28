@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419731"
 ---
 # <a name="replace-in-files"></a>Dosyalarda Değiştir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082600"
 Dosyaları ** Değiştir, belirtilen kümenin dize veya ifade için dosyaları, kod arama ve bazılarını veya tümünü eşleştirmeler değiştirmek sağlar. Eşleşme bulundu ve gerçekleştirilen eylemler listelenen **sonuçları Bul** seçili penceresi **neden seçenekleri**.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Görüntülemek için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz **dosyalarda Değiştir** içinde **Bul ve Değiştir** penceresi.  
   
@@ -53,7 +53,7 @@ Dosyaları ** Değiştir, belirtilen kümenin dize veya ifade için dosyaları, 
  Seçilen seçeneği **konum** açılır listede belirler olmadığını **dosyalarda Değiştir** arar yalnızca şu anda etkin dosyalarda veya belirli klasörlerde depolanan tüm dosyaları arar. Listeden bir arama kapsamı seçin, bir klasör yolunu yazın veya tıklayın **Gözat (...)**  görüntülemek için düğmeyi **arama klasörlerini Seç** iletişim kutusu ve aranacak klasörler kümesi seçin. Doğrudan bir yolu da yazabilirsiniz **konum** kutusu.  
   
 > [!NOTE]
->  Varsa **konum** seçeneğe kullanıma kaynak kod denetiminden yalnızca yerel makinenize indirilen dosyanın sürüm aranır dosya arama neden olur.  
+> Varsa **konum** seçeneğe kullanıma kaynak kod denetiminden yalnızca yerel makinenize indirilen dosyanın sürüm aranır dosya arama neden olur.  
   
 ## <a name="find-options"></a>Bulma seçenekleri  
  Genişlet veya daralt **bulma seçeneklerini** bölümü. Aşağıdaki seçenekler seçilen veya temizlenen:  
@@ -88,7 +88,7 @@ Dosyaları ** Değiştir, belirtilen kümenin dize veya ifade için dosyaları, 
  Seçili olduğunda, tüm dosyaları geri alma veya değişiklikleri kaydetmek için değişiklik yapılmıştır açık kalır. Bellek kısıtlamaları değiştirme işleminden sonra açık kalabilir dosyalarının sayısını sınırlayabilir.  
   
 > [!CAUTION]
->  Kullanabileceğiniz **geri** düzenleme için açık kalması dosyaları. Bu seçenek seçilmezse düzenleme kapalı, kalacak için zaten bulunmayan dosyaları açmak ve hiçbir **geri** seçeneği kullanılabilir bu dosyaları.  
+> Kullanabileceğiniz **geri** düzenleme için açık kalması dosyaları. Bu seçenek seçilmezse düzenleme kapalı, kalacak için zaten bulunmayan dosyaları açmak ve hiçbir **geri** seçeneği kullanılabilir bu dosyaları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin bulma ve değiştirme](../ide/finding-and-replacing-text.md)   

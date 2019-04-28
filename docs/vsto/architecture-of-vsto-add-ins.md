@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440342"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO Eklentileri Mimarisi
   Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan VSTO eklentileri kararlılık ve güvenlik sağlayan mimari özelliklere sahiptir ve bunları Microsoft Office ile yakından çalışmaya etkinleştirin. Bu konu, VSTO eklentileri şu yönlerini açıklar:
@@ -44,7 +44,7 @@ ms.locfileid: "60091089"
  Her VSTO eklentisi birden çok VSTO eklentileri için bir uygulama yüklediyseniz, farklı uygulama etki alanında yüklenir. Başka bir deyişle, bir VSTO hatalı davranan eklentisi diğer VSTO başarısız olmasına eklentileri sebep olamaz. Ayrıca uygulama kapatıldığında tüm VSTO eklentisi derlemeleri bellekten olduğundan emin olun yardımcı olur. Uygulama etki alanları hakkında daha fazla bilgi için bkz. [uygulama etki alanları](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Visual Studio Office geliştirici araçları kullanarak oluşturduğunuz VSTO Add-Ins yalnızca bir son kullanıcı tarafından konak Microsoft Office uygulaması başlatıldığında kullanılmak üzere tasarlanmıştır. Uygulama, program aracılığıyla (örneğin, Otomasyon kullanılarak) başlatılır, VSTO eklentisi beklendiği gibi çalışmayabilir.
+> Visual Studio Office geliştirici araçları kullanarak oluşturduğunuz VSTO Add-Ins yalnızca bir son kullanıcı tarafından konak Microsoft Office uygulaması başlatıldığında kullanılmak üzere tasarlanmıştır. Uygulama, program aracılığıyla (örneğin, Otomasyon kullanılarak) başlatılır, VSTO eklentisi beklendiği gibi çalışmayabilir.
 
 ## <a name="AddinComponents"></a> VSTO eklentileri bileşenleri
  VSTO eklenti derlemesinin ana bileşeni olmakla birlikte, Microsoft Office uygulamaları nasıl keşfetmek ve VSTO eklentileri yük önemli bir rol oynar çeşitli bileşenler vardır.
@@ -70,7 +70,7 @@ ms.locfileid: "60091089"
  ![2007 office eklenti mimarisi](../vsto/media/office07addin.png "2007 Office eklenti mimarisi")
 
 > [!NOTE]
->  Office çözümlerinde hedef [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], konak uygulama tarafından nesne modeline çağrı PIA içine doğrudan çağırmak yerine çözüm derlemesindeki gömülü PIA tür bilgileri kullanılarak çözümler. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
+> Office çözümlerinde hedef [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], konak uygulama tarafından nesne modeline çağrı PIA içine doğrudan çağırmak yerine çözüm derlemesindeki gömülü PIA tür bilgileri kullanılarak çözümler. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Yükleme işlemi
  Bir kullanıcı bir uygulama başlattığında aşağıdaki adımlar oluşur:
@@ -100,7 +100,7 @@ ms.locfileid: "60091089"
      İsteğe bağlı olarak bir Microsoft Office özellik genişletilebilirlik arabirimi uygulayan bir nesne döndürerek genişletmek için bu yöntemi geçersiz kılabilirsiniz. Daha fazla bilgi için [genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelleştirme özellikleri](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ayrı için çağrılar yapar <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> konak uygulama tarafından desteklenen her bir genişletilebilirlik arabirimi için yöntemi. Yapılan ilk çağrı rağmen <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> yöntemi genellikle gerçekleşir çağırmadan önce `ThisAddIn_Startup` yöntemi, VSTO eklenti yapmamalıdır ne zaman hakkında varsayımlar <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> yöntemin çağrılacağı ya da kaç kez çağrılır.
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Ayrı için çağrılar yapar <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> konak uygulama tarafından desteklenen her bir genişletilebilirlik arabirimi için yöntemi. Yapılan ilk çağrı rağmen <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> yöntemi genellikle gerçekleşir çağırmadan önce `ThisAddIn_Startup` yöntemi, VSTO eklenti yapmamalıdır ne zaman hakkında varsayımlar <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> yöntemin çağrılacağı ya da kaç kez çağrılır.
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Çağrıları `ThisAddIn_Startup` VSTO eklenti yöntemi. Bu yöntem için varsayılan olay işleyicisini olan <xref:Microsoft.Office.Tools.AddInBase.Startup> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 

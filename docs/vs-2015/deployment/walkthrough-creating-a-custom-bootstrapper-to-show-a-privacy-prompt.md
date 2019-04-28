@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427137"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
     6. İçinde **Başlangıç nesnesi** açılan menüsünde, select **Module1**.  
   
        > [!NOTE]
-       >  Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > Uygulama Framework'ü devre dışı bırakma, Windows XP görsel stilleri, uygulama olayları, giriş ekranı, tek örnek uygulama ve diğer özellikleri devre dışı bırakır. Daha fazla bilgi için [uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Visual C# yalnızca geliştiriciler için:  
   
@@ -154,12 +154,12 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
 1. Adlı bir dizin oluşturmak **UpdateConsentDialog** SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft içinde.  
   
     > [!NOTE]
-    >  Bu klasör oluşturmak için yönetici ayrıcalıkları gerekir.  
+    > Bu klasör oluşturmak için yönetici ayrıcalıkları gerekir.  
   
 2. UpdateConsentDialog dizininde, tr adlı bir dizin oluşturun.  
   
     > [!NOTE]
-    >  Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
+    > Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. Adım: Product.xml bildirim dosyası oluşturmak için  
   
@@ -224,7 +224,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
 4. Yazılım Lisans koşulları EULA.rtf adlı bir belge oluşturun.  
   
     > [!NOTE]
-    >  Yazılım Lisans Koşulları'nı lisanslama, garanti, yükümlülükler ve yerel yasalarınız hakkında bilgi içermelidir. Bu dosyalar yerel ayara özgü, bu nedenle dosyanın MBCS ya da UNICODE karakterleri destekler bir biçimde kaydedildiğinden emin olun. İçeriği hakkında hukuk departmanınıza Yazılım Lisans Koşulları'nın başvurun.  
+    > Yazılım Lisans Koşulları'nı lisanslama, garanti, yükümlülükler ve yerel yasalarınız hakkında bilgi içermelidir. Bu dosyalar yerel ayara özgü, bu nedenle dosyanın MBCS ya da UNICODE karakterleri destekler bir biçimde kaydedildiğinden emin olun. İçeriği hakkında hukuk departmanınıza Yazılım Lisans Koşulları'nın başvurun.  
   
 5. Belge UpdateConsentDialog önyükleyici dizinindeki en alt kaydedin.  
   
@@ -244,7 +244,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
 4. Seçin **güncelleştirme onay iletişim kutusunu**.  
   
     > [!NOTE]
-    >  Güncelleştirme Onayı iletişim önkoşulları iletişim kutusunda görmek için Visual Studio'yu kapatıp gerekebilir.  
+    > Güncelleştirme Onayı iletişim önkoşulları iletişim kutusunda görmek için Visual Studio'yu kapatıp gerekebilir.  
   
 5. **Tamam**'ı tıklatın.  
   

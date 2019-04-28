@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438929"
 ---
 # <a name="memory-usage"></a>Bellek kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntıla
   Hata ayıklayıcının dışında bellek Aracı'nı kullanabilirsiniz. Bkz: [hata ayıklama olmadan bellek kullanımı](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
->  **Özel ayırıcı desteği** yerel bellek profili Oluşturucu çalışır ayırma toplayarak [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) sırasında çalışma zamanı tarafından yayınlanan olay verileri.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen.  Kendi ayırıcılar yazıyorsanız, yeni ayrılmış yığın için bir işaretçi döndüren tüm İşlevler'den bellek tasarlanabilir [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Bu örnekte myMalloc görüldüğü ayırıcı):  
+> **Özel ayırıcı desteği** yerel bellek profili Oluşturucu çalışır ayırma toplayarak [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) sırasında çalışma zamanı tarafından yayınlanan olay verileri.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen.  Kendi ayırıcılar yazıyorsanız, yeni ayrılmış yığın için bir işaretçi döndüren tüm İşlevler'den bellek tasarlanabilir [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Bu örnekte myMalloc görüldüğü ayırıcı):  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>Hata ayıklayıcısı ile bellek kullanımını analiz etme  
   
 > [!NOTE]
->  Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamaları etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, bellek kullanımı sekmesini seçin ve ardından **anlık görüntüleri etkinleştir**.  
+> Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamaları etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, bellek kullanımı sekmesini seçin ve ardından **anlık görüntüleri etkinleştir**.  
 >   
->  ![Anlık görüntüleri etkinleştir](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Anlık görüntüleri etkinleştir](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Durdur (kısayol tuşu: **Shift + F5 tuşlarına basarak**) ve hata ayıklamayı yeniden başlatın.  
+> Durdur (kısayol tuşu: **Shift + F5 tuşlarına basarak**) ve hata ayıklamayı yeniden başlatın.  
   
  Bellek durumu yakalamak istediğinizde seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu.  
   
@@ -53,7 +53,7 @@ Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntıla
   
 > [!TIP]
 > - Bellek karşılaştırmaları için bir temel oluşturmak için bir anlık görüntü hata ayıklama oturumunuzu başlangıcında alma göz önünde bulundurun.  
->   -   Başlangıç ve bitiş istediğiniz işlemin veya tam bulma işlemi Adımlama, kesme noktaları belirleyin, uygulamanızı sık ayırır ve belleği serbest bırakır ilginizi çeken bir işlem bellek profilini yakalamak için bu zor olabilir çünkü noktası bellek değişti.  
+>   - Başlangıç ve bitiş istediğiniz işlemin veya tam bulma işlemi Adımlama, kesme noktaları belirleyin, uygulamanızı sık ayırır ve belleği serbest bırakır ilginizi çeken bir işlem bellek profilini yakalamak için bu zor olabilir çünkü noktası bellek değişti.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Bellek anlık görüntü ayrıntılarını görüntüleme  
  Bellek kullanımı Özet tablonun satırlarını hata ayıklama oturumu sırasında yapılan anlık görüntüleri listelenmektedir.  
@@ -104,13 +104,13 @@ Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntıla
   
  **Türler görünümü** sayısı ve boyutu türleri anlık görüntüler.  
   
--   Örnekleri simgesini (![nesne türü sütununda örneği simgesi](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) anlık seçilen türe ait nesneleri hakkındaki bilgileri görüntülemek için seçilen bir tür.  
+- Örnekleri simgesini (![nesne türü sütununda örneği simgesi](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) anlık seçilen türe ait nesneleri hakkındaki bilgileri görüntülemek için seçilen bir tür.  
   
      **Örnekleri** Görünüm Seçili türünün her örneğinin görüntüler. Görüntüler oluşturma örneğinde sonuçlanan çağrı yığınını örneği seçerek **ayırma çağrı yığını** bölmesi.  
   
      ![Örnekler görünümü](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   Seçin **yığınlar görünümü** içinde **görünüm modu** seçili türü için ayırma yığını görmek için listenin.  
+- Seçin **yığınlar görünümü** içinde **görünüm modu** seçili türü için ayırma yığını görmek için listenin.  
   
      ![Yığınlar görünümü](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433351"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Modelinizi profiller ve stereotipler aracılığıyla özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio'da sınıfları ve bunları belirli amaçlarla özelleştirmek iç
  ![UML sınıf ile bir stereotip. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Bir model oluşturmak ve ardından model başkalarıyla paylaşmak için bir profil kullanıyorsanız, bunlar aynı profili kendi bilgisayarınızda yüklü olan sürece stereotipleri görme olanakları mümkün olmayacaktır.  
+> Bir model oluşturmak ve ardından model başkalarıyla paylaşmak için bir profil kullanıyorsanız, bunlar aynı profili kendi bilgisayarınızda yüklü olan sürece stereotipleri görme olanakları mümkün olmayacaktır.  
   
 ## <a name="related-topics"></a>İlgili Konular  
   

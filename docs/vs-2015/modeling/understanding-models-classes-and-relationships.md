@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424324"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
  Bir model kaydedildiğinde serileştirme özelleştirmediyseniz XML biçiminde dosyasına katıştırılmış öğeleri ebeveynleri yerleştirilir.  
   
 > [!NOTE]
->  Gömme devralma ile aynı değil. Gömme ilişkisi, alt, üst öğenin özelliklerini devralmaz. Gömme model öğeleri arasında bağlantı türüdür. Devralma sınıfları arasındaki bir ilişkidir ve model öğeleri arasında bağlantılar oluşturmaz.  
+> Gömme devralma ile aynı değil. Gömme ilişkisi, alt, üst öğenin özelliklerini devralmaz. Gömme model öğeleri arasında bağlantı türüdür. Devralma sınıfları arasındaki bir ilişkidir ve model öğeleri arasında bağlantılar oluşturmaz.  
   
 ### <a name="embedding-rules"></a>Kuralları ekleme  
  Her bir örnek modeli öğesinde modelin kökü dışında tam olarak bir gömme bağlantı hedefi olması gerekir.  

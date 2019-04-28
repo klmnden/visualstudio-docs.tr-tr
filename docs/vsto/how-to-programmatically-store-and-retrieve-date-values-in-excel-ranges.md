@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419290"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Nasıl yapılır: Program aracılığıyla Excel aralıklarında veri değerlerini metin formatında depolayabileceği ve
   Değerleri depolanıp bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.
@@ -34,7 +34,7 @@ ms.locfileid: "60082912"
  Tarihinde veya sonrasında 1/1/1900 Visual Studio'da Office geliştirme araçlarını kullanarak bir aralıkta kalan bir tarih değeri depolarsanız, OLE Otomasyon (OA) biçiminde depolanır. Kullanmalısınız <xref:System.DateTime.FromOADate%2A> OLE Otomasyon (OA) tarih değerini almak için yöntemi. Tarih 1/1/1900'den eskiyse, bir dize olarak depolanır.
 
 > [!NOTE]
->  OLE Otomasyonu tarihleri 1900 ilk iki ay boyunca Excel tarihleri farklıdır. Ayrıca farklar vardır, **1904 sistem tarihi** seçeneği denetlenir. Aşağıdaki kod örnekleri, bu farklılıkları içermez.
+> OLE Otomasyonu tarihleri 1900 ilk iki ay boyunca Excel tarihleri farklıdır. Ayrıca farklar vardır, **1904 sistem tarihi** seçeneği denetlenir. Aşağıdaki kod örnekleri, bu farklılıkları içermez.
 
 ## <a name="use-a-namedrange-control"></a>NamedRange denetimi kullanma
 

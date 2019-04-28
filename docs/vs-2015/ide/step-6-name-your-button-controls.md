@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442487"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme Denetimlerinizi Adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059974"
 Formunuzda tek bir PictureBox vardır. Onu eklediğinizde IDE otomatik olarak bunu adlı **pictureBox1**. Adlı tek bir CheckBox vardır **checkBox1**. Bir süre sonra biraz kod yazacaksınız ve bu kod CheckBox'a ve PictureBox'a başvuracaktır. Olmadığı için bu denetimlerin her birinden yalnızca biri gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.  
   
 > [!NOTE]
->  Adları Visual Basic'te, herhangi bir denetim adının varsayılan ilk harfi ilk harf olduğundan **PictureBox1**, **CheckBox1**ve benzeri.  
+> Adları Visual Basic'te, herhangi bir denetim adının varsayılan ilk harfi ilk harf olduğundan **PictureBox1**, **CheckBox1**ve benzeri.  
   
  Formunuzda dört düğme vardır ve IDE bunları adlı **button1**, **button2**, **button3**, ve **button4**. Yalnızca geçerli adlarına bakarak hangi düğmesi olduğunu bilemezsiniz **Kapat** düğmesi ve hangisinin **resim Göster** düğmesi. İşte bu nedenle düğme denetimlerinize daha açıklayıcı adlar vermek yararlıdır.  
   
@@ -36,7 +36,7 @@ Formunuzda tek bir PictureBox vardır. Onu eklediğinizde IDE otomatik olarak bu
 CloseButton adıyla Özellikler penceresi  
   
     > [!NOTE]
-    >  İçin düğmenizin adını değiştirmeyi denerseniz **closeButton**, Kapat ve düğme sözcükleri arasına bir boşluk koyun, IDE bir hata iletisi görüntüler: "Özellik değeri geçerli değil." Denetim adlarında boşluklara (ve diğer birkaç karaktere) izin verilmez.  
+    > İçin düğmenizin adını değiştirmeyi denerseniz **closeButton**, Kapat ve düğme sözcükleri arasına bir boşluk koyun, IDE bir hata iletisi görüntüler: "Özellik değeri geçerli değil." Denetim adlarında boşluklara (ve diğer birkaç karaktere) izin verilmez.  
   
 2. Diğer üç düğmeyi yeniden adlandır **Arkaplandüğmesi**, **Temizledüğmesi**, ve **showButton**. Denetim Seçici açılan listesini seçerek adları doğrulayabilirsiniz **özellikleri** penceresi. Yeni düğme adları görüntülenir.  
   
@@ -53,14 +53,14 @@ Visual C# koduyla Form1.cs sekmesi
      Kodun adı aradığınız `showButton_Click()`. İçin kod dosyasını açtığınızda IDE bunu formun koduna eklemiştir **showButton** düğmesi. Bir formda bir denetim için kod dosyasını açtığınızda, tasarım zamanında, zaten mevcut değilse denetim için kod oluşturulur. Olarak da bilinen bu kod, bir *yöntemi*, programınızı çalıştırıp denetimi - bu durumda, seçin çalışır **resim Göster** düğmesi.  
   
     > [!NOTE]
-    >  Bu öğreticide, otomatik olarak oluşturulan Visual Basic kodu parantez () arasındaki her şey kaldırılarak basitleştirilmiştir. Bu her gerçekleştiğinde, aynı kodu kaldırabilirsiniz. Programınız her iki şekilde çalışır. Öğreticiler kalanı için otomatik olarak oluşturulan herhangi bir kod mümkün olduğunda basitleştirilecektir.  
+    > Bu öğreticide, otomatik olarak oluşturulan Visual Basic kodu parantez () arasındaki her şey kaldırılarak basitleştirilmiştir. Bu her gerçekleştiğinde, aynı kodu kaldırabilirsiniz. Programınız her iki şekilde çalışır. Öğreticiler kalanı için otomatik olarak oluşturulan herhangi bir kod mümkün olduğunda basitleştirilecektir.  
   
 5. Windows Form Tasarımcısı sekmesini tekrar seçin (**Form1.cs [Design]** görselde C#, **Form1.vb [Design]** Visual Basic'te) ve kod dosyası açın **ResmiTemizle** formun koduna bunun için bir yöntem oluşturmak için düğme. Bu, kalan iki düğme için yineleyin. Her defasında IDE formun kod dosyasına yeni bir yöntem ekler.  
   
 6. Birden fazla yöntem eklemek için onay kutusu denetimi için kod dosyasını ekleyin için Windows Form Tasarımcısı'nda açın bir `checkBox1_CheckedChanged()` yöntemi. Bu yöntem, her kullanıcı seçer veya temizler onay kutusunu çağrılır.  
   
     > [!NOTE]
-    >  Bir programda çalışırken, Kod Düzenleyicisi'ni ve Windows Form Tasarımcısı arasında genellikle taşıyın. IDE, projenizde gezinmeyi kolaylaştırır. Kullanım **Çözüm Gezgini** çift tıklayarak Windows Form Tasarımcısı açmak için **Form1.cs** Visual C# veya **Form1.vb** Visual Basic veya menü çubuğunda, seçin**Görünümü**, **Tasarımcısı**.  
+    > Bir programda çalışırken, Kod Düzenleyicisi'ni ve Windows Form Tasarımcısı arasında genellikle taşıyın. IDE, projenizde gezinmeyi kolaylaştırır. Kullanım **Çözüm Gezgini** çift tıklayarak Windows Form Tasarımcısı açmak için **Form1.cs** Visual C# veya **Form1.vb** Visual Basic veya menü çubuğunda, seçin**Görünümü**, **Tasarımcısı**.  
   
      Aşağıdaki yeni kod, Kod düzenleyicisinde gördüğünüz gösterir.  
   

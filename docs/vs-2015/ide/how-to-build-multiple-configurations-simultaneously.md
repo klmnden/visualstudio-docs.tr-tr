@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a509c5a8fa46620e60fb5f1497c38d97ff6330
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6812395046222c3370e43bfbe75a0502d2cb9044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439281"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Nasıl yapılır: Aynı Anda Birden Fazla Yapılandırmayı Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Birden çok proje veya bile tüm yapı yapılandırmalarına aynı anda birçok 
 2. İçinde **derleme** onay kutularını bir projeyi derlemek istediğiniz yapılandırmaları için sütun seçin.  
   
     > [!TIP]
-    >  Çözüm yapı yapılandırması oluşturun veya düzenlemek için seçin **derleme**, **Configuration Manager** açmak için menü çubuğunda **Configuration Manager** iletişim kutusu. Bir çözüm için bir derleme yapılandırması düzenledikten sonra seçin **yeniden** düğmesine **Toplu derleme** derleme yapılandırmaları Çözümdeki projeler için tüm güncelleştirmek için iletişim kutusu.  
+    > Çözüm yapı yapılandırması oluşturun veya düzenlemek için seçin **derleme**, **Configuration Manager** açmak için menü çubuğunda **Configuration Manager** iletişim kutusu. Bir çözüm için bir derleme yapılandırması düzenledikten sonra seçin **yeniden** düğmesine **Toplu derleme** derleme yapılandırmaları Çözümdeki projeler için tüm güncelleştirmek için iletişim kutusu.  
   
 3. Seçin **derleme** veya **yeniden** belirttiğiniz yapılandırmaları olan bir projeyi derlemek için düğmeler.  
   

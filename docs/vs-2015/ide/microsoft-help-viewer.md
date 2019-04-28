@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430860"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Yardım Görüntüleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104336"
 Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayarınızda çeşitli ürün ve teknolojiler için içerik görüntüleyin.  
   
 > [!WARNING]
->  Visual Studio yüklediğinizde, Yardım Görüntüleyici alın. Yardım Görüntüleyicisi'nde yerine MSDN indirme sitesinde Yardım konuları okumaya başlamak için şu adrese gidin **yardımcı** Visual Studio'da seçim menüsünde **Yardım tercihini Ayarla**ve ardından **Yardımı'nda başlatın Görüntüleyici**. Visual Studio'nun belirli bir sürümü için Çevrimdışı Yardım konularını sürümü yalnızca son sürümünden sonra kullanılabilir.  
+> Visual Studio yüklediğinizde, Yardım Görüntüleyici alın. Yardım Görüntüleyicisi'nde yerine MSDN indirme sitesinde Yardım konuları okumaya başlamak için şu adrese gidin **yardımcı** Visual Studio'da seçim menüsünde **Yardım tercihini Ayarla**ve ardından **Yardımı'nda başlatın Görüntüleyici**. Visual Studio'nun belirli bir sürümü için Çevrimdışı Yardım konularını sürümü yalnızca son sürümünden sonra kullanılabilir.  
   
  Bunu, aşağıdakileri yapabilirsiniz:  
   

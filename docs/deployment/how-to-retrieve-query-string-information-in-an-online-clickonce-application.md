@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a3ad3a3ef4d93c8fb5567b385aa430e651a3f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406815"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: Çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma
 *Sorgu dizesi* soru biçiminde rastgele bilgi içeren işareti (?) ile başlayan bir URL kısmıdır *ad = değer*. Sahip olduğunuz varsayalım bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adlı uygulama `WindowsApp1` üzerinde barındıran `servername`, ve değişken için bir değer geçirmek istediğiniz `username` zaman uygulamasını başlatır. URL'niz aşağıdakine benzeyebilir:
@@ -30,19 +30,19 @@ ms.locfileid: "60095868"
  Aşağıdaki iki yordamdan kullanmayı gösteren bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sorgu dize bilgilerini almak için uygulama.
 
 > [!NOTE]
->  Bir dosya paylaşımına veya yerel dosya sistemi kullanmak yerine HTTP kullanarak, uygulamanız başlatıldığında, bir sorgu dizesinde yalnızca bilgi geçirebilirsiniz.
+> Bir dosya paylaşımına veya yerel dosya sistemi kullanmak yerine HTTP kullanarak, uygulamanız başlatıldığında, bir sorgu dizesinde yalnızca bilgi geçirebilirsiniz.
 
  İlk yordam gösterir nasıl, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, uygulama başlatıldığında bu değerleri okumak için küçük bir kod parçasını kullanabilirsiniz.
 
  Sonraki yordam nasıl yapılandırılacağı gösterilmektedir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama MageUI.exe kullanarak sorgu dizesi parametreleri kabul edebilir. Uygulamanızı yayımlayın olduğunda bunu gerekecektir.
 
 > [!NOTE]
->  Bu özelliği etkinleştirmek için bir karar almadan önce bu konunun ilerleyen bölümlerindeki "Güvenlik" bölümüne bakın.
+> Bu özelliği etkinleştirmek için bir karar almadan önce bu konunun ilerleyen bölümlerindeki "Güvenlik" bölümüne bakın.
 
  Nasıl oluşturulacağı hakkında daha fazla bilgi için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım kullanarak *Mage.exe* veya *MageUI.exe*, bkz: [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
->  .NET Framework 3.5 SP1'de başlayarak, komut satırı bağımsız değişkenleri için çevrimdışı geçirilecek mümkündür [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Uygulamaya bağımsız değişkenler sağlamak istiyorsanız, kısayolu ile parametrelere geçirebilirsiniz. MS APPREF uzantısı.
+> .NET Framework 3.5 SP1'de başlayarak, komut satırı bağımsız değişkenleri için çevrimdışı geçirilecek mümkündür [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Uygulamaya bağımsız değişkenler sağlamak istiyorsanız, kısayolu ile parametrelere geçirebilirsiniz. MS APPREF uzantısı.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Bir ClickOnce uygulamasında sorgu dize bilgilerini almak için
 
@@ -68,7 +68,7 @@ ms.locfileid: "60095868"
 4. Gelen **dosya** menüsünde **Kaydet**.
 
 > [!NOTE]
->  Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.
+> Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.
 
 ## <a name="robust-programming"></a>Güçlü programlama
  Sorgu dizesi parametrelerini kullanırken dikkat etmenizi uygulamanıza nasıl yüklü ve etkin. Uygulama, kullanıcının bilgisayarında Web'den veya bir ağ paylaşımından yüklemek için yapılandırılmışsa, kullanıcı uygulamayı yalnızca bir kez URL aracılığıyla etkinleştirecektir olasıdır. Bundan sonra kullanıcı kısayolunu kullanarak uygulamanızı genellikle etkinleştirecektir **Başlat** menüsü. Sonuç olarak, uygulamanızın yaşam süresi boyunca sorgu dizesi bağımsız değişkenleri yalnızca bir kez alması sağlanır. Gelecekte kullanım için kullanıcının makinede bu bağımsız değişkenler depolamayı seçerseniz, güvenli bir şekilde depolamak için sorumlu olursunuz.

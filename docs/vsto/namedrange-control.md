@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442442"
 ---
 # <a name="namedrange-control"></a>NamedRange denetimi
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Verilere bağlı benzersiz bir ada sahip ve olayları ortaya koyan bir aralığı denetimidir. Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60062644"
  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimlerini çalışma zamanında VSTO eklenti. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarına NamedRange denetimleri ekleme](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
->  Varsayılan olarak, çalışma sayfasında dinamik olarak oluşturulan adlandırılmış aralıklar sürdürülmeyen çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Varsayılan olarak, çalışma sayfasında dinamik olarak oluşturulan adlandırılmış aralıklar sürdürülmeyen çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri yalnızca belirli sayfalardaki aralıklarının oluşabilir. <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimleri, tüm sayfalara geçerli göreli adlara sahip olamaz ve bir çalışma kitabı (3-b aralıkları) iki veya daha fazla çalışma sayfalarına yayılamaz.
 

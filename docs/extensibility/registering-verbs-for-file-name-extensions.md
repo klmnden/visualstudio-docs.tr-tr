@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fc4083111d704859d07897bd3f54d4bca31d31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4a260f0458b6278abc6c515b616345463a0cafef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434729"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Dosya adı uzantıları için fiil kaydetme
 Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıcı bir dosyayı çift tıkladığında gerçekleşen tercih edilen bir eylem vardır. Bu eyleme karşılık gelen bir fiil, örneğin açık eylem bağlandığı tercih edilir.
@@ -38,7 +38,7 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
   Mümkün olduğunda, standart bir fiil kaydedin. Açık bir fiil en yaygın seçenektir. Dosyayı açıp dosyayı düzenlemeye arasında NET bir fark varsa düzenleme fiili kullanın. Örneğin, açma bir *.htm* dosyayı görüntüler, tarayıcı içinde düzenleme ise bir *.htm* dosyasını bir HTML Düzenleyicisi'ni başlatır. Standart fiiller ile işletim sistemi yerel yerelleştirilmiştir.
 
 > [!NOTE]
->  Standart fiiller kaydederken açık anahtar için varsayılan değer ayarlı değil. Varsayılan değer menüsünde görüntü dizesini içerir. Bu dize standart fiiller için işletim sistemi sağlar.
+> Standart fiiller kaydederken açık anahtar için varsayılan değer ayarlı değil. Varsayılan değer menüsünde görüntü dizesini içerir. Bu dize standart fiiller için işletim sistemi sağlar.
 
  Proje dosyaları, yeni bir örneğini başlatmak için kaydedilmelidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dosya açıldığında bir kullanıcı. Standart fiili kayıt için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje.
 
@@ -109,7 +109,7 @@ Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıc�
  Varsayılan fiili bir kullanıcı bir dosyayı Windows Gezgini'nde çift tıkladığında çalıştırılan bir eylemdir. İçin varsayılan değer olarak belirtilen eylem varsayılan eylem olan **HKEY_CLASSES_ROOT\\*ProgID*\Shell** anahtarı. Hiçbir değer belirtilmemişse, varsayılan eylem içinde belirtilen ilk fiili olan **HKEY_CLASSES_ROOT\\*ProgID*\Shell** anahtar listesi.
 
 > [!NOTE]
->  Varsayılan fiil için uzantı yan yana dağıtım olarak değiştirmeyi planlıyorsanız, yükleme ve kaldırma üzerindeki etkisini göz önünde bulundurun. Yükleme sırasında özgün varsayılan değerin üzerine yazılır.
+> Varsayılan fiil için uzantı yan yana dağıtım olarak değiştirmeyi planlıyorsanız, yükleme ve kaldırma üzerindeki etkisini göz önünde bulundurun. Yükleme sırasında özgün varsayılan değerin üzerine yazılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Yan yana dosya ilişkilendirmelerini yönetme](../extensibility/managing-side-by-side-file-associations.md)

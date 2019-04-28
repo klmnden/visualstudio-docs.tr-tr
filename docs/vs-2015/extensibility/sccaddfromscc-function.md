@@ -12,12 +12,12 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 346a036d38c7ee86daf30320c5f454f9e807f7d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432489"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` olan bir `char ***` işaretçi. Kaynak Denetimi Eklentisi, bir dosya adları, böylece liste bu API için standart bir biçimde geçirme için işaretçiler dizisi için bir işaretçi yerleştirir.  
   
 > [!NOTE]
->  İlk VSSCI API sürümlerini hedef projeye eklenen dosyaları göstermek için bir yol sağlamadı. Bu semantiği uyum sağlayacak şekilde `lplpFIleNames` parametresi geliştirilmiş bir ın/out parametresi bir output parametresi yerine yapma. Yalnızca tek bir dosya belirtilir, diğer bir deyişle, değer tarafından işaret edilen `lpnFiles` 1 ve ardından ilk öğesi = `lplpFileNames` hedef klasör içerir. Bu yeni semantiği, IDE çağrıları kullanılacak `SccSetOption` işleviyle `nOption`parametresini `SCC_OPT_SHARESUBPROJ`. Kaynak Denetimi Eklentisi semantiği desteklemiyor varsa, döndürür `SCC_E_OPTNOTSUPPORTED`. Bunu devre dışı bırakır kullanımını yapılması **kaynak denetiminden Ekle** özelliği. Bir eklentiyi destekler, **kaynak denetiminden Ekle** özelliği (`SCC_CAP_ADDFROMSCC`), yeni semantiği desteği gerekir ve dönüş `SCC_I_SHARESUBPROJOK`.  
+> İlk VSSCI API sürümlerini hedef projeye eklenen dosyaları göstermek için bir yol sağlamadı. Bu semantiği uyum sağlayacak şekilde `lplpFIleNames` parametresi geliştirilmiş bir ın/out parametresi bir output parametresi yerine yapma. Yalnızca tek bir dosya belirtilir, diğer bir deyişle, değer tarafından işaret edilen `lpnFiles` 1 ve ardından ilk öğesi = `lplpFileNames` hedef klasör içerir. Bu yeni semantiği, IDE çağrıları kullanılacak `SccSetOption` işleviyle `nOption`parametresini `SCC_OPT_SHARESUBPROJ`. Kaynak Denetimi Eklentisi semantiği desteklemiyor varsa, döndürür `SCC_E_OPTNOTSUPPORTED`. Bunu devre dışı bırakır kullanımını yapılması **kaynak denetiminden Ekle** özelliği. Bir eklentiyi destekler, **kaynak denetiminden Ekle** özelliği (`SCC_CAP_ADDFROMSCC`), yeni semantiği desteği gerekir ve dönüş `SCC_I_SHARESUBPROJOK`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)   

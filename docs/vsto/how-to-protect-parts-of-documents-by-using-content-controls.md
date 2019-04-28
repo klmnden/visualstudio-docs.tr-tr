@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441733"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma
   Belgenin bir bölümünü koruduğunuzda, kullanıcıların belgenin bu bölümü içeriğini silme veya değiştirme engeller. İçerik denetimlerini kullanarak bir Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:
@@ -73,7 +73,7 @@ ms.locfileid: "60103527"
 - İçerik denetimleri içeren bir alan korumak istediğiniz, ancak içerik denetimleri metin veya korumak istediğiniz diğer öğeleri değildir.
 
 > [!NOTE]
->  Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanıcılar bir katıştırılmış içerik denetimi düzenlemesini önlemek için **LockContents** denetiminin özelliği.
+> Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanıcılar bir katıştırılmış içerik denetimi düzenlemesini önlemek için **LockContents** denetiminin özelliği.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Tasarım zamanında bir alanı boyutundaki bir belgeyi korumak için
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103527"
 2. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
-    >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. İçinde **denetimleri** grubunda **grubu** açılan düğmesine ve ardından **grubu**.
 

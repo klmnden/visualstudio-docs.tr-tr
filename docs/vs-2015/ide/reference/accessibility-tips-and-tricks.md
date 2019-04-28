@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f60f952b5784b0901c89f0c1f846ac39e6212a6b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441094"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Erişilebilirlik İpuçları ve Püf Noktaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59660158"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yerleşik erişilebilirlik özelliği içerir, böylece kolayca klavyeden çalışabilir ve ekran okuyucular ya da diğer yardımcı teknoloji cihazlarını kullanın. Konu en iyi duruma getirmek için bazı öneriler içerir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] erişilebilirlik ve bunun yanı sıra bazı yararlı bir kısayol tuş birleşimleri için.  
   
 > [!NOTE]
->  Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydedin  
  Pencere düzeniniz, klavye eşleme şemasını ve diğer tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

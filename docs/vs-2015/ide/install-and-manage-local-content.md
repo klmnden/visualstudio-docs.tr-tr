@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412352"
 ---
 # <a name="install-and-manage-local-content"></a>Yerel İçeriği Yükleme ve Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
 1. Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.  
   
     > [!NOTE]
-    >  **Disk** seçeneği yöneticinize, içerik yükleme kaynağını değiştirmenizi engellerse kullanılabilir olmayacak. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).  
+    > **Disk** seçeneği yöneticinize, içerik yükleme kaynağını değiştirmenizi engellerse kullanılabilir olmayacak. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).  
   
 2. Aşağıdaki adımlardan birini uygulayın:  
   
@@ -60,7 +60,7 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
  İndirme ve içeriği yerel bilgisayarınıza yükleyin, Internet bağlantısı olmadan konuları görüntüleyebilirsiniz.  
   
 > [!IMPORTANT]
->  İçeriği yüklemek için yönetici izinleri olan bir hesapla oturum açmalısınız.  
+> İçeriği yüklemek için yönetici izinleri olan bir hesapla oturum açmalısınız.  
   
  Visual Studio IDE İngilizce dışında bir dile ayarlanmışsa İngilizce içeriği, yerelleştirilmiş içeriği veya her ikisini de yükleyebilirsiniz. Ancak, içerik yalnızca İngilizce sürümü yüklerseniz görünür ve **İngilizceyi dahil et içerik tüm gezinme sekmelerine ve F1 isteklerine dahil** onay kutusuna **Görüntüleyici seçenekleri** iletişim kutusu temizlenir.  
   
@@ -80,7 +80,7 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
  İstenmeyen içeriği bilgisayarınızdan kaldırarak disk alanından kazanabilirsiniz.  
   
 > [!IMPORTANT]
->  İçeriği kaldırmak için yönetici izinleri olmalıdır.  
+> İçeriği kaldırmak için yönetici izinleri olmalıdır.  
   
  İçerik, Visual Studio IDE İngilizce dışında bir dile ayarlanırsa, yerelleştirilmiş içeriği kaldırmak görünür ve **İngilizceyi dahil et içerik tüm gezinme sekmesindeki ve F1 isteklerine dahil** onay kutusuna **Görüntüleyici seçenekleri**  iletişim kutusu temizlenir.  
   
@@ -100,7 +100,7 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
  Durum çubuğu yüklü içeriğinizle güncelleştirmelerinin ne zaman kullanılabilir olduğunu gösterir.  
   
 > [!IMPORTANT]
->  Çevrimiçi güncelleştirmeleri otomatik olarak denetlemek için Yardım Görüntüleyicisi istiyorsanız açmalısınız **Görüntüleyici seçenekleri** iletişim kutusunu ve ardından **içerik güncelleştirmelerini denetlemek için çevrimiçi ol** onay kutusu.  
+> Çevrimiçi güncelleştirmeleri otomatik olarak denetlemek için Yardım Görüntüleyicisi istiyorsanız açmalısınız **Görüntüleyici seçenekleri** iletişim kutusunu ve ardından **içerik güncelleştirmelerini denetlemek için çevrimiçi ol** onay kutusu.  
   
 #### <a name="to-update-local-content"></a>Yerel içeriği güncelleştirmek için  
   
@@ -112,7 +112,7 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
  Yüklü içeriği yerel bilgisayarınızdan bir ağ paylaşımına veya başka bir bölüme, yerel bilgisayarınızda taşıyarak disk alanından kazanabilirsiniz.  
   
 > [!IMPORTANT]
->  İçeriği taşımak için yönetici izinleri olan bir hesapla oturum açmalısınız.  
+> İçeriği taşımak için yönetici izinleri olan bir hesapla oturum açmalısınız.  
   
 #### <a name="to-move-local-content"></a>Yerel içeriği taşımak için  
   

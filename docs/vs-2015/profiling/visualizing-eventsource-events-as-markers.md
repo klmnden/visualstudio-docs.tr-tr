@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431102"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource Olaylarını İşaretleyici Olarak Görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
  Olay çifti ile eşleşen için bir int cvSpanId alanını kullanın. Her bir çifti Başlat/Durdur olayların bir aralığı temsil eden değeri benzersiz olmalıdır. Genellikle eş zamanlı kod için bu eşitleme temellerine gibi gerektirir <xref:System.Threading.Interlocked.Exchange%2A> (CvSpanID için kullanılan değer) anahtarının doğru olduğundan emin olmak için.  
   
 > [!NOTE]
->  Kısmen aynı iş parçacığında üst üste veya bir iş parçacığında başlatmaya izin vermek için yayılma içine yerleştirmek için SpanID kullanılmasına izin verin ve diğer uçta desteklenmiyor.  
+> Kısmen aynı iş parçacığında üst üste veya bir iş parçacığında başlatmaya izin vermek için yayılma içine yerleştirmek için SpanID kullanılmasına izin verin ve diğer uçta desteklenmiyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Görselleştiricisi İşaretleyicileri](../profiling/concurrency-visualizer-markers.md)

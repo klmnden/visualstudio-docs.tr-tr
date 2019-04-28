@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429133"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
      Dağıtımınızı Authenticode sertifikası ile imzalaması gerekir. Visual Studio, MageUI.exe ya da MakeCert.exe ve Pvk2Pfx.exe araçlarını kullanarak bir sertifika oluşturabilir veya bir sertifika yetkilisi (CA) bir sertifika edinebilirsiniz. Güvenilir uygulama dağıtımını kullanmayı tercih ederseniz, tek seferlik bir sertifikayı tüm istemci bilgisayarlara yüklenmesini de gerçekleştirmeniz gerekir. Daha fazla bilgi için [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Ayrıca, dağıtımınızı bir sertifika yetkilisinden elde edebilirsiniz bir CNG sertifikasıyla oturum açabilirsiniz.  
+    > Ayrıca, dağıtımınızı bir sertifika yetkilisinden elde edebilirsiniz bir CNG sertifikasıyla oturum açabilirsiniz.  
   
 - Uygulama UAC bilgilerini içeren bir bildirimi yok emin olun.  
   
@@ -76,7 +76,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
 2. Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
   
     > [!NOTE]
-    >  Sürüm dağıtımınızın, uygulamanızın sürümünden farklı olabilir.  
+    > Sürüm dağıtımınızın, uygulamanızın sürümünden farklı olabilir.  
   
 3. Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
   
@@ -89,7 +89,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
     ```  
   
     > [!NOTE]
-    >  Nokta (.) eklediğinizden emin olun `-FromDirectory` seçeneğinden geçerli dizinini gösterir. Nokta eklemezseniz uygulama dosyalarınızı yolunu belirtmeniz gerekir.  
+    > Nokta (.) eklediğinizden emin olun `-FromDirectory` seçeneğinden geçerli dizinini gösterir. Nokta eklemezseniz uygulama dosyalarınızı yolunu belirtmeniz gerekir.  
   
 6. Uygulama bildirimini Authenticode sertifikanızla imzalayın. Değiştirin *mycert.pfx* ile sertifika dosyanızın yolu. Değiştirin *parola* , sertifika dosyası parolası ile.  
   
@@ -134,7 +134,7 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
 2. Yeni oluşturduğunuz dağıtım dizininde bir sürüm dizin oluşturun. Bu uygulamayı ilk kez ise, sürüm alt ad **1.0.0.0**.  
   
     > [!NOTE]
-    >  Dağıtımınızın sürümünden büyük olasılıkla uygulamanızı sürümünden farklıdır.  
+    > Dağıtımınızın sürümünden büyük olasılıkla uygulamanızı sürümünden farklıdır.  
   
 3. Tüm uygulama dosyalarını, yürütülebilir dosyalar, derlemeleri, kaynakları ve veri dosyaları dahil olmak üzere sürüm alt dizinine kopyalayın. Gerekirse, ek dosyaları içeren ek alt dizinleri oluşturabilirsiniz.  
   

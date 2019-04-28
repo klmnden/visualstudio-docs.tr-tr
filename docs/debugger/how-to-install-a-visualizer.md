@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389314"
 ---
 # <a name="how-to-install-a-visualizer"></a>Nasıl yapılır: Görselleştiriciyi yükleme
 Görselleştirici oluşturduktan sonra kullanıma sunulacak böylece görselleştiricisi yüklemelisiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Görselleştirici yükleme basit bir işlemdir.
 
 > [!NOTE]
->  UWP uygulamalarında, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.
+> UWP uygulamalarında, yalnızca standart metin, HTML, XML ve JSON görselleştiriciler desteklenir. Özel (kullanıcı tarafından oluşturulmuş) görselleştiriciler desteklenmez.
 
 ### <a name="to-install-a-visualizer"></a>Görselleştirici yüklemek için
 

@@ -1,5 +1,5 @@
 ---
-title: C/C++ İçin Kod Çözümleme Uyarıları
+title: C/C++ İçin Kod Analizi Uyarıları
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -19,13 +19,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540787"
 ---
-# <a name="code-analysis-for-cc-warnings"></a>C/C++ İçin Kod Çözümleme Uyarıları
+# <a name="code-analysis-for-cc-warnings"></a>C/C++ İçin Kod Analizi Uyarıları
 Bu bölüm C/C++ Kod Analizi uyarıları tarafından gerçekleştirilen hariç listeler [C++ temel yönergeleri denetleyicilerini](code-analysis-for-cpp-corecheck.md). Kod Analizi hakkında daha fazla bilgi için bkz. [/ analyze (kod çözümleme)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için Kod Analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.

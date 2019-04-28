@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407554"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent'ı kullanarak (C#, Visual Basic)
 
 Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da 2013 uygulamalarını hatalar, performans sorunlarını ve diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft Monitoring Agent**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile ilgili sorunlar hata ayıklamak için Visual Studio Enterprise (ancak Professional veya Community sürümlerini değil) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntemi verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](/azure/application-insights/) ve [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirir.
 
 > [!NOTE]
->  Hedef ortamı değiştirmeden kullanarak uzak makinelerde web, SharePoint, WPF ve Windows Form uygulamaları için IntelliTrace Tanılama ve yöntemi verileri toplayabilir **IntelliTrace collector**. Tek başına toplayıcıyı Microsoft Monitoring Agent çalışan daha büyük bir performans etkisi olur **İzleyici** modu. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Hedef ortamı değiştirmeden kullanarak uzak makinelerde web, SharePoint, WPF ve Windows Form uygulamaları için IntelliTrace Tanılama ve yöntemi verileri toplayabilir **IntelliTrace collector**. Tek başına toplayıcıyı Microsoft Monitoring Agent çalışan daha büyük bir performans etkisi olur **İzleyici** modu. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  System Center 2012 kullanıyorsanız, sorunlarla ilgili uyarı almak ve kayıtlı IntelliTrace günlük dosyalarının bağlantılarını içeren Team Foundation Server iş öğeleri oluşturmak için Microsoft İzleme Aracısı'nı İşlem Yöneticisi ile birlikte kullanın. Ardından, bu iş öğelerini daha ayrıntılı hata ayıklama için başkalarına atayabilirsiniz. Bkz: [Operations Manager'ı geliştirme süreçleri ile tümleştirme](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) ve [Microsoft İzleme Aracısı ile izleme](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -59,7 +59,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
      Bu dizini izlemeye başlamadan önce oluşturduğunuzdan emin olun. Uygulamanızı yavaşlatmayı önlemek için çok etkin değil yerel bir yüksek hızlı disk üzerinde bir konum seçin.
 
     > [!IMPORTANT]
-    >  IntelliTrace günlükleri kişisel ve hassas veriler içerebilir. Bu dizini yalnızca dosyalarla çalışması gereken kimliklerle sınırlayın. Şirketinizin gizlilik ilkelerini denetleyin.
+    > IntelliTrace günlükleri kişisel ve hassas veriler içerebilir. Bu dizini yalnızca dosyalarla çalışması gereken kimliklerle sınırlayın. Şirketinizin gizlilik ilkelerini denetleyin.
 
 5. İşlev düzeyinde ayrıntılı izleme yapmak veya SharePoint uygulamalarını izlemek için, web uygulamanızı veya SharePoint uygulamanızı barındıran uygulama havuzuna IntelliTrace günlük dizini için okuma ve yazma izni verin. [S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?](#FullPermissionsITLog)
 
@@ -257,7 +257,7 @@ Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yöntem
 3. Günlüğü güvenli paylaşılan klasöre kopyalayın ve Visual Studio Enterprise (ancak Professional veya Community sürümlerini) sahip bir bilgisayarda oturum açın.
 
    > [!IMPORTANT]
-   >  Kişisel ve hassas veriler içerebileceklerinden, IntelliTrace günlüklerini paylaşırken dikkatli olun. Bu günlüklere erişebilen kişilerin o verileri görme izni olduğundan emin olun. Şirketinizin gizlilik ilkelerini denetleyin.
+   > Kişisel ve hassas veriler içerebileceklerinden, IntelliTrace günlüklerini paylaşırken dikkatli olun. Bu günlüklere erişebilen kişilerin o verileri görme izni olduğundan emin olun. Şirketinizin gizlilik ilkelerini denetleyin.
 
    **Sonraki:** [Visual Studio Enterprise, kayıtlı olayları tanılama](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

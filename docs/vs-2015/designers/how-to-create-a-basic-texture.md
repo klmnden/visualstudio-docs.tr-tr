@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438407"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Nasıl yapılır: Temel doku oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
 5. Görüntü Düzenleyicisi araç çubuğunda **dolgu** aracı tuşuna basın ve Shift tuşunu basılı tutun ve herhangi bir noktaya görüntüyü seçin. Shift tuşunu kullanarak görüntüde rengini değiştirmek için dolgu rengi alfa değeri neden olur; Aksi takdirde, alfa değeri dolgu rengi renk görüntünün birlikte karıştırmak için kullanılır.  
   
    > [!IMPORTANT]
-   >  Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.  
+   > Bu adımda, önceki adımda, renk seçimi ile birlikte, temel görüntü için çizim "hedef merkezi" hedef dokuyu hazırlanır sağlar. Resmin saydam siyah doldurulur olduğunda — ve hedef kenarlığını siyah olduğundan — yumuşatma yapıt hedefi geçici bir çözüm olacaktır.  
   
 6. Görüntü Düzenleyicisi araç çubuğunda **elipsin** aracı.  
   
@@ -70,7 +70,7 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
 11. Kullanarak **elipsin** aracı, piksel Koordinattan bir daire çizin `(3, 3)` piksel koordinat için `(508, 508)`. Daha fazla daire çizmek için kolay, basın ve çizerken Shift tuşunu basılı tutun.  
   
     > [!NOTE]
-    >  Geçerli işaretçisi konumunu piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durum çubuğu.  
+    > Geçerli işaretçisi konumunu piksel koordinatlarını görüntülenir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durum çubuğu.  
   
 12. Arka plan rengini değiştirin. Ayarlama **R** için `44`, **G** için `165`, **B** için `211`, ve **A** için `255`.  
   

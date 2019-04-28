@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442478"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza İletişim Kutusu Bileşenleri Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
 1. Windows Form Tasarımcısı (Form1.cs [Design] veya Form1.vb [Design]) seçin ve ardından açın **iletişim kutuları** araç kutusu grubu.  
   
     > [!NOTE]
-    >  **İletişim kutuları** araç grubunda açma ve dosyaları kaydetmek, klasörlere göz atma ve yazı tiplerini ve renkleri seçmek için kullanılabilecek pek çok yararlı iletişim kutuları, açılan bileşeni vardır. Bu projede iki iletişim kutusu bileşeni kullanırsınız: **OpenFileDialog** ve **ColorDialog**.  
+    > **İletişim kutuları** araç grubunda açma ve dosyaları kaydetmek, klasörlere göz atma ve yazı tiplerini ve renkleri seçmek için kullanılabilecek pek çok yararlı iletişim kutuları, açılan bileşeni vardır. Bu projede iki iletişim kutusu bileşeni kullanırsınız: **OpenFileDialog** ve **ColorDialog**.  
   
 2. Adlı bir bileşen eklemek için **openFileDialog1** formunuza, çift **OpenFileDialog**. Adlı bir bileşen eklemek için **colorDialog1** formunuza, çift **ColorDialog** araç. (Bir sonraki Eğitmen adımında kullanın.) Windows Form Tasarımcısı (Resim Görüntüleyicisi formunun altında) aşağıdaki resimde gösterildiği gibi bir simge her biri, eklediğiniz iki iletişim kutusu bileşenleri için sahip alt kısmındaki bir alan görmelisiniz.  
   
@@ -50,7 +50,7 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
          **Filtre** özellik ayarları görüntülenecek dosya türlerinin çeşitlerini belirtir **Resim Seç** dosya iletişim kutusu.  
   
     > [!NOTE]
-    >  Bir örnek görmek için **Dosya Aç** iletişim kutusu farklı bir uygulama Not Defteri'ni veya Paint'i açın ve menü çubuğunda, **dosya**, **açın**. Nasıl olduğuna dikkat edin bir **dosya türü** altındaki aşağı açılan listeden. Yalnızca kullanılan **filtre** özelliğinde **OpenFileDialog** kurmak için bileşen. Ayrıca, nasıl **başlık** ve **filtre** özellikleri kalın **özellikleri** penceresi. IDE, varsayılan değerleri değiştirilmiş özellikleri size göstermek için yapar.  
+    > Bir örnek görmek için **Dosya Aç** iletişim kutusu farklı bir uygulama Not Defteri'ni veya Paint'i açın ve menü çubuğunda, **dosya**, **açın**. Nasıl olduğuna dikkat edin bir **dosya türü** altındaki aşağı açılan listeden. Yalnızca kullanılan **filtre** özelliğinde **OpenFileDialog** kurmak için bileşen. Ayrıca, nasıl **başlık** ve **filtre** özellikleri kalın **özellikleri** penceresi. IDE, varsayılan değerleri değiştirilmiş özellikleri size göstermek için yapar.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

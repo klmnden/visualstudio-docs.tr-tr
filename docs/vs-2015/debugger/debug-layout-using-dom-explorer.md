@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434115"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM Gezgini'ni kullanarak düzen hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  **Düzen** DOM Gezgini gösterir sekmesinde [CSS kutu modeli](http://go.microsoft.com/fwlink/?LinkID=238778) seçili öğe için bir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulaması, Windows Phone Store uygulaması veya Apache Cordova için Visual Studio araçları kullanarak oluşturulan bir uygulama. Bu kutu modeli görsel bir temsilini tanımlamak ve öğelerin görünümünü etkileyen Düzen ilgili değerleri değiştirmek için kullanabilirsiniz.  
   
 > [!TIP]
->  Yaptığınız değişiklikler **Düzen** sekmesini kalıcı değildir. Kaynak kodunuzu kalıcı değişiklikler yapın ve ardından kullanarak uygulamanızı yenileyin **Yenile Windows uygulama** hata ayıklama araç çubuğu düğmesini (yalnızca Windows Store ve Windows Phone Store uygulamaları). Bu şekilde, hata ayıklayıcı yeniden başlatmayı önleyebilirsiniz.  
+> Yaptığınız değişiklikler **Düzen** sekmesini kalıcı değildir. Kaynak kodunuzu kalıcı değişiklikler yapın ve ardından kullanarak uygulamanızı yenileyin **Yenile Windows uygulama** hata ayıklama araç çubuğu düğmesini (yalnızca Windows Store ve Windows Phone Store uygulamaları). Bu şekilde, hata ayıklayıcı yeniden başlatmayı önleyebilirsiniz.  
   
  Kutusu modelinde gösterilmeyen düzen özelliklerini değiştirmek için DOM Gezgini'ni kullanmak için bkz: [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md) ve [DOM Gezgini'ni kullanarak hata ayıklama CSS stillerinde](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 7. 4. bölüm, kaydırma veya flicking açın.  
   
     > [!TIP]
-    >  Seçimleri ve CSS stillerinde yaptığınız değişikliklerin sonuçlarını hemen görmek için Visual Studio penceresinde yanındaki Phone öykünücü veya benzetici sağ konumu.  
+    > Seçimleri ve CSS stillerinde yaptığınız değişikliklerin sonuçlarını hemen görmek için Visual Studio penceresinde yanındaki Phone öykünücü veya benzetici sağ konumu.  
   
      4. Bölüm yüklediğinde, daha düşük görüntüleri doğru görünmüyor görebilirsiniz. Her öğe görüntü Kes (sol yarısına eksik olan) yarıya görünür.  
   
 8. Seçin ve Visual Studio'ya **öğe seçin** DOM Gezgini (veya Ctrl + B tuşuna basın). Böylece seçim modu değişir ve öğeyi tıklatarak seçebilirsiniz ve uygulama da önplana gelir. Tek tıklatmadan sonra mod geri döner.  
   
     > [!TIP]
-    >  HTML öğelerini doğrudan DOM Gezgini'nde seçmek için ok tuşlarını ya da diğer yöntemleri kullanabilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
+    > HTML öğelerini doğrudan DOM Gezgini'nde seçmek için ok tuşlarını ya da diğer yöntemleri kullanabilirsiniz. Öğeleri seçme hakkında daha fazla bilgi için bkz. [hızlı başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Phone öykünücü veya benzetici, gri sağ yarısında yarıya inmiştir görüntülerden birini seçin. Vurgulama seçilen öğe, Windows Phone öykünücüsü'nde burada gösterildiği gibi görünür:  
   
      ![DOM öğesini seçerek](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Bunlardan birini önce kutusu DOM öğeleri vurgulama göstermek için öğelerin üzerine geldiğinizde Simülatörünü destekler. Windows Phone öykünücüsü bu desteklemez.  
+    > Bunlardan birini önce kutusu DOM öğeleri vurgulama göstermek için öğelerin üzerine geldiğinizde Simülatörünü destekler. Windows Phone öykünücüsü bu desteklemez.  
   
      DOM öğesini seçtiğinizde, DOM Gezgini ilgili IMG öğesi Visual Studio'da otomatik olarak seçer. DOM Gezgini'nde seçilen öğenin şöyle görünür:  
   
@@ -114,7 +114,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 11. Sol kenar boşluğu kural nasıl uygulandığını görmek için **hesaplanan** sekmesinde ve sol kenar boşluğu kuralı altına bakın. Bu kural 5em değeriyle ayarlanmış, ancak hesaplanan değer 66.66px ya da 146.66px, hedef cihazınıza bağlı olduğunu görebilirsiniz.  
   
     > [!TIP]
-    >  **Hesaplanan** sekme gösterir sol kenar boşluğu kural kümesi `..hubpage .hub. section4 .sub-image-row img` CSS Seçici, hub.css içinde bulunamadı. Bu Tanıtım uygulamada düzeltme yapmak gerek duyduğunuz olmasıdır.  
+    > **Hesaplanan** sekme gösterir sol kenar boşluğu kural kümesi `..hubpage .hub. section4 .sub-image-row img` CSS Seçici, hub.css içinde bulunamadı. Bu Tanıtım uygulamada düzeltme yapmak gerek duyduğunuz olmasıdır.  
   
      Ayrıca **Düzen** Düzen değerleri değişiklikleri test etmek için sekmesinde.  
   
