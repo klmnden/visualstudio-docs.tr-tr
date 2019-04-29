@@ -37,7 +37,7 @@ Yalnızca özel bir anlamı, kullanıldıkları bağlam içinde oluşturulduysa 
 |@|Öğe listeleri başvurmak için kullanılan oturum sırasında.|
 |(|Açık parantez, listelerinde kullanılır.|
 |)|Kapatma parantezleri, listelerinde kullanılır.|
-|\`| Kesme işareti (veya değer çizgisi), koşullar ve diğer ifadeleri kullanılır.|
+|\` Kesme işareti (veya değer çizgisi), koşullar ve diğer ifadeleri kullanılır.|
 |;|Noktalı virgül, liste ayırıcı.|
 |?|Soru işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|
 |*|Yıldız işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|
