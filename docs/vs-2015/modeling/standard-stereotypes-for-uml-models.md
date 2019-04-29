@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411742"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML modelleri için standart stereotipler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
 2. Özellikler penceresinde ayarlayın **profilleri** özelliğine boş.  
   
     > [!NOTE]
-    >  Model veya paketin içinde öğelerin hiçbiri bu profilin stereotiplerini kullanıyorsanız yalnızca bir profili kesebilir.  
+    > Model veya paketin içinde öğelerin hiçbiri bu profilin stereotiplerini kullanıyorsanız yalnızca bir profili kesebilir.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Bir model öğesine bir stereotip uygulamak için  
   
@@ -67,7 +67,7 @@ Okuyucu veya makine işlemek için ek bilgi sağlamak için UML model öğelerin
      «Ayraç» içinde model öğesi çoğu öğe türleri için Seçili stereotipler görünür.  
   
     > [!NOTE]
-    >  Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
+    > Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
   
 3. Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
   

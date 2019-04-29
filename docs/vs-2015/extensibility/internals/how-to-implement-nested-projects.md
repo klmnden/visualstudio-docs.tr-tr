@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435231"
 ---
 # <a name="how-to-implement-nested-projects"></a>Nasıl yapılır: İç İçe Projeler Uygulama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Oluşturduğunuz var. iç içe proje türü uygulanması gereken bir birkaç ek 
 1. Tümleşik geliştirme ortamı (IDE) çağırarak üst projenin proje dosyası ve başlangıç bilgileri yükler <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> arabirimi. Ana proje oluşturulur ve çözüme eklenir.  
   
    > [!NOTE]
-   >  Bu noktada, ana proje alt projeler oluşturulmadan önce oluşturulması gerektiğinden, iç içe proje oluşturmak ana proje işleminde çok erken. Bu sıra ana proje alt projeler için ayarları uygulayabilirsiniz ve alt projeleri, gerekirse üst projelerinden bilgileri elde edebilirsiniz. Üzerinde kaynak kodu denetimi (SCC) ve Çözüm Gezgini gibi istemciler tarafından gerekli değilse bu sırasıdır.  
+   > Bu noktada, ana proje alt projeler oluşturulmadan önce oluşturulması gerektiğinden, iç içe proje oluşturmak ana proje işleminde çok erken. Bu sıra ana proje alt projeler için ayarları uygulayabilirsiniz ve alt projeleri, gerekirse üst projelerinden bilgileri elde edebilirsiniz. Üzerinde kaynak kodu denetimi (SCC) ve Çözüm Gezgini gibi istemciler tarafından gerekli değilse bu sırasıdır.  
   
     Ana proje beklemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> iç içe geçmiş (alt) projede veya projelerde oluşturmadan önce IDE tarafından çağrılacak yöntem.  
   
@@ -57,7 +57,7 @@ Oluşturduğunuz var. iç içe proje türü uygulanması gereken bir birkaç ek 
     Zaten yoksa, ana proje iç içe her proje için bir GUID çağırarak oluşturur `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` bir COM API, oluşturulacak bir GUID olduğunda çağrılır. Daha fazla bilgi için `CoCreateGuid` ve MSDN Kitaplığı'nda GUID.  
+   > `CoCreateGuid` bir COM API, oluşturulacak bir GUID olduğunda çağrılır. Daha fazla bilgi için `CoCreateGuid` ve MSDN Kitaplığı'nda GUID.  
   
     Ana proje bu GUID IDE'de açıldığında bir sonraki açışınızda alınacak kendi proje dosyasında depolar. 4. adım, arama için ilgili daha fazla bilgi için bkz. `AddVirtualProjectEX` alınacak `guidProjectID` alt proje için.  
   
@@ -66,7 +66,7 @@ Oluşturduğunuz var. iç içe proje türü uygulanması gereken bir birkaç ek 
      Bu noktada üst ve alt projeleri program aracılığıyla örneği olduğundan, iç içe projeler için özellikleri ayarlayabilirsiniz.  
   
     > [!NOTE]
-    >  Yalnızca iç içe geçmiş projeden bağlam bilgisi alır, ancak üst projeyi her bağlam için bu öğe olup olmadığını kontrol ederek sorabilir <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Bu şekilde, tek bir iç içe projeler için ek dinamik Yardım öznitelikler ve özel menü seçenekleri ekleyebilirsiniz.  
+    > Yalnızca iç içe geçmiş projeden bağlam bilgisi alır, ancak üst projeyi her bağlam için bu öğe olup olmadığını kontrol ederek sorabilir <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Bu şekilde, tek bir iç içe projeler için ek dinamik Yardım öznitelikler ve özel menü seçenekleri ekleyebilirsiniz.  
   
 10. Hiyerarşi için Çözüm Gezgini'nde görüntüleme çağrısı ile yerleşik <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> yöntemi.  
   
@@ -91,6 +91,6 @@ Oluşturduğunuz var. iç içe proje türü uygulanması gereken bir birkaç ek 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğeler ekleme yeni öğe Ekle iletişim kutuları](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)   
  [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437948"
 ---
 # <a name="gpu-usage"></a>GPU Kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
 - Bir GPU ve sürücü gerekli zamanlama araçları desteği.  
   
   > [!NOTE]
-  >  Desteklenen donanım ve sürücüler hakkında daha fazla bilgi için bkz. [donanım ve sürücü desteği](#hwsupport) bu belgenin sonunda.  
+  > Desteklenen donanım ve sürücüler hakkında daha fazla bilgi için bkz. [donanım ve sürücü desteği](#hwsupport) bu belgenin sonunda.  
   
   Grafik tanılama gereksinimleri hakkında daha fazla bilgi için bkz. [Başlarken](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
     ![Kullanmak istediğiniz Tanılama Araçları'nı seçin. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Tüm performans ve tanılama araçları, aynı anda kullanılabilir.  
+   > Tüm performans ve tanılama araçları, aynı anda kullanılabilir.  
   
 3. Mavi seçin **Başlat** seçtiğiniz Araçları altındaki uygulamanızı çalıştırmak için performans ve tanılama hub'ın altındaki düğmesi.  
   
@@ -110,7 +110,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
 |**İş parçacığı kimliği**|Olay içinden gelen iş parçacığı kimliği.|  
   
 > [!IMPORTANT]
->  Windows 8.1 için olay attribution gereklidir. Ayrıca, GPU veya sürücü gereken İzleme özelliklerini desteklemiyorsa, tüm olaylar 'unattributed' görünür. GPU sürücünüzü güncelleştirin ve bu sorunla karşılaşırsanız, yeniden denemek emin olun. Daha fazla bilgi için [donanım ve sürücü desteği](#hwsupport) aşağıda.  
+> Windows 8.1 için olay attribution gereklidir. Ayrıca, GPU veya sürücü gereken İzleme özelliklerini desteklemiyorsa, tüm olaylar 'unattributed' görünür. GPU sürücünüzü güncelleştirin ve bu sorunla karşılaşırsanız, yeniden denemek emin olun. Daha fazla bilgi için [donanım ve sürücü desteği](#hwsupport) aşağıda.  
   
 ## <a name="gpu-usage-settings"></a>GPU kullanım ayarları  
  GPU kullanımı aracı, uygulama başladıktan hemen sonra bilgi toplamak başlangıç yerine bilgi profil oluşturma koleksiyonu ertelemek için yapılandırabilirsiniz. Profil bilgilerini boyutunu önemli olabileceğinden, uygulamanızın performans yavaşlamalara sonraya görünmez bildiğinizde yararlıdır.  
@@ -126,7 +126,7 @@ Visual Studio performans ve tanılama hub'ında GPU kullanımı aracı daha iyi 
      ![GPU kullanım verisi toplama başladığında, yapılandırma](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Profil oluşturma erteleme Direct3D 12 uygulamalar için şu anda desteklenmiyor.  
+> Profil oluşturma erteleme Direct3D 12 uygulamalar için şu anda desteklenmiyor.  
   
  GPU kullanımı aracı altında uygulamanızı çalıştırdığınızda ek bir bağlantı koleksiyonu profil bilgilerini bu ayarı kullanarak ertelediğinizde, GPU kullanımı aracı pencerenin alt kısmında kullanılabilir hale gelir. Profil bilgilerini toplamaya başlamak için seçin **Başlat** bağlantısını **başlangıç ek toplama ayrıntılı GPU kullanım verilerini** ileti.  
   

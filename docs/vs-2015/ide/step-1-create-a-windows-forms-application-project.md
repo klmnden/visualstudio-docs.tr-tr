@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442002"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Windows Forms Uygulaması Projesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Yeni Proje iletişim kutusu
 4. Artık Visual Studio arabiriminde görmeniz gereken aşağıda gösterilmiştir.  
   
     > [!NOTE]
-    >  Pencere düzeniniz tam olarak bu çizim gibi görünmeyebilir. Kesin pencere düzeni, Visual Studio, kullandığınız programlama diline ve diğer etkenlere sürümüne bağlıdır. Ancak, tüm üç pencerenin de görüntülendiğini doğrulamanız gerekir.  
+    > Pencere düzeniniz tam olarak bu çizim gibi görünmeyebilir. Kesin pencere düzeni, Visual Studio, kullandığınız programlama diline ve diğer etkenlere sürümüne bağlıdır. Ancak, tüm üç pencerenin de görüntülendiğini doğrulamanız gerekir.  
   
      ![IDE penceresi](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 IDE penceresi  
@@ -57,7 +57,7 @@ IDE penceresi
     - **Özellikler penceresi** Bu pencerede diğer pencerelerde seçtiğiniz öğelerin özelliklerini değiştirebilirsiniz. Form1 seçerseniz, örneğin, alt başlık ayarlayarak değiştirebileceğiniz **metin** özelliğini değiştirebilirsiniz arka plan rengi ayarlayarak **Backcolor** özelliği.  
   
     > [!NOTE]
-    >  Üst satırı **Çözüm Gezgini** gösterir **çözüm 'Pictureviewer olarak' (1 proje)**, Visual Studio çözüm için oluşturduğunuz anlamına gelir. Bir çözüm birden fazla proje içerebilir ancak şu an için yalnızca bir proje içeren çözümlerle çalışacaksınız.  
+    > Üst satırı **Çözüm Gezgini** gösterir **çözüm 'Pictureviewer olarak' (1 proje)**, Visual Studio çözüm için oluşturduğunuz anlamına gelir. Bir çözüm birden fazla proje içerebilir ancak şu an için yalnızca bir proje içeren çözümlerle çalışacaksınız.  
   
 6. Menü çubuğunda, **dosya**, **Tümünü Kaydet**.  
   

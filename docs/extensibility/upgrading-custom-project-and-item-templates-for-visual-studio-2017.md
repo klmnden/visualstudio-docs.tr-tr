@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434211"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Özel proje ve öğe şablonları Visual Studio 2017 için yükseltin
 
@@ -53,7 +53,7 @@ Diğer (kullanıcı olmayan) konumları için konumu ve diğer özellikleri de �
     3. Visual Studio'yu yeniden açın. Beklenen konumda şablonunuzu bulmanız gerekir.
 
     > [!NOTE]
-    >  Visual Studio genişletilebilirlik proje şablonları kayıt defteri anahtarı mevcut olduğunda kullanılabilir değil. Kayıt defteri anahtarı silmelisiniz (ve yeniden **devenv /installvstemplates**) bunları kullanmak için.
+    > Visual Studio genişletilebilirlik proje şablonları kayıt defteri anahtarı mevcut olduğunda kullanılabilir değil. Kayıt defteri anahtarı silmelisiniz (ve yeniden **devenv /installvstemplates**) bunları kullanmak için.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Proje ve öğe şablonlarını dağıtmak için diğer öneriler
 

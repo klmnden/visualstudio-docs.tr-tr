@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443356"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
      ![Bu simge, Unity için VSTU bağlı gösterir. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Tak simgeyi bir onay işareti gösterir, zaten bir Unity örneğine bağlı olursunuz.  
+> Tak simgeyi bir onay işareti gösterir, zaten bir Unity örneğine bağlı olursunuz.  
   
  **Unity örneği Seç** iletişim bağlanabilirsiniz her bir Unity örneğine hakkında bazı bilgiler görüntüler.  
   
@@ -136,7 +136,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
  Bu Unity örneği üzerinden iletişim UDP yuva bağlantı noktası numarası.  
   
 > [!IMPORTANT]
->  Unity ve Unity örneği için Visual Studio Araçları bir UDP ağ yuva iletişim kuran olduğundan, bu konuda, güvenlik duvarınızı isteyebilir. Böyle bir durumda VSTU ve Unity iletişim kurabilmesi için bağlantıyı yetkilendirmek zorunda kalırsınız.  
+> Unity ve Unity örneği için Visual Studio Araçları bir UDP ağ yuva iletişim kuran olduğundan, bu konuda, güvenlik duvarınızı isteyebilir. Böyle bir durumda VSTU ve Unity iletişim kurabilmesi için bağlantıyı yetkilendirmek zorunda kalırsınız.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Projenize Unity Player'da hata ayıklama  
  Unity için Visual Studio Araçları, Unity Editor çalışmadığında bir oynatıcı veya platforma özel sorunların hatalarını ayıklamak için çalışan doğrudan Unity uygulamanıza bağlanabilirsiniz.  
@@ -154,7 +154,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
 - Unity Web Player'da bağlam menüsünde seçin **yayın kanal** emin olun **geliştirme** seçeneği etkinleştirilir.  
   
   > [!IMPORTANT]
-  >  Unity 4.2 ve sonraki sürümlerinde, **yayın kanal** bağlam menüsü öğesi, yalnızca Web Oynatıcısı bağlam menüsünde kullanılabilir olduğunda **Alt** bağlam menüsü açıldığında tuşuna basıldığında. Web Oynatıcısı Mac OS X üzerinde çalışıyorsa, basın **seçeneği** bunun yerine anahtar.  
+  > Unity 4.2 ve sonraki sürümlerinde, **yayın kanal** bağlam menüsü öğesi, yalnızca Web Oynatıcısı bağlam menüsünde kullanılabilir olduğunda **Alt** bağlam menüsü açıldığında tuşuna basıldığında. Web Oynatıcısı Mac OS X üzerinde çalışıyorsa, basın **seçeneği** bunun yerine anahtar.  
   
   Son olarak, hata ayıklamak istediğiniz bir Unity örneğine bağlı olduğunuzdan emin olun. Bunu nasıl yapacağınız hakkında daha fazla bilgi için bkz: [Unity için Visual Studio bağlanma](#connecting-visual-studio-to-unity) bölümü.  
   
@@ -162,7 +162,7 @@ Bu bölümde, Visual Studio Araçları Unity'nın tümleştirme ve verimlilik ö
  Geliştirme işlevleri diğer projeleri ile kolayca paylaşılabilir böylece birçok Unity geliştiricileri dış DLL'leri kod bileşenlerinin yazıyorsunuz. Unity için Visual Studio Araçları, Unity projenizdeki başka bir kod ile sorunsuz bir şekilde bu DLL'lerdeki kodun hatalarını ayıklamak kolaylaştırır.  
   
 > [!NOTE]
->  Şu anda yalnızca destekler Unity için Visual Studio Araçları DLL'leri yönetilen. C++ ile yazılmış olanlar gibi DLL'leri, yerel kod hata ayıklamayı desteklemiyor.  
+> Şu anda yalnızca destekler Unity için Visual Studio Araçları DLL'leri yönetilen. C++ ile yazılmış olanlar gibi DLL'leri, yerel kod hata ayıklamayı desteklemiyor.  
   
  Burada açıklanan senaryo kaynak kodu seçtiğinizi varsaydığını unutmayın; diğer bir deyişle, geliştirme veya kendi birinci taraf kodu yeniden kullanarak veya bir üçüncü taraf kitaplığına kod ve Unity projenizde bir DLL olarak dağıtmayı planladığınız kaynağı sahip. Bu senaryoda, kaynak kodu içermeyen bir DLL'nin hata ayıklama açıklamaz.  
   

@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852992b3e7553ee07b2834d7253cd41dd46f4e8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415901"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata Ayıklama için SDK Yardımcıları
 Bu işlevler ve bildirimleri C++'da uygulama, hata ayıklama altyapısı, ifade değerlendiricilerini ve sembol sağlayıcıları için genel yardımcı işlevlerdir.
 
 > [!NOTE]
->  Şu anda bu işlevler ve bildirimleri'hiçbir yönetilen sürümü vardır.
+> Şu anda bu işlevler ve bildirimleri'hiçbir yönetilen sürümü vardır.
 
 ## <a name="overview"></a>Genel Bakış
  Visual Studio tarafından kullanılacak sırayla hata ayıklama altyapısı, ifade değerlendiricilerini ve sembol sağlayıcıları için kayıtlı olmaları gerekir. Bu kayıt defteri alt anahtarları ve girişleri, aksi takdirde "ölçümleri ayarlama". bilinen ayarlayarak yapılır Aşağıdaki genel işlevleri, bu ölçümleri güncelleştirme işlemini kolaylaştırmak için tasarlanmıştır. Bu işlevler tarafından güncelleştirilir her bir kayıt defteri alt anahtarı düzenini öğrenmek için kayıt defteri konumlarının bölümüne bakın.
@@ -237,7 +237,7 @@ HRESULT EnumMetricSections(
  Ölçümleri okuma ve kayıt defterinde, özellikle de yazılmış `VisualStudio` alt.
 
 > [!NOTE]
->  Çoğu zaman, HKEY_LOCAL_MACHINE anahtarı ölçümleri yazılır. Ancak, bazen HKEY_CURRENT_USER hedef anahtar olacaktır. Her iki anahtarı Dbgmetric.lib işler. Bir ölçüm alırken HKEY_CURRENT_USER arar. ilk ve HKEY_LOCAL_MACHINE. Bunu bir ölçüm ayarlanırken, bir parametre kullanmak için hangi üst düzey anahtar belirtir.
+> Çoğu zaman, HKEY_LOCAL_MACHINE anahtarı ölçümleri yazılır. Ancak, bazen HKEY_CURRENT_USER hedef anahtar olacaktır. Her iki anahtarı Dbgmetric.lib işler. Bir ölçüm alırken HKEY_CURRENT_USER arar. ilk ve HKEY_LOCAL_MACHINE. Bunu bir ölçüm ayarlanırken, bir parametre kullanmak için hangi üst düzey anahtar belirtir.
 
  *[kayıt defteri anahtarı]*\
 
@@ -269,7 +269,7 @@ HRESULT EnumMetricSections(
 |*[ölçüm değeri]*|Ölçüm için atanan değer. Değeri (dize, sayı, vb.) olmamalıdır türüne ölçüme göre değişir.|
 
 > [!NOTE]
->  Tüm GUID biçiminde depolanır `{GUID}`. Örneğin: `{123D150B-FA18-461C-B218-45B3E4589F9B}`
+> Tüm GUID biçiminde depolanır `{GUID}`. Örneğin: `{123D150B-FA18-461C-B218-45B3E4589F9B}`
 
 ### <a name="debug-engines"></a>Hata ayıklama altyapıları
  Aşağıdaki kayıt defteri hata ayıklama altyapıları ölçümlerinin kuruluştur. `Engine` hata ayıklama altyapısı için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]* yukarıdaki kayıt defteri alt ağacı içinde.
@@ -348,7 +348,7 @@ HRESULT EnumMetricSections(
  İfade değerlendirici ölçümleri kayıt defterinde organizasyonu verilmiştir. `ExpressionEvaluator` ifade değerlendirici ölçüm türü adı ve karşılık gelen *[ölçüm türü]*.
 
 > [!NOTE]
->  Ölçüm türü için `ExpressionEvaluator` tüm ölçüm değişiklikler ifade değerlendiricilerini için uygun bir ifade değerlendirici ölçüm işlevleri aracılığıyla geçer varsayılır gibi dbgmetric.h içinde tanımlı değil (düzenini `ExpressionEvaluator` alt biraz anahtarıdır Ayrıntılar içinde dbgmetric.lib gizlenir şekilde, karmaşık).
+> Ölçüm türü için `ExpressionEvaluator` tüm ölçüm değişiklikler ifade değerlendiricilerini için uygun bir ifade değerlendirici ölçüm işlevleri aracılığıyla geçer varsayılır gibi dbgmetric.h içinde tanımlı değil (düzenini `ExpressionEvaluator` alt biraz anahtarıdır Ayrıntılar içinde dbgmetric.lib gizlenir şekilde, karmaşık).
 
  `ExpressionEvaluator`\
 

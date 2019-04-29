@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440992"
 ---
 # <a name="layer-diagrams-guidelines"></a>Katman diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
  Aşağıdaki adımlar, geliştirme süreci içinde katman diyagramları kullanma hakkında genel bakış sağlar. Bu konunun sonraki bölümlerinde, her bir adım hakkında daha ayrıntılı açıklanmaktadır. Yeni bir tasarım geliştiriyorsanız varolan koda başvuran adımları atlayın.  
   
 > [!NOTE]
->  Bu adımlar, yaklaşık sırada görünür. Büyük olasılıkla, görevleri çakışma, bunları kendi durumunuza uygun olarak yeniden sıralayabilir ve bunları, projenizdeki her yineleme başlangıcında yeniden ziyaret isteyeceksiniz.  
+> Bu adımlar, yaklaşık sırada görünür. Büyük olasılıkla, görevleri çakışma, bunları kendi durumunuza uygun olarak yeniden sıralayabilir ve bunları, projenizdeki her yineleme başlangıcında yeniden ziyaret isteyeceksiniz.  
   
 1. [Katman diyagramı oluşturma](#Create) tüm uygulama veya içerdiği bir katman.  
   
@@ -59,7 +59,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
  Bir katman diyagramı modelleme projesinin içinde oluşturulmalıdır. Varolan bir modelleme projesine yeni bir katman diyagramı eklemek, yeni modelleme projesi için katman diyagramı oluşturun veya aynı modelleme projesinin içinde varolan katman diyagramını kopyalayın.  
   
 > [!IMPORTANT]
->  Değil eklemek, sürükleyin veya varolan katman diyagramını bir modelleme projesinden başka bir modelleme projesine veya çözüm içindeki başka bir konuma kopyalayın. Bu şekilde kopyalanan katman diyagramı, diyagramı değiştirseniz bile orijinal diyagram aynı başvuruları olacaktır. Bu katman doğrulama düzgün çalışmasını engeller ve diyagramı açmaya çalışırken kayıp öğeler gibi diğer sorunları veya diğer hataları neden olabilir.  
+> Değil eklemek, sürükleyin veya varolan katman diyagramını bir modelleme projesinden başka bir modelleme projesine veya çözüm içindeki başka bir konuma kopyalayın. Bu şekilde kopyalanan katman diyagramı, diyagramı değiştirseniz bile orijinal diyagram aynı başvuruları olacaktır. Bu katman doğrulama düzgün çalışmasını engeller ve diyagramı açmaya çalışırken kayıp öğeler gibi diğer sorunları veya diğer hataları neden olabilir.  
   
  Bkz: [kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
  Genel bir kural olarak, örneğin, "Sunu" veya "Hizmetler", işlevlerine göre adı katmanları. Yapıtlar yakından bağlıysa bunları aynı katmanda yerleştirin. Yapıtlar ayrı olarak güncelleştirilen ya da ayrı uygulamalarında kullanılan, bunları farklı katmanlara yerleştirin. Katmanlama desenler hakkında bilgi almak için desenler ve uygulamalar sitesini ziyaret edin [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Belirli türdeki katmanlara bağlayabilirsiniz yapıtlar vardır, ancak katman diyagramına karşı doğrulamayı desteklemez. Yapıt doğrulamayı destekleyip desteklemediğini görmek için **Katman Gezgini** incelemek için **doğrulamayı destekler** yapıt bağlantı özelliği. Bkz: [Katmanlar arasındaki mevcut bağımlılıklara Bul](#Generate).  
+> Belirli türdeki katmanlara bağlayabilirsiniz yapıtlar vardır, ancak katman diyagramına karşı doğrulamayı desteklemez. Yapıt doğrulamayı destekleyip desteklemediğini görmek için **Katman Gezgini** incelemek için **doğrulamayı destekler** yapıt bağlantı özelliği. Bkz: [Katmanlar arasındaki mevcut bağımlılıklara Bul](#Generate).  
   
  Kod Haritaları, bilmediğiniz bir uygulamayı güncelleştirirken de oluşturabilir. Bu diyagramları Kodu Keşfetme sırasında desenleri ve bağımlılıkları keşfetmenize yardımcı olabilir. Ad alanlarını ve sınıfları, genellikle de varolan katmanlarla keşfetmek için Çözüm Gezgini'ni kullanın. Bu kod yapıları katmanlara katman diyagramları için Çözüm Gezgini'nden sürükleyerek atayın. Ardından, kodu güncelleştirmeye veya uygulamanızı tasarım ile tutarlı kalmasını sağlamak amacıyla katman diyagramları da kullanabilirsiniz.  
   
@@ -85,7 +85,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
  Bir bağımlılık, bir katman ile ilişkili yapının başka bir katman ile ilişkili bir yapıya başvurusu olduğu yerde var olur. Örneğin, bir katmandaki sınıf başka bir katmanda sınıfı olan değişkeni bildirir. Varolan bağımlılıklara ters mühendislik tarafından bulabilir bunları.  
   
 > [!NOTE]
->  Bağımlılıklarda belirli türdeki yapılar için ters mühendislik uygulanamaz. Örneğin, hiçbir bağımlılıkta metin dosyasına bağlı katmandan veya katmana ters mühendislik uygulanmaz. Hangi yapıların ters mühendislik uygulayabileceğiniz bağımlılıkları olduğunu görmek için bir veya birden çok katmana sağ tıklayın ve ardından **bağlantıları görüntüle**. İçinde **Katman Gezgini**, inceleyin **doğrulamayı destekler** sütun. Bağımlılıklar, bu sütunda görüntülenir yapıtlar için ters mühendislik olmayacak **False**.  
+> Bağımlılıklarda belirli türdeki yapılar için ters mühendislik uygulanamaz. Örneğin, hiçbir bağımlılıkta metin dosyasına bağlı katmandan veya katmana ters mühendislik uygulanmaz. Hangi yapıların ters mühendislik uygulayabileceğiniz bağımlılıkları olduğunu görmek için bir veya birden çok katmana sağ tıklayın ve ardından **bağlantıları görüntüle**. İçinde **Katman Gezgini**, inceleyin **doğrulamayı destekler** sütun. Bağımlılıklar, bu sütunda görüntülenir yapıtlar için ters mühendislik olmayacak **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Katmanlar arasında ters mühendislik Varolan bağımlılıkları için  
   
@@ -155,7 +155,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
   Bu hataları çözmek için doğrulama sırasında daha fazla hata görünmeyene kadar kodu güncelleştirin. Bu genellikle yinelemeli bir işlemdir. Bu hatalar hakkında daha fazla bilgi için bkz. [katman diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Geliştirme veya kodu yeniden düzenleyin, katman diyagramına bağlamak için yeni yapılar olabilir. Ancak, var olan ad alanları temsil eden katmanlarına sahip olduğunda bu örneğin, gerekli olmayabilir ve yeni kod, daha fazla malzeme yalnızca bu ad alanlarına ekler.  
+> Geliştirme veya kodu yeniden düzenleyin, katman diyagramına bağlamak için yeni yapılar olabilir. Ancak, var olan ad alanları temsil eden katmanlarına sahip olduğunda bu örneğin, gerekli olmayabilir ve yeni kod, daha fazla malzeme yalnızca bu ad alanlarına ekler.  
   
  Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmaların bazılarını gizlemek isteyebilirsiniz. Örneğin, zaten çözdüğünüz veya özel senaryonuzla ilgili olmayan hataları gizlemek isteyebilirsiniz. Hatayı gizlediğinizde, bir iş öğesi oturum açmak için iyi bir uygulamadır [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Bu görevi gerçekleştirmek için bkz: [katman diyagramları ile kodu doğrulama](../modeling/validate-code-with-layer-diagrams.md).  
   

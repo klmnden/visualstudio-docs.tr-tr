@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438735"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları
   Office çalışma zamanı için Visual Studio 2010 Araçları üç şekilde yükleyebilirsiniz:
@@ -46,7 +46,7 @@ ms.locfileid: "56638614"
  Visual Studio'da Office uzantıları için Office geliştirici araçları yüklediğinizde [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] her zaman geliştirme bilgisayarına yüklenir. .NET Framework 3.5 için Office uzantılarını, yalnızca .NET Framework 3.5 zaten geliştirme bilgisayarında mevcutsa yüklenir. Yükledikten sonra .NET Framework 3.5 yüklerseniz [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], oluşturduğunuz bir Office projesi, ilk kez .NET Framework 3.5 hedefi .NET Framework 3.5 için Office uzantılarını çalışma zamanı otomatik olarak yükler.
 
 > [!WARNING]
->  Kullanarak .NET Framework 3. 5'i hedefleyen bir Office projesi oluşturulamıyor [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] veya üzeri.
+> Kullanarak .NET Framework 3. 5'i hedefleyen bir Office projesi oluşturulamıyor [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] veya üzeri.
 
  Office Geliştirici Araçları'nı yükleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
