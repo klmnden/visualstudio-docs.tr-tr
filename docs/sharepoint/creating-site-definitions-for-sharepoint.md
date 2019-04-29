@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580986"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint için site tanımları oluşturma
   SharePoint Site tanımı projesi içinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oluşturmanızı sağlar bir *site tanım*, yeni bir SharePoint sitesi için bir temel olarak görev gören. Bu tanımları yalnızca görünümünü ve davranışını SharePoint sitesi, ancak aynı zamanda varsayılan içeriğini ve işlevleri belirler. Tanımında önceden yapılandırılmış listeler, içerik türleri, Olay alıcıları, görüntüleri ve diğer öğeleri koyabilirsiniz. Örneğin, SharePoint, BLOG gibi bazı site tanımları içerir. BLOG site tanımını temel alan bir site oluşturduğunuzda, site, listeler, Web Bölümleri ve bir blog sitesi gerektiren diğer öğeleri içerir.

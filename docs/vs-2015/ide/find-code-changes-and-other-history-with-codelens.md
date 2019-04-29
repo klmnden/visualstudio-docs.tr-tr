@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa18bed0ff4dfa24de114f0b15c109dfba777c56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383942"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60055242"
 -Kod düzenleyiciden çıkmadan ne olduğunu Bul sırada, çalışmasına odaklı kalmak. Başvuruları ve değişiklikleri kod, bağlı hataları, iş öğeleri, kod incelemeleri ve birim testlerini bulun.  
   
 > [!NOTE]
->  CodeLens, yalnızca Visual Studio Enterprise ve Visual Studio Professional sürümlerinde kullanılabilir. Visual Studio Community Edition'da kullanılabilir değil.  
+> CodeLens, yalnızca Visual Studio Enterprise ve Visual Studio Professional sürümlerinde kullanılabilir. Visual Studio Community Edition'da kullanılabilir değil.  
   
  Nerede ve nasıl kodunuzu ayrı bölümlerini çözümünüzde kullanılan bakın:  
   
@@ -124,7 +124,7 @@ ms.locfileid: "60055242"
 #### <a name="find-incoming-changes-from-other-branches"></a>Diğer dallardan değişiklikleri bulun  
  ![CodeLens: Kod değişikliklerini diğer dalları Bul](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
- .. Bu hata düzeltmesi olarak Geliştirme dalında burada biçiminde yazarsınız:  
+ Bu hata düzeltmesi olarak Geliştirme dalında burada biçiminde yazarsınız:  
   
  ![CodeLens: Değişikliği iade başka bir dalla](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   

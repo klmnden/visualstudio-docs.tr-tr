@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416498"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolay
  Çözüm Gezgini içinde kısayol menüsünü açın **UIMap.uitest** ve **açın**. Kodlanmış UI testi kodlanmış UI Test Düzenleyicisi'nde görüntülenir. Şimdi, görüntüleyin ve kayıtlı yöntemleri, Eylemler ve karşılık gelen denetimlerinde kodlanmış UI testi düzenleyin.  
   
 > [!TIP]
->  Bir yöntem içinde bulunan bir UI eyleminden seçtiğinizde **UI eylemlerini** karşılık gelen denetimin bölmesinde vurgulanır. UI eylemi veya denetim özelliklerini de değiştirebilirsiniz.  
+> Bir yöntem içinde bulunan bir UI eyleminden seçtiğinizde **UI eylemlerini** karşılık gelen denetimin bölmesinde vurgulanır. UI eylemi veya denetim özelliklerini de değiştirebilirsiniz.  
   
  *Göremiyorum* kodlanmış UI Test Düzenleyicisi.  
  2012'den önceki Visual Studio Enterprise sürümü kullanıyor olabilirsiniz. Kodlanmış UI Test Düzenleyicisi, aynı zamanda bir MSDN aboneliği ile Visual Studio 2010 Özellik Paketi 2'de kullanılabilir. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Özellik Paketi 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -220,4 +220,4 @@ Denetim özelliklerini düzenleme
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Kodlanmış UI testi verilerle oluşturma](../test/creating-a-data-driven-coded-ui-test.md)   
  [Mevcut eylem kaydından bir kodlanmış UI testi oluşturma](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [İzlenecek yol: Kodlanmış UI Testi Oluşturma, Düzenleme ve Sürdürme](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
