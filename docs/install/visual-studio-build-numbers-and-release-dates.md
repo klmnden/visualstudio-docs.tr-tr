@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/19/2019
+ms.date: 04/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,14 +14,53 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 20130075ec285cf8d71c40831871c5eeeb342f52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 157b6065b09cdb4282e2b65250a3fea24f13f750
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346842"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
+
+::: moniker range="vs-2019"
+
+## <a name="visual-studio-2019"></a>Visual Studio 2019
+
+Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tarihleri tarihe listeler.
+
+| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Önizleme 2 | 23 Nisan 2019 | 16.1.28822.285 |
+| 16.0.2 | Sürüm | 18 Nisan 2019 | 16.0.28803.202 |
+| 16.1.0 | Önizleme 1 | 10 Nisan 2019 | 16.1.28809.33 |
+| 16.0.1 | Sürüm | 9 Nisan 2019 | 16.0.28803.156 |
+| 16.0.1 | Önizleme 1 | 9 Nisan 2019 | 16.0.28803.156 |
+| 16.0.0 | Sürüm | 2 Nisan 2019 | 16.0.28729.10 |
+| 16.0.0 | Preview 5 | 2 Nisan 2019 | 16.0.28729.10 |
+| 16.0.0 | Sürüm Adayı 4 (RC.4) | 26 Mart 2019 | 16.0.28721.148 |
+| 16.0.0 | 4.4 Önizleme | 26 Mart 2019 | 16.0.28721.148 |
+| 16.0.0 | Sürüm Adayı 3 (RC.3) | 19 Mart 2019 | 16.0.28714.193 |
+| 16.0.0 | 4.3 Önizleme | 19 Mart 2019 | 16.0.28714.193 |
+| 16.0.0 | Sürüm Adayı 2 (RC.2) | 12 Mart 2019 | 16.0.28711.60 |
+| 16.0.0 | 4.2 Önizleme | 12 Mart 2019 | 16.0.28711.60 |
+| 16.0.0 | Sürüm Adayı 1 Svc1 (RC.1 Svc1) | 6 Mart 2019 | 16.0.28705.295 |
+| 16.0.0 | 4.1 Svc1 Önizleme | 6 Mart 2019 | 16.0.28705.295 |
+| 16.0.0 | Sürüm Adayı 1 (RC.1) | 5 Mart 2019 | 16.0.28701.123 |
+| 16.0.0 | Önizleme 4.1 | 5 Mart 2019 | 16.0.28701.123 |
+| 16.0.0 | Sürüm Adayı (RC) | 27 Şubat 2019 | 16.0.28625.133 |
+| 16.0.0 | Preview 4 | 27 Şubat 2019 | 16.0.28625.133 |
+| 16.0.0 | Preview 3 | 13 Şubat 2019 | 16.0.28608.199 |
+| 16.0.0 | Önizleme 2.2 | 5 Şubat 2019 | 16.0.28602.52 |
+| 16.0.0 | 2.1 önizleme | 31 Ocak 2019 | 16.0.28529.54 |
+| 16.0.0 | Önizleme 2 | 23 Ocak 2019 | 16.0.28522.59 |
+| 16.0.0 | Önizleme 1.1 | 10 Aralık 2018'e | 16.0.28408.50 |
+| 16.0.0 | Önizleme 1 | 4 Aralık 2018'e | 16.0.28329.73 |
+
+> [!NOTE]
+> Önceki sürümü için yayın tarihleri ve yapı numaraları listesi için bkz. [Visual Studio 2017 derleme numaraları ve yayın tarihleri](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -182,44 +221,6 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 > [!NOTE]
 > Derleme numaraları ve yayın tarihleri için Visual Studio'nun yeni sürümü hakkında daha fazla bilgi için bkz. [Visual Studio 2019 derleme numaraları ve yayın tarihleri](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019) sayfası.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-## <a name="visual-studio-2019"></a>Visual Studio 2019
-
-Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tarihleri tarihe listeler.
-
-| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
-| ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.0.2 | Sürüm | 18 Nisan 2019 | 16.0.28803.202 |
-| 16.1.0 | Önizleme 1 | 10 Nisan 2019 | 16.1.28809.33 |
-| 16.0.1 | Sürüm | 9 Nisan 2019 | 16.0.28803.156 |
-| 16.0.1 | Önizleme 1 | 9 Nisan 2019 | 16.0.28803.156 |
-| 16.0.0 | Sürüm | 2 Nisan 2019 | 16.0.28729.10 |
-| 16.0.0 | Preview 5 | 2 Nisan 2019 | 16.0.28729.10 |
-| 16.0.0 | Sürüm Adayı 4 (RC.4) | 26 Mart 2019 | 16.0.28721.148 |
-| 16.0.0 | 4.4 Önizleme | 26 Mart 2019 | 16.0.28721.148 |
-| 16.0.0 | Sürüm Adayı 3 (RC.3) | 19 Mart 2019 | 16.0.28714.193 |
-| 16.0.0 | 4.3 Önizleme | 19 Mart 2019 | 16.0.28714.193 |
-| 16.0.0 | Sürüm Adayı 2 (RC.2) | 12 Mart 2019 | 16.0.28711.60 |
-| 16.0.0 | 4.2 Önizleme | 12 Mart 2019 | 16.0.28711.60 |
-| 16.0.0 | Sürüm Adayı 1 Svc1 (RC.1 Svc1) | 6 Mart 2019 | 16.0.28705.295 |
-| 16.0.0 | 4.1 Svc1 Önizleme | 6 Mart 2019 | 16.0.28705.295 |
-| 16.0.0 | Sürüm Adayı 1 (RC.1) | 5 Mart 2019 | 16.0.28701.123 |
-| 16.0.0 | Önizleme 4.1 | 5 Mart 2019 | 16.0.28701.123 |
-| 16.0.0 | Sürüm Adayı (RC) | 27 Şubat 2019 | 16.0.28625.133 |
-| 16.0.0 | Preview 4 | 27 Şubat 2019 | 16.0.28625.133 |
-| 16.0.0 | Preview 3 | 13 Şubat 2019 | 16.0.28608.199 |
-| 16.0.0 | Önizleme 2.2 | 5 Şubat 2019 | 16.0.28602.52 |
-| 16.0.0 | 2.1 önizleme | 31 Ocak 2019 | 16.0.28529.54 |
-| 16.0.0 | Önizleme 2 | 23 Ocak 2019 | 16.0.28522.59 |
-| 16.0.0 | Önizleme 1.1 | 10 Aralık 2018'e | 16.0.28408.50 |
-| 16.0.0 | Önizleme 1 | 4 Aralık 2018'e | 16.0.28329.73 |
-
-> [!NOTE]
-> Önceki sürümü için yayın tarihleri ve yapı numaraları listesi için bkz. [Visual Studio 2017 derleme numaraları ve yayın tarihleri](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
 
 ::: moniker-end
 

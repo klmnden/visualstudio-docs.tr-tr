@@ -1,8 +1,8 @@
 ---
-title: İçeri veya dışarı aktarmayı Yükleme Yapılandırması
+title: Yükleme yapılandırmasını içeri veya dışarı aktarma
 titleSuffix: ''
 description: Visual Studio'da içeri/dışarı aktarma yapılandırma özelliğini kullanmayı öğrenin
-ms.date: 04/15/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,14 +18,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed380f2f83f3f64d7bd6bc4c19338dc3725d63a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118302"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346768"
 ---
-# <a name="import-or-export-installation-configurations"></a>İçeri veya dışarı aktarmayı Yükleme Yapılandırması
+# <a name="import-or-export-installation-configurations"></a>Yükleme yapılandırmasını içeri veya dışarı aktarma
 
 Visual Studio, bir yükleme yapılandırma dosyası kullanarak kuruluşunuz genelinde yapılandırabilirsiniz. Bunu yapmak için yalnızca iş yükü ve bileşen bilgileri .vsconfig dosya Visual Studio Yükleyicisi'ni kullanarak dışarı aktarın. Ardından, yeni veya mevcut yüklemelerde yapılandırmasını içeri aktarabilirsiniz.
 
@@ -46,7 +46,9 @@ Visual Studio'nun önceden yüklenmiş örnek veya şu anda yüklemekte olduğun
 
 1. Ürün kartında seçin **daha fazla** düğmesini ve ardından **dışarı aktarma Yapılandırması**.
 
-1. .Vconfig dosyanızı kaydedin ve ardından istediğiniz konumu yazın veya gözatın **gözden geçirme ayrıntıları**.
+   ![Visual Studio Yükleyicisi'nde ürün kartından dışarı aktarma yapılandırması](../install/media/vs-2019/vs-installer-export-config.png)
+
+1. .Vsconfig dosyanızı kaydedin ve ardından istediğiniz konumu yazın veya gözatın **gözden geçirme ayrıntıları**.
 
    ![Visual Studio Yükleyicisi'nden yapılandırmayı Dışarı Aktar](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -54,13 +56,13 @@ Visual Studio'nun önceden yüklenmiş örnek veya şu anda yüklemekte olduğun
 
 ## <a name="import-a-configuration"></a>Yapılandırma içeri aktarma
 
-Bir yükleme yapılandırma dosyasını içeri aktarmak hazır olduğunuzda
+Bir yükleme yapılandırma dosyasını içeri aktarmak hazır olduğunuzda, aşağıdaki adımları izleyin.
 
 1. Visual Studio Yükleyicisi'ni açın.
 
 1. Ürün kartında seçin **daha fazla** düğmesini ve ardından **alma Yapılandırması**.
 
-1. İçeri aktarma ve ardından istediğiniz .vconfig dosyayı bulun **gözden geçirme ayrıntıları**.
+1. İçeri aktarma ve ardından istediğiniz .vsconfig dosyayı bulun **gözden geçirme ayrıntıları**.
 
 1. İstediğiniz bileşenleri ve iş yüklerini var olduğundan emin olun ve ardından **Kapat**.
 
@@ -72,7 +74,7 @@ Bir yükleme yapılandırma dosyasını içeri aktarmak hazır olduğunuzda
 
 ![Çözüm Gezgini ek bileşenler önerir.](../install/media/vs-2019/solution-explorer-config-file.png)
 
-Çözüm Gezgini'nden sağ .vsconfig dosyası da oluşturabilirsiniz. İşte nasıl.
+Çözüm Gezgini'nden sağ .vsconfig dosyası da oluşturabilirsiniz.
 
 1. Çözüm dosyanız sağ tıklayın.
 

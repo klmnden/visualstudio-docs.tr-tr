@@ -19,14 +19,14 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
-ms.translationtype: MT
+ms.openlocfilehash: 6d82cd5403b38fd4bbc7c5becef447255b01196f
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584590"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346905"
 ---
-# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio için proje geçiş ve yükseltme başvurusu 
+# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio için proje geçiş ve yükseltme başvurusu
 
 ::: moniker range="vs-2017"
 
@@ -43,7 +43,7 @@ Mevcut bu makalede, Visual Studio 2017 geçirebileceğiniz proje türleri için 
 
 Aşağıdaki listede, önceki sürümlerde oluşturulmuş projeler için Visual Studio 2017 desteği açıklanmaktadır.
 
-Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede Visual Studio 2015 sürümünü](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) ve projenizin ayrıntılarını sağlamak için bu sayfanın altındaki "belgeleri geri bildirimde bulunun" seçeneğini kullanın. (Bir yanıt isterseniz, belge geri bildirimi kullanmak yerine "Bu sayfa faydalı anonimdir?" Denetim.)
+Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede Visual Studio 2015 sürümünü](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) ve **hakkında geri bildirim gönder** > **bu sayfa**  projenizin ayrıntılarını sağlamak için bu sayfanın alt kısmındaki düğmesi. (Anonim kullanırsanız "Bu sayfa yardımcı oldu mu?" Denetim, biz geri bildirimlerinize yanıt belirtemiyor.)
 
 | Proje Türü | Destek |
 | --- | --- |
@@ -125,7 +125,7 @@ Bu makalede, Visual Studio 2019 geçirebileceğiniz proje türleri için Ayrınt
 
 Aşağıdaki listede, önceki sürümlerde oluşturulmuş projeler için Visual Studio 2019 desteği açıklanmaktadır.
 
-Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede, Visual Studio 2017 sürüm](port-migrate-and-upgrade-visual-studio-projects.md) ve ardından, projenizin ayrıntılarını sağlamak için bu sayfanın altındaki "belgeleri geri bildirimde bulunun" seçeneğini kullanın. (Bir yanıt isterseniz, belge geri bildirimi kullanmak yerine "Bu sayfa faydalı anonimdir?" Denetim.)
+Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvurun [bu makalede, Visual Studio 2017 sürüm](port-migrate-and-upgrade-visual-studio-projects.md) ve ardından **hakkında geri bildirim gönder** > **bu sayfa**  projenizin ayrıntılarını sağlamak için bu sayfanın alt kısmındaki düğmesi. (Anonim kullanırsanız "Bu sayfa yardımcı oldu mu?" Denetim, biz geri bildirimlerinize yanıt belirtemiyor.)
 
 | Proje Türü | Destek |
 | --- | --- |

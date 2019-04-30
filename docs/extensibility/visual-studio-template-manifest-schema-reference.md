@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07754016132822b4a60f3e5ba48dd02224c06e35
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108860"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346787"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio şablon bildirim Şeması Başvurusu
 Visual Studio şablon bildirim biçimi bu şema açıklar (*.vstman*) oluşturulan dosyalar için Visual Studio Proje veya öğe şablonları. Şema ayrıca konumu ve şablon ilgili diğer bilgileri açıklar.
@@ -21,7 +21,7 @@ Visual Studio şablon bildirim biçimi bu şema açıklar (*.vstman*) oluşturul
  : Ayrı bir öğe ve proje şablonu dizinleri olduğundan, bir bildirim hiçbir öğe ve proje şablonlarının bir karışımını olmalıdır.
 
 > [!IMPORTANT]
->  Bu bildirimi, Visual Studio 2017'den itibaren kullanılabilir.
+> Bu bildirimi, Visual Studio 2017'den itibaren kullanılabilir.
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest öğesi
  Bildirimin kök öğesi.
@@ -122,7 +122,7 @@ Visual Studio şablon bildirim biçimi bu şema açıklar (*.vstman*) oluşturul
  Aşağıdaki kod, bir öğe şablonunu örneğidir *.vstman* dosya.
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

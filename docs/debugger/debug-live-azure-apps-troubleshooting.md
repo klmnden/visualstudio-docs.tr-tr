@@ -1,7 +1,7 @@
 ---
 title: Anlık görüntü hata ayıklama sorunlarını giderme | Microsoft Docs
-ms.custom: seodec18
-ms.date: 11/07/2018
+ms.custom: ''
+ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -11,16 +11,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e7a04d5761d7b67c58dc71b185e6d5db0b80c766
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857768"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346885"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
 
-Bu makalede açıklanan adımlar sorunu çözmezse, kişi snaphelp@microsoft.com.
+Bu makalede açıklanan adımlar sorunu çözmezse, sorun için arama [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html) veya seçerek yeni bir sorun bildirin **yardımcı** > **geri bildirim gönder**   >  **Sorun bildir** Visual Studio'da.
+
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Sorun: "Snapshot Debugger iliştirebilmek" karşılaştığında bir HTTP durum kodu hatası
+
+Aşağıdaki hatayı görürseniz **çıkış** penceresi iliştirme girişimi sırasında aşağıda listelenen bilinen bir sorun olabilir. Önerilen çözümleri deneyin ve sorun devam ederse diğer adı önceki başvurun.
+
+`[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
+
+### <a name="401-unauthorized"></a>(401) yetkisiz
+
+Bu hata, REST araması için Azure kullanan Visual Studio tarafından geçersiz bir kimlik bilgisi verilen gösterir. Bu hata Azure Active Directory kolay OAuth modülü ile bilinen bir hatayı oluşturabilir.
+
+Aşağıdaki adımları gerçekleştirin:
+
+* Visual Studio kişiselleştirme hesabınız ve Azure aboneliği için iliştirmekte olduğunuz kaynak izni olduğundan emin olun. Bunu belirlemek için hızlı bir kaynak iletişim kutusunda kullanılabilir olup olmadığını denetlemek için yoludur **hata ayıklama** > **Snapshot Debugger Ekle...**   >  **Azure kaynak** > **var olanı Seç**, veya Bulut Gezgini'nde.
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
+
+### <a name="403-forbidden"></a>(403) Yasak
+
+İzin reddedildi bu hatayı gösterir. Bu, birçok farklı nedenlerden kaynaklanabilir.
+
+Aşağıdaki adımları gerçekleştirin:
+
+* Visual Studio hesabınızı geçerli bir Azure aboneliği için kaynak gerekli rol tabanlı erişim denetimi (RBAC) izinlere sahip olduğunu doğrulayın. AppService için izni olup olmadığını denetlemek [sorgu](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) uygulamanızı barındıran App Service planı.
+* İstemci makinenizde zaman damgası doğru ve güncel olduğunu doğrulayın. 15 dakikadan fazla istek zaman damgası, genellikle tarafından devre dışı damgalı sunucuları bu hatayı üretir.
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
+
+### <a name="404-not-found"></a>(404) bulunamadı
+
+Bu hata, sunucu üzerinde Web sitesi bulunamadı gösterir.
+
+Aşağıdaki adımları gerçekleştirin:
+
+* Dağıtılan ve için iliştirmekte App Service kaynak üzerinde çalışan bir Web sitesi sahip olduğunuzu doğrulayın.
+* Site https:// kullanılabilir olduğundan emin olun\<kaynak\>. azurewebsites.net
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
+
+### <a name="406-not-acceptable"></a>(406) kabul edilemez
+
+Bu hata, sunucunun isteği kabul et üstbilgisinde ayarlanan türüne yanıt verip vermediğini gösterir.
+
+Aşağıdaki adımları gerçekleştirin:
+
+* Sitenizi https:// kullanılabilir olduğunu doğrulamak\<kaynak\>. azurewebsites.net
+* Siteniz için yeni örnekleri geçirildiğini değil doğrulayın. Anlık görüntü hata ayıklayıcı bu hataya aralıklı olarak belirli örneklerine istekleri yönlendirmeye ARRAffinity kavramını kullanır.
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
+
+### <a name="409-conflict"></a>Çakışma (409)
+
+Bu hata, istek geçerli sunucu durumu ile çakışıyor gösterir.
+
+Bu bir kullanıcı göre Applicationınsights etkinleştirilmiş bir AppService Snapshot Debugger iliştirebilmek çalıştığında oluşan bilinen bir sorundur. Applicationınsights bu soruna neden Visual Studio değerinden farklı bir kasa ile AppSettings ayarlar.
+
+::: moniker range=">= vs-2019"
+Biz bu Visual Studio 2019 giderilmiştir.
+::: moniker-end
+
+Aşağıdaki adımları gerçekleştirin:
+
+::: moniker range="vs-2017"
+
+* Azure portalında AppSettings ayıklayıcısı (SNAPSHOTDEBUGGER_EXTENSION_VERSION) ve InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) büyük harf olduğundan emin olun. Aksi takdirde, ayarları güncelleştirmek el ile hangi site yeniden başlatılmasını zorlar.
+::: moniker-end
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
+
+### <a name="500-internal-server-error"></a>İç sunucu hatası (500)
+
+Bu hata sitenin tamamen çalışmıyor veya sunucu isteği işleyemiyor gösterir. Çalışan uygulamalar üzerinde anlık görüntü hata ayıklayıcısı yalnızca işlevler. [Application Insights Snapshot Debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) özel durumları olarak anlık görüntüsünün alınması sağlar ve gereksinimlerinize en uygun aracı olabilir.
+
+### <a name="502-bad-gateway"></a>(502) hatalı ağ geçidi
+
+Bu hata, bir sunucu tarafı ağ sorunu gösterir ve geçici olabilir.
+
+Aşağıdaki adımları gerçekleştirin:
+
+* Snapshot Debugger'ı yeniden eklemeyi önce birkaç dakika bekleyen deneyin.
+* Bu hata devam ederse, bu makalenin başında açıklanan geri bildirim kanallarını kullanın.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Sorun: Anlık görüntü noktası açılmıyor
 
@@ -30,7 +106,7 @@ Bir uyarı simgesi görürseniz ![anlık görüntü noktası uyarı simgesi](../
 
 Aşağıdaki adımları gerçekleştirin:
 
-1. Derleme ve dağıtma, app.isua1 için kullanılan kaynak kodu aynı sürümüne sahip olduğunuzdan emin olun. Dağıtımınız için doğru semboller yükleniyor emin olun. Bunu yapmak için görüntüleme **modülleri** penceresi açıkken anlık görüntü hata ayıklama ve sembol dosyası sütun .pdb dosyasını ayıkladığınız modül için yüklenmiş görüntülendiğini doğrulama. Snapshot Debugger otomatik olarak indirmeyi ve dağıtımınız için semboller kullanın dener.
+1. Derleme ve uygulamanızı dağıtmak için kullanılan kaynak kodu aynı sürümüne sahip olduğunuzdan emin olun. Dağıtımınız için doğru semboller yükleniyor emin olun. Bunu yapmak için görüntüleme **modülleri** penceresi açıkken anlık görüntü hata ayıklama ve sembol dosyası sütun .pdb dosyasını ayıkladığınız modül için yüklenmiş görüntülendiğini doğrulama. Snapshot Debugger otomatik olarak indirmeyi ve dağıtımınız için semboller kullanın dener.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Sorun: Anlık görüntü açtığımda sembolleri yüklenmiyor
 
@@ -75,20 +151,22 @@ Aşağıdaki adımları gerçekleştirin:
 
 - Anlık görüntüleri küçük bellek alanı dolduracaktır, ancak bir işleme ücrete tabi. Snapshot Debugger, yoğun bellek yükü altında sunucunuzdur algılarsa, anlık görüntüler olmayacaktır. Snapshot Debugger oturumu durdurma ve yeniden deneyerek zaten yakalanan anlık görüntülerini silebilirsiniz.
 
+::: moniker range=">= vs-2019"
 ## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Sorun: Visual Studio'nun birden çok sürümü olan anlık görüntü hata ayıklama bana hata veriyor
 
-VS 2019 Snapshot Debugger site uzantısını Azure App Service üzerinde daha yeni bir sürümü gerektirir.  Bu sürüm, VS 2017 tarafından kullanılan Snapshot Debugger site uzantısını daha eski bir sürümüyle uyumlu değil.  Daha önce VS 2017'de anlık görüntü hata ayıklayıcı tarafından hata, bir Azure uygulama hizmeti için anlık görüntü hata ayıklayıcı VS 2019'eklemeye çalışırsanız aşağıdaki hatayı alırsınız:
+Visual Studio 2019 Snapshot Debugger site uzantısını Azure App Service üzerinde daha yeni bir sürümü gerektirir.  Bu sürüm Visual Studio 2017 tarafından kullanılan Snapshot Debugger site uzantısını daha eski bir sürümüyle uyumlu değil.  Daha önce Visual Studio 2017'de anlık görüntü hata ayıklayıcı tarafından hata, bir Azure uygulama hizmeti için anlık görüntü hata ayıklayıcı Visual Studio 2019'eklemeye çalışırsanız aşağıdaki hatayı alırsınız:
 
-![Uyumsuz Snapshot Debugger site uzantısını VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "uyumsuz Snapshot Debugger site uzantısını VS 2019")
+![Uyumsuz Snapshot Debugger site uzantısını Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "uyumsuz Snapshot Debugger site uzantısını Visual Studio 2019")
 
-Buna karşılık, daha önce anlık görüntü hata ayıklayıcı VS 2019'tarafından hata, bir Azure uygulama hizmeti için Snapshot Debugger iliştirebilmek için VS 2017 kullanırsanız, şu hatayı alırsınız:
+Buna karşılık, daha önce Visual Studio 2019'de anlık görüntü hata ayıklayıcı tarafından hata, bir Azure uygulama hizmeti için Snapshot Debugger iliştirebilmek için Visual Studio 2017'yi kullanıyorsanız, şu hatayı alırsınız:
 
-![Uyumsuz Snapshot Debugger site uzantısını VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "uyumsuz Snapshot Debugger site uzantısını VS2017")
+![Uyumsuz Snapshot Debugger site uzantısını Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "uyumsuz Snapshot Debugger site uzantısını Visual Studio 2017")
 
 Bu sorunu gidermek için Azure portalında aşağıdaki uygulama ayarlarını silin ve yeniden Snapshot Debugger iliştirebilmek:
 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+::: moniker-end
 
 ## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Sorun: Anlık görüntü hata ayıklama ilgili sorunlar yaşıyorum ve daha fazla günlük kaydını etkinleştirmek istiyorum
 

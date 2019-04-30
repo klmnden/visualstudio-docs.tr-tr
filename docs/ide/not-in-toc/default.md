@@ -9,16 +9,16 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
+ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912056"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "64346780"
 ---
 # <a name="f1-help"></a>F1 Yardımı
 
-Aradığınız ne bulamadık gibi görünüyor ve özür dileriz. Lütfen [geliştirmemize yardımcı olun](#help-us-improve-f1).
+Aradığınız ne bulamadık gibi görünüyor ve özür dileriz. Bu sayfanın alt kısmındaki düğmeler geri bildirim bırakarak geliştirmemize yardımcı olabilir.
 
 ## <a name="cursor-position"></a>İmleç konumu
 
@@ -33,7 +33,3 @@ Bir anahtar sözcük veya API adı F1 Yardım arıyorsanız, imleç içinde veya
 - İçin F# yardımcı olmak için bkz: [ F# Kılavuzu](/dotnet/fsharp/).
 - Python Yardım için bkz: [Visual Studio'da Python](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ Yardım için bkz: [Visual Studio'da C++](/cpp/visual-cpp-in-visual-studio).
-
-## <a name="help-us-improve-f1"></a>F1 geliştirmemize yardımcı olun
-
-Lütfen F1 Yardım Deneyimini geliştirmemize yardımcı olun. Ürün Yardımı sorunu tıklayarak oturum **ürün geribildirim verin** düğmeye. Ne zaman bastığınız konusunda yardım için aradığınızı dahil **F1**, örneğin, hangi sembol veya penceresi, imlecin bulunduğu üzerinde. Teşekkür ederiz!
