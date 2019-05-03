@@ -81,7 +81,7 @@ ms.locfileid: "63431548"
 **12345**
 **12345**
 **değiştirme işaretçi, başvuru tarafından geçirilmediğine -:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
 **dönüş değere göre geçirme:**
 **12345 ABCDE**
