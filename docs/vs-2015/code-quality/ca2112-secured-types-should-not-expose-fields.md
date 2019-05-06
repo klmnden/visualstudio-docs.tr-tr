@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54786488"
@@ -63,10 +63,10 @@ ms.locfileid: "54786488"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **SecuredTypeWithFields örneği oluşturuluyor. ** 
- **Güvenli tür alanları: 22, 33**
-**güvenli türün alan değiştiriliyor... ** 
- **Önbelleğe nesne alanları: 99, 33**
+ **SecuredTypeWithFields örneği oluşturuluyor.**
+**Güvenli tür alanları: 22, 33**
+**güvenli türün alan değiştiriliyor...**
+**Önbelleğe nesne alanları: 99, 33**
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 

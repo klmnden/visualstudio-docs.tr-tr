@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082158"
@@ -72,10 +72,10 @@ ms.locfileid: "60082158"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **İsteğe bağlı: Arayanın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur. ** 
- **LinkDemand: Arayanın Reddet LinkDemand olarak onaylanan izni olan etkisi yoktur. ** 
- **LinkDemand: Arayanın Reddet LinkDemand ile korunan kodla etkisi yoktur. ** 
- **LinkDemand: Bu verme LinkDemand ile korunan kodla etkisi yoktur.**
+ **İsteğe bağlı: Arayanın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur.**
+**LinkDemand: Arayanın Reddet LinkDemand olarak onaylanan izni olan etkisi yoktur.**
+**LinkDemand: Arayanın Reddet LinkDemand ile korunan kodla etkisi yoktur.**
+**LinkDemand: Bu verme LinkDemand ile korunan kodla etkisi yoktur.**
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
