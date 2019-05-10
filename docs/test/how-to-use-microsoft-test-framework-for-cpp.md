@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0b91a8b58c8abb10aac18b1461d6ea5548d39ef9
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226036"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461474"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -24,7 +24,7 @@ Genellikle, test kodunuzu test etmek istediğiniz kodu aynı çözümde kendi pr
 
 ## <a name="same_project"></a> Aynı projede birim testleri yazma
 
-Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test ederken testleri test programı olarak aynı projede oluşturmanız gerekebilir. Aynı projede birim testleri yazmak için:
+Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test ederken testleri test ettiğiniz program olarak aynı projede oluşturmanız gerekebilir. Aynı projede birim testleri yazmak için:
 
 1. Proje özelliklerini, üst bilgiler ve birim testi için gerekli olan kitaplık dosyalarını içerecek şekilde değiştirin.
 
@@ -52,10 +52,12 @@ Statik yöntemleri kullanın [Assert](microsoft-visualstudio-testtools-cppunitte
 ## <a name="run-the-tests"></a>Testleri çalıştırın
 
 1. Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**.
-2. Testlerinizin tümünü penceresinde görünür değilse, onun düğümüne sağ tıklayarak test projesi oluşturmak **Çözüm Gezgini** seçip **derleme** veya **yeniden**.
 
-3. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
-4. İçinde **çıkış penceresine** seçin **testleri** açılan view iletileri tarafından yazılan aşağı `Logger` sınıfı:
+1. Testlerinizin tümünü penceresinde görünür değilse, onun düğümüne sağ tıklayarak test projesi oluşturmak **Çözüm Gezgini** seçip **derleme** veya **yeniden**.
+
+1. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
+
+1. İçinde **çıkış penceresine** seçin **testleri** açılan view iletileri tarafından yazılan aşağı `Logger` sınıfı:
 
    ![C++ çıkış penceresine sınama iletileri gösterme](media/cpp-test-output-window.png)
 
