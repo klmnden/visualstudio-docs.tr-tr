@@ -30,7 +30,7 @@ VSCEIP varsayılan olarak etkinleştirilir. Devre dışı ya da, aşağıdaki y�
 
     ![Katılım tercihinizi yansıtmak için bir radyo düğmesini seçin](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

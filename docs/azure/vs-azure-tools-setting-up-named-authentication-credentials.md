@@ -4,8 +4,6 @@ description: Visual Studio, Visual Studio'dan azure'a uygulama yayımlama ya da 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Kendiniz bir sertifika oluşturmak istiyorsanız, yönergeleri başvurabilirsini
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Web Apps'e genel bakış](https://docs.microsoft.com/azure/app-service/)
-- [Uygulamanızı Azure App Service'e dağıtma](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Uygulamanızı Azure App Service'e dağıtma](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Visual Studio kullanarak webjob'ları dağıtma](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Bir bulut hizmeti oluşturma ve dağıtma](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
