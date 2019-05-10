@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916356"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457619"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Dil ve satıcı tanımlayıcıları verilen kullanılabilir ifade değerlendiricilerini numaralandırır.
@@ -40,25 +43,25 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `celtBuffer`
+## <a name="parameters"></a>Parametreler
+ `celtBuffer`\
 
  [in] İçindeki öğelerin sayısını `pceltEEs` arabellek.
 
- `rgguidLang`
+ `rgguidLang`\
 
  [out içinde] Programlama dili için benzersiz tanımlayıcı.
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [out içinde] Satıcı için benzersiz tanımlayıcı.
 
- `pceltEEs`
+ `pceltEEs`\
 
  [out içinde] İfade değerlendiricilerini dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

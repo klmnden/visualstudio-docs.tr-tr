@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3096242335a1e9d374da4a801c9ff4d2c80635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20124d2e9b9cc30a7577a3682358f2a9d918ed43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845497"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65456861"
 ---
 # <a name="design-user-interfaces"></a>Kullanıcı arabirimleri tasarlama
 
@@ -24,6 +24,6 @@ Oluşturun ve Visual Studio içindeki çeşitli araçları kullanarak uygulaman�
 | Visual Studio ve Visual Studio için Blend, XAML tasarımcıları özellikleri | [Visual Studio ve Visual Studio için Blend, XAML tasarım](../designers/designing-xaml-in-visual-studio.md) |
 | Visual Studio kullanarak herhangi bir XAML tabanlı uygulama tasarımı|[Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Visual Studio için Blend kullanarak herhangi bir XAML tabanlı uygulama tasarımı | [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md) |
-|XAML WPF örneğinizin kullanan masaüstü uygulamaları tasarlama | [Windows Presentation Foundation ile çalışmaya başlama](../designers/getting-started-with-wpf.md) |
+| XAML WPF örneğinizin kullanan masaüstü uygulamaları tasarlama | [Windows Presentation Foundation ile çalışmaya başlama](../designers/getting-started-with-wpf.md) |
 | Visual Studio'da DirectX uygulaması geliştirme | [Oyunlar ve uygulamalar için 3B varlıklarla çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md) |
 | Standart simgeleri programlarınız için kullanılabilir | [Visual Studio görüntü kitaplığı](../designers/the-visual-studio-image-library.md) |

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864827"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458392"
 ---
 # <a name="seekstart"></a>SEEK_START
 Ayrıştırılmış kodu stream'de arama başlatılacağı konumu belirtir.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- Geçerli belgenin başlangıcında arayan SEEK_START_BEGIN başlatır.
+## <a name="fields"></a>Alanlar
+ `SEEK_START_BEGIN`\
+ Geçerli belgenin başlangıcında aramayı başlatır.
 
- Geçerli belgenin sonunda arayan SEEK_START_END başlatır.
+ `SEEK_START_END`\
+ Geçerli belgenin sonunda aramayı başlatır.
 
- Geçerli belge geçerli konumda arama SEEK_START_CURRENT başlatır.
+ `SEEK_START_CURRENT`\
+ Geçerli belge geçerli konumuna aramayı başlatır.
 
- Geçerli belgenin verilen kod bağlamı arayan SEEK_START_CODECONTEXT başlatır.
+ `SEEK_START_CODECONTEXT`\
+ Geçerli belgede belirli kod bağlamında aramayı başlatır.
 
- SEEK_START_CODELOCID belirli kod konum tanımlayıcısı aramayı başlatır. Kod konumu tanımlayıcılarını elde edilen çağırarak [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Verilen kod konum tanımlayıcısı aramayı başlatır. Kod konumu tanımlayıcılarını elde edilen çağırarak [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Açıklamalar
  Bağımsız değişken olarak geçirilen [arama](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) yöntemi.
@@ -66,7 +74,7 @@ public enum enum_SEEK_START { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
 - [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928215"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226415"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Güvenlik, sürüm ve bildirim sorunları ClickOnce Dağıtımları
 
@@ -97,5 +97,5 @@ Uygulamanın taşınacak veya kopyalanacak isterseniz de güncelleştirmelisiniz
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ClickOnce dağıtım sorunlarını giderme](../deployment/troubleshooting-clickonce-deployments.md)
-[Securw ClickOnce uygulamaları](../deployment/securing-clickonce-applications.md)
+[güvenli ClickOnce uygulamaları](../deployment/securing-clickonce-applications.md)
 [ClickOnce dağıtım stratejisini seçin](../deployment/choosing-a-clickonce-deployment-strategy.md)

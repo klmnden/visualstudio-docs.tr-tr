@@ -45,7 +45,7 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[vsindigo](..
   
      İçinde **Çözüm Gezgini**Iservice1.vb veya Iservice1.cs öğesine çift tıklayın ve şu satırı bulun:  
   
-     [! kod-csharp [WCFWalkthrough #4] (.. /snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)] [! kod-vb [WCFWalkthrough #4] (.. /snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
+     [! kod-csharp [WCFWalkthrough #4](../snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)]   [! kod-vb [WCFWalkthrough #4](../snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
   
      Değişiklik türü için `value` parametresi `String`:  
   
@@ -58,7 +58,7 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[vsindigo](..
   
      İçinde **Çözüm Gezgini**gt;service1.vb veya Service1.cs çift tıklayın ve şu satırı bulun:  
   
-     [! kod-csharp [WCFWalkthrough 5] (.. /snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/Service1 (2).cs 5)] [! kod-vb [WCFWalkthrough 5] (.. /snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/Service1 (2).vb 5)]  
+     [!kod-csharp [WCFWalkthrough 5](../snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/Service1 (2).cs 5)]   [! kod-vb [WCFWalkthrough 5](../snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/Service1 (2).vb 5)]  
   
      Değer parametresi türünü değiştir `String`:  
   

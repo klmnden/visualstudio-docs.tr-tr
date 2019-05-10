@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999768"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461488"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft Intellitest genel bakış
 
@@ -115,8 +115,7 @@ Bu algılama yönetilmeyen veya izlemesiz koddaki çağrıları sonuçlarını "
 
 Ayrıca, programın dış kaynaklardan gelen değerleri, programın yeniden çalıştırma değiştirirseniz determistic olmayan olarak kabul edilir. Böyle durumlarda, programın yürütülmesini denetime Intellitest kaybeder ve arama verimli hale gelir.
 
-Böyle bir durumda bazen belirgin değildir.
-Aşağıdaki örnekleri dikkate alın:
+Böyle bir durumda bazen belirgin değildir. Aşağıdaki örnekleri dikkate alın:
 
 * Sonucu **GetHashCode()** yöntemi yönetilmeyen kod tarafından sağlanır ve tahmin edilebilir değil.
 * **System.Random** sınıfı geçerli sistem saatinin gerçekten rastgele değerler sunmak için kullanır.

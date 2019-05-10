@@ -17,8 +17,9 @@
     - name: Visual Studio'yu yükleme
       href: install/install-visual-studio.md
     - name: Visual Studio’da oturum açma
-      href: ide/signing-in-to-visual-studio.md
       items:
+        - name: Visual Studio’da oturum açma
+          href: ide/signing-in-to-visual-studio.md
         - name: Birden çok kullanıcı hesabıyla çalışma
           href: ide/work-with-multiple-user-accounts.md
         - name: Deneme sürümü uzatma veya bir lisansı güncelleştirme
@@ -46,8 +47,9 @@
     - name: Visual Studio'yu kaldırma
       href: install/uninstall-visual-studio.md
     - name: Visual Studio yönetici kılavuzu
-      href: install/visual-studio-administrator-guide.md
       items:
+        - name: Visual Studio yönetici kılavuzu
+          href: install/visual-studio-administrator-guide.md
         - name: Komut satırını kullanma
           items:
             - name: Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme
@@ -63,8 +65,9 @@
             - name: Yükleme yapılandırmasını içeri veya dışarı aktarma
               href: install/import-export-installation-configurations.md
             - name: Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma
-              href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
               items:
+                - name: Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma
+                  href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
                 - name: Visual Studio’yu yüklediğinizde veya kullandığınızda ortaya çıkan ağ sorunlarını giderme
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Bir kurumda dağıtma
@@ -88,8 +91,9 @@
             - name: 'Visual Studio abonelikleri: Yönetici genel bakışı'
               href: /visualstudio/subscriptions/admin-responsibilities
         - name: Yardım Görüntüleyicisi Yönetici Kılavuzu
-          href: help-viewer/administrator-guide.md
           items:
+            - name: Yardım Görüntüleyicisi Yönetici Kılavuzu
+              href: help-viewer/administrator-guide.md
             - name: Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
               href: help-viewer/command-line-arguments.md
             - name: Yardım İçerik Yöneticisi Geçersiz Kılmaları
@@ -97,8 +101,9 @@
         - name: Başvuru
           items:
             - name: Visual Studio iş yükü ve bileşen kimlikleri
-              href: install/workload-and-component-ids.md
               items:
+                - name: Visual Studio iş yükü ve bileşen kimlikleri
+                  href: install/workload-and-component-ids.md
                 - name: Visual Studio Enterprise
                   href: install/workload-component-id-vs-enterprise.md
                 - name: Visual Studio Professional
@@ -124,8 +129,9 @@
     - name: Azure sanal makinesinden Visual Studio'yu kullanma
       href: install/using-visual-studio-vm.md
     - name: Derleme Araçlarını Bir Kapsayıcıya Yükleme
-      href: install/build-tools-container.md
       items:
+        - name: Derleme Araçlarını Bir Kapsayıcıya Yükleme
+          href: install/build-tools-container.md
         - name: Kapsayıcılar için İleri Düzey Örnek
           href: install/advanced-build-tools-container.md
         - name: Kapsayıcılar için Bilinen Sorunlar
@@ -166,13 +172,15 @@
 - name: Nasıl yapılır kılavuzları
   items:
     - name: Geliştirme
-      href: ide/index-writing-code.md
       items:
+        - name: Geliştirme
+          href: ide/index-writing-code.md
         - name: IDE’de gezinme
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Çözüm ve projelerle çalışma
-          href: ide/solutions-and-projects-in-visual-studio.md
           items:
+            - name: Çözüm ve projelerle çalışma
+              href: ide/solutions-and-projects-in-visual-studio.md
             - name: Yeni bir proje oluşturma
               href: ide/create-new-project.md
             - name: Projeler ve çözümler oluşturma
@@ -184,8 +192,9 @@
             - name: Proje ve çözüm özelliklerini yönetme
               href: ide/managing-project-and-solution-properties.md
             - name: Bir projedeki başvuruları yönetme
-              href: ide/managing-references-in-a-project.md
               items:
+                - name: Bir projedeki başvuruları yönetme
+                  href: ide/managing-references-in-a-project.md
                 - name: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
                 - name: Başvuru eklerken NuGet veya uzantı SDK kullanma karşılaştırması
@@ -197,25 +206,29 @@
             - name: Uygulama kaynaklarını yönetme (.NET)
               href: ide/managing-application-resources-dotnet.md
             - name: Uygulama ayarlarını yönetme (.NET)
-              href: ide/managing-application-settings-dotnet.md
               items:
+                - name: Uygulama ayarlarını yönetme (.NET)
+                  href: ide/managing-application-settings-dotnet.md
                 - name: 'C# projesine uygulama yapılandırma dosyası ekleme'
                   href: ide/how-to-add-app-config-file.md
             - name: Derleme ve bildirim imzalamayı yönetme
-              href: ide/managing-assembly-and-manifest-signing.md
               items:
+                - name: Derleme ve bildirim imzalamayı yönetme
+                  href: ide/managing-assembly-and-manifest-signing.md
                 - name: Uygulama ve dağıtım bildirimlerini imzalama
                   href: ide/how-to-sign-application-and-deployment-manifests.md
             - name: 'Uygulama simgesi belirtme (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Çoklu sürüm desteğine genel bakış
-              href: ide/visual-studio-multi-targeting-overview.md
               items:
+                - name: Çoklu sürüm desteğine genel bakış
+                  href: ide/visual-studio-multi-targeting-overview.md
                 - name: .NET Framework’ün bir sürümünü hedefleme
                   href: ide/how-to-target-a-version-of-the-dotnet-framework.md
             - name: Proje ve öğe şablonları oluşturma
-              href: ide/creating-project-and-item-templates.md
               items:
+                - name: Proje ve öğe şablonları oluşturma
+                  href: ide/creating-project-and-item-templates.md
                 - name: Proje şablonları oluşturma
                   href: ide/how-to-create-project-templates.md
                 - name: Birden çok proje şablonu oluşturma
@@ -231,8 +244,9 @@
             - name: Proje ve öğe şablonlarını bulma
               href: ide/how-to-locate-and-organize-project-and-item-templates.md
             - name: Proje ve öğe şablonlarını özelleştirme
-              href: ide/customizing-project-and-item-templates.md
               items:
+                - name: Proje ve öğe şablonlarını özelleştirme
+                  href: ide/customizing-project-and-item-templates.md
                 - name: Mevcut şablonları güncelleştirme
                   href: ide/how-to-update-existing-templates.md
                 - name: Bir şablonda parametreleri ikame etme
@@ -243,8 +257,9 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Proje veya çözüm olmadan geliştirme
           displayName: Open folder
-          href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
           items:
+            - name: Klasör aç
+              href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Yapı özelleştirme ve hata ayıklama görevleri
               displayName: makefile tasks.vs.json
               href: ide/customize-build-and-debug-tasks-in-visual-studio.md
@@ -252,11 +267,13 @@
           displayName: Azure DevOps VSTS GitHub
           href: ide/connect-team-project.md
         - name: Düzenleyiciyi kullanma
-          href: ide/writing-code-in-the-code-and-text-editor.md
           items:
+            - name: Düzenleyiciyi kullanma
+              href: ide/writing-code-in-the-code-and-text-editor.md
             - name: Metin bulma ve değiştirme
-              href: ide/finding-and-replacing-text.md
               items:
+                - name: Metin bulma ve değiştirme
+                  href: ide/finding-and-replacing-text.md
                 - name: Normal ifadeler kullanma
                   dispayName: RegEx
                   href: ide/using-regular-expressions-in-visual-studio.md
@@ -267,21 +284,24 @@
                 - name: Dosyalarda Değiştir
                   href: ide/replace-in-files.md
             - name: Kodlamalar ve satır sonları
-              href: ide/encodings-and-line-breaks.md
               items:
+                - name: Kodlamalar ve satır sonları
+                  href: ide/encodings-and-line-breaks.md
                 - name: Dosyaları kodlamayla kaydetme ve açma
                   href: ide/how-to-save-and-open-files-with-encoding.md
             - name: Anahat Oluşturma
               displayName: Expand and collapse
               href: ide/outlining.md
             - name: Kod oluşturma ve düzeltme
-              href: ide/code-generation-in-visual-studio.md
               items:
+                - name: Kod oluşturma ve düzeltme
+                  href: ide/code-generation-in-visual-studio.md
                 - name: Kod parçacıkları
                   items:
                     - name: Kod parçacıkları kullanma
-                      href: ide/code-snippets.md
                       items:
+                        - name: Kod parçacıkları kullanma
+                          href: ide/code-snippets.md
                         - name: 'C# kod parçacıkları başvurusu'
                           href: ide/visual-csharp-code-snippets.md
                         - name: C++ kod parçacıkları başvurusu
@@ -335,8 +355,9 @@
                     - name: Yerel değişken ekleme
                       href: ide/reference/introduce-local-variable.md
                 - name: Kodu yeniden düzenleme
-                  href: ide/refactoring-in-visual-studio.md
                   items:
+                    - name: Kodu yeniden düzenleme
+                      href: ide/refactoring-in-visual-studio.md
                     - name: Metot imzasını değiştirme
                       href: ide/reference/change-method-signature.md
                     - name: Anonim türü sınıfa dönüştürme
@@ -388,11 +409,13 @@
                 - name: 'İzlenecek yol: Kullanımdan kod oluşturma'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
             - name: Üretkenlik ipuçları
-              href: ide/productivity-tips-for-visual-studio.md
               items:
+                - name: Üretkenlik ipuçları
+                  href: ide/productivity-tips-for-visual-studio.md
                 - name: Klavye kısayolları
-                  href: ide/tips-and-tricks-for-visual-studio.md
                   items:
+                    - name: Klavye kısayolları
+                      href: ide/tips-and-tricks-for-visual-studio.md
                     - name: Klavye kısayollarını tanımlama ve özelleştirme
                       href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
                     - name: Sık kullanılan komutlar için kısayollar
@@ -403,8 +426,9 @@
                   displayName: ReSharper
                   href: ide/csharp-developer-productivity.md
             - name: IntelliSense kullanma
-              href: ide/using-intellisense.md
               items:
+                - name: IntelliSense kullanma
+                  href: ide/using-intellisense.md
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
                 - name: 'C# IntelliSense'
@@ -416,20 +440,23 @@
                 - name: IntelliSense için bir C++ projesi yapılandırma
                   href: ide/visual-cpp-intellisense-configuration.md
             - name: Kodunuzda gezinme
-              href: ide/navigating-code.md
               items:
+                - name: Kodunuzda gezinme
+                  href: ide/navigating-code.md
                 - name: Kodunuzdaki başvuruları bulma
                   href: ide/finding-references.md
                 - name: Görünüm türü ve üye tanımları
-                  href: ide/go-to-and-peek-definition.md
                   items:
+                    - name: Görünüm türü ve üye tanımları
+                      href: ide/go-to-and-peek-definition.md
                     - name: Tanıma Göz At Özelliğini kullanarak kodu görüntüleme ve düzenleme
                       href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
                 - name: Git komutlarını kullanarak kod bulma
                   href: ide/go-to.md
             - name: Düzenleyiciyi özelleştirme
-              href: ide/customizing-the-editor.md
               items:
+                - name: Düzenleyiciyi özelleştirme
+                  href: ide/customizing-the-editor.md
                 - name: Metinde büyük/küçük harf değiştirme
                   href: ide/how-to-change-text-case-in-the-editor.md
                 - name: Düzenleyici modlarını yönetme
@@ -447,37 +474,40 @@
                 - name: Dile özgü düzenleyici seçeneklerini ayarlama
                   href: ide/reference/setting-language-specific-editor-options.md
             - name: Kod stili tercihleri
-              href: ide/code-styles-and-quick-actions.md
               items:
+                - name: Kod stili tercihleri
+                  href: ide/code-styles-and-quick-actions.md
                 - name: Kod stili için EditorConfig dosyaları kullanma
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                  items:
-                    - name: .NET dil ve biçimlendirme kuralları
-                      href: ide/editorconfig-code-style-settings-reference.md
-                    - name: .NET adlandırma kuralları
-                      href: ide/editorconfig-naming-conventions.md
+                - name: .NET dil ve biçimlendirme kuralları
+                  href: ide/editorconfig-code-style-settings-reference.md
+                - name: .NET adlandırma kuralları
+                  href: ide/editorconfig-naming-conventions.md
             - name: Kaydırma çubuğunu özelleştirme
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Kodda yer işaretleri ayarlama
               href: ide/setting-bookmarks-in-code.md
             - name: CodeLens ile kod geçmişi bulma
-              href: ide/find-code-changes-and-other-history-with-codelens.md
               items:
+                - name: CodeLens ile kod geçmişi bulma
+                  href: ide/find-code-changes-and-other-history-with-codelens.md
                 - name: CodeIndex Komutu
                   href: ide/codeindex-command.md
             - name: Diğer diller için düzenleyici desteği
               href: ide/adding-visual-studio-editor-support-for-other-languages.md
         - name: Kod yapısını görüntüleme
-          href: ide/viewing-the-structure-of-code.md
           items:
+            - name: Kod yapısını görüntüleme
+              href: ide/viewing-the-structure-of-code.md
             - name: Sınıf Görünümü ve Nesne Tarayıcısı simgeleri
               href: ide/class-view-and-object-browser-icons.md
         - name: Görev Listesini Kullanma
           href: ide/using-the-task-list.md
         - name: Sınıf Tasarımcısı’nda sınıf tasarlama
-          href: ide/class-designer/designing-and-viewing-classes-and-types.md
           items:
+            - name: Sınıf Tasarımcısı’nda sınıf tasarlama
+              href: ide/class-designer/designing-and-viewing-classes-and-types.md
             - name: Projelere sınıf diyagramları ekleme
               href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
             - name: Sınıf diyagramlarını özelleştirme
@@ -511,8 +541,9 @@
                 - name: Üye gösterimi ve ilişkilendirme gösterimi
                   href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
             - name: Sınıfları ve türleri yeniden düzenleme
-              href: ide/class-designer/refactoring-classes-and-types.md
               items:
+                - name: Sınıfları ve türleri yeniden düzenleme
+                  href: ide/class-designer/refactoring-classes-and-types.md
                 - name: Arabirim uygulama
                   href: ide/class-designer/how-to-implement-an-interface.md
                 - name: Sınıfı kısmi sınıflara bölme
@@ -520,8 +551,9 @@
                 - name: Boş değer atanabilir tür oluşturma
                   href: ide/class-designer/how-to-create-a-nullable-type.md
             - name: Visual C++ kodu ile çalışma
-              href: ide/class-designer/working-with-visual-cpp-code.md
               items:
+                - name: Visual C++ kodu ile çalışma
+                  href: ide/class-designer/working-with-visual-cpp-code.md
                 - name: C++ sınıfları
                   href: ide/class-designer/visual-cpp-classes.md
                 - name: C++ yapıları
@@ -539,8 +571,9 @@
         - name: Platformlar arası mobil geliştirme
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
         - name: 'F# geliştirme'
-          href: ide/fsharp-visual-studio.md
           items:
+            - name: 'F# geliştirme'
+              href: ide/fsharp-visual-studio.md
             - name: Eski .NET sürümlerini hedefleme
               href: ide/fsharp-target-older-dotnet-versions.md
         - name: Office ve SharePoint geliştirme
@@ -550,9 +583,8 @@
         - name: Uluslararası uygulamalar geliştirme
           displayName: Globalization localization world-ready
           href: ide/globalizing-and-localizing-applications.md
-          items:
-            - name: Çift yönlü diller
-              href: ide/creating-applications-in-bi-directional-languages.md
+        - name: Çift yönlü diller
+          href: ide/creating-applications-in-bi-directional-languages.md
         - name: Ek öğreticiler
           items:
             - name: 'C# veya Visual Basic ile WPF uygulaması oluşturma'
@@ -560,8 +592,9 @@
             - name: Windows Forms uygulama öğreticileri
               items:
                 - name: 'Öğretici 1: Resim görüntüleyici oluşturma (C#)'
-                  href: ide/tutorial-1-create-a-picture-viewer.md
                   items:
+                    - name: 'Öğretici 1: Resim görüntüleyici oluşturma (C#)'
+                      href: ide/tutorial-1-create-a-picture-viewer.md
                     - name: '1. Adım: Windows Forms Uygulaması Projesi Oluşturma'
                       href: ide/step-1-create-a-windows-forms-application-project.md
                     - name: '2. Adım: Programınızı Çalıştırma'
@@ -585,8 +618,9 @@
                     - name: '11. Adım: Programınızı Çalıştırma ve Diğer Özellikleri Deneme'
                       href: ide/step-11-run-your-program-and-try-other-features.md
                 - name: 'Öğretici 2: Zamanlı matematik testi oluşturma (C#)'
-                  href: ide/tutorial-2-create-a-timed-math-quiz.md
                   items:
+                    - name: 'Öğretici 2: Zamanlı matematik testi oluşturma (C#)'
+                      href: ide/tutorial-2-create-a-timed-math-quiz.md
                     - name: '1. Adım: Proje Oluşturma ve Formunuza Etiketler Ekleme'
                       href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
                     - name: '2. Adım: Rastgele Bir Toplama Problemi Oluşturma'
@@ -604,8 +638,9 @@
                     - name: '8. Adım: Testi Özelleştirme'
                       href: ide/step-8-customize-the-quiz.md
                 - name: 'Öğretici 3: Eşleştirme oyunu oluşturma (C#)'
-                  href: ide/tutorial-3-create-a-matching-game.md
                   items:
+                    - name: 'Öğretici 3: Eşleştirme oyunu oluşturma (C#)'
+                      href: ide/tutorial-3-create-a-matching-game.md
                     - name: '1. Adım: Proje Oluşturma ve Formunuza Tablo Ekleme'
                       href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
                     - name: '2. Adım: Rastgele Nesne ve Simge Listesi Ekleme'
@@ -631,13 +666,15 @@
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
     - name: Derleme ve oluşturma
-      href: ide/compiling-and-building-in-visual-studio.md
       items:
+        - name: Derleme ve oluşturma
+          href: ide/compiling-and-building-in-visual-studio.md
         - name: 'İzlenecek yol: Uygulama oluşturma'
           href: ide/walkthrough-building-an-application.md
         - name: Projeleri ve çözümleri oluşturma ve temizleme
-          href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
           items:
+            - name: Projeleri ve çözümleri oluşturma ve temizleme
+              href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
             - name: Derleme çıkış dizinini değiştirme
               href: ide/how-to-change-the-build-output-directory.md
             - name: Ortak çıkış dizinine derleme
@@ -657,8 +694,9 @@
         - name: Derleme eylemleri
           href: ide/build-actions.md
         - name: Derleme yapılandırmaları
-          href: ide/understanding-build-configurations.md
           items:
+            - name: Derleme yapılandırmaları
+              href: ide/understanding-build-configurations.md
             - name: Yapılandırmaları oluşturma ve düzenleme
               href: ide/how-to-create-and-edit-configurations.md
             - name: Visual Basic geliştirici ayarlarıyla derleme yapılandırmalarını yönetme
@@ -666,8 +704,9 @@
             - name: Aynı anda birden fazla yapılandırmayı derleme
               href: ide/how-to-build-multiple-configurations-simultaneously.md
         - name: Derleme platformları
-          href: ide/understanding-build-platforms.md
           items:
+            - name: Derleme platformları
+              href: ide/understanding-build-platforms.md
             - name: Projeleri hedef platformlar için yapılandırma
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma
@@ -704,8 +743,9 @@
     - name: Mimariyi Analiz Etme ve Mimari Modelini Oluşturma...
       href: modeling/analyze-and-model-your-architecture.md
     - name: IDE’yi Özelleştirme
-      href: ide/personalizing-the-visual-studio-ide.md
       items:
+        - name: IDE’yi Özelleştirme
+          href: ide/personalizing-the-visual-studio-ide.md
         - name: 'Hızlı Başlangıç: Tema ve metin renklerini kişiselleştirme'
           href: ide/quickstart-personalize-the-ide.md
         - name: Ortam ayarları
@@ -729,8 +769,9 @@
         - name: Dış araçları yönetme
           href: ide/managing-external-tools.md
     - name: Performansı en iyi hale getirme
-      href: ide/optimize-visual-studio-performance.md
       items:
+        - name: Performansı en iyi hale getirme
+          href: ide/optimize-visual-studio-performance.md
         - name: Başlangıç zamanı
           href: ide/optimize-visual-studio-startup-time.md
         - name: Filtrelenmiş bir çözüm yükleme
@@ -738,8 +779,9 @@
         - name: İpuçları ve püf noktaları
           href: ide/visual-studio-performance-tips-and-tricks.md
     - name: Erişilebilirlik özelliklerini yönetme
-      href: ide/reference/accessibility-features-of-visual-studio.md
       items:
+        - name: Erişilebilirlik özelliklerini yönetme
+          href: ide/reference/accessibility-features-of-visual-studio.md
         - name: IDE erişilebilirlik seçeneklerini ayarlama
           href: ide/reference/how-to-set-ide-accessibility-options.md
         - name: Yalnızca klavyeyi kullanma
@@ -778,11 +820,13 @@
         - name: Çeşitli Dosyalar
           href: ide/reference/miscellaneous-files.md
         - name: Seçenekler İletişim Kutusu
-          href: ide/reference/options-dialog-box-visual-studio.md
           items:
+            - name: Seçenekler İletişim Kutusu
+              href: ide/reference/options-dialog-box-visual-studio.md
             - name: Ortam Seçenekleri İletişim Kutusu
-              href: ide/reference/environment-options-dialog-box.md
               items:
+                - name: Ortam Seçenekleri İletişim Kutusu
+                  href: ide/reference/environment-options-dialog-box.md
                 - name: Ortam - Genel
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Ortam - Otomatik Kurtarma
@@ -818,8 +862,9 @@
                 - name: Ortam - Web Tarayıcısı
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Metin Düzenleyici Seçenekleri İletişim Kutusu
-              href: ide/reference/text-editor-options-dialog-box.md
               items:
+                - name: Metin Düzenleyici Seçenekleri İletişim Kutusu
+                  href: ide/reference/text-editor-options-dialog-box.md
                 - name: Metin Düzenleyici - Genel
                   href: ide/reference/options-text-editor-general.md
                 - name: Metin Düzenleyici - Dosya Uzantısı
@@ -887,8 +932,9 @@
                 - name: 'Metin Düzenleyicisi - XML, Çeşitli'
                   href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Projeler ve Çözümler Seçenekleri İletişim Kutusu
-              href: ide/reference/projects-and-solutions-options-dialog-box.md
               items:
+                - name: Projeler ve Çözümler Seçenekleri İletişim Kutusu
+                  href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Projeler ve Çözümler - Derleme ve Çalıştırma
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
                 - name: Projeler ve Çözümler - Web Projeleri
@@ -902,32 +948,37 @@
         - name: Çıktı Penceresi
           href: ide/reference/output-window.md
         - name: Proje Özellikleri Başvurusu
-          href: ide/reference/project-properties-reference.md
           items:
+            - name: Proje Özellikleri Başvurusu
+              href: ide/reference/project-properties-reference.md
             - name: 'Uygulama Sayfası, Proje Tasarımcısı (UWP)'
               href: ide/reference/application-page-project-designer-uwp.md
             - name: 'Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)'
-              href: ide/reference/application-page-project-designer-visual-basic.md
               items:
+                - name: 'Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)'
+                  href: ide/reference/application-page-project-designer-visual-basic.md
                 - name: Derleme Bilgileri İletişim Kutusu
                   href: ide/reference/assembly-information-dialog-box.md
             - name: 'Uygulama Sayfası, Proje Tasarımcısı (C#)'
               href: ide/reference/application-page-project-designer-csharp.md
             - name: 'Derleme Olayları Sayfası, Proje Tasarımcısı (C#)'
-              href: ide/reference/build-events-page-project-designer-csharp.md
               items:
+                - name: 'Derleme Olayları Sayfası, Proje Tasarımcısı (C#)'
+                  href: ide/reference/build-events-page-project-designer-csharp.md
                 - name: Derleme Öncesi Olay-Derleme Sonrası Olay Komut Satırı İletişim Kutusu
                   href: ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md
             - name: 'Derleme Sayfası, Proje Tasarımcısı (C#)'
-              href: ide/reference/build-page-project-designer-csharp.md
               items:
+                - name: 'Derleme Sayfası, Proje Tasarımcısı (C#)'
+                  href: ide/reference/build-page-project-designer-csharp.md
                 - name: 'Gelişmiş Derleme Ayarları İletişim Kutusu (C#)'
                   href: ide/reference/advanced-build-settings-dialog-box-csharp.md
             - name: 'Kod Çözümlemesi, Proje Tasarımcısı'
               href: ide/reference/code-analysis-project-designer.md
             - name: 'Derleme Sayfası, Proje Tasarımcısı (Visual Basic)'
-              href: ide/reference/compile-page-project-designer-visual-basic.md
               items:
+                - name: 'Derleme Sayfası, Proje Tasarımcısı (Visual Basic)'
+                  href: ide/reference/compile-page-project-designer-visual-basic.md
                 - name: Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
                   href: ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md
                 - name: Derleme Olayları İletişim Kutusu (Visual Basic)
@@ -937,20 +988,23 @@
             - name: 'My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)'
               href: ide/reference/my-extensions-page-project-designer-visual-basic.md
             - name: 'Yayın Sayfası, Proje Tasarımcısı'
-              href: ide/reference/publish-page-project-designer.md
               items:
+                - name: 'Yayın Sayfası, Proje Tasarımcısı'
+                  href: ide/reference/publish-page-project-designer.md
                 - name: Önkoşullar İletişim Kutusu
                   href: ide/reference/prerequisites-dialog-box.md
             - name: 'Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)'
               href: ide/reference/references-page-project-designer-visual-basic.md
             - name: 'Güvenlik Sayfası, Proje Tasarımcısı'
-              href: ide/reference/security-page-project-designer.md
               items:
+                - name: 'Güvenlik Sayfası, Proje Tasarımcısı'
+                  href: ide/reference/security-page-project-designer.md
                 - name: Gelişmiş Güvenlik Ayarları İletişim Kutusu
                   href: ide/reference/advanced-security-settings-dialog-box.md
             - name: 'Hizmetler Sayfası, Proje Tasarımcısı'
-              href: ide/reference/services-page-project-designer.md
               items:
+                - name: 'Hizmetler Sayfası, Proje Tasarımcısı'
+                  href: ide/reference/services-page-project-designer.md
                 - name: Hizmetler İçin Gelişmiş Ayarlar İletişim Kutusu
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
             - name: 'Ayarlar Sayfası, Proje Tasarımcısı'
@@ -964,8 +1018,9 @@
         - name: Takım Gezgini başvurusu
           href: ide/reference/team-explorer-reference.md
         - name: Araç Kutusu
-          href: ide/reference/toolbox.md
           items:
+            - name: Araç Kutusu
+              href: ide/reference/toolbox.md
             - name: 'Araç Kutusu, Bileşenler Sekmesi'
               href: ide/reference/toolbox-components-tab.md
             - name: 'Araç Kutusu, Veri Sekmesi'
@@ -973,8 +1028,9 @@
             - name: 'Araç Kutusu, HTML Sekmesi'
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv Komut Satırı Anahtarları
-      href: ide/reference/devenv-command-line-switches.md
       items:
+        - name: Devenv Komut Satırı Anahtarları
+          href: ide/reference/devenv-command-line-switches.md
         - name: '-? (devenv.exe)'
           href: ide/reference/q-devenv-exe.md
         - name: '-Build (devenv.exe)'
@@ -1020,8 +1076,9 @@
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
     - name: Visual Studio Komutları
-      href: ide/reference/visual-studio-commands.md
       items:
+        - name: Visual Studio Komutları
+          href: ide/reference/visual-studio-commands.md
         - name: Visual Studio Komut Diğer Adları
           href: ide/reference/visual-studio-command-aliases.md
         - name: Varolan Öğeyi Ekle Komutu
@@ -1101,8 +1158,9 @@
         - name: Windows Bilgi Koruması (WIP)
           href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Yardım Görüntüleyicisi
-      href: help-viewer/overview.md
       items:
+        - name: Microsoft Yardım Görüntüleyicisi
+          href: help-viewer/overview.md
         - name: Yerel İçeriği Yükleme ve Yönetme
           displayName: Offline books docs
           href: help-viewer/install-manage-local-content.md
@@ -1113,20 +1171,23 @@
             - name: İçindekilerde Konu Bulma
               href: help-viewer/find-topics-toc.md
             - name: Konu Arama
-              href: help-viewer/find-topics.md
               items:
+                - name: Konu Arama
+                  href: help-viewer/find-topics.md
                 - name: Arama İfadelerinde Mantıksal ve Gelişmiş İşleçler
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Yardım Görüntüleyicisi'ni Özelleştirme
           href: help-viewer/customize.md
         - name: Erişilebilirlik Özellikleri
-          href: help-viewer/accessibility-features.md
           items:
+            - name: Erişilebilirlik Özellikleri
+              href: help-viewer/accessibility-features.md
             - name: Kısayol Tuşları
               href: help-viewer/shortcut-keys.md
     - name: Dotfuscator Community
-      href: ide/dotfuscator/index.md
       items:
+        - name: Dotfuscator Community
+          href: ide/dotfuscator/index.md
         - name: Dotfuscator Özellikleri
           href: ide/dotfuscator/capabilities.md
         - name: Dotfuscator Community’yi yükleme
@@ -1177,8 +1238,9 @@
         - name: Destek yaşam döngüsü ve bakım
           href: /visualstudio/productinfo/vs-servicing-vs/
     - name: Visual Studio’da sorun bildirme
-      href: ide/how-to-report-a-problem-with-visual-studio.md
       items:
+        - name: Visual Studio’da sorun bildirme
+          href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: Sorun bildirme durumları ve SSS
           href: ide/report-a-problem.md
     - name: Visual Studio için özellik önerin
@@ -1186,12 +1248,13 @@
     - name: Geliştirici Topluluğu veri gizliliği
       href: ide/developer-community-privacy.md
     - name: Müşteri Deneyimi Geliştirme Programı
-      href: ide/visual-studio-experience-improvement-program.md
       items:
+        - name: Müşteri Deneyimi Geliştirme Programı
+          href: ide/visual-studio-experience-improvement-program.md
         - name: Sistem tarafından oluşturulan günlükler
           href: ide/diagnostic-data-collection.md
     - name: IDE hataları için sorun giderme kaynakları
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: Bizimle iletişime geçin
+    - name: Geribildirim
       displayName: Feedback
-      href: ide/talk-to-us.md
+      href: ide/feedback-options.md

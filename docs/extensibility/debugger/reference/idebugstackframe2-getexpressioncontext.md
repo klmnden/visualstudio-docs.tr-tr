@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c453de210e503722dbf9da518a813f62090c495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee4f7ec068b3daa77692d4ab64d327ebb8f61766
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916040"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457393"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 İfade değerlendirme bir yığın çerçevesi ve iş parçacığı için geçerli bağlam içinde bir değerlendirme bağlamı alır.
@@ -36,8 +39,8 @@ int GetExpressionContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppExprCxt`
+## <a name="parameters"></a>Parametreler
+ `ppExprCxt`\
 
  [out] Döndürür bir [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) ifade değerlendirme bağlamının temsil eden nesne.
 
@@ -47,7 +50,7 @@ int GetExpressionContext ( 
 ## <a name="remarks"></a>Açıklamalar
  Genellikle, bir ifade değerlendirme bağlamının, ifade değerlendirmesi gerçekleştirmek için kapsam olarak düşünülebilir. Çağrı [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) bir ifade ayrıştırma ve sonra ortaya çıkan çağrı yöntemi [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) veya [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) yöntemleri ayrıştırılmış ifade değerlendirilemiyor.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

@@ -9,16 +9,14 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 5cc386ae0d9a9d19acf3590786773e9efbda2725
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820002"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084062"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
-
-## <a name="overview"></a>Genel Bakış
 
 Visual Studio, bir Docker kapsayıcısı içinde geliştirin ve uygulamanızı yerel olarak doğrulamak için tutarlı bir yol sağlar.
 Kapsayıcı bir kod değişikliği yaptığınızda her zaman yeniden başlatmanız gerekmez.
@@ -46,7 +44,9 @@ Kullanabileceğiniz [Docker araç kutusu](https://www.docker.com/products/docker
 
 Docker araç kutusunu kullanarak, Docker istemciyi yapılandırmak gerekir.
 
-## <a name="1-create-a-web-app"></a>1. Web uygulaması oluşturma
+Docker kapsayıcıları, .NET Framework ve .NET Core projeleri için kullanılabilir. İki örneğe, ilk bakalım bir .NET Core web uygulaması ve ikinci, bir .NET Framework konsol uygulaması.
+
+## <a name="create-a-web-app"></a>Web uygulaması oluşturma
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -55,7 +55,7 @@ Docker araç kutusunu kullanarak, Docker istemciyi yapılandırmak gerekir.
 [! DAHİL [oluşturma-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
 ::: moniker-end
 
-## <a name="2-edit-your-code-and-refresh"></a>2. Kodunuz ve yenileme Düzenle
+### <a name="edit-your-code-and-refresh"></a>Kodunuz ve yenileme Düzenle
 
 Değişikliklerini hızlıca yinelemek için bir kapsayıcı içindeki uygulamanızı başlatın ve değişiklik yapmak, IIS Express ile olduğu gibi bunları görüntüleme devam edebilirsiniz.
 
@@ -80,7 +80,7 @@ Değişikliklerini hızlıca yinelemek için bir kapsayıcı içindeki uygulaman
 
 6. Yaptığınız değişiklikleri uygulanmış!
 
-## <a name="3-debug-with-breakpoints"></a>3. Kesme noktaları ile hata ayıklama
+### <a name="debug-with-breakpoints"></a>Kesme noktaları ile hata ayıklama
 
 Genellikle, değişiklikleri daha fazla inceleme, Visual Studio hata ayıklama özelliklerinin yararlanarak gerekir.
 

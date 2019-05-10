@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865790"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458062"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Hangi tür bilgiler almak için belirli bir makine için belirtir.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- MCIF_NAME başlatma/kullanım `bstrName` yapısında alan.
+## <a name="fields"></a>Alanlar
+ `MCIF_NAME`\
+ Başlat/kullanım `bstrName` yapısında alan.
 
- MCIF_FLAGS başlatma/kullanım `Flags` yapısında alan.
+ `MCIF_FLAGS`\
+ Başlat/kullanım `Flags` yapısında alan.
 
- MIF_ALL başlatma/kullanım tüm alanları yapısı içinde.
+ `MIF_ALL`\
+ Tüm alanları yapısında başlatma/kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu değerler geçirilecek [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) hangi üyelerinin belirtmek üzere yöntem [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) yapısı olan başlatılacak.
@@ -62,7 +68,7 @@ public enum enum_MACHINE_INFO_FIELDS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

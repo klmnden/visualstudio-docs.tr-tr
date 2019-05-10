@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfc3a2e5a89216a1bd50500ac29e21ed5842503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 95a06a283b417432fd755f100f8c2e68a0325571
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868121"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225894"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Bu yöntem, yeni bir nesne için Görselleştirici alır. Bu yöntem, varolan nesneyi her zaman yeni bir nesne oluşturur.
@@ -36,8 +39,8 @@ int GetNewObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppObject`
+## <a name="parameters"></a>Parametreler
+ `ppObject`\
 
  [out] Yeni nesne.
 
@@ -47,6 +50,6 @@ int GetNewObjectForVisualizer(
 ## <a name="remarks"></a>Açıklamalar
  `This method` Nesne şu anda temsil eder ve sonuç yeni bir nesne olarak döndüren yeniden değerlendirir. Varolan nesne değerlendirmesinin sonucu olarak güncelleştirilecektir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

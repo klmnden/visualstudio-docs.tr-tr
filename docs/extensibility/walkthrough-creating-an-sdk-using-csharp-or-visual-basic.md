@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443857"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226115"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:
@@ -28,7 +31,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
 ## <a name="createClassLibrary"></a> SimpleMath Windows çalışma zamanı bileşeni oluşturma
 
-1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
 2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**, seçin **Windows Store** düğümünü seçip **Windows çalışma zamanı bileşeni** şablonu.
 
@@ -50,7 +53,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 8. İçinde **yapılandırma** sütun doğrulayın **SimpleMath** satır kümesine **yayın**ve ardından **Kapat** kabul etmek için düğmeyi değiştirin.
 
    > [!IMPORTANT]
-   > Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Yalnızca bir yapılandırma SimpleMath bileşeni için SDK'sı içerir. Bu yapılandırma sürüm yapısı olmanız veya bileşen kullanan uygulamalar olmaz sertifika için geçirmeniz [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **yapı**.
 
@@ -153,7 +156,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
 ## <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
 
-1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
 2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**ve ardından **Windows Store** düğümü.
 
@@ -163,11 +166,11 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
 5. Başvuru türlerinin listesinde, **Windows**ve ardından **uzantıları**.
 
-6. Ayrıntılar bölmesinde **basit matematik SDK** uzantısı.
+6. Ayrıntılar bölmesinde **WinRT matematik kitaplığı** uzantısı.
 
     SDK'nızı hakkında ek bilgiler görüntülenir. Seçebileceğiniz **daha fazla bilgi** açmak için bağlantıyı https://msdn.microsoft.com/, bu kılavuzda daha önce açıklanan SDKManifest.xml dosyasında belirtildiği gibi.
 
-7. İçinde **başvuru Yöneticisi** iletişim kutusunda **basit matematik SDK** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
+7. İçinde **başvuru Yöneticisi** iletişim kutusunda **WinRT matematik kitaplığı** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 
 8. Menü çubuğunda, **görünümü** > **Nesne Tarayıcısı**.
 
@@ -181,11 +184,11 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

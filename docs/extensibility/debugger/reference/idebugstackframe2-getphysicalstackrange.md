@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868737"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457275"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Bir yığın çerçevesiyle ilgili olan fiziksel adres aralığını makine bağımlı bir gösterimini alır.
@@ -38,12 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `paddrMin`
+## <a name="parameters"></a>Parametreler
+ `paddrMin`\
 
  [out] Bu yığın çerçevesiyle ilgili en düşük fiziksel adresini döndürür.
 
- `paddrMax`
+ `paddrMax`\
 
  [out] Bu yığın çerçevesiyle ilgili en yüksek fiziksel adresini döndürür.
 
@@ -55,5 +58,5 @@ int GetPhysicalStackRange ( 
 
  Bu çağrı yığını, diğer bir deyişle büyüdükçe, yeni yığın çerçevelerini gittikçe daha düşük bellek adreslerinde eklenir varsayılır. Bir çalışma zamanı mimarisi bu varsayımı eşleşen fiziksel yığın aralığı sağlamanız gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

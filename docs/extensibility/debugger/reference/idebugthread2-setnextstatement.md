@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915540"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226713"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Verilen kod bağlamı için geçerli yönerge işaretçisini ayarlar.
@@ -38,10 +41,11 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pStackFrame` Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın.
+## <a name="parameters"></a>Parametreler
+ `pStackFrame`\
+ Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
 
@@ -57,7 +61,7 @@ int SetNextStatement ( 
 ## <a name="remarks"></a>Açıklamalar
  Yönerge işaretçisi, yürütülecek sonraki yönerge veya deyimi gösterir. Bu yöntem, bir kaynak kod satırı yeniden deneyin veya başka bir işlevde harcanan, örneğin devam etmek için yürütme zorlamak için kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

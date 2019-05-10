@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864801"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460781"
 ---
 # <a name="stepkind"></a>STEPKIND
 Adımı atlamak için belirtir.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- Bir işlev STEP_INTO Adımlamayla girin.
+## <a name="fields"></a>Alanlar
+ `STEP_INTO`\
+ Bir işlevi adımlar.
 
- Bir işlevin üzerinden STEP_OVER adımları.
+ `STEP_OVER`\
+ Bir işlevin üzerinden adımları.
 
- Bir işlev dışında STEP_OUT adımları.
+ `STEP_OUT`\
+ Bir işlev dışında adımları.
 
- Bir işleve geriye dönük STEP_BACKWARDS adımları.
+ `STEP_BACKWARDS`\
+ Adımlamayla geriye dönük bir işlev.
 
 ## <a name="remarks"></a>Açıklamalar
  Bağımsız değişken olarak geçirilen [adım](../../../extensibility/debugger/reference/idebugprocess3-step.md) yöntemi.
@@ -62,6 +69,6 @@ public enum enum_STEPKIND { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

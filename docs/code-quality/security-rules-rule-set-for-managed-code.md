@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825298"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459143"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Yönetilen kod için Güvenlik Kuralları kural kümesi
 Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını sayısı en üst düzeye çıkarmak için kümesi içermelidir.
@@ -66,6 +66,13 @@ Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını s
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Güvenli olmayan seri durumdan çıkarıcının LosFormatter kullanmayın|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Güvenli olmayan seri durumdan çıkarıcının NetDataContractSerializer kullanmayın|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|İlk ayarlamadan NetDataContractSerializer.Binder seri durumdan değil|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Seri durumdan çıkarılırken önce NetDataContractSerializer.Binder ayarlandığından emin olun|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Güvenli olmayan seri durumdan çıkarıcının ObjectStateFormatter'ın kullanmayın|
+|[CA2321](ca2321.md)|Bir SimpleTypeResolver kullanarak JavaScriptSerializer ile seri durumdan değil|
+|[CA2322](ca2322.md)|JavaScriptSerializer SimpleTypeResolver ile seri durumdan çıkarılırken önce başlatılmadı emin olun.|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL ekleme güvenlik açıkları için inceleme kodu|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS güvenlik açıkları için inceleme kodu|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Dosya yolu ekleme güvenlik açıkları için inceleme kodu|

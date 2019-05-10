@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f701415c011b304ac886669de5da8f813b26220
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915820"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226428"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Bu yöntem, tam nitelikli sınıf adınız temsil eden sınıf alan türünü alır.
@@ -40,23 +43,23 @@ int GetClassTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pszClassName`
+## <a name="parameters"></a>Parametreler
+ `pszClassName`\
 
  [in] Sınıf adı.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Türü eşleşen, örneğin, büyük/küçük harfe seçer. Bir değer [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) sabit listesi.
 
- `ppField`
+ `ppField`\
 
  [out] Sınıf türü tarafından temsil edilen döndürür [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

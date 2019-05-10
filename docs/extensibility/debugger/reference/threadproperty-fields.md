@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c908658662d96d5c1ad5f3b16e9dcce2e4f7235
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864579"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458491"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Alınacak bir iş parçacığı hakkında bilgiler olduğunu belirtir.
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- TPF_ID başlatma/kullanım `dwThreadId` alanını [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı.
+## <a name="fields"></a>Alanlar
+ `TPF_ID`\
+ Başlat/kullanım `dwThreadId` alanını [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı.
 
- TPF_SUSPENDCOUNT başlatma/kullanım `dwSuspendCount` alanını `THREADPROPERTIE`S yapısı.
+ `TPF_SUSPENDCOUNT`\
+ Başlat/kullanım `dwSuspendCount` alanını `THREADPROPERTIE`S yapısı.
 
- TPF_STATE başlatma/kullanım `dwThreadState` alanını `THREADPROPERTIE`S yapısı.
+ `TPF_STATE`\
+ Başlat/kullanım `dwThreadState` alanını `THREADPROPERTIE`S yapısı.
 
- TPF_PRIORITY başlatma/kullanım `bstrPriority` alanını `THREADPROPERTIE`S yapısı.
+ `TPF_PRIORITY`\
+ Başlat/kullanım `bstrPriority` alanını `THREADPROPERTIE`S yapısı.
 
- TPF_NAME başlatma/kullanım `bstrName` alanını `THREADPROPERTIE`S yapısı.
+ `TPF_NAME`\
+ Başlat/kullanım `bstrName` alanını `THREADPROPERTIE`S yapısı.
 
- TPF_LOCATION başlatma/kullanım `bstrLocation` alanını `THREADPROPERTIE`S yapısı.
+ `TPF_LOCATION`\
+ Başlat/kullanım `bstrLocation` alanını `THREADPROPERTIE`S yapısı.
 
- Tüm alanları TPF_ALLFIELDS belirtir.
+ `TPF_ALLFIELDS`\
+ Tüm alanları belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu değerleri bir bağımsız değişken olarak geçirilen [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) hangi alanları göstermek için yöntemi [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı olan başlatılacak.
@@ -78,7 +88,7 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

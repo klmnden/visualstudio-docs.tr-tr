@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868760"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458545"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Yığın çerçevesinin açıklamasını alır.
@@ -40,23 +43,23 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwFieldSpec`
+## <a name="parameters"></a>Parametreler
+ `dwFieldSpec`\
 
  [in] Bayraklarının bir birleşimi [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) hangi alanları belirten numaralandırma `pFrameInfo` parametresi olan doldurulmalıdır.
 
- `nRadix`
+ `nRadix`\
 
  [in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out] A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yığın çerçevesini açıklamasını oturum girilir yapısının.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915314"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224183"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Nesneden belirtilen bayt sayısını alır.
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dataSize`
+## <a name="parameters"></a>Parametreler
+ `dataSize`\
 
  [in] Alınacak bayt sayısı ( `data` dizi gerekir tutmak en az bu bayt sayısı).
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out] Gerçekte alınan bayt sayısını döndürür.
 
- `data`
+ `data`\
 
  [out içinde] İstenen veriler ile doldurulacak dizisi.
 
@@ -59,6 +62,6 @@ int GetData(
 ## <a name="remarks"></a>Açıklamalar
  Önerilen bu yöntemin bayt alma işleminde atlamayı mümkün olduğundan tüm veri baytı yerel bir diziye almak için kullanılır. Bu durumda, parametre `dataSize` değeri olarak döndürülmelidir [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907036"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226264"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Metin Şablonunda Visual Studio ModelBus'ı Kullanma
 
@@ -35,7 +35,7 @@ Metin şablonunda ModelBus başvuru çözmek için ' % s'hedefi DSL uyumlu bir b
 
 1. ' % S'hedef DSL çözümü yoksa bir **ModelBusAdapter** proje, Modelbus uzantısı Sihirbazı'nı kullanarak bir tane oluşturun:
 
-    1. İndirip, zaten bunu yapmadıysanız, Visual Studio ModelBus uzantısı yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
+    1. İndirip, zaten bunu yapmadıysanız, Visual Studio ModelBus uzantısı yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
     2. DSL tanım dosyasını açın. Tasarım yüzeyine sağ tıklayın ve ardından **etkinleştirme Modelbus**.
 

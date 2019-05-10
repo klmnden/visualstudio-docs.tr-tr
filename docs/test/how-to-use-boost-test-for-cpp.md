@@ -1,26 +1,27 @@
 ---
 title: Boost.Test için C++ kullanma
-ms.date: 01/29/2018
+description: Visual Studio'da birim testleri oluşturmak için Boost.Test kullanın.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226093"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio'da C++ için Boost.Test kullanma
 
-İçinde **Visual Studio 2017 sürüm 15.5** ve Boost.Test test bağdaştırıcısı olarak Visual Studio IDE'ye daha sonra tümleşiktir **C++ ile masaüstü geliştirme** iş yükü.
+Visual Studio 2017 ve sonraki sürümlerinde, Boost.Test test bağdaştırıcısı olarak Visual Studio IDE'ye tümleşik **ile masaüstü geliştirme C++**  iş yükü.
 
 ![Boost.Test için test bağdaştırıcısı](media/cpp-boost-component.png)
 
-Öğeniz yoksa **C++ ile masaüstü geliştirme** iş yükü yüklenmiş, açık **Visual Studio yükleyicisi** seçip **Değiştir**. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir** düğmesi.
+Öğeniz yoksa **ile masaüstü geliştirme C++**  iş yükü yüklenmiş, açık **Visual Studio yükleyicisi**. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir** düğmesi.
 
 ## <a name="install-boost"></a>Boost yükleyin
 
@@ -48,7 +49,7 @@ Boost.Test gerektirir [Boost](http://www.boost.org/)! Boost yüklü değilse, Vc
 
 Boost.Test tek üstbilgi çeşidini öğesi şablonu kullanır ancak değiştirebilirsiniz #include tek başına kitaplığı değişken kullanılacak yol. Daha fazla bilgi için [Ekle ekleme yönergelerini](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Bir test projesi (Visual Studio 2017 sürüm 15.5) oluşturma
+## <a name="create-a-test-project"></a>Bir test projesi oluşturma
 
 Visual Studio 2017 sürüm 15.5, önceden yapılandırılmış test proje veya öğe şablonları Boost.Test için kullanılabilir. Bu nedenle, oluşturun ve testlerinizi tutmak için bir konsol uygulama projesi yapılandırmanız gerekir.
 

@@ -1,18 +1,18 @@
 ---
 title: Bir Visual C++ DLL'ye UWP uygulamaları için test etme
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562643"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226369"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
@@ -24,15 +24,27 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje**.
+::: moniker range="vs-2019"
 
-2. Yeni Proje iletişim kutusunda Genişlet **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni bir proje oluşturma** iletişim kutusunda, "test" yazın arama kutusuna ve ardından **dil** için C++. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
 
-3. Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.
+   ![Yeni bir UWP test projesi oluşturun](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni proje** iletişim kutusunda Genişlet **yüklü** > **Visual C++**  ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+
+::: moniker-end
+
+1. Yeni Proje iletişim kutusunda Genişlet **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+
+2. Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.
 
      ![Çözüm ve proje adını ve konumunu belirtin](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. Yeni projeyi **unittest1.cpp**.
+3. Yeni projeyi **unittest1.cpp**.
 
      ![UnitTest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> DLL projesi çözüme ekleyin.
 
-1. İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **Yeni Proje Ekle**.
+::: moniker range="vs-2019"
 
-     ![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png)
+İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve arama kutusuna "DLL" yazın. Sonuç listesinden seçin **birim testi uygulaması (Evrensel Windows - C++/CX)**.
 
-2. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)**.
+![RooterLib projesi oluşturma](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Aşağıdaki kodu ekleyin *RooterLib.h* dosyası:
+::: moniker-end
+
+::: moniker range="vs-2017"
+İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**.
+
+![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)**.
+
+2. Aşağıdaki kodu ekleyin *RooterLib.h* dosyası:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
      `CRooterLib` Sınıfı Oluşturucu bildirir ve `SqareRoot` estimator yöntemi.
 
-4. ROOTERLIB_EXPORTS sembol komut satırına ekleyin.
+3. ROOTERLIB_EXPORTS sembol komut satırına ekleyin.
 
     1. İçinde **Çözüm Gezgini**, seçin **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.
 
@@ -109,7 +132,7 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
     3. Seçin  **\<Düzenle … >** gelen **önişlemci tanımları** listeleyin ve ardından ekleyin `ROOTERLIB_EXPORTS` içinde **önişlemci tanımları** iletişim kutusu.
 
-5. Bildirilen işlevlerin en az uygulamaları ekleyin. Açık *RooterLib.cpp* ve aşağıdaki kodu ekleyin:
+4. Bildirilen işlevlerin en az uygulamaları ekleyin. Açık *RooterLib.cpp* ve aşağıdaki kodu ekleyin:
 
     ```cpp
     // constructor

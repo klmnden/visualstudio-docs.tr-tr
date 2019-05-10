@@ -1,6 +1,7 @@
 - name: Visual Basic Öğreticileri
-  href: index.yml
   items:
+    - name: Visual Basic Öğreticileri
+      href: index.yml
     - name: Genel Bakış
       items:
         - name: Visual Studio Hakkında

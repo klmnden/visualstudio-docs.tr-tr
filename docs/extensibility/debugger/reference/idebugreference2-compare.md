@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ca4e944125f6673ca66accdb78742f693def77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869132"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457465"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Başka bir başvuru karşılaştırır. Daha sonraki kullanımlar için ayrılmıştır.
@@ -38,18 +41,18 @@ int Compare ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwCompare`
+## <a name="parameters"></a>Parametreler
+ `dwCompare`\
 
  [in] Bir değer [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) karşılaştırma işlemi, örneğin, eşittir, daha fazla veya daha büyük belirten sabit listesi.
 
- `pReference`
+ `pReference`\
 
  [in] Bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) için karşılaştırılması gereken başvuruyu temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)

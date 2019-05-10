@@ -39,21 +39,25 @@
     - name: Hata ayıklayıcısı ile kodda gezinme
       href: navigating-through-code-with-the-debugger.md
     - name: Kesme noktalarını kullanma
-      href: using-breakpoints.md
       items:
+        - name: Kesme noktalarını kullanma
+          href: using-breakpoints.md
         - name: Kesme noktalarıyla ilgili sorun giderme
           href: troubleshooting-breakpoints.md
     - name: Verileri inceleme
-      href: debugger-windows.md
       items:
+        - name: Verileri inceleme
+          href: debugger-windows.md
         - name: Değişkenleri inceleme
           href: autos-and-locals-windows.md
         - name: Değişkenler üzerinde izleme ayarlama
-          href: watch-and-quickwatch-windows.md
           items:
+            - name: Değişkenler üzerinde izleme ayarlama
+              href: watch-and-quickwatch-windows.md
             - name: Hata ayıklayıcısındaki ifadeler
-              href: expressions-in-the-debugger.md
               items:
+                - name: Hata ayıklayıcısındaki ifadeler
+                  href: expressions-in-the-debugger.md
                 - name: 'C# dilinde biçim belirticileri'
                   href: format-specifiers-in-cpp.md
                 - name: Bağlam işleci (C++)
@@ -67,13 +71,15 @@
         - name: Görselleştiricide dize değerlerini görüntüleme
           href: view-strings-visualizer.md
         - name: Ayrıştırılmış kodu görüntüleme
-          href: how-to-use-the-disassembly-window.md
           items:
+            - name: Ayrıştırılmış kodu görüntüleme
+              href: how-to-use-the-disassembly-window.md
             - name: Bellekte bir sayfa yukarı veya aşağı gitme
               href: how-to-page-up-or-down-in-memory.md
         - name: Yazmaç değerlerini görüntüleme
-          href: how-to-use-the-registers-window.md
           items:
+            - name: Yazmaç değerlerini görüntüleme
+              href: how-to-use-the-registers-window.md
             - name: Yazmaçlar penceresi hakkında
               href: debugging-basics-registers-window.md
             - name: Yazmaç gruplarını görüntüleme ve gizleme
@@ -85,34 +91,39 @@
         - name: Hata ayıklama sırasında XAML özelliklerini denetleme
           href: inspect-xaml-properties-while-debugging.md
     - name: Çağrı yığınını görüntüleme
-      href: how-to-use-the-call-stack-window.md
       items:
+        - name: Çağrı yığınını görüntüleme
+          href: how-to-use-the-call-stack-window.md
         - name: Çağrı yığınının görsel haritasını oluşturma
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: Çağrı Yığını penceresinde karışık kod ve eksik bilgiler
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
     - name: Kodu düzenleme ve hata ayıklamaya devam etme
-      href: edit-and-continue.md
       items:
+        - name: Kodu düzenleme ve hata ayıklamaya devam etme
+          href: edit-and-continue.md
         - name: Düzenle ve Devam Et'i etkinleştirme veya devre dışı bırakma
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Kod değişikliklerini durdurma
           href: how-to-stop-code-changes.md
         - name: Düzenle ve Devam Et (Visual C++)
-          href: edit-and-continue-visual-cpp.md
           items:
+            - name: Düzenle ve Devam Et (Visual C++)
+              href: edit-and-continue-visual-cpp.md
             - name: Desteklenen Kod Değişiklikleri (C++)
               href: supported-code-changes-cpp.md
         - name: 'Düzenle ve Devam Et (Visual C#)'
-          href: edit-and-continue-visual-csharp.md
           items:
+            - name: 'Düzenle ve Devam Et (Visual C#)'
+              href: edit-and-continue-visual-csharp.md
             - name: 'Düzenle ve Devam Et’i kullanma (C#)'
               href: how-to-use-edit-and-continue-csharp.md
             - name: Desteklenen Kod Değişiklikleri
               href: supported-code-changes-csharp.md
         - name: Düzenle ve Devam Et (Visual Basic)
-          href: edit-and-continue-visual-basic.md
           items:
+            - name: Düzenle ve Devam Et (Visual Basic)
+              href: edit-and-continue-visual-basic.md
             - name: Düzenle ve Devam Et ile kesme modunda düzenleme uygulama
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
         - name: XAML kodu çalıştırarak yazma ve hata ayıklama
@@ -122,36 +133,41 @@
     - name: Hata ayıklayıcısı verilerini görüntüleme
       items:
         - name: Modülleri görüntüleme
-          href: how-to-use-the-modules-window.md
           items:
+            - name: Modülleri görüntüleme
+              href: how-to-use-the-modules-window.md
             - name: Programınızın hangi DLL'de kilitlendiğini bulma
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: Betik belgelerini görüntüleme
           href: how-to-view-script-documents.md
     - name: Hata ayıklayıcısı ipuçları ve püf noktaları
-      href: debugger-tips-and-tricks.md
       items:
+        - name: Hata ayıklayıcısı ipuçları ve püf noktaları
+          href: debugger-tips-and-tricks.md
         - name: Hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: Tasarım zamanında hata ayıklama
           href: walkthrough-debugging-at-design-time.md
         - name: Anında Hata Ayıklayıcı’yı kullanarak hata ayıklama
-          href: debug-using-the-just-in-time-debugger.md
           items:
+            - name: Anında Hata Ayıklayıcı’yı kullanarak hata ayıklama
+              href: debug-using-the-just-in-time-debugger.md
             - name: Anında Hata Ayıklayıcı’yı devre dışı bırakma
               href: just-in-time-debugging-in-visual-studio.md
     - name: Hata ayıklamayı yapılandırma
       items:
         - name: Özel durumları hata ayıklayıcısı ile yönetme
-          href: managing-exceptions-with-the-debugger.md
           items:
+            - name: Özel durumları hata ayıklayıcısı ile yönetme
+              href: managing-exceptions-with-the-debugger.md
             - name: Özel durumdan sonra yürütmeye devam etme
               href: continuing-execution-after-an-exception.md
             - name: Özel durumdan sonra sistem kodunu inceleme
               href: how-to-examine-system-code-after-an-exception.md
             - name: Yerel çalışma zamanı denetimlerini kullanma
-              href: how-to-use-native-run-time-checks.md
               items:
+                - name: Yerel çalışma zamanı denetimlerini kullanma
+                  href: how-to-use-native-run-time-checks.md
                 - name: Yerel çalışma zamanı denetimlerini özelleştirme
                   href: native-run-time-checks-customization.md
                 - name: Çalışma zamanı hata raporlama işlevi yazma
@@ -163,18 +179,21 @@
         - name: Kullanıcı kodunda hata ayıklama
           href: just-my-code.md
         - name: Hata ayıklayıcısı ayarları ve hazırlığı
-          href: debugger-settings-and-preparation.md
           items:
+            - name: Hata ayıklayıcısı ayarları ve hazırlığı
+              href: debugger-settings-and-preparation.md
             - name: Hata ayıklayıcısı proje ayarları
-              href: debugger-project-settings.md
               items:
+                - name: Hata ayıklayıcısı proje ayarları
+                  href: debugger-project-settings.md
                 - name: Hata ayıklayıcısı ayarlarını belirtme
                   href: how-to-specify-debugger-settings.md
                 - name: Hata ayıklama ve dağıtım yapılandırmalarını ayarlama
                   href: how-to-set-debug-and-release-configurations.md
                 - name: C++ hata ayıklama yapılandırması proje ayarları
-                  href: project-settings-for-a-cpp-debug-configuration.md
                   items:
+                    - name: C++ hata ayıklama yapılandırması proje ayarları
+                      href: project-settings-for-a-cpp-debug-configuration.md
                     - name: Visual C++'de hata ayıklama özelliklerini etkinleştirme (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web projeleri özellik sayfası ayarları
@@ -184,8 +203,9 @@
                 - name: Visual Basic hata ayıklama yapılandırması proje ayarları
                   href: project-settings-for-a-visual-basic-debug-configuration.md
             - name: DLL projelerinde hata ayıklama
-              href: debugging-dll-projects.md
               items:
+                - name: DLL projelerinde hata ayıklama
+                  href: debugging-dll-projects.md
                 - name: DLL Projesinde hata ayıklama
                   href: how-to-debug-from-a-dll-project.md
                 - name: Karışık modda hata ayıklama
@@ -199,23 +219,27 @@
             - name: Hata ayıklama için .NET Framework sürümü belirtme
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
         - name: Verilerin özel görünümlerini oluşturma
-          href: viewing-data-in-the-debugger.md
           items:
+            - name: Verilerin özel görünümlerini oluşturma
+              href: viewing-data-in-the-debugger.md
             - name: C++ nesnelerinin özel görünümlerini oluşturma
-              href: create-custom-views-of-native-objects.md
               items:
+                - name: C++ nesnelerinin özel görünümlerini oluşturma
+                  href: create-custom-views-of-native-objects.md
                 - name: Visual C++ özel görselleştirici uyumluluğu
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Yönetilen nesnelerin özel görünümlerini oluşturma
-              href: create-custom-views-of-dot-managed-objects.md
               items:
+                - name: Yönetilen nesnelerin özel görünümlerini oluşturma
+                  href: create-custom-views-of-dot-managed-objects.md
                 - name: Hata ayıklayıcıya ne göstereceğini söyleme
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Hata ayıklayıcıya hangi türü göstereceğini söyleme
                   href: using-debuggertypeproxy-attribute.md
             - name: Verilerin özel görselleştiricilerini oluşturma
-              href: create-custom-visualizers-of-data.md
               items:
+                - name: Verilerin özel görselleştiricilerini oluşturma
+                  href: create-custom-visualizers-of-data.md
                 - name: Görselleştirici mimarisi
                   href: visualizer-architecture.md
                 - name: 'İzlenecek yol: C# dilinde görselleştirici yazma'
@@ -233,8 +257,9 @@
         - name: Gizli hata ayıklayıcısı komutlarını geri yükleme
           href: how-to-restore-hidden-debugger-commands.md
     - name: Uzaktan hata ayıklama
-      href: remote-debugging.md
       items:
+        - name: Uzaktan hata ayıklama
+          href: remote-debugging.md
         - name: IIS bilgisayarında ASP.NET Core hatalarını uzaktan ayıklama
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
@@ -252,8 +277,9 @@
         - name: Windows Server’da indirme engelini kaldırma
           href: remote-debugging-unblock-file-download.md
         - name: Uzaktan hata ayıklama hataları ve sorun giderme
-          href: remote-debugging-errors-and-troubleshooting.md
           items:
+            - name: Uzaktan hata ayıklama hataları ve sorun giderme
+              href: remote-debugging-errors-and-troubleshooting.md
             - name: Uzak bilgisayardaki Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisinin bu bilgisayara bağlanma izni yok
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
             - name: Uzak bilgisayara erişilmeye çalışılırken DCOM hatası oluştu. Erişim reddedildi.
@@ -299,13 +325,15 @@
             - name: 'Uzak Makine, Uzaktan Bağlantılar iletişim kutusunda görünmüyor'
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
     - name: Çok iş parçacıklı uygulamaların hatalarını ayıklama
-      href: debug-multithreaded-applications-in-visual-studio.md
       items:
+        - name: Çok iş parçacıklı uygulamaların hatalarını ayıklama
+          href: debug-multithreaded-applications-in-visual-studio.md
         - name: Çok iş parçacıklı uygulamalarda Hata Ayıklamaya başlama
           href: get-started-debugging-multithreaded-apps.md
         - name: İş parçacıklarında ve işlemlerde hata ayıklama araçları
-          href: debug-threads-and-processes.md
           items:
+            - name: İş parçacıklarında ve işlemlerde hata ayıklama araçları
+              href: debug-threads-and-processes.md
             - name: Paralel Yığınlar penceresini kullanma
               href: using-the-parallel-stacks-window.md
             - name: Paralel İzleme penceresini kullanma
@@ -335,8 +363,9 @@
         - name: Yerel kodda iş parçacığı adı ayarlama
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
-      href: intellitrace.md
       items:
+        - name: IntelliTrace
+          href: intellitrace.md
         - name: IntelliTrace ile anlık görüntüleri görüntüleme
           href: view-snapshots-with-intellitrace.md
         - name: IntelliTrace ile olayları görüntüleme
@@ -348,8 +377,9 @@
         - name: Geçmiş hata ayıklamayı kullanarak uygulamanızı denetleyin
           href: historical-debugging-inspect-app.md
         - name: Dağıtımdan sonra sorunları tanılama
-          href: diagnose-problems-after-deployment.md
           items:
+            - name: Dağıtımdan sonra sorunları tanılama
+              href: diagnose-problems-after-deployment.md
             - name: IntelliTrace tek başına toplayıcıyı kullanma
               href: using-the-intellitrace-stand-alone-collector.md
             - name: Microsoft İzleme Aracısı’nı kullanma
@@ -359,8 +389,9 @@
         - name: IntelliTrace Genişletilebilirliği için API Başvurusu
           href: api-reference-for-intellitrace-extensibility.md
     - name: Azure hizmetlerinde hata ayıklama
-      href: debug-azure-apps.md
       items:
+        - name: Azure hizmetlerinde hata ayıklama
+          href: debug-azure-apps.md
         - name: Canlı bir Azure uygulamasında hata ayıklama
           href: debug-live-azure-applications.md
         - name: Canlı bir Azure sanal makine uygulamasında hata ayıklama
@@ -374,16 +405,19 @@
         - name: Canlı Azure sanal makine uygulamasında Zaman Atlatma Hata Ayıklaması
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
     - name: Belirli uygulama türlerinde hata ayıklama
-      href: debugging-applications.md
       items:
+        - name: Belirli uygulama türlerinde hata ayıklama
+          href: debugging-applications.md
         - name: 64 Bit uygulamalarda hata ayıklama
           href: debug-64-bit-applications.md
         - name: UWP uygulamalarında hata ayıklama
-          href: debugging-windows-store-and-windows-universal-apps.md
           items:
+            - name: UWP uygulamalarında hata ayıklama
+              href: debugging-windows-store-and-windows-universal-apps.md
             - name: UWP uygulaması için hata ayıklama oturumu başlatma
-              href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
               items:
+                - name: UWP uygulaması için hata ayıklama oturumu başlatma
+                  href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
                 - name: Uzak makinede UWP uygulamalarının hatalarını ayıklama
                   href: run-windows-store-apps-on-a-remote-machine.md
                 - name: Simülatörde UWP uygulamaları çalıştırma
@@ -395,8 +429,9 @@
             - name: Blend'de XAML hatalarını ayıklama
               href: debug-xaml-in-blend.md
             - name: HTML ve CSS hatalarını ayıklama
-              href: quickstart-debug-html-and-css.md
               items:
+                - name: HTML ve CSS hatalarını ayıklama
+                  href: quickstart-debug-html-and-css.md
                 - name: Uygulamayı yenileme (JavaScript)
                   href: refresh-an-app-javascript.md
                 - name: WebView denetiminde hata ayıklama
@@ -410,11 +445,13 @@
             - name: Microsoft Store uygulamaları için içeriği önceden getirme
               href: prefetch-content-for-windows-store-apps.md
         - name: Yönetilen kodda hata ayıklama
-          href: debugging-managed-code.md
           items:
+            - name: Yönetilen kodda hata ayıklama
+              href: debugging-managed-code.md
             - name: 'Hata ayıklama hazırlığı: C#, F# ve Visual Basic proje türleri'
-              href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
               items:
+                - name: 'Hata ayıklama hazırlığı: C#, F# ve Visual Basic proje türleri'
+                  href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: 'Yönetilen hata ayıklama: Önerilen özellik ayarları'
                   href: managed-debugging-recommended-property-settings.md
                 - name: 'Hata ayıklama hazırlığı: Windows Forms uygulamaları'
@@ -442,8 +479,9 @@
             - name: .NET Framework kaynağında hata ayıklama
               href: how-to-debug-dotnet-framework-source.md
             - name: WPF hatalarını ayıklama
-              href: debugging-wpf.md
               items:
+                - name: WPF hatalarını ayıklama
+                  href: debugging-wpf.md
                 - name: WPF Ağacı Görselleştiricisini kullanma
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: WPF izleme bilgilerini görüntüleme
@@ -451,8 +489,9 @@
             - name: 'F# hatalarını ayıklama'
               href: debugging-f-hash.md
         - name: Yerel kodda hata ayıklama
-          href: debugging-native-code.md
           items:
+            - name: Yerel kodda hata ayıklama
+              href: debugging-native-code.md
             - name: 'Hata ayıklama hazırlığı: Visual C++ proje türleri'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: İyileştirilmiş kodda hata ayıklama
@@ -466,8 +505,9 @@
             - name: MFC hata ayıklama teknikleri
               href: mfc-debugging-techniques.md
             - name: CRT hata ayıklama teknikleri
-              href: crt-debugging-techniques.md
               items:
+                - name: CRT hata ayıklama teknikleri
+                  href: crt-debugging-techniques.md
                 - name: CRT hata ayıklama kitaplığı kullanımı
                   href: crt-debug-library-use.md
                 - name: Raporlama makroları
@@ -477,13 +517,15 @@
                 - name: CRT hata ayıklama öbeği ayrıntıları
                   href: crt-debug-heap-details.md
                 - name: Hata ayıklama kanca işlevi yazma
-                  href: debug-hook-function-writing.md
                   items:
+                    - name: Hata ayıklama kanca işlevi yazma
+                      href: debug-hook-function-writing.md
                     - name: İstemci blok kanca işlevleri
                       href: client-block-hook-functions.md
                     - name: Atama kanca işlevleri
-                      href: allocation-hook-functions.md
                       items:
+                        - name: Atama kanca işlevleri
+                          href: allocation-hook-functions.md
                         - name: Atama kancaları ve C Çalışma Zamanı bellek ayırmaları
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
                     - name: Kanca işlevlerini raporlama
@@ -491,8 +533,9 @@
                 - name: CRT kitaplığı ile bellek sızıntılarını bulma
                   href: finding-memory-leaks-using-the-crt-library.md
             - name: Yerel kodda hata ayıklama SSS
-              href: debugging-native-code-faqs.md
               items:
+                - name: Yerel kodda hata ayıklama SSS
+                  href: debugging-native-code-faqs.md
                 - name: Erişim ihlalinde nasıl hata ayıklayabilirim?
                   href: how-can-i-debug-an-access-violation-q.md
                 - name: Kendi programımı hata ayıklayıcı dışında çalıştırırken erişim ihlallerinde nasıl hata ayıklayabilirim?
@@ -514,16 +557,19 @@
                 - name: Durdurulduysa MFC'yi çağıran işleve geri dönme
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
             - name: COM ve ActiveX hata ayıklaması
-              href: com-and-activex-debugging.md
               items:
+                - name: COM ve ActiveX hata ayıklaması
+                  href: com-and-activex-debugging.md
                 - name: COM sunucusunda ve kapsayıcısında hata ayıklama
-                  href: com-server-and-container-debugging.md
                   items:
+                    - name: COM sunucusunda ve kapsayıcısında hata ayıklama
+                      href: com-server-and-container-debugging.md
                     - name: RPC hata ayıklamasını kullanarak COM istemcilerinde ve sunucularda hata ayıklama
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: ActiveX denetiminde hata ayıklama
-                  href: how-to-debug-an-activex-control.md
                   items:
+                    - name: ActiveX denetiminde hata ayıklama
+                      href: how-to-debug-an-activex-control.md
                     - name: Veri bağımlı ActiveX denetiminde hata ayıklama
                       href: debugging-a-data-bound-activex-control.md
                 - name: COM hata ayıklama araçları
@@ -535,8 +581,9 @@
         - name: Grafik tanılaması
           href: graphics/toc.yml
         - name: ASP.NET uygulamalarında hata ayıklama
-          href: how-to-enable-debugging-for-aspnet-applications.md
           items:
+            - name: ASP.NET uygulamalarında hata ayıklama
+              href: how-to-enable-debugging-for-aspnet-applications.md
             - name: 'ASP.NET hata ayıklama: sistem gereksinimleri'
               href: aspnet-debugging-system-requirements.md
             - name: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
@@ -550,11 +597,13 @@
             - name: ASP.NET özel durumlarında hata ayıklama
               href: how-to-debug-aspnet-exceptions.md
             - name: 'Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme'
-              href: debugging-web-applications-errors-and-troubleshooting.md
               items:
+                - name: 'Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme'
+                  href: debugging-web-applications-errors-and-troubleshooting.md
                 - name: 'Web uygulamalarında hata ayıklama: Sorun giderme'
-                  href: debugging-web-applications-troubleshooting.md
                   items:
+                    - name: 'Web uygulamalarında hata ayıklama: Sorun giderme'
+                      href: debugging-web-applications-troubleshooting.md
                     - name: IIS özellik ayarlarını doğrulama
                       href: how-to-verify-iis-property-settings.md
                 - name: Site IP adresi kullanıyor
@@ -570,32 +619,37 @@
                 - name: Web hizmetlerinde hata ayıklama sırasında zaman aşımı
                   href: error-timeout-while-debugging-web-services.md
                 - name: Web sunucusunda hata ayıklama başlatılamıyor.
-                  href: error-unable-to-start-debugging-on-the-web-server.md
                   items:
+                    - name: Web sunucusunda hata ayıklama başlatılamıyor.
+                      href: error-unable-to-start-debugging-on-the-web-server.md
                     - name: Web sunucusu istenen kaynağı bulamadı
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Web sunucusu doğru yapılandırılmamış
                       href: error-the-web-server-is-not-configured-correctly.md
         - name: Web uygulamalarında hata ayıklama
-          href: debugging-web-applications.md
           items:
+            - name: Web uygulamalarında hata ayıklama
+              href: debugging-web-applications.md
             - name: JavaScript Konsolu komutları
               href: javascript-console-commands.md
             - name: Klavye kısayolları (HTML ve JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
             - name: İstemci tarafı betikte hata ayıklama
-              href: client-side-script-debugging.md
               items:
+                - name: İstemci tarafı betikte hata ayıklama
+                  href: client-side-script-debugging.md
                 - name: Betik hata ayıklama sınırlamaları
                   href: limitations-on-script-debugging.md
                 - name: Betiğe ekleme
-                  href: how-to-attach-to-script.md
                   items:
+                    - name: Betiğe ekleme
+                      href: how-to-attach-to-script.md
                     - name: 'Uyarı: Betik hata ayıklama devre dışı'
                       href: warning-script-debugging-disabled.md
         - name: WCF hizmetlerinde hata ayıklama
-          href: debugging-wcf-services.md
           items:
+            - name: WCF hizmetlerinde hata ayıklama
+              href: debugging-wcf-services.md
             - name: WCE hata ayıklama sınırlamaları
               href: limitations-on-wcf-debugging.md
             - name: WCF hizmetleri içine adımlama
@@ -603,8 +657,9 @@
             - name: Kendini barındıran WCF hizmetinde hata ayıklama
               href: how-to-debug-a-self-hosted-wcf-service.md
     - name: Döküm dosyalarını kullanma
-      href: using-dump-files.md
       items:
+        - name: Döküm dosyalarını kullanma
+          href: using-dump-files.md
         - name: Döküm Dosyası Özeti Genişletilebilirlik API
           href: dump-file-summary-extensibility-api.md
     - name: Hata ayıklayıcısı güvenliği
@@ -612,15 +667,17 @@
 - name: Başvuru
   items:
     - name: Kullanıcı Arabirim Başvurusunda Hata Ayıklama
-      href: debugging-user-interface-reference.md
       items:
+        - name: Kullanıcı Arabirim Başvurusunda Hata Ayıklama
+          href: debugging-user-interface-reference.md
         - name: Kesme Noktaları Seç iletişim kutusu
           href: choose-breakpoints-dialog-box.md
         - name: Uzaktan Hata Ayıklama İçin Güvenlik Duvarını Yapılandır iletişim kutusu
           href: configure-firewall-for-remote-debugging-dialog-box.md
         - name: 'Hata Ayıklama, Seçenekler iletişim kutusu'
-          href: debugging-options-dialog-box.md
           items:
+            - name: 'Hata Ayıklama, Seçenekler iletişim kutusu'
+              href: debugging-options-dialog-box.md
             - name: 'Genel, Hata Ayıklama, Seçenekler iletişim kutusu'
               href: general-debugging-options-dialog-box.md
             - name: 'Tam Zamanında, Hata Ayıklama, Seçenekler iletişim kutusu'
@@ -644,8 +701,9 @@
         - name: Kesme Noktası İsabet Edildiğinde iletişim kutusu
           href: when-breakpoint-is-hit-dialog-box.md
         - name: Hataları Ayıklama ve Uyarı İletişim Kutuları
-          href: debugging-errors-and-warning-dialog-boxes.md
           items:
+            - name: Hataları Ayıklama ve Uyarı İletişim Kutuları
+              href: debugging-errors-and-warning-dialog-boxes.md
             - name: Onaylama Başarısız iletişim kutusu
               href: assertion-failed-dialog-box.md
             - name: Değer Değiştirilemez iletişim kutusu
@@ -699,11 +757,13 @@
     - name: Arabirim Erişimi SDK'sında Hata Ayıklama
       href: debug-interface-access/debug-interface-access-sdk.md
     - name: Spy++ yardımı
-      href: spy-increment-help.md
       items:
+        - name: Spy++ yardımı
+          href: spy-increment-help.md
         - name: Spy++ Kullanma
-          href: using-spy-increment.md
           items:
+            - name: Spy++ Kullanma
+              href: using-spy-increment.md
             - name: Spy++'a Giriş
               href: introducing-spy-increment.md
             - name: Spy++'ı başlatma
@@ -719,11 +779,13 @@
             - name: Spy++ ağaçlarını genişletme ve daraltma
               href: how-to-expand-and-collapse-spy-increment-trees.md
         - name: Spy++ Görünümleri
-          href: spy-increment-views.md
           items:
+            - name: Spy++ Görünümleri
+              href: spy-increment-views.md
             - name: Pencereler Görünümü
-              href: windows-view.md
               items:
+                - name: Pencereler Görünümü
+                  href: windows-view.md
                 - name: Bulucu aracını kullanma
                   href: how-to-use-the-finder-tool.md
                 - name: Pencereler Görünümünde Pencere Arama
@@ -731,8 +793,9 @@
                 - name: Pencere özelliklerini görüntüleme
                   href: how-to-display-window-properties.md
             - name: İletiler Görünümü
-              href: messages-view.md
               items:
+                - name: İletiler Görünümü
+                  href: messages-view.md
                 - name: İletiler Görünümünü Denetleme
                   href: how-to-control-messages-view.md
                 - name: Bul penceresinden İletiler Görünümünü açma
@@ -746,25 +809,29 @@
                 - name: İleti özelliklerini görüntüleme
                   href: how-to-display-message-properties.md
             - name: İşlemler Görünümü
-              href: processes-view.md
               items:
+                - name: İşlemler Görünümü
+                  href: processes-view.md
                 - name: İşlemler Görünümünde işlem arama
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: İşlem özelliklerini görüntüleme
                   href: how-to-display-process-properties.md
             - name: İş Parçacıkları Görünümü
-              href: threads-view.md
               items:
+                - name: İş Parçacıkları Görünümü
+                  href: threads-view.md
                 - name: İş Parçacıkları Görünümünde iş parçacığı arama
                   href: how-to-search-for-a-thread-in-threads-view.md
                 - name: İş parçacığı özelliklerini görüntüleme
                   href: how-to-display-thread-properties.md
         - name: Spy++ Başvurusu
-          href: spy-increment-reference.md
           items:
+            - name: Spy++ Başvurusu
+              href: spy-increment-reference.md
             - name: Menü Komutları
-              href: menu-commands.md
               items:
+                - name: Menü Komutları
+                  href: menu-commands.md
                 - name: Spy menü komutları
                   href: spy-menu-commands.md
                 - name: Ağaç menü komutları
@@ -782,8 +849,9 @@
             - name: Yazı Tipi iletişim kutusu (Microsoft Spy++ Yardımı)
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Spy++ görünümleri için arama araçları
-              href: search-tools-for-spy-increment-views.md
               items:
+                - name: Spy++ görünümleri için arama araçları
+                  href: search-tools-for-spy-increment-views.md
                 - name: Pencere Bul İletişim Kutusu
                   href: find-window-dialog-box.md
                 - name: Pencere Arama iletişim kutusu
@@ -795,8 +863,9 @@
                 - name: İş Parçacığı Arama iletişim kutusu
                   href: thread-search-dialog-box.md
             - name: Pencere Özellikleri iletişim kutusu
-              href: window-properties-dialog-box.md
               items:
+                - name: Pencere Özellikleri iletişim kutusu
+                  href: window-properties-dialog-box.md
                 - name: 'Genel Sekme, Pencere Özellikleri iletişim kutusu'
                   href: general-tab-window-properties-dialog-box.md
                 - name: 'Stiller Sekmesi, Pencere Özellikleri iletişim kutusu'
@@ -808,8 +877,9 @@
                 - name: 'İşlem Sekmesi, Pencere Özellikleri iletişim kutusu'
                   href: process-tab-window-properties-dialog-box.md
             - name: İleti Seçenekleri iletişim kutusu
-              href: message-options-dialog-box.md
               items:
+                - name: İleti Seçenekleri iletişim kutusu
+                  href: message-options-dialog-box.md
                 - name: 'Pencereler Sekmesi, İleti Seçenekleri iletişim kutusu'
                   href: windows-tab-message-options-dialog-box.md
                 - name: 'İletiler Sekmesi, İleti Seçenekleri iletişim kutusu'
@@ -819,8 +889,9 @@
             - name: İleti Özellikleri iletişim kutusu
               href: message-properties-dialog-box.md
             - name: İşlem Özellikleri iletişim kutusu
-              href: process-properties-dialog-box.md
               items:
+                - name: İşlem Özellikleri iletişim kutusu
+                  href: process-properties-dialog-box.md
                 - name: 'Genel Sekmesi, İşlem Özellikleri iletişim kutusu'
                   href: general-tab-process-properties-dialog-box.md
                 - name: 'Bellek Sekmesi, İşlem Özellikleri iletişim kutusu'
@@ -830,13 +901,15 @@
                 - name: 'Alan Sekmesi, İşlem Özellikleri iletişim kutusu'
                   href: space-tab-process-properties-dialog-box.md
             - name: İş Parçacığı Özellikleri iletişim kutusu
-              href: thread-properties-dialog-box.md
               items:
+                - name: İş Parçacığı Özellikleri iletişim kutusu
+                  href: thread-properties-dialog-box.md
                 - name: 'Genel Sekmesi, İş Parçacığı Özellikleri iletişim kutusu'
                   href: general-tab-thread-properties-dialog-box.md
             - name: Diğer iletişim kutuları
-              href: other-dialog-boxes.md
               items:
+                - name: Diğer iletişim kutuları
+                  href: other-dialog-boxes.md
                 - name: Microsoft Spy++ Hakkında
                   href: about-microsoft-spy-increment.md
                 - name: Spy++ yardımı için telif hakkı bildirimi

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04a76c88e5fd3eee146f6c174087298bac2b6974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915633"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226230"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Bir iş parçacığı adını alır.
@@ -36,8 +39,8 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pbstrName`
+## <a name="parameters"></a>Parametreler
+ `pbstrName`\
 
  [out] İş parçacığı adını döndürür.
 
@@ -47,6 +50,6 @@ int GetName ( 
 ## <a name="remarks"></a>Açıklamalar
  Alınan adı her zaman görüntülenebilir bir addır ve bu ad iş parçacığı açıklar. İş parçacığı adı türetilen destekler adlı iş parçacıkları veya hata ayıklama altyapısı türetilmiş bir ad olabilir bir çalışma zamanı mimarisi. Alternatif olarak, iş parçacığının adı için bir çağrı tarafından ayarlanabilir [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

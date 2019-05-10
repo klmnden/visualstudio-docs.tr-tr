@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0ef171d24b3744657a2cb05338b2b124a6331c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7522e1c00598574e46e1f23622f0e051fcfb2c4e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864680"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460862"
 ---
 # <a name="structures-and-unions"></a>Yapılar ve Birleşimler
 Yapılar ve birleşimler hata ayıklama Visual Studio SDK'sında aşağıda verilmiştir.
@@ -139,5 +139,5 @@ Yapılar ve birleşimler hata ayıklama Visual Studio SDK'sında aşağıda veri
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

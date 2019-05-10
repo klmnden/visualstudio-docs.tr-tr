@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823689"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459144"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio'da FxCop Çözümleyicileri yükleyin
 
@@ -53,9 +53,9 @@ Visual Studio sürümünüz için yüklenecek FxCop Çözümleyicileri paketini 
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>FxCop Çözümleyicileri bir VSIX yüklemek için
 
-Visual Studio 2017'de sürüm 15.5 ve üzeri yükleyebileceğiniz [Microsoft Kod Analizi 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) tüm FxCop Çözümleyicileri yönetilen projeler içeren bir uzantı.
-
 ::: moniker range="vs-2017"
+
+Visual Studio 2017'de sürüm 15.5 ve üzeri yükleyebileceğiniz [Microsoft Kod Analizi 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) tüm FxCop Çözümleyicileri yönetilen projeler içeren bir uzantı.
 
 1. Visual Studio'da **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
@@ -64,40 +64,52 @@ Visual Studio 2017'de sürüm 15.5 ve üzeri yükleyebileceğiniz [Microsoft Kod
    > [!NOTE]
    > Alternatif olarak, doğrudan uzantısını [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
+2. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
+
+3. Arama kutusuna "Kod Analizi" yazın ve Ara **Microsoft Kod Analizi 2017** uzantısı.
+
+   ![Microsoft Kod Analizi 2017 uzantısı](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+[Microsoft Kod Analizi 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) uzantısı tüm yönetilen projeler için FxCop Çözümleyicileri içerir. Bu uzantıyı yüklemek için:
 
 1. Visual Studio'da **uzantıları** > **uzantıları yönetme**.
 
    **Uzantıları yönetme** iletişim kutusu açılır.
 
    > [!NOTE]
-   > Alternatif olarak, doğrudan uzantısını [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+   > Alternatif olarak, doğrudan uzantısını [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
+
+3. Arama kutusuna "Kod Analizi" yazın ve Ara **Microsoft Kod Analizi 2019** uzantısı.
+
+   ![Microsoft Kod Analizi 2019 uzantısı](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
-
-1. Arama kutusuna "Kod Analizi" yazın ve Ara **Microsoft Kod Analizi 2017** uzantısı.
-
-   ![Microsoft Kod Analizi uzantısı](media/extensions-and-updates-code-analysis.png)
-
-1. Seçin **indirme**.
+4. Seçin **indirme**.
 
    Uzantı yüklenir.
 
-1. Seçin **Tamam** iletişim kutusunu kapatın ve ardından başlatmak için Visual Studio'nun tüm örneklerini kapatın **VSIX yükleyicisi**.
+5. Seçin **Tamam** iletişim kutusunu kapatın ve ardından başlatmak için Visual Studio'nun tüm örneklerini kapatın **VSIX yükleyicisi**.
 
    **VSIX yükleyicisi** iletişim kutusu açılır.
 
+   ::: moniker range="vs-2017"
+
    ![Microsoft Kod Analizi için VSIX yükleyicisi](media/vsix-installer-code-analysis.png)
 
-1. Seçin **Değiştir** yüklemeyi başlatmak için.
+   ::: moniker-end
 
-1. Bir veya iki dakika sonra yükleme işlemini tamamlar. Seçin **Kapat**.
+6. Seçin **Değiştir** yüklemeyi başlatmak için.
 
-1. Visual Studio'yu yeniden açın.
+   Bir veya iki dakika sonra yükleme işlemini tamamlar.
+
+7. Seçin **Kapat**, sonra Visual Studio'yu yeniden açın.
 
 ::: moniker range="vs-2017"
 

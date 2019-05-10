@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960640"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226048"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
@@ -71,10 +71,10 @@ Bu örnekte, boş bir ASP.NET Core uygulaması (C#) kullanın. Ancak, çeşitli 
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, ardından **yeni bir ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, ardından **yeni bir ASP.NET Core Web uygulaması oluşturma**. Görüntülenen iletişim kutusunda adı yazın **istemci uygulaması**ve ardından **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **Visual C#** , ardından **Web**. Orta bölmede seçin **ASP.NET Core Web uygulaması**, ardından **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **Visual C#** , ardından **Web**. Orta bölmede seçin **ASP.NET Core Web uygulaması**, adı **istemci uygulaması**ve ardından **Tamam**.
     ::: moniker-end
 
     Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, yüklemelisiniz **ASP.NET ve web geliştirme** iş yükü ve. **NET Core** geliştirme iş yükü ilk. Workload(s) yüklemek için tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Gerekli iş yüklerini seçin.
@@ -100,14 +100,14 @@ CLI vue npm modülünü yüklemek için bir komut istemi açıp `npm install --g
 
 1. Komut istemine gidin ve geçerli dizini, proje kök klasörüne değiştirin.
 
-1. Tür `vue init webpack ClientApp` ve ek soruları yanıtlamak için istendiğinde adımları izleyin.
+1. Tür `vue init webpack client-app` ve ek soruları yanıtlamak için istendiğinde adımları izleyin.
 
     > [!NOTE]
     > İçin *.vue* dosyaları, Web veya benzer bir çerçeve bir yükleyici ile dönüştürme yapmak için kullanmanız gerekir. TypeScript ve Visual Studio bilmiyor nasıl yapılandırılabileceğini *.vue* dosyaları. Aynı paketleme için geçerlidir; TypeScript ES2015 modülleri nasıl dönüştürme yapılacağını bildiğiniz değil (diğer bir deyişle, `import` ve `export` deyimleri) tek bir son *.js* tarayıcıda yüklemek için dosya. Yeniden Web en iyi burada seçimdir. Bu işlemden Visual Studio'da MSBuild kullanma amacıyla, Visual Studio şablondan başlatmanız gerekir. Şu anda hiçbir Vue.js geliştirme içinde hazır ASP.NET şablonu yoktur.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Web yapılandırmasını wwwroot oluşturulmuş dosyaları çıkış değiştirin
 
-* Dosyayı açmak *./ClientApp/config/index.js*, değiştirip `build.index` ve `build.assetsRoot` wwwroot yolu:
+* Dosyayı açmak *./client-app/config/index.js*, değiştirip `build.index` ve `build.assetsRoot` wwwroot yolu:
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ CLI vue npm modülünü yüklemek için bir komut istemi açıp `npm install --g
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>ClientApp oluşturmak için projeyi gösteren bir derlemenin tetiklenmesinin her zaman
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Bir derlemenin tetiklenmesinin her zaman istemci uygulaması oluşturmak için proje belirtin
 
 1. Visual Studio'da Git **proje** > **özellikleri** > **Build Events**.
 
-1. Üzerinde **derleme öncesi olay komut satırı**, türü `npm --prefix ./ClientApp run build`.
+1. Üzerinde **derleme öncesi olay komut satırı**, türü `npm --prefix ./client-app run build`.
 
 #### <a name="configure-webpacks-output-module-names"></a>Web'ın çıktı modül adlarını yapılandırın
 
-* Dosyayı açmak *./ClientApp/build/webpack.base.conf.js*ve çıkış özelliğini aşağıdaki özellikleri ekleyin:
+* Dosyayı açmak *./client-app/build/webpack.base.conf.js*ve çıkış özelliğini aşağıdaki özellikleri ekleyin:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ Bu adımlar vue-şu anda beta sürümünde olan CLI 3.0 gerektirir.
 
 1. Komut istemine gidin ve geçerli dizin proje kök klasörüyle değiştirin.
 
-1. Tür `vue create ClientApp`ve ardından **özellikleri el ile seçin**.
+1. Tür `vue create client-app`ve ardından **özellikleri el ile seçin**.
 
 1. Seçin **Typescript**ve ardından diğer istenen seçenekleri belirleyin.
 
@@ -146,11 +146,11 @@ Bu adımlar vue-şu anda beta sürümünde olan CLI 3.0 gerektirir.
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>TypeScript için Vue.js proje yapılandırma
 
-1. Dosyayı açmak *./ClientApp/tsconfig.json* ve ekleme `noEmit:true` derleyici seçenekleri.
+1. Dosyayı açmak *./client-app/tsconfig.json* ve ekleme `noEmit:true` derleyici seçenekleri.
 
     Bu seçenek ayarlayarak, projenizi Visual Studio'da derleyin her zaman karmaşık hale getirmekten kaçının.
 
-1. Ardından, oluşturun bir *vue.config.js* dosyası *./ClientApp/* ve aşağıdaki kodu ekleyin.
+1. Ardından, oluşturun bir *vue.config.js* dosyası *./client-app/* ve aşağıdaki kodu ekleyin.
 
     ```js
     module.exports = {
@@ -169,7 +169,7 @@ Bu adımlar vue-şu anda beta sürümünde olan CLI 3.0 gerektirir.
 
 #### <a name="build-with-vue-cli-30"></a>VUE-cli 3.0 ile derleme
 
-Bilinmeyen bir sorun 3.0 vue-CLI ile oluşturma işlemini otomatikleştirmenin engeller. Wwwroot klasörü yenilemeye çalışın her zaman komutunu çalıştırmanız gerekir. `npm run build` ClientApp klasör.
+Bilinmeyen bir sorun 3.0 vue-CLI ile oluşturma işlemini otomatikleştirmenin engeller. Wwwroot klasörü yenilemeye çalışın her zaman komutunu çalıştırmanız gerekir. `npm run build` istemci uygulama klasörü üzerinde.
 
 ## <a name="limitations"></a>Sınırlamalar
 
@@ -179,7 +179,7 @@ Bilinmeyen bir sorun 3.0 vue-CLI ile oluşturma işlemini otomatikleştirmenin e
 * TypeScript tanımıyor *.vue* modülleri olarak dosyaları. TypeScript ne söylemek için aşağıdaki gibi bir kod içeren bir dosyayı duyduğunuz *.vue* dosyaları aramak gibi (vue-cli 3.0 şablonu bu dosya zaten içerir).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

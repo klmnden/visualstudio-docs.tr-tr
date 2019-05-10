@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976203"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461469"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
@@ -62,16 +62,16 @@ Bu kılavuzu tamamlamak için gerekenler:
 
 2. İçinde **configSections** öğesi oluşturmak bir **bölümü** öğesi.
 
-3. İçinde **bölümü** öğesi adlı öznitelik ekleme `name` ve değerini atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve değerini atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. İçinde **bölümü** öğesi adlı öznitelik ekleme `name` ve değerini atayın `microsoft.visualstudio.testtools`. Adlı başka bir öznitelik Ekle `type` ve değerini atayın `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 **Bölümü** öğesi şuna benzer görünmelidir:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir. Visual Studio .NET Framework 3.5 kullanıyorsanız sürümü için 9.0.0.0 ayarlayın. Visual Studio .NET Framework 2.0 kullanıyorsanız, sürüm için 8.0.0.0 ayarlayın.
+> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir.
 
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlama
 

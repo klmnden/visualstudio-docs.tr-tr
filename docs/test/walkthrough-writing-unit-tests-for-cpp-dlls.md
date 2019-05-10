@@ -1,18 +1,18 @@
 ---
 title: "Nasıl yapılır: C++ DLL'leri için birim testleri yazma"
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226281"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'leri için birim testleri yazma
 
@@ -38,13 +38,12 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
 
-     İletişim kutusunda, **yüklü** > **şablonları** > **Visual C++** > **Test**.
+     **Visual Studio 2017 ve öncesinde**: Genişletin **yüklü** > **şablonları** > **Visual C++**   >  **Test**.
+     **Visual Studio 2019**: Ayarlama **dil** için C++ ve "test arama kutusuna" yazın.
 
      Seçin **yerel birim testi projesi** şablonu veya ne olursa olsun yüklü tercih ettiğiniz çerçeve. Google Test veya Boost.Test gibi başka bir şablonu seçerseniz, bazı ayrıntılar farklılık gösterir ancak temel ilkelerini aynıdır.
 
      Bu kılavuzda, test projesi adlı `NativeRooterTest`.
-
-     ![C++ birim testi projesi oluşturma](../test/media/utecpp01.png)
 
 2. Yeni projede, inceleme **unittest1.cpp**
 
@@ -85,11 +84,45 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
 
 ## <a name="create_dll_project"></a> Bir DLL projesi oluşturma
 
-1. Oluşturma bir **Visual C++** kullanarak proje **Win32 projesi** şablonu.
+::: moniker range="vs-2019"
+
+Aşağıdaki adımlar Visual Studio 2019 DLL projesi oluşturma işlemini gösterir.
+
+1. Oluşturma bir C++ kullanarak proje **Windows Masaüstü Sihirbazı'nı**: Çözüm adı sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**. Ayarlama **dil** için C++ ve arama kutusuna "windows" yazın. Seçin **Windows Masaüstü Sihirbazı'nı** sonuçları listesinde. 
 
      Bu izlenecek yolda, proje adı `RootFinder`.
 
-     ![Bir C++ Win32 projesi oluşturma](../test/media/utecpp05.png)
+2. Tuşuna **oluşturma**. Sonraki iletişim kutusunda altında **uygulama türü** seçin **dinamik bağlantı kitaplığı (dll)** ve ayrıca **sembolleri dışa aktar**.
+
+     **Sembolleri dışa aktar** seçeneği, dışa aktarılan bir yöntemi bildirmek için kullanabileceğiniz uygun bir makro oluşturur.
+
+     ![DLL ve sembolleri dışarı aktarmak için C++ Proje Sihirbazı](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. Sorumlunun dışa aktarılan bir işlevin bildirmek *.h* dosyası:
+
+     ![Yeni DLL kod projesi ve .h dosyası ile API makroları](../test/media/utecpp07.png)
+
+     Bildirimci `__declspec(dllexport)` DLL dışında görünür olmasını ortak ve korunan üyeleri sınıf neden olur. Daha fazla bilgi için [C++ sınıflarında dllimport ve dllexport kullanma](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. Sorumlunun *.cpp* dosya, işlev için en az bir gövdesi ekleyin:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Aşağıdaki adımlar Visual Studio 2017'de bir DLL projesi oluşturma işlemini gösterir.
+
+1. Oluşturma bir C++ kullanarak proje **Win32 projesi** şablonu.
+
+     Bu izlenecek yolda, proje adı `RootFinder`.
 
 2. Seçin **DLL** ve **sembolleri dışarı aktarma** Win32 Uygulama Sihirbazı'nda.
 
@@ -112,6 +145,8 @@ Bu izlenecek yolda, önce test yöntemi kullanarak yerel bir C++ DLL geliştirme
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> Birkaç DLL projesi için test projesi
 

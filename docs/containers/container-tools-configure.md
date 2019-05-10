@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 6fe51e0067ac15eb8e775786047009411c1e3181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90f90f4e7f085dc4f7ea188833edb3462cbe7e3e
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825112"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084078"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Visual Studio kapsayıcı araçları yapılandırma
 
@@ -62,8 +62,8 @@ Aşağıdaki tabloda açıklanmıştır **tek proje** ve **Docker Compose** ayar
 | Ad | Varsayılan ayar | Uygulanan Öğe | Açıklama |
 | -----|:---------------:|:----------:| ----------- |
 | Projede açık gerekli Docker görüntülerini çekme | Doğru | Tek bir proje, Docker Compose | Proje yüklenirken performansı artırmak için Visual Studio Docker çekme işlemi arka planda böylece kodunuzu çalıştırmak hazır olduğunuzda, görüntü zaten yüklenene veya yükleme sürecinde başlar. Yalnızca projeler yükleniyor ve kod gözatma, ayarlayabileceğiniz **False** gerekmez kapsayıcı görüntülerini yüklenmesini önlemek için. |
-| Kapsayıcıları projede açık Çalıştır | Doğru | Tek bir proje, Docker Compose | Yeniden performansı artırmak için Visual Studio kapsayıcı ile birim başlatmalar, derleme ve kapsayıcı çalıştırma için hazır oluşturur. Kapsayıcı oluşturulduğunda denetlemek istiyorsanız, kümesine **False**. |
-| Proje KILL kapsayıcılarında kapatın | Doğru | Tek proje ve Docker Compose | Kümesine **False** kapsayıcıları çözümünüzün çözümün kapatılması veya Visual Studio kapatıldıktan sonra çalışmaya devam etmesini istiyorsanız. |
+| Kapsayıcıları projede açık Çalıştır | Doğru | Tek bir proje, Docker Compose | Yeniden, derleme ve kapsayıcınızı çalıştırmak için hazır olması daha iyi performans için kapsayıcıyı önceden Visual Studio oluşturur. Kapsayıcı oluşturulduğunda denetlemek istiyorsanız, kümesine **False**. |
+| Proje durdurma kapsayıcılarında kapatın | Doğru | Tek proje ve Docker Compose | Kümesine **False** kapsayıcıları çözümünüzün çözümün kapatılması veya Visual Studio kapatıldıktan sonra çalışmaya devam etmesini istiyorsanız. |
 
 ::: moniker-end
 > [!WARNING]

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913929"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461055"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Hata ayıklama başlatma bayrakları belirtir.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Üyeler
-LAUNCH_DEBUG hata ayıklama işlemi başlatır.
+## <a name="fields"></a>Alanlar
+`LAUNCH_DEBUG`\
+Hata ayıklama işlemi başlatır.
 
-LAUNCH_NODEBUG, hata ayıklama olmadan işlem başlatır.
+`LAUNCH_NODEBUG`\
+Hata ayıklama olmadan işlem başlatır.
 
-LAUNCH_ENABLE_ENC KULLANIMDAN KALDIRILDI, KULLANMAYIN.
+`LAUNCH_ENABLE_ENC`\
+KULLANIM DIŞI, KULLANMAYIN.
 
-LAUNCH_MERGE_ENV işlem başlatır ve ortam başlatan konakla birleştirir.
+`LAUNCH_MERGE_ENV`\
+Bir işlem başlatır ve ortam başlatan konakla birleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerleri bir bağımsız değişken olarak geçirilen [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) yöntemi.
@@ -64,6 +71,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

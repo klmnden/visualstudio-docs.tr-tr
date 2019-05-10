@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223951"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Bu yöntem Görselleştirici temsil eden nesneyi değiştirir.
@@ -40,16 +43,16 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pNewObject`
+## <a name="parameters"></a>Parametreler
+ `pNewObject`\
 
  [in] Ayarlanacağı nesne.
 
- `error`
+ `error`\
 
  [out] Bu dize, nesne ayarlanırken bir hata oluştu, hata iletisi tutar.
 
- `pException`
+ `pException`\
 
  [out] Bir hata varsa, bu nesne, özel durum bilgilerini tutar.
 
@@ -59,6 +62,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>Açıklamalar
  Bu, nasıl hata bilgileri döndürülür belirlemek için en fazla uygulayan olur. Ancak, bir hata olduğunda bu yöntem her zaman bir özel durum nesnesi döndürmelidir bu nedenle bir özel durum nesnesi var. bilmek döndürüldü, görmek için Görünüm, bir hata oluştu. yalnızca bazı çağıranlar olabilir mümkündür. Çağıranın olun ister durumunda hata dizesi ayrıca sağlanan bunu kullanın.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

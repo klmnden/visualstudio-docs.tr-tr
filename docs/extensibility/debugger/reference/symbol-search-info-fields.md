@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420823"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458330"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Sembol bilgilerini almak için türünü belirtir.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Üyeler
- SSIF_NONE belirten bayrak
+## <a name="fields"></a>Alanlar
+ `SSIF_NONE`\
+ Bayrak gösterir
 
- Tüm simgeleri bulmak için kullanılan yolların arama SSIF_VERBOSE_SEARCH_INFO döndürür
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Tüm simgeleri bulmak için kullanılan yolların arama döndürür
 
 ## <a name="remarks"></a>Açıklamalar
  Bu bayraklar parametresi olarak geçirilir [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) döndürülen bilgi miktarını belirlemek için yöntemi.
@@ -60,6 +65,6 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

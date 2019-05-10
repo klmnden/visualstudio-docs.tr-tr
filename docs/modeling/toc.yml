@@ -1,13 +1,15 @@
 - name: Mimarinizi çözümleme ve mimarinizin modelini oluşturma
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: Mimarinizi çözümleme ve mimarinizin modelini oluşturma
+      href: analyze-and-model-your-architecture.md
     - name: Visual Studio 2017’de tasarıma yönelik yenilikler
       href: what-s-new-for-design-in-visual-studio.md
     - name: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: Kodu görselleştirme
-      href: visualize-code.md
       items:
+        - name: Kodu görselleştirme
+          href: visualize-code.md
         - name: Bağımlılıkları eşlemek için kod haritalarını kullanma
           href: map-dependencies-across-your-solutions.md
         - name: Kod haritalarını paylaşma
@@ -31,22 +33,25 @@
         - name: Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
           href: create-layer-diagrams-from-your-code.md
     - name: Uygulamanız için model oluşturma
-      href: create-models-for-your-app.md
       items:
+        - name: Uygulamanız için model oluşturma
+          href: create-models-for-your-app.md
         - name: 'Bağımlılık Diyagramları: Başvuru'
           href: layer-diagrams-reference.md
         - name: 'Bağımlılık Diyagramları: Kuralları'
           href: layer-diagrams-guidelines.md
         - name: Modelleri paylaşma ve diyagramları dışarı aktarma
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: Modelleri paylaşma ve diyagramları dışarı aktarma
+              href: share-models-and-exporting-diagrams.md
             - name: Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Diyagramları görüntü olarak dışarı aktarma
               href: export-diagrams-as-images.md
     - name: Geliştirme sürecinizde modelleri kullanma
-      href: use-models-in-your-development-process.md
       items:
+        - name: Geliştirme sürecinizde modelleri kullanma
+          href: use-models-in-your-development-process.md
         - name: Kullanıcı gereksinimlerini modelleme
           href: model-user-requirements.md
         - name: Uygulama mimarinizi modelleme
@@ -58,15 +63,17 @@
         - name: Visual Studio Mimari Araç Kullanımı Kılavuzu
           href: visual-studio-architecture-tooling-guidance.md
     - name: Geliştirme sırasında sisteminizi doğrulama
-      href: validate-your-system-during-development.md
       items:
+        - name: Geliştirme sırasında sisteminizi doğrulama
+          href: validate-your-system-during-development.md
         - name: Model aracılığıyla test geliştirme
           href: develop-tests-from-a-model.md
         - name: Bağımlılık diyagramları ile kod doğrulama
           href: validate-code-with-layer-diagrams.md
     - name: Bağımlılık diyagramlarını genişletme
-      href: extend-layer-diagrams.md
       items:
+        - name: Bağımlılık diyagramlarını genişletme
+          href: extend-layer-diagrams.md
         - name: Bağımlılık diyagramlarına komut ve hareket ekleme
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
@@ -74,8 +81,9 @@
         - name: Bağımlılık diyagramlarına özel özellikler ekleme
           href: add-custom-properties-to-layer-diagrams.md
     - name: Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Alana Özgü Dilleri Kullanmaya Başlama
           href: getting-started-with-domain-specific-languages.md
         - name: 'Modeller, Sınıflar ve İlişkileri Anlama'
@@ -83,11 +91,13 @@
         - name: 'Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama'
           href: how-to-define-a-domain-specific-language.md
         - name: Alana Özgü Dili Özelleştirme ve Genişletme
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: Alana Özgü Dili Özelleştirme ve Genişletme
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: Diyagramda Sunuyu Özelleştirme
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: Diyagramda Sunuyu Özelleştirme
+                  href: customizing-presentation-on-the-diagram.md
                 - name: Şekiller ve Bağlayıcılar Tanımlayın
                   href: defining-shapes-and-connectors.md
                 - name: 'Renk, Çizgi Stili ve diğer Şekil Özelliklerini denetleme'
@@ -113,8 +123,9 @@
             - name: Etki Alanı Yolu Sözdizimi
               href: domain-path-syntax.md
             - name: Model Öğelerinin Özellikleri
-              href: properties-of-model-elements.md
               items:
+                - name: Model Öğelerinin Özellikleri
+                  href: properties-of-model-elements.md
                 - name: DSL Tanımının Özellikleri
                   href: properties-of-a-dsl-definition.md
                 - name: Etki Alanı Sınıflarının Özellikleri
@@ -144,8 +155,9 @@
             - name: DSL Kitaplığı kullanarak DSL’ler arasında Sınıf paylaşma
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: Alana Özgü Dil Özelleştirmek için Kod yazma
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: Alana Özgü Dil Özelleştirmek için Kod yazma
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: Oluşturulan Sınıfları Geçersiz Kılma ve Genişletme
               href: overriding-and-extending-the-generated-classes.md
             - name: Program Kodunda Modelde Gezinme ve Modeli Güncelleştirme
@@ -173,8 +185,9 @@
         - name: Etki Alanına Özgü bir Dilde Doğrulama
           href: validation-in-a-domain-specific-language.md
         - name: Kullanıcı Komutları ve Eylemlerini yazma
-          href: writing-user-commands-and-actions.md
           items:
+            - name: Kullanıcı Komutları ve Eylemlerini yazma
+              href: writing-user-commands-and-actions.md
             - name: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Kısayol Menüsüne Komut Ekleme
@@ -186,8 +199,9 @@
             - name: Geçerli Seçime Erişme ve Seçimi Kısıtlama
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Değişiklikleri Yanıtlama ve Yayma
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: Değişiklikleri Yanıtlama ve Yayma
+              href: responding-to-and-propagating-changes.md
             - name: Hesaplanan ve Özel Depolama Özellikleri
               href: calculated-and-custom-storage-properties.md
             - name: Etki Alanı Özellik Değeri Değişiklik İşleyicileri
@@ -199,8 +213,9 @@
             - name: Şekilleri ve Bağlayıcıları Modeli Yansıtacak Şekilde Güncelleştirin
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Alana Özgü Dilden Kod Oluşturma
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: Alana Özgü Dilden Kod Oluşturma
+              href: generating-code-from-a-domain-specific-language.md
             - name: Metin Şablonlarından Modellere Erişme
               href: accessing-models-from-text-templates.md
             - name: Metin Şablonunda Visual Studio ModelBus kullanma
@@ -214,8 +229,9 @@
         - name: Dosya Depolama ve XML Serileştirmeyi Özelleştirme
           href: customizing-file-storage-and-xml-serialization.md
         - name: Alana Özgü Dil Çözümlerini Dağıtma
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: Alana Özgü Dil Çözümlerini Dağıtma
+              href: deploying-domain-specific-language-solutions.md
             - name: DSL'nin MSI ve VSIX Dağıtımı
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Bir Çözümde Birden Çok DSL
@@ -227,8 +243,9 @@
         - name: WPF Tabanlı bir Alana Özgü Dil Oluşturma
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Alana Özgü Dil Çözümleriyle Çalışma
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: Alana Özgü Dil Çözümleriyle Çalışma
+              href: working-with-domain-specific-language-solutions.md
             - name: Etki Alanına Özgü Diller Hakkında
               href: about-domain-specific-languages.md
             - name: Etki Alanına Özgü Dil Araçlarına Genel Bakış
@@ -254,11 +271,13 @@
         - name: Visual Studio için Modelleme SDK'sı için API Başvurusu
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: Kod Oluşturma ve T4 Metin Şablonları
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: Kod Oluşturma ve T4 Metin Şablonları
+          href: code-generation-and-t4-text-templates.md
         - name: T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'İzlenecek yol: Metin Şablonları Kullanarak Kod Oluşturma'
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: Derleme Sürecinde Kod Oluşturma
@@ -270,11 +289,13 @@
         - name: T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
           href: run-time-text-generation-with-t4-text-templates.md
         - name: T4 Metin Şablonu Yazma
-          href: writing-a-t4-text-template.md
           items:
+            - name: T4 Metin Şablonu Yazma
+              href: writing-a-t4-text-template.md
             - name: T4 Metin Şablonu Yönergeleri
-              href: t4-text-template-directives.md
               items:
+                - name: T4 Metin Şablonu Yönergeleri
+                  href: t4-text-template-directives.md
                 - name: T4 Şablon Yönergesi
                   href: t4-template-directive.md
                 - name: T4 Parametre Yönergesi
@@ -296,8 +317,9 @@
             - name: Metin Şablonundan Visual Studio’ya veya diğer Konaklara Erişme
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: Metin Şablonlarında Kaçış Sıraları Kullanma
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: Metin Şablonlarında Kaçış Sıraları Kullanma
+                  href: using-escape-sequences-in-text-templates.md
                 - name: Çıkış Sıraları Kullanarak Şablonlardan Şablon Oluşturma
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: T4 Metin Şablonunda Hata Ayıklama
@@ -307,13 +329,15 @@
         - name: Nasıl yapılır ... Metin Şablonları ile
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: T4 Metin Dönüştürmeyi Özelleştirme
-          href: customizing-t4-text-transformation.md
           items:
+            - name: T4 Metin Dönüştürmeyi Özelleştirme
+              href: customizing-t4-text-transformation.md
             - name: Metin Şablonu Dönüştürme Süreci
               href: the-text-template-transformation-process.md
             - name: Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: Özel Yönerge İşlemcisi Dağıtma
                   href: deploying-a-custom-directive-processor.md
                 - name: 'İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma'
@@ -321,8 +345,9 @@
             - name: VS Uzantısında Metin Dönüştürmeyi Çağırma
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Özel bir Konak kullanarak Metin Şablonlarını İşleme
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: Özel bir Konak kullanarak Metin Şablonlarını İşleme
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: 'İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma'
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: T4 Metin Şablonları için API Başvurusu

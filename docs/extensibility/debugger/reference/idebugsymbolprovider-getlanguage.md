@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b20222db9b007fbeee6daf0df1921e4c56744818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915833"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224060"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Bu yöntem, hata ayıklama adresten Kodu derlemek için kullanılan dili alır.
@@ -40,16 +43,16 @@ int GetLanguage(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pAddress`
+## <a name="parameters"></a>Parametreler
+ `pAddress`\
 
  [in] Bir adres nesnesini temsil ettiği bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out] Döndürür bir `GUID` dili belirtir.
 
- `pguidLanguageVendor`
+ `pguidLanguageVendor`\
 
  [out] Döndürür bir `GUID` dil satıcı belirtir.
 
@@ -59,6 +62,6 @@ int GetLanguage(
 ## <a name="remarks"></a>Açıklamalar
  Hata ayıklama altyapısı, doğru bir ifade değerlendiricisi seçmek gereken bilgileri elde etmek için bu yöntemi çağırır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

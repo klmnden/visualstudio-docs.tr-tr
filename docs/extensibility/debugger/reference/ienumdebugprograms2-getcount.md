@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3eab5ac0b73009e42507fe81b9e3ba4d7c36aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 795404d0cae2dd5cbf4f6f913b3ba71cf3fe34a0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914237"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223435"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 Numaralandırmada öğelerin sayısını döndürür.
@@ -36,8 +39,8 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pcelt`
+## <a name="parameters"></a>Parametreler
+ `pcelt`\
 
  [out] Numaralandırmada öğelerin sayısını döndürür.
 
@@ -47,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem yalnızca belirten geleneksel COM numaralandırma arabiriminin bir parçası değil `Next`, `Clone`, `Skip`, ve `Reset` yöntemleri uygulanması gerekir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868463"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224003"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Belirtilen hata ayıklama adresindeki yöntem hakkında bilgi alır.
@@ -47,37 +50,37 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pAddress`
+## <a name="parameters"></a>Parametreler
+ `pAddress`\
 
  [in] Tarafından temsil edilen adresi hata ayıklama [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
 
- `pGuid`
+ `pGuid`\
 
  [out] Modülün benzersiz tanımlayıcısı.
 
- `pAppID`
+ `pAppID`\
 
  [out] Uygulama etki alanı tanımlayıcısı.
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out] Belirteç, içeren sınıfı temsil eder.
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out] Modülü temsil eden belirteç.
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out] Başından itibaren bayt uzaklığını `pAddress` parametresi.
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out] Yöntem sürüm numarası.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

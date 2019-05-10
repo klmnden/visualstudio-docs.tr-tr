@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386933"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476544"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Visual Studio 2017’de tasarıma yönelik yenilikler
 
 ## <a name="live-dependency-validation"></a>Canlı bağımlılık doğrulama
 
-İstenmeyen bağımlılık kaldırma, teknik borcun yönetimi, önemli bir parçasıdır. Canlı doğrulama bağımlılıklarının içerdiği artık sorunları hakkında kesin bilgi sağlama ve hata listesi ve düzenleyici yeni özelliklerinden tam olarak yararlanıyor.
+İstenmeyen bağımlılık kaldırma, teknik borcun yönetimi, önemli bir parçasıdır. Visual Studio, nerede olurlarsa olsunlar gibi konular hakkında kesin bilgi dahil olmak üzere, bağımlılık Canlı doğrulama sağlar. Canlı bağımlılık doğrulama alır tam avantajları yeni özellikler ve Hata Listesi Düzenleyici.
 
 ![Eylem Canlı bağımlılık doğrulama](media/dep-validation-whatsnew-01.png)
 
-Yazma deneyiminde daha bulunabilir ve daha erişilebilir değiştirme "Katman diyagramından" terminoloji "Bağımlılık diyagrama" bağımlılık doğrulaması yapmak için değişti.
+Yazma deneyiminde, bağımlılık doğrulaması daha bulunabilir ve daha erişilebilir hale getirmek için değişti. Terminoloji "Katman diyagramından", "Bağımlılık diyagrama" değişti.
 
 **Mimarisi** menüsü artık, doğrudan bir bağımlılık diyagramı oluşturmak için bir komut içerir:
 
 ![Canlı bağımlılık öğede mimari menüsü](media/dep-validation-whatsnew-02.png)
 
-… ve daha anlamlı olacak şekilde bir katmana bağımlılık diyagramı ve onların açıklamalarını özellik adları değiştirildi:
+Katman özellik adları ve açıklamaları daha anlamlı olacak şekilde değiştirilmiştir:
 
 ![Canlı bağımlılık özelliği adları güncelleştirildi](media/dep-validation-whatsnew-03.png)
 
-Değişikliklerinizi hemen geçerli çözümün kodunu analiz sonuçları etkisini diyagramda her kaydettiğinizde göreceksiniz. Artık "Bağımlılıkları doğrulamak" komutunun tamamlanmasını beklemek zorunda değilsiniz.
+Geçerli çözümün kodunu analiz sonuçları yaptığınız değişikliklerin etkisini hemen diyagramda her kaydettiğinizde bakın. Tamamlanmasını beklemek zorunda değilsiniz **bağımlılıkları doğrulamak** komutu.
 
 Daha fazla ayrıntı için [bu blog gönderisini](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML tasarımcılarına kaldırıldı
 
-UML tasarımcılarına Visual Studio Enterprise'nın bu sürümünden kaldırılmıştır.
+Visual Studio'da UML tasarımcılarına kaldırıldı.
 
 * UML diyagramları artık XML dosyaları olarak sunulur
 * UML Model Gezgini artık yok
@@ -57,7 +57,7 @@ UML tasarımcılarına Visual Studio Enterprise'nın bu sürümünden kaldırıl
 * Geri gelen DSL veya katmanına bağlama artık desteklenmiyor
 * UML Genişletilebilirlik modelleme SDK'sı, artık desteklenmiyor
 
-Ancak, .NET ve C++ kodu mimarisini görselleştirmek aracılığıyla kullanılabilir desteğinin [kod haritaları](map-dependencies-across-your-solutions.md)ve bağımlılık doğrulaması yukarıda açıklanan önemli geliştirmeler.
+.NET mimarisini görselleştirmek için destek ve C++ kodu aracılığıyla kullanılabilir [kod haritaları](map-dependencies-across-your-solutions.md).
 
 UML tasarımcılarına önemli bir kullanıcı varsa, UML ihtiyaçlarınız için alternatif bir aracı üzerinde karar sırada Visual Studio 2015 veya önceki sürümlerini kullanmaya devam edebilirsiniz.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869248"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457523"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Özel hata ayıklama altyapısı (DE) arabirimini alır.
@@ -36,8 +39,8 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppUnk`
+## <a name="parameters"></a>Parametreler
+ `ppUnk`\
 
  [out] Döndürür bir `IUnknown` hata ayıklama altyapısı (DE) ve hangi bir DE ile ilişkili diğer herhangi bir geçerli arabirimi için sorgulanabilir nesnesini temsil eder (örneğin [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) veya [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
@@ -47,7 +50,7 @@ int GetEngineInterface( 
 ## <a name="remarks"></a>Açıklamalar
  Arama Bu yöntemden alınan arabirimler üzerinden oturum hata ayıklama manager'ın işleme bozar ve hatalı bir duruma alma veya hata ayıklama sırasında hatalar üretme SDM neden olabilir çünkü elde edilen arabirimi dikkatli kullanılmalıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

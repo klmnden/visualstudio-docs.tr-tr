@@ -7,14 +7,14 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Yöneticiler talep abonelikleri nasıl giderebileceğinize öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
+ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580026"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64945133"
 ---
-# <a name="handling-over-claimed-subscriptions"></a>'Talep' abonelikleri işleme
+# <a name="overallocated-subscriptions"></a>Fazla yüklenmiş abonelikler
 
 Aboneler, daha fazla olması neden eklendikten sonra siparişler bazen değiştirilir şirketiniz tarafından sahip olunan lisansı sayısından abonelik atanmış. Bu durumda, abonelerin sekmesinde bir uyarı gösterir ve daha fazla bilgi sağlar.
 
@@ -24,8 +24,27 @@ Aboneler, daha fazla olması neden eklendikten sonra siparişler bazen değişti
 > [!div class="mx-imgBorder"]
 > ![Talep abonelik bildirimi](_img/over-claimed/over-claimed-alert.png)
 
-1. Talep lisansları çözmek için uyarı metni tıklayın. Bu işlem için abonelik düzeyinde atanmış olan aboneler ve talep sona erme tarihi filtrelenmiş bir listesini görüntüler. 
+## <a name="resolving-overallocated-subscriptions"></a>Fazla yüklenmiş abonelikleri çözümleme
+
+Fazla yüklenmiş lisansları çözmek için:
+
+1. Uyarı metni tıklayın. Bu işlem için abonelik düzeyinde atanmış olan aboneler ve talep sona erme tarihi filtrelenmiş bir listesini görüntüler. 
 
 2. Aboneler, talep lisansları düzeltmek için gerektiği şekilde kaldırın. 
 
 3. Sayfanın sol tarafındaki genel bakış, yeniden uyumlu olan ve tüm talep bildirimleri kaybolur gösterecek şekilde güncelleştirilir. 
+
+## <a name="billing-and-true-up"></a>Faturalandırma ve true-yukarı
+
+Kuruluşunuzda bir Kurumsal Anlaşma (EA) varsa, yöneticileri abonelik satın almadan atayamazsınız ve bunlar için "true-up" bilinen bir uzlaştırma işleminde daha sonra ödeme.  Overallocate, kuruluşunuzun "true artırma sırasında" kullanıcılara atanan abonelik sayısı için faturalandırılırsınız.  True-up gerçekleşir zamanında atanan abonelik sayısı, artık olsa bile bu geçerlidir.  En fazla kullanım izleme hakkında daha fazla bilgi edinmek için [en fazla kullanım](maximum-usage.md) konu.
+
+> [!Important]
+> GitHub Enterprise ile Visual Studio Abonelikleri, Visual Studio abonelik yöneticileri tarafından atanır ve bu Aboneliklerdeki satın olamazdı, bunlar için GitHub Enterprise admins kuruluş içindeki görünür olmaz. GitHub Enterprise abonelikleri görünür olduğundan emin olmak için satın alma dahil olmak üzere **en az bir** GitHub Enterprise ile Visual Studio Professional veya Visual Studio Enterprise with GitHub Enterprise aboneliğinizin yapılacak ilk zaman abonelikleri atanır.  
+>
+> Bu atanan her GitHub abonelik için burada Yönet Portalı'nda bu yönelik lisanslama gereksinimlerine uyduğunuzu kalması için atanan GitHub aboneliğiyle karşılık gelen bir Visual Studio emin olmak için müşterinin sorumluluğundadır Abonelik.
+
+
+Yönetme hakkında daha fazla bilgi [GitHub Enterprise ile Visual Studio abonelikleri](assign-github.md).
+
+## <a name="support-resources"></a>Destek kaynakları
+-  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 584c7ba10ac9eb05268f50ecaffa8c47818f7977
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915551"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225983"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Bu iş parçacığı için yığın çerçevesi bir listesini alır.
@@ -40,16 +43,16 @@ int EnumFrameInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwFieldSpec`
+## <a name="parameters"></a>Parametreler
+ `dwFieldSpec`\
 
  [in] Bayraklarının bir birleşimi [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) hangi alanları belirten numaralandırma [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) doldurulması için yapılardır. Belirtin `FIF_FUNCNAME_FORMAT` işlev adı tek bir dize olarak biçimlendirmek için bayrak.
 
- `nRadix`
+ `nRadix`\
 
  [in] Numaralandırıcı sayısal bilgilerinde biçimlendirmede kullanılan taban.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Döndürür bir [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) listesini içeren nesne [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yapıları açıklayan yığın çerçevesi.
 
@@ -59,7 +62,7 @@ int EnumFrameInfo ( 
 ## <a name="remarks"></a>Açıklamalar
  İş parçacığının çerçeveler, ilk numaralandırılmış geçerli çerçeve ve son numaralandırılan eski çerçeve ile sırayla numaralandırılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

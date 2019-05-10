@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869821"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459026"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Belirli bir programı program düğümünü alır.
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `Flags`
+## <a name="parameters"></a>Parametreler
+ `Flags`\
 
  [in] Bayraklarının bir birleşimi [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) sabit listesi. Bu çağrı için tipik aşağıdaki bayraklar:
 
@@ -57,30 +60,30 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Arayan şu anda hata ayıklaması (taşıma hakkında ek bilgi, her düğüm için de döndürülür).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Arayan bağlı, ancak hata ayıklayıcı tarafından başlatılan değil.|
 
- `pPort`
+ `pPort`\
 
  [in] Çağırma işlemi bağlantı noktası çalışıyor.
 
- `processId`
+ `processId`\
 
  [in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) programını içeren işlemin Kimliğini söz konusu tutan yapı.
 
- `guidEngine`
+ `guidEngine`\
 
  [in] GUID (varsa) programı iliştirildiği hata ayıklama altyapısı.
 
- `programId`
+ `programId`\
 
  [in] Program düğüm alınacağı program kimliği.
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) istenen program düğümü temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

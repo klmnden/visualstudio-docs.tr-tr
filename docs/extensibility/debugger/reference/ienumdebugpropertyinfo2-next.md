@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1e87ad302cbd25fcda691b47372f4fbd5d1771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a866071b09c07f42d21bbf90de3bd6eda6717ab2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866063"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223269"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Sabit listesinden alınmış sonraki öğe kümesini döndürür.
@@ -40,22 +43,22 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `celt`
+## <a name="parameters"></a>Parametreler
+ `celt`\
 
  [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
 
- `rgelt`
+ `rgelt`\
 
  [out içinde] Dizi [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) doldurulacak öğeleri.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

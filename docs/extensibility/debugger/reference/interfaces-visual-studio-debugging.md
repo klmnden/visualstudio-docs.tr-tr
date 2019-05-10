@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b09660b2ba2836dab08ddd51c8cf7671dd0bfa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2648d63902af2c733f3ad2827517221f817de051
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866081"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461107"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Arabirimler (Visual Studio Hata Ayıklama)
 Yöntemleri, İçindekiler ve Vtable sırayla arabirimi sayfasındaki tabloda her arabirim alfabetik olarak listelenir.
@@ -38,5 +38,5 @@ Yöntemleri, İçindekiler ve Vtable sırayla arabirimi sayfasındaki tabloda he
 
  Arabirimleri, numaralandırıcılar ve yapıları belgelerini içeren [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklama SDK'sı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225995"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Bir iş parçacığının yürütülmesini sürdürür.
@@ -36,8 +39,8 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pdwSuspendCount`
+## <a name="parameters"></a>Parametreler
+ `pdwSuspendCount`\
 
  [out] Sonra devam et işlemi askıya alma sayımı döndürür.
 
@@ -49,6 +52,6 @@ int Resume ( 
 
  Bu yöntem her çağrı için olmalıdır önceki bir çağrı [askıya alma](../../../extensibility/debugger/reference/idebugthread2-suspend.md) yöntemi. Askıya alma sayımı kaç kez belirler `IDebugThread2::Suspend` yönteminin çağrılıp çağrılmadığını kadar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

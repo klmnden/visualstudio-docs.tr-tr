@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824181"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476589"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -172,11 +172,11 @@ Ekipler yaptıkları değişiklikleri kaydetmeden önce bağımlılık doğrulam
 
 |**Diyagramı**|**Açıklar**|
 |-|-|
-|*Bağımlılık diyagramı*<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir bağımlılık diyagram düzenler ve yapıtlar bir Visual Studio çözümünde adı verilen soyut gruplarla eşleştirir *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Katman diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için katman diyagramı yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|
+|*Bağımlılık diyagramı*<br /><br /> Bkz.<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br />- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|Kodun mantıksal mimarisi.<br /><br /> Bir bağımlılık diyagram düzenler ve yapıtlar bir Visual Studio çözümünde adı verilen soyut gruplarla eşleştirir *katmanları*. Bu katmanlar, roller, görevlerin veya bu yapıların sistemde gerçekleştirdiği işlevleri tanımlayın.<br /><br /> Bağımlılık diyagramları, sistemin amaçlanan tasarımını açıklayan ve tasarımda gelişen kodu doğrulamak için kullanışlıdır.<br /><br /> Katmanlar oluşturmak için Çözüm Gezgini, kod Haritaları, sınıf görünümü ve Nesne Tarayıcısı'ndan öğeleri sürükleyin. Yeni Katmanlar çizmek için araç kutusunu kullanın veya diyagram yüzeyine sağ tıklayın.<br /><br /> Varolan bağımlılıkları görüntülemek için bağımlılık diyagram yüzeyine sağ tıklayın ve ardından **Bağımlılıklar Oluştur**. Hedeflenen bağımlılıklarını belirtmek için yeni bağımlıklar çizin.|
 
- Örneğin, aşağıdaki bağımlılık diyagramı katmanlar ve her bir katman ile ilişkili yapıların sayısı arasındaki bağımlılıkları tanımlar:
+Örneğin, aşağıdaki bağımlılık diyagramı katmanlar ve her bir katman ile ilişkili yapıların sayısı arasındaki bağımlılıkları tanımlar:
 
- ![Tümleşik ödeme sistemi için bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png)
+![Tümleşik ödeme sistemi için bağımlılık diyagramı](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Bağımlılık diyagramı**
 
@@ -194,7 +194,7 @@ Bkz.
 
 - Çoğu diyagram birbirine satırlarla bağlı düğümleri oluşur. Her diyagram türü için araç kutusu farklı türde düğümler ve satırlar sağlar.
 
-     Araç kutusunu açmak için **görünümü** menüsünü tıklatın **araç kutusu**.
+   Araç kutusunu açmak için **görünümü** menüsünü tıklatın **araç kutusu**.
 
 - Bir düğüm oluşturmak için araç kutusundan diyagrama sürükleyin. Belirli düğüm türleri, varolan düğümlere sürüklenmelidir. Örneğin, bir bileşen diyagramı üzerinde varolan bir bileşene yeni bir bağlantı noktası eklenmelidir.
 
@@ -206,7 +206,7 @@ Planlama, yönetme ve çalışmayı daha kolay izlemek için visual Studio model
 
 Çalışma ilerledikçe, kendi görevlere harcadıkları süreyi yansıtacak şekilde onların iş öğelerini takımlar güncelleştirme. Ayrıca izlemek ve rapor aşağıdaki Team Foundation Server özelliklerini kullanarak iş durumu:
 
-- Günlük *ilerleme raporları* bunlar planlanmış çalışmaları beklenen süre tamamlayıp tamamlayamayacaklarını gösteren. Onlar, hata aşamalarını izlemek için Team Foundation Server'dan başka benzer raporlar oluşturur.
+- Günlük *raporları yazma* bunlar planlanmış çalışmaları beklenen süre tamamlayıp tamamlayamayacaklarını gösteren. Onlar, hata aşamalarını izlemek için Team Foundation Server'dan başka benzer raporlar oluşturur.
 
 - Bir *yineleme çalışma* izlemek ve üyeleri arasındaki iş yükünü dengelemek takıma yardımcı olmak üzere Microsoft Excel kullanan. Bu çalışma sayfası Team Foundation Server'a bağlanır ve düzenli ilerleme toplantıları sırasında tartışma odağı sağlar.
 
@@ -329,7 +329,7 @@ Bu harita, PaymentApprover sınıfının artık DinnerNow.Business ad alanında 
 
 |**Diyagramı**|**Açıklar**|
 |-|-|
-|Bağımlılık diyagramı|Sistemin mantıksal mimarisi. Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Mevcut dependencys veya hedeflenen dependencys tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir bağımlılık diyagramı oluşturmak için bkz:<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)|
+|Bağımlılık diyagramı|Sistemin mantıksal mimarisi. Bağımlılık doğrulama kodu tasarım ile tutarlı kalmasını sağlamak için kullanın.<br /><br /> Var olan bağımlılıkları veya hedeflenen bağımlılıkları tanımlamanıza yardımcı olması için bir kod Haritası oluşturun ve ilişkili öğeleri gruplayın. Bir bağımlılık diyagramı oluşturmak için bkz:<br /><br /> - [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)|
 |Sınıf diyagramı (kod tabanlı)|Belirli bir proje için kod üzerinde varolan sınıflar.<br /><br /> Görselleştirme ve kod içinde varolan bir sınıf değiştirmek için Sınıf Tasarımcısı'nı kullanın.<br /><br /> Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Bir türler sözlüğü tanımlayın: Sınıf diyagramları

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916910"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459077"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ad ve tanımlayıcı bir programı çalıştırma hata ayıklama altyapısı (DE) alır.
@@ -38,17 +41,17 @@ int GetEngineInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pbstrEngine`
+## <a name="parameters"></a>Parametreler
+ `pbstrEngine`\
 
  [out] Programın çalıştırılması DE adını döndürür (C++-belirli: Bu çağrı altyapısı adını ilgilenen değil gösteren null bir işaretçi olabilir).
 
- `pguidEngine`
+ `pguidEngine`\
 
  [out] Programın çalıştırılması DE genel benzersiz tanımlayıcısını döndürür (C++-belirli: Bu çağırana ilişkin GUID'i altyapısının ilgilenen değil gösteren null bir işaretçi olabilir).
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

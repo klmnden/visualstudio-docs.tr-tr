@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913841"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460955"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Bir modülü tanımlamak için kullanılır.
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- Hiçbir modül MODULE_FLAG_NONE belirtir.
+## <a name="fields"></a>Alanlar
+ `MODULE_FLAG_NONE`\
+ Hiçbir modül belirtir.
 
- Bir sistem modülünün MODULE_FLAG_SYSTEM belirtir.
+ `MODULE_FLAG_SYSTEM`\
+ Bir sistem modülünün belirtir.
 
- Sembol modülü MODULE_FLAG_SYMBOLS belirtir.
+ `MODULE_FLAG_SYMBOLS`\
+ Sembol Modülü belirtir.
 
- Bir 64-bit modül MODULE_FLAG_64BIT belirtir.
+ `MODULE_FLAG_64BIT`\
+ Bir 64-bit Modülü belirtir.
 
- İyileştirilmiş modülü MODULE_FLAG_OPTIMIZED belirtir. Bu durumu yansıtılır **modülleri** penceresi.
+ `MODULE_FLAG_OPTIMIZED`\
+ İyileştirilmiş Modülü belirtir. Bu durumu yansıtılır **modülleri** penceresi.
 
- Modül getirilmemiş MODULE_FLAG_UNOPTIMIZED belirtir. Bu durumu yansıtılır **modülleri** penceresi. Varsayılan durum budur.
+ `MODULE_FLAG_UNOPTIMIZED`\
+ Modül getirilmemiş belirtir. Bu durumu yansıtılır **modülleri** penceresi. Varsayılan durum budur.
 
 ## <a name="remarks"></a>Açıklamalar
  İçin kullanılan `m_dwModuleFlags` üyesi [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) yapısı.
@@ -72,6 +81,6 @@ public enum enum_MODULE_FLAGS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

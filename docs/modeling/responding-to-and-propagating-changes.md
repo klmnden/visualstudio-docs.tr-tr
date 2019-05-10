@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824013"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476609"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Değişikliklere Yanıt Verme ve Değişiklikleri Yayma
+# <a name="respond-to-and-propagate-changes"></a>Değişiklikleri için yanıtlama ve yayma
+
 Bir öğe oluşturulduğunda, silinmiş veya güncelleştirildiğinde, değişiklik modelinin diğer bölümleri veya dosyaları, veritabanları veya diğer bileşenleri gibi dış kaynaklara yayan kod yazabilirsiniz.
 
-## <a name="in-this-section"></a>Bu Bölümde
- Bir kılavuz olarak aşağıdaki sırayla bu teknikler göz önünde bulundurun:
+## <a name="reference"></a>Başvuru
+
+Bir kılavuz olarak aşağıdaki sırayla bu teknikler göz önünde bulundurun:
 
 |Yöntemi|Senaryolar|Daha fazla bilgi için|
 |-|-|-|
@@ -34,12 +36,13 @@ Bir öğe oluşturulduğunda, silinmiş veya güncelleştirildiğinde, değişik
 |Seçim kuralları|Seçimi kurallarını, özellikle kullanıcının seçim yapabileceği kısıtlar.|[Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Şekilleri ve bağlayıcıları gibi gölge, ok ucu, renk, çizgi genişliği ve stil özelliklerini kullanarak model öğelerini durumları gösterir.|[Modeli Yansıtacak Şekilleri ve Bağlayıcıları Güncelleştirme](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Kuralları ve Store olayları karşılaştırma**
- Bir modelde değişiklikler olduğunda, değişiklik notifiers, kuralları ve olayları çalıştırılır.
+## <a name="compare-rules-and-store-events"></a>Kuralları karşılaştırın ve olayları depolamak
 
- Kuralları genellikle değişikliği oluştu son işlem sırasında uygulanır ve olayları, bir işlemde değişiklikler gönderildikten sonra uygulanır.
+Bir modelde değişiklikler olduğunda, değişiklik notifiers, kuralları ve olayları çalıştırılır.
 
- Deposu olayları Store ve kuralları Store içinde tutarlılık sağlamak için dışında kalan nesneler ile modeli eşitlemek için kullanın.
+Kuralları genellikle değişikliği oluştu son işlem sırasında uygulanır ve olayları, bir işlemde değişiklikler gönderildikten sonra uygulanır.
+
+Deposu olayları Store ve kuralları Store içinde tutarlılık sağlamak için dışında kalan nesneler ile modeli eşitlemek için kullanın.
 
 - **Özel kurallar oluşturarak** soyut bir kuraldan türetilmiş bir sınıf olarak özel bir kural oluşturun. Ayrıca, özel kural hakkındaki framework bildirmeniz gerekir. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 
@@ -49,7 +52,7 @@ Bir öğe oluşturulduğunda, silinmiş veya güncelleştirildiğinde, değişik
 
 - **Kuralları ve olayları için olay bağımsız değişkenleri geçirme** hem olayları ve kuralları geçirilir bir `EventArgs` modeli hakkında bilgi olan parametresi değiştirildi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Nasıl yapılır: Şekil veya Dekoratörde bir Tıklama için Araya Girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)

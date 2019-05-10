@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868415"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224113"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Sembol yükleme işlemiyle ilgili sonuçları almak için bir olay işleyicisi olarak çağrılır.
@@ -40,19 +43,19 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pModule`
+## <a name="parameters"></a>Parametreler
+ `pModule`\
 
  [out] Bir IDebugModule3 simgeleri en iyi duruma yüklenen modül temsil eden nesne.
 
- `pbstrDebugMessage`
+ `pbstrDebugMessage`\
 
  [out içinde] Modülünden herhangi bir hata iletisi içeren bir dize döndürür. Hata yoksa bu dize yalnızca modülün adı içerir ancak hiçbir zaman boş değildir.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` olamaz `NULL` ve ile serbest bırakılmalıdır `SysFreeString`.
 
- `pdwModuleInfoFlags`
+ `pdwModuleInfoFlags`\
 
  [out] Bayraklarının bir birleşimi [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) simgeleri yüklenmiş olup olmadığını belirten sabit listesi.
 
@@ -62,7 +65,7 @@ int GetSymbolSearchInfo(
 ## <a name="remarks"></a>Açıklamalar
  Bir işleyici aldığında [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) bir modül için hata ayıklama sembolleri için bir girişimde sonra olay işleyicisi Bu yük sonuçları belirlemek için bu yöntem çağırabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

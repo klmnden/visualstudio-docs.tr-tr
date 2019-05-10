@@ -14,14 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09f3a9dfcc6c26e9dd575f4a127884e28def1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58c949eaeaf8e780fa6a85d61dea272d21fb8be1
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856073"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476547"
 ---
 # <a name="t4-text-template-directives"></a>T4 Metin Şablonu Yönergeleri
+
 Yönergeler metin şablonu dönüştürme motoru için yönergeler sağlar.
 
 Yönergelerin sözdizimi aşağıdaki gibidir:

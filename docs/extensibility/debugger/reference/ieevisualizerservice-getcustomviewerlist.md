@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a7928b203d00e0f9b43250a463a8fb272ce755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223579"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Bu yöntem, bu hizmet bildiği tür görselleştiricileri listesini döndürür.
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `celtSkip`
+## <a name="parameters"></a>Parametreler
+ `celtSkip`\
 
  [in] Görselleştiriciler atlamayı için sayısı.
 
- `celRequested`
+ `celRequested`\
 
  [in] Alınacak görselleştiriciler sayısı (Ayrıca boyutunu belirtir `rgViewers` dizisi).
 
- `rgViewers`
+ `rgViewers`\
 
  [out içinde] Dizi [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) yapıları doldurulmalıdır.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Gerçekte alınan görselleştiriciler sayısı.
 
@@ -67,7 +70,7 @@ int GetCustomViewerList(
 
  Bkz: [tür görselleştiricisi ve özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) görselleştiriciler ve görüntüleyiciler arasındaki farklılıklarla ilgili ayrıntılar için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

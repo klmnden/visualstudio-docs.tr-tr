@@ -9,8 +9,9 @@
 - name: Grafik Günlük Belgesi
   href: graphics-log-document.md
 - name: Grafik Çerçeve Analizi
-  href: graphics-frame-analysis.md
   items:
+    - name: Grafik Çerçeve Analizi
+      href: graphics-frame-analysis.md
     - name: 1x1 Görünüm Penceresi Boyut Çeşidi
       href: 1x1-viewport-size-variant.md
     - name: 0x-2x-4x MSAA Çeşitleri
@@ -46,8 +47,9 @@
 - name: Komut Satırı Yakalama Aracı
   href: command-line-capture-tool.md
 - name: Grafik Tanılama Örnekleri
-  href: graphics-diagnostics-examples.md
   items:
+    - name: Grafik Tanılama Örnekleri
+      href: graphics-diagnostics-examples.md
     - name: 'İzlenecek yol: Grafik Bilgilerini Yakalama'
       href: walkthrough-capturing-graphics-information.md
     - name: 'İzlenecek yol: Grafik Bilgilerini Program Aracılığıyla Yakalama'
@@ -65,11 +67,13 @@
     - name: 'Nasıl yapılır: Grafik Tanılama Kayıttan Yürütme Makinesini Değiştirme'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Başvuru (Programlı Yakalama)
-  href: reference-programmatic-capture.md
   items:
+    - name: Başvuru (Programlı Yakalama)
+      href: reference-programmatic-capture.md
     - name: VsgDbg Sınıfı
-      href: vsgdbg-class.md
       items:
+        - name: VsgDbg Sınıfı
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (Oluşturucu)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (Yok Edici)'

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567798"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460613"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Nasıl yapılır: Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 
 Bellekte bir veritabanından veri depolayan ve etkinleştirmek için değişiklik izlemeyi destekleyen bir nesne oluşturma bir veri kümesi olduğundan, okuma, güncelleştirme ve silme (CRUD) işlemleri veritabanına her zaman bağlı gerek kalmadan bu verileri. Veri kümeleri, basit için tasarlanmış *veriler üzerinden formlar* iş uygulamaları. Yeni uygulamalar için bellekteki verileri depolamak ve modellemek için Entity Framework kullanarak göz önünde bulundurun. Veri kümeleriyle çalışmak için veritabanı kavramlarını temel bilgiye sahip olmalıdır.
 

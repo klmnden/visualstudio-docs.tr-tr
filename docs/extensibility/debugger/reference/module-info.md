@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865472"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458001"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Belirli bir modülün (DLL, EXE veya derleme) açıklar.
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Üyeler
- bayrakları birleşimi dwValidFields A [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) hangi alanların doldurulmuş belirten sabit listesi.
+ `dwValidFields`\
+ Bayraklarının bir birleşimi [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) hangi alanların doldurulmuş belirten sabit listesi.
 
- m_bstrName modül adı.
+ `m_bstrName`\
+ Modül adı.
 
- m_bstrUrl modülü URL.
+ `m_bstrUrl`\
+ Modül URL'si.
 
- m_bstrVersion Modül sürümü.
+ `m_bstrVersion`\
+ Modül sürümü.
 
- m_bstrDebugMessage isteğe bağlı bir ileti modülü hakkında Örneğin, "sembolleri yüklenemiyor."
+ `m_bstrDebugMessage`\
+ İsteğe bağlı bir ileti modülü hakkında Örneğin, "sembolleri yüklenemiyor."
 
- Adres m_addrLoadAddress modülünü yükleyin.
+ `m_addrLoadAddress`\
+ Modül yükleme adresi.
 
- m_addrPreferredLoadAddress modülünün tercih edilen yük adresi.
+ `m_addrPreferredLoadAddress`\
+ Modül tercih edilen yükleme adresi.
 
- m_dwSize modül boyutu.
+ `m_dwSize`\
+ Modül boyutu.
 
- Modül yükleme sırasında m_dwLoadOrder.
+ `m_dwLoadOrder`\
+ Modül yükleme sırası.
 
- Sembol dosyası en son değiştirildiği zamanı m_TimeStamp.
+ `m_TimeStamp`\
+ Sembol dosyası en son değiştirildiği zamanı.
 
- m_bstrUrlSymbolLocation sembol dosyasının konumunu (örneğin, ".\\") modülü belirtilmiş. Bir modül için semboller bulmak için bir başlangıç konumu olarak kullanılır.
+ `m_bstrUrlSymbolLocation`\
+ Sembol dosyası konumu (örneğin, ".\\") modülü belirtilmiş. Bir modül için semboller bulmak için bir başlangıç konumu olarak kullanılır.
 
- bayrakları birleşimi m_dwModuleFlags A [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) modülü açıklayan sabit listesi.
+ `m_dwModuleFlags`\
+ Bayraklarının bir birleşimi [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) modülü açıklayan sabit listesi.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu yapı geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) yöntemi burada da doldurulur.
@@ -95,7 +110,7 @@ public struct MODULE_INFO { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

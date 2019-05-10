@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915705"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457433"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Sembol grubu modülleri hakkında bilgi alır.
@@ -43,29 +46,29 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pCount`
+## <a name="parameters"></a>Parametreler
+ `pCount`\
 
  [in] Modüllerde sayısı `ppGuids` dizisi.
 
- `ppGuids`
+ `ppGuids`\
 
  [in] Modüller için benzersiz tanımlayıcıları içeren bir dizi.
 
- `pADIds`
+ `pADIds`\
 
  [in] Uygulama etki alanları için tanımlayıcıları.
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in] Sembol grubunun geçerli durumu.
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out] Sembol grubu modüller içeren bir nesne döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

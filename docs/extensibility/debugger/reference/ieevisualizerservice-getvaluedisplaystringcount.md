@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915202"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223555"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Belirtilen özellik veya alan için görüntülenecek değer dizeleri sayısını alır.
@@ -39,21 +42,21 @@ int GetValueDisplayStringCount (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `displayKind`
+## <a name="parameters"></a>Parametreler
+ `displayKind`\
 
  [in] Değerini [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) sabit listesi.
 
- `propertyOrField`
+ `propertyOrField`\
 
  [in] Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bir özellik veya alan temsil eden arabirim.
 
- `pcelt`
+ `pcelt`\
 
  [out] Görüntülenecek değer dizeleri sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

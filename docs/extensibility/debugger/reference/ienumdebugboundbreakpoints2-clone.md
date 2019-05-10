@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c3c350901d779b9c616b74a74c53cd5d852879d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d9295e13138340dbd430682adcde935832244df
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867747"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223278"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppEnum`
+## <a name="parameters"></a>Parametreler
+ `ppEnum`\
 
  [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
 
@@ -47,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>Açıklamalar
  Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae3b86be9ec26f9bb8c9b8978a6276169262933d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565179"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457886"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Uyarı: Davranışı Yapılandır iletişim kutusunda, uygulanmamış değişiklikler gerçekleştirildi
 
@@ -29,5 +29,4 @@ Uyarı. Henüz uygulanmamış davranışı Yapılandır iletişim kutusu için d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

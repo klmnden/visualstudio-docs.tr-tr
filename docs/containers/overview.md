@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825016"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084043"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio’da Kapsayıcı Araçları
 
@@ -25,7 +25,7 @@ Kapsayıcılar ile geliştirmek için Visual Studio'ya dahil olan araçları kul
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio'da docker desteği
 
-Docker desteği, bazı .NET proje türleri için kullanılabilir.  ASP.NET projeleri, ASP.NET Core projeleri ve .NET Core ve .NET Framework konsol projeleri için kullanılabilir.
+Docker desteği, ASP.NET projeleri, ASP.NET Core projeleri ve .NET Core ve .NET Framework konsol projeleri için kullanılabilir.
 
 Visual Studio'da Docker desteği, bir müşteri gereksinimlerine yanıt sayısı üzerinden değişti. Bir projeye ekleyebilirsiniz Docker desteği iki düzeyi vardır ve proje türü ve Visual Studio sürümü tarafından desteklenen seçenekler farklılık gösterir. Yalnızca bir kapsayıcı için tek bir proje, düzenleme, kullanmadan istiyorsanız bazı desteklenen proje türleri ile bunu Docker desteği ekleyerek yapabilirsiniz.  Seçtiğiniz belirli bir orchestrator için uygun destek dosyaları ekler kapsayıcı düzenleme desteği sonraki düzeyidir.  
 
@@ -46,13 +46,9 @@ Visual Studio 2019 ile Docker Compose, Kubernetes ve Service Fabric kapsayıcı 
 > Docker Compose kullanarak düzenleme desteği, Docker desteği eklediğinizde, tam .NET Framework konsol projesi şablonunu kullanıyorsanız, otomatik olarak eklenir.
 ::: moniker-end
 
-**Ekle > Docker desteği** ve **Ekle > kapsayıcı Düzenleyicisi desteği** komutları bulunan bir ASP.NET Core projesi için proje düğümünü sağ tıklama menüsünü (veya bağlam menüsü)  **Çözüm Gezgini**aşağıdaki ekran görüntüsünde gösterildiği gibi:
+### <a name="adding-docker-support"></a>Docker desteği ekleme
 
-![Visual Studio'da Docker desteği menü seçeneği ekleyin](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>(Düzenleme) olmadan Docker desteği ekleme
-
-Docker desteği seçerek mevcut bir projeye ekleyebilirsiniz **Ekle** > **Docker desteği** içinde **Çözüm Gezgini**. Seçerek proje oluşturma sırasında Docker desteğini etkinleştirebilirsiniz **Docker desteği etkinleştirme** aşağıdaki ekran görüntüsünde gösterildiği gibi yeni bir proje oluşturma sırasında:
+Docker desteği seçerek proje oluşturma sırasında etkinleştirebilirsiniz **Docker desteği etkinleştirme** aşağıdaki ekran görüntüsünde gösterildiği gibi yeni bir proje oluşturma sırasında:
 
 ::: moniker range="vs-2017"
 ![Visual Studio'da yeni bir ASP.NET Core web uygulaması için Docker desteğini etkinleştir](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Docker desteği seçerek mevcut bir projeye ekleyebilirsiniz **Ekle** > **Docker
 ::: moniker range=">=vs-2019"
 ![Visual Studio'da yeni bir ASP.NET Core web uygulaması için Docker desteğini etkinleştir](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> .NET Framework projeleri (.NET Core değil) yalnızca Windows kapsayıcıları kullanılabilir.
+
+Docker desteği seçerek mevcut bir projeye ekleyebilirsiniz **Ekle** > **Docker desteği** içinde **Çözüm Gezgini**. **Ekle > Docker desteği** ve **Ekle > kapsayıcı Düzenleyicisi desteği** komutları bulunan bir ASP.NET Core projesi için proje düğümünü sağ tıklama menüsünü (veya bağlam menüsü)  **Çözüm Gezgini**aşağıdaki ekran görüntüsünde gösterildiği gibi:
+
+![Visual Studio'da Docker desteği menü seçeneği ekleyin](./media/overview/add-docker-support-menu.png)
 
 Ekleyin veya Docker desteğini etkinleştirmek, Visual Studio aşağıdaki projeye ekler:
 

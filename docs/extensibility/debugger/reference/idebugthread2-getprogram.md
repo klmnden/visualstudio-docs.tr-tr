@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d25c438e7779c3589ab2deda5ea78cad9799dd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915564"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224102"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Bir iş parçacığı çalıştığı program alır.
@@ -36,14 +39,14 @@ int GetProgram ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppProgram`
+## <a name="parameters"></a>Parametreler
+ `ppProgram`\
 
  [out] Döndürür bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) bu iş parçacığı çalışıyor program temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
