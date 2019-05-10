@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869808"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458975"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Bağlantı noktası olaylarını almak işlem sağlar.
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `Flags`
+## <a name="parameters"></a>Parametreler
+ `Flags`\
 
  [in] Bayraklarının bir birleşimi [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) sabit listesi. Bu çağrı için tipik aşağıdaki bayraklar:
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Arayan bağlı, ancak hata ayıklayıcı tarafından başlatılan değil.|
 |`PFLAG_REASON_WATCH`|Arayan için olayları izlemek istiyor. Bu bayrak ayarlanmazsa. Daha sonra geri çağırma olay kaldırılır ve arayanın artık bildirimleri alır.|
 
- `pPort`
+ `pPort`\
 
  [in] Çağırma işlemi bağlantı noktası çalışıyor.
 
- `processId`
+ `processId`\
 
  [in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) programını içeren işlemin Kimliğini söz konusu tutan yapı.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Hata ayıklama altyapısı işlemle ilişkili GUID'leri dizisi.
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in] Bu işlemi (varsa) her hata ayıklama altyapısı GUİD'si.
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in] Bir [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) olay bildirimleri alan bir nesne.
 
@@ -213,7 +216,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

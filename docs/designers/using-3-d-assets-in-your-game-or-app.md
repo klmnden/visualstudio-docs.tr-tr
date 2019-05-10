@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892911"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459107"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Oyununuzda veya uygulamanızda 3B varlıklar kullanma
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Nasıl yapılır: Oyununuzda veya uygulamanızda 3B varlıklar kullanma
 
 Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek için Visual Studio nasıl kullanabileceğiniz açıklanır.
 
@@ -34,7 +34,9 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Projenize yapı özelleştirmeleri eklemek için
 
-1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları** > **yapı özelleştirmeleri**. **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları** > **yapı özelleştirmeleri**.
+
+   **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.
 
 2. Altında **kullanılabilir yapı özelleştirme dosyaları**, aşağıdaki tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:
 
@@ -47,11 +49,14 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
 3. Seçin **Tamam** düğmesi.
 
 ## <a name="include-assets-in-your-build"></a>Yapınızda varlıkları içerir
- Projeniz hakkında kullanmak istediğiniz 3B varlıkların farklı türlerini bildiğine göre sonraki adım, hangi dosyaların 3B varlıklar olduğunu ve hangi türde varlıkları bunlar söylemek olacaktır.
+
+Projeniz hakkında kullanmak istediğiniz 3B varlıkların farklı türlerini bildiğine göre sonraki adım, hangi dosyaların 3B varlıklar olduğunu ve bunların ne tür varlıklar söylemek olacaktır.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Yapınıza bir varlık eklemek için
 
-1. İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**.
+
+   Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
 
 2. Emin olun **yapılandırma** ve **Platform** özellikleri, yaptığınız değişiklikleri uygulamak istediğiniz değerlere ayarlanır.
 
@@ -76,11 +81,13 @@ Her varlık dosyasının içerik kanalı özelliklerini ayarlayabilirsiniz, böy
 
 ### <a name="to-configure-content-pipeline-properties"></a>İçerik ardışık düzeni özelliklerini yapılandırmak için
 
-1. İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**.
+
+   Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
 
 2. Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.
 
-3. Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin; örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için — ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.
+3. Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin (örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için) ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.
 
 4. Seçin **Tamam** düğmesi.
 

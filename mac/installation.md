@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4031b4358e77b5b3e66a6052a37724966621d608
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982981"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65222779"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
 
@@ -55,7 +55,7 @@ Bir Kurumsal ortamda yüklenirken ağ bulmakta güçlük çekiyorsanız, gözden
 Değişiklikleri hakkında daha fazla bilgi [sürüm notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Seçtiğiniz bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda seçimini tarafından) değil yüklerseniz, bileşen daha sonra eklemek istiyorsanız, yükleyici yeniden çalıştırmanız gerekir.
+> Bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda seçimini tarafından) yüklemeyi seçerseniz, daha sonra bileşenleri eklemek isterseniz, yükleyici yeniden çalıştırmanız gerekir.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme
 

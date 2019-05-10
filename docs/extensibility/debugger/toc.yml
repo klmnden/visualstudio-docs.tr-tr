@@ -5,13 +5,15 @@
 - name: Visual Studio Hata Ayıklama Örnekleri
   href: visual-studio-debugging-samples.md
 - name: Özel Hata Ayıklama Altyapısı Oluşturma
-  href: creating-a-custom-debug-engine.md
   items:
+    - name: Özel Hata Ayıklama Altyapısı Oluşturma
+      href: creating-a-custom-debug-engine.md
     - name: Özel Bir Hata Ayıklama Altyapısını Kaydetme
       href: registering-a-custom-debug-engine.md
     - name: Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme
-      href: enabling-a-program-to-be-debugged.md
       items:
+        - name: Bir Programı Hataları Ayıklanacak Şekilde Etkinleştirme
+          href: enabling-a-program-to-be-debugged.md
         - name: Bağlantı Noktası Alma
           href: getting-a-port.md
         - name: Program Kaydetme
@@ -23,8 +25,9 @@
         - name: Gerekli Olayları Gönderme
           href: sending-the-required-events.md
     - name: Yürütme Denetimi ve Durum Değerlendirmesi
-      href: execution-control-and-state-evaluation.md
       items:
+        - name: Yürütme Denetimi ve Durum Değerlendirmesi
+          href: execution-control-and-state-evaluation.md
         - name: Program Denetimi
           href: program-control.md
         - name: Kesme Noktasıyla İlgili Metotlar
@@ -36,8 +39,9 @@
         - name: Denetim Olayları
           href: control-events.md
     - name: Olayları Gönderme
-      href: sending-events.md
       items:
+        - name: Olayları Gönderme
+          href: sending-events.md
         - name: Olay Kaynakları (Visual Studio SDK)
           href: event-sources-visual-studio-sdk.md
         - name: Desteklenen Olay Türleri
@@ -47,8 +51,9 @@
     - name: Sonlandırma ve Ayırma
       href: termination-and-detaching.md
     - name: Hata Ayıklayıcısı Olaylarını Çağırma
-      href: calling-debugger-events.md
       items:
+        - name: Hata Ayıklayıcısı Olaylarını Çağırma
+          href: calling-debugger-events.md
         - name: Programa Ekleme ve Programdan Ayırma
           href: attaching-and-detaching-to-a-program.md
         - name: Hata Ayıklayıcıyı Başlatma
@@ -76,13 +81,15 @@
     - name: 'Nasıl yapılır: Özel Hata Ayıklama Altyapısında Hata Ayıklama'
       href: how-to-debug-a-custom-debug-engine.md
 - name: Hata Ayıklayıcı Genişletilebilirliği ile Çalışmaya Başlama
-  href: getting-started-with-debugger-extensibility.md
   items:
+    - name: Hata Ayıklayıcı Genişletilebilirliği ile Çalışmaya Başlama
+      href: getting-started-with-debugger-extensibility.md
     - name: Hata Ayıklayıcıyı Genişletmek için Yol Haritası
       href: roadmap-for-extending-the-debugger.md
     - name: Hata Ayıklayıcı Bileşenleri
-      href: debugger-components.md
       items:
+        - name: Hata Ayıklayıcı Bileşenleri
+          href: debugger-components.md
         - name: Paket Hatalarını Ayıklama
           href: debug-package.md
         - name: İşlem Hata Ayıklama Yöneticisi
@@ -100,8 +107,9 @@
         - name: Tür Görselleştiricisi ve Özel Görüntüleyici
           href: type-visualizer-and-custom-viewer.md
     - name: Hata Ayıklayıcı Kavramları
-      href: debugger-concepts.md
       items:
+        - name: Hata Ayıklayıcı Kavramları
+          href: debugger-concepts.md
         - name: Oturum Hatalarını Ayıklama
           href: debug-session.md
         - name: Sunucular (Visual Studio SDK)
@@ -125,8 +133,9 @@
         - name: Kesme Noktaları (Visual Studio SDK)
           href: breakpoints-visual-studio-sdk.md
     - name: Hata Ayıklayıcı Bağlamları
-      href: debugger-contexts.md
       items:
+        - name: Hata Ayıklayıcı Bağlamları
+          href: debugger-contexts.md
         - name: Kod Bağlamı
           href: code-context.md
         - name: Belge Konumu
@@ -136,13 +145,15 @@
         - name: İfade Değerlendirme Bağlamı
           href: expression-evaluation-context.md
     - name: Hata Ayıklama Görevleri
-      href: debugging-tasks.md
       items:
+        - name: Hata Ayıklama Görevleri
+          href: debugging-tasks.md
         - name: Güvenlik Sorunları
           href: security-issues.md
         - name: Program Başlatma
-          href: launching-a-program.md
           items:
+            - name: Program Başlatma
+              href: launching-a-program.md
             - name: Bağlantı Noktasına Bildirme
               href: notifying-the-port.md
             - name: Başlatmadan Sonra Ekleme
@@ -160,13 +171,15 @@
         - name: Verileri Görselleştirme ve Görüntüleme
           href: visualizing-and-viewing-data.md
 - name: Ortak Dil Çalışma Zamanı İfade Değerlendiricisi Yazma
-  href: writing-a-common-language-runtime-expression-evaluator.md
   items:
+    - name: Ortak Dil Çalışma Zamanı İfade Değerlendiricisi Yazma
+      href: writing-a-common-language-runtime-expression-evaluator.md
     - name: Ortak Dil Çalışma Zamanı ve İfade Değerlendirme
       href: common-language-runtime-and-expression-evaluation.md
     - name: İfade Değerlendirici Mimarisi
-      href: expression-evaluator-architecture.md
       items:
+        - name: İfade Değerlendirici Mimarisi
+          href: expression-evaluator-architecture.md
         - name: Değerlendirme Bağlamı
           href: evaluation-context.md
         - name: Anahtar İfade Değerlendiricisi Arabirimleri
@@ -174,16 +187,19 @@
     - name: İfade Değerlendiricisi Kaydetme
       href: registering-an-expression-evaluator.md
     - name: ifade Değerlendiricisi Uygulama
-      href: implementing-an-expression-evaluator.md
       items:
+        - name: ifade Değerlendiricisi Uygulama
+          href: implementing-an-expression-evaluator.md
         - name: İfade Değerlendiricisi Uygulama Stratejisi
           href: expression-evaluator-implementation-strategy.md
     - name: Yerel Öğeleri Görüntüleme
-      href: displaying-locals.md
       items:
+        - name: Yerel Öğeleri Görüntüleme
+          href: displaying-locals.md
         - name: Örnek Yerel Öğeler Uygulaması
-          href: sample-implementation-of-locals.md
           items:
+            - name: Örnek Yerel Öğeler Uygulaması
+              href: sample-implementation-of-locals.md
             - name: GetMethodProperty Uygulama
               href: implementing-getmethodproperty.md
             - name: Yerel Öğeleri Numaralandırma
@@ -195,32 +211,37 @@
             - name: Yerel Öğeleri Değerlendirme
               href: evaluating-locals.md
     - name: Gözcü Penceresi İfadesini Değerlendirme
-      href: evaluating-a-watch-window-expression.md
       items:
+        - name: Gözcü Penceresi İfadesini Değerlendirme
+          href: evaluating-a-watch-window-expression.md
         - name: Örnek İfade Değerlendirme Uygulaması
           href: sample-implementation-of-expression-evaluation.md
         - name: Bir Gözcü İfadesini Değerlendirme
           href: evaluating-a-watch-expression.md
     - name: Yerel Bir Öğenin Değerini Değiştirme
-      href: changing-the-value-of-a-local.md
       items:
+        - name: Yerel Bir Öğenin Değerini Değiştirme
+          href: changing-the-value-of-a-local.md
         - name: Örnek Değer Değiştirme Uygulaması
           href: sample-implementation-of-changing-values.md
     - name: Tür Görselleştiricileri ve Özel Görüntüleyiciler Uygulama
       href: implementing-type-visualizers-and-custom-viewers.md
 - name: Bağlantı Noktası Sağlayıcısı Uygulama
-  href: implementing-a-port-supplier.md
   items:
+    - name: Bağlantı Noktası Sağlayıcısı Uygulama
+      href: implementing-a-port-supplier.md
     - name: Bağlantı Noktası Sağlayıcısı Uygulama ve Kaydetme
       href: implementing-and-registering-a-port-supplier.md
     - name: Gerekli Bağlantı Noktası Sağlayıcısı Arabirimleri
       href: required-port-supplier-interfaces.md
 - name: .NET Framework için Paralel Uzantı Dahili Bileşenleri
-  href: parallel-extension-internals-for-the-dotnet-framework.md
   items:
+    - name: .NET Framework için Paralel Uzantı Dahili Bileşenleri
+      href: parallel-extension-internals-for-the-dotnet-framework.md
     - name: Görev Sınıfı - Dahili Üyeler
-      href: task-class-internal-members.md
       items:
+        - name: Görev Sınıfı - Dahili Üyeler
+          href: task-class-internal-members.md
         - name: m_action Alanı
           href: m-action-field.md
         - name: m_contingentProperties Alanı
@@ -250,34 +271,39 @@
         - name: NotifyDebuggerOfWaitCompletion Metodu
           href: notifydebuggerofwaitcompletion-method.md
     - name: TaskScheduler Sınıfı - Dahili Üyeler
-      href: taskscheduler-class-internal-members.md
       items:
+        - name: TaskScheduler Sınıfı - Dahili Üyeler
+          href: taskscheduler-class-internal-members.md
         - name: GetScheduledTasksForDebugger Metodu
           href: getscheduledtasksfordebugger-method.md
         - name: GetTaskSchedulersForDebugger Metodu
           href: gettaskschedulersfordebugger-method.md
     - name: ContingentProperties Sınıfı - Dahili Üyeler
-      href: contingentproperties-class-internal-members.md
       items:
+        - name: ContingentProperties Sınıfı - Dahili Üyeler
+          href: contingentproperties-class-internal-members.md
         - name: m_children Alanı
           href: m-children-field.md
     - name: AsyncTaskMethodBuilder Yapısı - Dahili Üyeler
-      href: asynctaskmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder Yapısı - Dahili Üyeler
+          href: asynctaskmethodbuilder-structure-internal-members.md
         - name: AsyncTaskMethodBuilder.ObjectIdForDebugger Özelliği
           href: asynctaskmethodbuilder-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder.m_builder Alanı
           href: asynctaskmethodbuilder-m-builder-field.md
     - name: AsyncTaskMethodBuilder<TResult>Yapısı - Dahili Üyeler
-      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder<TResult>Yapısı - Dahili Üyeler
+          href: asynctaskmethodbuilder-tresult-structure-internal-members.md
         - name: AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger Özelliği
           href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder<TResult>.m_task Alanı
           href: asynctaskmethodbuilder-tresult-m-task-field.md
     - name: AsyncVoidMethodBuilder Yapısı - Dahili Üyeler
-      href: asyncvoidmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncVoidMethodBuilder Yapısı - Dahili Üyeler
+          href: asyncvoidmethodbuilder-structure-internal-members.md
         - name: AsyncVoidMethodBuilder.ObjectIdForDebugger Özelliği
           href: asyncvoidmethodbuilder-objectidfordebugger-property.md
         - name: AsyncVoidMethodBuilder.m_objectIdForDebugger Alanı

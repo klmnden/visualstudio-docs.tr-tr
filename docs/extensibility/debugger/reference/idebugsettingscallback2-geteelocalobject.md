@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916264"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458629"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Ölçüm adı verilen bir ifade değerlendirici yerel bir nesne alır.
@@ -40,25 +43,25 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `guidLang`
+## <a name="parameters"></a>Parametreler
+ `guidLang`\
 
  [in] Programlama diline benzersiz tanımlayıcısı.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Satıcı benzersiz tanımlayıcısı.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Ölçüm adı.
 
- `ppUnk`
+ `ppUnk`\
 
  [out] Bir ifade döndürür değerlendirici yerel nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

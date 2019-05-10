@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bca908957a98dfa9fa12b0e420a727a2798b4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36c6ea7d4559d63f8d230d73e0df5f14fc21a0b5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864896"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458032"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio Hata Ayıklayıcısı Sözlüğü
 İçinde kullanılan terimleri şunlardır [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklama SDK'sı.
@@ -66,5 +66,5 @@ ms.locfileid: "62864896"
 
   Uyarı kesme noktası açıklayan bir bekleyen kesme noktasının bir uyarı için bir Özet. Bir uyarı kesme noktası neden bekleyen kesme noktası henüz bir kod konuma bağlı olmayan bir nedeni açıklanmaktadır. Bu kodun henüz bekleyen kesme noktasının tarafından açıklanan konumu veya başka bir nedenle yüklememiş emin olabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,9 +1,11 @@
 - name: İş Akışı Tasarımcısı ile uygulamaları geliştirme
-  href: developing-applications-with-the-workflow-designer.md
   items:
+    - name: İş Akışı Tasarımcısı ile uygulamaları geliştirme
+      href: developing-applications-with-the-workflow-designer.md
     - name: İş Akışı projesi Oluşturma
-      href: creating-a-workflow-project.md
       items:
+        - name: İş Akışı projesi Oluşturma
+          href: creating-a-workflow-project.md
         - name: Bir İş Akışı Projesine Yeni Öğe Ekleme
           href: how-to-add-a-new-item-to-a-workflow-project.md
     - name: Araç Kutusuna Etkinlik Ekleme
@@ -25,11 +27,13 @@
     - name: İş Akışı Tasarımcısında bir iş akışına açıklama ekleme
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Etkinlik tasarımcıları
-      href: using-the-activity-designers.md
       items:
+        - name: Etkinlik tasarımcıları
+          href: using-the-activity-designers.md
         - name: Akış Etkinliği Tasarımcılarını denetleme
-          href: control-flow-activity-designers.md
           items:
+            - name: Akış Etkinliği Tasarımcılarını denetleme
+              href: control-flow-activity-designers.md
             - name: DoWhile Etkinlik Tasarımcısı
               href: dowhile-activity-designer.md
             - name: ForEach<T> Etkinlik Tasarımcısı
@@ -51,8 +55,9 @@
             - name: While Etkinlik Tasarımcısı
               href: while-activity-designer.md
         - name: Flowchart Etkinlik Tasarımcıları
-          href: flowchart-activity-designers.md
           items:
+            - name: Flowchart Etkinlik Tasarımcıları
+              href: flowchart-activity-designers.md
             - name: Flowchart Etkinlik Tasarımcısı
               href: flowchart-activity-designer.md
             - name: FlowDecision Etkinlik Tasarımcısı
@@ -60,8 +65,9 @@
             - name: FlowSwitch<T> Etkinlik Tasarımcısı
               href: flowswitch-t-activity-designer.md
         - name: Durum Makinesi Etkinlik Tasarımcıları
-          href: state-machine-activity-designers.md
           items:
+            - name: Durum Makinesi Etkinlik Tasarımcıları
+              href: state-machine-activity-designers.md
             - name: StateMachine Etkinlik Tasarımcısı
               href: statemachine-activity-designer.md
             - name: State Etkinlik Tasarımcısı
@@ -71,8 +77,9 @@
             - name: Transition Etkinlik Tasarımcısı
               href: transition-activity-designer.md
         - name: Mesajlaşma Etkinlik Tasarımcıları
-          href: messaging-activity-designers.md
           items:
+            - name: Mesajlaşma Etkinlik Tasarımcıları
+              href: messaging-activity-designers.md
             - name: CorrelationScope Etkinlik Tasarımcısı
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation Etkinlik Tasarımcısı
@@ -88,15 +95,17 @@
             - name: TransactedReceiveScope Etkinlik Tasarımcısı
               href: transactedreceivescope-activity-designer.md
         - name: Çalışma Zamanı Etkinlik Tasarımcıları
-          href: runtime-activity-designers.md
           items:
+            - name: Çalışma Zamanı Etkinlik Tasarımcıları
+              href: runtime-activity-designers.md
             - name: Persist Etkinlik Tasarımcısı
               href: persist-activity-designer.md
             - name: TerminateWorkflow Etkinlik Tasarımcısı
               href: terminateworkflow-activity-designer.md
         - name: Temel Öğeler Etkinlik Tasarımcıları
-          href: primitives-activity-designers.md
           items:
+            - name: Temel Öğeler Etkinlik Tasarımcıları
+              href: primitives-activity-designers.md
             - name: Assign Etkinlik Tasarımcısı
               href: assign-activity-designer.md
             - name: Delay Etkinlik Tasarımcısı
@@ -108,8 +117,9 @@
             - name: WriteLine Etkinlik Tasarımcısı
               href: writeline-activity-designer.md
         - name: İşlem Etkinlik Tasarımcıları
-          href: transaction-activity-designers.md
           items:
+            - name: İşlem Etkinlik Tasarımcıları
+              href: transaction-activity-designers.md
             - name: CancellationScope Etkinlik Tasarımcısı
               href: cancellationscope-activity-designer.md
             - name: CompensableActivity Etkinlik Tasarımcısı
@@ -121,8 +131,9 @@
             - name: TransactionScope Etkinlik Tasarımcısı
               href: transactionscope-activity-designer.md
         - name: Koleksiyon Etkinlik Tasarımcıları
-          href: collection-activity-designers.md
           items:
+            - name: Koleksiyon Etkinlik Tasarımcıları
+              href: collection-activity-designers.md
             - name: AddToCollection<T> Etkinlik Tasarımcısı
               href: addtocollection-t-activity-designer.md
             - name: ClearCollection<T> Etkinlik Tasarımcısı
@@ -132,8 +143,9 @@
             - name: RemoveFromCollection<T> Etkinlik Tasarımcısı
               href: removefromcollection-t-activity-designer.md
         - name: Hata İşleme Etkinlik Tasarımcıları
-          href: error-handling-activity-designers.md
           items:
+            - name: Hata İşleme Etkinlik Tasarımcıları
+              href: error-handling-activity-designers.md
             - name: Rethrow Etkinlik Tasarımcısı
               href: rethrow-activity-designer.md
             - name: Throw Etkinlik Tasarımcısı
@@ -141,13 +153,15 @@
             - name: TryCatch Etkinlik Tasarımcısı
               href: trycatch-activity-designer.md
         - name: Geçiş Etkinlik Tasarımcıları
-          href: migration-activity-designers.md
           items:
+            - name: Geçiş Etkinlik Tasarımcıları
+              href: migration-activity-designers.md
             - name: Interop Etkinlik Tasarımcısı
               href: interop-activity-designer.md
     - name: İş akışları hata ayıklama
-      href: debugging-workflows-with-the-workflow-designer.md
       items:
+        - name: İş akışları hata ayıklama
+          href: debugging-workflows-with-the-workflow-designer.md
         - name: İş Akışlarında Kesme Noktası Ayarlama
           href: how-to-set-breakpoints-in-workflows.md
         - name: İş Akışı Tasarımcısı ile XAML Hatalarını Ayıklama
@@ -155,8 +169,9 @@
         - name: Hata ayıklama desteklenmeyen senaryolar
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
     - name: UI başvurusu
-      href: workflow-designer-ui-help.md
       items:
+        - name: UI başvurusu
+          href: workflow-designer-ui-help.md
         - name: .NET Türüne Gözat ve Seç İletişim Kutusu
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: CorrelatesOn Tanımı İletişim Kutusu

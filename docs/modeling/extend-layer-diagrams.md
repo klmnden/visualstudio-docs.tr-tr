@@ -10,28 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994706"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476562"
 ---
 # <a name="extend-dependency-diagrams"></a>Bağımlılık diyagramlarını genişletme
 
 Bağımlılık diyagramları oluşturmak için ve program kodunuza Visual Studio'da bağımlılık diyagramlarına karşı yapısı doğrulamak için kod yazabilirsiniz. Diyagramların (bağlam) kısayol menüsünde görünür, sürükle ve bırak hareketlerini özelleştirme ve metin şablonlarından katman modeline erişme komutlar ekleyebilirsiniz. Bu uzantılar bir Visual Studio Tümleştirme Uzantısı (VSIX) paketini ve diğer Visual Studio kullanıcılara dağıtın.
 
- Bağımlılık diyagramları hakkında daha fazla bilgi için bkz:
-
-- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
-
-- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)
-
-- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Gereksinimleri
+## <a name="requirements"></a>Gereksinimler
 
 Aşağıdaki katman uzantılarınızı geliştirmek istediğiniz bilgisayarda yüklü olması gerekir:
 
@@ -43,18 +33,9 @@ Aşağıdaki katman uzantılarınızı geliştirmek istediğiniz bilgisayarda y�
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Katman uzantılarınızı çalıştırmak istediğiniz bilgisayarda yüklü Visual Studio'nun uygun bir sürüm olmalıdır.
+Uygun bir sürümü Visual Studio'nun katman uzantılarınızı çalıştırmak istediğiniz bilgisayarda yüklü olması gerekir. Bağımlılık diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Bağımlılık diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>Bu Bölümde
- [Bağımlılık diyagramlarına komut ve hareket ekleme](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Bağımlılık diyagramlarına özel özellikler ekleme](../modeling/add-custom-properties-to-layer-diagrams.md)
-
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
 - [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788479"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461391"
 ---
 # <a name="unit-test-your-code"></a>Birim testi kod
 
@@ -38,18 +38,18 @@ Ayrıca [Intellitest](../test/generate-unit-tests-for-your-code-with-intellitest
 
 ## <a name="key-tasks"></a>Ana görevler
 
-Birim testlerini anlamaya ve oluşturmaya yardımcı olmaları için aşağıdaki konuları kullanın:
+Anlama ve birim testleri oluşturma yardımcı olması için aşağıdaki makaleleri kullanın:
 
 |Görevler|İlişkili Konular|
 |-|-----------------------|
-|**Hızlı başlangıçlar ve izlenecek yollar:** Birim kod örneklerini kullanarak Visual Studio'da testi gerçekleştirmeyi öğrenmek için aşağıdaki konulara bakın.|-   [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Test Gezgini ile birim testi:** Test Gezgini'nin daha üretken ve verimli birim testleri oluşturma nasıl yardımcı olabileceğini öğrenin.|-   [Birim testi temel bilgileri](../test/unit-test-basics.md)<br />-   [Bir birim testi projesi oluşturma](../test/create-a-unit-test-project.md)<br />-   [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)<br />-   [Üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)|
-|**Birim testleri C++ kodu**|-   [C++ için Microsoft birim testi çerçevesi ile C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)|
-|**Birim testlerini yalıtma**|-   [Microsoft Fakes ile test edilen kodu Ayır](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Proje kodunuzun ne oranda test edilen belirlemek için kod kapsamı kullanın:** Visual Studio Test araçlarının kod kapsamı özelliği hakkında bilgi edinin.|-   [Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** Yük testi oluşturma ve performans yalıtmak ve stres sorularınızın gidermek için birim testleri ekleyin.|-   [Test (Azure Test planları ve TFS) yükleyin](/azure/devops/test/load-test/index?view=vsts)|
-|**Kalite kapıları belirleyin:** Testleri kod iade veya birleştirilen kodun kalitesini sağlamaya yardımcı olmak için önce çalışmaya zorlamak için kalite kapıları oluşturabilirsiniz.|-   [İade ilkeleri (Azure depoları TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Test seçeneklerini belirleyin:** Örneğin, test sonuçlarının nerede depolanacağını belirtebilirsiniz.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Hızlı Başlangıçlar ve izlenecek yollar:** Birim kod örneklerini kullanarak Visual Studio'da testi hakkında bilgi edinin.|- [İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Nasıl Yapılır: Birim testleri ekleme C++ uygulamaları](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Test Gezgini ile birim testi:** Test Gezgini'nin daha üretken ve verimli birim testleri oluşturma nasıl yardımcı olabileceğini öğrenin.|- [Birim testi temel bilgileri](../test/unit-test-basics.md)<br />- [Bir birim testi projesi oluşturma](../test/create-a-unit-test-project.md)<br />- [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)<br />- [Üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)|
+|**Birim testi C++ kod**|- [C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)|
+|**Birim testlerini yalıtma**|- [Microsoft Fakes ile test edilen kodu Ayır](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Proje kodunuzun ne oranda test edilen belirlemek için kod kapsamı kullanın:** Visual Studio Test araçlarının kod kapsamı özelliği hakkında bilgi edinin.|- [Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Yük testlerini kullanarak stres ve performans analizleri gerçekleştirin:** Performans yalıtmak ve stres sorularınızın gidermek için yük testleri oluşturmayı öğrenin.|- [Hızlı Başlangıç: Bir yük testi projesi oluşturma](../test/quickstart-create-a-load-test-project.md)<br />- [Test (Azure Test planları ve TFS) yükleyin](/azure/devops/test/load-test/index?view=vsts)|
+|**Kalite kapıları belirleyin:** Testleri kod iade veya birleştirilmiş önce çalışmaya zorlamak için kalite kapıları oluşturmayı öğrenin.|- [İade ilkeleri (Azure depoları TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Test seçeneklerini belirleyin:** Test sonuçlarını depolandığı test seçenekleri, örneğin, yapılandırmayı öğrenin.|[.runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API başvuru belgeleri
 

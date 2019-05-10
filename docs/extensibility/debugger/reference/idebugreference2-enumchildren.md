@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c4ce1ce565ee2ca2fe4c6a26461ef283e7e76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916343"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458706"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Seçili çocuğunu başvuru listesini alın. Daha sonraki kullanımlar için ayrılmıştır.
@@ -46,35 +49,35 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwFields`
+## <a name="parameters"></a>Parametreler
+ `dwFields`\
 
  [in] Bayraklarının bir birleşimi [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) hangi alanların numaralandırılmış belirten numaralandırma [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapılardır doldurulmalıdır.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in] Bayraklarının bir birleşimi [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) birlikte bir filtre olarak kullanılan sabit listesi `pszNameFilter` sıralanması hangi yapılar seçmek için parametre.
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in] "Birlikte MyX" gibi bir filtre belirten bir dize `dwAttribFilter` sıralanması yapıları seçmek için parametre.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Döndürür bir [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) istenen alt özellikleri listesini içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

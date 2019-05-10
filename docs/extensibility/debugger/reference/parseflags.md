@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913722"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460837"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Bir ifade ayrıştırmayı belirtir.
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- İfade bir ifade değil PARSE_EXPRESSION gösterir.
+## <a name="fields"></a>Alanlar
+ `PARSE_EXPRESSION`\
+ İfade bir deyim olmadığını gösterir.
 
- PARSE_FUNCTION_AS_ADDRESS ifade ayrıştırılması (ve daha sonra hesaplanan üzere olan) bir adres olarak gösterir.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ İfade bir adres olarak ayrıştırılması (ve daha sonra değerlendirilmesi için) olduğunu gösterir.
 
- PARSE_DESIGN_TIME_EXPR_EVAL belirten ifade tasarım sırasında Ayrıştırılmakta olan (diğer bir deyişle, bir tasarımcı açık olduğunda).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Tasarım sırasında Ayrıştırılmakta olan ifade gösterir (diğer bir deyişle, bir tasarımcı açık olduğunda).
 
 ## <a name="remarks"></a>Açıklamalar
  Bir parametre olarak geçirilen [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) ve [ayrıştırma](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) yöntemleri.
@@ -58,7 +64,7 @@ public enum enum_PARSEFLAGS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

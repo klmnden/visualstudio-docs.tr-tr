@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aab3fe715ab0b41dc7bb875bee4d8b1b94837bf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b9f10c171d8369adfe460424b9b6abe047b1a24
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566309"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458252"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Seçili veritabanı nesnelerinin biri veya daha fazlası, hedef sınıfın şemasıyla eşleşmeyen bir şema döndürüyor
 
@@ -29,5 +29,4 @@ Veritabanı nesneleri mevcut varlık sınıfları sürüklediğinizde, veritaban
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

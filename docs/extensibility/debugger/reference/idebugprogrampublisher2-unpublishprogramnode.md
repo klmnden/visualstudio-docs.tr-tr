@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56eb23466d0364cbe22046bbb36be593a83a0998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00c78b4390d519cb8b37d0af17e1e61a8127d080
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869673"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458933"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Belirtilen program düğüm altyapıları (DEs) ve oturum hata ayıklama Yöneticisi (SDM) hata ayıklamak için kullanıma sunulmasından kaldırır.
@@ -36,8 +39,8 @@ int UnpublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pProgramNode`
+## <a name="parameters"></a>Parametreler
+ `pProgramNode`\
 
  [in] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) kaldırılmakta olan program düğümü temsil eden nesne.
 
@@ -49,7 +52,7 @@ int UnpublishProgramNode(
 
  Bir program düğümü kullanılabilir hale getirmek için çağrı [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

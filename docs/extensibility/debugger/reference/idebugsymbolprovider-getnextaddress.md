@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915676"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223996"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Bir yöntemde belirli hata ayıklama adresi aşağıdaki hata ayıklama adresi alır.
@@ -40,21 +43,21 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pAddress`
+## <a name="parameters"></a>Parametreler
+ `pAddress`\
 
  [in] Hata ayıklama adresi verilir.
 
- `fStatementOnly`
+ `fStatementOnly`\
 
  [in] TRUE ise tek bir deyimde hata ayıklama adresler sınırlar.
 
- `ppAddress`
+ `ppAddress`\
 
  [out] Sonraki hata ayıklama adresi döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Geçerli bir döndürür `HRESULT`, genellikle S_OK.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

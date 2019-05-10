@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002715"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476645"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
+# <a name="create-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 
 *Metin şablonu dönüştürme süreci* götüren bir *metin şablonu* dosyası olarak girdi ve çıktı olarak bir metin dosyası oluşturur. *Metin şablonu dönüştürme motoru* işlemi ve altyapısı bir metin şablonu dönüştürme ana bilgisayarı ve bir veya daha fazla metin şablonu ile etkileşime giren denetimleri *yönerge işlemcileri* tamamlamak için işlem. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
 

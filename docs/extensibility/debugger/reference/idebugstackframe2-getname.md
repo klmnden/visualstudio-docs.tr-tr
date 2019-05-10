@@ -1,52 +1,54 @@
 ---
 title: IDebugStackFrame2::GetName | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetName
 helpviewer_keywords:
 - IDebugStackFrame2::GetName
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 076e744be4e97cc8c58d5b5f7578f1701f39d711
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee4c292bdd80a8209d9136bac0cbc6775a2c33ac
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915978"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458521"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Yığın çerçevesinin adını alır.
 
-Yığın çerçevesinin adını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp#  
-HRESULT GetName (   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName (   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pbstrName`  
- [out] Yığın çerçevesinin adını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir yığın çerçevesini genellikle yürütülmekte olan yöntem adını adıdır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetName ( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName ( 
+   out string pbstrName
+);
+```
+
+## <a name="parameters"></a>Parametreler
+ `pbstrName`\
+
+ [out] Yığın çerçevesinin adını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bir yığın çerçevesini genellikle yürütülmekte olan yöntem adını adıdır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864873"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460993"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Step unit atlamak için belirtir.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- Deyimi tarafından STEP_STATEMENT adımları.
+## <a name="fields"></a>Alanlar
+ `STEP_STATEMENT`\
+ Deyimi tarafından adımları.
 
- Çizgi STEP_LINE adımları.
+ `STEP_LINE`\
+ Adımları çizgi.
 
- Yönerge tarafından STEP_INSTRUCTION adımları.
+ `STEP_INSTRUCTION`\
+ Yönerge adımlarla.
 
 ## <a name="remarks"></a>Açıklamalar
  Bağımsız değişken olarak geçirilen [adım](../../../extensibility/debugger/reference/idebugprocess3-step.md) yöntemi.
@@ -58,6 +64,6 @@ enum enum_STEPUNIT { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

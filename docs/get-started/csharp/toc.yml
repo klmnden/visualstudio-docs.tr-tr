@@ -1,6 +1,7 @@
 - name: 'C# öğreticiler'
-  href: index.yml
   items:
+    - name: 'C# öğreticiler'
+      href: index.yml
     - name: Genel Bakış
       items:
         - name: Visual Studio Hakkında

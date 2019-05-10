@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930f3d7ec2500adaaf9b499e4e327aedabaf8d52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 424f8a8f51e714dab35f542974b6f25e5ecf3841
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916017"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457574"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Yığın çerçevesinin özellikleri açıklamasını alır.
@@ -36,8 +39,8 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppDebugProp`
+## <a name="parameters"></a>Parametreler
+ `ppDebugProp`\
 
  [out] Döndürür bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Bu yığın çerçevesinin özellikleri tanımlayan nesne.
 
@@ -47,6 +50,6 @@ int GetDebugProperty ( 
 ## <a name="remarks"></a>Açıklamalar
  Çağırma [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) yerel değişkenler, yöntem parametreleri, yazmaçlar ve yığın çerçevesiyle ilgili "this" işaretçisi uygun filtreleri yöntemle alabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

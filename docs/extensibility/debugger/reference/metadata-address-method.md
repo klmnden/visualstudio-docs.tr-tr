@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913916"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461018"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Bu yapı, bir sınıfın yöntemini adresini temsil eder.
@@ -40,18 +43,18 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Koşulları
- tokMethod
+## <a name="members"></a>Üyeler
+ `tokMethod`\
 
  Yöntem kimliği.
 
  [C++] `_mdToken` olduğu bir `typedef` 32-bit `int`.
 
- dwOffset
+ `dwOffset`\
 
  Sınıf başlangıç uzaklığı bu yönteme (uzaklığı vtable temsil edebilir).
 
- Kaynak
+ `dwVersion`\
 
  (Bu değer sembol sağlayıcısı için benzersiz olan) yöntemi sürümü.
 
@@ -65,7 +68,7 @@ public struct METADATA_ADDRESS_METHOD {
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

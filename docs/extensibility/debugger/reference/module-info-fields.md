@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865459"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458015"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Hata ayıklama modülü bilgi bayrakları belirtir.
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- MIF_NONE başlatma/kullanım alanları yapısında hiçbiri.
+## <a name="fields"></a>Alanlar
+ `MIF_NONE`\
+ Alanların yapısında başlatma/kullanın.
 
- MIF_NAME başlatma/kullanım `m_bstrName` alanındaki [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) yapısı.
+ `MIF_NAME`\
+ Başlat/kullanım `m_bstrName` alanındaki [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) yapısı.
 
- MIF_URL başlatma/kullanım `m_bstrUrl` alanındaki `MODULE_INFO` yapısı.
+ `MIF_URL`\
+ Başlat/kullanım `m_bstrUrl` alanındaki `MODULE_INFO` yapısı.
 
- MIF_VERSION başlatma/kullanım `m_bstrVersion` alanındaki `MODULE_INFO` yapısı.
+ `MIF_VERSION`\
+ Başlat/kullanım `m_bstrVersion` alanındaki `MODULE_INFO` yapısı.
 
- MIF_DEBUGMESSAGE başlatma/kullanım `m_bstrDebugMessage` alanındaki `MODULE_INFO` yapısı.
+ `MIF_DEBUGMESSAGE`\
+ Başlat/kullanım `m_bstrDebugMessage` alanındaki `MODULE_INFO` yapısı.
 
- MIF_LOADADDRESS başlatma/kullanım `m_addrLoadAddress` alanındaki `MODULE_INFO` yapısı.
+ `MIF_LOADADDRESS`\
+ Başlat/kullanım `m_addrLoadAddress` alanındaki `MODULE_INFO` yapısı.
 
- MIF_PREFFEREDADDRESS başlatma/kullanım `m_addrPreferredLoadAddress` alanındaki `MODULE_INFO` yapısı.
+ `MIF_PREFFEREDADDRESS`\
+ Başlat/kullanım `m_addrPreferredLoadAddress` alanındaki `MODULE_INFO` yapısı.
 
- MIF_SIZE başlatma/kullanım `m_dwSize` alanındaki `MODULE_INFO` yapısı.
+ `MIF_SIZE`\
+ Başlat/kullanım `m_dwSize` alanındaki `MODULE_INFO` yapısı.
 
- MIF_LOADORDER başlatma/kullanım `m_dwLoadOrder` alanındaki `MODULE_INFO` yapısı.
+ `MIF_LOADORDER`\
+ Başlat/kullanım `m_dwLoadOrder` alanındaki `MODULE_INFO` yapısı.
 
- MIF_TIMESTAMP başlatma/kullanım `m_TimeStamp` alanındaki `MODULE_INFO` yapısı.
+ `MIF_TIMESTAMP`\
+ Başlat/kullanım `m_TimeStamp` alanındaki `MODULE_INFO` yapısı.
 
- MIF_URLSYMBOLLOCATION başlatma/kullanım `m_bstrUrlSymbolLocation` alanındaki `MODULE_INFO` yapısı.
+ `MIF_URLSYMBOLLOCATION`\
+ Başlat/kullanım `m_bstrUrlSymbolLocation` alanındaki `MODULE_INFO` yapısı.
 
- MIF_FLAGS başlatma/kullanım `m_dwModuleFlags` alanındaki `MODULE_INFO` yapısı.
+ `MIF_FLAGS`\
+ Başlat/kullanım `m_dwModuleFlags` alanındaki `MODULE_INFO` yapısı.
 
- MIF_ALLFIELDS başlatma/kullanım tüm alanlarda `MODULE_INFO` yapısı.
+ `MIF_ALLFIELDS`\
+ Tüm alanlarda başlatma/kullanım `MODULE_INFO` yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu değerleri bir bağımsız değişken olarak geçirilen [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) hangi alanları göstermek için yöntemi [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) yapısı olan başlatılacak.
@@ -102,7 +118,7 @@ public enum enum_MODULE_INFO_FIELDS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

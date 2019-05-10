@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414854"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476575"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirme ve Genişletme
+# <a name="customize-and-extend-a-domain-specific-language"></a>Özelleştirme ve bir etki alanına özgü dili genişletir
+
 Visual Studio modelleme ve görselleştirme SDK'sı (VMSDK) modelleme araçları tanımlamak birden fazla düzeyleri sağlar:
 
-1. DSL tanım diyagramı kullanarak bir etki alanına özgü dil (DSL) tanımlayın. Bir DSL, bir grafiksel gösterimi, okunabilir XML form ve kodu ve diğer yapıları üretmek için gerekli olan temel araçları ile hızlı bir şekilde oluşturabilirsiniz.
-
-     Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md).
+1. DSL tanım diyagramı kullanarak bir etki alanına özgü dil (DSL) tanımlayın. Bir DSL, bir grafiksel gösterimi, okunabilir XML form ve kodu ve diğer yapıları üretmek için gerekli olan temel araçları ile hızlı bir şekilde oluşturabilirsiniz. Daha fazla bilgi için [etki alanına özgü bir dili tanımlama nasıl](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. DSL DSL tanımının daha gelişmiş özelliklerini kullanarak hassas ayarlamalar yapabilirsiniz. Örneğin, ek bağlantılar kullanıcı bir öğe oluşturduğunda görünür yapabilirsiniz. Bu teknikler genellikle DSL tanımındaki elde edilir ve bazı program kodu birkaç satır gerektirir.
 
-3. Program kodunu kullanarak, modelleme araçları genişletir. VMSDK uzantılarınızı DSL tanımını oluşturan kod ile tümleştirmeyi kolaylaştırmak için tasarlanmıştır.  Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Program kodunu kullanarak, modelleme araçları genişletir. VMSDK uzantılarınızı DSL tanımını oluşturan kod ile tümleştirmeyi kolaylaştırmak için tasarlanmıştır. Daha fazla bilgi için [bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> DSL tanımlarına dosya güncelleştirildiğinde tıklamayı değil **tüm Şablonları Dönüştür** çözümünüzü yeniden oluşturmayı önce Çözüm Gezgini araç çubuğundaki.
+> DSL tanımlarına dosya güncelleştirildiğinde seçeneğine tıklamayı **tüm Şablonları Dönüştür** araç **Çözüm Gezgini** çözümünüzü yeniden oluşturmayı önce.
 
-## <a name="customShapes"></a> Bu bölümde
+## <a name="article-reference"></a>Makale başvurusu
 
 |Bu etkiyi elde etmek için|Bu konuya bakın|
 |-|-|
-|Şeklin rengi ve stil özelliklerini ayarlama izin verin.|Şekil veya bağlayıcının sınıfı sağ tıklatın, **ekleme kullanıma sunulan**ve bir öğeye tıklayın.<br /><br /> Bkz: [diyagramda sunuyu özelleştirme](../modeling/customizing-presentation-on-the-diagram.md).|
+|Şeklin rengi ve stil özelliklerini ayarlama izin verin.|Şekil veya bağlayıcının sınıfı sağ tıklatın, **ekleme kullanıma sunulan**ve bir öğeye tıklayın.|
 |Model öğesinin farklı sınıflar diyagramda ilk yükseklik ve genişlik, renk, araç ipuçları gibi özellikleri paylaşımı benzer.|Şekilleri veya bağlayıcı sınıfları arasındaki devralma kullanın. Türetilmiş şekiller ve türetilmiş alan sınıfları arasındaki eşlemeleri üst eşleme ayrıntılarını alır.<br /><br /> Ya da farklı bir etki alanı sınıfları aynı şekli sınıfa eşleme.|
 |Model öğesinin bir sınıf tarafından bağlamları farklı şekiller görüntülenir.|Birden fazla şekil sınıfı için aynı etki alanı sınıfı eşleyin. Çözüm derlediğinizde, hata raporu izleyin ve kullanmak için nasıl bir şekil karar vermek için istenen kod sağlar.|
 |Şekil rengine veya yazı tipi gibi diğer özellikleri geçerli durumunu gösterir.|Bkz: [modeli yansıtacak şekilleri ve bağlayıcıları güncelleştirme](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Sunulan özellikler güncelleştiren bir kural oluşturun. Bkz: [değişiklikleri modelin içinde yayan kurallar](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Dilerseniz OnAssociatedPropertyChanged() bağlantı oklar veya yazı tipi gibi açık olmayan özellikleri güncelleştirmek için kullanın.|
 |Simge durumu göstermek için şekli değişir.|DSL Ayrıntıları penceresinde dekoratör eşlemesi görünürlüğünü ayarlayabilirsiniz. Aynı konumda birden fazla görüntü dekoratörleri bulun. Bkz: [modeli yansıtacak şekilleri ve bağlayıcıları güncelleştirme](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Veya geçersiz kılma `ImageField.GetDisplayImage()`. Örnekte bakın <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Herhangi bir şekli bir arka plan görüntüsü ayarlama|Bağlantılı bir ImageField eklemek için InitializeInstanceResources() geçersiz kılar. Bkz: [diyagramda sunuyu özelleştirme](../modeling/customizing-presentation-on-the-diagram.md).|
-|İç içe şekillere herhangi derinliği|Özyinelemeli bir ağaç katıştırma ayarlayın. BoundsRules şekil içerecek şekilde tanımlar. Bkz: [diyagramda sunuyu özelleştirme](../modeling/customizing-presentation-on-the-diagram.md).|
+|Herhangi bir şekli bir arka plan görüntüsü ayarlama|Bağlantılı bir ImageField eklemek için InitializeInstanceResources() geçersiz kılar.|
+|İç içe şekillere herhangi derinliği|Özyinelemeli bir ağaç katıştırma ayarlayın. BoundsRules şekil içerecek şekilde tanımlar.|
 |Bir öğenin sınırında sabit noktalarda bağlayıcıları ekleyin.|Küçük bağlantı noktalarına diyagram tarafından temsil edilen katıştırılmış terminal öğelerini tanımlayın. BoundsRules yerinde bağlantı noktaları düzeltmek için kullanın. Bağlantı hattı diyagramı örneğine bakın [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Metin alanı, diğer değerlerden türetilmiş bir değer görüntüler.|Metin dekoratör bir hesaplanmış ya da özel depolama etki alanı özelliğine eşleyin. Daha fazla bilgi için [hesaplanan ve özel depolama özellikleri](../modeling/calculated-and-custom-storage-properties.md).|
 |Şekil veya model öğeleri arasında değişiklikleri yayma|Bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).|

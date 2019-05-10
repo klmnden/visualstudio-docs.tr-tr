@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913867"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461004"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Neden ve ileti türünü belirtir.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- MT_OUTPUTSTRING için çıkış penceresine ileti gönderilmesi gerektiğini gösterir. Bu gelen birbirini dışlayan `MT_MESSAGEBOX`.
+## <a name="fields"></a>Alanlar
+ `MT_OUTPUTSTRING`\
+ İleti için çıkış penceresine gönderilen olduğunu gösterir. Bu gelen birbirini dışlayan `MT_MESSAGEBOX`.
 
- İleti bir ileti kutusunda gösterilecek MT_MESSAGEBOX gösterir. Bu gelen birbirini dışlayan `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ İleti bir ileti kutusunda gösterilecek gösterir. Bu gelen birbirini dışlayan `MT_OUTPUTSTRING`.
 
- İleti için hedef yalıtmak için bir maske değeri MT_TYPE_MASK.
+ `MT_TYPE_MASK`\
+ İleti için hedef yalıtmak için bir maske değeri.
 
- MT_REASON_EXCEPTION bir özel durum sonucu olarak görüntülenen bir ileti kutusu gösterir. Bu gelen birbirini dışlayan `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Bir özel durum sonucu olarak bir ileti kutusu gösterilmekte olduğunu gösterir. Bu gelen birbirini dışlayan `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT bir izleme noktasına ulaşma sonucu olarak bir ileti kutusu gösterilmekte olduğunu gösterir. Bu birbirini dışlayan olan `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Bir ileti kutusu sonucunda bir izleme noktasına ulaşma gösterilmekte olduğunu gösterir. Bu birbirini dışlayan olan `MT_REASON_EXCEPTION`.
 
- Gösterilen iletiyi nedeni yalıtmak için bir maske değeri MT_REASON_MASK.
+ `MT_REASON_MASK`\
+ Gösterilen iletiyi nedeni yalıtmak için bir maske değeri.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu değerleri döndürülen [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) ve [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) yöntemleri.
@@ -72,7 +81,7 @@ public enum enum_MESSAGETYPE { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)
 - [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

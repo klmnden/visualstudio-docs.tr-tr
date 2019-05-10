@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868658"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224150"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Bu yöntem, hata ayıklama adresi içeren alanı alır.
@@ -38,19 +41,19 @@ int GetContainerField(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pAddress`
+## <a name="parameters"></a>Parametreler
+ `pAddress`\
 
  [in] Tarafından temsil edilen adrese bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
 
- `ppContainerField`
+ `ppContainerField`\
 
  [out] Tarafından temsil edilen bir kapsayıcı alan döndürür bir [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

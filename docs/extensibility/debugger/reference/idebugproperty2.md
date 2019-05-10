@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f80d536e55241a92ed25738b6f8f444f11645b1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412680"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457710"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Bu arabirim, yığın çerçeve özelliği, bir program belge özelliği veya diğer bir özelliği temsil eder. Genellikle bir ifade değerlendirme sonucu özelliğidir.
@@ -76,7 +76,7 @@ IDebugProperty2 : IUnknown
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

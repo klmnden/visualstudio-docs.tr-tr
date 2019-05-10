@@ -9,8 +9,9 @@
     - name: Veri bilimi ve analitik uygulamalar iş yükü
       href: data-science-and-analytical-applications-workload.md
 - name: Yükleme
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: Yükleme
+      href: installing-python-support-in-visual-studio.md
     - name: Python yorumlayıcılarını yükleme
       href: installing-python-interpreters.md
 - name: Hızlı Başlangıçlar
@@ -75,8 +76,9 @@
 - name: Kavramlar
   items:
     - name: Python projeleri
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Python projeleri
+          href: managing-python-projects-in-visual-studio.md
         - name: Web projesi şablonları
           href: python-web-application-project-templates.md
         - name: Django web projesi şablonu
@@ -88,8 +90,9 @@
 - name: Nasıl yapılır kılavuzları
   items:
     - name: Python ortamlarını yönetme
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Python ortamlarını yönetme
+          href: managing-python-environments-in-visual-studio.md
         - name: Proje için yorumlayıcıyı seçme
           href: selecting-a-python-environment-for-a-project.md
         - name: Bağımlılıklar için requirements.txt dosyasını kullanma
@@ -101,8 +104,9 @@
         - name: IIS için web uygulamalarını yapılandırma
           href: configure-web-apps-for-iis-windows.md
     - name: Python kodunu düzenleme
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: Python kodunu düzenleme
+          href: editing-python-code-in-visual-studio.md
         - name: Kodu biçimlendirme
           href: formatting-python-code.md
         - name: Kodu yeniden düzenleme
@@ -112,13 +116,15 @@
     - name: Özel menü komutları tanımlama
       href: defining-custom-python-project-commands.md
     - name: Etkileşimli Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: Etkileşimli Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: IPython REPL kullanma
           href: interactive-repl-ipython.md
     - name: Hata Ayıklama
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: Hata Ayıklama
+          href: debugging-python-in-visual-studio.md
         - name: Uzak Linux bilgisayarlarda kodda hata ayıklama
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Linux üzerinde Azure App Service’e yayımlama

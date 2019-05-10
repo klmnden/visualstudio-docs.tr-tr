@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Direct2D veya JavaScript uygulamaları kullanmak için doku dışa aktarma'
+title: Direct2D ve JavaScript uygulamaları için doku dışa aktarma
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844390"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459199"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Nasıl yapılır: Direct2D veya Javascript uygulamaları kullanmak için dokuyu dışarı aktarma
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Nasıl yapılır: Direct2D veya JavaScript uygulamaları ile kullanmak için doku dışa aktarma
 
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalarında kullanım için uygundur.
 
@@ -39,11 +39,11 @@ Direct2D bağlamında kullanılan dokular bu Direct2D iç işleme kurallarına u
 
 - Doku sağlanması gereken *.dds* bu blok sıkıştırma biçimlerinden birini kullanarak biçimi:
 
-    - BC1_UNORM sıkıştırma
+   - BC1_UNORM sıkıştırma
 
-    - BC2_UNORM sıkıştırma
+   - BC2_UNORM sıkıştırma
 
-    - BC3_UNORM sıkıştırma
+   - BC3_UNORM sıkıştırma
 
 - Mipmaplar desteklenmiyor.
 

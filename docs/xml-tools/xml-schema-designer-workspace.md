@@ -8,16 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933684"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461338"
 ---
-# <a name="xml-schema-designer-workspace"></a>XML şema tasarımcısı çalışma alanı
+# <a name="xml-schema-designer-workspace-views"></a>XML şema Tasarımcısı çalışma alanı görünümleri
 
-XML şema Tasarımcısı'nı (XSD Tasarımcısı), XML şemaları keşfetmenize yardımcı olan bir grafik aracıdır. Ek olarak [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md)göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanıyan, XSD Tasarımcısı, XSD şema daha ayrıntılı olarak keşfetmenize olanak sağlayan üç görünüm sağlar. Başlangıç görünümü XSD Tasarımcısı için başlangıç noktası olan; Başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın. Şema kümesi özetini görmek için ve şema düğümler arasındaki ilişkileri grafik görünümü sağlar. Basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi için içerik modeli görünümünü sağlar.
+XML şema Tasarımcısı'nı (XSD Tasarımcısı), XML şemaları keşfetmenize yardımcı olan bir grafik aracıdır. Ek olarak [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md)göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanıyan, XSD Tasarımcısı, XSD şema daha ayrıntılı geçirebileceğiniz üç görünüm sağlar.
+
+- **Başlangıç görünümündeki** başlatma noktası XSD Tasarımcısı; başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın.
+- **Graf görünümünü** bakış şema kümesine ve şema düğümler arasındaki ilişkileri görmenize olanak sağlar.
+- **İçerik modeli görünümünü** basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi sağlar.
 
 İlgilendiğiniz düğümleri keşfetmeye başlamak için çalışma alanına eklemeniz gerekir. Çalışma alanı, tüm görünümleri arasında paylaşılır.
 

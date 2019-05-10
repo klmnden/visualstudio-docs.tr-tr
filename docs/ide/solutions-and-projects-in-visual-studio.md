@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979659"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461527"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio'da projeler ve çözümler
 
@@ -67,6 +67,8 @@ Visual Studio kullanan iki dosya türleri (*.sln* ve *.suo*) çözümleri için 
 Belirli bir tür uygulama veya Web sitesi için bir proje şablondan yeni bir proje oluşturmak için en kolay yolu başlatmaktır. Bir proje şablonu, önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları ve ayarları temel bir kümesinden oluşur. Oluşturduğunuz yeni proje iletişim kutusunda bu şablonları mevcuttur (**dosya** > **yeni** > **proje**). Daha fazla bilgi için [çözümler ve projeler oluşturma](../ide/creating-solutions-and-projects.md).
 
 Özel proje ve öğe şablonlarını da oluşturabilirsiniz. Daha fazla bilgi için [proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md).
+
+Yeni bir proje oluşturduğunuzda, varsayılan olarak kaydedilmeden *%USERPROFILE%\source\repos*. Bu konumda özelleştirebilirsiniz **proje konumu** bölümündeki **Araçları** > **seçenekleri** > **projeler ve Çözümleri** > **konumları**. Daha fazla bilgi için [sayfa projeler ve çözümler, Seçenekler iletişim kutusu](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Çözüm Gezgini'nde projeleri yönetme
 

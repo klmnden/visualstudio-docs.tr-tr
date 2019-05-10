@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810586"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455108"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Örnek XSD dosyası: Satın alma siparişi şeması
 
@@ -86,3 +86,6 @@ XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullan
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Bir örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin hayal ürünüdür. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yer veya olayları ile hiçbir ilişki amaçlanmamıştır veya çıkarılmamalıdır.
