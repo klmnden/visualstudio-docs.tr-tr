@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226430"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Bu yöntem, bir belge bağlamına bir hata ayıklama adresleri dizisine eşler.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pDocContext`
+## <a name="parameters"></a>Parametreler
+ `pDocContext`\
 
  [in] Belge bağlamı.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] TRUE ise tek bir deyimde hata ayıklama adresler sınırlar.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Bu deyim veya satır ile ilişkili başlangıç hata ayıklama adresi için bir numaralandırıcı döndürür.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Döndürür bir [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) bu deyimi veya satır ile ilişkili bitiş hata ayıklama adresi için bir numaralandırıcı.
 
@@ -67,7 +70,7 @@ int GetAddressesFromContext(
 
  Tek bir deyimde şablonları olduğu gibi birden çok hata ayıklama adresi olması mümkündür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

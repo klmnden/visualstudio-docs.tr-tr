@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fecae2fe2398f1814b0948fd6639f234353390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 253235913afecc2895f6aa37e6cd1a06dc9685dd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915991"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458553"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Bu yığın çerçevesi için belge bağlamını alır.
@@ -36,8 +39,8 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppCxt`
+## <a name="parameters"></a>Parametreler
+ `ppCxt`\
 
  [out] Döndürür bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kaynak belge geçerli konumu temsil eden nesne.
 
@@ -47,7 +50,7 @@ int GetDocumentContext ( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, arama daha hızlıdır [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) yöntemi ve ardından arama [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) kod bağlamı yöntemi. Ancak, her hata ayıklama altyapısı (DE) bu yöntemi uygular garanti edilmez.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916330"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458640"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Başka bir başvuru başvuru değerini ayarlar. Daha sonraki kullanımlar için ayrılmıştır.
@@ -42,25 +45,25 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `rgpArgs`
+## <a name="parameters"></a>Parametreler
+ `rgpArgs`\
 
  [in] Bir dizi [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) nasıl başvuru değeri ayarlanacağını belirlemek için kullanılan nesne.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Dizi içindeki başvuru sayısı.
 
- `pValue`
+ `pValue`\
 
  [in] Bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) özellik değeri ayarlanacağı nesne.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

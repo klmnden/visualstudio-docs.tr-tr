@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53404ae46771472bbbaa4de996b332d3d75f0d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1fe88127bbd07a71b7bb8e459f12abb983a1938e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868989"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457310"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Başvuru türünü ayarlar. Daha sonraki kullanımlar için ayrılmıştır.
@@ -36,14 +39,14 @@ int SetReferenceType ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwRefType`
+## <a name="parameters"></a>Parametreler
+ `dwRefType`\
 
  [in] Bir değer [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) başvuru türünü belirten sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865803"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458109"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Belirtilen yönetilen bütünleştirilmiş kod başvurusu konumunu belirler.
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `assemName`
+## <a name="parameters"></a>Parametreler
+ `assemName`\
 
  [in] Çözümlenecek derlemenin adı.
 
- `assemBytes`
+ `assemBytes`\
 
  [out] Döndürür bir [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) başvuru ile ilişkili derleme baytları içeren nesne.
 
- `assemPdb`
+ `assemPdb`\
 
  [out] Döndürür bir `IEEDataStorage` sembolü içeren bir nesne, bu başvuru ile ilişkili veri depolayın.
 
- `assemLocation`
+ `assemLocation`\
 
  [out] Bu başvuru yolu konumunu döndürür.
 
- `alr`
+ `alr`\
 
  [out] Bir değer döndürür [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) bu başvurusunun derleme konumunu belirten sabit listesi.
 
@@ -71,7 +74,7 @@ int ResolveAssemblyRef(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, genellikle bir özel ifade değerlendiricisi tarafından uygulanmadı.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

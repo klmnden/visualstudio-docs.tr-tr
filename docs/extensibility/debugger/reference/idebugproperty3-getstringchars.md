@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916533"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457664"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Bu özellik ile ilişkili dizeyi alır ve bir kullanıcı tarafından sağlanan arabelleğinde depolar.
@@ -40,18 +43,18 @@ int GetStringChars(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`buflen`
+## <a name="parameters"></a>Parametreler
+`buflen`\
 
  [in] En fazla karakter sayısı, kullanıcı tarafından sağlanan arabellek barındırabilir.
 
-`rgString`
+`rgString`\
 
  [out] Bir dize döndürür.
 
  [C++ yalnızca], `rgString` Unicode karakter dizesinin alan arabellek işaretçisidir. Bu arabelleğin en az olmalıdır `buflen` boyutu (bayt değil) karakter.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Burada aslında arabellekteki depolanan karakter sayısı döndürülür. (Olabilir `NULL` c++.)
 
@@ -87,7 +90,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

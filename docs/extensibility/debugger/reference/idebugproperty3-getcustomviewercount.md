@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916602"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458835"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Bu özellik için kullanılabilir özel görüntüleyiciler sayısını alır.
@@ -36,8 +39,8 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pcelt`
+## <a name="parameters"></a>Parametreler
+`pcelt`\
 
  [out] Bu özellik için kullanılabilir özel görüntüleyiciler sayısı.
 
@@ -71,7 +74,7 @@ STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)
 - [Tür Görselleştiricisi ve Özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913893"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460969"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Bu yapı bir yöntemi veya işlev dönüş değeri temsil eder.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Koşulları
- tokMethod kimliği yönteminin dönüş değeri bu içindir.
+## <a name="members"></a>Üyeler
+ `tokMethod`\
+ Bu dönüş değeri yöntemi için kimliği.
 
- dwCorType dönüş değeri temel türü. Bir değer budur `CorElementType` tanımlanan numaralandırma [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h dosyası.
+ `dwCorType`\
+ Dönüş değeri temel türü. Bir değer budur `CorElementType` tanımlanan numaralandırma [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h dosyası.
 
- dönüş değeri imza boyutu dwSigSize (depolanan gibi `rgSig`).
+ `dwSigSize`\
+ Dönüş değeri imza boyutu (depolanan gibi `rgSig`).
 
- rgSig imzası dönüş değeri oluşturan bir bayt dizisi.
+ `rgSig`\
+ Dönüş değeri imzası oluşturan bir bayt dizisi.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu yapı, birleşim içinde parçasıdır [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) ne zaman yapısı `dwKind` alanını `DEBUG_ADDRESS_UNION` yapısı ayarlandığında `ADDRESS_KIND_RETVAL` (arasında bir değer [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) sabit listesi).
@@ -61,7 +68,7 @@ public struct METADATA_ADDRESS_RETVAL {
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

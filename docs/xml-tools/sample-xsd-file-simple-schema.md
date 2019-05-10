@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955585"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455084"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Örnek XSD dosyası: Basit şema
 
@@ -45,3 +45,6 @@ XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullan
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Bir örnek şirketler, kuruluşlar, ürünler, etki alanı adları, e-posta adresleri, logolar, kişiler, yerler ve sahiplerinin hayal ürünüdür. Gerçek şirket, kuruluş, ürün, etki alanı adı, e-posta adresi, logo, kişi, yer veya olayları ile hiçbir ilişki amaçlanmamıştır veya çıkarılmamalıdır.

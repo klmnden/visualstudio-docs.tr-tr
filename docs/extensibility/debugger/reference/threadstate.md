@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913346"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460708"
 ---
 # <a name="threadstate"></a>THREADSTATE
 İş parçacığı durumunu belirtir.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- İş parçacığı çalıştırırken THREADSTATE_RUNNING gösterir.
+## <a name="fields"></a>Alanlar
+ `THREADSTATE_RUNNING`\
+ İş parçacığı çalıştığını gösterir.
 
- THREADSTATE_STOPPED iş parçacığı bir kesme noktası nedeniyle durdurulduğunu gösterir.
+ `THREADSTATE_STOPPED`\
+ İş parçacığı bir kesme noktası nedeniyle durdurulduğunu gösterir.
 
- İş parçacığı oluşturuldu ancak henüz kod çalışmıyor THREADSTATE_FRESH gösterir.
+ `THREADSTATE_FRESH`\
+ İş parçacığı oluşturuldu, ancak henüz kod çalışmıyor gösterir.
 
- THREADSTATE_DEAD iş parçacığının etkin olduğunu gösterir.
+ `THREADSTATE_DEAD`\
+ İş parçacığı geçersiz olduğunu gösterir.
 
- THREADSTATE_FROZEN iş parçacığı'nın dondurulmuş olup olmadığını gösterir (hiçbir yürütme gerçekleştirilebilir).
+ `THREADSTATE_FROZEN`\
+ İş parçacığı'nın dondurulmuş olup olmadığını gösterir (hiçbir yürütme gerçekleştirilebilir).
 
 ## <a name="remarks"></a>Açıklamalar
  İçin kullanılan `dwThreadState` alanını [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı.

@@ -21,8 +21,9 @@
 - name: Öğreticiler
   items:
     - name: Git
-      href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
       items:
+        - name: Git
+          href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: Yeni depo oluşturma
           href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
         - name: Mevcut bir depoyu kopyalama

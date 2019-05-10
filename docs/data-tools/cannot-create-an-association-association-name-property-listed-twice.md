@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9c198518fca543eb9275afd918a640275f797b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcc2a7322397537c9585d0aaa2674e1d3ab3c656
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818117"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460691"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik iki kere listelenmiş
 
@@ -35,6 +35,5 @@ Bir ilişki oluşturulamıyor \<ilişkilendirme adı >. Aynı özellik birden fa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [O/R Tasarımcısı iletileri](../data-tools/o-r-designer-messages.md)
 - [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

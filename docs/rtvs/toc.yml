@@ -19,15 +19,17 @@
 - name: Nasıl yapılır kılavuzları
   items:
     - name: R projeleri
-      href: r-projects-in-visual-studio.md
       items:
+        - name: R projeleri
+          href: r-projects-in-visual-studio.md
         - name: Paket yöneticisi
           href: r-package-manager-in-visual-studio.md
         - name: SQL Server tümleştirmesi
           href: integrating-sql-server-with-r.md
     - name: Kodu düzenleme
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: Kodu düzenleme
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: Lint uygulama
@@ -35,8 +37,9 @@
         - name: Kod parçacıkları
           href: code-snippets-for-r.md
     - name: Çalışma alanları (yerel ve uzak)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: Çalışma alanları (yerel ve uzak)
+          href: r-workspaces-in-visual-studio.md
         - name: Uzak çalışma alanları ayarlama
           href: setting-up-remote-r-workspaces.md
         - name: Linux için Uzak R Hizmeti

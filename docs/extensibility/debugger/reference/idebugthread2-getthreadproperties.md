@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226186"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Bu iş parçacığı tanımlayan özellikleri alır.
@@ -38,12 +41,12 @@ int GetThreadProperties (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`dwFields`
+## <a name="parameters"></a>Parametreler
+`dwFields`\
 
  [in] Bayraklarının bir birleşimi [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) hangi alanlarının belirleyen sabit listesi `ptp` doldurulacak olan.
 
-`ptp`
+`ptp`\
 
  [out içinde] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) iş parçacığı özelliklerini oturum girilir yapısının.
 
@@ -92,7 +95,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

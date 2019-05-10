@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913709"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457986"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Bekleyen kesme noktasının durumu bayrakları belirtir.
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Üyeler
- PBPSF_NONE yer tutucu.
+## <a name="fields"></a>Alanlar
+ `PBPSF_NONE` Yer tutucu.
 
- Kesme noktası, yeni kodu her yüklenişinde bağlı olan bir sanallaştırılmış PBPSF_VIRTUALIZED belirtir.
+ `PBPSF_VIRTUALIZED` Sanallaştırılmış bir kesme noktası, yeni kodu her yüklenişinde bağlı olan bir belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
  İçin kullanılan `flags` üyesi [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) yapısı.
@@ -54,6 +57,6 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

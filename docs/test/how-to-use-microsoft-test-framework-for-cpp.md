@@ -1,18 +1,18 @@
 ---
 title: C++ için Microsoft Birim Testi Çerçevesini Kullanma
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 0b91a8b58c8abb10aac18b1461d6ea5548d39ef9
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970364"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226036"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -45,7 +45,7 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
 Tüm *.cpp* test sınıflarında dosyasıyla "CppUnitTest.h" içerir ve kullanarak bir deyim için `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. Test projesi için zaten yapılandırıldı. Ayrıca bir ad alanı tanımını içerir ve bir TEST_CLASS başlamanızı sağlayacak bir TEST_METHOD ile başlatıldı. Ad alanı adının yanı sıra adlar parantez içinde sınıf ve metod makroları değiştirebilirsiniz.
 
-Test tamamlandığında özel makroları test modülleri, sınıflar ve yöntemler başlatma ve temizleme işlemini resoures tanımlanır. Bu makrolar, bir sınıf veya yöntemin ilk erişmeden önce ve son bir testi çalıştırdıktan sonra yürütülen kod oluşturur. Daha fazla bilgi için [başlatma ve Temizleme](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+Test tamamlandığında özel makroları test modülleri, sınıflar ve yöntemler başlatma ve kaynak Temizleme için tanımlanır. Bu makrolar, bir sınıf veya yöntemin ilk erişmeden önce ve son bir testi çalıştırdıktan sonra yürütülen kod oluşturur. Daha fazla bilgi için [başlatma ve Temizleme](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
 
 Statik yöntemleri kullanın [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) sınıfı test koşulları tanımlayın. Kullanım [Günlükçü](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) sınıfı için ileti yazmak için **çıkış penceresine**. Test yöntemleri için öznitelik Ekle
 

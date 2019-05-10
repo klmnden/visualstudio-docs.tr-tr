@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a4cfb78c7ccf24a79c5326f7f263a1b78302a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868476"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458232"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Sembol sağlayıcısı üyesi olduğu simgesi grubu hakkındaki bilgileri alır.
@@ -37,12 +40,12 @@ int GetCurrentModulesState(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pState`
+## <a name="parameters"></a>Parametreler
+ `pState`\
 
  [out] Sembol sağlayıcısı grubunun durumu.
 
- `count`
+ `count`\
 
  [out] Gruptaki modül sayısı.
 
@@ -52,5 +55,5 @@ int GetCurrentModulesState(
 ## <a name="remarks"></a>Açıklamalar
  Her bir modül için eklendi veya sembol, gruptan durumu değiştirilir. Bu nedenle, bu yöntem bir sembol grubu değiştirilip değiştirilmediğini algılamak için kullanılabilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

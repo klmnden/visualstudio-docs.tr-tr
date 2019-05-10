@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868509"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226387"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Bu yöntem, bir simge türü için bir sembol adı eşler.
@@ -40,16 +43,16 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pszClassName`
+## <a name="parameters"></a>Parametreler
+ `pszClassName`\
 
  [in] Sembol adı.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Türü eşleşen, örneğin, büyük/küçük harfe seçer. Bir değer [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) sabit listesi.
 
- `ppField`
+ `ppField`\
 
  [out] Simge türü olarak döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne.
 
@@ -59,7 +62,7 @@ int GetTypeByName(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem genel sürümüdür [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)
