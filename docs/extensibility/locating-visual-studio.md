@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907303"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878153"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio bulun
 
@@ -42,3 +42,4 @@ Visual Studio ve diğer araçları, derleme ortamları, PowerShell betikleri, y�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2017 Kurulum değişiklikler](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [DTE kullanarak Visual Studio'yu başlatın](launch-visual-studio-dte.md)

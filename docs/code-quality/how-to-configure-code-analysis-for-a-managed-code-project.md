@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820867"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878177"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
 
-Visual Studio'da, Kod Analizi listesinden seçim yapabilir [kural kümeleri](../code-quality/rule-set-reference.md)) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
+Visual Studio'da Kod Analizi listesinden seçebilirsiniz [kural kümeleri](../code-quality/rule-set-reference.md) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
 
 > [!TIP]
 > ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
