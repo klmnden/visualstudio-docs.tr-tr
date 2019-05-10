@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223966"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Bu yöntem hata ayıklama adresiyle ilişkili ad alanları için bir numaralandırıcı oluşturur.
@@ -38,12 +41,12 @@ int GetNamespacesUsedAtAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pAddress`
+## <a name="parameters"></a>Parametreler
+ `pAddress`\
 
  [in] Hata ayıklama adresi.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) ad alanları için bir numaralandırıcı.
 
@@ -53,6 +56,6 @@ int GetNamespacesUsedAtAddress(
 ## <a name="remarks"></a>Açıklamalar
  Olabilir verilen hata ayıklama adresi ile Örneğin, ilişkili çeşitli ad alanları ad alanları veya birden çok iç içe geçmiş `using` deyimleri.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

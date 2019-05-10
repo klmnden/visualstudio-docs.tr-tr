@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840616"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226505"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Hızlı Başlangıç: İlk Vue.js uygulamanızı oluşturmak için Visual Studio
 
@@ -59,12 +59,12 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 1. Yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **temel Vue.js**, ardından **temel Vue.js Web uygulaması** (JavaScript veya TypeScript). Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **temel Vue.js**, ardından **temel Vue.js Web uygulaması** (JavaScript veya TypeScript). Görüntülenen iletişim kutusunda adı yazın **temel vuejs**ve ardından **Oluştur**.
 
     ![VUE.js şablonu](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript** veya **TypeScript**, ardından **Node.js**. Orta bölmede seçin **temel Vue.js Web uygulaması**, ardından **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript** veya **TypeScript**, ardından **Node.js**. Orta bölmede seçin **temel Vue.js Web uygulaması**, adı **temel vuejs**ve ardından **Tamam**.
 
     ![VUE.js şablonu](../javascript/media/vuejs-template.png)
     ::: moniker-end
