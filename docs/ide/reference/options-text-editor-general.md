@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778676"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531915"
 ---
 # <a name="options-text-editor-general"></a>Seçenekler, Metin Düzenleyici, Genel
 
@@ -96,5 +96,5 @@ Seçili olduğunda, dikey çizgileri Düzenleyicisi'nde bu satırı Yukarı tek 
 - [Seçenekler, Metin Düzenleyici, Tüm Diller, Sekmeler](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Seçenekler, Metin Düzenleyici, Dosya Uzantısı](../../ide/reference/options-text-editor-file-extension.md)
 - [Klavye Kısayollarını Tanımlama ve Özelleştirme](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)
+- [Düzenleyiciyi Özelleştirme](../how-to-change-text-case-in-the-editor.md)
 - [IntelliSense Kullanma](../../ide/using-intellisense.md)

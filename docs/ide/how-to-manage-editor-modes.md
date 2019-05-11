@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429788"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531900"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 
@@ -63,6 +63,5 @@ Tüm araç pencerelerini Gizle ve belge pencereleri etkinleştirerek görüntül
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md)
 - [Visual Studio'da pencere düzenlerini özelleştirme](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

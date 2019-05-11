@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977399"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531701"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
@@ -46,9 +46,10 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 |---------------|-----------------|
 |`Project`|Gerekli öznitelik.<br /><br /> İçeri aktarmak için proje dosyasının yolu. Yol, joker karakterler içerebilir. Eşleşen dosyaları sıralanmış olarak içeri aktarılır. Bu özelliği kullanarak, yalnızca bir dizine kod dosyasına ekleyerek bir proje için kod ekleyebilirsiniz.|
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek olan koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
+|`Sdk`| İsteğe bağlı öznitelik.<br /><br /> SDK bir projeye başvuruyor.|
 
 ### <a name="child-elements"></a>Alt öğeleri
- Yok.
+ None
 
 ### <a name="parent-elements"></a>Üst öğeler
 

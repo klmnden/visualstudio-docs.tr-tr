@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789436"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531910"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Lambda ifadeleri için ifade gövdesi veya blok gövdesi kullan
 
@@ -24,7 +24,7 @@ Bu yeniden düzenleme için geçerlidir:
 
 **Ne:** Bir lambda ifadesi bir deyim gövdesinin veya blok gövdesi kullanacak şekilde yeniden düzenleme sağlar.
 
-**ne zaman:** Tercih ettiğiniz bir lambda ifadeleri ifade gövdesi ya da bir blok gövdesi kullan. 
+**ne zaman:** Tercih ettiğiniz bir lambda ifadeleri ifade gövdesi ya da bir blok gövdesi kullan.
 
 **Neden:** Lambda ifadeleri, kullanıcı tercihinize göre okunabilirliği artırmak için yeniden.
 
@@ -40,4 +40,4 @@ Bu yeniden düzenleme için geçerlidir:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yeniden Düzenleme](../refactoring-in-visual-studio.md)
-- [.NET Geliştiricileri için İpuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET Geliştiricileri için İpuçları](../csharp-developer-productivity.md)

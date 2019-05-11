@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968512"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531844"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>LINQ to bir foreach döngüsünü dönüştürme
 
@@ -44,9 +44,9 @@ Bu yeniden düzenleme için geçerlidir:
 3. Seçin **LINQ to dönüştürme** veya **LINQ to (çağrı formu) dönüştürme**.
 
    ![LINQ Sorgu sonuç örneği](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![LINQ çağrı form sonuç örneği](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>Örnek kod
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [Yeniden Düzenleme](../refactoring-in-visual-studio.md)
 - [Değişiklikleri Önizle penceresi](../../ide/preview-changes.md)
-- [.NET Geliştiricileri için İpuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET Geliştiricileri için İpuçları](../csharp-developer-productivity.md)

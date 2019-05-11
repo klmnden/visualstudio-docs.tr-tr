@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581987"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531665"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -52,7 +52,7 @@ Gelişmiş Özellikler bulabilirsiniz **Düzenle** > **Gelişmiş** araç çubu�
 
 |||
 |-|-|
-|[Belgeyi Biçimlendir](code-styles-and-quick-actions.md#format-document-command)|Kod satırlarının uygun girintisini ayarlar ve belgedeki satırları ayırmak için çengelli ayraç taşır.|
+|Belgeyi Biçimlendir|Kod satırlarının uygun girintisini ayarlar ve belgedeki satırları ayırmak için çengelli ayraç taşır.|
 |Seçimi Biçimlendir|Kod satırlarının uygun girintisini ayarlar ve seçimdeki satırları ayırmak için çengelli ayraç taşır.|
 |Seçili satırları sekmeye Dönüştür|Uygun yerlerde sekmeleri öndeki boşlukları değiştirir.|
 |Seçili satırları sekmeye dönüştürme|Değişiklikleri sekmeleri boşluklarla değiştirin. Dosyanızdaki tüm boşlukları sekme (veya tüm sekmeleri boşluklara) dönüştürmek isterseniz, kullanabileceğiniz `Edit.ConvertSpacesToTabs` ve `Edit.ConvertTabsToSpaces` komutları. Bu komutlar Visual Studio menülerinde görünmez, ancak bunları çağırabilirsiniz **hızlı erişim** penceresinden veya komut penceresinden.|
@@ -84,7 +84,7 @@ Başka bir Visual Studio ayarlarınızı paylaşabilir, ayarlarınızı standard
 
 Yeni kısayol tuşlarını tanımlayabilir veya var olan bir kısayol tuşlarını yeniden tanımlamak için Git **Araçları** > **seçenekleri** > **ortam**  >  **Klavye**. Kısayol tuşları hakkında daha fazla bilgi için bkz. [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Düzenleyiciyi özelleştirme hakkında daha fazla bilgi için bkz. [düzenleyiciyi özelleştirme](../ide/customizing-the-editor.md). JavaScript özel düzenleyici seçenekleri için bkz. [JavaScript Düzenleyici Seçenekleri](../ide/reference/options-text-editor-javascript-formatting.md).
+JavaScript özel düzenleyici seçenekleri için bkz. [JavaScript Düzenleyici Seçenekleri](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

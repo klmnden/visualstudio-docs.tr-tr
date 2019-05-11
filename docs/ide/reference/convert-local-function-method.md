@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968307"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531645"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Yerel bir işlev bir yönteme Dönüştür
 
@@ -47,4 +47,4 @@ Bu yeniden düzenleme için geçerlidir:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yeniden Düzenleme](../refactoring-in-visual-studio.md)
-- [.NET Geliştiricileri için İpuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET Geliştiricileri için İpuçları](../csharp-developer-productivity.md)
