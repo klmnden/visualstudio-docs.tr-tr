@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59506af5ad48bd18c454f4c59367921eed1e679a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5068d687b80da5c75fdef305028c9b5c3d8e56ed
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924083"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615183"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Bu diğer adla ilişkilendirilmiş değeri temsil eden bir yönetilen kod arabirim alır.
@@ -36,10 +39,9 @@ int GetICorDebugValue(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppUnk`
-
- [out] `IUnknown` bu diğer adla ilişkilendirilmiş değeri temsil eden arabirim. Bu arabirim için sorgulanabilir `ICorDebugValue` arabirimi.
+## <a name="parameters"></a>Parametreler
+`ppUnk`\
+[out] `IUnknown` bu diğer adla ilişkilendirilmiş değeri temsil eden arabirim. Bu arabirim için sorgulanabilir `ICorDebugValue` arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
@@ -47,5 +49,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem yalnızca yönetilen değerlere uygulanır ( `ICorDebugValue` arabirim kullanılabilir [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] ve tanımlanan [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK cordebug.idl dosyasında).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

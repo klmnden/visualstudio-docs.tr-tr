@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902169"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614518"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -267,7 +267,7 @@ Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: 
 
 2. Hata ayıklamayı başlatmak ve yürütme kesme noktasında durakladığında seçin **hata ayıklama** > **Windows** > **Yereller** veya **Alt** + **4** açmak için **Yereller** penceresi.
 
-   Kesme noktasına Bul **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.
+   Belirli bir nesne örneğinde Bul **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.
 
    Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.
 

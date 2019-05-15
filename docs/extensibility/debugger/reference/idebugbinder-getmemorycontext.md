@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c647f12e80adab70dd626347d52e07505e3704
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1fe7c2b25a8931a449ac1ae2f4ba260f267bc22
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877542"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615064"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Bu yöntem, bir nesnenin konumuna ya da bir bellek adresi bellek bağlamına dönüştürür.
@@ -40,23 +43,20 @@ int GetMemoryContext(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pField`
+## <a name="parameters"></a>Parametreler
+`pField`\
+[in] Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) açıklayan bulunacak nesne. Varsa `NULL`, ardından `dwConstant` yerine.
 
- [in] Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) açıklayan bulunacak nesne. Varsa `NULL`, ardından `dwConstant` yerine.
+`dwConstant`\
+[in] 0x5000 gibi bir sabit bir bellek adresi.
 
- `dwConstant`
-
- [in] 0x5000 gibi bir sabit bir bellek adresi.
-
- `ppMemCxt`
-
- [out] Döndürür [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) nesnenin adresini veya bellek adresini temsil eden arabirim.
+`ppMemCxt`\
+[out] Döndürür [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) nesnenin adresini veya bellek adresini temsil eden arabirim.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

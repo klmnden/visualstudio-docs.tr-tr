@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418705"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614826"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef yardımcı programı
 Bir .dll dosyası için bir Visual Studio uzantısı bir parametre olarak alır ve oluşturur bir *.pkgdef* eşlik eden dosya *.dll* dosya. *.Pkgdef* dosya uzantısı yüklü olduğunda, sistem kayıt defterine yazılması tüm bilgileri içerir.
@@ -33,29 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Arguments
- **/ out =&lt;FileName&gt;**  gerekli. Adını ayarlar *.pkgdef* çıktı dosyasına &lt;FileName&gt;.
+**/ out =&lt;dosya adı&gt;**\
+Gerekli. Adını ayarlar *.pkgdef* çıktı dosyasına &lt;FileName&gt;.
 
- **/ codebase** isteğe bağlı. Kayıt işlemine zorlar **CodeBase** yardımcı programı.
+**/ codebase**\
+İsteğe bağlı. Kayıt işlemine zorlar **CodeBase** yardımcı programı.
 
- **/ Assembly** zorlar kaydı **derleme** yardımcı programı.
+**/ Assembly**\
+Kayıt işlemine zorlar **derleme** yardımcı programı.
 
- **&lt;AssemblyPath&gt;**  yolunu *.dll* oluşturmak istediğiniz dosya *.pkgdef*.
+**&lt;AssemblyPath&gt;**\
+Yolu *.dll* oluşturmak istediğiniz dosya *.pkgdef*.
 
 ## <a name="remarks"></a>Açıklamalar
- Uzantı dağıtımı kullanarak *.pkgdef* dosyaları Visual Studio'nun önceki sürümleri kayıt defteri gereksinimlerini değiştirir.
+Uzantı dağıtımı kullanarak *.pkgdef* dosyaları Visual Studio'nun önceki sürümleri kayıt defteri gereksinimlerini değiştirir.
 
- *.Pkgdef* dosyaları aşağıdaki konumlardan birinde yüklenmelidir:
+::: moniker range=">=vs-2019"
 
-- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\*
+*.Pkgdef* dosyaları aşağıdaki konumlardan birinde yüklenmelidir:
+
+- *%LocalAppData%\Microsoft\Visual Studio\16.0\Extensions\\*
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-  Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, uzantı, Visual Studio tarafından tanınan ancak varsayılan olarak devre dışı bırakılır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler**.
+Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **uzantıları yönetme**.
 
-  Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı varsayılan olarak etkindir.
+Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı varsayılan olarak etkindir.
+
+> [!NOTE]
+> **Uzantıları yönetme** aracı, bir VSIX paketinin bir parçası yüklü olduğu sürece bir uzantı erişmek için kullanılamaz.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+*.Pkgdef* dosyaları aşağıdaki konumlardan birinde yüklenmelidir:
+
+- *%LocalAppData%\Microsoft\Visual Studio\15.0\Extensions\\*
+
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
+
+Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler**.
+
+Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı varsayılan olarak etkindir.
 
 > [!NOTE]
 > **Uzantılar ve güncelleştirmeler** aracı, bir VSIX paketinin bir parçası yüklü olduğu sürece bir uzantı erişmek için kullanılamaz.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Createexpınstance yardımcı programı](../../extensibility/internals/createexpinstance-utility.md)

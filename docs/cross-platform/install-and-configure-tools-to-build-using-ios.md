@@ -1,7 +1,7 @@
 ---
 title: İOS kullanarak derlemeye yönelik ve Yapılandırma Araçları'nı yükleme | Microsoft Docs
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818514"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614441"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Yükleme ve yapılandırma araçları kullanarak iOS oluşturmak için
 
@@ -32,13 +32,15 @@ Platformlar arası Mobil Geliştirme için Visual C++, düzenleme, hata ayıklam
 
 Yüklediğinizde ve uzak aracı iOS için kod geliştirme için önce şu önkoşulların olmalıdır:
 
-- OS X Mavericks (sürüm 10.9) ya da üzerini çalıştıran bir Mac bilgisayar
+- MacOS Mojave sürüm 10.14 veya üzerini çalıştıran bir Mac bilgisayara
 
 - Bir [Apple kimliği](https://appleid.apple.com/)
 
-- Etkin bir [iOS Developer Program](https://developer.apple.com/programs/ios/) Apple Hesapla
+- Etkin bir [Apple Developer Program](https://developer.apple.com/programs/) hesabı
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) 6 veya sonraki bir sürümü.
+   Yalnızca test için ancak dağıtım için bir iOS cihazına dışarıdan yükleme uygulamaları sağlayan ücretsiz bir hesap alabilirsiniz.
+
+- [Xcode](https://developer.apple.com/xcode/downloads/) 10.2.1 sürümü veya üzeri
 
    Xcode, App Store ' indirilebilir.
 
@@ -48,23 +50,22 @@ Yüklediğinizde ve uzak aracı iOS için kod geliştirme için önce şu önko�
 
    `xcode-select --install`
 
-- İmzalama kimliği Xcode içinde yapılandırılmış bir iOS
+- Xcode'da, uygulamaları imzalamak için imzalama kimliği yapılandırılmış bir Apple ID hesabı
 
-   İOS imzalama kimliğini edinme hakkında ayrıntılı bilgi için bkz: [imzalama kimlikleri ve sertifikaları](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) iOS Geliştirici Kitaplığı'nda. Xcode'da imzalama kimliğinizi ayarlayın veya görmek için açık **Xcode** menü ve **tercihleri**. Seçin **hesapları** ve Apple Kimliğinizi seçin ve ardından **ayrıntıları** düğmesi.
+   Xcode'da imzalama kimliğinizi ayarlayın veya görmek için açık **Xcode** menü ve **tercihleri**. Seçin **hesapları** ve Apple Kimliğinizi seçin ve ardından **ayrıntıları** düğmesi. Bkz: [Apple kimliği hesabınızı eklemek](https://help.apple.com/xcode/mac/current/#/devaf282080a) ayrıntılı yönergeler için.
+   
+   İmza gereksinimleri ile ilgili ayrıntılı bilgi için bkz [ne uygulama oturum](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
 
 - Geliştirme için bir iOS cihazı kullanıyorsanız, bir sağlama profili Xcode'da cihazınız için yapılandırılmış.
 
-   Sağlama profilleri oluşturma hakkında ayrıntılı bilgi için bkz: [sağlama profilleri üye Merkezi'ni kullanarak oluşturma](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) iOS Geliştirici Kitaplığı'nda.
+   Xcode otomatik imzalama burada İmzalama sertifikaları gerektiğinde oluşturulur sağlar. Xcode otomatik imzalama hakkında ayrıntılı bilgi için bkz. [otomatik imzalama](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-- [Node.js](https://nodejs.org/)
+   El ile imzalama yapmak istiyorsanız, uygulamanız için bir sağlama profili oluşturmanız gerekir. Sağlama profilleri oluşturma hakkında ayrıntılı bilgi için bkz: [sağlama profili bir geliştirme oluşturma](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-   En son uzun süreli destek (LTS) sürümünü yüklemek mac'inizde node.js 8.x Not diğer son yayın sürümleri vcremote içinde kullanılan bazı modüller desteklemeyebilir ve vcremote yüklemesinin başarısız olmasına neden olabilir.
+- [Node.js](https://nodejs.org/) sürümü 8.11.3 ve npm sürüm 5.6.0
 
-- Npm güncelleştirilmiş bir sürümü
+   Mac'inizde Node.js 8.11.3 sürümünü yükleyin Node.js paketi yüklerseniz, npm sürümüyle 5.6.0 gelmelidir. Diğer Node.js ve npm sürümleri vcremote yüklemesinin başarısız olmasına neden olabilir uzak aracı vcremote kullanılan bazı modüller desteklemeyebilir unutmayın.
 
-   Node.js ile birlikte gelen npm sürümünü vcremote yüklemek için güncel olmayabilir. Npm güncelleştirmek için Mac Terminal uygulamasını açın ve aşağıdaki komutu girin:
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> İOS için Uzak aracı yükleme
 
@@ -131,7 +132,7 @@ Uzak Aracı başlattıktan sonra siz durduruncaya kadar bunu Visual Studio'dan k
 
 Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzaktan yapılandırma belirtmeniz gerekir.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio'dan uzak aracı yapılandırma
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio'dan uzak aracı yapılandırma
 
 1. Mac'inizde Aracısı zaten çalışmıyorsa adımları [uzak aracı Başlat](#Start). Mac bilgisayarınızda vcremote başarıyla eşleştirebilir, bağlanma ve projenizi Visual Studio için çalışıyor olması gerekir.
 
@@ -168,7 +169,7 @@ Visual Studio Mac bilgisayarınızda uzak aracı her kullanışınızda bağlanm
 
 Oluşturulmuş bir PIN, uzak aracı ilk kez başlattığınızda, sınırlı bir süre için geçerlidir — varsayılan olarak, 10 dakika. Süresi sona ermeden önce Visual Studio için Uzak Aracı eşleştirilmemiş, yeni bir PIN oluşturmak ihtiyacınız olacak.
 
-#### <a name="to-generate-a-new-pin"></a>Yeni bir PIN oluşturmak için
+### <a name="to-generate-a-new-pin"></a>Yeni bir PIN oluşturmak için
 
 1. Aracısını durdurun veya Mac üzerinde ikinci bir Terminal uygulamasını penceresi açın ve bu komut girmek için kullanın.
 
@@ -182,7 +183,7 @@ Oluşturulmuş bir PIN, uzak aracı ilk kez başlattığınızda, sınırlı bir
 
 Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için Visual Studio ile uzak aracı işletim sistemi bu çiftin sertifikaları Bu değerleri değiştirirseniz, yeni bir sunucu sertifikası oluşturma ve sonra Visual Studio yeni değerlerle yeniden yapılandırmanız gerekir.
 
-#### <a name="to-generate-a-new-server-certificate"></a>Yeni bir sunucu sertifikası oluşturmak için
+### <a name="to-generate-a-new-server-certificate"></a>Yeni bir sunucu sertifikası oluşturmak için
 
 1. Vcremote aracısını durdurun.
 
@@ -204,7 +205,7 @@ Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için 
 
 Çeşitli komut satırı seçeneklerini kullanarak uzak aracı yapılandırabilirsiniz. Örneğin, dosya sisteminde korumak için derleme sayısının üst sınırı belirtin ve yapı isteklerini dinlemek için bağlantı noktası belirtebilirsiniz. Varsayılan olarak, 10 derlemeleri bir sınırdır. Uzak Aracı kapatma sırasında en yüksek süreyi aşmasına derlemeleri kaldırır.
 
-#### <a name="to-configure-the-remote-agent"></a>Uzak Aracı yapılandırma
+### <a name="to-configure-the-remote-agent"></a>Uzak Aracı yapılandırma
 
 - Terminal uygulamasında, uzak aracı komutların tam listesi görmek için aşağıdakileri girin:
 
@@ -233,6 +234,50 @@ Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için 
    `vcremote --config config_file_path`
 
    Burada *config_file_path* JSON biçiminde bir yapılandırma dosyası yolu. Başlangıç seçeneklerini ve değerlerini, kısa çizgi içermemelidir.
+
+## <a name="troubleshoot-the-remote-agent"></a>Uzak Aracı sorunlarını giderme
+
+### <a name="debugging-on-an-ios-device"></a>Bir iOS cihazında hata ayıklama
+
+Bir iOS cihazında hata ayıklama çalışmazsa, aracı ile ilgili sorunlar olabilir [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller), bir iOS cihazı ile iletişim kurmak için kullanılır. Bu araç, genellikle Homebrew vcremote yüklemesi sırasında yüklenir. Geçici bir çözüm olarak aşağıdaki adımları izleyin.
+
+Terminal uygulamasını açın ve aşağıdaki sırayla çalıştırarak ideviceinstaller başlatılamadı ve bağımlılıklarını güncelleştirin:
+
+1. Homebrew güncelleştirilir emin olun.
+
+   `brew update`
+
+1. Libimobiledevice ve usbmuxd Kaldır
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. Libimobiledevice ve usbmuxd en son sürümünü yükleyin
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. Kaldırın ve yeniden ideviceinstaller yükleyin
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+Cihazda yüklü uygulamalar listesinde deneyerek, o ideviceinstaller cihazla iletişim kuramıyor doğrulayın:
+
+`ideviceinstaller -l`
+
+Varsa klasörüne erişemiyor ideviceinstaller hataları `/var/db/lockdown`, ayrıcalık klasörüyle değiştirin:
+
+`sudo chmod 777 /var/db/lockdown`
+    
+İdeviceinstaller cihazla iletişim kurabilir, daha sonra yeniden doğrulayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

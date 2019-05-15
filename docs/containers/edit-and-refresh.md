@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 7e8c57bfbfcf63c845c8d8eac3560e2327a99d4d
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cdcfd381d74af4e3a11f96518ab3f31e79995978
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084062"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614544"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 
@@ -96,6 +96,28 @@ Genellikle, değişiklikleri daha fazla inceleme, Visual Studio hata ayıklama �
 5. Kesme noktası görüntüleme, değerleri inceleyin ve benzeri için Visual Studio'ya geçiş yapın.
 
    ![Kesme noktası](media/edit-and-refresh/breakpoint.png)
+
+## <a name="create-a-net-framework-console-app"></a>.NET Framework konsol uygulaması oluşturma
+
+.NET Framework konsol uygulamasını projeleri kullanırken, Docker desteği düzenleme olmadan ekleme seçeneği desteklenmez. Yalnızca tek bir Docker projesi kullanıyor olsanız bile aşağıdaki yordamda kullanmaya devam edebilirsiniz.
+
+1. Yeni bir .NET Framework konsol uygulama projesi oluşturun.
+1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve seçme **Ekle** > **kapsayıcı düzenleme desteği**.  Görüntülenen iletişim kutusunda seçin **Docker Compose**. Bir Dockerfile projenize eklenir ve bir Docker Compose proje ile ilişkili destek dosyalarını eklenir.
+
+### <a name="debug-with-breakpoints"></a>Kesme noktaları ile hata ayıklama
+
+1. İçinde **Çözüm Gezgini**açın `Program.cs`.
+2. Öğesinin içeriğini değiştirin `Main` aşağıdaki yöntemi:
+
+   ```csharp
+       System.Console.WriteLine("Hello, world!");
+   ```
+
+3. Kod satırının sola bir kesme noktası ayarlayın.
+4. Kesme noktasına isabet ve hata ayıklamayı başlatmak için F5'e basın.
+5. Kesme noktası görüntüleme, değerleri inceleyin ve benzeri için Visual Studio'ya geçiş yapın.
+
+   ![Kesme noktası](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="summary"></a>Özet
 

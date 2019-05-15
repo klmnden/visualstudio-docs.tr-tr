@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888987"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615375"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Kesme noktası çözünürlüğü konumu yapısını belirtir.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Üyeler
-`bpType` Bir değer [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) yorumlama belirten numaralandırma `bpResLocation` birleşim veya `unionmemberX` üyeleri.
+`bpType`\
+Bir değer [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) yorumlama belirten numaralandırma `bpResLocation` birleşim veya `unionmemberX` üyeleri.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ yalnızca] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
 
- [C++ yalnızca] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ yalnızca] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ yalnızca] Bir yer tutucu.
 
- [C++ yalnızca] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
- [C++ yalnızca] Bir yer tutucu.
+`unionmember3`\
+[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
-`unionmember1`
-
- [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
-
-`unionmember2`
-
- [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
-
-`unionmember3`
-
- [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
-
-`unionmember4`
-
- [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+`unionmember4`\
+[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) ve [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapıları.
@@ -123,7 +120,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

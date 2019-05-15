@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c16a7a390da2e571ad0cc83041106b257048054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1ba06a44f24a6cd33c42b82bdf39aa4e4dfd799a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924132"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615301"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 Etkinleştirmek için belgeyi alır.
@@ -37,14 +40,13 @@ int GetDocument ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppDoc`
-
- [out] Döndürür bir [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) etkinleştirilmesi için belgeyi temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppDoc`\
+[out] Döndürür bir [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) etkinleştirilmesi için belgeyi temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

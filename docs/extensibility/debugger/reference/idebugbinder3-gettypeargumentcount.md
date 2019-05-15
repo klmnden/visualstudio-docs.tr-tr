@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d4140a37577fa5bf4734e386300e062ef80399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b34cbc89874110712ea1d630a27bd709d21894b3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877516"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614980"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Bu yöntem, bu nesneyle ilişkili bağımsız değişken türleri sayısını döndürür.
@@ -36,10 +39,9 @@ int GetTypeArgumentCount(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `uCount`
-
- [out] Bu nesneyle ilişkili bağımsız değişken türleri sayısı.
+## <a name="parameters"></a>Parametreler
+`uCount`\
+[out] Bu nesneyle ilişkili bağımsız değişken türleri sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,6 +49,6 @@ int GetTypeArgumentCount(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem tarafından döndürülen değer ile kullanmak için bir dizi ayırmak için kullanılan [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)

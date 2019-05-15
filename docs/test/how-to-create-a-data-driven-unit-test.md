@@ -1,6 +1,6 @@
 ---
 title: Veri temelli birim testleri oluşturma
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979246"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615438"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri temelli birim testi oluşturma
 
-Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kaynağından test yönteminde kullanılan değerleri almak için bir birim test yöntemi ayarlayabilirsiniz. Yöntemi, tek bir yöntemi kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalıştırılır.
+Bir veri kaynağından değerleri almak için bir birim test yöntemi ayarlamak için yönetilen kod için Microsoft birim testi Çerçevesi'ni kullanabilirsiniz. Yöntemi, tek bir yöntemi kullanarak giriş çeşitli test kolaylaştırır veri kaynağındaki her satır için sırayla çalıştırılır.
 
 Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:
 
@@ -43,13 +43,13 @@ Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:
 
 2. Bir projede `MyBank` adlı `BankDb` , hesapları için işlemleri yönetir.
 
-3. Bir sınıfa `Maths` içinde `DbBank` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.
+3. Bir sınıfa `Maths` içinde `BankDb` herhangi bir işlem bankaya avantajlı olduğundan emin olmak için matematiksel işlevler gerçekleştiren bir proje.
 
 4. Bir birim test projesi adlı `BankDbTests` davranışını test etmek için `BankDb` bileşeni.
 
 5. Bir birim testi sınıf adı verilen `MathsTests` davranışını doğrulamak için `Maths` sınıfı.
 
-Biz bir yöntemde sınayacak `Maths` bir döngü kullanarak iki tamsayı ekler:
+Biz bir yöntemde test edeceğiz `Maths` bir döngü kullanarak iki tamsayı ekler:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 Test yönteminizde aracılığıyla verilere `DataRow` dizin oluşturucu özelliği `TestContext`.
 
+> [!NOTE]
+> .NET core desteklemiyor [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) özniteliği. .NET Core veya UWP birim testi projesi bu yolla test verilerini erişmeye çalışırsanız, benzer bir hata göreceğiniz **"'TestContext' 'DataRow' ve 'türünde bir ilk bağımsız değişken kabul eden DataRow' yöntemi yok erişilebilir uzantısı için bir tanım içermiyor ' TestContext' bulunamadı (bir using eksik yönergeniz veya derleme başvurunuz?) "** .
+
 ## <a name="write-the-test-method"></a>Test yönteminin yazma
 
 Test yöntemi için `AddIntegers` oldukça basittir. Veri kaynağındaki her satır için çağrı `AddIntegers` ile **İlksayı** ve **İkincisayı** sütun değerleri parametreler ve dönüş değeri ile karşılaştırarak doğrulayın **Sum** Sütun değeri:
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` Yöntemi içeren bir ileti görüntüler `x` ve `y` başarısız bir yineleme değerleri. Varsayılan olarak onaylanan değerler `expected` ve `actual`, testin başarısız Ayrıntılar zaten dahil edilmiştir.
+`Assert` Yöntemi içeren bir ileti görüntüler `x` ve `y` başarısız bir yineleme değerleri. Varsayılan olarak onaylanan değerler - `expected` ve `actual` -zaten başarısız test ayrıntılarına eklenir.
 
 ### <a name="specify-the-datasourceattribute"></a>DataSourceAttribute belirtin
 

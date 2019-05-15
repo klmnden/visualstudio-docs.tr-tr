@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 48c4bde703584a57baac8040d9c5176f942300db
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877480"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614778"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Bir nesnenin konumu veya 64-bit bellek adresi bellek bağlamına dönüştürür.
@@ -39,18 +42,15 @@ int GetMemoryContext64 (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pField`
+## <a name="parameters"></a>Parametreler
+`pField`\
+[in] Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bulunacak nesne açıklar. Varsa `NULL`, ardından `dwConstant` yerine.
 
- [in] Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bulunacak nesne açıklar. Varsa `NULL`, ardından `dwConstant` yerine.
+`uConstant`\
+[in] 0x50000000 gibi bir 64-bit bellek adresi.
 
-`uConstant`
-
- [in] 0x50000000 gibi bir 64-bit bellek adresi.
-
-`ppMemCxt`
-
- [out] Döndürür [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) nesnenin adresini veya bellek adresini temsil eden arabirim.
+`ppMemCxt`\
+[out] Döndürür [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) nesnenin adresini veya bellek adresini temsil eden arabirim.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

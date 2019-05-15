@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2b0185b0c3f7f26cfe9ffa8806c5049af323c517
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877529"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614962"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Bu yöntem, bir ad bir diğer ad bulur. Bu programda tüm diğer adları arar.
@@ -38,14 +41,12 @@ int FindAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pcstrName`
+## <a name="parameters"></a>Parametreler
+`pcstrName`\
+[in] Bulunacak diğer adı.
 
- [in] Bulunacak diğer adı.
-
- `ppAlias`
-
- [out] Diğer ad (varsa) temsil ettiği [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) arabirimi.
+`ppAlias`\
+[out] Diğer ad (varsa) temsil ettiği [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` (diğer ad bulunamazsa) veya bir hata kodu.
@@ -53,6 +54,6 @@ int FindAlias(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntemi çağırmadan önce null hedef nesneye başlatır; ardından bir null değer daha sonra diğer bulundu olup olmadığını belirlemek test eder.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

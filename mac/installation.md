@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 4031b4358e77b5b3e66a6052a37724966621d608
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222779"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615464"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
 
@@ -82,7 +82,7 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 
-Diğer iş yükleri için başvurmak [iş yükleri](/visualstudio/mac/workloads) sayfası.
+Diğer iş yükleri için başvurmak [iş yükleri](workloads.md) sayfası.
 
 ## <a name="related-video"></a>İlgili Video
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923662"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614660"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Bu yöntem, bu nesneyle ilişkili bağımsız değişken türlerinin bir listesini alır.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `skip`
+## <a name="parameters"></a>Parametreler
+`skip`\
+[in] Bağımsız değişken türleri almadan önce atlamak için alanların sayısı.
 
- [in] Bağımsız değişken türleri almadan önce atlamak için alanların sayısı.
+`count`\
+[in] Döndürülecek bağımsız değişken alan sayısı (Ayrıca boyutunu belirtir `ppFields` dizisi).
 
- `count`
+`ppFields`\
+[out içinde] Bu yöntemin geri doldurulur alanları dizisi.
 
- [in] Döndürülecek bağımsız değişken alan sayısı (Ayrıca boyutunu belirtir `ppFields` dizisi).
-
- `ppFields`
-
- [out içinde] Bu yöntemin geri doldurulur alanları dizisi.
-
- `pFetched`
-
- [out] \(isteğe bağlı) Bağımsız değişken sayısı gerçekte döndürülen alanları yazın.
+`pFetched`\
+[out] \(isteğe bağlı) Bağımsız değişken sayısı gerçekte döndürülen alanları yazın.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -65,6 +64,6 @@ int GetTypeArguments(
 ## <a name="remarks"></a>Açıklamalar
  Bağımsız değişken türlerinin sayısı ile önceden alınabilir [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

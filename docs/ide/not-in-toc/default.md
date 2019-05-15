@@ -9,12 +9,12 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 8a256d878339ddbfc1e37662e829d752f1be7bd6
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346780"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613583"
 ---
 # <a name="f1-help"></a>F1 Yardımı
 
@@ -26,10 +26,11 @@ Bir anahtar sözcük veya API adı F1 Yardım arıyorsanız, imleç içinde veya
 
 ## <a name="useful-links"></a>Faydalı bağlantılar
 
-- Visual Studio hakkında genel bilgi için bkz. [Visual Studio genel bakış](../../get-started/visual-studio-ide.md).
-- Visual Studio Metin Düzenleyicisi hakkında daha fazla yardım için bkz: [Kod Düzenleyicisi'ni](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Arama için başvuru belgeleri [.NET API browser](/dotnet/api/).
 - C# Yardım için bkz: [C# Kılavuzu](/dotnet/csharp/index).
 - Visual Basic Yardım için bkz: [Visual Basic Kılavuzu](/dotnet/visual-basic/).
 - İçin F# yardımcı olmak için bkz: [ F# Kılavuzu](/dotnet/fsharp/).
 - Python Yardım için bkz: [Visual Studio'da Python](../../python/overview-of-python-tools-for-visual-studio.md).
 - C++ Yardım için bkz: [Visual Studio'da C++](/cpp/visual-cpp-in-visual-studio).
+- Visual Studio hakkında daha fazla bilgi için bkz: [Visual Studio genel bakış](../../get-started/visual-studio-ide.md).
+- Visual Studio Metin Düzenleyicisi hakkında daha fazla yardım için bkz: [Kod Düzenleyicisi'ni](../../ide/writing-code-in-the-code-and-text-editor.md).

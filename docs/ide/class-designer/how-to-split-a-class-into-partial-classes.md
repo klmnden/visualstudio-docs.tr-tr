@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975157"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615403"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Nasıl yapılır: Bir sınıf, Sınıf Tasarımcısı'nda parçalı sınıflar Böl
 
@@ -36,7 +36,7 @@ Kısmi yöntemler iki tür vardır. C# ' ta bildirme ve uygulama çağrılır; V
 Aşağıdaki örnekler sınıfının tanımını bölme `Employee` alanına iki bildirimler, her biri farklı bir yordam tanımlar. İki kısmi tanım örneklerde, bir kaynak dosyasında veya iki farklı kaynak dosyalar olabilir.
 
 > [!NOTE]
-> Visual Basic, Visual Studio ayırmak için kısmi sınıf tanımları kullanır: kullanıcı tarafından yazılan koddan oluşturulan kod. Kod ayrı kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmeniz gerekir.
+> Visual Basic, Visual Studio tarafından oluşturulan kod, kullanıcı tarafından yazılan kodu ayırmak için kısmi sınıf tanımları kullanır. Kod ayrı kaynak dosyalarıyla ayrılır. Örneğin, **Windows Form Tasarımcısı** denetimleri için kısmi sınıflar gibi tanımlar `Form`. Bu denetimler oluşturulan kodda değiştirmeniz gerekir.
 
 Visual Basic'te kısmi türleri hakkında daha fazla bilgi için bkz. [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial).
 
