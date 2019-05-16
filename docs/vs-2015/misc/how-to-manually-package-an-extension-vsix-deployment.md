@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681690"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Nasıl yapılır: El ile bir uzantı (VSIX dağıtımı) paketi
 Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dağıtım için uzantısı. Paketi oluşturmak için üç yolu vardır:  
@@ -26,7 +26,7 @@ Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprv
   Bu belgede, üçüncü bir seçenek açıklanmaktadır.  
   
 ## <a name="creating-a-vsix-package"></a>VSIX paketi oluşturma  
- El ile bir uzantı paketini için extension.manifest dosya ve uzantı projesini bir [Content_Types] .xml dosyasına koymak bunları derleme çıkışınızı birlikte sıkıştırılmış bir dosya ekleyin ve böylece bir .vsix dosya adı uzantısına sahip sıkıştırılmış dosyayı yeniden adlandırın. Paketlenmiş uzantı tarafından desteklenen bir türde olmalıdır [VSIX şema](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ El ile bir uzantı paketini için extension.manifest dosya ve uzantı projesini bir [Content_Types] .xml dosyasına koymak bunları derleme çıkışınızı birlikte sıkıştırılmış bir dosya ekleyin ve böylece bir .vsix dosya adı uzantısına sahip sıkıştırılmış dosyayı yeniden adlandırın. Paketlenmiş uzantı tarafından desteklenen bir türde olmalıdır [VSIX şema](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 > VSIX paketlerini dosyaların adları boşluk içermemelidir ya da devre dışı olarak Tekdüzen Kaynak Tanımlayıcıları (URI) içinde ayrılmış karakterleri tanımlanan altında [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprv
   
 2. Bir XML dosyası oluşturun ve adlandırın `extension.vsixmanifest`.  
   
-3. VSIX şema göre extension.vsixmanifest dosyasındaki doldurun. Bir örnek listesi için bkz. [PackageManifest öğesi (kök öğe, VSX şema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. VSIX şema göre extension.vsixmanifest dosyasındaki doldurun. Bir örnek listesi için bkz. [PackageManifest öğesi (kök öğe, VSX şema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. İkinci bir XML dosyası oluşturun ve adlandırın `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprv
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio uzantıları gönderme](../extensibility/shipping-visual-studio-extensions.md)   
  [Bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest öğesi (kök öğe, VSX Şeması)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest öğesi (kök öğe, VSX Şeması)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

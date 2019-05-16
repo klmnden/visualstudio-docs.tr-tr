@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688202"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümeleriyle çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ N katmanlı veri uygulamaları * olan birden çok mantıksal katmana ayrılmış
  [İzlenecek yol: N Katmanı Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Türü belirtilmiş veri kümesi oluşturma ve birden çok projelere TableAdapter ve veri kümesi kodunu ayırmak için adım adım yönergeler sağlar.  
   
- [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  N katmanlı veri uygulaması izlenecek yolda oluşturulan uygulamaya doğrulama eklemek için adım adım yönergeler sağlar.  
   
 ## <a name="reference"></a>Başvuru  
@@ -71,4 +71,4 @@ N katmanlı veri uygulamaları * olan birden çok mantıksal katmana ayrılmış
 - [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
 - [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)   
-- [LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

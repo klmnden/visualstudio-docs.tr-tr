@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b178afb59558f5e684d704137039891aefbf0e3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683239"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr Uyarıları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aşağıdaki tabloda VSInstr.exe araç tarafından verilen uyarılarını listel
 |Uyarı numarası|Açıklama|  
 |--------------------|-----------------|  
 |**VSP2000**|İç Hata. Bu yürütülebilir dosya için modülün dosya adı alınamıyor.|  
-|**VSP2001**|\<derleme adı > kesin adlandırılmış bir derlemedir. Yürütülmek üzere önce onu yeniden imzalanması gerekir.<br /><br /> İmzalı bir derleme işaretlenmiş durumda olduğunda bu uyarı oluşur. İkili çekilmeye veya geçici olarak devre dışı tanımlayıcı ad gereksinim kapatmak için sn.exe Aracı'nı kullanabilirsiniz. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2001**|\<derleme adı > kesin adlandırılmış bir derlemedir. Yürütülmek üzere önce onu yeniden imzalanması gerekir.<br /><br /> İmzalı bir derleme işaretlenmiş durumda olduğunda bu uyarı oluşur. İkili çekilmeye veya geçici olarak devre dışı tanımlayıcı ad gereksinim kapatmak için sn.exe Aracı'nı kullanabilirsiniz. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
 |**VSP2002**|İşlevi bulunamadı \<funcname > dosyasındaki \<dosya adı ><br /><br /> Bir işlev içinde belirtilen dosya bulunamıyorsa, bu uyarı oluşur.|  
 |**VSP2003**|Çapraz atlama işlevi bulunamadı \<funcname > dosyasındaki \<dosya adı >.<br /><br /> Vsınstr silinmez olamaz, bu uyarı, çapraz atlar meydana gelir. Çapraz atlama kodu iyileştirme için kullanılır.|  
 |**VSP2004**|İşlev \<funcname > EXCLUDE komut satırı anahtarı kullanılarak dışlandı ancak çapraz atlama içerdiği için gerekli.<br /><br /> İşlevi, hariç TUTMA seçeneğini kullanarak dışlandı ancak izleme işlemi sırasında gerekli bu uyarı oluşur. Profil Oluşturucu otomatik olarak gerekli işlevi içerir.|  

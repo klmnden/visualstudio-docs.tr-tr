@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686385"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Kodlanmış UI testleri ve eylem kayıtları için test çerçevesi, her olası 
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel Eklentisi: ExcelCodedUIAddinHelper  
  Bu proje, Excel işlemde çalışan bir eklenti içerir. Bkz: [kodlanmış UI testi için örnek Excel eklentisi](../test/sample-excel-add-in-for-coded-ui-testing.md) Eklenti projesinin kısa bir genel bakış.  
   
- Daha fazla bilgi için [izlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Daha fazla bilgi için [izlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel kullanıcı Arabirimi iletişim: ExcelUIcommunicationHelper  
  Bu proje içerir `IExcelUICommunication` arabirimi ve kodlanmış UI test çerçevesi ve Excel arasında veri iletmek için kullanılan bilgileri içerir. Daha fazla bilgi için [Excel Communicator arabirimi örnekleme](../test/sample-excel-communicator-interface.md).  

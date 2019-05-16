@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3a46e772849646a82d70ce9a68491d0b388b6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680586"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Lisans öğesi (VSIX Dil Paketi Şeması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "54763733"
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|Hiçbiri||  
+|None||  
   
 ### <a name="child-elements"></a>Alt Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|Hiçbiri||  
+|None||  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
@@ -65,4 +65,4 @@ ms.locfileid: "54763733"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSX dil paketi Şeması Başvurusu](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX paketlerini yerelleştirme](../extensibility/localizing-vsix-packages.md)   
- [VSIX Uzantı Şeması 1.0 başvurusu](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

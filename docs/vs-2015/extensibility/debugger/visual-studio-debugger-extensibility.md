@@ -11,12 +11,12 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675262"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio Hata Ayıklayıcı Genişletilebilirliği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio, programınızdaki hataları aşağı izlemek için güçlü ve ku
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Tüm eksiksiz bir başvuru içeriyor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yeni DE oluşturmak için gereken öğeleri. Ayrıca, örnekler ve başlamanıza yardımcı olacak öğreticiler vardır.  
   
- Hata ayıklama desteği ile dil proje sistemi bir uçtan uca örnek için bkz: [IronPython örnek](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Hata ayıklama desteği ile dil proje sistemi bir uçtan uca örnek için bkz: [IronPython örnek](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Aşağıdaki bölümlerde kullanarak hata ayıklayıcıyı genişletmek nasıl [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   

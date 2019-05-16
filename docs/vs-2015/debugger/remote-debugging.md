@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446109"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687543"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
  Daha fazla bilgi için lütfen uzak hata ayıklama yardıma bakın (basın **F1** uzaktan hata ayıklayıcı penceresinde veya tıklatın **Yardım / kullanım**). Daha fazla bilgi bulabilirsiniz [.NET uzaktan sembolü yükleniyor Visual Studio 2012 ve 2013 değişiklikleri](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ## <a name="bkmk_winstoreAzure"></a> Windows Store ve Azure uygulamalarında uzaktan hata ayıklama  
- Windows Store apps ile uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayın ve Visual Studio'dan uzak bir cihazdaki Windows Store uygulamalarında test](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+ Windows Store apps ile uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayın ve Visual Studio'dan uzak bir cihazdaki Windows Store uygulamalarında test](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Azure'da hata ayıklama hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
@@ -291,7 +291,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
 - [.NET arka ucu Visual Studio'da hata ayıklama](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Azure Web sitelerinde uzaktan hata ayıklama giriş ([bölüm 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. bölüm](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [bölüm 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Azure Web sitelerinde uzaktan hata ayıklama giriş ([bölüm 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. bölüm](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [bölüm 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   

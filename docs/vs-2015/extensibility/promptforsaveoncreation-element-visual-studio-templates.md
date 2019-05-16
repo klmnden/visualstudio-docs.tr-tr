@@ -12,12 +12,12 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675367"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "54779864"
 ## <a name="remarks"></a>Açıklamalar  
  `PromptForSaveOnCreation` İsteğe bağlı bir öğedir. Varsayılan değer `false` şeklindedir.  
   
- Geçici projeler oluşturmak ve değiştirmek, proje içeriğini diske kaydetmeden projelerdir. Daha fazla bilgi için [NIB geçici projeler](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Geçici projeler oluşturmak ve değiştirmek, proje içeriğini diske kaydetmeden projelerdir. Daha fazla bilgi için [NIB geçici projeler](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte ayarlar `PromptForSaveOnCreation` eşit `false`, projenin geçici bir proje olarak oluşturulmasına izin vermek için belirtir.  

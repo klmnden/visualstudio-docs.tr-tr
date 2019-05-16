@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431437"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690603"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio'da Tam Zamanında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
     </configuration>
     ```
 
-3. Bir C++ Windows Form uygulamasında de ayarlamalısınız `DebuggableAttribute` .config dosyasında ya da kodunuzda. Derleme yaparsanız [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) ve olmadan [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), derleyici bu özniteliği sizin için ayarlar. Ancak, bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, bu kendiniz ayarlamanız gerekir. Bunu, aşağıdaki satırı uygulamanızın AssemblyInfo.cpp dosyasına olduğunuz ekleyerek yapabilirsiniz:
+3. Bir C++ Windows Form uygulamasında de ayarlamalısınız `DebuggableAttribute` .config dosyasında ya da kodunuzda. Derleme yaparsanız [/zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) ve olmadan [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), derleyici bu özniteliği sizin için ayarlar. Ancak, bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, bu kendiniz ayarlamanız gerekir. Bunu, aşağıdaki satırı uygulamanızın AssemblyInfo.cpp dosyasına olduğunuz ekleyerek yapabilirsiniz:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];

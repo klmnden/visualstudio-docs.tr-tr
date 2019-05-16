@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683089"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>İzlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444326"
   
      Yeni bir konsol projesi görünür. Bir kaynak dosyası projeyi oluşturduğunuzda görünür. Seçtiğiniz dile bağlı olarak, kaynak dosya Module1.vb, Program.cs veya MyThreadWalkthroughApp.cpp çağrılabilir  
   
-6. Kaynak dosyada kod silin ve konunun bölümünde "Bir iş parçacığı oluşturulurken" görünen örnek kod ile değiştirin [iş parçacığı oluşturma ve geçirme verilerini başlangıç zamanında](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Kaynak dosyada kod silin ve konunun bölümünde "Bir iş parçacığı oluşturulurken" görünen örnek kod ile değiştirin [iş parçacığı oluşturma ve geçirme verilerini başlangıç zamanında](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
 7. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
   

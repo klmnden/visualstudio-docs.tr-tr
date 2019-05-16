@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686187"
 ---
 # <a name="profiling-tools"></a>Profil Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uy
 ## <a name="memory-usage"></a>Bellek kullanımı  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Bellek sızıntılarını ve verimsiz bellek ile hata ayıklarken Bul **bellek kullanımı** aracı. Aracı yönetilen ve yerel bellek yığın anlık görüntüsünü sağlar. Masaüstü uygulamaları, Windows Evrensel uygulamaları ve ASP.NET uygulamaları ile bu aracı kullanabilirsiniz. **Bellek kullanımı** araç çalıştırılabilir **tanılama araçları** ayıklarken penceresi (**hata ayıklama / Windows / tanılama araçlarını Göster**) veya hata ayıklayıcı (dışında**Hata ayıklama / performans Profiler...**). Bkz: [bellek kullanımı](../profiling/memory-usage.md) ve [bellek kullanımını hata ayıklama olmadan](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) daha fazla bilgi için.  
+ Bellek sızıntılarını ve verimsiz bellek ile hata ayıklarken Bul **bellek kullanımı** aracı. Aracı yönetilen ve yerel bellek yığın anlık görüntüsünü sağlar. Masaüstü uygulamaları, Windows Evrensel uygulamaları ve ASP.NET uygulamaları ile bu aracı kullanabilirsiniz. **Bellek kullanımı** araç çalıştırılabilir **tanılama araçları** ayıklarken penceresi (**hata ayıklama / Windows / tanılama araçlarını Göster**) veya hata ayıklayıcı (dışında**Hata ayıklama / performans Profiler...**). Bkz: [bellek kullanımı](../profiling/memory-usage.md) ve [bellek kullanımını hata ayıklama olmadan](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) daha fazla bilgi için.  
   
 ## <a name="cpu-usage"></a>CPU kullanımı  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

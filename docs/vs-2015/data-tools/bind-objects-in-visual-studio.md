@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683160"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 - Veri nesneleri veritabanına geri kaydediliyor.
 
 > [!NOTE]
-> Daha iyi anlamanıza ve bu sayfadaki örnekleri için bağlam sağlamak için aşağıdaki tamamlamanızı öneririz: [İzlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Bu izlenecek yol, burada tartışılan nesneleri oluşturur.
+> Daha iyi anlamanıza ve bu sayfadaki örnekleri için bağlam sağlamak için aşağıdaki tamamlamanızı öneririz: [İzlenecek yol: Nesneler (Windows Forms) verilere bağlanma](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Bu izlenecek yol, burada tartışılan nesneleri oluşturur.
 
 ### <a name="loaddata-into-objects"></a>LoadData nesnelere
  Bu örnek için TableAdapter'ı kullanarak, nesneleri verileri yükleyin. Varsayılan olarak, TableAdapter bağdaştırıcıları veritabanından veri getirir ve veri tablolarını doldurmak yöntemleri iki tür oluşturulur.
@@ -75,7 +75,7 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Nesne türü belirtilmiş bir koleksiyon oluşturun
- Koleksiyon sınıfları için nesnelerinizi oluşturma veya tarafından otomatik olarak sağlanan yazılan koleksiyonları kullanın [BindingSource bileşeni](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ Koleksiyon sınıfları için nesnelerinizi oluşturma veya tarafından otomatik olarak sağlanan yazılan koleksiyonları kullanın [BindingSource bileşeni](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Nesneler için bir özel koleksiyon sınıfı oluştururken kaynağından devraldığından öneririz <xref:System.ComponentModel.BindingList%601>. Bu genel bir sınıf özelliği Windows Forms veri bağlama altyapısında bildirimleri göndermek olay yanı sıra, koleksiyonunuzu yönetmek için işlevsellik sağlar.
 
@@ -92,9 +92,9 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 ### <a name="addobjects-to-a-collection"></a>Bir koleksiyona Addobjects
  Çağırarak bir koleksiyona eklediğiniz nesneleri `Add` yöntemi özel bir koleksiyona sınıfınızın veya, <xref:System.Windows.Forms.BindingSource>.
 
- Bir koleksiyon kullanarak ekleme örneği için bir <xref:System.Windows.Forms.BindingSource>, bakın `LoadCustomers` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Bir koleksiyon kullanarak ekleme örneği için bir <xref:System.Windows.Forms.BindingSource>, bakın `LoadCustomers` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Nesne özel bir koleksiyona ekleme örneği için bkz: `LoadOrders` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Nesne özel bir koleksiyona ekleme örneği için bkz: `LoadOrders` yönteminde [izlenecek yol: Nesneler (Windows Forms) verilere bağlanma](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > `Add` Öğesinden devraldığı durumlarda yöntemi özel koleksiyonunuz için otomatik olarak sağlanan <xref:System.ComponentModel.BindingList%601>.

@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687154"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Çözümlerinizdeki bağımlılıkları eşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
      ![Görüntü basitleştirmek için Filtre bölmesini kullanın](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> C ve C++ kaynak dosyaları ve üstbilgi dosyaları arasındaki bağımlılıkları bakın  
- C++ projeleri için daha eksiksiz eşlemeleri oluşturmak istiyorsanız, bilgi derleyiciye gözatma seçeneği ayarlayın (**/FR**) bu projelerde. Bkz: [/FR, /Fr (oluşturun. SBR dosyası)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Aksi durumda, bir ileti görüntülenir ve bu seçeneği ayarlamanızı ister. Seçerseniz **Tamam**, bu seçeneği yalnızca geçerli eşlemesi için ayarlar. Tüm sonraki haritalar için iletiyi gizleyebilirsiniz seçebilirsiniz. Bu iletiyi Gizle ise, yeniden görünür yapabilirsiniz. Aşağıdaki kayıt defteri anahtarını ayarlayın `0` veya anahtarı silin:  
+ C++ projeleri için daha eksiksiz eşlemeleri oluşturmak istiyorsanız, bilgi derleyiciye gözatma seçeneği ayarlayın (**/FR**) bu projelerde. Bkz: [/FR, /Fr (oluşturun. SBR dosyası)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Aksi durumda, bir ileti görüntülenir ve bu seçeneği ayarlamanızı ister. Seçerseniz **Tamam**, bu seçeneği yalnızca geçerli eşlemesi için ayarlar. Tüm sonraki haritalar için iletiyi gizleyebilirsiniz seçebilirsiniz. Bu iletiyi Gizle ise, yeniden görünür yapabilirsiniz. Aşağıdaki kayıt defteri anahtarını ayarlayın `0` veya anahtarı silin:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ Kodunuzdaki bağımlılıkları anlamak istediğinizde kod haritaları oluştura
 |Kod Haritası oluşturulamadı.|Çözümdeki hiçbir proje başarıyla oluşturulmadı.|Oluşan yapı hatalarını düzeltin ve sonra haritanın yeniden.|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir kod eşlemden oluşturmaya çalıştığınızda yanıt vermemeye başlıyor **mimarisi** menüsü.|Program veritabanı (.pdb) dosyası bozulmuş olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Çözümü yeniden oluşturun ve tekrar deneyin.|  
 |IntelliSense göz atma veritabanı için belirli ayarlar devre dışı bırakılır.|Belirli IntelliSense ayarları devre dışı bırakılmış [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **seçenekleri** iletişim kutusu.|Bunları etkinleştirmek için ayarları etkinleştirin.<br /><br /> Bkz: [seçenekler, metin düzenleyici, C/C++, Gelişmiş](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|İleti **bilinmeyen yöntemler** bir yöntem düğümünde görünür.<br /><br /> Yöntemin adı çözümlenemediği için bu sorun oluşur.|İkili dosya temel konum değişikliği tablosuna sahip olmayabilir.|Açma **/FIXED: No** bağlayıcı seçeneği.<br /><br /> Bkz: [/FIXED (sabit temel adres)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Program veritabanı (.pdb) dosyası oluşturulmamış olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Açma **/DEBUG** bağlayıcı seçeneği.<br /><br /> Bkz: [/DEBUG (hata ayıklama bilgileri üret)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|İleti **bilinmeyen yöntemler** bir yöntem düğümünde görünür.<br /><br /> Yöntemin adı çözümlenemediği için bu sorun oluşur.|İkili dosya temel konum değişikliği tablosuna sahip olmayabilir.|Açma **/FIXED: No** bağlayıcı seçeneği.<br /><br /> Bkz: [/FIXED (sabit temel adres)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Program veritabanı (.pdb) dosyası oluşturulmamış olabilir.<br /><br /> .pdb dosyası; tür, yöntem ve kaynak dosya bilgileri gibi hata ayıklama bilgilerini depolar.|Açma **/DEBUG** bağlayıcı seçeneği.<br /><br /> Bkz: [/DEBUG (hata ayıklama bilgileri üret)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||.pdb dosyasını beklenen konumda açamıyor veya bulamıyor.|.pdb dosyasının beklenen konumlarda var olduğundan emin olun.|  
-||Hata ayıklama bilgileri, .pdb dosyasından çıkarıldı.|Varsa **/pdbstrıpped** bağlayıcıda seçeneği kullanıldıysa, bunun yerine tam .pdb dosyasını dahil edin.<br /><br /> Bkz: [/pdbstrıpped (özel simgeleri)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||Arayan bir işlev değildir ve ikili dosyada bir dönüştürücü ya da veri bölümünde bir işaretçidir.|Arayan bir dönüştürücü olduğunda, kullanmayı deneyin `_declspec(dllimport)` dönüştürücüden kaçınmak için.<br /><br /> Bkz.<br /><br /> -   [Genel kurallar ve sınırlamalar](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Hata ayıklama bilgileri, .pdb dosyasından çıkarıldı.|Varsa **/pdbstrıpped** bağlayıcıda seçeneği kullanıldıysa, bunun yerine tam .pdb dosyasını dahil edin.<br /><br /> Bkz: [/pdbstrıpped (özel simgeleri)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Arayan bir işlev değildir ve ikili dosyada bir dönüştürücü ya da veri bölümünde bir işaretçidir.|Arayan bir dönüştürücü olduğunda, kullanmayı deneyin `_declspec(dllimport)` dönüştürücüden kaçınmak için.<br /><br /> Bkz.<br /><br /> -   [Genel kurallar ve sınırlamalar](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> Kod haritaları daha hızlı işleme olun  
  İlk kez bir eşleme oluşturduğunuzda, Visual Studio bulduğu tüm bağımlılıkların dizinini oluşturur. Bu işlem, özellikle büyük çözümler için biraz zaman alabilir ancak daha sonra performansı iyileştirir. Kodunuzu değişirse, Visual Studio yalnızca güncelleştirilmiş kodun yeniden dizinini oluşturur. Harita işleme tamamlamak geçen süreyi en aza indirmek için aşağıdakileri dikkate alın:  

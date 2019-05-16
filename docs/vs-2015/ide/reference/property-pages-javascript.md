@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436872"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701784"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "63436872"
  Görüntülenecek veya değiştirilecek platform ve yapılandırmayı seçmek için aşağıdaki seçenekleri kullanın.  
   
  **Yapılandırma**  
- Görüntülenecek veya değiştirilecek yapılandırma ayarlarını belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, **yapılandırmalarında**, veya kullanıcı tarafından tanımlanan bir yapılandırmadır. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Görüntülenecek veya değiştirilecek yapılandırma ayarlarını belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, **yapılandırmalarında**, veya kullanıcı tarafından tanımlanan bir yapılandırmadır. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platform**  
- Görüntülenecek veya değiştirilecek platform ayarlarını belirtir. Ayarlar **herhangi bir CPU** (için varsayılan [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] uygulamaları), **x64**, **ARM**, **x86**, veya kullanıcı tarafından tanımlanan bir platformdur. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Görüntülenecek veya değiştirilecek platform ayarlarını belirtir. Ayarlar **herhangi bir CPU** (için varsayılan [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] uygulamaları), **x64**, **ARM**, **x86**, veya kullanıcı tarafından tanımlanan bir platformdur. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Genel sayfası  
  Projenin genel özellikler ayarlamak için aşağıdaki seçenekleri kullanın.  
@@ -53,7 +53,7 @@ ms.locfileid: "63436872"
  **Çıkış yolu**  
  Projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yol görelidir; mutlak bir yol girerseniz, mutlak yol projeye kaydedilir. Bin\Debug varsayılan yoldur.  
   
- Basitleştirilmiş yapı yapılandırmaları kullandığınızda, proje sistemi bir hata ayıklama sürüm yayını mı belirler. Tıkladığınızda **hata ayıklama**, **hata ayıklamayı Başlat** (veya F5 tuşuna basın) derleme, hata ayıklama konumuna koyar koymak **çıkış yolu** belirtirsiniz. Ancak, **Çözümü Derle** komutunu **derleme** menü, belirttiğiniz konuma koyar. Menü çubuğunda, Gelişmiş derleme yapılandırmalarını etkinleştirmeyi tercih **Araçları**, **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**seçin **genel**ve ardından temizlemek **Show Gelişmiş derleme yapılandırmaları**onay kutusu. Bu, tüm yapılandırma değerleri üzerinde el ile denetim ve hata ayıklama veya sürüm sürümü olup olmadığını oluşturulmuştur sağlar. Daha fazla bilgi için [NIB: Genel, projeler ve çözümler, Seçenekler iletişim kutusu](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Basitleştirilmiş yapı yapılandırmaları kullandığınızda, proje sistemi bir hata ayıklama sürüm yayını mı belirler. Tıkladığınızda **hata ayıklama**, **hata ayıklamayı Başlat** (veya F5 tuşuna basın) derleme, hata ayıklama konumuna koyar koymak **çıkış yolu** belirtirsiniz. Ancak, **Çözümü Derle** komutunu **derleme** menü, belirttiğiniz konuma koyar. Menü çubuğunda, Gelişmiş derleme yapılandırmalarını etkinleştirmeyi tercih **Araçları**, **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**seçin **genel**ve ardından temizlemek **Show Gelişmiş derleme yapılandırmaları**onay kutusu. Bu, tüm yapılandırma değerleri üzerinde el ile denetim ve hata ayıklama veya sürüm sürümü olup olmadığını oluşturulmuştur sağlar. Daha fazla bilgi için [NIB: Genel, projeler ve çözümler, Seçenekler iletişim kutusu](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Varsayılan dil**  
  Projenin varsayılan dilini belirtir. Seçilen dil seçeneği **saat, dil ve bölge** Denetim Masası'nda kullanıcının tercih edilen dili belirtir. Proje için varsayılan dil belirleyerek kullanıcının tercih ettiği dil uygulamada sağlanan dil kaynaklarıyla eşleşmiyorsa belirtilen varsayılan dil kaynaklarını kullanıldığından emin olun.  

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793644"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691911"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Boolean P/Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54793644"
 ## <a name="rule-description"></a>Kural Tanımı
  Bir platform yöntemi erişimleri yönetilmeyen kod çağırmak ve tarafından tanımlanan `Declare` anahtar sözcüğünü [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] veya <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Yönetilen ve yönetilmeyen kod arasında veri türlerine dönüştürmek için kullanılan sıralama davranışını belirtir. Gibi pek çok basit veri türleri <xref:System.Byte?displayProperty=fullName> ve <xref:System.Int32?displayProperty=fullName>, yönetimsiz kod içinde tek bir gösterimi olan ve sıralama davranışları belirtilmesine gerek yoktur; ortak dil çalışma zamanı otomatik olarak doğru davranışı sağlar.
 
- <xref:System.Boolean> Veri türüne, yönetimsiz kod içinde birden çok temsile sahiptir. Zaman <xref:System.Runtime.InteropServices.MarshalAsAttribute> , varsayılan hazırlama davranışı için belirtilmemiş <xref:System.Boolean> veri türü <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Tüm durumlarda uygun olmayan bir 32 bit tamsayı budur. Yönetilmeyen yöntemi tarafından gerekli Boolean gösterimi belirlenen verilecek ve uygun eşleşen <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool her zaman 4 bayttır Win32 BOOL türüdür. C++ için UnmanagedType.U1 kullanılmalıdır `bool` ya da diğer 1 baytlık türleri. Daha fazla bilgi için [Boole türleri için varsayılan hazırlama](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
+ <xref:System.Boolean> Veri türüne, yönetimsiz kod içinde birden çok temsile sahiptir. Zaman <xref:System.Runtime.InteropServices.MarshalAsAttribute> , varsayılan hazırlama davranışı için belirtilmemiş <xref:System.Boolean> veri türü <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Tüm durumlarda uygun olmayan bir 32 bit tamsayı budur. Yönetilmeyen yöntemi tarafından gerekli Boolean gösterimi belirlenen verilecek ve uygun eşleşen <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool her zaman 4 bayttır Win32 BOOL türüdür. C++ için UnmanagedType.U1 kullanılmalıdır `bool` ya da diğer 1 baytlık türleri. Daha fazla bilgi için [Boole türleri için varsayılan hazırlama](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için geçerli <xref:System.Runtime.InteropServices.MarshalAsAttribute> için <xref:System.Boolean> parametre veya dönüş değeri. Öznitelik değerini uygun ayarlamak <xref:System.Runtime.InteropServices.UnmanagedType>.
@@ -59,4 +59,4 @@ ms.locfileid: "54793644"
  [CA2101: P/Invoke dize bağımsız değişkenleri için hazırlama belirtin](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Boole türleri için varsayılan sıralama](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [yönetilmeyen kod ile birlikte](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Boole türleri için varsayılan sıralama](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [yönetilmeyen kod ile birlikte](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

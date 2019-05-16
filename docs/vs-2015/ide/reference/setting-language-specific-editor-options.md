@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669802"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689480"
 ---
 # <a name="setting-language-specific-editor-options"></a>Dile Özgü Düzenleyici Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669802"
  [Seçenekler, Metin Düzenleyici, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  C# ve J# kodunda çalışırken, IntelliSense tamamlama listesinin nasıl davranacağını belirten ayarları açıklar.  
   
- [Doğrulama, CSS, metin düzenleyici, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Doğrulama, CSS, metin düzenleyici, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Geçişli stil sayfaları (CSS) için deyim tamamlama ve hata düzeltme ayarlarını açıklar.  
   
- [Doğrulama, HTML, metin düzenleyici, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Doğrulama, HTML, metin düzenleyici, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Seçtiğiniz şemaya dayalı olarak HTML sözdizimini denetleme ayarlarını açıklar.  
   
  [Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669802"
  [Düzenleyiciyi Özelleştirme](../../ide/customizing-the-editor.md)  
  Tercihleri belirleyebileceğiniz düzenleyicinin birçok yönünü açıklayan konuların bağlantılarını verir.  
   
- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Ayarlarınızı, anahtar bağlamaları ve tümleşik geliştirme ortamının (IDE) diğer özelliklerini nasıl ayarlayacağınızı açıklayan konuların bağlantılarını verir.

@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443956"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699263"
 ---
 # <a name="addressing-dpi-issues"></a>DPI Sorunlarını Çözme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Alma WebOC HDPI desteğini etkinleştirme  
  Varsayılan olarak, HDPI algılama ve destek alma WebOC denetimler (örneğin, WPF veya Iwebbrowser2 arabirimi WebBrowser denetimi) etkinleştirmeyin. Sonuç yüksek çözünürlüklü bir ekranda çok küçük görüntü içeriğe sahip katıştırılmış bir denetimi olacaktır. Belirli web alma WebOC örneğinde yüksek DPI desteğini nasıl etkinleştireceğinizi açıklar.  
   
- IDocHostUIHandler arabirimini uygular (MSDN makalesine bakın [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) arabirimi):  
+ IDocHostUIHandler arabirimini uygular (MSDN makalesine bakın [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) arabirimi):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- İsteğe bağlı olarak ICustomDoc arabirimini uygular (MSDN makalesine bakın [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) arabirimi):  
+ İsteğe bağlı olarak ICustomDoc arabirimini uygular (MSDN makalesine bakın [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) arabirimi):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

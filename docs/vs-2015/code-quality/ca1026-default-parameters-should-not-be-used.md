@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 25e38f6db5caa6b797774463552cd17fd07bdf5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704191"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Varsayılan parametreler kullanılmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54784128"
 ## <a name="rule-description"></a>Kural Tanımı
  Varsayılan parametreleri kullanan yöntemler, ortak dil belirtimi (CLS) altında izin verilir; Ancak, CLS derleyicileri Bu parametreler için atanmış değerleri yok saymasını sağlar. Varsayılan parametre değerlerini yoksay derleyicileri için yazılan kod her varsayılan parametresi için bağımsız değişkenleri açıkça belirtmeniz gerekir. Programlama dilleri arasında istediğiniz davranışı korumak için varsayılan parametreleri kullanan yöntemler varsayılan parametreleri sağlayan yöntem aşırı yüklemeleri ile değiştirilmelidir.
 
- Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic Derleyicisi kullanan varsayılan parametreleri olan yöntemleri destekler [isteğe bağlı](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) anahtar sözcüğü.
+ Yönetilen kod eriştiğinde derleyici C++ için yönetilen uzantısı için varsayılan parametre değerlerini yoksayar. Visual Basic Derleyicisi kullanan varsayılan parametreleri olan yöntemleri destekler [isteğe bağlı](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) anahtar sözcüğü.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için varsayılan parametreleri tedarik yöntemi aşırı yüklemeleri ile varsayılan parametreleri kullanan yöntemi değiştirin.
@@ -55,4 +55,4 @@ ms.locfileid: "54784128"
  [CA1025: Tekrarlanan bağımsız değişkenleri params dizisi ile değiştirin.](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Dil Bağımsızlığı ve Dilden Bağımsız Bileşenler](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Dil Bağımsızlığı ve Dilden Bağımsız Bileşenler](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

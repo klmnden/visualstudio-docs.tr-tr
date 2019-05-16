@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685432"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
  ClickOnce bildirimlerini imzalanması, .exe tabanlı uygulamalar için isteğe bağlıdır. Daha fazla bilgi için bu belgedeki "İmzalanmamış bildirimler üretme" bölümüne bakın.  
   
- Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .pfx uzantılı yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.  
@@ -109,7 +109,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 3. Uygulamayı yayınlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanımlayıcı adlı derlemeler](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Tanımlayıcı adlı derlemeler](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Nasıl yapılır: Genel-özel anahtar çifti oluşturma](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [İmzalama sayfası, Proje Tasarımcısı](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce Güvenliği ve Dağıtımı](../deployment/clickonce-security-and-deployment.md)

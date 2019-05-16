@@ -41,17 +41,17 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101684"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685853"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Görselde C++, yerel kullanabilirsiniz [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) gibi ortak çalışma zamanı hataları yakalamak için:  
+Görselde C++, yerel kullanabilirsiniz [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) gibi ortak çalışma zamanı hataları yakalamak için:  
   
 - İşaretçi Bozulması yığın.  
   
@@ -85,5 +85,5 @@ Görselde C++, yerel kullanabilirsiniz [runtime_checks](http://msdn.microsoft.co
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   
- [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [Çalışma Zamanı Hata Denetimi](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
+ [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
+ [Çalışma Zamanı Hata Denetimi](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691807"
 ---
 # <a name="support-for-user-settings"></a>Kullanıcı Ayarları için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir vey
   
  Bir özel ayarları noktası ve bir GUID başvurulan bir kayıt defteri girişi VSPackage'nın ayarları kategorisi tanımlar. VSPackage birden çok ayar kategorileri destekler, her bir özel ayarları noktası tarafından tanımlanan.  
   
-- Birlikte çalışma derlemelerini temel ayarları uygulamaları (kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> arabirimi) kayıt defterini düzenledikten veya Kaydedici betik (.rgs dosyası) kullanarak özel ayarları noktası oluşturmanız gerekir. Daha fazla bilgi için [Kaydedici betikleri oluşturma](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Birlikte çalışma derlemelerini temel ayarları uygulamaları (kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> arabirimi) kayıt defterini düzenledikten veya Kaydedici betik (.rgs dosyası) kullanarak özel ayarları noktası oluşturmanız gerekir. Daha fazla bilgi için [Kaydedici betikleri oluşturma](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 - Yönetilen paket Framework (MPF) kullanan kodu oluşturmalıdır özel ayarları noktaları ekleyerek bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> her özel ayarları noktası VSPackage'ı için.  
   

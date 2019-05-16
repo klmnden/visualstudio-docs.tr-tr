@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684537"
 ---
 # <a name="using-breakpoints"></a>Kesme Noktalarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60064576"
    Koşul, hata ayıklayıcı tarafından tanınan herhangi bir geçerli ifade olabilir. Geçerli ifadeler hakkında daha fazla bilgi için bkz. [hata ayıklayıcısındaki ifadeler](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Kesme noktası koşulları nesne kimlikleri kullanarak (C# ve F#)  
- Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş kullanıma bulmak isteyebilirsiniz. İçinde C# ve F#, belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
+ Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır; Örneğin, neden bir nesne birden çok kez bir koleksiyona eklenmiş kullanıma bulmak isteyebilirsiniz. İçinde C# ve F#, belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.  Bir nesne kimliği oluşturmak için aşağıdakileri yapın:  
   
 1. Bir kesme noktası kodda nesne oluşturulduktan sonra biraz zaman ayarlayın.  
   

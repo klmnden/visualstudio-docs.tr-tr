@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686920"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama
-Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Genel öneriler  
   
@@ -123,7 +123,7 @@ else
  Bu tür arabirimleri çağıran yönetilen yöntemleri ilk öğe dışında [out] dizi çekmelidir. Bu öğe olarak bulunuyorlarmış işlenebilir bir `retval` karşılık gelen bir COM arabiriminden değeri döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Birlikte çalışma hazırlama](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Birlikte çalışabilirlik sorunlarını giderme](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Birlikte çalışma hazırlama](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Birlikte çalışma hazırlama](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Birlikte çalışabilirlik sorunlarını giderme](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Yönetilen VSPackage'ları](../misc/managed-vspackages.md)

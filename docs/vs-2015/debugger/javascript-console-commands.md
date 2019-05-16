@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690595"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Konsolu komutları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- İleti göndermek ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu pencere kullanmayı gösteren örnekler için bkz [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md). Bu konu başlığı altındaki bilgiler, Windows Store uygulamaları, Windows Phone Store uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için geçerlidir. Cordova uygulamalarında desteklenen Konsolu komutları hakkında daha fazla bilgi için bkz. [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Internet Explorer F12 araçlarındaki konsolunu kullanma hakkında daha fazla bilgi için bkz. [bu konuda](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ İleti göndermek ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu pencere kullanmayı gösteren örnekler için bkz [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md). Bu konu başlığı altındaki bilgiler, Windows Store uygulamaları, Windows Phone Store uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için geçerlidir. Cordova uygulamalarında desteklenen Konsolu komutları hakkında daha fazla bilgi için bkz. [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Internet Explorer F12 araçlarındaki konsolunu kullanma hakkında daha fazla bilgi için bkz. [bu konuda](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  JavaScript Konsolu penceresi kapatıldığında, Visual Studio'da seçerek hata ayıklarken bunu açabilirsiniz **hata ayıklama** > **Windows** > **JavaScript Konsol**.  
   

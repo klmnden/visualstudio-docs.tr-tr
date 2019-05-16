@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688125"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63427242"
   
  Yalıtılmış Depolama works tüm sürümlerinde [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Yalıtılmış Depolama ayrıca kısmen güvenilir uygulamaların ek izin verilmesine gerek kalmadan çalışır. Uygulamanızı kısmi güvende çalıştırmanız gerekir, ancak uygulamaya özgü verileri korumalıdır yalıtılmış depolama kullanmanız gerekir.  
   
- Daha fazla bilgi için [yalıtılmış depolama](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Daha fazla bilgi için [yalıtılmış depolama](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Diğer yerel dosyaları  
  Uygulamanızı veya bunları raporlar, resimler, müzik ve benzeri gibi son kullanıcı verilerini kaydetmesi çalışmanız gerekiyorsa, uygulamanızı gerektirecek <xref:System.Security.Permissions.FileIOPermission> okuyup verileri yerel dosya sistemine yazma.  
@@ -86,7 +86,7 @@ ms.locfileid: "63427242"
  Belirli bir noktada, uygulamanız müşteri verileri veya market bilgileri gibi uzak bir Web sitesinden bilgi almak büyük olasılıkla gerekir. Bu bölümde, uzak veri almak için en yaygın teknikleri açıklar.  
   
 ### <a name="accessing-files-by-using-http"></a>HTTP kullanarak dosyalara erişme  
- Kullanarak bir Web sunucusundan veri erişebilirsiniz <xref:System.Net.WebClient> veya <xref:System.Net.HttpWebRequest> sınıfını <xref:System.Net> ad alanı. Veriler, statik dosyalar olabilir veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ham metin veya XML verisi döndüren uygulamalar. Verilerinizi XML biçiminde verileri almanın en hızlı yolu kullanarak ise, <xref:System.Xml.XmlDocument> sınıf ayarlanmış <xref:System.Xml.XmlDocument.Load%2A> yöntemi bağımsız değişken olarak bir URL alır. Bir örnek için bkz. [DOM'da XML belgesi okuma](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Kullanarak bir Web sunucusundan veri erişebilirsiniz <xref:System.Net.WebClient> veya <xref:System.Net.HttpWebRequest> sınıfını <xref:System.Net> ad alanı. Veriler, statik dosyalar olabilir veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ham metin veya XML verisi döndüren uygulamalar. Verilerinizi XML biçiminde verileri almanın en hızlı yolu kullanarak ise, <xref:System.Xml.XmlDocument> sınıf ayarlanmış <xref:System.Xml.XmlDocument.Load%2A> yöntemi bağımsız değişken olarak bir URL alır. Bir örnek için bkz. [DOM'da XML belgesi okuma](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Uygulamanızın HTTP üzerinden uzak verilere eriştiğinde, güvenlik düşünmek zorunda. Varsayılan olarak, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamanın erişim için ağ kaynaklarına, uygulamanızın nasıl dağıtıldığına bağlı olarak, kısıtlanmış olabilir. Bu kısıtlamalar, kötü amaçlı programlar ayrıcalıklı uzak veri erişimini veya bir kullanıcının bilgisayarına ağdaki diğer bilgisayarlara saldırmak için kullanmasını önlemek için uygulanır.  
   

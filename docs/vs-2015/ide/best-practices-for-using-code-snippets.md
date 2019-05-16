@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099630"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685663"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099630"
 Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygulama için kod uygulaması uyacak şekilde değiştirilmesi gerekir.  
   
 ## <a name="handling-exceptions"></a>Özel Durumları İşleme  
- Genellikle, kod parçacığı deneyin... Catch blokları catch ve tüm özel durumları rethrow. Bu, projeniz için doğru seçim olmayabilir. Her özel durum için yanıt birkaç yolu vardır. Örnekler için bkz [nasıl yapılır: Bir özel durum try/catch kullanarak işleme (C# Programlama Kılavuzu)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) ve [deneyin... Catch... Finally deyimini](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Genellikle, kod parçacığı deneyin... Catch blokları catch ve tüm özel durumları rethrow. Bu, projeniz için doğru seçim olmayabilir. Her özel durum için yanıt birkaç yolu vardır. Örnekler için bkz [nasıl yapılır: Bir özel durum try/catch kullanarak işleme (C# Programlama Kılavuzu)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) ve [deneyin... Catch... Finally deyimini](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Dosya konumları  
  Dosya konumları uygulamanıza uyum, aşağıdakiler hakkında düşünün:  
@@ -67,6 +67,6 @@ Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygula
     - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Basic IntelliSense kod parçacıkları](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic IntelliSense kod parçacıkları](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Uygulamalarının güvenliğini sağlama](../ide/securing-applications.md)   
  [Kod Parçacıkları](../ide/code-snippets.md)

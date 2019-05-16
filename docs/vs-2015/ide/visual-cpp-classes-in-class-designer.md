@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696399"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf Tasarımcısında Visual C++ Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > **Türetilmiş sınıfları Göster** komutu, C++ kodu için desteklenmiyor. Türetilen sınıfların sınıf genişletme türü düğümünü genişleterek görünümüne giderek görüntüleyebilirsiniz **türetilen türler** alt ve sonra bu türleri sınıf diyagramına sürükleyebilir sürükleyerek.  
   
- Birden çok sınıf devralma hakkında daha fazla bilgi için bkz: [(NOTINBUILD) birden çok devralma](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) ve [birden çok temel sınıflar](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Birden çok sınıf devralma hakkında daha fazla bilgi için bkz: [(NOTINBUILD) birden çok devralma](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) ve [birden çok temel sınıflar](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Soyut sınıflar  
  Sınıf Tasarımcısı, soyut sınıflar ("soyut temel sınıflar" olarak da adlandırılan) destekler. Bu, hiçbir zaman örneği ancak kendisinden başka sınıflar türetilip sınıflardır. Bu belgedeki "Birden çok devralma" bir örnek kullanarak örneği `Bird` sınıfına aşağıdaki gibi ayrı nesneleri:  
@@ -121,7 +121,7 @@ typedef struct
   
  Yapılar, anonim olarak da olabilir. Sınıf Tasarımcısı, anonim sınıflarını görüntüler ve ilgili türü olarak aynı yapıları. Bildirme ve anonim sınıfları ve yapıları görüntüle olsa da, Sınıf Tasarımcısı, belirttiğiniz etiket adını kullanmaz. Bu, sınıf görünümü oluşturan adı kullanacaksınız. Sınıf veya yapı sınıf görünümü ve Sınıf Tasarımcısı bir öğe olarak görünür adlı **__unnamed**.  
   
- Anonim sınıflar hakkında daha fazla bilgi için bkz. [anonim sınıf türleri](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Anonim sınıflar hakkında daha fazla bilgi için bkz. [anonim sınıf türleri](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Şablon sınıfları  
  Sınıf Tasarımcısı görselleştirme şablon sınıfının destekler. İç içe geçmiş bildirimleri desteklenir. Aşağıdaki tabloda, bazı tipik bildirimlerini gösterir.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ kodu (Sınıf Tasarımcısı) ile çalışma](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Sınıflar ve yapılar](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Anonim sınıf türleri](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Birden çok devralma](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Birden çok taban sınıfı](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Şablonlar](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Sınıflar ve yapılar](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Anonim sınıf türleri](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Birden çok devralma](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Birden çok taban sınıfı](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Şablonlar](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

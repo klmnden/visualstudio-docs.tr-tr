@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690923"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Kabuğu (tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
 - Hiçbir Visual Studio dilleri veya ilişkili proje şablonları veya proje öğesi şablonları, tümleşik Kabuğu dahil edilir. Hiçbir dil özgü diğer özellikleri, örneğin Visual Basic kod parçacıkları için dahil edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio genel bakışı genişletme](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Visual Studio genel bakışı genişletme](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

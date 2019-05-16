@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687646"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -306,4 +306,4 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  [Klavye kısayolları](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)   
  [HTML, CSS ve JavaScript örnek kod hatalarını ayıklama](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Ürün desteği ve erişilebilirlik](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Ürün desteği ve erişilebilirlik](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

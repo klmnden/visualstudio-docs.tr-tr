@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696999"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Store uygulamalarında enerji kullanımını analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
   
  **C#, Visual Basic, C++ kodu işaretler ekleme**  
   
- Bir kullanıcı işareti C# için eklemek için Visual Basic, C++ koduna, oluşturun bir [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) nesne. Ardından çağrıları Ekle [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) kodunuzda işaretlemek istediğiniz noktalarda yöntemleri. Kullanım [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) çağrılarda.  
+ Bir kullanıcı işareti C# için eklemek için Visual Basic, C++ koduna, oluşturun bir [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) nesne. Ardından çağrıları Ekle [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) kodunuzda işaretlemek istediğiniz noktalarda yöntemleri. Kullanım [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) çağrılarda.  
   
  Yöntem yürütüldüğünde, profil oluşturma verilerine bir iletiyle birlikte bir kullanıcı işareti eklenir.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) arabirimi (tahmini olarak [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# ve VB Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) işiniz bittiğinde bir günlük kaydı kanalıyla.  
+> - Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) arabirimi (tahmini olarak [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# ve VB Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) işiniz bittiğinde bir günlük kaydı kanalıyla.  
 >   - Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.  
   
  Bkz. Windows SDK'sı örneği [LoggingSession örneğine](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) örnekler.  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> Diğer kaynaklar  
   
-- **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [C# / VB/C++ ve XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) ve [JavaScript ve HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows geliştirme Merkezi'nde sağlayan Windows API'leri açıklama Uygulamanızı ağ trafiği maliyetini en aza indirmek için kullanabileceğiniz ağ bağlantı bilgileri.  
+- **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [C# / VB/C++ ve XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) ve [JavaScript ve HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows geliştirme Merkezi'nde sağlayan Windows API'leri açıklama Uygulamanızı ağ trafiği maliyetini en aza indirmek için kullanabileceğiniz ağ bağlantı bilgileri.  
   
      Windows Mağazası uygulamaları için Visual Studio simulator, ağ bilgi API'lerinin veri bağlantısı özelliklerinin simulasyonunu yapmanıza olanak sağlar. Bkz: [simulator'da çalıştırma Windows Store uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

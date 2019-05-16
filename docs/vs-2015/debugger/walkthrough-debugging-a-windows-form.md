@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e75ab095284ec4021d3555de27b43205e17b1128
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704904"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Windows Formunda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
 5. **Tamam**'ı tıklatın.  
   
-     Visual Studio, yeni bir proje oluşturur ve Windows Forms Tasarımcısı'nda yeni bir form görüntüler. Daha fazla bilgi için [Windows Form Tasarımcısı](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio, yeni bir proje oluşturur ve Windows Forms Tasarımcısı'nda yeni bir form görüntüler. Daha fazla bilgi için [Windows Form Tasarımcısı](https://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
 6. Üzerinde **görünümü** menüsünde **araç kutusu**.  
   
@@ -114,7 +114,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Daha fazla bilgi için [kesme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz.  
+     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Daha fazla bilgi için [kesme noktaları](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz.  
   
     > [!NOTE]
     > Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.  

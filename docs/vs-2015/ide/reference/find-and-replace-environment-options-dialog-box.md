@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 305a19ed08c58d6858c95a3f1109cdf4877d848f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e527769216dcf2edcd6166e24834e0829ddf48cd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674275"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Bul ve Değiştir, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437174"
 Bu sayfanın kullanın **seçenekleri** ileti kutuları ve bulma diğer yönlerini denetleyip işlemi Değiştir iletişim kutusu. Bu iletişim kutusunu kullanarak erişebileceğiniz **Araçları** tıklayarak menü **seçenekleri**, genişleyen **ortam**ve ardından **Bul ve Değiştir**. Bu sayfa, listede görünmüyorsa, seçin **tüm bir ayarın gösterilip** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Bilgi iletilerini görüntüleme**  

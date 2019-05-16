@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800932"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682430"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>CRT Kitaplığını Kullanarak Bellek Sızıntılarını Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "54800932"
   
  CRT işlevlerinin düzgün çalışmaya `#include` deyimleri burada gösterilen sırayı izlemelidir.  
   
- Crtdbg.h eşlemeleri de dahil olmak üzere `malloc` ve [ücretsiz](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) işlevleri için hata ayıklama sürümlerine [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) ve `free`, bellek ayırmayı ve ayırmayı kaldırma izleyin. Bu eşleme olan yalnızca hata ayıklama yapılarında, oluşur `_DEBUG`. Sürüm yapıları sıradan kullanın `malloc` ve `free` işlevleri.  
+ Crtdbg.h eşlemeleri de dahil olmak üzere `malloc` ve [ücretsiz](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) işlevleri için hata ayıklama sürümlerine [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) ve `free`, bellek ayırmayı ve ayırmayı kaldırma izleyin. Bu eşleme olan yalnızca hata ayıklama yapılarında, oluşur `_DEBUG`. Sürüm yapıları sıradan kullanın `malloc` ve `free` işlevleri.  
   
  `#define` Deyimi CRT yığın işlevlerinin temel sürümünü ilgili hata ayıklama sürümüyle eşler. Atlarsanız `#define` deyimi, bellek sızıntısı dökümü daha az ayrıntılı olur.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "54800932"
 _CrtDumpMemoryLeaks();  
 ```  
   
- Uygulamanızı birden çok çıkış varsa, el ile yapılan yerleştirmeniz gerekmez [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) her çıkış noktasında. Bir çağrı `_CrtSetDbgFlag` uygulamanızı başında otomatik bir çağrıya neden olacak `_CrtDumpMemoryLeaks` her çıkış noktasında. Burada gösterilen iki bit alanını ayarlamanız gerekir:  
+ Uygulamanızı birden çok çıkış varsa, el ile yapılan yerleştirmeniz gerekmez [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) her çıkış noktasında. Bir çağrı `_CrtSetDbgFlag` uygulamanızı başında otomatik bir çağrıya neden olacak `_CrtDumpMemoryLeaks` her çıkış noktasında. Burada gösterilen iki bit alanını ayarlamanız gerekir:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Bellek sızıntısı raporunu yorumlama  
- Uygulamanızı tanımlamazsa `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) aşağıdakine benzer bir bellek sızıntısı raporu görüntüler:  
+ Uygulamanızı tanımlamazsa `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) aşağıdakine benzer bir bellek sızıntısı raporu görüntüler:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Bellek ayırma numarası `18` Bu örnekte  
   
-- [Blok türü](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), olduğu `normal` Bu örnekte.  
+- [Blok türü](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), olduğu `normal` Bu örnekte.  
   
 - Onaltılık bellek konumu olan `0x00780E80` Bu örnekte.  
   

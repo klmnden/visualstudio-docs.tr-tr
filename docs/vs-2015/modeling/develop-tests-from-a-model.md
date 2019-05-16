@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042060"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692234"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
  Alt sistem testi sistemin ana bileşenleri için aynı ilkeler geçerlidir. Her bir bileşeni ayrı olarak başka bir bileşenden test edilir. Alt sistemi bileşenin kullanıcı arabirimleri veya API görünür davranışına odaklanmak sınar.  
   
- Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Sistem testleri gereksinimleri modelden türetme  
  Oluşturun ve sistem testleri ve gereksinimler modeli arasında bir ilişki korumak. Bu ilişki kurmak için gereksinimler modelinin ana öğelere karşılık gelen testler yazın. Visual Studio testleri ve model bölümleri arasında bağlantılar oluşturmanıza imkan vererek bu ilişkiyi tutmanıza yardımcı olur. Gereksinim modelleri hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Testleri bir kullanım örneğine bağlamak için  
   
-1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Erişimciler ve güncelleyici çoğunu zaten uygulamanın normal API aracılığıyla kullanılabilir. Ancak, bazı ek işlevler testleri etkinleştirmek için yazılması gerekebilir. Bazen bu ek erişimci ve güncelleyici 'test Araçları' bilinir. Bunlar iç sistemin tasarımını üzerinde bağımlı olduğundan test edicilere test gereksinimler modelini açısından kod yazmaya ise bunları sağlamak için sistemin geliştiricilerin sorumluluğundadır.  
   
- Otomatikleştirilmiş testleri yazdığınızda, erişimci ve güncelleyici kaydırmak için genel testler kullanabilirsiniz. Daha fazla bilgi için [bir otomatik Test, çalışmalarını bir yürütülebilir dosya kullanarak genel testleri oluşturma](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Otomatikleştirilmiş testleri yazdığınızda, erişimci ve güncelleyici kaydırmak için genel testler kullanabilirsiniz. Daha fazla bilgi için [bir otomatik Test, çalışmalarını bir yürütülebilir dosya kullanarak genel testleri oluşturma](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>İş kuralları için testler  
  Bazı gereksinimler herhangi bir kullanım durumu için doğrudan ilgili değildir. Örneğin, DinnerNow iş birçok menülerden seçme özgürlüğü tanır, ancak her sırada gerektiren tüm seçilen öğeleri tek bir menüden olacaktır. Bu iş kuralı, siparişler, menüler ve öğeler arasındaki ilişkilendirmeleri gereksinimleri sınıfı modelinde hakkında bir değişmez değer olarak ifade edilebilir.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Testleri bir model öğe veya ilişki bağlamak için  
   
-1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.  
   

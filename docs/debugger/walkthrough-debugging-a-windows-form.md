@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678918"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Windows Formunda hata ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.
@@ -165,23 +165,24 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Üzerinde **hata ayıklama** menüsünde **hata ayıklama olmadan Başlat**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Çalıştırılabilir haline çift tıklatmışsınız gibi, Windows Formu, Windows altında çalışmaya başlar. Hata ayıklayıcısı iliştirilmemiş.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Üzerinde **hata ayıklama** menüsünde **iliştirme**. (Bu komut ayrıca şurada bulunur **Araçları** menü.)
 
-     The **Attach to Process** dialog box appears.
+     **İliştirme** iletişim kutusu görüntülenir.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. İçinde **kullanılabilir işlemler** bölmesinde, işlem adını (Walkthrough_SimpleDebug.exe) içinde Bul **işlem** sütun bulup tıklayın.
 
-5. Click the **Attach** button.
+5. Tıklayın **iliştirme** düğmesi.
 
-6. In your Windows Form, click the one and only button.
+6. Windows Formunuzda, tek başına bir tane olan düğmeyi tıklatın.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Hata ayıklayıcısı, kesme noktasında Windows Formunun yürütülmesini keser.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)

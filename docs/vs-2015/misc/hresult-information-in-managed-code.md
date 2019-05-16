@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
-ms.openlocfilehash: 53ff7b49414e3473c74a41008f381bb207e45fd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f80b575656c2d8b1740f217f2e144f89f254078
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681627"
 ---
 # <a name="hresult-information-in-managed-code"></a>Yönetilen kodda HRESULT bilgileri
 HRESULT dönüş değerlerini karşılaştığında, yönetilen kodda COM arasındaki etkileşimi sorunlara neden olabilir.  
@@ -64,7 +64,7 @@ HRESULT dönüş değerlerini karşılaştığında, yönetilen kodda COM arası
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen VSPackage'ları](../misc/managed-vspackages.md)   
- [Yönetilmeyen kod ile birlikte çalışma](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
- [Nasıl yapılır: Harita HRESULTs ve özel durumları](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [Birlikte çalışma için COM bileşenleri oluşturma](http://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [Yönetilmeyen kod ile birlikte çalışma](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
+ [Nasıl yapılır: Harita HRESULTs ve özel durumları](https://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
+ [Birlikte çalışma için COM bileşenleri oluşturma](https://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [Yönetilen VSPackage'ları](../misc/managed-vspackages.md)

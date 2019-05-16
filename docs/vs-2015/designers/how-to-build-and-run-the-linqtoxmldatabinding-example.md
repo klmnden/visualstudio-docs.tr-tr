@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696149"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturun ve elde edilen LinqToXmlDataBinding Windows Presentation Foundation (WPF) örnek program çalıştırma gösterir.  
   
- Projeleri oluşturmak için Visual Studio'yu kullanma hakkında daha fazla bilgi için bkz. [Visual Studio'da uygulama geliştirme](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
+ Projeleri oluşturmak için Visual Studio'yu kullanma hakkında daha fazla bilgi için bkz. [Visual Studio'da uygulama geliştirme](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
   
 ## <a name="creating-and-populating-the-project"></a>Oluşturma ve proje doldurma  
   
@@ -79,4 +79,4 @@ Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to XML örneği kullanarak WPF verilerini bağlama](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [İzlenecek yol: LinqToXmlDataBinding örneği](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Visual Studio'da uygulama geliştirme](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Visual Studio'da uygulama geliştirme](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

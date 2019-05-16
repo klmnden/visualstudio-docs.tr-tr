@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700648"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Katman diyagramları ile kod doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
 |Tüm gizlenmiş Hataları Gizle **hata listesi** penceresi|Herhangi bir yere sağ **hata listesi** penceresi **doğrulama hatalarını Yönet**ve ardından **tüm gizlenmiş Hataları Gizle**.|  
   
 ## <a name="ValidateAuto"></a> Kodu otomatik olarak doğrulama  
- Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Takınınız Team Foundation Yapısı kullanıyorsa, özel bir MSBuild görevi oluşturarak belirtebileceğiniz geçitli iadelerle katman doğrulaması gerçekleştirebilir ve doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz. Geçitli iade yapıları oluşturmak için bkz [değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ Her yerel bir yapı çalıştırışınızda katman doğrulama gerçekleştirebilirsiniz. Takınınız Team Foundation Yapısı kullanıyorsa, özel bir MSBuild görevi oluşturarak belirtebileceğiniz geçitli iadelerle katman doğrulaması gerçekleştirebilir ve doğrulama hatalarını toplamak için yapı raporları kullanabilirsiniz. Geçitli iade yapıları oluşturmak için bkz [değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Kodu yerel yapı sırasında otomatik olarak doğrulamak için  
   
@@ -197,15 +197,15 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
   
    Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors). Hakkında daha fazla bilgi için [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], bkz:  
   
-- [Uygulamayı oluşturun](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Uygulamayı oluşturun](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [Yapı işleminiz için varsayılan şablonu kullanın](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Yapı işleminiz için varsayılan şablonu kullanın](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [UpgradeTemplate.xaml temelindeki bir eski yapı değiştirme](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [UpgradeTemplate.xaml temelindeki bir eski yapı değiştirme](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [Yapı işlemi şablonunuzu özelleştirme](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Yapı işlemi şablonunuzu özelleştirme](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [Bir çalışan yapı ilerlemesini izleme](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Bir çalışan yapı ilerlemesini izleme](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> Katman doğrulama sorunlarını giderme  
  Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).  

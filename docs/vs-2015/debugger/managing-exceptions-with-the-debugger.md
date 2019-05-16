@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690516"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Özel Durumları Hata Ayıklayıcısı ile Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [Nasıl yapılır: Özel durumdan sonra sistem kodunu İnceleme](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)   
  [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı kullanarak denetler](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Özel durum Yardımcısı](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Özel durum Yardımcısı](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Hata Ayıklayıcısı Temel Bilgileri](../debugger/debugger-basics.md)

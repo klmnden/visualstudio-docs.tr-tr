@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690213"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource Olaylarını İşaretleyici Olarak Görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
   
 ### <a name="marker-type"></a>İşaret türü  
   
-1. Sahip olayları [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) kazanma: Başlangıç ya da kazanın: Stop kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çifti görüntülenemiyor.  
+1. Sahip olayları [Opcode](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) kazanma: Başlangıç ya da kazanın: Stop kabul edilir başına veya sonuna bir aralık sırasıyla.  İç içe geçmiş veya yayılma çakışan görüntülenemiyor. Bir iş parçacığı üzerinde başlayan ve başka birinde son olay çifti görüntülenemiyor.  
   
-2. Sürece, Opcode kazanma: Başlangıç ne kazanma: Stop bir olay işaretçisi bayrak olarak kabul edilir, [düzeyi](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan kazanma: ayrıntılı veya üzeri.  
+2. Sürece, Opcode kazanma: Başlangıç ne kazanma: Stop bir olay işaretçisi bayrak olarak kabul edilir, [düzeyi](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD alanı. EVENT_HEADER. EVENT_DESCRIPTOR) olan kazanma: ayrıntılı veya üzeri.  
   
 3. Diğer durumlarda, olay iletisi olarak kabul edilir.  
   
@@ -62,11 +62,11 @@ Eşzamanlılık görselleştiricisi EventSource olaylarını işaretleyici olara
   
 |cvType değeri|Sonuçta elde edilen işaret türü|  
 |------------------|---------------------------|  
-|0|İleti|  
+|0|`Message`|  
 |1.|Aralık başlangıcı|  
 |2|Aralık sonu|  
 |3|Bayrağı|  
-|Diğer tüm değerler|İleti|  
+|Diğer tüm değerler|`Message`|  
   
 ### <a name="importance"></a>Önem derecesi  
  Kullanabileceğiniz `cvImportance` alan, bir EventSource olay önem derecesi ayarı denetlemek için bir bayt. Ancak, alt düzey kullanarak bir olay görüntülenen önemini denetim öneririz.  

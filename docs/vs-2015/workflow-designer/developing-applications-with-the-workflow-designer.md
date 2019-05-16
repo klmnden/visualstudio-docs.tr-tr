@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977003"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704782"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>İş Akışı Tasarımcısı ile uygulama geliştirme
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] Bir görsel tasarımcı ve grafik oluşturma ve hata ayıklama için hata ayıklayıcı [!INCLUDE[wf](../includes/wf-md.md)] uygulamalarda [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] barındırılan [!INCLUDE[vs2010](../includes/vs2010-md.md)] geliştirme ortamı. Bir bileşik iş akışı uygulaması, etkinlik kitaplığı oluşturma olanak tanır veya [!INCLUDE[indigo1](../includes/indigo1-md.md)] hizmet şablonları ve etkinlik tasarımcıları kullanarak. [!INCLUDE[crabout](../includes/crabout-md.md)] İş akışları için bkz: [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] Bir görsel tasarımcı ve grafik oluşturma ve hata ayıklama için hata ayıklayıcı [!INCLUDE[wf](../includes/wf-md.md)] uygulamalarda [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] barındırılan [!INCLUDE[vs2010](../includes/vs2010-md.md)] geliştirme ortamı. Bir bileşik iş akışı uygulaması, etkinlik kitaplığı oluşturma olanak tanır veya [!INCLUDE[indigo1](../includes/indigo1-md.md)] hizmet şablonları ve etkinlik tasarımcıları kullanarak. [!INCLUDE[crabout](../includes/crabout-md.md)] İş akışları için bkz: [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Bu yeni sürümünü birkaç yeni tasarım özelliklerinin şunlardır [!INCLUDE[wfd2](../includes/wfd2-md.md)] eski sürümlerini dışında [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977003"
  [.NET 3.0 veya .NET 3.5 Framework’ü Hedefleyen İş Akışı Uygulamaları Geliştirme](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Hedefleyen eski Tasarımcı kullanma yönergeleri içeren [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Tasarımcı yeniden barındırma &#91;WF örnekleri&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Tasarımcı yeniden barındırma &#91;WF örnekleri&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  Bu örnek, Tasarımcı içerecek şekilde WPF düzen oluşturma işlemi gösterilmektedir.  
   
- [Özel Etkinlik Tasarımcıları](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Özel Etkinlik Tasarımcıları](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Bu bölüm, iş akışı tasarımcısında görüntülemek için özel tasarımcılar kullanın etkinliği örneği içerir.

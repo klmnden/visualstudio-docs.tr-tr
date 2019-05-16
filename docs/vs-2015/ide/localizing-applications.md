@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674987"
 ---
 # <a name="localizing-applications"></a>Uygulamaları Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54800552"
  [.NET Framework Tabanlı Uluslararası Uygulamalara Giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Basic veya Visual C# kullanarak bir Uluslararası pazar için yazılım geliştirme ile ilgili kavramları açıklar.  
   
- [Windows Forms’u Genelleştirme](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Windows Forms’u Genelleştirme](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Birden çok kültürde destekleyen Windows uygulamaları oluşturma hakkındaki sayfalara bağlantılar sağlar.  
   
- [Genelleştirme ve Yerelleştirme](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Genelleştirme ve Yerelleştirme](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Birden çok kültürde destekleyen Web uygulamaları oluşturma hakkındaki sayfalara bağlantılar sağlar.  
   
- [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Tasarım konuları ve terminolojisi gibi uluslararası bir hedef kitle için programlama hakkında bilgi sağlar.

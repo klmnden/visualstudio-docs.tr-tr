@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c57a9ce2b5a1ce9de0ffadb4b623ef3a33b8e9ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767881"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683294"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütmeli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Kaynak Sunucusu'nu kullanırken, bu uyarı iletişim kutusu görüntülenir. Bu,
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Kaynak sunucu](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Kaynak sunucu](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

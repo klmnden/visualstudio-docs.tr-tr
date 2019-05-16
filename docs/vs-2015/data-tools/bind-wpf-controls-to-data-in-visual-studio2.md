@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697966"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Tek bir veri alanı için bağlı bir denetim oluşturmak için
 
-1. İçinde **veri kaynakları** penceresinde bir tablo veya bir nesneyi temsil eden bir öğeyi genişletin. Sütun veya bağlamak istediğiniz bir özellik temsil eden alt öğeyi bulun. Görsel bir örnek için bkz: [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. İçinde **veri kaynakları** penceresinde bir tablo veya bir nesneyi temsil eden bir öğeyi genişletin. Sütun veya bağlamak istediğiniz bir özellik temsil eden alt öğeyi bulun. Görsel bir örnek için bkz: [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. İsteğe bağlı olarak oluşturmak için denetimi seçin. Her öğe **veri kaynakları** penceresine sahip öğeyi tasarımcıya sürüklediğinizde varsayılan denetim oluşturulur. Varsayılan Denetim öğesi temel alınan veri türüne göre değişir.
 
@@ -73,7 +73,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Birden fazla veri alanlarına bağlı bir denetim oluşturmak için
 
-1. İçinde **veri kaynakları** penceresinde, bir tablo veya nesne temsil eden öğeyi seçin. Görsel bir örnek için bkz: [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. İçinde **veri kaynakları** penceresinde, bir tablo veya nesne temsil eden öğeyi seçin. Görsel bir örnek için bkz: [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. İsteğe bağlı olarak oluşturmak için denetimi seçin. Varsayılan olarak, her öğesi **veri kaynakları** veri tablosu veya nesneyi temsil eden pencere oluşturmak için ayarlanmış bir <xref:System.Windows.Controls.DataGrid> (projeniz .NET Framework 4 hedefliyse) veya <xref:System.Windows.Controls.ListView> (için .NET Framework'ün önceki sürümler).
 
@@ -91,7 +91,7 @@ Veri bağlama oluşturabilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Birden fazla veri alanlarına bağlı denetimler oluşturmak için
 
-1. İçinde **veri kaynakları** penceresinde, bir tablo veya nesne temsil eden öğeyi seçin. Görsel bir örnek için bkz: [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. İçinde **veri kaynakları** penceresinde, bir tablo veya nesne temsil eden öğeyi seçin. Görsel bir örnek için bkz: [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Seçin ve öğe yanındaki açılan oka tıklayın **ayrıntıları**.
 

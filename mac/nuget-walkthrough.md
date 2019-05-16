@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938190"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692335"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 
@@ -51,7 +51,7 @@ Paket İndirildikten sonra projenize eklenir. Çözüm aşağıdaki gibi değiş
 
 * **Başvuruları** düğümü bir NuGet paketinin parçası olan tüm derlemelerin bir listesini içerir.
 * **Paketleri** düğümü yüklediğiniz her NuGet paketini gösterir. Güncelleştirin veya bu listeden bir paket kaldırın.
-* A **packages.config** dosya projeye eklenecek. Bu XML dosyası IDE tarafından izlemek için bu projede hangi paket sürümlerini başvurulan kullanılır. Bu dosyayı elle düzenlenerek olmamalıdır, ancak sürüm denetiminde tutmanız gerekir. Project.json dosyası yerine packages.config dosyası kullanılabileceğini unutmayın. Geçişli geri yüklemeyi destekleyen NuGet 3 ile sunulan yeni bir paket dosyası biçimi project.json dosyasıdır. Project.json hakkında ayrıntılı bilgi bulunabilir [NuGet belgeleri](http://docs.microsoft.com/NuGet/Schema/Project-Json). Project.json dosyasını el ile eklenmesi gerekir ve proje kapatıldı ve project.json dosyasını Mac için Visual Studio'da kullanılmadan önce yeniden açıldı
+* A **packages.config** dosya projeye eklenecek. Bu XML dosyası IDE tarafından izlemek için bu projede hangi paket sürümlerini başvurulan kullanılır. Bu dosyayı elle düzenlenerek olmamalıdır, ancak sürüm denetiminde tutmanız gerekir. Project.json dosyası yerine packages.config dosyası kullanılabileceğini unutmayın. Geçişli geri yüklemeyi destekleyen NuGet 3 ile sunulan yeni bir paket dosyası biçimi project.json dosyasıdır. Project.json hakkında ayrıntılı bilgi bulunabilir [NuGet belgeleri](https://docs.microsoft.com/NuGet/Schema/Project-Json). Project.json dosyasını el ile eklenmesi gerekir ve proje kapatıldı ve project.json dosyasını Mac için Visual Studio'da kullanılmadan önce yeniden açıldı
 
 ## <a name="using-nuget-packages"></a>NuGet paketlerini kullanma
 

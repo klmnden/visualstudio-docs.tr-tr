@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df0fa2278b3ec6ec8a9c70cb6155cc41e0e19309
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687612"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -67,7 +67,7 @@ Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | Dahil      |  Evet          |
-| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                            |Yok         |
+| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Dahil                                                            |Evet         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
 | Visual Studio Dev Essentials | Yok  | Yok |Yok |

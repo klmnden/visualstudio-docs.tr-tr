@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685329"
 ---
 # <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş parçacıkları penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ ms.locfileid: "63434856"
 ## <a name="freezing-and-thawing-threads"></a>Dondurma ve iş parçacıklarını çözme  
  Bir iş parçacığını Dondur, sistem kaynakları kullanılabilir olsa bile, iş parçacığının yürütülmesini başlatılmaz.  
   
- Yerel kodda askıya alma veya Windows işlevleri çağırarak iş parçacıklarını sürdürme `SuspendThread` ve `ResumeThread` veya MFC işlevleri [CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) ve [CWinThread::ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Çağırırsanız `SuspendThread` veya `ResumeThread`, değiştirdiğiniz *askıya sayısı*, içinde göründüğü **iş parçacıkları** penceresi. Ancak, dondurma veya çözme yerel bir iş parçacığı, askıda sayma değiştirmeyin. Çözülmüş ve askıya alınmış sayısı sıfır olan sürece yerel kodda iş parçacığı yürütülemiyor.  
+ Yerel kodda askıya alma veya Windows işlevleri çağırarak iş parçacıklarını sürdürme `SuspendThread` ve `ResumeThread` veya MFC işlevleri [CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) ve [CWinThread::ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Çağırırsanız `SuspendThread` veya `ResumeThread`, değiştirdiğiniz *askıya sayısı*, içinde göründüğü **iş parçacıkları** penceresi. Ancak, dondurma veya çözme yerel bir iş parçacığı, askıda sayma değiştirmeyin. Çözülmüş ve askıya alınmış sayısı sıfır olan sürece yerel kodda iş parçacığı yürütülemiyor.  
   
  Yönetilen kodda dondurma veya çözme iş parçacığı askıda sayma değiştirin. Yönetilen kodda dondurulmuş bir iş parçacığı askıda sayısı 1 ' var. Yerel kodda iş parçacığı tarafından askıya alındı sürece askıya alınmış sayısı 0 dondurulmuş bir iş parçacığı sahip bir `SuspendThread` çağırın.  
   

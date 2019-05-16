@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687352"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA metotları yalnızca APTCA metotlarını çağırmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54761291"
  Bir derlemeye bir yöntemde <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> özniteliği özniteliğine sahip bir derlemede bir yöntemi çağırır.
 
 ## <a name="rule-description"></a>Kural Tanımı
- Varsayılan olarak, ortak veya korumalı yöntem tanımlayıcı ada sahip derlemelerde örtük olarak tarafından korunan bir [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) tam güven için; yalnızca tam olarak güvenilen Arayanların bir katı adlı derleme erişim sağlayabilir. Tanımlayıcı adlandırılmış derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> özniteliği (APTCA) Bu koruma sahip değil. Öznitelik yalnızca intranet veya internette çalıştırılan kod gibi tam güven derleme üstlenir bağlantı talebi, devre dışı bırakır.
+ Varsayılan olarak, ortak veya korumalı yöntem tanımlayıcı ada sahip derlemelerde örtük olarak tarafından korunan bir [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) tam güven için; yalnızca tam olarak güvenilen Arayanların bir katı adlı derleme erişim sağlayabilir. Tanımlayıcı adlandırılmış derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> özniteliği (APTCA) Bu koruma sahip değil. Öznitelik yalnızca intranet veya internette çalıştırılan kod gibi tam güven derleme üstlenir bağlantı talebi, devre dışı bırakır.
 
  APTCA özniteliği tam olarak güvenilen bir derlemede yapılandırıldığında ve derleme, kodu kısmen güvenilmeyen çağrıcılara izin vermeyen başka bir derlemede yürütür, güvenlik yararlanması mümkündür. İki yöntem `M1` ve `M2` aşağıdaki koşullara uyması, zararlı çağıranlar yöntemi kullanabileceğiniz `M1` korur örtük tam güven bağlantı talebi atlamak için `M2`:
 
@@ -49,7 +49,7 @@ ms.locfileid: "54761291"
   Kısmen güvenilen bir çağıranın `X` yöntemi çağırabilirsiniz `M1`, neden `M1` çağrılacak `M2`. Çünkü `M2` APTCA özniteliği veya onun şu anki çağırıcı sahip değil (`M1`); tam güven için bağlantı talebi karşılamalıdır `M1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` korur bağlantı talebi karşılamadığınızı içinde yer almaz `M2` güvenilmeyen çağıranlar öğesinden. Bu nedenle, özniteliğine sahip olmayan yöntemleri APTCA özniteliğine sahip yöntemleri çağırmamalıdır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- APCTA öznitelik gerekliyse, isteğe bağlı tam güven bütünleştirilmiş koda çağıran yöntemin korumak için kullanın. Tam izinler yönteminizi tarafından sunulan işlevselliği, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmez emin olmak tam güven için talep yöntemi koruyun. Bu mümkün değilse, etkili bir şekilde sunulan işlevlerini koruyan bir izin kümesi seçin. Talepleri hakkında daha fazla bilgi için bkz: [taleplerini](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ APCTA öznitelik gerekliyse, isteğe bağlı tam güven bütünleştirilmiş koda çağıran yöntemin korumak için kullanın. Tam izinler yönteminizi tarafından sunulan işlevselliği, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmez emin olmak tam güven için talep yöntemi koruyun. Bu mümkün değilse, etkili bir şekilde sunulan işlevlerini koruyan bir izin kümesi seçin. Talepleri hakkında daha fazla bilgi için bkz: [taleplerini](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Güvenli bir şekilde bu kuraldan bir uyarıyı bastırmak için yönteminizi tarafından kullanıma sunulan işlevselliğini doğrudan veya dolaylı olarak hassas bilgileri, işlemler veya yıkıcı bir şekilde kullanılabilir kaynaklara erişmek bir çağırıcıya izin vermeyen emin emin olmanız gerekir.
@@ -77,4 +77,4 @@ ms.locfileid: "54761291"
  [CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [kısmen güvenilen kod tarafından çağrılabilen .NET Framework derlemeleri](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [güvenilen kod kitaplıklarından kısmen kullanarak](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [taleplerini](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [kısmen güvenilen kod tarafından çağrılabilen .NET Framework derlemeleri](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [güvenilen kod kitaplıklarından kısmen kullanarak](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [taleplerini](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

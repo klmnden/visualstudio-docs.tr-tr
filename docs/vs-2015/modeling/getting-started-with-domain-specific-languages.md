@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687244"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 1. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç. Bu, çoğu DslDefinition.dsl kaynak kodundan yeniden oluşturur.  
   
    > [!NOTE]
-   > DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > DslDefinition.dsl değiştirdiğinizde tıklatmalısınız **tüm Şablonları Dönüştür** önce çözümü yeniden oluşturun. Bu adım otomatik hale getirebilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. F5 tuşuna basın veya **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   

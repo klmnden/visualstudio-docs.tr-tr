@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686915"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++'ye Özgü MSBuild Görevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Görevler, derleme işlemi sırasında çalışan kodu sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
+Görevler, derleme işlemi sırasında çalışan kodu sağlar. Visual C++ yüklü olduğunda, aşağıdaki görevleri ile birlikte yüklenen listelenenlere kullanılabilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](https://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
   
  Her görev için parametrelerin yanı sıra, her görev, ayrıca aşağıdaki parametrelere sahiptir.  
   

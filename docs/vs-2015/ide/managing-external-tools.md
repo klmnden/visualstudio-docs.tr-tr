@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686960"
 ---
 # <a name="managing-external-tools"></a>Dış Araçları Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
   
 1. GUID oluştur: bir GUID oluşturur.  
   
-2. Hata arama: girilen değerin bir hata iletisi alır. Daha fazla bilgi için [ERRLOOK başvurusu](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Hata arama: girilen değerin bir hata iletisi alır. Daha fazla bilgi için [ERRLOOK başvurusu](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. ATL/MFC izleme aracı: hata ayıklama İzleyici iletileri ATL ve MFC kaynakları gösterir.  
   
@@ -85,7 +85,7 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
 6. WCF Hizmeti Yapılandırma Düzenleyicisi: Oluşturma ve WCF hizmetleri için yapılandırma ayarlarını değiştirmenize olanak sağlar.  
   
 > [!WARNING]
-> Dış araçların farklı bir liste görebilirsiniz, hangi Visual Studio sürümü bağlı olarak, yüklediğiniz ve uyguladığınız ayarları profili. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dış araçların farklı bir liste görebilirsiniz, hangi Visual Studio sürümü bağlı olarak, yüklediğiniz ve uyguladığınız ayarları profili. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Yeni araçları ekleme  
  Harici bir aracı için ekleyebilirsiniz **Araçları** menüsü. Açık **dış Araçlar** iletişim kutusu ve tıklatın **Ekle**, ardından bilgileri doldurun. Örneğin, Windows Explorer'ın şu anda dosya dizininde açmak için şu girdiyi Visual Studio'da Aç nedenleri:  
@@ -122,4 +122,4 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
 |Çözüm dosyası adı|$(SolutionFileName)|Geçerli çözümün dosya adını (sürücü yolu + dosya adı).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ Derleme Araçları](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++ Derleme Araçları](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

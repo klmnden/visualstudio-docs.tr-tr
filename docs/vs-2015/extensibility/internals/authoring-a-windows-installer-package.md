@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872853"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682548"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer Paketi Yazma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Windows Installer model veri sürücülerinde. Dosyaları kopyalayın ve kayıt 
   
 - VSPackage'ı, tümleştirme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çağırarak **devenv.exe/Setup** (özel tabloyu kullanarak).  
   
-  Daha fazla bilgi için [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Daha fazla bilgi için [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Kurulum Araçları  
  Çeşitli üçüncü taraf kurulum araçları, Windows Installer paketleri için bir geliştirme ortamı sağlar. İki ücretsiz araçlar şunlardır:  

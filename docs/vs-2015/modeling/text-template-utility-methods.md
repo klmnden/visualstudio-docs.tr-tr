@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680987"
 ---
 # <a name="text-template-utility-methods"></a>Metin Şablonu Yardımcı Program Yöntemleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "63411406"
 Kod yazdığınızda, her zaman kullanabileceğiniz çeşitli yöntemler vardır bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metin şablonu. Bu yöntemler, şurada tanımlanan <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
-> Ayrıca, diğer yöntemler ve normal (değil önceden işlenmiş) metin şablonunda konak ortamı tarafından sağlanan hizmetleri de kullanabilirsiniz. Örneğin, dosya yollarını çözmek, oturum hataları ve tarafından sağlanan hizmetleri edinin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve tüm paketler yüklenir.  Daha fazla bilgi için [metin şablonunda Visual Studio'dan erişme](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Ayrıca, diğer yöntemler ve normal (değil önceden işlenmiş) metin şablonunda konak ortamı tarafından sağlanan hizmetleri de kullanabilirsiniz. Örneğin, dosya yollarını çözmek, oturum hataları ve tarafından sağlanan hizmetleri edinin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve tüm paketler yüklenir.  Daha fazla bilgi için [metin şablonunda Visual Studio'dan erişme](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Yöntemleri yazın  
  Kullanabileceğiniz `Write()` ve `WriteLine()` bir ifade kod bloğu kullanmak yerine standart bir kod bloğu içindeki metni eklenecek yöntemleri. Aşağıdaki iki kod blokları işlevsel olarak eşdeğerdir.  

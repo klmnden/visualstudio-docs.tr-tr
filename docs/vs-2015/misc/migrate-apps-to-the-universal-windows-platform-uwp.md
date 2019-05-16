@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686662"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Uygulamaları Evrensel Windows Platformu’na (UWP) geçirme
 Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ya da Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için gerekli el ile değişiklikleri yapın. (Windows 8.1 Evrensel uygulamasıyla bir Windows uygulaması projesi ve Windows Phone projesi varsa, her projeyi geçirmek için adımları izlemeniz gerekir.)  
@@ -29,7 +29,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 - [Mevcut Visual Studio 2015 RC ile oluşturulmuş Evrensel Windows uygulamaları için birim testi projeleri için gerekli değişiklikleri](#MigrateUnitTest).  
   
-  Bu değişiklikleri yapmak istemiyorsanız, bilgi nasıl [mevcut uygulamalarınızı bağlantı noktası](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) içine yeni bir evrensel Windows projesi.  
+  Bu değişiklikleri yapmak istemiyorsanız, bilgi nasıl [mevcut uygulamalarınızı bağlantı noktası](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) içine yeni bir evrensel Windows projesi.  
   
 ## <a name="MigrateCSharp"></a> Evrensel Windows Platformu'nu kullanmak için C# /VB Windows Store 8.1 veya Windows Phone 8.1 uygulamaları geçirme  
   
@@ -110,7 +110,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
     6. Ekleme bir \<EnableDotNetNativeCompatibleProfile > öğesi ve onun değerine: **true**.  
   
-    7. Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. Projenize varlıklar 200 ölçeği değil içeriyorsa, eklemeniz gerekecektir bir \<UapDefaultAssetScale > Bu PropertyGroup varlıklarınızı ölçeğini değere sahip öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. Projenize varlıklar 200 ölçeği değil içeriyorsa, eklemeniz gerekecektir bir \<UapDefaultAssetScale > Bu PropertyGroup varlıklarınızı ölçeğini değere sahip öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Şimdi, \<PropertyGroup > öğesi bu örnektekine benzer görünmelidir:  
   
@@ -272,7 +272,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
     4. Ekleme bir \<EnableDotNetNativeCompatibleProfile > öğesi ve onun değerine: true.  
   
-    5. Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. Projenize varlıklar 200 ölçeği değil içeriyorsa, eklemeniz gerekecektir bir \<UapDefaultAssetScale > Bu PropertyGroup varlıklarınızı ölçeğini değere sahip öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. Projenize varlıklar 200 ölçeği değil içeriyorsa, eklemeniz gerekecektir bir \<UapDefaultAssetScale > Bu PropertyGroup varlıklarınızı ölçeğini değere sahip öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Windows Phone için projeleri yalnızca değerini değiştirmek \<ApplicationType > Windows Phone için Windows Store'dan.  
   
@@ -651,7 +651,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
 4. Bulma \<PropertyGroup > öğesini içeren \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > öğeleri. Mevcut değiştirin \<TargetPlatformVersion > ve \<TargetPlatformMinVersion > yüklediğiniz Evrensel Windows platformu aynı sürümde olması için öğeleri.  
   
-    Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. UWP uzantı SDK'ları herhangi bir referansı eklediyseniz (örneğin: Windows Mobile SDK'sı), SDK sürümü güncelleştirmeniz gerekecektir. Örneğin bu \<SDKReference > öğesi:  
   
@@ -761,7 +761,7 @@ Visual Studio 2015 RTM ile kullanılabilir böylece mevcut proje dosyalarınıza
   
      Ekleme bir \<EnableDotNetNativeCompatibleProfile > öğesi ve değerini, öğenin zaten mevcut değilse true olarak ayarlayın.  
   
-     Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](http://msdn.microsoft.com/library/jj679352.aspx).  
+     Evrensel Windows uygulamaları için varsayılan varlık ölçek 200'dür. 100 ile ölçeği dahil Visual Studio 2015 RC varlıklar ile oluşturulan projeleri, ihtiyaç duyacağınız eklemek bir \<UapDefaultAssetScale > Bu PropertyGroup 100 değerini içeren öğe. Daha fazla bilgi edinin [varlıklar ve ölçekler](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Bu nedenle bu \<PropertyGroup > öğesi şimdi şuna benzer olacaktır:  
   

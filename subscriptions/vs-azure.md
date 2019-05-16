@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685918"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -102,7 +102,7 @@ Başka bir etkin Visual Studio aboneliğiniz varsa bir **farklı** abonelik düz
 
 Aboneliğinizin harcama limiti vardır ve hiçbir eylemde önce süresi, Azure abonelikleri Azure aboneliğiniz devre dışı bırakılır. Bu bir Kullandıkça Öde teklifine geçmek ve onu kullanmaya devam etmek için bir ödeme aracı ekleyin ve [harcama limitinizi kaldırın](/azure/billing/billing-spending-limit/).
 
-Bu Visual Studio Azure aboneliğini kullanmaya devam tercih ederseniz, sanal makineler ve veritabanları gibi kaynaklarınızı başka bir Azure aboneliğine aktarabilir ve [iptal](http://azure.microsoft.com/support/cancel-account/) bu aboneliği dilediğiniz zaman.
+Bu Visual Studio Azure aboneliğini kullanmaya devam tercih ederseniz, sanal makineler ve veritabanları gibi kaynaklarınızı başka bir Azure aboneliğine aktarabilir ve [iptal](https://azure.microsoft.com/support/cancel-account/) bu aboneliği dilediğiniz zaman.
 
 Hata bu e-posta aldığınız düşünüyorsanız, lütfen iletişime geçin [Azure müşteri desteği](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

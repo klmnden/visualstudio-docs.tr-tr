@@ -1,5 +1,5 @@
 ---
-title: 'Yeni proje oluşturma: Altyapı öğeleri, bölüm iki | Microsoft Docs'
+title: 'Yeni Proje Oluşturma: Altyapı öğeleri, bölüm iki | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764411"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687499"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Yeni proje oluşturma: Altyapı öğeleri, bölüm iki
+# <a name="new-project-generation-under-the-hood-part-two"></a>Yeni Proje Oluşturma: Arka Plan, 2. Bölüm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 İçinde [yeni proje oluşturma: Altyapı, bir bölümü altında](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) gördüğümüz nasıl **yeni proje** iletişim kutusu doldurulur. Seçtiğiniz varsayalım bir **Visual C# Windows uygulaması**, doldurulmuş **adı** ve **konumu** metin kutuları ve tıklandı Tamam.  
@@ -26,7 +26,7 @@ ms.locfileid: "54764411"
 ## <a name="generating-the-solution-files"></a>Çözüm dosyaları oluşturma  
  Bir uygulama şablonunu seçme yönlendirir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sıkıştırmasını açın ve karşılık gelen .vstemplate dosyasını açın ve bu dosyayı XML komutlar yorumlamak için bir şablon başlatın. Bu komutlar, yeni veya mevcut çözümde proje ve proje öğeleri oluşturur.  
   
- Şablonun .vstemplate dosyasını içeren .zip klasöründen öğe şablonları adlı kaynak dosyalarını ayıklar. Şablonu bu dosyaları yeni projeye uygun şekilde özelleştirme kopyalar. Proje ve öğe şablonlarını genel bakış için bkz. [NIB: Visual Studio şablonları](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Şablonun .vstemplate dosyasını içeren .zip klasöründen öğe şablonları adlı kaynak dosyalarını ayıklar. Şablonu bu dosyaları yeni projeye uygun şekilde özelleştirme kopyalar. Proje ve öğe şablonlarını genel bakış için bkz. [NIB: Visual Studio şablonları](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Şablon parametre değiştirme  
  Şablonun yeni bir projeye bir öğe şablonunu kopyaladığında, herhangi bir şablon parametre dosyasını özelleştirmek için dizeleriyle değiştirir. Bir şablon parametre öncesinde ve örneğin bir dolar işareti tarafından izlenen özel bir belirteç, $date$ içindir.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni proje oluşturma: Bir altyapı öğeleri, bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Yeni Proje Oluşturma: Arka Plan, 1. Bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

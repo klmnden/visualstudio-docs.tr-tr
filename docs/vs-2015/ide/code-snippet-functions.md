@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701523"
 ---
 # <a name="code-snippet-functions"></a>Kod Parçacığı İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-İle kullanılabilecek üç işlev vardır [!INCLUDE[csprcs](../includes/csprcs-md.md)] kod parçacıkları. İçinde belirtilen işlevi [işlevi](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) kod parçacığının öğesi. Kod parçacıkları oluşturma hakkında daha fazla bilgi için bkz. [kod parçacıkları](../ide/code-snippets.md).  
+İle kullanılabilecek üç işlev vardır [!INCLUDE[csprcs](../includes/csprcs-md.md)] kod parçacıkları. İçinde belirtilen işlevi [işlevi](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) kod parçacığının öğesi. Kod parçacıkları oluşturma hakkında daha fazla bilgi için bkz. [kod parçacıkları](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>İşlevler  
  Aşağıdaki tablo ile kullanmak için kullanılabilir işlevler açıklar `Function` kod parçacıkları öğesinde.  
@@ -154,5 +154,5 @@ ms.locfileid: "54790013"
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Function öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function öğesi (IntelliSense kod parçacıkları)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Kod Parçacıkları Şema Başvurusu](../ide/code-snippets-schema-reference.md)

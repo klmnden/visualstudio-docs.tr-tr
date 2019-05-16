@@ -23,17 +23,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798607"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691144"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Hata ayıklama hazırlığı: Windows Forms Uygulamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oldukça basittir. Daha fazla bilgi için [bir Windows uygulaması projesi oluşturma](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oldukça basittir. Daha fazla bilgi için [bir Windows uygulaması projesi oluşturma](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Proje şablonuyla bir Windows Forms projesi oluşturduğunuzda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklama ve yayın yapılandırmaları için gereken ayarları otomatik olarak oluşturur. Gerekirse, bu ayarları değiştirebilirsiniz. Bu ayarlar değiştirilebilir  **\<proje adı > özellik sayfaları** iletişim kutusu (**Projem** Visual Basic'te).  
   
@@ -63,7 +63,7 @@ Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür 
   
    3. Odak ve doğrulama olayları.  
   
-      Daha fazla bilgi için [Windows Forms'ta olay işleyicileri oluşturma](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Daha fazla bilgi için [Windows Forms'ta olay işleyicileri oluşturma](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
 3. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat**.  
   
@@ -76,4 +76,4 @@ Windows Forms proje şablonu, bir Windows Forms uygulaması oluşturur. Bu tür 
  [Hata ayıklama yapılandırması proje ayarları C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows Forms](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)

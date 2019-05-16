@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680499"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Nasıl yapılır: Boş değer atanabilir bir tür (Sınıf Tasarımcısı) oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Bur
   
   Sınıf Tasarımcısı, temelindeki türe görüntüler yalnızca boş değer atanabilir bir tür görüntüler.  
   
-  Visual C# içinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz. [boş değer atanabilir türler](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Visual C# içinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz. [boş değer atanabilir türler](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ Belirli değer türleri her zaman sahip (tanımlı bir değer veya gerekir). Bur
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Nullable%601>   
- [Boş değer atanabilir türler](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [Boş değer atanabilir türleri kullanma](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Nasıl yapılır: Boş değer atanabilir bir tür belirleme](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [Boş Değer Atanabilen Değer Türleri](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [Boş değer atanabilir türler](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [Boş değer atanabilir türleri kullanma](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [Nasıl yapılır: Boş değer atanabilir bir tür belirleme](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Boş Değer Atanabilen Değer Türleri](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

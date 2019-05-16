@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675144"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>.NET Framework Tabanlı Uluslararası Uygulamalara Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dünya çapında kullanılmaya hazır uygulama oluşturmak için iki bölümden oluşur: genelleştirme, farklı kültürleri için uyarlayabilirsiniz uygulamalar tasarlama işlemi ve yerelleştirme, kaynakların belirli bir kültür için çevirme işlemi. Uluslararası bir hedef kitle için uygulama tasarlama hakkında genel bilgi için bkz. [dünya çapında kullanılmaya hazır uygulama geliştirmek için en iyi](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dünya çapında kullanılmaya hazır uygulama oluşturmak için iki bölümden oluşur: genelleştirme, farklı kültürleri için uyarlayabilirsiniz uygulamalar tasarlama işlemi ve yerelleştirme, kaynakların belirli bir kültür için çevirme işlemi. Uluslararası bir hedef kitle için uygulama tasarlama hakkında genel bilgi için bkz. [dünya çapında kullanılmaya hazır uygulama geliştirmek için en iyi](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Yerelleştirme modeli, hem uygulama kodunda hem de geri dönüş kaynakları içeren bir ana derlemenin oluşur; dizeler, görüntüler ve diğer nesneler için hangi uygulama ilk olarak geliştirilen dili. Yerelleştirilmiş her uygulama, uydu derlemeleri veya yalnızca yerelleştirilmiş kaynakları içeren derlemeler olacaktır. Her zaman ana derleme yerelleştirilmiş uydu derlemede bir kaynak bulunamıyorsa, geri dönüş kaynakları içerdiğinden <xref:System.Resources.ResourceManager> sonunda ana kaynağa dönülüyor, hiyerarşik bir şekilde yüklemeyi deneyecek. Kaynak geri dönüş sistemi daha ayrıntılı olarak açıklanan [kaynakların hiyerarşik organizasyonu yerelleştirme için](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

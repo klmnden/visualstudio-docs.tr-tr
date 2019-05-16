@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675278"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
   [Uzak makinede Microsoft Store uygulamaları çalıştırma](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Uygulama performansını analiz edin](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Uygulama performansını analiz edin](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [JavaScript işlev zamanlaması](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript işlev zamanlaması](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Uzak cihaz üzerinde JavaScript işlev zamanlaması](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Uzak cihaz üzerinde JavaScript işlev zamanlaması](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [JavaScript işlev zamanlaması verilerini çözümleme](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [JavaScript işlev zamanlaması verilerini çözümleme](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profili Visual C++, Visual C# ve Visual Basic kodu yerel makinede Windows Store uygulamalarında](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profili Visual C++, Visual C# ve Visual Basic kodu yerel makinede Windows Store uygulamalarında](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Uzak bir cihazdaki Windows Store uygulamalarında profil Visual C++, Visual C# ve Visual Basic kodu](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Uzak bir cihazdaki Windows Store uygulamalarında profil Visual C++, Visual C# ve Visual Basic kodu](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Windows Store uygulamalarında Visual C++, Visual C# ve Visual Basic kodu için performans verilerini çözümleme](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Windows Store uygulamalarında Visual C++, Visual C# ve Visual Basic kodu için performans verilerini çözümleme](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Bu konudaki](#BKMK_In_this_topic)  
   
@@ -136,7 +136,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
    **Uzak makinede ipucu verileri toplama**  
   
-   Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya _VSInstallDir %_**tools\performance Tools\Setups**klasöründe bir Visual Studio uzak bilgisayara makine ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
+   Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya _VSInstallDir %_**tools\performance Tools\Setups**klasöründe bir Visual Studio uzak bilgisayara makine ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
   
    Kullanabileceğiniz [VSPerfCmd](../profiling/vsperfcmd.md) veya [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) profil oluşturma verileri toplamak için.  
   

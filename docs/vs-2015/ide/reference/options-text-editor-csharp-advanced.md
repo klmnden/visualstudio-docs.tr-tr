@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441371"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674247"
 ---
 # <a name="options-text-editor-c-advanced"></a>Seçenekler, Metin Düzenleyici, C#, Gelişmiş
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441371"
 Düzenleyici biçimlendirme, kodu yeniden düzenlemeye ve XML belgeleri yorumları ayarlarını Visual C# değiştirmek için bu iletişim kutusunu kullanın. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünde genişletin **metin düzenleyici** klasörünü genişletin **C#** ve 'yetıklayın **Gelişmiş**.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Anahat Oluşturma  
  Dosyalar açıldığında anahat moduna gir  
@@ -68,7 +68,7 @@ Düzenleyici biçimlendirme, kodu yeniden düzenlemeye ve XML belgeleri yorumlar
   
 ## <a name="xml-documentation-comments"></a>XML Belgeleri Yorumları  
  / / / İçin XML belge açıklamaları oluşturma  
- Bu onay kutusu seçildiğinde, ekler \<Özet > başlangıç ve bitiş etiketleri otomatik olarak XML belge açıklamaları için / / / açıklama giriş yazdıktan sonra. XML belgeleri hakkında daha fazla bilgi için bkz. [XML belgeleri yorumları](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Bu onay kutusu seçildiğinde, ekler \<Özet > başlangıç ve bitiş etiketleri otomatik olarak XML belge açıklamaları için / / / açıklama giriş yazdıktan sonra. XML belgeleri hakkında daha fazla bilgi için bkz. [XML belgeleri yorumları](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Arabirimi Uygulama  
  #Region üretilen kodla çevreleyen  
@@ -79,6 +79,6 @@ Düzenleyici biçimlendirme, kodu yeniden düzenlemeye ve XML belgeleri yorumlar
  Bu onay kutusu seçildiğinde, `System` kullanma yönergesi görünmüyorsa önce diğer yönergeleri kullanarak. Daha fazla bilgi için [kullanımları sıralama](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belge açıklamaları](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [XML belge açıklamaları](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Dile özgü Düzenleyici seçeneklerini ayarlama](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

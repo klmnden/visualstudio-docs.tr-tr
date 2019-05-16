@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437789"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684827"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437789"
 Geçersiz bir Visual Studio uzaktan hata ayıklama İzleyicisi ad girdiğinizde bu hata iletisi görüntülenir. **iliştirme** iletişim kutusu. Uzaktan hata ayıklama İzleyicisi adı genellikle, uzaktan hata ayıklama için bağlanmaya çalıştığınız makine ile aynıdır. Bu ileti, uzak makine ağ üzerinde mevcut değil, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunlarının veya güvenlik duvarı varlığını nedeniyle erişilemez durumda nedeniyle oluşabilir.  
   
 > [!IMPORTANT]
-> Bir ürün hatası nedeniyle bu iletiyi almış olduğunu düşünüyorsanız, Visual Studio için lütfen bu sorunu bildirin [gülümseme Gönder](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.  
+> Bir ürün hatası nedeniyle bu iletiyi almış olduğunu düşünüyorsanız, Visual Studio için lütfen bu sorunu bildirin [gülümseme Gönder](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Yerel olarak debugging sırada bu iletiyi aldım.  
  Yerel olarak hata ayıklarken bu iletiyi alıyorsanız, virüsten koruma yazılımınızı veya bir üçüncü taraf güvenlik duvarı için blame olabilir. Visual Studio 32 bitlik bir uygulama olduğundan, 64 bit uygulamalarda hata ayıklama için uzaktan hata ayıklayıcı 64-bit sürümünü kullanır. İki işlem, yerel bilgisayarın yerel ağda kullanarak iletişim kurar. Bilgisayar hiçbir ağ trafiği bırakır, ancak üçüncü taraf güvenlik yazılımları iletişimi engelleyebilir mümkündür.  

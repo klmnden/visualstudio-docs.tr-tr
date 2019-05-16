@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694922"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısında Simge (.pdb) ve Kaynak Dosyaları Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
    Seçildiğinde, DLL dışa aktarma tablolarını yükler. DLL dışa aktarma tablolarının sembole yönelik bilgileri, Windows iletileri, Windows yordamları (WindowProcs), COM nesneleri veya sıralama ile ya da sembolleri olmayan herhangi bir DLL ile çalışıyorsanız yararlı olabilir. DLL dışa aktarma bilgilerini okuma bazı ek okumalar içerir. Bu nedenle, bu özellik varsayılan olarak kapalıdır.
 
-   Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem DLL için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. DLL dışarı aktarma tablolarındaki işlev adları, hata ayıklayıcının başka bir yerinde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem DLL için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. DLL dışarı aktarma tablolarındaki işlev adları, hata ayıklayıcının başka bir yerinde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Yerel makinenizde olmayan sembol dosyalarını bulmak için Sembol sunucularını kullanın
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklama sembol dosyalarını symsrv protokolünü uygulayan sembol sunucularından indirebilirsiniz. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) ve [Windows için hata ayıklama araçları](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) , sembol Hizmetleri uygulayan iki araçtır. VS kullanılacak sembol sunucularını belirtirsiniz **seçenekleri** iletişim kutusu.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hata ayıklama sembol dosyalarını symsrv protokolünü uygulayan sembol sunucularından indirebilirsiniz. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) ve [Windows için hata ayıklama araçları](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) , sembol Hizmetleri uygulayan iki araçtır. VS kullanılacak sembol sunucularını belirtirsiniz **seçenekleri** iletişim kutusu.
 
  Kullanabileceğiniz sembol sunucuları şunlardır:
 
@@ -165,9 +165,9 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
  **C++ seçenekleri**
 
- Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın Hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur [/zı veya /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (C/C++ için).
+ Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın Hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur [/zı veya /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (C/C++ için).
 
- İçinde [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) seçeneği derleyici tarafından oluşturulan .pdb dosyasını adlandırır. Bir proje oluşturduğunuzda, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sihirbazları kullanarak **/Fd** seçeneği adlı bir .pdb dosyası oluşturmak için ayarlanır *proje*.pdb.
+ İçinde [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) seçeneği derleyici tarafından oluşturulan .pdb dosyasını adlandırır. Bir proje oluşturduğunuzda, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sihirbazları kullanarak **/Fd** seçeneği adlı bir .pdb dosyası oluşturmak için ayarlanır *proje*.pdb.
 
  C/C++ uygulamanızı bir derleme görevleri dosyası derleme ve belirtirseniz **/zi** veya **/zi** olmadan **/Fd**, iki .pdb dosyası ile biter:
 
@@ -183,7 +183,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
   **.NET framework seçenekleri**
 
-  Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur **/debug**. İle uygulama oluşturabilirsiniz **/Debug: Full** veya **/debug:pdbonly**. İle oluşturma **/Debug: Full** hata ayıklaması yapılabilir kod oluşturur. İle oluşturma **/debug:pdbonly** .pdb dosyaları oluşturur ancak oluşturmaz `DebuggableAttribute` JIT derleyicisine hata ayıklama bilgilerinin kullanılabilir olduğunu bildirir. Kullanım **/debug:pdbonly** hata ayıklanabilir olmasını istemediğiniz yayın yapısı için .pdb dosyaları oluşturmak istiyorsanız. Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) veya [/Debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Program veritabanı (.pdb) dosyası, hata ayıklamayı ve programınızın hata ayıklama yapılandırmasının artımlı bağlamasına olanak tanıyan proje durum bilgilerini tutar. İle oluşturduğunuzda .pdb dosyası oluşur **/debug**. İle uygulama oluşturabilirsiniz **/Debug: Full** veya **/debug:pdbonly**. İle oluşturma **/Debug: Full** hata ayıklaması yapılabilir kod oluşturur. İle oluşturma **/debug:pdbonly** .pdb dosyaları oluşturur ancak oluşturmaz `DebuggableAttribute` JIT derleyicisine hata ayıklama bilgilerinin kullanılabilir olduğunu bildirir. Kullanım **/debug:pdbonly** hata ayıklanabilir olmasını istemediğiniz yayın yapısı için .pdb dosyaları oluşturmak istiyorsanız. Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) veya [/Debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hata ayıklayıcısı yolu EXE veya DLL dosyasında .pdb dosyasının project.pdb dosyasını bulmak için kullanır. Hata ayıklayıcısı .pdb dosyasını bu yerde bulunamıyor veya yol geçersizse, hata ayıklayıcı EXE içeren yolu arar ve sembol yollarını sonra belirtilen **seçenekleri** iletişim kutusu. Bu yol genellikle **hata ayıklama** klasöründe **sembolleri** düğümü. Hata ayıklayıcı, hata ayıklaması yapılan yürütülebilir dosyayla eşleşmeyen bir .pdb dosyası yüklemez. Hata ayıklayıcı bir .pdb dosyası bulamazsa, bir **sembol Bul** iletişim kutusu görüntülenir, burada sembol arayabilir veya arama yoluna ilave konum ekleyebilirsiniz.
 

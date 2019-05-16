@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703249"
 ---
 # <a name="msbuild-concepts"></a>MSBuild Kavramları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663316"
 |[Görevler](../msbuild/msbuild-tasks.md)|Tarafından kullanılan yürütülebilir kod biriminin nasıl oluşturulacağını gösterir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] CAN atomik yapı işlemleri gerçekleştirmek için.|  
 |[Özellikleri ve Öğeleri Karşılaştırma](../msbuild/comparing-properties-and-items.md)|MSBuild özellikleri ve öğeleri karşılaştırır. İkisi de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.|  
 |[MSBuild Özel Karakterleri](../msbuild/msbuild-special-characters.md)|Açıklayan nasıl çıkılacağını bazı karakter [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] belirli bağlamlarda özel kullanım için ayırır.|  
-|[İzlenecek yol: Sıfırdan MSBuild proje dosyası oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
-|[İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
+|[İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Basit bir proje dosyasının aşamalı olarak, yalnızca bir metin düzenleyicisi kullanarak oluşturmanız gösterilmektedir.|  
+|[İzlenecek yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)|MSBuild'in yapı bloklarını tanıtır ve MSBuild projelerinin Visual Studio tümleşik geliştirme ortamı (IDE) kapatmadan hata ayıklama yazma ve düzenleme işlemi gösterilmektedir.|  
 |[MSBuild Başvurusu](../msbuild/msbuild-reference.md)|Başvuru bilgilerini içeren belgelere bağlantılar.|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Bir proje dosyası için XML Şeması genel bir bakış sunar ve yazılım derleme işlemlerini nasıl denetlediğini gösterir.|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Bir proje dosyası için XML Şeması genel bir bakış sunar ve yazılım derleme işlemlerini nasıl denetlediğini gösterir.|
