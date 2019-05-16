@@ -74,7 +74,7 @@ Bir kesme noktasında durduruldu sonra kodunuz içinde adım adım veya yeniden 
 | **Dışına adımla** | **Shift**+**F11** | Kod için çağırma deyimine adımları sonra geçerli işlevin sonuna kadar çalışır.  Bu komut, geçerli işlevin geri kalanında hata ayıklamak ihtiyacınız kalmadığında yararlıdır. |
 | **İmlece kadar Çalıştır** | **CTRL**+**F10** | Kod Düzenleyicisi'nde şapka konumuna çalıştırır. Bu komut bir parçası olduğundan, hata ayıklamak için ihtiyacınız olmayan kod üzerinde kolayca atlamanızı sağlar. |
 | **Sonraki deyimi belirle** | **CTRL**+**Shift**+**F10** | Giriş işareti konumuna kod noktası çalıştırma geçerli değiştirir. Bu komut, gibi bildiğiniz kodu bozuk veya istenmeyen bir yan etkisi üretir, çalıştırılan kodun bir parçasını atlamak sağlar. |
-| **Sonraki bildirimi Göster** | **Alt**+**Num****&#42;**| Sonraki deyimi çalıştırmak için döndürür. Bu komut, kodunuzda arıyorsunuz geçici bir çözüm ve hata ayıklayıcı durduğu hatırlamıyorum yararlıdır. |
+| **Sonraki bildirimi Göster** | **Alt**+**Num** **&#42;**| Sonraki deyimi çalıştırmak için döndürür. Bu komut, kodunuzda arıyorsunuz geçici bir çözüm ve hata ayıklayıcı durduğu hatırlamıyorum yararlıdır. |
 
 ### <a name="inspect-and-modify-values"></a>Denetleme ve değerleri değiştirme
 
