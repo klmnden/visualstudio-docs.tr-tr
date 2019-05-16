@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704833"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63383942"
   
 - Team Foundation Server 2013 veya üzeri, Visual Studio Team Services veya Git  
   
-- [Lync 2010 veya üzeri ya da Skype Kurumsal'a](http://technet.microsoft.com/lync), takımınızın kod düzenleyicisinden başvurma  
+- [Lync 2010 veya üzeri ya da Skype Kurumsal'a](https://technet.microsoft.com/lync), takımınızın kod düzenleyicisinden başvurma  
   
   Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan Visual C# .NET veya Visual Basic .NET kodu için sınıf ve yöntem düzeylerinde CodeLens ayrıntıları alın (*kod öğe düzeyinde* göstergeleri). Git deponuzu TfGit içinde barındırılıyorsa, aynı zamanda TFS iş öğelerinin bağlantılarını alın.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "63383942"
   
  ![CodeLens: Get değişiklik geçmişi için kodunuzu tfvc'de](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanırsa, bu çalıştırarak değiştirebileceğiniz [TFSConfig komut](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod** bayrağı.  
+ Varsayılan süre son 12 ay değeridir. Team Foundation Server'da kodunuzu depolanırsa, bu çalıştırarak değiştirebileceğiniz [TFSConfig komut](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) ile [Codeındex komutu](../ide/codeindex-command.md) ve **/indexHistoryPeriod** bayrağı.  
   
  Bir yıl önce bu da dahil olmak üzere tüm değişikliklerin, ayrıntılı bir geçmişini görmek için seçin **tüm dosya değişikliklerini göster**.  
   
@@ -124,7 +124,7 @@ ms.locfileid: "63383942"
 #### <a name="find-incoming-changes-from-other-branches"></a>Diğer dallardan değişiklikleri bulun  
  ![CodeLens: Kod değişikliklerini diğer dalları Bul](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
- Bu hata düzeltmesi olarak Geliştirme dalında burada biçiminde yazarsınız:  
+ .. Bu hata düzeltmesi olarak Geliştirme dalında burada biçiminde yazarsınız:  
   
  ![CodeLens: Değişikliği iade başka bir dalla](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
@@ -222,7 +222,7 @@ ms.locfileid: "63383942"
   
 - CodeLens açık olduğundan emin olun. Git **Araçları**, **seçenekleri**, **metin düzenleyici**, **tüm diller**, **CodeLens**.  
   
-- Kodunuzu TFS içinde depolanır, kod dizini oluşturma kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Kodunuzu TFS içinde depolanır, kod dizini oluşturma kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
 - TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. [Takım üyesi izinlerine sahip olduğunuzdan emin olun.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ ms.locfileid: "63383942"
  **Y:** **Yerel sürüm** ok yerel sürümünüzde bu dosyanın en son değişiklik kümesini işaret eder. Üstüne veya altına sunucunun daha yeni değişiklik kümeleri olduğunda, göründükleri **yerel sürüm** ok, değişiklik kümelerini sıralarken kullanılan düzene bağlı olarak.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>S: CodeLens kod geçmişini ve ilişkili öğeleri göstermek için nasıl işlediği yönetebilir miyim?  
- **Y:** Evet, kodunuzu TFS içinde ise, kullan [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **Y:** Evet, kodunuzu TFS içinde ise, kullan [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
