@@ -170,7 +170,7 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  ![Birçok çokluğunu gösteren kullanım](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu Ayarla ** 1... \\***.  
+- Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu Ayarla **1..\\***.  
   
    Çizimde, bir veya daha fazla restoranlar aynı yemek siparişi yerine getirmesini yer alabilir.  
   
