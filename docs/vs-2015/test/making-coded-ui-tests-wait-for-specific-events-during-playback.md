@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686310"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan Yürütme Sırasında Belirli Olaylar için Kodlanmış UI Testlerini Bekletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için iler
  Visual Studio Enterprise  
   
 > [!TIP]
-> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **UITestControl.WaitForControlXXX() Methods**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)   
  [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

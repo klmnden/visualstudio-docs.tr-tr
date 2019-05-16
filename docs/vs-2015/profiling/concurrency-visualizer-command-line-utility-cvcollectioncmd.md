@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692751"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık Görselleştiricisi Komut Satırı Yardımcı Programı (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programının (CVC
   
 |Seçenek|Açıklama|Parametreler|Döndürülen değerler|  
 |------------|-----------------|----------------|-------------------|  
-|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) oturumları zaten etkin.|  
+|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) oturumları zaten etkin.|  
 |Başlat|Belirtilen işlem eşzamanlılık görselleştiricisi altında çalışır.|Yürütülebilir dosyanın yolu.|çalıştırma başarılı olursa 0.<br /><br /> Hedef uygulama başlatılamadı çünkü çalıştırma başarısız olmuşsa 1.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan çalıştırma başarısız olmuşsa 13.|  
 |İliştir|Sistem genelinde izleme toplama başlar; belirtilmişse, aksi takdirde, bir işleme iliştirir.|Yok.|Ek başarılı olursa 0.<br /><br /> 1 ek belirtilen işlemi geçersiz veya belirsiz olduğundan başarısız oldu.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan başarısız oldu, 13.|  
 |Ayır|Koleksiyonu durdurur.|Yok.|ayrılmayı başarılı olursa 0.<br /><br /> 1 ayrılmayı koleksiyonu şu anda devam eden olmadığından başarısız oldu.<br /><br /> 2 toplama durdurulamadı ayrılmayı başarısız oldu.|  

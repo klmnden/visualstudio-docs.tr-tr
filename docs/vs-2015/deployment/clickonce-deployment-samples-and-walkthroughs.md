@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dec62254e64c137f133ddb1dbad849e25cb81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675432"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce Dağıtım Örnekleri ve Yönergeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Windows
 |[API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Yalnızca ilk uygulama tarafından kullanıldıklarında uygulama derlemeleri indirileceğini açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio izlenecek yollar](http://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio izlenecek yollar](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio Örnekleri](../ide/visual-studio-samples.md)

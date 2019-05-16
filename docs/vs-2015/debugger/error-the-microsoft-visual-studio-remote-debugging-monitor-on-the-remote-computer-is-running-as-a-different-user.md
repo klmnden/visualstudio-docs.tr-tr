@@ -24,12 +24,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cba3de8aa07a021d61e1ebb2a2c97f568eaf9ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dffaafbca80828a7501f5f7d24e525225284f5a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697306"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Hata: Uzak bilgisayardaki Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi farklı kullanıcı olarak çalışıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Uzaktan hata ayıklama yapmaya çalışırken, aşağıdaki hata iletisini alabi
 > [!CAUTION]
 > Diğer kullanıcıların bağlanma izni verme yanlışlıkla yanlış uzaktan hata ayıklama oturumu için bağlanma olanağı sağlar. Hata ayıklama **kimlik doğrulaması yok** modu hiçbir zaman güvendedir ve dikkatli kullanılmalıdır.  
   
- Daha fazla bilgi için [uzaktan hata ayıklama İzleyicisi'ni başlatmak](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
+ Daha fazla bilgi için [uzaktan hata ayıklama İzleyicisi'ni başlatmak](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan hata ayıklama ve sorun giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)   

@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 28476c454dc78f30e33c0b37e8319bfe5a65df2d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699382"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye ba�
  Öğeleri oluşturmak için verilere bağlı denetimler seçme hakkında daha fazla bilgi için **veri kaynakları** penceresinde görmek [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünde **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünde **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Bir veri türü için bağlanabilir denetim listesini özelleştirme  
  Ekleme veya öğe mevcut denetimlerin listesinin denetimleri kaldırma için **veri kaynakları** aşağıdaki adımları uygulayın, bir özel veri türüne sahip bir pencere.  

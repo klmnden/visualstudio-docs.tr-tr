@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705758"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Gelişmiş Ayarlar İletişim Kutusu (Eşzamanlılık Görselleştiricisi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Kullanarak **Gelişmiş ayarlar** iletişim kutusu eşzamanlılık görselleşti
  Yönetilen bir işlem yalnızca profili yerel işlemler için normal gereksiz olduğundan, varsayılan olarak, CLR olayları toplanır.  Bazı durumlarda (örneğin, yerel bir işlem, CLR barındırma) için yerel işlem CLR olayları toplamak gerekebilir.  Bu durumda, seçin **yerel işlemler için TOPLA** onay kutusu.  
   
 ### <a name="disable-rundown-events"></a>Azaltma olaylarını devre dışı bırak  
- CLR olayları iki sağlayıcılarını oluşturur: çalışma zamanı ve özeti.  İsterseniz CLR çalışma zamanı olayları toplamak için ancak azaltma olaylarını toplama engellemek istiyorsanız, seçin **devre dışı Özet olayları** onay kutusu.  Bu toplama işlemi tarafından oluşturulan izleme dosyasının boyutunu azaltır, ancak bazı yığınları çözümlenmiyor. Daha fazla bilgi için [CLR ETW sağlayıcılar](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ CLR olayları iki sağlayıcılarını oluşturur: çalışma zamanı ve özeti.  İsterseniz CLR çalışma zamanı olayları toplamak için ancak azaltma olaylarını toplama engellemek istiyorsanız, seçin **devre dışı Özet olayları** onay kutusu.  Bu toplama işlemi tarafından oluşturulan izleme dosyasının boyutunu azaltır, ancak bazı yığınları çözümlenmiyor. Daha fazla bilgi için [CLR ETW sağlayıcılar](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Örnek olaylar  
  Örnek olaylar, iş parçacığı yürütme ile ilişkili olan çağrı yığınlarını Topla için kullanabilirsiniz. Bu olaylar, yaklaşık bir kez geçerli işlemde çalışan iş parçacıkları için milisaniye başına toplanır. Örnek olaylar koleksiyonunu devre dışı bırakırsanız, toplanan izlemenin boyutunu azalır, ancak iş parçacığı yürütme ile ilişkili olan herhangi bir çağrı yığınlarını görüntüleyemezsiniz.  

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 165ad365ea094a9f0b5771490e14e889160f3f96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d973d7ff5464b76228e917c83b3e62116e115718
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693799"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Static tutucu türler sealed olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54770561"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı tür yalnızca statik üyeleri içerir ve ile bildirilmedi [korumalı](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) ([NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) değiştiricisi.
+ Ortak veya korumalı tür yalnızca statik üyeleri içerir ve ile bildirilmedi [korumalı](https://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) ([NotInheritable](https://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) değiştiricisi.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural türü türetilmiş türde geçersiz kılınabilir herhangi bir işlevsellik sağlamaz çünkü yalnızca statik üyeleri içeren bir tür devralınacak şekilde tasarlanmamıştır olduğunu varsayar. Devralınan düşünülmemiştir bir tür ile işaretlenmelidir `sealed` değiştiricisi, bir taban türü olarak kullanılmasını önlemek için.

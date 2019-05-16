@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62585114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704444"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio'da C++ Kullanmaya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
      Hata iletisi ayrıca görünür **hata listesi** penceresi. Pencere tarafından menü çubuğundan seçme görüntüleyebileceğiniz **görünümü**, **hata listesi**.
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) dahil \<iostream\> üst bilgi dosyası.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) dahil \<iostream\> üst bilgi dosyası.
 
 2. İostream üstbilgi eklemek için sonra aşağıdaki kodu girin. `#include "stdafx.h"`:
 

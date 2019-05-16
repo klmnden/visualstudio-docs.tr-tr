@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d82d2c283ac0266880d92139cb9003b3c401b81
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686305"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri Temelli Birim Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Bir parametre ile bir oluşturucu, çözüm için app.config dosyasında depolanan bağlantı bilgilerini kullanır. *DataSourceSettingsName* bağlantı bilgilerini belirten yapılandırma dosyasında Xml öğesi adı.  
   
- App.config dosyasını kullanarak birim testinin kendisi için değişiklik yapmadan veri kaynağının konumunu değiştirmenize izin verir. Bir app.config dosyası oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [izlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ App.config dosyasını kullanarak birim testinin kendisi için değişiklik yapmadan veri kaynağının konumunu değiştirmenize izin verir. Bir app.config dosyası oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [izlenecek yol: Veri Kaynağı Tanımlamak İçin Yapılandırma Dosyası Kullanma](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -187,7 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Nasıl yapılır: Birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Nasıl yapılır: Birim testi oluşturma ve çalıştırma](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
  [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)   
  [Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

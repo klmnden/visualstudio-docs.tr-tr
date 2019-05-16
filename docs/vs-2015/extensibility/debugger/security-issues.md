@@ -11,12 +11,12 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 874231333c87020c126eac4c066d53512ba0bbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fb6209882a7a71a68728299064edcc13afabff35
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704417"
 ---
 # <a name="security-issues"></a>Güvenlik Sorunları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Visual Studio kullanarak bir programda hata ayıklamak için gerekli tek izinler
   
  Visual Studio çalışırken, işlem hata ayıklama Yöneticisi (PDM) yerel makine üzerinde hata ayıklama işlemlerini izler. Uzaktan msvsmon.exe adlı bir program, uzaktan hata ayıklama işlemek ve PDM kullanılabilir hale getirmek için geliştirici tarafından başlatılır. (Unutmayın. msvsmon.exe'in hizmet değildir ve bu makinede uzaktan hata ayıklamayı etkinleştirmek için el ile başlatılması gerekir.) Visual Studio'nun (veya msvsmon.exe) çalışmadığında, hiçbir işlem hata ayıklama için izlenir.  
   
- Başka bir deyişle, bir geliştirici isterse, hiçbir özel izinlerle başlatılan programlar ayıklayabilirsiniz. Geliştirici, başka bir kişi aynı güvenlik grubunun bir üyesi ise başkası tarafından başlatılan işlemler bile hata ayıklaması yapabilirsiniz. Ve yalnızca gerekli kopyalamak için dosyaları uzak makine'ı ve msvsmon.exe Başlat uzaktan hata ayıklamayı etkinleştirmek için gerekli olur (bkz [ayarlanmış yukarı uzak Araçlar cihazda](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) daha fazla ayrıntı için).  
+ Başka bir deyişle, bir geliştirici isterse, hiçbir özel izinlerle başlatılan programlar ayıklayabilirsiniz. Geliştirici, başka bir kişi aynı güvenlik grubunun bir üyesi ise başkası tarafından başlatılan işlemler bile hata ayıklaması yapabilirsiniz. Ve yalnızca gerekli kopyalamak için dosyaları uzak makine'ı ve msvsmon.exe Başlat uzaktan hata ayıklamayı etkinleştirmek için gerekli olur (bkz [ayarlanmış yukarı uzak Araçlar cihazda](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) daha fazla ayrıntı için).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama görevleri](../../extensibility/debugger/debugging-tasks.md)   
  [İşlem Hata Ayıklama Yöneticisi](../../extensibility/debugger/process-debug-manager.md)   
- [Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Cihazda uzak araçları ayarlama](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

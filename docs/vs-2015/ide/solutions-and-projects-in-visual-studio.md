@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679863"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio’da Çözümler ve Projeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Oluşturduğunuz sırada bir uygulama, uygulama, Web sitesi, Web uygulaması, be
  Özel proje ve öğe şablonlarını da oluşturabilirsiniz. Daha fazla bilgi için [oluşturma proje ve öğe şablonları](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Yeni proje oluşturma
- Önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları temel kümesinden oluşan bir önceden tanımlanmış proje şablonu ile başlatmak için yeni bir proje oluşturmak için en kolay yolu olan ve size ayarları başlatılan uygulama veya Web sitesinde belirli bir tür oluşturarak bir belirli programlama dili. Bu şablonları bölümüne bakın, **yeni proje iletişim kutusu** seçtiğinizde **dosya &#124; yeni &#124; proje** veya **dosya &#124; yeni &#124; Web sitesi** gelen ana menü ve ardından gidin. Daha fazla bilgi için [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md) ve [NIB oluşturma proje şablonları](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Önceden oluşturulan kod dosyaları, yapılandırma dosyaları, varlıkları temel kümesinden oluşan bir önceden tanımlanmış proje şablonu ile başlatmak için yeni bir proje oluşturmak için en kolay yolu olan ve size ayarları başlatılan uygulama veya Web sitesinde belirli bir tür oluşturarak bir belirli programlama dili. Bu şablonları bölümüne bakın, **yeni proje iletişim kutusu** seçtiğinizde **dosya &#124; yeni &#124; proje** veya **dosya &#124; yeni &#124; Web sitesi** gelen ana menü ve ardından gidin. Daha fazla bilgi için [projeler ve çözümler oluşturma](../ide/creating-solutions-and-projects.md) ve [NIB oluşturma proje şablonları](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Çözüm Gezgini'nde projeleri yönetme
  Yeni bir proje oluşturduğunuzda, kullandığınız **Çözüm Gezgini** projeleri ve çözümleri ve onların ilişkilendirilmiş öğelerini görüntülemek ve yönetmek için. Aşağıdaki çizimde, iki proje içeren bir C# çözümü ile Sunucu Gezgini gösterir.

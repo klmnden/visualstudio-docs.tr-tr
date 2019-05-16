@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfb85be224eadb25b2ec9b87ab480a15f235463f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8ddec2bdec09da1f1175b59c94db31841a1453f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697332"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Hata: Uzak bilgisayar DCOM iletişimini başlatamadı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Uzak makinede yerel makine ile iletişim kurmak çalışırken bir DCOM hatası 
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
-1. Yerel makinede Windows Güvenlik duvarı varsa, bkz. [ayarlanmış yukarı uzak Araçlar cihazda](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) yerel hata ayıklama için güvenlik duvarını yapılandırma hakkında yönergeler için.  
+1. Yerel makinede Windows Güvenlik duvarı varsa, bkz. [ayarlanmış yukarı uzak Araçlar cihazda](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) yerel hata ayıklama için güvenlik duvarını yapılandırma hakkında yönergeler için.  
   
 2. Uzak sunucudan yerel makine üzerindeki bir dosya paylaşımına açmaya çalışırken tarafından Windows kimlik doğrulamasını Sına.  
   
 3. Windows kimlik doğrulama geri yüklemek için her iki makine yeniden deneyin. Yerel ve Uzak makinelerde Kerberos hataları için olay günlüklerini inceleyin ve bilinen sorunlar için etki alanı yöneticileri ile iletişime geçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Cihazda uzak araçları ayarlama](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

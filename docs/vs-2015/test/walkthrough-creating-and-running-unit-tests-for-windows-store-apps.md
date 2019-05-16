@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695117"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>İzlenecek yol: Oluşturma ve Windows Store uygulamaları için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
     > [!NOTE]
     > Seçtiğiniz yetenekler yalnızca için gerekli olan yetenekleri içermelidir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] düzgün çalışması için birim testi. Özellikleri hiçbir zaman olmayan yetenekleri içermesi gerekmez parçası [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulamasının genellikle için belirtilen yeteneklerin bir alt kümesi olmalıdır ve test [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]test altındaki uygulama.  
   
-     Bildirim Tasarımcısı hakkında daha fazla bilgi için bkz: [bildirim Tasarımcısını kullanarak bir Windows 8.1 uygulama paketini Yapılandır](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Bildirim Tasarımcısı hakkında daha fazla bilgi için bkz: [bildirim Tasarımcısını kullanarak bir Windows 8.1 uygulama paketini Yapılandır](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio birim testi yönetilen için destek içerir [!INCLUDE[win8_appname
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio ile Store uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md)   
- [Yapı ve test Team Foundation Yapısı kullanarak Windows Store uygulaması](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Yapı ve test Team Foundation Yapısı kullanarak Windows Store uygulaması](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

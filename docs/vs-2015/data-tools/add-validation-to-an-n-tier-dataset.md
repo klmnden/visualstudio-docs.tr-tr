@@ -18,19 +18,19 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773af4469f8d72acb6768e62cd2091c396d36b45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b9b4f77045732bc61fa8aa8e4496eebf86f890a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683216"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir n katmanlı çözüme bölünen bir veri kümesine doğrulama ekleme temelde tek dosyalı veri kümesine (tek bir projede bir dataset) doğrulama ekleme ile aynı olur. Veri üzerine doğrulama yapmak için önerilen konum sırasındadır <xref:System.Data.DataTable.ColumnChanging> ve/veya <xref:System.Data.DataTable.RowChanging> veri tablosundaki olayları.  
   
-Veri kümesi Tasarımcısı kullanıcı kodu sütun ve satır için ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. veri kümesindeki veri tablolarının olayları değiştirme. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+Veri kümesi Tasarımcısı kullanıcı kodu sütun ve satır için ekleyebileceğiniz kısmı sınıflar oluşturma işlevselliği sağlar. veri kümesindeki veri tablolarının olayları değiştirme. Bir n-katmanı çözümündeki bir veri kümesine kod ekleme hakkında daha fazla bilgi için bkz. [n katmanlı uygulamalarda veri kümelerine kod ekleme](../data-tools/add-code-to-datasets-in-n-tier-applications.md), ve [n katmanlı uygulamalarda Tableadapter'lara kod ekleyin](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Kısmi sınıflar hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir sınıfı kısmi sınıflara (Sınıf Tasarımcısı) bölme](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) veya [kısmi sınıflar ve yöntemler](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 > Veri kümelerini Tableadapters'dan ayırdığınızda ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Var olan veri kümesi kısmi sınıflarının veri kümesi projesine el ile taşınması gerekir.  
@@ -58,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Ayrı ayrı sütun değerlerine değişiklikler sırasında doğrulama eklemek için  
   
-1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.  
   
@@ -117,7 +117,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Tüm satırlara değişiklikler sırasında doğrulama eklemek için  
   
-1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Tasarımcı üzerinde veri tablosunun başlık çubuğunu çift tıklatın.  
   

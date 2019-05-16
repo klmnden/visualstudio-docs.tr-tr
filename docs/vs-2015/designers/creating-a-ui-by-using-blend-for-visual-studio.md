@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695932"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza yardımcı olan [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) uygulamalar. Visual Studio aynı temel XAML tasarım deneyimini sunar ve animasyon ve davranışlarla gibi gelişmiş görevler için görsel tasarımcılar ekler.
+Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza yardımcı olan [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) uygulamalar. Visual Studio aynı temel XAML tasarım deneyimini sunar ve animasyon ve davranışlarla gibi gelişmiş görevler için görsel tasarımcılar ekler.
 
  Visual Studio için Blend, Visual Studio'nun bir parçası dahil olduğundan, bunu indirmeniz gerekmez. Ancak sisteminizde yüklemek için Visual Studio yükleyicisi de seçmeniz gerekir.
 

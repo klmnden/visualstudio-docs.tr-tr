@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432440"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680781"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK Desteği
 Müşteriler, Visual Studio tümleşik geliştirme ortamı (IDE) genişletme ile ilgili sorularınız için çeşitli destek seçenekleri kullanılabilir.
@@ -45,7 +45,7 @@ Açık kaynak örnekleri VS SDK uzantıları github'da bulabilirsiniz [Visual St
 ## <a name="included-support"></a>Dahil edilen destek
 
 ### <a name="visual-studio-product-support"></a>Visual Studio ürün desteği
- Bazı desteği satın dahildir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ürünleri. Daha fazla bilgi için [Visual Studio desteği](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft'un hakkında soruları yanıtlamak için adanmış destek ekibinin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genişletilebilirlik.
+ Bazı desteği satın dahildir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ürünleri. Daha fazla bilgi için [Visual Studio desteği](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft'un hakkında soruları yanıtlamak için adanmış destek ekibinin [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genişletilebilirlik.
 
 ### <a name="msdn-subscription-support"></a>MSDN abonelik desteği
  MSDN aboneliği paketleri bazı desteği de içerebilir. Daha fazla bilgi için [MSDN abonesi Destek](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Destek istekleri hakkında daha fazla bilgi bulunabilir [destek istekleri ayrı 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Bizimle İletişime Geçin](../ide/talk-to-us.md)
+- [Bizimle İletişime Geçin](../ide/feedback-options.md)

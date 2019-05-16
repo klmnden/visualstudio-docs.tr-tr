@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 968a9a2dc87063baec075e69e10fed96ba1ff3d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439265"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680575"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Nasıl yapılır: Derleme Çıkış Dizinini Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ ms.locfileid: "63439265"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md)   
- [Genel özellik sayfası (Proje)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
+ [Genel özellik sayfası (Proje)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
  [Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)

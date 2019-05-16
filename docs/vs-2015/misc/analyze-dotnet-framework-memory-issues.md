@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688568"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework bellek sorunlarını çözümleme
 Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET Framework kodu içindeki bellek sızıntılarını ve verimsiz bellek kullanımını bulun. En düşük .NET Framework sürümü hedef kodun .NET Framework 4. 5 ' dir.  
@@ -47,7 +47,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Bir uygulamada bir bellek sorunu tanımlama  
- Bellek sorunlarının en çok görünen belirtisi uygulamanızın performansıdır, özellikle performans zamanla düşüyorsa. Uygulamanız çalışırken diğer uygulamaların performansının düşmesi de bir bellek sorunu olduğunu belirtebilir. Bir bellek sorunu olduğundan şüpheleniyorsanız, Görev Yöneticisi'gibi bir araç kullanın veya [Windows Performans İzleyicisi'ni](http://technet.microsoft.com/library/cc749249.aspx) daha fazla araştırmak için. Örneğin, toplam bellek büyüklüğünde, olası bellek sızıntılarının kaynağı olarak açıklayamadığınız bir artış olup olmadığına bakın:  
+ Bellek sorunlarının en çok görünen belirtisi uygulamanızın performansıdır, özellikle performans zamanla düşüyorsa. Uygulamanız çalışırken diğer uygulamaların performansının düşmesi de bir bellek sorunu olduğunu belirtebilir. Bir bellek sorunu olduğundan şüpheleniyorsanız, Görev Yöneticisi'gibi bir araç kullanın veya [Windows Performans İzleyicisi'ni](https://technet.microsoft.com/library/cc749249.aspx) daha fazla araştırmak için. Örneğin, toplam bellek büyüklüğünde, olası bellek sızıntılarının kaynağı olarak açıklayamadığınız bir artış olup olmadığına bakın:  
   
  ![Kaynak İzleyicisi tutarlı bellek büyüme](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
  ![Kaynak Yöneticisi'nde bellekte ani](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Bellek anlık görüntüleri toplama  
- Bellek analizi aracı bilgileri analiz eder *düküm dosyalarında* yığın bilgileri içerir. Visual Studio'da döküm dosyaları oluşturabilir veya gibi bir araç kullanabilirsiniz [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) gelen [Windows SysInternals](http://technet.microsoft.com/sysinternals). Bkz: [döküm nedir ve biri nasıl oluşturabilirim?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio Debugger Team blogunda.  
+ Bellek analizi aracı bilgileri analiz eder *düküm dosyalarında* yığın bilgileri içerir. Visual Studio'da döküm dosyaları oluşturabilir veya gibi bir araç kullanabilirsiniz [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) gelen [Windows SysInternals](https://technet.microsoft.com/sysinternals). Bkz: [döküm nedir ve biri nasıl oluşturabilirim?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio Debugger Team blogunda.  
   
 > [!NOTE]
 > Çoğu araç, döküm bilgisini, tam yığın belleği verilerini içerecek veya içermeyecek şekilde toplayabilir. Visual Studio bellek çözümleyicisi tam yığın bilgisi gerektirir.  

@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445902"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695099"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio, birden fazla test proje türü içerir. Yeni kodlanmış UI testi oluşturursanız, bir kodlanmış UI testi proje türü oluşturulur. Daha fazla bilgi için [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio, birden fazla test proje türü içerir. Yeni kodlanmış UI testi oluşturursanız, bir kodlanmış UI testi proje türü oluşturulur. Daha fazla bilgi için [Visual Studio'nun önceki sürümleri yükseltme testlerden](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Kodlanmış UI testleri içeren test projelerini gerekir yeniden test projesini açtığınızda [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] yan yana ile [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
 - **Yük testi:** Bir bilgisayarda yerel alan ağı (LAN) profili dışındaki bir ağ türü ile birlikte bir yük testi çalıştırdığınızda bu Windows 8 çalıştıran, ağ öykünücüsü sürücüsü işletim sistemi kilitlenmesine neden olur. Daha fazla ayrıntı için [KB makalesi 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio'nun önceki sürümlerinden testleri yükseltme](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md) [oluşturma bir Kodlanmış UI testi var olan bir eylem kaydından](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri ve eylem kayıtları](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio'nun önceki sürümlerinden testleri yükseltme](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md) [oluşturma bir Kodlanmış UI testi var olan bir eylem kaydından](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri ve eylem kayıtları](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688026"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>C için Visual Studio geliştirme ortamını kullanma\#
 
@@ -36,13 +36,13 @@ Visual Studio tümleşik geliştirme ortamı (IDE), ortak bir kullanıcı arabir
 |-----------|-----------------|
 |[İzlenecek yol: Basit bir Uygulama Oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Uygulama geliştirmeyle ilgili olarak Visual Studio'ya dahil olan özelliklerin ve araçların birçoğu için bir genel bakış sağlar.|
 |[Çözümler ve Projeler Oluşturma](../ide/creating-solutions-and-projects.md)|Tüm kaynak kod dosyalarını, simgeler gibi kaynak dosyaları, harici dosyalara başvuruları ve derleyici ayarları gibi yapılandırma verilerini içeren bir projenin nasıl oluşturulacağını açıklar.|
-|[Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Proje özelliklerini, ayarlarını ve kaynaklarını yönetmek için merkezi bir konum sağlayan Proje Tasarımcısı için genel bakış sağlar.|
+|[Proje Tasarımcısı giriş](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Proje özelliklerini, ayarlarını ve kaynaklarını yönetmek için merkezi bir konum sağlayan Proje Tasarımcısı için genel bakış sağlar.|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|Metni, kodu ve biçimlendirmeyi değiştirmenize ve işlemenize, denetimleri, diğer nesneleri ve ad uzaylarını eklemenize ve yapılandırmanıza, harici bileşenlere ve kaynaklara başvurular eklemenize yardımcı olan Visual Studio araçlarını açıklar.|
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|En son kullanılan üyeler için otomatik kod oluşturma ve IntelliSense gibi Visual C# ürününe özgü özellikleri açıklayan konuların bağlantılarını sağlar.|
 |[Visual C# Kod Parçacıkları](../ide/visual-csharp-code-snippets.md)|Uygulamanıza otomatik olarak ortak kod yapıları eklemek için Visual C#'de Kod Parçacıkları'nın kullanımı için genel bakış sağlar|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|Bul ve Değiştir penceresi, Yer İşaretleri, Görev Listesi ve Hata Listesi'nin kod satırlarını bulmak için kullanılmasına ilişkin yordamlara bağlantılar sağlar.|
 |[Kod Yapısını Görüntüleme](../ide/viewing-the-structure-of-code.md)|Sınıfların, sınıf üyelerinin ve kaynakların hiyerarşilerine nasıl göz atılacağını açıklar.|
-|[Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Bir yapılandırma dosyasını (app.config) C# projesine nasıl ekleyeceğinizi açıklar.|
+|[Nasıl yapılır: C# Projesine Uygulama Yapılandırma Dosyası Ekleme](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Bir yapılandırma dosyasını (app.config) C# projesine nasıl ekleyeceğinizi açıklar.|
 |[Kaynak olarak Meta Veriler](../csharp-ide/metadata-as-source.md)|IDE'nin meta verileri nasıl kaynak kod olarak görüntülemenizi sağladığını açıklar.|
 |[Yeniden Düzenleme (C#)](../csharp-ide/refactoring-csharp.md)|Uygulamanızın davranışını değiştirmeden kodunuzu değiştirebilmenize yardımcı olan yeniden düzenleme işlemlerini listeler.|
 |[Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)|Visual Studio çözümünüz için hata ayıklamanın, yayınlamanın ve özel yapıların nasıl yapılandırılacağını açıklar.|
@@ -51,6 +51,6 @@ Visual Studio tümleşik geliştirme ortamı (IDE), ortak bir kullanıcı arabir
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
-- [C# kullanmaya Başlarken](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
-- [C# başvurusu](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+- [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [C# kullanmaya Başlarken](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [C# başvurusu](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674335"
 ---
 # <a name="memory-usage-without-debugging"></a>Hata ayıklama olmadan bellek kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
 - Bellek sorunlarının temel nedenini bulmak için anlık görüntüleri karşılaştırın.  
   
-  Bu konu açıklar nasıl bir Windows Evrensel XAML uygulaması çözümlemek için bellek kullanımı aracı kullanın. JavaScript ve HTML kullanmak, bkz. Evrensel Windows uygulamalarında bellek kullanımını analiz etmek istiyorsanız [(JavaScript) bellek kullanımını analiz etme](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Bu konu açıklar nasıl bir Windows Evrensel XAML uygulaması çözümlemek için bellek kullanımı aracı kullanın. JavaScript ve HTML kullanmak, bkz. Evrensel Windows uygulamalarında bellek kullanımını analiz etmek istiyorsanız [(JavaScript) bellek kullanımını analiz etme](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Bir bellek kullanımı Tanılama oturumu başlatın  
   
@@ -204,7 +204,7 @@ Kullanabileceğiniz **bellek kullanımı** aşağıdakileri yapmak için hata ay
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [JavaScript bellek](../profiling/javascript-memory.md)   
- [Uygulama performansını analiz edin](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Performans ve tanı araçlarını çalıştırma](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [C++, C# ve Visual Basic kullanan Windows Store uygulamaları için en iyi performans](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Uygulama performansını analiz edin](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Performans ve tanı araçlarını çalıştırma](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [C++, C# ve Visual Basic kullanan Windows Store uygulamaları için en iyi performans](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Visual Studio'da yeni bellek kullanımı aracı ile bellek sorunlarını tanılama](http://go.microsoft.com/fwlink/p/?LinkId=394706)

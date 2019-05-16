@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683535"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Öykünücüde Windows Phone uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisayarınızdaki Windows Phone uygulamalarını test etmek için sanallaştırılmış bir ortam sağlar. Ortak dokunma ve döndürme olaylarının benzetimini yapma ve fiziksel ekran boyutunu ve taklit etmek istediğiniz çözümü seçin. Ayrıca, konum, ağ, bildirimler, sensörlerden, ivme ölçer ve isteğe bağlı bir SD kart gibi birçok yaygın olarak kullanılan özellik test edebilirsiniz.  
   
- Öykünücüde test etme özellikleri hakkında daha fazla bilgi için bkz. [uygulama özelliklerini Windows Phone öykünücüsü'nde Test](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Öykünücüde test etme özellikleri hakkında daha fazla bilgi için bkz. [uygulama özelliklerini Windows Phone öykünücüsü'nde Test](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Visual Studio ile birlikte öykünücü içinde tasarlayabilir, geliştirme, hata ayıklama ve Windows Phone uygulamalarını test etmek için eksiksiz bir ortam sağlar.  
   
@@ -103,7 +103,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 ### <a name="BKMK_depltool"></a> Uygulama dağıtımı aracı ile uygulamayı çalıştırma  
  Windows Phone uygulama dağıtımı aracı da kullanabilirsiniz (**AppDeploy.exe**) uygulamanızı öykünücüde çalıştırma için. Bu araç, Windows Phone geliştirme araçları yüklediğinizde, yüklü olduğu tek başına bir uygulamadır.  
   
- Daha fazla bilgi için bkz. [dağıtma Windows Phone 8.1 uygulamaları ile uygulama dağıtımı aracı](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Daha fazla bilgi için bkz. [dağıtma Windows Phone 8.1 uygulamaları ile uygulama dağıtımı aracı](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Öykünücü araç ile Windows Phone öykünücüsü'nü yapılandırma  
  Bu tabloda öykünücü araç çubuğunda kullanılabilir yapılandırma düğmeleri gösterilir.  

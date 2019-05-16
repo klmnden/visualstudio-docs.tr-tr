@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadd0bded176a44d3eb977382778dd20b68a95a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703164"
 ---
 # <a name="xml-editor"></a>XML Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +74,10 @@ XML Düzenleyicisi'ni temel alır [!INCLUDE[msCoName](../includes/msconame-md.md
  XML Düzenleyicisi kullanıcı arabirimi bileşenlerine açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Metni, kodu ve biçimlendirmeyi düzenleme](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Metni, kodu ve biçimlendirmeyi düzenleme](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  Metin Düzenleyicisi hakkında bilgi sağlar.  
   
- [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML standartları başvurusu](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -21,19 +21,19 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fc2ea04c79868fa515680f5c94eb3f600ee4884
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686714"
 ---
 # <a name="debugging-basics-registers-window"></a>Hata ayıklama temelleri: Yazmaçlar penceresi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Kaydeder** pencere, yalnızca adres seviyesinde hata ayıklamayı etkin değilse kullanılabilir **seçenekleri** iletişim kutusu, **hata ayıklama** düğümü.  
   
- Yazmaçları küçük parçaları işlemci etkin olarak üzerinde çalıştığı veri depolamak için kullanılan özel bir işlemci (CPU) konumlardır. Derleme veya kaynak kodu yorumlama gerektiğinde verileri bellekten kayıtları ve yeniden yeniden taşıma yönergeleri oluşturur. Yazmaçları veri erişimi sağlayan bir kayıttaki verileri korumak ve sürekli olarak erişmek için işlemci kodu daha hızlı işlemci sürekli olarak yüklemek ve kayıtları kaldırmak için gerektiren kod yürütmesine eğilimi gösterir. Bu nedenle, bellek, veri erişimi için karşılaştırıldığında çok hızlıdır. Kayıtlara verileri korumak ve diğer iyileştirmeler gerçekleştirmek derleyicinin kolaylaştırmak için genel değişkenleri kullanmaktan kaçının ve yerel değişkenlerini mümkün olduğunca gerekir. Bu şekilde yazılmış kod iyi yerleşim yeri başvurunun olması bildirilir. C/C++ gibi bazı dillerde Programcı değişkeni her zaman bir kayıttaki tutmak için en iyi şekilde denemek için varsaymasını söyleyen bir kayıt değişken bildirebilirsiniz. Daha fazla bilgi için [kaydetme anahtar sözcüğü](http://msdn.microsoft.com/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
+ Yazmaçları küçük parçaları işlemci etkin olarak üzerinde çalıştığı veri depolamak için kullanılan özel bir işlemci (CPU) konumlardır. Derleme veya kaynak kodu yorumlama gerektiğinde verileri bellekten kayıtları ve yeniden yeniden taşıma yönergeleri oluşturur. Yazmaçları veri erişimi sağlayan bir kayıttaki verileri korumak ve sürekli olarak erişmek için işlemci kodu daha hızlı işlemci sürekli olarak yüklemek ve kayıtları kaldırmak için gerektiren kod yürütmesine eğilimi gösterir. Bu nedenle, bellek, veri erişimi için karşılaştırıldığında çok hızlıdır. Kayıtlara verileri korumak ve diğer iyileştirmeler gerçekleştirmek derleyicinin kolaylaştırmak için genel değişkenleri kullanmaktan kaçının ve yerel değişkenlerini mümkün olduğunca gerekir. Bu şekilde yazılmış kod iyi yerleşim yeri başvurunun olması bildirilir. C/C++ gibi bazı dillerde Programcı değişkeni her zaman bir kayıttaki tutmak için en iyi şekilde denemek için varsaymasını söyleyen bir kayıt değişken bildirebilirsiniz. Daha fazla bilgi için [kaydetme anahtar sözcüğü](https://msdn.microsoft.com/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
   
  İki tür olarak kayıtları ayrılabilir: genel amaçlı ve özel amaçlı. Genel amaçlı kayıtları iki sayıyı toplayan veya başvuran bir dizideki bir öğe gibi genel işlemler için veri tutun. Özel amaçlı kayıtları belirli amaçlar ve özel bir anlamı vardır. Programın çağrı yığını izlemek için işlemci kullanır, yığın işaretçisi Kaydet, iyi bir örnektir. Bir programcısı, yığın işaretçisi doğrudan düzenlemezsiniz olmayabilir. Ancak, yığın işaretçisi bir işlev çağrısı sonunda geri dönmek nereye işlemci bilmez olduğundan düzgün programınızın çalışması için gereklidir.  
   

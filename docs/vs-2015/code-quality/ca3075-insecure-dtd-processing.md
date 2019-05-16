@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693407"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425432"
  Güvenli olmayan kullanırsanız <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> örnekleri veya giriş ve saldırganlar için hassas bilgileri ifşa güvenilmeyen Dış varlık kaynakları, ayrıştırıcının kabul başvurusu.
 
 ## <a name="rule-description"></a>Kural Tanımı
- A [belge türü tanımı (DTD'nin)](https://msdn.microsoft.com/library/aa468547.aspx) bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) açabilir tehditler [hizmet reddi (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) saldırıları. Bu kuralın ne zaman tetikleyen:
+ A [belge türü tanımı (DTD'nin)](https://msdn.microsoft.com/library/aa468547.aspx) bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) açabilir tehditler [hizmet reddi (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) saldırıları. Bu kuralın ne zaman tetikleyen:
 
 - XmlReaderSettings üzerinde etkin <xref:System.Xml.XmlReader> kullanarak dış XML varlıkları çözümler örneği <xref:System.Xml.XmlUrlResolver>.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425432"
 
 - Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true** .
 
-- Tam güven devralma talebi XmlTextReader sınıfı vardır. Bkz: [devralma taleplerini](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) daha fazla bilgi için.
+- Tam güven devralma talebi XmlTextReader sınıfı vardır. Bkz: [devralma taleplerini](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) daha fazla bilgi için.
 
   .NET 4 ve üzeri
 

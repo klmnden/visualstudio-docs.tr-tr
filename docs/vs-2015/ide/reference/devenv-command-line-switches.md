@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690975"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de der
 |[/ Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Başlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve tüm etkinlik günlük dosyasına kaydeder.|  
 |[/ Çalıştırın (devenv.exe)](../../ide/reference/run-devenv-exe.md) veya `/r`|Derler ve belirtilen çözüm çalıştırır.|  
 |[/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Derler ve belirtilen çözüm çalıştırır, çözüm çalıştırılır ve çözüm çalışması bittikten sonra IDE'yi kapatır, IDE'nin en aza indirir.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|YOL, Ekle ve kitaplığı ortam değişkenlerini kullanmak IDE neden [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] VC ++ dizinleri kısmında belirtilen ayarlara yerine derleme **projeleri** seçeneklerini **seçenekleri** iletişim kutusu. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|YOL, Ekle ve kitaplığı ortam değişkenlerini kullanmak IDE neden [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] VC ++ dizinleri kısmında belirtilen ayarlara yerine derleme **projeleri** seçeneklerini **seçenekleri** iletişim kutusu. Daha fazla bilgi için [komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/ Düzenle (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Belirtilen dosyalar, bu uygulamanın çalışan bir örneğini açar. Çalışan örnek yoksa varsa, yeni bir örneği bir Basitleştirilmiş pencere düzeni ile başlar.|  
 |[/ ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Belirtilen eklenti yüklemeden Visual Studio IDE bir örneğini başlatır.|  
 |[/ SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Başlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] güvenli modda ve yalnızca varsayılan ortama ve hizmetler yükler ve üçüncü taraf paketi sürümlerini birlikte gönderilir.|  

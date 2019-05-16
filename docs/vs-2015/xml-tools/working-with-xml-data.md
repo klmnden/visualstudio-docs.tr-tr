@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703222"
 ---
 # <a name="working-with-xml-data"></a>XML Verileriyle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ XML ve kendi ilgili teknolojileri, verilerin işlenme şekilde bir büyük bir r
  [XSLT Hatalarını Ayıklama](../xml-tools/debugging-xslt.md)  
  Stil sayfaları Visual Studio hata ayıklayıcısını kullanarak hata ayıklama anlatılmaktadır.  
   
- [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML standartları başvurusu](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
   
- [Yönetilen kodda XML Web Hizmetleri](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Yönetilen kodda XML Web Hizmetleri](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Oluşturma ve XML Web Hizmetleri dağıtma ve XML Web hizmetlerine erişmek nasıl ele alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

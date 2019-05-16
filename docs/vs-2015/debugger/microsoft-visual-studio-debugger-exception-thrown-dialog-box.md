@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3fec8fd6bc00199fc2a0d5193d7f7534acca754
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383931"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696878"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio Hata Ayıklayıcısı (Özel Durum Oluştu) İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ Programınızda bir özel durum oluştu. Bu iletişim kutusunu oluşan özel dur
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel durumları hata ayıklayıcısı ile yönetme](../debugger/managing-exceptions-with-the-debugger.md)   
- [Özel durumlar için en iyi yöntemler](http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [Özel Durum İşleme](http://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [Özel durumlar için en iyi yöntemler](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
+ [Özel Durum İşleme](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)

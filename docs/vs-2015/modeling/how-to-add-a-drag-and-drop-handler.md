@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d0f53e589f34fafd2514aa71efdaa16cfe3bc21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117674"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690545"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ using System.Linq;
   Tanımlama `IsAcceptableDropItem(e)` sürüklenen öğe kabul edilebilir olup ve öğe bırakıldığında modelinizi güncelleştirilecek ProcessDragDropItem(e) belirlemek için. Bu yöntemler olay bağımsız değişkenlerini öğesi ilk ayıklamanız gerekir. Bunu nasıl yapacağınız hakkında daha fazla bilgi için bkz. [sürüklenen öğe için bir başvuru almak nasıl](#extracting).  
   
 ## <a name="MEF"></a> MEF kullanarak hareket işleyicisi tanımlama  
- MEF (Yönetilen Genişletilebilirlik Çerçevesi) en düşük yapılandırmayla yüklenebilir bileşenleri tanımlamanıza olanak sağlar. Daha fazla bilgi için [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ MEF (Yönetilen Genişletilebilirlik Çerçevesi) en düşük yapılandırmayla yüklenebilir bileşenleri tanımlamanıza olanak sağlar. Daha fazla bilgi için [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>MEF hareket işleyicisi tanımlama  
   

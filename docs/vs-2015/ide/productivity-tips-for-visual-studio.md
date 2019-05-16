@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696301"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için Üretkenlik İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Bu ipuçlarını izleyerek, daha hızlı ve verimli bir şekilde yazma gidin ve 
 ## <a name="BKMK_Debugging"></a> Kodda hata ayıklama
  Hata ayıklama çok zaman kullanabilir, ancak aşağıdaki ipuçları yardımcı olabilir sürecinize hız.
 
-- **Sayfa, uygulama veya siteyi farklı tarayıcılarda test etme**. Kodunuzdaki hataları ayıklamanıza gibi dahil olmak üzere yüklü web tarayıcıları arasında kolayca geçiş yapabilirsiniz [sayfa denetçisi (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), açmak zorunda kalmadan **şununla Gözat** iletişim kutusu. Kullanabileceğiniz **hata ayıklama hedefi** üzerinde olan liste **standart** yanındaki araç **hata ayıklamayı Başlat** düğme, hızlı bir şekilde hata ayıklama gibi kullanarak kullandığınız tarayıcıyı doğrulamak için veya sayfaları görüntüleyin.
+- **Sayfa, uygulama veya siteyi farklı tarayıcılarda test etme**. Kodunuzdaki hataları ayıklamanıza gibi dahil olmak üzere yüklü web tarayıcıları arasında kolayca geçiş yapabilirsiniz [sayfa denetçisi (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), açmak zorunda kalmadan **şununla Gözat** iletişim kutusu. Kullanabileceğiniz **hata ayıklama hedefi** üzerinde olan liste **standart** yanındaki araç **hata ayıklamayı Başlat** düğme, hızlı bir şekilde hata ayıklama gibi kullanarak kullandığınız tarayıcıyı doğrulamak için veya sayfaları görüntüleyin.
 
      ![Web tarayıcı hata ayıklama seçeneklerini](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 

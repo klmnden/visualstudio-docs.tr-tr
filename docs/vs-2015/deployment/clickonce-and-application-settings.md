@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07be583099627bbff4f67a4c040f4c44ddbc6224
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c8e1ffe6d6f32cfad137d5890715a5a0032a29d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834964"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696684"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce ve Uygulama Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Forms için uygulama ayarları oluşturmak, depolamak ve özel uygulama ve kullanıcı tercihlerini istemcide bakımını yapmayı kolaylaştırır. Uygulama ayarları dosyaları bir ClickOnce uygulamasında nasıl çalışır ve kullanıcı sonraki bir sürüme yükseltildiğinde ClickOnce ayarları nasıl geçirdiğini aşağıdaki belge açıklar.  
   
- Aşağıdaki bilgiler yalnızca varsayılan uygulama ayarları sağlayıcısına geçerlidir <xref:System.Configuration.LocalFileSettingsProvider> sınıfı. Özel bir sağlayıcı sağlarsanız, bu sağlayıcı, verileri nasıl depoladı ve ayarlarına sürümleri arasında yükseltme nasıl belirler. Uygulama ayarları sağlayıcıları hakkında daha fazla bilgi için bkz. [uygulama ayarları mimarisi](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ Aşağıdaki bilgiler yalnızca varsayılan uygulama ayarları sağlayıcısına geçerlidir <xref:System.Configuration.LocalFileSettingsProvider> sınıfı. Özel bir sağlayıcı sağlarsanız, bu sağlayıcı, verileri nasıl depoladı ve ayarlarına sürümleri arasında yükseltme nasıl belirler. Uygulama ayarları sağlayıcıları hakkında daha fazla bilgi için bkz. [uygulama ayarları mimarisi](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="application-settings-files"></a>Uygulama ayarları dosyası  
  Uygulama ayarları, iki dosya kullanır: *uygulama*. exe.config ve user.config burada *uygulama* Windows Forms uygulamanızın adıdır. User.config uygulamanızın kullanıcı kapsamlı ayarları depolayan istemciye ilk kez üzerinde oluşturulur. *Uygulama*. exe.config, aksine, var dağıtımdan önce ayarlar için varsayılan değerleri tanımlar. Visual Studio içerecektir bu dosya otomatik olarak kullandığınızda, **Yayımla** komutu. ClickOnce uygulamanızın emin olmanız gerekir, Mage.exe veya MageUI.exe kullanarak oluşturursanız, bu dosya ile birlikte gelir, uygulama bildiriminizi uygulamanızın diğer dosyaları kullanıcının.  
@@ -53,10 +53,10 @@ Windows Forms için uygulama ayarları oluşturmak, depolamak ve özel uygulama 
  Kendi uygulama ayarları sarmalayıcı sınıfı oluşturduysanız ve güncelleştirme mantığı özelleştirmek istiyorsanız, geçersiz kılabilirsiniz <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> yöntemi.  
   
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce ve Dolaşım ayarları  
- ClickOnce ile Dolaşım ayarları, ağdaki makineler arasında izlemek ayarlar dosyanızı sağlayan çalışmaz. Dolaşım ayarlarına ihtiyacınız varsa, ağ üzerinden ayarları depolayan bir uygulama ayarları sağlayıcısı veya bir uzak bilgisayarda ayarları depolamak için kendi özel ayarları sınıflarınızı geliştirmek ihtiyacınız olacak. Ayar sağlayıcıları daha fazla bilgi için bkz. [uygulama ayarları mimarisi](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ ClickOnce ile Dolaşım ayarları, ağdaki makineler arasında izlemek ayarlar dosyanızı sağlayan çalışmaz. Dolaşım ayarlarına ihtiyacınız varsa, ağ üzerinden ayarları depolayan bir uygulama ayarları sağlayıcısı veya bir uzak bilgisayarda ayarları depolamak için kendi özel ayarları sınıflarınızı geliştirmek ihtiyacınız olacak. Ayar sağlayıcıları daha fazla bilgi için bkz. [uygulama ayarları mimarisi](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   
- [Uygulama ayarlarına genel bakış](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
+ [Uygulama ayarlarına genel bakış](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
  [ClickOnce önbelleğine genel bakış](../deployment/clickonce-cache-overview.md)   
  [ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

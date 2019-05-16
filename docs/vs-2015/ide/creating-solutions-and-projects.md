@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701142"
 ---
 # <a name="creating-solutions-and-projects"></a>Çözümler ve Projeler Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437575"
 Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıksal kapsayıcılardır. Seçerek bir proje oluşturduğunuzda **dosya &#124; yeni &#124; proje** ana menüden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] içerdiği için bir çözüm oluşturur. Gerekirse daha fazla yeni veya mevcut projeleri çözüme daha sonra ekleyebilirsiniz. Geçici projeler (yalnızca .NET) oluşturabilir ve varolan kod dosyalarından projeler oluşturabilir, silinecek ile işiniz bittiğinde.  
   
 > [!NOTE]
-> Açıklamalar bu konuda, Visual Studio Community edition temel alır. İletişim kutuları ve menü komutları gördüğünüz ayarları ya da Visual Studio sürümü bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Açıklamalar bu konuda, Visual Studio Community edition temel alır. İletişim kutuları ve menü komutları gördüğünüz ayarları ya da Visual Studio sürümü bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Bir yüklü proje şablonundan bir proje oluşturun  
  **Dosya &#124; yeni &#124; proje** yeni proje iletişim kutusunu açmak için ana menüden. Sol bölmede altında **Intalled &#124; şablonları** programlama dil ve platform veya teknoloji seçtiğiniz, ardından Orta bölmede bir kullanılabilir şablonlardan seçin.  
@@ -95,4 +95,4 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB nasıl yapılır: Birden çok proje çözümü oluşturma](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB nasıl yapılır: Birden çok proje çözümü oluşturma](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

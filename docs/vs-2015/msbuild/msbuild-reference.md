@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683008"
 ---
 # <a name="msbuild-reference"></a>MSBuild Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650306"
  "Doğru yorumlanması için kaçış karakterleri" gerekebilir karakterleri listeler. Bir kaçış dizisi aşağıda alternatif bir yorumu olduğunu belirten bir karakter dizisi ' dir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [MSBuild'e genel bakış](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Introduces [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
+ [MSBuild'e genel bakış](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Introduces [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
   
  <xref:Microsoft.Build.Conversion>  
  Dönüştürme ad alanı başvurusu içeriyor  

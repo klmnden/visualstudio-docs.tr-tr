@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685635"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: Visual Basic Geliştirici Ayarları Uygulanmış Olarak Derleme Yapılandırmalarını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63430542"
 Varsayılan olarak, tüm Gelişmiş derleme yapılandırma seçenekleri ile gizli [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Geliştirici ayarları uygulanmış. Bu konuda, bu ayarları el ile etkinleştirmek açıklanmaktadır.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmalarını etkinleştirme  
- Varsayılan olarak, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Geliştirici ayarları Gizle açma seçeneği **Configuration Manager** iletişim kutusu ve **yapılandırma** ve **Platform** listeler [Proje Tasarımcısı](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Varsayılan olarak, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Geliştirici ayarları Gizle açma seçeneği **Configuration Manager** iletişim kutusu ve **yapılandırma** ve **Platform** listeler [Proje Tasarımcısı](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmalarını etkinleştirmek için  
   

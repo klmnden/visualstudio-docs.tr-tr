@@ -26,12 +26,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2e0cde0ca0026018c39557362e0ad090a568cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e18cda54431eec580464ccb59c5c6b6cce87d225
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701125"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Genel Windows Formları ve Web Formları İçin Kültüre Özgü Sınıflar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "54804725"
 Her bir kültürün tarih, zaman, sayı, para birimi ve diğer bilgileri görüntülemek için farklı kurallara sahiptir. <xref:System.Globalization> Ad alanı, kültüre özgü değerlerini değiştirmek için kullanılan sınıfları içerir, gibi görüntüleneceğini <xref:System.Globalization.DateTimeFormatInfo>, **Takvim**, ve <xref:System.Globalization.NumberFormatInfo>.  
   
 ## <a name="using-the-culture-setting"></a>Kültür ayarı kullanma  
- Ancak çoğu uygulama veya depolanan kültür ayarı kullanacağınız zaman **Bölgesel Seçenekler** otomatik olarak çalışma zamanında kuralları belirlemek ve bilgileri biçimlendirebilmek için Denetim Masası'nı tıklatın,. Kültürü ayarlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows Forms Genelleştirme için kültürü ve kullanıcı Arabirimi kültürünü ayarlama](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) veya [nasıl yapılır: ASP.NET Web sayfası Genelleştirme için kültürü ve kullanıcı Arabirimi kültürünü ayarlama](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0). Kültüre özgü bilgileri kültür ayarı göre otomatik olarak Biçimlendir sınıfları çağrılır. Kültüre özgü bazı yöntemler <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, ve <xref:System.String.Format%2A?displayProperty=fullName>. Bazı kültüre özgü işlevleri (Visual Basic dilindeki) `MonthName` ve `WeekDayName`.  
+ Ancak çoğu uygulama veya depolanan kültür ayarı kullanacağınız zaman **Bölgesel Seçenekler** otomatik olarak çalışma zamanında kuralları belirlemek ve bilgileri biçimlendirebilmek için Denetim Masası'nı tıklatın,. Kültürü ayarlama hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows Forms Genelleştirme için kültürü ve kullanıcı Arabirimi kültürünü ayarlama](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) veya [nasıl yapılır: ASP.NET Web sayfası Genelleştirme için kültürü ve kullanıcı Arabirimi kültürünü ayarlama](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0). Kültüre özgü bilgileri kültür ayarı göre otomatik olarak Biçimlendir sınıfları çağrılır. Kültüre özgü bazı yöntemler <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, ve <xref:System.String.Format%2A?displayProperty=fullName>. Bazı kültüre özgü işlevleri (Visual Basic dilindeki) `MonthName` ve `WeekDayName`.  
   
  Örneğin, aşağıdaki kod nasıl kullanabileceğinizi gösterir. <xref:System.IFormattable.ToString%2A> biçimi para birimi bir yönteme geçerli kültür için:  
   

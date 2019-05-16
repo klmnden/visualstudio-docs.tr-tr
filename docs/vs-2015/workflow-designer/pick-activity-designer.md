@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15320289c3f668f2bc0a84d9653110d02536a32e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694508"
 ---
 # <a name="pick-activity-designer"></a>Pick Etkinlik Tasarımcısı
 <xref:System.Activities.Statements.Pick> Olay tabanlı denetim akış etkinliği sağlar. Etkinlik birden fazla dalları birini bir tetikleyici olaya yanıt olarak yürütür.  
@@ -40,5 +40,5 @@ ms.locfileid: "62938228"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetim akışı](../workflow-designer/control-flow-activity-designers.md)   
- [Pick etkinliği](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Pick Etkinliği Kullanma](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Pick etkinliği](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Pick Etkinliği Kullanma](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

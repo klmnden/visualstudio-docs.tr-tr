@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705781"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio’da JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript, Visual Studio'da birinci sınıf bir dildir. Visual Studio IDE'de JavaScript kodu yazarken standart düzenleme yardımlarının (kod parçacıkları, IntelliSense, vb.) çoğunu veya tümünü kullanabilirsiniz. Birçok uygulama türleri ve hizmetler için JavaScript kodu yazabilirsiniz.
 
- JavaScript dili referans belgeleri için bkz. [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ JavaScript dili referans belgeleri için bkz. [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  Belirli uygulama türlerini ve HTML ve JavaScript kullanarak hizmetleri geliştirmek için Visual Studio ya da belirli Visual Studio uzantıları belirli sürümlerini gerekebilir. Aşağıdaki listede, daha fazla bilgi için bağlantılar içerir.
 
@@ -29,7 +29,7 @@ JavaScript, Visual Studio'da birinci sınıf bir dildir. Visual Studio IDE'de Ja
 
 - Oluşturulacak [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)hem de Evrensel uygulamalar (her iki platform destekleyen) [araçları edinin](https://developer.microsoft.com/windows/downloads).
 
-- Bulut tabanlı hizmetler oluşturmak için bkz [Microsoft Azure sitesine](http://azure.microsoft.com/documentation/).
+- Bulut tabanlı hizmetler oluşturmak için bkz [Microsoft Azure sitesine](https://azure.microsoft.com/documentation/).
 
 - Web siteleri ve web uygulamaları oluşturmak için [ASP.NET sitesine](http://www.asp.net/get-started/websites).
 

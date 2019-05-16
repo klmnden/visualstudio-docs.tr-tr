@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691880"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Proje ve Yapılandırma Özellikleri için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Özellikleri** penceresinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE) proje ve yapılandırma özelliklerini görüntüleyebilirsiniz. Kullanıcı, uygulamanın özelliklerini ayarlayabilirsiniz böylece, kendi proje türü için özellik sayfası sağlayabilirsiniz.  
   
- İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../includes/csprcs-md.md)] ve [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: İzlenecek yol: Proje ve yapılandırma özelliklerini gösterme (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ İçinde bir proje düğümü seçerek **Çözüm Gezgini** tıklayıp **özellikleri** üzerinde **proje** menüsünde, yapılandırma içeren bir iletişim kutusunu açabilirsiniz özellikleri. İçinde [!INCLUDE[csprcs](../../includes/csprcs-md.md)] ve [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]ve proje sekmeli sayfa bu iletişim kutusu açılır, bu dillerden türetilmiş türleri [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md). Daha fazla bilgi için [derleme içinde değil: İzlenecek yol: Proje ve yapılandırma özelliklerini gösterme (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Projeleri (MPFProj) için yönetilen paket çerçevesini oluşturmak ve yeni proje sistemi yönetmek için yardımcı sınıflar sağlar. Kaynak kod ve derleme yönergelerini bulabilirsiniz [projeler - Visual Studio 2013 için MPF](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Yapılandırma özellikleri ve proje kalıcılığı  
- Yapılandırma özellikleri, bir örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında kalır. Dil projeleri genellikle proje dosyası oluşturmak için bir şablon dosyası kullanın. Ancak, gerçekte proje türleri ve şablonları ilişkilendirmek için çeşitli yollar vardır. Daha fazla bilgi için [NIB: Visual Studio şablonları](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) ve [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Yapılandırma özellikleri, bir örneğin proje türüyle ilişkili dosya adı uzantısı, .csproj, .vbproj ve .myproj sahip bir proje dosyasında kalır. Dil projeleri genellikle proje dosyası oluşturmak için bir şablon dosyası kullanın. Ancak, gerçekte proje türleri ve şablonları ilişkilendirmek için çeşitli yollar vardır. Daha fazla bilgi için [NIB: Visual Studio şablonları](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) ve [şablon dizin açıklaması (. Vsdir) dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Yapılandırma özellikleri, şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikler, ardından bu şablonu kullanan proje türü kullanılarak oluşturulan projeler için kullanılabilir. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Projeler ve ikisi de MPFProj [derleme içinde değil: MSBuild'e genel bakış](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyaları için şema. Bu dosyalar her yapılandırma için bir PropertyGroup bölüm içerir. Proje Özellikleri bölümünde bir yapılandırma bağımsız değişken boş bir dize olarak ayarlanmış olan ilk PropertyGroup genellikle kalıcıdır.  
+ Yapılandırma özellikleri, şablon dosyasına öğeleri ekleyerek oluşturulur. Bu özellikler, ardından bu şablonu kullanan proje türü kullanılarak oluşturulan projeler için kullanılabilir. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Projeler ve ikisi de MPFProj [derleme içinde değil: MSBuild'e genel bakış](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) şablon dosyaları için şema. Bu dosyalar her yapılandırma için bir PropertyGroup bölüm içerir. Proje Özellikleri bölümünde bir yapılandırma bağımsız değişken boş bir dize olarak ayarlanmış olan ilk PropertyGroup genellikle kalıcıdır.  
   
  Aşağıdaki kod, temel bir MSBuild proje dosyası başlangıcını gösterir.  
   
@@ -93,9 +93,9 @@ ms.locfileid: "63408575"
  `MyConfigProp` Yapılandırma özellik görünür Yapılandırma özelliği sayfasında **My Yapılandırma özelliği** kategorisinde **My kategori**. Seçeneğini belirlediyseniz, açıklama **Alanım açıklaması**, açıklama panelinde görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derlemede değil: İzlenecek yol: Proje ve yapılandırma özelliklerini gösterme (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Derlemede değil: İzlenecek yol: Proje ve yapılandırma özelliklerini gösterme (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Ekleme ve kaldırma özellik sayfaları](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage'ı durumu](../../misc/vspackage-state.md)   
  [Projeleri](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio şablonları](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Visual Studio şablonları](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [Şablon Dizin Açıklaması (.Vsdir) Dosyaları](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

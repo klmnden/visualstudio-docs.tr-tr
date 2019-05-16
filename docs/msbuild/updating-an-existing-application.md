@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 735874abd1f62ecf121713a18ab05b58d20d908e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686091"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 için var olan bir uygulamayı güncelleştirme
 
@@ -49,7 +49,7 @@ Birincil ve ikincil sürüm MSBuild paketlerin bir bölümünü ya da Visual Stu
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d58c8986922c30192d6300a623a635b24c34ed5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705766"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Bir projenin varsayılan Namespace belirleme
-İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `CustomToolNamespace` özelliği değeri, ardından giriş dosyası ayarlanmış `CustomToolNamespace` geçirilen varsayılan ad alanı parametre değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemi. Aksi takdirde, `wszDefaultNamespace` geçirilen `Generate` her zaman kök ad alanına eşittir. Ad alanları hakkında daha fazla bilgi için bkz. [Namespace anahtar sözcükleri](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
+İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `CustomToolNamespace` özelliği değeri, ardından giriş dosyası ayarlanmış `CustomToolNamespace` geçirilen varsayılan ad alanı parametre değeri <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> yöntemi. Aksi takdirde, `wszDefaultNamespace` geçirilen `Generate` her zaman kök ad alanına eşittir. Ad alanları hakkında daha fazla bilgi için bkz. [Namespace anahtar sözcükleri](https://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] Klasör tabanlı ad alanları kullanır. Diğer bir deyişle, kök ad alanının yanı sıra özel aracı içeren bir klasör adları ad alanı oluşur. Her bir klasör adı geçerli bir tanımlayıcı dönüştürülür ve tüm adları nokta ayırın. Örneğin, giriş dosyası FolderA\FolderB\FolderC\MyInput.txt ve kök ad CL9 ise, submiturl hesaplanan varsayılan ad alanı olabilir **CL9. FolderA.FolderB.FolderC**.  
   

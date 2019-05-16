@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691274"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir iş parçacığı, işletim sisteminin işlemci süresi ayırdığı yönerg
 
  Ayrıca, çoklu iş parçacığı olası hataların bazı yeni türlerini tanıtır. Genellikle, örneğin, iki veya daha fazla iş parçacığı aynı kaynağa erişmek zorundaysa, ancak aynı anda yalnızca bir iş parçacığı güvenli bir şekilde kaynaklara erişebilir. Çeşit karşılıklı dışlama, yalnızca bir iş parçacığının aynı anda kaynak erişim emin olmak gereklidir. Karşılıklı dışlama yanlış şekilde gerçekleştirilirse oluşturabilirsiniz bir *kilitlenme* koşul burada iş parçacığı yürütebilir. Kilitlenmeler, hata ayıklama için özellikle zor bir sorun olabilir.
 
- Visual Studio sağlar bir **iş parçacıkları** penceresi, bir GPU iş parçacıkları penceresi, paralel İzleme penceresi ve kolay bir şekilde hata ayıklama çok iş parçacıklı diğer özellikleri. İş parçacığı özellikleri hakkında bilgi edinmenin en iyi yolu, izlenecek yollar yaparak ' dir. Bkz: [izlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md) ve [izlenecek yol: C++ AMP uygulamasında hata ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio sağlar bir **iş parçacıkları** penceresi, bir GPU iş parçacıkları penceresi, paralel İzleme penceresi ve kolay bir şekilde hata ayıklama çok iş parçacıklı diğer özellikleri. İş parçacığı özellikleri hakkında bilgi edinmenin en iyi yolu, izlenecek yollar yaparak ' dir. Bkz: [izlenecek yol: Çok iş parçacıklı uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-multithreaded-application.md) ve [izlenecek yol: C++ AMP uygulamasında hata ayıklama](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio ayrıca güçlü kesme noktaları ve izleme noktaları, çok iş parçacıklı uygulamaların hatalarını ayıklarken çok kullanışlı olabilen sağlar. Tek tek iş parçacıkları üzerinde kesme noktaları yerleştirmek için kesme noktası filtrelerini kullanabilirsiniz. Bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Bir iş parçacığı, işletim sisteminin işlemci süresi ayırdığı yönerg
 
 - İzleme noktaları olmadan, programınızın yürütülmesini izlemek için etkinleştirin. Bu, kilitlenmeler gibi sorunları incelemek için yararlı olabilir.
 
-  [İş parçacığı](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) kavramları iş parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programlama, örnek kod dahil.
+  [İş parçacığı](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) kavramları iş parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programlama, örnek kod dahil.
 
-  [Bileşenlerde çoklu](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) nasıl kullanılacağını parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bileşenleri.
+  [Bileşenlerde çoklu](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) nasıl kullanılacağını parçacığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bileşenleri.
 
-  [Eski kod (Visual C++) için çoklu iş parçacığı desteği](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) MFC kullanan C++ programcıları için iş parçacığı oluşturma kavramları ve örnek kod.
+  [Eski kod (Visual C++) için çoklu iş parçacığı desteği](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) MFC kullanan C++ programcıları için iş parçacığı oluşturma kavramları ve örnek kod.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) [uzaktan hata ayıklama](../debugger/remote-debugging.md)

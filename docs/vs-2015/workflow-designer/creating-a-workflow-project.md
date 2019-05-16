@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704724"
 ---
 # <a name="creating-a-workflow-project"></a>Bir iş akışı projesi oluşturma
 İş akışları [!INCLUDE[indigo1](../includes/indigo1-md.md)] iş akışı Hizmetleri, özel etkinlikler ve özel etkinlik tasarımcıları kullanarak oluşturulabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonları. Bu bölümde bulunan proje şablonlarıyla kitaplıkları ve uygulamaları oluşturmayı açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ ms.locfileid: "62976978"
  Ek iş akışı etkinlikleri veya tasarımcıları ve diğer eklemeyi açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] var olan bir proje için kod etkinlikleri gibi öğeleri.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [İş Akışları Tasarlama](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [İş Akışları Tasarlama](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-workflow-designer.md)

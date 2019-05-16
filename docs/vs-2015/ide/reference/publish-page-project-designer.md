@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701823"
 ---
 # <a name="publish-page-project-designer"></a>Yayın Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "63441302"
  WPF Web tarayıcı uygulamaları için **uygulamayı çevrimdışı olarak da kullanılabilir** seçeneği devre dışıdır, çünkü bu tür uygulamalar yalnızca çevrimiçi kullanılabilir.  
   
  **Uygulama dosyaları**  
- Açılır [uygulama dosya iletişim kutusu](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), tek tek dosyaların nasıl ve nereye yüklendiğini belirtmek için kullanılır.  
+ Açılır [uygulama dosya iletişim kutusu](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), tek tek dosyaların nasıl ve nereye yüklendiğini belirtmek için kullanılır.  
   
  **Önkoşullar**  
  Açılır [Önkoşullar iletişim kutusu](../../ide/reference/prerequisites-dialog-box.md), uygulama ile birlikte yüklenmesi için .NET Framework gibi önkoşul bileşenleri belirtmek için kullanılır.  
   
  **Güncelleştirmeler**  
- Açılır [uygulama güncelleştirmeleri iletişim kutusu](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), uygulama için güncelleştirme davranışını belirtmek için kullanılır. Kullanılabilir olduğunda **uygulama yalnızca çevrimiçi kullanılabilir** seçilir.  
+ Açılır [uygulama güncelleştirmeleri iletişim kutusu](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), uygulama için güncelleştirme davranışını belirtmek için kullanılır. Kullanılabilir olduğunda **uygulama yalnızca çevrimiçi kullanılabilir** seçilir.  
   
  **Seçenekler**  
- Açılır [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), Gelişmiş yayımlama seçeneklerini, ek belirtmek için kullanılır.  
+ Açılır [Yayımlama Seçenekleri iletişim kutusu](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), Gelişmiş yayımlama seçeneklerini, ek belirtmek için kullanılır.  
   
  **Yayım sürümü**  
  Uygulama için yayımlama sürüm numarasını ayarlar; sürüm numarası değiştirildiğinde, uygulama bir güncelleştirme olarak yayımlanır. Yayınlama sürümünü her parçası (**ana**, **küçük**, **derleme**, **düzeltme**) 65355 maksimum değeri olabilir (<xref:System.UInt16.MaxValue>), tarafından izin verilen maksimum <xref:System.Version>.  
@@ -70,7 +70,7 @@ ms.locfileid: "63441302"
  İsteğe bağlı. Bu seçenek seçildiğinde (varsayılan), **düzeltme** Yayımla sürüm numarasının bölümü bir artırılır uygulamayı yayınladınız her zaman. Bu, bir güncelleştirme olarak yayımlanacak uygulama neden olur.  
   
  **Yayımlama Sihirbazı**  
- Açılır [Yayımlama Sihirbazı](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Yayımlama Sihirbazı Tamamlanıyor çalışan aynı etkiye sahip **Yayımla** komutunu **derleme** menüsü.  
+ Açılır [Yayımlama Sihirbazı](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Yayımlama Sihirbazı Tamamlanıyor çalışan aynı etkiye sahip **Yayımla** komutunu **derleme** menüsü.  
   
  **Şimdi Yayımla**  
  Geçerli ayarları kullanarak uygulamanın yayınlar. Eşdeğer **son** düğmesine **PublishWizard**.  

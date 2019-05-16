@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a6993d241f49261131ffad76dc50534ac8e1591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694869"
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,24 +38,24 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
  Veri kümesine doğrulama denetimlerini oluşturarak, bir veri kümesine yazılan veri geçerli olduğunu doğrulayabilirsiniz. Veri kümesini güncelleştirme nasıl gerçekleştirildiği ne olursa olsun veri denetleyebilirsiniz — kullanılıp bir bileşeni, formda veya başka bir şekilde denetimleri tarafından doğrudan. Veri kümesi (aksine, veritabanı arka ucu), uygulamanızın bir parçası olduğundan, uygulamaya özgü doğrulama oluşturmak için mantıksal bir yerdir.  
   
- Veri kümesinin parçalı sınıf dosyasında doğrulama uygulamanıza eklemek için en iyi yerdir. İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] veya [!INCLUDE[csprcs](../includes/csprcs-md.md)]açın **veri kümesi Tasarımcısı** ve doğrulama oluşturmak istediğiniz sütunun veya tablonun çift tıklayın. Bu eylem otomatik olarak oluşturur bir <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> olay işleyicisi. Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) veya [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Tam bir örnek için bkz. [izlenecek yol: Bir veri kümesine doğrulama ekleme](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
+ Veri kümesinin parçalı sınıf dosyasında doğrulama uygulamanıza eklemek için en iyi yerdir. İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] veya [!INCLUDE[csprcs](../includes/csprcs-md.md)]açın **veri kümesi Tasarımcısı** ve doğrulama oluşturmak istediğiniz sütunun veya tablonun çift tıklayın. Bu eylem otomatik olarak oluşturur bir <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> olay işleyicisi. Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) veya [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Tam bir örnek için bkz. [izlenecek yol: Bir veri kümesine doğrulama ekleme](https://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
   
 ## <a name="validate-data"></a>Verileri doğrulama  
  Bir veri kümesi içinde doğrulama aşağıdaki yollarla gerçekleştirilebilir:  
   
-- Uygulamaya özgü doğrulama oluşturarak değişiklikleri sırasında bir tek veri sütundaki değerleri kontrol edebilirsiniz.  Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Uygulamaya özgü doğrulama oluşturarak değişiklikleri sırasında bir tek veri sütundaki değerleri kontrol edebilirsiniz.  Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Değerleri bir tüm veriler için veri denetleyebilirsiniz kendi uygulamaya özgü doğrulama oluşturarak satır değişiyor. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Değerleri bir tüm veriler için veri denetleyebilirsiniz kendi uygulamaya özgü doğrulama oluşturarak satır değişiyor. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
-- Benzersiz kısıtlamalar, anahtarlar vb. gerçek bir şema tanımı veri kümesinin bir parçası olarak oluşturarak. Şema tanımı doğrulama ekleme hakkında daha fazla bilgi için bkz. [sınırlamak için benzersiz değerler içeren bir DataColumn](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- Benzersiz kısıtlamalar, anahtarlar vb. gerçek bir şema tanımı veri kümesinin bir parçası olarak oluşturarak. Şema tanımı doğrulama ekleme hakkında daha fazla bilgi için bkz. [sınırlamak için benzersiz değerler içeren bir DataColumn](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
 - Özelliklerini ayarlayarak <xref:System.Data.DataColumn> nesnenin, gibi <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, ve <xref:System.Data.DataColumn.Unique%2A>.  
   
   Tarafından tetiklenen çeşitli olayları <xref:System.Data.DataTable> nesnesi bir değişiklik kaydı oluştuğu zaman:  
   
-- <xref:System.Data.DataTable.ColumnChanging> Ve <xref:System.Data.DataTable.ColumnChanged> olayları oluştuğunda sırasında ve sonrasında her değişiklik için tek bir sütun. <xref:System.Data.DataTable.ColumnChanging> Olay, belirli sütunlardaki değişiklikleri doğrulamak istediğinizde yararlıdır. Önerilen değişikliğin hakkında bilgi içeren olay bağımsız değişkeni olarak geçirilir. Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- <xref:System.Data.DataTable.ColumnChanging> Ve <xref:System.Data.DataTable.ColumnChanged> olayları oluştuğunda sırasında ve sonrasında her değişiklik için tek bir sütun. <xref:System.Data.DataTable.ColumnChanging> Olay, belirli sütunlardaki değişiklikleri doğrulamak istediğinizde yararlıdır. Önerilen değişikliğin hakkında bilgi içeren olay bağımsız değişkeni olarak geçirilir. Daha fazla bilgi için [nasıl yapılır: Sütun değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- <xref:System.Data.DataTable.RowChanging> Ve <xref:System.Data.DataTable.RowChanged> olayları oluştuğunda sırasında ve sonrasında herhangi bir satır değişikliği. <xref:System.Data.DataTable.RowChanging> Daha genel bir olay işleme çözümüdür. Bu, bir değişiklik yere satırda oluştuğunu, ancak hangi sütunun değişti bilmiyorum gösterir. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- <xref:System.Data.DataTable.RowChanging> Ve <xref:System.Data.DataTable.RowChanged> olayları oluştuğunda sırasında ve sonrasında herhangi bir satır değişikliği. <xref:System.Data.DataTable.RowChanging> Daha genel bir olay işleme çözümüdür. Bu, bir değişiklik yere satırda oluştuğunu, ancak hangi sütunun değişti bilmiyorum gösterir. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
   Varsayılan olarak, her değişiklik bir sütunu için bu nedenle dört olayları başlatır. İlk <xref:System.Data.DataTable.ColumnChanging> ve <xref:System.Data.DataTable.ColumnChanged> değiştirilirken belli sütun için olayları. Sonraki olan <xref:System.Data.DataTable.RowChanging> ve <xref:System.Data.DataTable.RowChanged> olayları. Satırda birden çok değişiklik yaptığınız, her değişiklik için olayları gerçekleştirilecektir.  
   
@@ -94,16 +94,16 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 - Sütun hatasını ayarlayarak önerilen değeri Reddet (<xref:System.Data.DataRow.SetColumnError%2A>) gelen sütun değiştirme olay işleyicisinin içerisinde.  
   
-- İsteğe bağlı olarak bir <xref:System.Windows.Forms.ErrorProvider> denetimi kullanıcıya bir hata iletisi görüntüler. Daha fazla bilgi için [ErrorProvider bileşeni](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- İsteğe bağlı olarak bir <xref:System.Windows.Forms.ErrorProvider> denetimi kullanıcıya bir hata iletisi görüntüler. Daha fazla bilgi için [ErrorProvider bileşeni](https://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
-  Doğrulama de yapılabilir sırasında <xref:System.Data.DataTable.RowChanging> olay. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Doğrulama de yapılabilir sırasında <xref:System.Data.DataTable.RowChanging> olay. Daha fazla bilgi için [nasıl yapılır: Satır değişiklikleri sırasında veri doğrulama](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Satır değişiklikleri sırasında veri doğrulama  
  Doğrulamak istediğiniz her bir sütunun, uygulamanızın gereksinimlerini karşılayan verileri içerdiğini doğrulamak için kod yazabilirsiniz. Önerilen değer kabul edilebilir değilse, hata içerdiğini belirtmek için sütunu ayarlayarak bunu yapabilirsiniz. Aşağıdaki örnekler bir sütun hatasını belirtmektedir olduğunda `Quantity` 0 veya daha az sütun. Satır değiştiren olay işleyicileri aşağıdaki örneklere benzemelidir.  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>(Visual Basic) değiştiğinde verileri bir satır doğrulamak için  
   
-1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem otomatik olarak oluşturur <xref:System.Data.DataTable.RowChanging> olay işleyicisine <xref:System.Data.DataTable> veri kümesinin parçalı sınıf dosyasında.  
   
@@ -114,7 +114,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Bir satır (C#) değiştiğinde verileri doğrulamak için  
   
-1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem için bir parçalı sınıf dosyası oluşturur <xref:System.Data.DataTable>.  
   
@@ -144,7 +144,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>Değiştirilen satırların almak için  
- Her satırda bir veri tablosuna sahip bir <xref:System.Data.DataRow.RowState%2A> geçerli durumunu satır değerleri kullanarak izler özelliği <xref:System.Data.DataRowState> sabit listesi. Çağırarak bir dataset ya da veri tablosundan değiştirilen satırları döndürebilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable>. Değişiklikler çağırmadan önce mevcut doğrulayabilirsiniz `GetChanges` çağırarak <xref:System.Data.DataSet.HasChanges%2A> bir veri kümesinin yöntemi. Hakkında daha fazla bilgi için <xref:System.Data.DataSet.HasChanges%2A>, bkz: [nasıl yapılır: Değiştirilen satırları denetleme](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
+ Her satırda bir veri tablosuna sahip bir <xref:System.Data.DataRow.RowState%2A> geçerli durumunu satır değerleri kullanarak izler özelliği <xref:System.Data.DataRowState> sabit listesi. Çağırarak bir dataset ya da veri tablosundan değiştirilen satırları döndürebilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable>. Değişiklikler çağırmadan önce mevcut doğrulayabilirsiniz `GetChanges` çağırarak <xref:System.Data.DataSet.HasChanges%2A> bir veri kümesinin yöntemi. Hakkında daha fazla bilgi için <xref:System.Data.DataSet.HasChanges%2A>, bkz: [nasıl yapılır: Değiştirilen satırları denetleme](https://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
 > Bir veri kümesi veya veri tablosuna değişiklikleri sonra (çağırarak <xref:System.Data.DataSet.AcceptChanges%2A> yöntemi), `GetChanges` yöntemi hiçbir veri döndürür. Değiştirilen satırların işlenecek uygulamanız gerekiyorsa çağırmadan önce değişiklikleri işleme `AcceptChanges` yöntemi.  
@@ -215,5 +215,5 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Windows Forms DataGridView denetiminde verileri doğrulama](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
-- [Nasıl yapılır: Windows Forms ErrorProvider bileşeni ile Form doğrulama için hata simgeleri görüntüleme](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+- [Nasıl yapılır: Windows Forms DataGridView denetiminde verileri doğrulama](https://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [Nasıl yapılır: Windows Forms ErrorProvider bileşeni ile Form doğrulama için hata simgeleri görüntüleme](https://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559893"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693780"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
   
 - [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ayrı ad alanında DataContext ve veri sınıfları oluşturmak için ayarları sağlar. Bu mantıksal ayrılığı veri varlık katmanı ve veri erişimi sağlar.  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> yönteminin bir uygulamada farklı katmanlarından gelen DataContext bir araya getirmenize olanak tanıyan. Daha fazla bilgi için [N katmanı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> yönteminin bir uygulamada farklı katmanlarından gelen DataContext bir araya getirmenize olanak tanıyan. Daha fazla bilgi için [N katmanı ve uzak uygulamalarla LINQ-SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Sunu katmanı  
  *Sunu katmanı* kullanıcıların uygulamayla etkileşim katmanı gösterir. Ek uygulama mantığı genellikle de içerir. Tipik bir sunu katmanı bileşenleri şunları içerir:  
   
 - Veri bileşenleri gibi bağlama <xref:System.Windows.Forms.BindingSource> ve <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sunu katmanı kullanmak için varlık sınıfları.  
+- Verilerin temsillerini gibi nesne [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sunu katmanı kullanmak için varlık sınıfları.  
   
   Genellikle sunu katmanına bir hizmet başvurusu kullanarak orta katman erişir (örneğin, bir [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) uygulama). Sunu katmanı veri katmanı doğrudan erişimi yoktur. Sunu katmanı, orta katman veri erişim bileşeni yoluyla veri katmanı ile iletişim kurar.  
   
@@ -57,9 +57,9 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
   
 - Bileşenleri ve aşağıdaki gibi bir mantıksal veri erişim:  
   
-  - [TableAdapter bağdaştırıcıları](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [TableAdapter bağdaştırıcıları](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
+  - Verilerin temsillerini gibi nesne [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
   
   - Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.  
   
@@ -87,9 +87,9 @@ Veri katmanı
   
  [İzlenecek yol: N Katmanı Veri Uygulaması Oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [İzlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [LINQ to SQL ile N Katmanı ve Uzak Uygulamalar](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Data.Linq.ITable.Attach%2A>   

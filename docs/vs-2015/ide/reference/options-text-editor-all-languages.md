@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fc37f11d5f01af041610e066a9896f8e0e244fcc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e3d62bf388725b454d771e8cdd59ec963775eeb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443370"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674760"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
  Bazı programlama dilleri, ancak diğerleri genel seçenekler sayfalarındaki seçeneği seçildiğinde, gri bir onay işareti görüntülenir.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="statement-completion"></a>Deyim Tamamlama  
  Üyeleri otomatik Listele  

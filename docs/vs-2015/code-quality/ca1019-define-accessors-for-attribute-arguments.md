@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4c21a3e4daeea64dd36c42bd986fcda75ad0bcaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01d4b421f196eec7401f12ca8eeb7a52b2396065
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704196"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Öznitelik bağımsız değişkenleri için erişimciler tanımlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,4 +77,4 @@ ms.locfileid: "54791195"
  [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Öznitelikler](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
+ [Öznitelikler](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

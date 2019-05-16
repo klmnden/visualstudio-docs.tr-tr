@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437752"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683933"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay özniteliğini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DebuggerTypeProxy özniteliğini kullanma](../debugger/using-debuggertypeproxy-attribute.md) [hata ayıklayıcı görüntü öznitelikleriyle hata ayıklamayı geliştirme](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [DebuggerTypeProxy özniteliğini kullanma](../debugger/using-debuggertypeproxy-attribute.md) [hata ayıklayıcı görüntü öznitelikleriyle hata ayıklamayı geliştirme](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

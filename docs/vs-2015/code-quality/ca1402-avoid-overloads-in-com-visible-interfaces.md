@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb5df0db7bc126a585b97390ec5785662def81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: abf6382dfba8b8d9c3cc0ed6ccf90e929afca589
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694970"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: COM görünebilir arabirimler içinde aşırı yüklemelerden kaçının
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,4 +74,4 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Yönetilmeyen kod ile birlikte](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long veri türü](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ [Yönetilmeyen kod ile birlikte](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long veri türü](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)

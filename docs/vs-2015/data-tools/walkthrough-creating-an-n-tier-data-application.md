@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424740"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675625"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 - Kullanarak bir türü belirtilmiş veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.  
   
-- Oluşturulan ayrı [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi kodunu farklı projelere.  
+- Oluşturulan ayrı [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi kodunu farklı projelere.  
   
 - Veri erişim katmanına çağrı göndermek için bir Windows Communication Foundation (WCF) hizmeti oluşturma.  
   
@@ -381,7 +381,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, Windows tabanlı bir uygulama içinde ilgili verileri kaydettikten sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Örneğin, bu uygulamada aşağıdaki geliştirmeleri yapabilirsiniz:  
   
-- Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.  
   

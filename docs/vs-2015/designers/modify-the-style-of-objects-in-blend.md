@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442448"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681421"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ ms.locfileid: "63442448"
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [stil oluşturma](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Bir denetime stil veya şablon uygulama  
- Bir nesneye sağ [nesneler ve zaman çizelgesi](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelinde öğesini **şablonu Düzen**ve ardından **kaynağı Uygula**.  
+ Bir nesneye sağ [nesneler ve zaman çizelgesi](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) panelinde öğesini **şablonu Düzen**ve ardından **kaynağı Uygula**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Varsayılan stil veya şablon denetiminin geri yükleme  
- İstediğiniz denetimi seçin ve [özellikleri](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) paneli, bulun **stili** veya **şablon** özelliği. ' A tıklayarak **Gelişmiş Seçenekler** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")ve ardından **sıfırlama** kısayol menüsünde.  
+ İstediğiniz denetimi seçin ve [özellikleri](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) paneli, bulun **stili** veya **şablon** özelliği. ' A tıklayarak **Gelişmiş Seçenekler** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")ve ardından **sıfırlama** kısayol menüsünde.  
   
 ## <a name="Visual"></a> Görsel durumları: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme  
  Denetimlerin kullanıcı denetimine göre farklı görsel görünümlerini olabilir. Örneğin, bir kullanıcı buna tıkladığında veya bir animasyon çalıştırabilir yeşile bir düğme yapabilirsiniz. Kısaltır veya geçişleri kullanarak görsel durumlar arasındaki süreyi uzatabilir.  

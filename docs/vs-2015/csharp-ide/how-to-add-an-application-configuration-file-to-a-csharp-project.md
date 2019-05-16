@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681721"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyerek, ortak dil çalışma zamanının nasıl bulur ve derleme dosyalarını yükler özelleştirebilirsiniz. Uygulama yapılandırma dosyaları hakkında daha fazla bilgi için bkz. [çalışma zamanı derlemeleri nasıl konumlandırır](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
+Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyerek, ortak dil çalışma zamanının nasıl bulur ve derleme dosyalarını yükler özelleştirebilirsiniz. Uygulama yapılandırma dosyaları hakkında daha fazla bilgi için bkz. [çalışma zamanı derlemeleri nasıl konumlandırır](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
 > Windows Store desteklemiyor <xref:System.Configuration>. Sonuç olarak, Store uygulamaları, bir app.config şablonunu içermez.  
@@ -44,7 +44,7 @@ Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyere
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulama ayarları (.NET) yönetme](../ide/managing-application-settings-dotnet.md)   
- [Yapılandırma dosyası şeması](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Uygulamaları yapılandırma](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Nasıl yapılır: Bir uygulamayı .NET Framework sürümünü hedefleyecek şekilde yapılandırma](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Yapılandırma dosyası şeması](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [Uygulamaları yapılandırma](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [Nasıl yapılır: Bir uygulamayı .NET Framework sürümünü hedefleyecek şekilde yapılandırma](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

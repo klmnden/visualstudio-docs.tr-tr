@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb08a016261ac0836ba6dd2dde5d8b0812aab806
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704914"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +53,15 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
   Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
   
-- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
 - Veri modelleri de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
-- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Hizmet projesi oluşturma  
  Bu izlenecek yol için bir proje oluşturarak başlayın bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -326,7 +326,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Bir veri kümesine WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-a-dataset.md)   
- [Genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
- [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Veri Bağlamaya Genel Bakış](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Genel bakış](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
+ [Entity Framework'e Genel Bakış](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
+ [WPF ve Silverlight Tasarımcısı genel bakış](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Veri Bağlamaya Genel Bakış](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

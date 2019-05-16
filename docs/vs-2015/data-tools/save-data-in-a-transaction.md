@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692461"
 ---
 # <a name="save-data-in-a-transaction"></a>İşleme veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 2. Projeyi adlandırın **SavingDataInATransactionWalkthrough**.  
   
-3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
 ## <a name="create-a-database-data-source"></a>Veritabanı veri kaynağı oluşturma  
- Bu adımı kullanan [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) dayalı bir veri kaynağını oluşturmak için `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.  
+ Bu adımı kullanan [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) dayalı bir veri kaynağını oluşturmak için `Customers` ve `Orders` Northwind örnek veritabanındaki tablolar.  
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   

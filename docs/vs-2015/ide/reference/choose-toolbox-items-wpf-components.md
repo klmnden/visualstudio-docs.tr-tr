@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433694"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680337"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Araç Kutusu Öğelerini, WPF Bileşenlerini Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarı
 - Bir bileşen yanındaki onay kutusunu seçtiğinizde, söz konusu bileşen için bir simge görüntülenir **araç kutusu**.  
   
   > [!TIP]
-  > Örneği WPF denetiminin proje belge düzenlenmesi için açıldı eklemek için sürükleyin, **araç kutusu** Tasarım görünümü yüzeyine simgesi. Varsayılan işaretleme ve kod bileşeni için projenize değiştirmek hazır eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini yönetme](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılır: Araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Örneği WPF denetiminin proje belge düzenlenmesi için açıldı eklemek için sürükleyin, **araç kutusu** Tasarım görünümü yüzeyine simgesi. Varsayılan işaretleme ve kod bileşeni için projenize değiştirmek hazır eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini yönetme](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılır: Araç kutusu sekmeleri işlemek](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Bir bileşen yanındaki onay kutusunu temizlendiğinde, karşılık gelen simgeyi kaldırılacak **araç kutusu.**  
   
@@ -42,13 +42,13 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarı
   WPF denetimleri, girdileri bilgisayarınızın kayıt defterinde mevcut adlarını listeler.  
   
   Ad Alanı  
-  Hiyerarşisini görüntüler [NIB: .NET Framework sınıf kitaplığı](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) bileşeni yapısını tanımlayan ad. Bilgisayarınızda yüklü her .NET Framework ad alanı içinde kullanılabilir bileşenleri listelemek için bu sütun sıralama.  
+  Hiyerarşisini görüntüler [NIB: .NET Framework sınıf kitaplığı](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) bileşeni yapısını tanımlayan ad. Bilgisayarınızda yüklü her .NET Framework ad alanı içinde kullanılabilir bileşenleri listelemek için bu sütun sıralama.  
   
   Derleme adı  
   Her bileşen için ad alanı içeren bir .NET Framework derlemesinin adını görüntüler. Bilgisayarınızda yüklü her .NET Framework derlemesi içindeki ad alanlarını listelemek için bu sütun sıralama.  
   
   Dizin  
-  .NET Framework derlemesinin konumunu görüntüler. Genel Derleme Önbelleği tüm derlemeler için varsayılan konumdur. Genel Derleme Önbelleği hakkında daha fazla bilgi için bkz: [derlemeler ve genel derleme önbelleği ile çalışma](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
+  .NET Framework derlemesinin konumunu görüntüler. Genel Derleme Önbelleği tüm derlemeler için varsayılan konumdur. Genel Derleme Önbelleği hakkında daha fazla bilgi için bkz: [derlemeler ve genel derleme önbelleği ile çalışma](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Filtre**  
@@ -72,10 +72,10 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarı
   
   Ayrıca, tasarım zamanı meta verileri özel denetim ve bu meta veriler için uygulanırsa belirtir <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> ayarlanır `false`, denetimin araç kutusunda görünmüyor.  
   
-  Ad alanını ve derlemeyi denetiminizin eşleyerek denetimlerinizi XAML görünümünde doğrudan başvurabilirsiniz. Daha fazla bilgi için [nasıl yapılır: XAML içinde bir Namespace alma](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  Ad alanını ve derlemeyi denetiminizin eşleyerek denetimlerinizi XAML görünümünde doğrudan başvurabilirsiniz. Daha fazla bilgi için [nasıl yapılır: XAML içinde bir Namespace alma](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Araç kutusu öğelerini Seç iletişim kutusu (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [Araç kutusu öğelerini Seç iletişim kutusu (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Araç kutusu](../../ide/reference/toolbox.md)   
- [Nasıl yapılır: Bir üçüncü taraf WPF denetimi bir WPF uygulamasında kullanma](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [WPF Tasarımcısı](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Nasıl yapılır: Bir üçüncü taraf WPF denetimi bir WPF uygulamasında kullanma](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [WPF Tasarımcısı](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445860"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705894"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Birim Testlerinde Microsoft.VisualStudio.TestTools.UnitTesting Üyelerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Birim test, birim testi çerçevesi destekler [!INCLUDE[vsprvs](../includes/vspr
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Bir arama sıralamayı oluşturmak için kullanılan öznitelikler
- Aşağıdaki özniteliklerden birini ile donatılmış bir kod öğesi belirttiğiniz şu anda çağrılır. Daha fazla bilgi için [birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Aşağıdaki özniteliklerden birini ile donatılmış bir kod öğesi belirttiğiniz şu anda çağrılır. Daha fazla bilgi için [birim testinin anatomisi](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Derlemeler için
  Derlemenizi kaldırılmadan önce Assemblyınitialize ve AssemblyCleanup derlemenizi yüklendikten sonra sağ ve sağ verilir.
@@ -64,7 +64,7 @@ Birim test, birim testi çerçevesi destekler [!INCLUDE[vsprvs](../includes/vspr
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Test sınıfları ve yöntemleri tanımlamak için kullanılan öznitelikleri
- Her test sınıfı TestClass özniteliği olmalıdır ve her test yönteminin TestMethod özniteliği olmalıdır. Daha fazla bilgi için [birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Her test sınıfı TestClass özniteliği olmalıdır ve her test yönteminin TestMethod özniteliği olmalıdır. Daha fazla bilgi için [birim testinin anatomisi](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ Birim test, birim testi çerçevesi destekler [!INCLUDE[vsprvs](../includes/vspr
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Özel erişimciler ile kullanılan sınıflar
- Bölümünde anlatıldığı gibi [Private erişimci oluşturmaya yarayan kullanarak duyurun](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), birim testi için özel bir yöntem oluşturabilirsiniz. Bu oluşturma PrivateObject sınıfın bir nesnesi örnekleyen bir özel erişimci sınıfında oluşturur. PrivateObject sınıfı yansıma özel erişimci işleminin bir parçası kullanan bir sarmalayıcı sınıftır. PrivateType sınıfı benzer, ancak özel örnek yöntemleri çağırmak yerine özel statik yöntemleri çağırmak için kullanılır.
+ Bölümünde anlatıldığı gibi [Private erişimci oluşturmaya yarayan kullanarak duyurun](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), birim testi için özel bir yöntem oluşturabilirsiniz. Bu oluşturma PrivateObject sınıfın bir nesnesi örnekleyen bir özel erişimci sınıfında oluşturur. PrivateObject sınıfı yansıma özel erişimci işleminin bir parçası kullanan bir sarmalayıcı sınıftır. PrivateType sınıfı benzer, ancak özel örnek yöntemleri çağırmak yerine özel statik yöntemleri çağırmak için kullanılır.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

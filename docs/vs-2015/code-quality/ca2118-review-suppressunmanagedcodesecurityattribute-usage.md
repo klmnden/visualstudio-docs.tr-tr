@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687289"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059181"
  Bir ortak veya korumalı tür veya üye <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> özniteliği.
 
 ## <a name="rule-description"></a>Kural Tanımı
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM birlikte çalışma veya platform çağırma kullanan yönetilmeyen kodu yürüten üyeler için varsayılan güvenlik sistemi davranışını değiştirir. Genellikle, sistemi yapan bir [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) yönetilmeyen kod izni. Bu isteğe bağlı üye her çalıştırılışı için çalışma zamanında gerçekleştirilir ve izin için çağrı yığınında her çağıranı denetler. Özniteliği olduğunda sistemi yapan bir [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) izni: şu anki çağırıcı izinlerini arayan JIT olarak derlenmiş olduğunda denetlenir.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM birlikte çalışma veya platform çağırma kullanan yönetilmeyen kodu yürüten üyeler için varsayılan güvenlik sistemi davranışını değiştirir. Genellikle, sistemi yapan bir [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) yönetilmeyen kod izni. Bu isteğe bağlı üye her çalıştırılışı için çalışma zamanında gerçekleştirilir ve izin için çağrı yığınında her çağıranı denetler. Özniteliği olduğunda sistemi yapan bir [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) izni: şu anki çağırıcı izinlerini arayan JIT olarak derlenmiş olduğunda denetlenir.
 
  Bu öznitelik, öncelikle performansı artırmak için kullanılır; ancak, gelen performans artışı önemli güvenlik riskleri ile gelir. Öznitelik yerel yöntemlerini çağıran ortak üyelerde yerleştirirseniz, çağıranlar çağrı yığını (şu anki çağırıcı dışında) yönetilmeyen kod yönetilmeyen kod yürütme izni gerekmez. Genel üye Eylemler ve giriş işleme bağlı olarak, normalde güvenilir koda kısıtlı erişim işlevini güvenilmez arayanlara izin verebilir.
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059181"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [güvenlik iyileştirmeleri](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [güvenlik iyileştirmeleri](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

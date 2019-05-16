@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695033"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015’e Hoş Geldiniz
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
 1. [Visual Studio için Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Bir ortak kod temeli olarak C# tüm cihazlar için
 
-2. [Visual Studio ile Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Bir ortak kod için HTML, CSS ve JavaScript veya Typescript temeli
+2. [Visual Studio ile Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Bir ortak kod için HTML, CSS ve JavaScript veya Typescript temeli
 
 3. [Unity için Visual Studio Araçları](./cross-platform/visual-studio-tools-for-unity.md): 2B/3B Oyun GeliştirmeC#
 
@@ -67,9 +67,9 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 ## <a name="connect-your-apps-to-services"></a>Uygulamalarınızı hizmetlere bağlayın
  Bu hizmetler (her hizmet için bir hesap olduğunu varsayarak) hazır bağlanabilirsiniz:
 
-- [Azure mobil hizmetler](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure mobil hizmetler](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Azure Depolama](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure Depolama](https://azure.microsoft.com/documentation/services/storage/)
 
 - Bulutta depolanan verilere bağlanmak için kendi uygulamanızı Office 365 REST API'lerini tümleştirin. Daha fazla bilgi için [bu örnekleri](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -79,7 +79,7 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 ## <a name="build-test-and-manage-your-code"></a>Derleme, test etme ve kodunuzu yönetin
 
 ### <a name="check-in-your-code"></a>Kodunuzu iade edin
- Kodun en son sürümlerini paylaşımda gerek bir takımda çalışıyorsanız, ekipteki herkesin aynı kod temeline kullanarak şekilde. Visual Studio sürüm denetimi Git veya TFVC (Team Foundation sürüm denetimi) ile sağlamak için Visual Studio Team Services veya Team Foundation Server ile sorunsuz şekilde tümleşir. Kodunuzu yerel bir sunucuya herhangi bir bakım ile bulutta depolamak için Visual Studio Team Services'ı kullanın. Bir şirket içi sunucunun istiyorsanız Team Foundation Server'ı kullanın. Her bir kod projesi oluşturduğunuzda, sürüm denetimine ekleme seçeneğine sahip olursunuz. Hangi sürüm denetimi hakkında sistem ihtiyaçlarınız için en iyi olduğunu öğrenin: [Sürüm denetimi kullanın](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Kodun en son sürümlerini paylaşımda gerek bir takımda çalışıyorsanız, ekipteki herkesin aynı kod temeline kullanarak şekilde. Visual Studio sürüm denetimi Git veya TFVC (Team Foundation sürüm denetimi) ile sağlamak için Visual Studio Team Services veya Team Foundation Server ile sorunsuz şekilde tümleşir. Kodunuzu yerel bir sunucuya herhangi bir bakım ile bulutta depolamak için Visual Studio Team Services'ı kullanın. Bir şirket içi sunucunun istiyorsanız Team Foundation Server'ı kullanın. Her bir kod projesi oluşturduğunuzda, sürüm denetimine ekleme seçeneğine sahip olursunuz. Hangi sürüm denetimi hakkında sistem ihtiyaçlarınız için en iyi olduğunu öğrenin: [Sürüm denetimi kullanın](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Uygulamanızı oluşturun
  Yapabilecekleriniz [uygulamanızı yerel olarak derleme](./ide/compiling-and-building-in-visual-studio.md) ve doğru çalıştığından emin olun. Ardından [hata ayıklama araçları](./debugger/debugging-in-visual-studio.md) uygulamanızla ilgili sorunları gidermek için. Veya, paylaşılan derleme sunucuları üzerinde veya bulutta projeleri oluşturabilirsiniz. Sürüm denetimine takımınızdaki geliştiriciler iade etmiş kod oluşturmak için yapı sürecinizi otomatik hale getirin. Örneğin, gecelik bir veya daha fazla proje veya kodu iade her zaman oluşturabilirsiniz.
@@ -87,17 +87,17 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 ### <a name="test-your-app"></a>Uygulamanızı test edin
  [Birim testleri oluşturma](./test/unit-test-your-code.md) uygulamanızın kalitesini artırmak için. Her içinde ve yapınızın bir parçası olarak iade ettiğinizde bu testleri çalıştırabilirsiniz.
 
- Planlayın, oluşturun ve el ile çalıştırın ve otomatikleştirilmiş testler uygulamanız için. Test planları, paketler, test çalışmaları ve test sonuçlarını Visual Studio Team Services ile Bulut veya şirket içi Team Foundation Server ile depolanır. Daha fazla bilgi edinin [uygulamayı test etme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planlayın, oluşturun ve el ile çalıştırın ve otomatikleştirilmiş testler uygulamanız için. Test planları, paketler, test çalışmaları ve test sonuçlarını Visual Studio Team Services ile Bulut veya şirket içi Team Foundation Server ile depolanır. Daha fazla bilgi edinin [uygulamayı test etme](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Takımınızın kod daha hızlı sunun
- Takım üyeleriniz arasındaki engelleri kaldırın ve işbirliğini geliştirin. Daha da İleri gidin ve uygulamanızın sürümünü her bir aşama içerenlere kadar tüm üretim geliştirme sürecinizi otomatikleştirin. Uygulamanızın performans ve kullanılabilirlik zaman canlı izleyin. Nasıl müşterilerinizin uygulamanızı aslında kullandığını hakkında gerçek zamanlı kullanım verileri toplar. Bkz: [DevOps ve uygulama yaşam döngüsü yönetimi](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) daha fazla ayrıntı için.
+ Takım üyeleriniz arasındaki engelleri kaldırın ve işbirliğini geliştirin. Daha da İleri gidin ve uygulamanızın sürümünü her bir aşama içerenlere kadar tüm üretim geliştirme sürecinizi otomatikleştirin. Uygulamanızın performans ve kullanılabilirlik zaman canlı izleyin. Nasıl müşterilerinizin uygulamanızı aslında kullandığını hakkında gerçek zamanlı kullanım verileri toplar. Bkz: [DevOps ve uygulama yaşam döngüsü yönetimi](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) daha fazla ayrıntı için.
 
 ## <a name="whats-new"></a>Yenilikler nelerdir?
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)|[Visual C# için yenilikler nelerdir?](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 için yenilikler nelerdir?](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM'deki yenilikler](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[C++ için yenilikler nelerdir?](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic’teki Yenilikler](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript için yenilikler nelerdir?](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
+|[Visual Studio 2015'teki yenilikler](./what-s-new-in-visual-studio-2015.md)|[Visual C# için yenilikler nelerdir?](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 için yenilikler nelerdir?](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM'deki yenilikler](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[C++ için yenilikler nelerdir?](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic’teki Yenilikler](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript için yenilikler nelerdir?](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>Bu bölümde
@@ -116,18 +116,18 @@ Visual Studio'ya Hoş Geldiniz! Cihazlar için harika bir uygulama veya Masaüst
 
 - [Platformlar Arası Mobil Geliştirme](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
-- [C# ve Visual Basic programlama kavramları paylaşılan](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# ve Visual Basic programlama kavramları paylaşılan](https://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
-- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
 - [JavaScript](./javascript/javascript-in-visual-studio.md)
 
 - [Python](./python/getting-started-with-python.md)
 
-- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
-- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](https://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
-- [DevOps ve uygulama yaşam döngüsü yönetimi](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps ve uygulama yaşam döngüsü yönetimi](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 - [Bizimle İletişime Geçin](./ide/talk-to-us.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f325695cab1a5fd9db4206f16414ea462dfe49c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a7d24298821895a8bbbe9d3743556007abe17c72
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792678"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686871"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions belirt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,4 +51,4 @@ ms.locfileid: "54792678"
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [Masaüstü uygulamalarındaki kaynaklar](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Masaüstü uygulamalarındaki kaynaklar](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

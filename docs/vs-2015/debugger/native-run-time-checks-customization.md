@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 25849a4fb695e77771205e9d9af59cb5c7091c76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 434f2425b1eeefd82b954e47a8ced55491a7ec11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697815"
 ---
 # <a name="native-run-time-checks-customization"></a>Yerel Çalışma Zamanı Denetimlerini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,9 +58,9 @@ Derleme yaptığınızda **/RTC** (çalışma zamanı denetimleri) veya `runtime
  Özel bir raporlama işlevini kullanıyorsanız `_RTC_SetErrorType` bir hata rapor türü ile ilişkilendirilecek.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Sorgu için çalışma zamanı denetimleri hakkında bilgi  
- `_RTC_NumErrors` çalışma zamanı hata denetimleri tarafından algılanan hata türlerinin sayısını döndürür. Her hata kısa bir açıklamasını almak için 0'dan dönüş değeri olarak döngüye girer `_RTC_NumErrors`, yineleme değeri geçirme `_RTC_GetErrDesc` her döngüde. Daha fazla bilgi için [_RTC_NumErrors](http://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) ve [_RTC_GetErrDesc](http://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
+ `_RTC_NumErrors` çalışma zamanı hata denetimleri tarafından algılanan hata türlerinin sayısını döndürür. Her hata kısa bir açıklamasını almak için 0'dan dönüş değeri olarak döngüye girer `_RTC_NumErrors`, yineleme değeri geçirme `_RTC_GetErrDesc` her döngüde. Daha fazla bilgi için [_RTC_NumErrors](https://msdn.microsoft.com/library/7e82adae-38e2-4f8b-bc0b-37bda8109fd1) ve [_RTC_GetErrDesc](https://msdn.microsoft.com/library/7994ec2b-5488-4fd4-806d-a166c9a9f927).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](../debugger/how-to-use-native-run-time-checks.md)   
- [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [_CrtDbgReport, _CrtDbgReportW](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)
+ [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
+ [_CrtDbgReport, _CrtDbgReportW](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)

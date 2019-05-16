@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4fb7f14b4906d2342c4b190fa00f0da559ecde8c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679131"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent'ı kullanarak (C#, Visual Basic)
 
@@ -74,7 +74,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. [TechNet sitesini ziyaret edin](http://technet.microsoft.com/systemcenter/default) en son Yardım içeriğini almak için.
+3. [TechNet sitesini ziyaret edin](https://technet.microsoft.com/systemcenter/default) en son Yardım içeriğini almak için.
 
 #### <a name="FullPermissionsITLog"></a> S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?
  **Y:** Windows kullanan **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın. Örneğin:
@@ -108,7 +108,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   7. Uygulama havuzu olduğundan emin olun **okuma & yürütme** izinleri.
 
 ## <a name="MonitorEvents"></a> 2. adım: Uygulamanızı izlemeye başlama
- Windows PowerShell'i [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) start monitoring your App. komutu. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).
+ Windows PowerShell'i [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) start monitoring your App. komutu. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](https://technet.microsoft.com/library/dn465157.aspx).
 
 1. Web sunucunuzda açık bir **Windows PowerShell** veya **Windows PowerShell ISE** yönetici olarak bir komut istemi penceresi.
 
@@ -134,7 +134,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 
     |||
     |-|-|
-    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -veya-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Ayrıca [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) ve [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) komutları.|
+    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -veya-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Ayrıca [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) ve [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) komutları.|
     |*\<monitoringMode >*|İzleme modunu belirtin:<br /><br /> <ul><li>**İzleyici**: Özel durum olayları ve performans olayları hakkında olabildiğince az ayrıntı kaydeder. Bu mod varsayılan toplama planını kullanır.</li><li>**İzleme**: İşlev düzeyi ayrıntıları kaydeder veya SharePoint 2010 ve SharePoint 2013 uygulamalarında belirtilen toplama planını kullanarak izleyin. Bu mod, uygulamanızın daha yavaş çalışmasına neden olabilir.<br /><br /> <ul><li>[S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?](#FullPermissionsITLog)</li><li>[S: Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?](#Minimizing)</li></ul><br />     Bu örnek, bir SharePoint sitesi üzerindeki SharePoint uygulaması için olayları kaydeder:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" izleme "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml izleme" "C:\IntelliTraceLogs"**</li><li>**Özel**: Özel Toplama planını kullanarak özel ayrıntıları kaydeder belirtildi. İzleme başladıktan sonra toplama planını değiştirirseniz izlemeyi yeniden başlatmanız gerekir.</li></ul>|
     |*"\<outputPath >"*|IntelliTrace günlüklerinin depolanacağı tam dizin yolunu belirtin. Bu dizini izlemeye başlamadan önce oluşturduğunuzdan emin olun.|
     |*\<UInt32 >*|IntelliTrace günlüğünün çıkabileceği en büyük boyutu belirtin. IntelliTrace günlüğü için varsayılan en büyük boyut 250 MB'tır.<br /><br /> Günlük bu sınıra ulaştığında, aracı yeni girişlere yer açmak için en eski girişlerin üzerine yazar. Bu sınırı değiştirmek için kullanın **- Maximumfilesizeınmegabytes** seçeneğini veya düzenleme `MaximumLogFileSize` toplama planında özniteliği.|
@@ -229,7 +229,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.
 
 ## <a name="SaveEvents"></a> 3. adım: Kayıtlı olayları kaydetme
- Bir hata veya performans sorunu bulduğunuzda, kayıtlı olayları bir IntelliTrace günlüğüne kaydedin. Aracı günlüğü yalnızca olay kaydettiyse oluşturur. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).
+ Bir hata veya performans sorunu bulduğunuzda, kayıtlı olayları bir IntelliTrace günlüğüne kaydedin. Aracı günlüğü yalnızca olay kaydettiyse oluşturur. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](https://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Kayıtlı olayları kaydedip izlemeye devam etme
  IntelliTrace günlüğünü oluşturmak istediğinizde ancak uygulamanızı yeniden başlatmak veya izlemeyi durdurmak istemediğinizde bu adımları izleyin. Aracı, sunucu veya uygulama yeniden başlasa bile izlemeye devam eder.

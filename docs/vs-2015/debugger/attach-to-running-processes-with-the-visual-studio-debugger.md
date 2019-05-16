@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702638"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bilgisayardaki bir işleme ekleme
  Bir işleme iliştirmek için işlemin adını bilmeniz gerekir (bkz [yaygın hata ayıklama senaryoları](#BKMK_Scenarios) birkaç ortak işlem adları için). IIS'ye dağıtılan ASP.NET uygulamaları için daha eksiksiz yönergeler için bkz. [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Diğer uygulamalar için Görev Yöneticisi'nde işleminin adını bulma mümkün olabilir.
 
- Kullanırken **iliştirme** iletişim kutusunda, uzaktan hata ayıklama için ayarlanmış başka bir bilgisayara seçebilirsiniz. Daha fazla bilgi için [uzaktan hata ayıklama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Bir uzak bilgisayar seçtiğinizde, bu bilgisayar üzerinde çalışan kullanılabilir süreçlerin listesini görüntüleyebilir ve bir veya daha fazla hata ayıklama için iliştirin.
+ Kullanırken **iliştirme** iletişim kutusunda, uzaktan hata ayıklama için ayarlanmış başka bir bilgisayara seçebilirsiniz. Daha fazla bilgi için [uzaktan hata ayıklama](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Bir uzak bilgisayar seçtiğinizde, bu bilgisayar üzerinde çalışan kullanılabilir süreçlerin listesini görüntüleyebilir ve bir veya daha fazla hata ayıklama için iliştirin.
 
  **Bir uzak bilgisayar seçmek için:**
 
@@ -106,7 +106,7 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 
 ## <a name="additional-info"></a>Ek bilgi
 
-Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Etkin programı ayarlayabilirsiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi. Daha fazla bilgi için [nasıl yapılır: Geçerli programı ayarlama](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Etkin programı ayarlayabilirsiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi. Daha fazla bilgi için [nasıl yapılır: Geçerli programı ayarlama](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -136,7 +136,7 @@ Bazı uygulama türlerini (örneğin, Windows Store apps) için doğrudan bir i�
 > JavaScript'te yazılmış bir Windows Evrensel uygulaması iliştirmek için önce uygulama için hata ayıklamayı etkinleştirmeniz gerekir. Bkz: [hata ayıklayıcının](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) Windows geliştirme Merkezi'nde.
 
 > [!NOTE]
-> C++ programında yazılan koda eklenmesi hata ayıklayıcı için kod yayması gerekir `DebuggableAttribute`. Bu, kodunuzu otomatik olarak ile bağlayarak ekleyebileceğiniz [assemblydebug](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) bağlayıcı seçeneği.
+> C++ programında yazılan koda eklenmesi hata ayıklayıcı için kod yayması gerekir `DebuggableAttribute`. Bu, kodunuzu otomatik olarak ile bağlayarak ekleyebileceğiniz [assemblydebug](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) bağlayıcı seçeneği.
 
 ## <a name="what-debugger-features-can-i-use"></a>Hangi hata ayıklayıcısı özellikleri kullanabilir miyim?
 

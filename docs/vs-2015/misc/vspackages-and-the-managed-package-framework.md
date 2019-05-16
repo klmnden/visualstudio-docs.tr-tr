@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683054"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages ve yönetilen paket çerçevesini
 VSPackage ile yönetilen paket framework (MPF) sınıfları yerine COM birlikte çalışma sınıflarını kullanarak oluşturarak geliştirme süresini azaltabilirsiniz.  
@@ -25,7 +25,7 @@ VSPackage ile yönetilen paket framework (MPF) sınıfları yerine COM birlikte 
   
 - Kullanım [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] paket proje şablonu  
   
-     Daha fazla bilgi için [izlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturmak](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Daha fazla bilgi için [izlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturmak](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 - VSPackage olmadan derleme [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] paket proje şablonu  
   
@@ -36,7 +36,7 @@ VSPackage ile yönetilen paket framework (MPF) sınıfları yerine COM birlikte 
  Açıklar ve DLL dosyaları ve MPF sınıf ad alanları listeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [İzlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturma](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [İzlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturma](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Yönetilen bir VSPackage'ı nasıl oluşturulacağını açıklar.  
   
  [Yönetilen VSPackage'ları](../misc/managed-vspackages.md)  

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437588"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701189"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift Yönlü Dillerde Uygulamalar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Uygulama bu destek çift yönlü diller türleri  
   
-1. Windows uygulamaları. İki yönlü metin, sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren tam çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için iki yönlü destek](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Windows uygulamaları. İki yönlü metin, sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren tam çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için iki yönlü destek](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2. Web uygulamaları. Web Hizmetleri için destek ve alma UTF-8 ve Unicode metin gönderme, çift yönlü diller içeren uygulamalar için uygun hale getirir. Bir Web uygulaması yönlü destek derecesini bağımlı kullanıcının tarayıcı yönlü özelliklere ne kadar iyi destekler, bu nedenle web istemcisi uygulamalarını tarayıcılar için kendi kullanıcı arabirimini kullanır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET Web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Web uygulamaları. Web Hizmetleri için destek ve alma UTF-8 ve Unicode metin gönderme, çift yönlü diller içeren uygulamalar için uygun hale getirir. Bir Web uygulaması yönlü destek derecesini bağımlı kullanıcının tarayıcı yönlü özelliklere ne kadar iyi destekler, bu nedenle web istemcisi uygulamalarını tarayıcılar için kendi kullanıcı arabirimini kullanır. Visual Studio'da, Arapça veya İbranice metin, sağdan sola okuma düzeni, dosya kodlamasını ve yerel kültür ayarları için desteğe sahip uygulamalar oluşturabilirsiniz. Daha fazla bilgi için [ASP.NET Web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
 3. Konsol uygulamaları. Konsol uygulamaları, metin çift yönlü dil desteği içermez. Windows konsol uygulamaları ile nasıl çalıştığına ilişkin bir sonucu budur.  
   
@@ -79,7 +79,7 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 - Kod ve metin. (Aynı zamanda olan metin düzenleyiciyi) Kod düzenleyicisinde, Arapça veya İbranice adı sınıfları, İşlevler, değişkenler, özellikler, dize değişmez değerleri, öznitelikleri ve benzeri kullanabilirsiniz. Ancak, düzenleyici sağdan sola okuma düzeni desteklemez; metin her zaman sol kenar boşluğunda başlatır.  
   
     > [!TIP]
-    > Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri koyun önerilir. Daha fazla bilgi için [izlenecek yol: Windows formlarının konumunu bulma](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Bunları, programlarına kodlamak yerine kaynak dosyalarında dize değişmez değerleri koyun önerilir. Daha fazla bilgi için [izlenecek yol: Windows formlarının konumunu bulma](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     > Nasıl, bu dillerde adlı nesnelere başvurmak için tutarlı olması gerekir. Örneğin, Arapça bir değişkeni adlandırmada Kaşida kullanırsanız, bu değişkene söz konusu olduğunda her zaman Kaşida kullanmalısınız veya hatalara neden olabilecek.  
@@ -87,7 +87,7 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 - Kod açıklamaları. Açıklamalar, Arapça veya İbranice oluşturabilirsiniz. Açıklama Oluşturucu aracında bu diller de kullanabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Forms uygulamalarında iki yönlü destek Windows](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web uygulamaları için çift yönlü destek](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Forms uygulamalarında iki yönlü destek Windows](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [ASP.NET Web uygulamaları için çift yönlü destek](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Uygulamaları Genelleştirme](../ide/globalizing-applications.md)   
  [Uygulamaları Yerelleştirme](../ide/localizing-applications.md)

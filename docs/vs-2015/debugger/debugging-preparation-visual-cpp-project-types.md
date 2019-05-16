@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691338"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Hata ayıklama hazırlığı: Visual C++ Proje Türleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
    [Bu konudaki](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms uygulamaları (.NET)  
- **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: Bir Windows uygulaması projesi oluşturmak](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms uygulaması (.NET)** şablon oluşturur bir [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows Forms uygulaması. Daha fazla bilgi için [nasıl yapılır: Bir Windows uygulaması projesi oluşturmak](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Bu tür bir uygulamada hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yönetilen Windows Forms uygulamalarında benzer.  
   
@@ -117,4 +117,4 @@ Bu bölümde oluşturan temel proje türlerinde hata ayıklama işlemini açıkl
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Çalışan bir Program veya birden çok programlara ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Nasıl yapılır: Bir Windows uygulaması projesi oluşturma](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Nasıl yapılır: Bir Windows uygulaması projesi oluşturma](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

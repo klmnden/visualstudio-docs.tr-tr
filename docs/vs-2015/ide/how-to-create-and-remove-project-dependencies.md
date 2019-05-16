@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680371"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluştur
  [Projeleri ve Visual Studio çözümleri oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)   
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
- [NIB nasıl yapılır: Proje özellikleri ve yapılandırma ayarlarını değiştirme](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB nasıl yapılır: Proje özellikleri ve yapılandırma ayarlarını değiştirme](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

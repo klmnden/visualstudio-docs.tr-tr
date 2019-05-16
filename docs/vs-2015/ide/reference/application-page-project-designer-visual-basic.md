@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688090"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
  Aşağıdaki seçenekler, bir uygulamanın genel ayarlarını yapılandırmak etkinleştirin.  
   
  **Derleme adı**  
- Derleme bildirimini içeren çıktı dosyasının adını belirtir. Bu özelliği değiştirirseniz **çıkış adı** özelliği de değişir. Kullanarak bir komut isteminde bu değişikliği yapabilirsiniz [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Derleme bildirimini içeren çıktı dosyasının adını belirtir. Bu özelliği değiştirirseniz **çıkış adı** özelliği de değişir. Kullanarak bir komut isteminde bu değişikliği yapabilirsiniz [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Kök ad alanı**  
  Projedeki tüm dosyalar için temel ad alanını belirtir. Örneğin, ayarlarsanız **kök Namespace** için `Project1` ve sahip olduğunuz bir `Class1` kodunuzdaki herhangi bir ad dışında ad alanı olacaktır `Project1.Class1`. Varsa bir `Class2` ad alanında `Order` kodda, kendi ad alanı olacaktır `Project1.Order.Class2`.  
@@ -43,11 +43,11 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
  Silerseniz **kök Namespace**, kodu projenizin ad alanı yapısını belirtebilirsiniz.  
   
 > [!NOTE]
-> Global anahtar sözcüğü kullanıyorsanız bir [Namespace deyimi](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), projenizin kök ad alanı dışında bir ad alanı tanımlayabilirsiniz. Silerseniz **kök Namespace**, `Global` gereksinimini ortadan kaldırır üst düzey ad olur `Global` anahtar sözcüğü bir `Namespace` deyimi. Daha fazla bilgi için bkz: "Genel anahtar sözcüğü, arama Namespace deyimleri" [Visual Basic'de ad alanları](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Global anahtar sözcüğü kullanıyorsanız bir [Namespace deyimi](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), projenizin kök ad alanı dışında bir ad alanı tanımlayabilirsiniz. Silerseniz **kök Namespace**, `Global` gereksinimini ortadan kaldırır üst düzey ad olur `Global` anahtar sözcüğü bir `Namespace` deyimi. Daha fazla bilgi için bkz: "Genel anahtar sözcüğü, arama Namespace deyimleri" [Visual Basic'de ad alanları](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
- Kodunuzda ad alanları oluşturma hakkında daha fazla bilgi için bkz: [Namespace deyimi](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
+ Kodunuzda ad alanları oluşturma hakkında daha fazla bilgi için bkz: [Namespace deyimi](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
- Kök ad alanı özelliği hakkında daha fazla bilgi için bkz. [/RootNamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
+ Kök ad alanı özelliği hakkında daha fazla bilgi için bkz. [/RootNamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
   
  Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -71,10 +71,10 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
 > [!NOTE]
 > Windows çalışma zamanı türleri, böylece bunları hangi dil kullanır yerel nesneler olarak görünürler yansıtabilirsiniz. Örneğin, isteğe bağlı olarak, Windows çalışma zamanı ile etkileşim JavaScript uygulamaları JavaScript nesneleri bir dizi kullanın ve C# uygulamaları kitaplığı bir .NET nesneleri koleksiyon olarak kullanın. Projenin çıkış bir WinMD dosyası olarak paketleyerek Windows çalışma zamanı kullanan aynı teknolojiyi yararlanabilir.  
   
- Hakkında daha fazla bilgi için **uygulama türü** özelliğine bakın [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Bu özelliğe program aracılığıyla erişme hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Hakkında daha fazla bilgi için **uygulama türü** özelliğine bakın [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Bu özelliğe program aracılığıyla erişme hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Simgesi**  
- İstediğiniz, program simge olarak kullanılacak .ico dosyasını seçer. Seçin  **\<Gözat … >** için varolan grafiği gidin. Bkz: [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (veya [/win32icon (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ İstediğiniz, program simge olarak kullanılacak .ico dosyasını seçer. Seçin  **\<Gözat … >** için varolan grafiği gidin. Bkz: [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (veya [/win32icon (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Başlangıç formu / Başlangıç nesnesi / başlangıç URI'si**  
  Uygulamanın başlangıç formu ya da giriş noktası belirtir.  
@@ -85,7 +85,7 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
   
  Varsa **etkinleştir uygulama çerçevesi** temizlendiğinde, bu liste olur **Başlangıç nesnesi** ve formlar ve sınıflar veya modülleriyle gösterir bir `Sub Main`.  
   
- **Başlangıç nesnesi** uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Genellikle bu, uygulamanızda ya da çok ana formu ayarlandığından `Sub Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(hiçbiri)**. Daha fazla bilgi için [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Başlangıç nesnesi** uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Genellikle bu, uygulamanızda ya da çok ana formu ayarlandığından `Sub Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(hiçbiri)**. Daha fazla bilgi için [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Derleme bilgileri**  
  Görüntülemek için bu düğmeye tıklayın [derleme bilgileri iletişim kutusu](../../ide/reference/assembly-information-dialog-box.md).  
@@ -110,7 +110,7 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
  Aşağıdaki ayarlar kullanılabilir **Windows Uygulama Çerçevesi Özellikleri** bölümü. Bu seçenekler kullanılabilir yalnızca **etkinleştir uygulama çerçevesi** onay kutusu seçilidir. Bunu izleyen bir bölümde anlatılmaktadır **Windows Uygulama Çerçevesi Özellikleri** Windows Presentation Foundation (WPF) uygulamaları için ayarları.  
   
  **XP görsel stilleri etkinleştirme**  
- Etkinleştirir ya da olarak da bilinen Windows XP görsel stillerini devre dışı bırakır *Windows XP temalarını*. Windows XP görsel stilleri, örneğin, yuvarlatılmış köşeler ve dinamik renkleri denetimleriyle etkinleştirin. Varsayılan durumda etkindir. Windows XP görsel stilleri hakkında daha fazla bilgi için bkz: [Windows XP özellikleri ve Windows Forms denetimleri](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Etkinleştirir ya da olarak da bilinen Windows XP görsel stillerini devre dışı bırakır *Windows XP temalarını*. Windows XP görsel stilleri, örneğin, yuvarlatılmış köşeler ve dinamik renkleri denetimleriyle etkinleştirin. Varsayılan durumda etkindir. Windows XP görsel stilleri hakkında daha fazla bilgi için bkz: [Windows XP özellikleri ve Windows Forms denetimleri](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Tek örnek uygulama**  
  Kullanıcıların uygulama birden çok örneğini çalıştırmasını engellemek için bu onay kutusunu seçin. Varsayılan ayar için bu onay kutusu işaretli değildir. Bu ayar, uygulamanın çalıştırılması için birden fazla örneği sağlar.  
@@ -159,4 +159,4 @@ Kullanım **uygulama** sayfası Proje Tasarımcısı projenin uygulama ayarları
  <xref:System.Windows.Application> Nesne (örneğin, uygulama başlatma veya kapatma) belirli uygulama durumu değişiklikleri meydana geldiğinde olayları başlatır. Bu sınıf sunan olayları tam bir listesi için bkz. <xref:System.Windows.Application>. Bu olaylar kullanıcı kod bölümünde işlenmektedir `Application` kısmi sınıf.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Uygulama özelliklerini yönetme](../../ide/application-properties.md) [Office çözümlerinde kod yazma](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Uygulama özelliklerini yönetme](../../ide/application-properties.md) [Office çözümlerinde kod yazma](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

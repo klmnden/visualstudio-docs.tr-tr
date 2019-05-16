@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 495d98f4061c258c78b2b74929428aec4eb3ec0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678938"
 ---
 # <a name="step-9-try-other-features"></a>9. Adım: Diğer Özellikleri Deneme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Daha fazla bilgi edinmek için simgeleri ve renkleri değiştirmeyi, oyun zamanl
 - Simgelerin ve renklerin yerine kendi tercih ettiklerinizi kullanın.  
   
     > [!TIP]
-    > Etiketin bakmayın deneyin [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) özelliği.  
+    > Etiketin bakmayın deneyin [Forecolor](https://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) özelliği.  
   
 - Oyuncunun oyunu kazanmasının ne kadar sürdüğünü izleyen bir oyun zamanlayıcısı ekleyin.  
   

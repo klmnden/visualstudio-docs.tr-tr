@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: edec23d840723e37ecb469aadc412e5659e95007
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0ac931dfcf7b56619707a2bd42a32f5a369b04d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704988"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Basit veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcut denetimleri seçebilirsiniz **araç kutusu**, veya standart denetimlerinde kullanılamıyor işlevi uygulamanızı gerektiriyorsa, özel denetimler yazabilirsiniz. Bu izlenecek yol, uygulayan bir denetim oluşturma işlemi gösterilmektedir <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.DefaultBindingPropertyAttribute> verilere bağlı bir özellik içerebilir. Bu tür denetimler benzer bir <xref:System.Windows.Forms.TextBox> veya <xref:System.Windows.Forms.CheckBox>.  
   
- Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  Veri bağlama senaryoları denetimler yazarken, aşağıdaki veri bağlama özniteliklerden birini uygulamanız gerekir:  
   
@@ -71,7 +71,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 2. Projeyi adlandırın **SimpleControlWalkthrough**.  
   
-3. Seçin **Windows uygulama** tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama** tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SimpleControlWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   

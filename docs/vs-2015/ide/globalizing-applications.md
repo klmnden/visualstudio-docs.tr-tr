@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704325"
 ---
 # <a name="globalizing-applications"></a>Uygulamaları Genelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Genelleştirme, birden çok kültürde bu işlevler bir yazılım ürünü geli�
  Tarih, saat, sayı, para birimi ve diğer bilgileri kültür ayarı göre biçimlendirme sınıflarını açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Windows Forms’u Genelleştirme](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Windows Forms’u Genelleştirme](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Windows Forms genelleştirme hakkında Yardım sayfalara bağlantılar sağlar.  
   
- [Genelleştirme ve Yerelleştirme](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Genelleştirme ve Yerelleştirme](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Web formları sayfaları genelleştirme hakkında Yardım sayfalara bağlantılar sağlar.  
   
  [.NET Framework Tabanlı Uluslararası Uygulamalara Giriş](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Basic veya Visual C# kullanarak uluslararası bir pazar için yazılım geliştirme hakkında temel kavramları açıklar.  
   
- [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Dünya Çapında Kullanılmaya Hazır Uygulamalar Geliştirmek için En İyi Yöntemler](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Tasarım konuları ve terminolojisi gibi uluslararası bir hedef kitle için programlama hakkında bilgi sağlar.

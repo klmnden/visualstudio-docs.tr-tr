@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695473"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Metin işaretçileri eski API'si ile kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni k
 |[Nasıl yapılır: Özel Metin İşaretçileri Oluşturma](../extensibility/how-to-create-custom-text-markers.md)|Oluşturma ve bir özel metin işaretçisi türü metin görünümü ekleme işlemini açıklamaktadır.|  
 |[Nasıl yapılır: Metin İşaretçileri Kullanma](../extensibility/how-to-use-text-markers.md)|Metin işaretçileri ekleme işlemi açıklanmaktadır.|  
 |[Temel Düzenleyicinin İçinde](../extensibility/inside-the-core-editor.md)|Çekirdek Düzenleyici özelliklerini açıklar ve çekirdek Düzenleyici özelleştirme hakkında ayrıntılar sağlar.|  
-|[Düzenleyici Özellikleri](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Uygulamasında kullanılabilen özellikleri açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyici.|  
+|[Düzenleyici Özellikleri](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Uygulamasında kullanılabilen özellikleri açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyici.|  
   
 ## <a name="reference"></a>Başvuru  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

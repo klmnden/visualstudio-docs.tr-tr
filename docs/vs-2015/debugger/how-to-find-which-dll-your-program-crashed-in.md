@@ -26,18 +26,18 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e59a2109e408a290ab8b05a5fd8208c7bd1853
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44ebe042ff6e2507530e4be410e768550e922b44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703625"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Nasıl yapılır: Hangi DLL'de kilitlendiğini programınızın bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Uygulamanızı bir sistem DLL'i veya başka birisinin kodu çağrısı sırasında kilitleniyor bulmak kilitlenme oluştuğunda hangi DLL etkindi gerekirse. Kendi programımı dışında bir DLL içindeki bir kilitlenme karşılaşırsanız, konumu şunu kullanarak belirleyebilirsiniz **modülleri** penceresi.  
   

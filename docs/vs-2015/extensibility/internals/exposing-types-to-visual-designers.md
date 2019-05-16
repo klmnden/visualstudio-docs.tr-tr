@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691197"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Türleri Görsel Tasarımcıların Kullanımına Sunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436320"
      Geçici PE derlendiğinde, özel araç çıktısı için derleyici sağlanan yalnızca kaynak dosyası değil. Bu nedenle, bir geçici PE kullanan özel bir araç, diğer dosyalar projesinde bağımsız olarak derlenebilir Çıkış dosyalarını oluşturmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [BuildManager nesnesine giriş](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [BuildManager nesnesine giriş](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Tek dosya oluşturucular ekleme](../../extensibility/internals/implementing-single-file-generators.md)   
  [Bir projenin varsayılan Namespace belirleme](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Tek Dosya Oluşturucuları Kaydetme](../../extensibility/internals/registering-single-file-generators.md)

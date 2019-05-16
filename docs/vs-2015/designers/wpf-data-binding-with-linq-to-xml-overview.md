@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f6a0490b13c4061194390fedbefebfba60860a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689883"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
 |Bağlama kaynağı|Sunu için kullanıcı Arabirimi öğesi için sağlanan bir veya daha fazla değerler için kaynak nesne. WPF otomatik olarak kaynakları bağlama olarak aşağıdaki türlerini destekler: CLR nesneleri, ADO.NET veri nesneleri, XML verilerinin (XPath veya LINQ to XML sorgularında) veya başka bir <xref:System.Windows.DependencyObject>.|  
 |Kaynak yolu|Değeri veya değerleri kümesi bağlanacağını çözümler bağlama kaynağı özelliği.|  
   
- Bağımlılık özelliği bir belirli bir kullanıcı Arabirimi öğesinin dinamik olarak hesaplanan bir özellik temsil eden WPF kavramıdır. Örneğin, varsayılan değerleri veya bir üst öğe tarafından sağlanan değerleri bağımlılık özellikleri genellikle sahiptir. Bu özel özellikleri örnekleri tarafından desteklenen <xref:System.Windows.DependencyProperty> sınıfı (ve değil olarak alanları standart özellikleri ile). Daha fazla bilgi için [bağımlılık özelliklerine genel bakış](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
+ Bağımlılık özelliği bir belirli bir kullanıcı Arabirimi öğesinin dinamik olarak hesaplanan bir özellik temsil eden WPF kavramıdır. Örneğin, varsayılan değerleri veya bir üst öğe tarafından sağlanan değerleri bağımlılık özellikleri genellikle sahiptir. Bu özel özellikleri örnekleri tarafından desteklenen <xref:System.Windows.DependencyProperty> sınıfı (ve değil olarak alanları standart özellikleri ile). Daha fazla bilgi için [bağımlılık özelliklerine genel bakış](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
 ### <a name="dynamic-data-binding-in-wpf"></a>Dinamik veri bağlama ' WPF'de  
  Varsayılan olarak, veri bağlama, yalnızca hedef UI öğesi başlatıldığında gerçekleşir. Bu adlandırılır *tek seferlik* bağlama. Birçok amaç için yetersiz budur; genellikle bir veri bağlama çözüm değişiklikleri aşağıdakilerden birini kullanarak çalışma zamanında dinamik olarak dağıtılmasını gerektirir:  
@@ -53,7 +53,7 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
   
   Tek veya çift yönlü gerçekleşmesi için bağlama için kaynak değişikliği bildirim mekanizması, örneğin uygulayarak uygulamalıdır <xref:System.ComponentModel.INotifyPropertyChanged> kullanarak veya arabirim bir *PropertyNameChanged* desteklenen her bir özellik için bir desen.  
   
-  WPF veri bağlama hakkında daha fazla bilgi için bkz: [veri bağlama (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  WPF veri bağlama hakkında daha fazla bilgi için bkz: [veri bağlama (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML sınıfları dinamik özellikleri  
  Çoğu LINQ to XML sınıfları uygun değil uygun WPF dinamik veri kaynakları: Bazı faydalı bilgiler, yalnızca yöntemler (ve özellikleri) kullanılabilir ve bu sınıflar özelliklerinde değişiklik bildirimleri kullanılmaz. LINQ to XML WPF verilerini bağlama desteklemek için bir dizi kullanıma sunan *Dinamik Özellikler*.  
@@ -91,6 +91,6 @@ Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to XML ile WPF verilerini bağlama](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML dinamik özellikleri](../designers/linq-to-xml-dynamic-properties.md)   
- [WPF'de XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [Veri bağlama (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
+ [WPF'de XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+ [Veri bağlama (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [İş akışı biçimlendirmesi kullanma](http://go.microsoft.com/fwlink/?LinkId=98685)

@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685296"
 ---
 # <a name="commandtable-element"></a>CommandTable Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +63,13 @@ CommandTable .vsct dosyası kök öğesidir. Bu gerçek düzeni ve IDE VSPackage
 |[VisibilityConstraints Öğesi](../extensibility/visibilityconstraints-element.md)|İsteğe bağlı. Komutlar ve araç çubukları statik görünürlüğünü belirler.|  
 |[KeyBindings Öğesi](../extensibility/keybindings-element.md)|İsteğe bağlı. Kısayol tuş birleşimleri, komutları belirtir.|  
 |[UsedCommands Öğesi](../extensibility/usedcommands-element.md)|İsteğe bağlı. İsteğe bağlı olarak kendi özgün diğer VSPackage'ları tarafından desteklenen sürümüne uygulamak bir VSPackage sağlar.|  
-|[Symbols Öğesi](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|İsteğe bağlı. Derleyici için herhangi bir sembol verilerini--GUID'leri, kimlikleri ve benzeri--içerir.|  
+|[Symbols Öğesi](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|İsteğe bağlı. Derleyici için herhangi bir sembol verilerini--GUID'leri, kimlikleri ve benzeri--içerir.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|Hiçbiri||  
+|None||  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Komut Tablosu (.Vsct) Dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

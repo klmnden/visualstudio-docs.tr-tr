@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704078"
 ---
 # <a name="project-type-design-decisions"></a>Proje Türü Tasarım Kararları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili çeşitli tasa
   
  Proje öğelerinde, dosyaları veya bir veritabanı havuzu veya veri bağlantıları nesneleri gibi daha soyut nesneleri Internet üzerinden olabilir. Öğeleri dosyalarıdır, proje başvurusu tabanlı veya dizin tabanlı bir proje olabilir.  
   
- Başvuru tabanlı projelerde birden fazla projede öğeleri görünür. Ancak, bir öğeyi temsil eden gerçek dosyayı yalnızca bir dizinde bulunur. Dizin tabanlı projelerde dizin yapısında tüm proje öğeleri var. Daha fazla bilgi için [projelerinde NIB: öğesi Yönetimi](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Başvuru tabanlı projelerde birden fazla projede öğeleri görünür. Ancak, bir öğeyi temsil eden gerçek dosyayı yalnızca bir dizinde bulunur. Dizin tabanlı projelerde dizin yapısında tüm proje öğeleri var. Daha fazla bilgi için [projelerinde NIB: öğesi Yönetimi](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Yerel öğeler, uygulamanın yüklendiği bilgisayarda depolanır. Uzak öğeler, yerel bir ağda ayrı bir sunucuya veya başka bir yerde Internet üzerinde depolanabilir.  
   
@@ -59,8 +59,8 @@ Yeni bir proje türü oluşturmadan önce proje türü ile ilgili çeşitli tasa
  Veri nesneleri, hizmetteki modunu kullanarak açıldığında değişiklikleri bellekte geçici bir konuma kaydedilir ve kullanıcı dosyayı kaydetmeyi el ile seçer kadar iletilmez. O zaman tüm değişiklikleri birlikte olmalıdır veya hiçbir değişiklik yapılmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Projelerinde NIB: öğesi yönetimi](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Projelerinde NIB: öğesi yönetimi](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Açma ve proje öğelerini kaydetme](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Proje kalıcılığı](../../extensibility/internals/project-persistence.md)   
  [Proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md)   

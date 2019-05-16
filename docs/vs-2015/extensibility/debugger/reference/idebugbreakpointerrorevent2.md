@@ -12,12 +12,12 @@ ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 989e196d933a778c2793700c835439fda616a42a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22ad0a7e1b14b036239d7b6a5931badb5787b752
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684815"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirim, kesme noktaları desteğini bir parçası olarak DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi).  
+ Bu arabirim, kesme noktaları desteğini bir parçası olarak DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi).  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  KODU oluşturur ve bir bekleyen kesme noktasının ayıklanan programa bağımlı olamaz, bu olay nesneyi gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  

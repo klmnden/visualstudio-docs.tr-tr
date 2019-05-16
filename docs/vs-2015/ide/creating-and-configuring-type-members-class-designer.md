@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701208"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tür Üyeleri Oluşturma ve Yapılandırma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
 |Modül (Yalnızca VB)|yöntem, özellik, alan, olay, oluşturucu, sabit|  
   
 > [!NOTE]
-> Bir özelliğin get ve set erişimcileri ek mantığa gerek duymadığında, otomatik uygulanan özellikleri (yalnızca C#) kullanarak özellik bildirimini daha kısa yapın. Tam imzayı göstermek için **sınıf diyagramı** menüsünde seçin **üyeler formatını Değiştir**, **tam imzayı görüntüle**. Otomatik uygulanan özellikler hakkında daha fazla bilgi için bkz: [Implemented Properties](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Bir özelliğin get ve set erişimcileri ek mantığa gerek duymadığında, otomatik uygulanan özellikleri (yalnızca C#) kullanarak özellik bildirimini daha kısa yapın. Tam imzayı göstermek için **sınıf diyagramı** menüsünde seçin **üyeler formatını Değiştir**, **tam imzayı görüntüle**. Otomatik uygulanan özellikler hakkında daha fazla bilgi için bkz: [Implemented Properties](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
   
@@ -131,7 +131,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
      **Not:** Üye oluşturmak için klavye kısayollarını da kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresi (Sınıf Tasarımcısı)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Tür üyelerini değiştirme  
- Sınıf Tasarımcısı, diyagram görüntülenen türlerin üyelerinde değişiklik yapmanıza olanak sağlar. Sınıf diyagramında görüntülenen ve salt okunur olmayan her türün üyelerini değiştirebilirsiniz. (Bkz [(Sınıf Tasarımcısı) salt okunur bilgileri görüntüleme](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Tür üyelerini tasarım yüzeyinde, Özellikler penceresinde ve Sınıf Ayrıntıları penceresinde yerinde düzenleme yaparak değiştirirsiniz.  
+ Sınıf Tasarımcısı, diyagram görüntülenen türlerin üyelerinde değişiklik yapmanıza olanak sağlar. Sınıf diyagramında görüntülenen ve salt okunur olmayan her türün üyelerini değiştirebilirsiniz. (Bkz [(Sınıf Tasarımcısı) salt okunur bilgileri görüntüleme](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Tür üyelerini tasarım yüzeyinde, Özellikler penceresinde ve Sınıf Ayrıntıları penceresinde yerinde düzenleme yaparak değiştirirsiniz.  
   
  Sınıf Ayrıntıları penceresinde görüntülenen tüm üyeler sınıf diyagramındaki türlerin üyelerini temsil eder. Dört üye türü vardır: yöntemler, özellikler, alanlar ve olaylar.  
   
@@ -263,7 +263,7 @@ Bu üyeleri bir sınıf türleri için diyagram ve bu üyelerin yapılandırma e
   
  Bir kaç özel durum dışında, Sınıf Ayrıntıları penceresindeki tüm hücreler düzenlenebilir:  
   
-- Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
+- Türün tamamı salt okunur olduğunda, örneğin başvurulan bir derlemede yer alıyor (bkz [salt okunur bilgilerini görüntüleme (Sınıf Tasarımcısı)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Sınıf Tasarımcısı'nda şekli seçtiğinizde, Sınıf Ayrıntıları penceresi ilgili ayrıntıları salt okunur halde görüntüler.  
   
 - Dizin oluşturucular için, ad bilgisi salt okunur ve geri kalanı (tür, değiştirici, özet) düzenlenebilir özelliktedir.  
   

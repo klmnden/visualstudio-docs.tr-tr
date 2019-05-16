@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110908"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674169"
 ---
 # <a name="summary-view"></a>Özet Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ ms.locfileid: "60110908"
 |**Kırpılmış çağrı ağacını Göster**|Çağrı ağacı Görünümü'nde en pahalı yürütme yollarını görüntüler. Daha fazla bilgi için [çağrı ağacı görünümü](../profiling/call-tree-view.md).|  
 |**Etkin satırları göster**|Araçlar yöntemini kullanarak toplanan veriyi profil oluşturma için kullanılamaz. Satırlar görünümünde en pahalı kaynak kodu satırlarını görüntüler. Daha fazla bilgi için [satırlar görünümü](../profiling/lines-view.md).|  
 |**Raporları Karşılaştır**|Görüntüler **seçin analiz dosyaları karşılaştırma** geçerli dosyayı karşılaştırmak için başka bir profil oluşturma veri dosyasını belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md).|  
-|**Rapor verilerini dışarı aktar**|Görüntüler **dışarı aktarma raporu** virgülle ayrılmış değer (.csv) veya .xml dosyaları olarak kaydetmek için bir veya daha fazla rapor görünümlerini belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Dışarı aktarma profil oluşturma araçları raporları](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Analiz edilen Raporu Kaydet**|Geçerli profil oluşturma veri dosyasını arabirimdeki daha hızlı açılır .vsps dosyası olarak kaydeder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [nasıl yapılır: Kaydetme analiz profil oluşturma veri dosyalarıyla](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Rapor verilerini dışarı aktar**|Görüntüler **dışarı aktarma raporu** virgülle ayrılmış değer (.csv) veya .xml dosyaları olarak kaydetmek için bir veya daha fazla rapor görünümlerini belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Dışarı aktarma profil oluşturma araçları raporları](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Analiz edilen Raporu Kaydet**|Geçerli profil oluşturma veri dosyasını arabirimdeki daha hızlı açılır .vsps dosyası olarak kaydeder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [nasıl yapılır: Kaydetme analiz profil oluşturma veri dosyalarıyla](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Rapor verilerini Filtrele**|Verileri rapor görünümünde sınırlandırmak için ölçüt belirleyebileceğiniz profil oluşturma rapor filtresi bölmesi görüntülenir. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md)|  
 |**Tam ekrana geç**|Rapor görünümü için tam ekran moduna geçiş yapar.|  
   

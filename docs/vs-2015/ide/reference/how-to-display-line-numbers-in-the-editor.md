@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704406"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405661"
 Görüntülemek veya satır kodunuzu numaralarını gösterip gizleyebilirsiniz.  
   
 > [!NOTE]
-> Etkin ayarlarınıza bağlı olarak, iletişim kutuları ve görüntülenen menü komutları burada anlatılanlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Etkin ayarlarınıza bağlı olarak, iletişim kutuları ve görüntülenen menü komutları burada anlatılanlardan farklı olabilir. Ayarlarınızı değiştirmek için **Araçlar / içe ve dışa aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Kod içinde satır numaralarını görüntüleyin  
  Satır numaraları kodunuza eklenmez; Bunlar yalnızca başvuru için hedeflenmiştir. Buna yazdırılacak satır numaraları istiyorsanız **yazdırma** iletişim kutusunda **satır numaralarını dahil etme** onay kutusu.  

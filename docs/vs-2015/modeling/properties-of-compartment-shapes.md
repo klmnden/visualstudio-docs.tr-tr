@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760665"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701722"
 ---
 # <a name="properties-of-compartment-shapes"></a>Bölme Şekillerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Bölme şekilleri bir etki alanı sınıfı bir etki alanına özgü dil görün
 |Özel Öznitelikler|Bu bölme şekli oluşturulan kaynak kod sınıfı öznitelikler eklemek için kullanılır|\<yok >|  
 |Çift oluşturur türetilmiş|Varsa `True`, hem temel sınıf hem de (geçersiz kılmalar aracılığıyla özelleştirmeyi desteklemek için) bir kısmi sınıf oluşturulur. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Özel oluşturucu vardır.|Varsa `True`, kaynak kodunda özel bir oluşturucu sağlanacaktır. Daha fazla bilgi için [geçersiz kılma ve oluşturulan sınıflar genişletme](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Devralma değiştiricisi|Bölme şekli oluşturulan kaynak kodu sınıf devralma türü açıklar (`none`, `abstract` veya `sealed`).|Hiçbiri|  
+|Devralma değiştiricisi|Bölme şekli oluşturulan kaynak kodu sınıf devralma türü açıklar (`none`, `abstract` veya `sealed`).|None|  
 |Temel bölme şekli|Bu şeklin temel sınıf.|(hiçbiri)|  
 |Ad|Bu şeklin adı.|Geçerli ad|  
 |Ad Alanı|Bu şeklin ile bağlantılı olan ad alanı.|Geçerli ad alanı|  
@@ -60,4 +60,4 @@ Bölme şekilleri bir etki alanı sınıfı bir etki alanına özgü dil görün
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

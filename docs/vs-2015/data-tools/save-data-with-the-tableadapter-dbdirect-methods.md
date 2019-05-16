@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704171"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 - Yeni bir **Windows uygulama**.  
   
-- Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Denetimin formda öğelerinden sürüklendiğinde oluşturulacak seçin **veri kaynakları** penceresi. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
   
 2. Projeyi adlandırın **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -153,7 +153,7 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, veri bağlama form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
-- Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Seçerek veri kümesine ek tablolar ilave **veri kümesini Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. İlgili düğümlerin form üzerine sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. 
   

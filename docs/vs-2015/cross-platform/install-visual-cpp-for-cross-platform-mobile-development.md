@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444587"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698473"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Görsel C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com
   
   Belirli cihaz platformları için uygulamalar oluşturmak için bazı ek gereksinimleri vardır:  
   
-- Windows Phone öykünücüleri ve Android için Microsoft Visual Studio öykünücüsü, Hyper-V çalıştıran bir bilgisayar gerektirir. Windows Hyper-V özelliği yükleyip öykünücü çalıştırması önce etkinleştirilmesi gerekir. Öykünücü'nın daha fazla bilgi için bkz. [sistem gereksinimleri](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
+- Windows Phone öykünücüleri ve Android için Microsoft Visual Studio öykünücüsü, Hyper-V çalıştıran bir bilgisayar gerektirir. Windows Hyper-V özelliği yükleyip öykünücü çalıştırması önce etkinleştirilmesi gerekir. Öykünücü'nın daha fazla bilgi için bkz. [sistem gereksinimleri](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
   
 - X86 Android SDK'sı ile gelen Android öykünücüleri Intel HAXM sürücüsü çalıştıran bilgisayarlarda en iyi şekilde çalışır. Bu sürücü bir Intel x64 işlemci ile birlikte VT-x ve devre dışı Bit yürütme desteği gerektirir. Daha fazla bilgi için [yükleme yönergeleri için Intel® donanım hızlandırılmış yürütme Yöneticisi - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   

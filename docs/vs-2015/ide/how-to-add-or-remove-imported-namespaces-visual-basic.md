@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700987"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl yapılır: Ekleme veya kaldırma içeri aktarılan ad alanlarını (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad
 3. İçinde **içeri aktarılan ad alanlarını** listesinde, eklemek istediğiniz ad alanı için onay kutusunu seçin.  
   
     > [!NOTE]
-    > Ad alanı içeri aktarılması için başvurulan bir bileşen olarak olması gerekir. Ad alanı listede görünmüyorsa, içerdiği bileşenine bir başvuru eklemeniz gerekir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > Ad alanı içeri aktarılması için başvurulan bir bileşen olarak olması gerekir. Ad alanı listede görünmüyorsa, içerdiği bileşenine bir başvuru eklemeniz gerekir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Bir içeri aktarılan ad alanı kaldırmak için  
   

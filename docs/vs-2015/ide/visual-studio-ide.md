@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780685"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698558"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio, birçok türde uygulamalar, güç kurumlar ve veri merkezlerine b
 
 - Oyunlar ve Xbox dahil olmak üzere, DirectX kullanarak Windows cihazları, çeşitli grafik kullanımı yoğun uygulamalar.
 
-Varsayılan olarak Visual Studio için destek sağlar C#, C ve C++, JavaScript, F#ve Visual Basic. Visual Studio çalışır ve iyi Unity gibi üçüncü taraf uygulamaları ile tümleşir [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md) uzantısı ve Apache Cordova aracılığıyla [ApacheCordovaiçinVisualStudioAraçları](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Visual Studio kendinize özel görevleri gerçekleştirmek özel araçlar oluşturarak genişletebilirsiniz.
+Varsayılan olarak Visual Studio için destek sağlar C#, C ve C++, JavaScript, F#ve Visual Basic. Visual Studio çalışır ve iyi Unity gibi üçüncü taraf uygulamaları ile tümleşir [Unity için Visual Studio Araçları](../cross-platform/visual-studio-tools-for-unity.md) uzantısı ve Apache Cordova aracılığıyla [ApacheCordovaiçinVisualStudioAraçları](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Visual Studio kendinize özel görevleri gerçekleştirmek özel araçlar oluşturarak genişletebilirsiniz.
 
 Visual Studio'da daha önce hiç kullanmadıysanız, temel kavramları öğrenin bizim [alma başlatıldı geliştirmeyle Visual Studio](../ide/get-started-developing-with-visual-studio.md) öğreticiler ve Kılavuzlar.
 
@@ -133,7 +133,7 @@ Visual Studio 2015'te yeni özellikler hakkında bilgi edinmek, bkz: [Visual Stu
 
 8. **Tanıma** bağlam menüsü seçeneği, doğrudan bir işlevin veya nesnenin tanımlandığı yer alır. Başka gezinme komutları da Düzenleyicisi'nde sağ tıklayarak kullanılabilir.
 
-9. İlgili bir aracı [Nesne Tarayıcısı](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)içeren görmek için .NET veya Windows çalışma zamanı derlemeleri sisteminize incelemek için türleri bunlar etkinleştirir ve yöntemleri ve özellikleri bu türler bulunur.
+9. İlgili bir aracı [Nesne Tarayıcısı](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)içeren görmek için .NET veya Windows çalışma zamanı derlemeleri sisteminize incelemek için türleri bunlar etkinleştirir ve yöntemleri ve özellikleri bu türler bulunur.
 
      ![Nesneyi gösteren Nesne Tarayıcısı](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -154,7 +154,7 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 
  [Komut penceresi](../ide/reference/immediate-window.md) bir ifade yazın ve sonucu hemen görmenize olanak sağlar.
 
- [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) penceresi her yöntem çağrısının kaydeder ve bir çalışan .NET programı ve diğer olayları bir sorun kaynaklandığı hızla bulmanıza yardımcı olmak.
+ [IntelliTrace](https://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) penceresi her yöntem çağrısının kaydeder ve bir çalışan .NET programı ve diğer olayları bir sorun kaynaklandığı hızla bulmanıza yardımcı olmak.
 
  Daha fazla bilgi için [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md).
 
@@ -164,10 +164,10 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
  ![Birim Test Gezgini](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Kod kalitesini ve performansını analiz etme
- Visual Studio statik ve çalışma zamanı analizi için güçlü araçlar içerir. Statik analiz araçları tasarımı, Genelleştirme, birlikte çalışabilirlik, performans, güvenlik ve diğer kategorilerden olası hataları belirlemenize yardımcı olur. Performans testi veya profil oluşturma, ölçme, programınızın nasıl çalıştığını içerir. Bu araçlardan erişim **Çözümle** menüsü. Daha fazla bilgi için [Visual Studio tanılama araçları ile kaliteyi geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Visual Studio statik ve çalışma zamanı analizi için güçlü araçlar içerir. Statik analiz araçları tasarımı, Genelleştirme, birlikte çalışabilirlik, performans, güvenlik ve diğer kategorilerden olası hataları belirlemenize yardımcı olur. Performans testi veya profil oluşturma, ölçme, programınızın nasıl çalıştığını içerir. Bu araçlardan erişim **Çözümle** menüsü. Daha fazla bilgi için [Visual Studio tanılama araçları ile kaliteyi geliştirme](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Bulut hizmetlerine ve veritabanlarına bağlanma
- [Sunucu Gezgini](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) Visual Studio'daki tüm hesapları kişiselleştirme hesabınız kapsamında (bir oturum ile), Azure, Salesforce.com, Office 365 gibi SQL Server örnekleri dahil olmak üzere yönetilen kaynaklar gösterilir ve Web siteleri.
+ [Sunucu Gezgini](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) Visual Studio'daki tüm hesapları kişiselleştirme hesabınız kapsamında (bir oturum ile), Azure, Salesforce.com, Office 365 gibi SQL Server örnekleri dahil olmak üzere yönetilen kaynaklar gösterilir ve Web siteleri.
 
  ![Sunucu Gezgini](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -184,7 +184,7 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
  Tasarım ve uygulama modeli için Visual Studio mimari ve Modelleme Araçları'nı kullanabilirsiniz. Bu araçlar, kodun yapısını, davranış ve ilişkileri görselleştirmek için yardımcı olur. Geliştirme sürecinizin bir parçası olarak farklı uygulama yaşam döngüsü boyunca ayrıntı düzeylerinde modeller oluşturabilirsiniz. Gereksinimler, görevler, test çalışmalarını, hataları ve Team Foundation Server çalışma öğeleri ve geliştirme planınızı model öğelerini bağlantılandırarak Modellerinizi ile ilişkili diğer iş izleyebilirsiniz. Daha fazla bilgi için [tasarım ve uygulama modeli](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Visual Studio SDK ile Visual Studio'yu genişletme
- Visual Studio genişletilebilir bir platformdur. Visual Studio IDE ile tümleşen bir özel aracı uzantısıdır. Üçüncü taraf uzantıları ekleyin veya kendinizinkini oluşturun. Daha fazla bilgi için [Visual Studio uzantılarını geliştirme](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
+ Visual Studio genişletilebilir bir platformdur. Visual Studio IDE ile tümleşen bir özel aracı uzantısıdır. Üçüncü taraf uzantıları ekleyin veya kendinizinkini oluşturun. Daha fazla bilgi için [Visual Studio uzantılarını geliştirme](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
 
  [Visual Studio kullanıcı deneyimi yönergeleri](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) temel bir başvuru herkes için yazma için Visual Studio uzantılarıdır. Yeni özelliğinizi olmanızı sağlayacak diğer etkileşim desenleri Visual Studio ile sorunsuz şekilde tümleştirin ve bu platforma özgü yönergeleri iletişim tasarımı, yazı tiplerini, renkleri, simgeler, ortak denetimleri hakkında bilgi içerir.
 
@@ -193,10 +193,10 @@ Bir hata veya başarılı iletileri de dahil olmak üzere, yapı çıktısını 
 |||
 |-|-|
 |[Kullanıcı Hesapları ve Güncelleştirmeler](../ide/user-accounts-and-updates.md)|[IDE’yi Kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)|
-|[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
+|[Nasıl yapılır: IDE'de Gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio ile Geliştirmeye Başlama](../ide/get-started-developing-with-visual-studio.md)|
 |[Visual Studio Uzantıları’nı bulma ve kullanma](../ide/finding-and-using-visual-studio-extensions.md)|[Çözümler ve Projeler](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Kod Yazma](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)|
-|[Profil Araçları](../profiling/profiling-tools.md)|[Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[Profil Araçları](../profiling/profiling-tools.md)|[Kod Kalitesini Geliştirme](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[Kullanıcı Arabirimleri Tasarlama](../designers/designing-user-interfaces.md)|[Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)|
 |[Derleme ve Oluşturma](../ide/compiling-and-building-in-visual-studio.md)|[Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma](../deployment/deploying-applications-services-and-components.md)|
 |[Visual Studio IDE 64 Bit Desteği](../ide/visual-studio-ide-64-bit-support.md)|[Güvenlik](../ide/security-in-visual-studio.md)|

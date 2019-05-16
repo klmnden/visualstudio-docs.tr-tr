@@ -11,12 +11,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 67ebbde52facf50eff534322d85a926968acdf0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705953"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Birim Testleri Oluşturmak için Örnek Proje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Bu örnek kod aşağıdaki izlenecek yollardaki kullanım için sağlanır:
   
 - [İzlenecek yol: Oluşturma ve çalıştırma için birim testleri yönetilen kodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Bu izlenecek yol, oluşturma ve birim testlerini özelleştirme, bunları çalıştırmak ve test sonuçları inceleyin adımlarında size yol gösterir.  
   
-- [İzlenecek yol: Testleri çalıştırmak ve kod kapsamı görüntülemek](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Bu kılavuz edilmekte olan proje kodunuzun oranını gösteren kod kapsamı verilerini görüntülemek nasıl gösterir.  
+- [İzlenecek yol: Testleri çalıştırmak ve kod kapsamı görüntülemek](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Bu kılavuz edilmekte olan proje kodunuzun oranını gösteren kod kapsamı verilerini görüntülemek nasıl gösterir.  
   
-- [İzlenecek yol: komut satırı test yardımcı programını kullanarak](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, testleri çalıştırmak ve sonuçları görüntülemek için MSTest.exe komut satırı yardımcı programını kullanın.  
+- [İzlenecek yol: komut satırı test yardımcı programını kullanarak](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). Bu kılavuzda, testleri çalıştırmak ve sonuçları görüntülemek için MSTest.exe komut satırı yardımcı programını kullanın.  
   
 ## <a name="sample-code"></a>Örnek Kod  
  Bu örnekte yalnızca kasıtlı hata içinde banka yöntemi "m_balance += amount" bir artı eşittir işareti önce oturum eksi gerektiğidir.  
@@ -133,5 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [İzlenecek yol: Testleri çalıştırmak ve kod kapsamı görüntüleyin](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [İzlenecek yol: komut satırı test yardımcı programını kullanma](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+ [İzlenecek yol: Testleri çalıştırmak ve kod kapsamı görüntüleyin](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [İzlenecek yol: komut satırı test yardımcı programını kullanma](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

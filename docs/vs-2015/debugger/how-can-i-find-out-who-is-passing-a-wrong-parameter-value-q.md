@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa3f96cd6ee5ff3c4f78a3e9a9bc89b2037066fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b0787a0d700859e7728762fd7846911fcd41e369
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053838"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704548"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Kimin Yanlış Parametre Değeri Geçirdiğini Nasıl Bulabilirim?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,5 +56,5 @@ Sorun açıklaması
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
- [Kesme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Kesme noktaları](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)

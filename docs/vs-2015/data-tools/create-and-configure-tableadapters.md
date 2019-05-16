@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431211"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705015"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter’lar oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ TableAdapter, uygulamanızla veritabanı arasındaki iletişimi sağlar. Veritab
   
  Aşağıdaki eylemlerden birini gerçekleştirdiğinizde TableAdapters sizin için oluşturulur:  
   
-- Çalıştırma [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) seçin ya da **veritabanı** veya **Web hizmeti** veri kaynağı türü.  
+- Çalıştırma [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) seçin ya da **veritabanı** veya **Web hizmeti** veri kaynağı türü.  
   
-- Veritabanı nesneleri sürükleyin [Sunucu Gezgini](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) içine **veri kümesi Tasarımcısı**.  
+- Veritabanı nesneleri sürükleyin [Sunucu Gezgini](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) içine **veri kümesi Tasarımcısı**.  
   
   Yeni bir TableAdapter oluşturmak ve boş bir bölge için araç kutusundan bir TableAdapter sürükleyerek bir veri kaynağı ile yapılandırma **veri kümesi Tasarımcısı** yüzeyi.  
   

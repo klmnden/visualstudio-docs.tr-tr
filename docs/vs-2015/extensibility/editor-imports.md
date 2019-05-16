@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690313"
 ---
 # <a name="editor-imports"></a>Düzenleyici İçeri Aktarımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bir dizi Düzenleyicisi Hizmetleri, fabrikaları ve erişim farklı türde çeki
  Bir düzenleyici içeri aktarma kullanılacak bir alan veya özellik bir Yönetilen Genişletilebilirlik Çerçevesi bileşen bölümü dışarı aktaran bir sınıfın aktarmadan.  
   
 > [!NOTE]
-> Yönetilen Genişletilebilirlik Çerçevesi hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Yönetilen Genişletilebilirlik Çerçevesi hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Söz dizimi içeri aktarma  
  Aşağıdaki örnek, düzenleyici içeri aktarma seçenekleri factory hizmeti gösterir.  

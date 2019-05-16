@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705978"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Özellik|Windows Mağazası uygulamaları|Windows Phone uygulamaları|  
 |-------------|------------------------|------------------------|  
-|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş test çalışmasına kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [Microsoft Test Yöneticisi'nde bir test çalışmasını otomatikleştirme](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Öykünücü veya cihaz. Bkz, [s: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim? ](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
+|Testleri çalıştırmak için hedef|Yerel veya uzak bilgisayar. Testleri çalıştırmak için otomatikleştirilmiş test çalışmasına kullandığınızda, uzak bilgisayarlara belirtilebilir. Bkz: [Microsoft Test Yöneticisi'nde bir test çalışmasını otomatikleştirme](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Öykünücü veya cihaz. Bkz, [s: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim? ](#TestingPhoneAppsCodedUI_EmulatorDevice) bu konuda.|  
 |Komut satırından yürütmek|Ayarlar dosyası hedef belirtmek için gerekli değildir.|Runsettings dosyası hedef belirtmek için gereklidir.|  
 |Kabuk denetimleri için özel sınıflar|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |WebView denetiminde XAML uygulama|Html * kullanırsanız desteklenen özel HTML öğeleri ile etkileşim kurmak için sınıflar. Bkz. <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Desteklenmez.|  

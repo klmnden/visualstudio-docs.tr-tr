@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704095"
 ---
 # <a name="project-property-user-interface"></a>Proje Özelliği Kullanıcı Arabirimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ Proje alt öğeleri projede kullanabileceğiniz **özellik sayfaları** iletişi
   
   Proje alt tür çünkü toplamalar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> nesnesi, hangi denetlemek için bu özelliklerin tanımı geçersiz **özellik sayfaları** iletişim kutusu görüntülenir. Proje alt türü iç temel projeden bu özelliklerini almak ve daha sonra ekleyebilir veya CLSID gerektiği şekilde kaldırabilirsiniz.  
   
-  Proje alt türü tarafından eklenen yeni özellik sayfaları, temel proje uygulamasından bir proje yapılandırması Gözat nesnesi verilir. Bu proje yapılandırması Gözat nesnesi Otomasyon Genişleticileri destekler. AutomationExtenders hakkında daha fazla bilgi için bkz. [uygulanması ve Otomasyon Genişleticileri kullanılarak](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Proje alt çağrı tarafından uygulanan özellik sayfalarını <xref:EnvDTE.Project.Extender%2A> temel projenin yapılandırma Gözat nesnesini genişletir, kendi proje alt yapılandırma Gözat nesnesi almak için.  
+  Proje alt türü tarafından eklenen yeni özellik sayfaları, temel proje uygulamasından bir proje yapılandırması Gözat nesnesi verilir. Bu proje yapılandırması Gözat nesnesi Otomasyon Genişleticileri destekler. AutomationExtenders hakkında daha fazla bilgi için bkz. [uygulanması ve Otomasyon Genişleticileri kullanılarak](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Proje alt çağrı tarafından uygulanan özellik sayfalarını <xref:EnvDTE.Project.Extender%2A> temel projenin yapılandırma Gözat nesnesini genişletir, kendi proje alt yapılandırma Gözat nesnesi almak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:EnvDTE.IFilterProperties>   
- [Özellik sayfaları iletişim kutusu](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [Özellik sayfaları iletişim kutusu](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

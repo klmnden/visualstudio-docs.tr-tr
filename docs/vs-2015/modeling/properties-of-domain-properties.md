@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bd974da022a8407c1249b4a84eac3ef6f61aec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701899"
 ---
 # <a name="properties-of-domain-properties"></a>Etki Alanı Özelliklerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +53,4 @@ A *domain özelliği* değer tutan bir model öğesi olan bir özelliktir. Örne
 |**Tür**|Özellik türü. Kullanılabilir türler listesine eklemek için DSL DSL Gezgini içinde kök sağ tıklayın ve tıklayın **dış türü Ekle**.|`String`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

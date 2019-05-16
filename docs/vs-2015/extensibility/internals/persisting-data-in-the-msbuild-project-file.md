@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704126"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild Proje Dosyasında Verileri Kalıcı Hale Getirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Daha sonra kullanmak için proje dosyası içine alt özgü verileri kalıcı hale getirmek bir proje alt gerekebilir. Proje alt türü, aşağıdaki gereksinimleri karşılaması için proje dosya kalıcılığına kullanır:  
   
-1. Proje oluşturmanın bir parçası olarak kullanılan verileri kalıcı hale getirin. (Microsoft Build Engine hakkında daha fazla bilgi için bkz. [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Derlemeyle ilgili bilgileri şunlardan birini yapabilirsiniz:  
+1. Proje oluşturmanın bir parçası olarak kullanılan verileri kalıcı hale getirin. (Microsoft Build Engine hakkında daha fazla bilgi için bkz. [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Derlemeyle ilgili bilgileri şunlardan birini yapabilirsiniz:  
   
     1. Bağımsız yapılandırma verileri. Diğer bir deyişle, MSBuild öğeleri boş veya eksik koşullarla depolanan veriler.  
   

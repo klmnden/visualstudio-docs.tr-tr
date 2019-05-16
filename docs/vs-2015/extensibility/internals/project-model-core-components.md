@@ -11,12 +11,12 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de65155e08f4c2410d19db1b25105d247c9f0952
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704107"
 ---
 # <a name="project-model-core-components"></a>Proje Modeli Çekirdek Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Aşağıdaki tablolarda, proje modeli üzerinde genişletin. Tabloları kısa a�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Derlemede değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Derlemede değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanma](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Proje Modeli Öğeleri](../../extensibility/internals/elements-of-a-project-model.md)

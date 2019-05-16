@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693966"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rastgele Bir Toplama Problemi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
   
      `Random` bir nesne olarak bilinir. Daha önce bu sözcüğü olasılıkla duydunuz ve bir sonraki öğreticide programlama için demek olduğu hakkında daha fazla bilgi edinin. Şimdilik, hemen kullanabileceğiniz unutmayın `new` deyimlerini düğmeler, etiketler, paneller, Openfiledialog'lar, Colordialog'lar, Soundplayer'lar, Random'lar ve hatta biçimler ve bu öğeleri oluşturmak için nesne olarak adlandırılır. Programınızı çalıştırdığınızda form başlatılır ve ardındaki kod, bir `Random` nesne ve onu **randomizer**.  
   
-     Yakında yanıtlarını sınavınız her problem için ürettiği rastgele sayıları depolamak için değişkenleri kullanmalısınız denetlemek için bir yöntem oluşturacaksınız. Bkz: [değişkenleri](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) veya [türleri](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Değişkenleri düzgün kullanmak için bunları, yani adlarını ve veri türlerini listeleme bildirmeniz gerekir.  
+     Yakında yanıtlarını sınavınız her problem için ürettiği rastgele sayıları depolamak için değişkenleri kullanmalısınız denetlemek için bir yöntem oluşturacaksınız. Bkz: [değişkenleri](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) veya [türleri](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Değişkenleri düzgün kullanmak için bunları, yani adlarını ve veri türlerini listeleme bildirmeniz gerekir.  
   
 4. Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689143"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Özel durum sorunlarını giderme: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] bir ileti doğru güvenli olmayan veya oynanmış belirler. Hata, en sık aşağıdaki koşulların tümü doğru olduğunda oluşur:  
@@ -86,4 +86,4 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> özel durum [!INC
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Özel durum Yardımcısını kullanma](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Özel durum Yardımcısını kullanma](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112265"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705945"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Kodlanmış UI Testi için Excel Eklenti Örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu örnek için eklenti [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] özellikle kaydedilir ve Visual Studio Enterprise'da çalıştırma kodlanmış UI testleri Excel, çalışma sayfaları desteklemek için tasarlanmıştır. Eklenti Office için Visual Studio Araçları kullanılarak oluşturulur.  
   
- Bir Excel eklenti oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: Excel için uygulamanızın ilk VSTO eklentisi oluşturma](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) ya da "Excel eklentisi için" MSDN arayın.  
+ Bir Excel eklenti oluşturma hakkında daha fazla bilgi için bkz. [izlenecek yol: Excel için uygulamanızın ilk VSTO eklentisi oluşturma](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) ya da "Excel eklentisi için" MSDN arayın.  
   
  Excel eklentisi Excel için kodlanmış UI testi uzantısı, bu belgenin birincil konu olmamasına karşın, birkaç faydalı olabilir.  
   
@@ -47,5 +47,5 @@ Bu örnek için eklenti [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] özel
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodlanmış UI testlerini ve Eylem kayıtlarını Microsoft Excel'i desteklemek için genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office ve SharePoint geliştirme](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office ve SharePoint geliştirme](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

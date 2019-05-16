@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652493"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703406"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59652493"
 |`OutputFile`|Gerekli **dize** çıkış parametresi.<br /><br /> Yerelleştirme yönergeleri derlenmiş bütünleştirilmiş kodun çıkış yolunu belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yerelleştirme öznitelikleri ve yorumlar için ekleyebileceğiniz [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] içeriği. İle [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] yerelleştirme desteğini, Şerit Yerelleştirme öznitelikleri ve yorumlar ve oluşturulan derlemeden ayrı bir .loc dosyası yerleştirin. Kullanarak bunu yapabilirsiniz **LocalizationPropertyStorage** özniteliği. Yerelleştirme öznitelikleri ve Yorumlar hakkında daha fazla bilgi ve **LocalizationPropertyStorage**, bkz: [Yerelleştirme öznitelikleri ve Yorumlar](http://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
+ Yerelleştirme öznitelikleri ve yorumlar için ekleyebileceğiniz [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] içeriği. İle [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] yerelleştirme desteğini, Şerit Yerelleştirme öznitelikleri ve yorumlar ve oluşturulan derlemeden ayrı bir .loc dosyası yerleştirin. Kullanarak bunu yapabilirsiniz **LocalizationPropertyStorage** özniteliği. Yerelleştirme öznitelikleri ve Yorumlar hakkında daha fazla bilgi ve **LocalizationPropertyStorage**, bkz: [Yerelleştirme öznitelikleri ve Yorumlar](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek birkaç yerelleştirme açıklamalarını birleştirir [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] tek .loc dosyasına dosyaları ikili biçimi.  
@@ -62,4 +62,4 @@ ms.locfileid: "59652493"
  [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [WPF uygulaması (WPF) oluşturma](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [WPF uygulaması (WPF) oluşturma](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

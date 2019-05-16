@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696889"
 ---
 # <a name="application-timeline"></a>Uygulama zaman çizelgesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Kullanım **uygulama zaman çizelgesi** ilgili XAML uygulamalarında performans 
 5. Windows 7  
   
 > [!NOTE]
-> Toplama ve CPU kullanım verileri ve enerji tüketimi verilerini ile birlikte analiz **ApplicationTimeline** veri. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Toplama ve CPU kullanım verileri ve enerji tüketimi verilerini ile birlikte analiz **ApplicationTimeline** veri. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Uygulama zaman çizelgesi verileri toplama  
- Yerel makinenize, bağlı cihaz, Visual Studio simulatorunda veya öykünücüleri veya uzak cihaz üzerinde uygulamanızın yanıt verme hızı profilini oluşturabilirsiniz. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Yerel makinenize, bağlı cihaz, Visual Studio simulatorunda veya öykünücüleri veya uzak cihaz üzerinde uygulamanızın yanıt verme hızı profilini oluşturabilirsiniz. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Mümkünse, uygulamayı doğrudan cihazda çalıştırın. Uygulama performansı gözlenen veya bir Uzak Masaüstü Bağlantısı cihazdaki gerçek performansın aynı olmayabilir. Öte yandan, Visual Studio uzak Araçlar'ı kullanarak veri toplama performans verileri etkilemez.  
@@ -121,5 +121,5 @@ Kullanım **uygulama zaman çizelgesi** ilgili XAML uygulamalarında performans 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WPF ekibi blogu: WPF uygulamaları için yeni kullanıcı Arabirimi Performans analiz aracı](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [C++, C# ve Visual Basic kullanan Windows Store uygulamaları için en iyi performans](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [WPF Uygulama Performansını İyileştirme](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [C++, C# ve Visual Basic kullanan Windows Store uygulamaları için en iyi performans](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [WPF Uygulama Performansını İyileştirme](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

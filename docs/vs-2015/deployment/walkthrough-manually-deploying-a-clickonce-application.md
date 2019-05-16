@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429133"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686320"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ Dağıtmak için Visual Studio kullanamıyorsanız, [!INCLUDE[ndptecclick](../in
  Uygulamanın yeni bir sürümünü dağıtmanız gerekebilir, sonra yeni sürümü adlı yeni bir dizin oluşturun — Örneğin, 1.0.0.1 yeni uygulama dosyaları kopyalama yeni dizine. Ardından, oluşturmak ve yeni bir uygulama bildirimini imzalayın ve güncelleştirme ve dağıtım bildirimi imzalamak için önceki adımları izlemeniz gerekir. Mage.exe içinde aynı daha yüksek bir sürüme belirtilmesi konusunda dikkatli olun `-New` ve `–Update` çağrıları olarak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yalnızca daha yüksek sürümlerinde, en önemli en soldaki tamsayı ile güncelleştirir. MageUI.exe kullandıysanız, dağıtım bildirimini açarak, seçerek güncelleştirebilirsiniz **uygulama başvurusu** sekmesine tıklayarak **seçin** düğmesini ve ardından güncelleştirilmiş seçme Uygulama bildirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (bildirim üretme ve düzenleme aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Uygulama Bildirimi](../deployment/clickonce-application-manifest.md)

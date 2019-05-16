@@ -12,12 +12,12 @@ ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d8cca16a8b2ae0074269058f831768db39e94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a7692a06004a1f9d31a31f91c081c6168d89a8dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765361"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694384"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- DE rapor tamamlanması için bir çağrı tarafından başlatılan bir ifade değerlendirmesi için bu arabirimi uygulayan [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
+ DE rapor tamamlanması için bir çağrı tarafından başlatılan bir ifade değerlendirmesi için bu arabirimi uygulayan [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  DE oluşturur ve bu olay bir ifade değerlendirmesi tamamlanmasından rapor nesnesine gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  

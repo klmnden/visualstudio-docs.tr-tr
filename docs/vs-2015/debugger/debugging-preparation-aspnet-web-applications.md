@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691456"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Hata ayıklama hazırlığı: ASP.NET Web Uygulamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "60092428"
   
 1. İşlevler ve olay işleyicileri içinde bir veya daha fazla kesme noktası ayarlayın.  
   
-     Daha fazla bilgi için [kesme noktaları ve izleme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Daha fazla bilgi için [kesme noktaları ve izleme noktaları](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Bir kesme noktası isabet edildiğinde işlevin içindeki kodun adım adım. Sorunu yalıtana kadar kodunuzun yürütülmesini gözlemleyin.  
   
-     Daha fazla bilgi için [Adımlama](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) ve [hata ayıklama Web uygulamalarında ve betikte](../debugger/debugging-web-applications-and-script.md).  
+     Daha fazla bilgi için [Adımlama](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) ve [hata ayıklama Web uygulamalarında ve betikte](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Varsayılan yapılandırmaları değiştirme  
  Yayın yapılandırmaları tarafından oluşturulan ve varsayılan hata ayıklama değiştirmek istiyorsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bunu yapabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md).  

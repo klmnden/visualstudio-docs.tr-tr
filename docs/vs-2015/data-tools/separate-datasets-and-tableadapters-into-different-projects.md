@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690231"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Veri kümeleri ile TableAdapter’ları farklı projelere ayırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi sınıfları ayrı projelere oluşturulabilir. Bu, hızla uygulama katmanları ayırmak ve n katmanlı veri uygulamaları oluşturmak sağlar.  
+Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve veri kümesi sınıfları ayrı projelere oluşturulabilir. Bu, hızla uygulama katmanları ayırmak ve n katmanlı veri uygulamaları oluşturmak sağlar.  
   
  Aşağıdaki yordamda oluşturulan içeren projeden farklı bir projeye veri kümesi kodunu oluşturmak için veri kümesi Tasarımcısı'nı kullanarak işlemi açıklanmaktadır `TableAdapter` kod.  
   
@@ -70,4 +70,4 @@ Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](http://msdn.mic
  [İzlenecek yol: N katmanlı veri uygulaması oluşturma](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md)   
  [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

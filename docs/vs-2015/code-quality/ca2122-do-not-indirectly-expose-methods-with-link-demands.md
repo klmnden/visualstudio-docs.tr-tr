@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0b173378194c099b2014093104f814f3454843d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687256"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "54757763"
 |Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı bir üyenin bir [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ve herhangi bir güvenlik denetimi gerçekleştirmeyen üye tarafından çağrılır.
+ Ortak veya korumalı bir üyenin bir [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ve herhangi bir güvenlik denetimi gerçekleştirmeyen üye tarafından çağrılır.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bağlantı talebi, yalnızca o anki çağırıcı izinlerini denetler. Üye ise `X` hiçbir güvenlik taleplerini çağıranlar ve kod gerekli izne kullanabilirsiniz olmadan bu bağlantı talebi tarafından çağıran korumalı çağrıları yapar `X` korunan üyesine erişmek için.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
- Güvenlik ekleme [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) veya artık bağlantı talebi tarafından korunan üyesine güvenli erişim sağlar, böylece üyesine bağlantısını isteğe bağlı.
+ Güvenlik ekleme [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) veya artık bağlantı talebi tarafından korunan üyesine güvenli erişim sağlar, böylece üyesine bağlantısını isteğe bağlı.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Güvenli bir şekilde bu kuraldan bir uyarıyı bastırmak için kodunuzu işlemleri veya yıkıcı bir şekilde kullanılabilir kaynaklara erişimi çağıranlarını tanımaz emin olmanız gerekir.
@@ -58,4 +58,4 @@ ms.locfileid: "54757763"
 
  **Güvenli olmayan bir üye değeri: seattle.corp.contoso.com**
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

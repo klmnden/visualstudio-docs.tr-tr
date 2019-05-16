@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697568"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için ortak denetimlerin görünümünü etkinleştirin. El ile etkinleştirmeniz gerekir, böylece varsayılan olarak, Windows Presentation Foundation (WPF) uygulamaları için görsel stillerin etkin değil. Ancak, bir WPF uygulaması için görsel stilleri etkinleştirme ve ardından çözüm yayımlama bir hataya neden olur. Bu konu, bu hatayı ve görsel stiller etkinken WPF uygulaması yayımlama işlemi açıklar. Görsel stiller hakkında daha fazla bilgi için bkz: [görsel stilleri genel bakış](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Hata iletisi hakkında daha fazla bilgi için bkz. [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Hatayı çözün ve Çözümü yayımlamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:
 
@@ -125,7 +125,7 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
 
 1. Açık **Visual Studio komut istemi**.
 
-    Nasıl açılacağı hakkında daha fazla bilgi için **Visual Studio komut istemi**, bkz: [komut istemleri](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Nasıl açılacağı hakkında daha fazla bilgi için **Visual Studio komut istemi**, bkz: [komut istemleri](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > Kalan adımları, çözümünüzü hakkında aşağıdaki varsayımlar:
@@ -193,5 +193,5 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [ClickOnce Dağıtımları içinde belirli hataları giderme](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[görsel stilleri genel bakış](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[komut istemleri](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[görsel stilleri genel bakış](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[komut istemleri](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

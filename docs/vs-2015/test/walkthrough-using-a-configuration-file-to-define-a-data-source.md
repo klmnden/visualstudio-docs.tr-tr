@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f078d8a15cbef4c2f17b154af13a997b77da8766
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695058"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 1. Birim testi için test projesi ekleyin.  
   
-     Daha fazla bilgi için [oluşturma ve var olan kod için birim testleri çalıştıran](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Daha fazla bilgi için [oluşturma ve var olan kod için birim testleri çalıştıran](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2. Birim testi, otomatik olarak oluşturulan içeriğini aşağıdaki kodla değiştirin:  
   
@@ -270,6 +270,6 @@ Bu izlenecek yol, bir birim testi için app.config dosyasında tanımlanan bir v
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuza birim testi](../test/unit-test-your-code.md)   
- [Oluşturma ve varolan kod için birim testleri çalıştırma](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Oluşturma ve varolan kod için birim testleri çalıştırma](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Nasıl yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)

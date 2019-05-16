@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444638"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694553"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Nasıl yapılır: Etkinlik Tasarımcısı Kitaplığı Oluşturma
 Özel Etkinlik tasarımcıları bir standart veya özel bir etkinlik için bir kullanıcı arabirimi oluşturmanıza imkan tanır. Artık kullanıcı arabiriminin karmaşıklığı denetlemek ve bir etkinliğin birden fazla etkinlik Tasarımcısı oluşturma olanağı. Bu senaryo için birden çok İzleyici uyarlandığından tasarımcıları oluşturmanıza olanak sağlar.  
@@ -40,7 +40,7 @@ ms.locfileid: "63444638"
   
 8. Proje şablonu, XAML ve arka plan kod uygulama kaynak kodu dosyasında bir etkinlik tasarımcısının tanımı oluşturur. [!INCLUDE[wfd1](../includes/wfd1-md.md)] Açılır ve tuval, etkinlik Tasarımcısı için görüntüler.  
   
-9. Sürükleme [!INCLUDE[avalon1](../includes/avalon1-md.md)] denetimler **araç kutusu** özel etkinlik Tasarımcısı'nda kullanılacak tasarım yüzeyine bırakın.  Özel Etkinlik Tasarımcısı uygulamak nasıl bir örnek için bkz [nasıl yapılır: Özel Etkinlik Tasarımcısı oluşturma](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Sürükleme [!INCLUDE[avalon1](../includes/avalon1-md.md)] denetimler **araç kutusu** özel etkinlik Tasarımcısı'nda kullanılacak tasarım yüzeyine bırakın.  Özel Etkinlik Tasarımcısı uygulamak nasıl bir örnek için bkz [nasıl yapılır: Özel Etkinlik Tasarımcısı oluşturma](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     > Özel Etkinlik tasarımcıları, varsayılan hem de özel etkinlikler için kullanılabilir [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]etkinlikler.  

@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412329"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679925"
 ---
 # <a name="managing-universal-windows-projects"></a>Evrensel Windows Projelerini Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricilerin kod ve diğer varlıkları hem de platformlarda kullanmasına izin vererek hem hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynakları ve platforma özgü kod tutulur ancak paylaşılan kod ve kaynakları bir paylaşılan projede tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz. [Evrensel Windows uygulamaları](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapı olduğunu bilmeniz gerekir. Bu izlenecek yol, paylaşılan proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  
+Evrensel Windows uygulamaları, Windows 8.1 ve Windows Phone 8.1, geliştiricilerin kod ve diğer varlıkları hem de platformlarda kullanmasına izin vererek hem hedef uygulamalardır. Ayrı projeler, bir Windows ve Windows Phone için diğer kaynakları ve platforma özgü kod tutulur ancak paylaşılan kod ve kaynakları bir paylaşılan projede tutulur. Evrensel Windows uygulamaları hakkında daha fazla bilgi için bkz. [Evrensel Windows uygulamaları](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Projeleri Yönetme visual Studio uzantıları Evrensel Windows uygulaması projeleri tek platform uygulamalardan farklı bir yapı olduğunu bilmeniz gerekir. Bu izlenecek yol, paylaşılan proje gidin ve paylaşılan öğelerini yönetmek nasıl gösterir.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

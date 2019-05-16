@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2bdcfc2f6a4b7655a6f4f2e335310e938e5acfed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701977"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projeler ve Çözümler, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63438041"
 Varsayılan yolunu ayarlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje klasörleri ve varsayılan davranışını belirler **çıkış** penceresinde **görev listesi**, ve **Çözüm Gezgini** olarak projeleri geliştirilen ve derlenen. Bu iletişim kutusuna erişmek için tıklayın **Araçlar / Seçenekler** genişletin **projeler ve çözümler**, tıklatıp **genel**.  
   
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek veya görüntülemek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Ayarlar  
  **Projeleri konumu**  
@@ -58,7 +58,7 @@ Varsayılan yolunu ayarlar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proje
  Yeni bir proje oluşturun veya tam olarak (örneğin, bir UNC yolu veya HTTP yolu) güvenli olmayan bir konumda mevcut bir projeyi açmayı denerseniz, bir ileti görüntülenir. İleti oluşturmak veya tam olarak güvenilmeyen bir konumda bir projeyi açmayı denemek her zaman görüntülenip görüntülenmeyeceğini belirtmek için bu seçeneği kullanın.  
   
  **Derleme başladığında çıkış penceresini göster**  
- Otomatik olarak çıktı penceresinde çözümünün gizliliğe IDE görüntüler oluşturur. Daha fazla bilgi için [nasıl yapılır: Çıkış penceresini denetleme](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Bu seçenek varsayılan olarak etkindir.  
+ Otomatik olarak çıktı penceresinde çözümünün gizliliğe IDE görüntüler oluşturur. Daha fazla bilgi için [nasıl yapılır: Çıkış penceresini denetleme](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Bu seçenek varsayılan olarak etkindir.  
   
  **Sembolik yeniden adlandırmayı olduğunda yeniden adlandırmayı sor**  
  Bu onay kutusu seçildiğinde, isteyen bir ileti kutusu görüntüler olup olmadığını [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projedeki tüm başvuruları kod öğesine de yeniden adlandırmanız gerekir.  

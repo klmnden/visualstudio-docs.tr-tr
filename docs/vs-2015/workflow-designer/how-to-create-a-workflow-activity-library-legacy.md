@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432381"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703288"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Nasıl yapılır: İş Akışı Etkinlik Kitaplığı Oluşturma (Eski)
 Eski kullanarak bir iş akışı etkinlik kitaplığı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -52,5 +52,5 @@ Eski kullanarak bir iş akışı etkinlik kitaplığı projesi oluşturmak için
  [Eski iş akışı projeleri oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Eski etkinlik Tasarımcısını kullanma](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Eski iş akışı etkinlikleri](../workflow-designer/legacy-workflow-activities.md)   
- [Geliştirme iş akışı etkinlikleri](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Windows Workflow Foundation etkinlikleri](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Geliştirme iş akışı etkinlikleri](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Windows Workflow Foundation etkinlikleri](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

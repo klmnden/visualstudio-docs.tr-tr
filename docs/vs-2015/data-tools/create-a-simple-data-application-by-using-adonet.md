@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436974"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705179"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
 5. İçinde **değer** sütunu (olmadan herhangi bir dış tırnak işaretleri) bağlantı dizenizi girin ve ardından değişikliklerinizi kaydedin.  
   
 > [!NOTE]
-> Gerçek bir uygulamada, bağlantı dizesini açıklandığı gibi güvenli bir saklamalısınız [bağlantı dizeleri ve yapılandırma dosyalarını](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> Gerçek bir uygulamada, bağlantı dizesini açıklandığı gibi güvenli bir saklamalısınız [bağlantı dizeleri ve yapılandırma dosyalarını](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Bağlantı dizesi alma  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Kullanım `ExecuteNonQuery` yöntemi `cmdNewCustomer` çalıştırılacak `Sales.uspNewCustomer` saklı yordamı. Bu saklı yordamı çalıştığında bir `INSERT` deyimi, bu sorgu değil.|  
 |NC-13|`@CustomerID` Değeri veritabanından IDENTITY değeri olarak döndürülür. Bir tamsayı olduğu için içinde görüntülemek için bir dizeye dönüştürmeniz gerekir **Müşteri Kimliği** metin kutusu.<br /><br /> -Bu, bildirilen `parsedCustomerID` NC-2.<br />-Store `@CustomerID` değerini `parsedCustomerID` daha sonra kullanmak için.<br />-Döndürülen müşteri Kimliğini bir dizeye Dönüştür ve içine Ekle `txtCustomerID.Text`.|  
 |NC-14|Bu örnek, bir basit (üretim kalitesinde olmayan) catch yan tümcesi ekleyin.|  
-|NC-15|Kullanmayı bitirdikten sonra böylece bağlantı havuzuna bırakılmasını her zaman bir bağlantıyı kapatın. Bkz: [SQL Server Connection Pooling (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Kullanmayı bitirdikten sonra böylece bağlantı havuzuna bırakılmasını her zaman bir bağlantıyı kapatın. Bkz: [SQL Server Connection Pooling (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Bir müşteri adının mevcut olduğunu doğrulamak için bir yöntem tanımlayın.<br /><br /> -Metin kutusu boş ise, bir ileti görüntüler ve dönüş `false`, hesabı oluşturmak için bir ad gereklidir.<br />-Metin kutusu boş değilse, dönüş `true`.|  
 |NC-17|Tıklama olay işleyicisine kod ekleyin `btnPlaceOrder` düğmesi.|  
 |NC-18|Çağrısını sarmalamak `isPlaceOrderReady` etrafında `btnPlaceOrder_Click` olay kodu böylece `uspPlaceNewOrder` gerekli giriş mevcut olmadığında çalışmasın.|  

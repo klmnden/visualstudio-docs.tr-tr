@@ -10,12 +10,12 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f828e6daff97f7c0ad8b3872691f5ad424cb2f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 085e1b5c1fbfbbaf5649966738f2864e0b72ed35
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755578"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674778"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Düzenleyiciyi ve Dil Hizmetlerini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,24 +36,24 @@ Kendi düzenleyicinizi için dil hizmeti özellikleri (örneğin, IntelliSense) 
 |[Düzenleyicinin İçinde](../extensibility/inside-the-editor.md)|Düzenleyici genel yapısını açıklar ve bazı özellikleri listeler.|  
 |[Düzenleyicide Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|Yönetilen Genişletilebilirlik Çerçevesi (MEF) düzenleyiciyle kullanmayı açıklar.|  
 |[Dil Hizmeti ve Düzenleyici Uzantı Noktaları](../extensibility/language-service-and-editor-extension-points.md)|Düzenleyici uzantı noktaları listeler. Uzantı noktaları Genişletilebilir Düzenleyici özelliklerini temsil eder.|  
-|[İzlenecek yol: Görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Size yol gösterir ve belirli bir ekran genişliği kod sağlamanıza yardımcı olmak için sütun gudie satırları çizen bir görünüm kenarlığı oluşturma açıklanmaktadır.  Ayrıca, okuma ve yazma ayarları yanı sıra bildirme ve komut penceresinden çağırabilirsiniz komutlar uygulama gösterir.|  
+|[İzlenecek yol: Görünüm Kenarlığı, Komutlar ve Ayarlar (Sütun Kılavuzları) Oluşturma](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Size yol gösterir ve belirli bir ekran genişliği kod sağlamanıza yardımcı olmak için sütun gudie satırları çizen bir görünüm kenarlığı oluşturma açıklanmaktadır.  Ayrıca, okuma ve yazma ayarları yanı sıra bildirme ve komut penceresinden çağırabilirsiniz komutlar uygulama gösterir.|  
 |[Düzenleyici İçeri Aktarımları](../extensibility/editor-imports.md)|Bir uzantı aktarabilirsiniz hizmetler listelenir.|  
 |[Eski Kodu Düzenleyiciye Uyarlama](../extensibility/adapting-legacy-code-to-the-editor.md)|Eski kod (önceden Visual Studio Düzenleyicisi'ni genişletmek için 2010) uyarlamak için farklı yollar açıklanmaktadır.|  
 |[Eski Dil Hizmetini Geçirme](../extensibility/internals/migrating-a-legacy-language-service.md)|VSPackage'ı temel dil hizmetini geçirme açıklanmaktadır.|  
-|[İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Bir içerik türü için bir dosya adı uzantısına bağlama işlemi gösterilmektedir.|  
-|[İzlenecek yol: Bir dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)|Simge kenar boşluğuna ekleme işlemi gösterilmektedir.|  
-|[İzlenecek yol: Metni vurgulama](../extensibility/walkthrough-highlighting-text.md)|Nasıl kullanılacağını gösterir *etiketleri* metni vurgulayın.|  
-|[İzlenecek yol: Anahat oluşturma](../extensibility/walkthrough-outlining.md)|Küme ayraçları belirli bir tür için anahat oluşturma ekleme işlemi gösterilmektedir.|  
-|[İzlenecek yol: Eşleşen küme ayraçlarını görüntüleme](../extensibility/walkthrough-displaying-matching-braces.md)|Eşleşen küme ayraçlarını vurgulamak gösterilmektedir.|  
-|[İzlenecek yol: Hızlıbilgi araç ipuçlarını görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Özellikler, yöntemler ve olaylar gibi kod öğeleri açıklayan Hızlıbilgi açılan pencereler görüntüleme işlemini göstermektedir.|  
-|[İzlenecek yol: İmza yardımını görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)|Bir imzada sayısı ve parametre türleri hakkında bilgiler vermemiz açılan pencereler görüntüleme işlemini göstermektedir.|  
-|[İzlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)|Deyim tamamlama uygulanması gösterilmektedir.|  
-|[İzlenecek yol: Kod parçacıkları uygulama](../extensibility/walkthrough-implementing-code-snippets.md)|Kod parçacığı genişletme uygulanması gösterilmektedir.|  
-|[İzlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Ampuller kod öneriler için görüntüleme işlemini göstermektedir.|  
-|[İzlenecek yol: Bir düzenleyici uzantısı ile Kabuk komutu kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Bir menü komutu vspackage'ta bir MEF Bileşeni ile ilişkilendirilecek gösterilmektedir.|  
-|[İzlenecek yol: Bir düzenleyici uzantısı ile kısayol tuşu kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Bir MEF Bileşeni ile menü kısayolu vspackage'ta ilişkilendirilecek gösterilmektedir.|  
-|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Bilgi hakkında Yönetilen Genişletilebilirlik Çerçevesi (MEF) sağlar.|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Windows Presentation Foundation (WPF) hakkında bilgi sağlar.|  
+|[İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Bir içerik türü için bir dosya adı uzantısına bağlama işlemi gösterilmektedir.|  
+|[İzlenecek yol: Dış Boşluk Karakteri Oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md)|Simge kenar boşluğuna ekleme işlemi gösterilmektedir.|  
+|[İzlenecek yol: Metin Vurgulama](../extensibility/walkthrough-highlighting-text.md)|Nasıl kullanılacağını gösterir *etiketleri* metni vurgulayın.|  
+|[İzlenecek yol: Anahat Oluşturma](../extensibility/walkthrough-outlining.md)|Küme ayraçları belirli bir tür için anahat oluşturma ekleme işlemi gösterilmektedir.|  
+|[İzlenecek yol: Eşleşen Küme Ayraçlarını Görüntüleme](../extensibility/walkthrough-displaying-matching-braces.md)|Eşleşen küme ayraçlarını vurgulamak gösterilmektedir.|  
+|[İzlenecek yol: HızlıBilgi Araç İpuçlarını Görüntüleme](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Özellikler, yöntemler ve olaylar gibi kod öğeleri açıklayan Hızlıbilgi açılan pencereler görüntüleme işlemini göstermektedir.|  
+|[İzlenecek yol: İmza Yardımını Görüntüleme](../extensibility/walkthrough-displaying-signature-help.md)|Bir imzada sayısı ve parametre türleri hakkında bilgiler vermemiz açılan pencereler görüntüleme işlemini göstermektedir.|  
+|[İzlenecek yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)|Deyim tamamlama uygulanması gösterilmektedir.|  
+|[İzlenecek yol: Kod Parçacıkları Uygulama](../extensibility/walkthrough-implementing-code-snippets.md)|Kod parçacığı genişletme uygulanması gösterilmektedir.|  
+|[İzlenecek yol: Ampul Önerilerini Görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Ampuller kod öneriler için görüntüleme işlemini göstermektedir.|  
+|[İzlenecek yol: Düzenleyici Uzantısı ile Kabuk Komutu Kullanma](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Bir menü komutu vspackage'ta bir MEF Bileşeni ile ilişkilendirilecek gösterilmektedir.|  
+|[İzlenecek yol: Düzenleyici Uzantısı ile Kısayol Tuşu Kullanma](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Bir MEF Bileşeni ile menü kısayolu vspackage'ta ilişkilendirilecek gösterilmektedir.|  
+|[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Bilgi hakkında Yönetilen Genişletilebilirlik Çerçevesi (MEF) sağlar.|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Windows Presentation Foundation (WPF) hakkında bilgi sağlar.|  
   
 ## <a name="reference"></a>Başvuru  
  Visual Studio düzenleyicisinde, aşağıdaki ad alanlarını içerir.  

@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423267"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675455"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce Güvenliği ve Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yüklü ve minimum kullanıcı müdahalesiyle çalıştırma kendi kendini güncelleştiren ve Windows tabanlı uygulamalar oluşturmanızı sağlayan bir dağıtım teknolojisidir. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yayımlama ve projelerinizi Visual Basic ve Visual C# geliştirdiyseniz, ClickOnce teknolojisi ile dağıtılan uygulamaları güncelleştirmek için tam destek sağlar. Visual C++ uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ uygulamaları için ClickOnce dağıtımı](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Dağıtım üç ana dağıtım sorunları üstesinden gelir:  
   
@@ -98,8 +98,8 @@ ms.locfileid: "63423267"
 |----------|-----------------|  
 |[Güvenlik Sayfası, Proje Tasarımcısı](../ide/reference/security-page-project-designer.md)|Uygulama ve dağıtım bildirimlerini imzalar.|  
 |[Yayın Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)|Oluşturur ve Visual Basic ve Visual C# uygulamaları için uygulama ve dağıtım bildirimlerini düzenler.|  
-|[Mage.exe (Bildirim Oluşturma ve Düzenleme Aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Visual Basic, Visual C# ve Visual C++ uygulamaları için uygulama ve dağıtım bildirimlerini oluşturur.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.<br /><br /> Toplu betiklerden ve komut isteminden çalıştırabilirsiniz.|  
-|[MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Oluşturur ve uygulama ve dağıtım bildirimlerini düzenler.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.|  
+|[Mage.exe (Bildirim Oluşturma ve Düzenleme Aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Visual Basic, Visual C# ve Visual C++ uygulamaları için uygulama ve dağıtım bildirimlerini oluşturur.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.<br /><br /> Toplu betiklerden ve komut isteminden çalıştırabilirsiniz.|  
+|[MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Oluşturur ve uygulama ve dağıtım bildirimlerini düzenler.<br /><br /> İmzalar ve uygulama ve dağıtım bildirimlerini yeniden imzalar.|  
 |[GenerateApplicationManifest Görevi](../msbuild/generateapplicationmanifest-task.md)|Uygulama bildirimi oluşturur.<br /><br /> MSBuild'den çalıştırılabilir. Daha fazla bilgi için [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
 |[GenerateDeploymentManifest Görevi](../msbuild/generatedeploymentmanifest-task.md)|Dağıtım bildirimi oluşturur.<br /><br /> MSBuild'den çalıştırılabilir. Daha fazla bilgi için [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  
 |[SignFile Görevi](../msbuild/signfile-task.md)|Uygulama ve dağıtım bildirimlerini imzalar.<br /><br /> MSBuild'den çalıştırılabilir. Daha fazla bilgi için [MSBuild başvurusu](../msbuild/msbuild-reference.md).|  

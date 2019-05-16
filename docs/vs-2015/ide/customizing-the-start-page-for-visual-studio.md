@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 266082af039ee7f0ba2bd60e0c9a67145aaed1d3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701132"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio için Başlangıç Sayfasını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ Gösterildiği gibi bazı varsayılan yöntemlerle Visual Studio için başlang�
 > Özel başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda başlatabilir ve varsayılan başlangıç sayfasını kullanacak şekilde ayarlayabilirsiniz. Bkz: [safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [başlangıç sayfasının kendi oluşturma](../misc/creating-your-own-start-page.md)
+ [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [başlangıç sayfasının kendi oluşturma](../misc/creating-your-own-start-page.md)

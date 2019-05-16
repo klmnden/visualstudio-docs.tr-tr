@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437312"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704481"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows ve konsol uygulamaları için geçerlidir.  
   
- [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md) yararlanan kısmi güven uygulamaları dağıtmayı kolaylaştırır [kod erişim güvenliği](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) makine kaynaklarına erişimi sınırlamak için.  
+ [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md) yararlanan kısmi güven uygulamaları dağıtmayı kolaylaştırır [kod erişim güvenliği](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) makine kaynaklarına erişimi sınırlamak için.  
   
  Kısmi güven uygulamasında hata ayıklama olabilir bir challenge, kısmi güven uygulamaları, farklı güvenlik izinlerine sahip (ve bu nedenle farklı davranır çünkü) bağlı olarak burada yüklenirler. Kısmen güvenilen uygulamada, internet'ten yüklü değilse, birkaç izinlerine sahip olur. Yerel intranetten yüklü değilse, daha fazla izne sahip ve yerel bilgisayardan yüklü değilse, tüm izinlere sahip olacaktır. Ayrıca özel bölgeleri, özel izinlere sahip olabilir. Tüm bu koşullar altında kısmen güvenilen uygulamada hata ayıklama gerekebilir. Neyse ki, Visual Studio bu de kolaylaştırır.  
   

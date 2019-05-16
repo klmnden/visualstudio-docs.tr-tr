@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437250"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704776"
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
  Aşağıdaki seçenekler uygulama genel ayarlarını yapılandırmak etkinleştirin.  
   
  **Derleme adı**  
- Derleme bildirimi tutacak çıkış dosyasının adını belirtir. Bu özelliği değiştirmek de değiştirecek **çıkış adı** özelliği. Kullanarak komut satırından bu değişikliği yapabilirsiniz [/out (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Derleme bildirimi tutacak çıkış dosyasının adını belirtir. Bu özelliği değiştirmek de değiştirecek **çıkış adı** özelliği. Kullanarak komut satırından bu değişikliği yapabilirsiniz [/out (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Varsayılan ad alanı**  
  Projeye eklenen dosyaları için temel ad alanını belirtir.  
   
- Bkz: [ad alanı](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) kodunuzda ad alanları oluşturma hakkında daha fazla bilgi için.  
+ Bkz: [ad alanı](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) kodunuzda ad alanları oluşturma hakkında daha fazla bilgi için.  
   
  Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -64,7 +64,7 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
 > [!NOTE]
 > Windows çalışma zamanı türleri, böylece bunları hangi dil kullanır yerel nesneler olarak görünürler yansıtabilirsiniz. Örneğin, isteğe bağlı olarak, Windows çalışma zamanı ile etkileşim JavaScript uygulamaları JavaScript nesneleri bir dizi kullanın ve C# uygulamaları kitaplığı bir .NET nesneleri koleksiyon olarak kullanın. Projenin çıkış bir WinMD dosyası olarak paketleyerek Windows çalışma zamanı kullanan aynı teknolojiyi yararlanabilir.  
   
- Hakkında daha fazla bilgi için **uygulama türü** özelliğine bakın [/target (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Hakkında daha fazla bilgi için **uygulama türü** özelliğine bakın [/target (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Derleme bilgileri**  
  Bu düğmeye tıklandığında görüntüler [derleme bilgileri iletişim kutusu](../../ide/reference/assembly-information-dialog-box.md).  
@@ -74,7 +74,7 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
   
  Bu seçenek bir WPF tarayıcı uygulaması projesinde varsayılan olarak **(ayarlanmamış)**. Diğer seçenek *Projectname*. uygulama. İçinde bu tür bir projeye ilişkin başlangıç URI uygulama başlatıldığında bir UI kaynak yüklemek için ayarlamanız gerekir. Bunu yapmak için projenizde Application.xaml dosyasını açın ve ayarlayın `StartupUri` gt;Window1.XAML gibi projenizi bir .xaml dosyasında özelliği. Kabul edilebilir kök öğeleri listesi için bkz. <xref:System.Windows.Application.StartupUri%2A>. Tanımlamak de bir `public static void Main()` projedeki bir sınıftaki yöntemi. Bu sınıf görünür **Başlangıç nesnesi** olarak listesinde *ProjectName.ClassName*. Ardından, sınıf Başlangıç nesnesi seçebilirsiniz.  
   
- Bkz: [/Main (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Bkz: [/Main (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Kaynaklar  
  Aşağıdaki seçenekler uygulama genel ayarlarını yapılandırmak etkinleştirin.  
@@ -83,7 +83,7 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
  Varsayılan olarak, bu radyo düğmesi seçilir ve **simgesi** ve **bildirim** seçenekleri etkinleşir. Bu, kendi simgesini seçin veya farklı bildirim oluşturma seçenekleri seçmenizi sağlar. Bu radyo düğmesi projesi için kaynak dosyasını sağlanmaktadır sürece seçili bırakın.  
   
  **Simgesi**  
- İstediğiniz, program simge olarak kullanılacak .ico dosyasını seçer. Var olan bir grafik göz atmak için üç nokta düğmesine tıklayın ya da istediğiniz dosyanın adını yazın. Bkz: [/win32icon (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ İstediğiniz, program simge olarak kullanılacak .ico dosyasını seçer. Var olan bir grafik göz atmak için üç nokta düğmesine tıklayın ya da istediğiniz dosyanın adını yazın. Bkz: [/win32icon (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Bildirimi**  
  Windows Vista kullanıcı hesabı denetimi (UAC altında) uygulama çalışırken bir bildirim üretme seçeneğini belirler. Bu seçenek, aşağıdaki değerlere sahip olabilir:  
@@ -101,4 +101,4 @@ Kullanım **uygulama** sayfasının **Proje Tasarımcısı** projenin uygulama a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Uygulama özelliklerini yönetme](../../ide/application-properties.md)  
- [Office Çözümlerinde Kod Yazma](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Office Çözümlerinde Kod Yazma](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699124"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Başlangıç Sayfasına Kullanıcı Denetimi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,5 +187,5 @@ Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu eklem
      Özel başlangıç sayfanızı görüntülenmesi gerekir. Dosyaları değiştirmek istiyorsanız, size gerekir deneysel örneği kapatın, değişiklik, kopyalayın ve değiştirilen dosyaları yapıştırın ve ardından değişiklikleri görüntülemek için deneysel örneğinde yeniden açın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [WPF kapsayıcı denetimleri](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [WPF kapsayıcı denetimleri](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

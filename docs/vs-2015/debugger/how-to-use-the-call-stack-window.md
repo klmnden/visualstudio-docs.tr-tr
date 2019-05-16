@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697484"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Nasıl yapılır: Çağrı yığını penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
  Kısayol menüsünü kullanarak iş parçacıkları arasındaki çağrıları görmek isteyip istemediğinizi seçebilirsiniz.  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Çağrı yığını penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   
@@ -139,7 +139,7 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karışık kod ve eksik bilgiler çağrı yığını penceresi](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Nasıl yapılır: Hata ayıklayıcı Windows sayısal biçimini değiştirme](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Nasıl yapılır: Hata ayıklayıcı Windows sayısal biçimini değiştirme](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
  [Sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)

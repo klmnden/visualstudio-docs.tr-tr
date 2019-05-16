@@ -12,12 +12,12 @@ ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8e92ecd6e99f9fe369157c92dd4d964f86da97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc4ac1f3a8d9b470fbb3734f822601a7dce08a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766670"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696678"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugCanStopEvent2 : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Hata ayıklama altyapısı (DE) kaynak kod içerisinde ilerlemeye desteklemek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi).  
+ Hata ayıklama altyapısı (DE) kaynak kod içerisinde ilerlemeye desteklemek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde (SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi).  
   
  Bu arabirim uygulamasını SDM'ın çağrısı iletişim kurması gereken [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) hata ayıklama altyapısı. Örneğin, bu işleme iş parçacığı hata ayıklama altyapısının ileti gönderen bir ileti ile yapılabilir veya bu arabirimi uygulayan nesnenin bir başvuru için hata ayıklama altyapısı tutun ve geri yöntemlere geçirilen bayrağı ile hata ayıklama motorunda arama `IDebugCanStopEvent2::CanStop`.  
   

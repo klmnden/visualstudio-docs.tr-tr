@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d42c9698c6d3a247601909909c49fa92d2d29978
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1398d7fb62943c04ca026175a3f46b282bf6da69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696327"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Nasıl yapılır: Windows Communication Foundation Sözleşme İşlemi Çağırma (Eski)
 Bu konu nasıl çağrılacağını açıklar bir [!INCLUDE[indigo1](../includes/indigo1-md.md)] sözleşme işlemi kullanılarak [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -45,7 +45,7 @@ Bu konu nasıl çağrılacağını açıklar bir [!INCLUDE[indigo1](../includes/
   
 3. Kanal belirteç düğümünü genişletin ve kullanmak için seçeceğiz istemci uç noktası için bir ad belirtin <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> alan. Yapılandırma dosyası aynı adlı uç nokta yapılandırması kanalı yapılandırmak için kullanılır.  
   
-4. Zaten yoksa, yapılandırma dosyasında uç nokta yapılandırması oluşturun. İstemci yapılandırma hakkında daha fazla bilgi için bkz. [WCF istemcisi genel bakış](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
+4. Zaten yoksa, yapılandırma dosyasında uç nokta yapılandırması oluşturun. İstemci yapılandırma hakkında daha fazla bilgi için bkz. [WCF istemcisi genel bakış](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlem iletişim kutusu (eski) seçin](../workflow-designer/choose-operation-dialog-box-legacy.md)   

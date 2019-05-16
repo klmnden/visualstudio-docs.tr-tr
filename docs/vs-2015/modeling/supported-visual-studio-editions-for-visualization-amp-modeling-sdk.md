@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19b4c45e72c90d8f1cee3130475767003a6d7cf7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411518"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696872"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ms.locfileid: "63411518"
 > Bir DSL Kabuk ürünü üzerinde çalıştırılan mümkün hale getirmek için ayarlamanız gerekir **desteklenen VS Edition** uzantı bildirim alanındaki. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

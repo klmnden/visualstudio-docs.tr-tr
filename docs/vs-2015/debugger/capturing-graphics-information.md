@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437822"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702549"
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "63437822"
 ## <a name="capturing-graphics-information-remotely"></a>Graf bilgilerini uzaktan yakalama  
  Grafik bilgileri, yerel makinede ya da uzak bir makine veya cihazda çalışan bir uygulamadan yakalanabilir. Uzaktan yakalama için desteklenen [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] makineler ve [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] cihazlar. Uzakta çalışan bir uygulamadan grafik bilgilerini yakalamak için, projenizi uzaktan hata ayıklama için yapılandırın ve sonra uygulamanızı, daha önce açıklandığı gibi, Grafik Tanılama altında çalıştırın. Uygulama uzak makinede çalışır ve yakalanan grafik bilgileri geliştirme makinenizde kaydedilir.  
   
- Projenizi uzaktan hata ayıklama için yapılandırma şekliniz, geliştirmekte olduğunuz uygulamanın türüne ve kullandığınız programlama diline göre değişir. Bir Windows Store uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md). Bir Windows masaüstü uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [kümesi oluşturan uzaktan hata ayıklama için Visual Studio projesi](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ Projenizi uzaktan hata ayıklama için yapılandırma şekliniz, geliştirmekte olduğunuz uygulamanın türüne ve kullandığınız programlama diline göre değişir. Bir Windows Store uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [uzak bir makinede çalıştırma Windows Store apps](../debugger/run-windows-store-apps-on-a-remote-machine.md). Bir Windows masaüstü uygulaması için uzaktan hata ayıklamayı yapılandırma hakkında daha fazla bilgi için bkz: [kümesi oluşturan uzaktan hata ayıklama için Visual Studio projesi](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
  Daha sonra, bilgilerin yakalandığı yerden bağımsız olarak, grafik bilgilerini kayıttan yürütmek için bir uzak makine veya cihaz kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Grafik tanılama kayıttan yürütme makinesini değiştirme](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   

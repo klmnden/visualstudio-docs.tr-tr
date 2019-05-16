@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Bulun ve Visual Studio aboneliğinize dahil olan Microsoft ürünleri indirmeniz öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697778"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde kullanarak abone indirmeleri
 Abone Avantajlarınızı bir parçası olarak çok çeşitli yazılım indirme işlemleri erişebilirsiniz.
@@ -31,7 +31,7 @@ Neden belirli ürünleri abonelerinin olmayabilir birkaç nedeni vardır:
 - **Yedekli yazılım.** Bazı Office paketleri ve tek başına Office yüklemeleri ve ürün anahtarları, Office içeren Aboneliklerde artık sağlanmamaktadır. İndirmelere ve ürün anahtarlarına karşılık gelen en yüksek Office paketinin aynı sürümü için kullanılabilir.  Örneğin, arama, PowerPoint 2010 için arama yaparsanız, hiçbir sonuç oluşturmaz.  Ancak, Office 2010 için - PowerPoint 2010 yer alan Office suite - arama ve paketini indirin.
 
 ## <a name="what-do-i-get"></a>Neye sahip olurum?
-İndirme türü ve numarası, abonelik düzeyi ve program üyeliği bağlıdır.  Standart abonelikler Visual Studio Enterprise aboneleri, örneğin, farklı indirmeler kullanabilecekleri Microsoft Partner Network veya BizSpark programı aboneliğine aboneliklerini elde aboneleri daha olabilir.  Hangi yüklemeleri için her bir abonelik düzeyi kullanılabilir hakkında daha fazla bilgi için listesini indirme [avantaj olarak ürün düzeyinde](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+İndirme türü ve numarası, abonelik düzeyi ve program üyeliği bağlıdır.  Standart abonelikler Visual Studio Enterprise aboneleri, örneğin, farklı indirmeler kullanabilecekleri Microsoft Partner Network veya BizSpark programı aboneliğine aboneliklerini elde aboneleri daha olabilir.  Hangi yüklemeleri için her bir abonelik düzeyi kullanılabilir hakkında daha fazla bilgi için listesini indirme [avantaj olarak ürün düzeyinde](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

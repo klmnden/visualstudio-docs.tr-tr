@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059142"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679967"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
  Uygulama kısmi güvende çalıştırmak için işaretlendiyse, destek URL'sini iletişim kutusunda görüntülenmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (bildirim üretme ve düzenleme aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > öğesi](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce ve Authenticode](../deployment/clickonce-and-authenticode.md)   

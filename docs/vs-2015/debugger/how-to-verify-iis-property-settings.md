@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ab2b6981094ffbdfcd6544198179924b4e1c53a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686826"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Nasıl yapılır: IIS özellik ayarlarını doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63444773"
 IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarlayabilirsiniz. Bu ayarlar doğrulanıyor genellikle sorun giderme gerekli bir adım, bu nedenle bu özellikleri çalıştırmak, uygulama için doğru şekilde ayarlamanız gerekir.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>IIS Web uygulamasının ayarlarını denetlemek için  
   
@@ -61,7 +61,7 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
   
     3. Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.  
   
-5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6. İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.  
   

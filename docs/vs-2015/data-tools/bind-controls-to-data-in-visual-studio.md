@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705583"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Denetimlere veri bağlama ile uygulamanızın kullanıcılarına verileri görü
 
  1. Kullanarak modeli oluşturma **varlık veri modeli** Sihirbazı'nı, ardından bu nesneleri tasarımcıya sürükleyebilirsiniz.
 
- 2. LINQ to SQL sınıfları görünmez **veri kaynakları** penceresi. Ancak LINQ to SQL sınıflarını temel alan yeni bir nesne veri kaynağı ekleyin ve ardından bu nesneleri tasarımcıya verilere bağlı denetimler oluşturmak için sürükleyin. Daha fazla bilgi için [izlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. LINQ to SQL sınıfları görünmez **veri kaynakları** penceresi. Ancak LINQ to SQL sınıflarını temel alan yeni bir nesne veri kaynağı ekleyin ve ardından bu nesneleri tasarımcıya verilere bağlı denetimler oluşturmak için sürükleyin. Daha fazla bilgi için [izlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Veri Kaynakları penceresi
  Veri kaynakları projenize kullanılabilir öğeleri olarak **veri kaynakları** penceresi. Bu pencere görünür ve erişilebilir **görünümü** form Tasarım yüzeyine projesinde etkin pencere olduğunda menü. Temel alınan verilere bağlı denetimler oluşturmak için bu pencereden öğe sürükleyebilirsiniz ve sağ tıklayarak veri kaynakları da yapılandırabilirsiniz.
@@ -71,4 +71,4 @@ Denetimlere veri bağlama ile uygulamanızın kullanıcılarına verileri görü
 |Açıklamalı alt yazılar denetimleri için özelleştirin.|[Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [.NET için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms veri bağlama](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [.NET için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms veri bağlama](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

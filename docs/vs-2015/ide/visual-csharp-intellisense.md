@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698202"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
   Tamamlanma listesine dâhil C# ilgisiz belirteçleri filtrelemek ve bağlamına dayalı bir belirteç önceden seçmek akıllı. Daha fazla bilgi için [C# ' de filtrelenmiş tamamlanma listeleri](../misc/filtered-completion-lists-in-csharp.md) ve [Pre-selected tamamlanma listesi öğeleri, C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Kod parçacıkları tamamlanma listeleri  
- Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
+ Visual C# içinde önceden tanımlanmış gövdeleri kodu programınıza kolayca eklemenize yardımcı olmak için kod parçacıkları tamamlanma listesi içerir. Kod parçacığının olarak tamamlama listede görünür [Shortcut öğesi (IntelliSense kod parçacıkları)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Varsayılan olarak Visual C# dilinde kullanılabilir kod parçacıkları hakkında daha fazla bilgi için bkz: [Visual C# kod parçacıkları](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Tamamlanma listeleri dil anahtar sözcükleri  
- Visual C# ' ta tamamlanma listesi dil anahtar sözcükleri de içerir. C# dil anahtar sözcükleri hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ Visual C# ' ta tamamlanma listesi dil anahtar sözcükleri de içerir. C# dil anahtar sözcükleri hakkında daha fazla bilgi için bkz: [C# anahtar sözcükleri](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Tamamlama listelerinde genişletme yöntemleri  
  Visual C# ' ta tamamlanma listesi kapsamlarındaki genişletme yöntemleri içerir.  
@@ -81,7 +81,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
  IntelliSense, yakın zamanda açılır pencerede seçtiğiniz üyeleri hatırlar [üyeleri Listele](../ide/using-intellisense.md) kutusu otomatik nesne adı tamamlama. Üye listesi, sonraki açışınızda, en son kullanılan üyeler en üstünde gösterilir. En son kullanılan üyeler geçmişi, her oturum IDE içindeki arasında temizlenir.  
   
 ## <a name="override"></a>override  
- Yazdığınızda [geçersiz kılma](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) ve sürüklerken boşluk tuşuna basın, IntelliSense tüm bir açılır liste kutusunda geçersiz kılma geçerli bir temel sınıf üyelerini görüntüler. Sonraki yöntemin dönüş türü yazarak `override` yalnızca aynı türü döndüren yöntemler göstermek için IntelliSense ister. IntelliSense herhangi bir eşleşme bulamazsa, tüm temel sınıf üyelerinin görüntülenir.  
+ Yazdığınızda [geçersiz kılma](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) ve sürüklerken boşluk tuşuna basın, IntelliSense tüm bir açılır liste kutusunda geçersiz kılma geçerli bir temel sınıf üyelerini görüntüler. Sonraki yöntemin dönüş türü yazarak `override` yalnızca aynı türü döndüren yöntemler göstermek için IntelliSense ister. IntelliSense herhangi bir eşleşme bulamazsa, tüm temel sınıf üyelerinin görüntülenir.  
   
 ## <a name="automatic-code-generation"></a>Otomatik Kod Üretimi  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense, kodlama Düzenleyicisi'nde ve siz hata ayıklama sıras�
  Visual Studio IDE'de kullanılabilir seçenekleri görmek için **Düzenle** menüsünde **IntelliSense**, gelin ve ardından **Using'leri düzenleme**. IDE düzenlemek ve kaldırmak için aşağıdaki seçenekleri sağlar `usings` yönergeleri:  
   
 ### <a name="implement-interface"></a>Arabirimi Uygulama  
- IntelliSense sağlar, yardımcı bir seçenek bir [arabirimi](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) Kod Düzenleyicisi'nde çalışırken. Normalde, bir arabirim düzgün bir şekilde uygulamak için bir yöntem bildiriminde arabirimi her üyesi için sınıfınızda oluşturmanız gerekir. Bir sınıf bildiriminde bir arabirimin adını yazdıktan sonra IntelliSense'i kullanarak, bir akıllı etiket görüntülenir. Akıllı etiket açık veya örtülü adlandırma kullanarak arabirimi otomatik olarak uygulamak için seçeneği sunar. Açık adlandırma altında yöntem bildirimleri arabirimin adını taşıyan; örtük adlandırma altında yöntem bildirimleri ait oldukları arabirimi göstermez. Açıkça adlandırılmış arabirim yöntemi yalnızca bir sınıf örneği üzerinden değil ve bir arabirim örneği aracılığıyla erişilebilir. Daha fazla bilgi için [açık arabirim uygulaması](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ IntelliSense sağlar, yardımcı bir seçenek bir [arabirimi](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) Kod Düzenleyicisi'nde çalışırken. Normalde, bir arabirim düzgün bir şekilde uygulamak için bir yöntem bildiriminde arabirimi her üyesi için sınıfınızda oluşturmanız gerekir. Bir sınıf bildiriminde bir arabirimin adını yazdıktan sonra IntelliSense'i kullanarak, bir akıllı etiket görüntülenir. Akıllı etiket açık veya örtülü adlandırma kullanarak arabirimi otomatik olarak uygulamak için seçeneği sunar. Açık adlandırma altında yöntem bildirimleri arabirimin adını taşıyan; örtük adlandırma altında yöntem bildirimleri ait oldukları arabirimi göstermez. Açıkça adlandırılmış arabirim yöntemi yalnızca bir sınıf örneği üzerinden değil ve bir arabirim örneği aracılığıyla erişilebilir. Daha fazla bilgi için [açık arabirim uygulaması](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  Arabirim uygulama arabirimi karşılamak için gereken en az sayıda yöntem saptamalar oluşturur. Ardından bir temel sınıf arabirimi bölümlerini uyguluyorsa, bu saptamalar yeniden oluşturulmaz.  
   

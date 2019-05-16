@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb06c1d97c854aae05d993c086069e10e35518f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704979"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters'ı kullanarak veri kümelerini doldurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>İlişkili DataTable şeması  
- Bir TableAdapter oluşturduğunuzda, ilk sorgu kullanın veya saklı yordamı TableAdapter şemasını tanımlamak için ilişkili zaman <xref:System.Data.DataTable>. Bu başlangıç sorgusunu çalıştırın veya saklı yordamı TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi (tablosu doldurulur ilişkili <xref:System.Data.DataTable>). TableAdapter bağdaştırıcısının ana sorgusunda yapılan değişiklikler ilişkili veri tablosunun şemada yansıtılır. Örneğin, ana sorgudan bir sütun kaldırılması da sütunu ilişkili veri tablosundan kaldırır. TableAdapter üzerindeki ek sorgular ana sorguda bulunmayan sütunları döndüren SQL deyimleri kullanıyorsanız, Tasarımcı ana sorgu ve ek sorgular arasındaki sütun değişikliklerini eşitlemeye çalışır. Daha fazla bilgi için [nasıl yapılır: TableAdapters düzenleme](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Bir TableAdapter oluşturduğunuzda, ilk sorgu kullanın veya saklı yordamı TableAdapter şemasını tanımlamak için ilişkili zaman <xref:System.Data.DataTable>. Bu başlangıç sorgusunu çalıştırın veya saklı yordamı TableAdapter bağdaştırıcısının çağırarak `Fill` yöntemi (tablosu doldurulur ilişkili <xref:System.Data.DataTable>). TableAdapter bağdaştırıcısının ana sorgusunda yapılan değişiklikler ilişkili veri tablosunun şemada yansıtılır. Örneğin, ana sorgudan bir sütun kaldırılması da sütunu ilişkili veri tablosundan kaldırır. TableAdapter üzerindeki ek sorgular ana sorguda bulunmayan sütunları döndüren SQL deyimleri kullanıyorsanız, Tasarımcı ana sorgu ve ek sorgular arasındaki sütun değişikliklerini eşitlemeye çalışır. Daha fazla bilgi için [nasıl yapılır: TableAdapters düzenleme](https://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>TableAdapter güncelleştirme komutları  
  TableAdapter bağdaştırıcısının güncelleştirme işlevleri TableAdapter Sihirbazı'nı ana sorgusunda kullanılabilir ne kadar bilgi olduğuna bağlıdır. Örneğin, değerleri birden çok tablodan (JOIN), skalar değerden veya görünümden ya da toplu işlevlerin sonuçlarından alacak şekilde yapılandırılan TableAdapter bağdaştırıcıları, başlangıçta güncelleştirmeleri temel alınan veritabanına geri gönderebilme özelliğiyle oluşturulmaz. Ancak INSERT, UPDATE ve DELETE komutlarını el ile yapılandırabilirsiniz **özellikleri** penceresi.  
@@ -106,7 +106,7 @@ Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya
  Bu doğrudan yöntemleri oluşturmak istemiyorsanız TableAdapter bağdaştırıcısının ayarlamak **GenerateDbDirectMethods** özelliğini `false` (içinde **özellikleri** pencere). TableAdapter bağdaştırıcısına eklenen ek sorgular olan tek başına sorgulardır; bu yöntemler oluşturmak yok.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Boş değer atanabilir türler için TableAdapter desteği  
- TableAdapter boş değer atanabilir türler Destek `Nullable(Of T)` ve `T?`. Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). C# dilinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [kullanarak boş değer atanabilir türler](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ TableAdapter boş değer atanabilir türler Destek `Nullable(Of T)` ve `T?`. Visual Basic'te boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [boş değer atanabilir değer türleri](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). C# dilinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz: [kullanarak boş değer atanabilir türler](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Güvenlik  
  Veri komutları ile kullandığınızda bir `CommandType` özelliğini <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda her zaman kullanmak iyi bir uygulamadır.  

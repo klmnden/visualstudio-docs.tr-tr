@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700942"
 ---
 # <a name="cpu-usage"></a>CPU kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Uygulamanızdaki performans sorunlarını araştırmak gerektiğinde başlatmak 
   
  Bir Windows Store uygulaması performansını analiz eden bir kılavuz için bkz. [Store uygulamalarında CPU kullanımını analiz](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- Performans ve tanılama hub'ı bu, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek başına sunar. Örneğin, çalıştırabileceğiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya açık bir simülatörü veya öykünücü. Visual Studio, çalışan bir uygulama için bağlı açık bir projedeymiş performansını analiz veya Windows Store ' yüklü olduğu bir uygulamayı başlatın. Daha fazla bilgi için [hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ Performans ve tanılama hub'ı bu, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek başına sunar. Örneğin, çalıştırabileceğiniz **CPU kullanımı** aracı yerel veya uzak makinelerde veya açık bir simülatörü veya öykünücü. Visual Studio, çalışan bir uygulama için bağlı açık bir projedeymiş performansını analiz veya Windows Store ' yüklü olduğu bir uygulamayı başlatın. Daha fazla bilgi için [hata ayıklama olmadan profil oluşturma araçları çalıştırma](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> CPU kullanım verileri toplama  
   

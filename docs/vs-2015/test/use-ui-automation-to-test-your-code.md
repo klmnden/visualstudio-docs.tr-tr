@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442900"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695312"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> Sırada ne var?
  **Kodlanmış UI testleri çalıştırmak için ek seçenekler:** Bu konunun önceki kısımlarında açıklandığı gibi kodlanmış UI testleri doğrudan Visual Studio'dan çalıştırabilirsiniz. Ayrıca, otomatikleştirilmiş UI testleri çalıştırabilirsiniz [!INCLUDE[TCMext](../includes/tcmext-md.md)], veya [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Kodlanmış UI testlerini otomatik olduğunda, bunları diğer otomatik testler çalıştırdığınızda, masaüstü ile etkileşimine izin sahiptirler.
 
-- [Nasıl yapılır: Microsoft Visual Studio'dan testler çalıştırma](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Nasıl yapılır: Microsoft Visual Studio'dan testler çalıştırma](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Otomatikleştirilmiş testleri Microsoft Test Yöneticisi'ni çalıştırma](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Otomatikleştirilmiş testleri Microsoft Test Yöneticisi'ni çalıştırma](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Nasıl yapılır: Yapılandırma ve uygulamanızı oluşturduktan sonra zamanlanmış testleri çalıştırma](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Nasıl yapılır: Yapılandırma ve uygulamanızı oluşturduktan sonra zamanlanmış testleri çalıştırma](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [Yapı işleminizdeki testleri çalıştırın](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [Yapı işleminizdeki testleri çalıştırın](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [Komut satırından otomatikleştirilmiş testler çalıştırma](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [Komut satırından otomatikleştirilmiş testler çalıştırma](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [Nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için Test aracınızı ayarlama](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;kullanımdan&#93; kullanarak kodlanmış UI testlerini yük testlerinde](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;kullanımdan&#93; kullanarak kodlanmış UI testlerini yük testlerinde](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **Özel denetimler için destek ekleme:**  Kodlanmış UI Test Çerçevesi, her olası kullanıcı Arabirimi desteklemez ve test etmek istediğiniz kullanıcı Arabirimi desteklemiyor olabilir. Örneğin, hemen bir kodlanmış UI testi için UI oluşturamazsınız [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Ancak, özel bir denetim destekleyen kodlanmış UI Test Çerçevesi uzantısı oluşturabilirsiniz.
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Kodlanmış Kullanıcı Arabirimi Testlerini ve Eylem Kayıtlarını Microsoft Excel'i Desteklemek için Genişletme](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Kodlanmış UI testleri genellikle el ile testleri otomatik hale getirmek için kullanılır. Ek rehberlik için bkz. [Visual Studio 2012 – Chapter 5 ile sürekli teslimat testi: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196). El ile testleri hakkında daha fazla bilgi için bkz. [ &#91;kullanımdan&#93; oluşturma el ile Test çalışmaları Microsoft Test Yöneticisini kullanarak](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Otomatik Sistem testleri hakkında daha fazla bilgi için bkz. [oluşturarak otomatikleştirilmiş testleri Microsoft Test Yöneticisini kullanarak](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Kodlanmış UI testleri genellikle el ile testleri otomatik hale getirmek için kullanılır. Ek rehberlik için bkz. [Visual Studio 2012 – Chapter 5 ile sürekli teslimat testi: Sistem testlerini otomatikleştirme](http://go.microsoft.com/fwlink/?LinkID=255196). El ile testleri hakkında daha fazla bilgi için bkz. [ &#91;kullanımdan&#93; oluşturma el ile Test çalışmaları Microsoft Test Yöneticisini kullanarak](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Otomatik Sistem testleri hakkında daha fazla bilgi için bkz. [oluşturarak otomatikleştirilmiş testleri Microsoft Test Yöneticisini kullanarak](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Dış Kaynaklar
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Kod Kalitesini Geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [Kod Kalitesini Geliştirme](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [İzlenecek yol: Kodlanmış UI Testi Oluşturma, Düzenleme ve Sürdürme](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 - [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Kodlanmış UI Test Düzenleyicisi'ni Kullanarak Kodlanmış UI Testlerini Düzenleme](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Mevcut eylem kaydından bir kodlanmış UI testi oluşturma](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Mevcut eylem kaydından bir kodlanmış UI testi oluşturma](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

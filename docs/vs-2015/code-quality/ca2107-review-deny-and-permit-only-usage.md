@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687396"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Gözden geçirmeyi reddedin ve yalnızca kullanımına izin verin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "60082158"
  Bir yöntem PermitOnly veya reddetme güvenlik eylem belirten bir güvenlik denetimi içerir.
 
 ## <a name="rule-description"></a>Kural Tanımı
- [PermitOnly yöntemini kullanma](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) ve <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> güvenlik eylemleri yalnızca bir bilgiye sahip olan olanlar tarafından kullanılmalıdır, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] güvenlik. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.
+ [PermitOnly yöntemini kullanma](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) ve <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> güvenlik eylemleri yalnızca bir bilgiye sahip olan olanlar tarafından kullanılmalıdır, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] güvenlik. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.
 
  Reddetmek için bir güvenlik talebi karşılamak üzere oluşuyor yığın ilerlemesi varsayılan davranışını değiştirir. Çağrı yığınında çağıranlar, gerçek izinlerinden reddeden yöntem süresince verilmelidir değil izinleri belirtmenize olanak tanır. Yığın ilerlemesi Reddet tarafından güvenli bir yöntem algılar ve talep edilen izni reddedildi izinler eklenirse, yığın ilerlemesi başarısız olursa. PermitOnly ayrıca yığın ilerlemesi varsayılan davranışını değiştirir. Çağıranlar izinlerine bakılmaksızın verilebilecek izinleri belirlemek kod sağlar. Yığın ilerlemesi PermitOnly tarafından güvenli hale getirilmiş bir yöntem algılar ve talep edilen izni PermitOnly tarafından belirtilen izinler dahil edilmemişse, yığın ilerlemesi başarısız olursa.
 
  Bu eylemleri bağımlı kod kendi sınırlı yararlılığını ve ince davranışı nedeniyle güvenlik açıklarını dikkatlice değerlendirilmelidir. Aşağıdakileri göz önünde bulundurun:
 
-- [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) izin verme ya da PermitOnly tarafından etkilenmez.
+- [Bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) izin verme ya da PermitOnly tarafından etkilenmez.
 
 - Yığın ilerlemesi neden olan isteğe bağlı olarak aynı yığın çerçevesinde izin verme ya da PermitOnly ortaya çıkarsa, güvenlik eylemleri bir etkisi yoktur.
 
@@ -80,4 +80,4 @@ ms.locfileid: "60082158"
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [güvenlik denetimlerini geçersiz kılma](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [PermitOnly yöntemini kullanma](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [güvenlik denetimlerini geçersiz kılma](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [PermitOnly yöntemini kullanma](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

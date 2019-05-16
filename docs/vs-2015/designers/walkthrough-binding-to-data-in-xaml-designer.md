@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071622"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701955"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>İzlenecek yol: XAML Tasarımcısı'nda verilere bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek veriyi denetime bağlama gösterilmektedir. Özellikle, gözden geçirme sahip basit bir alışveriş sepeti sınıfı oluşturma işlemini gösterir ve bir [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) adlı `ItemCount`ve ardından `ItemCount` özelliğini **metin** özelliği bir [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) denetimi.  
+XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullanarak veri bağlama özellikleri ayarlayabilirsiniz. Bu kılavuzda örnek veriyi denetime bağlama gösterilmektedir. Özellikle, gözden geçirme sahip basit bir alışveriş sepeti sınıfı oluşturma işlemini gösterir ve bir [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) adlı `ItemCount`ve ardından `ItemCount` özelliğini **metin** özelliği bir [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) denetimi.  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Veri kaynağı olarak kullanılacak bir sınıf oluşturmak için  
   
@@ -66,7 +66,7 @@ XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullana
     End Class  
     ```  
   
-     Bu kod, kullanarak varsayılan öğe sayısı 0 değerini ayarlar [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) nesne.  
+     Bu kod, kullanarak varsayılan öğe sayısı 0 değerini ayarlar [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx) nesne.  
   
 5. Üzerinde **dosya** menüsünde seçin **derleme**, **Çözümü Derle**.  
   
@@ -74,7 +74,7 @@ XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullana
   
 1. Çözüm Gezgini içinde MainWindow.xaml için kısayol menüsünü açın ve seçin **Görünüm Tasarımcısı**.  
   
-2. Araç kutusunda seçin bir [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) denetlemek ve forma ekleyin.  
+2. Araç kutusunda seçin bir [kılavuz](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) denetlemek ve forma ekleyin.  
   
 3. İle `Grid` seçiliyken, Özellikler penceresinde **yeni** düğmesinin yanındaki **DataContext** özelliği.  
   
@@ -100,4 +100,4 @@ XAML Tasarımcısı'nda, çalışma yüzeyine ve Özellikler penceresini kullana
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı'nı kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Değer dönüştürücüsü iletişim kutusu Ekle](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Değer dönüştürücüsü iletişim kutusu Ekle](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

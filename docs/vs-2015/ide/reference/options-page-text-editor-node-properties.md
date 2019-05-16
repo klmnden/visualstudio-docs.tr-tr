@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674872"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Seçenekler Sayfası, Metin Düzenleyici Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **metin düzenleyici** kategori `DTE.Properties("TextEditor", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı kullanılan çağrıdır erişimi `Properties` toplama ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.  
   
- Visual Basic makrolarındaki [Controlling Options Settings](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) geçerli seçeneklerini ve her bir sayfası değerlerini görüntülemek nasıl **seçenekleri** iletişim kutusu.  
+ Visual Basic makrolarındaki [Controlling Options Settings](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) geçerli seçeneklerini ve her bir sayfası değerlerini görüntülemek nasıl **seçenekleri** iletişim kutusu.  
   
 ## <a name="general"></a>Genel  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ Bu belgede, bazı sayfalar (veya özellik koleksiyonları) açıklanmaktadır il
 |CutCopyBlankLines|Get/Set (Boole)|Seçildiklerinde, boş satırları keser veya kopyalar:|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seçenek ayarlarını denetleme](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Seçenek ayarlarını denetleme](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seçenekler sayfası, ortam düğümü özellikleri](../../ide/reference/options-page-environment-node-properties.md)   
  [Seçenekler Sayfası, Yazı Tipleri ve Renkler Düğümü Özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

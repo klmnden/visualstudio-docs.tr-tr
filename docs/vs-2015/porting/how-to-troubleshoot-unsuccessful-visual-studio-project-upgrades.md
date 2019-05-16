@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696386"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Nasıl yapılır: Başarısız Visual Studio Proje yükseltmelerinde sorun giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Bazı durumlarda Visual Studio tam olarak bir proje önceki bir sürümünü dö
    Yükseltilen çalıştırmak üzere projenizi isteyip istemediğinizi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürümü, proje başvurularını güncelleştirme ve ayrıca güncelleştirin `Imports` veya `Using` çağrısı deyimleri. Projenizi IDE'de yüklerse kullanarak başvurular güncelleştirebilirsiniz **Çözüm Gezgini** veya **başvuru Yöneticisi** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [/ Yükseltme (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 için dönüştürme](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Yükseltme (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 için dönüştürme](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

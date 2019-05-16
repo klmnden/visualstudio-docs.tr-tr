@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 57114789ce9f0505423e8463f90117619bfc717b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687054"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Başka bir deyişle, MSBuild içinde metin şablonu oluşturduğunuzda, proje do
 
 Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için yükleme [Visual Studio için modelleme SDK](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Varsa [yapı sunucunuzu](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) üzerinde Visual Studio yüklü değil, bir bilgisayarda çalıştırır geliştirme makinenizden yapı bilgisayarına aşağıdaki dosyaları kopyalayın. En son sürüm numaraları yerine ' *'.
+Varsa [yapı sunucunuzu](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) üzerinde Visual Studio yüklü değil, bir bilgisayarda çalıştırır geliştirme makinenizden yapı bilgisayarına aşağıdaki dosyaları kopyalayın. En son sürüm numaraları yerine ' *'.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 

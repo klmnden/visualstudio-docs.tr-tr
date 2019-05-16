@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 973d5f6e78449756f96e75407655df7c74c391bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705933"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,8 +145,8 @@ uiGridKeyboardInputEdit.Text=value;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Web performansı ve yük SharePoint 2010 ve 2013 uygulamalarını test etme](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
- [SharePoint çözümleri oluşturma](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Doğrulama ve SharePoint kod hata ayıklama](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
- [Oluşturma ve SharePoint çözümlerinde hata ayıklama](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
- [SharePoint Uygulamaları için Performans Profili Oluşturma](http://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Web performansı ve yük SharePoint 2010 ve 2013 uygulamalarını test etme](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
+ [SharePoint çözümleri oluşturma](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Doğrulama ve SharePoint kod hata ayıklama](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
+ [Oluşturma ve SharePoint çözümlerinde hata ayıklama](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [SharePoint Uygulamaları için Performans Profili Oluşturma](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

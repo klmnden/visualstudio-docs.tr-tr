@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 63f6faf24c1b3ce3aeedd8d4b3c82e2b09a6f443
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695348"
 ---
 # <a name="unit-test-basics"></a>Birim Testi Temelleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Kod oluşturma ve birim testleri çalıştırarak beklendiği gibi çalışıp �
   
  Yazılım geliştirme iş akışınızın bir parçası olduğunda birim testi kodunuzun kalitesini üzerinde en büyük etkiye sahiptir. Bir işlev veya diğer blok uygulama kodu yazdığınız hemen ardından standart, sınır ve giriş verisi hatalı durumda yanıt kodu davranışını doğrulayın ve kod tarafından yapılan açık veya örtülü varsayımlar kontrol birim testleri oluşturun. İle *test güdümlü geliştirme*, birim testleri tasarım belgeleri ve işlevsel özellikleri kullanmak için kod yazmadan önce birim testleri oluşturun.  
   
- Test projelerini hızla oluşturmak ve kodunuzdan test yöntemleri veya ihtiyaç duyduğunuz gibi el ile testler oluşturun. .NET kodunuzu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri paketi oluşturabilirsiniz. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Hakkında bilgi edinin [kodunuz için birim testleri oluşturma](http://msdn.microsoft.com/library/dn823749.aspx).  
+ Test projelerini hızla oluşturmak ve kodunuzdan test yöntemleri veya ihtiyaç duyduğunuz gibi el ile testler oluşturun. .NET kodunuzu keşfetmek için Intellitest kullandığınızda, test verileri ve birim testleri paketi oluşturabilirsiniz. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Hakkında bilgi edinin [kodunuz için birim testleri oluşturma](https://msdn.microsoft.com/library/dn823749.aspx).  
   
  Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladıysanız birim testi çerçevelerini üçüncü taraf ve açık kaynak da çalıştırabilirsiniz. Birçok Visual Studio Uzantı Yöneticisi ve Visual Studio Galerisi aracılığıyla bu çerçevesini ekleyebilirsiniz. Bkz: [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)  
   
@@ -49,7 +49,7 @@ Kod oluşturma ve birim testleri çalıştırarak beklendiği gibi çalışıp �
   
 - [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
-- [Yerel kod Test Gezgini ile birim testi](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [Yerel kod Test Gezgini ile birim testi](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
 ## <a name="BKMK_The_MyBank_Solution_example"></a> MyBank çözümü örneği  
  Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi Çerçevesi'ni kullanarak, ancak kavramlardan kolayca diğer dillerde ve çerçevelerde aktarılır.  

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6be4dbc8ebb8e0cd401716e9ecf913045e0996f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 338d61db9c24972b7fef656498abd43f8ea0b976
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775749"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687218"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54775749"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak türde ortak veya korumalı bir yöntem bir yöntemini geçersiz kılan veya bir arabirim uygular ve aynı yok [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) arabirimi veya sanal bir yöntem.
+ Ortak türde ortak veya korumalı bir yöntem bir yöntemini geçersiz kılan veya bir arabirim uygular ve aynı yok [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) arabirimi veya sanal bir yöntem.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural, arabirim ya da başka bir türdeki sanal yöntem olan temel yöntem ile başka bir yöntemi eşleştirir ve sonra her bir bağlantı talebini inceler. Bir ihlali, yöntemi veya taban yöntemi bağlantı talebi ve diğer yok bildirilir.
@@ -52,4 +52,4 @@ ms.locfileid: "54775749"
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.OverridesAndSecurity/cs/FxCop.Security.OverridesAndSecurity.cs#1)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

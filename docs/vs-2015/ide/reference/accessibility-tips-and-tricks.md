@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674805"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Erişilebilirlik İpuçları ve Püf Noktaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441094"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yerleşik erişilebilirlik özelliği içerir, böylece kolayca klavyeden çalışabilir ve ekran okuyucular ya da diğer yardımcı teknoloji cihazlarını kullanın. Konu en iyi duruma getirmek için bazı öneriler içerir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] erişilebilirlik ve bunun yanı sıra bazı yararlı bir kısayol tuş birleşimleri için.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydedin  
- Pencere düzeniniz, klavye eşleme şemasını ve diğer tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Pencere düzeniniz, klavye eşleme şemasını ve diğer tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Ortak Windows kısayol tuş birleşimleri  
  İçinde görevleri gerçekleştirmek için standart Windows kısayol tuş birleşimleri birçoğunu kullanabilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu kısayol tuş birleşimleri bazıları şunlardır:  

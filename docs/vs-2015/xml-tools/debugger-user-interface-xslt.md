@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697023"
 ---
 # <a name="debugger-user-interface-xslt"></a>Hata Ayıklayıcı Kullanıcı Arabirimi (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Bu konu, hata ayıklayıcı pencereleri ve iletişim kutuları açıklar. Yalnı
 |`position()`|Konumu veya dizin sayısı, bağlam düğümü göre içerik boyutu.|  
 |`self::node()`|Bağlam düğümünün değeri.|  
   
- Daha fazla bilgi için [nasıl yapılır: Hata ayıklayıcı bağlamını değiştirme](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Daha fazla bilgi için [nasıl yapılır: Hata ayıklayıcı bağlamını değiştirme](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Çıktı Penceresi  
  Çıkış penceresi, herhangi bir hata iletileri veya hata ayıklama sırasında oluşan bir güvenlik özel durumları gösterir.  
@@ -101,4 +101,4 @@ Bu konu, hata ayıklayıcı pencereleri ve iletişim kutuları açıklar. Yalnı
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XSLT hata ayıklama](../xml-tools/debugging-xslt.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
- [Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

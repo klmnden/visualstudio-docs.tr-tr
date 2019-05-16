@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681536"
 ---
 # <a name="managing-the-toolbox"></a>Araç kutusu yönetme
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Gibi bir düzenleyici veya tasarımcı, görünümünü ve üyeliğini yönetmek için bir VSPackage sağlayan **araç kutusu**.  
   
- Ayrıca, **araç kutusu** kendisini Otomasyon kullanılarak yönetilebilir. Otomasyon aracılığıyla bir araç kutusu yönetme ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: Araç kutusunu denetleme](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Ayrıca, **araç kutusu** kendisini Otomasyon kullanılarak yönetilebilir. Otomasyon aracılığıyla bir araç kutusu yönetme ile ilgili daha fazla bilgi için bkz: [nasıl yapılır: Araç kutusunu denetleme](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Otomatik araç kutusu sekme seçimi  
  Belirli bir **araç kutusu** sekme veya kategori otomatik olarak yapılabilir etkin hangi Düzenleyici veya tasarımcı şu anda etkin olan temel. Örneğin, bir form tasarımcısı etkinleştirilmişse, isteyebileceğiniz **tüm Windows Formları** sekmesi seçili.  
@@ -51,7 +51,7 @@ ms.locfileid: "62838691"
   
 - VSPackage gerekir ya da kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> denetimleri eklemek veya öğesinden türetilen bir sarmalayıcı denetimi denetiminde barındırmak için <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio sağlar `Aximp.exe` türetilen bir ActiveX denetimi denetiminde kaydırma otomatikleştirme için aracı <xref:System.Windows.Forms.AxHost>. Daha fazla bilgi için [Aximp.exe (Windows Forms ActiveX denetim içeri Aktarıcı)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio sağlar `Aximp.exe` türetilen bir ActiveX denetimi denetiminde kaydırma otomatikleştirme için aracı <xref:System.Windows.Forms.AxHost>. Daha fazla bilgi için [Aximp.exe (Windows Forms ActiveX denetim içeri Aktarıcı)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> COM tabanlı arabirimleri ile birlikte çalışma derlemelerini kullanılabilir.  
   

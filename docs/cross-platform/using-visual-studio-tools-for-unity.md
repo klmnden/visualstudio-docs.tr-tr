@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676730"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları’nı Kullanma
 
@@ -202,7 +202,7 @@ Burada açıklanan senaryo kaynak kodu seçtiğinizi varsaydığını unutmayın
 
    PDB dosyaları, çünkü bunlar DLL'nin hata ayıklama sembolleri içeren ve kaynak kod hâli DLL kod eşleme hata ayıklama için gereklidir. Eski çalışma zamanı hedefliyorsanız, Unity için Visual Studio Araçları bir DLL'yi oluşturmak için DLL ve PDB bilgileri kullanır. Eski Unity betik altyapısı tarafından kullanılan hata ayıklama sembol biçimi MDB dosyası. Yeni çalışma zamanı desteği ve taşınabilir PDB kullanarak, Unity için Visual Studio Araçları yeni Unity çalışma zamanı yerel olarak taşınabilir pdb kullanabilmesi için olduğu gibi tüm sembol dönüştürme yapmak denemez.
    
-   PDB oluşturma hakkında daha fazla bilgi bulunabilir [burada](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Yeni çalışma zamanı hedefliyorsanız Lütfen taşınabilir PDB düzgün bir şekilde oluşturmak için "Hata ayıklama bilgileri" "Taşınabilir" ayarlandığından emin olun. Eski çalışma zamanı hedefliyorsanız, "Tam" kullanmanız gerekir.
+   PDB oluşturma hakkında daha fazla bilgi bulunabilir [burada](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Yeni çalışma zamanı hedefliyorsanız Lütfen taşınabilir PDB düzgün bir şekilde oluşturmak için "Hata ayıklama bilgileri" "Taşınabilir" ayarlandığından emin olun. Eski çalışma zamanı hedefliyorsanız, "Tam" kullanmanız gerekir.
 
 4. Kodunuzdaki hataları ayıklamanıza. Artık, hata ayıklama DLL kaynak kodunuzu birlikte Unity projenizin kaynak kodunu ve tüm hata ayıklama özellikleri gibi kesme noktaları için kullanılır ve kod içerisinde ilerlemeye kullanabilirsiniz.
 

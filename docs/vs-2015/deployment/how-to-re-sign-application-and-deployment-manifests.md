@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697556"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
  Burada bildirimlerini yeniden imzalama başka bir senaryo, kendi sertifika ile dağıtım bildirimleri ve uygulamayı imzalamak Müşterilerinizin istediği andır.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimlerini yeniden imzalama  
- Bu yordam, uygulama bildirim dosyası (.manifest) önceden değişiklikleri yaptığınızı varsayar. Daha fazla bilgi için [nasıl yapılır: Dağıtım özelliklerini değiştirme](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Bu yordam, uygulama bildirim dosyası (.manifest) önceden değişiklikleri yaptığınızı varsayar. Daha fazla bilgi için [nasıl yapılır: Dağıtım özelliklerini değiştirme](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Uygulama ve dağıtım yeniden imzalamak için Mage.exe ile bildirimleri  
   

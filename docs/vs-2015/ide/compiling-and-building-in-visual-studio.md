@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067358"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701488"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Derleme ve Visual Studio'da oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Visual Studio, uygulamalar ve derlemeler ve yürütülebilir programlar sık ara
 |------------------|--------------|--------------------------|
 |IDE kullanma|-Daha kolay oluşturabilirsiniz ve Çalıştır'ı hemen oluşturur.<br />-C++ ve C# projeleri için birden çok işlemcili yapılar çalıştırabilirsiniz.<br />-Derleme Sistemi bazı yönlerini özelleştirebilirsiniz.|[Visual Studio'da Projeler ve Çözümler Oluşturma ve Temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |MSBuild komut satırını çalıştıran|Visual Studio yüklemeden-projeleri oluşturabilirsiniz.<br />-Tüm proje türleri için birden çok işlemcili yapılar çalıştırabilirsiniz.<br />-Derleme sisteminin çoğu alanları özelleştirebilirsiniz.|[MSBuild](../msbuild/msbuild.md)|
-|Team Foundation Yapısı kullanarak|-Yapı işleminizi otomatik hale getirebilirsiniz. Örneğin, gecelik bir veya daha fazla proje veya kodu iade her zaman oluşturabilirsiniz. Ayrıca, paylaşılan derleme sunucuları yerine geliştirme bilgisayarınızda projeleri oluşturabilirsiniz.<br />-Hızlı bir şekilde, çalıştırmak istediğiniz testleri derlemek istediğiniz kodu ve diğer ortak seçenekleri belirtebilirsiniz.<br />-Yapı iş akışını değiştirin ve ayrıntılı bir şekilde özelleştirilmiş görevleri gerçekleştirmek için yapı etkinlikleri gerektiği gibi oluşturun.|[Uygulamayı oluşturun](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Team Foundation Yapısı kullanarak|-Yapı işleminizi otomatik hale getirebilirsiniz. Örneğin, gecelik bir veya daha fazla proje veya kodu iade her zaman oluşturabilirsiniz. Ayrıca, paylaşılan derleme sunucuları yerine geliştirme bilgisayarınızda projeleri oluşturabilirsiniz.<br />-Hızlı bir şekilde, çalıştırmak istediğiniz testleri derlemek istediğiniz kodu ve diğer ortak seçenekleri belirtebilirsiniz.<br />-Yapı iş akışını değiştirin ve ayrıntılı bir şekilde özelleştirilmiş görevleri gerçekleştirmek için yapı etkinlikleri gerektiği gibi oluşturun.|[Uygulamayı oluşturun](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>IDE içinden derleme
- Bir proje oluşturduğunuzda, varsayılan derleme yapılandırmaları için tanımlanan ve çözüm yapı yapılandırması için yapılar için bağlam sağlamak için atanır. Çözüm içindeki projeleri nasıl oluşturulan ve dağıtılan çözüm yapılandırmaları tanımlar. Proje yapılandırmaları bir platform için benzersizdir ve yapı türü (örneğin, sürüm Win32) proje özellikleri kümesidir. Bu varsayılan yapılandırmalar düzenleyebilir ve kendi yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) ve [NIB nasıl: Proje özellikleri ve yapılandırma ayarlarını değiştirme](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Bir proje oluşturduğunuzda, varsayılan derleme yapılandırmaları için tanımlanan ve çözüm yapı yapılandırması için yapılar için bağlam sağlamak için atanır. Çözüm içindeki projeleri nasıl oluşturulan ve dağıtılan çözüm yapılandırmaları tanımlar. Proje yapılandırmaları bir platform için benzersizdir ve yapı türü (örneğin, sürüm Win32) proje özellikleri kümesidir. Bu varsayılan yapılandırmalar düzenleyebilir ve kendi yapılandırmaları oluşturabilirsiniz. Daha fazla bilgi için [Proje Tasarımcısı giriş](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) ve [NIB nasıl: Proje özellikleri ve yapılandırma ayarlarını değiştirme](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  IDE içinde aşağıdaki ek görevleri gerçekleştirebilirsiniz:
 
@@ -53,4 +53,4 @@ Visual Studio, uygulamalar ve derlemeler ve yürütülebilir programlar sık ara
 - Paralel yapılar kullanarak yapı performansını artırmakta. Daha fazla bilgi için [yapı paralel olarak birden çok proje](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) veya blog gönderisinde [ayarlama C++ derleme paralellik](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [derleme platformlarını anlama](../ide/understanding-build-platforms.md) [(derleme) Web sitesi projeleri derleme](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Nasıl Yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma](../ide/how-to-create-and-remove-project-dependencies.md)
+ [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [derleme platformlarını anlama](../ide/understanding-build-platforms.md) [(derleme) Web sitesi projeleri derleme](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Nasıl Yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma](../ide/how-to-create-and-remove-project-dependencies.md)

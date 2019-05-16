@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697767"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL araçlarını Visual Studio'da
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Tasarım yüzeyinde iki farklı alanlara sahiptir: varlıklar bölmesinde solda ve sağdaki yöntemler bölmesi. Varlıklar, varlık sınıfları, ilişkilerini ve devralma hiyerarşilerini görüntüler ana tasarım yüzeyi bölmesidir. Yöntemler bölmesini görüntüler tasarım yüzeyine olduğu <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri için eşlenmiş yöntemleri.
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Oluşturmak için bir görsel tasarım yüzeyi sağlar [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları ve ilişkileri (ilişki) bir veritabanındaki nesneleri temel alan. Diğer bir deyişle, [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] uygulamada veritabanındaki nesnelerle eşleşen bir nesne modeli oluşturmak için kullanılır. Türü kesin belirlenmiş bir ayrıca oluşturur <xref:System.Data.Linq.DataContext> varlık sınıfları ve veritabanı arasında veri göndermek ve almak için kullanılır. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Ayrıca saklı yordamlar eşlemek üzere işlevsellik sağlar ve yaramaz <xref:System.Data.Linq.DataContext> veriyor ve varlık sınıfları doldurma için kullanılan yöntemler. Son olarak, [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tasarım varlık sınıfları arasındaki devralma ilişkileri olanağı sağlar.
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) Oluşturmak için bir görsel tasarım yüzeyi sağlar [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları ve ilişkileri (ilişki) bir veritabanındaki nesneleri temel alan. Diğer bir deyişle, [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] uygulamada veritabanındaki nesnelerle eşleşen bir nesne modeli oluşturmak için kullanılır. Türü kesin belirlenmiş bir ayrıca oluşturur <xref:System.Data.Linq.DataContext> varlık sınıfları ve veritabanı arasında veri göndermek ve almak için kullanılır. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Ayrıca saklı yordamlar eşlemek üzere işlevsellik sağlar ve yaramaz <xref:System.Data.Linq.DataContext> veriyor ve varlık sınıfları doldurma için kullanılan yöntemler. Son olarak, [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tasarım varlık sınıfları arasındaki devralma ilişkileri olanağı sağlar.
 
 ## <a name="opening-the-or-designer"></a>O/R Tasarımcısı açma
  LINQ to SQL varlık modeli projenize eklemek için seçin **proje &#124; Yeni Öğe Ekle** seçip **LINQ to SQL sınıfları** proje öğeleri listesinden:
@@ -62,7 +62,7 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
  Gibi diğer nesneler [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sınıflar, devralma kullanabilirsiniz ve diğer sınıflarından türetilmiş. Bir veritabanında kalıtım ilişkileri çeşitli yollarla oluşturulur. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] İlişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler. Daha fazla bilgi için [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL Sorguları
- Tarafından oluşturulan varlık sınıfları [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ile kullanılmak üzere tasarlanmış [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Daha fazla bilgi için [nasıl yapılır: Bilgi sorgulama](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
+ Tarafından oluşturulan varlık sınıfları [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ile kullanılmak üzere tasarlanmış [LINQ (dil ile tümleşik sorgu)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Daha fazla bilgi için [nasıl yapılır: Bilgi sorgulama](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Üretilen DataContext ve varlık sınıfı kodu farklı ad alanında ayırma
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Sağlar **bağlam Namespace** ve **varlık Namespace** özellikleri <xref:System.Data.Linq.DataContext>. Bu özellikler ne ad alanı belirlemek <xref:System.Data.Linq.DataContext> ve varlık sınıfı kod içinde oluşturulur. Bu özellikler varsayılan olarak, boş olur ve <xref:System.Data.Linq.DataContext> ve varlık sınıfları, uygulamanın ad alanına oluşturulur. Uygulamanın ad alanı başka bir ad alanı içinde kod üretmek için bir değer olarak girin. **bağlam Namespace** ve/veya **varlık Namespace** özellikleri.
@@ -100,4 +100,4 @@ LINQ to SQL Microsoft tarafından yayınlanan ilk nesne ilişkisel eşleme tekno
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [.NET için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-dotnet.md) [sık sorulan sorular](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)
+ [.NET için Visual Studio veri Araçları](../data-tools/visual-studio-data-tools-for-dotnet.md) [sık sorulan sorular](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)

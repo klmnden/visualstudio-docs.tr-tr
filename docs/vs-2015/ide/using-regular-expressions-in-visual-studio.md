@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669347"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696418"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio metin bulma ve değiştirme için .NET Framework normal ifadelerini kullanır. .NET normal ifadeler hakkında daha fazla bilgi için bkz. [.NET Framework normal ifadelerinde](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio metin bulma ve değiştirme için .NET Framework normal ifadelerini kullanır. .NET normal ifadeler hakkında daha fazla bilgi için bkz. [.NET Framework normal ifadelerinde](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Önce Visual Studio 2012, Visual Studio Bul ve Değiştir pencerelerinde özel normal ifade sözdizimi kullanılır. Bkz: [Visual Studio normal ifade dönüştürmeler](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) bazı sık kullanılan özel normal ifade simgelerinin .NET sürümlerine nasıl dönüştürmek bir açıklama için.
 
@@ -36,7 +36,7 @@ Visual Studio metin bulma ve değiştirme için .NET Framework normal ifadelerin
 > Windows işletim sistemlerinde satırların çoğu "\r\n" (bir yeni satırın izlediği bir satır başı) bitmelidir. Bu karakterler görünür değildir ancak düzenleyicide bulunur ve .NET normal ifade hizmetine iletilir.
 
 > [!TIP]
-> Değiştirme desenlerinde kullanılan düzenli ifadeler hakkında daha fazla bilgi için bkz: [değişimler](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Numaralandırılmış yakalama grubu kullanmak için sözdizimi aşağıdaki gibidir `$1` numaralı grubu belirtmek için ve `(x)` söz konusu grubu belirtmek için. Örneğin, gruplanan normal ifadeyle `(\d)([a-z])` aşağıdaki dizede dört eşleşme bulur: **1a 2b 3c 4d**. Değiştirme dizesi `z$1` Bu dizeye dönüştürür **z1 z2 z3 z4**.
+> Değiştirme desenlerinde kullanılan düzenli ifadeler hakkında daha fazla bilgi için bkz: [değişimler](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Numaralandırılmış yakalama grubu kullanmak için sözdizimi aşağıdaki gibidir `$1` numaralı grubu belirtmek için ve `(x)` söz konusu grubu belirtmek için. Örneğin, gruplanan normal ifadeyle `(\d)([a-z])` aşağıdaki dizede dört eşleşme bulur: **1a 2b 3c 4d**. Değiştirme dizesi `z$1` Bu dizeye dönüştürür **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Normal ifade örnekleri
 

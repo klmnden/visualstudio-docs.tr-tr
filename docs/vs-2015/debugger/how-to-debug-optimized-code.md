@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675608"
 ---
 # <a name="how-to-debug-optimized-code"></a>Nasıl yapılır: En iyi duruma getirilmiş kodda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)derleyici seçeneği (Visual Studio güncelleştirme 3'te sunulmuştur) en iyi duruma getirilmiş kodu için daha zengin hata ayıklama bilgileri oluşturur (ile oluşturulmamış projeleri **/Od** derleyici seçeneği. Bkz: [/O seçenekler (kodu İyileştir)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Bu yerel değişkenleri ve satır içine alınmış işlevlerin hata ayıklama için gelişmiş destek içerir.  
+> [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)derleyici seçeneği (Visual Studio güncelleştirme 3'te sunulmuştur) en iyi duruma getirilmiş kodu için daha zengin hata ayıklama bilgileri oluşturur (ile oluşturulmamış projeleri **/Od** derleyici seçeneği. Bkz: [/O seçenekler (kodu İyileştir)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Bu yerel değişkenleri ve satır içine alınmış işlevlerin hata ayıklama için gelişmiş destek içerir.  
 >   
 > [Düzenle ve devam et](../debugger/edit-and-continue-visual-csharp.md) ne zaman devre dışı **/Zo** ocompiler seçeneği kullanılır.  
   
@@ -73,11 +73,11 @@ ms.locfileid: "63435719"
   
 6. Altında **C++** klasörüne `Optimization`.  
   
-7. Sağ taraftaki özellikler listesinde, bulma `Optimization`. Bir ayarın yanındaki, büyük olasılıkla diyor `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Diğer seçeneklerden birini seçin (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, veya `Custom`).  
+7. Sağ taraftaki özellikler listesinde, bulma `Optimization`. Bir ayarın yanındaki, büyük olasılıkla diyor `Disabled (` [/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Diğer seçeneklerden birini seçin (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, veya `Custom`).  
   
 8. Seçerseniz, `Custom` seçeneğini `Optimization`, artık gösterilen özellikler listesinde bulunan diğer özelliklerden herhangi biri için seçenekleri ayarlayabilirsiniz.  
   
-9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve ekleyin `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` için **ek seçenekler** metin kutusu.  
+9. Yapılandırma özellikleri, C/C++, proje özellikleri sayfasında, komut satırı düğümünü seçin ve ekleyin `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` için **ek seçenekler** metin kutusu.  
   
     > [!WARNING]
     > `/Zo` Visual Studio 2013 güncelleştirme 3 veya sonraki bir sürümü gerektirir.  
@@ -90,7 +90,7 @@ ms.locfileid: "63435719"
 for (x=0; x<10; x++)  
 ```  
   
- Bu satırında bir kesme noktası ayarlamak varsayalım. Kesme noktası 10 kez ulaşılmasına beklediğiniz ancak kodun en iyilenmesi, yalnızca bir kez kesme noktasına erişildiğinde. İlk yönerge değerini ayarlar çünkü `x` 0. Derleyici, bu yalnızca bir kez gerçekleştirilmesi gerekir ve döngü dışında hareket olduğunu algılar. Kesme noktası ile taşır. Karşılaştırın ve Artır yönergeleri `x` döngünün içinde kalır. Görüntülediğinizde **ayrıştırılmış kodu** penceresinde [adım birim](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) yönerge için en iyi duruma getirilmiş kodda adım adım bağlandığınızda yararlıdır daha fazla denetim için otomatik olarak ayarlanır.  
+ Bu satırında bir kesme noktası ayarlamak varsayalım. Kesme noktası 10 kez ulaşılmasına beklediğiniz ancak kodun en iyilenmesi, yalnızca bir kez kesme noktasına erişildiğinde. İlk yönerge değerini ayarlar çünkü `x` 0. Derleyici, bu yalnızca bir kez gerçekleştirilmesi gerekir ve döngü dışında hareket olduğunu algılar. Kesme noktası ile taşır. Karşılaştırın ve Artır yönergeleri `x` döngünün içinde kalır. Görüntülediğinizde **ayrıştırılmış kodu** penceresinde [adım birim](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) yönerge için en iyi duruma getirilmiş kodda adım adım bağlandığınızda yararlıdır daha fazla denetim için otomatik olarak ayarlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   

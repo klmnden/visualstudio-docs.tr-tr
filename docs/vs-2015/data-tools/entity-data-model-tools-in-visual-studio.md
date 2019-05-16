@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705041"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Varlık veri modeli Visual Studio Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework, .NET geliştiricilerinin etki alanına özel nesneler kullanar
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Nasıl kullanılacağını açıklar [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları, hangi [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] uygulamalar oluşturmasını sağlar.|
-|[Varlık Veri Modeli](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Üzerinde oluşturulan uygulamaları tarafından kullanılan verilerle çalışmaya yönelik bilgi ve bağlantılar sağlanmıştır [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Nasıl kullanılacağını açıklar [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] araçları, hangi [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] uygulamalar oluşturmasını sağlar.|
+|[Varlık Veri Modeli](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Üzerinde oluşturulan uygulamaları tarafından kullanılan verilerle çalışmaya yönelik bilgi ve bağlantılar sağlanmıştır [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Tam .NET (konsol, WinForms, WPF, vb.) kullanmaya başlama](/ef/ef6/get-started)|Entity Framework 7 kullanan .NET Masaüstü uygulamaları oluşturma konusunda eğitimler sağlar.|
 |[ASP.NET 5 uygulaması için yeni veritabanı](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Entity Framework 7 kullanarak yeni bir ASP.NET 5 uygulaması oluşturmayı açıklar.|
 

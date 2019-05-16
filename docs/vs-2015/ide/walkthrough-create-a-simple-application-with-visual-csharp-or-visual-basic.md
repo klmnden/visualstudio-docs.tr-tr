@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c800ddd7221a1adfbc54198363e356eb5260c7cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436820"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674907"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Görselle basit bir uygulama oluşturma C# veya Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
  [Hata ayıklama ve uygulamayı test etme](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
-> Bu izlenecek yol, Visual Studio Prosessional sürümünü temel almaktadır ve bu sürüm, bu izlenecek yol için projeyi oluştururken temel olarak kullanacağınız WPF Uygulaması şablonunu sunar. Windows Masaüstü için Visual Studio Express sürümü de bu şablonu sağlar, ancak Windows için Visual Studio Express ve Web için Visual Studio Express sağlamaz. Visual Studio Express için Windows kullanımı hakkında tanıtıcı bilgiler için bkz [Windows Store uygulamaları için Geliştirici Merkezi](http://msdn.microsoft.com/windows/apps/br229519). Web için Visual Studio Express kullanımı hakkında tanıtıcı bilgiler için bkz [ASP.NET ile çalışmaya başlama](http://www.asp.net/get-started). Ayrıca, Visual Studio sürümünüz ve kullandığınız ayarlar, kullanıcı arabiriminin bazı öğelerinin adlarını ve bulundukları yerleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Bu izlenecek yol, Visual Studio Prosessional sürümünü temel almaktadır ve bu sürüm, bu izlenecek yol için projeyi oluştururken temel olarak kullanacağınız WPF Uygulaması şablonunu sunar. Windows Masaüstü için Visual Studio Express sürümü de bu şablonu sağlar, ancak Windows için Visual Studio Express ve Web için Visual Studio Express sağlamaz. Visual Studio Express için Windows kullanımı hakkında tanıtıcı bilgiler için bkz [Windows Store uygulamaları için Geliştirici Merkezi](https://msdn.microsoft.com/windows/apps/br229519). Web için Visual Studio Express kullanımı hakkında tanıtıcı bilgiler için bkz [ASP.NET ile çalışmaya başlama](http://www.asp.net/get-started). Ayrıca, Visual Studio sürümünüz ve kullandığınız ayarlar, kullanıcı arabiriminin bazı öğelerinin adlarını ve bulundukları yerleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> IDE'yi yapılandırma  
  Visual Studio'yu ilk kez başlattığınızda, Visual Studio, bir Microsoft hizmeti hesabı (MSA oturum), oturum ister [Visual Studio'ya oturum](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Oturum açın ve gerekmez, daha sonra yapın.  
   
  Visual Studio başlatma, sonraki bir dizi önceden tanımlı bir özelleştirmeler grubunu IDE'ye uygulayan ayarlar bileşimini seçmelisiniz. Her bir ayarlar bileşimi, uygulamaları geliştirmenizi kolaylaştırmak amacıyla tasarlanmıştır.  
   
- Bu izlenecek yol, uyguladığınız varsayılmaktadır **genel geliştirme ayarları**, IDE'ye en az miktarda özelleştirmeyi uygulayan. Zaten C# veya Visual Basic (her ikisi de iyi bir seçenek olan) seçtiyseniz, ayarlarınızı değiştirmeniz gerekmez.  Ayarlarınızı değiştirmek istiyorsanız, kullanabileceğiniz **içeri ve dışarı aktarma ayarları Sihirbazı**. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Bu izlenecek yol, uyguladığınız varsayılmaktadır **genel geliştirme ayarları**, IDE'ye en az miktarda özelleştirmeyi uygulayan. Zaten C# veya Visual Basic (her ikisi de iyi bir seçenek olan) seçtiyseniz, ayarlarınızı değiştirmeniz gerekmez.  Ayarlarınızı değiştirmek istiyorsanız, kullanabileceğiniz **içeri ve dışarı aktarma ayarları Sihirbazı**. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Visual Studio'yu açtıktan sonra araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını tanıyabilirsiniz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Uygulama penceresinin ortasında olup **başlangıç sayfası**. Bir çözüm veya projeyi yüklediğinizde, alanda görünür düzenleyiciler ve tasarımcılar burada **başlangıç sayfası** olduğu. Uygulama geliştirirken zamanınızın çoğunu bu orta alanda geçireceksiniz.  
   
@@ -67,7 +67,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
    ![IDE ile uygulanan koyu tema](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
   
-   Bu kılavuzda kalan resimler için kullanılan renk teması açık temadır. IDE'yi özelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Bu kılavuzda kalan resimler için kullanılan renk teması açık temadır. IDE'yi özelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma  
   
@@ -92,7 +92,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
     ![Visual C oluşturma&#35; WPF projesi, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE NewProjectcsharp")  
   
-   HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde bir MainWindow.XAML'in XAML görünümünü ve Tasarım görünümünü gösterir. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. (Daha fazla bilgi için [Windows Forms geliştiriciler için WPF Tasarımcısı](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
+   HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. WPF Tasarımcısı, bölünmüş bir görünüm halinde bir MainWindow.XAML'in XAML görünümünü ve Tasarım görünümünü gösterir. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün.  Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. (Daha fazla bilgi için [Windows Forms geliştiriciler için WPF Tasarımcısı](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Aşağıdaki öğeler görünür **Çözüm Gezgini**:  
   
    Şekil 5: Proje öğeleri  
   
@@ -150,7 +150,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 3. CTRL + s tuşuna basarak veya kullanarak yaptığınız değişiklikleri kaydetmek **dosya** menü öğesi.  
   
-   Ardından iki ekleyeceksiniz [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) formu için denetimler.  
+   Ardından iki ekleyeceksiniz [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) formu için denetimler.  
   
 ##### <a name="to-add-radio-buttons"></a>Radyo düğmeleri eklemek için  
   
@@ -178,7 +178,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 2. Sağ fare düğmesine basarak RadioButton2 seçerken RadioButton2 için kısayol menüsünü açın, **Metni Düzenle**yazıp enter `Goodbye`.  
   
-   Son ekleyeceğiniz UI öğesi bir [düğmesi](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) denetimi.  
+   Son ekleyeceğiniz UI öğesi bir [düğmesi](https://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) denetimi.  
   
 ##### <a name="to-add-the-button-control"></a>Düğme denetimini eklemek için  
   
@@ -248,7 +248,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 3. Uygulamayı kaydedin.  
   
 ## <a name="BKMK_DebugTest"></a> Hata ayıklama ve uygulamayı test etme  
- Şimdi, hatalara bakmak için uygulamadan hata ayıklayacak ve her iki ileti kutusunun da doğru görünüp görünmediğini test edeceksiniz. Aşağıdaki yönergeler size nasıl oluşturacağınızı ve hata ayıklayıcıyı başlatma, ancak daha sonra okuyabilir [bir WPF uygulaması (WPF) oluşturma](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) ve [hata ayıklama WPF](../debugger/debugging-wpf.md) daha fazla bilgi için.  
+ Şimdi, hatalara bakmak için uygulamadan hata ayıklayacak ve her iki ileti kutusunun da doğru görünüp görünmediğini test edeceksiniz. Aşağıdaki yönergeler size nasıl oluşturacağınızı ve hata ayıklayıcıyı başlatma, ancak daha sonra okuyabilir [bir WPF uygulaması (WPF) oluşturma](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) ve [hata ayıklama WPF](../debugger/debugging-wpf.md) daha fazla bilgi için.  
   
 ### <a name="find-and-fix-errors"></a>Hataları bulma ve düzeltme  
  Bu adımda, daha önce XAML dosyası ana penceresinin adını değiştirerek sebep olduğumuz hatayı bulacaksınız.  

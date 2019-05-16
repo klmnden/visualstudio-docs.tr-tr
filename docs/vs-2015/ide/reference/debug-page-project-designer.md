@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703910"
 ---
 # <a name="debug-page-project-designer"></a>Hata Ayıklama Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441423"
  Aşağıdaki seçenekler, görüntülenecek veya değiştirilecek platform ve yapılandırmayı seçmenize olanak sağlar.  
   
  **Yapılandırma**  
- Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarları **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarları **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Platform**  
- Platform ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Seçimleri içerebilir **herhangi bir CPU** (varsayılan), **x64**, ve **x86**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Platform ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Seçimleri içerebilir **herhangi bir CPU** (varsayılan), **x64**, ve **x86**. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Başlatma eylemi  
  **Başlangıç eylemi** uygulamanın hataları ayıklanırken başlatılacak öğe belirtir: Proje, özel bir program, bir URL veya hiçbir şey. Varsayılan olarak, bu seçeneği ayarlamak **başlangıç projesi**. **Başlatma eylemi** ayarını **hata ayıklama** sayfa değerini belirler `StartAction` özelliği.  
@@ -78,6 +78,6 @@ ms.locfileid: "63441423"
  [Visual Studio'da hata ayıklama](../../debugger/debugging-in-visual-studio.md)   
  [Hata ayıklama yapılandırması proje ayarları C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Hata ayıklama yapılandırması proje ayarları bir Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Hata ayıklama özellikleri yönetme](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Hata ayıklama özellikleri yönetme](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Nasıl yapılır: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Nasıl yapılır: Yapılandırmaları Oluşturma ve Düzenleme](../../ide/how-to-create-and-edit-configurations.md)

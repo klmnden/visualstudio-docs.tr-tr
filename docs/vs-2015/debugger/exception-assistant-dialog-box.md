@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779764"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702869"
 ---
 # <a name="exception-assistant-dialog-box"></a>Özel Durum Yardımcısı İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +60,6 @@ ms.locfileid: "54779764"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Özel durum Yardımcısını kullanma](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [Nasıl yapılır: Özel durum yardımcısıyla çalışma zamanı hataları düzeltin](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
- [Hata Türleri](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
+ [Özel durum Yardımcısını kullanma](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Nasıl yapılır: Özel durum yardımcısıyla çalışma zamanı hataları düzeltin](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [Hata Türleri](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

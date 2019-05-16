@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684269"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Hata: Tümleşik Windows kimlik doğrulaması etkinleştirilmediğinden hata ayıklama başarısız oldu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +120,4 @@ Hata ayıklama isteyen kullanıcının kimlik doğrulaması, kimlik doğrulama h
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web Uygulamalarında Hata Ayıklama: Hatalar ve sorun giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft Özet kimlik doğrulaması](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Windows Vista ile IIS 7.0 Web uygulamaları ve Visual Studio çalıştıran](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Windows Vista ile IIS 7.0 Web uygulamaları ve Visual Studio çalıştıran](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/07/2019
+ms.date: 05/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7a3d02ad903daba40da5ac0c9a9ebbb320747a49
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d420656345331cd5e02193e9de2b8a18a990472d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461344"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695445"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -31,6 +31,7 @@ Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.4 | Sürüm | 14 Mayıs 2019 | 16.0.28803.452 |
 | 16.1.0 | Preview 3 | 6 Mayıs 2019 | 16.1.28902.138 |
 | 16.0.3 | Sürüm | 30 Nisan 2019 | 16.0.28803.352 |
 | 16.1.0 | Önizleme 2 | 23 Nisan 2019 | 16.1.28822.285 |
@@ -72,10 +73,12 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.12 | Sürüm | 14 Mayıs 2019 | 15.9.28307.665 |
+| 15.0.23 | Sürüm | 14 Mayıs 2019 | 15.0.26228.85 |
 | 15.9.11 | Sürüm | 2 Nisan 2019 | 15.9.28307.586 |
 | 15.9.10 | Sürüm | 25 Mart 2019 | 15.9.28307.557 |
 | 15.9.9 | Sürüm | 12 Mart 2019 | 15.9.28307.518 |
-| 15.0.21 | Sürüm | 12 Mart 2019 | 15.0.26228.76 |
+| 15.0.22 | Sürüm | 12 Mart 2019 | 15.0.26228.76 |
 | 15.9.8 | Sürüm | 5 Mart 2019 | 15.9.28307.481 |
 | 15.9.7 | Sürüm | 12 Şubat 2019 | 15.9.28307.423 |
 | 15.0.21 | Sürüm | 12 Şubat 2019 | 15.0.26228.73 |

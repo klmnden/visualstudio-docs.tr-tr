@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686375"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
 - .deploy  
   
-  Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
+  Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.  
   
   IIS olmayan yüklü kullanıyorsanız .manifest ve .application .deploy, örneğin, yapılandırma gerekecektir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], veya başka bir Web sunucusu (örn. Apache) kullanıyorsanız.  
   
@@ -54,7 +54,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   
  Bu özelliği etkinleştirmek için .NET Framework 2.0 için bir düzeltme de uygulayabilirsiniz. Daha fazla bilgi için bkz. http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Daha fazla bilgi için [ \<defaultProxy > öğesi (ağ ayarları)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Daha fazla bilgi için [ \<defaultProxy > öğesi (ağ ayarları)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce ve Web tarayıcı uyumluluğu  
  Şu anda [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yüklemeler yalnızca dağıtım bildirimini URL, Internet Explorer'ı kullanarak açıldığında başlatılır. Yalnızca Internet Explorer varsayılan Web tarayıcısı ayarlanırsa URL'si Microsoft Office Outlook gibi başka bir uygulamadan başlatılan bir dağıtım başarılı bir şekilde başlatılır.  
@@ -92,7 +92,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce ve eşlenen sürücüler  
- ClickOnce uygulaması yayımlama için Visual Studio kullanıyorsanız, eşlenmiş sürücü yükleme konumu olarak belirtemezsiniz. Ancak, eşlenmiş sürücüden Düzenleyicisi (Mage.exe ve MageUI.exe) ve Bildirim Oluşturucusu kullanarak yüklemek için ClickOnce uygulaması değiştirebilirsiniz. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) ve [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ ClickOnce uygulaması yayımlama için Visual Studio kullanıyorsanız, eşlenmiş sürücü yükleme konumu olarak belirtemezsiniz. Ancak, eşlenmiş sürücüden Düzenleyicisi (Mage.exe ve MageUI.exe) ve Bildirim Oluşturucusu kullanarak yüklemek için ClickOnce uygulaması değiştirebilirsiniz. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) ve [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP protokolünü uygulamaları yüklemek için desteklenmiyor  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] herhangi bir HTTP 1.1 Web sunucusu veya dosya sunucusu uygulamaları yüklemeyi destekler. FTP gibi Dosya Aktarım Protokolü, uygulamaları yüklemek için desteklenmiyor. Yalnızca uygulamaları yayımlamak için FTP kullanabilirsiniz. Aşağıdaki tabloda bu farklılıklar özetlenmiştir:  

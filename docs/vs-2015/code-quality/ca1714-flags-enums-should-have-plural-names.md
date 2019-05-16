@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce28eeafd53feefcffd22b087fd21d302f544ca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0e75596bfc2b274f12d9b58d2718881931b7df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700507"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Bayrak sabit listeleri çoğul adlara sahip olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,4 +52,4 @@ ms.locfileid: "54763486"
  [CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- <xref:System.FlagsAttribute?displayProperty=fullName> [Sabit listesi tasarımı](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+ <xref:System.FlagsAttribute?displayProperty=fullName> [Sabit listesi tasarımı](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

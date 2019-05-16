@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689861"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Araç Penceresine Kısayol Menüsü Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bu izlenecek yol bir kısayol menüsü araç penceresine geçirir. Bir kullanıc
   
  Bu izlenecek yol, bir kısayol menüsü .vsct dosyası menü öğelerinde bildirme ve ardından bunları araç penceresi tanımlayan sınıf içinde uygulama yönetilen paket çerçevesini kullanarak bir Visual Studio menü olarak oluşturma işlemi gösterilmektedir. Bu yaklaşım, Visual Studio komutları, kullanıcı Arabirimi öğeleri ve Otomasyon nesne modeli erişimi kolaylaştırır.  
   
- Alternatif olarak, Visual Studio işlevselliği, kısayol menüsünü erişemez, kullanabileceğiniz <xref:System.Windows.FrameworkElement.ContextMenu%2A> kullanıcı denetimi bir XAML öğesinde bir özelliğidir. Daha fazla bilgi için [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Alternatif olarak, Visual Studio işlevselliği, kısayol menüsünü erişemez, kullanabileceğiniz <xref:System.Windows.FrameworkElement.ContextMenu%2A> kullanıcı denetimi bir XAML öğesinde bir özelliğidir. Daha fazla bilgi için [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  

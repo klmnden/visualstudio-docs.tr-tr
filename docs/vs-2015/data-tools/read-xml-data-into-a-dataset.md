@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425396"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692551"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
 5. XML şeması görüntülemek için kod ekleme temel XML dosyasında bir <xref:System.Windows.Forms.TextBox> denetimi  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları Yardım menüsünde açıklanana etkin ayarlarınıza veya sürüm bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde**içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları Yardım menüsünde açıklanana etkin ayarlarınıza veya sürüm bağlı olarak değişebilir gördüğünüz kullandığınız. Ayarlarınızı değiştirmek için **Araçları** menüsünde**içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  Bu adımda, bu izlenecek yolda içeren bir Visual Basic veya Visual C# projesi oluşturun.  
@@ -59,7 +59,7 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 2. Projeyi adlandırın `ReadingXML`.  
   
-3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -246,7 +246,7 @@ Bu izlenecek yol, bir şema XML dosyasının içeriğine göre oluşturma yanı 
 - Veri kümesindeki verileri düzenleyebilir ve veritabanına yazamadı.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Veri izlenecek yollar](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio'da verilere erişme](../data-tools/accessing-data-in-visual-studio.md)   
- [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Uygulamanızı veri almaya hazırlama](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio'daki XML Araçları](../xml-tools/xml-tools-in-visual-studio.md)

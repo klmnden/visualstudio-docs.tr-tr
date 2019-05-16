@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114788"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695522"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio'da XAML tasarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio hem de visual araçları sağlayan için ilgi çekici kullanıcı arabirimleri oluşturma ve zengin medya deneyimlerini XAML tabanlı Windows Masaüstü için Visual Studio'da ve Blend'de Web'de [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)uygulamalar. Hem de ortak tasarım ve araç pencereleri ve bir XAML Düzenleyicisi sahip, ancak Visual Studio için Blend, animasyon ve davranışlar gibi daha gelişmiş görevler için diğer tasarım araçları sağlar.
+Visual Studio hem de visual araçları sağlayan için ilgi çekici kullanıcı arabirimleri oluşturma ve zengin medya deneyimlerini XAML tabanlı Windows Masaüstü için Visual Studio'da ve Blend'de Web'de [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), ve [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx)uygulamalar. Hem de ortak tasarım ve araç pencereleri ve bir XAML Düzenleyicisi sahip, ancak Visual Studio için Blend, animasyon ve davranışlar gibi daha gelişmiş görevler için diğer tasarım araçları sağlar.
 
 ## <a name="choosing-the-right-tool"></a>Doğru aracı seçme
  Tasarım araçlarını tercih ettiğiniz beceri kümenizi bulunmadığına bağlıdır. Daha fazla kod odaklı varsa, daha gelişmiş tasarım görevini gerçekleştirmek için Visual Studio'da XAML kod yazabilirsiniz. Tasarım odaklı fazla varsa, Visual Studio için Blend kod yazmaya gereksinim duymadan gelişmiş görevleri gerçekleştirmenize olanak tanır.
@@ -41,11 +41,11 @@ Visual Studio hem de visual araçları sağlayan için ilgi çekici kullanıcı 
 
      ![Dosya yeniden yükleme deneyimi](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **Eşitlenmiş düzenler ve ayarları:** Özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak sağlar. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- **Eşitlenmiş düzenler ve ayarları:** Özel düzenleri kaydedebilir ve araç penceresi düzeni özelleştirmeleri uygulayabilirsiniz olanak sağlar. Aynı Microsoft hesabıyla oturum açtığınızda visual Studio bu özelleştirmeler ve hem Visual Studio ve Visual Studio için Blend tercihlerini makinelerdeki eşitler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - **Ortak Çözüm Gezgini için:** Çözüm Gezgini'nde, projelerinizi ve kendi dosyaları, hem de kendileriyle ilişkili komutların hazır erişimi düzenli bir görünümünü sağlar. Çözüm Gezgini ile büyük kurumsal projeleriyle çalışmak kolaydır. Bkz: [çözümler ve projeler](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Takım Gezgini için:** Takım Gezgini ile projelerinizi takım işbirliğini kolaylaştırmak için GIT veya TFS depoları ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Takım Gezgini için:** Takım Gezgini ile projelerinizi takım işbirliğini kolaylaştırmak için GIT veya TFS depoları ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
 - **NuGet:** Visual Studio ve Visual Studio için Blend hem NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET Framework için bir paket yöneticisidir.
 

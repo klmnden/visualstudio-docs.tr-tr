@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698691"
 ---
 # <a name="upgrading-project-items"></a>Proje öğeleri yükseltme
 Ekler veya öğeleri uygulamaz proje sistemleri içinde yönetmek, proje yükseltme işlemine katılmasını gerekebilir. Crystal Reports, proje sistemi için eklenebilir bir öğenin bir örnektir.  
@@ -38,5 +38,5 @@ Ekler veya öğeleri uygulamaz proje sistemleri içinde yönetmek, proje yüksel
 2. Zaman, proje öğesi proje yükseltme bir bildirim alır. **Visual Studio Dönüştürme Sihirbazı** gösterilmeye devam eder. Bu nedenle, yöntemlerini kullanmanız gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> arabirimi yükseltme iletileri Sihirbazı kullanıcı Arabirimi sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Dönüştürme Sihirbazı](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio Dönüştürme Sihirbazı](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Özel projelerini yükseltme](../misc/upgrading-custom-projects.md)

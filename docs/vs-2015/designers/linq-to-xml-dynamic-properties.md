@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fce9bca76b604413dc5bd4962760ee4ce08a6ea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1aed85754eb1238528af9b5d74f2369b2548edc0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687164"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML dinamik özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Bu bölümde, XML dinamik özellikleri LINQ hakkında başvuru bilgileri sağlar
   
 - Değerleri gibi dizine [öğeleri](../designers/elements-xelement-dynamic-property.md) ve [alt öğeleri](../designers/descendants-xelement-dynamic-property.md) özelliklerini <xref:System.Xml.Linq.XElement>, bir dizin oluşturucu türüne çözün. Dizin oluşturucu türleri istediğiniz değeri veya koleksiyona çözülmesi için bir genişletilmiş adı parametresi geçirilmelidir.  
   
-  Dizinli bir değer türü döndüren Dinamik Özellikler <xref:System.Collections.Generic.IEnumerable%601> deffered yürütme kullanın. Ertelenmiş yürütme hakkında daha fazla bilgi için bkz: [(C#) LINQ sorgularına giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+  Dizinli bir değer türü döndüren Dinamik Özellikler <xref:System.Collections.Generic.IEnumerable%601> deffered yürütme kullanın. Ertelenmiş yürütme hakkında daha fazla bilgi için bkz: [(C#) LINQ sorgularına giriş](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
@@ -48,4 +48,4 @@ Bu bölümde, XML dinamik özellikleri LINQ hakkında başvuru bilgileri sağlar
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to XML ile WPF verilerini bağlama](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML genel bakış ile WPF verilerini bağlama](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
- [LINQ sorguları (C#) giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)
+ [LINQ sorguları (C#) giriş](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)

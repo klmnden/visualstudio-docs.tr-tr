@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403565"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686883"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
  Bkz.  
   
-- [Derleme işleminizi tanımlama](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Derleme işleminizi tanımlama](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Değişiklikleri doğrulamak için geçişli iade derleme işlemi kullanın](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Yapı işlemi şablonunuzu özelleştirme](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Yapı işlemi şablonunuzu özelleştirme](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> Modelleri oluşturma ve kullanma için genel ipuçları  
   
@@ -336,13 +336,13 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Model öğelerini ve iş öğelerini bağlama](../modeling/link-model-elements-and-work-items.md)  
   
-- [Grafikler, panolar ve Visual Studio ALM için raporlar](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Grafikler, panolar ve Visual Studio ALM için raporlar](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Tasks using Project ve biriktirme listesi oluşturma](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Tasks using Project ve biriktirme listesi oluşturma](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Sınama, doğrulama ve kodu iade etme  
  Takımlar her bir görevi tamamladıkça, Team Foundation sürüm denetiminde kendi kodlarını kontrol edin ve unuturlarsa Team Foundation Server'dan anımsatıcılar alma. Takımlar, birim testleri ve katman doğrulama kodu kendi test çalışmalarına ve tasarıma karşı doğrulamak için Team Foundation Server kendi İadelerini kabul önce çalıştırın. Bunlar yapıları çalıştırmak için Team Foundation Server kullanmak otomatik birim testleri ve düzenli olarak katman doğrulama. Bu, kodun aşağıdaki ölçütleri karşıladığından emin olun yardımcı olur:  
@@ -359,13 +359,13 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
   
   Bkz.  
   
-- [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)  
   
 - [Sürüm denetimi kullanın](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Uygulamayı oluşturun](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Uygulamayı oluşturun](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Güncelleştirme kullanarak sistem Görselleştirme ve modelleme  
  Lucerne ve Dinner Now ödeme sistemleri bütünleştirilmelidir. Aşağıdaki bölümlerde, modelleme diyagramları Visual Studio'da bu görevi yerine getirmede yardımcı gösterilmektedir:  
@@ -888,6 +888,6 @@ Yazılım sisteminizin kullanarak Görselleştirme ve modelleme araçları Visua
  [Kodu görselleştirme](../modeling/visualize-code.md)   
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   
  [Geliştirme sürecinizde modelleri kullanma](../modeling/use-models-in-your-development-process.md)   
- [Çevik Yazılım geliştirmede modeller kullanma](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Çevik Yazılım geliştirmede modeller kullanma](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)   
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703061"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Öğretici 1: Resim Görüntüleyici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Bu öğreticide, bir dosyadan resim yükleyen ve pencerede görüntüleyen bir p
 >   
 > Visual Basic için kod görmek için **VB** sekmesinde kod blokları üstündeki ve Visual C# kodunu görmek için **C#** sekmesi. Visual C++ hakkında bilgi almakla ilgileniyorsanız bkz [Başlarken](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) ve [C++ dil Eğitmeni](http://www.cplusplus.com/doc/tutorial/).  
 >   
-> Visual C# veya Visual Basic uygulamaları için Windows Store yazma öğrenmek istiyorsanız [C# veya Visual Basic kullanarak ilk Windows Store uygulamasını oluşturma](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Windows Store için JavaScript uygulamaları oluşturma hakkında daha fazla bilgi için bkz: [JavaScript kullanarak ilk Windows Store uygulamasını oluşturma](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+> Visual C# veya Visual Basic uygulamaları için Windows Store yazma öğrenmek istiyorsanız [C# veya Visual Basic kullanarak ilk Windows Store uygulamasını oluşturma](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Windows Store için JavaScript uygulamaları oluşturma hakkında daha fazla bilgi için bkz: [JavaScript kullanarak ilk Windows Store uygulamasını oluşturma](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
   
 ## <a name="related-topics"></a>İlgili Konular  
   

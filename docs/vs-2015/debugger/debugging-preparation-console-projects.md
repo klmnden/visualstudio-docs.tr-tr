@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793418"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691212"
 ---
 # <a name="debugging-preparation-console-projects"></a>Hata ayıklama hazırlığı: Konsol Projeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir Windows projede hata ayıklamak hazırlamaya benzerdir. Daha fazla bilgi için [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md), ve [hata ayıklama hazırlığı: Windows Forms uygulamalarında (.NET)](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Tüm konsol uygulamaları benzerlik nedeniyle, bu konu, aşağıdaki proje türlerini içerir:  
+Bir konsol projesinde hata ayıklamaya hazırlanıyor, bazı ek hususlar ile bir Windows projede hata ayıklamak hazırlamaya benzerdir. Daha fazla bilgi için [Windows Forms uygulamaları](../debugger/debugging-preparation-windows-forms-applications.md), ve [hata ayıklama hazırlığı: Windows Forms uygulamalarında (.NET)](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Tüm konsol uygulamaları benzerlik nedeniyle, bu konu, aşağıdaki proje türlerini içerir:  
   
 - C# konsol uygulaması  
   

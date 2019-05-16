@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695500"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63430123"
   
    2. Seçin **başvuruları** sekmesinde **özellik sayfaları** iletişim kutusu ve emin tüm yolları doğru. Alternatif olarak, **Nesne Tarayıcısı** başvurulan nesneleri gidin.  
   
-        Yönetilen kod için kullanabileceğiniz [Fuslogvw.exe (Derleme bağlaması Günlük Görüntüleyici)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) başarısız derleme yüklerini ayrıntılarını görüntülemek için.  
+        Yönetilen kod için kullanabileceğiniz [Fuslogvw.exe (Derleme bağlaması Günlük Görüntüleyici)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) başarısız derleme yüklerini ayrıntılarını görüntülemek için.  
   
 2. Yönetilmeyen kod için CLSID değeri içinde VSPackage'ı bulma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID kayıt defteri düğümü:  
   

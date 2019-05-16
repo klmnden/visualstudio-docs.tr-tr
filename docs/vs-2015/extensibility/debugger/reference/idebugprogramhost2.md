@@ -12,12 +12,12 @@ ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7caa66f8a3adacc67c7277ceffaf4fa54cf7a60c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bcb65872f9f451e1cc4e5030532e0a444af1139
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687779"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProgramHost2 : IUnknown
  Hata ayıklama altyapısı aynı nesne üzerinde bu arabirimi uygulayan [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) barındırma işlemi hakkında bilgi sağlamak için arabirim. Bu isteğe bağlı bir arabirimdir.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Çağrı [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde bir `IDebugProgram2` arabirimi bu arabirim elde edilir.  
+ Çağrı [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde bir `IDebugProgram2` arabirimi bu arabirim elde edilir.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Aşağıdaki tabloda yöntemlerini gösterilmektedir `IDebugProgramHost2`.  

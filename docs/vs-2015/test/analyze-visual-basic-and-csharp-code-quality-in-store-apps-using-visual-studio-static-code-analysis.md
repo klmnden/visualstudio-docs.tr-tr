@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442853"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686542"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 
@@ -27,7 +27,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Visual Studio Express'te kod analizi aracı, kodunuz için bir dizi yaygın hataları ve programlama iyi yöntem ihlallerini inceler. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için kod analizi aracı arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir. Kod Analizi, kodunuzda test sürecinde bulmak zor olan hataları da bulabilirsiniz. Kod çözümleme aracı, geliştirme sürecinde düzenli aralıklarla çalışan tamamlanmış uygulamanızın kalitesini artırabilirsiniz.
 
 > [!NOTE]
-> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod analizi tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
+> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod analizi tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](https://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
 
 ## <a name="in-this-topic"></a>Bu konuda
  Hakkında bilgi edinebilirsiniz:
@@ -98,12 +98,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ## <a name="BKMK_Warnings"></a> Visual Basic ve C# Kod Analizi uyarılarının
  Kod Analizi aşağıdaki uyarılar oluşturur:
 
- [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Boş Sonlandırıcıları kaldırın](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Boş Sonlandırıcıları kaldırın](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Atılabilen alanlar atılmalıdır](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: Atılabilen alanlar atılmalıdır](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Serileştirme oluşturucularını uygulayın](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Serileştirme oluşturucularını uygulayın](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](https://msdn.microsoft.com/library/ms182359.aspx)

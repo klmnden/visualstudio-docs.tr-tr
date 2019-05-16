@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704685"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "63446486"
  **Özel durumlar, AppDomain veya yönetilen/yerel sınırları geçtiğinde Kes**  
  Yönetilen veya karma mod hata ayıklamada, ortak dil çalışma zamanı aşağıdaki koşullar doğru olduğunda, uygulama etki alanı sınırları veya yönetilen/yerel sınırları çapraz özel durumları yakalayabilir:  
   
- 1\) yerel kod, COM birlikte çalışabilirliği kullanılarak yönetilen kodu çağırır ve yönetilen kod bir özel durum oluşturduğunda. Bkz: [COM birlikte çalışma'ya giriş](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) yerel kod, COM birlikte çalışabilirliği kullanılarak yönetilen kodu çağırır ve yönetilen kod bir özel durum oluşturduğunda. Bkz: [COM birlikte çalışma'ya giriş](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) ne zaman 1 uygulama etki alanında çalışan yönetilen kod 2 uygulama etki alanındaki yönetilen kodu çağırır ve 2 uygulama etki alanındaki kod bir özel durum oluşturur. Bkz: [uygulama etki alanlarıyla programlama](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) ne zaman 1 uygulama etki alanında çalışan yönetilen kod 2 uygulama etki alanındaki yönetilen kodu çağırır ve 2 uygulama etki alanındaki kod bir özel durum oluşturur. Bkz: [uygulama etki alanlarıyla programlama](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) zaman kod, yansıma kullanarak bir işlev çağırdığında ve işlev bir özel durum oluşturur. Bkz: [yansıma](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) zaman kod, yansıma kullanarak bir işlev çağırdığında ve işlev bir özel durum oluşturur. Bkz: [yansıma](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  2) ve 3), özel durum bazen yönetilen kodda'tarafından yakalandı `mscorlib` ortak dil çalışma zamanı yerine. Bu seçenek etkilemez tarafından yakalanan özel bozucu `mscorlib`.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63446486"
  Böylece yalnızca belirli işlemleri, iş parçacıklarını veya bilgisayarları etkiler kesme noktalarında filtreler ayarlamanızı sağlar.  
   
  **Özel durum Yardımcısı'nı etkinleştir**  
- Yalnızca yönetilen kod için. Özel durumlar açık özel durum Yardımcısı iletişim kutusu yönetilen.  Bkz: [özel durum Yardımcısı'nı](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Yalnızca yönetilen kod için. Özel durumlar açık özel durum Yardımcısı iletişim kutusu yönetilen.  Bkz: [özel durum Yardımcısı'nı](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Çağrı yığınını işlenmeyen özel durumlar üzerinde bırakma**  
  Neden **çağrı yığını** çağrı yığınını işlenmeyen özel durum oluşmadan önceki noktaya geri almak için penceresi.  
@@ -123,7 +123,7 @@ ms.locfileid: "63446486"
  **DLL dışarı aktarmaları yükle**  
  DLL dışa aktarma tablolarını yükler. Dll dışa aktarma tablolarının sembol bilgilerini Windows iletileri, Windows yordamları (WindowProcs), COM nesneleri veya sıralama veya sembolleri olmayan herhangi bir dll ile çalışıyorsanız yararlı olabilir. Dışa aktarma bilgilerini okuma dll bazı ek okumalar içerir. Bu nedenle, bu özellik varsayılan olarak kapalıdır.  
   
- Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem dll için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. Dll dışarı aktarma tablolarındaki işlev adları hata ayıklayıcıda başka bir yerde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek için `dumpbin /exports`. Semboller tüm 32-bit sistem dll için kullanılabilir. Okuyarak `dumpbin /exports` çıkışı, alfasayısal olmayan karakterler de dahil tam işlev adını görebilirsiniz. Bu, bir işlev bir kesme noktası ayarlamak için yararlıdır. Dll dışarı aktarma tablolarındaki işlev adları hata ayıklayıcıda başka bir yerde kesilmiş görünebilir. Aramalar geçerli işlev en üstte (en yoğun şekilde iç içe geçmiş) olacak şekilde arama sırasıyla listelenir. Daha fazla bilgi için [dumpbin/EXPORTS](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Paralel Yığınlar diyagramını aşağıdan yukarı Göster**  
  Hangi görüntülenme yönünü denetler **Paralel Yığınlar** penceresi.  
@@ -164,7 +164,7 @@ ms.locfileid: "63446486"
   Gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.  
   
   **Hata ayıklama sırasında tanılama araçlarını etkinleştir**  
-  **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Hata ayıklama sırasında PerfTip geçen süresini göster**  
   Hata ayıklaması yapıyorsanız Kod penceresi belirtilen yöntem çağrısının geçen süreyi görüntüler.  

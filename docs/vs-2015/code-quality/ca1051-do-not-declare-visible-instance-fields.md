@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 874541972df030d55721b78f115b730e625a7b02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686815"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Görünür örnek alanlarını bildirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54766048"
  Bu kural ihlalini düzeltmek için alanın olmasını `private` veya `internal` ve dışarıdan görünen bir özelliğini kullanarak üzerinden kullanıma sunacaksınız.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünen alanlar, özellikler için kullanılabilir olan herhangi bir avantaj sağlamaz. Ayrıca, ortak alanları tarafından korunamaz [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Bkz: [CA2112: Güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünen alanlar, özellikler için kullanılabilir olan herhangi bir avantaj sağlamaz. Ayrıca, ortak alanları tarafından korunamaz [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Bkz: [CA2112: Güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Örnek
  Aşağıdaki örnek, bir tür gösterir (`BadPublicInstanceFields`), bu kuralı ihlal ediyor. `GoodPublicInstanceFields` Düzeltilen kod gösterilmektedir.
@@ -55,4 +55,4 @@ ms.locfileid: "54766048"
  [CA2112: Güvenli türler alanları açığa çıkarmamalıdır](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [Bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

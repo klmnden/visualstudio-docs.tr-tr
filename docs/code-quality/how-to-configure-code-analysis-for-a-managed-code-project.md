@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878177"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676287"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için statik kod analizini yapılandırma
 
 Visual Studio'da Kod Analizi listesinden seçebilirsiniz [kural kümeleri](../code-quality/rule-set-reference.md) yönetilen kod projesi için uygulanacak. Varsayılan olarak, **Microsoft en az önerilen kurallar** kural kümesi işaretli, ancak isterseniz kümesi farklı bir kural uygulayabilirsiniz. Bir çözümde bir veya birden çok proje için kural kümeleri uygulanabilir.
 
-> [!TIP]
-> ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir ASP.NET web uygulaması için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+
+> [!NOTE]
+> Bu makalede, statik kod analizi ve değil geçerlidir [Roslyn Çözümleyicileri](use-roslyn-analyzers.md), derlemeden sonra kod analizi çalıştırılması yok.
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework projesi için bir kural yapılandırmak için
 

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695639"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio’da XAML Tasarımcısı’nı kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio'da XAML Tasarımcısı, XAML tabanlı Windows Store, Windows Phone
 
  **Dayama çizgileri** dayama çizgileri olan *hizalama sınırları* denetimleri kenarlarına zaman hizalanır veya ne zaman metin taban çizgileri hizalanmış göstermek için kırmızı kesik çizgili satırlar halinde görünür. Hizalama sınırları yalnızca görünür **dayama çizgilerine yaslamayı** etkinleştirilir.
 
- **Kılavuz rayları** `Grid` rails içindeki satırları ve sütunları yönetmek için kullanılan bir [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) paneli. Oluşturma ve satırları ve sütunları Sil ve kendi göreli genişlik ve yükseklik ayarlayabilirsiniz. Çalışma yüzeyinin sol tarafında görünür, dikey kılavuz parmaklık için satırlar kullanılır ve üst kısmında görünür, yatay çizgi sütunlar için kullanılır.
+ **Kılavuz rayları** `Grid` rails içindeki satırları ve sütunları yönetmek için kullanılan bir [kılavuz](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) paneli. Oluşturma ve satırları ve sütunları Sil ve kendi göreli genişlik ve yükseklik ayarlayabilirsiniz. Çalışma yüzeyinin sol tarafında görünür, dikey kılavuz parmaklık için satırlar kullanılır ve üst kısmında görünür, yatay çizgi sütunlar için kullanılır.
 
  **Kılavuz donatıcıları** A `Grid` donatıcı görünür üzerinde bağlı dikey veya yatay çizgi bulunan bir üçgen olarak `Grid` parmaklık. Sürüklediğinizde bir `Grid` donatıcı, genişliklerini veya bitişik sütun veya satır yüksekliklerini fareyi hareket ettirdiğinizde güncelleştirin.
 
@@ -50,7 +50,7 @@ Visual Studio'da XAML Tasarımcısı, XAML tabanlı Windows Store, Windows Phone
 
  **Yeniden boyutlandırma tutamaçları** yeniden boyutlandırma tutamaçları üzerinde Seçili denetimleri görünür ve yeniden boyutlandırma sağlar. Bir denetimi yeniden boyutlandırdığınızda, genişlik ve yükseklik değerlerini, genellikle denetiminin boyutunu yardımcı olması için görünür. Denetimleri Tasarım görünümünde düzenleme hakkında daha fazla bilgi için bkz. [XAML Tasarımcısı'nda öğelerle çalışma](../designers/working-with-elements-in-xaml-designer.md).
 
- **Kenar boşlukları** kenar boşlukları, bir denetimin kenarı ile onun kapsayıcısının arasındaki sabit boşluk miktarını temsil eder. Bir denetim kenar boşluklarını kullanarak ayarlayabilirsiniz [kenar boşluğu](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) özellikleri altında **Düzen** Özellikler penceresinde.
+ **Kenar boşlukları** kenar boşlukları, bir denetimin kenarı ile onun kapsayıcısının arasındaki sabit boşluk miktarını temsil eder. Bir denetim kenar boşluklarını kullanarak ayarlayabilirsiniz [kenar boşluğu](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) özellikleri altında **Düzen** Özellikler penceresinde.
 
  **Margin donatıcıları** Düzen kapsayıcısı göreli öğe kenar boşluklarını değiştirmek için kenar boşluğu donatıcıları kullanabilirsiniz. Kenar boşluğu donatıcısı açıksa, bir kenar boşluğu ayarlı değildir ve kenar boşluğu donatıcısı bozuk zincirini görüntüler. Kenar boşluğu ayarlı değil, Düzen kapsayıcısı çalışma zamanında yeniden boyutlandırıldığında öğeleri yerinde kalır. Kenar boşluğu donatıcısı kapalı olduğunda, kenar boşluğu donatıcısı sertifikalarından zinciri görüntüler ve öğeleri Düzen kapsayıcısı (kenar sabit kalır), çalışma zamanında yeniden boyutlandırıldığından kenar boşlukları ile taşınır.
 

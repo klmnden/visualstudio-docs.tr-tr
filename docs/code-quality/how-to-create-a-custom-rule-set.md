@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816581"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676556"
 ---
 # <a name="customize-a-rule-set"></a>Bir kural kümesi özelleştirme
 
 Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir kural oluşturabilirsiniz.
 
-## <a name="create-a-custom-rule-set"></a>Özel kural kümesi oluşturma
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Var olan bir kural kümesinden özel bir kural oluşturun
 
 Özel bir kural oluşturmak için yerleşik bir kural kümesi açabilirsiniz **kural kümesi düzenleyici**. Burada, ekleme veya kaldırma belirli kurallar ve kural ihlal edildiğinde gerçekleşen eylemi değiştirebilirsiniz&mdash;Örneğin, bir uyarı veya hata gösterir.
 
@@ -40,7 +40,12 @@ Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir ku
 
 4. Seçin **açık** kuralları kural kümesi Düzenleyicisi'nde görüntülemek için.
 
-Öğesinden yeni bir kural kümesi dosyası da oluşturabilirsiniz **yeni dosya** iletişim:
+> [!NOTE]
+> Bir .NET Core veya .NET Standard projesi varsa, işlemi biraz farklı olmadığından hiçbir **Kod Analizi** özellik sekmesi. Adımlarını izleyin [projenize ve etkin kural kümesi olarak ayarladığınızda önceden tanımlanmış bir kuralı kopyalamak](analyzer-rule-sets.md). Bir kural kümesi kopyaladıktan sonra [kural kümesi Düzenleyicisi Visual Studio Düzenle](working-in-the-code-analysis-rule-set-editor.md) ondan açarak **Çözüm Gezgini**.
+
+## <a name="create-a-new-rule-set"></a>Yeni bir kural kümesi oluşturma
+
+Yeni bir kural kümesi dosyasını oluşturabilirsiniz **yeni dosya** iletişim:
 
 1. Seçin **dosya** > **yeni** > **dosya**, veya basın **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir ku
 
    Yeni *.ruleset* dosyası kural kümesi Düzenleyicisi'nde açılır.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Birden çok kural kümelerinden özel bir kural oluşturun
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Birden çok kural kümelerinden özel bir kural oluşturun
 
-1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.
+> [!NOTE]
+> Aşağıdaki yordam yoksa .NET Core projeleri için geçerli değildir bir **Kod Analizi** özellik sekmesi.
+
+1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
 2. Üzerinde **özellikleri** sayfaları, select **Kod Analizi** sekmesi.
 
@@ -68,7 +76,7 @@ Kod Analizi için belirli proje gereksinimlerini karşılamak için özel bir ku
 
 6. Seçin **açın** yeni kural kural kümesi Düzenleyicisi'nde kümesi açın.
 
-### <a name="rule-precedence"></a>Kural önceliği
+## <a name="rule-precedence"></a>Kural önceliği
 
 - Aynı kural listelenen iki veya daha fazla kez farklı önem dereceleri ile bir kural olarak, derleyici bir hata oluşturur. Örneğin:
 

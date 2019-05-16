@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3866c1a0683eddc9d8c3bda83b21e382149b1a78
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699471"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,5 +37,5 @@ Bir ilişki oluşturulamıyor \<ilişkilendirme adı >-özellik türleri eşleş
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasındaki ilişkiyi (ilişki) oluşturma](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+ [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

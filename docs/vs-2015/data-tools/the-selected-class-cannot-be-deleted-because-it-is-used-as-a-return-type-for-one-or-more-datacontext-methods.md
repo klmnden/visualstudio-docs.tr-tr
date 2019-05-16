@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8eb5f93ef3770b0d275d71d818e44d52a067f83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03e1df5398b4a23a1633d4a0fa92fe0bedb830f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686623"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Seçilen sınıf bir veya birden çok DataContext yöntemi için bir dönüş türü olarak kullanıldığından silinemiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,6 +31,6 @@ Dönüş türü bir veya daha fazla <xref:System.Data.Linq.DataContext> yönteml
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Nasıl yapılır: DataContext metodunun dönüş türünü değiştirme (O/R Tasarımcısı)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)

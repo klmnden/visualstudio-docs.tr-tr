@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 759b3268edd6155d733c18779ebf7ca4efc44a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386836"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688860"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63386836"
 Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütülen <xref:System.Data.Linq.DataContext> yöntemleri. Varsayılan geçersiz kılmak için de kullanılabilir [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ekleme, güncelleştirme gerçekleştiren ve bir veritabanına varlık sınıflardan değişiklikler kaydedildiğinde siler çalışma zamanı davranışı (örneğin, çağrılırken <xref:System.Data.Linq.DataContext.SubmitChanges%2A> yöntemi).  
   
 > [!NOTE]
-> Depolanmış yordamınızdaki istemciye geri gönderilecek gereken değer döndürürse (örneğin, hesaplanan değerler saklı yordamda), saklı yordamlarınızı çıkış parametreleri oluşturun. Çıktı parametreleri kullanamıyorsanız, O/R tasarımcısı tarafından oluşturulan yazma güvenmek yerine bir kısmi yöntem uygulaması geçersiz kılar. Veritabanı tarafından oluşturulan değerleri için eşlenmiş üyeleri ekleme veya güncelleştirme işlemleri başarıyla tamamlanmadan sonra uygun değerler belirlemeniz gerekir. Daha fazla bilgi için [sorumlulukları geliştirici olarak geçersiz kılma varsayılan davranış](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Depolanmış yordamınızdaki istemciye geri gönderilecek gereken değer döndürürse (örneğin, hesaplanan değerler saklı yordamda), saklı yordamlarınızı çıkış parametreleri oluşturun. Çıktı parametreleri kullanamıyorsanız, O/R tasarımcısı tarafından oluşturulan yazma güvenmek yerine bir kısmi yöntem uygulaması geçersiz kılar. Veritabanı tarafından oluşturulan değerleri için eşlenmiş üyeleri ekleme veya güncelleştirme işlemleri başarıyla tamamlanmadan sonra uygun değerler belirlemeniz gerekir. Daha fazla bilgi için [sorumlulukları geliştirici olarak geçersiz kılma varsayılan davranış](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
 > [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] otomatik olarak kimlik (otomatik artış), rowguıdcol (veritabanı tarafından oluşturulan GUID) ve zaman damgası sütunları için veritabanı tarafından oluşturulan işler değerler. Veritabanı üretilmiş değerler diğer sütun türlerinde beklenmedik bir null değer neden olur. Veritabanı tarafından oluşturulan değerleri döndürülecek el ile ayarlamanız <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için `true` ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, veya <xref:System.Data.Linq.Mapping.AutoSync>.  
@@ -67,6 +67,6 @@ Saklı yordamlar için O/R Tasarımcısı eklenebilir ve tipik olarak yürütül
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
- [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Insert, Update ve Delete İşlemleri](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
+ [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Insert, Update ve Delete İşlemleri](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)

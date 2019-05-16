@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692207"
 ---
 # <a name="environment-options-dialog-box"></a>Ortam Seçenekleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441722"
 Sayfaları kullanabilirsiniz **ortam** klasöründe **seçenekleri** nasıl tümleşik geliştirme ortamı (IDE) belirli öğelerinin görüntülenme ve davranış ayarlamak için iletişim kutusu. Menü çubuğundan seçme, ortam sayfalarına erişebilirsiniz **Araçları**, **seçenekleri**seçip **ortam**.  
   
 > [!NOTE]
-> Etkin ayarlarınıza ve kullandığınız Visual Studio sürümüne bağlı olarak, bilgisayarınızda görünen iletişim kutuları ve menü komutları Yardım'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Etkin ayarlarınıza ve kullandığınız Visual Studio sürümüne bağlı olarak, bilgisayarınızda görünen iletişim kutuları ve menü komutları Yardım'da açıklananlardan farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Aşağıdakilerin nasıl yapıldığı hakkında bilgi için|Bkz. |  
 |----------------------------------|---------|  
 |IDE'deki pencerelerin, menülerin ve diğer öğelerin görünümünü ve davranışını özelleştirin.|[Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Eklentiler için güvenliği belirtin.|[Eklenti güvenliği, ortam, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Eklentiler için güvenliği belirtin.|[Eklenti güvenliği, ortam, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Dosyaları otomatik kaydetme ve geri yükleme ayarlarını değiştirin.|[AutoRecover, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Çeşitli dosyaların davranışını içeren belge görüntüleme ve yönetim ayarlarını belirleyin.|[Belgeler, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Güncelleştirmeleri nasıl oluşur ve uzantıları nasıl yönetildiğini özelleştirin.|[Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

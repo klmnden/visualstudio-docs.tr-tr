@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081014"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675718"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Dağıtımdan sonra sorunları tanılama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  Derleme bildirimi (Buildınfo.config dosyası) için kaynak, yapı ve simge konumları eklemek için yapı tanımınızı ayarlayın. Team Foundation Yapısı otomatik olarak bu dosyayı oluşturur ve projenizin çıkış klasörüne yerleştirir.  
   
-1. [Yapı tanımını düzenleyin veya yeni bir yapı tanımı oluşturun.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Yapı tanımını düzenleyin veya yeni bir yapı tanımı oluşturun.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![Görünüm derleme tanımını TFS 2013'te](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
     ![TFS 2013 yapı tanımı içindeki semboller yolu ayarlama](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    Simgeler hakkında daha fazla bilgi için bkz. [sembol verilerini yayımlama](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+    Simgeler hakkında daha fazla bilgi için bkz. [sembol verilerini yayımlama](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
 4. Yapı bildirim dosyası, TFS ve simge konumları eklemek için bu MSBuild bağımsız değişkenini ekleyin:  
   
@@ -144,7 +144,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
  **buildsymbolstorepath =**\<*sembol yolu*>  
   
 ## <a name="DeployRelease"></a> 2. adım: Uygulamanızı sürüm  
- Kullanırsanız [Web.Deploy paketini](http://msdn.microsoft.com/library/dd394698.aspx) gelen derleme bildirimi otomatik olarak yeniden adlandırılır, uygulamanızı dağıtmak için derleme işleminiz tarafından oluşturulan "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucunuz üzerinde uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.  
+ Kullanırsanız [Web.Deploy paketini](https://msdn.microsoft.com/library/dd394698.aspx) gelen derleme bildirimi otomatik olarak yeniden adlandırılır, uygulamanızı dağıtmak için derleme işleminiz tarafından oluşturulan "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucunuz üzerinde uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.  
   
  Uygulamanızı dağıtmak için diğer yöntemleri kullanıyorsanız, derleme bildirimi gelen adlandırılır emin olun "*ProjectName*. "Buildınfo.config" için "Buildınfo.config ve web sunucusundaki uygulamanızın Web.config dosyasıyla aynı klasöre yerleştirin.  
   
@@ -304,7 +304,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
   
    Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:  
   
-  - **BuildLabel** (TeamBuild için için): Derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **BuildLabel** (TeamBuild için için): Derleme adı ve numarası. Bu etiket, ayrıca dağıtım olay adı olarak kullanılır. Derleme numaraları hakkında daha fazla bilgi için bkz. [kullanılan yapı numaralarını tamamlanan yapılara anlamlı adlar vermek için](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
   - **SymbolPath** (önerilen): URI listesi noktalı virgüllerle ayrılmış sembol (PDB dosyası) konumlarınıza için. Bu URI'ler URL'ler veya UNC olabilir. Bu, hatalarını ayıklamaya yardımcı olmak için eşleşen simgeleri bulmak Visual Studio için kolaylaştırır.  
   
@@ -364,7 +364,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
      ![Kaynak Denetiminden Aç &#45; geçişi](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> S: Çalışma alanı nedir?  
- **Y:** [Çalışma alanı, kaynak kopyasını depoladığından](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.  
+ **Y:** [Çalışma alanı, kaynak kopyasını depoladığından](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) geliştirebilir ve bunu ayrı olarak önce onay çalışmanızı test edebilirsiniz. Bulunan çözümle veya projeyle özel olarak eşleşen bir çalışma alanı yoksa, Visual Studio varsayılan çalışma alanı adı olarak bilgisayar adınızla birlikte yeni bir çalışma alanı oluşturmanızı veya mevcut bir çalışma alanı seçmenizi ister.  
   
 #### <a name="UntrustedSymbols"></a> S: Bu güvenilmeyen simgeler hakkındaki iletiyi neden alıyorum?  
  ![Güvenilmeyen simgeler yolu ile hata ayıklama? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

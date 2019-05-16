@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703670"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60059961"
 Hata ayıklamayı etkinleştirmek için hem de etkinleştirmelisiniz **proje özellikleri** sayfasında ve uygulamanın web.config dosyasında.  
   
 > [!NOTE]  
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Proje özelliklerinde ASP.NET hata ayıklamayı etkinleştirmek için (Visual Basic / C#)  
   

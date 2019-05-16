@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132aa0f37cc63e6afe2eff61a6d0f6dec5b200b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692444"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
  Çağırarak veritabanına uygulamanızdaki verileri kaydedebilirsiniz `Update` TableAdapter bağdaştırıcısının yöntemi. Tablodan sürüklediğinizde **veri kaynakları** forma, verileri kaydetmek için gereken kod penceresi otomatik olarak eklenir. Bir forma eklenmiş herhangi bir ek tablolar bu kodu el ile eklenmesi gerekir. Bu izlenecek yol, birden fazla tablodan güncelleştirmeleri kaydetmek için kod ekleme işlemi gösterilmektedir.  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
   
 - Yeni bir oluşturma **Windows uygulama** proje.  
   
-- Oluşturma ve bir veri kaynağı ile uygulamanızda yapılandırma [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Oluşturma ve bir veri kaynağı ile uygulamanızda yapılandırma [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
-- Ayarı'ndeki öğelerin kullanımını denetler [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Ayarı'ndeki öğelerin kullanımını denetler [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 - Öğe sürükleyerek veriye bağlı denetimler oluşturma **veri kaynakları** formunuza penceresi.  
   
@@ -64,7 +64,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
   
 2. Projeyi adlandırın `UpdateMultipleTablesWalkthrough`.  
   
-3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -126,7 +126,7 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
  Çağırarak veritabanı güncelleştirebilirsiniz `Update` yöntemlerinin **müşteriler** ve **siparişler** TableAdapter bağdaştırıcıları. Varsayılan olarak, bir olay işleyicisi için **Kaydet** düğmesini<xref:System.Windows.Forms.BindingNavigator> veritabanına güncelleştirmeleri göndermek için formun koduna eklenir. Bu yordamı doğru sırayla güncelleştirmeleri göndermek için kod değiştirir. Bu bilgi tutarlılığını hataları oluşturma olanağına ortadan kaldırır. Kod ayrıca hata güncelleştirme çağrısında bir try-catch bloğu içinde sarmalama tarafından işleme uygular. Kod, uygulamanızın ihtiyaçlarına uyacak şekilde değiştirebilirsiniz.  
   
 > [!NOTE]
-> Anlaşılsın diye, bu izlenecek yol, bir işlem kullanmaz. Ancak, iki güncelleştirilmiyor ya da tabloları ilgili daha fazla işlem içindeki tüm güncelleştirme mantığı içerir. Bir işlem değişiklikleri uygulanmadan önce bir veritabanındaki tüm ilgili değişiklikler başarılı olduğunu garantiler bir işlemdir. Daha fazla bilgi için [işlemler ve eşzamanlılık](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Anlaşılsın diye, bu izlenecek yol, bir işlem kullanmaz. Ancak, iki güncelleştirilmiyor ya da tabloları ilgili daha fazla işlem içindeki tüm güncelleştirme mantığı içerir. Bir işlem değişiklikleri uygulanmadan önce bir veritabanındaki tüm ilgili değişiklikler başarılı olduğunu garantiler bir işlemdir. Daha fazla bilgi için [işlemler ve eşzamanlılık](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Uygulama güncelleştirme mantığı eklemek için  
   
@@ -152,9 +152,9 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, Windows uygulamanıza veriye bağlı form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:  
   
-- Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Forma arama işlevselliği ekleme. Daha fazla bilgi için [nasıl yapılır: Parametreli bir sorgu için bir Windows Forms uygulaması ekleme](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
-- Veri kaynağı eklemek veya veritabanı nesnelerini kaldırmak için düzenleme. Daha fazla bilgi için [nasıl yapılır: Bir veri kümesini düzenleme](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Veri kaynağı eklemek veya veritabanı nesnelerini kaldırmak için düzenleme. Daha fazla bilgi için [nasıl yapılır: Bir veri kümesini düzenleme](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

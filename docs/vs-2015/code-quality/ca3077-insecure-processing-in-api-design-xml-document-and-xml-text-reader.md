@@ -8,12 +8,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a0907c2c73a175d9ec0d1e502e8f14f1ac0604fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8f1e04483c486add9940bf3a78ec4c35eb2317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049808"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693369"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60049808"
  Bir API tasarlamaya XMLDocument ve XMLTextReader türetilmiş olduğunda, dikkatli olmanızı <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Kullandığınızda güvensiz XmlReaderSettings örnekleri başvuran veya dış varlık kaynakları çözümleme XML'de güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir.
 
 ## <a name="rule-description"></a>Kural Tanımı
- A [belge türü tanımı (DTD'nin)](https://msdn.microsoft.com/library/aa468547.aspx) bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) açabilir tehditler [hizmet reddi (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) saldırıları. Bu kuralın ne zaman tetikleyen:
+ A [belge türü tanımı (DTD'nin)](https://msdn.microsoft.com/library/aa468547.aspx) bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) açabilir tehditler [hizmet reddi (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) saldırıları. Bu kuralın ne zaman tetikleyen:
 
 - <xref:System.Xml.XmlDocument> veya <xref:System.Xml.XmlTextReader> sınıfları DTD işleme için varsayılan çözümleyici değerleri kullanın.
 

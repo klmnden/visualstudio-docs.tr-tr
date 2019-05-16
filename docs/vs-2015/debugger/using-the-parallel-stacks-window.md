@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795669"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684167"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Paralel Yığınlar Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Paralel Yığınlar** penceresi, çok iş parçacıklı uygulamalarda hata ayıklama işlemi yaparken yararlıdır. Kendi **iş parçacıkları görünümü** gösterir, uygulamanızdaki tüm iş parçacıkları için yığın bilgileri çağırın. İş parçacıkları ve bu iş parçacıkları üzerinde yığın çerçevelerini arasında gezinmenize olanak tanır. Yönetilen kodda **Görevler görünümü** gösterir çağrı yığını <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri. Yerel kodda **Görevler görünümü** gösterir çağrı yığını [görev grupları](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralel algoritmalar](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [zaman uyumsuz aracılar](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)ve [Basit görevler](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+**Paralel Yığınlar** penceresi, çok iş parçacıklı uygulamalarda hata ayıklama işlemi yaparken yararlıdır. Kendi **iş parçacıkları görünümü** gösterir, uygulamanızdaki tüm iş parçacıkları için yığın bilgileri çağırın. İş parçacıkları ve bu iş parçacıkları üzerinde yığın çerçevelerini arasında gezinmenize olanak tanır. Yönetilen kodda **Görevler görünümü** gösterir çağrı yığını <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri. Yerel kodda **Görevler görünümü** gösterir çağrı yığını [görev grupları](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralel algoritmalar](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [zaman uyumsuz aracılar](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)ve [Basit görevler](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>İş Parçacıkları Görünümü  
  A B ve dış kod ana gittiğiniz tek bir iş parçacığı aşağıda gösterilmiştir. Diğer iki iş parçacığı bazı dış koddan çalışmaya ve B ve dış kod devam iş parçacıkları ve C ve ardından bazı AnonymousMethod devam diğer iş parçacığı biri, bir sorun oluştu.  
@@ -121,7 +121,7 @@ ms.locfileid: "54795669"
  [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Paralel Programlama](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Görevleri penceresini kullanma](../debugger/using-the-tasks-window.md)   
  [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task Sınıfı](../extensibility/debugger/task-class-internal-members.md)

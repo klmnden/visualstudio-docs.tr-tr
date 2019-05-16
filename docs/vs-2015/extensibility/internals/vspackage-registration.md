@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685281"
 ---
 # <a name="vspackage-registration"></a>VSPackage Kaydı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPackage gerekir öneri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yüklen
 > [!NOTE]
 > Bu bir kabul edilen kendi kendine kayıt kullanılacak VSPackage geliştirme sırasında uygulamadır. Ancak, [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] iş ortakları, kendi kendine kayıt kurulumunun bir parçası kullanarak ürünlerini gönderilemez.  
   
- Bir Windows Installer paketi kayıt defteri girişleri kayıt defteri tabloda genel olarak yapılır. Bu gibi durumlarda, dosya uzantılarını da kayıt defteri tabloda kaydedebilirsiniz. Ancak, Windows Installer programlı tanımlayıcısı (ProgID), sınıf, uzantı ve fiili tablolar üzerinden yerleşik destek sağlar. Daha fazla bilgi için [veritabanı tabloları](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Bir Windows Installer paketi kayıt defteri girişleri kayıt defteri tabloda genel olarak yapılır. Bu gibi durumlarda, dosya uzantılarını da kayıt defteri tabloda kaydedebilirsiniz. Ancak, Windows Installer programlı tanımlayıcısı (ProgID), sınıf, uzantı ve fiili tablolar üzerinden yerleşik destek sağlar. Daha fazla bilgi için [veritabanı tabloları](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Kayıt defteri girdileri seçilen yan yana stratejiniz için uygun olan bileşeni ile ilişkilendirildiğinden emin olun. Örneğin, paylaşılan bir dosya için kayıt defteri girdileri dosyanın Windows Installer bileşen ile ilişkili olmalıdır. Benzer şekilde, kayıt defteri girişleri için sürüme özgü dosya o dosyanın bileşen ile ilişkili olmalıdır. Aksi takdirde, yükleme veya bir sürümü için VSPackage kaldırma [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , VSPackage'ı diğer sürümlerinde de uğratabilir. Daha fazla bilgi için [destekleyen birden çok Versions of Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ VSPackage gerekir öneri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yüklen
 - Tür kitaplıkları gibi ağ kaynaklarına erişim bileşeni hem çalışma alanından kaynağı olarak belirtilmişse ve kendi kendini kaydetme tabloda listelenen kendi kayıt kodunu engellenebilir. Bu yükleme bileşen Yönetim yüklemesi sırasında başarısız olmasına neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Yönetilen paket kaydı](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Yönetilen paket kaydı](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

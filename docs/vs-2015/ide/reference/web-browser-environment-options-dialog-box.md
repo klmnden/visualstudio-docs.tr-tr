@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6cc3f5d49844509f5b0cb5fa7c439a6ce7c69e18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698700"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63419710"
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
 > Belirli dosyaları veya bileşenleri, Web'ten bilgisayarınızda kod yürütebilir.  
@@ -53,7 +53,7 @@ ms.locfileid: "63419710"
   
 - **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.  
+- **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.  
   
 - **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.  
   
@@ -66,4 +66,4 @@ ms.locfileid: "63419710"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)   
- [HTML Tasarımcısı](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
+ [HTML Tasarımcısı](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b912708e7cc2f811e9cd18a24096ef66e128c375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690063"
 ---
 # <a name="working-with-shaders"></a>Gölgelendiricilerle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Grafik tabanlı gölgelendirici Tasarımcısı'nda kullanabileceğiniz [!INCLUDE
 ## <a name="dgsl-documents"></a>DGSL belgeleri  
  Gölgelendirici Tasarımcısı gölgelendiricilerin, yönlendirilmiş grafik işaretleme dili (DGML üzerinde) dayalı olarak XML formatında yönlendirilmiş grafik gölgelendirici dili (DGSL) biçiminde kaydeder. 3B modeller Model Düzenleyicisi'nde için doğrudan DGSL gölgelendirici uygulayabilirsiniz. Uygulamanızda bir DGSL gölgelendirici kullanmadan önce ancak bunu DirectX anlayan bir biçime dışa aktarmanız gerekir — Örneğin, HLSL.  
   
- DGSL DGML ile uyumlu olmadığından, DGSL gölgelendirici çözümlemek için DGML belgelerinin analiz etmek için tasarlanan araçları kullanabilirsiniz. DGML hakkında daha fazla bilgi için bkz. [anlama yönlendirilmiş grafik işaretleme dili (DGML)](http://msdn.microsoft.com/library/ee842619.aspx).  
+ DGSL DGML ile uyumlu olmadığından, DGSL gölgelendirici çözümlemek için DGML belgelerinin analiz etmek için tasarlanan araçları kullanabilirsiniz. DGML hakkında daha fazla bilgi için bkz. [anlama yönlendirilmiş grafik işaretleme dili (DGML)](https://msdn.microsoft.com/library/ee842619.aspx).  
   
 ## <a name="related-topics"></a>İlgili konular  
   

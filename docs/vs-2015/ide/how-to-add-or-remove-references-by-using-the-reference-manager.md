@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445678"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701162"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi'ni kullanarak başvuruları kaldırın veya ekleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
   
 - Kullanan bileşen [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] hedefleyen bir projeyle uyumsuzdur [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Bazı projeler hedef yeni bir uygulama oluşturduğunuzda [!INCLUDE[net_v45](../includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Bazı projeler hedef yeni bir uygulama oluşturduğunuzda [!INCLUDE[net_v45](../includes/net-v45-md.md)] varsayılan olarak. Daha fazla bilgi için [.NET Framework istemci profili](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çıktılarına dosya başvuruları aynı çözümde eklemekten kaçının. Bunun yerine, **projeleri** sekmesinde **Başvuru Ekle** projeden projeye başvuru oluşturmak için iletişim kutusu. Bu takım geliştirme projelerinizde oluşturduğunuz sınıf kitaplıklarının daha iyi yönetimine etkinleştirerek kolaylaştırır. Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
 </PropertyGroup>  
 ```  
   
- Seçtiğinizden emin olun **Windows** bu alt grupta onay kutusu. Bundan sonra Windows Çalışma Zamanı öğelerini kullanabilmeniz gerekir. Bununla birlikte, Windows Çalışma Zamanı'nın IEnumerable gibi bazı standart sınıfları ve arabirimleri (Windows Çalışma Zamanı kitaplıklarının her yerinde kullanılan) tanımladığı System.Runtime öğesini de eklemek isteyeceksiniz. System.Runtime öğesini ekleme hakkında daha fazla bilgi için bkz: [yönetilen Masaüstü uygulamaları ve Windows çalışma zamanı](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Seçtiğinizden emin olun **Windows** bu alt grupta onay kutusu. Bundan sonra Windows Çalışma Zamanı öğelerini kullanabilmeniz gerekir. Bununla birlikte, Windows Çalışma Zamanı'nın IEnumerable gibi bazı standart sınıfları ve arabirimleri (Windows Çalışma Zamanı kitaplıklarının her yerinde kullanılan) tanımladığı System.Runtime öğesini de eklemek isteyeceksiniz. System.Runtime öğesini ekleme hakkında daha fazla bilgi için bkz: [yönetilen Masaüstü uygulamaları ve Windows çalışma zamanı](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Uzantılar Alt Grubu  
  Uzantılar, hedeflenen Windows platformunu genişleten kullanıcı SDK'larını listeler. Bu sekme görünür [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulaması projeleri yalnızca. Masaüstü projeleri yalnızca birinci taraf .winmd dosyalarını kullanabildiğinden, bu sekmeyi göstermezler.  
@@ -216,5 +216,5 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
  Arama çubuğuna **başvuru Yöneticisi** iletişim kutusu'nın, odakta olan sekme üzerinde çalışır. Örneğin, bir kullanıcı sırasında arama çubuğuna "Sistem" yazarsa **çözüm** sekme odağı, arama Çözüm "Sistem" içeren bir proje adından oluşmadığı sürece herhangi bir sonuç döndürmek olmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NIB nasıl yapılır: Başvuru Ekle iletişim kutusunu kullanarak başvuruları kaldırın veya ekleyin](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB nasıl yapılır: Başvuru Ekle iletişim kutusunu kullanarak başvuruları kaldırın veya ekleyin](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)

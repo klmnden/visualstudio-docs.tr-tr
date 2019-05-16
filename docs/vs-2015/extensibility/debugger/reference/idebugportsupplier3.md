@@ -12,12 +12,12 @@ ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46375c0b30ca563afc600d810dd27dc22882a71f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4ece720cf6880bba528dee99cdbdeb25c10087a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786213"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674128"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  Özel bağlantı noktası sağlayıcısı kalıcı veya bağlantı noktası bilgilerini diske kaydedilirken desteklemek için bu arabirimi uygular. Bu arabirim aynı nesne üzerinde uygulanması gereken [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Çağrı [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde `IDebugPortSupplier2` arabirimi bu arabirim elde edilir.  
+ Çağrı [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde `IDebugPortSupplier2` arabirimi bu arabirim elde edilir.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Devralınan yöntemleri yanı sıra [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) arabirimi bu arabirim, aşağıdakileri destekler:  

@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702261"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Özel Durumdan Sonra Yürütmeye Devam Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse, bir iletişim kutusu görüntülenir. Visual Basic veya C# için göreceğiniz [özel durum Yardımcısı'nı](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) iletişim kutusunda, varsayılan olarak. C++ için eski görürsünüz **özel durum** iletişim kutusu. Visual Basic veya C# kullanarak ancak devre dışı bırakmış **özel durum Yardımcısı'nı** içinde **seçenekleri** iletişim kutusu görürsünüz **özel durum** iletişim kutusu.  
+Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse, bir iletişim kutusu görüntülenir. Visual Basic veya C# için göreceğiniz [özel durum Yardımcısı'nı](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) iletişim kutusunda, varsayılan olarak. C++ için eski görürsünüz **özel durum** iletişim kutusu. Visual Basic veya C# kullanarak ancak devre dışı bırakmış **özel durum Yardımcısı'nı** içinde **seçenekleri** iletişim kutusu görürsünüz **özel durum** iletişim kutusu.  
   
  Zaman **özel durum Yardımcısı'nı** veya **özel durum** iletişim kutusu görüntülenirse, özel duruma neden olan sorunu düzeltmeye çalışın.  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42fb2e9e91698c276e2b14b3acff9068581a1e9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693729"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Seçenekler, Metin Düzenleyici, Tüm Diller, Sekmeler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bu iletişim kutusu Kod Düzenleyicisi'nin varsayılan davranışını değişti
  Farklı için farklı ayarlar, belirli programlama dilleri ve ardından "Girinti ayarları birbirleriyle bireysel metin biçimleri çakışıyor için" iletisi sekmeleri seçenekler sayfaları seçilmezse, görüntülenen **Indenting**Seçenekler; ve farklı için "Birbirleriyle bireysel metin biçimleri çakışma için sekmesinde ayarları" iletisi görüntülenir **sekmesini** seçenekleri. Örneğin, bu hatırlatmayı görüntülenir **akıllı girintileme** seçeneği Visual Basic için ancak **Block girintileme** Visual C++ için seçilir.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="indenting"></a>Girintileme  
  Yok.  

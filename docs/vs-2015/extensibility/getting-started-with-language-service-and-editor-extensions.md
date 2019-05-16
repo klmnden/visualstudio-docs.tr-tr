@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703754"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Dil Hizmeti ve Düzenleyici Uzantılarıyla Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Programlama diliniz veya herhangi bir içerik türü için anahat oluşturma, ay
  Kendi Düzenleyici uzantıları yazmadan önce aşağıdaki kavramları ve teknolojileri hakkında bilgi öneririz.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) ve düzenleyici uzantılarıyla  
- Windows Presentation Foundation (WPF) kullanarak Visual Studio Düzenleyicisi kullanıcı arabirimi (UI) uygulanır. WPF, zengin bir görsel deneyimi ve iş mantığından kod visual yönlerini ayıran tutarlı bir programlama modeli sağlar. Düzenleyici uzantıları oluşturduğunuzda, birçok WPF öğeleri ve özellikleri kullanabilirsiniz. Daha fazla bilgi için [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ Windows Presentation Foundation (WPF) kullanarak Visual Studio Düzenleyicisi kullanıcı arabirimi (UI) uygulanır. WPF, zengin bir görsel deneyimi ve iş mantığından kod visual yönlerini ayıran tutarlı bir programlama modeli sağlar. Düzenleyici uzantıları oluşturduğunuzda, birçok WPF öğeleri ve özellikleri kullanabilirsiniz. Daha fazla bilgi için [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Yönetilen Genişletilebilirlik Çerçevesi (MEF) ve düzenleyici uzantılarıyla  
  Visual Studio Düzenleyicisi, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri ve uzantıları yönetmek için kullanır. MEF, ayrıca geliştiricilerin daha fazla uzantıları Visual Studio gibi bir ana bilgisayar uygulaması için kolayca oluşturmanıza olanak tanır. Bu çerçeve, MEF sözleşmesi göre bir uzantı tanımlayın ve MEF Bileşeni parçası olarak dışarı aktarın. Ana bilgisayar uygulaması bileşen parçalarına bunları bulma, bunları kaydetme ve doğru bağlamına uygulanan sağlamaktan yönetir.  

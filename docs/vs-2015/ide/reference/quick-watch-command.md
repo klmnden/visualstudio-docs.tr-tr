@@ -14,17 +14,17 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c9ac805ebea19604343d561bf553448fff2ca575
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701741"
 ---
 # <a name="quick-watch-command"></a>Hızlı Bakış Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-İfade alanında seçilen veya belirtilen metni görüntüler [QuickWatch iletişim kutusu](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Bir değişkenin veya ifadenin hata ayıklayıcı veya bir kaydın içeriğini tarafından tanınan geçerli değerini hesaplamak için bu iletişim kutusunu kullanabilirsiniz. Ayrıca, herhangi bir sabit olmayan değişken değeri veya herhangi bir kayıt içeriğini değiştirebilirsiniz.  
+İfade alanında seçilen veya belirtilen metni görüntüler [QuickWatch iletişim kutusu](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Bir değişkenin veya ifadenin hata ayıklayıcı veya bir kaydın içeriğini tarafından tanınan geçerli değerini hesaplamak için bu iletişim kutusunu kullanabilirsiniz. Ayrıca, herhangi bir sabit olmayan değişken değeri veya herhangi bir kayıt içeriğini değiştirebilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,7 +46,7 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: QuickWatch iletişim kutusunu kullanın](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Nasıl yapılır: QuickWatch iletişim kutusunu kullanın](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio komutları](../../ide/reference/visual-studio-commands.md)   
  [Komut penceresi](../../ide/reference/command-window.md)   
  [Bul/komut kutusu](../../ide/find-command-box.md)   

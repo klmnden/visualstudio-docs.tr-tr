@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf656ed94b232e2ce19986696f4155dc225c8ad0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674851"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433634"
 **Seçenekleri** iletişim kutusu ihtiyaçlarınıza tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, projeleriniz için bir varsayılan kaydetme konumu kurmak, varsayılan görünümünü ve davranışını Windows alter ve sık kullanılan komutlar için kısayollar oluşturmanıza. Ayrıca seçenekleri geliştirme diliniz ve platformunuz için özgü vardır. Erişebildiğiniz **seçenekleri** gelen **Araçları** menüsü.
 
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="layout-of-the-options-dialog-box"></a>Seçenekler iletişim kutusu düzeni
  **Seçenekleri** iletişim kutusu, iki bölüme ayrılmıştır: sol ve sağ taraftaki görüntüleme alanı bir gezinti bölmesi. Ağaç denetimi Gezinti bölmesinde, ortam, metin düzenleyici, kaynak denetimi, projeler ve çözümler gibi klasör düğümleri içerir. İçerdiği seçenekler sayfalarını listelemek için herhangi bir klasör düğümünü genişletin. Belirli bir sayfa için düğümü seçin, seçeneklerini görünüm alanında görünür.

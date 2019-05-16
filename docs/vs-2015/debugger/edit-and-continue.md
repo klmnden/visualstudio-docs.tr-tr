@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760689"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698725"
 ---
 # <a name="edit-and-continue"></a>Düzenle ve Devam Et
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklik
   
  Bu bölüm şu konuları içerir:  
   
- [Nasıl yapılır: Kod değişikliklerini açıkça uygulama](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Nasıl yapılır: Kod değişikliklerini açıkça uygulama](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Nasıl yapılır: Düzenle ve Devam Et'i Etkinleştirme veya Devre Dışı Bırakma](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Nasıl yapılır: Kod Değişikliklerini Durdurma](../debugger/how-to-stop-code-changes.md)  
   
- [Yürütme noktası](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Yürütme noktası](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Düzenle ve Devam Et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Düzenle ve devam programınız kesme modundayken, kaynak kodunuzda değişiklik
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Hata Ayıklayıcısı Temel Bilgileri](../debugger/debugger-basics.md)

@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695326"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Genişletilebilir Biçimlendirme Dili (XML) * veri tanımlamak için bir biçim 
 ## <a name="reference"></a>Başvuru
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) sunan [XML Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=228249) ayrıştırma ağacı aracılığıyla [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) XML belgeleri için.
 
- [XML standartları başvurusu](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
+ [XML standartları başvurusu](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
 
  <xref:System.Xml?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklayan <xref:System.Xml> ad alanı ve her bir öğede daha ayrıntılı bilgi için bağlantılar sağlar.
 
  <xref:System.Xml.Serialization?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklayan <xref:System.Xml.Serialization> ad alanı ve her öğeyle ilgili daha ayrıntılı bilgi için bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
- [XML belge nesne modeli (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (çekirdek) Düzey 1 ve 2. düzey ad alanı desteği belirtimleri ile uyumlu.
+ [XML belge nesne modeli (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (çekirdek) Düzey 1 ve 2. düzey ad alanı desteği belirtimleri ile uyumlu.
 
- [XmlReader okuma XML](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Describes nasıl <xref:System.Xml.XmlReader> Önbelleklenmemiş, iletme yalnızca, salt okunur erişim XML verilerini bir XML akışı sağlar.
+ [XmlReader okuma XML](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Describes nasıl <xref:System.Xml.XmlReader> Önbelleklenmemiş, iletme yalnızca, salt okunur erişim XML verilerini bir XML akışı sağlar.
 
- [XML XmlWriter ile yazma](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Describes nasıl <xref:System.Xml.XmlWriter> Önbelleklenmemiş, sağlar. yalnızca XML akışlarını ve W3C standardı ile uyum XML belgeleri oluşturmanıza yardımcı olur oluşturma yolu iletin.
+ [XML XmlWriter ile yazma](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Describes nasıl <xref:System.Xml.XmlWriter> Önbelleklenmemiş, sağlar. yalnızca XML akışlarını ve W3C standardı ile uyum XML belgeleri oluşturmanıza yardımcı olur oluşturma yolu iletin.
 
- [XSLT dönüşümleri](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
+ [XSLT dönüşümleri](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
 
- [XPath veri modelini kullanarak XML verilerini işleme](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı içinde depolanan XML verileri işleyebilir bir <xref:System.Xml.XPath.XPathDocument> veya <xref:System.Xml.XmlDocument> nesne. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modeline dayanır ve gidin ve XML verileri düzenlemek için kullanılabilir.
+ [XPath veri modelini kullanarak XML verilerini işleme](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı içinde depolanan XML verileri işleyebilir bir <xref:System.Xml.XPath.XPathDocument> veya <xref:System.Xml.XmlDocument> nesne. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modeline dayanır ve gidin ve XML verileri düzenlemek için kullanılabilir.
 
- [XML şema nesne modeli (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) oluşturmak ve XML şemaları sağlayarak işlemek için kullanılan sınıfları açıklar bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.
+ [XML şema nesne modeli (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) oluşturmak ve XML şemaları sağlayarak işlemek için kullanılan sınıfları açıklar bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.

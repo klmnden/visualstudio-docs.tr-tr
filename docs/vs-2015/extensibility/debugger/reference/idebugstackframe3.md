@@ -12,12 +12,12 @@ ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d63d4dcd6e3b7a3b81504b485ee710779cef3c13
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438159"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688529"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Hata ayıklama altyapısı (DE) bu arabirimi uygulayan aynı nesne üzerinde uygulayan [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) ilerlemesinden özel durumları desteklemek için arabirim.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Çağrı [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde bir `IDebugStackFrame2` arabirimi bu arabirim elde edilir.  
+ Çağrı [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde bir `IDebugStackFrame2` arabirimi bu arabirim elde edilir.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Devralınan yöntemleri yanı sıra [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md), `IDebugStackFrame3` aşağıdaki yöntemi kullanıma sunar.  

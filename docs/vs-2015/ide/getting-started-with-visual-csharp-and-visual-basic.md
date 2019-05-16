@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674773"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# ve Visual Basic'e Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C# veya Microsoft Visual Basic'te yeni de olsanız, hareket noktanız burasıdır. Başlarken Yardımı, size Visual C# ve Visual Basic'i tanıtan sıralı bir dizi derstir. Eğlenin ve harika yazılımlar yazın.  
   
- Visual C++ hakkında bilgi edinmek için [Visual C++ kaynakları](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Visual C++ hakkında bilgi edinmek için [Visual C++ kaynakları](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [İzlenecek yol: Basit bir Uygulama Oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

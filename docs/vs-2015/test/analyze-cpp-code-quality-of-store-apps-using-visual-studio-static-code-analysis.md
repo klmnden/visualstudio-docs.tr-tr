@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442839"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686530"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
  Kod Analizi aracı Visual Studio express sürümlerinde, kodunuz için bir dizi ortak sorunlar ve programlama iyi yöntem ihlallerini inceler. Geçerli olan, ancak yine de siz veya kodunuzu kullanan diğer kişilerin sorunlarına neden olabilir, belirli bir kod desenleri için Kod Analizi arar çünkü kod çözümleme uyarıları derleyici hataları ve Uyarıları farklılık gösterir. Kod Analizi, kodunuzda test sürecinde bulmak zor olan hataları da bulabilirsiniz. Kod çözümleme aracı, geliştirme sürecinde düzenli aralıklarla çalışan tamamlanmış uygulamanızın kalitesini artırabilirsiniz.
 
 > [!NOTE]
-> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod çözümleme araçları tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
+> Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod çözümleme araçları tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](https://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
 
 ## <a name="BKMK_Run"></a> Kod Analizi çalıştırma
  Visual Studio çözümünüzü Kod Analizi çalıştırmak için:
@@ -116,7 +116,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                       [C6504](../code-quality/c6504.md)                        |                                              İşaretçi olmayan değişkende null                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Void üzerinde MustCheck                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      İşaretçi olmayan veya dizi değişkende arabellek boyutu                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null uyumsuzluğu sıfır başvurma                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null uyumsuzluğu sıfır başvurma                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Sabit üzerinde yazma erişimi                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Önkoşulda return kullanıldı                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        İşaretçi olmayan değişkende null                                         |
@@ -127,11 +127,11 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                       [C6516](../code-quality/c6516.md)                        |                                          Öznitelikte özellik yok                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Okunabilir olmayan arabellekte geçerli boyut                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Yazılabilir olmayan arabellekte yazılabilir boyut                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Geçersiz boyut dize türü                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Geçersiz boyutta dize ulaşılamayan konumu                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Geçersiz boyut dize arabellek türü                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Geçersiz boyut dize arabellek türü                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Geçersiz ek açıklama: 'NeedsRelease' özelliği void türünün değerleri üzerinde kullanılamaz               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Biçim dizesi stili tanınmıyor                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Bu işlev üzerindeki öznitelik ek açıklamaları kullanımı tüm, var olan __declspec ek açıklamalarını geçersiz kılar  |

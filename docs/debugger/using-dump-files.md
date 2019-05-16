@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676367"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı döküm dosyaları
 
@@ -74,7 +74,7 @@ Visual Studio bir işlemde hata ayıklarken, hata ayıklayıcı bir kesme noktas
 1. Bir yola göz atın ve bilgi döküm dosyası için bir ad seçin ve ardından **Kaydet**.
 
 >[!NOTE]
->Windows mini döküm biçimini destekleyen herhangi bir programla döküm dosyaları oluşturabilirsiniz. Örneğin, **Procdump** komut satırı yardımcı programı [Windows SysInternals](http://technet.microsoft.com/sysinternals/default) Tetikleyiciler veya isteğe bağlı işlem kilitlenme döküm dosyaları oluşturabilirsiniz. Bkz: [gereksinimleri ve sınırlamaları](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) döküm dosyalarını oluşturmak için diğer araçları kullanma hakkında bilgi.
+>Windows mini döküm biçimini destekleyen herhangi bir programla döküm dosyaları oluşturabilirsiniz. Örneğin, **Procdump** komut satırı yardımcı programı [Windows SysInternals](https://technet.microsoft.com/sysinternals/default) Tetikleyiciler veya isteğe bağlı işlem kilitlenme döküm dosyaları oluşturabilirsiniz. Bkz: [gereksinimleri ve sınırlamaları](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) döküm dosyalarını oluşturmak için diğer araçları kullanma hakkında bilgi.
 
 ## <a name="BKMK_Open_a_dump_file"></a> Bir döküm dosyası Aç
 

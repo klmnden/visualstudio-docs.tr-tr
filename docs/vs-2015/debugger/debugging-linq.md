@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691265"
 ---
 # <a name="debugging-linq"></a>LINQ'de Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108574"
 ## <a name="BKMK_ViewingLINQResults"></a> LINQ sonuçlarını görüntüleme  
  DataTips, izleme penceresi ve QuickWatch iletişim kutusunu kullanarak, bir LINQ ifadesini sonucunu görüntüleyebilirsiniz. Bir kaynak penceresi kullandığınızda, kaynak penceresinde bir sorgunun işaretçisini duraklatabilirsiniz ve bir DataTip görünür. Bir LINQ değişkenini kopyalayıp İzle penceresine veya QuickWatch iletişim kutusuna yapıştırın.  
   
- LINQ içinde bir sorgu oluşturulduğunda veya bildirildiğinde ancak sorgu kullanılmadıysa değerlendirilmez. Bu nedenle sorgu değerlendirilene kadar bir değeri yok. Sorgu oluşturmaya ve değerlendirmeye tam bir açıklaması için bkz [(C#) LINQ sorgularına giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) veya [bilgisayarınızı ilk LINQ sorgusu yazma](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ LINQ içinde bir sorgu oluşturulduğunda veya bildirildiğinde ancak sorgu kullanılmadıysa değerlendirilmez. Bu nedenle sorgu değerlendirilene kadar bir değeri yok. Sorgu oluşturmaya ve değerlendirmeye tam bir açıklaması için bkz [(C#) LINQ sorgularına giriş](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) veya [bilgisayarınızı ilk LINQ sorgusu yazma](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Bir sorgunun sonucu görüntülemek için hata ayıklayıcı sorguyu değerlendirmelidir. Hata ayıklayıcıda LINQ Sorgu sonucu görüntülediğinizde oluşan bu örtülü değerlendirme, düşünmeniz gereken bazı etkilere sahiptir:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108574"
  İçinde bir LINQ to SQL sorgularında koşul kodu hata ayıklayıcının denetimi dışında ' dir. Bu nedenle, doğrulama koduna geçemezsiniz. Bir ifade ağacına derleyen herhangi bir sorgu hata ayıklayıcının denetimi dışında kod oluşturur.  
   
 ### <a name="stepping-in-visual-basic"></a>Visual Basic'de Adımlama  
- Bir Visual Basic programını adımladığınızda ve hata ayıklayıcı bir sorgu bildirimiyle karşılaştığında bildirime girmez ancak bildirimin tamamını tek bir deyim olarak vurgular. Bu davranış, sorgu çağrılana kadar değerlendirilmediğinden oluşur. Daha fazla bilgi için [Visual Basic'te LINQ'e giriş](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Bir Visual Basic programını adımladığınızda ve hata ayıklayıcı bir sorgu bildirimiyle karşılaştığında bildirime girmez ancak bildirimin tamamını tek bir deyim olarak vurgular. Bu davranış, sorgu çağrılana kadar değerlendirilmediğinden oluşur. Daha fazla bilgi için [Visual Basic'te LINQ'e giriş](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Aşağıdaki örnek kodda gezinirseniz, hata ayıklayıcı sorgu bildirimini veya sorgu oluşturmayı tek bir deyim olarak vurgular.  
   
@@ -117,8 +117,8 @@ End Function
  Visual Basic'te, LINQ olmayan kodda bile LINQ sorgusu içeren bir yöntem üzerinde Düzenle ve devam et kullanabilirsiniz. Ekleyebilir veya LINQ deyiminden önce kod değişiklikleri LINQ sorgusunun satır numarasını etkilese kaldırın. Visual Basic hata ayıklama deneyimi için LINQ olmayan kodda, LINQ öncesi olduğu gibi aynı kalır. Değiştirme, ekleme veya değişiklikleri uygulamak için hata ayıklamayı durdurmak istemediğiniz sürece LINQ sorgusu, ancak kaldırma olamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SQL hata ayıklama](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Yan etkiler ve ifadeler](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [SQL hata ayıklama](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Yan etkiler ve ifadeler](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Özel durumları hata ayıklayıcısı ile yönetme](../debugger/managing-exceptions-with-the-debugger.md)   
- [LINQ sorguları (C#) giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Visual Basic'de LINQ'e giriş](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [LINQ sorguları (C#) giriş](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Visual Basic'de LINQ'e giriş](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

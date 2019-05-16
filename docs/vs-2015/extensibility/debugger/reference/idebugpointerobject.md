@@ -12,12 +12,12 @@ ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9208b21aafbcee9cb5d6938eea3b60bdde491ba0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4cd84c3580d94491e09ce9e8cde8175f9e437be0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440625"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693394"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugPointerObject : IDebugObject
  İfade değerlendirici bir işaretçi nesnesinin temsil etmek için bu arabirimi uygular.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) kullanarak arabirimi bu arabirim edinebilirsiniz [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) varsa `IDebugObject` bir işaretçiyi temsil eder.  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) kullanarak arabirimi bu arabirim edinebilirsiniz [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) varsa `IDebugObject` bir işaretçiyi temsil eder.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
  Devralınan yöntemleri yanı sıra [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugPointerObject` arabirimi aşağıdaki yöntemleri sunar.  

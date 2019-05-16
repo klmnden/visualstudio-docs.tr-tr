@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425344"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692545"
 ---
 # <a name="save-data-back-to-the-database"></a>Verileri yeniden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
  `GetChanges` tek başına değişen tüm kayıtları döndürür. Buna karşılık, geçirerek istenen <xref:System.Data.DataRowState> bir parametre olarak `GetChanges` yöntemi, hangi istediğiniz değiştirilmiş kayıt kümesini belirtebilirsiniz: yeni kayıtlar, silinmek üzere işaretlenmiş kayıtları ayrılmış kayıtları eklendi veya değiştirilmiş kayıtlar.  
   
- Bir alt kümesini kayıtlar alınırken işleme için başka bir bileşen kayıtları göndermek istediğinizde yararlıdır. Veri kümesinin tamamının göndermek yerine yalnızca bileşen gereken kayıtları alarak başka bir bileşen ile iletişim kurulurken yükünü azaltabilir. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Bir alt kümesini kayıtlar alınırken işleme için başka bir bileşen kayıtları göndermek istediğinizde yararlıdır. Veri kümesinin tamamının göndermek yerine yalnızca bileşen gereken kayıtları alarak başka bir bileşen ile iletişim kurulurken yükünü azaltabilir. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Veri kümesi değişiklikleri işleme  
  Veri kümesindeki değişiklikler yapıldıkça <xref:System.Data.DataRow.RowState%2A> değiştirilen satırların özelliği ayarlanmış. Kayıtları geçerli ve özgün sürümlerini oluşturulan, korunur ve size sunulan <xref:System.Data.DataRowView.RowVersion%2A> özelliği. Bu değiştirilen satırların özelliklerinde depolanan meta veriler, doğru güncelleştirmeleri veri kaynağına göndermek için gereklidir.  
@@ -219,12 +219,12 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
 - Verileri doğrulamak için uygulamanıza kod ekleyerek iş katmanı içinde. Veri kümesi, bunu yapmak için bir yerdir. Veri kümesi Tasarımcısı arka uç doğrulama avantajlarından bazıları sağlar; sütun ve satır değerleri değiştirme gibi değişiklikleri doğrulamak için özelliği gibi. Daha fazla bilgi için [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md).  
   
-- Doğrulama formlar ekleyerek sunu katmanda. Daha fazla bilgi için [Windows Forms'ta kullanıcı girdisi doğrulama](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- Doğrulama formlar ekleyerek sunu katmanda. Daha fazla bilgi için [Windows Forms'ta kullanıcı girdisi doğrulama](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - Veri kaynağına veri gönderen tarafından arka uç, verileri — Örneğin, veritabanı — ve kabul etme veya reddetme veri olanak tanır. Verileri doğrulama ve hata bilgilerini sağlayarak olanakları karmaşık bir veritabanı ile çalışıyorsanız, verilerin nereden geldiğini ne olursa olsun doğrulayabilirsiniz çünkü bu pratik bir yaklaşım olabilir. Ancak, bu yaklaşım uygulamaya özgü doğrulama gereksinimlerini karşılamaya değil. Ayrıca, verileri doğrulama veri kaynağına sahip çok sayıda gidiş dönüş içinde nasıl, uygulamanızın arka ucu tarafından oluşturulan doğrulama hatalarını çözümlenmesi kolaylaştırır bağlı olarak veri kaynağına neden olabilir.  
   
   > [!IMPORTANT]
-  > Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Veri komutları ile kullanırken bir <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> ayarlanan özellik <xref:System.Data.CommandType>, dikkatli bir şekilde veritabanına geçirmeden önce bir istemciden gönderilen bilgilere bakın. Kötü amaçlı kullanıcılara gönderilecek deneyin (Ekle) yetkisiz erişim veya veritabanı zarar vermek için çaba değiştirilmiş veya ek SQL deyimlerinde. Bir veritabanına kullanıcı girişi aktarmadan önce her zaman bilgilerin geçerli olduğunu doğrulayın. Parametreli sorgular veya saklı yordamları mümkün olduğunda kullanılması her zaman iyi bir uygulamadır. Daha fazla bilgi için [betik yararlanan genel bakış](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Bir veri kümesinde değişiklik yapıldıktan sonra değişiklikleri veri kaynağına aktarabilir. En yaygın olarak, çağrı yaparak bunu `Update` yöntemi bir TableAdapter (veya veri bağdaştırıcısı). Her bir veri tablosu kayıt yöntemi döner belirler ne tür bir güncelleştirme gerekli değildir (güncelleştirme, ekleme veya silme), varsa, ve ardından uygun komutu çalıştırır.  
   
@@ -272,6 +272,6 @@ Veri kümesi, verilerin bir bellek içi kopyasıdır. Bu verileri değiştirirse
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Uygulamanızı veri almaya hazırlama](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Verileri doğrulama](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

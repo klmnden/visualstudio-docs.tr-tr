@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387694"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675481"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn çözümleyicilerini için kural kümeleri
 
@@ -25,11 +25,28 @@ Eski "FxCop" statik kod analizi için Roslyn Çözümleyicileri geçiriyorsanız
 
 ## <a name="use-analyzer-rule-sets"></a>Çözümleyicisi için kural kümeleri kullanma
 
-Çalıştırdıktan sonra [NuGet Çözümleyicisi paket yükleme](install-roslyn-analyzers.md), önceden tanımlanmış kural kümesi bulun, *rulesets* dizin. Örneğin, başvurulan, `Microsoft.CodeAnalysis.FxCopAnalyzers` Çözümleyicisi paketini kendi rulesets dizininde bulabilirsiniz sonra *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<sürümü \>\rulesets*. Buradan, sürükleyin ve bırakın veya kopyalayıp yapıştırabilirsiniz, bir veya daha fazla Visual Studio projenize rulesets **Çözüm Gezgini**.
+Çalıştırdıktan sonra [NuGet Çözümleyicisi paket yükleme](install-roslyn-analyzers.md), önceden tanımlanmış kural kümesi bulun, *rulesets* dizin. Örneğin, başvurulan, `Microsoft.CodeAnalysis.FxCopAnalyzers` Çözümleyicisi paketini ve ardından bulabilir, *rulesets* dizin konumunda *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<sürüm\>\rulesets*. Buradan, bir veya daha fazla rulesets kopyalayıp bunları doğrudan ya da Visual Studio projenizi içeren dizine **Çözüm Gezgini**.
 
-Analizi için etkin kural kümesi bir kural oluşturmak için projeye sağ **Çözüm Gezgini** ve **özellikleri**. Proje özellik sayfaları'nda seçin **Kod Analizi** sekmesi. Altında **bu kural kümesini Çalıştır**seçin **Gözat**ve ardından proje dizinine kopyalanır istenen kural kümesi seçin. Artık yalnızca seçili kural kümesinde etkin bu kuralları için kural ihlalleri görürsünüz.
+Ayrıca [önceden tanımlanmış kural kümesi özelleştirme](how-to-create-a-custom-rule-set.md) tercihinize. Örneğin, böylece hatalar veya uyarılar olarak ihlalleri görünür bir veya daha fazla kural önem derecesi değiştirebilirsiniz **hata listesi**.
 
-Ayrıca [önceden tanımlanmış kural kümesi özelleştirme](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) tercihinize. Örneğin, böylece hatalar veya uyarılar olarak ihlalleri görünür bir veya daha fazla kural önem derecesi değiştirebilirsiniz **hata listesi**.
+## <a name="set-the-active-rule-set"></a>Etkin kural kümesi ayarlama
+
+Etkin kural kümesini ayarlama işlemi, bir .NET Core/.NET Standard veya .NET Framework projesi olmasına bağlı olarak biraz farklıdır.
+
+### <a name="net-core"></a>.NET Core
+
+.NET Core veya .NET Standard projelerine analizi için etkin kural kümesi bir kural oluşturmak için el ile eklemeniz **CodeAnalysisRuleSet** proje dosyanıza özelliği. Örneğin, aşağıdaki kod parçacığı kümeleri kod `HelloWorld.ruleset` etkin kural olarak ayarlayın.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+.NET Framework projelerindeki analizi için etkin kural kümesi bir kural oluşturmak için projeye sağ **Çözüm Gezgini** ve **özellikleri**. Proje özellik sayfaları'nda seçin **Kod Analizi** sekmesi. Altında **bu kural kümesini Çalıştır**seçin **Gözat**ve ardından proje dizinine kopyalanır istenen kural kümesi seçin. Artık yalnızca seçili kural kümesinde etkin bu kuralları için kural ihlalleri görürsünüz.
 
 ## <a name="available-rule-sets"></a>Kullanılabilir kural kümeleri
 

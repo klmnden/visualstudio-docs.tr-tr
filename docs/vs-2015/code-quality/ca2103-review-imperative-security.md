@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9d6fb1b40a63608aaa4ae92029c3a60a56157650
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b8b3067d5c8ab8204d6ad723315c400e7b27552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694937"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Kesin temelli güvenliği gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ms.locfileid: "54779743"
  Değişen veri iznini kullanmayan varsa bu kuraldan bir uyarıyı bastırmak güvenlidir. Ancak, bildirim temelli eşdeğerine kesinlik temelli talep değiştirmek iyidir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenli kodlama yönergeleri](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Güvenli kodlama yönergeleri](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

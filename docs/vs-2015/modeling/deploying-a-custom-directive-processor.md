@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699681"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63422586"
   
  Diğer yöntemler şunlardır:  
   
-- [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
+- [Visual Studio Uzantısı (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Bu, yönerge işlemcisini hem kendi bilgisayar hem de diğer bilgisayarlara yüklemek/kaldırmak için bir yol sağlar. Genellikle, diğer özellikleri aynı VSIX'te paketleyebilirsiniz.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Yönerge işlemcisinin yanı sıra diğer özellikleri de içeren bir VSPackage tanımlıyorsanız, yönerge işlemcisi kaydetmeye uygun bir yöntem yoktur.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63422586"
   Yalnızca, metin şablonunuza dönüştürmek istiyorsanız aşağıdaki yöntemlerden birini kullanmanız gerekir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Kendi uygulamanızda özel bir ana bilgisayar kullanıyorsanız, her yönerge için yönerge işlemcisi bulmak özel ana bilgisayarınızın sorumluluğundadır.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX'te Yönerge İşlemcisini Dağıtma  
- Özel bir yönerge işlemcisi ekleyebilirsiniz bir [Visual Studio Uzantısı (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Özel bir yönerge işlemcisi ekleyebilirsiniz bir [Visual Studio Uzantısı (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Aşağıdaki iki öğenin .vsix dosyasında bulunduğundan emin olmanız gerekir:  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0137fd1eda8613d332cb07df0d87df97ff9a51a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776383"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704431"
 ---
 # <a name="getting-started-with-wpf"></a>WPF ile çalışmaya başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Windows Presentation Foundation (WPF) masaüstü istemci uygulamalar oluşturan 
   
 |||  
 |-|-|  
-|Hemen istediğiniz...|[İzlenecek yol: İlk WPF Masaüstü Uygulamam](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
+|Hemen istediğiniz...|[İzlenecek yol: İlk WPF Masaüstü Uygulamam](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [İzlenecek yol: Azure Mobil Hizmetine bağlı WPF Masaüstü Uygulaması Oluşturma](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
 |Uygulama kullanıcı Arabirimi nasıl tasarlayacağınızı?|[Visual Studio ve Visual Studio İçin Blend Uygulamalarında XAML Tasarlama](../designers/designing-xaml-in-visual-studio.md)|  
-|.NET yeni misiniz?|[.NET Framework'ün genel bakış](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Uygulama Temelleri](http://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Visual C# ve Visual Basic'e Başlarken](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
+|.NET yeni misiniz?|[.NET Framework'ün genel bakış](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Uygulama Temelleri](https://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Visual C# ve Visual Basic'e Başlarken](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
 |WPF hakkında daha fazla bilgi...|[WPF'ye Giriş](../designers/introduction-to-wpf.md)<br /><br /> [XAML'ye Genel Bakış (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [Denetimler](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [Veri Bağlamaya Genel Bakış](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [LINQ to XML ile WPF Verilerini Bağlama](../designers/wpf-data-binding-with-linq-to-xml.md)|  
 |Windows Forms Geliştirici misiniz?|[Windows Forms Denetimleri ve Eşdeğer WPF Denetimleri](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [Desteklenen senaryoları WPF ve Windows Forms birlikte çalışması](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|  
   

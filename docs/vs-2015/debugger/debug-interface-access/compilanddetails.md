@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c91fbd8a4fc3775272e578df43025bd7052c72ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 34349bf096d8bb98ae4b3de7c7a922b8d28bc4f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783289"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703008"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Derlenecek bilgi simgeleri ile arasında bölünür bir `SymTagCompiland` etiket
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Derleyici ön uç alt sürüm sayısı.|  
 |[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE` Bu derlenecek hata ayıklama bilgileri (yalnızca DIA SDK V8.0 veya üzeri) sahipse.|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE` Bu derlenecek (yalnızca DIA SDK v8.0 veya üzeri sürümlerde) yönetilen kodu içeriyorsa.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/GS (arabellek güvenlik denetimi)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/GS (arabellek güvenlik denetimi)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE` derlenecek ortak Ara dil (CIL) koddan yerel koda dönüştürülmüş durumunda.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE` Kullanıcı tanımlı tür (UDT) için hizalı durumunda bazı bellek sınırı (yalnızca DIA SDK V8.0 veya üzeri) belirttiniz.|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) derleyici anahtarı (yalnızca DIA SDK v8.0 veya üzeri).|  
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/LTCG (bağlama zamanı kodu oluşturma)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) derleyici anahtarı (yalnızca DIA SDK v8.0 veya üzeri).|  
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` derlenecek ile derlenen varsa [/LTCG (bağlama zamanı kodu oluşturma)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) derleyici anahtarı (yalnızca DIA SDK V8.0 veya üzeri).|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|Derlenecek bir Microsoft Ara dil (MSIL) modülünün (yalnızca DIA SDK v8.0 veya üzeri sürümlerde) ise TRUE.|  
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Kaynak kod dili.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Derlenecek dosya simgesi.|  

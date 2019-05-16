@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7e14acedeab457df10cc011a94f96d7202972eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059038"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697891"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Bir TableAdapter’ın işlevselliğini genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ TableAdapter bağdaştırıcısının kısmi sınıf dosyası için kod ekleyere
   
  Düzenleyici içindeki TableAdapter herhangi bir değişiklik yapıldığında bir TableAdapter tanımlayan kod yeniden oluşturulursa **veri kümesi Tasarımcısı**, veya ne zaman bir sihirbaz bir TableAdapter yapılandırmasını değiştirir. Kodunuzu bir TableAdapter oluşturma işlemi sırasında silinmesini önlemek için TableAdapter bağdaştırıcısının kısmi sınıf dosyası için kodu ekleyin.  
   
- Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod sağlar. Daha fazla bilgi için [kısmi](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) veya [partial (tür)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
+ Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod sağlar. Daha fazla bilgi için [kısmi](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) veya [partial (tür)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
 ## <a name="locate-tableadapters-in-code"></a>TableAdapters kod içinde bulun  
  TableAdapter'ları ile tasarlandığında **veri kümesi Tasarımcısı**, oluşturulan TableAdapter sınıfları, iç içe sınıfları olmayan <xref:System.Data.DataSet>. TableAdapter'ları, TableAdapter bağdaştırıcısının ilişkili veri kümesinin adına dayalı bir ad alanında bulunur. Örneğin, uygulamanız adlı bir veri içeriyorsa `HRDataSet`, TableAdapter'ları bulunması `HRDataSetTableAdapters` ad alanı. (Bu deseni adlandırma kuralını izler: *DatasetName* + `TableAdapters`).  

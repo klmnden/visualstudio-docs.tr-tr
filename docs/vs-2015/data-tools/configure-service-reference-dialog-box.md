@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437023"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705185"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437023"
 **Hizmet başvurusu yapılandırma** iletişim kutusu davranışını yapılandırmanızı sağlar [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Hizmetleri.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Erişim için **hizmet başvurusu yapılandırma** iletişim kutusunda sağ tıklatıp hizmeti başvurusunun **Çözüm Gezgini** ve **hizmet başvurusu Yapılandır**. İletişim kutusunu tıklatarak da erişebilirsiniz **Gelişmiş** düğmesine **hizmet Başvurusu Ekle iletişim kutusunu**.  
   
@@ -63,10 +63,10 @@ ms.locfileid: "63437023"
  WCF hizmet yöntemleri zaman uyumlu olarak adlandırılan olup olmadığını belirler. (varsayılan) veya zaman uyumsuz olarak.  
   
  **Görev tabanlı işlemler oluştur**  
- Zaman uyumsuz kod yazarken, bu seçenek, görev paralel kitaplığı (sunulan TPL) .net 4 ile yararlanmanızı sağlar. Bkz: [görev paralel kitaplığı (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Zaman uyumsuz kod yazarken, bu seçenek, görev paralel kitaplığı (sunulan TPL) .net 4 ile yararlanmanızı sağlar. Bkz: [görev paralel kitaplığı (TPL)](https://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Her zaman ileti anlaşmaları oluştur**  
- İleti anlaşması türleri için bir WCF istemcisi oluşturulup oluşturulmayacağını belirler. İleti sözleşmeleri hakkında daha fazla bilgi için bkz: [kullanarak ileti sözleşmeleri](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
+ İleti anlaşması türleri için bir WCF istemcisi oluşturulup oluşturulmayacağını belirler. İleti sözleşmeleri hakkında daha fazla bilgi için bkz: [kullanarak ileti sözleşmeleri](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
   
  **Koleksiyon türü**  
  Bir WCF istemcisi için liste koleksiyon türünü belirtir. Varsayılan türü <xref:System.Array>.  
@@ -87,7 +87,7 @@ ms.locfileid: "63437023"
  Proje veya Web sitesi için başvurulan derlemelerin bir listesini içerir. Zaman **belirtilen bütünleştirilmiş kodlardaki türleri yeniden** seçildiğinde, tek tek derlemeleri seçilen veya temizlenen.  
   
  **Web Başvurusu Ekle**  
- Görüntüler [NIB: Web Başvurusu Ekle iletişim kutusu](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ Görüntüler [NIB: Web Başvurusu Ekle iletişim kutusu](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 > Bu seçenek, 2.0 sürümünü hedefleyen projeler için kullanılması gereken [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -96,6 +96,6 @@ ms.locfileid: "63437023"
 > **Web başvurusu Ekle'yi** düğmesidir yalnızca **hizmet başvurusu yapılandırma** gelen iletişim kutusu görüntülenir **hizmet Başvurusu Ekle iletişim kutusunu**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Ekleme, güncelleştirme veya hizmet başvurusunu Kaldır](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Nasıl yapılır: Bir Web hizmetine başvuru ekleme](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Nasıl yapılır: Ekleme, güncelleştirme veya hizmet başvurusunu Kaldır](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Nasıl yapılır: Bir Web hizmetine başvuru ekleme](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/configure-service-reference-dialog-box.md)

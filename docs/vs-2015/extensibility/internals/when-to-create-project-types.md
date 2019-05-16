@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687706"
 ---
 # <a name="when-to-create-project-types"></a>Proje Türlerinin Oluşturulacağı Durumlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCL
 |Görev|Açıklama|  
 |----------|-----------------|  
 |Komutları işleme|Herhangi bir VSPackage komutları işleyebilir.|  
-|Bir düzenleyici oluşturma|Özel düzenleyicilerde kaydedilebilir. Daha fazla bilgi için [belge Windows ve düzenleyicileri](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Bir düzenleyici oluşturma|Özel düzenleyicilerde kaydedilebilir. Daha fazla bilgi için [belge Windows ve düzenleyicileri](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Sahip olan Windows|Yeni bir proje türü eklemeden, hem araç ve belge pencereleri oluşturabilirsiniz.|  
 |Özellikler penceresinde özelliklerini gösterme|Tüm nesneleri özellikler getirebilir.|  
   
@@ -60,6 +60,6 @@ Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCL
  Proje alt türleri, yeni bir proje türünüzü oluşturmak zorunda kalmadan bir yönetilen proje türü genişletmek için kullanabilirsiniz. Proje alt türleri, Microsoft yazılan yönetilen projeleri genişletmek için COM toplama kullanın [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] veya [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. COM toplama, yönetilen proje sistemi uygulaması çoğunu yeniden kullanmak ve toplama ve kullanım arabirimleri destekleyen aracılığıyla belirli bir senaryo için yine de özelleştirebilirsiniz. Proje alt türleri hakkında daha fazla bilgi için bkz: [proje alt türleri](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Belge Windows ve düzenleyiciler](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Belge Windows ve düzenleyiciler](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio’da Hiyerarşiler](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689364"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ ms.locfileid: "63419748"
  **Araç kutusu** içinde çalıştığınız dosya türü için uygun olan öğeleri görüntüler. Daha fazla filtre uygulamak için araç kutusu içinde görüntülenen öğe arayabilirsiniz. Projenize istemci profili tarafından desteklenmeyen bir denetim gerekiyorsa, projenizin proje özelliklerini düzenleyerek tüm çerçeveyi hedeflemek üzere ayarlayabilirsiniz.  
   
 > [!NOTE]
-> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Araç kutusu sekmelerindeki Yardım  
  Aşağıdaki belgeler özel hakkında daha fazla bilgi sağlayan **araç kutusu** sekmeler.  
   
-- [Araç Kutusu, Veri Sekmesi](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Araç Kutusu, Veri Sekmesi](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [Araç Kutusu, Bileşenler Sekmesi](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Araç Kutusu, Bileşenler Sekmesi](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [Araç Kutusu, HTML Sekmesi](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Araç Kutusu, HTML Sekmesi](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [Araç Kutusu, Veri Sekmesi](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Araç Kutusu, Veri Sekmesi](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [Araç Kutusu, Bileşenler Sekmesi](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Araç Kutusu, Bileşenler Sekmesi](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [Araç Kutusu, HTML Sekmesi](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Araç Kutusu, HTML Sekmesi](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Kutusunu Kullanma](../../ide/using-the-toolbox.md)

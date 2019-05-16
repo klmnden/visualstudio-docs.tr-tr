@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679537"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11. Adım: Programınızı Çalıştırma ve Diğer Özellikleri Deneme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Renk iletişim kutusu
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
-- Visual Studio'da programlama hakkında daha fazla bilgi için bkz. [programlama kavramları](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Visual Studio'da programlama hakkında daha fazla bilgi için bkz. [programlama kavramları](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
-- Visual Basic hakkında daha fazla bilgi için bkz: [Visual Basic ile uygulama geliştirme](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Visual Basic hakkında daha fazla bilgi için bkz: [Visual Basic ile uygulama geliştirme](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
-- Visual C# hakkında bilgi edinmek için bkz. [C# dili ve .NET Framework Giriş](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Visual C# hakkında bilgi edinmek için bkz. [C# dili ve .NET Framework Giriş](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
 - Sonraki eğitime gitmek için bkz: [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   

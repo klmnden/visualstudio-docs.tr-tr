@@ -12,12 +12,12 @@ ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b11a6a9f3474b2cc7b6331b56fa8fd7dd2d7301
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f364b6aa622bf9c7481d61e7646e955cebe00933
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695396"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirim için bir özel durum hata ayıklaması yapılan programa oluştu rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
+ Bu arabirim için bir özel durum hata ayıklaması yapılan programa oluştu rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  KODU oluşturur ve bu olay bir özel durum rapor nesnesine gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  

@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675912"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bağlayarak uygulamanızın kullanıcılarına veri gösterebilirsiniz [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] kontrol eder. Bu verilere bağlı denetimler oluşturmak için öğeleri sürükleyebilirsiniz **veri kaynakları** penceresinden [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu konuda en yaygın görevleri, araçları ve verilere bağlı oluşturmak için kullanabileceğiniz sınıfların bazılarını açıklar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] uygulamalar.
 
- İçinde verilere bağlı denetimler oluşturma hakkında genel bilgi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md). Hakkında daha fazla bilgi için [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] veri bağlaması bkz [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ İçinde verilere bağlı denetimler oluşturma hakkında genel bilgi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], bkz: [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md). Hakkında daha fazla bilgi için [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] veri bağlaması bkz [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>WPF denetimlerini verilere bağlamada kullanılan görevler
  Aşağıdaki tabloda sürükleyerek gerçekleştirilebilir görevleri listeler **veri kaynakları** penceresine [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
@@ -98,7 +98,7 @@ Bağlayarak uygulamanızın kullanıcılarına veri gösterebilirsiniz [!INCLUDE
  Bir nesneyi veya özelliği sürüklediğinizde **veri kaynakları** penceresinden tasarımcıya, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] verilere bağlı bir denetim oluşturur (veya varolan bir denetimi nesneye veya özelliğe bağlar). Ancak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nesneyi verilerle doldurmak için kod oluşturmaz. Bu kodu kendiniz yazmalısınız.
 
 > [!NOTE]
-> Özel sınıflar genel olmalıdır ve, varsayılan olarak, parametresiz bir oluşturucusu vardır. Sözdizimlerinde "dot" sahip iç içe sınıflar olamazlar. Daha fazla bilgi için [XAML ve özel sınıflar için WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Özel sınıflar genel olmalıdır ve, varsayılan olarak, parametresiz bir oluşturucusu vardır. Sözdizimlerinde "dot" sahip iç içe sınıflar olamazlar. Daha fazla bilgi için [XAML ve özel sınıflar için WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oluşturur [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] aşağıdakileri yapar:
 

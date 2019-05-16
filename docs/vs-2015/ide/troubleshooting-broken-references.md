@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a436ffa96e6ca86479bdb5b4f91e30c386acc1a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689303"
 ---
 # <a name="troubleshooting-broken-references"></a>Bozuk Başvurularda Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   Bu sorunları çözümler aşağıda verilmiştir.  
   
 > [!NOTE]
-> Derlemelerde dosyaları, proje dosyasındaki mutlak yollar ile başvurulur. Bu nedenle, başvurulan bir derlemenin yerel ortamlarında eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için projeden projeye başvurular eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) ve [Derlemelerle programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Derlemelerde dosyaları, proje dosyasındaki mutlak yollar ile başvurulur. Bu nedenle, başvurulan bir derlemenin yerel ortamlarında eksik geliþtiricili ortamında çalışan kullanıcıların mümkündür. Bu hataları önlemek için projeden projeye başvurular eklemek için bu gibi durumlarda daha iyi olur. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) ve [Derlemelerle programlama](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Başvuru yolu yanlış  
  Farklı bilgisayarlarda Paylaşılan projeleri, bir bileşen farklı bir dizinde her bilgisayarda bulunan, bazı başvuruları bulunmayabilir. Başvurular (örneğin, MyComponent) bileşen dosyası adı altında depolanır. Bir projeye bir başvuru eklendiğinde, Bileşen dosyası klasör konumuna (örneğin, C:\MyComponents\\) eklenir **ReferencePath** proje özelliği.  
@@ -73,7 +73,7 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   
 - Başvuru bilgisayarınızda başka bir konum varsa, o konumdan okuyun.  
   
-- Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Başvurulan dosya yeniden adlandırıldı  
  Bu, başvurulan dosya yeniden adlandırıldı mümkündür.  
@@ -82,15 +82,15 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   
 - Başvuru silin ve ardından yeniden adlandırılan dosyaya bir başvuru ekleyin.  
   
-- Başvuru bilgisayarınızda başka bir konum varsa, onu o konumdan okumak zorundasınız. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Başvuru bilgisayarınızda başka bir konum varsa, onu o konumdan okumak zorundasınız. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Ağ bağlantısı veya kimlik doğrulaması başarısız oldu  
- Erişilemeyen dosyalar için birçok olası nedenleri şunlar olabilir: başarısız bir ağ bağlantısı veya örneğin başarısız bir kimlik doğrulama. Her bir nedenden kurtarma benzersiz bir çeşit olabilir; Örneğin, gerekli kaynaklara erişim için yerel yönetici başvurmanız gerekebilir. Ancak, başvuru silme ve onu kullanan kod çözme her zaman bir seçenektir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+ Erişilemeyen dosyalar için birçok olası nedenleri şunlar olabilir: başarısız bir ağ bağlantısı veya örneğin başarısız bir kimlik doğrulama. Her bir nedenden kurtarma benzersiz bir çeşit olabilir; Örneğin, gerekli kaynaklara erişim için yerel yönetici başvurmanız gerekebilir. Ancak, başvuru silme ve onu kullanan kod çözme her zaman bir seçenektir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="com-component-is-not-installed-on-computer"></a>COM bileşeni bilgisayarda yüklü değil  
- Bir kullanıcı bir COM bileşenine bir başvuru eklemiştir ve bu bileşeni yüklü olmayan bir bilgisayarda kodu çalıştırmak ikinci bir kullanıcı çalışırsa, ikinci kullanıcı başvuru bozuk olduğunu belirten bir hata alırsınız. Bileşeni, ikinci bilgisayara yükleniyor. hatayı düzeltin. COM bileşenleri başvurular projelerinizde kullanma hakkında daha fazla bilgi için bkz. [.NET Framework uygulamalarında COM birlikte çalışabilirliği](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
+ Bir kullanıcı bir COM bileşenine bir başvuru eklemiştir ve bu bileşeni yüklü olmayan bir bilgisayarda kodu çalıştırmak ikinci bir kullanıcı çalışırsa, ikinci kullanıcı başvuru bozuk olduğunu belirten bir hata alırsınız. Bileşeni, ikinci bilgisayara yükleniyor. hatayı düzeltin. COM bileşenleri başvurular projelerinizde kullanma hakkında daha fazla bilgi için bkz. [.NET Framework uygulamalarında COM birlikte çalışabilirliği](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Proje Tasarımcısı giriş](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Başvurular sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [NIB nasıl yapılır: Başvuru Ekle iletişim kutusunu kullanarak başvuruları kaldırın veya ekleyin](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+ [NIB nasıl yapılır: Başvuru Ekle iletişim kutusunu kullanarak başvuruları kaldırın veya ekleyin](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

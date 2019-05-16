@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686036"
 ---
 # <a name="rename-refactoring-c"></a>Yeniden Düzenlemeyi (C#) yeniden adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439950"
 |-----------------|----------------------|  
 |Alan|Bildirimler ve kullanımları alan yeni bir adla değiştirir.|  
 |yerel değişken|Bildirimler ve değişken kullanımları yeni bir adla değiştirir.|  
-|Yöntem|Yeni bir adla adı yöntemi ve bu yöntem tüm başvurularını değiştirir. **Not:**  Bir genişletme yöntemi yeniden adlandırdığınızda, yöntem kapsamda genişletme yöntemi statik bir yöntem veya bir örnek yöntemi kullanılıp kullanılmadığı bağımsız olarak tüm örneklerini yeniden adlandırma işlemi yayar. Daha fazla bilgi için [genişletme yöntemleri](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Yöntem|Yeni bir adla adı yöntemi ve bu yöntem tüm başvurularını değiştirir. **Not:**  Bir genişletme yöntemi yeniden adlandırdığınızda, yöntem kapsamda genişletme yöntemi statik bir yöntem veya bir örnek yöntemi kullanılıp kullanılmadığı bağımsız olarak tüm örneklerini yeniden adlandırma işlemi yayar. Daha fazla bilgi için [genişletme yöntemleri](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Ad Alanı|Yeni adın bildiriminde ad değişikliklerini tüm `using` deyimleri ve tam olarak nitelenmiş adlar. **Not:**  Bir ad alanı yeniden adlandırılırken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de güncelleştirir **varsayılan Namespace** özelliği **uygulama** sayfasının **Proje Tasarımcısı**. Bu özellik, seçerek sıfırlanamaz **geri** gelen **Düzenle** menüsü. Sıfırlamak için **varsayılan Namespace** özellik değeri özelliğinde değiştirmelisiniz **Proje Tasarımcısı**. Daha fazla bilgi için [uygulama sayfası](../ide/reference/application-page-project-designer-csharp.md).|  
 |Özellik|Bildirimler ve kullanımları özelliğinin yeni ad ile değiştirir.|  
 |Tür|Tüm bildirimleri ve türdeki tüm kullanımları oluşturucular ve Yıkıcılar dahil olmak üzere yeni ad ile değiştirir. Kısmi türler için yeniden adlandırma işlemi için tüm bölümleri yayılır.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yeniden düzenlemesi (C#)](../csharp-ide/refactoring-csharp.md)   
- [Anonim Tipler](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Anonim Tipler](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

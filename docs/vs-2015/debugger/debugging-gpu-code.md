@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434872"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691563"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ## <a name="troubleshooting"></a>Sorun giderme  
   
 ### <a name="specifying-an-accelerator"></a>Bir Hızlandırıcı belirtme  
- Kod çalışıyorsa, GPU kodda kesme noktaları isabet yalnızca [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) Hızlandırıcı. Kodunuzda bir Hızlandırıcı belirtmezseniz, REF Hızlandırıcı olarak otomatik olarak seçilir **hata ayıklama Hızlandırıcı türü** proje özelliklerinde. Kodunuzu açıkça bir Hızlandırıcı seçerse, REF Hızlandırıcı, hata ayıklama sırasında kullanılmaz ve hata ayıklama desteği, GPU donanım sahip olmadığı sürece kesme noktaları isabet edilmeyecektir. Hata ayıklama sırasında REF Hızlandırıcısını kullanır, böylece kod yazarak bunu çözebilirsiniz. Daha fazla bilgi için bkz: Proje özelliklerini ve [Hızlandırıcı ve accelerator_view nesnelerini kullanma](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) ve [proje ayarları bir C++ hata ayıklama Yapılandırması](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Kod çalışıyorsa, GPU kodda kesme noktaları isabet yalnızca [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) Hızlandırıcı. Kodunuzda bir Hızlandırıcı belirtmezseniz, REF Hızlandırıcı olarak otomatik olarak seçilir **hata ayıklama Hızlandırıcı türü** proje özelliklerinde. Kodunuzu açıkça bir Hızlandırıcı seçerse, REF Hızlandırıcı, hata ayıklama sırasında kullanılmaz ve hata ayıklama desteği, GPU donanım sahip olmadığı sürece kesme noktaları isabet edilmeyecektir. Hata ayıklama sırasında REF Hızlandırıcısını kullanır, böylece kod yazarak bunu çözebilirsiniz. Daha fazla bilgi için bkz: Proje özelliklerini ve [Hızlandırıcı ve accelerator_view nesnelerini kullanma](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) ve [proje ayarları bir C++ hata ayıklama Yapılandırması](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Koşullu kesme noktaları  
  GPU kodunda koşullu kesme noktaları desteklenir ancak her ifade cihazda değerlendirilebilir. Cihazda bir ifade değerlendirilemiyor, hata ayıklayıcıyı değerlendirilir. Hata ayıklayıcı, cihaz daha yavaş çalışmasına olasıdır.  
@@ -83,6 +83,6 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
  Windows zaman aşımı algılama ve kurtarma işlemi (TDR) tarafından ayarlanmış varsayılan zaman aralığını aşan C++ AMP hesaplamalar için mümkündür. Bu durum oluştuğunda, hesaplama iptal edilir ve veriler kaybolur. Daha fazla bilgi için [işleme TDRs C++ amp'de](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [İzlenecek yol: C++ AMP uygulamasında hata ayıklama](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Visual Studio GPU hata ayıklamayı Başlat](http://go.microsoft.com/fwlink/p/?LinkId=255381)

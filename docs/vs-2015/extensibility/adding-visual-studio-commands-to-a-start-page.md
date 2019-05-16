@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429009"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699162"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Başlangıç Sayfasına Visual Studio Komutları Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Özel başlangıç sayfası oluşturduğunuzda, Visual Studio komutları ekleyebilirsiniz. Bu belge, Visual Studio komutları bir başlangıç sayfası XAML nesnelerde bağlamak için farklı yolları açıklanmaktadır.  
   
- XAML içindeki komutlar hakkında daha fazla bilgi için bkz. [komut vermeye genel genel bakış](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ XAML içindeki komutlar hakkında daha fazla bilgi için bkz. [komut vermeye genel genel bakış](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Komuttan da komut ekleme  
  Başlangıç sayfası oluşturulan [bir özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md) eklenen <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> ve <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> ad alanları, aşağıdaki gibi.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>DTE nesnesi ile komut ekleme  
  Bir başlangıç sayfası, hem işaretleme ve kod DTE nesnesine erişebilir.  
   
- Biçimlendirme içinde kullanarak erişebildiğinizden [biçimlendirme uzantısı bağlama](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) çağırmak için söz dizimi <xref:EnvDTE.DTE> nesne. Koleksiyonları döndüren olanlar gibi basit özelliklerine bağlamak için bu yaklaşımı kullanabilirsiniz, ancak yöntemler veya hizmetlerine bağlanamıyor. Aşağıdaki örnekte gösterildiği bir <xref:System.Windows.Controls.TextBlock> bağlar denetim <xref:EnvDTE._DTE.Name%2A> özelliği ve <xref:System.Windows.Controls.ListBox> numaralandırır denetimin <xref:EnvDTE.Window.Caption%2A> tarafından döndürülen koleksiyon özellikleri <xref:EnvDTE._DTE.Windows%2A> özelliği.  
+ Biçimlendirme içinde kullanarak erişebildiğinizden [biçimlendirme uzantısı bağlama](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) çağırmak için söz dizimi <xref:EnvDTE.DTE> nesne. Koleksiyonları döndüren olanlar gibi basit özelliklerine bağlamak için bu yaklaşımı kullanabilirsiniz, ancak yöntemler veya hizmetlerine bağlanamıyor. Aşağıdaki örnekte gösterildiği bir <xref:System.Windows.Controls.TextBlock> bağlar denetim <xref:EnvDTE._DTE.Name%2A> özelliği ve <xref:System.Windows.Controls.ListBox> numaralandırır denetimin <xref:EnvDTE.Window.Caption%2A> tarafından döndürülen koleksiyon özellikleri <xref:EnvDTE._DTE.Windows%2A> özelliği.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

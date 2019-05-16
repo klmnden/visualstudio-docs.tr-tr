@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686766"
 ---
 # <a name="debugger-windows"></a>Windows hata ayıklayıcı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Programınızın hata ayıklama sırasında çoğu hata ayıklayıcı penceresin
 |Paralel izleme|CTRL: + SHIFT + D, (1, 2, 3, 4)|[Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)|  
 |İzleme|CTRL + ALT + W, (1, 2, 3, 4)|[İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT + F9|[İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)|  
-|Otomatik|CTRL+ALT+V, A|[Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Yerel öğeler|CTRL+ALT+V, L|[Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Otomatik|CTRL+ALT+V, A|[Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Yerel öğeler|CTRL+ALT+V, L|[Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Hemen|CTRL+ALT+I|[Komut Penceresi](../ide/reference/immediate-window.md)|  
-|Python etkileşimli hata ayıklama|SHIFT+ALT+I|[PTVS kullanmaya Başlarken: Etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python etkileşimli hata ayıklama|SHIFT+ALT+I|[PTVS Kullanmaya Başlama: Etkileşimli Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript Konsolu|CTRL+ALT+V, C|[Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM Gezgini|CTRL+ALT+V, D|[DOM Gezgini'ni kullanarak düzen hatalarını ayıklama](../debugger/debug-layout-using-dom-explorer.md)|  
 |Canlı görsel ağaç|-|[Hata ayıklama sırasında XAML özelliklerini denetleme](../debugger/inspect-xaml-properties-while-debugging.md)|  

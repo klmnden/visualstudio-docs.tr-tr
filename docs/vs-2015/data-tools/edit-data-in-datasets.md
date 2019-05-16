@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425381"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699776"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Bir veri kümesine satırlar eklemek için  
- Verilere bağlı denetimler genellikle kullanan uygulamalar üzerinden yeni kayıt ekleme **yeni Ekle** düğmesini bir [BindingNavigator denetimine](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Verilere bağlı denetimler genellikle kullanan uygulamalar üzerinden yeni kayıt ekleme **yeni Ekle** düğmesini bir [BindingNavigator denetimine](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  El ile yeni kayıtlar ekleme için yeni bir veri satırı üzerinde DataTable yöntemi çağırarak oluşturun. Satıra eklersiniz <xref:System.Data.DataRow> koleksiyon (<xref:System.Data.DataTable.Rows%2A>), <xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
 - Her değiştirilen veri satırı o satırın birden çok sürümünü içerir (<xref:System.Data.DataRowVersion>), özgün sürüm (değişikliklerden önce) ve geçerli sürümü (değişikliklerden sonra). Bir değişiklik olduğunda Beklemede olduğu süre boyunca (ne zaman yanıt süresi <xref:System.Data.DataTable.RowChanging> olay), üçüncü bir sürüm — önerilen sürüm — de kullanılabilir.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Yöntemi bir veri kümesinin döndürür `true` kümesinde değişiklik yapılmadıysa. Değiştirilen satırların var olduğunu belirledikten sonra çağırabilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable> değiştirilen satırlar kümesini geri dönmek için. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Yöntemi bir veri kümesinin döndürür `true` kümesinde değişiklik yapılmadıysa. Değiştirilen satırların var olduğunu belirledikten sonra çağırabilirsiniz `GetChanges` yöntemi bir <xref:System.Data.DataSet> veya <xref:System.Data.DataTable> değiştirilen satırlar kümesini geri dönmek için. Daha fazla bilgi için [nasıl yapılır: Değiştirilen satırları alma](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Bir satırda değişiklik yapılıp yapılmadığını belirlemek için  
   

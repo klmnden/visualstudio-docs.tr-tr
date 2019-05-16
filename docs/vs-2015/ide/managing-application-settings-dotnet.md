@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114814"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675007"
 ---
 # <a name="managing-application-settings-net"></a>Uygulama Ayarlarını Yönetme
 
@@ -59,7 +59,7 @@ Kullanıcı kapsamlı (örneğin, varsayılan yazı tipi, giriş sayfası veya p
 >
 > Bağlantı dizesi bilgilerini bir dış kaynaktan izlerseniz, bir kullanıcı kimliği ve parolası, dikkatli olmalıdır sağlayan bir kullanıcı gibi bağlantınızı oluşturmak için kullandığınız değerleri emin olmak için dize içermiyor ek bağlantı dizesi parametreleri bağlantınızı davranışını değiştirebilirsiniz.
 >
-> Yapılandırma dosyasındaki hassas bilgileri şifrelemek için korumalı yapılandırma özelliğini kullanmayı düşünün. Bkz: [bağlantı bilgilerini koruma](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) daha fazla bilgi için.
+> Yapılandırma dosyasındaki hassas bilgileri şifrelemek için korumalı yapılandırma özelliğini kullanmayı düşünün. Bkz: [bağlantı bilgilerini koruma](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) daha fazla bilgi için.
 
 > [!NOTE]
 > Sınıf kitaplıkları için bir yapılandırma dosyası modeli olmadığından, uygulama ayarları sınıf kitaplığı projeleri için geçerli değildir. Bir yapılandırma dosyası olabilen DLL Office projesi için Visual Studio Araçları istisnadır.
@@ -74,7 +74,7 @@ Ayarlar Tasarımcısı önce proje sisteminin oluşturduğu Settings.settings do
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Uygulama ayarlarına erişme veya Visual Basic'te çalışma zamanında uygulama ayarlarını değiştirme
 
-İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri kullanarak çalışma zamanında uygulama ayarlarına erişebilirsiniz `My.Settings` nesne. Üzerinde **ayarları** sayfasında **kod** Settings.vb dosyasını görüntülemek için düğme. Settings.vb tanımlar `Settings` ayarlar sınıfındaki bu olayları işlemenizi sağlar sınıfını: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, ve <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Dikkat `Settings` Settings.vb sınıfı, yalnızca kullanıcıya ait kodu tüm oluşturulan sınıfı değil görüntüleyen bir parçalı sınıf. Kullanarak uygulama ayarlarına erişme hakkında daha fazla bilgi için `My.Settings` nesne, bkz: [uygulama ayarlarına erişme](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri kullanarak çalışma zamanında uygulama ayarlarına erişebilirsiniz `My.Settings` nesne. Üzerinde **ayarları** sayfasında **kod** Settings.vb dosyasını görüntülemek için düğme. Settings.vb tanımlar `Settings` ayarlar sınıfındaki bu olayları işlemenizi sağlar sınıfını: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, ve <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Dikkat `Settings` Settings.vb sınıfı, yalnızca kullanıcıya ait kodu tüm oluşturulan sınıfı değil görüntüleyen bir parçalı sınıf. Kullanarak uygulama ayarlarına erişme hakkında daha fazla bilgi için `My.Settings` nesne, bkz: [uygulama ayarlarına erişme](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 (Örneğin, formun konumu) çalışma zamanında kullanıcı değiştirdiği kullanıcı kapsamlı ayarların değerleri user.config dosyasında depolanır. Varsayılan değerlerin hala app.config dosyasında kaydedildiğine dikkat edin.
 
@@ -98,8 +98,8 @@ Aynı zamanda açıkça çağırmalıdır `Save` kullanıcı ayarlarını koruma
 Properties.Settings.Default.Save();
 ```
 
-Üzerinden uygulama ayarlarına erişme hakkında genel bilgi `Settings` sınıfı [uygulama ayarlarına genel bakış](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Ayarlar üzerinden yineleme hakkında daha fazla bilgi için bkz. Bu [forum gönderisi](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Üzerinden uygulama ayarlarına erişme hakkında genel bilgi `Settings` sınıfı [uygulama ayarlarına genel bakış](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Ayarlar üzerinden yineleme hakkında daha fazla bilgi için bkz. Bu [forum gönderisi](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Uygulama Ayarlarına Erişme](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Uygulama Ayarlarına Erişme](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

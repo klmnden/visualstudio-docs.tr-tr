@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695886"
 ---
 # <a name="t4-template-directive"></a>T4 Şablon Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 metin şablonu genellikle baş
  `compilerOptions="optimize+"`  
   
  Geçerli değerler:  
- Tüm geçerli derleyici seçenekleri. Daha fazla bilgi için [C# derleyici seçenekleri kategoriye göre listelenmiş](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) ve [Visual Basic derleyici seçenekleri listelenen kategoriye göre](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Tüm geçerli derleyici seçenekleri. Daha fazla bilgi için [C# derleyici seçenekleri kategoriye göre listelenmiş](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) ve [Visual Basic derleyici seçenekleri listelenen kategoriye göre](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Çalışma zamanı (önceden işlenmiş) şablonları için yok sayılır.  
   

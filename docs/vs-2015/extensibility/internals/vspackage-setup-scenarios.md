@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09b794a6cd81966df45a1b30182040d7ab9335e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696751"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage Kurulum Senaryoları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ VSPackage yükleyicinizi esneklik tasarlamak önemlidir. Örneğin, bir güvenli
 ## <a name="components-privacy-and-sharing"></a>Bileşenler, gizlilik ve paylaşma  
   
 ##### <a name="make-your-components-independent"></a>Bileşenlerinizin bağımsız olun  
- Tanımlamak ve doldurmak bir bileşen sonra Ata bir `GUID`ve bileşen dağıtmak, kendi bileşim değiştiremezsiniz. Bir bileşenin bileşim değiştirirseniz, yeni bir bileşen yeni bir sonuç bileşeni olmalıdır `GUID`. Bu bilgiler verildiğinde, her bileşen birimini bağımsız ve kendi sağlayarak en büyük sürüm oluşturma esnekliği gösterilen. Bileşenleri yöneten kurallar hakkında daha fazla bilgi için bkz: [bileşeni kodunun değiştirilmesi](http://msdn.microsoft.com/library/aa367849\(VS.85\).aspx) ve [ne olur bileşen kuralları bozuk olduğu?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).  
+ Tanımlamak ve doldurmak bir bileşen sonra Ata bir `GUID`ve bileşen dağıtmak, kendi bileşim değiştiremezsiniz. Bir bileşenin bileşim değiştirirseniz, yeni bir bileşen yeni bir sonuç bileşeni olmalıdır `GUID`. Bu bilgiler verildiğinde, her bileşen birimini bağımsız ve kendi sağlayarak en büyük sürüm oluşturma esnekliği gösterilen. Bileşenleri yöneten kurallar hakkında daha fazla bilgi için bkz: [bileşeni kodunun değiştirilmesi](https://msdn.microsoft.com/library/aa367849\(VS.85\).aspx) ve [ne olur bileşen kuralları bozuk olduğu?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).  
   
 ##### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Bir bileşen içinde paylaşılan ve özel kaynakları karıştırmamanızı  
  Başvuru sayımı, bileşen düzeyinde gerçekleşir. Sonuç olarak, paylaşılan ve özel kaynakların bir bileşende karıştırma olanaksız bir yürütülebilir dosya gibi özel kaynaklar da paylaşılan kaynakları yazmadan güncelleştirme yapar. Bu senaryo, geriye dönük uyumluluk sorunları oluşturur ve yan yana özellik oluşturmaktan kısıtlar.  
@@ -37,7 +37,7 @@ VSPackage yükleyicinizi esneklik tasarlamak önemlidir. Örneğin, bir güvenli
  Örneğin, kayıt defteri değerlerini kullanılan, VSPackage ile kaydetmek için [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] bir bileşeni, VSPackage ile kaydetmek için kullanılan birinden ayrı olarak tutulmalıdır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Paylaşılan dosyalar veya kayıt defteri değerlerini başka bir bileşenin gidin.  
   
 ## <a name="scenario-1-shared-vspackage"></a>Senaryo 1: Paylaşılan VSPackage'ı  
- Bu senaryoda, paylaşılan bir VSPackage'ı (birden çok sürümünü destekleyen tek bir ikili [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]) bir Windows yükleyici paketinde sevk edilir. Her sürümü ile kaydetme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı tarafından seçilebilen özellikleri tarafından denetlenir. Ayrıca özellikleri ayırmak için atandığında, her bir bileşeni ayrı ayrı yüklenmesi ve kaldırılması, kullanıcı denetimi VSPackage'nün farklı sürümlerini tümleştirme koymak için seçilebileceğini gösterir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. (Bkz [Windows Yükleyici'nin özellikleri](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) Windows yükleyici paketinde özelliklerini kullanma hakkında daha fazla bilgi için.)  
+ Bu senaryoda, paylaşılan bir VSPackage'ı (birden çok sürümünü destekleyen tek bir ikili [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]) bir Windows yükleyici paketinde sevk edilir. Her sürümü ile kaydetme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanıcı tarafından seçilebilen özellikleri tarafından denetlenir. Ayrıca özellikleri ayırmak için atandığında, her bir bileşeni ayrı ayrı yüklenmesi ve kaldırılması, kullanıcı denetimi VSPackage'nün farklı sürümlerini tümleştirme koymak için seçilebileceğini gösterir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. (Bkz [Windows Yükleyici'nin özellikleri](https://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) Windows yükleyici paketinde özelliklerini kullanma hakkında daha fazla bilgi için.)  
   
  ![VS Paylaşılan VSPackage grafiği](../../extensibility/internals/media/vs-sharedpackage.gif "VS_SharedPackage")  
 Paylaşılan VSPackage yükleyici  
@@ -45,7 +45,7 @@ Paylaşılan VSPackage yükleyici
  Çizimde gösterildiği gibi paylaşılan bileşenler her zaman yüklü Feat_Common özelliğinin bir parçası olarak yapılır. Feat_VS2002 ve Feat_VS2003 özellikleri görünür hale getirerek kullanıcıların hangi sürümlere yükleme sırasında seçebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage'ı tümleştirmek için istedikleri. Kullanıcılar ayrıca kullanabilir Windows Installer Bakım modu ekleyip özellikleri, bu durumda ekler veya VSPackage kayıt bilgilerini farklı sürümlerinden kaldırır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
-> Bir özelliğin görüntü sütunu 0 olarak ayarlanması gizler. 1 gibi bir alt düzey sütun değeri her zaman yüklenecek sağlar. Daha fazla bilgi için [INSTALLLEVEL özelliği](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) ve [özellik tablosu](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Bir özelliğin görüntü sütunu 0 olarak ayarlanması gizler. 1 gibi bir alt düzey sütun değeri her zaman yüklenecek sağlar. Daha fazla bilgi için [INSTALLLEVEL özelliği](https://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) ve [özellik tablosu](https://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Senaryo 2: Paylaşılan VSPackage'ı güncelleştirme  
  Bu senaryoda, Senaryo 1 VSPackage yükleyicide güncelleştirilmiş bir sürümünü sevk edilir. Tartışma için güncelleştirme için destek ekler [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ancak daha basit bir güvenlik düzeltme eki veya hata düzeltmesi hizmet paketi olabilir. Zaten sistemde değişmeden bileşenleri değil yeniden yeni bileşenleri yüklemek için Windows Installer'ın kuralları zorunlu kılar. Bu durumda, sürüm 1.0 zaten sistemiyle güncelleştirilen bileşenin Comp_MyVSPackage.dll üzerine ve kullanıcıların kendi bileşeniyle Comp_VS2005_Reg Feat_VS2005 yeni özellik eklemek seçin.  
@@ -56,7 +56,7 @@ Paylaşılan VSPackage yükleyici
  ![VS VS paket güncelleştirme resmi paylaşılan](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 VSPackage'ı güncelleştirme yükleyicisi paylaşılan  
   
- Bu senaryo yeni bir VSPackage yükleyici, küçük yükseltmeler için Windows Installer'ın destek avantajlarını sunar. Kullanıcılar yalnızca sürüm 1.1 yükleyin ve sürüm 1.0 yükseltir. Ancak, sistemdeki sürüm 1.0 gerekli değildir. Aynı Yükleyici sürüm 1.1, 1.0 sürümü olmadan bir sistemde yükler. Bu şekilde Küçük yükseltmeler sağlamayı avantajı, bir yükseltme yükleyici ve bir tam ürün yükleyicisi geliştirme iş gitmek gerekli değildir, ' dir. Bir yükleyici, her iki iş yapar. Bir güvenlik düzeltme ya da hizmet paketi kaybolabileceğini bunun yerine Windows Installer düzeltme eklerinin avantajlarından yararlanın. Daha fazla bilgi için [düzeltme eki uygulama ve yükseltmeler](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
+ Bu senaryo yeni bir VSPackage yükleyici, küçük yükseltmeler için Windows Installer'ın destek avantajlarını sunar. Kullanıcılar yalnızca sürüm 1.1 yükleyin ve sürüm 1.0 yükseltir. Ancak, sistemdeki sürüm 1.0 gerekli değildir. Aynı Yükleyici sürüm 1.1, 1.0 sürümü olmadan bir sistemde yükler. Bu şekilde Küçük yükseltmeler sağlamayı avantajı, bir yükseltme yükleyici ve bir tam ürün yükleyicisi geliştirme iş gitmek gerekli değildir, ' dir. Bir yükleyici, her iki iş yapar. Bir güvenlik düzeltme ya da hizmet paketi kaybolabileceğini bunun yerine Windows Installer düzeltme eklerinin avantajlarından yararlanın. Daha fazla bilgi için [düzeltme eki uygulama ve yükseltmeler](https://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
   
 ## <a name="scenario-3-side-by-side-vspackage"></a>Senaryo 3: Yan yana VSPackage'ı  
  Bu senaryo iki VSPackage yükleyici sunar — Visual Studio .NET 2003'ün her sürümü için bir tane ve [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Yan yana veya özel, VSPackage her yükleyici yükler (özel olarak oluşturduğu ve belirli bir sürümü için yüklü bir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]). Her VSPackage'ı kendi bileşenidir. Sonuç olarak, her tek tek düzeltme ekleri veya bakım ile hizmet verilebilir serbest bırakır. VSPackage DLL artık sürüme özgü olduğundan, aynı bileşeni DLL olarak kayıt bilgileri dahil güvenlidir.  
@@ -74,8 +74,8 @@ Yan yana VSPackage yükleyici
  ![VS Yan&#45;tarafından&#45;yan VS Paketi güncelleştirme grafiği](../../extensibility/internals/media/vs-sbys-packageupdate.gif "VS_SbyS_PackageUpdate")  
 Yan yana VSPackage güncelleştirme yükleyicisi  
   
- **Not** yan yana derlemelerin dağıtımı hakkında daha fazla bilgi için bkz. [dağıtım basitleştirme ve .NET Framework ile çözme DLL cehennemi](http://msdn.microsoft.com/library/ms973843.aspx).  
+ **Not** yan yana derlemelerin dağıtımı hakkında daha fazla bilgi için bkz. [dağıtım basitleştirme ve .NET Framework ile çözme DLL cehennemi](https://msdn.microsoft.com/library/ms973843.aspx).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Visual Studio'nun Birden Çok Sürümünü Destekleme](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

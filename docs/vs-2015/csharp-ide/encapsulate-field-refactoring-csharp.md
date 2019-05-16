@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681383"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Alan Yeniden Düzenlemesini Yalıtma (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Yalıt** yeniden düzenleme işlemi sayesinde hızlı bir şekilde mevcut bir alandan bir özellik oluşturmak ve sorunsuz bir şekilde kodunuzu başvuruları yeni özelliği ile güncelleştirin.  
   
- Olduğunda bir [alan](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) olduğu [genel](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), diğer nesneler için söz konusu alanı doğrudan erişime sahip ve bu alanı sahibi nesne tarafından algılanamayan bunu değiştirebilirsiniz. Kullanarak [özellikleri](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) o alanı kapsüllemek için alanlar doğrudan erişimi engelleyebilirsiniz.  
+ Olduğunda bir [alan](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) olduğu [genel](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), diğer nesneler için söz konusu alanı doğrudan erişime sahip ve bu alanı sahibi nesne tarafından algılanamayan bunu değiştirebilirsiniz. Kullanarak [özellikleri](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) o alanı kapsüllemek için alanlar doğrudan erişimi engelleyebilirsiniz.  
   
- Yeni bir özellik oluşturmak için **Yalıt** işlemi için yalıtılacak istediğiniz alanı ait erişim değiştiricisinin değişiklikleri [özel](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)ve ardından oluşturur [alma](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)ve [ayarlayın](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) Bu alan için erişimcileri. Bazı durumlarda, yalnızca bir `get` erişimci oluşturulur, zaman alan salt okunur bildirildiği gibi.  
+ Yeni bir özellik oluşturmak için **Yalıt** işlemi için yalıtılacak istediğiniz alanı ait erişim değiştiricisinin değişiklikleri [özel](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)ve ardından oluşturur [alma](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)ve [ayarlayın](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) Bu alan için erişimcileri. Bazı durumlarda, yalnızca bir `get` erişimci oluşturulur, zaman alan salt okunur bildirildiği gibi.  
   
  Kodunuzu düzenleme altyapısı belirtilen alanlarda yeni özellik başvurularını güncelleştirir **güncelleştirme başvuruları** bölümünü **Yalıt** iletişim kutusu.  
   

@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782679"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687474"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer ile VSPackage Yükleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 İçinde VSPackage'ı tümleştirme [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] daha fazlasını bir kullanıcının bilgisayarına dosyaları kopyalama gerektirir. VSPackage'nın yükleyici gerekir VSPackage'ı ve onun bağımlı dosyaları yüklemek ve kaydettirmek ve bunları tümleştirmek [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. VSPackage'ı bir simge görüntülemek gibi tümleştirme özellikleri yararlanabilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tanıtım ekran ve hakkında kutusu.  
   
- Microsoft Windows Installer dosyaları, VSPackage'ları dağıtmak için önerilen yoldur. Kullanımı kolay Windows Installer paketleri tarafından desteklenen tüm Windows işletim sistemlerinde çalışabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Microsoft Windows Installer dosyaları, VSPackage'ları dağıtmak için önerilen yoldur. Kullanımı kolay Windows Installer paketleri tarafından desteklenen tüm Windows işletim sistemlerinde çalışabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Temel Windows Installer Bilgileri](../../extensibility/internals/windows-installer-basics.md)  
@@ -50,7 +50,7 @@ ms.locfileid: "54782679"
  [Proje Türlerini Dağıtma](../../extensibility/internals/deploying-project-types.md)  
  Yönetilen kod proje türleri için yeni proje türü Toplayıcısı'nı kullanmayı açıklar.  
   
- [Nasıl yapılır: Bir yükleyicinin kayıt defteri bilgilerini oluşturma](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Nasıl yapılır: Yükleyicinin Kayıt Defteri Bilgilerini Oluşturma](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Yönetilen bir VSPackage için bir kayıt bildirim oluşturmak üzere RegPkg.exe kullanmayı açıklar.  
   
  [Yükleme Sonrasında çalıştırılması Gereken Komutlar](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688728"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK Desteği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Müşteriler, Visual Studio tümleşik geliştirme ortamı (IDE) genişletme ile
 ## <a name="included-support"></a>Dahil edilen destek  
   
 ### <a name="visual-studio-product-support"></a>Visual Studio ürün desteği  
- Bazı desteği satın dahildir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ürünleri. Daha fazla bilgi için [Visual Studio desteği](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft'un hakkında soruları yanıtlamak için adanmış destek ekibinin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genişletilebilirlik.  
+ Bazı desteği satın dahildir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ürünleri. Daha fazla bilgi için [Visual Studio desteği](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft'un hakkında soruları yanıtlamak için adanmış destek ekibinin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genişletilebilirlik.  
   
 ### <a name="msdn-subscription-support"></a>MSDN abonelik desteği  
  MSDN aboneliği paketleri bazı desteği de içerebilir. Daha fazla bilgi için [MSDN abonesi Destek](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

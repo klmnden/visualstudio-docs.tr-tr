@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8d848372521baebb48cb5b3924744e88970a728
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6646f67db427e291fd62b731c31109eaab16f991
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701635"
 ---
 # <a name="properties-of-geometry-shapes"></a>Geometri Şekillerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına ö
 |Temel geometrik şekil|Bu şeklin temel sınıf.|(hiçbiri)|  
 |Ad|Bu şeklin adı.|Geçerli ad|  
 |Ad Alanı|Bu şeklin ile bağlantılı olan ad alanı.|Geçerli ad alanı|  
-|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|Hiçbiri|  
+|Araç İpucu türü|Nasıl bir araç ipucu (sabit, değişken veya hiçbiri) tanımlanır. Fixed ise ardından değerini `Fixed Tooltip Text` özelliği, araç ipucu olarak kullanılır; ardından değişken durumunda, araç ipucu özel kodda tanımlanır.|None|  
 |Notlar|Bu öğeyle ilişkili resmi olmayan notlar.|\<yok >|  
 |İlk yükseklik|Bu şeklin inç cinsinden başlangıç yüksekliği.|1.|  
 |Başlangıç genişliği|Bu şeklin inç cinsinden başlangıç genişliği.|1,5|  
@@ -56,4 +56,4 @@ Geometrik şekiller, etki alanı sınıfların örneklerini bir etki alanına ö
 |Yardım anahtar sözcüğü|Bu şeklin için F1 Yardımı dizini oluşturmak için kullanılan anahtar sözcüğü.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

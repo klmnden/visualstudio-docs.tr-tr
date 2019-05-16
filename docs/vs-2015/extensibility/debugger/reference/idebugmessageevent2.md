@@ -12,12 +12,12 @@ ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c2b76d0972768bf4d77e7f6d9bd153920799970
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685977"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Visual Studio için kullanıcı yanıt isteyen bir ileti göndermek için bu arabirimini DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
+ Visual Studio için kullanıcı yanıt isteyen bir ileti göndermek için bu arabirimini DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
   
  Bu arabirim uygulamasını Visual Studio'nun çağrısı iletişim kurması gereken [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) DE için. Örneğin, bu iş parçacığı işleme DE'ın iletiye gönderilen bir ileti ile yapılabilir veya bu arabirimi uygulayan nesnenin bir başvuru DE tutmak ve yöntemlere geçirilen yanıt için DE bir geri arama `IDebugMessageEvent2::SetResponse`.  
   
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Açıklamalar  
  Belirli bir iletiyi kullanıcı belirli bir yanıtı gerektiriyorsa, bu arabirim DE kullanır. Girişimi uzaktan bir programa ekledikten sonra "Erişim engellendi" iletisi DE alır, örneğin, DE bu belirli ileti Visual Studio'da gönderir bir `IDebugMessageEvent2` ileti kutusunun stili olayla `MB_RETRYCANCEL`. Bu, kullanıcının yeniden deneyin veya iliştirme işlemi iptal izin verir.  
   
- DE nasıl bu iletiyi Win32 işlevini kurallarına göre işleneceğini belirtir `MessageBox` (bkz [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) Ayrıntılar için).  
+ DE nasıl bu iletiyi Win32 işlevini kurallarına göre işleneceğini belirtir `MessageBox` (bkz [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) Ayrıntılar için).  
   
  Kullanım [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) kullanıcıdan yanıt gerektirmeyen Visual Studio ileti göndermek için arabirim.  
   

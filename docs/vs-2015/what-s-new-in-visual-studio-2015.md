@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691064"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
  ![Visual Studio 2015 Kurulum iletişim](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Birden fazla hesabında oturum açın
- Visual Studio 2015 ile yeni kolaylaştırılmış oturum açma deneyimi, birden fazla Visual Studio hesabı olsa bile, çevrimiçi kaynaklara erişiminizi önemli ölçüde kolaylaştırmak için tasarlanmıştır. Visual Studio'ya oturum sonra otomatik olarak Visual Studio 2015 ve Blend tüm örnekleri için makinenizde oturum açtınız. Otomatik olarak oturum açarken ayarlarınızı, dolaşım başlatır. Visual Studio 2015'te hesabınızı özellikleri arasında paylaşılan iyi bir belirteç olduğu sürece, bu nedenle, Visual Studio Team Services hesaplarınızı erişebilirsiniz **Takım Gezgini**, Microsoft Azure Web sitelerinden ve kaynakların Sunucu Gezgini'nde abonelik. Azure kaynaklarınızı yeni proje iletişim kutusunda Application Insights projeleri için de görürsünüz ve Azure depolama, Azure mobil görürsünüz [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) ve [Saleforce.com Geliştirici](https://developer.salesforce.com/) Yeni hesapları **bir bağlı hizmet eklemek** iletişim.
+ Visual Studio 2015 ile yeni kolaylaştırılmış oturum açma deneyimi, birden fazla Visual Studio hesabı olsa bile, çevrimiçi kaynaklara erişiminizi önemli ölçüde kolaylaştırmak için tasarlanmıştır. Visual Studio'ya oturum sonra otomatik olarak Visual Studio 2015 ve Blend tüm örnekleri için makinenizde oturum açtınız. Otomatik olarak oturum açarken ayarlarınızı, dolaşım başlatır. Visual Studio 2015'te hesabınızı özellikleri arasında paylaşılan iyi bir belirteç olduğu sürece, bu nedenle, Visual Studio Team Services hesaplarınızı erişebilirsiniz **Takım Gezgini**, Microsoft Azure Web sitelerinden ve kaynakların Sunucu Gezgini'nde abonelik. Azure kaynaklarınızı yeni proje iletişim kutusunda Application Insights projeleri için de görürsünüz ve Azure depolama, Azure mobil görürsünüz [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) ve [Saleforce.com Geliştirici](https://developer.salesforce.com/) Yeni hesapları **bir bağlı hizmet eklemek** iletişim.
 
  Kullandıkça ekleyerek bunları veya yeni hesap Yöneticisi aracılığıyla Visual Studio'da birden fazla kullanıcı hesaplarıyla çalışabilir. Ardından, bağlanma Hizmetleri çalıştırıldığında anında veya çevrimiçi kaynaklara erişen hesaplar arasında geçiş yapabilirsiniz. Visual Studio, Visual Studio veya Blend herhangi bir örneğinden kullanabilmesi için eklediğiniz hesaplara hatırlar. (Biz değerli kimlik bilgilerinizi götürülmeyeceğini rağmen) hızlı bir şekilde başka bir cihazda bu hesapların biriyle çalışmaya başlayabilir için visual Studio da hesaplarının listesi, kişiselleştirme hesabınızla dolaşır. Elbette, hesap ayarları iletişim kutusundan hesapları dilediğiniz zaman kaldırabilirsiniz. Başlamak için bkz: [birden çok kullanıcı hesabıyla çalışma](./ide/work-with-multiple-user-accounts.md).
 
@@ -53,7 +53,7 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
  Xamarin iOS için yerel olarak bağlayan #c ve Android API'leri kod yazmanızı sağlayan Mobil bir çerçevedir. Microsoft, kendi paylaşılan kod ile tek bir çözümde, Android, iOS ve Windows Phone için geliştirin olanak tanıyan uzantı Visual Studio için Xamarin sürümü üzerinde Xamarin ile yakından kurdu. Xamarin ile bir dil ve bir kod tabanı ile platformlar arasında çok az deltaları kullanacaksınız.  Visual Studio için Xamarin, Visual Studio 2010 ve sonraki sürümlerde desteklenir. Xamarin başlangıç sürümü Visual Studio 2015'te eklenmiştir. Başlamak için bkz: [Visual Studio'daki Xamarin yerel UI ile uygulamalar oluşturun](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova ile HTML/JavaScript içinde platformlar arası mobil uygulamalar
- Apache Cordova için Visual Studio Araçları Microsoft ve açık kaynaklı Apache Cordova topluluk arasında Kapat işbirliği sonucudur. HTML, CSS ve JavaScript (veya Typescript) kullanarak platformlar arası Mobil Geliştirme Araçları'nı etkinleştirin. Android, iOS ve Windows ile tek bir kod tabanının hedef ve JavaScript IntelliSense, DOM Gezgini, JavaScript konsolu, kesme noktaları, Gözcü, yerel öğeler, yalnızca kendi kodum ve daha da dahil olmak üzere Visual Studio IDE zenginliğine keyfini çıkarın.  Apache Cordova için Visual Studio Araçları ile uygulamalarınızı tüm platformlarda ortak bir JavaScript API'si eklentileri üzerinden yerel cihaz özelliklerine erişimine olanak sahip. Başlamak için bkz: [Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
+ Apache Cordova için Visual Studio Araçları Microsoft ve açık kaynaklı Apache Cordova topluluk arasında Kapat işbirliği sonucudur. HTML, CSS ve JavaScript (veya Typescript) kullanarak platformlar arası Mobil Geliştirme Araçları'nı etkinleştirin. Android, iOS ve Windows ile tek bir kod tabanının hedef ve JavaScript IntelliSense, DOM Gezgini, JavaScript konsolu, kesme noktaları, Gözcü, yerel öğeler, yalnızca kendi kodum ve daha da dahil olmak üzere Visual Studio IDE zenginliğine keyfini çıkarın.  Apache Cordova için Visual Studio Araçları ile uygulamalarınızı tüm platformlarda ortak bir JavaScript API'si eklentileri üzerinden yerel cihaz özelliklerine erişimine olanak sahip. Başlamak için bkz: [Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity ile C# platformlar arası mobil oyunlar
  Unity çok platformlu 2B ve 3B Oyun Geliştirme için yaygın olarak kullanılan bir platformdur. Oyununuzu C# dilinde yazabilir ve BT yerel Android, iOS, Windows Phone ve diğer birçok platformda. Unity için Visual Studio Araçları Unity Visual Studio IDE ile tümleşen bir uzantısıdır. Bu uzantı, Visual Studio IDE ve hata ayıklayıcı, Unity geliştiricileri için tasarlanmış üretkenliği özelliklerine ek olarak tüm özelliklerini alın. Unity 2.0 Preview 2 ekler visual Studio Araçları Visual Studio 2015 için ek olarak yeni özellikler, Yereller ve izleme nesneleri için daha iyi görselleştirme gibi çeşitli windows desteği. Microsoft, Unity için Visual Studio Araçları'nın en son geliştiren SyntaxTree şirketini aldı. Unity 2.0 Preview 2 ve Unity için Visual Studio Araçları hakkında daha fazla bilgi için Visual Studio Araçları indirmek için bkz [Unity 2.0 için Visual Studio Araçları](https://aka.ms/vstu).
@@ -70,7 +70,7 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 
  Uygulamanızı Windows 10 telefonda, Windows 10 Masaüstü veya Xbox üzerinde çalıştırın. Bu, aynı uygulama paketi kullanılır! Windows 10 tek, birleştirilmiş çekirdek sunulmasıyla birlikte, tüm platformlardaki bir uygulama paketini çalıştırabilecek. Çeşitli platformları platform belirli davranışlardan faydalanmak için uygulamanızı ekleyebileceğiniz olan uzantı Sdk'lerine vardır. Örneğin, mobil cihazlar için bir uzantı SDK'sı, Windows phone'da basıldığında geri düğmesini işler. Projenizde bir uzantı SDK'sına başvuran, yalnızca, SDK bu platform üzerinde kullanılabilir olup olmadığını test etmek için çalışma zamanı denetimleri ekleyin. Her platform için aynı uygulama paketi nasıl sahip olmasıdır!
 
- Bunlar oluşturmak için C#, Visual Basic, C++ veya JavaScript kullanın [Evrensel Windows uygulamaları](http://msdn.microsoft.com/library/dn975273.aspx).
+ Bunlar oluşturmak için C#, Visual Basic, C++ veya JavaScript kullanın [Evrensel Windows uygulamaları](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
  ASP.NET 5 önemli bir güncelleştirme için MVC, Webapı ve SignalR ve Windows, Mac ve Linux üzerinde çalıştırır.  ASP.NET 5 baştan ayarlama, yalın ve birleştirilebilir bir .NET ile modern bulut tabanlı uygulamalar oluşturmak için yığın sağlamak için tasarlanmıştır. Visual Studio 2015 araçları daha yakından Bower ve Grunt gibi popüler web geliştirme araçları ile tümleşiktir. Başlamak için üzerinde çok sayıda blog gönderilerini görün [NET Web geliştirme ve Araçlar Blogumuza](http://blogs.msdn.com/b/webdev/).
@@ -87,12 +87,12 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 
  C# ve Visual Basic dil, çok sayıda smallish geliştirmeler çekirdek dil ve IDE desteği içerir. Tüm bu geliştirmeler, .NET kodlama deneyimi daha sezgisel, kolay ve üretken olmak için ortaya koyuyor.
 
- Daha fazla bilgi için [yenilikler](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) ve [.NET Blog](http://blogs.msdn.com/b/dotnet/).
+ Daha fazla bilgi için [yenilikler](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) ve [.NET Blog](http://blogs.msdn.com/b/dotnet/).
 
 #### <a name="c"></a>C++
  Visual C++, C ++ 11/14 dil uyumluluğu, platformlar arası mobil cihaz geliştirme desteği için önemli gelişmeler await (C ++ 17'de Standartlaştırma için planlanan şu anda) ve sürdürülebilir işlevleri destekler ve geliştirmeleri ve hata düzeltmeleri C sağlar Çalışma zamanı kitaplığı (CRT) ve C++ Standart Kitaplığı (STL) uygulamaları resizeable iletişim kutularında MFC, yeni derleyici iyileştirmeleri, daha iyi performans ve tanılama özellikleri yeni kod düzenleyicisinde yeni üretkenlik araçlarını oluşturun.
 
- Daha fazla bilgi için [Visual C++ için Yenilikler](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) ve [Visual C++ blogu](http://blogs.msdn.com/b/vcblog/).
+ Daha fazla bilgi için [Visual C++ için Yenilikler](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) ve [Visual C++ blogu](http://blogs.msdn.com/b/vcblog/).
 
 ## <a name="device-preview-menu-bar"></a>Cihaz Önizleme menü çubuğu
  Evrensel Windows platformu projelerinde, cihaz Önizleme menü çubuğunda, XAML tabanlı UI çeşitli ekran boyutlarını nasıl işlenir görmenizi sağlar.
@@ -123,11 +123,11 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 ## <a name="cross-platform-debugging-support"></a>Platformlar arası hata ayıklama desteği
  Visual Studio, oluşturmak ve Windows, iOS ve Android cihazlarda çalışan yerel mobil uygulamalar hata ayıklamak için kullanabilirsiniz. Kullanım [Android için Visual Studio öykünücü](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), veya bir cihazı bağlayın ve kodunuzu doğrudan Visual Studio'da hata ayıklama.
 
-- **JavaScript / Cordova**. Kullanım [Apache Cordova için Visual Studio Araçları](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) Windows, iOS ve Android JavaScript ile yerel uygulamalar oluşturun.
+- **JavaScript / Cordova**. Kullanım [Apache Cordova için Visual Studio Araçları](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) Windows, iOS ve Android JavaScript ile yerel uygulamalar oluşturun.
 
-     [Uygulamanızı hata ayıklama](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) hata ayıklama desteği Cordova için Visual Studio ayrıntılı bilgi MSDN Kitaplığı'nda olduğu.
+     [Uygulamanızı hata ayıklama](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) hata ayıklama desteği Cordova için Visual Studio ayrıntılı bilgi MSDN Kitaplığı'nda olduğu.
 
-- **C# / Xamarin**. Kullanım [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) Windows, iOS ve Android Visual Studio'da C# ile yerel uygulamalar oluşturun.
+- **C# / Xamarin**. Kullanım [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) Windows, iOS ve Android Visual Studio'da C# ile yerel uygulamalar oluşturun.
 
      [Hata ayıklama](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) ve [cihazda hata ayıklama](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) içinde [Xamarin Geliştirici kılavuzlarındaki](http://developer.xamarin.com/guides) hata ayıklama deneyimini açıklar.
 
@@ -262,11 +262,11 @@ Aşağıdaki yeni veya geliştirilmiş kodunuz üzerinde farklı türde tanılam
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Rapor kilitlenmeler, askıda kalır ve performans konuları
  Bazı durumlarda, hızlı Not kaş çatma içinde yalnızca tam etkisi yok gibi bir şey iletmek için yeterli değildir. Bir yanıt vermemesine, kilitlenme veya performans sorunu olduğunda saatlere, kolayca yineleme adımları ve kilitlenme bilgi dökümleri izleme dosyaları kaş çatma Gönder sonra görüntülenen iletişim kutusunu kullanarak paylaşabilirsiniz.
 
- İlk olarak, yukarıda açıklanan şekilde kaş çatma Gönder. Açılan iletişim kutusunda, geri bildirim etiketi varsayılan etiket birini veya kendi etiket oluştur. Etiketler bize geri bildirim yönlendirmek için uygun özellik takımı yardımcı olur. İçinde **bir kategori seçin** açılan listesinde, raporlama olduğunuz sonra sorunu yeniden oluşturmak için adımları sorunu temsil eden seçeneğini belirleyin. Visual Studio geri bildirim raporu kullanma hakkında ayrıntılı adımlar de mevcuttur. Daha fazla bilgi için [Visual Studio bir Gülümseyin yönergeleri gönderin](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ İlk olarak, yukarıda açıklanan şekilde kaş çatma Gönder. Açılan iletişim kutusunda, geri bildirim etiketi varsayılan etiket birini veya kendi etiket oluştur. Etiketler bize geri bildirim yönlendirmek için uygun özellik takımı yardımcı olur. İçinde **bir kategori seçin** açılan listesinde, raporlama olduğunuz sonra sorunu yeniden oluşturmak için adımları sorunu temsil eden seçeneğini belirleyin. Visual Studio geri bildirim raporu kullanma hakkında ayrıntılı adımlar de mevcuttur. Daha fazla bilgi için [Visual Studio bir Gülümseyin yönergeleri gönderin](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-* [Apache Cordova ile platformlar arası uygulamalar oluşturma](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [Apache Cordova ile platformlar arası uygulamalar oluşturma](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++ ile platformlar arası mobil uygulamalar oluşturun](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Intellitest ile kodunuz için birim testleri oluşturma](./test/generate-unit-tests-for-your-code-with-intellitest.md)

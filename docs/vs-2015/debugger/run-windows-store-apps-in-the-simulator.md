@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683541"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
      ![Ekran görüntüsü ayarları bağlam menüsü](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Ağ bağlantısı özellikleri benzetimi  
- Uygulamanızın kullanıcılarına tarifeli ağ bağlantılarında maliyetini ağ bağlantı maliyeti veya veri planı durumu değişiklikleri bilincini korumak ve yinelenen Dolaşım veya aşan ek maliyetler oluşmasını önlemek için bu bilgileri kullanmak için uygulamanızı etkinleştirme yönetmesine yardımcı olabilecek bir Belirtilen veri aktarımı sınırı. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API'leri sayesinde yanıt [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) ve [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) oturum olayları. Bkz: [hızlı başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Uygulamanızın kullanıcılarına tarifeli ağ bağlantılarında maliyetini ağ bağlantı maliyeti veya veri planı durumu değişiklikleri bilincini korumak ve yinelenen Dolaşım veya aşan ek maliyetler oluşmasını önlemek için bu bilgileri kullanmak için uygulamanızı etkinleştirme yönetmesine yardımcı olabilecek bir Belirtilen veri aktarımı sınırı. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API'leri sayesinde yanıt [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) ve [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) oturum olayları. Bkz: [hızlı başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Hata ayıklama veya ağ maliyet uyumlu kodunuzu test etmek için simülatör üzerinden sunulan bir ağın özellikleri taklit [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) tarafından döndürülen nesne [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -136,7 +136,7 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
   
    **Ağ Bağlantıları yönetme hakkında daha fazla bilgi**  
   
-   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Hızlı Başlangıç: Tarifeli ağ maliyet kısıtlamaları yönetme](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Ağ bilgi örnek](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -144,9 +144,9 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Nasıl sistem arka plan görevleri ile olaylara yanıt verme](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
-   [Nasıl tetikleyeceğinizi askıya alma, sürdürme ve arka plan olaylarını Windows Store uygulamalarında](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Nasıl tetikleyeceğinizi askıya alma, sürdürme ve arka plan olaylarını Windows Store uygulamalarında](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Simülatör klavye ile gezinme  
  Simülatör araç çubuğu tuşlarına basarak gezinebilirsiniz **CTRL + ALT + YUKARI OK** odak simülatör araç çubuğuna simülatör penceresinde geçiş yapmak için. Kullanım **yukarı ok** ve **aşağı ok** araç çubuğu düğmeleri arasında taşımak için.  

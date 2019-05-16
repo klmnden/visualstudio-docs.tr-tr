@@ -12,12 +12,12 @@ ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b31882f89d8fbf723af8f2a7d52f39c3a1d6c4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1558aa8ca9cad93b00cf90f02f3af6d346b036b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754449"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698661"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- DE özellik oluşturulduğunu bildirmek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi. Bu arabirim, yüklenen veya oluşturulan bir komut dosyasıyla ilişkili bir özelliği DE oluşturduysa ve bu betik IDE içinde görünmesi gereken uygulanır.  
+ DE özellik oluşturulduğunu bildirmek için bu arabirimi uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi. Bu arabirim, yüklenen veya oluşturulan bir komut dosyasıyla ilişkili bir özelliği DE oluşturduysa ve bu betik IDE içinde görünmesi gereken uygulanır.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  DE oluşturur ve bu olay nesneyi bir özelliği oluşturulan rapora gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  
@@ -44,7 +44,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|Yeni özelliği alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir özellik, belirli bir belge veya ilişkili komut dosyası varsa, DE bu olay için SDM güncelleştirmek için gönderebilirsiniz **betik belgelerini** penceresiyle belgenin adı. SDM çağıracak [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) bağımsız değişkeniyle `guidDocument` almak için bir `VARIANT` içeren bir [IUnknown](http://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f) işaretçi. SDM çağıracak [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) almak için bu işaretçinin [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) güncelleştirmek için kullanılan arabirimi **betik belgelerini** penceresi.  
+ Bir özellik, belirli bir belge veya ilişkili komut dosyası varsa, DE bu olay için SDM güncelleştirmek için gönderebilirsiniz **betik belgelerini** penceresiyle belgenin adı. SDM çağıracak [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) bağımsız değişkeniyle `guidDocument` almak için bir `VARIANT` içeren bir [IUnknown](https://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f) işaretçi. SDM çağıracak [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) almak için bu işaretçinin [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) güncelleştirmek için kullanılan arabirimi **betik belgelerini** penceresi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: msdbg.h  

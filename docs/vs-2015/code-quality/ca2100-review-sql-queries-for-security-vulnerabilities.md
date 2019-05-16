@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 167d9be908cef7e597e568a1fa60b4285960ad80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a95e5972b26632a1cfbfce1242e49c38c9e27b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683032"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL sorgularını güvenlik açıkları için inceleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "54776891"
 
 - <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> ve <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
-- [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) ve [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) ve [System.Data.SqlServerCe.SqlCeDataAdapter] ()<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> ve <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
@@ -87,4 +87,4 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Güvenliğe Genel Bakış](http://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
+ [Güvenliğe Genel Bakış](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

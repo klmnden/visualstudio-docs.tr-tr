@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437971"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695280"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Test Çerçevesi ile C/C++ için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
     - `#include` bir `.h` DLL'nin harici olarak erişilebilen işlevlerin bildirimleri içeren dosya.  
   
-         `.h` Dosya, işlev bildirimi ile işaretlenen içermelidir `_declspec(dllimport)`. Alternatif olarak, yöntemlerini DEF dosyası kullanarak dışa aktarabilirsiniz. Daha fazla bilgi için [içeri ve dışarı aktarma](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         `.h` Dosya, işlev bildirimi ile işaretlenen içermelidir `_declspec(dllimport)`. Alternatif olarak, yöntemlerini DEF dosyası kullanarak dışa aktarabilirsiniz. Daha fazla bilgi için [içeri ve dışarı aktarma](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Birim testlerinizin test edilen DLL öğesinden dışarı aktarılan işlevleri erişebilirsiniz.  
   
@@ -168,7 +168,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
      ![Yeni DLL kod projesi ve .h dosyası API makrolarla](../test/media/utecpp07.png "UteCpp07")  
   
-     Bildirimci `__declspec(dllexport)` DLL dışında görünür olmasını ortak ve korunan üyeleri sınıf neden olur. Daha fazla bilgi için [C++ sınıflarında dllimport ve dllexport kullanma](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Bildirimci `__declspec(dllexport)` DLL dışında görünür olmasını ortak ve korunan üyeleri sınıf neden olur. Daha fazla bilgi için [C++ sınıflarında dllimport ve dllexport kullanma](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. Asıl .cpp dosyasında en az bir işlev gövdesi ekleyin:  
   
@@ -395,7 +395,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Yönetilen ve yönetilmeyen kod birlikte çalışabilirliği genel bakış](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Yönetilen ve yönetilmeyen kod birlikte çalışabilirliği genel bakış](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
- [İzlenecek yol: Bir dinamik bağlantı kitaplığı (C++) oluşturma ve kullanma](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [İçeri ve Dışarı Aktarma](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [İzlenecek yol: Bir dinamik bağlantı kitaplığı (C++) oluşturma ve kullanma](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [İçeri ve Dışarı Aktarma](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

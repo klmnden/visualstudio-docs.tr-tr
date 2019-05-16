@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695252"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Visual C# kod bir Store uygulaması birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bu konuda, Visual C# sınıfı için birim testleri bir Windows Store uygulamas�
 >   - Her derlemeden sonra testlerinizi çalıştırın.  
 >   - VS Enterprise Microsoft Fakes, testlerinizi, sistem ve üçüncü taraf işlevselliği için test kodu değiştirerek kendi kodlarına odaklanmasını yardımcı olan yönetilen kod için bir yalıtım çerçevesi de içerir.  
 > 
->   Daha fazla bilgi için [doğrulama kodunu kullanarak birim testleri tarafından](http://msdn.microsoft.com/library/dd264975.aspx) MSDN Kitaplığı'nda.  
+>   Daha fazla bilgi için [doğrulama kodunu kullanarak birim testleri tarafından](https://msdn.microsoft.com/library/dd264975.aspx) MSDN Kitaplığı'nda.  
   
 ## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Çözüm ve birim testi projesi oluşturma](#BKMK_Create_the_solution_and_the_unit_test_project)  

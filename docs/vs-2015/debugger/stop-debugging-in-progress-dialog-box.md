@@ -23,12 +23,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c29754937d3b1ff7f4c44fc87929d84844743387
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684944"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ Bu iletişim kutusu, hata ayıklama oturumunu durdurmak hata ayıklayıcı çal�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Programları ayrılıyor](http://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Programları ayrılıyor](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)

@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698034"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63425906"
   
  Visual Studio, yönetilen projeleri yüklemek ve derlemek için MSBuild kullanır. Proje dosyaları (.csproj, .vbproj, vcxproj ve diğerleri) Visual Studio IDE'yi kullanarak proje oluşturduğunuzda yürüten MSBuild XML kodunu içerir. Visual Studio projeleri gerekli tüm ayarları içeri aktarmak ve işlemleri tipik geliştirme işleri için derleme, ancak genişletebilir ve bunları Visual Studio içinde veya bir XML düzenleyicisini kullanarak değiştirin.  
   
- C++ için MSBuild hakkında bilgi için bkz: [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ C++ için MSBuild hakkında bilgi için bkz: [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Visual Studio IDE'si yerine MSBuild komut satırını kullanarak derlemeler çalıştırdığınızda, aşağıdaki örnekler gösterilmektedir.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "63425906"
   Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanarak Çalıştır. Başka bir alternatif olarak IDE içindeki kodu geliştirme bilgisayarında oluşturabilirsiniz, ancak birden çok geliştiriciden tümleştirilen kodu oluşturmak için MSBuild komut satırını kullanın.  
   
 > [!NOTE]
-> Otomatik olarak derlemek, test ve uygulamanızı dağıtmak için Team Foundation Build'ı kullanabilirsiniz. Geliştiriciler kodu (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) iade ettiğinde veya uygun bir zamanlama (örneğin, bir gecelik yapı doğrulama testi derlemesinde) otomatik olarak yapı sistemi kullanabilirsiniz. Team Foundation derlemesi kodunuzu Msbuild'i kullanarak derler. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Otomatik olarak derlemek, test ve uygulamanızı dağıtmak için Team Foundation Build'ı kullanabilirsiniz. Geliştiriciler kodu (örneğin, bir sürekli tümleştirme stratejisinin parçası olarak) iade ettiğinde veya uygun bir zamanlama (örneğin, bir gecelik yapı doğrulama testi derlemesinde) otomatik olarak yapı sistemi kullanabilirsiniz. Team Foundation derlemesi kodunuzu Msbuild'i kullanarak derler. Daha fazla bilgi için [uygulamayı derleyin](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
  Bu konu, MSBuild genel bir bakış sağlar. Giriş niteliğindeki bir eğitim için bkz. [izlenecek yol: MSBuild kullanarak](../msbuild/walkthrough-using-msbuild.md).  
   

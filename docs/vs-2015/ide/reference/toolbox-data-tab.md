@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9a067c8388a398834f5fb1862072544bb0e53c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419788"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689385"
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63419788"
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç kutusu** ilişkili bir tasarımcı sahip bir proje oluşturduğunuzda görünür. **Araç kutusu** görüntülemek istiyorsanız varsayılan olarak Visual Studio tümleşik geliştirme ortamı; görünen **araç kutusu**seçin **araç kutusu** gelen**Görünümü** menüsü.  
   
 > [!TIP]
-> Veri Kaynağı Yapılandırma Sihirbazı'nı çalıştıran otomatik olarak oluşturun ve çoğu veri öğelerini yapılandırın. Daha fazla bilgi için [Visual Studio ile veri uygulamaları oluşturma](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Veri Kaynağı Yapılandırma Sihirbazı'nı çalıştıran otomatik olarak oluşturun ve çoğu veri öğelerini yapılandırın. Daha fazla bilgi için [Visual Studio ile veri uygulamaları oluşturma](https://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>UI öğe listesi  
  Bir bileşen için .NET Framework başvuru sayfasına doğrudan gitmek için basın **F1** öğesine **araç kutusu** veya tasarımcının tepsisinde bileşen öğesi.  
@@ -39,8 +39,8 @@ Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** se
 |<xref:System.Windows.Forms.BindingNavigator>|Gezinti ve düzenleme için kullanıcı arabirimi (UI) bir form üzerinde verilere bağlı denetimler temsil eder.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Veri izlenecek yollar](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Uygulamanızı veri almaya hazırlama](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio'da verilere denetimler bağlama](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Verileri doğrulama](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

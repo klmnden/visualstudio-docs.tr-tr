@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695126"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel Yöntemler için birim testleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: Birim testi oluşturma ve çalıştırma](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
+Diğer yöntemleri için tam olarak yaptığınız gibi açıklandığı gibi genel metotlar için birim testleri oluşturabilirsiniz [nasıl yapılır: Birim testi oluşturma ve çalıştırma](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Aşağıdaki bölümler ve örnekleri, genel metotlar için birim testleri oluşturma hakkında bilgi sağlar.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Tür bağımsız değişkeni ve tür kısıtlamaları  
  Zaman [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gibi birim testi için genel bir sınıf oluşturur `MyList<T>`, iki yöntem oluşturur: bir genel yardımcı ve bir test yöntemi. Varsa `MyList<T>` bir veya daha fazla tür kısıtlamaları var, tür bağımsız değişkeni tür kısıtlamaları karşılaması gerekir. İzin verilen tüm girişleri için beklendiği gibi genel test works altında kod emin olmak için test yöntemini test etmek istediğiniz tüm kısıtlamalar ile genel yardımcı yöntemi çağırır.  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Her zaman SizeOfLinkedListTest test çalıştırmaları, kendi TestHelper yöntemi iki kez çağrılır. Onay deyimi geçirmek test için her zaman true olarak değerlendirilmesi gerekir. Test başarısız olursa, arama, belirtilen olup olmadığını, açık olmayabilecek `<int>` veya belirtilen çağrı `<char>` başarısız olmasına neden. Yanıt bulmak için çağrı yığınını incelemek veya test yönteminizde kesme noktaları ayarlayın ve ardından test çalıştırılırken hata ayıklama. Daha fazla bilgi için [nasıl yapılır: ASP.NET çözümü'nde bir Test çalıştırılırken hata ayıklama](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Örnek 2: Bir tür kısıtlaması kullanma  
  Bu örnek, bir birim testi karşılanmadı bir tür kısıtlaması kullanan bir genel yöntem için gösterir. İlk bölüm, kod test altındaki kod projesi gösterir. Tür kısıtlaması vurgulanır.  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Bir birim testinin anatomisi](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Kodunuza Birim Testi Uygulama](../test/unit-test-your-code.md)

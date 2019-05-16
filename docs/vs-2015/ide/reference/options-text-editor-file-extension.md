@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10280b60c4ae929fce9a0ce563fb1d7cac3fd5f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bd49b08e8bd48393a980fe775db66c96c0edc1fd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441351"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695826"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyalar
  Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenize olanak sağlar, bu türdeki bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dilde kullanmak için proje belgelerinizi sürümlerini hazırlanma istediğinizde yararlı olabilir.  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Uzantı**  

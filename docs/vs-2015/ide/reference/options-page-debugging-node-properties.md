@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bd02ae0c3cd9f05e817e335b942a76c849655e44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674725"
 ---
 # <a name="options-page-debugging-node-properties"></a>Seçenekler Sayfası, Hata Ayıklama Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,10 +81,10 @@ Aşağıdaki tablolarda sayfaları (veya özellik koleksiyonları) açıklanmakt
 |EnableRPC|Get/Set (Boole)|Hata ayıklayıcı COM uzak yordam çağrılarını adım olup olmadığını belirler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seçenek ayarlarını denetleme](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Seçenek ayarlarını denetleme](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seçenekler sayfası, yazı tipleri ve renkler düğümü özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Seçenekler sayfası, metin düzenleyici düğümü özellikleri](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Genel, hata ayıklama, Seçenekler iletişim kutusu](../../debugger/general-debugging-options-dialog-box.md)   
- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu](../../debugger/just-in-time-debugging-options-dialog-box.md)

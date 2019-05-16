@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445917"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695180"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Ne Kadar Kodun Test Edildiğini Belirlemek için Kod Kapsamını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  .runsettings dosyasını yazarak seçilen kod kapsamı çözümleme derlemeleri ve öğeleri üzerinde daha fazla denetimle alıştırma yapabilirsiniz. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md).  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Yapı hizmetindeki kod kapsamı çözümleme  
- Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, kod kapsamını yapı hizmetinde çözümlemek yararlıdır. Otomatik sistem testleri ve geliştirme makinelerinde genellikle çalıştırmadığınız kodlanmış diğer testleri de içerecektir.  
+ Kodunuzda denetlediğinizde, testiniz diğer ekip üyelerinden gelen diğer tüm testlerle birlikte yapı sunucusunda çalışır. (, Zaten bu ayarları yapmadıysanız bkz [yapı işleminizde testler](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Tüm projeye en güncel ve en kapsamlı resmi sağladığından, kod kapsamını yapı hizmetinde çözümlemek yararlıdır. Otomatik sistem testleri ve geliştirme makinelerinde genellikle çalıştırmadığınız kodlanmış diğer testleri de içerecektir.  
   
 1. Takım Gezgini'nde açın **yapılar**ve ardından eklemek veya bir yapı tanımını düzenleyin.  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    Yapı çalıştıktan sonra kod kapsamı sonuçları test çalıştırmasına eklenir ve yapı özet olarak görünür.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Komut Satırında Kod Kapsamı Çözümleme  
- Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Kod kapsamı, bu yardımcı programın bir seçeneğidir. Daha fazla bilgi için [VSTest.Console.exe komut satırı seçenekleri](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
+ Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Kod kapsamı, bu yardımcı programın bir seçeneğidir. Daha fazla bilgi için [VSTest.Console.exe komut satırı seçenekleri](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
 1. Visual Studio Geliştirici Komut Satırını başlatın:  
   

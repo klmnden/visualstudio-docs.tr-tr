@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705543"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek yol: Paralel uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) veya [eşzamanlılık çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
+Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) veya [eşzamanlılık çalışma zamanı](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.  
   
  Bu izlenecek yol bu görevleri öğretir:  
   
@@ -308,7 +308,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Eşzamanlılık Çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Paralel Programlama](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Eşzamanlılık Çalışma zamanı](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
  [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)

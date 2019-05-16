@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 64deddd3ae8323298ad04e5a1a3a78e93c21a87a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666825"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674713"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -161,8 +161,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |ViewSourceExternalProgram|Get/Set (dize)|Dış kaynak Görüntüleyicisi yolu.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seçenek ayarlarını denetleme](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Seçenek ayarlarını denetleme](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seçenekler sayfası, yazı tipleri ve renkler düğümü özellikleri](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Seçenekler sayfası, metin düzenleyici düğümü özellikleri](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

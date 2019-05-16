@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698321"
 ---
 # <a name="walkthrough-building-an-application"></a>İzlenecek yol: Uygulama oluşturma
 
@@ -78,7 +78,7 @@ Kullanacağınız **Uzantılar ve güncelleştirmeler** bulmak ve yüklemek içi
 
 ## <a name="BKMK_CreateBuildConfig"></a> Özel bir yapı yapılandırması oluşturma
 
-Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Bir çözüm oluşturduğunuzda, hata ayıklama ve yayın derleme yapılandırmaları ve varsayılan platform hedefleri, çözüm için otomatik olarak tanımlanır. Ardından, bu yapılandırmaları özelleştirebilir veya kendinizinkini oluşturun. Derleme yapılandırmaları derleme türünü belirtir. Derleme platformları, bir uygulamanın bu yapılandırma için hedeflediği işletim sistemini belirtin. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md), [derleme platformlarını anlama](../ide/understanding-build-platforms.md), ve [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Değiştirme veya yapılandırma ve platform Ayarları'nı kullanarak oluşturma **Configuration Manager** iletişim kutusu. Bu yordamda, test etmek için bir yapı yapılandırması oluşturacaksınız.
 
@@ -197,9 +197,9 @@ Yapı işlemi hakkında ne kadar bilgi gözükeceğini değiştirebilirsiniz **�
 
     Derleme bilgileri, hangi dosyaların sırayla işlendi (başında yer) derleme başlatıldı, zaman ve (sondadır) işlemin tamamlanması için geçen süreyi içerir. Bu bilgiler ayrıca, Visual Studio'nun yapı sırasında çalıştırdığı gerçek derleyici sözdizimini de içerir.
 
-    Örneğin, Visual C# derlemesinde içinde [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) seçeneği, diğer üç uyarıyla birlikte bu konu içinde daha önce belirttiğiniz 1762 uyarı kodunu listeler.
+    Örneğin, Visual C# derlemesinde içinde [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) seçeneği, diğer üç uyarıyla birlikte bu konu içinde daha önce belirttiğiniz 1762 uyarı kodunu listeler.
 
-    Visual Basic derleme [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) hiçbir uyarı görüntülenmez şekilde dışlanacak belirli uyarıları içermez.
+    Visual Basic derleme [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) hiçbir uyarı görüntülenmez şekilde dışlanacak belirli uyarıları içermez.
 
    > [!TIP]
    > İçeriğini arayabilirsiniz **çıkış** görüntülerseniz penceresi **Bul** Ctrl + F tuşlarını seçerek iletişim kutusu.
@@ -264,6 +264,6 @@ Daha fazla bilgi için [nasıl yapılır: Derleme çıktı dizinini değiştirme
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [İzlenecek yol: Proje Derleme (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [ASP.NET Web uygulaması projesi ön derleme genel bakış](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [İzlenecek yol: MSBuild kullanma](../msbuild/walkthrough-using-msbuild.md)
+- [İzlenecek yol: Proje Derleme (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [ASP.NET Web uygulaması projesi ön derleme genel bakış](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [İzlenecek yol: MSBuild Kullanma](../msbuild/walkthrough-using-msbuild.md)

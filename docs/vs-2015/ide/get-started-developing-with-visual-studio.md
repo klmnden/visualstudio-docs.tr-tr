@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd65c41f49dc49b9302e721d889aeaad2dfc6bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2aeacb6af2be2b81b639ce89820ee0584a19ac8c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071999"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701034"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio ile geliştirmeye başlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +65,6 @@ Visual Studio'ya Hoş Geldiniz! Sonra [indirilen](http://www.visualstudio.com/co
 
 |||
 |-|-|
-|[Visual C# ve Visual Basic'e Başlarken](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[JavaScript Kodu Yazma](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
-|[Platformlar Arası Mobil Geliştirme için Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[İle işlevsel programlamaya girişF#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
+|[Visual C# ve Visual Basic'e Başlarken](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[JavaScript Kodu Yazma](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
+|[Platformlar Arası Mobil Geliştirme için Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[İle işlevsel programlamaya girişF#](https://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
 |[C++ Kullanmaya Başlarken](../ide/getting-started-with-cpp-in-visual-studio.md)|[Visual Studio 2015'te Hata Ayıklamaya Başlama](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|

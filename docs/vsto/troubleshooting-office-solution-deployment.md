@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978334"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694988"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office çözümü dağıtımında sorunlarını giderme
   Bu konuda, Office çözümleri dağıtırken karşılaşabileceğiniz genel sorunları nasıl çözeceğinizi hakkında bilgi içerir.
@@ -118,7 +118,7 @@ ms.locfileid: "62978334"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>ClickOnce çözüm Web'den dağıtım bildirimini açarak yükleyemezsiniz.
  Kullanıcılar, web dağıtım bildirimini açarak Office çözümleri yükleyebilir. Ancak, bazı Internet Information Services (IIS) engelleyecek *.vsto* dosya adı uzantısı. Office çözümünü dağıtmak için kullanmadan önce MIME türü IIS'de tanımlamanız gerekir.
 
- IIS 7'de aynı zamanda MIME türü tanımlama hakkında daha fazla bilgi için bkz: [MIME türü (IIS7) eklemek](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ IIS 7'de aynı zamanda MIME türü tanımlama hakkında daha fazla bilgi için bkz: [MIME türü (IIS7) eklemek](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  Uzantı kümesine **.vsto** ve MIME tür **application/x-ms-vsto**.
 

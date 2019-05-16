@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702373"
 ---
 # <a name="client-side-script-debugging"></a>İstemci Tarafı Betikte Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Visual Studio hata ayıklayıcı, bulma ve ASP.NET sayfaları istemci tarafı be
 ## <a name="debugging-ajax-script-applications"></a>AJAX komut dosyası uygulamalarının hatalarını ayıklama  
  AJAX etkinleştirilmiş Web uygulamaları, komut dosyası kodunu yoğun kullanmasına ve özel hata ayıklama zorluklarına neden olur. AJAX hata ayıklama teknikleri hakkında daha fazla bilgi için bkz.  
   
- [Hata ayıklama ve Ajax uygulamalara genel bakış izleme](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Hata ayıklama ve Ajax uygulamalara genel bakış izleme](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Betik hata ayıklamasında sınırlamalar](../debugger/limitations-on-script-debugging.md)   
- [Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Komut penceresi](../ide/reference/immediate-window.md)   
- [Hata ayıklama ve izleme Ajax uygulamalara genel bakış](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Hata ayıklama ve izleme Ajax uygulamalara genel bakış](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

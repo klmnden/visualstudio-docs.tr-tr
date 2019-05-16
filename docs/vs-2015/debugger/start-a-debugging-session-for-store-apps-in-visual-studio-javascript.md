@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b4e861c8985ee37a8c2d9b7f9286d6284bb4f91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685029"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>(JavaScript) Visual Studio'da Store uygulamaları için hata ayıklama oturumu başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -213,7 +213,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
 ### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Hata ayıklama modunda çalıştırmak için uygulamayı Ayarla
 
-1. Visual Studio uzak Araçlar, uygulamanın yüklendiği cihaza yükleyin. Bkz: [uzak araçları yükleme](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Visual Studio uzak Araçlar, uygulamanın yüklendiği cihaza yükleyin. Bkz: [uzak araçları yükleme](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. Başlat menüsünde arama `Debuggable Package Manager` ve sonra başlatın.
 

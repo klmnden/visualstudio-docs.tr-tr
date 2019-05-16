@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753525"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693762"
 ---
 # <a name="pseudovariables"></a>Sözde Değişkenler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|Saat döngüsünde zamanı görüntüler.|  
 |`$user`|Uygulamayı çalıştıran hesap için hesap bilgileriyle bir yapıyı görüntüler. Güvenlik nedeniyle parola bilgisi görüntülenmez.|  
 |`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izleme görüntüler. `$ exceptionstack` Windows 8.1 veya üzeri çalıştıran Store uygulamalarında çalışır. `$ exceptionstack` C++ ve özel durumlar için desteklenmiyor|  
-|`$ReturnValue`|.NET Framework yöntemi dönüş değerini görüntüler. Bkz: [yöntem çağrılarının dönüş değerlerini İnceleme](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|.NET Framework yöntemi dönüş değerini görüntüler. Bkz: [yöntem çağrılarının dönüş değerlerini İnceleme](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  C# ve Visual Basic'te bu tabloda gösterilen pseudovariables'ı kullanabilirsiniz:  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` veya `$$delete`|Oluşturulan örtük değişkeni siler **hemen** penceresi. Söz dizimi `$delete,` *değişkeni* veya`$delete,` *değişkeni*`.`|  
 |`$objectids` veya `$listobjectids`|Tüm etkin nesne Kimlikleri'ni belirtilen ifadenin alt öğesi olarak görüntüler. Söz dizimi `$objectid,` *ifade* veya`$listobjectids,` *ifadesi*`.`|  
 |`$` *N* `#`|Eşit nesne Kimliğine sahip nesneyi görüntüler *N*.|  
-|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne düğümü `IDynamicMetaObjectProvider`. Arabirim. Söz dizimi `$dynamic,` *nesne*. Bu özellik yalnızca .NET Framework sürüm 4 kullanan kod için geçerlidir. Bkz: [dinamik Görünüm](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne düğümü `IDynamicMetaObjectProvider`. Arabirim. Söz dizimi `$dynamic,` *nesne*. Bu özellik yalnızca .NET Framework sürüm 4 kullanan kod için geçerlidir. Bkz: [dinamik Görünüm](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

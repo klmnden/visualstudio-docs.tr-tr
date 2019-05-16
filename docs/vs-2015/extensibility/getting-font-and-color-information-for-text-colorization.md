@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8724c31accb26e478c2726dfe791256994fc95ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696853"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Yazı tipi ve metin renklendirmesi için renk bilgilerini alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +46,6 @@ ms.locfileid: "63440127"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Yazı tipleri ve metin kullanma](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
- [Renklerle çalışma](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (grafik cihaz arabirimi)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)
+ [Yazı tipleri ve metin kullanma](https://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ [Renklerle çalışma](https://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
+ [GDI (grafik cihaz arabirimi)](https://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

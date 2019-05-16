@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438383"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697618"
 ---
 # <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Görüntü kodu çözme.** Resimlerin genişletilmesine ve kod harcanan zamanı belirtir.  
   
-  Betik ve stil kategorileri için kullanıcı Arabirimi yanıtlama hızı Profiler zaman çizelgesi ayrıntıları grafikte üzerinde işlem yapabileceğiniz veri sağlayabilir. Bir sorun kodlama sorunları tanımlamak, CPU örnekleme Profil Oluşturucu ile kullanıcı Arabirimi yanıtlama hızı Profiler çalıştırabilirsiniz. Alternatif olarak, ayrıntılı verileri almak için Visual Studio işlevi Profiler'ı kullanabilirsiniz. Daha fazla bilgi için bkz. [JavaScript işlev zamanlaması analiz verileri](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Betik ve stil kategorileri için kullanıcı Arabirimi yanıtlama hızı Profiler zaman çizelgesi ayrıntıları grafikte üzerinde işlem yapabileceğiniz veri sağlayabilir. Bir sorun kodlama sorunları tanımlamak, CPU örnekleme Profil Oluşturucu ile kullanıcı Arabirimi yanıtlama hızı Profiler çalıştırabilirsiniz. Alternatif olarak, ayrıntılı verileri almak için Visual Studio işlevi Profiler'ı kullanabilirsiniz. Daha fazla bilgi için bkz. [JavaScript işlev zamanlaması analiz verileri](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Diğer olay kategorileri için Özellikler'ı uygulamanıza eklemek neden platform yan etkileri belirlemek mümkün olabilir, ancak bu durumda, kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak belirli performans sorunlarını çözmek mümkün olmayabilir.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - İzleme [bu videoyu](http://channel9.msdn.com/Events/Build/2013/3-316) kullanıcı Arabirimi yanıtlama hızı Profiler hakkında derleme 2013 konferansına ait.  
   
-- JavaScript kullanarak Windows için oluşturulan Windows Store uygulamaları için performans ipuçları okuyun. Daha fazla bilgi için bkz. [JavaScript kullanan Windows Store uygulamaları için en iyi performans](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- JavaScript kullanarak Windows için oluşturulan Windows Store uygulamaları için performans ipuçları okuyun. Daha fazla bilgi için bkz. [JavaScript kullanan Windows Store uygulamaları için en iyi performans](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Tek iş parçacıklı kod yürütme modeli ve performans ile ilgili daha fazla bilgi için bkz. [kodu yürüten](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Tek iş parçacıklı kod yürütme modeli ve performans ile ilgili daha fazla bilgi için bkz. [kodu yürüten](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama performansını analiz edin](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Uygulama performansını analiz edin](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

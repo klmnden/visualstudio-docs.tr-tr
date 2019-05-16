@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695554"
 ---
 # <a name="display-data-in-blend"></a>Blend'de verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Sayfa düzenini özelleştirme olarak, örnek veri Tasarımcısı'nda görüntü
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bir XML veri kaynağı oluşturma](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ## <a name="LiveStore"></a> Bir Store veya telefon uygulaması canlı verileri göster  
- Bkz: [çalışma ile verileri ve dosyaları (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
+ Bkz: [çalışma ile verileri ve dosyaları (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

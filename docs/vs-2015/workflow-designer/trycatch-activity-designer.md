@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976607"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697072"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch Etkinlik Tasarımcısı
 **TryCatch** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.Activities.Statements.TryCatch> etkinlik.  
   
 ## <a name="the-trycatch-activity"></a>TryCatch etkinlik  
- <xref:System.Activities.Statements.TryCatch> Etkinliği içeren bir <xref:System.Activities.Statements.TryCatch.Try%2A> etkinliği, koleksiyonu **Catch\<TException >** ve <xref:System.Activities.Statements.TryCatch.Finally%2A> etkinlik. A <xref:System.Activities.Statements.Catch%601> türü **TException** içeren bir <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> ve <xref:System.Activities.Statements.Catch%601.Action%2A>. Birlikte işleme mekanizması tipik bir özel durum tabanlı hata uygulamak için kullanılırlar. A <xref:System.Activities.Statements.TryCatch> etkinlik çalıştığında yürütmek onun <xref:System.Activities.Statements.TryCatch.Try%2A> etkinlik. Varsa <xref:System.Activities.Statements.TryCatch.Try%2A> etkinlik hiçbir özel durum oluşturursa <xref:System.Activities.Statements.TryCatch> etkinliği kullanır, **Catch < TException\>**  özel durum eşleşmesi için koleksiyonu. Bir eşleşme varsa sonra <xref:System.Activities.Statements.Catch%601.Action%2A> karşılık gelen **Catch\<TException >** , hata işleme mantığı için özel olarak yürütülür. Etkinlikler, <xref:System.Activities.Statements.TryCatch.Try%2A> bölümü başarıyla tamamlanması veya etkinliklerinin <xref:System.Activities.Statements.TryCatch.Catches%2A> başarıyla tamamlanması <xref:System.Activities.Statements.TryCatch> etkinliği yürütür, <xref:System.Activities.Statements.TryCatch.Finally%2A> etkinlik. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Özel durumlar](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ <xref:System.Activities.Statements.TryCatch> Etkinliği içeren bir <xref:System.Activities.Statements.TryCatch.Try%2A> etkinliği, koleksiyonu **Catch\<TException >** ve <xref:System.Activities.Statements.TryCatch.Finally%2A> etkinlik. A <xref:System.Activities.Statements.Catch%601> türü **TException** içeren bir <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> ve <xref:System.Activities.Statements.Catch%601.Action%2A>. Birlikte işleme mekanizması tipik bir özel durum tabanlı hata uygulamak için kullanılırlar. A <xref:System.Activities.Statements.TryCatch> etkinlik çalıştığında yürütmek onun <xref:System.Activities.Statements.TryCatch.Try%2A> etkinlik. Varsa <xref:System.Activities.Statements.TryCatch.Try%2A> etkinlik hiçbir özel durum oluşturursa <xref:System.Activities.Statements.TryCatch> etkinliği kullanır, **Catch < TException\>**  özel durum eşleşmesi için koleksiyonu. Bir eşleşme varsa sonra <xref:System.Activities.Statements.Catch%601.Action%2A> karşılık gelen **Catch\<TException >** , hata işleme mantığı için özel olarak yürütülür. Etkinlikler, <xref:System.Activities.Statements.TryCatch.Try%2A> bölümü başarıyla tamamlanması veya etkinliklerinin <xref:System.Activities.Statements.TryCatch.Catches%2A> başarıyla tamamlanması <xref:System.Activities.Statements.TryCatch> etkinliği yürütür, <xref:System.Activities.Statements.TryCatch.Finally%2A> etkinlik. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Özel durumlar](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>TryCatch etkinlik Tasarımcısı kullanma  
  **TryCatch** etkinlik Tasarımcısı bulunabilir **hata işleme** kategorisi **araç kutusu**, hangi erişilen tıklayarak **araçkutusu** sol tarafındaki sekmesinde [!INCLUDE[wfd2](../includes/wfd2-md.md)] (Alternatif olarak, seçin **araç** gelen **görünümü** menü veya DNTL + ALT + X.)  

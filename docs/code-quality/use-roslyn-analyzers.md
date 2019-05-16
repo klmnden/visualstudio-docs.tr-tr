@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821422"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676717"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
 
@@ -56,7 +56,7 @@ Etkin kural kural kümesi Düzenleyicisi'nde kümesi düzenlemek için sağ **ba
 Etkin kural için bir proje kümesini değiştirmek için gidin **Kod Analizi** bir projenin özelliklerini sekmesi. Kural kümesi altındaki listeden seçin **bu kural kümesini Çalıştır**. Kural kümesini açmak için seçmeniz **açın**.
 
 > [!NOTE]
-> Kural kümeleri için .NET core ve .NET Standard projelerine menü komutlarını desteklemez **Çözüm Gezgini**, örneğin, **açık etkin kural kümesi**. .NET Core veya .NET Standard projesi için el ile bir varsayılan olmayan kural belirtmek için [ekleme **CodeAnalysisRuleSet** özelliği proje dosyasına](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Kural kümesi Visual Studio Düzenleyicisi kullanıcı Arabirimi kural kümesi içinde kuralları yapılandırabilirsiniz.
+> Kural kümeleri için .NET core ve .NET Standard projelerine menü komutlarını desteklemez **Çözüm Gezgini**, örneğin, **açık etkin kural kümesi**. .NET Core veya .NET Standard projesi için el ile bir varsayılan olmayan kural belirtmek için [ekleme **CodeAnalysisRuleSet** özelliği](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) proje dosyasına. Kural kümesi Visual Studio Düzenleyicisi kullanıcı Arabirimi kural kümesi içindeki kurallarda yine de yapılandırabilirsiniz.
 
 ## <a name="rule-severity"></a>Kural önem derecesi
 

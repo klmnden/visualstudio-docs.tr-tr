@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1809072ca0a01362e6434254b6e70a4bf4db4762
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698108"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,4 +154,4 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üretilen API'de etki alanı ilişkileri](../misc/domain-relationships-in-the-generated-api.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

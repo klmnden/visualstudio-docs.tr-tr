@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ec230a5bf32ab6e70967e76d31030af3a7a351a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687594"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Modelleme diyagramında menü komutu tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 
    |                                                                                                    Başvuru                                                                                                    |                                                                                                  Bunu yapmak sağlar                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Kullanarak bileşenleri tanımlayın [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Kullanarak bileşenleri tanımlayın [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Okuma ve model öğelerinin özellikleri değiştirin.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Model öğeleri oluşturun, diyagramdaki şekilleri değiştirin.                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Model öğe işleyicilerini tanımlar.<br /><br /> Modeldeki değişiklikler dizisini yalıtır. Daha fazla bilgi için [işlemleri kullanarak bağlantı UML model güncelleştirmelerini](../modeling/link-uml-model-updates-by-using-transactions.md). |

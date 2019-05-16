@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e342ec8438aeac6acd149ed93e8ce8a281a63323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790499"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701499"
 ---
 # <a name="properties-of-image-shapes"></a>Görüntü Şekillerinin Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Resim şekilleri, etki alanı sınıfları oluşturulan tasarımcıda nasıl gö
 |Görüntü|Bu şeklin için kullanılan görüntü dosyasının yolu.|\<yok >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

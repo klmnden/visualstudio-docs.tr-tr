@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26ba081e893867fcd80c7fc969301f417400d37a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679299"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme Denetimlerinizi Adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Visual C# koduyla Form1.cs sekmesi
   
      Bir denetim için bir olay işleyici ekledikten sonra ona dilediğiniz zaman Windows Forms Tasarımcısı'ndan denetimi çift tıklayarak veya menü çubuğundan seçme dönebilirsiniz **görünümü**, **kod**.  
   
-     Programları derleme ve yöntemler (olay işleyicileri dahil), istediğiniz herhangi bir ad olabilir adları önemlidir. IDE ile bir olay işleyicisi eklediğinizde, denetimin adını ve işlenen olayı temel alan bir ad oluşturur. Örneğin, adlı bir düğme için tıklama olayı **showButton** çağrılır `showButton_Click()` olay işleyicisi yöntemi. Ayrıca, açma ve Kapama parantezleri () genellikle yöntemleri ele belirtmek üzere yöntem adından sonra eklenir. İstediğiniz bir kod değişkeni adını değiştirmeye karar verirseniz, kod içindeki değişkene sağ tıklayın ve ardından **yeniden düzenleme**, **Yeniden Adlandır**. Koddaki bu değişkenin tüm örnekleri yeniden adlandırılır. Bkz: [düzenlemeyi yeniden adlandırma (C#)](../csharp-ide/rename-refactoring-csharp.md) veya [yeniden düzenleme ve yeniden adlandır iletişim kutusu](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) daha fazla bilgi için.  
+     Programları derleme ve yöntemler (olay işleyicileri dahil), istediğiniz herhangi bir ad olabilir adları önemlidir. IDE ile bir olay işleyicisi eklediğinizde, denetimin adını ve işlenen olayı temel alan bir ad oluşturur. Örneğin, adlı bir düğme için tıklama olayı **showButton** çağrılır `showButton_Click()` olay işleyicisi yöntemi. Ayrıca, açma ve Kapama parantezleri () genellikle yöntemleri ele belirtmek üzere yöntem adından sonra eklenir. İstediğiniz bir kod değişkeni adını değiştirmeye karar verirseniz, kod içindeki değişkene sağ tıklayın ve ardından **yeniden düzenleme**, **Yeniden Adlandır**. Koddaki bu değişkenin tüm örnekleri yeniden adlandırılır. Bkz: [düzenlemeyi yeniden adlandırma (C#)](../csharp-ide/rename-refactoring-csharp.md) veya [yeniden düzenleme ve yeniden adlandır iletişim kutusu](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) daha fazla bilgi için.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   

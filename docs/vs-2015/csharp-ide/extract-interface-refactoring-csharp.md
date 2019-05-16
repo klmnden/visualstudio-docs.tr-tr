@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680900"
 ---
 # <a name="extract-interface-refactoring-c"></a>Ayıklama Arabirimi Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ayıklama arabirimi bir varolan bir sınıf, yapı veya arabirim üyeleri ile yeni bir arabirim oluşturmak için kolay bir yol sağlayan bir yeniden düzenleme bir işlemdir.  
   
- Çeşitli istemciler bir sınıf, yapı veya arabirim üyeleri aynı alt kümesi kullandığınızda veya birden çok sınıflar, yapılar veya arabirimleri üyelerin bir alt kümesini ortak olduğunda alt kümesini bir arabirim üyeleri somutlaştırmak yararlı olabilir. Arabirimleri kullanma hakkında daha fazla bilgi için bkz. [arabirimleri](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Çeşitli istemciler bir sınıf, yapı veya arabirim üyeleri aynı alt kümesi kullandığınızda veya birden çok sınıflar, yapılar veya arabirimleri üyelerin bir alt kümesini ortak olduğunda alt kümesini bir arabirim üyeleri somutlaştırmak yararlı olabilir. Arabirimleri kullanma hakkında daha fazla bilgi için bkz. [arabirimleri](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Ayıklama arabirimi arabirim yeni bir dosya oluşturur ve yeni dosyanın başında imleç yerleştirir. Yeni arabirim, yeni arabirimin adı ve kullanarak oluşturulan dosya adı ayıklamak için hangi üyelerin belirtebilirsiniz **Arabirimi Ayıkla** iletişim kutusu.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94fe06d62e6d90be0b3cdf64239c17c4f1975f94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c8c35180bdff0b76ee8a66a5e1d27bfd915016c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694443"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Üye imzalarında genel türleri iç içe kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "54797766"
  [CA1007: Uygun yerlerde genel türleri kullanın](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Genel Türler](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [Genel Türler](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

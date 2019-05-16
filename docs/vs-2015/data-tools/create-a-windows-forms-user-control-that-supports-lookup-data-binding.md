@@ -18,19 +18,19 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df037f4ee9bb6a89b6d74ffd454abc5bdb13dd8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a54558c2aa760ea9bb318b527a49d01efcfbef04
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065343"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694070"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Arama verileri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Forms'ta veri görüntüleme, mevcut denetimleri seçebilirsiniz **araç kutusu**, veya uygulamanıza işlevsellik standart denetimleri yok gerekiyorsa özel denetimler yazabilirsiniz. Bu izlenecek yol, uygulayan bir denetim oluşturma işlemi gösterilmektedir <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.LookupBindingPropertiesAttribute> verilere bağlı üç özellik içerebilir. Bu tür denetimler benzer bir <xref:System.Windows.Forms.ComboBox>.  
   
- Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  Veri bağlama senaryoları denetimler yazarken aşağıdaki veri bağlama özniteliklerden birini yapması gerekir:  
   

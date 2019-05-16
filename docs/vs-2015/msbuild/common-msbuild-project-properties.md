@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650261"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698715"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Aşağıdaki tabloda, sık kullanılan Visual Studio proje dosyalarında tanıml
 |Satellite_Version|Uydu derlemesinin sürüm bilgilerini belirtir.|  
 |Satellite_Win32Icon|Uydu derlemede bir .ico simge dosyası ekler.|  
 |Satellite_Win32Resource|Uydu derlemeye bir Win32 kaynağı (.res dosyası) ekler.|  
-|SubsystemVersion|Oluşturulan yürütülebilir dosyanın kullanabileceği alt sistemin en düşük sürümünü belirtir. Bu özellik değerine eşdeğer olan `/subsystemversion` derleyici anahtarı. Bu özellik varsayılan değeri hakkında daha fazla bilgi için bkz. [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) veya [/subsystemversion (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Oluşturulan yürütülebilir dosyanın kullanabileceği alt sistemin en düşük sürümünü belirtir. Bu özellik değerine eşdeğer olan `/subsystemversion` derleyici anahtarı. Bu özellik varsayılan değeri hakkında daha fazla bilgi için bkz. [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) veya [/subsystemversion (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Derlemekte olduğunuz uygulamayı çalıştırmak için gereken .NET Compact Framework sürümü. Bunun belirtilmesi, başka türlü mümkün olmayabilir belirli çerçeve derlemelerine olanak tanır.|  
 |targetFrameworkVersion|Sürümü [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] derlemekte olduğunuz uygulamayı çalıştırmak için gereklidir. Bunun belirtilmesi, başka türlü mümkün olmayabilir belirli çerçeve derlemelerine olanak tanır.|  
 |TreatWarningsAsErrors|Bir Boole parametresi, varsa `true`, tüm uyarıları hata olarak kabul edilmesine neden olur. Bu parametre değerine eşdeğer olan `/nowarn` derleyici anahtarı.|  

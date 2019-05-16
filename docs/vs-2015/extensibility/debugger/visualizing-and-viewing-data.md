@@ -11,12 +11,12 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f06ee57c5c889c2004dbd5b85e269bfd0841ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 719a2b3d073d90ff3977496c7f98ebecb1ab48a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785042"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696307"
 ---
 # <a name="visualizing-and-viewing-data"></a>Verileri Görselleştirme ve Görüntüleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ Tür görselleştiricileri ve özel görüntüleyiciler mevcut verileri hızlı 
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) çağırılarak alınır [CreateVisualizerService](../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Bu yöntem gerektirir [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md) öğesinden alınan arabirimi [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) arabirimi geçirilen [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). `IEEVisualizerServiceProvider::CreateVisualizerService` Ayrıca gerektirir [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) ve [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) için geçirilmiş arabirimleri `IDebugParsedExpression::EvaluateSync`. Oluşturmak için gereken son arabirimi `IEEVisualizerService` arabirimi [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md) EE uygulayan arabirimi. Bu arabirim görselleştirilen özelliğine yapılacak değişiklikler sağlar. Tüm özellik verileri içinde saklanmış olduğu bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) ayrıca EE tarafından uygulanan arabirimi.  
   
 ### <a name="accessing-property-data"></a>Özellik verilerine erişme  
- Özellik verilerine erişme aracılığıyla gerçekleştirilir [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) arabirimi. Bu arabirim elde etmek için Visual Studio çağırır [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) almak için özellik nesnesi üzerinde [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) arabirimi (uygulayan aynı nesne üzerinde uygulanan [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) arabirimi) ve ardından çağırır [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) elde etmek için yöntemi `IPropertyProxyEESide` arabirimi.  
+ Özellik verilerine erişme aracılığıyla gerçekleştirilir [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) arabirimi. Bu arabirim elde etmek için Visual Studio çağırır [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) almak için özellik nesnesi üzerinde [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) arabirimi (uygulayan aynı nesne üzerinde uygulanan [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) arabirimi) ve ardından çağırır [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) elde etmek için yöntemi `IPropertyProxyEESide` arabirimi.  
   
  Tüm veri küme içi ve dışı geçirilen `IPropertyProxyEESide` arabirimi içinde saklanmış olduğu [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) arabirimi. Bu arabirim, bayt dizisini temsil eder ve Visual Studio ve EE tarafından uygulanır. Bir özelliğin veriler değiştirilecek olduğunda, Visual Studio oluşturur bir `IEEDataStorage` aramalar ve yeni verileri tutan nesne [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) yeni almak için bu veri nesnesi ile `IEEDataStorage` , sırasıyla nesnesini geçirilen [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) özelliğin verileri güncelleştirmek için. `IPropertyProxyEESide::CreateReplacementObject` uygulayan kendi sınıf örneği EE sağlayan `IEEDataStorage` arabirimi.  
   
 ## <a name="supporting-custom-viewers"></a>Özel görüntüleyiciler destekleme  
- Bayrağı `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` ayarlanır `dwAttrib` alanını [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) yapısı (bir çağrı tarafından döndürülen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) nesne ilişkilendirilmiş özel Görüntüleyici olduğunu belirtmek için kendisiyle. Bu bayrak ayarlandığında, Visual Studio alır [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) alanından arabirim [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) arabirimi kullanılarak [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+ Bayrağı `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` ayarlanır `dwAttrib` alanını [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) yapısı (bir çağrı tarafından döndürülen [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) nesne ilişkilendirilmiş özel Görüntüleyici olduğunu belirtmek için kendisiyle. Bu bayrak ayarlandığında, Visual Studio alır [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) alanından arabirim [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) arabirimi kullanılarak [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
  Kullanıcı özel Görüntüleyici seçerse, Visual Studio Görüntüleyicisi'nin kullanarak özel Görüntüleyici başlatır `CLSID` tarafından sağlanan `IDebugProperty3::GetCustomViewerList` yöntemi. Visual Studio sonra çağıran [DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) değeri kullanıcıya göstermek için.  
   

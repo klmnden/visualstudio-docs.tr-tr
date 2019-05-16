@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441408"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697172"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Seçenekler, Metin Düzenleyici, C/C++, Gelişmiş
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense v
  Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **Gelişmiş**.  
   
 > [!NOTE]
-> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Gözatma Gezinti  
  Bu seçenekleri dışında hiçbir zaman bir çözüm veritabanı etkinliğini kabul edilemez bir sistem kaynaklarının miktarı tüketen çok büyük olduğu nadir durumlarda seçmeniz gerekir.  
@@ -124,7 +124,7 @@ Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense v
  **Maksimum önbelleğe alınmış çeviri birimleri**  
  IntelliSense istekleri için herhangi bir zamanda etkin tutulacak çeviri birimlerinin maksimum sayısı. 2 ile 15 arasında bir değer belirtmeniz gerekir. Bu sayı, maksimum sayısına (belirli bir örneğini Visual Studio için) çalıştırılacak VCPkgSrv.exe işlemleri doğrudan ilgilidir. Varsayılan değer 2'dir, ancak kullanılabilir bellek varsa, bu değeri artırmak ve büyük olasılıkla IntelliSense biraz daha iyi performans elde edin.  
   
- Çeviri birimleri hakkında daha fazla bilgi için bkz: [çeviri aşamaları](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
+ Çeviri birimleri hakkında daha fazla bilgi için bkz: [çeviri aşamaları](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
   
  **Israrlı üye listesi devre dışı bırak**  
  Üye listesi bir türü veya değişken adını yazarken görünmez. Yalnızca bir işleme karakterleri yazdıktan sonra sınıfında tanımlandığı gibi liste görünür **üye listesi işleme karakterleri** seçeneği.  

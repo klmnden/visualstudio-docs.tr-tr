@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696076"
 ---
 # <a name="service-essentials"></a>Hizmet Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı 
   
 - İsteğe bağlı yükleme desteklemek için bir hizmet sağlayıcısı, küresel hizmetler ile kaydeder [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [kayıt hizmetleri](../../misc/registering-services.md).  
   
-- Bir hizmet edindikten sonra kullanın [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (yönetilmeyen kod) veya istenen arabirim, örneğin almak için (yönetilen kod için) atama:  
+- Bir hizmet edindikten sonra kullanın [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (yönetilmeyen kod) veya istenen arabirim, örneğin almak için (yönetilen kod için) atama:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanılabilen hizmetlerin listesi](../../extensibility/internals/list-of-available-services.md)   
  [Hizmetleri kullanma ve sağlama](../../extensibility/using-and-providing-services.md)   
- [Atama ve tür dönüşümleri](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [Atama](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [Atama ve tür dönüşümleri](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [Atama](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

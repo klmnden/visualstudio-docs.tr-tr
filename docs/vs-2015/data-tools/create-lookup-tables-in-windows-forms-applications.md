@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693961"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms uygulamalarında arama tabloları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar. Bu arama denetimleri, ikinci tabloda seçilen bir değere göre ilk tablosundan verileri görüntülemek.  
   
- Arama tabloları üst tablonun ana düğüm sürükleyerek oluşturabilirsiniz (gelen [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) üzerine formunuzdaki ilgili alt tablo sütununda zaten bağlı bir denetim.  
+ Arama tabloları üst tablonun ana düğüm sürükleyerek oluşturabilirsiniz (gelen [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) üzerine formunuzdaki ilgili alt tablo sütununda zaten bağlı bir denetim.  
   
  Örneğin, bir tablo düşünün `Orders` satış veritabanındaki. Her kayıtta `Orders` tablo içeren bir `CustomerID`, siparişi hangi müşterinin verdiğini gösteren. `CustomerID` Bir müşteri kaydı işaret eden bir yabancı anahtar `Customers` tablo. Bu senaryoda, genişletme `Orders` tablosundaki **veri kaynakları** penceresi ve ana düğüm kümesine **ayrıntıları**. Ardından `CustomerID` kullanılacak sütunu bir <xref:System.Windows.Forms.ComboBox> (veya arama bağlamayı destekleyen başka bir denetimi) sürükleyin `Orders` formunuza düğümü. Son olarak, sürükleyin `Customers` ilgili sütuna bağlı denetim düğüme — bu durumda, <xref:System.Windows.Forms.ComboBox> bağlı `CustomerID` sütun.  
   

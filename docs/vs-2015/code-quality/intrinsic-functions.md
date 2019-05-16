@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759442"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699433"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ SAL bir ifadede, yan etkilere sahip olmayan bir ifade olması şartıyla C/C++ i
 |Ek Açıklama|Açıklama|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` dize kadar ancak bir null Sonlandırıcı içermeden öğeleri sayısıdır. Bu ek açıklama karakter dize türleri için ayrılmıştır.|  
-|`strlen(param)`|`param` dize kadar ancak bir null Sonlandırıcı içermeden öğeleri sayısıdır. Bu ek açıklama ayrılmış karakter kullanın, diziler ve C çalışma zamanı işlevi benzer [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` en fazla (ancak dahil değil) dizedeki öğe sayısı null Sonlandırıcı. Bu ek açıklama geniş karakter kullanın, diziler ve C çalışma zamanı işlevi benzer ayrılmış [wcslen ()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` dize kadar ancak bir null Sonlandırıcı içermeden öğeleri sayısıdır. Bu ek açıklama ayrılmış karakter kullanın, diziler ve C çalışma zamanı işlevi benzer [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` en fazla (ancak dahil değil) dizedeki öğe sayısı null Sonlandırıcı. Bu ek açıklama geniş karakter kullanın, diziler ve C çalışma zamanı işlevi benzer ayrılmış [wcslen ()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

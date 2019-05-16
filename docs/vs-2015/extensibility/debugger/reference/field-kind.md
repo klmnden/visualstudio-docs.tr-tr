@@ -12,12 +12,12 @@ ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d18d032043370a266fdccdcf56e68d574913f3ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692872"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -226,7 +226,7 @@ public enum enum_FIELD_KIND {
 ## <a name="remarks"></a>Açıklamalar  
  Çağrısından döndürülen [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) yöntemi.  
   
- Bu alanın türünü bağlı olarak [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde çağrılabilir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabiriminin daha belirli bir form arabirimi. Örneğin, varsa [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) döndürür `FIELD_TYPE_METHOD`, ardından çağırabilirsiniz `QueryInterface` miyim üzerinde`DebugField` almak için [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) arabirimi.  
+ Bu alanın türünü bağlı olarak [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) üzerinde çağrılabilir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabiriminin daha belirli bir form arabirimi. Örneğin, varsa [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) döndürür `FIELD_TYPE_METHOD`, ardından çağırabilirsiniz `QueryInterface` miyim üzerinde`DebugField` almak için [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) arabirimi.  
   
 ## <a name="requirements"></a>Gereksinimler  
  Üstbilgi: sh.h  

@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117648"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693572"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio'nun bu sürümü zaten daha önceki bir sürümün yüklü olduğu
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET framework sürümleri ve yan yana yüklemeler
 
-- Visual Basic, Visual C#, görsel ve F# projelerde kullan **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#, görsel ve F# projelerde kullan **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Bir proje oluşturduğunuzda, projenin hangi .NET Framework sürümünü hedefleyeceğini belirtebilirsiniz **.NET Framework** listesinde **yeni proje** iletişim kutusu.
 
@@ -50,13 +50,13 @@ Visual Studio'nun bu sürümü zaten daha önceki bir sürümün yüklü olduğu
     |--------------|-----------|
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Uygulama Sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[Projeleri Yapılandırma](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ortak dil çalışma zamanının önceki bir sürümünde JScript uygulaması çalıştırma](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |Visual F#|[Projeleri Yapılandırma](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |C++|[Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ortak dil çalışma zamanının önceki bir sürümünde JScript uygulaması çalıştırma](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)
 - [Taşıma, geçirme ve Visual Studio projelerini yükseltme](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

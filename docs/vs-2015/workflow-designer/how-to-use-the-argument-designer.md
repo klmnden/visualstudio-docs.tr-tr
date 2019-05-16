@@ -12,15 +12,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a244379bfebcf58d76ba726d4f6a84bcdfa7d1df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432359"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696271"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Nasıl yapılır: Bağımsız Değişken Tasarımcısını Kullanma
-Önceki sürümlere göre [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bağımsız değişken tasarımcısını veri ekleme çıkarma bir etkinlik akışı izin vermek kolaylaştırır. Tasarımcı tıklayarak erişilen **bağımsız değişkenleri** tasarım tuvalin sol alt köşesindeki düğme. Tasarımcı, bir tablo biçiminde görünür ve her bir sütun üst bilgileri dışında sıralanabilir bağımsız değişkenlerinin listesi içeren **varsayılan değer** sütun. Her bağımsız değişken adı, / out/içinde-out/özellik yönü, türü ve varsayılan ifade değeri (varsa) içerir. Adı ve varsayılan ifade değeri düzenlenebilir metin alanları ve türü ve Yön açılan listeler. [!INCLUDE[crabout](../includes/crabout-md.md)] bağımsız değişkenleri, görmek [değişkenleri ve bağımsız değişkenler](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
+Önceki sürümlere göre [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bağımsız değişken tasarımcısını veri ekleme çıkarma bir etkinlik akışı izin vermek kolaylaştırır. Tasarımcı tıklayarak erişilen **bağımsız değişkenleri** tasarım tuvalin sol alt köşesindeki düğme. Tasarımcı, bir tablo biçiminde görünür ve her bir sütun üst bilgileri dışında sıralanabilir bağımsız değişkenlerinin listesi içeren **varsayılan değer** sütun. Her bağımsız değişken adı, / out/içinde-out/özellik yönü, türü ve varsayılan ifade değeri (varsa) içerir. Adı ve varsayılan ifade değeri düzenlenebilir metin alanları ve türü ve Yön açılan listeler. [!INCLUDE[crabout](../includes/crabout-md.md)] bağımsız değişkenleri, görmek [değişkenleri ve bağımsız değişkenler](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
 ### <a name="to-create-a-new-argument"></a>Yeni bir değişken oluşturmak için  
   
@@ -35,4 +35,4 @@ ms.locfileid: "63432359"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş akışı Tasarımcısını kullanma](../workflow-designer/using-the-workflow-designer.md)   
- [Değişkenler ve Bağımsız Değişkenler](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)
+ [Değişkenler ve Bağımsız Değişkenler](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)

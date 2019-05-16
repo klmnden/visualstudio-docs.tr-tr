@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442790"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686427"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings dosyasını kullanarak birim testlerini yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
 > [!NOTE]
 > **.runsettings ve .testsettings**  
 >   
-> Testleri yapılandırma dosyasının iki türü vardır. *.runsettings birim testleri için kullanılır. Ve \*için .testsettings [laboratuvar ortamında test](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), web performansı ve yük testleri ve IntelliTrace ve olay günlüğünü bağdaştırıcıları gibi tanılama veri bağdaştırıcılarının bazı türlerini özelleştirme.  
+> Testleri yapılandırma dosyasının iki türü vardır. *.runsettings birim testleri için kullanılır. Ve \*için .testsettings [laboratuvar ortamında test](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), web performansı ve yük testleri ve IntelliTrace ve olay günlüğünü bağdaştırıcıları gibi tanılama veri bağdaştırıcılarının bazı türlerini özelleştirme.  
 >   
 > Visual Studio 2010'da, en fazla birim testleri de *.testsettings dosyalarını kullanarak özelleştirilmiş önceki sürümleri. Yine de bunu yapabilirsiniz, ancak testleri eşdeğer yapılandırmalarında kullanıyorsanız daha yavaş çalışır bir \*.runsettings dosyası.  
   
@@ -141,7 +141,7 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
 #### <a name="other-diagnostic-data-adapters"></a>Diğer tanılama veri bağdaştırıcıları  
  Kod kapsamı bağdaştırıcısı şu anda çalışma ayarları dosyası kullanılarak özelleştirilebilen tek bağdaştırıcıdır.  
   
- Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir. Daha fazla bilgi için [Visual Studio testleri için Test ayarlarını belirtme](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
+ Başka herhangi bir tür tanılama verisi bağdaştırıcısını özelleştirmek için test ayarları dosyası kullanmanız gerekir. Daha fazla bilgi için [Visual Studio testleri için Test ayarlarını belirtme](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters değişkenleri ve testlere çalışma zamanında kullanılabilir olan değerler tanımlamak için bir yol sağlar.  
@@ -152,7 +152,7 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
 |Yapılandırma|Varsayılan|Değerler|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|Visual Studio 2012'de, MSTest bağdaştırıcısı daha hızlı ve daha ölçeklenebilir olması için iyileştirilmiştir. Testlerin çalışma sırası gibi bazı davranışlar Visual Studio'nun önceki sürümlerindekiyle aynı olmayabilir. Bu değer `true` eski test bağdaştırıcısı kullanmak için.<br /><br /> Örneğin, birim testi için belirtilen bir app.config dosyanız varsa bunu kullanabilirsiniz.<br /><br /> Daha yeni bağdaştırıcı kullanmanıza olanak vermek için testlerinizi yeniden düzenlemenizi öneririz.|  
-|IgnoreTestImpact|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [nasıl yapılır: Kod değişikliklerinden sonra çalıştırmak, testleri gerektiğini denetlemek için veri toplama olması](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|MSTest veya Microsoft Test Yöneticisi'nde çalıştırıldığında test etkisi özelliği son değişikliklerden etkilenen testleri önceliklendirir. Bu ayar özelliği devre dışı bırakır. Daha fazla bilgi için [nasıl yapılır: Kod değişikliklerinden sonra çalıştırmak, testleri gerektiğini denetlemek için veri toplama olması](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Burada MS Test bağdaştırıcısı ile kullanmak için test ayarları dosyası belirtebilirsiniz. Menüsünü kullanarak bir test ayarları dosyası da belirtebilirsiniz **Test**, **Test ayarlarını**, **Test ayarları dosyasını Seç**.<br /><br /> Bu değeri belirtirseniz, aynı zamanda ayarlamalısınız **ForcedlegacyMode** için **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Test çalıştırması tamamlandıktan sonra MSTest kapatılır. Testin bir parçası olarak başlatılan tüm işlemler de şu anda bitirilecek. Test yürütücüsünü canlı tutmak istiyorsanız bu yapılandırmayı doğru olarak etkinleştirin.<br /><br /> Örneğin, tarayıcının kodlanmış UI testleri arasında çalışmasını sürdürmek için bunu kullanabilirsiniz.|  
 |DeploymentEnabled|true|Bunu yanlış olarak ayarlarsanız, test yönteminizde belirttiğiniz dağıtım öğeleri dağıtım dizinine kopyalanmaz.|  
@@ -164,4 +164,4 @@ Visual Studio'da birim testlerini *.runsettings dosyası kullanılarak yapıland
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod kapsamı çözümlemeyi özelleştirme](../test/customizing-code-coverage-analysis.md)   
- [Visual Studio testleri için test ayarlarını belirtme](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Visual Studio testleri için test ayarlarını belirtme](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

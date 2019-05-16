@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683853"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] üzerindeki koşullara bakar `PropertyGroup`, `ItemGroup`, `Import`, özellik ve öğeler bu amaç için.  
   
 ## <a name="additional-build-actions"></a>Ek Yapı Eylemleri  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir proje dosyasında öğesi türü adını değiştirmenize izin verir **derleme eylemi** özelliği [dosya özelliklerini](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) penceresi. `Compile`, `EmbeddedResource`, `Content`, ve `None` öğe türü adları her zaman bu menüde, projenizde zaten başka bir öğe türü adları ile birlikte listelenir. Her özel öğe türü adları her zaman bu menüde kullanılabilir emin olmak için adlandırılmış bir öğe türü adları ekleyebilirsiniz. `AvailableItemName`. Örneğin, aşağıdaki proje dosyanıza ekleyerek özel bir tür ekler `JScript` aktarmadan tüm projelerde bu menüye:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir proje dosyasında öğesi türü adını değiştirmenize izin verir **derleme eylemi** özelliği [dosya özelliklerini](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) penceresi. `Compile`, `EmbeddedResource`, `Content`, ve `None` öğe türü adları her zaman bu menüde, projenizde zaten başka bir öğe türü adları ile birlikte listelenir. Her özel öğe türü adları her zaman bu menüde kullanılabilir emin olmak için adlandırılmış bir öğe türü adları ekleyebilirsiniz. `AvailableItemName`. Örneğin, aşağıdaki proje dosyanıza ekleyerek özel bir tür ekler `JScript` aktarmadan tüm projelerde bu menüye:  
   
 ```  
 <ItemGroup>  

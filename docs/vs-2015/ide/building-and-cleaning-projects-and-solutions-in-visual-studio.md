@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685714"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio'da Projeler ve Çözümler Oluşturma ve Temizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408426"
 Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projeler veya bir çözümde proje öğeleri temizleyin. Adım adım bir öğretici için bkz [izlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> Visual Studio sürümünüz kullanıcı Arabiriminde, bu konuda, etkin ayarlarınıza bağlı olarak açıklanmıştır öğesinden farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Visual Studio sürümünüz kullanıcı Arabiriminde, bu konuda, etkin ayarlarınıza bağlı olarak açıklanmıştır öğesinden farklı olabilir. Ayarlarınızı değiştirmek için **Araçları** menüsünü seçip **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Derleme, yeniden oluşturmanız veya bütün bir çözüm Temizle
 
@@ -110,4 +110,4 @@ Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projel
     - Seç Ctrl + Break anahtarları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md) [derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md) [derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [Hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ oluşturma başvurusu](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md) [projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)
+ [Nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md) [derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md) [derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md) [anlama derleme yapılandırmaları](../ide/understanding-build-configurations.md) [Hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ oluşturma başvurusu](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md) [projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)

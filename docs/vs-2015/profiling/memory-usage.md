@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438929"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704871"
 ---
 # <a name="memory-usage"></a>Bellek kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Hata ayıklayıcıyla tümleştirilmiş ile hata ayıklarken bellek sızıntıla
   
   Her zaman bellek anlık görüntüleri toplama rağmen **bellek kullanımı** aracı, performans sorunlarını araştırma sırasında uygulamanızın nasıl yürütür denetlemek için Visual Studio hata ayıklayıcısını kullanabilirsiniz. Kesme noktaları, Adımlama, tümünü Kes ve diğer hata ayıklayıcı eylemlerini performans araştırmalarınıza en uygun olan kod yollarında odaklanmanıza yardımcı olabilir. Uygulamanız çalışırken bu eylemleri gerçekleştirmek ortadan kaldırır, bir sorunu tanılamak için gereken süreyi önemli ölçüde azaltabilir ve sizi ilgilendirmeyen kodu paraziti.  
   
-  Hata ayıklayıcının dışında bellek Aracı'nı kullanabilirsiniz. Bkz: [hata ayıklama olmadan bellek kullanımı](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+  Hata ayıklayıcının dışında bellek Aracı'nı kullanabilirsiniz. Bkz: [hata ayıklama olmadan bellek kullanımı](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
-> **Özel ayırıcı desteği** yerel bellek profili Oluşturucu çalışır ayırma toplayarak [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) sırasında çalışma zamanı tarafından yayınlanan olay verileri.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen.  Kendi ayırıcılar yazıyorsanız, yeni ayrılmış yığın için bir işaretçi döndüren tüm İşlevler'den bellek tasarlanabilir [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Bu örnekte myMalloc görüldüğü ayırıcı):  
+> **Özel ayırıcı desteği** yerel bellek profili Oluşturucu çalışır ayırma toplayarak [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) sırasında çalışma zamanı tarafından yayınlanan olay verileri.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen.  Kendi ayırıcılar yazıyorsanız, yeni ayrılmış yığın için bir işaretçi döndüren tüm İşlevler'den bellek tasarlanabilir [__declspec](https://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(Bu örnekte myMalloc görüldüğü ayırıcı):  
 >   
 > `__declspec(allocator) void* myMalloc(size_t size)`  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a65f2e39eac5889b287b082b4cad6842f44aa2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675543"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Sınama ve Üretim Sunucuları için Teslim Etmeden ClickOnce Uygulamaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63422780"
 Bu konuda ele alınmıştır ClickOnce bildirimlerini yeniden imzalama veya ClickOnce değiştirmeden birden çok ağ konumundan ClickOnce uygulamalarının dağıtımını sağlayan sürüm 3.5 .NET Framework tanıtılan yeni bir özelliğidir.  
   
 > [!NOTE]
-> Bildirimin hala uygulamaların yeni sürümlerini dağıtmak için tercih edilen yöntemdir. Mümkün olduğunda resigning yöntemini kullanın. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Bildirimin hala uygulamaların yeni sürümlerini dağıtmak için tercih edilen yöntemdir. Mümkün olduğunda resigning yöntemini kullanın. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Üçüncü taraf geliştiriciler ve ISV'ler için bu özellik, kendi uygulamalarınızı güncelleştirmeye gerek müşterileri kolaylaştırmaya katılımı. Aşağıdaki durumlarda bu özellik kullanılabilir:  
   
@@ -65,5 +65,5 @@ Bu konuda ele alınmıştır ClickOnce bildirimlerini yeniden imzalama veya Clic
  Farklı ağ konumlarını dağıtılabilir dağıtımları oluşturma adım adım yönergeler için bkz. [izlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
+ [Mage.exe (bildirim üretme ve düzenleme aracı)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Bildirim Oluşturma ve Düzenleme Aracı, Grafik İstemci)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)

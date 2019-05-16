@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c3a6526732ffa398d25b0c3c5d73fed771f6958
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688141"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl yapılır: Web sayfalarında JavaScript kodu profili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ ms.locfileid: "63443469"
 > [!WARNING]
 > Windows Store uygulamalarında JavaScript profili oluşturmak için aşağıdaki konulardan birine bakın:  
 > 
-> - [JavaScript işlev zamanlaması](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [uzak bir cihazda JavaScript işlev zamanlaması](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
->   - [JavaScript işlev zamanlaması verilerini çözümleme](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+> - [JavaScript işlev zamanlaması](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [uzak bir cihazda JavaScript işlev zamanlaması](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+>   - [JavaScript işlev zamanlaması verilerini çözümleme](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
  Performans oturumu oluşturmak için profil oluşturma Sihirbazı'nı kullanabilirsiniz. Araçlar yöntemini belirtin ve ardından JavaScript profil oluşturma performans oturumu Özellikleri iletişim kutusunun izleme sayfasındaki seçeneğini belirtin.  

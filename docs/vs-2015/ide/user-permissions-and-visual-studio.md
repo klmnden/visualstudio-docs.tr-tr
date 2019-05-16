@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443214"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703986"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 |Yükleme|Visual Studio'yu Yükleme.|[Visual Studio 2015'i yükleme](../install/install-visual-studio-2015.md)|
 ||Visual Studio deneme sürümünden yükseltme.|[Nasıl yapılır: Visual Studio'nun Deneme Sürümünden Yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Yerel Yardım içeriğini yükleme, güncelleştirme veya kaldırma.|[Yerel İçeriği Yükleme ve Yönetme](../ide/install-and-manage-local-content.md)|
-|Uygulama türleri|SharePoint 2010 çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
+|Uygulama türleri|SharePoint 2010 çözümleri geliştirme.|[SharePoint Çözümleri Geliştirmek için Gereksinimler](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||İçin bir geliştirici lisansı alma [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Bir geliştirici lisansı (Windows Store uygulamaları)](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Araç Kutusu|Klasik COM denetimleri ekleme **araç kutusu**.|[Araç Kutusunu Kullanma](../ide/using-the-toolbox.md)|
-|Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazlar oluşturma](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
-||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+|Eklentiler|IDE'de klasik COM kullanılarak yazılmış eklentileri yükleme ve kullanma.|[Eklentiler ve sihirbazlar oluşturma](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanma.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+||C++ projeleri oluşturduğunuzda kayıt adımı ekleme.|[Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)|
 ||ASP.NET web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX Uygulamalarında Hata Ayıklama](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
+||XAML Tarayıcı Uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF Konağı (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||Microsoft Azure için bulut hizmeti projelerinde hata ayıklamak için öykünücü kullanma.|[Visual Studio'da bir bulut hizmetinin hatalarını ayıklama](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
+||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırma.|[Cihazda uzak araçları ayarlama](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Performans araçları|Uygulama profili oluşturma.|[Performans Profili Oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
 |Dağıtım|Yerel bir bilgisayarda Internet Information Services'a (IIS) web uygulaması dağıtma.|[Visual Studio veya Visual Web Developer kullanarak bir barındırma sağlayıcısı bir ASP.NET Web uygulaması dağıtma: Test ortamı olarak IIS'ye dağıtma](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |Microsoft'a geri bildirim sağlama|Visual Studio Müşteri Deneyimi Programı'na katılım şeklinizi değiştirme.|[Nasıl yapılır: Geri bildirim gönderin](../misc/how-to-send-feedback-about-visual-studio.md)|

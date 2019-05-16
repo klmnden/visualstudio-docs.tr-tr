@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704926"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>İzlenecek yol: Web Formunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Gö
 > [!NOTE]
 > Bu izlenecek yolu tamamlamak için sunucu bilgisayarında yönetici ayrıcalıkları olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem aspnet_wp.exe veya w3wp.exe olarak çalışan bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] işlem. Hata ayıklamak için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], bilgisayarda yönetici ayrıcalıklarına sahip olduğu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalıştırır. Daha fazla bilgi için, bkz. [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
- İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Web formu oluşturma  
   
@@ -100,7 +100,7 @@ Bu kılavuzda açıklanan adımları hatalarını nasıl ayıklayacağınız Gö
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz. Daha fazla bilgi için [kesme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Kırmızı bir nokta belirir ve satırdaki metin kırmızıyla vurgulanır. Kırmızı nokta bir kesme noktası temsil eder. Uygulamayı hata ayıklayıcısı altında çalıştırdığınızda, hata ayıklayıcısı koda ulaşıldığında, yürütmeyi o konumda keser. Ardından uygulamanızın durumunu görüntüleyebilir ve ona hata ayıklama yapabilirsiniz. Daha fazla bilgi için [kesme noktaları](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**.  
   

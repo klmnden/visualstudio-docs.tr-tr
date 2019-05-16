@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679336"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Resim Göster Düğmesi Olay İşleyicisi için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual C# kodu
   
     2. **IntelliSense** penceresi açılır ve görüntüler **openFileDialog1**. Seçmek için SEKME tuşunu seçin. (Visual Basic'te, gördüğünüz şekilde ilk bir harf ile başlar **OpenFileDialog1**. Emin **OpenFileDialog1** seçilir.)  
   
-         Hakkında daha fazla bilgi edinmek için `OpenFileDialog`, bkz: [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Hakkında daha fazla bilgi edinmek için `OpenFileDialog`, bkz: [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Bir nokta (`.`) (birçok Programcı bunu nokta olarak adlandırır.) Hemen sonra bir nokta yazdığınız için **openFileDialog1**e **IntelliSense** penceresi açılır; tamamının dolu **OpenFileDialog** bileşenin özellikleri ve yöntemleri. Bu görünen, aynı özelliklerdir **özellikleri** Windows Form Tasarımcısı'nda seçtiğinizde penceresi. Bileşenin bir şeyler (bir iletişim kutusu açmak gibi) yöntemleri de seçebilirsiniz.  
   
@@ -67,7 +67,7 @@ Olay simgesi
   
     4. Yazmaya başlayın `ShowDialog` (büyük/küçük harf IntelliSense için önemsizdir). `ShowDialog()` Yöntemi gösterilir **açık dosya** iletişim kutusu. Pencerenin vurguladıysa **ShowDialog**, SEKME tuşunu seçin. Ayrıca, "ShowDialog" vurgulayın ve Yardımı almak için F1 tuşuna basın.  
   
-         Hakkında daha fazla bilgi edinmek için `ShowDialog()` yöntemi bkz [ShowDialog yöntemi](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Hakkında daha fazla bilgi edinmek için `ShowDialog()` yöntemi bkz [ShowDialog yöntemi](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. Kullandığınızda, bir yöntem bir denetim veya bileşen üzerinde (olarak adlandırılan *bir yöntemi çağırmak*), parantezler eklemeniz gerekir. Bu nedenle açılış ve kapanış ayraçlarını hemen "g sonra" girin `ShowDialog`: `()` "OpenFileDialog1.ShowDialog()" gibi görünmelidir.  
   
@@ -83,7 +83,7 @@ Olay simgesi
   
     8. DialogResult değeri açmak için bir nokta yazın **IntelliSense** penceresi. Harfini girmek `O` ve eklemek için TAB tuşunu **Tamam**.  
   
-         Hakkında daha fazla bilgi edinmek için `DialogResult`, bkz: [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Hakkında daha fazla bilgi edinmek için `DialogResult`, bkz: [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > Kodun ilk satırı tamamlanmış olmalıdır. Visual C# için aşağıdaki olmalıdır.  

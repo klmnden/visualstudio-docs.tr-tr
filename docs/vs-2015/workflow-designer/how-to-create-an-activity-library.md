@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686654"
 ---
 # <a name="how-to-create-an-activity-library"></a>Nasıl yapılır: Etkinlik Kitaplığı Oluşturma
 Özel etkinlikler, bir iş akışındaki belirli İş süreçlerinizi modelleyin için kullanılır. Etkinlik kitaplığı şablonu [!INCLUDE[vs2010](../includes/vs2010-md.md)] sağlamak görsel olarak kullanarak bu tür özel etkinlikler oluşturmak sağlanan [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ ms.locfileid: "63444571"
     > Yalnızca bir alt etkinlik özel etkinliğinizin gövdesinde izin verilir; Ancak, bu alt etkinlik bileşik bir etkinlik gibi olabilir bir <xref:System.Activities.Statements.Sequence> etkinlik veya <xref:System.Activities.Statements.Flowchart> etkinlik.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Bir etkinlik oluşturma](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Nasıl yapılır: Bir etkinlik oluşturma](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [İş Akışı Projesi Oluşturma](../workflow-designer/creating-a-workflow-project.md)

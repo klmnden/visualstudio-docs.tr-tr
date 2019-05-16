@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759616"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675255"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Komut Tablosu (.Vsct) Dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Bir komut tablosu yapılandırma dosyası içeren bir VSPackage'ı komut kümesi
  [XML Komut Tablosu (.Vsct) Dosyaları Tasarlama](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  .Vsct dosyaları tasarlanacağını açıklar.  
   
- [Nasıl yapılır: Oluşturma bir. Vsct dosyası](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Nasıl yapılır: .Vsct Dosyası Oluşturma](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  .Vsct dosyası oluşturma yöntemleriyle karşılaştırır. El ile yeni bir .vsct dosyası oluşturma işlemi açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md)  
  Komut tablosu XML yapılandırma dosyasını her bir bölümünü hakkında ayrıntılar sağlar.  
   
- [Komut tablosu yapılandırma (. Ctc) dosyaları](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Komut tablosu yapılandırma (. Ctc) dosyaları](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Kullanım dışı .ctc dosya biçimi'ne genel bakış sunar.  
   
  [VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

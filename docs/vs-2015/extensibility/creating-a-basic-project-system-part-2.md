@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685420"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje Sistemi Oluşturma, Bölüm 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$, bir kullanıcı tarafından sağlanan adıdır **yeni proje** iletişim kutusu, tüm güvenli olmayan karakterleri ve boşlukları kaldırmak için değiştirildi.  
   
-  Şablon parametreleri tam bir listesi için bkz. [şablon parametreleri](../ide/template-parameters.md).  Kendi özel bir şablon parametresi oluşturmak istiyorsanız, bkz. [NIB: Nasıl yapılır: Şablonlara özel parametreleri geçirmek](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Şablon parametreleri tam bir listesi için bkz. [şablon parametreleri](../ide/template-parameters.md).  Kendi özel bir şablon parametresi oluşturmak istiyorsanız, bkz. [NIB: Nasıl yapılır: Şablonlara özel parametreleri geçirmek](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Proje şablonu parametreleri değiştirmek için  
   

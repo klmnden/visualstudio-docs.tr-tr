@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680406"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları Oluşturma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
   
      **Özellik sayfaları** penceresi açılır.  
   
-     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [Proje Tasarımcısı giriş](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Oluşturma ve proje yapılandırmalarını değiştirme  
   
@@ -126,4 +126,4 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   
  [Projeleri ve Visual Studio çözümleri oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB nasıl yapılır: Proje özellikleri ve yapılandırma ayarlarını değiştirme](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB nasıl yapılır: Proje özellikleri ve yapılandırma ayarlarını değiştirme](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

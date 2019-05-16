@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424534"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675077"
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 > Tüm projeleri Visual Studio'da dolaylı bir başvuru içeren `System.Core`bile `System.Core` başvurular listesinden kaldırılır.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Çalışma zamanında başvuruları için paylaşılan bileşenleri  
- Çalışma zamanında bileşenler projenin veya çıkış yolunda olmalıdır [genel derleme önbelleği](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Bu konumlardan birinde olmayan bir nesneye başvuru içeriyorsa, projeyi oluşturduğunuzda projenin çıktı yoluna başvuruyu kopyalamanız gerekir. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Özelliği, bu kopyanın çıkarılmak zorunda olup olmadığını gösterir. Değer ise **True**, projeyi oluşturduğunuzda proje dizinine başvuru kopyalanır. Değer ise **False**, ise başvuru kopyalanmaz.  
+ Çalışma zamanında bileşenler projenin veya çıkış yolunda olmalıdır [genel derleme önbelleği](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Bu konumlardan birinde olmayan bir nesneye başvuru içeriyorsa, projeyi oluşturduğunuzda projenin çıktı yoluna başvuruyu kopyalamanız gerekir. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> Özelliği, bu kopyanın çıkarılmak zorunda olup olmadığını gösterir. Değer ise **True**, projeyi oluşturduğunuzda proje dizinine başvuru kopyalanır. Değer ise **False**, ise başvuru kopyalanmaz.  
   
  GAC'ye kayıtlı bir özel bileşene başvuru içeren bir uygulamayı dağıtırsanız, bileşen uygulama ile birlikte açmamasından dağıtılmaz <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> ayarı. Önceki sürümlerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ayarladığınız <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> derlemenin dağıtıldığı emin olmak için bir başvuru özelliği. Şimdi, derlemeyi \Bin klasörüne el ile eklemelisiniz. Bu, özel kod ile size tanıdık olmayan yayımlama riskini azaltarak, scrutiny altında tüm özel kodları yerleştirir.  
   
@@ -118,5 +118,5 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)   
- [Bütünleştirilmiş kodlarla programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Bütünleştirilmiş kodlarla programlama](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [Nasıl yapılır: Başvuru Yöneticisi’ni Kullanarak Başvuru Ekleme veya Kaldırma](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

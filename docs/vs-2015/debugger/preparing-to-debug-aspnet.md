@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777694"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696118"
 ---
 # <a name="preparing-to-debug-aspnet"></a>ASP.NET'de Hata Ayıklamaya Hazırlanıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Bu bölümde nasıl ayarlandığı açıklanmaktadır [!INCLUDE[vsprvs](../inclu
  [Uzak Hata Ayıklama Web Uygulamaları Önkoşulları](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Uzak bir sunucuda bir Web uygulamasında hata ayıklama için önkoşulları listeler.  
   
- [Nasıl yapılır: Windows Server 2003'te IIS yapılandırma](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Nasıl yapılır: Windows Server 2003'te IIS yapılandırma](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Hata ayıklama için sistem gereksinimleri hata ayıklama için gereken özel bir yapılandırma adımları ele alınmıştır [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] üzerinde [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Nasıl yapılır: Kendini Barındıran WCF Hizmetinde Hata Ayıklama](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ Bu bölümde nasıl ayarlandığı açıklanmaktadır [!INCLUDE[vsprvs](../inclu
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   
- [ASP.NET ve IIS yapılandırması](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [ASP.NET ve IIS yapılandırması](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

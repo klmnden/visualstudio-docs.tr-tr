@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 109810e3650ec4cf01d781026eddf09834fc3f18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416915"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703108"
 ---
 # <a name="how-to-create-project-templates"></a>Nasıl yapılır: Proje şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Bu yordamı kullanarak bir şablonu oluşturmanızı sağlayan **şablonu dışa
 1. Bir proje oluşturun.  
   
     > [!NOTE]
-    > Bir proje adlandırma şablon kaynağını ne zaman yalnızca geçerli tanımlayıcı karakterler kullanın. Bir proje adı geçersiz karakterler ile'den dışarı aktarılan bir şablonu gelecekteki projeleri şablonu temel alan derleme hatalarına neden olabilir. Geçerli tanımlayıcı karakter hakkında daha fazla bilgi için bkz. [bildirilen öğe adları](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
+    > Bir proje adlandırma şablon kaynağını ne zaman yalnızca geçerli tanımlayıcı karakterler kullanın. Bir proje adı geçersiz karakterler ile'den dışarı aktarılan bir şablonu gelecekteki projeleri şablonu temel alan derleme hatalarına neden olabilir. Geçerli tanımlayıcı karakter hakkında daha fazla bilgi için bkz. [bildirilen öğe adları](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
 2. Bir şablon olarak dışarı hazır olana kadar proje düzenleyin.  
   

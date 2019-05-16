@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa4eea56321d636efb6458b52b8ad2f271e439ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433755"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673843"
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
  Aşağıdaki seçenekler, görüntülenecek veya değiştirilecek platform ve yapılandırmayı seçmenize olanak sağlar.  
   
 > [!NOTE]
-> Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. Bu nedenle, bu seçenekler görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. Bu nedenle, bu seçenekler görüntülenmez. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Yapılandırma**  
  Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarları **etkin (hata ayıklama)** (varsayılan değer), **hata ayıklama**, **yayın**, veya **yapılandırmalarında**.  
@@ -46,7 +46,7 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
  Aşağıdaki seçenekler bazı C# Derleyici ayarlarını yapılandırmanıza olanak sağlar.  
   
  **Koşullu derleme simgeleri**  
- Üzerinde koşullu derleme yapılacak olan sembolleri belirtir. Simgeleri bir noktalı virgül ile ayırın (";"). Daha fazla bilgi için [/ define (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
+ Üzerinde koşullu derleme yapılacak olan sembolleri belirtir. Simgeleri bir noktalı virgül ile ayırın (";"). Daha fazla bilgi için [/ define (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
   
  **DEBUG sabitini tanımlayın**  
  Uygulamanızdaki tüm kaynak kodu dosyalarında sembol olarak DEBUG tanımlar. Bu seçeneğin seçilmesi kullanmaya eşdeğerdir `/define:DEBUG` komut satırı seçeneği.  
@@ -57,7 +57,7 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
  **Hedef CPU**  
  Çıktı dosyası tarafından hedeflenecek işlemciyi belirtir. Seçin **x86** seçin tüm 32 bit Intel uyumlu işlemci için **x64** herhangi 64-bit Intel uyumlu işlemci için seçin **ARM** ARM işlemcileri için veya seçin **Herhangi bir CPU** tüm işlemcilerin kabul edilebilir olduğunu belirtmek için. **Herhangi bir CPU** uygulamanın çok çeşitli donanımlar üzerinde çalışmasına izin verdiğinden projeler için varsayılan değerdir.  
   
- Daha fazla bilgi için [/Platform (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
+ Daha fazla bilgi için [/Platform (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
   
  **32 bit tercih edin**  
  Varsa **Prefer32-bit** onay kutusu seçildiğinde, uygulama bir 32 bit uygulama olarak, hem 32-bit hem de 64 bit Windows sürümlerinde çalışır. Onay kutusu işaretli değilse uygulama Windows ve Windows 64 bit sürümlerinde 64 bit uygulama olarak 32-bit sürümleri 32-bit uygulama olarak çalışır.  
@@ -73,22 +73,22 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
 - Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.  
   
   **Güvenli olmayan koda izin ver**  
-  Kullanan koda izin verir [güvenli](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) derlemek için anahtar sözcüğü. Daha fazla bilgi için [/ unsafe (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  Kullanan koda izin verir [güvenli](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) derlemek için anahtar sözcüğü. Daha fazla bilgi için [/ unsafe (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
   **Kodu En İyileştir**  
-  Etkinleştirmek veya çıkış dosyanızı daha küçük, daha hızlı ve daha verimli yapmak için derleyici tarafından gerçekleştirilen iyileştirmeleri devre dışı bırakın. Daha fazla bilgi için [/ optimize (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  Etkinleştirmek veya çıkış dosyanızı daha küçük, daha hızlı ve daha verimli yapmak için derleyici tarafından gerçekleştirilen iyileştirmeleri devre dışı bırakın. Daha fazla bilgi için [/ optimize (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Hatalar ve Uyarılar  
  Aşağıdaki ayarlar, hata ve uyarı yapı işlemi seçeneklerini yapılandırmak için kullanılır.  
   
  **Uyarı düzeyi**  
- Derleyici uyarılarını görüntüleme düzeyini belirtir. Daha fazla bilgi için [/ warn (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
+ Derleyici uyarılarını görüntüleme düzeyini belirtir. Daha fazla bilgi için [/ warn (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
   
  **Uyarıları bastırma**  
- Derleyicinin bir veya daha fazla uyarı oluşturma yeteneğini engeller. Birden çok uyarı numaralarını virgülle veya noktalı virgül ile ayırın. Daha fazla bilgi için [/nowarn (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
+ Derleyicinin bir veya daha fazla uyarı oluşturma yeteneğini engeller. Birden çok uyarı numaralarını virgülle veya noktalı virgül ile ayırın. Daha fazla bilgi için [/nowarn (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
   
 ## <a name="treat-warnings-as-errors"></a>Uyarıları hata olarak değerlendir  
- Aşağıdaki ayarlar hangi uyarıların hata olarak kabul edileceğini belirtmek için kullanılır. Hangi koşullar altında yapı bir uyarı ile karşılaştığında, bir hata döndüreceğini belirtmek için aşağıdaki seçeneklerden birini seçin. Daha fazla bilgi için [/warnaserror (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
+ Aşağıdaki ayarlar hangi uyarıların hata olarak kabul edileceğini belirtmek için kullanılır. Hangi koşullar altında yapı bir uyarı ile karşılaştığında, bir hata döndüreceğini belirtmek için aşağıdaki seçeneklerden birini seçin. Daha fazla bilgi için [/warnaserror (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
   
  **Yok.**  
  Uyarı hata olarak değerlendirir.  
@@ -103,22 +103,22 @@ Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapı
  Aşağıdaki ayarlar, yapı işlemine yönelik çıktı seçeneklerini yapılandırmak için kullanılır.  
   
  **Çıkış yolu**  
- Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Bu kutuya yapı çıkış yolunu girin veya seçin **Gözat** düğmesine bir yol belirtin. Yolun göreli olduğuna dikkat edin; mutlak bir yol girerseniz, göreli olarak kaydedilecektir. Varsayılan yol bin\Debug veya bin\Release olan\\. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Bu kutuya yapı çıkış yolunu girin veya seçin **Gözat** düğmesine bir yol belirtin. Yolun göreli olduğuna dikkat edin; mutlak bir yol girerseniz, göreli olarak kaydedilecektir. Varsayılan yol bin\Debug veya bin\Release olan\\. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. **Derleme** komutunu **hata ayıklama** menüsündeki (F5) bağımsız olarak, hata ayıklama konumuna derleme koyacaktır **çıkış yolu** belirtirsiniz. Ancak, **derleme** komutunu **derleme** menü, belirttiğiniz konuma koyar. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. **Derleme** komutunu **hata ayıklama** menüsündeki (F5) bağımsız olarak, hata ayıklama konumuna derleme koyacaktır **çıkış yolu** belirtirsiniz. Ancak, **derleme** komutunu **derleme** menü, belirttiğiniz konuma koyar. Daha fazla bilgi için [hata ayıklama ve dağıtım proje yapılandırmalarını](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **XML belge dosyası**  
- Belgeleme açıklamalarının işleneceği dosyanın adını belirtir. Daha fazla bilgi için [/doc (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
+ Belgeleme açıklamalarının işleneceği dosyanın adını belirtir. Daha fazla bilgi için [/doc (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
   
  **COM birlikte çalışması için kaydol**  
- Yönetilen uygulamanızın COM nesnesinin yönetilen uygulamanızla etkileşmesini sağlar bir COM nesnesi (COM çağrılabilir sarmalayıcısı) açığa çıkarır gösterir. **Çıkış türü** özelliğinde [uygulama sayfası](../../ide/reference/application-page-project-designer-visual-basic.md) , **Proje Tasarımcısı** bu uygulama kümesi için **sınıf kitaplığı** içinde için sipariş **kaydetme COM birlikte çalışması için** özelliği kullanılabilir. Dahil edebileceğiniz bir örnek sınıfı için [!INCLUDE[csprcs](../../includes/csprcs-md.md)] uygulama ve bir COM nesnesi olarak gösterebileceğiniz [örnek COM sınıfı](http://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
+ Yönetilen uygulamanızın COM nesnesinin yönetilen uygulamanızla etkileşmesini sağlar bir COM nesnesi (COM çağrılabilir sarmalayıcısı) açığa çıkarır gösterir. **Çıkış türü** özelliğinde [uygulama sayfası](../../ide/reference/application-page-project-designer-visual-basic.md) , **Proje Tasarımcısı** bu uygulama kümesi için **sınıf kitaplığı** içinde için sipariş **kaydetme COM birlikte çalışması için** özelliği kullanılabilir. Dahil edebileceğiniz bir örnek sınıfı için [!INCLUDE[csprcs](../../includes/csprcs-md.md)] uygulama ve bir COM nesnesi olarak gösterebileceğiniz [örnek COM sınıfı](https://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
   
  **Serileştirme derlemesi oluştur**  
- XML serileştirme derlemeleri oluşturmak için derleyicinin XML serileştiricisi Oluşturma Aracı (Sgen.exe) kullanıp kullanmayacağını belirtir. Serileştirme derlemeleri başlatma performansını geliştirebilir <xref:System.Xml.Serialization.XmlSerializer> kodunuzda türleri serileştirmek için bu sınıfı kullandıysanız. Varsayılan olarak, bu seçeneği ayarlamak **otomatik**, yalnızca kullandıysanız, serileştirme derlemelerinin oluşturulacağını belirten <xref:System.Xml.Serialization.XmlSerializer> kodunuzdaki XML kodlama. **Kapalı** serileştirme derlemelerinin hiçbir zaman, kodunuzun kullanıp bağımsız olarak oluşturulmamasını belirtir <xref:System.Xml.Serialization.XmlSerializer>. **Üzerinde** serileştirme derlemelerinin her zaman oluşturulacağını belirtir. Serileştirme derlemeleri yeniden adlandırılır `TypeName`. XmlSerializers.dll. Daha fazla bilgi için [XML serileştiricisi Oluşturma Aracı (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+ XML serileştirme derlemeleri oluşturmak için derleyicinin XML serileştiricisi Oluşturma Aracı (Sgen.exe) kullanıp kullanmayacağını belirtir. Serileştirme derlemeleri başlatma performansını geliştirebilir <xref:System.Xml.Serialization.XmlSerializer> kodunuzda türleri serileştirmek için bu sınıfı kullandıysanız. Varsayılan olarak, bu seçeneği ayarlamak **otomatik**, yalnızca kullandıysanız, serileştirme derlemelerinin oluşturulacağını belirten <xref:System.Xml.Serialization.XmlSerializer> kodunuzdaki XML kodlama. **Kapalı** serileştirme derlemelerinin hiçbir zaman, kodunuzun kullanıp bağımsız olarak oluşturulmamasını belirtir <xref:System.Xml.Serialization.XmlSerializer>. **Üzerinde** serileştirme derlemelerinin her zaman oluşturulacağını belirtir. Serileştirme derlemeleri yeniden adlandırılır `TypeName`. XmlSerializers.dll. Daha fazla bilgi için [XML serileştiricisi Oluşturma Aracı (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
  **Gelişmiş**  
  Görüntülemek için sonuçlara tıklayın [Gelişmiş derleme Ayarları iletişim kutusu (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Özellikleri başvurusu](../../ide/reference/project-properties-reference.md)   
- [C# Derleyici Seçenekleri](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ [C# Derleyici Seçenekleri](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

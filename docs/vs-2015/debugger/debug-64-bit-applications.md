@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695911"
 ---
 # <a name="debug-64-bit-applications"></a>64 Bit uygulamalarda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ Yerel bilgisayarda veya uzak bilgisayarda çalışan bir 64-bit uygulamada hata 
 - Visual Studio ile bir yanıt vermemesine veya performans sorunu içine çalışıyor. Sorun düzenli olarak ortaya Visual Studio (devenv.exe) ve çalışan işleminden (msvsmon.exe) dökümleri toplayın ve bunları Microsoft'a gönderin. 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [64-bit uygulamalar](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Programları 64 Bit için yapılandırma](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [64-bit uygulamalar](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Programları 64 Bit için yapılandırma](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Visual Studio IDE 64 Bit desteği](../ide/visual-studio-ide-64-bit-support.md)   
  [Döküm dosyalarını kullanma](../debugger/using-dump-files.md)   
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

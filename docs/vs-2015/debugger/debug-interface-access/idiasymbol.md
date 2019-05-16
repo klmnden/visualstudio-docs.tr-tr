@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692896"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|İşlev longjmp komut (C stili özel durum işleme parçası) içerip içermediğini belirten bir bayrak alır.|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|Yönetilen kod modülü içerip içermediğini belirten bir bayrak alır.|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|Kullanıcı tanımlı veri türü tür tanımlarını içe olup olmadığını belirten bir bayrak alır.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Derlenecek ve işlev güvenlik denetimleri derlenmiş olup olmadığını belirten bir bayrak alır (aracılığıyla [/GS (arabellek güvenlik denetimi)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici anahtarı).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Derlenecek ve işlev güvenlik denetimleri derlenmiş olup olmadığını belirten bir bayrak alır (aracılığıyla [/GS (arabellek güvenlik denetimi)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici anahtarı).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|İşlev Win32 stili yapılandırılmış özel durum işleme sahip olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|İşlev setjmp komut içerip içermediğini belirten bir bayrak alır.|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|Kullanıcı tanımlı veri türü bir dolaylı sanal temel sınıf olup olmadığını belirten bir bayrak alır.|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|Modülü yerel koda ortak Ara dil (CIL gelen) dönüştürülüp dönüştürülmediğini belirten bir bayrak alır.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|Kullanıcı tanımlı veri türü öğeler için belirli bir sınırı hizalı olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|Bu sembol üst düzey gölgelendirici dili (HLSL) veri temsil edip etmediğini belirtir.|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Modül ile derlenen olup olmadığını belirten bir bayrak alır [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) derleyici anahtarı.|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Modül ile derlenen olup olmadığını belirten bir bayrak alır [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) derleyici anahtarı.|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|Yönetilen derlenecek bağlayıcı'nın LTCG ile bağlı olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|Matris satır büyük olup olmadığını belirtir.|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|Yönetilen derlenecek (yalnızca meta veriler içeren) bir .netmodule olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|Belirtir olup olmadığını `this` işaretçi birden çok devralma ile veri üyesine işaret eder.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|İşlev olup olmadığını belirten bir bayrak alır [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) özniteliği.|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|İşlev olup olmadığını belirten bir bayrak alır [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) özniteliği.|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|Değişken iyileştirmede olup olmadığını belirtir.|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|Belirtir olup olmadığını `this` işaretçi üzerinde bir sembol değeri temel alır.|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|Bu simgenin bir veri üyesinin işaretçisinin olup olmadığını belirtir.|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|Simgenin Microsoft Ara dil (MSIL) kodu başvurmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|Simgenin adını alır.|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|Kullanıcı tanımlı veri türü iç içe yerleştirilmiş olup olmadığını belirten bir bayrak alır.|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|İşlevi ile işaretlenmiş olup olmadığını belirten bir bayrak alır [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) özniteliği.|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|İşlevi ile bildirilmiş olup olmadığını belirten bir bayrak alır [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) özniteliği.|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|İşlevi ile işaretlenmiş olup olmadığını belirten bir bayrak alır [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) özniteliği.|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|İşlevi ile bildirilmiş olup olmadığını belirten bir bayrak alır [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) özniteliği.|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|Yığın sıralama yok yığın arabelleği denetimi bir parçası olarak yapılıyordu olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|İşlev veya etiket hiçbir zaman ulaşıldığında olup olmadığını belirten bir bayrak alır.|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|Hızlandırıcı işaretçi etiket sayısı, bir C++ AMP saplama işlevde döndürür.|  

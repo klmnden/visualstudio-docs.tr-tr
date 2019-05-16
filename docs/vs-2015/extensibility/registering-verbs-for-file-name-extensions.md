@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685277"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Dosya Adı Uzantıları için Fiil Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir uygulama bir dosya adı uzantısı ilişkilendirme genellikle bir kullanıcı bir dosyayı çift tıkladığında gerçekleşen tercih edilen bir eylem vardır. Bu eyleme karşılık gelen bir fiil, örneğin açık eylem bağlandığı tercih edilir.  
   
- HKEY_CLASSES_ROOT bulunan Kabuk anahtarı kullanarak bir uzantı için bir programlı tanımlayıcısı (ProgID) ile ilişkili olan fiiller kaydedebilirsiniz\\*ProgID*\shell. Daha fazla bilgi için [dosya türleri](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ HKEY_CLASSES_ROOT bulunan Kabuk anahtarı kullanarak bir uzantı için bir programlı tanımlayıcısı (ProgID) ile ilişkili olan fiiller kaydedebilirsiniz\\*ProgID*\shell. Daha fazla bilgi için [dosya türleri](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Standart fiiller kaydediliyor  
  İşletim sistemi, aşağıdaki standart fiiller tanır:  

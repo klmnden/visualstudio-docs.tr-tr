@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b16933580037a8d4d331a1fd2b523b85b746dbdb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2077b1df6d6362c924527e296d36c041e7bd9929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693791"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ ms.locfileid: "59668164"
  [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [WPF uygulaması (WPF) oluşturma](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [WPF uygulaması (WPF) oluşturma](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

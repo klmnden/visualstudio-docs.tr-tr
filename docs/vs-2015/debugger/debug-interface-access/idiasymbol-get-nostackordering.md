@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c852ca5eb68982e8f78849f14aa3562744469c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e07bf52f86cbf55c46c82f685afd63327545dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435753"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698235"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu işlev, yığın sıralama yok yığın arabelleği denetimi bir parçası olarak yapılıyordu olup olmadığını gösteren bir bayrak alır ([/GS (arabellek güvenlik denetimi)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici seçeneği).  
+Bu işlev, yığın sıralama yok yığın arabelleği denetimi bir parçası olarak yapılıyordu olup olmadığını gösteren bir bayrak alır ([/GS (arabellek güvenlik denetimi)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) derleyici seçeneği).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,4 +52,4 @@ HRESULT get_noStackOrdering(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (Arabellek Güvenlik Denetimi)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS (Arabellek Güvenlik Denetimi)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

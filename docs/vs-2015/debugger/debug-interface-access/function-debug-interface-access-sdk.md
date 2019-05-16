@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b403f457cead70f113609e30cebdcf1c53c1341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692179"
 ---
 # <a name="function-debug-interface-access-sdk"></a>İşlev (Arabirim Erişimi SDK'sında Hata Ayıklama)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Her işlev tarafından tanımlanan bir `SymTagFunction` sembol.
 |[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` İşlev C++ stili özel durum (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) işleme içermesi durumunda.|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` işlev (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) zaman uyumsuz özel durum işleme içermesi durumunda.|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` işlev satır içi derleme (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) içeriyorsa.|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` işlev içeren bir [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) çağırın.|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` işlev içeren bir [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) çağırın.|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` işlev güvenlik denetimleri (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) içeriyorsa.|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` işlev Win32 stili yapılandırılmış özel durum (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) işleme içeriyorsa.|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` işlev içeren bir [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) çağırın.|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` işlev içeren bir [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) çağırın.|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` işlev kesme (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) geri döndürme varsa.|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` bir işlev giriş sanal ise.|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` işlev biri ile işaretlendiyse [satır içi, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) öznitelikleri.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` işlevi ile işaretlenmişse [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) özniteliği (yalnızca DIA SDK V8.0 veya üzeri).|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` işlevi ile işaretlenmişse [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) özniteliği (yalnızca DIA SDK V8.0 veya üzeri).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` işlev (yalnızca DIA SDK V8.0 veya üzeri sürümlerde) statik ise.|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|İşlev kodunun, konumundan başlayan bayt sayısı.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Kapsayan derlenecek dosya simgesi.|  

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbdbee2043066716cca2646847c42d0878bab385
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 57fa315be38b867365c4a922b8ad8b98d784c3f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699985"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ Kullanım **AdvancedBuild ayarları** iletişim kutusunun **Proje Tasarımcısı
   
    Geçerli sürümünü hedefler.  
   
-  Daha fazla bilgi için [/langversion (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94).  
+  Daha fazla bilgi için [/langversion (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94).  
   
   **İç derleyici hata bildirimi**  
-  Derleyici hatalarını Microsoft'a belirtir. Varsa kümesine **istemi** derleyici iç hatası oluşursa (varsayılan), bir komut istemi bir hata raporu elektronik olarak Microsoft'a gönderme seçeneğini verir elde edersiniz. Varsa kümesine **Gönder**, bir hata raporu otomatik olarak gönderilir. Varsa kümesine **kuyruk**, hata raporlarını kuyruğa alınacak. Varsa kümesine **hiçbiri**, yalnızca derleyicinin metin çıktısında hata bildirilir. Daha fazla bilgi için [/errorreport (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf).  
+  Derleyici hatalarını Microsoft'a belirtir. Varsa kümesine **istemi** derleyici iç hatası oluşursa (varsayılan), bir komut istemi bir hata raporu elektronik olarak Microsoft'a gönderme seçeneğini verir elde edersiniz. Varsa kümesine **Gönder**, bir hata raporu otomatik olarak gönderilir. Varsa kümesine **kuyruk**, hata raporlarını kuyruğa alınacak. Varsa kümesine **hiçbiri**, yalnızca derleyicinin metin çıktısında hata bildirilir. Daha fazla bilgi için [/errorreport (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf).  
   
   **Aritmetik Taşma ve alttaşmayı denetle**  
-  Bir tamsayı aritmetik ifadesi, kapsamı içinde olup olmadığını belirtir [kullanıma](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) veya [denetlenmeyen](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) anahtar sözcükleri ve veri türü aralık dışında bir değer sonuçları bir çalışma zamanı neden olur özel durum. Daha fazla bilgi için [/ checked (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).  
+  Bir tamsayı aritmetik ifadesi, kapsamı içinde olup olmadığını belirtir [kullanıma](https://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) veya [denetlenmeyen](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) anahtar sözcükleri ve veri türü aralık dışında bir değer sonuçları bir çalışma zamanı neden olur özel durum. Daha fazla bilgi için [/ checked (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b).  
   
   **Mscorlib.dll dosyasına başvurma**  
-  Mscorlib.dll programınıza tüm tanımlama içeri olup olmadığını belirtir <xref:System> ad alanı. Tanımlayın veya kendi oluşturmak istiyorsanız bu kutuyu <xref:System> ad alanı ve nesneler. Daha fazla bilgi için [/nostdlib (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
+  Mscorlib.dll programınıza tüm tanımlama içeri olup olmadığını belirtir <xref:System> ad alanı. Tanımlayın veya kendi oluşturmak istiyorsanız bu kutuyu <xref:System> ad alanı ve nesneler. Daha fazla bilgi için [/nostdlib (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f).  
   
 ## <a name="output"></a>Çıkış  
  Aşağıdaki seçenekler Gelişmiş çıkış seçenekleri belirtmenize olanak verir.  
   
  **Hata ayıklama bilgileri**  
- Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir. Bir uygulamanın hata ayıklama performansını yapılandırma hakkında daha fazla bilgi için bkz: [bir görüntü için hata ayıklama kolaylaştıracak](http://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Bu ayar, şu seçeneklere sahiptir:  
+ Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir. Bir uygulamanın hata ayıklama performansını yapılandırma hakkında daha fazla bilgi için bkz: [bir görüntü için hata ayıklama kolaylaştıracak](https://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Bu ayar, şu seçeneklere sahiptir:  
   
 - **Yok**  
   
@@ -68,14 +68,14 @@ Kullanım **AdvancedBuild ayarları** iletişim kutusunun **Proje Tasarımcısı
   
    Kaynak kodu programın hata ayıklayıcıda başlatıldı ancak çalışan programa hata ayıklayıcıya bağlı olduğu assembler yalnızca görüntüler hata ayıklamasına izin verir.  
   
-  Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969).  
+  Daha fazla bilgi için [/Debug (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969).  
   
   **Dosya hizalama**  
-  Bölüm boyutu, çıkış dosyasında belirtir. Geçerli değerler **512**, **1024**, **2048**, **4096**, ve **8192**. Bu değerler, bayt cinsinden ölçülür. Her bölümde, çıkış dosyasının boyutu etkileyen bu değer,'in katı bir sınır üzerinde hizalanır. Daha fazla bilgi için [/filealign (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073).  
+  Bölüm boyutu, çıkış dosyasında belirtir. Geçerli değerler **512**, **1024**, **2048**, **4096**, ve **8192**. Bu değerler, bayt cinsinden ölçülür. Her bölümde, çıkış dosyasının boyutu etkileyen bu değer,'in katı bir sınır üzerinde hizalanır. Daha fazla bilgi için [/filealign (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073).  
   
   **DLL temel adresi**  
-  Bir DLL yüklemek için tercih edilen temel adresini belirtir. Bir DLL için varsayılan taban adresi belirlediği [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] ortak dil çalışma zamanı. Daha fazla bilgi için [/baseaddress (C# Derleyici Seçenekleri)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608).  
+  Bir DLL yüklemek için tercih edilen temel adresini belirtir. Bir DLL için varsayılan taban adresi belirlediği [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] ortak dil çalışma zamanı. Daha fazla bilgi için [/baseaddress (C# Derleyici Seçenekleri)](https://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C# Derleyici Seçenekleri](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
+ [C# Derleyici Seçenekleri](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)

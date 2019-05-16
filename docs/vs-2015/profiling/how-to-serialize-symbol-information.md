@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687010"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: Sembol bilgilerini seri hale getirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Uygulamanızı çözümlemek zorunda semboller serileştirmek. Sembol seri hale 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
  [Nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
- [Nasıl yapılır: Analiz edilen raporu dosyaları Kaydet](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Nasıl yapılır: Analiz edilen raporu dosyaları Kaydet](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

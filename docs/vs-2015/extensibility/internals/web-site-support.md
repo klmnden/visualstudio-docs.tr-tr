@@ -10,12 +10,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91deb6d2e3ec58533ac9339c8c94634db23ec996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687687"
 ---
 # <a name="web-site-support"></a>Web Sitesi Desteği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Bir Web sitesi proje sistemi Web projeleri oluşturan bir proje sistemidir. Web 
   
  Web sitesi proje sistemleri, varolan bir proje sistemine şablonları ve kaydı öznitelikleri ekleyerek oluşturulur. Bu öznitelikler dil için IntelliSense sağlayıcı seçer. IntelliSense sağlayıcı uygulaması başvuruları işler ve önbelleğe alınmamış akıllı bir Web sayfası istenen dil derleyicisini çağırır.  
   
- Web sayfaları derlemek için kullanılan dil derleyici ile kaydedilmelidir [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Kullanabileceğiniz [ \<derleyici > öğesi](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) Web.config dosyasında aşağıdaki örnekte olduğu gibi derleyici kaydetmek için:  
+ Web sayfaları derlemek için kullanılan dil derleyici ile kaydedilmelidir [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Kullanabileceğiniz [ \<derleyici > öğesi](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) Web.config dosyasında aşağıdaki örnekte olduğu gibi derleyici kaydetmek için:  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  

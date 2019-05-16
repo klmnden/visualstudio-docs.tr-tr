@@ -25,12 +25,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d564162a92976037729c4ad638136d7c1e827c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70914da9be4046589a0ca3b8e5fd4ae13210ca51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689257"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Nasıl yapılır: Etkinleştirme ve devre dışı Düzenle ve devam et
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Düzenle ve devam et, etkinleştirmek veya devre dışı **seçenekleri** tasar�
 3. Etkinleştirmek için seçin **etkinleştirme Düzenle ve devam et** onay kutusu. Devre dışı bırakmak için onay kutusunu temizleyin.  
   
    > [!NOTE]
-   > Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [yapılandırma IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [yapılandırma IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 4. **Tamam**'ı tıklatın.  
   

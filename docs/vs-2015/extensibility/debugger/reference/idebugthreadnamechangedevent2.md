@@ -12,12 +12,12 @@ ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c65a3aeb4f4973bd4fbe9310af8b1f9b4fd21a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de16e07589c9c6276445d70ad4f2b7f9812a288e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704823"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugThreadNameChangedEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- Bu arabirim için bir iş parçacığının adı değiştirildi rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
+ Bu arabirim için bir iş parçacığının adı değiştirildi rapor DE uygular. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) arabirim uygulandığında, bu arabirimle aynı nesne üzerinde. SDM kullanan [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) erişimi `IDebugEvent2` arabirimi.  
   
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  KODU oluşturur ve bu olay nesne için bir iş parçacığının adı değiştirildi rapor gönderir. Olay kullanılarak gönderilen [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ayıklanan programa eklendiğinde SDM tarafından sağlanan geri çağırma işlevi.  

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697391"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklen
   
  Yeni, iptal edilebilir bekleme iletişim kutusu diğer güncelleştirme 1 geliştirmeleri içerir ve bir dosya desteklemediği zaman bildirim Düzenle ve devam et. Güncelleştirme 1 iyileştirmeleri hakkında daha fazla bilgi için bkz. [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 1 için geliştirmeler](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) Visual Studio 2013 güncelleştirme 3'te kullanılmaya başlanan derleyici seçeneği olmadan ikili dosyaları derlenmiş için bu ek bilgiler için .pdb (simge) dosyaları ekler [/Od (devre dışı bırak (Hata Ayıkla)) ](http://msdn.microsoft.com/library/aafb762y.aspx) seçeneği.  
+ [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) Visual Studio 2013 güncelleştirme 3'te kullanılmaya başlanan derleyici seçeneği olmadan ikili dosyaları derlenmiş için bu ek bilgiler için .pdb (simge) dosyaları ekler [/Od (devre dışı bırak (Hata Ayıkla)) ](https://msdn.microsoft.com/library/aafb762y.aspx) seçeneği.  
   
  **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: İyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).  
   
@@ -70,7 +70,7 @@ Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklen
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Yürütme noktası sıfırlama  
  Bazı kod değişiklikleri, Düzenle ve devam et değişiklikleri uygulandığında, yeni bir konuma taşımak için yürütme noktasını neden olabilir. Düzenle ve devam et yerleştirir yürütme noktası olarak doğru bir şekilde, ancak sonuçları her durumda doğru olmayabilir.  
   
- Visual C++'da, bir iletişim kutusu yürütme noktası değiştiğinde bildirir. Hata ayıklama devam etmeden önce konumun doğru olduğunu doğrulamanız gerekir. Doğru değilse, **sonraki deyimi Ayarla** komutu. Daha fazla bilgi için [yürütülecek sonraki deyimi ayarlamak](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ Visual C++'da, bir iletişim kutusu yürütme noktası değiştiğinde bildirir. Hata ayıklama devam etmeden önce konumun doğru olduğunu doğrulamanız gerekir. Doğru değilse, **sonraki deyimi Ayarla** komutu. Daha fazla bilgi için [yürütülecek sonraki deyimi ayarlamak](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Eski kod ile çalışma  
  Bazı durumlarda, Düzenle ve devam et kod değişikliklerini yürütülebilir dosyaya hemen uygulanamaz, ancak hata ayıklama devam ederseniz daha sonra kod değişikliklerini uygulamak mümkün olabilir. Bu geçerli işlevi çağıran bir işlev düzenlerseniz veya çağrı yığınında bir işleve 64 bayttan daha fazla yeni değişkenleri eklerseniz gerçekleşir  

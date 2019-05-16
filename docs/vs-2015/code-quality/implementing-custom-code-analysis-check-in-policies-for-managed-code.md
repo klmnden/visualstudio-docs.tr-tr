@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0b22eabc4df4b6ce7e8596f0c6546cb3a4c61c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696664"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
  Bir takım projesi için özel bir kural oluşturmak için önce kümesinde iade ilkesi kuralı için özel bir klasör oluşturun **Kaynak Denetim Gezgini**. Ardından, kural kümesi dosyası oluşturun ve dosyayı sürüm denetimine ekleyin. Son olarak, kural olarak kod çözümleme iade ilkesi takım projesi için kümesi belirtin.  
   
 > [!NOTE]
-> Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Bir takım projesinde bir klasör oluşturmak için önce takım projesi kök yerel bilgisayardaki bir konuma eşlemeniz gerekir. Daha fazla bilgi için [oluşturma ve çalışma alanları (eski) ile çalışma](https://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Sürüm denetimi klasörü İade İlkesi kural kümesi oluşturmak için  
   
@@ -61,7 +61,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
   
 1. İçinde **Kaynak Denetim Gezgini**yeni klasörü sağ tıklatın ve ardından **öğeleri klasöre Ekle**.  
   
-     Daha fazla bilgi için [sürüm denetimi kullanın](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Daha fazla bilgi için [sürüm denetimi kullanın](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 2. Kural kümesi oluşturduğunuz dosya tıklayın ve ardından **son**.  
   

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f13a97adbec1da1bd0f279e14cf510532b9c62f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688632"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da verilere erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
  Bu teknolojiler birini kullanmak için bir gereksinim değildir. Performans kritik olduğunda özellikle bazı senaryolarda, yalnızca bir DataReader nesnesi veritabanından okunan ve bir koleksiyon nesnesi listesi gibi ihtiyaç duyduğunuz değerleri kopyalayın için kullanabileceğiniz\<T >.
 
 ### <a name="native-c"></a>Yerel C++
- SQL Server'a bağlanma C++ uygulamalarını kullanması gereken [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Diğer veritabanlarını kullanarak erişebileceğiniz [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) veya doğrudan OLE DB sürücüleri. ODBC için geçerli standart veritabanı arabirimi olsa da, çoğu veritabanı sistemi ODBC arabirimi üzerinden erişilemeyen özel işlevsellik sağlar.  OLE DB, yine de desteklenir, ancak yeni uygulamalar için önerilen eski bir COM veri erişimi teknolojisidir.  Daha fazla bilgi için [veri erişimi](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
+ SQL Server'a bağlanma C++ uygulamalarını kullanması gereken [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Diğer veritabanlarını kullanarak erişebileceğiniz [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) veya doğrudan OLE DB sürücüleri. ODBC için geçerli standart veritabanı arabirimi olsa da, çoğu veritabanı sistemi ODBC arabirimi üzerinden erişilemeyen özel işlevsellik sağlar.  OLE DB, yine de desteklenir, ancak yeni uygulamalar için önerilen eski bir COM veri erişimi teknolojisidir.  Daha fazla bilgi için [veri erişimi](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
 
  C++ programları, REST hizmetlerini kullanabileceğiniz [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -107,7 +107,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 #### <a name="data-modeling"></a>Veri modelleme
  Visual Studio C++ için ORM katman sağlamaz.  [ODBC](http://www.codesynthesis.com/products/odb/) C++ için popüler bir açık kaynak ORM olduğu.
 
- Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz. [veri erişimi](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Eski Visual C++ veri erişim teknolojileri hakkında daha fazla bilgi için bkz. [veri erişimi](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [Visual Studio'da JavaScript](https://msdn.microsoft.com/library/hh334522.aspx) platformlar arası uygulamalar, UWP uygulamaları, bulut Hizmetleri, Web siteleri ve web uygulamaları oluşturmaya yönelik birinci sınıf bir dildir. Sık kullandığınız JavaScript kitaplıklarını ve veritabanı ürünleri yüklemek için Bower, Grunt, Gulp, npm ve Visual Studio içinden Nuget'ten kullanabilirsiniz. SDK'larından yükleyerek Azure depolama ve hizmetlere bağlanma [Azure Web sitesi](https://azure.microsoft.com/).  Edge.js sunucu tarafı JavaScript (Node.js) için ADO.NET veri kaynaklarına bağlanan bir kitaplıktır.
@@ -118,7 +118,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 ## <a name="in-this-section"></a>Bu bölümde
  [Veritabanı sistemleri, araçları ve örnek yükleme](../data-tools/installing-database-systems-tools-and-samples.md) veritabanı ürünleri ve Visual Studio uzantıları veya bunları destekleyen sürücüleri edinme ve örnek veritabanları için deneme ve öğrenme amacıyla nerede bulunacağı açıklanır.
 
- [.NET için Visual Studio veri Araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) veri kaynaklarına bağlanmak, veri kümeleri veya Entity Framework modelleri oluşturma ve kullanıcı arabirimi denetimlerine veri bağlama için Visual Studio araç pencereleri kullanmayı açıklar.
+ [.NET için Visual Studio veri Araçları](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) veri kaynaklarına bağlanmak, veri kümeleri veya Entity Framework modelleri oluşturma ve kullanıcı arabirimi denetimlerine veri bağlama için Visual Studio araç pencereleri kullanmayı açıklar.
 
 ## <a name="related-topics"></a>İlgili konular
  [Veriler, cihazlar ve analiz](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite ve nesnelerin interneti için destek dahil olmak üzere Microsoft Akıllı bulut tanıtır.
@@ -129,16 +129,16 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 
  [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) tasarımı, test ve veri bağlı uygulamalar ve veritabanları dağıtma araştırma basitleştiren araçlar açıklanmaktadır.
 
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) ADO.NET mimarisini ve ADO.NET sınıflarının uygulama verilerini yönetmek ve XML ve veri kaynakları ile etkileşim kurmak için nasıl kullanılacağını açıklar.
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) ADO.NET mimarisini ve ADO.NET sınıflarının uygulama verilerini yönetmek ve XML ve veri kaynakları ile etkileşim kurmak için nasıl kullanılacağını açıklar.
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) geliştiricilere doğrudan ilişkisel bir veritabanında yerine kavramsal bir modeli karşı tanıyan veri uygulamalarının nasıl oluşturulacağını açıklar.
 
- [WCF Veri Hizmetleri 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] web veya intranet uygulayan veri hizmetlerini dağıtmanızı [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Veri Hizmetleri 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) nasıl kullanılacağını açıklar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] web veya intranet uygulayan veri hizmetlerini dağıtmanızı [açık veri Protokolü (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
- [Office çözümlerindeki veriler](http://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Office çözümlerinde verilerin nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
+ [Office çözümlerindeki veriler](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Office çözümlerinde verilerin nasıl çalıştığını açıklayan konulara bağlantılar içerir. Burada şema tabanlı programlama, verileri önbelleğe alma ve sunucu tarafında veri erişimi hakkında bilgiler bulunur.
 
- [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) yerleşik sorgu yetenekleri açıklanmaktadır C# ve Visual Basic ve ilişkisel veritabanlarını, XML belgeleri, veri kümelerini ve bellek içi koleksiyonları sorgulamak için ortak modeli.
+ [LINQ (dil ile tümleşik sorgu)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) yerleşik sorgu yetenekleri açıklanmaktadır C# ve Visual Basic ve ilişkisel veritabanlarını, XML belgeleri, veri kümelerini ve bellek içi koleksiyonları sorgulamak için ortak modeli.
 
  [Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md) çalışma ile XML verileri, hata ayıklama XSLT, .NET Framework XML özelliklerini ve XML sorgusu mimarisini açıklar.
 
- [XML belgeleri ve verileri](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) XML belgeleri ve .NET Framework Veri çalışmak sınıf kapsamlı ve tümleşik kümesi için genel bir bakış sağlar.
+ [XML belgeleri ve verileri](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) XML belgeleri ve .NET Framework Veri çalışmak sınıf kapsamlı ve tümleşik kümesi için genel bir bakış sağlar.

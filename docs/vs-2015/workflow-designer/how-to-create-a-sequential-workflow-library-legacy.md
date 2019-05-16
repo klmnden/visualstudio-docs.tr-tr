@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6563c209dfd86a74c2d51fc9179948c63e7cf4b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686685"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Nasıl yapılır: Sıralı İş Akışı Kitaplığı Oluşturma (Eski)
 Eski kullanarak bir sıralı iş akışı kitaplığı projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -51,4 +51,4 @@ Eski kullanarak bir sıralı iş akışı kitaplığı projesi oluşturmak için
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışı projeleri oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)   
- [İş akışı yazma stilleri](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)
+ [İş akışı yazma stilleri](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

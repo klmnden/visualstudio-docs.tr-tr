@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc5e511ad2f687ebc709f7c7074e5dd4375c7591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682410"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Nasıl yapılır: Yazı tipleri ve renkler düzenleyicide Değiştir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşi
 - **Öğe ön plan**, **öğesi arka plan**, ve **kalın** seçenekler, metin öğesinin her türü için ayarlanabilir. Renkleri değiştirmek ve seçin, örneğin, **kalın** için **yorum** ve **yer işaretleri**, diğer metin öğelerini türleri etkilenmez.  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Varsayılan yazı tipini, boyutunu ve renkleri değiştirmek için  
   

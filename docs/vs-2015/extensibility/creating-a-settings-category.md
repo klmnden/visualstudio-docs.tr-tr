@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695016"
 ---
 # <a name="creating-a-settings-category"></a>Ayarlar Kategorisi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kaydedin ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi olan bir grup görünür bir "özel ayarları noktası olarak"; ilgili özellikleri diğer bir deyişle, bir onay kutusuna olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde bulabilirsiniz **Araçları** menü.) Ayarlar kaydedildi veya kategori olarak geri ve ayarlardan sihirbazında görüntülenmez. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Bu kılavuzda Visual Studio ayarları kategorisi oluşturma ve değerleri kaydedin ve değerleri ayarları dosyasından geri yüklemek için kullanın. Ayarları kategorisi olan bir grup görünür bir "özel ayarları noktası olarak"; ilgili özellikleri diğer bir deyişle, bir onay kutusuna olarak **içeri ve dışarı aktarma ayarları** Sihirbazı. (Üzerinde bulabilirsiniz **Araçları** menü.) Ayarlar kaydedildi veya kategori olarak geri ve ayarlardan sihirbazında görüntülenmez. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Ondan türetilen ayarları kategorisi oluşturma <xref:Microsoft.VisualStudio.Shell.DialogPage> sınıfı.  
   

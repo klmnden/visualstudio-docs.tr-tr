@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685940"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Visual Studio'daki Windows Mağazası uygulamaları için askıya alma, sürdürme ve arka plan olayları nasıl tetiklenir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
 
  Bu konuda ayrıca hata ayıklama işlemini açıklamaktadır **arka plan görevleri**. Arka plan görevlerinin bile, uygulama çalışmıyorken bir arka plan işlemi belirli işlemlerin gerçekleştirilmesi etkinleştirin. Uygulamanızı hata ayıklama moduna için hata ayıklayıcı kullanabilirsiniz ve ardından — UI başlatmadan — başlatın ve arka plan görevinin hatalarını ayıklama.
 
- İşlem ömrü yönetimi ve arka plan görevleri hakkında daha fazla bilgi için bkz. [devam ettirme, başlatma ve çoklu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ İşlem ömrü yönetimi ve arka plan görevleri hakkında daha fazla bilgi için bkz. [devam ettirme, başlatma ve çoklu](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> Bu konudaki
  [Tetikleyici işlem ömrü Yönetimi olayları](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
      Unutmayın **askıya alma ve sonlandırma** uygulama kapanır ve hata ayıklama oturumu sona erer.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Tetikleyici arka plan görevleri
- Herhangi bir uygulama bile uygulama çalışmıyorken belirli sistem olaylara yanıt vermek için bir arka plan görevi olarak kaydedebilirsiniz. Arka plan görevleri doğrudan kullanıcı Arabirimi güncelleştirmeleri kod çalıştıramazsınız; Bunun yerine, bunlar kullanıcıya güncelleştirmeleri kutucuk, rozet güncelleştirmeleri ve kutlama bildirimleri için bilgileri gösterir. Daha fazla bilgi için [arka plan görevleri uygulamanızla destekleme](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Herhangi bir uygulama bile uygulama çalışmıyorken belirli sistem olaylara yanıt vermek için bir arka plan görevi olarak kaydedebilirsiniz. Arka plan görevleri doğrudan kullanıcı Arabirimi güncelleştirmeleri kod çalıştıramazsınız; Bunun yerine, bunlar kullanıcıya güncelleştirmeleri kutucuk, rozet güncelleştirmeleri ve kutlama bildirimleri için bilgileri gösterir. Daha fazla bilgi için [arka plan görevleri uygulamanızla destekleme](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Uygulamanız için arka plan görevleri, hata ayıklayıcı'dan başlayan olayları tetikleyebilir.
 
@@ -125,4 +125,4 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
 4. Seçin **tanılama** günlük.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio ile Store uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md) [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md) [uygulama yaşam döngüsü](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [devam ettirme, başlatma ve çoklu](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Visual Studio ile Store uygulamalarını test etme](../test/testing-store-apps-with-visual-studio.md) [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md) [uygulama yaşam döngüsü](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [devam ettirme, başlatma ve çoklu](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

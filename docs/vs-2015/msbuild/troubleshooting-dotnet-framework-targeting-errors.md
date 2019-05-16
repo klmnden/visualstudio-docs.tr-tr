@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430444"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703779"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework Hedefleme Hatalarının Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +58,6 @@ Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır soru
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [.NET framework istemci profili](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Belirli bir .NET Framework sürümünü hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)

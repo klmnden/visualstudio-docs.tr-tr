@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705843"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Komut satırından katman etkileşim verileri ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Katman etkileşim profili oluşturma, zaman uyumlu yürütme sürelerini hakkın
   
  **Uzak makinede ipucu verileri toplama**  
   
- Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya _VSInstallDir %_**tools\performance Tools\Setups**klasöründe bir Visual Studio uzak bilgisayara makine ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
+ Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya _VSInstallDir %_**tools\performance Tools\Setups**klasöründe bir Visual Studio uzak bilgisayara makine ve yükleyin. Profil oluşturma araçları kullanamazsınız [Visual Studio uzak Araçları](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) paketini indirin.  
   
  **İpucu raporları**  
   

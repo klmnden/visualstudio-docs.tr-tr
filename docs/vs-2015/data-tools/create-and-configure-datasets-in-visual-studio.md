@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705107"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek için değişiklik izleme desteği nesneleri bir dizi oluşturma, okuma, güncelleştirme ve silme (CRUD) işlemleri veritabanına her zaman bağlı gerek kalmadan bu verileri. Veri kümeleri, basit için tasarlanmış *veriler üzerinden formlar* iş uygulamaları. Yeni uygulamalar için bellekteki verileri depolamak ve modellemek için Entity Framework kullanarak göz önünde bulundurun. Veri kümeleriyle çalışmak için veritabanı kavramlarını temel bilgiye sahip olmalıdır.
 
- Bir türü belirtilmiş oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da bir sınıf kullanarak tasarım zamanında **veri kaynağı Yapılandırma Sihirbazı**. Program aracılığıyla veri kümeleri oluşturma hakkında daha fazla bilgi için bkz: [bir veri kümesi oluşturma](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Bir türü belirtilmiş oluşturduğunuz <xref:System.Data.DataSet> Visual Studio'da bir sınıf kullanarak tasarım zamanında **veri kaynağı Yapılandırma Sihirbazı**. Program aracılığıyla veri kümeleri oluşturma hakkında daha fazla bilgi için bkz: [bir veri kümesi oluşturma](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Veri Kaynağı Yapılandırma Sihirbazı'nı kullanarak yeni bir veri kümesi oluşturma
 
@@ -90,6 +90,6 @@ A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek 
 
 2. Sürükleme bir <xref:System.Data.DataTable> gelen sınıfı **veri kümesi** sekmesinde **araç kutusu** üzerine **veri kümesi Tasarımcısı**.
 
-3. Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna sütun ekleme](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna sütun ekleme](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Tek başına tabloları uygulamak için gereken `Fill` mantığı tek başına tablolar, böylece bunları verilerle doldurabilirsiniz. Tek başına veri tablolarını doldurmak hakkında daha fazla bilgi için bkz: [dataadapter'dan bir DataSet doldurma](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tek başına tabloları uygulamak için gereken `Fill` mantığı tek başına tablolar, böylece bunları verilerle doldurabilirsiniz. Tek başına veri tablolarını doldurmak hakkında daha fazla bilgi için bkz: [dataadapter'dan bir DataSet doldurma](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

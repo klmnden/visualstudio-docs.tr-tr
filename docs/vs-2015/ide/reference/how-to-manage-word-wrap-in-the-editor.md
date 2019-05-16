@@ -13,22 +13,22 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b24e14fe1f1d740732bdb5f9d8d32a12aab0055
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437142"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703891"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ayarlandığında, geçerli Kod Düzenleyicisi penceresinin genişliğini aşan bir uzun satır bölümü ve sonraki satırda görüntülenir. Örneğin, numaralandırma, satır kullanımını kolaylaştırmak için bu seçeneği temizlenirse, uzun satırları ucunda görmek için sağa kaydırma yapabilirsiniz.  
   
- Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Yordam  
   

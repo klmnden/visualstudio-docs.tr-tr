@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 502560791295bed256834f8a00bfb55ce5aa448a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6739f38e91ce998441c4cfa62453d485a5d370e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424615"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697543"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Özel İzinleri Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Dağıtabileceğiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 
 7. Önce `</applicationRequestMinimum>` öğesi, uygulamanızın gerektirdiği izinler için XML kodunu ekleyin.  
   
     > [!NOTE]
-    > Kullanabileceğiniz `ToXml` yöntemi bir izin kümesi XML kodunu uygulama bildirimini oluşturmak için. Örneğin, için XML oluşturmak için <xref:System.Security.Permissions.EnvironmentPermission> izin kümesi, çağrı <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> yöntemi. XML yapısı hakkında daha fazla bilgi için bkz [NIB: Nasıl yapılır: Bir izin kümesinin bir XML dosyası kullanarak içeri aktarma](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
+    > Kullanabileceğiniz `ToXml` yöntemi bir izin kümesi XML kodunu uygulama bildirimini oluşturmak için. Örneğin, için XML oluşturmak için <xref:System.Security.Permissions.EnvironmentPermission> izin kümesi, çağrı <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> yöntemi. XML yapısı hakkında daha fazla bilgi için bkz [NIB: Nasıl yapılır: Bir izin kümesinin bir XML dosyası kullanarak içeri aktarma](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   

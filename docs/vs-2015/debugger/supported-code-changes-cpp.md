@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684910"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulama
 ## <a name="BKMK_Unsupported_scenarios"></a> Desteklenmeyen senaryolar  
  Düzenle ve devam et C/C++ için hata ayıklama aşağıdaki senaryolarda kullanılabilir:  
   
-- Hata ayıklama ile derlenen yerel uygulamalar [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Hata ayıklama ile derlenen yerel uygulamalar [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - Visual Studio 2015 güncelleştirme 1'önceki Visual Studio sürümlerinde, Windows Store uygulamaları veya bileşenleri hata ayıklama. Artık desteklediği için Visual Studio 2015 güncelleştirme 1'de başlayarak, Düzenle ve devam et DirectX uygulamaları, Windows Store C++ uygulamaları ile kullanabileceğiniz `/ZI` derleyici anahtarıyla `/bigobj` geçin. Düzenleme da kullanabilirsiniz ve ikili dosyalarla devam et ile derlenmiş olan `/FASTLINK` geçin.  
   
@@ -141,7 +141,7 @@ Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulama
 3. NET **izin önceden derleme** onay kutusu.  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL öznitelik sınırlamaları  
- Düzenle ve devam et değil yeniden arabirim tanımı (IDL) dosyaları. Bu nedenle, hata ayıklama sırasında IDL öznitelikleri değişiklikler yansıtılmaz. IDL öznitelikleri için değişiklik sonucunu görmek için hata ayıklamayı durdurmak ve uygulamanızı yeniden oluşturun. Düzenle ve devam et oluşturmaz bir hata veya uyarı IDL öznitelikleri değiştirdiyseniz. Daha fazla bilgi için [IDL öznitelikleri](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Düzenle ve devam et değil yeniden arabirim tanımı (IDL) dosyaları. Bu nedenle, hata ayıklama sırasında IDL öznitelikleri değişiklikler yansıtılmaz. IDL öznitelikleri için değişiklik sonucunu görmek için hata ayıklamayı durdurmak ve uygulamanızı yeniden oluşturun. Düzenle ve devam et oluşturmaz bir hata veya uyarı IDL öznitelikleri değiştirdiyseniz. Daha fazla bilgi için [IDL öznitelikleri](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve Devam Et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

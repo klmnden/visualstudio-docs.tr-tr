@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118246"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682474"
 ---
 # <a name="format-specifiers-in-c"></a>C içindeki Biçim belirticileri\#
 
@@ -64,7 +64,7 @@ Aşağıdaki tablo, hata ayıklayıcı tarafından tanınan C# biçim belirteçl
 
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntüler|
 |---------------|------------|--------------------------|--------------|
-|AC|Bir ifadenin değerlendirmesine zorlar. Örtülü değerlendirme özellikleri ve örtük işlev çağrılarını devre dışı bırakıldığında bu yararlı olabilir. Bkz: [yan etkiler ve ifadeler](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Kapalı işlev değerlendirme kullanıcı tarafından devre dışı" iletisi|\<Değer >|
+|AC|Bir ifadenin değerlendirmesine zorlar. Örtülü değerlendirme özellikleri ve örtük işlev çağrılarını devre dışı bırakıldığında bu yararlı olabilir. Bkz: [yan etkiler ve ifadeler](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Kapalı işlev değerlendirme kullanıcı tarafından devre dışı" iletisi|\<Değer >|
 |d|Ondalık tamsayı|0x0065|101|
 |dinamik|Dinamik bir görünümü kullanarak belirtilen nesneyi görüntüler|Dinamik görünüm dahil olmak üzere nesnenin tüm üyelerini görüntüler|Yalnızca dinamik görünüm görüntüler|
 |h|Onaltılık tamsayı|61541|0x0000F065|
@@ -76,4 +76,4 @@ Aşağıdaki tablo, hata ayıklayıcı tarafından tanınan C# biçim belirteçl
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)
-- [Değişken Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Değişken Windows](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

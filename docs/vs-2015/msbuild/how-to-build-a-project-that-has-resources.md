@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686526"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Nasıl yapılır: Kaynaklara Sahip Olan Bir Projeyi Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı a
   
 #### <a name="to-compile-resources-with-msbuild"></a>Kaynakları MSBuild ile derlemek için  
   
-1.  Projenin kaynak dosyaları tanımlayın ve bunlara geçirmek `GenerateResource` öğesi listeleri olarak ya da görev veya farklı dosya adları.  
+1. Projenin kaynak dosyaları tanımlayın ve bunlara geçirmek `GenerateResource` öğesi listeleri olarak ya da görev veya farklı dosya adları.  
   
-2.  Belirtin `OutputResources` parametresinin `GenerateResource` çıkış kaynak dosyalarının adlarını ayarlamanıza olanak veren bir görev.  
+2. Belirtin `OutputResources` parametresinin `GenerateResource` çıkış kaynak dosyalarının adlarını ayarlamanıza olanak veren bir görev.  
   
-3.  Kullanım `Output` değerini depolamak için bir görev öğesinin `OutputResources` parametresinde bir öğe.  
+3. Kullanım `Output` değerini depolamak için bir görev öğesinin `OutputResources` parametresinde bir öğe.  
   
-4.  Oluşturulan öğesini `Output` öğesi olarak bir giriş başka bir görev ekleyin.  
+4. Oluşturulan öğesini `Output` öğesi olarak bir giriş başka bir görev ekleyin.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örnekte gösterildiği nasıl `Output` öğesi belirtir `OutputResources` özniteliği `GenerateResource` görev derlenmiş kaynak dosyalar içermesi `alpha.resources` ve `beta.resources` ve bu iki dosya içine yerleştirilecek `Resources` öğe listesi. .Resources dosyaları aynı ada sahip bir öğe koleksiyonu belirleyerek kolayca bunları giriş başka bir görev için gibi kullanabileceğiniz [Csc](../msbuild/csc-task.md) görev.  
   
- Bu görev kullanmakla eşdeğerdir **/compile** için geçiş [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
+ Bu görev kullanmakla eşdeğerdir **/compile** için geçiş [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı a
 [MSBuild](msbuild.md)  
  [GenerateResource görevi](../msbuild/generateresource-task.md)   
  [CSC görevi](../msbuild/csc-task.md)   
- [Resgen.exe (Kaynak Dosya Oluşturucu)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (Kaynak Dosya Oluşturucu)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

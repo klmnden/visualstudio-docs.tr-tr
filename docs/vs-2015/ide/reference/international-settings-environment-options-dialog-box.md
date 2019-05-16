@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2594c7a6cf648c52f44ea9ee2f71d9481742a94b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a42a05c453c328dc156cadb86c9abc55d587c467
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441670"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674298"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441670"
 Uluslararası Ayarlar sayfasında birden fazla dilde tümleşik geliştirme ortamının (IDE), makinenizde yüklü olduğunda varsayılan dili değiştirmenizi sağlar. Bu iletişim kutusunu seçerek erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından **uluslararası ayarlar** gelen **ortamı** klasör. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **Dil**  
  Mevcut diller yüklü ürün dil sürümlerini listeler. Birden fazla dil sürümü, makinenizde yüklü olmadığı sürece, bu seçenek kullanılamaz. Birden çok ürünlerin dil veya bir karma dil yüklemesi ürün ortamı paylaşıyorsa, dil seçimi değiştirildi **Microsoft Windows ile aynı**.  

@@ -21,18 +21,18 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3ee5b3e5202ce5bcb8d7ef11b1b60db05624aaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dde41d1ccee5b63c5cd84862ba4f4ffe51745d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696239"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Nasıl yapılır: Satır içi derleme kodunda hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
-> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Satır içi derleme kodunda hata ayıklamak için hata ayıklayıcı iki windows sağlar **ayrıştırılmış kodu** penceresi ve **kaydeder** penceresi.  
   

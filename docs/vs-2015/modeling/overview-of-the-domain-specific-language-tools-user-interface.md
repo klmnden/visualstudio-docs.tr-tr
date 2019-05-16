@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75032649e76bb927011c3bb0a34bbcd0a11c55e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674957"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Etki Alanına Özgü Dil Araçları Kullanıcı Arabirimine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,5 +52,5 @@ ms.locfileid: "62569125"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etki alanına özgü dil araçlarına genel bakış](../modeling/overview-of-domain-specific-language-tools.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Etki Alanına Özgü Dili Özelleştirme ve Genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)

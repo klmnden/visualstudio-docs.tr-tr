@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697123"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML Verileriyle Çalışırken Dikkat Edilecek Güvenlik Konuları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ Bu konuda hakkında XML Düzenleyicisi'ni veya XSLT hata ayıklayıcısı ile ç
 - XSLT ifade değerlendiricisi yönetilen hata ayıklama altyapısı tarafından yüklenir. Yönetilen hata ayıklama altyapısı, tüm kod kullanıcının yerel bilgisayarınızdan çalıştırıldığını varsayar. Buna <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı kullanıcının yerel bilgisayarına XSLT dosyasını indirir. Sınırlı izinler ile yeni bir uygulama etki alanındaki tüm XSLT dönüşümleri yürüterek, yürütme ayrıcalık yükselmesi oluşabilir olasılığı azaltılabilir  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama Etki Alanları](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Uygulama Etki Alanları](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

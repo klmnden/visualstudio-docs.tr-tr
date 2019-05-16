@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 47e27dbfa221a9476488d563ae2a48235a08f769
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703503"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,5 +76,5 @@ ms.locfileid: "59660690"
  [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
  [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [WPF uygulaması (WPF) oluşturma](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML Tarayıcı Uygulamalarına Genel Bakış](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [WPF uygulaması (WPF) oluşturma](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML Tarayıcı Uygulamalarına Genel Bakış](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

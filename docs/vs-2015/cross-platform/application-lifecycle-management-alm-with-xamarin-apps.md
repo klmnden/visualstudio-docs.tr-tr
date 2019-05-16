@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696258"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin uygulamalarıyla Uygulama Yaşam Döngüsü Yönetimi (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
  Aşağıdaki tablolarda, Visual Studio ALM özellikleri tanımlayan bir Xamarin projesi ile düzgün çalışması bekleyebilirsiniz ve hangilerinin sınırlamaları vardır. Özellikleri hakkında daha fazla ayrıntı için bağlantılı belgelerine bakın.  
   
 ## <a name="agile-tools"></a>Çevik Araçlar  
- Başvuru bağlantısı: **[İş](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
+ Başvuru bağlantısı: **[İş](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (Visual Studio Team Services veya Team Explorer Everywhere dahil TFS'nin kullanarak)  
   
  Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri kodlama bağımsız olarak çalışır.  
   
@@ -61,25 +61,25 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
-|[Team Foundation sürüm denetimi kullanın](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) veya Visual Studio Team Services|Evet||  
-|[Team Services'da Git ile çalışmaya başlama](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Evet||  
-|[Kod Analizi/artırma kod kalitesini (başvurular, önerilen değişiklikleri, vb.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Evet||  
+|[Team Foundation sürüm denetimi kullanın](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) veya Visual Studio Team Services|Evet||  
+|[Team Services'da Git ile çalışmaya başlama](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Evet||  
+|[Kod Analizi/artırma kod kalitesini (başvurular, önerilen değişiklikleri, vb.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Evet||  
 |[Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)|Evet|Uygulama çalışma zamanına kadar çözülmüş değildir burada platforma özgü sınırları dışında.|  
 |[Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)|Evet||  
   
 ## <a name="build"></a>Yapı  
- Başvuru bağlantısı: **[Derleme](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Başvuru bağlantısı: **[Derleme](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
 |Şirket içi TFS sunucusu|Evet|Derleme makinesi Xamarin yüklü olması ve iOS için oluşturmak için bir OSX bilgisayara bağlanabilir. Bkz: [Xamarin için TFS Yapılandırma](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin Web sitesi)|  
-|Visual Studio Team Services bağlı şirket içi yapı sunucusu|Evet|Bkz: [yapı sunucusu](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) yönergeler için.|  
+|Visual Studio Team Services bağlı şirket içi yapı sunucusu|Evet|Bkz: [yapı sunucusu](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) yönergeler için.|  
 |Visual Studio Team Services, barındırılan denetleyici hizmeti|Evet|Bkz: [Xamarin uygulamanızı derleyin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Tanımlarla öncesi ve sonrası betikleri oluşturun|Evet||  
 |Sürekli Tümleştirme dahil olmak üzere Geçitli iade|Evet|TFVC için Geçitli iade yalnızca Git iadeler yerine bir çekme isteği model üzerinde çalışır.|  
   
 ## <a name="testing"></a>Sınama  
- Başvuru bağlantısı: **[Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Başvuru bağlantısı: **[Uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
@@ -91,12 +91,12 @@ Xamarin Android, iOS ve Windows C#, .NET ve Visual Studio kullanarak hedefleyen 
 |[Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)|Yalnızca Windows|Visual Studio'nun kullanıcı Arabirimi Testi Kaydedicisi, yalnızca Windows olur. Tüm platformlar için bkz [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Kod kalitesini geliştirme  
- Başvuru bağlantısı: **[Kod kalitesini geliştirme](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Başvuru bağlantısı: **[Kod kalitesini geliştirme](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Özellik|Xamarin ile desteklenen|Ek Açıklamalar|  
 |-------------|----------------------------|-------------------------|  
 |[Yönetilen Kod Kalitesini Analiz Etme](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Evet||  
-|[Kod kopyası algılamayı kullanarak yinelenen kodları bulma](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Evet||  
+|[Kod kopyası algılamayı kullanarak yinelenen kodları bulma](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Evet||  
 |[Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Evet||  
 |[Performans Gezgini](../profiling/performance-explorer.md)|Hayır|Kullanım [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) Xamarin Studio üzerinden yerine. Xamarin Profiler şu anda önizlemededir ve henüz Windows hedefleri için çalışmaz unutmayın.|  
 |[.NET Framework bellek sorunlarını çözümleme](../misc/analyze-dotnet-framework-memory-issues.md)|Hayır|Visual Studio Araçları, profil oluşturma için Mono framework uygulamasına kancaları yoktur.|  

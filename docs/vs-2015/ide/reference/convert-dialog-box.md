@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441441"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705863"
 ---
 # <a name="convert-dialog-box"></a>Dönüştür İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ ms.locfileid: "63441441"
 2. Uygulamanız için uygun olan Aracı'nı seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NOTINBUILD - nasıl yapılır: Bir Visual Basic 6.0 projesini yükseltme](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - nasıl yapılır: Bir Visual Basic 6.0 projesini yükseltme](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Visual Studio Projelerini Taşıma, Geçirme ve Yükseltme](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

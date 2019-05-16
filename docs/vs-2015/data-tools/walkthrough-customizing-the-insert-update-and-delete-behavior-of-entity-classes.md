@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424796"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700222"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı, varlık sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturma ve düzenleme için bir görsel tasarım yüzeyi sağlar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] bir veritabanındaki nesneleri temel alan sınıfları (varlık sınıfları). Kullanarak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), SQL veritabanlarına erişim bir LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oluşturma ve düzenleme için bir görsel tasarım yüzeyi sağlar [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] bir veritabanındaki nesneleri temel alan sınıfları (varlık sınıfları). Kullanarak [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), SQL veritabanlarına erişim bir LINQ teknolojisi kullanabilirsiniz. Daha fazla bilgi için [LINQ (dil ile tümleşik sorgu)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- Varsayılan olarak, güncelleştirmeleri gerçekleştirmek için mantığı tarafından sağlanan [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] çalışma zamanı. Çalışma zamanı varsayılan tablo (sütun tanımları ve birincil anahtar bilgileri) şemasını temel alan INSERT, Update ve Delete deyimlerini oluşturur. Varsayılan davranışı kullanmak istemediğinizde, güncelleştirme davranışı yapılandırmak ve gerekli ekleme, güncelleştirme gerçekleştirmek için belirli saklı yordamlar belirlemek ve siler, veritabanındaki verilerle çalışmak için gerekli. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Ayrıca, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde varsayılan güncelleştirme davranışı geçersiz kılabilirsiniz. Daha fazla bilgi için [özelleştirme işlemleri tarafından kullanarak saklı yordamlar](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ Varsayılan olarak, güncelleştirmeleri gerçekleştirmek için mantığı tarafından sağlanan [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] çalışma zamanı. Çalışma zamanı varsayılan tablo (sütun tanımları ve birincil anahtar bilgileri) şemasını temel alan INSERT, Update ve Delete deyimlerini oluşturur. Varsayılan davranışı kullanmak istemediğinizde, güncelleştirme davranışı yapılandırmak ve gerekli ekleme, güncelleştirme gerçekleştirmek için belirli saklı yordamlar belirlemek ve siler, veritabanındaki verilerle çalışmak için gerekli. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Ayrıca, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde varsayılan güncelleştirme davranışı geçersiz kılabilirsiniz. Daha fazla bilgi için [özelleştirme işlemleri tarafından kullanarak saklı yordamlar](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > Bu izlenecek yolda kullanılabilirliğini gerektirir **Insertcustomer**, **UpdateCustomer**, ve **DeleteCustomer** saklı yordamlar için Northwind veritabanı.
@@ -65,7 +65,7 @@ ms.locfileid: "63424796"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Bu nedenle, yeni projeyi bu dillerden birinde oluşturun.  
   
-3. Tıklayın **Windows Forms uygulaması** şablonu ve tıklatın **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Tıklayın **Windows Forms uygulaması** şablonu ve tıklatın **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      UpdatingwithSProcsWalkthrough projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -253,14 +253,14 @@ ms.locfileid: "63424796"
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] varlık sınıfları. Bu uygulama için yapabileceğiniz bazı geliştirmeler şunları içerir:  
   
-- Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: Genel Bakış](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Eşzamanlılık denetimi sırasında güncelleştirmeleri uygulayın. Bilgi için [iyimser eşzamanlılık: Genel Bakış](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [(C#) LINQ sorgularına giriş](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Verilere filtre uygulamak için LINQ sorguları ekleyin. Bilgi için [(C#) LINQ sorgularına giriş](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [LINQ to SQL sorguları](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL sorguları](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PAVE veri uygulaması geliştirme Visual Studio 2012'deki yenilikler](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [PAVE veri uygulaması geliştirme Visual Studio 2012'deki yenilikler](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679827"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio'da Oturum Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Vi
 
 - **Çok çeşitli avantajları erişim verir** Visual Studio Dev Essentials programından ücretsiz yazılım, eğitim, destek ve daha fazla dahil. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
 
-- **Visual Studio ayarlarınızı eşitler** –, tuş bağlamaları gibi pencere düzenini özelleştirme ve renk temasını ayarları uygulamak için Visual Studio herhangi bir cihazda oturum açtığınızda hemen. Bkz: [Visual Studio'da eşitlenen ayarlar](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Visual Studio ayarlarınızı eşitler** –, tuş bağlamaları gibi pencere düzenini özelleştirme ve renk temasını ayarları uygulamak için Visual Studio herhangi bir cihazda oturum açtığınızda hemen. Bkz: [Visual Studio'da eşitlenen ayarlar](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Kalıcı olarak Visual Studio Express Edition kilidini açarak** – 30 günlük deneme süresiyle sınırlı kalmadan istediğiniz sürece Visual Studio Express için herhangi bir sürümünü kullanabilirsiniz.
 

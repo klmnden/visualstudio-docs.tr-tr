@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 549fa4842a4e57043ddac90683d05383b7c3d44d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693932"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Öğeleri sürüklediğinizde [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) Windows Form Tasarımcısı, özel bir durum dönüştürülerek: Başlık etiketindeki sütun adları daha okunabilir bir dizeye iki biçimlendirilen ya da daha fazla sözcüklerdir. araya bulundu. Bu etiketleri oluşturulduğu, ayarlayarak şeklini özelleştirebilir **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data tasarımcıları** kayıt defteri anahtarı.
+Öğeleri sürüklediğinizde [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) Windows Form Tasarımcısı, özel bir durum dönüştürülerek: Başlık etiketindeki sütun adları daha okunabilir bir dizeye iki biçimlendirilen ya da daha fazla sözcüklerdir. araya bulundu. Bu etiketleri oluşturulduğu, ayarlayarak şeklini özelleştirebilir **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data tasarımcıları** kayıt defteri anahtarı.
 
 > [!NOTE]
 > Oluşturduğunuz kadar bu kayıt defteri anahtarı mevcut değil.

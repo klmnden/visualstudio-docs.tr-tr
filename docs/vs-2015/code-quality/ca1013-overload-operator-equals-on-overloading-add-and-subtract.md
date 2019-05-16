@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da909b6c9917793ef958ec88f208054e6499577b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1b70085c83d842ccb5f8addc661af9109b5a5976
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695616"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Toplama ve çıkarmayı aşırı yüklediğinizde eşittir işlecini aşırı yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,4 +82,4 @@ return left.Equals(right);
 **yanlış tür: {2,2} {9,9} eşitse? Hayır**
 **iyi türü: {3,3} {9,9} == misiniz?   Yok**
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Eşitlik İşleçleri](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ [Eşitlik İşleçleri](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

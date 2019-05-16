@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8c4fc730b4ad110b3160a725be0d109cda8c7a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d49d593933475921a1edadf0ab1865d8cd15a16d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689284"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,16 +30,16 @@ Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir p
  Bu iletişim kutusunda, erişim için **Araçları** menüsünde tıklayın **seçenekleri**, genişletin **projeler ve çözümler** klasörünü ve ardından **VB varsayılanları**.  
   
  **Seçeneği açık**  
- Derleyici varsayılanı, değişkenlerin açık bildirimler gerekli olacak şekilde ayarlar. Varsayılan olarak, **Option Explicit** ayarlanır **üzerinde**. Daha fazla bilgi için [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
+ Derleyici varsayılanı, değişkenlerin açık bildirimler gerekli olacak şekilde ayarlar. Varsayılan olarak, **Option Explicit** ayarlanır **üzerinde**. Daha fazla bilgi için [/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
   
  **Katı tanımlama seçeneği**  
- Derleyicinin varsayılan ayarlar, böylece açık bir daraltma dönüştürmelerini gereklidir ve geç bağlama izin verilmiyor. Varsayılan olarak, **Option Strict** ayarlanır **kapalı**. Daha fazla bilgi için [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
+ Derleyicinin varsayılan ayarlar, böylece açık bir daraltma dönüştürmelerini gereklidir ve geç bağlama izin verilmiyor. Varsayılan olarak, **Option Strict** ayarlanır **kapalı**. Daha fazla bilgi için [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
   
  **Karşılaştırma seçeneği**  
- Derleyici varsayılanı dize karşılaştırmaları için ayarlar: ikili dosya (büyük-küçük harfe duyarlı) veya metin (büyük/küçük harfe.) Varsayılan olarak, **Option Compare** ayarlanır **ikili**. Daha fazla bilgi için [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
+ Derleyici varsayılanı dize karşılaştırmaları için ayarlar: ikili dosya (büyük-küçük harfe duyarlı) veya metin (büyük/küçük harfe.) Varsayılan olarak, **Option Compare** ayarlanır **ikili**. Daha fazla bilgi için [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
   
  **Option Infer**  
- Yerel tür çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projelerde ve çok **kapalı** Visual Basic'in önceki sürümlerinde oluşturulan geçirilen projeleri için. Daha fazla bilgi için [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
+ Yerel tür çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projelerde ve çok **kapalı** Visual Basic'in önceki sürümlerinde oluşturulan geçirilen projeleri için. Daha fazla bilgi için [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697981"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60095782"
 
 - İçin [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v1.0 veya v1.1, kullanın ya da <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> veya <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> özniteliği.
 
-- İçin [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], hangisini `/keyfile` veya `/keycontainer` derleyici seçeneği [/keyfile (derlemeyi imzalamak için anahtar belirtin veya anahtar çiftini)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) veya  [ /keycontainer (derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) c++ bağlayıcı seçeneği).
+- İçin [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], hangisini `/keyfile` veya `/keycontainer` derleyici seçeneği [/keyfile (derlemeyi imzalamak için anahtar belirtin veya anahtar çiftini)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) veya  [ /keycontainer (derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) c++ bağlayıcı seçeneği).
 
   **Derlemenizi Visual Studio'da bir katı adla imzalamak için**
 
@@ -89,11 +89,11 @@ ms.locfileid: "60095782"
 
    **Derlemenizi Visual Studio dışında bir katı adla imzalamak için**
 
-- Tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanan [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanan [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Derleme ortamında kullandıysanız yalnızca bu kuraldan bir uyarıyı bastırmak burada içeriğiyle oynama bir sorun değildir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName><xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [Nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (tanımlayıcı ad aracı)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

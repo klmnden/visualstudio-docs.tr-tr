@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1699846c0a588a21ebd37a13f77dc45c2a695139
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02edc5925109a31eebfd98c90bd116fb86eef276
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101060"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697236"
 ---
 # <a name="checklist-creating-new-project-types"></a>Yapılacaklar listesi: Yeni Proje Türleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. A
   
     - Yeni proje oluşturma ve mevcut projeleri açma yönetmek için proje üreteci. Daha fazla bilgi için [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    - Proje hiyerarşisi ve komut işleme. Daha fazla bilgi için [derleme içinde değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanarak](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md), [proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md) ve [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    - Proje hiyerarşisi ve komut işleme. Daha fazla bilgi için [derleme içinde değil: Bir proje türü (C++) uygulamak için HierUtil7 proje sınıflarını kullanarak](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [proje modeli öğeleri](../../extensibility/internals/elements-of-a-project-model.md), [proje modeli çekirdek bileşenleri](../../extensibility/internals/project-model-core-components.md) ve [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     - Proje öğeleri yönetimi, projenize ekleme dahil olmak üzere **yeni proje** iletişim kutusu. Daha fazla bilgi için [ekleme proje ve proje öğesi şablonları](../../extensibility/internals/adding-project-and-project-item-templates.md) ve [kaydetme proje ve öğe şablonları](../../extensibility/internals/registering-project-and-item-templates.md).  
   

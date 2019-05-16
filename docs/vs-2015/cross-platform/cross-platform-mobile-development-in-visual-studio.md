@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698756"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio’da Platformlar Arası Mobil Geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 
 |**Daha fazla bilgi edinin**|
 |--------------------|
-|Paylaşılan projeler, taşınabilir sınıf kitaplığı projeleri veya her ikisini de kullanarak kodunuzu paylaşmak isteyip istemediğinizi seçin.<br /><br /> [Platformlar arasında kod paylaşımını](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework blogu)<br /><br /> [Paylaşım kod seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Kod paylaşma seçenekleri .NET Framework ile](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Kitaplığı)|
+|Paylaşılan projeler, taşınabilir sınıf kitaplığı projeleri veya her ikisini de kullanarak kodunuzu paylaşmak isteyip istemediğinizi seçin.<br /><br /> [Platformlar arasında kod paylaşımını](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework blogu)<br /><br /> [Paylaşım kod seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Kod paylaşma seçenekleri .NET Framework ile](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Kitaplığı)|
 
 ### <a name="WindowsHTML"></a> Windows 10 cihazlarını hedefleyin
  ![Windows cihazları](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 |**Daha fazla bilgi edinin**|
 |--------------------|
 |[Evrensel Windows uygulamaları hakkında bilgi edinin](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows Geliştirici Merkezi)|
-|[İlk uygulamanızı bir derleme](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Geliştirici Merkezi)|
+|[İlk uygulamanızı bir derleme](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Geliştirici Merkezi)|
 |[Evrensel Windows Platformu (UWP) için uygulama geliştirme](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Evrensel Windows Platformu (UWP) uygulamaları geçirme](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ Visual Studio kullanarak Android, iOS ve Windows cihazlar için uygulamalar olu�
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Visual Studio projesi için Office 365 API ekleme](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure mobil hizmetler](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Visual Studio projesi için Office 365 API ekleme](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Azure mobil hizmetler](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

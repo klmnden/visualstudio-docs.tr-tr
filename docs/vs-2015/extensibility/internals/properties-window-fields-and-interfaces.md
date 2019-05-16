@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761936"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700819"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Özellikler Penceresi Alanları ve Arabirimleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Seçim, hangi bilgilerin görüntüleneceğini belirlemek modelin **özellikleri
   
 3. Çağırma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ve Seçili hiyerarşiyi öğeleri geçirerek `VSHPROPID_BrowseObject` parametresi doldurur <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> nesne.  
   
-4. Türetilen bir nesne [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) için döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> İstenen öğe ve ortam içine sarmalar bir <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (bkz. aşağıdaki adım). Çağrı başarısız olursa ortam ikinci çağrıda `IVsHierarchy::GetProperty`, seçim kapsayıcısı geçirme <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> hiyerarşi öğesi veya öğelerini sağlayın.  
+4. Türetilen bir nesne [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) için döndürülen <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> İstenen öğe ve ortam içine sarmalar bir <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (bkz. aşağıdaki adım). Çağrı başarısız olursa ortam ikinci çağrıda `IVsHierarchy::GetProperty`, seçim kapsayıcısı geçirme <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> hiyerarşi öğesi veya öğelerini sağlayın.  
   
     VSPackage oluşturmaz, projenizi <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ortamı tarafından sağlanan penceresi VSPackage, onu uyguladığından (örneğin, **Çözüm Gezgini**) yapıları <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> kendi adına.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558404"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694802"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Kavramsal Model (WCF Veri Hizmetleri) ile çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığını
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Veri Hizmeti sorguları yürütme](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Veri hizmetinden veri sorgulama işlemleri gösterilir bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] uygulama.|  
-|[Nasıl yapılır: Proje sorgu sonuçları](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Veri Hizmeti sorgusuna ile döndürülen veri miktarını azaltmak nasıl gösterir.|  
+|[Nasıl yapılır: Veri Hizmeti sorguları yürütme](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Veri hizmetinden veri sorgulama işlemleri gösterilir bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] uygulama.|  
+|[Nasıl yapılır: Proje sorgu sonuçları](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Veri Hizmeti sorgusuna ile döndürülen veri miktarını azaltmak nasıl gösterir.|  
   
  Kavramsal bir modeli kullandığınız zaman, ne tür veriler, etki alanıyla eşleşen bir dilde geçerli tanımlayabilirsiniz. Geçerli veri modelinde tanımlayabilir veya bir varlık veya veri hizmeti üzerinde gerçekleştirdiğiniz işlemleri doğrulama ekleyebilirsiniz.  
   
@@ -43,15 +43,15 @@ Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığını
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Veri hizmeti iletilerini müdahale](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Bir veri hizmeti işlemi için doğrulama ekleme işlemi gösterilmektedir.|  
+|[Nasıl yapılır: Veri hizmeti iletilerini müdahale](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Bir veri hizmeti işlemi için doğrulama ekleme işlemi gösterilmektedir.|  
   
  Aşağıdaki konular oluşturmak, güncelleştirmek ve varlıklar üzerinde işlem gerçekleştirme tarafından verileri silme işlemini göstermektedir.  
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: Ekleme, değiştirme ve varlıklarını silme](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Oluşturma, güncelleştirme ve varlık verilerini bir veri hizmeti silme işlemi gösterilmektedir.|  
-|[Nasıl yapılır: Veri ilişkileri tanımlama](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Oluşturma veya bir veri hizmeti ilişkilerini değiştirme işlemi gösterilmektedir.|  
+|[Nasıl yapılır: Ekleme, değiştirme ve varlıklarını silme](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Oluşturma, güncelleştirme ve varlık verilerini bir veri hizmeti silme işlemi gösterilmektedir.|  
+|[Nasıl yapılır: Veri ilişkileri tanımlama](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Oluşturma veya bir veri hizmeti ilişkilerini değiştirme işlemi gösterilmektedir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Veri Hizmetini Sorgulama](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [Veri Hizmetini Sorgulama](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

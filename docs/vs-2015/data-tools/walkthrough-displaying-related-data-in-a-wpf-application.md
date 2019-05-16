@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688422"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>İzlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Bu kılavuzda, üst/alt ilişkisine sahip veritabanı tablolarındaki verileri g
   
   Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:  
   
-- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Varlık veri modelleri ve ADO.NET varlık çerçevesi. Daha fazla bilgi için [Entity Framework'e Genel Bakış](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Projeyi Oluşturma  
  Sipariş kayıtları görüntülemek için yeni bir WPF projesi oluşturun.  

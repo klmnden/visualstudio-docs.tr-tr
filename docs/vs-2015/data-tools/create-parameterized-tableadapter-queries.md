@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1da058cbbdda71758e9a158cfd6778a044797093
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703824"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Sizin parametreleştirilmiş TableAdapter sorguları veri kümesi Tasarımcısı
 > Parametreli sorgu oluşturulurken karşı kodlama veritabanına özgü parametre gösterimini kullanın. Örneğin, soru işareti Access ve OleDb veri kaynakları kullan '?' parametreleri belirtmek için bu nedenle WHERE yan tümcesi şuna benzeyecektir: `WHERE City = ?`.  
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana içinde etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menü ve select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana içinde etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için Git **Araçları** menü ve select **içeri ve dışarı aktarma ayarları**. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>Parametreleştirilmiş TableAdapter sorgu oluşturma 
   

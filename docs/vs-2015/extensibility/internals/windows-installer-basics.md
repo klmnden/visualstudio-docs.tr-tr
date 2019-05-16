@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687675"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
  Dosyaları, kayıt defteri anahtarlarını, kısayolları, veya vb., yüklenmiş olabilir bir bilgisayara. Bu kaynakları mantıksal olarak Windows Yükleyici bileşenlerini gruplandırılır.  
   
  Windows Installer component (WIC)  
- Yükleme yüklü olan ve kaldırılmış bir birim olarak ilgili kaynakların mantıksal bir gruplandırmasını gösteren temel birimidir. Windows Yükleyici bileşenlerini bir bileşen benzersiz kimliği veya GUID tarafından tanımlanır. Ayrıca, Windows Installer WIC düzeyinde sayım, başvuru tutar. En yüksek sürüm esneklik için bir DLL gibi birden fazla birincil kaynak belirli bir WIC içerir. Sizi tanımlamak ve bir WIC doldurmak, bir GUID verin ve dağıttıktan sonra kendi bileşim değiştiremeyeceğinizi unutmayın. Daha fazla bilgi için [bileşenleri düzenleme uygulamalarınızı](http://msdn.microsoft.com/library/aa370561.aspx).  
+ Yükleme yüklü olan ve kaldırılmış bir birim olarak ilgili kaynakların mantıksal bir gruplandırmasını gösteren temel birimidir. Windows Yükleyici bileşenlerini bir bileşen benzersiz kimliği veya GUID tarafından tanımlanır. Ayrıca, Windows Installer WIC düzeyinde sayım, başvuru tutar. En yüksek sürüm esneklik için bir DLL gibi birden fazla birincil kaynak belirli bir WIC içerir. Sizi tanımlamak ve bir WIC doldurmak, bir GUID verin ve dağıttıktan sonra kendi bileşim değiştiremeyeceğinizi unutmayın. Daha fazla bilgi için [bileşenleri düzenleme uygulamalarınızı](https://msdn.microsoft.com/library/aa370561.aspx).  
   
  Paket (yeniden dağıtılabilir paketi)  
  .Msi dosyasını ve dış kaynak dosyaları bu dosyayı işaret ediyor olabilir oluşan bir dağıtım birimidir. Bir paketi Windows Installer kullanıcı arabirimini çalıştırın ve yüklemek veya uygulamayı kaldırmak için gereken tüm bilgileri içerir.  
   
  .msi dosyası  
- Yönergeler ve bir uygulamayı yüklemek için gereken verileri içeren bir COM yapılandırılmış depolama dosyası. Her paket, en az bir .msi dosyasını içerir. .Msi dosyasını yükleyici veritabanı, bir Özet bilgi akışı ve büyük olasılıkla bir veya daha fazla dönüşümler ve iç kaynak dosyaları içerir. Yüklenecek dosyaları bir dolap sıkıştırılmış ve .msi dosyasına bir akışa depolanır veya depolanan, sıkıştırılmış veya sıkıştırılmamış kaynak ortamdaki .msi dosyasını dışında. Daha fazla bilgi için [Windows Installer dosya uzantıları](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ Yönergeler ve bir uygulamayı yüklemek için gereken verileri içeren bir COM yapılandırılmış depolama dosyası. Her paket, en az bir .msi dosyasını içerir. .Msi dosyasını yükleyici veritabanı, bir Özet bilgi akışı ve büyük olasılıkla bir veya daha fazla dönüşümler ve iç kaynak dosyaları içerir. Yüklenecek dosyaları bir dolap sıkıştırılmış ve .msi dosyasına bir akışa depolanır veya depolanan, sıkıştırılmış veya sıkıştırılmamış kaynak ortamdaki .msi dosyasını dışında. Daha fazla bilgi için [Windows Installer dosya uzantıları](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Windows Installer kuralları zorlama  
  İki kural kümesi kurulumunuzu ait bileşenleri kaynaklarında dağıtımını belirleyin. İkinci Küme yükleme yazarı olarak uygulamalıdır sırada bir kural kümesi Windows Installer kendisi tarafından korunur.  
   
 > [!NOTE]
-> Yalnızca .msi dosyasının bir doğrulama çalıştırırsanız, Windows Installer kural zorlama gerçekleşir. Bununla birlikte, bu kurallar en iyi yöntemler olarak değerlendirilecek dikkatli olmalıdır. Daha fazla bilgi için [yükleme veritabanı doğrulanıyor](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) ve [paket doğrulama](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Yalnızca .msi dosyasının bir doğrulama çalıştırırsanız, Windows Installer kural zorlama gerçekleşir. Bununla birlikte, bu kurallar en iyi yöntemler olarak değerlendirilecek dikkatli olmalıdır. Daha fazla bilgi için [yükleme veritabanı doğrulanıyor](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) ve [paket doğrulama](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Yükleyici tarafından zorlanan kuralları  
   
@@ -69,9 +69,9 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
   
 #### <a name="component-provider-responsibilities"></a>Bileşen sağlayıcısı sorumlulukları  
   
-- Sonraki sürümlerde de ayrı olarak sevk herhangi iki kaynakları ayrı bileşenler var olmalıdır. Yalnızca bu kaynakları hiçbir zaman ayrı olarak sevk edilir, belirli işiniz kaynakları aynı bileşenin gruplandırılmalıdır. Aslında, önerilir tüm birincil kaynaklar (örneğin, dll) her zaman ayrı WICs içinde mevcut. Daha fazla bilgi için [tanımlama yükleyici bileşenlerini](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Sonraki sürümlerde de ayrı olarak sevk herhangi iki kaynakları ayrı bileşenler var olmalıdır. Yalnızca bu kaynakları hiçbir zaman ayrı olarak sevk edilir, belirli işiniz kaynakları aynı bileşenin gruplandırılmalıdır. Aslında, önerilir tüm birincil kaynaklar (örneğin, dll) her zaman ayrı WICs içinde mevcut. Daha fazla bilgi için [tanımlama yükleyici bileşenlerini](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
 - Tutulan kaynak hiç olmadığı kadar içinde birden fazla WIC sevk etmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşen kuralları bozuk olması durumunda ne olur?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Bileşen kuralları bozuk olması durumunda ne olur?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

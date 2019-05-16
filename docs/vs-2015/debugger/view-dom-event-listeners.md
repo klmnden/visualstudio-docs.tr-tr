@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693583"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
      **Olayları** olay dinleyicileri hiyerarşi listesinde seçtiğiniz herhangi bir öğe için sekmesinde gösterilir.
 
 ### <a name="Tips"></a> Olay dinleyicileri ile sorunları çözmek için ipuçları
- Bazı uygulama senaryolarında olay dinleyicileri açıkça kullanarak kaldırılmalıdır [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Kullanım **olayları** DOM Gezgini'nde kod çalıştırılırken, olay dinleyicileri DOM öğeleri kaldırılmış olup olmadığını sınamak için sekmesinde. Bu tür sorunları gidermenize yardımcı olacak bazı ipuçları şunlardır:
+ Bazı uygulama senaryolarında olay dinleyicileri açıkça kullanarak kaldırılmalıdır [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Kullanım **olayları** DOM Gezgini'nde kod çalıştırılırken, olay dinleyicileri DOM öğeleri kaldırılmış olup olmadığını sınamak için sekmesinde. Bu tür sorunları gidermenize yardımcı olacak bazı ipuçları şunlardır:
 
-- Tek sayfa gezinti modelini kullanan uygulamalar için Visual Studio uygulanan [proje şablonları](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), bir sayfanın parçası olan DOM öğeleri gibi nesneler için kayıtlı olay dinleyicileri kaldırmak genellikle gerekli değildir. Bu senaryoda, DOM öğesi ve onun ilişkili olay dinleyicileri aynı ömrü vardır ve atık olarak toplanmış olabilir.
+- Tek sayfa gezinti modelini kullanan uygulamalar için Visual Studio uygulanan [proje şablonları](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), bir sayfanın parçası olan DOM öğeleri gibi nesneler için kayıtlı olay dinleyicileri kaldırmak genellikle gerekli değildir. Bu senaryoda, DOM öğesi ve onun ilişkili olay dinleyicileri aynı ömrü vardır ve atık olarak toplanmış olabilir.
 
 - DOM öğesi ya da nesne ömrü ilişkili olay dinleyicisinden farklı ise, çağrılacak olabilir `removeEventListener` yöntemi. Örneğin, kullanırsanız `window.onresize` olay, olay işleme burada sayfadan ayrılmak giderseniz, olay dinleyicisi Kaldır gerekebilir.
 

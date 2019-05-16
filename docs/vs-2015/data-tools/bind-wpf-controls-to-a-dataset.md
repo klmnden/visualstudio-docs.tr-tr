@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5231e37b7dd4881deaa6c85c8aa0e33d15bfcc0e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439520"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673995"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 - Veri kümeleri ve TableAdapters öğelerini. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).  
   
-- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- WPF Tasarımcısı ile çalışma. Daha fazla bilgi için [WPF ve Silverlight Tasarımcısı genel bakış](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF veri bağlaması. Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Projeyi oluşturma  
  Yeni bir WPF projesi oluşturun. Proje ürün kayıtları görüntüler.  
@@ -226,7 +226,7 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    > Bu örnekte `Save` yöntemi `TableAdapter` değişiklikleri kaydedin. Yalnızca bir veri tablosunun değiştiği için bu kılavuzda, bu uygundur. Birden çok veri tablolarına değişiklikleri kaydetmek istiyorsanız, alternatif olarak kullanabilirsiniz `UpdateAll` yöntemi `TableAdapterManager` , Visual Studio ile veri kümesi oluşturur. Daha fazla bilgi için [TableAdapterManager genel bakışı](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > Bu örnekte `Save` yöntemi `TableAdapter` değişiklikleri kaydedin. Yalnızca bir veri tablosunun değiştiği için bu kılavuzda, bu uygundur. Birden çok veri tablolarına değişiklikleri kaydetmek istiyorsanız, alternatif olarak kullanabilirsiniz `UpdateAll` yöntemi `TableAdapterManager` , Visual Studio ile veri kümesi oluşturur. Daha fazla bilgi için [TableAdapterManager genel bakışı](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Uygulamayı test etme  
  Derleme ve uygulamayı çalıştırın. Görüntüleyin ve güncelleştirme Ürün kayıtlarını doğrulayın.  
@@ -260,5 +260,5 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Visual Studio'da veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF ve Silverlight Tasarımcısı genel bakış](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Veri Bağlamaya Genel Bakış](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [WPF ve Silverlight Tasarımcısı genel bakış](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Veri Bağlamaya Genel Bakış](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

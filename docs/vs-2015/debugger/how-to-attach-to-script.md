@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704503"
 ---
 # <a name="how-to-attach-to-script"></a>Nasıl yapılır: Betiğe ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayı
   
 2. İçinde **iliştirme** iletişim kutusu, göz **kullanılabilir işlemler** listesi ve bulma komut dosyası işleme iliştirmek istediğiniz. Betik işlemleri bakarak belirleyebilirsiniz **türü** sütun.  
   
-   1. Hata ayıklama yapmak istediğiniz işlemi başka bir bilgisayarda çalışıyorsa, uzak bilgisayarın seçmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Uzak bilgisayar seçme](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Hata ayıklama yapmak istediğiniz işlemi başka bir bilgisayarda çalışıyorsa, uzak bilgisayarın seçmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Uzak bilgisayar seçme](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2. İşlemi farklı bir kullanıcı hesabı altında çalışıyorsa, seçin **tüm kullanıcıların işlemlerini göster** onay kutusu.  
   
@@ -59,7 +59,7 @@ Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayı
   
    **Kullanılabilir işlemler** listesi açıldığında otomatik olarak görüntüleniyor **işlemleri** iletişim kutusu. İşlemler başlatabilir ve iletişim kutusu açıkken arka planda durdurabilirsiniz. Bu nedenle, içeriği her zaman güncel olmayabilir. Listenin tuşlarına basarak işlemlerin geçerli listesini görmek için herhangi bir zamanda yenileyebilirsiniz **Yenile** düğmesi.  
   
-   Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Hata ayıklama konumu araç çubuğunda etkin programı ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Geçerli süreci Ayarla](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Birden çok programları için hata ayıklama, ancak herhangi bir anda yalnızca bir programı hata ayıklayıcıda etkin eklenebilir. Hata ayıklama konumu araç çubuğunda etkin programı ayarlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Geçerli süreci Ayarla](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Tüm **hata ayıklama** yürütme komutlarını etkin programı etkiler. Herhangi bir hata ayıklaması yapılan programa işlemleri iletişim kutusundan bozabilir. Bkz: [kesme noktalarını kullanma](../debugger/using-breakpoints.md).  
   

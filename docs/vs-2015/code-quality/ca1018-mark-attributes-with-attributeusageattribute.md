@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 628eae181fa685e5173030ebac94387edfe4a194
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8b7cea6ea74b336c862cfe44f90e3e1ec54b2c2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704223"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +58,4 @@ ms.locfileid: "54761395"
  [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Öznitelikler](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)
+ [Öznitelikler](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b)

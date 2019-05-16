@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088151"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685339"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio'nun farklı sürümleri aynı bilgisayarda bulunabilir. VSPackage'
   
     - Sürümüne uyum sağlamak için VSPackage program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalıştığı içinde. Ardından, yeni hizmetler için sorgu başarısız olursa, VSPackage'ı eski sürümlerinde desteklenen diğer hizmet sunabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- VSPackage'ı uygun şekilde kaydedin. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md) ve [yönetilen VSPackage kaydı](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- VSPackage'ı uygun şekilde kaydedin. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md) ve [yönetilen VSPackage kaydı](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Dosya uzantılarını uygun şekilde kaydedin. Daha fazla bilgi için [yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

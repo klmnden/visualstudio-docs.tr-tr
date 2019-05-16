@@ -11,12 +11,12 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2efdbe1027bc3a85ed9eef02db9cec3d10504fca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 679bf567d2f44564d31d70b62c8663e665e1ea65
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697280"
 ---
 # <a name="context-parameters"></a>Bağlam Parametreleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "54794858"
  [Özel Parametreler](../../extensibility/internals/custom-parameters.md)   
  [Sihirbazlar](../../extensibility/internals/wizards.md)   
  [Sihirbazı (. Vsz) dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Sihirbazları başlatmak için bağlam parametreleri](http://msdn.microsoft.com/library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Sihirbazları başlatmak için bağlam parametreleri](https://msdn.microsoft.com/library/051a10f4-9e45-4604-b344-123044f33a24)

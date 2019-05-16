@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5401679f02141cac9fff32025edfff4dc76895b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429034"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678890"
 ---
 # <a name="supplying-xml-code-comments"></a>XML Kodu Açıklamalarını Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yorumlar kaynak kodu dosyalarında IntelliSense olarak yapabilirsiniz. Visual Basic, C# veya C++ derleyici komut satırında/doc anahtar eklediğinizde, IntelliSense belgeleri için taban olarak görev yapan bir .xml dosyası oluşturulur.  
   
- Visual Basic kod belgeleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: XML belgesi oluşturma](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
+ Visual Basic kod belgeleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: XML belgesi oluşturma](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
- C# kod belgeleme hakkında daha fazla bilgi için bkz. [XML belgeleri yorumları](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ C# kod belgeleme hakkında daha fazla bilgi için bkz. [XML belgeleri yorumları](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
- C++ kod belgeleme hakkında daha fazla bilgi için bkz. [açıklamaları](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) ve [XML belgeleri](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
+ C++ kod belgeleme hakkında daha fazla bilgi için bkz. [açıklamaları](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) ve [XML belgeleri](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IntelliSense Kullanma](../ide/using-intellisense.md)

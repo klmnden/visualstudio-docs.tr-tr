@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703204"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Kural Kümesi Düzenleyicisi İletişim Kutusu (Eski)
 Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusunda [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Bu konu açıklar nasıl **kural kümesi Düzenleyicisi** eski iletişim kutusun
   
   İfadenin İşleç önceliği, C# İşleç önceliği kurallarını izler.  
   
-  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Koşullar hakkında daha fazla bilgi için bkz. [iş akışlarını kullanarak koşullarında](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Durdurmak ve güncelleştirme işlevleri  
  **Ardından Eylemler:** ve **başka eylemler:** ifadeleri Destek **durdurmak** ve **güncelleştirme** işlevleri. Kullanılacak **durdurmak** işlev, yazın **durdurmak** içine bir **eylemi:** veya **başka eylem:** metin kutusu. **Durdurmak** eylem hemen durdurmak kural kümesi yürütmenin neden olur ve denetim için arama kodunu döndürür. Kullandığınız **güncelleştirme** İleri zincirleme ile işlevi.  

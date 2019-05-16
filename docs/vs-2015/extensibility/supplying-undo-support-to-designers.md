@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675336"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Tasarımcılara Geri Alma Desteği Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
   
 - Kalıcılık sağlar ve CodeDOM desteği uygulayarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> sınıfları.  
   
-  Tasarımcılar kullanarak yazma hakkında daha fazla bilgi için [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bkz: [tasarım zamanı desteğini genişletmek](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Tasarımcılar kullanarak yazma hakkında daha fazla bilgi için [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], bkz: [tasarım zamanı desteğini genişletmek](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Varsayılan geri alma altyapısı tarafından sağlar:  
   
@@ -45,7 +45,7 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
   
 - Standart CodeDOM tabanlı kod oluşturma ve ayrıştırma sistem kod oluşturma ve kalıcılığı için kullanır.  
   
-     Visual Studio CodeDOM desteği ile çalışma hakkında daha fazla bilgi için bkz. [dinamik kaynak kodu oluşturma ve derleme](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Visual Studio CodeDOM desteği ile çalışma hakkında daha fazla bilgi için bkz. [dinamik kaynak kodu oluşturma ve derleme](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Zaman açık Tasarımcı geri alma desteği  
  Tasarımcılar tarafından sağlanan dışındaki bir görünüm bağdaştırıcısı olarak adlandırılan bir grafik kullanıcı arabirimi kullanıyorlarsa kendi geri yönetim sağlaması gerekir <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Tasarım zamanı desteği sunma](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Tasarım zamanı desteği sunma](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

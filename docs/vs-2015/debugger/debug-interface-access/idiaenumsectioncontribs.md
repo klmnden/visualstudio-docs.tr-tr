@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: afef3c8f48fe6ea2f8e1c19221412ce63e25541a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfcd02514e57a5ee3d8af1fac87ba9aa06487b07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687187"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ IDiaEnumSectionContribs : IUnknown
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Alır [IEnumVARIANT arabirimi](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) bu Numaralandırıcının sürümü.|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Alır [IEnumVARIANT arabirimi](https://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) bu Numaralandırıcının sürümü.|  
 |[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Bölüm Katkıları sayısını alır.|  
 |[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Aracılığıyla bir dizin bölümü Katkıları alır.|  
 |[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Belirtilen bir numaralandırma sıralı bölümü Katkıları sayısını alır.|  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701699"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>UML genişletmelerinde birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Bu, en az öneririz yoludur. Eski sürümlerini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sağlanan her bir yöntemin özel bir erişimci metot otomatik olarak oluşturulan bir yardımcı program. Bu kullanışlı olsa da, iç yapısını sınamakta olduğunuz uygulama için çok güçlü bağlı bir birim testleri neden eğilimindedir deneyimimizi önerir. Mimari ve gereksinimleri değiştiğinde testleri yanı sıra uygulama değiştirilmesi gerektiği için bu ek iş sonuçlanır. Ayrıca, böylece test hataları bulmaz tasarımında hatalı varsayımlar uygulamasının de testlere, oluşturulur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir birim testinin anatomisi](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Bir birim testinin anatomisi](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Modelleme Diyagramında Menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – metin kullanarak hızlı bir giriş](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

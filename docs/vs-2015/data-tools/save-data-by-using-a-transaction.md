@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93c512bafd8b15682ed081c7778660ef52fd1f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425082"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692498"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Bir işlemi kullanarak veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Kullanarak bir işlemde veri kaydetme <xref:System.Transactions> ad alanı. Kull
 > [!NOTE]
 > <xref:System.Transactions> Ad alanı, Windows 2000 veya sonraki sürümlerde desteklenir.  
   
- Örneği oluşturmak için bir işlem uygulamak için en kolay yolu olan bir <xref:System.Transactions.TransactionScope> nesnesine bir `using` deyimi. (Daha fazla bilgi için [Using deyimi](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), ve [using deyimi](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) İçinde çalışan kodu `using` deyimi, işlem sırasında katılan.  
+ Örneği oluşturmak için bir işlem uygulamak için en kolay yolu olan bir <xref:System.Transactions.TransactionScope> nesnesine bir `using` deyimi. (Daha fazla bilgi için [Using deyimi](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), ve [using deyimi](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) İçinde çalışan kodu `using` deyimi, işlem sırasında katılan.  
   
  Hareketi tamamlamak için çağrı <xref:System.Transactions.TransactionScope.Complete%2A> yöntemi kullanarak son deyim olarak engelleyin.  
   

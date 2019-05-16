@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4570b8ed1afdfff2efd36dbc2f80e97cfbceecac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698070"
 ---
 # <a name="validate-your-system-during-development"></a>Geliştirme sırasında sisteminizi doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio, yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri ile
 |**Teknik makaleler ve belgeler**|[MSDN Mimari Merkezi](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Uygulamayı test etme](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)   
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [Mimariyi Çözümleme ve Mimarinin Modelini Oluşturma](../modeling/analyze-and-model-your-architecture.md)

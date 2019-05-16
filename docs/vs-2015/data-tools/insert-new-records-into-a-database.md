@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688713"
 ---
 # <a name="insert-new-records-into-a-database"></a>Veritabanına yeni kayıtlar ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Veritabanına yeni kayıtlar eklemek için kullanabileceğiniz `TableAdapter.Upd
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>TableAdapter.Update yöntemini kullanarak bir veritabanına yeni kayıtlar eklemek için  
   
-1. Yeni kayıtlar için istenen ekleme <xref:System.Data.DataTable> yeni bir oluşturarak <xref:System.Data.DataRow> ve eklemeyi <xref:System.Data.DataTable.Rows%2A> koleksiyonu. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna satır ekleme](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Yeni kayıtlar için istenen ekleme <xref:System.Data.DataTable> yeni bir oluşturarak <xref:System.Data.DataRow> ve eklemeyi <xref:System.Data.DataTable.Rows%2A> koleksiyonu. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna satır ekleme](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Yeni satırlar eklendikten sonra <xref:System.Data.DataTable>, çağrı `TableAdapter.Update` yöntemi. Tüm geçirerek ya da güncelleştirmek için veri miktarını denetleyebilirsiniz <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, bir dizi <xref:System.Data.DataRow>s ya da tek bir <xref:System.Data.DataRow>.  
   

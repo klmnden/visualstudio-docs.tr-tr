@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ee29fd6309db34d4e0e4a013149e268051ab0e5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704392"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "63405621"
  Ayrıca, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] desteklediği en sık olun Dvorak klavye düzenleri, yazılan karakter daha erişilebilir. Kullanılabilir olan varsayılan kısayol tuşlarını da özelleştirebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Düzenleyicilerde, iletişim kutuları ve araç Windows  
  Varsayılan olarak, iletişim kutuları ve araç pencerelerinde tarafından [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] renkleri ve yazı tipi boyutu aynı işletim sistemi olarak kullanın. İletişim kutuları, araç çubukları ve araç pencerelerini IDE, çerçeve için renk ayarlarını dayalı bir renk şeması: açık veya koyu. Geçerli renk teması olarak değiştirebileceğiniz [genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Bu gibi durumlarda, açılır pencereleri de Düzenleyicisi kod görünümünde görüntüleyebilirsiniz. Bu windows bir işlev veya ifade tamamlamak için kullanılabilir üyeler geçerli nesne ve parametreleri isteyebilir. Bu windows zorlanıyorsanız varsa yararlı olabilir. Ancak, bazı kullanıcılar için sorunlu Kod düzenleyicisinde odaklanılan müdahale. Bu windows oturumunu Seçenekleri iletişim kutusu açılıyor ve temizleyerek kapatabilirsiniz **otomatik üyeleri Listele** ve **parametre bilgileri** içinde **metin düzenleyici**, **tüm Diller**, **genel** sayfasını **seçenekleri** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Bu gibi durumlarda, açılır pencereleri de Düzenleyicisi kod görünümünde görüntüleyebilirsiniz. Bu windows bir işlev veya ifade tamamlamak için kullanılabilir üyeler geçerli nesne ve parametreleri isteyebilir. Bu windows zorlanıyorsanız varsa yararlı olabilir. Ancak, bazı kullanıcılar için sorunlu Kod düzenleyicisinde odaklanılan müdahale. Bu windows oturumunu Seçenekleri iletişim kutusu açılıyor ve temizleyerek kapatabilirsiniz **otomatik üyeleri Listele** ve **parametre bilgileri** içinde **metin düzenleyici**, **tüm Diller**, **genel** sayfasını **seçenekleri** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Windows tümleşik geliştirme ortamı (IDE) çalışma biçiminizi en uygun şekilde düzenleyebilirsiniz. Yerleştirme, float, gizleme veya her araç penceresi otomatik olarak gizle.  
   

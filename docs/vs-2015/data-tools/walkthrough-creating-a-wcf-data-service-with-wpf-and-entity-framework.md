@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12d7e9c25cdf4e0431a7e4b5e3639dc59b76790c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703172"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_serv
   
 - Northwind örnek veritabanı.  
   
-     Geliştirme bilgisayarınızda bu veritabanı yoksa, buradan indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Yönergeler için [Downloading Sample Databases](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
+     Geliştirme bilgisayarınızda bu veritabanı yoksa, buradan indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Yönergeler için [Downloading Sample Databases](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
 ## <a name="creating-the-service"></a>Hizmeti Oluşturma  
  Oluşturmak için bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], bir Web projesi ekleyecek, oluşturun bir [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ve sonra da modelden hizmeti oluşturun.  

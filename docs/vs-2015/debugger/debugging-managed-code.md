@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194570"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691435"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace ile uygulamanızın yürütme geçmişini kaydederek hataları daha hızlı ve daha kolay bulun. Geri adım ve kaydedilen olaylarını ve zamanında önemli anlarda uygulamanızın durumunu incelemek için çağrılar aracılığıyla iletebilir. Kodunuzdaki hataları ayıklamanıza sayıda kesme noktası ayarlama veya sık olarak uygulamanızı yeniden başlatmadan olmadan. Visual Studio Ultimate gerekir.  
   
- [İzleme ve İşaretleme Uygulamaları](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [İzleme ve İşaretleme Uygulamaları](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  İzleme, onu çalıştıran ve izleme, ancak uygulamanızın yürütmesini izlemek bir yol açıklar izleme deyimleri kodunuzda stratejik konumlara yerleştirerek içerir. İzleme anahtarları, izleme dinleyicileri bir uygulamadaki kodu izleme, uygulama koduna izleme deyimleri ekleme ve ile koşullu derleme, izleme, bu konuda ayrıca izleme için bir giriş için bağlantılar sağlar ve <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> .  
   
- [/ ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Ekleyen bir bağlayıcı seçeneği açıklar <xref:System.Diagnostics.DebuggableAttribute> C++ ile yazılmış kodu. Bu öznitelik, hata ayıklama kullanmak için gerekli olan özellikleri gibi C++ ile ekleyin.  
   
- [Hata ayıklama Windows hizmet uygulamaları](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Hata ayıklama Windows hizmet uygulamaları](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Windows hizmet uygulamalarında hata ayıklama, kurma da dahil olmak üzere, işlemine iliştirme, hizmetin kodda hata ayıklama ile ilgili konuları sağlar `OnStart` yöntemi ve kodda kesme noktaları ayarlama ve Hizmetleri denetimi kullanarak ana yöntemi Başlatma, durdurma, duraklatma ve devam hizmetiniz için manager'ı tıklatın.  
   
- [Hata ayıklama ve profil oluşturma](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [Hata ayıklama ve profil oluşturma](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  Hata ayıklama .NET Framework uygulamaları ve yapılandırma gereksinimleri açıklanır.  
   
  [Betik ve Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
  Hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgileri içeren hata ayıklayıcı, ayarlar ve hazırlık, kesme noktaları, özel durumların işlenmesi yenilikler Düzenle ve devam et, yönetilen kodda hata ayıklama, Visual C++ projelerinde hata ayıklama, COM ve ActiveX hata ayıklaması, DLL'lerinde hata ayıklama, SQL ve kullanıcı hata ayıklama arabirimi başvuruları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Hata ayıklama özel Windows Forms denetimleri tasarım zamanında](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [İzlenecek yol: Hata ayıklama özel Windows Forms denetimleri tasarım zamanında](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

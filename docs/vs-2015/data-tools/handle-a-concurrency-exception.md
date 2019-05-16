@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699741"
 ---
 # <a name="handle-a-concurrency-exception"></a>Bir eşzamanlılık özel durumunu işleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 4. Bir veri kümesini verilerle doldurmak `Customers` Northwind veritabanındaki tablo.  
   
-5. Kullanım [Visual veritabanı araçları](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
+5. Kullanım [Visual veritabanı araçları](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) doğrudan erişmek için Visual Studio'da `Customers` veri tablosu ve bir kaydı değiştirin.  
   
 6. Aynı kaydı başka bir değerle değiştirmek, veri kümesini güncelleştirin ve değişiklikleri gerçekleştirilen bir eşzamanlılık hatası sonuçları veritabanına yazma girişimi.  
   
@@ -55,7 +55,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
 - Güncelleştirmeleri gerçekleştirmek için izne sahip Northwind örnek veritabanına erişim.
   
 > [!NOTE]
-> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> İletişim kutuları ve menü komutları gördüğünüz Yardım menüsünde açıklanana etkin ayarlarınıza ve kullandığınız sürüm bağlı olarak farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma  
  İzlenecek yol, yeni bir Windows uygulaması oluşturarak başlayın.  
@@ -79,7 +79,7 @@ Eşzamanlılık özel durumları (<xref:System.Data.DBConcurrencyException>) iki
   
 1. Üzerinde **veri** menüsünde seçin **ekleme yeni veri kaynağı**.  
   
-     [Veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) açılır.  
+     [Veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) açılır.  
   
 2. Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**.  
   

@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696099"
 ---
 # <a name="registering-single-file-generators"></a>Tek Dosya Oluşturucuları Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ ms.locfileid: "63436603"
  [Tek dosya oluşturucular ekleme](../../extensibility/internals/implementing-single-file-generators.md)   
  [Bir projenin varsayılan Namespace belirleme](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Türleri görsel tasarımcıların gösterme](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [BuildManager nesnesine giriş](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [BuildManager nesnesine giriş](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

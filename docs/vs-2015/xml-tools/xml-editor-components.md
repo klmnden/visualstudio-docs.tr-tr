@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3b07c7c1009b4f8c9f3d92ccb611e3b64319d19
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703258"
 ---
 # <a name="xml-editor-components"></a>XML Düzenleyicisi Bileşenleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Bu bölümde, XML Düzenleyicisi pencereler ve iletişim kutuları ele alınmakt
  XML belge ile ilişkilendirmek için XML Şeması/şemaları seçmek açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [Nasıl yapılır: Genel Düzenleyici seçeneklerini ayarlama](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  Genel ayarlar gibi görünen, ifade tamamlama ve benzeri ayarlama işlemi açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

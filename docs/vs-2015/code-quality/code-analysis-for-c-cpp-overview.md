@@ -22,14 +22,14 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: bc84b3f89aa819755a689a0798aea7fbb8147510
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698013"
 ---
-# <a name="code-analysis-for-cc-overview"></a>C/C++ İçin Kod Çözümlemesine Genel Bakış
+# <a name="code-analysis-for-cc-overview"></a>C/C++ İçin Kod Analizine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C/C++ kod çözümleme aracı, geliştiricilere, C/C++ kaynak kodunda olası hatalar hakkında bilgi sağlar. Bellek ve kaynak sızıntıları ve null işaretçiye veya araç tarafından bildirilen genel kodlama hatalarını arabellek taşmaları, başlatılmamış bellek içerir.  
@@ -38,7 +38,7 @@ C/C++ kod çözümleme aracı, geliştiricilere, C/C++ kaynak kodunda olası hat
  Analiz aracı kullanmak, geliştiriciler için doğal hale getirmek için tam olarak içinde entegre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Derleme işlemi sırasında kaynak kodu oluşturulan tüm uyarılar hata listesinde görünür. Uyarıya neden olan kaynak koduna gitmek ve nedenini ve sorunun olası çözümleri hakkında daha fazla bilgi görüntüleyebilirsiniz.  
   
 ## <a name="pragma-support"></a>#pragma desteği  
- Geliştiriciler `#pragma` uyarıları hata olarak değerlendir; etkinleştirmek veya uyarıları devre dışı bırak ve tek tek satırlık bir kod için uyarıları bastırmak için yönergesi. Daha fazla bilgi için [nasıl yapılır: Etkinleştirme ve devre dışı kod analizi için belirli C/C++ uyarıları](http://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a).  
+ Geliştiriciler `#pragma` uyarıları hata olarak değerlendir; etkinleştirmek veya uyarıları devre dışı bırak ve tek tek satırlık bir kod için uyarıları bastırmak için yönergesi. Daha fazla bilgi için [nasıl yapılır: Etkinleştirme ve devre dışı kod analizi için belirli C/C++ uyarıları](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a).  
   
 ## <a name="annotation-support"></a>Ek açıklama desteği  
  Ek açıklamalar, Kod Analizi doğruluğunu artırın. Ek açıklamalar, işlev parametrelerinde öncesi ve sonrası koşulları hakkında ek bilgiler sağlar ve dönüş türleri. Daha fazla bilgi için [nasıl yapılır: __Analysis_assume kullanarak ek kod bilgileri belirtme](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
@@ -47,7 +47,7 @@ C/C++ kod çözümleme aracı, geliştiricilere, C/C++ kaynak kodunda olası hat
  Tüm kaynak kodu iade etmelerin bazı ilkeleri karşılamasını zorunlu isteyebilirsiniz. Özellikle, çözümleme en son yerel yapı bir adım olarak çalıştırıldığı emin olmanız gerekir. Kod Analizi İlkesi iade etkinleştirme hakkında daha fazla bilgi için bkz. [oluşturma ve kod çözümleme iade ilkelerini kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu  
- Bir adım olarak kod çözümleme aracı çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] derleme işlemi. Daha fazla bilgi için [uygulamayı derleyin](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Bir adım olarak kod çözümleme aracı çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] derleme işlemi. Daha fazla bilgi için [uygulamayı derleyin](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
 ## <a name="command-line-support"></a>Komut satırı desteği  
  Geliştirme ortamında tam tümleştirme yanı sıra, ayrıca komut satırından, analiz aracı geliştiriciler, aşağıdaki örnekte gösterildiği gibi kullanabilirsiniz:  

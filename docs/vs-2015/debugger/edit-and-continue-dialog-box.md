@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46e5990b92dae5086d2986c8df9c8ba4106e913c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704152"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Düzenle ve Devam Et İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ Yalnızca yerel) kod hata ayıklama sırasında düzenledikten sonra bu iletişi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696427"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Nasıl yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Visual Studio'nun önceki bir sürümde oluşturulmuş bir Visual C++ projesini 
  Özel PlatformToolset ile çalışmaya devam etmek isteyip istemediğinizi [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], araç takımı x x86 %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ altında bulunmalıdır makine, veya % ProgramFiles (x86)%\MSBuild\ altında X x64 Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ makine. Özel PlatformToolset oluşturma hakkında daha fazla bilgi için bkz: [yerel C++ çoklu sürüm desteğinin](http://go.microsoft.com/fwlink/?LinkId=248587) Visual C++ Team blogunda.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual C++ taşıma ve yükseltme Kılavuzu](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++ taşıma ve yükseltme Kılavuzu](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

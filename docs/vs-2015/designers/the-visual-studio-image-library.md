@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce131e91a6eb4f8f5ed36701d71000763df29b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 915d5a2784ed6135d4083f0ad44c7a86b8969e55
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680943"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Görüntü Kitaplığı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,4 +34,4 @@ Visual Studio görüntü kitaplığı, Microsoft Visual Studio, Microsoft Window
  Görüntü kitaplığı beş kategoriye ayrılmıştır: Ortak öğeleri, Eylemler, ek açıklamalar, simgeler ve nesneler. Benioku dosyaları ortak öğeler ve simge türleri için PDF biçiminde dahil edilir. Bunlar, bu görüntüler, uygun şekilde uygulamalarınızda kullanma hakkında bilgi içerir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Görüntüler, Bit Eşlemler ve Meta Dosyaları](http://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)
+ [Görüntüler, Bit Eşlemler ve Meta Dosyaları](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

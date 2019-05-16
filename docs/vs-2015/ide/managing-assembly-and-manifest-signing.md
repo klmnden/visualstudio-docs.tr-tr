@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 45bd0720bfd16be2266bbdb56e962d1744ebbf84
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674855"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Derleme ve Bildirim İmzalamayı Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Tanımlayıcı ad imzalama bir yazılım bileşeni genel olarak benzersiz bir ki
   
  Güçlü bir ad derlemenin kimliğinden (basit metin adından, sürüm numarası ve kültür bilgilerini) bir ortak anahtar belirteci ve dijital imza oluşur.  
   
- Visual Basic ve C# projelerinde imzalama derlemeler hakkında daha fazla bilgi için bkz: [bkz](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+ Visual Basic ve C# projelerinde imzalama derlemeler hakkında daha fazla bilgi için bkz: [bkz](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Görselde derlemeleri imzalama hakkında bilgi için C++ projeleri için bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
+ Görselde derlemeleri imzalama hakkında bilgi için C++ projeleri için bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc).  
   
 ## <a name="asset-types-and-signing"></a>Varlık türleri ve imzalama  
  .NET derlemelerini ve uygulama bildirimleri imzalayabilirsiniz. Bunlar aşağıdakileri içerir:  
@@ -61,12 +61,12 @@ Tanımlayıcı ad imzalama bir yazılım bileşeni genel olarak benzersiz bir ki
 > [!WARNING]
 > Anahtar dosyanızı başkası kullanmasını önlemek için bir parola ile her zaman korur. Sağlayıcıları veya sertifika depolarını kullanarak, anahtarlarınızın güvenliğini sağlayabilirsiniz.  
   
- Ayrıca, önceden oluşturduğunuz bir anahtara işaret edebilir. Anahtarları oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Genel-özel anahtar çifti oluşturma](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Ayrıca, önceden oluşturduğunuz bir anahtara işaret edebilir. Anahtarları oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Genel-özel anahtar çifti oluşturma](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
- Erişimi yalnızca ortak anahtar varsa, anahtar atama erteleneceği imzalamayı geciktirme kullanabilirsiniz. Seçerek imzalamayı geciktirme etkinleştirme **gecikme yalnızca oturum** onay kutusu. Gecikmeli imzalanmış bir proje çalışmaz ve hata ayıklaması yapılamıyor. Ancak, geliştirme sırasında doğrulama kullanarak atlayabilir [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) ile `-Vr` seçeneği.  
+ Erişimi yalnızca ortak anahtar varsa, anahtar atama erteleneceği imzalamayı geciktirme kullanabilirsiniz. Seçerek imzalamayı geciktirme etkinleştirme **gecikme yalnızca oturum** onay kutusu. Gecikmeli imzalanmış bir proje çalışmaz ve hata ayıklaması yapılamıyor. Ancak, geliştirme sırasında doğrulama kullanarak atlayabilir [Sn.exe (tanımlayıcı ad aracı)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) ile `-Vr` seçeneği.  
   
  Bildirimleri imzalama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanımlayıcı adlı derlemeler](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+ [Tanımlayıcı adlı derlemeler](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

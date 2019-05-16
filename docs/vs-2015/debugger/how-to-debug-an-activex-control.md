@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3db776586a74fc1063a0553bb1dcf9ac62537965
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444810"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704460"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [NOT]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  ActiveX denetimi hata ayıklamak için bir kapsayıcı (çalıştırmak denetimi için yürütülebilir) belirtmeniz gerekir.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63444810"
      Bir kapsayıcıda belirtmezseniz **proje özellik sayfaları** iletişim kutusunda belirtebilirsiniz kapsayıcı hatalarını ayıklamaya başladığınızda. Hata ayıklamayı başlatmak için bir yürütme komutu seçtiğinizde [oturumu için yürütülebilir hata ayıklama iletişim kutusu](../debugger/executable-for-debugging-session-dialog-box.md) görünür. İletişim kutusundaki kapsayıcı yol adını belirtin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX denetimleri](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Test kapsayıcısı ile özellikleri ve olayları test etme](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [ActiveX denetimleri](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Test kapsayıcısı ile özellikleri ve olayları test etme](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)   
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)

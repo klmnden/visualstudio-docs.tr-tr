@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687363"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54783938"
 |Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korunan değer türü tarafından güvenliği sağlanan bir [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) veya [bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
+ Ortak veya korunan değer türü tarafından güvenliği sağlanan bir [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) veya [bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Kural Tanımı
  Değer türleri ayrılan ve diğer oluşturucular yürütmeden önce kendi varsayılan oluşturucu tarafından başlatılır. Bir değer türü, isteğe bağlı ya da LinkDemand tarafından güvenlik altına alınır ve arayan güvenlik denetimi, herhangi bir oluşturucu dışında uygun izinlere sahip değil'de varsayılan başarısız olur ve bir güvenlik özel durumu oluşturulur. Değer türü serbest değil; kendi varsayılan oluşturucu tarafından ayarlanmış durumda kalır. Değer türü örneğini geçirir bir çağıranın oluşturun veya örnek erişim izni olduğunu varsaymayın.
@@ -60,4 +60,4 @@ ms.locfileid: "54783938"
  **Yeni değerleri SecuredTypeStructure 100 100**
 **yeni değerleri SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Bağlantı talepleri](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Bağlantı talepleri](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [veri ve modelleme](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

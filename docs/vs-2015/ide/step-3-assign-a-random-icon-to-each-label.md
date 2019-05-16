@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694004"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3. Adım: Her Etikete Rastgele Bir Simge Atama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
   
      İlk satırı dönüştürür `control` değişken adında bir etikete `iconLabel`. Sonraki satır bir `if` dönüştürme emin olmak için denetler deyimidir. Dönüştürme işe, deyimleri `if` deyimi çalıştırın. (Önceki öğreticilerden hatırlayabileceğiniz `if` deyimi belirttiğiniz her tür koşulu değerlendirmek için kullanılır.) İlk satırı `if` deyimi adlı bir değişken oluşturur `randomNumber` simgeler listesindeki öğelerden birine karşılık gelen rasgele bir sayı içerir. Bunu yapmak için kullandığı `Next` yöntemi `Random` daha önce oluşturduğunuz bir nesne. `Next` Yöntemi rasgele sayıyı döndürür. Bu satır ayrıca kullanan `Count` özelliği `icons` rasgele sayının seçileceği aralığı belirlemek için liste. Sonraki satır simge, liste öğelerine atar `Text` etiketin özelliği. Derleme dışı bırakılan satır bu konunun sonunda açıklanmaktadır. Son olarak, son satırında `if` deyimi forma eklenmiş olan simgeyi listeden kaldırır.  
   
-     Kodun belirli bir bölümünün ne işe yaradığından emin olamadığınızda, fare işaretçisini kod öğesinin üzerine getirip ortaya çıkan araç ipucunu gözden geçirebileceğinizi unutmayın. Ayrıca, Visual Studio hata ayıklayıcısını kullanarak, program çalışırken kodun her satırını adım adım geçebilirsiniz. Bkz: [nasıl yaparım? Visual Studio hata ayıklayıcı ile adım? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) veya [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md) daha fazla bilgi için.  
+     Kodun belirli bir bölümünün ne işe yaradığından emin olamadığınızda, fare işaretçisini kod öğesinin üzerine getirip ortaya çıkan araç ipucunu gözden geçirebileceğinizi unutmayın. Ayrıca, Visual Studio hata ayıklayıcısını kullanarak, program çalışırken kodun her satırını adım adım geçebilirsiniz. Bkz: [nasıl yaparım? Visual Studio hata ayıklayıcı ile adım? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) veya [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md) daha fazla bilgi için.  
   
-3. Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde `Form1` *Oluşturucusu*, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](http://msdn.microsoft.com/library/ace5hbzh.aspx) veya [oluşturucuları ve yıkıcıları kullanma](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) daha fazla bilgi için Visual Basic'te.  
+3. Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde `Form1` *Oluşturucusu*, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](https://msdn.microsoft.com/library/ace5hbzh.aspx) veya [oluşturucuları ve yıkıcıları kullanma](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) daha fazla bilgi için Visual Basic'te.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

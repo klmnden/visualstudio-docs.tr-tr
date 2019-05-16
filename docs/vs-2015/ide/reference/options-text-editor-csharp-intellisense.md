@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e5ca0c60511ee9537041f3a41f44a0e1f55b5a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc4d918f3eae9088e2b36b7bebbb69ce130e26d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441359"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674148"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Seçenekler, Metin Düzenleyici, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441359"
 Kullanım **IntelliSense** Visual C# için IntelliSense'in davranışını etkileyen ayarları değiştirmek için özellik sayfası. Erişebildiğiniz **IntelliSense** tıklayarak özellik sayfasını **seçenekleri** üzerinde **Araçları** menüsü, ardından **C#** içinde**Metin düzenleyici** klasörünü ve ardından **IntelliSense.**  
   
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  **IntelliSense** özellik sayfası, aşağıdaki özellikleri içerir:  
   
@@ -41,10 +41,10 @@ Kullanım **IntelliSense** Visual C# için IntelliSense'in davranışını etkil
  Bu seçenek belirlendiğinde, yazmaya başladığınızda IntelliSense tamamlanma listesi otomatik olarak görüntüler. Bu seçenek seçilmezse, IntelliSense tamamlama hala kullanılabilir **IntelliSense** menüsünü veya CTRL + boşluk tuşlarına basarak.  
   
  **Anahtar sözcükleri tamamlama listelerine Yerleştir**  
- Bu seçenek belirlendiğinde, IntelliSense C# anahtar sözcükleri, örneğin, ekler [sınıfı](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), tamamlanma listesi.  
+ Bu seçenek belirlendiğinde, IntelliSense C# anahtar sözcükleri, örneğin, ekler [sınıfı](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), tamamlanma listesi.  
   
  **Kod parçacıklarını tamamlama listelerine Yerleştir**  
- Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlanma listesine ekler. Kod parçacığı diğer ad olduğu bir anahtar sözcüğü ile aynı örneğin, durumda [sınıfı](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için [Visual C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).  
+ Bu seçenek belirlendiğinde, IntelliSense, C# kod parçacıkları için diğer adlar tamamlanma listesine ekler. Kod parçacığı diğer ad olduğu bir anahtar sözcüğü ile aynı örneğin, durumda [sınıfı](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), anahtar sözcüğü kısayol tarafından değiştirilir. Daha fazla bilgi için [Visual C# kod parçacıkları](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Tamamlanma listeleri seçimi  
  **Aşağıdaki karakterleri yazarak işleyen:**  
@@ -72,5 +72,5 @@ Kullanım **IntelliSense** Visual C# için IntelliSense'in davranışını etkil
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)   
- [XML belge açıklamaları](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [XML belge açıklamaları](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [IntelliSense Kullanma](../../ide/using-intellisense.md)

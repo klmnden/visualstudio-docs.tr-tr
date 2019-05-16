@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695011"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>İzlenecek yol: Performans sorunlarını tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,4 +161,4 @@ Bu izlenecek yol, performans sorunlarını belirlemek için bir uygulamanın pro
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   
  [Çalışmaya başlama](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

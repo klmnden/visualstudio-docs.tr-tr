@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa33d13623e1f7222eb831571d60d25404465dc4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702973"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "63424692"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Visual Basic ve C# projelerinde desteklenir. Yeni projeyi bu dillerden birinde oluşturun.  
   
-3. Tıklayın **Windows Forms uygulaması** şablonu ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Tıklayın **Windows Forms uygulaması** şablonu ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
 4. InheritanceWalkthrough projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -188,8 +188,8 @@ ms.locfileid: "63424692"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Nasıl yapılır: LINQ to SQL sınıfları (O R Designer) projeye Ekle](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
- [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Nasıl yapılır: LINQ to SQL sınıfları (O R Designer) projeye Ekle](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [İzlenecek yol: LINQ to SQL sınıfları (O R Designer) oluşturma](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Nasıl yapılır: Visual Basic'de nesne modeli oluşturmak veyaC#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Nasıl yapılır: Visual Basic'de nesne modeli oluşturmak veyaC#](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)

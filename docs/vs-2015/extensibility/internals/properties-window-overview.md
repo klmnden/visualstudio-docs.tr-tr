@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113852"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700751"
 ---
 # <a name="properties-window-overview"></a>Özellikler Penceresine Genel Bakış
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113852"
 |Arabirim adı|Açıklama|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Kategoriler bir listesini sağlar **özellikleri** penceresi ve her bir özellik için bir kategori eşler.|  
-|[IDispatch arabirimi](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Bir nesnenin yöntemleri ve programlama Araçlar ve Otomasyon destekleyen diğer uygulamalar için özellikler sunar.|  
+|[IDispatch arabirimi](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Bir nesnenin yöntemleri ve programlama Araçlar ve Otomasyon destekleyen diğer uygulamalar için özellikler sunar.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Olarak adlandırılan üç nokta (...) düğmeleri sağlar *oluşturucular* nesne tarafından uygulanan kalıcı iletişim kutusu windows açın. Değer bir kolayca metin alanında kullanıcı tarafından değil yazıldığında kullanılır. Örneğin, sizin için RGB değeri belirleyen bir renk seçiciyi açmak için kullanılabilir.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Görüntülenen bilgileri güncelleştirmek için kullanılan nesneleri erişim sağlayan **özellikleri** penceresi. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> VSPackage'ları tarafından görüntülenecek ilgili özellikleri ile seçilebilir nesneleri içeren her bir pencere için uygulanır.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Bir arabirim ve alanların bir yapının yöntemleri gibi bir nesne türü hakkında bilgi sağlar.|  

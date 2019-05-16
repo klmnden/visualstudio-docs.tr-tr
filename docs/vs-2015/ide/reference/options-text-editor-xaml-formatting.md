@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74495c068cbd476014fa2c10088239e096d42f02
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840941"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696013"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "56840941"
 Kullanım **biçimlendirme** öğeler ve öznitelikler XAML belgelerinizde nasıl biçimlendirileceğini belirtmek için özellik sayfası. Açmak için **seçenekleri** iletişim kutusu, tıklayın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **biçimlendirme** özellik sayfasında **metin düzenleyici**, **XAML**, **biçimlendirme** düğümü.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Otomatik biçimlendirme olayları
 Otomatik biçimlendirme oluşabilir, aşağıdaki olaylardan herhangi biri algılandı.
@@ -127,6 +127,6 @@ Kullanıcı denetimleri ve özel denetimler araç kutusunda gösterilip gösteri
 |**Araç kutusu öğeleri otomatik olarak doldurur.**|Kullanıcı denetimleri ve geçerli çözüme özel denetimleri araç kutusunda otomatik olarak gösterilip gösterilmeyeceğini belirtir.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[WPF'de XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Nasıl yapılır: XAML Görünümü Ayarları Değiştir](http://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML ve kod gözden geçirmeleri](http://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[WPF'de XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
+[Nasıl yapılır: XAML Görünümü Ayarları Değiştir](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
+[XAML ve kod gözden geçirmeleri](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

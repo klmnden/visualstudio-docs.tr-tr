@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684291"
 ---
 # <a name="using-dump-files"></a>Döküm dosyalarını kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Yığınlar içeren veya içermeyen döküm dosyaları; bir döküm dosyası olu
   
 - Visual Studio, ARM cihazlarından yerel uygulamaların döküm dosyalarının hatalarını ayıklayabilir. Visual Studio, ARM cihazlarındaki yönetilen uygulamaların uygulama döküm dosyalarının da hatalarını ayıklayabilir, ancak bunu yalnızca yerel hata ayıklayıcıda yapabilir.  
   
-- Hata ayıklamak için [çekirdek modu](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) döküm dosyalarını Visual Studio 2013'te, yükleme [Windows 8.1 sürümünü, hata ayıklama araçları için Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Bkz: [Visual Studio'da çekirdek hata ayıklama](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Hata ayıklamak için [çekirdek modu](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) döküm dosyalarını Visual Studio 2013'te, yükleme [Windows 8.1 sürümünü, hata ayıklama araçları için Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Bkz: [Visual Studio'da çekirdek hata ayıklama](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio olarak bilinen eski döküm biçiminde kaydedilen döküm dosyalarının hatalarını ayıklayamaz bir [tam kullanıcı modu dökümü](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Tam kullanıcı modu dökümünün yığını olan bir dökümle aynı olmadığına dikkat edin.  
   
-- İle hata ayıklamak için [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) Visual Studio'da hata ayıklama araçları için Windows Sürücü Seti'nin (WDK) parçası olan Windows yüklemeniz gerekir. Bkz: [Windows 8.1 önizleme: Setleri, bitleri ve araçları indirme](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- İle hata ayıklamak için [SOS.dll (SOS Debugging Extension)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) Visual Studio'da hata ayıklama araçları için Windows Sürücü Seti'nin (WDK) parçası olan Windows yüklemeniz gerekir. Bkz: [Windows 8.1 önizleme: Setleri, bitleri ve araçları indirme](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Yığınlar içeren veya içermeyen döküm dosyaları; bir döküm dosyası olu
   
 - İle [tam zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md) etkinleştirildiğinde, hata ayıklayıcının hata ayıklayıcısı dışında çalışan çöken bir işleme ve sonra döküm dosyasını kaydedebilirsiniz. Bkz: [çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Windows mini döküm biçimini destekleyen herhangi bir programla da döküm dosyaları oluşturabilirsiniz. Örneğin, **Procdump** komut satırı yardımcı programı [Windows SysInternals](http://technet.microsoft.com/sysinternals/default) Tetikleyiciler veya isteğe bağlı göre işlem kilitlenme döküm dosyaları oluşturabilirsiniz. Bkz: [gereksinimleri ve sınırlamaları](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) döküm dosyalarını oluşturmak için diğer araçları kullanma hakkında ek bilgi için bu konuda.  
+  Windows mini döküm biçimini destekleyen herhangi bir programla da döküm dosyaları oluşturabilirsiniz. Örneğin, **Procdump** komut satırı yardımcı programı [Windows SysInternals](https://technet.microsoft.com/sysinternals/default) Tetikleyiciler veya isteğe bağlı göre işlem kilitlenme döküm dosyaları oluşturabilirsiniz. Bkz: [gereksinimleri ve sınırlamaları](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) döküm dosyalarını oluşturmak için diğer araçları kullanma hakkında ek bilgi için bu konuda.  
   
   ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   

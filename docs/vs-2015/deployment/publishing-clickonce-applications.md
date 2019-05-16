@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697527"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce Uygulamalarını Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
   
   Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-## <a name="publish-page"></a>Yayımlama Sayfası  
+## <a name="publish-page"></a>Yayımla Sayfası  
  **Yayımla** sayfasının **Proje Tasarımcısı** ClickOnce dağıtım özelliklerini yapılandırmak için kullanılır. Aşağıdaki tabloda konularını listeler  
   
 |Başlık|Açıklama|  
@@ -98,8 +98,8 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
 |[İzlenecek yol: ClickOnce Dağıtım API'si ile Uydu Derlemelerini İndirme](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Uydu derlemelerini isteğe bağlı olarak işaretler ve bir istemci makinesi, geçerli kültür ayarları için ihtiyaç duyduğu derlemeyi indirmek açıklar.|  
 |[İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|ClickOnce uygulamanızı dağıtmak için .NET Framework yardımcı programları kullanmayı açıklar.|  
 |[İzlenecek yol: Yeniden İmzalama Gerektirmeyen ve Marka Bilgisini Koruyan bir ClickOnce Uygulamasını El ile Dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|.NET Framework yardımcı programları bildirimlerini yeniden imzalama olmadan ClickOnce uygulamanızı dağıtmak için nasıl kullanılacağını açıklar.|  
-|[NIB: Nasıl yapılır: Bir uygulama belirli bir CPU türü için en iyi duruma getirme](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Bir 64-bit işlemci için değiştirerek yayımlama **hedef CPU** veya **Platform hedefi** projenizdeki özellik.|  
-|[İzlenecek yol: Birden çok .NET Framework sürümleri üzerinde çalıştırılacak bir ClickOnce uygulamasını etkinleştirme](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Yükleme ve'NET Framework'ün birden çok sürümünde çalışan bir ClickOnce uygulamasını etkinleştirmeyi açıklar.|  
+|[NIB: Nasıl yapılır: Bir uygulama belirli bir CPU türü için en iyi duruma getirme](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Bir 64-bit işlemci için değiştirerek yayımlama **hedef CPU** veya **Platform hedefi** projenizdeki özellik.|  
+|[İzlenecek yol: Birden çok .NET Framework sürümleri üzerinde çalıştırılacak bir ClickOnce uygulamasını etkinleştirme](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Yükleme ve'NET Framework'ün birden çok sürümünde çalışan bir ClickOnce uygulamasını etkinleştirmeyi açıklar.|  
 |[İzlenecek yol: ClickOnce Uygulaması için Özel bir Yükleyici Oluşturma](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Bir ClickOnce uygulamasını yüklemek için özel bir yükleyici oluşturma açıklanır.|  
 |[Nasıl yapılır: Görsel Stiller Etkinken WPF Uygulaması Yayımlama](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Görsel stillerin etkin kıldığı bir WPF uygulamasını yayımlamak istediğinizde görüntülenen bir hatayı gidermek için adım adım yönergeler sağlar.|  
   

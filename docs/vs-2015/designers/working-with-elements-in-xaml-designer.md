@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403455"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690026"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403455"
 Öğeleri ekleyebilirsiniz; denetimler, düzenler ve şekiller — uygulamanıza XAML, kod veya XAML Tasarımcısını kullanarak. Bu konuda, Visual Studio veya Visual Studio için Blend, XAML Tasarımcısı'nda öğelerle çalışma açıklar.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Bir öğe için bir düzen ekleme  
- *Düzen* boyutlandırma ve bir kullanıcı Arabiriminde öğelerin konumlandırmasını, işlemidir. Görsel öğeleri konumlandırmak için bunları bir düzende yerleştirmelisiniz [paneli](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` koleksiyonu olan bir alt özelliğine sahiptir, [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) türleri. Çeşitli kullanabileceğiniz `Panel` alt öğeleri gibi [tuval](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), ve [kılavuz](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), Düzen kapsayıcıları görev yapacak ve getirin ve öğeleri düzenlemek için bir sayfa üzerinde.  
+ *Düzen* boyutlandırma ve bir kullanıcı Arabiriminde öğelerin konumlandırmasını, işlemidir. Görsel öğeleri konumlandırmak için bunları bir düzende yerleştirmelisiniz [paneli](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). A `Panel` koleksiyonu olan bir alt özelliğine sahiptir, [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) türleri. Çeşitli kullanabileceğiniz `Panel` alt öğeleri gibi [tuval](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx), ve [kılavuz](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), Düzen kapsayıcıları görev yapacak ve getirin ve öğeleri düzenlemek için bir sayfa üzerinde.  
   
  Varsayılan olarak, bir `Grid` paneli sayfa veya form içinde üst düzey Düzen kapsayıcısı olarak kullanılır. Düzen bölmeleri, denetimleri veya diğer öğeleri içinde üst düzey sayfa düzeni ekleyebilirsiniz.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63403455"
   
     - Bir öğeyi sürükleyin **araç kutusu** çalışma yüzeyine.  
   
-    - İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) veya [dikdörtgen](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) ve sonra etkin panelindeki bir öğesi çizin.  
+    - İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) veya [dikdörtgen](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) ve sonra etkin panelindeki bir öğesi çizin.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Öğeleri katman sırasını değiştirme  
  XAML Tasarımcısı'nda çalışma yüzeyine iki öğe olduğunda, bir öğe katman sırasını diğer önünde görünür. Belge Anahattı öğeleri listesi kısmındaki en öndedir öğesi penceredir (ne zaman dışında **haritadaki** özelliği bir öğe için). Sayfa, form veya Düzen kapsayıcısı için bir öğe eklediğinizde, öğe otomatik olarak etkin kapsayıcı öğe diğer öğeleri önüne yerleştirilir. Öğelerin sırasını değiştirmek için kullanabileceğiniz **sipariş** komutları veya belge ana hattı penceresinin nesne ağacında öğeleri sürükleyin.  

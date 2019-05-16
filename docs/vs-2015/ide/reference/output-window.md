@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696067"
 ---
 # <a name="output-window"></a>Çıktı Penceresi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438073"
   
  Kendi uygulamalarınızı çalışma zamanında tanılama iletileri yazmak için de programlayabileceğiniz bir **çıkış** bölmesi. Bunu yapmak için üyeleri kullanan <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> sınıfını <xref:System.Diagnostics> ad alanı .NET Framework sınıf kitaplığı. Üyeleri <xref:System.Diagnostics.Debug> çözüm veya projenin hata ayıklama yapılandırmaları oluşturduğunuzda sınıfı görünen çıkış; üyeleri <xref:System.Diagnostics.Trace> sınıfı görüntü çıktısı hata ayıklama veya yayın yapılandırmaları oluşturduğunuzda. Daha fazla bilgi için [çıkış penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- İçinde [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Çıkış bir satıra F1'e basarak uygun bir Yardım konusu görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı veya derleme olayının çıktısını biçimlendirme](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ İçinde [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Çıkış bir satıra F1'e basarak uygun bir Yardım konusu görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı veya derleme olayının çıktısını biçimlendirme](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Kaydırma davranışını  
  Çıkış penceresinde autoscrolling kullanın ve ardından fareyi veya ok tuşlarını kullanarak gidin, autoscrolling durdurur. Autoscrolling sürdürmek için CTRL + END tuşlarına basın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıkış penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Nasıl yapılır: Çıkış penceresini denetleme](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Nasıl yapılır: Çıkış penceresini denetleme](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Derleme ve oluşturma](../../ide/compiling-and-building-in-visual-studio.md)   
  [Derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md)   
- [Sınıf Kitaplığına Genel Bakış](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Sınıf Kitaplığına Genel Bakış](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

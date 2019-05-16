@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424578"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695328"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
    Sınıf Görünümü'ndeki proje düğümünden bir veya daha fazla türü sınıf diyagramına sürükleyerek projedeki türleri de görüntüleyebilirsiniz.  
   
 > [!TIP]
-> Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Sınıf Görünümü açık değilse, sınıf görünümünden açın **görünümü** menüsü. Sınıf Görünümü hakkında daha fazla bilgi için bkz: [Viewing Classes and Their Members](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Türleri diyagram üzerinde varsayılan konumlarda görüntülemek için Sınıf Görünümü'nde bir veya daha fazla tür seçin, seçili türlere sağ tıklayın ve seçin **sınıf diyagramını görüntüle**.  
   

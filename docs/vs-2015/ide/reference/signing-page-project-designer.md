@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437998"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689476"
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
   
 ## <a name="assembly-signing"></a>Derleme imzalama  
  **Derlemeyi imzalamayı** onay kutusu  
- Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: Bir derleme (Visual Studio) oturum](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Derlemeyi imzalamak ve kesin adlandırılmış bir anahtar dosyası oluşturmak için bu onay kutusunu seçin. Derlemeyi kullanarak imzalama hakkında daha fazla bilgi için **Proje Tasarımcısı**, bkz: [nasıl yapılır: Bir derleme (Visual Studio) oturum](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Bu seçenek, Al.exe araç tarafından sağlanan kullanır [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] derlemeyi imzalamak için. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Bu seçenek, Al.exe araç tarafından sağlanan kullanır [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] derlemeyi imzalamak için. Al.exe hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir derlemeyi katı bir adla imzalamak](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  **Tanımlayıcı ad anahtar dosyası seç** listesi  
  Derleme imzalamak için kullanılan bir yeni veya mevcut kesin adlandırılmış anahtar dosyası belirtmenize olanak sağlar. Seçin  **\<Gözat … >** var olan bir anahtar dosyası seçin.  
@@ -83,7 +83,7 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
  **Yalnızca oturum gecikme** onay kutusu  
  Gecikmeli imzalamayı etkinleştirmek için bu onay kutusunu seçin.  
   
- Gecikmeli imzalanmış bir proje çalışmaz ve hata ayıklaması yapılamaz unutmayın. Ancak, kullanabileceğiniz [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) ile `-Vr` seçeneği doğrulama geliştirme sırasında atlanacak.  
+ Gecikmeli imzalanmış bir proje çalışmaz ve hata ayıklaması yapılamaz unutmayın. Ancak, kullanabileceğiniz [Sn.exe (tanımlayıcı ad aracı)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) ile `-Vr` seçeneği doğrulama geliştirme sırasında atlanacak.  
   
 > [!NOTE]
 > Bir derleme için kaydolduğunuzda, bir özel anahtara erişim her zaman olmayabilir. Örneğin, bir kuruluş geliştiricileri her gün için erişime sahip olmadığından yakından korumalı bir anahtar çifti olabilir. Ortak anahtar kullanılabilir, ancak özel anahtar erişimi birkaç kişilerle sınırlıdır. Böyle bir durumda, kullandığınız *Gecikmeli* veya *kısmi imzalama* derleme kapalı devredildiği kadar ek özel anahtarın erteleniyor ortak anahtar sağlamak için.  
@@ -91,8 +91,8 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Özellikleri başvurusu](../../ide/reference/project-properties-reference.md)   
  [Derleme ve bildirim imzalamayı yönetme](../../ide/managing-assembly-and-manifest-signing.md)   
- [Tanımlayıcı ad imzalama için yönetilen uygulamalar](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Tanımlayıcı ad imzalama için yönetilen uygulamalar](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Nasıl yapılır: Bir derleme (Visual Studio) oturum açın](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Nasıl yapılır: Bir derleme (Visual Studio) oturum açın](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

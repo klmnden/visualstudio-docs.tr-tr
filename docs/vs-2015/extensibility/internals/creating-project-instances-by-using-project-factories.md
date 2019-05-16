@@ -11,12 +11,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772627"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697212"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Proje Üreteçlerini Kullanarak Proje Örnekleri Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Proje türlerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanan bir *
   
  Uygulayabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> projenizdeki bir sınıf içinde arabirim. Genellikle, kendi modülünde yer alıyor.  
   
- Uygulaması örneği için `IVsProjectFactory` bulunan PrjFac.cpp bkz arabirim [temel proje](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) örnek dizin.  
+ Uygulaması örneği için `IVsProjectFactory` bulunan PrjFac.cpp bkz arabirim [temel proje](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) örnek dizin.  
   
  Bir sahibi tarafından toplanan destekleyen projeler, proje dosyasında bir sahibi anahtarı kalıcı gerekir. Zaman <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> yöntemi bir sahibi anahtara sahip bir proje üzerinde çağrılır, sahip olunan proje sahibi anahtarıyla GUID sonra çağıran bir proje fabrikası dönüştürür `CreateProject` gerçek oluşturma yapmak için bu proje fabrika yöntemi.  
   
@@ -52,4 +52,4 @@ Proje türlerinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanan bir *
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Yapılacaklar listesi: Yeni Proje Türleri Oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)

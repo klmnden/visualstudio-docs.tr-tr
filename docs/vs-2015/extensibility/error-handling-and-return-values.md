@@ -12,12 +12,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74e61e60384b3e98bf26eb8208696ecb9223efa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696341"
 ---
 # <a name="error-handling-and-return-values"></a>Hata İşleme ve Dönüş Değerleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +57,6 @@ VSPackages ve COM aynı mimariye hataları için kullanın. `SetErrorInfo` Ve `G
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Seterrorınfo (Bileşen Otomasyonu)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [Geterrorınfo](http://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
- [ISupportErrorInfo arabirimi](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)
+ [Seterrorınfo (Bileşen Otomasyonu)](https://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [Geterrorınfo](https://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
+ [ISupportErrorInfo arabirimi](https://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)

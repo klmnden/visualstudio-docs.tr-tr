@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684383"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kayıtlı IntelliTrace verilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
     |**Kaynak**|**Bkz:**|  
     |----------------|-------------|  
     |Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) bir IntelliTrace oturumu|[IntelliTrace Özellikleri](../debugger/intellitrace-features.md)|  
-    |Microsoft Test Yöneticisi'nde bir sınama oturumu. Bu bir .iTrace dosyası bir Team Foundation Server iş nesnesine ekler.|[El ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent, ya da tek başına veya System Center 2012 R2 Operations Manager ile ASP.NET web uygulamaları ve SharePoint uygulamaları geliştirme sırasında çalışan|-   [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager için yenilikler nelerdir?](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Microsoft Test Yöneticisi'nde bir sınama oturumu. Bu bir .iTrace dosyası bir Team Foundation Server iş nesnesine ekler.|[El ile testlerde daha fazla tanılama verisi toplama](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Microsoft Monitoring Agent, ya da tek başına veya System Center 2012 R2 Operations Manager ile ASP.NET web uygulamaları ve SharePoint uygulamaları geliştirme sırasında çalışan|-   [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager için yenilikler nelerdir?](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> Ne yapmak istiyorsunuz?  
   
@@ -207,7 +207,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
   
     ![IntelliTrace günlüğünü &#45; SharePoint işlenmeyen özel durumları](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Bir kılavuz için bkz. [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Aracı kayıtları görüntüle veri türleri için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
+   Bir kılavuz için bkz. [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Aracı kayıtları görüntüle veri türleri için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> İş parçacıkları listesi  
  Hedef işlemde çalışan kayıtlı iş parçacıklarını inceleyin. Seçili bir iş parçacığı içindeki ilk geçerli IntelliTrace olayından hata ayıklamasını başlayabilirsiniz.  
@@ -258,14 +258,14 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 |----------------|-------------------|  
 |**Modül adı**|Modül dosya adı|  
 |**Modül yolu**|Burada modülün yüklendiğine disk konumu|  
-|**Modül kimliği**|Sürüme özgü olan ve eşleştirme simgesi (PDB) dosyalarına katkıda bulunan modülün benzersiz tanımlayıcısı. Bkz: [sembol (.pdb) dosyalarını ve kaynak dosyaları bulma](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Modül kimliği**|Sürüme özgü olan ve eşleştirme simgesi (PDB) dosyalarına katkıda bulunan modülün benzersiz tanımlayıcısı. Bkz: [sembol (.pdb) dosyalarını ve kaynak dosyaları bulma](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?  
  [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [IntelliTrace Özellikleri](../debugger/intellitrace-features.md)  
   
- [El ile testlerde daha fazla tanılama verisi toplama](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [El ile testlerde daha fazla tanılama verisi toplama](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

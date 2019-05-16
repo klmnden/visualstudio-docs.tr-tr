@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684033"
 ---
 # <a name="using-the-tasks-window"></a>Görevleri Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Görevleri** pencere benzeyen **iş parçacıkları** BT'nin hakkında bilgileri gösterir ancak pencere <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), veya [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) yerine her bir iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden çok görev aynı iş parçacığı üzerinde çalışabilir. Bkz: [zaman uyumsuz programlama (Windows Store apps) javascript'teki](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.  
+**Görevleri** pencere benzeyen **iş parçacıkları** BT'nin hakkında bilgileri gösterir ancak pencere <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), veya [WinJS.Promise ](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) yerine her bir iş parçacığı nesneleri. İş parçacığı gibi görevleri aynı anda çalışabilecek zaman uyumsuz işlemleri temsil eder; Ancak, birden çok görev aynı iş parçacığı üzerinde çalışabilir. Bkz: [zaman uyumsuz programlama (Windows Store apps) javascript'teki](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) daha fazla bilgi için.  
   
- Yönetilen kodda kullanabileceğiniz **görevleri** ile çalışırken penceresi <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri veya **await** ve **zaman uyumsuz** anahtar sözcükleri (**Await** ve **zaman uyumsuz** VisualBasic içinde). Yönetilen kodda görevleri hakkında daha fazla bilgi için bkz. [paralel programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ Yönetilen kodda kullanabileceğiniz **görevleri** ile çalışırken penceresi <xref:System.Threading.Tasks.Task?displayProperty=fullName> nesneleri veya **await** ve **zaman uyumsuz** anahtar sözcükleri (**Await** ve **zaman uyumsuz** VisualBasic içinde). Yönetilen kodda görevleri hakkında daha fazla bilgi için bkz. [paralel programlama](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- Yerel kod halinde kullanabileceğiniz **görevleri** ile çalışırken penceresi [görev grupları](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralel algoritmalar](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [zaman uyumsuz aracılar](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), ve [Basit görevler](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Yerel kodda görevleri hakkında daha fazla bilgi için bkz. [eşzamanlılık çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ Yerel kod halinde kullanabileceğiniz **görevleri** ile çalışırken penceresi [görev grupları](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [paralel algoritmalar](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [zaman uyumsuz aracılar](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), ve [Basit görevler](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Yerel kodda görevleri hakkında daha fazla bilgi için bkz. [eşzamanlılık çalışma zamanı](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  JavaScript'te, promise .then kodla çalışırken görevler penceresini kullanabilirsiniz.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "63437701"
 |**bayrakları**|Hangi görevlerin işaretlenmiş gösterir ve bir görevi işaretleme veya işaretini kaldırma olanak tanır.|  
 |**Simgeler**|Sarı bir ok, geçerli görev gösterir. Geçerli görev, geçerli iş parçacığı üzerinde en üstteki görevdir.<br /><br /> Bölme görevi, diğer bir deyişle, hata ayıklayıcı çağrıldığında geçerli bir beyaz bir ok gösterir.<br /><br /> Duraklatma simgesi, kullanıcı tarafından dondurulmuş bir görevi gösterir. Dondurma ve bir görev listesinde sağ tıklayarak Çöz.|  
 |**ID**|Görev için sistem tarafından sağlanan bir sayı. Yerel kod halinde, bu görev adresidir.|  
-|**Status**|Geçerli durumu (zamanlanmış, etkin, kilitlenen, bekleyen veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bekleyen görev sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen biridir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleyen bir görev için. **Uyarı:**  **Görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **bekleme kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Geçerli durumu (zamanlanmış, etkin, kilitlenen, bekleyen veya tamamlanmış) görev. Zamanlanmış bir görev henüz çalıştırılmadı ve bu nedenle, henüz bir çağrı yığını, atanan bir iş parçacığı veya ilgili bilgiler yok biridir.<br /><br /> Etkin görev kodu hata ayıklayıcıda kesmeden önce yürütülen biridir.<br /><br /> Bekleyen görev sinyal bir olay, bir kilidi serbest bırakılması veya başka bir görevi tamamlamak için beklediği, engellenen biridir.<br /><br /> Kilitlenen bir görevi başka bir iş parçacığıyla, iş parçacığı kilitlendiğini bekleyen bir görevdir.<br /><br /> Üzerine **durumu** hücre bloğu hakkında daha fazla bilgi kilitlenen veya bekleyen bir görev için. **Uyarı:**  **Görevleri** penceresi bekleyin zinciri geçişi (WCT) tarafından desteklenen eşitleme temel kullanan bir engellenen görev için kilitlenme bildirir. Örneğin, bir kilitlenen <xref:System.Threading.Tasks.Task> WCT, hata ayıklayıcı raporları kullanan nesne **bekleme kilitlendiğini**. Eşzamanlılık WCT kullanmaz, çalışma zamanı tarafından yönetilen kilitlenen bir görev için hata ayıklayıcı raporları **bekleyen**. WCT hakkında daha fazla bilgi için bkz: [bekleyin zinciri geçişi](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Başlangıç saati**|Saat, görev etkin hale geldi.|  
 |**Süresi**|Görev etkin biçimde saniye sayısı.|  
 |**Tamamlanma Zamanı**|Hangi görev tamamlanma zamanı.|  
@@ -61,7 +61,7 @@ ms.locfileid: "63437701"
 |**İş parçacığı atama**|Görevin üzerinde çalıştığı iş parçacığının adı ve kimliği.|  
 |**Dönüş durumu**|Tamamlandığında, görev durumu. Dönüş durumu değerler **başarı**, **iptal edildi**, ve **hata**.|  
 |**AppDomain**|Yönetilen kod için görevin yürütüldüğü uygulama etki alanı.|  
-|**task_group**|Yerel kod, adresini [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) zamanlanmış görev nesnesi. Zaman uyumsuz aracılar ve Basit görevler için bu sütun 0 olarak ayarlanır.|  
+|**task_group**|Yerel kod, adresini [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) zamanlanmış görev nesnesi. Zaman uyumsuz aracılar ve Basit görevler için bu sütun 0 olarak ayarlanır.|  
 |İşlem|Görevin üzerinde çalıştığı işlem kimliği.|  
 |Zaman uyumsuz durumu|Yönetilen kod için görev durumu. Bu sütun varsayılan olarak gizlidir. Bu sütunu görüntülemek için bir sütun başlıkları için bağlam menüsünü açın. Seçin **sütunları**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63437701"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md)   
  [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Paralel Programlama](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Eşzamanlılık Çalışma zamanı](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Paralel Programlama](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Eşzamanlılık Çalışma zamanı](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Paralel Yığınlar penceresini kullanma](../debugger/using-the-parallel-stacks-window.md)   
  [İzlenecek yol: Paralel Uygulamada Hata Ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)

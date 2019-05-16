@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66adcdeca1aa794649b42f4ae153d9b2f879deff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441381"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697147"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nin varsayılan da
  Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **biçimlendirme** .  
   
 > [!NOTE]
-> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>C/C++ Seçenekleri  
  **Otomatik hızlı bilgi araç ipuçlarını etkinleştir**  
@@ -66,16 +66,16 @@ C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nin varsayılan da
  Bir dosyayı metin düzenleyicisine getirdiğinizde, anahat oluşturma özelliğini etkinleştirebilirsiniz. Daha fazla bilgi için [anahat](../../ide/outlining.md). Bu seçenek belirtildiğinde, bir dosyayı açtığınızda anahat oluşturma özelliği etkinleştirilir.  
   
  **#Pragma bölge bloklarının otomatik anahatlandırma başlatır**  
- Bu seçenek, seçilen, için otomatik anahat oluşturma [pragma yönergeleri](http://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) etkinleştirilir. Bu, anahat modunda pragma bölge bloklarını genişletmenize veya daraltmanıza imkan tanır.  
+ Bu seçenek, seçilen, için otomatik anahat oluşturma [pragma yönergeleri](https://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) etkinleştirilir. Bu, anahat modunda pragma bölge bloklarını genişletmenize veya daraltmanıza imkan tanır.  
   
  **Deyim bloklarının otomatik anahatlandırma başlatır**  
  Bu seçenek belirtildiğinde, aşağıdaki deyim yapıları için otomatik anahat oluşturma etkin olur.  
   
-- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
-- [switch Deyimi (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch Deyimi (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
-- [while Deyimi (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while Deyimi (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel, ortam, Seçenekler iletişim kutusu](../../ide/reference/general-environment-options-dialog-box.md)   

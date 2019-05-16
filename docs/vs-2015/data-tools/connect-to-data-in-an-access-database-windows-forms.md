@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 120297a7e1b3c1e973f1775d769ab6deb8c2902a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436991"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705568"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) bir erişim veritabanındaki verilere bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
      Veri kümesi projenize eklenir ve tablolar ve görünümler görünür **veri kaynakları** penceresi.  
   
 ## <a name="security"></a>Güvenlik  
- Önemli bilgileri depolamak (örneğin bir parolayı), uygulamanızın güvenliğini etkileyebilir. Windows Kimlik Doğrulaması (tümleşik güvenlik olarak da bilinir) kullanılarak bir veritabanına erişimi denetlemek için daha güvenli bir yoldur. Daha fazla bilgi için [bağlantı bilgilerini koruma](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
+ Önemli bilgileri depolamak (örneğin bir parolayı), uygulamanızın güvenliğini etkileyebilir. Windows Kimlik Doğrulaması (tümleşik güvenlik olarak da bilinir) kullanılarak bir veritabanına erişimi denetlemek için daha güvenli bir yoldur. Daha fazla bilgi için [bağlantı bilgilerini koruma](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Yeni oluşturduğunuz veri kümesi kullanıma sunulduğunu **veri kaynakları** penceresi. Artık aşağıdaki görevlerden herhangi birini gerçekleştirebilirsiniz:  
@@ -131,7 +131,7 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 
- [Uygulamanızı veri almaya hazırlama](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Uygulamanızı veri almaya hazırlama](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Verileri doğrulama](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Veri izlenecek yollar](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+ [Verileri doğrulama](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Veri izlenecek yollar](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

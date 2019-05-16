@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700104"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Veri İpuçları'ndaki veri değerlerini kod düzenleyicide görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,6 +143,6 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   
- [Nasıl yapılır: QuickWatch iletişim kutusunu kullanın](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Nasıl yapılır: QuickWatch iletişim kutusunu kullanın](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   
- [Nasıl yapılır: Hata ayıklayıcı Windows sayısal biçimini değiştirme](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Nasıl yapılır: Hata ayıklayıcı Windows sayısal biçimini değiştirme](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

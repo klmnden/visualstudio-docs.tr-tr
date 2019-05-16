@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679148"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Belirli Bir .NET Framework Sürümünü Hedefleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio sürümünü veya profilini projenizi hedefleyecek şekilde istedi
  Belirli bir belirleme konusunda ayrıntıları [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , Visual Basic, Visual C# veya görsel F# proje.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [.NET framework çoklu sürüm desteği için ASP.NET Web projeleri](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [.NET framework çoklu sürüm desteği için ASP.NET Web projeleri](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Visual Studio'nun bu sürümü, .NET Framework'ün önceki sürümlerinde çalışan Web uygulamaları geliştirmek için nasıl kullanılacağını açıklar.  
   
  [Uygulama Sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ Visual Studio sürümünü veya profilini projenizi hedefleyecek şekilde istedi
  [Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Açıklar **hedef Framework'ü** denetimi için Proje Tasarımcısı'nda [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri.  
   
- [Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Nasıl yapılır: Hedef Çerçeve ve Platform Araç Kümesini Değiştirme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde ayarlarının Visual C++ projeleri için nasıl değiştirileceğini açıklar.

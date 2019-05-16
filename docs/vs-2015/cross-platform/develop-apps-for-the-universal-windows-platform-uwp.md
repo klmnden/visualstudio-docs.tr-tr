@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698648"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Evrensel Windows platformu ve bizim bir Windows çekirdek ile aynı uygulama tü
   
  **Evrensel Windows platformu tam olarak nedir?**  
   
- Bu yalnızca, sözleşmeler ve sürümleri koleksiyonudur. Bunlar, uygulamanızın çalıştırdığı hedef izin verir. Artık bir işletim sistemini hedef. Şimdi uygulamanıza bir veya daha fazla cihaz aileleri hedefleyin. Bu daha ayrıntılı bilgi edinin [platform Kılavuzu](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Bu yalnızca, sözleşmeler ve sürümleri koleksiyonudur. Bunlar, uygulamanızın çalıştırdığı hedef izin verir. Artık bir işletim sistemini hedef. Şimdi uygulamanıza bir veya daha fazla cihaz aileleri hedefleyin. Bu daha ayrıntılı bilgi edinin [platform Kılavuzu](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Evrensel Windows uygulaması geliştirme araçları, uygulamanızın farklı cihazlarda nasıl göründüğünü görmek için kullanabileceğiniz öykünücü ile birlikte gelir. Bu öykünücü kullanmak istiyorsanız, bu yazılımın bir fiziksel makineye yüklemeniz gerekir. Fiziksel makinenin Windows 8.1 (x64) Professional sürümü çalıştırmalıdır veya sonraki bir sürümünü ve istemci Hyper-V ve ikinci düzey adres çevirisi (SLAT) destekleyen bir işlemci. Visual Studio bir sanal makinede yüklü olduğunda öykünücüleri kullanılamaz.  
@@ -55,8 +55,8 @@ Evrensel Windows platformu ve bizim bir Windows çekirdek ile aynı uygulama tü
   Geliştirme platformunuzu Windows 10 ise yalnızca XAML Tasarımcısı'nı kullanabilirsiniz.  
   
 ## <a name="universal-windows-apps"></a>Evrensel Windows uygulamaları  
- Tercih edilen geliştirme dilini C#, Visual Basic, C++ veya JavaScript arasından [Windows 10 cihazları için bir evrensel Windows uygulaması oluşturma](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Veya, watch [bu başlangıç videosu](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Tercih edilen geliştirme dilini C#, Visual Basic, C++ veya JavaScript arasından [Windows 10 cihazları için bir evrensel Windows uygulaması oluşturma](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Veya, watch [bu başlangıç videosu](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- Mevcut Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ve evrensel Windows uygulamaları Visual Studio 2015 RC ile oluşturulmuş varsa [mevcut uygulamaları bu bağlantı noktası](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) en yeni evrensel Windows platformu kullanılacak.  
+ Mevcut Windows Store 8.1 uygulamaları, Windows Phone 8.1 uygulamaları ve evrensel Windows uygulamaları Visual Studio 2015 RC ile oluşturulmuş varsa [mevcut uygulamaları bu bağlantı noktası](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) en yeni evrensel Windows platformu kullanılacak.  
   
  Evrensel Windows uygulamanızı oluşturduktan sonra yapmanız gerekenler [uygulamanızı paketleme](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) bir Windows 10 cihazına yükleyebiliyorum veya Windows Store için gönderin.

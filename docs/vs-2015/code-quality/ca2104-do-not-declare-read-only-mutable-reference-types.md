@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03bb90b11e994ce2f823deb7e2395afc6aee7e04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687413"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "54776557"
 ## <a name="rule-description"></a>Kural Tanımı
  Kesilebilir tür, örnek verileri değiştirilebilen bir türdür. <xref:System.Text.StringBuilder?displayProperty=fullName> Sınıfı kesilebilir başvuru türünde bir örnek verilmiştir. Sınıfının bir örneğini değerini değiştirebilir üye içeriyor. Bir değişmez başvuru türü örneğidir <xref:System.String?displayProperty=fullName> sınıfı. Değeri, örneği oluşturulduktan sonra hiçbir zaman değiştirebilirsiniz.
 
- Salt okunur değiştiricisi ([salt okunur](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) C# ' ta, [salt okunur](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ve [const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) C++'ta) bir başvuru türü üzerinde alan (c++ işaretçisi) alanın engeller farklı bir başvuru türü örneği tarafından değiştirildi. Ancak, değiştiricisi başvuru türünü değiştirme alanının örnek verilerini engellemez.
+ Salt okunur değiştiricisi ([salt okunur](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) C# ' ta, [salt okunur](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) içinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ve [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) C++'ta) bir başvuru türü üzerinde alan (c++ işaretçisi) alanın engeller farklı bir başvuru türü örneği tarafından değiştirildi. Ancak, değiştiricisi başvuru türünü değiştirme alanının örnek verilerini engellemez.
 
  Salt okunur dizi alanları bu kurala ancak bunun yerine ihlalini neden [CA2105: Dizi alanları okunamadı yalnızca](../code-quality/ca2105-array-fields-should-not-be-read-only.md) kuralı.
 

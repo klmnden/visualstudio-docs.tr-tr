@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425366"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692572"
 ---
 # <a name="query-datasets"></a>Veri kümelerini sorgulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindBy yöntemi kullanmak, tablonun satır koleksiyonu kendi foreach döngünüzü veya kullanın [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindBy yöntemi kullanmak, tablonun satır koleksiyonu kendi foreach döngünüzü veya kullanın [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Veri kümesi büyük/küçük harfe duyarlılık  
  Tablo ve sütun adları bir veri kümesi içinde varsayılan olarak büyük küçük harf duyarsız — diğer bir deyişle, "Müşteri" adlı bir veri kümesi tablosunda da için "Müşteri" olarak adlandırılabilir Bu SQL Server.In SQL Server dahil olmak üzere çok sayıda veritabanı adlandırma kuralları ile eşleşir, veri öğelerinin adlarını yalnızca büyük küçük harfle ayırt varsayılan davranıştır.  
@@ -65,7 +65,7 @@ Bir veri kümesindeki belirli kayıtları aramak için üzerinde DataTable FindB
   
  Kullanabileceğiniz bir <xref:System.Data.DataRelation> çağırarak ilgili kayıtları bulun nesnesine <xref:System.Data.DataRow.GetChildRows%2A> yöntemi bir <xref:System.Data.DataRow> içinde üst tablo. Bu yöntem, bir dizi ilgili alt kayıtları döndürür. Veya çağırabilirsiniz <xref:System.Data.DataRow.GetParentRow%2A> yöntemi bir <xref:System.Data.DataRow> alt tabloda. Bu yöntem tek bir döndüren <xref:System.Data.DataRow> üst tablodan.  
   
- Bu sayfa, türü belirlenmiş veri kümelerini kullanan örnekler sağlar. Yazılmayan veri kümeleri ilişkilerinde gezinme hakkında daha fazla bilgi için bkz: [gezinme DataRelations](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Bu sayfa, türü belirlenmiş veri kümelerini kullanan örnekler sağlar. Yazılmayan veri kümeleri ilişkilerinde gezinme hakkında daha fazla bilgi için bkz: [gezinme DataRelations](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Bir Windows Forms uygulamasında çalışan ve verileri görüntülemek için veri bağlama özellikleri kullanarak, tasarımcı tarafından oluşturulan form uygulamanız için yeterli işlevler sağlayabilir. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).  

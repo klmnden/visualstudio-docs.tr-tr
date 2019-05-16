@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eae08b771f3bd5748485f9029f7f12725df6f28f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698129"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Alana Özgü Dil Çözümü Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,4 +133,4 @@ Bir etki alanına özgü dil (DSL) özelleştirilmiş kullanılarak oluşturulan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)   
- [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Etki alanına özgü dil araçları sözlüğü](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

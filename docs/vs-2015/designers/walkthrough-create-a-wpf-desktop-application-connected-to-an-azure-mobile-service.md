@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421246"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693547"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 - Etkin bir Microsoft Azure hesabı.  
   
-    - Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](http://azure.microsoft.com/pricing/free-trial/).  
+    - Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Etkinleştirebilir [MSDN abone Avantajlarınızı](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). MSDN aboneliğiniz, ücretli Azure hizmetlerinizi kullanabildiğiniz her ay krediler sunar.  
   
@@ -566,7 +566,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
  Renk, şekiller, grafik ve hatta animasyonları ekleyerek kullanıcı arabirimi daha cazip hale getirebilirsiniz. Bkz: [Visual Studio ve Visual Studio için Blend, XAML tasarlama](../designers/designing-xaml-in-visual-studio.md).  
   
- Mevcut SQL veritabanları veya diğer Azure mobil Hizmetleri'ni kullanarak veri kaynaklarına bağlanabilirsiniz. Bkz: [mobil hizmetler belgeleri](http://azure.microsoft.com/services/app-service/mobile/).  
+ Mevcut SQL veritabanları veya diğer Azure mobil Hizmetleri'ni kullanarak veri kaynaklarına bağlanabilirsiniz. Bkz: [mobil hizmetler belgeleri](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: İlk WPF Masaüstü Uygulamam](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

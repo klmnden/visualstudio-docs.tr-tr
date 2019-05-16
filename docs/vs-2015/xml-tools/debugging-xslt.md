@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4ba095b9af87a36a1957ec94496f4445f0ed2bb7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697032"
 ---
 # <a name="debug-xslt"></a>XSLT hatası ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,16 +23,16 @@ XSLT hata ayıklamak için Visual Studio Hata Ayıklayıcısı'nı kullanabilirs
   
 ## <a name="in-this-section"></a>Bu Bölümde
   
- [Nasıl yapılır: XSLT hata ayıklamayı Başlat](../xml-tools/how-to-start-debugging-xslt.md)  
+ [Nasıl yapılır: XSLT Hatalarını Ayıklamaya Başlama](../xml-tools/how-to-start-debugging-xslt.md)  
  XSLT hata ayıklayıcıyı başlatmak açıklar.  
   
- [Nasıl yapılır: XSLT ile kesme noktaları kullanma](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
+ [Nasıl yapılır: XSLT ile Kesme Noktaları Kullanma](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
  Bir stil sayfası içinde kesme noktalarını kullanmayı açıklar.  
   
- [Nasıl yapılır: Bir XPath ifadesini değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
+ [Nasıl yapılır: XPath İfadesini Değerlendirme](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
  Bir XPath ifadesi kullanarak değerlendirilecek açıklar **QuickWatch** iletişim kutusu.  
   
- [İzlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
+ [İzlenecek yol: XSLT Stil Sayfasında Hata Ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
  Bir XSLT stil sayfasında hata ayıklama işlemi gösterilmektedir.  
   
  [XSLT Varsayılan Şablonları](../xml-tools/xslt-default-templates.md)  
@@ -54,5 +54,5 @@ XSLT hata ayıklamak için Visual Studio Hata Ayıklayıcısı'nı kullanabilirs
  [Visual Studio’da hata ayıklama](../debugger/debugging-in-visual-studio.md)  
  Visual Studio hata ayıklayıcısını tanıtır.  
   
- [XSLT başvurusu](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [XSLT başvurusu](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  XSLT öğeleri ve işlevleri için başvuru materyalleri sağlar.

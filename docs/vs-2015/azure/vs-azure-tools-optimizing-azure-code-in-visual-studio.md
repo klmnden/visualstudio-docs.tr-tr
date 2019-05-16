@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: f9f81b91e0593d42e7792d7596648dc53afd8dd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287d22f10a0c55104e2e7c4ddd048d7307c72d66
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703951"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure Kodunuzu İyileştirme
 Microsoft Azure kullanan uygulamalar programlama, uygulama ölçeklenebilirlik, davranış ve bulut ortamlarında performans sorunlarını önlemek için izlemeniz gereken kodlama bazı yöntemler vardır. Microsoft tanır ve birkaç bu sık karşılaşılan sorunları tanımlar ve bunları çözmenize yardımcı olan bir Azure Kod Analizi aracı sağlar. NuGet aracılığıyla Visual Studio araç indirebilirsiniz.
@@ -73,7 +73,7 @@ public async Task RunAsync()
 
     HttpClient client = new HttpClient();
 
-    Task<string> urlString = client.GetStringAsync("http://msdn.microsoft.com");
+    Task<string> urlString = client.GetStringAsync("https://msdn.microsoft.com");
 
     while (true)
     {

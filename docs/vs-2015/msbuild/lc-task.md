@@ -19,17 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6470125656debf420990ed9b471a5303f66d5712
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0bbc6463247142ecde20fb2d054d9bd59304c4ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694108"
 ---
 # <a name="lc-task"></a>LC Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir .licx dosyasından .license dosyası oluşturur, LC.exe sarmalar. LC.exe hakkında daha fazla bilgi için bkz. [Lc.exe (lisans derleyici)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).  
+Bir .licx dosyasından .license dosyası oluşturur, LC.exe sarmalar. LC.exe hakkında daha fazla bilgi için bkz. [Lc.exe (lisans derleyici)](https://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).  
   
 ## <a name="parameters"></a>Parametreler  
  Parametreler için aşağıdaki tabloda açıklanmıştır `LC` görev.  
@@ -42,7 +42,7 @@ Bir .licx dosyasından .license dosyası oluşturur, LC.exe sarmalar. LC.exe hak
 |`OutputLicense`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> çıkış parametresi.<br /><br /> .Licenses dosyasının adını belirtir. Bir ad belirtmezseniz, .licx dosyası adı kullanılır ve .licenses dosyasını .licx dosyasını içeren dizine yerleştirilir.|  
 |`ReferencedAssemblies`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> .License dosyası oluşturulurken yüklemek için başvurulan bileşenlerini belirtir.|  
 |`SdkToolsPath`|İsteğe bağlı `String` parametresi.<br /><br /> Resgen.exe gibi SDK Araçları yolunu belirtir.|  
-|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> .licenses dosyasına eklenecek lisanslı bileşenleri içeren öğeleri belirtir. Daha fazla bilgi için belgelerine bakın `/complist` anahtarının [Lc.exe (lisans derleyici)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).|  
+|`Sources`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametresi.<br /><br /> .licenses dosyasına eklenecek lisanslı bileşenleri içeren öğeleri belirtir. Daha fazla bilgi için belgelerine bakın `/complist` anahtarının [Lc.exe (lisans derleyici)](https://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460).|  
   
  Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension temel sınıfı](../msbuild/tooltaskextension-base-class.md).  
   

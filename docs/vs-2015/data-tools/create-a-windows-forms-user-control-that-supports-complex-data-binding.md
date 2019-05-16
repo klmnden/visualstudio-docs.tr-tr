@@ -18,19 +18,19 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b263dd4e00fcb7a519ab89ecc693bd6216e0eeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c27ec5be48b37f95068a2be6c8605a97d122d21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705002"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcut denetimleri seçebilirsiniz **araç kutusu**, veya standart denetimlerinde kullanılamıyor işlevi uygulamanızı gerektiriyorsa, özel denetimler yazabilirsiniz. Bu izlenecek yol, uygulayan bir denetim oluşturma işlemi gösterilmektedir <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> içeren bir `DataSource` ve `DataMember` verilere bağlı özelliği. Bu tür denetimler benzer bir <xref:System.Windows.Forms.DataGridView> veya <xref:System.Windows.Forms.ListBox>.  
   
- Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Denetim yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanında Windows Forms denetimleri geliştirme](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  Veri bağlama senaryoları denetimler yazarken aşağıdaki veri bağlama özniteliklerden birini yapması gerekir:  
   
@@ -52,9 +52,9 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 - Uygulama `ComplexBindingProperty` özniteliği.  
   
-- Bir veri kümesi oluşturmak [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Bir veri kümesi oluşturmak [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
-- Ayarlama **müşteriler** tablosundaki [veri kaynakları penceresi](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) yeni karmaşık denetimi kullanmak için.  
+- Ayarlama **müşteriler** tablosundaki [veri kaynakları penceresi](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) yeni karmaşık denetimi kullanmak için.  
   
 - Buradan sürükleyerek yeni denetim ekleme **veri kaynakları penceresi** üzerine **Form1**.  
   
@@ -72,7 +72,7 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
   
 2. Projeyi adlandırın **ComplexControlWalkthrough**.  
   
-3. Seçin **Windows uygulama**, tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**, tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ComplexControlWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -173,4 +173,4 @@ Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcu
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Windows Forms Denetimleri](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
+ [Windows Forms Denetimleri](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

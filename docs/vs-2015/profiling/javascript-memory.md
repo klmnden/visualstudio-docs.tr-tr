@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435649"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704543"
 ---
 # <a name="javascript-memory"></a>JavaScript bellek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - Kullanıcı için yaygın bir nedeni, bellek sorunları olan yeni bir sayfada, gittikten sonra bellekte yanlışlıkla korunur nesneleri arayın. Örneğin:  
   
-    - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) işlevi bu soruna neden olabilir.  
+    - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) işlevi bu soruna neden olabilir.  
   
-    - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.  
+    - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.  
   
     - Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](../debugger/view-dom-event-listeners.md).  
   
 - İkinci bölümü izleyin [bu videoyu](http://channel9.msdn.com/Events/Build/2013/3-316) JavaScript bellek Çözümleyicisi hakkında derleme 2013 konferansına ait.  
   
-- Okuma [Windows Store apps bellekte yönetme](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+- Okuma [Windows Store apps bellekte yönetme](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 - Kod sorunları yalıtmak için geçici olarak değiştirmeyi düşünün. Örneğin, aşağıdakileri yapabilirsiniz:  
   

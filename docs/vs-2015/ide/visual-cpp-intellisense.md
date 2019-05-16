@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802635"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696516"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Visual Studio 2015'te IntelliSense de tek bir kod dosyaları için proje dosyala
 - Satırı 12 mor dalgalı BYE tanımlayıcısı içeriyor; Bu tanımlayıcı, şu anda etkin olmayan Android.NativeActivity projesinde tanımlanmadı.  
   
 ## <a name="single-file-intellisense"></a>Tek dosya IntelliSense  
- Tek bir dosyayı dışında herhangi bir projeyi açtığınızda, IntelliSense almaya devam. Etkinleştirebilir veya giderek belirli özellikleri devre dışı bırak **metin düzenleyici, C/C++, Gelişmiş** etkinleştirmek veya IntelliSense özelliklerini devre dışı bırakmak için. Bir projenin parçası olmayan tek dosyalar için IntelliSense yapılandırmak için Ara **IntelliSense ve gözatma proje dışı dosyalar için** içinde **Gelişmiş** bölümü. Bkz: [Visual C++ Kılavuzlu Tur](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Tek bir dosyayı dışında herhangi bir projeyi açtığınızda, IntelliSense almaya devam. Etkinleştirebilir veya giderek belirli özellikleri devre dışı bırak **metin düzenleyici, C/C++, Gelişmiş** etkinleştirmek veya IntelliSense özelliklerini devre dışı bırakmak için. Bir projenin parçası olmayan tek dosyalar için IntelliSense yapılandırmak için Ara **IntelliSense ve gözatma proje dışı dosyalar için** içinde **Gelişmiş** bölümü. Bkz: [Visual C++ Kılavuzlu Tur](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43; &#43; tek dosya IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

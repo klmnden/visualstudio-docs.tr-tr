@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681072"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Hata: Transact-SQL yürütmesi hata ayıklaması yapılmadan sonlandı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Hata ayıklayıcı hata ayıklama iletisi, SQL Server'dan almaz ve Transact-SQL 
   
   Bu hatayı düzeltmek için ihtiyacınız olabilecek:  
   
-- İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için [nasıl yapılır: Hata ayıklama için SQL Server izinleri ayarla](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- İzinleri ayarlarınızı doğrulayın. Daha fazla bilgi için [nasıl yapılır: Hata ayıklama için SQL Server izinleri ayarla](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - SQL hata ayıklamayı'ı doğru bir şekilde ayarlandığından emin olun.  
   
 - Ağ veya veritabanı yöneticinize başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SQL hata ayıklamayı kurma](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Nasıl yapılır: Hata ayıklama için SQL Server izinleri ayarlayın](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [SQL hata ayıklamayı kurma](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Nasıl yapılır: Hata ayıklama için SQL Server izinleri ayarlayın](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

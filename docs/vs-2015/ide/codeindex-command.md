@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f16d21889421a00fc2723412f34b426f75847822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701618"
 ---
 # <a name="codeindex-command"></a>CodeIndex Komutu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Kullanım **Codeındex** Team Foundation Server'ınızdaki kod dizin oluşturman
   
  **Gerekli izinler**  
   
- Kullanılacak **Codeındex** komutunu bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [Team Foundation Server için izin başvurusu](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
+ Kullanılacak **Codeındex** komutunu bir üyesi olmanız gerekir **Team Foundation Yöneticileri** güvenlik grubu. Bkz: [Team Foundation Server için izin başvurusu](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
   
 > [!NOTE]
 > Yönetici kimlik bilgileriyle oturum açmış olsanız bile, bu komutu çalıştırmak için yükseltilmiş bir komut istemi penceresi açmanız gerekir. Ayrıca Team Foundation Uygulama katmanından bu komutunu da çalıştırmanız gerekir.  
@@ -125,5 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [TFSConfig ile sunucu yapılandırmasını yönetme](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [TFS için komut satırı araçları](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+ [TFSConfig ile sunucu yapılandırmasını yönetme](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [TFS için komut satırı araçları](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

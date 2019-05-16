@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440446"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702414"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Yönetilen nesnelerin özel görünümlerini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +50,10 @@ Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görün
 > [!CAUTION]
 > Bu dosya yapısını ve söz dizimi autoexp kurallarının bir Visual Studio sürümünden sonraki değişebilir.  
   
- Yerel tür görünümleri, bir ifade değerlendirici eklenti yazarak da özelleştirilebilir. Daha fazla bilgi için [EEAddIn örnek: Hata ayıklama ifade değerlendirici eklenti](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Yerel tür görünümleri, bir ifade değerlendirici eklenti yazarak da özelleştirilebilir. Daha fazla bilgi için [EEAddIn örnek: Hata ayıklama ifade değerlendirici eklenti](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DebuggerTypeProxy özniteliğini kullanma](../debugger/using-debuggertypeproxy-attribute.md)   
  [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)   
  [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Hata Ayıklayıcı Görüntü Öznitelikleriyle Hata Ayıklamayı Geliştirme](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Hata Ayıklayıcı Görüntü Öznitelikleriyle Hata Ayıklamayı Geliştirme](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

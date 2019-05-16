@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685707"
 ---
 # <a name="application-properties"></a>Uygulama Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ Visual Basic için genel uygulama özellikleri ayarlayabilirsiniz C#, ve F# uygu
   Uygulamanız için kullanabileceği görevleri, kullanılan bir geliştirme dilini bağlıdır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Uygulama simgesi belirtme (Visual Basic C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
+ [Nasıl yapılır: Uygulama Simgesi Belirtme (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulama sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Uygulama sayfası, Proje Tasarımcısı (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Proje Tasarımcısı giriş](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Proje Tasarımcısı giriş](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   
- [Hata ayıklama özellikleri yönetme](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Derleme özelliklerini yönetme](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Hata ayıklama özellikleri yönetme](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Derleme özelliklerini yönetme](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Uygulama kaynaklarını yönetme (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Uygulama Ayarlarını Yönetme](../ide/managing-application-settings-dotnet.md)

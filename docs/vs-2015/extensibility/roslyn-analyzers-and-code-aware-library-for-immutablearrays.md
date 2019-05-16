@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685242"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArray’ler için Roslyn Çözümleyicileri ve Kod Algılayan Kitaplık
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[.NET derleyici platformu](https://github.com/dotnet/roslyn) ("Roslyn") kullanan kod kitaplıkları oluşturmanıza yardımcı olur. Bir kod algılayan kitaplık en iyi şekilde veya hatalarını önlemek için kullanabileceğiniz işlevsellik ve kitaplığı kullanmanıza yardımcı olması için (Roslyn Çözümleyicileri) araçları sağlar. Bu konuda kullanırken sık karşılaşılan hataları yakalamak için gerçek dünya Roslyn çözümleyicinizi oluşturma gösterilmektedir [NIB: Sabit koleksiyonlar](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet paketi. Örnek ayrıca çözümleyici tarafından bulunan bir kodu sorun için bir kod düzeltme sağlamak nasıl gösterir. Kullanıcılar, Visual Studio ampul UI içinde kod düzeltmeleri görmek ve bir düzeltme kod için otomatik olarak uygulanabilir.
+[.NET derleyici platformu](https://github.com/dotnet/roslyn) ("Roslyn") kullanan kod kitaplıkları oluşturmanıza yardımcı olur. Bir kod algılayan kitaplık en iyi şekilde veya hatalarını önlemek için kullanabileceğiniz işlevsellik ve kitaplığı kullanmanıza yardımcı olması için (Roslyn Çözümleyicileri) araçları sağlar. Bu konuda kullanırken sık karşılaşılan hataları yakalamak için gerçek dünya Roslyn çözümleyicinizi oluşturma gösterilmektedir [NIB: Sabit koleksiyonlar](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet paketi. Örnek ayrıca çözümleyici tarafından bulunan bir kodu sorun için bir kod düzeltme sağlamak nasıl gösterir. Kullanıcılar, Visual Studio ampul UI içinde kod düzeltmeleri görmek ve bir düzeltme kod için otomatik olarak uygulanabilir.
 
 ## <a name="getting-started"></a>Başlarken
 Bu örneği oluşturmak için gerekenler:

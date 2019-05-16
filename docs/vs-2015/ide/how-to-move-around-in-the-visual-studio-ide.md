@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685596"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Nasıl yapılır: Visual Studio IDE'de gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63435254"
 Tümleşik geliştirme ortamı (IDE) penceresi penceresinin hareket etmenize izin vermek için tasarlanmış ve dosyaya tercih ya da proje gereksinimlerinize bağlı olarak birkaç farklı yolla olmuştur. Düzenleyicide açık dosyalar arasında geçiş yapmak veya tüm etkin araç pencerelerini IDE içinde dolaşma seçebilirsiniz. Herhangi bir dosya Aç bakılmaksızın, son erişilme sırası düzenleyicisinde için doğrudan geçiş yapabilirsiniz. Bu özellikler, IDE içinde çalışırken üretkenliğinizi artırmaya yardımcı olabilir.
 
 > [!NOTE]
-> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Bu Yardım sayfası ile yazılmıştır **genel geliştirme ayarları** unutmayın. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Klavye Kısayolları
  Visual Studio neredeyse tüm menü komutu bir klavye kısayolu vardır. Ayrıca, kendi özel kısayolları da oluşturabilirsiniz. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

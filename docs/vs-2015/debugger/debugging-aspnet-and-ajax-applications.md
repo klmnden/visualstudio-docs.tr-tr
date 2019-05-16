@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116790"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686738"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET ve AJAX Uygulamalarında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Hata ayıklama [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamalar�
  [Özel Durumları Hata Ayıklayıcısı ile Yönetme](../debugger/managing-exceptions-with-the-debugger.md)  
  Hata ayıklama için yalnızca kendi kodum neden etkinleştirilmelidir açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] özel durumlar.  
   
- [Hata ayıklama ve izleme Ajax uygulamalara genel bakış](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Hata ayıklama ve izleme Ajax uygulamalara genel bakış](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Bazı teknikleri ve AJAX kodunuzdaki hataları ayıklamanıza yardımcı olan araçlar açıklanmaktadır.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

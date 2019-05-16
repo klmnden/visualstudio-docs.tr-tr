@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691783"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kod Parçacıkları için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacı
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Bir menü komutu kullanılarak bir kod parçacığı ekleme  
  Kod parçacığı tarayıcıda görüntülemek için bir menü komutu kullanmak için bir menü komutu eklemek ve sonra çağrı <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> yönteminde <xref:Microsoft.VisualStudio.Package.ExpansionProvider> arabirimi yanıt olarak bu menü komutu.  
   
-1. Bir komut ve bir düğmeyi .vsct dosyanıza ekleyin. Bu nedenle de yapmak için yönergeler bulabilirsiniz [izlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturmak](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Bir komut ve bir düğmeyi .vsct dosyanıza ekleyin. Bu nedenle de yapmak için yönergeler bulabilirsiniz [izlenecek yol: Visual Studio Paket şablonu kullanarak bir menü komutu oluşturmak](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Öğesinden bir sınıf türetin <xref:Microsoft.VisualStudio.Package.ViewFilter> sınıf ve geçersiz kılma <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> desteği için yeni menü komutu belirtmek için yöntemi. Bu örnekte, her zaman menü komutunu sağlar.  
   

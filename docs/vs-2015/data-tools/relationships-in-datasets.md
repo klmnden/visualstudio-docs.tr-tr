@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425407"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692523"
 ---
 # <a name="relationships-in-datasets"></a>Veri kümelerindeki ilişkiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "63425407"
  Oluştururken bir <xref:System.Data.DataRelation> nesnesi, ilişki yalnızca kısıtlamaları uygulamak için kullanılan belirtme seçeneğiniz vardır — diğer bir deyişle, bu da ilgili kayıtların erişmek için kullanılmaz. Biraz daha verimlidir ve ilgili kayıtları özelliğiyle olandan daha az yöntemleri içeren bir veri kümesi oluşturmak için bu seçeneği kullanabilirsiniz. Ancak, ilgili kayıtlarına erişmek mümkün olmayacaktır. Örneğin, yalnızca kısıtlaması ilişkisi alt kayıtlarına olan üst kaydını silmesini engeller ve üst alt kayıtları erişemez.  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>El ile veri kümesi Tasarımcısı'nda veri ilişkisi oluşturma  
- Visual Studio'da veri tasarım araçlarını kullanarak veri tabloları oluşturduğunuzda, veri kaynağından bilgileri toplanabilir, ilişkileri otomatik olarak oluşturulur. Veri tablolarından el ile eklerseniz **veri kümesi** sekmesinde **araç kutusu**, ilişki el ile oluşturmanız gerekebilir. Oluşturma hakkında bilgi için <xref:System.Data.DataRelation> programlı olarak bkz [DataRelations ekleme](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
+ Visual Studio'da veri tasarım araçlarını kullanarak veri tabloları oluşturduğunuzda, veri kaynağından bilgileri toplanabilir, ilişkileri otomatik olarak oluşturulur. Veri tablolarından el ile eklerseniz **veri kümesi** sekmesinde **araç kutusu**, ilişki el ile oluşturmanız gerekebilir. Oluşturma hakkında bilgi için <xref:System.Data.DataRelation> programlı olarak bkz [DataRelations ekleme](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
   
  Veri tabloları arasında ilişki görünen satırlar halinde **veri kümesi Tasarımcısı**, ilişki tek-çok yönüyle gösteren bir anahtar ve sonsuzluk karakteri ile. Varsayılan olarak, adı ' % s'relationshipCommentEnd Kimliği = '1c8c78e19b7fa441' tasarım yüzeyinde görünmez.  
   
@@ -84,7 +84,7 @@ ms.locfileid: "63425407"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>İki veri tabloları arasında bir ilişki oluşturmak için  
   
-1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Sürükleme bir **ilişkisi** nesnesinden **veri kümesi** ilişki alt veri tablosunda toolbox.  
   
@@ -98,9 +98,9 @@ ms.locfileid: "63425407"
   
 6. Tabloları birleştirme içinde sütunları seçin **anahtar sütunları** ve **yabancı anahtar sütunları** listeler.  
   
-7. Bir ilişki, kısıtlama veya her ikisi de oluşturulup oluşturulmayacağını seçin. Bilgi için [DataRelation nesnelerine giriş](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Bir ilişki, kısıtlama veya her ikisi de oluşturulup oluşturulmayacağını seçin. Bilgi için [DataRelation nesnelerine giriş](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8. Seçin veya temizleyin **iç içe ilişkisi** kutusu. Bu seçeneği ayarlar seçerek <xref:System.Data.DataRelation.Nested%2A> özelliğini `true`, ve bu satır XML verileri olarak yazılan veya eşitlenmiş üst sütun içinde iç içe ilişkisinin satır alt neden <xref:System.Xml.XmlDataDocument>. Daha fazla bilgi için [iç içe DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Seçin veya temizleyin **iç içe ilişkisi** kutusu. Bu seçeneği ayarlar seçerek <xref:System.Data.DataRelation.Nested%2A> özelliğini `true`, ve bu satır XML verileri olarak yazılan veya eşitlenmiş üst sütun içinde iç içe ilişkisinin satır alt neden <xref:System.Xml.XmlDataDocument>. Daha fazla bilgi için [iç içe DataRelations](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Bu tablolarındaki kayıtlara değişiklik zaman uygulanacak kuralları ayarlayın. Daha fazla bilgi için bkz. <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ ms.locfileid: "63425407"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Veri kümesi Tasarımcısı'nda bir ilişki adı görüntülemek için  
   
-1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Gelen **veri** menüsünde **ilişki etiketlerini göster** ilişki adı görüntülenecek komutu. İlişki adı gizlemek için bu komutu temizleyin.

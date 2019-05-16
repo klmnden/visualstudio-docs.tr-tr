@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425504"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694850"
 ---
 # <a name="pass-data-between-forms"></a>Formlar arasında veri geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 - Yeni bir oluşturma **Windows uygulama** proje.  
   
-- Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Form üzerinde öğelerinden sürüklendiğinde oluşturulacak denetimi seçerek **veri kaynakları** penceresi. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ Bu izlenecek yolda, verileri bir biçimden diğerine geçirmek için adım adım
   
 2. Projeyi adlandırın `PassingDataBetweenForms`.  
   
-3. Seçin **Windows Forms uygulaması**, tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows Forms uygulaması**, tıklatıp **Tamam**. Daha fazla bilgi için [istemci uygulamaları](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **PassingDataBetweenForms** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   

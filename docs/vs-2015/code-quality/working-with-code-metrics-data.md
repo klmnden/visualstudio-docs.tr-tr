@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4d206785991d37147d9d55d89947776a94b2ac4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b53e6a5c7ce65675037aac8c6fc4812f895d3b7b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703716"
 ---
 # <a name="working-with-code-metrics-data"></a>Kod Ölçüm Verileri ile çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ ms.locfileid: "60111304"
 ## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Kod ölçüm sonuçlarına göre iş öğesi oluşturma  
  Oluşturabileceğiniz bir [!INCLUDE[esprfound](../includes/esprfound-md.md)] temel alan iş öğesi sonuçlanıyor **kod ölçüm sonuçlarını** penceresi. İş öğesi oluşturulduğunda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otomatik olarak bir başlık girer **başlık** alan ve kod ölçümleri verileri altında **geçmişi** sekmesi.  
   
- İş öğeleri oluşturma hakkında daha fazla bilgi için bkz. [iş öğesi oluşturma &#91;yeniden yönlendirilen&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ İş öğeleri oluşturma hakkında daha fazla bilgi için bkz. [iş öğesi oluşturma &#91;yeniden yönlendirilen&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Bir sonuca bağlı bir iş öğesi oluşturmak için  
   

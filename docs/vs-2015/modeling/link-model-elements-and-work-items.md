@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674229"
 ---
 # <a name="link-model-elements-and-work-items"></a>Model öğelerini ve iş öğelerini bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
 1. İçinde **Takım Gezgini**, bağlı olduğunuz takım projesi için burada model öğelerini iş öğesine bağlı olduğundan emin olun.  
   
     > [!NOTE]
-    > Bağlantılı model öğelerini görüntülemek için yalnızca Takım Gezgini'ni kullanabilirsiniz; Team Web Access'i kullanamazsınız. Çalışma alanınızın modelleme diyagramlarını veya öğeleri içeren modelleme projesiyle eşleştiğinden emin olun. Çalışma alanınız yoksa, oluşturmanız gerekir. Bkz: [sorun giderme](#Troubleshooting) ve [oluşturma ve çalışma alanlarıyla çalışma](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Bağlantılı model öğelerini görüntülemek için yalnızca Takım Gezgini'ni kullanabilirsiniz; Team Web Access'i kullanamazsınız. Çalışma alanınızın modelleme diyagramlarını veya öğeleri içeren modelleme projesiyle eşleştiğinden emin olun. Çalışma alanınız yoksa, oluşturmanız gerekir. Bkz: [sorun giderme](#Troubleshooting) ve [oluşturma ve çalışma alanlarıyla çalışma](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. İş öğesini açın, **bağlantıları**. Altında **Model bağlantısı**, bağlantılı model öğesinin kısayol menüsünü açın. Seçin **bağlı öğeyi Aç**.  
   
@@ -168,7 +168,7 @@ Görevler, test çalışmalarını, hataları, gereksinimleri, sorunları ve Vis
   
 |**Sorunu**|**Olası nedeni**|**Çözümleme**|  
 |---------------|------------------------|--------------------|  
-|Bağlamak istediğiniz model öğesi bulunamıyor.|Öğe olan modelleme projesindeki diyagram üzerinde olabilir [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Diyagramla eşleşen bir çalışma alanınız olmayabilir.|Çalışma alanınızı modelleme projesiyle ve diyagramla eşleştirin. Çalışma alanınız yoksa, oluşturmanız gerekir.<br /><br /> Bu sorun için görünen hata iletisi, çalışma alanınızı eşleştirmek için kullanabileceğiniz yolu içerir.<br /><br /> Bkz: [oluşturma ve çalışma alanlarıyla çalışma](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Bağlamak istediğiniz model öğesi bulunamıyor.|Öğe olan modelleme projesindeki diyagram üzerinde olabilir [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Diyagramla eşleşen bir çalışma alanınız olmayabilir.|Çalışma alanınızı modelleme projesiyle ve diyagramla eşleştirin. Çalışma alanınız yoksa, oluşturmanız gerekir.<br /><br /> Bu sorun için görünen hata iletisi, çalışma alanınızı eşleştirmek için kullanabileceğiniz yolu içerir.<br /><br /> Bkz: [oluşturma ve çalışma alanlarıyla çalışma](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Bağlantılı model öğesi bulunamıyor.|Bağlantılı öğe taşınmış, yeniden adlandırılmış veya silinmiş bir diyagram üzerinde olabilir.|1.  İş öğesinde model öğesinin bağlantısını silin.<br />2.  İş öğesinden model öğesine yeni bir bağlantı oluşturun.|  
 |İş öğesinde beklediğiniz bağlantılı model öğeleri yoktur.|Bir iş öğesi, yalnızca bağlantılı iş öğesinden oluşturulmuşsa bağlantılı katmanı öğesini gösterir. Takım kullanmıyorsa [!INCLUDE[esprscc](../includes/esprscc-md.md)], diyagramların yerel yolu bağlantıları oluşturmak için kullanılır. Modelleme projesi ve diyagramları daysanız [!INCLUDE[esprscc](../includes/esprscc-md.md)], projeye erişebilen tüm takım üyeleri iş öğelerinde bağlantılı öğeleri görüntüleyebilir.|İş öğesini yenilemeyi deneyin.|  
 |Bir iş öğesinden model öğesine giden bağlantının silinmesi, model öğesinden iş öğesine giden bağlantıyı silmez.||Model öğesinden başlayarak iş öğesine giden bağlantıyı silin.|  
