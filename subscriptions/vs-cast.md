@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947927"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805336"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
 
@@ -107,6 +107,6 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Aboneliğinizle birlikte gelen Azure avantajı etkinleştirmediyseniz, ziyaret [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve azure'da Azure aboneliğinizi ayarlama ve ücretsiz Azure kredilerinizi kullanmak için Araçlar kategorisinde kutucuğuna tıklayın.
+Aboneliğinizle birlikte gelen Azure avantajı etkinleştirmediyseniz, ziyaret [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve azure'da Azure aboneliğinizi ayarlama ve Azure kredilerinizi kullanmak için Araçlar kategorisinde kutucuğuna tıklayın.
 
 Ve tanıtım, kullanıcının Kılavuzu ve öğretici videolar Greg'ın e-postada sizden kullanıma unutmayın.

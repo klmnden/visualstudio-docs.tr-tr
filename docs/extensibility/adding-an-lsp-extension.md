@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892392"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805109"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
-Dil sunucusu Protokolü (LSP) bir ortak dil çeşitli kod düzenleyicilerinden hizmet özellikler sağlamak için kullanılan, JSON RPC v2.0 biçiminde kuralıdır. Geliştiriciler protokolünü kullanarak, bir tek dil sunucu dil IntelliSense, hata tanılamaya gibi hizmet özellikleri sağlamak için tüm başvuruları, LSP destekleyen çeşitli kod düzenleyicilerinden vs. bulmak yazabilirsiniz. Geleneksel olarak, Visual Studio'da dil Hizmetleri ya da eklenebilir eksiksiz bir Visual Studio genişletilebilirlik API'leri kullanarak özel dil Hizmetleri yazarak veya söz dizimi vurgulama gibi temel işlevler sağlamak için TextMate dil bilgisi dosyaları kullanarak için daha zengin veriler sağlar. LSP üçüncü bir seçenek sunar. Şimdi desteği.
+Dil sunucusu Protokolü (LSP) bir ortak dil çeşitli kod düzenleyicilerinden hizmet özellikler sağlamak için kullanılan, JSON RPC v2.0 biçiminde kuralıdır. Protokolünü kullanarak, IntelliSense, hata tanılamaya Bul gibi tüm başvurular vb. LSP destekleyen çeşitli kod düzenleyiciler için dil hizmeti sağlamak için bir tek dil sunucusu özellikleri geliştiricilerin yazabilirsiniz. Visual Studio'da dil Hizmetleri söz dizimi vurgulama gibi temel işlevler sağlamak için TextMate dil bilgisi dosyaları kullanarak veya sağlamak için eksiksiz bir Visual Studio genişletilebilirlik API'leri kullanan özel dil Hizmetleri yazma geleneksel olarak eklenebilir daha zengin veriler. Visual Studio desteği sayesinde LSP, üçüncü bir seçenek yoktur.
 
 ![Dil sunucusu Protokolü Hizmeti Visual Studio](media/lsp-service-in-VS.png)
 
@@ -27,23 +27,23 @@ Dil sunucusu Protokolü (LSP) bir ortak dil çeşitli kod düzenleyicilerinden h
 
 Bu makalede, bir dil LSP tabanlı sunucusunun kullandığı Visual Studio uzantısı oluşturmayı açıklar. Bu, zaten bir LSP tabanlı dil sunucusu geliştirdik ve yalnızca Visual Studio ile tümleştirmek istediğiniz varsayılır.
 
-Visual Studio içinde daha fazla destek için dil sunucular herhangi bir temel akış iletim mekanizma aracılığıyla istemci (Visual Studio) örneğin iletişim kurabilir:
+Visual Studio içinde daha fazla destek için dil sunucular herhangi bir akış tabanlı iletim mekanizma aracılığıyla istemci (Visual Studio) örneğin iletişim kurabilir:
 
 * Standart giriş/çıkış akışları
 * Adlandırılmış Kanallar
 * Yuvalar (yalnızca TCP)
 
-Visual Studio ürününün bir parçası olmayan yerleşik dil Hizmetleri desteği, Visual Studio'da ve LSP hedeftir. Visual Studio'da mevcut dil Hizmetleri (gibi C# ' ta) genişletmek için tasarlanmamıştır. Mevcut diller genişletmek için dil hizmetin genişletilebilirlik kılavuzuna başvurun. (örneğin, [.NET derleyici platformu "Roslyn"](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)).
+Visual Studio ürününün bir parçası olmayan yerleşik dil Hizmetleri desteği, Visual Studio'da ve LSP hedeftir. Bunu var olan dil hizmetlerini genişletme amaçlanmaz (gibi C#) Visual Studio'da. Mevcut diller genişletmek için dil hizmetin genişletilebilirlik kılavuzuna başvurun. (örneğin, [.NET derleyici platformu "Roslyn"](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md)).
 
 Protokolü hakkında daha fazla bilgi için belgelere bakın [burada](https://github.com/Microsoft/language-server-protocol).
 
 Nasıl oluşturulacağı hakkında daha fazla bilgi için örnek dil server veya Visual Studio Code içinde var olan dil sunucusu tümleştirme belgelerine bakın [burada](https://code.visualstudio.com/docs/extensions/example-language-server).
 
-## <a name="language-server-protocol-features-supported"></a>Desteklenen dil sunucusu protokolü özellikleri
+## <a name="language-server-protocol-supported-features"></a>Dil sunucusu protokolü tarafından desteklenen özellikler
 
-Aşağıdaki LSP özellikleri Visual Studio'da şimdiye desteklenir:
+Aşağıdaki tablolarda gösterilmiştir Visual Studio'da hangi LSP özellikler desteklenir:
 
-İleti | Visual Studio'da desteğine sahiptir
+`Message` | Visual Studio'da desteğine sahiptir
 --- | ---
 başlatma | evet
 başlatıldı | evet
@@ -86,26 +86,28 @@ textDocument/documentLink |
 documentLink/çözümleyin |
 textDocument/yeniden adlandırma | evet
 
-## <a name="getting-started"></a>Başlarken
+## <a name="get-started"></a>Kullanmaya başlayın
 
 > [!NOTE]
-> Visual Studio 15,8 Preview 3, ortak dil sunucusu protokolü için desteği ile başlayarak, Visual Studio'da yerleşiktir. LSP uzantıları önizlememiz kullanarak derlediyseniz, [dil sunucusu istemci VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) sürümü, bunlar için 15,8 Preview 3 veya daha yüksek yükselttikten sonra çalışmayı durdurur. Yeniden çalışma LSP uzantılarınızı almak için aşağıdakileri yapmanız gerekir:
+> Visual Studio 2017 sürüm 15,8, ortak dil sunucusu protokolü için desteği ile başlayarak, Visual Studio'da yerleşiktir. LSP uzantıları Önizleme kullanarak derlediyseniz, [dil sunucusu istemci VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) sürümü, bunlar 15,8 veya üzeri sürüme yükselttikten sonra çalışmayı durdurur. Yeniden çalışma LSP uzantılarınızı almak için aşağıdakileri yapmanız gerekir:
 >
-> 1. Microsoft Visual Studio dil sunucusu protokolü Önizleme VSIX kaldırın. 15,8 Preview 4 ile başlayarak, Visual Studio'da bir yükseltme gerçekleştirmek için her seferinde sizi otomatik olarak algılar ve önizleme VSIX için yükseltme işlemi sırasında kaldırın.
+> 1. Microsoft Visual Studio dil sunucusu protokolü Önizleme VSIX kaldırın.
+>
+>    15,8 sürümünden itibaren her zaman, bir Visual Studio Önizleme VSIX otomatik olarak algılandı ve kaldırıldı yükseltin.
 >
 > 2. En yeni önizleme olmayan sürümüne yönelik Nuget başvurunuz güncelleştirme [LSP paketleri](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client).
 >
 > 3. Microsoft Visual Studio dil sunucusu protokolü Önizleme VSIX bağımlılığı VSIX bildiriminizi kaldırın.
 >
-> 4. Yükleme hedefi için alt sınır olarak Visual Studio 15,8 Preview 3, VSIX belirttiğinden emin olun.
+> 4. Visual Studio 2017 sürüm 15,8, VSIX belirttiğinden emin olun yükleme hedefi için alt sınır olarak Preview 3.
 >
-> 5. Yeniden oluşturun ve yeniden dağıtın.
+> 5. Yeniden oluşturun ve dağıtın.
 
 ### <a name="create-a-vsix-project"></a>VSIX projesi oluşturun
 
 Bir dil hizmeti uzantısı bir LSP tabanlı dil sunucusu kullanarak oluşturmak için ilk olarak sahip olduğunuzdan emin olun **Visual Studio uzantısı geliştirme** iş yükü VS Örneğiniz için yüklenmiş.
 
-İleri giderek yeni bir boş VSIXProject oluşturma **dosya** > **yeni proje** > **Visual C#**  >   **Genişletilebilirlik** > **VSIX projesi**:
+Ardından, giderek yeni bir VSIX projesi oluşturun. **dosya** > **yeni proje** > **Visual C#**   >  **Genişletilebilirlik** > **VSIX projesi**:
 
 ![VSIX projesi oluşturun](media/lsp-vsix-project.png)
 
@@ -123,18 +125,19 @@ LSP diller için metin renklendirmesi nasıl belirtimi içermez. Uzantı gelişt
 
 1. Uzantınız içinde "Dil" adlı bir klasör oluşturun (veya seçtiğiniz herhangi bir ad olabilir).
 
-2. İçinde *Dilbilgisi* klasörü, herhangi bir dosyayı eklemek  *\*.tmlanguage*,  *\*.plist*,  *\*.tmtheme*, veya  *\*.json* özel renklendirme sağlayan istediğiniz dosyaları.
+2. İçinde *Dilbilgisi* klasörü, herhangi bir dosyayı eklemek  *\*.tmlanguage*,  *\*.plist*,  *\*.tmtheme*, veya  *\*.json* özel renklendirme sağlamak istediğiniz dosyaları.
 
-3. Sağ tıklatın ve dosyaları **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
+   > [!TIP]
+   > A *.tmtheme* dosyası, kapsamlar (renk anahtarları olarak adlandırılır), Visual Studio olmak üzere nasıl eşleştiği tanımlar. Yönergeler için genel başvurabileceğiniz *.tmtheme* dosyası *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<sürüm >\\\<SKU > \Common7\ IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* dizin.
 
-4. Oluşturma bir *.pkgdef* dosya ve şuna benzer bir satır ekleyin:
+3. Oluşturma bir *.pkgdef* dosya ve şuna benzer bir satır ekleyin:
 
     ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
 
-5. Sağ tıklatın ve dosyaları **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
+4. Sağ tıklatın ve dosyaları **özellikleri**. Değiştirme **derleme** eyleme **içerik** değiştirip **VSIX Ekle** özelliğini **true**.
 
 Önceki adımları tamamladıktan sonra bir *Dilbilgisi* paket yüklemek için klasör eklenir dizini depo kaynağı olarak adlandırılan 'MyLang' ('MyLang' Kesinleştirme için yalnızca bir ad ve benzersiz bir dize olabilir). Tüm dil bilgisi (*.tmlanguage* dosyaları) ve tema dosyası (*.tmtheme* dosyaları) bu dizin toplanmış potentials ve TextMate ile sağlanan yerleşik dilbilgisi geçersiz kılar. Bildirilen uzantıları dilbilgisi dosyanın açılmasını dosya uzantısını eşleşirse, TextMate adım.
 
@@ -147,9 +150,9 @@ VSIX projeniz oluşturulduktan sonra aşağıdaki NuGet paketleri projeye ekleyi
 * [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
 > [!NOTE]
-> Önceki adımları tamamladıktan sonra NuGet paketi bir bağımlılık duruma getirdiğinizde, aynı zamanda Newtonsoft.Json ve StreamJsonRpc paketleri, projenize eklenir. **Bu yeni sürümleri Visual Studio sürümünde yüklü olmadığı sürece bu paketleri güncelleştirmez, uzantı hedeflerinizi**. Derlemeleri dahil edilmez VSIX'İNİZE--bunun yerine, Visual Studio Kurulum dizininden seçilir. Uzantınızı bir kullanıcının makine üzerinde yüklü değerinden daha yeni bir sürümü derlemelerine başvuran, *çalışmaz*.
+> Önceki adımları tamamladıktan sonra NuGet paketi bir bağımlılık duruma getirdiğinizde, aynı zamanda Newtonsoft.Json ve StreamJsonRpc paketleri, projenize eklenir. **Bu yeni sürümleri Visual Studio sürümünde yüklü olmadığı sürece bu paketleri güncelleştirmez, uzantı hedeflerinizi**. Derlemeler, VSIX içine dahil edilmemesi; Bunun yerine, Visual Studio Kurulum dizininden seçilir. Bir kullanıcının makinede yüklü daha yeni sürümünü derlemeler, başvuruda bulunduğunuz uzantınızı çalışmaz.
 
-Daha sonra uygulayan yeni bir sınıf oluşturabilirsiniz [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) arabirimi, bir dil LSP tabanlı sunucuya bağlanan dil istemciler için gereken ana arabirimidir.
+Daha sonra uygulayan yeni bir sınıf oluşturabilirsiniz [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) dil istemciler bir LSP tabanlı dil sunucusuna bağlanmak için gereken ana arabirimi olan arabirimi.
 
 Bir örnek verilmiştir:
 
@@ -214,7 +217,7 @@ namespace MockLanguageExtension
 
 Uygulanması gereken ana yöntemler şunlardır [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) ve [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) Visual Studio, uzantı yüklemiş ve dil sunucunuzun başlatılması hazır olduğunda çağrılır. Bu yöntemde çağırabilirsiniz [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) hemen dil sunucunun başlatılması, veya ek mantık yapın ve çağırma göstermek için temsilci [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) daha sonra. **Dil sunucunuzu etkinleştirmek için belirli bir noktada StartAsync çağırmanız gerekir.**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) sonunda çağırarak çağrılan yöntem [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) temsilci; dil sunucuyu başlatın ve bağlantı kurmak için mantığı içerir. Sunucuya yazma ve okuma sunucudan akışları içeren bir bağlantı nesnesi iade edilmesi gerekir. Burada oluşturulan özel durumlar yakalandı ve kullanıcı Visual Studio'da bir bilgi çubuğu mesaj yoluyla görüntülenir.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) sonunda çağırarak çağrılan yöntem [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) temsilci. Bu dil sunucuyu başlatın ve bağlantı kurmak için mantığı içerir. Sunucuya yazma ve okuma sunucudan akışları içeren bir bağlantı nesnesi iade edilmesi gerekir. Burada oluşturulan özel durumlar yakalandı ve kullanıcı Visual Studio'da bir bilgi çubuğu mesaj yoluyla görüntülenir.
 
 ### <a name="activation"></a>Etkinleştirme
 
@@ -235,7 +238,7 @@ Kendi VSIX bildirim Tasarımcısı'nı açın ve gidin **varlıklar** sekmesinde
 
 ![MEF varlık Ekle](media/lsp-add-asset.png)
 
-Yeni bir varlık oluşturmak için Yeni'yi tıklatın:
+Tıklayın **yeni** yeni bir varlık oluşturmak için:
 
 ![MEF varlık tanımlayın](media/lsp-define-asset.png)
 
@@ -245,9 +248,9 @@ Yeni bir varlık oluşturmak için Yeni'yi tıklatın:
 
 ### <a name="content-type-definition"></a>İçerik türü tanımı
 
-Şu anda dil LSP tabanlı sunucu uzantınızı yüklemenin yalnızca dosya içerik türüne göre yoludur. Diğer bir deyişle, dil istemci sınıfınız tanımlarken (uygulayan [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), türlerini tanımlamak gerekir, dosyaları açıldı, uzantınızı yüklemeye neden olur. Ardından, tanımlanmış bir içerik türüyle eşleşen hiçbir dosya açıksa, uzantınızı yüklenmez.
+Şu anda dil LSP tabanlı sunucu uzantınızı yüklemek için tek dosya içerik türüne göre yoludur. Diğer bir deyişle, dil istemci sınıfınız tanımlarken (uygulayan [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), türlerini tanımlamak gerekir, dosyaları açıldı, uzantınızı yüklemeye neden olur. Ardından, tanımlanmış bir içerik türüyle eşleşen hiçbir dosya açıksa, uzantınızı yüklenmez.
 
-Bu, bir veya daha fazla ContentTypeDefinition sınıfları tanımlama üzerinden gerçekleştirilir:
+Bu bir veya daha fazla tanımlama aracılığıyla yapılır `ContentTypeDefinition` sınıflar:
 
 ```csharp
 namespace MockLanguageExtension
@@ -267,7 +270,7 @@ namespace MockLanguageExtension
 }
 ```
 
-Önceki örnekte, bir içerik türü tanımı biten dosyaları için oluşturulan *.bar* dosya uzantısı. İçerik türü tanımı "çubuğu" adı verilir ve **gerekir** öğesinden türetilen [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+Önceki örnekte, bir içerik türü tanımı biten dosyaları için oluşturulan *.bar* dosya uzantısı. İçerik türü tanımı "çubuğu" adı verilir ve öğesinden türetilmelidir [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
 
 Bir içerik türü tanımı ekledikten sonra daha sonra dil istemci sınıfı dil İstemci uzantı yükleme zamanı tanımlayabilirsiniz:
 
@@ -289,7 +292,7 @@ LSP dil Server'lar için desteği eklemek için Visual Studio içinde kendi proj
 
 LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki adımları izleyin:
 
-1. Bir JSON dosyası ekleyin (örneğin, *MockLanguageExtensionSettings.json*) projenizdeki ayarları ve kendi varsayılan değerlerini içerir. Örneğin:
+1. Bir JSON dosyası ekleyin (örneğin, *MockLanguageExtensionSettings.json*) projenize ayarları ve kendi varsayılan değerlerini içerir. Örneğin:
 
     ```json
     {
@@ -297,7 +300,7 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
     }
     ```
 
-2. JSON dosya sağ tıklayıp **özellikleri**. Değişiklik **derleme** eylem "İçerik" ve "VSIX Ekle ' özelliğini true.
+2. JSON dosya sağ tıklayıp **özellikleri**. Değişiklik **derleme** eylem "İçerik" ve "VSIX Ekle ' özelliğini **true**.
 
 3. Uygulama ConfigurationSections ve JSON dosyasında tanımlanan ayarlara yönelik önekleri listesini döndürür (Visual Studio kodu, bu eşleme Package.json'da yapılandırma bölümü adı):
 
@@ -325,7 +328,7 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
 
-5. .pkgdef dosyasını sağ tıklatın ve seçin **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliği true.
+5. .pkgdef dosyasını sağ tıklatın ve seçin **özellikleri**. Değişiklik **derleme** eyleme **içerik** ve **VSIX Ekle** özelliğini **true**.
 
 6. Açık yukarı *source.extension.vsixmanifest* dosyası ve bir varlığı ekleyin **varlık** sekmesinde:
 
@@ -347,12 +350,12 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
     }
     ```
 
-### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
+### <a name="enable-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
 
 Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir. Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
 
-4. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
-5. Ayarları json dosyasında aşağıdaki satırı ekleyin:
+1. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
+2. Ayarları json dosyasında aşağıdaki satırı ekleyin:
 
 ```json
 {
@@ -361,6 +364,7 @@ Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunu
 ```
 
 İzleme ayrıntı düzeyi için üç olası değer vardır:
+
 * "Kapalı": tamamen devre dışı izleme
 * "İleti": izleme açık ancak tek yöntem adı ve yanıt kimliği izlenen.
 * "Ayrıntılı": açık; izleme Tüm rpc message izlenen.
@@ -371,7 +375,7 @@ Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunu
 
 İleti geçirme ve standart dil sunucusu protokolü bir parçası olmayan alıcı dil sunucudaki iletileri kolaylaştırmak için API yerinde vardır. Özel iletileri işlemek için uygulama [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) dil istemci sınıfınız arabirimi. [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) kitaplığı dil istemci ve sunucu dil arasında özel ileti iletmek için kullanılır. LSP dil istemci uzantınızı yalnızca herhangi diğer Visual Studio uzantısı gibi olduğundan, (LSP tarafından desteklenmez) ek özellikleri ekleyin (diğer Visual Studio API kullanarak) Visual Studio, uzantı özel iletiler aracılığıyla karar verebilirsiniz.
 
-#### <a name="receiving-custom-messages"></a>Özel ileti alma
+#### <a name="receive-custom-messages"></a>Özel ileti alma
 
 Özel ileti dil sunucudan almak için uygulama [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) özelliği [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) ve özel iletilerinizi yapılacağını bilmediği bir nesne döndürür . Aşağıdaki örnekte:
 
@@ -406,7 +410,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 }
 ```
 
-#### <a name="sending-custom-messages"></a>Özel ileti gönderme
+#### <a name="send-custom-messages"></a>Özel ileti gönderme
 
 Dil sunucuya özel ileti göndermek için uygulama [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) metodunda [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Dil sunucunuz başlatılan ve iletileri almaya hazır olduğunda, bu yöntem çağrılır. A [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) dili kullanarak sunucuya ileti göndermek için daha sonra koruyabilirsiniz bir parametre olarak geçirilen nesne [VS StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) API'leri. Aşağıdaki örnekte:
 
@@ -480,7 +484,7 @@ Visual Studio'da LSP istemcisi API'sini kullanarak bir örnek uzantısı kaynak 
 
 **Visual Studio'da daha zengin bir özellik desteği sağlamak için LSP dil sunucumu desteklemek için özel Proje sistemi oluşturmak istiyorum nasıl ederim, bunu?**
 
-Visual Studio'da dil LSP tabanlı sunucular için destek dayanır [Klasör Aç özelliği](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) ve özel Proje sistemi gerektirmeyecek şekilde özel olarak tasarlanmıştır. Yönergeleri izleyerek kendi özel Proje sistemi oluşturabileceğinizi [burada](https://github.com/Microsoft/VSProjectSystem), ancak ayarları gibi bazı özellikler çalışmayabilir. Varsayılan başlatma mantığı LSP dil sunucuları için özel Proje sistemi kullanıyorsanız, dil server kullanabilirsiniz emin olmak için başlatma sırasında özel mantığı sağlayabilirsiniz gerekebilir için şu anda açılan klasörünün kök klasör konumunu geçirmektir düzgün bir şekilde başlatın.
+Visual Studio'da dil LSP tabanlı sunucular için destek dayanır [Klasör Aç özelliği](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/) ve özel Proje sistemi gerektirmeyecek şekilde tasarlanmıştır. Yönergeleri izleyerek kendi özel Proje sistemi oluşturabileceğinizi [burada](https://github.com/Microsoft/VSProjectSystem), ancak ayarları gibi bazı özellikler çalışmayabilir. Varsayılan başlatma mantığı LSP dil sunucuları için özel Proje sistemi kullanıyorsanız, dil server kullanabilirsiniz emin olmak için başlatma sırasında özel mantığı sağlayabilirsiniz gerekebilir için şu anda açılan klasörünün kök klasör konumunu geçirmektir düzgün bir şekilde başlatın.
 
 **Hata ayıklayıcı desteği nasıl ekleyebilirim?**
 
@@ -493,3 +497,7 @@ Evet, ancak tüm özellikler düzgün çalışır. Nihai amacıyla LSP dil sunuc
 **Tamamlanan LSP dil sunucumu VSIX burada yayımlansın mı?**
 
 Market yönergelere bakın [burada](walkthrough-publishing-a-visual-studio-extension.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Diğer diller için Visual Studio Düzenleyicisi desteği Ekle](../ide/adding-visual-studio-editor-support-for-other-languages.md)

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Hangi abonelikler sunulur, hangi kuralları uygulamak ve kaç aboneliğe MPN'ye sunulan ayrıntıları.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945407"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805299"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual Studio abonelikleri
 Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.
@@ -52,7 +52,7 @@ Eylem paketi ile iş ortağı işletmeyse **3 Visual Studio Professional (MPN) a
 - Windows Enterprise--yalnızca geliştirme ve test için kullanılacak en son sürümünü yalnızca
 - Windows Server--yalnızca geliştirme ve test için kullanılacak en son sürümünü yalnızca
 
-Visual Studio Professional (MPN) aboneleri de indirebilir ve SQL Server Geliştirici sürümü dahil olmak üzere kendi geliştirme için ücretsiz yazılım kullanın.
+Visual Studio Professional (MPN) aboneleri de indirebilir ve kendi geliştirme için SQL Server Geliştirici sürümü dahil olmak üzere yazılımı kullanın.
 
 Visual Studio Professional (MPN) aboneliği Azure DevOps Hizmetleri avantajları, aylık Azure kredisi, teknik destek, eğitim veya sunulan Visual Studio abonelikleri ile kullanılabilir olan diğer abone avantajları dahil değildir ticari olarak.
 

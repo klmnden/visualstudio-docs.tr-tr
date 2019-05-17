@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975657"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805321"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği Ekle
 
@@ -33,7 +33,7 @@ Visual Studio Düzenleyicisi söz dizimi renklendirme, deyim tamamlama (IntelliS
 
 ![Perl komut söz dizimi renklendirme](../ide/media/vside_perledit.png)
 
-Visual Studio şu anda sağlar söz dizimi renklendirme ve temel deyim tamamlama desteği aşağıdaki dillerde kullanarak [TextMate dil bilgileri](https://manual.macromates.com/en/language_grammars). Favori dilinizi tabloda yoksa, ancak endişelenmeyin - ekleyebilirsiniz.
+Visual Studio şu anda sağlar söz dizimi renklendirme ve temel deyim tamamlama desteği aşağıdaki dillerde kullanarak [TextMate dil bilgileri](https://manual.macromates.com/en/language_grammars). Favori dilinizi tabloda yoksa, endişelenmeyin&mdash;ekleyebilirsiniz.
 
 |||||||
 |-|-|-|-|-|-|
@@ -46,21 +46,21 @@ Visual Studio şu anda sağlar söz dizimi renklendirme ve temel deyim tamamlama
 
 Söz dizimi renklendirme ve temel deyim tamamlama ek olarak, Visual Studio de denilen bir özelliği olan [gitmek için](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Bu özellik, hızla kod dosyaları, dosya yolları ve kod semboller aramanıza olanak sağlar. Visual Studio aşağıdaki dillerde gitmek için destek sağlar.
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - Git
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 Bu dosya türlerini belirli bir dil henüz yüklenmemiştir desteği özellikleri açıklandığı gibi daha önce bile sahiptir. Bazı diller için özelleştirilmiş desteğini yükleme, IntelliSense gibi ek dil desteği veya ampuller gibi diğer Gelişmiş dil özellikleri sağlayabilir.
 
@@ -89,5 +89,6 @@ TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz. [TextMate 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Dil sunucusu Protokolü uzantısı ekleme](../extensibility/adding-an-lsp-extension.md)
 - [İzlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md)
 - [İzlenecek yol: Deyim tamamlama görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Derleme çıkış dizinini değiştirme'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824236"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805045"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Nasıl yapılır: Derleme çıkış dizinini değiştirme
 
-(Hata ayıklama, yayın veya her ikisi için) yapılandırma olarak projeniz tarafından oluşturulan çıkış konumunu belirtebilirsiniz.
-
-> [!NOTE]
-> Varsa bir **Kurulum** proje, bu makalenin sonundaki nota bakın.
+(Hata ayıklama, yayın veya her ikisi için) yapılandırma başına temelinde projeniz tarafından oluşturulan çıkış konumunu belirtebilirsiniz.
 
 ## <a name="change-the-build-output-directory"></a>Derleme çıkış dizinini değiştirme
 
-1. Menü çubuğunda, **proje** > **\<uygulamaadı > Özellikleri**. Ayrıca'nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**.
+1. Projenin özellik sayfalarındaki açmak için ' nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**.
 
-2. Visual Basic projesi varsa, seçin **derleme** sekmesi. Bir C# projesi varsa, seçin **derleme** sekmesi. Bir C++ veya JavaScript projesi varsa, seçin **genel** sekmesi.
+2. Proje türüne göre uygun sekmeyi seçin:
 
-3. Yapılandırma açılan sayfanın üstünde çıktısı yapılandırmayı seçin. dosya konumu (hata ayıklama, yayın veya tümü) değiştirmek istediğiniz.
+   - İçin C#seçin **derleme** sekmesi.
+   - Visual Basic için seçin **derleme** sekmesi.
+   - İçin C++ veya JavaScript seçin **genel** sekmesi.
 
-     Çıkış yolu girdisini bulun (**yapı çıkış yolu** Visual Basic'te **çıkış dizinine** Visual C++ ' ta **çıkış yolu** JavaScript ve C#). Proje dizinine göre yeni bir derleme çıktı dizinini belirtin.
+3. Yapılandırma açılan sayfanın üstünde çıktısı yapılandırmayı seçin. dosya değiştirmek istediğiniz konumu (**hata ayıklama**, **yayın**, veya **yapılandırmalarında**).
 
-> [!NOTE]
-> Kurulum projesinde **çıktı dosyası adını** kutusu yalnızca konumunu değiştirir *Setup.exe* dosyası, proje dosyalarının konumu değil. Daha fazla bilgi için **derleme, yapılandırma özellikleri, dağıtım Proje Özellikleri iletişim kutusu**.
+4. Çıkış yolu giriş sayfasında bulma&mdash;, proje türüne bağlı olarak değişir:
+
+   - **Çıkış yolu** için C# ve JavaScript projeleri
+   - **Yapı çıkış yolu** Visual Basic projeleri
+   - **Çıkış dizini** görsel için C++ projeleri
+
+   Çıkış (mutlak veya göreli proje kök dizinine) oluşturun veya seçin, türü yolunda **Gözat** bunun yerine bu klasöre gidin.
+
+   ![Path özelliği için bir Visual Studio çıktı C# proje](media/output-path.png)
+
+> [!TIP]
+> Çıktı, belirttiğiniz konuma oluşturulmadıysa, karşılık gelen yapılandırma oluşturmakta olduğunuza emin olun (örneğin, **hata ayıklama** veya **yayın**) menü çubuğunda seçerek Visual Studio.
+>
+> ![Visual Studio 2019 seçicide yapılandırma derleme](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

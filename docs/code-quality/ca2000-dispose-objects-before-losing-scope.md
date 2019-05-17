@@ -1,6 +1,6 @@
 ---
 title: 'CA2000: Kapsamı kaybetmeden önce nesneleri bırakın'
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545413"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804972"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Kapsamı kaybetmeden önce nesneleri bırakın
 
@@ -35,40 +35,55 @@ ms.locfileid: "62545413"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Yerel bir nesne bir <xref:System.IDisposable> türü oluşturulur, ancak nesne tüm başvuruları kapsam dışına çıkmadan önce nesne atılmaz.
+
+Yerel bir nesne bir <xref:System.IDisposable> türü oluşturulur, ancak nesne tüm başvuruları kapsam dışına çıkmadan önce nesne atılmaz.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Tüm başvuruları kapsam dışı olmadan önce atılabilir bir nesne açıkça elden değil, nesnenin çöp toplayıcı nesnenin Sonlandırıcısı çalıştığında belirsiz bir zamanda silinip. Olağanüstü bir olay ortaya çıkabilecek çünkü Sonlandırıcı engelleyecek çalışmasını nesne, nesne açıkça elden çıkarılmalıdır.
+
+Tüm başvuruları kapsam dışı olmadan önce atılabilir bir nesne açıkça elden değil, nesnenin çöp toplayıcı nesnenin Sonlandırıcısı çalıştığında belirsiz bir zamanda silinip. Olağanüstü bir olay ortaya çıkabilecek çünkü Sonlandırıcı engelleyecek çalışmasını nesne, nesne açıkça elden çıkarılmalıdır.
+
+### <a name="special-cases"></a>Özel durumlar
+
+Nesne değil kaldırıldıktan bile kural CA2000 aşağıdaki türleri için yerel nesnelerin başlatılmıyor:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Şu türlerden birinde bir nesne için bir oluşturucu geçirerek ve bir alan atayarak gösteren bir *sahipliğinin aktarılmasını dispose* yeni oluşturulan tür için. Diğer bir deyişle, yeni oluşturulan tür artık nesnesinin elden için sorumludur. Kodunuz şu türlerden birinde bir nesne için bir oluşturucu geçirir, hiçbir nesne tüm başvuruları önce bırakılmıyor bile CA2000 gerçekleşir kural ihlalini kapsam dışına demektir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için çağrı <xref:System.IDisposable.Dispose%2A> tüm başvuruları kapsam dışı olmadan önce nesne üzerinde.
 
- Kullanabileceğiniz Not `using` deyimi (`Using` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) uygulayan nesneler sarmalamak için `IDisposable`. Bu şekilde kaydırılan nesneler otomatik olarak atıldı kapanışında `using` blok.
+Bu kural ihlalini düzeltmek için çağrı <xref:System.IDisposable.Dispose%2A> tüm başvuruları kapsam dışı olmadan önce nesne üzerinde.
 
- Bazı durumlar şunlardır burada using deyimi IDisposable nesneleri korumak yeterli değildir ve CA2000 oluşmasına neden olabilir.
+Kullanabileceğiniz [ `using` deyimi](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) Visual Basic'te) uygulayan nesneler sarmalamak için <xref:System.IDisposable>. Bu şekilde sarmalanmış nesneler otomatik olarak sonunda atıldı `using` blok. Ancak, aşağıdaki durumlarda kullanılmamalıdır veya ile işlenemez bir `using` deyimi:
 
-- Atılabilir bir nesne döndürmekten gerektirir kullanarak bir dışında bir try/finally bloğu nesne oluşturulmuş blok.
+- Atılabilir bir nesne döndürülecek nesne gerekir oluşturulmuş içinde bir `try/finally` bloğu dışında bir `using` blok.
 
-- Tek kullanımlık bir nesnenin üyelerine başlatma yapılmamalıdır kullanarak bir oluşturucuda deyimi.
+- Oluşturucusunun içinde tek kullanımlık bir nesnenin üyelerine başlatmayın bir `using` deyimi.
 
-- Yalnızca bir özel durum işleyicisi tarafından korunan oluşturuculara iç içe geçirme. Örneğin,
+- Ne zaman yalnızca bir özel durum işleyicisi tarafından korunan oluşturuculara iç içe içinde [edinme parçası bir `using` deyimi](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), dış oluşturucu içinde bir hata hiçbir zaman iç içe geçmiş Oluşturucu tarafından oluşturulan nesne neden olabilir kapatıldığından kuşkulanılıyor. Aşağıdaki örnekte, bir hata <xref:System.IO.StreamReader> Oluşturucusu sonuçlanabilir <xref:System.IO.FileStream> nesne hiçbir zaman kapatıldığından kuşkulanılıyor. Bu durumda, CA2000 kural ihlalini işaretler.
 
-    ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
-    { ... }
-    ```
+   ```csharp
+   using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+   { ... }
+   ```
 
-     CA2000 hiç kapalı FILESTREAM nesnesinde bir hata StreamReader nesnenin yapımı sağladığından oluşmasına neden olur.
-
-- Dinamik nesneler gölge nesne IDisposable nesnelerin Dispose deseni uygulamak için kullanmanız gerekir.
+- Dinamik nesneler dispose desenini uygulamak için bir gölge nesnesi kullanmalıdır <xref:System.IDisposable> nesneleri.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Nesnenizde `Dispose` gibi <xref:System.IO.Stream.Close%2A> çağıran bir yöntem çağırmadığınız sürece veya uyarıyı oluşturan yöntem nesnenizi sarmalayan bir IDisposable nesnesi getirmediği sürece bu kuraldan bir uyarıyı bastırmayın.
+
+Sürece bu kuraldan bir uyarıyı bastırmayın:
+
+- Bir yöntemi çağıran nesneniz üzerinde çağırdıktan `Dispose`, gibi <xref:System.IO.Stream.Close%2A>
+- Uyarı verir başlatan yöntem bir <xref:System.IDisposable> nesnenizi sarmalayan bir nesne
+- Dispose sahipliği ayırma metoduna sahip değil; diğer bir deyişle, nesneyi silmek için sorumluluk başka bir nesne veya yöntem içinde oluşturulan ve çağırana döndürülen sarmalayıcı aktarılır
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA2213: Atılabilen alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: Nesneleri birden çok kez atmayın](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2213: Atılabilen alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+- [CA2202: Nesneleri birden çok kez atmayın](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Örnek
 
@@ -156,13 +171,14 @@ End Function
 ```
 
 ## <a name="example"></a>Örnek
- Varsayılan olarak, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici sahip tüm aritmetik işleçler için taşmayı denetle. Bu nedenle, herhangi bir Visual Basic aritmetik işlem fırlatabilir bir <xref:System.OverflowException>. Bu kurallar CA2000 gibi beklenmeyen ihlallerini neden olabilir. Örneğin, Visual Basic Derleyicisi, yönerge değil çıkarılması StreamReader neden olan bir özel durum oluşturabilir eklenmesi için denetimi taşma yayma çünkü aşağıdaki CreateReader1 işlevi bir CA2000 ihlaline neden olur.
 
- Bunu düzeltmek için projenizdeki Visual Basic derleyici tarafından taşma denetimleri yaymayı devre dışı bırakabilir veya kodunuz aşağıdaki CreateReader2 işlevi olduğu gibi değiştirebilirsiniz.
+Varsayılan olarak, Visual Basic Derleyicisi için taşmayı denetle tüm aritmetik işleçlere sahiptir. Bu nedenle, herhangi bir Visual Basic aritmetik işlem fırlatabilir bir <xref:System.OverflowException>. Bu kurallar CA2000 gibi beklenmeyen ihlallerini neden olabilir. Örneğin, Visual Basic Derleyicisi, yönerge değil çıkarılması StreamReader neden olan bir özel durum oluşturabilir eklenmesi için denetimi taşma yayma çünkü aşağıdaki CreateReader1 işlevi bir CA2000 ihlaline neden olur.
 
- Taşma denetimleri yaymayı devre dışı bırakmak için Çözüm Gezgini'nde proje adına sağ tıklayın ve ardından **özellikleri**. Tıklayın **derleme**, tıklayın **Gelişmiş derleme seçenekleri**, iade edin **tamsayı taşması denetimlerini Kaldır**.
+Bunu düzeltmek için projenizdeki Visual Basic derleyici tarafından taşma denetimleri yaymayı devre dışı bırakabilir veya kodunuz aşağıdaki CreateReader2 işlevi olduğu gibi değiştirebilirsiniz.
 
-  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+Taşma denetimleri yaymayı devre dışı bırakmak için Çözüm Gezgini'nde proje adına sağ tıklayın ve ardından **özellikleri**. Tıklayın **derleme**, tıklayın **Gelişmiş derleme seçenekleri**, iade edin **tamsayı taşması denetimlerini Kaldır**.
+
+[!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

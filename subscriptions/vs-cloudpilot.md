@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948424"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805362"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
@@ -86,4 +86,4 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Aboneliğinizle birlikte gelen Azure avantajı etkinleştirmediyseniz, ziyaret [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve azure'da Azure aboneliğinizi ayarlama ve ücretsiz Azure kredilerinizi kullanmak için Araçlar kategorisinde kutucuğuna tıklayın.
+Aboneliğinizle birlikte gelen Azure avantajı etkinleştirmediyseniz, ziyaret [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve azure'da Azure aboneliğinizi ayarlama ve Azure kredilerinizi kullanmak için Araçlar kategorisinde kutucuğuna tıklayın.
