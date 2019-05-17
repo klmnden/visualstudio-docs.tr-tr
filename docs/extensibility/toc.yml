@@ -7,13 +7,15 @@
 - name: 'İlk Uzantınızı Oluşturma: Merhaba Dünya'
   href: extensibility-hello-world.md
 - name: Visual Studio 2019 SDK’daki Yenilikler
-  href: whats-new-visual-studio-2019-sdk.md
   items:
+    - name: Visual Studio 2019 SDK’daki Yenilikler
+      href: whats-new-visual-studio-2019-sdk.md
     - name: Zaman uyumlu bir şekilde otomatik yüklenen uzantılar
       href: synchronously-autoloaded-extensions.md
 - name: Visual Studio 2017 SDK’daki Yenilikler
-  href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
+    - name: Visual Studio 2017 SDK’daki Yenilikler
+      href: what-s-new-in-the-visual-studio-2017-sdk.md
     - name: Genişletilebilirlikteki Yeni Değişiklikler
       href: breaking-changes-2017.md
     - name: VSIX v3’te Ngen desteği
@@ -29,13 +31,15 @@
 - name: Visual Studio için Gidiş Geliş Uzantıları
   href: how-to-roundtrip-VSIXs.md
 - name: Dil Sunucusu Protokolü
-  href: language-server-protocol.md
   items:
+    - name: Dil Sunucusu Protokolü
+      href: language-server-protocol.md
     - name: Dil Sunucusu Protokolü uzantısı ekleme
       href: adding-an-lsp-extension.md
 - name: Klasörü Aç
-  href: open-folder.md
   items:
+    - name: Klasörü Aç
+      href: open-folder.md
     - name: Çalışma Alanları
       href: workspaces.md
     - name: Dosya bağlamları
@@ -47,8 +51,9 @@
     - name: Yapı
       href: workspace-build.md
 - name: Menüleri ve Komutları Genişletme
-  href: extending-menus-and-commands.md
   items:
+    - name: Menüleri ve Komutları Genişletme
+      href: extending-menus-and-commands.md
     - name: Bir Menü Komutuyla Uzantı Oluşturma
       href: creating-an-extension-with-a-menu-command.md
     - name: Visual Studio Menü Çubuğuna Menü Ekleme
@@ -72,8 +77,9 @@
     - name: Menü Komutlarını Yerelleştirme
       href: localizing-menu-commands.md
 - name: Araç Çubuklarına Komut Ekleme
-  href: adding-commands-to-toolbars.md
   items:
+    - name: Araç Çubuklarına Komut Ekleme
+      href: adding-commands-to-toolbars.md
     - name: Araç Çubuğu Ekleme
       href: adding-a-toolbar.md
     - name: Araç Penceresine Araç Çubuğu Ekleme
@@ -85,8 +91,9 @@
     - name: Dinamik Olarak Menü Öğeleri Ekleme
       href: dynamically-adding-menu-items.md
 - name: Araç Pencerelerini Genişletme ve Özelleştirme
-  href: extending-and-customizing-tool-windows.md
   items:
+    - name: Araç Pencerelerini Genişletme ve Özelleştirme
+      href: extending-and-customizing-tool-windows.md
     - name: Araç Penceresi İçeren Bir Uzantı Oluşturma
       href: creating-an-extension-with-a-tool-window.md
     - name: Araç Penceresi Ekleme
@@ -110,13 +117,15 @@
     - name: Kalıcı İletişim Kutuları Oluşturma ve Bunları Yönetme
       href: creating-and-managing-modal-dialog-boxes.md
 - name: Düzenleyici ve Dil Hizmeti Uzantıları
-  href: editor-and-language-service-extensions.md
   items:
+    - name: Düzenleyici ve Dil Hizmeti Uzantıları
+      href: editor-and-language-service-extensions.md
     - name: Düzenleyici Öğesi Şablonuyla Uzantı Oluşturma
       href: creating-an-extension-with-an-editor-item-template.md
     - name: Düzenleyiciyi ve Dil Hizmetlerini Genişletme
-      href: extending-the-editor-and-language-services.md
       items:
+        - name: Düzenleyiciyi ve Dil Hizmetlerini Genişletme
+          href: extending-the-editor-and-language-services.md
         - name: Dil Hizmeti ve Düzenleyici Uzantılarıyla Çalışmaya Başlama
           href: getting-started-with-language-service-and-editor-extensions.md
         - name: Düzenleyicinin İçinde
@@ -160,8 +169,9 @@
         - name: 'İzlenecek yol: Düzenleyici Uzantısından DTE Nesnesine Erişme'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Özel Düzenleyiciler ve Tasarımcılar Oluşturma
-      href: creating-custom-editors-and-designers.md
       items:
+        - name: Özel Düzenleyiciler ve Tasarımcılar Oluşturma
+          href: creating-custom-editors-and-designers.md
         - name: 'İzlenecek yol: Özel Düzenleyici Oluşturma'
           href: walkthrough-creating-a-custom-editor.md
         - name: 'İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme'
@@ -173,8 +183,9 @@
         - name: Özel Düzenleyicilerde Söz Dizimi Renklendirmesi
           href: syntax-coloring-in-custom-editors.md
         - name: Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü
-          href: document-data-and-document-view-in-custom-editors.md
           items:
+            - name: Özel Düzenleyicilerde Belge Verileri ve Belge Görünümü
+              href: document-data-and-document-view-in-custom-editors.md
             - name: Birden Çok Belge Görünümünü Destekleme
               href: supporting-multiple-document-views.md
             - name: Basitleştirilmiş Ekleme
@@ -194,8 +205,9 @@
         - name: XAML Tasarımcısı Genişletilebilirlik Geçiş Kılavuzu
           href: xaml-designer-extensibility-migration.md
 - name: Projeleri genişletme
-  href: extending-projects.md
   items:
+    - name: Projeleri genişletme
+      href: extending-projects.md
     - name: 'Temel Proje Sistemi Oluşturma, Bölüm 1'
       href: creating-a-basic-project-system-part-1.md
     - name: 'Temel Proje Sistemi Oluşturma, Bölüm 2'
@@ -213,15 +225,17 @@
     - name: Evrensel Windows Projelerini Yönetme
       href: managing-universal-windows-projects.md
 - name: Çözümleri genişletme
-  href: extending-solutions.md
   items:
+    - name: Çözümleri genişletme
+      href: extending-solutions.md
     - name: Çözüm Gezgini Filtresini Genişletme
       href: extending-the-solution-explorer-filter.md
     - name: Bir Çözümde Proje Yüklemeyi Yönetme
       href: managing-project-loading-in-a-solution.md
 - name: Özel Proje ve Öğe Şablonları Oluşturma
-  href: creating-custom-project-and-item-templates.md
   items:
+    - name: Özel Proje ve Öğe Şablonları Oluşturma
+      href: creating-custom-project-and-item-templates.md
     - name: Visual Studio 2017 için Özel Proje ve Öğe Şablonlarını Yükseltme
       href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
     - name: Şablon Bulma Sorunlarını Giderme
@@ -229,8 +243,9 @@
     - name: Sihirbazları Proje Şablonlarıyla Kullanma
       href: how-to-use-wizards-with-project-templates.md
     - name: Visual Studio Şablon Şeması Başvurusu
-      href: visual-studio-template-schema-reference.md
       items:
+        - name: Visual Studio Şablon Şeması Başvurusu
+          href: visual-studio-template-schema-reference.md
         - name: AppliesTo Öğesi (Visual Studio Şablonları)
           href: appliesto-element-visual-studio-templates.md
         - name: Assembly Öğesi (Visual Studio Şablonları)
@@ -338,8 +353,9 @@
     - name: Visual Studio Şablon Bildirim Şeması Başvurusu
       href: visual-studio-template-manifest-schema-reference.md
 - name: Kullanıcı Ayarlarını ve Seçeneklerini Genişletme
-  href: extending-user-settings-and-options.md
   items:
+    - name: Kullanıcı Ayarlarını ve Seçeneklerini Genişletme
+      href: extending-user-settings-and-options.md
     - name: Seçenekler Sayfası Oluşturma
       href: creating-an-options-page.md
     - name: Ayarlar Kategorisi Oluşturma
@@ -351,15 +367,17 @@
     - name: Kullanıcı Ayarları Deposuna Yazma
       href: writing-to-the-user-settings-store.md
 - name: Özellikleri ve Özellik Penceresini Genişletme
-  href: extending-properties-and-the-property-window.md
   items:
+    - name: Özellikleri ve Özellik Penceresini Genişletme
+      href: extending-properties-and-the-property-window.md
     - name: Özellikleri ve Özellik Penceresini Kullanıma Sunma
       href: exposing-properties-to-the-properties-window.md
     - name: Proje Özelliklerini Alma
       href: getting-project-properties.md
 - name: Visual Studio’nun Diğer Bölümlerini Genişletme
-  href: extending-other-parts-of-visual-studio.md
   items:
+    - name: Visual Studio’nun Diğer Bölümlerini Genişletme
+      href: extending-other-parts-of-visual-studio.md
     - name: VSPackage İçeren Bir Uzantı Oluşturma
       href: creating-an-extension-with-a-vspackage.md
     - name: WPF Araç Kutusu Denetimi Oluşturma
@@ -369,8 +387,9 @@
     - name: Durum Çubuğunu Genişletme
       href: extending-the-status-bar.md
     - name: Özel Başlangıç Sayfası Oluşturma
-      href: creating-a-custom-start-page.md
       items:
+        - name: Özel Başlangıç Sayfası Oluşturma
+          href: creating-a-custom-start-page.md
         - name: 'İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme'
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Başlangıç Sayfasına Kullanıcı Denetimi Ekleme
@@ -386,29 +405,33 @@
 - name: Visual Studio C++ proje genişletilebilirliği
   href: visual-cpp-project-extensibility.md
 - name: Visual Studio Kullanıcı Deneyimi Yönergeleri
-  href: ux-guidelines/visual-studio-user-experience-guidelines.md
   items:
+    - name: Visual Studio Kullanıcı Deneyimi Yönergeleri
+      href: ux-guidelines/visual-studio-user-experience-guidelines.md
     - name: UX Temel Bileşenleri
       href: ux-guidelines/ux-essentials-for-visual-studio.md
     - name: Yazı Tipleri ve Biçimlendirme
       href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
     - name: Renkler ve Stil
-      href: ux-guidelines/colors-and-styling-for-visual-studio.md
       items:
+        - name: Renkler ve Stil
+          href: ux-guidelines/colors-and-styling-for-visual-studio.md
         - name: Paylaşılan Renkler
           href: ux-guidelines/shared-colors-for-visual-studio.md
         - name: Renk Değeri Başvurusu
           href: ux-guidelines/color-value-reference-for-visual-studio.md
     - name: Görüntüler ve Simgeler
-      href: ux-guidelines/images-and-icons-for-visual-studio.md
       items:
+        - name: Görüntüler ve Simgeler
+          href: ux-guidelines/images-and-icons-for-visual-studio.md
         - name: Görsel Dil Sözlüğü
           href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
     - name: Menüler ve Komutlar
       href: ux-guidelines/menus-and-commands-for-visual-studio.md
     - name: Etkileşim Desenleri
-      href: ux-guidelines/interaction-patterns-for-visual-studio.md
       items:
+        - name: Etkileşim Desenleri
+          href: ux-guidelines/interaction-patterns-for-visual-studio.md
         - name: Uygulama Desenleri
           href: ux-guidelines/application-patterns-for-visual-studio.md
         - name: Yaygın Denetim Desenleri
@@ -432,8 +455,9 @@
 - name: Görüntü Hizmeti ve Kataloğu
   href: image-service-and-catalog.md
 - name: Hizmetleri Kullanma ve Sağlama
-  href: using-and-providing-services.md
   items:
+    - name: Hizmetleri Kullanma ve Sağlama
+      href: using-and-providing-services.md
     - name: Hizmet Alma
       href: how-to-get-a-service.md
     - name: Hizmet Sağlama
@@ -443,8 +467,9 @@
     - name: Hizmetlerde Sorun Giderme
       href: how-to-troubleshoot-services.md
 - name: VSPackage’ları Yönetme
-  href: managing-vspackages.md
   items:
+    - name: VSPackage’ları Yönetme
+      href: managing-vspackages.md
     - name: Deneysel Örnek
       href: the-experimental-instance.md
     - name: VSPackage Kaydetme ve Kaydını Kaldırma
@@ -466,8 +491,9 @@
 - name: Kabuk (Tümleşik veya Yalıtılmış)
   href: 'https://vspartner.com/pages/vsshells'
 - name: Visual Studio Uzantılarını Gönderme
-  href: shipping-visual-studio-extensions.md
   items:
+    - name: Visual Studio Uzantılarını Gönderme
+      href: shipping-visual-studio-extensions.md
     - name: VSIX Proje Şablonu
       href: vsix-project-template.md
     - name: VSIX Proje Şablonunu Kullanmaya Başlama
@@ -481,8 +507,9 @@
     - name: VSIX Paketine Bağımlılık Ekleme
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Bir VSIX Paketinin Anatomisi
-      href: anatomy-of-a-vsix-package.md
       items:
+        - name: Bir VSIX Paketinin Anatomisi
+          href: anatomy-of-a-vsix-package.md
         - name: VSIX Uzantı Şeması 2.0 Başvurusu
           href: vsix-extension-schema-2-0-reference.md
         - name: '[Content_types].xml Dosyasının Yapısı'
@@ -490,8 +517,9 @@
         - name: VSIX Bildirim Tasarımcısı
           href: vsix-manifest-designer.md
     - name: VSIX Paketlerini Yerelleştirme
-      href: localizing-vsix-packages.md
       items:
+        - name: VSIX Paketlerini Yerelleştirme
+          href: localizing-vsix-packages.md
         - name: VSIX Dil Paketi Şeması 2.0 Başvurusu
           href: vsix-language-pack-schema-2-0-reference.md
     - name: Bir Visual Studio Uzantısını Güncelleştirme
@@ -501,20 +529,23 @@
     - name: VSIX Paketlerini İmzalama
       href: signing-vsix-packages.md
     - name: Özel Galeriler
-      href: private-galleries.md
       items:
+        - name: Özel Galeriler
+          href: private-galleries.md
         - name: Özel Bir Galeri için Atom Akışı Oluşturma
           href: how-to-create-an-atom-feed-for-a-private-gallery.md
         - name: Bir Özel Galeriyi Kayıt Defteri Ayarlarını Kullanarak Yönetme
           href: how-to-manage-a-private-gallery-by-using-registry-settings.md
-    - name: Visual Studio'nun Birden Çok Sürümünü Destekleme
-      href: supporting-multiple-versions-of-visual-studio.md
+    - name: Visual Studio’nun Birden Çok Sürümünü Destekleme
       items:
+        - name: Visual Studio’nun Birden Çok Sürümünü Destekleme
+          href: supporting-multiple-versions-of-visual-studio.md
         - name: Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma
           href: choosing-between-shared-and-versioned-vspackages.md
         - name: Yan Yana Dağıtım için Dosya Adı Uzantılarını Kaydetme
-          href: registering-file-name-extensions-for-side-by-side-deployments.md
           items:
+            - name: Yan Yana Dağıtım için Dosya Adı Uzantılarını Kaydetme
+              href: registering-file-name-extensions-for-side-by-side-deployments.md
             - name: Dosya Adı Uzantıları Hakkında
               href: about-file-name-extensions.md
             - name: Dosya Adı Uzantıları için Dosya İşleyicileri Belirtme
@@ -523,20 +554,24 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Yan Yana Dosya İlişkilendirmelerini Yönetme
               href: managing-side-by-side-file-associations.md
-    - name: Visual Studio'yu Bulma
+    - name: Visual Studio’yu Bulma
       href: locating-visual-studio.md
+    - name: DTE kullanarak Visual Studio’yu Başlatma
+      href: launch-visual-studio-dte.md
 - name: Visual Studio SDK’nın İçinde
   href: internals/toc.yml
 - name: Visual Studio SDK Desteği
   href: support-for-the-visual-studio-sdk.md
 - name: Visual Studio SDK Başvurusu
-  href: visual-studio-sdk-reference.md
   items:
+    - name: Visual Studio SDK Başvurusu
+      href: visual-studio-sdk-reference.md
     - name: IntelliSenseHostFlags
       href: intellisensehostflags.md
     - name: VSCT XML Şeması Başvurusu
-      href: vsct-xml-schema-reference.md
       items:
+        - name: VSCT XML Şeması Başvurusu
+          href: vsct-xml-schema-reference.md
         - name: CommandTable Öğesi
           href: commandtable-element.md
         - name: Extern Öğesi
@@ -546,51 +581,61 @@
         - name: Define Öğesi
           href: define-element.md
         - name: Commands Öğesi
-          href: commands-element.md
           items:
+            - name: Commands Öğesi
+              href: commands-element.md
             - name: Menus Öğesi
-              href: menus-element.md
               items:
+                - name: Menus Öğesi
+                  href: menus-element.md
                 - name: Menu Öğesi
                   href: menu-element.md
             - name: Groups Öğesi
-              href: groups-element.md
               items:
+                - name: Groups Öğesi
+                  href: groups-element.md
                 - name: Group Öğesi
                   href: group-element.md
             - name: Buttons Öğesi
-              href: buttons-element.md
               items:
+                - name: Buttons Öğesi
+                  href: buttons-element.md
                 - name: Button Öğesi
                   href: button-element.md
             - name: Bitmaps Öğesi
-              href: bitmaps-element.md
               items:
+                - name: Bitmaps Öğesi
+                  href: bitmaps-element.md
                 - name: Bitmap Öğesi
                   href: bitmap-element.md
             - name: Combos Öğesi
-              href: combos-element.md
               items:
+                - name: Combos Öğesi
+                  href: combos-element.md
                 - name: Combo Öğesi
                   href: combo-element.md
         - name: CommandPlacements Öğesi
-          href: commandplacements-element.md
           items:
+            - name: CommandPlacements Öğesi
+              href: commandplacements-element.md
             - name: CommandPlacement Öğesi
               href: commandplacement-element.md
         - name: VisibilityConstraints Öğesi
-          href: visibilityconstraints-element.md
           items:
+            - name: VisibilityConstraints Öğesi
+              href: visibilityconstraints-element.md
             - name: VisibilityItem Öğesi
               href: visibilityitem-element.md
         - name: KeyBindings Öğesi
-          href: keybindings-element.md
           items:
+            - name: KeyBindings Öğesi
+              href: keybindings-element.md
             - name: KeyBinding Öğesi
               href: keybinding-element.md
         - name: UsedCommands Öğesi
-          href: usedcommands-element.md
           items:
+            - name: UsedCommands Öğesi
+              href: usedcommands-element.md
             - name: UsedCommand Öğesi
               href: usedcommand-element.md
         - name: Üst Öğe
@@ -598,8 +643,9 @@
         - name: Icon Öğesi
           href: icon-element.md
         - name: Strings Öğesi
-          href: strings-element.md
           items:
+            - name: Strings Öğesi
+              href: strings-element.md
             - name: ButtonText Öğesi
               href: buttontext-element.md
             - name: CommandName Öğesi
@@ -607,18 +653,21 @@
         - name: Command Flag Öğesi
           href: command-flag-element.md
         - name: Symbols Öğesi
-          href: symbols-element.md
           items:
+            - name: Symbols Öğesi
+              href: symbols-element.md
             - name: GuidSymbol Öğesi
-              href: guidsymbol-element.md
               items:
+                - name: GuidSymbol Öğesi
+                  href: guidsymbol-element.md
                 - name: IDSymbol Öğesi
                   href: idsymbol-element.md
         - name: VSCT XML Şeması Koşullu Öznitelikleri
           href: vsct-xml-schema-conditional-attributes.md
     - name: Visual Studio SDK’da GUID’ler ve Sabitler
-      href: guids-and-constants-in-the-visual-studio-sdk.md
       items:
+        - name: Visual Studio SDK’da GUID’ler ve Sabitler
+          href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: IDE GUID’leri
           href: ide-guids.md
         - name: IDE Sabitleri
@@ -626,11 +675,13 @@
     - name: Yönetilen Kodda COM Sabitleri
       href: com-constants-in-managed-code.md
     - name: Kaynak Denetimi Eklentileri
-      href: source-control-plug-ins.md
       items:
+        - name: Kaynak Denetimi Eklentileri
+          href: source-control-plug-ins.md
         - name: Kaynak Denetimi Eklentisi API İşlevleri
-          href: source-control-plug-in-api-functions.md
           items:
+            - name: Kaynak Denetimi Eklentisi API İşlevleri
+              href: source-control-plug-in-api-functions.md
             - name: SccAdd İşlevi
               href: sccadd-function.md
             - name: SccAddFilesFromSCC İşlevi
@@ -708,8 +759,9 @@
             - name: SccWillCreateSccFile İşlevi
               href: sccwillcreatesccfile-function.md
         - name: IDE Tarafından Uygulanan Geri Çağırma İşlevleri
-          href: callback-functions-implemented-by-the-ide.md
           items:
+            - name: IDE Tarafından Uygulanan Geri Çağırma İşlevleri
+              href: callback-functions-implemented-by-the-ide.md
             - name: LPTEXTOUTPROC
               href: lptextoutproc.md
             - name: POPLISTFUNC
@@ -721,8 +773,9 @@
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
         - name: Numaralandırıcılar
-          href: enumerators.md
           items:
+            - name: Numaralandırıcılar
+              href: enumerators.md
             - name: Komut Kodu Numaralandırıcısı
               href: command-code-enumerator.md
             - name: İleti Numaralandırıcısı
@@ -750,8 +803,9 @@
         - name: Kaynak Denetimi Eklentileri için Uyumluluk Uyarılarını Kapatma
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
     - name: Komut Satırı Anahtarları (Visual Studio SDK)
-      href: command-line-switches-visual-studio-sdk.md
       items:
+        - name: Komut Satırı Anahtarları (Visual Studio SDK)
+          href: command-line-switches-visual-studio-sdk.md
         - name: VSPackage Geliştirme için Devenv Komut Satırı Anahtarları
           href: devenv-command-line-switches-for-vspackage-development.md
         - name: Komut Satırı Anahtarları Ekleme
@@ -759,8 +813,9 @@
     - name: Hata İşleme ve Dönüş Değerleri
       href: error-handling-and-return-values.md
     - name: Nesneler
-      href: objects.md
       items:
+        - name: Nesneler
+          href: objects.md
         - name: VSCodeWindow Nesnesi
           href: vscodewindow-object.md
         - name: VSCodeWindowManager Nesnesi
@@ -772,8 +827,9 @@
     - name: Visual Studio SDK Sözlüğü
       href: visual-studio-sdk-glossary.md
 - name: Yazılık Geliştirme Seti Oluşturma
-  href: creating-a-software-development-kit.md
   items:
+    - name: Yazılık Geliştirme Seti Oluşturma
+      href: creating-a-software-development-kit.md
     - name: 'İzlenecek yol: C# veya Visual Basic Kullanarak SDK Oluşturma'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 'İzlenecek yol: C++ Kullanarak SDK Oluşturma'
@@ -781,8 +837,9 @@
     - name: 'İzlenecek yol: JavaScript Kullanarak SDK Oluşturma'
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: .NET Derleyici Platformu ("Roslyn") Genişletilebilirliği
-  href: dotnet-compiler-platform-roslyn-extensibility.md
   items:
+    - name: .NET Derleyici Platformu ("Roslyn") Genişletilebilirliği
+      href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Roslyn Çözümleyicileriyle Çalışmaya Başlama
       href: getting-started-with-roslyn-analyzers.md
     - name: ImmutableArray’ler için Roslyn Çözümleyicileri ve Kod Algılayan Kitaplık

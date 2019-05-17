@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın  
  **Test sonuçlarını çözümleme**  
   
- Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi iletiyi görüntüler, ne bekleniyordu ((<strong>beklenen\<*XXX*></strong>parametresi) ve hangi gerçekten alındı ( **Gerçek\<*YYY* >** parametresi). Biz başlangıç bakiyesinden azalmasını bekliyorduk, ancak bunun yerine artırmıştır oranda arttı.  
+ Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi iletiyi görüntüler, ne bekleniyordu ((<strong>beklenen\<*XXX*></strong>parametresi) ve hangi gerçekten alındı ( **Gerçek\<*YYY*>** parametresi). Biz başlangıç bakiyesinden azalmasını bekliyorduk, ancak bunun yerine artırmıştır oranda arttı.  
   
  Debit kodunun, birim testi hata bulma konusunda başarılı olduğunu gösterir. Çekilen miktarın azaltılması, gerektiğinde hesap bakiyesine eklendi.  
   
