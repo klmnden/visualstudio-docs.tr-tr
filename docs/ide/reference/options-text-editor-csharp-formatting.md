@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817830"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847440"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>Seçenekler, metin düzenleyici, C#, kod stili, biçimlendirme
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Seçenekler iletişim kutusu: Metin düzenleyici \> C# \> kod stili \> biçimlendirme
 
-Kullanım **biçimlendirme** seçenekler sayfası, Kod düzenleyicisinde kod biçimlendirme seçeneklerini ayarlamak için. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C#** > **kod stili**  >  **Biçimlendirme**.
+Kullanım **biçimlendirme** Seçenekleri sayfası ve onun alt ([**girinti**](#indentation-page), **yeni satırlar**, **aralığı** ve **sarmalama**) Kod düzenleyicisinde kod biçimlendirme seçeneklerini ayarlamak için.
 
-## <a name="general-page"></a>Genel sayfası
+Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri** menü çubuğundan. İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** > **C#** > **kod stili**  >  **Biçimlendirme**.
+
+> [!TIP]
+> **Girinti**, **yeni satırlar**, **aralığı**, ve **sarmalama** alt her gösteren alttaki Önizleme penceresini görüntüleyin Her seçeneği etkin. Önizleme penceresini kullanmak için biçimlendirme seçeneği seçin. Önizleme penceresini seçeneği örneği gösterilmektedir. Bir ayar radyo düğmesinin veya onay kutusunu, yeni ayar etkisini göstermek için önizleme penceresi güncelleştirmeleri seçerek değiştirdiğinizde.
+
+## <a name="formatting-general-page"></a>Biçimlendirme (Genel) sayfası
 
 ### <a name="general-settings"></a>Genel ayarlar
 
@@ -43,9 +48,17 @@ Bu ayarlar etkiler *olduğunda* Kod düzenleyicisinde biçimlendirme seçenekler
 |**Sonrasında Otomatik Biçimlendir**|Bu onay kutusu seçildiğinde, metin biçimleri, **Enter** düzenleyici için seçilen biçimlendirme seçenekleri uyacak şekilde basıldığında.|
 |**Yapıştırıldığında otomatik olarak Biçimlendir**|Seçili olduğunda, düzenleyici için seçilen biçimlendirme seçenekleri uyacak şekilde düzenleyicisine yapıştırılan metin biçimlendirir.|
 
+::: moniker range="vs-2019"
+
+Kod stili ayarları için daha önce uygulandıysa C# kullanarak dosyaları **belgeyi Biçimlendir** işlevi olarak kullanıma sunuldu Visual Studio 2017, komut [ **kod Temizleme** ](../code-styles-and-code-cleanup.md#apply-code-styles).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>Biçim belgesi ayarları
 
-Bu ayarları yapılandırmak **belgeyi Biçimlendir** bir dosyada ek kod temizleme işlemini gerçekleştirmek için komutu. Bu ayarları nasıl uygulanacağı hakkında daha fazla bilgi için bkz. [belgeyi Biçimlendir komut](../code-styles-and-quick-actions.md#format-document-command).
+Bu ayarları yapılandırmak **belgeyi Biçimlendir** bir dosyada ek kod temizleme işlemini gerçekleştirmek için komutu. Bu ayarları nasıl uygulanacağı hakkında daha fazla bilgi için bkz. [belgeyi Biçimlendir komut](../code-styles-and-code-cleanup.md#apply-code-styles).
 
 |Etiketle|Açıklama|Karşılık gelen EditorConfig ve Araçlar > Seçenekler kuralları|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ Bu ayarları yapılandırmak **belgeyi Biçimlendir** bir dosyada ek kod temizle
 
 ![Visual Studio'da C# kod temizleme ayarları](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>Windows Preview
+::: moniker-end
 
-**Girinti**, **yeni satırlar**, **aralığı**, ve **sarmalama** alt her alt kısmında Önizleme penceresini görüntüleyin. Önizleme penceresini her seçeneği etkisini gösterir. Önizleme penceresini kullanmak için biçimlendirme seçeneği seçin. Önizleme penceresini seçeneği örneği gösterilmektedir. Bir ayar radyo düğmesinin veya onay kutusunu, yeni ayar etkisini göstermek için önizleme penceresi güncelleştirmeleri seçerek değiştirdiğinizde.
+## <a name="indentation-page"></a>Girinti sayfası
 
-## <a name="indentation-remarks"></a>Girinti açıklamalar
+Girintileme seçenekleri sayfasında bu kodu otomatik olarak biçimlendirildiğinde uygulayın. Bir dosya kodu yapıştırın, kod otomatik olarak biçimlendirilmiş bir örneği olduğunda **otomatik olarak, yapıştırma sırasında Biçimlendir** seçilir. ( **Otomatik olarak, yapıştırma sırasında Biçimlendir** seçenektir altında **biçimlendirme** > **genel**.)
 
-Girinti seçenekleri üzerinde **sekmeleri** her bir dilin sayfaları yalnızca belirlemek bastığınızda Kod düzenleyicisinde imleci burada yerleştirir **Enter** bir satırın sonunda. Girinti seçenekleri altında **biçimlendirme** dosyaya kod yapıştırdığınızda kod otomatik olarak, örneğin, biçimlendirildiğinde uygulamak **otomatik olarak, yapıştırma sırasında Biçimlendir** seçildiğinde ve ne zaman bloğu biçimlendirilen el ile yazılır.
+![C#Visual Studio Metin Düzenleyicisi girinti seçenekleri](media/csharp-indentation-options.png)
+
+> [!TIP]
+> Ayrıca vardır Girintileme seçenekleri üzerinde **metin düzenleyici** > **C#** > **sekmeleri** seçenekler sayfası. Bu seçenekler yalnızca bastığınızda Kod düzenleyicisinde imleci burada yerleştirir belirlemek **Enter** bir satırın sonunda.
+>
+> ![C#Metin Düzenleyici sekmesi seçenekleri Visual Studio'da](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

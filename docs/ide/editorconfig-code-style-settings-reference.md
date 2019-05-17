@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5778764bb065ae6da53016c2c9bbb557db20c51
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557222"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847372"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -29,7 +29,7 @@ Tanımlayabilir ve tutarlı bir kod stili korumak, birlikte kod temeli bir [Edit
 
 > [!TIP]
 > - Kodlama kuralları bir .editorconfig dosyasında tanımladığınızda, istediğiniz yapılandırırken [stil çözümleyicilerini kod](../code-quality/roslyn-analyzers-overview.md) kodunuzu analiz etmek için Visual Studio'ya oluşturulur. .Editorconfig dosyasındaki bu çözümleyicilerini yapılandırma dosyasıdır.
-> - Visual Studio da ayarlanabilir için kod stili tercihleri [metin düzenleyici seçenekleri](code-styles-and-quick-actions.md) iletişim. Bununla birlikte, öncelik ve ayarladığınız tercihleri .editorconfig ayarları ele **seçenekleri** belirli bir proje ile ilişkili değildir.
+> - Visual Studio da ayarlanabilir için kod stili tercihleri [metin düzenleyici seçenekleri](code-styles-and-code-cleanup.md) iletişim. Bununla birlikte, öncelik ve ayarladığınız tercihleri .editorconfig ayarları ele **seçenekleri** belirli bir proje ile ilişkili değildir.
 
 Bu makalenin sonundaki içeren bir [örnek .editorconfig dosyasındaki](#example-editorconfig-file).
 
@@ -239,7 +239,7 @@ AddHandler Elapsed, AddressOf Handler
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_qualification_for_field = false:suggestion
@@ -307,7 +307,7 @@ Dim local = Int32.MaxValue
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -408,7 +408,7 @@ End Class
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_require_accessibility_modifiers = always:suggestion
@@ -530,7 +530,7 @@ Dim v = a.b.Length
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -822,7 +822,7 @@ End If
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_object_initializer = true:suggestion
@@ -898,7 +898,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 
-```EditorConfig
+```ini
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:suggestion
@@ -968,7 +968,7 @@ bool f = this.Init();
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_var_for_built_in_types = true:suggestion
@@ -1115,7 +1115,7 @@ public int Age { get { return _age; } set { _age = value; } }
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_expression_bodied_methods = false:silent
@@ -1170,7 +1170,7 @@ if (s != null) {...}
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -1205,7 +1205,7 @@ if (int.TryParse(value, out i) {...}
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_inlined_variable_declaration = true:suggestion
@@ -1287,7 +1287,7 @@ fibonacci = (int n) =>
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
@@ -1339,7 +1339,7 @@ if (func != null) { func(args); }
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_style_throw_expression = true:suggestion
@@ -1373,7 +1373,7 @@ if (test) this.Display();
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_braces = true:silent
@@ -1458,7 +1458,7 @@ using System.Threading.Tasks;
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
@@ -1486,7 +1486,7 @@ using Octokit;
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_separate_import_directive_groups = true
@@ -1683,7 +1683,7 @@ var q = from a in e from b in e
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_new_line_before_open_brace = methods, properties, control_blocks, types
@@ -1832,7 +1832,7 @@ class C
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_indent_case_contents = true
@@ -2127,7 +2127,7 @@ void Goo(int x)
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_space_after_cast = true
@@ -2190,7 +2190,7 @@ public int MyProperty
 
 Örnek *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # CSharp formatting settings:
 [*.cs]
 csharp_preserve_single_line_statements = true
@@ -2201,7 +2201,7 @@ csharp_preserve_single_line_blocks = true
 
 Başlamanıza yardımcı olmak için bir örnek aşağıdadır *.editorconfig* dosyasıyla varsayılan seçenekleri:
 
-```EditorConfig
+```ini
 ###############################
 # Core EditorConfig Options   #
 ###############################

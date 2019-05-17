@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545234"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841419"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Doğrudan bir Görevi beklemeyin
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 Bu kuraldan bir değer döndürmez zaman uyumsuz yöntemler hariç tutmak isteyip istemediğinizi yapılandırabilirsiniz. Bu tür yöntemler tutmak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 Ayrıca, hangi derleme türleri bu kuralın uygulanacağı çıktı yapılandırabilirsiniz. Örneğin, yalnızca bu kural bir konsol uygulaması veya dinamik olarak bağlı bir kitaplığı (diğer bir deyişle, olmayan bir kullanıcı Arabirimi uygulaması) oluşturan koda uygulamak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 

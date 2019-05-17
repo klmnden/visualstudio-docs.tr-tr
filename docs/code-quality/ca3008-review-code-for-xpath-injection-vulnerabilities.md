@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806499"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841531"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: XPath ekleme güvenlik açıkları için inceleme kodu
 
@@ -32,7 +32,7 @@ Potansiyel olarak güvenilmeyen HTTP istek girişi bir XPath sorgusu ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, XPath ekleme saldırıları oluşturduğunu unutmayın. Güvenilmeyen girişini kullanarak XPath sorguları oluşturmak saldırganın kötü amaçlı olarak istenmeyen bir sonuç döndürmek için sorguyu düzenlemek ve büyük olasılıkla sorgulanan XML içeriğini açıklar. 
+Güvenilmeyen girdisiyle çalışırken, XPath ekleme saldırıları oluşturduğunu unutmayın. Güvenilmeyen girişini kullanarak XPath sorguları oluşturmak saldırganın kötü amaçlı olarak istenmeyen bir sonuç döndürmek için sorguyu düzenlemek ve büyük olasılıkla sorgulanan XML içeriğini açıklar.
 
 Bu kural, bir XPath ifadesi ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
 
@@ -40,7 +40,7 @@ Bu kural, bir XPath ifadesi ulaşmasını HTTP isteklerinden alınan giriş bulm
 > Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir XPath sorgusu gerçekleştiren başka bir derlemeye geçtikten sonra bu kural bir uyarı üreten olmaz.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı nasıl yapılandıracağınızı öğrenmek için `.editorconfig` dosyaları.
+> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

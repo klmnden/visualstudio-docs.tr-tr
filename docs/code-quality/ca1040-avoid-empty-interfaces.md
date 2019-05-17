@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 726953de0a92c0237ecaf7b724d9586a5d0f4c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25e798dac05213d8f66fe7ba3c7a737a71f6030e
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778765"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842234"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Boş arabirimlerden kaçının
 
@@ -58,7 +58,7 @@ Arabirimi, derleme zamanında türleri kümesini tanımlamak için kullanıldı�
 
 Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 dotnet_code_quality.ca1040.api_surface = private, internal
 ```
 

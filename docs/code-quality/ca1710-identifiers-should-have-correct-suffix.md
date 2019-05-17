@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797410"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841920"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır
 
@@ -97,7 +97,7 @@ Diğer sonekleri için bu kuraldan bir uyarıyı bastırmayın. Sonek hedeflenen
 
 Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 

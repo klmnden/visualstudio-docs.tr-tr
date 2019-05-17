@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630b9e56c0daa90fb257c7f941b35b07607ea678
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: eecbd3582257d4c141c82be95c0e7ea06504ffcf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531858"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839599"
 ---
-# <a name="options-dialog-box-visual-studio"></a>Seçenekler İletişim Kutusu (Visual Studio)
+# <a name="options-dialog-box-visual-studio"></a>Seçenekler iletişim kutusu (Visual Studio)
 
 **Seçenekleri** iletişim kutusu ihtiyaçlarınıza tümleşik geliştirme ortamı (IDE) yapılandırmanıza olanak sağlar. Örneğin, projeleriniz için bir varsayılan kaydetme konumu kurmak, varsayılan görünümünü ve davranışını Windows alter ve sık kullanılan komutlar için kısayollar oluşturmanıza. Ayrıca seçenekleri geliştirme diliniz ve platformunuz için özgü vardır. Erişebildiğiniz **seçenekleri** gelen **Araçları** menüsü.
 

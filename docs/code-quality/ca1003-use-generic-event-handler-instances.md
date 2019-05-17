@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62780040"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842524"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Genel olay işleyicisi örnekleri kullan
 
@@ -57,7 +57,7 @@ Bu kuraldan uyarıyı bastırmayın.
 
 Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 

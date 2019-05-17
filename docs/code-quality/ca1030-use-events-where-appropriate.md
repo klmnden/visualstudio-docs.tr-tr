@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1054fa7b884c23edb76248cba17bab41cc64246f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779317"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842359"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olayları kullanın
 
@@ -59,7 +59,7 @@ Yöntemi .NET olay modeliyle çalışmazsa bu kuraldan bir uyarıyı gizler.
 
 Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-```
+```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 

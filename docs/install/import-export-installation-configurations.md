@@ -1,8 +1,8 @@
 ---
 title: Yükleme yapılandırmasını içeri veya dışarı aktarma
 titleSuffix: ''
-description: Visual Studio'da .vsconfig dosyaları paylaşmak için içeri/dışarı aktarma yapılandırma özelliğini kullanmayı öğrenin
-ms.date: 05/17/2019
+description: Başkalarıyla paylaşmak için .vsconfig dosyaya yükleme yapılandırmanızı dışarı aktarma ve kopyalamak için içeri aktarma öğrenin.
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3644a0c04ebabab8744f6df21f9dd166665a21c4
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805359"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849031"
 ---
 # <a name="import-or-export-installation-configurations"></a>Yükleme yapılandırmasını içeri veya dışarı aktarma
 

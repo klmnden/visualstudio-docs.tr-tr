@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794137"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845987"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma
 
@@ -20,7 +20,13 @@ Ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) dosya projeye ya
 
 EditorConfig ayarlar, çok sayıda kod düzenleyici ve IDE'ler, Visual Studio da dahil olmak üzere tarafından desteklenir. Bu kodunuzla dolaşır ve Visual Studio dışında bile kodlama stillerini zorunlu kılabilir taşınabilir bir bileşendir.
 
-Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlendir sürece var olan kod biçimlendirme değişmez (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir** veya **Ctrl**+**K**, **Ctrl**+**D**varsayılan profilde). Ancak, yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir. İstediğiniz hangi EditorConfig ayarlar tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [ **biçimlendirme** seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlendir sürece var olan kod biçimlendirme değişmez (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir** veya **Ctrl**+**K**, **Ctrl**+**D**varsayılan profilde). Ancak, yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir.
+
+::: moniker range="vs-2017"
+
+İstediğiniz hangi EditorConfig ayarlar tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [ **biçimlendirme** seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio'da EditorConfig](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ EditorConfig dosya projenizden kaldırmak veya codebase kapatın ve kod yeni sat
 
 1. Örneğin, dosyayı istediğiniz gibi düzenleyin:
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Bazı veya tüm EditorConfig ayarlarını geçersiz kılmak için ekleme bir *.e
 
 Bazı geçersiz kılmak istiyorsanız, ancak tüm ayarları yalnızca ayarlarında *.editorconfig* dosya. Yalnızca alt düzey dosyasında açıkça listesinde özellikler geçersiz kılınır. Üst düzey'nden diğer ayarlar *.editorconfig* dosyaları devam uygulamak. Emin olmak istiyorsanız _hiçbir_ ayarlarından _herhangi_ üst düzey *.editorconfig* dosyaları kod tabanının kısmına uygulanır, ekleme ```root=true``` özelliği alt düzey *.editorconfig* dosyası:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Beklendiği gibi tuşuna basarak **sekmesini** anahtar sonraki satıra dört ek 
 
 Adlı yeni bir dosya ekleme *.editorconfig* projeye aşağıdaki içeriğe sahip. `[*.cs]` Ayarı, bu değişiklik yalnızca C# kod dosyaları proje uygulandığı anlamına gelir.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
