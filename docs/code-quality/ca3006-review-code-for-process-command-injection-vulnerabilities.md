@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da161e611ca1d802c8da16370907029233bfd785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841434"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: İşlem komutu ekleme güvenlik açıkları için inceleme kodu
 
@@ -40,7 +40,7 @@ Bu kural, bir işlem komut ulaşmasını HTTP isteklerinden alınan giriş bulma
 > Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir işlem başlatır, başka bir derlemeye geçtikten sonra bu kural bir uyarı üreten olmaz.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı nasıl yapılandıracağınızı öğrenmek için `.editorconfig` dosyaları.
+> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
