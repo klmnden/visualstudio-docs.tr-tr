@@ -80,8 +80,6 @@
           href: unit-tests-for-generic-methods.md
         - name: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: Birim testleri oluşturmak için örnek proje
-          href: sample-project-for-creating-unit-tests.md
     - name: C/C++ kodu için birim testleri
       items:
         - name: C/C++ kodu için birim testleri yazma
@@ -119,6 +117,7 @@
 - name: Live Unit Testing
   items:
     - name: Giriş
+      displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
     - name: Live Unit Testing’deki Yenilikler
       href: live-unit-testing-whats-new.md
@@ -147,6 +146,7 @@
             - name: Test karışımı modelleri
               items:
                 - name: Genel Bakış
+                  displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: Test karışımı modellerini düzenleme
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
@@ -196,8 +196,6 @@
               items:
                 - name: Oturum açma ayarlarını değiştirme
                   href: modify-load-test-logging-settings.md
-                - name: Maksimum günlük boyutu
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: Başarısız testler
                   href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
             - name: Zamanlama ayrıntıları deposu
@@ -227,6 +225,7 @@
     - name: Test denetleyicileri ve test aracıları
       items:
         - name: Genel Bakış
+          displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: Gereksinimler
           href: test-controller-and-test-agent-requirements-for-load-testing.md
@@ -348,16 +347,18 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Sonuç görüntüleyicisi için bir eklenti oluşturma
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: UI test otomasyonu
+- name: Kodlanmış kullanıcı arabirimi testini kullanarak kullanıcı arabirimi otomasyonu
   items:
     - name: Genel Bakış
+      displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: 'İzlenecek yol: Kodlanmış Bir UI Testini Oluşturma, Düzenleme ve Sürdürme'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Kodlanmış UI Testleriyle UWP Uygulamalarını Test Etme
       href: test-uwp-app-with-coded-ui-test.md
-    - name: UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+      items:
+        - name: UWP Denetimleri için Benzersiz Otomasyon Özelliği Ayarlama
+          href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
       href: using-html5-controls-in-coded-ui-tests.md
     - name: Verilerle Çalışan Kodlanmış UI Testi Oluşturma

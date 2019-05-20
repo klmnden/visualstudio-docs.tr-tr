@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Çözümleyici paketleri için kural kümeleri
           href: analyzer-rule-sets.md
-        - name: Yönetilen kod için kural kümeleri
-          items:
-            - name: Yönetilen kod için kural kümeleri
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Bir ASP.NET web uygulaması için kod analizini yapılandırma
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Statik kod analizi için kural kümelerini yapılandırma
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: Bir ASP.NET web uygulaması için kod analizini yapılandırma
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ kodu için kural kümeleri
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Özel kural kümesi oluşturma
