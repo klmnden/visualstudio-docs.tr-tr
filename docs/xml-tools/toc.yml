@@ -1,16 +1,21 @@
 - name: Visual Studio'daki XML araçları
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Genel Bakış
+      href: xml-tools-in-visual-studio.md
     - name: XML düzenleyicisi
-      href: xml-editor.md
       items:
+        - name: Genel Bakış
+          displayName: XML editor
+          href: xml-editor.md
         - name: XML belgesini doğrulama
           href: xml-document-validation.md
         - name: XML düzenleyicisi IntelliSense özellikleri
           href: xml-editor-intellisense-features.md
         - name: XML kod parçacıkları
-          href: xml-snippets.md
           items:
+            - name: Genel Bakış
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: XML kod parçacıklarını kullanma
               href: how-to-use-xml-snippets.md
             - name: XML şemasından XML kod parçacığı oluşturma
@@ -44,11 +49,14 @@
         - name: XML Şemaları iletişim kutusu
           href: xml-schemas-dialog-box.md
     - name: XML Şema Tasarımcısı
-      href: xml-schema-designer.md
       items:
+        - name: Genel Bakış
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: XML Şema Gezgini
-          href: xml-schema-explorer.md
           items:
+            - name: XML Şema Gezgini
+              href: xml-schema-explorer.md
             - name: Şema kümesini arama
               href: searching-the-schema-set.md
             - name: 'Sıralama, filtreleme ve gruplandırma'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: XML değişmez değerlerini tümleştirme
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: XML şema tasarımcısı çalışma alanı
-          href: xml-schema-designer-workspace.md
+        - name: Çalışma alanı
           items:
+            - name: Görünümlere genel bakış
+              href: xml-schema-designer-workspace.md
             - name: Başlangıç Görünümü
               href: start-view.md
             - name: İçerik Modeli Görünümü
@@ -91,17 +100,19 @@
             - name: Diyagramları yazdırma
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: Örnek XSD dosyaları
-              href: sample-xsd-files.md
               items:
                 - name: Basit şema
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Satınalma Siparişi şeması
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: İlişkiler
                   href: sample-xsd-file-relationships.md
     - name: XSLT hata ayıklama
-      href: debugging-xslt.md
       items:
+        - name: Genel Bakış
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 'İzlenecek yol: XSLT stil sayfasında hata ayıklama'
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: XPath ifadesini değerlendirme

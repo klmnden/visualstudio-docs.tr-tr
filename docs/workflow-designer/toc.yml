@@ -1,8 +1,8 @@
 - name: İş Akışı Tasarımcısı ile uygulamaları geliştirme
   items:
-    - name: İş Akışı Tasarımcısı ile uygulamaları geliştirme
+    - name: Genel bakış ve önkoşullar
       href: developing-applications-with-the-workflow-designer.md
-    - name: İş Akışı projesi Oluşturma
+    - name: İş akışı projeleri
       items:
         - name: İş Akışı projesi Oluşturma
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Etkinlik tasarımcıları
       items:
-        - name: Etkinlik tasarımcıları
-          href: using-the-activity-designers.md
         - name: Akış Etkinliği Tasarımcılarını denetleme
           items:
-            - name: Akış Etkinliği Tasarımcılarını denetleme
+            - name: Genel bakış ve başvuru
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: DoWhile Etkinlik Tasarımcısı
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Flowchart Etkinlik Tasarımcıları
           items:
-            - name: Flowchart Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: Flowchart Etkinlik Tasarımcısı
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: Durum Makinesi Etkinlik Tasarımcıları
           items:
-            - name: Durum Makinesi Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: StateMachine Etkinlik Tasarımcısı
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Mesajlaşma Etkinlik Tasarımcıları
           items:
-            - name: Mesajlaşma Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: CorrelationScope Etkinlik Tasarımcısı
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Çalışma Zamanı Etkinlik Tasarımcıları
           items:
-            - name: Çalışma Zamanı Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: Persist Etkinlik Tasarımcısı
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: Temel Öğeler Etkinlik Tasarımcıları
           items:
-            - name: Temel Öğeler Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: Assign Etkinlik Tasarımcısı
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: İşlem Etkinlik Tasarımcıları
           items:
-            - name: İşlem Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: CancellationScope Etkinlik Tasarımcısı
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Koleksiyon Etkinlik Tasarımcıları
           items:
-            - name: Koleksiyon Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: AddToCollection<T> Etkinlik Tasarımcısı
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Hata İşleme Etkinlik Tasarımcıları
           items:
-            - name: Hata İşleme Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: Rethrow Etkinlik Tasarımcısı
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Geçiş Etkinlik Tasarımcıları
           items:
-            - name: Geçiş Etkinlik Tasarımcıları
+            - name: Genel bakış ve başvuru
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: Interop Etkinlik Tasarımcısı
               href: interop-activity-designer.md
-    - name: İş akışları hata ayıklama
+    - name: Hata ayıklama
       items:
         - name: İş akışları hata ayıklama
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Hata ayıklama desteklenmeyen senaryolar
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: UI başvurusu
+    - name: UI Başvurusu
       items:
-        - name: UI başvurusu
-          href: workflow-designer-ui-help.md
         - name: .NET Türüne Gözat ve Seç İletişim Kutusu
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: CorrelatesOn Tanımı İletişim Kutusu

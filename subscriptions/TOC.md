@@ -12,10 +12,11 @@
 ### [Yazılımı İndirme](subscriber-downloads.md)
 #### [Kullanılabilir Yazılım İndirmelerinin Listesi](software-download-list.md)
 ### [Ürün Anahtarlarını Alma ve Yönetme](product-keys.md)
+### [GitHub Enterprise ile Visual Studio](access-github.md)
+### [Abone Avantajları](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Visual Dev Essentials’a Katılma](join-dev-essentials.md)
 #### [Visual Studio Dev Essentials’tan Çıkma](leave-vsde.md)
-### [Abone Avantajları](subscriber-benefits.md)
 ## Abone Avantajlarını Kullanma
 ### Araçlar
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [En Fazla Kullanım](maximum-usage.md)
 #### [Süresi Dolan Abonelikler](handle-expired-license.md)
 #### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
+### [GitHub Enterprise ile Visual Studio’yu Yönetme](assign-github.md)
 ## Visual Studio Abonelikleri Alma
 ### [Abonelik Seçeneklerini Karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
 ### Bulut Abonelikleri Satın Alma

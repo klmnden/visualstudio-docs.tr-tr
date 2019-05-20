@@ -20,14 +20,15 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework araçları
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Veri kümesi araçları
-      href: dataset-tools-in-visual-studio.md
+    - name: Veri Kümeleri
       items:
+        - name: Veri Kümesi araçları
+          href: dataset-tools-in-visual-studio.md
         - name: Yazılan ve yazılmayan veri kümelerinin karşılaştırması
           href: typed-vs-untyped-datasets.md
         - name: TableAdapter’lara genel bakış
           href: fill-datasets-by-using-tableadapters.md
-        - name: N katmanlı uygulamalarda veri kümeleriyle çalışma
+        - name: N katmanlı uygulamalarda Veri Kümeleriyle çalışma
           href: work-with-datasets-in-n-tier-applications.md
     - name: Veritabanı projeleri ve veri katmanı uygulamaları (DAC)
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
@@ -37,18 +38,21 @@
   items:
     - name: Veritabanı Oluşturma
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Bağlantı ekleme
-      href: add-new-connections.md
+    - name: Bağlantılar
       items:
+        - name: Bağlantı ekleme
+          href: add-new-connections.md
         - name: Bağlantı dizelerini kaydetme ve düzenleme
           href: how-to-save-and-edit-connection-strings.md
         - name: Bir Access veritabanındaki verilere bağlanma
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: .NET veri kaynakları ekleme
       href: add-new-data-sources.md
-    - name: LINQ to SQL Araçlarını kullanma
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: LINQ to SQL araçları
       items:
+        - name: Genel Bakış
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: Bir DataContext metodunun dönüş türünü değiştirme
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: Saklı yordamlarla eşlenen DataContext metotları oluşturma
@@ -69,18 +73,19 @@
           href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
         - name: Çoğullaştırmayı açıp kapatma
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
-    - name: Veri kümesi araçlarını kullanma
+    - name: Veri Kümesi araçlarını kullanma
       items:
-        - name: Visual Studio’da veri kümeleri oluşturma ve yapılandırma
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: Veri Kümeleri oluşturma
           items:
-            - name: Veri kümeleri arasında ilişki oluşturma
+            - name: Veri Kümeleri oluşturma ve yapılandırma
+              href: create-and-configure-datasets-in-visual-studio.md
+            - name: Veri Kümeleri arasında ilişki oluşturma
               href: relationships-in-datasets.md
             - name: Veri Kümesi Tasarımcısı kullanarak Veri Kümesi oluşturma
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
             - name: Veri Kümesi Tasarımcısı kullanarak Veri Tablosu oluşturma
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapters
+        - name: TableAdapters’ları yapılandırma
           items:
             - name: TableAdapter’lar oluşturma ve yapılandırma
               href: create-and-configure-tableadapters.md
@@ -88,19 +93,21 @@
               href: create-parameterized-tableadapter-queries.md
             - name: Bir TableAdapter ile veritabanına doğrudan erişme
               href: directly-access-the-database-with-a-tableadapter.md
-            - name: Bir veri kümesini doldururken kısıtlamaları kapatma
+            - name: Bir Veri Kümesini doldururken kısıtlamaları kapatma
               href: turn-off-constraints-while-filling-a-dataset.md
             - name: Bir TableAdapter’ın işlevselliğini genişletme
               href: extend-the-functionality-of-a-tableadapter.md
-        - name: Bir veri kümesinin içine XML verileri okuma
+        - name: Bir Veri Kümesinin içine XML verileri okuma
           href: read-xml-data-into-a-dataset.md
-        - name: Veri kümelerindeki verileri düzenleme
+        - name: Veri Kümelerindeki verileri düzenleme
           href: edit-data-in-datasets.md
-        - name: Veri kümelerindeki verileri doğrulama
+        - name: Veri Kümelerindeki verileri doğrulama
           href: validate-data-in-datasets.md
         - name: Verileri yeniden veritabanına kaydetme
-          href: save-data-back-to-the-database.md
           items:
+            - name: Genel Bakış
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: Veritabanına yeni kayıtlar ekleme
               href: insert-new-records-into-a-database.md
             - name: TableAdapter kullanarak verileri güncelleştirme
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: Bir eşzamanlılık özel durumunu işleme
               href: handle-a-concurrency-exception.md
-            - name: Bir işlemi kullanarak veri kaydetme
-              href: save-data-by-using-a-transaction.md
+            - name: İşlemler
               items:
+                - name: Bir işlemi kullanarak veri kaydetme
+                  href: save-data-by-using-a-transaction.md
                 - name: 'İzlenecek yol: İşleme veri kaydetme'
                   href: save-data-in-a-transaction.md
             - name: Bir veritabanına (birden çok tablo) veri kaydetme
@@ -122,29 +130,31 @@
               href: save-data-with-the-tableadapter-dbdirect-methods.md
             - name: Bir veri kümesini XML olarak kaydetme
               href: save-a-dataset-as-xml.md
-        - name: Veri kümelerini sorgulama
+        - name: Veri Kümelerini Sorgulama
           href: query-datasets.md
         - name: N katmanlı uygulamalar
           items:
-            - name: N Katmanlı bir veri kümesine doğrulama ekleme
+            - name: N Katmanlı bir Veri Kümesine doğrulama ekleme
               href: add-validation-to-an-n-tier-dataset.md
-            - name: N katmanlı uygulamalarda veri kümelerine kod ekleme
+            - name: N katmanlı uygulamalarda Veri Kümelerine kod ekleme
               href: add-code-to-datasets-in-n-tier-applications.md
             - name: N katmanlı uygulamalarda TableAdapter’lara kod ekleme
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: Veri kümeleri ile TableAdapter’ları farklı projelere ayırma
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Veri kaynaklarına denetim bağlama
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: Denetimler
       items:
+        - name: Veri kaynaklarına denetim bağlama
+          href: bind-controls-to-data-in-visual-studio.md
         - name: Veri Kaynakları penceresinden sürüklendiğinde denetimin oluşturulmasını ayarlama
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: Veri kaynakları penceresine özel denetimler ekleme
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: Verilere WPF denetimleri bağlama
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: WPF denetimleri
           items:
-            - name: Bir veri kümesine WPF denetimleri bağlama
+            - name: Verilere WPF denetimleri bağlama
+              href: bind-wpf-controls-to-data-in-visual-studio.md
+            - name: Bir Veri Kümesine WPF denetimleri bağlama
               href: bind-wpf-controls-to-a-dataset.md
             - name: Bir WCF veri hizmetine WPF denetimleri bağlama
               href: bind-wpf-controls-to-a-wcf-data-service.md
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: Bir veritabanından resimlere denetim bağlama
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Verilere Windows Forms denetimleri bağlama
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Windows Forms denetimleri
           items:
+            - name: Verilere Windows Forms denetimleri bağlama
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Bir Windows Forms uygulamasındaki verileri filtreleme ve sıralama
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: Verileri kaydetmeden önce verilere bağlı denetimler üzerinde işlem içi düzenlemeler yürütme
@@ -178,8 +189,10 @@
         - name: Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Visual Studio'da WCF’ye genel bakış
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: Kavramsal bir modelle çalışma
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: Bir hizmetteki verilere bağlanma
@@ -207,9 +220,9 @@
         - name: Veri sınıfı devralma
           href: data-class-inheritance-o-r-designer.md
         - name: O/R Tasarımcısı iletileri
-          href: o-r-designer-messages.md
           items:
             - name: Seçilen sınıf bir veya birden çok DataContext yöntemi için bir dönüş türü olarak kullanıldığından silinemiyor
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: Bağlantı dizesi şifresiz parola içeren kimlik bilgileri içeriyor ve tümleşik güvenliği kullanmıyor
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

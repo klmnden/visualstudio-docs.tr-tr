@@ -1,12 +1,15 @@
 - name: Kullanıcı arabirimleri tasarlama
-  href: designing-user-interfaces.md
   items:
-    - name: Visual Studio’da XAML tasarlama
-      href: designing-xaml-in-visual-studio.md
+    - name: Araç yönlendirme
+      href: designing-user-interfaces.md
+    - name: XAML
       items:
+        - name: Visual Studio’da XAML tasarlama
+          href: designing-xaml-in-visual-studio.md
         - name: XAML Tasarımcısı
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
+            - name: Genel Bakış
+              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Öğelerle çalışma
               href: working-with-elements-in-xaml-designer.md
             - name: Nesneleri düzen kapsayıcılarına yerleştirme
@@ -22,8 +25,9 @@
             - name: XAML hataları ve uyarıları
               href: xaml-errors-warnings.md
         - name: Visual Studio için Blend
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
+            - name: Genel Bakış
+              href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Denetimler ekleme ve bunların davranışlarını değiştirme
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
             - name: 'Resim, video ve ses klipleri ekleme'
@@ -37,8 +41,9 @@
             - name: Verileri görüntüleme
               href: display-data-in-blend.md
             - name: Klavye kısayolları ve değiştirici tuşlar
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
+                - name: Genel Bakış
+                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: Klavye kısayolları
                   href: keyboard-shortcuts-in-blend.md
                 - name: Çalışma yüzeyi değiştirici tuşları
@@ -50,23 +55,24 @@
             - name: Blend için erişilebilirlik ürünleri ve hizmetleri
               href: accessibility-products-and-services-blend.md
     - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
       items:
+        - name: Kullanmaya başlayın
+          href: getting-started-with-wpf.md
         - name: WPF’ye genel bakış
           href: introduction-to-wpf.md
-        - name: LINQ to XML ile WPF verilerini bağlama
-          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: Veri bağlama
           items:
+            - name: LINQ to XML ile WPF verilerini bağlama
+              href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: LINQ to XML dinamik özellikleri
-              href: linq-to-xml-dynamic-properties.md
               items:
+                - name: Genel Bakış
+                  href: linq-to-xml-dynamic-properties.md
                 - name: XAttribute sınıfı dinamik özellikleri
-                  href: xattribute-class-dynamic-properties.md
                   items:
                     - name: Değer (XAttribute dinamik özelliği)
                       href: value-xattribute-dynamic-property.md
                 - name: XElement sınıfı dinamik özellikleri
-                  href: xelement-class-dynamic-properties.md
                   items:
                     - name: Öznitelik (XElement dinamik özelliği)
                       href: attribute-xelement-dynamic-property.md
@@ -80,40 +86,43 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (XElement dinamik özelliği)
                       href: xml-xelement-dynamic-property.md
-                - name: Örnek
-                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Örnekler
                   items:
+                    - name: LINQ to XML Kullanarak WPF verilerini bağlama
+                      href: wpf-data-binding-using-linq-to-xml-example.md
                     - name: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
                     - name: 'İzlenecek yol: LINQ to XML verilerini bağlama'
                       href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: L2DBForm.xaml kaynak kodu
-                          href: l2dbform-xaml-source-code.md
-                        - name: L2DBForm.xaml.cs kaynak kodu
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Oyunlar ve uygulamalar için 3B varlıklarla çalışma
-      href: working-with-3-d-assets-for-games-and-apps.md
+                    - name: L2DBForm.xaml kaynak kodu
+                      href: l2dbform-xaml-source-code.md
+                    - name: L2DBForm.xaml.cs kaynak kodu
+                      href: l2dbform-xaml-cs-source-code.md
+    - name: 3B varlıklar
       items:
-        - name: Dokularla ve görüntülerle çalışma
-          href: working-with-textures-and-images.md
+        - name: Oyunlar ve uygulamalar için 3B varlıklarla çalışma
+          href: working-with-3-d-assets-for-games-and-apps.md
+        - name: 'Nasıl yapılır: Oyununuzda veya uygulamanızda 3B varlıklar kullanma'
+          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Dokular ve görüntüler
           items:
+            - name: Dokularla ve görüntülerle çalışma
+              href: working-with-textures-and-images.md
             - name: Görüntü düzenleyicisi
               href: image-editor.md
             - name: Görüntü düzenleyicisi örnekleri
-              href: image-editor-examples.md
               items:
                 - name: Temel doku oluşturma
                   href: how-to-create-a-basic-texture.md
                 - name: MIP düzeyleri oluşturma ve değiştirme
                   href: how-to-create-and-modify-mip-levels.md
-        - name: 3B modeller ile çalışma
-          href: working-with-3-d-models.md
+        - name: 3B Modeller
           items:
+            - name: 3B modeller ile çalışma
+              href: working-with-3-d-models.md
             - name: Model düzenleyicisi
               href: model-editor.md
             - name: Model düzenleyicisi örnekleri
-              href: model-editor-examples.md
               items:
                 - name: Temel 3B model oluşturma
                   href: how-to-create-a-basic-3-d-model.md
@@ -123,14 +132,16 @@
                   href: how-to-model-3-d-terrain.md
                 - name: 3B modele gölgelendirici uygulama
                   href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Gölgelendiricilerle çalışma
-          href: working-with-shaders.md
+        - name: Gölgelendiriciler
           items:
+            - name: Gölgelendiricilerle çalışma
+              href: working-with-shaders.md
             - name: Gölgelendirici tasarımcısı
               href: shader-designer.md
             - name: Gölgelendirici tasarımcısı düğümleri
-              href: shader-designer-nodes.md
               items:
+                - name: Genel Bakış
+                  href: shader-designer-nodes.md
                 - name: Sabit düğümler
                   href: constant-nodes.md
                 - name: Parametre düğümleri
@@ -144,7 +155,6 @@
                 - name: Filtre düğümleri
                   href: filter-nodes.md
             - name: Gölgelendirici tasarımcısı örnekleri
-              href: shader-designer-examples.md
               items:
                 - name: Temel renk gölgelendiricisi oluşturma
                   href: how-to-create-a-basic-color-shader.md
@@ -162,8 +172,7 @@
                   href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
                 - name: Gölgelendiriciyi dışarı aktarma
                   href: how-to-export-a-shader.md
-        - name: Oyununuzda veya uygulamanızda 3B varlıklar kullanma
-          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Dokuları dışarı aktarma
           items:
             - name: Mipmap'leri içeren dokuyu dışarı aktarma
               href: how-to-export-a-texture-that-contains-mipmaps.md

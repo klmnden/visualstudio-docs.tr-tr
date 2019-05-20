@@ -12,9 +12,9 @@
     - name: Öğreticiler
       expanded: true
       items:
-        - name: 'Öğretici: Docker Compose ile çok kapsayıcılı uygulama'
+        - name: Docker Compose ile çok kapsayıcılı uygulama
           href: tutorial-multicontainer.md
-        - name: 'Öğretici: Visual Studio’da Kubernetes'
+        - name: Visual Studio’da Kubernetes
           href: tutorial-kubernetes-tools.md
     - name: Nasıl Yapılır?
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Azure App Service'e dağıtma
           href: deploy-app-service.md
+        - name: Kapsayıcıları görüntüleme ve tanılama
+          href: view-and-diagnose-containers.md
         - name: Kapsayıcı Araçları’nı yapılandırma
           href: container-tools-configure.md
     - name: Sorun giderme
