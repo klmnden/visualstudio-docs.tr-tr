@@ -6,16 +6,16 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 335871a2a1d43230a7e9017711d37becdaef6f54
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ccdedcb82b06ec2723555f8dedcf3b628e392137
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615479"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976132"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tur Mac için Visual Studio 2019
 
-Mac için Visual Studio, bir .NET _tümleşik geliştirme ortamı_ düzenlemek için kullanılabilecek Mac üzerinde hata ayıklama ve kod derleme ve ardından bir uygulama yayımlayın. Standart Düzenleyici ve hata ayıklayıcı, gibi beklenen özelliklerine ek olarak Mac için Visual Studio derleyicileri, kod tamamlama araçları, grafik tasarımcıları ve ese yazılım geliştirme süreci için kaynak denetimi içerir.
+Mac için Visual Studio, bir .NET _tümleşik geliştirme ortamı_ düzenlemek için kullanılabilecek Mac üzerinde hata ayıklama ve kod derleme ve ardından bir uygulama yayımlayın. Standart Düzenleyici ve hata ayıklayıcı, gibi beklenen özelliklerine ek olarak Mac için Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve kaynak denetimi içerir.
 
 Mac için Visual Studio destekleyen birçok Windows karşılığı ile aynı dosya türleri gibi `.csproj`, `.fsproj`, veya `.sln` dosyaları ve sizin için en uygun IDE'yi kullanabileceğiniz anlamına gelir, EditorConfig gibi özellikleri destekler.
 Windows üzerinde Visual Studio önceden kullanılmış herkes için tanıdık bir deneyim, oluşturma, açma ve uygulama geliştirme olacaktır. Ayrıca, Mac için Visual Studio, çok güçlü bir IDE Windows çözümlemesiyle olun güçlü araçları kullanır. Roslyn derleyici platformu, yeniden düzenleme ve IntelliSense için kullanılır. MSBuild proje sistemi ve yapı altyapısı kullanın ve kaynak düzenleyicisinin TextMate paketi gruplarını destekler. Aynı hata ayıklayıcı altyapıları için Xamarin ve .NET Core uygulamaları ve aynı tasarımcıları Xamarin.iOS ve Xamarin.Android için kullanır.

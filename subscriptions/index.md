@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Visual Studio'ya Hoş Geldiniz abonelikler
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579948"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976103"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
@@ -169,7 +169,7 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Visual Studio aboneliğinizle aylık Azure kredisi ve Azure Hizmetleri, indirimli geliştirme ve test fiyatları ve yalnızca abone g görüntüsüne özel erişim için ücretsiz erişim alabilirsiniz önceden yapılandırılmış sanal makineler ile alerisi. Bulut Hizmetleri aboneliğinize bağlı olarak, şunları içerebilir:</p>
+                        <p>Visual Studio aboneliğinizle erişim Azure Hizmetleri, indirimli geliştirme ve test fiyatları ve yalnızca abone görüntü galler özel erişim için aylık Azure kredisiyle alabilirsiniz. önceden yapılandırılmış sanal makineler ile y. Bulut Hizmetleri aboneliğinize bağlı olarak, şunları içerebilir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

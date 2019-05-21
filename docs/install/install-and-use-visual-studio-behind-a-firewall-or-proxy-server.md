@@ -1,7 +1,7 @@
 ---
 title: Bir güvenlik duvarı veya proxy sunucusunun yükleyip
-description: Etki alanı URL'lerini, bağlantı noktaları ve protokollerle Güvenilenler listesine veya kuruluşunuz bir güvenlik duvarı veya proxy sunucusu kullanıyorsa açın gözden geçirin
-ms.date: 03/30/2019
+description: Etki alanı URL'lerini, bağlantı noktaları ve protokollere izin verilenler listesine ekleyin veya kuruluşunuz bir güvenlik duvarı veya proxy sunucusu kullanıyorsa açmak isteyebilirsiniz gözden geçirin
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974715"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976212"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
-Sizin veya kuruluşunuzun güvenlik önlemleri gibi bir güvenlik duvarı veya proxy sunucusu kullanıyorsa, ardından "güvenilir" ve bağlantı noktaları ve böylece Visual Stu yüklediğinizde ve en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebileceğiniz etki alanı URL'ler vardır dio ve Azure Hizmetleri.
+Sizin veya kuruluşunuzun güvenlik önlemleri gibi bir güvenlik duvarı veya proxy sunucusu kullanıyorsa, ardından vardır, bir "izin verilenler listesine" eklemek isteyebilirsiniz ve bağlantı noktaları ve protokoller, emin URL'ler, yüklediğinizde ve en iyi deneyimi sahip açmak isteyebilirsiniz etki alanı  Visual Studio ve Azure Hizmetleri.
 
-* **[Visual Studio yükleme](#install-visual-studio)**: Bu tabloların tüm bileşenleri ve istediğiniz iş yüklerini erişiminiz beyaz liste için etki alanı URL'lerini içerir.
+* **[Visual Studio yükleme](#install-visual-studio)**: Bu tablo, böylece tüm bileşenleri ve istediğiniz iş yükleri için erişimi bir izin verilenler listesine eklemek için etki alanı URL'lerini içerir.
 
-* **[Visual Studio ve Azure Hizmetleri](#use-visual-studio-and-azure-services)**: Bu tablo, beyaz liste ve bağlantı noktaları ve protokolleri, böylece tüm özellikleri ve istediğiniz hizmetler erişiminiz açmak için etki alanı URL'lerini içerir.
+* **[Visual Studio ve Azure Hizmetleri](#use-visual-studio-and-azure-services)**: Bu tablo, bir izin verilenler listesi ve bağlantı noktalarını ve protokolleri, böylece tüm özellikleri ve istediğiniz hizmetler için erişimi açın eklemek için etki alanı URL'lerini içerir.
 
 > [!NOTE]
 > Bu makalede, Windows üzerinde Visual Studio için yazılmıştır, ancak bazı bilgiler de geçerlidir [Mac için Visual Studio yükleme](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) bir güvenlik duvarı veya proxy sunucusu arkasında.
 
 ## <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
-### <a name="urls-to-whitelist"></a>Beyaz liste URL'leri
+### <a name="urls-to-add-to-an-allow-list"></a>Bir izin verilenler listesine eklemek için URL'leri
 
-Visual Studio yükleyicisi dosyaları, çeşitli etki alanları ve bunların indirme sunucularından indirir. çünkü, beyaz liste olarak kullanıcı arabiriminde veya dağıtım betiklerinizi güvenilen isteyebileceğiniz etki alanı URL'leri aşağıda verilmiştir.
+Visual Studio yükleyicisi dosyaları, çeşitli etki alanları ve bunların indirme sunucularından indirir. çünkü, bir izin verilenler listesi kullanıcı arabiriminde veya dağıtım betiklerinizi güvenilir olarak eklemek istediğiniz etki alanı URL'leri aşağıda verilmiştir.
 
 #### <a name="microsoft-domains"></a>Microsoft etki alanları
 
@@ -79,9 +79,9 @@ Visual Studio yükleyicisi dosyaları, çeşitli etki alanları ve bunların ind
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio ve Azure hizmetlerini kullanın
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL'leri beyaz liste ve bağlantı noktaları ve protokolleri açmak için
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>Bir izin verilenler listesi ve bağlantı noktaları ve protokolleri açmak için eklemek için URL'leri
 
-Bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ya da Azure hizmetlerini kullanırken ihtiyacınız olan her şey için erişimi olduğundan emin olmak için beyaz liste ve bağlantı noktalarını ve protokolleri açmak isteyebilirsiniz gereken URL'leri aşağıdadır.
+Bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ya da Azure hizmetlerini kullanırken ihtiyacınız olan her şey için erişimi, URL'ler şunlardır emin olmak için bir izin verilenler listesi ve bağlantı noktaları ve protokolleri açmak isteyebilirsiniz eklemeniz gerekir.
 
 | Hizmet veya senaryo | DNS uç noktası | Protokol | Bağlantı Noktası | Açıklama |
 | - | - | - | - | - |

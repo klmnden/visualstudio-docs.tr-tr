@@ -1,7 +1,7 @@
 ---
 title: Ağ ya da proxy hatalarını giderme
 description: Yüklediğinizde veya Visual Studio'yu bir güvenlik duvarı veya proxy sunucusu arkasında kullanın karşılaşabileceğiniz ağ veya Ara sunucu ile ilgili hatalar için çözüm bulun.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968138"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976225"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio yüklediğinizde veya kullandığınızda ağ ile ilgili hataları giderme
 
@@ -36,19 +36,19 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
 
 - Visual Studio'yu yeniden başlatın. Bir ara sunucu kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda istendiğinde kimlik bilgilerinizi girin.
 
-- Visual Studio'yu yeniden başlatmak sorunu çözmezse, proxy sunucusu için http kimlik bilgileri istenmez olabilir:&#47;&#47;go.microsoft.com yöneliktir ancak bunu yapar &#42;. visualStudio.com adresleri. Bu sunucular için Visual Studio'da tüm oturum açma senaryoları engelini kaldırmak için aşağıdaki URL'leri beyaz listeye ekleme göz önünde bulundurun:
+- Visual Studio'yu yeniden başlatmak sorunu çözmezse, proxy sunucusu için http kimlik bilgileri istenmez olabilir:&#47;&#47;go.microsoft.com yöneliktir ancak bunu yapar &#42;. visualStudio.microsoft.com adresleri. Bu sunucular için aşağıdaki URL'ler, Visual Studio'da tüm oturum açma senaryoları engelini kaldırmak için bir izin verilenler listesi eklemeyi düşünün:
 
     - &#42;. windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;. visualstudio.com
+    - &#42;. visualstudio.microsoft.com
 
     - &#42;. microsoft.com
 
     - &#42;. live.com
 
-- Aksi takdirde http kaldırabilirsiniz:&#47;&#47;go.microsoft.com, http için Ara sunucu kimlik doğrulaması iletişim kutusu gösterilir böylece beyaz liste adres:&#47;&#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden başlatıldı.
+- Aksi takdirde http kaldırabilirsiniz:&#47;&#47;go.microsoft.com adresi izin verilenler listesinden http için Ara sunucu kimlik doğrulaması iletişim kutusu gösterilir böylece:&#47;&#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden başlatıldı.
 
   -VEYA-
 
@@ -120,7 +120,7 @@ Aşağıdaki URL'ler için bağlantılar sağlar:
 
 - &#42;. azurewebsites.net (Azure bağlantıları için)
 
-- &#42;. visualstudio.com
+- &#42;. visualstudio.microsoft.com
 
 - CDN.vsassets.io (ana içerik teslim ağı veya CDN, içerik)
 

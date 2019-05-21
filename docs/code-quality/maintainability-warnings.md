@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823562"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976161"
 ---
-# <a name="maintainability-warnings"></a>Bakım Uyarıları
+# <a name="maintainability-warnings"></a>Bakım uyarıları
 
 Bakım uyarıları, kitaplık ve Uygulama Bakımı desteklemez.
 
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="in-this-section"></a>Bu bölümde
 
 | Kural | Açıklama |
 |-----------|-----------------------------------|
@@ -35,7 +35,8 @@ Bakım uyarıları, kitaplık ve Uygulama Bakımı desteklemez.
 | [CA1504: Yanıltıcı alan adlarını gözden geçirin](../code-quality/ca1504-review-misleading-field-names.md) | Örnek alan adı "kendisinin" ya da statik adını başlatılır (paylaşılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) alanı "m_" ile başlar. |
 | [CA1505: Kodlardan kaçının](../code-quality/ca1505-avoid-unmaintainable-code.md) | Bir tür veya yöntemin düşük bakım dizin değeri vardır. Düşük bakım dizini muhtemelen koruması zor olan ve yeniden tasarım için iyi bir aday olan tür veya yöntemi içerir. |
 | [CA1506: Aşırı sınıf bağlantısından kaçının](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Bu kural türü veya yöntemini içeren benzersiz türde başvuru sayısı belirlenerek eşlenmesiyle sınıfı ölçer. |
+| [CA1507: Nameof dize yerine kullanın](../code-quality/ca1507.md) | Bağımsız değişken olarak kullanılan bir dize sabit değeri olduğu bir `nameof` ifade kullanılabilir. |
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/code-metrics-values.md)
+- [Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md)

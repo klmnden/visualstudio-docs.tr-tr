@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816617"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975897"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
+
 Microsoft genişletilmiş tasarım yönerge kuralları kural kümesi bildirilir ve yaşatılabilirlik en üst düzeye çıkarmak için temel tasarım yönerge kuralları genişletir. Kuralları adlandırma üzerinde fazladan Vurgu yerleştirilir. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod yazmak için en yüksek standartları zorlamak istiyorsanız kümesi dahil olmak üzere düşünmelisiniz.
 
- Genişletilmiş tasarım yönerge kuralları tüm Microsoft temel tasarım yönerge kuralları içerir. Temel tasarım yönerge kuralları tüm Microsoft en az önerilen kurallar içerir. Daha fazla bilgi için [yönetilen kod için temel tasarım yönerge kuralları kural kümesi](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) ve [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Genişletilmiş tasarım yönerge kuralları tüm Microsoft temel tasarım yönerge kuralları içerir. Temel tasarım yönerge kuralları tüm Microsoft en az önerilen kurallar içerir. Daha fazla bilgi için [yönetilen kod için temel tasarım yönerge kuralları kural kümesi](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) ve [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
+Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
 
 |Kural|Açıklama|
 |----------|-----------------|

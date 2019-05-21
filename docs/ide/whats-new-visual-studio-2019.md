@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 04/23/2019
+ms.date: 05/22/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432025"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976244"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
-**İçin güncelleştirilmiş [16,0 sürüm](/visualstudio/releases/2019/release-notes/)**
+**İçin güncelleştirilmiş [16.1 sürüm](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Visual Studio 2019’u İndirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -63,7 +63,7 @@ Tuşlarına basarak yeniden düzenlemeler yalnızca çağırma **Ctrl +.** ve ge
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio Intellicode](/visualstudio/intellicode/) yapay zeka (AI) kullanarak yazılım geliştirme çalışmalarınızı geliştiren bir uzantısıdır. GitHub üzerinde 2.000 açık kaynak projeler arasında Intellicode trenler&mdash;her 100'den fazla Yıldıza sahip&mdash;önerilerini oluşturmak için.
+[Visual Studio Intellicode](/visualstudio/intellicode/) yapay zeka (AI) kullanarak, yazılım geliştirme çalışmalarını geliştirir. GitHub üzerinde 2.000 açık kaynak projeler arasında Intellicode trenler&mdash;her 100'den fazla Yıldıza sahip&mdash;önerilerini oluşturmak için.
 
  ![Intellicode Visual Studio 2019 içinde'bir animasyon](media/vs-2019/IntelliCode.gif)
 
@@ -74,23 +74,33 @@ Visual Studio Intellicode üretkenliğinizi artırmaya yardımcı olabilir, birk
 * Catch zor kod sorunlarını bulun
 * Açısından gerçekten önemli olan alanlara dikkat çekmek tarafından odağı kod incelemeleri
 
-Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Intellicode uzantısı için Visual Studio. Şimdi, C++ ve XAML desteği Visual Studio'da çok ekledik.
+Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Intellicode bir uzantısı olarak Visual Studio için. Şimdi, **16.1 yeni**, için destek ekledik C# ve XAML "içinde hazır". (Desteği C++ ve TypeScript/JavaScript olan hala Önizleme aşamasındadır ancak.)
 
 Ve kullanıyorsanız C#, kendi kod üzerinde özel bir model eğitip özelliği de ekledik.
 
-Intellicode hakkında daha fazla bilgi için bkz: [daha fazla kod, daha az Visual Studio Intellicode kaydırma](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blog gönderisi.
+Intellicode hakkında daha fazla bilgi için bkz. [Intellicode artı kısaca genel kullanıma sunulma Duyurusu](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/) ve [daha fazla kod, daha az Visual Studio Intellicode kaydırma](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blog gönderilerimize göz atın.
 
 ### <a name="code-cleanup"></a>Kodu temizleme
 
 Yeni bir belge sistem durumu göstergesi ile eşleştirilmiş bir yeni kod temizleme komutudur. Bu yeni komut belirlemek ve ardından uyarılar hem bir düğmeye tıklayarak önerileri gidermek için kullanabilirsiniz.
 
-Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından önerilen uygulama [geçerli ayarları](code-styles-and-quick-actions.md) ve [.editorconfig dosyalarını](create-portable-custom-editor-options.md).
+Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından önerilen uygulama [geçerli ayarları](code-styles-and-code-cleanup.md) ve [.editorconfig dosyalarını](create-portable-custom-editor-options.md).
 
    ![Visual Studio 2019 yeni kod temizleme denetimi görüntüsü](media/vs-2019/code-cleanup-profile.png)
 
 Ayrıca, düzelticiden koleksiyonları bir profil kaydedebilirsiniz. Örneğin, küçük bir kod sık uygulanan hedeflenen düzelticiden sahip, ve ardından başka bir kapsamlı bir kod incelemesi önce uygulanacak düzelticiden varsa, profilleri bu farklı görevler ele almak için yapılandırabilirsiniz.
 
    ![Visual Studio 2019 yeni kod temizleme denetimi görüntüsü](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>İzleyici başına kullanan (PMA) oluşturma
+
+Farklı görüntüleme ölçek faktörlerle yapılandırılan izleyiciler kullanın veya ana cihazınızın farklı ekran ölçek faktörleri bir makineye uzaktan bağlanın, Visual Studio bulanık görünüyor veya yanlış ölçekte işler fark edebilirsiniz.
+
+Visual Studio 2019'ın yayınlanmasıyla birlikte, uyumlu (PMA) uygulamasını İzle Visual Studio yapıyoruz. Artık, Visual Studio, kullandığınız görüntü ölçek Etkenler bağımsız olarak doğru şekilde işler.
+
+   ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/vs-2019/pma-dpi-scaling.png)
+
+Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimiyle](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
 
 ## <a name="collaborate"></a>İşbirliği
 
@@ -104,7 +114,7 @@ Visual Studio 2019 açtığınızda fark edeceksiniz, yeni bir başlangıç penc
 
    ![Yeni Visual Studio 2019 başlangıç penceresi görüntüsü](media/vs-2019/start-window-dark.png)
 
-Başlangıç penceresi koduna hızlı bir şekilde almak için çeşitli seçenekler sunar. Biz, kopyalama veya bir depo koddan önce teslim seçeneği koyduğunuz.  
+Başlangıç penceresi koduna hızlı bir şekilde almak için çeşitli seçenekler sunar. Biz, kopyalama veya bir depo koddan önce teslim seçeneği koyduğunuz.
 
    ![Visual Studio 2019 'Git-first' deneyiminin animasyon](media/vs-2019/git-first.gif)
 
@@ -128,7 +138,7 @@ Visual Studio 2019 ile kullanmak için indirebileceğiniz yeni bir uzantı kulla
 
    ![Yeni Visual Studio 2019 başlangıç penceresi görüntüsü](media/vs-2019/pr-experience.png)
 
-Hemen kullanmaya başlamak için Yükle [Visual Studio için çekme istekleri](https://aka.ms/pr4vs) Visual Studio Market'ten uzantı.
+Daha fazla bilgi için [kod incelemeleri Visual Studio çekme istekleri uzantısını kullanarak](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) blog gönderisi.
 
 ## <a name="debug"></a>Hata ayıklama
 
@@ -178,9 +188,9 @@ Daha fazla Visual Studio 2019 işe ne hakkında olduğunu öğrenmek istiyorsunu
 
 Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri bildirimi ciddiye olduğundan. Ne yapıyoruz çoğunu yürütür.
 
-* Visual Studio nasıl geliştirebileceğimizi ilgili öneride bulunmak istiyorsanız, bunu kullanarak yapabilirsiniz [bir öneride](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features) aracı.
+* Visual Studio nasıl geliştirebileceğimizi ilgili öneride bulunmak istiyorsanız, bunu kullanarak yapabilirsiniz [özellik önerin](suggest-a-feature.md) aracı.
 
-* Bir yanıt vermemesine, kilitlenme veya diğer performans sorunu yaşarsanız, kolayca yineleme adımları ve destekleyici dosyaları bizimle kullanarak paylaşabilirsiniz [sorun bildir](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio) aracı.
+* Bir yanıt vermemesine, kilitlenme veya diğer performans sorunu yaşarsanız, kolayca yineleme adımları ve destekleyici dosyaları bizimle kullanarak paylaşabilirsiniz [sorun bildir](how-to-report-a-problem-with-visual-studio.md) aracı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -188,4 +198,5 @@ Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri b
 * [Visual Studio 2019 sürüm notları](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK'da yenilikler nelerdir?](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Mac için Visual Studio 2019 kullanıma sunuldu](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft yapı 2019 konferansı](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
