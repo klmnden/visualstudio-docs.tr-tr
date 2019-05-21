@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570307"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934530"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
 Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.
@@ -68,6 +68,7 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | Filealignment değerini | , Çıktı dosyasının bölümlerinin hizalanacağı yeri bayt cinsinden belirtir. Geçerli değerler: 512, 1024, 2048, 4096, 8192. Bu özellik değerine eşdeğer olan `/filealignment` derleyici anahtarı. |
 | FrameworkPathOverride | Konumunu belirtir *mscorlib.dll* ve *microsoft.visualbasic.dll*. Bu parametre değerine eşdeğer olan `/sdkpath` geçiş *vbc.exe* derleyici. |
 | GenerateDocumentation | (Yalnızca Visual Basic) Belgeleri yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole parametresi. Varsa `true`, yapı, belgelendirme bilgilerini üretir ve bunu koyar bir *.xml* yürütülebilir dosya ya da yapı görevinin ürettiği kitaplık adı ile birlikte dosya. |
+| GenerateSerializationAssemblies | XML serileştirme derlemeleri tarafından oluşturulması gerekip gerekmediğini belirten *SGen.exe*, hangi ayarlanabilir, otomatik veya kapalı. Bu özellik yalnızca .NET Framework'ü hedefleyen derlemeler için kullanılır. .NET Standard veya .NET Core derlemeler için XML serileştirme derlemeleri oluşturmak için başvuru *Microsoft.XmlSerializer.Generator* NuGet paketi. |
 | IntermediateOutputPath | Ten türetildiği haliyle tam Ara çıktı yolu `BaseIntermediateOutputPath`, hiçbir yol belirtilmezse. Örneğin, *\obj\debug\\*. |
 | AnahtarKapsayıcıAdı | Tanımlayıcı ad anahtar kapsayıcısı adı. |
 | KeyOriginatorFile | Tanımlayıcı ad anahtar dosyası adı. |
@@ -91,8 +92,8 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | ProduceReferenceAssembly | Bir Boole değeri ayarlandığında `true` üretimini etkinleştirir [başvuru derlemeleri](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) geçerli derleme için. `Deterministic` olmalıdır `true` bu özelliği kullanırken. Bu özellik için karşılık gelen `/refout` geçiş *vbc.exe* ve *csc.exe* derleyicileri. |
 | ProduceOnlyReferenceAssembly | Derlenmiş kodu yerine yalnızca bir başvuru bütünleştirilmiş kodu yayma derleyiciye bir Boole değeri. İle birlikte kullanılamaz `ProduceReferenceAssembly`.  Bu özellik için karşılık gelen `/refonly` geçiş *vbc.exe* ve *csc.exe* derleyicileri. |
 | RemoveIntegerChecks | Tamsayı taşması hata denetimlerini devre dışı bırakılıp bırakılmayacağını belirten bir Boole değeri. Varsayılan değer `false` şeklindedir. Bu özellik değerine eşdeğer olan `/removeintchecks` geçiş *vbc.exe* derleyici. |
-| SGenUseProxyTypes | Proxy türleri tarafından oluşturulması gerekip gerekmediğini gösteren bir Boole değeri *SGen.exe*.<br /><br /> SGen hedefi, bu özelliği UseProxyTypes bayrağını ayarlamak için kullanır. Bu özellik varsayılan olarak true'dur ve bunu değiştirmek için kullanıcı Arabirimi yoktur. Web hizmeti olmayan türleri serileştirme derlemesi oluşturmak için bu özelliği proje dosyasına ekleyin ve içeri aktarmadan önce false değerine ayarlıyken *Microsoft.Common.Targets* veya *c#/vb.targets'ı*. |
-| SGenToolPath | Elde edilecek yeri belirten bir isteğe bağlı bir araç yolu *SGen.exe* zaman geçerli sürümü *SGen.exe* geçersiz kılınır. |
+| SGenUseProxyTypes | Proxy türleri tarafından oluşturulması gerekip gerekmediğini gösteren bir Boole değeri *SGen.exe*. Bu yalnızca geçerlidir *GenerateSerializationAssemblies* açık ve .NET Framework için yalnızca ayarlanır.<br /><br /> SGen hedefi, bu özelliği UseProxyTypes bayrağını ayarlamak için kullanır. Bu özellik varsayılan olarak true'dur ve bunu değiştirmek için kullanıcı Arabirimi yoktur. Web hizmeti olmayan türleri serileştirme derlemesi oluşturmak için bu özelliği proje dosyasına ekleyin ve içeri aktarmadan önce false değerine ayarlıyken *Microsoft.Common.Targets* veya *c#/vb.targets'ı*. |
+| SGenToolPath | Elde edilecek yeri belirten bir isteğe bağlı bir araç yolu *SGen.exe* zaman geçerli sürümü *SGen.exe* geçersiz kılınır. Bu özellik yalnızca .NET Framework için kullanılır.|
 | StartupObject | Sınıf veya Main yöntemini veya Sub Main yordamını içeren Modülü belirtir. Bu özellik değerine eşdeğer olan `/main` derleyici anahtarı. |
 | ProcessorArchitecture | Derleme başvuruları çözümlendiğinde kullanılan işlemci mimarisi. Geçerli değerler: "msil," "x86," "amd64" veya "ia64." |
 | RootNamespace | Katıştırılmış bir kaynağı adlandırdığınızda kullanılacak kök ad alanı. Bu ad alanı, katıştırılmış kaynak bildirimi adının parçasıdır. |

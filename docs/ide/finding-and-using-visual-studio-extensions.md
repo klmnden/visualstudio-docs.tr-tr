@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962073"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934358"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio uzantıları bulma ve kullanma
 
@@ -61,7 +61,7 @@ Ayrıca indirin ve MSI tabanlı uzantılar yükleyin ancak **uzantıları yönet
 
 ::: moniker range="vs-2017"
 
-İçinde **Uzantılar ve güncelleştirmeler**, yüklemek istediğiniz uzantıyı bulun. (Adı veya uzantı adının bir kısmını biliyorsanız, içinde arama yapabilirsiniz **arama** penceresi.) **İndir**'e tıklayın. Bu uzantı yüklenmek üzere zamanlandı. Visual Studio'nun tüm örneklerini kapatıldıktan sonra uzantınızı yüklenir.
+Gelen **Araçları** > **Uzantılar ve güncelleştirmeler**, yüklemek istediğiniz uzantıyı bulun. (Adı veya uzantı adının bir kısmını biliyorsanız, içinde arama yapabilirsiniz **arama** penceresi.) **İndir**'e tıklayın. Bu uzantı yüklenmek üzere zamanlandı. Visual Studio'nun tüm örneklerini kapatıldıktan sonra uzantınızı yüklenir.
 
 Bağımlılıkları olan bir uzantıyı yüklemeye çalışırsanız, yükleyici bunların yüklenmiş olup olmadığını denetler. Bunlar yüklü değilse **Uzantılar ve güncelleştirmeler** iletişim kutusunda uzantıyı yükleyebilmeniz için önce yüklenmesi gereken bağımlılıklar listelenmiştir.
 
@@ -69,7 +69,7 @@ Bağımlılıkları olan bir uzantıyı yüklemeye çalışırsanız, yükleyici
 
 ::: moniker range=">=vs-2019"
 
-İçinde **uzantıları yönetme**, yüklemek istediğiniz uzantıyı bulun. (Adı veya uzantı adının bir kısmını biliyorsanız, içinde arama yapabilirsiniz **arama** penceresi.) **İndir**'e tıklayın. Bu uzantı yüklenmek üzere zamanlandı. Visual Studio'nun tüm örneklerini kapatıldıktan sonra uzantınızı yüklenir.
+Gelen **uzantıları** > **uzantıları yönetme**, yüklemek istediğiniz uzantıyı bulun. (Adı veya uzantı adının bir kısmını biliyorsanız, içinde arama yapabilirsiniz **arama** penceresi.) **İndir**'e tıklayın. Bu uzantı yüklenmek üzere zamanlandı. Visual Studio'nun tüm örneklerini kapatıldıktan sonra uzantınızı yüklenir.
 
 Bağımlılıkları olan bir uzantıyı yüklemeye çalışırsanız, yükleyici bunların yüklenmiş olup olmadığını denetler. Bunlar yüklü değilse **uzantıları yönetme** iletişim kutusunda uzantıyı yükleyebilmeniz için önce yüklenmesi gereken bağımlılıklar listelenmiştir.
 
@@ -91,7 +91,7 @@ Otomatik Güncelleştirmeler devre dışı bırakmak istiyorsanız, tüm uzantı
 
 ::: moniker range="vs-2017"
 
-- Tüm uzantılar için Otomatik Güncelleştirmeler devre dışı bırakmayı tercih **Uzantılar ve güncelleştirmeler ayarlarınızı değiştirin** bağlantısını **Uzantılar ve güncelleştirmeler** iletişim. İçinde **seçenekleri** iletişim kutusunun işaretini kaldırın **uzantıları otomatik olarak güncelleştir**.
+- Tüm uzantılar için Otomatik Güncelleştirmeler devre dışı bırakmayı tercih **Uzantılar ve güncelleştirmeler ayarlarınızı değiştirin** bağlantısını **Araçları** > **Uzantılar ve güncelleştirmeler**iletişim kutusu. İçinde **seçenekleri** iletişim kutusunun işaretini kaldırın **uzantıları otomatik olarak güncelleştir**.
 
 - Belirli bir uzantı için Otomatik Güncelleştirmeler devre dışı bırakmak için işareti kaldırın **bu uzantıyı otomatik olarak güncelleştir** seçeneği uzantının ayrıntıları bölmesinde sağ alt tarafında **Uzantılar ve güncelleştirmeler** iletişim.
 
@@ -99,7 +99,7 @@ Otomatik Güncelleştirmeler devre dışı bırakmak istiyorsanız, tüm uzantı
 
 ::: moniker range=">=vs-2019"
 
-- Tüm uzantılar için Otomatik Güncelleştirmeler devre dışı bırakmayı tercih **uzantıları için ayarlarınızı değiştirmeniz** bağlantısını **uzantıları yönetme** iletişim. İçinde **seçenekleri** iletişim kutusunun işaretini kaldırın **uzantıları otomatik olarak güncelleştir**.
+- Tüm uzantılar için Otomatik Güncelleştirmeler devre dışı bırakmayı tercih **uzantıları için ayarlarınızı değiştirmeniz** bağlantısını **uzantıları** > **uzantıları yönetme** iletişim kutusu. İçinde **seçenekleri** iletişim kutusunun işaretini kaldırın **uzantıları otomatik olarak güncelleştir**.
 
 - Belirli bir uzantı için Otomatik Güncelleştirmeler devre dışı bırakmak için işareti kaldırın **bu uzantıyı otomatik olarak güncelleştir** seçeneği uzantının ayrıntıları bölmesinde sağ alt tarafında **uzantıları yönetme** iletişim.
 
@@ -115,13 +115,13 @@ Bu bildirimleri gösterilirken, bildirim Yoksay veya aşağıdaki eylemlerden bi
 
 ::: moniker range="vs-2017"
 
-- Seçin **bu uzantıyı devre dışı**. Visual Studio, uzantıyı devre dışı bırakır ve devre dışı bırakma etkinleşmesi için sisteminizi yeniden başlatması gerek olup olmadığını bildirir. Uzantı yeniden etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler** istiyorsanız iletişim kutusu.
+- Seçin **bu uzantıyı devre dışı**. Visual Studio, uzantıyı devre dışı bırakır ve devre dışı bırakma etkinleşmesi için sisteminizi yeniden başlatması gerek olup olmadığını bildirir. Uzantı yeniden etkinleştirebilirsiniz **Araçları** > **Uzantılar ve güncelleştirmeler** istiyorsanız iletişim kutusu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Seçin **bu uzantıyı devre dışı**. Visual Studio, uzantıyı devre dışı bırakır ve devre dışı bırakma etkinleşmesi için sisteminizi yeniden başlatması gerek olup olmadığını bildirir. Uzantı yeniden etkinleştirebilirsiniz **uzantıları yönetme** istiyorsanız iletişim kutusu.
+- Seçin **bu uzantıyı devre dışı**. Visual Studio, uzantıyı devre dışı bırakır ve devre dışı bırakma etkinleşmesi için sisteminizi yeniden başlatması gerek olup olmadığını bildirir. Uzantı yeniden etkinleştirebilirsiniz **uzantıları** > **uzantıları yönetme** istiyorsanız iletişim kutusu.
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Bu bildirimleri gösterilirken, bildirim Yoksay veya aşağıdaki eylemlerden bi
 
 ::: moniker range="vs-2017"
 
-Kullanabileceğiniz **Uzantılar ve güncelleştirmeler** penceresi örneklerle ilgili şu görevleri gerçekleştirebilirsiniz:
+Kullanabileceğiniz **Araçları** > **Uzantılar ve güncelleştirmeler** iletişim kutusu örneklerle ilgili şu görevleri gerçekleştirebilirsiniz:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Kullanabileceğiniz **uzantıları yönetme** penceresi örneklerle ilgili şu görevleri gerçekleştirebilirsiniz:
+Kullanabileceğiniz **uzantıları** > **uzantıları yönetme** örneklerle ilgili şu görevleri gerçekleştirmek için iletişim kutusunda:
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Kullanabileceğiniz **uzantıları yönetme** penceresi örneklerle ilgili şu g
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Uzantılar ve güncelleştirmeler iletişim kutusunu kullanmadan yükleme
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Uzantılar ve güncelleştirmeler iletişim kutusunu kullanmadan yükleme
 
-İçinde paketlenmiş Uzantılar *.vsix* dosyaları kullanılabilir Visual Studio Market dışındaki konumlarda. **Uzantılar ve güncelleştirmeler** iletişim kutusunda, bu dosyaları silemese ancak yükleyebileceğiniz bir *.vsix* dosyasına çift veya bir dosya seçip tuşuna basarak dosya **Enter**anahtarı. Bundan sonra yalnızca yönergeleri izleyin. Uzantı yüklendiğinde, kullanabileceğiniz **Uzantılar ve güncelleştirmeler** etkinleştirmek, devre dışı bırakmak veya kaldırmak için iletişim kutusu.
+İçinde paketlenmiş Uzantılar *.vsix* dosyaları kullanılabilir Visual Studio Market dışındaki konumlarda. **Araçları** > **Uzantılar ve güncelleştirmeler** iletişim kutusunda, bu dosyaları silemese ancak yükleyebileceğiniz bir *.vsix* dosyasına çift veya seçerek dosya Dosya ve tuşlarına basarak **Enter** anahtarı. Bundan sonra yalnızca yönergeleri izleyin. Uzantı yüklendiğinde, kullanabileceğiniz **Uzantılar ve güncelleştirmeler** etkinleştirmek, devre dışı bırakmak veya kaldırmak için iletişim kutusu.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Uzantı türleri Uzantılar ve güncelleştirmeler iletişim kutusu tarafından desteklenmiyor
 
-Visual Studio Microsoft Installer (MSI) tarafından yüklenen Uzantıları desteği devam eder ancak ile **Uzantılar ve güncelleştirmeler** yapmadan iletişim kutusu.
+Visual Studio Microsoft Installer (MSI) tarafından yüklenen Uzantıları desteği devam eder ancak ile **Araçları** > **Uzantılar ve güncelleştirmeler** yapmadan iletişim kutusu.
 
 > [!TIP]
 > MSI tabanlı bir uzantı içeriyorsa bir *extension.vsixmanifest* dosya, uzantısı görünür **Uzantılar ve güncelleştirmeler** iletişim kutusu.
@@ -186,13 +186,13 @@ Visual Studio Microsoft Installer (MSI) tarafından yüklenen Uzantıları deste
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Uzantıları Yönet iletişim kutusunu kullanmadan yükleme
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Uzantıları Yönet iletişim kutusunu kullanmadan yükleme
 
-İçinde paketlenmiş Uzantılar *.vsix* dosyaları kullanılabilir Visual Studio Market dışındaki konumlarda. **Uzantıları yönetme** iletişim kutusunda, bu dosyaları silemese ancak yükleyebileceğiniz bir *.vsix* dosyasına çift veya bir dosya seçip tuşuna basarak dosya **Enter** anahtarı. Bundan sonra yalnızca yönergeleri izleyin. Uzantı yüklendiğinde, kullanabileceğiniz **uzantıları yönetme** etkinleştirmek, devre dışı bırakmak veya kaldırmak için iletişim kutusu.
+İçinde paketlenmiş Uzantılar *.vsix* dosyaları kullanılabilir Visual Studio Market dışındaki konumlarda. **Uzantıları** > **uzantıları yönetme** iletişim kutusunda, bu dosyaları silemese ancak yükleyebileceğiniz bir *.vsix* dosyasını çift tıklayarak dosyayı veya dosyayı seçip tuşuna basarak **Enter** anahtarı. Bundan sonra yalnızca yönergeleri izleyin. Uzantı yüklendiğinde, kullanabileceğiniz **uzantıları yönetme** etkinleştirmek, devre dışı bırakmak veya kaldırmak için iletişim kutusu.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Uzantıları Yönet iletişim kutusu tarafından desteklenmeyen uzantı türleri
 
-Visual Studio Microsoft Installer (MSI) tarafından yüklenen Uzantıları desteği devam eder ancak ile **uzantıları yönetme** yapmadan iletişim kutusu.
+Visual Studio Microsoft Installer (MSI) tarafından yüklenen Uzantıları desteği devam eder ancak ile **uzantıları** > **uzantıları yönetme** yapmadan iletişim kutusu.
 
 > [!TIP]
 > MSI tabanlı bir uzantı içeriyorsa bir *extension.vsixmanifest* dosya, uzantısı görünür **uzantıları yönetme** iletişim kutusu.

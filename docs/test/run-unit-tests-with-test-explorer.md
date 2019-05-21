@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946093"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934501"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -58,7 +58,7 @@ Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesi
 |![Yapıdan sonra çalıştırmak](../test/media/ute_runafterbuild_btn.png)|Her bir yerel oluşturmadan sonra birim testlerinizi çalıştırmak için tercih **Test** standart menüde seçip **oluşturmadan sonra Testleri Çalıştır** üzerinde **Test Gezgini** araç çubuğu.|
 
 > [!NOTE]
-> Her yapı Visual Studio Enterprise sürümünü gerektirir. sonra birim testleri çalıştırma.
+> Her yapı Visual Studio 2017 Enterprise veya Visual Studio 2019 gerektirir sonra birim testleri çalıştırma. Visual Studio 2019, Community ve Professional yanı sıra Kurumsal dahildir.
 
 ## <a name="view-test-results"></a>Test sonuçlarını görüntüle
 
@@ -200,7 +200,7 @@ Visual Studio kod kapsamı Aracı'nı kullanarak birim testleriniz tarafından g
 
 Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
 
-1. Seçin **testleri** Visual Studio menüsünde seçip **kod kapsamını analiz etme**.
+1. Seçin **Test** en üstteki menüde çubuk ve ardından **kod kapsamını analiz etme**.
 
 2. Alt menüden olarak aşağıdaki komutlardan birini seçin:
 

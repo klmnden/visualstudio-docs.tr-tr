@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: df0fa2278b3ec6ec8a9c70cb6155cc41e0e19309
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687612"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934592"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
-Seçili Visual Studio Enterprise abonelikleri olan aboneler, Office 365 Geliştirici aboneliği teklifi alırsınız.  Office 365 Geliştirici aboneliği, geliştirme, test etme ve Microsoft Office ve Microsoft SharePoint için eklentileri dağıtma olanak tanır.  Bu avantajı, bir kiracı için ve 25 kullanıcı en fazla izin verir.
+Seçili Visual Studio abonelikleri olan aboneler, Office 365 Geliştirici aboneliği teklifi alırsınız.  Office 365 Geliştirici aboneliği, geliştirme, test etme ve Microsoft Office ve Microsoft SharePoint için eklentileri dağıtma olanak tanır.  Bu avantajı, bir kiracı için ve 25 kullanıcı en fazla izin verir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 

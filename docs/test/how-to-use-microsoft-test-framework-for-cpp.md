@@ -1,18 +1,18 @@
 ---
 title: C++ için Microsoft Birim Testi Çerçevesini Kullanma
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461474"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934483"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -30,16 +30,16 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
    1. İçinde **Çözüm Gezgini**, test programı için proje düğümüne sağ tıklayın ve ardından seçin **özellikleri** > **yapılandırma özellikleri**  >  **VC ++ dizinleri**.
 
-   2. Aşağıdaki satırları aşağı oka tıklayın ve seçin  **\<Düzenle >** :
+   2. Aşağıdaki satırları aşağı oka tıklayın ve seçin  **\<Düzenle >**. Bu yolları ekleyin:
 
       | Dizin | Özellik |
       |-| - |
-      | **Ekleme kodu dizinleri** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Kitaplık dizinleri** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Ekleme kodu dizinleri** | **$(VCInstallDir) Auxiliary\VS\UnitTest\include** |
+      | **Kitaplık dizinleri** | **$(VCInstallDir) Auxiliary\VS\UnitTest\lib** |
 
 2. Bir C++ birim testi dosyası ekleyin:
 
-   - ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe** > **C++ birim testi**.
+   - ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe**  >  **C++ dosyası (.cpp)**.
 
 ## <a name="write-the-tests"></a>Testleri yazma
 
