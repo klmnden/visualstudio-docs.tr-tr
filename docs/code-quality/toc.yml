@@ -383,6 +383,8 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: 'CA1506: Aşırı sınıf bağlantısından kaçının'
               href: ca1506-avoid-excessive-class-coupling.md
+            - name: 'CA1507: Dize yerine nameof kullanma'
+              href: ca1507.md
         - name: Hareketlilik uyarıları
           items:
             - name: Hareketlilik uyarıları

@@ -16,10 +16,10 @@
   items:
     - name: Visual Studio'yu yükleme
       href: install/install-visual-studio.md
-    - name: Hesaplar
+    - name: Kişiselleştirme hesapları
       items:
         - name: Visual Studio’da oturum açma
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Birden çok kullanıcı hesabıyla çalışma
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Visual Studio’yu değiştirme
       href: install/modify-visual-studio.md
-    - name: Yardım Görüntüleyicisi’ni yükleme
-      href: help-viewer/installation.md
     - name: Visual Studio’yu onarın
       href: install/repair-visual-studio.md
     - name: Visual Studio'yu kaldırma
       href: install/uninstall-visual-studio.md
     - name: Visual Studio yönetici kılavuzu
       items:
-        - name: Yönetici kılavuzu
+        - name: Genel Bakış
           href: install/visual-studio-administrator-guide.md
         - name: Komut satırını kullanma
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Kapsayıcılar için Bilinen Sorunlar
           href: install/build-tools-container-issues.md
+    - name: Yardım Görüntüleyicisi’ni yükleme
+      href: help-viewer/installation.md
 - name: Hızlı Başlangıçlar
   items:
     - name: Visual Studio yönlendirmesi

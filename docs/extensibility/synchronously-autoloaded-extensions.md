@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799019"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037095"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Zaman uyumlu bir şekilde otomatik yüklenen uzantılar
 
@@ -29,7 +29,7 @@ Kullanıcılar şunları yapabilir:
 
 - Tıklayarak **bu iletiyi tekrar gösterme** bildirimi kapatmak için. Bu seçeneğin belirlenmesi, zaman uyumlu olarak autoloaded uzantılardan gelecekteki tüm bildirimleri engeller. Kullanıcılar, diğer Visual Studio özellikleri hakkında bildirim almaya devam edebilir.
 
-### <a name="performance-manager-dialog"></a>Performans Yöneticisi iletişim kutusu
+## <a name="performance-manager-dialog"></a>Performans Yöneticisi iletişim kutusu
 
 ![Performans Yöneticisi iletişim kutusu](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Görünür zaman uyumlu olarak herhangi bir paket içinde herhangi bir kullanıc
 * Kullanıcılar kendi uzantı satıcıları geçiş ilerleme durumu iletişim kurabilirsiniz.
 
 Uzantı yazarları geçirilmesine yönelik yönergeler bulabilir zaman uyumsuz sorsorgu paketlere [AsyncPackage geçiş](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Grup İlkesi kullanarak zaman uyumlu otomatik yükleme ayarlarını belirtin
+
+Visual Studio 2019 güncelleştirme 1, varsayılan olarak, Visual Studio yükleme blokları zaman uyumlu sorsorgu başlatılıyor. Grup İlkesi'ni etkinleştirdiğinizde, Visual Studio tek tek bilgisayarlarda zaman uyumlu sorsorgu izin verecek şekilde yapılandırabilirsiniz. Bunu yapmak için aşağıdaki anahtarı kayıt defteri tabanlı bir ilke ayarlayın:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Giriş = **izin**
+
+Değer (DWORD) =
+* **0** zaman uyumlu sorsorgu izin verilmiyor
+* **1** zaman uyumlu sorsorgu izin verilir
+
+Visual Studio 2019 güncelleştirme 1'deki eşzamanlı otomatik yükleme ayarları hakkında daha fazla bilgi için bkz. [eşzamanlı Sorsorgu davranış](https://aka.ms/AA52xzw) sayfası.

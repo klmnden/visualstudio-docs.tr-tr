@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399371"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037382"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -136,7 +136,7 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 
 - **Çalışma zamanı araçlarını uygulamada Göster**: Gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.
 
-- **Etkinleştirme XAML Düzenle ve devam et**:   Düzen ve XAML kodu özelliğiyle devam etmek sağlar.
+- **XAML sık erişimli yeniden etkinleştirme**: Uygulamanız çalışırken XAML sık erişimli yeniden yükle özelliği ile XAML kodu kullanmanıza olanak tanır. (Bu özellik daha önce "XAML Düzenle ve devam et" olarak adlandırılıyordu)
 
 **Hata ayıklama sırasında tanılama araçları etkinleştirme**: **Tanılama araçları** ayıklarken penceresi görüntülenir.
 

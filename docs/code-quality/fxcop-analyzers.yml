@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Statik (FxCop) Çözümleyicisi paket Kod Analizi arasındaki farkları öğrenin.</p>
+            html: <p>Statik (FxCop) Çözümleyicisi Kod Analizi arasındaki farkları öğrenin.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Farklı nedir?
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: FxCop çözümleyicilerini yükleme
+          - href: fxcop-rule-port-status.md
+            html: <p>FxCop Çözümleyicileri için unity'nin statik kod analizi FxCop kuralları listeler.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: Taşınmış ve unported kuralları
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: '<p>Komut satırından genellikle Kod Analizi çalıştırırsanız, komut satırından Çözümleyicileri kullanmayı öğrenin.</p>'
             image:

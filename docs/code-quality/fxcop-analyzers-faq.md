@@ -1,7 +1,7 @@
 ---
 title: FxCop Kod Analizi ve FxCop Çözümleyicileri
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613555"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037258"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop ve FxCop hakkında sık sorulan sorular çözümleyiciler
 
@@ -48,6 +48,10 @@ FxCop Çözümleyicileri yükledikten, ancak CA0507 uyarı almak devam **"" Kod 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Hangi kuralları FxCop Çözümleyicileri için unity'nin?
+
+Hangi statik kod analizi kuralları taşınmıştır için bilgi [FxCop Çözümleyicileri](install-fxcop-analyzers.md), bkz: [Fxcop kuralı bağlantı noktası durumu](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

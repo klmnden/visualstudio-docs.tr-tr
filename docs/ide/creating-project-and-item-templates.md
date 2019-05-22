@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793459"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037005"
 ---
 # <a name="project-and-item-templates"></a>Proje ve öğe şablonları
 
@@ -47,7 +47,7 @@ Tüm proje ve öğe şablonları, Visual Studio ile yüklenir veya sizin tarafı
 
 ::: moniker-end
 
-   Hakkında daha fazla bilgi için *.vstemplate* dosyaları görmek [şablon parametreleri](../ide/template-parameters.md).
+   Hakkında daha fazla bilgi için *.vstemplate* dosyaları görmek [şablon etiketleri](template-tags.md) ve [şablon parametreleri](../ide/template-parameters.md).
 
 Ne zaman bu dosyaları sıkıştırılır içine bir *.zip* dosya ve doğru klasöre yerleştirin, Visual Studio otomatik olarak aşağıdaki konumlarda görüntüler:
 
@@ -71,6 +71,7 @@ Ne zaman bu dosyaları sıkıştırılır içine bir *.zip* dosya ve doğru klas
 
 - [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)
 - [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+- [Şablon etiketleri](template-tags.md)
 - [Şablon parametreleri](../ide/template-parameters.md)
 - [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio şablonları NuGet paketleri](/nuget/visual-studio-extensibility/visual-studio-templates)

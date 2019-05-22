@@ -1,20 +1,24 @@
 # [Mac için Visual Studio](index.yml)
 # [IDE Turu](ide-tour.md)
 
-# [Yükleme](installation.md)
+# Yükleme
+## [Mac için Visual Studio 2019’u Yükleme](installation.md)
 ## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](install-behind-a-firewall-or-proxy-server.md)
 ## [Bir önizleme sürümünü yükleme](install-preview.md)
 ## [Güncelleştir](update.md)
 ## [Kaldır](uninstall.md)
 
-# [Kullanıcı Hesapları](user-accounts.md)
+# Kullanıcı Hesapları
+## [Genel bakış](user-accounts.md)
 ## [Oturum Açılıyor](signing-in.md)
 ## [Aboneliği Etkinleştirme](enable-subscription.md)
 
-# [IDE’yi Özelleştirme](customizing-the-ide.md)
+# IDE’yi Özelleştirme
+## [IDE görünümünü ve deneyimini özelleştirme](customizing-the-ide.md)
 ## [Mac için Visual Studio’yu Genişletme](extending-visual-studio-mac.md)
 
-# [Projeler ve Çözümler](projects-and-solutions.md)
+# Projeler ve Çözümler
+## [Genel bakış](projects-and-solutions.md)
 ## [Yeni Projeler oluşturuluyor](create-new-projects.md)
 ## [Proje Öğeleri ekleme ve kaldırma](add-and-remove-project-items.md)
 ## [Çözümleri ve Proje özelliklerini yönetme](managing-solutions-and-project-properties.md)
@@ -23,8 +27,9 @@
 ## [Uygulama Kaynaklarını Yönetme](managing-app-resources.md)
 ## [Nasıl yapılır: Birden çok çözüm veya örneği açma](open-multiple-solutions.md)
 
-# [Kaynak Düzenleyicisi](source-editor.md)
-## [Yeniden Düzenle](refactoring.md)
+# Kaynak Düzenleyicisi
+## [Düzenleyici Özellikleri](source-editor.md)
+## [Yeniden Düzenleme](refactoring.md)
 ## [Açıklamalar](comments.md)
 ## [Düzenleyici Davranışı](editor-behavior.md)
 ## [Görev Açıklamaları](task-comments.md)
@@ -34,10 +39,12 @@
 ## [EditorConfig](editorconfig.md)
 ## [Varsayılan Klavye Kısayolları](keyboard-shortcuts.md)
 
-# [Hata Ayıklama](debugging.md)
+# Hata Ayıklama
+## [Genel bakış](debugging.md)
 ## [Veri Görselleştirmeleri](data-visualizations.md)
 
-# [Derleme ve Oluşturma](compiling-and-building.md)
+# Derleme ve Oluşturma
+## [Genel bakış](compiling-and-building.md)
 ## [Projeleri ve Çözümleri Oluşturma ve Temizleme](building-and-cleaning-projects-and-solutions.md)
 ## [Derleme Eylemleri](build-actions.md)
 ## [Nasıl yapılır: Birden çok başlangıç projesi ayarlama](set-startup-projects.md)
@@ -45,18 +52,21 @@
 ## [Yapılandırmalar](configurations.md)
 ### [Yapılandırmaları oluşturma ve düzenleme](create-and-edit-configurations.md)
 
-# [Sürüm Denetimi](version-control.md)
+# Sürüm Denetimi
+## [Genel bakış](version-control.md)
 ## [TF Sürüm Denetimi](tf-version-control.md)
 ## [Git Deposu Ayarlama](set-up-git-repository.md)
 ## [Git ile çalışma](working-with-git.md)
 ## [Subversion Deposu Ayarlama](set-up-subversion-repository.md)
 ## [Subversion ile çalışma](working-with-subversion.md)
 
-# [Web Uygulaması Dağıtımı](web-app-deployment.md)
+# Web Uygulaması Dağıtımı
+## [Genel bakış](web-app-deployment.md)
 ## [Azure App Service’e yayımlama](publish-app-svc.md)
 ## [Klasöre Yayımlama](publish-folder.md)
 
-# [İş yükleri](workloads.md)
+# İş yükleri
+## [Kullanılabilir İş Yükleri](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript ve TypeScript](javascript.md)
@@ -73,7 +83,8 @@
 
 # [Erişilebilirlik](accessibility.md)
 
-# [Sorun giderme](troubleshooting.md)
+# Sorun giderme
+## [Günlükler ve Özel Durumlar](troubleshooting.md)
 ## [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md)
 ## [Sorun Bildirin](report-a-problem.md)
 ## [Sorun giderme: Neden tüm şablonları göremiyorum?](troubleshooting-no-templates.md)
