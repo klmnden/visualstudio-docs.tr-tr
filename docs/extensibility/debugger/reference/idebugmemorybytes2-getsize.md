@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db63b908871fff8fbaf2e71e0626b1c9a6486cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918893"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210581"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 Bu tarafından temsil edilen belleğin bayt cinsinden boyutunu alır [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) nesne.
@@ -37,13 +40,12 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pqwSize`
-
- [out] Boyutu bayt cinsinden bellek alanını döndürür.
+## <a name="parameters"></a>Parametreler
+`pqwSize`\
+[out] Boyutu bayt cinsinden bellek alanını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

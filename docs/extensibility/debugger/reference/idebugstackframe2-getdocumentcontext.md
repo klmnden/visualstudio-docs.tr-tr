@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 253235913afecc2895f6aa37e6cd1a06dc9685dd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8807f0bfe039fdf1cdaef8a7ce2ac0e269b59e5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458553"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208644"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Bu yığın çerçevesi için belge bağlamını alır.
@@ -40,9 +40,8 @@ int GetDocumentContext ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppCxt`\
-
- [out] Döndürür bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kaynak belge geçerli konumu temsil eden nesne.
+`ppCxt`\
+[out] Döndürür bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kaynak belge geçerli konumu temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

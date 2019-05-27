@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c674b73ad6ec45b1e388f62fbd3103afb5daedb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05222901081fe3ba93f4648f3a2689d3d9a5c6ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918117"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204473"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 Bir bağlantı noktası ekler.
@@ -38,14 +41,12 @@ int AddPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pRequest`
+## <a name="parameters"></a>Parametreler
+`pRequest`\
+[in] Bir [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) eklenecek bağlantı noktasını tanımlayan nesne.
 
- [in] Bir [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) eklenecek bağlantı noktasını tanımlayan nesne.
-
- `ppPort`
-
- [out] Döndürür bir [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) bağlantı noktasını temsil eden nesne.
+`ppPort`\
+[out] Döndürür bir [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) bağlantı noktasını temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -53,7 +54,7 @@ int AddPort( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, istenen bağlantı noktası hem de bağlantı noktası tedarikçi iç etkin bağlantı noktalarının listesine ekleyerek gerçekten oluşturur. [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) yöntemi çağrıldığında önce olası zaman gecikmeleri önlemek için.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fa649270ae9f837f84314776bbfb6b35e77b7d36
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224172"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199746"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Dosyadaki geçerli yönerge işaretçisini belirli bir yığın çerçevesine ayarlayıp ayarlayamayacağını belirler.
@@ -42,12 +42,11 @@ int CanSetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pStackFrame`\
- Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın. Bu null değeri ise, geçerli yığın çerçevesi kullanın.
+`pStackFrame`\
+Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın. Bu null değeri ise, geçerli yığın çerçevesi kullanın.
 
- `pCodeContext`\
-
- [in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
+`pCodeContext`\
+[in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

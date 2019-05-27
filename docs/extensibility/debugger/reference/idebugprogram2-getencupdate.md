@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2de204f3d95147d3250e570fa785ecccf68b4634
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 363018d13cfeee1691881f4d8b814cdd0b2dfa35
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412769"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212343"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Bu yöntem, bu program için Düzenle ve devam et (ENC) güncelleştirme alır. Her zaman bir özel hata ayıklama altyapısı döndürür `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCUpdate(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppUpdate`
-
- [out] Bu program güncelleştirmek için kullanılan bir iç arabiriminde döndürür.
+## <a name="parameters"></a>Parametreler
+`ppUpdate`\
+[out] Bu program güncelleştirmek için kullanılan bir iç arabiriminde döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,5 +49,5 @@ int GetENCUpdate(
 > [!NOTE]
 > Bir özel hata ayıklama altyapısı her zaman döndürmelidir `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

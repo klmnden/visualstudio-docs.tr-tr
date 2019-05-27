@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921626"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205165"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Bu yöntem, belirtilen değeri görüntülemek için çağrılır.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `hwnd`
+## <a name="parameters"></a>Parametreler
+`hwnd`\
+[in] Ana penceresi
 
- [in] Ana penceresi
+`dwID`\
+[in] Birden fazla tür destekleyen özel görüntüleyiciler kimliği.
 
- `dwID`
+`pHostServices`\
+[in] Ayrılmış. Her zaman null.
 
- [in] Birden fazla tür destekleyen özel görüntüleyiciler kimliği.
-
- `pHostServices`
-
- [in] Ayrılmış. Her zaman null.
-
- `pDebugProperty`
-
- [in] Görüntülenecek değerini almak için kullanılan arabirim.
+`pDebugProperty`\
+[in] Görüntülenecek değerini almak için kullanılan arabirim.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
@@ -67,7 +66,7 @@ int DisplayValue(
 
  Değer değiştirme desteklemek için verilen [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) nesne kullanabileceğiniz [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) yöntemi — değeri bir dize olarak ifade edilebilir değilse. Aksi takdirde, özel arabirim oluşturmak gerekli olan — bunu uygulama ifade değerlendiricisi özel `DisplayValue` yöntemi — uygulayan aynı nesne üzerinde `IDebugProperty3` arabirimi. Bu özel arabirim yöntemleri bir rastgele boyut ve karmaşıklıktaki verileri değiştirmek için sağlamanız.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

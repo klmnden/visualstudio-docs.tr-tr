@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 918b61856577ae730ca72f180e614ee3982c917b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226713"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199480"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Verilen kod bağlamı için geçerli yönerge işaretçisini ayarlar.
@@ -42,12 +42,11 @@ int SetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pStackFrame`\
- Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın.
+`pStackFrame`\
+Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın.
 
- `pCodeContext`\
-
- [in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
+`pCodeContext`\
+[in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Diğer olası değerler aşağıdaki tabloda gösterilmektedir.

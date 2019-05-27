@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b1d6fd8bb959bc789f52a2955abb13ee4f1165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64c18794e638c9f6af34ab670400662cb89df93c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874169"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211774"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Bu yöntem, kayıt defteri kökü ayarlar. Yan yana hata ayıklamak için kullanılır.
@@ -36,10 +39,9 @@ int SetRegistryRoot(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ustrRegistryRoot`
-
- [in] Yeni kayıt defteri kökü.
+## <a name="parameters"></a>Parametreler
+`ustrRegistryRoot`\
+[in] Yeni kayıt defteri kökü.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,5 +49,5 @@ int SetRegistryRoot(
 ## <a name="remarks"></a>Açıklamalar
  İfade değerlendirici ilk örneği işaret yüklendiğinde belirtilen kayıt defteri kökü genellikle ayarlanır ve Visual Studio'nun belirli bir sürümü için kayıt defteri anahtarı için (hkey_local_machıne\software\microsoft\visualstudio\\*X.Y* burada *X.Y* bir sürüm numarası).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

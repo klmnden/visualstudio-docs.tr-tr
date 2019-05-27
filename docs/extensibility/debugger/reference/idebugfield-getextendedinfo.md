@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873862"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212209"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Bu yöntem, bir alan hakkında bilgi genişletilmiş.
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `guidExtendedInfo`
-
- [in] Döndürülecek bilgileri seçer. Geçerli değerler şunlardır:
+## <a name="parameters"></a>Parametreler
+`guidExtendedInfo`\
+[in] Döndürülecek bilgileri seçer. Geçerli değerler şunlardır:
 
 |Değer|Açıklama|
 |-----------|-----------------|
 |`guidConstantValue`|Bayt dizisi olarak değeri.|
 |`guidConstantType`|Tür imzası olarak türü.|
 
- `prgBuffer`
+`prgBuffer`\
+[out] Genişletilmiş bilgileri döndürür.
 
- [out] Genişletilmiş bilgileri döndürür.
-
- `pdwLen`
-
- [out içinde] Genişletilmiş bilgileri boyutunu bayt cinsinden döndürür.
+`pdwLen`\
+[out içinde] Genişletilmiş bilgileri boyutunu bayt cinsinden döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -64,5 +64,5 @@ int GetExtendedInfo(
 ## <a name="remarks"></a>Açıklamalar
  Şu anda, bu yöntem, yalnızca türe veya bir sabit değerini döndürür. Çağırana döndürülen arabellek boşaltmanız gerekir `prgBuffer` COM'ın çağırarak `CoTaskMemFree` işlevi (C++) veya <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

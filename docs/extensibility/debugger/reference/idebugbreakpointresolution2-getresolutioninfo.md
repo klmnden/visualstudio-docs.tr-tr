@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c4a6c18f2203a1e03751423ce9bc972be9e4801
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923121"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203992"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Bu Kesme noktasının açıklayan kesme noktası çözünürlüğü bilgileri alır.
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `dwFields`
+## <a name="parameters"></a>Parametreler
+`dwFields`\
+[in] Bayraklarının bir birleşimi [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) hangi alanları belirlemek numaralandırma `pBPResolutionInfo` parametresi doldurulması üzeresiniz.
 
- [in] Bayraklarının bir birleşimi [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) hangi alanları belirlemek numaralandırma `pBPResolutionInfo` parametresi doldurulması üzeresiniz.
-
- `pBPResolutionInfo`
-
- [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) bu kesme noktası hakkında bilgi doldurulması için yapı.
+`pBPResolutionInfo`\
+[out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) bu kesme noktası hakkında bilgi doldurulması için yapı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -140,7 +141,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

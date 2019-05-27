@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926841"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212233"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -106,8 +105,8 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 
 * Daha önce Visual Studio sisteme ait çok sayıda kayıt defteri anahtarlarını yüklü **HKEY_LOCAL_MACHINE** ve **HKEY_CURRENT_USER** yığınlarını Visual Studio özel anahtarı altında:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{sürüm}**: MSI yükleyiciler ve makine başına uzantılar tarafından oluşturulan kayıt defteri anahtarları.
-  * **HKCU\Software\Microsoft\VisualStudio\{sürüm}**: Kullanıcıya özel ayarları depolamak için Visual Studio tarafından oluşturulan kayıt defteri anahtarları.
+  * **HKLM\Software\Microsoft\VisualStudio\{sürüm}** : MSI yükleyiciler ve makine başına uzantılar tarafından oluşturulan kayıt defteri anahtarları.
+  * **HKCU\Software\Microsoft\VisualStudio\{sürüm}** : Kullanıcıya özel ayarları depolamak için Visual Studio tarafından oluşturulan kayıt defteri anahtarları.
   * **HKCU\Software\Microsoft\VisualStudio\{sürüm} _Config**: Visual Studio HKLM anahtar yukarıdaki yanı sıra, kayıt defteri anahtarlarını bir kopyasını birleştirme kaynağı *.pkgdef* uzantıları dosyaları.
 
 * Kayıt defteri üzerindeki etkiyi azaltmak için Visual Studio artık kullanır [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) kayıt defteri anahtarları altında özel ikili dosyaları depolamak için işlev *[VSAPPDATA]\privateregistry.bin*. Visual Studio özel anahtarlar yalnızca çok az sayıda sistem kayıt defterinde kalır.

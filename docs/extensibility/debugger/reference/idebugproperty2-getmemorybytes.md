@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47013153326bd2c86dd897d519fa87a64f9464ed
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 42eb6fda98d417483387211aaffcbf6260c61864
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458907"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211532"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 Bir özelliğin değerini oluşturan bellek bayt alır.
@@ -40,9 +40,8 @@ int GetMemoryBytes ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppMemoryBytes`\
-
- [out] Döndürür bir [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) özelliğinin değeri içeren belleği almak için kullanılan nesne.
+`ppMemoryBytes`\
+[out] Döndürür bir [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) özelliğinin değeri içeren belleği almak için kullanılan nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür. Döndürür `S_GETMEMORYBYTES_NO_MEMORY_BYTES` almak için hiçbir bellek bayt varsa.

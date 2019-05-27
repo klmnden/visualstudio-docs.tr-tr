@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a31525ca7dbd89f4a6d1421eab0db11a38224cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919032"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212169"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Bu genel parametre türü veya yönteminde sahibi alır.
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`ppOwner`
-
- [out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bu genel parametre sahip bir nesne.
+## <a name="parameters"></a>Parametreler
+`ppOwner`\
+[out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) bu genel parametre sahip bir nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -93,5 +95,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

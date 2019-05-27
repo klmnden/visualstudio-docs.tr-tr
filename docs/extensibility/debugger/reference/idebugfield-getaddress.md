@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 417e19eb9c7d014b6c1ca353147f6a8ac96f222e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e44e23dc1573a0eb57be0da7272e185b66576873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873878"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212328"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 Bu yöntem, bir alan için hata ayıklama adresi alır.
@@ -36,14 +39,13 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppAddress`
-
- [out] Adresi olarak döndüren bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) nesne.
+## <a name="parameters"></a>Parametreler
+`ppAddress`\
+[out] Adresi olarak döndüren bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodunu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

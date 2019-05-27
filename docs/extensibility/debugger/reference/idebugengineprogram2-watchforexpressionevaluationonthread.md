@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0572bfa8ebe1b70548483b17c58d08c8a0f9ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 41a644c2e0fb36cd39d55bf853f8362033eec8a0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920369"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212419"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 İfade değerlendirme programı durdurulmuş olsa bile verilen iş parçacığı üzerinde gerçekleşmesi için izin verir (veya izin vermiyor).
@@ -44,26 +47,21 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pOriginatingProgram`
+## <a name="parameters"></a>Parametreler
+`pOriginatingProgram`\
+[in] Bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) bir ifade değerlendirme programı temsil eden nesne.
 
- [in] Bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) bir ifade değerlendirme programı temsil eden nesne.
+`dwTid`\
+[in] İş parçacığı tanımlayıcısını belirtir.
 
- `dwTid`
+`dwEvalFlags`\
+[in] Bayraklarının bir birleşimi [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) nasıl gerçekleştirilecek bir değerlendirme olduğunu belirten sabit listesi.
 
- [in] İş parçacığı tanımlayıcısını belirtir.
+`pExprCallback`\
+[in] Bir [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ifadesi değerlendirmesi sırasında oluşan hata ayıklama olayları göndermek için kullanılacak nesne.
 
- `dwEvalFlags`
-
- [in] Bayraklarının bir birleşimi [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) nasıl gerçekleştirilecek bir değerlendirme olduğunu belirten sabit listesi.
-
- `pExprCallback`
-
- [in] Bir [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) ifadesi değerlendirmesi sırasında oluşan hata ayıklama olayları göndermek için kullanılacak nesne.
-
- `fWatch`
-
- [in] Sıfır olmayan (`TRUE`), ifade değerlendirmesi tarafından tanımlanan iş parçacığında sağlayan `dwTid`; Aksi takdirde, sıfır (`FALSE`) ifade değerlendirme, iş parçacığı üzerinde izin vermiyor.
+`fWatch`\
+[in] Sıfır olmayan (`TRUE`), ifade değerlendirmesi tarafından tanımlanan iş parçacığında sağlayan `dwTid`; Aksi takdirde, sıfır (`FALSE`) ifade değerlendirme, iş parçacığı üzerinde izin vermiyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -73,7 +71,7 @@ int WatchForExpressionEvaluationOnThread( 
 
  İfade değerlendirme bir programda başka birinde işlev değerlendirmesi veya tüm değerlendirmesi nedeniyle çalıştırmak için kod neden `IDispatch` özellikleri. Bu nedenle, ifade değerlendirme çalıştırmak ve iş parçacığı bu programa durdurulabilir olsa bile tamamlamak bu yöntem sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

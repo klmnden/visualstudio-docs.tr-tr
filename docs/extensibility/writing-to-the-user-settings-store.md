@@ -1,6 +1,6 @@
 ---
 title: Kullanıcı ayarları Store için yazma | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444904"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206877"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Kullanıcı Ayarları Deposuna Yazma
 Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekler** iletişim ve özellikleri windows belirli bir iletişim kutusu. Visual Studio uzantıları bunlar küçük miktarlarda veri depolamak için kullanabilirsiniz. Bu izlenecek yolda not defteri için Visual Studio dış bir araç olarak okuma ve kullanıcı ayarları deposuna yazma tarafından nasıl ekleneceğini gösterir.
-
-### <a name="backing-up-your-user-settings"></a>Kullanıcı ayarlarınızı yedekleme
-
-1. Hata ayıklama ve yordamı yineleyin dış Araçlar ayarlarına olması gerekir. Bunu yapmak için bunları gerektiği gibi geri yükleyebilirsiniz, böylece özgün ayarlarına kaydetmeniz gerekir.
-
-2. Regedit.exe'yi açın.
-
-3. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External araçları gidin\\.
-
-    > [!NOTE]
-    > \14.0Exp\ ve değil \14.0 içeren anahtar baktığınızdan emin olun\\. Visual Studio'nun deneysel örneği çalıştırdığınızda, kullanıcı ayarlarınızı kayıt defteri kovanında "14.0Exp" dir.
-
-4. \External Tools\ alt sağ tıklayın ve ardından **dışarı**. Emin olun **Seçili dal** seçilir.
-
-5. Sonuçta elde edilen dış Tools.reg dosyayı kaydedin.
-
-6. Daha sonra dış araçların ayarlarını sıfırlamak istediğiniz zaman HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ içinde kayıt defteri anahtarı seçin ve tıklayın **Sil** bağlam menüsünde.
-
-7. Zaman **Anahtar Silinmesini Onayla** iletişim kutusu görüntülendikten sonra **Evet**.
-
-8. Daha önce kaydettiğiniz dış Tools.reg dosyaya sağ tıklayın, **birlikte Aç**ve ardından **Kayıt Defteri Düzenleyicisi'ni**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Kullanıcı Ayarları Deposuna Yazma
 

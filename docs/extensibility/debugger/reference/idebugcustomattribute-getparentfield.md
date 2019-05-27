@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a6bdb5daee7fa0c2b8dc5228998a8ac0fd22fec0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921665"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205328"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Özel öznitelik eklendiği alanını alır.
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppField`
-
- [out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) özel özniteliği bağlı alanını temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppField`\
+[out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) özel özniteliği bağlı alanını temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
@@ -47,6 +49,6 @@ int GetParentField(
 ## <a name="remarks"></a>Açıklamalar
  Çağrı [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) yöntemi döndürülen [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ne tür üst alan olmadığının nesnedir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

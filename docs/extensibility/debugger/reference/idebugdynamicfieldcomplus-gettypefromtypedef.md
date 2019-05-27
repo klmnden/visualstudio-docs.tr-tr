@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6226ddf0104f434dbd15c29f779a524de33422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89c9859bcb55fb60707ae6f77cdcf4331f24e033
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875405"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207790"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Kendi belirteci verilen bir türü alır.
@@ -41,25 +44,21 @@ int GetTypeFromTypeDef(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ulAppDomainID`
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
- `guidModule`
+`tokClass`\
+[in] Belirteci temsil eden tür.
 
- [in] Modülün benzersiz tanımlayıcısı.
-
- `tokClass`
-
- [in] Belirteci temsil eden tür.
-
- `ppType`
-
- [out] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) türü içeren nesne.
+`ppType`\
+[out] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) türü içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

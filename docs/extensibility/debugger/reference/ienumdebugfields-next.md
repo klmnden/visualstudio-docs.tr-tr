@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a39725f316e63b8c6768471164b69feb47c05728
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34ab8274dc8831cabc4ac8d82627cd5e4560827c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867244"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208063"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Bu yöntem, sabit listesinden alınmış sonraki öğe kümesini döndürür.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `celt`
+## <a name="parameters"></a>Parametreler
+`celt`\
+[in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
 
- [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
+`rgelt`\
+[out içinde] Dizi [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) doldurulacak öğeleri.
 
- `rgelt`
-
- [out içinde] Dizi [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) doldurulacak öğeleri.
-
- `pceltFetched`
-
- [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
+`pceltFetched`\
+[out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.

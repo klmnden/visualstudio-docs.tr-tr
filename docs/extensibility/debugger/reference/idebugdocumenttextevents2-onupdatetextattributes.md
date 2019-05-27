@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4991b637fbc6720580856c9120a1c1d68a9769df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875210"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207855"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 Hata ayıklama paketi metin özniteliklerini belgede güncelleştirildiğini bildirir.
@@ -38,18 +41,16 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pos`
+## <a name="parameters"></a>Parametreler
+`pos`\
+[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) metin özniteliklerini burada güncelleştirildi gösteren yapısı.
 
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) metin özniteliklerini burada güncelleştirildi gösteren yapısı.
-
- `dwNumToUpdate`
-
- [in] Güncelleştirilen metin karakter sayısını belirtir.
+`dwNumToUpdate`\
+[in] Güncelleştirilen metin karakter sayısını belirtir.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

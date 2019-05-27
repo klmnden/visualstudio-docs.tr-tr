@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459077"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211695"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ad ve tanımlayıcı bir programı çalıştırma hata ayıklama altyapısı (DE) alır.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Programın çalıştırılması DE adını döndürür (C++-belirli: Bu çağrı altyapısı adını ilgilenen değil gösteren null bir işaretçi olabilir).
 
- [out] Programın çalıştırılması DE adını döndürür (C++-belirli: Bu çağrı altyapısı adını ilgilenen değil gösteren null bir işaretçi olabilir).
-
- `pguidEngine`\
-
- [out] Programın çalıştırılması DE genel benzersiz tanımlayıcısını döndürür (C++-belirli: Bu çağırana ilişkin GUID'i altyapısının ilgilenen değil gösteren null bir işaretçi olabilir).
+`pguidEngine`\
+[out] Programın çalıştırılması DE genel benzersiz tanımlayıcısını döndürür (C++-belirli: Bu çağırana ilişkin GUID'i altyapısının ilgilenen değil gösteren null bir işaretçi olabilir).
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

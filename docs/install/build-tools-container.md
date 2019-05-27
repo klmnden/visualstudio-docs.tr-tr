@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974260"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177618"
 ---
 # <a name="install-build-tools-into-a-container"></a>Derleme araçları bir kapsayıcıya yükleme
 
@@ -64,12 +64,12 @@ Visual Studio derleme araçları - ve bir büyük ölçüde, Visual Studio - yü
 
 1. [İki durumlu **temel** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) düğmesi **Gelişmiş**.
 
-1. (Daha fazla derleme araçları için yeterli büyümek için yeriniz olan) 120 GB disk alanı artırmak için aşağıdaki JSON dizisi özelliği ekleyin.
+1. (Daha fazla derleme araçları için yeterli büyümek için yeriniz olan) 127 GB disk alanı artırmak için aşağıdaki JSON dizisi özelliği ekleyin.
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,12 +83,14 @@ Visual Studio derleme araçları - ve bir büyük ölçüde, Visual Studio - yü
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
 
-1. Tıklayın **uygulamak**.
+   Bkz: [Windows üzerinden Docker altyapısının](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) daha fazla yapılandırma seçenekleri ve ipuçları.
+
+1. **Uygula**'ya tıklayın.
 
 **Windows Server 2016**:
 
@@ -100,17 +102,17 @@ Visual Studio derleme araçları - ve bir büyük ölçüde, Visual Studio - yü
 
 1. Yükseltilmiş bir komut isteminden "% ProgramData%\Docker\config\daemon.json" Düzenle (veya ne için belirtilen `dockerd --config-file`).
 
-1. (Daha fazla derleme araçları için yeterli büyümek için yeriniz olan) 120 GB disk alanı artırmak için aşağıdaki JSON dizisi özelliği ekleyin.
+1. (Daha fazla derleme araçları için yeterli büyümek için yeriniz olan) 127 GB disk alanı artırmak için aşağıdaki JSON dizisi özelliği ekleyin.
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   Bu özellik zaten sahip olduğunuz bir şey eklenir.
+   Bu özellik zaten sahip olduğunuz bir şey eklenir. Bkz: [Windows üzerinden Docker altyapısının](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) daha fazla yapılandırma seçenekleri ve ipuçları.
  
 1. Dosyayı kaydedin ve kapatın.
 
@@ -148,8 +150,8 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    ```
 
    > [!WARNING]
-   > Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklemeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Ayrıca görüntüleri sürüm 4.7.1 Etiketli dikkat edin veya daha sonra PowerShell varsayılan olarak kullanabilir `SHELL`, neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
+   > Görüntünüzü doğrudan microsoft/windowsservercore veya mcr.microsoft.com/windows/servercore temel değilse (bkz [Microsoft syndicates kapsayıcı Kataloğu](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), .NET Framework düzgün yüklemeyebilir ve hiçbir yükleme hatası gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Ayrıca görüntüleri sürüm 4.7.1 Etiketli dikkat edin veya daha sonra PowerShell varsayılan olarak kullanabilir `SHELL`, neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
    >
    > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez\.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
    >
-   > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
+   > Bkz: [Windows kapsayıcı sürümü uyumluluğu](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) hangi konak işletim sistemi sürümlerinde, hangi kapsayıcı işletim sistemi sürümlerin desteklendiğini görmek için ve [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) bilinen sorunlara yönelik çözümler.
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    > [!WARNING]
    > Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklemeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Ayrıca görüntüleri sürüm 4.7.1 Etiketli dikkat edin veya daha sonra PowerShell varsayılan olarak kullanabilir `SHELL`, neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
    >
-   > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
+   > Bkz: [Windows kapsayıcı sürümü uyumluluğu](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) hangi konak işletim sistemi sürümlerinde, hangi kapsayıcı işletim sistemi sürümlerin desteklendiğini görmek için ve [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) bilinen sorunlara yönelik çözümler.
 
    ::: moniker-end
 

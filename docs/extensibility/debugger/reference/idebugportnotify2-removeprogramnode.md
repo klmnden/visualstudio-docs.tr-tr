@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c09c7ccfcfee13f667091e96a638c17be2c9616d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1de94b5a2eb1edf874a03fe9a8184bf36dda1055
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871664"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208869"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 Bir program çalıştığı bağlantı noktasından ayıklanabilir kaydını siler.
@@ -36,10 +39,9 @@ int RemoveProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pProgramNode`
-
- [in] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) program sona erdirilecek temsil eden objecy.
+## <a name="parameters"></a>Parametreler
+`pProgramNode`\
+[in] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) program sona erdirilecek temsil eden objecy.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int RemoveProgramNode( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem çağrısı ile eklenmiş bir program düğümü kaldırır [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

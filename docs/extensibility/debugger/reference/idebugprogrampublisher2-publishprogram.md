@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457860"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203715"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Bu yöntem, bir program hata ayıklama altyapısı (DEs) için kullanılabilir ve oturum hata ayıklama Yöneticisi sağlar.
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `Engines`\
+`Engines`\
+[in] Başlatabilir veya bu programa ekleme GUID'ler DEs için bir dizi.
 
- [in] Başlatabilir veya bu programa ekleme GUID'ler DEs için bir dizi.
+`szFriendlyName`\
+[in] (Bu Bu menüler ya da iletişim kutuları kullanıcıya görünür) programı için kolay ad.
 
- `szFriendlyName`\
-
- [in] (Bu Bu menüler ya da iletişim kutuları kullanıcıya görünür) programı için kolay ad.
-
- `pDebuggeeInterface`\
-
- [in] `IUnknown` programı arabirimi (Bu değer bir tanımlama bilgisi program benzersiz olarak tanımlanabilmesi için kullanılır; bu değer "program yayımdan kaldırmak için" kullanılır)
+`pDebuggeeInterface`\
+[in] `IUnknown` programı arabirimi (Bu değer bir tanımlama bilgisi program benzersiz olarak tanımlanabilmesi için kullanılır; bu değer "program yayımdan kaldırmak için" kullanılır)
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

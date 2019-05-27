@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458598"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212110"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Ad veya ölçüm verilen ifade değerlendirici ölçüm dosya alır.
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `guidLang`\
+`guidLang`\
+[in] Programlama diline benzersiz tanımlayıcısı.
 
- [in] Programlama diline benzersiz tanımlayıcısı.
+`guidVendor`\
+[in] Satıcı benzersiz tanımlayıcısı.
 
- `guidVendor`\
+`pszMetric`\
+[in] Ölçüm adı.
 
- [in] Satıcı benzersiz tanımlayıcısı.
-
- `pszMetric`\
-
- [in] Ölçüm adı.
-
- `pbstrValue`\
-
- [out] Ölçüm dosyasının içeriğini dize olarak döndürür.
+`pbstrValue`\
+[out] Ölçüm dosyasının içeriğini dize olarak döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

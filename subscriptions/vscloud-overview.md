@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679324"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177568"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -96,11 +96,14 @@ Y:  Bu değişiklik, mevcut aboneler etkilemez.
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>S:  Bu değişiklik sonucunda herhangi bir şey yapmanız gerekiyor?
 Y:  Hayır.  Aboneliklerinizi yerinde kalır ve bugün olduğu gibi bunları yönetmek mümkün olacaktır.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>S: Abonelik sayısını artırmak istersem Şirketimin sahip olduğu?
-Y:  Yöneticinize devam ederek abonelik sayısını artırabilir [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını artırmak için bu makaledeki yönergeleri.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını artırmak istersem?
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>S: Abonelik sayısını azaltmak istersem Şirketimin sahip olduğu?
-Y:  Yöneticinize devam ederek abonelik sayısını azaltabilirsiniz [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını azaltmak için bu makaledeki yönergeleri.
+Y: Belirli bir ay boyunca satın alınan yıllık aboneliklerine tam bir yıl için hemen ücretlendirilirsiniz ve tam bir yıl için geçerlidir. Bu nedenle, yöneticinize yalnızca lisans sayısını (bunlar 1 yıl boyunca geçerli ve 1 yıl boyunca ücretlendirilir olacaktır) satın alma, geçerli aydaki değiştirebilirsiniz. Satın alma işleminin yapıldığı ay dışında artık abonelik sayısını artırmak mümkündür.
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını azaltmak istersem?
+
+Y: Yöneticinize devam ederek abonelik sayısını azaltabilirsiniz https://manage.visualstudio.com ve abonelik sayısını azaltmak için bu makaledeki yönergeleri. Sistem olacak *değil* günlere kredi oluşturur. Para iadesi için Azure fatura ekibine başvurun gerekecektir.
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>S: Aboneliğimi iptal, ben daha sonra başka bir yıllık bulut aboneliği satın alabilirsiniz olacak mı?
 Y:  Başka bir yıllık bulut aboneliği satın almanız mümkün olmayacaktır olsa da, Visual Studio abonelikleri satın almak için pek çok seçenek vardır.  Daha fazla bilgi [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).
