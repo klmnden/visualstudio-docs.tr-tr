@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e284565ad4e30a4a7aa766ea7150b02281aad3ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876743"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206483"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Belirtilen modüldeki belirtilen özniteliğine sahip sınıf alır.
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`ulAppDomainID`
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
-`guidModule`
+`pstrAttribute`\
+[in] Öznitelik dize.
 
- [in] Modülün benzersiz tanımlayıcısı.
-
-`pstrAttribute`
-
- [in] Öznitelik dize.
-
-`ppEnum`
-
- [out] Öznitelikli sınıfları numaralandırmasını döndürür.
+`ppEnum`\
+[out] Öznitelikli sınıfları numaralandırmasını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -152,5 +151,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

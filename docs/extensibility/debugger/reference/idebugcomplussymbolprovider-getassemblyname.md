@@ -1,89 +1,88 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a8db1926fe6c4480c136d5d62ca523667530478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876756"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206527"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Modül ve uygulama etki alanı belirtilen derlemenin adını alır.
 
-Modül ve uygulama etki alanı belirtilen derlemenin adını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[C++]  
-HRESULT GetAssemblyName(  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule,  
-   BSTR*   pbstrName  
-);  
-```  
-  
-```  
-[C#]  
-int GetAssemblyName(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ulAppDomainID`  
- [in] Uygulama etki alanı için tanımlayıcı.  
-  
- `guidModule`  
- [in] Modül için benzersiz tanımlayıcı.  
-  
- `pbstrName`  
- [out] Derlemenin adını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.  
-  
-```cpp#  
-HRESULT CDebugSymbolProvider::GetAssemblyName(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    BSTR* pbstrName  
-)  
-{  
-    HRESULT hr = S_OK;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-    CComPtr<IMetaDataImport> pMetadata;  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::GetMetadataForModule );  
-  
-    IfFalseGo( pbstrName, E_INVALIDARG );  
-    *pbstrName = NULL;  
-  
-    IfFailGo( GetMetadata( idModule, &pMetadata ) );  
-    IfFailGo( GetAssemblyName( pMetadata, 0, pbstrName ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::GetMetadataForModule, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetAssemblyName(
+    ULONG32 ulAppDomainID,
+    GUID    guidModule,
+    BSTR*   pbstrName
+);
+```
+
+```csharp
+int GetAssemblyName(
+    uint   ulAppDomainID,
+    Guid   guidModule,
+    string pbstrName
+);
+```
+
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı için tanımlayıcı.
+
+`guidModule`\
+[in] Modül için benzersiz tanımlayıcı.
+
+`pbstrName`\
+[out] Derlemenin adını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **CDebugSymbolProvider** gösteren nesne [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) arabirimi.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetAssemblyName(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    BSTR* pbstrName
+)
+{
+    HRESULT hr = S_OK;
+    Module_ID idModule(ulAppDomainID, guidModule);
+    CComPtr<IMetaDataImport> pMetadata;
+
+    METHOD_ENTRY( CDebugSymbolProvider::GetMetadataForModule );
+
+    IfFalseGo( pbstrName, E_INVALIDARG );
+    *pbstrName = NULL;
+
+    IfFailGo( GetMetadata( idModule, &pMetadata ) );
+    IfFailGo( GetAssemblyName( pMetadata, 0, pbstrName ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::GetMetadataForModule, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

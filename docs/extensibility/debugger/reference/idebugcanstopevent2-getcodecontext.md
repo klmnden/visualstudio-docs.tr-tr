@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d11a8a5bf3a0fc66487b8a0e58cd98aefdbd255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12dc3ff9dadc1ea09e14045377096fa149a6c51d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922991"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203170"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Bu olay konumunu tanımlayan kod bağlamı alır.
@@ -36,10 +39,9 @@ int GetCodeContext( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppCodeContext`
-
- [out] Döndürür [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) geçerli kod konumu temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppCodeContext`\
+[out] Döndürür [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) geçerli kod konumu temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -49,7 +51,7 @@ int GetCodeContext( 
 
  Kaynak kodu satırlarını yönlendirilmiş olan belge bağlamı alma çağrısı [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

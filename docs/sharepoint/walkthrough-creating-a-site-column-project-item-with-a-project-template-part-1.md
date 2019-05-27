@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Proje şablonu ile bir Site sütunu proje öğesi oluşturma, bölüm 1 | Microsoft Docs'
+title: Proje şablonu, bölüm 1 ile site sütunu proje öğesi oluşturma
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430398"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177552"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>İzlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma
   SharePoint projeleri, bir veya daha fazla SharePoint Proje öğeleri için kapsayıcılardır. Visual Studio'da SharePoint Proje sisteminin, kendi SharePoint proje öğesi türleri oluşturarak ve ardından bunları bir proje şablonu ile ilişkilendirerek genişletebilirsiniz. Bu kılavuzda, bir site sütunu oluşturmak için bir proje öğesi türü tanımlayacağınızı ve bir site sütunu proje öğesi içeren yeni bir proje oluşturmak için kullanılan bir proje şablonu oluşturup.

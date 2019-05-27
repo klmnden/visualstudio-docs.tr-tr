@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 465dd8c355ca070c2aa74ff0c4adf68925aea3c2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 551857f1f8e0220c50c8c201a8ee550733d68e9f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225756"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203395"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 Numaralandırmada öğelerin sayısını döndürür.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pcelt`\
-
- [out] Numaralandırmada öğelerin sayısını döndürür.
+`pcelt`\
+[out] Numaralandırmada öğelerin sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

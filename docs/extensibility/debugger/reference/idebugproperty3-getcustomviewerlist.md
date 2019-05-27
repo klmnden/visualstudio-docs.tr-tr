@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457650"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200188"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Bu özellik ile ilişkilendirilmiş özel görüntüleyiciler listesini alır.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametreler
 `celtSkip`\
-
- [in] Görüntüleyiciler atlamayı sayısı.
+[in] Görüntüleyiciler atlamayı sayısı.
 
 `celtRequested`\
-
- [in] Alınacak görüntüleyiciler sayısı (Ayrıca boyutunu belirtir `rgViewers` dizisi).
+[in] Alınacak görüntüleyiciler sayısı (Ayrıca boyutunu belirtir `rgViewers` dizisi).
 
 `rgViewers`\
-
- [out içinde] Dizi [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) yapıları doldurulmalıdır.
+[out içinde] Dizi [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) yapıları doldurulmalıdır.
 
 `pceltFetched`\
-
- [out] Döndürülen görüntüleyiciler gerçek sayısı.
+[out] Döndürülen görüntüleyiciler gerçek sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

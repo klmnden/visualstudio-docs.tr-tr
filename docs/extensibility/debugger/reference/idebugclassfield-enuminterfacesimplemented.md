@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bffae40f1e5212132c89b6b71b7fc83cca6ebb42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 74a1de38344b8570df0b5381842be508e45c5fdb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877031"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203204"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Bu sınıf tarafından uygulanan arabirimler için bir numaralandırıcı oluşturur.
@@ -36,10 +39,9 @@ int EnumInterfacesImplemented(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppEnum`
-
- [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) uygulanan arabirimlerin listesini temsil eden nesne. Arabirimlerine yoksa null değeri döndürür.
+## <a name="parameters"></a>Parametreler
+`ppEnum`\
+[out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) uygulanan arabirimlerin listesini temsil eden nesne. Arabirimlerine yoksa null değeri döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür veya bu sınıfa uygulanan arabirim varsa S_FALSE döndürür. Aksi takdirde bir hata kodu döndürür.
@@ -47,6 +49,6 @@ int EnumInterfacesImplemented(
 ## <a name="remarks"></a>Açıklamalar
  Her öğenin sabit bir [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) bir arabirim tanımlayan nesne. Yönetilmeyen Not [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] kod bu yöntem her zaman için yönetilmeyen bir null değer döndürecek şekilde ayrık bir varlık olarak arabirimleri kullanmayan [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] kod.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

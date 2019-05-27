@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa89650ea1497afcb5ac1143264103ee7fc69b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64e65d6c8d828685bbf5b07fe46260189db3b806
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875781"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204983"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 Geçerli kod konumu temsil eden bir kod konum tanımlayıcısı döndürür.
@@ -36,10 +39,9 @@ int GetCurrentLocation( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `puCodeLocationId`
-
- [out] Kod konumu tanımlayıcısını döndürür. İçin Açıklamalar bölümüne bakın [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) kod konum tanımlayıcısı bir açıklaması için yöntemi.
+## <a name="parameters"></a>Parametreler
+`puCodeLocationId`\
+[out] Kod konumu tanımlayıcısını döndürür. İçin Açıklamalar bölümüne bakın [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) kod konum tanımlayıcısı bir açıklaması için yöntemi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int GetCurrentLocation( 
 ## <a name="remarks"></a>Açıklamalar
  Kod konum tanımlayıcısı için bir kod bağlamı çağırarak dönüştürülebilir [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
 - [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

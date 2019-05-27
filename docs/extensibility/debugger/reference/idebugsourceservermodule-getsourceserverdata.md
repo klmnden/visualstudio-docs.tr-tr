@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee55c7637272da536830f00607719fae9f234b4d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 73b5dd57a9e4c4de917e0fca744388b02345f0bb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457561"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208758"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Kaynak sunucu bilgileri alır.
@@ -41,12 +41,10 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>Parametreler
 `pDataByteCount`\
-
- [out] Veri dizisi bayt sayısı.
+[out] Veri dizisi bayt sayısı.
 
 `ppData`\
-
- [out] Başvuru veri dizisi.
+[out] Başvuru veri dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

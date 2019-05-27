@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b0977c537984d091e550329298367f5e02a360ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458568"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198690"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Bir yığın çerçevesiyle ilgili iş parçacığı alır.
@@ -40,9 +40,8 @@ int GetThread ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppThread`\
-
- [out] Döndürür bir [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) iş parçacığını temsil eden nesne.
+`ppThread`\
+[out] Döndürür bir [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) iş parçacığını temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

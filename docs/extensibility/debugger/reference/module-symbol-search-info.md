@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e374860bcd80f0a199e5dc55b4b556d94d99aba6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a2aa0d07fbc1978e5e65db409b90d1a289cd4bc2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460936"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212777"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -46,11 +46,9 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Üyeler
 
 `dwValidFields`\
-
 Bayraklarının bir birleşimi [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) bu yapısı içinde açıklanan arama bilgi türünü belirten sabit listesi.
 
 `bstrVerboseSearchInfo`\
-
 Arama yolu ve tek bir dize olarak birleştirilmiş sonuçlar.
 
 ## <a name="remarks"></a>Açıklamalar

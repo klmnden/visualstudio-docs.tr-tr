@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 65f79b73eaa9b97630cc3ef3e84e1ba4198835c9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413293"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202353"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Bu yöntemi açıkça devre dışı düzenleyin ve bu işlemi devam (ve tüm programlar içerir). Özel bağlantı noktası sağlayıcısı her zaman döndürmelidir `E_NOTIMPL`.
@@ -35,10 +38,9 @@ HRESULT DisableENC(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `reason`
-
- [in] Bir değer [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) sabit listesi.
+## <a name="parameters"></a>Parametreler
+`reason`\
+[in] Bir değer [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
@@ -49,6 +51,6 @@ HRESULT DisableENC(
 ## <a name="remarks"></a>Açıklamalar
  Düzenleme ve devam et için bir işlemi devre dışı bırakıldı, bu işlem yalnızca yeniden başlatarak yeniden etkinleştirilebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

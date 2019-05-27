@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ba8a7ab97c9b2fc405e10eb70246a049b4083993
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458881"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200212"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Belirli bir dizedeki bir özelliğin değerini ayarlar.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pszValue`\
+`pszValue`\
+[in] Ayarlanacak değer içeren bir dize.
 
- [in] Ayarlanacak değer içeren bir dize.
+`nRadix`\
+[in] Sayısal yedeklenmesine yorumlama olarak kullanılacak bir sayı tabanı. Bu sayı tabanı otomatik olarak belirlemek girişiminde 0 olabilir.
 
- `nRadix`\
-
- [in] Sayısal yedeklenmesine yorumlama olarak kullanılacak bir sayı tabanı. Bu sayı tabanı otomatik olarak belirlemek girişiminde 0 olabilir.
-
- `dwTimeout`\
-
- [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süreyi belirtir. Kullanım `INFINITE` süresiz bekleme.
+`dwTimeout`\
+[in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süreyi belirtir. Kullanım `INFINITE` süresiz bekleme.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür. Diğer olası değerler aşağıdaki tabloda gösterilmektedir.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fbb4f5018972777e51fbaad8d06f833309f6390f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457523"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212932"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Özel hata ayıklama altyapısı (DE) arabirimini alır.
@@ -40,9 +40,8 @@ int GetEngineInterface( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppUnk`\
-
- [out] Döndürür bir `IUnknown` hata ayıklama altyapısı (DE) ve hangi bir DE ile ilişkili diğer herhangi bir geçerli arabirimi için sorgulanabilir nesnesini temsil eder (örneğin [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) veya [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
+`ppUnk`\
+[out] Döndürür bir `IUnknown` hata ayıklama altyapısı (DE) ve hangi bir DE ile ilişkili diğer herhangi bir geçerli arabirimi için sorgulanabilir nesnesini temsil eder (örneğin [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) veya [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

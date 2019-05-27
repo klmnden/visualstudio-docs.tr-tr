@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705bda0fa8d9795b93d4633dba62d67e9f458587
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06bb466063ccb2788aaa4e094f0c9a5e8fc705f8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873781"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200651"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 Kaynak belgedeki işlevi konumunu alır.
@@ -36,14 +39,13 @@ int GetOffset(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pPosition`
-
- [out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) işlevi bir belge konumunu girilir yapısının.
+## <a name="parameters"></a>Parametreler
+`pPosition`\
+[out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) işlevi bir belge konumunu girilir yapısının.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

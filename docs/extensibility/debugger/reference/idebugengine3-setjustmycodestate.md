@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fff1334c29ad4da5edb90c9a3b289582a8f616d8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920903"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212508"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Bu yöntem, hata ayıklama altyapısı JustMyCode durumu bilgilerini söyler.
@@ -40,18 +43,15 @@ int SetJustMyCodeState(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `fUpdate`
+## <a name="parameters"></a>Parametreler
+`fUpdate`\
+[in] Sıfır olmayan (`TRUE`) geçerli bilgilerini güncelleştirmek için sıfır (`FALSE`) (önceden ayarlanan yoksayar) tüm bilgileri sıfırlanır.
 
- [in] Sıfır olmayan (`TRUE`) geçerli bilgilerini güncelleştirmek için sıfır (`FALSE`) (önceden ayarlanan yoksayar) tüm bilgileri sıfırlanır.
+`dwModules`\
+[in] Bilgi yapılarda sayısı `rgJMCSpec.`
 
- `dwModules`
-
- [in] Bilgi yapılarda sayısı `rgJMCSpec.`
-
- `rgJMCSpec`
-
- [in] Dizi [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) yapıları kullanılacak.
+`rgJMCSpec`\
+[in] Dizi [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) yapıları kullanılacak.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
@@ -59,6 +59,6 @@ int SetJustMyCodeState(
 ## <a name="remarks"></a>Açıklamalar
  JustMyCode olan yalnızca bir kullanıcıya ait kodu hata ayıklama ve sistem kodu gibi tüm ara kod yoksayılıyor kavramı — kaynak kodu, sistem kodunu kullanılabilir olsa bile.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c96d8b94142f9751412df90d3e46240631aa96f9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876493"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205946"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Kendi belirteci verilen bir türü alır.
@@ -41,22 +44,18 @@ int GetTypeFromToken(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`appDomain`
+## <a name="parameters"></a>Parametreler
+`appDomain`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
-`guidModule`
+`tdToken`\
+[in] Belirteci alınacak tür.
 
- [in] Modülün benzersiz tanımlayıcısı.
-
-`tdToken`
-
- [in] Belirteci alınacak tür.
-
-`ppField`
-
- [out] Tarafından temsil edilen türünü döndürüyor [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppField`\
+[out] Tarafından temsil edilen türünü döndürüyor [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -90,5 +89,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

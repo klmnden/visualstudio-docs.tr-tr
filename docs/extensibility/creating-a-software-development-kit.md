@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891231"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177338"
 ---
 # <a name="create-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilirsiniz API koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, projeye ilgili tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, API'ler, Visual Studio'da kullanılabilir.
@@ -34,7 +34,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
  Platform SDK'larını, bir platform için uygulamalar geliştirmek için gereklidir. Örneğin, [!INCLUDE[win81](../debugger/includes/win81_md.md)] uygulamaları geliştirmek için SDK'sı gereklidir [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Yükleme
- Tüm platform SDK'ları, yüklü*HKLM\Software\Microsoft\Microsoft SDK'ları\\[TPV] [TPI] \v\\ @InstallationFolder [SDK kök] =*. Buna [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK'sı yüklü *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Tüm platform SDK'ları, yüklü *HKLM\Software\Microsoft\Microsoft SDK'ları\\[TPV] [TPI] \v\\ @InstallationFolder [SDK kök] =*. Buna [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK'sı yüklü *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Düzen
  Platform SDK'ları aşağıdaki düzen olacaktır:
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Genel SDK ürün adı. Örneğin, [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK'sı, SDK ürünleri ailesi, "Microsoft.WinJS" aynı ailesine ait "Microsoft.WinJS.1.0" ve "Microsoft.WinJS.2.0" adlandırılır. Bu öznitelik, bu bağlantı kurmak Visual Studio ve MSBuild sağlar. Bu öznitelik yoksa, SDK adı ürün ailesi adı olarak kullanılır.
 
-3. Frameworkıdentity: Bu özniteliğin değeri, alıcı uygulamanın bildirimine yerleştirilir bir veya daha fazla Windows bileşeni kitaplıklarındaki bir bağımlılık belirtir. Bu öznitelik, yalnızca Windows bileşeni kitaplıklar için geçerlidir.
+3. Frameworkıdentity: Bir veya daha fazla Windows bileşeni kitaplıklarını temel bir bağımlılık belirtir. Bu özniteliğin değeri, alıcı uygulamanın bildirimine yerleştirilir. Bu öznitelik, yalnızca Windows bileşeni kitaplıklar için geçerlidir.
 
 4. TargetFramework: Başvuru Yöneticisi ve araç kullanılabilir SDK'lar belirtir. Bu örneğin hedef framework takma ad, noktalı virgül ile ayrılmış bir listesini, ".NET Framework, sürüm = v2.0; .NET Framework, sürüm v4.5.1 =". Aynı hedef framework'ün çeşitli sürümlerinden belirtilirse, başvuru Yöneticisi filtreleme amaçlı için belirtilen en düşük sürümü kullanır. Örneğin, ".NET Framework, sürüm v2.0; = .NET Framework, sürüm v4.5.1 =" belirtilirse, başvuru Yöneticisi'ni kullanır ".NET Framework, sürüm = v2.0". Belirli hedef çerçeve profilini belirtilirse, filtreleme amaçlı için yalnızca bu profili başvuru Yöneticisi tarafından kullanılır. Örneğin, "Silverlight, sürüm = v4.0, profili WindowsPhone =" belirtilen filtreler yalnızca Windows Phone profilinde; başvuru Yöneticisi Silverlight 4.0 Framework'ün tamamını hedefleyen bir proje başvuru Yöneticisi'nde SDK görmez.
 

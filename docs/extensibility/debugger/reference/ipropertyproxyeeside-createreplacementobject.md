@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6250c06315c7b4e9437ecd577f961fb3f0ee7953
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458132"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210107"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 İfade değerlendirici (EE) için belirli bir veri nesnesinin bir kopyasını oluşturur.
@@ -42,13 +42,11 @@ int CreateReplacementObject(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `dataIn`\
+`dataIn`\
+[in] Bir [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) kopyalanacak verileri tutan nesne.
 
- [in] Bir [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) kopyalanacak verileri tutan nesne.
-
- `dataOut`\
-
- [out] Yeni bir `IEEDataStorage` nesne.
+`dataOut`\
+[out] Yeni bir `IEEDataStorage` nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

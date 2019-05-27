@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13085a14a8ef7684056897dd2bb8d049e82fe94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8b48051c6126c5ca185ef10fdfa3b5022d97ef2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875192"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203295"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Olay alıcısı belge öznitelikleri güncelleştirildiğini bildirir.
@@ -36,14 +39,13 @@ int onUpdateDocumentAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `textdocattr`
-
- [in] Bayraklarının bir birleşimi [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) belgenin güncelleştirilmiş özniteliklerini belirten sabit listesi.
+## <a name="parameters"></a>Parametreler
+`textdocattr`\
+[in] Bayraklarının bir birleşimi [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) belgenin güncelleştirilmiş özniteliklerini belirten sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

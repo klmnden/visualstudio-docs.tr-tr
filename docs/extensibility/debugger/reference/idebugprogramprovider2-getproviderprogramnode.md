@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 641a3420dac230a62e7a6ba509547ba85efee372
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459026"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203747"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Belirli bir programı program düğümünü alır.
@@ -50,9 +50,8 @@ int GetProviderProgramNode(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `Flags`\
-
- [in] Bayraklarının bir birleşimi [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) sabit listesi. Bu çağrı için tipik aşağıdaki bayraklar:
+`Flags`\
+[in] Bayraklarının bir birleşimi [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) sabit listesi. Bu çağrı için tipik aşağıdaki bayraklar:
 
 |Bayrağı|Açıklama|
 |----------|-----------------|
@@ -60,25 +59,20 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Arayan şu anda hata ayıklaması (taşıma hakkında ek bilgi, her düğüm için de döndürülür).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Arayan bağlı, ancak hata ayıklayıcı tarafından başlatılan değil.|
 
- `pPort`\
+`pPort`\
+[in] Çağırma işlemi bağlantı noktası çalışıyor.
 
- [in] Çağırma işlemi bağlantı noktası çalışıyor.
+`processId`\
+[in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) programını içeren işlemin Kimliğini söz konusu tutan yapı.
 
- `processId`\
+`guidEngine`\
+[in] GUID (varsa) programı iliştirildiği hata ayıklama altyapısı.
 
- [in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) programını içeren işlemin Kimliğini söz konusu tutan yapı.
+`programId`\
+[in] Program düğüm alınacağı program kimliği.
 
- `guidEngine`\
-
- [in] GUID (varsa) programı iliştirildiği hata ayıklama altyapısı.
-
- `programId`\
-
- [in] Program düğüm alınacağı program kimliği.
-
- `ppProgramNode`\
-
- [out] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) istenen program düğümü temsil eden nesne.
+`ppProgramNode`\
+[out] Bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) istenen program düğümü temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874604"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201156"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Hata ayıklama olaylarını bildirim gönderir.
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pEngine`
+## <a name="parameters"></a>Parametreler
+`pEngine`\
+[in] Bir [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) bu olayı gönderirken hata ayıklama altyapısı (DE) temsil eden nesne. Bir DE out bu parametreyi doldurmak için gereklidir.
 
- [in] Bir [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) bu olayı gönderirken hata ayıklama altyapısı (DE) temsil eden nesne. Bir DE out bu parametreyi doldurmak için gereklidir.
+`pProcess`\
+[in] Bir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) olayın gerçekleştiği işlemini temsil eden nesne. Bu parametre oturum hata ayıklama Yöneticisi (SDM) tarafından doldurulur. Bir DE, bu parametre için null değeri her zaman geçirir.
 
- `pProcess`
+`pProgram`\
+[in] Bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) programın bu olay gerçekleştiği temsil eden nesne. Çoğu olaylar için bu parametre null bir değer değil.
 
- [in] Bir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) olayın gerçekleştiği işlemini temsil eden nesne. Bu parametre oturum hata ayıklama Yöneticisi (SDM) tarafından doldurulur. Bir DE, bu parametre için null değeri her zaman geçirir.
+`pThread`\
+[in] Bir [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) bu olay gerçekleştiği iş parçacığını temsil eden nesne. Olayları durdurmak için yığın çerçevesinin bu parametresinden alındıkça Bu parametre bir null değer olamaz.
 
- `pProgram`
+`pEvent`\
+[in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) hata ayıklama olayı temsil eden nesne.
 
- [in] Bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) programın bu olay gerçekleştiği temsil eden nesne. Çoğu olaylar için bu parametre null bir değer değil.
+`riidEvent`\
+[in] Hangi olay arabirimi almak için tanımlayan GUID `pEvent` parametresi.
 
- `pThread`
-
- [in] Bir [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) bu olay gerçekleştiği iş parçacığını temsil eden nesne. Olayları durdurmak için yığın çerçevesinin bu parametresinden alındıkça Bu parametre bir null değer olamaz.
-
- `pEvent`
-
- [in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) hata ayıklama olayı temsil eden nesne.
-
- `riidEvent`
-
- [in] Hangi olay arabirimi almak için tanımlayan GUID `pEvent` parametresi.
-
- `dwAttrib`
-
- [in] Bayraklarının bir birleşimi [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) sabit listesi.
+`dwAttrib`\
+[in] Bayraklarının bir birleşimi [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -85,7 +81,7 @@ int Event( 
 
  Bir olay zaman uyumsuz olup olmamasına bakılmaksızın tüm hata ayıklama olayları zaman uyumsuz olarak gönderilir. Bir DE bu yöntemini çağırdığında, yalnızca olay alındı olmadığını dönüş değeri olay olup olmadığını işlendi, göstermez. Aslında, bu yöntem döndürüldüğünde çoğu durumda, olay işlenmedi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

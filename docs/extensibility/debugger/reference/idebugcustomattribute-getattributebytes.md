@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02bc1245026480f97bcc21f1af086f87284022df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875858"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205419"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Bir blobu bayt olarak öznitelik bilgileri alır.
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppBlob`
+## <a name="parameters"></a>Parametreler
+`ppBlob`\
+[out içinde] Öznitelik bayt ile doldurulmuş bir dizi.
 
- [out içinde] Öznitelik bayt ile doldurulmuş bir dizi.
-
- `pdwLen`
-
- [out içinde] Bayt olarak döndürülecek en fazla sayısını belirtir `ppBlob` dizisi ve diziye gerçekte yazılan bayt sayısını döndürür.
+`pdwLen`\
+[out içinde] Bayt olarak döndürülecek en fazla sayısını belirtir `ppBlob` dizisi ve diziye gerçekte yazılan bayt sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
@@ -55,5 +56,5 @@ int GetAttributeBytes(
 
  Öznitelik bayt özel özniteliğinin ham verileri temsil eder.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

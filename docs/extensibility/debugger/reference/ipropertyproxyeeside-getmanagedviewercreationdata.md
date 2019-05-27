@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8ae4a20735c02f564cbf5c749247ec16572c034
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458145"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198819"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Bu Görüntüleyici bir örneğini oluşturmak için bu özellik türü Görüntüleyicisi hakkında bilgi alır.
@@ -50,29 +50,23 @@ int GetManagedViewerCreationData(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `assemName`\
+`assemName`\
+[out] Bu nesne bulunduran derlemenin adını döndürür.
 
- [out] Bu nesne bulunduran derlemenin adını döndürür.
+`assemBytes`\
+[out] Döndürür bir [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (Bu, bir null değer yok bayt mevcutsa) bu nesnenin derleme baytları içeren nesne.
 
- `assemBytes`\
+`assemPdb`\
+[out] Döndürür bir `IEEDataStorage` sembolü içeren bir nesne, bu nesne için (Bu, bir null değer hiçbir sembol deposu varsa) bilgileri depolar.
 
- [out] Döndürür bir [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (Bu, bir null değer yok bayt mevcutsa) bu nesnenin derleme baytları içeren nesne.
+`className`\
+[out] Bu nesneyi içeren sınıf adını döndürür.
 
- `assemPdb`\
+`alr`\
+[out] Bir değer döndürür [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) derleme konumunu belirten sabit listesi.
 
- [out] Döndürür bir `IEEDataStorage` sembolü içeren bir nesne, bu nesne için (Bu, bir null değer hiçbir sembol deposu varsa) bilgileri depolar.
-
- `className`\
-
- [out] Bu nesneyi içeren sınıf adını döndürür.
-
- `alr`\
-
- [out] Bir değer döndürür [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) derleme konumunu belirten sabit listesi.
-
- `replacementOk`\
-
- [out] Sıfır olmayan döndürür (`TRUE`) bu nesnenin değeri değiştirilebilir; sıfır (`FALSE`) nesne salt okunur ise.
+`replacementOk`\
+[out] Sıfır olmayan döndürür (`TRUE`) bu nesnenin değeri değiştirilebilir; sıfır (`FALSE`) nesne salt okunur ise.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

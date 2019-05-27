@@ -1,5 +1,5 @@
 ---
-title: WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
+title: WPF ve Entity Framework 6 ile basit veri uygulaması
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568684"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177374"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 kullanarak basit veri uygulaması oluşturma
 
 Bu izlenecek yol, Visual Studio'da bir temel "veriler üzerinden formlar" uygulama oluşturma işlemi gösterilmektedir. Uygulama, SQL Server LocalDB, Northwind veritabanı, Entity Framework 6 ve Windows Presentation Foundation kullanır. Temel veri bağlama ile ana öğe-ayrıntı görünümü nasıl gösterir ve ayrıca özel bir bağlama Gezgin düğmeleri için sahip **sonrakine Taşı**, **öncekine taşı**, **taşımak içinbaşlayan**, **Sonuna taşı**, **güncelleştirme** ve **Sil**.
 

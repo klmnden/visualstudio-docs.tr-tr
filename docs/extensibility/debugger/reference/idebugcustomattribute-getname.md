@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2556a424e5109e75b667e9f32ecac5cc26ca781b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921888"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205333"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Özel özniteliğin adını alır.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `bstrName`
-
- [out] Özel özniteliğin adını içeren bir dize döndürür.
+## <a name="parameters"></a>Parametreler
+`bstrName`\
+[out] Özel özniteliğin adını içeren bir dize döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
@@ -47,5 +49,5 @@ int GetName(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem tarafından döndürülen adlandırılmış bir öznitelik bildirmek için kullanılan sınıf adına karşılık gelir. C# bir bildiriminde kullanıldığında bir özel öznitelik adı kesilmesini "Özniteliği" soneki sağladığından, bu tam olarak bir özel öznitelik sınıfı adını karşılık gelebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

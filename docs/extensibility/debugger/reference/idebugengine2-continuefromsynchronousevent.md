@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fb49e91b34b0847e5209ede471aef54544c1d74f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875330"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207738"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Oturum hata ayıklama Yöneticisi (SDM) daha önce SDM için hata ayıklama altyapısı (DE) tarafından gönderilen bir zaman uyumlu hata ayıklama olayı alınıp işlendiğini olduğunu belirtmek için çağrılır.
@@ -36,10 +39,9 @@ HRESULT ContinueFromSynchronousEvent(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pEvent`
-
- [in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , hata ayıklayıcı şimdi devam etmelidir daha önce gönderilen zaman uyumlu olay temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`pEvent`\
+[in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , hata ayıklayıcı şimdi devam etmelidir daha önce gönderilen zaman uyumlu olay temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -86,6 +88,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

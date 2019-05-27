@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d165fedf791e26cf291ed4b6255de81873953a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0e9ac6654748e05781db6967b93e3d3b4068d61
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871822"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209114"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 Bir bağlantı noktası üzerinde çalıştırılan belirtilen işlemi alır.
@@ -38,19 +41,17 @@ int GetProcess( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ProcessId`
+## <a name="parameters"></a>Parametreler
+`ProcessId`\
+[in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) yapı işlemi tanımlayıcısını belirtir.
 
- [in] Bir [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) yapı işlemi tanımlayıcısını belirtir.
-
- `ppProcess`
-
- [out] Döndürür bir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) işlemi temsil eden nesne.
+`ppProcess`\
+[out] Döndürür bir [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) işlemi temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

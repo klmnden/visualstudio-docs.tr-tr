@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc51b89061dca3c0d3026b391b8d6b0106421542
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413154"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202342"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Bu yöntem geçerli Düzenle ve devam et işleminin durumunu alır. Özel bağlantı noktası sağlayıcısı her zaman döndürmelidir `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCAvailableState(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pReason`
-
- [out] Bir değer [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) sabit listesi.
+## <a name="parameters"></a>Parametreler
+`pReason`\
+[out] Bir değer [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
@@ -50,7 +52,7 @@ int GetENCAvailableState(
 ## <a name="remarks"></a>Açıklamalar
  Bu durum etkilenebilir [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

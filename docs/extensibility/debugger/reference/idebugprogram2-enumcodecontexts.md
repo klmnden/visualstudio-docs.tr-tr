@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88eb307836fa2a340ec3ba99577fc0be76352958
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917390"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200394"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Belirli bir pozisyon kaynak dosyada kod bağlamları listesini alır.
@@ -38,14 +41,11 @@ int EnumCodeContexts( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pDocPos`
+## <a name="parameters"></a>Parametreler
+`pDocPos`\
+[in] Bir [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) IDE'ye bilinen kaynak dosyada soyut bir konumu temsil eden nesne.
 
- [in] Bir [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) IDE'ye bilinen kaynak dosyada soyut bir konumu temsil eden nesne.
-
- `ppEnum`
-
- [out] Döndürür bir [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) kod bağlamları listesini içeren nesne.
+`ppEnum` [out] Döndürür bir [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) kod bağlamları listesini içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -53,7 +53,7 @@ int EnumCodeContexts( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, hata ayıklama oturumu Yöneticisi (SDM) sağlar. veya bir kaynak dosya konumu kod konuma eşlemek için IDE. Kaynak birden fazla blok kod (C++ şablonları gibi) oluşturuyorsa, birden fazla kod bağlamı döndürülür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

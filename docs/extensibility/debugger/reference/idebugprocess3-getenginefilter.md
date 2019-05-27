@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30dfd7b9605cf26f5cc562e6768d1f035f6b484e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7dd35666120924de9b5eb712a784c6765aa347b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917682"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208852"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Kullanılabilir hata ayıklama altyapıları için benzersiz tanımlayıcıları dizisini alır.
@@ -35,14 +38,13 @@ public int GetEngineFilter(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pEngineArray`
-
- [out] Hata ayıklama altyapıları için benzersiz tanımlayıcıları içeren bir yapıya başvurusu.
+## <a name="parameters"></a>Parametreler
+`pEngineArray`\
+[out] Hata ayıklama altyapıları için benzersiz tanımlayıcıları içeren bir yapıya başvurusu.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)

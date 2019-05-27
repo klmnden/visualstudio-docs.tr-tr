@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfec12193efda49a520a40418b93f2d4cef6b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca86175d34cc1bfd54882adda7e1f7cb464fb22f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870200"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212643"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 Bu program için bir GUID alır.
@@ -36,10 +39,9 @@ int GetProgramId( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pguidProgramId`
-
- [out] Döndürür `GUID` Bu program için.
+## <a name="parameters"></a>Parametreler
+`pguidProgramId`\
+[out] Döndürür `GUID` Bu program için.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int GetProgramId( 
 ## <a name="remarks"></a>Açıklamalar
  Hata ayıklama altyapısı (DE) geçirilen ilk program tanımlayıcısı döndürmelidir [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) veya [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) yöntemleri. Bu program kimliği arasında hata ayıklayıcı bileşenleri sağlar.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

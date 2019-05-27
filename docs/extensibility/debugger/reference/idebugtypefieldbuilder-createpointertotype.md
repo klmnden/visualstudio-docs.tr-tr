@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1e93cfc4c8a1ddb618286f79513874f8f89a9481
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226008"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199429"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Belirtilen tür işaretçisi oluşturur.
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pTypeField`\
+`pTypeField`\
+[in] İşaret türü. Tarafından temsil edilen [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabirimi.
 
- [in] İşaret türü. Tarafından temsil edilen [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) arabirimi.
-
- `pPtrToTypeField`\
-
- [out] Yeni bir tarafından temsil edilen işaretçinin döndürür **IDebugField** nesne.
+`pPtrToTypeField`\
+[out] Yeni bir tarafından temsil edilen işaretçinin döndürür **IDebugField** nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

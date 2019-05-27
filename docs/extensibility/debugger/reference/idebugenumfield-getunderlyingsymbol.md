@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b6b90f388f93bc7cfc2c246c529217bcdb00fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: be45bf7ef78b00b5c0c381be54bf15ccea773144
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920270"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200145"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 Bu yöntem döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , numaralandırma adını temsil eder.
@@ -36,10 +39,9 @@ int GetUnderlyingSymbol(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppField`
-
- [out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) açıklayan bu sabit listesi adı.
+## <a name="parameters"></a>Parametreler
+`ppField`\
+[out] Döndürür [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) açıklayan bu sabit listesi adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int GetUnderlyingSymbol(
 ## <a name="remarks"></a>Açıklamalar
  Numaralandırma adını kullanarak bir bellek konumuna bağlı sabit listesi türü de içeren [bağlama](../../../extensibility/debugger/reference/idebugbinder-bind.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

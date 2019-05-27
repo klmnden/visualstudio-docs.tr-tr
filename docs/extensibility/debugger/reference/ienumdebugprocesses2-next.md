@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bed5cb609c2e805b2b9872ce6ada8baf0b6a295b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 508c65ce211fcf9a187af0d41576276fc6ce6541
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225441"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203339"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 Sabit listesinden alınmış sonraki öğe kümesini döndürür.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `celt`\
+`celt`\
+[in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
 
- [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
+`rgelt`\
+[out içinde] Dizi [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) doldurulacak öğeleri.
 
- `rgelt`\
-
- [out içinde] Dizi [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) doldurulacak öğeleri.
-
- `pceltFetched`\
-
- [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
+`pceltFetched`\
+[out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.

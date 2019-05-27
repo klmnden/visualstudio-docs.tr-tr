@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Azure DevOps Visual Studio abonesi olarak nasıl kullanabileceğinizi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945153"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177727"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Azure DevOps avantajları
 
@@ -26,12 +26,16 @@ Oturum açtığınızda Azure kullanarak DevOps için Visual Studio aboneliğini
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart, aylık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup>, FTE  | Azure panoları & depoları (Temel), Azure (şirket içinde barındırılan) işlem hatları Azure Test planları, Azure Yapıtları       |  Evet          |
-| Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                        | Azure panoları & depoları (Temel)                                                            |  Evet          |
+| Visual Studio Enterprise (standart, aylık bulut)   | VL, Azure, perakende, seçili NFR<sup>1</sup>, FTE  | Azure panoları & depoları (Temel), Azure, Test planları, Azure Yapıtları<sup>2</sup>, Azure (şirket içinde barındırılan) işlem hatları       |  Evet          |
+| Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                        | Azure panoları & depoları (Temel), Azure yapılarını<sup>2</sup>                                                            |  Evet          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve geliştirici Hizmetleri için. Dışlar: MCT yazılım ve Hizmetleri düşünün.*
+
+<sup>2</sup>*hiçbir ücret ödemeden 2 GB içerir* 
+
+
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.

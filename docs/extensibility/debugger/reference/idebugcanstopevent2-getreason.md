@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f253fc622beb6eee3490b77a1531b0b2096f14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1bfc8b813f1016f3c040d47120675f881b92020
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877049"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203134"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 Hata ayıklama altyapısı (DE) neden durdurmak ister nedenini alır.
@@ -36,10 +39,9 @@ int GetReason( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pcr`
-
- [out] Bir değer döndürür [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) bu olay nedenini açıklayan sabit listesi.
+## <a name="parameters"></a>Parametreler
+`pcr`\
+[out] Bir değer döndürür [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) bu olay nedenini açıklayan sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -49,7 +51,7 @@ int GetReason( 
 
  Durdurma nedeni olabilir `CANSTOP_ENTRYPOINT`, DE başka bir deyişle, bir giriş noktası sınırına veya `CANSTOP_STEPIN`, bir işleve kalkan DE anlamına gelir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)
 - [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6f73e31e7e15a2ffd86e2d969f98a686fbd004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b775963f9ab708e92a37cda9a3ff50bc67c9b2cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842938"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211756"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Bir hizmet nesnesi verilen benzersiz tanımlayıcısını alır.
@@ -37,14 +40,12 @@ int GetService (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `uid`
+## <a name="parameters"></a>Parametreler
+`uid`\
+[in] Alınacak hizmet benzersiz tanımlayıcısı.
 
- [in] Alınacak hizmet benzersiz tanımlayıcısı.
-
- `ppService`
-
- [out] Hizmeti temsil eden bir nesne döndürür.
+`ppService`\
+[out] Hizmeti temsil eden bir nesne döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -52,5 +53,5 @@ int GetService (
 ## <a name="remarks"></a>Açıklamalar
  Bu hizmetleri başka bir ifade değerlendiricisi ' elde etmek için bir üçüncü taraf ifade değerlendiricisi tarafından kullanılabilir. Örneğin, bu yöntem, arabirim Görselleştirici hizmeti için varsayılan ifade değerlendiricisi ' elde etmek için kullanılabilir. Üçüncü taraf ifade değerlendiricilerini bu arabirimi uygulayan gerek düşüktür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5f39d1d7243c887c131107a3abe2c103de163cc8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921652"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204919"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 Bu çözümü akış yönergelerinde boyutunu alır.
@@ -36,10 +39,9 @@ int GetSize( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pnSize`
-
- [out] Yönergeleri boyutunu döndürür.
+## <a name="parameters"></a>Parametreler
+`pnSize`\
+[out] Yönergeleri boyutunu döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int GetSize( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntemi tarafından döndürülen değer, bir dizi ayırmak için kullanılabilir [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) geçirilerek yapılar [okuma](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

@@ -22,7 +22,8 @@
 ## [Yeni Projeler oluşturuluyor](create-new-projects.md)
 ## [Proje Öğeleri ekleme ve kaldırma](add-and-remove-project-items.md)
 ## [Çözümleri ve Proje özelliklerini yönetme](managing-solutions-and-project-properties.md)
-## [Bir projedeki başvuruları yönetme](managing-references-in-a-project.md)
+## Bir projedeki başvuruları yönetme
+### [Genel bakış](managing-references-in-a-project.md)
 ### [İzlenecek yol - Projenize NuGet paketi ekleme](nuget-walkthrough.md)
 ## [Uygulama Kaynaklarını Yönetme](managing-app-resources.md)
 ## [Nasıl yapılır: Birden çok çözüm veya örneği açma](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Derleme Eylemleri](build-actions.md)
 ## [Nasıl yapılır: Birden çok başlangıç projesi ayarlama](set-startup-projects.md)
 ## [Derleme Sistemini Özelleştirme](customizing-build-system.md)
-## [Yapılandırmalar](configurations.md)
+## Yapılandırmalar
+### [Yapı yapılandırmalarını anlama](configurations.md)
 ### [Yapılandırmaları oluşturma ve düzenleme](create-and-edit-configurations.md)
 
 # Sürüm Denetimi
@@ -67,14 +69,18 @@
 
 # İş yükleri
 ## [Kullanılabilir İş Yükleri](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [.NET Core Desteği](net-core-support.md)
+### [İlk ASP.NET Core Uygulamanızı Oluşturma](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript ve TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Genel bakış](azure-workload.md)
 ### [Azure İşlevleri’ne Giriş](azure-functions.md)
 ### [Öğretici: Azure İşlevleri](azure-functions-lab.md)
 ### [Bağlı Hizmetler](connected-services.md)
-## [Unity Oyun Geliştirme](unity-tools.md)
+## Unity Oyun Geliştirme
+### [Unity Oyun Geliştirme](unity-tools.md)
 ### [Kurulum](setup-vsmac-tools-unity.md)
 ### [Unity Araçlarını Kullanma](using-vsmac-tools-unity.md)
 ### [Unity’de .NET 4.x kullanma](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

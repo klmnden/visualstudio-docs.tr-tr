@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ca994aaf03103e6d668d78a7d3a683ddbc988eb7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457425"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210090"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Bir başvuruyu bir dize değerini ayarlar. Daha sonraki kullanımlar için ayrılmıştır.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pszValue`\
+`pszValue`\
+[in] Bir dize değeri.
 
- [in] Bir dize değeri.
+`dwRadix`\
+[in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
 
- `dwRadix`\
-
- [in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
-
- `dwTimeout`\
-
- [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
+`dwTimeout`\
+[in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.

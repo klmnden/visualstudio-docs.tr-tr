@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 961388298dffa936d00b948424ae7312293e72ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458706"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212967"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Seçili çocuğunu başvuru listesini alın. Daha sonraki kullanımlar için ayrılmıştır.
@@ -50,29 +50,23 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `dwFields`\
+`dwFields`\
+[in] Bayraklarının bir birleşimi [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) hangi alanların numaralandırılmış belirten numaralandırma [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapılardır doldurulmalıdır.
 
- [in] Bayraklarının bir birleşimi [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) hangi alanların numaralandırılmış belirten numaralandırma [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapılardır doldurulmalıdır.
+`dwRadix`\
+[in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
 
- `dwRadix`\
+`dwAttribFilter`\
+[in] Bayraklarının bir birleşimi [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) birlikte bir filtre olarak kullanılan sabit listesi `pszNameFilter` sıralanması hangi yapılar seçmek için parametre.
 
- [in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
+`pszNameFilter`\
+[in] "Birlikte MyX" gibi bir filtre belirten bir dize `dwAttribFilter` sıralanması yapıları seçmek için parametre.
 
- `dwAttribFilter`\
+`dwTimeout`\
+[in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
 
- [in] Bayraklarının bir birleşimi [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) birlikte bir filtre olarak kullanılan sabit listesi `pszNameFilter` sıralanması hangi yapılar seçmek için parametre.
-
- `pszNameFilter`\
-
- [in] "Birlikte MyX" gibi bir filtre belirten bir dize `dwAttribFilter` sıralanması yapıları seçmek için parametre.
-
- `dwTimeout`\
-
- [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
-
- `ppEnum`\
-
- [out] Döndürür bir [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) istenen alt özellikleri listesini içeren nesne.
+`ppEnum`\
+[out] Döndürür bir [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) istenen alt özellikleri listesini içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.

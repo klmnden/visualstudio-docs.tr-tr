@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1c88d5b719b8d800ef13f890bb65cd5f6b68d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917495"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200468"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Hata ayıklama işlemi belirtilen özelliğin değerini için bu yöntemi sorgular.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parametreler
- `celt`
+## <a name="parameters"></a>Parametreler
+`celt`\
+[in] Özellik tanımları ve özellik değerlerini içeren bir dizi boyutu.
 
- [in] Özellik tanımları ve özellik değerlerini içeren bir dizi boyutu.
-
- `dwPropType`
-
- [in] Sorgulanan özelliklerini tanımlarını içeren bir dizi. Olası değerler şunlardır:
+`dwPropType`\
+[in] Sorgulanan özelliklerini tanımlarını içeren bir dizi. Olası değerler şunlardır:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Özellik değerlerini içeren bir dizi.
+`pvarPropValue`\
+[out] Özellik değerlerini içeren bir dizi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -59,5 +61,5 @@ int QueryProperties(
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem nadiren kullanılır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

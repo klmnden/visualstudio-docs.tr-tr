@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62c24adcc94b6dff82d3529658b563f811745c28
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a7697f22dc6c40b9b4e3de08bf6f27f0ed459482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226544"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207203"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Bu yöntem, bir belge bağlamına bir hata ayıklama adresiyle eşleşir.
@@ -42,13 +42,11 @@ int GetContextFromAddress(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pAddress`\
+`pAddress`\
+[in] Hata ayıklama adresi tarafından temsil edilen bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
 
- [in] Hata ayıklama adresi tarafından temsil edilen bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
-
- `ppDocContext`\
-
- [out] Tarafından temsil edilen bir belge bağlamını döndürür bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi.
+`ppDocContext`\
+[out] Tarafından temsil edilen bir belge bağlamını döndürür bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

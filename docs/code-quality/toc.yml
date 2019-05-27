@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: Statik kod analizinden geçiş
               href: fxcop-analyzers.yml
+            - name: Taşınan kurallar
+              href: fxcop-rule-port-status.md
         - name: Çözümleyiciler hakkında SSS
           href: analyzers-faq.md
         - name: Roslyn çözümleyicilerini yükleme

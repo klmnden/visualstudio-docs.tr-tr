@@ -1,5 +1,5 @@
 ---
-title: Paketleme ve dağıtım bilgileri proje öğelerinde sağlama | Microsoft Docs
+title: Proje öğelerinde paketleme ve dağıtım bilgileri
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550507"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177705"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proje öğelerinde paketleme ve dağıtım bilgileri sağlayın
   Tüm SharePoint Proje öğeleri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] için SharePoint projesi dağıtıldığında ek veri sağlamak için kullanabileceğiniz özelliklere sahiptir. Bu özellikler aşağıdaki gibidir:

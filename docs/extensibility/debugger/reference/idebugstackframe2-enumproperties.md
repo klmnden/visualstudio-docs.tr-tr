@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 427e76036329eef95398787a87d795538c480ba7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457495"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208710"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Yığın çerçevesinde yerel değişkenler gibi ilişkili özellikleri için bir numaralandırıcı oluşturur.
@@ -50,29 +50,23 @@ int EnumProperties ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Bayraklarının bir birleşimi [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) hangi alanların numaralandırılmış belirten numaralandırma [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılardır doldurulmalıdır.
 
- [in] Bayraklarının bir birleşimi [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) hangi alanların numaralandırılmış belirten numaralandırma [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılardır doldurulmalıdır.
+`nRadix`\
+[in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
 
- `nRadix`\
+`refiid`\
+[in] Bir GUID, seçmek için kullanılan bir filtre [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılardır, gibi sıralanması `guidFilterLocals`.
 
- [in] Sayısal yedeklenmesine biçimlendirmede kullanılacak sayı tabanı.
+`dwTimeout`\
+[in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
 
- `refiid`\
+`pcelt`\
+[out] Numaralandırılan özellikleri sayısını döndürür. Arama ile aynıdır [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) yöntemi.
 
- [in] Bir GUID, seçmek için kullanılan bir filtre [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılardır, gibi sıralanması `guidFilterLocals`.
-
- `dwTimeout`\
-
- [in] Bu yöntemden geri dönmeden önce beklenecek milisaniye cinsinden en uzun süre. Kullanım `INFINITE` süresiz bekleme.
-
- `pcelt`\
-
- [out] Numaralandırılan özellikleri sayısını döndürür. Arama ile aynıdır [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) yöntemi.
-
- `ppEnum`\
-
- [out] Döndürür bir [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) istenen özellikler listesini içeren nesne.
+`ppEnum`\
+[out] Döndürür bir [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) istenen özellikler listesini içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

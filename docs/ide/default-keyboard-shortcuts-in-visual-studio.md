@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb21b08af13d386ae6bd506b96be33ac0a2fb8a7
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962047"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177609"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -125,7 +125,8 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**CTRL + SHIFT + Alt + F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (hata ayıklama sırasında: Bir adım üzerinde eylem gerçekleştirir)|
+|Debug.StepOver|**F10** (değil hata ayıklama sırasında: Hata ayıklamasını başlatır ve kullanıcı kodu ilk satırında durdurur)|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**Shift + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|

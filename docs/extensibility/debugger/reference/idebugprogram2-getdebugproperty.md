@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18aa5611e7440322e08828060714b4fad954b89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 660d8f40b2a9d3ead0010c1139a3d887d0524aa9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870442"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212321"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 Programın özelliklerini alır.
@@ -36,10 +39,9 @@ int GetDebugProperty( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppProperty`
-
- [out] Döndürür bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) programın özellikleri temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppProperty`\
+[out] Döndürür bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) programın özellikleri temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -49,7 +51,7 @@ int GetDebugProperty( 
 
  Bir program herhangi sayısı ve türü ile açıklanan ek özellikler getirebilir `IDebugProperty2` arabirimi. Bir IDE ek program özelliklerinin genel özellik tarayıcı kullanıcı arabirimi aracılığıyla görüntülenebilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

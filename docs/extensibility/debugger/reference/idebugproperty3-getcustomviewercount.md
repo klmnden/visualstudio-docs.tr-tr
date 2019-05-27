@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4e6d6ddbc87a2219711a93b54a699df3c5511ab2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458835"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200198"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Bu özellik için kullanılabilir özel görüntüleyiciler sayısını alır.
@@ -41,8 +41,7 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Parametreler
 `pcelt`\
-
- [out] Bu özellik için kullanılabilir özel görüntüleyiciler sayısı.
+[out] Bu özellik için kullanılabilir özel görüntüleyiciler sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

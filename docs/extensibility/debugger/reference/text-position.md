@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 960fa95f583ddafdc401432ff551e8597fb956bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 262f5209898ffa4d66087a1e9f1896df51a0c72a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458340"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212704"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Verilen metni satır ve sütun konumu açıklar.
@@ -44,11 +44,9 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>Üyeler
 
 `dwLine`\
-
 Kaynak dosyadaki satır dizini.
 
 `dwColumn`\
-
 Çizgi karakteri uzaklık.
 
 ## <a name="remarks"></a>Açıklamalar

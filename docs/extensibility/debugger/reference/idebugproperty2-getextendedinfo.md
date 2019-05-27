@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458886"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211600"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Genişletilmiş özelliği bilgilerini.
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in] Alınacak genişletilmiş bilgi türünü tanımlayan GUID. Açıklamalar, Ayrıntılar için bkz.
 
- [in] Alınacak genişletilmiş bilgi türünü tanımlayan GUID. Açıklamalar, Ayrıntılar için bkz.
-
- `pExtendedInfo`\
-
- [out] Döndürür bir `VARIANT` (C++) veya nesne (C#) genişletilmiş özellik bilgileri almak için kullanılabilir. Örneğin, bu parametre döndürebilir bir `IUnknown` için sorgulanabilir arabirimi bir [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) arabirimi. Açıklamalar, Ayrıntılar için bkz.
+`pExtendedInfo`\
+[out] Döndürür bir `VARIANT` (C++) veya nesne (C#) genişletilmiş özellik bilgileri almak için kullanılabilir. Örneğin, bu parametre döndürebilir bir `IUnknown` için sorgulanabilir arabirimi bir [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) arabirimi. Açıklamalar, Ayrıntılar için bkz.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür. Döndürür `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` almak için genişletilmiş bilgileri yoksa.

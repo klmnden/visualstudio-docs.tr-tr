@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ec34fc2bc8d7dea08580903788ef271f7167cf8a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199560"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Bu iş parçacığı tanımlayan özellikleri alır.
@@ -43,12 +43,10 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parametreler
 `dwFields`\
-
- [in] Bayraklarının bir birleşimi [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) hangi alanlarının belirleyen sabit listesi `ptp` doldurulacak olan.
+[in] Bayraklarının bir birleşimi [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) hangi alanlarının belirleyen sabit listesi `ptp` doldurulacak olan.
 
 `ptp`\
-
- [out içinde] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) iş parçacığı özelliklerini oturum girilir yapısının.
+[out içinde] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) iş parçacığı özelliklerini oturum girilir yapısının.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

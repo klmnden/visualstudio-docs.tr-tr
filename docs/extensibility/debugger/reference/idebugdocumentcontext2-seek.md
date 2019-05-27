@@ -1,54 +1,55 @@
 ---
 title: IDebugDocumentContext2::Seek | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::Seek
 helpviewer_keywords:
 - IDebugDocumentContext2::Seek
 ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f001eb73e3c24ac1c9f15a4bd2c37c8d2cbe660e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fbba9b1208ced73c24fbb7050bb4d7e2f8266d52
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875688"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201173"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Belge bağlamı belirli sayıda deyimleri veya satırları tarafından taşır.
 
-Belge bağlamı belirli sayıda deyimleri veya satırları tarafından taşır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp#  
-HRESULT Seek(   
-   int                      nCount,  
-   IDebugDocumentContext2** ppDocContext  
-);  
-```  
-  
-```cpp#  
-int Seek(   
-   int                        nCount,  
-   out IDebugDocumentContext2 ppDocContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `nCount`  
- [in] Deyimleri ya da isterseniz, belge bağlamına bağlı olarak taşımak için satır sayısı.  
-  
- `ppDocContext`  
- [out] Yeni bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) yeni konum nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Seek( 
+   int                      nCount,
+   IDebugDocumentContext2** ppDocContext
+);
+```
+
+```cpp
+int Seek( 
+   int                        nCount,
+   out IDebugDocumentContext2 ppDocContext
+);
+```
+
+## <a name="parameters"></a>Parametreler
+`nCount`\
+[in] Deyimleri ya da isterseniz, belge bağlamına bağlı olarak taşımak için satır sayısı.
+
+`ppDocContext`\
+[out] Yeni bir [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) yeni konum nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

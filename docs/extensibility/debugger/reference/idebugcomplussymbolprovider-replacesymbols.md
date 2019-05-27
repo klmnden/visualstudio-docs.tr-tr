@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b395f49a8f222edb97e43610ae625fd154d8f320
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922466"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206115"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Geçerli hata ayıklama sembolleri, belirtilen veri akışında değerlerle değiştirir.
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`ulAppDomainID`
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
-`guidModule`
-
- [in] Modülün benzersiz tanımlayıcısı.
-
-`pStream`
-
- [in] Yeni semboller içeren veri akışı.
+`pStream`\
+[in] Yeni semboller içeren veri akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

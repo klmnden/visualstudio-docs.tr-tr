@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 780f1c357ef4c8f8a8114689e7495f7882af9723
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875959"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205201"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Özel öznitelik adı verilen özel öznitelikler bayt sayısını alır.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pszCustomAttributeName`
+## <a name="parameters"></a>Parametreler
+`pszCustomAttributeName`\
+[in] Aranacak özel özniteliğin adını içeren bir dize.
 
- [in] Aranacak özel özniteliğin adını içeren bir dize.
+`ppBlob`\
+[out içinde] Özel öznitelik bayt ile doldurulmuş bir dizi.
 
- `ppBlob`
-
- [out içinde] Özel öznitelik bayt ile doldurulmuş bir dizi.
-
- `pdwLen`
-
- [out içinde] Bayt olarak döndürülecek en fazla sayısını belirtir `ppBlob` dizisi ve diziye gerçekte yazılan bayt sayısını döndürür.
+`pdwLen`\
+[out içinde] Bayt olarak döndürülecek en fazla sayısını belirtir `ppBlob` dizisi ve diziye gerçekte yazılan bayt sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür veya özel öznitelik yoksa, S_FALSE döndürür. Aksi takdirde bir hata kodu döndürür.
@@ -63,6 +63,6 @@ int GetCustomAttributeByName(
 
  Varsa `ppBlob` ve `pdwLen` parametreleri null bir değere ayarlamak, bu yöntem, özel özniteliği yalnızca mevcut olup olmadığını belirlemek için kullanılabilir. Daha kolay bir alternatif, ancak çağırmaktır [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1617bf6b2d2e50129998e61b2d05de593054d166
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43502bd66a136cc09a7deabe38ddee51a48ccbc9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921547"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204684"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Bu belge bağlamına içeren belgeyi alır.
@@ -36,10 +39,9 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppDocument`
-
- [out] Döndürür bir [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) bu belge bağlamına içeren belgeyi temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppDocument`\
+[out] Döndürür bir [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) bu belge bağlamına içeren belgeyi temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,6 +49,6 @@ int GetDocument( 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, belgelerin doğrudan IDE tedarik bu hata ayıklama altyapısı içindir. Aksi takdirde, bu yöntem döndürmelidir `E_NOTIMPL`.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

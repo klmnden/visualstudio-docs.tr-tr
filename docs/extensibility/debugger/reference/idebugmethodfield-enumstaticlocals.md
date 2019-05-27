@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb50271801d895ca73dbbc915ff95320183d032
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ad65d9300c45073aec049d9050a180d49bf5c17
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872917"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211963"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Yöntem statik yerel değişkenler için bir numaralandırıcı oluşturur.
@@ -36,10 +39,9 @@ int EnumStaticLocals(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppLocals`
-
- [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) statik yerel öğeleri listesini temsil eden nesne. Hiçbir statik yerel öğeler varsa, bir null değer döndürür.
+## <a name="parameters"></a>Parametreler
+`ppLocals`\
+[out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) statik yerel öğeleri listesini temsil eden nesne. Hiçbir statik yerel öğeler varsa, bir null değer döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür veya hiçbir statik yerel öğeler varsa S_FALSE döndürür. Aksi takdirde bir hata kodu döndürür.
@@ -47,7 +49,7 @@ int EnumStaticLocals(
 ## <a name="remarks"></a>Açıklamalar
  Her öğe bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) statik yerel öğeler farklı türleri temsil eden nesne. Çağrı [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) tam olarak hangi tür statik yerel bir nesneyi temsil belirlemek için her bir nesne üzerindeki yöntemi.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

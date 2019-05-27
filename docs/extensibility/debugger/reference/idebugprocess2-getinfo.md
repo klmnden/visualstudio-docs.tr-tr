@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2970a4d2c65c56ab2e16ca51dbca6556bee1d040
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871102"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202620"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 İşlemin bir açıklamasını alır.
@@ -38,19 +41,17 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `Fields`
+## <a name="parameters"></a>Parametreler
+`Fields`\
+[in] Değerleri birleşimi [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) hangi alanları belirten numaralandırma `pProcessInfo` parametresi olan doldurulmalıdır.
 
- [in] Değerleri birleşimi [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) hangi alanları belirten numaralandırma `pProcessInfo` parametresi olan doldurulmalıdır.
-
- `pProcessInfo`
-
- [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) işlemin bir açıklamasını oturum doldurulmuş yapısı.
+`pProcessInfo`\
+[out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) işlemin bir açıklamasını oturum doldurulmuş yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

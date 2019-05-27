@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c424dca7b20e6abe1afd419e9c156a400583b5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76e095c5c5b478c9901d90f0614cc4796ad028af
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875445"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207688"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 Bir hata ayıklama altyapısı (DE) ayıklanan bütün programların bir listesini alır.
@@ -36,14 +39,13 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppEnum`
-
- [out] Döndürür bir [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) tarafından bir DE ayıklanan bütün programların listesini içeren nesne.
+## <a name="parameters"></a>Parametreler
+`ppEnum`\
+[out] Döndürür bir [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) tarafından bir DE ayıklanan bütün programların listesini içeren nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

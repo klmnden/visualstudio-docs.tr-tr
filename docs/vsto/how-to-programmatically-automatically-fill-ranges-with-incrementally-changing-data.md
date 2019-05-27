@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.'
+title: Otomatik doldurma artımlı olarak veri aralıkları program aracılığıyla değiştirme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428176"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177692"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Nasıl yapılır: Program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne değerlerle otomatik olarak çalışma sayfasındaki bir aralığı doldurmanıza olanak sağlar. Çoğu zaman <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> yöntemi artımlı olarak artan veya azalan bir aralıktaki değerleri depolamak için kullanılır. Gelen isteğe bağlı bir sabit sağlanarak davranış belirtebilirsiniz <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> sabit listesi.

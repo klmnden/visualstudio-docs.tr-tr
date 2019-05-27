@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457464"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212125"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Bir ifade değerlendirici ölçüm adı verilen benzersiz tanımlayıcısını alır.
@@ -44,21 +44,17 @@ HRESULT GetEEMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `guidLang`\
+`guidLang`\
+[in] Programlama diline benzersiz tanımlayıcısı.
 
- [in] Programlama diline benzersiz tanımlayıcısı.
+`guidVendor`\
+[in] Satıcı benzersiz tanımlayıcısı.
 
- `guidVendor`\
+`pszMetric`\
+[in] Ölçüm adı.
 
- [in] Satıcı benzersiz tanımlayıcısı.
-
- `pszMetric`\
-
- [in] Ölçüm adı.
-
- `pguidValue`\
-
- [out] Ölçüm benzersiz tanımlayıcısını döndürür.
+`pguidValue`\
+[out] Ölçüm benzersiz tanımlayıcısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

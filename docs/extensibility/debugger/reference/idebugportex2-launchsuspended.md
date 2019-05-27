@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918318"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209011"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Bir yürütülebilir dosya başlatır.
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pszExe`
+## <a name="parameters"></a>Parametreler
+`pszExe`\
+[in] Başlatılacak yürütülebilir dosya adı. Bu bir tam yol veya belirtilen çalışma dizini için göreli olabilir `pszDir` parametresi.
 
- [in] Başlatılacak yürütülebilir dosya adı. Bu bir tam yol veya belirtilen çalışma dizini için göreli olabilir `pszDir` parametresi.
+`pszArgs`\
+[in] Yürütülebilir dosyaya geçirilecek bağımsız değişkenler. Hiçbir bağımsız değişken varsa, null değeri olabilir.
 
- `pszArgs`
+`pszDir`\
+[in] Yürütülebilir dosya tarafından kullanılan çalışma dizininin adı. Çalışma dizini yok gerekiyorsa null değeri olabilir.
 
- [in] Yürütülebilir dosyaya geçirilecek bağımsız değişkenler. Hiçbir bağımsız değişken varsa, null değeri olabilir.
+`bstrEnv`\
+[in] Ek bir NULL Sonlandırıcı tarafından izlenen, null ile sonlandırılmış dizeler ortam bloğu.
 
- `pszDir`
+`hStdInput`\
+[in] Alternatif bir giriş akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
 
- [in] Yürütülebilir dosya tarafından kullanılan çalışma dizininin adı. Çalışma dizini yok gerekiyorsa null değeri olabilir.
+`hStdOutput`\
+[in] Alternatif bir çıkış akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
 
- `bstrEnv`
+`hStdError`\
+[in] Diğer hata çıkış akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
 
- [in] Ek bir NULL Sonlandırıcı tarafından izlenen, null ile sonlandırılmış dizeler ortam bloğu.
-
- `hStdInput`
-
- [in] Alternatif bir giriş akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
-
- `hStdOutput`
-
- [in] Alternatif bir çıkış akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
-
- `hStdError`
-
- [in] Diğer hata çıkış akışına işleyin. Yeniden yönlendirme gerekmiyorsa 0 olabilir.
-
- `ppPortProcess`
-
- [out] Döndürür bir [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) başlatılan işlem temsil eden nesne.
+`ppPortProcess`\
+[out] Döndürür bir [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) başlatılan işlem temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -91,7 +86,7 @@ int LaunchSuspended( 
 
  Bir program bir hata ayıklama altyapısı da başlatılabilir. Ayrıntılar için bkz [Program başlatma](../../../extensibility/debugger/launching-a-program.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 046064aedf82a1f0babf50971a0d28fdcc826ada
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919744"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211726"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Hata ayıklayıcısı altyapısı (DE), ölçüm ayarları okumak için kullanacağı bir geri arama arabirimini belirtmek ifade değerlendirici (EE) sağlar.
@@ -35,10 +38,9 @@ int SetCallback (
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pCallback`
-
- [in] İçin ayarları geri çağırma kullanmak için arabirim.
+## <a name="parameters"></a>Parametreler
+`pCallback`\
+[in] İçin ayarları geri çağırma kullanmak için arabirim.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -74,5 +76,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

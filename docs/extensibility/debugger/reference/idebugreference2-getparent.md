@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f6f0aa96186557eba8549d899beed283558c1e7
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a0e0b4995a6c7e01af955d672040ab81183c0f47
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458718"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198793"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 Üst başvuru bir başvuru alır. Daha sonraki kullanımlar için ayrılmıştır.
@@ -40,9 +40,8 @@ int GetParent ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppParent`\
-
- [out] Döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) bu özelliğin üst temsil eden nesne.
+`ppParent`\
+[out] Döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) bu özelliğin üst temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Her zaman döndürür `E_NOTIMPL`.

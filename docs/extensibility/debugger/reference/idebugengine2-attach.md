@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875324"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207777"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Bir programı veya programları için hata ayıklama altyapısı (DE) ekler. DE çalışan işlem içinde SDM oturum hata ayıklama Yöneticisi (SDM) tarafından çağrılır.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pProgram`
+## <a name="parameters"></a>Parametreler
+`pProgram`\
+[in] Bir dizi [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) eklenmesi için programlar temsil eden nesneleri. Bu, bağlantı noktası programlardır.
 
- [in] Bir dizi [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) eklenmesi için programlar temsil eden nesneleri. Bu, bağlantı noktası programlardır.
+`rgpProgramNodes`\
+[in] Bir dizi [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) her program için bir program düğümleri temsil eden nesneleri. Bu dizi program düğümleri aynı programları olarak temsil eden `pProgram`. Böylece DE program eklemek için program düğümleri verilir.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Programlar ve/veya program düğümlerin sayısını `pProgram` ve `rgpProgramNodes` dizileri.
 
- [in] Bir dizi [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) her program için bir program düğümleri temsil eden nesneleri. Bu dizi program düğümleri aynı programları olarak temsil eden `pProgram`. Böylece DE program eklemek için program düğümleri verilir.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM için hata ayıklama olayları göndermek için kullanılacak nesne.
 
- `celtPrograms`
-
- [in] Programlar ve/veya program düğümlerin sayısını `pProgram` ve `rgpProgramNodes` dizileri.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM için hata ayıklama olayları göndermek için kullanılacak nesne.
-
- `dwReason`
-
- [in] Bir değer [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) bu programları ekleme nedenini belirten sabit listesi. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+`dwReason`\
+[in] Bir değer [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) bu programları ekleme nedenini belirten sabit listesi. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -91,7 +89,7 @@ int Attach( 
 
    Tarafından verilen dizideki bir program düğümün yöntemleri çağrılmadan önce `pProgram` veya `rgpProgramNodes`, kimliğe bürünme, gerekirse etkinleştirilmelidir üzerinde `IDebugProgram2` program düğümünü temsil eden arabirim. Normalde, ancak bu adım gerekli değildir. Daha fazla bilgi için [güvenlik sorunları](../../../extensibility/debugger/security-issues.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

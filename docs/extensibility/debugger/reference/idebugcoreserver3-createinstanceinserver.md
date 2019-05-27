@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c570c7afe8721c757bae9352f70361d5b6cf392a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c884d9ac404aecfa2edaadb2949ce0556da01bfe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921994"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205579"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Sunucuda bir hata ayıklama altyapısı örneğini oluşturur.
@@ -44,30 +47,25 @@ int CreateInstanceInServer(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `szDll`
+## <a name="parameters"></a>Parametreler
+`szDll`\
+[in] Belirtilen CLSID uygulayan dll yolu `clsidObject` parametresi. Bu ise `NULL`, ardından COM's `CoCreateInstance` işlevi çağrılır.
 
- [in] Belirtilen CLSID uygulayan dll yolu `clsidObject` parametresi. Bu ise `NULL`, ardından COM's `CoCreateInstance` işlevi çağrılır.
+`wLangId`\
+[in] Yerel hata ayıklama altyapısı. Bu 0 olabilir [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) yöntemi çağırılmalıdır.
 
- `wLangId`
+`clsidObject`\
+[in] Oluşturmak için CLSID hata ayıklama altyapısı.
 
- [in] Yerel hata ayıklama altyapısı. Bu 0 olabilir [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) yöntemi çağırılmalıdır.
+`riid`\
+[in] Sınıf nesneyi almak için belirli arabirimi arabirim kimliği.
 
- `clsidObject`
-
- [in] Oluşturmak için CLSID hata ayıklama altyapısı.
-
- `riid`
-
- [in] Sınıf nesneyi almak için belirli arabirimi arabirim kimliği.
-
- `ppvObject`
-
- [out] `IUnknown` arabiriminden oluşturulan nesne. Cast veya istenen arabirim için bu nesnesi hazırlanamadı.
+`ppvObject`\
+[out] `IUnknown` arabiriminden oluşturulan nesne. Cast veya istenen arabirim için bu nesnesi hazırlanamadı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

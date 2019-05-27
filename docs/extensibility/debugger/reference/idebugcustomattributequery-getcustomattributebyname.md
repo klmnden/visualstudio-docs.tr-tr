@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f255d509d69741dd99c9f6dac3ce298d7e5fa0bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921678"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205302"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Özel bir öznitelik adı verilen alır.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pszCustomAttributeName`
+## <a name="parameters"></a>Parametreler
+`pszCustomAttributeName`\
+[in] Özel özniteliğin adı.
 
- [in] Özel özniteliğin adı.
-
-`ppBlob`
-
+`ppBlob`\
 [out içinde] Özel öznitelik verileri içeren bir bayt dizisi.
 
-`pdwLen`
-
- [out] Bayt cinsinden uzunluğu `ppBlob` parametresi.
+`pdwLen`\
+[out] Bayt cinsinden uzunluğu `ppBlob` parametresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`. Özel öznitelik yoksa döndürür `S_FALSE`. Aksi takdirde bir hata kodu döndürür.
@@ -93,5 +93,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

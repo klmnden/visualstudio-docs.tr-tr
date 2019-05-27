@@ -7,20 +7,20 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947728"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177582"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus Visual Studio abonelikleri
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus, Visual Studio abonelikleri
 
-En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla çalışır. Office 365 Pro Plus Word, Excel, PowerPoint, OneNote, Outlook, yayımcı ve (yayımcı ve erişimi yalnızca PC kullanılabilir) erişim gibi premium uygulamalar ile birlikte gelen bir aboneliktir. Bilgisayarlar, Mac bilgisayarları, İpad'ler, İphone'lar, Android tabletler dahil olmak üzere birden çok cihazda uygulamalar yüklenebilir ve Android telefonlar. Office 365, 1 TB'ın OneDrive depolama, 60 Skype dakika her ay Microsoft sohbet ve telefon desteği gibi hizmetlerle de birlikte gelir. Bir abonelikle uygulamaları en son sürümlerini almak ve gerçekleştiğinde güncelleştirmeleri otomatik olarak alırsınız.
+En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla çalışır. Office 365 ProPlus Word, Excel, PowerPoint, OneNote, Outlook, yayımcı ve (yayımcı ve erişimi yalnızca PC kullanılabilir) erişim gibi premium uygulamalar ile birlikte gelen bir aboneliktir. Bilgisayarlar, Mac bilgisayarları, İpad'ler, İphone'lar, Android tabletler dahil olmak üzere birden çok cihazda uygulamalar yüklenebilir ve Android telefonlar. Office 365, 1 TB'ın OneDrive depolama, 60 Skype dakika her ay Microsoft sohbet ve telefon desteği gibi hizmetlerle de birlikte gelir. Bir abonelikle uygulamaları en son sürümlerini almak ve gerçekleştiğinde güncelleştirmeleri otomatik olarak alırsınız.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Office 365 Pro Plus ile çalışmaya başlama
+## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus ile çalışmaya başlama
 
-Karşıdan yüklemek ve Office 365 Pro Plus etkinleştirmek için aşağıdaki adımları izleyin:
+İndirin ve Office 365 ProPlus'ı etkinleştirmek için aşağıdaki adımları izleyin:
 1. Visual Studio Enterprise aboneliğinize oturum açın.
 2. Tıklayarak **indirir** sekmesi.
 3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office 365**.

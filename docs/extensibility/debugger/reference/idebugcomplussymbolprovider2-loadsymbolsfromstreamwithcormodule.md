@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876362"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205897"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Verilen veri akışından hata ayıklama sembolleri **Icordebugmodule** nesne.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`ulAppDomainID`
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
-`guidModule`
+`baseAddress`\
+[in] Temel bir bellek adresi.
 
- [in] Modülün benzersiz tanımlayıcısı.
+`pUnkMetadataImport`\
+[in] Sembol meta veriler içeren nesne.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Temel bir bellek adresi.
-
-`pUnkMetadataImport`
-
- [in] Sembol meta veriler içeren nesne.
-
-`pUnkCorDebugModule`
-
- [in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Yüklemek için hata ayıklama sembollerini içeren veri akışı.
+`pStream`\
+[in] Yüklemek için hata ayıklama sembollerini içeren veri akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -146,5 +143,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

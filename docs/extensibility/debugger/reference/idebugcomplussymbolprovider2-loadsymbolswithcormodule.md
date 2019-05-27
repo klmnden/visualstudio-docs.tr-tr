@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876388"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205826"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Yükleri hata ayıklama sembolleri verilen **Icordebugmodule** nesne.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`ulAppDomainID`
+## <a name="parameters"></a>Parametreler
+`ulAppDomainID`\
+[in] Uygulama etki alanı tanımlayıcısı.
 
- [in] Uygulama etki alanı tanımlayıcısı.
+`guidModule`\
+[in] Modülün benzersiz tanımlayıcısı.
 
-`guidModule`
+`baseAddress`\
+[in] Temel bir bellek adresi.
 
- [in] Modülün benzersiz tanımlayıcısı.
+`pUnkMetadataImport`\
+[in] Hata ayıklama sembol meta veriler içeren nesne.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Temel bir bellek adresi.
+`bstrModuleName`\
+[in] Modülün adı.
 
-`pUnkMetadataImport`
-
- [in] Hata ayıklama sembol meta veriler içeren nesne.
-
-`pUnkCorDebugModule`
-
- [in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Modülün adı.
-
-`bstrSymSearchPath`
-
- [in] Sembol dosyası için arama yolu.
+`bstrSymSearchPath`\
+[in] Sembol dosyası için arama yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -174,5 +170,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

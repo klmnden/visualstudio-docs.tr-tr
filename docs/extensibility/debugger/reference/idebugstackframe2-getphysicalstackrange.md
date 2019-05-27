@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457275"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212857"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Bir yığın çerçevesiyle ilgili olan fiziksel adres aralığını makine bağımlı bir gösterimini alır.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parametreler
- `paddrMin`\
+`paddrMin`\
+[out] Bu yığın çerçevesiyle ilgili en düşük fiziksel adresini döndürür.
 
- [out] Bu yığın çerçevesiyle ilgili en düşük fiziksel adresini döndürür.
-
- `paddrMax`\
-
- [out] Bu yığın çerçevesiyle ilgili en yüksek fiziksel adresini döndürür.
+`paddrMax`\
+[out] Bu yığın çerçevesiyle ilgili en yüksek fiziksel adresini döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

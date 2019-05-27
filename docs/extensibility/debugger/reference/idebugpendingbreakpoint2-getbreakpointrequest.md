@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c49f81fc28420dc95cc2c263d4bba41d6c041b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c753df9d2acb24dbb0950158ebf2dd399b8d24a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842736"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209572"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Bu bekleyen kesme noktası oluşturmak için kullanılan bir kesme noktası istek alır.
@@ -37,14 +40,13 @@ int GetBreakpointRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `ppBPRequest`
-
- [out] Döndürür bir [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) bu kesme noktası oluşturmak için kullanılan bir kesme noktası istek temsil eden nesne.
+## <a name="parameters"></a>Parametreler
+`ppBPRequest`\
+[out] Döndürür bir [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) bu kesme noktası oluşturmak için kullanılan bir kesme noktası istek temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` kesme noktası silinmiş olması durumunda.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

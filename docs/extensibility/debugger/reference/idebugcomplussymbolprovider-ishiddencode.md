@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c9ef5f6000d3d8b3e446dddc460928e6bf626b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12e2acecb92bece536824c4fe64213cbe4e768ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876592"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206173"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Belirtilen hata ayıklayıcısı adresindeki kod gizli olduğunu belirler.
@@ -34,10 +37,9 @@ int IsHiddenCode(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pAddress`
-
- [in] Tarafından temsil edilen hata ayıklama adresi bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
+## <a name="parameters"></a>Parametreler
+`pAddress`\
+[in] Tarafından temsil edilen hata ayıklama adresi bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Kod gizli ise, döndürür `S_OK`; Aksi halde döndürür `S_FALSE`.
@@ -90,5 +92,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

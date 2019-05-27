@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4d29522b942fae7e5bb5190c72eb989445f222d9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460884"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212724"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 Geçerli numaralandırır programının değerlerini bayrakları yok.
@@ -41,7 +41,8 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ```
 
 ## <a name="fields"></a>Alanlar
- PROGRAM_DESTROY_CONTINUE_DEBUGGING yok programı, ancak hata ayıklamaya devam.
+ `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
+ Program yok, ancak hata ayıklamaya devam.
 
 ## <a name="remarks"></a>Açıklamalar
  Sabit listesi tarafından döndürülen [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) yöntemi.

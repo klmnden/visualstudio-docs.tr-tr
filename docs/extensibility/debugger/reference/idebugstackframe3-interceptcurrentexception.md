@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4341542c48465af026280d5b7b13a8e10bafe40a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457407"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203257"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Geçerli yığın çerçevesinde hata ayıklayıcı tarafından müdahale geçerli özel durumun istediğinde çağrılır.
@@ -42,13 +42,11 @@ int InterceptCurrentException(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `dwFlags`\
+`dwFlags`\
+[in] Farklı eylemleri belirtir. Şu anda yalnızca [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) değer `IEA_INTERCEPT` desteklenir ve belirtilmesi gerekir.
 
- [in] Farklı eylemleri belirtir. Şu anda yalnızca [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) değer `IEA_INTERCEPT` desteklenir ve belirtilmesi gerekir.
-
- `pqwCookie`\
-
- [out] Belirli bir özel durum tanımlayan benzersiz bir değerdir.
+`pqwCookie`\
+[out] Belirli bir özel durum tanımlayan benzersiz bir değerdir.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.

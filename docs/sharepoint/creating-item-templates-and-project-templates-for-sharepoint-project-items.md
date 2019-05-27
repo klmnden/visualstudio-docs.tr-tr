@@ -1,5 +1,5 @@
 ---
-title: SharePoint Proje öğeleri için öğe şablonları ve proje şablonları oluşturma | Microsoft Docs
+title: Öğe şablonları/proje şablonları için SharePoint Proje öğeleri
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f41783689e572ca823788e1a8dbcf772f07e924
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952708"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177621"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma
 
