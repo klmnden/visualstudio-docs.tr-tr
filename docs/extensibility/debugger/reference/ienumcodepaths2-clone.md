@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60759fd576d47e173e9e35eeff9e0adaa38dc394
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 85a3df07e782c022ab1e40ad311b10e7a3f7ae96
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223591"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209863"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `ppEnum`\
-
- [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
+`ppEnum`\
+[out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

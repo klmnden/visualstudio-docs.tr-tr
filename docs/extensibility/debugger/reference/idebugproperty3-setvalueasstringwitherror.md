@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 84ef9df62bab7f5a37bc0126ef062f8e6a2306bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458810"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212266"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Bu özelliğin değerini ayarlar ve gerekirse, bir hata iletisi döndürür.
@@ -47,20 +47,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parametreler
 `pszValue`\
-
- [in] Ayarlanacak değer.
+[in] Ayarlanacak değer.
 
 `dwRadix`\
-
- [in] Ayarlanan değer sayı tabanı.
+[in] Ayarlanan değer sayı tabanı.
 
 `dwTimeout`\
-
- [in] Değeri ayarlamak beklenecek süre (`INFINITE` süresiz bekleme anlamına gelir).
+[in] Değeri ayarlamak beklenecek süre (`INFINITE` süresiz bekleme anlamına gelir).
 
 `errorString`\
-
- [out] Değeri ayarlanırken bir hata varsa, bu başarısızlığın nedenini tutar.
+[out] Değeri ayarlanırken bir hata varsa, bu başarısızlığın nedenini tutar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

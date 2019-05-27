@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 8a4ea136872181a9432efbd778738e22c47c6304
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226652"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208275"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Özel özniteliklerin bir numaralandırma dizisinde belirtilen bir sayı alır.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `celt`\
+`celt`\
+[in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
 
- [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
+`rgelt`\
+[out] Bir dizi [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) doldurulacak nesne.
 
- `rgelt`\
-
- [out] Bir dizi [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) doldurulacak nesne.
-
- `pceltFetched`\
-
- [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
+`pceltFetched`\
+[out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.

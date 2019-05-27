@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203700"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Bu yöntem Görselleştirici temsil eden nesneyi değiştirir.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pNewObject`\
+`pNewObject`\
+[in] Ayarlanacağı nesne.
 
- [in] Ayarlanacağı nesne.
+`error`\
+[out] Bu dize, nesne ayarlanırken bir hata oluştu, hata iletisi tutar.
 
- `error`\
-
- [out] Bu dize, nesne ayarlanırken bir hata oluştu, hata iletisi tutar.
-
- `pException`\
-
- [out] Bir hata varsa, bu nesne, özel durum bilgilerini tutar.
+`pException`\
+[out] Bir hata varsa, bu nesne, özel durum bilgilerini tutar.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

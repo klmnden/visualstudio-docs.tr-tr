@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5146b730e6e58e99c22f73bd95cd500e5450ac06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920929"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207554"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Hata ayıklama altyapısı (DE) verilen bir özel durumun nasıl işleyeceğini belirtir.
@@ -36,10 +39,9 @@ int SetException( 
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pException`
-
- [in] Bir [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) özel durum ve hata ayıklamak nasıl açıklayan yapısı.
+## <a name="parameters"></a>Parametreler
+`pException`\
+[in] Bir [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) özel durum ve hata ayıklamak nasıl açıklayan yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -47,6 +49,6 @@ int SetException( 
 ## <a name="remarks"></a>Açıklamalar
  Bir DE belirtildiği bir ilk fırsat özel duruma oluşturma programı durdurun, fırsat, ikinci ya da hiç.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 45dadc5d3292d989163df085e00f61207940d442
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458588"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212066"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Bir ölçüm adı verilen benzersiz tanımlayıcısını alır.
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pszType`\
+`pszType`\
+[in] Ölçüm türü.
 
- [in] Ölçüm türü.
+`guidSection`\
+[in] Bölüm benzersiz tanımlayıcısı.
 
- `guidSection`\
+`pszMetric`\
+[in] Ölçüm adı.
 
- [in] Bölüm benzersiz tanımlayıcısı.
-
- `pszMetric`\
-
- [in] Ölçüm adı.
-
- `pguidValue`\
-
- [out] Ölçüm benzersiz tanımlayıcısını döndürür.
+`pguidValue`\
+[out] Ölçüm benzersiz tanımlayıcısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

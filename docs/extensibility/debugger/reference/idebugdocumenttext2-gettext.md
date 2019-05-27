@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875186"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203316"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Belge belirtilen konumda metin alır.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
-`pos`
+## <a name="parameters"></a>Parametreler
+`pos`\
+[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) alınacak metnin konumunu belirten yapısı.
 
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) alınacak metnin konumunu belirten yapısı.
+`cMaxChars`\
+[in] Alınacak metnin karakter sayısı.
 
-`cMaxChars`
+`pText`\
+[out içinde] İstenen metin ile doldurulacak olan arabellek için işaretçi. Bu arabelleğin en az içermesi `cMaxChars` geniş karakterlerin sayısı.
 
- [in] Alınacak metnin karakter sayısı.
-
-`pText`
-
- [out içinde] İstenen metin ile doldurulacak olan arabellek için işaretçi. Bu arabelleğin en az içermesi `cMaxChars` geniş karakterlerin sayısı.
-
-`pcNumChars`
-
- [out] Gerçekte alınan karakter sayısını döndürür.
+`pcNumChars`\
+[out] Gerçekte alınan karakter sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -101,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

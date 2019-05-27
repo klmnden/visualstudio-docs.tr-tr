@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919464"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212221"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Bu yöntem, bu alan için eşitlik belirtilen alan ile karşılaştırır.
@@ -36,13 +39,12 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>Parametreler
- `pField`
-
- [in] Buna karşılaştırmak için alan.
+## <a name="parameters"></a>Parametreler
+`pField`\
+[in] Buna karşılaştırmak için alan.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Alanları aynıysa döndürür `S_OK`. Alanları farklı ise döndürür `S_FALSE.` Aksi takdirde bir hata kodu döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

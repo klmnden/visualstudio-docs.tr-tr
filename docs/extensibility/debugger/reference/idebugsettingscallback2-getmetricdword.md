@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 524598a4fdac3e9b06a91623d6ff2d37a1919ffa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457329"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212081"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Adı verilen bir ölçüm değerini alır.
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>Parametreler
- `pszType`\
+`pszType`\
+[in] Ölçüm türü.
 
- [in] Ölçüm türü.
+`guidSection`\
+[in] Bölüm benzersiz tanımlayıcısı.
 
- `guidSection`\
+`pszMetric`\
+[in] Ölçüm adı.
 
- [in] Bölüm benzersiz tanımlayıcısı.
-
- `pszMetric`\
-
- [in] Ölçüm adı.
-
- `pdwValue`\
-
- [out] Ölçüm değeri döndürür.
+`pdwValue`\
+[out] Ölçüm değeri döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
