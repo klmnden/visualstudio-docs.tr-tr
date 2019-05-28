@@ -81,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Bakım temeli sırasında Visual Studio’yu güncelleştirme
+              href: install/update-servicing-baseline.md
         - name: Yüklemeleri yönetme
           items:
             - name: Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
