@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704652"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401728"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -149,7 +149,7 @@ Bu makalede, oluşturma işleminde, çalışan, adımları ve bir dizi birim öz
 
 2. İçinde **yeni proje** iletişim kutusunda **yüklü**, genişletme **Visual C#** ve ardından **Test**.
 
-3. Şablonlar listesinden **MSTest Test projesi (.NET Core)**.
+3. Şablonlar listesinden **MSTest Test projesi (.NET Core)** .
 
 4. İçinde **adı** kutusuna `BankTests`ve ardından **Tamam**.
 
@@ -365,9 +365,9 @@ Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAt
 
 ### <a name="continue-the-analysis"></a>Çözümlemeye devam edin
 
-Bununla birlikte, son iki test yöntemi ayrıca vericidir. Ya da test çalıştırdığınızda, test altındaki yöntemin içindeki hangi koşulun Exception'a olamazsınız. Bir negatif borç tutarını veya bakiyeden büyük bir miktarını, iki koşul ayrım yapma, bazı şekilde testlerinde güveninizi artırın.
+Test edilen yöntemi daha da artırılabilir. Geçerli bir uygulama ile sahibiz hangi koşulun bilmeniz mümkün değildir (`amount > m_balance` veya `amount < 0`) test sırasında oluşturulan özel durum etmeleri. Yalnızca biliyoruz bir `ArgumentOutOfRangeException` yöntemi herhangi bir durum oluştu. Biz de olan koşul söyleyebilirsiniz daha iyi olurdu `BankAccount.Debit` özel durum oluşturulmasına neden (`amount > m_balance` veya `amount < 0`) size sunduğumuz yöntemi sağlamlık-bağımsız değişkenlerini doğru denetliyor, böylece oyunlarımızın.
 
-Test altındaki yöntemi yeniden bakın ve her iki koşullu deyimin kullandığına dikkat edin bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişken olarak bir parametre adını alır:
+Test edilen bir yöntem bakın (`BankAccount.Debit`) yeniden ve her iki koşullu deyimin kullanma bildirimi bir `ArgumentOutOfRangeException` yalnızca oluşturucu bağımsız değişken olarak bir parametre adını alır:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

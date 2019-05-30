@@ -1,5 +1,5 @@
 ---
-title: Yükseltme SharePoint çözüm paketlerini dağıtma ve yayımlama | Microsoft Docs
+title: Dağıtma, yayımlama ve yükseltme SharePoint çözüm paketleri
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436729"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402036"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint çözüm paketleri yükseltme dağıtma ve yayımlama
   Bir SharePoint çözümünü Visual Studio'da geliştirdiğiniz sonra paket (.wsp) dosyası yerel SharePoint sunucusuna dağıtın veya bir uzak veya yerel SharePoint sunucusuna yayımlama. Dosyaları dağıtırsanız, paket dosyaları (.wsp) nasıl dağıtılacağını özelleştirebilirsiniz.
@@ -54,7 +54,7 @@ ms.locfileid: "63436729"
  Önce ve dağıtımdan sonra çalıştırılacak komutları da ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: SharePoint dağıtım komutlarını ayarlama](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Uzak veya yerel bir sunucuya paketleri yayımlama
- Korumalı bir SharePoint çözüm menü çubuğunda, bir uzak sunucuya yayımlamayı tercih **derleme**, **Yayımla**ve ardından **Yayımla** iletişim kutusunda,**SharePoint sitesi için Yayımlama** seçenek düğmesini, uzak sunucunun URL'sini gibi sağlama **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Korumalı bir SharePoint çözüm menü çubuğunda, bir uzak sunucuya yayımlamayı tercih **derleme**, **Yayımla**ve ardından **Yayımla** iletişim kutusunda,**SharePoint sitesi için Yayımlama** seçenek düğmesini, uzak sunucunun URL'sini gibi sağlama **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Bir SharePoint çözümünü yerel bir sunucuya yayımlamak için **Yayımla** iletişim kutusunda **dosya sistemi Yayımla** seçenek düğmesi, bir yerel sistem yol sağlama.
 

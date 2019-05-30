@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hatalarını ayıklama | Microsoft Docs'
+title: SharePoint iş akışı çözümü hata ayıklama & Oluştur
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430358"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401053"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>İzlenecek yol: Oluşturma ve bir SharePoint iş akışı çözümü hata ayıklama
   Bu izlenecek yol, temel sıralı iş akışı şablonunun nasıl oluşturulacağını gösterir. İş akışı, bir belgeyi gözden olup olmadığını belirlemek için paylaşılan belge kitaplığı özelliğini denetler. Belgeyi gözden, iş akışı tamamlanır.
@@ -57,7 +57,7 @@ ms.locfileid: "63430358"
 
 3. Seçin **Kitaplığı** üzerinde **Kütüphane Araçları** Şerit ve ardından **sütun oluşturma** yeni bir sütun oluşturmak için Şeritteki düğme.
 
-4. Sütun adı **belge durumu**, kendi tür kümesine **seçenek (arasından menü)**, aşağıdaki üç seçenek belirtin ve ardından **Tamam** düğmesi:
+4. Sütun adı **belge durumu**, kendi tür kümesine **seçenek (arasından menü)** , aşağıdaki üç seçenek belirtin ve ardından **Tamam** düğmesi:
 
     - **Gözden geçirme gerekli**
 

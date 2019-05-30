@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944080"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402080"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Öğretici: Bir depodan proje açma
 
@@ -177,9 +177,9 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 Visual Studio ile kod için hazır olduğunuzda aşağıdaki dile özgü öğreticileri hiçbirine inceleyin:
 
-- [Visual Studio öğreticiler |**C#**](./csharp/index.yml)
+- [Visual Studio öğreticiler |**C#** ](./csharp/index.yml)
 - [Visual Studio öğreticiler | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio öğreticiler | **C++**](/cpp/get-started/)
+- [Visual Studio öğreticiler | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio öğreticiler | **Python**](/visualstudio/python/)
 - [Visual Studio öğreticiler | **JavaScript**, **TypeScript**, ve **Node.js**](/visualstudio/javascript/)
 

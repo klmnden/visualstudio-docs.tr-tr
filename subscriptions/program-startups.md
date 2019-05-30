@@ -7,17 +7,17 @@ ms.date: 03/20/2018
 ms.topic: conceptual
 description: Hangi abonelikler hakkında ayrıntılı bilgi, programı Startup'lar için Microsoft aracılığıyla sunulur.
 searchscope: VS Subscription
-ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3acb216b58ce9a81b8edefed61d779955c0a1d
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007790"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402098"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Yeni işletmeler için sunulan visual Studio abonelikleri
 Yetkili Microsoft Startup'lar program 5 kazandırabilir için katılan startup'lar [Visual Studio Enterprise aylık bulut abonelikleri](https://visualstudio.microsoft.com/vs/pricing/). Bunlar ticari olarak, hiçbir özel kısıtlamaları veya kısıtlamaları ile sunulan aynı aboneliklerdir. Her abonelik (lisanslı kullanıcı olan) bir son kullanıcı atanmalıdır önce kullanıcının Azure DevOps Hizmetleri'nde bir Visual Studio Enterprise abonesi olarak tanınması ve Visual Studio çalıştırabilirsiniz.
 
-[Startup'lar için Microsoft hakkında daha fazla bilgi edinin](https://startups.microsoft.com/program-details/)
+[Startup'lar için Microsoft hakkında daha fazla bilgi edinin](https://startups.microsoft.com)
 
 **Visual Studio ile gerekli oturum** tüm Visual Studio bulut abonelikleri ile Lisanslı Kullanıcı Visual Studio için aynı kimlik/Visual Studio aboneliği etkinleştirmek için kullanılan oturum açma bilgilerini kullanarak oturum açmanız gerekir.
 

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Bir Silverlight Web parçası oluşturma, SharePoint için OData görüntüleyen | Microsoft Docs'
+title: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f248ce4403e771d9ab8b6d13fe55fd5ca1c960d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430403"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401125"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>İzlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma
   SharePoint 2010 listesi verilerini OData yoluyla kullanıma sunar. SharePoint'te, OData hizmeti ListData.svc RESTful hizmeti tarafından uygulanır. Bu izlenecek yol, bir Silverlight uygulamasını barındıran bir SharePoint web bölümü oluşturma işlemi gösterilmektedir. Silverlight uygulaması ListData.svc kullanarak SharePoint duyuru listesi bilgilerini görüntüler. Daha fazla bilgi için [SharePoint Foundation REST arabirimi](http://go.microsoft.com/fwlink/?LinkId=225999) ve [açık veri Protokolü](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -57,7 +57,7 @@ ms.locfileid: "63430403"
 
 7. İçinde **nasıl Silverlight Web Bölümü ilişkilendirmek istiyorsunuz** bölümünü **Silverlight yapılandırma bilgilerini belirtmek** sayfasında **yeni bir Silverlight projesi oluşturma ve web bölümüyle ilişkilendir** seçenek düğmesini.
 
-8. Değişiklik **adı** için **SLApplication**ayarlayın **dil** ya da **Visual Basic** veya **Visual C#**, ve ardından **Silverlight sürümü** için **Silverlight 4.0**.
+8. Değişiklik **adı** için **SLApplication**ayarlayın **dil** ya da **Visual Basic** veya **Visual C#** , ve ardından **Silverlight sürümü** için **Silverlight 4.0**.
 
 9. Seçin **son** düğmesi. Projeleri görünür **Çözüm Gezgini**.
 
@@ -75,7 +75,7 @@ ms.locfileid: "63430403"
     > [!NOTE]
     > Visual Basic kullanıyorsanız seçmelisiniz **tüm dosyaları göster** simgesi en üstündeki **Çözüm Gezgini** görüntülenecek **başvuruları** düğümü.
 
-3. Adresi kutusunda **hizmet Başvurusu Ekle** iletişim kutusunda, SharePoint sitenizin URL'sini girin **http://MySPSite**ve ardından **Git** düğmesi.
+3. Adresi kutusunda **hizmet Başvurusu Ekle** iletişim kutusunda, SharePoint sitenizin URL'sini girin **http://MySPSite** ve ardından **Git** düğmesi.
 
      Silverlight SharePoint OData hizmeti ListData.svc bulduğunda, tam hizmet URL'si ile adresini değiştirir. Bu örnekte, http://myserver olur http://myserver/_vti_bin/ListData.svc.
 

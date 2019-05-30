@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden etkinleştirmeyi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811538"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402024"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Etkinleştirme ve Visual Studio abonelikleri teknik destek teklifinizden kullanma
 
@@ -90,6 +90,9 @@ Sonra **sözleşme kimliği** ve **erişim kimliği** ayarlamak, bu bir teknik d
 
    > [!div class="mx-imgBorder"]
    > ![Teknik Destek avantajı, olay gönderimi - planı seçme](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Destek planı, önceki sayfaya dönün ve tıklayın görmüyorsanız **sonraki** yeniden.  Destek planı görüntülenecek başarısız olursa, destek sorununuzu metnini panonuza kopyalayın, sayfayı yenileyin ve desteği sorunu yeniden oluşturun.
 
 6. (Önem derecesi, kişi bilgilerini gözden geçirin) kalan adımları tamamlayın.   Olayınız gönderdikten sonra olayınız başarıyla gönderildi ve çalışması için dosyaları karşıya yükleyebilir, bir onay göreceksiniz. Bir destek uzmanı, olaya atanır ve seçtiğiniz kişi yöntemi kullanarak, sorunu çözmek için size ulaşsın.
 

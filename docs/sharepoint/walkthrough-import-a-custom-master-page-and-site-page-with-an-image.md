@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Özel ana sayfasını içeri aktarma ve bir görüntü içeren Site | Microsoft Docs'
+title: Özel ana sayfa & görüntü ile site sayfasını İçeri Aktar
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834397"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400894"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>İzlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma
   Bu izlenecek yol, bir SharePoint özel ana sayfasını ve görüntüye sahip bir site sayfasını içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.
@@ -27,7 +27,7 @@ ms.locfileid: "62834397"
 
 - Özel bir ana sayfa ve site sayfasını SharePoint Tasarımcısı'nda bir görüntü kullanarak oluşturun.
 
-- Özel ana sayfasını, resmi ve site sayfası için bir SharePoint çözümünü dışarı aktar (*.wsp*) dosyası.
+- Özel ana sayfasını, resmi ve site sayfası için bir SharePoint çözümünü dışarı aktar ( *.wsp*) dosyası.
 
 - İçeri aktarın ve dağıtın *.wsp* dosyasını bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kullanarak SharePoint çözüm paketini İçeri Aktar projenin SharePoint Proje.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834397"
 6. Güncelleştirilmiş site sayfası kaydedin.
 
 ## <a name="export-the-items-from-sharepoint"></a>SharePoint'ten öğeleri dışarı aktarma
- Öğeler için bir SharePoint çözümünü SharePoint'ten dışarı aktar (*.wsp*) dosyası.
+ Öğeler için bir SharePoint çözümünü SharePoint'ten dışarı aktar ( *.wsp*) dosyası.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>SharePoint Designer'daki öğeleri dışarı aktarmak için
 

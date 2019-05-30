@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Bir Site sütunu proje öğesi, bir proje şablonu ile oluşturma, bölüm 2 | Microsoft Docs'
+title: Proje şablonu, bölüm 2 ile site sütunu proje öğesi oluşturma
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436717"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401110"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.
@@ -368,7 +368,7 @@ ms.locfileid: "63436717"
 
 2. Üzerinde **imzalama** sekmesinde **derlemeyi imzalamayı** onay kutusu.
 
-3. İçinde **bir tanımlayıcı ad anahtar dosyası seç** listesinde  **\<yeni … >**.
+3. İçinde **bir tanımlayıcı ad anahtar dosyası seç** listesinde  **\<yeni … >** .
 
 4. İçinde **katı ad anahtarı oluştur** iletişim kutusunda, yeni anahtar dosyası için bir ad Temizle girin **anahtar dosyamı bir parolayla korumak** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 

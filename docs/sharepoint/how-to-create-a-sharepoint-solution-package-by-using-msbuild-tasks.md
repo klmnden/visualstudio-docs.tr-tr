@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: MSBuild görevleri kullanarak SharePoint çözüm paketini oluşturun | Microsoft Docs'
+title: MSBuild görevleri kullanarak SharePoint çözüm paketini oluşturma
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966841"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401490"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Nasıl yapılır: MSBuild görevleri kullanarak bir SharePoint çözüm paketini oluşturma
-  Derleme, temizleme ve bir SharePoint paketi doğrulama (*.wsp*) geliştirme bilgisayarında komut satırı MSBuild görevleri kullanarak. Bu komutları, yapı bilgisayarında Team Foundation Server'ı kullanarak yapı sürecinin otomatik hale getirmek için de kullanabilirsiniz.
+  Derleme, temizleme ve bir SharePoint paketi doğrulama ( *.wsp*) geliştirme bilgisayarında komut satırı MSBuild görevleri kullanarak. Bu komutları, yapı bilgisayarında Team Foundation Server'ı kullanarak yapı sürecinin otomatik hale getirmek için de kullanabilirsiniz.
 
 ## <a name="build-a-sharepoint-package"></a>Bir SharePoint paketi oluşturun
 

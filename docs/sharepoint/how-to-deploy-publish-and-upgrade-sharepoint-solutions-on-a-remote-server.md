@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Yükseltme uzak bir sunucudaki SharePoint çözümlerini dağıtma ve yayımlama | Microsoft Docs'
+title: Dağıtma, yayımlama ve Uzaktan SharePoint çözümlerini yükseltmek
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813949"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401437"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Nasıl yapılır: Uzak bir sunucudaki SharePoint çözümlerini yükseltmek dağıtma ve yayımlama
   SharePoint çözümleri için yerel sistem dağıtmanın yanı sıra, uzak sitelerin veya yerel SharePoint sitelerine korumalı SharePoint çözümlerine yayımlayabilirsiniz. Uzaktan yayımlama işlemi kopyaları *.wsp* dosyasını SharePoint sunucusuna çözümü yükler ve ardından çözümü etkinleştirmek sağlar. Ona değişiklikler yapıldıktan sonra uzak bir SharePoint çözüm yükleme yükseltebilirsiniz.
@@ -37,7 +37,7 @@ ms.locfileid: "62813949"
 
 5. Kullanıcı kimlik doğrulaması gerekiyorsa uzak sunucuya oturum açın.
 
-     Visual Studio'da yayımlama ilerleme görünür **çıkış** penceresi. İşlem tamamlandığında, çözüm (*.wsp*) dosyası, uzak SharePoint sunucusunda yüklü. SharePoint'te kullanılmadan önce ancak bu yine de etkinleştirilmesi gerekir.
+     Visual Studio'da yayımlama ilerleme görünür **çıkış** penceresi. İşlem tamamlandığında, çözüm ( *.wsp*) dosyası, uzak SharePoint sunucusunda yüklü. SharePoint'te kullanılmadan önce ancak bu yine de etkinleştirilmesi gerekir.
 
 6. Üzerinde **çözüm Galerisi** sayfasında, SharePoint uygulaması'nı seçin ve sonra Şerit üzerinde **etkinleştirme** düğmesi.
 

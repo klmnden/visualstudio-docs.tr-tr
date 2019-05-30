@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Özel SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme | Microsoft Docs'
+title: Özel SharePoint Proje öğe türüne kısayol menü öğesi ekleme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c47cdc00fc9035870aed4ac2e0bee4d3c1c5af
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967174"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401629"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Nasıl yapılır: Özel bir SharePoint Proje öğe türüne bir kısayol menü öğesi ekleme
   Özel bir SharePoint proje öğesi türü tanımladığınızda, proje öğesi için bir kısayol menü öğesi ekleyebilirsiniz. Bir kullanıcı proje öğesine tıkladığında menü öğesi görünür **Çözüm Gezgini**.

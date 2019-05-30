@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri Microsoft Ürün ve hizmet sözleşmesi (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002315"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402171"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio abonelikleri Microsoft Products and Services Sözleşmesi (MPSA)
 
@@ -64,4 +64,4 @@ Yardıma gereksinim veya herhangi bir sorunuz varsa destek telefon veya e-posta 
 
 MPSA desteği: **1-866-200-9611**, kullanılabilir Pazartesi-Cuma günleri 5:30 AM-5:30 Pasifik saati
 
-E-posta: ngvlsup@microsoft.com
+Çevrimiçi:  https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US

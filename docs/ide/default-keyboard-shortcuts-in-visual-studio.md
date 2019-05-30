@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a11c5b441b6806c1ee9a07d77044be1ab42d2197
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b81d6be4ebb7e210efc2034f43fc9a91ec1844e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319516"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402052"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -379,7 +379,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (harf ' O')|
-|View.PopBrowseContex|**CTRL + SHIFT + 8**|
+|View.PopBrowseContext|**CTRL + SHIFT + 8** (C++ yalnızca)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
 |View.ResourceView|**CTRL + SHIFT + E**|

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma | Microsoft Docs'
+title: İlişki ve başlatma formları ile iş akışı oluşturma
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430372"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401161"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>İzlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma
   Bu yönerge, ilişki ve başlatma formlarını kullanımını içeren bir temel sıralı iş akışının nasıl oluşturulacağını gösterir. Öncelikle SharePoint Yöneticisi tarafından (İlişkilendirme formu) ilişkili ve iş akışı (başlatma formu) kullanıcı tarafından yeniden başlatıldığında, bir iş akışına eklenecek parametrelerini etkinleştirme ASPX forms şunlardır.
@@ -90,7 +90,7 @@ ms.locfileid: "63430372"
 
      **SharePoint Özelleştirme Sihirbazı** görünür.
 
-10. İçinde **hata ayıklama için iş akışı adını** sayfasında, varsayılan adı kabul edin (**ExpenseReport - Workflow1**). Varsayılan iş akışı şablonu türü değeri tutun (**liste iş akışı)**. Seçin **sonraki** düğmesi.
+10. İçinde **hata ayıklama için iş akışı adını** sayfasında, varsayılan adı kabul edin (**ExpenseReport - Workflow1**). Varsayılan iş akışı şablonu türü değeri tutun (**liste iş akışı)** . Seçin **sonraki** düğmesi.
 
 11. İçinde **otomatik olarak hata ayıklama oturumunda iş akışını ilişkilendirmek için Visual Studio ister misiniz?** sayfasında, bu işaretlenirse, iş akışı şablonu otomatik olarak ilişkilendirir kutuyu temizleyin.
 

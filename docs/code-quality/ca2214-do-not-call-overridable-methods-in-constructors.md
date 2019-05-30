@@ -1,6 +1,6 @@
 ---
 title: 'CA2214: Geçersiz kılınabilir metotları oluşturucular içinde çağırmayın'
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796711"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401309"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Geçersiz kılınabilir metotları oluşturucular içinde çağırmayın
 
@@ -41,6 +41,9 @@ Mühürlenmemiş bir tür Oluşturucu, sınıfta tanımlanan sanal bir yöntemi 
 
 Sanal bir yöntem çağrıldığında yöntem gerçek tür çalışma zamanına kadar seçilmedi. Bir kurucu sanal bir yöntemi çağırdığında, yapıcı yöntemini çağıran örneği için değil yürütüldü mümkündür.
 
+> [!NOTE]
+> Bu kural ikili analizi uygulaması, farklı bir tanılama iletisi sahip " **\[oluşturucu adı] sınıf tarafından tanımlanan sanal bir yönteme bir çağrı sonuçlanır bir çağrı zinciri içeriyor. İstenmeyen sonuçları için aşağıdaki çağrı yığınını gözden**". [FxCop Çözümleyicileri](install-fxcop-analyzers.md) uygulamanızda bu kural, bir tanılama iletisi "**geçersiz kılınabilir yöntemleri oluşturucular içinde çağırmayın**".
+
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
 Bu kural ihlalini düzeltmek için türün sanal yöntemleri türün oluşturucular içinde çağırmayın.
@@ -51,7 +54,7 @@ Bu kuraldan uyarıyı bastırmayın. Sanal yöntem çağrısı ortadan kaldırma
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bu kuralın ihlali etkisini gösterir. Test uygulama örneği oluşturur `DerivedType`, onun temel sınıfından neden olur (`BadlyConstructedType`) yürütmek için oluşturucu. `BadlyConstructedType`ın Oluşturucusu yanlış sanal yöntemini çağırır `DoSomething`. Çıktıda gösterildiği gibi `DerivedType.DoSomething()` yürütür ve bu nedenle önce yapar `DerivedType`'s Oluşturucusu yürütür.
+Aşağıdaki örnek, bu kuralın ihlali etkisini gösterir. Test uygulama örneği oluşturur `DerivedType`, onun temel sınıfından neden olur (`BadlyConstructedType`) yürütmek için oluşturucu. `BadlyConstructedType`ın Oluşturucusu yanlış sanal yöntemini çağırır `DoSomething`. Çıktıda gösterildiği gibi `DerivedType.DoSomething()` önce yürütür `DerivedType`'s Oluşturucusu yürütür.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

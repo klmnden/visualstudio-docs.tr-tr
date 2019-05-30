@@ -1,5 +1,5 @@
 ---
-title: Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme
+title: Word belgeleri & Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins Genişlet
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2058029bfc188cd3284768e3d1782f7cda96c5c1
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437236"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402101"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO eklentilerinde genişletme
   Bir VSTO eklentisi Word belgelerini ve Excel çalışma kitapları aşağıdaki yollarla özelleştirmek için kullanabilirsiniz:
