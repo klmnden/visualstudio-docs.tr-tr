@@ -3,17 +3,17 @@ title: Visual Studio için renkleri paylaşılan | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b36b7c123f4da9ca3ab7a6f33a972345cdf70e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310785"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlama konusunda ya da arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz seçin ve renkleri atamak için paket tanım dosyalarında mevcut belirteci adları kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
@@ -873,7 +873,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.Background` |
 | Ön plan (metin) | `TreeView.Background` |
 | Ön plan (karakter) | `TreeView.Glyph` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Ağaç görünümü öğesi: duruma getirin**
 
@@ -917,7 +917,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactive` |
 | Ön plan (karakter) | `TreeView.SelectedItemInactiveGlyph` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: durumu odaklı vurgulanan ve seçili**
 
@@ -1008,7 +1008,7 @@ Bildirim Tasarımcısı, Windows 8 ve Windows Phone 8 projeleri bildirim dosyas�
 | Öğe | Belirteç adı: Category.Color |
 | --- | --- |
 | Arka Plan | `ManifestDesigner.TabActive` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Bildirim Tasarımcısı seçilen açıklama bölmesi: varsayılan durumu**
 
@@ -1068,7 +1068,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextActive` |
 | Ön plan (karakter) | `Environment.CommandBarMenuGlyph` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Menü başlığı: duruma getirin**
 

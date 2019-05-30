@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands [Visual Studio]
 - toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0634105b9b071ac4155adb3248abd2b4be19b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aed5a91a819658fb141abb4301b9b9499ed602c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862001"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311156"
 ---
 # <a name="commands-menus-and-toolbars"></a>Komutlar, menüler ve araç çubukları
 Menüleri ve araç çubuklarını, VSPackage komutlarında kullanıcıların erişimi olan. Yazdırma, bir görünümü yenileme veya yeni bir dosya oluşturmak gibi görevleri gerçekleştirmek işlevleri komutlardır. Menüleri ve araç çubuklarını komutlarınızı sunmak için uygun grafik yöntemlerdir. Genellikle, ilgili komutları birlikte aynı menü veya araç çubuğunda kümelenir.
@@ -28,7 +28,7 @@ Menüleri ve araç çubuklarını, VSPackage komutlarında kullanıcıların eri
 
 - Bir komut oluşturduğunuzda, aynı zamanda bir olay işleyicisi için oluşturmanız gerekir. Olay işleyicisi belirler komutu görünür veya etkin olduğunda, metin değiştirme olanak tanır ve komut uygun şekilde yanıt vermesini sağlar ("etkinleştirildiğinde rotaları"). Çoğu durumda, IDE kullanarak komutları işleyen <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi. İçindeki komutlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yerel seçim temel alınarak ve genel seçime göre en dıştaki bağlamı geçmeden en içteki komut bağlamı ile başlayarak, hiyerarşik bir şekilde rota. Ana menüye eklenen komutlar, komut dosyası için hemen kullanılabilir. Daha fazla bilgi için [MenuCommands vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) ve [seçim bağlamı nesneleri](../../extensibility/internals/selection-context-objects.md).
 
-  Yeni menüleri ve araç çubuklarını tanımlamak için bunları Visual Studio komut tablosu içinde açıklamanız gerekir (*.vsct*) dosyası. Bu dosya, için hangi komutları, araç çubukları ve şablonda seçili düzenleyicileri desteklemek için gerekli öğeler ile birlikte Visual Studio Paket şablon oluşturur. Alternatif olarak, kendi yazabileceğiniz *.vsct* dosya, burada açıklanan XML şeması kullanarak: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).
+  Yeni menüleri ve araç çubuklarını tanımlamak için bunları Visual Studio komut tablosu içinde açıklamanız gerekir ( *.vsct*) dosyası. Bu dosya, için hangi komutları, araç çubukları ve şablonda seçili düzenleyicileri desteklemek için gerekli öğeler ile birlikte Visual Studio Paket şablon oluşturur. Alternatif olarak, kendi yazabileceğiniz *.vsct* dosya, burada açıklanan XML şeması kullanarak: [VSCT XML Şeması Başvurusu](../../extensibility/vsct-xml-schema-reference.md).
 
   İle çalışma hakkında daha fazla bilgi için *.vsct* dosyaları görmek [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
