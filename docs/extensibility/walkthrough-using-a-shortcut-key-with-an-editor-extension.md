@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318510"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici uzantısı ile kısayol tuşu kullanma
 Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşu kullanarak görünüm kenarlığı metin görünümü ekleme işlemi gösterilmektedir. Bu izlenecek yol, Görünüm penceresi kenarlığı Düzenleyicisi şablonunu temel alıyorsa ve kenarlığı kullanarak eklemek imkan + karakter.
@@ -108,7 +108,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
     }
     ```
 
-7. Uygulama `Exec()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü.
+7. Uygulama `Exec()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi ( **+** ) karakter türü.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Komut işleyici uygulamasıdır <xref:Microsoft.VisualStudio.Commanding.ICommand
    }
    ```
 
-6. Uygulama `ExecuteCommand()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü.
+6. Uygulama `ExecuteCommand()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi ( **+** ) karakter türü.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

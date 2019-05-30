@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965060"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320616"
 ---
 # <a name="walkthrough-outlining"></a>İzlenecek yol: Anahat Oluşturma
 Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin bölgeleri türleri tanımlayarak anahat oluşturma gibi ayarlayın. Bir dil hizmeti bağlamında bölgeleri tanımlamak veya kendi dosya adı uzantısı ve içerik türünü tanımlayın ve bölge tanımı yalnızca bu türü için geçerli veya bölge tanımları var olan bir içerik türüyle (örneğin, "metin") uygulamak. Bu izlenecek yol, tanımlamak ve ana hat oluşturma bölgeleri görüntülemek gösterilmektedir.
@@ -34,9 +34,9 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
 3. Varolan sınıf dosyaları silin.
 
 ## <a name="implement-an-outlining-tagger"></a>Bir anahat oluşturma etiketlerde uygulayın
- Anahat oluşturma bölgeleri etiketi bir tür tarafından işaretlenir (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Bu etiket davranışı anahat oluşturma standart sağlar. Anahatları belirlenmiş bölge genişletilebilir veya daraltılabilir. Anahatları belirlenmiş bölge bir artı işareti işaretlenir (**+**) daraltılmışsa veya eksi işareti (**-**), genişletilmiş ve genişletilmiş bölge, dikey bir çizgiyle güncelleştireceğinizi.
+ Anahat oluşturma bölgeleri etiketi bir tür tarafından işaretlenir (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Bu etiket davranışı anahat oluşturma standart sağlar. Anahatları belirlenmiş bölge genişletilebilir veya daraltılabilir. Anahatları belirlenmiş bölge bir artı işareti işaretlenir ( **+** ) daraltılmışsa veya eksi işareti ( **-** ), genişletilmiş ve genişletilmiş bölge, dikey bir çizgiyle güncelleştireceğinizi.
 
- Aşağıdaki adımlarda, köşeli parantez ayrılmış tüm bölgeler için anahat oluşturma bölgeleri oluşturan bir etiketlerde tanımlanacağı gösterilmektedir (**[**,**]**).
+ Aşağıdaki adımlarda, köşeli parantez ayrılmış tüm bölgeler için anahat oluşturma bölgeleri oluşturan bir etiketlerde tanımlanacağı gösterilmektedir ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Bir anahat oluşturma etiketlerde uygulamak için
 
@@ -129,7 +129,7 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
     ]
     ```
 
-4. İki ayraç içeren bir anahat oluşturma bölgesi olmalıdır. Anahat oluşturma bölge daraltmak için eksi işaretini sol tarafındaki açık ayraç olması gerekir. Ne zaman bölgesi daraltıldığında, üç nokta simgesine (*...* ) daraltılmış bölgeye ve metni içeren bir açılır pencere solunda görünmesi gereken **gelin metin** üç nokta üzerinde işaretçiyi getirdiğinizde görünmelidir.
+4. İki ayraç içeren bir anahat oluşturma bölgesi olmalıdır. Anahat oluşturma bölge daraltmak için eksi işaretini sol tarafındaki açık ayraç olması gerekir. Ne zaman bölgesi daraltıldığında, üç nokta simgesine ( *...* ) daraltılmış bölgeye ve metni içeren bir açılır pencere solunda görünmesi gereken **gelin metin** üç nokta üzerinde işaretçiyi getirdiğinizde görünmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [İzlenecek yol: Bağlantı bir dosya adı uzantısı için bir içerik türü](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

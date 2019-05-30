@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f46d63e9f1145711bd3a32f6fd24e7b61814922
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859160"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318671"
 ---
 # <a name="saving-a-standard-document"></a>Standart Belge Kaydetme
 Ortam, kaydetme, Farklı Kaydet ve Tümünü Kaydet komutları işler. Bir kullanıcı seçtiğinde **Kaydet**, **Kaydet**, veya **Tümünü Kaydet** gelen **dosya** menüsü ya da sonuçta çözümü kapatır bir  **Tümünü Kaydet**, aşağıdaki süreç gerçekleşir.

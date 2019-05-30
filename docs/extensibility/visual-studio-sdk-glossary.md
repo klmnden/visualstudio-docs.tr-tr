@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322413"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK sözlüğü
 Bu sözlük kullanılan terimlerin tanımları sağlar, [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] belgeleri.
@@ -73,7 +73,7 @@ Bu sözlük kullanılan terimlerin tanımları sağlar, [!INCLUDE[vsipsdk](../ex
 
   Engelleyici olmayan bir üst düzey pencere kullanır ve etkili bir şekilde bir tek başına uygulama penceresi çalışabilir, ancak bir işlem içi nesnesi olarak uygulanan bağımsız en üst düzey bir bileşeni. Bu nedenle, bağımsız bir üst düzey bileşen oluşur ve ileti döngüsü Hizmetleri IDE ile koordine etmek gerekir. İşlem içi nesneleri kendi ileti döngüsü yoktur.
 
-  bilgi sağlayıcısı bilgi sağlayıcısı olan anahtar sözcük arayın ve konuları biçiminde dönmesini sağlayan bir modülü `IVsUserContextItem` nesneleri. Sağlamak üzere **F1** ve öğeleri bilgi sağlayıcısı için arama anahtar sözcüğü, derlenmiş Yardım dosyanızı kaydedin (*. HxS*) sistemi. Dinamik Yardım penceresi görüntülenir ve kullanıcı olup olmadığını gösterilen konuların listesini Yardım konularda bu dosyalardaki **F1**.
+  bilgi sağlayıcısı bilgi sağlayıcısı olan anahtar sözcük arayın ve konuları biçiminde dönmesini sağlayan bir modülü `IVsUserContextItem` nesneleri. Sağlamak üzere **F1** ve öğeleri bilgi sağlayıcısı için arama anahtar sözcüğü, derlenmiş Yardım dosyanızı kaydedin ( *. HxS*) sistemi. Dinamik Yardım penceresi görüntülenir ve kullanıcı olup olmadığını gösterilen konuların listesini Yardım konularda bu dosyalardaki **F1**.
 
   Bileşen bir VSPackage'ı uygulayan bir nesne yerinde `IOleInPlaceComponent` görsel olarak IDE tarafından sahip olunan bir belge penceresi içinde bulunan bir pencereyi yönetmek için arabirim. Yerinde bileşenler standart OLE menü-birleştirme içinde yer yok; Bunun yerine, kendi kullanıcı arabirimi öğeleri IDE'ye tümleştirin.
 

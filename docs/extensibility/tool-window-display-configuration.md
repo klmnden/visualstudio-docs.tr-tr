@@ -6,19 +6,19 @@ helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4498cc0bf7a1a9eab69ecc16b4fb31c3c5e4048c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432167"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316396"
 ---
-# <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
+# <a name="tool-window-display-configuration"></a>Araç Penceresi Ekran Yapılandırması
 VSPackage araç penceresi, varsayılan konum, boyut, yerleştirme stilini ve diğer görünürlük bilgileri kaydedildiğinde, isteğe bağlı değerler belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz. [aracı Windows kayıt defteri](../extensibility/tool-windows-in-the-registry.md)
 
 ## <a name="window-display-information"></a>Pencere bilgilerini görüntüle
@@ -86,7 +86,7 @@ HKEY_LOCAL_MACHINE\
 
 |Ad|Tür|Veri|Açıklama|
 |----------|----------|----------|-----------------|
-|(Varsayılan)|REG_SZ|Yok.|Boş bırakın.|
+|(Varsayılan)|REG_SZ|None|Boş bırakın.|
 |*\<GUID>*|REG_DWORD veya REG_SZ|0 veya açıklayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komutun GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize içerir. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|
 
 ### <a name="example"></a>Örnek

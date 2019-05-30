@@ -3,17 +3,17 @@ title: Gecikmeli belge yüklemesi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a3520b2bf1d6111e945f037502a589feed0d80a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c8e7acb934c66baf804639e35deba59a9a8c81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909782"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312142"
 ---
 # <a name="delayed-document-loading"></a>Gecikmeli belge yüklemesi
 
@@ -65,4 +65,4 @@ Bir belgeye erişme daha verimli bir şekilde kullanmaktır <xref:Microsoft.Visu
 
 Bir belge başlatılmış olup olmadığını, uzantınızı başlatma başlatılmasına gerek olmadığını bulmanın zor olabilir, böylece belirtmek için görünür hiçbir işaret yoktur. Metin tam olarak başlatılmadı her belgenin başlığını neden olduğundan doğrulama kolaylaştırır bir kayıt defteri anahtarı ayarlayabilirsiniz *[Stub]* başlık.
 
-İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**ayarlayın **StubTabTitleFormatString** için  *{0} [Stub]*.
+İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**ayarlayın **StubTabTitleFormatString** için  *{0} [Stub]* .

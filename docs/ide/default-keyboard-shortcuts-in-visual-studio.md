@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a11c5b441b6806c1ee9a07d77044be1ab42d2197
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261328"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319516"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -187,7 +187,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G**|
+|Edit.OpenFile|**Ctrl + Shift + G** (dosya adı imlecin altındaki açılır)|
 |Edit.Paste|**CTRL + V**<br /><br /> veya<br /><br /> **Shift + bileşenleri**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
@@ -268,9 +268,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**CTRL + SHIFT + X**|
 |Project.Override|**Ctrl + Alt + Bileşenleri**|
-|Project.Previewchanges|**Alt +; ** ardından **Alt + C**|
-|Project.Publishselectedfiles|**Alt +; ** ardından **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**Alt +; ** ardından **Alt + R**|
+|Project.Previewchanges|**Alt +;**  ardından **Alt + C**|
+|Project.Publishselectedfiles|**Alt +;**  ardından **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**Alt +;**  ardından **Alt + R**|
 
 ### <a name="bkmk_projectContext"></a> Proje ve çözüm bağlam menüleri
 
@@ -294,9 +294,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL + [**, **O** (harf ' O')<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + O** (harf ' O')|
-|SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL + [** , **O** (harf ' O')<br /><br /> veya<br /><br /> **CTRL + [** , **Ctrl + O** (harf ' O')|
+|SolutionExplorer.PendingChangesFilter|**CTRL + [** , **P**<br /><br /> veya<br /><br /> **CTRL + [** , **Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL + [** , **S**<br /><br /> veya<br /><br /> **CTRL + [** , **Ctrl + S**|
 
 ### <a name="bkmk_team"></a> Takım
 
