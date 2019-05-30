@@ -1,5 +1,5 @@
 ---
-title: Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
+title: Yönetilen kod için özel kod çözümleme iade ilkeleri
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815796"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260836"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Analizi İade İlkelerini Uygulama
 
@@ -79,7 +79,7 @@ Bir Azure DevOps projesi için özel bir kural oluşturmak için önce kümesind
 
 3. İçinde **iade ilkesi** listesinde, çift **Kod Analizi**, emin olun **yönetilen kod için kod analizini zorla** onay kutusu seçilidir.
 
-4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >**.
+4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >** .
 
 5. Sürüm denetimine iade ilkesi kural kümesi dosyası yolunu yazın.
 
@@ -114,6 +114,6 @@ Belirttiğiniz bir projeyi iade ilkesi kuralı Özellikler iletişim kutusunda k
 
 6. Diğer şirketlerin bileşenleri kodda yoksaymak için seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.
 
-7. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.
+7. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .
 
 8. İade İlkesi kural kümesi dosyası yerel sürümünü belirtin.

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997796"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263064"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
@@ -28,7 +28,7 @@ ms.locfileid: "62997796"
 
 En fazla güncelleştirmenizi öneriyoruz [son sürümü](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017'in böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
 
-Ve sonraki sürümü deneyin istiyorsanız, indirme göz önünde bulundurun [Sürüm Adayı](//visualstudio/releases/2019/release-notes/) Visual Studio 2019'ın çok.
+Ve sonraki sürümü deneyin istiyorsanız, indirme göz önünde bulundurun [Sürüm Adayı](/visualstudio/releases/2019/release-notes/) Visual Studio 2019'ın çok.
 
 > [!IMPORTANT]
 > Yüklemek, güncelleştirmek veya Visual Studio değiştirmek için yönetici izinleri olan bir hesapla oturum açmalısınız. Daha fazla bilgi için [kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).

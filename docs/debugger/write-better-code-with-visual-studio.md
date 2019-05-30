@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901355"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262139"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Hata ayıklama teknikleri ve daha iyi kod yazmanıza yardımcı olacak araçlar
 
@@ -294,7 +294,7 @@ Birkaç özel durum işleme için önemli ipuçları şunlardır:
     }
     ```
 
-* Bu dış veri (örneğin, bir web isteği) ile etkileşim kurma uygulamanızda expecially içeren tanınmayan işlevler için hangi özel durumları işlevi kaldırıldığında görmek için belgelere bakın. Bu kritik bilgilerini uygun hata işleme ve uygulamanızın hatalarını ayıklamak için olabilir.
+* Uygulamanızda, özellikle de (örneğin, bir web isteği) dış verilerle etkileşim içeren tanınmayan işlevler için hangi özel durumları işlevi kaldırıldığında görmek için belgelere bakın. Bu kritik bilgilerini uygun hata işleme ve uygulamanızın hatalarını ayıklamak için olabilir.
 
 Örnek uygulama için düzeltme `SerializationException` içinde `GetJsonData` değiştirerek yöntemi `4o` için `40`.
 

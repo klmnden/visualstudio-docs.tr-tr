@@ -1,5 +1,5 @@
 ---
-title: Azure bulut hizmeti için sabit bir sanal IP adresi korumak nasıl | Microsoft Docs
+title: Azure bulut hizmeti için sanal sabit IP adresini koruma
 description: Azure bulut hizmeti sanal IP adresi (VIP) değişmemesini sağlayın öğrenin.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: e17e99b9a1270b3d6a99429bd24103a10d347d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae9064b6aba283c8d2fb8d1e5ec02ef1bd70e199
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550904"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260735"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure bulut hizmeti için sabit bir sanal IP adresi tutma
 Azure'da barındırılan bir bulut hizmeti güncelleştirdiğinizde, hizmet sanal IP adresi (VIP) emin olmanız gerekebilir. Birçok etki alanı Yönetimi Hizmetleri, etki alanı adı sistemi (DNS) etki alanı adlarını kaydetmek için kullanın. VIP aynı kalırsa DNS çalışır. Kullanabileceğiniz **Yayımlama Sihirbazı** bulut hizmetinizin VIP'si ne zaman değişmez emin olmak için Azure Araçları, güncelleştirin. Bulut Hizmetleri için DNS etki alanı yönetimi kullanma hakkında daha fazla bilgi için bkz. [Azure bulut hizmeti için bir özel etki alanı adı yapılandırma](/azure/cloud-services/cloud-services-custom-domain-name-portal).

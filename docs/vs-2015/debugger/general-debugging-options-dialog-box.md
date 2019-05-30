@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704685"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261653"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Genel, Hata Ayıklama, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ ms.locfileid: "65704685"
   Gösterir **Live Visual Tree** ayıklanmakta olan XAML uygulamanın ana pencere bir araç komutları. Bu seçenek, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.  
   
   **Hata ayıklama sırasında tanılama araçlarını etkinleştir**  
-  **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Tanılama araçları** ayıklarken penceresi görüntülenir. Daha fazla bilgi için [hata ayıklayıcısıyla tümleştirilmiş profil oluşturma](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
   **Hata ayıklama sırasında PerfTip geçen süresini göster**  
   Hata ayıklaması yapıyorsanız Kod penceresi belirtilen yöntem çağrısının geçen süreyi görüntüler.  

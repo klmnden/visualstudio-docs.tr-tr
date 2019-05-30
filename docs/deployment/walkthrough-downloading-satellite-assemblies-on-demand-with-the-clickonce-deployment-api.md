@@ -1,5 +1,5 @@
 ---
-title: "İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme | Microsoft Docs"
+title: Uydu derlemesi ClickOnce dağıtım API'si ile isteğe bağlı indirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405933"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262964"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile uydu derlemelerini indirme
 Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kültürde yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürünü dışındaki bir kültür için uygulama kaynaklarını içeren bir derlemedir.
@@ -54,7 +54,7 @@ Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kül
 
 4. Tıklayın **dosyaları** sekmesi.
 
-5. Tıklayın **üç nokta** düğmesine (**...** ) ve tüm uygulamanızın derlemeleri ve oluşturulan kullanarak uydu derlemeleri dahil dosyaları içeren dizini seçin *Resgen.exe*. (Bir uydu derlemesine biçiminde bir ada sahip olacaktır  *\<isoCode > \ApplicationName.resources.dll*burada \<isoCode > RFC 1766 biçiminde bir dil tanımlayıcısı.)
+5. Tıklayın **üç nokta** düğmesine ( **...** ) ve tüm uygulamanızın derlemeleri ve oluşturulan kullanarak uydu derlemeleri dahil dosyaları içeren dizini seçin *Resgen.exe*. (Bir uydu derlemesine biçiminde bir ada sahip olacaktır  *\<isoCode > \ApplicationName.resources.dll*burada \<isoCode > RFC 1766 biçiminde bir dil tanımlayıcısı.)
 
 6. Tıklayın **Doldur** dosyaları dağıtıma eklenecek.
 

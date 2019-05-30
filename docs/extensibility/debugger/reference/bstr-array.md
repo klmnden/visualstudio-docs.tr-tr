@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28b99041fd5b3804719430960b70aa347f07ddd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62879650"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350464"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Dize dizisi açıklar yapısı.
@@ -38,10 +41,12 @@ struct BSTR_ARRAY {
 }
 ```
 
-## <a name="terms"></a>Koşulları
-dwCount sayıda dizeyi içinde `Members` dizisi.
+## <a name="members"></a>Üyeler
+`dwCount`\
+Sayı dizeleri `Members` dizisi.
 
-Üyeleri bir dize dizisi.
+`Members`\
+Dize dizisi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı döndürüldüğü [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) yöntemi.
@@ -55,6 +60,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

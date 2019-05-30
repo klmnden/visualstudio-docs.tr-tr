@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581645"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262944"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
 
@@ -62,7 +62,7 @@ Bu bölüm, belirli dosyaları, derleyicileri, derleme araçları, MSBuild varl�
 - X x86 bilgisayar için varsayılan konumdur *C:\Program Files\Microsoft Visual Studio*
 - X x64 bilgisayar için varsayılan konumdur *C:\Program Files (x86) \Microsoft Visual Studio*
 
-Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağlıdır. X x86 bilgisayar adıdır *Program dosyaları*; x x64 bilgisayar adıdır *Program dosyaları (x86)*. Sistem Mimarisi ne olursa olsun, bu izlenecek yolda başvurduğu *Program dosyaları* klasör olarak *% ProgramFiles %*.
+Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağlıdır. X x86 bilgisayar adıdır *Program dosyaları*; x x64 bilgisayar adıdır *Program dosyaları (x86)* . Sistem Mimarisi ne olursa olsun, bu izlenecek yolda başvurduğu *Program dosyaları* klasör olarak *% ProgramFiles %* .
 
 > [!NOTE]
 > Yapı bilgisayarında, tüm ilgili dosyalar aynı sürücüde olmalıdır. Ancak, söz konusu sürücünün sürücü harfi, Visual Studio ana bilgisayarında yüklü olduğu sürücünün sürücü harfi farklı olabilir. Her iki durumda da, bu belgenin sonraki bölümlerinde açıklandığı şekilde kayıt defteri girdileri oluşturduğunuzda dosyalarının konumunu dikkate alması gerekir.
@@ -169,7 +169,7 @@ Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağl
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Yalnızca aşağıdaki dosyaları kopyalayın *Debug_NonRedist\x86* veya *Debug_NonRedist\x64* klasör açıklandığı gibi yapı bilgisayara [bir hata ayıklama yürütülebilirçalıştırmakiçintestmakinesihazırlama](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Başka hiçbir dosya kopyalanamaz.
+5. Yalnızca aşağıdaki dosyaları kopyalayın *Debug_NonRedist\x86* veya *Debug_NonRedist\x64* klasör açıklandığı gibi yapı bilgisayara [bir hata ayıklama yürütülebilirçalıştırmakiçintestmakinesihazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Başka hiçbir dosya kopyalanamaz.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -332,7 +332,7 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
 
 2. Dizinleri ve dosyaları açıklandığı gibi kopyalayın [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) bölümü altında yapıştırın dışında bu kılavuzun *% Depot %* yeni dizin oluşturuldu. Örneğin, kopyalama *%ProgramFiles%\Windows Kits\8.0\bin* için *%Depot%\Windows Kits\8.0\bin*.
 
-3. Dosyalar ne zaman yapıştırılan içinde *% Depot %*, şu değişiklikleri yapın:
+3. Dosyalar ne zaman yapıştırılan içinde *% Depot %* , şu değişiklikleri yapın:
 
     - % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ve \Microsoft.CppCommon.targets\\, her örneğini değiştirin ,
 
@@ -407,5 +407,5 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklama yürütülebilir çalıştırmak için test makinesi hazırlama](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Hata ayıklama yürütülebilir çalıştırmak için test makinesi hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)

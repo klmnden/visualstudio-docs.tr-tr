@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331139"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 Söz dizimi renklendirme, farklı bir kaynak dosyada farklı renkler ve stil görüntülenecek bir programlama dili öğelerinin neden olan bir özelliktir. Bu özelliği desteklemek için bir ayrıştırıcı veya sözcük temelli öğeler veya belirteçleri dosya türlerini tanımlamak tarayıcı sağlamanız gerekir. Birçok dil anahtar sözcükleri, sınırlayıcılar (örneğin, ayraçlar veya küme ayraçları) ve açıklamaları farklı şekillerde renklendirme tarafından ayırt.
@@ -34,7 +34,7 @@ Söz dizimi renklendirme, farklı bir kaynak dosyada farklı renkler ve stil gö
  Düzenleyici döndürülen renk renklendirilebilir öğeleri listesini bir dizine bilgilerdir. Bir renk değeri ve yazı tipi öznitelikleri kümesi gibi kalın renklendirilebilir her öğeyi belirtir ya da üstü çizili. Düzenleyici, dil hizmeti kullanabileceğiniz varsayılan renklendirilebilir öğeleri kümesi sağlar. Tek yapmak için ihtiyacınız olan her bir belirteç türü için uygun renk dizini belirtin. Ancak, belirteçleri için bir dizi özel renklendirilebilir öğeler ve sağladığınız dizinleri sağlar ve kendi varsayılan liste yerine renklendirilebilir öğeleri listesi başvuru. Ayrıca ayarlamanız gerekir `RequestStockColors` kayıt defteri girdisi için 0 (veya belirtmeyin `RequestStockColors` hiç giriş) özel renkler desteklemek için. Bu kayıt defteri girdisi için adlandırılmış bir parametre ile ayarlayabileceğiniz <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> kullanıcı tanımlı öznitelik. Dil hizmeti kaydetme ve onun seçeneklerini ayarlama hakkında daha fazla bilgi için bkz. [eski dil hizmetinde kaydetme](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Özel Renklendirilebilir Öğeler
- Kendi özel renklendirilebilir öğeler sağlamak için geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> ve <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodunda <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı. İlk yöntem, dil hizmeti destekleyen özel renklendirilebilir öğeler verir ve ikinci özel renklendirilebilir öğesi dizine göre alır. Size özel renklendirilebilir öğeler varsayılan liste oluşturur. Oluşturucu, dil hizmetinin tek yapmanız gereken olan tedarik renklendirilebilir her öğe bir ada sahip. Visual Studio, kullanıcının renklendirilebilir öğeleri farklı bir dizi seçebileceği durumu otomatik olarak işler. Bu ad görünür ne olduğunu **yazı tipleri ve renkler** özellik sayfasında **seçenekleri** iletişim kutusu (Visual Studio'dan kullanılabilir **Araçları** menüsü) ve bu ad belirler bir kullanıcı geçersiz kılınmış rengi. Kullanıcının seçenekleri kayıt defteri önbellekte depolanır ve renk adı tarafından erişilebilir. **Yazı tipleri ve renkler** özellik sayfası listeler, tüm alfabetik sırayla rengi adları, her renk adı; dil adınızla koyarak, özel renkler gruplayabilirsiniz, böylece Örneğin, "**TestLanguage - açıklama**"ve"**TestLanguage - anahtar sözcüğü**". Veya, renklendirilebilir öğeleri türüne göre gruplandırabilirsiniz "**yorum (TestLanguage)**"ve"**anahtar sözcüğü (TestLanguage)**". Dil adı gruplandırarak tercih edilir.
+ Kendi özel renklendirilebilir öğeler sağlamak için geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> ve <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodunda <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı. İlk yöntem, dil hizmeti destekleyen özel renklendirilebilir öğeler verir ve ikinci özel renklendirilebilir öğesi dizine göre alır. Size özel renklendirilebilir öğeler varsayılan liste oluşturur. Oluşturucu, dil hizmetinin tek yapmanız gereken olan tedarik renklendirilebilir her öğe bir ada sahip. Visual Studio, kullanıcının renklendirilebilir öğeleri farklı bir dizi seçebileceği durumu otomatik olarak işler. Bu ad görünür ne olduğunu **yazı tipleri ve renkler** özellik sayfasında **seçenekleri** iletişim kutusu (Visual Studio'dan kullanılabilir **Araçları** menüsü) ve bu ad belirler bir kullanıcı geçersiz kılınmış rengi. Kullanıcının seçenekleri kayıt defteri önbellekte depolanır ve renk adı tarafından erişilebilir. **Yazı tipleri ve renkler** özellik sayfası listeler, tüm alfabetik sırayla rengi adları, her renk adı; dil adınızla koyarak, özel renkler gruplayabilirsiniz, böylece Örneğin, "**TestLanguage - açıklama**"ve"**TestLanguage - anahtar sözcüğü**". Veya, renklendirilebilir öğeleri türüne göre gruplandırabilirsiniz "**yorum (TestLanguage)** "ve"**anahtar sözcüğü (TestLanguage)** ". Dil adı gruplandırarak tercih edilir.
 
 > [!CAUTION]
 > Mevcut renklendirilebilir öğesi adları ile çarpışmalardan kaçınmak için renklendirilebilir öğe adı dil adı dahil önemle tavsiye edilir.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352035"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma
 
@@ -210,7 +210,7 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
 1. Derlemeyi imzalayın. İçinde **Çözüm Gezgini**, VSIX projesi, sağ tıklatın ve seçin seçin **proje özellikleri**.
 
-2. İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >**. İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.
+2. İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >** . İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.
 
 3. İçinde **Çözüm Gezgini**, VSIX projesini seçin ve bulma **özellikleri** penceresi.
 
@@ -218,9 +218,9 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
 5. Çözümü yeniden derleyin.
 
-6. Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz (*\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopyalama *key.snk* dosya.
+6. Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz ( *\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopyalama *key.snk* dosya.
 
-7. Çıkış dizinine gidin ve derleme bulunamadı (*\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Yapıştırma *key.snk* Buraya dosya. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)
+7. Çıkış dizinine gidin ve derleme bulunamadı ( *\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Yapıştırma *key.snk* Buraya dosya. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)
 
 8. Bir komut penceresi açın ve derleme oluşturulduktan dizine geçin.
 

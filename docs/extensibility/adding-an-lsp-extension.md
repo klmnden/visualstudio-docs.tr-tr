@@ -3,19 +3,19 @@ title: Dil sunucusu Protokolü uzantısı ekleme | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352325"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
+# <a name="add-a-language-server-protocol-extension"></a>Dil Sunucusu Protokolü uzantısı ekleme
 
 Dil sunucusu Protokolü (LSP) bir ortak dil çeşitli kod düzenleyicilerinden hizmet özellikler sağlamak için kullanılan, JSON RPC v2.0 biçiminde kuralıdır. Protokolünü kullanarak, IntelliSense, hata tanılamaya Bul gibi tüm başvurular vb. LSP destekleyen çeşitli kod düzenleyiciler için dil hizmeti sağlamak için bir tek dil sunucusu özellikleri geliştiricilerin yazabilirsiniz. Visual Studio'da dil Hizmetleri söz dizimi vurgulama gibi temel işlevler sağlamak için TextMate dil bilgisi dosyaları kullanarak veya sağlamak için eksiksiz bir Visual Studio genişletilebilirlik API'leri kullanan özel dil Hizmetleri yazma geleneksel olarak eklenebilir daha zengin veriler. Visual Studio desteği sayesinde LSP, üçüncü bir seçenek yoktur.
 
@@ -139,7 +139,7 @@ LSP diller için metin renklendirmesi nasıl belirtimi içermez. Uzantı gelişt
 
 4. Sağ tıklatın ve dosyaları **özellikleri**. Değiştirme **derleme** eyleme **içerik** değiştirip **VSIX Ekle** özelliğini **true**.
 
-Önceki adımları tamamladıktan sonra bir *Dilbilgisi* paket yüklemek için klasör eklenir dizini depo kaynağı olarak adlandırılan 'MyLang' ('MyLang' Kesinleştirme için yalnızca bir ad ve benzersiz bir dize olabilir). Tüm dil bilgisi (*.tmlanguage* dosyaları) ve tema dosyası (*.tmtheme* dosyaları) bu dizin toplanmış potentials ve TextMate ile sağlanan yerleşik dilbilgisi geçersiz kılar. Bildirilen uzantıları dilbilgisi dosyanın açılmasını dosya uzantısını eşleşirse, TextMate adım.
+Önceki adımları tamamladıktan sonra bir *Dilbilgisi* paket yüklemek için klasör eklenir dizini depo kaynağı olarak adlandırılan 'MyLang' ('MyLang' Kesinleştirme için yalnızca bir ad ve benzersiz bir dize olabilir). Tüm dil bilgisi ( *.tmlanguage* dosyaları) ve tema dosyası ( *.tmtheme* dosyaları) bu dizin toplanmış potentials ve TextMate ile sağlanan yerleşik dilbilgisi geçersiz kılar. Bildirilen uzantıları dilbilgisi dosyanın açılmasını dosya uzantısını eşleşirse, TextMate adım.
 
 ## <a name="create-a-simple-language-client"></a>Bir basit dil istemcisi oluşturma
 

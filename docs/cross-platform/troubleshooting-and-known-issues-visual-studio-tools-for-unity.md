@@ -1,5 +1,5 @@
 ---
-title: Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları) | Microsoft Docs
+title: Sorun giderme ve bilinen sorunlar (Unity için VS araçları)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815592"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261124"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları)
 
@@ -54,7 +54,7 @@ Bu sorunu çözer. Sorun yaşamaya durumunda, yönetici olarak Visual Studio iç
 
 Ayrıştırma, FMOD, ZNEYİ (Evrensel Media Player), ZFBrowser veya katıştırılmış tarayıcı gibi çok sayıda Unity eklenti yerel iş parçacığı kullanmaktadır. Bir eklenti sonra işletim sistemi engelleme çağrıları yapan çalışma zamanı, yerel bir iş parçacığı ekleme yukarı sona erdiğinde bir sorundur. Unity hata ayıklayıcı (veya etki alanı yeniden yükle) için iş parçacığı kesme ve bağlantıyı anlamına gelir.
 
-FMOD, geçici bir çözüm yoktur, geçirebilirsiniz `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` başlatma [bayrağı](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) zaman uyumsuz işleme devre dışı bırakabilir ve tüm işlemleri ana iş parçacığı üzerinde gerçekleştirin.
+FMOD, geçici bir çözüm yoktur, geçirebilirsiniz `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` başlatma [bayrağı](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) zaman uyumsuz işleme devre dışı bırakabilir ve tüm işlemleri ana iş parçacığı üzerinde gerçekleştirin.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio uyumlu proje
 

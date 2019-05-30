@@ -9,14 +9,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0c7cac1a5cedc154fdc771ef4615a79c7ead1cd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654431"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263844"
 ---
-# <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML değişmez değerlerini XML Şeması Gezgini ile tümleştirme
+# <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML Değişmez Değerlerinin XML Şeması Gezgini ile Tümleştirilmesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Basic, Visual Basic kodunuzda doğrudan XML parçalarının birleştirebilirsiniz anlamına gelir, XML değişmez değerleri, destekler. Daha fazla bilgi için [XML değişmez değerlerine genel bakış](http://go.microsoft.com/fwlink/?LinkId=140325).  
@@ -29,7 +29,7 @@ Visual Basic, Visual Basic kodunuzda doğrudan XML parçalarının birleştirebi
   
  ![Visual Basic XML sabit değerleri; XML Şeması Gezgini](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif "VBXMLLiteralsWithXMLSchemaExplorer2")  
   
- Bu özellik, Visual Studio 2008 SP1'de sunulmuştur. Bu özellik ayrıntılı olarak açıklanmıştır Röportaj izlemek için bkz [Channel 9 görüşme: Visual Studio 2008 SP1'de XML Şeması Gezgini](http://go.microsoft.com/fwlink/?LinkId=140183).  
+ Bu özellik, Visual Studio 2008 SP1'de sunulmuştur. Bu özellik ayrıntılı olarak açıklanmıştır Röportaj izlemek için bkz [Channel 9 görüşme: Visual Studio 2008 SP1'de XML Şeması Gezgini](https://channel9.msdn.com/Blogs/funkyonex/XML-Schema-Explorer-in-Visual-Studio-2008-SP1).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: XML Şema Tasarımcısını XML Değişmez Değerleri ile Kullanma](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438004"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263043"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio JavaScript veya TypeScript bir uygulamada hata ayıklama
 
@@ -64,7 +64,7 @@ Visual Studio ve istemci tarafı kod kesme noktaları isabet hata ayıklayıcıy
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Ayrıca `--remote-debugging-port` seçerek tarayıcı başlatma bayrağı **şununla Gözat...**  > öğesinden **hata ayıklama** ardından araç çubuğunda **Ekle**ve ardından bayrağı ayarı **bağımsız değişkenleri** alan. Tarayıcı için farklı bir kolay ad gibi kullanın **Chrome ile hata ayıklama**. Ayrıntılar için bkz [sürüm notları](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > Ayrıca `--remote-debugging-port` seçerek tarayıcı başlatma bayrağı **şununla Gözat...**  > öğesinden **hata ayıklama** ardından araç çubuğunda **Ekle**ve ardından bayrağı ayarı **bağımsız değişkenleri** alan. Tarayıcı için farklı bir kolay ad gibi kullanın **Chrome ile hata ayıklama**. Ayrıntılar için bkz [sürüm notları](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 
@@ -147,7 +147,7 @@ Eklerseniz bir *tsconfig.json* dosya Visual Studio projenize bir TypeScript proj
 
 * **inlineSourceMap**: Her kaynak dosyası için ayrı bir kaynak eşlemesi oluşturmak yerine, kaynak eşlemeleri ile tek bir dosya gösterin.
 * **inlineSources**: Tek bir dosya içinde kaynak eşlemeleri yanı sıra kaynak yayma; gerektirir *inlineSourceMap* veya *kaynak eşlemesi* ayarlanacak.
-* **mapRoot**: Hata ayıklayıcı nereden kaynak eşlemesi konumunu belirtir (*.map*) dosyaları varsayılan konumu yerine. Bu bayrak kullanırsanız çalışma zamanı *.map* dosyaları farklı bir konumda olması gerekir *.js* dosyaları. Belirtilen konumda hata ayıklayıcı konumunu yönlendirmek için kaynak eşlemesi katıştırılmış *.map* dosyaları.
+* **mapRoot**: Hata ayıklayıcı nereden kaynak eşlemesi konumunu belirtir ( *.map*) dosyaları varsayılan konumu yerine. Bu bayrak kullanırsanız çalışma zamanı *.map* dosyaları farklı bir konumda olması gerekir *.js* dosyaları. Belirtilen konumda hata ayıklayıcı konumunu yönlendirmek için kaynak eşlemesi katıştırılmış *.map* dosyaları.
 * **Kaynak eşlemesi**: Karşılık gelen oluşturur *.map* dosya.
 * **sourceRoot**: Hata ayıklayıcının TypeScript dosyalarını kaynak konumlar yerine nerede konumu belirtir. Çalışma zamanı kaynakları tasarım zamanında konumdan farklı bir konumda olması gerekiyorsa bu bayrağı kullanın. Hata ayıklayıcı kaynak dosyalarının bulunduğu için doğrudan kaynak eşlemesi içinde belirtilen konuma eklenir.
 

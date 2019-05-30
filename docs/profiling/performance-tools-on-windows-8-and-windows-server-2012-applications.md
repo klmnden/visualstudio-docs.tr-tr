@@ -1,5 +1,5 @@
 ---
-title: Windows 8 ve Windows Server 2012 uygulamalarında performans araçları | Microsoft Docs
+title: Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798200"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262951"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 
@@ -109,7 +109,7 @@ Bir profil oluşturma yürütmesine katman etkileşim verileri toplama seçeneğ
 
 **Uzak makinede ipucu verileri toplama**
 
-Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_**_\<Platform >_ **\_**  _\<Dil >_**.exe** dosya *%VSInstallDir%\Team Araçlar\Performans Tools\Setups* bir Visual Studio makineyi klasörü Uzak bilgisayar ve yükleyin. Profil oluşturma araçları kullanamazsınız [uzaktan hata ayıklama](../debugger/remote-debugging.md) paketini indirin.
+Uzak makinede katman etkileşim verileri toplamak için kopyalamanız gereken **vs\_profil oluşturucu\_** _\<Platform >_ **\_**  _\<Dil >_ **.exe** dosya *%VSInstallDir%\Team Araçlar\Performans Tools\Setups* bir Visual Studio makineyi klasörü Uzak bilgisayar ve yükleyin. Profil oluşturma araçları kullanamazsınız [uzaktan hata ayıklama](../debugger/remote-debugging.md) paketini indirin.
 
 Kullanabileceğiniz [VSPerfCmd](../profiling/vsperfcmd.md) veya [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) profil oluşturma verileri toplamak için.
 

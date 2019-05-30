@@ -6,17 +6,17 @@ helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6a93cc87be2369ba3bc96bf6682caeb4a727c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c362ceb6321c49f4e868d2ae00c417e6ba6e2cee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889178"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351460"
 ---
 # <a name="process-debug-manager"></a>İşlem Hata Ayıklama Yöneticisi
 İşlem Hata Ayıklama Yöneticisi (PDM) programları yönetir Visual Studio'nun bir bileşendir ve oturumu için kullanılabilir hale getirme işlemleri yöneticisi ve hata ayıklama altyapısı hatalarını ayıklayın.

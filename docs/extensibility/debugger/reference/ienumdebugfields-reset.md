@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Reset method
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b123d1fa644873619d1db512da42031d2ee15ea
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: c50a5e2ed55bf1550ca4a70bc566fb2504b100a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208047"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350410"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Bu yöntem, ilk öğe için sabit sıfırlar.
@@ -36,7 +36,7 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>Parametreler
- None
+ Yok.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

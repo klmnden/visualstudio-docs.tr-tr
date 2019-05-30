@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 0beffc3409a562382b2a97981254dca887ec6ac9
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177582"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263120"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus, Visual Studio abonelikleri
 
@@ -26,7 +26,7 @@ En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla ç
 3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Office 365 yükleme](_img/vs-office365/vs-office365-downloads.png)
-0. Office 365'i yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** Office 365 listenin altındaki bağlantıyı.
+0. Office 365 ProPlus yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** Office 365 listenin altındaki bağlantıyı.
    > [!div class="mx-imgBorder"]
    > ![Office 365 ürün anahtarını Al](_img/vs-office365/vs-office365-get-key.png)
 0. Çıkış penceresi, sizin için kullanılabilir olan yanı sıra zaten talep herhangi bir anahtar gösterilmektedir.  Yeni bir anahtar almak için tıklayın **anahtar talep et** altında **Office Professional Plus 2019** listeleme.

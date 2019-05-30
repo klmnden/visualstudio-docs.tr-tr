@@ -9,19 +9,19 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK]
 - text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96abe68838d028c5de9d6d9418e94ba5b46c0f76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32bbfb4957dbeb351055ab3f73c7a29087349636
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432305"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338036"
 ---
-# <a name="using-fonts-and-colors"></a>Yazı tipleri ve renkler kullanma
+# <a name="using-fonts-and-colors"></a>Yazı Tiplerini ve Renkleri Kullanma
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Metni görüntülemek için yazı tiplerini ve renklerini kullanma desteği sağlar.
 
 ## <a name="in-this-section"></a>Bu Bölümde

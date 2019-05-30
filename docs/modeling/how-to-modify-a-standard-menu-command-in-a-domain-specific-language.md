@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme'
+title: DSL içinde standart menü komutunu değiştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811391"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263693"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Nasıl yapılır: Alana Özgü bir Dilde Standart Menü Komutunu Değiştirme
 

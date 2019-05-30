@@ -1,5 +1,6 @@
 ---
-title: Özel proje ve öğe şablonları Visual Studio 2017 için yükseltme | Microsoft Docs
+title: Visual Studio 2017 için özel Proje ve öğe şablonlarını yükseltme
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434211"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261796"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Özel proje ve öğe şablonları Visual Studio 2017 için yükseltin
 
@@ -26,7 +27,7 @@ Bir VSIX uzantısının bir parçası olarak bir proje veya öğe şablonu oluş
 
 ## <a name="template-scanning"></a>Tarama şablonu
 
-Visual Studio'nun önceki sürümlerinde **devenv/Setup** veya **devenv /installvstemplates** proje ve öğe şablonlarını bulmak için yerel disk taranır. Visual Studio 2017'den itibaren tarama için kullanıcı düzeyi konum gerçekleştirilir. Varsayılan kullanıcı düzeyi konum **%USERPROFILE%\Documents\\< Visual Studio sürümü\>\Templates\\**. Bu konum için tarafından oluşturulan şablonlarını kullanılır **proje** > **şablonları dışarı aktar...**  , komut **otomatik olarak şablonu Visual Studio'ya içeri aktarma** seçeneği Sihirbazı'nda.
+Visual Studio'nun önceki sürümlerinde **devenv/Setup** veya **devenv /installvstemplates** proje ve öğe şablonlarını bulmak için yerel disk taranır. Visual Studio 2017'den itibaren tarama için kullanıcı düzeyi konum gerçekleştirilir. Varsayılan kullanıcı düzeyi konum **%USERPROFILE%\Documents\\< Visual Studio sürümü\>\Templates\\** . Bu konum için tarafından oluşturulan şablonlarını kullanılır **proje** > **şablonları dışarı aktar...**  , komut **otomatik olarak şablonu Visual Studio'ya içeri aktarma** seçeneği Sihirbazı'nda.
 
 Diğer (kullanıcı olmayan) konumları için konumu ve diğer özellikleri de şablon belirten bir manifest(.vstman) dosyası eklemeniz gerekir. .Vstman dosya şablonları için kullanılan .vstemplate dosyasıyla birlikte oluşturulur. Uzantınızı bir .vsix kullanarak yüklerseniz, bu uzantı Visual Studio 2017'de derleyerek gerçekleştirebilirsiniz. Ancak bir. msi'nin kullanırsanız, değişiklikler el ile yapmanız gerekir. Bu değişiklikleri yapmak için yapmanız gerekenler bir listesi için bkz **yükseltme ile yüklenen uzantıları için bir. MSI** daha sonra bu sayfayı.
 
@@ -34,7 +35,7 @@ Diğer (kullanıcı olmayan) konumları için konumu ve diğer özellikleri de �
 
 1. Çözümü Visual Studio 2017'de açın. Yükseltme kodu istenir. **Tamam**'ı tıklatın.
 
-2. Yükseltme tamamlandıktan sonra yükleme hedef sürümünü değiştirmeniz gerekebilir. VSIX projesinde source.extension.vsixmanifest dosyasını açın ve seçin **hedefleri Yükle** sekmesi. Varsa **sürüm aralığı** alandır **[14.0]**, tıklayın **Düzenle** ve Visual Studio 2017 içerecek şekilde değiştirin. Örneğin, ayarlayabilirsiniz **[14.0,15.0]** Visual Studio 2015 veya Visual Studio 2017 veya için uzantıyı yüklemek için **[15.0]** yalnızca Visual Studio 2017'ye yüklemek için.
+2. Yükseltme tamamlandıktan sonra yükleme hedef sürümünü değiştirmeniz gerekebilir. VSIX projesinde source.extension.vsixmanifest dosyasını açın ve seçin **hedefleri Yükle** sekmesi. Varsa **sürüm aralığı** alandır **[14.0]** , tıklayın **Düzenle** ve Visual Studio 2017 içerecek şekilde değiştirin. Örneğin, ayarlayabilirsiniz **[14.0,15.0]** Visual Studio 2015 veya Visual Studio 2017 veya için uzantıyı yüklemek için **[15.0]** yalnızca Visual Studio 2017'ye yüklemek için.
 
 3. Kodu yeniden derleyin.
 
@@ -119,7 +120,7 @@ Böylece yeni dosyaları doğru bir şekilde oluşturabilir Visual Studio 2015 v
 
 ```
 
- Tarafından sağlanan bilgileri [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) öğesi aynı kalır.  **\<VSTemplateContainer>** öğesi ilişkili şablonu için .vstemplate dosyasını işaret eder.
+ Tarafından sağlanan bilgileri [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) öğesi aynı kalır. **\<VSTemplateContainer>** öğesi ilişkili şablonu için .vstemplate dosyasını işaret eder.
 
  Visual Studio 2015 tarafından oluşturulan varsayılan öğe .vstemplate dosyası aşağıda verilmiştir:
 
@@ -171,7 +172,7 @@ Böylece yeni dosyaları doğru bir şekilde oluşturabilir Visual Studio 2015 v
 </VSTemplateManifest>
 ```
 
- Tarafından sağlanan bilgileri  **\<TemplateData >** öğesi aynı kalır.  **\<VSTemplateContainer>** öğesi işaret ilişkili şablonu için .vstemplate dosyasının
+ Tarafından sağlanan bilgileri  **\<TemplateData >** öğesi aynı kalır. **\<VSTemplateContainer>** öğesi işaret ilişkili şablonu için .vstemplate dosyasının
 
  .Vstman dosyanın farklı öğeler hakkında daha fazla bilgi için bkz. [Visual Studio şablon bildirim şeması başvurusu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

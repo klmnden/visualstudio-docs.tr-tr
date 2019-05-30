@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352342"
 ---
 # <a name="add-command-line-switches"></a>Komut satırı anahtarları ekleme
 Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *devenv.exe* yürütülür. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar VSPackage adlı bir alt sınıfı için eklenen **AddCommandSwitchPackage** bağımsız değişken olmadan ile otomatik olarak yüklenecek VSPackage'ı.
@@ -34,7 +34,7 @@ Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *dev
 | Parametre | Açıklama|
 | Arguments | Anahtar için bağımsız değişken sayısı. Olabilir "*", veya bağımsız değişkenlerinin listesi. |
 | DemandLoad | Bu 1, aksi durumda 0 olarak ayarlayın, ayarlanırsa VSPackage'ı otomatik olarak yükleyin. |
-| HelpString | Görüntülemek için Yardım dizesi veya kaynak kimliği dizesi **devenv /?**. |
+| HelpString | Görüntülemek için Yardım dizesi veya kaynak kimliği dizesi **devenv /?** . |
 | Ad | Anahtar. |
 | PackageGuid | Paket GUID'si. |
 

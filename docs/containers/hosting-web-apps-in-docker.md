@@ -1,5 +1,5 @@
 ---
-title: Azure Container Registry (ACR) için bir ASP.NET Docker kapsayıcısı dağıtma | Microsoft Docs
+title: ACR kayıt defterine ASP.NET Docker kapsayıcısı dağıtma
 description: ASP.NET Core web uygulaması bir kapsayıcı kayıt defterine dağıtmak için Visual Studio kapsayıcı araçları kullanmayı öğrenin
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 8f0dfe14530a4638e43041053d069d2e1293e73d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 812cddf692ab6cc5676a04dabb88a6e1224c7dcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824879"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261044"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio kullanarak kapsayıcı kayıt defterine ASP.NET kapsayıcısı dağıtma
 

@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674163"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263023"
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
+# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden Çok Bilgisayarda Derleme Ortamı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı oluşturabilirsiniz ve böylece katılabilmesi çeşitli dosya ve ayarları başka bir bilgisayara ardından kopyalama oluşturur. Visual Studio'yu diğer bilgisayara yüklemeniz gerekmez.  
@@ -197,7 +197,7 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Açıklandığı gibi yalnızca aşağıdaki dosyaları \Debug_NonRedist\x86\ veya \Debug_NonRedist\x64\ klasöründen yapı bilgisayarına kopyalayın [bir hata ayıklama yürütülebilir bir Test makinesi için çalıştırın hazırlama](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Başka hiçbir dosya kopyalanamaz.  
+5. Açıklandığı gibi yalnızca aşağıdaki dosyaları \Debug_NonRedist\x86\ veya \Debug_NonRedist\x64\ klasöründen yapı bilgisayarına kopyalayın [bir hata ayıklama yürütülebilir bir Test makinesi için çalıştırın hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Başka hiçbir dosya kopyalanamaz.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı 
          Yerel 64 bit yapı için 64-bit Msbuild'i gösterin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yürütülebilir hata ayıklamayı çalıştırmak için Test Makinesi hazırlama](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Yürütülebilir hata ayıklamayı çalıştırmak için Test Makinesi hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Komut Satırı Başvurusu](../msbuild/msbuild-command-line-reference.md)

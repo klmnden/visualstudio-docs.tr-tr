@@ -1,5 +1,5 @@
 ---
-title: Kapsayıcı günlüklerini ve ortam değişkenlerini görüntüleyin ve dosya sistemi erişebilirsiniz.
+title: Kapsayıcı günlükleri, ortam değişkenleri ve dosya sistemi erişim
 description: Uygulamanızı hata ayıklama ve kapsayıcılarda barındıran neler olup bittiğini görmek için bir araç penceresini kullanarak kapsayıcı tabanlı uygulamalarınızı Visual Studio'da tanılama yeteneğinizi geliştirmek nasıl açıklar.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 05/06/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a686d2e361f40ad4040ad112845e99ab844a3c15
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: b8e8e2db3f8f6e5aa60f3fa593caf017c349dca8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135607"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261196"
 ---
 # <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Görüntüleme ve kapsayıcıları Visual Studio'da tanılama
 

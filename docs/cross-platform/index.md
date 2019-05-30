@@ -1,14 +1,20 @@
 ---
 layout: LandingPage
 title: C++ ile Mobil Geliştirme
-description: 'Yerel C++ uygulamaları, iOS için oluşturma Visual Studio ile Android ve Windows cihazlar.'
+description: Yerel C++ uygulamaları, iOS için oluşturma Visual Studio ile Android ve Windows cihazlar.
 ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
-  - apexprodleads
+- apexprodleads
+ms.openlocfilehash: 126e7058a16738d38ea78c2e71cb5476d3718a93
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261099"
 ---
 # <a name="mobile-development-with-c-documentation"></a>C++ belgeleri ile Mobil Geliştirme
 
@@ -98,7 +104,7 @@ ms.workload:
                 <div class="card">
                     <div class="cardText">
                         <h3>Platformlar</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Evrensel Windows Platformu (UWP) belgeleri</a></p>
+                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Evrensel Windows Platformu (UWP) belgeleri</a></p>
                         <p><a href="https://developer.apple.com/reference">iOS API belgeleri</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Android API belgeleri</a></p>
                     </div>

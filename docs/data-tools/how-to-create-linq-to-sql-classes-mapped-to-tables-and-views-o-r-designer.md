@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Tablolar ve görünümler (O R Designer) ile eşlenen SQL sınıflarına LINQ oluşturma'
+title: LINQ to SQL sınıfları için tablolar/görünümler (O R Designer) map
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a923dd102d93aaf7ed545c022f5f12087f8a6b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567015"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260595"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: Tablolar ve görünümler (O/R Tasarımcısı) ile eşlenen SQL sınıflarına LINQ oluşturma
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: Tablolar ve görünümler ile eşlenen LINQ to SQL sınıfları oluşturma (O/R Tasarımcısı)
 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanını tablolar ve görünümler ile eşlenen sınıfları çağrılır *varlık sınıfları*. Bir varlık sınıfı özelliklerini bireysel kaydı oluşturan tek tek sütunlara yapılan oluştururken varlık sınıfı bir kayda eşler. Tabloları veya görünümleri sürükleyerek veritabanı tabloları veya görünümleri temel alan bir varlık sınıfları oluşturma **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine [LINQ to SQL araçları Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **O/R Tasarımcısı** sınıflar oluşturur ve belirli uygular [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] etkinleştirmek için öznitelikleri [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] işlevleri (veri iletişimi ve özelliklerini düzenleme <xref:System.Data.Linq.DataContext>). İlgili ayrıntılı bilgi için [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sınıfları için bkz [LINQ to SQL nesne modeli](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).
 

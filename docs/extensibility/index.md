@@ -2,12 +2,18 @@
 layout: LandingPage
 title: Visual Studio Genişletilebilirliği
 description: Visual Studio genişletilebilirlik hakkında bilgi edinin.
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
-  - apexprodleads
+- apexprodleads
+ms.openlocfilehash: 81ba8dfd0c82c1d52933de4a0666cd40c379ee8c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353799"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio genişletilebilirlik belgeleri
 

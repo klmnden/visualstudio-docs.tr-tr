@@ -1,5 +1,5 @@
 ---
-title: Birden çok hizmet yapılandırması'nı kullanarak Azure projenizi yapılandırma | Microsoft Docs
+title: Birden çok hizmet yapılandırması ile Azure projesi yapılandırın
 description: Bir Azure bulut hizmeti projesi ServiceDefinition.csdef ve ServiceConfiguration.Local.cscfg ServiceConfiguration.Cloud.cscfg dosyaları değiştirerek yapılandırmayı öğrenin.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555311"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260644"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
@@ -51,7 +51,7 @@ Bir HTTPS uç noktası zaten eklediyseniz, HTTPS uç noktası seçeneği varsay�
 
 ### <a name="diagnostics"></a>Tanılamalar
 
-Varsayılan olarak, tanılama Web rolü için etkinleştirilir. Azure bulut hizmeti projesi ve depolama hesabı, yerel depolama öykünücüsü kullanma için ayarlanır. Azure'a dağıtmaya hazır olduğunuzda builder düğmesini seçebilirsiniz (**...** ) Azure depolama yerine kullanılacak. İsteğe bağlı veya otomatik olarak zamanlanan aralıklarda tanılama verilerini depolama hesabına aktarabilir. Azure Tanılama hakkında daha fazla bilgi için bkz: [Azure bulut Hizmetleri ve sanal Makineler'de tanılamayı etkinleştirme](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Varsayılan olarak, tanılama Web rolü için etkinleştirilir. Azure bulut hizmeti projesi ve depolama hesabı, yerel depolama öykünücüsü kullanma için ayarlanır. Azure'a dağıtmaya hazır olduğunuzda builder düğmesini seçebilirsiniz ( **...** ) Azure depolama yerine kullanılacak. İsteğe bağlı veya otomatik olarak zamanlanan aralıklarda tanılama verilerini depolama hesabına aktarabilir. Azure Tanılama hakkında daha fazla bilgi için bkz: [Azure bulut Hizmetleri ve sanal Makineler'de tanılamayı etkinleştirme](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Ayarlar sayfası
 

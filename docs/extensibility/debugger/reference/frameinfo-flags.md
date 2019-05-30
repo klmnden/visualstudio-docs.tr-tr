@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56990cf324c09764137b344f875322e80e613403
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924208"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350499"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Bir yığın çerçeve nesnesi hakkında almak için bilgileri belirtir.
@@ -97,68 +100,99 @@ public enum enum_FRAMEINFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Üyeler
-FIF_FUNCNAME başlatma/kullanım `m_bstrFuncName` alan.
+## <a name="fields"></a>Alanlar
+`FIF_FUNCNAME`\
+Başlat/kullanım `m_bstrFuncName` alan.
 
-FIF_RETURNTYPE başlatma/kullanım `m_bstrReturnType` alan.
+`FIF_RETURNTYPE`\
+Başlat/kullanım `m_bstrReturnType` alan.
 
-FIF_ARGS başlatma/kullanım `m_bstrArgs` alan.
+`FIF_ARGS`\
+Başlat/kullanım `m_bstrArgs` alan.
 
-FIF_LANGUAGE başlatma/kullanım `m_bstrLanguage` alan.
+`FIF_LANGUAGE`\
+Başlat/kullanım `m_bstrLanguage` alan.
 
-FIF_MODULE başlatma/kullanım `m_bstrModule` alan.
+`FIF_MODULE`\
+Başlat/kullanım `m_bstrModule` alan.
 
-FIF_STACKRANGE başlatma/kullanım `m_addrMin` ve `m_addrMax` alanlar (yığın aralığı).
+`FIF_STACKRANGE`\
+Başlat/kullanım `m_addrMin` ve `m_addrMax` alanlar (yığın aralığı).
 
-FIF_FRAME başlatma/kullanım `m_pFrame` alan.
+`FIF_FRAME`\
+Başlat/kullanım `m_pFrame` alan.
 
-FIF_DEBUGINFO başlatma/kullanım `m_fHasDebugInfo` alan.
+`FIF_DEBUGINFO`\
+Başlat/kullanım `m_fHasDebugInfo` alan.
 
-FIF_STALECODE başlatma/kullanım `m_fStaleCode` alan.
+`FIF_STALECODE`\
+Başlat/kullanım `m_fStaleCode` alan.
 
-FIF_ANNOTATEDFRAME başlatma/kullanım `m_fAnnotatedFrame` alan.
+`FIF_ANNOTATEDFRAME`\
+Başlat/kullanım `m_fAnnotatedFrame` alan.
 
-FIF_DEBUG_MODULEP başlatma/kullanım `m_pModule` alan.
+`FIF_DEBUG_MODULEP`\
+Başlat/kullanım `m_pModule` alan.
 
-İşlev adı FIF_FUNCNAME_FORMAT biçimlendirir. Sonucun içerisinde geri dönmemiş ise `m_bstrFunName` alan ve başka bir alan doldurulmalıdır.
+`FIF_FUNCNAME_FORMAT`\
+İşlev adı biçimlendirir. Sonucun içerisinde geri dönmemiş ise `m_bstrFunName` alan ve başka bir alan doldurulmalıdır.
 
-Ekler için dönüş türü FIF_FUNCNAME_RETURNTYPE `m_bstrFuncName` alan.
+`FIF_FUNCNAME_RETURNTYPE`\
+Dönüş türüne ekler `m_bstrFuncName` alan.
 
-FIF_FUNCNAME_ARGS bağımsız değişkenleri ekler `m_bstrFuncName` alan.
+`FIF_FUNCNAME_ARGS`\
+Bağımsız değişkenleri ekler `m_bstrFuncName` alan.
 
-FIF_FUNCNAME_LANGUAGE ekler diline `m_bstrFuncName` alan.
+`FIF_FUNCNAME_LANGUAGE`\
+Dil ekler `m_bstrFuncName` alan.
 
-Modül adına FIF_FUNCNAME_MODULE ekler `m_bstrFuncName` alan.
+`FIF_FUNCNAME_MODULE`\
+Modül adı ile ekler `m_bstrFuncName` alan.
 
-FIF_FUNCNAME_LINES ekler için satır sayısı `m_bstrFuncName` alan.
+`FIF_FUNCNAME_LINES`\
+Ekler için satır sayısı `m_bstrFuncName` alan.
 
-FIF_FUNCNAME_OFFSET ekler `m_bstrFuncName` satırını başından itibaren bayt uzaklığını simgesini `FIF_FUNCNAME_LINES` belirtilir. Varsa `FIF_FUNCNAME_LINES` belirtilmezse veya satır numaralarını kullanılamıyorsa uzaklık bayt cinsinden işlevi başlangıcından ekler.
+`FIF_FUNCNAME_OFFSET`\
+Ekler `m_bstrFuncName` satırını başından itibaren bayt uzaklığını simgesini `FIF_FUNCNAME_LINES` belirtilir. Varsa `FIF_FUNCNAME_LINES` belirtilmezse veya satır numaralarını kullanılamıyorsa uzaklık bayt cinsinden işlevi başlangıcından ekler.
 
-Ekler için her işlevi bağımsız değişken türünü FIF_FUNCNAME_ARGS_TYPES `m_bstrFuncName` alan.
+`FIF_FUNCNAME_ARGS_TYPES`\
+Her işlev bağımsız değişken türü ekler `m_bstrFuncName` alan.
 
-Her işlev bağımsız değişkeni adını FIF_FUNCNAME_ARGS_NAMES ekler `m_bstrFuncName` alan.
+`FIF_FUNCNAME_ARGS_NAMES`\
+Her işlev bağımsız değişkeni adını ekler `m_bstrFuncName` alan.
 
-Ekler için her işlevi bağımsız değişkeninin değeri FIF_FUNCNAME_ARGS_VALUES `m_bstrFuncName` alan.
+`FIF_FUNCNAME_ARGS_VALUES`\
+Her işlev bağımsız değişken değerini ekler `m_bstrFuncName` alan.
 
-Türü, adı ve tüm bağımsız değişken değeri FIF_FUNCNAME_ARGS_ALL ekler `m_bstrFuncName` alan.
+`FIF_FUNCNAME_ARGS_ALL`\
+Türü, adı ve tüm bağımsız değişkenlerinin değerini ekler `m_bstrFuncName` alan.
 
-Bağımsız değişken türleri FIF_ARGS_TYPES alınır ve biçimlendirilmiş.
+`FIF_ARGS_TYPES`\
+Bağımsız değişken türleri alınır ve biçimlendirilmiş.
 
-Bağımsız değişken adları FIF_ARGS_NAMES alınır ve biçimlendirilmiş.
+`FIF_ARGS_NAMES`\
+Bağımsız değişken adları alınır ve biçimlendirilmiş.
 
-Bağımsız değişken değerlerini FIF_ARGS_VALUES alınır ve biçimlendirilmiş.
+`FIF_ARGS_VALUES`\
+Bağımsız değişken değerlerini alınır ve biçimlendirilmiş.
 
-FIF_ARGS_ALL almak ve biçim türü, adı ve değeri tüm bağımsız değişkenler.
+`FIF_ARGS_ALL`\
+Almak ve türü, adı ve tüm bağımsız değişkenlerin değerini biçimlendirin.
 
-Bağımsız değişkenler FIF_ARGS_NOFORMAT belirtir değil biçimlendirilmiş olmalıdır (örneğin, değil açılış ve kapanış ayraçlarını bağımsız değişken listesi geçici olarak ekleyin ya da bağımsız değişkenler arasındaki ayırıcı ekleyin).
+`FIF_ARGS_NOFORMAT`\
+Bağımsız değişkenleri olan olması biçimlendirilmemiş olduğunu belirtir (örneğin, değil açılış ve kapanış ayraçlarını bağımsız değişken listesi geçici olarak ekleyin ya da bağımsız değişkenler arasındaki ayırıcı ekleyin).
 
-FIF_ARGS_NO_FUNC_EVAL belirten (özellik) değerlendirmesi işlevi bağımsız değişken değerlerini alınırken kullanılmamalıdır.
+`FIF_ARGS_NO_FUNC_EVAL`\
+(Özellik) işlev değerlendirmesi bağımsız değişken değerlerini alınırken kullanılmamalıdır belirtir.
 
-Hata ayıklama altyapısı FIF_FILTER_NON_USER_CODE dahil edilmez kullanıcı olmayan kod çerçevelerini filtre kullanmaktır.
+`FIF_FILTER_NON_USER_CODE`\
+Hata ayıklama altyapısı dahil edilmez kullanıcı olmayan kod çerçevelerini filtre sağlamaktır.
 
-FIF_ARGS_NO_TOSTRING izin verme `ToString()` İşlev değerlendirmesi veya işlev bağımsız değişkenleri döndürülürken biçimlendirme.
+`FIF_ARGS_NO_TOSTRING`\
+İzin verme `ToString()` İşlev değerlendirmesi veya işlev bağımsız değişkenleri döndürülürken biçimlendirme.
 
-Barındırma işlemi yerine barındırılan uygulama etki FIF_DESIGN_TIME_EXPR_EVAL çerçeve bilgi edinmiş.
+`FIF_DESIGN_TIME_EXPR_EVAL`\
+Barındırma işlemi yerine barındırılan uygulama etki çerçeve bilgi edinmiş.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu bayraklar geçirilen [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) ve [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) içinde başlatılacak hangi alanların olduğunu göstermek için yöntemlerini [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yapıyla veya yapılarla.
@@ -172,7 +206,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)

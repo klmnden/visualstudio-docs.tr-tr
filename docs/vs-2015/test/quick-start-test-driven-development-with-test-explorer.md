@@ -8,14 +8,14 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446200"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261640"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı dillerde veya platformlarda test için özel hazırlanmıştır. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. En sık kullanılan çerçeveler için bağdaştırıcılar bulunmaktadır ve diğer çerçeveler için kendi bağdaştırıcılarınızı yazabilirsiniz.  
@@ -65,10 +65,10 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 > Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.  
   
 > [!NOTE]
-> Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
- Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [ABD farklı test çerçevesi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Testi ve yöntemi oluşturma  
   
@@ -124,7 +124,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 7. Altındaki öğeleri seçin **yığın izlemesi** testin başarısız olduğu görmek için.  
   
-   ![Birim Test Gezgini başarısız gösteren test edin. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Birim Test Gezgini başarısız gösteren test edin. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    Bu noktada, test ve değiştirecek ve böylece test başarılı bir saplama oluşturdunuz.  
   
@@ -145,7 +145,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
      Test başarılı olur.  
   
-     ![Birim Test Gezgini'nde testi geçiyor gösteriliyor. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Birim Test Gezgini'nde testi geçiyor gösteriliyor. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Giriş aralığını genişletmek için testler ekleme  
   
@@ -287,4 +287,4 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
      Tüm testler hala başarılı.  
   
-     ![Birim Test Gezgini 3 geçen testler gösteriliyor. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Birim Test Gezgini 3 geçen testler gösteriliyor. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme'
+title: 'Nasıl yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975596"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332758"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl yapılır: Projelere sınıf diyagramları ekleme
 
@@ -71,6 +71,9 @@ Birden fazla sınıf diyagramı eklemek için bu yordamdaki adımları yineleyin
 İçinde **Çözüm Gezgini** veya sınıf görünümü projeye sağ tıklayıp seçin, **görünümü**, ardından **sınıf diyagramını görüntüle**.
 
 Bir otomatik olarak doldurulan bir sınıf diyagramı oluşturulur.
+
+> [!NOTE]
+> Sınıf Tasarımcısı, .NET Core projelerinde kullanılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

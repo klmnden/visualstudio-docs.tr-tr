@@ -1,5 +1,5 @@
 ---
-title: Test etmek için ClickOnce uygulamaları dağıtma ve üretim sunucularına teslim etmeden | Microsoft Docs
+title: Yeniden imzalamadan ClickOnce uygulamaları dağıtma
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1abda86c8fdd80c20b03a6d3869d025d0a7aaa
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407058"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263291"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Teslim etmeden ClickOnce uygulamaları için test ve üretim sunucuları dağıtma
 Bu makalede ClickOnce bildirimlerini yeniden imzalama veya ClickOnce değiştirmeden birden çok ağ konumundan ClickOnce uygulamalarının dağıtımını sağlayan sürüm 3.5 .NET Framework sunulan bir özelliğidir.

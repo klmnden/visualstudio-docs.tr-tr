@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Değişiklik ClickOnce uygulaması için yayımlama dilini | Microsoft Docs'
+title: Yayımlama dili ClickOnce uygulaması için değiştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406649"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263171"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için yayımlama dilini değiştirme
 

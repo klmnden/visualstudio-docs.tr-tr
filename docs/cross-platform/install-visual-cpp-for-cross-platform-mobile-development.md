@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824811"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261089"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++ ile platformlar arası mobil geliştirme yükleyin
 
@@ -74,7 +74,7 @@ Visual Studio 2017 için Visual Studio Yükleyicisi'ni içeren bir **C++ ile Mob
 1. Visual Studio'yu açın.
 
 > [!NOTE]
-> Visual Studio 2015 kullanıyorsanız, bkz. [Visual C++ platformlar arası mobil geliştirme (Visual Studio 2015) için yükleme](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> Visual Studio 2015 kullanıyorsanız, bkz. [Visual C++ platformlar arası mobil geliştirme (Visual Studio 2015) için yükleme](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>İOS için araçları yükleme
 
@@ -119,11 +119,11 @@ Aşağıdaki bilgileri okuyun ve bağımlılıkları el ile yüklemek için aşa
 
 1. Visual Studio menü çubuğunda, seçin **Araçları** > **seçenekleri**.
 
-1. İçinde **seçenekleri** iletişim kutusunda **Çoklu Platform** > **C++** > **Android**.
+1. İçinde **seçenekleri** iletişim kutusunda **Çoklu Platform** > **C++**  > **Android**.
 
    ![Android aracı yolu seçeneklerinin](../cross-platform/media/cppmdd_options_android.PNG "CPPMDD_Options_Android")
 
-1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve klasör yolu metin kutusuna düzenleyin. Gözat düğmesini de kullanabilirsiniz (**...** ) açmak için bir **konumu seçin** iletişim klasörünü seçin.
+1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve klasör yolu metin kutusuna düzenleyin. Gözat düğmesini de kullanabilirsiniz ( **...** ) açmak için bir **konumu seçin** iletişim klasörünü seçin.
 
 1. Seçin **Tamam** klasör konumlarını özel aracı kaydetmek için.
 

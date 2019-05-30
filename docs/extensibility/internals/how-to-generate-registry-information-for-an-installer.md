@@ -7,24 +7,24 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418435"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328830"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: Bir yükleyicinin kayıt defteri bilgilerini oluşturma
 
 *RegPkg.exe* yardımcı programı, yönetilen bir VSPackage için bir kayıt bildirimi oluşturmak için kullanılabilir. Bildirimi, Windows Installer kurulum pakete eklenebilir. RegPkg ayrıca temel kurulum kaynak dosyada bulunan bir dosya oluşturmak [Windows Installer XML araç takımı](http://go.microsoft.com/fwlink/?LinkId=62238).
 
 > [!IMPORTANT]
-> RegPkg geliştirme sisteminize özel yol adları oluşturur, RegPkg her kullanışınızda kullanılacak çıktıyı düzenlemek için uygun bir Windows Installer özellikleri biçimlendirilmiş. Örneğin, `InprocServer32` değeri  *\<SystemFolder\>mscoree.dll* ve yolları kullanması gereken *\<#filekey\>* ve  *\<$componentkey\>*. Bu şekilde çıkış ayarlama farklı bir sürücüde veya farklı bir dizin, yerelleştirilmiş dizin adları ve kullanıcıların seçim yapabileceği yollarını yüklü Windows bilgisayarları destekler. Daha fazla bilgi için [biçimlendirilmiş](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer SDK. RegPkg kuralları için geliştirme sistem yolları izlerseniz — Örneğin, form kimlikleri dosya *File_\<filename\>*— daha az sayıda değişiklik.
+> RegPkg geliştirme sisteminize özel yol adları oluşturur, RegPkg her kullanışınızda kullanılacak çıktıyı düzenlemek için uygun bir Windows Installer özellikleri biçimlendirilmiş. Örneğin, `InprocServer32` değeri  *\<SystemFolder\>mscoree.dll* ve yolları kullanması gereken *\<#filekey\>* ve  *\<$componentkey\>* . Bu şekilde çıkış ayarlama farklı bir sürücüde veya farklı bir dizin, yerelleştirilmiş dizin adları ve kullanıcıların seçim yapabileceği yollarını yüklü Windows bilgisayarları destekler. Daha fazla bilgi için [biçimlendirilmiş](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer SDK. RegPkg kuralları için geliştirme sistem yolları izlerseniz — Örneğin, form kimlikleri dosya *File_\<filename\>* — daha az sayıda değişiklik.
 
 ## <a name="to-create-a-registration-manifest"></a>Bir kayıt bildirimi oluşturmak için
 

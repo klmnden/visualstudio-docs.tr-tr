@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma | Microsoft Docs'
+title: El ile ClickOnce dağıtımı marka koruma uygulamaları
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405849"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263419"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,7 +127,7 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 13. Seçin **dosya**, **Kaydet** menüsünde ve uygulama bildirimini kaydedin. Kaydettiğinizde uygulama bildirimini imzalayın istenir.
 
-14. Dosya sisteminizdeki bir dosya olarak depolanan bir sertifika varsa, **sertifika dosyası olarak oturum** seçeneğini ve üç nokta simgesini kullanarak dosya sisteminden sertifikası seçin (**...** ) düğmesi.
+14. Dosya sisteminizdeki bir dosya olarak depolanan bir sertifika varsa, **sertifika dosyası olarak oturum** seçeneğini ve üç nokta simgesini kullanarak dosya sisteminden sertifikası seçin ( **...** ) düğmesi.
 
      -veya-
 

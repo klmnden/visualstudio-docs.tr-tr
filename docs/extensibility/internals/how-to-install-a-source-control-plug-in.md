@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420521"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334918"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
@@ -64,7 +64,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
 
 3. Alt ekleyin **SourceCodeControlProvider**altında **HKEY_LOCAL_MACHINE** anahtarını **yazılım** alt.
 
-    Bu alt anahtar, kayıt defteri girişini altında **ProviderRegKey** adım 1'kayıt defterinde yerleştirilen alt anahtarını temsil eden bir dize olarak ayarlanmış. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *yazılım\\< şirket adı\>\\< ürün adı \>*.
+    Bu alt anahtar, kayıt defteri girişini altında **ProviderRegKey** adım 1'kayıt defterinde yerleştirilen alt anahtarını temsil eden bir dize olarak ayarlanmış. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *yazılım\\< şirket adı\>\\< ürün adı \>* .
 
     Örnek içerik için bu alt anahtar verilmiştir.
 
@@ -77,7 +77,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
 
 4. Adlı bir alt anahtarını oluşturmak **InstalledSCCProviders** altında **SourceCodeControlProvider** alt anahtarını ve ardından bu alt anahtarı altında bir girdi yerleştirebilirsiniz.
 
-    Bu giriş adı sağlayıcı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve değeri, bir kez daha, 1. adımda oluşturduğunuz alt ise. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< görünen adı\>** = *yazılım\\< şirket adı\>\\< ürün adı\>*.
+    Bu giriş adı sağlayıcı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve değeri, bir kez daha, 1. adımda oluşturduğunuz alt ise. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< görünen adı\>**  = *yazılım\\< şirket adı\>\\< ürün adı\>* .
 
     Örneğin:
 

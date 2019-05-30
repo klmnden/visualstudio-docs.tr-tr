@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62888926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350571"
 ---
 # <a name="bptype"></a>BP_TYPE
 Kesme noktası bir kod konumu, veri konumu veya başka türde bir kesme noktası olduğunu belirtir.
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Üyeler
-BPT_NONE hiçbir kesme noktası türünü belirtir.
+## <a name="fields"></a>Alanlar
+`BPT_NONE`\
+Hiçbir kesme noktası türünü belirtir.
 
-Bir kod kesme noktası BPT_CODE belirtir.
+`BPT_CODE`\
+Bir kod kesme noktası belirtir.
 
-Veri kesme noktası BPT_DATA belirtir.
+`BPT_DATA`\
+Veri kesme noktası belirtir.
 
-BPT_SPECIAL belirtir, bir kod ya da bir veri kesme noktası yazın. Bu tür kullanım dışıdır ve kullanılmamalıdır.
+`BPT_SPECIAL`\
+Bir kod ya da bir veri türü olan bir kesme noktası belirtir. Bu tür kullanım dışıdır ve kullanılmamalıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 Bir parametre olarak geçirilen [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) ve [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) yöntemleri.
@@ -62,7 +69,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
 - [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

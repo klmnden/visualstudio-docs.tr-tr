@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924805"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350479"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Başarılı bir kesme noktası çözünürlüğü hakkında alınacak bilgileri belirtir.
@@ -43,14 +46,18 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Üyeler
-BPRESI_BPRESLOCATION başlatma/kullanım `bpResLocation` (kesme noktası çözünürlüğü konumu) alanının [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapısı.
+## <a name="fields"></a>Alanlar
+`BPRESI_BPRESLOCATION`\
+Başlat/kullanım `bpResLocation` (kesme noktası çözünürlüğü konumu) alanının [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapısı.
 
-BPRESI_PROGRAM başlatma/kullanım `pProgram` alanını `BP_RESOLUTION_INFO` yapısı.
+`BPRESI_PROGRAM`\
+Başlat/kullanım `pProgram` alanını `BP_RESOLUTION_INFO` yapısı.
 
-BPRESI_THREAD başlatma/kullanım `pThread` alanını `BP_RESOLUTION_INFO` yapısı.
+`BPRESI_THREAD`\
+Başlat/kullanım `pThread` alanını `BP_RESOLUTION_INFO` yapısı.
 
-Tüm alanları BPRESI_ALLFIELDS belirtir.
+`BPRESI_ALLFIELDS`\
+Tüm alanları belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Geçirilen [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) hangi alanları göstermek için yöntemi [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapısı olan başlatılacak.
@@ -66,7 +73,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

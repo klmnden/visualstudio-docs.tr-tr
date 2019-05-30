@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351843"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Bir program düğüme iliştirmek için hata ayıklama altyapısı (DE) nedenini belirtir.
@@ -41,12 +44,15 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>Üyeler
-İşlem şu anda hata ayıklama modunda olduğundan ATTACH_REASON_AUTO ekleyin.
+## <a name="fields"></a>Alanlar
+`ATTACH_REASON_AUTO`\
+İşlem şu anda hata ayıklama modunda olduğundan ekleyin.
 
-ATTACH_REASON_LAUNCH işlemini başlattı çünkü ekleyin.
+`ATTACH_REASON_LAUNCH`\
+İşlem başlatıldığından ekleyin.
 
-ATTACH_REASON_USER Kullanıcı isteği nedeniyle ekleyin.
+`ATTACH_REASON_USER`\
+Bir kullanıcı isteği nedeniyle ekleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerler için parametre olarak kullanılan [iliştirme](../../../extensibility/debugger/reference/idebugengine2-attach.md) ve [iliştirme](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) yöntemleri.
@@ -58,7 +64,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

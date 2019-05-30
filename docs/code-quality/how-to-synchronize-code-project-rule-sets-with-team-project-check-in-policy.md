@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Takım Projesi İade İlkesiyle Kod Proje Kural Kümelerini Eşitleme'
+title: İade İlkesi ile eşitleme proje kural kümeleri
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815855"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260845"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Nasıl yapılır: Azure DevOps projesi iade ilkesiyle kod proje kural kümelerini eşitleme
 
@@ -45,7 +45,7 @@ Azure DevOps projesi iade ilkesiyle kod proje için Kod Analizi ayarları, en az
 
 3. Tıklayın **Kod Analizi**.
 
-4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.
+4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .
 
 5. İçinde **açık** iletişim kutusunda, İade İlkesi kural kümesi dosyası belirtin.
 
@@ -61,6 +61,6 @@ Azure DevOps projesi iade ilkesiyle kod proje için Kod Analizi ayarları, en az
 
 5. Kod projesi için özellikleri iletişim kutusunu açmak ve görüntülemek **Kod Analizi** sayfası.
 
-6. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.
+6. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .
 
 7. İçinde **açık** iletişim kutusunda, kural kümesi dosyası belirtin.

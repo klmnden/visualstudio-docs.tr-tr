@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb21b08af13d386ae6bd506b96be33ac0a2fb8a7
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: MT
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177609"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261328"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -268,9 +268,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Project.AddNewItem|**Ctrl + Shift + A**|
 |Project.ClassWizard|**CTRL + SHIFT + X**|
 |Project.Override|**Ctrl + Alt + Bileşenleri**|
-|Project.Previewchanges|**Alt +;**  ardından **Alt + C**|
-|Project.Publishselectedfiles|**Alt +;**  ardından **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**Alt +;**  ardından **Alt + R**|
+|Project.Previewchanges|**Alt +; ** ardından **Alt + C**|
+|Project.Publishselectedfiles|**Alt +; ** ardından **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**Alt +; ** ardından **Alt + R**|
 
 ### <a name="bkmk_projectContext"></a> Proje ve çözüm bağlam menüleri
 
@@ -804,7 +804,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 | Edit.GotoBraceExtend | **CTRL + SHIFT +]** |
 | Edit.GotoRecent | **CTRL + T, R** |
 | Edit.GotoNextIssueinFile | **Alt + PgDn** |
-| Edit.GotoPreviousIssueinFile **Alt + PgUp** |
+| Edit.GotoPreviousIssueinFile | **Alt + PgUp** |
 | Edit.HideSelection | **CTRL + M, Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +.** |
 | Edit.IncrementalSearch | **CTRL + ı** |

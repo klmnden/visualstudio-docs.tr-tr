@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928895"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263311"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio'da dağıtımına genel bakış
 
@@ -118,7 +118,7 @@ Daha fazla bilgi için [hızlı başlangıç - bir web sitesine dağıtma](quick
 
 - [Yayımla aracı ile .NET Core uygulamasını dağıtma](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Azure'a bir ASP.NET core uygulaması yayımlama](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Visual C++ üzerinde Dağıtım](/cpp/ide/deployment-in-visual-cpp)
+- [Visual C++ üzerinde Dağıtım](/cpp/windows/deployment-in-visual-cpp)
 - [UWP uygulamaları dağıtma](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Web dağıtımı kullanarak Azure'da bir Node.js uygulaması yayımlama](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Python uygulamasını Azure App Service'e yayımlama](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

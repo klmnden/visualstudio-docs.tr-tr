@@ -1,5 +1,5 @@
 ---
-title: 'Öğretici: Windows Presentation Foundation (WPF) ile Merhaba Dünya uygulamasıC#'
+title: Merhaba Dünya uygulaması ' WPF'de ileC#
 description: Basit bir Windows Masaüstü .NET uygulaması oluşturun C# Windows Presentation Foundation (WPF) UI çerçevesi kullanarak Visual Studio ile.
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426537"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261700"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: C ile basit uygulama oluşturma\#
 
@@ -308,7 +308,7 @@ Her şeyin çalıştığını doğruladığınıza göre uygulamanın bir yayın
 
 3. Çözüm seçerek yapı **derleme** > **Çözümü Derle**.
 
-Bu öğreticiyi tamamlamak Tebrikler! Bulabilirsiniz *.exe* çözüm ve proje dizininiz altında oluşturulan (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Bu öğreticiyi tamamlamak Tebrikler! Bulabilirsiniz *.exe* çözüm ve proje dizininiz altında oluşturulan ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

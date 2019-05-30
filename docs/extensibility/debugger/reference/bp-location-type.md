@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924997"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353040"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Bir kesme noktası istek için bir kesme noktası konumu türünü belirtir.
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>Üyeler
-BPLT_NONE hiçbir kesme noktası konumu belirtir.
+## <a name="fields"></a>Alanlar
+`BPLT_NONE`\
+Hiçbir kesme noktası konumu belirtir.
 
-BPLT_FILE_LINE bir dosya satır kesme noktası konumu türünü belirtir.
+`BPLT_FILE_LINE`\
+Kesme noktası konum türü, bir dosya satırı belirtir.
 
-BPLT_FUNC_OFFSET işlevi offset kesme noktası konumu türünü belirtir.
+`BPLT_FUNC_OFFSET`\
+Kesme noktası konum türü bir işlev uzaklığı belirtir.
 
-BPLT_CONTEXT bağlamı olarak kesme noktası konumu türünü belirtir.
+`BPLT_CONTEXT`\
+Kesme noktası konum türü bağlamı olarak belirtir.
 
-BPLT_STRING kesme noktası konum türü bir dize olarak belirtir.
+`BPLT_STRING`\
+Kesme noktası konum türü bir dize olarak belirtir.
 
-BPLT_ADDRESS kesme noktası konum türü bir adresi belirtir.
+`BPLT_ADDRESS`\
+Kesme noktası konum türü bir adresi belirtir.
 
-BPLT_RESOLUTION bir çözüm kesme noktası konumu türünü belirtir.
+`BPLT_RESOLUTION`\
+Kesme noktası konum türü bir çözüm belirtir.
 
-BPLT_CODE_FILE_LINE bir kaynak kod satırı kesme noktası konumu türünü belirtir.
+`BPLT_CODE_FILE_LINE`\
+Kesme noktası konum türü, bir kaynak kod satırı belirtir.
 
-BPLT_CODE_FUNC_OFFSET kod işlevi offset kesme noktası konumu türünü belirtir.
+`BPLT_CODE_FUNC_OFFSET`\
+Kesme noktası konum türü bir kod işlevi uzaklığı belirtir.
 
-BPLT_CODE_CONTEXT kod bağlamı olarak kesme noktası konumu türünü belirtir.
+`BPLT_CODE_CONTEXT`\
+Kesme noktası konum türü kod bağlamı olarak belirtir.
 
-BPLT_CODE_STRING kesme noktası konum türü bir kod dize olarak belirtir.
+`BPLT_CODE_STRING`\
+Kesme noktası konum türü, bir kod dize olarak belirtir.
 
-BPLT_CODE_ADDRESS bir kod adresiyle kesme noktası konumu türünü belirtir.
+`BPLT_CODE_ADDRESS`\
+Kesme noktası konum türü bir kod adresiyle belirtir.
 
-BPLT_DATA_STRING kesme noktası konum türü verileri dize olarak belirtir.
+`BPLT_DATA_STRING`\
+Kesme noktası konum türü verileri dize olarak belirtir.
 
-BPLT_TYPE_MASK belirtir bir bit maskesi, böylece kesme noktası türü, değer dışında ayıklanabilir.
+`BPLT_TYPE_MASK`\
+Kesme noktası türü, değer dışında ayıklanabileceği bir bit maskesi belirtir.
 
-BPLT_LOCATION_TYPE_MASK belirtir bir bit maskesi, böylece kesme noktası konum türü değeri dışında ayıklanabilir.
+`BPLT_LOCATION_TYPE_MASK`\
+Kesme noktası konum türü değeri dışında ayıklanabileceği bir bit maskesi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bir parametre olarak geçirilen [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) yöntemi.
@@ -110,7 +128,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

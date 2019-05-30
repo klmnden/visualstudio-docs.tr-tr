@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553386"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263040"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017’de JavaScript
 
@@ -247,7 +247,7 @@ Bkz: [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) Intel
 ### <a name="vsdoc"></a>VSDoc
 
 Bazen VSDocs adlandırılır, XML belge açıklamaları, daha önce kaynak kodunuzu IntelliSense sonuçlarını buff için kullanılacak ek verileriyle donatmak için de kullanılabilir.
-Şunun için artık VSDoc desteklenmiyor [JSDoc](http://usejsdoc.org/about-getting-started.html) yazma ve JavaScript için kabul edilen standart kolay olduğu.
+Şunun için artık VSDoc desteklenmiyor [JSDoc](https://jsdoc.app/about-getting-started.html) yazma ve JavaScript için kabul edilen standart kolay olduğu.
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` Uzantıları
 
