@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322848"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX Bildirim Tasarımcısı
 Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bildirim dosyası, değiştirir.
@@ -60,15 +60,15 @@ Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bi
 
   **Lisans** var olan kullanıcı lisansı içeren metin dosyası belirtir.
 
-  **Simge** grafik dosyasını belirtir (*.png*, *.bmp*, *.jpeg*, *.ico*) görüntülenecek simge içeriyor **Uzantı Yöneticisi**, varsa bir simge. Bu boyutlara yeniden boyutlandırılabilir veya simge görüntüsü 32 x 32 piksel olmalıdır. Simge yok belirtilirse, **Uzantı Yöneticisi** varsayılan bir simge kullanılır.
+  **Simge** grafik dosyasını belirtir ( *.png*, *.bmp*, *.jpeg*, *.ico*) görüntülenecek simge içeriyor **Uzantı Yöneticisi**, varsa bir simge. Bu boyutlara yeniden boyutlandırılabilir veya simge görüntüsü 32 x 32 piksel olmalıdır. Simge yok belirtilirse, **Uzantı Yöneticisi** varsayılan bir simge kullanılır.
 
-  **Önizleme görüntüsü** grafik dosyasını belirtir (*.png*, *.bmp*, *.jpeg*, *.ico*) önizleme görüntüsünü içerir görüntülenmesi **Uzantı Yöneticisi**, bir önizleme görüntüsü varsa. Önizleme görüntüsü 200 x 200 piksel olmalıdır. Hiçbir önizleme görüntüsü belirtilirse, **Uzantı Yöneticisi** varsayılan bir görüntü kullanır.
+  **Önizleme görüntüsü** grafik dosyasını belirtir ( *.png*, *.bmp*, *.jpeg*, *.ico*) önizleme görüntüsünü içerir görüntülenmesi **Uzantı Yöneticisi**, bir önizleme görüntüsü varsa. Önizleme görüntüsü 200 x 200 piksel olmalıdır. Hiçbir önizleme görüntüsü belirtilirse, **Uzantı Yöneticisi** varsayılan bir görüntü kullanır.
 
   **Etiketleri** arama ipuçları için kullanılacak metni etiketleri ekler.
 
-  **Sürüm Notları** belirtir (*.txt*, *.rtf*), sürüm notlarını içerir. Ayrıca sürüm notlarını görüntüleyen bir Web sitesinin URL'sini alır.
+  **Sürüm Notları** belirtir ( *.txt*, *.rtf*), sürüm notlarını içerir. Ayrıca sürüm notlarını görüntüleyen bir Web sitesinin URL'sini alır.
 
-  **Başlarken Kılavuzu** belirtir (*.txt*, *.rtf*) içeriğin veya uzantısı VSIX paketinde kullanma hakkında bilgiler içerir. Bu kılavuz, uzantı yüklemesi tamamlandığında görünür. Ayrıca Kılavuzu görüntüleyen bir Web sitesinin URL'sini alır.
+  **Başlarken Kılavuzu** belirtir ( *.txt*, *.rtf*) içeriğin veya uzantısı VSIX paketinde kullanma hakkında bilgiler içerir. Bu kılavuz, uzantı yüklemesi tamamlandığında görünür. Ayrıca Kılavuzu görüntüleyen bir Web sitesinin URL'sini alır.
 
   **Daha fazla bilgi URL'si** ürün hakkında ek bilgi içeren bir Web sitesinin URL'sini belirtir.
 
@@ -94,7 +94,7 @@ Visual Studio uzantısı için yükleme davranışı ayarlayan bir VSIX paket bi
 
   **Bu VSIX tüm kullanıcılar için yüklenir (yüklemede bir yükseltme gerektirir)** bu onay kutusunu seçerseniz, uzantı tüm kullanıcılar için yüklenir; Aksi takdirde, yalnızca geçerli kullanıcı için yüklenir.
 
-  **Bu VSIX yüklü Windows Installer tarafından** uzantısı, bu onay kutusunu seçerseniz, Windows Installer tarafından yüklenir (*.msi* dosya); Aksi takdirde, tipik bir VSIX paketi olarak yüklenir (*.vsix*  dosyası).
+  **Bu VSIX yüklü Windows Installer tarafından** uzantısı, bu onay kutusunu seçerseniz, Windows Installer tarafından yüklenir ( *.msi* dosya); Aksi takdirde, tipik bir VSIX paketi olarak yüklenir ( *.vsix*  dosyası).
 
   **Varlıklar** sekmesi aşağıdaki denetimleri içerir.
 

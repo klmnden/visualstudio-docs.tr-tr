@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346176"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Hata ayıklama özelliği hakkında bilgiler içerir.
@@ -49,19 +52,26 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>Üyeler
-bayrakları birleşimi dwValidFields A [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) hangi alanların doldurulur belirten sabit listesi.
+`dwValidFields`\
+Bayraklarının bir birleşimi [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) hangi alanların doldurulur belirten sabit listesi.
 
-bstrFullName özelliğin tam adı.
+`bstrFullName`\
+Özelliğin tam adı.
 
-bstrName bir bağlam içinde özellik adı.
+`bstrName`\
+Bir bağlam içinde özellik adı.
 
-bstrType özelliği bir biçimlendirilmiş dize olarak yazın.
+`bstrType`\
+Özellik türü olarak biçimlendirilmiş bir dize.
 
-bstrValue özellik değeri olarak biçimlendirilmiş bir dize.
+`bstrValue`\
+Özellik değeri olarak biçimlendirilmiş bir dize.
 
-pProperty [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) bu yapı tarafından açıklanan bir nesne.
+`pProperty`\
+[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) bu yapı tarafından açıklanan bir nesne.
 
-bayrakları birleşimi dwAttrib A [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) bu özelliğin özniteliklerini açıklayan sabit listesi.
+`dwAttrib`\
+Bayraklarının bir birleşimi [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) bu özelliğin özniteliklerini açıklayan sabit listesi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bir özellik adı, türü ve değeri içeren hiyerarşik bir yapısı nesnesidir. Örneğin, bir özellik, yerel değişkenler, parametreleri, izleme değişkenleri ve ifadeleri ve kayıtları açıklayabilirsiniz.
@@ -75,7 +85,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

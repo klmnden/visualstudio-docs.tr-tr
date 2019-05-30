@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9942df0084924543149eb78f245a996559d594ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926658"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341815"
 ---
 # <a name="commandtable-element"></a>CommandTable öğesi
 CommandTable olan kök öğesini *.vsct* dosya. Bu gerçek düzeni ve IDE VSPackage sağlayan komut türü tanımlayan dosyasıdır. Komutlarını, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları içerebilir. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
@@ -67,7 +67,7 @@ CommandTable olan kök öğesini *.vsct* dosya. Bu gerçek düzeni ve IDE VSPack
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|Yok.||
+|None||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

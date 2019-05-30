@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a5c80785aa5d7f3e38dfb52b503c42d788e557
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b4f33f7ecf974fe527f814b9febdc861101f1ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318492"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Nasıl yapılır: Kayıt defteri ayarlarını kullanarak özel bir galeriyi yönetme
 Bir yönetici veya Geliştirici yalıtılmış kabuk uzantısı, denetimleri, şablonlar ve araçlar Visual Studio Galerisi, Örnekler Galerisi veya özel galeriler erişimi denetleyebilirsiniz. Bir galeri kullanılabilir veya kullanılamaz hale getirmek için oluşturma bir *.pkgdef* değiştirilen kayıt defteri anahtarları ve değerlerini açıklayan dosyası.

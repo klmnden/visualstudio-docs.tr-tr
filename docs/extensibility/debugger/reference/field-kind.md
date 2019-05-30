@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924438"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344468"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Yer alan türünü belirten bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne.
@@ -121,72 +124,105 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="members"></a>Üyeler
-FIELD_KIND_TYPE alanı yalnızca bir tür olduğunu gösterir.
+## <a name="fields"></a>Alanlar
+`FIELD_KIND_TYPE`\
+Alan yalnızca bir tür olduğunu gösterir.
 
-FIELD_KIND_SYMBOL alan türü, adı ve diğer bilgilerle birlikte bir sembol belirtir.
+`FIELD_KIND_SYMBOL`\
+Alan türü, adı ve diğer bilgileri ile bir simge olduğunu gösterir.
 
-FIELD_TYPE_PRIMITIVE alanın bir temel veri türü olduğunu gösterir.
+`FIELD_TYPE_PRIMITIVE`\
+Alanın bir temel veri türü olduğunu gösterir.
 
-FIELD_TYPE_STRUCT alan bir yapı olduğunu gösterir.
+`FIELD_TYPE_STRUCT`\
+Alan bir yapı olduğunu gösterir.
 
-FIELD_TYPE_CLASS alanın bir sınıf olduğunu gösterir.
+`FIELD_TYPE_CLASS`\
+Alanın bir sınıf olduğunu gösterir.
 
-FIELD_TYPE_INTERFACE alanının bir arabirim olup olmadığını gösterir.
+`FIELD_TYPE_INTERFACE`\
+Alan bir arabirim olduğunu gösterir.
 
-FIELD_TYPE_UNION alanın bir birleşim olduğunu gösterir.
+`FIELD_TYPE_UNION`\
+Alanın bir birleşim olduğunu gösterir.
 
-FIELD_TYPE_ARRAY alan bir dizi olduğunu gösterir.
+`FIELD_TYPE_ARRAY`\
+Alan bir dizi olduğunu gösterir.
 
-FIELD_TYPE_METHOD alan bir yöntem olduğunu gösterir.
+`FIELD_TYPE_METHOD`\
+Alan bir yöntem olduğunu gösterir.
 
-FIELD_TYPE_BLOCK alan bir bloğu gösterir.
+`FIELD_TYPE_BLOCK`\
+Alanın bir blok olduğunu gösterir.
 
-FIELD_TYPE_POINTER alan bir işaretçi olduğunu gösterir.
+`FIELD_TYPE_POINTER`\
+Alan bir işaretçi olduğunu gösterir.
 
-FIELD_TYPE_ENUM alan listelenmiş veri türü olduğunu gösterir.
+`FIELD_TYPE_ENUM`\
+Alan listelenmiş veri türü olduğunu gösterir.
 
-FIELD_TYPE_LABEL alan bir etiketi gösterilir.
+`FIELD_TYPE_LABEL`\
+Alanın bir etiketi gösterilir.
 
-FIELD_TYPE_TYPEDEF alan bir tür tanımı olduğunu gösterir.
+`FIELD_TYPE_TYPEDEF`\
+Alan için bir typedef olduğunu gösterir.
 
-FIELD_TYPE_BITFIELD alan bir bit alanı olduğunu gösterir.
+`FIELD_TYPE_BITFIELD`\
+Alanın bir bit alanı olduğunu gösterir.
 
-FIELD_TYPE_NAMESPACE alan bir ad alanı olduğunu gösterir.
+`FIELD_TYPE_NAMESPACE`\
+Alan için bir ad alanı olduğunu gösterir.
 
-FIELD_TYPE_MODULE alan bir modül olduğunu gösterir.
+`FIELD_TYPE_MODULE`\
+Alanın bir modül olduğunu gösterir.
 
-FIELD_TYPE_DYNAMIC alan dinamik olduğunu gösterir.
+`FIELD_TYPE_DYNAMIC`\
+Alan dinamik olduğunu gösterir.
 
-FIELD_TYPE_PROP alanın bir özellik olduğunu gösterir.
+`FIELD_TYPE_PROP`\
+Alanın bir özellik olduğunu gösterir.
 
-FIELD_TYPE_INNERCLASS alan bir iç sınıf olduğunu gösterir.
+`FIELD_TYPE_INNERCLASS`\
+Alanın bir iç sınıf olduğunu gösterir.
 
-FIELD_TYPE_REFERENCE alanın başvuru olduğunu gösterir.
+`FIELD_TYPE_REFERENCE`\
+Alanın başvuru olduğunu gösterir.
 
-Ayrılmış FIELD_TYPE_EXTENDED gelecekte kullanım için.
+`FIELD_TYPE_EXTENDED`\
+Daha sonraki kullanımlar için ayrılmıştır.
 
-FIELD_SYM_MEMBER alanın üyesi olduğunu gösterir.
+`FIELD_SYM_MEMBER`\
+Alanın bir üyesi olduğunu gösterir.
 
-FIELD_SYM_LOCAL alanının yerel olup olmadığını gösterir.
+`FIELD_SYM_LOCAL`\
+Alan yerel olduğunu gösterir.
 
-FIELD_SYM_PARAMETER alanın bir parametre olduğunu gösterir.
+`FIELD_SYM_PARAMETER`\
+Alanın bir parametre olduğunu gösterir.
 
-FIELD_SYM_THIS alan "Bu" işaretçiyi olduğunu gösterir.
+`FIELD_SYM_THIS`\
+Alan "Bu" işaretçiyi olduğunu gösterir.
 
-FIELD_SYM_GLOBAL alan genel olduğunu gösterir.
+`FIELD_SYM_GLOBAL`\
+Alan genel olduğunu gösterir.
 
-Alan özellikleri alır FIELD_SYM_PROP_GETTER gösterir.
+`FIELD_SYM_PROP_GETTER`\
+Alan özelliklerini alan gösterir.
 
-Alan özelliklerini ayarlar FIELD_SYM_PROP_SETTER gösterir.
+`FIELD_SYM_PROP_SETTER`\
+Alan özelliklerini ayarlar gösterir.
 
-Ayrılmış FIELD_SYM_EXTENDED gelecekte kullanım için.
+`FIELD_SYM_EXTENDED`\
+Daha sonraki kullanımlar için ayrılmıştır.
 
-Alan türleri için bir maske FIELD_KIND_MASK gösterir.
+`FIELD_KIND_MASK`\
+Alan türleri için bir maske gösterir.
 
-Alan türleri için bir maske FIELD_TYPE_MASK gösterir.
+`FIELD_TYPE_MASK`\
+Alan türleri için bir maske gösterir.
 
-Sembol bilgisi için bir maske FIELD_SYM_MASK gösterir.
+`FIELD_SYM_MASK`\
+Sembol bilgisi için bir maske gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 Çağrısından döndürülen [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) yöntemi.
@@ -200,7 +236,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
 - [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)

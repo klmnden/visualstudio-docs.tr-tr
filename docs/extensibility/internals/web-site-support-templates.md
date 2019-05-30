@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e9229a2614d2d797a5a2159df5b18a92850edbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323289"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web sitesi proje ve öğe şablonları, yeni Web sitesi projeleri ve öğeleri sıfırdan oluşturma gereksinimini ortadan kaldırarak geliştirme sürecini hızlandırmak Web sitesini yeniden kullanılabilir ve özelleştirilebilir proje ve öğe saptamalar sağlar. Daha fazla bilgi için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] şablonları, [oluşturma proje ve öğe şablonları](../../ide/creating-project-and-item-templates.md).

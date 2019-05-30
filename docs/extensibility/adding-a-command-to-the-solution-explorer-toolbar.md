@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410158"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313538"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Çözüm Gezgini araç çubuğuna komut ekleme
 Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** araç çubuğu.
@@ -27,7 +27,7 @@ Bu izlenecek yol, bir düğme ekleme işlemi açıklanır **Çözüm Gezgini** a
  Menüleri, araç komutları hakkında daha fazla bilgi ve *.vsct* dosyaları görmek [komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> XML komut tablosu kullanın (*.vsct*) yerine komut tablosu yapılandırma dosyaları (*.ctc*) menüler ve komutlar, Vspackage'larda nasıl görüneceğini tanımlamak için dosyaları. Daha fazla bilgi için [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> XML komut tablosu kullanın ( *.vsct*) yerine komut tablosu yapılandırma dosyaları ( *.ctc*) menüler ve komutlar, Vspackage'larda nasıl görüneceğini tanımlamak için dosyaları. Daha fazla bilgi için [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).

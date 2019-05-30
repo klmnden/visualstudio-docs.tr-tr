@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc46510aeeaf08279101ff546cde6dbd2593571
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6180e34135197c60276bf119ce0ac34c859b2f3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425665"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341371"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Hızlı Bilgiler
 Hızlı bilgi IntelliSense kullanıcı giriş işaretini bir tanımlayıcıda yerleştirir ve seçer bu tanımlayıcının hakkında bilgileri kaynakta gösterir **hızlı bilgi** gelen **IntelliSense** menüsü veya fare tutar tanımlayıcı imleci. Bu tanımlayıcı bilgiler görüntülenecek araç ipucu neden olur. Bu bilgiler genellikle tanımlayıcı türü oluşur. Hata ayıklama altyapısı etkin olduğunda, bu bilgiler, geçerli değer içerebilir. Dil hizmeti yalnızca, tanımlayıcıları işlerken hata ayıklama altyapısı ifade değerleri sağlar.
