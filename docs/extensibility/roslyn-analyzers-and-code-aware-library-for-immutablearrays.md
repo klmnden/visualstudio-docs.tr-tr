@@ -3,17 +3,17 @@ title: Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433337"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334166"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
@@ -25,7 +25,7 @@ Bu örneği oluşturmak için gerekenler:
 
 * Visual Studio 2015 (bir Express sürüm değil) veya sonraki bir sürümü. Ücretsiz kullanabileceğiniz [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Ayrıca, Visual Studio'yu yüklerken denetleyebilirsiniz **Visual Studio genişletilebilirlik Araçları** altında **ortak Araçlar** aynı anda SDK'yı yüklemek için. Zaten Visual Studio yüklü değilse, ayrıca bu SDK'sı ana menüye gidip yükleyebileceğiniz **dosya** > **yeni** > **proje**, seçme **C#** sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin.
-* [.NET derleyici Platformu ("Roslyn") SDK'sı](https://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya** > **yeni** > **proje**seçip **C#** Sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu kullanışlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
+* [.NET derleyici Platformu ("Roslyn") SDK'sı](https://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya** > **yeni** > **proje**seçip **C#** Sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde " **.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu kullanışlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
 
 ## <a name="whats-the-problem"></a>Sorun nedir?
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 İle kod satırlarını `ImmutableArray` değişmez NuGet paketini alın ve eklemeniz gerekir çünkü dalgalı çizgiler sahip bir `using` kodunuzda deyimi. İçinde proje düğümüne sağ işaretçi düğmesine basın **Çözüm Gezgini** ve **NuGet paketlerini Yönet**. NuGet Yöneticisi'nde, arama kutusuna "Genellikle" yazın ve öğeyi seçin **gt;System.Collections.Immutable** (seçmediğiniz **Microsoft.BCL.Immutable**) sol bölmesinde ve tuşuna  **Yükleme** sağ bölmede düğmesi. Paket yüklenirken, projenizin başvurularına bir başvuru ekler.
 
-Altında kırmızı dalgalı çizgiler görmeye `ImmutableArray`, bu nedenle bu tanımlayıcı ve tuşuna giriş işaretini koyun **Ctrl**+**.** önerilen düzeltme menüyü getirin ve uygun eklemek (nokta) `using` deyimi.
+Altında kırmızı dalgalı çizgiler görmeye `ImmutableArray`, bu nedenle bu tanımlayıcı ve tuşuna giriş işaretini koyun **Ctrl**+ **.** önerilen düzeltme menüyü getirin ve uygun eklemek (nokta) `using` deyimi.
 
 **Tümünü Kaydet ve Kapat** devam etmek için temiz bir duruma yerleştirmek için Visual Studio'yu Şimdi ikinci örneğini.
 
@@ -210,7 +210,7 @@ Kesme noktası Çözümleyicisi bkz (ve Visual Studio'nun ilk örneğine döndü
 
 Başlamadan önce Visual Studio'nun ikinci örneğini kapatın ve Visual Studio'nun (burada Çözümleyicisi geliştiriyorsunuz) ilk örneğinde hata ayıklamasını durdurun.
 
-**Yeni bir sınıf ekleyin.** Proje düğümünüz kısayol menüsü (sağ işaretçi düğmesi) kullanın **Çözüm Gezgini** ve yeni bir öğe eklemek seçin. Adlı bir sınıf ekleyin `BuildCodeFixProvider`. Bu sınıfın türetilmesi gerekir `CodeFixProvider`, ve kullanması gereken **Ctrl**+**.** (nokta) doğru ekler kod düzeltme çağrılacak `using` deyimi. Bu sınıf ayrıca ile Açıklama gerekir `ExportCodeFixProvider` özniteliği ve eklemeniz gerekir bir `using` çözmek için deyimi `LanguageNames` sabit listesi. Aşağıdaki kodda ile bir sınıf dosyası olması gerekir:
+**Yeni bir sınıf ekleyin.** Proje düğümünüz kısayol menüsü (sağ işaretçi düğmesi) kullanın **Çözüm Gezgini** ve yeni bir öğe eklemek seçin. Adlı bir sınıf ekleyin `BuildCodeFixProvider`. Bu sınıfın türetilmesi gerekir `CodeFixProvider`, ve kullanması gereken **Ctrl**+ **.** (nokta) doğru ekler kod düzeltme çağrılacak `using` deyimi. Bu sınıf ayrıca ile Açıklama gerekir `ExportCodeFixProvider` özniteliği ve eklemeniz gerekir bir `using` çözmek için deyimi `LanguageNames` sabit listesi. Aşağıdaki kodda ile bir sınıf dosyası olması gerekir:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Saplama kullanıma üyeler türetilmiş.** Artık, düzenleyici giriş işaretini bir tanımlayıcıda yerleştirin `CodeFixProvider` basın **Ctrl**+**.** (Bu Özet temel sınıf uygulamasını kullanıma saptama için nokta). Bu özellik ve yöntem sizin için oluşturur.
+**Saplama kullanıma üyeler türetilmiş.** Artık, düzenleyici giriş işaretini bir tanımlayıcıda yerleştirin `CodeFixProvider` basın **Ctrl**+ **.** (Bu Özet temel sınıf uygulamasını kullanıma saptama için nokta). Bu özellik ve yöntem sizin için oluşturur.
 
 **Özelliğini uygulayın.** Doldurun `FixableDiagnosticIds` özelliğin `get` gövdesi aşağıdaki kod ile:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Sorunu düğümü bulunamıyor.** Bağlamın yayılma, ancak kodu değiştirmek zorunda olmayabilir bulduğunuz düğüm geçirmeniz. Bildirilen Tanılama, yalnızca aralık türü tanımlayıcısı (dalgalı çizgi nereye ait) için sağlanan, ancak tüm nesne oluşturma ifadesi değerini değiştirmeniz de dahil olmak üzere `new` başında ve sonunda parantezler anahtar sözcüğü. Aşağıdaki kod, yönteminize ekleyin (ve **Ctrl**+**.** eklemek için bir `using` bildirimi `ObjectCreationExpressionSyntax`):
+**Sorunu düğümü bulunamıyor.** Bağlamın yayılma, ancak kodu değiştirmek zorunda olmayabilir bulduğunuz düğüm geçirmeniz. Bildirilen Tanılama, yalnızca aralık türü tanımlayıcısı (dalgalı çizgi nereye ait) için sağlanan, ancak tüm nesne oluşturma ifadesi değerini değiştirmeniz de dahil olmak üzere `new` başında ve sonunda parantezler anahtar sözcüğü. Aşağıdaki kod, yönteminize ekleyin (ve **Ctrl**+ **.** eklemek için bir `using` bildirimi `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Ampul kullanıcı Arabirimi için kod düzeltmenizi kaydedin.** Kod düzeltmenizi kaydettiğinizde Roslyn UI Visual Studio ampul otomatik olarak yararlanmanıza imkan sağlar. Son kullanıcıların görebileceği kullanabilecekleri **Ctrl**+**.** (nokta), çözümleyici squiggles bozuk olduğunda `ImmutableArray<T>` Oluşturucu kullanın. Bir sorun oluştuğunda, kod düzeltme sağlayıcısı yalnızca yürütüldüğünden, aradığınız nesne oluşturma ifadesi olması kabul edilebilir. Bağlam parametresinden sonuna aşağıdaki kodu ekleyerek yeni bir kod düzeltmesi kaydedebilirsiniz `RegisterCodeFixAsync` yöntemi:
+**Ampul kullanıcı Arabirimi için kod düzeltmenizi kaydedin.** Kod düzeltmenizi kaydettiğinizde Roslyn UI Visual Studio ampul otomatik olarak yararlanmanıza imkan sağlar. Son kullanıcıların görebileceği kullanabilecekleri **Ctrl**+ **.** (nokta), çözümleyici squiggles bozuk olduğunda `ImmutableArray<T>` Oluşturucu kullanın. Bir sorun oluştuğunda, kod düzeltme sağlayıcısı yalnızca yürütüldüğünden, aradığınız nesne oluşturma ifadesi olması kabul edilebilir. Bağlam parametresinden sonuna aşağıdaki kodu ekleyerek yeni bir kod düzeltmesi kaydedebilirsiniz `RegisterCodeFixAsync` yöntemi:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Düzenleyici giriş işaretini bir tanımlayıcıda yerleştirmek gereken `CodeAction`, ardından **Ctrl**+**.** uygun eklemek için (nokta) `using` bu tür için bildirimi.
+Düzenleyici giriş işaretini bir tanımlayıcıda yerleştirmek gereken `CodeAction`, ardından **Ctrl**+ **.** uygun eklemek için (nokta) `using` bu tür için bildirimi.
 
-Ardından, düzenleyici giriş işaretini yerleştirebilirsiniz `ChangeToImmutableArrayEmpty` tanımlayıcısı ve kullanım **Ctrl**+**.** Bu metot taslağı yeniden oluşturmak için.
+Ardından, düzenleyici giriş işaretini yerleştirebilirsiniz `ChangeToImmutableArrayEmpty` tanımlayıcısı ve kullanım **Ctrl**+ **.** Bu metot taslağı yeniden oluşturmak için.
 
 Eklediğiniz son Bu kod parçacığı geçirerek kod düzeltme kaydeder. bir `CodeAction` ve tanılama kimliği türüne ilişkin sorun bulundu. Bu örnekte, yoktur yalnızca biri için bu kod sağlayan tanılama kodu düzeltir tanılama kimlikleri dizinin ilk öğesi geçirmeniz yeterlidir. Oluştururken `CodeAction`, ampul UI kod düzeltme açıklaması kullanacağı metni geçirin. Ayrıca, bir CancellationToken alır ve yeni bir belge döndüren bir işlev de geçirin. Yeni belge çağırır düzeltilmiş kodunuzu içeren yeni bir sözdizimi ağacına sahip `ImmutableArray.Empty`. Bu kod parçacığı bir lambda kullanır, bu nesne yaratımı düğüm ve belge bağlamı'nın üzerinden kapatabilirsiniz.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Düzenleyici giriş işaretini yerleştirmek ihtiyacınız olacak `SyntaxGenerator` tanımlayıcısı ve kullanım **Ctrl**+**.** uygun eklemek için (nokta) `using` bu tür için bildirimi.
+Düzenleyici giriş işaretini yerleştirmek ihtiyacınız olacak `SyntaxGenerator` tanımlayıcısı ve kullanım **Ctrl**+ **.** uygun eklemek için (nokta) `using` bu tür için bildirimi.
 
 Bu kod `SyntaxGenerator`, yeni kod oluşturmak için kullanışlı bir tür olduğu. Bu belge için bir oluşturucuyu alma kodu sorun olduğunda `ChangeToImmutableArrayEmpty` çağrıları `MemberAccessExpression`istiyoruz erişmek için üye olan bir tür geçirme ve üyenin adını bir dize olarak geçirerek.
 
@@ -296,9 +296,9 @@ Ardından, yöntem belgesinin kök getirir ve kod genel durumda rastgele iş iç
 
 ## <a name="try-your-code-fix"></a>Kod düzeltmenizi deneyin
 
-Artık basabilirsiniz **F5** , Çözümleyicisi Visual Studio ikinci bir örneğini yürütmek için. Önceden kullanmış olduğunuz konsol projesi açın. Artık, yeni nesne oluşturma ifadesi için olduğu görünür ampul görmelisiniz `ImmutableArray<int>`. Basarsanız **Ctrl**+**.** (Dönem), kodunuzu düzeltin ardından görür ve bir ampul kullanıcı Arabirimi otomatik olarak oluşturulan kodu fark önizlemede görürsünüz. Roslyn sizin için oluşturur.
+Artık basabilirsiniz **F5** , Çözümleyicisi Visual Studio ikinci bir örneğini yürütmek için. Önceden kullanmış olduğunuz konsol projesi açın. Artık, yeni nesne oluşturma ifadesi için olduğu görünür ampul görmelisiniz `ImmutableArray<int>`. Basarsanız **Ctrl**+ **.** (Dönem), kodunuzu düzeltin ardından görür ve bir ampul kullanıcı Arabirimi otomatik olarak oluşturulan kodu fark önizlemede görürsünüz. Roslyn sizin için oluşturur.
 
-**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatabilir ve kod düzeltmenizi ampul görmüyorsanız, Visual Studio bileşen önbelleği temizlemek gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16,0" sürümü başka bir sürümü Visual Studio ile değiştirir.) Alt dizini silmek *ComponentModelCache*.
+**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatabilir ve kod düzeltmenizi ampul görmüyorsanız, Visual Studio bileşen önbelleği temizlemek gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . ("16,0" sürümü başka bir sürümü Visual Studio ile değiştirir.) Alt dizini silmek *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Video konuşacak ve bunları kod proje bitiş
 

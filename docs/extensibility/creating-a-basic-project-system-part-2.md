@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926801"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336993"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>2. Bölüm temel proje sistemi oluşturma
 Bu serideki ilk izlenecek [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistemi oluşturma işlemi gösterilmektedir. Bu izlenecek yol, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek üzerinde temel proje sistemi oluşturur. Bu bir başlamadan önce ilk izlenecek yolu tamamlamanız gerekir.
@@ -42,7 +42,7 @@ Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğreti
 ## <a name="create-a-visual-studio-template"></a>Visual Studio şablon oluşturma
 - [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md) temel proje şablonu oluşturma ve proje sisteme ekleme işlemi gösterilmektedir. Ayrıca bu şablonu kullanarak Visual Studio ile kaydetme işlemini gösterir <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> tam yolunu yazan özniteliği *\\Templates\Projects\SimpleProject\\* sistem klasörü kayıt defteri.
 
-Visual Studio şablonu kullanarak (*.vstemplate* dosya) yerine temel proje şablonu, şablonun nasıl görünür denetleyebilirsiniz **yeni proje** iletişim kutusu ve şablon parametreleri şeklini değiştirdi. A *.vstemplate* kaynak dosyaları proje sistemi şablonunu kullanarak bir proje oluşturulduğunda, dahil edilecek şeklini açıklayan bir XML dosyasını bir dosyadır. Proje sistemi toplayarak oluşturulan *.vstemplate* dosya ve kaynak dosyalarında bir *.zip* dosya ve kopyalayarak dağıtılan *.zip* bir konuma dosya Visual Studio bilinen. Bu işlem, bu kılavuzda daha sonra daha ayrıntılı açıklanmıştır.
+Visual Studio şablonu kullanarak ( *.vstemplate* dosya) yerine temel proje şablonu, şablonun nasıl görünür denetleyebilirsiniz **yeni proje** iletişim kutusu ve şablon parametreleri şeklini değiştirdi. A *.vstemplate* kaynak dosyaları proje sistemi şablonunu kullanarak bir proje oluşturulduğunda, dahil edilecek şeklini açıklayan bir XML dosyasını bir dosyadır. Proje sistemi toplayarak oluşturulan *.vstemplate* dosya ve kaynak dosyalarında bir *.zip* dosya ve kopyalayarak dağıtılan *.zip* bir konuma dosya Visual Studio bilinen. Bu işlem, bu kılavuzda daha sonra daha ayrıntılı açıklanmıştır.
 
 1. İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], izleyerek oluşturduğunuz SimpleProject çözümü açın [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -207,7 +207,7 @@ Alt düğümler, proje dosyasını değiştirerek ve ekleyerek oluşturulur \<Ou
 
 Bu bölümde, bir konsol alt düğümü SimpleProject proje türü için oluşturma işlemi gösterilmektedir.
 
-1. Yeniden adlandırma *\\Templates\Projects\SimpleProject\\* klasörüne  *\\Templates\Projects\ConsoleApp\\*.
+1. Yeniden adlandırma *\\Templates\Projects\SimpleProject\\* klasörüne  *\\Templates\Projects\ConsoleApp\\* .
 
 2. İçinde **özellikleri** penceresinde, seçin tüm beş dosyaları *\\Templates\Projects\ConsoleApp\\* klasörü ve emin **derleme eylemi**ayarlanır **ZipProject**.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0d559887019a697b820a5a6c91f80b78c6b713
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93f9937609a09439b265946e76f0af0381d488f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920957"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330132"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Tüm programları bu hata ayıklama altyapısı yürütme sonraki durdurmak için (DE) hata ayıklaması yapılan istekleri, iş parçacıkları birini çalıştırmayı dener.
@@ -40,6 +43,6 @@ int CauseBreak();
 ## <a name="remarks"></a>Açıklamalar
  Bu zaman uyumsuz bir yöntemdir: bir [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) program bu yöntem çağrıldıktan sonra yürütülecek sonraki denediğinde olay gönderilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

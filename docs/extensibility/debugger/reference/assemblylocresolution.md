@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327373"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Bir derlemeyi nerede olduğunu belirtir.
@@ -43,14 +46,18 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>Üyeler
-ALR_NAME derleme geçerli bir ad alanında bulunur.
+## <a name="fields"></a>Alanlar
+`ALR_NAME`\
+Derleme geçerli bir ad alanında bulunur.
 
-ALR_USERDIR derleme, bir kullanıcı dizinde bulunur.
+`ALR_USERDIR`\
+Derleme kullanıcı dizininde bulunur.
 
-ALR_SHAREDDIR derleme, paylaşılan dizininde bulunur.
+`ALR_SHAREDDIR`\
+Derleme, paylaşılan dizininde bulunur.
 
-ALR_REMOTEDIR derleme, uzak bir dizinde bulunur.
+`ALR_REMOTEDIR`\
+Derleme, uzak bir dizinde bulunur.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerler tarafından döndürülen [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) ve [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) yöntemleri.
@@ -64,7 +71,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

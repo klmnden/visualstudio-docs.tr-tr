@@ -3,18 +3,18 @@ title: Başlangıç sayfasına özel oluşturma | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926386"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336675"
 ---
 # <a name="creating-a-custom-start-page"></a>Özel başlangıç sayfası oluşturma
 
@@ -24,7 +24,7 @@ Bu belgedeki adımları izleyerek özel bir başlangıç sayfası oluşturabilir
 
 İlk olarak boş bir başlangıç sayfası oluşturarak bir *.xaml* Visual Studio tanıyacağınız bir etiket yapıya sahip bir dosya. Ardından, biçimlendirme ve Görünüm ve işlevselliği istediğiniz üretmek için gerideki kod ekleyin.
 
-1. Yeni bir proje türü oluşturma **WPF uygulaması** (**Visual C#** > **Windows Masaüstü**).
+1. Yeni bir proje türü oluşturma **WPF uygulaması** (**Visual C#**  > **Windows Masaüstü**).
 
 2. Bir başvuru ekleyin `Microsoft.VisualStudio.Shell.14.0`.
 

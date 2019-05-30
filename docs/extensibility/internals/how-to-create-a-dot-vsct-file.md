@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418462"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328755"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Nasıl yapılır: .Vsct dosyası oluşturma
 
-Bir XML tabanlı Visual Studio komut tablosu yapılandırması oluşturmanın birkaç yolu vardır (*.vsct*) dosyası.
+Bir XML tabanlı Visual Studio komut tablosu yapılandırması oluşturmanın birkaç yolu vardır ( *.vsct*) dosyası.
 
 - İçinde yeni bir VSPackage oluşturabilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paketi şablonu.
 
@@ -45,7 +45,7 @@ Bir XML tabanlı Visual Studio komut tablosu yapılandırması oluşturmanın bi
 
 6. XSD şemaları listeden seçin *vsct.xsd* şema. Listede değilse, **Ekle** ve dosyayı yerel bir sürücüde bulun. Tıklayın **Tamam** işiniz bittiğinde.
 
-7. XML dosyasında yazın *< CommandTable* ve tuşuna **sekmesini**. Kapatma etiketi yazarak *>*.
+7. XML dosyasında yazın *< CommandTable* ve tuşuna **sekmesini**. Kapatma etiketi yazarak *>* .
 
     Bu eylem, bir temel oluşturur. *.vsct* dosya.
 

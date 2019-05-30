@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333121"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Menü ve Araç Çubuğu Komutlarını En İyi Duruma Getirme
 VSPackages ve bunların karşılık gelen komutları [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kalabalık bir kullanıcı Arabirimi neden olabilir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kullanıcı Arabirimi komut karışıklığı en aza indirmek için yöntemler sağlar.
