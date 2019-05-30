@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMessageEvent2 interface
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49224ad0018286fffd365857364bf1b37300788f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: facb0b818ab8bd8babae59e6cdbd2b209a8cfda7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346839"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Bu arabirim, hata ayıklama altyapısı (DE), kullanıcıdan bir yanıt gerektirir. Visual Studio için bir ileti göndermek için kullanılır.
@@ -58,7 +58,7 @@ IDebugMessageEvent2 : IUnknown
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

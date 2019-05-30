@@ -3,16 +3,16 @@ title: 'Nasıl yapılır: Arka planda VSPackage AsyncPackage sayfanızdaki | Mic
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64514a6d43d580fbda142dfa65bb3a2d384dff4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862576"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324779"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: Arka planda VSPackage yükleme için AsyncPackage kullanın
 Yükleme ve VS paket başlatma disk g/ç neden olabilir. Böyle g/ç UI iş parçacığı üzerinde olursa bu yanıt hızını sorunlarına yol açabilir. Bunu ele almak için Visual Studio 2015 kullanıma sunulan <xref:Microsoft.VisualStudio.Shell.AsyncPackage> paketi yükleme arka plan iş parçacığında sağlayan sınıf.

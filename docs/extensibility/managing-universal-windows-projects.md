@@ -3,17 +3,17 @@ title: Evrensel Windows projelerini yönetme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340551"
 ---
 # <a name="manage-universal-windows-projects"></a>Evrensel Windows projeleri yönetme
 
@@ -293,7 +293,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Şimdi deneyin. Deneysel örneği başlatmak için F5 tuşuna basın. Deneysel örneğinde bir C# hub'ı Evrensel uygulama projesi oluşturun (içinde **yeni proje** iletişim kutusu, **Visual C#** > **Windows**  >   **Windows 8** > **Evrensel** > **Hub uygulaması**). Çözüm yüklendikten sonra Git **Araçları** menüsüne ve ardından **çağırma TestUniversalProject**ve ardından metin iade **çıkış** bölmesi. Aşağıdaki gibi görmeniz gerekir:
+16. Şimdi deneyin. Deneysel örneği başlatmak için F5 tuşuna basın. Deneysel örneğinde bir C# hub'ı Evrensel uygulama projesi oluşturun (içinde **yeni proje** iletişim kutusu, **Visual C#**  > **Windows**  >   **Windows 8** > **Evrensel** > **Hub uygulaması**). Çözüm yüklendikten sonra Git **Araçları** menüsüne ve ardından **çağırma TestUniversalProject**ve ardından metin iade **çıkış** bölmesi. Aşağıdaki gibi görmeniz gerekir:
 
     ```
     Found shared project: HubApp.Shared

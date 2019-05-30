@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9dd54872325766b432af7e3104e7ab9f431b79d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859007"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322517"
 ---
 # <a name="source-control-integration-overview"></a>Kaynak Denetimini Tümleştirmeye Genel Bakış
 Bu bölümde, Visual Studio kaynak denetimine tümleştirmek için iki şekilde karşılaştırır; Kaynak denetimi eklentisi ve bir kaynak denetimi çözümü sağlar ve yeni kaynak denetimi özellikleri vurgular VSPackage'ı. Visual Studio el ile kaynak denetimi eklentileri ve kaynak denetimi VSPackage'ları arasında geçiş yapma ek olarak çözüm tabanlı otomatik geçiş sağlar.

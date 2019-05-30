@@ -3,17 +3,17 @@ title: VSPackage içeren bir uzantı oluşturma | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891038"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345357"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage içeren bir uzantı oluşturma
 
@@ -27,7 +27,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 1. Adlı bir VSIX projesi oluşturun **FirstPackage**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
 
-2. Projeyi açtığında, adlı bir Visual Studio Paket öğesi şablonu ekleme **FirstPackage**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#** > **genişletilebilirlik** seçip **Visual Studio paket**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *FirstPackage.cs*.
+2. Projeyi açtığında, adlı bir Visual Studio Paket öğesi şablonu ekleme **FirstPackage**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#**  > **genişletilebilirlik** seçip **Visual Studio paket**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *FirstPackage.cs*.
 
 3. Projeyi oluşturmak ve hata ayıklamaya başlayın.
 
@@ -76,4 +76,4 @@ Bu noktada, uzantı olduğu için yüklemek neden bir şey yüklemez. (Bir araç
 
 3. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği açılır.
 
-4. Bir çözüm deneysel örneğinde açın. Bildiren bir ileti kutusu görmeniz gerekir **içinde ilk paketi Initialize()**.
+4. Bir çözüm deneysel örneğinde açın. Bildiren bir ileti kutusu görmeniz gerekir **içinde ilk paketi Initialize()** .

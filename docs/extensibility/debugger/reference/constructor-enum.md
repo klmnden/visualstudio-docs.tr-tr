@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONSTRUCTOR_ENUM enumeration
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea240cf33bab70f1488a2aa90fecd71220b1da25
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924648"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346446"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Farklı türlerde oluşturucular seçer.
@@ -40,12 +43,15 @@ public enum ConstructorMatchOptions {
 };
 ```
 
-## <a name="members"></a>Üyeler
-Tüm oluşturucular crAll seçer.
+## <a name="fields"></a>Alanlar
+`crAll`\
+Tüm oluşturucular seçer.
 
-Statik olmayan oluşturucular crNonStatic seçer.
+`crNonStatic`\
+Statik olmayan oluşturucular seçer.
 
-statik oluşturucular crStatic seçer.
+`crStatic`\
+Statik oluşturucular seçer.
 
 ## <a name="remarks"></a>Açıklamalar
 Bağımsız değişken olarak geçirilen [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) yöntemi.
@@ -57,6 +63,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

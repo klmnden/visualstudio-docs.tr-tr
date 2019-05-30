@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322423"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kod Parçacıkları için Destek
 Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacığının kendisi bir XML tabanlı bir alan kümesi ile şablonudur. Kod parçacığı eklenir ve, kod parçacığının eklenmiş olduğu bağlama bağlı olarak farklı değerlere sahip olabilir, bu alanlar vurgulanır. Hemen kod parçacığı eklendikten sonra kod parçacığı dil hizmeti biçimlendirebilirsiniz.
@@ -50,7 +50,7 @@ Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacı
 
  Genellikle parçacık şablonu dosyalarının depolandığı iki konum vardır: (1) dilinizi yüklendiği ve 2) kullanıcının klasöründeki. Bu konumlar kayıt defterine bu nedenle, eklenen Visual Studio **kod parçacıkları Yöneticisi** parçacıkları bulabilirsiniz. Kullanıcının kullanıcı tarafından oluşturulan kod parçacıkları depolandığı bir klasördür.
 
- Yüklü bir kod parçacığı şablon dosyaları için tipik klasör düzeni şöyle görünür: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ Yüklü bir kod parçacığı şablon dosyaları için tipik klasör düzeni şöyle görünür: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  dilinizi yüklenmiş olduğu klasördür.
 
@@ -58,7 +58,7 @@ Kod parçacığı bir kaynak dosyasına eklenen kod parçasıdır. Kod parçacı
 
  *[LCID]*  yerel ayar kimliğidir. Bu, kod parçacıkları nasıl yerelleştirilmiş sürümlerini, depolanır. Örneğin, İngilizce yerel ayar Kimliğini 1033, bu nedenle ' *[LCID]* 1033 tarafından değiştirilir.
 
- Bir ek dosyası sağlanmalıdır ve genellikle SnippetsIndex.xml veya ExpansionsIndex.xml (.xml biten geçerli bir dosya kullanabilirsiniz) adlı bir dizin dosyası. Bu dosya genellikle depolanan *[InstallRoot]*\\ *[TestLanguage]* klasör kod parçacıklarının klasör yanı sıra dil kimliği tam konumu ve dil GUID belirtir kod kullanan hizmet. Dizin dosyasının tam yolu, daha sonra "yükleme kayıt defteri girdileri içinde" açıklandığı gibi kayıt defterine konur. SnippetsIndex.xml dosyası örneği aşağıdadır:
+ Bir ek dosyası sağlanmalıdır ve genellikle SnippetsIndex.xml veya ExpansionsIndex.xml (.xml biten geçerli bir dosya kullanabilirsiniz) adlı bir dizin dosyası. Bu dosya genellikle depolanan *[InstallRoot]* \\ *[TestLanguage]* klasör kod parçacıklarının klasör yanı sıra dil kimliği tam konumu ve dil GUID belirtir kod kullanan hizmet. Dizin dosyasının tam yolu, daha sonra "yükleme kayıt defteri girdileri içinde" açıklandığı gibi kayıt defterine konur. SnippetsIndex.xml dosyası örneği aşağıdadır:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

@@ -1,62 +1,63 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-caps.latest.revision: 9
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 3ef5f17354e45327a87ee77e5b437409719094e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 018557732727c9a4e6669a983ec54fec83263ff5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873968"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338588"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Durdurur ve ifade değerlendiricisi ' temizler.
 
-Durdurur ve ifade değerlendiricisi ' temizler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp#  
-HRESULT Terminate (  
-    void  
-);  
-```  
-  
-```csharp  
-int Terminate ();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İfade değerlendirici, ne zaman, temizlenen söyler.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **ExpressionEvaluatorPackage** gösteren nesne [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) arabirimi.  
-  
-```cpp#  
-STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  
-{  
-    // scan the namespaces contained and delete  
-    EEExtensionMethodCache **ppChild = NULL;  
-    m_HashExtensionMethodCache.ResetHashIterator();  
-    while (ppChild = m_HashExtensionMethodCache.IterateHash())  
-    {  
-        delete *ppChild;  
-    }  
-    return VBEEImplicitVariables::Terminate();  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Terminate (
+    void
+);
+```
+
+```csharp
+int Terminate ();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+İfade değerlendirici, ne zaman, temizlenen söyler.
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek için bu yöntemi uygulaması gösterilmiştir bir **ExpressionEvaluatorPackage** gösteren nesne [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) arabirimi.
+
+```cpp
+STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
+{
+    // scan the namespaces contained and delete
+    EEExtensionMethodCache **ppChild = NULL;
+    m_HashExtensionMethodCache.ResetHashIterator();
+    while (ppChild = m_HashExtensionMethodCache.IterateHash())
+    {
+        delete *ppChild;
+    }
+    return VBEEImplicitVariables::Terminate();
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

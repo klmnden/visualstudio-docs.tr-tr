@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da93d4f98bf3795c2dd60b02f9cf5b332b022ad2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790a9f8bbed02a5135897f33db7fac1af3ad89d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863561"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342557"
 ---
 # <a name="font-and-color-overview"></a>Yazı tipi ve renk genel bakış
 Bu konuda ele alınmıştır metin yazı tipi ve renk ayarlarını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Kategorileri ve öğeleri görüntüleme kavramlarını da tanıtılmaktadır ve VSPackages ve çekirdek düzenleyici metin özniteliklerini kullanma açıklanmaktadır.

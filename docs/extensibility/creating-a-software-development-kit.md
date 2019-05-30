@@ -3,17 +3,17 @@ title: Bir yazılım geliştirme seti oluşturma | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 6ad14712653aeca146ffe00cc5c79fd044ce2a4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177338"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345383"
 ---
 # <a name="create-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilirsiniz API koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, projeye ilgili tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, API'ler, Visual Studio'da kullanılabilir.
@@ -34,7 +34,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
  Platform SDK'larını, bir platform için uygulamalar geliştirmek için gereklidir. Örneğin, [!INCLUDE[win81](../debugger/includes/win81_md.md)] uygulamaları geliştirmek için SDK'sı gereklidir [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Yükleme
- Tüm platform SDK'ları, yüklü *HKLM\Software\Microsoft\Microsoft SDK'ları\\[TPV] [TPI] \v\\ @InstallationFolder [SDK kök] =*. Buna [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK'sı yüklü *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Tüm platform SDK'ları, yüklü *HKLM\Software\Microsoft\Microsoft SDK'ları\\[TPV] [TPI] \v\\ @InstallationFolder [SDK kök] =* . Buna [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK'sı yüklü *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Düzen
  Platform SDK'ları aşağıdaki düzen olacaktır:
@@ -74,7 +74,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 
 1. Bu kayıt defteri anahtarında belirtin:
 
-     **HKLM\Software\Microsoft\Microsoft SDK'ları\<hedef platform > \v < platform sürüm numarası\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **HKLM\Software\Microsoft\Microsoft SDK'ları\<hedef platform > \v < platform sürüm numarası\>\ExtensionSDKs\<SDKName >\<SDKVersion >** \
 
      ve değeri olan bir (varsayılan) alt ekleyin `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 
 2. *Başvuruları* klasör: API'ları içeren ikili dosyaları. Bunlar, Windows Metadata (WinMD) dosya veya derlemeleri olabilir.
 
-3. *Redist* klasör: kullanıcı uygulamasının bir parçası olarak paketlenmiş ve çalışma zamanı/hata ayıklama için gereken dosyaları. Tüm ikili dosyaları altına yerleştirilmesi gereken *\redist\\< yapılandırma\>\\< arch\>*, ve ikili adları benzersiz olmasını sağlamak için şu biçimde olmalıdır: *]* \<şirket >. \<ürün >. \<amaçlı >. \<uzantısı ><em>. Örneğin, *Microsoft.Cpp.Build.dll</em>. Dosya adlarından (örneğin, javascript, css, PRI, xaml, png ve jpg dosyaları) diğer SDK'lar ile çakışabilir adlara sahip tüm dosyaları altına yerleştirilmesi gereken <em>\redist\\< yapılandırma\>\\<arch\> \\< sdkname\> \* XAML ile ilişkili olan dosyaları hariç denetler. Bu dosyalar altına yerleştirilmesi gereken * \redist\\< yapılandırma\>\\< arch\>\\< componentname\>\\</em>.
+3. *Redist* klasör: kullanıcı uygulamasının bir parçası olarak paketlenmiş ve çalışma zamanı/hata ayıklama için gereken dosyaları. Tüm ikili dosyaları altına yerleştirilmesi gereken *\redist\\< yapılandırma\>\\< arch\>* , ve ikili adları benzersiz olmasını sağlamak için şu biçimde olmalıdır: *]* \<şirket >. \<ürün >. \<amaçlı >. \<uzantısı ><em>. Örneğin, *Microsoft.Cpp.Build.dll</em>. Dosya adlarından (örneğin, javascript, css, PRI, xaml, png ve jpg dosyaları) diğer SDK'lar ile çakışabilir adlara sahip tüm dosyaları altına yerleştirilmesi gereken <em>\redist\\< yapılandırma\>\\<arch\> \\< sdkname\> \* XAML ile ilişkili olan dosyaları hariç denetler. Bu dosyalar altına yerleştirilmesi gereken * \redist\\< yapılandırma\>\\< arch\>\\< componentname\>\\</em>.
 
 4. *Tasarım zamanı* klasör: yalnızca öncesi-run/hata ayıklama sırasında gerekli olan dosyaların zaman ve kullanıcı uygulamasının bir parçası olarak paketlenmiş olmamalıdır. Bunlar, XML belgeleri, kitaplıklar, üst bilgiler, araç kutusu tasarım zamanı ikili dosyalarını, MSBuild yapıtları ve benzeri olabilir. Yerel bir proje tüketimi bulunmalıdır kullanılmaya SDK bir *SDKName.props* dosya. Aşağıda, bu dosya türü örneği gösterilmektedir.
 

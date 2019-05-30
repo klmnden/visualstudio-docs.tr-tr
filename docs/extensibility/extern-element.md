@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911901"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342793"
 ---
 # <a name="extern-element"></a>Extern öğesi
-Extern öğesi herhangi bir dış başlığını başvurur (*.h*) ile birleştirmek için dosyaları *.vsct* dosya derleme zamanında. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Diğer dosyalar olabilir *.vsct* veya C++ üst bilgi dosyaları.
+Extern öğesi herhangi bir dış başlığını başvurur ( *.h*) ile birleştirmek için dosyaları *.vsct* dosya derleme zamanında. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Diğer dosyalar olabilir *.vsct* veya C++ üst bilgi dosyaları.
 
  Üst bilgi dosyaları tanımlarında biçiminde olmalıdır "# [Value] [simge] define" önceden tanımlı değilse değer başka bir sembol olabilir. Tanımları komut öğeleri koşullu ifadelerde kullanılabilir. Gerçekten kullanılmıyorsa herhangi bir simge atılacak.
 

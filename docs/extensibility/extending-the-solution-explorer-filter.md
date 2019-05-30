@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b96bdfecdc461499e253c4873dc44e4fa5247ea
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912133"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342846"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Çözüm Gezgini filtresini genişletme
 Genişletebileceğiniz **Çözüm Gezgini** işlevselliği göstermek veya gizlemek farklı dosyalar için filtre. Örneğin, yalnızca C# sınıf üreteci dosyalarında gösteren filtre oluşturabilir **Çözüm Gezgini**gibi bu izlenecek yol gösterir.

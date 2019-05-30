@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891070"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345365"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Bir menü komutuyla uzantı oluşturma
 
@@ -32,7 +32,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 1. Adlı bir VSIX projesi oluşturun **FirstMenuCommand**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
 
-2. Projeyi açtığında, adlı bir özel komut öğesi şablonu ekleme **FirstCommand**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#** > **genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *FirstCommand.cs*.
+2. Projeyi açtığında, adlı bir özel komut öğesi şablonu ekleme **FirstCommand**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#**  > **genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *FirstCommand.cs*.
 
 3. Projeyi oluşturmak ve hata ayıklamaya başlayın.
 
@@ -50,7 +50,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 ::: moniker-end
 
-Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma FirstCommand** komutu. Bu noktada, komut bildiren bir ileti kutusu getirir **FirstCommandPackage içinde FirstMenuCommand.FirstCommand.MenuItemCallback()**. Sonraki bölümde bu komut aslında Not defteri başlangıç nasıl göreceğiz.
+Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma FirstCommand** komutu. Bu noktada, komut bildiren bir ileti kutusu getirir **FirstCommandPackage içinde FirstMenuCommand.FirstCommand.MenuItemCallback()** . Sonraki bölümde bu komut aslında Not defteri başlangıç nasıl göreceğiz.
 
 ## <a name="change-the-menu-command-handler"></a>Menü komut işleyici değiştirme
 

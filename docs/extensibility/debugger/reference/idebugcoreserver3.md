@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629e35e8756be1dfa6df9f21eda02624b4c363de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7f9a8e6e16aa9279bb7324f5d08f0da3035f2b85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343989"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Bu arabirim işlemini çalıştıran sunucu ile ilgili bilgilere erişmenizi sağlar.
@@ -58,6 +58,6 @@ IDebugCoreServer3 : IDebugCoreServer2
 
  Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

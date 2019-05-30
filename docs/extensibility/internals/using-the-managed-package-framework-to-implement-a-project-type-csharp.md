@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MPF projects
 - managed package framework, creating projects
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a36dcb0ba8b55b6f3dece44e0fe7872e8696404f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908427"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324640"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Yönetilen Paket Çerçevesini Kullanarak Proje Türü Uygulama (C#)
 Yönetilen paket Framework (MPF) kullanabilir veya kendi proje türleri uygulamak için devralınan C# sınıfları sağlar. MPF Visual Studio sağlamak için bir proje türü bekliyor arabirimlerin çoğu proje türünüz Bununla uygulamaya odaklanmasına olanak boş bırakarak uygular.
