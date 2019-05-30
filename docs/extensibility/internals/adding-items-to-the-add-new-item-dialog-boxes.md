@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418686"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328060"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusu öğeleri Ekle
 Öğeler ekleme işlemi **Yeni Öğe Ekle** iletişim kutusu, kayıt defteri anahtarları ile başlar. Aşağıdaki kayıt defteri girdilerini gösterildiği gibi **AddItemTemplates** bölüm içeren yolu ve adı dizinde bulunan yapılan hangi öğelerin **Yeni Öğe Ekle** iletişim kutusu konur.
@@ -46,7 +46,7 @@ ms.locfileid: "63418686"
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Listelenen directory **TemplatesDir**, olduğu *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, düğüm sol tarafındaki **Ekle Yeni öğe** iletişim kutusu ağaç. Ek öğeler ağacında, kök dizin içinde alt dizini temel alır. Dosyalar projeye eklenecek kullanılabilir maddelerinin sağ bölmede **Yeni Öğe Ekle** iletişim kutusu.
+ Listelenen directory **TemplatesDir**, olduğu *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , düğüm sol tarafındaki **Ekle Yeni öğe** iletişim kutusu ağaç. Ek öğeler ağacında, kök dizin içinde alt dizini temel alır. Dosyalar projeye eklenecek kullanılabilir maddelerinin sağ bölmede **Yeni Öğe Ekle** iletişim kutusu.
 
  Genellikle, bu klasör gibi bir şablon HTML projeniz için şablon dosyalarını içerecek veya *.cpp* dosyasını ve tüm *.vsz* sihirbazları başlatmak için dosyaları. Öğelerin nasıl görüntüleneceğini denetlemenizi de ekleyebilirsiniz *.vsdir* dizin adları ve simgeleri yerelleştirme dosyaları. Yerelleştirilmiş dize arar: Bu düğümde temsil eden iletişim kutusunda görüntülenen başlıktır **Yeni Öğe Ekle** iletişim kutusu ağaç.
 

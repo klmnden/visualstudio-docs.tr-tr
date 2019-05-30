@@ -7,17 +7,17 @@ helpviewer_keywords:
 - command-line switches
 - command line, switches
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 753ff049d09bafb5d7f2284f858647a8427ca0e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344537"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Komut satırı anahtarları (Visual Studio SDK)
 *Devenv.exe*, başlayan yürütülebilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE), özellikle VSPackage geliştirme için komut satırı anahtarları destekler. VSPackage de kendi anahtarlar kullanılabilir Devenv komut satırında yapabilirsiniz. Aşağıdaki konular IDE içinde komut satırı anahtarları kullanma hakkında bilgi sağlar.

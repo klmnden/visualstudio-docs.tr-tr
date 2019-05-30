@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344458"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Bir yığın çerçevesini tanımlar.
@@ -61,31 +64,44 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Üyeler
-bayrakları birleşimi m_dwValidFields A [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) hangi alanların doldurulur belirten sabit listesi.
+`m_dwValidFields`\
+Bayraklarının bir birleşimi [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) hangi alanların doldurulur belirten sabit listesi.
 
-m_bstrFuncName işlev adı yığın çerçevesiyle ilgili.
+`m_bstrFuncName`\
+Yığın çerçevesiyle ilgili işlevi adı.
 
-m_bstrReturnType yığın çerçevesiyle ilgili dönüş türü.
+`m_bstrReturnType`\
+Yığın çerçevesiyle ilgili dönüş türü.
 
-m_bstrArgs yığın çerçevesiyle ilgili işlev bağımsız değişkenleri.
+`m_bstrArgs`\
+Yığın çerçevesiyle ilgili işlevi için bağımsız değişkenler.
 
-Dil m_bstrLanguage içinde hangi işlevi uygulanır.
+`m_bstrLanguage`\
+Hangi işlevin uygulandığından dili.
 
-m_bstrModule modül adı yığın çerçevesiyle ilgili.
+`m_bstrModule`\
+Yığın çerçevesiyle ilgili modülü adı.
 
-en düşük fiziksel yığın adresi m_addrMin.
+`m_addrMin`\
+En düşük fiziksel yığın adresi.
 
-m_addrMAX fiziksel maksimum yığın adresi.
+`m_addrMAX`\
+En yüksek fiziksel yığın adresi.
 
-m_pFrame [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Bu yığın çerçevesini temsil eden nesne.
+`m_pFrame`\
+[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Bu yığın çerçevesini temsil eden nesne.
 
-m_pFrame [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) Bu yığın çerçevesi içeren modül temsil eden nesne.
+`m_pFrame`\
+[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) Bu yığın çerçevesi içeren modül temsil eden nesne.
 
-m_fHasDebugInfo sıfır olmayan (`TRUE`) hata ayıklama bilgileri verilen çerçevede varsa.
+`m_fHasDebugInfo`\
+Sıfır olmayan (`TRUE`) hata ayıklama bilgileri verilen çerçevede varsa.
 
-m_fHasDebugInfo sıfır olmayan (`TRUE`) yığın çerçevesini artık geçerli değil ve kod ile ilişkili ise.
+`m_fHasDebugInfo`\
+Sıfır olmayan (`TRUE`) yığın çerçevesini artık geçerli değil ve kod ile ilişkili ise.
 
-m_fHasDebugInfo sıfır olmayan (`TRUE`) yığın çerçevesini oturum hata ayıklama Yöneticisi (SDM) tarafından eklenmişse.
+`m_fHasDebugInfo`\
+Sıfır olmayan (`TRUE`) yığın çerçevesini oturum hata ayıklama Yöneticisi (SDM) tarafından eklenmişse.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) doldurulması için yöntemi. Bu yapı ayrıca yer alan bir liste bulunan [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) hangi sırayla çağrısından döndürülen arabirimi [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) yöntemi.
@@ -97,7 +113,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

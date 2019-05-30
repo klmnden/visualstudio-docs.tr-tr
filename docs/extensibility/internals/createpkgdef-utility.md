@@ -8,17 +8,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332278"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef yardımcı programı
 Bir .dll dosyası için bir Visual Studio uzantısı bir parametre olarak alır ve oluşturur bir *.pkgdef* eşlik eden dosya *.dll* dosya. *.Pkgdef* dosya uzantısı yüklü olduğunda, sistem kayıt defterine yazılması tüm bilgileri içerir.
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Arguments
-**/ out =&lt;dosya adı&gt;**\
+**/ out =&lt;dosya adı&gt;** \
 Gerekli. Adını ayarlar *.pkgdef* çıktı dosyasına &lt;FileName&gt;.
 
 **/ codebase**\
@@ -42,7 +42,7 @@ Gerekli. Adını ayarlar *.pkgdef* çıktı dosyasına &lt;FileName&gt;.
 **/ Assembly**\
 Kayıt işlemine zorlar **derleme** yardımcı programı.
 
-**&lt;AssemblyPath&gt;**\
+**&lt;AssemblyPath&gt;** \
 Yolu *.dll* oluşturmak istediğiniz dosya *.pkgdef*.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -56,9 +56,9 @@ Uzantı dağıtımı kullanarak *.pkgdef* dosyaları Visual Studio'nun önceki s
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **uzantıları yönetme**.
+Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **uzantıları yönetme**.
 
-Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı varsayılan olarak etkindir.
+Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\* , uzantı varsayılan olarak etkindir.
 
 > [!NOTE]
 > **Uzantıları yönetme** aracı, bir VSIX paketinin bir parçası yüklü olduğu sürece bir uzantı erişmek için kullanılamaz.
@@ -73,9 +73,9 @@ Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı var
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler**.
+Yükleme klasörünü ise *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , uzantı Visual Studio tarafından kabul edilir, ancak varsayılan olarak devre dışıdır. Kullanıcı uzantıyı kullanarak etkinleştirebilirsiniz **Uzantılar ve güncelleştirmeler**.
 
-Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\*, uzantı varsayılan olarak etkindir.
+Yükleme klasörünü ise *%vsinstalldir%\Common7\IDE\Extensions\\* , uzantı varsayılan olarak etkindir.
 
 > [!NOTE]
 > **Uzantılar ve güncelleştirmeler** aracı, bir VSIX paketinin bir parçası yüklü olduğu sürece bir uzantı erişmek için kullanılamaz.

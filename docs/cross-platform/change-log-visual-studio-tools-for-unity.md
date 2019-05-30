@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327351"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="4110"></a>4.1.1.0
+ 24 Mayıs 2019 yayımlanan
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+    - MonoBehaviour API 2019.1 için güncelleştirildi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+    - Basit yapı etkinleştirildiğinde çıkış, uyarı ve hata raporlama düzeltildi.
+    
+    - Sabit basit performans oluşturun.
+
+## <a name="4100"></a>4.1.0.0
+ 21 Mayıs 2019 yayımlanan
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+    - Yeni batch projeleri daha hızlı bir şekilde yeniden yüklemek için API desteği eklendi.
+    
+    - IntelliSense hataları ve Uyarıları kullanarak yerine Unity projeleri için tam derleme devre dışı. Gerçekten de Unity Unity dahili olarak yaptığı temsil eden sınıf kitaplığı projeleri ile bir Visual Studio çözümü oluşturur. Başka bir deyişle, Visual Studio'da derleme sonucunu hiçbir zaman kullanılan veya kendi derleme işlem hattı kapalı olarak Unity tarafından teslim alındı. Visual Studio yapı kaynakları için hiçbir şey yalnızca tüketiyor. Sahip olduğunuz araçları veya bağımlı bir kurulum için bir tam derleme gerekiyorsa, bu en iyi duruma getirme (Araçlar/Seçenekler/için araçları Unity/devre dışı bırak projelerin tam derleme) devre dışı bırakabilirsiniz. 
+
+    - Unity proje ne zaman yüklendi Unity Proje Gezgini (UPE) otomatik olarak gösterir. Çözüm Gezgini yanındaki UPE yerleştirilir.
+    
+    - Unity ile proje adı ayıklama mekanizması güncelleştirilmiş 2019.x.
+
+    - Unity UPE paketleri için destek eklendi. Paketleri başvurulan yalnızca (bazıları manifest.json içinde kullanarak ```Packages``` klasör) ve yerel paketleri (katıştırılmış ```Packages``` klasör) görülebilir.
+    
+- **Proje oluşturma:**
+
+    - Dış özellikler, çözüm dosyasını işlerken korur.
+
+- **Değerlendirme:**
+
+    - Diğer adla nitelenmiş adlar (yalnızca şimdilik genel ad) için destek eklendi. Bu nedenle ifade değerlendiricisi artık form global::namespace.type kullanarak türlerini kabul ediyor.
+    
+    - İçin destek eklendi ```pointer[index]``` işaretçisine anlamsal olarak eşdeğer olan form başvuru ```*(pointer+index)``` formu.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+    - İle Microsoft.VisualStudio.MPF bağımlılık sorunlar düzeltildi.
+    
+    - Sabit UWP player attach, tüm proje yüklendi.
+    
+    - Visual Studio henüz bağlanmamış olduğunda otomatik kıymet veritabanı yenileme.
+    
+    - Onay kutuları ve etiketler ile tema sorunlar düzeltildi.
+    
+- **Hata Ayıklayıcı:**
+
+    - Statik oluşturucular ile Adımlama düzeltildi.
 
 ## <a name="4005"></a>4.0.0.5
  27 Şubat 2019 yayımlanan

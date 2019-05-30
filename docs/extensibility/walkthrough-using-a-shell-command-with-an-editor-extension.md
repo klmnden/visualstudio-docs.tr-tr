@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444922"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328143"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici uzantısı ile Kabuk komutu kullanma
 VSPackage düzenleyiciye menü komutları gibi özellikleri ekleyebilirsiniz. Bu kılavuzda bir kenarlığı düzenleyici metin görünümünde bir menü komutunu çağırarak nasıl ekleneceğini gösterir.
@@ -38,7 +38,7 @@ VSPackage düzenleyiciye menü komutları gibi özellikleri ekleyebilirsiniz. Bu
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>MEF uzantısı için komut uzantısı Ekle
 
-1. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın, **Ekle**ve ardından **yeni proje**. İçinde **Yeni Proje Ekle** iletişim kutusu, tıklayın **genişletilebilirlik** altında **Visual C#**, ardından **VSIX projesi**. Projeyi adlandırın `CommentAdornmentTest`.
+1. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın, **Ekle**ve ardından **yeni proje**. İçinde **Yeni Proje Ekle** iletişim kutusu, tıklayın **genişletilebilirlik** altında **Visual C#** , ardından **VSIX projesi**. Projeyi adlandırın `CommentAdornmentTest`.
 
 2. Bu proje VSPackage tanımlayıcı adlı derleme ile etkileşim kurmak için derleme oturum açmanız gerekir. VSPackage derleme için önceden oluşturulmuş bir anahtar dosyası kullanabilirsiniz.
 

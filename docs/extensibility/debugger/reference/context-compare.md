@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878323"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346393"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 İki bellek bağlamları karşılaştırma ölçütü belirtir.
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Üyeler
-CONTEXT_EQUAL hedef bellek bağlamına eşittir listedeki ilk bellek bağlam bulun.
+## <a name="fields"></a>Alanlar
+`CONTEXT_EQUAL`\
+Hedef bellek bağlamına eşit olan listesinde ilk bellek içeriği bulur.
 
-CONTEXT_LESS_THAN hedef bellek bağlam'dan küçük listedeki ilk bellek bağlam bulun.
+`CONTEXT_LESS_THAN`\
+Hedef bellek bağlam'dan küçük listedeki ilk bellek bağlam bulun.
 
-CONTEXT_GREATER_THAN hedef bellek bağlamını anlamaktan büyük listedeki ilk bellek bağlam bulun.
+`CONTEXT_GREATER_THAN`\
+Hedef bellek bağlamını anlamaktan büyük listesinde ilk bellek içeriği bulur.
 
-CONTEXT_LESS_THAN_OR_EQUAL hedef bellek bağlam küçük veya ona eşit listedeki ilk bellek bağlam bulun.
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+Hedef bellek bağlam eşit veya daha az olan listesinde ilk bellek içeriği bulur.
 
-CONTEXT_GREATER_THAN_OR_EQUAL büyüktür veya eşittir hedef bellek bağlam listedeki ilk bellek bağlam bulun.
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+Büyüktür veya eşittir hedef bellek bağlam listedeki ilk bellek bağlam bulun.
 
-CONTEXT_SAME_SCOPE hedef bellek bağlamı ile aynı kapsamda olan listede ilk bellek bağlam bulun.
+`CONTEXT_SAME_SCOPE`\
+Hedef bellek bağlamı ile aynı kapsamda olan listesinde ilk bellek içeriği bulur.
 
-CONTEXT_SAME_FUNCTION hedef bellek kapsamla aynı işlevde listesinde ilk bellek içeriği bulabilirsiniz.
+`CONTEXT_SAME_FUNCTION`\
+Hedef bellek kapsamla aynı işlevde listesinde ilk bellek içeriği bulabilirsiniz.
 
-CONTEXT_SAME_MODULE aynı modülde hedef bellek içeriği olarak listede ilk bellek içeriği bulabilirsiniz.
+`CONTEXT_SAME_MODULE`\
+Hedef bellek içerik olarak aynı modülde listesinde ilk bellek içeriği bulabilirsiniz.
 
-CONTEXT_SAME_PROCESS ilk bellek içeriği hedef bellek içerik olarak aynı işlemde olduğundan listede bulun.
+`CONTEXT_SAME_PROCESS`\
+Hedef bellek içerik olarak aynı işlemde olan listesinde ilk bellek içeriği bulur.
 
 ## <a name="remarks"></a>Açıklamalar
 Bağımsız değişken olarak geçirilen [karşılaştırma](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) yöntemi.
@@ -84,6 +96,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
