@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910013"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314559"
 ---
 # <a name="create-project-types"></a>Proje türleri oluşturma
 Genişletebileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oluşturarak yeni bir proje türü. Yeni bir proje türü oluşturmak için birkaç kavramları anlamanıza ve birkaç adımı tamamlamanız gerekir. Aşağıdaki konular, proje türleri oluşturma konusunda genel bir bakış sağlar.
@@ -57,7 +57,7 @@ Genişletebileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 
 - [Windows Installer ile VSPackage yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Benzersiz kimliğini, VSPackage vermek ve bir Windows yükleyici paketinde, VSPackage DLL'ler ve diğer bilgileri sarmalama gösterir (*. MSI* dosyası) dağıtım müşterileriniz için.
+ Benzersiz kimliğini, VSPackage vermek ve bir Windows yükleyici paketinde, VSPackage DLL'ler ve diğer bilgileri sarmalama gösterir ( *. MSI* dosyası) dağıtım müşterileriniz için.
 
 - [Visual Studio’da Hiyerarşiler](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

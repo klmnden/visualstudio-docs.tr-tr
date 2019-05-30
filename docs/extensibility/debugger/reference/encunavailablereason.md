@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924599"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318153"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Nedenler temsil eder, **Düzenle ve devam et** kullanılabilir değil.
@@ -49,20 +52,27 @@ public enum EncUnavailableReason {
 };
 ```
 
-#### <a name="parameters"></a>Parametreler
-ENCUN_NONE Hayır belirli neden neden Düzenle ve devam et kullanılabilir değil.
+## <a name="fields"></a>Alanlar
+`ENCUN_NONE`\
+Belirli neden neden Düzenle ve devam et kullanılabilir değil.
 
-ENCUN_INTEROP Düzenle ve devam et kullanılabilir değil bir birlikte çalışabilirlik çağrısı sırasında.
+`ENCUN_INTEROP`\
+Düzenle ve devam et kullanılabilir değil bir birlikte çalışabilirlik çağrısı sırasında.
 
-ENCUN_SQLCLR Düzenle ve devam et kullanılabilir değil, ortak dil çalışma zamanı (CLR) kullanan bir SQL yordam çağrısı sırasında.
+`ENCUN_SQLCLR`\
+Düzenle ve devam et kullanılabilir değil, ortak dil çalışma zamanı (CLR) kullanan bir SQL yordam çağrısı sırasında.
 
-ENCUN_MINIDUMP Düzenle ve devam et kullanılabilir değil bir mini döküm işlenirken.
+`ENCUN_MINIDUMP`\
+Düzenle ve devam et kullanılabilir değil bir mini döküm işlenirken.
 
-ENCUN_EMBEDDED Düzenle ve devam et kullanılamıyor katıştırılmış kod işlerken.
+`ENCUN_EMBEDDED`\
+Düzenle ve devam et kullanılamıyor katıştırılmış kod işlerken.
 
-ENCUN_ATTACH Düzenle ve devam et kullanılamıyor oturum iliştirilmiş olduğundan, hata ayıklayıcı tarafından başlatılmadığı.
+`ENCUN_ATTACH`\
+Düzenle ve devam et kullanılamıyor oturum iliştirilmiş olduğundan değil başlatıldığında hata ayıklayıcı tarafından.
 
-ENCUN_WIN64 Düzenle ve devam et kullanılamıyor 64 bit Windows kod işlenirken.
+`ENCUN_WIN64`\
+Düzenle ve devam et kullanılamıyor 64 bit Windows kod işlenirken.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu iç kullanım için yalnızca göre numaralandırmadır [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) ve [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) özel bağlantı noktası sağlayıcısı tarafından uygulanan yöntemleri her zaman döndürmelidir `E_NOTIMPL`.
@@ -74,7 +84,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)

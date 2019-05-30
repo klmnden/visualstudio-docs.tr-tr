@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924563"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318383"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Ayrıştırılmış kod bayrakları belirtir.
@@ -47,18 +50,24 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="members"></a>Üyeler
-DF_DOCUMENTCHANGE, önceki değerinden farklı bir belge bu yönergeyi gösterir.
+## <a name="fields"></a>Alanlar
+`DF_DOCUMENTCHANGE`\
+Bu yönerge önceki olandan farklı bir belge olduğunu gösterir.
 
-Bu yönerge yürütülmeyecek DF_DISABLED gösterir.
+`DF_DISABLED`\
+Bu yönerge yürütülmeyecek gösterir.
 
-Bu yönerge, yürütülecek sonraki yönergeleri biridir DF_INSTRUCTION_ACTIVE gösterir (olabilir birden fazla).
+`DF_INSTRUCTION_ACTIVE`\
+Bu yönerge yürütülecek sonraki yönergeleri biri olduğunu gösterir (olabilir birden fazla).
 
-DF_DATA, bu yönerge gerçekten veri (kodunda değil) olduğunu gösterir.
+`DF_DATA`\
+Bu yönerge gerçekten veri (kodunda değil) olduğunu gösterir.
 
-Bu yönerge sahip kaynak DF_HASSOURCE gösterir. Profil oluşturma ya da çöp toplama kod gibi bazı yönergeler, karşılık gelen hiçbir kaynak vardır.
+`DF_HASSOURCE`\
+Bu yönerge kaynağına sahip olduğunu gösterir. Profil oluşturma ya da çöp toplama kod gibi bazı yönergeler, karşılık gelen hiçbir kaynak vardır.
 
-DF_DOCUMENT_CHECKSUM gösterir `bstrDocumentUrl` alanı sonra belgesi URL'si sağlama toplamı veri içeriyor. İçin Açıklamalar bölümüne bakın [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) yapısı için sağlama toplamı veriler nasıl depolanır.
+`DF_DOCUMENT_CHECKSUM`\
+Bildiren `bstrDocumentUrl` alanı sonra belgesi URL'si sağlama toplamı veri içeriyor. İçin Açıklamalar bölümüne bakın [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) yapısı için sağlama toplamı veriler nasıl depolanır.
 
 ## <a name="remarks"></a>Açıklamalar
 Olarak kullanılan `dwFlags` üyesi [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) yapısı.
@@ -72,6 +81,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

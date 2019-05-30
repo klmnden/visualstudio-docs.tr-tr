@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321393"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Özel kategoriler uygulamak ve öğeleri görüntüleme
 VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özel kategoriler ve görüntü öğeleri aracılığıyla tümleşik geliştirme ortamı (IDE).
@@ -45,7 +45,7 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 
 ## <a name="to-create-or-identify-categories"></a>Oluşturma veya kategori tanımlamak için
 
-- Özel bir kategori altında kayıt defteri girdisi türü oluşturmak *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >*\FontAndColors\\ `<Category>`]*
+- Özel bir kategori altında kayıt defteri girdisi türü oluşturmak *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<Visual Studio sürümü > *\FontAndColors\\ `<Category>`]*
 
    *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.
 
@@ -60,7 +60,7 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 
 ## <a name="to-create-or-identify-groups"></a>Oluşturma veya grupları tanımlamak için
 
-- Özel bir kategori altında kayıt defteri girdisi türü oluşturmak *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >*\FontAndColors\\*  \<grubu >*]*
+- Özel bir kategori altında kayıt defteri girdisi türü oluşturmak *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<Visual Studio sürümü > *\FontAndColors\\*  \<grubu > *]*
 
    *\<Grup >* yerelleştirilmemiş grubunun adıdır.
 

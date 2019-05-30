@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318239"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Görüntülenecek bir ayrıştırma yönerge tümleşik geliştirme ortamı (IDE) için açıklar.
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Üyeler
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) hangi alanların doldurulmuş belirten sabiti.
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) hangi alanların doldurulmuş belirten sabiti.
 
-`bstrAddress` Bazı başlangıç noktası (genellikle ilişkilendirilmiş işlev başına) uzaklık olarak adresi.
+`bstrAddress`\
+Bazı başlangıç noktası (genellikle ilişkilendirilmiş işlev başına) uzaklık olarak adresi.
 
-`bstrCodeBytes` Bu yönerge kodu bayt sayısı.
+`bstrCodeBytes`\
+Bu yönerge kodu bayt sayısı.
 
-`bstrOpcode` Bu yönerge için yönerge kodu.
+`bstrOpcode`\
+Bu yönerge için yönerge kodu.
 
-`bstrOperands` Bu yönerge için işlenen.
+`bstrOperands`\
+Bu yönerge için işlenen.
 
-`bstrSymbol` Sembol adı varsa (ortak sembol, etiket ve benzeri) adresi ile ilişkili.
+`bstrSymbol`\
+Sembol adı varsa (ortak sembol, etiket ve benzeri) adresi ile ilişkili.
 
-`uCodeLocationId` Ayrıştırılmış bu satırı kod konum tanımlayıcısı. Bir satır kod bağlamı adresini başka bir kod bağlamı adresinizden büyükse, ardından ilk ayrıştırılmış kodu konum tanımlayıcısı aynı zamanda ikinci kod konum tanımlayıcısı büyük olacaktır.
+`uCodeLocationId`\
+Ayrıştırılmış bu satırı kod konum tanımlayıcısı. Bir satır kod bağlamı adresini başka bir kod bağlamı adresinizden büyükse, ardından ilk ayrıştırılmış kodu konum tanımlayıcısı aynı zamanda ikinci kod konum tanımlayıcısı büyük olacaktır.
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) belge ayrıştırma veri başladığı konumu karşılık gelir.
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) belge ayrıştırma veri başladığı konumu karşılık gelir.
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) belgede sona ereceği Ayrıştırılmış kod veri konumuna karşılık gelir.
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) belgede sona ereceği Ayrıştırılmış kod veri konumuna karşılık gelir.
 
-`bstrDocumentUrl` Dosya adı olarak gösterilen metin belgeleri `bstrDocumentUrl` alan burada kaynağı bulunabilir, dosya adı ile oturum doldurulmuş biçimini kullanarak `file://file name`.
+`bstrDocumentUrl`\
+Dosya adı olarak gösterilen metin belgeleri `bstrDocumentUrl` alan burada kaynağı bulunabilir, dosya adı ile oturum doldurulmuş biçimini kullanarak `file://file name`.
 
 Dosya adları ' gösterilemez metin belgeleri `bstrDocumentUrl` belge için benzersiz bir tanımlayıcıdır ve hata ayıklama altyapısı uygulamalıdır [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) yöntemi.
 
 Bu alan ayrıca sağlama hakkında ek bilgiler içerebilir. Açıklamalar, Ayrıntılar için bkz.
 
-`dwByteOffset` Yönergedir kod satırını başından itibaren bayt sayısı.
+`dwByteOffset`\
+Yönergedir kod satırını başından itibaren bayt sayısı.
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) hangi bayrakları etkin olan belirten sabiti.
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) hangi bayrakları etkin olan belirten sabiti.
 
 ## <a name="remarks"></a>Açıklamalar
 Her `DisassemblyData` ayrıştırması bir yönerge yapısını açıklar. Bu yapılar bir dizi öğesinden döndürülen [okuma](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) yöntemi.
@@ -211,7 +226,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)

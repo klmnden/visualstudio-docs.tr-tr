@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877984"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318254"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Ayrıştırılmış kod alana almak için hangi bilgilerin belirtir.
@@ -61,32 +64,45 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="members"></a>Üyeler
-DSF_ADDRESS başlatma/kullanım `bstrAddress` alan.
+## <a name="fields"></a>Alanlar
+`DSF_ADDRESS`\
+Başlat/kullanım `bstrAddress` alan.
 
-DSF_ADDRESSOFFSET başlatma/kullanım `bstrAddressOffset` alan.
+`DSF_ADDRESSOFFSET`\
+Başlat/kullanım `bstrAddressOffset` alan.
 
-DSF_CODEBYTES başlatma/kullanım `bstrCodeBytes` alan.
+`DSF_CODEBYTES`\
+Başlat/kullanım `bstrCodeBytes` alan.
 
-DSF_OPCODE başlatma/kullanım `bstrOpCode` alan.
+`DSF_OPCODE`\
+Başlat/kullanım `bstrOpCode` alan.
 
-DSF_OPERANDS başlatma/kullanım `bstrOperands` alan.
+`DSF_OPERANDS`\
+Başlat/kullanım `bstrOperands` alan.
 
-DSF_SYMBOL başlatma/kullanım `bstrSymbol` alan.
+`DSF_SYMBOL`\
+Başlat/kullanım `bstrSymbol` alan.
 
-DSF_CODELOCATIONID başlatma/kullanım `uCodeLocationId` alan.
+`DSF_CODELOCATIONID`\
+Başlat/kullanım `uCodeLocationId` alan.
 
-DSF_POSITION başlatma/kullanım `posBeg` ve `posEnd` alanları.
+`DSF_POSITION`\
+Başlat/kullanım `posBeg` ve `posEnd` alanları.
 
-DSF_DOCUMENTURL başlatma/kullanım `bstrDocumentUrl` alan.
+`DSF_DOCUMENTURL`\
+Başlat/kullanım `bstrDocumentUrl` alan.
 
-DSF_BYTEOFFSET başlatma/kullanım `dwByteOffset` alan.
+`DSF_BYTEOFFSET`\
+Başlat/kullanım `dwByteOffset` alan.
 
-DSF_FLAGS başlatma/kullanım `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) alan.
+`DSF_FLAGS`\
+Başlat/kullanım `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) alan.
 
-Sembol DSF_OPERANDS_SYMBOLS dahil adları içinde `bstrOperands` alan.
+`DSF_OPERANDS_SYMBOLS`\
+Sembol adlarında `bstrOperands` alan.
 
-Tüm DSF_ALL belirtir Ayrıştırılmış kod akışını alanları.
+`DSF_ALL`\
+Tüm alanlar için Ayrıştırılmış kod akışını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bir parametre olarak geçirilen [okuma](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) hangi alanları göstermek için yöntemi [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) yapısı olan başlatılacak.
@@ -102,7 +118,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

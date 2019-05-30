@@ -3,18 +3,18 @@ title: "Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye g
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319307"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme
 
@@ -31,7 +31,7 @@ Aşağıdaki iş yükleri yüklemenizi içerdiğinden emin olun:
 
 Tüm VSIX projeleri Visual Studio 2017 sürüm tek yönlü yükseltme gerektirir.
 
-Proje dosyası (örneğin **.csproj*) güncelleştirilir:
+Proje dosyası (örneğin * *.csproj*) güncelleştirilir:
 
 * MinimumVisualStudioVersion - 15.0 için şimdi ayarlayın
 * OldToolsVersion (, daha önce mevcut)-14.0 için şimdi ayarlayın
@@ -47,7 +47,7 @@ Microsoft.VSSDK.BuildTools NuGet başvurularını güncelleştirmek için:
 
 * Çözüme sağ tıklayın ve seçin **çözüm için NuGet paketlerini Yönet**.
 * Gidin **güncelleştirmeleri** sekmesi.
-* Seçin **Microsoft.VSSDK.BuildTools (en son sürüm)**.
+* Seçin **Microsoft.VSSDK.BuildTools (en son sürüm)** .
 * Tuşuna **güncelleştirme**.
 
 ![VSSDK derleme araçları](media/vssdk-build-tools.png)

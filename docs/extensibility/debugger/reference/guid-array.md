@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eed39ee4446e66e1e7b1700d97ad680eb62c2523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d53413ee56700fe39470d3bbc3229f4b8b668373
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877797"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317534"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 Bir dizi benzersiz tanımlayıcıları kullanılabilir hata ayıklama altyapıları için açıklar.
@@ -38,10 +41,12 @@ public struct GUID_ARRAY
 }
 ```
 
-## <a name="terms"></a>Koşulları
-dwCount dizide benzersiz tanımlayıcıları sayısı.
+## <a name="members"></a>Üyeler
+`dwCount`\
+Dizide benzersiz tanımlayıcıları sayısı.
 
-Benzersiz tanımlayıcıları içeren üye dizisi.
+`Members`\
+Benzersiz tanımlayıcıları içeren bir dizi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı tarafından döndürülen [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) yöntemi.
@@ -53,6 +58,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
