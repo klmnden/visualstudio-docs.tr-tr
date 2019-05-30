@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415510"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340981"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Nasıl yapılır: Yerleşik yazı tiplerinin erişmek ve ccheme renk
 Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle ilişkilidir yazı tipleri ve renkler bir düzeni vardır. Bu düzen aracılığıyla erişebileceğiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.
@@ -41,7 +41,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
     > [!NOTE]
     > Yazı tipi ve renk verilerle alınırken <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> veya diğer arabirimleri VSPackages yerleşik bilgi başvurmak için bu GUID kullanın.
 
-2. Kategori adı bir dize tablosu VSPackage'nın kaynakları içine eklenmesi gerekir (*.rc*), böylece IDE'de görüntülendiğinde gerektiğinde yerelleştirilebilen dosya.
+2. Kategori adı bir dize tablosu VSPackage'nın kaynakları içine eklenmesi gerekir ( *.rc*), böylece IDE'de görüntülendiğinde gerektiğinde yerelleştirilebilen dosya.
 
      Daha fazla bilgi için [ekleme veya silme bir dize](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,7 +49,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
 
 1. Özel bir kategori aşağıdaki konumda kayıt defteri girdisi türü oluşturun:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio sürümü > \FontAndColors\\\<Kategori >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio sürümü > \FontAndColors\\\<Kategori >* ]
 
      *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.
 

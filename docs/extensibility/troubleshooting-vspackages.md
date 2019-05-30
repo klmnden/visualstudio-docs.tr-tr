@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338026"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 İle VSPackage olabilir ve bu sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.
@@ -66,7 +66,7 @@ ms.locfileid: "63434245"
 
    1. VSPackage'ı CLSID kayıt defteri paketleri bölümünü bulun:
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<sürüm >* \Packages
 
    2. SatelliteDll alt tarafından verilen yolun doğru olduğundan emin olun.
 
@@ -119,7 +119,7 @@ ms.locfileid: "63434245"
 
 2. Yönetilmeyen kod için CLSID değeri içinde VSPackage'ı bulma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID kayıt defteri düğümü:
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<sürüm >* \CLSID
 
    Inprocserver32 giriş VSPackage dll'nin doğru yol olduğundan emin olun.
 

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be07e034b4059ae7ade40a5a248c01bc4a8237b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350541"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 Alınacak bir kesme noktası isteği bilgilerini belirtin. geçerli değerler numaralandırır. Bu numaralandırma genişletir [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) sabit listesi.
@@ -73,36 +76,51 @@ public enum enum_BPREQI_FIELDS90
 };
 ```
 
-#### <a name="parameters"></a>Parametreler
-BPREQI90_BPLOCATION başlatmak veya kullanım `bpLocation` (kesme noktası konumu) alanının [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) veya [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı.
+## <a name="fields"></a>Alanlar
+`BPREQI90_BPLOCATION`\
+Başlatma veya kullanın `bpLocation` (kesme noktası konumu) alanının [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) veya [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapısı.
 
-BPREQI90_LANGUAGE başlatmak veya kullanım `guidLanguage` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_LANGUAGE`\
+Başlatma veya kullanın `guidLanguage` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_PROGRAM başlatmak veya kullanım `pProgram` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_PROGRAM`\
+Başlatma veya kullanın `pProgram` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_PROGRAMNAME başlatmak veya kullanım `bstrProgramName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_PROGRAMNAME`\
+Başlatma veya kullanın `bstrProgramName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_THREAD başlatmak veya kullanım `pThread` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_THREAD`\
+Başlatma veya kullanın `pThread` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_THREADNAME başlatmak veya kullanım `bstrThreadName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_THREADNAME`\
+Başlatma veya kullanın `bstrThreadName` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_PASSCOUNT başlatmak veya kullanım `bpPassCount` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_PASSCOUNT`\
+Başlatma veya kullanın `bpPassCount` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_CONDITION başlatmak veya kullanım `bpCondition` (kesme noktası koşulu) alanının `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_CONDITION`\
+Başlatma veya kullanın `bpCondition` (kesme noktası koşulu) alanının `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_FLAGS başlatmak veya kullanım `dwFlags` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_FLAGS`\
+Başlatma veya kullanın `dwFlags` alanını `BP_REQUEST_INFO` veya `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_ALLOLDFIELDS başlatmak veya tüm alanları için kullanın, `BP_REQUEST_INFO` yapısı.
+`BPREQI90_ALLOLDFIELDS`\
+Başlatma veya tüm alanlar için kullanın, `BP_REQUEST_INFO` yapısı.
 
-BPREQI90_VENDOR başlatmak veya kullanım `guidVendor` alanını `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_VENDOR`\
+Başlatma veya kullanın `guidVendor` alanını `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_CONSTRAINT başlatmak veya kullanım `bstrConstraint` alanını `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_CONSTRAINT`\
+Başlatma veya kullanın `bstrConstraint` alanını `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_TRACEPOINT başlatmak veya kullanım `bstrTracepoint` alanını `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_TRACEPOINT`\
+Başlatma veya kullanın `bstrTracepoint` alanını `BP_REQUEST_INFO2` yapısı.
 
-BPREQI90_MACROTRACEPOINT başlatmak veya kullanım `bstrMacroTracepoint` alanını `BP_REQUEST_INFO2` yapısı. Bu alan BPREQI_ALLFIELDS içermez.
+`BPREQI90_MACROTRACEPOINT`\
+Başlatma veya kullanın `bstrMacroTracepoint` alanını `BP_REQUEST_INFO2` yapısı. Bu alan BPREQI_ALLFIELDS içermez.
 
-BPREQI90_ALLFIELDS belirtir, tüm alanları `BP_REQUEST_INFO2` yapısı.
+`BPREQI90_ALLFIELDS`\
+Tüm alanlar için belirtir `BP_REQUEST_INFO2` yapısı.
 
 ## <a name="requirements"></a>Gereksinimler
 Üst bilgi: Msdbg90.h
@@ -111,5 +129,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

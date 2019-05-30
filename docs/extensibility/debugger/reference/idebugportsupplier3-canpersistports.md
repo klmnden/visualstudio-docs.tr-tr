@@ -1,47 +1,48 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-caps.latest.revision: 10
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: ad31d015048d8e0732c32652141b7be060628663
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 11bc6e21e8b70a5bd95c001f4173a7da3f3fe4be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918021"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340067"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Bu yöntem, bağlantı noktası sağlayıcısı bağlantı noktası (bunları diske yazarak) hata ayıklayıcı çağrıları arasında kalıcı olup olmadığını belirler.
 
-Bu yöntem, bağlantı noktası sağlayıcısı bağlantı noktası (bunları diske yazarak) hata ayıklayıcı çağrıları arasında kalıcı olup olmadığını belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT CanPersistPorts();  
-```  
-  
-```csharp  
-int CanPersistPorts();  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- Yok.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `S_OK` bağlantı noktalarını kalıcı ise veya `S_FALSE` bağlantı noktaları kalıcı belirtmek için.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağlantı noktası sağlayıcısı bağlantı noktası ederse, kaldırıldığında Bunu yapmak ve sonra bunları yeniden başlatıldığında yeniden gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT CanPersistPorts();
+```
+
+```csharp
+int CanPersistPorts();
+```
+
+## <a name="parameters"></a>Parametreler
+ Yok.
+
+## <a name="return-value"></a>Dönüş Değeri
+ `S_OK` bağlantı noktalarını kalıcı ise veya `S_FALSE` bağlantı noktaları kalıcı belirtmek için.
+
+## <a name="remarks"></a>Açıklamalar
+ Bağlantı noktası sağlayıcısı bağlantı noktası ederse, kaldırıldığında Bunu yapmak ve sonra bunları yeniden başlatıldığında yeniden gerekir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

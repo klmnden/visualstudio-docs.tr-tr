@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861771"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340798"
 ---
 # <a name="inside-the-editor"></a>Düzenleyicinin içinde
 
@@ -108,7 +108,7 @@ A <xref:Microsoft.VisualStudio.Text.SnapshotPoint> bir anlık görüntü içinde
 
 #### <a name="spans-and-normalizedspancollections"></a>Yayılımları ve NormalizedSpanCollections
 
-A <xref:Microsoft.VisualStudio.Text.Span> metin anlık görüntüdeki metnin uygulanabilir bir aralığı temsil eder. Anlık görüntü konumları sıfır tabanlı, olduğundan yayılma sıfır dahil olmak üzere herhangi bir konumda başlayabilirsiniz. `End` Bir aralık özelliği için toplamına eşit olduğu kendi `Start` özelliği ve kendi `Length` özelliği. A `Span` tarafından dizine karakteri içermez `End` özelliği. Örneğin, bir başlangıç aralık = 5 ve uzunluğu = 3 olan son = 8, 5, 6 ve 7 konumlarda karakterleri içerir. Bu aralığa gösterim 5..8 şeklindedir).
+A <xref:Microsoft.VisualStudio.Text.Span> metin anlık görüntüdeki metnin uygulanabilir bir aralığı temsil eder. Anlık görüntü konumları sıfır tabanlı, olduğundan yayılma sıfır dahil olmak üzere herhangi bir konumda başlayabilirsiniz. `End` Bir aralık özelliği için toplamına eşit olduğu kendi `Start` özelliği ve kendi `Length` özelliği. A `Span` tarafından dizine karakteri içermez `End` özelliği. Örneğin, bir başlangıç aralık = 5 ve uzunluğu = 3 olan son = 8, 5, 6 ve 7 konumlarda karakterleri içerir. Bu aralığa gösterimi [5..8).
 
 Tüm pozisyonlar genel olarak, bitiş konumu dahil olmak üzere oluşturulduysa iki yayılma kesişen. Bu nedenle, kesişim [3, 5) ve [2, 7) olan [3, 5) ve kesişimi [3, 5) ve [5, 7) olduğundan [5, 5). (Dikkat [5, 5) boş bir aralığı.)
 

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861699"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342171"
 ---
 # <a name="command-design"></a>Komut tasarımı
 Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kullanılabilir olduğunda ve nasıl işleneceğini olduğunu belirtmeniz gerekir.
 
 ## <a name="define-commands"></a>Komutlar tanımlayın
- Yeni komutlar tanımlamak için Visual Studio komut tablosu içerir (*.vsct*) VSPackage projenizdeki dosya. Visual Studio Paket şablonu kullanarak bir VSPackage oluşturduysanız, bu dosyalardan biri proje içerir. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Yeni komutlar tanımlamak için Visual Studio komut tablosu içerir ( *.vsct*) VSPackage projenizdeki dosya. Visual Studio Paket şablonu kullanarak bir VSPackage oluşturduysanız, bu dosyalardan biri proje içerir. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio tüm birleştirir *.vsct* komutları görüntüleyebilmesi bu dosyaları bulur. Bu dosyalar ikili VSPackage farklı olduğundan, Visual Studio komutları paketi yok. Daha fazla bilgi için [nasıl VSPackages kullanıcı arabirimi öğeleri ekleyebilir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,7 +36,7 @@ Bir komut için bir VSPackage'ı eklediğinizde, görüntülenecek olduğu, kull
 ## <a name="visual-studio-command-environment"></a>Visual Studio komut ortamı
  Visual Studio VSPackages herhangi bir sayıda barındırabilir ve her biri kendi komut kümesi katkıda bulunabilir. Ortamın geçerli görev için uygun olan komutları görüntüler. Daha fazla bilgi için [komutu kullanılabilirlik](../../extensibility/internals/command-availability.md) ve [seçim bağlamı nesneleri](../../extensibility/internals/selection-context-objects.md).
 
- Yeni komutlar, menüler, araç çubukları veya kısayol menüleri tanımlayan bir VSPackage'ı yerel veya yönetilen bütünleştirilmiş kodlar içindeki kaynaklara başvuran bir kayıt defteri girdileri ile yükleme sırasında Visual Studio için komut bilgileri sağlar. Her kaynak sonra bir ikili veri kaynağa başvuruda (*.cto*), Visual Studio komut tablosu derlerken, üretilen dosya (*.vsct*) dosyası. Bu birleştirilmiş komut kümelerini, menüleri ve araç çubuklarını yüklü her VSPackage'ı yüklemek zorunda kalmadan sağlamak Visual Studio sağlar.
+ Yeni komutlar, menüler, araç çubukları veya kısayol menüleri tanımlayan bir VSPackage'ı yerel veya yönetilen bütünleştirilmiş kodlar içindeki kaynaklara başvuran bir kayıt defteri girdileri ile yükleme sırasında Visual Studio için komut bilgileri sağlar. Her kaynak sonra bir ikili veri kaynağa başvuruda ( *.cto*), Visual Studio komut tablosu derlerken, üretilen dosya ( *.vsct*) dosyası. Bu birleştirilmiş komut kümelerini, menüleri ve araç çubuklarını yüklü her VSPackage'ı yüklemek zorunda kalmadan sağlamak Visual Studio sağlar.
 
 ### <a name="command-organization"></a>Komut kuruluş
  Ortam, grubu, öncelik ve menü komutları yerleştirir.

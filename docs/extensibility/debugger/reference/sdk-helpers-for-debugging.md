@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329209"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Hata Ayıklama için SDK Yardımcıları
 Bu işlevler ve bildirimleri C++'da uygulama, hata ayıklama altyapısı, ifade değerlendiricilerini ve sembol sağlayıcıları için genel yardımcı işlevlerdir.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > Çoğu zaman, HKEY_LOCAL_MACHINE anahtarı ölçümleri yazılır. Ancak, bazen HKEY_CURRENT_USER hedef anahtar olacaktır. Her iki anahtarı Dbgmetric.lib işler. Bir ölçüm alırken HKEY_CURRENT_USER arar. ilk ve HKEY_LOCAL_MACHINE. Bunu bir ölçüm ayarlanırken, bir parametre kullanmak için hangi üst düzey anahtar belirtir.
 
- *[kayıt defteri anahtarı]*\
+ *[kayıt defteri anahtarı]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[sürüm kök]*\
+ *[sürüm kök]* \
 
- *[ölçüm kök]*\
+ *[ölçüm kök]* \
 
- *[ölçüm türü]*\
+ *[ölçüm türü]* \
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[altyapısı GUID]*\
+ *[altyapısı GUID]* \
 
- `CLSID` = *[sınıf GUID]*
+ `CLSID` =  *[sınıf GUID]*
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[bağlantı noktası sağlayıcısı GUID]*
+ `0` =  *[bağlantı noktası sağlayıcısı GUID]*
 
- `1` = *[bağlantı noktası sağlayıcısı GUID]*
+ `1` =  *[bağlantı noktası sağlayıcısı GUID]*
 
 |Yer tutucu|Açıklama|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[bağlantı noktası sağlayıcısı GUID]*|Varsa, bağlantı noktası sağlayıcısı GUID. Birçok hata ayıklama altyapısı, varsayılan bağlantı noktası sağlayıcısı kullanın ve kendi tedarikçi belirtmeyin. Bu durumda, alt `PortSupplier` eksik olacaktır.|
 
 ### <a name="port-suppliers"></a>Bağlantı Noktası Sağlayıcıları
- Aşağıdaki kayıt defteri bağlantı noktası tedarikçi ölçümlerinin kuruluştur. `PortSupplier` Ölçüm türü için bağlantı noktası sağlayıcısı adıdır ve karşılık gelen *[ölçüm türü]*.
+ Aşağıdaki kayıt defteri bağlantı noktası tedarikçi ölçümlerinin kuruluştur. `PortSupplier` Ölçüm türü için bağlantı noktası sağlayıcısı adıdır ve karşılık gelen *[ölçüm türü]* .
 
  `PortSupplier`\
 
- *[bağlantı noktası sağlayıcısı GUID]*\
+ *[bağlantı noktası sağlayıcısı GUID]* \
 
- `CLSID` = *[sınıf GUID]*
+ `CLSID` =  *[sınıf GUID]*
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[sınıf GUID]*|Bu bağlantı noktası sağlayıcısı uygulayan sınıf GUID|
 
 ### <a name="symbol-providers"></a>Sembol sağlayıcıları
- Aşağıdaki kayıt defteri sembol tedarikçi ölçümlerinin kuruluştur. `SymbolProvider` Sembol sağlayıcısı için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]*.
+ Aşağıdaki kayıt defteri sembol tedarikçi ölçümlerinin kuruluştur. `SymbolProvider` Sembol sağlayıcısı için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]* .
 
  `SymbolProvider`\
 
- *[sembol sağlayıcısı GUID]*\
+ *[sembol sağlayıcısı GUID]* \
 
  `file`\
 
- `CLSID` = *[sınıf GUID]*
+ `CLSID` =  *[sınıf GUID]*
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[sınıf GUID]*
+ `CLSID` =  *[sınıf GUID]*
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[sınıf GUID]*|Bu sembol sağlayıcısı uygulayan sınıf GUID|
 
 ### <a name="expression-evaluators"></a>İfade değerlendiricisi
- İfade değerlendirici ölçümleri kayıt defterinde organizasyonu verilmiştir. `ExpressionEvaluator` ifade değerlendirici ölçüm türü adı ve karşılık gelen *[ölçüm türü]*.
+ İfade değerlendirici ölçümleri kayıt defterinde organizasyonu verilmiştir. `ExpressionEvaluator` ifade değerlendirici ölçüm türü adı ve karşılık gelen *[ölçüm türü]* .
 
 > [!NOTE]
 > Ölçüm türü için `ExpressionEvaluator` tüm ölçüm değişiklikler ifade değerlendiricilerini için uygun bir ifade değerlendirici ölçüm işlevleri aracılığıyla geçer varsayılır gibi dbgmetric.h içinde tanımlı değil (düzenini `ExpressionEvaluator` alt biraz anahtarıdır Ayrıntılar içinde dbgmetric.lib gizlenir şekilde, karmaşık).
 
  `ExpressionEvaluator`\
 
- *[dil guid]*\
+ *[dil guid]* \
 
- *[satıcı GUID]*\
+ *[satıcı GUID]* \
 
- `CLSID` = *[sınıf GUID]*
+ `CLSID` =  *[sınıf GUID]*
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[hata ayıklama altyapısı GUID]*
+ `0` =  *[hata ayıklama altyapısı GUID]*
 
- `1` = *[hata ayıklama altyapısı GUID]*
+ `1` =  *[hata ayıklama altyapısı GUID]*
 
 |Yer tutucu|Açıklama|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[hata ayıklama altyapısı GUID]*|Bu ifade değerlendiricisi çalışır bir hata ayıklama altyapısı GUİD'si|
 
 ### <a name="expression-evaluator-extensions"></a>İfade değerlendirici uzantıları
- İfade değerlendirici uzantısı ölçümleri kayıt defterinde organizasyonu verilmiştir. `EEExtensions` Ölçüm türü için ifade değerlendirici uzantıları adıdır ve karşılık gelen *[ölçüm türü]*.
+ İfade değerlendirici uzantısı ölçümleri kayıt defterinde organizasyonu verilmiştir. `EEExtensions` Ölçüm türü için ifade değerlendirici uzantıları adıdır ve karşılık gelen *[ölçüm türü]* .
 
  `EEExtensions`\
 
- *[uzantısı GUID]*\
+ *[uzantısı GUID]* \
 
  *[ölçü] = [ölçüm değeri]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[uzantısı GUID]*|İfade değerlendirici uzantı GUİD'si|
 
 ### <a name="exceptions"></a>Özel Durumlar
- Kayıt defterinde özel durumları ölçümleri organizasyonu verilmiştir. `Exception` özel durumlar için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]*.
+ Kayıt defterinde özel durumları ölçümleri organizasyonu verilmiştir. `Exception` özel durumlar için ölçüm türü adıdır ve karşılık gelen *[ölçüm türü]* .
 
  `Exception`\
 
- *[hata ayıklama altyapısı GUID]*\
+ *[hata ayıklama altyapısı GUID]* \
 
- *[özel durum türleri]*\
+ *[özel durum türleri]* \
 
- *[özel]*\
-
- *[ölçü] = [ölçüm değeri]*
+ *[özel]* \
 
  *[ölçü] = [ölçüm değeri]*
 
- *[özel]*\
+ *[ölçü] = [ölçüm değeri]*
+
+ *[özel]* \
 
  *[ölçü] = [ölçüm değeri]*
 

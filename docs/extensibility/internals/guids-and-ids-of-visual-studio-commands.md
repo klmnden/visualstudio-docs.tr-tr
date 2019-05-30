@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329180"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID'leri ve kimlikleri, Visual Studio komutları
 Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve ID değerleri Visual Studio SDK'ın bir parçası olarak yüklenen .vsct dosyaları tanımlanır. Daha fazla bilgi için [IDE tanımlı komutlar, menüler ve gruplar](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
 
 - Gibi bir altı çizili karakter içeren bir menü öğelerini **yazdırma** komutunu **dosya** Burada, menü *P* çizilir.
 
-     Ve işareti tarafından öncelenen karakterleri (&) karakter menü öğesi adları, görüntülenen altı çizili olarak. Ancak, *.vsct* dosyaları, özel karakterler belirtmek için (&) karakteri kullanır ve görüntülenecek ve işareti olarak yazılmalıdır olduğunu gerektiren XML'de yazılır  *&amp;amp;*. Bu nedenle bir *.vsct* dosyası **yazdırma** komut görünür olarak  *&amp;amp; Yazdırma*.
+     Ve işareti tarafından öncelenen karakterleri (&) karakter menü öğesi adları, görüntülenen altı çizili olarak. Ancak, *.vsct* dosyaları, özel karakterler belirtmek için (&) karakteri kullanır ve görüntülenecek ve işareti olarak yazılmalıdır olduğunu gerektiren XML'de yazılır  *&amp;amp;* . Bu nedenle bir *.vsct* dosyası **yazdırma** komut görünür olarak  *&amp;amp; Yazdırma*.
 
 - Dinamik metin sahip komutları **Kaydet** \<geçerli dosya\>ve dinamik olarak üretilen öğeler gibi menü öğeleri üzerinde **son kullanılan dosyalar** listesi.
 
