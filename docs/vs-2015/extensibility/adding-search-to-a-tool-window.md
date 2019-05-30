@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097095"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263574"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Araç Penceresine Arama Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
      Arama denetimi görünür araç penceresinin en üstünde bir **arama** Filigran ve büyütme cam simgesi. Ancak, arama işlemi uygulanmadı çünkü arama henüz işe yaramaz.  
   
 ## <a name="to-add-the-search-implementation"></a>Arama uygulaması eklemek için  
- Üzerinde arama etkinleştirdiğinizde bir <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>gibi önceki yordamda bir konak araç penceresi oluşturur. Bu konak, ayarlar ve her zaman bir arka plan iş parçacığında ortaya çıkan arama işlemlerini yönetir. Çünkü <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> sınıfı arama ana ve ayarı oluşturulmasını arama yukarı yönetir, yalnızca bir arama görevi oluşturma ve arama yöntemi sağlar. Arama işlemi bir arka plan iş parçacığında oluşur ve araç penceresi denetimini çağrıları UI iş parçacığı üzerinde oluşur. Bu nedenle, kullanmalısınız <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> denetimi ile ilgili yaptığınız çağrıları yönetmek için yöntemi.  
+ Üzerinde arama etkinleştirdiğinizde bir <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>gibi önceki yordamda bir konak araç penceresi oluşturur. Bu konak, ayarlar ve her zaman bir arka plan iş parçacığında ortaya çıkan arama işlemlerini yönetir. Çünkü <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> sınıfı arama ana ve ayarı oluşturulmasını arama yukarı yönetir, yalnızca bir arama görevi oluşturma ve arama yöntemi sağlar. Arama işlemi bir arka plan iş parçacığında oluşur ve araç penceresi denetimini çağrıları UI iş parçacığı üzerinde oluşur. Bu nedenle, kullanmalısınız [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) denetimi ile ilgili yaptığınız çağrıları yönetmek için yöntemi.  
   
 1. TestSearch.cs dosyasına aşağıdakileri ekleyin `using` ifadeleri:  
   
@@ -160,7 +160,7 @@ Uzantınızı bir araç penceresi güncelle, Visual Studio'da başka bir yerde g
   
     - Geçersiz kılmalar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> arama görevi oluşturmak için yöntemi.  
   
-    - Geçersiz kılmalar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metin kutusunun durumunu geri yüklemek için yöntemi. Bir kullanıcı arama görevi ve ne zaman bir kullanıcı ayarlar veya seçenekleri veya filtreleri dağıtır iptal ettiğinde, bu yöntem çağrılır. Her ikisi de <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> UI iş parçacığı üzerinde çağrılır. Bu nedenle, metin kutusu yoluyla erişmeye ihtiyacınız yoksa <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> yöntemi.  
+    - Geçersiz kılmalar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metin kutusunun durumunu geri yüklemek için yöntemi. Bir kullanıcı arama görevi ve ne zaman bir kullanıcı ayarlar veya seçenekleri veya filtreleri dağıtır iptal ettiğinde, bu yöntem çağrılır. Her ikisi de <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> UI iş parçacığı üzerinde çağrılır. Bu nedenle, metin kutusu yoluyla erişmeye ihtiyacınız yoksa [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) yöntemi.  
   
     - Adlı bir sınıf oluşturur `TestSearchTask` öğesinden devralan <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, varsayılan bir uygulama sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   

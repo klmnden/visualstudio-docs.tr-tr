@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62878261"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346510"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Bir listesini tutan bir yapı `GUID`s.
@@ -39,9 +42,11 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>Üyeler
-dwCount numarası, `GUID`s'te `Members` dizisi.
+`dwCount`\
+Sayısı `GUID`s'te `Members` dizisi.
 
-Üye dizisi `GUID`s.
+`Members`\
+Dizi `GUID`s.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı geçirilir [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) yöntemi ve öğesinden döndürülen [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) ve [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) yöntemleri.
@@ -55,7 +60,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

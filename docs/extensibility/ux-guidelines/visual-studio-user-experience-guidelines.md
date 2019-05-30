@@ -3,17 +3,17 @@ title: Visual Studio kullanıcı deneyimi yönergeleri | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1f82142a66ad5c967e8f790e6dc70fca6b53496
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553659"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310754"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio Kullanıcı Deneyimi Yönergeleri
 Visual Studio için yeni özellikler tasarlıyorsanız, Visual Studio kullanıcı deneyimi yönergeleri izleyin. Yeni kullanıcı arabirimi (UI) tasarımcıları sorunsuz ve tutarlı bir geliştirme ortamında kullanıcı deneyimleri oluşturabilirsiniz. böylece bu yönergeleri ortak kullanıcı modeller ve etkileşim desenleri hakkında bilgi içerir.

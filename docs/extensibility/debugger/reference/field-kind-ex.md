@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309011"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Ek alanları türlerini numaralandırır, bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne içerebilir. Bu numaralandırma genişletir [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) sabit listesi.
@@ -41,12 +44,15 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="members"></a>Üyeler
-FIELD_KIND_EX_NONE alan genişletilmiş bir türü içermiyor.
+## <a name="fields"></a>Alanlar
+`FIELD_KIND_EX_NONE`\
+Alan genişletilmiş bir türü içermiyor.
 
-Bir yöntem değişken FIELD_TYPE_EX_METHODVAR alan içerir.
+`FIELD_TYPE_EX_METHODVAR`\
+Alan bir yöntem değişken içerir.
 
-Bir sınıf değişken FIELD_TYPE_EX_CLASSVAR alan içerir.
+`FIELD_TYPE_EX_CLASSVAR`\
+Bir sınıf değişkeni alan içerir.
 
 ## <a name="requirements"></a>Gereksinimler
 Üst bilgi: Sh.h
@@ -55,6 +61,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 - [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

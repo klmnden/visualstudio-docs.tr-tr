@@ -3,17 +3,17 @@ title: Visual Studio için yaygın denetim desenleri | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799478"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312307"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için yaygın denetim desenleri
 ## <a name="BKMK_CommonControls"></a> Ortak Denetimler
@@ -274,7 +274,7 @@ Bazı durumlarda, düğmeler, stil uygulanmış kullanıcı Arabirimi içinde ku
 
 Ne zaman yalnızca üç nokta kısa düğmesini kullanın:
 
-- Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için (**& Gözat** ve **B & özat** aynı iletişim kutusunda).
+- Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için ( **& Gözat** ve **B & özat** aynı iletişim kutusunda).
 
 - Sıkı bir iletişim kutusu veya uzun düğmesi koymak için makul bir yerde olduğunda.
 
@@ -317,7 +317,7 @@ Grafik bir düğme kısa aynıdır için boyutlandırma **[Gözat...]**  düğme
 Köprüler bir Yardım konusu, kalıcı iletişim kutusu veya Sihirbazı açma gibi Gezinti tabanlı eylemler için uygundur. Köprü komutu için kullanılıyorsa, her zaman görünür ve belirgin bir değişiklik için kullanıcı Arabirimi görüntülemelisiniz. Genel olarak, (, iptal, kaydetme ve silme gibi) bir eylem yürütme eylemleri daha iyi bir düğmeyi kullanarak bildirilir.
 
 #### <a name="writing-style"></a>Yazma stili
-İzleyin [Windows masaüstü kılavuzu için kullanıcı arabirimi metinlerini](/windows/desktop/uxguide/text-ui). "Bilgi daha fazla hakkında" kullanmayın "Söyleyin bana daha fazla hakkında" veya "Bu Get help" yapılar. Bunun yerine, Yardım içerik tarafından birincil sorunuzun açısından Yardım bağlantı metni tümce. Örneğin, "**Sunucu Gezgini için bir sunucu nasıl eklerim?**"
+İzleyin [Windows masaüstü kılavuzu için kullanıcı arabirimi metinlerini](/windows/desktop/uxguide/text-ui). "Bilgi daha fazla hakkında" kullanmayın "Söyleyin bana daha fazla hakkında" veya "Bu Get help" yapılar. Bunun yerine, Yardım içerik tarafından birincil sorunuzun açısından Yardım bağlantı metni tümce. Örneğin, "**Sunucu Gezgini için bir sunucu nasıl eklerim?** "
 
 #### <a name="visual-style"></a>Görsel stili
 

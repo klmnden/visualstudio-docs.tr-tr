@@ -3,17 +3,17 @@ title: Araç penceresi içeren bir uzantı oluşturma | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2741a7f9d27c303981ed4b179e3fe3d7cd63f020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a38c9912be87c94c79076675b5db25663fb5f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926468"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345441"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Araç penceresi içeren bir uzantı oluşturma
 
@@ -27,7 +27,7 @@ Bu yordamda, VSIX proje şablonu kullanmayı öğrenin ve **özel araç penceres
 
 1. Adlı bir VSIX projesi oluşturun **FirstWindow**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
 
-2. Projeyi açtığında, adlı bir araç penceresi öğesi şablonu ekleme **MyWindow**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** alan penceresinin en altında bir araç penceresi dosya adını değiştirerek *MyWindow.cs*.
+2. Projeyi açtığında, adlı bir araç penceresi öğesi şablonu ekleme **MyWindow**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#**  > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** alan penceresinin en altında bir araç penceresi dosya adını değiştirerek *MyWindow.cs*.
 
 3. Projeyi oluşturmak ve hata ayıklamaya başlayın.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], IntelliSense Parameter Info
 - Parameter Info (IntelliSense), supporting in language services [managed package framework]
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3122fafe6b0fa0821c7dbebe9178f3813838685a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ed95be7611c4733e2d10691bb0bf5eeb798a67b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314666"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetinde parametre bilgisi
 IntelliSense parametre bilgisi, kullanıcı, parametre listesi yazdığında, yöntemin imzası görüntüleyen bir araç ipucu başlangıç karakteri (genellikle bir açık parantez) için bir yöntem parametresi listesinden ' dir. Her parametre girilmesi ve parametre ayırıcı (genellikle bir virgül) yazılı olarak araç ipucu bir sonraki parametreyi kalın olarak göstermek için güncelleştirilir.

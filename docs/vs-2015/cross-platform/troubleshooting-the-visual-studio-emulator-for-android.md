@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417093"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263379"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü’nde Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ Bu konuda, Android için Visual Studio öykünücüsü'nü kullanırken karşıl
 
 - En düşük donanım gereksinimleri karşılandıktan ve BIOS ayarları doğru olduğundan emin olun.
 
-   Öykünücü ve Windows 8 Hyper-V, ikinci düzey adres çevirisi (SLAT) ile 64-bit işlemci gerektirir. Intel, temelde çekirdek ı3 i5 veya i7 işlemci (ya da birçok Xeon birini) gerekir. AMD yongaları listesi kullanılabilir [burada](http://support.amd.com/en-us).
+   Öykünücü ve Windows 8 Hyper-V, ikinci düzey adres çevirisi (SLAT) ile 64-bit işlemci gerektirir. Intel, temelde çekirdek ı3 i5 veya i7 işlemci (ya da birçok Xeon birini) gerekir. AMD yongaları listesi kullanılabilir [burada](https://www.amd.com/en/support).
 
   1. Bilgisayar karşıladığından emin olun [sistem gereksinimleri](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

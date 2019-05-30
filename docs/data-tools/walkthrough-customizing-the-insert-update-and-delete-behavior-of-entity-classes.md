@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: INSERT özelleştirme, güncelleştirme ve silme davranışı, varlık sınıfları'
+title: Varlık sınıflarının ekleme/güncelleştirme/silme davranışını özelleştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565413"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262899"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>İzlenecek yol: Varlık sınıflarının ekleme, güncelleştirme ve silme davranışını özelleştirme
 
@@ -195,7 +195,7 @@ Varsayılan olarak Kaydet düğmesi etkin değildir ve kaydetme işlevinin uygul
 
 5. İçinde **özellikleri** penceresinde **Ekle** özelliği.
 
-6. Üç nokta simgesine tıklayın (**...** ) yanındaki **kullanım çalışma zamanı** açmak için **davranışı Yapılandır** iletişim kutusu.
+6. Üç nokta simgesine tıklayın ( **...** ) yanındaki **kullanım çalışma zamanı** açmak için **davranışı Yapılandır** iletişim kutusu.
 
 7. Seçin **özelleştirme**.
 
@@ -217,7 +217,7 @@ Varsayılan olarak Kaydet düğmesi etkin değildir ve kaydetme işlevinin uygul
 13. Harita **Original_CustomerID** metot bağımsız değişkeni **CustomerID (özgün)** sınıf özelliği.
 
     > [!NOTE]
-    > Adları eşleştiğinde varsayılan olarak, yöntem bağımsız değişkenleri sınıfın özelliklerine eşlenir. Özellik adlarının değiştirilir ve tablo arasında varlık sınıfı artık eşleşen if eşlemek için eşdeğer sınıf özelliği'i seçmeniz gerekebilir **O/R Tasarımcısı** doğru eşleme belirlenemiyor. Yöntem bağımsız değişkenleri eşlemek için geçerli bir sınıf özellikleri yoksa, ayrıca, ayarlayabilirsiniz **sınıfı özellikleri** değerini **(hiçbiri)**.
+    > Adları eşleştiğinde varsayılan olarak, yöntem bağımsız değişkenleri sınıfın özelliklerine eşlenir. Özellik adlarının değiştirilir ve tablo arasında varlık sınıfı artık eşleşen if eşlemek için eşdeğer sınıf özelliği'i seçmeniz gerekebilir **O/R Tasarımcısı** doğru eşleme belirlenemiyor. Yöntem bağımsız değişkenleri eşlemek için geçerli bir sınıf özellikleri yoksa, ayrıca, ayarlayabilirsiniz **sınıfı özellikleri** değerini **(hiçbiri)** .
 
 14. Tıklayın **Uygula** seçilen sınıf ve davranış için yapılandırmayı kaydetmek için.
 

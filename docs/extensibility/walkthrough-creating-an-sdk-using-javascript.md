@@ -3,17 +3,17 @@ title: 'İzlenecek yol: JavaScript kullanarak SDK oluşturma | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796349"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312545"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>İzlenecek yol: JavaScript kullanarak SDK oluşturma
 Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX) olarak oluşturmak için JavaScript kullanmayı öğretir.  İzlenecek yol, şu bölümlere ayrılmıştır:
@@ -132,7 +132,7 @@ Bu izlenecek yol, bir basit matematik SDK'sı bir Visual Studio Uzantısı (VSIX
 
 18. İçinde **Çözüm Gezgini**, kısayol menüsünde **SimpleMathVSIX** projesinin **yapı**.
 
-19. Yapı projesi için kısayol menüsündeki başarıyla tamamlandıktan sonra seçin **klasörü dosya Gezgini'nde Aç**. Gidin **\bin\debug\\**, çalıştırıp `SimpleMathVSIX.vsix` yükleyin.
+19. Yapı projesi için kısayol menüsündeki başarıyla tamamlandıktan sonra seçin **klasörü dosya Gezgini'nde Aç**. Gidin **\bin\debug\\** , çalıştırıp `SimpleMathVSIX.vsix` yükleyin.
 
 20. Seçin **yükleme** düğmesi ve let yükleme tamamlandı.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, extensibility
 - packages, compiling with MSBuild
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06ec985dc6709651be7bd2f12b024eda4ed03d5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab089a7a37acb377a043ec2c3a4db2c6538e6312
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908441"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344709"
 ---
 # <a name="using-msbuild"></a>MSBuild Kullanma
 MSBuild proje öğeleri oluşturulması, derleme görevleri ve derleme yapılandırmaları için tam olarak açıklayan proje dosyaları oluşturmak için bir iyi tanımlanmış, Genişletilebilir XML biçiminde sağlar.
