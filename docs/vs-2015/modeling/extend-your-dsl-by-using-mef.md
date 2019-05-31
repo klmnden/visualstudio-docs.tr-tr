@@ -131,7 +131,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
   
    - Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".  
   
-   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\***  
+   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\** *  
   
    - DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.  
   
@@ -147,7 +147,7 @@ Yönetilen Genişletilebilirlik Çerçevesi (MEF) kullanarak, etki alanına özg
   
    - System.Windows.Forms.dll  
   
-4. Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.  
+4. Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** , tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.  
   
 5. Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.  
   

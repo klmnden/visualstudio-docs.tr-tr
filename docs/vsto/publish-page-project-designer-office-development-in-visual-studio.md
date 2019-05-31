@@ -36,7 +36,7 @@ ms.locfileid: "63447021"
 
  Yayımlama klasörü konumu için ve Visual Studio çözüm dosyalarını bildirimleri, derlemeleri ve diğer dosyalar gibi yapı kopyaladığı dizin olan. Bu dizine yazma erişimi olmalıdır.
 
- Seçenekler, yerel bilgisayar, bir UNC dosyası paylaşımı veya bir HTTP/HTTPS web sitesi içerir. Yol yerel olabilir (*c:\foldername\publishfolder*), göreli (*yayımlama\\*), veya tam bir konum (*\\\servername\foldername* veya http://<em>servername/foldername</em>).
+ Seçenekler, yerel bilgisayar, bir UNC dosyası paylaşımı veya bir HTTP/HTTPS web sitesi içerir. Yol yerel olabilir (*c:\foldername\publishfolder*), göreli (*yayımlama\\* ), veya tam bir konum ( *\\\servername\foldername* veya http://<em>servername/foldername</em>).
 
  Varsayılan olarak, yayımlama konumdur *http://localhost/projectname/* , IIS yüklü değilse veya *yayımlama\\*  IIS yüklü değilse dizin.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447021"
 
  Yükleme klasörü URL'si, son kullanıcının özelleştirme yükleyecek dizindir. Ayrıca çözüm güncelleştirmeleri denetlemek için kullanacağı yoludur. Yayımlama klasörü konumu ile aynı yol olabilir, ancak bu zorunlu değildir.
 
- Seçenekler, yerel bilgisayar, bir UNC dosyası paylaşımı veya bir HTTP/HTTPS web sitesi içerir. Yol yerel olabilir (*c:\foldername\publishfolder*), göreli (*yayımlama\\*), veya tam bir konum (*\\\servername\foldername* veya http://<em>servername/foldername</em>). Tüm HTTP/HTTPS konumlar US-ASCII karakter ile oluşturulması gerekir. Unicode karakterler desteklenmez.
+ Seçenekler, yerel bilgisayar, bir UNC dosyası paylaşımı veya bir HTTP/HTTPS web sitesi içerir. Yol yerel olabilir (*c:\foldername\publishfolder*), göreli (*yayımlama\\* ), veya tam bir konum ( *\\\servername\foldername* veya http://<em>servername/foldername</em>). Tüm HTTP/HTTPS konumlar US-ASCII karakter ile oluşturulması gerekir. Unicode karakterler desteklenmez.
 
  Yükleme yolu olarak ayarlanırsa özelleştirme dosyaları kullanıcıların özelleştirme yükleyebilmesi o konumda olmalıdır. Yalnızca son dağıtım konumunu biliyorsanız konumu olarak ayarlanmalıdır.
 

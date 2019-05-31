@@ -111,7 +111,7 @@ Bir öğeyi başka sürüklenerek araç kutusundan veya bir yapıştırma veya t
   
       Yolun gezinme aracı her bir yol oluşturmak için kullanabilirsiniz:  
   
-   3. Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >**.  
+   3. Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >** .  
   
    4. Liste öğesi sağındaki açılan oku tıklatın. Ağaç görünümünde görünür.  
   

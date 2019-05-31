@@ -47,7 +47,7 @@ Bu konu açıklar nasıl **Kural Koşulu Düzenleyicisi** eski iletişim kutusun
 |**TAMAM**|Kural koşulu kaydetmek için tıklatın.|  
   
 ## <a name="entering-condition-expressions"></a>Koşul ifadeleri girme  
- Koşul ifadeleri, metin olarak girilir. Yazabilirsiniz **bu.** alanlar, özellikler ve iş akışında kullanılan yöntemleri başvurmak için düzenleyicide yerleşik bir IntelliSense benzeri menüsünü kullanarak. Veya doğrudan bir iş akışı üye adı yazın. Mantıksal işleçler AND, OR'gibi bir koşul ekleyebilirsiniz ve değil. Koşullar da ekleyebilirsiniz. Bir ikili işleç ve iki işlenenden koşuldur. Desteklenen ikili işleçler **==**, **>**, **\<**, **>=**, ve **<=**. Desteklenen işlenenler şunlardır: sabit değer, aritmetik işlevi ve kapsamlı bir genel üyeler.  
+ Koşul ifadeleri, metin olarak girilir. Yazabilirsiniz **bu.** alanlar, özellikler ve iş akışında kullanılan yöntemleri başvurmak için düzenleyicide yerleşik bir IntelliSense benzeri menüsünü kullanarak. Veya doğrudan bir iş akışı üye adı yazın. Mantıksal işleçler AND, OR'gibi bir koşul ekleyebilirsiniz ve değil. Koşullar da ekleyebilirsiniz. Bir ikili işleç ve iki işlenenden koşuldur. Desteklenen ikili işleçler **==** , **>** , **\<** , **>=** , ve **<=** . Desteklenen işlenenler şunlardır: sabit değer, aritmetik işlevi ve kapsamlı bir genel üyeler.  
   
  Karşılaştırma türü belirtebilir ve'karşılaştırabilirsiniz **null** ya da boş bir dize. Örneğin, bir karmaşık tür içeren bir değişken üzerinde iç içe geçmiş çağrıları üyelerine yapabileceğiniz `this.Address.State == "WA"`.  
   

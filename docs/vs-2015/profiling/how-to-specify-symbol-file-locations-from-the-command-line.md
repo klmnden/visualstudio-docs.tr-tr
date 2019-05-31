@@ -48,7 +48,7 @@ ms.locfileid: "63436917"
   
 2. Ayarlamak için aşağıdaki sözdizimini kullanın **_NT_SYMBOL_PATH** ortam değişkeni veya VSPerfReport/symbolpath seçeneği:  
   
-    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     Burada *LocalStore* oluşturduğunuz yerel bir dizin yolu.  
   

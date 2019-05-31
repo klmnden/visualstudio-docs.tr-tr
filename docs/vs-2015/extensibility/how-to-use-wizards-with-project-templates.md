@@ -207,7 +207,7 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
   
 1. Derlemeyi imzalayın. İçinde **Çözüm Gezgini**, VSIX projesi, sağ tıklatın ve seçin seçin **proje özellikleri**.  
   
-2. İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >**. İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.  
+2. İçinde **proje özellikleri** penceresinde **imzalama** sekmesindeki **imzalama** sekmesinde, onay **derlemeyi imzalamayı**. İçinde **bir tanımlayıcı ad anahtar dosyası seç** alanın, Seç  **\<yeni >** . İçinde **katı ad anahtarı oluştur** penceresi içinde **anahtar dosya adı** alanına **key.snk**. Onay kutusunu temizleyin **anahtar dosyamı bir parolayla korumak** alan.  
   
 3. İçinde **Çözüm Gezgini**, VSIX projesini seçin ve bulma **özellikleri** penceresi.  
   
@@ -215,9 +215,9 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
   
 5. Çözümü yeniden derleyin.  
   
-6. Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz (**\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk**). Key.snk dosyasını kopyalayın.  
+6. Artık key.snk dosya MyProjectWizard proje dizininde bulabilirsiniz ( **\<disk konumunuz > \MyProjectTemplate\MyProjectWizard\key.snk**). Key.snk dosyasını kopyalayın.  
   
-7. Çıkış dizinine gidin ve derleme bulunamadı (**\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Key.snk dosyayı buraya yapıştırın. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)  
+7. Çıkış dizinine gidin ve derleme bulunamadı ( **\<disk konumunuz > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Key.snk dosyayı buraya yapıştırın. (Bu kesinlikle gerekli değildir, ancak aşağıdaki adımları daha kolay hale getirir.)  
   
 8. Bir komut penceresi açın ve derleme oluşturulduktan dizine geçin.  
   

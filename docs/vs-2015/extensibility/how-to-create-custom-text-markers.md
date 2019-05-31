@@ -34,7 +34,7 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
   
 1. Gibi bir kayıt defteri girişini oluşturun:  
   
-    Hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* \Text Editor\External işaretçileri\\*\<MarkerGUID >*  
+    Hkey_local_machıne\software\microsoft\visualstudio\\ *\<sürüm >* \Text Editor\External işaretçileri\\ *\<MarkerGUID >*  
   
     <em>\<MarkerGUID ></em>olduğu bir `GUID` eklenen işaret tanımlamak için kullanılan  
   
@@ -43,9 +43,9 @@ Vurgulamak veya kod düzenlemek için bir özel metin işaretçisi oluşturmak i
     *\<PackageGUID >* Otomasyon nesnesi uygulayan VSPackage GUID'idir.  
   
    > [!NOTE]
-   > Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\ *\<sürüm >* Visual Studio Kabuğu başlatıldığında daha fazla bilgi için bkz, alternatif bir kök ile geçersiz kılınabilir [Komut satırı anahtarları](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Dört değer hkey_local_machıne\software\microsoft\visualstudio altında oluşturma\\*\<sürüm >* \Text Editor\External işaretçileri\\*\<MarkerGUID >*  
+2. Dört değer hkey_local_machıne\software\microsoft\visualstudio altında oluşturma\\ *\<sürüm >* \Text Editor\External işaretçileri\\ *\<MarkerGUID >*  
   
    - (Varsayılan)  
   

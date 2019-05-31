@@ -60,10 +60,10 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  **Ekleme:** `PID`  
  Belirtilen işlem profil oluşturma başlar.  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
  Durdurur veya belirtilen işlem için profil oluşturmaya başlar.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  Durdurur veya (yalnızca izleme metodunu) belirtilen işlem için profil oluşturmaya başlar.  
   
 ## <a name="example"></a>Örnek  

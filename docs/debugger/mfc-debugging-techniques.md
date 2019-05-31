@@ -358,7 +358,7 @@ Yığında ayrılmış nesneler için ancak, açıkça bir bellek sızıntısı 
 #### <a name="BKMK_Customizing_object_dumps"></a> Özelleştirme nesnenin dökümünü yapar
 Türetilen bir sınıftan zaman [CObject](/cpp/mfc/reference/cobject-class), geçersiz kılabilirsiniz `Dump` kullandığınızda, ek bilgi sağlamak için üye işlevi [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) döküm nesnelere [Çıkış penceresine](../ide/reference/output-window.md).
 
-`Dump` İşlevi için bir döküm bağlam değişkenleri nesnenin üye değerinin metinsel bir gösterimini yazar ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Döküm bağlamı bir g/ç akışına benzerdir. Append işlecini kullanabilirsiniz (**<<**) veri göndermesini bir `CDumpContext`.
+`Dump` İşlevi için bir döküm bağlam değişkenleri nesnenin üye değerinin metinsel bir gösterimini yazar ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Döküm bağlamı bir g/ç akışına benzerdir. Append işlecini kullanabilirsiniz ( **<<** ) veri göndermesini bir `CDumpContext`.
 
 Ne zaman geçersiz kılmanız `Dump` işlevi, temel sınıf sürümü ilk çağırmalıdır `Dump` temel sınıf nesnenin içeriğini dökümünü almak için. Ardından bir metinsel ve türetilmiş sınıfınızın her üye değişkeni için değer çıktı.
 
@@ -432,7 +432,7 @@ MFC hata ayıklama kitaplıkları ile seçilen modüllerini oluşturmak, Adımla
 
    1. İçinde  **\<Proje > özellik sayfaları** iletişim kutusu, tıklayın **Configuration Manager** düğmesi.
 
-   2. İçinde [Configuration Manager iletişim kutusu](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.
+   2. İçinde [Configuration Manager iletişim kutusu](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >** .
 
    3. İçinde [yeni proje yapılandırması iletişim kutusu](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.
 

@@ -62,7 +62,7 @@ Yeni bir özel kural oluşturmak için yeni bir dosya adını kullanarak kaydedi
 
 - Tüm grupları kurallarında daraltmak için seçin **Daralt tüm**.
 
-- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kuralları görüntülemeyi tercih  **\<yok >**.
+- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kuralları görüntülemeyi tercih  **\<yok >** .
 
 - Alan kuralı sütunlar ekleyip için seçin **sütun seçenekleri**.
 

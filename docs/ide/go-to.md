@@ -27,7 +27,7 @@ Visual Studio'nun **Git** komutları belirtilen öğeleri hızlı bir şekilde b
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Tuşuna **Ctrl**+**T** veya **Ctrl**+**,**
+**Klavye** | Tuşuna **Ctrl**+**T** veya **Ctrl**+ **,**
 **Fare** | Seçin **Düzenle** > **Git** > **tümüne Git**
 
 Küçük bir pencere üst kısmında görüntülenir, Kod Düzenleyicisi, doğru.
@@ -38,7 +38,7 @@ Metin kutusuna yazdığınız sırada, sonuçları bir metin kutusunun altındak
 
 ![Git penceresini](../ide/media/vside_navigatetowindow.png)
 
-Bir soru işareti de girebilirsiniz (**?**) ek Yardım almak için.
+Bir soru işareti de girebilirsiniz ( **?** ) ek Yardım almak için.
 
 ![Tüm Yardım'a gidin](media/go-to-all-help.png)
 

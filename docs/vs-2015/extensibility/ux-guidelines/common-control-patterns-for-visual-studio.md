@@ -298,7 +298,7 @@ ms.locfileid: "63430035"
 
  Ne zaman yalnızca üç nokta kısa düğmesini kullanın:
 
-- Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için (**& Gözat** ve **B & özat** aynı iletişim kutusunda).
+- Varsa birden fazla uzun **[Gözat...]**  göz atmak için çeşitli alanları ne zaman izin gibi bir iletişim kutusu düğmesi. Kısa kullanın **[...]**  düğmesini her bu durum tarafından oluşturulan kafa karıştırıcı erişim anahtarlarını önlemek için ( **& Gözat** ve **B & özat** aynı iletişim kutusunda).
 
 - Sıkı bir iletişim kutusu veya uzun düğmesi koymak için makul bir yerde olduğunda.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430035"
  Köprüler bir Yardım konusu, kalıcı iletişim kutusu veya Sihirbazı açma gibi Gezinti tabanlı eylemler için uygundur. Köprü komutu için kullanılıyorsa, her zaman görünür ve belirgin bir değişiklik için kullanıcı Arabirimi görüntülemelisiniz. Genel olarak, bir eylem (örneğin, iptal, kaydetme ve silme gibi) yürütme eylemleri daha iyi bir düğmeyi kullanarak bildirilir.
 
 #### <a name="writing-style"></a>Yazma stili
- İzleyin [Windows masaüstü kılavuzu için kullanıcı arabirimi metinlerini](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). "Bilgi daha fazla hakkında" kullanmayın "Söyleyin bana daha fazla hakkında" veya "Bu Get help" yapılar. Bunun yerine, Yardım içerik tarafından birincil sorunuzun açısından Yardım bağlantı metni tümce. Örneğin, "**Sunucu Gezgini için bir sunucu nasıl eklerim?**"
+ İzleyin [Windows masaüstü kılavuzu için kullanıcı arabirimi metinlerini](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). "Bilgi daha fazla hakkında" kullanmayın "Söyleyin bana daha fazla hakkında" veya "Bu Get help" yapılar. Bunun yerine, Yardım içerik tarafından birincil sorunuzun açısından Yardım bağlantı metni tümce. Örneğin, "**Sunucu Gezgini için bir sunucu nasıl eklerim?** "
 
 #### <a name="visual-style"></a>Görsel stili
 

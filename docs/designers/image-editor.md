@@ -117,7 +117,7 @@ Durumunu etkileyen komutlar **Resim Düzenleyicisi** bulunan **resim düzenleyic
 |**Düzensiz seçim**|Görüntünün düzensiz bir bölge seçimini etkinleştirir. Bir bölge seçin, sonra Kes, kopyalayabilir, taşıma, ölçeklendirme, döndürme, çevirme veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
 |**Değnek seçimi**|Benzer şekilde renkli bir bölge görüntü seçimini etkinleştirir. *Dayanıklılık*— diğer bir deyişle, bitişik renkleri içinde değerlendirilir benzer arasındaki en büyük fark — benzer renkleri daha küçük ya da daha geniş bir aralığını içerecek şekilde yapılandırılabilir. Bir bölge seçin, sonra Kes, kopyalayabilir, taşıma, ölçeklendirme, döndürme, çevirme veya silin. Çizim Araçları, yalnızca etkin bir seçim olduğunda, seçili bölgeye etkiler.|
 |**Pan**|Görüntünün pencere çerçevesine göre hareket sağlar. İçinde **Pan** modu, bir noktadaki bir görüntü seçin ve ardından gezinebilirsiniz.<br /><br /> Geçici olarak etkinleştirebilirsiniz **Pan** tuşuna basarak ve bulunduran modu **Ctrl** anahtarı.|
-|**Yakınlaştırma**|Görüntü ayrıntıları pencere çerçevesine göre daha az veya görüntülenmesini sağlar. İçinde **yakınlaştırma** modu, resimdeki bir nokta seçin ve ardından Sağa Taşı veya yakınlaştırmak için aşağı veya sol ettirin veya yetersiz.<br /><br /> Yakınlaştırmak veya uzaklaştırmak tuşuna basın ve basılı tarafından **Ctrl** fare tekerleğini kullanın veya artı işaretine basın (**+**) ya da eksi işareti (**-**) .|
+|**Yakınlaştırma**|Görüntü ayrıntıları pencere çerçevesine göre daha az veya görüntülenmesini sağlar. İçinde **yakınlaştırma** modu, resimdeki bir nokta seçin ve ardından Sağa Taşı veya yakınlaştırmak için aşağı veya sol ettirin veya yetersiz.<br /><br /> Yakınlaştırmak veya uzaklaştırmak tuşuna basın ve basılı tarafından **Ctrl** fare tekerleğini kullanın veya artı işaretine basın ( **+** ) ya da eksi işareti ( **-** ) .|
 |**Gerçek boyutuna Yakınlaştır**|Görüntü, görüntünün ve ekranın pikseller arasında 1:1 ilişki kullanarak görüntüler.|
 |**Sığacak kadar Yakınlaştır**|Tam görüntü pencere çerçevesinde görüntüler.|
 |**Genişliğe göre Yakınlaştır**|Tam görüntü genişliğini pencere çerçevesinde görüntüler.|
@@ -150,11 +150,11 @@ Durumunu etkileyen komutlar **Resim Düzenleyicisi** bulunan **resim düzenleyic
 
 ### <a name="work-with-mip-levels"></a>MIP düzeyleri ile çalışma
 
-Bazı görüntü biçimleri, örneğin, DirectDraw Surface (*.dds*), doku alanı düzeyi ayrıntı düzeyi için (LOD) MIP düzeylerini destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme](../designers/how-to-create-and-modify-mip-levels.md)
+Bazı görüntü biçimleri, örneğin, DirectDraw Surface ( *.dds*), doku alanı düzeyi ayrıntı düzeyi için (LOD) MIP düzeylerini destekler. Oluşturma ve MIP düzeyleri ile çalışma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Saydamlık ile çalışma
 
-Bazı görüntü biçimleri, örneğin, DirectDraw Surface (*.dds*), saydamlık destekler. Saydamlık, kullanmakta olduğunuz aracı bağlı olarak kullanabileceğiniz birçok yöntem vardır. Bir renk seçimi için saydamlık düzeyini belirtmek için **özellikleri** penceresinde **A** renk seçimi bileşeninin (alfa).
+Bazı görüntü biçimleri, örneğin, DirectDraw Surface ( *.dds*), saydamlık destekler. Saydamlık, kullanmakta olduğunuz aracı bağlı olarak kullanabileceğiniz birçok yöntem vardır. Bir renk seçimi için saydamlık düzeyini belirtmek için **özellikleri** penceresinde **A** renk seçimi bileşeninin (alfa).
 
 Aşağıdaki tabloda, saydamlık nasıl uygulanacağını araçları denetimi nasıl farklı türleri açıklanmaktadır:
 
@@ -250,8 +250,8 @@ Aşağıdaki tabloda, araç özellikleri açıklanmaktadır:
 |Tümünü seç|**CTRL**+**A**|
 |Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**ESC** (çıkış)|
-|Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti (**+**)|
-|Uzaklaştır|**CTRL**-**fare tekerleği geriye doğru**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Eksi işareti (**-**)|
+|Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> **CTRL**+**PageUp**<br /><br /> Artı işareti ( **+** )|
+|Uzaklaştır|**CTRL**-**fare tekerleği geriye doğru**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Eksi işareti ( **-** )|
 |Görüntü yukarı kaydır|**Fare tekerleği geriye doğru**<br /><br /> **PageDown**|
 |Görüntüyü aşağı kaydır|**Fare tekerleği ileriye doğru**<br /><br /> **PageUp**|
 |Görüntünün sola kaydır|**Shift**+**fare tekerleği geriye doğru**<br /><br /> **Fare tekerleği sol**<br /><br /> **Shift**+**PageDown**|

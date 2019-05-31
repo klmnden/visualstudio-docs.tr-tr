@@ -46,7 +46,7 @@ Etki alanına özgü bir dilin ad alanını değiştirebilirsiniz. Değişiklik 
 
 10. Visual Studio deneysel örneği sıfırlayın.
 
-    1. Silme **\Users\\**_{adınız}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Silme **\Users\\** _{adınız}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
     2. Windows üzerinde **Başlat** menüsünde seçin **tüm programlar** > **Microsoft Visual Studio 2010 SDK** > **Araçları**  >  **Deneysel örneğini sıfırlama**.
 

@@ -103,7 +103,7 @@ Yüklendikten sonra uzaktan hata ayıklayıcı hedef makinede çalıştığında
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >**.
+1. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >** .
     
     ASP.NET web sayfası görmeniz gerekir.
 1. ASP.NET web sayfasındaki bağlantısını tıklatın **hakkında** sayfası.

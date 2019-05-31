@@ -61,14 +61,14 @@ Statik olarak profil isterseniz derlenmiş. *dll* dosyaları web uygulamanızda 
 
  Ayrıca **/Trace** .NET bellek verileri ile ayrıntılı zamanlama bilgileri içerecek şekilde seçeneği:
 
- **vsperfaspnetcmd /memory**[**: ömür**]   **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **: ömür**]   **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verileri toplamak için
 
 > [!WARNING]
 > Katman etkileşimli profil oluşturma (TIP) verileri, herhangi bir Visual Studio sürümünü kullanarak toplanabilir. Ancak, yalnızca Visual Studio Enterprise'da katman etkileşimli profil oluşturma veri görüntülenebilir.
 >
-> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma (**/trace**) seçeneği.
+> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma ( **/trace**) seçeneği.
 
 Veri örnekleme ile Katman etkileşim verileri toplamak için:
 
@@ -80,7 +80,7 @@ Katman etkileşim verileri ile ölçümlü izleme verilerini toplamak için:
 
 Katman etkileşim verileri ile .NET bellek verileri toplamak için:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>/ Nowait seçeneğini kullanın
 
@@ -88,7 +88,7 @@ Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd**
 
 Profil oluşturma başlamak için:
 
-**vsperfaspnetcmd** [*/Seçenekler*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Seçenekler*] **/nowait**_websiteUrl_
 
 Profil oluşturma sona erdirmek için:
 

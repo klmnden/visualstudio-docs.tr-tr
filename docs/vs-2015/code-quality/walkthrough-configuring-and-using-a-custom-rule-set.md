@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
 ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63383414"
@@ -49,7 +49,7 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
   
 1. Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.  
   
-2. İçinde **yeni proje** iletişim kutusunun **proje türleri**, tıklayın **Visual C#**.  
+2. İçinde **yeni proje** iletişim kutusunun **proje türleri**, tıklayın **Visual C#** .  
   
 3. Altında **Visual C#** seçin **sınıf kitaplığı**.  
   
@@ -140,7 +140,7 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
   
 2. İçinde **özellikleri** sekmesinde **Kod Analizi**.  
   
-    İçinde **bu kural kümesini Çalıştır** aşağı açılan listesinde, tıklayın  **\<Gözat... >**. Kodu projenizin kök klasörüne gidin ve ardından **MyCustomRuleSet.ruleset**. Önceki yordamda oluşturduğunuz yeni bir kural kümesi budur.  
+    İçinde **bu kural kümesini Çalıştır** aşağı açılan listesinde, tıklayın  **\<Gözat... >** . Kodu projenizin kök klasörüne gidin ve ardından **MyCustomRuleSet.ruleset**. Önceki yordamda oluşturduğunuz yeni bir kural kümesi budur.  
   
 3. Üzerinde **dosya** menüsünde tıklatın **Kaydet** proje yapılandırmanızı kaydetmek için. Özel kural kümesi projenizle artık kullanılabilir.  
   

@@ -141,7 +141,7 @@ Bu kılavuzda, Microsoft .NET Framework tasarım yönergeleri ile uyumluluk içi
 
    1. Seçin **derlemeyi imzalamayı** onay kutusu.
 
-   1. İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >**.
+   1. İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >** .
 
       **Katı ad anahtarı oluştur** iletişim kutusu görüntülenir.
 

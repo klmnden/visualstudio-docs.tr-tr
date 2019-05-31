@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082054"
@@ -47,7 +47,7 @@ Takım projesi için iade ilkesiyle kod projeleri için Kod Analizi ayarları, e
   
 3. Tıklayın **Kod Analizi**.  
   
-4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
+4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .  
   
 5. İçinde **açık** iletişim kutusunda, İade İlkesi kural kümesi dosyası belirtin.  
   
@@ -65,6 +65,6 @@ Takım projesi için iade ilkesiyle kod projeleri için Kod Analizi ayarları, e
   
 5. Kod projesi için özellikleri iletişim kutusunu açmak ve görüntülemek **Kod Analizi** sayfası.  
   
-6. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
+6. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .  
   
 7. İçinde **açık** iletişim kutusunda, kural kümesi dosyası belirtin.

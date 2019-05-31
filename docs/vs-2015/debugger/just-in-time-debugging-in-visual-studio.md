@@ -102,7 +102,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 
      Bir Windows Forms uygulamasına etkinleştirme Just-ın-Time hata ayıklama için aşağıdaki ek adımları gerçekleştirmeniz gerekir:
 
-2. Ayarlama `jitDebugging` değerini `true` içinde `system.windows.form` machine.config bölümünde veya  *\<uygulama adı >*. exe.config dosyası:
+2. Ayarlama `jitDebugging` değerini `true` içinde `system.windows.form` machine.config bölümünde veya  *\<uygulama adı >* . exe.config dosyası:
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  Altında **olası hata ayıklayıcıları**, durumunda olduklarını görmüş olmalısınız **Microsoft Visual Studio 2015 yeni bir örneğini** satır seçili. Zaten seçili değilse, şimdi seçin.
 
- Pencerenin en altında **seçili hata ayıklayıcısını kullanarak hata ayıklamak istiyor musunuz?**, tıklayın **Evet**.
+ Pencerenin en altında **seçili hata ayıklayıcısını kullanarak hata ayıklamak istiyor musunuz?** , tıklayın **Evet**.
 
  ThrowsNullException projeyi Visual Studio'nun yeni bir örneğinde yürütme özel durum oluşturan satırında durduruldu ile açar:
 

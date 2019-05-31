@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110043"
@@ -33,7 +33,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
   
 1. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2. Şablonlar listesinde genişletin **Visual C++**, **Windows Store**ve ardından **DLL (Windows Store apps)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.  
+2. Şablonlar listesinde genişletin **Visual C++** , **Windows Store**ve ardından **DLL (Windows Store apps)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.  
   
 3. NativeMath.h aşağıdaki kodu eşleşecek şekilde güncelleştirin.  
   
@@ -61,7 +61,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
   
 1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle**, **yeni proje**.  
   
-2. Şablonlar listesinde genişletin **Visual C#**, **genişletilebilirlik**ve ardından **VSIX paketi**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.  
+2. Şablonlar listesinde genişletin **Visual C#** , **genişletilebilirlik**ve ardından **VSIX paketi**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.  
   
 3. VSIX bildirim Tasarımcısı göründüğünde, kapatın.  
   
@@ -145,7 +145,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
   
 1. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2. Şablonlar listesinde genişletin **Visual C++**, **Windows Store**ve ardından **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
+2. Şablonlar listesinde genişletin **Visual C++** , **Windows Store**ve ardından **boş uygulama**. İçinde **adı** kutusunda, belirtin **NativeMathSDKSample**ve ardından **Tamam** düğmesi.  
   
 3. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathSDKSample** proje ve ardından **Ekle**, **başvuru**.  
   

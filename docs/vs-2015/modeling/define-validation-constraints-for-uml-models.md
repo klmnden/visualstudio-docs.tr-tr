@@ -109,7 +109,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
          **Kaynak** = **mevcut çözümde bir proje**  
   
-         **Proje** = *, sınıf kitaplığı projesi*  
+         **Proje** =  *, sınıf kitaplığı projesi*  
   
 #### <a name="to-define-the-validation-class"></a>Doğrulama sınıfını tanımlamak için  
   
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
   
     1. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
   
-    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\** _projeniz_ **.vsix**  
   
 2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   

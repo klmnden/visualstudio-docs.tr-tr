@@ -61,14 +61,14 @@ ms.locfileid: "63438899"
   
  Ayrıca **/Trace** .NET bellek verileri ile ayrıntılı zamanlama bilgileri içerecek şekilde seçeneği:  
   
- **vsperfaspnetcmd /memory**[**: ömür**]   **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **: ömür**]   **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verileri toplamak için  
   
 > [!WARNING]
 > Katman etkileşimli profil oluşturma (TIP) veri kullanarak toplanması [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Ancak, katman etkileşimli profil oluşturma veri yalnızca görüntülenebilir [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ve [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma (**/trace**) seçeneği.  
+> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma ( **/trace**) seçeneği.  
   
  Veri örnekleme ile Katman etkileşim verileri toplamak için:  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438899"
   
  Katman etkileşim verileri ile .NET bellek verileri toplamak için:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> / Nowait seçeneğini kullanma  
  Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Döndürülecek komut istemi zorlamak için aşağıdaki sözdizimi seçeneğini kullanabilirsiniz. Ardından, komut istemi penceresinde diğer işlemleri gerçekleştirebilirsiniz. Profil oluşturma sona erdirmek için kullanmak **/shutdown** seçeneği ayrı bir **vsperfaspnetcmd** komutu.  
   
  Profil oluşturma başlamak için:  
   
- **vsperfaspnetcmd** [*/Seçenekler*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Seçenekler*] **/nowait**_websiteUrl_  
   
  Profil oluşturma sona erdirmek için:  
   

@@ -29,7 +29,7 @@ ms.locfileid: "65698023"
   
 1. İçinde **DSL Gezgini**, özel bir öznitelik eklemek istediğiniz öğeyi seçin.  
   
-2. İçinde **özellikleri** penceresi, sonraki **özel öznitelikler** özelliği, Gözat'a tıklayın (**...** ) simgesi.  
+2. İçinde **özellikleri** penceresi, sonraki **özel öznitelikler** özelliği, Gözat'a tıklayın ( **...** ) simgesi.  
   
      **Düğmeye tıklandığında öznitelikleri Düzenle** iletişim kutusu açılır.  
   

@@ -29,7 +29,7 @@ Hızlı Eylemler Bu bölümde, bir derleme başarısız olmasına neden olan kod
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Doğru yanlış yazılmış sembol veya anahtar sözcüğü
 
-Bir tür veya Visual Studio'da anahtar sözcüğü yanlışlıkla yazarsanız, bu hızlı işlem otomatik olarak bunu sizin için düzeltir. Ampul menüsü bu öğeleri görürsünüz **"değişiklik '*yanlış word*'to'*düzeltmek word*'**. Örneğin:
+Bir tür veya Visual Studio'da anahtar sözcüğü yanlışlıkla yazarsanız, bu hızlı işlem otomatik olarak bunu sizin için düzeltir. Ampul menüsü bu öğeleri görürsünüz **"değişiklik '*yanlış word*'to'*düzeltmek word*'** . Örneğin:
 
 ```csharp
 // Before

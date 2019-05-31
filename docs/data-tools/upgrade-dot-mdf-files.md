@@ -23,7 +23,7 @@ ms.locfileid: "62565166"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 
-Bu konu, bir veritabanı dosyası yükseltme seçenekleri açıklar (*.mdf*) Visual Studio'nun daha yeni bir sürümünü yükledikten sonra. Yönergeler için aşağıdaki görevleri içerir:
+Bu konu, bir veritabanı dosyası yükseltme seçenekleri açıklar ( *.mdf*) Visual Studio'nun daha yeni bir sürümünü yükledikten sonra. Yönergeler için aşağıdaki görevleri içerir:
 
 - Yükseltme daha yeni bir SQL Server Express LocalDB sürümünü kullanmak için bir veritabanı dosyası
 
@@ -33,7 +33,7 @@ Bu konu, bir veritabanı dosyası yükseltme seçenekleri açıklar (*.mdf*) Vis
 
 - Varsayılan veritabanı altyapısı SQL Server Express olun
 
-Bir veritabanı dosyasını içeren bir projeyi açmak için Visual Studio'yu kullanabilirsiniz (*.mdf*) veya SQL Server Express LocalDB daha eski bir sürümü kullanılarak oluşturuldu. Ancak, projenizi Visual Studio'da geliştirmeye devam etmek için bu sürüm veya SQL Server Express LocalDB Visual Studio ile aynı makinede yüklü olmalıdır veya veritabanı dosyasını yükseltmeniz gerekir. Veritabanını yükseltirseniz, veya SQL Server Express LocalDB daha eski sürümleri kullanılarak erişmek mümkün olmayacaktır.
+Bir veritabanı dosyasını içeren bir projeyi açmak için Visual Studio'yu kullanabilirsiniz ( *.mdf*) veya SQL Server Express LocalDB daha eski bir sürümü kullanılarak oluşturuldu. Ancak, projenizi Visual Studio'da geliştirmeye devam etmek için bu sürüm veya SQL Server Express LocalDB Visual Studio ile aynı makinede yüklü olmalıdır veya veritabanı dosyasını yükseltmeniz gerekir. Veritabanını yükseltirseniz, veya SQL Server Express LocalDB daha eski sürümleri kullanılarak erişmek mümkün olmayacaktır.
 
 Ayrıca dosya sürümü SQL Server Express veya şu anda yüklü olan LocalDB örneği ile uyumlu değilse veya SQL Server Express LocalDB önceki bir sürümü ile oluşturulmuş bir veritabanı dosyanız yükseltme istenebilir. Sorunu çözmek için Visual Studio dosyayı yükseltme yapmanızı ister.
 

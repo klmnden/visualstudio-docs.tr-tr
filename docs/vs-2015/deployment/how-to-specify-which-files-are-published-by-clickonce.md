@@ -32,15 +32,15 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)
   
  Dosyaları bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama yönetilen **uygulama dosyaları** iletişim kutusu, erişilebilir **Yayımla** sayfasının **Proje Tasarımcısı**.  
   
- Başlangıçta, adlı tek bir dosya grubu var. **(gerekli)**. Ek dosya grupları oluşturun ve dosyalarını atayabilirsiniz. Değiştiremezsiniz **indirme grubu** uygulamayı çalıştırmak gerekli olan dosyalar için. Örneğin, uygulamanın .exe veya dosyaları veri dosyalarını ait olarak işaretledi **(gerekli)** grubu.  
+ Başlangıçta, adlı tek bir dosya grubu var. **(gerekli)** . Ek dosya grupları oluşturun ve dosyalarını atayabilirsiniz. Değiştiremezsiniz **indirme grubu** uygulamayı çalıştırmak gerekli olan dosyalar için. Örneğin, uygulamanın .exe veya dosyaları veri dosyalarını ait olarak işaretledi **(gerekli)** grubu.  
   
- Yayımlama durumu varsayılan bir dosyanın değeri ile etiketlenir **(otomatik)**. Örneğin, uygulamanın .exe yayımla durumuna sahip **Ekle (otomatik)** varsayılan olarak.  
+ Yayımlama durumu varsayılan bir dosyanın değeri ile etiketlenir **(otomatik)** . Örneğin, uygulamanın .exe yayımla durumuna sahip **Ekle (otomatik)** varsayılan olarak.  
   
  İle dosyaları **derleme eylemi** özelliğini **içerik** uygulama dosyaları belirlenmiştir ve varsayılan olarak dahil olarak işaretlenir. Bunlar eklenebilen, hariç veya veri dosyaları olarak işaretlenmiş. Özel durumlar aşağıdaki gibidir:  
   
 - SQL veritabanı (.mdf ve .mdb) dosyalarını ve XML dosyaları gibi veri dosyalarını varsayılan veri dosyaları olarak işaretlenir.  
   
-- Bir başvuru eklediğinizde, derlemeleri (.dll dosyaları) başvurular gibi atanır: Varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul derleme olarak işaretlenmiş (**önkoşul (otomatik)**), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)**) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (.ocx dosyası) olarak yalnızca şu durumlarda onun **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
+- Bir başvuru eklediğinizde, derlemeleri (.dll dosyaları) başvurular gibi atanır: Varsa **Yereli Kopyala** olduğu **False**, varsayılan olarak bir önkoşul derleme olarak işaretlenmiş (**önkoşul (otomatik)** ), bulunmalıdır GAC'de uygulama yüklenmeden önce. Varsa **Yereli Kopyala** olduğu **True**, derleme varsayılan olarak bir uygulama derleme olarak işaretlenir (**Ekle (otomatik)** ) ve yükleme sırasında uygulama klasörüne kopyalanır. Bir COM başvurusu görünür **uygulama dosyaları** iletişim kutusu (.ocx dosyası) olarak yalnızca şu durumlarda onun **yalıtılmış** özelliği **True**. Varsayılan olarak dahil edilir.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Uygulama dosyaları iletişim kutusu için dosyaları ekleme  
   

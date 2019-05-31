@@ -63,7 +63,7 @@ ms.locfileid: "63438582"
 
 1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Ribbon (XML)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Ribbon (XML)** .
 
 3. Yeni Şeridin adını değiştirmek **MyRibbon**, tıklatıp **Ekle**.
 

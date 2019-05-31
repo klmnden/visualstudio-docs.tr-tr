@@ -54,9 +54,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Ekleme:** `PID` Belirtilen işlem profil oluşturma başlar.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID` Durdurur veya belirtilen işlem için profil oluşturmaya başlar.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Durdurur veya belirtilen işlem için profil oluşturmaya başlar.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Durdurur veya (yalnızca izleme metodunu) belirtilen işlem için profil oluşturmaya başlar.
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Durdurur veya (yalnızca izleme metodunu) belirtilen işlem için profil oluşturmaya başlar.
 
 ## <a name="example"></a>Örnek
  Bu örnekte, **GlobalOff** ve **GlobalOn** seçenekleri uygulama başlatma ve kapatma için profil oluşturma verileri toplama önlemek üzere kullanılır.

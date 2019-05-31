@@ -39,7 +39,7 @@ ms.locfileid: "62548381"
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
-Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) (**Ctrl**+**F** veya **Ctrl** + **H**) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  veya **Ctrl**+**Shift**+**H**). Ayrıca Bul ve Değiştir yalnızca *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
+Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) (**Ctrl**+**F** veya **Ctrl** + **H**) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  veya **Ctrl**+**Shift**+**H**). Ayrıca Bul ve Değiştir yalnızca *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)* .
 
 > [!TIP]
 > Değişkenler ve yöntemler gibi kod simgeleri yeniden adlandırma, daha iyi *[yeniden düzenleme](../ide/reference/rename.md)* Bul ve Değiştir kullanımı çok bunları. Yeniden düzenleme, akıllı ve Bul ve Değiştir körüne tüm örnekleri değiştirir ancak kapsam anlar.
@@ -62,7 +62,7 @@ Geçerli belgede, geçerli çözüm veya özel bir klasör kümesi için arama k
 
 Yanındaki düğmeyi seçerek değiştirme seçeneklerine erişebilirsiniz **Bul** metin kutusu. Aynı anda bir tane değişiklik yapmaya karar **Değiştir** düğmesinin yanındaki **değiştirin** metin kutusu. Tüm eşleşmeleri değiştirmek için seçin **Tümünü Değiştir** düğmesi.
 
-Eşleşmeler için vurgulama rengini değiştirmek için seçin **Araçları** menüsünde **seçenekleri**ve ardından **ortam**seçip **yazı tipleri ve renkler** . İçinde **ayarlarını göster** listesinden **metin düzenleyici**ve ardından **görüntü öğeleri** listesinden **Vurgu Bul (uzantı)**.
+Eşleşmeler için vurgulama rengini değiştirmek için seçin **Araçları** menüsünde **seçenekleri**ve ardından **ortam**seçip **yazı tipleri ve renkler** . İçinde **ayarlarını göster** listesinden **metin düzenleyici**ve ardından **görüntü öğeleri** listesinden **Vurgu Bul (uzantı)** .
 
 ### <a name="search-tool-windows"></a>Arama Araç pencereleri
 
@@ -92,7 +92,7 @@ Seçerek bir arama kapsamı tanımlayabilirsiniz **arama klasörlerini Seç** d�
 
 ### <a name="create-custom-component-sets"></a>Özel bileşen kümeleri oluşturma
 
-Seçerek bileşen kümelerini arama Kapsamınız olarak tanımlayabilirsiniz **özel bileşen kümesini Düzenle** düğmesinin yanındaki **konum** kutusu. Yüklü .NET veya COM bileşenlerini, çözümünüze veya herhangi bir derleme veya tür kitaplığı dahil Visual Studio projeleri belirtebilirsiniz (*.dll*, *.tlb*, *.olb*, *.exe*, veya *.ocx*). Başvurular aramak için seçin **başvurularda bak** kutusu.
+Seçerek bileşen kümelerini arama Kapsamınız olarak tanımlayabilirsiniz **özel bileşen kümesini Düzenle** düğmesinin yanındaki **konum** kutusu. Yüklü .NET veya COM bileşenlerini, çözümünüze veya herhangi bir derleme veya tür kitaplığı dahil Visual Studio projeleri belirtebilirsiniz ( *.dll*, *.tlb*, *.olb*, *.exe*, veya *.ocx*). Başvurular aramak için seçin **başvurularda bak** kutusu.
 
 ## <a name="multi-caret-selection"></a>Birden çok giriş işaretini seçimi
 
@@ -121,10 +121,10 @@ Birden çok giriş işaretini seçme davranışları için aşağıdaki anahtar 
 |**CTRL**+**Alt** + tıklayın|İkincil şapka işareti Ekle|
 |**CTRL**+**Alt** + çift tıklayın|İkincil sözcük seçimi Ekle|
 |**CTRL**+**Alt** +'a tıklayın ve sürükleyin|İkincil bir seçim ekleyin|
-|**Shift**+**Alt**+**.**|Sonraki eşleşen metnin bir seçimi olarak Ekle|
-|**CTRL**+**Shift**+**Alt**+**,**|Seçimlerin tüm eşleşen metni Ekle|
-|**Shift**+**Alt**+**,**|Son seçilen oluşum Kaldır|
-|**CTRL**+**Shift**+**Alt**+**.**|Sonraki eşleşen atla|
+|**Shift**+**Alt**+ **.**|Sonraki eşleşen metnin bir seçimi olarak Ekle|
+|**CTRL**+**Shift**+**Alt**+ **,**|Seçimlerin tüm eşleşen metni Ekle|
+|**Shift**+**Alt**+ **,**|Son seçilen oluşum Kaldır|
+|**CTRL**+**Shift**+**Alt**+ **.**|Sonraki eşleşen atla|
 |**Alt** + tıklayın|Seçim kutusu Ekle|
 |**ESC** veya tıklayın|Tüm seçimleri Temizle|
 

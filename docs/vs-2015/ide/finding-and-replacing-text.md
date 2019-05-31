@@ -61,7 +61,7 @@ Bul ve Visual Studio Kod Düzenleyicisi ve belirli metin temelli çıktı pencer
   
  Yanındaki düğmeyi seçerek değiştirme seçeneklerine erişebilirsiniz **Bul** metin kutusu. Aynı anda bir tane değişiklik yapmaya karar **Değiştir** düğmesinin yanındaki **değiştirin** metin kutusu. Tüm eşleşmeleri değiştirmek için seçin **Tümünü Değiştir** düğmesi.  
   
- Eşleşmeler için vurgulama rengini değiştirmek için seçin **Araçları** menüsünde **seçenekleri**ve ardından **ortam**seçip **yazı tipleri ve renkler** . İçinde **ayarlarını göster** listesinden **metin düzenleyici**ve ardından **görüntü öğeleri** listesinden **Vurgu Bul (uzantı)**.  
+ Eşleşmeler için vurgulama rengini değiştirmek için seçin **Araçları** menüsünde **seçenekleri**ve ardından **ortam**seçip **yazı tipleri ve renkler** . İçinde **ayarlarını göster** listesinden **metin düzenleyici**ve ardından **görüntü öğeleri** listesinden **Vurgu Bul (uzantı)** .  
   
 ### <a name="searching-tool-windows"></a>Aracı Windows arama  
  Kullanabileceğiniz **bulmak** gibi kod veya metin pencerelerinde denetim **çıkış** windows, ve **sonuçları Bul** seçerek windows **Bul ve Değiştir**üzerinde **Düzenle** menüsü ya da (CTRL + F).  

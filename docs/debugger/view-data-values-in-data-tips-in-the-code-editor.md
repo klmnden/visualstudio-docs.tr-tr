@@ -75,7 +75,7 @@ Tüm veri ipuçlarını üzerinde kapatmak için **hata ayıklama** menüsünde 
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Belirli bir dosya için tüm veri ipuçlarını Kapat
 
-Tüm veri ipuçlarını için belirli bir dosya çubuğunda kapatmak için **hata ayıklama** menüsünde **Temizle tüm veri ipuçlarını sabitlenmiş için \<Filename >**.
+Tüm veri ipuçlarını için belirli bir dosya çubuğunda kapatmak için **hata ayıklama** menüsünde **Temizle tüm veri ipuçlarını sabitlenmiş için \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Genişletin ve bilgilerini Düzenle
 DataTips, bir dizi, yapı veya üyelerini görüntülemek için bir nesne genişletmek için kullanabilirsiniz. Bir DataTip değişkeninden değerini de düzenleyebilirsiniz.

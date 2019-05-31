@@ -129,7 +129,7 @@ MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bi
 
    - Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".
 
-   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\***
+   - DSL projesi erişiminiz varsa, derleme dosyası dizini altında bulabilirsiniz **Dsl\bin\\\\** *
 
    - DSL VSIX dosyasına erişimi varsa, derleme ".zip olarak" dosya adı uzantısı, VSIX dosyasını değiştirerek bulabilirsiniz. .Zip dosyasını açın.
 

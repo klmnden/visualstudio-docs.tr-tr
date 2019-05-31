@@ -43,7 +43,7 @@ Bu kod oluşturma için geçerlidir:
 
 1. Ardından, aşağıdakilerden birini yapın:
 
-   - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+   - Tuşuna **Ctrl**+ **.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
    - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 

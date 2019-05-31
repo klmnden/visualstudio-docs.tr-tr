@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049743"
@@ -116,7 +116,7 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
     1. İçinde **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **klasörü Windows Gezgini'nde Aç**.  
   
-    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\** _projeniz_ **.vsix**  
   
 2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   

@@ -63,9 +63,9 @@ ms.locfileid: "65687322"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **SecuredTypeWithFields örneği oluşturuluyor.**
+ **SecuredTypeWithFields örneği oluşturuluyor.** 
 **Güvenli tür alanları: 22, 33**
-**güvenli türün alan değiştiriliyor...**
+**güvenli türün alan değiştiriliyor...** 
 **Önbelleğe nesne alanları: 99, 33**
 ## <a name="related-rules"></a>İlgili kuralları
  [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)

@@ -60,7 +60,7 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 1. Yeni bir ASP.NET MVC uygulaması oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 içinde yazın **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Web uygulaması (.NET oluşturma Framework)**. Görüntülenen iletişim kutusunda, projeyi adlandırın **MyASPApp**ve ardından **Oluştur**. Seçin **MVC** ve **Oluştur**.
+    Visual Studio 2019 içinde yazın **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Web uygulaması (.NET oluşturma Framework)** . Görüntülenen iletişim kutusunda, projeyi adlandırın **MyASPApp**ve ardından **Oluştur**. Seçin **MVC** ve **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Visual Studio 2017'de bunun tercih **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Web uygulaması**. İçinde **ASP.NET 4.5.2** şablonları bölümünden **MVC**. Emin olun **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.)
@@ -234,7 +234,7 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 
 7. Tıklayın **ekleme**
 
-8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >**.
+8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >** .
 
     ASP.NET web sayfası görmeniz gerekir.
 9. Çalışan ASP.NET uygulama bağlantısını tıklayın **hakkında** sayfası.

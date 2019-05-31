@@ -60,7 +60,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
    > [!NOTE]
    > Yönteminiz yalnızca belirli durumlarda çağrılır ve kesme noktaları otomatik olarak çalışmaz. Daha fazla bilgi için [katman hatalarını ayıklamayı doğrulama](#debugging).  
   
-5. Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası *bin\\*. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
+5. Ana örneğine uzantıyı yüklemek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası *bin\\* . Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ayrı bir VSIX'e katman Doğrulayıcı ekleme  
  Katman doğrulayıcılarının, komutların ve diğer uzantıların bulunduğu bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyiciler için ayrı projeler oluşturmanızı öneririz. Diğer modelleme uzantısı türleri hakkında daha fazla bilgi için bkz: [genişletmek UML modellerini ve diyagramları](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ Kaynak kodunun katman diyagramındaki bağımlılıklar için uygun olduğunu do
   
 2. Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. VSIX projesi eklemeniz gerekiyorsa, şu adımları izleyin:  
   
-    1. İçinde **yeni proje** iletişim kutusunda **Visual C#**, **genişletilebilirlik**, **VSIX projesi**.  
+    1. İçinde **yeni proje** iletişim kutusunda **Visual C#** , **genişletilebilirlik**, **VSIX projesi**.  
   
     2. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **başlangıç projesi olarak ayarla**.  
   

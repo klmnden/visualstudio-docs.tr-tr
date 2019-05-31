@@ -29,7 +29,7 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
 
 ## <a name="create-a-test-project"></a>Bir test projesi oluşturma
 
-Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış UI testi oluşturur. İki sayıyı toplar ve toplamı doğru olduğunu doğrulamak için bir onay kullanır. Ardından, onaylama işlemi ve iki sayı parametre değerlerini virgülle ayrılmış bir değeri depolanan ve veri odaklı olmak kodlanmıştır (*.csv*) dosyası.
+Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış UI testi oluşturur. İki sayıyı toplar ve toplamı doğru olduğunu doğrulamak için bir onay kullanır. Ardından, onaylama işlemi ve iki sayı parametre değerlerini virgülle ayrılmış bir değeri depolanan ve veri odaklı olmak kodlanmıştır ( *.csv*) dosyası.
 
 ### <a name="step-1---create-a-coded-ui-test"></a>1. adım - kodlanmış UI testi oluşturma
 

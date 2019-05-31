@@ -46,7 +46,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
 - Nasıl windows gruplandırma, yakınlaştırma ve diğer ilgili özellikler Ölçekle başa.
 
 ## <a name="prerequisites"></a>Önkoşullar
- Bu izlenecek yolda olduğunu varsayar **yalnızca kendi kodum** etkin (Bu, Visual Studio'nun daha yeni sürümlerinde varsayılan olarak etkindir). Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **hata ayıklama** düğümünü **genel**ve ardından **etkinleştir Yalnızca benim kodum (sadece yönetilen)**. Bu özelliği ayarlamazsanız, bu izlenecek yolda kullanmaya devam edebilirsiniz, ancak sonuçlarınızı gösterilenlerden farklı olabilir.
+ Bu izlenecek yolda olduğunu varsayar **yalnızca kendi kodum** etkin (Bu, Visual Studio'nun daha yeni sürümlerinde varsayılan olarak etkindir). Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **hata ayıklama** düğümünü **genel**ve ardından **etkinleştir Yalnızca benim kodum (sadece yönetilen)** . Bu özelliği ayarlamazsanız, bu izlenecek yolda kullanmaya devam edebilirsiniz, ancak sonuçlarınızı gösterilenlerden farklı olabilir.
 
 ## <a name="c-sample"></a>C# örneği
  C# örneği kullanıyorsanız, bu kılavuzda Ayrıca Dış kod gizlidir varsayılır. Dış kod görüntülenip görüntülenmeyeceğini geçiş yapmak için sağ **adı** tablo üstbilgisinin **çağrı yığını** penceresinde ve sonra seçin veya temizleyin **harici kodu Göster**. Bu özelliği ayarlamazsanız, bu izlenecek yolda kullanmaya devam edebilirsiniz, ancak sonuçlarınızı gösterilenlerden farklı olabilir.
@@ -65,7 +65,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++** ), seçin **şablonları**ve ardından:
 
     - İçin C# veya Visual Basic seçin, **oluştur yeni konsol uygulaması (.NET Framework) projesi** ya da C# veya Visual Basic. Görünen iletişim kutusunda **Oluştur**.
     - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma** C++ için. Görünen iletişim kutusunda **Oluştur**.
@@ -75,9 +75,9 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda, aşağıdakileri seçin:
 
-    - İçin bir C# uygulama altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
-    - Bir Visual Basic uygulamasının altında **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
-    - Bir C++ uygulama altındaki **Visual C++**, seçin **Windows Masaüstü**,, seçip **Windows konsol uygulaması**.
+    - İçin bir C# uygulama altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)** .
+    - Bir Visual Basic uygulamasının altında **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)** .
+    - Bir C++ uygulama altındaki **Visual C++** , seçin **Windows Masaüstü**,, seçip **Windows konsol uygulaması**.
 
     Ardından, bir ad yazın veya varsayılan adı kullanın ve tıklayın **Tamam**.
     ::: moniker-end

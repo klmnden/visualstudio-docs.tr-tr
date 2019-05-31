@@ -72,9 +72,9 @@ ms.locfileid: "65687396"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **İsteğe bağlı: Arayanın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur.**
-**LinkDemand: Arayanın Reddet LinkDemand olarak onaylanan izni olan etkisi yoktur.**
-**LinkDemand: Arayanın Reddet LinkDemand ile korunan kodla etkisi yoktur.**
+ **İsteğe bağlı: Arayanın Reddet isteğe bağlı olarak onaylanan izni olan etkisi yoktur.** 
+**LinkDemand: Arayanın Reddet LinkDemand olarak onaylanan izni olan etkisi yoktur.** 
+**LinkDemand: Arayanın Reddet LinkDemand ile korunan kodla etkisi yoktur.** 
 **LinkDemand: Bu verme LinkDemand ile korunan kodla etkisi yoktur.**
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName><xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

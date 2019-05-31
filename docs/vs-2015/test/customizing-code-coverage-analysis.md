@@ -101,7 +101,7 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ### <a name="regular-expressions"></a>Normal ifadeler  
  Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanarak](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:  
   
-1. **\.\\*** herhangi bir karakter dizesi ile eşleşir.  
+1. **\.\\** * herhangi bir karakter dizesi ile eşleşir.  
   
 2. **\\.** eşleşen bir nokta ".")  
   

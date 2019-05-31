@@ -43,7 +43,7 @@ ms.locfileid: "62967402"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint Proje öğeleri için tanımlayıcılar
  Her SharePoint proje öğesi karşılık gelen bir dize tanımlayıcısı var. Aşağıdaki görevleri gerçekleştirmek istiyorsanız, bir proje öğesi için olan tanımlayıcıyla bilmeniz gerekir:
 
-- Proje öğesi için bir uzantı oluşturun. Bu durumda, oluşturucuya genişletmek istediğiniz proje öğesi için olan tanımlayıcıyla geçmelidir <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Bir uzantı tüm öğe türlerine proje oluşturmak için geçirmek **\\*** dize değeri.
+- Proje öğesi için bir uzantı oluşturun. Bu durumda, oluşturucuya genişletmek istediğiniz proje öğesi için olan tanımlayıcıyla geçmelidir <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Bir uzantı tüm öğe türlerine proje oluşturmak için geçirmek **\\** * dize değeri.
 
 - Proje öğesi, program aracılığıyla bir projeye ekleyin. Bu durumda, proje öğesine tanımlayıcısı geçmelidir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> yöntemi.
 

@@ -139,7 +139,7 @@ Sembol dosyası olarak da bilinen program veritabanı (.pdb) dosyası sınıflar
 
 - Arama yollarını değiştirmek için seçilmeyen bir yolu seçin veya **yeni** ve yeni bir yol girin. Seçin **yük** yolları tekrar aramak ve bulunursa sembol dosyasını yüklemek için.
 
-- Seçin **Gözat ve Bul**_yürütülebilir dosya adı_**...**  herhangi bir sembol seçeneklerini geçersiz kılmak ve arama yollarını yeniden deneyin. Sembol dosyası bulunursa yüklenir veya sembol dosyasını el ile seçmeniz için bir Dosya Gezgini görüntülenir.
+- Seçin **Gözat ve Bul**_yürütülebilir dosya adı_ **...**  herhangi bir sembol seçeneklerini geçersiz kılmak ve arama yollarını yeniden deneyin. Sembol dosyası bulunursa yüklenir veya sembol dosyasını el ile seçmeniz için bir Dosya Gezgini görüntülenir.
 
 - Seçin **sembol ayarlarını değiştir...**  görüntülenecek **hata ayıklama** / **sembolleri** VS Seçenekleri iletişim kutusu sayfası.
 

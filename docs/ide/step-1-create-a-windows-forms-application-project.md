@@ -35,7 +35,7 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
 
 2. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusu.
 
-3. Şablonlar listesinde **Windows Forms uygulaması (.NET Framework)**. Yeni form adı **pictureviewer olarak**ve ardından **Tamam** düğmesi.
+3. Şablonlar listesinde **Windows Forms uygulaması (.NET Framework)** . Yeni form adı **pictureviewer olarak**ve ardından **Tamam** düğmesi.
 
     >[!NOTE]
     >Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.<br/><br/>![.NET masaüstü geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
@@ -96,7 +96,7 @@ Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm için t
     - **Özellikler penceresi** Bu pencerede diğer pencerelerde seçtiğiniz öğelerin özelliklerini değiştirebilirsiniz. Form1 seçerseniz, örneğin, alt başlık ayarlayarak değiştirebileceğiniz **metin** özelliğini değiştirebilirsiniz arka plan rengi ayarlayarak **Backcolor** özelliği.
 
     > [!NOTE]
-    > Üst satırı **Çözüm Gezgini** gösterir **çözüm 'Pictureviewer olarak' (1 proje)**, Visual Studio çözüm için oluşturduğunuz anlamına gelir. Bir çözüm birden fazla proje içerebilir ancak şu an için yalnızca bir proje içeren çözümlerle çalışacaksınız.
+    > Üst satırı **Çözüm Gezgini** gösterir **çözüm 'Pictureviewer olarak' (1 proje)** , Visual Studio çözüm için oluşturduğunuz anlamına gelir. Bir çözüm birden fazla proje içerebilir ancak şu an için yalnızca bir proje içeren çözümlerle çalışacaksınız.
 
 1. Menü çubuğunda, **dosya** > **Tümünü Kaydet**.
 

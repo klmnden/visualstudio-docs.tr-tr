@@ -24,7 +24,7 @@ Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazl
 
  Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.
 
-1. Yerel ayar adı sonra adlı bir klasör oluşturun *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+1. Yerel ayar adı sonra adlı bir klasör oluşturun *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* .
 
 2. Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.
 

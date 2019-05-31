@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038672"
@@ -39,7 +39,7 @@ VSIX proje şablonu, bir uzantı oluşturmak veya mevcut bir uzantı için dağ�
   
 2. Boş bir VSIX projesi oluşturun.  
   
-     Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**. Şunlardan birini seçin **Visual Basic** veya **Visual C#**. Seçili düğümü altında seçin **genişletilebilirlik**ve ardından **VSIX projesi**.  
+     Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**. Şunlardan birini seçin **Visual Basic** veya **Visual C#** . Seçili düğümü altında seçin **genişletilebilirlik**ve ardından **VSIX projesi**.  
   
 3. .Zip dosyasını projeye ekleyin. Ayarlama, **çıkış dizinine Kopyala** özelliğini `Copy Always`.  
   

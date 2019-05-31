@@ -59,7 +59,7 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
   
     - Üzerinde **uygulama** sekmesinde, **hedef Framework'ü** için **4.6.1**.  
   
-    - Üzerinde **hata ayıklama** sekmesinde **harici program Başlat** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.**.  
+    - Üzerinde **hata ayıklama** sekmesinde **harici program Başlat** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.** .  
   
          İçinde **komut satırı bağımsız değişkenleri** kutusuna /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
   
     - Dosyayı kaydedin ve kapatın.  
   
-11. Çözümü oluşturun. Yerleşik dosyaları dağıtılan **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Çözümü oluşturun. Yerleşik dosyaları dağıtılan **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Hata ayıklama başlatılamıyor. Visual Studio ikinci bir örneğini açıldı.  
   

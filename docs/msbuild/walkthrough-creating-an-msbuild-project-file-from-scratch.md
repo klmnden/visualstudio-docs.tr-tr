@@ -51,9 +51,9 @@ Bu izlenecek yol, komut isteminde projeyi oluşturun ve sonuçları inceleyin i�
 
 #### <a name="to-create-the-minimal-application"></a>Minimal uygulamayı oluşturmak için
 
-1. Komut isteminde bu gibi bir durumda uygulamayı oluşturmak istediğiniz klasöre göz atın *\My belgeleri\\*  veya *\Desktop\\*.
+1. Komut isteminde bu gibi bir durumda uygulamayı oluşturmak istediğiniz klasöre göz atın *\My belgeleri\\*  veya *\Desktop\\* .
 
-2. Tür **md HelloWorld** adlı bir alt klasör oluşturmak için *\HelloWorld\\*.
+2. Tür **md HelloWorld** adlı bir alt klasör oluşturmak için *\HelloWorld\\* .
 
 3. Tür **cd HelloWorld** yeni klasöre değiştirmek için.
 
@@ -161,7 +161,7 @@ Derleme hedefindeki Görevler sırayla yürütülür. Bu durumda, Visual C# derl
 
 #### <a name="to-add-msbuild-to-your-path"></a>MSBuild yolunuza dosya eklemek için
 
-- Visual Studio 2013 itibariyle, bulabilirsiniz *MSBuild.exe* MSBuild klasöründe (*%ProgramFiles%\MSBuild* bir 32-bit işletim sisteminde veya *% ProgramFiles (x86) %\MSBuild*64-bit işletim sisteminde).
+- Visual Studio 2013 itibariyle, bulabilirsiniz *MSBuild.exe* MSBuild klasöründe ( *%ProgramFiles%\MSBuild* bir 32-bit işletim sisteminde veya *% ProgramFiles (x86) %\MSBuild*64-bit işletim sisteminde).
 
      Komut isteminde **PATH=%PATH%;%ProgramFiles%\MSBuild ayarlamak** veya **yolu = % PATH %; % ProgramFiles (x86) %\MSBuild**.
 

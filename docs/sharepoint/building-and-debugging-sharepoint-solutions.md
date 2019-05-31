@@ -24,11 +24,11 @@ ms.locfileid: "62988132"
   Genel olarak, derleme ve hata ayıklama SharePoint çözümleri derleme ve hata ayıklama proje türlerinde aynıdır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bu bölümdeki konular, mevcut farkları açıklamaktadır.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>SharePoint çözümleri için proje çıktısı
- SharePoint çözümleri oluşturmak oluşturur derlemeler ve çözüm paketine (*.wsp*) dosyası. Aşağıdaki tabloda, bir yapı sırasında bu dosyaları konumlarını gösterir.
+ SharePoint çözümleri oluşturmak oluşturur derlemeler ve çözüm paketine ( *.wsp*) dosyası. Aşağıdaki tabloda, bir yapı sırasında bu dosyaları konumlarını gösterir.
 
 |Öğe oluştur|Çıktı klasörü|
 |----------------|-------------------|
-|Derleme, program veritabanı (*.pdb*), ve *.wsp* dosyaları.|*\<ProjectName > \bin\debug* veya  *\<ProjectName > \bin\release*|
+|Derleme, program veritabanı ( *.pdb*), ve *.wsp* dosyaları.|*\<ProjectName > \bin\debug* veya  *\<ProjectName > \bin\release*|
 |SharePoint proje öğesi dosyaları.|*\<ProjectName > \pkg\debug* veya  *\<ProjectName > \pkg\release*|
 |Ara dosya oluşturun.|*\<ProjectName > \obj\debug* veya  *\<ProjectName > \obj\release*|
 |Paket Ara dosyaları.|*\<ProjectName > \pkgobj\debug* veya  *\<ProjectName > \pkgobj\release*|

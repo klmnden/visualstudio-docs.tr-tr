@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045661"
@@ -97,7 +97,7 @@ ms.locfileid: "60045661"
   
 - Tüm grupları kurallarında daraltmak için tıklatın **Daralt tüm**.  
   
-- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kurallarını görüntülemek için seçin  **\<yok >**.  
+- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kurallarını görüntülemek için seçin  **\<yok >** .  
   
 - Alan kuralı sütunlar ekleyip için tıklatın **sütun seçenekleri**.  
   

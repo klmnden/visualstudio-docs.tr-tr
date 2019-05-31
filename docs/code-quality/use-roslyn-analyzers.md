@@ -122,7 +122,7 @@ Kural ihlallerinin bastırmak için birden çok yolu vardır:
 
 - Gelen **Kod Düzenleyicisi**
 
-   Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+**.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
+   Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+ **.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
 
    ![Hızlı Eylemler menüsünden tanılama Gizle](media/suppress-diagnostic-from-editor.png)
 

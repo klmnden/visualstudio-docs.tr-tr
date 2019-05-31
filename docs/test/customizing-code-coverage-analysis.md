@@ -45,7 +45,7 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ### <a name="specify-symbol-search-paths"></a>Sembol arama yollarını belirtin
 
-Kod kapsamı sembol dosyalarını gerektirir (*.pdb* dosyaları) derlemeler için. Çözümünüz tarafından oluşturulmuş derlemeler için simge dosyaları genellikle ikili dosyaların yanı sıra varsa ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda *.pdb* dosyaları ikili bitişik olmayabilir ve sembol arama yolu belirtebilirsiniz *.runsettings* dosya.
+Kod kapsamı sembol dosyalarını gerektirir ( *.pdb* dosyaları) derlemeler için. Çözümünüz tarafından oluşturulmuş derlemeler için simge dosyaları genellikle ikili dosyaların yanı sıra varsa ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda *.pdb* dosyaları ikili bitişik olmayabilir ve sembol arama yolu belirtebilirsiniz *.runsettings* dosya.
 
 ```xml
 <SymbolSearchPaths>
@@ -55,7 +55,7 @@ Kod kapsamı sembol dosyalarını gerektirir (*.pdb* dosyaları) derlemeler içi
 ```
 
 > [!NOTE]
-> Sembol çözümleme zaman alabilir özellikle birçok derlemeleri ile bir uzak dosya konumu kullanırken. Bu nedenle, kopyalamayı düşünün *.pdb* aynı yerel konuma ikili dosyaları (*.dll* ve *.exe*) dosyaları.
+> Sembol çözümleme zaman alabilir özellikle birçok derlemeleri ile bir uzak dosya konumu kullanırken. Bu nedenle, kopyalamayı düşünün *.pdb* aynı yerel konuma ikili dosyaları ( *.dll* ve *.exe*) dosyaları.
 
 ### <a name="exclude-and-include"></a>Dahil ve hariç tut
 

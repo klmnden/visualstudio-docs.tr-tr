@@ -64,7 +64,7 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   
     **Yeni Proje** iletişim kutusu görünür.  
   
-3. Altında **yüklü şablonlar**, tıklayın **Visual C#**.  
+3. Altında **yüklü şablonlar**, tıklayın **Visual C#** .  
   
 4. Uygulama türleri listesinde tıklayın **sınıf kitaplığı**.  
   

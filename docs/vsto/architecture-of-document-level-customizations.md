@@ -84,18 +84,18 @@ ms.locfileid: "63440370"
 
 |Excel|Word|
 |-----------|----------|
-|Excel çalışma kitabı (*.xlsx*)<br /><br /> Makro içerebilen Excel çalışma kitabı (*.xlsm*)<br /><br /> Excel İkili çalışma kitabı (*.xlsb*)<br /><br /> Excel 97-2003 çalışma kitabı (*.xls*)<br /><br /> Excel şablonu (*.xltx*)<br /><br /> Makro içerebilen Excel şablonu (*.xltm*)<br /><br /> Excel 97-2003 şablonu (*.xlt*)|Word belgesi (*.docx*)<br /><br /> Makro içerebilen Word belgesi (*.docm*)<br /><br /> Word 97-2003 belgesi (*.doc*)<br /><br /> Word şablonu (*.dotx*)<br /><br /> Makro içerebilen Word şablonu (*.dotm*)<br /><br /> Word 97-2003 şablonu (*.dot*)|
+|Excel çalışma kitabı ( *.xlsx*)<br /><br /> Makro içerebilen Excel çalışma kitabı ( *.xlsm*)<br /><br /> Excel İkili çalışma kitabı ( *.xlsb*)<br /><br /> Excel 97-2003 çalışma kitabı ( *.xls*)<br /><br /> Excel şablonu ( *.xltx*)<br /><br /> Makro içerebilen Excel şablonu ( *.xltm*)<br /><br /> Excel 97-2003 şablonu ( *.xlt*)|Word belgesi ( *.docx*)<br /><br /> Makro içerebilen Word belgesi ( *.docm*)<br /><br /> Word 97-2003 belgesi ( *.doc*)<br /><br /> Word şablonu ( *.dotx*)<br /><br /> Makro içerebilen Word şablonu ( *.dotm*)<br /><br /> Word 97-2003 şablonu ( *.dot*)|
 
- Yönetilen kod uzantıları yalnızca desteklenen biçimlerdeki belgeler için tasarlamanız gerekir. Aksi takdirde, belge uygulamada açıldığında belirli olaylar oluşmayabilir. Örneğin, <xref:Microsoft.Office.Tools.Excel.Workbook.Open> olayı web sayfası veya Excel XML elektronik tablosu biçiminde kaydedilmiş çalışma kitapları ile yönetilen kod uzantıları kullandığınız zaman oluşmaz (*.htm*; *.html*) biçimi.
+ Yönetilen kod uzantıları yalnızca desteklenen biçimlerdeki belgeler için tasarlamanız gerekir. Aksi takdirde, belge uygulamada açıldığında belirli olaylar oluşmayabilir. Örneğin, <xref:Microsoft.Office.Tools.Excel.Workbook.Open> olayı web sayfası veya Excel XML elektronik tablosu biçiminde kaydedilmiş çalışma kitapları ile yönetilen kod uzantıları kullandığınız zaman oluşmaz ( *.htm*; *.html*) biçimi.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml dosya adı uzantılarına sahip Word belgeleri için destek
  Belge düzeyi projesi şablonlarının üzerinde aşağıdaki dosya biçimlerini tabanlı projeler oluşturmaya izin verme:
 
-- Word XML belgesi (*\*xml*).
+- Word XML belgesi ( *\*xml*).
 
-- Word 2003 XML belgesi (*\*xml*).
+- Word 2003 XML belgesi ( *\*xml*).
 
-  Son kullanıcılarınızın bu dosya biçimlerinde özelleştirmeleri kullanmak istiyorsanız, oluşturun ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde belgeyi kaydedebilirsiniz (*\*xml*) biçimi veya Word 2003 XML belgesi (*\*xml*) biçiminde ve özelleştirme beklendiği gibi çalışmayı sürdürecektir.
+  Son kullanıcılarınızın bu dosya biçimlerinde özelleştirmeleri kullanmak istiyorsanız, oluşturun ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde belgeyi kaydedebilirsiniz ( *\*xml*) biçimi veya Word 2003 XML belgesi ( *\*xml*) biçiminde ve özelleştirme beklendiği gibi çalışmayı sürdürecektir.
 
 ## <a name="Components"></a> Özelleştirmelerin bileşenleri
  Temel bir özelleştirme belge ve derleme bileşenleridir. Bu bileşenlerin yanı sıra, Microsoft Office uygulamalarını keşfedin ve yükledikleri nasıl önemli bir rol oynar diğer birkaç bölümü vardır.

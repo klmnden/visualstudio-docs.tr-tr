@@ -31,10 +31,10 @@ ms.locfileid: "63406959"
 
 3. Not Defteri'nde açın *Package.xml* dosya.
 
-4. Bulun **adı** öğesini içeren **http://go.microsoft.com/fwlink**ve URL'yi kopyalayın. Dahil **LinkId** bölümü.
+4. Bulun **adı** öğesini içeren **http://go.microsoft.com/fwlink** ve URL'yi kopyalayın. Dahil **LinkId** bölümü.
 
    > [!NOTE]
-   > Hayır ise **adı** ögesinin **http://go.microsoft.com/fwlink**açın **Product.xml** bulun ve ön koşul için kök klasöründeki dosya **fwlink** dize.
+   > Hayır ise **adı** ögesinin **http://go.microsoft.com/fwlink** açın **Product.xml** bulun ve ön koşul için kök klasöründeki dosya **fwlink** dize.
 
    > [!IMPORTANT]
    > Bazı ön koşullar (örneğin, 32-bit veya 64-bit sistemler için) birden çok yükleme paketine sahiptirler. Birden çok **adı** öğeleri içeren **fwlink**, bunların her biri için kalan adımları yinelemeniz gerekir.

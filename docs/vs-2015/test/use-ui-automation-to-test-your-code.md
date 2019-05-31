@@ -69,7 +69,7 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
 
 1. **Kodlanmış UI testi projesi oluşturun.**
 
-    Kodlanmış UI testleri, kodlanmış UI test projesi içinde yer almalıdır. Kodlanmış UI test projesi yoksa bir tane oluşturun. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje** seçip ya da **Visual Basic** veya **Visual C#**. Ardından, **Test**, **kodlanmış UI testi**.
+    Kodlanmış UI testleri, kodlanmış UI test projesi içinde yer almalıdır. Kodlanmış UI test projesi yoksa bir tane oluşturun. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje** seçip ya da **Visual Basic** veya **Visual C#** . Ardından, **Test**, **kodlanmış UI testi**.
 
    - <em>Göremiyorum **kodlanmış UI testi</em>* proje şablonları.*
 

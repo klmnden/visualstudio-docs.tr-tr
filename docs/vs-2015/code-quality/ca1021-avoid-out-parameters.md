@@ -74,13 +74,13 @@ ms.locfileid: "54784174"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **Değiştirme işaretçi - geçirilen değere göre:**
+ **Değiştirme işaretçi - geçirilen değere göre:** 
 **12345**
 **12345**
 **değiştirme işaretçi, başvuru tarafından geçirilmediğine -:** 
 **12345**
 **12345 ABCDE**
-**dönüş değere göre geçirme:**
+**dönüş değere göre geçirme:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>Desen yöntemleri deneyin
 

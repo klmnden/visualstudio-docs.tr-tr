@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116296"
@@ -41,7 +41,7 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
 1. Üzerinde **dosya** menüsü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], tıklayın **yeni** ve ardından **proje**.  
   
-2. İçinde **yeni proje** iletişim kutusunun **proje türleri**, tıklayın **Visual C#**.  
+2. İçinde **yeni proje** iletişim kutusunun **proje türleri**, tıklayın **Visual C#** .  
   
 3. Altında **şablonları**seçin **sınıf kitaplığı**.  
   
@@ -149,7 +149,7 @@ Bu kılavuzda, Kod Analizi aracını kullanarak kod kusurları için yönetilen 
   
        Seçin **derlemeyi imzalamayı** onay kutusu.  
   
-       İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >**.  
+       İçinde **dize ad anahtar dosyası seç** listesinden  **\<yeni … >** .  
   
        **Katı ad anahtarı oluştur** iletişim kutusu görüntülenir.  
   

@@ -210,7 +210,7 @@ ms.locfileid: "62981682"
 
 4. Ok düğmesi **başlık** sütun başlığını tekrar.
 
-5. Tıklayın **(Tümü)**.
+5. Tıklayın **(Tümü)** .
 
      Filtre kaldırılır ve tüm satırların görünmesini.
 

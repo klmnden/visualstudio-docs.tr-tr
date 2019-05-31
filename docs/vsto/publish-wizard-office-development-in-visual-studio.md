@@ -39,7 +39,7 @@ ms.locfileid: "63447061"
 
 - Göreli veya mutlak bir yol standart Windows, aşağıdakiler gibi biçimlendirme *C:\Deploy\MyApplication* veya *\MyApplication*.
 
-- Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi  *\\\ServerName\MyApplication\\*.
+- Bir Evrensel Adlandırma Kuralı (UNC) yolu gibi  *\\\ServerName\MyApplication\\* .
 
 - Gibi bir URL bir web sitesi http://www.microsoft.com/MyApplication.
 

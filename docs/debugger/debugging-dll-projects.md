@@ -76,7 +76,7 @@ C/C++ projeleri için çıktı klasörüne kopyalamak yerine projenin özellik s
 
 1. Üst kısmındaki **özellikleri** bölmesi altında **yapılandırma**seçin **yapılandırmalarında**.
 
-1. Altında **C/C++** > **genel** > **ek içerik dizinleri**, üst bilgi dosyalarını içeren klasörü belirtin.
+1. Altında **C/C++**  > **genel** > **ek içerik dizinleri**, üst bilgi dosyalarını içeren klasörü belirtin.
 
 1. Altında **bağlayıcı** > **genel** > **ek kitaplıklar dizinleri**, LIB dosyalarını içeren klasörü belirtin.
 

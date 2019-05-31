@@ -82,7 +82,7 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
   
 3. İçinde **iade ilkesi** listesinde, çift **Kod Analizi**, emin olun **yönetilen kod için kod analizini zorla** onay kutusu seçilidir.  
   
-4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >**.  
+4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >** .  
   
 5. Sürüm denetimine iade ilkesi kural kümesi dosyası yolunu yazın.  
   
@@ -116,6 +116,6 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
   
 6. Diğer şirketlerin bileşenleri kodda yoksaymak için seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
   
-7. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
+7. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >** .  
   
 8. İade İlkesi kural kümesi dosyası yerel sürümünü belirtin.

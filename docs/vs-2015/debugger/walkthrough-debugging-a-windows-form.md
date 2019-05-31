@@ -53,7 +53,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2. Proje Türleri bölmesinde **Visual Basic**, **Visual C#**, veya **Visual C++** düğümünü, ardından  
+2. Proje Türleri bölmesinde **Visual Basic**, **Visual C#** , veya **Visual C++** düğümünü, ardından  
   
     1. Visual Basic veya Visual C# için seçin **Windows** düğümünü seçip **Windows Form uygulaması** içinde **şablonları** bölmesi.  
   

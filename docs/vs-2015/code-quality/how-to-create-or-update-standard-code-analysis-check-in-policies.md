@@ -66,7 +66,7 @@ Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki
   
     - Bir Microsoft Standart kural kümesi seçin.  
   
-    - Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >**, kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
+    - Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >** , kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
   
     - **$/** `TeamProjectName` **/** `VersionControlPath`  
   

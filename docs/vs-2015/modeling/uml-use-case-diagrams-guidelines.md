@@ -190,11 +190,11 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
    - **1** bu rolün tam olarak bir örneğini belirtin. her bağlantıya katılan.  
   
-   - **1..\\*** bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
+   - **1..\\** * bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
   
    - **0..1** katılım isteğe bağlı olduğunu belirtir.  
   
-   - **\\*** Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
+   - **\\** * Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
   
 > [!NOTE]
 > Birçok ekip varsayılan değer olan 1 çeşitliliği bırakarak kullanım örneği diyagramları çoğulluk bilgi yerleştirmeyin. Bunun yerine, kullanım örneklerini ayrı açıklamalarını bilgileri sağlar. Bu durumda, tüm kullanım örneği diyagramları Çeşitlilikler gizlenir.  

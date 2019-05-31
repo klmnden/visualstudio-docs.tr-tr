@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Geçersiz Seçenekler  
  Aşağıdaki seçenekler aynı komut satırında belirtilemez **PF**.  
   
- **Zamanlayıcı**[**:**`Cycles`]  
+ **Zamanlayıcı**[ **:** `Cycles`]  
  Kümeleri işlemci saat için örnekleme olay geçiş yapar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Cycles`. Varsayılan Zamanlayıcı 10,000,000 aralığıdır.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Örnekleme olayını, işletim sisteminin çekirdeğine (syscalls) profili oluşturulan uygulamayla çağrıları ayarlar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Events`. Varsayılan Sys aralığı 10'dur.  
   
  **Sayaç:** `Name`[`,Reload`[`,FriendlyName`]]  
  Bir CPU performans sayaç tarafından belirtilen örnekleme olayını ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
   
- **GC**[**:**{**ayırma**&#124;**ömrü**}]  
+ **GC**[ **:** {**ayırma**&#124;**ömrü**}]  
  .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bir bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtildiğinde, veriler ayrıca her çöp toplama olayını toplanır.  
   
 ## <a name="example"></a>Örnek  

@@ -33,13 +33,13 @@ ASP.NET web uygulamaları için bir kural yapılandırma hakkında daha fazla bi
 
 1. Açık **Kod Analizi** projenin özellik sayfalarındaki sekmesinde. Bu aşağıdaki yollardan biriyle yapabilirsiniz:
 
-   - İçinde **Çözüm Gezgini**, projeyi seçin. Menü çubuğunda, seçin **Çözümle** > **Kod Analizi yapılandırma** > **için \<projectname >**.
+   - İçinde **Çözüm Gezgini**, projeyi seçin. Menü çubuğunda, seçin **Çözümle** > **Kod Analizi yapılandırma** > **için \<projectname >** .
 
    - Projeye sağ **Çözüm Gezgini** seçip **özellikleri**ve ardından **Kod Analizi** sekmesi.
 
 1. İçinde **yapılandırma** ve **Platform** listeleri, derleme yapılandırması ve hedef platformu seçin.
 
-1. Seçili yapılandırma kullanarak proje oluşturulan her zaman, Kod Analizi çalıştırmak için seçin **derlemede kod analizini etkinleştir** onay kutusu. Ayrıca kod analizini el ile seçerek çalıştırabilirsiniz **Çözümle** > **kod çözümlemeyi Çalıştır** > **kod çözümlemeyi Çalıştır \<projectname >**.
+1. Seçili yapılandırma kullanarak proje oluşturulan her zaman, Kod Analizi çalıştırmak için seçin **derlemede kod analizini etkinleştir** onay kutusu. Ayrıca kod analizini el ile seçerek çalıştırabilirsiniz **Çözümle** > **kod çözümlemeyi Çalıştır** > **kod çözümlemeyi Çalıştır \<projectname >** .
 
 1. Varsayılan olarak, Kod Analizi uyarıları otomatik olarak dış araçları tarafından oluşturulan kodu raporlamaz. Üretilen koddan gelen uyarıları görüntülemek için temizleyin **üretilen koddan gelen sonuçları Gizle** onay kutusu.
 

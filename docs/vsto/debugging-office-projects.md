@@ -73,7 +73,7 @@ ms.locfileid: "63441875"
  Bir projeyi her derlediğinizde, veri kümesini boşaltılıp ve yeniden. Önbellekteki veri kümesini hata ayıklamak istiyorsanız, Visual Studio dışında belgeyi açın ve ardından hata ayıklayıcıyı iliştirmek gerekir.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Hata ayıklama Word belgesi projeleri Word 97-2003 belgeye dayalı (* .doc) biçimi
- Word 97-2003 belgesi üzerinde temel alan bir Word belgesi proje hata ayıklama (*/*.doc *) biçimi, proje klasörünü güvenilir bir klasör listesine eklemeniz gerekir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [belgelere güven verme](../vsto/granting-trust-to-documents.md).
+ Word 97-2003 belgesi üzerinde temel alan bir Word belgesi proje hata ayıklama ( */* .doc *) biçimi, proje klasörünü güvenilir bir klasör listesine eklemeniz gerekir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [belgelere güven verme](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Hata ayıklama devre dışı eklentileri
  Microsoft Office uygulamaları, beklenmedik şekilde davranmasına VSTO Add-Ins devre dışı bırakabilirsiniz. Bir Microsoft Office uygulamasının VSTO Add-Ins sorunlu kod uygulama başladığında her zaman yüklenmesini önlemek için devre dışı bırakır. Ancak, bu da tipik olarak hata ayıklama sırasında beklenmeyen davranışlara neden kolaydır. VSTO eklentileri yeniden etkinleştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

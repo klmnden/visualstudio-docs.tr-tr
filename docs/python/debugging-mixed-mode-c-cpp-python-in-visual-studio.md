@@ -97,7 +97,7 @@ Bu yöntemi kullanarak, ayıklanamıyor kullanan *py.exe* Başlatıcısı kendis
 
 ![Karışık mod hata ayıklaması ile birleştirilmiş çağrı yığını](media/mixed-mode-debugging-call-stack.png)
 
-Geçişleri görünür olarak **[harici kod]**, varsa, geçiş yönü belirtmeden **Araçları** > **seçenekleri**  >  **Hata ayıklama** > **genel** > **yalnızca benim kodumu etkinleştir** seçeneği ayarlanır.
+Geçişleri görünür olarak **[harici kod]** , varsa, geçiş yönü belirtmeden **Araçları** > **seçenekleri**  >  **Hata ayıklama** > **genel** > **yalnızca benim kodumu etkinleştir** seçeneği ayarlanır.
 
 Herhangi bir çağrı çerçevesi çift etkin hale getirir ve uygun kaynak kodu, mümkünse açılır. Kaynak kodu kullanılabilir durumda değilse, çerçeve hala etkin hale ve yerel değişkenler inceledi.
 
@@ -107,7 +107,7 @@ Kullanırken **içine adımla** (**F11**) veya **Step Out** (**Shift**+**F11**) 
 
 ### <a name="pyobject-values-view-in-native-code"></a>Yerel kodda PyObject değerlerini görüntüleme
 
-Yerel (C veya C++) çerçeve etkin olduğunda, hata ayıklayıcıda yerel değişkenlerini görünmesini **Yereller** penceresi. Yerel Python uzantısı modüller, çoğu bu değişkenlerin türü olan `PyObject` (Bu değer için bir typedef `_object`), ya da (aşağıdaki listeye bakın) diğer birkaç temel Python türler. Karışık mod hata ayıklamada etiketli bir ek alt düğümü bu değerleri sunmak **[Python Görünüm]**. Genişletildiğinde, bu düğüm değişkenin Python gösterimi gösterir, ne bir yerel değişken ederseniz görürsünüz aynı aynı nesneye başvuran bir Python çerçevesinde yoktu. Bu düğümün alt öğeleri düzenlenebilir.
+Yerel (C veya C++) çerçeve etkin olduğunda, hata ayıklayıcıda yerel değişkenlerini görünmesini **Yereller** penceresi. Yerel Python uzantısı modüller, çoğu bu değişkenlerin türü olan `PyObject` (Bu değer için bir typedef `_object`), ya da (aşağıdaki listeye bakın) diğer birkaç temel Python türler. Karışık mod hata ayıklamada etiketli bir ek alt düğümü bu değerleri sunmak **[Python Görünüm]** . Genişletildiğinde, bu düğüm değişkenin Python gösterimi gösterir, ne bir yerel değişken ederseniz görürsünüz aynı aynı nesneye başvuran bir Python çerçevesinde yoktu. Bu düğümün alt öğeleri düzenlenebilir.
 
 ![Yerel öğeler penceresinde Python görüntüle](media/mixed-mode-debugging-python-view.png)
 
@@ -150,7 +150,7 @@ Benzer şekilde, önceki bölümde, etkinleştirebilirsiniz bir **[C++ Görünü
 
 Bir nesnenin bir alt alan türde ise `PyObject`, veya başka birini desteklenen türleri, bunun ardından bir **[Python Görünüm]** nesne gitmek mümkün hale getirme (Bu gösterimler etkinleştirildiyse) gösterimi düğüm nerede grafikler doğrudan bağlantılar için Python sunulmaz.
 
-Farklı **[Python Görünüm]** nesne türünü belirlemek için Python nesne meta verilerini kullanın, düğümler için benzer şekilde güvenilir bir mekanizma bulunmamaktadır **[C++ Görünüm]**. Genel olarak bakıldığında, verilen bir Python değer (diğer bir deyişle, bir `PyObject` başvuru) hangi C/C++ yapı yedekleme güvenilir bir şekilde belirlemek mümkün değildir. Karışık mod hata ayıklayıcı türü nesnenin türü çeşitli alanlarda bakılarak tahmin etmeye çalışır (gibi `PyTypeObject` tarafından başvurulan alt `ob_type` alan) işlev işaretçi türleri vardır. Bu işlev işaretçileri birini çözümlenebilir bir işlev başvuruyor ve bu işlev varsa bir `self` daha belirli bir tür parametresiyle `PyObject*`, bu tür yedekleme türü olarak kabul edilir. Örneğin, varsa `ob_type->tp_init` aşağıdaki işlevi verilen nesne noktalarda biri:
+Farklı **[Python Görünüm]** nesne türünü belirlemek için Python nesne meta verilerini kullanın, düğümler için benzer şekilde güvenilir bir mekanizma bulunmamaktadır **[C++ Görünüm]** . Genel olarak bakıldığında, verilen bir Python değer (diğer bir deyişle, bir `PyObject` başvuru) hangi C/C++ yapı yedekleme güvenilir bir şekilde belirlemek mümkün değildir. Karışık mod hata ayıklayıcı türü nesnenin türü çeşitli alanlarda bakılarak tahmin etmeye çalışır (gibi `PyTypeObject` tarafından başvurulan alt `ob_type` alan) işlev işaretçi türleri vardır. Bu işlev işaretçileri birini çözümlenebilir bir işlev başvuruyor ve bu işlev varsa bir `self` daha belirli bir tür parametresiyle `PyObject*`, bu tür yedekleme türü olarak kabul edilir. Örneğin, varsa `ob_type->tp_init` aşağıdaki işlevi verilen nesne noktalarda biri:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

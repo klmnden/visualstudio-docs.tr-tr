@@ -71,7 +71,7 @@ ms.locfileid: "65687352"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **Tam güven: istek için istek başarısız oldu.**
+ **Tam güven: istek için istek başarısız oldu.** 
 **ClassRequiringFullTrust.DoWork çağrıldı.**
 ## <a name="related-rules"></a>İlgili kuralları
  [CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)

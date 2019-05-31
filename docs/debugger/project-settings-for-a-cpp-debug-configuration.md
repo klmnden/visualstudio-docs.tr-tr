@@ -163,7 +163,7 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 
 |Ayar|Açıklama|
 |-------------|-----------------|
-|**En iyi duruma getirme**|Derleyicinin ürettiği kodu en iyileştirip iyileştirmeyeceğini belirtir. İyileştirme yürütülen kodu değiştirir. İyileştirilmiş kod artık kaynak kodu, hata ayıklamayı zorlaştırır eşleşir.<br /><br /> Varsayılan seçenek (**devre dışı (/ 0d)**) en iyi duruma getirme bastırır. İyileştirme bastırılmış ile geliştirin ve kodunuzun ürün sürümünü oluşturduğunuzda açın.|
+|**En iyi duruma getirme**|Derleyicinin ürettiği kodu en iyileştirip iyileştirmeyeceğini belirtir. İyileştirme yürütülen kodu değiştirir. İyileştirilmiş kod artık kaynak kodu, hata ayıklamayı zorlaştırır eşleşir.<br /><br /> Varsayılan seçenek (**devre dışı (/ 0d)** ) en iyi duruma getirme bastırır. İyileştirme bastırılmış ile geliştirin ve kodunuzun ürün sürümünü oluşturduğunuzda açın.|
 
 ## <a name="linker-folder-debugging-category"></a>Bağlayıcı klasörü (hata ayıklama kategorisi)
 
@@ -175,7 +175,7 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 |**Eşlem dosyası oluştur** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Bağlama sırasında bir eşleme dosyası oluşturulacak söyler. Varsayılan ayar Hayır Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|
 |**Eşlem dosyası adı** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*adı*)|Eşlem dosyası oluştur seçerseniz, bu kutuda harita dosyasını belirtebilirsiniz. Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|
 |**Eşlem aktarımları** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Eşleme dosyasında dışarı aktarılan işlevleri içerir. Varsayılan ayar Hayır Daha fazla bilgi için [mapınfo (eşlem dosyası bilgileri dahil)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
-|**Hatası ayıklanabilir bütünleşmiş kod** ([assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Bağlayıcı ayarlarını belirler assemblydebug seçeneği. Olası değerler şunlardır:<br /><br /> -   **Debuggable özniteliği yayınlanmadı**.<br />-   **Çalışma zamanı iyileştirmeleri ve Takibi devre dışı bırak (/ ASSEMBLYDEBUG)**. Bu varsayılan ayardır,<br />-   **Hiçbir çalışma zamanı izleme ve iyileştirmeleri etkinleştir(/assemblydebug:DISABLE)**.<br />-   **\<Üstten veya proje varsayılanlarından devral >**.<br />-Daha fazla bilgi için [assemblydebug (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+|**Hatası ayıklanabilir bütünleşmiş kod** ([assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Bağlayıcı ayarlarını belirler assemblydebug seçeneği. Olası değerler şunlardır:<br /><br /> -   **Debuggable özniteliği yayınlanmadı**.<br />-   **Çalışma zamanı iyileştirmeleri ve Takibi devre dışı bırak (/ ASSEMBLYDEBUG)** . Bu varsayılan ayardır,<br />-   **Hiçbir çalışma zamanı izleme ve iyileştirmeleri etkinleştir(/assemblydebug:DISABLE)** .<br />-    **\<Üstten veya proje varsayılanlarından devral >** .<br />-Daha fazla bilgi için [assemblydebug (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
 
  Yapılandırma özellikleri klasörü (hata ayıklama kategorisi) bu ayarları Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings arabirimini kullanarak programlama yoluyla değiştirebilirsiniz. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

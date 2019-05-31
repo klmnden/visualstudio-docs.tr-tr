@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Bellek denetimi deyimleri tarafından köşeli parantez içindeki bildirimi `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** yalnızca programınızın hata ayıklama sürümleri derlenmiş engeller.  
+    Bellek denetimi deyimleri tarafından köşeli parantez içindeki bildirimi `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** yalnızca programınızın hata ayıklama sürümleri derlenmiş engeller.  
   
     Bir bellek sızıntısı olduğunu bildiğiniz, başka bir üye işlevi kullanabilirsiniz [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) yardımcı olacak bulun.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Özelleştirme nesnenin dökümünü yapar  
  Türetilen bir sınıftan zaman [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), geçersiz kılabilirsiniz `Dump` kullandığınızda, ek bilgi sağlamak için üye işlevi [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) döküm nesnelere [Çıkış penceresine](../ide/reference/output-window.md).  
   
- `Dump` İşlevi için bir döküm bağlam değişkenleri nesnenin üye değerinin metinsel bir gösterimini yazar ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Döküm bağlamı bir g/ç akışına benzerdir. Append işlecini kullanabilirsiniz (**<<**) veri göndermesini bir `CDumpContext`.  
+ `Dump` İşlevi için bir döküm bağlam değişkenleri nesnenin üye değerinin metinsel bir gösterimini yazar ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Döküm bağlamı bir g/ç akışına benzerdir. Append işlecini kullanabilirsiniz ( **<<** ) veri göndermesini bir `CDumpContext`.  
   
  Ne zaman geçersiz kılmanız `Dump` işlevi, temel sınıf sürümü ilk çağırmalıdır `Dump` temel sınıf nesnenin içeriğini dökümünü almak için. Ardından bir metinsel ve türetilmiş sınıfınızın her üye değişkeni için değer çıktı.  
   
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
   
    1. İçinde  **\<Proje > özellik sayfaları** iletişim kutusu, tıklayın **Configuration Manager** düğmesi.  
   
-   2. İçinde [Configuration Manager iletişim kutusu](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >**.  
+   2. İçinde [Configuration Manager iletişim kutusu](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), kılavuz projenizi bulun. İçinde **yapılandırma** sütunundaki  **\<yeni … >** .  
   
    3. İçinde [yeni proje yapılandırması iletişim kutusu](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), "Kısmi Debug" gibi yeni yapılandırma için bir ad yazın **proje yapılandırması adı** kutusu.  
   

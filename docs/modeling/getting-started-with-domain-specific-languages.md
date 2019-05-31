@@ -209,7 +209,7 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
 
     2. Özellikler penceresini açın ve aynı anda DSL Gezgini ve özellikleri görebilmek konumlandırın.
 
-    3. DSL Gezgini'nde **Düzenleyicisi**, **araç kutusu sekmeleri**,  *\<DSL'nizi >*, ardından **Araçları**.
+    3. DSL Gezgini'nde **Düzenleyicisi**, **araç kutusu sekmeleri**,  *\<DSL'nizi >* , ardından **Araçları**.
 
     4. Tıklayın **ExampleElement**. Öğeleri oluşturmak için kullanılan araç kutusu öğesi budur.
 

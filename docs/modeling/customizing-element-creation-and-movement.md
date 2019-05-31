@@ -109,7 +109,7 @@ Kullanıcılar ayrıca öğeleri diğer öğeler üzerine yapıştırabilirsiniz
 
       Yolun gezinme aracı her bir yol oluşturmak için kullanabilirsiniz:
 
-      1. Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >**.
+      1. Altında **yollarda bağlantılar oluşturarak birleştirmeyi işle**, tıklayın  **\<yolu Ekle >** .
 
       2. Liste öğesi sağındaki açılan oku tıklatın. Ağaç görünümünde görünür.
 

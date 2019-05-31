@@ -335,7 +335,7 @@ ms.locfileid: "65682371"
   
 #### <a name="to-test-the-build-targets"></a>Yapı hedeflerini test etmek için  
   
-1. Komut isteminde **msbuild, helloworld.csproj /p:AssemblyName Greetings =**.  
+1. Komut isteminde **msbuild, helloworld.csproj /p:AssemblyName Greetings =** .  
   
      Kullanmadığınız **/t** hedefi açıkça ayarlamak için geçiş, MSBuild varsayılan derleme hedefini çalıştırır. **/P** geçiş geçersiz kılmaları `AssemblyName` özelliği ve yeni değeri verir `Greetings`. Bu, \Bin\ klasöründe yeni bir uygulama, Greetings.exe neden olur.  
   
@@ -349,7 +349,7 @@ ms.locfileid: "65682371"
   
      Bu varsayılan olan uygulamayı kaldırmak için temizleme görevini çalıştırır `AssemblyName` özellik değeri `MSBuildSample`.  
   
-5. Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj /t: temiz /p:AssemblyName Greetings =**.  
+5. Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj /t: temiz /p:AssemblyName Greetings =** .  
   
      Bu uygulamanın kaldırmak için temizleme görevini çalıştırır verilen **AssemblyName** özellik değeri `Greetings`.  
   

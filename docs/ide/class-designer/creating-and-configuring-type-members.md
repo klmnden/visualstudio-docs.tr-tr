@@ -114,7 +114,7 @@ Varsayılan olarak, **sınıf ayrıntıları** yeni bir sınıf diyagramı açt�
 
      Tür odağa gelir ve içeriği görüntülenir **sınıf ayrıntıları** penceresi.
 
-2. İçinde **sınıf ayrıntıları** eklemek istediğiniz üye türünü içeren bölümde tıklatıp  **\<Üye Ekle >**. Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >**.
+2. İçinde **sınıf ayrıntıları** eklemek istediğiniz üye türünü içeren bölümde tıklatıp  **\<Üye Ekle >** . Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >** .
 
 3. Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın.
 
@@ -225,7 +225,7 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**
 
-3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
+3. Tıklayın  **\<parametre Ekle >** , adını yeni parametre ve basın, **Enter**.
 
      Yeni parametre yönteme ve yöntemin koduna eklenir. Bu görüntüler **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 
@@ -241,7 +241,7 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**
 
-3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
+3. Tıklayın  **\<parametre Ekle >** , adını yeni parametre ve basın, **Enter**.
 
      Yeni parametre yönteme ve yöntemin koduna eklenir. Bu görüntüler **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 

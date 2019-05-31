@@ -177,7 +177,7 @@ ms.locfileid: "63438549"
 
 5. Veritabanı bağlantısı devre dışı bırakın. Veritabanı bir sunucuda bulunuyorsa, ağ kablosu bilgisayarınızdan çıkarın veya veritabanı geliştirme bilgisayarınızda ise SQL Server hizmetini durdurun.
 
-6. Excel'i açın ve ardından açın **My ana Detail.xlsx** gelen *\bin* dizin (*\My Master-Detail\bin* Visual Basic'te veya *\My Master-Detail\bin\ hata ayıklama* C#).
+6. Excel'i açın ve ardından açın **My ana Detail.xlsx** gelen *\bin* dizin ( *\My Master-Detail\bin* Visual Basic'te veya *\My Master-Detail\bin\ hata ayıklama* C#).
 
 7. Bazı çalışma kesildiğinde normal şekilde çalıştığını görmek için kayıtlar kaydırın.
 

@@ -24,7 +24,7 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Formunuza iletişim kutusu bileşenleri eklemek için
 
-1. Seçin **Windows Form Tasarımcısı** (**Form1.cs [Design]** veya **Form1.vb [Design]**) ve ardından açın **iletişim kutuları** grubu **Araç kutusu**.
+1. Seçin **Windows Form Tasarımcısı** (**Form1.cs [Design]** veya **Form1.vb [Design]** ) ve ardından açın **iletişim kutuları** grubu **Araç kutusu**.
 
     > [!NOTE]
     > **İletişim kutuları** grubu **araç kutusu** açma ve dosyaları kaydetmek, klasörlere göz atma ve yazı tiplerini ve renkleri seçmek için kullanılabilecek pek çok yararlı iletişim kutuları, açılan bileşenden oluşur. Bu projede iki iletişim kutusu bileşeni kullanırsınız: OpenFileDialog ve ColorDialog.

@@ -61,7 +61,7 @@ Gelen **bu kural kümesini Çalıştır** listesinde, aşağıdaki yöntemlerden
 
 - Bir Microsoft Standart kural kümesi seçin.
 
-- Tıklayarak özel bir kural seçin  **\<kaynak denetiminden kural kümesi seçin >**. Ardından, kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:
+- Tıklayarak özel bir kural seçin  **\<kaynak denetiminden kural kümesi seçin >** . Ardından, kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
