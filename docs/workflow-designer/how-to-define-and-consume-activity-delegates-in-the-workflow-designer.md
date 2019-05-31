@@ -1,5 +1,5 @@
 ---
-title: 'İş Akışı Tasarımcısı - nasıl yapılır: Tanımlama ve etkinlik temsilcileri kullanma'
+title: 'İş Akışı Tasarımcısı: Tanımlama ve etkinlik temsilcileri kullanma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949531"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431790"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında etkinlik temsilcileri tanımlama ve kullanma
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949531"
 
 14. İçinde **değişken türü** sütunundaki **Int32**. Bırakın **kapsam** olarak **sırada**ve **varsayılan** sütunu boş.
 
-15. Ayarlama **koşul** özelliği <xref:System.Activities.Statements.While> etkinliğini **dizini < Items.Length;**.
+15. Ayarlama **koşul** özelliği <xref:System.Activities.Statements.While> etkinliğini **dizini < Items.Length;** .
 
 16. Sürükleme bir <xref:System.Activities.Statements.InvokeDelegate> etkinliğinden **Temelleri** araç kutusuna bölümünü **gövdesi** , <xref:System.Activities.Statements.While> etkinlik.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949531"
 
 18. İçinde **özellikleri** için kılavuz <xref:System.Activities.Statements.InvokeDelegate> etkinliği tıklatın **...**  düğmesine **temsilci bağımsız değişkenleri** özelliği.
 
-19. İçinde **değer** adlı bağımsız değişkenin sütun **bağımsız değişken**, girin **öğeleri [dizin]**. Tıklayın **Tamam** kapatmak için **DelegateArguments** iletişim.
+19. İçinde **değer** adlı bağımsız değişkenin sütun **bağımsız değişken**, girin **öğeleri [dizin]** . Tıklayın **Tamam** kapatmak için **DelegateArguments** iletişim.
 
 20. Sürükleme bir <xref:System.Activities.Statements.Assign> etkinlik altında yatay çizgi üzerine <xref:System.Activities.Statements.InvokeDelegate> etkinlik. <xref:System.Activities.Statements.Assign> Etkinlik oluşturulur ve <xref:System.Activities.Statements.Sequence> etkinlik otomatik olarak oluşturulur iki etkinliklerini içermesini **gövdesi** bölümünü **MyForEach** etkinlik. Bu yana dizisi gerekli **gövdesi** bölümü yalnızca tek bir etkinlik içermelidir. Otomatik olarak yeni bir oluşturma <xref:System.Activities.Statements.Sequence> etkinliği, .NET Framework 4.5, yeni bir özelliktir.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949531"
 
 3. Sürükleme bir **MyForEach** araç kutusundan bir etkinlik Tasarımcı yüzeyine bırakın. Araç kutusu projeyle aynı ada sahip bir bölümünde bir etkinliktir.
 
-4. Ayarlama **öğeleri** özelliği **MyForEach** etkinliğini **yeni Object [] {1, "abc"}**.
+4. Ayarlama **öğeleri** özelliği **MyForEach** etkinliğini **yeni Object [] {1, "abc"}** .
 
 5. Sürükleme bir <xref:System.Activities.Statements.WriteLine> etkinliğinden **Temelleri** araç kutusuna bölümünü **temsilci: gövdesi** bölümünü **MyForEach** etkinlik.
 
-6. Ayarlama **metin** özelliği <xref:System.Activities.Statements.WriteLine> etkinliğini **Argument.ToString()**.
+6. Ayarlama **metin** özelliği <xref:System.Activities.Statements.WriteLine> etkinliğini **Argument.ToString()** .
 
 İş akışı yürütüldüğünde, konsol aşağıdaki çıktıyı gösterir:
 

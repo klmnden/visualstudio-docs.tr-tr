@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822754"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432314"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Kodlanmış UI test günlüklerini çözümleme kodlanmış UI testleri kullanarak
 
@@ -24,23 +24,23 @@ Kodlanmış UI test günlüklerini filtre ve kayıt kodlanmış UI testleri hakk
 
 Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yöntemlerden birini kullanın:
 
-- Hedef .NET Framework sürüm 4 olmadan *App.config* test projesinde dosya:
+- Yoksa hiçbir *App.config* test projenizde mevcut dosya:
 
-   1. Açık *QTAgent32_40.exe.config* dosya. Varsayılan olarak, bu dosya bulunan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Belirleyen *QTAgent\*.exe* testinizi çalıştırdığınızda işlemi başlatıldı. Yapmanın bir yolu izlemek için budur **ayrıntıları** Windows sekmede **Görev Yöneticisi'ni**.
+   
+   2. Buna karşılık gelen açın *.config* dosya *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<sürüm >\\\<sürümü > \Common7\IDE* klasör. Örneğin, işlemi çalıştıran ise *QTAgent_40.exe*açın *QTAgent_40.exe.config*.
 
-   2. Değeri için gt;System.Diagnostics istediğiniz günlük düzeyine değiştirin.
+   2. Değerini değiştirmek **gt;System.Diagnostics** istediğiniz günlük düzeyi.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Dosyayı kaydedin.
 
-- Hedef .NET Framework sürüm 4.5 olmadan *App.config* test projesinde dosya:
-
-   1. Açık *QTAgent32.exe.config* dosya. Varsayılan olarak, bu dosya bulunan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. İstediğiniz günlük düzeyine gt;System.Diagnostics değerini değiştirin.
-
-   3. Dosyayı kaydedin.
-
-- *App.config* dosyasıdır ve test projesinde mevcut:
+- Varsa bir *App.config* test projenizde mevcut dosya:
 
     - Açık *App.config* dosya projede ve yapılandırma düğümü altında aşağıdaki kodu ekleyin:
 
@@ -54,11 +54,13 @@ Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yönt
 
 - Test kodu günlüğünü etkinleştir:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2. Adım: Kodlanmış UI testleri çalıştırmak ve günlüğünü görüntüleyin
 
-Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTAgent32.exe.config* dosya, yerinde bağlantısını bir çıktı görmeniz **Test Gezgini** sonuçları. Yalnızca, test, aynı zamanda için izleme düzeyi için "verbose." olarak ayarlandığında başarılı testleri başarısız olduğunda günlük dosyaları oluşturulur
+Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTAgent\*. exe.config* dosya, yerinde bağlantısını bir çıktı görmeniz **Test Gezgini** sonuçları. Günlük dosyalarını izleme düzeyini ayarlandığında değil yalnızca test de başarılı testlerde başarısız olduğunda oluşturulan **ayrıntılı**.
 
 1. Üzerinde **Test** menüsünde seçin **Windows** seçip **Test Gezgini**.
 

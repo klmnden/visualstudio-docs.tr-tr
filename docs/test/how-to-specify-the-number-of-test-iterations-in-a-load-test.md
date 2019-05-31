@@ -1,5 +1,5 @@
 ---
-title: Yük testi çalışma ayarı Test yineleme sayısını belirtme
+title: Yük testi çalışma ayarı test yineleme sayısını belirtme
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970711"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431983"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Nasıl yapılır: Bir yük testi çalışma ayarı içinde test yineleme sayısını belirtme
 

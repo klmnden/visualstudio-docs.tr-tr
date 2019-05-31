@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b81d6be4ebb7e210efc2034f43fc9a91ec1844e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a2a2b4a8c747595a0aa1e0f3499b8d24b0b0d301
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402052"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432251"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -170,11 +170,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**CTRL + K, Ctrl + M**|
 |Edit.GoTo|**CTRL + G**|
+|Edit.GoToAll|**CTRL +** veya **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**CTRL + D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Shift + F8**|
+|Edit.GoToMember|**CTRL + 1, Ctrl + M** veya **Ctrl + 1, M** veya **Alt +\\**|
+|Edit.GoToNextLocation|**F8** (sonraki hata hata listesini veya çıktı penceresinde)|
+|Edit.GoToPrevLocation|**Shift + F8** (hata listesini veya çıktı penceresinde önceki hata)|
 |Edit.InsertSnippet|**CTRL + K, Ctrl + X**|
 |Edit.MoveControlDown|**CTRL + AŞAĞI OK**|
 |Edit.MoveControlDownGrid|**Aşağı ok**|
@@ -184,7 +186,6 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.MoveControlRightGrid|**Sağ ok**|
 |Edit.MoveControlUp|**CTRL + YUKARI OK**|
 |Edit.MoveControlUpGrid|**Yukarı Ok**|
-|Edit.NavigateTo|**CTRL +**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
 |Edit.OpenFile|**Ctrl + Shift + G** (dosya adı imlecin altındaki açılır)|
@@ -346,7 +347,6 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Tools.AttachtoProcess|**Ctrl + Alt + P**|
 |Tools.CodeSnippetsManager|**CTRL + K, Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12, Ctrl + Shift + Alt + F12**|
-|Tools.GoToCommandLine|**CTRL +/**|
 
 ### <a name="bkmk_view"></a> Görünümü
 
@@ -354,7 +354,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
-|View.Backward|**Alt + sol ok**|
+|View.Backward|**Alt + sol ok** (işlevlerden farklı View.NavigateBackward Metin Düzenleyicisi'nde)|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
 |View.BrowseNext|**CTRL + SHIFT + 1**|
 |View.BrowsePrevious|**CTRL + SHIFT + 2**|
@@ -369,7 +369,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ErrorList|**CTRL +\\, E**<br /><br /> veya<br /><br /> **CTRL +\\, Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + sağ ok**|
+|View.Forward|**Alt + sağ ok** (işlevlerden farklı View.NavigateForward Metin Düzenleyicisi'nde)|
 |View.ForwardBrowseContext|**CTRL + SHIFT + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
@@ -779,7 +779,6 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 | Edit.CharRight | **Sağ ok** |
 | Edit.CharRightExtend | **SHIFT + sağ ok** |
 | Edit.CharRightExtendColumn | **Shift + Alt + sağ ok** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **CTRL + K, Ctrl + L** |
 | Edit.CollapseAllOutlining | **CTRL + M, Ctrl + A** |
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |

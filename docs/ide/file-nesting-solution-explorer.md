@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548966"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432266"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirmeyi özelleştirme
+# <a name="file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirme
 
-İlgili dosyaları iç içe **Çözüm Gezgini** iç içe geçme kuralları hiçbir denetime sahip artık yeni, ancak kadar değil. Arasında önayarlarını seçebilirsiniz **kapalı**, **varsayılan** ve **Web**, ancak iç içe tam olarak istediğiniz gibi özelleştirebilirsiniz. Çözüme özel bile oluşturabilirsiniz ve projeye özgü ayarları, ancak daha sonra tüm. İlk üzerinden Bahsedelim kullanıma hazır alın.
+**Çözüm Gezgini** Yuvalar ilgili dosyaları düzenlemek ve daha kolay bulmak yardımcı olmak için. Bir projeye bir Windows Forms formu eklerseniz, örneğin, form için kod dosyasını formda aşağıda iç içe yerleştirilmiş **Çözüm Gezgini**. ASP.NET Core projelerinde, bir adım daha fazla dosya iç içe yerleştime alınabilir. Arasında dosya iç içe geçme önayarlarını seçebilirsiniz **kapalı**, **varsayılan**, ve **Web**. Ayrıca [nasıl dosyaları iç içe özelleştirme](#customize-file-nesting) veya [çözüm ve proje özgü ayarları oluşturma](#create-project-specific-settings).
 
 > [!NOTE]
 > Şu anda özelliğidir yalnızca ASP.NET Core projeleri için desteklenir.
@@ -128,7 +128,7 @@ Aynı düğmeye aracılığıyla kendi özel ayarlar dahil olmak üzere, tüm ay
 
 ![Özel dosya iç içe geçme kurallarını etkinleştirme](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Çözüm ve proje özgü ayarları oluşturma
+## <a name="create-project-specific-settings"></a>Projeye özgü ayarları oluşturma
 
 Her çözüm ve proje sağ tıklama menüsünü (bağlam menüsü) aracılığıyla çözüm ve proje özgü ayarları oluşturabilirsiniz:
 
@@ -142,7 +142,7 @@ Bunun tersini yapmak ve bildirmek için Visual Studio *yalnızca* ayarlayarak ç
 
 Çözüm ve proje özgü ayarları, kaynak denetimi ve bunları paylaşabilirsiniz kod temeli üzerinde çalışır ekibin tamamı denetlenebilir.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Belirli bir çözüm veya proje için genel dosya iç içe geçme kurallarını devre dışı bırakın
+## <a name="disable-file-nesting-rules-for-a-project"></a>Bir proje için dosya iç içe geçme kurallarını devre dışı bırakın
 
 Kullanarak varolan genel dosya iç içe geçme kurallarını belirli çözümlerin veya projelerin için devre dışı bırakabilirsiniz **Kaldır** yerine bir sağlayıcı için eylem **ekleme**. Örneğin, bir proje için aşağıdaki ayarları kod eklerseniz tüm **pathSegment** bu belirli bir proje için genel olarak bulunabilir kuralları devre dışı bırakılır:
 
@@ -157,3 +157,4 @@ Kullanarak varolan genel dosya iç içe geçme kurallarını belirli çözümler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md)
+- [Visual Studio'da projeler ve çözümler](solutions-and-projects-in-visual-studio.md)

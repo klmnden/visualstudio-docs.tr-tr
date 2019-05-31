@@ -126,8 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Geri Bildirim İstemcisi
                   href: install/workload-component-id-vs-feedback-client.md
-                - name: Paket yükü değişiklikleri
-                  href: install/changed-payloads.md
+            - name: Paket yükü değişiklikleri
+              href: install/changed-payloads.md
             - name: Visual Studio derleme numaraları ve yayın tarihleri
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure sanal makinesinden Visual Studio'yu kullanma

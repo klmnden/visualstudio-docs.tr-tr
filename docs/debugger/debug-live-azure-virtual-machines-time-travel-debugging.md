@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854197"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432222"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Kayıt ve yeniden yürütme Canlı Snapshot Debugger'ı kullanarak Azure sanal makinelerinde ASP.NET uygulamaları
 
@@ -44,7 +44,7 @@ Bu öğreticide şunları yapacaksınız:
 * Seyahat süresi hata ayıklama, şu Azure VM web uygulamaları için kullanılabilir:
   * .NET Framework 4.8 veya sonraki sürümlerde çalışan ASP.NET uygulamalarından (AMD64).
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Zaman seyahat hata ayıklama etkin olan anlık görüntü hata ayıklayıcıyı başlatın ve projenizi açın
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Snapshot Debugger zaman seyahat etkin hata ayıklama ile Başlat
 
 1. Projeyi açmak, bir zaman toplamak istediğiniz için seyahat kaydı.
 
