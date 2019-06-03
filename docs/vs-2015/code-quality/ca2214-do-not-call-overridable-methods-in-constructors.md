@@ -52,6 +52,6 @@ ms.locfileid: "54763628"
 
  Bu örnek aşağıdaki çıktıyı üretir.
 
- **Temel ctor çağrılıyor.**
+ **Temel ctor çağrılıyor.** 
 **DoSomething türetilen çağrılır - başlatılır? Hayır**
 **arama türetilmiş ctor.**
