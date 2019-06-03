@@ -37,7 +37,7 @@ ms.locfileid: "60045348"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
-Program veritabanı (*.pdb*) dosyaları, simge dosyaları olarak da bilinir tanımlayıcılarını eşleme ve karşılık gelen tanımlayıcıları projenizin kaynak kodundaki deyimleri ve yönergeleri derlenmiş uygulamalar.
+Program veritabanı ( *.pdb*) dosyaları, simge dosyaları olarak da bilinir tanımlayıcılarını eşleme ve karşılık gelen tanımlayıcıları projenizin kaynak kodundaki deyimleri ve yönergeleri derlenmiş uygulamalar.
 
 Visual Studio IDE'den hata ayıklama derleme yapılandırması standart bir proje oluşturduğunuzda, derleyicinin uygun sembol dosyaları oluşturur. Ayrıca [kodda sembol seçeneklerini ayarlama](#compiler-symbol-options).
 
@@ -62,7 +62,7 @@ Visual Studio IDE içinde bir projede hata ayıklaması yaparken, hata ayıklay�
 
 Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
 
-1. DLL veya yürütülebilir dosyanın içinde belirtilen konumdan (*.exe*) dosyası.
+1. DLL veya yürütülebilir dosyanın içinde belirtilen konumdan ( *.exe*) dosyası.
 
    Varsayılan olarak, bir DLL oluşturduysanız veya bir *.exe* bağlayıcı bilgisayarınızda dosyanın bulunduğu yerleştirir tam yolunu ve dosya ilişkili *.pdb* DLL dosyasında veya *.exe* dosya. Hata ayıklayıcı sembol dosyası bu konumda olup olmadığını denetler.
 
@@ -177,11 +177,11 @@ Visual Studio IDE'den standart bir proje oluşturduğunuzda **hata ayıklama** y
 
   - *VC\<x > .pdb*burada  *\<x >* Visual C++ sürümlerinden birini, örneğin temsil *vc11.pdb öğesini*
 
-    *VC\<x > .pdb* dosya tek bir nesne dosyaları için tüm hata ayıklama bilgilerini depolar ve proje derleme görevleri dosyası ile aynı dizinde bulunur. Her bir nesne dosyası oluşturduğunda, C/C++ derleyicisi hata ayıklama bilgileri birleştirir *VC\<x > .pdb*. Her kaynak dosyası gibi ortak başlık dosyaları gibi içerse bile bunu  *\<windows.h >*, başlıklardan yalnızca bir kez yerine her nesne dosyasında depolanır. Eklenen bilgiler türü bilgilerini içerir, ancak işlev tanımları gibi sembol bilgilerini içermez.
+    *VC\<x > .pdb* dosya tek bir nesne dosyaları için tüm hata ayıklama bilgilerini depolar ve proje derleme görevleri dosyası ile aynı dizinde bulunur. Her bir nesne dosyası oluşturduğunda, C/C++ derleyicisi hata ayıklama bilgileri birleştirir *VC\<x > .pdb*. Her kaynak dosyası gibi ortak başlık dosyaları gibi içerse bile bunu  *\<windows.h >* , başlıklardan yalnızca bir kez yerine her nesne dosyasında depolanır. Eklenen bilgiler türü bilgilerini içerir, ancak işlev tanımları gibi sembol bilgilerini içermez.
 
   - *\<Proje > .pdb*
 
-     *\<Proje > .pdb* dosya projenin tüm hata ayıklama bilgilerini depolar *.exe* dosya ve bulunan *\debug* alt.  *\<Proje > .pdb* bulunan tür bilgilerini değil dosya içeren işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini *VC\<x > .pdb*.
+    *\<Proje > .pdb* dosya projenin tüm hata ayıklama bilgilerini depolar *.exe* dosya ve bulunan *\debug* alt. *\<Proje > .pdb* bulunan tür bilgilerini değil dosya içeren işlev prototipleri dahil olmak üzere tam hata ayıklama bilgilerini *VC\<x > .pdb*.
 
   Her iki *VC\<x > .pdb* ve  *\<Proje > .pdb* dosyaları artımlı güncelleştirmelere izin. Bağlayıcı ayrıca yolunu katıştırır *.pdb* dosyalar *.exe* veya *.dll* dosyası oluşturur.
 
@@ -236,7 +236,7 @@ Bu durumda, hata ayıklayıcı görüntüler **yüklü sembol yok** veya **yükl
 **Eksik sembolleri bilip yardımcı olmak için yüklü sembol yok belge sayfası kullanmak için:**
 
 - Arama yolunu değiştirmek için seçilmeyen bir yolu seçin veya seçin **yeni yol** veya **yeni VSTS yolu** girin veya yeni bir yol seçin. Seçin **yük** yolları tekrar aramak ve bulunursa sembol dosyasını yüklemek için.
-- Arama yollarını yeniden deneyin ve herhangi bir sembol seçeneklerini geçersiz kılmak için **Gözat ve Bul \<yürütülebilir dosya adı >**. Sembol dosyası bulunursa, yüklendikten veya **dosya Gezgini** sembol dosyasını el ile seçebilmeniz için açar.
+- Arama yollarını yeniden deneyin ve herhangi bir sembol seçeneklerini geçersiz kılmak için **Gözat ve Bul \<yürütülebilir dosya adı >** . Sembol dosyası bulunursa, yüklendikten veya **dosya Gezgini** sembol dosyasını el ile seçebilmeniz için açar.
 - Açmak için **seçenekleri** > **hata ayıklama** > **sembolleri** sayfasında **sembol ayarlarını değiştir**.
 - Yeni bir pencerede bir defa ayrıştırılmış kodu göstermek için seçin **ayrıştırılmış kodu görüntüle**, ya da seçin **Seçenekleri iletişim kutusu** dosyaları kaynak veya sembol bulunamadığında ayrıştırılmış kodu her zaman göstermek için seçeneği ayarlamak için.
 - Aranan konumları ve sonucu göstermek için genişletin **sembol yükleme bilgisi**.

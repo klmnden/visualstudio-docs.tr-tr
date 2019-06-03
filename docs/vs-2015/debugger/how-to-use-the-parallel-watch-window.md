@@ -39,7 +39,7 @@ Paralel İzleme penceresinde aynı anda birden çok iş parçacığında bir ifa
   > [!TIP]
   > Açmalısınız **paralel görev** görev bilgileri görüntülemek için pencere **paralel izleme** penceresi.  
   
--  **\<Gözcü Ekle>** izlemek için ifadeleri, girebileceğiniz sütunu.  
+- **\<Gözcü Ekle>** izlemek için ifadeleri, girebileceğiniz sütunu.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
