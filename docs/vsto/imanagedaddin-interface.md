@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. Uygulama, aşağıdaki kayıt defteri anahtarı altında girişleri arayarak VSTO eklentileri bulur:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<uygulama adı >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<uygulama adı >* \Addins\\**
 
     Bu kayıt defteri anahtarı altında her girişin bir VSTO eklentisinin benzersiz kimliğidir. Genellikle, VSTO eklenti derlemesinin adını budur.
 
 2. Uygulama arayan bir `Manifest` her VSTO eklentisi için giriş altındaki girişi.
 
-    Yönetilen VSTO eklentileri depolayabileceğiniz bir bildirimde tam yolunu `Manifest` altında girdisi **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<uygulama adı >_ \Addins\\  _\<eklenti kimliği >_**. VSTO eklentisi yükünü dengeleyebilmek için kullanılan bilgileri sağlayan bir dosya (genellikle, bir XML dosyası) bildirimidir.
+    Yönetilen VSTO eklentileri depolayabileceğiniz bir bildirimde tam yolunu `Manifest` altında girdisi **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<uygulama adı >_ \Addins\\  _\<eklenti kimliği >_ **. VSTO eklentisi yükünü dengeleyebilmek için kullanılan bilgileri sağlayan bir dosya (genellikle, bir XML dosyası) bildirimidir.
 
 3. Uygulama bulursa bir `Manifest` girişi, uygulama yönetilen bir VSTO eklentisi yükleyici bileşeni yüklemek çalışır. Imanagedaddin arabirimi uygulayan bir COM nesnesi oluşturmak deneyerek uygulamanın bunu yapar.
 
