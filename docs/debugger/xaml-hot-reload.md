@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929141"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462148"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Yazma ve Visual Studio'da XAML sık erişimli yeniden yükle ile çalışan XAML kodu hatalarını ayıklama
 
@@ -47,7 +47,7 @@ Aşağıdaki XAML sınırlamaları yeniden hot bilinmektedir. Yaşadığınız h
 |Bu, uygulamanızın sayfa/penceresinde gibi bir kaynak sözlüğünde kaynağı nesneleri oluşturma veya *App.xaml*|Desteklenmez|Desteklenir|Örnek: ekleme bir ```SolidColorBrush``` olarak kullanmak için bir kaynak sözlüğüne bir ```StaticResource```.</br>Not: Statik kaynaklar, stil dönüştürücüleri ve diğer öğeleri bir kaynak sözlüğüne yazılan XAML sık erişimli yeniden kullanırken uygulanan ve kullanılan olabilir. Yalnızca kaynak oluşturulması desteklenmiyor.</br> Kaynak sözlüğünü değiştirme ```Source``` özelliği.| 
 |Uygulama çalışırken, yeni denetimler, sınıflar, windows veya diğer dosyaları projenize ekleme|Desteklenmez|Desteklenmez|Yok.|
 |NuGet paketleri (ekleme/kaldırma/güncelleştirme paketleri) yönetme|Desteklenmez|Desteklenmez|Yok.|
-|Veri bağlama değiştirme kullanan {x: Bind} işaretleme uzantısı|Yok|Visual Studio 2019 ve sonraki sürümlerinde desteklenir.|Visual Studio 2018 veya önceki sürümlerde desteklenmiyor|
+|Veri bağlama değiştirme kullanan {x: Bind} işaretleme uzantısı|Yok|Visual Studio 2019 ve sonraki sürümlerinde desteklenir.|Visual Studio 2017 veya önceki sürümlerde desteklenmiyor|
 
 ## <a name="error-messages"></a>Hata iletileri
 

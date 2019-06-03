@@ -1,6 +1,6 @@
 ---
 title: '1. Adım: Proje oluşturma ve formunuza etiketler ekleme'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949154"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462134"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza etiketler ekleme
 
@@ -24,7 +24,7 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 > [!NOTE]
 > Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Bir proje oluşturun ve bir formun özelliklerini ayarlamak için
+## <a name="to-create-a-project-for-a-form"></a>Bir form için bir proje oluşturmak için
 
 ::: moniker range="vs-2017"
 
@@ -42,15 +42,32 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 
 1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
 
-1. Arama kutusuna "WPF" öğesini **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Görmüyorsanız **WPF uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.)
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna.
 
-1. Projeye bir ad verin **MathQuiz**ve **oluştur**
+1. Seçin **Windows Forms Uygulaması (.NET Framework)** şablonu seçip **Sonraki**.
+
+   ![Windows Forms uygulaması (.NET Framework) Visual Basic şablonu seçin](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   >
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Ardından, Visual Studio yükleyicisinde seçin seçin **.NET Masaüstü geliştirmesinden** iş yükü.
+   >
+   > ![Visual Studio Yükleyicisi'nde .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için.
+
+1. İçinde **yeni projenizi Yapılandırın** penceresinde yazın veya girin *MathQuiz* içinde **Proje adı** kutusu. Ardından, **Oluştur**.
 
 ::: moniker-end
 
-1. Formu seçin ve ardından değiştirmek, **metin** özelliğini **matematik sınavı**.
+## <a name="to-create-set-properties-for-a-form"></a>Bir formun özelliklerini ayarlama oluşturmak için
+
+1. Visual Studio'da formu seçin (ya da *Form1.cs* veya *Form1.vb*programlama diline bağlı olarak) ve ardından değiştirmek, **Metin** özelliğini  **Matematik Sınavı**.
 
      **Özellikleri** penceresi formun özelliklerini içerir.
 
@@ -80,7 +97,7 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 
 6. İçinde **özellikleri** penceresinde seçin **metin** özelliği ve ardından **geri** değerini temizlemek için anahtar.
 
-7. Artı işaretini seçin (**+**) yanındaki **yazı tipi** özelliği ve değerini değiştirin **boyutu** özelliğini **15.75 olarak**.
+7. Artı işaretini seçin ( **+** ) yanındaki **yazı tipi** özelliği ve değerini değiştirin **boyutu** özelliğini **15.75 olarak**.
 
      Aşağıdaki resmin gösterdiği gibi birkaç yazıtipi özelliğini değiştirebilirsiniz.
 
