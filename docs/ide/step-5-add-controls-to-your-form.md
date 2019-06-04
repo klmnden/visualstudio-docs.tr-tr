@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431484"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501198"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5. Adım: Formunuza denetimler ekleme
 Bu adımda, denetimleri gibi eklediğiniz bir <xref:System.Windows.Forms.PictureBox> denetimi ve bir <xref:System.Windows.Forms.CheckBox> form denetimi. Daha sonra eklediğiniz <xref:System.Windows.Forms.Button> formunuza denetimler.
@@ -30,8 +30,7 @@ Bu adımda, denetimleri gibi eklediğiniz bir <xref:System.Windows.Forms.Picture
 
 4. Yeni seçin **PictureBox** denetimini seçin ve ardından aşağıdaki resimde gösterildiği gibi görev listesini görüntülemek için yeni PictureBox denetiminde siyah üçgeni seçin.
 
-     ![PictureBox görevleri](../ide/media/express_pictureboxtasks.png)
-**PictureBox** görevleri
+     ![PictureBox görevleri](../ide/media/express_pictureboxtasks.png)<br/>***PictureBox*** *görevleri*
 
     > [!NOTE]
     > Yanlışlıkla yanlış tür denetimi Tablelayoutpanel'e eklerseniz bunu silebilirsiniz. Denetime sağ tıklayın ve ardından **Sil** kendi bağlam menüsünde. Ayrıca, menü çubuğunu kullanarak denetimleri formdan kaldırabilirsiniz. Menü çubuğunda, **Düzenle** > **geri**, veya **Düzenle** > **Sil**.
@@ -45,8 +44,7 @@ Bu adımda, denetimleri gibi eklediğiniz bir <xref:System.Windows.Forms.Picture
 
 7. Seçin **TableLayoutPanel** formdaki ve ardından forma onay kutusu denetimi ekleyebilirsiniz. Çift **onay kutusu** öğesi **araç kutusu** tablonuzdaki sonraki boş hücreye yeni bir CheckBox denetimi eklemek için. Bir PictureBox, TableLayoutPanel içindeki ilk iki hücreyi kurmak alacağından CheckBox denetimi sol alttaki hücreye eklenir. Seçin **metin** özelliği ve sözcüğünü yazın **Esnetme**, aşağıdaki resimde gösterildiği gibi.
 
-     ![Uzat özelliği olan TextBox denetimi](../ide/media/express_pictureviewercheckbox.png)
-**TextBox** denetimini **Esnetme** özelliği
+     ![Uzat özelliği olan TextBox denetimi](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox*** *denetimini* ***Esnetme*** *özelliği*
 
 8. Seçin **TableLayoutPanel** form ve ardından Git **kapsayıcıları** grubu **araç kutusu** (burada aldığınız TableLayoutPanel denetiminizin) ve çift tıklayın **FlowLayoutPanel** öğesi (sağ alt) picturebox'taki son hücreye yeni bir denetim eklemek için. Ardından, Flowlayoutpanel'i Tablelayoutpanel'e yerleştirme (seçerek **üst kapsayıcıya Yerleştir** Flowlayoutpanel'in siyah renkli üçgen görev listesi veya Flowlayoutpanel'in ayarlayarak **Dock** özelliğini **dolgu**).
 
@@ -71,8 +69,7 @@ Bu adımda, denetimleri gibi eklediğiniz bir <xref:System.Windows.Forms.Picture
 
 5. Seçin **Kapat** düğmesini seçin. Basılı **Ctrl** anahtar ve diğer üç düğmeyi seçin, böylece tümü seçilir. Tüm düğmeleri seçili durumdayken, Git **özellikleri** penceresi ve sayfayı yukarı kaydırın **AutoSize** özelliği. Bu özellik düğmeye kendisini tüm metni sığacak şekilde otomatik olarak yeniden boyutlandırmak için söyler. Ayarlayın **true**. Düğmelerinizi şimdi doğru boyutlandırılmalı ve doğru sırada olmalıdır. (Dört düğme seçili olduğu sürece, tüm dört değiştirebilirsiniz **AutoSize** özellikleri aynı anda.) Aşağıdaki resimde dört düğme gösterilmektedir.
 
-     ![Resim Görüntüleyici ile dört düğme](../ide/media/express_autosize.png)
-**resim görüntüleyici** dört düğmeli
+     ![Dört düğmeli Resim Görüntüleyici](../ide/media/express_autosize.png)<br/>***Resim Görüntüleyicisi*** *dört düğmeli*
 
 6. Artık, kullanıma yeni laid formunuzu yeniden görmek için programınızı çalıştırın. Düğmeleri ve onay kutularını seçmek henüz bir işe yaramaz, ancak kısa süre içinde çalışır.
 

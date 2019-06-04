@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998152"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500981"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac için Visual Studio 2017'yi yükleme
 
@@ -67,7 +67,7 @@ Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
       - Tam olarak platformlar arası Xamarin uygulamaları – seçin **Android**, **iOS**, ve **macOS** platformlar.
    * **.NET core uygulamaları** – Select **.NET Core** platform.
    * **ASP.NET Core Web uygulamaları** – Select **.NET Core** platform.
-   * **Platformlar arası Unity oyun geliştirme** – Mac için Visual Studio dışında yüklenecek hiçbir ek platform gerekiyor Başvurmak [Unity Kurulum Kılavuzu](/visualstudio/macm/setup-vsmac-tools-unity) Unity uzantının yüklenmesi hakkında daha fazla bilgi.
+   * **Platformlar arası Unity oyun geliştirme** – Mac için Visual Studio dışında yüklenecek hiçbir ek platform gerekiyor Başvurmak [Unity Kurulum Kılavuzu](/visualstudio/mac/setup-vsmac-tools-unity) Unity uzantının yüklenmesi hakkında daha fazla bilgi.
 
    Bu yükleme ekranı, sürüm ve tek tek her bileşen boyutunu görüntüler. (.NET Core için) yüklemeleri ek paketler (Android için) söz konusu bileşen için bağımlılıkların bir listesini görüntülemek için bkz her bileşene tıklayın ya da (iOS ve macOS) gerekli ek uygulamaları görüntüleyin:
 

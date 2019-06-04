@@ -13,22 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a2b4a8c747595a0aa1e0f3499b8d24b0b0d301
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432251"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501181"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
 Klavye erişilebilirliği hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: Yalnızca klavyeyi kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Çeşitli komutlara ve pencerelere Visual Studio'da uygun klavye kısayolunu seçerek erişebilirsiniz. Bu konuda, Visual Studio'yu yüklerken tercih etmiş genel geliştirme profiline ilişkin varsayılan kısayollar listelenmektedir. Seçtiğiniz profilden bağımsız olarak açarak bir komutun kısayolunu belirleyebilirsiniz **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
+Çeşitli komutlara ve pencerelere Visual Studio'da uygun klavye kısayolunu seçerek erişebilirsiniz. Bu sayfada ilişkin varsayılan kısayollar listelenmektedir **genel** profil, hangi Visual Studio yüklü olduğunda seçmiş olabilirsiniz. Seçtiğiniz profilden bağımsız olarak açarak bir komutun kısayolunu belirleyebilirsiniz **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
 
 Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz. [Visual Studio'daki sık kullanılan komutlar için klavye kısayolları varsayılan](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klavye ipuçları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
-
-Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kısayollarını kullanarak erişim sağlayabilmeniz bakımından genel kabul edilen komutlar yer almaktadır:
 
 |||||
 |-|-|-|-|
@@ -40,7 +38,9 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |[Hata ayıklayıcı bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Diğer bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Tanılama Merkezi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Genel
+## <a name="global-shortcuts"></a>Genel kısayolları
+
+Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi odağa sahip olduğunda, bunları kullanabileceğiniz anlamına gelir.
 
 ### <a name="bkmk_analyze"></a> Analiz edin
 
@@ -161,6 +161,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.Cut|**CTRL + X**<br /><br /> veya<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> veya<br /><br /> **Ctrl + Shift + bileşenleri**|
 |Edit.Delete|**Delete**|
+|Düzen.Çoğalt|**CTRL + D**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**CTRL + SHIFT + F**|
@@ -173,7 +174,6 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.GoToAll|**CTRL +** veya **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL + D**|
 |Edit.GoToMember|**CTRL + 1, Ctrl + M** veya **Ctrl + 1, M** veya **Alt +\\**|
 |Edit.GoToNextLocation|**F8** (sonraki hata hata listesini veya çıktı penceresinde)|
 |Edit.GoToPrevLocation|**Shift + F8** (hata listesini veya çıktı penceresinde önceki hata)|

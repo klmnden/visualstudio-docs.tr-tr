@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82f3426cbba06a27f2d2f74fdd167f003ebb3eae
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982881"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500930"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript ve TypeScript desteği
 
@@ -39,7 +39,7 @@ Visual Studio Mac kullanımlar için [JavaScript dil hizmeti](/visualstudio/ide/
 Tür çıkarımı, JSDoc veya TypeScript Mac için Visual Studio'daki JavaScript IntelliSense temel alabilir bildirimi.
 
 - **Anlam çıkarma** – ile çevreleyen kod bağlamı verdi bir nesnenin türü. Daha fazla bilgi için üzerinde Visual Studio'nun bölümüne bakın. [IntelliSense temel tür çıkarımı üzerinde](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **JSDoc** – ne tür çıkarımı sunmaz doğru tür bilgilerini zamanlar. Bu durumlarda, tür bilgisi tarafından açık olarak sağlanabilir [JSDoc](http://usejsdoc.org/about-getting-started.html) ek açıklamalar. Daha fazla bilgi için üzerinde Visual Studio'nun bölümüne bakın. [IntelliSense JSDoc tabanlı](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **JSDoc** – ne tür çıkarımı sunmaz doğru tür bilgilerini zamanlar. Bu durumlarda, tür bilgisi tarafından açık olarak sağlanabilir [JSDoc](https://jsdoc.app/about-getting-started.html) ek açıklamalar. Daha fazla bilgi için üzerinde Visual Studio'nun bölümüne bakın. [IntelliSense JSDoc tabanlı](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
 - **TypeScript bildirim dosyaları** – `.d.ts` dosyaları değerleri için JavaScript IntelliSense sağlamak amacıyla kullanılır. Bu dosyada bildirilen türleri JSDoc yorumları türleri olarak kullanılabilir. Daha fazla bilgi için üzerinde Visual Studio'nun bölümüne bakın. [IntelliSense temel TypeScript bildirim dosyaları](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
     ![bir typescript tanım dosyası ekleme](media/javascript-image3.png)

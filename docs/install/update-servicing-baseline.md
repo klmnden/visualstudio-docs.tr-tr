@@ -1,5 +1,5 @@
 ---
-title: Bakım sırasında temel Visual Studio güncelleştirme
+title: Bakım temeli sırasında Visual Studio’yu güncelleştirme
 titleSuffix: ''
 description: Hizmet bir taban çizgisine göre kalsanız Visual Studio güncelleştirme hakkında bilgi edinin.
 ms.date: 05/22/2019
@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213850"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501126"
 ---
-# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Bakım sırasında temel Visual Studio güncelleştirme
+# <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Bakım temeli sırasında Visual Studio’yu güncelleştirme
 
-Visual Studio 2019 sık güncelleştirmeler sırasında olacaktır, [ürün yaşam döngüsü](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Bu, her iki alt sürüm güncelleştirmeleri dahil edilir (örneğin: 16,0 16.1 için) yeni özellikleri ve bileşenleri ve hizmet güncelleştirmeleri içerebilir (örneğin: 16.0.4 için 16.0.5) içeren, yalnızca kritik sorunlar için düzeltmeler hedeflenen. 
+Visual Studio 2019 sık güncelleştirmeler sırasında olacaktır, [ürün yaşam döngüsü](/visualstudio/productinfo/release-rhythm#release-channel-updates). Bu, her iki alt sürüm güncelleştirmeleri dahil edilir (örneğin: 16,0 16.1 için) yeni özellikleri ve bileşenleri ve hizmet güncelleştirmeleri içerebilir (örneğin: 16.0.4 için 16.0.5) içeren, yalnızca kritik sorunlar için düzeltmeler hedeflenen. 
 
-Kuruluş Yöneticileri, sonraki bakım temel sürümü geçen yıl boyunca güncelleştirmelerin uygulanması ile desteklenen bir bakım taban istemcileri korumak seçebilirsiniz. Bu yeni özellikler, hata düzeltmeleri veya yeni ikincil güncelleştirmelerinde bileşenleri benimsemek, geliştiriciler ve Yöneticiler için daha fazla esneklik sağlar. İlk hizmet temel 16.0.x ' dir. Bkz: [Kurumsal ve profesyonel müşterileri için destek seçenekleri](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers) daha fazla bilgi için.
+Kuruluş Yöneticileri, sonraki bakım temel sürümü geçen yıl boyunca güncelleştirmelerin uygulanması ile desteklenen bir bakım taban istemcileri korumak seçebilirsiniz. Bu yeni özellikler, hata düzeltmeleri veya yeni ikincil güncelleştirmelerinde bileşenleri benimsemek, geliştiriciler ve Yöneticiler için daha fazla esneklik sağlar. İlk hizmet temel 16.0.x ' dir. Bkz: [Kurumsal ve profesyonel müşterileri için destek seçenekleri](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) daha fazla bilgi için.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Bir hizmet temeli alma
 

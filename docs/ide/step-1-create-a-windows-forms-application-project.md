@@ -1,6 +1,6 @@
 ---
 title: '1. Adım: Bir Windows Forms uygulaması projesi oluşturma'
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979880"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501063"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Bir Windows Forms uygulaması projesi oluşturma
 
@@ -28,14 +28,13 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
 
 ## <a name="open-visual-studio-2017"></a>Açık Visual Studio 2017
 
-1. Menü çubuğunda, **dosya** > **yeni** > **proje**. İletişim kutusu şu şekilde görünmelidir.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**. İletişim kutusunda, aşağıdaki ekran görüntüsüne benzer görünmelidir.
 
-     ![Yeni Proje iletişim kutusu](../ide/media/newprojectdialogcallouts.png)<br/>
-***Yeni proje** iletişim kutusu*
+     ![Yeni Proje iletişim kutusu](../ide/media/newprojectdialogcallouts.png)<br/>***Yeni proje*** *iletişim kutusu*
 
-2. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusu.
+2. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusuna ve ardından **Windows Masaüstü**.
 
-3. Şablonlar listesinde **Windows Forms uygulaması (.NET Framework)** . Yeni form adı **pictureviewer olarak**ve ardından **Tamam** düğmesi.
+3. Şablonlar listesinde **Windows Forms uygulaması (.NET Framework)** . Yeni form adı *pictureviewer olarak*ve ardından **Tamam** düğmesi.
 
     >[!NOTE]
     >Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.<br/><br/>![.NET masaüstü geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
@@ -50,7 +49,7 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
 
    !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde.
 
    Tüm dil ve platform filtreleri uyguladıktan sonra seçin **Windows Forms uygulaması (.NET Framework)** şablonu seçip **sonraki**.
 
@@ -59,13 +58,13 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
    > [!NOTE]
    > Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
    >
-   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Ardından, Visual Studio yükleyicisinde seçin seçin **.NET Masaüstü geliştirmesinden** iş yükü.
-   > 
+   >
    > ![Visual Studio Yükleyicisi'nde .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. 
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için.
 
 1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *pictureviewer olarak* içinde **proje adı** kutusu. Ardından, **Oluştur**.
 

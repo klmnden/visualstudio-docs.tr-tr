@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812134"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500948"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Bir kod sembol yeniden düzenlemeyi yeniden adlandırma
 
@@ -68,10 +68,13 @@ Bu yeniden düzenleme için geçerlidir:
 
 4. Değişiklik ile tamamladığınızda seçin **Uygula** düğme veya basın **Enter** ve değişiklikler uygulanır.
 
-> [!NOTE]
-> Bir çakışma neden zaten var olan bir ad kullanırsanız **Yeniden Adlandır** kutusunun sizi uyaracaktır.
->
-> ![Yeniden adlandırma çakışması](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Açıklamalar
+
+- Bir çakışma neden zaten var olan bir ad kullanırsanız **Yeniden Adlandır** kutusunun sizi uyaracaktır.
+
+   ![Yeniden adlandırma çakışması](media/rename-conflict-cs.png)
+
+- Bir sembol yeniden adlandırmak için başka bir düzenleyicide adını değiştirmek için yoludur. İmleç sembol adı, tuşuna **Ctrl**+ **.** veya yalnızca görünür ve ampul simgesini menüyü genişleterek **Yeniden Adlandır \<eski adı > için \<yeni adı >** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5052cc84cb3c314885483f914385725189ba07d9
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462134"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501141"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza etiketler ekleme
 
@@ -30,11 +30,14 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. İçinde **yüklü şablonlar** listesinde **C#** veya **Visual Basic**.
+1. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusuna ve ardından **Windows Masaüstü**.
 
-1. Şablonlar listesinde seçin **Windows Forms uygulaması** şablon adlandırın **MathQuiz**ve ardından **Tamam** düğmesi.
+1. Şablonlar listesinde seçin **Windows Forms uygulaması (.NET Framework)** şablon adlandırın *MathQuiz*ve ardından **Tamam** düğmesi.
 
-     Adlı bir form *Form1.cs* veya *Form1.vb* , seçtiğiniz programlama diline bağlı olarak görünür.
+    Adlı bir form *Form1.cs* veya *Form1.vb* , seçtiğiniz programlama diline bağlı olarak görünür.
+
+   > [!NOTE]
+   > Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.<br/><br/>![.NET masaüstü geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
 
 ::: moniker-end
 
@@ -65,7 +68,7 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 
 ::: moniker-end
 
-## <a name="to-create-set-properties-for-a-form"></a>Bir formun özelliklerini ayarlama oluşturmak için
+## <a name="to-set-properties-for-a-form"></a>Bir formun özelliklerini ayarlamak için
 
 1. Visual Studio'da formu seçin (ya da *Form1.cs* veya *Form1.vb*programlama diline bağlı olarak) ve ardından değiştirmek, **Metin** özelliğini  **Matematik Sınavı**.
 

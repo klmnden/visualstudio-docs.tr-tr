@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972829"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500992"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
@@ -241,7 +241,7 @@ Bir sunucunun kimliğini doğrulamak için aşağıdaki seçenekler kullanılabi
 
 Bunu etkinleştirmek için gereken temel kimlik doğrulaması kullanacak şekilde **alternatif kimlik doğrulama bilgilerini** aşağıdaki adımları izleyerek Azure DevOps Hizmetleri:
 
-1. Azure DevOps kuruluşunuza sahibi olarak oturum açın (https://dev.azure.com/{organization}/{project}).
+1. Azure DevOps kuruluşunuza sahibi olarak oturum açın (https:\//dev.azure.com/{organization}/{project}).
 
 2. Kuruluş, araç çubuğunda, dişli simgesini seçin ve seçin **ilke**:
 

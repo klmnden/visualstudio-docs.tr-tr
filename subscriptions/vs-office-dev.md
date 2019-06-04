@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934592"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501194"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -82,6 +82,6 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 
-- Office geliştirici aboneliğinizle birlikte Yardım mı gerekiyor? Kullanıma [Destek](https://developer.microsoft.com/office/support) kaynaklardaki [Office Geliştirme Merkezi](https://developer.microsoft.com/office).
+- Office geliştirici aboneliğinizle birlikte Yardım mı gerekiyor? Kullanıma [Destek](https://developer.microsoft.com/office/docs#officecommunity) kaynaklardaki [Office Geliştirme Merkezi](https://developer.microsoft.com/office).
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

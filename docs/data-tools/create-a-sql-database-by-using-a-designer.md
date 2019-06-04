@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569994"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501068"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Bir veritabanı oluşturun ve Visual Studio'da tablo ekleme
 
@@ -26,7 +26,19 @@ Visual Studio, SQL Server Express LocalDB içinde yerel veritabanı dosyası olu
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama ve işleme** Visual Studio'da yüklü iş yükü. Yüklemek için açık **Visual Studio yükleyicisi** ve **daha fazla** > **Değiştir** değiştirmek istediğiniz Visual Studio sürümünü yanındaki (varsa birden fazla bir sürüm) yüklü. Üzerinde **iş yükleri** sekmesindeki **Web ve bulut**, seçin **veri depolama ve işleme**ve ardından **Değiştir** iş yüküne eklemek için Visual Studio.
+Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama ve işleme** Visual Studio'da yüklü iş yükü. Yüklemek için açık **Visual Studio yükleyicisi** ve **Değiştir** veya **daha fazla** > **Değiştir** yanındaki sürümü Değiştirmek istediğiniz visual Studio.
+
+::: moniker range=">=vs-2019"
+
+Üzerinde **iş yükleri** sekmesindeki **diğer araç takımları**, seçin **veri depolama ve işleme**ve ardından **Değiştir** iş yüküne eklemek için Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Üzerinde **iş yükleri** sekmesindeki **Web ve bulut**, seçin **veri depolama ve işleme**ve ardından **Değiştir** iş yüküne eklemek için Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Bir proje ve yerel veritabanı dosyası oluştur
 
