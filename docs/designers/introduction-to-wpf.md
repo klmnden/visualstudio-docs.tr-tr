@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893929"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714806"
 ---
 # <a name="wpf-overview"></a>WPF’ye genel bakış
 
@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkil
 
 ![Contoso sağlık hizmetleri kullanıcı Arabirimi örneği](../designers/media/wpfintrofigure24.png)
 
-WPF setinin modern grafik donanımının yararlanmak için yerleşik bir çözüm bağımsız ve vektör tabanlı işleme altyapısıdır. WPF Extensible Application Markup Language (XAML), denetimleri, veri bağlama, düzen, 2D ve 3D grafikler, animasyon, stiller, şablonlar, belgeleri, medya, metin içeren bir uygulama geliştirme özellikleri kapsamlı bir dizi çekirdek genişletir ve Tipografi. WPF, .NET Framework, .NET Framework Sınıf Kitaplığı'nın diğer öğeleri bir araya getiren uygulamalar oluşturmanıza yardımcı olacak dahil edilir.
+WPF setinin modern grafik donanımının yararlanmak için yerleşik bir çözüm bağımsız ve vektör tabanlı işleme altyapısıdır. WPF Extensible Application Markup Language (XAML), denetimleri, veri bağlama, düzen, 2D ve 3D grafikler, animasyon, stiller, şablonlar, belgeleri, medya, metin içeren bir uygulama geliştirme özellikleri kapsamlı bir dizi çekirdek genişletir ve Tipografi. WPF, .NET parçası olduğundan, .NET API diğer öğeleri bir araya getiren uygulamalar oluşturabilirsiniz.
 
 Bu genel bakışta yeni gelenlere yöneliktir ve temel işlevleri ve WPF kavramlarını ele alınmaktadır.
 
 ## <a name="program-with-wpf"></a>WPF ile programı
 
-WPF mevcut bir alt kümesini çoğunlukla bulunan .NET Framework türleri olarak <xref:System.Windows> ad alanı. ASP.NET ve Windows Forms gibi yönetilen teknolojilerini kullanarak uygulamaları .NET Framework ile daha önce geliştirdim, programlama deneyimi temel WPF tanımanız gerekir; sınıf örneği, özellikleri, yöntemleri çağırabilir ve tüm programlama dili, C# veya Visual Basic gibi en sevdiğiniz .NET kullanarak olayları işleyebilirsiniz.
+WPF mevcut bir alt kümesini (çoğunlukla) bulunan .NET türleri olarak <xref:System.Windows> ad alanı. ASP.NET ve Windows Forms gibi yönetilen teknolojilerini kullanarak uygulamalar .NET ile daha önce geliştirdim, programlama deneyimi temel WPF tanımanız gerekir; sınıf örneği, özellikleri, yöntemleri çağırabilir ve ayarlama olayları işler, en sevdiğiniz .NET gibi programlama dilini kullanarak C# veya Visual Basic.
 
 WPF özellikleri ve olayları geliştiren ek programlama yapıları içerir: [bağımlılık özellikleri](/dotnet/framework/wpf/advanced/dependency-properties-overview) ve [yönlendirilmiş olaylar](/dotnet/framework/wpf/advanced/routed-events-overview).
 

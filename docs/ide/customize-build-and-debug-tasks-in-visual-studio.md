@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e1c84aecf40e9a4fd0b58ee046dad93cec9f059
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963229"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715088"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirme ve hata ayıklama için "Klasör Aç" geliştirme görevleri
 
@@ -313,7 +313,7 @@ Ayarları okuma *.gitignore* dosya, kendi ana dizini ve tüm alt dizinleri için
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [C++ için klasör Proje Aç](/cpp/ide/non-msbuild-projects)
-- [C++'da CMake projeleri](/cpp/ide/cmake-tools-for-visual-cpp)
-- [NMAKE başvurusu](/cpp/build/nmake-reference)
+- [C++ için klasör Proje Aç](/cpp/build/non-msbuild-projects)
+- [C++'da CMake projeleri](/cpp/build/cmake-tools-for-visual-cpp)
+- [NMAKE başvurusu](/cpp/build/reference/nmake-reference)
 - [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)

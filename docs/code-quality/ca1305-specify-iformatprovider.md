@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797539"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714682"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider belirt
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797539"
 
 Yöntem veya Oluşturucu kabul eden aşırı yüklemelere sahip bir veya daha fazla üye çağıran bir <xref:System.IFormatProvider?displayProperty=fullName> parametresi ve yöntem veya Oluşturucu alan aşırı yüklemesini çağırmaz <xref:System.IFormatProvider> parametresi.
 
-Bu kural yoksayılıyor olarak belgelenmiş olan .NET Framework yöntemlere yapılan çağrılar yoksayar <xref:System.IFormatProvider> parametresi. Kural ayrıca, aşağıdaki yöntemlerden yok sayar:
+Bu kural yoksayılıyor olarak belgelenmiştir .NET yöntemlere yapılan çağrılar yoksayar <xref:System.IFormatProvider> parametresi. Kural ayrıca, aşağıdaki yöntemlerden yok sayar:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Bu kural yoksayılıyor olarak belgelenmiş olan .NET Framework yöntemlere yap�
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Olduğunda bir <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> veya <xref:System.IFormatProvider> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET Framework üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
+Olduğunda bir <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> veya <xref:System.IFormatProvider> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
 
 - Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

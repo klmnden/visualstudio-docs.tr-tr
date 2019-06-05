@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825285"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715230"
 ---
 # <a name="security-warnings"></a>Güvenlik uyarıları
 
@@ -36,7 +36,7 @@ Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler.
 |[CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Dışarıdan görünen bir tür, kesilebilir başvuru türü olan dışarıdan görünen bir salt okunur alan içerir. Kesilebilir tür, örnek verileri değiştirilebilen bir türdür.|
 |[CA2105: Dizi alanları salt okunur değildir](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Dizi içeren alana salt okunur (salt okunur Visual Basic) değiştirici uyguladığınızda alan, farklı bir dizi başvurmak için değiştirilemez. Ancak, dizinin öğeleri salt okunur bir alanda depolanmış olsa da değiştirilebilir.|
 |[CA2106: BİLDİRİMLERİN Bildirimlerin güvenliğini sağlayın](../code-quality/ca2106-secure-asserts.md)|Bir yöntem izin ileri sürer ve güvenlik önlemi olmayan çağrı üzerinde gerçekleşir. Güvenlik denetimleri yapmadan herhangi bir güvenlik izni ileri sürmek, kodunuzdaki güvenlik zayıflıklarını yararlanılabilir bırakır.|
-|[CA2107: Gözden geçirmeyi reddetmek ve yalnızca kullanımına izin ver](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|PermitOnly yöntemini kullanmak ve CodeAccessPermission.Deny güvenlik eylemleri yalnızca .NET Framework güvenliğinin gelişmiş bir bilgiye sahip olanları tarafından kullanılmalıdır. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.|
+|[CA2107: Gözden geçirmeyi reddetmek ve yalnızca kullanımına izin ver](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|PermitOnly kullanarak yöntemi ve CodeAccessPermission.Deny güvenlik eylemleri yalnızca .NET güvenliğinin Gelişmiş bir bilgiye sahip olanları tarafından kullanılmalıdır. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.|
 |[CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Ortak veya korunan değer türü, Veri Erişim veya Bağlantı Talepleri tarafından güvenlik altına alınır.|
 |[CA2109: Görünen olay işleyicileri gözden geçirin](../code-quality/ca2109-review-visible-event-handlers.md)|Ortak veya korunan olay işleme yöntemi algılandı. Olay işleme yöntemleri kesinlikle gerekli olmadığı sürece maruz bırakılmamalıdır.|
 |[CA2111: İşaretçiler görünür olmamalıdır](../code-quality/ca2111-pointers-should-not-be-visible.md)|İşaretçi özel, içsel veya salt okunur değildir. Kötü amaçlı kod işaretçinin değerini değiştirebilir, potansiyel olarak bellekte rasgele konumlara erişme izni verebilir veya uygulama ya da sistem hatalarına neden olabilir.|

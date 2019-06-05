@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260963"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715098"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Veri Kaynakları penceresinden sürüklendiğinde denetimin oluşturulmasını ayarlama
 
@@ -45,7 +45,7 @@ Bu bağlamda terimi *nesne* bir özel iş nesnesi, bir varlık (bir varlık veri
 
     - Tüm verileri tek bir denetimde görüntülemek için farklı bir denetim listesinde, gibi seçin **DataGrid** veya **listesi** bir WPF uygulamasında veya **DataGridView** Windows Forms'ta uygulama.
 
-    Mevcut denetimlerin listesinin hangi tasarımcıda sahip olduğunuz açık, .NET Framework'ün hangi sürümünün projenizin hedeflediği bağlıdır ve olup özel eklediğiniz bağlama söz konusu destek veri denetimleri **araç kutusu**. Oluşturmak istediğiniz denetimi kullanılabilir denetimleri listesinde değilse, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    Projenizin hedeflediği açık, hangi .NET sürümünün sahip hangi tasarımcıda mevcut denetimlerin listesinin bağlıdır ve olup özel eklediğiniz bağlama söz konusu destek veri denetimleri **araç kutusu**. Oluşturmak istediğiniz denetimi kullanılabilir denetimleri listesinde değilse, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Veri tabloları veya nesneleri için denetim listesini eklenebilen özel bir Windows Forms denetimi oluşturma hakkında bilgi edinmek için **veri kaynakları** penceresinde görmek [karmaşık veri destekleyen bir Windows Forms kullanıcı denetimi oluşturma Bağlama](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Bir sütun veya bir nesneyi bir özelliği temsil eden bir öğe sürüklemeden 
 
 4. Sütun veya özellik açılan menüsüne tıklayın ve ardından öğeyi tasarımcıya sürüklediğinizde oluşturmak istediğiniz denetimi seçin.
 
-     Projenizin hedeflediği açık, .NET Framework'ün hangi sürümünün sahip hangi tasarımcıda mevcut denetimlerin listesinin bağlıdır ve hangi özel denetimleri için veri bağlama, eklediğiniz destekleyen **araç kutusu**. Oluşturmak istediğiniz denetim mevcut denetimlerin listesinin içinde ise, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     Projenizin hedeflediği açık, hangi .NET sürümünün sahip hangi tasarımcıda mevcut denetimlerin listesinin bağlıdır ve hangi özel denetimleri için veri bağlama, eklediğiniz destekleyen **araç kutusu**. Oluşturmak istediğiniz denetim mevcut denetimlerin listesinin içinde ise, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Veri sütunları ya da özelliği için denetim listesini eklenebilen özel bir denetimin nasıl oluşturulacağını öğrenmek için **veri kaynakları** penceresinde görmek [BasitveribağlamayıdestekleyenbirWindowsFormskullanıcıdenetimioluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

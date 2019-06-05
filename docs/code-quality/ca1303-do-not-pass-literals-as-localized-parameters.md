@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bdae3d0ee17624a2b168e5ce944ba10ab37fc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc32db1aea9c5514a7548bc889b65463de3de3d5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797466"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714691"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 
@@ -36,9 +36,10 @@ ms.locfileid: "62797466"
 |Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem bir dize değişmez değer parametre olarak bir oluşturucu veya .NET Framework Sınıf Kitaplığı'nda yöntemi geçirir ve bu dize yerelleştirilebilir olmalıdır.
 
- Bu uyarı, bir değişmez dize değeri olarak bir parametre veya özellik geçirilir ve bir veya daha fazla aşağıdaki durumlarda true olduğunda ortaya çıkar:
+Bir yöntem bir dize değişmez değer parametre olarak için .NET yapıcıya veya yönteme geçirir ve bu dize yerelleştirilebilir olmalıdır.
+
+Bu uyarı, bir değişmez dize değeri olarak bir parametre veya özellik geçirilir ve bir veya daha fazla aşağıdaki durumlarda true olduğunda ortaya çıkar:
 
 - <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
 
@@ -47,22 +48,27 @@ ms.locfileid: "62797466"
 - "Value" veya "biçim" Console.Write veya Console.WriteLine yönteme geçirilen dize parametresi adıdır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Kaynak koduna gömülü dize değişmez değerleri yerelleştirmek zordur.
+
+Kaynak koduna gömülü dize değişmez değerleri yerelleştirmek zordur.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için dize sabit değeri bir örneği üzerinden alınan bir dize yerine <xref:System.Resources.ResourceManager> sınıfı.
+
+Bu kural ihlalini düzeltmek için dize sabit değeri bir örneği üzerinden alınan bir dize yerine <xref:System.Resources.ResourceManager> sınıfı.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Kod kitaplığı yerelleştirilmemiş veya dizenin son kullanıcı veya kod kitaplığı kullanarak bir geliştirici için açık değilse bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
- Kullanıcılar ya da parametre veya adlı özellik yeniden adlandırma ya da bu öğeleri koşullu olarak işaretleme yerelleştirilmiş dizeleri geçirilmemelidir yöntemleri karşı gürültü ortadan kaldırabilir.
+Kod kitaplığı yerelleştirilmemiş veya dizenin son kullanıcı veya kod kitaplığı kullanarak bir geliştirici için açık değilse bu kuraldan bir uyarıyı bastırmak güvenlidir.
+
+Kullanıcılar ya da parametre veya özelliği yeniden adlandırma ya da bu öğeleri koşullu olarak işaretleme yerelleştirilmiş dizeleri geçirilmemelidir yöntemleri karşı gürültü ortadan kaldırabilir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek iki bağımsız değişkenlerinden biri aralık dışında olduğunda özel durum oluşturan bir yöntemi gösterir. İlk bağımsız değişken için özel Oluşturucu bu kuralı ihlal bir sabit dizesi geçirilir. İkinci bağımsız değişkeni için oluşturucu üzerinden alınan bir dize doğru geçirilen bir <xref:System.Resources.ResourceManager>.
 
- [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
- [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
- [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]
+Aşağıdaki örnek iki bağımsız değişkenlerinden biri aralık dışında olduğunda özel durum oluşturan bir yöntemi gösterir. İlk bağımsız değişken için özel Oluşturucu bu kuralı ihlal bir sabit dizesi geçirilir. İkinci bağımsız değişkeni için oluşturucu üzerinden alınan bir dize doğru geçirilen bir <xref:System.Resources.ResourceManager>.
+
+[!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
+[!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
+[!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Masaüstü Uygulamalarındaki Kaynaklar](/dotnet/framework/resources/index)
+
+- [Masaüstü uygulamalarındaki kaynaklar](/dotnet/framework/resources/index)

@@ -1,5 +1,5 @@
 ---
-title: LINQ to XML genel bakış ile WPF verilerini bağlama
+title: LINQ to XML ile WPF Verilerini Bağlamaya Genel Bakış
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843938"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715072"
 ---
-# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML genel bakış ile WPF verilerini bağlama
+# <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML ile WPF Verilerini Bağlamaya Genel Bakış
 
 Bu konu, dinamik veri bağlama özellikleri tanıtır <xref:System.Xml.Linq> ad alanı. Bu özellikler, Windows Presentation Foundation (WPF) uygulamalarında kullanıcı arabirimi (UI) öğeleri için bir veri kaynağı olarak kullanılabilir. Bu senaryo özel kullanır *Dinamik Özellikler* , <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> ve <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML ve LINQ to XML
 
-.NET Framework 3.0 teknolojilerini desteklemek için Microsoft tarafından oluşturulan bir XML diyalekti Extensible Application Markup Language (XAML) olur. WPF içinde kullanıcı arabirimi öğeleri ve olayları ve veri bağlama gibi ilgili özellikleri göstermek için kullanılır. Program yapısı, program denetimi gibi göstermek için kullanılan Windows Workflow Foundation'da XAML (*iş akışları*). XAML bildirim temelli bir programın daha bireyselleştirilmiş davranışını tanımlayan ilgili yordam kodundan ayrı bir teknoloji yönlerini sağlar.
+Extensible Application Markup Language (XAML) .NET teknolojilerini desteklemek için Microsoft tarafından oluşturulan bir XML diyalekti ' dir. WPF içinde kullanıcı arabirimi öğeleri ve olayları ve veri bağlama gibi ilgili özellikleri göstermek için kullanılır. Program yapısı, program denetimi gibi göstermek için kullanılan Windows Workflow Foundation'da XAML (*iş akışları*). XAML bildirim temelli bir programın daha bireyselleştirilmiş davranışını tanımlayan ilgili yordam kodundan ayrı bir teknoloji yönlerini sağlar.
 
 XAML ve LINQ to XML etkileşim kurabilir, geniş iki yolu vardır:
 

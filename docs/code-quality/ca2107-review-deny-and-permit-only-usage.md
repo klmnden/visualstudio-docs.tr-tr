@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808269"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714701"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Gözden geçirmeyi reddedin ve yalnızca kullanımına izin verin
 
@@ -31,14 +31,16 @@ ms.locfileid: "62808269"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem PermitOnly veya reddetme güvenlik eylem belirten bir güvenlik denetimi içerir.
+
+Bir yöntem PermitOnly veya reddetme güvenlik eylem belirten bir güvenlik denetimi içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Güvenlik eylemi yalnızca .NET Framework güvenliğinin Gelişmiş bir bilgiye sahip olan olanlar tarafından kullanılmalıdır. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.
 
- Reddetmek için bir güvenlik talebi karşılamak üzere oluşuyor yığın ilerlemesi varsayılan davranışını değiştirir. Çağrı yığınında çağıranlar, gerçek izinlerinden reddeden yöntem süresince verilmelidir değil izinleri belirtmenize olanak tanır. Yığın ilerlemesi Reddet tarafından güvenli bir yöntem algılar ve talep edilen izni reddedildi izinler eklenirse, yığın ilerlemesi başarısız olursa. PermitOnly ayrıca yığın ilerlemesi varsayılan davranışını değiştirir. Çağıranlar izinlerine bakılmaksızın verilebilecek izinleri belirlemek kod sağlar. Yığın ilerlemesi PermitOnly tarafından güvenli hale getirilmiş bir yöntem algılar ve talep edilen izni PermitOnly tarafından belirtilen izinler dahil edilmemişse, yığın ilerlemesi başarısız olursa.
+<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Güvenlik eylemi yalnızca .NET güvenlik bilgiye sahip olan olanlar tarafından kullanılmalıdır. Bu güvenlik eylemlerini kullanan kod güvenlik incelemesi altından geçmelidir.
 
- Bu eylemleri bağımlı kod kendi sınırlı yararlılığını ve ince davranışı nedeniyle güvenlik açıklarını dikkatlice değerlendirilmelidir. Aşağıdakileri göz önünde bulundurun:
+Reddetmek için bir güvenlik talebi karşılamak üzere oluşuyor yığın ilerlemesi varsayılan davranışını değiştirir. Çağrı yığınında çağıranlar, gerçek izinlerinden reddeden yöntem süresince verilmelidir değil izinleri belirtmenize olanak tanır. Yığın ilerlemesi Reddet tarafından güvenli bir yöntem algılar ve talep edilen izni reddedildi izinler eklenirse, yığın ilerlemesi başarısız olursa. PermitOnly ayrıca yığın ilerlemesi varsayılan davranışını değiştirir. Çağıranlar izinlerine bakılmaksızın verilebilecek izinleri belirlemek kod sağlar. Yığın ilerlemesi PermitOnly tarafından güvenli hale getirilmiş bir yöntem algılar ve talep edilen izni PermitOnly tarafından belirtilen izinler dahil edilmemişse, yığın ilerlemesi başarısız olursa.
+
+Bu eylemleri bağımlı kod kendi sınırlı yararlılığını ve ince davranışı nedeniyle güvenlik açıklarını dikkatlice değerlendirilmelidir. Aşağıdakileri göz önünde bulundurun:
 
 - [Bağlantı talepleri](/dotnet/framework/misc/link-demands) izin verme ya da PermitOnly tarafından etkilenmez.
 
@@ -51,22 +53,24 @@ ms.locfileid: "62808269"
 - Reddetme herhangi bir etkisi, çağıran Reddet tarafından engellenen izni, yani, çağıran korumalı kaynağa doğrudan Reddet atlayarak erişebilirsiniz. Benzer şekilde, çağırana reddedilen iznine sahip değil, yığın ilerlemesi izin verme başarısız.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu güvenlik eylemlerini kullanımı bir ihlali neden olur. Bir ihlali gidermek için bu güvenlik eylemlerini kullanmayın.
+
+Bu güvenlik eylemlerini kullanımı bir ihlali neden olur. Bir ihlali gidermek için bu güvenlik eylemlerini kullanmayın.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yalnızca bir güvenlik incelemesi tamamladıktan sonra bu kuraldan bir uyarıyı gizler.
+
+Yalnızca bir güvenlik incelemesi tamamladıktan sonra bu kuraldan bir uyarıyı gizler.
 
 ## <a name="example-1"></a>Örnek 1
- Aşağıdaki örnek, bazı kısıtlamalar Reddet gösterir.
 
- Aşağıdaki kitaplık korumak güvenlik taleplerini dışında aynı olan iki yöntem sahip bir sınıf içerir.
+Aşağıdaki örnek, bazı kısıtlamalar Reddet gösterir. Kitaplık korumak güvenlik taleplerini dışında aynı olan iki yöntem sahip bir sınıf içerir.
 
- [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
+[!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
- Aşağıdaki uygulama Kitaplığı'ndan güvenli yöntemlere izin verme etkilerini gösterir.
 
- [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
+Aşağıdaki uygulama Kitaplığı'ndan güvenli yöntemlere izin verme etkilerini gösterir.
+
+[!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 
 Bu örnek aşağıdaki çıktıyı üretir:
 

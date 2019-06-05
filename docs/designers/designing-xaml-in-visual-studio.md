@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897899"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715462"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Visual Studio’da XAML tasarlama
 
@@ -52,7 +52,7 @@ En temel görevler için Visual Studio IDE ve Visual Studio için Blend paylaş�
 
 - **Takım Gezgini için:** Takım Gezgini ile projelerinizi takım işbirliğini kolaylaştırmak için GIT veya TFS depoları ile yönetebilirsiniz. Bkz: [Takım Gezgini'nde iş](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** Visual Studio ve Visual Studio için Blend hem NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET Framework için bir paket yöneticisidir.
+- **NuGet:** Visual Studio ve Visual Studio için Blend hem NuGet paketlerini yönetebilirsiniz. NuGet paketleri bir çözümden kaldırılması ve yüklenmesine basitleştirir .NET için paket yöneticisidir.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Visual Studio için blend'de Gelişmiş Özellikler
 

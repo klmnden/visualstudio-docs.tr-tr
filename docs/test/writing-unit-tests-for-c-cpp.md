@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461589"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715255"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -41,7 +41,7 @@ C++ birim testi projeleri desteği [CodeLens](../ide/find-code-changes-and-other
 
 - **Boost.Test** varsayılan bileşeni olarak eklenir **C++ ile masaüstü geliştirme** iş yükü. İle tümleşik **Test Gezgini** ancak şu anda proje şablonu yok, bu nedenle onu el ile yapılandırılması gerekir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Boost.Test kullanma](how-to-use-boost-test-for-cpp.md).
 
-- **CTest** desteği ile birlikte [Visual Studio için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da CTest kullanma](how-to-use-ctest-for-cpp.md).
+- **CTest** desteği ile birlikte [Visual Studio için CMake araçlarını](/cpp/build/cmake-tools-for-visual-cpp) parçası olan bileşen, **C++ ile masaüstü geliştirme** iş yükü. Ancak, CTest henüz tam olarak tümleşiktir değil **Test Gezgini**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da CTest kullanma](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 veya önceki**
 

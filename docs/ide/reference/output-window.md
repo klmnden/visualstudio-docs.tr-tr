@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a88ccb599ce709cae5e58b4fd2678b34706362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c64e13d6ed0f4951b0b196931f8f627b5c042ea
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969132"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715431"
 ---
 # <a name="output-window"></a>Çıktı penceresi
 
@@ -67,7 +67,7 @@ Bazı IDE özellikleri ve içinde çağrılan komutlarda [komut penceresi](../..
 
 Kendi uygulamalarınızı çalışma zamanında tanılama iletileri yazmak için de programlayabileceğiniz bir **çıkış** bölmesi. Bunu yapmak için üyeleri kullanan <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> sınıfını <xref:System.Diagnostics> ad alanı .NET Framework sınıf kitaplığı. Üyeleri <xref:System.Diagnostics.Debug> çözüm veya projenin hata ayıklama yapılandırmaları oluşturduğunuzda sınıfı görünen çıkış; üyeleri <xref:System.Diagnostics.Trace> sınıfı görüntü çıktısı hata ayıklama veya yayın yapılandırmaları oluşturduğunuzda. Daha fazla bilgi için [çıkış penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-C++'da, özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Tuşuna basarak **F1** uygun bir Yardım konusu, bir çıkış satıra görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı çıkışını biçimlendirmek](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+C++'da, özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Tuşuna basarak **F1** uygun bir Yardım konusu, bir çıkış satıra görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı çıkışını biçimlendirmek](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Kaydırma davranışı
 

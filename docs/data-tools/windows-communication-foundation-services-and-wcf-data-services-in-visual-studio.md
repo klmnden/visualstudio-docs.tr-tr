@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564836"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714479"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 
@@ -56,7 +56,7 @@ WCF Veri Hizmetleri, standart açık veri (OData) protokolünün bir uygulaması
 
 ### <a name="wcf-programming-model"></a>WCF programlama modeli
 
-İki varlık arasındaki iletişimi WCF programlama modeli dayanır: bir WCF hizmeti ve bir WCF istemcisi. Programlama modeli içinde kapsüllenir <xref:System.ServiceModel> .NET Framework'teki ad alanı.
+İki varlık arasındaki iletişimi WCF programlama modeli dayanır: bir WCF hizmeti ve bir WCF istemcisi. Programlama modeli içinde kapsüllenir <xref:System.ServiceModel> .NET içinde ad alanı.
 
 ### <a name="wcf-service"></a>WCF Hizmeti
 
@@ -228,7 +228,7 @@ Yalnızca bir denetim için herhangi bir veri kaynağını bağlayabilirsiniz gi
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Nasıl yapılır: Varolan türleri yeniden kullan bir hizmetini yapılandırma
 
-Bir hizmet başvurusu için bir proje eklendiğinde, hizmette tanımlanan herhangi bir türü yerel projede oluşturulur. Çoğu durumda, bu hizmet ortak .NET Framework türleri kullanıyorsa veya türleri bir paylaşılan kitaplıkta tanımlandığında yinelenen türleri oluşturur.
+Bir hizmet başvurusu için bir proje eklendiğinde, hizmette tanımlanan herhangi bir türü yerel projede oluşturulur. Çoğu durumda, bu hizmet ortak .NET türleri kullanıyorsa veya türleri bir paylaşılan kitaplıkta tanımlandığında yinelenen türleri oluşturur.
 
 Bu sorunu önlemek için bütünleştirilmiş kodlardaki türleri varsayılan olarak paylaşılır. Tür için bir veya daha fazla derlemeleri paylaşımı devre dışı bırakmak isterseniz, bu nedenle, bunu yapabilirsiniz **yapılandırma hizmet başvuruları** iletişim kutusu.
 

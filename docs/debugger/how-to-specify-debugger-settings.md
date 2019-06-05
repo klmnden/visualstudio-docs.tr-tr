@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847516"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714968"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme
+# <a name="how-to-specify-debugger-settings"></a>Nasıl yapılır: Hata Ayıklayıcısı Ayarlarını Belirtme
 İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hata ayıklayıcı davranış değişkenleri gösterilme biçimini, belirli uyarılar olup olmadığını sunulur, kesme noktaları nasıl ayarlanacağını ve bozucu çalışan programları nasıl etkilediğini dahil olmak üzere, çeşitli ayarları belirtebilirsiniz. Hata ayıklayıcı ayarlarında belirttiğiniz **seçenekleri** iletişim kutusu.
 
 ### <a name="to-set-debugger-options"></a>Hata ayıklayıcı seçeneklerini ayarlamak için
@@ -45,4 +45,4 @@ ms.locfileid: "62847516"
 - [Genel, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/general-debugging-options-dialog-box.md)
 - [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
-- [Genel Derleme Komutları ve Özellikler Makroları](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Genel Derleme Komutları ve Özellikler Makroları](/cpp/build/reference/common-macros-for-build-commands-and-properties)

@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ac4d91de1e41477e1acd21118422e3164e20e80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445373"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715416"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio tümleştirmesi (MSBuild)
 Visual Studio ana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.
 
  Bu makalede belirli yönlerini [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]'s [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] barındıran sayılacağı projeleri özelleştirirken ve *.targets* yüklemek ve derlemek istediğiniz dosyaları [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu emin olmanıza yardımcı olacak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IntelliSense ve iş özel projenizde hata ayıklama gibi özellikleri.
 
- C++ projeleri hakkında daha fazla bilgi için bkz. [proje dosyalarını](/cpp/ide/project-files).
+ C++ projeleri hakkında daha fazla bilgi için bkz. [proje dosyalarını](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Proje dosya adı uzantıları
  *MSBuild.exe* desenle eşleşen proje dosya adı uzantısını tanır *.\* Proj*. Ancak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yalnızca bir alt kümesini projeyi yükleyecek olan dile özgü proje sistemini belirler bu proje dosya adı uzantılarını tanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir dilden yok [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tabanlı bir proje sistemi.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.
 
-     Proje işaretlenmiş **(kullanılamıyor)**.
+     Proje işaretlenmiş **(kullanılamıyor)** .
 
-2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.
+2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >** .
 
      Proje dosyası Visual Studio XML Düzenleyicisi'nde açılır.
 

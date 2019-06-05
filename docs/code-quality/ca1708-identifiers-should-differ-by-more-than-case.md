@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6923c4fd575d61b4854d9bb7d32f541bdda162
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841994"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714246"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Tanımlayıcılar yalnızca büyük küçük harfle birbirinden farklı olmamalıdır
 
@@ -48,7 +48,7 @@ Büyük küçük harf duyarlı bir şekilde diğer tanımlayıcılarla karşıla
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Bu kuraldan uyarıyı bastırmayın. Kitaplığı, .NET Framework içindeki kullanılabilir tüm dillerde kullanılabilir olmayabilir.
+Bu kuraldan uyarıyı bastırmayın. Kitaplığı,. NET'te tüm kullanılabilir diller kullanılabilir olmayabilir.
 
 ## <a name="configurability"></a>Etkiler ve yapılandırma
 

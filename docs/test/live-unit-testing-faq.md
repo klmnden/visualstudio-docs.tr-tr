@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953679"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714482"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -33,7 +33,7 @@ Live Unit Testing, aşağıdaki tabloda listelenen üç popüler birim test çer
 |Test çerçevesi  |Visual Studio bağdaştırıcısı en düşük sürüm  |Framework en düşük sürüm  |
 |---------|---------|---------|
 |xUnit.net |xunit.Runner.VisualStudio sürüm 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |3.5.1 NUnit3TestAdapter sürümü |NUnit 3.5.0 sürümü |
+|NUnit |NUnit3TestAdapter sürüm 3.7.0 |NUnit 3.5.0 sürümü |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Eski MSTest tabanlı test varsa, bu başvuruyu projeleri `Microsoft.VisualStudio.QualityTools.UnitTestFramework` ve yeni MSTest NuGet paketleri, Visual Studio 2017 sürüm 15.4 veya sonraki bir sürümü yükseltme için taşımak istediğiniz yok.

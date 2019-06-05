@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797497"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714351"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirt
 
@@ -40,7 +40,7 @@ Yöntem veya Oluşturucu kabul eden aşırı yüklenmiş bir üyeyi çağıran b
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Olduğunda bir <xref:System.Globalization.CultureInfo> veya <xref:System.IFormatProvider?displayProperty=nameWithType> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET Framework üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
+Olduğunda bir <xref:System.Globalization.CultureInfo> veya <xref:System.IFormatProvider?displayProperty=nameWithType> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
 
 - Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

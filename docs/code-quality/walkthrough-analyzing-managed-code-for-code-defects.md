@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825049"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715263"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme
 
 Bu izlenecek yolda Kod Analizi aracını kullanarak kod kusurları için yönetilen bir proje analiz.
 
-Bu kılavuzda, Microsoft .NET Framework tasarım yönergeleri ile uyumluluk için bütünleştirilmiş kodlarınızı .NET yönetilen kodu analiz etmek için kod analizini kullanarak işleminin adım gösterilir.
+Bu kılavuzda, .NET tasarım yönergeleri ile uyumluluk için bütünleştirilmiş kodlarınızı .NET yönetilen kodu analiz etmek için kod analizini kullanarak işleminin adım gösterilir.
 
 ## <a name="create-a-class-library"></a>Bir sınıf kitaplığı oluşturma
 

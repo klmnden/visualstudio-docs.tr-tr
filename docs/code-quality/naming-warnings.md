@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825448"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715311"
 ---
 # <a name="naming-warnings"></a>Adlandırma Uyarıları
-Adlandırma uyarıları bağlılığı .NET Framework tasarım yönergeleri adlandırma kuralları için destek.
+
+Adlandırma uyarıları bağlılığı .NET tasarım yönergeleri adlandırma kuralları için destek.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -42,7 +43,7 @@ Adlandırma uyarıları bağlılığı .NET Framework tasarım yönergeleri adla
 |[CA1719: Parametre adları üye adlarıyla eşleşmemelidir](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Parametre adı bir parametre anlamını iletişim kurmanız gerekir ve üyenin adını üye anlamını iletişim kurmanız gerekir. Bunların aynı olduğu yerlerde nadir bir tasarım olur. Aynı üye adıyla parametreyi adlandırma sezgisel değildir ve kütüphane kullanımını zorlaştırır.|
 |[CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Kaynak dizedeki her sözcüğün büyük/küçük harf üzerinde temel belirteçler içinde bölünür. Her bir bitişik ikili-işaret kombinasyonu Microsoft yazım kitaplığı tarafından denetlenir. Tanınırsa, kelime kural ihlali üretir.|
 |[CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Kaynak dizesi, Microsoft Yazım kitaplığı tarafından tanınmayan bir veya birkaç sözcük içerir.|
-|[CA1724: Tür adları ad alanlarıyla eşleşmemelidir](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Tür adları, .NET Framework Sınıf Kitaplığı'nda tanımlanan ad alanlarının adlarıyla eşleşmemelidir. Bu kuralın ihlali kitaplığın kullanılabilirliğini azaltabilir.|
+|[CA1724: Tür adları ad alanlarıyla eşleşmemelidir](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Tür adları, .NET ad alanlarının adlarıyla eşleşmemelidir. Bu kuralın ihlali kitaplığın kullanılabilirliğini azaltabilir.|
 |[CA1707: Tanımlayıcılar alt çizgi içermemelidir](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Kural gereği, tanımlayıcı adlar alt çizgi (_) karakterini içermez. Bu kural ad alanlarını, türleri, üyeleri ve parametreleri denetler.|
 |[CA1721: TÜR Özellik adları get yöntemleri ile eşleşmemelidir](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Ortak veya korumalı bir üye adı "Get" ile başlar ve aksi durumda ortak veya korumalı özellik adıyla eşleşir. "Get" yöntemlerinin ve özelliklerinin açıkça işlevlerinden ayırt edilebilen adları olması gerekir.|
 |[CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Ad alanı adı veya tür adı ayrılmış anahtar sözcük bir programlama dili ile eşleşir. Tanımlayıcı adı ve türleri için ortak dil çalışma zamanı, hedef diller tarafından tanımlanan anahtar sözcüklerle aynı değildir.|

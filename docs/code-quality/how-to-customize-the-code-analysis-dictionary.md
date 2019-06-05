@@ -12,24 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbc2d0f0863ae4b9083c0fb56873eb18b665c7c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b43d731634022a2f3fcb9e00b552e75e5322db8c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816350"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715243"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Analizi Sözlüğünü Özelleştirme
-Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NET Framework yönergeleri hataları kodunuzda tanımlayıcıları kontrol etmek için yerleşik bir sözlük kullanır. Eklemek, kaldırmak veya hüküm ve kısaltmalar yerleşik sözlüğüne kısaltmalar değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.
 
- Örneğin, kodunuzu bulunan adlı bir sınıf varsayalım **DoorKnokker**. Kod Analizi adı iki bir kelimelerin bileşik tanımlamak: **kapı** ve **knokker**. Ardından bir uyarı oluşturacak, **knokker** doğru yazıldığından değil. Kod Analizi yazım tanımak için zorlamak için terimi ekleyebilirsiniz **knokker** için özel sözlük.
+Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NET tasarım yönergeleri hataları kodunuzda tanımlayıcıları kontrol etmek için yerleşik bir sözlük kullanır. Eklemek, kaldırmak veya hüküm ve kısaltmalar yerleşik sözlüğüne kısaltmalar değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.
+
+Örneğin, kodunuzu bulunan adlı bir sınıf varsayalım **DoorKnokker**. Kod Analizi adı iki bir kelimelerin bileşik tanımlamak: **kapı** ve **knokker**. Ardından bir uyarı oluşturacak, **knokker** doğru yazıldığından değil. Kod Analizi yazım tanımak için zorlamak için terimi ekleyebilirsiniz **knokker** için özel sözlük.
 
 ## <a name="to-create-a-custom-dictionary"></a>Özel bir sözlüğü oluşturmak için
- Adlı bir dosya oluşturun **CustomDictionary.xml**.
 
- Aşağıdaki XML yapısını kullanarak özel kelimeleriniz tanımlayın:
+Adlı bir dosya oluşturun **CustomDictionary.xml**.
 
-```
+Aşağıdaki XML yapısını kullanarak özel kelimeleriniz tanımlayın:
+
+```xml
 <Dictionary>
       <Words>
          <Unrecognized>
@@ -57,7 +59,8 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 ```
 
 ## <a name="custom-dictionary-elements"></a>Özel sözlük öğeleri
- Özel sözlük aşağıdaki öğeleri iç metni olarak koşulları ekleyerek kod çözümleme dizinini davranışını değiştirebilirsiniz:
+
+Özel sözlük aşağıdaki öğeleri iç metni olarak koşulları ekleyerek kod çözümleme dizinini davranışını değiştirebilirsiniz:
 
 - [/ Sözcükleri/tanınan/sözcüğü](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
@@ -72,11 +75,12 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 - [Sözlük/kısaltmalar/CasingExceptions/kısaltma](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Sözcükleri/tanınan/sözcüğü
- Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinde dahil etmek için bir sözlük/sözcükleri/Recognized/Word öğesinin iç metni terim ekleyin. Koşulları/sözcükleri/Recognized/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
- **Örnek**
+Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinde dahil etmek için bir sözlük/sözcükleri/Recognized/Word öğesinin iç metni terim ekleyin. Koşulları/sözcükleri/Recognized/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
-```
+**Örnek**
+
+```xml
 <Dictionary>
       <Words>
          <Recognized>
@@ -89,7 +93,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Aşağıdaki kod analizi kuralları için Sözlük/sözcükleri/Recognized düğüm bağlamında uygulanır:
+Aşağıdaki kod analizi kuralları için Sözlük/sözcükleri/Recognized düğüm bağlamında uygulanır:
 
 - [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
@@ -106,11 +110,12 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 - [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> / Sözcükleri/tanınmayan/sözcüğü
- Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/tanınmayan/Word öğesinin iç metni hariç tutmak için terimi ekleyin. Koşulları/sözcükleri/tanınmayan/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
- **Örnek**
+Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/tanınmayan/Word öğesinin iç metni hariç tutmak için terimi ekleyin. Koşulları/sözcükleri/tanınmayan/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
-```
+**Örnek**
+
+```xml
 <Dictionary>
       <Words>
          <Unrecognized>
@@ -123,7 +128,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Terimleri sözlüğü/sözcükleri/tanınmayan düğümünde, aşağıdaki kod analizi kuralları uygulanır:
+Terimleri sözlüğü/sözcükleri/tanınmayan düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
 - [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
@@ -140,17 +145,18 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 - [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Sözlük/sözcükleri/kullanım dışı/terimi [@PreferredAlternate]
- Kod Analizi, kullanım dışı olarak tanımlayan koşulları listesinde bir terimi eklemek için bir sözlük/sözcükleri/kullanım dışı/terimi öğesinin iç metni terim ekleyin. Kullanım dışı bir terim doğru yazıldığından, ancak kullanılmaması gereken bir word dosyasıdır.
 
- Uyarıda önerilen alternatif bir terimi eklemek için diğer terimi öğe PreferredAlternate özniteliklerini belirtin. Alternatif önermek istemiyorsanız, öznitelik değeri boş bırakabilirsiniz.
+Kod Analizi, kullanım dışı olarak tanımlayan koşulları listesinde bir terimi eklemek için bir sözlük/sözcükleri/kullanım dışı/terimi öğesinin iç metni terim ekleyin. Kullanım dışı bir terim doğru yazıldığından, ancak kullanılmaması gereken bir word dosyasıdır.
+
+Uyarıda önerilen alternatif bir terimi eklemek için diğer terimi öğe PreferredAlternate özniteliklerini belirtin. Alternatif önermek istemiyorsanız, öznitelik değeri boş bırakabilirsiniz.
 
 - Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.
 
 - PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.
 
-  **Örnek**
+**Örnek**
 
-```
+```xml
 <Dictionary>
       <Words>
          <Deprecated>
@@ -163,7 +169,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Terimleri sözlüğü/sözcükleri/kullanım dışı düğümünde, aşağıdaki kod analizi kuralları uygulanır:
+Terimleri sözlüğü/sözcükleri/kullanım dışı düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
 - [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
@@ -176,15 +182,16 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 - [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
 
 ### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]
- Yerleşik sözlük bazı terimi bir bileşik terimi yerine tek ve ayrık terimler olarak tanımlar. Bir terimi bir bileşik sözcük Kod Analizi tanımlayan koşulları listesini dahil etmek ve terimi doğru büyük küçük harfleri belirtmek için terim sözlüğü/sözcükleri/bileşik/terimi öğesinin iç metni ekleyin. Terim öğesinin CompoundAlternate özniteliği bileşik terimi (Pascal harf) kelimeler ilk harfi büyük harf yaparak oluşturan kelimeler belirtin. İç metni belirtilen dönem sözcükleri/sözlük/DiscreteExceptions listesine otomatik olarak eklendiğini unutmayın.
+
+Yerleşik sözlük bazı terimi bir bileşik terimi yerine tek ve ayrık terimler olarak tanımlar. Bir terimi bir bileşik sözcük Kod Analizi tanımlayan koşulları listesini dahil etmek ve terimi doğru büyük küçük harfleri belirtmek için terim sözlüğü/sözcükleri/bileşik/terimi öğesinin iç metni ekleyin. Terim öğesinin CompoundAlternate özniteliği bileşik terimi (Pascal harf) kelimeler ilk harfi büyük harf yaparak oluşturan kelimeler belirtin. İç metni belirtilen dönem sözcükleri/sözlük/DiscreteExceptions listesine otomatik olarak eklendiğini unutmayın.
 
 - Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.
 
 - PreferredAlternate öznitelik değeri büyük/küçük harf duyarlıdır. Baş harfleri büyük bileşik alternatifleri için kullanın.
 
-  **Örnek**
+**Örnek**
 
-```
+```xml
 <Dictionary>
       <Words>
          <Compound>
@@ -197,7 +204,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Terimleri sözlüğü/sözcükleri/bileşik düğümünde, aşağıdaki kod analizi kuralları uygulanır:
+Terimleri sözlüğü/sözcükleri/bileşik düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
 - [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
@@ -208,11 +215,12 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 - [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Sözlük/sözcükleri/DiscreteExceptions/terimi
- Terimi bileşik sözcüklerin büyük/küçük harf kuralları tarafından iade edildiğinde ayrı word bir terim tek bir kod analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/DiscreteExceptions/terimi öğesinin iç metni terim ekleyin. Terim sözlüğü/sözcükleri/DiscreteExceptions/dönem öğesinde büyük küçük harfe duyarlı değil.
 
- **Örnek**
+Terimi bileşik sözcüklerin büyük/küçük harf kuralları tarafından iade edildiğinde ayrı word bir terim tek bir kod analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/DiscreteExceptions/terimi öğesinin iç metni terim ekleyin. Terim sözlüğü/sözcükleri/DiscreteExceptions/dönem öğesinde büyük küçük harfe duyarlı değil.
 
-```
+**Örnek**
+
+```xml
 <Dictionary>
       <Words>
          <DiscreteExceptions>
@@ -225,18 +233,19 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Terimleri sözlüğü/sözcükleri/DiscreteExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
+Terimleri sözlüğü/sözcükleri/DiscreteExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
 - [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
 - [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Sözlük/kısaltmalar/CasingExceptions/kısaltma
- Bir kısaltma olarak doğru yazılmış kod analizi tanımlayan koşulları listesini dahil etmek ve terimi büyük/küçük harf olarak işaretlendiğinde kısaltması için bileşik sözcüklerin nasıl kuralları belirtmek için terim sözlüğü/kısaltmalar/CasingExceptions iç metni ekleyin. / Öğesini harflendirme. Sözlük/kısaltmalar/CasingExceptions/kısaltması öğesinde kısaltma büyük/küçük harf duyarlıdır.
 
- **Örnek**
+Bir kısaltma olarak doğru yazılmış kod analizi tanımlayan koşulları listesini dahil etmek ve terimi büyük/küçük harf olarak işaretlendiğinde kısaltması için bileşik sözcüklerin nasıl kuralları belirtmek için terim sözlüğü/kısaltmalar/CasingExceptions iç metni ekleyin. / Öğesini harflendirme. Sözlük/kısaltmalar/CasingExceptions/kısaltması öğesinde kısaltma büyük/küçük harf duyarlıdır.
 
-```
+**Örnek**
+
+```xml
 <Dictionary>
       <Acronyms>
          <CasingExceptions>
@@ -249,7 +258,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 </Dictionary>
 ```
 
- Terimleri sözlüğü/kısaltmalar/CasingExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
+Terimleri sözlüğü/kısaltmalar/CasingExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
 - [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 

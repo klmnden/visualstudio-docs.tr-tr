@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790125"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715385"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Nasıl yapılır: Belgeleri oluşturmak için XML açıklamalarını ekleme
 
@@ -24,7 +24,7 @@ Visual Studio size yardımcı olabilir belge sınıfları ve yöntemleri gibi ko
 Visual Studio ve diğer Ide'leri IntelliSense türler ve üyeler hakkında hızlı bilgi göstermek için kullanabilirsiniz, böylece derleyici tarafından oluşturulan XML dosyasının yanı sıra .NET bütünleştirilmiş kodunuzda dağıtılabilir. Ayrıca, XML dosyasını gibi araçlarla çalıştırılabilir [DocFX](https://dotnet.github.io/docfx/) ve [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) API Başvurusu Web siteleri oluşturmak için.
 
 > [!NOTE]
-> **Açıklama Ekle** XML belgeleri yorumları otomatik olarak ekleyen komutu kullanılabilir [ C# ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) ve [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Ancak, el ile ekleyebilirsiniz [c++ XML belgeleri yorumları](/cpp/ide/xml-documentation-visual-cpp) dosyaları ve yine de derleme zamanında XML belge dosyalarını oluştur.
+> **Açıklama Ekle** XML belgeleri yorumları otomatik olarak ekleyen komutu kullanılabilir [ C# ](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) ve [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Ancak, el ile ekleyebilirsiniz [c++ XML belgeleri yorumları](/cpp/build/reference/xml-documentation-visual-cpp) dosyaları ve yine de derleme zamanında XML belge dosyalarını oluştur.
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>Bir kod öğesi için XML açıklamaları eklemek için
 
@@ -38,7 +38,7 @@ Visual Studio ve diğer Ide'leri IntelliSense türler ve üyeler hakkında hızl
 
    - Seçin sağ tıklayın veya bağlam menüsünden veya yalnızca kod öğesi sonraki sürümlere **kod parçacığı** > **Açıklama Ekle**
 
-   XML şablonu kod öğesi hemen oluşturulmaz. Örneğin, bir yöntem Yorum olduğunda ürettiği **\<Özet\>** öğesi, bir **\<param\>** her parametre ve bir öğesi**\<döndürür\>** dönüş değeri belge öğesi.
+   XML şablonu kod öğesi hemen oluşturulmaz. Örneğin, bir yöntem Yorum olduğunda ürettiği **\<Özet\>** öğesi, bir **\<param\>** her parametre ve bir öğesi **\<döndürür\>** dönüş değeri belge öğesi.
 
    ![XML açıklama şablonu-C#](media/doc-preview-cs.png)
 
@@ -57,5 +57,5 @@ Visual Studio ve diğer Ide'leri IntelliSense türler ve üyeler hakkında hızl
 - [XML açıklamalarıyla kodunuzu belgeleme (C# Kılavuzu)](/dotnet/csharp/codedoc)
 - [Nasıl yapılır: XML belgeleri (Visual Basic) oluşturma](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++ açıklamaları](/cpp/cpp/comments-cpp)
-- [XML belgeleri (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [XML belgeleri (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Kod oluşturma](../code-generation-in-visual-studio.md)

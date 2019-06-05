@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816805"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715005"
 ---
-# <a name="design-warnings"></a>Tasarım Uyarıları
-Tasarım uyarıları bağlılığı .NET Framework tasarım yönergeleri için destek.
+# <a name="design-warnings"></a>Tasarım uyarıları
+
+Tasarım uyarıları destek kıldığı [.NET tasarım yönergeleri](/dotnet/standard/design-guidelines/).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -43,7 +44,7 @@ Tasarım uyarıları bağlılığı .NET Framework tasarım yönergeleri için d
 | [CA1012: Soyut türlerde oluşturucular bulunmamalıdır](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | Soyut türler üzerindeki kurucular yalnızca türetilen türler tarafından çağrılabilir. Ortak yapıcılar türün bir örneğini yaptığından ve siz bir soyut türün örneğini yapamayacağınızdan, soyut sınıf hatalı biçimde dizayn edilmiş ortak yapıcıya sahip olur. |
 | [CA1013: Aşırı yükleme aşırı yükleme eşittir işlecini ekleme ve çıkarma](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | Bir genel ya da korumalı tür eşitlik imlecini uygulamadan ekleme ya da çıkarma işleçlerini uygular. |
 | [CA1014: Derlemeleri CLSCompliantAttribute ile işaretleyin](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | Ortak Dil Tanımlaması (CLS) ad kısıtlamalarını, veri türlerini ve karşıt programlama dillerini kullanırsa derlemelerin uyması zorunlu olan kuralları tanımlar. İyi tasarım derlemelerin açıkça CLS uyumluluğu CLSCompliantAttribute kullanarak göstermesini belirler. Bu öznitelik bir derlemede yoksa, montaj uyumlu değildir. |
-| [CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleyin](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET Framework sürüm numarasını derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır. |
+| [CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleyin](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET sürüm numarasını derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır. |
 | [CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) | ComVisibleAttribute COM müşterilerinin yönetilen koda nasıl erişeceğini tanımlar. İyi tasarım derlemelerin açıkça COM görünürlüğünde gösterildiğini belirler. COM görünürlüğü tüm derleme için ayarlanabilir ve sonra bireysel tür ve tür üyeleri için geçersiz kılınabilir. Bu öznitelik yoksa, derleme içeriği COM istemcileri tarafından görülebilir. |
 | [CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | Özel öznitelik tanımladığınızda, AttributeUsageAttribute kullanarak özel öznitelik kaynak kodunun nerede uygulanabilir olduğunu göstermek için işaretleyin. Bir özniteliğin anlamı ve amaçlanan kullanımı, kodun içinde onun varolan konumunu tanımlar. |
 | [CA1019: Öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | Öznitelikler özniteliği işaretlediğinizde özelleştirilen zorunlu bağımsız değişkenleri tanımlayabilir. Ayrıca bunlar konum parametreleri olarak öznitelik yapıcısına verildiğinden duruma bağlı bağımsız değişkenler olarak da bilinirler. Zorunlu her bağımsız değişken için bağımsız değişkenin değeri yürütme zamanından alınması gerektiğinden öznitelik ilgili salt okunur özelliği de sağlamalıdır. Öznitelikler adlandırılmış bağımsız değişkenler olarak bilinen duruma bağlı bağımsız değişkenler olarak da tanımlanabilir. Bu bağımsız öznitelik oluşturucular ad tarafından sağlanır ve karşılık gelen bir okuma/yazma özelliğine sahip olmalıdır. |

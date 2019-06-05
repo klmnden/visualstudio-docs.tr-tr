@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541724"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714984"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Yayımlanmamış kaynak biçimlerini yollamayın
 
@@ -31,13 +31,17 @@ ms.locfileid: "62541724"
 |Yeni Değişiklik|Bozucu olmayan|
 
 ## <a name="cause"></a>Sebep
- Bir kaynak dosyası şu anda desteklenmeyen bir .NET Framework sürümü kullanılarak oluşturuldu.
+
+Bir kaynak dosyası şu anda desteklenmeyen .NET sürümü kullanılarak oluşturuldu.
 
 ## <a name="rule-description"></a>Kural açıklaması
- .NET Framework'ün yayın öncesi sürümleri kullanılarak oluşturulan kaynak dosyaları .NET Framework'ün desteklenen sürümleri tarafından kullanılamayabilir.
+
+Yayın öncesi .NET sürümleri kullanılarak oluşturulan kaynak dosyaları .NET desteklenen sürümleri tarafından kullanılamayabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için .NET Framework'ün desteklenen bir sürümünü kullanarak kaynağı oluşturun.
+
+Bu kural ihlalini düzeltmek için .NET desteklenen bir sürümünü kullanarak kaynak oluşturun.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+
+Bu kuraldan uyarıyı bastırmayın.

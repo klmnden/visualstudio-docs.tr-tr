@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği'
+title: 'Nasıl yapılır: LinqToXmlDataBinding Örneğini Derleme ve Çalıştırma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897565"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714840"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
 
@@ -22,7 +22,9 @@ Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel 
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 
-1. Visual Studio'yu açın ve oluşturma bir C# **WPF uygulaması** adlı **LinqToXmlDataBinding**. Projenin .NET Framework 3.5 (veya sonraki sürümler) hedeflemesi.
+1. Visual Studio'yu açın ve oluşturma bir C# **WPF uygulaması** adlı **LinqToXmlDataBinding**.
+
+   Projenin .NET Framework 3.5 (veya sonraki sürümler) hedeflemesi.
 
 1. Aksi halde aşağıdaki .NET derlemeleri için zaten mevcut proje başvurularını ekleyin:
 

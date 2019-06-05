@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818234"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715265"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio'da verilere erişime
 
@@ -152,6 +152,6 @@ Yükleme [Visual Studio'da Python desteği](../python/overview-of-python-tools-f
 
 [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/)&mdash;C# ve Visual Basic ve ilişkisel veritabanlarını, XML belgeleri, veri kümelerini ve bellek içi koleksiyonları sorgulamak için ortak bir Modeli'ne yerleşik sorgu yetenekleri açıklanır.
 
-[Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)&mdash;çalışma ile XML verileri, hata ayıklama XSLT, .NET Framework XML özelliklerini ve XML sorgusu mimarisini açıklar.
+[Visual Studio'daki XML araçları](../xml-tools/xml-tools-in-visual-studio.md)&mdash;XML verileri, hata ayıklama XSLT .NET XML özelliklerle çalışmaya ve XML sorgusu mimarisini açıklar.
 
-[XML belgeleri ve verileri](/dotnet/standard/data/xml/index)&mdash;XML belgeleri ve .NET Framework Veri çalışmak sınıf kapsamlı ve tümleşik kümesi için genel bir bakış sağlar.
+[XML belgeleri ve verileri](/dotnet/standard/data/xml/index)&mdash;XML belgeleri ve. NET'te veri çalışmak sınıf kapsamlı ve tümleşik kümesi için genel bir bakış sağlar.

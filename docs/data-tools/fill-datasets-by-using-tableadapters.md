@@ -1,5 +1,5 @@
 ---
-title: TableAdapters'ı kullanarak veri kümelerini doldurma
+title: TableAdapter'ları kullanarak veri kümelerini doldurma
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566927"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715188"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters'ı kullanarak veri kümelerini doldurma
+# <a name="fill-datasets-by-using-tableadapters"></a>TableAdapter'ları kullanarak veri kümelerini doldurma
 
 Bir TableAdapter bileşeni, bir veri kümesi bir veya daha fazla sorguları veya belirttiğiniz saklı yordamlar göre veritabanındaki verilerle doldurur. TableAdapter'ları da gerçekleştirebilirsiniz ekler, güncelleştirir ve veri kümesine yaptığınız değişiklikleri kalıcı hale getirmek için veritabanında siler. Ayrıca, belirli bir tabloya ilişkisiz genel komutları da verebilir.
 
 > [!NOTE]
-> TableAdapter bağdaştırıcılarını Visual Studio tasarımcılar tarafından oluşturulur. Veri kümeleri programlı olarak oluşturuyorsanız, bir .NET Framework sınıf olan DataAdapter'ni kullanın.
+> TableAdapter bağdaştırıcılarını Visual Studio tasarımcılar tarafından oluşturulur. Veri kümeleri programlı olarak oluşturuyorsanız, bir .NET sınıfıdır DataAdapter'ni kullanın.
 
 TableAdapter işlemleri hakkında ayrıntılı bilgi için doğrudan aşağıdaki konulardan birine atlayabilirsiniz:
 

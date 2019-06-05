@@ -47,21 +47,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567115"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715218"
 ---
-# <a name="dataset-tools-in-visual-studio"></a>Visual Studio'da veri kümesi araçları
+# <a name="dataset-tools-in-visual-studio"></a>Visual Studio'daki veri kümesi araçları
 
 > [!NOTE]
 > Veri kümeleri ve ilgili sınıflar, bellekteki verileri veritabanından uygulamaları değilken çalışmak uygulamaları etkinleştirme erken 2000'li yıllardan eski .NET teknolojiden var. Bunlar, kullanıcıların verileri değiştirme ve veritabanına değişiklikleri kalıcı hale getirmek uygulamalar için özellikle yararlıdır. Veri kümeleri çok başarılı bir teknoloji olacak şekilde kanıtlanmış olsa da, yeni .NET uygulamalarını Entity Framework kullanmanızı öneririz. Entity Framework tablosal verileri nesne modellerini olarak çalışmak için daha doğal bir yol sağlar ve daha basit bir programlama arabirimi vardır.
 
 A `DataSet` temelde kısa bir veritabanı olan bellek içi nesne nesnedir. İçerdiği `DataTable`, `DataColumn`, ve `DataRow` nesneleri depolayabilir ve açık bir bağlantı sağlamak zorunda kalmadan bir veya daha fazla veritabanlarındaki verileri değiştirebilirsiniz. Güncelleştirmeleri izlenen ve uygulamanızı bağlandığınızda olur veritabanına geri gönderilen veri kümesi, verilerde yapılan değişiklikleri ilgili bilgileri tutar.
 
-Veri kümeleri ve ilgili sınıflar içinde tanımlanmıştır <xref:System.Data?displayProperty=fullName> .NET Framework sınıf kitaplığındaki ad alanı. Dinamik olarak kod ADO.NET kullanarak veri kümeleri oluşturup düzenleyebilir. Bu bölümdeki belgelere, Visual Studio tasarımcıları kullanarak veri kümeleriyle çalışan işlemi gösterilmektedir. Tasarımcılar kullanarak oluşturulan veri kümelerini **TableAdapter** veritabanıyla etkileşim kurmanıza imkan nesneleri. Program aracılığıyla oluşturulan veri kümelerini kullanan **DataAdapter** nesneleri. Program aracılığıyla veri kümeleri oluşturma hakkında daha fazla bilgi için bkz: [DataAdapters ve DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Veri kümeleri ve ilgili sınıflar içinde tanımlanmıştır <xref:System.Data?displayProperty=fullName> .NET API ad alanı. Dinamik olarak kod ADO.NET kullanarak veri kümeleri oluşturup düzenleyebilir. Bu bölümdeki belgelere, Visual Studio tasarımcıları kullanarak veri kümeleriyle çalışan işlemi gösterilmektedir. Tasarımcılar kullanarak oluşturulan veri kümelerini **TableAdapter** veritabanıyla etkileşim kurmanıza imkan nesneleri. Program aracılığıyla oluşturulan veri kümelerini kullanan **DataAdapter** nesneleri. Program aracılığıyla veri kümeleri oluşturma hakkında daha fazla bilgi için bkz: [DataAdapters ve DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Uygulamanız yalnızca bir veritabanından verileri okuyamadı ve olmayan güncelleştirmeleri gerçekleştirmek gereken, eklemesi veya silmesi, genellikle daha iyi performans kullanarak alabileceğiniz bir `DataReader` genel verileri almak üzere nesne `List` veya başka bir koleksiyon nesne. Verileri görüntülüyorsa, veri kullanıcı arabirimi koleksiyona bağlama.
 

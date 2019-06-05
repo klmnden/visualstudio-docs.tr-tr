@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546205"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714850"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Otomatik yerleşim türleri COM görünebilir olmamalıdır
 
@@ -39,7 +39,7 @@ Bir Bileşen Nesne Modeli (COM) görünebilir değer türü ile işaretlenmiş <
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-<xref:System.Runtime.InteropServices.LayoutKind> Yerleşim türleri, ortak dil çalışma zamanı tarafından yönetilir. Belirli bir düzeni beklediğiniz COM istemcileri keser .NET Framework sürümleri arasında bu tür yerleşimi değiştirebilirsiniz. Varsa <xref:System.Runtime.InteropServices.StructLayoutAttribute> özniteliği belirtilmezse, C#, Visual Basic ve C++ Derleyicileri belirtin [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) değer türleri için.
+<xref:System.Runtime.InteropServices.LayoutKind> Yerleşim türleri, ortak dil çalışma zamanı tarafından yönetilir. Belirli bir düzeni beklediğiniz COM istemcileri keser .NET sürümleri arasında bu tür yerleşimi değiştirebilirsiniz. Varsa <xref:System.Runtime.InteropServices.StructLayoutAttribute> özniteliği belirtilmezse, C#, Visual Basic ve C++ Derleyicileri belirtin [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) değer türleri için.
 
 Tersi durumda işaretlenmiş sürece tüm genel ve genel olmayan türler COM görünür ve tüm genel olmayan ve genel türler COM'a görünmez Ancak, hatalı pozitif sonuçları azaltmak için bu kural türünü açıkça belirtilen COM görünürlüğünü gerektirir. Derlemeyi içeren ile işaretlenmelidir <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> kümesine `false` ve türü ile işaretlenmelidir <xref:System.Runtime.InteropServices.ComVisibleAttribute> kümesine `true`.
 

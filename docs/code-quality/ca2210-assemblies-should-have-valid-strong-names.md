@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796685"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714758"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır
 
@@ -64,11 +64,11 @@ Yüklenecek unutmayın ve gecikmeli imzalanmış bir bütünleştirilmiş kod ç
 
 Aşağıdaki yordamlardan birini kullanın:
 
-- .NET Framework SDK'sı tarafından sağlanan Assembly Linker (Al.exe) aracını.
+- Kullanım [derleme bağlayıcı Aracı (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+- .NET Framework 2.0, kullanın `/keyfile` veya `/keycontainer` derleyici seçeneği [/keyfile (derlemeyi imzalamak için anahtar belirtin veya anahtar çiftini)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) veya  [ /keycontainer (derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) bağlayıcı seçeneğini C++).
 
 - .NET Framework v1.0 veya v1.1 için kullanın <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> veya <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> özniteliği.
-
-- İçin [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], hangisini `/keyfile` veya `/keycontainer` derleyici seçeneği [/keyfile (derlemeyi imzalamak için anahtar belirtin veya anahtar çiftini)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) veya  [ /keycontainer (derlemeyi imzalamak için bir anahtar kapsayıcısı belirtin)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) c++ bağlayıcı seçeneği).
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Derlemenizin tanımlayıcı bir adla Visual Studio'da oturum açın
 
@@ -90,7 +90,7 @@ Aşağıdaki yordamlardan birini kullanın:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Derlemenizi Visual Studio dışında bir tanımlayıcı adla imzalama
 
-.NET Framework SDK'sı tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanın. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Kullanım [tanımlayıcı ad Aracı (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 

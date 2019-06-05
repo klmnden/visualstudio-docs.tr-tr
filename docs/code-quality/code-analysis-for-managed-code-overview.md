@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540700"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713970"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio'da yönetilen kod için statik kod analizi genel bakış
 
 Visual Studio, yönetilen kod için Kod Analizi iki yolla gerçekleştirebilirsiniz: ile *FxCop* statik analiz Yönetilen derlemeler ve daha fazla modern *Roslyn Çözümleyicileri*. Bu konu, FxCop statik kod analizi içerir. Kod Çözümleyicileri kullanarak kodunu analiz etme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
 
-Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemeler, programlama ve Microsoft .NET Framework tasarım yönergeleri ile ortaya konan Tasarım Kuralları ihlalleri gibi bilgileri raporlar.
+Yönetilen kod için Kod Analizi yönetilen derlemeleri çözümler ve derlemeler hakkında bilgi gibi programlama ve tasarım kuralları ihlalleri konan raporları [.NET tasarım yönergeleri](/dotnet/standard/design-guidelines/).
 
 Analiz aracı uyarı iletileri bir Çözümleme sırasında gerçekleştirdiği denetimleri temsil eder. Uyarı iletileri ilgili programlama ve tasarım sorunlarını belirleyin ve mümkünse sorunu gidermek nasıl bilgi olduğunda.
 
 > [!NOTE]
-> Statik kod analizi, Visual Studio'da .NET Core ve .NET Standard projeleri için desteklenmiyor. Kod Analizi bir .NET Core veya .NET Standard projesi msbuild bir parçası olarak çalıştırırsanız, benzer bir hata göreceğiniz **hata: CA0055 : İçin Platform tanımlanamadı \<your.dll >**. .NET Core veya .NET Standard projelerine kodda çözümlemek için kullanın [Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) yerine.
+> Statik kod analizi, Visual Studio'da .NET Core ve .NET Standard projeleri için desteklenmiyor. Kod Analizi bir .NET Core veya .NET Standard projesi msbuild bir parçası olarak çalıştırırsanız, benzer bir hata göreceğiniz **hata: CA0055 : İçin Platform tanımlanamadı \<your.dll >** . .NET Core veya .NET Standard projelerine kodda çözümlemek için kullanın [Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) yerine.
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (tümleşik geliştirme ortamı) Tümleştirmesi
 
@@ -36,7 +36,7 @@ El ile veya otomatik olarak projenizde kod analizi çalıştırabilirsiniz.
 
 Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçin **derlemede kod analizini etkinleştir** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Kod Analizi proje üzerinde el ile çalıştırmak için menü çubuğundan seçin **Çözümle** > **kod çözümlemeyi Çalıştır** > **kod çözümlemeyi Çalıştır \<proje >**.
+Kod Analizi proje üzerinde el ile çalıştırmak için menü çubuğundan seçin **Çözümle** > **kod çözümlemeyi Çalıştır** > **kod çözümlemeyi Çalıştır \<proje >** .
 
 ## <a name="rule-sets"></a>Kural kümeleri
 

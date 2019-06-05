@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44aaead9e00a1fb279666dfc55d4e9496e21139e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842100"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714802"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Türler belirli temel türleri aşmamalıdır
 
@@ -47,7 +47,7 @@ Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görü
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-.NET Framework sürüm 1 için yeni özel durumlar türetmek için önerildiği <xref:System.ApplicationException>. Öneri değiştirildi ve yeni özel durumlar türetilmelidir <xref:System.Exception?displayProperty=fullName> veya içinde alt sınıflarından birini <xref:System> ad alanı.
+Özel durumlar türetilmelidir <xref:System.Exception?displayProperty=fullName> veya içinde alt sınıflarından birini <xref:System> ad alanı.
 
 Öğesinin oluşturmayın <xref:System.Xml.XmlDocument> , temel alınan bir nesne modeli veya veri kaynağı, bir XML görünümünü oluşturmak istiyorsanız.
 

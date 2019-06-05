@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b049f55d9361b409504cd798b7c878efb5c79ee6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806814"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714724"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API'sinin yönetilen eşdeğerlerini kullanın
 
@@ -35,7 +35,7 @@ ms.locfileid: "62806814"
 
 ## <a name="cause"></a>Sebep
 
-Bir platform çağırma yöntemi tanımlanır ve .NET Framework sınıf kitaplığında eşdeğer bir işlevselliği olan bir yöntem bulunmaktadır.
+Bir platform çağırma yöntemi tanımlanır ve. NET'te eşdeğer bir işlevselliği olan bir yöntem bulunmaktadır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 

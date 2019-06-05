@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407879"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715451"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ hata ayıklama yapılandırması proje ayarları
 Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.
@@ -139,7 +139,7 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 | **Komut bağımsız değişkenleri** (yerel Windows hata ayıklayıcı)<br /><br /> **Uzak komut satırı bağımsız değişkenlerini** (uzak Windows hata ayıklayıcı) | -Daha önce belirtilen komut için bağımsız değişkenleri belirtir.<br /><br /> Bu kutuda aşağıdaki yönlendirme işleçlerini kullanabilirsiniz:<br /><br /> < `file`<br /> Dosyadan stdin okur.<br /><br /> > `file`<br /> Dosyaya STDOUT yazar.<br /><br /> >> `file`<br /> Dosyaya STDOUT ekler.<br /><br /> 2> `file`<br /> Stderr dosyasına yazar.<br /><br /> 2>> `file`<br /> Dosyaya stderr ekler.<br /><br /> 2> &1<br /> Stderr (2) çıktısını stdout (1) ile aynı konuma gönderir.<br /><br /> 1> &2<br /> STDOUT (1) çıktısını stderr (2) ile aynı konuma gönderir.<br /><br /> Çoğu durumda, bu işleçler yalnızca konsol uygulamaları için geçerlidir. |
 | **Çalışma dizini** | EXE dosyanızın bulunduğu proje dizinine göre ayıklanan programın çalışma dizini belirtir. Burayı boş bırakırsanız, çalışma dizini proje dizini bağlıdır. Uzaktan hata ayıklama için proje dizini uzak sunucu üzerinde olur. |
 | **Ekleme** (yerel Windows hata ayıklayıcısı ve uzak Windows hata ayıklayıcı) | Başlatma veya uygulamasına belirtir. Varsayılan ayar Hayır |
-| **Uzak sunucu adı** (uzak Windows hata ayıklayıcı) | Bir uygulamada hata ayıklamak istediğiniz bilgisayarın (sizin dışında) adını belirtir.<br /><br /> RemoteMachine yapı makrosu bu özelliğin değerine ayarlanır; Daha fazla bilgi için [derleme komutları ve Özellikler makroları için](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Uzak sunucu adı** (uzak Windows hata ayıklayıcı) | Bir uygulamada hata ayıklamak istediğiniz bilgisayarın (sizin dışında) adını belirtir.<br /><br /> RemoteMachine yapı makrosu bu özelliğin değerine ayarlanır; Daha fazla bilgi için [derleme komutları ve Özellikler makroları için](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Bağlantı** (uzak Windows hata ayıklayıcı) | Uzaktan hata ayıklama için standart ve kimlik doğrulamasız bağlantı türleri arasında geçiş yapmanıza izin verir. Bir uzak bilgisayar adı belirtin **uzak sunucu adı** kutusu. Bağlantı türleri aşağıdakileri kapsamaktadır:<br /><br /> -   **Windows kimlik doğrulaması ile uzaktan**<br />-   **Kimlik doğrulaması ile uzaktan**<br /><br /> **Not** uzaktan hata ayıklama kimlik doğrulamasısız uzak bilgisayarı güvenlik ihlallerine karşı savunmasız. Windows kimlik doğrulama modu daha güvenlidir.<br /><br /> Daha fazla bilgi için [uzaktan hata ayıklama Kurulumu](../debugger/remote-debugging.md). |
 | **HTTP URL** (Web hizmeti hata ayıklayıcısı ve Web tarayıcı hata ayıklayıcısı) | Hata ayıklaması yaptığınız projenin bulunduğu URL'yi belirtir. |
 | **Hata ayıklayıcı türü** | Kullanılacak hata ayıklayıcı türünü belirtir: **Yalnızca yerel**, **yalnızca yönetilen**, **yalnızca GPU**, **karma**, **otomatik** (varsayılan) veya **betik**.<br /><br /> -   **Yalnızca yerel** yönetilmeyen C++ kodu içindir.<br />-   **Yalnızca yönetilen** ortak dil çalışma zamanı altında (yönetilen kod) çalışan kod içindir.<br />-   **Karma** hem yönetilen hem de yönetilmeyen kod için hata ayıklayıcıları çağırır.<br />-   **Otomatik** derleyici ve EXE bilgilerini temel alan bir hata ayıklayıcı türünü belirler.<br />-   **Betik** komut dosyaları için bir hata ayıklayıcı çağırır.<br />-   **Yalnızca GPU** bir GPU cihazında veya DirectX başvuru tarayıcısında çalışan C++ AMP kodu içindir. Bkz: [GPU hata ayıklama kodu](../debugger/debugging-gpu-code.md). |

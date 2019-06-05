@@ -1,6 +1,6 @@
 ---
 title: Veri çözümleri geliştirin
-description: Visual Studio, .NET Framework Araçları, SQL Server veri araçları, Azure Data Lake, Azure HDInsight ve Azure akış analizi dahil olmak üzere veri çözümleri geliştirme için farklı araçlar hakkında bilgi edinin.
+description: Visual Studio'da .NET araçları, SQL Server veri araçları, Azure Data Lake, Azure HDInsight ve Azure akış analizi dahil olmak üzere, veri çözümleri geliştirme için farklı araçlar hakkında bilgi edinin.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569207"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715047"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Veri araçları, veri çözümleri geliştirmek üzere Visual Studio'da kullanın.
 
@@ -29,11 +29,11 @@ SQL Server, Azure Data Lake veya Hadoop kullanarak veri çözümlerini test etme
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio ve .NET Framework hakkında bilgi edinin&#39;s araçları ve API desteği veri uygulamaları geliştirmek için</h3>
+                        <h3>Visual Studio ve .NET hakkında bilgi edinin&#39;s araçları ve API desteği veri uygulamaları geliştirmek için</h3>
                     </div>
                 </div>
             </div>
