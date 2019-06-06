@@ -2,7 +2,7 @@
 title: Windows üzerinde Visual Studio'da Python desteği
 titleSuffix: ''
 description: Visual Studio, Windows (PTVS Visual Studio için Python araçları olarak da bilinir) üzerinde en iyi Python IDE yapmadan Python özelliklerinin özeti.
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785248"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747563"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -37,6 +37,11 @@ Kullanmaya başlamak için:
 - Bir veya daha fazla bir proje oluşturmak için hızlı başlangıç şablonları gidin. Emin değilseniz, başlayan [hızlı başlangıç: Açın ve bir klasörde Python kodunu çalıştırma](quickstart-05-python-visual-studio-open-folder.md) veya [Flask ile web uygulaması oluşturma](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - İzleyin [Visual Studio'da Python çalışın](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) baştan sona tam deneyim için öğretici.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio, Python, resmi olarak desteklenen sürümleri tarafından belirtilen tüm destekler [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Özellikle, sürüm 2.7, 3.5, 3.6 ve 3.7.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Birden çok yorumlayıcılarını desteği
 
@@ -150,9 +155,9 @@ Daha fazla bilgi için:
 
 ## <a name="azure-sdk-for-python"></a>Python için Azure SDK
 
-Python iş yükü, Windows, Mac OS X ve Linux uygulamaları Azure hizmetlerinden aramanın basitleştiren, Python için Azure SDK'sı içerir.
+Python için Azure kitaplıkları, Windows, Mac OS X ve Linux uygulamaları Azure hizmetlerinden aramanın basitleştirin. Bunları Azure kaynaklarını oluşturmak ve yönetmek için hem de Azure hizmetlerine bağlanmak için kullanabilirsiniz. 
 
-Daha fazla bilgi için [Python için Azure SDK'sı](/python/azure/?view=azure-python).
+Daha fazla bilgi için [Python için Azure SDK'sı](/python/azure/?view=azure-python) ve [Python için Azure kitaplıkları](/python/azure/python-sdk-azure-overview?view=azure-python) .
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 

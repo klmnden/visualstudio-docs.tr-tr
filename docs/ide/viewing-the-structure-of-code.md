@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263077"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747710"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Farklı araç pencerelerini kullanarak kod yapısını görüntüleme
 
-Sınıfları ve üyeleri dahil olmak üzere çeşitli araç pencerelerine kullanarak Visual Studio'da inceleyebilirsiniz **sınıf görünümü**, **çağrı hiyerarşisi**, **Nesne Tarayıcısı**ve **Kod tanımı** (yalnızca C++ için). Bu araç pencereleri, kod projeleri Visual Studio, .NET Framework bileşenlerini, COM bileşenlerini, dinamik bağlantı kitaplıklarını (DLL) inceleyebilirsiniz ve tür kitaplıkları (TLB).
+Sınıfları ve üyeleri dahil olmak üzere çeşitli araç pencerelerine kullanarak Visual Studio'da inceleyebilirsiniz **sınıf görünümü**, **çağrı hiyerarşisi**, **Nesne Tarayıcısı**ve **Kod tanımı** (yalnızca C++ için). Bu araç pencereleri, kod projeleri Visual Studio, .NET bileşenleri, COM bileşenlerini, dinamik bağlantı kitaplıklarını (DLL) inceleyebilirsiniz ve tür kitaplıkları (TLB).
 
 Ayrıca **Çözüm Gezgini** türler ve üyeler sembolleri, arama projelerinizde göz atmak için bir yöntemin çağrı hiyerarşisini, Bul sembol başvuruları ve daha fazla birden çok araç pencereleri arasında geçiş yapmak zorunda kalmadan görüntüleyin.
 
@@ -56,7 +56,7 @@ Projeniz için kaynak kodu denetimi, iade edildiğinde, her **sınıf görünüm
 
 |||
 |-|-|
-|**Yeni klasör**|Sanal klasör veya sık kullanılan öğeleri düzenlemek alt klasör oluşturur. Etkin çözüm kaydedilmeden (*.suo*) dosyası. Yeniden adlandırma ya da kodunuzda bir öğeyi sil sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşisindeki klasörüne yeniden taşıyabilirsiniz.|
+|**Yeni klasör**|Sanal klasör veya sık kullanılan öğeleri düzenlemek alt klasör oluşturur. Etkin çözüm kaydedilmeden ( *.suo*) dosyası. Yeniden adlandırma ya da kodunuzda bir öğeyi sil sonra sanal bir klasörde bir hata düğümü olarak görünebilir. Bu sorunu düzeltmek için hata düğümü silin. Bir öğeyi yeniden adlandırdıysanız, bu proje hiyerarşisindeki klasörüne yeniden taşıyabilirsiniz.|
 |**Geri**|Daha önce seçilen öğe için gider.|
 |**İleriye doğru**|Seçili öğeye ileri gider.|
 |**Sınıf diyagramı görüntüle** (kod projeleri yalnızca yönetilen)|Bir ad alanı seçin veya yazın, kullanılabilir **sınıf görünümü**. Bir ad alanı seçili olduğunda, sınıf diyagramı içinde tüm türleri gösterir. Bir tür seçili olduğunda, sınıf diyagramına yalnızca bu türünü gösterir.|

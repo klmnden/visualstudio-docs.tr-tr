@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977675"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747551"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath görevi
-Yolunu alır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler.
+.NET Framework derlemeleri için yolu alır.
 
 ## <a name="task-parameters"></a>Görev parametreleri
 Parametreleri aşağıdaki tabloda açıklanmıştır `GetFrameworkPath` görev.
@@ -41,12 +41,12 @@ Parametreleri aşağıdaki tabloda açıklanmıştır `GetFrameworkPath` görev.
 |`Path`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Varsa, son framework derlemeleri için yolu içerir. Aksi halde döndürür `null`.|
 
 ## <a name="remarks"></a>Açıklamalar
-Çeşitli sürümlerini [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] olan yüklüyse, bu görev sürümü döndürür [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] üzerinde çalışmak üzere tasarlanmıştır.
+.NET Framework'ün çeşitli sürümlerinden yüklü değilse, bu görev sürümü döndürür [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] üzerinde çalışmak üzere tasarlanmıştır.
 
 Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Örnek
-Aşağıdaki örnekte `GetFrameworkPath` yolunu depolamak için görev [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] içinde `FrameworkPath` özelliği.
+Aşağıdaki örnekte `GetFrameworkPath` .NET Framework'teki yolunu depolamak için görev `FrameworkPath` özelliği.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

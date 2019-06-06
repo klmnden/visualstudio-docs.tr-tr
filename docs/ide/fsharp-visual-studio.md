@@ -1,5 +1,5 @@
 ---
-title: F#Araçları
+title: F# araçları
 description: Visual Studio'nun hangi özellikler desteklenir öğrenin F#.
 ms.date: 07/11/2018
 ms.topic: reference
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793423"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747593"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Görselle geliştirme F# Visual Studio'da
 
@@ -48,7 +48,7 @@ Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 |Çoklu Sürüm Desteği|Evet||
 |Simge ve bildirim|Hayır|Derleyici komut satırı seçenekleri aracılığıyla kullanılabilir.|
 |ASP.NET İstemci Hizmetleri|Hayır||
-|ClickOnce|Hayır|Bir istemci projesi varsa başka bir .NET Framework dil kullanın.|
+|ClickOnce|Hayır|Bir istemci projesi varsa başka bir .NET dil kullanın.|
 |Kesin adlandırma|Hayır|Derleyici komut satırı seçenekleri aracılığıyla kullanılabilir.|
 |Yayımlama derleme ve sürüm oluşturma|Hayır||
 |Kod Analizi|Hayır|Kod çözümleme araçları, el ile veya bir derleme sonrası komutunun bir parçası olarak çalıştırılabilir.|
@@ -60,7 +60,7 @@ Proje özelliklerinde özellikler aşağıdaki tabloda özetlenmiştir F#:
 
 |Proje Tasarımcısı sayfası|İlgili bağlantılar|Açıklama|
 | - |-------------|-----------|
-|Uygulama|[Uygulama sayfası, Proje Tasarımcısı](reference/application-page-project-designer-csharp.md)|Uygulama düzeyi ayarları ve özellikleri, bir kitaplık veya yürütülebilir bir dosya, uygulama hangi .NET Framework sürümünü hedefliyor ve burada kaynak dosyaları hakkında bilgi oluşturmakta olduğunuz gibi belirtmenize olanak tanıyan uygulama kullanan depolanır.|
+|Uygulama|[Uygulama sayfası, Proje Tasarımcısı](reference/application-page-project-designer-csharp.md)|Uygulama düzeyi ayarları ve olup bir kitaplığı veya yürütülebilir dosya, hangi sürümünü .NET uygulama hedefleri ve uygulamayı kullanan kaynak dosyalarının depolandığı hakkında bilgi oluşturmakta olduğunuz gibi özelliklerini belirtmenize olanak sağlar.|
 |Yapı|[Derleme sayfası, Proje Tasarımcısı](reference/build-page-project-designer-csharp.md)|Kodun nasıl derlendiğini denetlemenize olanak verir.|
 |Derleme olayları|[Derleme olayları sayfası, Proje Tasarımcısı](reference/build-events-page-project-designer-csharp.md)|Önce veya sonra bir derleme için komutları belirtmenizi sağlar.|
 |Hata ayıklama|[Hata Ayıklama Sayfası, Proje Tasarımcısı](reference/debug-page-project-designer.md)|Hata ayıklama sırasında uygulamanın nasıl çalışacağını denetlemesine olanak sağlar. Yerel kod ve SQL gibi etkinleştirmek istediğiniz herhangi bir özel hata ayıklama modlarını ve bu dizin ne kullanın ve uygulamanızın başlangıç komutları içerir.|
@@ -89,7 +89,7 @@ Visual Studio kodu ve metin düzenleyiciler, aşağıdaki özellikleri desteklen
 |Girinti değiştirme|Girintileri veya seçili satırları girintilemez.|Evet|
 |Akıllı girintileme|Otomatik olarak Girintiler ve imleci göre XML'deki girintiler F# kapsama kuralları.|Evet|
 |[Metin bulma ve değiştirme](finding-and-replacing-text.md)|Bir dosya, proje veya çözüm arayın ve potansiyel olarak metin değiştirmek etkinleştirir.|Evet|
-|.NET Framework API tanımına Git|İmleç bir .NET Framework API üzerinde konumlandırıldığında, .NET Framework meta verileri kullanarak oluşturulan kodu gösterir.|Hayır|
+|.NET API tanımına Git|İmleç bir .NET API üzerinde konumlandırıldığında .NET meta verilerinden oluşturulan kodu gösterir.|Hayır|
 |Kullanıcı tanımlı API tanımına Git|İmleç imleç kodunuzda varlık tanımlandığı yere taşır, tanımlı bir program varlık üzerinde olduğunda.|Evet|
 |Satıra Gitme|Bir dosyadaki satır numarası tarafından belirli bir satıra gitmenizi sağlar.|Evet|
 |Dosyasının üst gezinti çubukları|Kodda, konumları, örneğin, işlev adı atlamak sağlar.|Evet|

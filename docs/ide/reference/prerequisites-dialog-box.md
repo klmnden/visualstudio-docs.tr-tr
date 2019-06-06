@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969165"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746484"
 ---
 # <a name="prerequisites-dialog-box"></a>Önkoşullar iletişim kutusu
 
@@ -42,7 +42,7 @@ Görünen önkoşul bileşenleri **önkoşulları** farklı aşağıdaki listede
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|**.NET framework 3.5 SP1**|Bu paket aşağıdakileri yükler:<br /><br /> -.NET framework sürümleri 2.0, 3.0 ve 3.5.<br />-(X86) ve 64-bit (x64) 32-bit işletim sistemlerinde tüm .NET Framework sürümleri için destek.<br />-Paketle yüklenen her .NET Framework sürümü için dil paketleri.<br />-.NET Framework 2.0 ve 3.0 için hizmet paketleri.<br /><br /> .NET framework 3.0, Windows Vista ile bulunur ve .NET Framework 3.5 Visual Studio'ya dahildir. Hedef çerçeve kümesi ve 32-bit işletim sistemleri için derlenen tüm Visual Basic ve C# projeleri için .NET framework 3.5 gereklidir **.NET Framework 3.5**ve 64 bit için derlenen Visual Basic ve C# projeleri işletim sistemleri. (IA64 desteklenmiyor.) Visual Basic ve C# projeleri varsayılan olarak herhangi bir CPU mimarisi için derlendiğine dikkat edin. Daha fazla bilgi için [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md) ve [64-bit uygulamalar için önkoşulları dağıtma](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET framework 3.5 SP1**|Bu paket aşağıdakileri yükler:<br /><br /> -.NET framework sürümleri 2.0, 3.0 ve 3.5.<br />-(X86) ve 64-bit (x64) 32-bit işletim sistemlerinde tüm .NET Framework sürümleri için destek.<br />-Paketle yüklenen her .NET Framework sürümü için dil paketleri.<br />-.NET Framework 2.0 ve 3.0 için hizmet paketleri.<br /><br /> .NET framework 3.0, Windows Vista ile bulunur ve .NET Framework 3.5 Visual Studio'ya dahildir. Hedef çerçeve kümesi ve 32-bit işletim sistemleri için derlenen tüm Visual Basic ve C# projeleri için .NET framework 3.5 gereklidir **.NET Framework 3.5**ve 64 bit için derlenen Visual Basic ve C# projeleri işletim sistemleri. (IA64 desteklenmiyor.) Visual Basic ve C# projeleri varsayılan olarak herhangi bir CPU mimarisi için derlendiğine dikkat edin. Daha fazla bilgi için [genel bakışı hedefleyen Framework](../../ide/visual-studio-multi-targeting-overview.md) ve [64-bit uygulamalar için önkoşulları dağıtma](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Bu paket, .NET Framework'ü yükler 4.x x86 ve x64 platformlar için.|
 |**SQL Server 2014 (x64 ve x86) için Microsoft System CLR Types**|Bu paket, x64 ya da x86 için SQL Server 2014 için Microsoft System CLR Types yükler.|
 |**SQL Server 2008 R2 Express**|Bu paket, Microsoft SQL Server 2008 R2 Express, ücretsiz bir Microsoft SQL Server 2008 R2, küçük web, sunucu veya Masaüstü uygulamaları için ideal bir veritabanı sürümünü yükler. Ücretsiz geliştirme ve üretim için kullanılabilir.|
@@ -57,4 +57,4 @@ Görünen önkoşul bileşenleri **önkoşulları** farklı aşağıdaki listede
 - [Yayın Sayfası, Proje Tasarımcısı](../../ide/reference/publish-page-project-designer.md)
 - [Uygulama Dağıtımının Önkoşulları](../../deployment/application-deployment-prerequisites.md)
 - [64 bit Uygulamalar için Dağıtım Önkoşulları](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Visual Studio Çoklu Sürüm Desteğine Genel Bakış](../../ide/visual-studio-multi-targeting-overview.md)
+- [Framework hedefleme genel bakış](../../ide/visual-studio-multi-targeting-overview.md)

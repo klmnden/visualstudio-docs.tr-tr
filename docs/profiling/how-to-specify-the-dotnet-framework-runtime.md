@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9c62e430d19bbd2c03afbb4db76fca56563cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0179be3aa5ca55eef0854cc68a7e1287ac284f1
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996311"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746419"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Nasıl yapılır: .NET Framework çalışma zamanını belirtme
 
-Sürümüyle [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], uygulamalar oluşan farklı sürümleri kullanılarak derlenmiş modüllerin [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] çalışma zamanı. Varsayılan olarak, Visual Studio profil oluşturma araçları, uygulama tarafından yüklenen ilk çalışma zamanı profili. Bir uygulamaya Profil Oluşturucu ile başladığınızda ve profil oluşturucu zaten çalışan bir uygulamaya ekleme yaptığınızda profil için çalışma zamanı belirtebilirsiniz.
+.NET Framework 4'ın yayınlanmasıyla birlikte, uygulamaları, .NET Framework çalışma zamanı farklı sürümleri kullanılarak derlenmiş modüllerin oluşabilir. Varsayılan olarak, Visual Studio profil oluşturma araçları, uygulama tarafından yüklenen ilk çalışma zamanı profili. Bir uygulamaya Profil Oluşturucu ile başladığınızda ve profil oluşturucu zaten çalışan bir uygulamaya ekleme yaptığınızda profil için çalışma zamanı belirtebilirsiniz.
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Profil Oluşturucu ile bir uygulama başlatma sırasında .NET Framework çalışma zamanı profili belirtmek için
 
 1. İçinde **performans Gezgini**, performans oturumu sağ tıklayın, **özellikleri**ve ardından **Gelişmiş**.
 
-     **Hedef CLR sürümü** liste kutusu görüntüler **otomatik** sürümleri [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bilgisayarda yüklü çalışma zamanı.
+     **Hedef CLR sürümü** liste kutusu görüntüler **otomatik** bilgisayarda yüklü olan .NET Framework çalışma zamanı sürümleri.
 
 2. Aşağıdaki adımlardan birini uygulayın:
 
@@ -40,7 +40,7 @@ Sürümüyle [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md
 
 2. Üzerinde **işleme iliştirmek Profiler** iletişim kutusunda, profil oluşturmak istediğiniz işleme tıklayın.
 
-     **Hedef CLR sürümü** liste kutusu s **otomatik** sürümleri [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bilgisayarda yüklü çalışma zamanı.
+     **Hedef CLR sürümü** liste kutusu s **otomatik** bilgisayarda yüklü olan .NET Framework çalışma zamanı sürümleri.
 
 3. Aşağıdaki adımlardan birini uygulayın:
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945472"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747678"
 ---
 # <a name="toolbox"></a>Araç Kutusu
 
@@ -33,7 +33,7 @@ Araç kutusu, Tasarımcı görünümü bir XAML dosyasının gibi tasarımcı g�
 > [!NOTE]
 > Bazı proje türleri için **araç kutusu** öğeler gösterilmeyebilir.
 
-Projenizi denetimleri araç kutusunda görünür kümesini de etkiler hedefleyen .NET Framework sürümü. Projenizi projenin özellik sayfalarından farklı bir .NET Framework sürümünü hedefleyecek şekilde ayarlayabilirsiniz. ' Nde proje düğümüne seçin **Çözüm Gezgini**ve ardından menü çubuğunda, **proje** > **projectname özellikleri**. Üzerinde **uygulama** için sekmesinde, kullanın **hedef Framework'ü** açılır.
+Projenizi denetimleri araç kutusunda görünür kümesini de etkiler hedefleyen .NET sürümü. Gerekirse, hedef framework sürümü projenin özellik sayfalarından değiştirebilirsiniz. ' Nde proje düğümüne seçin **Çözüm Gezgini**ve ardından menü çubuğunda, **proje** > **projectname özellikleri**. Üzerinde **uygulama** için sekmesinde, kullanın **hedef Framework'ü** açılır.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Araç kutusu penceresini ve denetimlerini yönetme
 

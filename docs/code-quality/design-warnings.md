@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bd8b7c990ff0a56acd22cf4b7ddb16bc2e6c1618
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715005"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745158"
 ---
 # <a name="design-warnings"></a>Tasarım uyarıları
 
@@ -32,7 +32,7 @@ Tasarım uyarıları destek kıldığı [.NET tasarım yönergeleri](/dotnet/sta
 | [CA1000: Genel türlerde statik üyeleri bildirmeyin](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | Genel türün statik üyesi çağrıldığında tür bağımsız değişkeni tür için belirlenmelidir. Destek çıkarımı desteklenmeyen genel örnek üyesi çağrıldığında tür bağımsız değişkeni üye için belirlenmelidir. Bu iki durumda tür bağımsız değişkenini belirleyen sözdizimi farklıdır ve kolaylıkla karıştırılır. |
 | [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Bir sınıfı bildirir ve System.IDisposable türde bir örnek alanıyla uygular ve sınıf IDisposable'ı uygulamaz. IDisposable alanını derleyen sınıf, yönetilmeyen kaynağı dolaylı yoldan sahiplenir ve IDisposable arayüzünü uygulamalıdır. |
 | [CA1002: Genel listeleri gösterme](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (biri \<(T >) >) değil devralma performans için tasarlanmış bir genel koleksiyondur. Bu nedenle, Liste herhangi bir sanal üyeyi içermiyor. Bunun yerine devralma için tasarlanmış genel koleksiyonlar maruz kalmalıdır. |
-| [CA1003: Genel olay işleyici örnekleri kullan](../code-quality/ca1003-use-generic-event-handler-instances.md) | Void döndüren, imzası iki parametre (Birincisi nesne ve ikincisi Eventargs'a atanamaz türü) ve içeren derleme hedefleri içeren bir temsilci türü içeren [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. |
+| [CA1003: Genel olay işleyici örnekleri kullan](../code-quality/ca1003-use-generic-event-handler-instances.md) | .NET Framework 2. 0'ı hedef alan derlemeyi içeren ve bir tür void döndüren, imzası iki parametre (Birincisi nesne ve ikincisi Eventargs'a atanabilir tür) içeren bir temsilci içerir. |
 | [CA1004: Genel metotlar tür parametresi sağlamalıdır](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | Tip argümanının açıkça özelleştirilmesi yerine yöntemi geçen argüman tipiyle tanımlanan genel yöntemin nasıl tip argümanı olduğunun sonucudur. Çıkarımı etkinleştirmek için bir genel yöntem parametre imzası yöntem türü parametresi gibi aynı türde bir parametre içermelidir. Bu durumda, tip bağımsız değişkeninin belirtilmesine gerek yoktur. Tüm tip parametreleri için çıkarım kullandığınızda jenerik ve jenerik olmayan örnek yöntemleri için sözdizimi aynıdır; Bu kullanılabilirlik genel yöntemlerin kullanımını kolaylaştırır. |
 | [CA1005: Genel türlerde aşırı parametrelerden kaçının](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | Daha çok tip parametresi, genel tip içerir, bilmek daha zordur ve hangi tip parametrelerinin temsil ettiğini anımsamak zordur. Bu genellikle listesi olduğu gibi tek tip parametre ile açıktır\<T > ve sözlük gibi iki tür parametreleri ile belirli durumlarda\<TKey, TValue >. Ancak, iki parametreden fazla parametre varsa, birçok kullanıcı için zorluk derecesi artar. |
 | [CA1006: Üye imzalarında genel türleri iç içe kullanmayın](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | Bir yuvalanmış bağımsız değişken aynı zamanda genel tip olan bir tip bağımsız değişkendir. Yuvalanmış tip bağımsız değişkeni içeren imzası olan bir üye çağırmak için, kullanıcı bir genel tipi örneklemeli ve bu tipi ikinci bir genel tipin yapıcısına geçirmelidir. Gerekli yordam ve sözdizimi karmaşıktır ve kaçınılmalıdır. |

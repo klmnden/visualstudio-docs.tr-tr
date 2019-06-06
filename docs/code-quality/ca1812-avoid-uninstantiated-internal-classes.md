@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714259"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744697"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Örneklenmemiş iç sınıflardan kaçının
 
@@ -58,7 +58,7 @@ Uygularsanız, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute
 
 Bu kural ihlalini düzeltmek için türünü kaldırmak veya onu kullanan kodu ekleyin. Türü yalnızca içeriyorsa `static` yöntemleri, derleyici varsayılan bir ortak örnek oluşturucusu yayma gelen önlemek için türü için aşağıdakilerden birini ekleyin:
 
-- `static` Değiştiricisini C# hedefleyen türleri [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] veya üzeri.
+- `static` Değiştiricisini C# .NET Framework 2.0 veya sonraki sürümünü hedefleyen türleri.
 
 - .NET Framework sürümleri 1.0 ve 1.1 hedef türleri için özel bir oluşturucu.
 

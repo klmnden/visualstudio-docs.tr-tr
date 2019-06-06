@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004632"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747394"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild hedef çerçevesi ve hedef platform
 Çalıştırmak için bir proje oluşturulabilmeden bir *hedef Framework'ü*, .NET Framework'ün belirli bir sürümü olduğu ve bir *hedef platform*, belirli yazılım mimarisi olduğu.  Örneğin, 802 x 86 işlemci ailesi ("x86") ile uyumlu bir 32 bit platformda .NET Framework 2.0 üzerinde çalışacak bir uygulamayı hedefleyebilirsiniz. Hedef Çerçeve ve hedef platform bileşimi olarak da bilinen *hedef bağlam*.
 
 ## <a name="target-framework-and-profile"></a>Hedef framework ve profili
- Hedef Framework'ü belirli sürümüdür [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , projenizi çalıştırmak için oluşturulmuştur. Derleyici özelliklerini ve framework'ün bu sürümüne özel derleme başvurularını sağladığından, hedef framework'ün belirtimi gereklidir.
+ Hedef Framework'ü projenizi çalıştırmak için yerleşik olan .NET Framework'ün belirli sürümüdür. Derleyici özelliklerini ve framework'ün bu sürümüne özel derleme başvurularını sağladığından, hedef framework'ün belirtimi gereklidir.
 
  Şu anda, .NET Framework'ün aşağıdaki sürümler kullanılabilir duruma gelir:
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] (Visual Studio 2005'te dahil) 2.0
+- .NET Framework 2.0 (Visual Studio 2005'te dahil)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (dahil [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (dahil [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (dahil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (dahil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- .NET Framework 4.5.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (dahil [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (dahil [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- .NET Framework 4.6.1
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- .NET Framework 4.6.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- .NET Framework 4.7
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- .NET Framework 4.7.1
 
 .NET Framework sürümleri her başvurmak kullanılabilir hale derlemeler listesi içinde birbirinden farklı. Örneğin, projeniz .NET Framework sürüm 3.0 hedefleyen sürece veya yukarıda Windows Presentation Foundation (WPF) uygulamaları oluşturamaz.
 

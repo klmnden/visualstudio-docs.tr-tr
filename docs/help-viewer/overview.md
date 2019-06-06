@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c79b685382eff3e6ca5a37fa9fb087136595dc76
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975681"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746950"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Yardım Görüntüleyicisi
 
-Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayarınızda çeşitli ürün ve teknolojiler için içerik görüntüleyin. Bu ürünler, Visual Studio, .NET Framework, dil başvurusu, SQL Server ve Windows geliştirme içerir. Yardım Görüntüleyicisi yapmanızı sağlar:
+Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayarınızda çeşitli ürün ve teknolojiler için içerik görüntüleyin. Bu ürünler, Visual Studio, .NET, dil başvurusu, SQL Server ve Windows geliştirme içerir. Yardım Görüntüleyicisi yapmanızı sağlar:
 
 - Kitaplar olarak da adlandırılır, içerik kümelerini indirin. Bu, "Çevrimdışı" çalışma ve belgelerine erişime sahip olmaya devam etmeniz gerekiyorsa sizin için yararlı olabilir.
 

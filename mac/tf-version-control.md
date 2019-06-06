@@ -3,16 +3,16 @@ title: Team Foundation sürüm denetimi (TFVC)
 description: Mac için Visual Studio Team Foundation sürüm denetimi (TFVC) ile Team Foundation Server/Azure DevOps bağlanıyor.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2019
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500992"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745546"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
@@ -21,7 +21,7 @@ ms.locfileid: "66500992"
 
 Azure depoları, sürüm denetimi, iki modeli sağlar: [Git](/azure/devops/repos/git/?view=azure-devops), bir dağıtılmış sürüm denetim sistemini ve [Team Foundation sürüm denetimi](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) merkezi sürüm denetimi sistemi.
 
-Mac için Visual Studio, Git depoları için tam destek sağlar, ancak TFVC ile çalışmak için bazı geçici çözümler gerektirir. Bugün sürüm denetimi için TFVC kullanıyorsanız, kaynak kodunuzu TFVC'de barındırılan erişmek için kullanabileceğiniz bazı çözümler aşağıda verilmiştir.
+Mac için Visual Studio, Git depoları için tam destek sağlar, ancak TFVC ile çalışmak için bazı geçici çözümler gerektirir. Bugün sürüm denetimi için TFVC kullanıyorsanız, kaynak kodunuzu TFVC'de barındırılan erişmek için kullanabileceğiniz bazı çözümler aşağıda verilmiştir:
 
 * [Visual Studio Code ve Azure depoları uzantısı için bir grafik kullanıcı Arabirimi kullanın.](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Team Explorer Everywhere komut satırı istemcisini (CLC TEE) kullanarak deponuza bağlanma](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ Bu makalenin geri kalanında, yukarıda listelenen seçenekler açıklanmaktadı
 
 ## <a name="requirements"></a>Gereksinimler
 
-* Visual Studio Community, Professional veya Enterprise Mac 7,8 veya sonraki bir sürümü için.
+* Visual Studio Community, Professional veya Mac 7,8 ve sonraki sürümleri için Enterprise.
 * Azure DevOps Hizmetleri, Team Foundation Server 2013 ve üzeri ya da Azure DevOps sunucu 2018 ve üzeri.
 * Azure DevOps Services veya Team Foundation Server/Azure DevOps Team Foundation sürüm denetimi kullanmak üzere yapılandırılmış sunucusu, bir proje.
 
@@ -44,8 +44,6 @@ Sürüm denetiminde dosyalarınızı yönetmek için bir grafik arabirim çalı�
 MacOS Terminal, ardından Team Explorer Everywhere komut satırı istemcisini kullanarak hakimseniz (TEE CLC) TFVC kaynak bağlanmak için desteklenen bir yol sağlar.
 
 TFVC ve değişiklikleri bağlantınızı kurmak için aşağıdaki adımları izleyebilirsiniz.
-
-Chris Pilcher, bir geliştirici topluluğumuzdaki uzmanlarımız sayesinde özel olan [TEE CLC için özgün yönergeleri](https://gist.github.com/chris-pilcher/a3f14eb081d7ab983e5c) Bu bölümde temel.
 
 ### <a name="setting-up-the-tee-clc"></a>TEE CLC ayarlama
 
@@ -82,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 `TF_AUTO_SAVE_CREDENTIALS` Ortam ayarını, bunları birden çok kez girmeniz istenmez böylece kimlik bilgilerinizi kaydetmek için kullanılır. Bir kullanıcı adı için istendiğinde, önceki bölümde oluşturduğunuz kişisel erişim belirteci kullanın ve boş bir parola kullanın.
 
-Şimdi kaynak dosyalarını yerel bir klasöre ilişkin bir eşleme oluşturmak için kullanacağınız `tf workfold` komutu. Aşağıdaki örnek "MyRepository" TFVC gelen "WebApp.Services" adlı bir klasör eşler proje ve yerel ~/Projects/ klasörüne (yani "Projeler" klasöründeki bir klasörün geçerli kullanıcı giriş) kopyalanacak ayarlayın.
+Kaynak dosyalarını yerel bir klasöre ilişkin bir eşleme oluşturmak için kullanacağınız `tf workfold` komutu. Aşağıdaki örnek "MyRepository" TFVC gelen "WebApp.Services" adlı bir klasör eşler proje ve yerel ~/Projects/ klasörüne (yani "Projeler" klasöründeki bir klasörün geçerli kullanıcı giriş) kopyalanacak ayarlayın.
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

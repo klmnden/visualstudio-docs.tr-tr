@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808553"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744865"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Yalnızca hedeflenen çerçeveden API kullanın
 
@@ -43,10 +43,10 @@ ms.locfileid: "62808553"
 |Hedef Framework'ü olduğunda|Kullanımları sürümünde üyeleri üzerinde harekete geçirilir|
 |.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
 |.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
-|.NET Framework 3.5|.NET Framework 3.5 SP1 |
+|.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Yok|
 
- Bir projenin hedef Framework'ü değiştirmek için bkz: [belirli bir .NET Framework sürümünü hedefleme](../ide/visual-studio-multi-targeting-overview.md).
+ Bir projenin hedef Framework'ü değiştirmek için bkz: [nasıl yapılır: .NET sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Hizmet paketi bağımlılığı kaldırmak için yeni üyenin veya türün tüm kullanımları kaldırın. Bu kasıtlı bir bağımlılık ise, uyarı veya bu kuralını devreden çıkar.
@@ -67,4 +67,4 @@ ms.locfileid: "62808553"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)
-- [Belirli Bir .NET Framework Sürümünü Hedefleme](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework hedefleme genel bakış](../ide/visual-studio-multi-targeting-overview.md)

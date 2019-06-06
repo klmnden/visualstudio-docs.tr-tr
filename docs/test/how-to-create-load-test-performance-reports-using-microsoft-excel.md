@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950169"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747576"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: Microsoft Excel kullanarak yük testi başarım raporları oluşturma
 
@@ -70,7 +70,7 @@ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **
 
    2. İçinde **yük testlerini içeren veritabanını Seç** sayfasındaki **sunucu adı**, yük testi sonuçlarını içeren sunucunun adını yazın.
 
-   3. İçinde **Databasename** aşağı açılan listesinde, yük testi sonuçlarını içeren veritabanını seçin.
+   3. İçinde **veritabanı adı** aşağı açılan listesinde, yük testi sonuçlarını içeren veritabanını seçin.
 
 3. İçinde **nasıl raporunuzu oluşturmak istiyorsunuz** sayfasında, **rapor oluşturma** seçin ve seçilen **sonraki**.
 
@@ -125,7 +125,7 @@ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **
 
    2. İçinde **yük testlerini içeren veritabanını Seç** sayfasındaki **sunucu adı**, yük testi sonuçlarını içeren sunucunun adını yazın.
 
-   3. İçinde **Databasename** aşağı açılan listesinde, yük testi sonuçlarını içeren veritabanını seçin.
+   3. İçinde **veritabanı adı** aşağı açılan listesinde, yük testi sonuçlarını içeren veritabanını seçin.
 
 3. İçinde **nasıl raporunuzu oluşturmak istiyorsunuz** sayfasında, **rapor oluşturma** seçin ve seçilen **sonraki**.
 
@@ -144,7 +144,7 @@ Excel raporları oluşturulabilir **Yük Testi Çözümleyicisi**, kullanarak **
    > [!TIP]
    > Daha iyi raporlar için çeşitli özellikler, daha zengin raporlara olanak tanıyan bir web performans testleri ve yük testleri de kullanılabilir. Sayfa istekleri raporlarda sunulan iki özelliğe sahiptir: Hedef ve raporlama adı. Sayfa yanıt zamanı hedefe yönelik bildirilir ve raporlama adı URL'nin raporlarında yerine kullanılacak. Sayaç Kümelerini Yönet altında çalıştırma ayarları yük testinde özelliği bilgisayar etiketleri rapor makina adlarında sunulur. Bu rapor belirli bir makinenin rolünü tanımlamak kullanışlıdır.
 
-## <a name="net-framework-security"></a>.NET Framework güvenliği
+## <a name="net-security"></a>.NET güvenlik
 
 Yük testi sonuçları ve raporları, bilgisayarınıza veya ağınıza yönelik bir atak yapılandırmak için kullanılabilen duyarlı bilgi içerir. Yük testi sonuçları ve raporları, bilgisayar adları ve bağlantı dizeleri içerir. Ne zaman bunun farkında olmalıdır yük testi raporlarını diğer kişilerle paylaşın.
 

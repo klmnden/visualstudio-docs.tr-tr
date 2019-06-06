@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321020"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747784"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Paylaşılan ve sürümü tutulan Vspackage'lar arasında seçin
 Visual Studio'nun farklı sürümleri aynı bilgisayarda bulunabilir. VSPackage'ları herhangi bir karışımını destekleyebilmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sürümleri.
 
- VSPackage yan yana yüklemeleri iki stratejileri, paylaşılan stratejisi ya da tutulan stratejisi üzerinden etkinleştirebilirsiniz. Her ikisini birden çok sürümünün varlığı uyum [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve sürümleri ilişkili [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ VSPackage yan yana yüklemeleri iki stratejileri, paylaşılan stratejisi ya da tutulan stratejisi üzerinden etkinleştirebilirsiniz. Her ikisini birden çok sürümünün varlığı uyum [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve .NET Framework sürümleri ilişkili.
 
  Paylaşılan stratejide bir VSPackage'ı birden çok sürümünü kullanmak için kayıtlı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tutulan stratejide birden çok VSPackage DLL'leri yüklenen her sürümü için bir tane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] destek.
 

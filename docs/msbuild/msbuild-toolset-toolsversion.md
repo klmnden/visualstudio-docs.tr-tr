@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436867"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747391"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 
@@ -48,7 +48,7 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion özniteliği nasıl çalışır?
 
- Visual Studio'da bir proje oluşturun veya mevcut bir projeyi yükseltmesine adlı bir öznitelik `ToolsVersion` otomatik olarak eklenir projeye dosya ve değerine karşılık gelen Visual Studio sürümü dahildir MSBuild'ın sürümü için. Daha fazla bilgi için [belirli bir .NET Framework sürümünü hedefleme](../ide/visual-studio-multi-targeting-overview.md).
+ Visual Studio'da bir proje oluşturun veya mevcut bir projeyi yükseltmesine adlı bir öznitelik `ToolsVersion` otomatik olarak eklenir projeye dosya ve değerine karşılık gelen Visual Studio sürümü dahildir MSBuild'ın sürümü için. Daha fazla bilgi için [genel bakışı hedefleyen Framework](../ide/visual-studio-multi-targeting-overview.md).
 
  Olduğunda bir `ToolsVersion` değer proje dosyasında tanımlanan, MSBuild, proje için kullanılabilir araç takımı özelliklerin değerlerini belirlemek için bu değeri kullanır. Bir araç takımı özelliği `$(MSBuildToolsPath)`, .NET Framework Araçları yolunu belirtir. Yalnızca bu araç takımı özelliği (veya `$(MSBuildBinPath)`), gerekli değildir.
 

@@ -1,6 +1,6 @@
 ---
 title: Çalıştırma ve Test Gezgini ile birim testlerinin hatalarını ayıklama
-description: Visual Studio'da Test Exlorer ile testleri çalıştırmayı öğrenin. Bu konu, otomatik test çalıştırmaları derlemeden sonra etkinleştirmek, test sonuçlarını görüntülemek, Grup ve test listesini filtrelemek, çalma listeleri oluşturmak, Testlerde Hata Ayıkla ve test kısayolları kullanma kapsar.
+description: Visual Studio'daki Test Gezgini ile testleri çalıştırmayı öğrenin. Bu konu, otomatik test çalıştırmaları derlemeden sonra etkinleştirmek, test sonuçlarını görüntülemek, Grup ve test listesini filtrelemek, çalma listeleri oluşturmak, Testlerde Hata Ayıkla ve test kısayolları kullanma kapsar.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934501"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747773"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -23,7 +23,7 @@ Kullanım **Test Gezgini** birim testlerini Visual Studio ya da üçüncü taraf
 
 Visual Studio, hem yönetilen hem de yerel kod için Microsoft birim testi çerçevelerini içerir. Ancak, **Test Gezgini** herhangi bir birim Test Gezgini bağdaştırıcısı uygulayan test çerçevesi de çalıştırabilirsiniz. Üçüncü taraf birim test çerçeveleri yükleme hakkında daha fazla bilgi için bkz. [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md)
 
-**Test Gezgini** bir çözümde birden çok test projesini ve üretim kodu projelerin bir parçası olan test sınıflarından testler çalıştırabilirsiniz. Test projeleri farklı birim test çerçeveleri kullanabilir. Test altındaki kod .NET Framework için yazıldığında, test projesi, ayrıca hedef kodun dili ne olursa olsun .NET Framework hedefleyen herhangi bir dilde yazılabilir. Yerel C/C++ kod projeleri, bir C++ birim test çerçevesi kullanılarak test edilmelidir. Daha fazla bilgi için [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
+**Test Gezgini** bir çözümde birden çok test projesini ve üretim kodu projelerin bir parçası olan test sınıflarından testler çalıştırabilirsiniz. Test projeleri farklı birim test çerçeveleri kullanabilir. Test altındaki kod .NET için yazıldığında, test projesi, .NET, hedef kodun dili ne olursa olsun da hedefler, herhangi bir dilde yazılabilir. Yerel C/C++ kod projeleri, bir C++ birim test çerçevesi kullanılarak test edilmelidir. Daha fazla bilgi için [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Testleri Test Gezgini'nde çalıştırma
 

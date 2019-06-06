@@ -8,50 +8,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004219"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747098"
 ---
-# <a name="messaging-activity-designers"></a>Mesajlaşma Etkinlik Tasarımcıları
+# <a name="messaging-activity-designers"></a>Mesajlaşma etkinlik tasarımcıları
 
-Mesajlaşma etkinlik tasarımcıları oluşturmak ve bir Windows Workflow Foundation (WF) uygulama içinden Windows Communication Foundation (WCF) iletilerini gönderip Mesajlaşma etkinlikleri yapılandırmak için kullanılır. .NET Framework 4 beş Mesajlaşma etkinlikleri sunar ve iş akışı Tasarımcısı bir iş akışı içinde Mesajlaşma yönetmenizi sağlayan iki yeni Şablon tasarımcıları sağlar. Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular, Şablon tasarımcıları ve etkinlik iş akışı Tasarımcısını kullanma konusunda rehberlik sağlar.
+Mesajlaşma etkinlik tasarımcıları oluşturmak ve bir Windows Workflow Foundation (WF) uygulama içinden Windows Communication Foundation (WCF) iletilerini gönderip Mesajlaşma etkinlikleri yapılandırmak için kullanılır. Beş Mesajlaşma etkinlikleri, .NET Framework 4'te tanıtıldı. İş Akışı Tasarımcısı bir iş akışı içinde Mesajlaşma yönetmenizi sağlayan iki Şablon tasarımcıları sağlar.
 
-## <a name="reference"></a>Başvuru
- <xref:System.Activities.Activity>
+Bu bölümde yer alan ve aşağıdaki tabloda listelenen konular, Şablon tasarımcıları ve etkinlik iş akışı Tasarımcısını kullanma konusunda rehberlik sağlar.
 
- <xref:System.ServiceModel.Activities.CorrelationScope>
+- <xref:System.Activities.Activity>
 
- <xref:System.ServiceModel.Activities.Receive>
+- <xref:System.ServiceModel.Activities.CorrelationScope>
 
- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.Receive>
 
- <xref:System.ServiceModel.Activities.ReceiveReply>
+- <xref:System.ServiceModel.Activities.Send>
 
- <xref:System.ServiceModel.Activities.SendReply>
+- <xref:System.ServiceModel.Activities.ReceiveReply>
 
- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
+- <xref:System.ServiceModel.Activities.SendReply>
 
-## <a name="related-sections"></a>İlgili Bölümler
- Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın.
+- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
 
- [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)
+## <a name="related-sections"></a>İlgili bölümler
 
- [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)
+Etkinlik tasarımcıları diğer türleri için aşağıdaki konulara bakın:
 
- [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)
+- [Denetim Akışı](../workflow-designer/control-flow-activity-designers.md)
 
- [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)
+- [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)
 
- [Temel Türler](../workflow-designer/primitives-activity-designers.md)
+- [Akış Çizelgesi](../workflow-designer/flowchart-activity-designers.md)
 
- [İşlem](../workflow-designer/transaction-activity-designers.md)
+- [Çalışma Zamanı](../workflow-designer/runtime-activity-designers.md)
 
- [Koleksiyon](../workflow-designer/collection-activity-designers.md)
+- [Temel Türler](../workflow-designer/primitives-activity-designers.md)
 
- [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)
+- [İşlem](../workflow-designer/transaction-activity-designers.md)
 
-## <a name="external-resources"></a>Dış Kaynaklar
- [Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)
+- [Koleksiyon](../workflow-designer/collection-activity-designers.md)
+
+- [Hata İşleme](../workflow-designer/error-handling-activity-designers.md)
+
+## <a name="external-resources"></a>Dış kaynaklar
+
+[Etkinlik Tasarımcılarını kullanma](../workflow-designer/using-the-activity-designers.md)

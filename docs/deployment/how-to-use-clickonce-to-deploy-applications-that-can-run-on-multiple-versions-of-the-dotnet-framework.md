@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263199"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747490"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: '.NET framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
 ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürümünü hedefleyen bir uygulama dağıtabilirsiniz. Bu, oluşturmak ve uygulama ve dağıtım bildirimlerini güncelleştirme gerektirir.
 
 > [!NOTE]
-> Birden çok .NET Framework sürümünü hedefleyecek şekilde uygulamayı değiştirmeden önce uygulamanızın birden çok .NET Framework sürümü ile çalıştığından emin olmalısınız. Sürümü ortak dil çalışma zamanı arasında farklı [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] .NET Framework 2.0, .NET Framework 3.0 ve .NET Framework 3.5 karşılaştırması.
+> Birden çok .NET Framework sürümünü hedefleyecek şekilde uygulamayı değiştirmeden önce uygulamanızın birden çok .NET Framework sürümü ile çalıştığından emin olmalısınız. Sürümü ortak dil çalışma zamanı, .NET Framework 4 ve .NET Framework 2.0, .NET Framework 3.0 ve .NET Framework 3.5 arasında farklıdır.
 
  Bu işlem, aşağıdaki adımları gerektirir:
 
@@ -88,7 +88,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Sürüm numarasını güncelleştirmek `<assemblyIdentity>` Microsoft.Windows.CommonLanguageRuntime'a öğesine en küçük ortak paydası .NET Framework sürüm numarası. Örneğin, uygulama .NET Framework 3.5 hedefliyorsa ve [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], kullanım 2.0.50727.0 sürüm numarasını ve XML aşağıdaki gibi görünmelidir:
+3. Sürüm numarasını güncelleştirmek `<assemblyIdentity>` Microsoft.Windows.CommonLanguageRuntime'a öğesine en küçük ortak paydası .NET Framework sürüm numarası. Uygulama, .NET Framework 3.5 ve .NET Framework 4 hedefliyse, örneğin, kullanım 2.0.50727.0 sürüm numarasını ve XML aşağıdaki gibi görünmelidir:
 
    ```xml
    <dependency>

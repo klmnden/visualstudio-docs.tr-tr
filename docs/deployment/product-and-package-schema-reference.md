@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898139"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745622"
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve paket şema başvurusu
-A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirimi olan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Dış bağımlılıklar örnekler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve Microsoft Data Access Components (MDAC). Bir paket dosyası ürün dosyasına benzer ancak yerelleştirilmiş derlemeleri, lisans sözleşmelerini ve belgeler gibi bir bağımlılık kültüre bağlı bileşenleri yüklemek için kullanılır.
+A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML bildirimi olan bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. .NET Framework ve Microsoft Data Access Components (MDAC) dış bağımlılıkların örnekleridir. Bir paket dosyası ürün dosyasına benzer ancak yerelleştirilmiş derlemeleri, lisans sözleşmelerini ve belgeler gibi bir bağımlılık kültüre bağlı bileşenleri yüklemek için kullanılır.
 
  Ürün ve paket dosyası birini bir üst düzey `Product` veya `Package` öğesi, her biri aşağıdaki öğeleri içerir.
 
@@ -42,8 +42,8 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
 |[\<Product> Öğesi](../deployment/product-element-bootstrapper.md)|Ürün dosyaları için gerekli en üst düzey öğe.|None|
 |[\<Package> Öğesi](../deployment/package-element-bootstrapper.md)|Paket dosyaları için gerekli en üst düzey öğe.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
 |[\<RelatedProducts> Öğesi](../deployment/relatedproducts-element-bootstrapper.md)|Ürün dosyaları için isteğe bağlı öğe. Bu ürünü yükleyen veya bağımlı diğer ürünleri.|None|
-|[\<InstallChecks> Öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|None|
-|[\<Commands> Öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|None|
+|[\<InstallChecks> Öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|Yok.|
+|[\<Commands> Öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|Yok.|
 |[\<PackageFiles> Öğesi](../deployment/packagefiles-element-bootstrapper.md)|Gerekli öğe. Bu yükleme işlemi tarafından yüklenmiş olabilecek paketleri listeler.|Yok.|
 |[\<Strings> Öğesi](../deployment/strings-element-bootstrapper.md)|Gerekli öğe. Depoları, ürün adı ve hata dizelerini sürümlerini yerelleştirilmiş.|Yok.|
 
@@ -53,7 +53,7 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
  `InstallChecks` testler, setup.exe belirli bir paket varlığını gerçekleştirmeniz gerekir. `PackageFiles` Tüm Kurulum işlemi yüklemek için belirli bir testi başarısız olması olabilir paketleri listelenir. Her komut girişini komutları altında biri tarafından açıklanan testleri yürütür `InstallChecks`ve belirten `PackageFile` çalıştırılacak testin başarısız olması. Kullanabileceğiniz `Strings` ürün adları ve hata iletileri, böylece uygulamanız için herhangi bir sayıda diller yüklemek için tek bir yükleme ikili kullanabilirsiniz yerelleştirmek için öğesi.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneği yüklemek için bir tam ürün dosyası gösterir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Aşağıdaki kod örneği, .NET Framework yükleme için bir tam ürün dosyası gösterir.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

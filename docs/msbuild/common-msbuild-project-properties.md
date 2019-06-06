@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934530"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745895"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
 Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.
 
- Proje dosyalarını Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde çalışan MSBuild XML kodunu içerir. Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Daha fazla bilgi için [MSBuild .targets dosyaları](../msbuild/msbuild-dot-targets-files.md).
+ Proje dosyalarını Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde çalışan MSBuild XML kodunu içerir. Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Daha fazla bilgi için [MSBuild .targets dosyaları](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Ortak özellikler ve parametreler listesi
 
@@ -39,7 +39,7 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | ALToolPath | Yolun burada *AL.exe* bulunabilir. Bu özellik geçerli sürümü geçersiz kılar *AL.exe* farklı bir sürüm kullanımını etkinleştirmek için. |
 | ApplicationIcon | *.İco* Win32 simgesi olarak katıştırmak için derleyiciye geçirilecek simge dosyası. Özellik `/win32icon` derleyici anahtarı. |
 | ApplicationManifest | Dış kullanıcı hesabı denetimi (UAC) bildirim bilgilerini oluşturmak için kullanılan dosyanın yolunu belirtir. Yalnızca hedefleyen Visual Studio projelerine yöneliktir [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> Çoğu durumda, bildirim katıştırılır. Ancak Registration Free COM kullanıyorsanız veya [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım ve bildirimi uygulama derlemeleriniz ile birlikte yüklenmiş harici bir dosyaya olabilir. Daha fazla bilgi için bu konuda NoWin32Manifest özelliğine bakın. |
-| AssemblyOriginatorKeyFile | Derlemeyi imzalamak için kullanılan dosyayı belirtir (*.snk* veya *.pfx*) ve yapan [ResolveKeySource görevi](../msbuild/resolvekeysource-task.md) imzalamak için kullanılan gerçek anahtarı oluşturmak için derleme. |
+| AssemblyOriginatorKeyFile | Derlemeyi imzalamak için kullanılan dosyayı belirtir ( *.snk* veya *.pfx*) ve yapan [ResolveKeySource görevi](../msbuild/resolvekeysource-task.md) imzalamak için kullanılan gerçek anahtarı oluşturmak için derleme. |
 | AssemblySearchPaths | Yapı zamanı başvurusu derleme çözümü sırasında aranacak konumların bir listesi. Daha sonraki girişlere göre öncelikli olduğundan daha önce listelenen yollar yollarını bu listede görünme sırasını anlam ifade eder. |
 | AssemblyName | Proje derlendikten sonra son derlemenin adı. |
 | BaseAddress | Ana çıkış derlemesinin temel adresini belirtir. Bu özellik değerine eşdeğer olan `/baseaddress` derleyici anahtarı. |
@@ -53,7 +53,7 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | Yapılandırma | Oluşturmakta olduğunuz yapılandırma "Debug" veya "Release." |
 | CscToolPath | Yolu *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] derleyici. |
 | CustomBeforeMicrosoftCommonTargets | Proje dosyası veya ortak hedefler içe önce otomatik olarak içe aktarılacak hedefler dosyasının adı. |
-| DebugSymbols | Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **- p: DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır (*.pdb*) sembol dosyaları. |
+| DebugSymbols | Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **- p: DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır ( *.pdb*) sembol dosyaları. |
 | DebugType | Üretilmesini istediğiniz hata ayıklama bilgi düzeyini tanımlar. Geçerli değerler: "full," "pdbonly," "taşınabilir", "gömülü" ve "none". |
 | DefineConstants | Koşullu derleyici sabitlerini tanımlar. Sembol/değer çiftleri noktalı virgüllerle ayrılır ve aşağıdaki sözdizimi kullanılarak belirtilir:<br /><br /> *symbol1 = value1; symbol2 = value2*<br /><br /> Özellik `/define` derleyici anahtarı. |
 | DefineDebug | DEBUG sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri. |
@@ -69,7 +69,7 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | FrameworkPathOverride | Konumunu belirtir *mscorlib.dll* ve *microsoft.visualbasic.dll*. Bu parametre değerine eşdeğer olan `/sdkpath` geçiş *vbc.exe* derleyici. |
 | GenerateDocumentation | (Yalnızca Visual Basic) Belgeleri yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole parametresi. Varsa `true`, yapı, belgelendirme bilgilerini üretir ve bunu koyar bir *.xml* yürütülebilir dosya ya da yapı görevinin ürettiği kitaplık adı ile birlikte dosya. |
 | GenerateSerializationAssemblies | XML serileştirme derlemeleri tarafından oluşturulması gerekip gerekmediğini belirten *SGen.exe*, hangi ayarlanabilir, otomatik veya kapalı. Bu özellik yalnızca .NET Framework'ü hedefleyen derlemeler için kullanılır. .NET Standard veya .NET Core derlemeler için XML serileştirme derlemeleri oluşturmak için başvuru *Microsoft.XmlSerializer.Generator* NuGet paketi. |
-| IntermediateOutputPath | Ten türetildiği haliyle tam Ara çıktı yolu `BaseIntermediateOutputPath`, hiçbir yol belirtilmezse. Örneğin, *\obj\debug\\*. |
+| IntermediateOutputPath | Ten türetildiği haliyle tam Ara çıktı yolu `BaseIntermediateOutputPath`, hiçbir yol belirtilmezse. Örneğin, *\obj\debug\\* . |
 | AnahtarKapsayıcıAdı | Tanımlayıcı ad anahtar kapsayıcısı adı. |
 | KeyOriginatorFile | Tanımlayıcı ad anahtar dosyası adı. |
 | MSBuildProjectExtensionsPath | Proje uzantılarını bulunduğu yere yolunu belirtir. Varsayılan olarak, bu alan aynı değere `BaseIntermediateOutputPath`. |
@@ -115,10 +115,10 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | Satellite_Trademark | Uydu derlemesindeki ticari marka alanı için bir dize belirtir. |
 | Satellite_Version | Uydu derlemesinin sürüm bilgilerini belirtir. |
 | Satellite_Win32Icon | Ekler bir *.ico* uydu derlemesindeki simge dosyası. |
-| Satellite_Win32Resource | Bir Win32 kaynağı ekler (*.res* dosya) uydu derlemesini. |
+| Satellite_Win32Resource | Bir Win32 kaynağı ekler ( *.res* dosya) uydu derlemesini. |
 | SubsystemVersion | Oluşturulan yürütülebilir dosyanın kullanabileceği alt sistemin en düşük sürümünü belirtir. Bu özellik değerine eşdeğer olan `/subsystemversion` derleyici anahtarı. Bu özellik varsayılan değeri hakkında daha fazla bilgi için bkz. [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) veya [/subsystemversion (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Derlemekte olduğunuz uygulamayı çalıştırmak için gereken .NET Compact Framework sürümü. Bunun belirtilmesi, başka türlü mümkün olmayabilir belirli çerçeve derlemelerine olanak tanır. |
-| targetFrameworkVersion | Sürümü [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemekte olduğunuz uygulamayı çalıştırmak için gereklidir. Bunun belirtilmesi, başka türlü mümkün olmayabilir belirli çerçeve derlemelerine olanak tanır. |
+| targetFrameworkVersion | Derlemekte olduğunuz uygulamayı çalıştırmak için gerekli olan .NET Framework sürümü. Bunun belirtilmesi, başka türlü mümkün olmayabilir belirli çerçeve derlemelerine olanak tanır. |
 | TreatWarningsAsErrors | Bir Boole parametresi, varsa `true`, tüm uyarıları hata olarak kabul edilmesine neden olur. Bu parametre değerine eşdeğer olan `/nowarn` derleyici anahtarı. |
 | UseHostCompilerIfAvailable | Bir Boole parametresi, varsa `true`, varsa yapı görevinin işlem içi derleyici nesnesini kullanmasına neden olur. Bu parametre yalnızca kullanılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Bir Boole parametresi, varsa `true`, derleyici çıkışını UTF-8 kodlaması kullanarak günlüğe kaydeder. Bu parametre değerine eşdeğer olan `/utf8Output` derleyici anahtarı. |

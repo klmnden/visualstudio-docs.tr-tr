@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823601"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745142"
 ---
 # <a name="interoperability-warnings"></a>Birlikte Çalışabilirlik Uyarıları
 
@@ -32,7 +32,7 @@ Birlikte çalışabilirlik uyarıları COM istemcileri ile etkileşimi destekler
 | [CA1400: P/Invoke giriş noktaları bulunmalıdır](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Ortak veya korumalı yöntem System.Runtime.InteropServices.DllImportAttribute özniteliği kullanılarak işaretlenir. Yönetilmeyen kitaplık bulunamadı ya da yöntem için bir işlev kitaplığında eşleştirilemedi. |
 | [CA1401: P/Invoke'lar görünür olmamalıdır](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Ortak türde ortak veya korumalı bir yöntem System.Runtime.InteropServices.DllImportAttribute özniteliği (Visual Basic'te Declare anahtar da uygulanmış) sahiptir. Bu tür yöntemler açıkta kalmamalıdır. |
 | [CA1402: COM görünebilir arabirimler içinde aşırı yüklemelerden kaçının](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Aşırı yüklenmiş yöntemler COM istemcilerine maruz kaldığında, sadece ilk yöntem aşırı yüklemesi adını korur. Sonraki aşırı yüklemeler adının sonuna alt çizgi karakteri (_) eklenerek ve aşırı yüklemenin tanımını karşılayacak şekilde bir tam sayı eklenerek benzersiz olarak yeniden adlandırılır. |
-| [CA1403: Otomatik Yerleşim türleri COM görünebilir olmamalıdır](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM görünür bir değer türü LayoutKind.Auto için System.Runtime.InteropServices.StructLayoutAttribute özniteliği kullanılarak işaretlendi. Belirli bir düzeni beklediğiniz COM istemcilerini kesintiye uğratır .NET Framework sürümleri arasında bu tür yerleşimi değiştirebilirsiniz. |
+| [CA1403: Otomatik Yerleşim türleri COM görünebilir olmamalıdır](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM görünür bir değer türü LayoutKind.Auto için System.Runtime.InteropServices.StructLayoutAttribute özniteliği kullanılarak işaretlendi. Belirli bir düzeni beklediğiniz COM istemcilerini kesintiye uğratır .NET sürümleri arasında bu tür yerleşimi değiştirebilirsiniz. |
 | [CA1404: P/Invoke ardından hemen GetLastError çağırın](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Marshal.GetLastWin32Error yöntemine veya eşdeğer bir çağrı yapılır [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] GetLastError işlevi ve hemen önceki çağrı değil bir platformda yöntemi çağır. |
 | [CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | COM görünür türü, görünmeyen bir COM türünden türer. |
 | [CA1406: Visual Basic 6 istemcileri için Int64 bağımsız değişkenlerinden kaçının](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM istemcileri, 64-bit tamsayıya erişemiyor. |

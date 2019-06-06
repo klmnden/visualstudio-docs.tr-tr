@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950065"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747240"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Performans Test Sonuçları Görüntüleyicisi için bir Visual Studio eklentisi oluşturma
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Performans Test Sonuçları Görüntüleyicisi için bir eklenti oluşturun
 
 Kullanıcı Arabiriminde genişletebileceğiniz **Web Performans Test Sonuçları Görüntüleyicisi** aşağıdaki ad alanlarını kullanarak:
 
@@ -256,9 +256,9 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
 1. İçinde **Çözüm Gezgini**, WebPerfTestResultsViewerControl proje düğümünü sağ tıklatın ve seçin **özellikleri**.
 
-2. Seçin **uygulama** sekmesine ve ardından **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4** kapatın **özellikleri**.
+2. Seçin **uygulama** sekmesine ve ardından **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4** (veya üzeri). Kapat **özellikleri** penceresi.
 
-     Bu genişletmek için gerekli DLL başvurularını desteklemek için gerekli **Web Performans Test Sonuçları Görüntüleyicisi**.
+   Bu genişletmek için gerekli DLL başvurularını desteklemek için gerekli **Web Performans Test Sonuçları Görüntüleyicisi**.
 
 3. İçinde **Çözüm Gezgini**, WebPerfTestResultsViewerControl projesindeki **başvuruları** düğümünü seçip alt **Başvuru Ekle**.
 
@@ -300,15 +300,11 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>WebPerfTestResultsViewerAddin çözümünü oluşturun
-
-### <a name="to-build-the-solution"></a>Çözümü derlemek için
+## <a name="build-the-solution"></a>Çözümü derleyin
 
 - Üzerinde **derleme** menüsünde **Çözümü Derle**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin Eklentisini Kaydet
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Eklenti Yöneticisi'ni kullanarak eklentiyi kaydetmek için
 
 1. Üzerinde **Araçları** menüsünde **Eklenti Yöneticisi**.
 
@@ -316,17 +312,15 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
 3. İçinde WebPerfTestResultsViewerAddin eklentisi onay kutusunu seçin **kullanılabilir eklentiler** sütun ve clear altındaki onay kutularını **başlangıç** ve **komut satırı**sütunları.
 
-4. Seçin **Tamam**.
+4. **Tamam**’ı seçin.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin eklentisi yapıyı kullanarak web performans testini çalıştırma
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Web Testi Sonuçları Görüntüleyicisi için yeni VS eklentiyi çalıştırmak için
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Web Test Sonuçları Görüntüleyicisi'ni kullanarak web başarım testi çalıştırma
 
 1. Web performans testinizi çalıştırın ve görüntülenen Örnek başlıklı WebPerfTestResultsViewerAddin eklentisi yeni sekmesini göreceksiniz **Web Performans Testi Sonuçları Görüntüleyicisi**.
 
 2. DataGridView üzerinde sunulan özellikleri görüntülemek için sekmeyi seçin.
 
-## <a name="net-framework-security"></a>.NET Framework Güvenliği
+## <a name="net-security"></a>.NET güvenlik
 
 Kötü niyetli eklentilerin otomatik olarak etkinleşmesini engelleyerek güvenliği geliştirmek için Visual Studio ayarları sunar bir **Araçlar Seçenekler** sayfası **/makro güvenliği**.
 

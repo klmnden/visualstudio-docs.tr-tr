@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aa21d4bfccd50e31c2fd7e76bb8808bba19bc58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333745"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746692"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Bu yapı meta verilerinden harcanan alan türü hakkında bilgileri belirtir.
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Açıklamalar
  Bu yapı birleşimde bir parçası olarak görünür [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) ne zaman yapısı `dwKind` alanını `TYPE_INFO` yapısı ayarlandığında `TYPE_KIND_METADATA` (arasında bir değer [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) sabit listesi).
 
- `tokClass` Türü benzersiz olarak tanımlayan bir meta veri belirteci değerdir. Meta veri belirteci kimliği üst bitlerini yorumlama hakkında ayrıntılı bilgi için bkz. `CorTokenType` numaralandırma corhdr.h dosyasında [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.
+ `tokClass` Türü benzersiz olarak tanımlayan bir meta veri belirteci değerdir. Meta veri belirteci kimliği üst bitlerini yorumlama hakkında daha fazla bilgi için bkz: `CorTokenType` .NET Framework SDK corhdr.h dosyasında sabit listesi.
 
 ## <a name="requirements"></a>Gereksinimler
  Üstbilgi: sh.h

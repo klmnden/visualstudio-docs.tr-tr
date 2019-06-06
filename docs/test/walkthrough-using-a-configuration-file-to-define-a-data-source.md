@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432247"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746756"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
@@ -71,7 +71,7 @@ Bu kılavuzu tamamlamak için gerekenler:
 ```
 
 > [!NOTE]
-> Derleme adı, kullanmakta olduğunuz Microsoft Visual Studio .NET Framework derleme eşleşmesi gerekir.
+> Derleme adı, kullanmakta olduğunuz sürümle aynı olmalıdır.
 
 ## <a name="define-connection-strings"></a>Bağlantı dizeleri tanımlama
 

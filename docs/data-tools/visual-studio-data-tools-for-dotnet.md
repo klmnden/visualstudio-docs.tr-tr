@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565090"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745305"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 
-Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, bellekte veri modelleme ve veri kullanıcı arabiriminde görüntülemek için desteği sağlar. Veri erişimi işlevleri sağlayan .NET Framework sınıfları olarak bilinen [ADO.NET](/dotnet/framework/data/adonet/index). Visual Studio'da araçları verileriyle birlikte bir ADO.NET, öncelikli olarak ilişkisel veritabanı ve XML desteklemek için tasarlanmıştır. Bugünlerde çoğu NoSQL veritabanı satıcıların veya üçüncü taraflar, ADO.NET sağlayıcılar sunar.
+Visual Studio ve .NET birlikte kapsamlı API ve araç veritabanlarına bağlanma, bellekte veri modelleme ve veri kullanıcı arabiriminde görüntülemek için desteği sağlar. Veri erişimi işlevleri sağlayan .NET sınıfları olarak bilinen [ADO.NET](/dotnet/framework/data/adonet/index). Visual Studio'da araçları verileriyle birlikte bir ADO.NET, öncelikli olarak ilişkisel veritabanı ve XML desteklemek için tasarlanmıştır. Bugünlerde çoğu NoSQL veritabanı satıcıların veya üçüncü taraflar, ADO.NET sağlayıcılar sunar.
 
-[.NET core](/dotnet/core/) ADO.NET veri kümeleri ve ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) ADO.NET veri kümeleri ve bunların ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](/ef/core/).
 
 Aşağıdaki diyagram, temel mimarisinin basitleştirilmiş bir görünümünü gösterir:
 

@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956459"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746388"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 
-Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları ve web başvuruları projenize içeri aktarılan ad alanlarını yönetmek için. Proje başvuruları COM bileşenlerini, XML web Hizmetleri, .NET Framework sınıf kitaplıkları veya derlemeleri ve diğer sınıf kitaplıkları için içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).
+Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları ve web başvuruları projenize içeri aktarılan ad alanlarını yönetmek için. Proje başvuruları COM bileşenlerini, XML web Hizmetleri, .NET kitaplıkları veya derlemeleri ve diğer sınıf kitaplıkları için içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).
 
 Erişim için **başvuruları** sayfasında, bir proje düğümü seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğundaki. Proje Tasarımcısı göründüğünde tıklayın **başvuruları** sekmesi.
 

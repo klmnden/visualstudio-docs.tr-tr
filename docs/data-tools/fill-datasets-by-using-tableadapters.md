@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715188"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745535"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapter'ları kullanarak veri kümelerini doldurma
 
@@ -85,7 +85,7 @@ TableAdapters işlevselliğini standart veri bağdaştırıcılarından yapılan
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter yöntemleri ve özellikleri
 
-TableAdapter sınıfı değil parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu, olamaz arayın belgelerinde anlamına gelir veya **Nesne Tarayıcısı**. Yukarıda belirtilen sihirbazlardan birini kullandığınızda, tasarım zamanında oluşturulur. Oluşturduğunuz bir TableAdapter bağdaştırıcısına atanan ad çalıştığınız tablonun adı temel alır. Örneğin, adında bir veritabanındaki bir tabloda temel bir TableAdapter oluşturduğunuzda `Orders`, TableAdapter adlı `OrdersTableAdapter`. TableAdapter bağdaştırıcısının sınıf adı kullanılarak değiştirilebilir. **adı** özelliğinde **veri kümesi Tasarımcısı**.
+TableAdapter sınıfı, bir .NET türü değil. Bu, olamaz arayın belgelerinde anlamına gelir veya **Nesne Tarayıcısı**. Yukarıda belirtilen sihirbazlardan birini kullandığınızda, tasarım zamanında oluşturulur. Oluşturduğunuz bir TableAdapter bağdaştırıcısına atanan ad çalıştığınız tablonun adı temel alır. Örneğin, adında bir veritabanındaki bir tabloda temel bir TableAdapter oluşturduğunuzda `Orders`, TableAdapter adlı `OrdersTableAdapter`. TableAdapter bağdaştırıcısının sınıf adı kullanılarak değiştirilebilir. **adı** özelliğinde **veri kümesi Tasarımcısı**.
 
 Yaygın olarak kullanılan yöntemleri ve TableAdapters özellikleri aşağıda verilmiştir:
 
@@ -122,7 +122,7 @@ TableAdapter boş değer atanabilir türler Destek `Nullable(Of T)` ve `T?`. Vis
 
 İlişkili tabloları içeren bir veri kümesi oluşturduğunuzda varsayılan olarak, bir TableAdapterManager sınıfı oluşturur. Sınıf oluşturulmasını önlemek için değerini değiştirmek `Hierarchical Update` özelliği false kümesi. WPF sayfası ya da Windows Form Tasarım yüzeyine bir ilişkisi olan bir tabloda sürüklediğinizde, Visual Studio sınıfının bir üye değişkeni bildirir. Veri bağlama kullanmazsanız, el ile değişkenini tanımlamak zorunda.
 
-TableAdapterManager sınıf değil parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu nedenle, bu belgelerde bakarak olamaz. Tasarım zamanında veri kümesi oluşturma işleminin bir parçası olarak oluşturulur.
+TableAdapterManager sınıfı .NET türü değil. Bu nedenle, bu belgelerde bakarak olamaz. Tasarım zamanında veri kümesi oluşturma işleminin bir parçası olarak oluşturulur.
 
 Sık kullanılan yöntemleri ve özellikleri verilmiştir `TableAdapterManager` sınıfı:
 

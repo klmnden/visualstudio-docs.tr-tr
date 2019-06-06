@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974169"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744721"
 ---
 # <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Toplama metotlarını seçme
 
@@ -34,7 +34,7 @@ Performans oturumu kullanabilirsiniz **yöntemi** uygulamanız için en uygun ko
 |----------------------------| - |
 | **CPU örnekleme** | İlk çözümleme ve CPU kullanımı sorunlarını analiz etmek için yararlı olan uygulama istatistikleri toplar. |
 | **İzleme** | Odaklı analiz için ve giriş/çıkış performans sorunlarını analiz etmek için yararlı olan ayrıntılı zamanlama verilerini toplar. |
-| **.NET bellek ayırma** | Toplar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bellek ayırma verilerinin örnekleme profili oluşturma yöntemi kullanarak. |
+| **.NET bellek ayırma** | Örnekleme profili oluşturma yöntemi kullanarak .NET Framework bellek ayırma verileri toplar. |
 | **Eşzamanlılık** | Sayısal kaynak Çekişme verisi toplar. |
 
 ## <a name="performance-explorer"></a>Performans Gezgini
@@ -75,7 +75,7 @@ Performans oturumu kullanabilirsiniz **yöntemi** uygulamanız için en uygun ko
 
 4. Tıklayın **örnekleme** veya **izleme**.
 
-5. Tıklayın **toplamak .NET nesnesi ayırma bilgilerini** boyutuna ve sayısına toplanacak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nesne ayırma.
+5. Tıklayın **toplamak .NET nesnesi ayırma bilgilerini** .NET Framework nesne ayırmaların sayısı ve boyutu toplanacak.
 
 6. (İsteğe bağlı) Tıklayın **ayrıca .NET nesnesi ömür bilgilerini toplayın** içinde nesne belleği yeniden çöp toplama kuşakları hakkında veri toplamak için.
 

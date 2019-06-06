@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791077"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744988"
 ---
 # <a name="application-page-project-designer-c"></a>Uygulama Sayfası, Proje Tasarımcısı (C#)
 
@@ -50,14 +50,18 @@ Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.Proj
 
 **Hedef Çerçeve**
 
-.NET Framework sürümünü belirtir, uygulama hedefler. Bu seçenek, bilgisayarınızda yüklü olan .NET Framework sürümleri bağlı olarak farklı değerlere sahip olabilir.
+.NET sürümünü belirtir, uygulama hedefler. Bu seçenek bilgisayarınızda yüklü olan .NET sürümlerini bağlı olarak farklı değerlere sahip olabilir.
 
-Varsayılan değer, projeyi oluştururken seçtiğiniz hedef çerçeve ile aynıdır.
+.NET Framework projeleri için varsayılan değer, projeyi oluştururken belirttiğiniz hedef çerçeve ile eşleşir.
+
+Bir proje için hedefleyen .NET Core, kullanılabilir sürümlerin şu şekilde görünebilir:
+
+![.NET Core projesi için hedef framework sürümleri](../media/application-target-framework.png)
 
 > [!NOTE]
 > Listelenen önkoşul paketleri [Önkoşullar iletişim kutusu](../../ide/reference/prerequisites-dialog-box.md) iletişim kutusunu ilk açışınızda otomatik olarak ayarlanır. Projenin hedef çerçevesi daha sonra değiştirirseniz, yeni hedef Framework'ü el ile eşleştirmek için önkoşulları seçmeniz gerekir.
 
-Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) ve [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md).
+Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) ve [genel bakışı hedefleyen Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Çıkış türü**
 
@@ -77,9 +81,9 @@ Yeniden yönlendirme hakkında daha fazla bilgi için bkz. [derleme sürümlerin
 
 **Başlangıç nesnesi**
 
-Uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Bu uygulama ya da çok ana forma ya da genel olarak ayarlanmıştır `Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(ayarlanmamış)**.
+Uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Bu uygulama ya da çok ana forma ya da genel olarak ayarlanmıştır `Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(ayarlanmamış)** .
 
-Varsayılan olarak, bir WPF uygulaması projesinde bu seçeneği ayarlanır **(ayarlanmamış)**. Diğer seçenek \[ProjeAdı] .app. Bir WPF projesinde, başlangıç URI'ın bir kullanıcı Arabirimi kaynak uygulaması başladığında yüklenmesini ayarlamanız gerekir. Bunu yapmak için açık *Application.xaml* ayarlayın ve dosya projenizde `StartupUri` özelliğini bir *.xaml* projenizde, aşağıdaki gibi dosya *gt;Window1.XAML*. Kabul edilebilir kök öğeleri listesi için bkz. <xref:System.Windows.Application.StartupUri%2A>. Ayrıca tanımlamalıdır bir `public static void Main()` projedeki bir sınıftaki yöntemi. Bu sınıf görünür **Başlangıç nesnesi** olarak listesinde *ProjectName.ClassName*. Ardından, sınıf Başlangıç nesnesi seçebilirsiniz.
+Varsayılan olarak, bir WPF uygulaması projesinde bu seçeneği ayarlanır **(ayarlanmamış)** . Diğer seçenek \[ProjeAdı] .app. Bir WPF projesinde, başlangıç URI'ın bir kullanıcı Arabirimi kaynak uygulaması başladığında yüklenmesini ayarlamanız gerekir. Bunu yapmak için açık *Application.xaml* ayarlayın ve dosya projenizde `StartupUri` özelliğini bir *.xaml* projenizde, aşağıdaki gibi dosya *gt;Window1.XAML*. Kabul edilebilir kök öğeleri listesi için bkz. <xref:System.Windows.Application.StartupUri%2A>. Ayrıca tanımlamalıdır bir `public static void Main()` projedeki bir sınıftaki yöntemi. Bu sınıf görünür **Başlangıç nesnesi** olarak listesinde *ProjectName.ClassName*. Ardından, sınıf Başlangıç nesnesi seçebilirsiniz.
 
 Bkz: [/Main (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) daha fazla bilgi için. Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -115,4 +119,4 @@ Windows Vista kullanıcı hesabı denetimi (UAC altında) uygulama çalışırke
 
 Proje için kaynak dosyası sağlarken bu radyo düğmesini seçin. Bu seçeneği devre dışı bırakır **simgesi** ve **bildirim** seçenekleri.
 
-Bir yol adı girin veya Gözat düğmesini kullanın (**...** ) bir Win32 kaynak dosyası projeye eklenecek.
+Bir yol adı girin veya Gözat düğmesini kullanın ( **...** ) bir Win32 kaynak dosyası projeye eklenecek.

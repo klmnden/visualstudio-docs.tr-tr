@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678817"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746666"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise için IntelliTrace (C#, Visual Basic, C++)
 
@@ -44,7 +42,6 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 |||
 |-|-|
 |**Uygulamamın IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Geçmiş olaylar ile ilgili çağrı bilgilerini göster.<br />-IntelliTrace Oturumumu Kaydet.<br />-Intellitrace'in topladığı verileri kontrol et.|- [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)<br />- [İzlenecek yol: IntelliTrace’i Kullanma](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace özellikleri](../debugger/intellitrace-features.md)<br />- [Geçmiş hata ayıklama](../debugger/historical-debugging.md)|
-|**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi Topla**|- [El ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Dağıtılmış uygulamalardan IntelliTrace verilerini toplama**|- [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başlatın.**|- [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ Bu kaynaklardan IntelliTrace verisi kaydedebilirsiniz:
 
 - Visual Studio 2015 Enterprise veya sonraki sürümleri ya da Visual Studio Ultimate'nın önceki sürümlerini bir IntelliTrace oturumu.
 
-- Microsoft Test Yöneticisi'nde bir sınama oturumu
-
 - IIS'de barındırılan ASP.NET web uygulamaları ya da Microsoft Monitoring Agent kullandığınızda dağıtımda tek başına ya da System Center 2012 ile birlikte çalışan SharePoint 2010 ve SharePoint 2013 uygulamaları. Bkz: [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md) ve [Microsoft Monitoring Agent ile izleme](https://technet.microsoft.com/library/dn465153.aspx).
 
 IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler aşağıdadır:
@@ -84,10 +79,6 @@ IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler a
 - Bir özel durum gerçekleşir.
 
      IntelliTrace olmadan, bir özel durum hakkında bir ileti alırsınız ama özel duruma yol açan olaylar hakkında daha bilgi yok. Özel duruma yol açan çağrı zincirini görmek için çağrı yığınını inceleyebilirsiniz ancak bu çağrılar sırasında gerçekleşen olayların sırasını göremezsiniz. IntelliTrace ile özel durumdan önce meydana gelen olayları inceleyebilirsiniz.
-
-- Uygulamanız sınama bilgisayarında çöküyor ancak geliştirme bilgisayarında başarıyla çalışır.
-
-     Microsoft Test Yöneticisi'nden IntelliTrace verisi toplayabilir, verileri .iTrace dosyasına kaydedebilir ve bu dosyayı daha sonra incelemek için Team Foundation Server çalışma öğesine ekleyebilirsiniz. Bkz: [el ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) ve [kullanım kaydedilen IntelliTrace verilerini](../debugger/using-saved-intellitrace-data.md).
 
 - Dağıtılan bir uygulamada hata veya kilitlenme oluşur.
 

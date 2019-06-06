@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263214"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745576"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: Bir ClickOnce dağıtımı ' bağımsız Önkoşullar için destek URL'sini belirtme
-A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım için istemci bilgisayardaki kullanılabilir olması gereken önkoşulları test [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] çalıştırmak için uygulama. Gerekli en düşük sürümü bu bağımlılıkları içerecek [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], işletim sistemi ve genel derleme önbelleğinde (GAC) yüklenmiş herhangi bir derleme sürümü. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bu önkoşulları hiçbirini kendisini; ancak, yükleyemezsiniz bir önkoşul bulunamadı, yalnızca yükleme durdurur ve yükleme neden başarısız olduğunu açıklayan bir iletişim kutusu görüntüler.
+A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım için istemci bilgisayardaki kullanılabilir olması gereken önkoşulları test [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] çalıştırmak için uygulama. Bu bağımlılıklar, gerekli en düşük sürümü .NET Framework, işletim sistemi ve genel derleme önbelleğinde (GAC) yüklenmiş herhangi bir derleme sürümünü içerir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bu önkoşulları hiçbirini kendisini; ancak, yükleyemezsiniz bir önkoşul bulunamadı, yalnızca yükleme durdurur ve yükleme neden başarısız olduğunu açıklayan bir iletişim kutusu görüntüler.
 
  Önkoşulları yüklemek için iki yöntem vardır. Bir önyükleyici uygulaması kullanarak bunları yükleyebilirsiniz. Alternatif olarak, önkoşul bulunmazsa, kullanıcılara iletişim kutusunda görüntülenir bağımsız Önkoşullar için destek URL'sini belirtebilirsiniz. Bu URL tarafından başvurulan sayfa için gereken önkoşulları yükleme yönergeleri için bağlantıları içerebilir. Bir uygulama için ayrı bir önkoşulu destek URL'si belirtmezse [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tanımlıysa, bir bütün olarak uygulamadan dağıtım bildiriminde belirtilen destek URL'sini görüntüler.
 

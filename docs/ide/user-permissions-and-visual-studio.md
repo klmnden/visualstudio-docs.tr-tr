@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821649"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747634"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -33,7 +33,7 @@ Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabili
 |Yükleme|Visual Studio'yu yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
 ||Yüklemek, güncelleştirmek veya yerel Yardım içeriğini kaldırın.|[Yerel Yardım içeriği yükleme ve yönetme](../help-viewer/install-manage-local-content.md)|
 |Araç Kutusu|Klasik COM denetimleri ekleme **araç kutusu**.|[Araç Kutusu](../ide/reference/toolbox.md)|
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanın.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanın.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||C++ projeleri oluşturduğunuzda kayıt adımı içerir.||
 |Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
 ||Hesap, ASP.NET Web siteleri gibi farklı bir kullanıcı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|

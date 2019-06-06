@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825500"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745216"
 ---
 # <a name="performance-warnings"></a>Performans Uyarıları
 Performans uyarıları, yüksek performanslı kitaplıkları ve uygulamaları destekler.
@@ -38,7 +38,7 @@ Performans uyarıları, yüksek performanslı kitaplıkları ve uygulamaları de
 | [CA1810: Başvuru türü statik alanları satır içi başlatın](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Bir tür açık statik yapıcı bildirdiğinde, JIT derleyici her bir statik yöntemi kontrol ekler ve türün yapıcı örneği statik yapıcının daha önceden çağrıldığından emin olur. Statik oluşturucu denetimleri performansı düşürebilir. |
 | [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md) | Özel veya iç (derleme düzeyi) üye Arayanların derlemede yok, ortak dil çalışma zamanı tarafından çağrılan değildir ve temsilci tarafından çağrılan değildir. |
 | [CA1812: Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Bir derleme düzeyi türünün örneği, derleme içindeki kod tarafından oluşturulmaz. |
-| [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework sınıf kitaplığı, özel öznitelikleri almak için yöntemler sağlar. Varsayılan olarak, bu yöntemleri öznitelik devralma hiyerarşisinde arar. Öznitelik mühürleme kalıtım hiyerarşisi aracılığıyla aramayı ortadan kaldırır ve performansı artırabilir. |
+| [CA1813: Korumasız özniteliklerden kaçının](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET özel öznitelikleri almak için yöntemler sağlar. Varsayılan olarak, bu yöntemleri öznitelik devralma hiyerarşisinde arar. Öznitelik mühürleme kalıtım hiyerarşisi aracılığıyla aramayı ortadan kaldırır ve performansı artırabilir. |
 | [CA1814: Basit diziler çok boyutlu dizilere tercih edin](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Basit bir dizi, öğeleri dizi olan bir dizidir. Öğeleri olan diziler bazı veri kümeleri için daha az harcanmış sonuçlanabilir farklı boyutlarda olabilir. |
 | [CA1815: Geçersiz kılma eşittir ve işleç değer türleri üzerinde](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Değer türleri için, Equals'ın devralınmış uygulaması Reflection kitaplığını kullanır ve türdeki tüm alanların içeriğini karşılaştırır. Yansıma hesaplama açısından pahalıdır ve her alan için eşitlik karşılaştırma gereksiz olabilir. Kullanıcıları karşılaştırmak veya örneklerini sıralamak ya da tablo anahtarlarını karma olarak kullanmayı bekliyorsanız, değer türünüz Equals'ı uygulamalıdır. |
 | [CA1816: GC çağırın. IDisposable.Dispose doğru](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Dispose uygulamasını bir yöntemi, GC çağırmaz. GC IDisposable.Dispose ya da Dispose uygulamasını olmayan bir yöntem çağırır. GC IDisposable.Dispose ya da bir yöntemi çağırır. IDisposable.Dispose ve bunun dışında bir şey geçirir (Oturumumu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |

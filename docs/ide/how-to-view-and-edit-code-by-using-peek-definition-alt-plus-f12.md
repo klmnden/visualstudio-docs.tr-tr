@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537512"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747328"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme
 
 Kullanabileceğiniz **Özet tanım** görüntülemek ve kod yazdığınız uzaklaşmadan kod tanımlarını düzenlemek için komutu. **Özet tanım** ve **tanıma** aynı bilgileri gösterir ancak **Özet tanım** bir açılır pencerede gösterir ve **tanıma** gösterir ayrı bir kod penceresinde kodu. **Tanıma Git** tanım kodu penceresine geçilmesine, bağlamınızın (yani, etkin kod penceresi, geçerli satır ve imleç konumu) neden olur. Kullanarak **Özet tanım**, görüntüleyebilir ve tanımını düzenleyin ve orijinal kod dosyasında yerinizi tutarken tanım dosyası içinde gezinebilirsiniz.
 
-Kullanabileceğiniz **Özet tanım** C#, Visual Basic ve C++ koduna sahip. Visual Basic'te **Özet tanım** bir bağlantısı gösterir **Nesne Tarayıcısı** tanım meta verileri (yerleşik olarak bulunan Örneğin, .NET Framework türleri) olmayan simgeler için.
+Kullanabileceğiniz **Özet tanım** C#, Visual Basic ve C++ koduna sahip. Visual Basic'te **Özet tanım** bir bağlantısı gösterir **Nesne Tarayıcısı** tanım meta verileri (yerleşik olarak bulunan gibi .NET türleri) olmayan simgeler için.
 
-## <a name="working-with-peek-definition"></a>Özet Tanım ile Çalışma
+## <a name="use-peek-definition"></a>Özet tanımı kullanma
 
-### <a name="to-open-a-peek-definition-window"></a>Bir Özet Tanım penceresi açmak için
+### <a name="open-a-peek-definition-window"></a>Özet tanım penceresini açın
 
 1. Seçerek bir tanıma göz atma **Özet tanımı** için keşfetmek istediğiniz bir türü veya sağ tıklama menüsünde. Seçeneği etkinleştirilirse, fare tuşuna basarak kullanarak bir tanımı ayrıca Özet **Ctrl** (veya başka bir değiştirici) ve üye adına tıklayarak. Veya, klavyeden basın **Alt**+**F12**.
 
@@ -75,7 +75,7 @@ Bu klavye kısayollarını kullanabilirsiniz **Özet tanım** penceresi:
 |Tanım penceresini açma|**Alt**+**F12**|
 |Tanım penceresini kapatma|**ESC**|
 |Tanım penceresini bir normal belge sekmesine yükseltme|**Shift**+**Alt**+**giriş**|
-|Tanım pencereleri arasında gezinme|**CTRL**+**Alt** + **-** ve **Ctrl**+**Alt**+**=**|
+|Tanım pencereleri arasında gezinme|**CTRL**+**Alt** + **-** ve **Ctrl**+**Alt**+ **=**|
 |Birden fazla sonuç arasında gezinme|**F8** ve **Shift**+**F8**|
 |Kod düzenleyicisi penceresi ile tanım penceresi arasında geçiş yapma|**Shift**+**Esc**|
 

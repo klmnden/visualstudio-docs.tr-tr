@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004756"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747368"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild görev başvurusu
 
@@ -169,7 +169,7 @@ Bu bölümdeki konular, listelenen parametrelerin yanı sıra, her görev, ayrı
 
 - [GetFrameworkPath görevi](../msbuild/getframeworkpath-task.md)
 
- Yolunu alır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler.
+ .NET Framework derlemeleri için yolu alır.
 
 - [GetFrameworkSdkPath task](../msbuild/getframeworksdkpath-task.md)
 

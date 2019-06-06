@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545761"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744588"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Kullanılmayan yerelleri kaldırın
 
@@ -40,7 +40,11 @@ ms.locfileid: "62545761"
  Kullanılmayan yerel değişkenler ve gereksiz atamaların derleme boyutunu artırır ve performansı düşürür.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için kaldırın veya yerel değişkenini kullanın. C# derleyicisi, birlikte unutmayın [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kullanılmayan yerel değişkenler kaldırır, `optimize` seçeneği etkinleştirilir.
+
+Bu kural ihlalini düzeltmek için kaldırın veya yerel değişkenini kullanın.
+
+> [!NOTE]
+> C# Derleyici kullanılmayan yerel değişkenler kaldırır, `optimize` seçeneği etkinleştirilir.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
  Yayılan derleyici değişkeni ise bu kuraldan bir uyarıyı gizler. Performans ve kod bakımı birincil kaygıları değilse de bu kuraldan bir uyarıyı bastırmak için veya kuralı devre dışı bırakmak için güvenli değildir.

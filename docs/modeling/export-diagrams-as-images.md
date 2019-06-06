@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994543"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744519"
 ---
 # <a name="export-diagrams-as-images"></a>Diyagramları görüntü olarak dışarı aktarma
+
 Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio'nun aynı sürümünü kullanmayan proje ekibi üyesi ile bunları paylaşabileceği modelleme diyagramlarını salt okunur biçimde kaydedebilirsiniz.
 
- Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Başka bir uygulamaya bir diyagram veya diyagram parçası kopyalamak için
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Bir diyagram veya diyagram parçası başka bir uygulamaya kopyalayın.
 
 1. Diyagram üzerinde bazı veya tüm şekilleri seçin.
 
@@ -31,7 +32,7 @@ Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio
 
 3. Seçiminizi istediğiniz uygulamaya yapıştırın.
 
-### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Modelleme diyagramında bir XML Paper Specification (.xps) dosyası olarak kaydetmek için
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Modelleme diyagramında bir XML Paper Specification (.xps) dosyası olarak Kaydet
 
 1. Üzerinde **dosya** menüsünde tıklatın **yazdırma** açmak için **yazdırma** iletişim kutusu.
 
@@ -39,9 +40,7 @@ Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio
 
 3. İçinde **dosyayı farklı Kaydet** dosyayı farklı Kaydet iletişim kutusu bir **Dokument XPS (\*.xps)** dosya.
 
-## <a name="net-framework-security"></a>.NET Framework Güvenliği
-
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)
 - [Modelleri paylaşma ve diyagramları dışarı aktarma](../modeling/share-models-and-exporting-diagrams.md)

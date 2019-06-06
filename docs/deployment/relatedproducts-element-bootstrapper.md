@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898730"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747467"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; öğesi (Önyükleyici)
 `RelatedProducts` Öğe bağlı ya da geçerli ürün dahil diğer ürünleri tanımlar.
@@ -74,7 +74,7 @@ ms.locfileid: "62898730"
 |`Code`|Kod adı tarafından belirtilen bulunan ürünün `ProductCode` özniteliği `Product` öğesi. Daha fazla bilgi için [ \<ürün > öğesi](../deployment/product-element-bootstrapper.md).|
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneği ile Microsoft Installer yüklendiğini belirtir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]ve bu nedenle ayrı bir yükleme gerekmez.
+ Aşağıdaki kod örneği, Microsoft Installer .NET Framework ile birlikte yüklenir ve bu nedenle ayrı bir yükleme gerekmez belirtir.
 
 ```xml
 <RelatedProducts>

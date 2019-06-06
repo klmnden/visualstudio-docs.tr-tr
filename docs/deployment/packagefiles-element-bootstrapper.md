@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898717"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747518"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; öğesi (Önyükleyici)
 `PackageFiles` Ögesinin `PackageFile` sonucu olarak çalıştırılan yükleme paketleri tanımlayan öğeleri `Command` öğesi.
@@ -62,7 +62,7 @@ ms.locfileid: "62898717"
 | `Hash` | İsteğe bağlı. Paket dosyası bir SHA1 karması. Bu, yükleme sırasında dosya bütünlüğünü doğrulamak için kullanılır. Aynı karma paket dosyasından deltanın hesaplanamaması durumunda paketi yüklü değil. |
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneği için paketleri tanımlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yeniden dağıtılabilir paketi ve bağımlılıkları, Windows Installer gibi.
+ Aşağıdaki kod örneği, .NET Framework dağıtılabilir paketini ve bağımlılıklarını gibi Windows Installer için paketler tanımlar.
 
 ```xml
 <PackageFiles>

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791662"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744937"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -57,14 +57,14 @@ Bu özelliği programlama yoluyla erişim hakkında daha fazla bilgi için bkz: 
 
 ### <a name="target-framework-all-configurations"></a>Hedef Framework'ü (tüm yapılandırmaları)
 
-.NET Framework sürümünü belirtir, uygulama hedefler. Bu seçenek, bilgisayarınızda yüklü olan .NET Framework sürümleri bağlı olarak farklı değerlere sahip olabilir.
+.NET sürümünü belirtir, uygulama hedefler. Bu seçenek bilgisayarınızda yüklü olan .NET sürümlerini bağlı olarak farklı değerlere sahip olabilir.
 
-Varsayılan değer, projeyi oluştururken belirttiğiniz hedef çerçeve ile eşleşir.
+.NET Framework projeleri için varsayılan değer, projeyi oluştururken belirttiğiniz hedef çerçeve ile eşleşir.
 
 > [!NOTE]
 > Listelenen önkoşul paketleri [Önkoşullar iletişim kutusu](../../ide/reference/prerequisites-dialog-box.md) iletişim kutusu ilk kez açtığınızda, otomatik olarak ayarlanır. Projenin hedef çerçevesi daha sonra değiştirirseniz, yeni hedef Framework'ü el ile eşleştirmek için önkoşulları belirtmeniz gerekir.
 
-Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) ve [Visual Studio çoklu sürüm desteğine genel bakış](../../ide/visual-studio-multi-targeting-overview.md).
+Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) ve [genel bakışı hedefleyen Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Uygulama türü
 
@@ -90,7 +90,7 @@ Projeyi WPF tarayıcı uygulaması ise, bu liste başlıklı **başlangıç URI*
 
 Varsa **etkinleştir uygulama çerçevesi** temizlendiğinde, bu liste olur **Başlangıç nesnesi** ve formlar ve sınıflar veya modülleriyle gösterir bir `Sub Main`.
 
-**Başlangıç nesnesi** uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Genellikle bu, uygulamanızda ya da çok ana formu ayarlandığından `Sub Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(hiçbiri)**. Daha fazla bilgi için [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Başlangıç nesnesi** uygulama yüklenirken çağrılacak giriş noktasını tanımlar. Genellikle bu, uygulamanızda ya da çok ana formu ayarlandığından `Sub Main` yordamı, uygulama başlatıldığında çalıştırmanız gerekir. Sınıf kitaplıkları, bir giriş noktası olmadığı için tek seçenektir bu özellik için **(hiçbiri)** . Daha fazla bilgi için [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Bu özelliğe program aracılığıyla erişmek için bkz: <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Simge
 
@@ -153,7 +153,7 @@ Seçin **ana pencereyi** uygulamanın ana pencere kapandığında veya açıkça
 
 ### <a name="splash-screen"></a>Giriş ekranı
 
-Giriş ekranı kullanmak istediğiniz form seçin. Daha önce bir giriş ekranı bir form veya şablon kullanarak oluşturmuş olmanız gerekir. Varsayılan değer **(hiçbiri)**.
+Giriş ekranı kullanmak istediğiniz form seçin. Daha önce bir giriş ekranı bir form veya şablon kullanarak oluşturmuş olmanız gerekir. Varsayılan değer **(hiçbiri)** .
 
 ### <a name="view-application-events"></a>Uygulama olaylarını görüntüle
 

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548156"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745811"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
@@ -56,11 +56,11 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
 
 ## <a name="assemblies-tab"></a>Derlemeler sekmesi
 
-**Derlemeleri** sekmesi, başvuru için kullanılabilen tüm .NET Framework derlemelerini listeler. **Derlemeleri** GAC içindeki derlemeler çalışma zamanı ortamının bir parçası olduğu için sekmesinde herhangi bir derleme genel derleme önbelleğinden (GAC) listelenmiyorsa. Dağıtmak veya GAC'ye kayıtlı bir derlemeye bir başvuru içeren bir uygulama kopyalarsanız, derleme olmaz dağıtılacağını veya bakılmaksızın uygulama ile birlikte kopyalanan **Yereli Kopyala** ayarı. Daha fazla bilgi için [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md).
+**Derlemeleri** sekmesi, başvuru için kullanılabilen tüm .NET derlemelerini listeler. **Derlemeleri** GAC içindeki derlemeler çalışma zamanı ortamının bir parçası olduğu için sekmesinde herhangi bir derleme genel derleme önbelleğinden (GAC) listelenmiyorsa. Dağıtmak veya GAC'ye kayıtlı bir derlemeye bir başvuru içeren bir uygulama kopyalarsanız, derleme olmaz dağıtılacağını veya bakılmaksızın uygulama ile birlikte kopyalanan **Yereli Kopyala** ayarı. Daha fazla bilgi için [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md).
 
 Başvuru EnvDTE ad alanlarının herhangi birine el ile eklerseniz (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a>, veya <xref:EnvDTE100>) ayarlayın **birlikte çalışma türlerini katıştır** başvuruözelliği**False** içinde **özellikleri** penceresi. Bu özelliği ayarlamak **True** neden sorunları katıştırılamayan belirli EnvDTE özellikleri nedeniyle oluşturabilirsiniz.
 
-Tüm masaüstü projeleri için örtük bir başvuru içeren **mscorlib**. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeleri örtük bir başvuru içeren <xref:Microsoft.VisualBasic>. Tüm projeleri örtük bir başvuru içeren **System.Core**, başvurular listesinden kaldırılsa bile.
+Tüm masaüstü projeleri için örtük bir başvuru içeren **mscorlib**. Visual Basic projeleri için örtük bir başvuru içeren <xref:Microsoft.VisualBasic>. Tüm projeleri örtük bir başvuru içeren **System.Core**, başvurular listesinden kaldırılsa bile.
 
 Bir proje türü Derlemeler'i desteklemiyorsa sekmesinde görünmez **başvuru Yöneticisi** iletişim kutusu.
 
@@ -68,7 +68,9 @@ Bir proje türü Derlemeler'i desteklemiyorsa sekmesinde görünmez **başvuru Y
 
 1. **Framework** hedef alınan çerçeveyi oluşturan tüm derlemeleri listeler.
 
-    Projeleri Windows 8.x Store uygulamaları için hedeflenmiş içindeki derlemelerin tümüne başvurular içerir [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] varsayılan olarak proje oluşturma. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** çerçeve'nin tümüne yönelik başvuruyu belirtir. Buna **Framework** sekmesini çerçeveden derlemelerin hiçbirini listeleme yüklemeyecekseniz ve bunun yerine şu iletiyi görüntüler: "Tüm Framework derlemelerine zaten başvurulmuş. Lütfen Nesne Tarayıcısı Framework'deki başvuruları araştırmak için kullanın." Masaüstü projeleri için **Framework** sekmesini hedeflenen çerçeveden derlemeleri numaralandırır ve kullanıcı uygulamanın gerek duyduğu başvuruları eklemelidir.
+   .NET Core veya evrensel Windows platformu hedefleyen olmayan projeler için **Framework** sekmesini hedeflenen çerçeveden derlemeleri numaralandırır. Kullanıcı uygulamanın gerek duyduğu başvuru eklemeniz gerekir.
+
+   Evrensel Windows projeleri, varsayılan olarak hedeflenen çerçevenin içindeki derlemelerin tümüne başvurular içerir. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** çerçeve'nin tümüne yönelik başvuruyu belirtir. Buna **Framework** sekmesi çerçeveden derlemelerin hiçbirini numaralandırma değildir ve bunun yerine şu iletiyi görüntüler: "Tüm Framework derlemelerine zaten başvurulmuş. Lütfen Nesne Tarayıcısı Framework'deki başvuruları araştırmak için kullanın".
 
 2. **Uzantıları** bileşen ve denetim dış satıcılarının hedeflenen çerçeveyi genişletmek için geliştirilmiştir tüm derlemeleri listeler. Kullanıcı uygulamasının amacına bağlı olarak, bu derlemelere gerek duyulabilir.
 
@@ -84,22 +86,20 @@ Bir proje türü Derlemeler'i desteklemiyorsa sekmesinde görünmez **başvuru Y
 
    Ve önceki sürümleri [hedef çerçeve tanımlayıcısı]
 
-   Örneğin, bir proje 32-bit makinede .NET Framework 4 hedefliyse **uzantıları** altında kayıtlı derlemeleri numaralandıracaktır *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, ve  *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
+   Örneğin, bir proje bir 32-bit makinede .NET Framework 4 hedefliyse **uzantıları** altında kayıtlı derlemeleri listeler *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, ve *\ Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Listedeki bazı bileşenler, projeniz .NET Framework sürümüne bağlı olarak gösterilmeyebilir. Bu, aşağıdaki koşullarda oluşabilir:
+Listedeki bazı bileşenler, projenizi framework sürümüne bağlı olarak gösterilmeyebilir. Bu, aşağıdaki koşullarda oluşabilir:
 
-- .NET Framework'ün yeni bir sürümünü kullanan bileşen, .NET Framework'ün önceki bir sürümünü hedefleyen bir proje ile uyumlu değil.
+- Yeni bir framework sürümünü kullanan bileşen, daha önceki bir sürümünü hedefleyen bir proje ile uyumlu değil.
 
-    Bir proje için hedef .NET Framework sürümünü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Bir proje için hedef framework sürümünü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework sürümü](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Kullanan bileşen [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] hedefleyen bir projeyle uyumsuzdur [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
-
-    Bazı projeler hedef yeni bir uygulama oluşturduğunuzda [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] varsayılan olarak.
+- .NET Framework 4 kullanan bileşen, .NET Framework 4.5 hedefleyen bir proje ile uyumlu değil.
 
 Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çıktılarına dosya başvuruları aynı çözümde eklemekten kaçının. Bunun yerine, **projeleri** sekmesinde **Başvuru Ekle** projeden projeye başvuru oluşturmak için iletişim kutusu. Bu takım geliştirme projelerinizde oluşturduğunuz sınıf kitaplıklarının daha iyi yönetimine etkinleştirerek kolaylaştırır. Daha fazla bilgi için [başvuruları bozuk sorun giderme](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> Visual Studio 2015 veya sonraki sürümlerde, bir projenin .NET Framework hedef sürümü 4.5 veya sonraki bir sürümü, ve diğer projenin hedef sürümü, sürüm 2, 3, 3.5 veya 4.0 ise bir proje başvurusu yerine dosya başvurusu oluşturulur.
+> Visual Studio 2015 veya sonraki sürümlerde, bir projenin hedef framework sürümü .NET Framework 4.5 veya sonrası ise ve diğer projenin hedef sürümü .NET Framework 2, 3, 3.5 veya 4.0 ise bir proje başvurusu yerine dosya başvurusu oluşturulur.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Bir derlemeyi Başvuru Ekle iletişim kutusunda görüntülemek için
 
@@ -125,7 +125,7 @@ Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çık
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>*  geçerli en düşük .NET Framework sürümü. Varsa *\<VersionMinimum\>* v3.0, belirtilen klasörleri olan *AssemblyFoldersEx* .NET Framework 3.0 ve üstünü hedefleyen projeler için geçerlidir.
+   *\<VersionMinimum\>*  geçerli en düşük framework sürümüdür. Varsa *\<VersionMinimum\>* v3.0, belirtilen klasörleri olan *AssemblyFoldersEx* .NET Framework 3.0 ve üstünü hedefleyen projeler için geçerlidir.
 
    *\<AssemblyLocation\>*  görünmesini istediğiniz derlemelerin dizinidir **Başvuru Ekle** iletişim kutusu *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çık
 
 **Projeleri** sekmesi içinde geçerli çözüm içindeki tüm uyumlu projeleri listeler **çözüm** alt sekmesi.
 
-Bir proje, farklı bir .NET Framework sürümünü hedef alan başka bir projeye başvuruda bulunabilir. Örneğin, hedefleyen bir proje oluşturabilirsiniz [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ancak .NET Framework 2 için oluşturulmuş bir derlemeyi başvuruyor. Ancak, .NET Framework 2 projesi başvuramaz bir [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] proje. Daha fazla bilgi için [Multi-targeting'e genel bakış](../ide/visual-studio-multi-targeting-overview.md).
+Bir proje, farklı framework sürümünü hedefleyen başka bir projeye başvuruda bulunabilir. Örneğin, .NET Framework 4 hedefleyen bir proje oluşturabilirsiniz ancak, .NET Framework 2 için oluşturulmuş bir derlemeye başvurur. Ancak, .NET Framework 2 projesi bir .NET Framework 4 projesi başvuramaz. Daha fazla bilgi için [genel bakışı hedefleyen Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-Hedefleyen bir projeye [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] hedefleyen bir projeyle uyumsuzdur [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
-
-Bir proje hedef .NET Framework 4 ve başka bir proje daha önceki bir sürümü hedefliyorsa bir proje başvurusu yerine dosya başvurusu oluşturulur.
-
-Hedefleyen bir projeye [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] .NET Framework hedefleyen bir projeye bir proje başvurusu eklenemiyor ve bunun tersi de geçerlidir.
+> [!NOTE]
+> .NET Framework 4 hedefleyen bir proje .NET Framework 4 istemci Profili'ni hedefleyen bir proje ile uyumlu değil.
 
 ## <a name="universal-windows-tab"></a>Evrensel Windows sekmesi
 
@@ -177,9 +174,9 @@ Bir proje türü COM'u desteklemiyorsa sekmesinde görünmez **başvuru Yönetic
 
 Kullanabileceğiniz **Gözat** düğmesini dosya sistemindeki bir bileşen için göz atın.
 
-Bir proje, farklı bir .NET Framework sürümünü hedef alan başka bir bileşene başvuruda bulunabilir. Örneğin, bir uygulama hedefleyen .NET Framework 4.7, .NET Framework 4 hedefleyen bir bileşene başvuruda oluşturabilirsiniz. Daha fazla bilgi için [Multi-targeting'e genel bakış](../ide/visual-studio-multi-targeting-overview.md).
+Bir proje, farklı framework sürümünü hedefleyen bir bileşene başvuruda bulunabilir. Örneğin, .NET Framework 4.7 hedefler, ancak .NET Framework 4 hedefleyen bir bileşene başvuruda bir uygulama oluşturabilirsiniz. Daha fazla bilgi için [genel bakışı hedefleyen Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-Aynı çözümdeki başka bir projenin çıktılarına dosya başvuruları eklemekten kaçınmalısınız; bu taktik derleme hatalarına neden olabilir. Bunun yerine, **çözüm** sekmesinde **başvuru Yöneticisi** projeden projeye başvuru oluşturmak için iletişim kutusu. Bu takım geliştirme projelerinizde oluşturduğunuz sınıf kitaplıklarının daha iyi yönetimine etkinleştirerek kolaylaştırır. Daha fazla bilgi için [başvuruları bozuk sorun giderme](../ide/troubleshooting-broken-references.md).
+Aynı çözümdeki başka bir projenin çıktılarına dosya başvuruları ekleme kaçının, çünkü bu Taktik derleme hatalarına neden. Bunun yerine, **çözüm** sekmesinde **başvuru Yöneticisi** projeden projeye başvuru oluşturmak için iletişim kutusu. Bu takım geliştirme projelerinizde oluşturduğunuz sınıf kitaplıklarının daha iyi yönetimine etkinleştirerek kolaylaştırır. Daha fazla bilgi için [başvuruları bozuk sorun giderme](../ide/troubleshooting-broken-references.md).
 
 Bir SDK'ye göz atamaz ve projenize ekleyin. Yalnızca bir dosyaya göz atabilirsiniz (örneğin, bir derleme veya *.winmd*) ve projenize ekleyin.
 

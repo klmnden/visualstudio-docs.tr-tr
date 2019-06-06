@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566087"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745345"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>(WCF Veri Hizmetleri) kavramsal bir modelle çalışma
 
@@ -27,7 +27,7 @@ Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığını
 
 | Konu | Açıklama |
 | - | - |
-| [Nasıl yapılır: Veri Hizmeti sorguları yürütme](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Veri hizmetinden veri sorgulama işlemleri gösterilir bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] uygulama. |
+| [Nasıl yapılır: Veri Hizmeti sorguları yürütme](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Bir .NET uygulamasından bir veri hizmetini sorgulama işlemi gösterilmektedir. |
 | [Nasıl yapılır: Proje sorgu sonuçları](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Veri Hizmeti sorgusuna ile döndürülen veri miktarını azaltmak nasıl gösterir. |
 
  Kavramsal bir modeli kullandığınız zaman, ne tür veriler, etki alanıyla eşleşen bir dilde geçerli tanımlayabilirsiniz. Geçerli veri modelinde tanımlayabilir veya bir varlık veya veri hizmeti üzerinde gerçekleştirdiğiniz işlemleri doğrulama ekleyebilirsiniz.

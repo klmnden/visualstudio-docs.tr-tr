@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779303"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744694"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Genel özel durum türlerini yakalamayın
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779303"
  Bu kuraldan uyarıyı bastırmayın. Genel özel durum türlerini yakalamak çalışma zamanı sorunlarını kitaplık kullanıcısından gizleyebilir ve hata ayıklama daha zor hale getirebilir.
 
 > [!NOTE]
-> İle başlayarak [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], ortak dil çalışma zamanı (CLR) erişim ihlali gibi yönetilen kod ve işletim sistemi ortaya bozuk durum özel durumlar artık teslim [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], yönetilen kod tarafından işlenecek. Bir uygulamada derlemek istiyorsanız [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] veya sonraki sürümler ve bakımını bozuk durum özel durumları işleme, uygulayabileceğiniz <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> öznitelik bozuk durum özel durumu işleyen yöntem.
+> .NET Framework 4 ile başlayarak, ortak dil çalışma zamanı (CLR) artık erişim ihlali gibi yönetilen kod ve işletim sistemi ortaya bozuk durum özel durumları sunuyor [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], yönetilen kod tarafından işlenecek. Derleme bir uygulama .NET Framework 4 veya sonraki sürümler için istediğiniz ve bozuk durumda özel durumların işlenmesiyle korumak, uygulayabilirsiniz <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> öznitelik bozuk durum özel durumu işleyen yöntem.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki örnek bu kuralı ihlal eden bir tür ve doğru bir şekilde uygulayan bir tür gösterir `catch` blok.

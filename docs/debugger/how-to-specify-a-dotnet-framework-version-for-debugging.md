@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906497"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747480"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme (C#, Visual Basic F#)
 
-Visual Studio hata ayıklayıcısını destekleyen Microsoft eski sürümlerini hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] geçerli sürümü yanı sıra. Visual Studio'dan bir uygulamayı başlatırsanız, hata ayıklayıcı her zaman doğru sürümünü tanımlayabilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayıkladığınız uygulama için. Uygulama zaten varsa ancak çalışan ve kullanarak hata ayıklamayı Başlat **ekleme**, hata ayıklayıcı her zaman daha eski bir sürümünü belirlemek mümkün olmayabilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Böyle bir durumda bildiren bir hata iletisi alırsınız,
+Visual Studio hata ayıklayıcı Microsoft .NET Framework'ün eski sürümlerini yanı sıra geçerli sürümü hata ayıklamayı destekler. Visual Studio'dan bir uygulamayı başlatırsanız, hata ayıklayıcı her zaman doğru ayıkladığınız uygulama için .NET Framework sürümünü tanımlayabilirsiniz. Uygulama zaten varsa ancak çalışan ve kullanarak hata ayıklamayı Başlat **ekleme**, hata ayıklayıcı her zaman daha eski bir .NET Framework sürümünü belirlemek mümkün olmayabilir. Böyle bir durumda bildiren bir hata iletisi alırsınız,
 
 ``` cmd
-The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version your application is going to use.
+The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
 Bu hata göründüğü nadir durumlarda, hata ayıklayıcı için hangi sürümün kullanılacağını belirtmek için bir kayıt defteri anahtarı ayarlayabilirsiniz.
@@ -62,7 +62,7 @@ Bu hata göründüğü nadir durumlarda, hata ayıklayıcı için hangi sürüm�
 
 9. Kapat **Kayıt Defteri Düzenleyicisi'ni**.
 
-     Hata ayıklama başlattığınızda doğrulayın almaya devam ediyorsanız bir hata iletisi kayıt defterinde sürüm numarası doğru girdiniz. Ayrıca, bir sürümünü kullandığınızı doğrulayın [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Visual Studio tarafından desteklenir. Hata ayıklayıcı geçerli .NET Framework sürümünü ve önceki sürümleri ile uyumludur, ancak gelecekteki sürümleri ile ileri doğru uyumlu olmayabilir.
+     Hata ayıklama başlattığınızda doğrulayın almaya devam ediyorsanız bir hata iletisi kayıt defterinde sürüm numarası doğru girdiniz. Ayrıca, Visual Studio tarafından desteklenen .NET Framework sürümünü kullandığınızı doğrulayın. Hata ayıklayıcı geçerli .NET Framework sürümünü ve önceki sürümleri ile uyumludur, ancak gelecekteki sürümleri ile ileri doğru uyumlu olmayabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)

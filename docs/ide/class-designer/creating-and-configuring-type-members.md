@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975537"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746934"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Oluşturma ve tür üyeleri Sınıf Tasarımcısı'nda yapılandırma
 
@@ -308,7 +308,7 @@ Kaynak kodu dosyası salt okunur bir türü içeren bir projeyi kaydetmeyi dener
 
 Bir Kod dosyası sözdizimi hatası içeriyorsa, bu dosyadaki kodu gösteren şekiller söz dizimi hatası düzeltilinceye kadar geçici olarak salt okunur olur. Bu durumdaki şekiller, "Kaynak kodu dosyası ayrıştırma hatası içeriyor" yazılı araç ipucunu gösteren kırmızı bir metin ve kırmızı bir simge görüntüler.
 
-Başka bir proje düğümü altında ya da başvurulan bir derleme düğümü altında bulunan bir başvurulan tür (.NET Framework türü gibi), Sınıf Tasarımcısı'nın tasarım yüzeyinde salt okunur olarak belirtilir. Açık durumda bulunan projede var olan bir yerel tür okuma/yazma özelliklidir ve Sınıf Tasarımcısı'nın tasarım yüzeyindeki şekli de böyle belirtilir.
+Başvurulan derleme düğümü altında veya başka bir proje düğümü mevcut, başvurulan bir tür (örneğin, bir .NET türü), Sınıf Tasarımcısı tasarım yüzeyinde salt okunur olarak belirtilir. Açık durumda bulunan projede var olan bir yerel tür okuma/yazma özelliklidir ve Sınıf Tasarımcısı'nın tasarım yüzeyindeki şekli de böyle belirtilir.
 
 Dizin oluşturucular okuma-yazma kod ve **sınıf ayrıntıları** penceresi, ancak dizin oluşturucunun adı salt okunur.
 

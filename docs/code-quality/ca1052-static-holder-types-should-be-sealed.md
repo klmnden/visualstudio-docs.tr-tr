@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842086"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744585"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Static tutucu türler sealed olmalıdır
 
@@ -46,7 +46,7 @@ Kural CA1052 türü türetilmiş türde geçersiz kılınabilir herhangi bir iş
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
-Bu kural ihlalini düzeltmek için türü olarak işaretlemek `sealed` veya `NotInheritable`. .NET Framework 2.0, hedeflediğiniz veya daha sonra türü olarak işaretlemek için daha iyi bir yaklaşım ise `static` veya `Shared`. Bu şekilde sınıfı oluşturulmasını önlemek için bir özel yapıcı bildirmeniz gerekmez.
+Bu kural ihlalini düzeltmek için türü olarak işaretlemek `sealed` veya `NotInheritable`. Projenin hedeflediği .NET Framework 2.0 veya sonraki sürümlerde, türü olarak işaretlemek için daha iyi bir yaklaşım ise `static` veya `Shared`. Bu şekilde sınıfı oluşturulmasını önlemek için bir özel yapıcı bildirmeniz gerekmez.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 

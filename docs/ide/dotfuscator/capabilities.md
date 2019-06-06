@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557261"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744776"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator Özellikleri
 
@@ -37,7 +37,7 @@ Dotfuscator Community gibi bir geniş .NET derlemesi ve uygulama türlerini dest
 ## <a name="intellectual-property-protection"></a>Fikri mülkiyet koruması
 
 Uygulama tasarımı, davranış ve uygulama fikri mülkiyet (IP) biçimler.
-Ancak, .NET Framework için oluşturulan uygulamaların temelde books açın değildir; Ters mühendislik .NET derlemeleri için çok kolaydır [üst düzey meta veriler ve Ara kod içerdiğinden][assemblies].
+Ancak, .NET için oluşturulan uygulamaların temelde books açın değildir; Ters mühendislik .NET derlemeleri için kolayca [üst düzey meta veriler ve Ara kod içerdiğinden][assemblies].
 
 Dotfuscator Community içeren temel [.NET karartma] [ obfuscation] biçiminde [yeniden adlandırma][renaming].
 Bu adlandırma önemli bilgiler genel olarak Dotfuscator kodunuzla obfuscating tersine mühendislik, kaynak kodda için yetkisiz erişim riskini azaltır.
@@ -50,7 +50,7 @@ Dotfuscator ekleme [koruma hata ayıklama davranışı][debug] uygulamanıza bu 
 ## <a name="application-integrity-protection"></a>Uygulama bütünlüğünü koruma
 
 Kaynak kodunuzu korunmasına ek olarak, uygulamanızı tasarlandığı gibi kullanıldığından emin olmak önemli.
-Saldırganlar, uygulamanızın lisanslama ilkeleri (yani, yazılım korsanlığı), çalabilir veya uygulama tarafından işlenen hassas verileri işlemek için ya da uygulamanın davranışını değiştirmek için aşmak için çalma girişiminde bulunabilir.
+Saldırganlar, uygulamanızın lisanslama ilkeleri (diğer bir deyişle, yazılım korsanlığı), çalabilir veya uygulama tarafından işlenen hassas verileri işlemek için ya da uygulamanın davranışını değiştirmek için aşmak için çalma girişiminde bulunabilir.
 
 Dotfuscator Community ekleme [uygulama doğrulama kodu] [ checks] içine dahil olmak üzere derlemelerinizin [koruma kurcalamaya][tamper], [koruma hata ayıklama][debug], ve [hologram cihaza] [ root] ölçümleri.
 Geçersiz uygulama durumu algılandığında bir doğrulama kodu için [çağrı durumunuza uygun bir şekilde ele almak için uygulama kodunun üzerine][check-app].

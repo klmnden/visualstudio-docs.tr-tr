@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338220"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746837"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Bu diğer adla ilişkilendirilmiş değeri temsil eden bir yönetilen kod arabirim alır.
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
- Bu yöntem yalnızca yönetilen değerlere uygulanır ( `ICorDebugValue` arabirim kullanılabilir [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] ve tanımlanan [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK cordebug.idl dosyasında).
+ Bu yöntem yalnızca yönetilen değerlere uygulanır ( `ICorDebugValue` bir arabirim .NET Framework içinde kullanılabilir ve .NET Framework SDK cordebug.idl dosyasında tanımlanır).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

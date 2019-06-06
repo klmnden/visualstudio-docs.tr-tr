@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531997"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746565"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Kullanarak birim testlerini yapılandırma bir *.runsettings* dosyası
 
-Kullanarak birim testlerini Visual Studio'da yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde yapılan testler, test sonuçlarını ya da bir test çalıştırması sırasında toplanan verileri için dizin .NET Framework sürümünü değiştirebilirsiniz.
+Kullanarak birim testlerini Visual Studio'da yapılandırılabilir bir *.runsettings* dosya. Örneğin, üzerinde yapılan testler, test sonuçlarını ya da bir test çalıştırması sırasında toplanan verileri için dizin .NET sürümünü değiştirebilirsiniz.
 
 Çalışma ayarları dosyası isteğe bağlıdır. Özel bir yapılandırma gerektirmeyen, ihtiyacınız olmayan bir *.runsettings* dosya. En yaygın kullanımı bir *.runsettings* dosyasıdır özelleştirmek için [kod kapsamı analizi](../test/customizing-code-coverage-analysis.md).
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4d91de1e41477e1acd21118422e3164e20e80
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715416"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747443"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio tümleştirmesi (MSBuild)
 Visual Studio ana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.
 
-  - `ResolvedFrom`, bunu çözümlenirse "{TargetFrameworkDirectory}" kümesi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dizin.
+  - `ResolvedFrom`, bu .NET Framework dizininden çözümlenirse "{TargetFrameworkDirectory}" ayarlayın.
 
 - COM başvuruları:
 

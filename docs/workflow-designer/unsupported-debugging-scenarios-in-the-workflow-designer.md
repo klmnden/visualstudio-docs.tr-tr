@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433883"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747263"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>İş Akışı Tasarımcısında desteklenmeyen hata ayıklama senaryoları
 
-İş Akışı Tasarımcısı .NET Framework 4'teki birçok yeni özellikler eklenmiştir, ancak yine de desteklemediği hata ayıklama bazı senaryolar verilmiştir.
-
-Desteklenmeyen iş akışı Tasarımcısı'nin hata ayıklama senaryoları şunlardır:
+İş Akışı Tasarımcısı aşağıdaki hata ayıklama senaryoları desteklemez:
 
 - Kodu düzenlenmiş sonra yürütülmesine devam ettirilemez.
 
@@ -29,7 +27,7 @@ Desteklenmeyen iş akışı Tasarımcısı'nin hata ayıklama senaryoları şunl
 
 - İş Akışı Tasarımcısı, tasarımcıyı kullanmadan kodda oluşturulan iş akışlarında hata ayıklamak için kullanılamaz.
 
-- .NET Framework 4 Tasarımcısı'nda oluşturulan önceki sürümlerinde Windows Workflow Foundation (WF) iş akışı hata ayıklaması yapılamaz.
+- .NET Framework 4 veya sonraki bir sürümünde oluşturulan önceki sürümlerinde Windows Workflow Foundation (WF) iş akışı hata ayıklanamıyor.
 
 - Kesme noktaları, etkinlikleri arasındaki bağlantıları tanımlanamıyor veya <xref:System.Activities.Statements.Flowchart> düğümleri.
 

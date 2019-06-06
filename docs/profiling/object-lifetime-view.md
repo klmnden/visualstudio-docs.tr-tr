@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6127ae8e76ff7233ff7ad4f7b336325555e57b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794355"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747200"
 ---
 # <a name="object-lifetime-view"></a>Nesne Ömrü Görünümü
 Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri toplayın** üzerinde teslim edildi **performans oturumu** özellik sayfaları.
 
- Çöp toplayıcı, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için Yönetilen yığın üç kuşaklar halinde ayrılmıştır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.
+ .NET Framework'ün çöp toplayıcı ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için Yönetilen yığın üç kuşaklar halinde ayrılmıştır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.
 
  Çöp toplayıcı tüm nesneleri nesil serbest bırakarak belleği geri kazanır. Profili oluşturulan uygulama tarafından oluşturulan nesneler için nesne ömrü görünümü sayısına ve boyutuna nesneleri ve geri alındığını nesil görüntüler.
 

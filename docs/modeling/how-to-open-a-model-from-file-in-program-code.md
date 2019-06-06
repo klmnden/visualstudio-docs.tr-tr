@@ -7,34 +7,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445131"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747500"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
+
 DSL model herhangi bir uygulama açabilirsiniz.
 
- Bir Visual Studio Uzantısında, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Bir Visual Studio Uzantısında, bu amaçla Modelbus'ı kullanabilirsiniz. ModelBus bir model veya bir model öğelerini ve taşınmışsa, model bulma için standart mekanizması sağlar. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Hedef Çerçeve
- Ayarlama **hedef Framework'ü** uygulama projenizin **.NET Framework 4**.
 
-#### <a name="to-set-the-target-framework"></a>Hedef Framework'ü ayarlama
+Ayarlama **hedef Framework'ü** uygulama projenizin .NET Framework 4 veya üzeri.
 
 1. Bir DSL modeli okumak istediğiniz uygulama için Visual Studio projesini açın.
 
 2. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
 
-3. Proje Özellikleri penceresinde üzerinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** alanı **.NET Framework 4**.
+3. Proje Özellikleri penceresinde üzerinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** alanı **.NET Framework 4** (veya üzeri).
 
 > [!NOTE]
-> Seçtiyseniz, bunu yapmak ihtiyacınız olabilecek **.NET Framework 4** proje oluşturma iletişim kutusunda. Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.
+> Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.
 
 ## <a name="references"></a>Referanslar
- Visual Studio uygulama projenizin bu başvuruları eklemeniz gerekir:
+
+Visual Studio uygulama projenizin bu başvuruları ekleyin:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
@@ -43,9 +44,10 @@ DSL model herhangi bir uygulama açabilirsiniz.
 - DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *Şirketiniz*. *Projeniz*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>DSL önemli sınıfları
- DSL'nizi okuyan kod yazabileceğiniz önce bazı DSL'nizi tarafından oluşturulan sınıfların adlarını bilmeniz gerekir. DSL çözümünüzü açın **Dsl** proje ve konum **GeneratedCode** klasör. Alternatif olarak, projenizin DSL derlemede çift **başvuruları**, DSL ad alanında açın **Nesne Tarayıcısı**.
 
- Tanımlamanız gerekir sınıfları şunlardır:
+DSL'nizi okuyan kod yazabileceğiniz önce bazı DSL'nizi tarafından oluşturulan sınıfların adlarını bilmeniz gerekir. DSL çözümünüzü açın **Dsl** proje ve konum **GeneratedCode** klasör. Alternatif olarak, projenizin DSL derlemede çift **başvuruları**, DSL ad alanında açın **Nesne Tarayıcısı**.
+
+Tanımlamanız gerekir sınıfları şunlardır:
 
 - *YourDslRootClass* -kök sınıfı adıdır, `DslDefinition.dsl`.
 
@@ -53,8 +55,9 @@ DSL model herhangi bir uygulama açabilirsiniz.
 
 - *YourDslName* `DomainModel` -bu sınıfı içinde tanımlanan `DomainModel.cs` DSL projenizdeki.
 
-## <a name="reading-from-a-file"></a>Bir dosyadan okuma
- Aşağıdaki örnek, önemli sınıfları aşağıdaki gibi olan bir DSL okumak için tasarlanmıştır:
+## <a name="read-from-a-file"></a>Bir dosyadan okunan
+
+Aşağıdaki örnek, önemli sınıfları aşağıdaki gibi olan bir DSL okumak için tasarlanmıştır:
 
 - FamilyTreeModel
 
@@ -62,7 +65,7 @@ DSL model herhangi bir uygulama açabilirsiniz.
 
 - FamilyTreeDomainModel
 
-  Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.
+Bu DSL içinde diğer etki alanı sınıfı kişi anlamına gelir.
 
 ```csharp
 using System;
@@ -100,8 +103,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>Bir dosyaya kaydetme
- Önceki kod aşağıdaki eklemeyi modele bir değişiklik yapar ve sonra bir dosyaya kaydeder.
+## <a name="save-to-a-file"></a>Bir dosyaya kaydedin
+
+Önceki kod aşağıdaki eklemeyi modele bir değişiklik yapar ve sonra bir dosyaya kaydeder.
 
 ```csharp
 using (Transaction t =

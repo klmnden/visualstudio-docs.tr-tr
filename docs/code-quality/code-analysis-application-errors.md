@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540878"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745206"
 ---
 # <a name="code-analysis-application-errors"></a>Kod çözümleme uygulama hataları
 
@@ -46,8 +46,8 @@ Bu bölüm, yönetilen kod analizi aracı tarafından oluşturulan hata iletiler
 |[CA0065](ca0065.md)|Desteklenmeyen Meta veri yapısı: Türü '*TypeName*'hem bir özellik hem de aynı ada sahip bir alan içeriyor'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|Değer '*VersionID*' için sağlanan **/targetframeworkversion** tanınan bir sürüm değil.|
 |[CA0067](ca0067.md)|Dizin bulunamadı.|
-|[CA0068](ca0068.md)|Hata ayıklama bilgileri hedef derleme için bulunamadı *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Diğer platformlar kullanıyor. *FrameworkVersion1* bulunamadı. Kullanarak *FrameworkVersion2* yerine. En iyi analiz sonuçları için doğru .NET Framework yüklü olduğundan emin olun.|
+|[CA0068](ca0068.md)|Hata ayıklama bilgileri hedef derleme için bulunamadı *'AssemblyName'* .|
+|[CA0069](ca0069.md)|Diğer platformlar kullanıyor. *FrameworkVersion1* bulunamadı. Kullanarak *FrameworkVersion2* yerine. En iyi analiz sonuçları için doğru framework sürümü yüklü olduğundan emin olun.|
 |[CA0070](ca0070.md)|Derleme veya tür güvenlik izinleri nedeniyle yüklenemiyor.|
 |[CA0501](ca0501.md)|Çıkış raporu okunamıyor.|
 |[CA0502](ca0502.md)|Desteklenmeyen dil.|

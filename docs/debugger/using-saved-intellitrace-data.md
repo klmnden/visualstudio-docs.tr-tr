@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408628"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746147"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Kayıtlı IntelliTrace verilerini kullanarak (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
     |**Kaynak**|**Bkz:**|
     |----------------|-------------|
     |Visual Studio Enterprise (ancak değil Professional veya Community sürümlerini) bir IntelliTrace oturumu|[IntelliTrace Özellikleri](../debugger/intellitrace-features.md)|
-    |Microsoft Test Yöneticisi'nde bir sınama oturumu. Bu bir .iTrace dosyası bir Team Foundation Server iş nesnesine ekler.|[El ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, ya da tek başına veya System Center 2012 R2 Operations Manager ile ASP.NET web uygulamaları ve SharePoint uygulamaları geliştirme sırasında çalışan|-   [Dağıtımdan sonra sorunları tanılama](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager için yenilikler nelerdir?](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Ne yapmak istiyorsunuz?
@@ -67,7 +66,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 > Hata ayıklama sırasında IntelliTrace dosyasını kapattıysanız, kolayca yeniden açabilirsiniz. Git **hata ayıklama** menüsünde seçin **IntelliTrace**, **günlük özetini göster**. Ayrıca seçebilirsiniz **günlük özetini göster** içinde **IntelliTrace** penceresi. Yalnızca IntelliTrace ile hata ayıklama sırasında bu kullanılabilir.
 
 ## <a name="Understand"></a> IntelliTrace günlüğünün anlama
- Yalnızca, belirli bir kaynaktan Örneğin, Test Yöneticisi'nden veya SharePoint uygulamalardan toplanan veriler, bazı .iTrace dosyasın içinde aşağıdaki bölümlerde görünür.
+ Yalnızca, belirli bir kaynaktan Örneğin, SharePoint uygulamalardan toplanan veriler, bazı .iTrace dosyasın içinde aşağıdaki bölümlerde görünür.
 
 |**Bölüm**|**içerir**|**Koleksiyon kaynağı**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 |[Çözümleme](#Analysis)|Yalnızca SharePoint 2010 ve SharePoint 2013 uygulamaları için. Hata ayıklayıcı olayları, ULS olayları, İşlenmeyen özel durumları ve Microsoft Monitoring Agent kaydettiği diğer veriler gibi IntelliTrace ve SharePoint olaylarını tanılayın.|Microsoft Monitoring Agent, ya da tek başına Toplayıcı veya System Center 2012 R2 Operations Manager ile|
 |[Sistem bilgisi](#SystemInfo)|Ayarları ve özellikleri ana sistemin|Tüm kaynakları|
 |[İş parçacıkları listesi](#ThreadsList)|Koleksiyon süresince çalışan iş parçacıkları|Tüm kaynakları|
-|[Test verileri](#TestData)|Test adımları ve bir test oturumundaki sonuçları|Test Yöneticisi|
 |[Modüller](#Modules)|Yüklendikleri sırada hedef işlemin yüklediği modülleri.|Tüm kaynakları|
 |[Web isteği](#Modules)|Üretim IIS için istek verileri Web uygulamaları ve SharePoint 2010 ve SharePoint 2013 web|Microsoft Monitoring Agent ve tek başına Toplayıcı|
 
@@ -84,7 +82,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
 - Verileri sıralamak için sütun başlığını seçin.
 
-- Filtre verileri için arama kutusunu kullanın. Düz metin arama zaman sütunu dışındaki tüm sütunlarda çalışır. Sütun başına bir filtre ile ayrıca aramaları belirli bir sütuna filtreleyebilirsiniz. Sütun adı boşluk içermeyen, iki nokta (**:**) ve arama değeri. Noktalı virgül ile izleyin (**;**) başka bir sütun ve arama değeri eklemek için.
+- Filtre verileri için arama kutusunu kullanın. Düz metin arama zaman sütunu dışındaki tüm sütunlarda çalışır. Sütun başına bir filtre ile ayrıca aramaları belirli bir sütuna filtreleyebilirsiniz. Sütun adı boşluk içermeyen, iki nokta ( **:** ) ve arama değeri. Noktalı virgül ile izleyin ( **;** ) başka bir sütun ve arama değeri eklemek için.
 
      Örneğin, bulunacak Word'ün performans olayları "içinde yavaş" **açıklama** sütun, türü:
 
@@ -227,9 +225,6 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 |**Ad**|İş parçacığı adı. Adlandırılmamış iş parçacıkları olarak görünür "\<adsız >".|
 |**Başlangıç saati**|İş parçacığının oluşturulduğu saat|
 |**Bitiş zamanı**|İş parçacığının tamamlandığı saat|
-
-### <a name="TestData"></a> Test verileri
- Test Yöneticisi'ni uygulamanızı test ederken kaydedilen IntelliTrace verilerini inceleyin.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Belirli bir sınama adımından hata ayıklamasını başlatmak için
 

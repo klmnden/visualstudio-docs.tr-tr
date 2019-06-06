@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407622"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746117"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace tek başına toplayıcıyı kullanma (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ ms.locfileid: "63407622"
 
    2. Toplayıcı dizinini açın, örneğin göz atın: **C:\IntelliTraceCollector**
 
-   3. Kullanım **genişletin** nokta dahil, komut (**.**) ıntellitracecollection.cab dosyasını genişletmek için sonunda:
+   3. Kullanım **genişletin** nokta dahil, komut ( **.** ) ıntellitracecollection.cab dosyasını genişletmek için sonunda:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Süre (**.**) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.
+       > Süre ( **.** ) yerelleştirilmiş toplama planlarını içeren alt klasörleri korur.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Toplayıcı dizini için izinleri ayarla
 
@@ -157,7 +157,7 @@ ms.locfileid: "63407622"
 
             - 64-bit işletim sistemlerinde, kısayol menüsünü açın **Windows PowerShell**. Seçin **yönetici olarak çalıştır**.
 
-            - 32 bit işletim sistemlerinde, kısayol menüsünü açın **Windows PowerShell (x86)**. Seçin **yönetici olarak çalıştır**.
+            - 32 bit işletim sistemlerinde, kısayol menüsünü açın **Windows PowerShell (x86)** . Seçin **yönetici olarak çalıştır**.
 
     2. PowerShell komut penceresinde **Import-Module** içeri aktarmak için komutu **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407622"
 
 ## <a name="WhereElse"></a> IntelliTrace verisini başka nereden alabilirim?
 
-- Bir IntelliTrace hata ayıklama oturumu Visual Studio Enterprise, bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
-
-- Microsoft Test Yöneticisi'nde bir test oturumdan, bkz: [nasıl yapılır: Hata ayıklama zorluklarını çözmeye yardımcı olmak için IntelliTrace verilerini toplama](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+IntelliTrace verisini bir IntelliTrace hata ayıklama oturumu Visual Studio Enterprise elde edebilirsiniz. Bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?
  [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)

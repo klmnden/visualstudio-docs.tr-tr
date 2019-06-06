@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979542"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747663"
 ---
 # <a name="secure-applications"></a>Uygulamaları güvenli hale getirme
 
@@ -40,7 +40,7 @@ Güvenliği, ayrıca yapı işleminde önemli bir husus vardır. Bazı ek adıml
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [.NET Framework'te güvenlik](/dotnet/standard/security/index)
+- [.NET içinde güvenlik](/dotnet/standard/security/index)
 - [Azure güvenlik](/azure/security/)
 - [Windows 10 Mobile Güvenlik Kılavuzu](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova platform güvenlik özellikleri](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

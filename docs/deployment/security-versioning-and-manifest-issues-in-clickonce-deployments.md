@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263481"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745601"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Güvenlik, sürüm ve bildirim sorunları ClickOnce Dağıtımları
 
@@ -59,7 +59,7 @@ Yalnızca düzenlemekte olduğunuz bu hata oluşabilir, [!INCLUDE[ndptecclick](.
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>.NET Framework derlemeleri ayrı ayrı bildiriminde belirtin
 
-Uygulamanızı el ile düzenlediyseniz yüklenemeyecek bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] daha eski bir sürümünü başvurmak deployment bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derleme. Örneğin, bir sürümü için System.Net derlemesine bir başvuru eklediyseniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bildiriminde belirtilen sürümden önce ardından bir hata oluşacak. Genel olarak, size tek başvuruları belirtmek çalışmamalısınız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler, sürümü olarak [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] uygulama bildiriminde bağımlılık olarak, uygulamanızın çalıştığı karşı belirtilir.
+Uygulamanızı el ile düzenlediyseniz yüklenemeyecek bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] daha eski bir sürümü .NET Framework derlemesine başvurmak için dağıtım. Bildirimde belirtilen sürümden önceki .NET Framework sürümü için System.Net derlemesine bir başvuru eklediyseniz, örneğin, ardından bir hata oluşacak. Genel olarak, uygulama bildiriminde bağımlılık olarak karşı uygulamanızın çalıştığı .NET Framework sürümü olarak tek tek .NET Framework derlemelerine başvurular belirtmek çalışmamalıdır.
 
 ## <a name="manifest-parsing-issues"></a>Bildirim Ayrıştırma sorunları
 

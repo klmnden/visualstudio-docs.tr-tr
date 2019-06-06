@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714513"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745478"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Checkıd tarafından yönetilen kod için kod çözümleme uyarıları
 
@@ -492,7 +492,7 @@ Aşağıdaki tablo uyarının CheckId tanımlayıcısı tarafından yönetilen k
 | CA2225 | [CA2225: İşleç aşırı yüklemeleri adlandırılmış Alternatiflere sahiptir](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |Operatör aşırı yüklemesi bulundu ve beklenen adlandırılmış alternatif yöntem bulunamadı. Adlandırılmış alternatif üye operatörün sağladığı gibi aynı fonksiyonlara erişmeyi sağlar ve aşırı yüklenmiş operatörlere destek olmayan dilleri programlayan programcılar için bunlar sağlanmıştır. |
 | CA2226 | [CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | Bir tür, eşitlik ya da eşitsizlik operatörünü uygular ve ters işleci uygulamaz. |
 | CA2227 |[CA2227: Koleksiyon Özellikleri salt okunur olmalıdır](../code-quality/ca2227-collection-properties-should-be-read-only.md) |Yazılabilir koleksiyon özelliği kullanıcının koleksiyonun tamamını farklı bir koleksiyonla değiştirmesine izin verir. Salt okunur özelliği değiştirilmesini durdurur ancak yine de tekil üyelerin ayarlamasına izin verir. |
-| CA2228 | [CA2228: Yayımlanmamış kaynak biçimlerini yollamayın](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | .NET Framework'ün yayım öncesi sürümleri kullanılarak oluşturulan kaynak dosyaları .NET Framework'ün desteklenen sürümleri tarafından kullanılamayabilir. |
+| CA2228 | [CA2228: Yayımlanmamış kaynak biçimlerini yollamayın](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | .NET uygulamasının yayım öncesi sürümleri kullanılarak oluşturulan kaynak dosyaları .NET desteklenen sürümleri tarafından kullanılamayabilir. |
 | CA2229 | [CA2229: Serileştirme oluşturucularını uygulayın](../code-quality/ca2229-implement-serialization-constructors.md) | Bu kural ihlalini düzeltmek için seri hale getirme yapıcısını uygular. Kapalı bir sınıf için kurucusunu özel yapın; aksi takdirde korunmuş yapın. |
 | CA2230 | [CA2230: Değişken bağımsız değişkenler için params kullanın](../code-quality/ca2230-use-params-for-variable-arguments.md) | Ortak veya korumalı tür VarArgs çağırma kuralı params anahtar sözcüğünü kullanan bir ortak veya korumalı yöntem içerir. |
 | CA2231 | [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Bir değer türü Object.Equals'ı geçersiz kılar, ama eşitlik işlecini uygulamaz. |

@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929165"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746079"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Komut satırından ClickOnce uygulamalarını derleme
-İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca olan başka bir bilgisayara [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.
+İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca .NET Framework yüklü olan başka bir bilgisayara. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>ClickOnce Uygulama dağıtımlarını yeniden oluşturmak için Msbuild'i kullanma
  Komut satırında msbuild/target: publish çağırdığınızda, projeyi derlemek ve oluşturmak için MSBuild sistemi söyler. bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yayımlama klasörü uygulaması. Bu seçmeye eşdeğerdir **Yayımla** IDE'de komutu.
@@ -73,7 +73,7 @@ ms.locfileid: "62929165"
 
 5. `msbuild /target:publish`yazın.
 
-   Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projenizin adlı bir alt uygulama dağıtımı **Yayımla**. *CmdLineDemo.application* olduğu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Klasör *CmdLineDemo_1.0.0.0* dosyaları içeren *CmdLineDemo.exe.manifest* ve *dosyalarını*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. *Setup.exe* yükleyecek şekilde yapılandırılır ve varsayılan önyükleyici [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.
+   Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projenizin adlı bir alt uygulama dağıtımı **Yayımla**. *CmdLineDemo.application* olduğu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Klasör *CmdLineDemo_1.0.0.0* dosyaları içeren *CmdLineDemo.exe.manifest* ve *dosyalarını*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. *Setup.exe* önyükleyici, varsayılan olarak .NET Framework'ü yüklemek için yapılandırılmış. DotNetFX klasörü için .NET Framework yeniden dağıtılabilir dosyaları içerir. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.
 
 ## <a name="publish-properties"></a>Özellikleri Yayımla
  Yukarıdaki yordamlarda uygulama yayımladığınızda, aşağıdaki özellikler, Yayımla Sihirbazı tarafından proje dosyanıza eklenir. Bu özellikleri doğrudan etkilemek nasıl [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama oluşturulur.

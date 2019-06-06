@@ -2,7 +2,7 @@
 title: Bir ASP.NET Core web uygulaması oluşturunC#
 description: Visual Studio'da C# ve ASP.NET Core, adım adım ile basit bir Hello World web uygulaması oluşturmayı öğrenin.
 ms.custom: mvc,seodec18
-ms.date: 03/23/2019
+ms.date: 06/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954751"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745042"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -75,7 +75,7 @@ Başlamak için bir ASP.NET Core web uygulaması projesi oluşturacaksınız. Pr
    ![Yeni ASP.NET Core Web uygulaması iletişim kutusu](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Görmüyorsanız **ASP.NET Core 2.1** veya daha sonra Visual Studio'nun en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio en son sürüme güncelleştirme](../install/update-visual-studio.md) sayfası.
+   > Görmüyorsanız **ASP.NET Core 2.1**, Visual Studio'nun en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio en son sürüme güncelleştirme](../install/update-visual-studio.md) sayfası.
 
 Hemen sonra Visual Studio proje dosyanızı açar.
 
@@ -110,7 +110,7 @@ Hemen sonra Visual Studio proje dosyanızı açar.
 
    !['yeni projenizi yapılandırın' penceresinde 'HelloWorld' projenizi adlandırın](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. İçinde **yeni bir ASP.NET Core Web uygulaması oluşturma** penceresinde doğrulayın **ASP.NET Core 2.1** veya daha sonra üstteki açılan menüde görünür. Ardından, **Web uygulaması**, örnek Razor sayfaları içerir. Ardından, **Oluştur**.
+1. İçinde **yeni bir ASP.NET Core Web uygulaması oluşturma** penceresinde doğrulayın **ASP.NET Core 2.1** üstteki açılan menüde görünür. Ardından, **Web uygulaması**, örnek Razor sayfaları içerir. Ardından, **Oluştur**.
 
    !['Yeni bir ASP.NET Core Web uygulaması oluştur' penceresi](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -132,7 +132,7 @@ Hemen sonra Visual Studio proje dosyanızı açar.
 
    ![Visual Studio düzenleyicisinde ek bilgi alanının HTML kodu](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Okunacak "ek bilgileri" metni değiştirme "**Merhaba Dünya!**".
+1. Okunacak "ek bilgileri" metni değiştirme "**Merhaba Dünya!** ".
 
    ![Visual Studio Düzenleyicisi ek bilgi alanında varsayılan HTML kodunu değiştirme](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -144,7 +144,7 @@ Hemen sonra Visual Studio proje dosyanızı açar.
 
    ![Visual Studio Düzenleyicisi uygulama açıklama alanında için C# kodu](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Okunacak "uygulama açıklaması" ileti metni değiştirme "**iletime nedir?**".
+1. Okunacak "uygulama açıklaması" ileti metni değiştirme "**iletime nedir?** ".
 
    ![Visual Studio Düzenleyicisi'nde uygulama açıklama alanı için varsayılan ileti metni değiştirme](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 

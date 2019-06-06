@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8469f89e2dd013be9760dc80c6f96ea655b80699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316866"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745999"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Visual Studio'nun Birden Çok Sürümünü Destekleme
 Terim *yan yana* yükleyin ve birden çok sürümünü aynı bilgisayarda bir ürün tutmak anlamına gelir. VSPackage'ları için birden fazla Visual Studio sürümleri aynı bilgisayarda yüklü bir kullanıcısı olabilir anlamına gelir. Ancak, tek bir Visual Studio sürümüne yüklenen, VSPackages sürümlerini yan yana sahip olamaz.
@@ -36,7 +36,7 @@ Terim *yan yana* yükleyin ve birden çok sürümünü aynı bilgisayarda bir ü
    Daha fazla bilgi için [yükleme VSPackage'ları ile Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) ve ayrıca [bileşen Yönetim](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  > Visual Studio sürümünü yüklemek de ilgili sürümünü yükler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Örneğin, Visual Studio 2010 ve Visual Studio 2012 aynı bilgisayara yüklenmesi de 4.0 ve 4.5 sürümlerini yükler [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]sırasıyla.
+  > Visual Studio sürümünü yüklemek, karşılık gelen bir .NET Framework sürümünü yükler. Örneğin, Visual Studio 2010 ve Visual Studio 2012 aynı bilgisayara yüklenmesi de sürüm 4.0 ve 4.5 .NET Framework'ün sırasıyla yükler.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 - [Sürümü tutulan Vspackage'lar arasında paylaşılan seçme ve](../extensibility/choosing-between-shared-and-versioned-vspackages.md) , VSPackage'ı, yan yana sorunların nasıl giderileceğini açıklar.

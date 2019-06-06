@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793560"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746861"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
@@ -61,11 +61,11 @@ Bir kod kaynak dosyaları koleksiyonunu varsa, bunları projeye bir kolayca ekle
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Belirli bir .NET Framework sürümünü hedefleyen bir .NET projesi oluşturma
 
-Bir proje oluşturduğunuzda, projeyi kullanacak şekilde istediğiniz .NET Framework'ün belirli bir sürümünü belirtebilirsiniz.
+Bir .NET Framework projesi oluşturduğunuzda, projeyi kullanacak şekilde istediğiniz .NET Framework'ün belirli bir sürümünü belirtebilirsiniz. (.NET Core projesi oluşturduğunuzda, bir framework sürümünü belirtmeyin.)
 
 ::: moniker range="vs-2017"
 
-Bir .NET framework sürümünü belirtmek için **Framework** açılan menüde **yeni proje** iletişim kutusu.
+Bir .NET Framework sürümünü belirtmek için **Framework** açılan menüde **yeni proje** iletişim kutusu.
 
 ![Framework açılan yeni proje iletişim kutusunda](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Bir .NET framework sürümünü belirtmek için **Framework** açılan menüde *
 
 ::: moniker range=">=vs-2019"
 
-Bir .NET framework sürümünü belirtmek için **Framework** açılan menüsünde **yeni bir proje oluşturma** sayfası.
+Bir .NET Framework sürümünü belirtmek için **Framework** açılan menüsünde **yeni bir proje oluşturma** sayfası.
 
 ![Framework seçicide yeni proje yapılandırma](media/vs-2019/configure-new-project-framework.png)
 

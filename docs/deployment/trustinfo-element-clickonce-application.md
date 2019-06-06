@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927305"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745591"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; öğesi (ClickOnce uygulaması)
 Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik izinleri açıklar.
@@ -87,7 +87,7 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
      Gerekli. İzni sürümünü tanımlar. Normalde bu değer, `1`.
 
 ## <a name="ipermission"></a>IPermission
- İsteğe bağlı. Bu öğenin alt öğesi olan `PermissionSet` öğesi. `IPermission` Öğesi tam olarak içinde izin sınıfını tanımlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Öğesi izin sınıfını özelliklere karşılık gelen ek öznitelikler şu öznitelikler bulunur, ancak. Belirli bir izni sözdizimi öğrenmek için Security.config dosyasında listelenen örneklere bakın.
+ İsteğe bağlı. Bu öğenin alt öğesi olan `PermissionSet` öğesi. `IPermission` Öğesi tam olarak .NET Framework içinde izin sınıfını tanımlar. `IPermission` Öğesi izin sınıfını özelliklere karşılık gelen ek öznitelikler şu öznitelikler bulunur, ancak. Belirli bir izni sözdizimi öğrenmek için Security.config dosyasında listelenen örneklere bakın.
 
 - `class`
 

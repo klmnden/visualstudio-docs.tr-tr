@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431827"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745821"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Nasıl yapılır: Özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma
 
@@ -43,7 +43,7 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
 
 1. İçinde **özellikleri**seçin **uygulama** sekmesi.
 
-1. İçinde **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4**.
+1. İçinde **hedef Framework'ü** aşağı açılan listesinde, select .NET Framework 4 (veya üzeri).
 
 1. **Hedef Framework değişikliği** iletişim kutusu görüntülenir.
 

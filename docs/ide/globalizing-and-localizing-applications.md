@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50ad60808a3ce4e00ac5330d41df5aa4421a00f7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547877"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747603"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Genelleştirilmiş ve yerelleştirilmiş uygulamalar geliştirin
 
-Visual Studio yapar yerleşik hizmetlerinin avantajlarından yararlanarak uluslararası bir hedef kitle için kolay geliştirme [.NET Framework](/dotnet/standard/globalization-localization/).
+Visual Studio yapar yerleşik hizmetlerinin avantajlarından yararlanarak uluslararası bir hedef kitle için kolay geliştirme [.NET](/dotnet/standard/globalization-localization/).
 
 Örneğin, proje sistemi Windows Forms uygulamaları için geri dönüş UI kültürü hem de her ek UI kültürü için kaynak dosyaları oluşturabilirsiniz. Visual Studio'da bir proje oluşturduğunuzda, kaynak dosyalarını Visual Studio XML biçimi (.resx) Ara bir ikili biçimine (.resources), ardından uydu derlemeleri içinde gömülü derlenir. Daha fazla bilgi için [Visual Studio'daki kaynak dosyaları](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) ve [Masaüstü uygulamaları için uydu derlemeleri oluşturma](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 

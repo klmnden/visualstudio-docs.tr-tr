@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545299"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744812"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL sorgularını güvenlik açıkları için inceleyin
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545299"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem ayarlar <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> yönteme değişkeninden oluşturulmuş dize kullanarak özellik.
+
+Bir yöntem ayarlar <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> yönteme değişkeninden oluşturulmuş dize kullanarak özellik.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -48,7 +49,7 @@ Bu kural, dize değişkeninin kullanıcı girişi içerdiğini varsayar. Kullan�
 
 - Komut dizesi oluşturmadan önce hem tür hem de içerik için kullanıcı girişi doğrulayın.
 
-Aşağıdaki .NET Framework türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya özelliği bir dize bağımsız değişkeni ayarlamak oluşturucular sağlar.
+Aşağıdaki .NET türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya özelliği bir dize bağımsız değişkeni ayarlamak oluşturucular sağlar.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> ve <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ Aşağıdaki .NET Framework türleri uygulayan <xref:System.Data.IDbCommand.Comm
 
 ToString yöntemini bir türün açıkça veya dolaylı olarak kullanıldığında, bu kuralı ihlal ettiğini fark sorgu dizesi oluşturmak için. Bir örnek verilmiştir.
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Kötü niyetli bir kullanıcı ToString() yöntemini geçersiz kılma nedeni kuralı ihlal edildi.
+Kötü niyetli bir kullanıcı ToString() yöntemini geçersiz kılma nedeni kuralı ihlal edildi.
 
- ToString örtük olarak kullanıldığında kural ayrıca ihlal edildi.
+ToString örtük olarak kullanıldığında kural ayrıca ihlal edildi.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için parametreli bir sorgu kullanın.
+
+Bu kural ihlalini düzeltmek için parametreli bir sorgu kullanın.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Komut metni herhangi bir kullanıcı girişi içermiyorsa bu kuraldan bir uyarıyı bastırmak güvenlidir.
+
+Komut metni herhangi bir kullanıcı girişi içermiyorsa bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek bir yöntemi gösterir `UnsafeQuery`, kural ve bir yöntem ihlal `SaferQuery`, karşılayan kural parametreli komut dizesi kullanarak.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+Aşağıdaki örnek bir yöntemi gösterir `UnsafeQuery`, kural ve bir yöntem ihlal `SaferQuery`, karşılayan kural parametreli komut dizesi kullanarak.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Güvenliğe Genel Bakış](/dotnet/framework/data/adonet/security-overview)
+
+- [Güvenliğe Genel Bakış](/dotnet/framework/data/adonet/security-overview)

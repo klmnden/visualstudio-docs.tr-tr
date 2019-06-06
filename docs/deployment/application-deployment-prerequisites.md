@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408586"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746056"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama dağıtımının önkoşulları
 
-Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için sağlamak için ilk uygulamanızı hedef bilgisayara bağımlı olduğu tüm bileşenleri yükleyin. Örneğin, çoğu uygulama kullanılarak oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] üzerinde bir bağımlılığa sahip [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu durumda, uygulama yüklenmeden önce doğru ortak dil çalışma zamanı sürümünü hedef bilgisayarda mevcut olması gerekir.
+Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için sağlamak için ilk uygulamanızı hedef bilgisayara bağımlı olduğu tüm bileşenleri yükleyin. Örneğin, çoğu uygulama kullanılarak oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .NET Framework üzerinde bağımlılık vardır. Bu durumda, uygulama yüklenmeden önce doğru ortak dil çalışma zamanı sürümünü hedef bilgisayarda mevcut olması gerekir.
 
  Önkoşullar seçebileceğiniz **Önkoşullar iletişim kutusu** ve .NET Framework ve herhangi diğer redistributable yüklemenizin bir parçası yükleyin. Bu yöntem olarak da bilinen *önyükleme*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı bir Windows yürütülebilir bir program oluşturur *Setup.exe*olarak da bilinen bir *önyükleyici*. Önyükleyici, uygulama çalışmadan önce bu önkoşulları yüklemek için sorumludur. Bu Önkoşullar seçme hakkında daha fazla bilgi için bkz. [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için 
 | **-?, -h, - Yardım** | Yardım iletişim kutusunu görüntüler. |
 | **-url, - componentsurl** | Saklı URL'yi ve bu kurulum bileşenleri URL'sini gösterir. |
 | **-url=** `location` | URL'sini ayarlar burada *Setup.exe* arar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. |
-| **-componentsurl =** `location` | URL'sini ayarlar burada *Setup.exe* bağımlılıklar için aşağıdaki gibi görünür [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl =** `location` | URL'sini ayarlar burada *Setup.exe* .NET Framework gibi bağımlılıklar için görünür. |
 | **-homesite=** `true` **&#124;** `false` | Zaman `true`, satıcının sitesinden tercih edilen konum bağımlılıkları indirir. Bu ayar geçersiz kılar **- componentsurl** ayarı. Zaman `false`, tarafından belirtilen URL'den bağımlılıkları indirir **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>İşletim sistemi desteği

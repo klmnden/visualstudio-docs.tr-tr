@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1423cbcfcae53948f7b9c9cd52eb90f57251bc24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ef0daf5fd28bd829edcdce412839b03ed8347bf
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851063"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745434"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Hata: x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft .NET Framework 4 veya daha yenisi kullanılırken desteklenir
-Bir 64-bit işlem içinde karma yerel ve yönetilen kodda hata ayıklamak için olmalıdır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4. İle 64-bit işlemlerinin karışık mod hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümleri daha önce 4 desteklenmez.
+Bir 64-bit işlem içinde karma yerel ve yönetilen kod hata ayıklama için .NET Framework sürüm 4 olmalıdır. .NET Framework 4'ten önceki sürümler ile 64-bit işlemlerinin karışık mod hata ayıklaması desteklenmiyor.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
 - Aşağıdaki adımlardan birini uygulayın:
 
-  - Yükseltme, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4.
+  - .NET Framework'ünüzün 4 sürümüne yükseltin.
 
   - Hata ayıklama için uygulamanızın bir 32-bit sürümünü oluşturun.
 

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535581"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747045"
 ---
 # <a name="manage-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 
@@ -38,7 +38,7 @@ Bir başvuru eklemek için sağ tıklayın **başvuruları** veya **bağımlıl�
 
 Bileşen ve hizmetlere aşağıdaki türde bir başvuru ekleyebilirsiniz:
 
-- .NET framework sınıf kitaplıkları veya derlemeleri
+- .NET sınıf kitaplıkları veya derlemeleri
 
 - UWP uygulamaları
 
@@ -101,11 +101,11 @@ GAC'ye kayıtlı bir özel bileşene başvuru içeren bir uygulamayı dağıtır
 
 Varsayılan olarak, <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> özelliği **False** derleme veya bileşen, genel derleme önbelleğindeyse veya bir çerçeve bileşeniyse. Aksi takdirde, değeri şuna ayarlı **True**. Projeden projeye başvurular her zaman ayarlanmış **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Bir proje ya da farklı bir .NET Framework sürümünü hedefleyen derlemeye başvuru
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Bir proje ya da farklı bir .NET sürümünü hedefleyen derlemeye başvuru
 
-Projelere veya farklı bir .NET Framework sürümünü hedef derlemelere başvuran uygulamalar oluşturabilirsiniz. Örneğin, .NET Framework 4.5 hedefleyen bir derlemeye başvuran hedefleyen .NET Framework 4. 6'da, bir uygulama oluşturabilirsiniz. .NET Framework'ün önceki bir sürümünü hedefleyen bir proje oluşturursanız, bu projedeki bir proje ya da daha yeni bir sürümünü hedefleyen derlemeye başvuru ayarlanamaz.
+Projelere veya farklı bir .NET sürümü hedef derlemelere başvuran uygulamalar oluşturabilirsiniz. Örneğin, .NET Framework 4.5 hedefleyen bir derlemeye başvuran hedefleyen .NET Framework 4. 6'da, bir uygulama oluşturabilirsiniz. .NET önceki bir sürümünü hedefleyen bir proje oluşturursanız, bu projedeki bir proje ya da daha yeni bir sürümünü hedefleyen derlemeye başvuru ayarlanamaz.
 
-Daha fazla bilgi için [Multi-targeting'e genel bakış](../ide/visual-studio-multi-targeting-overview.md).
+Daha fazla bilgi için [genel bakışı hedefleyen Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Proje için proje başvuruları
 

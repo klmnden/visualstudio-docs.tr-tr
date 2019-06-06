@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566809"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745457"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 
 *Hiyerarşik güncelleştirme* tutarlılığı korurken (bir veri kümesinden iki veya daha fazla ilgili tablo ile) güncelleştirilmiş verileri bir veritabanına geri kaydediliyor işlemini ifade eder. *Bilgi tutarlılığını* veritabanında ve ekleme, güncelleştirme ve ilgili kayıt silme davranışını kontrol kısıtlamaları tarafından sağlanan tutarlık kuralları ifade eder. Örneğin, o müşteri için oluşturulacak siparişler izin vermeden önce bir müşteri kaydı oluşturulmasını zorlar tutarlılığı olur.  Veri kümelerindeki ilişkiler hakkında daha fazla bilgi için bkz: [veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md).
 
-Hiyerarşik güncelleştirme özelliğini kullanan bir `TableAdapterManager` yönetmek için `TableAdapter`s'te bir türü belirtilmiş veri kümesi. `TableAdapterManager` Bileşeni olan bir Visual Studio tarafından oluşturulan sınıfı değil Bu nedenle parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bir tablodan sürüklediğinizde **veri kaynakları** penceresini bir Windows Form ya da WPF sayfasına Visual Studio, belirli bir form veya sayfadaki TableAdapterManager türünde bir değişken ekler ve bileşen tepsisinde Tasarımcısı'nda bkz. İlgili ayrıntılı bilgi için `TableAdapterManager` TableAdapterManager başvuru bölümüne bakın, sınıf [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Hiyerarşik güncelleştirme özelliğini kullanan bir `TableAdapterManager` yönetmek için `TableAdapter`s'te bir türü belirtilmiş veri kümesi. `TableAdapterManager` .NET türü bir Visual Studio tarafından oluşturulan sınıf, bir bileşendir. Bir tablodan sürüklediğinizde **veri kaynakları** penceresini bir Windows Form ya da WPF sayfasına Visual Studio, belirli bir form veya sayfadaki TableAdapterManager türünde bir değişken ekler ve bileşen tepsisinde Tasarımcısı'nda bkz. İlgili ayrıntılı bilgi için `TableAdapterManager` TableAdapterManager başvuru bölümüne bakın, sınıf [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Varsayılan olarak, bir veri kümesi ilişkili tablolar "yalnızca ilişkileri" yabancı anahtar kısıtlamaları zorunlu değildir, yani değerlendirir. Tasarım zamanında bu ayarı kullanarak değiştirebilirsiniz **veri kümesi Tasarımcısı**. Ortaya çıkarmak için iki tablo arasında ilişki satırı **ilişkisi** iletişim kutusu. Burada yaptığınız değişiklikler belirleyecek nasıl `TableAdapterManager` ne zaman davranışını göndermeden değişiklikleri ilişkili tabloların veritabanına geri.
 
@@ -114,7 +114,7 @@ Verileri bir veritabanına kaydetme önce ilgili alt tablo üzerinde değişikli
 
 Varsayılan olarak, bir `TableAdapterManager` sınıfı ilişkili tabloları içeren bir veri kümesi oluşturduğunuzda oluşturulur. Sınıf oluşturulmasını önlemek için değerini değiştirmek `Hierarchical Update` özelliği false kümesi. WPF sayfası ya da Windows Form Tasarım yüzeyine bir ilişkisi olan bir tabloda sürüklediğinizde, Visual Studio sınıfının bir üye değişkeni bildirir. Veri bağlama kullanmazsanız, el ile değişkenini tanımlamak zorunda.
 
-`TableAdapterManager` Sınıfı değil parçası [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Bu nedenle, bu belgelerde bakarak olamaz. Tasarım zamanında veri kümesi oluşturma işleminin bir parçası olarak oluşturulur.
+`TableAdapterManager` Sınıfı .NET türü değil. Bu nedenle, bu belgelerde bakarak olamaz. Tasarım zamanında veri kümesi oluşturma işleminin bir parçası olarak oluşturulur.
 
 Sık kullanılan yöntemleri ve özellikleri verilmiştir `TableAdapterManager` sınıfı:
 

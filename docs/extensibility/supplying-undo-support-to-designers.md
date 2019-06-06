@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331630"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747723"
 ---
 # <a name="supply-undo-support-to-designers"></a>Tedarik tasarımcılara geri alma desteği
 
@@ -29,7 +29,7 @@ Tasarımcı için geri alma özelliğini desteklemek için gereken uygulamaları
 
 - Kalıcılık sağlar ve CodeDOM desteği uygulayarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> ve <xref:System.ComponentModel.Design.IComponentChangeService> sınıfları.
 
-Tasarımcılar kullanarak yazma hakkında daha fazla bilgi için [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], bkz: [tasarım zamanı desteğini genişletmek](/previous-versions/37899azc(v=vs.140)).
+.NET Framework kullanarak tasarımcıları yazma ile ilgili daha fazla bilgi için bkz: [tasarım zamanı desteğini genişletmek](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Varsayılan geri alma altyapısı tarafından sağlar:
 
@@ -50,7 +50,7 @@ Visual Studio'da oluşturulan herhangi bir tasarımcı otomatik ve tam geri dest
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Zaman açık Tasarımcı geri alma desteği
  Tasarımcılar tarafından sağlanan dışındaki bir görünüm bağdaştırıcısı olarak adlandırılan bir grafik kullanıcı arabirimi kullanıyorlarsa kendi geri yönetim sağlaması gerekir <xref:System.Windows.Forms.Control>.
 
- Buna örnek olarak bir ürün olan bir grafik tasarımı web tabanlı arabirimi oluşturmak olabilir yerine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-grafik arabirim tabanlı.
+ Buna örnek olarak bir ürün .NET Framework tabanlı grafik bir arabirim yerine bir grafik tasarımı web tabanlı arabirim oluşturmak olabilir.
 
  Bu gibi durumlarda, Visual Studio kullanarak bu görünüm bağdaştırıcıyı kaydetmek ihtiyacım var <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>ve açık geri alma yönetimi sağlayın.
 
@@ -59,7 +59,7 @@ Visual Studio'da oluşturulan herhangi bir tasarımcı otomatik ve tam geri dest
 ## <a name="undo-support-features-of-the-designer"></a>Tasarımcı desteği özelliklerini al
  Ortamı SDK'sı varsayılan uygulamaları sağlamak için gereken arabirimleri geri kullanmayan tasarımcılar tarafından kullanılabilmesi için destek sağlar <xref:System.Windows.Forms.Control> sınıfların kullanıcı arabirimlerini veya standart bir CodeDOM ve Kalıcılık modeli.
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Sınıf türetilir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> uygulaması kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> sınıfı yönetmek için geri alma işlemleri.
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Sınıfı, .NET Framework'den türetilen <xref:System.ComponentModel.Design.UndoEngine> uygulaması kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> sınıfı yönetmek için geri alma işlemleri.
 
  Visual Studio Tasarımcı geri alma için aşağıdaki özellik sağlar:
 

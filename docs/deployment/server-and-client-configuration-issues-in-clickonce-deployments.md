@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263472"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747418"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce dağıtımlarında sunucu ve istemci yapılandırma sorunları
 Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız Windows tanımadığı bir dosya içeriyorsa, bir Microsoft Word dosyası gibi dosya aktarmak IIS reddeder ve dağıtımınızın başarılı olmaz.
@@ -41,7 +41,7 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
 
   Ancak, bu seçeneğin işaretini kaldırarak devre dışı bırakabilirsiniz **".deploy" dosya uzantısı** seçeneğini [Yayımlama Seçenekleri iletişim kutusu](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), bu durumda, tüm dosya uzantılarını engelini kaldırmak için Web sunucusu yapılandırmanız gerekir uygulamada kullanılır.
 
-  Yapılandırmanız gerekecektir *.manifest*, *.application*, ve *.deploy*, örneğin, IIS olmayan yüklü kullanıyorsanız [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], veya başka bir Web sunucusu (örn. Apache) kullanıyor.
+  Yapılandırmanız gerekecektir *.manifest*, *.application*, ve *.deploy*, örneğin, IIS olmayan yüklü .NET Framework kullanıyorsa, veya başka bir Web sunucusu (örn. Apache) kullanıyor.
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce ve Güvenli Yuva Katmanı (SSL)
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama düzgün çalışır, SSL üzerinden SSL sertifikası hakkında bir istem zaman Internet Explorer görüntülemesi dışında. Bir zaman site adları eşleşmiyor gibi sertifika veya sertifika ile bu sorun süresi dolmuş olduğunda istemi yükseltilebilir. Yapmak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir SSL bağlantısı üzerinden çalışma, sertifikanın güncel olduğunu ve site verileri eşleşen sertifika veri emin olun.
@@ -121,14 +121,14 @@ Windows Server Internet Information Services (IIS) kullanın ve dağıtımınız
   Microsoft Bilgi Bankası makalesine KB326965 özel yönergeler Windows Server'da MIME türleri yapılandırılıyor başvurmak için "IIS 6.0 bilinmeyen MIME türlerine adresindeki sunmuyor." [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>İçerik türü eşlemeleri
- HTTP üzerinden içerik türü (MIME türü olarak da bilinir) için yayımlarken *.application* dosyası olmalıdır. "application/x-ms-application." Varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] sunucuda yüklüyse, bu sizin için otomatik olarak ayarlanır. Bu yüklü değil ve ardından bir MIME türü ilişkilendirmesini oluşturmak için ihtiyacınız varsa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama vroot (veya tüm sunucu).
+ HTTP üzerinden içerik türü (MIME türü olarak da bilinir) için yayımlarken *.application* dosyası olmalıdır. "application/x-ms-application." Sunucuda yüklü .NET Framework 2.0 varsa, bu sizin için otomatik olarak ayarlanır. Bu yüklü değil ve ardından bir MIME türü ilişkilendirmesini oluşturmak için ihtiyacınız varsa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama vroot (veya tüm sunucu).
 
  Bir IIS sunucusu kullanarak dağıtırsanız, çalıştırma <em>inetmgr.</em> exe ve yeni bir içerik türü "application/x-ms-uygulama" add *.application* uzantısı.
 
 ## <a name="http-compression-issues"></a>HTTP sıkıştırması sorunları
  İle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], gerçekleştirebilirsiniz HTTP sıkıştırması kullanan indirmeler, akış istemciye göndermeden önce veri akışını sıkıştırmak için GZIP algoritma kullanan bir Web sunucusu teknolojisi. İstemci — bu durumda, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— dosyaları okumadan önce akışı açar.
 
- IIS kullanıyorsanız, HTTP sıkıştırma kolayca etkinleştirebilirsiniz. HTTP sıkıştırmasını etkinleştirmek, ancak yalnızca belirli dosya türleri için etkin — yani, HTML ve metin dosyaları. Derlemeler için sıkıştırmayı etkinleştirmek için (*.dll*), XML (*.xml*), dağıtım bildirimleri (*.application*) ve uygulama bildirimleri (*.manifest*), bu dosya türleri için IIS'nin sıkıştırmasını türleri listesine eklemeniz gerekir. Yalnızca metin ve HTML dosyaları, dosya türlerini dağıtıma ekleme kadar sıkıştırılır.
+ IIS kullanıyorsanız, HTTP sıkıştırma kolayca etkinleştirebilirsiniz. HTTP sıkıştırmasını etkinleştirmek, ancak yalnızca belirli dosya türleri için etkin — yani, HTML ve metin dosyaları. Derlemeler için sıkıştırmayı etkinleştirmek için ( *.dll*), XML ( *.xml*), dağıtım bildirimleri ( *.application*) ve uygulama bildirimleri ( *.manifest*), bu dosya türleri için IIS'nin sıkıştırmasını türleri listesine eklemeniz gerekir. Yalnızca metin ve HTML dosyaları, dosya türlerini dağıtıma ekleme kadar sıkıştırılır.
 
  IIS hakkında ayrıntılı yönergeler için bkz. [HTTP sıkıştırma için ek belge türlerini belirtmek nasıl](http://go.microsoft.com/fwlink/?LinkId=178459).
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927463"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745660"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları içinde belirli hataları giderme
 Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.
@@ -36,7 +36,7 @@ Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler
 
  İlk olarak, sunucunun ilişkilendirmek üzere yapılandırılmış olduğundan emin olun *.application* içeriğe sahip uzantı türü "application/x-ms-application."
 
- Sunucunun doğru şekilde yapılandırıldıysa, bu maddeyi [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] bilgisayarınızda yüklü. Varsa [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] yüklü olduğu ve yeniden yüklemeyi deneyin. Bu sorunu hala görüyorsanız [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] içerik türü istemcide yeniden kaydetmek için.
+ Sunucunun doğru şekilde yapılandırıldıysa, .NET Framework 2.0, bilgisayarınızda yüklü olduğunu denetleyin. .NET Framework 2.0 yüklenir ve bu sorunu hala görüyorsanız, try içeriği yeniden kaydolmak için .NET Framework 2.0 kaldırılmadan ve istemcide yazın.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Hatayı bildiren, "Uygulama alınamıyor. Dağıtımda eksik dosyaları"veya"uygulama indirme kesintiye, ağ hataları kontrol edin ve daha sonra yeniden deneyin"
  Bu ileti, tarafından başvurulan bir veya daha fazla dosya gösterir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimleri karşıdan yüklenemiyor. URL indirmek bu hata ayıklama için en kolay yolu denemektir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] indiremiyorsa, diyor. Bazı olası nedenleri şunlardır:

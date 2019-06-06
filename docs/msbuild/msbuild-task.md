@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437850"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747360"
 ---
 # <a name="msbuild-task"></a>MSBuild görevi
 Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başka projelerden [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje.
@@ -44,7 +44,7 @@ Yapılar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuil
 | `TargetAndPropertyListSeparators` | İsteğe bağlı `String[]` parametresi.<br /><br /> Hedefleri ve özellikleri olarak listesini belirtir `Project` öğe meta verileri). Ayırıcılar önce işleme kaçılmamış olacaktır. Örneğin % 3B (Atlanan ';') bir kaçılmamış gibi kabul edilir;'. |
 | `TargetOutputs` | İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur çıkış parametresi.<br /><br /> Oluşturulan hedeflerin çıkışları tüm proje dosyaları döndürür. Yalnızca belirtilen hedef çıkışları döndürüldüğü, hedeflerin bağımlı hedeflerde mevcut olmayan herhangi bir çıkış.<br /><br /> `TargetOutputs` Parametresi, aşağıdaki meta verileri de içerir:<br /><br /> -   `MSBuildSourceProjectFile`: [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Çıkışları ayarlanan hedefi içeren proje dosyası.<br />-   `MSBuildSourceTargetName`: Çıktıları ayarlanan hedef. **Not:**  Her proje dosyası çıkışları tanımlamak veya ayrı olarak hedef, çalıştırmak istediğiniz varsa `MSBuild` her bir proje dosyası veya hedef için ayrı ayrı görev. Çalıştırırsanız `MSBuild` yalnızca tüm proje dosyaları oluşturmak için hedef çıkışları bir diziye toplandıktan sonra görev. |
 | `Targets` | İsteğe bağlı `String` parametresi.<br /><br /> Hedef veya hedefleri, proje dosyalarını oluşturmak için belirtir. Hedef adlarının bir listesini ayırmak için noktalı virgül kullanın. Hiçbir hedef belirtilirse `MSBuild` görev, proje dosyalarında belirtilen varsayılan hedefler oluşturulur. **Not:**  Hedefler proje dosyalarının bulunması gerekir. Aksi takdirde, bir derleme hatası oluşur. |
-| `ToolsVersion` | İsteğe bağlı `String` parametresi.<br /><br /> Belirtir `ToolsVersion` bu göreve geçirilen projeler oluşturma sırasında kullanılacak.<br /><br /> Sağlayan bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] farklı bir sürümünü hedefleyen bir proje oluşturmak için görev [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] projede belirtilenden. Geçerli değerler `2.0`, `3.0` ve `3.5`. Varsayılan değer `3.5`. |
+| `ToolsVersion` | İsteğe bağlı `String` parametresi.<br /><br /> Belirtir `ToolsVersion` bu göreve geçirilen projeler oluşturma sırasında kullanılacak.<br /><br /> Sağlayan bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bir projede belirtilen .NET Framework'ün farklı bir sürümünü hedefleyen bir proje oluşturmak için görev. Geçerli değerler `2.0`, `3.0` ve `3.5`. Varsayılan değer `3.5`. |
 | `UnloadProjectsOnCompletion` | İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, işlem tamamlandıktan sonra projenin yüklemesi kaldırılır. |
 | `UseResultsCache` | İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önbelleğe alınan sonuç, varsa, döndürülür.<br /><br />  MSBuild görevi çalıştırırsanız, sonuç bir kapsamda konumlandırılmalıdır. <br /><br /> (ProjectFileName GlobalProperties) [TargetNames]<br /><br /> Yapı öğeleri listesi olarak |
 

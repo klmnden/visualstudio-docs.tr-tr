@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4453030f01e99dcb82c344f003e217e7b1c55b6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333708"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746344"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Bu yapı bir yöntemi veya işlev dönüş değeri temsil eder.
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  Bu dönüş değeri yöntemi için kimliği.
 
  `dwCorType`\
- Dönüş değeri temel türü. Bir değer budur `CorElementType` tanımlanan numaralandırma [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h dosyası.
+ Dönüş değeri temel türü. Bir değer budur `CorElementType` .NET Framework SDK corhdr.h dosyasında tanımlanan sabit listesi.
 
  `dwSigSize`\
  Dönüş değeri imza boyutu (depolanan gibi `rgSig`).

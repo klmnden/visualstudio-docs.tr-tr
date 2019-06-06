@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993554"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747543"
 ---
 # <a name="how-to--with-text-templates"></a>Nasıl yapılır ... Metin Şablonları ile
 Visual Studio'da metin şablonları oluşturma metin herhangi bir türde kullanışlı bir yöntem sunar. Metin şablonları, uygulamanızın bir parçası olarak çalışma zamanında ve bazı proje kodunu oluşturmak için tasarım zamanında metin oluşturmak için kullanabilirsiniz. Bu konuda en sık özetlenmektedir sorulan "Nasıl... yapabilirim?" Sorular.
@@ -45,13 +45,14 @@ Visual Studio'da metin şablonları oluşturma metin herhangi bir türde kullan�
      Kodunuzda kullanmak `this.Host.ResolvePath(filename)` dosyasının tam yolunu elde edilir.
 
 ### <a name="invoke-methods-from-a-template"></a>Bir şablondan yöntemleri çağırma
- Yöntemleri, örneğin, standart zaten varsa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıflar:
+
+Yöntemleri, örneğin, .NET sınıflar zaten varsa:
 
 - Kullanma \<#@assembly#> bütünleştirilmiş kod yükleme ve kullanma yönergesi \<#@import#> ad alanı bağlamını ayarlamak için. Daha fazla bilgi için [T4 içe aktarma yönergesi](../modeling/t4-import-directive.md).
 
    Sık aynı derleme kullanan ve içeri aktarma yönergeleri, yönerge işlemcisi yazma göz önünde bulundurun. Her şablon, derlemeler ve model dosyaları yüklemek ve ad alanı bağlamını ayarlayın ve yönerge işlemcisinin çağırabilirsiniz. Daha fazla bilgi için [özel T4 metin şablonu yönerge işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Yöntemleri kendinize yazıyorsanız:
+Yöntemleri kendinize yazıyorsanız:
 
 - Bir çalışma zamanı metin şablonu yazıyorsanız, çalışma zamanı metin şablonu ile aynı ada sahip bir kısmi sınıf tanımını yazın. Ek yöntemleri bu sınıfına ekleyin.
 

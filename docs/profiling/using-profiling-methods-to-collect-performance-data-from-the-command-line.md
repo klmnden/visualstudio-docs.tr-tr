@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263821"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746773"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Komut satırından performans verileri toplamak için profil oluşturma metotlarını kullanma
-Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları komut satırı araçlarını ve seçeneklerini etkenlere bağlıdır uygulama türü gibi profil olduğunu, kullanmak istediğiniz ve olup hedef uygulamanın yazıldığı yerel ya da Profiloluşturmayöntemine[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]kod.
+Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları komut satırı araçlarını ve seçeneklerini etkenlere bağlıdır uygulama türü gibi profil olduğunu, kullanmak istediğiniz ve hedef uygulamayı yerel yazılmış olup profil oluşturma yöntemine veya .NET Framework kodu.
 
  Bu konu başlığı altında komut satırı yordam konuları seçtiğiniz profil oluşturma yöntemine göre düzenler.
 
@@ -50,9 +50,9 @@ Tercih ettiğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prof
 - [Yerel Hizmetleri](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Bellek ayırma ve nesne yaşam verisi toplamak için .NET bellek yöntemleri kullanın.
- Profil oluşturma araçlar .NET bellek yöntemi toplamanızı sağlayan [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bellek ayırma verilerinin ve nesne yaşam süresi hakkında bilgi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Profil oluşturma araçlar .NET bellek yöntemi, .NET Framework bellek ayırma verilerinin ve .NET Framework nesne yaşam süresi hakkında bilgi toplamanıza olanak sağlar.
 
- Hedef uygulamadaki profil oluşturucuyu kullanarak başlayabilirsiniz; Profil Oluşturucu uygulamaya çalışan bir örneğini ekleyebilirsiniz; İzleme eklenmiş sürümleri ile birlikte ayrıntılı zamanlama bilgileri toplamak için bir uygulama oluşturabilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bellek verileri.
+ Hedef uygulamadaki profil oluşturucuyu kullanarak başlayabilirsiniz; Profil Oluşturucu uygulamaya çalışan bir örneğini ekleyebilirsiniz; ve ayrıntılı zamanlama bilgileri birlikte .NET Framework bellek verileri toplamak için uygulamanın belgelenmiş sürümünü oluşturabilirsiniz.
 
 |Görev|Hedef uygulama türü|
 |----------|-----------------------------|

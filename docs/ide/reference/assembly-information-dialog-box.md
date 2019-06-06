@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791550"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744890"
 ---
 # <a name="assembly-information-dialog-box"></a>Derleme Bilgileri İletişim Kutusu
-**Derleme bilgileri** iletişim kutusu değerlerini belirtmek için kullanılır [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] genel bütünleştirilmiş kod öznitelikleri, projenize otomatik olarak oluşturulan AssemblyInfo dosyasında depolanır. İçinde **Çözüm Gezgini**, dosya bulunan **Projem** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklayın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikleri** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme öznitelikleri hakkında daha fazla bilgi için bkz: [öznitelikleri](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
+**Derleme bilgilerini** iletişim kutusu, projenize otomatik olarak oluşturulan AssemblyInfo dosyasında depolanan .NET Framework genel derleme özniteliklerinin değerlerini belirtmek için kullanılır. İçinde **Çözüm Gezgini**, dosya bulunan **Projem** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklayın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikleri** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme öznitelikleri hakkında daha fazla bilgi için bkz: [öznitelikleri](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
  Bu iletişim kutusuna erişmek için bir proje düğümü seçin **Çözüm Gezgini**ve ardından **proje** menüsünde tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **uygulama** sekmesi. Üzerinde **uygulama** sayfasında **derleme bilgilerini** düğmesi.
 
@@ -43,7 +43,7 @@ ms.locfileid: "62791550"
 
  **GUID** derleme tanımlayan benzersiz bir GUID. Bir proje oluşturduğunuzda, Visual Studio derleme için bir GUID oluşturur. Karşılık gelen <xref:System.Guid>.
 
- **Nötr dil** , derlemenin desteklediği kültür belirtir. Karşılık gelen <xref:System.Resources.NeutralResourcesLanguageAttribute>. Varsayılan değer **(hiçbiri)**.
+ **Nötr dil** , derlemenin desteklediği kültür belirtir. Karşılık gelen <xref:System.Resources.NeutralResourcesLanguageAttribute>. Varsayılan değer **(hiçbiri)** .
 
  **Derlemeyi COM görünür** bütünleştirilmiş kodundaki türler COM'a olup olmadığını belirtir Karşılık gelen <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 

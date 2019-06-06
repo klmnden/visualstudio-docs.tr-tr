@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438176"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746801"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
-Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konuda, bir Windows formu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bağlama aracılığıyla açıklanmaktadır.
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Bir Windows Forms tabanlı etki alanına özgü dil oluşturma
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) bir DSL örneği, bir Windows formu kullanıcı Arabirimi ve modeli Gezgini'nde gösteriliyor.
+Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bir Windows Form bağlama aracılığıyla size kılavuzluk eder.
 
-## <a name="creating-a-windows-forms-dsl"></a>Bir DSL Windows formları oluşturma
- **Minimal WinForm Tasarımcısı** DSL şablon kendi gereksinimlerinize uyacak şekilde değiştirebilirsiniz en az bir DSL oluşturur.
+Bir Windows formu kullanıcı Arabirimi ve model Gezgini DSL örneği için aşağıdaki resimde gösterilmektedir:
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>En az bir WinForms DSL oluşturmak için
+![Visual Studio DSL örneği](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>Bir DSL Windows formları oluşturma
+
+**Minimal WinForm Tasarımcısı** DSL şablon kendi gereksinimlerinize uyacak şekilde değiştirebilirsiniz en az bir DSL oluşturur.
 
 1. Bir DSL gelen oluşturma **Minimal WinForm Tasarımcısı** şablonu.
 
@@ -37,7 +39,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
    1. Tüm Şablonları Dönüştür.
 
-   2. Derleme ve çalıştırma örneği (**CTRL + F5**).
+   2. Derleme ve çalıştırma örneği (**Ctrl**+**F5**).
 
    3. Visual Studio'nun deneysel örneğinde açın `Sample` hata ayıklama proje dosyasında.
 
@@ -62,14 +64,14 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
     - Adlı bir dosya `DataBinding.cs` ek kısmi bir tanımını içeren `ModelViewControl`. İçeriği görmek için **Çözüm Gezgini**dosyası için kısayol menüsünü açın ve seçin **kodu görüntüle**.
 
 ### <a name="about-the-ui-project"></a>UI projesi hakkında
- DSL tanım dosyası kendi DSL tanımlamak için güncelleştirdiğinizde, bağlantı denetimi güncellemek zorunda kalırsınız `UI` DSL'nizi görüntülemek için proje. Farklı `Dsl` ve `DslPackage` projeleri, örnek `UI` gelen proje oluşturulmuyor `DslDefinitionl.dsl`. İsterseniz, bu izlenecek yolda kapsamında olmayan ancak kodunu oluşturmak için .tt dosyaları ekleyebilirsiniz.
 
-## <a name="updating-the-dsl-definition"></a>DSL tanım güncelleştirme
- DSL tanımını, bu kılavuzda kullanılan şunlardır:
+DSL tanım dosyası kendi DSL tanımlamak için güncelleştirdiğinizde, bağlantı denetimi güncellemek zorunda kalırsınız `UI` DSL'nizi görüntülemek için proje. Farklı `Dsl` ve `DslPackage` projeleri, örnek `UI` gelen proje oluşturulmuyor `DslDefinitionl.dsl`. İsterseniz, bu izlenecek yolda kapsamında olmayan ancak kodunu oluşturmak için .tt dosyaları ekleyebilirsiniz.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>DSL tanım güncelleştirme
 
-#### <a name="to-update-the-dsl-definition"></a>DSL tanımını güncelleştirmek için
+DSL tanımını, bu kılavuzda kullanılan şunlardır:
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. DslDefinition.dsl DSL Tasarımcısı'nda açın.
 
@@ -107,10 +109,11 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
     > [!NOTE]
     > Bu aşamada, diğer projeleri hatasız derleme değil. Ancak, böylece kendi derlemesi için veri kaynağı Sihirbazı kullanılabilir Dsl projesi oluşturmak istiyoruz.
 
-## <a name="updating-the-ui-project"></a>UI projesi güncelleştiriliyor
- Şimdi, DSL modelde tutulan haliyle bilgileri görüntüleyen yeni bir kullanıcı denetimi oluşturabilirsiniz. Veri bağlamaları ile kullanıcı denetimi modele bağlanmak için en kolay yoludur. Veri bağdaştırıcısı türü adlı bağlama **ModelingBindingSource** VMSDK olmayan arabirimleri DSL'ler bağlanmak için özel olarak tasarlanmıştır.
+## <a name="update-the-ui-project"></a>UI projesini güncelleştir
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>DSL model veri kaynağı olarak tanımlamak için
+Şimdi, DSL modelde tutulan haliyle bilgileri görüntüleyen yeni bir kullanıcı denetimi oluşturabilirsiniz. Veri bağlamaları ile kullanıcı denetimi modele bağlanmak için en kolay yoludur. Veri bağdaştırıcısı türü adlı bağlama **ModelingBindingSource** VMSDK olmayan arabirimleri DSL'ler bağlanmak için özel olarak tasarlanmıştır.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>DSL model veri kaynağı olarak tanımlayın
 
 1. Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster**.
 
@@ -128,7 +131,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>Bir forma modelinizi bağlanmak için
+### <a name="connect-your-model-to-a-form"></a>Modelinizi bir forma bağlama
 
 1. İçinde **UI** projesinde, tüm mevcut .cs dosyaları silin.
 
@@ -151,7 +154,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
    > [!NOTE]
    > Alternatif bir adım veri kaynakları penceresinden denetimin üzerine hayvanlar ve alanları öğeleri sürüklemektir. Bu eylem, veri kılavuzları ve bağlamaları kılavuz görünümünü ve veri kaynağı arasında otomatik olarak oluşturur. Ancak, bu bağlama için DSL'ler düzgün çalışmaz. Bu nedenle daha iyi veri kılavuzları ve bağlamaları oluşturmak el ile.
 
-7. Araç kutusu içermiyorsa **ModelingBindingSource** aracı, ekleyin. Kısayol menüsünde **veri** sekmesini, **öğelerini Seç**. İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **ModelingBindingSource** gelen **.NET Framework sekmesinde**.
+7. Araç kutusu içermiyorsa **ModelingBindingSource** aracı, ekleyin. Kısayol menüsünde **veri** sekmesini, **öğelerini Seç**. İçinde **araç kutusu öğelerini Seç** iletişim kutusunda **ModelingBindingSource** gelen **.NET Framework** sekmesi.
 
 8. Araç kutusunu kullanma iki örneğini oluşturma **ModelingBindingSource**ve bunları `AnimalBinding` ve `FieldBinding`.
 
@@ -173,7 +176,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
   ![DslWpf4](../modeling/media/dslwpf4.png) şema veri kaynakları ve görünümleri arasındaki bağlantı.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>DSL bağlamaları tamamlamak için
+### <a name="complete-the-bindings-to-the-dsl"></a>DSL bağlamaları tamamlayın
 
 1. Ayrı bir kod dosyasında aşağıdaki kodu ekleyin **UI** proje:
 
@@ -207,10 +210,9 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>DSL test etme
- DSL çözümü şimdi oluşturun ve geliştirmeleri daha sonra daha eklemek isteyebilirsiniz ancak çalıştırın.
+## <a name="test-the-dsl"></a>DSL test
 
-#### <a name="to-test-the-dsl"></a>DSL test etmek için
+DSL çözümü şimdi oluşturun ve geliştirmeleri daha sonra daha eklemek isteyebilirsiniz ancak çalıştırın.
 
 1. Derleme ve çözümü çalıştırın.
 
@@ -229,13 +231,13 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
      Ne zaman formunda, Özellikler penceresinde karşılık gelen özellik değişiklikleri her alanı uzağa gidin.
 
-## <a name="enhancing-the-dsl"></a>DSL geliştirme
+## <a name="enhance-the-dsl"></a>DSL geliştirin
 
-#### <a name="to-make-the-properties-update-immediately"></a>Hemen güncelleştirme özellikleri yapma
+### <a name="make-the-properties-update-immediately"></a>Hemen güncelleştirme özellikleri olun
 
 1. FarmControl.cs Tasarım görünümünde, ad, boyut veya IsOrganic gibi basit bir alan seçin.
 
-2. Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)**.
+2. Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)** .
 
      İçinde **biçimlendirme ve Gelişmiş bağlama** iletişim altında **veri kaynağı güncelleştirme modu**, seçin **OnPropertyChanged**.
 
@@ -243,7 +245,7 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
      Alan grubu modeli değişikliklerini hemen karşılık gelen özelliği içeriğini değiştirdiğinizde doğrulayın.
 
-#### <a name="to-provide-add-buttons"></a>Ekle düğmesini sağlamak için
+### <a name="provide-add-buttons"></a>Ekle düğmesini sağlayın
 
 1. FarmControl.cs Tasarım görünümünde, araç kutusu, formdaki bir düğme oluşturmak için kullanın.
 
@@ -301,7 +303,8 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Bir öğe eklemek için kod hakkında
- Yeni öğe düğmeler için aşağıdaki diğer kod biraz daha basittir.
+
+Yeni öğe düğmeler için aşağıdaki diğer kod biraz daha basittir.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Ancak, bu kod yeni öğe için bir varsayılan ad ayarlı değil. İçinde tanımlı herhangi bir özelleştirilmiş birleştirme çalıştırmaz **öğe birleştirme yönergeleri** DSL, ve tanımlanmış herhangi bir özel birleştirme kodu çalışmaz.
+Ancak, bu kod yeni öğe için bir varsayılan ad ayarlı değil. İçinde tanımlı herhangi bir özelleştirilmiş birleştirme çalıştırmaz **öğe birleştirme yönergeleri** DSL, ve tanımlanmış herhangi bir özel birleştirme kodu çalışmaz.
 
- Bu nedenle kullanmanızı öneririz <xref:Microsoft.VisualStudio.Modeling.ElementOperations> yeni öğeleri oluşturmak için. Daha fazla bilgi için [özelleştirme öğe oluşturma ve hareketini](../modeling/customizing-element-creation-and-movement.md).
+Bu nedenle kullanmanızı öneririz <xref:Microsoft.VisualStudio.Modeling.ElementOperations> yeni öğeleri oluşturmak için. Daha fazla bilgi için [özelleştirme öğe oluşturma ve hareketini](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
-- [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Bir etki alanına özgü dil tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
+- [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

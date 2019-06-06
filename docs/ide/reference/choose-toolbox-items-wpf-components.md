@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790934"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744972"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Araç kutusu öğelerini, WPF bileşenlerini seçme
 
@@ -31,7 +31,7 @@ Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarı
 - Bir bileşen yanındaki onay kutusunu temizlendiğinde, karşılık gelen simgeyi kaldırılacak **araç kutusu**.
 
     > [!NOTE]
-    > Bunlar için simgeler görüntülenir olup olmadığını bilgisayarınızda yüklü .NET Framework bileşenlerini sunulmaya **araç kutusu**.
+    > Bunlar için simgeler görüntülenir olup olmadığını bilgisayarınızda yüklü .NET bileşenleri kullanılabilir durumda kalır **araç kutusu**.
 
 Sütunlarda **WPF bileşenleri** sekmesine aşağıdaki bilgileri içerir:
 
@@ -41,15 +41,15 @@ WPF denetimleri, girdileri bilgisayarınızın kayıt defterinde mevcut adların
 
 **Namespace**
 
-Hiyerarşisini görüntüler [.NET Framework sınıf API](/dotnet/api/?view=netframework-4.7) bileşeni yapısını tanımlayan ad. Bilgisayarınızda yüklü her .NET Framework ad alanı içinde kullanılabilir bileşenleri listelemek için bu sütun sıralama.
+Hiyerarşisini görüntüler [.NET API](/dotnet/api/?view=netframework-4.7) bileşeni yapısını tanımlayan ad. Bilgisayarınızda yüklü her .NET ad alanı içinde kullanılabilir bileşenleri listelemek için bu sütun sıralama.
 
 **Derleme adı**
 
-Her bileşen için ad alanı içeren bir .NET Framework derlemesinin adını görüntüler. Bilgisayarınızda yüklü her .NET Framework derlemesi içindeki ad alanlarını listelemek için bu sütun sıralama.
+Her bileşen için ad alanı içeren .NET derleme adını görüntüler. Bilgisayarınızda yüklü her bir .NET derlemesi içinde bulunan ad alanlarını listelemek için bu sütun sıralama.
 
 **Dizin**
 
-.NET Framework derlemesinin konumunu görüntüler. Genel Derleme Önbelleği tüm derlemeler için varsayılan konumdur. Genel Derleme Önbelleği hakkında daha fazla bilgi için bkz: [derlemeler ve genel derleme önbelleği ile çalışma](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+.NET derleme konumunu görüntüler. Genel Derleme Önbelleği tüm derlemeler için varsayılan konumdur. Genel Derleme Önbelleği hakkında daha fazla bilgi için bkz: [derlemeler ve genel derleme önbelleği ile çalışma](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>UIElement Listesi
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927913"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747525"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; öğesi (Önyükleyici)
 `InstallChecks` Öğesinin desteklediği tüm uygulama için uygun önkoşulların yüklendiğinden emin olmak için yerel bilgisayara karşı testler çeşitli başlatılıyor.
@@ -144,7 +144,7 @@ ms.locfileid: "62927913"
  Altındaki öğeler `InstallChecks` çalıştırılan testleri tanımlayın, bunları yürütülmez. Testleri yürütmek için oluşturmalısınız `Command` öğeleri altında `Commands` öğesi.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneğinde `InstallChecks` öğesi için ürün dosyasında kullanılan [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Aşağıdaki kod örneğinde `InstallChecks` öğesi ürün dosyasında .NET Framework için kullanılır.
 
 ```xml
 <InstallChecks>

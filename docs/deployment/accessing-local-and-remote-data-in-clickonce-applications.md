@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406612"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746077"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce uygulamalarında yerel ve uzak veri erişimi
 Çoğu uygulama veri üretir veya tüketir. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Okuma ve yerel olarak ve uzaktan veri yazma için çeşitli seçenekler sunar.
@@ -37,7 +37,7 @@ ms.locfileid: "63406612"
 ### <a name="clickonce-data-directory"></a>ClickOnce veri dizini
  Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yerel bir bilgisayarda yüklü uygulama kullanıcının belgeler ve ayarlar klasöründe depolanan bir veri dizinine sahip. Dahil herhangi bir dosyayı bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve işaretli bir "veri" dosyası, bir uygulama yüklendiğinde bu dizine kopyalanır. Veri dosyaları en sık kullanılan bir dosya türünde olabilir metin, XML ve Microsoft Access .mdb dosyaları gibi veritabanı dosyaları.
 
- Veri dizini uygulama açıkça depolar ve tutar veriler, yönetilen uygulama verileri için tasarlanmıştır. Tüm statik uygulama bildiriminde "veri" olarak işaretlenen değil (nondependency) dosyalar yerine uygulama dizininde bulunur. Burada uygulamanın yürütülebilir dosyasına katıştırılıp dizin olur (*.exe*) dosyaları ve derlemeleri bulunur.
+ Veri dizini uygulama açıkça depolar ve tutar veriler, yönetilen uygulama verileri için tasarlanmıştır. Tüm statik uygulama bildiriminde "veri" olarak işaretlenen değil (nondependency) dosyalar yerine uygulama dizininde bulunur. Burada uygulamanın yürütülebilir dosyasına katıştırılıp dizin olur ( *.exe*) dosyaları ve derlemeleri bulunur.
 
 > [!NOTE]
 > Olduğunda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması kaldırıldığında, kendi veri dizini de kaldırılır. Hiçbir zaman son-kullanıcıya yönetilen belgeler gibi verilerini depolamak için veri dizini kullanın.
@@ -60,7 +60,7 @@ ms.locfileid: "63406612"
 
  İlgili değişkenleri kullanarak veri dizini yolunu de edinebilirsiniz <xref:System.Windows.Forms.Application> gibi sınıf <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- Diğer dosya türlerini yönetmek için ek izinler gerektirebilir. Örneğin, bir Access veritabanının kullanmak istiyorsanız (*.mdb*) dosyası, uygulamanızı gerekir assert tam güven ilgili kullanmak için \<xref:System.Data > sınıfları.
+ Diğer dosya türlerini yönetmek için ek izinler gerektirebilir. Örneğin, bir Access veritabanının kullanmak istiyorsanız ( *.mdb*) dosyası, uygulamanızı gerekir assert tam güven ilgili kullanmak için \<xref:System.Data > sınıfları.
 
 #### <a name="data-directory-and-application-versions"></a>Veri dizini ve uygulama sürümleri
  Bir uygulamanın her sürümü diğer sürümlerden yalıtılmış kendi veri dizini vardır. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] böylece uygulamanın çalışma zamanında yeni veri dosyalarını oluşturmak için bir konum ister tüm veri dosyalarını dağıtımdaki bağımsız olarak bu dizin oluşturur. Bir uygulamanın yeni bir sürümü yüklü olduğunda [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tüm dosyaları önceki sürümün Veri Dizininden yeni sürümün veri dizinine kopyalar; oluşturan veya orijinal Dağıtımdaki uygulama.
@@ -72,7 +72,7 @@ ms.locfileid: "63406612"
 ### <a name="isolated-storage"></a>Yalıtılmış Depolama
  Yalıtılmış Depolama oluşturmak ve basit bir API kullanarak dosyalara erişmek için bir API sağlar. Depolanan dosyaların konumunu gerçek hem geliştiriciler hem de kullanıcı gizlenir.
 
- Yalıtılmış Depolama works tüm sürümlerinde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Yalıtılmış Depolama ayrıca kısmen güvenilir uygulamaların ek izin verilmesine gerek kalmadan çalışır. Uygulamanızı kısmi güvende çalıştırmanız gerekir, ancak uygulamaya özgü verileri korumalıdır yalıtılmış depolama kullanmanız gerekir.
+ Yalıtılmış Depolama, .NET Framework'ün tüm sürümlerde çalışır. Yalıtılmış Depolama ayrıca kısmen güvenilir uygulamaların ek izin verilmesine gerek kalmadan çalışır. Uygulamanızı kısmi güvende çalıştırmanız gerekir, ancak uygulamaya özgü verileri korumalıdır yalıtılmış depolama kullanmanız gerekir.
 
  Daha fazla bilgi için [yalıtılmış depolama](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ ms.locfileid: "63406612"
  Varsa, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama, bir Web sunucusu güvenlik kısıtlamaları nedeniyle erişemez, uygulama onay gerekir <xref:System.Net.WebPermission> bu Web sitesi için. Güvenlik izinlerini artırma hakkında daha fazla bilgi için bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması, bakın [güvenli ClickOnce uygulamaları](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>XML Web hizmeti verilerine erişim
- Verilerinizi XML Web hizmeti olarak kullanıma sunma, verileri bir XML Web hizmeti proxy'si kullanarak erişebilirsiniz. Proxy bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sınıfı kullanarak oluşturduğunuz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. XML Web hizmeti işlemleri — müşteriler, yerleştirme siparişler ve benzeri alma gibi — proxy üzerinde yöntemler olarak sunulur. Bu Web Hizmetleri ham metin veya XML dosyaları çok daha kolay hale getirir.
+ Verilerinizi XML Web hizmeti olarak kullanıma sunma, verileri bir XML Web hizmeti proxy'si kullanarak erişebilirsiniz. Proxy oluşturma kullanarak bir .NET Framework sınıfıdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. XML Web hizmeti işlemleri — müşteriler, yerleştirme siparişler ve benzeri alma gibi — proxy üzerinde yöntemler olarak sunulur. Bu Web Hizmetleri ham metin veya XML dosyaları çok daha kolay hale getirir.
 
  Aynı güvenlik kısıtlamalara göre XML Web hizmeti HTTP üzerinden çalışırsa, hizmet kısıtlanacaktır <xref:System.Net.WebClient> ve <xref:System.Net.HttpWebRequest> sınıfları.
 

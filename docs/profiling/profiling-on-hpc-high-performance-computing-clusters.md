@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994998"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745314"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC (yüksek performanslı hesaplama) profili kümeleri
 
@@ -36,9 +36,9 @@ Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanı
 
 - Visual Studio ile aynı bilgisayarda Microsoft HPC Paketi 2008'i yükleyin. HPC kümesinin parçası olacak bir bilgisayar yok. HPC paketini yükleyebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Yükleme [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] ve tek başına bir HPC profil oluşturma araçları sürümünü işlem düğümü. Program için yükleme [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve profil oluşturucuyu tek başına Visual Studio yükleme medyasında bulunur. **Not** yükledikten sonra işlem yeniden [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ve profil oluşturma araçları yüklemeden önce.
+- .NET Framework 4 yükleyin ve tek başına bir HPC profil oluşturma araçları sürümünü hesaplama düğümünün. Hem .NET Framework hem de tek başına profil oluşturucu için yükleme programlar, Visual Studio yükleme medyasında bulunur. **Not** işlem .NET Framework yükledikten sonra ve profil oluşturma araçları yüklemeden önce yeniden başlatmanız gerekir.
 
-  Yüklenecek [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] ve tek başına profil oluşturma araçları etkin bir HPC bilgi işlem düğümü ve etkin küme makinede profil oluşturma, şu adımları izleyin:
+  .NET Framework 4 ve tek başına profil oluşturma araçları etkin bir HPC işlem düğümünde yükleyin ve küme makinede profil oluşturmayı etkinleştirmek için bu adımları izleyin:
 
 1. HPC pack ile yüklü bir komut istemi penceresi açın.
 
@@ -53,7 +53,7 @@ Bir HPC işlem düğümünde profili oluşturmak için aşağıdakileri yapmanı
 | | |
 |------------------| - |
 | *%HeadNode%* | Küme baş düğümü adı. |
-| *%FxPath%* | Yolu [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] yükleyici. Visual Studio yükleme medyasında yoludur: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | .NET Framework 4 yükleyici yolu. Visual Studio yükleme medyasında yoludur: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Tek başına sürümü Profil Araçları Yükleyicisi'nin yolu. Visual Studio yükleme medyasında yoludur: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profil
@@ -139,7 +139,7 @@ HPC profili oluşturma Sihirbazı HPC başlatma özellikleri sayfasında perform
 |---------------------------------------| - |
 | **Proje adı** | Geçerli adını [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proje veya çözüm. |
 | **Profil Oluşturucu durdurulduğunda temizleme** | TRUE olduğunda, yürütme dizine dağıtılan ikili dosyaları kaldırır. Bu adımda, dosya ve program kullanıcı tarafından oluşturulan dizinleri kaldırılmaz. Dağıtım dizini ve yürütme directory IDE tarafından oluşturulmuşsa, IDE bunları kaldırmak çalışır, ancak bunlar IDE tarafından dağıtılan dosyalar varsa bunu. |
-| **Dağıtılacak ek dosyalar** | İşlem düğümü üzerinde dağıtılacak ek dosyaların noktalı virgülle ayrılmış listesini belirtir. Üç nokta düğmesine tıklayabilirsiniz (**...** ) iletişim kutusunu kullanarak birden çok dosya seçin. |
+| **Dağıtılacak ek dosyalar** | İşlem düğümü üzerinde dağıtılacak ek dosyaların noktalı virgülle ayrılmış listesini belirtir. Üç nokta düğmesine tıklayabilirsiniz ( **...** ) iletişim kutusunu kullanarak birden çok dosya seçin. |
 | **Mpiexec komutu** | MPI uygulama başladığında uygulamayı belirtir. Varsayılan değer **mpiexec.exe** |
 | **Mpiexec bağımsız değişkenleri** | Mpiexec.exe komutu geçirilecek bağımsız değişkenleri belirtir. |
 | **İstenen küme düğümlerinde** | Uygulamanın çalıştırılacağı kümedeki düğüm sayısını belirtir. |

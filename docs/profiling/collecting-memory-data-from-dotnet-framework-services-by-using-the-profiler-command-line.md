@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263519"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747814"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama
-Bu bölümde yordamları ve bellek ayırma ve nesne yaşam süresi verilerini toplamak için seçenekleri açıklar bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komut satırından örnekleme metodu kullanılarak hizmet.
+Bu bölümde, yordamları ve bellek ayırma ve nesne yaşam verisi komut satırından örnekleme yöntemini kullanarak bir .NET Framework hizmeti toplamak için seçenekleri açıklar.
 
 ## <a name="common-tasks"></a>Ortak görevler
 

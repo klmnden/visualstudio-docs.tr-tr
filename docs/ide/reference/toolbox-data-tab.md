@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946797"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747693"
 ---
-# <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
+# <a name="toolbox-data-tab"></a>Araç kutusu, veri sekmesi
 
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç kutusu** ilişkili bir tasarımcı sahip bir proje oluşturduğunuzda görünür. **Araç kutusu** görüntülemek istiyorsanız varsayılan olarak Visual Studio tümleşik geliştirme ortamı; görünen **araç kutusu**seçin **araç kutusu** gelen**Görünümü** menüsü.
 
@@ -28,7 +28,7 @@ Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** se
 
 ## <a name="ui-element-list"></a>UI öğe listesi
 
-Bir bileşen için .NET Framework başvuru sayfasına doğrudan gitmek için basın **F1** öğesine **araç kutusu** veya tasarımcının tepsisinde bileşen öğesi.
+Bir bileşen için .NET başvuru sayfasına doğrudan gitmek için basın **F1** öğesine **araç kutusu** veya tasarımcının tepsisinde bileşen öğesi.
 
 |Ad|Açıklama|
 |----------|-----------------|
@@ -37,7 +37,7 @@ Bir bileşen için .NET Framework başvuru sayfasına doğrudan gitmek için bas
 |<xref:System.Windows.Forms.BindingSource>|Denetimleri temel alınan veri kaynağına bağlama işlemini basitleştirir.|
 |<xref:System.Windows.Forms.BindingNavigator>|Gezinti ve düzenleme için kullanıcı arabirimi (UI) bir form üzerinde verilere bağlı denetimler temsil eder.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da veri erişimi](../../data-tools/accessing-data-in-visual-studio.md)
 - [.NET için Visual Studio veri araçları](../../data-tools/visual-studio-data-tools-for-dotnet.md)

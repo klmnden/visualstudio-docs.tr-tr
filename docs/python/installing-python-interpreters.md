@@ -1,7 +1,7 @@
 ---
 title: Seçin ve Python yorumlayıcılarını yükleme
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılarını tam bir listesi.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957426"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747157"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
@@ -26,6 +26,11 @@ Alternatif olarak, standart python yorumlayıcılarını'nden yükleyebilirsiniz
 ::: moniker-end
 
 Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılarını el ile de yükleyebilirsiniz. Örneğin, Visual Studio'yu yüklemeden önce Anaconda 3 yüklü değilse, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez. Ayrıca yorumlayıcıyı el ile yükleyebilirsiniz, örneğin, daha yeni bir sürümü kullanılabilir, henüz Visual Studio Yükleyicisi'nde görünmez.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio, Python, resmi olarak desteklenen sürümleri tarafından belirtilen tüm destekler [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Özellikle, sürüm 2.7, 3.5, 3.6 ve 3.7.
+::: moniker-end
 
 İçin **Visual Studio 2015 veya önceki**, yorumlayıcılarını birini el ile yüklemelisiniz.
 

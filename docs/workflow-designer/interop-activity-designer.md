@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536431"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747143"
 ---
 # <a name="interop-activity-designer"></a>Interop Etkinlik Tasarımcısı
 
@@ -29,11 +29,7 @@ ms.locfileid: "62536431"
 
 **Interop** etkinlik Tasarımcısı bulunabilir **geçiş** kategorisi **araç kutusu**, hangi erişilen tıklayarak **araç kutusu**sekmesi. Alternatif olarak, seçin **araç kutusu** gelen **görünümü** tuşuna basın veya menü **Ctrl**+**Alt** + **X**.
 
-[Geçiş](../workflow-designer/migration-activity-designers.md) içeren kategori <xref:System.Activities.Statements.Interop> etkinliği yalnızca gösterilir **araç kutusu** projenizi tam .NET Framework 4 hedefliyse.
-
-C# projeleri için projeye sağ tıklayarak tam .NET Framework 4 kullanmak için projeyi yeniden hedefleyebilirsiniz **Çözüm Gezgini** seçerek **özellikleri**. Üzerinde **uygulama** sekmesinde **NET Framework 4** seçeneğini **hedef Framework'ü**. Seçin **Evet** bu değişikliği onaylamak için.
-
-Visual Basic projeleri için projeye sağ tıklayarak tam .NET Framework 4 kullanmak için projeyi yeniden hedefleyebilirsiniz **Çözüm Gezgini** seçerek **özellikleri**. Üzerinde **derleme** sekmesinde **Gelişmiş derleme seçenekleri** düğmesi. Seçin **.Net Framework 4** gelen **hedef çerçeve listesi**ve ardından **Tamam**. Seçin **Evet** bu değişikliği onaylamak için.
+[Geçiş](../workflow-designer/migration-activity-designers.md) içeren kategori <xref:System.Activities.Statements.Interop> etkinliği yalnızca görünür **araç kutusu** projeniz .NET Framework 4'e (tam) hedefliyorsa veya üzeri. Gerekirse, framework sürümünü değiştirebilirsiniz varsa, projenizin hedeflediği işletim sistemi.
 
 **Interop** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve etkinlikleri genellikle yerleştirilen her yerde, gibi olarak içinde iş akışı Tasarımcısı yüzeyine bırakılan bir <xref:System.Activities.Statements.Sequence>. Bırakarak **Interop** etkinlik Tasarımcısı oluşturur bir <xref:System.Activities.Statements.Interop> etkinliği ile bir varsayılan **DisplayName** , birlikte çalışabilirlik. Düzenleyebileceğiniz <xref:System.Activities.Activity.DisplayName%2A> başlığını **Interop** etkinlik Tasarımcısı veya **DisplayName** özellik kılavuzunda kutusu.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898756"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745757"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; öğesi (Önyükleyici)
 `Package` En üst düzey XML öğesi bir paket dosyası içinde bir öğedir.
@@ -147,10 +147,10 @@ ms.locfileid: "62898756"
 |--------------------| - |
 | `Culture` | Gerekli. Kullanılacak dili belirler. Bu paket için kültür tanımlar. Bu öznitelik içine bir anahtardır `Strings` öğesi, yükleme sırasında ürün adları ve hata iletileri için kültüre özgü dizeleri listeler. |
 | `Name` | Gerekli. Gibi bir araç geliştiriciye görüntülenen paketten adını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu öznitelik içine bir anahtardır `Strings` içermesi gereken öğesi bir `String` öğeyle `Name` ve `Culture` özelliklerini ayarlama eşleştirilecek `Name` ve `Culture` özelliklerini `Package`. |
-| `LicenseAgreement` | İsteğe bağlı. Son Kullanıcı Lisans Sözleşmesi (EULA) içeren dağıtım paketi dosyasının adını belirtir.  Bu dosya ya da düz metin olabilir (*.txt*) veya zengin metin biçimi. (*.rtf*) |
+| `LicenseAgreement` | İsteğe bağlı. Son Kullanıcı Lisans Sözleşmesi (EULA) içeren dağıtım paketi dosyasının adını belirtir.  Bu dosya ya da düz metin olabilir ( *.txt*) veya zengin metin biçimi. ( *.rtf*) |
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneği dağıtma için tam bir paket dosyası gösterir [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Aşağıdaki kod örneği, .NET Framework 2.0 dağıtma için tam bir paket dosyası gösterir.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
