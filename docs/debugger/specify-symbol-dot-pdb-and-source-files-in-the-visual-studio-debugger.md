@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045348"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746250"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında simge (.pdb) ve kaynak dosyaları belirtin (C#, C++, Visual Basic F#)
 
@@ -76,7 +76,7 @@ Hata ayıklayıcı ayrıca sembol dosyaları aşağıdaki konumlarda arar:
 
      Kullanabileceğinize sembol sunucuları şunlardır:
 
-     **Microsoft Genel sembol sunucuları**: Bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemlerinde, MDAC, IIS, ISA sembolleri alabilirsiniz ve [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] genel Microsoft sembol sunucularından.
+     **Microsoft Genel sembol sunucuları**: Bir sistem DLL Dosyasına veya bir üçüncü taraf kitaplığı için bir çağrı sırasında oluşan bir çökme hatasını gidermek için genellikle sistem gerekir *.pdb* dosyaları. Sistem *.pdb* dosyaları Windows DLL'leri için semboller içeren *.exe* dosyaları ve cihaz sürücüleri. Windows işletim sistemleri, MDAC, IIS, ISA ve .NET Framework için genel Microsoft sembol sunucularından sembolleri alabilirsiniz.
 
      **Sembol sunucularını bir iç ağdaki veya yerel makinenizde**: Ekibiniz veya şirketiniz, kendi ürünleriniz için ve sembollerin önbelleği olarak sembol sunucuları dış kaynaklardan oluşturabilirsiniz. Kendi makineniz üzerinde bir sembol sunucusu olabilir.
 
