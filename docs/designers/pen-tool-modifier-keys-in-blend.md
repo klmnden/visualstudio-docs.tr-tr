@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844922"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820448"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend'de Kalem aracı değiştirici tuşları
 Bir yol ile oluştururken değiştirmek için kullanabileceğiniz kısayolları aşağıdaki tabloda **kalem** aracı ![Kalem aracı](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Ayrıca **kalem** aracı eklemek veya var olan bir yol noktalarını kaldırmak için ya da iki mevcut yollar katılın.
@@ -27,8 +27,8 @@ Bir yol ile oluştururken değiştirmek için kullanabileceğiniz kısayolları 
 |15 derecelik artışlarla yeni nokta etrafında Eğim bitiş noktasını Taşı|Yeni noktası oluşturmak için tıklayın ve ardından basılı **Shift**+**Alt** ve fare düğmesini bırakmadan önce sürükleyin|![15 derecelik artışlarla yeni nokta etrafında Eğim bitiş noktasını Taşı](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Kalem işaretçi Ayarla|
 |Bir uç noktada tanjantını sıfır kısaltın|Uç noktasına tıklayın|![Bir uç noktada tanjantını sıfır kısaltın](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Kalem işaretçi Ayarla|
 |Yeni bir noktası var olan bir yol ekleyin.|Yeni noktasını istediğiniz konuma yoluna tıklayın|![Yeni bir noktası var olan bir yol ekleyin.](../designers/media/b004ad5a-33a4-46ae-81c0-20be0d819332.png)<br /><br /> Kalemin Ekle|
-|Bir yoldan bir noktası Kaldır|Mevcut bir noktası üzerinde gelin ve tıklayın|![](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Kalemin Sil|
-|Bir bir sharp köşe yoluyla kapatın|Başlangıç noktasına tıklayın|![Bir yoldan bir noktası Kaldır](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Kalemin Kapat|
+|Bir yoldan bir noktası Kaldır|Mevcut bir noktası üzerinde gelin ve tıklayın|![Yolundan noktası Kaldır](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Kalemin Sil|
+|Bir bir sharp köşe yoluyla kapatın|Başlangıç noktasına tıklayın|![Keskin köşeleri yolu Kapat](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Kalemin Kapat|
 |Köşesinde düz bir eğri içeren bir yol kapatın|Başlangıç noktasına tıklayın ve fare düğmesini bırakmadan önce Eğim tanıtıcı değiştirmek için sürükleyin|![Köşesinde düz bir eğri içeren bir yol kapatın](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Kalemin Kapat|
 |İki yolu birleştirilirken bir bir sharp köşe oluşturma|İki yolu seçin, **kalem** aracı, yollardan biri, uç noktasına tıklayın ve uç noktasına başka bir yol,'a tıklayın|![İki yolu birleştirilirken bir bir sharp köşe oluşturma](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Kalemin birleştirme|
 |İki yolu alanına eklerken oluşan kesintisiz bir köşe oluşturmak|İki yolu seçin, **kalem** aracı, yollardan biri, uç noktasına tıklayın ve ardından uç noktasına başka bir yolun sürükleyin|![İki yolu alanına eklerken oluşan kesintisiz bir köşe oluşturmak](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Kalemin birleştirme|

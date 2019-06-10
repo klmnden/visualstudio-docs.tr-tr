@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899342"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820439"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 
@@ -93,8 +93,8 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 |||||
 |-|-|-|-|
 |![Birleştirme öncesi iki şekil](../designers/media/b1_1.png)|Birleştirme öncesi iki şekil|![Kesiştir](../designers/media/b1_4.png)|Kesiştir|
-|![Örtüşmeyi Dışla](../designers/media/b1_2.png)|Birleştir|![](../designers/media/b1_5.png)|Örtüşmeyi Dışla|
-|![Çıkarma](../designers/media/b1_3.png)|Bölme|![](../designers/media/b1_6.png)|Çıkarma|
+|![Birleştir](../designers/media/b1_2.png)|Birleştir|![Örtüşmeyi Dışla](../designers/media/b1_5.png)|Örtüşmeyi Dışla|
+|![Bölme](../designers/media/b1_3.png)|Bölme|![Çıkarma](../designers/media/b1_6.png)|Çıkarma|
 
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

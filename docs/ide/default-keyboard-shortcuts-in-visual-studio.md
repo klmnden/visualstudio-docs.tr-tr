@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501181"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820938"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -59,6 +59,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
+|Build.BuildSelection|**CTRL + B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl + Shift + B**|
 |Build.Cancel|**Ctrl + Break**|
 |Build.Compile|**CTRL + F7**|
@@ -77,7 +78,6 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.ApplyCodeChanges|**Alt + F10**|
 |Debug.Autos|**Ctrl + Alt + V, A**|
 |Debug.BreakAll|**Ctrl + Alt + Break**|
-|Debug.BreakatFunction|**CTRL + B**|
 |Debug.Breakpoints|**Ctrl + Alt + B**|
 |Debug.CallStack|**Ctrl + Alt + C**|
 |Debug.DeleteAllBreakpoints|**CTRL + SHIFT + F9**|
@@ -86,6 +86,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.DOMExplorer|**Ctrl + Alt + V, D**|
 |Debug.EnableBreakpoint|**CTRL + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
+|Debug.FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019)<br />**CTRL**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
 |Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + ı**|
@@ -109,7 +110,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.ParallelWatch3|**CTRL + SHIFT + D, 3**|
 |Debug.ParallelWatch4|**CTRL + SHIFT + D, 4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**SHIFT + F9**<br /><br /> veya<br /><br /> **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**SHIFT + F9** veya **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|

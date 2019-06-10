@@ -1,6 +1,6 @@
 ---
-title: Birim Testi Temelleri
-ms.date: 01/07/2016
+title: Birim testi temelleri
+ms.date: 06/06/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990317"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820758"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -165,26 +165,24 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
-
-Unutmayın `Withdraw_ValidAmount_ChangesBalance` açık bir kullanan `Assert` test yönteminin geçer veya başarısız olursa belirlemek için deyimi sırada `Withdraw_AmountMoreThanBalance_Throws` kullanır `ExpectedException` test yönteminin başarısını belirlemek için öznitelik. Güvenli bir birim test çerçevesi test yöntemleri try/catch deyimleri sarmalar. Çoğu durumda, bir özel durum yakalandığında test yöntemi başarısız olur ve özel durum yok sayılır. `ExpectedException` Özniteliği test yöntemi, belirtilen özel durum oluşturulursa geçmesine neden olur.
 
 Microsoft birim testi çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:
 

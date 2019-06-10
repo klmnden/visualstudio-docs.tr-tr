@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962021"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820318"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Birim testi için onay sınıflarını kullanma
 
@@ -45,7 +45,7 @@ Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert> karş
 
 Yeni bir özel durum sınıfı assert yazdığınız taban sınıftan devralın <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> özel durum bir onaylama işlemi hatası yerine test veya üretim kodundan beklenmeyen bir özel durum olarak tanımlamak daha kolay.
 
-Bir test yöntemi ile donatmak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> özniteliği beklediğiniz bir yöntem uygulama kodunuzda tarafından oluşturulması için bir özel durum gerçekten durum doğrulamak için test yönteminin istediğinizde.
+Beklediğiniz bir yöntem uygulama kodunuzda tarafından oluşturulması için bir özel durum gerçekten durum doğrulamak için <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> yöntemi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

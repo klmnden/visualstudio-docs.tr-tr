@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001901"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820453"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Nasıl yapılır: İçerik modeli görünümünü kullanarak düğümlerin içerik modelini İnceleme
 
@@ -39,6 +39,6 @@ Bu konuda düğümlerinizi kullanarak keşfedin açıklar [içerik modeli görü
 
 7. Tıklayın altında herhangi bir düğümde `purchaseOrder` öğesi ve seçili düğümü şema kümesinde nerede olduğunu görmek için içerik haritası çubuğu bakın.
 
-8. Tıklayın **Göster belgeleri** platformlarının geçiş yapmak için XSD araç çubuğu düğmesi. Ayrıca, belgeleri açıp kapatmak için tasarım yüzeyine sağ tıklayabilirsiniz.
+8. Tıklayın **Göster belgeleri** belgeleri açıp kapatmak için XSD araç çubuğu düğmesi. Ayrıca, belgeleri açıp kapatmak için tasarım yüzeyine sağ tıklayabilirsiniz.
 
-9. Rick tıklamayla `purchaseOrder` düğümünü seçip alt **örnek XML oluşturmak** XML örneği görmek için.
+9. Sağ `purchaseOrder` düğümünü seçip alt **örnek XML oluşturmak** XML örneği görmek için.

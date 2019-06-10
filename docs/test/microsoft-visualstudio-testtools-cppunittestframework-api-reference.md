@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference
+title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784088"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820770"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu
 
 Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` ad alanı. Microsoft yerel birim testi Framework'ü temel C++ birim testleri yazmak için bu API'leri kullanın. Var olan bir [kullanım örneği](#example) konunun sonunda.
 
- Üstbilgi dosyalarında bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\include** klasör.
+ Üstbilgi dosyalarında bulunan _[x 86] VisualStudio2012 InstallFolder_ **\VC\UnitTest\include** klasör.
 
- LIB dosyaları bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\lib** klasör.
+ LIB dosyaları bulunan _[x 86] VisualStudio2012 InstallFolder_ **\VC\UnitTest\lib** klasör.
 
 Üst bilgi ve LIB yolları yerel Test projesinde otomatik olarak yapılandırılır.
 

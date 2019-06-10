@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db603567cb73827546bc488bf57aba641d97054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1648d2ae3c46fa8382a96b497f307b370a8d345c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541955"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820571"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Ayrılmış özel durum türlerini harekete geçirmeyin
 
@@ -46,6 +46,8 @@ Kullanıcı için yeterli bilgi sağlamak için genel aşağıdaki özel durum t
 
 Aşağıdaki özel durum türleri ayrılmıştır ve yalnızca ortak dil çalışma zamanı tarafından oluşturulur:
 
+- <xref:System.AccessViolationException?displayProperty=fullName>
+
 - <xref:System.ExecutionEngineException?displayProperty=fullName>
 
 - <xref:System.IndexOutOfRangeException?displayProperty=fullName>
@@ -53,6 +55,14 @@ Aşağıdaki özel durum türleri ayrılmıştır ve yalnızca ortak dil çalı�
 - <xref:System.NullReferenceException?displayProperty=fullName>
 
 - <xref:System.OutOfMemoryException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.COMException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.ExternalException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.SEHException?displayProperty=fullName>
+
+- <xref:System.StackOverflowException?displayProperty=fullName>
 
 **Genel özel durum oluşturması beklenmiyor**
 

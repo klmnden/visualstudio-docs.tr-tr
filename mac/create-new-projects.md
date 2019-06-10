@@ -3,40 +3,53 @@ title: Yeni projeler ve çözümler oluşturma
 description: Bu makale, Mac için Visual Studio'da projeler ve çözümler oluşturulacağı açıklamaktadır
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 045d92365501b888e56ce4ae397331e597b5b33a
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983613"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820746"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Yeni projeler ve çözümler oluşturma
+# <a name="creating-a-new-project"></a>Yeni proje oluşturma
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Bir şablondan yeni projeler ve çözümler oluşturma
+## <a name="opening-the-project-creation-dialog"></a>Proje oluşturma iletişim kutusu açma
 
-Önceden tanımlanmış bir şablon kullanarak herhangi bir zamanda çözümleri oluşturulabilir. Mac için Visual Studio 2019'ile başlayan seçin **yeni** başlangıç penceresinden. Alternatif olarak, göz atın **Dosya > Yeni Çözüm**. Gerekli platformları ve gerekli şablon seçin:
+Mac için Visual Studio'da yeni bir proje oluşturmak için birkaç yol vardır Mac için Visual Studio'yu ilk kez açtığınızda, Karşılama ekranı gösterilir. Burada seçtiğiniz **yeni** hangi yönlendirilirsiniz proje oluşturma ekranına.
 
-![Yeni çözümler oluşturun](media/projects-and-solutions-image0.png)
+> [!TIP]
+> Ayrıca, Karşılama ekranında, ayrıca açın ve son kullanılan projeler ve çözümler için arama yapın. Son Projeler menü çubuğuna giderek ve seçerek açabilirsiniz **Dosya > yeni çözümler**
 
-Bu, seçilen şablon türüne bağlı olarak bir veya daha fazla proje içerebilir bir çözüm oluşturur.
+![Hoş Geldiniz ekranı yeni proje oluşturma](media/first-run-project.png)
 
-Çözüm Gezgini bağlam eylemleri veya menü çubuğunu kullanarak çıkıldığında.
+Mac için Visual Studio zaten yüklü olan bir çözüm açık değilse, menü çubuğuna giderek ve ardından yeni bir çözüm oluşturabilirsiniz **Dosya > Yeni Çözüm**. Bu şekilde yeni bir çözüm oluşturarak zaten yüklü olan çözüm kapatılacak.
 
-Çözüme yeni bir proje eklemek için çözüm adına sağ tıklayıp **Ekle > Yeni Proje Ekle** yeni proje iletişim kutusu görüntülemek için:
+## <a name="creating-a-new-project-from-a-template"></a>Bir şablondan yeni bir proje oluşturma
 
-![Yeni bir proje ekleyin](media/projects-and-solutions-image4.png)
+**Yeni proje** iletişim kutusunda, varsayılan olarak, sıralama ölçütü, son kullanılan şablonlar gösterilir *en son kullanılan*.
 
-Bu yöntem, yeni projeler ekleme, Xamarin kod paylaşımı özelliklerinden yararlanmak için kullanılabilir. Varolan çözüme bir paylaşılan proje veya taşınabilir kitaplığı şablonu ekleme, diğer bir çözümdeki tüm projeleri içinde kullanılabilen herhangi bir platformlar arası mantık için bir yol sağlar. Platformlar arası uygulamaları oluşturma hakkında daha fazla bilgi için [ilgili Kılavuzu](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Yeni bir şablon kullanmak istemiyorsanız, iletişim kutusunun sol taraftaki kategorileri arasından seçim yapabilirsiniz. Her kategori için içinden seçim yapabileceğiniz çeşitli proje şablonları içerir. Bir proje türü üzerinde'ı tıklatarak, ekranın sağ tarafında bir açıklamasını görmek sağlar.
 
-## <a name="opening-recent-solutions"></a>Son çözümleri açılıyor.
+![Yeni Proje ekran](media/project-creation-screen.png)
 
-Visual Studio başlangıç penceresi, üzerinde çalıştığınız son projeler listesini görüntüler:
+## <a name="configuring-your-new-project"></a>Yeni projenizi yapılandırma
 
-![Son çözümleri bölümüne Hoş Geldiniz sayfası](media/create-new-projects-recent.png)
+Bir proje şablonunu seçtikten sonra aşağıdaki ekranlarda, projeyi kurmak için gerekli yapılandırma adımlarını sürer; Bu proje türüne göre farklılık gösterebilir.
 
-Filtre kutusunu kullanarak bu listeyi filtreleyin veya öğeyi listeden kaldırın.
+Tüm projeler, dosyaların depolanacağı konumu birlikte yeni bir proje gerektirir. Proje varolan çözüme eklemek yerine yeni bir çözümün bir parçası ise, bir çözüm adı da gerekli olacaktır.
+
+İsteğe bağlı olarak, bu aşamada Git kaynak denetimi seçenekleri de yapılandırabilirsiniz. Aşağıdaki resimde, bir .NET Core projesi için son yapılandırma adımı örneğidir:
+
+![Yeni bir proje yapılandırma](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>Ek projeleri çözüme ekleme
+
+Ek projeleri çözüm panelinde çözüme sağ tıklayıp ya da'i seçerek bir çözüme ekleyebilirsiniz **Ekle > Yeni Proje Ekle** veya **Ekle > Varolan Proje Ekle**.
+
+Yeni Proje açılmadan yönlendirilirsiniz ile proje oluşturma, gösterildiği gibi [yeni projenize yapılandırma](#configuring-your-new-project).
+
+Mevcut bir projeyi eklemek seçme, makinenizde var olan bir proje için göz atın ve onu çözüme eklemek izin verir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

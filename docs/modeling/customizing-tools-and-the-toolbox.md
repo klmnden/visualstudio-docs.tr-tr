@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445789"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820824"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
@@ -196,7 +196,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Bağlantı bağlama yönergesi DSL Ayrıntıları penceresinde**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![Bağlantı bağlama yönergesi DSL Ayrıntıları penceresinde](../modeling/media/connectionbuilder_4b.png)
 
  Ardından ConnectionBuilder sınıftaki yöntemlerin sağlamanız gerekir:
 

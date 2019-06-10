@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420421"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820686"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8. Adım: Bir resim düğme olayı işleyicisi Göster için kod yazma
 
@@ -87,7 +87,7 @@ IDE kod yazmanıza yardımcı olacak, IntelliSense adında güçlü bir araç va
         >
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
-    9. Şimdi bir daha fazla kod satırı ekleyin. Bunu yazabilirsiniz (veya kopyalayıp yapıştırın), ancak bunu eklemek için IntelliSense kullanmayı düşünün. Daha fazla, IntelliSense ile kendi kodunuzu yazma daha hızlı bir şekilde bilgi sahibisiniz. Son `showButton_Click()` yöntemi aşağıdaki gibi görünür. (Seçin **VB** kod Visual Basic sürümünü görüntülemek için sekmesinde.)
+    9. Şimdi bir daha fazla kod satırı ekleyin. Bunu yazabilirsiniz (veya kopyalayıp yapıştırın), ancak bunu eklemek için IntelliSense kullanmayı düşünün. Daha fazla, IntelliSense ile kendi kodunuzu yazma daha hızlı bir şekilde bilgi sahibisiniz. Son `showButton_Click()` yöntemi aşağıdaki gibi görünür.
 
          [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
          [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]

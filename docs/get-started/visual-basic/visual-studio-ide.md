@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966684"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820648"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE Hoş Geldiniz | Visual Basic
 
@@ -30,7 +30,7 @@ Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenle
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "Visual Studio IDE")](media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio 2019 IDE](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -306,7 +306,7 @@ IDE'yi kişiselleştirme diğer yollar hakkında bilgi edinmek için [kişiselle
 
    ![Hata ayıklama > menü hata ayıklama olmadan Başlat](../media/overview-start-without-debugging.png)
 
-   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
+   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!** . Artık çalışan bir uygulamanın var!
 
    ![Konsol penceresi](../media/overview-console-window.png)
 
@@ -373,7 +373,7 @@ IDE'yi kişiselleştirme diğer yollar hakkında bilgi edinmek için [kişiselle
 
    ![Hata ayıklama > menü hata ayıklama olmadan Başlat](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
+   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!** . Artık çalışan bir uygulamanın var!
 
    ![Konsol penceresi](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](../../ide/refactoring-in
 
    Değişkeni ve bir ampul gri kutu göründüğüne dikkat edin, kenar boşluğunda görünür.
 
-3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'**.
+3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'** .
 
    ![Visual Studio'da eylemini yeniden adlandır](media/rename-quick-action.png)
 

@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842004"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820629"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842004"
 
 Bu düzenleri herhangi birinin ihlali CA1063 uyarı tetikler.
 
-Bildirir ve uygulayan her tür <xref:System.IDisposable> arabirimi sağlamalıdır kendi `protected virtual void Dispose(bool)` yöntemi. `Dispose()` çağırmalıdır `Dipose(true)`, ve sonlandırıcı çağırmalıdır `Dispose(false)`. Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> arabirimi tanımlamalıdır `Dispose(bool)` ve adlandırın. Daha fazla bilgi için [(.NET Kılavuzu) yönetilmeyen kaynakları Temizleme](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern).
+Bildirir ve uygulayan her tür <xref:System.IDisposable> arabirimi sağlamalıdır kendi `protected virtual void Dispose(bool)` yöntemi. `Dispose()` çağırmalıdır `Dispose(true)`, ve sonlandırıcı çağırmalıdır `Dispose(false)`. Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> arabirimi tanımlamalıdır `Dispose(bool)` ve adlandırın. Daha fazla bilgi için [(.NET Kılavuzu) yönetilmeyen kaynakları Temizleme](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
 

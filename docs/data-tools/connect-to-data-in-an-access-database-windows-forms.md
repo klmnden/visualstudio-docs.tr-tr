@@ -1,5 +1,5 @@
 ---
-title: (Windows Forms) bir erişim veritabanındaki verilere bağlanma
+title: Bir Access veritabanındaki verilere bağlanma (Windows Forms)
 ms.date: 02/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568540"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820403"
 ---
-# <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) bir erişim veritabanındaki verilere bağlanma
+# <a name="connect-to-data-in-an-access-database-windows-forms"></a>Bir Access veritabanındaki verilere bağlanma (Windows Forms)
 
-Bir Access veritabanına bağlanabilir (ya da bir *.mdf* dosya veya bir *.accdb* dosya) Visual Studio kullanarak. Veri bağlantı tanımlandıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.
+Bir Access veritabanına bağlanabilir (ya da bir *.mdb* dosya veya bir *.accdb* dosya) Visual Studio kullanarak. Veri bağlantı tanımlandıktan sonra görünür **veri kaynakları** penceresi. Burada, tabloları veya görünümleri formlarınıza sürükleyebilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu yordamları kullanmak için bir Windows Forms uygulaması projesi ve bir Access veritabanı gerekir (*.accdb* dosyası) veya bir Access 2000-2003 veritabanına (*.mdb* dosyası). Dosya türünüze karşılık gelen yordamı izleyin.
+Bu yordamları kullanmak için bir Windows Forms uygulaması projesi ve bir Access veritabanı gerekir ( *.accdb* dosyası) veya bir Access 2000-2003 veritabanına ( *.mdb* dosyası). Dosya türünüze karşılık gelen yordamı izleyin.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>.Accdb dosyası için bir veri kümesi oluşturma
 

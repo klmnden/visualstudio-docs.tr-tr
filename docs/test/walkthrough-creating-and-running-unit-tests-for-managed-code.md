@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401728"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820928"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -179,19 +179,23 @@ Bu makalede, oluşturma işleminde, çalışan, adımları ve bir dizi birim öz
 
 ## <a name="create-the-test-class"></a>Test sınıfı oluşturun
 
-Doğrulamak için bir test sınıfı oluşturun `BankAccount` sınıfı. Kullanabileceğiniz *UnitTest1.cs* proje şablonu tarafından oluşturulan dosya, ancak dosyaya verin ve daha açıklayıcı adlar sınıfı. Dosyayı yeniden adlandırarak, tek bir adımda yapabilirsiniz **Çözüm Gezgini**.
+Doğrulamak için bir test sınıfı oluşturun `BankAccount` sınıfı. Kullanabileceğiniz *UnitTest1.cs* proje şablonu tarafından oluşturulan dosya, ancak dosyaya verin ve daha açıklayıcı adlar sınıfı.
 
 ### <a name="rename-a-file-and-class"></a>Dosya ve sınıf yeniden adlandır
 
 1. İçinde dosyayı yeniden adlandırmak için **Çözüm Gezgini**seçin *UnitTest1.cs* BankTests projesindeki dosya. Sağ tıklama menüsünden **Yeniden Adlandır**ve ardından dosyayı yeniden adlandır *BankAccountTests.cs*.
 
-   ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
-   Açılan iletişim kutusunda seçin **Hayır**.
+2. Sınıfı yeniden adlandırmak için seçin **Evet** iletişim kutusunda, açılır ve ayrıca Kod öğesi başvuruları yeniden adlandırmak isteyip istemediğinizi sorar.
 
-   ::: moniker-end
+::: moniker-end
 
-2. Sınıfı yeniden adlandırmak için imleci getirin `UnitTest1` Kod Düzenleyicisi ve tuşuna **F2** (veya sağ tıklayıp seçin **Yeniden Adlandır**). Yazın **BankAccountTests** ve tuşuna **Enter**.
+::: moniker range=">=vs-2019"
+
+2. Sınıfı yeniden adlandırmak için imleci getirin `UnitTest1` Kod Düzenleyicisi'nde sağ tıklatın ve ardından **Yeniden Adlandır**. Yazın **BankAccountTests** ve tuşuna **Enter**.
+
+::: moniker-end
 
 *BankAccountTests.cs* dosyası artık şu kodu içerir:
 
@@ -336,7 +340,6 @@ Borç tutarını olduğunda doğru davranış sıfırdan doğrulamak için bir t
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -344,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> doğru özel durumun oluşturulmasını onaylamak için özniteliği. Öznitelik, testin başarısız olmasına neden olan bir <xref:System.ArgumentOutOfRangeException> oluşturulur. Daha fazla genel oluşturmasına, test altındaki yöntemi geçici olarak değiştirirseniz <xref:System.ApplicationException> borç tutarını küçüktür, sıfır test düzgün şekilde davranan&mdash;diğer bir deyişle, işlem başarısız olur.
+Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> doğru özel durumun oluşturulmasını onaylamak için yöntemi. Bu yöntem test başarısız olmasına neden olur. bir <xref:System.ArgumentOutOfRangeException> oluşturulur. Daha fazla genel oluşturmasına, test altındaki yöntemi geçici olarak değiştirirseniz <xref:System.ApplicationException> borç tutarını küçüktür, sıfır test düzgün şekilde davranan&mdash;diğer bir deyişle, işlem başarısız olur.
 
 Çekilen miktarın bakiyeden büyük olduğunu test etmek için aşağıdaki adımları uygulayın:
 
@@ -361,7 +362,7 @@ Kullanım <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAt
 
 3. Ayarlama `debitAmount` bakiyeden büyük bir sayı.
 
-İki test yöntemlerini çalıştıran, testler doğru bir şekilde çalıştığını gösterir.
+İki testleri çalıştırmak ve bunların geçtiğini doğrulayın.
 
 ### <a name="continue-the-analysis"></a>Çözümlemeye devam edin
 
@@ -387,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Ardından, iki koşullu ifadeler değiştirin `Debit` yöntemi:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Test yöntemlerini yeniden düzenleme
 
-Kaldırma `ExpectedException` test metodu özniteliği ve bunun yerine, oluşan özel durumları yakalamalı ve onun ilişkili ileti doğrulayın. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Yöntemi, iki dizeyi karşılaştırın olanağı sağlar.
+Test yöntemlerini yeniden düzenleme çağrısı kaldırarak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Çağrısını sarmalamak `Debit()` içinde bir `try/catch` blok, beklenen özel istisnaları yakalayın ve onun ilişkili ileti doğrulayın. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Yöntemi, iki dizeyi karşılaştırın olanağı sağlar.
 
 Şimdi, `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` şuna benzeyebilir:
 
@@ -418,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -448,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);

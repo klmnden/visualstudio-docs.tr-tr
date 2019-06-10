@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442370"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820914"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Alana Özgü Dilleri Kullanmaya Başlama
 
@@ -21,7 +21,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 > [!NOTE]
 > Metin şablonu dönüştürme SDK'sını ve Visual Studio modelleme SDK'sı, Visual Studio'nun belirli özelliklerini yüklediğinizde otomatik olarak yüklenir. Daha fazla ayrıntı için [bu blog gönderisini](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
+DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Bir etki alanına özgü dil ile ne yapabilirsiniz?
 
@@ -137,11 +137,11 @@ Oluşturduktan hemen sonra DSL çözüm çalıştırabilirsiniz. Daha sonra çö
 
 Deneysel Visual Studio, aşağıdaki örneğe benzer:
 
-![](../modeling/media/dsl_min.png)
+![Visual Studio'da bir etki alanı için ayrı belirli dil örnek ağacı](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Modelin içeriğine
 
-Bir DSL örneği olan bir dosyanın içeriğini adlı bir *model*. Modeli içeren *modeli*<em>öğeleri</em> ve *bağlantıları* olan öğeler arasında. Ne tür bir model öğelerini DSL tanımını belirtir ve modelde bağlantılar bulunabilir. Örneğin, en az bir dil şablondan oluşturulan bir DSL içinde var. bir model öğesi türünü ve bir bağlantı türü
+Bir DSL örneği olan bir dosyanın içeriğini adlı bir *model*. Modeli içeren *modeli* <em>öğeleri</em> ve *bağlantıları* olan öğeler arasında. Ne tür bir model öğelerini DSL tanımını belirtir ve modelde bağlantılar bulunabilir. Örneğin, en az bir dil şablondan oluşturulan bir DSL içinde var. bir model öğesi türünü ve bir bağlantı türü
 
 DSL tanımını modelin diyagram üzerinde nasıl görüneceğini belirleyebilirsiniz. Stilleri şekillerin ve bağlayıcıların çeşitli arasından seçim yapabilirsiniz. Bazı şekiller içindeki diğer şekiller görünür belirtebilirsiniz.
 
@@ -392,7 +392,7 @@ Mevcut etki alanı sınıfları ve ilişkileri yeniden adlandırın. Örneğin, 
 
  Visual Studio'nun deneysel örneğinde kullanmak zorunda değil, DSL kendi bilgisayarınıza yüklemek için aynı yordamı kullanabilirsiniz.
 
- Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
+ Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Eski Deneysel DSL'ler kaldırılıyor
  Artık istemediğiniz Deneysel DSL'ler oluşturduysanız, Visual Studio deneysel örneği sıfırlayarak bunları bilgisayarınızdan kaldırabilirsiniz.

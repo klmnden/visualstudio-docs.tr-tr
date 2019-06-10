@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845820"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820394"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend'de doğrudan seçim aracı değiştirici tuşları
 Aşağıdaki tabloda, var olan bir yol ile şeklini değiştirmek için kullanabileceğiniz kısayollar listelenmektedir **doğrudan seçim** aracı ![doğrudan seçim aracı](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Eklemek veya var olan bir yol noktalarını kaldırmak için veya iki mevcut yollar katılmaya **kalem** aracı.
@@ -24,7 +24,7 @@ Aşağıdaki tabloda, var olan bir yol ile şeklini değiştirmek için kullanab
 |Yol üzerindeki bir noktasını taşıyın|Yol üzerindeki bir nokta sürükleyin|![Yol üzerindeki bir noktasını taşıyın](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Taşıma noktası işaretçisi|
 |Yol üzerindeki iki nokta arasındaki bir kesim için görünür tutamaçların görünmesini|Bir yol kesimini tıklayın|![Yol üzerindeki iki nokta arasındaki bir kesim için görünür tutamaçların görünmesini](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Segment işaretçiyi|
 |Yol üzerindeki iki nokta arasındaki bir segment Taşı|Bir yol kesimini sürükleyin|![Yol üzerindeki iki nokta arasındaki bir segment Taşı](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Segment işaretçiyi|
-|Yol üzerinde bir nokta için bir tanjantı açısını değiştirme|Bir nokta veya görünür ve tanjant uç noktalarından birine sürükleyin tutamaçların görünmesini bir yol kesimini tıklayın|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png)<br /><br /> Taşıma tanjant işaretçisi|
+|Yol üzerinde bir nokta için bir tanjantı açısını değiştirme|Bir nokta veya görünür ve tanjant uç noktalarından birine sürükleyin tutamaçların görünmesini bir yol kesimini tıklayın|![Yol üzerindeki açısını tanjant noktası için Değiştir](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png)<br /><br /> Taşıma tanjant işaretçisi|
 |Bir bir sharp köşe noktasına yapmak veya tanjantını sıfıra indirin|Noktasının üzerine gelin, basılı **Alt**ve ardından noktasına tıklayın|![Bir bir sharp köşe noktasına yapmak veya tanjantını sıfıra indirin](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Noktası işaretçisi dönüştürme|
 |Tüm keskin köşe kesintisiz yapın (veya zaten kesintisiz ise, Tıklatılan noktadan geçerken kıvrımın açısını değiştirin)|Noktasının üzerine gelin, basılı **Alt**ve ardından noktası sürükleyin|![Tüm keskin köşe kesintisiz yapın](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> Noktası işaretçisi dönüştürme|
 |Düz bir çizgi bir eğri parçasını değiştirme|Bir yolda bir segment üzerine gelin, basılı **Alt**ve kesim'ye tıklayın|![Düz bir çizgi bir eğri parçasını değiştirme](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Segment işaretçisi dönüştürme|

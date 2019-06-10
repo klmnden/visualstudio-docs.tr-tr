@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445189"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820989"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için bir şablondan bir Visual Studio çözümü oluşturun. Anahtar çözüm DslDefinition.dsl içinde depolanan DSL tanımı diyagramı parçasıdır. DSL tanımını DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri eklemek, DSL daha ayrıntılı bir şekilde özelleştirmek için program kodu ekleyebilirsiniz.
@@ -99,7 +99,7 @@ Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proj
 
  Bir çözüm çalıştırırsanız, gelen oluşturduğunuz **Minimal dil** aşağıdaki örnek şablonu, Deneysel Visual Studio benzer:
 
- ![](../modeling/media/dsl_min.png)
+ ![Visual Studio'da bir etki alanı için ayrı belirli dil örnek ağacı](../modeling/media/dsl_min.png)
 
  Araçlar ile denemeler yapın. Öğeleri oluşturun ve bunları bağlayın.
 

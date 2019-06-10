@@ -3,19 +3,19 @@ title: Bir NuGet paketini projenize dahil
 description: Bu belge, bir Xamarin projesinde bir NuGet paketi ekleme kapsar. Bulma ve bir paket indiriliyor, aynı zamanda aracılığıyla IDE tümleştirme özellikleri ile tanışın size yol gösterir.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692335"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820617"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 
-NuGet, .NET geliştirme için en popüler Paket Yöneticisi olan ve Visual Studio Mac ve Windows üzerinde Visual Studio için yerleşik olan. Arayın ve paketler, Xamarin.iOS ve Xamarin.Android projenize ya da IDE kullanarak ekleyin.
+NuGet, .NET geliştirme için en popüler Paket Yöneticisi olan ve Visual Studio Mac ve Windows üzerinde Visual Studio için yerleşik olan. Arayın ve paketler, Xamarin için ya da IDE kullanarak .NET Core ve ASP.NET projeleri ekleyin.
 
 Bu makalede, bir projede bir NuGet paketi ekleme açıklar ve sorunsuz bir hale getirir araç zincirinizi gösterir.
 
@@ -31,7 +31,7 @@ NuGet paket işlevselliğini göstermek için önce yeni bir uygulama oluşturma
 
 ## <a name="adding-a-package"></a>Bir paketi ekleme
 
-Mac için Visual Studio'da Aç projesiyle sağ **paketleri** klasöründe **çözüm bölmesi** seçip **paketleri Ekle**:
+Mac için Visual Studio'da Aç projesiyle sağ **paketleri** klasöründe **çözüm bölmesi** seçip **NuGet paketleri Ekle**:
 
 ![Yeni NuGet paket bağlamı eylemi ekleme](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Penceresi açıldığında, varsayılan paket kaynağından paketlerin listesini
 
 ![NuGet paketleri listesi](media/nuget-walkthrough-AddPackages1.png)
 
-Örneğin, belirli bir paketi bulmak için sağ üst köşedeki arama kutusunu kullanın `azure`. Kullanmak istediğiniz bir paket buldunuz, seçin ve **Paketi Ekle** yüklemeye başlamak için düğme.
+Örneğin, belirli bir paketi bulmak için sağ üst köşedeki arama kutusunu kullanın `azure mobile`. Kullanmak istediğiniz bir paket bulduğunuzda seçin ve **Paketi Ekle** yüklemeye başlamak için düğme.
 
-[Azure NuGet paketi ekleme](media/nuget-walkthrough-AddPackages2.png)
+![Azure NuGet paketi ekleme](media/nuget-walkthrough-AddPackages2.png)
 
 Paket İndirildikten sonra projenize eklenir. Çözüm aşağıdaki gibi değişir:
 
@@ -77,9 +77,9 @@ Sağ **paketleri** bağlam menüsüne erişmek için:
 
 ![Paketleri menüsü](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Paketleri ekleme** -daha fazla paket projeye eklemek için penceresi açılır.
-* **Güncelleştirme** - her paket için kaynak sunucunun denetler ve tüm yeni sürümlerini yükler.
-* **Geri yükleme** -(mevcut paketlerini yeni sürümlere güncelleştirmeden) tüm eksik paketleri indirir.
+*   **NuGet paketleri Ekle** -daha fazla paket projeye eklemek için penceresi açılır.
+*   **Güncelleştirme** - her paket için kaynak sunucunun denetler ve tüm yeni sürümlerini yükler.
+*   **Geri yükleme** -(mevcut paketlerini yeni sürümlere güncelleştirmeden) tüm eksik paketleri indirir.
 
 Güncelleştirme ve geri yükleme seçenekleri çözüm düzeyinde de mevcuttur ve Çözümdeki tüm projeleri etkiler.
 

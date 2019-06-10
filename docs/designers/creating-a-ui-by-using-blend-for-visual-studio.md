@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847483"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820558"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio genel bakış
 
@@ -60,7 +60,7 @@ Bir araç seçerek ve farenizle çalışma yüzeyi üzerinde çizim nesneleri ol
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Arama kutusuna** yazın **arama** varlıklar listesine filtre uygulamak için.|
+|![Varlıkları arama kutusu](../designers/media/b1_1.png)|**Arama kutusuna** yazın **arama** varlıklar listesine filtre uygulamak için.|
 |![Kılavuz modu ve liste modu](../designers/media/b1_2.png)|**Kılavuz modu ve liste modu** arasında geçiş **kılavuz modu** görünümü ve **liste modu** varlıklar görünümü.|
 |![Varlıklar kategorileri](../designers/media/b1_3.png)|**Varlıklar kategorileri** bir kategori veya alt kategorideki varlıkların listesini görüntülemek için tıklayın.|
 |![Stilleri](../designers/media/b1_4.png)|**Stilleri** kaynak sözlüğünde yer alan tüm stilleri gösterir.|
@@ -115,7 +115,7 @@ Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu pencereyi ku
 |![RGB renk alanı](../designers/media/b1_12.png)|**RGB renk alanı** değerleri ayarlayarak rengi değiştirme **R**, **G**, veya **B** (kırmızı, yeşil, mavi) sayı düzenleyiciler.|
 |![Alfa kanalı](../designers/media/b1_13.png)|**Alfa kanalını** yanındaki numara düzenleyici kullanarak alfa değeri değiştirmek **A**.|
 |![Rengi kaynağa dönüştürün](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Rengi kaynağa dönüştürün** seçilen rengi bir rengi kaynağa dönüştürün. Renk kaynakları renk Kaynaklar sekmesini tıkladığınızda kullanılabilir.|
-|![](../designers/media/b1_15.png)|**Onaltılık değer** görüntülenen renk onaltılık değerini görüntüleyin.|
+|![Onaltılık renk değeri](../designers/media/b1_15.png)|**Onaltılık değer** görüntülenen renk onaltılık değerini görüntüleyin.|
 |![Belirtme çizgisi 16](../designers/media/b5_label_16.png)|**Gradyan kaydırıcı** yalnızca bir gradyan fırçası seçtiyseniz görünür.|
 |![Gelişmiş özellikleri göster](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Gelişmiş özellikleri göster** daha az yaygın olarak kullanılan özellikleri kategorilerini görüntüleyin.|
 
