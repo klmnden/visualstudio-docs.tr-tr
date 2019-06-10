@@ -7,8 +7,10 @@
     - name: Hızlı başlangıç
       expanded: true
       items:
-        - name: Visual Studio’da Kapsayıcı Araçları
+        - name: Kapsayıcı içinde ASP.NET Core uygulaması
           href: container-tools.md
+        - name: Kapsayıcı içinde React.js Tek Sayfalı Uygulama
+          href: container-tools-react.md
     - name: Öğreticiler
       expanded: true
       items:
