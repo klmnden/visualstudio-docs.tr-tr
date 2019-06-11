@@ -583,11 +583,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ve XSLT dosyaları ile çalışma
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: Uluslararası uygulamalar geliştirme
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: Çift yönlü diller
-          href: ide/creating-applications-in-bi-directional-languages.md
+        - name: Kapsamlı uygulamalar geliştirme
+          items:
+            - name: Erişilebilir uygulamalar tasarlama
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: Uluslararası uygulamalar tasarlama
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
         - name: Ek öğreticiler
           items:
             - name: 'C# veya Visual Basic ile WPF uygulaması oluşturma'
@@ -799,8 +801,6 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: Erişilebilir uygulamalar tasarlamaya yönelik kaynaklar
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: Başvuru
   items:
     - name: Genel Kullanıcı Arabirimi Öğeleri
@@ -1170,6 +1170,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows Bilgi Koruması (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+    - name: Çift yönlü dil girişi
+      href: ide/use-bidirectional-languages.md
     - name: Microsoft Yardım Görüntüleyicisi
       items:
         - name: Genel Bakış
