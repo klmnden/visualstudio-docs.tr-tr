@@ -8,6 +8,12 @@ metadata:
   description: Uygulamalarınıza, hizmetlerinize ve herhangi bir platform veya cihaz için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
+  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66463220"
 highlightedContent:
   items:
   - title: Kurulum ve yükleme
@@ -173,9 +179,3 @@ additionalContent:
 
         [.NET core platformlar arası geliştirme](/dotnet/core/)
   footer: '[Bloglar](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [yığın taşması](https://stackoverflow.com/questions/tagged/visual-studio) - [sorun rapor etme](ide/talk-to-us.md)  -  [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66463220"
