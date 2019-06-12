@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974988"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836109"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -632,7 +632,11 @@ Nesnenin türünü belirtir. `Object` Öğesi, kod parçacığının gerek duydu
 | - |-----------------|
 |[Object öğesi](../ide/code-snippets-schema-reference.md#object-element)|Kod parçacığının düzenleme yapabileceğiniz nesne alanlarını tanımlar.|
 
- Bir metin değeri gereklidir. Bu metin nesnenin türünü belirtir.
+Bir metin değeri gereklidir. Bu metin nesnenin türünü belirtir. Örneğin:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>URL öğesi
 

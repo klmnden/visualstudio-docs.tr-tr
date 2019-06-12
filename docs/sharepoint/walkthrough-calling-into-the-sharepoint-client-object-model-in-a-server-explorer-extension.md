@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma | Microsoft Docs'
+title: 'Sunucu Gezgini: SharePoint bağlantıları düğümünü genişletme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430451"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835950"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma
   Bu izlenecek yol için bir uzantı SharePoint istemci nesne modelini nasıl çağırılacağını **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. SharePoint istemci nesne modelini kullanma hakkında daha fazla bilgi için bkz. [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Aşağıdaki kavramları bilgisi yardımcı, ancak gerekli değildir, bu izlenec
 
     2. İçinde **SharePoint bağlantısı ekleme** iletişim kutusunda, bağlanmak ve ardından istediğiniz SharePoint sitesi için URL'yi girin **Tamam** düğmesi.
 
-         Geliştirme bilgisayarınızda SharePoint sitesini belirtmek için şunu yazın **http://localhost**.
+         Geliştirme bilgisayarınızda SharePoint sitesini belirtmek için şunu yazın **http://localhost** .
 
 3. (Site URL'sini görüntüleyen) site bağlantı düğümü genişletin ve ardından bir alt site düğümünü genişletin (örneğin, **ekip sitesi**).
 

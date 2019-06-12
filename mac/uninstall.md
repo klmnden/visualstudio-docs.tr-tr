@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971465"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835890"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
 
-Mac için Visual Studio gibi tek başına uygulamalar dahil olmak üzere, platformlar arası uygulama geliştirmeyi sağlayan Xamarin ürünlerin birçok
-
-İlgili bölüme gidilerek ayrı ayrı her ürün kaldırmak için bu kılavuzu kullanabilirsiniz veya sağlanan betikleri kullanabilir [kaldırma betiği](#uninstall-script) her şeyi kaldırmak için bölümü.
+İlgili bölüme gidilerek ayrı ayrı her bir bileşende Visual Studio için Mac kaldırmak için bu kılavuzu kullanabilirsiniz veya sağlanan betikleri kullanabilir [kaldırma betiği](#uninstall-script) her şeyi kaldırmak için bölümü.
 
 Xamarin Studio makinenizde yüklü vardı, ayrıca yönergeleri gerekebilir [kullanıcının Xamarin kaldırma](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) Kılavuzu, aşağıdaki adımları yanı sıra.
+
+> [!NOTE]
+> Bu bilgiler yalnızca Visual Studio 2019 veya 2017 için Mac makinenizde kaldırır. Visual Studio Code kaldırmak için bkz: [bu sorunu](https://github.com/Microsoft/vscode/issues/52151) Ayrıntılar için.
 
 ## <a name="uninstall-script"></a>Betik kaldırma
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Çeşitli Xamarin dosya ve klasörleri içeren aşağıdaki dizine kaldırmak isteyebilirsiniz. Bunu yapmadan önce bu dizin imzalama anahtarı Android içerdiğini farkında olmalıdır. Daha fazla bilgi için bölümüne başvurun  **[kaldırma Android SDK ve Java SDK'sı](#uninstall-android-sdk-and-java-sdk)**:
+Çeşitli Xamarin dosya ve klasörleri içeren aşağıdaki dizine kaldırmak isteyebilirsiniz. Bunu yapmadan önce bu dizin imzalama anahtarı Android içerdiğini farkında olmalıdır. Daha fazla bilgi için bölümüne başvurun  **[kaldırma Android SDK ve Java SDK'sı](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

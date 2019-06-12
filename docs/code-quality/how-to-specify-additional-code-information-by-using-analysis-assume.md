@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260862"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835902"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Nasıl yapılır: __Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme
+
 Analiz işlemine yardımcı olmak ve Uyarıları azaltmak C/C++ kodu için kod analizi aracı için ipuçları sağlar. Ek bilgi sağlamak için aşağıdaki işlevi kullanın:
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -herhangi bir ifade doğru olarak değerlendirilebilmesi için kabul edilir.
+`expr` -herhangi bir ifade doğru olarak değerlendirilebilmesi için kabul edilir.
 
- Kod Analizi aracı ifade tarafından temsil edilen koşul true işlevi burada görünür ve ifade, örneğin, bir değişkene atama ile değiştirilinceye kadar doğrudur noktada olduğunu varsayar.
+Kod Analizi aracı ifade tarafından temsil edilen koşul true işlevi burada görünür ve ifade, örneğin, bir değişkene atama ile değiştirilinceye kadar doğrudur noktada olduğunu varsayar.
 
 > [!NOTE]
 > `_Analysis_assume` kod iyileştirme etkilemez. Kod Analizi aracı dışında `_Analysis_assume` bir İşlemsiz tanımlanır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod `_Analysis_assume` Kod Analizi uyarısı düzeltmek için [C6388](../code-quality/c6388.md):
 
-```
+Aşağıdaki kod `_Analysis_assume` Kod Analizi uyarısı düzeltmek için [C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -55,5 +57,6 @@ void test( )
 }
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [__assume](/cpp/intrinsics/assume)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [__assume](/cpp/intrinsics/assume)

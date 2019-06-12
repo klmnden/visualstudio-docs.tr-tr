@@ -1,5 +1,5 @@
 ---
-title: .NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
+title: .NET Framework 4 ve 4.5 Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme geçişi
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 03424ecb477a32ecff31a83d341a6eef178a31e0
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446939"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836073"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içerip içermediğini **Şerit (Görsel Tasarımcı)** proje öğesi, hedef Framework'ü değiştirilirse proje kodunuzu aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.
