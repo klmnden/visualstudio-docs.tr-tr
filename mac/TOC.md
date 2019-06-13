@@ -71,7 +71,8 @@
 ## [Kullanılabilir İş Yükleri](workloads.md)
 ## ASP.NET Core
 ### [.NET Core Desteği](net-core-support.md)
-### [İlk ASP.NET Core Uygulamanızı Oluşturma](asp-net-core.md)
+### [ASP.NET Core Kullanmaya Başlama](asp-net-core.md)
+### [Mac için Visual Studio’da ASP.NET Core uygulamaları oluşturma](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript ve TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Unity Oyun Geliştirme
 ### [Unity Oyun Geliştirme](unity-tools.md)
 ### [Kurulum](setup-vsmac-tools-unity.md)
+### [Unity Kullanmaya Başlama](unity-walkthrough.md)
 ### [Unity Araçlarını Kullanma](using-vsmac-tools-unity.md)
 ### [Unity’de .NET 4.x kullanma](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Değişiklik Günlüğü](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
@@ -95,3 +97,6 @@
 ## [Sorun Bildirin](report-a-problem.md)
 ## [Sorun giderme: Neden tüm şablonları göremiyorum?](troubleshooting-no-templates.md)
 ## [Sorun giderme: Güncelleştirici, bilgileri alırken hatalarla karşılaşıyor](updater-troubleshooting.md)
+
+# [Sürüm Notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Önizleme Sürüm Notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)

@@ -1,755 +1,830 @@
 - name: Kod analizi belgeleri
   href: index.md
-- name: Genel Bakış
-  expanded: true
+- name: Yönetilen kod için kod analizi
   items:
-    - name: Yönetilen kod için kod analizi
+    - name: Genel Bakış
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn çözümleyicileri
-      href: roslyn-analyzers-overview.md
-    - name: C/C++ için kod analizi
-      href: code-analysis-for-c-cpp-overview.md
-    - name: Kod ölçümleri ile kod bakım durumunu ölçme
-      href: code-metrics-values.md
-- name: Hızlı Başlangıçlar
-  items:
-    - name: 'Hızlı Başlangıç: C/C++ için kod analizi'
-      href: quick-start-code-analysis-for-c-cpp.md
-- name: Öğreticiler
-  items:
-    - name: Kod hataları için yönetilen kodu analiz etme
-      href: walkthrough-analyzing-managed-code-for-code-defects.md
-    - name: C/C++ kodunda hata olup olmadığını analiz etme
+    - name: Roslyn çözümleyicileri (kaynak analizi)
       items:
-        - name: C/C++ kodunda hata olup olmadığını analiz etme
-          href: walkthrough-analyzing-c-cpp-code-for-defects.md
-        - name: Gösterim örneği
-          href: demo-sample.md
-- name: Nasıl yapılır kılavuzları
-  items:
-    - name: Yönetilen kod için kod analizi
-      items:
-        - name: FxCop çözümleyicileri
-          items:
-            - name: SSS
-              href: fxcop-analyzers-faq.md
-            - name: Yükleme
-              href: install-fxcop-analyzers.md
-            - name: Yapılandırma
-              items:
-                - name: Yapılandırma
-                  href: configure-fxcop-analyzers.md
-                - name: Yapılandırma seçenekleri
-                  href: fxcop-analyzer-options.md
-            - name: Statik kod analizinden geçiş
-              href: fxcop-analyzers.yml
-            - name: Taşınan kurallar
-              href: fxcop-rule-port-status.md
-        - name: Çözümleyiciler hakkında SSS
-          href: analyzers-faq.md
-        - name: Roslyn çözümleyicilerini yükleme
+        - name: Genel Bakış
+          displayName: 'roslyn analyzers, source analysis'
+          href: roslyn-analyzers-overview.md
+        - name: Yükleme
           href: install-roslyn-analyzers.md
-        - name: Roslyn çözümleyicilerini kullanma ve yapılandırma
+        - name: Yapılandırma
           href: use-roslyn-analyzers.md
-        - name: Otomatik kod analizini etkinleştirme
-          href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
         - name: Tam çözüm analizini etkinleştirme
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
-        - name: Otomatik özelliği askıya alma
-          href: automatic-feature-suspension.md
+        - name: SSS
+          href: analyzers-faq.md
+    - name: İkili çözümleyicileri (statik kod analizi)
+      items:
+        - name: Genel Bakış
+          displayName: 'static code analysis, binary analysis'
+          href: walkthrough-analyzing-managed-code-for-code-defects.md
+        - name: Geçiş
+          href: fxcop-analyzers.yml
         - name: Kod analizini el ile çalıştırma
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Uyarıları gizleme
+        - name: Yapılandırma
+          items:
+            - name: İkili çözümleyicileri için kod analizini yapılandırma
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: Otomatik kod analizini etkinleştirme
+              href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
+            - name: Kod analizi sözlüğünü özelleştirme
+              href: how-to-customize-the-code-analysis-dictionary.md
+        - name: Gizleme
           items:
             - name: Uyarıları gizleme
               href: in-source-suppression-overview.md
             - name: Üretilen kod için kod analizi uyarılarını gizleme
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Kod analizi sözlüğünü özelleştirme
-          href: how-to-customize-the-code-analysis-dictionary.md
-        - name: Anonim metotlar ve kod çözümleme
-          href: anonymous-methods-and-code-analysis.md
-        - name: Yönetilen kod hatası için iş öğesi oluşturma
-          href: how-to-create-a-work-item-for-a-managed-code-defect.md
-    - name: C/C++ için kod analizi
-      items:
-        - name: C++ Temel Yönergeleri denetleyicilerini kullanma
-          href: using-the-cpp-core-guidelines-checkers.md
-        - name: Kod Analizi Özelliklerini Ayarlama
-          href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-        - name: Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
+        - name: Kod analizi uygulama hataları
           items:
-            - name: Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
-              href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
-            - name: SAL’ı Anlama
-              href: understanding-sal.md
-            - name: İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
-              href: annotating-function-parameters-and-return-values.md
-            - name: İşlev Davranışını Yorumlama
-              href: annotating-function-behavior.md
-            - name: Yapıları ve Sınıfları Yorumlama
-              href: annotating-structs-and-classes.md
-            - name: Kilitlenme Davranışını Yorumlama
-              href: annotating-locking-behavior.md
-            - name: Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme
-              href: specifying-when-and-where-an-annotation-applies.md
-            - name: İç İşlevler
-              href: intrinsic-functions.md
-            - name: En İyi Yöntemler ve Örnekler (SAL)
-              href: best-practices-and-examples-sal.md
-        - name: __Analysis_assume Kullanarak Ek Kod Bilgileri Belirtme
-          href: how-to-specify-additional-code-information-by-using-analysis-assume.md
+            - name: Kod analizi ilke hataları
+              href: code-analysis-policy-errors.md
+            - name: Genel Bakış
+              href: code-analysis-application-errors.md
+            - name: CA0001
+              href: ca0001.md
+            - name: CA0051
+              href: ca0051.md
+            - name: CA0052
+              href: ca0052.md
+            - name: CA0053
+              href: ca0053.md
+            - name: CA0054
+              href: ca0054.md
+            - name: CA0055
+              href: ca0055.md
+            - name: CA0056
+              href: ca0056.md
+            - name: CA0057
+              href: ca0057.md
+            - name: CA0058
+              href: ca0058.md
+            - name: CA0059
+              href: ca0059.md
+            - name: CA0060
+              href: ca0060.md
+            - name: CA0061
+              href: ca0061.md
+            - name: CA0062
+              href: ca0062.md
+            - name: CA0063
+              href: ca0063.md
+            - name: CA0064
+              href: ca0064.md
+            - name: A0065
+              href: ca0065.md
+            - name: CA0066
+              href: ca0066.md
+            - name: CA0067
+              href: ca0067.md
+            - name: CA0068
+              href: ca0068.md
+            - name: CA0069
+              href: ca0069.md
+            - name: CA0070
+              href: ca0070.md
+            - name: CA0501
+              href: ca0501.md
+            - name: CA0502
+              href: ca0502.md
+            - name: CA0503
+              href: ca0503.md
+            - name: CA0504
+              href: ca0504.md
+            - name: CA0505
+              href: ca0505.md
+            - name: FxCopCmd hataları
+              href: fxcopcmd-errors.md
+    - name: FxCop çözümleyicileri
+      items:
+        - name: Genel Bakış
+          displayName: fxcop analyzers
+          href: fxcop-analyzers.yml
+        - name: Yükleme
+          href: install-fxcop-analyzers.md
+        - name: Yapılandırma
+          items:
+            - name: Genel Bakış
+              href: configure-fxcop-analyzers.md
+            - name: EditorConfig seçenekleri
+              href: fxcop-analyzer-options.md
+        - name: SSS
+          href: fxcop-analyzers-faq.md
+    - name: Statik analizden FxCop çözümleyicilerine geçiş
+      items:
+        - name: Genel Bakış
+          href: fxcop-analyzers.yml
+        - name: Taşınan kurallar
+          href: fxcop-rule-port-status.md
     - name: Kural kümeleri
       items:
-        - name: Kural kümeleri
+        - name: Genel Bakış
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Çözümleyici paketleri için kural kümeleri
           href: analyzer-rule-sets.md
-        - name: Statik kod analizi için kural kümelerini yapılandırma
+        - name: Kural kümelerini yapılandırma
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Bir ASP.NET web uygulaması için kod analizini yapılandırma
           href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: C++ kodu için kural kümeleri
-          href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Özel kural kümesi oluşturma
           href: how-to-create-a-custom-rule-set.md
         - name: Kural kümesi düzenleyicisini kullanma
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: İade ilkeleri
       items:
-        - name: İade ilkeleri
+        - name: İade ilkeleri oluşturma veya güncelleştirme
           href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Yönetilen Kod için Özel Kod Analizi İade İlkelerini Uygulama
+        - name: Kod analizi iade ilkeleri uygulama
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Bakımı Yapılabilir Kodu Zorlama
+        - name: Bakımı yapılabilir kodu zorlama
           href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Takım İade İlkesiyle Proje Kural Kümelerini Eşitleme
+        - name: İade ilkesiyle proje kural kümelerini eşitleme
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: Sürüm Uyumluluğu
+        - name: Sürüm uyumluluğu
           href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Kod ölçümleri
       items:
-        - name: Kod Ölçüm Verileri Üretme
+        - name: Genel Bakış
+          displayName: code metrics
+          href: code-metrics-values.md
+        - name: Kod ölçümü verileri üretme
           href: how-to-generate-code-metrics-data.md
-        - name: Kod Ölçüm Verileri ile Çalışma
+        - name: Kod ölçümü verileri ile çalışma
           href: working-with-code-metrics-data.md
-- name: Başvuru
-  items:
-    - name: Kural kümeleri
+    - name: Başvuru
       items:
         - name: Kural kümeleri
-          href: rule-set-reference.md
-        - name: Tüm Kurallar kural kümesi
-          href: all-rules-rule-set.md
-        - name: Yönetilen kod için Temel Doğruluk Kuralları kural kümesi
-          href: basic-correctness-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
-          href: basic-design-guideline-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
-          href: extended-correctness-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
-          href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Genelleştirme Kuralları kural kümesi
-          href: globalization-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Yönetilen Minimum Kurallar kural kümesi
-          href: managed-minimum-rules-rule-set-for-managed-code.md
-        - name: Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
-          href: managed-recommended-rules-rule-set-for-managed-code.md
-        - name: Karışık Minimum Kurallar kural kümesi
-          href: mixed-minimum-rules-rule-set.md
-        - name: Karışık Önerilen Kurallar kural kümesi
-          href: mixed-recommended-rules-rule-set.md
-        - name: Yerel Minimum Kurallar kural kümesi
-          href: native-minimum-rules-rule-set.md
-        - name: Yerel Önerilen Kurallar kural kümesi
-          href: native-recommended-rules-rule-set.md
-        - name: Yönetilen kod için Güvenlik Kuralları kural kümesi
-          href: security-rules-rule-set-for-managed-code.md
-    - name: Yönetilen kod için kod çözümleme uyarıları
-      items:
-        - name: Yönetilen kod için kod çözümleme uyarıları
-          href: code-analysis-for-managed-code-warnings.md
-        - name: CheckId Tarafından Yönetilen Kod için Kod Analizi Uyarıları
-          href: code-analysis-warnings-for-managed-code-by-checkid.md
-        - name: Şifreleme uyarıları
           items:
+            - name: Genel Bakış
+              href: rule-set-reference.md
+            - name: Tüm Kurallar kural kümesi
+              href: all-rules-rule-set.md
+            - name: Yönetilen kod için Temel Doğruluk Kuralları kural kümesi
+              href: basic-correctness-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
+              href: basic-design-guideline-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
+              href: extended-correctness-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
+              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Genelleştirme Kuralları kural kümesi
+              href: globalization-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Yönetilen Minimum Kurallar kural kümesi
+              href: managed-minimum-rules-rule-set-for-managed-code.md
+            - name: Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
+              href: managed-recommended-rules-rule-set-for-managed-code.md
+            - name: Karışık Minimum Kurallar kural kümesi
+              href: mixed-minimum-rules-rule-set.md
+            - name: Karışık Önerilen Kurallar kural kümesi
+              href: mixed-recommended-rules-rule-set.md
+            - name: Yerel Minimum Kurallar kural kümesi
+              href: native-minimum-rules-rule-set.md
+            - name: Yerel Önerilen Kurallar kural kümesi
+              href: native-recommended-rules-rule-set.md
+            - name: Yönetilen kod için Güvenlik Kuralları kural kümesi
+              href: security-rules-rule-set-for-managed-code.md
+        - name: Yönetilen kod uyarıları
+          items:
+            - name: Genel Bakış
+              href: code-analysis-for-managed-code-warnings.md
+            - name: CheckId uyarıları
+              href: code-analysis-warnings-for-managed-code-by-checkid.md
             - name: Şifreleme uyarıları
-              href: cryptography-warnings.md
-            - name: 'CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın'
-              href: ca5350-do-not-use-weak-cryptographic-algorithms.md
-            - name: 'CA5351: Bozuk Şifreleme Algoritmaları Kullanmayın'
-              href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Tasarım uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: cryptography warnings
+                  href: cryptography-warnings.md
+                - name: 'CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın'
+                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                - name: 'CA5351: Bozuk Şifreleme Algoritmaları Kullanmayın'
+                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: Tasarım uyarıları
-              href: design-warnings.md
-            - name: 'CA1000: Genel türlerde statik üyeler belirtme'
-              href: ca1000-do-not-declare-static-members-on-generic-types.md
-            - name: 'CA1001: Atılabilen alanlara sahip türler atılabilir olmalıdır'
-              href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
-            - name: 'CA1002: Genel listeleri gösterme'
-              href: ca1002-do-not-expose-generic-lists.md
-            - name: 'CA1003: Genel olay işleyicisi örnekleri kullan'
-              href: ca1003-use-generic-event-handler-instances.md
-            - name: 'CA1004: Genel metotlar tür parametresi sağlamalıdır'
-              href: ca1004-generic-methods-should-provide-type-parameter.md
-            - name: 'CA1005: Genel türlerde aşırı parametre kullanmaktan kaçının'
-              href: ca1005-avoid-excessive-parameters-on-generic-types.md
-            - name: 'CA1006: Üye imzalarında genel türleri iç içe kullanma'
-              href: ca1006-do-not-nest-generic-types-in-member-signatures.md
-            - name: 'CA1007: Uygun yerlerde genel türleri kullanın'
-              href: ca1007-use-generics-where-appropriate.md
-            - name: 'CA1008: Sabit listelerinin sıfır değeri olmalıdır'
-              href: ca1008-enums-should-have-zero-value.md
-            - name: 'CA1009: Olay işleyicileri doğru olarak bildirin'
-              href: ca1009-declare-event-handlers-correctly.md
-            - name: 'CA1010: Koleksiyonlar genel arabirimi uygulamalıdır'
-              href: ca1010-collections-should-implement-generic-interface.md
-            - name: 'CA1011: Parametre olarak temel türleri geçmeyi düşünün'
-              href: ca1011-consider-passing-base-types-as-parameters.md
-            - name: 'CA1012: Soyut türlerin oluşturucuları olmamalıdır'
-              href: ca1012-abstract-types-should-not-have-constructors.md
-            - name: 'CA1013: Toplama ve çıkarmayı aşırı yüklediğinizde eşittir işlecini aşırı yükleyin'
-              href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
-            - name: 'CA1014: Derlemeleri CLSCompliantAttribute ile işaretle'
-              href: ca1014-mark-assemblies-with-clscompliantattribute.md
-            - name: 'CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleyin'
-              href: ca1016-mark-assemblies-with-assemblyversionattribute.md
-            - name: 'CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin'
-              href: ca1017-mark-assemblies-with-comvisibleattribute.md
-            - name: 'CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle'
-              href: ca1018-mark-attributes-with-attributeusageattribute.md
-            - name: 'CA1019: Öznitelik bağımsız değişkenleri için erişimciler tanımlayın'
-              href: ca1019-define-accessors-for-attribute-arguments.md
-            - name: 'CA1020: Az tür içeren ad alanlarından kaçının'
-              href: ca1020-avoid-namespaces-with-few-types.md
-            - name: 'CA1021: out parametrelerinden kaçının'
-              href: ca1021-avoid-out-parameters.md
-            - name: 'CA1023: Dizin oluşturucular çok boyutlu olmamalıdır'
-              href: ca1023-indexers-should-not-be-multidimensional.md
-            - name: 'CA1024: Uygun yerlerde özellikleri kullanın'
-              href: ca1024-use-properties-where-appropriate.md
-            - name: 'CA1025: Yinelenen bağımsız değişkenleri params dizisiyle değiştirin'
-              href: ca1025-replace-repetitive-arguments-with-params-array.md
-            - name: 'CA1026: Varsayılan parametreler kullanılmamalıdır'
-              href: ca1026-default-parameters-should-not-be-used.md
-            - name: 'CA1027: Sabit listelerini FlagsAttribute ile işaretleyin'
-              href: ca1027-mark-enums-with-flagsattribute.md
-            - name: 'CA1028: Sabit listesi depolaması Int32 olmalıdır'
-              href: ca1028-enum-storage-should-be-int32.md
-            - name: 'CA1030: Uygun yerlerde olayları kullanın'
-              href: ca1030-use-events-where-appropriate.md
-            - name: 'CA1031: Genel özel durum türlerini yakalamayın'
-              href: ca1031-do-not-catch-general-exception-types.md
-            - name: 'CA1032: Standart özel durum oluşturucularını uygulayın'
-              href: ca1032-implement-standard-exception-constructors.md
-            - name: 'CA1033: Arabirim metotları alt türler tarafından çağrılabilmelidir'
-              href: ca1033-interface-methods-should-be-callable-by-child-types.md
-            - name: 'CA1034: İç içe türler görünür olmamalıdır'
-              href: ca1034-nested-types-should-not-be-visible.md
-            - name: 'CA1035: ICollection uygulamalarının kesin türde üyeleri vardır'
-              href: ca1035-icollection-implementations-have-strongly-typed-members.md
-            - name: 'CA1036: Karşılaştırılabilir türlerde metotları geçersiz kıl'
-              href: ca1036-override-methods-on-comparable-types.md
-            - name: 'CA1038: Numaralandırıcıların kesin türü belirtilmiş olmalıdır'
-              href: ca1038-enumerators-should-be-strongly-typed.md
-            - name: 'CA1039: Listeler kesin türdedir'
-              href: ca1039-lists-are-strongly-typed.md
-            - name: 'CA1040: Boş arabirimlerden kaçının'
-              href: ca1040-avoid-empty-interfaces.md
-            - name: 'CA1041: ObsoleteAttribute iletisi sağla'
-              href: ca1041-provide-obsoleteattribute-message.md
-            - name: 'CA1043: Dizin oluşturucular için tam sayı veya dize bağımsız değişken kullanın'
-              href: ca1043-use-integral-or-string-argument-for-indexers.md
-            - name: 'CA1044: Özellikler salt yazılır olmamalıdır'
-              href: ca1044-properties-should-not-be-write-only.md
-            - name: 'CA1045: Türleri başvuru olarak geçmeyin'
-              href: ca1045-do-not-pass-types-by-reference.md
-            - name: 'CA1046: Eşittir işlecini başvuru türlerinde aşırı yüklemeyin'
-              href: ca1046-do-not-overload-operator-equals-on-reference-types.md
-            - name: 'CA1047: Sealed türlerde protected üyeler bildirmeyin'
-              href: ca1047-do-not-declare-protected-members-in-sealed-types.md
-            - name: 'CA1048: Sealed türlerde virtual üyeler bildirmeyin'
-              href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
-            - name: 'CA1049: Yerel kaynaklara sahip türler atılabilir olmalıdır'
-              href: ca1049-types-that-own-native-resources-should-be-disposable.md
-            - name: 'CA1050: Ad alanlarında türler bildirin'
-              href: ca1050-declare-types-in-namespaces.md
-            - name: 'CA1051: Görünür örnek alanlarını bildirmeyin'
-              href: ca1051-do-not-declare-visible-instance-fields.md
-            - name: 'CA1052: Static tutucu türler sealed olmalıdır'
-              href: ca1052-static-holder-types-should-be-sealed.md
-            - name: 'CA1053: Static tutucu türlerin oluşturucuları olmamalıdır'
-              href: ca1053-static-holder-types-should-not-have-constructors.md
-            - name: 'CA1054: URI parametreleri dize olmamalıdır'
-              href: ca1054-uri-parameters-should-not-be-strings.md
-            - name: 'CA1055: URI dönüş değerleri dize olmamalıdır'
-              href: ca1055-uri-return-values-should-not-be-strings.md
-            - name: 'CA1056: URI özellikleri dize olmamalıdır'
-              href: ca1056-uri-properties-should-not-be-strings.md
-            - name: 'CA1057: String URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır'
-              href: ca1057-string-uri-overloads-call-system-uri-overloads.md
-            - name: 'CA1058: Türler belirli temel türleri aşmamalıdır'
-              href: ca1058-types-should-not-extend-certain-base-types.md
-            - name: 'CA1059: Üyeler belirli somut türleri kullanıma sunmamalıdır'
-              href: ca1059-members-should-not-expose-certain-concrete-types.md
-            - name: 'CA1060: P-Invokes''u NativeMethods sınıfına taşıyın'
-              href: ca1060-move-p-invokes-to-nativemethods-class.md
-            - name: 'CA1061: Temel sınıf metotlarını gizlemeyin'
-              href: ca1061-do-not-hide-base-class-methods.md
-            - name: 'CA1062: Genel metotların bağımsız değişkenlerini doğrulayın'
-              href: ca1062-validate-arguments-of-public-methods.md
-            - name: 'CA1063: IDisposable''ı doğru uygulayın'
-              href: ca1063-implement-idisposable-correctly.md
-            - name: 'CA1064: Özel durumlar genel olmalıdır'
-              href: ca1064-exceptions-should-be-public.md
-            - name: 'CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin'
-              href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
-            - name: 'CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır'
-              href: ca2210-assemblies-should-have-valid-strong-names.md
-        - name: Genelleştirme uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: design warnings
+                  href: design-warnings.md
+                - name: 'CA1000: Genel türlerde statik üyeler belirtme'
+                  href: ca1000-do-not-declare-static-members-on-generic-types.md
+                - name: 'CA1001: Atılabilen alanlara sahip türler atılabilir olmalıdır'
+                  href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
+                - name: 'CA1002: Genel listeleri gösterme'
+                  href: ca1002-do-not-expose-generic-lists.md
+                - name: 'CA1003: Genel olay işleyicisi örnekleri kullan'
+                  href: ca1003-use-generic-event-handler-instances.md
+                - name: 'CA1004: Genel metotlar tür parametresi sağlamalıdır'
+                  href: ca1004-generic-methods-should-provide-type-parameter.md
+                - name: 'CA1005: Genel türlerde aşırı parametre kullanmaktan kaçının'
+                  href: ca1005-avoid-excessive-parameters-on-generic-types.md
+                - name: 'CA1006: Üye imzalarında genel türleri iç içe kullanma'
+                  href: ca1006-do-not-nest-generic-types-in-member-signatures.md
+                - name: 'CA1007: Uygun yerlerde genel türleri kullanın'
+                  href: ca1007-use-generics-where-appropriate.md
+                - name: 'CA1008: Sabit listelerinin sıfır değeri olmalıdır'
+                  href: ca1008-enums-should-have-zero-value.md
+                - name: 'CA1009: Olay işleyicileri doğru olarak bildirin'
+                  href: ca1009-declare-event-handlers-correctly.md
+                - name: 'CA1010: Koleksiyonlar genel arabirimi uygulamalıdır'
+                  href: ca1010-collections-should-implement-generic-interface.md
+                - name: 'CA1011: Parametre olarak temel türleri geçmeyi düşünün'
+                  href: ca1011-consider-passing-base-types-as-parameters.md
+                - name: 'CA1012: Soyut türlerin oluşturucuları olmamalıdır'
+                  href: ca1012-abstract-types-should-not-have-constructors.md
+                - name: 'CA1013: Toplama ve çıkarmayı aşırı yüklediğinizde eşittir işlecini aşırı yükleyin'
+                  href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
+                - name: 'CA1014: Derlemeleri CLSCompliantAttribute ile işaretle'
+                  href: ca1014-mark-assemblies-with-clscompliantattribute.md
+                - name: 'CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleyin'
+                  href: ca1016-mark-assemblies-with-assemblyversionattribute.md
+                - name: 'CA1017: Derlemeleri ComVisibleAttribute ile işaretleyin'
+                  href: ca1017-mark-assemblies-with-comvisibleattribute.md
+                - name: 'CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle'
+                  href: ca1018-mark-attributes-with-attributeusageattribute.md
+                - name: 'CA1019: Öznitelik bağımsız değişkenleri için erişimciler tanımlayın'
+                  href: ca1019-define-accessors-for-attribute-arguments.md
+                - name: 'CA1020: Az tür içeren ad alanlarından kaçının'
+                  href: ca1020-avoid-namespaces-with-few-types.md
+                - name: 'CA1021: out parametrelerinden kaçının'
+                  href: ca1021-avoid-out-parameters.md
+                - name: 'CA1023: Dizin oluşturucular çok boyutlu olmamalıdır'
+                  href: ca1023-indexers-should-not-be-multidimensional.md
+                - name: 'CA1024: Uygun yerlerde özellikleri kullanın'
+                  href: ca1024-use-properties-where-appropriate.md
+                - name: 'CA1025: Yinelenen bağımsız değişkenleri params dizisiyle değiştirin'
+                  href: ca1025-replace-repetitive-arguments-with-params-array.md
+                - name: 'CA1026: Varsayılan parametreler kullanılmamalıdır'
+                  href: ca1026-default-parameters-should-not-be-used.md
+                - name: 'CA1027: Sabit listelerini FlagsAttribute ile işaretleyin'
+                  href: ca1027-mark-enums-with-flagsattribute.md
+                - name: 'CA1028: Sabit listesi depolaması Int32 olmalıdır'
+                  href: ca1028-enum-storage-should-be-int32.md
+                - name: 'CA1030: Uygun yerlerde olayları kullanın'
+                  href: ca1030-use-events-where-appropriate.md
+                - name: 'CA1031: Genel özel durum türlerini yakalamayın'
+                  href: ca1031-do-not-catch-general-exception-types.md
+                - name: 'CA1032: Standart özel durum oluşturucularını uygulayın'
+                  href: ca1032-implement-standard-exception-constructors.md
+                - name: 'CA1033: Arabirim metotları alt türler tarafından çağrılabilmelidir'
+                  href: ca1033-interface-methods-should-be-callable-by-child-types.md
+                - name: 'CA1034: İç içe türler görünür olmamalıdır'
+                  href: ca1034-nested-types-should-not-be-visible.md
+                - name: 'CA1035: ICollection uygulamalarının kesin türde üyeleri vardır'
+                  href: ca1035-icollection-implementations-have-strongly-typed-members.md
+                - name: 'CA1036: Karşılaştırılabilir türlerde metotları geçersiz kıl'
+                  href: ca1036-override-methods-on-comparable-types.md
+                - name: 'CA1038: Numaralandırıcıların kesin türü belirtilmiş olmalıdır'
+                  href: ca1038-enumerators-should-be-strongly-typed.md
+                - name: 'CA1039: Listeler kesin türdedir'
+                  href: ca1039-lists-are-strongly-typed.md
+                - name: 'CA1040: Boş arabirimlerden kaçının'
+                  href: ca1040-avoid-empty-interfaces.md
+                - name: 'CA1041: ObsoleteAttribute iletisi sağla'
+                  href: ca1041-provide-obsoleteattribute-message.md
+                - name: 'CA1043: Dizin oluşturucular için tam sayı veya dize bağımsız değişken kullanın'
+                  href: ca1043-use-integral-or-string-argument-for-indexers.md
+                - name: 'CA1044: Özellikler salt yazılır olmamalıdır'
+                  href: ca1044-properties-should-not-be-write-only.md
+                - name: 'CA1045: Türleri başvuru olarak geçmeyin'
+                  href: ca1045-do-not-pass-types-by-reference.md
+                - name: 'CA1046: Eşittir işlecini başvuru türlerinde aşırı yüklemeyin'
+                  href: ca1046-do-not-overload-operator-equals-on-reference-types.md
+                - name: 'CA1047: Sealed türlerde protected üyeler bildirmeyin'
+                  href: ca1047-do-not-declare-protected-members-in-sealed-types.md
+                - name: 'CA1048: Sealed türlerde virtual üyeler bildirmeyin'
+                  href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
+                - name: 'CA1049: Yerel kaynaklara sahip türler atılabilir olmalıdır'
+                  href: ca1049-types-that-own-native-resources-should-be-disposable.md
+                - name: 'CA1050: Ad alanlarında türler bildirin'
+                  href: ca1050-declare-types-in-namespaces.md
+                - name: 'CA1051: Görünür örnek alanlarını bildirmeyin'
+                  href: ca1051-do-not-declare-visible-instance-fields.md
+                - name: 'CA1052: Static tutucu türler sealed olmalıdır'
+                  href: ca1052-static-holder-types-should-be-sealed.md
+                - name: 'CA1053: Static tutucu türlerin oluşturucuları olmamalıdır'
+                  href: ca1053-static-holder-types-should-not-have-constructors.md
+                - name: 'CA1054: URI parametreleri dize olmamalıdır'
+                  href: ca1054-uri-parameters-should-not-be-strings.md
+                - name: 'CA1055: URI dönüş değerleri dize olmamalıdır'
+                  href: ca1055-uri-return-values-should-not-be-strings.md
+                - name: 'CA1056: URI özellikleri dize olmamalıdır'
+                  href: ca1056-uri-properties-should-not-be-strings.md
+                - name: 'CA1057: String URI aşırı yüklemeleri System.Uri aşırı yüklemelerini çağırır'
+                  href: ca1057-string-uri-overloads-call-system-uri-overloads.md
+                - name: 'CA1058: Türler belirli temel türleri aşmamalıdır'
+                  href: ca1058-types-should-not-extend-certain-base-types.md
+                - name: 'CA1059: Üyeler belirli somut türleri kullanıma sunmamalıdır'
+                  href: ca1059-members-should-not-expose-certain-concrete-types.md
+                - name: 'CA1060: P-Invokes''u NativeMethods sınıfına taşıyın'
+                  href: ca1060-move-p-invokes-to-nativemethods-class.md
+                - name: 'CA1061: Temel sınıf metotlarını gizlemeyin'
+                  href: ca1061-do-not-hide-base-class-methods.md
+                - name: 'CA1062: Genel metotların bağımsız değişkenlerini doğrulayın'
+                  href: ca1062-validate-arguments-of-public-methods.md
+                - name: 'CA1063: IDisposable''ı doğru uygulayın'
+                  href: ca1063-implement-idisposable-correctly.md
+                - name: 'CA1064: Özel durumlar genel olmalıdır'
+                  href: ca1064-exceptions-should-be-public.md
+                - name: 'CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin'
+                  href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır'
+                  href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: Genelleştirme uyarıları
-              href: globalization-warnings.md
-            - name: 'CA1300: MessageBoxOptions belirt'
-              href: ca1300-specify-messageboxoptions.md
-            - name: 'CA1301: Yinelenen hızlandırıcılardan kaçının'
-              href: ca1301-avoid-duplicate-accelerators.md
-            - name: 'CA1302: Yerel özel dizeleri doğrudan programın içine gömmeyin'
-              href: ca1302-do-not-hardcode-locale-specific-strings.md
-            - name: 'CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin'
-              href: ca1303-do-not-pass-literals-as-localized-parameters.md
-            - name: 'CA1304: CultureInfo belirt'
-              href: ca1304-specify-cultureinfo.md
-            - name: 'CA1305: IFormatProvider belirt'
-              href: ca1305-specify-iformatprovider.md
-            - name: 'CA1306: Veri türleri için yereli ayarlayın'
-              href: ca1306-set-locale-for-data-types.md
-            - name: 'CA1307: StringComparison belirt'
-              href: ca1307-specify-stringcomparison.md
-            - name: 'CA1308: Dizeleri büyük harfe normalleştirin'
-              href: ca1308-normalize-strings-to-uppercase.md
-            - name: 'CA1309: Sıralı StringComparison kullanın'
-              href: ca1309-use-ordinal-stringcomparison.md
-            - name: 'CA2101: P-Invoke dize bağımsız değişkenleri için sıralama belirtin'
-              href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-        - name: Birlikte çalışabilirlik uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: globalization warnings
+                  href: globalization-warnings.md
+                - name: 'CA1300: MessageBoxOptions belirt'
+                  href: ca1300-specify-messageboxoptions.md
+                - name: 'CA1301: Yinelenen hızlandırıcılardan kaçının'
+                  href: ca1301-avoid-duplicate-accelerators.md
+                - name: 'CA1302: Yerel özel dizeleri doğrudan programın içine gömmeyin'
+                  href: ca1302-do-not-hardcode-locale-specific-strings.md
+                - name: 'CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin'
+                  href: ca1303-do-not-pass-literals-as-localized-parameters.md
+                - name: 'CA1304: CultureInfo belirt'
+                  href: ca1304-specify-cultureinfo.md
+                - name: 'CA1305: IFormatProvider belirt'
+                  href: ca1305-specify-iformatprovider.md
+                - name: 'CA1306: Veri türleri için yereli ayarlayın'
+                  href: ca1306-set-locale-for-data-types.md
+                - name: 'CA1307: StringComparison belirt'
+                  href: ca1307-specify-stringcomparison.md
+                - name: 'CA1308: Dizeleri büyük harfe normalleştirin'
+                  href: ca1308-normalize-strings-to-uppercase.md
+                - name: 'CA1309: Sıralı StringComparison kullanın'
+                  href: ca1309-use-ordinal-stringcomparison.md
+                - name: 'CA2101: P-Invoke dize bağımsız değişkenleri için sıralama belirtin'
+                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: Birlikte çalışabilirlik uyarıları
-              href: interoperability-warnings.md
-            - name: 'CA1400: P-Invoke giriş noktaları bulunmalıdır'
-              href: ca1400-p-invoke-entry-points-should-exist.md
-            - name: 'CA1401: P-Invoke''lar görünür olmamalıdır'
-              href: ca1401-p-invokes-should-not-be-visible.md
-            - name: 'CA1402: COM görünebilir arabirimler içinde aşırı yüklemelerden kaçının'
-              href: ca1402-avoid-overloads-in-com-visible-interfaces.md
-            - name: 'CA1403: Otomatik yerleşim türleri COM görünebilir olmamalıdır'
-              href: ca1403-auto-layout-types-should-not-be-com-visible.md
-            - name: 'CA1404: P-Invoke''un ardından hemen GetLastError çağırın'
-              href: ca1404-call-getlasterror-immediately-after-p-invoke.md
-            - name: 'CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır'
-              href: ca1405-com-visible-type-base-types-should-be-com-visible.md
-            - name: 'CA1406: Visual Basic 6 istemcileri için Int64 bağımsız değişkenlerinden kaçının'
-              href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
-            - name: 'CA1407: COM görünebilir türler içinde statik üyelerden kaçının'
-              href: ca1407-avoid-static-members-in-com-visible-types.md
-            - name: 'CA1408: AutoDual ClassInterFaceType kullanmayın'
-              href: ca1408-do-not-use-autodual-classinterfacetype.md
-            - name: 'CA1409: COM görünebilir türler oluşturulabilir olmalıdır'
-              href: ca1409-com-visible-types-should-be-creatable.md
-            - name: 'CA1410: COM kayıt metotları eşleşmelidir'
-              href: ca1410-com-registration-methods-should-be-matched.md
-            - name: 'CA1411: COM kayıt metotları görünebilir olmamalıdır'
-              href: ca1411-com-registration-methods-should-not-be-visible.md
-            - name: 'CA1412: ComSource arabirimlerini IDispatch olarak işaretleyin'
-              href: ca1412-mark-comsource-interfaces-as-idispatch.md
-            - name: 'CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının'
-              href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-            - name: 'CA1414: Boole P-Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin'
-              href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-            - name: 'CA1415: P-Invoke''ları doğru bildirin'
-              href: ca1415-declare-p-invokes-correctly.md
-        - name: Bakım uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: interoperability warnings
+                  href: interoperability-warnings.md
+                - name: 'CA1400: P-Invoke giriş noktaları bulunmalıdır'
+                  href: ca1400-p-invoke-entry-points-should-exist.md
+                - name: 'CA1401: P-Invoke''lar görünür olmamalıdır'
+                  href: ca1401-p-invokes-should-not-be-visible.md
+                - name: 'CA1402: COM görünebilir arabirimler içinde aşırı yüklemelerden kaçının'
+                  href: ca1402-avoid-overloads-in-com-visible-interfaces.md
+                - name: 'CA1403: Otomatik yerleşim türleri COM görünebilir olmamalıdır'
+                  href: ca1403-auto-layout-types-should-not-be-com-visible.md
+                - name: 'CA1404: P-Invoke''un ardından hemen GetLastError çağırın'
+                  href: ca1404-call-getlasterror-immediately-after-p-invoke.md
+                - name: 'CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır'
+                  href: ca1405-com-visible-type-base-types-should-be-com-visible.md
+                - name: 'CA1406: Visual Basic 6 istemcileri için Int64 bağımsız değişkenlerinden kaçının'
+                  href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
+                - name: 'CA1407: COM görünebilir türler içinde statik üyelerden kaçının'
+                  href: ca1407-avoid-static-members-in-com-visible-types.md
+                - name: 'CA1408: AutoDual ClassInterFaceType kullanmayın'
+                  href: ca1408-do-not-use-autodual-classinterfacetype.md
+                - name: 'CA1409: COM görünebilir türler oluşturulabilir olmalıdır'
+                  href: ca1409-com-visible-types-should-be-creatable.md
+                - name: 'CA1410: COM kayıt metotları eşleşmelidir'
+                  href: ca1410-com-registration-methods-should-be-matched.md
+                - name: 'CA1411: COM kayıt metotları görünebilir olmamalıdır'
+                  href: ca1411-com-registration-methods-should-not-be-visible.md
+                - name: 'CA1412: ComSource arabirimlerini IDispatch olarak işaretleyin'
+                  href: ca1412-mark-comsource-interfaces-as-idispatch.md
+                - name: 'CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının'
+                  href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
+                - name: 'CA1414: Boole P-Invoke bağımsız değişkenlerini MarshalAs ile işaretleyin'
+                  href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
+                - name: 'CA1415: P-Invoke''ları doğru bildirin'
+                  href: ca1415-declare-p-invokes-correctly.md
             - name: Bakım uyarıları
-              href: maintainability-warnings.md
-            - name: 'CA1500: Değişken adları alan adları ile eşleşmemelidir'
-              href: ca1500-variable-names-should-not-match-field-names.md
-            - name: 'CA1501: Aşırı devralmadan kaçının'
-              href: ca1501-avoid-excessive-inheritance.md
-            - name: 'CA1502: Aşırı karmaşıklıktan kaçının'
-              href: ca1502-avoid-excessive-complexity.md
-            - name: 'CA1504: Yanıltıcı alan adlarını gözden geçirin'
-              href: ca1504-review-misleading-field-names.md
-            - name: 'CA1505: Bakımı yapılamayan kodlardan kaçının'
-              href: ca1505-avoid-unmaintainable-code.md
-            - name: 'CA1506: Aşırı sınıf bağlantısından kaçının'
-              href: ca1506-avoid-excessive-class-coupling.md
-            - name: 'CA1507: Dize yerine nameof kullanma'
-              href: ca1507.md
-        - name: Hareketlilik uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: maintainability warnings
+                  href: maintainability-warnings.md
+                - name: 'CA1500: Değişken adları alan adları ile eşleşmemelidir'
+                  href: ca1500-variable-names-should-not-match-field-names.md
+                - name: 'CA1501: Aşırı devralmadan kaçının'
+                  href: ca1501-avoid-excessive-inheritance.md
+                - name: 'CA1502: Aşırı karmaşıklıktan kaçının'
+                  href: ca1502-avoid-excessive-complexity.md
+                - name: 'CA1504: Yanıltıcı alan adlarını gözden geçirin'
+                  href: ca1504-review-misleading-field-names.md
+                - name: 'CA1505: Bakımı yapılamayan kodlardan kaçının'
+                  href: ca1505-avoid-unmaintainable-code.md
+                - name: 'CA1506: Aşırı sınıf bağlantısından kaçının'
+                  href: ca1506-avoid-excessive-class-coupling.md
+                - name: 'CA1507: Dize yerine nameof kullanma'
+                  href: ca1507.md
             - name: Hareketlilik uyarıları
-              href: mobility-warnings.md
-            - name: 'CA1600: Boş işlem önceliğini kullanmayın'
-              href: ca1600-do-not-use-idle-process-priority.md
-            - name: 'CA1601: Güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın'
-              href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-        - name: Adlandırma uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: mobility warnings
+                  href: mobility-warnings.md
+                - name: 'CA1600: Boş işlem önceliğini kullanmayın'
+                  href: ca1600-do-not-use-idle-process-priority.md
+                - name: 'CA1601: Güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın'
+                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
             - name: Adlandırma uyarıları
-              href: naming-warnings.md
-            - name: 'CA1700: Sabit listesi değerlerini ''Reserved'' olarak adlandırmayın'
-              href: ca1700-do-not-name-enum-values-reserved.md
-            - name: 'CA1701: Kaynak dizesi bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır'
-              href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-            - name: 'CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır'
-              href: ca1702-compound-words-should-be-cased-correctly.md
-            - name: 'CA1703: Kaynak dizeleri doğru yazılmalıdır'
-              href: ca1703-resource-strings-should-be-spelled-correctly.md
-            - name: 'CA1704: Tanımlayıcılar doğru yazılmalıdır'
-              href: ca1704-identifiers-should-be-spelled-correctly.md
-            - name: 'CA1707: Tanımlayıcılar alt çizgi içermemelidir'
-              href: ca1707-identifiers-should-not-contain-underscores.md
-            - name: 'CA1708: Tanımlayıcılar yalnızca büyük küçük harfle birbirinden farklı olmamalıdır'
-              href: ca1708-identifiers-should-differ-by-more-than-case.md
-            - name: 'CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır'
-              href: ca1709-identifiers-should-be-cased-correctly.md
-            - name: 'CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır'
-              href: ca1710-identifiers-should-have-correct-suffix.md
-            - name: 'CA1711: Tanımlayıcılar yanlış sonek içermemelidir'
-              href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-            - name: 'CA1712: Sabit listesi değerlerine tür adını önek olarak eklemeyin'
-              href: ca1712-do-not-prefix-enum-values-with-type-name.md
-            - name: 'CA1713: Olaylar önce ya da sonra önekine sahip olmamalıdır'
-              href: ca1713-events-should-not-have-before-or-after-prefix.md
-            - name: 'CA1714: Bayrak sabit listeleri çoğul adlara sahip olmalıdır'
-              href: ca1714-flags-enums-should-have-plural-names.md
-            - name: 'CA1715: Tanımlayıcılar doğru ön eke sahip olmalıdır'
-              href: ca1715-identifiers-should-have-correct-prefix.md
-            - name: 'CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir'
-              href: ca1716-identifiers-should-not-match-keywords.md
-            - name: 'CA1717: Yalnızca FlagsAttribute sabit listeleri çoğul adlara sahip olmalıdır'
-              href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-            - name: 'CA1719: Parametre adları üye adları ile eşleşmemelidir'
-              href: ca1719-parameter-names-should-not-match-member-names.md
-            - name: 'CA1720: Tanımlayıcılar tür adları içermemelidir'
-              href: ca1720-identifiers-should-not-contain-type-names.md
-            - name: 'CA1721: Özellik adları get metotları ile eşleşmemelidir'
-              href: ca1721-property-names-should-not-match-get-methods.md
-            - name: 'CA1722: Tanımlayıcılar yanlış ön ek içermemelidir'
-              href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-            - name: 'CA1725: Parametre adları temel bildirimle eşleşmemelidir'
-              href: ca1725-parameter-names-should-match-base-declaration.md
-            - name: 'CA1724: Tür adları ad alanları ile eşleşmemelidir'
-              href: ca1724-type-names-should-not-match-namespaces.md
-            - name: 'CA1726: Tercih edilen terimleri kullanın'
-              href: ca1726-use-preferred-terms.md
-        - name: Performans uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: naming warnings
+                  href: naming-warnings.md
+                - name: 'CA1700: Sabit listesi değerlerini ''Reserved'' olarak adlandırmayın'
+                  href: ca1700-do-not-name-enum-values-reserved.md
+                - name: 'CA1701: Kaynak dizesi bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır'
+                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                - name: 'CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır'
+                  href: ca1702-compound-words-should-be-cased-correctly.md
+                - name: 'CA1703: Kaynak dizeleri doğru yazılmalıdır'
+                  href: ca1703-resource-strings-should-be-spelled-correctly.md
+                - name: 'CA1704: Tanımlayıcılar doğru yazılmalıdır'
+                  href: ca1704-identifiers-should-be-spelled-correctly.md
+                - name: 'CA1707: Tanımlayıcılar alt çizgi içermemelidir'
+                  href: ca1707-identifiers-should-not-contain-underscores.md
+                - name: 'CA1708: Tanımlayıcılar yalnızca büyük küçük harfle birbirinden farklı olmamalıdır'
+                  href: ca1708-identifiers-should-differ-by-more-than-case.md
+                - name: 'CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır'
+                  href: ca1709-identifiers-should-be-cased-correctly.md
+                - name: 'CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır'
+                  href: ca1710-identifiers-should-have-correct-suffix.md
+                - name: 'CA1711: Tanımlayıcılar yanlış sonek içermemelidir'
+                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                - name: 'CA1712: Sabit listesi değerlerine tür adını önek olarak eklemeyin'
+                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                - name: 'CA1713: Olaylar önce ya da sonra önekine sahip olmamalıdır'
+                  href: ca1713-events-should-not-have-before-or-after-prefix.md
+                - name: 'CA1714: Bayrak sabit listeleri çoğul adlara sahip olmalıdır'
+                  href: ca1714-flags-enums-should-have-plural-names.md
+                - name: 'CA1715: Tanımlayıcılar doğru ön eke sahip olmalıdır'
+                  href: ca1715-identifiers-should-have-correct-prefix.md
+                - name: 'CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir'
+                  href: ca1716-identifiers-should-not-match-keywords.md
+                - name: 'CA1717: Yalnızca FlagsAttribute sabit listeleri çoğul adlara sahip olmalıdır'
+                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                - name: 'CA1719: Parametre adları üye adları ile eşleşmemelidir'
+                  href: ca1719-parameter-names-should-not-match-member-names.md
+                - name: 'CA1720: Tanımlayıcılar tür adları içermemelidir'
+                  href: ca1720-identifiers-should-not-contain-type-names.md
+                - name: 'CA1721: Özellik adları get metotları ile eşleşmemelidir'
+                  href: ca1721-property-names-should-not-match-get-methods.md
+                - name: 'CA1722: Tanımlayıcılar yanlış ön ek içermemelidir'
+                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                - name: 'CA1725: Parametre adları temel bildirimle eşleşmemelidir'
+                  href: ca1725-parameter-names-should-match-base-declaration.md
+                - name: 'CA1724: Tür adları ad alanları ile eşleşmemelidir'
+                  href: ca1724-type-names-should-not-match-namespaces.md
+                - name: 'CA1726: Tercih edilen terimleri kullanın'
+                  href: ca1726-use-preferred-terms.md
             - name: Performans uyarıları
-              href: performance-warnings.md
-            - name: 'CA1800: Gereksiz tür dönüştürmeler yapmayın'
-              href: ca1800-do-not-cast-unnecessarily.md
-            - name: 'CA1802: Uygun yerlerde sabitleri kullanın'
-              href: ca1802-use-literals-where-appropriate.md
-            - name: 'CA1804: Kullanılmayan yerelleri kaldırın'
-              href: ca1804-remove-unused-locals.md
-            - name: 'CA1809: Aşırı yerellerden kaçının'
-              href: ca1809-avoid-excessive-locals.md
-            - name: 'CA1810: Başvuru türü statik alanları satır içinden başlatın'
-              href: ca1810-initialize-reference-type-static-fields-inline.md
-            - name: 'CA1811: Çağırılmayan özel kodlardan kaçının'
-              href: ca1811-avoid-uncalled-private-code.md
-            - name: 'CA1812: Örneklenmemiş iç sınıflardan kaçının'
-              href: ca1812-avoid-uninstantiated-internal-classes.md
-            - name: 'CA1813: Mühürsüz özniteliklerden kaçının'
-              href: ca1813-avoid-unsealed-attributes.md
-            - name: 'CA1814: Çok boyutlu diziler yerine basit dizileri tercih edin'
-              href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-            - name: 'CA1815: Değer türlerinde eşittir ve işleç eşittiri geçersiz kılın'
-              href: ca1815-override-equals-and-operator-equals-on-value-types.md
-            - name: 'CA1819: Özellikler diziler döndürmemelidir'
-              href: ca1819-properties-should-not-return-arrays.md
-            - name: 'CA1820: Dize uzunluğunu kullanarak boş dizeleri test edin'
-              href: ca1820-test-for-empty-strings-using-string-length.md
-            - name: 'CA1821: Boş sonlandırıcıları kaldırın'
-              href: ca1821-remove-empty-finalizers.md
-            - name: 'CA1822: Üyeleri static olarak işaretleyin'
-              href: ca1822-mark-members-as-static.md
-            - name: 'CA1823: Kullanılmayan özel alanlardan kaçının'
-              href: ca1823-avoid-unused-private-fields.md
-            - name: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin'
-              href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-        - name: Taşınabilirlik uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: performance warnings
+                  href: performance-warnings.md
+                - name: 'CA1800: Gereksiz tür dönüştürmeler yapmayın'
+                  href: ca1800-do-not-cast-unnecessarily.md
+                - name: 'CA1802: Uygun yerlerde sabitleri kullanın'
+                  href: ca1802-use-literals-where-appropriate.md
+                - name: 'CA1804: Kullanılmayan yerelleri kaldırın'
+                  href: ca1804-remove-unused-locals.md
+                - name: 'CA1809: Aşırı yerellerden kaçının'
+                  href: ca1809-avoid-excessive-locals.md
+                - name: 'CA1810: Başvuru türü statik alanları satır içinden başlatın'
+                  href: ca1810-initialize-reference-type-static-fields-inline.md
+                - name: 'CA1811: Çağırılmayan özel kodlardan kaçının'
+                  href: ca1811-avoid-uncalled-private-code.md
+                - name: 'CA1812: Örneklenmemiş iç sınıflardan kaçının'
+                  href: ca1812-avoid-uninstantiated-internal-classes.md
+                - name: 'CA1813: Mühürsüz özniteliklerden kaçının'
+                  href: ca1813-avoid-unsealed-attributes.md
+                - name: 'CA1814: Çok boyutlu diziler yerine basit dizileri tercih edin'
+                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                - name: 'CA1815: Değer türlerinde eşittir ve işleç eşittiri geçersiz kılın'
+                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                - name: 'CA1819: Özellikler diziler döndürmemelidir'
+                  href: ca1819-properties-should-not-return-arrays.md
+                - name: 'CA1820: Dize uzunluğunu kullanarak boş dizeleri test edin'
+                  href: ca1820-test-for-empty-strings-using-string-length.md
+                - name: 'CA1821: Boş sonlandırıcıları kaldırın'
+                  href: ca1821-remove-empty-finalizers.md
+                - name: 'CA1822: Üyeleri static olarak işaretleyin'
+                  href: ca1822-mark-members-as-static.md
+                - name: 'CA1823: Kullanılmayan özel alanlardan kaçının'
+                  href: ca1823-avoid-unused-private-fields.md
+                - name: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin'
+                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
             - name: Taşınabilirlik uyarıları
-              href: portability-warnings.md
-            - name: 'CA1900: Değer tür alanları taşınabilir olmalıdır'
-              href: ca1900-value-type-fields-should-be-portable.md
-            - name: 'CA1901: P-Invoke bildirimleri taşınabilir olmalıdır'
-              href: ca1901-p-invoke-declarations-should-be-portable.md
-            - name: 'CA1903: Yalnızca hedeflenen çerçeveden API kullanın'
-              href: ca1903-use-only-api-from-targeted-framework.md
-        - name: Güvenilirlik uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: portability warnings
+                  href: portability-warnings.md
+                - name: 'CA1900: Değer tür alanları taşınabilir olmalıdır'
+                  href: ca1900-value-type-fields-should-be-portable.md
+                - name: 'CA1901: P-Invoke bildirimleri taşınabilir olmalıdır'
+                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                - name: 'CA1903: Yalnızca hedeflenen çerçeveden API kullanın'
+                  href: ca1903-use-only-api-from-targeted-framework.md
             - name: Güvenilirlik uyarıları
-              href: reliability-warnings.md
-            - name: 'CA2000: Kapsamı kaybetmeden önce nesneleri bırakın'
-              href: ca2000-dispose-objects-before-losing-scope.md
-            - name: 'CA2001: Sorunlu metotları çağırmaktan kaçının'
-              href: ca2001-avoid-calling-problematic-methods.md
-            - name: 'CA2002: Zayıf kimliği olan nesneleri kilitlemeyin'
-              href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-            - name: 'CA2003: Fiberleri iş parçacığı olarak görmeyin'
-              href: ca2003-do-not-treat-fibers-as-threads.md
-            - name: 'CA2004: GC.KeepAlive''a çağrıları kaldırın'
-              href: ca2004-remove-calls-to-gc-keepalive.md
-            - name: 'CA2006: Yerel kaynakları kapsamak için SafeHandle kullanın'
-              href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-            - name: 'CA2007: Doğrudan bir Görevi beklemeyin'
-              href: ca2007-do-not-directly-await-task.md
-        - name: Güvenlik uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  displayName: reliability warnings
+                  href: reliability-warnings.md
+                - name: 'CA2000: Kapsamı kaybetmeden önce nesneleri bırakın'
+                  href: ca2000-dispose-objects-before-losing-scope.md
+                - name: 'CA2001: Sorunlu metotları çağırmaktan kaçının'
+                  href: ca2001-avoid-calling-problematic-methods.md
+                - name: 'CA2002: Zayıf kimliği olan nesneleri kilitlemeyin'
+                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                - name: 'CA2003: Fiberleri iş parçacığı olarak görmeyin'
+                  href: ca2003-do-not-treat-fibers-as-threads.md
+                - name: 'CA2004: GC.KeepAlive''a çağrıları kaldırın'
+                  href: ca2004-remove-calls-to-gc-keepalive.md
+                - name: 'CA2006: Yerel kaynakları kapsamak için SafeHandle kullanın'
+                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                - name: 'CA2007: Doğrudan bir Görevi beklemeyin'
+                  href: ca2007-do-not-directly-await-task.md
             - name: Güvenlik uyarıları
-              href: security-warnings.md
-            - name: 'CA2100: SQL sorgularını güvenlik açıkları için inceleyin'
-              href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-            - name: 'CA2102: CLSCompliant olmayan özel durumları genel işleyiciler içinde yakalayın'
-              href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-            - name: 'CA2103: Kesin temelli güvenliği gözden geçirin'
-              href: ca2103-review-imperative-security.md
-            - name: 'CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin'
-              href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-            - name: 'CA2105: Dizi alanları salt okunur olmamalıdır'
-              href: ca2105-array-fields-should-not-be-read-only.md
-            - name: 'CA2106: Onay deyimlerinin güvenliğini sağlayın'
-              href: ca2106-secure-asserts.md
-            - name: 'CA2107: Gözden geçirmeyi reddedin ve yalnızca kullanımına izin verin'
-              href: ca2107-review-deny-and-permit-only-usage.md
-            - name: 'CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin'
-              href: ca2108-review-declarative-security-on-value-types.md
-            - name: 'CA2109: Görünen olay işleyicilerini gözden geçirin'
-              href: ca2109-review-visible-event-handlers.md
-            - name: 'CA2111: İşaretçiler görünür olmamalıdır'
-              href: ca2111-pointers-should-not-be-visible.md
-            - name: 'CA2112: Güvenli türler alanları açığa çıkarmamalıdır'
-              href: ca2112-secured-types-should-not-expose-fields.md
-            - name: 'CA2114: Metot güvenliği türün bir üst kümesi olmalıdır'
-              href: ca2114-method-security-should-be-a-superset-of-type.md
-            - name: 'CA2115: Yerel kaynaklar kullanırken GC.KeepAlive''ı çağırın'
-              href: ca2115-call-gc-keepalive-when-using-native-resources.md
-            - name: 'CA2116: APTCA metotları yalnızca APTCA metotlarını çağırmalıdır'
-              href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-            - name: 'CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir'
-              href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-            - name: 'CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin'
-              href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-            - name: 'CA2119: Özel arabirimleri karşılayan metotları mühürleyin'
-              href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-            - name: 'CA2120: Serileştirme oluşturucularının güvenliğini sağlayın'
-              href: ca2120-secure-serialization-constructors.md
-            - name: 'CA2121: Statik oluşturucular özel olmalıdır'
-              href: ca2121-static-constructors-should-be-private.md
-            - name: 'CA2122: Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın'
-              href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-            - name: 'CA2123: Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır'
-              href: ca2123-override-link-demands-should-be-identical-to-base.md
-            - name: 'CA2124: Savunmasız sonunda yan tümcelerini dış deneme içine sarmalayın'
-              href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-            - name: 'CA2126: Tür bağlantı talepleri kalıtım taleplerini gerektirir'
-              href: ca2126-type-link-demands-require-inheritance-demands.md
-            - name: 'CA2130: Güvenlik kritik sabitleri saydam olmalıdır'
-              href: ca2130-security-critical-constants-should-be-transparent.md
-            - name: 'CA2131: Güvenlik kritik türleri tür eşdeğerliğine katılamaz'
-              href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-            - name: 'CA2132: Varsayılan oluşturucular en az taban tür varsayılan oluşturucular kadar kritik olmalıdır'
-              href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-            - name: 'CA2133: Temsilciler tutarlı saydamlığı olan metotlara bağlanmalıdır'
-              href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-            - name: 'CA2134: Metotlar taban metotları geçersiz kılarken tutarlı saydamlığı tutmalıdır'
-              href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-            - name: 'CA2135: Düzey 2 derlemeler LinkDemands içermemelidir'
-              href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-            - name: 'CA2136: Üyeler çakışan saydamlık ek açıklamalarına sahip olmamalıdır'
-              href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-            - name: 'CA2137: Saydam metotlar yalnızca doğrulanabilir IL içermelidir'
-              href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-            - name: 'CA2138: Saydam metotlar SuppressUnmanagedCodeSecurity özniteliğine sahip metotları çağırmamalıdır'
-              href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-            - name: 'CA2139: Saydam metotlar HandleProcessCorruptingExceptions özniteliğini kullanamaz'
-              href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-            - name: 'CA2140: Saydam kod güvenlik kritik nesnelerine başvurmamalıdır'
-              href: ca2140-transparent-code-must-not-reference-security-critical-items.md
-            - name: 'CA2141:Transparent yöntemleri LinkDemands''i karşılamamalıdır'
-              href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-            - name: 'CA2142: Saydam kod LinkDemands ile korunmamalıdır'
-              href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-            - name: 'CA2143: Saydam metotlar güvenlik taleplerini kullanmamalıdır'
-              href: ca2143-transparent-methods-should-not-use-security-demands.md
-            - name: 'CA2144: Saydam kod derlemeleri bayt dizilerinden yüklememelidir'
-              href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-            - name: 'CA2145: Saydam metotlar SuppressUnmanagedCodeSecurityAttribute ile donatılmamalıdır'
-              href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-            - name: 'CA2146: Türler en az kendi taban türleri ve arabirimleri kadar kritik olmalıdır'
-              href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-            - name: 'CA2147: Saydam metotlar güvenlik onay deyimlerini kullanmamalıdır'
-              href: ca2147-transparent-methods-may-not-use-security-asserts.md
-            - name: 'CA2149: Saydam metotlar yerel kod içine çağırmamalıdır'
-              href: ca2149-transparent-methods-must-not-call-into-native-code.md
-            - name: 'CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır'
-              href: ca2151-fields-with-critical-types-should-be-security-critical.md
-            - name: CA5122 P-Invoke bildirimleri güvenli kritik olmamalıdır
-              href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-            - name: 'CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının'
-              href: ca2153-avoid-handling-corrupted-state-exceptions.md
-            - name: 'CA2300: Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın'
-              href: ca2300-do-not-use-insecure-deserializer-binaryformatter.md
-            - name: 'CA2301: İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın'
-              href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
-            - name: 'CA2302: BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun'
-              href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
-            - name: 'CA2305: Güvenli olmayan seri kaldırıcı LosFormatter kullanmayın'
-              href: ca2305-do-not-use-insecure-deserializer-losformatter.md
-            - name: 'CA2310: Güvenli olmayan seri kaldırıcı NetDataContractSerializer kullanmayın'
-              href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
-            - name: 'CA2311: İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın'
-              href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
-            - name: 'CA2312: Seri durumdan çıkarmadan önce NetDataContractSerializer.Binder öğesinin ayarlandığından emin olun'
-              href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
-            - name: 'CA2315: Güvenli olmayan seri kaldırıcı ObjectStateFormatter kullanmayın'
-              href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
-            - name: 'CA2321: SimpleTypeResolver kullanarak JavaScriptSerializer ile seri durumdan çıkarmayın'
-              href: ca2321.md
-            - name: 'CA2322: Seri durumdan çıkarmadan önce SimpleTypeResolver ile JavaScriptSerializer’ın başlatılmadığından emin olun'
-              href: ca2322.md
-            - name: 'CA3001: SQL ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3001-review-code-for-sql-injection-vulnerabilities.md
-            - name: 'CA3002: XSS güvenlik açıkları için inceleme kodu'
-              href: ca3002-review-code-for-xss-vulnerabilities.md
-            - name: 'CA3003: Dosya yolu ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3003-review-code-for-file-path-injection-vulnerabilities.md
-            - name: 'CA3004: Bilgilerin açığa çıkmasıyla ilgili güvenlik açıkları için inceleme kodu'
-              href: ca3004-review-code-for-information-disclosure-vulnerabilities.md
-            - name: 'CA3005: LDAP ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3005-review-code-for-ldap-injection-vulnerabilities.md
-            - name: 'CA3006: İşlem komutu ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3006-review-code-for-process-command-injection-vulnerabilities.md
-            - name: 'CA3007: Açık yeniden yönlendirme güvenlik açıkları için inceleme kodu'
-              href: ca3007-review-code-for-open-redirect-vulnerabilities.md
-            - name: 'CA3008: XPath ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3008-review-code-for-xpath-injection-vulnerabilities.md
-            - name: 'CA3009: XML ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3009-review-code-for-xml-injection-vulnerabilities.md
-            - name: 'CA3010: XAML ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3010-review-code-for-xaml-injection-vulnerabilities.md
-            - name: 'CA3011: DLL ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3011-review-code-for-dll-injection-vulnerabilities.md
-            - name: 'CA3012: Normal ifade ekleme güvenlik açıkları için inceleme kodu'
-              href: ca3012-review-code-for-regex-injection-vulnerabilities.md
-            - name: 'CA3075: Güvensiz DTD İşleme'
-              href: ca3075-insecure-dtd-processing.md
-            - name: 'CA3076: Güvensiz XSLT Betiği Yürütme'
-              href: ca3076-insecure-xslt-script-execution.md
-            - name: 'CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme'
-              href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-            - name: 'CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme'
-              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-        - name: Kullanım uyarıları
-          items:
+              items:
+                - name: Genel Bakış
+                  href: security-warnings.md
+                - name: 'CA2100: SQL sorgularını güvenlik açıkları için inceleyin'
+                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                - name: 'CA2102: CLSCompliant olmayan özel durumları genel işleyiciler içinde yakalayın'
+                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                - name: 'CA2103: Kesin temelli güvenliği gözden geçirin'
+                  href: ca2103-review-imperative-security.md
+                - name: 'CA2104: Salt okunur kesilebilir başvuru türleri bildirmeyin'
+                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                - name: 'CA2105: Dizi alanları salt okunur olmamalıdır'
+                  href: ca2105-array-fields-should-not-be-read-only.md
+                - name: 'CA2106: Onay deyimlerinin güvenliğini sağlayın'
+                  href: ca2106-secure-asserts.md
+                - name: 'CA2107: Gözden geçirmeyi reddedin ve yalnızca kullanımına izin verin'
+                  href: ca2107-review-deny-and-permit-only-usage.md
+                - name: 'CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin'
+                  href: ca2108-review-declarative-security-on-value-types.md
+                - name: 'CA2109: Görünen olay işleyicilerini gözden geçirin'
+                  href: ca2109-review-visible-event-handlers.md
+                - name: 'CA2111: İşaretçiler görünür olmamalıdır'
+                  href: ca2111-pointers-should-not-be-visible.md
+                - name: 'CA2112: Güvenli türler alanları açığa çıkarmamalıdır'
+                  href: ca2112-secured-types-should-not-expose-fields.md
+                - name: 'CA2114: Metot güvenliği türün bir üst kümesi olmalıdır'
+                  href: ca2114-method-security-should-be-a-superset-of-type.md
+                - name: 'CA2115: Yerel kaynaklar kullanırken GC.KeepAlive''ı çağırın'
+                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                - name: 'CA2116: APTCA metotları yalnızca APTCA metotlarını çağırmalıdır'
+                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                - name: 'CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir'
+                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                - name: 'CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin'
+                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                - name: 'CA2119: Özel arabirimleri karşılayan metotları mühürleyin'
+                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                - name: 'CA2120: Serileştirme oluşturucularının güvenliğini sağlayın'
+                  href: ca2120-secure-serialization-constructors.md
+                - name: 'CA2121: Statik oluşturucular özel olmalıdır'
+                  href: ca2121-static-constructors-should-be-private.md
+                - name: 'CA2122: Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın'
+                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                - name: 'CA2123: Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır'
+                  href: ca2123-override-link-demands-should-be-identical-to-base.md
+                - name: 'CA2124: Savunmasız sonunda yan tümcelerini dış deneme içine sarmalayın'
+                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                - name: 'CA2126: Tür bağlantı talepleri kalıtım taleplerini gerektirir'
+                  href: ca2126-type-link-demands-require-inheritance-demands.md
+                - name: 'CA2130: Güvenlik kritik sabitleri saydam olmalıdır'
+                  href: ca2130-security-critical-constants-should-be-transparent.md
+                - name: 'CA2131: Güvenlik kritik türleri tür eşdeğerliğine katılamaz'
+                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                - name: 'CA2132: Varsayılan oluşturucular en az taban tür varsayılan oluşturucular kadar kritik olmalıdır'
+                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                - name: 'CA2133: Temsilciler tutarlı saydamlığı olan metotlara bağlanmalıdır'
+                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                - name: 'CA2134: Metotlar taban metotları geçersiz kılarken tutarlı saydamlığı tutmalıdır'
+                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                - name: 'CA2135: Düzey 2 derlemeler LinkDemands içermemelidir'
+                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                - name: 'CA2136: Üyeler çakışan saydamlık ek açıklamalarına sahip olmamalıdır'
+                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                - name: 'CA2137: Saydam metotlar yalnızca doğrulanabilir IL içermelidir'
+                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                - name: 'CA2138: Saydam metotlar SuppressUnmanagedCodeSecurity özniteliğine sahip metotları çağırmamalıdır'
+                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                - name: 'CA2139: Saydam metotlar HandleProcessCorruptingExceptions özniteliğini kullanamaz'
+                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                - name: 'CA2140: Saydam kod güvenlik kritik nesnelerine başvurmamalıdır'
+                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                - name: 'CA2141:Transparent yöntemleri LinkDemands''i karşılamamalıdır'
+                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                - name: 'CA2142: Saydam kod LinkDemands ile korunmamalıdır'
+                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                - name: 'CA2143: Saydam metotlar güvenlik taleplerini kullanmamalıdır'
+                  href: ca2143-transparent-methods-should-not-use-security-demands.md
+                - name: 'CA2144: Saydam kod derlemeleri bayt dizilerinden yüklememelidir'
+                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                - name: 'CA2145: Saydam metotlar SuppressUnmanagedCodeSecurityAttribute ile donatılmamalıdır'
+                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                - name: 'CA2146: Türler en az kendi taban türleri ve arabirimleri kadar kritik olmalıdır'
+                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                - name: 'CA2147: Saydam metotlar güvenlik onay deyimlerini kullanmamalıdır'
+                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                - name: 'CA2149: Saydam metotlar yerel kod içine çağırmamalıdır'
+                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                - name: 'CA2151: Kritik türler içeren alanlar güvenlik açısından kritik olmalıdır'
+                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                - name: CA5122 P-Invoke bildirimleri güvenli kritik olmamalıdır
+                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                - name: 'CA2153: Bozuk Durum Özel Durumlarını İşlemekten Kaçının'
+                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                - name: 'CA2300: Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın'
+                  href: ca2300-do-not-use-insecure-deserializer-binaryformatter.md
+                - name: 'CA2301: İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın'
+                  href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
+                - name: 'CA2302: BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun'
+                  href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+                - name: 'CA2305: Güvenli olmayan seri kaldırıcı LosFormatter kullanmayın'
+                  href: ca2305-do-not-use-insecure-deserializer-losformatter.md
+                - name: 'CA2310: Güvenli olmayan seri kaldırıcı NetDataContractSerializer kullanmayın'
+                  href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
+                - name: 'CA2311: İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın'
+                  href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
+                - name: 'CA2312: Seri durumdan çıkarmadan önce NetDataContractSerializer.Binder öğesinin ayarlandığından emin olun'
+                  href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
+                - name: 'CA2315: Güvenli olmayan seri kaldırıcı ObjectStateFormatter kullanmayın'
+                  href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
+                - name: 'CA2321: SimpleTypeResolver kullanarak JavaScriptSerializer ile seri durumdan çıkarmayın'
+                  href: ca2321.md
+                - name: 'CA2322: Seri durumdan çıkarmadan önce SimpleTypeResolver ile JavaScriptSerializer’ın başlatılmadığından emin olun'
+                  href: ca2322.md
+                - name: 'CA3001: SQL ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3001-review-code-for-sql-injection-vulnerabilities.md
+                - name: 'CA3002: XSS güvenlik açıkları için inceleme kodu'
+                  href: ca3002-review-code-for-xss-vulnerabilities.md
+                - name: 'CA3003: Dosya yolu ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3003-review-code-for-file-path-injection-vulnerabilities.md
+                - name: 'CA3004: Bilgilerin açığa çıkmasıyla ilgili güvenlik açıkları için inceleme kodu'
+                  href: ca3004-review-code-for-information-disclosure-vulnerabilities.md
+                - name: 'CA3005: LDAP ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3005-review-code-for-ldap-injection-vulnerabilities.md
+                - name: 'CA3006: İşlem komutu ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3006-review-code-for-process-command-injection-vulnerabilities.md
+                - name: 'CA3007: Açık yeniden yönlendirme güvenlik açıkları için inceleme kodu'
+                  href: ca3007-review-code-for-open-redirect-vulnerabilities.md
+                - name: 'CA3008: XPath ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3008-review-code-for-xpath-injection-vulnerabilities.md
+                - name: 'CA3009: XML ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3009-review-code-for-xml-injection-vulnerabilities.md
+                - name: 'CA3010: XAML ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3010-review-code-for-xaml-injection-vulnerabilities.md
+                - name: 'CA3011: DLL ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3011-review-code-for-dll-injection-vulnerabilities.md
+                - name: 'CA3012: Normal ifade ekleme güvenlik açıkları için inceleme kodu'
+                  href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3075: Güvensiz DTD İşleme'
+                  href: ca3075-insecure-dtd-processing.md
+                - name: 'CA3076: Güvensiz XSLT Betiği Yürütme'
+                  href: ca3076-insecure-xslt-script-execution.md
+                - name: 'CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme'
+                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                - name: 'CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme'
+                  href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
             - name: Kullanım uyarıları
-              href: usage-warnings.md
-            - name: 'CA1801: Kullanılmayan parametreleri gözden geçirin'
-              href: ca1801-review-unused-parameters.md
-            - name: 'CA1806: Metot sonuçlarını yoksaymayın'
-              href: ca1806-do-not-ignore-method-results.md
-            - name: 'CA1816: GC.SuppressFinalize''ı doğru çağırın'
-              href: ca1816-call-gc-suppressfinalize-correctly.md
-            - name: 'CA2200: Yığın ayrıntılarını korumak için yeniden fırlatın'
-              href: ca2200-rethrow-to-preserve-stack-details.md
-            - name: 'CA2201: Ayrılmış özel durum türlerini harekete geçirmeyin'
-              href: ca2201-do-not-raise-reserved-exception-types.md
-            - name: 'CA2202: Nesneleri birden çok kez atmayın'
-              href: ca2202-do-not-dispose-objects-multiple-times.md
-            - name: 'CA2204: Harfler doğru yazılmalıdır'
-              href: ca2204-literals-should-be-spelled-correctly.md
-            - name: 'CA2205: Win32 API''sinin yönetilen eşdeğerlerini kullanın'
-              href: ca2205-use-managed-equivalents-of-win32-api.md
-            - name: 'CA2207: Değer türü statik alanları satır içi başlatın'
-              href: ca2207-initialize-value-type-static-fields-inline.md
-            - name: 'CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin'
-              href: ca2208-instantiate-argument-exceptions-correctly.md
-            - name: 'CA2211: Sabit olmayan alanlar görünür olmamalıdır'
-              href: ca2211-non-constant-fields-should-not-be-visible.md
-            - name: 'CA2212: Servis verilen bileşenleri WebMethod ile işaretlemeyin'
-              href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-            - name: 'CA2213: Atılabilen alanlar atılmalıdır'
-              href: ca2213-disposable-fields-should-be-disposed.md
-            - name: 'CA2214: Geçersiz kılınabilir metotları oluşturucular içinde çağırmayın'
-              href: ca2214-do-not-call-overridable-methods-in-constructors.md
-            - name: 'CA2215: Atma metotları taban sınıf atmayı çağırmalıdır'
-              href: ca2215-dispose-methods-should-call-base-class-dispose.md
-            - name: 'CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir'
-              href: ca2216-disposable-types-should-declare-finalizer.md
-            - name: 'CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin'
-              href: ca2217-do-not-mark-enums-with-flagsattribute.md
-            - name: 'CA2218: GetHashCode''u Eşittir''i geçersiz kılarak geçersiz kılın'
-              href: ca2218-override-gethashcode-on-overriding-equals.md
-            - name: 'CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin'
-              href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-            - name: 'CA2220: Sonlandırıcılar taban tür sonlandırıcıları çağırmalıdır'
-              href: ca2220-finalizers-should-call-base-class-finalizer.md
-            - name: 'CA2221: Sonlandırıcılar korunmalıdır'
-              href: ca2221-finalizers-should-be-protected.md
-            - name: 'CA2222: Devralınan üye görünürlüğünü azaltmayın'
-              href: ca2222-do-not-decrease-inherited-member-visibility.md
-            - name: 'CA2223: Üyeler dönüş türünden daha fazla farklı olmalıdır'
-              href: ca2223-members-should-differ-by-more-than-return-type.md
-            - name: 'CA2224: Eşittir işlecini aşırı yüklerken Equals''ı geçersiz kılın'
-              href: ca2224-override-equals-on-overloading-operator-equals.md
-            - name: 'CA2225: İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir'
-              href: ca2225-operator-overloads-have-named-alternates.md
-            - name: 'CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır'
-              href: ca2226-operators-should-have-symmetrical-overloads.md
-            - name: 'CA2227: Koleksiyon özellikleri salt okunur olmalıdır'
-              href: ca2227-collection-properties-should-be-read-only.md
-            - name: 'CA2228: Yayımlanmamış kaynak biçimlerini yollamayın'
-              href: ca2228-do-not-ship-unreleased-resource-formats.md
-            - name: 'CA2229: Serileştirme oluşturucularını uygulayın'
-              href: ca2229-implement-serialization-constructors.md
-            - name: 'CA2230: Değişken bağımsız değişkenler için params kullanın'
-              href: ca2230-use-params-for-variable-arguments.md
-            - name: 'CA2231: Eşittir işlecini ValueType.Equals''ı geçersiz kılarak aşırı yükleyin'
-              href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-            - name: 'CA2232: Windows Forms giriş noktalarını STAThread ile işaretleyin'
-              href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-            - name: 'CA2233: İşleçler taşmamalıdır'
-              href: ca2233-operations-should-not-overflow.md
-            - name: 'CA2234: Dizeler yerine System.Uri nesneleri gönderin'
-              href: ca2234-pass-system-uri-objects-instead-of-strings.md
-            - name: 'CA2235: Tüm serileştirilebilir olmayan alanları işaretleyin'
-              href: ca2235-mark-all-non-serializable-fields.md
-            - name: 'CA2236: ISerializable türler üzerinde taban sınıf metotlarını çağırın'
-              href: ca2236-call-base-class-methods-on-iserializable-types.md
-            - name: 'CA2237: ISerializable türleri SerializableAttribute ile işaretleyin'
-              href: ca2237-mark-iserializable-types-with-serializableattribute.md
-            - name: 'CA2238: Serileştirme metotlarını doğru uygulayın'
-              href: ca2238-implement-serialization-methods-correctly.md
-            - name: 'CA2239: İsteğe bağlı metotlar için serileştirme kaldırma metotları sağlayın'
-              href: ca2239-provide-deserialization-methods-for-optional-fields.md
-            - name: 'CA2240: ISerializable''ı doğru uygulayın'
-              href: ca2240-implement-iserializable-correctly.md
-            - name: 'CA2241: Biçimlendirme metotlarına doğru bağımsız değişkenleri sağlayın'
-              href: ca2241-provide-correct-arguments-to-formatting-methods.md
-            - name: 'CA2242: NaN için doğru test edin'
-              href: ca2242-test-for-nan-correctly.md
-            - name: 'CA2243: Öznitelik dize harfleri doğru çözümlenmelidir'
-              href: ca2243-attribute-string-literals-should-parse-correctly.md
-        - name: Kod Analiz İlkesi Hataları
-          href: code-analysis-policy-errors.md
-    - name: C++ Temel Yönergeleri Denetleyici uyarıları
+              items:
+                - name: Genel Bakış
+                  displayName: usage warnings
+                  href: usage-warnings.md
+                - name: 'CA1801: Kullanılmayan parametreleri gözden geçirin'
+                  href: ca1801-review-unused-parameters.md
+                - name: 'CA1806: Metot sonuçlarını yoksaymayın'
+                  href: ca1806-do-not-ignore-method-results.md
+                - name: 'CA1816: GC.SuppressFinalize''ı doğru çağırın'
+                  href: ca1816-call-gc-suppressfinalize-correctly.md
+                - name: 'CA2200: Yığın ayrıntılarını korumak için yeniden fırlatın'
+                  href: ca2200-rethrow-to-preserve-stack-details.md
+                - name: 'CA2201: Ayrılmış özel durum türlerini harekete geçirmeyin'
+                  href: ca2201-do-not-raise-reserved-exception-types.md
+                - name: 'CA2202: Nesneleri birden çok kez atmayın'
+                  href: ca2202-do-not-dispose-objects-multiple-times.md
+                - name: 'CA2204: Harfler doğru yazılmalıdır'
+                  href: ca2204-literals-should-be-spelled-correctly.md
+                - name: 'CA2205: Win32 API''sinin yönetilen eşdeğerlerini kullanın'
+                  href: ca2205-use-managed-equivalents-of-win32-api.md
+                - name: 'CA2207: Değer türü statik alanları satır içi başlatın'
+                  href: ca2207-initialize-value-type-static-fields-inline.md
+                - name: 'CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin'
+                  href: ca2208-instantiate-argument-exceptions-correctly.md
+                - name: 'CA2211: Sabit olmayan alanlar görünür olmamalıdır'
+                  href: ca2211-non-constant-fields-should-not-be-visible.md
+                - name: 'CA2212: Servis verilen bileşenleri WebMethod ile işaretlemeyin'
+                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                - name: 'CA2213: Atılabilen alanlar atılmalıdır'
+                  href: ca2213-disposable-fields-should-be-disposed.md
+                - name: 'CA2214: Geçersiz kılınabilir metotları oluşturucular içinde çağırmayın'
+                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                - name: 'CA2215: Atma metotları taban sınıf atmayı çağırmalıdır'
+                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                - name: 'CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir'
+                  href: ca2216-disposable-types-should-declare-finalizer.md
+                - name: 'CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin'
+                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                - name: 'CA2218: GetHashCode''u Eşittir''i geçersiz kılarak geçersiz kılın'
+                  href: ca2218-override-gethashcode-on-overriding-equals.md
+                - name: 'CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin'
+                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                - name: 'CA2220: Sonlandırıcılar taban tür sonlandırıcıları çağırmalıdır'
+                  href: ca2220-finalizers-should-call-base-class-finalizer.md
+                - name: 'CA2221: Sonlandırıcılar korunmalıdır'
+                  href: ca2221-finalizers-should-be-protected.md
+                - name: 'CA2222: Devralınan üye görünürlüğünü azaltmayın'
+                  href: ca2222-do-not-decrease-inherited-member-visibility.md
+                - name: 'CA2223: Üyeler dönüş türünden daha fazla farklı olmalıdır'
+                  href: ca2223-members-should-differ-by-more-than-return-type.md
+                - name: 'CA2224: Eşittir işlecini aşırı yüklerken Equals''ı geçersiz kılın'
+                  href: ca2224-override-equals-on-overloading-operator-equals.md
+                - name: 'CA2225: İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir'
+                  href: ca2225-operator-overloads-have-named-alternates.md
+                - name: 'CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır'
+                  href: ca2226-operators-should-have-symmetrical-overloads.md
+                - name: 'CA2227: Koleksiyon özellikleri salt okunur olmalıdır'
+                  href: ca2227-collection-properties-should-be-read-only.md
+                - name: 'CA2228: Yayımlanmamış kaynak biçimlerini yollamayın'
+                  href: ca2228-do-not-ship-unreleased-resource-formats.md
+                - name: 'CA2229: Serileştirme oluşturucularını uygulayın'
+                  href: ca2229-implement-serialization-constructors.md
+                - name: 'CA2230: Değişken bağımsız değişkenler için params kullanın'
+                  href: ca2230-use-params-for-variable-arguments.md
+                - name: 'CA2231: Eşittir işlecini ValueType.Equals''ı geçersiz kılarak aşırı yükleyin'
+                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                - name: 'CA2232: Windows Forms giriş noktalarını STAThread ile işaretleyin'
+                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                - name: 'CA2233: İşleçler taşmamalıdır'
+                  href: ca2233-operations-should-not-overflow.md
+                - name: 'CA2234: Dizeler yerine System.Uri nesneleri gönderin'
+                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                - name: 'CA2235: Tüm serileştirilebilir olmayan alanları işaretleyin'
+                  href: ca2235-mark-all-non-serializable-fields.md
+                - name: 'CA2236: ISerializable türler üzerinde taban sınıf metotlarını çağırın'
+                  href: ca2236-call-base-class-methods-on-iserializable-types.md
+                - name: 'CA2237: ISerializable türleri SerializableAttribute ile işaretleyin'
+                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                - name: 'CA2238: Serileştirme metotlarını doğru uygulayın'
+                  href: ca2238-implement-serialization-methods-correctly.md
+                - name: 'CA2239: İsteğe bağlı metotlar için serileştirme kaldırma metotları sağlayın'
+                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                - name: 'CA2240: ISerializable''ı doğru uygulayın'
+                  href: ca2240-implement-iserializable-correctly.md
+                - name: 'CA2241: Biçimlendirme metotlarına doğru bağımsız değişkenleri sağlayın'
+                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                - name: 'CA2242: NaN için doğru test edin'
+                  href: ca2242-test-for-nan-correctly.md
+                - name: 'CA2243: Öznitelik dize harfleri doğru çözümlenmelidir'
+                  href: ca2243-attribute-string-literals-should-parse-correctly.md
+            - name: Otomatik özelliği askıya alma
+              href: automatic-feature-suspension.md
+- name: C/C++ için kod analizi
+  items:
+    - name: Genel Bakış
+      displayName: C++ code analysis
+      href: code-analysis-for-c-cpp-overview.md
+    - name: Hızlı başlangıç
+      href: quick-start-code-analysis-for-c-cpp.md
+    - name: C/C++ kodunda hata olup olmadığını analiz etme
+      href: walkthrough-analyzing-c-cpp-code-for-defects.md
+    - name: Gösterim örneği
+      href: demo-sample.md
+    - name: C++ Temel Yönergeleri denetleyicilerini kullanma
+      href: using-the-cpp-core-guidelines-checkers.md
+    - name: Kod analizi özelliklerini ayarlama
+      href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+    - name: C++ kodu için kural kümeleri
+      href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Kod hatalarını azaltmak için SAL ek açıklamalarını kullanma
       items:
-        - name: C++ Temel Yönergeleri Denetleyici uyarıları
+        - name: Genel Bakış
+          displayName: SAL annotations
+          href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
+        - name: SAL’ı Anlama
+          href: understanding-sal.md
+        - name: İşlev parametrelerini ve dönüş değerlerini açıklama
+          href: annotating-function-parameters-and-return-values.md
+        - name: İşlev davranışını yorumlama
+          href: annotating-function-behavior.md
+        - name: Yapıları ve sınıfları yorumlama
+          href: annotating-structs-and-classes.md
+        - name: Kilitlenme davranışını yorumlama
+          href: annotating-locking-behavior.md
+        - name: Açıklamanın ne zaman ve nereye uygulanacağını belirtme
+          href: specifying-when-and-where-an-annotation-applies.md
+        - name: İç işlevler
+          href: intrinsic-functions.md
+        - name: En iyi yöntemler ve örnekler (SAL)
+          href: best-practices-and-examples-sal.md
+    - name: _Analysis_assume kullanarak ek kod bilgileri belirtme
+      href: how-to-specify-additional-code-information-by-using-analysis-assume.md
+    - name: C++ Temel Yönergeleri denetleyici uyarıları
+      items:
+        - name: Genel Bakış
+          displayName: C++ core guidelines checker warnings
           href: code-analysis-for-cpp-corecheck.md
         - name: C26400
           href: C26400.md
@@ -905,9 +980,10 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
-    - name: C/C++ İçin Kod Analizi uyarıları
+    - name: C/C++ uyarıları
       items:
-        - name: C/C++ İçin Kod Analizi uyarıları
+        - name: Genel Bakış
+          displayName: C++ warnings
           href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
           href: c1250.md
@@ -1489,61 +1565,3 @@
           href: c28350.md
         - name: C28351
           href: c28351.md
-    - name: Kod Analiz Uygulama Hataları
-      items:
-        - name: Kod Analiz Uygulama Hataları
-          href: code-analysis-application-errors.md
-        - name: CA0001
-          href: ca0001.md
-        - name: CA0051
-          href: ca0051.md
-        - name: CA0052
-          href: ca0052.md
-        - name: CA0053
-          href: ca0053.md
-        - name: CA0054
-          href: ca0054.md
-        - name: CA0055
-          href: ca0055.md
-        - name: CA0056
-          href: ca0056.md
-        - name: CA0057
-          href: ca0057.md
-        - name: CA0058
-          href: ca0058.md
-        - name: CA0059
-          href: ca0059.md
-        - name: CA0060
-          href: ca0060.md
-        - name: CA0061
-          href: ca0061.md
-        - name: CA0062
-          href: ca0062.md
-        - name: CA0063
-          href: ca0063.md
-        - name: CA0064
-          href: ca0064.md
-        - name: CA0065
-          href: ca0065.md
-        - name: CA0066
-          href: ca0066.md
-        - name: CA0067
-          href: ca0067.md
-        - name: CA0068
-          href: ca0068.md
-        - name: CA0069
-          href: ca0069.md
-        - name: CA0070
-          href: ca0070.md
-        - name: CA0501
-          href: ca0501.md
-        - name: CA0502
-          href: ca0502.md
-        - name: CA0503
-          href: ca0503.md
-        - name: CA0504
-          href: ca0504.md
-        - name: CA0505
-          href: ca0505.md
-        - name: FxCopCmd Hataları
-          href: fxcopcmd-errors.md
