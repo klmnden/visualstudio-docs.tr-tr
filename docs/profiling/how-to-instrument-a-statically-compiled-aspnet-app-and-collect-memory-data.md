@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Aracı bir statik olarak derlenmiş ASP.NET Web uygulaması ve Profiler komut satırını kullanarak bellek verilerini toplamak | Microsoft Docs'
+title: 'Profiler komut satırı: Statik bir ASP.NET uygulamasını izleme, bellek verileri Al'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac3b886fec1ab2135dd74b24b7d2fe3284249f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d57dad9c23bf56f30155bc7cd4d848a368780f51
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386716"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032989"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Gereç statik olarak derlenmiş bir ASP.NET web uygulamasını ve profil oluşturucu komut satırını kullanarak bellek verilerini toplamak
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] önceden derlenmiş bir araç haline getirmek için profil oluşturma araçları komut satırı araçlarının [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web bileşeni veya web sitesi ve toplama .NET bellek ayırma, nesne ömrü ve ayrıntılı zamanlama verileri.
@@ -55,9 +55,9 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
     **VSPerfCmd çalıştığından/Output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: izleme** seçeneği profil oluşturucuyu başlatır.
+   - [/Start](../profiling/start.md) **: izleme** seçeneği profil oluşturucuyu başlatır.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.
+   - [/Output](../profiling/output.md) **:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.
 
      Aşağıdaki seçeneklerle dilediğinizi kullanabilirsiniz **çalıştığından** seçeneği.
 
@@ -66,7 +66,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
    | Seçenek | Açıklama |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | ASP.NET çalışan işlemine sahip hesabın kullanıcı adını ve isteğe bağlı etki alanını belirtir. Bu seçenek, oturum açan kullanıcının farklı bir kullanıcı olarak işlem çalışıyorsa gereklidir. Adı listelenir **kullanıcı adı** sütunu **işlemleri** Windows Görev Yöneticisi'nin sekmesinde. |
+   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | ASP.NET çalışan işlemine sahip hesabın kullanıcı adını ve isteğe bağlı etki alanını belirtir. Bu seçenek, oturum açan kullanıcının farklı bir kullanıcı olarak işlem çalışıyorsa gereklidir. Adı listelenir **kullanıcı adı** sütunu **işlemleri** Windows Görev Yöneticisi'nin sekmesinde. |
    | [/ crosssession](../profiling/crosssession.md) | Etkinleştirir, diğer oturumlarda işlemleri profil oluşturma. Bu seçenek, başka bir oturumda uygulama çalışıyorsa gereklidir. Oturum kimliği oturum kimliği sütununda listelenir **işlemleri** Windows Görev Yöneticisi'nin sekmesinde. **/CS** için bir kısaltma olarak belirtilebilir **/crosssession**. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Profil oluşturma sırasında Tahsil edilecek Windows performans sayacı belirtir. |
    | [/automark](../profiling/automark.md) **:** `Interval` | İle kullanma **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. 500 ms varsayılandır. |
@@ -84,9 +84,9 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
     |Seçenek|Açıklama|
     |------------|-----------------|
-    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlar (**/threadon**) veya durdurur (**/threadoff**) veri toplama iş parçacığı kimliği tarafından belirtilen iş parçacığı için (`TID`).|
+    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar ( **/globalon**) veya durdurur ( **/globaloff**) tüm işlemler için veri toplama.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar ( **/processon**) veya durdurur ( **/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlar ( **/threadon**) veya durdurur ( **/threadoff**) veri toplama iş parçacığı kimliği tarafından belirtilen iş parçacığı için (`TID`).|
 
 ## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme
  Profil oluşturma oturumunu sona erdirmek için kapatma [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve ardından Internet Information Services (IIS) **IISReset** kapatmak için komut [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi. Çağrı **VSPerfCmd** [/shutdown](../profiling/shutdown.md) profil oluşturucuyu kapatmak ve profil oluşturma veri dosyasını kapatırsınız. **VSPerfClrEnv /globaloff** komutu profil oluşturma ortam değişkenlerini temizler. Yeni ortam ayarlarının uygulanması için bilgisayarı yeniden başlatmanız gerekir.

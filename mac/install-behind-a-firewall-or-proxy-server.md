@@ -1,25 +1,26 @@
 ---
 title: Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Mac için Visual Studio'yu kullanın
-description: Bu belge, Visual Studio için kurumsal bir ortamda çalışmak Mac (ve kendi iş yükleri de dahil olmak üzere Xamarin) izin vermek için Güvenlik Duvarı'nda izin verilenler listesinde olması gereken ana bilgisayar listesini sağlar.
+description: Bu belge, Visual Studio için kurumsal bir ortamda çalışmak Mac (ve kendi iş yükleri de dahil olmak üzere Xamarin) izin vermek için güvenlik duvarınızdan izin verilmelidir konaklar listesini sağlar.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982879"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032790"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Mac için Visual Studio'yu kullanın
 
-Sizin veya kuruluşunuzun güvenlik önlemleri gibi bir güvenlik duvarı veya proxy sunucusu kullanıyorsa, ardından "güvenilir" ve bağlantı noktaları ve böylece Visual Stu yüklediğinizde ve en iyi deneyimi sahip açmak isteyebilirsiniz protokolleri isteyebileceğiniz etki alanı URL'ler vardır Mac ve Azure Hizmetleri için dio.
+Sizin veya kuruluşunuzun bir güvenlik duvarı veya Ara sunucu gibi güvenlik önlemleri kullanır, sonra vardır, bir "izin verilenler listesine" eklemek isteyebilirsiniz ve bağlantı noktaları ve protokoller, etki alanları Vis yüklediğinizde ve en iyi deneyimi sahip açmak isteyebilirsiniz ual Studio Mac ve Azure Hizmetleri için.
 
-- [**Mac için Visual Studio yükleme**](#install-visual-studio-for-mac): Mac için tüm özellikler ve Visual Studio'nun iş yükleri için erişiminiz URL'leri beyaz liste bu tabloları içerir
 
-- [**Mac için Visual Studio'yu kullanın**](#use-visual-studio-for-mac): Böylece tüm hizmetleri ve istediğiniz özelliklerini erişiminiz bu tablolarını URL'leri izin verilenler listesine ekleyin.
+- [**Mac için Visual Studio yükleme**](#install-visual-studio-for-mac): Bu tabloları böylece tüm özellikleri ve Visual Studio'nun iş yükleri için Mac erişiminiz bağlanmaya izin vermelidir etki alanlarını dahil et
+
+- [**Mac için Visual Studio'yu kullanın**](#use-visual-studio-for-mac): Bu tablolar bağlanmaya izin vermelidir ve böylece ilgili özelliklerine sahip etki alanları içerir.
 
 ## <a name="install-visual-studio-for-mac"></a>Mac için Visual Studio'yu yükleyin
 
@@ -38,6 +39,8 @@ Mac için Visual Studio çeşitli alanlarından indirdiği için ve sunucuları 
 | download.VisualStudio.microsoft.com | Yükleyici paketleri|
 | xamarin.azureedge.net | Yükleyici paketleri|
 | developer.xamarin.com | Yükleyici paketleri|
+| static.xamarin.com | Yükleyici paketleri|
+| DL.xamarin.com | Yükleyici paketleri|
 | dc.services.visualstudio.com| Kilitlenme raporlaması |
 
 ### <a name="third-party-domains"></a>Üçüncü taraf etki alanları
@@ -50,7 +53,7 @@ Mac için Visual Studio çeşitli alanlarından indirdiği için ve sunucuları 
 
 ## <a name="use-visual-studio-for-mac"></a>Mac için Visual Studio'yu kullanın
 
-Visual Studio'da Mac için bir proxy veya güvenlik duvarı ihtiyacınız olan her özelliğe sahip olduğunuzdan emin olmak için beyaz listeye ekleme aşağıdaki etki alanlarını ve bağlantı noktalarını öneririz.
+Visual Studio'da Mac için bir proxy veya güvenlik duvarı ihtiyacınız olan her özelliğe sahip olduğunuzdan emin olmak için aşağıdaki etki alanlarını ve bağlantı noktalarını izin verilen erişim listesine eklemenizi öneririz.
 
 ### <a name="general"></a>Genel
 

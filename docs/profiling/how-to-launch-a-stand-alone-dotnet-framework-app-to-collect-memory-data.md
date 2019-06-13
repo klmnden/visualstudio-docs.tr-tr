@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasını Profiler ile başlatma | Microsoft Docs'
+title: 'Profiler komut satırı: İstemci .NET Framework uygulamasını açın, bellek verileri Al'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386056"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032959"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Komut satırını kullanarak bellek verileri toplamak için bağımsız bir .NET Framework uygulamasına Profil Oluşturucu ile başlatma
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .NET Framework bağımsız (istemci) uygulamasına başlatmak ve bellek verileri toplamak için profil oluşturma araçları komut satırı araçları.
@@ -42,9 +42,9 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
     **VSPerfCmd /start:sample/Output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: örnek** seçeneği profil oluşturucuyu başlatır.
+   - [/Start](../profiling/start.md) **: örnek** seçeneği profil oluşturucuyu başlatır.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.
+   - [/Output](../profiling/output.md) **:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.
 
      Aşağıdaki seçeneklerle dilediğinizi kullanabilirsiniz **/start:sample** seçeneği.
 
@@ -55,9 +55,9 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
 3. Hedef uygulamayı başlatın. Tür:
 
-    **VSPerfCmd**[/başlatma](../profiling/launch.md) **:** `appName` **/gc:**{**ayırma**&#124;**yaşam süresi** }[`Options`]  
+    **VSPerfCmd**[/başlatma](../profiling/launch.md) **:** `appName` **/gc:** {**ayırma**&#124;**yaşam süresi** }[`Options`]
 
-   - [/Gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` seçeneği, .NET Framework bellek verileri toplamak için gereklidir. Anahtar sözcüğü parametresi bellek ayırma verilerini toplamak için veya hem bellek ayırma hem de nesne ömür verilerini toplamak için etkinleştirilip etkinleştirilmeyeceğini belirtir.
+   - [/Gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` seçeneği, .NET Framework bellek verileri toplamak için gereklidir. Anahtar sözcüğü parametresi bellek ayırma verilerini toplamak için veya hem bellek ayırma hem de nesne ömür verilerini toplamak için etkinleştirilip etkinleştirilmeyeceğini belirtir.
 
      |Anahtar sözcüğü|Açıklama|
      |-------------|-----------------|
@@ -82,8 +82,8 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
     |Seçenek|Açıklama|
     |------------|-----------------|
-    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplamayı (`PID`).|
+    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar ( **/globalon**) veya durdurur ( **/globaloff**) tüm işlemler için veri toplama.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar ( **/processon**) veya durdurur ( **/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplamayı (`PID`).|
     |[/ ekleme](../profiling/attach.md) **:** `PID` [/ detach](../profiling/detach.md)|**/ ekleme** tarafından belirtilen işlem için veri toplamaya başlar `PID` (işlem kimliği). **/ detach** tüm işlemler için veri toplamayı durdurur.|
 
 - Ayrıca **VSPerfCmd.exe**[/mark](../profiling/mark.md) veri dosyasına bir profil oluşturma işareti eklemek için seçeneği. **/Mark** komut tanımlayıcı, bir zaman damgası ve isteğe bağlı kullanıcı tanımlı bir metin dizesi ekler. İşaretler, verilere filtre uygulamak için kullanılabilir.

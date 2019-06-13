@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688508"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033028"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU kullanımını analiz etme ölçü uygulama performansı
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
@@ -148,6 +148,9 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 
     ![Tanılama araçları sık kullanılan yol](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
+
+    > [!NOTE]
+    > Çağrı ağacında "bozuk" kod ya da "unwalkable yığın" işaretlenmiş kod görürseniz, bu olay izleme için Windows (ETW) olayları büyük olasılıkla bırakılan gösterir. Bu sorunu çözmek için ikinci kez aynı izlemeyi toplamayı deneyin.
 
 ## <a name="view-external-code"></a>Dış Kodu Göster
 

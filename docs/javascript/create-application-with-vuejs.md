@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226048"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033132"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
@@ -169,7 +169,15 @@ Bu adımlar vue-şu anda beta sürümünde olan CLI 3.0 gerektirir.
 
 #### <a name="build-with-vue-cli-30"></a>VUE-cli 3.0 ile derleme
 
-Bilinmeyen bir sorun 3.0 vue-CLI ile oluşturma işlemini otomatikleştirmenin engeller. Wwwroot klasörü yenilemeye çalışın her zaman komutunu çalıştırmanız gerekir. `npm run build` istemci uygulama klasörü üzerinde.
+Bilinmeyen bir sorun 3.0 vue-CLI ile derleme işlemini otomatik hale getirme engelliyor olabilir. Wwwroot klasörü yenilemeye çalışın her zaman komutunu çalıştırmanız gerekir. `npm run build` istemci uygulama klasörü üzerinde.
+
+Alternatif olarak, ASP.NET proje özelliklerini kullanarak bir derleme öncesi olay vue-cli 3.0 proje oluşturabilirsiniz. Projeye sağ tıklayın, seçin **özellikleri**ve aşağıdaki komutları dahil **derleme** sekmesinde **derleme öncesi olay komut satırı** metin kutusu.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Sınırlamalar
 

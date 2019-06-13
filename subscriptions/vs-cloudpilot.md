@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805362"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032585"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
@@ -64,7 +64,6 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | 1 lisans, 30 gün, bir tarama                                                            |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir           |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok           |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
-| Visual Studio Dev Essentials | Yok  | Yok | Yok |
 | Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 

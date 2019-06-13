@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Gereç için Web.Config dosyalarını değiştirme ve dinamik olarak derlenmiş ASP.NET Web uygulamalarının profilini | Microsoft Docs'
+title: 'Web.Config dosyası: Gereç & profili dinamik derlenmiş ASP.NET web uygulaması'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422930"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032940"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dinamik olarak ayrıntılı zamanlama verileri, .NET bellek ayırma verilerinin ve .NET nesne ömür verilerini toplamak için profil oluşturma araçları izleme metodunu derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.
@@ -59,7 +59,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
    | Öznitelik adı | Öznitelik değeri |
    |--------------------| - |
-   | **Adı** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
+   | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Kültür** | **Nötr** |
 

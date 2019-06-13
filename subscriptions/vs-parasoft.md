@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SOA Test Professional aboneliği etkinleştirmek öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947330"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032756"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri de Parasoft Sanallaştırılacak/SOAtest Professional Desktop
 
@@ -76,8 +76,8 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                           |Yok         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                                           |Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                                           |Yok         |
-| Visual Studio Dev Essentials | Yok  | Yok|Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 <sup>1</sup>*içerir: Microsoft iş ortağı ağı (Kurumsal).  Dışlar:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 

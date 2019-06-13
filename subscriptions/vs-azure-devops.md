@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Azure DevOps Visual Studio abonesi olarak nasıl kullanabileceğinizi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177727"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032223"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Azure DevOps avantajları
 
@@ -30,10 +30,11 @@ Oturum açtığınızda Azure kullanarak DevOps için Visual Studio aboneliğini
 | Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                        | Azure panoları & depoları (Temel), Azure yapılarını<sup>2</sup>                                                            |  Evet          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Azure panoları & depoları (Temel), Azure Test planları                                              |  Evet          |
+||
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (Kurumsal), BizSpark, MCT yazılım ve geliştirici Hizmetleri için. Dışlar: MCT yazılım ve Hizmetleri düşünün.*
 
-<sup>2</sup>*hiçbir ücret ödemeden 2 GB içerir* 
+<sup>2</sup>*hiçbir ücret ödemeden 2 GB içerir*
 
 
 

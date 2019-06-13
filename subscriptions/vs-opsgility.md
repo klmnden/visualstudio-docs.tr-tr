@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Beceri bana seçili Visual Studio aboneliğine dahildir Opsgility eğitimi avantajı ile güçlendirilmiş artırma hakkında-bilgi edinin.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947018"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032814"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Yetenek bana yukarı - Opsgility eğitimi avantajı olarak Visual Studio abonelikleri tarafından desteklenir
 
@@ -39,8 +39,8 @@ Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe b
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | 3 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 3 ay                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 3 ay                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| Visual Studio Dev Essentials | Yok  | Yok | Yok  |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 *Dışlar:  Microsoft iş ortağı ağı (MPN), en değerli Professional (MVP), bölgesel Yöneticisi (RD), Microsoft eğitmen, BizSpark, Imagine, NFR, FTE sertifikalı*
 

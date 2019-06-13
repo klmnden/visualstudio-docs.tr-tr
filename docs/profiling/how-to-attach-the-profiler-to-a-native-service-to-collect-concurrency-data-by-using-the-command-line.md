@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Profiler komut satırını kullanarak eşzamanlılık verileri toplamak için bir yerel hizmete profil oluşturucu ekleme | Microsoft Docs'
+title: 'VSPerfCmd: Eşzamanlılık verileri almak için yerel hizmete profil oluşturucu ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6a937f2aad5a9414da92a29def972ea3dd7c8e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: faa47183040d376724de48fb71f07710cfe51f8f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439566"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033078"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Komut satırını kullanarak eşzamanlılık verileri toplamak için bir yerel hizmete profil oluşturucu ekleme
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları komut satırı araçlarının profil oluşturucuyu bir yerel (C/C++) eklemek ve işlem ve iş parçacığının eşzamanlılık verilerinin örnekleme yöntemini kullanarak toplamak.
@@ -37,7 +37,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency/Output:** `OutputFile` [`Options`]
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` ad ve profil oluşturma veri (.vsp) dosyasının konumunu belirtir.
+   - [/Output](../profiling/output.md) **:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` ad ve profil oluşturma veri (.vsp) dosyasının konumunu belirtir.
 
      Herhangi bir seçenek ile aşağıdaki tabloda kullanabileceğiniz **/start** seçeneği.
 
@@ -46,7 +46,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
    | Seçenek | Açıklama |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Profil oluşturucuya erişim verilebilmesi için hesabın kullanıcı adını ve isteğe bağlı etki alanını belirtir. |
+   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Profil oluşturucuya erişim verilebilmesi için hesabın kullanıcı adını ve isteğe bağlı etki alanını belirtir. |
    | [/ crosssession](../profiling/crosssession.md) | Etkinleştirir işlemleri diğer oturum açılışlarında profil oluşturma. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Profil oluşturma sırasında Tahsil edilecek Windows performans sayacı belirtir. |
    | [/automark](../profiling/automark.md) **:** `Interval` | İle kullanma **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. Varsayılan değer 500'dür. |
@@ -67,9 +67,9 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
     |Seçenek|Açıklama|
     |------------|-----------------|
-    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) veri toplama işlemi için işlem kimliği (`PID`) belirtir.|
-    |[/ ekleme](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ ekleme** işlem için veri toplamaya başlar, işlem kimliği (`PID`) veya işlem adı (*ProcName*) belirtir. **/ detach** belirlenmiş bir işlem için belirtilen işlem veya tüm işlemler için veri toplamayı durdurur.|
+    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar ( **/globalon**) veya durdurur ( **/globaloff**) tüm işlemler için veri toplama.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar ( **/processon**) veya durdurur ( **/processoff**) veri toplama işlemi için işlem kimliği (`PID`) belirtir.|
+    |[/ ekleme](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/ ekleme** işlem için veri toplamaya başlar, işlem kimliği (`PID`) veya işlem adı (*ProcName*) belirtir. **/ detach** belirlenmiş bir işlem için belirtilen işlem veya tüm işlemler için veri toplamayı durdurur.|
 
 ## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme
  Profil oluşturma oturumunu sona erdirmek için Profil Oluşturucu veri toplamıyor olmalıdır. Hizmeti durdurarak veya çağırarak eşzamanlılık yöntemi ile profili bir yerel hizmetten veri toplamayı durdurabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağırmak **VSPerfCmd/shutdown** profil oluşturucuyu devre dışı bırakırsınız ve profil oluşturma veri dosyasını kapatırsınız.

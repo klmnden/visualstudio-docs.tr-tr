@@ -14,9 +14,7 @@
 ### [Ürün Anahtarlarını Alma ve Yönetme](product-keys.md)
 ### [GitHub Enterprise ile Visual Studio](access-github.md)
 ### [Abone Avantajları](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [Visual Dev Essentials’a Katılma](join-dev-essentials.md)
-#### [Visual Studio Dev Essentials’tan Çıkma](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Abone Avantajlarını Kullanma
 ### Araçlar
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Windows Geliştirici Hesabı](vs-windows-dev.md)
 #### [Office 365 aboneliği](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [TFS için Modern Gereksinimler](vs-modernreq.md)
 #### [Azure Kullandıkça Öde](vs-azure-payg.md)
 ### [Profesyonel Geliştirme](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)

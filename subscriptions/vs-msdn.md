@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947442"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032844"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
@@ -52,7 +52,7 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yazdırılabilir sürüm                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yazdırılabilir sürüm                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 |Visual Studio Enterprise, Visual Studio Professional (aylık bulut)   | Azure |Yok      |  Yok         |
-|Visual Studio Dev Essentials| Yok |Dijital sürüm       |  Evet|
+||
 
 <sup>1</sup>*yazdırılan sürümü:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP) FTE, Microsoft iş ortağı ağı (Kurumsal) (Premium) düşünün.*
 

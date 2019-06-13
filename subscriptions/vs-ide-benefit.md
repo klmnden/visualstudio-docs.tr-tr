@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e836eac14cbf50abe79230444a4c8ee8c01643d
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420808"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032871"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 
@@ -69,7 +69,7 @@ IDE indirmek için:
 | Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                       | Kullanılabilir                                                            |  Evet          |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Kullanılabilir                                             |  Evet         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
-| Visual Studio Dev Essentials | Yok  | Visual Studio Community |Evet |
+
 
 <sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  Dışlar: MCT yazılım ve Hizmetleri.*
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501194"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032729"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -70,8 +70,8 @@ Office 365 Geliştirici aboneliği hakkında daha fazla bilgi için kullanıma [
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | Dahil                                                            |Evet         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
-| Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, BizSpark, MCT yazılım ve geliştirici Hizmetleri, MCT yazılım ve Hizmetler'e için.  Dışlar:  Microsoft iş ortağı ağı (MPN), Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).*
 

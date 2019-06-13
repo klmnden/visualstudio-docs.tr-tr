@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Bir .NET hizmetini izleme ve ayrıntılı zamanlama verileri Profiler komut satırını kullanarak toplama | Microsoft Docs'
+title: 'Profiler komut satırı: .NET hizmetini izleme, zamanlama ayrıntı Al'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cd767e505af7e5d503695a1e7aea65dbfe62027
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4f3e03a35719e6dd1cbfa7514a304539dc4f0ca1
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747830"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032053"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bir .NET hizmetini izleme ve ayrıntılı zamanlama verileri toplama
 

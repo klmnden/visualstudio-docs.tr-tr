@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948832"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031975"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -73,8 +73,8 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 | Visual Studio Professional (standart, aylık bulut) | VL, Azure, perakende                                       | Yok                                                            |Yok         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                                            |Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Kullanılabilir       |  Evet|
-| Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise (aylık bulut) | Azure                                       | Yok                                  |Yok|
+||
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılımı ve Hizmetleri geliştirici, MCT yazılım ve hizmet, en değerli Professional (MVP), bölgesel Yöneticisi (RD) için.  Dışlar:  Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 

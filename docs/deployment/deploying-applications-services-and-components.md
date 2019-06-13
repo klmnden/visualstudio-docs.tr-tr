@@ -1,5 +1,5 @@
 ---
-title: Dağıtım özellik turu
+title: Dağıtıma ilk bakış
 description: Visual Studio'dan uygulamaları dağıtmak için seçenekleri hakkında bilgi edinin.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261978"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032560"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı da ilk bakma
 
@@ -40,7 +40,7 @@ Hızlı Başlangıçlar ve öğreticilerle adım adım dağıtım yönergeleri i
 
 Yerel bir klasöre dağıtım genellikle test etmek veya başka bir aracı son dağıtım için kullanılan aşamalı bir dağıtım başlatmak için kullanılır.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve.** NET Core**: Bir yerel klasöre dağıtma yayımlama aracını kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde projenize sağ tıklayıp seçin **Yayımla**. (Tüm yayımlama profilleri daha önce yapılandırmadıysanız, ardından tıklamanız **yeni profil oluşturma**.) Ardından, **klasör**. Daha fazla bilgi için [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, ve. **NET Core**: Bir yerel klasöre dağıtma yayımlama aracını kullanın. Kullanılabilir seçenekler, uygulama türüne bağlıdır. Çözüm Gezgini'nde projenize sağ tıklayıp seçin **Yayımla**. (Tüm yayımlama profilleri daha önce yapılandırmadıysanız, ardından tıklamanız **yeni profil oluşturma**.) Ardından, **klasör**. Daha fazla bilgi için [bir yerel klasöre dağıtma](quickstart-deploy-to-local-folder.md).
 
     ![Seçin yayımlama](../deployment/media/quickstart-publish.png)
 
@@ -120,6 +120,16 @@ Daha karmaşık geliştirme ve test uygulamalarınızı sanal ortamlara dağıta
 ## <a name="continuous-deployment"></a>Sürekli dağıtım
 
 Azure işlem hatları, uygulamanızı sürekli dağıtımını etkinleştirmek için kullanabilirsiniz. Daha fazla bilgi için [Azure işlem hatları](/azure/devops/pipelines/index?view=vsts) ve [azure'a Dağıt](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>SQL veritabanı dağıtma
+
+- [Hedef platform değiştirmek ve bir veritabanı projesi (SQL Server veri Araçları (SSDT)) yayımlama](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Bir Analysis Services projesi (SSAS) dağıtma](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Integration Services (SSIS) projeleri ve paketleri dağıtma](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Derleme ve dağıtma için bir yerel veritabanı](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Diğer uygulama türleri için dağıtım
 

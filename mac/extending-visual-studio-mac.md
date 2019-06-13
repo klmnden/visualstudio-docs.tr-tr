@@ -3,15 +3,15 @@ title: Mac için Visual Studio’yu Genişletme
 description: Mac özellikleri ve işlevleri için Visual Studio uzantı paketleri adlı modülleriyle genişletilebilir. Bu kılavuzun ilk bölümü, bir basit bir belgeye tarih ve saat için Visual Studio'yu Mac uzantı paketi oluşturur. İkinci bölümü, bu kılavuzun uzantı paketi sistemi temelleri ve bazı çekirdek temelini Mac için Visual Studio'nun API'leri sunar.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983160"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033128"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio’yu Genişletme
 
@@ -28,7 +28,7 @@ Mac için Visual Studio'dan oluşturmak bir uzantı paketi için sırada Visual 
 Bu modüler bir tasarım avantajdır Mac için Visual Studio Genişletilebilir--bağlı özel uzantı paketleri ile oluşturulabilir birçok uzantı noktaları vardır. Geçerli uzantı paketleri örnekler için destek C# ve F#, hata ayıklayıcı, Araçlar ve proje şablonları.
 
 > [!NOTE]
-> **Not**: Eklenti Oluşturucu önce 1.2 oluşturulmuş bir oluşturucu eklenti projesine sahip olmak, projenizi adımlarda belirtildiği gibi geçiş geçmeniz [burada](https://mhut.ch/addinmaker/1.2).
+> Eklenti Oluşturucu önce 1.2 oluşturulmuş bir oluşturucu eklenti projesine sahip olmak, projenizi adımlarda belirtildiği gibi geçiş geçmeniz [burada](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Bu bölümde, eklenti Oluşturucu tarafından üretilen farklı dosyalar bakar v
 
 ## <a name="attribute-files"></a>Öznitelik dosyaları
 
-Uzantı paketleri C# özniteliklerinde kullanıcının adını, sürüm, bağımlılıklar ve diğer bilgileri hakkındaki meta verileri depolar. Eklenti Oluşturucu iki dosya oluşturur `AddinInfo.cs` ve `AssemblyInfo.cs` depolamak ve bu bilgileri düzenlemek için. Uzantı paketleri benzersiz bir kimliği olması gerekir ve içinde belirtilen namespace kendi *eklentisi özniteliği*:
+Uzantı paketleri C# özniteliklerinde kullanıcının adını, sürüm, bağımlılıklar ve diğer bilgileri hakkındaki meta verileri depolar. Eklenti Oluşturucu iki dosya oluşturur `AddinInfo.cs` ve `AssemblyInfo.cs` depolamak ve bu bilgileri düzenlemek için. Uzantı paketleri benzersiz bir kimliği olması gerekir ve içinde belirtilen namespace kendi  *`Addin` özniteliği*:
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Uzantı paketleri C# özniteliklerinde kullanıcının adını, sürüm, bağım
 )]
 ```
 
-Uzantı paketleri ayrıca bunlar takın uzantı noktaları kendi uzantı paketleri bağımlılıklarını bildirmeniz gerekir. Bunlar, oluşturma zamanında otomatik olarak başvurulur.
+Uzantı paketleri ayrıca derleme sırasında otomatik olarak başvurulur bunlar, Tak uzantı noktaları kendi uzantı paketleri bağımlılıklarını bildirmeniz gerekir.
 
 Ayrıca, ek başvurular proje çözüm panelinde eklenti referans düğümün aracılığıyla tarafından aşağıdaki görüntüde gösterildiği şekilde eklenebilir:
 
@@ -81,10 +81,10 @@ Komut uzantıları girdileri ekleme tarafından tanımlanan `/MonoDevelop/Ide/Co
 
 Uzantı düğüm, bu durumda takarak genişletme noktası belirtir bir path özniteliği içeren `/MonoDevelop/Ide/Commands/Edit`. Ayrıca, komutu bir üst düğüme görür. Komut düğümü aşağıdaki özniteliklere sahiptir:
 
-* **Kimliği** -bu komut için bir tanımlayıcı belirtir. Komut tanımlayıcıları numaralandırma üyeleri bildirilmesi gerekir ve komutları için Commandıtems'lara bağlanmak için kullanılır.
-* **_etiketi** -menülerde gösterilecek metin.
-* **açı_klama** -araç çubuğu düğmeleri araç ipucu olarak gösterilecek metin.
-* **defaultHandler** -belirtir `CommandHandler` komutu güç katan sınıfı
+* `id` -Bu komut için tanımlayıcısını belirtir. Komut tanımlayıcıları numaralandırma üyeleri bildirilmesi gerekir ve komutları için Commandıtems'lara bağlanmak için kullanılır.
+* `_label` -Menülerde gösterilecek metin.
+* `_description` -Araç çubuğu düğmeleri araç ipucu olarak gösterilecek metin.
+* `defaultHandler` -Belirtir `CommandHandler` komutu güç katan sınıfı
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Uzantı düğüm, bu durumda takarak genişletme noktası belirtir bir path özn
 </Extension>
 ```
 
-Bir menüye alt kimliği özniteliğinde belirtilen bir komutu bir CommandItem yerleştirir. Bu CommandItem genişletme `/MonoDevelop/Ide/MainMenu/Edit` komut etiket görünür kılan uzantı noktası **Düzen menüsünün**. Unutmayın **kimliği** CommandItem içinde komut düğümünün kimliğine karşılık gelen `InsertDate`. CommandItem kaldırmak için olsaydı **tarih Ekle** seçeneği Düzenle Menüsü'nden kaybolması.
+Belirtilen bir komutu bir CommandItem yerleştirir, `id` menü içine özniteliği. Bu CommandItem genişletme `/MonoDevelop/Ide/MainMenu/Edit` komut etiket görünür kılan uzantı noktası **Düzen menüsünün**. Not kimliği CommandItem komut düğüm Kimliğine karşılık gelen `InsertDate`. CommandItem kaldırırsanız **tarih Ekle** seçeneği Düzenle Menüsü'nden kaybolması.
 
 ### <a name="command-handlers"></a>Komut işleyicileri
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-Bu komut ve CommandItem bağdaştırabilir - CommandItem seçildiğinde CommandItem komutu çağıran **Düzen menüsünün**.
+Komut ve CommandItem artık birlikte bağlıdır - CommandItem seçildiğinde CommandItem komutu çağıran **Düzen menüsünün**.
 
 ## <a name="ide-apis"></a>IDE API'leri
 
@@ -158,6 +158,35 @@ Geliştirme için kullanılabilir alanları kapsamı hakkında daha fazla bilgi 
 * Yeniden Düzenle
 * Yürütme işleyicileri
 * Söz dizimi vurgulama
+
+## <a name="extending-the-new-editor"></a>Yeni bir düzenleyici genişletme
+
+Mac için Visual Studio [yeni yerel Cocoa metin düzenleyici UI tanıtır](https://aka.ms/vs/mac/editor/learn-more) Windows üzerinde Visual Studio aynı Düzenleyicisi katmanları üzerinde oluşturulmuş.
+
+Visual Studio Düzenleyicisi'ni hedefleyen kodlarda Mac için Visual Studio çalıştırmak uyarlanabilir Mac için Visual Studio ve Visual Studio arasında Düzenleyicisi paylaşımı birçok yararından biri olan
+
+> [!NOTE]
+> Yeni bir düzenleyici destekler yalnızca C# şu anda dosyaları. Diğer diller ve dosya biçimleri eski düzenleyicide açılır. Eski Düzenleyici ancak bazı Visual Studio Düzenleyicisi aşağıda açıklanan API'leri uygulayın.
+
+### <a name="visual-studio-editor-overview"></a>Visual Studio Düzenleyicisi'ne genel bakış
+
+![Visual Studio Düzenleyicisi mimarisi](media/vs-editor-architecture.png)
+
+Mac için Visual Studio'ya özel uzantı ayrıntılarını önce dokunma, paylaşılan Düzenleyici daha iyi anlamanıza yardımcı olur. Aşağıda bu anlayış güçlendirmenizi bazı kaynaklar verilmiştir:
+
+* [Yönetilen Genişletilebilirlik Çerçevesi](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF Düzenleyicisi](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Düzenleyicinin İçinde](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Dil Hizmeti ve Düzenleyici Uzantı Noktaları](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Bir video Giriş Düzenleyicisi mimarisi](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Elle bu kaynakları ile aşina olmanız gerekir birincil kavramlardır bir [ `ITextBuffer` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) ve [ `ITextView` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+
+* Bir `ITextBuffer` zaman içinde değişebilir metni, bir bellek içi temsilidir. `CurrentSnapshot` Özelliği `ITextBuffer` döndürür bir *değişmez* arabellek örneği geçerli içeriğini gösterimini `ITextSnapshot`. Bir düzenleme arabelleği yapıldığında CurrentSnapshot özelliği en son sürümüne güncelleştirilir. Metin anlık görüntü herhangi bir iş parçacığı üzerinde Çözümleyicileri inceleyebilirsiniz ve içeriğinin asla değiştirmek için garantisi.
+
+* Bir `ITextView` nasıl UI gösterimidir `ITextBuffer` Düzenleyicisi denetim ekranda işlenir. Kendi metin arabelleğini bir başvuru içeriyor olarak `Caret`, `Selection`ve diğer kullanıcı Arabirimi ile ilgili kavramları.
+
+İçin bir verilen [ `MonoDevelop.Ide.Gui.Document` ](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), ilişkili temel alabilir `ITextBuffer` ve `ITextView` aracılığıyla `Document.GetContent<ITextBuffer>()` ve `Document.GetContent<ITextView>()` sırasıyla.
 
 ## <a name="additional-information"></a>Ek Bilgiler
 

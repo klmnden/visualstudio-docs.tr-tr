@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden etkinleştirmeyi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402024"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032799"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Etkinleştirme ve Visual Studio abonelikleri teknik destek teklifinizden kullanma
 
@@ -116,8 +116,8 @@ Azure'a ilgili sorunlar için Visual Studio aboneliği teknik destek teklifinizd
 | Visual Studio Professional (standart) | VL, Azure, perakende, seçili NFR<sup>2</sup>                                        | 2 olayları                                                          |Evet         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 2 olayları                                             |  Evet         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 2 olayları                                               | Evet         |
-| Visual Studio Dev Essentials | Yok | Yok |Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 <sup>1</sup> *içerir: Premium, BizSpark düşünün. Dışlar: Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, standart, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri düşünün.*
 

@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: Visual Studio aboneliklerine dahil olan teknik destek avantajları hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427487"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033096"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Teknik Destek avantajlarını Visual Studio aboneliklere dahildir
 
@@ -29,6 +29,6 @@ Bir sorunuz veya teknik ilgili sorunlarda yardıma ihtiyacınız olduğunda, des
 
 - [Teknik Destek](vs-tech-support.md): Üretim dışı ortamlarda onarım sorunlarını çözmek Uzman Yardım kullanılabilir.
 
-- [Öncelikli Destek](vs-priority-support.md): Seçim listesinde sorunu, forumlar sor. Geliştirici topluluğu iki gün içinde yanıt vermezse, Microsoft yanıtlar. (Yalnızca Microsoft Accounts kullanılarak desteklenir.)
+- [Geliştirici topluluğu forumları](vs-priority-support.md): Tam aralığı, geliştirici ağ Forumlara erişim. 
 
 - [Concierge Sohbeti](vs-concierge-chat.md): Teknik belgeler ve ürün bilgileri Yardım almak için bizimle birlikte veya abonelik tekliflerinizi kullanmak ile sohbet edin.

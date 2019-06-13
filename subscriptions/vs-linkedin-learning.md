@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium aboneliği bir parçası olarak dahil LinkedIn Learning Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948689"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032852"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -95,7 +95,6 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | 3 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 3 ay                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 3 ay                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
 <sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar:  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*

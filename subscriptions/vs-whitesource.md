@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil olan WhiteSource Bolt aboneliği etkinleştirmek öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811004"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031941"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt, Visual Studio abonelikleri
 
@@ -78,8 +78,8 @@ Yeşil tıklayın **yükleme** Azure DevOps Hizmetleri kullanıyorsanız düğme
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | Kullanılabilir değil                                                           |Yok         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              | Yok         |
-| Visual Studio Dev Essentials | Yok  | Yok |Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 <sup>1</sup>*içerir:  Microsoft iş ortağı ağı (Kurumsal).  Dışlar: Diğer değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine için Microsoft iş ortağı ağ (Professional) .*
 

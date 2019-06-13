@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Aracı bir .NET Framework hizmetini ve Profiler komut satırını kullanarak bellek verilerini toplamak | Microsoft Docs'
+title: 'Profiler komut satırı: .NET hizmetini izleme, bellek verileri Al'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afaf9f3513848ca089d1f3e98ea99c460959947
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 2b4e74b6f4e26b3ed797e8df3cbe3f6e33d74d06
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747837"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032043"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak .NET Framework hizmetini izleme ve bellek verileri toplama
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir .NET Framework araç haline getirmek için profil oluşturma araçları komut satırı araçları ve bellek kullanım verilerini toplamak. Bellek ayırma verisini toplayabilir veya hem bellek ayırma ve nesne yaşam verisi toplayabilir.

@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263120"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032831"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus, Visual Studio abonelikleri
 
-En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla çalışır. Office 365 ProPlus Word, Excel, PowerPoint, OneNote, Outlook, yayımcı ve (yayımcı ve erişimi yalnızca PC kullanılabilir) erişim gibi premium uygulamalar ile birlikte gelen bir aboneliktir. Bilgisayarlar, Mac bilgisayarları, İpad'ler, İphone'lar, Android tabletler dahil olmak üzere birden çok cihazda uygulamalar yüklenebilir ve Android telefonlar. Office 365, 1 TB'ın OneDrive depolama, 60 Skype dakika her ay Microsoft sohbet ve telefon desteği gibi hizmetlerle de birlikte gelir. Bir abonelikle uygulamaları en son sürümlerini almak ve gerçekleştiğinde güncelleştirmeleri otomatik olarak alırsınız.
+En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla çalışır. Office 365 ProPlus Word, Excel, PowerPoint, OneNote, Outlook, yayımcı ve (yayımcı ve erişimi yalnızca PC kullanılabilir) erişim gibi premium uygulamalar ile birlikte gelen bir aboneliktir. Bilgisayarlar, Mac bilgisayarları, İpad'ler, İphone'lar, Android tabletler dahil olmak üzere birden çok cihazda uygulamalar yüklenebilir ve Android telefonlar. Bir abonelikle uygulamaları en son sürümlerini almak ve gerçekleştiğinde güncelleştirmeleri otomatik olarak alırsınız.
 
 ## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus ile çalışmaya başlama
 
@@ -58,7 +58,7 @@ Office için uygulama geliştirmek üzere planlıyorsanız etkinleştirmek istey
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok          |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
-| Visual Studio Dev Essentials | Yok  | Yok |Yok |
+|  |
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri için BizSpark, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri, Imagine, Microsoft İş ortağı ağı.*
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685918"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032211"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -30,7 +30,6 @@ Visual Studio abonesi olarak, Microsoft Azure, başka bir ücret ödemeden kulla
 |              Visual Studio Professional aylık              |        Yok        |                                                             |
 |                    Visual Studio Test Pro                    |     50 ABD Doları aylık kredi      |                             Evet                             |
 |                        MSDN platformları                        |     100 ABD Doları aylık kredi     |                             Evet                             |
-|                 Visual Studio Dev Essentials                 | Ücretsiz Hizmetler + 200 ABD Doları değerinde kredi | Ücretsiz Hizmetler kalıcı.  200 ABD Doları kredi, yalnızca tek seferlik olur. |
 |               Visual Studio Enterprise - NFR\*               |     150 ABD Doları aylık kredi     |                             Evet                             |
 |                Visual Studio Enterprise - FTE                |     150 ABD Doları aylık kredi     |                             Evet                             |
 |     Visual Studio Enterprise - Microsoft iş ortağı ağı     |     150 ABD Doları aylık kredi     |                             Evet                             |

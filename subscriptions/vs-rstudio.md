@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: conceptual
 description: Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b52d22cce30a668065e148494bb84568535eab7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947140"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031952"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop avantajı
 
@@ -91,9 +91,9 @@ RStudio, açık kaynak ve ticari sürümlerinde kullanılabilir ve Masaüstü (W
 |         Visual Studio Professional (standart)          | Toplu Lisans, perakende |   Yok    | Yok |
 |              Visual Studio Test Professional (standart)              |    Toplu Lisans, perakende     |   Yok    | Yok |
 |                      MSDN platformları (standart)                       |    Toplu Lisans, perakende     |   Yok   | Yok |
-|                     Visual Studio Dev Essentials                     |        Yok         |   Yok    |       Yok       |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) |       Azure       | Yok |       Yok       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Yok |       Yok       |
+||
 
 <sup>1</sup>*NFR içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet, en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 

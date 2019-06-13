@@ -1,5 +1,5 @@
 ---
-title: Toplama ayrıntılı zamanlama verileri komut satırından Profiler izleme metodunu kullanarak bir ASP.NET Web uygulaması için | Microsoft Docs
+title: 'VSPerfCmd: ASP.NET web uygulaması için izleme metodunu kullanarak zamanlama verileri alma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 79e8ad7842070d13941ad921ccb25ba502209eb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87e7f5f49072326028405e153cffe94ce1ca63f2
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405952"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033061"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Komut satırından profil oluşturucu izleme metodunu kullanarak bir ASP.NET web uygulaması için ayrıntılı zamanlama verileri toplama
 Bu bölümde ayrıntılı performans toplama seçeneklerini ve yordamlar açıklanmaktadır. verileri bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamasını kullanarak **VSPerfCmd** komut satırı aracı ve araç haline getirme yöntemi.

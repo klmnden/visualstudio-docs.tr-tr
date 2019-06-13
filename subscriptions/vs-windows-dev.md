@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Windows Geliştirici hesabı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978736"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032744"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
@@ -55,8 +55,8 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | Dahil                                                            |Evet|
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                            |  Yok|
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              |  Yok                                            |  Yok|
-| Visual Studio Dev Essentials | Yok  | Yok                                            |  Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
+||
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), FTE, Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve geliştirici Hizmetleri için. Dışlar:  Microsoft iş ortağı ağı (MPN), Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri.*
 
