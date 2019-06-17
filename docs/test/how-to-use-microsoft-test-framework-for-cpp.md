@@ -1,18 +1,18 @@
 ---
 title: C++ için Microsoft Birim Testi Çerçevesini Kullanma
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934483"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132125"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -30,7 +30,7 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
    1. İçinde **Çözüm Gezgini**, test programı için proje düğümüne sağ tıklayın ve ardından seçin **özellikleri** > **yapılandırma özellikleri**  >  **VC ++ dizinleri**.
 
-   2. Aşağıdaki satırları aşağı oka tıklayın ve seçin  **\<Düzenle >**. Bu yolları ekleyin:
+   2. Aşağıdaki satırları aşağı oka tıklayın ve seçin  **\<Düzenle >** . Bu yolları ekleyin:
 
       | Dizin | Özellik |
       |-| - |
@@ -39,7 +39,7 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
 2. Bir C++ birim testi dosyası ekleyin:
 
-   - ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe**  >  **C++ dosyası (.cpp)**.
+   - ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe**  >  **C++ dosyası (.cpp)** .
 
 ## <a name="write-the-tests"></a>Testleri yazma
 

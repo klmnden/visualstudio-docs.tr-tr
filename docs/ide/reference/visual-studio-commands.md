@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789376"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043589"
 ---
-# <a name="visual-studio-commands"></a>Visual Studio Komutları
+# <a name="visual-studio-commands"></a>Visual Studio komutları
 
-Visual Studio komutları bir komut çağırmanıza olanak tanır **komut** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama veya hata ayıklama işlemi yerine bir komut takip etmek olduğunu belirtmek için kullanılır.
+Visual Studio komutları girebilirsiniz **komut** penceresinde **hemen** penceresinde veya **Bul/komut** kutusu. Her durumda, büyüktür işareti (`>`) bir arama veya hata ayıklama işlemi yerine bir komut izlediğini belirtir.
 
-Komutların ve sözdizimlerinin tam listesini bulabilirsiniz **klavye, ortam seçenekleri** iletişim kutusu.
+Komutların ve sözdizimlerinin tam listesini bulabilirsiniz **klavye** sayfasını **Araçları** > **seçenekleri**  >   **Ortam**.
 
-Visual Studio komutları için kaçış karakteri bir şapka (^) karakterdir, hemen ardından karakteri yerine birebir yorumlandığı bir denetim karakteri olarak yorumlanır anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değerine düz tırnak ("), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya diğer bir hazır bilgi karakterleri katıştırmak için kullanılabilir. Örneğin,
+IDE yerelleştirilmiş sürümlerinde, komut adları IDE'nin kendi dilinde veya İngilizce girilebilir. Örneğin, yazabilirsiniz `File.NewFile` veya `Fichier.NouveauFichier` aynı komutu yürütmek için Fransızca IDE'de.
+
+Birçok komutun eş adları vardır. Komut diğer adları listesi için bkz. [komut diğer adları](../../ide/reference/visual-studio-command-aliases.md). Komut için klavye kısayolları, bkz: [Visual Studio'daki klavye kısayollarını varsayılan](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Atlatma karakteri
+
+Visual Studio komutları için kaçış karakteri bir şapka (^) ' dir. Aşağıdaki yerine sabit değer bir denetim karakteri olarak yorumlanır hemen kaçış karakteri, karakterin anlamına gelir. Bu anahtar adları dışında bir parametre veya anahtar değerine düz tırnak ("), boşluk, önde gelen eğik çizgiler, düzeltme işaretleri veya diğer bir hazır bilgi karakterleri katıştırmak için kullanılabilir. Örneğin:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,11 +39,9 @@ Visual Studio komutları için kaçış karakteri bir şapka (^) karakterdir, he
 
 İç veya dış tırnak işaretleri olup olmadığını şapka işareti aynı şekilde çalışır. Şapka işareti satırdaki son karakterse, yoksayılır.
 
-IDE yerelleştirilmiş sürümlerinde, komut adları IDE'nin kendi dilinde veya İngilizce girilebilir. Örneğin, yazabilirsiniz `File.NewFile` veya `Fichier.NouveauFichier` aynı komutu yürütmek için Fransızca IDE'de.
+## <a name="commands-with-arguments"></a>Bağımsız değişkenlerle komutları
 
-Birçok komutun eş adları vardır. Komut diğer adları listesi için bkz. [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md).
-
-Aşağıdaki komutları, bağımsız değişkenler ve/veya anahtarlar alır.
+Aşağıdaki komutlar, bağımsız değişkenleri veya anahtarları alın:
 
 | Komut adı | Açıklama |
 | - | - |
@@ -74,8 +78,8 @@ Aşağıdaki komutları, bağımsız değişkenler ve/veya anahtarlar alır.
 | [İki durumlu kesme noktası](../../ide/reference/toggle-breakpoint-command.md) | Dosyadaki geçerli konumda geçerli durumuna bağlı olarak kesme noktasını açar veya devre dışı bırakır. |
 | [İzle Komutu](../../ide/reference/watch-command.md) | Oluşturur ve belirtilen bir örneğini açar bir **Watch** penceresi. |
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Komut Penceresi](../../ide/reference/command-window.md)
-- [Bul/Komut Kutusu](../../ide/find-command-box.md)
-- [Visual Studio Komut Diğer Adları](../../ide/reference/visual-studio-command-aliases.md)
+- [Komut penceresi](../../ide/reference/command-window.md)
+- [Bul/komut kutusu](../../ide/find-command-box.md)
+- [Visual Studio komut diğer adları](../../ide/reference/visual-studio-command-aliases.md)

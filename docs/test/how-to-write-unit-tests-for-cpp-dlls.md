@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226086"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132173"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'leri için birim testleri yazma
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226086"
 
   2. Seçin **yapılandırma özellikleri** > **genel**.
 
-  3. Ayarlama **yapılandırma türü** için **statik kitaplık (.lib)**.
+  3. Ayarlama **yapılandırma türü** için **statik kitaplık (.lib)** .
 
   Yordamı ile devam [testleri nesneye veya kitaplık dosyalarına bağlama](#objectRef).
 
@@ -68,15 +68,13 @@ ms.locfileid: "65226086"
 
       ::: moniker-end
 
-  2. İçinde **Çözüm Gezgini**, test projesinin kısayol menüsünde **başvuruları**. Proje **özellikleri** penceresi açılır.
+  1. İçinde **Çözüm Gezgini**test projesine sağ tıklayın ve ardından seçin **Ekle** > **başvuru**.
 
-  3. Seçin **ortak özellikler** > **çerçeve ve başvurular**ve ardından **Yeni Başvuru Ekle** düğmesi.
-
-  4. Seçin **projeleri**ve ardından test edilecek projeyi.
+  1. Seçin **projeleri**ve ardından test edilecek projeyi.
 
        Seçin **Ekle** düğmesi.
 
-  5. Test projesi için Özellikler'de test edilen projenin konumunu ek içerik dizinlerine ekleyin.
+  1. Test projesi için Özellikler'de test edilen projenin konumunu ek içerik dizinlerine ekleyin.
 
        Seçin **yapılandırma özellikleri** > **VC ++ dizinleri** > **ekleme kodu dizinleri**.
 

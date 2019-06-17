@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407750"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043323"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamada hata ayıklaması yapabilirsiniz. Bunu yapmak için Visual Studio uzaktan hata ayıklayıcıyı kullanın.
@@ -93,7 +93,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (*msvsmon.exe*) bir bilgisayarda Vi
      > [!IMPORTANT]
      > Visual Studio bilgisayarda kullandığınız kullanıcı hesabına ait farklı bir kullanıcı hesabı altında uzaktan hata ayıklayıcı çalıştırabilirsiniz, ancak farklı bir kullanıcı hesabı için uzaktan hata ayıklayıcının izinleri eklemeniz gerekir.
 
-     Alternatif olarak, komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: **msvsmon / allow \< username@computer>**.
+     Alternatif olarak, komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: **msvsmon / allow \< username@computer>** .
 
 - Kimlik doğrulama modunu veya bağlantı noktası numarasını değiştirin veya uzak araçlar için bir zaman aşımı değeri belirtmek gerekirse: seçin **Araçlar > Seçenekler**.
 

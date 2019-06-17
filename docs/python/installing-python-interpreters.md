@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747157"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043486"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
@@ -29,7 +29,7 @@ Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio, Python, resmi olarak desteklenen sürümleri tarafından belirtilen tüm destekler [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Özellikle, sürüm 2.7, 3.5, 3.6 ve 3.7.
+> Visual Studio için Python sürüm 2.7, de destekler sürüm 3.5 ve büyük olarak. Python'ın diğer sürümlerinde de yazılmış kod düzenlemek için Visual Studio kullanmak mümkün olsa da, bu sürümleri resmi olarak desteklenmez ve IntelliSense ve hata ayıklama gibi özellikleri çalışmayabilir.
 ::: moniker-end
 
 İçin **Visual Studio 2015 veya önceki**, yorumlayıcılarını birini el ile yüklemelisiniz.

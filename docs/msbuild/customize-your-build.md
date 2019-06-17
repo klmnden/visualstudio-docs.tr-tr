@@ -1,6 +1,6 @@
 ---
 title: Derlemenizi özelleştirme | Microsoft Docs
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778107"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141165"
 ---
 # <a name="customize-your-build"></a>Derlemenizi özelleştirme
 
@@ -93,7 +93,7 @@ Bu standart çözüm yapı olduğunu varsayalım:
     \Project2Tests
 ```
 
-Ortak özellikler tüm projeler için etmesi olabilir *(1)*, ortak özellikler için *src* projeleri *(2-src)* ve ortak özelliklerini  *Test* projeleri *(2-test)*.
+Ortak özellikler tüm projeler için etmesi olabilir *(1)* , ortak özellikler için *src* projeleri *(2-src)* ve ortak özelliklerini  *Test* projeleri *(2-test)* .
 
 Doğru "İç" dosyaları birleştirme MSBuild yapmak (*2 src* ve *2 test*) "dış" dosyasıyla (*1*), bir kez MSBuild bir bulduğunudikkatealmanızgerekir*Directory.Build.props* dosyasını durdurur daha ayrıntılı tarama. Taramaya devam etmek ve dış dosyaya birleştirmek için bu kodu her iki iç dosyalarına yerleştirin:
 
@@ -107,6 +107,36 @@ MSBuild'ın genel yaklaşım özetini aşağıdaki gibidir:
 - Tarama/birleştirme işlemini denetlemek için kullanmak `$(DirectoryBuildPropsPath)` ve `$(ImportDirectoryBuildProps)`
 
 Ya da daha basit: ilk *Directory.Build.props* herhangi bir şey içe aktarmaz olduğu yere MSBuild durdurur.
+
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Bir .props veya .targets dosyaya Özellikler ekleme arasında seçin
+
+MSBuild, içeri aktarma sırası bağımlı ve son bir özellik tanımı (veya `UsingTask` veya hedef) kullanılan tanımı.
+
+Açık içeri aktarmalar kullanırken içeri aktarabileceğiniz bir *.props* veya *.targets* herhangi bir noktada dosya. Yaygın olarak kullanılan kural şu şekildedir:
+
+- *.props* dosyaları erken alma sıraya alınır.
+
+- *.targets* dosyaları geç derleme sıraya alınır.
+
+Bu kural tarafından zorlanan `<Project Sdk="SdkName">` alır (diğer bir deyişle, içeri aktarılması *Sdk.props* ardından önce tüm dosya içeriğini önce gelirse *Sdk.targets* tüm içeriğini sonra son olarak, gelen dosyası).
+
+Özellikleri koymak karar verirken aşağıdaki genel yönergeleri kullanın:
+
+- Birçok özelliği için üzerine ve yalnızca yürütme sırasında okuma çünkü bunlar, tanımlandığı önemli değildir.
+
+- Tek bir projede özelleştirilmiş davranışı için varsayılan değerleri kümesi'nde *.props* dosyaları.
+
+- Bağımlı özelliklerini ayarlamaktan *.props* özelleştirme MSBuild kullanıcının proje olana kadar gerçekleşmez nedeni büyük olasılıkla özelleştirilmiş bir özelliğin değerini okuyarak dosyaları.
+
+- Kümesinde bağımlı Özellikler *.targets* dosyaları, çünkü bunlar bireysel projelerdeki özelleştirmeler alması.
+
+- Geçersiz kılma özellikleri gerekiyorsa, bunu bir *.targets* tüm kullanıcı proje özelleştirmeleri etkili olması için bir fırsat verdikten dosya. Özellikleri kullanarak türetilmiş oluştururken dikkatli olun; türetilmiş özellikleri de geçersiz kılınması gerekebilir.
+
+- Öğeleri dahil *.props* (bir özellikte koşuluna) dosyaları. Tüm özellikleri kullanıcı proje özelliği özelleştirmeleri toplanmış ve bu kullanıcının proje için kullanıcıya fırsat veren herhangi bir öğeyi önce değerlendirilir `Remove` veya `Update` herhangi bir öğeyi getirildi içeri aktarma işlemi.
+
+- Hedeflerini tanımlamak *.targets* dosyaları. Ancak, varsa *.targets* dosya bir SDK'sı tarafından alınır, bu senaryo daha zor hedef kullanıcının proje varsayılan olarak geçersiz kılmak için bir yer olmadığı için geçersiz kılma aklınızdan unutmayın.
+
+- Mümkünse, bir hedef içinde özelliklerini değiştirme özellikleri değerlendirme zaman özelleştirme tercih eder. Bu kılavuz bir proje yüklenecek ve ne yaptığını anlamak daha kolay hale getirir.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
@@ -138,7 +168,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-Daha sonra. Bu derleme mantığının ortak proje türleri genişletmek yüklenmiş SDK'ları sağlar.
+Daha sonra. Bu kural, ortak proje türleri derleme mantığını genişletmek yüklenmiş SDK'ları sağlar.
 
 Aynı dizin yapısını içinde aranması `$(MSBuildUserExtensionsPath)`, kullanıcı başına klasör *%LOCALAPPDATA%\Microsoft\MSBuild*. Bu kullanıcının kimlik bilgileri altında çalışıyor ilgili proje türünün tüm derlemeler için bu klasöre yerleştirilen dosyaları içeri aktarılır. İçeri aktarma dosyası deseninde sonra adlı özelliklerini ayarlayarak kullanıcı uzantılarını devre dışı bırakabilirsiniz `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Örneğin, ayarlamak `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` için `false` alma önleyen `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 

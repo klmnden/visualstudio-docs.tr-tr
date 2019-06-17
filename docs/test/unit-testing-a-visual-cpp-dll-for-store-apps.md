@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226369"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132188"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
@@ -81,7 +81,7 @@ Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde s
 
 ::: moniker range="vs-2019"
 
-İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve arama kutusuna "DLL" yazın. Sonuç listesinden seçin **birim testi uygulaması (Evrensel Windows - C++/CX)**.
+İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve arama kutusuna "DLL" yazın. Sonuç listesinden seçin **birim testi uygulaması (Evrensel Windows - C++/CX)** .
 
 ![RooterLib projesi oluşturma](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde s
 
 ::: moniker-end
 
-1. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)**.
+1. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)** .
 
 2. Aşağıdaki kodu ekleyin *RooterLib.h* dosyası:
 
@@ -152,13 +152,9 @@ Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde s
 
 1. RooterLib RooterLibTests projeye ekleyin.
 
-   1. İçinde **Çözüm Gezgini**, seçin **RooterLibTests** proje ve ardından **başvuruları** kısayol menüsünde.
+   1. İçinde **Çözüm Gezgini**, seçin **RooterLibTests** proje ve ardından **Ekle** > **başvuru** kısayolunu menüsü.
 
-   2. Üzerinde **RooterLib proje özellikleri** iletişim kutusunda **ortak özellikler** ve **çerçeve ve başvurular**.
-
-   3. Seçin **Yeni Başvuru Ekle**
-
-   4. İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.
+   1. İçinde **Başvuru Ekle** iletişim kutusunda **projeleri**. Ardından **RouterLib** öğesi.
 
 2. RooterLib üstbilgi dosyasına eklenecek *unittest1.cpp*.
 

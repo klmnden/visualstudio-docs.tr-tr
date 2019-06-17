@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747563"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043358"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -40,7 +40,7 @@ Kullanmaya başlamak için:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio, Python, resmi olarak desteklenen sürümleri tarafından belirtilen tüm destekler [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Özellikle, sürüm 2.7, 3.5, 3.6 ve 3.7.
+> Visual Studio için Python sürüm 2.7, de destekler sürüm 3.5 ve büyük olarak. Python'ın diğer sürümlerinde de yazılmış kod düzenlemek için Visual Studio kullanmak mümkün olsa da, bu sürümleri resmi olarak desteklenmez ve IntelliSense ve hata ayıklama gibi özellikleri çalışmayabilir.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Birden çok yorumlayıcılarını desteği

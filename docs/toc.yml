@@ -399,7 +399,7 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: Üye çekme
                       href: ide/reference/pull-members-up.md
-                    - name: IntelliSense ile normal ifade tamamlama
+                    - name: IntelliSense aracılığıyla Regex tamamlama
                       href: ide/reference/regex-completion-through-intellisense.md
                     - name: Erişilemeyen kodları kaldırma
                       href: ide/reference/remove-unreachable-code.md
@@ -417,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'İzlenecek yol: Kullanımdan kod oluşturma'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: İpuçları ve püf noktaları
-              items:
-                - name: Üretkenlik ipuçları
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: Klavye kısayolları
-                  items:
-                    - name: Klavye kısayolları
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: Klavye kısayollarını tanımlama ve özelleştirme
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: Sık kullanılan komutlar için kısayollar
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: Tüm klavye kısayolları
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'C# geliştiricileri için ipuçları'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: IntelliSense kullanma
@@ -677,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: Mimariyi Analiz Etme ve Mimari Modelini Oluşturma...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: İpuçları ve püf noktaları
+      items:
+        - name: Üretkenlik özellikleri
+          href: ide/productivity-features.md
+        - name: Üretkenlik kısayolları
+          href: ide/productivity-shortcuts.md
+        - name: 'C# geliştiricileri için ipuçları'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Klavye kısayollarını özelleştirme
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Yalnızca klavyeyi kullanma
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: Kişiselleştirme
       items:
         - name: IDE’yi Özelleştirme
@@ -685,6 +682,7 @@
         - name: 'Hızlı Başlangıç: Tema ve metin renklerini kişiselleştirme'
           href: ide/quickstart-personalize-the-ide.md
         - name: Ortam ayarları
+          displayName: profiles
           href: ide/environment-settings.md
         - name: Eşitlenmiş ayarlar
           href: ide/synchronized-settings-in-visual-studio.md
@@ -704,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Dış araçları yönetme
           href: ide/managing-external-tools.md
-    - name: Performans
+    - name: Visual Studio'nun performansı
       items:
         - name: Performansı en iyi hale getirme
           href: ide/optimize-visual-studio-performance.md
@@ -720,15 +718,96 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: IDE erişilebilirlik seçeneklerini ayarlama
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Yalnızca klavyeyi kullanma
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: Erişilebilirlik ipuçları ve püf noktaları
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Başvuru
   items:
-    - name: Genel Kullanıcı Arabirimi Öğeleri
+    - name: Klavye kısayolları
+      items:
+        - name: Popüler komutlar
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: Tüm komutlar
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Visual Studio komutları
+      items:
+        - name: Başvuru
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: Komut diğer adları
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: Varolan Öğeyi Ekle komutu
+          href: ide/reference/add-existing-item-command.md
+        - name: Varolan Projeyi Ekle komutu
+          href: ide/reference/add-existing-project-command.md
+        - name: Yeni Öğe Ekle komutu
+          href: ide/reference/add-new-item-command.md
+        - name: Diğer Ad komutu
+          href: ide/reference/alias-command.md
+        - name: Deyimi Değerlendir komutu
+          href: ide/reference/evaluate-statement-command.md
+        - name: Bul komutu
+          href: ide/reference/find-command.md
+        - name: Dosyalarda Bul komutu
+          href: ide/reference/find-in-files-command.md
+        - name: Git komutu
+          href: ide/reference/go-to-command.md
+        - name: Ayarları İçeri ve Dışarı Aktar komutu
+          href: ide/reference/import-and-export-settings-command.md
+        - name: Çağrı Yığınını Listele komutu
+          href: ide/reference/list-call-stack-command.md
+        - name: Ayrıştırılmış Kodu Listele komutu
+          href: ide/reference/list-disassembly-command.md
+        - name: Belleği Listele komutu
+          href: ide/reference/list-memory-command.md
+        - name: Modülleri Listele komutu
+          href: ide/reference/list-modules-command.md
+        - name: Yazmaçları Listele komutu
+          href: ide/reference/list-registers-command.md
+        - name: Kaynağı Listele komutu
+          href: ide/reference/list-source-command.md
+        - name: İş Parçacıklarını Listele komutu
+          href: ide/reference/list-threads-command.md
+        - name: Komut Penceresi Çıkışını Günlüğe Kaydet komutu
+          href: ide/reference/log-command-window-output-command.md
+        - name: Yeni Dosya komutu
+          href: ide/reference/new-file-command.md
+        - name: Dosya Aç komutu
+          href: ide/reference/open-file-command.md
+        - name: Proje Aç komutu
+          href: ide/reference/open-project-command.md
+        - name: Yazdır komutu
+          href: ide/reference/print-command.md
+        - name: Hızlı Bakış komutu
+          href: ide/reference/quick-watch-command.md
+        - name: Değiştir komutu
+          href: ide/reference/replace-command.md
+        - name: Dosyalarda Değiştir komutu
+          href: ide/reference/replace-in-files-command.md
+        - name: Geçerli Süreci Ayarla
+          href: ide/reference/set-current-process.md
+        - name: Geçerli Yığın Çerçevesini Ayarla komutu
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: Geçerli İş Parçacığını Ayarla komutu
+          href: ide/reference/set-current-thread-command.md
+        - name: Sayı Tabanını Ayarla komutu
+          href: ide/reference/set-radix-command.md
+        - name: Kabuk komutu
+          href: ide/reference/shell-command.md
+        - name: ShowWebBrowser komutu
+          href: ide/reference/showwebbrowser-command.md
+        - name: Başlat komutu
+          href: ide/reference/start-command.md
+        - name: Sembol Yolu komutu
+          href: ide/reference/symbol-path-command.md
+        - name: Kesme Noktasını Değiştir komutu
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: İzle komutu
+          href: ide/reference/watch-command.md
+    - name: Genel kullanıcı arabirimi öğeleri
       displayName: Windows and dialogs
       items:
         - name: Çağrı Hiyerarşisi
@@ -963,7 +1042,7 @@
               href: ide/reference/toolbox-data-tab.md
             - name: 'Araç Kutusu, HTML Sekmesi'
               href: ide/reference/toolbox-html-tab.md
-    - name: Devenv Komut Satırı Anahtarları
+    - name: Devenv komut satırı anahtarları
       items:
         - name: Başvuru
           displayName: devenv command-line switches
@@ -1012,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Visual Studio Komutları
-      items:
-        - name: Başvuru
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Visual Studio Komut Diğer Adları
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: Varolan Öğeyi Ekle Komutu
-          href: ide/reference/add-existing-item-command.md
-        - name: Varolan Projeyi Ekle Komutu
-          href: ide/reference/add-existing-project-command.md
-        - name: Yeni Öğe Ekle Komutu
-          href: ide/reference/add-new-item-command.md
-        - name: Diğer Ad Komutu
-          href: ide/reference/alias-command.md
-        - name: Deyimi Değerlendir Komutu
-          href: ide/reference/evaluate-statement-command.md
-        - name: Bul Komutu
-          href: ide/reference/find-command.md
-        - name: Dosyalarda Bul Komutu
-          href: ide/reference/find-in-files-command.md
-        - name: Git Komutu
-          href: ide/reference/go-to-command.md
-        - name: Ayarları İçeri ve Dışarı Aktar Komutu
-          href: ide/reference/import-and-export-settings-command.md
-        - name: Çağrı Yığınını Listele Komutu
-          href: ide/reference/list-call-stack-command.md
-        - name: Ayrıştırılmış Kodu Listele Komutu
-          href: ide/reference/list-disassembly-command.md
-        - name: Belleği Listele Komutu
-          href: ide/reference/list-memory-command.md
-        - name: Modülleri Listele Komutu
-          href: ide/reference/list-modules-command.md
-        - name: Yazmaçları Listele Komutu
-          href: ide/reference/list-registers-command.md
-        - name: Kaynağı Listele Komutu
-          href: ide/reference/list-source-command.md
-        - name: İş Parçacıklarını Listele Komutu
-          href: ide/reference/list-threads-command.md
-        - name: Command penceresi çıktısı günlüğü tut komutu
-          href: ide/reference/log-command-window-output-command.md
-        - name: Yeni Dosya Komutu
-          href: ide/reference/new-file-command.md
-        - name: Dosya Aç Komutu
-          href: ide/reference/open-file-command.md
-        - name: Proje Aç Komutu
-          href: ide/reference/open-project-command.md
-        - name: Yazdır Komutu
-          href: ide/reference/print-command.md
-        - name: Hızlı Bakış Komutu
-          href: ide/reference/quick-watch-command.md
-        - name: Değiştir Komutu
-          href: ide/reference/replace-command.md
-        - name: Dosyalarda Değiştir Komutu
-          href: ide/reference/replace-in-files-command.md
-        - name: Geçerli Süreci Ayarla
-          href: ide/reference/set-current-process.md
-        - name: Geçerli Yığın Çerçevesini Ayarla Komutu
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: Geçerli İş Parçacığını Ayarla Komutu
-          href: ide/reference/set-current-thread-command.md
-        - name: Sayı Tabanını Ayarla Komutu
-          href: ide/reference/set-radix-command.md
-        - name: Kabuk Komutu
-          href: ide/reference/shell-command.md
-        - name: ShowWebBrowser Komutu
-          href: ide/reference/showwebbrowser-command.md
-        - name: Başlat Komutu
-          href: ide/reference/start-command.md
-        - name: Sembol Yolu Komutu
-          href: ide/reference/symbol-path-command.md
-        - name: Kesim Noktasını Değiştir Komutu
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: İzle Komutu
-          href: ide/reference/watch-command.md
     - name: Güvenlik
       items:
         - name: Güvenli uygulamalar geliştirme

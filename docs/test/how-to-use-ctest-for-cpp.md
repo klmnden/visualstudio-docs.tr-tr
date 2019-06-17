@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1bd42d29842bde5f5f0ce70c64561e0ce77b33a4
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714894"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043467"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>İçin CTest kullanma C++ Visual Studio 2017 ve üzeri
 
-(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü geliştirme** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **ile masaüstü geliştirme C++**  düğmesine ve ardından tıklayın **Değiştir**. Denetleme [görsel için CMake araçlarını C++ ](/cpp/build/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
+(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü geliştirme** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **ile masaüstü geliştirme C++**  düğmesine ve ardından tıklayın **Değiştir**. Denetleme [görsel için CMake araçlarını C++ ](/cpp/ide/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
 
 ## <a name="to-write-tests"></a>Testler yazmak için
 

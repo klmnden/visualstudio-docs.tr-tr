@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: cdef82a8601cb2c9b0b4d3e4cad4071241f239a8
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820938"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043367"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
-Klavye erişilebilirliği hakkında daha fazla bilgi için bkz: [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: Yalnızca klavyeyi kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Çeşitli erişebileceğiniz [komutları](reference/visual-studio-commands.md) ve Visual Studio'da uygun klavye kısayolunu seçerek pencereleri. Bu sayfa için varsayılan komut kısayolları listeler **genel** profil, hangi Visual Studio yüklü olduğunda seçmiş olabilirsiniz. Seçtiğiniz profilden bağımsız olarak yapabilecekleriniz [kısayol tanımlamak](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) açarak bir komutun **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **Klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
 
-Çeşitli komutlara ve pencerelere Visual Studio'da uygun klavye kısayolunu seçerek erişebilirsiniz. Bu sayfada ilişkin varsayılan kısayollar listelenmektedir **genel** profil, hangi Visual Studio yüklü olduğunda seçmiş olabilirsiniz. Seçtiğiniz profilden bağımsız olarak açarak bir komutun kısayolunu belirleyebilirsiniz **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
+Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz:
 
-Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz. [Visual Studio'daki sık kullanılan komutlar için klavye kısayolları varsayılan](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klavye ipuçları](../ide/tips-and-tricks-for-visual-studio.md), ve [ Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md).
+- [Sık kullanılan komutlar için klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Klavye ipuçları](../ide/productivity-shortcuts.md)
+- [Üretkenlik ipuçları](../ide/productivity-features.md).
+
+Visual Studio'da erişilebilirlik hakkında daha fazla bilgi için bkz. [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: Yalnızca klavyeyi kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -1150,5 +1154,4 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Simgeler için görüntü Düzenleyicisi](/cpp/windows/image-editor-for-icons)
-- [IntelliSense Kullanma](../ide/using-intellisense.md)
+- [Visual Studio komutları](reference/visual-studio-commands.md)

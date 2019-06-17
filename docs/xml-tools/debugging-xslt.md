@@ -9,14 +9,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838486"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043540"
 ---
-# <a name="debugging-xslt"></a>XSLT hata ayıklama
+# <a name="debugging-xslt"></a>XSLT Hatalarını Ayıklama
 
 Visual Studio XSLT kodunda hata ayıklaması yapabilirsiniz. XSLT hata ayıklayıcı, kesme noktaları ayarlama, XSLT yürütme durumlarını görüntüleme destekler ve benzeri. XSLT hata ayıklayıcısı, XSLT stil sayfalarını veya XSLT uygulamalarda hata ayıklamak için kullanılabilir.
 
@@ -25,7 +25,7 @@ Visual Studio XSLT kodunda hata ayıklaması yapabilirsiniz. XSLT hata ayıklay�
 XSLT hata ayıklayıcı, hata ayıklamayı başlattıktan sonra giriş belge ve XSLT çıkış göstermek için windows açılır.
 
 > [!NOTE]
-> XSLT hata ayıklayıcısı yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
+> XSLT hata ayıklayıcısı yalnızca Visual Studio Professional ve Enterprise sürümlerinde kullanılabilir.
 
 ## <a name="debug-from-the-xml-editor"></a>XML Düzenleyicisi'nden hata ayıklama
 

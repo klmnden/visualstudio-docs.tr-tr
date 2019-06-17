@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 04fc7b1f7ac0505d8d4daf8c3a7836dd48cfad14
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501095"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132180"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac için Visual Studio'da bir sorun bildirme
 
@@ -42,9 +42,6 @@ Mac için Visual Studio ile ilgili bir sorun bildirmek için seçin **Yardım > 
    ![Arama ve benzer sorunlar için oy](media/report-problem-image4.png)
 
 1. Karşılaştığınız sorun bulamazsanız seçin **yeni bir sorun bildirmek** ekran tarafında.
-
-   > [!NOTE]
-   > **Yeni bir sorun bildirmek** yalnızca düğmesinin arabirimi Mac için Visual Studio için geliştirici topluluğu. Doğrudan bir sorun raporlayamaz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) Web sitesi.
 
 1. Yönlendirecek doğru Visual Studio Mac takım için bize yardımcı olacak sorun için açıklayıcı bir başlık oluşturun.
 

@@ -1,18 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820770"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132138"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu
 
@@ -25,7 +25,8 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 Üst bilgi ve LIB yolları yerel Test projesinde otomatik olarak yapılandırılır.
 
 ## <a name="In_this_topic"></a> Bu konudaki
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Test sınıflar ve yöntemler oluşturma](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Bir veya daha fazla tanımlanan öznitelik ekler `TEST_METHOD_ATTRIBUTE` makroları test yöntemi *testClassName*.
+ Bir veya daha fazla tanımlanan öznitelik ekler `TEST_METHOD_ATTRIBUTE` makroları test yöntemi *testMethodName*.
 
  A `TEST_METHOD_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  A `TEST_MODULE_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Önceden tanımlı öznitelikleri
- Bu önceden tanımlı öznitelik makroları makroları yerine kullanılabileceği `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, veya `TEST_MODULE_ATTRIBUTE` yukarıda açıklanan.
+
+ Bu önceden tanımlı öznitelik makroları yaygın örnekleri için bir kolaylık olarak sağlanır. Makro yerine `TEST_METHOD_ATTRIBUTE` yukarıda açıklanan.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Bu ada sahip bir öznitelik tanımlar `Owner` ve öznitelik değeri *ownerAlias*.
+ Tanımlayan bir `TEST_METHOD_ATTRIBUTE` adıyla `Owner` ve öznitelik değeri *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Bu ada sahip bir öznitelik tanımlar `Description` ve öznitelik değeri *açıklama*.
+ Tanımlayan bir `TEST_METHOD_ATTRIBUTE` adıyla `Description` ve öznitelik değeri *açıklama*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Bu ada sahip bir öznitelik tanımlar `Priority` ve öznitelik değeri *öncelik*.
+ Tanımlayan bir `TEST_METHOD_ATTRIBUTE` adıyla `Priority` ve öznitelik değeri *öncelik*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Bu ada sahip bir öznitelik tanımlar `WorkItem` ve öznitelik değeri *WorkItem*.
+ Tanımlayan bir `TEST_METHOD_ATTRIBUTE` adıyla `WorkItem` ve öznitelik değeri *WorkItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Bu ada sahip bir öznitelik tanımlar `Ignore` ve öznitelik değeri `true`.
+ Tanımlayan bir `TEST_METHOD_ATTRIBUTE` adıyla `Ignore` ve öznitelik değeri `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

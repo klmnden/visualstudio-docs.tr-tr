@@ -1,18 +1,18 @@
 ---
 title: "Nasıl yapılır: C++ DLL'leri için birim testleri yazma"
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226281"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132159"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Nasıl yapılır: C++ DLL'leri için birim testleri yazma
 
@@ -152,13 +152,9 @@ Aşağıdaki adımlar Visual Studio 2017'de bir DLL projesi oluşturma işlemini
 
 1. DLL projesi için test projesinin proje başvurularını ekleyin:
 
-   1. Test proje özelliklerini açın ve seçin **ortak özellikler** > **çerçeve ve başvurular**.
+   1. ' Nde test proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **başvuru**.
 
-        ![C++ proje özelliklerini | Çerçeve ve başvurular](../test/media/utecpp08.png)
-
-   2. Seçin **Yeni Başvuru Ekle**.
-
-        İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.
+   2. İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.
 
         ![C++ proje özelliklerini | Yeni Başvuru Ekle](../test/media/utecpp09.png)
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747328"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043404"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme
 
@@ -86,4 +86,4 @@ Bu klavye kısayollarını kullanabilirsiniz **Özet tanım** penceresi:
 
 - [Kod gidin](../ide/navigating-code.md)
 - [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)
-- [Üretkenlik ipuçları](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio üretkenlik özellikleri](../ide/productivity-features.md)
