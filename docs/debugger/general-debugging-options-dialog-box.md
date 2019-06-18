@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 516f3d87efd61189a3890f7e83064a96adad7e2d
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037382"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195230"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -69,7 +69,7 @@ Koşullarda 2 ve 3, özel durum bazen yönetilen kod tarafından yakalandı `msc
 
 **Özellik değerlendirmesini ve diğer örtük işlev çağrılarını ekinleştir**: Değişkenler pencerelerinde özelliklerin ve örtülü işlev otomatik olarak değerlendirilmesini etkinleştirir çağırır ve **QuickWatch** iletişim kutusu.
 
-- **Değişken pencerelerindeki nesnelerde dize dönüştürme işlevini çağırma (C# ve yalnızca JavaScript)**: Değişken pencerelerinde nesneleri değerlendirirken bir örtük dize dönüştürmesi çağrısı yürütür. Sonuç tür adı yerine bir dize olarak görüntülenir. Yalnızca C# kodunda hata ayıklama sırasında uygulanır. Bu ayar DebuggerDisplay özniteliği tarafından geçersiz kılınmış olabilir (bakın [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)).
+- **Değişken pencerelerindeki nesnelerde dize dönüştürme işlevini çağırma (C# ve yalnızca JavaScript)** : Değişken pencerelerinde nesneleri değerlendirirken bir örtük dize dönüştürmesi çağrısı yürütür. Sonuç tür adı yerine bir dize olarak görüntülenir. Yalnızca C# kodunda hata ayıklama sırasında uygulanır. Bu ayar DebuggerDisplay özniteliği tarafından geçersiz kılınmış olabilir (bakın [DebuggerDisplay özniteliğini kullanma](../debugger/using-the-debuggerdisplay-attribute.md)).
 
 **Kaynak sunucusu desteğini etkinleştir**: Visual Studio hata ayıklayıcıya SrcSrv uygulayan kaynak sunuculardan kaynak dosyaları almak için (`srcsrv.dll`) protokolü. Team Foundation Server ve Windows için hata ayıklama araçları protokol uygulayan iki kaynak sunucular olan. SrcSrv kurulumu hakkında daha fazla bilgi için bkz. [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) belgeleri. Ayrıca bkz [belirtin, sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
@@ -153,6 +153,10 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 **Çalıştır'ı tıklatın Göster düğmesini düzenleyicide hata ayıklama sırasında**: Bu seçenek belirlendiğinde, [tıklanan satıra kadar Çalıştır](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) hata ayıklama sırasında düğmesi gösterilir.
 
 **Hata ayıklama durdurulduğunda Konsolu otomatik olarak kapatmak**: Hata ayıklama oturumu sonunda Konsolu kapatmak için Visual Studio söyler.
+
+::: moniker range=">= vs-2019" 
+**Hızlı ifade değerlendirme (sadece yönetilen) etkinleştirme**: Basit özellik ve Yöntem yürütme benzetimini yaparak daha hızlı değerlendirme denemesi hata ayıklayıcı sağlar.
+::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Visual Studio'nun eski sürümlerinde kullanılabilir seçenekleri
 

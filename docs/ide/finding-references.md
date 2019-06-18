@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793511"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195259"
 ---
 # <a name="find-references-in-your-code"></a>Kodunuzdaki başvuruları bulma
 
@@ -48,7 +48,7 @@ Varsayılan olarak, başvuruları projeye göre ardından tanımına göre grupl
 **Tanımı** ve **proje** iki varsayılan gruplandırmaları kullanılır, ancak diğerleri seçerek ekleyebilirsiniz **gruplandırma** seçili öğenin sağ tıklayın veya bağlam menüsünde komutu. Daha fazla gruplandırmaları ekleme dosyaları ve yolları birçok çözümünüz varsa yararlı olabilir.
 
 ## <a name="filter-by-reference-type-in-net"></a>. NET'te başvuru türüne göre filtrele
-İçinde C# veya Visual Basic başvuruları Bul penceresi burada listeler bulduğu ne tür bir başvuru türü bir sütun vardır. Bu sütunda, sütun üst bilgisinin gelindiğinde görüntülenen filtre simgesine tıklayarak başvuru türüne göre filtrelemek için kullanılabilir. Başvurular, okuma, yazma, başvuru ve NameOnly göre filtrelenebilir.
+İçinde C# veya Visual Basic başvuruları Bul penceresi burada listeler bulduğu ne tür bir başvuru türü bir sütun vardır. Bu sütunda, sütun üst bilgisinin gelindiğinde görüntülenen filtre simgesine tıklayarak başvuru türüne göre filtrelemek için kullanılabilir. Başvurular, okuma, yazma, başvuru, adı, Namespace ve türü tarafından filtrelenebilir.
 
 ![Başvuruları penceresi türü sütununda bulur. ](../ide/media/vside_findallreferencesKind.png)
 

@@ -23,7 +23,7 @@ Oluşturabileceğiniz bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil ol
   
  Tanımlayıcıları karşılaştırma kategorileri ve alanların listesi için aşağıdaki komutu yazın:  
   
- **VSPerfReport/querydifftables***VspFileName1* *VspFileName2*  
+ **VSPerfReport/querydifftables**  *VspFileName1* *VspFileName2*  
   
  Karşılaştırma raporu oluşturmak için aşağıdaki sözdizimini kullanın:  
   

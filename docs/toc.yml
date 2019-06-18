@@ -226,11 +226,7 @@
             - name: 'Uygulama simgesi belirtme (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Bir çerçeveyi hedefleme
-              items:
-                - name: Çoklu sürüm desteğine genel bakış
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: .NET Framework’ün bir sürümünü hedefleme
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Şablon oluşturma
               items:
                 - name: Proje ve öğe şablonları oluşturma
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Rename
                       href: ide/reference/rename.md
+                    - name: Birleştir veya ayır if deyimleri
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Ad alanı ile klasör adını eşitleme
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Eşitleme türü ve dosya adı
                       href: ide/reference/sync-type-and-file.md
                     - name: Açık tür kullanma

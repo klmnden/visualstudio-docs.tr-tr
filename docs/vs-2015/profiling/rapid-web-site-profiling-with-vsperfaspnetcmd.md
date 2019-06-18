@@ -46,7 +46,7 @@ ms.locfileid: "63438899"
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Ayrıntılı izleme metodunu kullanarak zamanlama verileri toplamak için  
  Dinamik olarak derlenmiş ayrıntılı zamanlama verileri toplamak için şu komut satırını kullanın [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulaması:  
   
- **vsperfaspnetcmd/Trace***websiteUrl*  
+ **vsperfaspnetcmd/Trace**  *websiteUrl*  
   
  Statik olarak derlenmiş bir .dll dosyaları Web uygulamanızın profilini oluşturmak istiyorsanız, kullanarak dosyaları işaretlemelidir [Vsınstr](../profiling/vsinstr.md) komut satırı aracı. Vsperfaspnetcmd/Trace komut dosyalarından izleme eklenmiş veriler içerir.  
   

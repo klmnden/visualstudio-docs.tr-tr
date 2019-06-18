@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715263"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195299"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>İzlenecek yol: Kod kusurları için yönetilen kodu analiz etme
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>İzlenecek yol: Kod hatalarını bulmak için kullanmak statik kod analizi
 
 Bu izlenecek yolda Kod Analizi aracını kullanarak kod kusurları için yönetilen bir proje analiz.
 
-Bu kılavuzda, .NET tasarım yönergeleri ile uyumluluk için bütünleştirilmiş kodlarınızı .NET yönetilen kodu analiz etmek için kod analizini kullanarak işleminin adım gösterilir.
+Bu kılavuzda, .NET tasarım yönergeleri ile uyumluluk için bütünleştirilmiş kodlarınızı .NET yönetilen kodu analiz etmek için statik kod analizini kullanarak işleminin adım gösterilir.
 
 ## <a name="create-a-class-library"></a>Bir sınıf kitaplığı oluşturma
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825487"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195240"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET derleyici platformu Çözümleyicileri genel bakış
 
-.NET derleyici Platformu ("Roslyn") Çözümleyicileri stili, kalite ve Bakım, tasarım ve diğer sorunlar için kodunuzu analiz edin. Visual Studio analiz Çözümleyicileri yerleşik bir kümesini içerir, C# veya yazarken Visual Basic kodunu yazın. Bu yerleşik Çözümleyicileri tercihlerini yapılandırabileceğiniz [metin düzenleyici seçenekleri](../ide/code-styles-and-quick-actions.md) sayfası veya bir [.editorconfig dosyasındaki](../ide/editorconfig-code-style-settings-reference.md). Visual Studio uzantısı veya bir NuGet paketi olarak ek Çözümleyicileri yükleyebilirsiniz.
+.NET derleyici Platformu ("Roslyn") Çözümleyicileri stili, kalite ve Bakım, tasarım ve diğer sorunlar için kodunuzu analiz edin. Visual Studio analiz Çözümleyicileri yerleşik bir kümesini içerir, C# veya yazarken Visual Basic kodunu yazın. Bu yerleşik Çözümleyicileri tercihlerini yapılandırabileceğiniz [metin düzenleyici seçenekleri](../ide/code-styles-and-code-cleanup.md) sayfası veya bir [.editorconfig dosyasındaki](../ide/editorconfig-code-style-settings-reference.md). Visual Studio uzantısı veya bir NuGet paketi olarak ek Çözümleyicileri yükleyebilirsiniz.
 
 Kural ihlallerinin bir çözümleyici tarafından bulunamazsa, Kod Düzenleyicisi'nde raporlanır (olarak bir *dalgalı* sorunlu kod altında) ve **hata listesi** penceresi.
 
@@ -32,9 +32,9 @@ Birçok çözümleyicisi kuralları veya *tanılama*, olması bir veya daha fazl
 
 .NET derleyici Platformu ("Roslyn") Çözümleyicileri sonunda yerini alacak [statik kod analizi](../code-quality/code-analysis-for-managed-code-overview.md) yönetilen kod için. Statik kod analizi kuralları çoğunu zaten olarak Roslyn Çözümleyicisi tanılama yazıldı.
 
-Roslyn Çözümleyicisi ihlalleri statik kod analizi kural ihlalleri gibi görünen **hata listesi**. Ayrıca, Roslyn Çözümleyicisi ihlalleri ayrıca Kod düzenleyicisinde görünmesini *squigglies* sorunlu kod altında. Dalgalı rengi bağımlı [önem derecesi ayarına](../code-quality/use-roslyn-analyzers.md#rule-severity) kural. Üç ihlalleri aşağıdaki ekran görüntüsünde gösterilmektedir&mdash;bir kırmızı, yeşil bir ve bir gri:
+Roslyn Çözümleyicisi ihlalleri statik kod analizi kural ihlalleri gibi görünen **hata listesi**. Ayrıca, Roslyn Çözümleyicisi ihlalleri ayrıca Kod düzenleyicisinde görünmesini *dalgalı çizgiler* sorunlu kod altında. Dalgalı çizgi rengini bağımlı [önem derecesi ayarına](../code-quality/use-roslyn-analyzers.md#rule-severity) kural. Üç ihlalleri aşağıdaki ekran görüntüsünde gösterilmektedir&mdash;bir kırmızı, yeşil bir ve bir gri:
 
-![Kod düzenleyicisinde Squigglies](media/diagnostics-severity-colors.png)
+![Kod düzenleyicisindeki dalgalı çizgiler](media/diagnostics-severity-colors.png)
 
 Roslyn çözümleyicilerini etkinleştirildi ancak siz yazarken canlı, ayrıca, statik kod analizi gibi derleme zamanında kod analiz edin. Etkinleştirirseniz [tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), Roslyn Çözümleyicileri de düzenleyicide açık olmayan kod dosyaları tasarım zamanı analizini sağlar.
 
@@ -79,6 +79,14 @@ Aşağıdaki ekran görüntüsünde, komut satırı derleme çıktı Çözümley
 ### <a name="rule-severity"></a>Kural önem derecesi
 
 Visual Studio uzantısı olarak yüklenen Çözümleyicileri gelen kural önem derecesi olarak ayarlanamıyor. Yapılandırmak için [kural önem derecesi](../code-quality/use-roslyn-analyzers.md#rule-severity), bir NuGet paketi olarak çözümleyicilerini yükleme.
+
+### <a name="categories"></a>Kategoriler
+
+Kodunuzu çözümlemenize yardımcı Çözümleyicileri farklı türleri aşağıda verilmiştir. 
+
+- Microsoft'un Çözümleyicileri önerilir: [FxCop Çözümleyicileri](../code-quality/fxcop-analyzers.yml)
+- Visual Studio IDE Çözümleyicileri: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Üçüncü taraf Çözümleyicileri: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Çözümleyicileri](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Çözümleyicisi](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
