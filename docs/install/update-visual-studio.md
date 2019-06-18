@@ -2,7 +2,7 @@
 title: Visual Studio’yu güncelleştirme
 titleSuffix: ''
 description: Visual Studio en son sürümüne, adım adım güncelleştirmeyi öğrenebilirsiniz.
-ms.date: 03/30/2019
+ms.date: 06/15/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 03b495587d6107a06ef5d36e614c892e226011aa
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263064"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160027"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
@@ -28,7 +28,7 @@ ms.locfileid: "66263064"
 
 En fazla güncelleştirmenizi öneriyoruz [son sürümü](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017'in böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
 
-Ve sonraki sürümü deneyin istiyorsanız, indirme göz önünde bulundurun [Sürüm Adayı](/visualstudio/releases/2019/release-notes/) Visual Studio 2019'ın çok.
+Ve müşterilerimize en yeni sürümü deneyin istiyorsanız, indirme göz önünde bulundurun [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) yerine.
 
 > [!IMPORTANT]
 > Yüklemek, güncelleştirmek veya Visual Studio değiştirmek için yönetici izinleri olan bir hesapla oturum açmalısınız. Daha fazla bilgi için [kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -94,7 +94,7 @@ Visual Studio'nun önceki sürümlerinde olduğu gibi bir güncelleştirmeyi yü
    > [!NOTE]
    > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
 
-1. Üzerinde **ürün** Yükleyicisi'nde arama Visual Studio'nun sürümü yüklü olduğu için sayfa.
+1. Üzerinde **ürün** Yükleyicisi'nde bulun, daha önce yüklediğiniz Visual Studio sürümü için sayfa.
 
 1. Bir güncelleştirme varsa, gördüğünüz bir **güncelleştirme** düğmesi. (Bir güncelleştirme kullanılabilir olup olmadığını belirlemek yükleyici için birkaç saniye sürebilir.)
 
@@ -150,7 +150,7 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
    > [!NOTE]
    > Windows 10 çalıştıran bir bilgisayarda, yükleyici harfi altında bulabilirsiniz **V** olarak **Visual Studio yükleyicisi**, veya harf altında **M** olarak  **Microsoft Visual Studio yükleyicisi**.
 
-1. Üzerinde **ürün** Yükleyicisi'nde arama Visual Studio'nun sürümü yüklü olduğu için sayfa.
+1. Üzerinde **ürün** Yükleyicisi'nde arama daha önce yüklü Visual Studio sürümü için sayfa.
 
 1. Bir güncelleştirme varsa, gördüğünüz bir **güncelleştirme** düğmesi. (Bir güncelleştirme kullanılabilir olup olmadığını belirlemek yükleyici için birkaç saniye sürebilir.)
 
@@ -170,7 +170,7 @@ En güncelleştirmenizi öneririz [son sürümü](/visualstudio/releases/2019/re
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio güncelleştirme](/visualstudio/mac/update).
 
-Karşıya görsel yükleme işte&nbsp;Studio&nbsp;2019&nbsp;Preview veya Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
+Karşıya görsel yükleme işte&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Visual Studio Yükleyicisi'ni kullanın
 
@@ -182,7 +182,7 @@ Karşıya görsel yükleme işte&nbsp;Studio&nbsp;2019&nbsp;Preview veya Visual&
 
 1. Yükleyicide, yüklediğiniz Visual Studio sürümü için bakın.
 
-   Örneğin, görseli daha önce yüklediyseniz&nbsp;Studio Community&nbsp;2019&nbsp;RC ve orada güncelleştirmesi bir'a ve ardından bir **güncelleştirme kullanılabilir** ileti Yükleyicisi'nde görüntülenir.
+   Örneğin, görseli daha önce yüklediyseniz&nbsp;Studio Community&nbsp;2019 ve ona ait bir güncelleştirme bir **güncelleştirme kullanılabilir** ileti Yükleyicisi'nde görüntülenir.
 
      ![Güncelleştirmek istediğiniz Visual Studio 2019'ın sürümü seçin](media/vs2019-update-visual-studio-community-rc.png "güncelleştirmek istediğiniz Visual Studio 2019'ın sürümü seçin")
 
@@ -202,7 +202,7 @@ Bir güncelleştirme olup olmadığını denetlemek ve menü çubuğunun ya da V
 
 1. Windows gelen **Başlat** menüsünde seçin **Visual Studio 2019**.
 
-    ![Visual Studio 2019 RC açın](media/vs2019-visual-studio-rc.png "Windows Visual Studio 2019'ı açın")
+    ![Visual Studio 2019 açın](media/vs2019-visual-studio-rc.png "Windows Visual Studio 2019'ı açın")
 
 1. Altında **başlama**, IDE açmak için herhangi bir seçenek seçin.
 

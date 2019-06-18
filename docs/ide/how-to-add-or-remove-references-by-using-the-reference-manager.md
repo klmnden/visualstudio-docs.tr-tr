@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745811"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160158"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
@@ -92,7 +92,7 @@ Listedeki bazı bileşenler, projenizi framework sürümüne bağlı olarak gös
 
 - Yeni bir framework sürümünü kullanan bileşen, daha önceki bir sürümünü hedefleyen bir proje ile uyumlu değil.
 
-   Bir proje için hedef framework sürümünü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework sürümü](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Bir proje için hedef framework sürümünü değiştirme hakkında daha fazla bilgi için bkz: [genel bakışı hedefleyen Framework](visual-studio-multi-targeting-overview.md).
 
 - .NET Framework 4 kullanan bileşen, .NET Framework 4.5 hedefleyen bir proje ile uyumlu değil.
 

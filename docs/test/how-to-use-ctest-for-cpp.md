@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 1bd42d29842bde5f5f0ce70c64561e0ce77b33a4
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043467"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160088"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>İçin CTest kullanma C++ Visual Studio 2017 ve üzeri
 
-(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü geliştirme** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **ile masaüstü geliştirme C++**  düğmesine ve ardından tıklayın **Değiştir**. Denetleme [görsel için CMake araçlarını C++ ](/cpp/ide/cmake-tools-for-visual-cpp) altında iş yükü bileşenlerin listesi.
+(Kod CTest içerir) CMake tümleşik Visual Studio IDE'ye varsayılan olarak **C++ ile masaüstü geliştirme** iş yükü. Makinenizde yüklemeniz gerekiyorsa, Visual Studio yükleyicisi programını açın, **ile masaüstü geliştirme C++**  düğmesine ve ardından tıklayın **Değiştir**. Seçin  **C++ Windows için CMake araçlarını** altında iş yükü bileşenlerin listesi.
 
 ## <a name="to-write-tests"></a>Testler yazmak için
 
-Visual Studio'da CMake desteği, Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve herhangi bir CMake ortamında olduğu gibi CTest testler yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz. [Visual C++ için CMake araçlarını](/cpp/ide/cmake-tools-for-visual-cpp).
+Visual Studio'da CMake desteği, Visual Studio Proje sistemi kullanılmaz. Bu nedenle, yazma ve herhangi bir CMake ortamında olduğu gibi CTest testler yapılandırın. Visual Studio'da CMake kullanma hakkında daha fazla bilgi için bkz. [Visual Studio'daki CMake projeleri](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Testleri çalıştırmak için
 

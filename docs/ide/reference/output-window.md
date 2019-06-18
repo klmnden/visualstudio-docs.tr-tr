@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746524"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159935"
 ---
 # <a name="output-window"></a>Çıktı penceresi
 
@@ -67,7 +67,7 @@ Bazı IDE özellikleri ve içinde çağrılan komutlarda [komut penceresi](../..
 
 Kendi uygulamalarınızı çalışma zamanında tanılama iletileri yazmak için de programlayabileceğiniz bir **çıkış** bölmesi. Bunu yapmak için üyeleri kullanan <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> sınıfını <xref:System.Diagnostics> .NET API ad alanı. Üyeleri <xref:System.Diagnostics.Debug> çözüm veya projenin hata ayıklama yapılandırmaları oluşturduğunuzda sınıfı görünen çıkış; üyeleri <xref:System.Diagnostics.Trace> sınıfı görüntü çıktısı hata ayıklama veya yayın yapılandırmaları oluşturduğunuzda. Daha fazla bilgi için [çıkış penceresindeki tanılama iletileri](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-C++'da, özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Tuşuna basarak **F1** uygun bir Yardım konusu, bir çıkış satıra görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı çıkışını biçimlendirmek](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+C++'da, özel derleme adımları oluşturma ve derleme olayları, uyarıları ve hataları görüntülenir ve sayılı **çıkış** bölmesi. Tuşuna basarak **F1** uygun bir Yardım konusu, bir çıkış satıra görüntüleyebilirsiniz. Daha fazla bilgi için [özel derleme adımı çıkışını biçimlendirmek](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Kaydırma davranışı
 
