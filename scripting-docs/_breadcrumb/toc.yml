@@ -12,7 +12,7 @@
           items: null
         - name: Windows Betik Arabirimleri
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: Başvuru
               tocHref: /scripting/winscript/reference/
