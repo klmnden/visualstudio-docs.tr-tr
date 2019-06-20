@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f623fd040bdd06b4d9de7c2258c6e907e2953edf
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043428"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291016"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Visual Studio üretkenliği Kılavuzu C# geliştiriciler
 
@@ -57,6 +57,8 @@ Popüler Visual Studio kısayolları şunlardır:
 | **CTRL**+**K**,**D** (varsayılan profili) veya **Ctrl**+**E**,**D**  (C# profili) | Belgeyi Biçimlendir | Yeni satır, aralık ve girintileme ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |
 | **CTRL**+ **\\** ,**Ctrl**+**E** (varsayılan profili) veya **Ctrl** + **W**,**E** (C# profili) | Hata Listesi görünümü | Belge, proje veya çözüm tüm hataları görmek |
 | **Alt** + **PgUp/PgDn** | Sonraki/önceki soruna gidin | Bağlantı Uyarısı, öneri, belgedeki önceki/sonraki hata için (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
+| **CTRL**+**K**, **/** | İki durumlu tek satır açıklama açıklamasını kaldırın | Bu komut, ekler veya seçiminizi zaten açıklamalı bağlı olarak bir tek satır açıklama kaldırır |
+| **CTRL**+**kaydırma**+ **/** | İki durumlu blok açıklama açıklamasını kaldırın | Bu komut ekler veya kaldırır seçmiş olduğunuz bağlı olarak açıklama engelle |
 
 > [!NOTE]
 > Bazı uzantılar, varsayılan Visual Studio tuş bağlamalarını bağlamayı Kaldır. Yukarıdaki komutları kullanmak için tuş bağlamaları Visual Studio'nun ayarlarına giderek geri yüklemek **Araçları** > **içeri ve dışarı aktarma ayarları** > **tüm ayarları sıfırla**  veya **Araçları** > **seçenekleri** > **klavye** > **sıfırlama**.
@@ -107,6 +109,10 @@ Kullanabileceğiniz bir *.editorconfig* kodlama kurallarını kod oluşturma ve 
 Visual Studio sağlar kod stili tercihleri dahil olmak üzere kod dosyanızın üzerine biçimlendirme **kod Temizleme** özelliği. Kod temizleme çalıştırılacak broom tuşuna basın ve düzenleyici altındaki simgesini **Ctrl**+**K**, **Ctrl**+**E**.
 
 ![Visual Studio 2019 kod temizleme düğmesi](media/execute-code-cleanup.png)
+
+Tüm proje veya çözümünüzdeki arasında kod temizleme de çalıştırabilirsiniz. İçinde proje veya çözüm adına sağ tıklayın **Çözüm Gezgini**seçin **analiz ve kod Temizleme**ve ardından **çalıştırma kod Temizleme**.
+
+![Tüm proje veya çözüm arasında kod temizleme işlemi çalıştırın](media/run-code-cleanup-project-solution.png)
 
 Dosyanızı alanları, girintileri yapmalıyız, biçimlendirme yanı sıra **kod Temizleme** seçili kod stilleri için de geçerlidir. Her kod stili tercihlerinizi okuyabilir [EditorConfig dosya](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), bir proje için ya da yoksa [kod stili ayarları](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) içinde **seçenekleri** iletişim kutusu.
 

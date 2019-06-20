@@ -15,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27074b20aafe046d03b11f92d49b6af1a01c3067
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253672"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290649"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
 ::: moniker range="vs-2017"
 
-En fazla güncelleştirmenizi öneriyoruz [son sürümü](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017'in böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
+En fazla güncelleştirmenizi öneriyoruz [güncel bir yayın](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017'in böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
 
 Ve müşterilerimize en yeni sürümü deneyin istiyorsanız indirip yüklemeyi düşünebilirsiniz [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) yerine.
 
@@ -162,7 +162,7 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
 
 ::: moniker range="vs-2019"
 
-En güncelleştirmenizi öneririz [son sürümü](/visualstudio/releases/2019/release-notes/) Visual Studio 2019, böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
+En fazla güncelleştirmenizi öneriyoruz [güncel bir yayın](/visualstudio/releases/2019/release-notes/) Visual Studio 2019'ın böylece her zaman en son özellikleri, düzeltmeler ve geliştirmeler alın.
 
 Ve Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
 
@@ -264,6 +264,7 @@ Bir güncelleştirme olup olmadığını denetlemek ve menü çubuğunun ya da V
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [Visual Studio sürümlerini yan yana yükleme](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Bakım sırasında temel Visual Studio güncelleştirme](update-servicing-baseline.md)
 * [Mac için Visual Studio güncelleştirme](/visualstudio/mac/update)

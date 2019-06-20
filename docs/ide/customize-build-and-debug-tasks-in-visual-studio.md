@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820305"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291037"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirme ve hata ayıklama için "Klasör Aç" geliştirme görevleri
 
@@ -33,7 +32,6 @@ Visual Studio, birçok farklı dillerde çalıştırma bilir ve kod tabanlarınd
 |-|-|
 |*tasks.vs.json*|Özel derleme komutları ve derleyici anahtarları rastgele (olmayan-ilgili derleme) belirtmek görevleri.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **yapılandırma görevleri**.|
 |*launch.vs.json*|Hata ayıklama için komut satırı bağımsız değişkenlerini belirtin.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **hata ayıklama ve başlatma ayarları**.|
-|*VSWorkspaceSettings.json*|Genel görevleri etkileyebilir ve başlatma ayarları. Örneğin, tanımlama `envVars` içinde *VSWorkspaceSettings.json* dışarıdan komutlarını çalıştırmak için belirtilen ortam değişkenleri ekler.<br>Bu dosyayı el ile oluşturun.|
 
 Bunlar *.json* dosyaları adlı gizli bir klasörde bulunan *.vs* temelinizin kök klasöründeki. *Tasks.vs.json* ve *launch.vs.json* dosyalarının oluşturulduğu Visual Studio tarafından bir gerektiği şekilde ya da seçtiğinizde **yapılandırma görevleri** veya **hata ayıklama ve başlatma ayarları** bir dosya veya klasör üzerinde **Çözüm Gezgini**. Bunlar *.json* dosyaları, kullanıcılar bunları kaynak denetimine kaydetmeye genellikle istemediğinden gizlidir. Ancak, kaynak denetimine denetlemek istiyorsanız, dosyaları burada görünür temelinizin, kök sürükleyin.
 
@@ -193,7 +191,7 @@ Birden çok *tasks.vs.json* dosyaları kök ve alt dizinleri bir kod temeli bulu
 - Kadar tüm kök dizini geçerli dizinin üst dizini.
 - Ayarlar dosyaları kök dizini.
 
-Bu toplama kuralları için geçerli *tasks.vs.json* ve *VSWorkspaceSettings.json* dosyaları. Diğer dosyasındaki ayarları nasıl toplanır hakkında daha fazla bilgi için bu makalede söz konusu dosya için ilgili bölümüne bakın.
+Bu toplama kuralları için geçerli *tasks.vs.json*. Diğer dosyasındaki ayarları nasıl toplanır hakkında daha fazla bilgi için bu makalede söz konusu dosya için ilgili bölümüne bakın.
 
 ### <a name="properties-for-tasksvsjson"></a>Tasks.vs.json özellikleri
 
@@ -289,10 +287,6 @@ Bu dosyayı kaydettiğinizde, yeni yapılandırmayı adı hata ayıklama hedefi 
 
 > [!NOTE]
 > `configurations` Dizi özelliğinde *launch.vs.json* iki dosya konumlarından okuma&mdash;codebase kök dizinini ve *.vs* dizin. Bir çakışma varsa, öncelik değeri verilir *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Çalışma alanı ayarları içinde VSWorkspaceSettings.json tanımlayın
-
-Etkileyen görevler ve içinde başlatma genel ayarları belirtebilirsiniz *VSWorkspaceSettings.json* dosya. Örneğin, tanımladığınız `envVars` içinde *VSWorkspaceSettings.json*, Visual Studio, harici olarak çalıştırılan komutları için belirtilen ortam değişkenleri ekler. Bu dosyayı kullanmak için el ile oluşturmanız gerekir.
 
 ## <a name="additional-settings-files"></a>Ek ayarlar dosyaları
 

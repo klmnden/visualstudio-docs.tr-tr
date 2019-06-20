@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2ebad946d62016199212cfeaae54c32db74d4c
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 6144e5bf26436e7010e773fa7ac03ad24ad7c490
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64558295"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291003"
 ---
 # <a name="code-style-preferences"></a>Kod stili tercihleri
 
@@ -90,9 +90,14 @@ Tetiklenen ilk kez **belgeyi Biçimlendir** komutu, bir sarı bir bilgi çubuğu
 > [!TIP]
 > Önem derecesi ile yapılandırılan kural **hiçbiri** kod temizleme katılmak yoktur ancak tek tek aracılığıyla uygulanabilir **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
-İlk olarak, hangi kod stilleri (birinde iki profilleri) de uygulamak istediğiniz yapılandırma **yapılandırma kod Temizleme** iletişim kutusu. Bu iletişim kutusunu açmak için kod temizleme broom simgesinin yanındaki genişletici oka tıklayın ve ardından **yapılandırma kod Temizleme**. Veya basın **Ctrl**+**K**, **Ctrl**+**Q**.
+İlk olarak, hangi kod stilleri (birinde iki profilleri) de uygulamak istediğiniz yapılandırma **yapılandırma kod Temizleme** iletişim kutusu. Bu iletişim kutusunu açmak için kod temizleme broom simgesinin yanındaki genişletici oka tıklayın ve ardından **yapılandırma kod Temizleme**.  
 
 ![Visual Studio 2019 içinde kod temizleme yapılandırın](media/configure-code-cleanup.png)
+
+Broom simgesine tıklayın veya basın kod temizleme yapılandırıldıktan sonra yapabilecekleriniz **Ctrl**+**K**, **Ctrl**+**E** kod temizleme çalıştırılacak. Tüm proje veya çözümünüzdeki arasında kod temizleme de çalıştırabilirsiniz. İçinde proje veya çözüm adına sağ tıklayın **Çözüm Gezgini**seçin **analiz ve kod Temizleme**ve ardından **çalıştırma kod Temizleme**.
+
+
+![Tüm proje veya çözüm arasında kod temizleme işlemi çalıştırın](media/run-code-cleanup-project-solution.png)
 
 Her zaman uygulanacak kod stili ayarlarınızı istiyorsanız bir dosyaya kaydedin, istediğiniz gibi [kod temizleme kaydederken](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) uzantısı.
 
