@@ -24,9 +24,9 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Nasıl yapılır kılavuzları
   items:
-    - name: CPU kullanımını analiz etme
+    - name: CPU kullanımı
       href: cpu-usage.md
-    - name: Bellek kullanımını analiz etme
+    - name: Bellek kullanımı
       items:
         - name: Bellek kullanımını analiz etme
           href: analyze-memory-usage.md
@@ -48,7 +48,7 @@
       href: javascript-memory.md
     - name: HTML kullanıcı arabirimi yanıt hızını analiz etme
       href: html-ui-responsiveness.md
-    - name: Performans Gezgini’ni kullanma
+    - name: Performans Gezgini
       items:
         - name: Performans Gezgini’ni kullanma
           href: performance-explorer.md
@@ -56,7 +56,7 @@
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: Genel Bakış (performans araçları)
           items:
-            - name: Genel Bakış (performans araçları)
+            - name: Performans araçlarına genel bakış
               href: overviews-performance-tools.md
             - name: Performans oturumuna genel bakış
               href: performance-session-overview.md
@@ -78,7 +78,7 @@
               href: performance-session-properties.md
             - name: Profil oluşturma ve Windows Vista güvenliği
               href: profiling-and-windows-vista-security.md
-        - name: Performans araçları ile çalışmaya başlama
+        - name: Kullanmaya başlayın
           items:
             - name: Performans araçları ile çalışmaya başlama
               href: getting-started-with-performance-tools.md
@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: El ile performans oturumları oluşturma
               href: how-to-manually-create-performance-sessions.md
-        - name: Performans oturumlarını yapılandırma
+        - name: Yapılandırma
           items:
             - name: Performans oturumlarını yapılandırma
               href: configuring-performance-sessions.md
@@ -96,7 +96,7 @@
               href: how-to-reference-windows-symbol-information.md
             - name: Toplama metotlarını seçme
               href: how-to-choose-collection-methods.md
-            - name: Örnekleme kullanarak performans istatistikleri toplama
+            - name: Performans istatistikleri toplama
               items:
                 - name: Örnekleme kullanarak performans istatistikleri toplama
                   href: collecting-performance-statistics-by-using-sampling.md
@@ -106,7 +106,7 @@
                   href: how-to-collect-line-level-sampling-data.md
             - name: .NET bellek ayırma ve yaşam süresi verilerini toplama
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
-            - name: İzleme kullanarak ayrıntılı zamanlama verileri toplama
+            - name: Ayrıntılı zamanlama verileri toplama
               items:
                 - name: İzleme kullanarak ayrıntılı zamanlama verileri toplama
                   href: collecting-detailed-timing-data-by-using-instrumentation.md
@@ -124,7 +124,7 @@
               href: collecting-thread-and-process-concurrency-data.md
             - name: Katman etkileşim verileri toplama
               href: collecting-tier-interaction-data.md
-            - name: Ek performans verileri toplama
+            - name: Ek performans verileri
               items:
                 - name: Ek performans verileri toplama
                   href: collecting-additional-performance-data.md
@@ -148,7 +148,7 @@
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Veri toplamayı denetleme
           items:
-            - name: Veri toplamayı denetleme
+            - name: Veri koleksiyonunu denetleme
               href: controlling-data-collection.md
             - name: Başlangıç ve bitiş performans verilerini toplama
               href: how-to-start-and-end-performance-data-collection.md
@@ -162,11 +162,11 @@
               href: how-to-limit-instrumentation-to-specific-functions.md
             - name: Kısa işlevleri izlemeden hariç tutma veya izlemeye dahil etme
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
-        - name: Performans araçları verilerini analiz etme
+        - name: Performans araçları verileri
           items:
             - name: Performans araçları verilerini analiz etme
               href: analyzing-performance-tools-data.md
-            - name: Performans kurallarını kullanarak verileri analiz etme
+            - name: Analiz için performans kuralları
               items:
                 - name: Performans kurallarını kullanarak verileri analiz etme
                   href: using-performance-rules-to-analyze-data.md
@@ -176,13 +176,13 @@
                   href: how-to-configure-performance-rules.md
                 - name: Performans kuralları başvurusu
                   items:
-                    - name: Performans kuralları başvurusu
+                    - name: Performans kuralları başvurusuna genel bakış
                       href: performance-rules-reference.md
                     - name: Kimliğe göre performans kuralları
                       href: performance-rules-by-id.md
                     - name: .NET Framework kullanımı performans kuralları
                       items:
-                        - name: .NET Framework kullanımı performans kuralları
+                        - name: .NET Framework kullanımı performans kurallarına genel bakış
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: Birleştirmeler için StringBuilder kullanma'
                           href: da0001-use-stringbuilder-for-concatenations.md
@@ -214,17 +214,17 @@
                           href: da0038-high-rate-of-lock-contentions.md
                         - name: 'DA0039: Çok Yüksek Oranda Kilit çakışması'
                           href: da0039-very-high-rate-of-lock-contentions.md
-                    - name: Bellek ve Disk Belleği Performans Kuralları
+                    - name: Bellek ve Disk Belleği performans kuralları
                       items:
-                        - name: Bellek ve Disk Belleği Performans Kuralları
+                        - name: Bellek ve Disk Belleği performans kurallarına genel bakış
                           href: memory-and-paging-performance-rules.md
                         - name: 'DA0014: Çok yüksek oranda diske etkin bellek sayfalaması'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
                         - name: 'DA0017: Yüksek oranda diske etkin bellek sayfalaması'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
-                    - name: Profil Araçları Kullanım Kuralları
+                    - name: Profil Oluşturma Araçları kullanım kuralları
                       items:
-                        - name: Profil Araçları Kullanım Kuralları
+                        - name: Profil Oluşturma Araçları kullanım kurallarına genel bakış
                           href: profiling-tools-usage-rules.md
                         - name: 'DA0002: VSPerfCorProf.dll eksik'
                           href: da0002-vsperfcorprof-dll-is-missing.md
@@ -240,9 +240,9 @@
                           href: da0029-unsupported-clr-version.md
                         - name: 'DA0030: Veritabanı projeleri için Katman Etkileşimi ölçüleri toplayın'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
-                    - name: Kaynak İzleme Performans Kuralları
+                    - name: Kaynak İzleme performans kuralları
                       items:
-                        - name: Kaynak İzleme Performans Kuralları
+                        - name: Kaynak İzleme performans kurallarına genel bakış
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Profili oluşturulan İşlemin Ortalama CPU kullanımı'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
@@ -258,13 +258,13 @@
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Performans Raporu Görünümleri
               items:
-                - name: Performans Raporu Görünümleri
+                - name: Performans Raporu Görünümlerine genel bakış
                   href: performance-report-views.md
                 - name: Performans Raporuna Genel Bakış
                   href: performance-report-overview.md
                 - name: Ortak Veri Görünümleri
                   items:
-                    - name: Ortak Veri Görünümleri
+                    - name: Ortak Veri Görünümlerine genel bakış
                       href: common-data-views.md
                     - name: İşlem Görünümü
                       href: process-view.md
@@ -288,9 +288,9 @@
                       href: function-details-view.md
                     - name: Windows için Olay İzleme (ETW) Raporu
                       href: event-tracing-for-windows-etw-report.md
-                - name: Profil Oluşturucu Örnekleme Metodu Veri Görünümleri
+                - name: Profil Oluşturucu Örnekleme Yöntemi Veri Görünümleri
                   items:
-                    - name: Profil Oluşturucu Örnekleme Metodu Veri Görünümleri
+                    - name: Profil Oluşturucu Örnekleme Metodu Veri Görünümlerine genel bakış
                       href: profiler-sampling-method-data-views.md
                     - name: Özet Görünümü - Örnekleme Verileri
                       href: summary-view-sampling-data.md
@@ -308,7 +308,7 @@
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: İzleme Metodu Veri Görünümleri
                   items:
-                    - name: İzleme Metodu Veri Görünümleri
+                    - name: İzleme Metodu Veri Görünümlerine genel bakış
                       href: instrumentation-method-data-views.md
                     - name: Özet Görünümü - İzleme Verileri
                       href: summary-view-instrumentation-data.md
@@ -322,7 +322,7 @@
                       href: functions-view-instrumentation-data.md
                 - name: .NET bellek verisi görünümleri
                   items:
-                    - name: .NET bellek verisi görünümleri
+                    - name: .NET Bellek Verileri Görünümlerine genel bakış
                       href: dotnet-memory-data-views.md
                     - name: Özet Görünümü - .NET bellek verileri
                       href: summary-view-dotnet-memory-data.md
@@ -352,7 +352,7 @@
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Kaynak Çakışması Veri Görünümleri
                   items:
-                    - name: Kaynak Çakışması Veri Görünümleri
+                    - name: Kaynak Çakışması Veri Görünümlerine genel bakış
                       href: resource-contention-data-views.md
                     - name: Özet Görünümü - Kaynak Çakışması Görünümü
                       href: summary-view-resource-contention-view.md
@@ -378,11 +378,11 @@
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: Etkileşim Görünümleri
                   items:
-                    - name: Etkileşim Görünümleri
+                    - name: Katman Etkileşimi Görünümlerine genel bakış
                       href: tier-interaction-views.md
                     - name: Katman Etkileşimleri Görünümü
                       href: tier-interactions-view.md
-            - name: Performans Araçları Rapor Görünümlerini Özelleştirme
+            - name: Görünümleri Özelleştirme
               items:
                 - name: Performans Araçları Rapor Görünümlerini Özelleştirme
                   href: customizing-performance-tools-report-views.md
@@ -400,7 +400,7 @@
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: Performans veri dosyalarını karşılaştırma
           items:
-            - name: Performans veri dosyalarını karşılaştırma
+            - name: Performans veri dosyalarını karşılaştırmaya genel bakış
               href: comparing-performance-data-files.md
             - name: Performans veri dosyalarını karşılaştırma
               href: how-to-compare-performance-data-files.md
@@ -408,7 +408,7 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Performans araçları verilerini kaydetme ve dışarı aktarma
           href: saving-and-exporting-performance-tools-data.md
-        - name: Komut satırından profil oluşturma araçlarını kullanma
+        - name: Komut satırında profil oluşturma araçları
           items:
             - name: Komut satırından profil oluşturma araçlarını kullanma
               href: using-the-profiling-tools-from-the-command-line.md
@@ -420,11 +420,11 @@
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
             - name: Komut satırından katman etkileşim verileri ekleme
               href: adding-tier-interaction-data-from-the-command-line.md
-            - name: Komut satırından tek başına uygulamaların profilini oluşturma
+            - name: Bağımsız uygulamalar
               items:
                 - name: Komut satırından tek başına uygulamaların profilini oluşturma
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için uygulama istatistikleri toplama
+                - name: Bağımsız uygulamalar için uygulama istatistikleri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için uygulama istatistikleri toplama
                       href: collecting-application-statistics-for-stand-alone-applications.md
@@ -434,7 +434,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Profil oluşturucu komut satırını kullanarak yerel bir tek başına uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
-                - name: Profil oluşturucu komut satırını kullanarak tek başına bir uygulama için ayrıntılı zamanlama verileri toplama
+                - name: Bağımsız uygulamalar için ayrıntılı zamanlama verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak tek başına bir uygulama için ayrıntılı zamanlama verileri toplama
                       href: collecting-detailed-timing-data-for-a-stand-alone-application.md
@@ -442,7 +442,7 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Yerel bir tek başına bileşeni izleme ve komut satırından profil oluşturucu ile zamanlama verileri toplama
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
-                - name: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için eşzamanlılık verileri toplama
+                - name: Bağımsız uygulamalar için eşzamanlılık verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için eşzamanlılık verileri toplama
                       href: collecting-concurrency-data-for-stand-alone-applications.md
@@ -454,7 +454,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Profil oluşturucu komut satırını kullanarak tek başına bir yerel uygulamaya profil oluşturucu ekleme ve eşzamanlılık verileri toplama
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
-                - name: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için .NET Framework bellek verileri toplama
+                - name: Bağımsız uygulamalar için .NET Framework bellek verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak tek başına uygulamalar için .NET Framework bellek verileri toplama
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
@@ -466,19 +466,19 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'İzlenecek yol: Örnekleme yöntemini kullanarak komut satırı profili oluşturma'
                   href: walkthrough-command-line-profiling-using-sampling.md
-            - name: ASP.NET Web uygulamalarının komut satırından profilinin oluşturulması
+            - name: ASP.NET Web uygulamaları
               items:
                 - name: ASP.NET Web uygulamalarının komut satırından profilinin oluşturulması
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: VSPerfASPNETCmd ile hızlı Web sitesi profili oluşturma
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Komut satırından profil oluşturucu örnekleme kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama
+                - name: Profil oluşturucu örnekleme metodunu kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama
                   items:
                     - name: Komut satırından profil oluşturucu örnekleme kullanarak ASP.NET Web uygulamaları için uygulama istatistikleri toplama
                       href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: Komut satırını kullanarak uygulama istatistikleri verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Komut satırından profil oluşturucu izleme metodunu kullanarak bir ASP.NET Web uygulaması için ayrıntılı zamanlama verileri toplama
+                - name: Profil oluşturucu izleme metodunu kullanarak bir ASP.NET Web uygulaması için ayrıntılı zamanlama verileri toplama
                   items:
                     - name: Komut satırından profil oluşturucu izleme metodunu kullanarak bir ASP.NET Web uygulaması için ayrıntılı zamanlama verileri toplama
                       href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
@@ -486,13 +486,13 @@
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: Profil oluşturucu ile komut satırını kullanarak dinamik olarak derlenmiş bir ASP.NET Web uygulamasını izleme ve ayrıntılı zamanlama verileri toplama
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
-                - name: Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulaması için eşzamanlılık verileri toplama
+                - name: ASP.NET Web uygulaması için eşzamanlılık verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulaması için eşzamanlılık verileri toplama
                       href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: Profil oluşturucu komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulamasından bellek verileri toplama
+                - name: ASP.NET Web uygulamasından bellek verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak bir ASP.NET Web uygulamasından bellek verileri toplama
                       href: collecting-memory-data-from-an-aspnet-web-application.md
@@ -516,7 +516,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Komut satırını kullanarak uygulama istatistikleri toplamak için bir .NET hizmetine profil oluşturucu ekleme
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Profil oluşturucu komut satırından izleme metodunu kullanarak hizmetler için ayrıntılı zamanlama verileri toplama
+                - name: İzleme metodunu kullanarak hizmetler için ayrıntılı zamanlama verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırından izleme metodunu kullanarak hizmetler için ayrıntılı zamanlama verileri toplama
                       href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
@@ -524,7 +524,7 @@
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: Profil oluşturucu komut satırını kullanarak bir yerel hizmeti izleme ve ayrıntılı zamanlama verileri toplama
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                - name: Profil oluşturucu komut satırını kullanarak bir hizmet için eşzamanlılık verileri toplama
+                - name: Bir hizmet için eşzamanlılık verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak bir hizmet için eşzamanlılık verileri toplama
                       href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
@@ -532,7 +532,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Komut satırını kullanarak eşzamanlılık verileri toplamak için bir yerel hizmete profil oluşturucu ekleme
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Profil oluşturucu komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama
+                - name: .NET Framework hizmetlerinden bellek verileri toplama
                   items:
                     - name: Profil oluşturucu komut satırını kullanarak .NET Framework hizmetlerinden bellek verileri toplama
                       href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
@@ -542,7 +542,7 @@
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: Komut satırından profil oluşturma raporları oluşturma
               items:
-                - name: Komut satırından profil oluşturma raporları oluşturma
+                - name: Komut satırından profil oluşturucu raporları oluşturmaya genel bakış
                   href: creating-profiler-reports-from-the-command-line.md
                 - name: Komut satırından temel profil oluşturma raporları oluşturma
                   href: creating-basic-profiling-reports-from-the-command-line.md
@@ -560,7 +560,7 @@
               href: how-to-install-the-stand-alone-profiler.md
             - name: Komut satırı profil oluşturma araçları başvurusu
               items:
-                - name: Komut satırı profil oluşturma araçları başvurusu
+                - name: Komut satırı profil oluşturma araçları başvurusuna genel bakış
                   href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
@@ -638,11 +638,11 @@
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: Profil Araçları API'leri
           items:
-            - name: Profil Araçları API'leri
+            - name: Profil Oluşturma Araçları API’lerine genel bakış
               href: profiling-tools-apis.md
             - name: Visual Studio profil Oluşturucu API Başvurusu (Yerel)
               items:
-                - name: Visual Studio profil Oluşturucu API Başvurusu (Yerel)
+                - name: Visual Studio profil oluşturucu API Başvurusuna genel bakış (Yerel)
                   href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
@@ -670,7 +670,7 @@
           href: troubleshooting-performance-tools-issues.md
     - name: Eşzamanlılık Görselleştiricisi
       items:
-        - name: Eşzamanlılık Görselleştiricisi
+        - name: Eşzamanlılık Görselleştiricisine genel bakış
           href: concurrency-visualizer.md
         - name: Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
@@ -678,7 +678,7 @@
           href: utilization-navigator.md
         - name: Kullanım Görünümü
           items:
-            - name: Kullanım Görünümü
+            - name: Kullanım Görünümüne genel bakış
               href: utilization-view.md
             - name: CPU Kullanım Grafiği
               href: cpu-utilization-graph.md
@@ -696,7 +696,7 @@
               href: gpu-activity-other-processes.md
         - name: İş Parçacıkları Görünümü (Paralel Performans)
           items:
-            - name: İş Parçacıkları Görünümü (Paralel Performans)
+            - name: İş Parçacıkları Görünümüne (Paralel Performans) Genel Bakış
               href: threads-view-parallel-performance.md
             - name: Engelleme Zamanı Profil Raporu
               href: blocking-time-profile-report.md
@@ -760,7 +760,7 @@
               href: zoom-control-threads-view.md
         - name: Çekirdekler Görünümü
           items:
-            - name: Çekirdekler Görünümü
+            - name: Çekirdekler Görünümüne genel bakış
               href: cores-view.md
             - name: Çekirdekler Görünümü Göstergesi
               href: cores-view-legend.md
@@ -774,7 +774,7 @@
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: Eşzamanlılık Görselleştiricisi İşaretleyicileri
           items:
-            - name: Eşzamanlılık Görselleştiricisi İşaretleyicileri
+            - name: Eşzamanlılık Görselleştiricisi İşaretçilerine genel bakış
               href: concurrency-visualizer-markers.md
             - name: Bayrak İşaretleyicileri
               href: flag-markers.md
@@ -786,13 +786,13 @@
               href: visualizing-eventsource-events-as-markers.md
         - name: Eşzamanlılık Görselleştiricisi SDK
           items:
-            - name: Eşzamanlılık Görselleştiricisi SDK
+            - name: Eşzamanlılık Görselleştiricisi SDK’sına genel bakış
               href: concurrency-visualizer-sdk.md
             - name: Eşzamanlılık Görselleştiricisi İşaretçileri SDK'yı Kullanma
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: C++ Kitaplık Başvurusu
               items:
-                - name: C++ Kitaplık Başvurusu
+                - name: C++ Kitaplığı Başvurusuna genel bakış
                   href: cpp-library-reference.md
                 - name: Eşzamanlılık Ad Alanı (Eşzamanlılık Görselleştiricisi)
                   items:
@@ -830,7 +830,7 @@
                           href: marker-importance-enumeration.md
             - name: C Kitaplık Başvurusu
               items:
-                - name: C Kitaplık Başvurusu
+                - name: C Kitaplığı Başvurusuna genel bakış
                   href: c-library-reference.md
                 - name: CvCreateDefaultMarkerSeriesOfDefaultProvider İşlevi
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md

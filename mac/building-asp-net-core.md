@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836403"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253807"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>ASP.NET Core Mac için Visual Studio'da uygulama oluşturma 
 
@@ -59,7 +59,7 @@ Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime ge
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** sınıfı tarafından kuralı tutamaçları ile başlayan tüm gelen istekleri **/Home**. **Dizin** yöntemi istekleri kök dizin işler (gibi http://site.com/Home) ve diğer yöntemleri, adlandırılmış yol kuralı üzerinde gibi tabanlı istekleri işleyen **About()** istekleri işleme **http://site.com/Home/About** . Elbette, bu tüm yapılandırılabilir. Bir dikkat çeken bir şey olduğunu **HomeController** yeni bir proje varsayılan denetleyicisidir, böylece sitenin kök dizinine istekleri ( **http://site.com** ) çıkacak **İNDİS()** ' ın **HomeController** olduğu, istekleri gibi **http://site.com/Home** veya **http://site.com/Home/Index** .
+3. **HomeController** sınıfı tarafından kuralı tutamaçları ile başlayan tüm gelen istekleri **/Home**. **Dizin** yöntemi istekleri kök dizin işler (gibi `http://site.com/Home`) ve diğer yöntemleri, adlandırılmış yol kuralı üzerinde gibi tabanlı istekleri işleyen **About()** istekleri işleme `http://site.com/Home/About`. Elbette, bu tüm yapılandırılabilir. Bir dikkat çeken bir şey olduğunu **HomeController** yeni bir proje varsayılan denetleyicisidir, böylece sitenin kök dizinine istekleri (`http://site.com`) çıkacak **İNDİS()** ,  **HomeController** olduğu, istekleri gibi `http://site.com/Home` veya `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 
@@ -199,7 +199,7 @@ Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime ge
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>6. Görev: Uygulama ara yazılım ekleme
+## <a name="task-6-inserting-application-middleware"></a>6\. Görev: Uygulama ara yazılım ekleme
 
 1. Bulun **yapılandırma** yönteminde **başlangıç** sınıfı. HTTP ardışık düzende eklenen ve sunucuya her isteği işlemek için kullanılan tüm ara yazılım yapılandırıldığı budur. Bu yöntem yalnızca bir kez yöntemleri içeriğini çağırıldıktan (gibi **UseStaticFiles**) her bir istek üzerinde çalıştırılabilir.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261969"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253903"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -46,7 +46,7 @@ Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırara
 - \* (tüm sembolleri belirtmek için bu değeri kullanın)
 - ad alanı
 - sınıf
-- struct 
+- struct
 - arabirim
 - enum
 - özellik
@@ -209,6 +209,8 @@ Ad ihlalini altında bir öneri görmek yerine kod dosyanızın kapatıp yeşil 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Dil kuralları](editorconfig-language-conventions.md)
+- [Biçimlendirme kuralları](editorconfig-formatting-conventions.md)
 - [Roslyn adlandırma kuralları](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [.NET dil ve biçimlendirme kuralları](../ide/editorconfig-code-style-settings-reference.md)
 - [Taşınabilir özel düzenleyici seçenekleri oluşturma](../ide/create-portable-custom-editor-options.md)
+- [Kodlama kuralı ayarlarına EditorConfig için .NET](editorconfig-code-style-settings-reference.md)

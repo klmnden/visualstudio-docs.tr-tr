@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836095"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259815"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>İzlenecek yol: Kod parçacığı oluşturma
 
@@ -76,6 +76,9 @@ Aşağıdaki XML Temel parçacık şablonu verilmiştir:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > Belirtemezsiniz nasıl kod satırlarını **CDATA** bir kod parçacığı bölümünü girintili veya biçimlendirilmiş. Eklendikleri sırada dil hizmeti otomatik olarak eklenen kodu biçimlendirir. 
 
 5. Kod parçacığını olarak kaydedin *SquareRoot.snippet* (herhangi bir yere kaydetmeden).
 

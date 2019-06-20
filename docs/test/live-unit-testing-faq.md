@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714482"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258126"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing sık sorulan sorular
 
@@ -141,7 +141,7 @@ Bazı farklılıklar vardır:
 
 - Live Unit Testing çalışan testler her test derlemesindeki ardışık olarak ise birden çok testleri çalıştırırsanız **Test Gezgini** penceresi ve seçili **çalıştırmak testlerini paralel** düğmesi, bunların çalıştırılacağı Paralel.
 
-- 2. sürümünü kullanır ve testleri Live Unit Testing yürütülmesi `TestPlatform`bilgileriyse **Test Gezgini** penceresi, sürüm 1 kullanır. Ancak çoğu durumda, bir fark dikkat olmaz.
+- 2\. sürümünü kullanır ve testleri Live Unit Testing yürütülmesi `TestPlatform`bilgileriyse **Test Gezgini** penceresi, sürüm 1 kullanır. Ancak çoğu durumda, bir fark dikkat olmaz.
 
 - **Test Gezgini** Live Unit Testing testleri bir çok iş parçacıklı apartmanda (MTA) çalıştırılır testler varsayılan olarak, bir tek iş parçacıklı apartmanda (STA) şu anda çalışır. Live Unit Testing STA MSTest testleri çalıştırmak için test yöntemi veya kapsayan sınıfı ile donatmak `<STATestMethod>` veya `<STATestClass>` bulunabilir özniteliği `MSTest.STAExtensions 1.0.3-beta` NuGet paketi. NUnit için test yönteminin süslemek `<RequiresThread(ApartmentState.STA)>` özniteliği ve xUnit, ile `<STAFact>` özniteliği.
 
@@ -197,15 +197,6 @@ Bu değerleri kullanan testler Canlı birim testi tarafından çalıştırıldı
 Derleme hedef dosyalarınız uygun girdileri ve çıktıları belirtilen yoktur ve çözümünüzü oluşturma işlemi çözümün bir parçası olan kaynak kodu oluşturursa, düzenlemeleri değil olsa bile çözümünüzü oluşturabilirsiniz. MSBuild uygun güncel denetimleri gerçekleştirmek ve yeni bir derleme gerekip gerekmediğini hedefleri girişler ve çıkışlar listesini verilmelidir.
 
 Live Unit Testing, kaynak dosyaların değiştiğini algıladığında, bir derleme başlar. Live Unit Testing, çözümünüzün derleme kaynak dosyaları oluşturduğundan, bir derleme sonsuz döngüye elde edersiniz. Live Unit Testing ikinci derleme (önceki yapı yeni oluşturulan kaynak dosyalarını sistemlerimiz) başlatıldığında, girdileri ve çıktıları hedefinin ancak işaretli değilse, girdileri ve çıktıları denetimleri olur çünkü bu derleme döngüden her şeyin güncel olduğunu gösterir.  
-
-## <a name="lightweight-solution-load"></a>Basit çözüm yükü
-
-**Nasıl iş basit çözüm yükü özelliği ile test birimi Canlı?**
-
-Live Unit Testing ile de basit çözüm yükü özelliği şu anda çalışmıyor. En az bir test projeleri yalnızca yüklendikten sonra çalışır. Live Unit Testing en az bir test bağdaştırıcısı (MSTest, xUnit ve NUnit) başvuran test projeleri bağımlı olduğu için o tarihe kadar işe yaramaz yükleniyor.
-
-> [!NOTE]
-> Basit çözüm yükü, artık Visual Studio 2017 sürüm 15.5 kullanılabilir ve üzerinde desteklenir. Visual Studio 2017 sürüm 15.5 ve üzeri, içeren büyük çözümler kod yük önceden kıyasla çok daha hızlı, basit çözüm yükü olmadan bile yönetilen.
 
 ## <a name="new-process-coverage"></a>Yeni işlem kapsamı
 

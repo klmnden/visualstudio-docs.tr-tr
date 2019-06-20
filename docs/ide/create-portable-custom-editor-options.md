@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0bb0bdc4354274349076263f3302956f7123680b
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845987"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253985"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma
 
@@ -55,7 +55,7 @@ Visual Studio düzenleyicisinde çekirdek kümesini destekleyen [EditorConfig ö
 - INSERT\_final_newline
 - kök
 
-EditorConfig Düzenleyici ayarları XML dışında tüm Visual Studio tarafından desteklenen dillerde desteklenir. Ayrıca, EditorConfig destekler [kod stili](../ide/editorconfig-code-style-settings-reference.md) ve [adlandırma](../ide/editorconfig-naming-conventions.md) C# ve Visual Basic kuralları.
+EditorConfig Düzenleyici ayarları XML dışında tüm Visual Studio tarafından desteklenen dillerde desteklenir. Ayrıca, EditorConfig destekler [kod stili](../ide/editorconfig-code-style-settings-reference.md) kuralları da dahil olmak üzere [dil](../ide/editorconfig-language-conventions.md), [biçimlendirme](../ide/editorconfig-formatting-conventions.md), ve [adlandırma](../ide/editorconfig-naming-conventions.md) için kuralları C# ve Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>EditorConfig dosyaları ekleyip
 
@@ -94,7 +94,7 @@ EditorConfig dosya projenizden kaldırmak veya codebase kapatın ve kod yeni sat
 
 EditorConfig dosyayı projenize ekleyebilirsiniz birkaç yolu vardır:
 
-- Yükleme [EditorConfig dil hizmeti uzantısı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) boş bir kolayca eklemek için *.editorconfig* projenize bir dosya. Bu uzantıyı yükledikten sonra seçmeniz yeterlidir **Ekle** > **.editorconfig dosya** sağ tıklayın veya bağlam menüsünden çözüm düğümüne, proje düğümü veya herhangi bir klasörde  **Çözüm Gezgini**. Bu uzantı için düzenleme deneyimi de geliştirir *.editorconfig* dosya.
+- Yükleme [EditorConfig dil hizmeti uzantısı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) boş bir kolayca eklemek için *.editorconfig* projenize bir dosya. Bu uzantıyı yükledikten sonra seçmeniz yeterlidir **Ekle** >  **.editorconfig dosya** sağ tıklayın veya bağlam menüsünden çözüm düğümüne, proje düğümü veya herhangi bir klasörde  **Çözüm Gezgini**. Bu uzantı için düzenleme deneyimi de geliştirir *.editorconfig* dosya.
 
    ![.Editorconfig dosya uzantısına sahip ekleme](media/editorconfig-extension-add.png)
 
@@ -175,7 +175,6 @@ Ayarlayarak, EditorConfig kuralları kapsamını denetleyebilirsiniz ```root=tru
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [.NET kod stili kuralları](../ide/editorconfig-code-style-settings-reference.md)
-- [.NET adlandırma kuralları](../ide/editorconfig-naming-conventions.md)
 - [Dil hizmeti için Editorconfig'i destekleme](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Kod Düzenleyicisi özellikleri](writing-code-in-the-code-and-text-editor.md)

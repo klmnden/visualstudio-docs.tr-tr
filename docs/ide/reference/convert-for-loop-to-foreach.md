@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811909"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261718"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Yeniden düzenleme arasında dönüştürmek için bir döngü için ve bir foreach deyimi
 
@@ -43,7 +43,7 @@ Neden dönüştürmek istediğiniz bir [için](/dotnet/csharp/language-reference
 
 1. İçinde giriş işareti koyun `for` anahtar sözcüğü.
 
-1. Tuşuna **Ctrl**+**.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının boşluğundaki simgeye.
+1. Tuşuna **Ctrl**+ **.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının boşluğundaki simgeye.
 
    ![Foreach menüye dönüştürme](media/convert-to-foreach.png)
 
@@ -71,7 +71,7 @@ Neden dönüştürmek istediğiniz bir [foreach](/dotnet/csharp/language-referen
 
 1. İçinde giriş işareti koyun `foreach` veya `For Each` anahtar sözcüğü.
 
-1. Tuşuna **Ctrl**+**.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının boşluğundaki simgeye.
+1. Tuşuna **Ctrl**+ **.** veya tornavida ![tornavida simgesi](../media/screwdriver-icon.png) kod dosyasının boşluğundaki simgeye.
 
    ![Menüsünü Dönüştür](media/convert-to-for.png)
 
@@ -80,7 +80,7 @@ Neden dönüştürmek istediğiniz bir [foreach](/dotnet/csharp/language-referen
 1. Yeniden düzenleme, yeni bir yineleme sayısı değişken oluşturduğundan **Yeniden Adlandır** kutusu Düzenleyicisinin sağ üst köşesinde görüntülenir. Değişken için farklı bir ad seçmek istiyorsanız, yazın ve sonra basın **Enter** veya **Uygula** içinde **Yeniden Adlandır** kutusu. Yeni bir ad seçin istemiyorsanız basın **Esc** veya **Uygula** kapatmak için **Yeniden Adlandır** kutusu.
 
 > [!NOTE]
-> İçin C#, bu yeniden düzenlemeler tarafından oluşturulan kodu açık bir tür kullanan veya [var](/dotnet/csharp/language-reference/keywords/var) koleksiyondaki öğelerin türü. Kapsam içinde kod stili ayarları türü oluşturulan kodda, doğrudan veya dolaylı bağlıdır. Bu belirli kod stili ayarları altında makine düzeyinde yapılandırılır **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >  **Kod stili** > **genel** > **\'var' Tercihler**, ya da çözüm düzeyinde bir [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) dosya. Kod stili ayarı değiştirirseniz **seçenekleri**, değişikliklerin etkili olabilmesi için kod dosyasını açın.
+> İçin C#, bu yeniden düzenlemeler tarafından oluşturulan kodu açık bir tür kullanan veya [var](/dotnet/csharp/language-reference/keywords/var) koleksiyondaki öğelerin türü. Kapsam içinde kod stili ayarları türü oluşturulan kodda, doğrudan veya dolaylı bağlıdır. Bu belirli kod stili ayarları altında makine düzeyinde yapılandırılır **Araçları** > **seçenekleri** > **metin düzenleyici**  >  **C#**  >  **Kod stili** > **genel** >  **\'var' Tercihler**, ya da çözüm düzeyinde bir [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) dosya. Kod stili ayarı değiştirirseniz **seçenekleri**, değişikliklerin etkili olabilmesi için kod dosyasını açın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

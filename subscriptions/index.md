@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Visual Studio'ya Hoş Geldiniz abonelikler
 Searchscope: VS Subscription
-ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976103"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259474"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
@@ -194,7 +194,6 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (iş, teknoloji ve yaratıcılık)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (bulut, tasarım, mobil ve veri)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (veri bilimi ve yapay ZEKA)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (Mobil Geliştirme)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility Eğitimi</a> (bulut odaklı)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft Profesyonel teknik destek olayları</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Danışmanı Sohbeti</a></li>
