@@ -393,6 +393,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: Türü eşleşen dosyaya taşı
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: Türü ad alanına taşı
+                      href: ide/reference/move-type-to-namespace.md
                     - name: Üye çekme
                       href: ide/reference/pull-members-up.md
                     - name: IntelliSense aracılığıyla Regex tamamlama
@@ -470,10 +472,16 @@
                 - name: Kod stili için EditorConfig dosyaları kullanma
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: .NET dil ve biçimlendirme kuralları
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: .NET adlandırma kuralları
-                  href: ide/editorconfig-naming-conventions.md
+                - name: .NET kodlama kuralları
+                  items:
+                    - name: Genel Bakış
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: Dil kuralları
+                      href: ide/editorconfig-language-conventions.md
+                    - name: Biçimlendirme kuralları
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: Adlandırma kuralları
+                      href: ide/editorconfig-naming-conventions.md
             - name: Kaydırma çubuğunu özelleştirme
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Kodda yer işaretleri ayarlama
