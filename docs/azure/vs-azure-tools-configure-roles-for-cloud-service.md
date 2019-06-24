@@ -4,9 +4,7 @@ description: Ayarlama ve rolleri Visual Studio kullanarak Azure bulut Hizmetleri
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ Visual Studio'da Çözüm Gezgini'nden bir Azure bulut hizmeti aşağıdaki adı
 
     > [!IMPORTANT]
     > Belirli hizmet yapılandırması seçerseniz, bazı özellikler tüm yapılandırmalar için yalnızca ayarlanabilir için devre dışı bırakıldı. Bu özelliklerini düzenlemek için seçmelisiniz **yapılandırmalarında**.
-    >
-    >
 
     ![Azure bulut hizmeti için hizmet yapılandırması listesi](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
