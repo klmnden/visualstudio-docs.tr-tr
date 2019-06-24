@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme'
+title: Düğmesini kullanarak belgedeki metin kutusunda metin görüntüleme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443832"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328747"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>İzlenecek yol: Metin kutusunda düğme kullanarak bir belgede metin görüntüleme
   Bu yönerge, düğmeler ve belge düzeyi özelleştirmesinde metin kutuları için Microsoft Office Word nasıl kullanılacağını gösterir.

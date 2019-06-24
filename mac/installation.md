@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037529"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309782"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
 
@@ -46,9 +46,21 @@ MacOS üzerinde yerel, platformlar arası .NET uygulamalarını geliştirmeye ba
 
     [![Koşulları ve gizlilik için bağlantıları izleyin, sonra kabul etmiyorsanız devam edin](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. Kullanılabilir iş yüklerinin listesi görüntülenir. Kullanmak için istediklerinizi seçin:
+6. Kullanılabilir iş yüklerinin listesi görüntülenir. Kullanmak istediğiniz bileşenleri seçin:
 
-    [![İsteğe bağlı bir iş yükü özellikleri yüklemek istediğiniz seçin](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![İsteğe bağlı bir iş yükü özellikleri yüklemek istediğiniz seçin](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Tüm platformlara yüklemek istemiyorsanız, yüklemek için hangi platformların karar vermenize yardımcı olması için aşağıdaki kılavuzu kullanın:
+
+   * **Xamarin kullanarak uygulamaları**:
+      - Xamarin.Forms – seçin **Android** ve **iOS** platformlar.
+      - iOS yalnızca – seçin **iOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Android yalnızca – seçin **Android** Platformu (ilgili bağımlılıkları da seçmeniz gerekir. Not).
+      - Mac yalnızca – seçin **macOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Tam olarak platformlar arası Xamarin uygulamaları – seçin **Android**, **iOS**, ve **macOS** platformlar.
+   * **.NET core uygulamaları** – Select **.NET Core** platform.
+   * **ASP.NET Core Web uygulamaları** – Select **.NET Core** platform.
+   * **Platformlar arası Unity oyun geliştirme** – Mac için Visual Studio dışında yüklenecek hiçbir ek platform gerekiyor Başvurmak [Unity Kurulum Kılavuzu](/visualstudio/mac/setup-vsmac-tools-unity) Unity uzantının yüklenmesi hakkında daha fazla bilgi.
 
 7. Seçimlerinizi yaptıktan sonra basın **yükleme** düğmesi.
 8. İndirir ve Mac ve seçilen iş yükleri için Visual Studio'yu yükler yükleyici ilerleme durumunu görüntüler. Yükleme için gerekli ayrıcalıklara vermek için parolanızı girmeniz istenebilir.

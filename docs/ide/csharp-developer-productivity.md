@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b65b8bc50fb56ea4749852371ffde8f25bb7827
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291016"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328773"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Visual Studio üretkenliği Kılavuzu C# geliştiriciler
 
@@ -78,31 +78,27 @@ Visual Studio denilen bir özelliği olan **tümüne Git** (**Ctrl**+**T**). **T
 
 ## <a name="enforce-code-style-rules"></a>Kod stili kurallarını zorla
 
-Kullanabileceğiniz bir *.editorconfig* kodlama kurallarını kod oluşturma ve bunları kaynağınızla seyahat dosya.
+Kodlama kurallarını kod oluşturma ve bunları kaynağınızla seyahat EditorConfig dosyası kullanabilirsiniz.
 
-::: moniker range="vs-2017"
+![Visual Studio'da kod stil uygulama](../ide/media/VSGuide_CodeStyle.png)
 
-- Yükleyebileceğiniz [EditorConfig dil Hizmetleri Uzantısı](https://aka.ms/editorconfig), kolaylaştıran ekleme ve düzenleme bir *.editorconfig* dosyasını Visual Studio'da.
+- Varsayılan ekleyin veya. NET stil EditorConfig dosyasını seçerek projenize **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusu, "editorconfig" arayın. Birini **editorconfig dosya** öğe şablonları ve ardından **Ekle**.
 
-::: moniker-end
+   ![EditorConfig Visual Studio öğe şablonları](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- Otomatik olarak bir *.editorconfig* kod stili ayarlarınızı dosyasından **Araçları** > **seçenekleri** > **metin düzenleyicisi**  > **C#** > **Kod stili**.
+- Otomatik olarak bir *.editorconfig* kod stili ayarlarınızı temel dosya **Araçları** > **seçenekleri** > **metin Düzenleyici** > **C#** > **kod stili**.
 
    ![VS 2019 ayarlarından .editorconfig dosyası oluştur](media/vs-2019/generate-editorconfig-file.png)
 
 ::: moniker-end
 
-- Denemenin [için Visual Studio Intellicode uzantısı](/visualstudio/intellicode/intellicode-visual-studio). Intellicode, kod stilleri mevcut koddan algılar ve ardından boş olmayan oluşturur *.editorconfig* dosya ile kod stili tercihlerinizden zaten tanımlanmış.
+- [Kod çıkarımı özelliği](/visualstudio/intellicode/code-style-inference) Visual Studio Intellicode, mevcut koddan, kod stilleri algılar. Ardından, kod stili tercihleri zaten tanımlanmış bir boş olmayan EditorConfig dosyası oluşturur.
 
-- Kullanıma [.NET kodlama kuralı seçeneklerini](editorconfig-code-style-settings-reference.md) belgeleri.
+Kullanıma [.NET kodlama kuralı seçeneklerini](editorconfig-code-style-settings-reference.md) belgeleri, ayrıca eksiksiz bir EditorConfig dosyası örneği içerir.
 
-- Bkz: [bu gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) örneği *.editorconfig* dosya.
-
-![Visual Studio'da kod stil uygulama](../ide/media/VSGuide_CodeStyle.png)
-
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="code-cleanup"></a>Kodu temizleme
 
@@ -124,18 +120,19 @@ Visual Studio ile çok sayıda yeniden düzenlemeler, kod oluşturma eylemleri v
 
 Popüler hızlı düzeltmeler ve yeniden düzenlemeler içerir:
 
-- *Yeniden Adlandır*
-- *Ayıklama Yöntemi*
-- *Metot İmzasını Değiştirme*
-- *Oluşturucu Oluşturma*
-- *Üretme Metodu*
-- *Türü dosyaya Taşı*
-- *Null denetimi Ekle*
-- *Parametre Ekle*
-- *Gereksiz kullanımları Kaldır*
-- *Foreach döngüsü LINQ sorgusu veya LINQ yöntemi*
-- *Üyeleri çekme*
-- Daha fazla bilgi için [kod oluşturma özellikleri](code-generation-in-visual-studio.md)
+- Rename
+- Ayıklama Yöntemi
+- Metot imzasını değiştirme
+- Oluşturucu Oluşturma
+- Metodunu üret
+- Türü dosyaya Taşı
+- Null denetimi Ekle
+- Parametre Ekle
+- Gereksiz kullanımları Kaldır
+- Foreach döngüsü LINQ sorgusu veya LINQ yöntemi
+- Üyeleri çekme
+
+Daha fazla bilgi için [oluşturma özellikleri kod](code-generation-in-visual-studio.md).
 
 Yapabilecekleriniz [FxCop Çözümleyicileri yükleme](../code-quality/install-fxcop-analyzers.md) bayrağı kod sorunları. Veya, kendi yeniden düzenleme ve kod düzeltme ile yazma [Roslyn Çözümleyicileri](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 
@@ -165,7 +162,7 @@ Visual Studio aramanıza yardımcı olması için birçok özelliklere sahiptir 
 
 ## <a name="improved-intellisense"></a>Geliştirilmiş IntelliSense
 
-İndirme [Visual Studio Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) almak için [bağlama duyarlı kod tamamlama](/visualstudio/intellicode/intellicode-visual-studio) alfabetik bir listesi yerine. Ayrıca eğitebilirsiniz bir [özel IntelliSense model](/visualstudio/intellicode/custom-model-faq) kendi etki alanına özgü kitaplıklarını temel alan.
+Visual Studio Intellicode gidebilir [bağlama duyarlı kod tamamlama](/visualstudio/intellicode/intellicode-visual-studio) alfabetik bir listesi yerine. Ayrıca eğitebilirsiniz bir [özel IntelliSense model](/visualstudio/intellicode/custom-model-faq) kendi etki alanına özgü kitaplıklarını temel alan.
 
 ## <a name="unit-testing"></a>Birim testi
 

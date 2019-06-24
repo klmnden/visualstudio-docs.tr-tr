@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581970"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328838"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -86,7 +86,7 @@ Yazdığınızda [geçersiz kılma](/dotnet/csharp/language-reference/keywords/o
 
 ### <a name="ai-enhanced-intellisense"></a>Yapay ZEKA destekli IntelliSense
 
-Yükleyebileceğiniz bir Deneysel [Intellicode uzantısı](/visualstudio/intellicode/intellicode-visual-studio) yapay zeka destekli IntelliSense tamamlanma listelerinde sağlayan Visual Studio için. Bu uzantı üyeleri alfabetik listesi yalnızca sunmak yerine kullanmak için en olası doğru API tahmin eder. Dinamik listesi sağlamak için geçerli kod bağlamı ve desenleri kullanır.
+[Visual Studio Intellicode](/visualstudio/intellicode/intellicode-visual-studio) yapay zeka destekli IntelliSense tamamlanma listelerinde sağlar. Intellicode, büyük olasılıkla yalnızca bir alfabetik liste üyelerinin sunmak yerine kullanılacak API düzeltmesi tahmin eder. Dinamik listesi sağlamak için geçerli kod bağlamı ve desenleri kullanır.
 
 ## <a name="automatic-code-generation"></a>Otomatik kod oluşturma
 
@@ -124,7 +124,7 @@ Dalgalı kırmızı alt çizgiyle her tanımlanmamış tanımlayıcı altında g
 
 - Tanımlanmamış tanımlayıcı tıklayın. A **hızlı Eylemler** hata ampul altında tanımlayıcı olarak görünür. Hata ampul tıklayın.
 
-- Tanımlanmamış tanımlayıcı tıklatın ve sonra basın **Ctrl**+**.** (**Ctrl** + nokta).
+- Tanımlanmamış tanımlayıcı tıklatın ve sonra basın **Ctrl**+ **.** (**Ctrl** + nokta).
 
 - Tanımlanmamış tanımlayıcı sağ tıklayın ve ardından **hızlı Eylemler ve yeniden düzenlemeler**.
 
@@ -158,7 +158,7 @@ Basarsanız **sekmesini**, IntelliSense otomatik olarak sizin için deyimi sonla
 Basarsanız **sekmesini**, IntelliSense doğru imzaya sahip bir yöntemi çıkış Saplamaları ve imleci, olay işleyicisi gövdesinde koyar.
 
 > [!NOTE]
-> Kullanım **Navigate Backward** komutunu **görünümü** menü (**Ctrl**+**-**) olaya geri dönmek için Birleştirme ifadesi.
+> Kullanım **Navigate Backward** komutunu **görünümü** menü (**Ctrl**+ **-** ) olaya geri dönmek için Birleştirme ifadesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

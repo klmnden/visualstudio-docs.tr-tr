@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma'
+title: Excel için ilk belge düzeyi özelleştirmeyi oluşturma
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438520"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328382"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma
   Bu tanıtıcı kılavuz, Microsoft Office Excel için belge düzeyi özelleştirmeyi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler, yalnızca belirli bir çalışma kitabı açık olduğunda kullanılabilir. Belge düzeyi özelleştirmesi birçok farklı uygulama değişiklik yapmak için kullanamazsınız, örneğin, herhangi bir çalışma kitabını açtığınızda yeni bir Şerit sekmesi görüntüleme gibi.
@@ -73,13 +73,13 @@ ms.locfileid: "63438520"
 
    - *FirstWorkbookCustomization*.xlsx - proje Excel çalışma kitabında temsil eder. Tüm çalışma sayfaları ve grafikleri içerir.
 
-   - Sheet1 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ilk çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma. Daha fazla bilgi için [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).
+   - Sheet1 ( *.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ilk çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma. Daha fazla bilgi için [çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md).
 
-   - Sheet2 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ikinci çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.
+   - Sheet2 ( *.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-ikinci çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.
 
-   - Sheet3 (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-üçüncü çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.
+   - Sheet3 ( *.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-üçüncü çalışma kitabındaki için tasarım yüzeyi ve kod sağlayan bir çalışma.
 
-   - ThisWorkbook (*.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-tasarım yüzeyini ve çalışma kitabını düzeyi özelleştirmeleri için kod içerir. Daha fazla bilgi için [çalışma kitabı konak öğesi](../vsto/workbook-host-item.md).
+   - ThisWorkbook ( *.vb* Visual Basic için dosya veya *.cs* dosya Visual C#)-tasarım yüzeyini ve çalışma kitabını düzeyi özelleştirmeleri için kod içerir. Daha fazla bilgi için [çalışma kitabı konak öğesi](../vsto/workbook-host-item.md).
 
      Sheet1 kod dosyası Tasarımcısı'nda otomatik olarak açılır.
 

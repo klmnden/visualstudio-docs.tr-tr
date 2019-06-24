@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 6144e5bf26436e7010e773fa7ac03ad24ad7c490
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291003"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328760"
 ---
 # <a name="code-style-preferences"></a>Kod stili tercihleri
 
@@ -30,8 +30,7 @@ Kod stili ayarları her proje kullanarak tanımladığınız bir [EditorConfig d
 
 ::: moniker range=">=vs-2019"
 
-EditorConfig dosyanızı el ile doldurabilirsiniz ya da Visual Studio'da ayarlayın kod stili ayarları temel dosya otomatik olarak oluşturabilirsiniz **seçenekleri** iletişim kutusu için C# veya Visual Basic metin düzenleyicisi. Bu seçenekler sayfası kullanılabilir **Araçları** > **seçenekleri** > **metin düzenleyici** > [**C#** veya  **Temel**] > **kod stili** > **genel**.
-Tıklayın **ayarlarından .editorconfig dosyası oluştur** kodlama stili otomatik olarak oluşturulacak *.editorconfig* dosya tabanlı ayarlara göre bu **seçenekleri** sayfası.
+EditorConfig dosyanızı el ile doldurabilirsiniz ya da Visual Studio'da seçtiğiniz kod stili ayarları temel dosya otomatik olarak oluşturabilirsiniz **seçenekleri** iletişim kutusu. Bu seçenekler sayfası kullanılabilir **Araçları** > **seçenekleri** > **metin düzenleyici** > [**C#** veya  **Temel**] > **kod stili** > **genel**. Tıklayın **ayarlarından .editorconfig dosyası oluştur** kodlama stili otomatik olarak oluşturulacak *.editorconfig* dosya tabanlı ayarlara göre bu **seçenekleri** sayfası.
 
 ![Visual Studio 2019 ayarlarından editorconfig dosyası oluştur](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -90,12 +89,11 @@ Tetiklenen ilk kez **belgeyi Biçimlendir** komutu, bir sarı bir bilgi çubuğu
 > [!TIP]
 > Önem derecesi ile yapılandırılan kural **hiçbiri** kod temizleme katılmak yoktur ancak tek tek aracılığıyla uygulanabilir **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
-İlk olarak, hangi kod stilleri (birinde iki profilleri) de uygulamak istediğiniz yapılandırma **yapılandırma kod Temizleme** iletişim kutusu. Bu iletişim kutusunu açmak için kod temizleme broom simgesinin yanındaki genişletici oka tıklayın ve ardından **yapılandırma kod Temizleme**.  
+İlk olarak, hangi kod stilleri (birinde iki profilleri) de uygulamak istediğiniz yapılandırma **yapılandırma kod Temizleme** iletişim kutusu. Bu iletişim kutusunu açmak için kod temizleme broom simgesinin yanındaki genişletici oka tıklayın ve ardından **yapılandırma kod Temizleme**.
 
 ![Visual Studio 2019 içinde kod temizleme yapılandırın](media/configure-code-cleanup.png)
 
-Broom simgesine tıklayın veya basın kod temizleme yapılandırıldıktan sonra yapabilecekleriniz **Ctrl**+**K**, **Ctrl**+**E** kod temizleme çalıştırılacak. Tüm proje veya çözümünüzdeki arasında kod temizleme de çalıştırabilirsiniz. İçinde proje veya çözüm adına sağ tıklayın **Çözüm Gezgini**seçin **analiz ve kod Temizleme**ve ardından **çalıştırma kod Temizleme**.
-
+Broom simgesine tıklayın veya basın kod temizleme yapılandırdıktan sonra yapabilecekleriniz **Ctrl**+**K**, **Ctrl**+**E** kod temizleme çalıştırılacak. Tüm proje veya çözümünüzdeki arasında kod temizleme de çalıştırabilirsiniz. İçinde proje veya çözüm adına sağ tıklayın **Çözüm Gezgini**seçin **analiz ve kod Temizleme**ve ardından **çalıştırma kod Temizleme**.
 
 ![Tüm proje veya çözüm arasında kod temizleme işlemi çalıştırın](media/run-code-cleanup-project-solution.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme'
+title: Metin kutusunda düğme kullanarak çalışma sayfasında metin görüntüleme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436101"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328713"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>İzlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme
   Bu kılavuzda, Microsoft Office Excel çalışma sayfaları ve Excel projeleri Visual Studio'da Office geliştirme araçlarını kullanarak oluşturmak nasıl düğme ve metin kutusu kullanmanın temellerini gösterir. Sonuç tamamlanmış bir örnek görmek için Excel denetimleri örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).

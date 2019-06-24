@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432266"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309790"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Çözüm Gezgini’nde dosya iç içe yerleştirme
 
@@ -86,19 +86,42 @@ Bu sağlayıcının gibi çalışıp **extensionToExtension** tek fark dosyanın
 
 ### <a name="the-addedextension-provider"></a>AddedExtension sağlayıcısı
 
-Bu sağlayıcı ek uzantısız dosya altında ek uzantılı dosyalar gömer. Ek uzantı yalnızca tam dosya adının sonunda yer alabilir. Aşağıdaki örnek göz önünde bulundurun:
+Bu sağlayıcı ek uzantısız dosya altında ek uzantılı dosyalar gömer. Ek uzantı yalnızca tam dosya adının sonunda yer alabilir.
+
+Aşağıdaki örnek göz önünde bulundurun:
 
 ![addedExtension örnek kural](media/filenesting_addedextension.png) ![addedExtension örnek etkisi](media/filenesting_addedextension_effect.png)
 
 * *File.HTML.css* altında iç içe *file.html* nedeniyle **addedExtension** kuralı
 
+> [!NOTE]
+> Herhangi bir dosya uzantısı için belirtmeyin `addedExtension` kural; tüm dosya uzantıları otomatik olarak uygular. Diğer bir deyişle, herhangi bir dosya ile aynı adı ve uzantısı başka bir dosya olarak artı ek uzantı son diğer dosya altında yer alıyor. Bu sağlayıcıya yalnızca belirli etkisini sınırlamak olamaz dosya uzantıları.
+
 ### <a name="the-pathsegment-provider"></a>PathSegment sağlayıcısı
 
-Bu sağlayıcı ek uzantısız dosya altında ek uzantılı dosyalar gömer. Ek uzantı yalnızca tam dosya adı ortasını görünür. Aşağıdaki örnek göz önünde bulundurun:
+Bu sağlayıcı ek uzantısız dosya altında ek uzantılı dosyalar gömer. Ek uzantı yalnızca tam dosya adı ortasını görünür.
+
+Aşağıdaki örnek göz önünde bulundurun:
 
 ![pathSegment örnek kural](media/filenesting_pathsegment.png) ![pathSegment örnek etkisi](media/filenesting_pathsegment_effect.png)
 
 * *JQuery.Min.js* altında iç içe *jquery.js* nedeniyle **pathSegment** kuralı
+
+> [!NOTE]
+> - Herhangi bir belirli dosya uzantısı için belirtmezseniz `pathSegment` kural, tüm dosya uzantıları için geçerlidir. Diğer bir deyişle, aynı ada ve yanı sıra ortasında ek bir uzantı olarak başka bir dosya uzantısı ile herhangi bir dosya başka bir dosyayı altında yer alıyor.
+> - Etkisini sınırlayabilirsiniz `pathSegment` kural aşağıdaki şekilde belirterek belirli dosya uzantıları:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>AllExtensions sağlayıcısı
 

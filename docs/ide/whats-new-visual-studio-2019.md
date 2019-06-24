@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976244"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328825"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -33,9 +33,9 @@ Visual Studio 2019 ile tüm geliştiriciler, herhangi bir uygulama ve herhangi b
 
 Yeniliklerin üst düzey bir özeti aşağıda verilmiştir:
 
-* **[Geliştirme](#develop)**: Odaklı ve Gelişmiş performans, anında kod temizleme ve daha iyi arama sonuçları ile üretken kalın.
-* **[İşbirliği](#collaborate)**: Bir Git öncelikli iş akışı, düzenleme ve hata ayıklama, gerçek zamanlı doğal işbirliği keyfini çıkarın ve sağa doğru Visual Studio'da kod incelemeleri.
-* **[Hata ayıklama](#debug)**: Vurgulayın ve belirli değerlere gidin, bellek kullanımı iyileştirin ve uygulamanızın yürütme otomatik anlık.
+* **[Geliştirme](#develop)** : Odaklı ve Gelişmiş performans, anında kod temizleme ve daha iyi arama sonuçları ile üretken kalın.
+* **[İşbirliği](#collaborate)** : Bir Git öncelikli iş akışı, düzenleme ve hata ayıklama, gerçek zamanlı doğal işbirliği keyfini çıkarın ve sağa doğru Visual Studio'da kod incelemeleri.
+* **[Hata ayıklama](#debug)** : Vurgulayın ve belirli değerlere gidin, bellek kullanımı iyileştirin ve uygulamanızın yürütme otomatik anlık.
 
 Bu sürümdeki yenilikler tam listesini her şey için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes/).
 
@@ -90,7 +90,7 @@ Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından öner
 
 Ayrıca, düzelticiden koleksiyonları bir profil kaydedebilirsiniz. Örneğin, küçük bir kod sık uygulanan hedeflenen düzelticiden sahip, ve ardından başka bir kapsamlı bir kod incelemesi önce uygulanacak düzelticiden varsa, profilleri bu farklı görevler ele almak için yapılandırabilirsiniz.
 
-   ![Visual Studio 2019 yeni kod temizleme denetimi görüntüsü](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Visual Studio 2019 yapılandırma kod temizleme denetimi görüntüsü](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>İzleyici başına kullanan (PMA) oluşturma
 

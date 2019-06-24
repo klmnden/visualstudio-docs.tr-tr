@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d82e3ace2cc26022a5ae39c690c5018a6325360
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253903"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309819"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -25,7 +25,7 @@ Adlandırma kuralları en belirgin sıralı çok az özgü EditorConfig dosyası
 
 Her bir adlandırma kuralı için aşağıda açıklanan özelliklerini kullanarak geçerli simgeleri ve adlandırma stili kuralı zorunlu tutmak için bir önem derecesi belirtmelisiniz. Özelliklerin sırası önemli değildir.
 
-Başlamak için her kural tam olarak açıklamak için gereken özellikleri kullanacağınız, adlandırma kuralı için bir başlık seçin. Örneğin, `public_members_must_be_capitalized` bir adlandırma kuralı için iyi ve açıklayıcı bir ad. Seçtiğiniz olarak başlığa başvuracağınız **< namingRuleTitle\>**  olarak bölümlerde.
+Başlamak için her kural tam olarak açıklamak için gereken özellikleri kullanacağınız, adlandırma kuralı için bir başlık seçin. Örneğin, `public_members_must_be_capitalized` bir adlandırma kuralı için iyi ve açıklayıcı bir ad. Bu sayfa başlığı olarak seçtiğiniz başvuracaktır **< namingRuleTitle\>**  olarak bölümlerde.
 
 ## <a name="symbols"></a>Simgeleri
 
@@ -116,7 +116,7 @@ Bir adlandırma kuralı sahip imzaları eşleşen *tüm* belirtilen değiştiric
 
 ## <a name="style"></a>Stil
 
-Şu grup için adlandırma kuralı uygulamak için simgeleri tanımladığınıza göre biz adlandırma stili açıklamanız gerekir. Bir stil adı belirli bir önek veya belirli bir sonek olduğundan veya kelimeler adında belirli bir karakteriyle ayrılır olabilir. Ayrıca, bir büyük harf stili belirtebilirsiniz. Stil özelliği şu biçimdedir:
+Adlandırma stili, Grup adlandırma kuralı uygulamak için simgeleri tanımladığınıza göre tanımlayabilirsiniz. Bir stil adı belirli bir önek veya belirli bir sonek olduğundan veya kelimeler adında belirli bir karakteriyle ayrılır olabilir. Ayrıca, bir büyük harf stili belirtebilirsiniz. Stil özelliği şu biçimdedir:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -174,6 +174,14 @@ error | Bu stil ardından, bir derleyici hatası Göster **hata listesi**.
 
 > [!NOTE]
 > Adlandırma kuralı ihlallerini görmek için projenizi oluşturmanız gerekmez. Kod düzenleme gibi görünürler ya da **hata listesi** veya bir öneri olarak.
+
+## <a name="default-naming-styles"></a>Varsayılan adlandırma stilleri
+
+Visual Studio, herhangi bir özel adlandırma kuralları belirtmezseniz, aşağıdaki varsayılan stilleri kullanır:
+
+- Sınıflar, yapılar, numaralandırmalar, özellikleri ve olayları için `public`, `private`, `internal`, `protected`, veya `protected_internal` erişilebilirlik, varsayılan adlandırma stili, baş harfleri büyük.
+
+- Olan arabirimler için `public`, `private`, `internal`, `protected`, veya `protected_internal` erişilebilirlik, varsayılan adlandırma stili, gerekli bir önek ile baş harfleri büyük **miyim**.
 
 ## <a name="example"></a>Örnek
 

@@ -8,12 +8,6 @@ metadata:
   description: Uygulamalarınıza, hizmetlerinize ve herhangi bir platform veya cihaz için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-  ms.translationtype: MT
-  ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66463220"
 highlightedContent:
   items:
   - title: Kurulum ve yükleme
@@ -161,21 +155,54 @@ additionalContent:
   - title: İş yükleri
     items:
     - title: Web ve bulut
-      summary: "[Web geliştirme](/aspnet/) </br>\n[Azure geliştirme ve yönetim](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Veri depolama ve işleme](data-tools/index.md) </br>\n[Veri bilimi](python/data-science-and-analytical-applications-workload.md) </br>\n[Office/Sharepoint geliştirme](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Web geliştirme
+        url: /aspnet/
+      - text: Azure geliştirme ve yönetim
+        url: azure/index.yml
+      - text: Python
+        url: python/index.yml
+      - text: Node.js
+        url: javascript/index.yml
+      - text: Veri depolama ve işleme
+        url: data-tools/index.md
+      - text: Veri bilimi
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Office/Sharepoint geliştirme
+        url: https://developer.microsoft.com/office/docs)
     - title: Windows
-      summary: >
-        [.NET masaüstü geliştirme](/dotnet/framework/develop-client-apps) </br>
-
-        [Evrensel Windows platformu geliştirme](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [C++ ile Windows geliştirme](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: .NET masaüstü geliştirme
+        url: /dotnet/framework/develop-client-apps
+      - text: Evrensel Windows platformu geliştirme
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: C++ ile Windows geliştirme
+        url: /cpp/windows/desktop-applications-visual-cpp)
     - title: Mobil ve oyun
-      summary: "[.NET (Xamarin) ile Mobil Geliştirme](/xamarin/) </br>\n[Unity ile oyun geliştirme](cross-platform/visual-studio-tools-for-unity.md) </br>\n[JavaScript ile Mobil Geliştirme](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (Visual Studio 2017 ve yalnızca 2015) </br>\n[C++ ile Mobil Geliştirme](/visualstudio/cross-platform/) </br>\n[C++ ile oyun geliştirme](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: .NET (Xamarin) ile Mobil Geliştirme
+        url: /xamarin/
+      - text: Unity ile oyun geliştirme
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: JavaScript ile Mobil Geliştirme
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)
+        note: (Visual Studio 2017 and 2015 only)
+      - text: C++ ile Mobil Geliştirme
+        url: /visualstudio/cross-platform/
+      - text: C++ ile oyun geliştirme
+        url: /windows/uwp/gaming/e2e)
     - title: Diğer araç takımları
-      summary: >
-        [Visual Studio uzantısı geliştirme](extensibility/index.md) </br>
-
-        [C++ ile Linux geliştirme](/cpp/linux/) </br>
-
-        [.NET core platformlar arası geliştirme](/dotnet/core/)
+      links:
+      - text: Visual Studio uzantısı geliştirme
+        url: extensibility/index.md
+      - text: C++ ile Linux geliştirme
+        url: /cpp/linux/
+      - text: .NET core platformlar arası geliştirme
+        url: /dotnet/core/)
   footer: '[Bloglar](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [yığın taşması](https://stackoverflow.com/questions/tagged/visual-studio) - [sorun rapor etme](ide/talk-to-us.md)  -  [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: 3a705504ba90c4745cd8c61c303f8b21568d399b
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.translationtype: HT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309659"

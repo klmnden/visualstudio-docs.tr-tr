@@ -11,46 +11,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531550"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328988"
 ---
-# <a name="setting-language-specific-editor-options"></a>Dile özgü Düzenleyici seçeneklerini ayarlama
+# <a name="set-language-specific-editor-options"></a>Dile özgü düzenleyici seçeneklerini ayarlama
 
-Visual Studio metin çeşitli belirli programlama dilleri için geçerli Düzenleyici seçenekleri sunar. Seçenekleri yapılandırabilirsiniz **seçenekleri** erişilen iletişim kutusunda, **Araçları** menüsü. EditorConfig dosya oluşturarak bir proje veya codebase-bazında bazı Düzenleyici ayarları da yapılandırabilirsiniz. Bkz: [EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma](../../ide/create-portable-custom-editor-options.md).
+Visual Studio metin çeşitli belirli programlama dilleri için geçerli Düzenleyici seçenekleri sunar. Seçenekleri yapılandırabilirsiniz **seçenekleri** erişilen iletişim kutusunda, **Araçları** menüsü. Üzerinde bir proje veya codebase-ayrı olarak bazı Düzenleyici ayarları da yapılandırabilirsiniz [EditorConfig dosyası oluşturma](../../ide/create-portable-custom-editor-options.md).
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>Seçenekler iletişim kutusundaki ayarları
 
- [Seçenekler, Metin Düzenleyici, Temel (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+[Seçenekler, metin düzenleyici, temel (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+Bitiş yapılarını, kodu yeniden biçimlendirme, anahat oluşturma ve hata düzeltme önerileri, diğerlerinin yanı sıra Visual Basic kodu için ayarları açıklar.
 
- İçin son yapılar, kodu yeniden biçimlendirme, anahat oluşturma ve diğerlerinin yanı sıra hata düzeltme önerileri için ayarları açıklar [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kod.
+[Seçenekler, metin düzenleyici, C/C++, biçimlendirme](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
+C ve C++ kodu için anahat oluşturma, girintilendirme, Hızlı Bilgi ve diğer ayarları açıklar.
 
- [Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+[Seçenekler, metin düzenleyici, C/C++, Gelişmiş](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
+C ve C++ kullanırken, IntelliSense ve veritabanı dosyaları için ayarları açıklar.
 
- C ve C++ kodu için anahat oluşturma, girintilendirme, Hızlı Bilgi ve diğer ayarları açıklar.
+[Seçenekler, metin düzenleyici, C#, biçimlendirme](../../ide/reference/options-text-editor-csharp-formatting.md)\
+İçin girintilendirme, yeni satır biçimlendirme ve diğerlerinin yanı sıra sarmalama metin için ayarları açıklar C#.
 
- [Seçenekler, Metin Düzenleyici, C/C++, Gelişmiş](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+[Seçenekler, metin düzenleyici, C#, Gelişmiş](../../ide/reference/options-text-editor-csharp-advanced.md)\
+Anahat oluşturma, hata tanımlama ve XML belge açıklaması ayarlarını açıklar C#.
 
- C ve C++ kullanırken, IntelliSense ve veritabanı dosyaları için ayarları açıklar.
+[Seçenekler, metin düzenleyici, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)\
+İçinde çalışırken, IntelliSense tamamlama listesinin nasıl davranacağını belirten ayarları açıklar C# kod.
 
- [Seçenekler, Metin Düzenleyici, C#, Biçimlendirme](../../ide/reference/options-text-editor-csharp-formatting.md)
-
- İçin girintilendirme, yeni satır biçimlendirme ve diğerlerinin yanı sıra sarmalama metin için ayarları açıklar C#.
-
- [Seçenekler, Metin Düzenleyici, C#, Gelişmiş](../../ide/reference/options-text-editor-csharp-advanced.md)
-
- Anahat oluşturma, hata tanımlama ve XML belge açıklaması ayarlarını açıklar C#.
-
- [Seçenekler, Metin Düzenleyici, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)
-
- İçinde çalışırken, IntelliSense tamamlama listesinin nasıl davranacağını belirten ayarları açıklar C# kod.
-
- [Seçenekler, Metin Düzenleyici, XAML, Biçimlendirme](../../ide/reference/options-text-editor-xaml-formatting.md)
-
- XAML belgelerinde öğe ve öznitelik düzenlemesi için ayarları açıklar.
+[Biçimlendirme seçenekler, metin düzenleyici, XAML,](../../ide/reference/options-text-editor-xaml-formatting.md)\
+XAML belgelerinde öğe ve öznitelik düzenlemesi için ayarları açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

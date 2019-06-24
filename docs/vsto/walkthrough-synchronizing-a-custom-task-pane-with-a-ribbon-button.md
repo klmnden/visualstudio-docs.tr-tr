@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme'
+title: Özel görev bölmesini Şerit düğmesi ile eşitleme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443975"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328330"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme
   Bu yönerge, kullanıcıların Gizle veya Şerit üzerindeki iki durumlu bir düğmenin tıklayarak özel görev bölmesi oluşturma işlemini gösterir. Her zaman Microsoft Office uygulamaları, kullanıcıların özel görev bölmeleri göstermek veya gizlemek varsayılan bir yol sağlamaz çünkü, kullanıcıların, özel görev bölmesini Gizle veya görüntülemek için tıklayabileceği bir düğme gibi bir kullanıcı arabirimi (UI) öğesi oluşturmanız gerekir.
@@ -71,7 +71,7 @@ ms.locfileid: "63443975"
 
 1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)** .
 
 3. Yeni Şeridin adını değiştirmek **ManageTaskPaneRibbon**, tıklatıp **Ekle**.
 

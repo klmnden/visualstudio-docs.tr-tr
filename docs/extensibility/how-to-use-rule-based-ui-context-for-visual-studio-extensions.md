@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324705"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309687"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio uzantıları için kural tabanlı UI bağlamı kullanma
 
@@ -140,6 +140,10 @@ Terim desteklenen çeşitli türleri şunlardır:
 |ActiveProjectCapability:\<ifadesi >|Etkin proje özellikleri sağlanan ifade eşleştiğinde true bir terimdir. VB gibi bir ifade olabilir &#124; CSharp.|
 |SolutionHasProjectCapability:\<ifadesi >|Yukarıdaki benzer; ancak terimi olduğunda true ifade ile eşleşen tüm yüklenen proje çözümü vardır.|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Her bir çözüm (toplu) özellikli proje varsa ve GUID belirli proje türüyle eşleşen bir özellik terimi true olur.|
+|ProjectAddedItem:\<deseni >| Bir proje açıldığında soluion "deseni" eşleşen bir dosya eklendiğinde true bir terimdir.|
+|ActiveProjectOutputType:\<outputType >|Çıkış Terime doğrudur etkin proje tam olarak eşleşen için yazın.  OutputType bir tamsayı olabilir veya <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> türü.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Belirtilen yapı özelliği etkin bir proje varsa ve sağlanan normal ifade filtresi için özellik değeri ile eşleşen terimi geçerlidir. Başvurmak [MSBuild proje dosyalarındaki verileri kalıcı hale](internals/persisting-data-in-the-msbuild-project-file.md) derleme özellikleri hakkında daha fazla ayrıntı için.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Çözüm belirtilen yapı özelliği ile yüklenmiş bir proje varsa ve sağlanan normal ifade filtresi için özellik değeri ile eşleşen terimi geçerlidir.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Sürümler arası uzantısı ile uyumluluk
 

@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme'
+title: Çalışma zamanında VSTO eklenti belgelemek için denetimler ekleme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982416"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328394"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme
   Bir VSTO eklentisi kullanarak, Microsoft Office Word'ün herhangi bir açık belgeye denetimler ekleyebilirsiniz. Bu izlenecek yol ekleme olanağı Şerit kullanmayı gösterir. bir <xref:Microsoft.Office.Tools.Word.Controls.Button> veya <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye.
@@ -62,7 +62,7 @@ ms.locfileid: "62982416"
 
 1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)** .
 
 3. Yeni Şeridin adını değiştirmek **MyRibbon**, tıklatıp **Ekle**.
 
