@@ -1,15 +1,9 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 0a2bd64f423740f8f03961d20969201c438df7a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819522"
 documentType: LandingData
 title: Visual Studio’da Kapsayıcı Araçları
 metadata:
   title: Docker kapsayıcı geliştirme araçları belgeleri
-  description: Oluşturmayı ve kapsayıcı tabanlı uygulamalar ve hizmetler yönetmeyi öğrenin. Belgeler, kod örneği, öğreticiler ve daha fazlasını edinin.
+  description: 'Oluşturmayı ve kapsayıcı tabanlı uygulamalar ve hizmetler yönetmeyi öğrenin. Belgeler, kod örneği, öğreticiler ve daha fazlasını edinin.'
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
@@ -18,113 +12,113 @@ metadata:
   ms.date: 02/15/2019
   ms.author: ghogen
 sections:
-- title: ''
-  items:
-  - type: paragraph
-    text: Docker ve Kubernetes araçları ve kapsayıcı tabanlı geliştirme projelerini yönetmek için Azure Hizmetleri keşfedin.
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: ''
     items:
-    - href: container-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: 'Hızlı Başlangıç: Visual Studio’da Docker'
-    - href: tutorial-multicontainer.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Docker ile çok kapsayıcılı uygulama oluşturma
-    - href: /visualstudio/install/build-tools-container
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Bir kapsayıcıda çalışan derleme araçları
-    - href: tutorial-kubernetes-tools.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
-      title: Kubernetes için Visual Studio Araçları
-- title: .NET Core
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: Docker ve Kubernetes araçları ve kapsayıcı tabanlı geliştirme projelerini yönetmek için Azure Hizmetleri keşfedin.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: container-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: 'Hızlı Başlangıç: Visual Studio’da Docker'
+          - href: tutorial-multicontainer.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Docker ile çok kapsayıcılı uygulama oluşturma
+          - href: /visualstudio/install/build-tools-container
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Bir kapsayıcıda çalışan derleme araçları
+          - href: tutorial-kubernetes-tools.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
+            title: Kubernetes için Visual Studio Araçları
+  - title: .NET Core
     items:
-    - href: /dotnet/core/docker/intro-net-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: .NET ve Docker'a giriş
-    - href: /dotnet/core/docker/docker-basics-dotnet-core
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Docker temel bilgileri öğrenin
-    - href: /dotnet/core/docker/building-net-docker-images
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Docker görüntüleri oluşturma
-    - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_web.svg
-      title: ASP.NET kapsayıcı araçları
-    - href: https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_azure.svg
-      title: Azure Container Registry'ye dağıtma
-    - href: /dotnet/standard/containerized-lifecycle-architecture/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-      title: Mikro hizmetler Mimarisi Kılavuzu
-- title: Azure
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /dotnet/core/docker/intro-net-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            title: .NET ve Docker'a giriş
+          - href: /dotnet/core/docker/docker-basics-dotnet-core
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Docker temel bilgileri öğrenin
+          - href: /dotnet/core/docker/building-net-docker-images
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Docker görüntüleri oluşturma
+          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_web.svg'
+            title: ASP.NET kapsayıcı araçları
+          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            title: Azure Container Registry'ye dağıtma
+          - href: /dotnet/standard/containerized-lifecycle-architecture/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
+            title: Mikro hizmetler Mimarisi Kılavuzu
+  - title: Azure
     items:
-    - href: /azure/aks
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerService.svg
-      title: Azure Kubernetes Service'i (AKS)
-    - href: /azure/dev-spaces
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg
-      title: Azure geliştirme alanları
-    - href: /azure/container-instances/container-instances-tutorial-prepare-app
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/ContainerInstances.svg
-      title: Azure Container Instances
-    - href: /azure/container-registry/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/container-registry.svg
-      title: Azure kapsayıcı kayıt defteri
-    - href: /azure/docker
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      title: Azure'da docker
-- title: Videolar
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /azure/aks
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
+            title: Azure Kubernetes Service'i (AKS)
+          - href: /azure/dev-spaces
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
+            title: Azure geliştirme alanları
+          - href: /azure/container-instances/container-instances-tutorial-prepare-app
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
+            title: Azure Container Instances
+          - href: /azure/container-registry/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
+            title: Azure kapsayıcı kayıt defteri
+          - href: /azure/docker
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
+            title: Azure'da docker
+  - title: Videolar
     items:
-    - href: https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_video.svg
-      title: 'Kanal 9: Docker geliştirme'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_video.svg'
+            title: 'Kanal 9: Docker geliştirme'
