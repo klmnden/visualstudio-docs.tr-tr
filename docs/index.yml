@@ -169,7 +169,7 @@ additionalContent:
       - text: Veri bilimi
         url: python/data-science-and-analytical-applications-workload.md
       - text: Office/Sharepoint geliştirme
-        url: https://developer.microsoft.com/office/docs)
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
       links:
       - text: .NET masaüstü geliştirme
@@ -177,7 +177,7 @@ additionalContent:
       - text: Evrensel Windows platformu geliştirme
         url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: C++ ile Windows geliştirme
-        url: /cpp/windows/desktop-applications-visual-cpp)
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Mobil ve oyun
       links:
       - text: .NET (Xamarin) ile Mobil Geliştirme
@@ -185,12 +185,12 @@ additionalContent:
       - text: Unity ile oyun geliştirme
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: JavaScript ile Mobil Geliştirme
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Visual Studio 2017 and 2015 only)
       - text: C++ ile Mobil Geliştirme
         url: /visualstudio/cross-platform/
       - text: C++ ile oyun geliştirme
-        url: /windows/uwp/gaming/e2e)
+        url: /windows/uwp/gaming/e2e
     - title: Diğer araç takımları
       links:
       - text: Visual Studio uzantısı geliştirme
@@ -198,11 +198,11 @@ additionalContent:
       - text: C++ ile Linux geliştirme
         url: /cpp/linux/
       - text: .NET core platformlar arası geliştirme
-        url: /dotnet/core/)
+        url: /dotnet/core/
   footer: '[Bloglar](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [yığın taşması](https://stackoverflow.com/questions/tagged/visual-studio) - [sorun rapor etme](ide/talk-to-us.md)  -  [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: 3a705504ba90c4745cd8c61c303f8b21568d399b
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309659"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328814"

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6465724fe14d43781730abc25b050ae0bcd2d2b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317479"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342409"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Bu kod bağlamı için karşılık gelen belge bağlamını alır. Belge bağlamı bir konumda bu yönerge oluşturulan kaynak koduna karşılık gelen kaynak dosyasını temsil eder.
@@ -41,10 +41,10 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Parametreler
 `ppSrcCxt`\
-[out] Döndürür [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kod bağlamı için karşılık gelen nesne.
+[out] Döndürür [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kod bağlamı için karşılık gelen nesne. Varsa `S_OK` döndürülür gündeki olmalıdır olmayan`null`.
 
 ## <a name="return-value"></a>Dönüş Değeri
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Hata ayıklama altyapısı gibi bir hata kodunu döndürmelidir `E_FAIL` olduğunda `out` parametresi `null` kod bağlamı hiçbir ilişkili kaynak konumu olduğunda gibi.
 
 ## <a name="remarks"></a>Açıklamalar
  Kod bağlamı konumda bir yürütme akışı kod yönerge olsa da genel olarak, belge bağlamı, kaynak dosyada bir konum olarak düşünülebilir.

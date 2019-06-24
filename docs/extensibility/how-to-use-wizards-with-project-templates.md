@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352035"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342421"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma
 
@@ -68,7 +68,7 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
 3. Bütünleştirilmiş kod bir varlık VSIX projesine ekleyin. Açık *source.extension.vsixmanifest* seçin ve dosya **varlıklar** sekmesi. İçinde **yeni varlık Ekle** penceresinde için **türü** seçin **Microsoft.VisualStudio.Assembly**, için **kaynak** seçin **A Geçerli çözümde proje**ve **proje** seçin **MyProjectWizard**.
 
-4. VSIX projesinde aşağıdaki başvuruları ekleyin. (İçinde **Çözüm Gezgini**, VSIX proje düğümü altında seçin **başvuruları**, sağ tıklatın ve seçin **Başvuru Ekle**.) İçinde **Başvuru Ekle** iletişim, **Framework** sekmesinde, bulmak **System.Windows Forms** derlemesi ve bu seçeneği belirleyin. Şimdi seçtiğiniz **uzantıları** sekmesi. Bulma **EnvDTE** derlemesi ve bu seçeneği belirleyin. Ayrıca **Microsoft.VisualStudio.TemplateWizardInterface** derlemesi ve bu seçeneği belirleyin. **Tamam**'ı tıklatın.
+4. VSIX projesinde aşağıdaki başvuruları ekleyin. (İçinde **Çözüm Gezgini**, VSIX proje düğümü altında seçin **başvuruları**, sağ tıklatın ve seçin **Başvuru Ekle**.) İçinde **Başvuru Ekle** iletişim, **Framework** sekmesinde, bulmak **System.Windows Forms** derlemesi ve bu seçeneği belirleyin. Ayrıca, bulmak ve seçmek **sistem** ve **System.Drawing** derlemeler. Şimdi seçtiğiniz **uzantıları** sekmesi. Bulma **EnvDTE** derlemesi ve bu seçeneği belirleyin. Ayrıca **Microsoft.VisualStudio.TemplateWizardInterface** derlemesi ve bu seçeneği belirleyin. **Tamam**'ı tıklatın.
 
 5. Sihirbaz uygulamasını için bir sınıf, VSIX projesine ekleyin. (İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin **Ekle**, ardından **yeni öğe**, ardından **sınıfı**.) Sınıf adı **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
    - Bir <xref:System.Object> parametreler kümesi içeren bir dizi için Sihirbazı'nı Visual Studio tarafından geçirilen.
 
-     Bu örnek için kullanıcı giriş formundan bir parametre değeri ekler <xref:System.Collections.Generic.Dictionary%602> parametresi. Her bir örneğini `$custommessage$` projedeki parametresi, kullanıcı tarafından girilen metinle değiştirilecektir. Aşağıdaki derlemeleri projenize ekleyin: **Sistem** ve **System.Drawing**.
+     Bu örnek için kullanıcı giriş formundan bir parametre değeri ekler <xref:System.Collections.Generic.Dictionary%602> parametresi. Her bir örneğini `$custommessage$` projedeki parametresi, kullanıcı tarafından girilen metinle değiştirilecektir.
 
 7. Şimdi oluşturmak **Userınputform**. İçinde *WizardImplementation.cs* sonunda aşağıdaki kodu ekleyin `WizardImplementation` sınıfı.
 

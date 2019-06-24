@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 3dfdc230a4dc873cc9a068e2f641da022018aff3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679390"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342376"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
@@ -58,7 +58,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
     Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **boş proje**, seçin **şablonları**, ardından **yeni boş proje proje oluştur** c ++. Görünen iletişim kutusunda **Oluştur**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++**, seçin **diğer**seçip Ortadaki bölmeden **boş proje**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++** , seçin **diğer**seçip Ortadaki bölmeden **boş proje**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Tamam**.
     ::: moniker-end
 
     Görmüyorsanız **boş proje** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
@@ -73,7 +73,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 1. İçinde **Çözüm Gezgini**seçin **kaynak dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **kaynak dosyaları** seçip **Ekle** > **yeni öğe**.
 
-1. İçinde **yeni öğe** iletişim kutusunda **C++ dosyası (.cpp)**. Tür **Mixed_Mode.cpp** içinde **adı** alan ve ardından **Ekle**.
+1. İçinde **yeni öğe** iletişim kutusunda **C++ dosyası (.cpp)** . Tür **Mixed_Mode.cpp** içinde **adı** alan ve ardından **Ekle**.
 
     Visual Studio için yeni C++ dosyası ekler **Çözüm Gezgini**.
 
@@ -85,7 +85,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 1. İçinde **Çözüm Gezgini**seçin **üst bilgi dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **üst bilgi dosyaları** seçip **Ekle** > **yeni öğe**.
 
-1. İçinde **yeni öğe** iletişim kutusunda **üst bilgi dosyası (.h)**. Tür **Mixed_Mode.h** içinde **adı** alan ve ardından **Ekle**.
+1. İçinde **yeni öğe** iletişim kutusunda **üst bilgi dosyası (.h)** . Tür **Mixed_Mode.h** içinde **adı** alan ve ardından **Ekle**.
 
    Visual Studio yeni üstbilgi dosyasına ekler **Çözüm Gezgini**.
 
@@ -119,7 +119,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 1. Altında **yapılandırma özellikleri** seçin sol bölmede **bağlayıcı** > **Gelişmiş**ve yanındaki açılan menüdeki **Hayır giriş noktası**seçin **Hayır**. Değiştirilmesi olsaydı **Hayır**seçin **Uygula**.
 
-1. Altında **yapılandırma özellikleri**seçin **genel**ve yanındaki açılan menüdeki **yapılandırma türü**seçin **dinamik kitaplık (.dll)**. Seçin **Uygula**ve ardından **Tamam**.
+1. Altında **yapılandırma özellikleri**seçin **genel**ve yanındaki açılan menüdeki **yapılandırma türü**seçin **dinamik kitaplık (.dll)** . Seçin **Uygula**ve ardından **Tamam**.
 
    ![Yerel bir DLL için geçiş](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -137,7 +137,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
     Gibi bir ad yazın **Mixed_Mode_Calling_App** tıklatıp **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)** veya **konsol uygulaması (.NET Core)**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)** veya **konsol uygulaması (.NET Core)** .
 
     Gibi bir ad yazın **Mixed_Mode_Calling_App** tıklatıp **Tamam**.
     ::: moniker-end
@@ -200,7 +200,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
    >[!NOTE]
    >Varsayılan olarak, *launchSettings.json* bulunduğu *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Varsa *launchSettings.json* değil, mevcut seçin **Mixed_Mode_Calling_App** projesi **Çözüm Gezgini** seçip **özellikleri** simgesini veya projeye sağ tıklayıp seçin **özellikleri**. Geçici bir değişiklik yapmak **hata ayıklama** sekme ve projeyi derleyin. Bu oluşturacak bir *launchSettings.json* dosya. Yaptığınız değişikliği geri al **hata ayıklama** sekmesi.
 
-1. İçinde *lauchsettings.json* dosyasında, aşağıdaki satırı ekleyin:
+1. İçinde *launchsettings.json* dosyasında, aşağıdaki satırı ekleyin:
 
     ```csharp
     "nativeDebugging": true
