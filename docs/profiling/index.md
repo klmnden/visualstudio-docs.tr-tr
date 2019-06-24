@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Profil oluşturma kullanarak ölçü uygulama performansını | Microsoft Docs
-description: 'Nasıl Visual Studio profili, uygulamalarınızın performansını Hizmetleri ve tercih ettiğiniz dilde araçları öğrenin.'
+description: Nasıl Visual Studio profili, uygulamalarınızın performansını Hizmetleri ve tercih ettiğiniz dilde araçları öğrenin.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995433"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Visual Studio'da uygulama performansını ölçmeye
 
