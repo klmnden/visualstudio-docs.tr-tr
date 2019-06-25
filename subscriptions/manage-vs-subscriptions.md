@@ -1,18 +1,18 @@
 ---
 title: Visual Studio Abonelikleri Yönetme
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833977"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365435"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri Yönetme
 
@@ -125,6 +125,12 @@ Kişi bilgileri ve tercihleri profilinizde kolaylıkla değiştirebilirsiniz.
    > [!div class="mx-imgBorder"]
    > ![Profil bilgilerini düzenleme](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>İletişim tercihlerini ayarlama
+Aboneliğiniz ve avantajları hakkında düzenli güncelleştirmeler almak istiyorsanız, Visual Studio abonelikleri aylık bülten dahil olmak üzere [tercihlerinizi güncelleştirin](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) Visual Studio abonelikleri için kutuyu işaretleyerek, Visual Studio profili. Bu tercihler değiştirmek ve istediğiniz zaman abonelikten. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Tercihlerini ayarlama](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>My mevcut Azure DevOps hizmetlere aboneliği veya Azure aboneliği bağlama
 
 Aboneliğinizi kişisel bir Microsoft hesabı (MSA) kullanarak oturum açın ve Azure DevOps Hizmetleri veya Microsoft Azure kullanarak bir iş içeren bir aboneliğiniz veya Okul hesabı Azure tarafından yönetilen iki aboneliğin bağlayabilirsiniz. Bu, "alternatif hesap" olarak adlandırılır ve MSA aboneliğiniz iş hesaplarını ya da Okul ilişkili mevcut Azure, Azure DevOps Hizmetleri veya IDE kaynaklarınıza erişmesini sırasında oturum açmak için kullanmaya devam etmek sağlar.

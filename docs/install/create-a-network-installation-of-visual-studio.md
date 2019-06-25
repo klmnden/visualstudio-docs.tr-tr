@@ -1,7 +1,7 @@
 ---
 title: Bir ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtımı için bir ağ yükleme noktasını oluşturmayı öğrenin.
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974107"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365340"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio'nun bir ağ oluşturun
 
-Genellikle, bir kuruluş yöneticisi istemci iş istasyonlarına dağıtmak için bir ağ yükleme noktası oluşturur. Visual Studio, tek bir klasöre tüm ürün güncelleştirmeleri ile birlikte ilk yükleme dosyaları önbelleğe almak sağlamak için tasarladık. (Bu işlem, ayrıca olarak adlandırılır _bir düzen oluşturma_.) 
+Genellikle, bir kuruluş yöneticisi istemci iş istasyonlarına dağıtmak için bir ağ yükleme noktası oluşturur. Visual Studio, tek bir klasöre tüm ürün güncelleştirmeleri ile birlikte ilk yükleme dosyaları önbelleğe almak sağlamak için tasarladık. (Bu işlem, ayrıca olarak adlandırılır _bir düzen oluşturma_.)
 
 Böylece istemci iş istasyonları, aynı ağ konumunu en son hizmet güncelleştirmesi güncelleştirilmemiş olmasanız bile yükleme yönetmek için kullanabilirsiniz biz bunu yaptık.
 
@@ -145,13 +145,13 @@ Ağ düzeninize özelleştirmek için kullanabileceğiniz birkaç seçenek vard�
 * İki iş yükü ve tüm önerilen bileşenleri yüklemek için:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * İki iş yükü ve tüm önerilen ve isteğe bağlı bileşenleri yüklemek için çalıştırın:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ Bir düzenden yükleme sırasında düzeninde yüklü içeriği alınır. Düzen
 
 Kullandıysanız `--wait` parametresi ve ardından işlemi sonucuna bağlı olarak `%ERRORLEVEL%` ortam değişkeni aşağıdaki değerlerden birine ayarlanır:
 
-  | **Değer** | **Sonuç** |
-  | --------- | ---------- |
-  | 0 | İşlem başarıyla tamamlandı |
-  | 3010 | İşlem başarıyla tamamlandı ancak kullanmadan önce yükleme, yeniden başlatma gerekiyor. |
-  | Diğer | Hata durumu oluştu - daha fazla bilgi için günlüklere bakın |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Bir ağ yükleme düzeni güncelleştirme
 
@@ -241,9 +237,9 @@ Kullandıysanız `--wait` parametresi ve ardından işlemi sonucuna bağlı olar
 
 > [!NOTE]
 > Mevcut Visual Studio Önyükleyiciler ile [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) indirin ve çalıştıkları zaman kullanılabilir en son Visual Studio sürümünü yükleyin.
-> 
+>
 > Bunu, Visual Studio yüklerseniz *önyükleyici* Bugün ve BT altı ay şu andan itibaren önyükleyici çalıştırdığınız anda geçerli olan Visual Studio'nun sürümünü yükler.
-> 
+>
 > Ancak oluşturursanız, bir *Düzen* ve indirip yükleyin, Düzen düzende var. Visual Studio'nun belirli sürümü yükler. Yeni bir sürüme çevrimiçi mevcut olabilecek olsa da, düzeni Visual Studio'nun sürümü alın.
 
 ::: moniker-end
@@ -252,9 +248,9 @@ Kullandıysanız `--wait` parametresi ve ardından işlemi sonucuna bağlı olar
 
 > [!NOTE]
 > Mevcut Visual Studio Önyükleyiciler ile [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) indirin ve çalıştıkları zaman kullanılabilir en son Visual Studio sürümünü yükleyin.
-> 
+>
 > Bunu, Visual Studio yüklerseniz *önyükleyici* Bugün ve BT altı ay şu andan itibaren önyükleyici çalıştırdığınız anda geçerli olan Visual Studio'nun sürümünü yükler.
-> 
+>
 > Ancak oluşturursanız, bir *Düzen* ve indirip yükleyin, Düzen düzende var. Visual Studio'nun belirli sürümü yükler. Yeni bir sürüme çevrimiçi mevcut olabilecek olsa da, düzeni Visual Studio'nun sürümü alın.
 
 ::: moniker-end
@@ -267,13 +263,14 @@ Visual Studio'nun daha eski bir sürümü için bir düzen oluşturmanız gereki
 
 Ayrıca sunuyoruz bir [ **canlı sohbet** ](https://visualstudio.microsoft.com/vs/support/#talktous) yüklemeyle ilgili sorunlar için destek seçeneği (yalnızca İngilizce).
 
-Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz. bizim [konuşmak bize](../ide/talk-to-us.md) sayfası.
+Diğer destek seçenekleri, çok sahibiz. Bir liste için bkz. bizim [geri bildirim](../ide/feedback-options.md) sayfası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
-* [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio ürün yaşam döngüsü ve Bakım](/visualstudio/releases/2019/servicing/)
-* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
-* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)
+- [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
+- [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
+- [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
+- [Visual Studio ürün yaşam döngüsü ve Bakım](/visualstudio/releases/2019/servicing/)
+- [Bakım sırasında temel Visual Studio güncelleştirme](update-servicing-baseline.md)
+- [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
+- [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974133"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365245"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio’nun çevrimdışı yüklemesini oluşturma
 
@@ -71,7 +71,7 @@ Küçük bir önyükleyici indirdikten sonra komut satırında yerel önbellek o
 
 İşte nasıl.
 
-### <a name="step-1---download-the-visual-studio-bootstrapper"></a>1. adım - Visual Studio önyükleyicisini yükleyin
+### <a name="step-1---download-the-visual-studio-bootstrapper"></a>1\. adım - Visual Studio önyükleyicisini yükleyin
 
 Bu adımı tamamlamak için bir internet bağlantısı olması gerekir.
 
@@ -97,7 +97,7 @@ Seçtiğiniz Visual Studio sürümünüz için Visual Studio önyükleyicisi ind
 
 ::: moniker-end
 
-### <a name="step-2---create-a-local-install-cache"></a>2. adım - yerel yükleme önbelleği oluşturma
+### <a name="step-2---create-a-local-install-cache"></a>2\. adım - yerel yükleme önbelleği oluşturma
 
 Bu adımı tamamlamak için bir internet bağlantısı olması gerekir.
 
@@ -182,6 +182,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'nun bir ağ oluşturun](../install/create-a-network-installation-of-visual-studio.md)
+- [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 - [Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme](../install/install-certificates-for-visual-studio-offline.md)
 - [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 - [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

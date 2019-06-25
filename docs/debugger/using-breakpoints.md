@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614518"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365390"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -144,9 +144,9 @@ Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: 
 
 4. Ekleyin **işlev adı** kutusunda ve seçin **C++** dili.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Veri kesme noktaları, belirli bir nesnenin özellik değiştiğinde yürütmeyi
 - Araç İpucu'nda, Yereller, Otomatikler, Genişletilebilir olmayan ya da Gözcü penceresi özellikleri
 - Statik değişkenler
 - DebuggerTypeProxy özniteliği olan sınıfları
-- İçinde yapının alanları 
+- İçinde yapının alanları
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Veri kesme noktaları, aşağıdaki koşullar altında çalışmaz:
 - Değil ayıklanmakta olan bir işlem bellek konumuna yazar.
 - Bellek konumu iki veya daha fazla işlemler arasında paylaşılır.
 - Bellek konumu çekirdek içinde güncelleştirilir. Örneğin bellek 32-bit Windows için iletilmezse `ReadFile` işlevi, güncelleştirmeyi hata ayıklayıcı kesme olmaz şekilde bellek çekirdek modundan güncelleştirilecek.
+- Burada Gözcü ifadesini 4 bayt donanım 32-bit ve 64 bit donanımda 8 bayt daha büyük. Bu bir sınırlamadır x86, mimari.
 
->[!NOTE]
->- Veri kesme noktaları belirli bellek adreslerinde bağlıdır. Değişkenin adresini, bir hata ayıklama oturumundan yanında, değiştirir, böylece veri kesme noktaları her hata ayıklama oturumu sonunda otomatik olarak devre dışıdır.
+> [!NOTE]
+> - Veri kesme noktaları belirli bellek adreslerinde bağlıdır. Değişkenin adresini, bir hata ayıklama oturumundan yanında, değiştirir, böylece veri kesme noktaları her hata ayıklama oturumu sonunda otomatik olarak devre dışıdır.
 >
->- Yerel bir değişkende veri kesme noktası ayarlarsanız, işlev sona erdiğinde, kesme noktası etkin kalır ancak kesme noktası davranışı tahmin edilemez şekilde bellek adresi artık geçerli değil. Yerel bir değişkende veri kesme noktası ayarlarsanız, delete ya da işlev sonlandırılmadan önce kesme noktasını devre dışı bırakın.
+> - Yerel bir değişkende veri kesme noktası ayarlarsanız, işlev sona erdiğinde, kesme noktası etkin kalır ancak kesme noktası davranışı tahmin edilemez şekilde bellek adresi artık geçerli değil. Yerel bir değişkende veri kesme noktası ayarlarsanız, delete ya da işlev sonlandırılmadan önce kesme noktasını devre dışı bırakın.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Kesme noktaları penceresinde kesme noktalarını yönetin
 

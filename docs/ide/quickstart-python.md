@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953965"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365300"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
@@ -177,8 +177,6 @@ Python kodu en az bir web uygulamasını uygulamak için biraz eklemek artık ha
     ::: moniker range=">=vs-2019"
     ![Çözüm Gezgini'nde bir proje için başlangıç dosyası ayarı](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Sağ *app.py* içinde **Çözüm Gezgini** seçip **başlangıç dosyası olarak ayarla**. Bu komut, uygulamayı çalıştırırken Python'da başlatmak için kod dosyası tanımlar.
 
 2. Projeye sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından **hata ayıklama** ayarlayın ve sekme **bağlantı noktası numarası** özelliğini `4449`. Visual Studio ile bir tarayıcı başlatır, bu adım sağlar `localhost:4449` eşleştirilecek `app.run` koddaki bağımsız değişkenler.
 

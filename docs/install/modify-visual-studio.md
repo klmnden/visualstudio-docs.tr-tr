@@ -3,7 +3,7 @@ title: Visual Studio’yu değiştirme
 titleSuffix: ''
 description: Visual Studio, adım adım değiştirme hakkında bilgi edinin.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 06/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951612"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365408"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Visual Studio ekleyerek veya iş yüklerinin ve bileşenlerin kaldırarak değiştirme
 
@@ -47,6 +47,9 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
 >[!IMPORTANT]
 >Yüklemek, güncelleştirmek veya Visual Studio değiştirmek için yönetici izinleri olan bir hesapla oturum açmalısınız. Daha fazla bilgi için [kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+>[!TIP]
+> Aşağıdaki yordamı bir internet bağlantısına sahip olduğunuzu varsayar. Daha önce oluşturulan değişiklik yapma hakkında daha fazla bilgi için [çevrimdışı yükleme](create-an-offline-installation-of-visual-studio.md) Visual Studio bkz: [ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetlemek](controlling-updates-to-visual-studio-deployments.md) sayfası.
 
 ::: moniker range="vs-2017"
 
@@ -122,4 +125,6 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
+* [Bakım sırasında temel Visual Studio güncelleştirme](update-servicing-baseline.md)
+* [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
