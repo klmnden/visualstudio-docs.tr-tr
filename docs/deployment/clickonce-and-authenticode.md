@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900554"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399026"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 *Authenticode* uygulama kodu uygulama yayımcısının özgünlüğünü doğrulamak dijital sertifika ile imzalamak için endüstri standardı şifreleme kullanan bir Microsoft teknolojisidir. Uygulama dağıtımı için Authenticode kullanılarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Truva atı riskini azaltır. Truva atı, virüs veya kötü amaçlı bir üçüncü taraf kurulu olan güvenilir bir kaynaktan gelen yasal bir program olarak görünen diğer zararlı programı değil. İmzalama [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir dijital sertifika ile dağıtımları derlemeleri ve dosyaları değil doğrulamak için isteğe bağlı bir adımdır.
@@ -33,7 +33,7 @@ ms.locfileid: "62900554"
 ## <a name="authenticode-and-code-signing"></a>Authenticode ve kod imzalama
  A *dijital sertifika* yayımcıya açıklayan meta verileri yanı sıra şifreleme ortak/özel bir anahtar çifti içeren bir dosyadır sertifikanın verildiği ve sertifikayı veren Aracısı.
 
- Authenticode sertifika çeşitli türleri vardır. Her biri farklı imzalama yapılandırılır. İçin [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, kod imzalama için geçerli olan Authenticode sertifikası olması gerekir. Oturum denerseniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama başka türde bir dijital e-posta sertifikası gibi bir sertifika ile çalışmaz. Daha fazla bilgi için [kod imzalama giriş](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Authenticode sertifika çeşitli türleri vardır. Her biri farklı imzalama yapılandırılır. İçin [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, kod imzalama için geçerli olan Authenticode sertifikası olması gerekir. Oturum denerseniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama başka türde bir dijital e-posta sertifikası gibi bir sertifika ile çalışmaz. Daha fazla bilgi için [kod imzalama giriş](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools).
 
  Kod üç yoldan biriyle imzalama için bir sertifika edinebilirsiniz:
 
