@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567211"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412291"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio'da Entity Framework Araçları
 
 Entity Framework, .NET geliştiricilerinin etki alanına özel nesneler kullanarak ilişkisel verilerle çalışmak bir nesne ilişkisel eşleme teknolojisidir. Genellikle geliştiricilerin yazmak zorunda olduğu çoğu veri erişim koduna yönelik gereksinimi ortadan kaldırır. Varlık, yeni .NET uygulamaları için teknoloji modelleme önerilen nesne ilişkisel eşleme (ORM) çerçevedir.
 
-Entity Framework Araçları, Entity Framework (EF) uygulamaları oluşturmanıza yardımcı olacak şekilde tasarlanmıştır. Entity Framework için kapsamlı belgeler aşağıda verilmiştir: [EF Core ve EF 6](/ef/).
+Entity Framework Araçları, Entity Framework (EF) uygulamaları oluşturmanıza yardımcı olacak şekilde tasarlanmıştır. Entity Framework için kapsamlı belgeler aşağıda verilmiştir: [Genel Bakış - EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Bu sayfada açıklanan Entity Framework Araçları oluşturmak için kullanılan *.edmx* dosyaları, EF Core desteklenmez. EF Core modeli varolan bir veritabanından oluşturmak istiyorsanız bkz. [ters mühendislik - EF Core](/ef/core/managing-schemas/scaffolding). EF 6 ve EF Core arasındaki farklar hakkında daha fazla bilgi için bkz. [karşılaştırma EF 6 ve EF Core](/ef/efcore-and-ef6/).
 
 Entity Framework Araçları ile oluşturduğunuz bir *kavramsal model* mevcut bir veritabanı ve grafik görselleştirin ve kavramsal model düzenleyin. Veya bir kavramsal model ilk grafik oluşturun ve ardından modelinizin destekleyen bir veritabanı oluşturun. Her iki durumda da temel alınan veritabanı değişiklikleri ve otomatik olarak uygulamanız için nesne katmanı kodu oluşturma modeliniz otomatik olarak güncelleştirebilirsiniz. Veritabanı oluşturma ve nesne katmanı kodu oluşturma özelleştirilebilir.
 

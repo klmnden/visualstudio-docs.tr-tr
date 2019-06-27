@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: dd27ff29d8e0d7581046d18457877532d4ce4c56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819932"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412273"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker ile Visual Studio geliştirme sorunlarını giderme
 
@@ -55,6 +55,31 @@ Dan indirilebilir komut dosyası yürütme deneyin [temizleme kapsayıcı konağ
 ## <a name="mounts-denied"></a>Takar reddedildi
 
 MacOS için Docker'ı kullanırken, klasör /usr/local/share/dotnet/sdk/NuGetFallbackFolder başvuran bir hatayla karşılaşabilir. Docker dosya paylaşımı sekmesine klasörü Ekle
+
+## <a name="docker-users-group"></a>Docker Kullanıcıları grubu
+
+Kapsayıcılar ile çalışırken, Visual Studio şu hatayla karşılaşabilirsiniz:
+
+```
+The current user must be in the 'docker-users' group to use Docker Desktop. 
+Add yourself to the 'docker-users' group and then log out of Windows.
+```
+
+Docker kapsayıcıları ile çalışmak için izinlere sahip için 'docker-kullanıcılar' grubunun bir üyesi olmanız gerekir.  Kendiniz Windows 10'daki grubuna eklemek için aşağıdaki adımları izleyin:
+
+1. Başlat menüsünden açmak **Bilgisayar Yönetimi**.
+1. Genişletin **yerel kullanıcılar ve gruplar**ve **grupları**.
+1. Bulma **docker kullanıcılar** grup, sağ tıklatın ve seçin **gruba Ekle**.
+1. Kullanıcı hesabı veya hesapları ekleyin.
+1. Oturumu kapatın ve tekrar bu değişikliklerin etkili olması için yeniden oturum açın.
+
+Ayrıca `net localgroup` kullanıcıları belirli gruplara eklemek için yönetici komut isteminde komutu.
+
+```cmd
+net localgroup docker-users DOMAIN\username /add
+```
+
+PowerShell'de kullanın [Ekle LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) işlevi.
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub deposu
 
