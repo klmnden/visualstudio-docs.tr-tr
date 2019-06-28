@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
 searchscope: VS Subscription
-ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177568"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465134"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
-Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://visualstudio.microsoft.com/subscriptions/) gelen [Visual Studio Market](https://marketplace.visualstudio.com). Bunlar adlandırılır **"bulut abonelikleri"**.
+Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise abonelikleri](https://visualstudio.microsoft.com/subscriptions/) gelen [Visual Studio Market](https://marketplace.visualstudio.com). Bunlar adlandırılır **"bulut abonelikleri"** .
 
 [Bulut abonelik avantajları ve fiyatlandırmayı karşılaştırarak](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -28,7 +28,7 @@ Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise a
 * Satın alma işlemlerinizi faturalamak için ihtiyacınız bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk satın alma işleminiz öncesinde veya Visual Studio Market'te ilk satın alma işleminiz sırasında.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kimlerin Visual Studio bulut abonelikleri satın alabilir?
-Hiç kimseyle [sahibi ve katkıda bulunan erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) bulut abonelikleri Azure aboneliği satın alabilirsiniz.
+Hiç kimseyle [sahibi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Hizmet Yöneticisi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), veya [ortak yönetici](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) Azure aboneliğine erişiminiz bulut abonelikleri satın alabilir.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Bulut abonelikleri satın alma
 
