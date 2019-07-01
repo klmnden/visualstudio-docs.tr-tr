@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild Kavramları
       items:
-        - name: MSBuild Kavramları
+        - name: MSBuild Kavramları - Genel Bakış
           href: msbuild-concepts.md
-        - name: MSBuild Özellikleri
+        - name: Özellikler
           items:
             - name: MSBuild Özellikleri
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Özellik İşlevleri
               href: property-functions.md
-        - name: MSBuild Öğeleri
+        - name: Öğeler
           items:
             - name: MSBuild Öğeleri
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: Öğe İşlevleri
               href: item-functions.md
-        - name: MSBuild Hedefleri
+        - name: Hedefler
           items:
             - name: MSBuild Hedefleri
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: MSBuild Proje SDK’sına başvurma
               href: how-to-use-project-sdk.md
-        - name: MSBuild Görevleri
+        - name: Görevler
           items:
             - name: MSBuild Görevleri
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: Kaynaklara Sahip Olan Bir Projeyi Derleme
               href: how-to-build-a-project-that-has-resources.md
-            - name: MSBuild Satır İçi Görevleri
+            - name: Satır İçi Görevleri
               items:
                 - name: MSBuild Satır İçi Görevleri
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: Özellikleri ve Öğeleri Karşılaştırma
           href: comparing-properties-and-items.md
-        - name: MSBuild Özel Karakterleri
+        - name: Özel Karakterler
           items:
             - name: MSBuild Özel Karakterleri
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Proje Dosyalarında Ayrılmış XML Karakterlerini Kullanma
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: MSBuild Gelişmiş Kavramları
+    - name: Gelişmiş Kavramlar
       items:
         - name: MSBuild Gelişmiş Kavramları
           href: msbuild-advanced-concepts.md
-        - name: MSBuild Toplu İşleme
+        - name: Toplu işleme
           items:
             - name: MSBuild Toplu İşleme
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild Dönüşümleri
           href: msbuild-transforms.md
-        - name: Visual Studio Tümleştirmesi (MSBuild)
+        - name: Visual Studio Tümleştirmesi
           items:
             - name: Visual Studio Tümleştirmesi (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: .NET Framework Uzantılarını Kaydetme
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: MSBuild ile Paralel Olarak Birden Çok Proje Derleme
+        - name: Paralel Olarak Birden Çok Proje Derleme
           items:
             - name: MSBuild ile Paralel Olarak Birden Çok Proje Derleme
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: Büyük Projeler Derlerken Belleği Verimli Şekilde Kullanma
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: MSBuild Çoklu Sürüm Desteğine Genel Bakış
+        - name: Çoklu Sürüm Desteği
           items:
             - name: MSBuild Çoklu Sürüm Desteğine Genel Bakış
               href: msbuild-multitargeting-overview.md
-            - name: MSBuild Araç Takımı (ToolsVersion)
+            - name: Araç Takımı (ToolsVersion)
               items:
                 - name: MSBuild Araç Takımı (ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -132,7 +132,7 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: Tasarım Zamanında Derlemeleri Çözme
               href: resolving-assemblies-at-design-time.md
-            - name: Hedefleri ve Görevleri Yapılandırma
+            - name: Hedefler ve Görev yapılandırması
               items:
                 - name: Hedefleri ve Görevleri Yapılandırma
                   href: configuring-targets-and-tasks.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Dosya İzleme
           items:
-            - name: Dosya İzleme
+            - name: Dosya İzleme - Genel Bakış
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: MSBuild En İyi Yöntemleri
           href: msbuild-best-practices.md
-    - name: MSBuild'de Günlük Kaydı
+    - name: Günlüğe Kaydetme
       items:
-        - name: MSBuild'de Günlük Kaydı
+        - name: MSBuild'de Günlük Kaydı - Genel Bakış
           href: logging-in-msbuild.md
         - name: MSBuild ile Yapı Günlükleri Alma
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild Başvurusu
       items:
-        - name: MSBuild Başvurusu
+        - name: MSBuild Başvurusu - Genel Bakış
           href: msbuild-reference.md
         - name: MSBuild Proje Dosyası Şema Başvurusu
           items:
-            - name: MSBuild Proje Dosyası Şema Başvurusu
+            - name: MSBuild Proje Dosyası Şema Başvurusu - Genel Bakış
               href: msbuild-project-file-schema-reference.md
             - name: Öğe Seç (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: When Öğesi (MSBuild)
               href: when-element-msbuild.md
-        - name: MSBuild Görev Başvurusu
+        - name: Görev Başvurusu
           items:
-            - name: MSBuild Görev Başvurusu
+            - name: MSBuild Görev Başvurusu - Genel Bakış
               href: msbuild-task-reference.md
-            - name: Visual C++'ye Özgü MSBuild Görevleri
+            - name: Visual C++'ye Özgü Görevler
               items:
-                - name: Visual C++'ye Özgü MSBuild Görevleri
+                - name: Visual C++'ye Özgü MSBuild Görevleri - Genel Bakış
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake Görevi
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild Yanıt Dosyaları
           href: msbuild-response-files.md
-        - name: WPF MSBuild Başvurusu
+        - name: WPF Başvurusu
           items:
-            - name: WPF MSBuild Başvurusu
+            - name: WPF MSBuild Başvurusu - Genel Bakış
               href: wpf-msbuild-reference.md
-            - name: 'WPF .Targets Dosyaları '
+            - name: WPF .Targets Dosyaları
               href: wpf-dot-targets-files.md
-            - name: WPF MSBuild Görev Başvurusu
+            - name: WPF Görev Başvurusu
               items:
-                - name: WPF MSBuild Görev Başvurusu
+                - name: WPF MSBuild Görev Başvurusu - Genel Bakış
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier Görevi
                   href: fileclassifier-task.md

@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: Kapsayıcı Araçları’nı yapılandırma
           href: container-tools-configure.md
+        - name: Birim testlerini çalıştırma
+          href: container-unit-testing.md
+    - name: Kavramlar
+      items:
+        - name: Kapsayıcılı uygulamalar oluşturma
+          href: container-build.md
     - name: Sorun giderme
       href: troubleshooting-docker-errors.md
+    - name: Başvuru
+      items:
+        - name: Kapsayıcı projeleri için MSBuild özellikleri
+          href: container-msbuild-properties.md

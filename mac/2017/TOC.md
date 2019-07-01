@@ -5,6 +5,7 @@
 ## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Bir önizleme sürümünü yükleme](/visualstudio/mac/install-preview)
 ## [Güncelleştir](/visualstudio/mac/update)
+## [Mac için Visual Studio 2019 Güncelleştirmesi](/visualstudio/mac/update-vsmac-8.0)
 ## [Kaldır](/visualstudio/mac/uninstall)
 
 # [Kullanıcı Hesapları](/visualstudio/mac/user-accounts)

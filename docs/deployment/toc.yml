@@ -20,13 +20,13 @@
   items:
     - name: .NET
       items:
-        - name: Yayımla aracı ile .NET Core Uygulaması dağıtma
+        - name: Yayımla aracı ile .NET Core uygulaması dağıtma
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)
           href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce kullanarak masaüstü uygulaması dağıtma
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-        - name: Komut Satırından ClickOnce Uygulamalarını Derleme
+        - name: Komut Satırından ClickOnce uygulamalarını derleme
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
@@ -62,171 +62,171 @@
           href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Nasıl yapılır kılavuzları
   items:
-    - name: ClickOnce Güvenliği ve Dağıtımı
+    - name: ClickOnce güvenliği ve dağıtımı
       items:
-        - name: ClickOnce Güvenliği ve Dağıtımı
+        - name: ClickOnce güvenliğine ve dağıtımına genel bakış
           href: clickonce-security-and-deployment.md
-        - name: ClickOnce Dağıtım Stratejisini Seçme
+        - name: ClickOnce dağıtım stratejisini seçme
           href: choosing-a-clickonce-deployment-strategy.md
-        - name: ClickOnce Önbelleğine Genel Bakış
+        - name: ClickOnce önbelleğine genel bakış
           href: clickonce-cache-overview.md
-        - name: ClickOnce ve Uygulama Ayarları
+        - name: ClickOnce ve uygulama ayarları
           href: clickonce-and-application-settings.md
-        - name: Windows Vista'da ClickOnce Dağıtımı
+        - name: Windows Vista'da ClickOnce dağıtımı
           href: clickonce-deployment-on-windows-vista.md
-        - name: ClickOnce Uygulamalarını Yerelleştirme
+        - name: Yerelleştirme
           items:
-            - name: ClickOnce Uygulamalarını Yerelleştirme
+            - name: ClickOnce uygulamalarını yerelleştirme
               href: localizing-clickonce-applications.md
-            - name: Özel Yerel Ayara Sahip Olan Bir Projeyi Yayımlama
+            - name: Özel yerel ayara sahip olan bir projeyi yayımlama
               href: how-to-publish-a-project-that-has-a-specific-locale.md
-        - name: ClickOnce Uygulamalarını Koruma
+        - name: Güvenlik
           items:
-            - name: ClickOnce Uygulamalarını Koruma
+            - name: ClickOnce uygulamalarını koruma
               href: securing-clickonce-applications.md
             - name: ClickOnce ve Authenticode
               href: clickonce-and-authenticode.md
-            - name: Güvenilir Uygulama Dağıtımına Genel Bakış
+            - name: Güvenilir uygulama dağıtımına genel bakış
               href: trusted-application-deployment-overview.md
-            - name: ClickOnce Uygulamaları İçin Kod Erişimi Güvenliği
+            - name: ClickOnce uygulamaları için kod erişimi güvenliği
               href: code-access-security-for-clickonce-applications.md
-            - name: ClickOnce Güvenlik Ayarlarını Etkinleştirme
+            - name: ClickOnce güvenlik ayarlarını etkinleştirme
               href: how-to-enable-clickonce-security-settings.md
-            - name: ClickOnce Uygulaması için Bir Güvenlik Bölgesi Ayarlama
+            - name: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
-            - name: ClickOnce Uygulaması için Özel İzinleri Ayarlama
+            - name: ClickOnce uygulaması için özel izinleri ayarlama
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: Sınırlı İzinler ile ClickOnce Uygulamasında Hata Ayıklama
+            - name: Sınırlı izinler ile ClickOnce uygulamasında hata ayıklama
               href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
-            - name: İstemci Bilgisayarına Güvenilir Yayımcı Ekleme
+            - name: İstemci bilgisayarına güvenilir yayımcı ekleme
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
-            - name: Uygulama ve Dağıtım Bildirimlerini İmzalama
+            - name: Uygulama ve dağıtım bildirimlerini yeniden imzalama
               href: how-to-re-sign-application-and-deployment-manifests.md
-            - name: ClickOnce Güven İstemi Davranışını Yapılandırma
+            - name: ClickOnce güven istemi davranışını yapılandırma
               href: how-to-configure-the-clickonce-trust-prompt-behavior.md
-            - name: Kurulum Dosyalarını SignTool.exe ile İmzalama (ClickOnce)
+            - name: Kurulum dosyalarını SignTool.exe ile imzalama (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
-        - name: ClickOnce Uygulamalarını Yayımlama
+        - name: Yayımlama
           items:
-            - name: ClickOnce Uygulamalarını Yayımlama
+            - name: ClickOnce uygulamalarını yayımlama
               href: publishing-clickonce-applications.md
-            - name: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama
+            - name: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-            - name: Başkalarının Dağıtması için ClickOnce Uygulamaları Oluşturma
+            - name: Başkalarının dağıtması için ClickOnce uygulamaları oluşturma
               href: creating-clickonce-applications-for-others-to-deploy.md
-            - name: Uygulamaları Yeniden İmzalamadan Test ve Üretim Sunucularına Dağıtma
+            - name: Uygulamaları yeniden imzalamadan test ve üretim sunucularına dağıtma
               href: deploying-clickonce-applications-for-testing-and-production-without-resigning.md
-            - name: ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi
+            - name: ClickOnce uygulamalarında yerel ve uzak veri erişimi
               href: accessing-local-and-remote-data-in-clickonce-applications.md
-            - name: ClickOnce ile COM Bileşenleri Dağıtma
+            - name: ClickOnce ile COM bileşenleri dağıtma
               href: deploying-com-components-with-clickonce.md
-            - name: Komut Satırından ClickOnce Uygulamalarını Derleme
+            - name: Komut satırından ClickOnce uygulamalarını derleme
               href: building-clickonce-applications-from-the-command-line.md
-            - name: Visual Studio'nun Dosyaları Nereye Kopyalayacağını Belirtme
+            - name: Visual Studio'nun dosyaları nereye kopyalayacağını belirtme
               href: how-to-specify-where-visual-studio-copies-the-files.md
-            - name: Son Kullanıcıların Yükleme Yapacakları Konumu Belirtme
+            - name: Son kullanıcıların yükleme yapacakları konumu belirtme
               href: how-to-specify-the-location-where-end-users-will-install-from.md
-            - name: ClickOnce Çevrimdışı veya Çevrimiçi Yükleme Modunu Belirtme
+            - name: ClickOnce çevrimdışı veya çevrimiçi yükleme modunu belirtme
               href: how-to-specify-the-clickonce-offline-or-online-install-mode.md
-            - name: ClickOnce Yayım Sürümü'nü Ayarlama
+            - name: ClickOnce yayım sürümünü ayarlama
               href: how-to-set-the-clickonce-publish-version.md
-            - name: ClickOnce Yayım Sürümünü Otomatik Olarak Artırma
+            - name: ClickOnce yayım sürümünü otomatik olarak artırma
               href: how-to-automatically-increment-the-clickonce-publish-version.md
-            - name: ClickOnce Tarafından Hangi Dosyaların Yayımlandığını Belirtme
+            - name: Dosyaları belirtme
               items:
-                - name: ClickOnce Tarafından Hangi Dosyaların Yayımlandığını Belirtme
+                - name: ClickOnce tarafından hangi dosyaların yayımlandığını belirtme
                   href: how-to-specify-which-files-are-published-by-clickonce.md
-                - name: ClickOnce Uygulamasına bir Veri Dosyası Dahil Etme
+                - name: ClickOnce uygulamasına bir veri dosyası dahil etme
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
-            - name: ClickOnce Uygulamasıyla Önkoşulları Yükleme
+            - name: ClickOnce uygulamasıyla önkoşulları yükleme
               href: how-to-install-prerequisites-with-a-clickonce-application.md
-            - name: ClickOnce Uygulamasıyla Önkoşulları Ekleme
+            - name: ClickOnce uygulamasıyla önkoşulları ekleme
               href: how-to-include-prerequisites-with-a-clickonce-application.md
-            - name: ClickOnce Uygulaması için Güncelleştirmeleri Yönetme
+            - name: ClickOnce uygulaması için güncelleştirmeleri yönetme
               href: how-to-manage-updates-for-a-clickonce-application.md
-            - name: ClickOnce Uygulaması için Yayımlama Dilini Değiştirme
+            - name: ClickOnce uygulaması için yayımlama dilini değiştirme
               href: how-to-change-the-publish-language-for-a-clickonce-application.md
-            - name: ClickOnce Uygulaması için Başlat Menüsü Adı Belirtme
+            - name: ClickOnce uygulaması için başlat menüsü adı belirtme
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
-            - name: Teknik Destek için bir Bağlantı Belirtme
+            - name: Teknik Destek belirtme
               items:
-                - name: Teknik Destek için bir Bağlantı Belirtme
+                - name: Teknik Destek için bir bağlantı belirtme
                   href: how-to-specify-a-link-for-technical-support.md
-                - name: Bağımsız Önkoşullar için Destek URL'sini Belirtme
+                - name: Bağımsız önkoşullar için destek URL'sini belirtme
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
-            - name: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme
+            - name: Yayımla Sayfası
               items:
-                - name: ClickOnce Uygulaması için bir Yayımlama Sayfası Belirtme
+                - name: ClickOnce uygulaması için bir yayımlama sayfası belirtme
                   href: how-to-specify-a-publish-page-for-a-clickonce-application.md
-                - name: ClickOnce Uygulaması için Varsayılan Web Sayfasını Özelleştirme
+                - name: ClickOnce uygulaması için varsayılan web sayfasını özelleştirme
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: CD Yüklemeleri için AutoStart'ı Etkinleştirme
               href: how-to-enable-autostart-for-cd-installations.md
-            - name: ClickOnce Uygulaması için Dosya İlişkilendirmeleri Oluşturma
+            - name: ClickOnce uygulaması için dosya ilişkilendirmeleri oluşturma
               href: how-to-create-file-associations-for-a-clickonce-application.md
-            - name: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma
+            - name: Çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
-            - name: Tasarımcıyı Kullanarak ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma
+            - name: URL etkinleştirmeyi devre dışı bırakma
               items:
-                - name: Tasarımcıyı Kullanarak ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma
+                - name: Tasarımcıyı kullanarak ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırakma
                   href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
-                - name: ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma
+                - name: ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırakma
                   href: how-to-disable-url-activation-of-clickonce-applications.md
-            - name: .NET Framework'ün Birden Çok Sürümünde Çalışan Uygulamaları Dağıtma
+            - name: .NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtma
               href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
-            - name: Görsel Stiller Etkinken WPF Uygulaması Yayımlama
+            - name: Görsel stiller etkinken WPF uygulaması yayımlama
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-            - name: 'İzlenecek yol: Tasarımcıyı Kullanarak İsteğe Bağlı Derlemeleri İndirme'
+            - name: İsteğe Bağlı Derlemeleri İndirme
               items:
-                - name: 'İzlenecek yol: Tasarımcıyı Kullanarak İsteğe Bağlı Derlemeleri İndirme'
+                - name: 'İzlenecek yol: Tasarımcıyı kullanarak isteğe bağlı derlemeleri indirme'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-                - name: 'İzlenecek yol: İsteğe Bağlı Derlemeleri İndirme'
+                - name: 'İzlenecek yol: İsteğe bağlı derlemeleri indirme'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
-            - name: 'İzlenecek yol: Tasarımcıyı Kullanarak İsteğe Bağlı Uydu Derlemelerini İndirme'
+            - name: 'İzlenecek yol: Tasarımcıyı kullanarak isteğe bağlı uydu derlemelerini indirme'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-            - name: 'İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma'
+            - name: El ile dağıtma
               items:
-                - name: 'İzlenecek yol: ClickOnce Uygulamasını El ile Dağıtma'
+                - name: 'İzlenecek yol: ClickOnce uygulamasını el ile dağıtma'
                   href: walkthrough-manually-deploying-a-clickonce-application.md
-                - name: 'İzlenecek yol: Yeniden İmzalama Gerektirmeyen Bir Uygulamayı El ile Dağıtma'
+                - name: 'İzlenecek yol: Yeniden imzalama gerektirmeyen bir uygulamayı el ile dağıtma'
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
-            - name: 'İzlenecek yol: İsteğe Bağlı Uydu Derlemelerini İndirme'
+            - name: 'İzlenecek yol: İsteğe bağlı uydu derlemelerini indirme'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
-            - name: 'İzlenecek yol: Özel bir Yükleyici Oluşturma'
+            - name: 'İzlenecek yol: Özel bir yükleyici oluşturma'
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
-        - name: ClickOnce Güncelleştirme Stratejisini Seçme
+        - name: Güncelleştirme stratejisi
           items:
-            - name: ClickOnce Güncelleştirme Stratejisini Seçme
+            - name: ClickOnce güncelleştirme stratejisini seçme
               href: choosing-a-clickonce-update-strategy.md
-            - name: ClickOnce Uygulama Güncelleştirmelerini Nasıl Gerçekleştirir
+            - name: ClickOnce uygulama güncelleştirmelerini nasıl gerçekleştirir
               href: how-clickonce-performs-application-updates.md
-            - name: Program Aracılığıyla Uygulama Güncelleştirmelerini Denetleme
+            - name: Program aracılığıyla uygulama güncelleştirmelerini denetleme
               href: how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md
-            - name: Dağıtım Güncelleştirmeleri için Alternatif Bir Konum Belirtme
+            - name: Dağıtım güncelleştirmeleri için alternatif bir konum belirtme
               href: how-to-specify-an-alternate-location-for-deployment-updates.md
-        - name: ClickOnce Dağıtım Örnekleri ve Yönergeler
+        - name: ClickOnce dağıtım örnekleri ve yönergeler
           href: clickonce-deployment-samples-and-walkthroughs.md
-        - name: ClickOnce Dağıtım Sorunlarını Giderme
+        - name: Sorun giderme
           items:
-            - name: ClickOnce Dağıtım Sorunlarını Giderme
+            - name: ClickOnce dağıtım sorunlarını giderme
               href: troubleshooting-clickonce-deployments.md
-            - name: ClickOnce Dağıtım Hataları için Özel Günlük Dosyası Konumu Ayarlama
+            - name: ClickOnce dağıtım hataları için özel günlük dosyası konumu ayarlama
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
-            - name: ClickOnce Dağıtımları İçin Ayrıntılı Günlük Dosyası Belirtme
+            - name: ClickOnce dağıtımları için ayrıntılı günlük dosyası belirtme
               href: how-to-specify-verbose-log-files-for-clickonce-deployments.md
-            - name: ClickOnce Dağıtımlarında Sunucu ve İstemci Yapılandırma Sorunları
+            - name: ClickOnce dağıtımlarında sunucu ve istemci yapılandırma sorunları
               href: server-and-client-configuration-issues-in-clickonce-deployments.md
-            - name: 'ClickOnce Dağıtımlarında Güvenlik, Sürüm ve Bildirim Sorunları'
+            - name: 'ClickOnce dağıtımlarında güvenlik, sürüm ve bildirim sorunları'
               href: security-versioning-and-manifest-issues-in-clickonce-deployments.md
-            - name: ClickOnce Dağıtımları İçinde Belirli Hataları Giderme
+            - name: ClickOnce dağıtımları içinde belirli hataları giderme
               href: troubleshooting-specific-errors-in-clickonce-deployments.md
-            - name: System.Deployment.Application Kullanan ClickOnce Uygulamalarında Hata Ayıklama
+            - name: System.Deployment.application kullanan ClickOnce uygulamalarında hata ayıklama
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
-    - name: Uygulama Dağıtımının Önkoşulları
+    - name: Uygulama dağıtımının önkoşulları
       items:
-        - name: Uygulama Dağıtımının Önkoşulları
+        - name: Uygulama dağıtımının önkoşulları
           href: application-deployment-prerequisites.md
-        - name: 64 bit Uygulamalar için Dağıtım Önkoşulları
+        - name: 64 bit uygulamalar için dağıtım önkoşulları
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: Önyükleyici paketleri oluşturma
           href: creating-bootstrapper-packages.md
@@ -240,7 +240,7 @@
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: Ürün ve Paket Şema Başvurusu
           items:
-            - name: Ürün ve Paket Şema Başvurusu
+            - name: Ürün ve Paket Şema Başvurusuna Genel Bakış
               href: product-and-package-schema-reference.md
             - name: <Product> Öğesi (Önyükleyici)
               href: product-element-bootstrapper.md
@@ -262,29 +262,29 @@
   items:
     - name: ClickOnce Başvurusu
       items:
-        - name: ClickOnce Başvurusu
+        - name: ClickOnce Başvurusuna Genel Bakış
           href: clickonce-reference.md
-        - name: ClickOnce Uygulama Bildirimi
+        - name: ClickOnce uygulama bildirimi
           items:
-            - name: ClickOnce Uygulama Bildirimi
+            - name: ClickOnce uygulama bildirimine genel bakış
               href: clickonce-application-manifest.md
-            - name: <assembly> Öğesi (ClickOnce Uygulaması)
+            - name: <assembly> Öğesi (ClickOnce uygulaması)
               href: assembly-element-clickonce-application.md
-            - name: <assemblyIdentity> Öğesi (ClickOnce Uygulaması)
+            - name: <assemblyIdentity> Öğesi (ClickOnce uygulaması)
               href: assemblyidentity-element-clickonce-application.md
-            - name: <trustInfo> Öğesi (ClickOnce Uygulaması)
+            - name: <trustInfo> Öğesi (ClickOnce uygulaması)
               href: trustinfo-element-clickonce-application.md
-            - name: <entryPoint> Öğesi (ClickOnce Uygulaması)
+            - name: <entryPoint> Öğesi (ClickOnce uygulaması)
               href: entrypoint-element-clickonce-application.md
-            - name: <dependency> Öğesi (ClickOnce Uygulaması)
+            - name: <dependency> Öğesi (ClickOnce uygulaması)
               href: dependency-element-clickonce-application.md
-            - name: <file> Öğesi (ClickOnce Uygulaması)
+            - name: <file> Öğesi (ClickOnce uygulaması)
               href: file-element-clickonce-application.md
-            - name: <fileAssociation> Öğesi (ClickOnce Uygulaması)
+            - name: <fileAssociation> Öğesi (ClickOnce uygulaması)
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce Dağıtım Bildirimi
           items:
-            - name: ClickOnce Dağıtım Bildirimi
+            - name: ClickOnce Dağıtım Bildirimine Genel Bakış
               href: clickonce-deployment-manifest.md
             - name: <assembly> Öğesi (ClickOnce Dağıtımı)
               href: assembly-element-clickonce-deployment.md

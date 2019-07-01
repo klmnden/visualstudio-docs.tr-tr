@@ -3,21 +3,23 @@ title: Team Foundation sürüm denetimi (TFVC)
 description: Mac için Visual Studio Team Foundation sürüm denetimi (TFVC) ile Team Foundation Server/Azure DevOps bağlanıyor.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746328"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398997"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
 > [!NOTE]
 > MacOS en iyi sürüm denetim deneyimi için Git, Team Foundation sürüm denetimi (TFVC) yerine kullanılmasını öneririz. Git Mac için Visual Studio'da desteklendiği ve Team Foundation Server (TFS) barındırılan depolar için varsayılan seçenek / Azure DevOps. Git, TFS/Azure DevOps ile kullanma hakkında daha fazla bilgi edinmek için [bir Git deposu ayarlama](/visualstudio/mac/set-up-git-repository) makalesi.
+>
+> Daha önce TFVC uzantı Önizleme sürümü için Visual Studio Mac için kullandıysanız, artık Mac için Visual Studio 2019 için yükseltme sırasında desteklenir
 
 Azure depoları, sürüm denetimi, iki modeli sağlar: [Git](/azure/devops/repos/git/?view=azure-devops), bir dağıtılmış sürüm denetim sistemini ve [Team Foundation sürüm denetimi](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) merkezi sürüm denetimi sistemi.
 
@@ -110,10 +112,12 @@ Burada belirtilen komutları veya diğerleri hakkında daha fazla bilgi için te
 
 > [!NOTE]
 > MacOS en iyi sürüm denetim deneyimi için Git, Team Foundation sürüm denetimi (TFVC) yerine kullanılmasını öneririz. Git Mac için Visual Studio'da desteklendiği ve Team Foundation Server (TFS) barındırılan depolar için varsayılan seçenek / Azure DevOps. Git, TFS/Azure DevOps ile kullanma hakkında daha fazla bilgi edinmek için [bir Git deposu ayarlama](/visualstudio/mac/set-up-git-repository) makalesi.
+>
+> Daha önce TFVC uzantı Önizleme sürümü için Visual Studio Mac için kullandıysanız, artık Mac için Visual Studio 2019 için yükseltme sırasında desteklenir
 
 Mac uzantı Galerisi için Visual Studio için TFVC bağlanmak için sınırlı destek sağlayan bir Team Foundation sürüm denetim uzantısı yok. Uzantı desteklenmiyor ve deneyiminizi kullanırken değişebilir. Bu nedenle bazı bilinen sorunlar vardır.
 
-Uzantıyı yüklemek için Mac için Visual Studio'yu başlatın ve seçin **Visual Studio > Uzantılar** menüsü. İçinde **galeri** sekmesinde **sürüm denetimi > Team Foundation sürüm denetimi, TFS ve Azure DevOps için** tıklatıp **yükle...** :
+Uzantıyı yüklemek için Mac için Visual Studio'yu başlatın ve seçin **Visual Studio > Uzantılar** menüsü. İçinde **galeri** sekmesinde **sürüm denetimi > Team Foundation sürüm denetimi, TFS ve Azure DevOps için** tıklatıp **yükle...**:
 
 ![Uzantı Yöneticisi](media/tfvc-install.png)
 
@@ -121,13 +125,13 @@ Uzantıyı yüklemek için istemleri izleyin. Yüklendikten sonra IDE yeniden ba
 
 ### <a name="updating-the-extension"></a>Uzantıyı güncelleştirirken
 
-TFVC uzantı güncelleştirmeleri düzenli olarak gerçekleştirilir. Güncelleştirmeleri erişmek, seçin **Visual Studio > uzantılar...**  seçin ve menüden **güncelleştirmeleri** sekmesi. Uzantı listesi ve ENTER tuşuna seçin **güncelleştirme** düğmesi:
+TFVC uzantı güncelleştirmeleri düzenli olarak gerçekleştirilir. Güncelleştirmeleri erişmek, seçin **Visual Studio > uzantılar...** seçin ve menüden **güncelleştirmeleri** sekmesi. Uzantı listesi ve ENTER tuşuna seçin **güncelleştirme** düğmesi:
 
 Tuşuna **yükleme** sonraki iletişim kutusunda eski paketi kaldırın ve yenisini yükleyin.
 
 ### <a name="using-the-extension"></a>Uzantısını kullanma
 
-Uzantıyı yükledikten sonra seçin **sürüm denetimi > TFS/Azure DevOps > Uzak depodan Aç...**  menü öğesi.
+Uzantıyı yükledikten sonra seçin **sürüm denetimi > TFS/Azure DevOps > Uzak depodan Aç...** menü öğesi.
 
 ![Uzantı açmak için menü öğesi](media/tfvc-source-control-explorer-devops.png)
 

@@ -377,14 +377,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: LINQ sorgusunu foreach deyimine dönüştürme
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: Switch deyimini switch ifadesine dönüştürme
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: Alanı kapsülleme
                       href: ide/reference/encapsulate-field.md
                     - name: Ayıklama arabirimi
                       href: ide/reference/extract-interface.md
                     - name: Ayıklama metodu
                       href: ide/reference/extract-method.md
+                    - name: Parametre oluşturma
+                      href: ide/reference/generate-parameter.md
                     - name: Satır içi geçici değişken
                       href: ide/reference/inline-temporary-variable.md
+                    - name: İçeri aktarılmamış türler için IntelliSense tamamlama
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: Koşullu ifadeleri ve mantıksal işlemleri tersine çevirme
                       href: ide/reference/invert-conditional-logical.md
                     - name: if deyimini tersine çevirme
@@ -403,6 +409,8 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Rename
                       href: ide/reference/rename.md
+                    - name: Kullanımları sıralama
+                      href: ide/reference/sort-usings.md
                     - name: Birleştir veya ayır if deyimleri
                       href: ide/reference/split-or-merge-if-statement.md
                     - name: Ad alanı ile klasör adını eşitleme
