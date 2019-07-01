@@ -2,23 +2,24 @@
 title: Visual Studio abonelikleri - abone avantajları
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427799"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493740"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
-Visual Studio Abonelikleri, en kapsamlı kaynaklar oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmenize olanak sağlar.  Belirli avantajlar, sahip olduğunuz abonelik türüne göre değişir.  İçin maksimum değeri sağlamak için size en yeni ve en kullanışlı teknolojileri, eğitim malzemeleri ve iş ortağı avantajları odaklanmak için ayarlamalar gibi aboneleri sağladığı avantajlar düzenli olarak değiştirin.
+Visual Studio abonelikleri (eski adıyla MSDN Abonelikleri da bilinir), en kapsamlı kaynaklar oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmenize olanak sağlar.  Belirli avantajlar, sahip olduğunuz abonelik türüne göre değişir.  İçin maksimum değeri sağlamak için size en yeni ve en kullanışlı teknolojileri, eğitim malzemeleri ve iş ortağı avantajları odaklanmak için ayarlamalar gibi aboneleri sağladığı avantajlar düzenli olarak değiştirin.
 
-Avantajları üç kategorilere ayrılır:
+
+Avantajları, üç kategorilerde gruplandırılır [abone portalı](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Araçlar
 Araçları kategoriye Gemisi avantajları gibi avantajlar, çeşitli erişim sağlayan [Visual Studio IDE](vs-ide-benefit.md), [Azure DevOps Hizmetleri](vs-azure-devops.md), ve [Azure](vs-azure.md).  Abonelik düzeyinize bağlı olarak, Windows ve Office 365 Geliştirici hesapları, Visual Studio App Center ve avantajları WhiteSource Bolt ve ModernRequirements gibi iş ortaklarından de görürsünüz.
@@ -30,7 +31,7 @@ Sürekli olarak becerilerinizi geliştirin ve en son teknolojilerle takip edin y
 - Pluralsight tarafından sunulan diğer harika içerikler yanı sıra .net geliştiricileri için Microsoft Azure
 - DataCamp geliştiricilerden için veri bilimi
 - Microsoft Virtual academy'den SQL Server için veritabanı çözümleri tasarlama
-- LinkedIn Learning kişiler, Öngörüler ve excel için ihtiyacınız olan becerileri erişim getirin.
+- LinkedIn Learning kişiler, Öngörüler ve excel için ihtiyacınız olan becerileri erişim sunar.
 
 ## <a name="support"></a>Destek
 Bir sorunuz veya teknik yardım gerekiyor durumunda bir Visual Studio abonesi olarak, ayrıca çeşitli destek erişebilirsiniz.

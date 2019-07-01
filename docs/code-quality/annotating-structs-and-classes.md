@@ -1,6 +1,6 @@
 ---
 title: Yapıları ve Sınıfları Yorumlama
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571426"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493631"
 ---
 # <a name="annotating-structs-and-classes"></a>Yapıları ve Sınıfları Yorumlama
+
 Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanarak açıklama ekleyebilirsiniz; herhangi bir işlev çağrısı veya bir parametre veya bir sonuç değeri kapsayan yapısı gerektirir. işlev girişi/çıkışı en doğru olduğu varsayılmıştır.
 
 ## <a name="struct-and-class-annotations"></a>Yapı ve sınıf ek açıklamaları
@@ -75,6 +76,39 @@ Yapı ve sınıf üyeleri okuduğunuzda gibi davranan ek açıklamalar kullanara
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Örnek
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Bu örnek için Notlar:
+
+- `_Field_z_` eşdeğerdir `_Null_terminated_`.  `_Field_z_` için ad alanı ad alanı null ile sonlandırılmış bir dize belirtir.
+- `_Field_range_` için `bufferSize` belirten değeri `bufferSize` içinde 1 olmalıdır ve `MaxBufferSize` (her ikisi de dahil).
+- Son sonuçları `_Struct_size_bytes_` ve `_Field_size_` ek açıklamaları eşdeğerdir. Yapılar veya benzer bir düzen sahip sınıflar için `_Field_size_` daha az başvurular ve eşdeğer hesaplamalar olduğundan okunması ve düzenlenmesi, daha kolay olan `_Struct_size_bytes_` ek açıklama. `_Field_size_` bayt boyutu dönüştürme gerektirmez. Bayt boyutu tek seçenek, örneğin, bir void işaretçisine alan için ise `_Field_size_bytes_` kullanılabilir. Her iki `_Struct_size_bytes_` ve `_Field_size_` var, her ikisi de araçlar kullanılabilir olur. Bu aracın en fazla iki ek açıklamalar katılmıyorum durumunda ne yapacaklarını nedir?
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

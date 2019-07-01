@@ -8,12 +8,6 @@ metadata:
   description: Uygulamalarınıza, hizmetlerinize ve herhangi bir platform veya cihaz için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
-  ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-  ms.translationtype: MT
-  ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/22/2019
-  ms.locfileid: "67328814"
 highlightedContent:
   items:
   - title: Kurulum ve yükleme
@@ -165,11 +159,11 @@ additionalContent:
       - text: Web geliştirme
         url: /aspnet/
       - text: Azure geliştirme ve yönetim
-        url: azure/index.yml
+        url: /visualstudio/azure
       - text: Python
-        url: python/index.yml
+        url: /visualstudio/python
       - text: Node.js
-        url: javascript/index.yml
+        url: /visualstudio/javascript
       - text: Veri depolama ve işleme
         url: data-tools/index.md
       - text: Veri bilimi
@@ -206,3 +200,9 @@ additionalContent:
       - text: .NET core platformlar arası geliştirme
         url: /dotnet/core/
   footer: '[Bloglar](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [yığın taşması](https://stackoverflow.com/questions/tagged/visual-studio) - [sorun rapor etme](ide/talk-to-us.md)  -  [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493709"

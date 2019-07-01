@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424301"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493666"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım durumu diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
  ![Birçok çokluğunu gösteren kullanım](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu Ayarla **1..\\***.  
+- Aynı sınıfın birkaç aktörleri kullanım örneği tek bir oluşumunu yer alabilir durumuna ilişkilendirmesine aktör sonunda çokluğu ayarlamak **1..\*** .  
   
    Çizimde, bir veya daha fazla restoranlar aynı yemek siparişi yerine getirmesini yer alabilir.  
   
-- Her aktör birkaç kez kullanım örneğinin aynı anda katılabilir göstermek için ilişkilendirme büyük/küçük harf kullanımı sonunda çokluğu Ayarla **\\***.  
+- Her aktör birkaç kez kullanım örneğinin aynı anda katılabilir göstermek için ilişkilendirme büyük/küçük harf kullanımı sonunda çokluğu ayarlayın **\*** .  
   
    Çizimde, aynı anda birden fazla siparişi yerine getirmek için her bir restoran çalışabilir.  
   
@@ -190,11 +190,11 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
    - **1** bu rolün tam olarak bir örneğini belirtin. her bağlantıya katılan.  
   
-   - **1..\\** * bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
+   - **1..\***  bu rol bir veya daha fazla örneği katıldığını her bağlantıyı belirtir.  
   
    - **0..1** katılım isteğe bağlı olduğunu belirtir.  
   
-   - **\\** * Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
+   - **\*** Bu rolün sıfır veya daha fazla örneğini bağlantıya katılan durumu.  
   
 > [!NOTE]
 > Birçok ekip varsayılan değer olan 1 çeşitliliği bırakarak kullanım örneği diyagramları çoğulluk bilgi yerleştirmeyin. Bunun yerine, kullanım örneklerini ayrı açıklamalarını bilgileri sağlar. Bu durumda, tüm kullanım örneği diyagramları Çeşitlilikler gizlenir.  
