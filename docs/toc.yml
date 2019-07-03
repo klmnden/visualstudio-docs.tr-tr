@@ -1204,6 +1204,15 @@
         - name: Sorun bildirme durumları ve SSS
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: Bir Visual Studio işlemi için tüm çağrı yığınlarıyla mini dökümler oluşturma
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: MSBuild sorunları için günlükler oluşturma
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: PerfView ile ETL izlemesi toplama
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Visual Studio için özellik önerin
       href: ide/suggest-a-feature.md
     - name: Geliştirici Topluluğu veri gizliliği
