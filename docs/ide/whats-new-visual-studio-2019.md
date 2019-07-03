@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328825"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552875"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -41,8 +41,8 @@ Bu sürümdeki yenilikler tam listesini her şey için bkz: [sürüm notları](/
 
 ## <a name="develop"></a>Geliştirme
 
-Yeni özelliklerle zaman kazandırır.
-<br><br>
+Nasıl yeni özellikler ile zamandan tasarruf edebilirsiniz hakkında daha fazla bilgi için aşağıdaki videoyu izleyin. <br><br>*Video uzunluğu: 3.00 dakika*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Geliştirilmiş arama
@@ -104,8 +104,8 @@ Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimi
 
 ## <a name="collaborate"></a>İşbirliği
 
-Sorunları çözmek için güçlerini birleştirdi.
-<br><br>
+Nasıl, sorunları çözmek için takım hakkında daha fazla bilgi edinmek için aşağıdaki videoyu izleyin. <br><br>*Video uzunluğu: 4.22 dakika*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Bulut öncelikli iş akışı
@@ -142,8 +142,8 @@ Daha fazla bilgi için [kod incelemeleri Visual Studio çekme istekleri uzantıs
 
 ## <a name="debug"></a>Hata ayıklama
 
-Kesin hedefleyen oturum sıfır.
-<br><br>
+Nasıl, hata ayıklama sırasında hassas hedefleyen oturum sıfır hakkında daha fazla bilgi için aşağıdaki videoyu izleyin. <br><br>*Video uzunluğu: 3.54 dakika*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Performans kazancı elde edildi

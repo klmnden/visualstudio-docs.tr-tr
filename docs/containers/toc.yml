@@ -30,8 +30,6 @@
           href: view-and-diagnose-containers.md
         - name: Kapsayıcı Araçları’nı yapılandırma
           href: container-tools-configure.md
-        - name: Birim testlerini çalıştırma
-          href: container-unit-testing.md
     - name: Kavramlar
       items:
         - name: Kapsayıcılı uygulamalar oluşturma

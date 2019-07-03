@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 06/26/2019
+ms.date: 07/03/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c4bfb7e44016d80b305ad39ed50170c1c081f082
-ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
+ms.openlocfilehash: 8c3e1abfee6b0b100b6a7fe3c3343d2a2a025fd5
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67399028"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552849"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -31,6 +31,7 @@ Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.5 | Sürüm | 2 Temmuz 2019 | 16.1.29025.244 |
 | 16.1.4 | Sürüm | 25 Haziran 2019 | 16.1.29020.237 |
 | 16.2.0 | Preview 3 | 25 Haziran 2019 | 16.2.29021.104 |
 | 16.1.3 | Sürüm | 11 Haziran 2019 | 16.1.29009.5 |
@@ -51,20 +52,20 @@ Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tar
 | 16.0.0 | Sürüm | 2 Nisan 2019 | 16.0.28729.10 |
 | 16.0.0 | Preview 5 | 2 Nisan 2019 | 16.0.28729.10 |
 | 16.0.0 | Sürüm Adayı 4 (RC.4) | 26 Mart 2019 | 16.0.28721.148 |
-| 16.0.0 | 4.4 Önizleme | 26 Mart 2019 | 16.0.28721.148 |
+| 16.0.0 | 4\.4 Önizleme | 26 Mart 2019 | 16.0.28721.148 |
 | 16.0.0 | Sürüm Adayı 3 (RC.3) | 19 Mart 2019 | 16.0.28714.193 |
-| 16.0.0 | 4.3 Önizleme | 19 Mart 2019 | 16.0.28714.193 |
+| 16.0.0 | 4\.3 Önizleme | 19 Mart 2019 | 16.0.28714.193 |
 | 16.0.0 | Sürüm Adayı 2 (RC.2) | 12 Mart 2019 | 16.0.28711.60 |
-| 16.0.0 | 4.2 Önizleme | 12 Mart 2019 | 16.0.28711.60 |
+| 16.0.0 | 4\.2 Önizleme | 12 Mart 2019 | 16.0.28711.60 |
 | 16.0.0 | Sürüm Adayı 1 Svc1 (RC.1 Svc1) | 6 Mart 2019 | 16.0.28705.295 |
-| 16.0.0 | 4.1 Svc1 Önizleme | 6 Mart 2019 | 16.0.28705.295 |
+| 16.0.0 | 4\.1 Svc1 Önizleme | 6 Mart 2019 | 16.0.28705.295 |
 | 16.0.0 | Sürüm Adayı 1 (RC.1) | 5 Mart 2019 | 16.0.28701.123 |
 | 16.0.0 | Önizleme 4.1 | 5 Mart 2019 | 16.0.28701.123 |
 | 16.0.0 | Sürüm Adayı (RC) | 27 Şubat 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 4 | 27 Şubat 2019 | 16.0.28625.133 |
 | 16.0.0 | Preview 3 | 13 Şubat 2019 | 16.0.28608.199 |
 | 16.0.0 | Önizleme 2.2 | 5 Şubat 2019 | 16.0.28602.52 |
-| 16.0.0 | 2.1 önizleme | 31 Ocak 2019 | 16.0.28529.54 |
+| 16.0.0 | 2\.1 önizleme | 31 Ocak 2019 | 16.0.28529.54 |
 | 16.0.0 | Önizleme 2 | 23 Ocak 2019 | 16.0.28522.59 |
 | 16.0.0 | Önizleme 1.1 | 10 Aralık 2018'e | 16.0.28408.50 |
 | 16.0.0 | Önizleme 1 | 4 Aralık 2018'e | 16.0.28329.73 |

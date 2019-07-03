@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974416"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552879"
 ---
 # <a name="known-issues-for-containers"></a>Kapsayıcılar için bilinen sorunlar
 
@@ -53,6 +53,7 @@ Aşağıdaki bilinen sorunlar ortaya çıkar Visual Studio derleme araçları bi
 Bir derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Sorunları düzelttik olup olmadığını görmek için veya diğer bilinen bir sorun varsa ziyaret https://developercommunity.visualstudio.com.
 
 * IntelliTrace çalışmayabilir [bazı senaryolar](https://github.com/Microsoft/vstest/issues/940) bir kapsayıcı içinde.
+* Docker için Windows önceki sürümlerinde, varsayılan kapsayıcı görüntü boyutu yalnızca 20 GB'tır ve derleme araçları uygun değildir. İzleyin [görüntü boyutunu değiştirmek için yönergeler](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size) 127 GB veya daha fazla.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
