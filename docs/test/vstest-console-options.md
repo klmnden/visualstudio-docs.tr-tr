@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746912"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559607"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
 
@@ -44,7 +44,7 @@ ms.locfileid: "66746912"
 |**/ Framework: [*framework sürümü*]**|Test çalıştırması için kullanılacak hedef .NET sürümü.<br />Geçerli değerler Framework35, Framework40 framework45'tir ve FrameworkUap10:.<br />Hedef Framework'ü olarak belirtilmişse **Framework35**, CLR 4.0 "uyumlu olacak şekilde basitleştirip modu" testleri çalıştırın.<br />Örnek: `/Framework:framework40`|
 |**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Kullanım bilgilerini görüntüler.|
-|**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform = < varsayılan değer: "Herhangi bir CPU" >]**<br />**[; Flavor = < varsayılan değer: "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
+|**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform =\<varsayılan olarak "İçin herhangi bir CPU" >]**<br />**[; Flavor =\<varsayılan olarak "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
 |**/ ListTests: [*dosya adı*]**|Testleri verili test kapsayıcısından bulunan listeler.|
 |**/ ListDiscoverers**|Yüklü test bulucuları listeler.|
 |**/ ListExecutors**|Yüklü test yürütücüleri listeler.|

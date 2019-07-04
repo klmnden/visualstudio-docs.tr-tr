@@ -7,12 +7,12 @@ ms.date: 04/15/2019
 ms.topic: conceptual
 description: Yeni Visual Studio + GitHub paketini hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 086314029561c7b0c14ac1d6ef09d7cb3a4d85ee
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 89048ec35e37f2b8bba1b7ab0da07ae504dca2f4
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64946659"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559726"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio abonelikleri ile tanışın  
 
@@ -76,12 +76,13 @@ Y:  GitHub Enterprise aboneliği ile birlikte tam Visual Studio aboneliği alır
 
 
 ## <a name="support-resources"></a>Destek kaynakları
--  GitHub ile ilgili konuları daha geniş bir yelpazede soruların yanıtlarını bulabilirsiniz [GitHub Help](https://help.github.com/en).
--  Diğer GitHub kullanıcılardan Yardım [GitHub Topluluk Forumu](https://github.community/).
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
--  Alma [teknik destek](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) GitHub Enterprise için.   
+- GitHub ile ilgili konuları daha geniş bir yelpazede soruların yanıtlarını bulabilirsiniz [GitHub Help](https://help.github.com/en).
+- Diğer GitHub kullanıcılardan Yardım [GitHub Topluluk Forumu](https://github.community/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Alma [teknik destek](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) GitHub Enterprise için.   
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
+
 Github'da yeniyseniz, kullanıma [GitHub öğrenimi Laboratuvar](https://lab.github.com/), alan, bir dizi eğlenceli ve pratik projeleri, süreç boyunca yararlı geri bildirim paylaşma.

@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Yöneticiler talep abonelikleri nasıl giderebileceğinize öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945133"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559735"
 ---
 # <a name="overallocated-subscriptions"></a>Fazla yüklenmiş abonelikler
 
@@ -47,4 +47,5 @@ Kuruluşunuzda bir Kurumsal Anlaşma (EA) varsa, yöneticileri abonelik satın a
 Yönetme hakkında daha fazla bilgi [GitHub Enterprise ile Visual Studio abonelikleri](assign-github.md).
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).

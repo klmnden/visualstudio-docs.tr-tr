@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a04d5761d7b67c58dc71b185e6d5db0b80c766
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346885"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559748"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -189,7 +189,7 @@ Aracı günlükleri aşağıdaki konumlarda bulunabilir:
 İzleme günlükleri aşağıdaki konumlarda bulunabilir:
 
 - Uygulama Hizmetleri:
-  - Hata günlüğü D:\Home\LogFiles\eventlog.xml için otomatik olarak gönderilir, olayları ile işaretlenir << sağlayıcı adı = "İzleme altyapısı" / / >> veya "Üretim kesme noktaları"
+  - Hata günlüğü D:\Home\LogFiles\eventlog.xml için otomatik olarak gönderilir, olayları ile işaretlenir `<Provider Name="Instrumentation Engine" />` veya "Üretim kesme noktaları"
 - VM/VMSS:
   - Sanal makinenizde oturum açın ve Olay Görüntüleyicisi'ni açın.
   - Aşağıdaki görünümü açın: *Windows Günlükleri > Uygulama*.

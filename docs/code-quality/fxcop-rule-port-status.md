@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038670"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559675"
 ---
 # <a name="fxcop-rule-port-status"></a>FXCop kuralı bağlantı noktası durumu
 
 Visual Studio'nun önceki bir sürümde daha önce statik kod analizi kullandıysanız, bu kuralların geçerli uygulama kullanılabilir olan merak ediyor olabilirsiniz [FxCop Çözümleyicileri](install-fxcop-analyzers.md). Bu sayfada unity'nin henüz bu yanı sıra verilir kuralları listelenir ve bunları bağlantı noktası planlamaktadır olup olmadığı.
 
-## <a name="ported-rules"></a>Taşınmasını kuralları
+## <a name="ported-rules"></a>Taşınan kurallar
 
 [Otomatik olarak oluşturulan belgeleri sayfasını](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) roslyn Çözümleyicileri depo FxCop Çözümleyicileri için unity'nin kurallar hakkında en güncel listesi vardır. Bu sayfa ayrıca kural varsayılan olarak etkin olup olmadığı ve ilişkili olup olmadığını gibi ek bilgileri olan *kod düzeltme*. ([Kod düzeltme](../ide/quick-actions.md) ampul simgesini menüsünde Visual Studio'da tek tıklamayla düzeltmeleri kullanılabilir.)
 
@@ -67,8 +67,8 @@ Kural Kimliği | Başlık
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable'ı doğru uygulayın
 [CA1064](ca1064-exceptions-should-be-public.md) | Özel durumlar genel olmalıdır
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Beklenmeyen konumlarda özel durum harekete geçirmeyin
-CA1066 | Tür {0} IEquatable uygulamalıdır<T> eşittir kıldığından
-CA1067 | IEquatable uygularken Object.Equals(object) geçersiz kıl<T>
+CA1066 | Tür {0} IEquatable uygulamalıdır\<T > eşittir kıldığından
+CA1067 | Object.Equals(object) IEquatable uygularken geçersiz kılma\<T >
 CA1068 | CancellationToken parametreleri son gelmelidir
 CA1200 | Cref etiket öneki ile kullanmaktan kaçının
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Harfleri yerelleştirilmiş parametreler olarak göndermeyin

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 51ac13718beaf01340b51e1fa3c5a7022f159d96
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820617"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559781"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 
@@ -77,9 +77,9 @@ Sağ **paketleri** bağlam menüsüne erişmek için:
 
 ![Paketleri menüsü](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **NuGet paketleri Ekle** -daha fazla paket projeye eklemek için penceresi açılır.
-*   **Güncelleştirme** - her paket için kaynak sunucunun denetler ve tüm yeni sürümlerini yükler.
-*   **Geri yükleme** -(mevcut paketlerini yeni sürümlere güncelleştirmeden) tüm eksik paketleri indirir.
+* **NuGet paketleri Ekle** -daha fazla paket projeye eklemek için penceresi açılır.
+* **Güncelleştirme** - her paket için kaynak sunucunun denetler ve tüm yeni sürümlerini yükler.
+* **Geri yükleme** -(mevcut paketlerini yeni sürümlere güncelleştirmeden) tüm eksik paketleri indirir.
 
 Güncelleştirme ve geri yükleme seçenekleri çözüm düzeyinde de mevcuttur ve Çözümdeki tüm projeleri etkiler.
 
