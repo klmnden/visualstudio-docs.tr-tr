@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Yöneticiler talep abonelikleri nasıl giderebileceğinize öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: d8209385ca7b1b070fd67116411814f15a8c0df8
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559735"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586996"
 ---
 # <a name="overallocated-subscriptions"></a>Fazla yüklenmiş abonelikler
 
@@ -42,7 +42,6 @@ Kuruluşunuzda bir Kurumsal Anlaşma (EA) varsa, yöneticileri abonelik satın a
 > GitHub Enterprise ile Visual Studio Abonelikleri, Visual Studio abonelik yöneticileri tarafından atanır ve bu Aboneliklerdeki satın olamazdı, bunlar için GitHub Enterprise admins kuruluş içindeki görünür olmaz. GitHub Enterprise abonelikleri görünür olduğundan emin olmak için satın alma dahil olmak üzere **en az bir** GitHub Enterprise ile Visual Studio Professional veya Visual Studio Enterprise with GitHub Enterprise aboneliğinizin yapılacak ilk zaman abonelikleri atanır.  
 >
 > Bu atanan her GitHub abonelik için burada Yönet Portalı'nda bu yönelik lisanslama gereksinimlerine uyduğunuzu kalması için atanan GitHub aboneliğiyle karşılık gelen bir Visual Studio emin olmak için müşterinin sorumluluğundadır Abonelik.
-
 
 Yönetme hakkında daha fazla bilgi [GitHub Enterprise ile Visual Studio abonelikleri](assign-github.md).
 

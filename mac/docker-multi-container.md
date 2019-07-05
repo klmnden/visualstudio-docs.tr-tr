@@ -4,12 +4,12 @@ description: Mac için Visual Studio'da aralarında iletişim kurmak ve birden f
 author: bytesguy
 ms.author: adhartle
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 76c55a43540e2f8ab791b4530044c0ab4da4ecdc
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196407"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586795"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Oluşturmak çok kapsayıcılı Docker ile uygulama oluşturma
 
@@ -82,14 +82,14 @@ Bizim çözümde şimdi iki ASP.NET projeleri vardır ve her ikisi de yapıland�
    ```
 
 1. İçinde *Index.cshtml* görüntülemek için bir satır ekleyin `ViewData["Message"]` böylece dosyanın şu kod gibi görünür:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Bizim çözümde şimdi iki ASP.NET projeleri vardır ve her ikisi de yapıland�
       ```
 
 1. Şimdi Web API projesinde, kod, eklediğiniz arama API'si tarafından döndürülen iletisini özelleştirmek için değerleri denetleyici ekleyin *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Bizim çözümde şimdi iki ASP.NET projeleri vardır ve her ikisi de yapıland�
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Ayarlama `docker-compose` projesini başlangıç projesi olarak ve Git **çalıştırın > hata ayıklamayı Başlat**. Her şeyin doğru şekilde yapılandırıldıysa, "Hello webfrontend ve webapı (1 değeriyle)." iletisini görürsünüz:
 
 ![Çalışan docker çoklu kapsayıcı çözümü](media/docker-multicontainer-debug.png)

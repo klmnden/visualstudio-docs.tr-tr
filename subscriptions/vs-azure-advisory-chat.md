@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbeti avantajı yararlanmak öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033179"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586971"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -42,7 +42,6 @@ Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
 | Visual Studio Professional (standart, aylık bulut) Visual Studio Enterprise (NFR aylık bulut<sup>1</sup>) |        Tümü        | Yok |     Hayır     |
 |                                          Visual Studio Test Professional (standart)                                          |        Tümü        | Yok |     Hayır     |
 |                                                  MSDN platformları (standart)                                                   |        Tümü        | Yok |     Hayır     |
-
 
 <sup>1</sup>*içerir:  Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT*
 

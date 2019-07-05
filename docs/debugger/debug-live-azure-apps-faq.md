@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255988"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586847"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Sık sorulan Visual Studio'da anlık görüntü hatalarını ayıklama sorular
 
@@ -70,92 +70,91 @@ AKS için:
 
 İçin sanal makine/sanal makine ölçek kümeleri uzaktan hata ayıklayıcı uzantısı, sertifikalar, KeyVaults ve gelen NAT havuzları şu şekilde kaldırabilirsiniz:
 
-1. Uzaktan hata ayıklayıcı uzantısını kaldırma  
+1. Uzaktan hata ayıklayıcı uzantısını kaldırma
 
-   Sanal makineler ve sanal makine ölçek kümeleri için uzaktan hata ayıklayıcıyı devre dışı bırakmak için birkaç yolu vardır:  
+   Sanal makineler ve sanal makine ölçek kümeleri için uzaktan hata ayıklayıcıyı devre dışı bırakmak için birkaç yolu vardır:
 
-      - Cloud Explorer aracılığıyla uzaktan hata ayıklayıcıyı devre dışı bırak  
+      - Cloud Explorer aracılığıyla uzaktan hata ayıklayıcıyı devre dışı bırak
 
-         - Cloud Explorer > sanal makine kaynağınıza > hata ayıklama devre dışı bırak (hata ayıklama devre dışı bırakma yok sanal makine ölçek kümesi üzerinde Cloud Explorer için).  
+         - Cloud Explorer > sanal makine kaynağınıza > hata ayıklama devre dışı bırak (hata ayıklama devre dışı bırakma yok sanal makine ölçek kümesi üzerinde Cloud Explorer için).
 
+      - PowerShell betikleri/cmdlet'leri'ile uzaktan hata ayıklayıcıyı devre dışı bırak
 
-      - PowerShell betikleri/cmdlet'leri'ile uzaktan hata ayıklayıcıyı devre dışı bırak  
+         Sanal makine için:
 
-         Sanal makine için:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Sanal makine ölçek kümeleri için:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Sanal makine ölçek kümeleri için:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Azure portalı üzerinden uzaktan hata ayıklayıcıyı devre dışı bırak
-         - Azure portalı > kaynak dikey penceresinde, sanal makine/sanal makine ölçek ayarlar > uzantıları  
-         - Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger uzantıyı kaldırın  
-
+         - Azure portalı > kaynak dikey penceresinde, sanal makine/sanal makine ölçek ayarlar > uzantıları
+         - Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger uzantıyı kaldırın
 
          > [!NOTE]
          > Sanal makine ölçek kümeleri - portal DebuggerListener bağlantı noktalarını kaldırma izin vermez. Azure PowerShell kullanmanız gerekir. Ayrıntılar için aşağıya bakın.
-  
+
 2. Sertifikalar ve Azure anahtar Kasası'nı Kaldır
 
-   Sanal makine veya sanal makine ölçek kümeleri için uzaktan hata ayıklayıcı uzantısını yüklerken, hem istemci hem de sunucu sertifikalarını VS istemci kimlik doğrulaması ile Azure sanal makine için oluşturulan/kaynaklar sanal makine ölçek kümeleri.  
+   Sanal makine veya sanal makine ölçek kümeleri için uzaktan hata ayıklayıcı uzantısını yüklerken, hem istemci hem de sunucu sertifikalarını VS istemci kimlik doğrulaması ile Azure sanal makine için oluşturulan/kaynaklar sanal makine ölçek kümeleri.
 
-   - İstemci sertifikası  
+   - İstemci sertifikası
 
-      Bu sertifika bulunan sertifika otomatik olarak imzalanan bir sertifika olduğundan: / CurrentUser/My /  
+      Bu sertifika bulunan sertifika otomatik olarak imzalanan bir sertifika olduğundan: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       Bu sertifikayı makinenizden kaldırmak için bir PowerShell yoludur
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - Sunucu sertifikası
-      - Karşılık gelen sunucu sertifikası parmak izi Azure anahtar kasası için gizli dizi olarak dağıtılır. VS bulun veya ön eki MSVSAZ * bölgesindeki sanal makineye karşılık gelen bir anahtar kasası oluşturma dener veya kaynak sanal makine ölçek kümeleri. Tüm sanal makine veya sanal makine ölçek kümeleri bu bölgeye dağıtılan kaynakları bu nedenle aynı KeyVault paylaşmak.  
-      - Sunucu sertifikası parmak izi gizli anahtarı silmek için Azure portalına gidin ve MSVSAZ * anahtar kasası kaynağınızın barındıran aynı bölgede bulun. Etiketli gizli anahtarı silme `remotedebugcert<<ResourceName>>`  
-      - PowerShell aracılığıyla, kaynak sunucu gizli anahtarı silmek gerekir.  
+      - Karşılık gelen sunucu sertifikası parmak izi Azure anahtar kasası için gizli dizi olarak dağıtılır. VS bulun veya ön eki MSVSAZ * bölgesindeki sanal makineye karşılık gelen bir anahtar kasası oluşturma dener veya kaynak sanal makine ölçek kümeleri. Tüm sanal makine veya sanal makine ölçek kümeleri bu bölgeye dağıtılan kaynakları bu nedenle aynı KeyVault paylaşmak.
+      - Sunucu sertifikası parmak izi gizli anahtarı silmek için Azure portalına gidin ve MSVSAZ * anahtar kasası kaynağınızın barındıran aynı bölgede bulun. Etiketli gizli anahtarı silme `remotedebugcert<<ResourceName>>`
+      - PowerShell aracılığıyla, kaynak sunucu gizli anahtarı silmek gerekir.
 
-      Sanal makineler için:  
+      Sanal makineler için:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Sanal makine ölçek kümeleri için:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Tüm DebuggerListener gelen NAT havuzları (sanal makine ölçek kümesi yalnızca) Kaldır  
+      Sanal makine ölçek kümeleri için:
 
-   Uzaktan hata ayıklayıcı, Ölçek kümesi ait yük dengeleyici için uygulanan DebuggerListener gelen NAT havuzları tanıtır.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Tüm DebuggerListener gelen NAT havuzları (sanal makine ölçek kümesi yalnızca) Kaldır
+
+   Uzaktan hata ayıklayıcı, Ölçek kümesi ait yük dengeleyici için uygulanan DebuggerListener gelen NAT havuzları tanıtır.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ AKS için:
 App Service için:
 1. Snapshot Debugger, Azure portalı üzerinden uygulama hizmetiniz için devre dışı bırakın.
 2. Azure portalı > uygulama hizmeti kaynak dikey pencerenizi > *uygulama ayarları*
-3. Azure portalında aşağıdaki uygulama ayarlarını silin ve değişikliklerinizi kaydedin. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Azure portalında aşağıdaki uygulama ayarlarını silin ve değişikliklerinizi kaydedin.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Herhangi bir değişiklik uygulama ayarları, uygulamanın yeniden başlatır. Uygulama ayarları hakkında daha fazla bilgi için bkz: [Azure portalında bir App Service uygulaması yapılandırma](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Herhangi bir değişiklik uygulama ayarları, uygulamanın yeniden başlatır. Uygulama ayarları hakkında daha fazla bilgi için bkz: [Azure portalında bir App Service uygulaması yapılandırma](/azure/app-service/web-sites-configure).
 
 AKS için:
 1. Dockerfile, karşılık gelen bölümlere kaldırmak için güncelleştirme [Docker görüntüleri üzerinde Visual Studio Snapshot Debugger](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ Snapshot Debugger'ı devre dışı bırakmak için birkaç yolu vardır:
 
 - PowerShell cmdlet'lerinden [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Sanal makine:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    Sanal makine ölçek kümeleri:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Sanal makine:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Sanal makine ölçek kümeleri:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

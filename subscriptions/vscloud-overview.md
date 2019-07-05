@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465134"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586893"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -103,7 +103,6 @@ Y: Belirli bir ay boyunca satın alınan yıllık aboneliklerine tam bir yıl i�
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını azaltmak istersem?
 
 Y: Yöneticinize devam ederek abonelik sayısını azaltabilirsiniz https://manage.visualstudio.com ve abonelik sayısını azaltmak için bu makaledeki yönergeleri. Sistem olacak *değil* günlere kredi oluşturur. Para iadesi için Azure fatura ekibine başvurun gerekecektir.
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>S: Aboneliğimi iptal, ben daha sonra başka bir yıllık bulut aboneliği satın alabilirsiniz olacak mı?
 Y:  Başka bir yıllık bulut aboneliği satın almanız mümkün olmayacaktır olsa da, Visual Studio abonelikleri satın almak için pek çok seçenek vardır.  Daha fazla bilgi [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).

@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil avantajları hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493740"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586982"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio aboneliğinize dahil avantajları
 
 Visual Studio abonelikleri (eski adıyla MSDN Abonelikleri da bilinir), en kapsamlı kaynaklar oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmenize olanak sağlar.  Belirli avantajlar, sahip olduğunuz abonelik türüne göre değişir.  İçin maksimum değeri sağlamak için size en yeni ve en kullanışlı teknolojileri, eğitim malzemeleri ve iş ortağı avantajları odaklanmak için ayarlamalar gibi aboneleri sağladığı avantajlar düzenli olarak değiştirin.
-
 
 Avantajları, üç kategorilerde gruplandırılır [abone portalı](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 

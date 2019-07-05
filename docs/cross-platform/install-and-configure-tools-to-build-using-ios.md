@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614441"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586814"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Yükleme ve yapılandırma araçları kullanarak iOS oluşturmak için
 
@@ -66,7 +66,6 @@ Yüklediğinizde ve uzak aracı iOS için kod geliştirme için önce şu önko�
 
    Mac'inizde Node.js 8.11.3 sürümünü yükleyin Node.js paketi yüklerseniz, npm sürümüyle 5.6.0 gelmelidir. Diğer Node.js ve npm sürümleri vcremote yüklemesinin başarısız olmasına neden olabilir uzak aracı vcremote kullanılan bazı modüller desteklemeyebilir unutmayın.
 
-
 ## <a name="Install"></a> İOS için Uzak aracı yükleme
 
 Platformlar arası Mobil Geliştirme için Visual C++'ı yüklediğinizde Visual Studio ile iletişim kurabilir [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), dosya aktarımı, oluşturun ve iOS uygulamanızı çalıştırma Mac'inizde çalıştıran uzak bir aracı ve hata ayıklama komutları gönderme.
@@ -79,7 +78,7 @@ Uzak Aracı yüklemeden önce memnun emin [önkoşulları](#prerequisites) yükl
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   Genel yükleme (**-g**) anahtar önerilir ancak gerekli değildir.
+   Genel yükleme ( **-g**) anahtar önerilir ancak gerekli değildir.
 
    Yükleme sırasında vcremote yüklü olduğundan ve Geliştirici modu Mac'inizde etkinleştirildi [Homebrew](https://brew.sh/) ve iki npm paketi, vcremote LIB ve vcremote-utils da yüklenir. Yükleme tamamlandığında, atlanan isteğe bağlı bağımlılıklar hakkında tüm uyarıları yoksaymak güvenlidir.
 
@@ -142,7 +141,7 @@ Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzak
 
 1. Visual Studio menü çubuğunda **Araçları**, **seçenekleri**.
 
-1. İçinde **seçenekleri** iletişim kutusunda **Çoklu Platform**, **C++**, **iOS**.
+1. İçinde **seçenekleri** iletişim kutusunda **Çoklu Platform**, **C++** , **iOS**.
 
 1. İçinde **ana bilgisayar adı** ve **bağlantı noktası** alanları, başlatıldığında uzak aracı tarafından belirtilen değerleri girin. Ana bilgisayar adı, DNS adını veya IP adresini Mac olabilir. Varsayılan bağlantı noktası: 3030.
 
@@ -159,7 +158,7 @@ Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzak
 
    Eşleştirmenin başarısız olursa, Uzak Aracı'ndaki adımları izleyerek çalıştığını doğrulayın [uzak aracı Başlat](#Start). Uzak Aracı PIN oluşturulmasının üzerinden çok uzun zaman geçtiyse, adımları [yeni bir güvenlik PIN'i Oluştur](#GeneratePIN) Mac ve yeniden deneyin. Ana bilgisayar adı Mac kullanıyorsanız, IP adresini kullanarak deneyin **ana bilgisayar adı** bunun yerine alan.
 
-1. Klasör adı güncelleştirme **uzak kök** ev uzak aracısı tarafından kullanılan klasörü belirtmek için alanını (*~*) Mac'te dizin Varsayılan olarak /Users/ uzak aracı kullanır`username`/vcremote uzak kök olarak.
+1. Klasör adı güncelleştirme **uzak kök** ev uzak aracısı tarafından kullanılan klasörü belirtmek için alanını ( *~* ) Mac'te dizin Varsayılan olarak /Users/ uzak aracı kullanır`username`/vcremote uzak kök olarak.
 
 1. Seçin **Tamam** eşleştirme uzak bağlantı ayarları kaydetmek için.
 

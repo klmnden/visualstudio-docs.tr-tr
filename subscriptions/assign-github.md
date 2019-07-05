@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: Visual Studio + GitHub paketini aboneliklerini yönetme
 searchscope: VS Subscription
-ms.openlocfilehash: aa57363cd9ae9be490004c7f182c49bdaa7f2e6c
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559654"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586853"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio aboneliklerini yönetme
 
@@ -69,7 +69,6 @@ GitHub Enterprise sunucusunun kuruluşunuzun uygulama yönetimini ipuçları sor
 > > - [Kişiler, takımlar ve kuruluşların kaldırma](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
 > - [Kullanıcı güvenliği](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 - [GitHub Enterprise sunucusunu yükleme ve yapılandırma](https://help.github.com/en/enterprise/2.16/admin/installation)
-
 
 ## <a name="support-resources"></a>Destek kaynakları
 

@@ -5,22 +5,20 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 640622a54daa6dd92a16b40741d26e5e68f937b7
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253807"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586828"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>ASP.NET Core Mac için Visual Studio'da uygulama oluşturma 
-
 
 ASP.NET Core modern bulut tabanlı İnternet'e bağlı uygulamalar, web uygulamaları ve Hizmetleri, IOT uygulamaları ve mobil arka uçları gibi oluşturmaya yönelik açık kaynaklı ve platformlar arası bir çerçevedir. ASP.NET Core uygulamaları çalışabileceği [.NET Core](https://www.microsoft.com/net/core/platform) veya .NET Framework çalışma zamanları. Bu buluta dağıtılan uygulamalar için en iyi duruma getirilmiş geliştirme framework sağlamak üzere tasarlanmış veya şirket içinde çalıştırın. Çözümlerinizi oluşturulurken esneklik korumak için çok az ek yük, modüler bileşenlerden oluşur. Geliştirin ve Windows, Mac ve Linux'ta ASP.NET Core uygulamaları platformlar arası çalıştırın. ASP.NET Core, açık kaynak konumunda [GitHub](https://github.com/aspnet/home).
 
 Bu laboratuvarda oluşturacak ve Mac için Visual Studio ile bir ASP.NET Core uygulaması keşfedin
 
 ## <a name="objectives"></a>Amaçlar
-
 
 > [!div class="checklist"]
 > * Bir ASP.NET Core web uygulaması oluşturma

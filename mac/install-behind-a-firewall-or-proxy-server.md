@@ -6,17 +6,16 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032790"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586881"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Mac için Visual Studio'yu kullanın
 
 Sizin veya kuruluşunuzun bir güvenlik duvarı veya Ara sunucu gibi güvenlik önlemleri kullanır, sonra vardır, bir "izin verilenler listesine" eklemek isteyebilirsiniz ve bağlantı noktaları ve protokoller, etki alanları Vis yüklediğinizde ve en iyi deneyimi sahip açmak isteyebilirsiniz ual Studio Mac ve Azure Hizmetleri için.
-
 
 - [**Mac için Visual Studio yükleme**](#install-visual-studio-for-mac): Bu tabloları böylece tüm özellikleri ve Visual Studio'nun iş yükleri için Mac erişiminiz bağlanmaya izin vermelidir etki alanlarını dahil et
 
@@ -79,7 +78,7 @@ Visual Studio'da Mac için bir proxy veya güvenlik duvarı ihtiyacınız olan h
 
 | Etki Alanı | Bağlantı noktaları|Amaç|
 | ----------------------|------------------|------------------|
-| api.nuget.org | 80/443|NuGet API'si|
+| api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| Kimlik sağlayıcısı|
 
 ### <a name="android-projects"></a>Android projeleri

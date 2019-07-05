@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerine dahil edilen Azure topluluğu Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032256"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586951"
 ---
 # <a name="azure-community"></a>Azure Topluluğu
 
@@ -54,7 +54,6 @@ Azure topluluğu avantajı kullanılabilirliğini, aşağıda gösterildiği gib
 |                              Visual Studio Test Professional (standart)                               |    Toplu Lisans, perakende     |   Bir yıl    |    Evet     |
 |                                       MSDN platformları (standart)                                       |    Toplu Lisans, perakende     |   Bir yıl    |    Evet     |
 | Visual Studio Enterprise (aylık bulut), Visual Studio Professional (aylık bulut), NFR<sup>1</sup> |        Tümü        | Yok |     Hayır     |
-
 
 <sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Microsoft TZE'si, en değerli Professional (MVP), bölgesel Yöneticisi (RD), Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, Microsoft Eğitmen (MCT) sertifikası*
 
