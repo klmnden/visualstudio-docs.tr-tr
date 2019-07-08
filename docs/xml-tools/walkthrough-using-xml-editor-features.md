@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808509"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624188"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>İzlenecek yol: XML düzenleyicisi özelliklerini kullanma
 
@@ -30,7 +30,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 
      Yeni bir dosya düzenleyicide açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8">`.
 
-3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın (**...** ) üzerinde **şemaları** alan.
+3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın ( **...** ) üzerinde **şemaları** alan.
 
      **XSD şemaları** iletişim kutusu görüntülenir.
 
@@ -58,7 +58,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 
     - **çalışan** kök öğe eklemek için.
 
-2. Seçin **<!--** bir açıklama düğümü ve ENTER tuşuna **Enter**.
+2. Seçin  **&lt;!--** bir açıklama düğümü ve ENTER tuşuna **Enter**.
 
      Düzenleyici, açıklama bitiş etiketi ekler ve başlangıç ve bitiş açıklama etiketleri arasında imleci geçir yerleştirir.
 
@@ -86,7 +86,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 
 10. XML dosyasına dönün ve Değiştir **abc** metinle **123**.
 
-     Dalgalı çizgi ve **araç ipucu** altında ID öğesinin değerine temizlenir. **Araç ipucu** çalışan sonu etiketi artık iletisini görüntüler: **' % S'öğesi 'çalışanı' içeriği eksik sahip. Beklenen 'alım tarihi'**.
+     Dalgalı çizgi ve **araç ipucu** altında ID öğesinin değerine temizlenir. **Araç ipucu** çalışan sonu etiketi artık iletisini görüntüler: **' % S'öğesi 'çalışanı' içeriği eksik sahip. Beklenen 'alım tarihi'** .
 
 11. Yazın, sonra kimliği bitiş etiketi imleci `<`seçin **alım tarihi** üye listesini ve ardından türünde `>`.
 
@@ -106,7 +106,7 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 
 1. Gelen **dosya** menüsünde **Kaydet**.
 
-     **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir. Varsayılan dosya adı *'XMLFile1'*.
+     **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir. Varsayılan dosya adı *'XMLFile1'* .
 
 2. XML belgesi için konum ve dosya adını girin ve tıklayın **Kaydet**.
 

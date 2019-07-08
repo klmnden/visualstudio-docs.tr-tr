@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75c5607043e83ece8ae95b770e8e50b6ab8fbc26
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552905"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624109"
 ---
 # <a name="install-build-tools-into-a-container"></a>Derleme araçları bir kapsayıcıya yükleme
 
@@ -89,7 +89,7 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    ```
 
    > [!WARNING]
-   > Görüntünüzü doğrudan microsoft/windowsservercore veya mcr.microsoft.com/windows/servercore temel değilse (bkz [Microsoft syndicates kapsayıcı Kataloğu](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), .NET Framework düzgün yüklemeyebilir ve hiçbir yükleme hatası gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Ayrıca görüntüleri sürüm 4.7.2 etiketli dikkat edin veya daha sonra PowerShell varsayılan olarak kullanabilir `SHELL`, neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
+   > Görüntünüzü doğrudan microsoft/windowsservercore veya mcr.microsoft.com/windows/servercore temel değilse (bkz [Microsoft syndicates kapsayıcı Kataloğu](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), .NET Framework düzgün yüklemeyebilir ve hiçbir yükleme hatası gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Ayrıca görüntüleri sürüm 4.7.2 etiketli dikkat edin veya daha sonra PowerShell varsayılan olarak kullanabilir `SHELL`, neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
    >
    > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) mcr.microsoft.com/windows/servercore:1809 veya sonraki sürümlerde düzgün yüklenmez. Herhangi bir hata görüntülenir.
    >

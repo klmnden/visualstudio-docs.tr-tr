@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260611"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624134"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: Visual Studio'dan Azure Bulut Hizmetine Bir Web Uygulaması Geçirme ve Yayımlama
 
@@ -75,13 +75,13 @@ Tüm uygulama türleri seçerek Visual Studio hata ayıklayıcıya bağlı bir t
 
 Aşağıdaki tabloda, Azure'da uygulama başlatma hakkında ayrıntılar verilmiştir:
 
-   | Web uygulaması türü | Azure'da çalışan |
-   | --- | --- | --- |
-   | ASP.NET Web uygulaması<br/>(2 MVC, MVC 3, MVC 4 dahil) | URL'de seçin **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. |
-   | ASP.NET boş Web uygulaması | Varsayılan varsa `.aspx` sayfasında uygulamanızda, URL'de **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. Başka bir sayfaya gitmek için bir tarayıcıda bir URL aşağıdaki biçimde girin: `<deployment_url>/<page_name>.aspx` |
-   | Silverlight uygulaması<br/>Silverlight iş kolu uygulaması<br/>Silverlight gezinti uygulaması | Şu URL biçimi kullanarak uygulamanız için belirli bir sayfaya gidin: `<deployment_url>/<page_name>.aspx` |
-    WCF hizmeti uygulaması<br/>WCF İş Akışı Hizmeti Uygulaması | Ayarlama `.svc` WCF Hizmeti projeniz için başlangıç sayfası olarak dosya. Ardından gidin `<deployment_url>/<service_file>.svc` |
-   | ASP.NET dinamik varlıkları<br/>ASP.NET dinamik veri Linq to SQL | Bağlantı dizesi, sonraki bölümde açıklandığı gibi güncelleştirin. Ardından gidin `<deployment_url>/<page_name>.aspx`. Bir Azure SQL veritabanı için bir LINQ to SQL kullanmanız gerekir. |
+| Web uygulaması türü | Azure'da çalışan |
+| --- | --- |
+| ASP.NET Web uygulaması<br/>(2 MVC, MVC 3, MVC 4 dahil) | URL'de seçin **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. |
+| ASP.NET boş Web uygulaması | Varsayılan varsa `.aspx` sayfasında uygulamanızda, URL'de **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. Başka bir sayfaya gitmek için bir tarayıcıda bir URL aşağıdaki biçimde girin: `<deployment_url>/<page_name>.aspx` |
+| Silverlight uygulaması<br/>Silverlight iş kolu uygulaması<br/>Silverlight gezinti uygulaması | Şu URL biçimi kullanarak uygulamanız için belirli bir sayfaya gidin: `<deployment_url>/<page_name>.aspx` |
+| WCF hizmeti uygulaması<br/>WCF İş Akışı Hizmeti Uygulaması | Ayarlama `.svc` WCF Hizmeti projeniz için başlangıç sayfası olarak dosya. Ardından gidin `<deployment_url>/<service_file>.svc` |
+| ASP.NET dinamik varlıkları<br/>ASP.NET dinamik veri Linq to SQL | Bağlantı dizesi, sonraki bölümde açıklandığı gibi güncelleştirin. Ardından gidin `<deployment_url>/<page_name>.aspx`. Bir Azure SQL veritabanı için bir LINQ to SQL kullanmanız gerekir. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>ASP.NET dinamik varlıklar için bir bağlantı dizesini güncelleştirme
 

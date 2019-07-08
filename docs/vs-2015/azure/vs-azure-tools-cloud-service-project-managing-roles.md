@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63258f74f295078828d9af2f1f6d8fc2d500b8da
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963903"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624508"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio ile Azure bulut Hizmetleri'nde rollerini yönetme
 Azure bulut hizmetinizi oluşturduktan sonra yeni rolleri eklemek veya var olan rolleri kaldırın. Ayrıca, mevcut bir projeyi içeri aktar ve rol dönüştürün. Örneğin, bir ASP.NET web uygulamasını içeri aktarabilir ve bir web rolü olarak belirleyin.
@@ -50,24 +50,26 @@ Bulut hizmeti projenizi bir rolünü kaldırmak, ancak daha sonra rolü yeniden 
 
 Örneğin, bir web hizmeti rolü kaldırabilir ve bu rolün geri çözümünüze eklemek daha sonra karar verin. Bunu yaparsanız, bir hata oluşur. Bu hatayı önlemek için eklemek zorunda `<LocalResources>` yeniden içine aşağıdaki XML'de gösterilen öğesinin `ServiceDefinition.csdef` dosya. Ad özniteliği için bir parçası olarak geri projeye eklenen web hizmeti rolü adını kullanın  **\<LocalStorage >** öğesi. Bu örnekte, web hizmeti rolü adıdır **WCFServiceWebRole1**.
 
-    <WebRole name="WCFServiceWebRole1">
-        <Sites>
-          <Site name="Web">
-            <Bindings>
-              <Binding name="Endpoint1" endpointName="Endpoint1" />
-            </Bindings>
-          </Site>
-        </Sites>
-        <Endpoints>
-          <InputEndpoint name="Endpoint1" protocol="http" port="80" />
-        </Endpoints>
-        <Imports>
-          <Import moduleName="Diagnostics" />
-        </Imports>
-       <LocalResources>
-          <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
-       </LocalResources>
-    </WebRole>
+```xml
+<WebRole name="WCFServiceWebRole1">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+    </LocalResources>
+</WebRole>
+```
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - [Visual Studio ile bir Azure bulut hizmeti rollerini yapılandırma](vs-azure-tools-configure-roles-for-cloud-service.md)

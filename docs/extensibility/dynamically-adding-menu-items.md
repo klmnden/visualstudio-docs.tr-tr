@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353398"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624475"
 ---
 # <a name="dynamically-add-menu-items"></a>Dinamik olarak menü öğeleri ekleme
 Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemStart` komutu Visual Studio komut tablosu bir yer tutucu düğmesi tanım işaretini ( *.vsct*) dosya ve ardından (kodda) görüntülemek için menü öğelerinin sayısını tanımlama ve komut işleme. VSPackage'ı yüklendiğinde, yer tutucu Dinamik menü öğeleri ile değiştirilir.
@@ -320,15 +320,15 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
 
 Eşleşme koşulu hemen uygulayın. İki şey belirlemek ihtiyacımız: ilk olarak mı komut kimliği (olduğu büyüktür veya eşittir bildirilen komut kimliği), geçerli ve saniye (Bu projeleri çözümdeki sayısından daha az) bir olası projesini olup olmadığını belirtir.
 
-    ```csharp
-    private bool IsValidDynamicItem(int commandId)
-    {
-        // The match is valid if the command ID is >= the id of our root dynamic start item
-        // and the command ID minus the ID of our root dynamic start item
-        // is less than or equal to the number of projects in the solution.
-        return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
-    }
-    ```
+```csharp
+private bool IsValidDynamicItem(int commandId)
+{
+    // The match is valid if the command ID is >= the id of our root dynamic start item
+    // and the command ID minus the ID of our root dynamic start item
+    // is less than or equal to the number of projects in the solution.
+    return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
+}
+```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Yalnızca bir çözüm birden çok proje olduğunda yüklenecek VSPackage'ı ayarlama
  Çünkü **başlangıç projesi ayarlama** komut değil mantıklı etkin çözüm birden fazla proje sahip olmadığı sürece, bu durumda yalnızca otomatik olarak yüklemek için VSPackage ayarlayabilirsiniz. Kullandığınız <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> UI bağlamı birlikte <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. İçinde *DynamicMenuPackage.cs* dosyası DynamicMenuPackage sınıfına aşağıdaki öznitelikler ekleyin:

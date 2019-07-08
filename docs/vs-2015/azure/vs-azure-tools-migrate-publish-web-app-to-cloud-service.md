@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca84f1edfc3290fe53e00a5b7f8c85f07b0c66b
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952867"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624179"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: Visual Studio'dan Azure Bulut Hizmetine Bir Web Uygulaması Geçirme ve Yayımlama
 
@@ -58,9 +58,9 @@ Kullanan bir şirket içi SQL Server veritabanı, web uygulamanız için bir ba�
 
 1. Üzerinde açıklandığı gibi gerekli bulut hizmeti ve depolama hesapları Azure aboneliğinizde oluşturma [yayımlamak veya Visual Studio'dan Azure bir uygulamayı dağıtmak hazırlama](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. Visual Studio'da Uygulama projesine sağ tıklayıp **Microsoft Azure'da Yayımla...**  (olan "Yayımla..." komutunu farklı.).
-1. İçinde **Azure uygulamasını Yayımla** görüntülenir, Azure aboneliğinizde bir hesabı kullanarak oturum açın ve seçin **İleri >**.
+1. İçinde **Azure uygulamasını Yayımla** görüntülenir, Azure aboneliğinizde bir hesabı kullanarak oturum açın ve seçin **İleri >** .
 1. İçinde **ayarlar > Genel ayarları** sekmesinde, hedef bulut hizmetinden seçin **bulut hizmeti** aşağı açılan listesinde, seçilen ortam ve yapılandırmalarıyla birlikte.
-1. İçinde **Ayarları > Gelişmiş ayarlar**, depolama hesabı kullanmak **İleri >**.
+1. İçinde **Ayarları > Gelişmiş ayarlar**, depolama hesabı kullanmak **İleri >** .
 1. İçinde **tanılama**, Application Insights'a bilgileri göndermek isteyip istemediğinizi seçin.
 1. Seçin **İleri >** özeti görüntülemek için ardından **Yayımla** dağıtımını başlatmak için.
 1. Visual Studio burada ilerleme durumunu izleyebilirsiniz. bir etkinlik günlüğü penceresi açılır:
@@ -77,13 +77,13 @@ Tüm uygulama türleri seçerek Visual Studio hata ayıklayıcıya bağlı bir t
 
 Aşağıdaki tabloda, Azure'da uygulama başlatma hakkında ayrıntılar verilmiştir:
 
-   | Web uygulaması türü | Azure'da çalışan |
-   | --- | --- | --- |
-   | ASP.NET Web uygulaması<br/>(2 MVC, MVC 3, MVC 4 dahil) | URL'de seçin **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. |
-   | ASP.NET boş Web uygulaması | Varsayılan varsa `.aspx` sayfasında uygulamanızda, URL'de **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. Başka bir sayfaya gitmek için bir tarayıcıda bir URL aşağıdaki biçimde girin: `<deployment_url>/<page_name>.aspx` |
-   | Silverlight uygulaması<br/>Silverlight iş kolu uygulaması<br/>Silverlight gezinti uygulaması | Şu URL biçimi kullanarak uygulamanız için belirli bir sayfaya gidin: `<deployment_url>/<page_name>.aspx` |
-    WCF hizmeti uygulaması<br/>WCF İş Akışı Hizmeti Uygulaması | Ayarlama `.svc` WCF Hizmeti projeniz için başlangıç sayfası olarak dosya. Ardından gidin `<deployment_url>/<service_file>.svc` |
-   | ASP.NET dinamik varlıkları<br/>ASP.NET dinamik veri Linq to SQL | Bağlantı dizesi, sonraki bölümde açıklandığı gibi güncelleştirin. Ardından gidin `<deployment_url>/<page_name>.aspx`. Bir Azure SQL veritabanı için bir LINQ to SQL kullanmanız gerekir. |
+| Web uygulaması türü | Azure'da çalışan |
+| --- | --- |
+| ASP.NET Web uygulaması<br/>(2 MVC, MVC 3, MVC 4 dahil) | URL'de seçin **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. |
+| ASP.NET boş Web uygulaması | Varsayılan varsa `.aspx` sayfasında uygulamanızda, URL'de **dağıtım** için sekmesinde **Azure etkinlik günlüğü**. Başka bir sayfaya gitmek için bir tarayıcıda bir URL aşağıdaki biçimde girin: `<deployment_url>/<page_name>.aspx` |
+| Silverlight uygulaması<br/>Silverlight iş kolu uygulaması<br/>Silverlight gezinti uygulaması | Şu URL biçimi kullanarak uygulamanız için belirli bir sayfaya gidin: `<deployment_url>/<page_name>.aspx` |
+| WCF hizmeti uygulaması<br/>WCF İş Akışı Hizmeti Uygulaması | Ayarlama `.svc` WCF Hizmeti projeniz için başlangıç sayfası olarak dosya. Ardından gidin `<deployment_url>/<service_file>.svc` |
+| ASP.NET dinamik varlıkları<br/>ASP.NET dinamik veri Linq to SQL | Bağlantı dizesi, sonraki bölümde açıklandığı gibi güncelleştirin. Ardından gidin `<deployment_url>/<page_name>.aspx`. Bir Azure SQL veritabanı için bir LINQ to SQL kullanmanız gerekir. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>ASP.NET dinamik varlıklar için bir bağlantı dizesini güncelleştirme
 

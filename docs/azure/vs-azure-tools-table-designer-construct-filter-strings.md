@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f63872d3578a8abe03887bfc8bf188ba83f0b1d
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572242"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624074"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Tablo Tasarımcısı için Filtre Dizelerini Oluşturma
 ## <a name="overview"></a>Genel Bakış
 Visual Studio içinde görüntülenen bir Azure tablosu verilere filtre uygulamak **Tablo Tasarımcısı**, bir filtre dizesi oluşturmak ve filtre alanına girin. Filtre dizesi söz dizimi WCF Veri Hizmetleri tarafından tanımlanır ve bir SQL WHERE yan tümcesine benzer, ancak tablo hizmeti bir HTTP isteği aracılığıyla gönderilir. **Tablo Tasarımcısı** uygun sizin için kodlama işler üzerinde istenen özellik değerini filtrelemek için yalnızca özellik adı, karşılaştırma işleci, ölçüt değeri ve isteğe bağlı, Boolean girmeniz filtre alanına işleci. $Filter sorgu seçeneği aracılığıyla bir tabloyu sorgulamak üzere bir URL oluştururken yaptığınız gibi dahil gerekmez [depolama hizmetleri REST API Başvurusu](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-WCF Veri Hizmetleri dayalı [açık veri Protokolü](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Filtre sistem sorgusu seçeneği hakkında ayrıntılı bilgi için (**$filter**), bkz: [OData URI kurallarını belirtimi](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+WCF Veri Hizmetleri dayalı [açık veri Protokolü](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Filtre sistem sorgusu seçeneği hakkında ayrıntılı bilgi için ( **$filter**), bkz: [OData URI kurallarını belirtimi](http://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Karşılaştırma İşleçleri
 Aşağıdaki mantıksal işleçler için tüm özellik türleri desteklenir:
@@ -48,45 +48,63 @@ Dize özellikleri filtrelerken, dize sabiti tek tırnak işaretleri içine alın
 
 Aşağıdaki örnek filtrelerle **PartitionKey** ve **RowKey** özellikleri; anahtar olmayan ek özellikler için filtre dizesini de eklenebiliyordu:
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 Gerekli olmamasına rağmen her filtre ifadesi, parantez içine:
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 Tablo hizmeti, joker karakter sorguları desteklemiyor ve Tablo Tasarımcısı'nda ya da desteklenmeyen bir durumdur unutmayın. Ancak, önek eşleştirme istenen ön ek Karşılaştırma işleçleri kullanarak gerçekleştirebilirsiniz. Aşağıdaki örnek, varlıklar 'A' harfi ile başlayan bir soyadı özelliği ile döndürür:
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>Sayısal özellik üzerinde filtreleme
 Bir tamsayı veya kayan noktalı sayı filtrelemek için tırnak işaretleri olmadan bir sayı belirtin.
 
 Bu örnek değeri 30'dan büyük olan bir yaş özelliğine sahip tüm varlıkları döndürür:
 
-    Age gt 30
+```
+Age gt 30
+```
 
 Bu örnek değeri 100.25 küçük veya ona eşit olan bir AmountDue özelliğine sahip tüm varlıkları döndürür:
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>Boole özellikleri üzerinde filtreleme
 Bir Boolean değeri filtrelemek için belirtin **true** veya **false** tırnak işaretleri olmadan.
 
 Aşağıdaki örnek Isactive özelliğinin ayarlandığı tüm varlıkları döndürür **true**:
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 Bu filtre ifadesi Mantıksal işleci olmadan da yazabilirsiniz. Aşağıdaki örnekte, tablo Hizmeti ayrıca tüm varlıklar Isactive olduğu döndürür **true**:
 
-    IsActive
+```
+IsActive
+```
 
 Isactive false olduğu tüm varlıklar döndürmek için değil kullanabilirsiniz işleci:
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>DateTime özellikleri üzerinde filtreleme
 Bir DateTime değeri filtrelemek için belirtin **datetime** tek tırnak işaretleri içindeki tarih/saat sabiti ardından anahtar sözcüğü. Tarih/saat sabiti açıklandığı birleşik UTC biçiminde olmalıdır [DateTime özellik değerlerini biçimlendirme](http://go.microsoft.com/fwlink/p/?LinkId=400449).
 
 Aşağıdaki örnek, CustomerSince özelliği 10 Temmuz 2008'e eşit olduğu varlıklar döndürür:
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```

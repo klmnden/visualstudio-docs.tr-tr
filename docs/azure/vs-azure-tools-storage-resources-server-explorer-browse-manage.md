@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427786"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624098"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Sunucu Gezgini'ni kullanarak depolama kaynaklarına göz atma ve bu kaynakları yönetme
 
@@ -94,7 +94,7 @@ Blob kapsayıcıları klasörlerinde sanal klasörler olduğundan, boş bir klas
 
 Ortak bir önek belirleyerek görüntülenen blobları filtreleyebilirsiniz.
 
-Ön eki girin, örneğin, **hello** filtre metin kutusuna ve ardından **yürütme** (**!**) "hello" ile başlayan blobları düğmesi görünür.
+Ön eki girin, örneğin, **hello** filtre metin kutusuna ve ardından **yürütme** ( **!** ) "hello" ile başlayan blobları düğmesi görünür.
 
 ![Filtre metin kutusu](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -183,7 +183,7 @@ Tablo, varlıkları (satırlarda gösterilen) ve özellikleri (sütunları göst
 
 Tablo Tasarımcısı'nda bir varlık (tek satır) ya da bir özellik (tek bir hücre) için kısayol menüsünü açın ve ardından **Düzenle**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Tablo varlığı Ekle veya Düzenle](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Varlıkları tek bir tabloda aynı özellikleri (sütunları) olan gerekli değildir. Görüntüleme ve düzenleme tablo verilerini aşağıdaki kısıtlamaları göz önünde bulundurun:
 

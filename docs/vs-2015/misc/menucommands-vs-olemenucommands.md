@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000957"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624446"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Öğesinden türetme, menü komutlarını oluşturabilirsiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve impementling uygun olay işleyicileri. Çoğu durumda, kullanabileceğiniz <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar, ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Öğesinden türetme, menü komutlarını oluşturabilirsiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve ilgili olay işleyicileri uygulama. Çoğu durumda, kullanabileceğiniz <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar, ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  IDE için kullanılabilir bir VSPackage yapar görünür ve etkin bir kullanıcı önce olması gerektiğini komutları bunları kullanabilirsiniz. Komutlar, Visual Studio Paketi proje şablonunu kullanarak .vsct dosyası içinde oluşturulduğunda, görünür ve varsayılan olarak etkindir. Bazı komut bayrakları gibi ayarlama `DynamicItemStart`, varsayılan davranışı değiştirebilirsiniz. Görünürlük, etkin durumunu ve diğer özellikleri komut da kod çalışma zamanında erişerek değiştirilebilir <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> komut ile ilişkili olan nesne.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "63000957"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      Aynı GUID:ID ve farklı bir üst öğeye sahip birden çok komut yerleşimi oluşturma, birden fazla konumda görüntülenecek menü neden olur. Daha fazla bilgi için [CommandPlacements](../extensibility/commandplacements-element.md) öğesi.  
   
     Komut grupları ve ana öğe hakkında daha fazla bilgi için bkz. [, yeniden kullanılabilir grupları düğmeler oluşturma](../extensibility/creating-reusable-groups-of-buttons.md).  
   

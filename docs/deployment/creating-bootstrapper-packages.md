@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900237"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624535"
 ---
 # <a name="create-bootstrapper-packages"></a>Önyükleyici paketleri oluşturma
-Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir (*.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur.
+Kurulum programı gibi Windows Installer yeniden dağıtılabilir bileşenleri yüklemek ve algılamak için yapılandırılabilen genel bir yükleyicidir ( *.msi*) dosyaları ve yürütülebilir programlar. Yükleyici bir önyükleyici de denir. Bu bileşenin yüklenmesini yönetmek için meta verileri belirleyen XML bildirimleri kümesi programlanır.  Her yeniden dağıtılabilir bileşeni, ya da önkoşul, görünür **önkoşulları** iletişim kutusu için ClickOnce önyükleyici paketi olur. Bir önyükleyici paketi, dizinler ve önkoşul nasıl yükleneceğini açıklayan bildirim dosyalarını içeren dosyaları grubudur.
 
 Önyükleyici önce Önkoşullar zaten yüklü olup olmadığını algılar. İlk Önkoşullar yüklü değilse, önyükleyici lisans sözleşmelerini gösterir. İkinci olarak, son kullanıcı lisans sözleşmelerini kabul ettikten sonra yükleme Önkoşullar için başlar. Aksi takdirde, tüm ön koşullar algılanırsa, önyükleyici yalnızca uygulama yükleyicisini başlatır.
 
@@ -43,36 +43,44 @@ Bir önyükleyici paketi oluşturmak için ürün bildirimi oluşturmanız gerek
 
 Bu dosyalar oluşturulduktan sonra ürün bildirim dosyasını özel önyükleyici için adlandırılan bir klasöre yerleştirin. Paket bildirim dosyası yerel ayar adlı bir klasöre gider. Örneğin, paket bildirim dosyasının İngilizce olarak yeniden dağıtılması için ise, dosyayı en adlı klasöre koyun. Japonca için ja ve Almanca için de gibi her yerel ayar için bu işlemi yineleyin. Son özel önyükleyici paketi aşağıdaki klasör yapısına sahip olabilir.
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 Ardından, yeniden dağıtılabilen dosyaları önyükleyici klasör konumuna kopyalayın. Daha fazla bilgi için [nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 veya
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 Aynı zamanda önyükleyici klasör konumunu da belirleyebilirsiniz **yolu** aşağıdaki kayıt defteri değeri:
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 64-bit sistemlerde, aşağıdaki kayıt defteri anahtarını kullanın:
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 Yeniden dağıtılabilir her bileşen paketler dizini altında kendi alt klasöründe görünür. Gereken ürün bildirimi ve yeniden dağıtılabilir dosyaları, bu alt klasöre yerleştirin. Bileşen ve paket bildirim dosyalarının yerelleştirilmiş sürümleri, kültür adı göre adlandırılan alt klasörlere içinde yerleştirmeniz gerekir.
 
