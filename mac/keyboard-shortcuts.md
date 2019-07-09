@@ -2,15 +2,15 @@
 title: Mac için Visual Studio'daki klavye kısayolları
 description: Bu makale, Mac için Visual Studio'daki klavye kısayolları listeler
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09fd7ff678043e399ad37923956a61cbcf8ce80a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982716"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691429"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac için Visual Studio'daki klavye kısayolları
 
@@ -36,7 +36,7 @@ Uygun klavye kısayolunu kullanarak Mac için Visual Studio komutları çeşitli
 
 |Komutlar|Klavye kısayolları|
 |-|-|
-|Etkinleştirmek veya devre dışı kesme noktası|**⌥⌘/**, **⌘F9**|
+|Etkinleştirmek veya devre dışı kesme noktası|**⌥⌘/** , **⌘F9**|
 |Pause|**⌥⌘P**, **⌥⌘L5**|
 |Tüm kesme noktalarını Kaldır|**⇧⌘F9**|
 |İmlece kadar Çalıştır|**⌘F10**|
@@ -45,7 +45,7 @@ Uygun klavye kısayolunu kullanarak Mac için Visual Studio komutları çeşitli
 |Adımla|**⇧⌘I**, **⌘F11**|
 |Dışına adımla|**⇧⌘U**, **⇧⌘F11**|
 |Üzerinden adımla|**⇧⌘O**, **F10**|
-|İki durumlu kesme noktası|**⌘\\**, **F9**|
+|İki durumlu kesme noktası|**⌘\\** , **F9**|
 |Kesme noktalarını görüntüle|**⌥⌘B**|
 
 ## <a name="designer"></a>Tasarımcı
@@ -225,8 +225,8 @@ Uygun klavye kısayolunu kullanarak Mac için Visual Studio komutları çeşitli
 |Sonrakini Göster|**⌥⌘↓**, **F8**|
 |Öncekini Göster|**⌥⌘↑**, **⇧F8**|
 |İki Düzenleyici sütunu|**⌥⌘2**|
-|Yakınlaştır|**⌘+**, **⌘=**|
-|Uzaklaştır|**⌘-**, **⌘_**|
+|Yakınlaştır|**⌘+** , **⌘=**|
+|Uzaklaştır|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Pencere
 
@@ -244,8 +244,8 @@ Uygun klavye kısayolunu kullanarak Mac için Visual Studio komutları çeşitli
 |Diğerlerini Gizle|**⌥⌘H**|
 |Visual Studio Gizle|**⌘H**|
 |Simge Durumuna Küçült|**⌘M**|
-|Sonraki belge|**⌘}**, **⌘F6**|
-|Önceki belge|**⌘{**, **⇧⌘F6**|
+|Sonraki belge|**⌘}** , **⌘F6**|
+|Önceki belge|**⌘{** , **⇧⌘F6**|
 |Sonraki belgeye geç|**⌃⇥**|
 |Sonraki bölmeye geç|**⌃⌥⇥**|
 |Önceki belgeye geç|**⌃⇧⇥**|

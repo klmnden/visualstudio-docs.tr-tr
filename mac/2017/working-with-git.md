@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986685"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692974"
 ---
 # <a name="working-with-git"></a>Git ile çalışma
 
@@ -59,7 +59,7 @@ Bu, aşağıdaki eylemleri izin ver:
 
 ## <a name="switching-branches"></a>Dallar arasında geçiş
 
-Varsayılan olarak, bir depoda oluşturduğunuz ilk dalı olarak bilinen **ana** dal. Hiç teknik ana dal ile diğer arasında farklı bir şey, ancak çoğunlukla geliştirme takımları 'Canlı' veya 'üretim' dalı olarak zorlayıcı bir ana daldır.
+Varsayılan olarak, bir depoda oluşturduğunuz ilk dalı olarak bilinen **ana** dal. Hiç teknik ana dal ile diğer arasında farklı bir şey, ancak çoğunlukla geliştirme takımları 'Canlı' veya 'üretim' dalı olarak zorlayıcı bir ana daldır.
 
 Bağımsız bir satırı geliştirme ana (veya başka bir daldan, sorgunuzun) kapalı dallara ayırma tarafından oluşturulabilir. Bu ana dala bir noktada yeni bir sürümü 'Canlı' nedir bağımsız olarak geliştirme için izin verme zamanında sağlar Dallar bu şekilde kullanılması genellikle yazılım geliştirme özellikleri için kullanılır
 

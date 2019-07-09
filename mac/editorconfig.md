@@ -1,18 +1,18 @@
 ---
 title: EditorConfig
 description: Mac için Visual Studio'da stilleri kodlama tutarlı proje için bir editorconfig dosyası kullanma
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a628f4635373dd9bd02eeefa01697fedaeb170c1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983550"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691578"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Oluşturma ve özel bir EditorConfig dosyasını düzenleme
 
@@ -123,7 +123,7 @@ csharp_new_line_before_open_brace = none
 
 Ayarı `root` için `true` en üstteki dosyası olarak kod tabanının ve daha bu dosyayı işaretler `.editorconfig` projesindeki dosyalar yok sayılır açıklandığı şekilde [EditorConfig ayarlarını geçersiz kıl](#override-editorconfig-settings) bölümü.
 
-Her bölümde kare gösterilir (**[]**) küme ayraçları ve bilgi aşağıdaki özellikleri ilgilidir dosya türlerini belirtir.
+Her bölümde kare gösterilir ( **[]** ) küme ayraçları ve bilgi aşağıdaki özellikleri ilgilidir dosya türlerini belirtir.
 
 Yukarıdaki örnekte, projedeki tüm dosyalar için bazı ayarlar uygulanır ve diğerleri yalnızca C# dosyaları için eklenir. Önce ve sonra aşağıdaki ekran görüntüleri Göster `.editorconfig` ayarları uygulanır:
 

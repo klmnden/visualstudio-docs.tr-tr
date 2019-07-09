@@ -1,18 +1,18 @@
 ---
 title: 'Öğretici: Azure İşlevleri'
 description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986496"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692896"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -299,7 +299,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     ![İşlevleri Http URL'si](media/azure-functions-lab-image31.png)
 
-1. Tarayıcı penceresine dönün ve gidin **http://localhost:7071/api/Adder/3/5**.
+1. Tarayıcı penceresine dönün ve gidin **http://localhost:7071/api/Adder/3/5** .
 
 1. Bu süre yöntem parametreleri yolundan çekme ve toplam üreten bir kez daha, çalışır.
 
@@ -348,7 +348,7 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 
 1. Tuşuna **F5** oluşturup projeyi çalıştırın.
 
-1. Tarayıcı sekmesinde gidin **http://localhost:7071/api/Process/4/6**. Bu başka bir ileti kuyruğuna sonunda başka bir satır tabloya eklenmekte sonuçlanmalıdır koyacaktır.
+1. Tarayıcı sekmesinde gidin **http://localhost:7071/api/Process/4/6** . Bu başka bir ileti kuyruğuna sonunda başka bir satır tabloya eklenmekte sonuçlanmalıdır koyacaktır.
 
 1. Geri dönüp **Terminal** ve izlemek için gelen isteğin **4 + 6**.
 
@@ -381,11 +381,11 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 
 1. Tuşuna **F5** oluşturup projeyi çalıştırın.
 
-1. Tarayıcı sekmesinde URL'SİNDE Yenile **http://localhost:7071/api/Process/4/6**. Bu kaydın tabloda satır mevcut olmadığından, hemen ve hatasız döndürmelidir. HTTP çıktı olduğundan, Terminal çıktıda görebilirsiniz.
+1. Tarayıcı sekmesinde URL'SİNDE Yenile **http://localhost:7071/api/Process/4/6** . Bu kaydın tabloda satır mevcut olmadığından, hemen ve hatasız döndürmelidir. HTTP çıktı olduğundan, Terminal çıktıda görebilirsiniz.
 
     ![Tablo satırı zaten gösteren terminal çıkış var.](media/azure-functions-lab-image33.png)
 
-1. Bir birleşim yansıtmıyor URL'sini henüz test, gibi güncelleştirme **http://localhost:7071/api/Process/5/7**. Tablo satırı (beklendiği gibi) bulunamadığını belirten bir Terminal ileti unutmayın.
+1. Bir birleşim yansıtmıyor URL'sini henüz test, gibi güncelleştirme **http://localhost:7071/api/Process/5/7** . Tablo satırı (beklendiği gibi) bulunamadığını belirten bir Terminal ileti unutmayın.
 
     ![Terminal çıkış gösteren yeni işlem](media/azure-functions-lab-image34.png)
 

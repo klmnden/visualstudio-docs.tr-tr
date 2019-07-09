@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697601"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692797"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 
@@ -43,7 +43,7 @@ Penceresi açıldığında, varsayılan paket kaynağından paketlerin listesini
 
 ![NuGet paketleri listesi](media/nuget-walkthrough-AddPackages1.png)
 
-Örneğin, belirli bir paketi bulmak için sağ üst köşedeki arama kutusunu kullanın `azure`. Kullanmak istediğiniz bir paket buldunuz, seçin ve **Paketi Ekle** yüklemeye başlamak için düğme.
+Örneğin, belirli bir paketi bulmak için sağ üst köşedeki arama kutusunu kullanın `azure`. Kullanmak istediğiniz bir paket buldunuz, seçin ve **Paketi Ekle** yüklemeye başlamak için düğme.
 
 [Azure NuGet paketi ekleme](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Paket İndirildikten sonra projenize eklenir. Çözüm aşağıdaki gibi değiş
 
 NuGet paketini eklenen ve güncelleştirilen proje başvuruları, API olarak programlayabileceğiniz sonra herhangi bir proje başvurusu ile olacaktır.
 
-Gerekli eklemeyi `using` dosyanızın en üstüne yönergeleri:
+Gerekli eklemeyi `using` dosyanızın en üstüne yönergeleri:
 
 ```csharp
 using Newtonsoft.Json;

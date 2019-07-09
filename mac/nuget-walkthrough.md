@@ -1,17 +1,17 @@
 ---
 title: Bir NuGet paketini projenize dahil
 description: Bu belge, bir Xamarin projesinde bir NuGet paketi ekleme kapsar. Bulma ve bir paket indiriliyor, aynı zamanda aracılığıyla IDE tümleştirme özellikleri ile tanışın size yol gösterir.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 51ac13718beaf01340b51e1fa3c5a7022f159d96
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559781"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691392"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Bir NuGet paketini projenize dahil
 

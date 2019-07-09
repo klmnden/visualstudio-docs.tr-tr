@@ -1,17 +1,17 @@
 ---
 title: Visual Studio için Mac turu
 description: Mac için Visual Studio, ASP.NET Core Web siteleri ve iOS, Android, Mac ve Xamarin.Forms için Xamarin projeleri dahil olmak üzere, macOS üzerinde .NET uygulama derlemek için bir tümleşik geliştirme ortamı sağlar.
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: ccdedcb82b06ec2723555f8dedcf3b628e392137
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: aabb6b575edb68f3e72cad06f2497b8176e950fe
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976132"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691503"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tur Mac için Visual Studio 2019
 

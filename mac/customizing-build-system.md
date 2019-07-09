@@ -1,16 +1,16 @@
 ---
 title: Derleme Sistemini Özelleştirme
 description: Bu makale MSBuild kısa bir giriş derleme sistemi Mac için Visual Studio tarafından kullanılan yöneliktir.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983728"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693015"
 ---
 # <a name="customizing-the-build-system"></a>Derleme sistemini özelleştirme
 

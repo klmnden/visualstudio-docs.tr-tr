@@ -3,14 +3,14 @@ title: Visual Studio için Unity için Mac araçları kullanarak
 description: Bu kılavuz, Mac araçları için Unity uzantısı için Visual Studio kullanmayı açıklar
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966057"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692213"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları kullanarak
 
@@ -26,7 +26,7 @@ Alternatif olarak, Mac için Visual Studio komut dosyası içermeyen kaynak düz
 
 ## <a name="unity-documentation-access"></a>Unity belgeleri erişimi
 
-Unity için Araçlar Mac için Visual Studio Unity API belgelerini erişmek için bir kısayol içerir. Mac için Visual Studio Unity API belgelerini erişmek için Unity hakkında bilgi edinin ve basın istediğiniz API imleci **⌘ komut + '**.
+Unity için Araçlar Mac için Visual Studio Unity API belgelerini erişmek için bir kısayol içerir. Mac için Visual Studio Unity API belgelerini erişmek için Unity hakkında bilgi edinin ve basın istediğiniz API imleci **⌘ komut + '** .
 
 ## <a name="intellisense-for-unity-messages"></a>Unity özellikleri için IntelliSense
 Unity altyapısı MonoBehaviour betikleri, geliştiricilerin OnMouseDown, OnTriggerEnter vb. gibi iletileri tepki verdiğini kod yazmak iletileri yayınlar. Bu temel MonoBehaviour sınıfta sanal yöntemleri olmadığından, Unity iletileri için kod Tamamlama işlevi MonoDevelop gibi bazı IDE özellikleri mevcut değildir.
@@ -61,7 +61,7 @@ Ancak, Visual Studio için Unity için Mac araçları Unity iletileri için Inte
 
 ## <a name="adding-new-unity-files-and-folders"></a>Yeni Unity dosyaları ve klasörleri ekleme
 
-Unity Düzenleyicisi'nde bir Unity projesi için her zaman yeni dosyaları ekleyebilirsiniz, ancak yeni Unity betikleri, gölgelendiriciler ve klasörlerinden Visual Studio'dan kolayca oluşturmak için Mac için Visual Studio sağlar.
+Unity Düzenleyicisi'nde bir Unity projesi için her zaman yeni dosyaları ekleyebilirsiniz, ancak yeni Unity betikleri, gölgelendiricilerin, yapılar, numaralandırmalar ve klasörlerinden Visual Studio'dan kolayca oluşturmak için Mac için Visual Studio sağlar.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Yeni bir C# MonoBehaviour betik Ekle
 

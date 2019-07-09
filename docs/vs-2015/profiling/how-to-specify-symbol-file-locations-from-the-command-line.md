@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436917"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692833"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: Sembol dosyası konumlarını komut satırından belirtme
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Nasıl yapılır: Komut Satırından Sembol Dosyası Konumlarını Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İşlev adları ve satır numaraları gibi sembol bilgilerini görüntülemek için profili oluşturulan bileşenlerin sembol (.pdb) dosyalarını ve Windows sistem dosyalarını erişim VSPerfReport komut satırı aracı gerektirir. Bir bileşen derlendiğinde sembol dosyaları oluşturulur. Daha fazla bilgi için [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sembol dosyaları için aşağıdaki konumlar otomatik olarak arar:  
@@ -48,7 +48,7 @@ ms.locfileid: "63436917"
   
 2. Ayarlamak için aşağıdaki sözdizimini kullanın **_NT_SYMBOL_PATH** ortam değişkeni veya VSPerfReport/symbolpath seçeneği:  
   
-    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     Burada *LocalStore* oluşturduğunuz yerel bir dizin yolu.  
   

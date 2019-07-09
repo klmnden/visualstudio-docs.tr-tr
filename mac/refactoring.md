@@ -1,17 +1,17 @@
 ---
 title: Kodu yeniden düzenleme
 description: Mac ve hızlı eylemler için Visual Studio'yu kullanarak kod iyileştirme.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937930"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691291"
 ---
 # <a name="refactoring"></a>Yeniden Düzenle
 
@@ -57,7 +57,7 @@ Hızlı eylem kullanılabilir olduğunda görüntülenen simge, kullanılabilir 
 
 - Giriş işaretini bir hızlı eylem kullanılabilir kod satırına taşıdığınızda ampuller ve tornavidalar düzenleyicinin sol kenar boşluğunda görünür.
 
-- Tuşuna **seçeneği (⌥)**+**Enter** kullanılabilir hızlı Eylemler ve yeniden düzenlemeler listesini görmek için herhangi bir satırında.
+- Tuşuna **seçeneği (⌥)** +**Enter** kullanılabilir hızlı Eylemler ve yeniden düzenlemeler listesini görmek için herhangi bir satırında.
 
 ![İçerik öğeleri görüntüle](media/refactoring-context-action.png)
 

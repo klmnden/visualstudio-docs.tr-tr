@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986962"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693008"
 ---
 # <a name="code-snippets"></a>Kod parçacıkları
 
-Kod parçacıkları, genellikle olarak adlandırılan _kod şablonları_önceden yazılmış kod bloklarını düzenleme ve bunlar eklemeye izin verecek şekilde etkili programlama için kullanışlıdır. Yeni desenler, geliştirici olarak da öğrenmeye yönelik da sözdizimi emin değilseniz veya kod parçacıkları ortak desenler hızlı bir şekilde eklemek için kullanışlı olabilir. Şablonlar için sağlanan C#, F#, HTML, XML, Python ve Razor.
+Kod parçacıkları, genellikle olarak adlandırılan _kod şablonları_önceden yazılmış kod bloklarını düzenleme ve bunlar eklemeye izin verecek şekilde etkili programlama için kullanışlıdır. Yeni desenler, geliştirici olarak da öğrenmeye yönelik da sözdizimi emin değilseniz veya kod parçacıkları ortak desenler hızlı bir şekilde eklemek için kullanışlı olabilir. Şablonlar için sağlanan C#, F#, HTML, XML, Python ve Razor.
 
 Bu bölümde, oluşturma, ekleme ve kod parçacıklarını kullanma açıklanmaktadır.
 
@@ -30,7 +30,7 @@ Kod parçacıkları, bunlardan bazıları aşağıda açıklanmıştır eklemek 
 
   [![Araç kutusu kod parçacıkları](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Şablonları komut Ekle** &ndash; şu anda bir şablon eklemek için set bağlama varsayılan anahtarı yok. Oluşturmak için Gözat **Visual Studio > Tercihler > anahtar bağlamaları** araması `template`. Bu bağlama düzen alanına istenen anahtar bağlaması ekleniyor sağlar, ardından **Uygula**:
+- **Şablonları komut Ekle** &ndash; şu anda bir şablon eklemek için set bağlama varsayılan anahtarı yok. Oluşturmak için Gözat **Visual Studio > Tercihler > anahtar bağlamaları** araması `template`. Bu bağlama düzen alanına istenen anahtar bağlaması ekleniyor sağlar, ardından **Uygula**:
 
   ![İç Metin şablonu komutu](media/source-editor-image15.png)
 

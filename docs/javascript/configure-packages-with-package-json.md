@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: eb0267f668121e4d56f113798b14810f3446b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960614"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692370"
 ---
 # <a name="packagejson-configuration"></a>package.json yapılandırması
 
@@ -24,7 +24,9 @@ Npm paketlerini birçok ile bir Node.js uygulaması geliştiriyorsanız uyarı v
 
 Npm paket sürüm oluşturma sistemi katı kurallara sahiptir. Sürüm biçimi burada aşağıdaki gibidir:
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
 Bir paket 5.2.1 sürümü ile uygulamanızda sahip olduğunuz varsayalım. Ana sürüm 5'tir, alt sürüm 2'dir ve düzeltme eki 1'dir.
 
