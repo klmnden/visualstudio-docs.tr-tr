@@ -6,13 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Yönetim Portalı'nda maksimum atanan abonelik sayısını görüntülemeyi öğrenin
-searchscope: VS Subscription
-ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 402bd55549055ba6584cf89538e9a4f6195bec30
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965449"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784446"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Atanan abonelik sayısını izlemek için en fazla kullanım özelliğini kullanma
 

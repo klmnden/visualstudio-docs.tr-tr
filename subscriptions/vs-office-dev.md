@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 86a4ba86b8da06107436005daba8a4728c2c1fa5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032729"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784545"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 
@@ -34,7 +33,7 @@ Seçili Visual Studio abonelikleri olan aboneler, Office 365 Geliştirici abonel
 6. Ülkenizi seçin.
 7. Şirketinizin adını girin.
 8. Hüküm ve koşulları kabul etmek için onay kutusuna tıklayın.
-9. **İleri**'ye tıklayın.
+9.           **İleri**'ye tıklayın.
    > [!div class="mx-imgBorder"]
    > ![Office 365 geliştirme kaydolma](_img/vs-office-dev/vs-office-dev-signup.png)
 

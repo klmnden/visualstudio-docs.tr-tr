@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbeti avantajı yararlanmak öğrenin.
-searchscope: VS Subscription
-ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 970e7543d8e39b5e8afafb964a99ef568e704ec0
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586971"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784768"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -26,7 +25,7 @@ Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
     > [!div class="mx-imgBorder"]
     > ![Azure Danışmanı Sohbeti kutucuğu](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
-3. Hizmet şu anda hesap, faturalama ve abonelik sorunları için destek dışında yalnızca İngilizce dilinde sunulur bir bildirim görürsünüz.  **Devam**'a tıklayın.
+3. Hizmet şu anda hesap, faturalama ve abonelik sorunları için destek dışında yalnızca İngilizce dilinde sunulur bir bildirim görürsünüz.            **Devam**'a tıklayın.
     > [!div class="mx-imgBorder"]
     > ![Azure Danışmanı Sohbeti sorumluluk reddi](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 

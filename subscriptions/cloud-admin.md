@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/28/2018
 ms.topic: conceptual
 description: Yöneticiler bulut abonelikleri için ayarlama
-searchscope: VS Subscription
-ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d16dd72e9b3866f8d8608ecae26a5a215d2610b
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945828"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783576"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio bulut abonelikleri yöneticileri ayarlama
 

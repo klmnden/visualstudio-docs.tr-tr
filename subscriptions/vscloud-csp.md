@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikleri yönetme konusunda daha fazla bilgi için bulut çözüm sağlayıcıları.
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eed13a25c76cdacdd86923a1d4519d29374d25e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978516"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784905"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -80,8 +79,8 @@ Bu elektronik tabloda gördüğünüz yorumlama şöyledir:
 
 | Ölçüm kategorisi    |   Ad                 |  Birimleri                                |           Bu nedir                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Abonelik                         | Visual Studio Enterprise-aylık abonelik   |
-| Visual Studio     | Professional           |  Abonelik                         | Visual Studio Professional aylık abonelik |
+| Visual Studio     | Enterprise             |  Subscription                         | Visual Studio Enterprise-aylık abonelik   |
+| Visual Studio     | Professional           |  Subscription                         | Visual Studio Professional aylık abonelik |
 
 (İçin belirli bir müşteri) her ayın her Visual Studio aboneliği satın 6 birimi %5 oranında indirim sunuyoruz. İşte bu iki satır her abonelik seçeneği görürsünüz. Bir satır 0 olarak varsayılır; birim 1 ile 5 için taban fiyat yorumlamak "Minimum değeri" gösterir. Bu birimleri 6 ve üzeri için geçerlidir %5 oranında indirim fiyat, bu nedenle diğer satır 5, "en düşük değeri" gösterir.
 

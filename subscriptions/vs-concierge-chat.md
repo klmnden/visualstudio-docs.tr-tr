@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri dahil Concierge Chat Avantajı hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586927"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784618"
 ---
 # <a name="concierge-chat"></a>Concierge Sohbeti
 
@@ -28,7 +27,7 @@ Concierge Chat hizmeti aracılığıyla Yardım alma çok kolaydır.
     > [!div class="mx-imgBorder"]
     > ![Concierge Sohbeti kutucuğu](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. **Devam**'a tıklayın.
+3.           **Devam**'a tıklayın.
 
 4. Sohbet penceresi açılır ve konumunuzu sırasındaki gösteren bir sayacı göreceksiniz.
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SOA Test Professional aboneliği etkinleştirmek öğrenin.
-searchscope: VS Subscription
-ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d8204820c4651de8ea034f531f52efbfb8cd4a18
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032756"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784515"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri de Parasoft Sanallaştırılacak/SOAtest Professional Desktop
 
@@ -44,7 +43,7 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
 
 9. İstediğiniz dili seçin ve tıklayın **Tamam**.
 
-10. Parasoft SOAtest & sanallaştırmak Kurulum Sihirbazı başlar.  **İleri**'ye tıklayın.
+10. Parasoft SOAtest & sanallaştırmak Kurulum Sihirbazı başlar.            **İleri**'ye tıklayın.
     > [!div class="mx-imgBorder"]
     > ![Parasoft avantajı Yüklemeyi Başlat](_img/vs-parasoft/vs-parasoft-start-install.png)
 

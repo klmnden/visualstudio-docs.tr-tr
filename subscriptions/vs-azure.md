@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 12f547e195ed5585a6c29b061ad57f0cf1392c3c
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032211"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784658"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -40,7 +39,7 @@ Visual Studio abonesi olarak, Microsoft Azure, başka bir ücret ödemeden kulla
 |      Visual Studio Enterprise – MCT yazılım ve Hizmetleri      |     100 ABD Doları aylık kredi     |                             Evet                             |
 | Visual Studio Enterprise – MCT yazılım ve geliştirici Hizmetleri |     150 ABD Doları aylık kredi     |                             Evet                             |
 
-* Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
+\* Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP) içerir
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.

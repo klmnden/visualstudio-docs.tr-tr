@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: Abonelik yöneticilerinin Sorumluluklar hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e868b5ef5c3ed88ea0fa502a80795d980b2b656
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945843"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783718"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Yönetici sorumlulukları genel bakış
 Yönetici olarak, kuruluşunuz için Abonelikleri Yönetme olanağına sahip.  Yönetici rolü de abonelikleri lisans koşullarına uygun olarak yönetildiğinden emin olmak için sorumlulukları taşır. Bu makalede, sorumlulukları, avantajları ve sınırlamaları yönetici rolünün özetlenmektedir.

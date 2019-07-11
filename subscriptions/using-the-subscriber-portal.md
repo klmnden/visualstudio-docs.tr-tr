@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/04/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri portalında kullanılabilir avantajları tamamı hakkında bilgi edinin
-searchscope: VS Subscription
-ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809169"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784777"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Abone portalı - kullanarak my.visualstudio.com
 

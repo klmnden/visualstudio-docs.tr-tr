@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Azure DevOps ve Azure için kullanılacak Visual Studio aboneliğiniz için alternatif bir kimlik ekleme
-searchscope: vs subscription
-ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bec00f6e49ce04781ad69a56b30637b375000b6e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428111"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784709"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio aboneleri için kimlikleri
 

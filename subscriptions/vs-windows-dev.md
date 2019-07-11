@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Windows Geliştirici hesabı hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2a70cba2fa8feaaa256f76bd77a29535ca1940ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032744"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784440"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Windows Geliştirici hesabı
 
@@ -40,7 +39,7 @@ Bu işlem için bir "özel" tarayıcı penceresi oluşturmanızı öneririz.  Ö
 7. Yayımcı görünen adınızı oluşturun.  Bu uygulamaları, eklentileri ve Hizmetleri ile ilişkili müşterilerinizin görürsünüz benzersiz adı olacaktır.
 8. Tercih edilen e-posta dili ve ilgili kişi bilgilerini sağlayın, sonra tıklayın **sonraki**.
 9. Parolanızı doğrulamanız istenebilir.  Girip __iade **oturum**.
-10. Kayıt – ödeme sayfasında, promosyon kodu alanına daha önce kopyaladığınız kodu yapıştırın.  Sayfa, göstermek için güncelleştirilir *hiçbir ödenmelidir*.  **İleri**'ye tıklayın.
+10. Kayıt – ödeme sayfasında, promosyon kodu alanına daha önce kopyaladığınız kodu yapıştırın.  Sayfa, göstermek için güncelleştirilir *hiçbir ödenmelidir*.            **İleri**'ye tıklayın.
     > [!div class="mx-imgBorder"]
     > ![Windows Geliştirici teklifi kayıt](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 

@@ -6,13 +6,12 @@ manager: lank
 ms.date: 05/14/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinizde oturum açma
-searchscope: VS Subscription
-ms.openlocfilehash: d010a908d28fd6f7be86cee27fa86f0ac24471d6
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: acfd04dfdbbca78d9f139a507ddb9f34ae8f9475
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805292"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784939"
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Visual Studio aboneliğinizde oturum açma
 
@@ -46,7 +45,7 @@ Visual Studio Dev Essentials aboneliğinizi ilk kez eriştiğinizde, bir Hoş Ge
    > [!NOTE]
    > Bu adres, aldığınız abone Hoş Geldiniz e-postayla da tanımlanır. Hoş Geldiniz e-posta bulma yaşıyorsanız Lütfen gereksiz posta klasörlerinizi denetleyin.
 
-3. **Devam**'a tıklayın.
+3.           **Devam**'a tıklayın.
 4. Kurumsal oturum açma sayfasına yönlendirilirsiniz.
 5. Parolanızı girin.
 6. Tıklayın **oturum açın**
@@ -64,7 +63,7 @@ Visual Studio Dev Essentials aboneliğinizi ilk kez eriştiğinizde, bir Hoş Ge
    > [!NOTE]
    > Bu adres, abonenin Hoş Geldiniz mektubunda da tanımlanır. Hoş Geldiniz mektubunda değil alındıysa Lütfen gereksiz posta klasörlerinizi denetleyin
 
-3. **Devam**'a tıklayın.
+3.           **Devam**'a tıklayın.
 4. Bir karar sayfasına yönlendirilirsiniz.
     - Seçin **iş veya Okul hesabı** aboneliği bir Azure Active Directory (AAD) Kiracı ile ilişkilendirilen bir "İş veya Okul" hesabıyla ilişkiliyse.
     - Seçin **kişisel** abonelik "Kurumsal" e-posta adresiyle ilişkili, ancak bir "Kişisel" Microsoft hesabı (MSA) için de dönüştürüldü.

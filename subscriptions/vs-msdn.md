@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
-searchscope: VS Subscription
-ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 7e0c55c3283fe99bf74ce9c633ff5c31c4fe801b
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032844"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784557"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 

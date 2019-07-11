@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Son kullanıcılarınıza, MPN iş ortakları için Visual Studio abonelikleri atama işlemini.
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50a0784c9a2d71f6af4f4ff2e6b98233db62dab8
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412395"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785112"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan Visual Studio aboneliklerini yönetme
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: db6f9ec6fd37101dbf4353ff5cf6eda3ec4d4323
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031975"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784495"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -53,7 +52,7 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro avantajı iletişim bilgileri](_img/vs-pbi/vs-pbi-contact-cropped.png)
 
-9. Sonraki sayfada, Power BI Pro geliştirici (MSDN) aboneliğiniz bir 0,00 ABD Doları fiyatına sahiptir onaylar.  **İleri**'ye tıklayın.
+9. Sonraki sayfada, Power BI Pro geliştirici (MSDN) aboneliğiniz bir 0,00 ABD Doları fiyatına sahiptir onaylar.            **İleri**'ye tıklayın.
 
 10. Son olarak, bazı ödeme bilgilerini toplayacağız.  Merak etmeyin: hiçbir şey ücret ödemezsiniz.  Fiyat hala 0,00 ABD Doları olduğuna dikkat edin.  Bir kredi kartı, banka hesabı veya fatura ödeme form olarak seçebilirsiniz.  Seçerseniz **fatura**, bu ödeme yöntemini tercih neden sizin için birkaç geri bildirim üzerinde istenebilir.  Lütfen tercih edilen ödeme yönteminiz için istenen bilgileri girin ve tıklatın **sipariş**.
     > [!div class="mx-imgBorder"]

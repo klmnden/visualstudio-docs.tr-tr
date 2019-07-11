@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 07/12/2018
 ms.topic: conceptual
 description: Bilgi nasıl başarılı bir şekilde eklemek için Visual Studio abonelikleri Yönetim Portalı'na taşıdıktan sonra kuruluşunuzun.
-searchscope: VS Subscription
-ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68fe9621f602b9732ad54e94170125c840568ab1
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008268"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784429"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Sonra kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na katılabilirsiniz geçirilir
 

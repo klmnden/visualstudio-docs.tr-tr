@@ -1,17 +1,20 @@
 ---
 title: XAML Tasarımcısı genişletilebilirlik geçiş
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447339"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784484"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML Tasarımcısı genişletilebilirlik geçiş
 
@@ -44,7 +47,7 @@ Yerine *. design.dll* dosya uzantısı, uzantıları kullanarak keşfedilmeyecek
 
 Yüzey yalıtım genişletilebilirlik modeli üzerinde gerçek denetim kitaplıklarına bağımlı uzantıları için izin vermez ve bu nedenle, türleri Denetim Kitaplığı'ndan uzantılarına başvuramaz. Örneğin, *MyLibrary.designtools.dll* bir bağımlılık olmamalıdır *MyLibrary.dll*.
 
-Bu tür bağımlılıkları özniteliği tabloları aracılığıyla türleri için meta verileri kaydedilirken en yaygın. Denetim Kitaplığı başvuran uzantı kodu türleri aracılığıyla doğrudan [typeof](/dotnet/csharp/language-reference/keywords/typeof) dize tabanlı tür adları kullanarak yeni API'ler değiştirilir:
+Bu tür bağımlılıkları özniteliği tabloları aracılığıyla türleri için meta verileri kaydedilirken en yaygın. Denetim Kitaplığı başvuran uzantı kodu türleri aracılığıyla doğrudan [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) Visual Basic'te) dize tabanlı tür adları kullanarak yeni API'ler değiştirilir:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>Özellik sağlayıcıları ve Model API
 
 Özellik sağlayıcıları uzantısı derlemeleri uygulanan ve Visual Studio işlemde yüklü. `FeatureAttribute` özellik sağlayıcısı türleri kullanarak doğrudan başvurmaya devam eder [typeof](/dotnet/csharp/language-reference/keywords/typeof).
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 API yüzey yalıtım genişletilebilirlik API kümesinden kaldırıldı:
@@ -123,7 +157,7 @@ Kullandığınız API'leri `TypeDefinition` yerine <xref:System.Type>:
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* `ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ Kullandığınız API'leri `ModelItem` yerine <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Gibi ilkel türler bilinen `int`, `string`, veya `Thickness` modeli API'si için .NET Framework örnekleri olarak geçirilebilir ve karşılık gelen nesne hedef çalışma zamanı işleminde dönüştürülür. Örneğin:
+Gibi ilkel türler bilinen `Int32`, `String`, veya `Thickness` modeli API'si için .NET Framework örnekleri olarak geçirilebilir ve karşılık gelen nesne hedef çalışma zamanı işleminde dönüştürülür. Örneğin:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>Desteği sınırlı. design.dll uzantıları

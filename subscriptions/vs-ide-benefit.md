@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: fa01d3f9e5ffe12f4fbe7216750f14feaa1052e4
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586930"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784574"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 

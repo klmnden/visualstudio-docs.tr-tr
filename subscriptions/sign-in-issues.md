@@ -6,13 +6,12 @@ manager: lank
 ms.date: 11/07/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri için oturum açarken çıkabilecek sorunlar hakkında bilgi edinin
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008071"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784947"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio abonelikleri için oturum açma sorunları
 Visual Studio aboneliğinizi kullanmak için önce oturum açmanız gerekir.  Aboneliğinize bağlı olarak, bir Microsoft hesabı (MSA) veya bir Azure Active Directory (AAD) kimlik ile ayarlamış olduğunuz.  Bu makalede, aboneliğiniz için oturum açma sırasında karşılaşabileceğiniz sorunları bazıları açıklanmaktadır.

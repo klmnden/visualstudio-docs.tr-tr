@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma başarısız olabilir
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946192"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783682"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -73,7 +72,7 @@ Lütfen mevcut bir abone directory hesabıyla güncelleştirmek için aşağıda
 4. Tıklayın **aşağı ok** arama çubuğundaki.
 5. "E-posta adresi" alanını kullanarak aboneyi arayın.
 6. Sonuç listesinden tıklayın **Soyadı** abonenin.
-7. **Düzenle**‘ye tıklayın.
+7.           **Düzenle**‘ye tıklayın.
 8. İstenen dizine adresine e-posta adresi alanından değiştirin ve **Kaydet**.
 9. Abone, aboneliğini kullanarak sağlandığını bildirim e-posta şablonu aşağıda.
 
@@ -116,7 +115,7 @@ Aboneye abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta al
    - Hoş Geldiniz e-postada alınan e-posta adresi girin Someone@example.com kutusu
    - Parola oluşturma
    - Promosyon ayarlarınızı seçin
-   - **İleri**'ye tıklayın.
+   -           **İleri**'ye tıklayın.
 
 3. Doğrulama adımları tamamlayın ve tıklayın **sonraki**.
 
