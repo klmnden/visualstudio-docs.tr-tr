@@ -39,7 +39,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
    1. Bir test projesi oluşturun.  
   
-        İçinde **yeni proje** iletişim kutusunda **Visual Basic**, **Visual C#**, veya **Visual C++** ve ardından **Test**.  
+        İçinde **yeni proje** iletişim kutusunda **Visual Basic**, **Visual C#** , veya **Visual C++** ve ardından **Test**.  
   
         Seçin **birim testi projesi**.  
   
@@ -76,7 +76,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 2. Bir Test projesi oluşturun.  
   
-   - İçinde **yeni proje** iletişim kutusunda seçin **Visual C#**, **Test** seçip **birim testi projesi**.  
+   - İçinde **yeni proje** iletişim kutusunda seçin **Visual C#** , **Test** seçip **birim testi projesi**.  
   
         ![Yeni kod ve test projeleri](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -124,7 +124,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 7. Altındaki öğeleri seçin **yığın izlemesi** testin başarısız olduğu görmek için.  
   
-   ![Birim Test Gezgini başarısız gösteren test edin. ] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Birim Test Gezgini başarısız gösteren test edin.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
    Bu noktada, test ve değiştirecek ve böylece test başarılı bir saplama oluşturdunuz.  
   
@@ -145,7 +145,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
      Test başarılı olur.  
   
-     ![Birim Test Gezgini'nde testi geçiyor gösteriliyor. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Birim Test Gezgini'nde testi geçiyor gösteriliyor. ](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Giriş aralığını genişletmek için testler ekleme  
   
@@ -287,4 +287,4 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
      Tüm testler hala başarılı.  
   
-     ![Birim Test Gezgini 3 geçen testler gösteriliyor. ] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Birim Test Gezgini 3 geçen testler gösteriliyor. ](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
