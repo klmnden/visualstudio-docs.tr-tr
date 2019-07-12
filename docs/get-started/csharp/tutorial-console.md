@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5497b0a343960e3f9e7e606e45c41f188b2bdcba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971785"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823640"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
@@ -49,7 +49,7 @@ Başlamak için oluşturacağız bir C# uygulama projesi. Proje türü bile herh
 2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
    (Alternatif olarak, basın **Ctrl**+**Shift**+**N**).
 
-3. Sol bölmesinde **yeni proje** iletişim kutusunda **C#** ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı ***hesaplayıcı***.
+3. Sol bölmesinde **yeni proje** iletişim kutusunda **C#** ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)** . Dosya adı ***hesaplayıcı***.
 
    ![Konsol uygulaması (.NET Core) proje şablonunu yeni proje iletişim kutusunda Visual Studio IDE](./media/new-project-csharp-calculator-console-app.png)
 
@@ -57,7 +57,7 @@ Başlamak için oluşturacağız bir C# uygulama projesi. Proje türü bile herh
 
 Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsiniz, ekleyerek **.NET Core çoklu platform geliştirme** iş yükü. İşte nasıl.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>1. seçenek: Yeni Proje iletişim kutusunu kullanın
+#### <a name="option-1-use-the-new-project-dialog-box"></a>1\. seçenek: Yeni Proje iletişim kutusunu kullanın
 
 1. Seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.
 
@@ -67,7 +67,7 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
    ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](./media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>2. seçenek: Araçlar menü çubuğunu kullanın
+#### <a name="option-2-use-the-tools-menu-bar"></a>2\. seçenek: Araçlar menü çubuğunu kullanın
 
 1. / İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçları** > **araçları ve özellikleri Al**.
 
@@ -165,22 +165,22 @@ Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
         {
             static void Main(string[] args)
             {
-                // Declare variables and then initialize to zero
+                // Declare variables and then initialize to zero.
                 int num1 = 0; int num2 = 0;
 
-                // Display title as the C# console calculator app
+                // Display title as the C# console calculator app.
                 Console.WriteLine("Console Calculator in C#\r");
                 Console.WriteLine("------------------------\n");
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.WriteLine("Type a number, and then press Enter");
                 num1 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.WriteLine("Type another number, and then press Enter");
                 num2 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to choose an option
+                // Ask the user to choose an option.
                 Console.WriteLine("Choose an option from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -188,7 +188,7 @@ Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                // Use a switch statement to do the math
+                // Use a switch statement to do the math.
                 switch (Console.ReadLine())
                 {
                     case "a":
@@ -204,7 +204,7 @@ Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
                         Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                         break;
                 }
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press any key to close the Calculator console app...");
                 Console.ReadKey();
             }
@@ -288,7 +288,7 @@ Bu hatayı işlemek üzere kod değiştirelim.
 1. Bunu, aşağıdaki kodla değiştirin:
 
    ```csharp
-            // Ask the user to enter a non-zero divisor until they do so
+            // Ask the user to enter a non-zero divisor until they do so.
                 while (num2 == 0)
                 {
                     Console.WriteLine("Enter a non-zero divisor: ");
@@ -317,9 +317,9 @@ Bu hatayı düzeltmek için size daha önce girdiğiniz kodun düzenlemelisiniz.
 
 #### <a name="revise-the-code"></a>Kodu gözden geçirin
 
-Dayanan yerine `program` tüm kod işlemek için sınıf, biz uygulamamızı iki sınıflara bölün: `calculator` ve `program`.
+Dayanan yerine `program` tüm kod işlemek için sınıf, biz uygulamamızı iki sınıflara bölün: `Calculator` ve `Program`.
 
-`calculator` Sınıfı hesaplama iş toplu işlemek ve `program` sınıfı, kullanıcı arabirimi ve hata yakalama iş işleyecek.
+`Calculator` Sınıfı hesaplama iş toplu işlemek ve `Program` sınıfı, kullanıcı arabirimi ve hata yakalama iş işleyecek.
 
 Haydi başlayalım.
 
@@ -334,16 +334,16 @@ Haydi başlayalım.
 
     ```
 
-1. Ardından, yeni bir ekleme `calculator` sınıfına aşağıdaki gibi:
+1. Ardından, yeni bir ekleme `Calculator` sınıfına aşağıdaki gibi:
 
     ```csharp
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -356,13 +356,13 @@ Haydi başlayalım.
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -372,7 +372,7 @@ Haydi başlayalım.
 
     ```
 
-1. Ardından, yeni bir ekleme `program` sınıfına aşağıdaki gibi:
+1. Ardından, yeni bir ekleme `Program` sınıfına aşağıdaki gibi:
 
     ```csharp
     class Program
@@ -380,18 +380,18 @@ Haydi başlayalım.
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -402,7 +402,7 @@ Haydi başlayalım.
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -413,7 +413,7 @@ Haydi başlayalım.
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -439,11 +439,11 @@ Haydi başlayalım.
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }
@@ -486,9 +486,9 @@ namespace Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -501,13 +501,13 @@ namespace Calculator
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -520,18 +520,18 @@ namespace Calculator
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -542,7 +542,7 @@ namespace Calculator
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -553,7 +553,7 @@ namespace Calculator
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -579,11 +579,11 @@ namespace Calculator
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }

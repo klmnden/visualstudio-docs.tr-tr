@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569686"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825908"
 ---
 # <a name="compare-properties-and-items"></a>Özellikleri ve öğeleri karşılaştırma
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.
@@ -93,15 +93,15 @@ Ancak, bu Yazının tamamını değildir. Bir özelliği, öğe tanımı veya ö
 
 - Bir yapının değerlendirme aşamasında:
 
-    - Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.
+  - Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.
 
-    - Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.
+  - Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.
 
-    - Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.
+  - Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.
 
 - Bir derleme yürütme aşaması sırasında:
 
-    - Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.
+  - Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Hafif etkilerini değerlendirme sırası
 Bir yapının değerlendirme aşamasında, özellik değerlendirmesini öğesi değerlendirme önce gelir. Bununla birlikte, Özellikler öğesi değerlerine bağımlı görünen değerlere sahip olabilir. Aşağıdaki komut dosyası düşünün.

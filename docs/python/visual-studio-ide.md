@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957521"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826163"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE Hoş Geldiniz | Python
 
@@ -27,16 +27,16 @@ Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenle
 Bu görüntü, büyük olasılıkla kullanacağınız birkaç anahtar araç pencereleri ve Python Proje Aç ile Visual Studio gösterir:
 
 - [**Çözüm Gezgini** ](../ide/solutions-and-projects-in-visual-studio.md) (sağ üstte) görüntüleyin, gidin ve kodu dosyalarınızdaki dosyalardan yönetmenize olanak tanır. **Çözüm Gezgini** dosyalarına gruplandırarak kodunuzu düzenleme şeklinizdir yardımcı olabilecek [çözümler ve projeler](/visualstudio/get-started/tutorial-projects-solutions).
-    - Yanı sıra **Çözüm Gezgini** olduğu [ **Python ortamları**](managing-python-environments-in-visual-studio.md), bilgisayarınızda yüklü olan farklı Python yorumlayıcılarını yönettiği yerdir.
+  - Yanı sıra **Çözüm Gezgini** olduğu [ **Python ortamları**](managing-python-environments-in-visual-studio.md), bilgisayarınızda yüklü olan farklı Python yorumlayıcılarını yönettiği yerdir.
 
-    ::: moniker range=">=vs-2019"
-    - Visual Studio'nun proje ve çözüm dosyaları oluşturmadan bir klasör de açık ve çalışma Python kodu kullanabilirsiniz. Daha fazla bilgi için [hızlı başlangıç: Açın ve bir klasörde Python kodunu çalıştırma](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - Visual Studio'nun proje ve çözüm dosyaları oluşturmadan bir klasör de açık ve çalışma Python kodu kullanabilirsiniz. Daha fazla bilgi için [hızlı başlangıç: Açın ve bir klasörde Python kodunu çalıştırma](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - [Düzenleyicisi penceresi](../ide/writing-code-in-the-code-and-text-editor.md) (Merkezi), büyük olasılıkla, zamanınızın çoğunu geçireceksiniz burada dosya içeriğini görüntüler. Burada, [Python kodunu Düzenle](editing-python-code-in-visual-studio.md)içinde kod yapınızı gidin ve hata ayıklama oturumları sırasında kesme noktaları ayarlayın. Python ile ayrıca kodu seçin ve bu kodu çalıştırmak için Ctrl + Enter tuşlarına basın bir [etkileşimli REPL penceresini](python-interactive-repl-in-visual-studio.md).
 
 - [Çıkış penceresine](../ide/reference/output-window.md) (alt Merkezi), burada Visual Studio hata ayıklama ve hata iletileri, uyarılar, yayımlama durum iletilerini ve diğer bildirimleri gönderir. Her ileti kaynağı kendi sekmesi vardır.
-    - A [Python etkileşimli REPL penceresini](python-interactive-repl-in-visual-studio.md) çıkış penceresi olarak aynı alanda görüntülenir.
+  - A [Python etkileşimli REPL penceresini](python-interactive-repl-in-visual-studio.md) çıkış penceresi olarak aynı alanda görüntülenir.
 
 - [Takım Gezgini](/azure/devops/user-guide/work-team-explorer?view=vsts) (sağ alt) sağlar, iş öğelerini izlemek ve kod başkalarıyla paylaşmak gibi sürüm denetimi teknolojileri kullanarak [Git](https://git-scm.com/) ve [Team Foundation sürüm denetimi (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -93,6 +93,10 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
     Visual Studio 2019 ' başlayarak, IntelliSense ve kod için Visual Studio projesi oluşturmak zorunda kalmadan hata ayıklama gibi özelliklerden faydalanmak için Python kodu içeren bir klasörün açabilirsiniz.
 ::: moniker-end
+
+- [Visual Studio’yu kullanarak işbirliği yapma](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share, işbirliğine dayalı bir şekilde düzenleyin ve diğer kullanıcılarla hangi kullandığınız programlama dili veya uygulama türleri oluşturduğunuz bağımsız olarak, gerçek zamanlı hata ayıklama sağlar. 
 
 - [Python etkileşimli REPL](python-interactive-repl-in-visual-studio.md)
 

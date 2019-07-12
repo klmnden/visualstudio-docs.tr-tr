@@ -6,12 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
-ms.openlocfilehash: fa01d3f9e5ffe12f4fbe7216750f14feaa1052e4
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784574"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824651"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 
@@ -78,6 +78,6 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 - İhtiyacınız Visual Studio IDE Yardım, bu kaynaklara göz atın:
-    - Teknik Destek: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Belgeler](/visualstudio/)
+  - Teknik Destek: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Belgeler](/visualstudio/)
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).

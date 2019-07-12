@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692234"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823325"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
 - Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:  
   
-    - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.  
-  
-    - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.  
+  - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.  
+
+  - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.  
   
 - Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.  
   

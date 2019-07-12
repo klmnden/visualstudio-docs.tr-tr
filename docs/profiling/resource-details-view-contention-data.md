@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797761"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825848"
 ---
 # <a name="resource-details-view---contention-data"></a>Kaynak Ayrıntıları Görünümü - Çakışma Verileri
 Kaynak Ayrıntıları görünümü çakışması tarafından seçilen bir kaynak üzerinde kaynaklanan engelleme olayların bir zaman çizelgesi grafiği gösterir. Bir iş parçacığı başka bir iş parçacığının kaynağa erişim kilitlediği için yürütmeyi askıya almak zorunda engelleyen bir olayı oluşur.
@@ -36,9 +36,9 @@ Kaynak Ayrıntıları görünümü çakışması tarafından seçilen bir kaynak
 
 - Aşağıdaki adımlardan birini uygulayın:
 
-    - Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.
+  - Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.
 
-    - Tıklayın **yakınlaştırma sıfırlama** tüm zaman çizelgesinin görünümde göstermek için.
+  - Tıklayın **yakınlaştırma sıfırlama** tüm zaman çizelgesinin görünümde göstermek için.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Bir olayın çağrı yığınını görüntülemek için
 

@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683853"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825418"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.  
   
-     Proje işaretlenmiş **(kullanılamıyor)**.  
+     Proje işaretlenmiş **(kullanılamıyor)** .  
   
-2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.  
+2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >** .  
   
      Proje dosyası Visual Studio XML Düzenleyicisi'nde açılır.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Bütünleştirilmiş kod başvuruları:  
   
-     Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveAssemblyReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `ReferencePath`. Bu öğelerin her biri bir öğe belirtimine sahip olmalıdır (değerini `Include` bir öğenin özniteliğini) içeren başvuru tam yolu. Öğeleri aracılığıyla aşağıdaki yeni meta veriler ek olarak geçirilen girdi öğelerinin tüm meta verilerine sahip olmanız gerekir:  
-  
-    - `CopyLocal`, derlemenin çıktı klasörüne kopyalanıp kopyalanmayacağını belirten true veya false ayarlayın.  
-  
-    - `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.  
-  
-    - `ResolvedFrom`, bunu çözümlenirse "{TargetFrameworkDirectory}" kümesi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dizin.  
+  Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveAssemblyReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `ReferencePath`. Bu öğelerin her biri bir öğe belirtimine sahip olmalıdır (değerini `Include` bir öğenin özniteliğini) içeren başvuru tam yolu. Öğeleri aracılığıyla aşağıdaki yeni meta veriler ek olarak geçirilen girdi öğelerinin tüm meta verilerine sahip olmanız gerekir:  
+
+  - `CopyLocal`, derlemenin çıktı klasörüne kopyalanıp kopyalanmayacağını belirten true veya false ayarlayın.  
+
+  - `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.  
+
+  - `ResolvedFrom`, bunu çözümlenirse "{TargetFrameworkDirectory}" kümesi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dizin.  
   
 - COM başvuruları:  
   

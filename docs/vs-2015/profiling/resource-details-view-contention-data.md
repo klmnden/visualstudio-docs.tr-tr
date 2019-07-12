@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089581"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823607"
 ---
 # <a name="resource-details-view---contention-data"></a>Kaynak Ayrıntıları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Kaynak Ayrıntıları görünümü çakışması tarafından seçilen bir kaynak
   
 - Aşağıdaki adımlardan birini uygulayın:  
   
-    - Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.  
-  
-    - Tıklayın **yakınlaştırma sıfırlama** tüm zaman çizelgesinin görünümde göstermek için.  
-  
+  - Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.  
+
+  - Tıklayın **yakınlaştırma sıfırlama** tüm zaman çizelgesinin görünümde göstermek için.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Bir olayın çağrı yığınını görüntülemek için  
   
 - Zaman Çizelgesi grafikte olay çubuğuna tıklayın.  

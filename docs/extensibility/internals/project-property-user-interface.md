@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86b3ebb0c931cec5dac40a980ba261c236307fe7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f701c1a2e31a52c05f0a7514c9d403522579e45
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328260"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825836"
 ---
 # <a name="project-property-user-interface"></a>Proje Özelliği Kullanıcı Arabirimi
 
@@ -41,11 +41,11 @@ Genişletme işleminin bir **proje özelliği** iletişim kutusunda aşağıdaki
 
 - Aşağıdaki alarak uygun Catıdlerini çeşitli Genişletilebilir nesnelerin temel projenin çalışma zamanında proje alt belirleyebilirsiniz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> değerleri:
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Proje alt Catıdlerini için Proje kapsamını belirlemek için yukarıdaki özelliklerini alır [VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) gelen `VSITEMID typedef`. Proje alt Ayrıca hangi denetlemek isteyebilir **özellik sayfaları** iletişim kutusu sayfaları projesi için görüntülenen yapılandırmaya bağımlı hem bağımsız yapılandırma. Bazı proje alt türleri yerleşik sayfaları kaldırın ve proje alt türü belirli sayfalar eklemek gerekebilir. Bu, yönetilen bir istemci projesi çağrıları etkinleştirmek için <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> yöntemi için şu özellikleri:
 

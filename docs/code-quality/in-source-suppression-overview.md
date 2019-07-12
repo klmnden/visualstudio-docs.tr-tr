@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825833"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821574"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -67,17 +67,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen [kapsamları](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) şunları içerir:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -Bu kapsam ad karşı uyarıları bastırır. Ad alanı içindeki türleri karşı uyarılarını engellemez.
+  - `namespace` -Bu kapsam ad karşı uyarıları bastırır. Ad alanı içindeki türleri karşı uyarılarını engellemez.
 
-   - `namespaceanddescendants` -(Yeni Visual Studio 2019 için) bu kapsamı bir ad alanı ve tüm alt simgeleri uyarıları bastırır. `namespaceanddescendants` Değeri yalnızca Roslyn Çözümleyicileri için geçerlidir ve ikili, FxCop tabanlı statik analiz tarafından göz ardı edilir.
+  - `namespaceanddescendants` -(Yeni Visual Studio 2019 için) bu kapsamı bir ad alanı ve tüm alt simgeleri uyarıları bastırır. `namespaceanddescendants` Değeri yalnızca Roslyn Çözümleyicileri için geçerlidir ve ikili, FxCop tabanlı statik analiz tarafından göz ardı edilir.
 
 - **Hedef** - üzerinde uyarı engellenir hedef belirtmek için kullanılan tanımlayıcı bir. Tam öğe adı içermelidir.
 

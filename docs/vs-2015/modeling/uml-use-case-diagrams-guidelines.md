@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493666"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823835"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML Kullanım durumu diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,13 +115,13 @@ Visual Studio'da çizdiğiniz bir *kullanım örneği diyagramı* kullanan uygul
   
 - Oluşturma **aktörler** kişiler, kuruluşlar, diğer sistemler, yazılım veya sistem veya alt sistem ile etkileşimde bulunan cihazları sınıfları temsil etmek için.  
   
-    - Aktörler ve diğer öğeleri nasıl çizileceğini bilgi edinmek için [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Fiziksel bir kişi veya varlıkları aynı olsa bile farklı her hedef için kümesi aktörler kendi türü veya rolüne göre belirleyin. Bir restoran çalışan bir müşteri bazen olsa bile, Restoran ve müşteri ayrı, birer aktördür.  
+  - Aktörler ve diğer öğeleri nasıl çizileceğini bilgi edinmek için [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Fiziksel bir kişi veya varlıkları aynı olsa bile farklı her hedef için kümesi aktörler kendi türü veya rolüne göre belirleyin. Bir restoran çalışan bir müşteri bazen olsa bile, Restoran ve müşteri ayrı, birer aktördür.  
   
 - Oluşturma **kullanım durumları** sistemiyle elde etmek için her aktör aradığı hedeflerinden her biri için.  
   
-    - Ad ve aktör öğrenmesi, uygulama koşulları yerine sözcükleri kullanım örneklerini tanımlayın.  
+  - Ad ve aktör öğrenmesi, uygulama koşulları yerine sözcükleri kullanım örneklerini tanımlayın.  
   
 - Kullanma **ilişkilendirmeleri** aktörleri kullanım örneklerine bağlanacak.  
   

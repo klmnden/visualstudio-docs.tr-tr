@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981094"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825211"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde basit veri bağlama
 
@@ -47,9 +47,9 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 - Çalışan bir SQL Server 2005 veya SQL Server 2005 olan Express örneğine erişim `AdventureWorksLT` bağlı örnek veritabanı. İndirebileceğiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
+  - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
-    - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
+  - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
@@ -83,9 +83,9 @@ Kullanım **veri kaynakları** penceresinin bir türü belirtilmiş veri kümesi
 
 5. İçinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
 
-6. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **müşteri (SalesLT)**.
+6. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **müşteri (SalesLT)** .
 
-7. **Son**'a tıklayın.
+7.           **Son**'a tıklayın.
 
     *AdventureWorksLTDataSet.xsd* dosya eklendiğinde **Çözüm Gezgini**. Bu dosya, aşağıdakileri tanımlar:
 

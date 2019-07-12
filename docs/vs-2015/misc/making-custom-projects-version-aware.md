@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422735"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825679"
 ---
 # <a name="making-custom-projects-version-aware"></a>Özel projeler sürüm ile uyumlu hale getirme
 Özel proje sisteminizi projeleri Visual Studio birden çok sürümünü yüklemek için bu türdeki izin verebilirsiniz. Bu tür projeleri, Visual Studio'nun bir önceki sürümünde yüklenmesini de engelleyebilirsiniz. Proje Proje Onar, dönüştürme ya da kullanımdan kaldırma gerektiriyor durumunda sonraki bir sürüme kendisini tanımlamak de etkinleştirebilirsiniz.  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - LogMessage işlevi aşağıdaki ErrorLevels sahiptir:  
   
-    - 0, izlemek istediğiniz herhangi bir bilgi içindir.  
-  
-    - 1 için bir uyarıdır.  
-  
-    - bir hata için 2.  
-  
-    - 3 için rapor biçimlendiricidir. Projenizi yükseltildiğinde, sözcük "Dönüştürülen" bir kez oturum ve sözcük yerelleştirmiyorum.  
+  - 0, izlemek istediğiniz herhangi bir bilgi içindir.  
+
+  - 1 için bir uyarıdır.  
+
+  - bir hata için 2.  
+
+  - 3 için rapor biçimlendiricidir. Projenizi yükseltildiğinde, sözcük "Dönüştürülen" bir kez oturum ve sözcük yerelleştirmiyorum.  
   
 - Bir proje herhangi bir onarım gerektirmeyen veya yalnızca proje sistemi bir uyarı veya hata sırasında UpgradeProject_CheckOnly veya UpgradeProjectFlavor_CheckOnly yöntemi oturum açmış yükseltme, Visual Studio günlük dosyası oluşturur.

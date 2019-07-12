@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823863"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 
@@ -52,7 +52,7 @@ Bu bölümde, Visual Studio C++ projenize DGSL gölgelendirici eklemeyi açıkla
 
 2. İçinde **Çözüm Gezgini**, gölgelendirici ekleyin ve ardından istediğiniz C++ projesi için kısayol menüsünü açın **Ekle** > **yeni öğe**.
 
-3. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)**.
+3. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)** .
 
    > [!NOTE]
    > Görmüyorsanız **grafik** kategorisinde **Yeni Öğe Ekle** iletişim ve **görüntü ve 3B model düzenleyicileri** bileşeni yüklü, grafik öğeleri desteklenmez Proje türü için.
@@ -109,17 +109,17 @@ Kullanım **seçin** eklemek, kaldırmak, yeniden konumlandırma, bağlanma ve d
 
 - İşte nasıl:
 
-   - Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.
+  - Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.
 
-   - Grafikten bir düğümü kaldırmak için onu seçin ve tuşuna **Sil**.
+  - Grafikten bir düğümü kaldırmak için onu seçin ve tuşuna **Sil**.
 
-   - Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.
+  - Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.
 
-   - İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.
+  - İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.
 
-   - Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.
+  - Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.
 
-   - Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.
+  - Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.
 
 ### <a name="preview-shaders"></a>Önizleme gölgelendiricileri
 
@@ -168,7 +168,7 @@ Birçok gölgelendirici açısını veya tek yönlü ışık görüntüleme gibi
 
 Uygulamanızda bir gölgelendirici kullanmadan önce DirectX anlayan bir biçimde dışarı gerekir.
 
-Gölgelendiricileri HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarabilirsiniz. HLSL kaynak kodu içeren bir metin dosyasına dışarı bir *.hlsl* dosya adı uzantısı. Gölgelendirici bytecode'una olabilir ya da olan bir ham ikili dosyası dışarı bir *.cso* dosya adı uzantısı veya C++ üst bilgisi (*.h*) bir diziye gölgelendirici bytecode'una kodlar dosya.
+Gölgelendiricileri HLSL kaynak kodu veya derlenmiş gölgelendirici bytecode'una olarak dışarı aktarabilirsiniz. HLSL kaynak kodu içeren bir metin dosyasına dışarı bir *.hlsl* dosya adı uzantısı. Gölgelendirici bytecode'una olabilir ya da olan bir ham ikili dosyası dışarı bir *.cso* dosya adı uzantısı veya C++ üst bilgisi ( *.h*) bir diziye gölgelendirici bytecode'una kodlar dosya.
 
 Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Gölgelendiriciyi dışarı aktarma](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Gölgelendiricileri dışarı aktarma hakkında daha fazla bilgi için bkz. [nas
 |Tümünü seç|**CTRL**+**A**|
 |Geçerli seçimi sil|**Delete**|
 |Geçerli seçimi iptal et|**Kaçış** (**Esc**)|
-|Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> Artı işareti (**+**)|
-|Uzaklaştır|**CTRL**+**fare tekerleği geriye doğru**<br /><br /> Eksi işareti (**-**)|
+|Yakınlaştır|**CTRL**+**fare tekerleği ileriye doğru**<br /><br /> Artı işareti ( **+** )|
+|Uzaklaştır|**CTRL**+**fare tekerleği geriye doğru**<br /><br /> Eksi işareti ( **-** )|
 |Tasarım yüzeyine yukarı kaydır|**Fare tekerleği geriye doğru**<br /><br /> **PageDown**|
 |Tasarım yüzeyine aşağı kaydır|**Fare tekerleği ileriye doğru**<br /><br /> **PageUp**|
 |Tasarım yüzeyine sola kaydır|**Shift**+**fare tekerleği geriye doğru**<br /><br /> **Fare tekerleği sol**<br /><br /> **Shift**+**PageDown**|

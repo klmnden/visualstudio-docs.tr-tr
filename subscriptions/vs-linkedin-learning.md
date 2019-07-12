@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium aboneliği bir parçası olarak dahil LinkedIn Learning Avantajı hakkında bilgi edinin.
-ms.openlocfilehash: 50a8b518866e7756f57513832f5c075b1c86201b
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784584"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824792"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -109,7 +109,7 @@ Y:  Hayır, LinkedIn Learning teklif, yalnızca yeni abonelere sunulmamaktadır.
 
 ## <a name="support-resources"></a>Destek kaynakları
 - LinkedIn Learning yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
-    - Yardım [LinkedIn Learning kullanarak](https://www.linkedin.com/help/learning).
-    - Genel sorular hakkında Yardım [LinkedIn](https://www.linkedin.com/help/linkedin) hesaplarını ve profillerini oluşturma ve ağınızı koruma gibi.
+  - Yardım [LinkedIn Learning kullanarak](https://www.linkedin.com/help/learning).
+  - Genel sorular hakkında Yardım [LinkedIn](https://www.linkedin.com/help/linkedin) hesaplarını ve profillerini oluşturma ve ağınızı koruma gibi.
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

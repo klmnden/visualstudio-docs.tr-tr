@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476589"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824517"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -355,11 +355,11 @@ Bir sınıf diyagramı aşağıdaki önemli özelliklere sahiptir:
 
 - Sınıflar, arayüzler ve numaralandırma gibi türler:
 
-    - A *sınıfı* belirli yapısal veya davranışsal özellikleri paylaşan nesnelerin tanımıdır.
+  - A *sınıfı* belirli yapısal veya davranışsal özellikleri paylaşan nesnelerin tanımıdır.
 
-    - Bir *arabirimi* bir parçası dışarıdan görünen bir nesne davranışını tanımlar.
+  - Bir *arabirimi* bir parçası dışarıdan görünen bir nesne davranışını tanımlar.
 
-    - Bir *numaralandırma* değişmez değerler listesini içeren bir sınıflandırıcıdır.
+  - Bir *numaralandırma* değişmez değerler listesini içeren bir sınıflandırıcıdır.
 
 - *Öznitelikleri* her örneğini açıklayan belirli bir türdeki değerler bir *sınıflandırıcı*. Sınıflandırıcı türler, bileşenler, kullanım örnekleri ve hatta aktörler için genel bir addır.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676717"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821523"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
 
@@ -110,40 +110,40 @@ Kural ihlallerinin bastırmak için birden çok yolu vardır:
 
 - Gelen **Çözümle** menüsü
 
-   Seçin **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır** tüm geçerli ihlal gizlemek için menü çubuğunda. Bu bazen "taban çizgisi oluşturma" adlandırılır.
+  Seçin **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır** tüm geçerli ihlal gizlemek için menü çubuğunda. Bu bazen "taban çizgisi oluşturma" adlandırılır.
 
 - Gelen **Çözüm Gezgini**
 
-   Bir ihlali bastırmak için **Çözüm Gezgini**, kural önem derecesi kümesine **hiçbiri**.
+  Bir ihlali bastırmak için **Çözüm Gezgini**, kural önem derecesi kümesine **hiçbiri**.
 
 - Gelen **kural kümesi Düzenleyicisi**
 
-   Kural kümesi Düzenleyici'den bir ihlali bastırmak için adının yanındaki kutuyu'seçeneğinin işaretini kaldırın veya ayarlayın **eylem** için **hiçbiri**.
+  Kural kümesi Düzenleyici'den bir ihlali bastırmak için adının yanındaki kutuyu'seçeneğinin işaretini kaldırın veya ayarlayın **eylem** için **hiçbiri**.
 
 - Gelen **Kod Düzenleyicisi**
 
-   Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+ **.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
+  Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+ **.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
 
-   ![Hızlı Eylemler menüsünden tanılama Gizle](media/suppress-diagnostic-from-editor.png)
+  ![Hızlı Eylemler menüsünden tanılama Gizle](media/suppress-diagnostic-from-editor.png)
 
 - Gelen **hata listesi**
 
-   Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde Source/In Gizleme dosyası**.
+  Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde Source/In Gizleme dosyası**.
 
-   - Varsa, bastır **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini C# [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#Disable Uyarı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
+  - Varsa, bastır **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini C# [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#Disable Uyarı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
 
-      ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
+    ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
 
-   - Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
+  - Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
 
-      ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
+    ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
 
-   İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
+  İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
 
-   > [!NOTE]
-   > Görmüyorsanız **bastır** menü seçeneğini **Çözüm Gezgini**, ihlalin büyük olasılıkla derleme ve değil Canlı analysis geliyor. **Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Canlı analysis veya IntelliSense, tanılama her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Dışlanacak *derleme* seçiminizden tanılama geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **IntelliSense yalnızca**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
-   >
-   > ![Visual Studio hata listesi kaynak filtresi](media/error-list-filter.png)
+  > [!NOTE]
+  > Görmüyorsanız **bastır** menü seçeneğini **Çözüm Gezgini**, ihlalin büyük olasılıkla derleme ve değil Canlı analysis geliyor. **Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Canlı analysis veya IntelliSense, tanılama her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Dışlanacak *derleme* seçiminizden tanılama geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **IntelliSense yalnızca**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
+  >
+  > ![Visual Studio hata listesi kaynak filtresi](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Komut satırı kullanımı
 

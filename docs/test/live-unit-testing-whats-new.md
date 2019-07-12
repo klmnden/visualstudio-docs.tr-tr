@@ -11,12 +11,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785890"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823764"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Live Unit Testing Visual Studio 2017'deki yenilikler
 
@@ -28,9 +28,9 @@ Visual Studio 2017 sürüm 15.4 ile başlayarak, Live Unit Testing iyileştirmel
 
 - **Geliştirilmiş bulunabilirliği**. Bilmiyorsanız kullanıcılar için Live Unit Testing özelliği yoksa, Visual Studio IDE kullanıcı birim testleri içeren bir çözümü açar ancak Live Unit Testing etkin olduğunda Live Unit Testing bahsetmeleri sarı renkte bir çubuk gösterir. Live Unit Testing hakkında daha fazla bilgi edinmek ve etkinleştirmek için kullanıcı gold çubuğunda görüntülenen bilgileri sağlar. Live Unit Testing Önkoşullar karşılanmadı olduğunda sarı renkli çubuk bilgi de görüntüler. Bu güncelleştirmeler şunlardır:
 
-   - Test bağdaştırıcısı yok.
-   - Eski test bağdaştırıcısı sürümleri yok.
-   - Çözüm tarafından başvurulan NuGet paketlerini geri yüklemeye gereklidir.
+  - Test bağdaştırıcısı yok.
+  - Eski test bağdaştırıcısı sürümleri yok.
+  - Çözüm tarafından başvurulan NuGet paketlerini geri yüklemeye gereklidir.
 
 - **Görev merkezi bildirimleri ile tümleştirme**. Visual Studio IDE artık kullanıcıların kolayca Live Unit Testing etkinleştirildiğinde neler anlatabilmeniz görev merkezi bildiriminde bir Live Unit Testing arka plan işlemleri gösterir. Bu anahtar üzerinde büyük bir çözümde Live Unit Testing başlangıç sorununu giderir. Kapsamı simgeleri göründüğü kadar daha önce birkaç dakika kullanıcılar olup Live Unit Testing gerçekten etkinleştirildi ve olup çalıştığı belirlenemedi. Artık değil!
 
@@ -60,9 +60,9 @@ Bu önemli eklemeler yanı sıra, Live Unit Testing, aşağıdaki geliştirmeler
 
 - Kaynak kodunda hedeflenen test yöntemleri Live Unit Testing hariç tutmak istediğinizi belirtmek için artık şu öznitelikleri kullanabilirsiniz:
 
-   - XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
-   - MSTest için: `[TestCategory("SkipWhenLiveUnitTesting")]`
+  - XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
+  - MSTest için: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

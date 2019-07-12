@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936921"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824204"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 
@@ -102,14 +102,14 @@ Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağ�
 
 İçin sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için bağımlılık diyagramı düzenlemek için aşağıdaki adımları kullanın. Kod yapısını genişletmeden önce iyileştirmek için yeniden düzenleme bazı değişiklikler de göz önünde bulundurabilirsiniz. Bkz: [kod yapısını iyileştirme](#Improving).
 
-|**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|
+|**To**|**Aşağıdaki adımları gerçekleştirin**|
 |-|-|
 |Var olmaması gereken bir bağımlılık Sil|Bağımlılık tıklatın ve sonra basın **Sil**.|
 |Bağımlılık yönünü değiştirme veya kısıtlama|Ayarlama, **yönü** özelliği.|
 |Yeni bağımlılıklar oluşturma|Kullanım **bağımlılık** ve **çift yönlü bağımlılık** araçları.<br /><br /> Çoklu bağımlılıklar çizmek için araca çift tıklayın. İşlemi tamamladığınızda, tıklayın **işaretçi** aracını veya ENTER tuşuna **ESC** anahtarı.|
-|Bir katman ile ilişkili yapıların belirli ad alanlarına bağlı olamayacağını belirtme|Katmanın ad alanlarını yazın **Yasak Namespace bağımlılıkları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|
-|Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|
-|Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın ad türü **gerekli ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|
+|Bir katman ile ilişkili yapıların belirli ad alanlarına bağlı olamayacağını belirtme|Katmanın ad alanlarını yazın **Yasak Namespace bağımlılıkları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|
+|Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|
+|Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın ad türü **gerekli ad alanları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|
 
 ### <a name="Improving"></a> Kod yapısını artırma
 
@@ -141,7 +141,7 @@ Katmanları ve bağımlılıkları tanımlayın veya bunları ekip üyeleriyle t
 
 - Katmanları ve bağımlılıkları renklerini değiştirin.
 
-    - Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.
+  - Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.
 
 ## <a name="Validate"></a> Kodu diyagrama karşı doğrulayın
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401089"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825630"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio, belirli bir sırayla bir dizi dağıtım adımı yürütür. Visual Studio, birçok yerleşik dağıtım adımlarını içerir, ancak kendi oluşturabilirsiniz.
@@ -29,9 +29,9 @@ ms.locfileid: "66401089"
 
 - Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
 
-    - SharePoint çözümlerini yükseltmek için özel bir dağıtım adımı uzantısını tanımlar.
+  - SharePoint çözümlerini yükseltmek için özel bir dağıtım adımı uzantısını tanımlar.
 
-    - Uzantısı için belirli bir projenin yürütülen dağıtım adımları olan yeni bir dağıtım yapılandırması tanımlayan bir proje uzantısı oluşturur. Yeni Dağıtım Yapılandırması, özel dağıtım adımını ve birkaç yerleşik dağıtım adımlarını içerir.
+  - Uzantısı için belirli bir projenin yürütülen dağıtım adımları olan yeni bir dağıtım yapılandırması tanımlayan bir proje uzantısı oluşturur. Yeni Dağıtım Yapılandırması, özel dağıtım adımını ve birkaç yerleşik dağıtım adımlarını içerir.
 
 - Uzantı derlemesini çağıran iki özel SharePoint komutu oluşturun. SharePoint komutları için SharePoint sunucusu nesne modelinde API'lerini kullanmayı uzantısı derlemeler tarafından çağrılan yöntemlerdir. Daha fazla bilgi için [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

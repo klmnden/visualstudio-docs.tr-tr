@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459199"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824621"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Nasıl yapılır: Direct2D veya JavaScript uygulamaları ile kullanmak için doku dışa aktarma
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Nasıl yapılır: Direct2D veya JavaScript uygulamaları ile kullanmak İçin dokuyu dışarı aktarma
 
 Görüntü içeriği ardışık düzeni, Direct2D'in iç işleme kuralları ile uyumlu dokular oluşturabilir. Bu tür dokular Direct2D kullanan uygulamalar ve JavaScript kullanılarak oluşturulan UWP uygulamalarında kullanım için uygundur.
 
@@ -25,11 +25,11 @@ Bu belgede şu faaliyetler gösterilmiştir:
 
 - Direct2D veya JavaScript uygulamasında kullanabileceğiniz bir doku oluşturmak için görüntü içeriği ardışık yapılandırma.
 
-    - Bir blok sıkıştırılmış oluşturmak *.dds* dosya.
+  - Bir blok sıkıştırılmış oluşturmak *.dds* dosya.
 
-    - Ön çarpımlı alfa oluşturmak.
+  - Ön çarpımlı alfa oluşturmak.
 
-    - Mipmap oluşturmayı devre dışı bırakın.
+  - Mipmap oluşturmayı devre dışı bırakın.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D içindeki işleme kuralları
 
@@ -39,11 +39,11 @@ Direct2D bağlamında kullanılan dokular bu Direct2D iç işleme kurallarına u
 
 - Doku sağlanması gereken *.dds* bu blok sıkıştırma biçimlerinden birini kullanarak biçimi:
 
-   - BC1_UNORM sıkıştırma
+  - BC1_UNORM sıkıştırma
 
-   - BC2_UNORM sıkıştırma
+  - BC2_UNORM sıkıştırma
 
-   - BC3_UNORM sıkıştırma
+  - BC3_UNORM sıkıştırma
 
 - Mipmaplar desteklenmiyor.
 
@@ -53,12 +53,12 @@ Direct2D bağlamında kullanılan dokular bu Direct2D iç işleme kurallarına u
 
 2. Doku dosyasını yapılandırarak, böylece görüntü içeriği ardışık düzeni tarafından işlenir. İçinde **Çözüm Gezgini**, yeni oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri** > **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**ve ardından  **Uygulama** düğmesi. **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.
 
-3. Çıktı biçimini blok sıkıştırılmış biçimlerden birine ayarlayın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **sıkıştırma**özelliğini **BC3_UNORM sıkıştırma (/ compress: BC3_UNORM)**. Diğer BC1, BC2 veya BC3 biçimleri, gereksinimlerinize bağlı olarak seçebilirsiniz. Direct2D şu anda BC4, BC5, BC6 veya bc7 dokularını desteklemiyor. Farklı BC biçimleri hakkında daha fazla bilgi için bkz. [Block sıkıştırma (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Çıktı biçimini blok sıkıştırılmış biçimlerden birine ayarlayın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **sıkıştırma**özelliğini **BC3_UNORM sıkıştırma (/ compress: BC3_UNORM)** . Diğer BC1, BC2 veya BC3 biçimleri, gereksinimlerinize bağlı olarak seçebilirsiniz. Direct2D şu anda BC4, BC5, BC6 veya bc7 dokularını desteklemiyor. Farklı BC biçimleri hakkında daha fazla bilgi için bkz. [Block sıkıştırma (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
    > Belirtilen sıkıştırma biçimi, görüntü içeriği ardışık düzeni tarafından üretilen dosyanın biçimini belirler. Bu farklıdır **biçimi** görüntü kaynak görüntü dosyasının biçimini diskte depolanan gibi belirleyen Düzenleyicisi'nde kaynak görüntü özelliği — diğer bir deyişle, *çalışma biçimi*. Genellikle, sıkıştırılmış bir çalışma biçimi istemezsiniz.
 
-4. Ön çarpımlı alfa kullanan çıktı oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Dönüştür Ön çarpımlı alfa biçimine** özelliğini **Evet (/ generatepremultipliedalpha)**.
+4. Ön çarpımlı alfa kullanan çıktı oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Dönüştür Ön çarpımlı alfa biçimine** özelliğini **Evet (/ generatepremultipliedalpha)** .
 
 5. Mipmaps oluşturmak değil, görüntü içeriği ardışık düzeni yapılandırın. Üzerinde **yapılandırma özellikleri** > **görüntü içeriği ardışık düzeni** > **genel** sayfasında **Mipsüret** özelliğini **Hayır**.
 

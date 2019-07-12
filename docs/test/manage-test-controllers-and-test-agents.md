@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788758"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824235"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -186,25 +186,25 @@ Visual Studio için test ayarlarınıza uygulamanız için roller eklediğinizde
 
 - Testlerin çalıştırılması gereken rol için kullanılabilen hiçbir aracı yoktur. Testleriniz çalıştırılamaz. Aşağıdaki eylemlerden birini gerçekleştirin ve sonra testlerinizi yeniden çalıştırın:
 
-    - Bir aracının bu rol testleri çalıştırmak kullanılabilir olmasını bekleyebilirsiniz.
+  - Bir aracının bu rol testleri çalıştırmak kullanılabilir olmasını bekleyebilirsiniz.
 
-    - Çevrimdışı aracılar varsa, bu rol için kullanılabilir, böylece kullanılabilir aracı yeniden başlatabilirsiniz.
+  - Çevrimdışı aracılar varsa, bu rol için kullanılabilir, böylece kullanılabilir aracı yeniden başlatabilirsiniz.
 
-    - Bu rol için doğru aracı özellikleriyle başka bir aracı için test denetleyicisi ekleyebilirsiniz.
+  - Bu rol için doğru aracı özellikleriyle başka bir aracı için test denetleyicisi ekleyebilirsiniz.
 
-    - Test ayarlarını kullanmak istediğiniz diğer aracıları etkinleştirmek üzere bu rol için aracı özelliklerini değiştirebilirsiniz.
+  - Test ayarlarını kullanmak istediğiniz diğer aracıları etkinleştirmek üzere bu rol için aracı özelliklerini değiştirebilirsiniz.
 
 - Tanılama veri bağdaştırıcılarını çalıştıran bir veya daha fazla rol için kullanılabilir aracı yok. Testleriniz çalıştırılabilir, ancak tanılama veri bağdaştırıcısı çalıştırılamaz. Testlerinizi tanılama veri bağdaştırıcısı olmadan çalıştırabilir veya aşağıdaki eylemlerden birini gerçekleştirin ve testlerinizi yeniden çalıştırın:
 
-    - Bir aracının bu rol için kullanılabilir olmasını bekleyebilirsiniz.
+  - Bir aracının bu rol için kullanılabilir olmasını bekleyebilirsiniz.
 
-    - Çevrimdışı aracılar varsa, bu rol için kullanılabilen, Online'dan için aracı durumunu değiştirme **Test denetleyicisini Yönet** üzerinde **Test** menüsü. Ayrıca, denetleyiciden bağlantısı kesilmişse aracıyı yeniden başlatmanız gerekebilir.
+  - Çevrimdışı aracılar varsa, bu rol için kullanılabilen, Online'dan için aracı durumunu değiştirme **Test denetleyicisini Yönet** üzerinde **Test** menüsü. Ayrıca, denetleyiciden bağlantısı kesilmişse aracıyı yeniden başlatmanız gerekebilir.
 
-    - Bu test için ihtiyacınız olabilecek aracılarının testleri çalıştırmakla meşgul olmadığından emin olun. Tüm aracıların durumunu kontrol edebilirsiniz **Test denetleyicisini Yönet** üzerinde **Test** menüsü.
+  - Bu test için ihtiyacınız olabilecek aracılarının testleri çalıştırmakla meşgul olmadığından emin olun. Tüm aracıların durumunu kontrol edebilirsiniz **Test denetleyicisini Yönet** üzerinde **Test** menüsü.
 
-    - Test denetleyicisi rolü için doğru aracı özellikleriyle başka bir aracı ekleyebilirsiniz.
+  - Test denetleyicisi rolü için doğru aracı özellikleriyle başka bir aracı ekleyebilirsiniz.
 
-    - Kullanmak istediğiniz diğer aracıları etkinleştirmek üzere test ayarları rolünde için aracı özelliklerini değiştirebilirsiniz.
+  - Kullanmak istediğiniz diğer aracıları etkinleştirmek üzere test ayarları rolünde için aracı özelliklerini değiştirebilirsiniz.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Gecikmeli İmzalanmış Derlemelerden Test Yükleme
 

@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439927"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826257"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vsteca
   
 - Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
   
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod dosya sisteminde yer alıyor.  
-  
-    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod, bir IIS Web sitesinde yer alıyor.  
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod dosya sisteminde yer alıyor.  
+
+  - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod, bir IIS Web sitesinde yer alıyor.  
   
 - Uzaktan, içinde hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir istemci bilgisayarda çalışan ve bir uzak sunucu bilgisayarda çalışan bir Web uygulaması hata ayıklamasına.  
   

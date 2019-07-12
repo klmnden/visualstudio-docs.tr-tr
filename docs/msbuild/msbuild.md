@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437868"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823497"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmaya yönelik bir platformdur. MSBuild olarak da bilinen olduğundan, bu altyapı, yapı platformunu nasıl işler ve yazılım yapıları denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio'ya bağımlı değildir. Çağırarak *msbuild.exe* proje veya çözüm dosya düzenlemek ve Visual Studio'nun yüklü olmayan ortamlarda ürünler oluşturun.
 
- Visual Studio, yönetilen projeleri yüklemek ve derlemek için MSBuild kullanır. Visual Studio'daki proje dosyaları (*.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde yürüten MSBuild XML kodunu içerir. Visual Studio projeleri gerekli tüm ayarları içeri aktarmak ve işlemleri tipik geliştirme işleri için derleme, ancak genişletebilir ve bunları Visual Studio içinde veya bir XML düzenleyicisini kullanarak değiştirin.
+ Visual Studio, yönetilen projeleri yüklemek ve derlemek için MSBuild kullanır. Visual Studio'daki proje dosyaları ( *.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde yürüten MSBuild XML kodunu içerir. Visual Studio projeleri gerekli tüm ayarları içeri aktarmak ve işlemleri tipik geliştirme işleri için derleme, ancak genişletebilir ve bunları Visual Studio içinde veya bir XML düzenleyicisini kullanarak değiştirin.
 
  C++ için MSBuild hakkında bilgi için bkz: [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -35,13 +35,13 @@ ms.locfileid: "63437868"
 
 - Derleme sistemini değiştirmek istiyorsunuz. Örneğin, aşağıdaki eylemleri etkinleştirmek isteyebilirsiniz:
 
-    - Derleyiciye ulaşmadan önce dosyaları ön işlemden geçirin.
+  - Derleyiciye ulaşmadan önce dosyaları ön işlemden geçirin.
 
-    - Yapı çıktılarını farklı bir konuma kopyalayın.
+  - Yapı çıktılarını farklı bir konuma kopyalayın.
 
-    - Yapı çıktılarından sıkıştırılmış dosyalar oluşturun.
+  - Yapı çıktılarından sıkıştırılmış dosyalar oluşturun.
 
-    - Bir sonradan işleme adımı yapın. Örneğin, bir derleme farklı bir sürüm ile damgalamak isteyebilirsiniz.
+  - Bir sonradan işleme adımı yapın. Örneğin, bir derleme farklı bir sürüm ile damgalamak isteyebilirsiniz.
 
 Visual Studio IDE'de kod yazabilir buna karşın derlemeleri Msbuild'i kullanarak Çalıştır. Başka bir alternatif olarak IDE içindeki kodu geliştirme bilgisayarında oluşturabilirsiniz, ancak birden çok geliştiriciden tümleştirilen kodu oluşturmak için MSBuild komut satırını kullanın.
 

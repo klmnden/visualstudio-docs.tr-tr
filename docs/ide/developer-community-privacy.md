@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978412"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823366"
 ---
 # <a name="developer-community-data-privacy"></a>Geliştirici Topluluğu veri gizliliği
 
@@ -64,24 +64,24 @@ Varsa **sorun bildir** başlatılan bir veya daha fazla aşağıdaki veri türle
 
 - Varsa web hata ayıklayıcı günlük dosyaları:
 
-   - *%Temp%\vscode-Chrome-Debug.txt*
+  - *%Temp%\vscode-Chrome-Debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%Temp%\vscode-Edge-Debug.txt*
+  - *%Temp%\vscode-Edge-Debug.txt*
 
 - Bir ekran dahil seçeneğini belirlerseniz,
 
 - Veri içeren bir kayıt eklemek isterseniz kaydı:
 
-   - Sorunu yeniden oluşturma adımları
+  - Sorunu yeniden oluşturma adımları
 
-   - ETL izleme dosyası
+  - ETL izleme dosyası
 
-   - Döküm dosyası
+  - Döküm dosyası
 
-    > [!NOTE]
-    > Raporu göndermeden önce göndermek istemediğiniz veri kaydını silebilirsiniz.
+  > [!NOTE]
+  > Raporu göndermeden önce göndermek istemediğiniz veri kaydını silebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

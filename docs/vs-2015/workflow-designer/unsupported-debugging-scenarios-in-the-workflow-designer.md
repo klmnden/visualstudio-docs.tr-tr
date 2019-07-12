@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858183"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825229"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>İş Akışı Tasarımcısında desteklenmeyen hata ayıklama senaryoları
 İş Akışı Tasarımcısı'nda [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] birçok yeni özellikler eklenmiştir, ancak yine de desteklemediği hata ayıklama bazı senaryolar verilmiştir. Bu belge, iş akışı Tasarımcısı ile hata ayıklama senaryoları desteklenmeyen ayrıntıları.  
@@ -41,16 +41,16 @@ ms.locfileid: "62858183"
   
 - Kesme noktası penceresi ya da kısayol menüsünde aşağıdaki sütunları veya seçenekler iş akışı hata ayıklama için desteklemez:  
   
-    - Koşul  
-  
-    - İsabet sayısı  
-  
-    - İsabet edildiğinde  
-  
-    - İşlev  
-  
-    - Veri  
-  
-    - İşlem  
-  
-    - Ayrıştırma için Git
+  - Koşul  
+
+  - İsabet sayısı  
+
+  - İsabet edildiğinde  
+
+  - İşlev  
+
+  - Veri  
+
+  - İşlem  
+
+  - Ayrıştırma için Git

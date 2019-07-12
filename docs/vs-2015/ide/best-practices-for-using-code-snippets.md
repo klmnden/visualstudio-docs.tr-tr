@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 75c1e08125e67dc5a76d2e62d22f010abd22f418
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685663"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823429"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygula
   
 - Tüm indirilen kod parçacığı dosyaları Not Defteri veya Visual Studio XML düzenleyicisinde açın ve yüklemeden önce dikkatle gözden geçirin. Aşağıdaki sorunları arayın:  
   
-    - Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.  
-  
-    - Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesinin URL'leri içerebilir.  
-  
-    - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.  
+  - Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.  
+
+  - Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesinin URL'leri içerebilir.  
+
+  - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Basic IntelliSense kod parçacıkları](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   

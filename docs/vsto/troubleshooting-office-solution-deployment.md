@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694988"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821306"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office çözümü dağıtımında sorunlarını giderme
   Bu konuda, Office çözümleri dağıtırken karşılaşabileceğiniz genel sorunları nasıl çözeceğinizi hakkında bilgi içerir.
@@ -73,9 +73,12 @@ ms.locfileid: "65694988"
 
 2. Üzerinde **uygulama** sayfasında **derleme bilgileri**.
 
-3. İlk **derleme sürümü** kutusunda, bir yıldız işareti girin (\*) ve ardından **Tamam** düğmesi.
+3. Üçüncü alanda, düzeltme numarası kümesi **derleme sürümü**, için joker (\*). Örneğin, "1.0. *".  Ardından **Tamam** düğmesi.
 
    Derleme sürümü değiştirdikten sonra derlemeyi bir katı adla imzalamak devam edebilirsiniz ve Fusion özelleştirme en son sürümünü yükler.
+
+ [!NOTE]
+> Derleme sürümü bir yapı hatası joker karakterler kullanarak çalışırsanız, Visual Studio 2017 ile başlangıç meydana gelir.  Joker karakter derleme sürümü MSBuild belirleyici özellik kesintiye uğratacağını olmasıdır. Joker karakter derleme sürümü kaldırın veya gerekircilik devre dışı bırakmak üzere yönlendirilirsiniz.  Bilgi edinmek için belirleyici özellik hakkında daha fazla bakın: [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md) ve [derlemenizi özelleştirme](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI US-ASCII olmayan karakterler içeriyorsa yüklemesi başarısız olur.
  Yolu, HTTP/HTTPS/FTP konumu için bir Office çözümü yayımladığınızda, US-ASCII olmayan Unicode karakterlerini sahip olamaz. Bu tür karakterler, Kurulum programına tutarsız davranışa neden olabilir. US-ASCII karakterlerini, yükleme yolu için kullanın.

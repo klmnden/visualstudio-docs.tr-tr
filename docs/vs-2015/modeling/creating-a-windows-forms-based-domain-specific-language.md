@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433343"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825587"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 - `UI` Projesini içeren bir çalışma örneği DSL için bağlı bir form denetimi. Ancak, DSL tanımını değiştiğinde, çalışmaz. `UI` Proje içerir:  
 
-    - Adlı bir Windows Forms sınıf `ModelViewControl`.  
+  - Adlı bir Windows Forms sınıf `ModelViewControl`.  
 
-    - Adlı bir dosya `DataBinding.cs` ek kısmi bir tanımını içeren `ModelViewControl`. İçeriği görmek için **Çözüm Gezgini**dosyası için kısayol menüsünü açın ve seçin **kodu görüntüle**.  
+  - Adlı bir dosya `DataBinding.cs` ek kısmi bir tanımını içeren `ModelViewControl`. İçeriği görmek için **Çözüm Gezgini**dosyası için kısayol menüsünü açın ve seçin **kodu görüntüle**.  
 
 ### <a name="about-the-ui-project"></a>UI projesi hakkında  
  DSL tanım dosyası kendi DSL tanımlamak için güncelleştirdiğinizde, bağlantı denetimi güncellemek zorunda kalırsınız `UI` DSL'nizi görüntülemek için proje. Farklı `Dsl` ve `DslPackage` projeleri, örnek `UI` gelen proje oluşturulmuyor `DslDefinitionl.dsl`. İsterseniz, bu izlenecek yolda kapsamında olmayan ancak kodunu oluşturmak için .tt dosyaları ekleyebilirsiniz.  
@@ -241,7 +241,7 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 1. FarmControl.cs Tasarım görünümünde, ad, boyut veya IsOrganic gibi basit bir alan seçin.  
 
-2. Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)**.  
+2. Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)** .  
 
      İçinde **biçimlendirme ve Gelişmiş bağlama** iletişim altında **veri kaynağı güncelleştirme modu**, seçin **OnPropertyChanged**.  
 

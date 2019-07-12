@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Parasoft Sanallaştırılacak/SOA Test Professional aboneliği etkinleştirmek öğrenin.
-ms.openlocfilehash: d8204820c4651de8ea034f531f52efbfb8cd4a18
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784515"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824636"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri de Parasoft Sanallaştırılacak/SOAtest Professional Desktop
 
@@ -85,7 +85,7 @@ Daha önce ve daha sık test edin.  Benzetimini gerçekleştirmek ve gelişen ku
 
 ## <a name="support-resources"></a>Destek kaynakları
 - Parasoft ürünleri yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
-    - Teknik Destek:  https://www.parasoft.com/support/
-    - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/
+  - Teknik Destek:  https://www.parasoft.com/support/
+  - Parasoft Kaynak Merkezi:  https://www.parasoft.com/resources/
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

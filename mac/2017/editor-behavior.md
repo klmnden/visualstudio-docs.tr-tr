@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4a34076d06bfceb741b987377487a97291e8f726
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 042f7c74057de9a00ae59d5e08a77100c5f30e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931571"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824385"
 ---
 # <a name="editor-behavior"></a>Düzenleyici Davranışı
 
@@ -22,9 +22,9 @@ Düzenleyici davranışları yazılmadan olarak biçimlendirilmesi için kod izi
 * Üzerinde halindeyken kod biçimlendirme gibi noktalı virgül veya ayarlanan biçimlendirme tercihleri öykünecek küme ayraçları karakter basarsa tetiklenir.
 * Dosyayı, istediğiniz gibi kod yazılmasını sağlar ve IDE mevcut Tercihler tarafından belirlenen kod biçimlendirme sorumlu bırakır kaydedilirken biçimlendirmek seçebilirsiniz.
 * Girinti, yok, otomatik olarak ayarlanmış olması veya akıllı. Bunlar, aşağıdakileri yapın:
-   * Sonraki satır başlangıcına kadar hiçbiri - ayarlar giriş işaretini
-   * Auto - giriş işaretini bir sonraki satırında aynı sütuna ayarlar
-   * Akıllı - girintileri koduna göre aşağıdaki satırda
+  * Sonraki satır başlangıcına kadar hiçbiri - ayarlar giriş işaretini
+  * Auto - giriş işaretini bir sonraki satırında aynı sütuna ayarlar
+  * Akıllı - girintileri koduna göre aşağıdaki satırda
 * Sözcük bölme davranışı işletim sistemleri arasında farklılık gösterir ve gezinti amacıyla, metin düzenleyici burada sözcükler başlayamaz veya bitemez bilmek ister. Biçimlendirme UNIX ya da Windows için ayarlanabilir.
 
 Ayrıca, XML, CSS, HTML ve JSON için biçimlendirme kurallarını da ayarlayabilirsiniz.

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684383"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823456"
 ---
 # <a name="using-saved-intellitrace-data"></a>Kayıtlı IntelliTrace verilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
   
 - .İTrace dosyasını bir Team Foundation Server iş öğesine iliştirildiyse sonucu iş öğesi bu adımları izleyin:  
   
-    - Altında **tüm bağlantıları**, .iTrace dosyasını bulun. Dosyayı açın.  
-  
-         \- veya -  
-  
-    - Altında **yineleme adımları**, seçin **IntelliTrace** bağlantı.  
+  - Altında **tüm bağlantıları**, .iTrace dosyasını bulun. Dosyayı açın.  
+
+        \- or -  
+
+  - Altında **yineleme adımları**, seçin **IntelliTrace** bağlantı.  
   
 > [!TIP]
 > Hata ayıklama sırasında IntelliTrace dosyasını kapattıysanız, kolayca yeniden açabilirsiniz. Git **hata ayıklama** menüsünde seçin **IntelliTrace**, **günlük özetini göster**. Ayrıca seçebilirsiniz **günlük özetini göster** içinde **IntelliTrace** penceresi. Yalnızca IntelliTrace ile hata ayıklama sırasında bu kullanılabilir.  
@@ -85,7 +85,7 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
   
 - Verileri sıralamak için sütun başlığını seçin.  
   
-- Filtre verileri için arama kutusunu kullanın. Düz metin arama zaman sütunu dışındaki tüm sütunlarda çalışır. Sütun başına bir filtre ile ayrıca aramaları belirli bir sütuna filtreleyebilirsiniz. Sütun adı boşluk içermeyen, iki nokta (**:**) ve arama değeri. Noktalı virgül ile izleyin (**;**) başka bir sütun ve arama değeri eklemek için.  
+- Filtre verileri için arama kutusunu kullanın. Düz metin arama zaman sütunu dışındaki tüm sütunlarda çalışır. Sütun başına bir filtre ile ayrıca aramaları belirli bir sütuna filtreleyebilirsiniz. Sütun adı boşluk içermeyen, iki nokta ( **:** ) ve arama değeri. Noktalı virgül ile izleyin ( **;** ) başka bir sütun ve arama değeri eklemek için.  
   
      Örneğin, bulunacak Word'ün performans olayları "içinde yavaş" **açıklama** sütun, türü:  
   

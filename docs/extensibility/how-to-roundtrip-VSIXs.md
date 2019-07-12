@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324895"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826036"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
 
@@ -57,8 +57,8 @@ Projeniz varsa bir *project.json* dosyası:
 * Başvuruları Not *project.json*.
 * Gelen **Çözüm Gezgini**, silme *project.json* proje dosyası. Bu siler *project.json* dosya ve projeden kaldırır.
 * NuGet başvuruları projeye geri ekleyin:
-    * Sağ **çözüm** ve **çözüm için NuGet paketlerini Yönet**.
-    * Visual Studio otomatik olarak oluşturur *packages.config* dosyayı.
+  * Sağ **çözüm** ve **çözüm için NuGet paketlerini Yönet**.
+  * Visual Studio otomatik olarak oluşturur *packages.config* dosyayı.
 
 > [!NOTE]
 > Projenizi EnvDTE paketler içeriyorsa, bunlar sağ tıklanarak eklenmesi gerekebilir **başvuruları** seçerek **Başvurusu Ekle** ve uygun başvurusu ekleniyor. NuGet paketlerini kullanarak projenizi çalışılırken hatalar oluşturabilir.

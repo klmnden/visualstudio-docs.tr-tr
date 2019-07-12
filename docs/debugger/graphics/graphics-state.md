@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388623"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823765"
 ---
 # <a name="graphics-state"></a>Grafik Durumu
 Visual Studio grafik tanılama durumu penceresinde bir çizim çağrısı gibi geçerli bir Olay sırasındaki etkin olan grafik durumu anlamanıza yardımcı olur.
@@ -36,11 +36,11 @@ Visual Studio grafik tanılama durumu penceresinde bir çizim çağrısı gibi g
 
 - Titlebar hemen sol üst kısımdaki durum Penceresi'ni kullanmak istediğiniz durum görünümü stiline karşılık gelen düğmeyi seçin.
 
-    - **API giriş durumu görünümünü göster**
+  - **API giriş durumu görünümünü göster**
 
-    - **Mantıksal durumu görünümünü göster**
+  - **Mantıksal durumu görünümünü göster**
 
-    - **Pinned durumu görünümünü göster**
+  - **Pinned durumu görünümünü göster**
 
 > [!IMPORTANT]
 > Durumda sabitleme gerekir **Göster API giriş durumu** veya **Göster mantıksal durumlarına** görüntülenmesi için görünümleri **durum görünümü göster sabitlenmiş**.

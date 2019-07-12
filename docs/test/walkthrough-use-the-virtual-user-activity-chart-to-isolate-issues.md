@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976212"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825768"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>İzlenecek yol: Sorunları yalıtmak için sanal kullanıcı aktivite Grafiği'ni kullanma
 
@@ -30,9 +30,9 @@ Sanal kullanıcı aktivite grafiği yük testi ile ilişkili olan sanal kullanı
 
 - Bu yordamları tamamlayın:
 
-    - [Bir web performans testini kaydetme ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+  - [Bir web performans testini kaydetme ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    - [Bir yük testi oluşturma ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Bir yük testi oluşturma ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Önceki İzlenecek içinde oluşturulmuş ColorWebApp çözümünü açın
 
@@ -69,7 +69,7 @@ Yük testinizi çalıştırın ve sanal kullanıcı etkinliği verilerini toplan
 
 3. İçinde **zaman dönemini Yakınlaştır** aracı aşağıdaki **sanal kullanıcı aktivite grafiği**sol ayarlayın ve her ikisi de kadar doğru kaydırıcıları eşik ihlali simgesine kapatın. Bu içindeki zaman ölçeğini değiştirir **sanal kullanıcı aktivite grafiği**
 
-4. İçinde **ayrıntı göstergesi**, onay kutusunu seçin **(hataları vurgula)**. Eşik ihlali nedeniyle sanal kullanıcı vurgulandığından emin olun.
+4. İçinde **ayrıntı göstergesi**, onay kutusunu seçin **(hataları vurgula)** . Eşik ihlali nedeniyle sanal kullanıcı vurgulandığından emin olun.
 
 5. İçinde **sonuçlarını filtreleme** panelinde, onay kutularını temizleyin **başarılı sonuçları göster** ve **HTTP hatası** ancak **ValidationRuleError**onay kutusu seçili.
 

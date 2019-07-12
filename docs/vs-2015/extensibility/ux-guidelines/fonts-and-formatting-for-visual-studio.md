@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075824"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824063"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Değiştir `Microsoft.VisualStudio.Shell.11.0` MPF dll geçerli sürümüyle.)
 
- İletişim kutusunu görüntülemek için çağrı "**ShowModal()**" sınıfındaki **ShowDialog()**. **ShowModal()** Kabuğu'nda doğru kalıcı duruma ayarlar, iletişim kutusunun üst penceresine ve benzeri ortalanır sağlar.
+ İletişim kutusunu görüntülemek için çağrı "**ShowModal()** " sınıfındaki **ShowDialog()** . **ShowModal()** Kabuğu'nda doğru kalıcı duruma ayarlar, iletişim kutusunun üst penceresine ve benzeri ortalanır sağlar.
 
  Kod aşağıdaki gibidir:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Daha büyük başlıklar (ortam yazı tipi veya daha fazla %155 x), bu amaçlar için renkli:
 
-    - Visual Studio UI imzası Visual geçirmeye itraz et sağlamak için
+  - Visual Studio UI imzası Visual geçirmeye itraz et sağlamak için
 
-    - Dikkat çekmek için belirli bir alana
+  - Dikkat çekmek için belirli bir alana
 
-    - Standart koyu gri/siyah ortam metin renkten Tahliye sunmak için
+  - Standart koyu gri/siyah ortam metin renkten Tahliye sunmak için
 
 - Mevcut Visual Studio markası renkleri, öncelikli olarak ana mor #FF68217A başlıklarının rengi faydalanın.
 

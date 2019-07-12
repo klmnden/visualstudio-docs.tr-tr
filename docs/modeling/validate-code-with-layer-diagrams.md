@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971361"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824535"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -66,8 +66,8 @@ Bağımlılık doğrulama, gerçek zamanlı olarak gerçekleşir ve hataları g�
 
 * Canlı bağımlılık doğrulama kullanırken tam çözüm analizini etkinleştirmek için görüntülenen sarı renkli çubuk seçeneklerini açık **hata listesi**.
 
-   - Çözümünüzdeki tüm mimari sorunları görmeniz değil ilgileniyorsanız, kalıcı olarak sarı renkli çubuk yok sayabilirsiniz.
-   - Tam çözüm analizini etkinleştirme, analiz düzenlenmekte olan dosyalar için gerçekleştirilir.
+  - Çözümünüzdeki tüm mimari sorunları görmeniz değil ilgileniyorsanız, kalıcı olarak sarı renkli çubuk yok sayabilirsiniz.
+  - Tam çözüm analizini etkinleştirme, analiz düzenlenmekte olan dosyalar için gerçekleştirilir.
 
 * Canlı doğrulamasını etkinleştirmek için projeleri yükseltme yaparken, bir iletişim kutusu dönüştürme işleminin ilerleme durumunu gösterir.
 
@@ -162,7 +162,7 @@ Geliştirme işlemi sırasında, doğrulama esnasında bildirilen çakışmalar�
 
 Doğrulama hatalarını yönetmek için bu görevleri kullanın **hata listesi** penceresi:
 
-|**Alıcı**|**Aşağıdaki adımları izleyin**|
+|**To**|**Aşağıdaki adımları izleyin**|
 |-|-|
 |Doğrulama sırasında seçili hataları gizleme|Bir veya birden çok seçili hataya sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **Hataları Gizle**.<br /><br /> Gizlenen hatalar üstü çizili biçimde görünür. Doğrulamayı daha sonra çalıştırdığınızda bu hatalar görünmez.<br /><br /> Gizlenen hatalar bir karşılık gelen bağımlılık diyagramı dosyası için .gizlenenler dosyasında izlenir.|
 |Seçili hataların gizlenmesini durdurma|Seçili gizlenen hata veya hatalara sağ tıklayın, fareyle **doğrulama hatalarını Yönet**ve ardından **hataları gizlemeyi Durdur**.<br /><br /> Doğrulamayı daha sonra çalıştırdığınızda seçili gizlenen hatalar görünecektir.|

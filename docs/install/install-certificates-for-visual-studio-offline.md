@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974741"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826279"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme
 
@@ -32,7 +32,7 @@ Visual Studio Kurulum altyapısı güvenilen yalnızca içeriği yükler. Bunu A
 
 Yükleme veya çevrimdışı bir ortamda sertifikaları güncelleştirme için üç seçenek vardır.
 
-### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>1. seçenek - sertifikaları bir düzen klasöründen el ile yükleyin
+### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>1\. seçenek - sertifikaları bir düzen klasöründen el ile yükleyin
 
 ::: moniker range="vs-2017"
 
@@ -48,7 +48,7 @@ Bir ağ düzeni oluşturduğunuzda, gerekli sertifikaları Sertifikalar klasör�
 
 ::: moniker-end
 
-### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>2. seçenek - güvenilen kök dağıtmak bir kuruluş ortamında sertifikaları
+### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>2\. seçenek - güvenilen kök dağıtmak bir kuruluş ortamında sertifikaları
 
 En son kök sertifikaların olması değil çevrimdışı makinelerle kuruluşlar için bir yönetici yönergeleri kullanabilirsiniz [yapılandırma Güvenilen Kökleri ve izin verilmeyen sertifikaları](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) bunları güncelleştirmek için sayfa.
 
@@ -135,20 +135,20 @@ Visual Studio'nun istemci iş istasyonları için çevrimdışı bir ortamda da�
 Üç. P12 bu klasördeki dosyalar her bir ara sertifika ve bir kök sertifikası içerir. Windows Update ile güncel çoğu sistemleri, bu sertifikaların yüklü sahiptir.
 
 * **ManifestSignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft kod PCA 2011 imzalama**
-        * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi 2011**
-        * Windows 7 Service Pack 1 sistemlerinde yüklü en son Windows güncelleştirmelerini sahip olmaması gerekir.
+  * Ara Sertifika: **Microsoft kod PCA 2011 imzalama**
+    * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi 2011**
+    * Windows 7 Service Pack 1 sistemlerinde yüklü en son Windows güncelleştirmelerini sahip olmaması gerekir.
 * **ManifestCounterSignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft zaman damgası PCA 2010**
-        * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi 2010**
-        * En son Windows güncelleştirmelerini yüklü olmayan Windows 7 Service Pack 1 sistemler için gereklidir.
+  * Ara Sertifika: **Microsoft zaman damgası PCA 2010**
+    * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi 2010**
+    * En son Windows güncelleştirmelerini yüklü olmayan Windows 7 Service Pack 1 sistemler için gereklidir.
 * **Vs_installer_opc. SignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft kod PCA imzalama**
-        * Tüm sistemler için gereklidir. Tüm güncelleştirmelerin Windows Update'ten uygulandığı sistemleri bu sertifikayı olmayabilir unutmayın.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi**
-        * Gerekli. Bu sertifika, Windows 7 veya üzerini çalıştıran sistemleriyle birlikte gelir.
+  * Ara Sertifika: **Microsoft kod PCA imzalama**
+    * Tüm sistemler için gereklidir. Tüm güncelleştirmelerin Windows Update'ten uygulandığı sistemleri bu sertifikayı olmayabilir unutmayın.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi**
+    * Gerekli. Bu sertifika, Windows 7 veya üzerini çalıştıran sistemleriyle birlikte gelir.
 
 **Güncelleştirme**: Visual Studio 2017 sürüm için 15,8 önizleme 2 veya sonraki sürümü, Visual Studio yükleyicisi, sistemde yüklü için yalnızca kök sertifikaları gerektirir.
 
@@ -157,20 +157,20 @@ Visual Studio'nun istemci iş istasyonları için çevrimdışı bir ortamda da�
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft kod PCA 2011 imzalama**
-        * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi 2011**
-        * Windows 7 Service Pack 1 sistemlerinde yüklü en son Windows güncelleştirmelerini sahip olmaması gerekir.
+  * Ara Sertifika: **Microsoft kod PCA 2011 imzalama**
+    * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi 2011**
+    * Windows 7 Service Pack 1 sistemlerinde yüklü en son Windows güncelleştirmelerini sahip olmaması gerekir.
 * **ManifestCounterSignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft zaman damgası PCA 2010**
-        * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi 2010**
-        * En son Windows güncelleştirmelerini yüklü olmayan Windows 7 Service Pack 1 sistemler için gereklidir.
+  * Ara Sertifika: **Microsoft zaman damgası PCA 2010**
+    * Gerekli değildir. Varsa, bazı senaryolarda performansı artırır.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi 2010**
+    * En son Windows güncelleştirmelerini yüklü olmayan Windows 7 Service Pack 1 sistemler için gereklidir.
 * **Vs_installer_opc. SignCertificates.p12** içerir:
-    * Ara Sertifika: **Microsoft kod PCA imzalama**
-        * Tüm sistemler için gereklidir. Tüm güncelleştirmelerin Windows Update'ten uygulandığı sistemleri bu sertifikayı olmayabilir unutmayın.
-    * Kök sertifika: **Microsoft kök sertifika yetkilisi**
-        * Gerekli. Bu sertifika, Windows 7 veya üzerini çalıştıran sistemleriyle birlikte gelir.
+  * Ara Sertifika: **Microsoft kod PCA imzalama**
+    * Tüm sistemler için gereklidir. Tüm güncelleştirmelerin Windows Update'ten uygulandığı sistemleri bu sertifikayı olmayabilir unutmayın.
+  * Kök sertifika: **Microsoft kök sertifika yetkilisi**
+    * Gerekli. Bu sertifika, Windows 7 veya üzerini çalıştıran sistemleriyle birlikte gelir.
 
 Visual Studio yükleyicisi, yalnızca sistem üzerinde yüklenmesi için kök sertifikaları gerektirir.
 
@@ -188,7 +188,7 @@ Yükleme sistemde denetleyin yollarından biri, şu adımları takip etmektir:
   a. Tıklayın **dosya**ve ardından **Ekle/Kaldır ek bileşenini**.<br/>
   b. Çift **sertifikaları**seçin **bilgisayar hesabı**ve ardından **sonraki**.<br/>
   c. Seçin **yerel bilgisayar**, tıklayın **son**ve ardından **Tamam**.<br/>
-  d. Genişletin **sertifikalar (yerel bilgisayar)**.<br/>
+  d. Genişletin **sertifikalar (yerel bilgisayar)** .<br/>
   e. Genişletin **güvenilen kök sertifika yetkilileri**ve ardından **sertifikaları**.<br/>
     * Gerekli kök sertifika için bu listeyi kontrol edin.<br/>
 

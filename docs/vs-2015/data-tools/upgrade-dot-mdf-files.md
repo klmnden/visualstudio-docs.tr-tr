@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424914"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823450"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
 - Visual Studio'da, yükseltme yapmadan projeyi açın.  
   
-    - Projeyi çalıştırmak için F5 tuşunu seçin.  
-  
-    - Veritabanı düzenlemek için .mdf dosyası açın **Çözüm Gezgini**ve düğümde genişletme **Sunucu Gezgini** , veritabanı ile çalışmak üzere.  
+  - Projeyi çalıştırmak için F5 tuşunu seçin.  
+
+  - Veritabanı düzenlemek için .mdf dosyası açın **Çözüm Gezgini**ve düğümde genişletme **Sunucu Gezgini** , veritabanı ile çalışmak üzere.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Varsayılan veritabanı altyapısı SQL Server Express yapma  
   

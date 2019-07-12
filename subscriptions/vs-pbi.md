@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
-ms.openlocfilehash: db6f9ec6fd37101dbf4353ff5cf6eda3ec4d4323
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784495"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824627"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -110,9 +110,9 @@ Y:  Hayır.  Power BI Pro avantajı kamu kiracıları için eklenemez.
 
 ## <a name="support-resources"></a>Destek kaynakları
 - Power BI Pro yardıma mı ihtiyacınız var?
-    - Kullanıma [çevrimiçi belgeleri](/power-bi/).
-    - Kaydolma sorunları mı yaşıyorsunuz?  Kullanıma [Power BI bireysel olarak kaydolma](/power-bi/service-self-service-signup-for-power-bi)
-    - En sık karşılaşılan sorunlar keşfedin, topluluktan yardım alın veya üzerinde bir destek bileti gönderin [destek sayfasını](https://powerbi.microsoft.com/support/).
+  - Kullanıma [çevrimiçi belgeleri](/power-bi/).
+  - Kaydolma sorunları mı yaşıyorsunuz?  Kullanıma [Power BI bireysel olarak kaydolma](/power-bi/service-self-service-signup-for-power-bi)
+  - En sık karşılaşılan sorunlar keşfedin, topluluktan yardım alın veya üzerinde bir destek bileti gönderin [destek sayfasını](https://powerbi.microsoft.com/support/).
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 

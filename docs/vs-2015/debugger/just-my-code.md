@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421820"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823947"
 ---
 # <a name="just-my-code"></a>Yalnızca Kendi Kodum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63421820"
 ### <a name="BKMK_NET_Exception_behavior"></a> Özel durum davranışını  
  Kullanıcı olmayan kod içinde işlenmeyen bir özel durum meydana gelirse, hata ayıklayıcı özel durum burada oluşturulan kullanıcı kodunda satırında keser.  
   
- İlk fırsat özel durum için etkinse, kullanıcı kodu satır yeşil renkte vurgulanır. Etiketli bir açıklamalı çerçeve çağrı yığınını görüntüler **[harici kod]**.  
+ İlk fırsat özel durum için etkinse, kullanıcı kodu satır yeşil renkte vurgulanır. Etiketli bir açıklamalı çerçeve çağrı yığınını görüntüler **[harici kod]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> C++ yalnızca kendi kodum  
   
@@ -222,9 +222,9 @@ ms.locfileid: "63421820"
   
 - Varsa `debugger` anahtar sözcüğü karşılaştı:  
   
-    - **LibraryCode** kod, hata ayıklayıcı her zaman keser.  
-  
-    - **UnrelatedCode** olmayan kod, hata ayıklayıcıyı durdurun.  
+  - **LibraryCode** kod, hata ayıklayıcı her zaman keser.  
+
+  - **UnrelatedCode** olmayan kod, hata ayıklayıcıyı durdurun.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Özel durum davranışını  
  İşlenmeyen bir özel durum oluşması halinde:  

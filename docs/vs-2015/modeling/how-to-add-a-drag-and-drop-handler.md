@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690545"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825392"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ DSL'nizi için sürükle ve bırak olayları için işleyiciler ekleyebilirsiniz
   
 - İlk iki bölümü, bir hareket işleyicisini tanımlamanın alternatif yöntemler açıklanmaktadır:  
   
-    - [Hareket işleyicileri ShapeElement geçersiz kılma yöntemleri tarafından tanımlama](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, ve diğer yöntemleri geçersiz kılınabilir.  
-  
-    - [MEF kullanarak hareket işleyicileri tanımlama](#MEF). DSL'nizi için kendi işleyicilerini tanımlamak için üçüncü taraf geliştiriciler istiyorsanız bu yöntemi kullanın. Kullanıcılar, bunlar DSL'nizi yükledikten sonra üçüncü taraf uzantıları yüklemeye seçebilirsiniz.  
+  - [Hareket işleyicileri ShapeElement geçersiz kılma yöntemleri tarafından tanımlama](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, ve diğer yöntemleri geçersiz kılınabilir.  
+
+  - [MEF kullanarak hareket işleyicileri tanımlama](#MEF). DSL'nizi için kendi işleyicilerini tanımlamak için üçüncü taraf geliştiriciler istiyorsanız bu yöntemi kullanın. Kullanıcılar, bunlar DSL'nizi yükledikten sonra üçüncü taraf uzantıları yüklemeye seçebilirsiniz.  
   
 - [Sürüklenen öğe çözülecek nasıl](#extracting). Öğeleri, herhangi bir penceresinden veya masaüstünden yanı sıra bir DSL sürüklenebilir.  
   
@@ -172,7 +172,7 @@ using System.Linq;
   
     1. İndirip Visual Studio Model veri yolu uzantı zaten yüklü değilse yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
-    2. DSL tanım dosyası kaynak DSL DSL Tasarımcısı'nda açın. Tasarım yüzeyine sağ tıklayın ve ardından **etkinleştirme Modelbus**. İletişim kutusunda, birini veya her ikisini seçenekleri seçin.  **Tamam**'ı tıklatın. Yeni bir proje "ModelBus" DSL çözüme eklenir.  
+    2. DSL tanım dosyası kaynak DSL DSL Tasarımcısı'nda açın. Tasarım yüzeyine sağ tıklayın ve ardından **etkinleştirme Modelbus**. İletişim kutusunda, birini veya her ikisini seçenekleri seçin.            **Tamam**'ı tıklatın. Yeni bir proje "ModelBus" DSL çözüme eklenir.  
   
     3. Tıklayın **tüm Şablonları Dönüştür** ve çözümü yeniden oluşturun.  
   

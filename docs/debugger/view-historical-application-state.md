@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676584"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825523"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio'da (Visual Studio Enterprise) IntelliTrace geri adım atmayı kullanarak önceki uygulama durumlarını İnceleme
 
@@ -36,7 +36,7 @@ Bu öğreticide şunları yapacaksınız:
 
 1. Açık **Araçları** > **seçenekleri** > **IntelliTrace** Ayarları ' nı seçip seçeneği **IntelliTrace olayları ve anlık görüntüleri** .
 
-    Visual Studio 2017 Enterprise sürümü 15.9 başlangıcıdır Önizleme 2, bu seçenek **IntelliTrace anlık görüntülerini (yönetilen ve yerel)**.
+    Visual Studio 2017 Enterprise sürümü 15.9 başlangıcıdır Önizleme 2, bu seçenek **IntelliTrace anlık görüntülerini (yönetilen ve yerel)** .
 
     ![IntelliTrace olayları ve anlık görüntüler modu etkinleştirme](../debugger/media/intellitrace-enable-snapshots.png "etkinleştirme IntelliTrace olayları ve anlık görüntüler modu")
 
@@ -119,8 +119,8 @@ Genel Adımlama performansı üzerindeki etkisini, uygulamaya bağlıdır. Bir a
 
 * Uygulamanın işlem anlık görüntüsünü kullanan bir kalıcı bellek işlemeli dosya bir uygulama alındığında anlık görüntü ile işlem (hatta üst işleme kilidin piyasaya sonra) özel bir kilit üzerinde bellekle eşlenen dosya tutar. Diğer işlemlerin okunan ancak, bellekle eşlenen dosyasına yazmayacak koruyabilmeyi.
 
-    Geçici çözüm:
-    * Tüm anlık görüntüleri, hata ayıklama oturumunu sona erdirme tarafından temizleyin.
+  Geçici çözüm:
+  * Tüm anlık görüntüleri, hata ayıklama oturumunu sona erdirme tarafından temizleyin.
 
 * Çok sayıda DLL'leri yükleyen bir uygulama gibi benzersiz bellek bölümlerinin yüksek sayıda olan işlem sahip bir uygulamada hata ayıklaması yaparken, performans etkin anlık görüntülerle Adımlama etkilenebilir. Bu sorun gelecekteki bir Windows sürümünde ele alınacaktır. Bu sorunu yaşıyorsanız adresinden bize ulaşın stepback@microsoft.com.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038179"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821642"
 ---
 # <a name="msbuild-items"></a>MSBuild Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil eder
   
 - [Öğe meta verileri](#BKMK_ItemMetadata)  
   
-    - [Bir proje dosyasında başvurulan öğe meta verileri](#BKMK_ReferencingItemMetadata)  
-  
-    - [Tanınmış Öğe Meta Verisi](#BKMK_WellKnownItemMetadata)  
-  
-    - [Meta verileri kullanarak öğesi türlerini dönüştürme](#BKMK_Transforming)  
+  - [Bir proje dosyasında başvurulan öğe meta verileri](#BKMK_ReferencingItemMetadata)  
+
+  - [Tanınmış Öğe Meta Verisi](#BKMK_WellKnownItemMetadata)  
+
+  - [Meta verileri kullanarak öğesi türlerini dönüştürme](#BKMK_Transforming)  
   
 - [Öğe Tanımları](#BKMK_ItemDefinitions)  
   
 - [Öznitelik bir ItemGroup öğelerinin hedefi](#BKMK_AttributesWithinTargets)  
   
-    - [Öznitelik Kaldır](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata özniteliği](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata özniteliği](#BKMK_RemoveMetadata)  
-  
-    - [KeepDuplicates özniteliği](#BKMK_KeepDuplicates)  
+  - [Öznitelik Kaldır](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata özniteliği](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata özniteliği](#BKMK_RemoveMetadata)  
+
+  - [KeepDuplicates özniteliği](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Bir proje dosyasında öğeleri oluşturma  
  Öğeleri alt öğesi olarak proje dosyasındaki öğeleri bildirmek bir [ItemGroup](../msbuild/itemgroup-element-msbuild.md) öğesi. Öğe türü alt öğenin adıdır. `Include` Öğesinin özniteliği, bu öğe türünü içeren eklenecek öğeler (dosyalar) belirtir. Örneğin, aşağıdaki XML adında bir öğe türü oluşturur `Compile`, iki dosya içerir.  
@@ -96,7 +96,7 @@ MSBuild öğeleri derleme sistemine girişleri ve genelde dosyaları temsil eder
   
 - ? joker karakter, bir tek karakterle eşleşir.  
   
-- * Joker karakter, sıfır veya daha fazla karakter ile eşleşir.  
+- \* Joker karakter, sıfır veya daha fazla karakter ile eşleşir.  
   
 - ** Joker karakter dizisi ile eşleşen bir kısmi yol.  
   

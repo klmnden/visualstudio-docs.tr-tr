@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950422"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824809"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Birden fazla bilgisayara Visual Studio ayarları eşitleme
 
@@ -31,19 +31,19 @@ Varsayılan olarak, şu ayarlar eşitlenir:
 
 - Aşağıdaki seçenekleri **Araçları** > **seçenekleri** sayfalar:
 
-   - Tema ve menü çubuğunda büyük/küçük harf ayarlarını **ortam** > **genel** seçenekler sayfası.
+  - Tema ve menü çubuğunda büyük/küçük harf ayarlarını **ortam** > **genel** seçenekler sayfası.
 
-   - Tüm ayarlar **ortam** > **yazı tipleri ve renkler** seçenekler sayfası.
+  - Tüm ayarlar **ortam** > **yazı tipleri ve renkler** seçenekler sayfası.
 
-   - Tüm şirket klavye kısayolları **ortam** > **klavye** seçenekler sayfası.
+  - Tüm şirket klavye kısayolları **ortam** > **klavye** seçenekler sayfası.
 
-   - Tüm ayarlar **ortam** > **sekmeler ve Windows** seçenekler sayfası.
+  - Tüm ayarlar **ortam** > **sekmeler ve Windows** seçenekler sayfası.
 
-   - Tüm ayarlar **ortam** > **başlangıç** seçenekler sayfası.
+  - Tüm ayarlar **ortam** > **başlangıç** seçenekler sayfası.
 
-   - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları, örneğin, [kod stili tercihleri](code-styles-and-quick-actions.md).
+  - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları, örneğin, [kod stili tercihleri](code-styles-and-code-cleanup.md).
 
-   - Tüm ayarlar **XAML Tasarımcısı** seçenekler sayfaları.
+  - Tüm ayarlar **XAML Tasarımcısı** seçenekler sayfaları.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Belirli bir bilgisayardaki eşitlenmiş ayarlar devre dışı bırakma
 

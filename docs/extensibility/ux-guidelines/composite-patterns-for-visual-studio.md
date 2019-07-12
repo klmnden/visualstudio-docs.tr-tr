@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335395"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824599"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenler
 Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri birleştirin. Tutarlılık açısından en önemli bileşik desenler Visual Studio'da bazıları şunlardır:
@@ -226,7 +226,7 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
 
 - **Her zaman** kullanılabilir bilgi özetleyen bir göstergesi oluşturmayı deneyin. Bir sayısını kullanılabilir olan veri öğeleri (örneğin, "3 başvurular" Basit "başvuru" yerine) sağlamayı göz önüne alın veya verileri özetlemek için başka bir şekilde düşünün.
 
-    - Burada bir göstergesi için veriler her zaman hesaplanan görüntülenir ve durumlarda değerler hesaplanan aşamalı geri bildirim sağlayarak hemen göz önünde bulundurun. Örneğin, benzer şekilde, Windows Phone şirket e-posta Canlı kutucuk sayısı arttıkça okunmamış e-postaları yeniler kullanılabilir veri güncelleştirmeleri yansıtan değişiklikler hareketlendirme göz önünde bulundurun.
+  - Burada bir göstergesi için veriler her zaman hesaplanan görüntülenir ve durumlarda değerler hesaplanan aşamalı geri bildirim sağlayarak hemen göz önünde bulundurun. Örneğin, benzer şekilde, Windows Phone şirket e-posta Canlı kutucuk sayısı arttıkça okunmamış e-postaları yeniler kullanılabilir veri güncelleştirmeleri yansıtan değişiklikler hareketlendirme göz önünde bulundurun.
 
 - **Hiçbir zaman** bir kullanıcı belirli bir içerik parçasına için makul bir şekilde ele çok daha fazla göstergeleri ekleyin. Ortam göstergeleri kullanıcı etkileşimi gerektirmeden faydalı olması gerekir. Taşma ve bunları görüntülenebilmesi için diğer yönetim denetimleri gerekiyorsa göstergeleri, çevre kaybedersiniz.
 
@@ -235,11 +235,11 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
 
 - **Her zaman** gerektirmek ek içeriği açmak için bazı açık hareketi gerçekleştirin. Ortak açık hareketlerini içerir:
 
-    - **Vurgulu:** araç ipuçları veya etkileşimli olmayan bilgi içeriği
+  - **Vurgulu:** araç ipuçları veya etkileşimli olmayan bilgi içeriği
 
-    - **Açık komut:** satır içi sunan
+  - **Açık komut:** satır içi sunan
 
-    - **Ortam göstergesi çift tıklayın:** CodeLens açılır penceresi
+  - **Ortam göstergesi çift tıklayın:** CodeLens açılır penceresi
 
 - **Her zaman** her kullanıcı Esc tuşuna bastığında ayrıntılı içerik yok sayın.
 

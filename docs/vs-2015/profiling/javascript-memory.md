@@ -23,14 +23,14 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704543"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825467"
 ---
-# <a name="javascript-memory"></a>JavaScript bellek
+# <a name="javascript-memory"></a>JavaScript Belleği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript kullanarak Windows için oluşturulan Store uygulamalarında bellek sızıntılarını bulmanıza yardımcı olması için Visual Studio'da kullanılabilir. Windows Phone Store ve Windows Store uygulamaları için desteklenen uygulamalarıdır.  
@@ -282,14 +282,14 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
   
   Anlık görüntü arasındaki fark bilgilerini filtrelemek için aşağıdakilerden birini seçin: **kapsam** fark görünümleri üstündeki filtreleri.  
   
-- **Kalan nesneler gelen anlık görüntü sayısı\<numarası >**. Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.  
+- **Kalan nesneler gelen anlık görüntü sayısı\<numarası >** . Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.  
   
   > [!TIP]
   > Bu filtrede en yararlı bilgiler göstermek için açıklanan adımları izleyin. [bir bellek sızıntısı yalıtmak](#Isolate).  
   
-- **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >**. Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.  
+- **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >** . Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.  
   
-- **Anlık görüntüsündeki tüm nesneler #\<numarası >**. Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.  
+- **Anlık görüntüsündeki tüm nesneler #\<numarası >** . Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.  
   
   Geçerli eşleşmeyen nesne başvuruları göstermek için **kapsam** filtre, select **eşleşmeyen başvuruları göster** ayarlar listesinde ![ayarları bırakma&#45;bellek Çözümleyicisi listede aşağı ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") bölmesinde sağ üst köşesindeki. Bu ayarı etkinleştirirseniz, eşleşmeyen başvuruları gri metinle görüntülenir.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Kullanıcı için yaygın bir nedeni, bellek sorunları olan yeni bir sayfada, gittikten sonra bellekte yanlışlıkla korunur nesneleri arayın. Örneğin:  
   
-    - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) işlevi bu soruna neden olabilir.  
-  
-    - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.  
-  
-    - Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](../debugger/view-dom-event-listeners.md).  
+  - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) işlevi bu soruna neden olabilir.  
+
+  - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.  
+
+  - Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](../debugger/view-dom-event-listeners.md).  
   
 - İkinci bölümü izleyin [bu videoyu](http://channel9.msdn.com/Events/Build/2013/3-316) JavaScript bellek Çözümleyicisi hakkında derleme 2013 konferansına ait.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Kod sorunları yalıtmak için geçici olarak değiştirmeyi düşünün. Örneğin, aşağıdakileri yapabilirsiniz:  
   
-    - Bellek Çözümleyicisi için komutları kullanın `console.takeSnapshot` ve `performance.mark`. (Bkz [kaynak kodu ile bellek kullanımı verileri ilişkilendirmek](#JSConsoleCommands).)  
-  
-         Yığın anlık görüntüsü el ile yararlanarak ayıramazsınız sorunlarını gidermeye yardımcı olmak için bu komutları kullanabilirsiniz.  
-  
-    - Bir test nesnesi oluşturma ve JavaScript bellek Çözümleyicisi görünümlerde türler görünümü gibi izleme. Örneğin, belirli bir nesne veya öğenin atık olarak toplanmış olup olmadığını görmek için başka bir nesne için çok büyük bir nesne ekleyebilirsiniz.  
-  
+  - Bellek Çözümleyicisi için komutları kullanın `console.takeSnapshot` ve `performance.mark`. (Bkz [kaynak kodu ile bellek kullanımı verileri ilişkilendirmek](#JSConsoleCommands).)  
+
+    Yığın anlık görüntüsü el ile yararlanarak ayıramazsınız sorunlarını gidermeye yardımcı olmak için bu komutları kullanabilirsiniz.  
+
+  - Bir test nesnesi oluşturma ve JavaScript bellek Çözümleyicisi görünümlerde türler görünümü gibi izleme. Örneğin, belirli bir nesne veya öğenin atık olarak toplanmış olup olmadığını görmek için başka bir nesne için çok büyük bir nesne ekleyebilirsiniz.  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bellek sızıntısını bulma (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

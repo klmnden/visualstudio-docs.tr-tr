@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Son kullanıcılarınıza, MPN iş ortakları için Visual Studio abonelikleri atama işlemini.
-ms.openlocfilehash: 50a0784c9a2d71f6af4f4ff2e6b98233db62dab8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785112"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823205"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan Visual Studio aboneliklerini yönetme
 
@@ -60,7 +60,7 @@ Microsoft eylem paketi abonesi ve Visual Studio abonelikleri
 - Microsoft iş ortağı ağı ile ilgili ayrıntıları [Visual Studio abonelikleri](https://partner.microsoft.com/membership/msdn-subscriptions)
 
 - Microsoft iş ortağı ağı [Program Yöneticisi kılavuzu yazılım ve Çevrimiçi Hizmetler avantajları](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
-    - PG 6 - atama ilgili kişi rollerini ve Visual Studio abonelikleri için eylem paketi
+  - PG 6 - atama ilgili kişi rollerini ve Visual Studio abonelikleri için eylem paketi
 
 > [!NOTE]
 > Visual Studio abonelikleri için teknik konular ilgili kişisi rolü gereklidir

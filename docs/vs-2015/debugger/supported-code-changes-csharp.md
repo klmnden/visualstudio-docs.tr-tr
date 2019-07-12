@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117661"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823531"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türd
   
 - Bazı durumlarda LINQ kodda hata ayıklama. Daha fazla bilgi için [LINQ hata ayıklama](../debugger/debugging-linq.md).  
   
-    - Önce yakalanmayan bir değişken yakalama.  
-  
-    - Sorgu ifadesi türünün değiştirilmesi (örneğin, a ='ı seçin > Yeni seçme {A = bir};)  
-  
-    - Kaldırma bir `where` , etkin bir deyim içerir.  
-  
-    - Kaldırma bir `let` , etkin bir deyim içerir.  
-  
-    - Kaldırma bir `join` , etkin bir deyim içerir.  
-  
-    - Kaldırma bir `orderby` , etkin bir deyim içerir.  
+  - Önce yakalanmayan bir değişken yakalama.  
+
+  - Sorgu ifadesi türünün değiştirilmesi (örneğin, a ='ı seçin > Yeni seçme {A = bir};)  
+
+  - Kaldırma bir `where` , etkin bir deyim içerir.  
+
+  - Kaldırma bir `let` , etkin bir deyim içerir.  
+
+  - Kaldırma bir `join` , etkin bir deyim içerir.  
+
+  - Kaldırma bir `orderby` , etkin bir deyim içerir.  
   
 - Karma mod (yerel/yönetilen) hata ayıklama.  
   

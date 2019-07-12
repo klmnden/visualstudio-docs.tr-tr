@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993490"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821934"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
@@ -126,13 +126,13 @@ Sürükle kaynak bilgileri kullanılabildiği biçimleri bulmak için hata ayık
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -Bu özellik kaynak nesneleri seri hale getirilmiş sürümlerini genellikle birden çok biçimde gerçekleştirir. Kendi en kullanışlı işlevler şunlardır:
 
-    - diagramEventArgs.Data.GetDataFormats() - sürüklenen nesnenin çözmek biçimleri listeler. Örneğin, kullanıcı bir dosyayı masaüstünden sürüklediğinde, kullanılabilir biçimler dosya adı dahil ("`FileNameW`").
+  - diagramEventArgs.Data.GetDataFormats() - sürüklenen nesnenin çözmek biçimleri listeler. Örneğin, kullanıcı bir dosyayı masaüstünden sürüklediğinde, kullanılabilir biçimler dosya adı dahil ("`FileNameW`").
 
-    - `diagramEventArgs.Data.GetData(format)` -Belirtilen biçimde sürüklenen nesnenin kodunu çözer. Nesne için uygun bir tür cast. Örneğin:
+  - `diagramEventArgs.Data.GetData(format)` -Belirtilen biçimde sürüklenen nesnenin kodunu çözer. Nesne için uygun bir tür cast. Örneğin:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Ayrıca, kendi özel biçiminde kaynak modeli yol başvuruları gibi nesneleri iletebilir. Daha fazla bilgi için [gönderme modeli yol başvuruları bir Sürükle ve bırak nasıl](#to-send-an-object-from-a-source-dsl).
+    Ayrıca, kendi özel biçiminde kaynak modeli yol başvuruları gibi nesneleri iletebilir. Daha fazla bilgi için [gönderme modeli yol başvuruları bir Sürükle ve bırak nasıl](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Bir DSL veya UML model öğelerini sürükleyin açmasını istiyorsanız bu özelliği kullanın. Bir öğe grubu prototip, bir veya daha fazla nesneyi, bağlantılar ve özellik değerlerini içerir. Ayrıca, yapıştırma işlemlerine ve ne zaman araç kutusundan bir öğe ekleme kullanılır. Bir prototip içinde nesneler ve bunların türlerini GUID ile tanımlanır. Örneğin, bu kod, kullanıcının bir UML diyagram veya UML Model Gezgini sınıfı öğelerini sürükleyin izin verir:
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Kopyalama Davranışını Özelleştirme](../modeling/customizing-copy-behavior.md)
-- [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)
+- [Etki Alanına Özgü Dil Çözümlerini Dağıtma](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d14fb36298518409df34302f9346e186f0b0263
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442292"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825159"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,9 +150,9 @@ ms.locfileid: "63442292"
   
 - İki yerde vardır özel bir düzenleyici Otomasyon nesneleri getirebilir:  
   
-    - `Document.Object`  
-  
-    - `Window.Object`  
+  - `Document.Object`  
+
+  - `Window.Object`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon modeline katkıda bulunma](../extensibility/internals/contributing-to-the-automation-model.md)   

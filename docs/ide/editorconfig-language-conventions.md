@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 90c080b62be8f3aba128b26aafe9d2b6e30446f5
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586787"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823298"
 ---
 # <a name="language-conventions"></a>Dil kuralları
 
@@ -56,36 +56,36 @@ Bir dil kural önem derecesi, o stilin zorlamak düzeyinde belirtir. Olası öne
 Stil kurallarını Bu bölümde, hem C# ve Visual Basic için geçerlidir.
 
 - ["This." ve "Me." niteleyicileri](#this-and-me)
-   - DotNet\_stili\_nitelik\_for_field
-   - DotNet\_stili\_nitelik\_for_property
-   - DotNet\_stili\_nitelik\_for_method
-   - DotNet\_stili\_nitelik\_for_event
+  - DotNet\_stili\_nitelik\_for_field
+  - DotNet\_stili\_nitelik\_for_property
+  - DotNet\_stili\_nitelik\_for_method
+  - DotNet\_stili\_nitelik\_for_event
 - [Dil anahtar sözcükleri framework yerine tür başvurularını adlarını yazın](#language-keywords)
-   - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members
-   - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_member_access
+  - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members
+  - DotNet\_stili\_önceden tanımlanmış\_türü\_için\_member_access
 - [Değiştiricisi tercihleri](#normalize-modifiers)
-   - DotNet\_stili\_gerektiren\_accessibility_modifiers
-   - csharp\_preferred\_modifier_order
-   - görsel\_temel\_tercih edilen\_modifier_order
-   - DotNet\_stili\_salt okunur\_alan
+  - DotNet\_stili\_gerektiren\_accessibility_modifiers
+  - csharp\_preferred\_modifier_order
+  - görsel\_temel\_tercih edilen\_modifier_order
+  - DotNet\_stili\_salt okunur\_alan
 - [Parantez tercihleri](#parentheses-preferences)
-   - DotNet\_stili\_parantez\_içinde\_aritmetik\_ikili\_işleçleri
-   - DotNet\_stili\_parantez\_içinde\_diğer\_ikili\_işleçleri
-   - DotNet\_stili\_parantez\_içinde\_diğer\_işleçleri
-   - DotNet\_stili\_parantez\_içinde\_ilişkisel\_ikili\_işleçleri
+  - DotNet\_stili\_parantez\_içinde\_aritmetik\_ikili\_işleçleri
+  - DotNet\_stili\_parantez\_içinde\_diğer\_ikili\_işleçleri
+  - DotNet\_stili\_parantez\_içinde\_diğer\_işleçleri
+  - DotNet\_stili\_parantez\_içinde\_ilişkisel\_ikili\_işleçleri
 - [İfade düzeyi tercihleri](#expression-level-preferences)
-   - DotNet\_stili\_object_initializer
-   - DotNet\_stili\_collection_initializer
-   - dotnet\_style\_explicit\_tuple_names
-   - DotNet\_stili\_tercih\_çıkarılan\_tuple_names
-   - DotNet\_stili\_tercih\_çıkarılan\_anonim\_türü\_member_names
-   - DotNet\_stili\_tercih\_otomatik\_özellikleri
-   - DotNet\_stili\_tercih\_olduğu\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
-   - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_atama
-   - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_döndürür
+  - DotNet\_stili\_object_initializer
+  - DotNet\_stili\_collection_initializer
+  - dotnet\_style\_explicit\_tuple_names
+  - DotNet\_stili\_tercih\_çıkarılan\_tuple_names
+  - DotNet\_stili\_tercih\_çıkarılan\_anonim\_türü\_member_names
+  - DotNet\_stili\_tercih\_otomatik\_özellikleri
+  - DotNet\_stili\_tercih\_olduğu\_null\_denetleyin\_üzerinden\_başvuru\_eşitlik\_yöntemi
+  - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_atama
+  - DotNet\_stili\_tercih\_koşullu\_ifade\_üzerinden\_döndürür
 - ["Null" Tercihler denetleniyor](#null-checking-preferences)
-   - DotNet\_stili\_coalesce_expression
-   - DotNet\_stili\_null_propagation
+  - DotNet\_stili\_coalesce_expression
+  - DotNet\_stili\_null_propagation
 
 ### <a name="this-and-me"></a>"This." ve "Me." niteleyicileri
 
@@ -949,30 +949,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 Bu bölümdeki stil kuralları yalnızca C# için geçerlidir.
 
 - [Örtük ve açık türleri](#implicit-and-explicit-types)
-   - CSharp\_stili\_var\_için\_yerleşik\_in_types
-   - CSharp\_stili\_var\_olduğunda\_türü\_is_apparent
-   - csharp\_style\_var_elsewhere
+  - CSharp\_stili\_var\_için\_yerleşik\_in_types
+  - CSharp\_stili\_var\_olduğunda\_türü\_is_apparent
+  - csharp\_style\_var_elsewhere
 - [İfade gövdeli üyeler](#expression-bodied-members)
-   - csharp\_style\_expression\_bodied_methods
-   - CSharp\_stili\_ifade\_bodied_constructors
-   - CSharp\_stili\_ifade\_bodied_operators
-   - CSharp\_stili\_ifade\_bodied_properties
-   - CSharp\_stili\_ifade\_bodied_indexers
-   - CSharp\_stili\_ifade\_bodied_accessors
+  - csharp\_style\_expression\_bodied_methods
+  - CSharp\_stili\_ifade\_bodied_constructors
+  - CSharp\_stili\_ifade\_bodied_operators
+  - CSharp\_stili\_ifade\_bodied_properties
+  - CSharp\_stili\_ifade\_bodied_indexers
+  - CSharp\_stili\_ifade\_bodied_accessors
 - [Desen eşleştirme](#pattern-matching)
-   - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olduğu\_ile\_cast_check
-   - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olarak\_ile\_null_check
+  - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olduğu\_ile\_cast_check
+  - CSharp\_stili\_deseni\_eşleşen\_üzerinden\_olarak\_ile\_null_check
 - [Satır içi değişken bildirimi](#inlined-variable-declarations)
-   - CSharp\_stili\_satır içine alınmış\_variable_declaration
+  - CSharp\_stili\_satır içine alınmış\_variable_declaration
 - [İfade düzeyi tercihleri](#expression-level-preferences)
-   - csharp\_prefer\_simple\_default_expression
-   - CSharp\_stili\_deconstructed\_variable_declaration
-   - CSharp\_stili\_deseni\_yerel\_üzerinden\_anonymous_function
+  - csharp\_prefer\_simple\_default_expression
+  - CSharp\_stili\_deconstructed\_variable_declaration
+  - CSharp\_stili\_deseni\_yerel\_üzerinden\_anonymous_function
 - ["Null" Tercihler denetleniyor](#null-checking-preferences)
-   - csharp\_style\_throw_expression
-   - csharp\_style\_conditional\_delegate_call
+  - csharp\_style\_throw_expression
+  - csharp\_style\_conditional\_delegate_call
 - [Kod bloğu tercihleri](#code-block-preferences)
-   - CSharp\_prefer_braces
+  - CSharp\_prefer_braces
 
 ### <a name="implicit-and-explicit-types"></a>Örtük ve açık türleri
 

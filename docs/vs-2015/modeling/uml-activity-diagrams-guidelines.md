@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439733"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823573"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML etkinlik diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
  Nesne düğümü özelliklerini ayarlayarak bir arabellek öğeleri nasıl depolandığını belirtebilirsiniz:  
   
 - Ayarlama **sıralama** özelliği:  
-  
-    - **Sırasız** rastgele veya belirtilmeyen bir sırayı belirtmek için. (Varsayılan)  
-  
-    - **Sıralı** belirli bir anahtarın göre bir sıra belirtmek için.  
-  
-    - **FIFO** ilk giren bir sırasını belirlemek için ilk çıkar.  
-  
-    - **LIFO** bir sipariş son giren ilk çıkar belirtmek için.  
-  
+
+  - **Sırasız** rastgele veya belirtilmeyen bir sırayı belirtmek için. (Varsayılan)  
+
+  - **Sıralı** belirli bir anahtarın göre bir sıra belirtmek için.  
+
+  - **FIFO** ilk giren bir sırasını belirlemek için ilk çıkar.  
+
+  - **LIFO** bir sipariş son giren ilk çıkar belirtmek için.  
+
 - Ayarlama **üst sınır** özelliği arabellekteki bulunabilir nesneleri maksimum sayısını belirtin. Varsayılan *. Bu sınır olmadığını anlamına gelir.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Giriş ve çıkış sabitleyicileri açıklayan veri akışı  
@@ -317,7 +317,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
 - Ayarlayabileceğiniz **olduğu zaman uyumlu** özelliği eylemin, işlemin tamamlanmasını bekleyip beklemediğini belirtin.  
   
-    - Ayarlarsanız **olduğu zaman uyumlu** false olarak çağrılan işlem tamamlanmadan önce akışı sonraki eyleme geçebilirsiniz gösterirsiniz. Çıkış tanımlanmamalıdır PIN veya giden veri akışları eylem.  
+  - Ayarlarsanız **olduğu zaman uyumlu** false olarak çağrılan işlem tamamlanmadan önce akışı sonraki eyleme geçebilirsiniz gösterirsiniz. Çıkış tanımlanmamalıdır PIN veya giden veri akışları eylem.  
   
 ## <a name="Concurrent"></a> Eşzamanlı Akışlar  
  Kullanabileceğiniz **Çatal Düğüm** ve **katılın düğüm** iki veya daha fazla iş parçacığı aynı anda çalışabilecek etkinlikleri tanımlamak için.  
@@ -408,7 +408,7 @@ Visual Studio'da bir iş sürecini veya bir yazılım algoritması bir dizi eyle
   
 1. Dönüştürme ya da seçimi akışını açıklamak yeni bir etkinlik diyagramı oluşturun.  
   
-   - İçinde **Çözüm Gezgini**, projenize sağ tıklayın, fareyle **Ekle**, tıklayın **yeni öğe**ve ardından **etkinlik diyagramı**. Diyagram, dönüştürme ya da seçimi akış için uygun bir ad verin. **Ekle**'yi tıklatın.  
+   - İçinde **Çözüm Gezgini**, projenize sağ tıklayın, fareyle **Ekle**, tıklayın **yeni öğe**ve ardından **etkinlik diyagramı**. Diyagram, dönüştürme ya da seçimi akış için uygun bir ad verin.           **Ekle**'yi tıklatın.  
   
 2. Yeni bir diyagramda:  
   

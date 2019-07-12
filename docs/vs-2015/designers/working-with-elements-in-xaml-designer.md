@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690026"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824854"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML Tasarımcısı'nda öğelerle çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "65690026"
   
 - XAML Tasarımcısı'nda, aşağıdakilerden birini yapın:  
   
-    - Bir öğedeki çift **araç kutusu** (veya araç kutusundan bir öğe seçin ve Enter tuşuna basın).  
-  
-    - Bir öğeyi sürükleyin **araç kutusu** çalışma yüzeyine.  
-  
-    - İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) veya [dikdörtgen](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) ve sonra etkin panelindeki bir öğesi çizin.  
+  - Bir öğedeki çift **araç kutusu** (veya araç kutusundan bir öğe seçin ve Enter tuşuna basın).  
+
+  - Bir öğeyi sürükleyin **araç kutusu** çalışma yüzeyine.  
+
+  - İçinde **araç kutusu**, çizim araçlarından birini seçin (örneğin, [elipsin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) veya [dikdörtgen](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) ve sonra etkin panelindeki bir öğesi çizin.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Öğeleri katman sırasını değiştirme  
  XAML Tasarımcısı'nda çalışma yüzeyine iki öğe olduğunda, bir öğe katman sırasını diğer önünde görünür. Belge Anahattı öğeleri listesi kısmındaki en öndedir öğesi penceredir (ne zaman dışında **haritadaki** özelliği bir öğe için). Sayfa, form veya Düzen kapsayıcısı için bir öğe eklediğinizde, öğe otomatik olarak etkin kapsayıcı öğe diğer öğeleri önüne yerleştirilir. Öğelerin sırasını değiştirmek için kullanabileceğiniz **sipariş** komutları veya belge ana hattı penceresinin nesne ağacında öğeleri sürükleyin.  

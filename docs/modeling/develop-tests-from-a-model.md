@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982660"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821945"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -46,9 +46,9 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
 - Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:
 
-    - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.
+  - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.
 
-    - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.
+  - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.
 
 - Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.
 

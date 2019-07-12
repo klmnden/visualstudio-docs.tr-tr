@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678858"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825660"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio'da Eşitlenmiş Ayarlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Visual Studio için birden çok bilgisayarda oturum açmak için aynı kişisell
 
 - Aşağıdaki seçenekleri **Araçları &#124; seçenekleri** sayfalar:
 
-    - **Tema** ve menü çubuğu üzerinde ayarları, büyük/küçük harfleri **ortam**, **genel** Seçenekleri sayfası
+  - **Tema** ve menü çubuğu üzerinde ayarları, büyük/küçük harfleri **ortam**, **genel** Seçenekleri sayfası
 
-    - Tüm ayarlar **ortam**, **yazı tipleri ve renkler** Seçenekleri sayfası
+  - Tüm ayarlar **ortam**, **yazı tipleri ve renkler** Seçenekleri sayfası
 
-    - Tüm klavye kısayolları **ortam**, **klavye** Seçenekleri sayfası
+  - Tüm klavye kısayolları **ortam**, **klavye** Seçenekleri sayfası
 
-    - Tüm ayarlar **ortamı, sekmeler ve Windows** Seçenekleri sayfası
+  - Tüm ayarlar **ortamı, sekmeler ve Windows** Seçenekleri sayfası
 
-    - Tüm ayarlar **ortam**, **başlangıç** Seçenekleri sayfası
+  - Tüm ayarlar **ortam**, **başlangıç** Seçenekleri sayfası
 
-    - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları
+  - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları
 
 - XAML Tasarımcısı'ndaki tüm ayarlar seçenekler sayfaları
 

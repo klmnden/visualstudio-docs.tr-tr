@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337031"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825236"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio için animasyonları
 ## <a name="animation-fundamentals"></a>Animasyonu ile ilgili temel bilgiler
@@ -25,13 +25,13 @@ Visual Studio IDE arasında tutarlı ve kullanımı kolay animasyon stilleri emi
 
 - **Zamanlama ve hızını önemli** geçişleri hızlı ve doğal düşünüyorsanız emin olmak için:
 
-    - Animasyonlu geçişler yarım saniye (500 milisaniye cinsinden) içinde tamamlayın.
+  - Animasyonlu geçişler yarım saniye (500 milisaniye cinsinden) içinde tamamlayın.
 
-    - Sık oluşacak animasyonları kullanıcının iş akışı kesintiye yoksa yeterince hızlı olması gerekir. Döngü içinde animasyon izleyin ve doğru hissettirir kadar zamanlamasını ayarlayın.
+  - Sık oluşacak animasyonları kullanıcının iş akışı kesintiye yoksa yeterince hızlı olması gerekir. Döngü içinde animasyon izleyin ve doğru hissettirir kadar zamanlamasını ayarlayın.
 
-    - Animasyonları, bu nedenle hızlı veya jarring anlaşılması zor ancak değil çok yavaş bir geçişi tamamlamak için sabırsız kolaylaştırır, olduğunu olmamalıdır.
+  - Animasyonları, bu nedenle hızlı veya jarring anlaşılması zor ancak değil çok yavaş bir geçişi tamamlamak için sabırsız kolaylaştırır, olduğunu olmamalıdır.
 
-    - Değişken zamanlama önem vurgulamak için kullanın. Örneğin, bir sınıf diyagramında öğelerinin bir dizisini aracılığıyla gittiğinizde, öğeleri arasında geçişler hızlandırmak sonra önemli öğeye odaklanmayı yavaşlayabilir.
+  - Değişken zamanlama önem vurgulamak için kullanın. Örneğin, bir sınıf diyagramında öğelerinin bir dizisini aracılığıyla gittiğinizde, öğeleri arasında geçişler hızlandırmak sonra önemli öğeye odaklanmayı yavaşlayabilir.
 
 - **Aşamalı doğrusal olmayan hızlandırma kullanın** diğerine bir durumdan diğerine taşıma sakin ve doğal bir fikir verir.
 
@@ -47,13 +47,13 @@ Visual Studio IDE arasında tutarlı ve kullanımı kolay animasyon stilleri emi
 
 - **İlerleme veya durum gösterilirken** animasyon aracılığıyla:
 
-    - Temel işlemin ne zaman ilerledikten değil ilerleme taşıma gösteren durdurun.
+  - Temel işlemin ne zaman ilerledikten değil ilerleme taşıma gösteren durdurun.
 
-    - Belirsiz işlemleri kararlı işlemlerden ayırmak.
+  - Belirsiz işlemleri kararlı işlemlerden ayırmak.
 
-    - Bir animasyon tanımlanabilen tamamlama ve hata durumları olduğundan emin olun.
+  - Bir animasyon tanımlanabilen tamamlama ve hata durumları olduğundan emin olun.
 
-    - Durumu göster ve gerçek kullanımı için ek bilgi sağlayarak gerçek değeri olduğundan emin olun etkisi animasyonları kullanımını en aza indirin. Örnekler arasında geçici durum değişikliklerini ve acil durumlar bulunur
+  - Durumu göster ve gerçek kullanımı için ek bilgi sağlayarak gerçek değeri olduğundan emin olun etkisi animasyonları kullanımını en aza indirin. Örnekler arasında geçici durum değişikliklerini ve acil durumlar bulunur
 
 #### <a name="animation-donts"></a>Animasyon yapılmaması gerekenler:
 

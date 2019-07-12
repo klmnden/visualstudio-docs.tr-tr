@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685329"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824253"
 ---
-# <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş parçacıkları penceresini kullanma
+# <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş Parçacıkları Penceresini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçinde **iş parçacıkları** penceresini inceleyin ve uygulamada hata ayıklaması yaptığınız iş parçacıkları ile çalışır.  
@@ -72,11 +72,11 @@ ms.locfileid: "65685329"
   
 - Aşağıdaki adımlardan birini gerçekleştirin:  
   
-    - Herhangi bir iş parçacığı çift tıklayın.  
-  
-    - Bir iş parçacığı sağ tıklatıp **iş parçacığına geçiş**.  
-  
-         Yeni etkin iş parçacığı yanındaki sarı ok görünür. Bir ok gri özetini burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığını tanımlar.  
+  - Herhangi bir iş parçacığı çift tıklayın.  
+
+  - Bir iş parçacığı sağ tıklatıp **iş parçacığına geçiş**.  
+
+    Yeni etkin iş parçacığı yanındaki sarı ok görünür. Bir ok gri özetini burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığını tanımlar.  
   
 ## <a name="grouping-and-sorting-threads"></a>İş parçacıkları sıralama ve gruplandırma  
  İş parçacıkları gruplandırdığınızda, tablodaki her grup için bir başlık görünür. Başlığı "Çalışan iş parçacığı" veya "Bayrak yok iş parçacığı sayısı" ve ağaç denetimi gibi bir Grup açıklaması içerir. Her grup üyesi iş parçacıklarının grubunun başlığının altında görünür. Bir grubun üyesi iş parçacıklarının gizlemek istiyorsanız, grubu daraltmak için ağaç denetimi kullanabilirsiniz.  
@@ -116,11 +116,11 @@ ms.locfileid: "65685329"
   
 - Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde, Git **arama** kutusu ve ya da:  
   
-    - Bir arama dizesi yazın ve ENTER tuşuna basın.  
-  
-         \- veya -  
-  
-    - Aşağı açılan listeye tıklayın **arama** kutusunda ve bir önceki aramaya ait arama dizesini seçin.  
+  - Bir arama dizesi yazın ve ENTER tuşuna basın.  
+
+    \- veya -  
+
+  - Aşağı açılan listeye tıklayın **arama** kutusunda ve bir önceki aramaya ait arama dizesini seçin.  
   
 - (İsteğe bağlı) Tam çağrı yığınını aramanızda eklemek için işaretleyin **arama çağrı yığını**.  
   

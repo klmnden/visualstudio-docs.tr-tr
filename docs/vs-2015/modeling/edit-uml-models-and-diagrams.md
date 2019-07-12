@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442972"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823184"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML modellerini ve diyagramları düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
      \- veya -  
   
-- Üzerinde **mimari tasarımcıları** araç, artı işaretine tıklayın (**+**) ya da eksi işareti (**-**), veya bir yakınlaştırma düzeyini seçin.  
+- Üzerinde **mimari tasarımcıları** araç, artı işaretine tıklayın ( **+** ) ya da eksi işareti ( **-** ), veya bir yakınlaştırma düzeyini seçin.  
   
 ## <a name="Searching"></a> Bir diyagramda aranıyor  
  Hızlı Bul işlevi, diyagram üzerindeki öğeleri bulabilirsiniz. Ayarlamalısınız **Bak:** için **geçerli belge**.  
@@ -294,9 +294,9 @@ Oluşturun ve birkaç farklı türde diyagram tarafından sağlanan görünümle
   
 - Ya da öğeye sağ tıklayın, **UML Model Gezgini** veya diyagramındaki ve ardından **modelden silmek**.  
   
-    - Öğe göründüğü her diyagramından silinir.  
-  
-    - Bu öğede sonlanan her ilişkinin modelden de silinir.  
+  - Öğe göründüğü her diyagramından silinir.  
+
+  - Bu öğede sonlanan her ilişkinin modelden de silinir.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Bir ilişkiyi modelden silmek için  
   

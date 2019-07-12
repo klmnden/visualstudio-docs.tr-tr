@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695312"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825537"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **Kod Düzenleyicisi:**
 
-    - Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#actions) bölümüne bakın.
+  - Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#actions) bölümüne bakın.
 
-    - Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [veri tabanlı kodlanmış bir UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
+  - Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [veri tabanlı kodlanmış bir UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam bir listesi için bkz. [yapmadan kodlanmış UI testleri beklemek için belirli olayları sırasında kayıttan yürütme](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam bir listesi için bkz. [yapmadan kodlanmış UI testleri beklemek için belirli olayları sırasında kayıttan yürütme](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir. Daha fazla bilgi için [kodlanmış UI testlerinde HTML5 denetimleri kullanma](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir. Daha fazla bilgi için [kodlanmış UI testlerinde HTML5 denetimleri kullanma](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - **Kodlanmış UI testi kodlama Kılavuzu:**
+  - **Kodlanmış UI testi kodlama Kılavuzu:**
 
-        - [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
+    - [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
+    - [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
 
-        - [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> Oluşturulan kod
  Seçeneğini belirlediğinizde **kod üret**, bazı kod parçalarını oluşturulur:

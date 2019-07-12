@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432581"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822084"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 1. İçinde **Çözüm Gezgini**, gölgelendiriciye ekleyin ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
   
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)** .  
   
 3. Belirtin **adı** gölgelendirici dosyası ve **konumu** sonra istediğiniz yere oluşturulacak.  
   
@@ -93,17 +93,17 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 - İşte nasıl:  
   
-    - Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.  
-  
-    - Grafikten bir düğümü kaldırmak için onu seçin ve Sil'e basın.  
-  
-    - Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.  
-  
-    - İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.  
-  
-    - Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.  
-  
-    - Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.  
+  - Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.  
+
+  - Grafikten bir düğümü kaldırmak için onu seçin ve Sil'e basın.  
+
+  - Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.  
+
+  - İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.  
+
+  - Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.  
+
+  - Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.  
   
 ### <a name="previewing-shaders"></a>Gölgelendiricileri Önizleme  
  Gölgelendirici uygulamanızda nasıl görüneceğini anlamanıza yardımcı olması için etkili nasıl önizlemesini görebilirsiniz yapılandırabilirsiniz. Uygulamanızı yaklaşık olarak belirlemenizi sağlayan, işleme, dokuları ve diğer malzeme parametreleri yapılandırmak, animasyon zaman tabanlı etkileri etkinleştirmek ve farklı açılardan Önizleme incelemek için birkaç şekil birini seçebilirsiniz.  

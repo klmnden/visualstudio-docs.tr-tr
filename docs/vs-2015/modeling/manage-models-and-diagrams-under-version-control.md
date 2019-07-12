@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680300"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825790"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Sürüm denetimi altındaki modelleri ve diyagramları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Modelleme projeleri ve diyagramları, kod haritaları (.dgml dosyaları) dahil o
   
 - Her diyagram iki dosyada depolanır. Örneğin, bir sınıf diyagramı vardır:  
   
-    - **DiagramName.classdiagram** -bu dosya silinir veya bozulursa diyagram kaybolacaktır değilse, ancak sınıflar ve ilişkilendirmeler modelde olmaya devam eder ve UML Model Gezgini'nde görülebilir.  
-  
-    - **DiagramName.classdiagram.layout** -bu dosya, şekiller hala diyagramda görünür fakat boyutlarını ve konumlarını kaybederler. Her Düzen dosyası, diyagram dosyasına kuruluşudur. Bunu görmek için Çözüm Gezgini'nde diyagram dosyasının yanındaki [+]'e tıklayın.  
+  - **DiagramName.classdiagram** -bu dosya silinir veya bozulursa diyagram kaybolacaktır değilse, ancak sınıflar ve ilişkilendirmeler modelde olmaya devam eder ve UML Model Gezgini'nde görülebilir.  
+
+  - **DiagramName.classdiagram.layout** -bu dosya, şekiller hala diyagramda görünür fakat boyutlarını ve konumlarını kaybederler. Her Düzen dosyası, diyagram dosyasına kuruluşudur. Bunu görmek için Çözüm Gezgini'nde diyagram dosyasının yanındaki [+]'e tıklayın.  
   
 > [!NOTE]
 > Dosyalar arasında tutarlılık sağlamak önemlidir. Bir .uml dosyasındaki değişiklikleri geri almak için kaynak denetimi kullanın, örneğin, karşılık gelen değişiklikleri geri. * diyagramı ve .layout dosyaları aynı anda. Öğeleri temsil bir. \*diyagram dosyasını kaybolacak, ayrıca bir .uml dosyasındaki gösterilmez.  
@@ -55,9 +55,9 @@ Modelleme projeleri ve diyagramları, kod haritaları (.dgml dosyaları) dahil o
   
 - Yalnızca üzerinde çalıştığınız paketi değiştirdiğinizden emin olmak için:  
   
-    - Ayarlama **LinkedPackage** özelliği bir UML sınıfı, bileşenin veya kullanım durumu diyagramı.  
-  
-    - Oluşturduktan hemen sonra UML Model Gezgini'nde, etkinlik veya etkileşimi paketinize sürükleyin. İlk düğümü etkinlik veya sıralı diyagramda oluşturduğunuzda bu öğe UML Model Gezgini'nde görünecektir.  
+  - Ayarlama **LinkedPackage** özelliği bir UML sınıfı, bileşenin veya kullanım durumu diyagramı.  
+
+  - Oluşturduktan hemen sonra UML Model Gezgini'nde, etkinlik veya etkileşimi paketinize sürükleyin. İlk düğümü etkinlik veya sıralı diyagramda oluşturduğunuzda bu öğe UML Model Gezgini'nde görünecektir.  
   
 - Paketleri izlemenize yardımcı olmak için gerçek paket adlarını yansıtmak için paket dosyalarını yeniden adlandırın.  
   

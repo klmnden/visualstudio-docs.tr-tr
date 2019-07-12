@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319307"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823897"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme
 
@@ -62,8 +62,8 @@ Kullanıcının yükleme Visual Studio Uzantısı'nı çalıştırmak için gere
 * Uzantı bildirim dosyası Düzenle (genellikle adlı *source.extension.vsixmanifest*).
 * Olun `InstallationTarget` 15.0 içerir.
 * Gerekli yükleme önkoşulları (aşağıdaki örnekte gösterildiği gibi) ekleyin.
-   * Yalnızca bileşen kimlikleri için yükleme önkoşulları belirlemek öneririz.
-   * Bu belgenin sonuna bakın [belirleme Bileşen kimlikleri yönergeleri](#find-component-ids).
+  * Yalnızca bileşen kimlikleri için yükleme önkoşulları belirlemek öneririz.
+  * Bu belgenin sonuna bakın [belirleme Bileşen kimlikleri yönergeleri](#find-component-ids).
 
 Örnek:
 
@@ -120,12 +120,12 @@ Bunu aşağıdaki gibi görünmelidir: *C:\Program Files (x86)\Microsoft Visual 
 
 * VSIX projesi oluşturun.
 * Oluşturulan VSIX sıkıştırmasını açın.
-   * Varsayılan olarak, VSIX dosyasını yaşadığı içinde *bin/Debug* veya *bin/yayın* olarak *[YourCustomExtension] .vsix*.
-   * Yeniden adlandırma *.vsix* için *.zip* kolayca içeriğini görüntüleyin.
+  * Varsayılan olarak, VSIX dosyasını yaşadığı içinde *bin/Debug* veya *bin/yayın* olarak *[YourCustomExtension] .vsix*.
+  * Yeniden adlandırma *.vsix* için *.zip* kolayca içeriğini görüntüleyin.
 * Üç dosyayı varlığını denetleyin:
-   * *Extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *Extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Tüm gerekli Önkoşullar yüklendi denetimi
 
@@ -141,11 +141,11 @@ Uzantıyı yüklemek çalışır:
 ![Visual Studio 2017'de VSIX yükleyicisi](media/vsixinstaller-vs-2017.png)
 
 * İsteğe bağlı: Visual Studio'nun önceki sürümlerini denetleyin.
-   * Geriye dönük uyumluluk kanıtlar.
-   * Çalışmalıdır Visual Studio 2012, Visual Studio 2013, Visual Studio 2015 için.
+  * Geriye dönük uyumluluk kanıtlar.
+  * Çalışmalıdır Visual Studio 2012, Visual Studio 2013, Visual Studio 2015 için.
 * İsteğe bağlı: VSIX Yükleyici sürüm denetleyicisi sürümlerinin bir seçim sunar denetleyin.
-   * Visual Studio'nun önceki sürümleri (yüklüyse) içerir.
-   * Visual Studio 2017'yi içerir.
+  * Visual Studio'nun önceki sürümleri (yüklüyse) içerir.
+  * Visual Studio 2017'yi içerir.
 
 Visual Studio kısa bir süre önce açıldı, bu gibi bir iletişim kutusu görebilirsiniz:
 

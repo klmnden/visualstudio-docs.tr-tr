@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715218"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821363"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio'daki veri kümesi araçları
 
@@ -75,13 +75,13 @@ Visual Studio, veri kümeleri ile çalışmayı kolaylaştırmak için araçlar 
 
 - Kullanım **TableAdapter Yapılandırma Sihirbazı'nı** sorgu ya da veri kümesini doldurur saklı yordam belirlemenizi ve uygulamak için hangi veritabanı işlemleri (güncelleştirme, silme vb.). Daha fazla bilgi için şu konulara bakın:
 
-    - [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Veri kümelerindeki verileri düzenleme](../data-tools/edit-data-in-datasets.md)
+  - [Veri kümelerindeki verileri düzenleme](../data-tools/edit-data-in-datasets.md)
 
-    - [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)
+  - [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)
 
-    - [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
+  - [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
 
 - Sorgu ve veri kümesinde arayın. Daha fazla bilgi için [sorgu veri kümeleri](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] sağlar [LINQ (dil ile tümleşik sorgu)](/dotnet/csharp/linq/) verileri üzerinde bir <xref:System.Data.DataSet> nesne. Daha fazla bilgi için [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

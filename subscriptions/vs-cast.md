@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
-ms.openlocfilehash: 9ee1468534e9f0c68465f841bd43e5fac0229780
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784642"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823677"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
 
@@ -97,8 +97,8 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 - CAST vurgulayın kullanma konusunda yardım mı ihtiyacınız var?  Bu kaynaklara göz atın:
-    - [Bir destek isteği gönderin](https://casthighlight.com/support/)
-    - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Bir destek isteği gönderin](https://casthighlight.com/support/)
+  - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

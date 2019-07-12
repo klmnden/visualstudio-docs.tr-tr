@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321366"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823813"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -63,35 +63,35 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 
 * Yalnızca GAC içine yüklenen derlemeler:
 
-   Bu derlemeleri artık altında yüklü <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Bu klasör, Visual Studio işlemin algılama yolları bir parçasıdır.
+  Bu derlemeleri artık altında yüklü <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Bu klasör, Visual Studio işlemin algılama yolları bir parçasıdır.
 
 * Yoklama olmayan bir yol ve GAC'ye yüklenmiş derlemeleri:
 
-   * GAC içindeki kopyalama Kurulum'dan kaldırıldı.
-   * A *.pkgdef* dosyası, derleme için bir kod temel giriş belirtmek için eklenmiştir.
+  * GAC içindeki kopyalama Kurulum'dan kaldırıldı.
+  * A *.pkgdef* dosyası, derleme için bir kod temel giriş belirtmek için eklenmiştir.
 
-      Örneğin:
+    Örneğin:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Çalışma zamanında, Visual Studio pkgdef alt bu girişleri Visual Studio işlemin çalışma zamanı yapılandırma dosyasına birleştirir. (altında *[VSAPPDATA]\devenv.exe.config*) olarak [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) öğeleri. Arama yolları yoklama aracılığıyla önlediği için derleme bulunamadı Visual Studio işlemini izin vermek için önerilen yöntem budur.
+    Çalışma zamanında, Visual Studio pkgdef alt bu girişleri Visual Studio işlemin çalışma zamanı yapılandırma dosyasına birleştirir. (altında *[VSAPPDATA]\devenv.exe.config*) olarak [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) öğeleri. Arama yolları yoklama aracılığıyla önlediği için derleme bulunamadı Visual Studio işlemini izin vermek için önerilen yöntem budur.
 
 ### <a name="reacting-to-this-breaking-change"></a>Bu bozucu bir değişiklik tepki verme
 
 * Visual Studio işlemi içinde uzantınızın çalışıyorsa:
 
-   * Kodunuzu Visual Studio çekirdek derlemeleri bulmak mümkün olacaktır.
-   * Kullanmayı bir *.pkgdef* gerekirse derlemelerinizin bir yol belirtmek için dosya.
+  * Kodunuzu Visual Studio çekirdek derlemeleri bulmak mümkün olacaktır.
+  * Kullanmayı bir *.pkgdef* gerekirse derlemelerinizin bir yol belirtmek için dosya.
 
 * Visual Studio işlemi dışında uzantınızı çalışıyorsa:
 
-   Visual Studio çekirdek derlemeler aranıyor göz önünde bulundurun <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*yapılandırma dosyası veya bütünleştirilmiş kod çözücü kullanma.
+  Visual Studio çekirdek derlemeler aranıyor göz önünde bulundurun <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*yapılandırma dosyası veya bütünleştirilmiş kod çözücü kullanma.
 
 ## <a name="change-reduce-registry-impact"></a>Değiştir: Kayıt defteri etkiyi azaltmak
 

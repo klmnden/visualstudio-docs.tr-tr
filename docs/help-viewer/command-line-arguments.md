@@ -3,17 +3,17 @@ title: Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneti
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824713"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825079"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi
 
@@ -49,7 +49,7 @@ Aşağıdaki tabloda, anahtarlar ve bağımsız değişkenler için Yardım içe
 |/ catalogname|Evet|İçerik kataloğunun adını belirtir.|
 |/ Locale|Hayır|Görüntüleme ve Yardım Görüntüleyici'nün geçerli örneğini içeriğini yönetmek için kullanılan ürün yerel ayarını belirtir. Örneğin, belirttiğiniz `EN-US` için belirtirsiniz.<br /><br /> Bir yerel ayar belirtmezseniz, işletim sistemi yerel ayarı kullanılır. Bu yerel ayar belirlenemiyorsa `EN-US` kullanılır.<br /><br /> Geçerli olmayan bir yerel ayar belirtirseniz, bir hata iletisi olay günlüğüne kaydedilir.|
 |/e|Hayır|Geçerli kullanıcının yönetici kimlik bilgileri varsa Yardım içerik yöneticisini yönetimsel ayrıcalıklara yükseltir.|
-|/ sourceurı|Hayır|İçeriğin kurulduğu URL'yi (API hizmeti) yüklü belirtir veya içerik yükleme dosyası yolu (*.msha*). URL, ürün grubuna (üst düzey düğümü) veya Visual Studio 2010 stil son içinde ürün kitaplarına (yaprak düzey düğüm) işaret edebilir. URL'nin sonunda bir eğik çizgi (/) eklemeniz gerekmez. Sonunda eğik çizgi eklerseniz, uygun şekilde işlenir.<br /><br /> Bir internet bağlantısı kullanılamıyor ya da içerik yönetilirken kesintiye günlük bulunmayan, bir dosya belirtirseniz, geçerli değil veya erişilebilir durumda değil durumunda veya bir hata iletisi kaydedilir.|
+|/ sourceurı|Hayır|İçeriğin kurulduğu URL'yi (API hizmeti) yüklü belirtir veya içerik yükleme dosyası yolu ( *.msha*). URL, ürün grubuna (üst düzey düğümü) veya Visual Studio 2010 stil son içinde ürün kitaplarına (yaprak düzey düğüm) işaret edebilir. URL'nin sonunda bir eğik çizgi (/) eklemeniz gerekmez. Sonunda eğik çizgi eklerseniz, uygun şekilde işlenir.<br /><br /> Bir internet bağlantısı kullanılamıyor ya da içerik yönetilirken kesintiye günlük bulunmayan, bir dosya belirtirseniz, geçerli değil veya erişilebilir durumda değil durumunda veya bir hata iletisi kaydedilir.|
 |Vendor|Hayır|Kaldırılacak ürün içeriği için satıcıyı belirtir (örneğin, `Microsoft`). Bu anahtar için varsayılan değişken Microsoft'tur.|
 |/ ProductName|Hayır|Kaldırılacak kitapların ürün adını belirtir. Ürün adı tanımlanır *helpcontentsetup.msha* veya *books.html* içerik ile gönderilen dosyaları. Aynı anda yalnızca tek bir üründen kitap kaldırabilirsiniz. Kitapları birden çok üründen kaldırmak için birden çok yükleme gerçekleştirmeniz gerekir.|
 |/ booklist|Hayır|Yönetilecek, boşluklarla ayrılmış kitap adlarını belirtir. Değerler, yükleme medyasında listelendiği gibi kitap adları eşleşmelidir.<br /><br /> Bu bağımsız değişkeni belirtmezseniz, / sourceurı içinde belirtilen ürün için önerilen tüm kitaplar yüklenir.<br /><br /> Bir kitap adını, bir veya daha fazla boşluk içeriyorsa, listenin uygun şekilde ayrılması çift tırnak (") içine alın.<br /><br /> Geçerli veya ulaşılabilir olmayan bir/sourceurı belirtirseniz, hata iletileri kaydedilir.|

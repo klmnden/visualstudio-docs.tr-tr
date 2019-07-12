@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim aboneliği hakkında bilgi edinin.
-ms.openlocfilehash: 0182e8e69545191285fc4f45b8bd832dae4d1317
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784633"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825344"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -81,8 +81,8 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 - DataCamp kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:
-    - [DataCamp topluluk](https://www.datacamp.com/community/tutorials), forumlar ve öğreticiler.
-    - [DataCamp Yardım Merkezi](https://support.datacamp.com/hc)burada destek konuları aramak ve isteği kullanıcı sorulara bakın.
-    - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
+  - [DataCamp topluluk](https://www.datacamp.com/community/tutorials), forumlar ve öğreticiler.
+  - [DataCamp Yardım Merkezi](https://support.datacamp.com/hc)burada destek konuları aramak ve isteği kullanıcı sorulara bakın.
+  - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

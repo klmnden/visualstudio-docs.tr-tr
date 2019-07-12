@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077257"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825353"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio için animasyonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077257"
 
 - **Zamanlama ve hızını önemli** geçişleri hızlı ve doğal düşünüyorsanız emin olmak için:
 
-    - Animasyonlu geçişler yarım saniye (500 milisaniye cinsinden) içinde tamamlayın.
+  - Animasyonlu geçişler yarım saniye (500 milisaniye cinsinden) içinde tamamlayın.
 
-    - Sık oluşacak animasyonları kullanıcının iş akışı kesintiye yoksa yeterince hızlı olması gerekir.
+  - Sık oluşacak animasyonları kullanıcının iş akışı kesintiye yoksa yeterince hızlı olması gerekir.
 
-    - Bu nedenle hızlı veya jarring anlaşılması zor ancak değil çok yavaş bir geçişi tamamlamak için sabırsız kolaylaştırır, olduğunu animasyonları olmamalıdır.
+  - Bu nedenle hızlı veya jarring anlaşılması zor ancak değil çok yavaş bir geçişi tamamlamak için sabırsız kolaylaştırır, olduğunu animasyonları olmamalıdır.
 
-    - Değişken zamanlama önem vurgulamak için kullanın. Örneğin, bir sınıf diyagramında öğelerinin bir dizisini aracılığıyla gittiğinizde, öğeleri arasında geçişler hızlandırmak sonra önemli öğeye odaklanmayı yavaşlayabilir.
+  - Değişken zamanlama önem vurgulamak için kullanın. Örneğin, bir sınıf diyagramında öğelerinin bir dizisini aracılığıyla gittiğinizde, öğeleri arasında geçişler hızlandırmak sonra önemli öğeye odaklanmayı yavaşlayabilir.
 
 - **Aşamalı doğrusal olmayan hızlandırma kullanın** diğerine bir durumdan diğerine taşıma sakin ve doğal bir fikir veren
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077257"
 
 - **İlerleme veya durum gösterilirken** animasyon aracılığıyla:
 
-    - Temel alınan işlem değil ilerletmektedir olduğunda ilerleme taşıma gösteren durdurun.
+  - Temel alınan işlem değil ilerletmektedir olduğunda ilerleme taşıma gösteren durdurun.
 
-    - Belirsiz işlemleri kararlı işlemlerden ayırmak.
+  - Belirsiz işlemleri kararlı işlemlerden ayırmak.
 
-    - Bir animasyon tanımlanabilen tamamlama ve hata durumları olduğundan emin olun.
+  - Bir animasyon tanımlanabilen tamamlama ve hata durumları olduğundan emin olun.
 
-    - Durumu göster ve gerçek kullanımı için ek bilgi sağlayarak gerçek değeri olduğundan emin olun etkisi animasyonları kullanımını en aza indirin. Örnekler arasında geçici durum değişikliklerini ve acil durumlar bulunur
+  - Durumu göster ve gerçek kullanımı için ek bilgi sağlayarak gerçek değeri olduğundan emin olun etkisi animasyonları kullanımını en aza indirin. Örnekler arasında geçici durum değişikliklerini ve acil durumlar bulunur
 
 #### <a name="do-not"></a>Yapma:
 
@@ -326,7 +326,7 @@ ms.locfileid: "60077257"
 
 - Bitiş X ve Y konumu: Özel kullanıcı Arabirimi
 
-- Hareket yolu: Yok.
+- Hareket yolu: None
 
 - Süresi: 200 milisaniye cinsinden tek başına bir birleşimi animasyon dizisinin bir parçası kullanıldığında 100 milisaniye
 

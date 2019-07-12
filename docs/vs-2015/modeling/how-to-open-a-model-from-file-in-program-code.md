@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c788a9ae126530484efc5f693505fc34c2793768
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441021"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824232"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ DSL model herhangi bir uygulama açabilirsiniz.
   
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    - İşbu sözleşmenin görmüyorsanız **.NET** sekmesinde **Add References** iletişim kutusu, tıklayın **Gözat** gidin ve sekme `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+  - İşbu sözleşmenin görmüyorsanız **.NET** sekmesinde **Add References** iletişim kutusu, tıklayın **Gözat** gidin ve sekme `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
 - DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *Şirketiniz*. *Projeniz*`.Dsl.dll`.  
   

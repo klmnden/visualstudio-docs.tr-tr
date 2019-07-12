@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441206"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825742"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak Denetimi Eklentileri için Test Kılavuzu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
   
 - [Test Alanı 1: Kaynak Denetimine Ekleme/Kaynak Denetiminden Açma](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle  
-  
-    - Büyük/küçük harf 1b: Açık çözüm kaynak denetimi  
-  
-    - Durum 1c: Kaynak denetiminden çözüm ekleyin  
-  
+  - Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle  
+
+  - Büyük/küçük harf 1b: Açık çözüm kaynak denetimi  
+
+  - Durum 1c: Kaynak denetiminden çözüm ekleyin  
+
 - [Test Alanı 2: Kaynak Denetiminden Alma](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [Test Alanı 3: Kullanıma Alma/Kullanıma Almayı Geri Alma](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - 3. durum: Kullanıma almayı geri al / gözden geçirin  
-  
-    - Büyük/küçük harf 3a: Kullanıma Al  
-  
-    - Büyük/küçük harf 3b: Bağlantısı kesilen kullanıma alma  
-  
-    - Durum 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)  
-  
-    - Case 3d: Sessiz kullanıma alma  
-  
-    - Büyük/küçük harf 3e: Kullanıma almayı geri al  
+  - 3\. durum: Kullanıma almayı geri al / gözden geçirin  
+
+  - Büyük/küçük harf 3a: Kullanıma Al  
+
+  - Büyük/küçük harf 3b: Bağlantısı kesilen kullanıma alma  
+
+  - Durum 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)  
+
+  - Case 3d: Sessiz kullanıma alma  
+
+  - Büyük/küçük harf 3e: Kullanıma almayı geri al  
   
 - [Test Alanı 4: İade Etme](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - Büyük/küçük harf 4a: Değiştirilen öğeler  
-  
-    - Büyük/küçük harf 4b: Dosya ekleme  
-  
-    - 4c. durum: Ekleme projeleri  
+  - Büyük/küçük harf 4a: Değiştirilen öğeler  
+
+  - Büyük/küçük harf 4b: Dosya ekleme  
+
+  - 4c. durum: Ekleme projeleri  
   
 - [Test Alanı 5: Kaynak Denetimini Değiştirme](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - Büyük/küçük harf 5a: bağlama  
-  
-    - Büyük/küçük harf 5b: Bağlamayı Kaldır  
-  
-    - Durum 5c: yeniden bağlayın  
-  
+  - Büyük/küçük harf 5a: bağlama  
+
+  - Büyük/küçük harf 5b: Bağlamayı Kaldır  
+
+  - Durum 5c: yeniden bağlayın  
+
 - [Test Alanı 6: Silme](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [Test Alanı 7: Paylaşma](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [Test Alanı 8: Eklenti Değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - Büyük/küçük harf 8a: Otomatik değiştirme  
-  
-    - Büyük/küçük harf 8b: Çözüm tabanlı Değiştir  
-  
+
+  - Büyük/küçük harf 8a: Otomatik değiştirme  
+
+  - Büyük/küçük harf 8b: Çözüm tabanlı Değiştir  
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak Denetimi Eklentileri](../../extensibility/source-control-plug-ins.md)

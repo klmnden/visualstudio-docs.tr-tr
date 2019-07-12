@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951338"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825068"
 ---
 # Nasıl yapılır: İçindekilerde konuları bulun
 
@@ -31,7 +31,7 @@ ms.locfileid: "62951338"
 
 ## TOC için filtre
 
-Görünen konuların kapsamını daraltmak üzere TOC için filtre uygulayabilirsiniz **içeriği** sekmesi. Başlıkları, yalnızca belirttiğiniz terimin kök içeriyorsa listede görünür. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklar veya "sorun giderme" görünür. Başlıkları terim içermeyen düğümler üç nokta ile tek bir düğüm için daraltılmış (**...** ).
+Görünen konuların kapsamını daraltmak üzere TOC için filtre uygulayabilirsiniz **içeriği** sekmesi. Başlıkları, yalnızca belirttiğiniz terimin kök içeriyorsa listede görünür. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklar veya "sorun giderme" görünür. Başlıkları terim içermeyen düğümler üç nokta ile tek bir düğüm için daraltılmış ( **...** ).
 
 1. Seçin **içeriği** sekmesi.
 

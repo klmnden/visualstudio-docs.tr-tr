@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746147"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825609"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Kayıtlı IntelliTrace verilerini kullanarak (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Bir IntelliTrace günlük (.iTrace) dosyasından hata ayıklamaya başladığın
 
 - .İTrace dosyasını bir Team Foundation Server iş öğesine iliştirildiyse sonucu iş öğesi bu adımları izleyin:
 
-    - Altında **tüm bağlantıları**, .iTrace dosyasını bulun. Dosyayı açın.
+  - Altında **tüm bağlantıları**, .iTrace dosyasını bulun. Dosyayı açın.
 
-         \- veya -
+    \- veya -
 
-    - Altında **yineleme adımları**, seçin **IntelliTrace** bağlantı.
+  - Altında **yineleme adımları**, seçin **IntelliTrace** bağlantı.
 
 > [!TIP]
 > Hata ayıklama sırasında IntelliTrace dosyasını kapattıysanız, kolayca yeniden açabilirsiniz. Git **hata ayıklama** menüsünde seçin **IntelliTrace**, **günlük özetini göster**. Ayrıca seçebilirsiniz **günlük özetini göster** içinde **IntelliTrace** penceresi. Yalnızca IntelliTrace ile hata ayıklama sırasında bu kullanılabilir.

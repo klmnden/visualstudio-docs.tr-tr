@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440059"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821608"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: Dosyaları Derlemeden Dışlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - veya -  
+     \- veya -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - veya -  
+     \- veya -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  

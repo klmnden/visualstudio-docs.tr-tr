@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310790"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823585"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI metni ve Visual Studio için Yardım
 ## <a name="BKMK_UITextAndTerminology"></a> UI metni ve terminoloji
@@ -191,11 +191,11 @@ ms.locfileid: "66310790"
 
 - Kendinize bir hata iletisi oluşturulurken sorun gereken bazı sorular:
 
-    - Kullanıcı başına bu hata sorunu çözmek nasıl ekleyeceğimi?
+  - Kullanıcı başına bu hata sorunu çözmek nasıl ekleyeceğimi?
 
-    - Kullanıcı, bu hata olarak aynı sözlük kullanıyor mu?
+  - Kullanıcı, bu hata olarak aynı sözlük kullanıyor mu?
 
-    - Bu hata belirsiz veya birden çok durumlarda paylaşılan? Nasıl bu durumda, kullanıcıların ihtiyacı olan çözümü kılavuzu?
+  - Bu hata belirsiz veya birden çok durumlarda paylaşılan? Nasıl bu durumda, kullanıcıların ihtiyacı olan çözümü kılavuzu?
 
 #### <a name="build-errors"></a>Derleme hataları
  Visual Studio yazılım geliştirme aracı olduğundan, çoğu bileşenlerinden biri bir derleme, dönüştürme veya kodlama Geliştirici iş ikili biçimine dönüştürmek için adım vardır. Bu dönüştürmeler, derleyici yanlış yazılan dosyaları işleyemediğinde veya derleyici seçenekleri düzgün ayarladığınızda olmayan hatalara neden olabilir.

@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433159"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825923"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
   
 - `ShapeElement target`. Şekil veya diyagram üzerine kullanıcı birşey sürüklediği.  
   
-     `ShapeElement` bir sınıfta altını çizen UML modelleme araçları. UML model ve diyagramlarının tutarsız bir duruma koymanın riskini azaltmak için bu sınıfın yöntemlerini doğrudan kullanmamanızı öneririz. Bunun yerine öğenin kaydırma bir `IShape`ve sonra da açıklanmış yöntemleri kullanın [diyagramlar üzerinde bir UML modeli görüntüleme](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Elde etmek için bir `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Sürükleme tarafından hedeflenen bir model öğesi elde etmek veya çift tıklama işlemleri için:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Bu daha belirli bir öğe türüne çevirebilirsiniz.  
-  
-    - UML modeli içeren bir UML model deposu elde etmek için:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Ana bilgisayar ve hizmet sağlayıcısına erişim elde etmek için:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` bir sınıfta altını çizen UML modelleme araçları. UML model ve diyagramlarının tutarsız bir duruma koymanın riskini azaltmak için bu sınıfın yöntemlerini doğrudan kullanmamanızı öneririz. Bunun yerine öğenin kaydırma bir `IShape`ve sonra da açıklanmış yöntemleri kullanın [diyagramlar üzerinde bir UML modeli görüntüleme](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Elde etmek için bir `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Sürükleme tarafından hedeflenen bir model öğesi elde etmek veya çift tıklama işlemleri için:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - UML modeli içeren bir UML model deposu elde etmek için:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Ana bilgisayar ve hizmet sağlayıcısına erişim elde etmek için:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Bu parametre sürükleme işleminin kaynak nesnesinin seri hala getirilmiş biçimini taşır:  
   

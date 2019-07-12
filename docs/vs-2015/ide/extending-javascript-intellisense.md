@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441459"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824927"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ JavaScript IntelliSense genişletilebilirlik özelliği, üçüncü taraf kitapl
   
  Otomatik bulma mekanizmasından dosya adlandırma kuralını uyguladığınızdan uzantıları otomatik olarak bulmak dil hizmeti sağlayan *libraryname*. intellisense.js ve kitaplığa ile aynı dizinde bulunur Uzantı geçerli. Örneğin, jQuery kitaplığı için geçerli bir uzantı jQuery.intellisense.js olacaktır. Daha kısıtlayıcı jQuery uzantıları için jQuery-1.7.1.intellisense.js (sürüm özgü bir uzantı) veya jQuery.ui.intellisense.js (kapsamlı jQuery kitaplığı için bir uzantı) gibi dosya adlarını kullanabilirsiniz. Belirli bir kitaplık için birden fazla uzantı bulunursa uzantısının en kısıtlayıcı sürümü kullanılır.  
   
- Uzantı için tüm JavaScript proje dosyalarını kullanmak istiyorsanız, bunun yerine uzantısı için başvuru grubu eklemek seçebilirsiniz. Başvuru grupları; ya da örtük bir başvuru içeren ve adanmış çalışan başvuru içeren birkaç türü vardır. Bir uzantı eklemek için genellikle bir örtük bir başvuru grubu ya da dosya ekleme ihtiyacınız **örtük (Windows)**, **örtük (Web)**. Örtük başvuruda Kod Düzenleyicisi'nde açılan her .js dosyası için kapsamına dahildir. Bu yöntemi kullandığınızda, uzantısı ve uzantı ekleme dosyası eklemeniz gerekir.  
+ Uzantı için tüm JavaScript proje dosyalarını kullanmak istiyorsanız, bunun yerine uzantısı için başvuru grubu eklemek seçebilirsiniz. Başvuru grupları; ya da örtük bir başvuru içeren ve adanmış çalışan başvuru içeren birkaç türü vardır. Bir uzantı eklemek için genellikle bir örtük bir başvuru grubu ya da dosya ekleme ihtiyacınız **örtük (Windows)** , **örtük (Web)** . Örtük başvuruda Kod Düzenleyicisi'nde açılan her .js dosyası için kapsamına dahildir. Bu yöntemi kullandığınızda, uzantısı ve uzantı ekleme dosyası eklemeniz gerekir.  
   
  Kullanım **IntelliSense** sayfasının **seçenekleri** uzantı başvuru grubu eklemek için iletişim kutusu. Erişebildiğiniz **IntelliSense** seçerek sayfası **Araçları**, **seçenekleri** menü çubuğu ve açıp **metin düzenleyici**, **JavaScript**, **IntelliSense**, **başvuruları**. Başvuru grupları hakkında daha fazla bilgi için bkz. [JavaScript IntelliSense](../ide/javascript-intellisense.md) ve [seçenekler, metin düzenleyici, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. Her bir parametreye işlev açıklamaları temsil eden bir dizi döndürür. Dizi üyeleri Ekle:  
   
-    - `name`. Parametre adını temsil eden bir dize döndürür.  
-  
-    - `comment`. Parametre açıklama içeren bir dize döndürür.  
+  - `name`. Parametre adını temsil eden bir dize döndürür.  
+
+  - `comment`. Parametre açıklama içeren bir dize döndürür.  
   
 ### <a name="FunctionHelp"></a> functionHelp özelliği  
  İşlev için Yardım'ı döndürür. Bu özellik kullanılabilir `signaturehelp` olay nesnesi.  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. Okuma/yazma. Alır veya ayarlar işlev imzası dizisi. Dizideki her öğe bir `signature` nesne. Bazı `signature` özellikleri gibi `locid`, karşılık gelen ortak [XML belgeleri yorumları](../ide/xml-documentation-comments-javascript.md) öznitelikleri.  
   
-     Üyeleri `signature` nesne içerir:  
-  
-    - `description`. Okuma/yazma. İşlevi tanımlayan bir dize döndürür.  
-  
+  Üyeleri `signature` nesne içerir:  
+
+  - `description`. Okuma/yazma. İşlevi tanımlayan bir dize döndürür.  
+
+  - `locid`. Okuma/yazma. Yerelleştirme işlevi hakkında bilgi içeren bir dize tanımlayıcı döndürür.  
+
+  - `helpKeyword`. Okuma/yazma. Yardım anahtar sözcüğü içeren bir dize döndürür.  
+
+  - `externalFile`. Okuma/yazma. Üye kimliği içeren dosyayı temsil eden bir dize döndürür  
+
+  - `externalid`. Okuma/yazma. İşlevin üye kimliği temsil eden bir dize döndürür.  
+
+  - `params`. Okuma/yazma. Alır veya işlevi için parametreler dizisi ayarlar. Parametreler dizideki her öğe bir `parameter` aşağıdaki özniteliklerine karşılık gelen özelliklerle nesnesi [ \<param >](../ide/param-javascript.md) öğesi:  
+
+    - `name`. Okuma/yazma. Parametre adını temsil eden bir dize döndürür.  
+
+    - `type`. Okuma/yazma. Parametre türünü temsil eden bir dize döndürür.  
+
+    - `elementType`. Okuma/yazma. Tür ise `Array`, dizideki öğelerin türünü temsil eden bir dize döndürür.  
+
+    - `description`. Okuma/yazma. Parametreyi açıklayan bir dize döndürür.  
+
     - `locid`. Okuma/yazma. Yerelleştirme işlevi hakkında bilgi içeren bir dize tanımlayıcı döndürür.  
-  
+
+    - `optional`. Okuma/yazma. Parametre isteğe bağlı olup olmadığını gösteren bir dize döndürür. `true` parametre isteğe bağlı olduğunu gösterir; `false` bunu olmadığını gösterir.  
+
+  - `returnValue`. Okuma/yazma. Nesneyi alır veya bir dönüş değeri karşılık gelen özelliklerle birlikte aşağıdaki öznitelikleri ayarlar [ \<döndürür >](../ide/returns-javascript.md) öğesi:  
+
+    - `type`. Okuma/yazma. Dönüş türünü temsil eden bir dize döndürür.  
+
+    - `elementType`. Okuma/yazma. Tür ise `Array`, dizideki öğelerin türünü temsil eden bir dize döndürür.  
+
+    - `description`. Okuma/yazma. Dönüş değeri tanımlayan bir dize döndürür.  
+
+    - `locid`. Okuma/yazma. Yerelleştirme işlevi hakkında bilgi içeren bir dize tanımlayıcı döndürür.  
+
     - `helpKeyword`. Okuma/yazma. Yardım anahtar sözcüğü içeren bir dize döndürür.  
-  
+
     - `externalFile`. Okuma/yazma. Üye kimliği içeren dosyayı temsil eden bir dize döndürür  
-  
+
     - `externalid`. Okuma/yazma. İşlevin üye kimliği temsil eden bir dize döndürür.  
-  
-    - `params`. Okuma/yazma. Alır veya işlevi için parametreler dizisi ayarlar. Parametreler dizideki her öğe bir `parameter` aşağıdaki özniteliklerine karşılık gelen özelliklerle nesnesi [ \<param >](../ide/param-javascript.md) öğesi:  
-  
-        - `name`. Okuma/yazma. Parametre adını temsil eden bir dize döndürür.  
-  
-        - `type`. Okuma/yazma. Parametre türünü temsil eden bir dize döndürür.  
-  
-        - `elementType`. Okuma/yazma. Tür ise `Array`, dizideki öğelerin türünü temsil eden bir dize döndürür.  
-  
-        - `description`. Okuma/yazma. Parametreyi açıklayan bir dize döndürür.  
-  
-        - `locid`. Okuma/yazma. Yerelleştirme işlevi hakkında bilgi içeren bir dize tanımlayıcı döndürür.  
-  
-        - `optional`. Okuma/yazma. Parametre isteğe bağlı olup olmadığını gösteren bir dize döndürür. `true` parametre isteğe bağlı olduğunu gösterir; `false` bunu olmadığını gösterir.  
-  
-    - `returnValue`. Okuma/yazma. Nesneyi alır veya bir dönüş değeri karşılık gelen özelliklerle birlikte aşağıdaki öznitelikleri ayarlar [ \<döndürür >](../ide/returns-javascript.md) öğesi:  
-  
-        - `type`. Okuma/yazma. Dönüş türünü temsil eden bir dize döndürür.  
-  
-        - `elementType`. Okuma/yazma. Tür ise `Array`, dizideki öğelerin türünü temsil eden bir dize döndürür.  
-  
-        - `description`. Okuma/yazma. Dönüş değeri tanımlayan bir dize döndürür.  
-  
-        - `locid`. Okuma/yazma. Yerelleştirme işlevi hakkında bilgi içeren bir dize tanımlayıcı döndürür.  
-  
-        - `helpKeyword`. Okuma/yazma. Yardım anahtar sözcüğü içeren bir dize döndürür.  
-  
-        - `externalFile`. Okuma/yazma. Üye kimliği içeren dosyayı temsil eden bir dize döndürür  
-  
-        - `externalid`. Okuma/yazma. İşlevin üye kimliği temsil eden bir dize döndürür.  
   
 ### <a name="ParentObject"></a> parentObject özelliği  
  Bir üye işlevinin üst nesnesini döndürür. Örneğin, `document.getElementByID`, `parentObject` döndürür `document` nesne. Bu özellik kullanılabilir `signaturehelp` olay nesnesi.  

@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri dahil Visual Studio App Center teklifi hakkında bilgi edinin.
-ms.openlocfilehash: 858cb55a81f8bfc59b017c58a6737a7de235dbdf
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784865"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826210"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Visual Studio App Center
 
@@ -66,7 +66,7 @@ Artık App Center portala erişmek ve hesabınızı oluşturmak mümkün olması
 
 ## <a name="support-resources"></a>Destek kaynakları
 - App Center yardıma mı ihtiyacınız var?
-    - App Center takımda öneriler ve yanıtlar elde [App Center Yardım Merkezi](https://intercom.help/appcenter/).
-    - Tam kullanıma [App Center belgeleri](/appcenter/)
+  - App Center takımda öneriler ve yanıtlar elde [App Center Yardım Merkezi](https://intercom.help/appcenter/).
+  - Tam kullanıma [App Center belgeleri](/appcenter/)
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

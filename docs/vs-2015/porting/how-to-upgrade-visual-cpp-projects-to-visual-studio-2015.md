@@ -12,14 +12,14 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696427"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823286"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Nasıl yapılır: Visual C++ projelerini Visual Studio 2015'e yükseltme
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Nasıl yapılır: Visual C++ Projelerini Visual Studio 2015'e Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2017 için kullanılabileceği en son belgeler için bkz [Visual C++ taşıma ve yükseltme Kılavuzu](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -36,12 +36,12 @@ Visual Studio'nun önceki bir sürümde oluşturulmuş bir Visual C++ projesini 
 
 - ' % S'proje (.vcxproj) içinde oluşturulduysa [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] iki seçeneğiniz vardır:
 
-    - Güncellemeyi atlayabilirsiniz. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] Visual C++ araçlarına erişimi varsa herhangi bir değişiklik yapmadan projeyi yükler [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Proje ile aynı makinede sahip oluşturulduysa Visual Studio sürümünü yükleyerek bu erişimi sağlayabilirsiniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Daha fazla bilgi için [yükleme Visual Studio sürümlerini yan yana](../install/install-visual-studio-versions-side-by-side.md).
+  - Güncellemeyi atlayabilirsiniz. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] Visual C++ araçlarına erişimi varsa herhangi bir değişiklik yapmadan projeyi yükler [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Proje ile aynı makinede sahip oluşturulduysa Visual Studio sürümünü yükleyerek bu erişimi sağlayabilirsiniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Daha fazla bilgi için [yükleme Visual Studio sürümlerini yan yana](../install/install-visual-studio-versions-side-by-side.md).
 
-    - İzin vererek projeyi güncelleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu konunun ilerleyen kısımlarında açıklanan değişiklikleri yapın. Çözümünüzde birden fazla Visual C++ projesi varsa tümünü güncelleştirmeniz gerekir.
+  - İzin vererek projeyi güncelleştirebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu konunun ilerleyen kısımlarında açıklanan değişiklikleri yapın. Çözümünüzde birden fazla Visual C++ projesi varsa tümünü güncelleştirmeniz gerekir.
 
-        > [!NOTE]
-        > İlk istendiğinde güncelleştirmeyi reddederseniz, projeyi daha sonra seçerek güncelleştirebilirsiniz **VC ++ projesini güncelleştir** üzerinde **proje** menüsü. Komut görünmüyorsa, güncelleştirme gerekli değildir.
+    > [!NOTE]
+    > İlk istendiğinde güncelleştirmeyi reddederseniz, projeyi daha sonra seçerek güncelleştirebilirsiniz **VC ++ projesini güncelleştir** üzerinde **proje** menüsü. Komut görünmüyorsa, güncelleştirme gerekli değildir.
 
 ## <a name="upgrading-a-visual-c-project"></a>Bir Visual C++ projesini yükseltme
  İzin verirseniz [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] otomatik olarak projeyi güncelleştirmesini sağlamak için bu değişiklikler yapılır:

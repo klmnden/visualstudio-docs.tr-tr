@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430171"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825621"
 ---
 # <a name="web-project-essentials"></a>Web Projesi Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Web projeleri, Web uygulamaları oluşturun. Akıllı Web sayfaları bir Web uyg
   
 - Belirli bir Web sayfası ile ilişkili olmayan yardımcı sınıfları gibi ek kaynak kodu dosyaları, Web sitesi /App_Code klasöründe bulunur.  
   
-    - Bir Web sitesi projesi (WSP) her akıllı Web sayfası için bir yürütülebilir dosya oluşturur. Ek yürütülebilir dosyalar /App_Code klasöründeki tüm kaynak kodu dosyasından oluşturulur.  
+  - Bir Web sitesi projesi (WSP) her akıllı Web sayfası için bir yürütülebilir dosya oluşturur. Ek yürütülebilir dosyalar /App_Code klasöründeki tüm kaynak kodu dosyasından oluşturulur.  
+
+  - Bir Web uygulaması projesi (WAP) tüm akıllı Web sayfalarının yanı sıra /App_Code klasördeki tüm kaynak dosyaları için kod birleştiren tek bir yürütülebilir dosya oluşturur.  
   
-    - Bir Web uygulaması projesi (WAP) tüm akıllı Web sayfalarının yanı sıra /App_Code klasördeki tüm kaynak dosyaları için kod birleştiren tek bir yürütülebilir dosya oluşturur.  
-  
-- Ayrı olarak Web sitesinin kendisinde bir Web projesi için çözüm dosyası bulunur. Varsayılan olarak çözüm dosyaları \Documents ve ayarları bulunur\\*hesabınız*\My belgeleri\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
+- Ayrı olarak Web sitesinin kendisinde bir Web projesi için çözüm dosyası bulunur. Varsayılan olarak çözüm dosyaları \Documents ve ayarları bulunur\\*hesabınız*\My belgeleri\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     > Web sitesinin Çözüm dosyasıyla tutmak istiyorsanız, hemen taşıyın ve yeniden açın.  
@@ -55,9 +55,9 @@ Web projeleri, Web uygulamaları oluşturun. Akıllı Web sayfaları bir Web uyg
   
 - Akıllı Web sayfası, HTML sunucu tarafı programlama dili ile birleştirir. Sunucu tarafı dil bağımsız dil adı verilir. Kapsanan bir dil desteği için Web Proje sistemi uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> arabirimlerin ailesi.  
   
-    - Bir düzenleyicide kapsanan dili desteklemek için HTML dil hizmeti kapsanan dil kodu bir bağımsız dil hizmeti için görüntüleme erteleme gerekir.  
-  
-    - Hata işaretçileri (kırmızı squigglies) her zaman, Kod Düzenleyicisi'nin birincil arabellek oluşturulmalıdır.  
+  - Bir düzenleyicide kapsanan dili desteklemek için HTML dil hizmeti kapsanan dil kodu bir bağımsız dil hizmeti için görüntüleme erteleme gerekir.  
+
+  - Hata işaretçileri (kırmızı squigglies) her zaman, Kod Düzenleyicisi'nin birincil arabellek oluşturulmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web Projeleri](../../extensibility/internals/web-projects.md)

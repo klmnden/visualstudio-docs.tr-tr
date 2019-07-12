@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445662"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823557"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML sıralı diyagramlar: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
 - Özel durumlar veya alternatif olarak gösterilen tipik sıra gerçekleştirilebilecek alternatifleri unutmayın. Örneğin "Müşteri bu dizisi geri kalanını atlamak seçebilirsiniz."  
   
-    - Bu tür bir not daha resmi bir alternatif olarak, parça kullanmayı düşünün. Bkz: [Denetim Yapılarını Parçalarla Açıklama](#Fragments)  
+  - Bu tür bir not daha resmi bir alternatif olarak, parça kullanmayı düşünün. Bkz: [Denetim Yapılarını Parçalarla Açıklama](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Diyagramın kapsamını karar verme  
  Hangi diyagram göstermek için tasarlanmıştır hakkında açık bir şekilde anlaşılması önemlidir.  
@@ -372,13 +372,13 @@ Visual Studio'da çizdiğiniz bir *sıralı diyagram* etkileşim göstermek içi
   
 - Taşıyın ve ardından istediğiniz iletiyi sağ **diyagrama Taşı**.  
   
-     Visual Studio:  
-  
-    - Etkileşim yerini alır, seçili ileti ve tüm yan iletilerini kullanın.  
-  
-    - Değiştirilen iletileri için yeni bir sıralı diyagram taşır.  
-  
-    - Etkileşim kullanımı ve yeni sıralı diyagram arasında bir bağlantı oluşturur.  
+  Visual Studio:  
+
+  - Etkileşim yerini alır, seçili ileti ve tüm yan iletilerini kullanın.  
+
+  - Değiştirilen iletileri için yeni bir sıralı diyagram taşır.  
+
+  - Etkileşim kullanımı ve yeni sıralı diyagram arasında bir bağlantı oluşturur.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Etkileşim kullanımı tarafından başvurulan dizisi gitmek için  
   

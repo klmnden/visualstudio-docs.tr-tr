@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430333"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821993"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>İzlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme
   Visual Studio'da kullanabileceğiniz **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** bileşenleri SharePoint sitelerinde görüntülemek için. Ancak, **Sunucu Gezgini** bazı bileşenler varsayılan olarak görüntülemez. Bu kılavuzda, genişletme **Sunucu Gezgini** böylece Web Bölümü Galerisi'ne görüntüler her SharePoint sitesine bağlı.
@@ -29,9 +29,9 @@ ms.locfileid: "63430333"
 
 - Visual Studio uzantısı oluşturma genişletir **Sunucu Gezgini** aşağıdaki yollarla:
 
-    - Uzantı ekler bir **Web Bölümü Galerisi'ne** içindeki her bir SharePoint sitesi düğümün altında düğüm **Sunucu Gezgini**. Bu yeni düğüm her Web Bölümünü Web Bölümü galerisinde sitesinde temsil eden alt düğümleri içerir.
+  - Uzantı ekler bir **Web Bölümü Galerisi'ne** içindeki her bir SharePoint sitesi düğümün altında düğüm **Sunucu Gezgini**. Bu yeni düğüm her Web Bölümünü Web Bölümü galerisinde sitesinde temsil eden alt düğümleri içerir.
 
-    - Uzantının yeni bir Web Bölümü örneğinin temsil eden bir düğüm türünü tanımlar. Bu yeni düğüm türü altındaki Yeni alt düğümleri temelini **Web Bölümü Galerisi'ne** düğümü. Yeni Web Bölümü düğüm türü bilgilerini görüntüler **özellikleri** penceresi hakkında temsil ettiği bir Web Bölümü. Düğüm türü için Web Bölümü ile ilgili diğer görevleri gerçekleştirmek için bir başlangıç noktası olarak kullanabileceğiniz bir özel kısayol menü öğesi de içerir.
+  - Uzantının yeni bir Web Bölümü örneğinin temsil eden bir düğüm türünü tanımlar. Bu yeni düğüm türü altındaki Yeni alt düğümleri temelini **Web Bölümü Galerisi'ne** düğümü. Yeni Web Bölümü düğüm türü bilgilerini görüntüler **özellikleri** penceresi hakkında temsil ettiği bir Web Bölümü. Düğüm türü için Web Bölümü ile ilgili diğer görevleri gerçekleştirmek için bir başlangıç noktası olarak kullanabileceğiniz bir özel kısayol menü öğesi de içerir.
 
 - Uzantı derlemesini çağıran iki özel SharePoint komutu oluşturun. SharePoint komutları için SharePoint sunucusu nesne modelinde API'lerini kullanmayı uzantısı derlemeler tarafından çağrılan yöntemlerdir. Bu kılavuzda, yerel geliştirme bilgisayarında SharePoint sitesinde Web bölümü bilgilerini almak komutları oluşturun. Daha fazla bilgi için [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430333"
 
     2. İçinde **SharePoint bağlantısı ekleme** iletişim kutusunda, bağlanmak ve ardından istediğiniz SharePoint sitesi için URL'yi girin **Tamam** düğmesi.
 
-         Geliştirme bilgisayarınızda SharePoint sitesini belirtmek için girin **http://localhost**.
+         Geliştirme bilgisayarınızda SharePoint sitesini belirtmek için girin **http://localhost** .
 
 3. (Site URL'sini görüntüleyen) site bağlantı düğümü genişletin ve ardından bir alt site düğümünü genişletin (örneğin, **ekip sitesi**).
 

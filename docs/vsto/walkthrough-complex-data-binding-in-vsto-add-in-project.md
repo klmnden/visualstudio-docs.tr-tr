@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 546713cd77ca1477984120f9ef9a245c1c780eaf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981649"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824130"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde karmaşık veri bağlama
   Konak denetimlerinin ve VSTO eklentisi projeleri Windows Forms denetimlerinde verileri bağlayabilirsiniz. Bu kılavuzda, Microsoft Office Excel çalışma sayfasına denetimler ekleme ve çalışma zamanında verilere denetimler bağlama gösterilmektedir.
@@ -43,9 +43,9 @@ ms.locfileid: "62981649"
 
 - Çalışan bir SQL Server 2005 veya SQL Server 2005 olan Express örneğine erişim `AdventureWorksLT` bağlı örnek veritabanı. İndirebileceğiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
+  - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
-    - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
+  - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
  İlk adım, bir Excel VSTO eklentisi projesi oluşturmaktır.
@@ -75,9 +75,9 @@ ms.locfileid: "62981649"
 
 5. İçinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
 
-6. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **adres (SalesLT)**.
+6. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **adres (SalesLT)** .
 
-7. **Son**'a tıklayın.
+7.           **Son**'a tıklayın.
 
     *AdventureWorksLTDataSet.xsd* dosya eklendiğinde **Çözüm Gezgini**. Bu dosya, aşağıdakileri tanımlar:
 

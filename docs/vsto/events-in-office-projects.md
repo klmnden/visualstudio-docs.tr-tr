@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826065"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.
@@ -56,13 +56,13 @@ ms.locfileid: "63441831"
 
 - Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown olayı
  **Kapatma** olayı her ana bilgisayar öğesi (belge veya çalışma sayfası) için oluşturulur, kodunuzu yüklendiği uygulama etki alanı olduğunda kaldırılmak üzere. Sınıfı, bunu çağırılacak çağrılması son şeydir.
@@ -73,13 +73,13 @@ ms.locfileid: "63441831"
 
 - Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > Program aracılığıyla denetimleri sırasında kaldırmayın **kapatma** belgenin olay işleyicisi. UI öğeleri artık kullanılabilir **kapatma** olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisine aşağıdaki gibi ekleyin **BeforeClose** veya **BeforeSave**.

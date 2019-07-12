@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447157"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826016"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA ve belge düzeyi özelleştirmelerini birleştirme
   Visual Basic for Applications (VBA) kodu Microsoft Office Word veya Microsoft Office Excel için belge düzeyi özelleştirmesinde parçası olan bir belgeyi kullanabilirsiniz. Özelleştirme bütünleştirilmiş koddan belgedeki VBA kodu çağırabilir veya özelleştirme derlemede kod çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi yapılandırabilirsiniz.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Belge aşağıdaki dosya adı uzantıları birine sahip olmalıdır:
 
-    - Word: *.docm* veya *.doc*
+  - Word: *.docm* veya *.doc*
 
-    - Excel: *.xlsm*, *.xltm*, *.xls*, veya *.xlt*
+  - Excel: *.xlsm*, *.xltm*, *.xls*, veya *.xlt*
 
 - Belge zaten VBA kodunun olduğu bir VBA projesi içermesi gerekir.
 

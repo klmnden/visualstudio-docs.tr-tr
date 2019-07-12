@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417773"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823270"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
 - Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:  
   
-    - Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Geliştirici kullanması gereken framework sınıfları tanımlayan öğeler.  
+  - Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Geliştirici kullanması gereken framework sınıfları tanımlayan öğeler.  
   
 - Sıralı veya etkinlik diyagramları kullanarak parçalar arasındaki etkileşimler modeli.  
   

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335392"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824559"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio için değerlendirme araçları
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio için craftsmanship denetim listesi
@@ -49,11 +49,11 @@ ms.locfileid: "66335392"
 
 - Düğmeler, komutları ve kullanıcı girişi yakalamak için kullanıcı arabirimini Başlat komutu bağlantıları üç nokta son doğrulayın **[...]** .
 
-     Örnekler:
+  Örnekler:
 
-    - Bir **[Gelişmiş...]**  düğmesine bir iletişim kutusu.
+  - Bir **[Gelişmiş...]**  düğmesine bir iletişim kutusu.
 
-    - Araçlar menüsü altına komut seçenekleri (**Araçlar > Seçenekler**) iletişim başlatma komut hedefi olduğu için üç nokta simgesine almalısınız değil.
+  - Araçlar menüsü altına komut seçenekleri (**Araçlar > Seçenekler**) iletişim başlatma komut hedefi olduğu için üç nokta simgesine almalısınız değil.
 
 - Kullanıcı arabirimini endüstri standardı koşulları hariç hiçbir kısaltmalar içerdiğini doğrulayın. Örneğin, HTML ne TCP/IP'yi gerekir, yazılması karşılaştığınız OOM (yetersiz bellek) ve PII (kişisel bilgiler) gerekir ancak.
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335392"
 
 - Alan şekilde tanımlanması gerekir gerekli bir alan ise doğrulayın:
 
-    - arka plan ayarlanan `Environment.ControlEditRequiredBackground` ve ön ayarlanır `Environment.ControlEditRequiredHintText`
+  - arka plan ayarlanan `Environment.ControlEditRequiredBackground` ve ön ayarlanır `Environment.ControlEditRequiredHintText`
 
-    - görünen denetimindeki İpucu metni olduğunu **"\<gerekli >"**
+  - görünen denetimindeki İpucu metni olduğunu **"\<gerekli >"**
 
 #### <a name="button-controls"></a>Düğme denetimleri
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335392"
 
 - VS kullanılan renkleri olduğundan emin olun:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Köprüler bir paragraf içinde gömülü sürece hiçbir alt çizgi ile mavi göründüğünü doğrulayın.
 

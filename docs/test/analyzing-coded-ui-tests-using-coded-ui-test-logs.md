@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432314"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824490"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Kodlanmış UI test günlüklerini çözümleme kodlanmış UI testleri kullanarak
 
@@ -20,7 +20,7 @@ Kodlanmış UI test günlüklerini filtre ve kayıt kodlanmış UI testleri hakk
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>1. Adım: Günlü kaydını etkinleştir
+## <a name="step-1-enable-logging"></a>1\. Adım: Günlü kaydını etkinleştir
 
 Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yöntemlerden birini kullanın:
 
@@ -42,15 +42,15 @@ Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yönt
 
 - Varsa bir *App.config* test projenizde mevcut dosya:
 
-    - Açık *App.config* dosya projede ve yapılandırma düğümü altında aşağıdaki kodu ekleyin:
+  - Açık *App.config* dosya projede ve yapılandırma düğümü altında aşağıdaki kodu ekleyin:
 
-      ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
-      ```
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Test kodu günlüğünü etkinleştir:
 
@@ -58,7 +58,7 @@ Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yönt
    Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
    ```
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2. Adım: Kodlanmış UI testleri çalıştırmak ve günlüğünü görüntüleyin
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>2\. Adım: Kodlanmış UI testleri çalıştırmak ve günlüğünü görüntüleyin
 
 Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTAgent\*. exe.config* dosya, yerinde bağlantısını bir çıktı görmeniz **Test Gezgini** sonuçları. Günlük dosyalarını izleme düzeyini ayarlandığında değil yalnızca test de başarılı testlerde başarısız olduğunda oluşturulan **ayrıntılı**.
 

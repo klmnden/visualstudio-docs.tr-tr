@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692551"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825888"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET ile XML verileri çalışmak için basit yöntemler sağlar. Bu kılavuz
   
 - İki <xref:System.Windows.Forms.Button> kontrol eder.  
   
-    - Bir düğme XML dosyasının DataSet'e okur ve görüntüler <xref:System.Windows.Forms.DataGridView> denetimi.  
-  
-    - İkinci bir düğme şema veri kümesinden ve aracılığıyla ayıklar bir <xref:System.IO.StringWriter> görüntüler <xref:System.Windows.Forms.TextBox> denetimi.  
+  - Bir düğme XML dosyasının DataSet'e okur ve görüntüler <xref:System.Windows.Forms.DataGridView> denetimi.  
+
+  - İkinci bir düğme şema veri kümesinden ve aracılığıyla ayıklar bir <xref:System.IO.StringWriter> görüntüler <xref:System.Windows.Forms.TextBox> denetimi.  
   
 #### <a name="to-add-controls-to-the-form"></a>Formu için denetimler ekleme  
   

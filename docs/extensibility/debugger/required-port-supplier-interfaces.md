@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d4f475a186c3873937e6c8c38d092a944585d4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dfc7b25a54bd17ecf759a25d603997380076c5d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315906"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823425"
 ---
 # <a name="required-port-supplier-interfaces"></a>Gerekli bağlantı noktası sağlayıcısı arabirimleri
 Bağlantı noktası sağlayıcısı uygulamalıdır [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) arabirimi.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -25,19 +25,19 @@ Bağlantı noktası sağlayıcısı uygulamalıdır [IDebugPortSupplier2](../../
 
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 
-     Bağlantı noktası açıklar ve bağlantı noktası üzerinde çalışan tüm işlemler numaralandırır.
+  Bağlantı noktası açıklar ve bağlantı noktası üzerinde çalışan tüm işlemler numaralandırır.
 
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
 
-     Başlatma ve bağlantı noktası işlemleri sonlandırma için sağlar.
+  Başlatma ve bağlantı noktası işlemleri sonlandırma için sağlar.
 
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
-     Bu program düğüm oluşturma ve yok etme bildirmek için bu bağlantı noktasının bağlamı içinde çalışan programlar için bir mekanizma sağlar. Daha fazla bilgi için [programda düğümler](../../extensibility/debugger/program-nodes.md).
+  Bu program düğüm oluşturma ve yok etme bildirmek için bu bağlantı noktasının bağlamı içinde çalışan programlar için bir mekanizma sağlar. Daha fazla bilgi için [programda düğümler](../../extensibility/debugger/program-nodes.md).
 
 - `IConnectionPointContainer`
 
-     Bir bağlantı noktası sağlar [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
+  Bir bağlantı noktası sağlar [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
 
 ## <a name="port-supplier-operation"></a>Bağlantı noktası tedarikçi işlemi
  [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) havuz, işlem bildirimleri alır ve programlar oluşturulur ve bir bağlantı noktası yok. Bir bağlantı noktası göndermek için gereken [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) işlem oluşturulduğunda ve [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) ne zaman bir işlem yok edildiğinde bağlantı noktası üzerinde. Bir bağlantı noktası da göndermek için gereken [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) bir program oluşturulduğunda ve [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) ne zaman bir program yok edildiğinde bağlantı noktası üzerinde çalışan bir işlemin içinde.
@@ -48,37 +48,37 @@ Bağlantı noktası sağlayıcısı uygulamalıdır [IDebugPortSupplier2](../../
 
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 
-     Fiziksel işlemi açıklanmaktadır. En az aşağıdaki yöntemlerden uygulanması gerekir:
+  Fiziksel işlemi açıklanmaktadır. En az aşağıdaki yöntemlerden uygulanması gerekir:
 
-    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
+  - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
 
-    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
 
-    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
+  - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
 
-    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+  - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
-    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
+  - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
 
-    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+  - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
-     SDM eklemek ve kendisini bir işlemden ayırmak bir yol sağlar.
+  SDM eklemek ve kendisini bir işlemden ayırmak bir yol sağlar.
 
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 
-     Mantıksal program açıklar. En az aşağıdaki yöntemlerden uygulanması gerekir:
+  Mantıksal program açıklar. En az aşağıdaki yöntemlerden uygulanması gerekir:
 
-    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
-    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
+  - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
-     SDM bu programa eklemek bir yol sağlar.
+  SDM bu programa eklemek bir yol sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Bir bağlantı noktası sağlayıcısı uygulama](../../extensibility/debugger/implementing-a-port-supplier.md)

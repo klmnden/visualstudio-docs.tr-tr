@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436845"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825809"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Nasıl yapılır: Standart Kod Analizi İade İlkeleri Oluşturma veya Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Kod çözümleme İade İlkesi'ni kullanarak kod analizi bir takım projesindeki
   
 - Gelen **bu kural kümesini Çalıştır** listesinde, aşağıdaki yöntemlerden birini kullanın:  
   
-    - Bir Microsoft Standart kural kümesi seçin.  
-  
-    - Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >** , kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Oluşturma ve bir özel iade ilkesi kuralı uygulamak hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulamaya özel iade ilkeleri](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Bir Microsoft Standart kural kümesi seçin.  
+
+  - Özel kural kümesi seçmek için tıklatın  **\<kaynak denetiminden kural kümesi seçin >** , kural kümesi kaynak denetimi tarayıcıda sürüm denetim yolunu yazın. Bir sürüm denetim yolu sözdizimi aşağıdaki gibidir:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Oluşturma ve bir özel iade ilkesi kuralı uygulamak hakkında daha fazla bilgi için bkz: [yönetilen kod için uygulamaya özel iade ilkeleri](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod Çözümleme İade İlkeleri Oluşturma ve Kullanma](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

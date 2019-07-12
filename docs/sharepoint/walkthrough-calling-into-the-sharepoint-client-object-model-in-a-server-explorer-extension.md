@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835950"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824157"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>İzlenecek yol: Sunucu Gezgini uzantısında SharePoint istemcisi nesne modelini çağırma
   Bu izlenecek yol için bir uzantı SharePoint istemci nesne modelini nasıl çağırılacağını **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. SharePoint istemci nesne modelini kullanma hakkında daha fazla bilgi için bkz. [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835950"
 
 - Oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] genişleten uzantısı **SharePoint bağlantıları** düğümünün **Sunucu Gezgini** aşağıdaki yollarla:
 
-    - Uzantı ekler bir **Web Bölümü Galerisi'ne** içindeki her bir SharePoint sitesi düğümün altında düğüm **Sunucu Gezgini**. Bu yeni düğüm her Web Bölümünü Web Bölümü galerisinde sitesinde temsil eden alt düğümleri içerir.
+  - Uzantı ekler bir **Web Bölümü Galerisi'ne** içindeki her bir SharePoint sitesi düğümün altında düğüm **Sunucu Gezgini**. Bu yeni düğüm her Web Bölümünü Web Bölümü galerisinde sitesinde temsil eden alt düğümleri içerir.
 
-    - Uzantının yeni bir Web Bölümü örneğinin temsil eden bir düğüm türünü tanımlar. Bu yeni düğüm türü altındaki Yeni alt düğümleri temelini **Web Bölümü Galerisi'ne** düğümü. Yeni Web Bölümü düğüm türü bilgilerini görüntüler **özellikleri** penceresi hakkında düğümünü temsil eder. Web Bölümü.
+  - Uzantının yeni bir Web Bölümü örneğinin temsil eden bir düğüm türünü tanımlar. Bu yeni düğüm türü altındaki Yeni alt düğümleri temelini **Web Bölümü Galerisi'ne** düğümü. Yeni Web Bölümü düğüm türü bilgilerini görüntüler **özellikleri** penceresi hakkında düğümünü temsil eder. Web Bölümü.
 
 - Uzantıyı dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
 

@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990494"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825860"
 ---
 # <a name="troubleshoot-code-coverage"></a>Kod kapsamı sorunlarını giderme
 
-Visual Studio'da kod kapsamı analiz aracı yerel ve Yönetilen derlemeler için verileri toplar (*.dll* veya *.exe* dosyaları). Ancak, bazı durumlarda, **kod kapsamı sonuçlarını** penceresi benzeri bir hata görüntüler "boş üretilen sonuçlar:..." Neden boş sonuçlar alabilirsiniz birkaç nedeni vardır. Bu makale, bu sorunların giderilmesine yardımcı olur.
+Visual Studio'da kod kapsamı analiz aracı yerel ve Yönetilen derlemeler için verileri toplar ( *.dll* veya *.exe* dosyaları). Ancak, bazı durumlarda, **kod kapsamı sonuçlarını** penceresi benzeri bir hata görüntüler "boş üretilen sonuçlar:..." Neden boş sonuçlar alabilirsiniz birkaç nedeni vardır. Bu makale, bu sorunların giderilmesine yardımcı olur.
 
 ## <a name="what-you-should-see"></a>Görmeniz gereken
 
@@ -97,11 +97,11 @@ Açıklama&mdash;özel bir birim testlerinizin çalıştırabileceğiniz *.runse
 
 - **Normal ifade hatası**
 
-     Dosyadaki her dize bir düzenli ifadedir. Her biri için belirli bir görünüm ve hatalar için gözden geçirin:
+  Dosyadaki her dize bir düzenli ifadedir. Her biri için belirli bir görünüm ve hatalar için gözden geçirin:
 
-    - Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`
+  - Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`
 
-    - İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`
+  - İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Yanlış istisnalarla özelleştirilmiş .runsettings dosyası
 

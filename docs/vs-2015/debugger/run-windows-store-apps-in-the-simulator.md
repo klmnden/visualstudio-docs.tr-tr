@@ -14,14 +14,14 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683541"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823854"
 ---
-# <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Windows Store uygulamaları çalıştırma
+# <a name="run-windows-store-apps-in-the-simulator"></a>Simülatörde Microsoft Store uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Store uygulamaları için Visual Studio simulator, Windows Store app taklit eden bir masaüstü uygulamasıdır. Uygulamaları çalıştırabilir ve ortak dokunma ve döndürme olaylarının geliştirme bilgisayarınızda benzetimini yapma. Ayrıca, fiziksel ekran boyutunu ve öykünme ve ağ bağlantısı özellikleri benzetimini yapmak istediğiniz çözümü seçebilirsiniz.  
@@ -55,30 +55,30 @@ Windows Store uygulamaları için Visual Studio simulator, Windows Store app tak
  Sıkıştırma ve iki parmağınızı hareket yakınlaştırmak için etkileşim modu ayarlar.  
   
 - ![Simülatör iki parmak hedef](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - Çift hedef simge cihaz ekranında iki parmağınızı konumunu belirtir.  
-  
-    - Cihaz ekranında nesnenin üzerine simgeleri konumlandırmak için fareyi hareket ettirin.  
-  
-    - Fare tekerleği geriye veya İleri sıkıştırma veya yakınlaştırma önce iki parmağınızı sanal uzaklığı değiştirmek için döndürün.  
-  
+
+  - Çift hedef simge cihaz ekranında iki parmağınızı konumunu belirtir.  
+
+  - Cihaz ekranında nesnenin üzerine simgeleri konumlandırmak için fareyi hareket ettirin.  
+
+  - Fare tekerleği geriye veya İleri sıkıştırma veya yakınlaştırma önce iki parmağınızı sanal uzaklığı değiştirmek için döndürün.  
+
 - ![Sıkıştırarak yakınlaştırma ve döndürme hedefleri](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Sol düğmesine basın ve (tabletinizde) yakınlaştırmak için (,) geriye dönük tekerleğini döndürün.  
-  
-    - Sol düğmesine basın ve (uzaklaştırma) yakınlaştırma için fare tekerleğinin (İleri) döndürün.  
+
+  - Sol düğmesine basın ve (tabletinizde) yakınlaştırmak için (,) geriye dönük tekerleğini döndürün.  
+
+  - Sol düğmesine basın ve (uzaklaştırma) yakınlaştırma için fare tekerleğinin (İleri) döndürün.  
   
 ## <a name="object-rotation"></a>Nesne döndürme  
  **Dokunma öykünmesi döndürme** düğmesini kullanarak iki parmağınızı döndürme hareketlerine etkileşim modu ayarlar.  
   
 - Cihaz ekranında nesnenin üzerine simgeleri konumlandırmak için fareyi hareket ettirin.  
   
-    - Fare tekerleği geriye veya İleri nesneyi önce iki parmağınızı sanal yönünü değiştirmek için döndürün.  
-  
+  - Fare tekerleği geriye veya İleri nesneyi önce iki parmağınızı sanal yönünü değiştirmek için döndürün.  
+
 - Sol düğmesine basın ve yönünün nesneyi döndürmek için (,) geriye dönük tekerleğini döndürün. Fare tekerleğini döndürün gibi iki hedef simgelerden birini diğer döndürme göre boyutunu göstermek için döndürür.  
-  
-    - Sol düğmesine basın ve saat yönünde nesneyi döndürmek için fare tekerleğini (İleri) döndürün.  
-  
+
+  - Sol düğmesine basın ve saat yönünde nesneyi döndürmek için fare tekerleğini (İleri) döndürün.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Etkinleştirmek veya her zaman üst modunu devre dışı  
  Her zaman diğer windows en üstünde olacak şekilde simülatörü penceresini ayarlayabilirsiniz. **Üstteki pencere geçişi** düğmesini etkinleştirir veya devre dışı bırakır **her zaman üstte** simülatörü penceresini modu.  
   

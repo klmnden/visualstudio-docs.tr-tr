@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440848"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826142"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>İzlenecek yol: Bir sunucudaki çalışma kitabına veri ekleme
   Bu izlenecek yol, bir Microsoft Office Excel çalışma kitabını Excel kullanarak başlatmadan önbelleğe alınan bir veri kümesine veri eklemek gösterilmiştir <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı.
@@ -54,9 +54,9 @@ ms.locfileid: "63440848"
 
 - Microsoft SQL Server veya Microsoft SQL Server bağlı AdventureWorksLT örnek veritabanı olan Express çalışan örneğine erişim. AdventureWorksLT veritabanı indirebileceğiniz [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?linkid=87843). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
+  - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
-    - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
+  - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Bir veri kümesini tanımlayan bir sınıf kitaplığı projesi oluşturun
  Bir Excel çalışma kitabı projesi ve bir konsol uygulaması aynı veri kümesini kullanmak için ayrı bir derleme hem de bu proje tarafından başvurulan dataset tanımlamanız gerekir. Bu kılavuz için bir sınıf kitaplığı projesinde veri kümesi tanımlarsınız.
@@ -104,9 +104,9 @@ ms.locfileid: "63440848"
 
 6. İçinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
 
-7. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **ürün (SalesLT)**.
+7. İçinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** seçip **ürün (SalesLT)** .
 
-8. **Son**'a tıklayın.
+8.           **Son**'a tıklayın.
 
     *AdventureWorksLTDataSet.xsd* dosya eklendiğinde **AdventureWorksDataSet** proje. Bu dosya, aşağıdakileri tanımlar:
 
@@ -135,7 +135,7 @@ ms.locfileid: "63440848"
 
 5. İçinde **adı** kutusuna **AdventureWorksReport**. Konumunu değiştirmeyin.
 
-6. **Tamam**'ı tıklatın.
+6.           **Tamam**'ı tıklatın.
 
      **Office Project Sihirbazı için Visual Studio Araçları** açılır.
 
@@ -216,7 +216,7 @@ ms.locfileid: "63440848"
 
 4. İçinde **adı** kutusuna **DataWriter**. Konumunu değiştirmeyin.
 
-5. **Tamam**'ı tıklatın.
+5.           **Tamam**'ı tıklatın.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **DataWriter** için proje **Çözüm Gezgini** ve açılır **Program.cs** veya **Module1.vb** kod dosyası.
 

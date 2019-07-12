@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975601"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825956"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod parçacıkları için en iyi uygulamalar
 
@@ -31,7 +31,7 @@ Dosya konumları uygulamanıza uyum, aşağıdakiler hakkında düşünün:
 
 - Erişilebilir bir konumda bulunuyor. Kullanıcılar, erişimi olmayabilir *Program dosyaları* uygulamayla dosyaların depolanması Mayıs iş dosyaları değil, bu nedenle bilgisayarının klasör.
 
-- Güvenli bir konumda bulunuyor. Dosya depolama kök klasöründe (*C:\\*) güvenli değildir. Uygulama verileri için öneririz *uygulama verileri* klasör. Bireysel kullanıcı verileri için uygulama her kullanıcı için bir dosya oluşturabilirsiniz *belgeleri* klasör.
+- Güvenli bir konumda bulunuyor. Dosya depolama kök klasöründe (*C:\\* ) güvenli değildir. Uygulama verileri için öneririz *uygulama verileri* klasör. Bireysel kullanıcı verileri için uygulama her kullanıcı için bir dosya oluşturabilirsiniz *belgeleri* klasör.
 
 - Geçerli bir dosya adı kullanıyor. Kullanabileceğiniz <xref:System.Windows.Forms.OpenFileDialog> ve <xref:System.Windows.Forms.SaveFileDialog> geçersiz dosya adları olasılığını azaltmak için denetimleri. Bir dosya kullanıcının seçtiği zaman ve kodunuzu dosyasını yöneten zaman arasında dosya silinebilir dikkat edin. Ayrıca, kullanıcı dosyaya yazmak için gerekli izinlere sahip.
 
@@ -61,11 +61,11 @@ Visual Studio tarafından yüklenmiş IntelliSense kod parçacıkları kendisi i
 
 - Tüm indirilen kod parçacığı dosyaları Not Defteri veya Visual Studio XML düzenleyicisinde açın ve yüklemeden önce dikkatle gözden geçirin. Aşağıdaki sorunları arayın:
 
-    - Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.
+  - Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.
 
-    - Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesi görüntüleme URL'leri içerebilir.
+  - Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesi görüntüleme URL'leri içerebilir.
 
-    - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.
+  - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

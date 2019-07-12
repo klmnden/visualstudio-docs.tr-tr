@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
-ms.openlocfilehash: f6398a24dafd87abc6da0f5d011ea25a53a6f78d
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784612"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825912"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
@@ -75,9 +75,9 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 - CloudPilot kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:
-    - [Kişi UnifyCloud](https://www.unifycloud.com/contacts/) UnifyCloud ürünlerle ilgili sorgular için.
-    - [CloudPilot kullanıcı el kitabı](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
+  - [Kişi UnifyCloud](https://www.unifycloud.com/contacts/) UnifyCloud ürünlerle ilgili sorgular için.
+  - [CloudPilot kullanıcı el kitabı](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
 
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

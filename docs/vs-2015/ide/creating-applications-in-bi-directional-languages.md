@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701189"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826187"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Çift Yönlü Dillerde Uygulamalar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
   
 - **Sağdan sola okuma düzeni** varsayılan olarak, Visual Studio'da kullandığınız metin girişi denetimleri sağdan sola okuma düzeni kullanır. Çoğu durumda, standart Windows hareketleri okuma sırasını değiştirmek için kullanabilirsiniz. Örneğin, özellik değerleri için sağdan sola okuma düzeni desteklemek için Özellikler penceresinde geçiş yapmak için Ctrl + sağ Shift tuşuna basabilirsiniz.  
   
-     Ancak, sağdan sola okuma düzeni, Visual Studio'da her yerde desteklenmiyor. Özel durumlar şunlardır:  
-  
-    - Her zaman onay kutuları, açılan listeler ve diğer Visual Studio iletişim kutularındaki denetimler sağdan sola okuma düzeni kullanın.  
-  
-    - Kod Düzenleyicisi'ni (ve metin düzenleyici) sağdan sola okuma düzeni desteklemez. Bir çift yönlü dil metin girebilirsiniz, ancak okuma düzeni, her zaman sol ve sağ.  
+  Ancak, sağdan sola okuma düzeni, Visual Studio'da her yerde desteklenmiyor. Özel durumlar şunlardır:  
+
+  - Her zaman onay kutuları, açılan listeler ve diğer Visual Studio iletişim kutularındaki denetimler sağdan sola okuma düzeni kullanın.  
+
+  - Kod Düzenleyicisi'ni (ve metin düzenleyici) sağdan sola okuma düzeni desteklemez. Bir çift yönlü dil metin girebilirsiniz, ancak okuma düzeni, her zaman sol ve sağ.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Arapça kullanarak nesneleri adlandırma veya İbranice metin  
  Arapça veya İbranice metin, klasörleri, değişkenleri veya diğer nesnelerin adları atamak için kullanabilirsiniz. Arapça ile çalışırken Keşide ve aksan işaretleri dahil olmak üzere herhangi bir Arapça karakter kullanabilirsiniz.  

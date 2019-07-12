@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698034"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821624"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65698034"
   
 - [Proje dosyası](#BKMK_ProjectFile)  
   
-    - [Özellikler](#BKMK_Properties)  
-  
-    - [Öğeler](#BKMK_Items)  
-  
-    - [Görevler](#BKMK_Tasks)  
-  
-    - [Hedefler](#BKMK_Targets)  
-  
+  - [Özellikler](#BKMK_Properties)  
+
+  - [Öğeler](#BKMK_Items)  
+
+  - [Görevler](#BKMK_Tasks)  
+
+  - [Hedefler](#BKMK_Targets)  
+
 - [Derleme günlükleri](#BKMK_BuildLogs)  
   
 - [Visual Studio'da MSBuild kullanma](#BKMK_VisualStudio)  

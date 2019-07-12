@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431892"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825517"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 
@@ -79,11 +79,11 @@ Varsayılan olarak, Visual Basic metin düzenleme için varsayılan klavye kısa
 
 - Aşağıdaki komutlar için klavye kısayolları yeniden eşleme, hiçbir etkisi olmaz. Bir ifade düzenlerken bu komutlara erişmek için yalnızca klavye kısayolları kullanabilirsiniz.
 
-   - Kes
-   - Kopyala
-   - Yapıştır
-   - Tümünü Seç
-   - Geri alma
-   - Yinele
+  - Kes
+  - Kopyala
+  - Yapıştır
+  - Tümünü Seç
+  - Geri alma
+  - Yinele
 
 - İş Akışı Tasarımcısı'nda Visual Studio içindeki ifade düzenleme komutları için klavye kısayolları yeniden eşlemek için iş akışı Tasarımcısı kapsamında kısayollar düzenleyin. Metin Düzenleyici kapsamı içinde yapılan değişiklikleri otomatik olarak iş akışı Tasarımcısı için geçerli değildir. Her iki yerde kısayolları eşlemek isterseniz değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).

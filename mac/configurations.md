@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693095"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826071"
 ---
 # <a name="understanding-build-configurations"></a>Derleme yapılandırmalarını anlama
 
@@ -51,21 +51,21 @@ Dışındaki etkinlikleri `MainLauncher` gerekecek `Exported=true` fiziksel bir 
 Aşağıdaki listede, içinde çalıştırma yapılandırmaları dahil edilebilir veri bazı örnekleri verilmiştir:
 
 * Normal .NET projesi
-    * Farklı bir başlangıç uygulaması
-    * Başlangıç bağımsız değişkenleri
-    * Çalışma dizini
-    * Ortam değişkenleri
-    * Mono çalışma zamanı seçenekleri (yalnızca üzerinde Mono çalıştırılırken kullanılması için)
+  * Farklı bir başlangıç uygulaması
+  * Başlangıç bağımsız değişkenleri
+  * Çalışma dizini
+  * Ortam değişkenleri
+  * Mono çalışma zamanı seçenekleri (yalnızca üzerinde Mono çalıştırılırken kullanılması için)
 * Android projesi
-    * Giriş noktası (etkinlik, hizmet, alıcı)
-    * Hedefi bağımsız değişkenleri ve veri
+  * Giriş noktası (etkinlik, hizmet, alıcı)
+  * Hedefi bağımsız değişkenleri ve veri
 * iOS projesi
-    * Mod (Normal, arka planda getirme)
+  * Mod (Normal, arka planda getirme)
 * iOS uzantı projesi
-    * Başlangıç uygulaması: varsayılan veya özel
+  * Başlangıç uygulaması: varsayılan veya özel
 * WatchKit proje
-    * Mod (tek bakışta, bildirim)
-    * Bildirim yükü
+  * Mod (tek bakışta, bildirim)
+  * Bildirim yükü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

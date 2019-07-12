@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844048"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823822"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>XAML Tasarımcısı’nda öğelerle çalışma
 
@@ -43,15 +43,15 @@ Katman sırasını değiştirmek için aşağıdakilerden birini yapın:
 
 - Belge Anahattı penceresi veya üzerine gelin, katman sırasını değiştirmek istediğiniz çalışma yüzeyi öğe sağ **sipariş**ve sonra aşağıdakilerden birine tıklayın:
 
-   - **Öne Getir** öğe tüm sipariş öne getirmek için.
+  - **Öne Getir** öğe tüm sipariş öne getirmek için.
 
-   - **Öne Getir** öğe getirmek için sırada bir düzey iletin.
+  - **Öne Getir** öğe getirmek için sırada bir düzey iletin.
 
-   - **Geri gönderme** öğesi geri bir düzey sıraya göndermek için.
+  - **Geri gönderme** öğesi geri bir düzey sıraya göndermek için.
 
-   - **Arkaya Gönder** öğe tüm sırasını geri göndermek için.
+  - **Arkaya Gönder** öğe tüm sırasını geri göndermek için.
 
-   Değişiklik **haritadaki** özelliğinde **Düzen** Özellikler penceresindeki bölümü. Çakışan öğe için **haritadaki** özelliğini belge anahat penceresinde gösterilen öğelerin sırasını üzerinden öncelik alır. Bir daha yüksek olan bir öğeyi **haritadaki** değeri önde öğeleri çakışma halinde görünür.
+  Değişiklik **haritadaki** özelliğinde **Düzen** Özellikler penceresindeki bölümü. Çakışan öğe için **haritadaki** özelliğini belge anahat penceresinde gösterilen öğelerin sırasını üzerinden öncelik alır. Bir daha yüksek olan bir öğeyi **haritadaki** değeri önde öğeleri çakışma halinde görünür.
 
 ## <a name="change-the-alignment-of-an-element"></a>Bir öğe hizalamasını değiştirme
 

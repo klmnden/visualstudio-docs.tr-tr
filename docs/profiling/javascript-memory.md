@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446296"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826094"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını analiz etme
 JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript kullanarak Windows için oluşturulan UWP uygulamalarında bellek sızıntılarını bulmanıza yardımcı olması için Visual Studio'da kullanılabilir. Desteklenen uygulamalar için evrensel Windows uygulamaları uygulamalarıdır.
@@ -255,14 +255,14 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
 
   Anlık görüntü arasındaki fark bilgilerini filtrelemek için aşağıdakilerden birini seçin: **kapsam** fark görünümleri üstündeki filtreleri.
 
-- **Kalan nesneler gelen anlık görüntü sayısı\<numarası >**. Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.
+- **Kalan nesneler gelen anlık görüntü sayısı\<numarası >** . Bu filtre yığına eklenen ve temel anlık görüntü ve önceki anlık görüntüye kıyasla yığın kaldırılır nesneler arasındaki farkı gösterir. Anlık görüntü özeti +205 gösterir. Örneğin, /-195 nesne sayısı bu filtre gösterir, on nesneleri eklendi ancak kaldırılmaz.
 
   > [!TIP]
   > Bu filtrede en yararlı bilgiler göstermek için açıklanan adımları izleyin. [bir bellek sızıntısı yalıtmak](#isolate-a-memory-leak).
 
-- **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >**. Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.
+- **Nesneler arasında eklenen anlık görüntü sayısı\<numarası > ve #\<numarası >** . Bu filtre, önceki anlık görüntüden yığına eklenen tüm nesneleri gösterir.
 
-- **Anlık görüntüsündeki tüm nesneler #\<numarası >**. Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.
+- **Anlık görüntüsündeki tüm nesneler #\<numarası >** . Bu filtre ayarı herhangi bir nesne yığını üzerindeki filtre değil.
 
   Geçerli eşleşmeyen nesne başvuruları göstermek için **kapsam** filtre, select **eşleşmeyen başvuruları göster** ayarlar listesinde ![ayarları bırakma&#45;bellek Çözümleyicisi listede aşağı ](../profiling/media/js_mem_settings.png "JS_Mem_Settings") bölmesinde sağ üst köşesindeki. Bu ayarı etkinleştirirseniz, eşleşmeyen başvuruları gri metinle görüntülenir.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Kullanıcı için yaygın bir nedeni, bellek sorunları olan yeni bir sayfada, gittikten sonra bellekte yanlışlıkla korunur nesneleri arayın. Örneğin:
 
-    - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) işlevi bu soruna neden olabilir.
+  - Yanlış kullanımından dolayı [URL'si. CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) işlevi bu soruna neden olabilir.
 
-    - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.
+  - Bazı nesneler sağlayabilir bir `dispose` yöntemi ve öneriler için kullanın. Örneğin, çağırmalıdır `dispose` üzerinde bir [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) listenin çağırırsanız `createFiltered` yöntemi ve ardından bir sayfadan ayrılmak gidin.
 
-    - Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Bir veya daha fazla olay dinleyicileri kaldırmanız gerekebilir. Daha fazla bilgi için bkz. [görünümü DOM olayı dinleyicilerini](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - İkinci bölümü izleyin [bu videoyu](https://channel9.msdn.com/Events/Build/2013/3-316) JavaScript bellek Çözümleyicisi hakkında derleme 2013 konferansına ait.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Kod sorunları yalıtmak için geçici olarak değiştirmeyi düşünün. Örneğin, aşağıdakileri yapabilirsiniz:
 
-    - Bellek Çözümleyicisi için komutları kullanın `console.takeSnapshot` ve `performance.mark`. (Bkz [kaynak kodu ile bellek kullanımı verileri ilişkilendirmek](#associate-source-code-with-memory-usage-data).)
+  - Bellek Çözümleyicisi için komutları kullanın `console.takeSnapshot` ve `performance.mark`. (Bkz [kaynak kodu ile bellek kullanımı verileri ilişkilendirmek](#associate-source-code-with-memory-usage-data).)
 
-         Yığın anlık görüntüsü el ile yararlanarak ayıramazsınız sorunlarını gidermeye yardımcı olmak için bu komutları kullanabilirsiniz.
+    Yığın anlık görüntüsü el ile yararlanarak ayıramazsınız sorunlarını gidermeye yardımcı olmak için bu komutları kullanabilirsiniz.
 
-    - Bir test nesnesi oluşturma ve JavaScript bellek Çözümleyicisi görünümlerde türler görünümü gibi izleme. Örneğin, belirli bir nesne veya öğenin atık olarak toplanmış olup olmadığını görmek için başka bir nesne için çok büyük bir nesne ekleyebilirsiniz.
+  - Bir test nesnesi oluşturma ve JavaScript bellek Çözümleyicisi görünümlerde türler görünümü gibi izleme. Örneğin, belirli bir nesne veya öğenin atık olarak toplanmış olup olmadığını görmek için başka bir nesne için çok büyük bir nesne ekleyebilirsiniz.

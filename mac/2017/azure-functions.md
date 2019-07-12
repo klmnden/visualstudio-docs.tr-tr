@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933519"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824422"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure İşlevleri’ne Giriş
 
@@ -140,14 +140,14 @@ Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac i�
 ## <a name="available-function-templates"></a>Kullanılabilir işlev şablonları
 
 - **GitHub tetikleyicisi** -GitHub depolarınızda gerçekleşen olaylara yanıt. Daha fazla bilgi için [Azure işlevleri makalede GitHub üzerindeki](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Bir sorun veya çekme isteği için bir GitHub Web kancası aldığında ve yorum ekleyen Github'da yorum yapan – bu işlevi çalıştırılır.
-    - GitHub Web kancası aldığında, GitHub Web kancası – bu işlevi çalıştırılır.
+  - Bir sorun veya çekme isteği için bir GitHub Web kancası aldığında ve yorum ekleyen Github'da yorum yapan – bu işlevi çalıştırılır.
+  - GitHub Web kancası aldığında, GitHub Web kancası – bu işlevi çalıştırılır.
 
 - **HTTP** – bir HTTP isteği kullanarak kodunuzun yürütülmesini tetikler. Açık şablonları için aşağıdaki HTTP Tetikleyicileri vardır:
-    - HTTP tetikleyicisi
-    - Http GET CRUD
-    - HTTP POST CRUD
-    - Parametrelerle HTTP tetikleyicisi
+  - HTTP tetikleyicisi
+  - Http GET CRUD
+  - HTTP POST CRUD
+  - Parametrelerle HTTP tetikleyicisi
 
 - **Zamanlayıcı** – önceden tanımlanmış bir zamanlamaya göre temizleme veya diğer toplu işlem görevlerini yürütün. Bu şablon iki alanlarını alır: bir ad ve bir zamanlama altı alanı CRON ifadesidir. Daha fazla bilgi için [Azure işlevleri zamanında makalesi](/azure/azure-functions/functions-create-scheduled-function)
 

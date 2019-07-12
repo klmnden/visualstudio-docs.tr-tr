@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045609"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821679"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - veya -  
+     \- veya -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,7 +75,7 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - veya -  
+   \- veya -  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

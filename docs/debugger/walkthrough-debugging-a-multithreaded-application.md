@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406936"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821584"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Görüntüleme iş parçacıkları Visual Studio hata ayıklayıcıda iş parçacıkları penceresini kullanarak (C#, Visual Basic, C++)
 İçinde **iş parçacıkları** penceresini inceleyin ve ayıkladığınız uygulama iş parçacıkları ile çalışır. Nasıl kullanılacağını adım adım yönergeler için **iş parçacıkları** penceresinde görmek [izlenecek yol: İş parçacıkları penceresini kullanarak hata ayıklama](../debugger/how-to-use-the-threads-window.md).
@@ -101,9 +101,9 @@ Sarı bir ok, geçerli iş parçacığı (ve yürütme işaretçisi konumunu) g�
 
 - Aşağıdaki adımlardan birini izleyin:
 
-    - Herhangi bir iş parçacığı çift tıklayın.
+  - Herhangi bir iş parçacığı çift tıklayın.
 
-    - Bir iş parçacığı sağ tıklayıp **iş parçacığı anahtarı**.
+  - Bir iş parçacığı sağ tıklayıp **iş parçacığı anahtarı**.
 
 ## <a name="group-and-sort-threads"></a>Grup ve sıralama iş parçacıkları
  İş parçacıkları gruplandırdığınızda, tablodaki her grup için bir başlık görünür. Bir Grup açıklaması gibi başlık içeren **çalışan iş parçacığı** veya **bayrak yok iş parçacıkları**ve bir ağaç denetimi. Her grup üyesi iş parçacıklarının grubunun başlığının altında görünür. Bir grubun üyesi iş parçacıklarının gizlemek istiyorsanız, grubu daraltmak için ağaç denetimi kullanın.

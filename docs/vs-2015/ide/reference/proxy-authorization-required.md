@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847029"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822065"
 ---
-# <a name="proxy-authorization-required"></a>Proxy kimlik doğrulaması gerekli
+# <a name="proxy-authorization-required"></a>Proxy Yetkilendirmesi Gerekiyor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Proxy Yetkilendirmesi gerekli** hata genellikle oluşur kullanıcılar Visual Studio online kaynakları bir ara sunucu üzerinden bağlanır ve proxy sunucusu çağrıları engeller.
@@ -27,15 +27,15 @@ Bu hatayı düzeltmek için bir veya daha fazla aşağıdaki adımları deneyin:
 
 - Yukarıdaki adım sorunu çözmezse, proxy sunucusu için kimlik bilgileri istenmez Bunun nedeni olabilir http://go.microsoft.com yöneliktir ancak bunu yapar *. visualStudio.com adresleri. Bu sunucular için aşağıdaki URL'ler Visual Studio'da tüm oturum açma senaryoları engelini kaldırmak için izin verilenler listesine eklemeniz gerekir:
 
-    - *.windows.net
+  - *.windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoft.com
+  - *.microsoft.com
 
-    - *.live.com
+  - *.live.com
 
 - Kaldırabilirsiniz http://go.microsoft.com için hem de proxy kimlik doğrulaması iletişim kutusu gösterilir böylece adresi izin verilenler listesinden http://go.microsoft.com adresi ve Visual Studio başlatıldığında sunucu uç noktaları.
 

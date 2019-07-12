@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079019"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823621"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI metni ve Visual Studio için Yardım
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079019"
 
 - Kendinize bir hata iletisi oluşturulurken sorun gereken bazı sorular:
 
-    - Kullanıcı başına bu hata sorunu çözmek nasıl ekleyeceğimi?
+  - Kullanıcı başına bu hata sorunu çözmek nasıl ekleyeceğimi?
 
-    - Kullanıcı, bu hata olarak aynı sözlük kullanıyor mu?
+  - Kullanıcı, bu hata olarak aynı sözlük kullanıyor mu?
 
-    - Bu hata belirsiz veya birden çok durumlarda paylaşılan? Nasıl bu durumda, kullanıcıların ihtiyacı olan çözümü kılavuzu?
+  - Bu hata belirsiz veya birden çok durumlarda paylaşılan? Nasıl bu durumda, kullanıcıların ihtiyacı olan çözümü kılavuzu?
 
 #### <a name="build-errors"></a>Derleme hataları
  Visual Studio yazılım geliştirme aracı olduğundan, çoğu bileşenlerinden biri bir derleme, dönüştürme veya kodlama Geliştirici iş ikili biçimine dönüştürmek için adım vardır. Bu dönüştürmeler, derleyici yanlış yazılan dosyaları işleyemediğinde veya derleyici seçenekleri düzgün ayarladığınızda olmayan hatalara neden olabilir.

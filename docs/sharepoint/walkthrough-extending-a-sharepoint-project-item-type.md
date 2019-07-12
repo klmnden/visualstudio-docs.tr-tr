@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430351"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825981"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>İzlenecek yol: Bir SharePoint proje öğesi türünü genişletme
   Kullanabileceğiniz **iş verileri bağlantı modeli** SharePoint'te İş Verileri Bağlantısı (BDC) hizmeti için bir model oluşturmak için proje öğesi. Varsayılan olarak, bu proje öğesini kullanarak model oluşturduğunuzda modeldeki veriler kullanıcılara görüntülenmez. Ayrıca, kullanıcıların verileri görüntülemesini sağlamak için SharePoint'te bir dış liste oluşturmanız gerekir.
@@ -28,9 +28,9 @@ ms.locfileid: "63430351"
 
 - Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
 
-    - Bu, BDC modelindeki verileri görüntüleyen bir dış liste oluşturur. Uzantı SharePoint Proje sistemi için nesne modeli oluşturmak için kullanır. bir *Elements.xml* listeyi tanımlayan dosya. Böylece BDC modeliyle birlikte dağıtılır de proje dosyası ekler.
+  - Bu, BDC modelindeki verileri görüntüleyen bir dış liste oluşturur. Uzantı SharePoint Proje sistemi için nesne modeli oluşturmak için kullanır. bir *Elements.xml* listeyi tanımlayan dosya. Böylece BDC modeliyle birlikte dağıtılır de proje dosyası ekler.
 
-    - Bir kısayol menü öğesi ekler **iş verileri bağlantı modeli** proje öğelerinde **Çözüm Gezgini**. Geliştiriciler, BDC modeli için bir dış liste oluşturmak için bu menü öğesine tıklayabilirsiniz.
+  - Bir kısayol menü öğesi ekler **iş verileri bağlantı modeli** proje öğelerinde **Çözüm Gezgini**. Geliştiriciler, BDC modeli için bir dış liste oluşturmak için bu menü öğesine tıklayabilirsiniz.
 
 - Uzantı derlemesini dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
 

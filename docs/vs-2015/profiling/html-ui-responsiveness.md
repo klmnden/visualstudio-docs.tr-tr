@@ -20,14 +20,14 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697618"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824832"
 ---
-# <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
+# <a name="html-ui-responsiveness"></a>HTML kullanıcı arabirimi yanıt hızı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu, uygulamalarınızı Windows Evrensel uygulamaları için bir performans aracı kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak performans sorunlarını yalıtmak açıklar.  
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Yaklaşık başlangıç zamanlarını, süresini ve bitiş zamanlarını bir olay için bir zaman çizelgesi ve ızgara görünümünde görüntüleyin. Zaman Çizelgesi ayrıntıları grafiği 30 milisaniye kılavuz görünümü yakınlaştırma durumuna bağlı olarak 30 saniyeye kadar uzanan dönemlerde gösterebilirsiniz. Duration değerleri için:  
   
-    - Kapsamlı bir kez olay alt öğeleri dahil olmak üzere Olay süresini temsil eder. Izgara görünümünde bu değer ilk olarak görünür.  
-  
-    - Özel süreleri, olay alt öğeleri dahil değil, olay süresi temsil eder. Izgara görünümünde bu değeri parantez içinde görüntülenir.  
+  - Kapsamlı bir kez olay alt öğeleri dahil olmak üzere Olay süresini temsil eder. Izgara görünümünde bu değer ilk olarak görünür.  
+
+  - Özel süreleri, olay alt öğeleri dahil değil, olay süresi temsil eder. Izgara görünümünde bu değeri parantez içinde görüntülenir.  
   
 - Olay alt öğelerini görüntülemek için hiyerarşideki bir olay'ı genişletin. Olay alt öğeler tarafından üst olayı oluşturan diğer olaylardır. Örneğin, bir DOM olayı alt öğe olarak görüntülenen olay dinleyicileri olabilir. Olay dinleyicisi, kendisinden gibi bir düzen olay sonuçlanan diğer olayları olabilir.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Ayrıntılar bölmesinde (sağ bölme) her olay için ayrıntıları görüntüleyin. Aşağıdaki örneklerde gösterildiği gibi özellikler, belirli bir olaya bağlı olarak farklılık gösterir:  
   
-    - Zamanlayıcılar, olay dinleyicileri (DOM olayları) ve animasyonlu çerçeve geri çağırmalarını **geri çağırma işlevi** özellik adı ile birlikte kaynak kodu konumu olay işleyicisi veya geri çağırma işlevinin bir bağlantı sağlar.  
-  
-    - Seçilen olay ve tüm alt öğelerini renk kodlu özetini zamanlayıcıları, olay dinleyicileri (DOM olayları), Düzen olayları ve animasyonlu çerçeve geri çağırmalarını için görünür **sınırları içeren zaman özeti** bölümü (renk kodlu halka). Her renk kodlu dilimi görüntünün bir olay türünü temsil eder. Araç ipuçları, olay türü adını sağlayın.  
-  
-    > [!TIP]
-    > Zaman Çizelgesi ayrıntıları grafiği ve **sınırları içeren zaman özeti** iyileştirme için alanları tanımlamanıza yardımcı olabilir. Bu görünüm ya da çok sayıda küçük görevlere gösteriyorsa, olay iyileştirme için bir aday olabilir. Örneğin, bir uygulama düzenini ve HTML olayları ayrıştırma çok sayıda içinde elde edilen yenileme DOM öğeleri sık de olabilir. Bu iş'toplu işlem performansına mümkün olabilir.  
-  
+  - Zamanlayıcılar, olay dinleyicileri (DOM olayları) ve animasyonlu çerçeve geri çağırmalarını **geri çağırma işlevi** özellik adı ile birlikte kaynak kodu konumu olay işleyicisi veya geri çağırma işlevinin bir bağlantı sağlar.  
+
+  - Seçilen olay ve tüm alt öğelerini renk kodlu özetini zamanlayıcıları, olay dinleyicileri (DOM olayları), Düzen olayları ve animasyonlu çerçeve geri çağırmalarını için görünür **sınırları içeren zaman özeti** bölümü (renk kodlu halka). Her renk kodlu dilimi görüntünün bir olay türünü temsil eder. Araç ipuçları, olay türü adını sağlayın.  
+
+  > [!TIP]
+  > Zaman Çizelgesi ayrıntıları grafiği ve **sınırları içeren zaman özeti** iyileştirme için alanları tanımlamanıza yardımcı olabilir. Bu görünüm ya da çok sayıda küçük görevlere gösteriyorsa, olay iyileştirme için bir aday olabilir. Örneğin, bir uygulama düzenini ve HTML olayları ayrıştırma çok sayıda içinde elde edilen yenileme DOM öğeleri sık de olabilir. Bu iş'toplu işlem performansına mümkün olabilir.  
+
 ### <a name="FilterTimelineDetails"></a> Filtre zaman çizelgesi ayrıntıları  
  Belirli bir olay için zaman çizelgesi Ayrıntıları görünümünde seçerek filtreleyebilirsiniz **olaya filtre** belirli bir olaya ilişkin bağlam menüsünden. Bu seçeneği belirlediğinizde, zaman çizelgesi ve ızgara görünümü seçilen olaya kapsanır. CPU kullanım grafiği seçiminde de belirli bir olay için kapsamları.  
   

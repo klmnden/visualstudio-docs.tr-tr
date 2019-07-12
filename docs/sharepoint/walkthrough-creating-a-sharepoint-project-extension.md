@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430409"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825798"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>İzlenecek yol: Bir SharePoint proje uzantısı oluşturma
   Bu izlenecek yol, bir SharePoint proje uzantısı oluşturma işlemini gösterir. Bir proje ne zaman eklenmiş, silinmiş veya yeniden adlandırılmış gibi proje düzeyinde olaylara yanıt vermek için bir proje uzantısı'nı kullanabilirsiniz. Ayrıca, özel özellikler ekleme veya bir özellik değeri değiştiğinde yanıt. Proje öğesi uzantıları, proje uzantılarını belirli bir SharePoint proje türüyle ilişkilendirilemez. Bir proje uzantısı oluşturma, herhangi bir türden SharePoint projesi açıldığında uzantınızı yüklediği [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430409"
 
 - Oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı SharePoint projeleri için şunları yapar:
 
-    - Özel proje özelliği için Özellikler penceresini ekler. Özelliği için herhangi bir SharePoint projesine uygulanır.
+  - Özel proje özelliği için Özellikler penceresini ekler. Özelliği için herhangi bir SharePoint projesine uygulanır.
 
-    - Bir projeye eşlemeli klasörleri eklemek için SharePoint Proje nesne modeli kullanır.
+  - Bir projeye eşlemeli klasörleri eklemek için SharePoint Proje nesne modeli kullanır.
 
-    - Kullanan [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otomasyon nesne modeli (DTE) projeden eşlenmiş klasör silinemedi.
+  - Kullanan [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otomasyon nesne modeli (DTE) projeden eşlenmiş klasör silinemedi.
 
 - Oluşturma bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje özelliğin uzantı derlemesini dağıtmak için paket uzantısı (VSIX).
 

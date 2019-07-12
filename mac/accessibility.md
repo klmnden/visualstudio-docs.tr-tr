@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985287"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824441"
 ---
 # <a name="accessibility"></a>Erişilebilirlik
 
@@ -62,9 +62,9 @@ VoiceOver komutlar görünür bu kılavuzdaki **VO + * anahtarı*** yapabildiği
 Kullanıcı arabirimi Mac için Visual Studio gitmek için şu tuş bileşimleri kullanın:
 
 - **VO + sağ / sol**: Kullanıcı arabirimi öğeleri arasında gezinme
-    - VoiceOver etiket ve denetim türünü duyurmak ve etkileşim açıklanmaktadır.
+  - VoiceOver etiket ve denetim türünü duyurmak ve etkileşim açıklanmaktadır.
 - **VO + üst karakter + aşağı / ayarlama**: Adım içine / dışına bir öğe
-    - Kullanabileceğiniz bir öğesi içinde bir kez **VO + sol / sağ** içindeki öğeleri geçici olarak gezinmek için.
+  - Kullanabileceğiniz bir öğesi içinde bir kez **VO + sol / sağ** içindeki öğeleri geçici olarak gezinmek için.
 - **VO + Ara çubuğu**: Bir denetimle etkileşim / seçin
 - **VO + M**: Menü çubuğu Mac için Visual Studio ile etkileşim kurma
 

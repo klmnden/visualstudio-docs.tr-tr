@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566477"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821897"
 ---
 # <a name="n-tier-data-applications-overview"></a>N katmanlı veri uygulamalarına genel bakış
 *N katmanlı* veri uygulamalardır içinde birden çok ayrılmış veri uygulamaları *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da bilinir, n katmanlı uygulamalar, istemci ve sunucu arasında dağıtılan farklı katmanlara bir işlem ayırın. Verilere erişen uygulamalar geliştirirken, uygulamayı oluşturan çeşitli katmanları arasında NET bir ayrım olmalıdır.
@@ -49,11 +49,11 @@ Genellikle sunu katmanına bir hizmet başvurusu kullanarak orta katman erişir 
 
 - Bileşenleri ve aşağıdaki gibi bir mantıksal veri erişim:
 
-    - [TableAdapter bağdaştırıcıları](create-and-configure-tableadapters.md) ve [DataAdapters ve DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [TableAdapter bağdaştırıcıları](create-and-configure-tableadapters.md) ve [DataAdapters ve DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Verilerin temsillerini gibi nesne [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) varlık sınıfları.
+  - Verilerin temsillerini gibi nesne [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) varlık sınıfları.
 
-    - Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.
+  - Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.
 
 Özellikleri ve teknolojileri Visual Studio'da bulunan ve burada, n katmanlı bir uygulama orta katman için uygun olmayabilir aşağıdaki çizimde gösterilmektedir.
 

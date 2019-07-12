@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160158"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825483"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
@@ -105,33 +105,33 @@ Bunun yapılması, derleme hatalarına neden olabilir, başka bir projenin çık
 
 - Taşıma veya derlemeyi aşağıdaki konumlardan birine kopyalayın:
 
-   - Geçerli proje dizini. (Kullanarak bu derlemeleri bulabilirsiniz **Gözat** sekmesini.)
+  - Geçerli proje dizini. (Kullanarak bu derlemeleri bulabilirsiniz **Gözat** sekmesini.)
 
-   - Aynı çözüm içindeki diğer proje dizinleri. (Kullanarak bu derlemeleri bulabilirsiniz **projeleri** sekmesini.)
+  - Aynı çözüm içindeki diğer proje dizinleri. (Kullanarak bu derlemeleri bulabilirsiniz **projeleri** sekmesini.)
 
-    \- veya -
+  \- veya -
 
 - Görüntülenecek derlemelerin konumunu belirten bir kayıt defteri anahtarını ayarlayın:
 
-   Bir 32-bit işletim sistemi için aşağıdaki kayıt defteri anahtarlarından birini ekleyin.
+  Bir 32-bit işletim sistemi için aşağıdaki kayıt defteri anahtarlarından birini ekleyin.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Bir 64-bit işletim sistemi için bir 32-bit kayıt defteri kovanında bulunan aşağıdaki kayıt defteri anahtarlarından birini ekleyin.
+  Bir 64-bit işletim sistemi için bir 32-bit kayıt defteri kovanında bulunan aşağıdaki kayıt defteri anahtarlarından birini ekleyin.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>*  geçerli en düşük framework sürümüdür. Varsa *\<VersionMinimum\>* v3.0, belirtilen klasörleri olan *AssemblyFoldersEx* .NET Framework 3.0 ve üstünü hedefleyen projeler için geçerlidir.
+  *\<VersionMinimum\>*  geçerli en düşük framework sürümüdür. Varsa *\<VersionMinimum\>* v3.0, belirtilen klasörleri olan *AssemblyFoldersEx* .NET Framework 3.0 ve üstünü hedefleyen projeler için geçerlidir.
 
-   *\<AssemblyLocation\>*  görünmesini istediğiniz derlemelerin dizinidir **Başvuru Ekle** iletişim kutusu *C:\MyAssemblies*.
+  *\<AssemblyLocation\>*  görünmesini istediğiniz derlemelerin dizinidir **Başvuru Ekle** iletişim kutusu *C:\MyAssemblies*.
 
-   Altında kayıt defteri anahtarı oluşturma `HKEY_LOCAL_MACHINE` düğümü, tüm kullanıcıların belirtilen konumda derlemelerde sağlar **Başvuru Ekle** iletişim kutusu. Altında kayıt defteri anahtarı oluşturma `HKEY_CURRENT_USER` düğümü yalnızca geçerli kullanıcı ayarını etkiler.
+  Altında kayıt defteri anahtarı oluşturma `HKEY_LOCAL_MACHINE` düğümü, tüm kullanıcıların belirtilen konumda derlemelerde sağlar **Başvuru Ekle** iletişim kutusu. Altında kayıt defteri anahtarı oluşturma `HKEY_CURRENT_USER` düğümü yalnızca geçerli kullanıcı ayarını etkiler.
 
-   Açık **Başvuru Ekle** iletişim kutusunu bir daha. Derlemeleri görünmelidir **.NET** sekmesi. Aksi takdirde, derlemelerin yer olduğundan emin olun belirtilen *AssemblyLocation* dizin, Visual Studio'yu yeniden başlatın ve yeniden deneyin.
+  Açık **Başvuru Ekle** iletişim kutusunu bir daha. Derlemeleri görünmelidir **.NET** sekmesi. Aksi takdirde, derlemelerin yer olduğundan emin olun belirtilen *AssemblyLocation* dizin, Visual Studio'yu yeniden başlatın ve yeniden deneyin.
 
 ## <a name="projects-tab"></a>Projeler sekmesi
 

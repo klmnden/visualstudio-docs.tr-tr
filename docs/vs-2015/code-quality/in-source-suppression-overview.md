@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426608"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825998"
 ---
 # <a name="in-source-suppression-overview"></a>Kaynak Bastırmaya Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:  
   
-    - Modül  
-  
-    - Ad Alanı  
-  
-    - Kaynak  
-  
-    - Tür  
-  
-    - Üye  
+  - Modül  
+
+  - Ad Alanı  
+
+  - Kaynak  
+
+  - Tür  
+
+  - Üye  
   
 - **Hedef** - üzerinde uyarı engellenir hedef belirtmek için kullanılan tanımlayıcı bir. Bir öğe tam adı içermelidir.  
   

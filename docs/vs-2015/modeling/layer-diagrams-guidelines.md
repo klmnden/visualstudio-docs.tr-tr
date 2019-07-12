@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440992"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823701"
 ---
 # <a name="layer-diagrams-guidelines"></a>Katman diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,14 +96,14 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
 ## <a name="EditArchitecture"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  İçin sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için katman diyagramı düzenlemek için aşağıdaki adımları kullanın. Kod yapısını genişletmeden önce iyileştirmek için yeniden düzenleme bazı değişiklikler de göz önünde bulundurabilirsiniz. Bkz: [kod yapısını iyileştirme](#Improving).  
   
-|**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
+|**To**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
 |Var olmaması gereken bir bağımlılık Sil|Bağımlılık tıklatın ve sonra basın **Sil**.|  
 |Bağımlılık yönünü değiştirme veya kısıtlama|Ayarlama, **yönü** özelliği.|  
 |Yeni bağımlılıklar oluşturma|Kullanım **bağımlılık** ve **çift yönlü bağımlılık** araçları.<br /><br /> Çoklu bağımlılıklar çizmek için araca çift tıklayın. İşlemi tamamladığınızda, tıklayın **işaretçi** aracını veya ENTER tuşuna **ESC** anahtarı.|  
-|Bir katman ile ilişkili yapıların belirli ad alanlarına bağlı olamayacağını belirtme|Katmanın ad alanlarını yazın **Yasak Namespace bağımlılıkları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
-|Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
-|Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın ad türü **gerekli ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
+|Bir katman ile ilişkili yapıların belirli ad alanlarına bağlı olamayacağını belirtme|Katmanın ad alanlarını yazın **Yasak Namespace bağımlılıkları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|  
+|Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|  
+|Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın ad türü **gerekli ad alanları** özelliği. Noktalı virgül kullanın ( **;** ) ad alanlarını ayırmak için.|  
   
 ### <a name="Improving"></a> Kod yapısını artırma  
  Yeniden düzenleme değişiklikler, uygulama davranışını etkilemez, ancak kodu değiştirmek ve gelecekte genişletmek kolaylaştırılmasına yardımcı olmak geliştirmeleridir. İyi yapılandırılmış kod, bir katman diyagramına soyutlamak kolay bir tasarıma sahiptir.  
@@ -134,7 +134,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *katman diyagramlar
   
 - Katmanları ve bağımlılıkları renklerini değiştirin.  
   
-    - Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.  
+  - Bir veya daha fazla katmanları veya bağımlılıkları, sağ tıklayın ve ardından seçin **özellikleri**. İçinde **özellikleri** penceresinde Düzenle **renk** özelliği.  
   
 ## <a name="Validate"></a> Kodu diyagrama karşı doğrulayın  
  Diyagram düzenledikten sonra istediğiniz zaman el ile veya otomatik olarak karşı kodu yerel bir yapı çalıştırdığınız her seferde doğrulamak için veya [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

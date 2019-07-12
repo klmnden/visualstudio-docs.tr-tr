@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme hakkında bilgi edinin.
-ms.openlocfilehash: 12f547e195ed5585a6c29b061ad57f0cf1392c3c
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823742"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -107,7 +107,7 @@ Hata bu e-posta aldığınız düşünüyorsanız, lütfen iletişime geçin [Az
 ## <a name="support-resources"></a>Destek kaynakları
 
 - Azure'la ilgili yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
-    - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Azure belgeleri](/azure/)
+  - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Azure belgeleri](/azure/)
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

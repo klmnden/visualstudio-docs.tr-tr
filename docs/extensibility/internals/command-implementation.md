@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342194"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824937"
 ---
 # <a name="command-implementation"></a>Komut uygulama
 Komut içinde bir VSPackage'ı uygulamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Her iki yöntem uygulamanıza GUID hem komutu tanır sonra yöntem, her komut komut bayrakları alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> bayraklar:
 
-    - `OLECMDF_SUPPORTED`: Komut desteklenir.
+  - `OLECMDF_SUPPORTED`: Komut desteklenir.
 
-    - `OLECMDF_INVISIBLE`: Komutun görünür olmamalıdır.
+  - `OLECMDF_INVISIBLE`: Komutun görünür olmamalıdır.
 
-    - `OLECMDF_LATCHED`: Komut çubuğunda açılıp ve denetlendi görünür.
+  - `OLECMDF_LATCHED`: Komut çubuğunda açılıp ve denetlendi görünür.
 
-    - `OLECMDF_ENABLED`: Komut etkin.
+  - `OLECMDF_ENABLED`: Komut etkin.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa, komut gizlenmelidir.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa, komut gizlenmelidir.
 
-    - `OLECMDF_NINCHED`: Komut menü denetleyicisi ve etkin değil ancak aşağı açılan listesinin boş değil ve yine de kullanılabilir. (Bu bayrağı nadiren kullanılır.)
+  - `OLECMDF_NINCHED`: Komut menü denetleyicisi ve etkin değil ancak aşağı açılan listesinin boş değil ve yine de kullanılabilir. (Bu bayrağı nadiren kullanılır.)
 
 - Komut içinde tanımlanmışsa *.vsct* ile dosya `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:
 
-    - Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.
+  - Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.
 
-    - Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.
+  - Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.
 
 Ayrıca, komutunuzu Otomasyon işlevleri işlemek için özellikle tasarlanmıştır sürece geçerli bağlam bir Otomasyon işlevi olmadığından emin olun.
 

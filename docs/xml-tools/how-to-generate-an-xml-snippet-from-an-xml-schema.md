@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001914"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825758"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma
 
@@ -25,11 +25,11 @@ Bu özellik yalnızca öğeleri üzerinde kullanılabilir. Ayrıca, aşağıdaki
 
 - Geçerli öğe düzenleyicide özniteliklere boş olmalıdır. Örneğin, tüm geçerli aşağıda verilmiştir
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - İmleç hemen öğe adı sağa bulunmalıdır.
 
@@ -56,17 +56,17 @@ Varsayılan değerleri oluşturulur ve düzenlenebilir değerleri Not. Şema var
 
      Yeni bir dosya düzenleyicide açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8">`.
 
-3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın (**...** ) üzerinde **şemaları** alan.
+3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın ( **...** ) üzerinde **şemaları** alan.
 
      **XSD şemaları** iletişim kutusu görüntülenir.
 
-4. **Ekle**'yi tıklatın.
+4.           **Ekle**'yi tıklatın.
 
      **Açık XSD şeması** iletişim kutusu görüntülenir.
 
 5. Şema dosyası seçin ve tıklayın **açık**.
 
-6. **Tamam**'ı tıklatın.
+6.           **Tamam**'ı tıklatın.
 
      XML Şeması sunulmuştur XML belge ile ilişkilendirilmiş.
 

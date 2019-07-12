@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407776"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824433"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da Azure IIS üzerinde ASP.NET Core
 
@@ -63,7 +63,7 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
     Visual Studio 2019 içinde yazın **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Core Web uygulaması oluşturma** . Görüntülenen iletişim kutusunda, projeyi adlandırın **MyASPApp**ve ardından **Oluştur**. Ardından, **Web uygulaması (Model-View-Controller)** ve ardından **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017'de seçin **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**. ASP.NET Core şablonları bölümünde **Web uygulaması (Model-View-Controller)**. ASP.NET Core 2.1 seçili olduğundan emin olun, **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.
+    Visual Studio 2017'de seçin **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**. ASP.NET Core şablonları bölümünde **Web uygulaması (Model-View-Controller)** . ASP.NET Core 2.1 seçili olduğundan emin olun, **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.
     ::: moniker-end
 
 1. About.cshtml.cs dosyasını açın ve bir kesim noktası `OnGet` yöntemi (eski şablonlarda, bunun yerine HomeController.cs açın ve kesme noktası kümesinde `About()` yöntemi).
@@ -108,9 +108,9 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 
 * Emin olmak için Yardım istiyorsanız uygulamanızı, dağıtılan, ayarlanır ve böylece hata ayıklaması yapabilirsiniz, IIS'de doğru çalışmasını, bu konudaki tüm adımları izleyin.
 
-    * Başlamadan önce açıklanan tüm adımları [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Başlamadan önce açıklanan tüm adımları [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Ağ güvenlik grubunda 80 numaralı bağlantı noktasını açtığınızda, aynı zamanda açık [düzeltmek bağlantı noktası](#bkmk_openports) uzaktan hata ayıklayıcının (4024 veya 4022). Bu şekilde, daha sonra açmak zorunda kalmazsınız.
+  * Ağ güvenlik grubunda 80 numaralı bağlantı noktasını açtığınızda, aynı zamanda açık [düzeltmek bağlantı noktası](#bkmk_openports) uzaktan hata ayıklayıcının (4024 veya 4022). Bu şekilde, daha sonra açmak zorunda kalmazsınız.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Windows Server'da tarayıcınızın güvenlik ayarlarını güncelleştirin
 
@@ -251,7 +251,7 @@ Visual Studio sürümünüzle eşleşen uzak Araçlar sürümü indirin.
 
 7. Tıklayın **ekleme**.
 
-8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >**.
+8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >** .
 
     ASP.NET web sayfası görmeniz gerekir.
 9. Çalışan ASP.NET uygulama bağlantısını tıklayın **hakkında** sayfası.

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065188"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826172"
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "60065188"
   
 - [Özellik işlevi sözdizimi](#BKMK_Syntax)  
   
-    - [Dize özelliği işlevleri](#BKMK_String)  
-  
-    - [Statik özellik işlevleri](#BKMK_Static)  
-  
-    - [Statik özellikler örnek yöntemleri çağırma](#BKMK_InstanceMethods)  
-  
-    - [MSBuild özellik işlevleri](#BKMK_PropertyFunctions)  
+  - [Dize özelliği işlevleri](#BKMK_String)  
+
+  - [Statik özellik işlevleri](#BKMK_Static)  
+
+  - [Statik özellikler örnek yöntemleri çağırma](#BKMK_InstanceMethods)  
+
+  - [MSBuild özellik işlevleri](#BKMK_PropertyFunctions)  
   
 - [İç içe özellik işlevleri](#BKMK_Nested)  
   
