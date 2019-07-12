@@ -16,15 +16,6 @@
   items:
     - name: Visual Studio'yu yükleme
       href: install/install-visual-studio.md
-    - name: Kişiselleştirme hesapları
-      items:
-        - name: Visual Studio’da oturum açma
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: Birden çok kullanıcı hesabıyla çalışma
-          href: ide/work-with-multiple-user-accounts.md
-        - name: Deneme sürümü uzatma veya bir lisansı güncelleştirme
-          href: ide/how-to-unlock-visual-studio.md
     - name: Çevrimdışı yükleme
       items:
         - name: Visual Studio’nun çevrimdışı yüklemesini oluşturma
@@ -61,8 +52,6 @@
           items:
             - name: Visual Studio’nun ağ tabanlı yüklemesini oluşturma
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: Ağ konuları
               items:
                 - name: Visual Studio’yu bir güvenlik duvarı veya ara sunucusunun arkasına yükleme ve burada kullanma
@@ -77,28 +66,32 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: Paket önbelleğini devre dışı bırakma veya taşıma
-              href: install/disable-or-move-the-package-cache.md
-            - name: Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: Bakım temeli sırasında Visual Studio’yu güncelleştirme
-              href: install/update-servicing-baseline.md
-        - name: Yüklemeleri yönetme
+            - name: Yardım Görüntüleyicisi’ni Dağıtma
+              items:
+                - name: Yardım Görüntüleyicisi Yönetici Kılavuzu
+                  href: help-viewer/administrator-guide.md
+                - name: Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
+                  href: help-viewer/command-line-arguments.md
+                - name: Yardım İçerik Yöneticisi Geçersiz Kılmaları
+                  href: help-viewer/behavior-overrides.md
+        - name: Yüklemeleri yönetme ve güncelleştirme
           items:
             - name: Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: Bakım temeli sırasında Visual Studio’yu güncelleştirme
+              href: install/update-servicing-baseline.md
+            - name: Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Paket yükü değişikliklerini yönetme
+              href: install/changed-payloads.md
+            - name: Paket önbelleğini devre dışı bırakma veya taşıma
+              href: install/disable-or-move-the-package-cache.md
         - name: Abonelikleri yönetme
           items:
             - name: 'Visual Studio abonelikleri: Yönetici genel bakışı'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Yardım Görüntüleyicisi’ni Dağıtma
-          items:
-            - name: Yardım Görüntüleyicisi Yönetici Kılavuzu
-              href: help-viewer/administrator-guide.md
-            - name: Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
-              href: help-viewer/command-line-arguments.md
-            - name: Yardım İçerik Yöneticisi Geçersiz Kılmaları
-              href: help-viewer/behavior-overrides.md
         - name: Başvuru
           items:
             - name: Visual Studio iş yükü ve bileşen kimlikleri
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Geri Bildirim İstemcisi
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: Paket yükü değişiklikleri
-              href: install/changed-payloads.md
             - name: Visual Studio derleme numaraları ve yayın tarihleri
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure sanal makinesinden Visual Studio'yu kullanma
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Dış araçları yönetme
           href: ide/managing-external-tools.md
+        - name: Kişiselleştirme hesapları
+          items:
+            - name: Visual Studio’da oturum açma
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: Birden çok kullanıcı hesabıyla çalışma
+              href: ide/work-with-multiple-user-accounts.md
+            - name: Deneme sürümü uzatma veya bir lisansı güncelleştirme
+              href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio'nun performansı
       items:
         - name: Performansı en iyi hale getirme
