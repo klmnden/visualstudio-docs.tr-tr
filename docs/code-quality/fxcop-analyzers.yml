@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: .NET derleyici platformu çözümleyiciler FxCop kod analizinden kaynaklanan geçirme
+title: Kaynak Çözümleme (FxCop Çözümleyicileri) için ikili analizi (FxCop) geçirme
 metadata:
   title: FxCop geçiş belgeleri
-  description: Eski FxCop Çözümleyicileri için kod analizi için geçirmeyi öğrenin.
-  ms.date: 07/18/2018
+  description: Eski ikili çözümlemesinden (FxCop) analiz (FxCop Çözümleyicileri) zaman kaynağı taşımayı öğrenin kod analiz edin.
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: Kodu ilk kez analiz etme veya FxCop Çözümleyicileri kullanarak yönetilen kod analiz yeni şekilde geçirme öğrenin.
+  description: Kodu ilk kez analiz etme veya kaynak analizi (FxCop Çözümleyicileri) kullanan yönetilen kodu analiz etme yeni yolu için ikili analizi (FxCop) geçirme öğrenin.
   aside:
     image:
       alt: Ortak yönetim görevleri logosu
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: Sık sorulan sorular
     items:
-      - html: Bazı yanıtlarını <a href="fxcop-analyzers-faq.md">sık sorulan sorular</a> FxCop Çözümleyicileri arasındaki farklar hakkında.
+      - html: Bazı yanıtlarını <a href="fxcop-analyzers-faq.md">sık sorulan sorular</a> ikili FxCop analizi ve FxCop Çözümleyicileri kullanarak kaynak analizi arasındaki farklar hakkında.
   - title: Kod Analizi yeniyseniz...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Komut satırı kullanımı
-  - title: FxCop kullanıcısıysanız...
+  - title: İkili analizi (FxCop) şu anda kullanıyorsanız...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Statik (FxCop) Çözümleyicisi Kod Analizi arasındaki farkları öğrenin.</p>
+            html: <p>İkili analizi (FxCop) ve kaynak çözümleme (FxCop Çözümleyicileri) arasındaki farkları öğrenin.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Farklı nedir?
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: FxCop çözümleyicilerini yükleme
           - href: fxcop-rule-port-status.md
-            html: <p>FxCop Çözümleyicileri için unity'nin statik kod analizi FxCop kuralları listeler.</p>
+            html: <p>Kaynak Çözümleme (FxCop Çözümleyicileri) için unity'nin ikili analizi (FxCop) kuralları listeler.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: Taşınmış ve unported kuralları

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977315"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852233"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Nasıl yapılır: MSBuild proje SDK'ları kullanın
 
@@ -56,7 +56,15 @@ Projenin değerlendirme sırasında [!INCLUDE[vstecmsbuild](../extensibility/int
     </Project>
     ```
 
-    Üst ve alt yukarıda açıklandığı gibi bir projenin bir örtük içeri aktarması eklenir.  Biçimi `Sdk` özniteliği `Name[/Version]` sürüm olduğu isteğe bağlı.  Örneğin, belirtebilirsiniz `My.Custom.Sdk/1.2.3`.
+    Üst ve alt yukarıda açıklandığı gibi bir projenin bir örtük içeri aktarması eklenir.
+    
+    Belirli bir SDK sürümünü belirtmek için kendisine ekleyebilirsiniz `Sdk` özniteliği:
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > Şu anda Mac için Visual Studio SDK proje başvurmak için desteklenen tek yol budur

@@ -1,6 +1,6 @@
 ---
 title: İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388556"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852176"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanımları — skalerler yanı sıra, yapılar ve sınıflar için işaretçiler — ve çoğu arabellek.  Bu makalede, ek açıklamalar için yaygın kullanım biçimlerini de gösterilir. İşlevlerle ilişkili ek açıklama için bkz: [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
      Kendisi için null ile sonlandırılmış bir dizisine bir işaretçi ifadesi `p`  -  `_Curr_` (diğer bir deyişle, `p` eksi `_Curr_`) standart uygun dili tarafından tanımlanır.  Öğeleri öncesinde `p` öncesi durumda geçerli olması gerekmez ve sonrası durumunda geçerli olması gerekir.
 
 ## <a name="optional-pointer-parameters"></a>İsteğe bağlı işaretçi parametreleri
+
  Ne zaman bir işaretçi parametresi ek açıklaması içerir `_opt_`, bu parametre null olabilir gösterir. Aksi takdirde, ek açıklama içermeyen sürümüyle aynı gerçekleştirir `_opt_`. Bir listesine buradan ulaşabilirsiniz `_opt_` çeşitleri işaretçi parametresi ek açıklamaları:
 
 ||||
@@ -384,6 +388,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
    İşlev başarısız olursa, döndürülen işaretçi işlev başarılı olursa geçerli bir arabellek veya null gösterir. Bu ek açıklama bir başvuru parametresi olmalıdır.
 
 ## <a name="output-reference-parameters"></a>Çıkış başvuru parametreleri
+
  Bir ortak başvuru parametresi uygulanacağı çıktı parametreleri için kullanılır.  Basit çıkış başvuru parametreleri için — örneğin, `int&`—`_Out_` doğru semantikler sağlar.  Ancak, çıkış değeri olduğunda bir işaretçi — örneğin `int *&`— eşdeğer işaretçi ek açıklamalar ister `_Outptr_ int **` doğru semantiği sağlaması gerekmez.  İşaretçi türleri için çıktı başvuru parametreleri semantiği kısaca ifade etmek için bu bileşik ek açıklamaları kullanın:
 
  **Ek açıklamalar ve açıklamaları**
@@ -445,13 +450,62 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
      Sonuç sonrası durumunda geçerli olması gerekir, ancak posta durumda null olabilir. İşaret geçerli arabelleğe `s` geçerli öğe bayt.
 
 ## <a name="return-values"></a>Dönüş Değerleri
+
  Bir işlevin dönüş değerini benzer bir `_Out_` parametresi, ancak farklı bir de-reference düzeyinde ve sonucu işaretçisi kavramını göz önünde bulundurun gerekmez.  Aşağıdaki ek açıklamalar için dönüş değeri açıklamalı nesnedir — bir skaler, bir yapı için bir işaretçi veya arabellek için işaretçi. Bu ek açıklamalar ilgili olarak aynı semantiğe sahip `_Out_` ek açıklama.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Biçim dizesi parametreleri
+
+- `_Printf_format_string_` Parametre bir biçim dizesi kullanılmak üzere olduğunu belirtir bir `printf` ifade.
+
+     **Örnek**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Parametre bir biçim dizesi kullanılmak üzere olduğunu belirtir bir `scanf` ifade.
+
+     **Örnek**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Parametre bir biçim dizesi kullanılmak üzere olduğunu belirtir bir `scanf_s` ifade.
+
+     **Örnek**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Diğer genel ek açıklamalar
+
  **Ek açıklamalar ve açıklamaları**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>İlgili Kaynaklar
+
  [Kod Analizi ekip blogu](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Ayrıca Bkz.

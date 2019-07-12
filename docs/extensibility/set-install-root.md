@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338402"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852196"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Uzantılar klasörünün dışına yükleme
+# <a name="install-outside-the-extensions-folder"></a>Uzantılar klasörünün dışına yükleme
 
-Visual Studio 2017 ve VSIX v3 ile başlayan (uzantı varlıklar uzantılar klasörünün dışına yükleme için artık destek sürüm 3). Şu anda, aşağıdaki konumlardan, geçerli yükleme konumlarını (burada [INSTALLDIR] Visual Studio örneğinin yükleme dizinine eşlendi) olarak etkin değil:
+Visual Studio 2017 ve VSIX v3 ile (sürüm 3), uzantı varlıklar başlangıç uzantılar klasörünün dışına yüklenebilir. Şu anda, aşağıdaki konumlardan, geçerli yükleme konumlarını (burada [INSTALLDIR] Visual Studio örneğinin yükleme dizinine eşlendi) olarak etkin değil:
 
 * [INSTALLDİR] \MSBuild
 * [INSTALLDİR] \Xml\Schemas
@@ -25,9 +25,10 @@ Visual Studio 2017 ve VSIX v3 ile başlayan (uzantı varlıklar uzantılar klas�
 * [INSTALLDİR] \Licenses
 * [INSTALLDİR] \Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDİR] \Common7\IDE\VC\VCTargets (yalnızca Visual Studio 2017 için desteklenir; Visual Studio 2019 için kullanım dışı ve üzeri)
 
->**Not:** VSIX biçimi VS yükleme klasör yapısını dışında yüklemeye izin vermiyor.
+> [!NOTE]
+> VSIX biçimi Visual Studio yükleme klasör yapısını dışında yüklemeye izin vermez. 
 
 Bu dizinleri yüklemeyi desteklemek için VSIX "makine başına örnek başına" yüklenmelidir. Bu extension.vsixmanifest Tasarımcısı'nda "tüm kullanıcılar" onay kutusunu işaretleyerek etkin hale getirilebilir:
 
@@ -49,7 +50,8 @@ Bu ilgili bazı meta veriler ekler `ProjectReference` içinde VSIX proje .csproj
  </ProjectReference>
 ```
 
->**Not:** Tercih ederseniz, .csproj dosyasını doğrudan düzenleyebilirsiniz.
+> [!NOTE]
+> Tercih ederseniz, .csproj dosyasını doğrudan düzenleyebilirsiniz.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Bir yükleme kökü altında InstallRoot ayarlama
 

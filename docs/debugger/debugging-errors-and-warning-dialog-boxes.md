@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852100"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852217"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Hataları Ayıklama ve Uyarı İletişim Kutuları
 Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata ayıklama sırasında karşılaşabileceğiniz uyarı.
@@ -37,6 +37,8 @@ Hataları aşağıda verilmiştir ve iletişim kutuları, uygulamanızın hata a
  [Değer Değiştirilemez İletişim Kutusu](../debugger/cannot-change-value-dialog-box.md)
 
  [Hata Ayıklayıcı Kaynak Kodu veya Ayrıştırılmış Kodu Görüntüleyemez](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Hata ayıklayıcı, bellek yetersiz çalışan hizmetleri](../debugger/error-debugger-services-no-memory.md)
 
  [Hata Ayıklama Oturumu İçin Yürütülebilir İletişim Kutusu](../debugger/executable-for-debugging-session-dialog-box.md)
 
