@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401526"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64785880"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 İşlev bir kullanımını içerip içermediğini belirten bir bayrak alır [setjmp](/cpp/c-runtime-library/reference/setjmp) komut (ile eşleştirilmiş [longjmp](/cpp/c-runtime-library/reference/longjmp) komutu, C stili yöntemi özel durum işleme gelerek).

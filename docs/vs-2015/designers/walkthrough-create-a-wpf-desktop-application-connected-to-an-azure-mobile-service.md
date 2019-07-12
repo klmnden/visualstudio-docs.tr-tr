@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693547"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824556"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Azure Mobil Hizmetine bağlı WPF Masaüstü Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sağlamak için bir Azure mobil hizmet kullanan modern bir masaüstü uygulaması oluşturmak için kullanabilirsiniz.  
@@ -28,9 +28,9 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 - Etkin bir Microsoft Azure hesabı.  
   
-    - Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Etkinleştirebilir [MSDN abone Avantajlarınızı](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). MSDN aboneliğiniz, ücretli Azure hizmetlerinizi kullanabildiğiniz her ay krediler sunar.  
+  - Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Etkinleştirebilir [MSDN abone Avantajlarınızı](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). MSDN aboneliğiniz, ücretli Azure hizmetlerinizi kullanabildiğiniz her ay krediler sunar.  
   
 ## <a name="create-a-project-and-add-references"></a>Bir proje oluşturma ve başvurular ekleme  
  İlk adım, bir WPF projesi oluşturun ve Azure mobil Hizmetler'e bağlanmasına olanak sağlayan bir NuGet paketi eklemektir.  

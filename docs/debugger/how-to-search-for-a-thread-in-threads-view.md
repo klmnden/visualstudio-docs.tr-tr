@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4014ca9eb99dce383b9de34e26794555b9fbef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387794"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64798525"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl yapılır: İş parçacıkları görünümünde iş parçacığı arama
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Nasıl yapılır: İş Parçacıkları Görünümünde İş Parçacığı Arama
 Belirli bir iş parçacığı iş parçacıkları görünümünde iş parçacığı kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. İletişim kutusunda alanları iş parçacığı ağacında seçilen iş parçacığı öznitelikleri gösterir.
 
 ### <a name="to-search-for-a-thread-in-threads-view"></a>İş parçacıkları görünümünde iş parçacığı aramak için
@@ -37,6 +37,6 @@ Belirli bir iş parçacığı iş parçacıkları görünümünde iş parçacı�
 
 5. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.
 
-6. **Tamam**'ı tıklatın.
+6.           **Tamam**'ı tıklatın.
 
    Eşleşen bir iş parçacığı bulunursa iş parçacıkları Görünümü penceresinde vurgulanır.

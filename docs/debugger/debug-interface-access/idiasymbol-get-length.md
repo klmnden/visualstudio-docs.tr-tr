@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400620"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64858113"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Bu simge ile temsil edilen nesne tarafından kullanılan belleğin bayt bit sayısını alır.

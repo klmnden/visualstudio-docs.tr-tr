@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431723"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64799505"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl yapılır: İşlemler görünümünde işlem arama
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Nasıl yapılır: İşlemler Görünümünde İşlem Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Belirli bir işlem işlemler görünümünde işlem kimliği veya modül dizesi arama ölçütü olarak kullanarak arayabilirsiniz. İlk arama yönünü de belirtebilirsiniz. Alanları iletişim kutusunda işlem ağacında seçilen işlem özniteliklerini gösterir.  

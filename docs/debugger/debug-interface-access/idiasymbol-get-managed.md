@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1096487cc154e0c6addd87d3e051078bfbc84f16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399406"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64824889"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 Yönetilen kod için Sembol başvurmadığını belirten bir bayrak alır.

@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f6bd74400146e1c2ea98daf27d6d97fc639cc13
-ms.sourcegitcommit: f01d9cab3f9e457b365d58e2008137ce786003fa
-ms.translationtype: HT
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346810"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825563"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -72,7 +72,7 @@ Bu özellik değerleri, altında klasör adları belirtin `$(VCTargetsPath)` kö
 
 ### <a name="add-a-new-platform-toolset"></a>Yeni bir platform araç kümesi Ekle
 
-Örneğin, "MyToolset" var olan Win32 platformu için yeni bir araç eklemek için oluşturun bir *MyToolset* klasörü altında `$(VCTargetsPath)`  *\\platformları\\Win32\\ PlatformToolsets\\*, oluşturup *Toolset.props* ve *Toolset.targets* dosyaları.
+Örneğin, "MyToolset" var olan Win32 platformu için yeni bir araç eklemek için oluşturun bir *MyToolset* klasörü altında `$(VCTargetsPath)`  *\\platformları\\Win32\\ PlatformToolsets\\* , oluşturup *Toolset.props* ve *Toolset.targets* dosyaları.
 
 Her bir klasör adı altında *PlatformToolsets* görünür **proje özellikleri** iletişim kutusu kullanılabilir olarak **Platform araç takımını** belirtilen platform için burada gösterildiği gibi:
 
@@ -82,7 +82,7 @@ Benzer oluşturma *MyToolset* klasörleri ve *Toolset.props* ve *Toolset.targets
 
 ### <a name="add-a-new-platform"></a>Yeni platform Ekle
 
-Örneğin, "MyPlatform", yeni bir platformda eklemek için oluşturun bir *MyPlatform* klasörü altında `$(VCTargetsPath)`  *\\platformları\\*, oluşturup  *Platform.default.props*, *Platform.props*, ve *Platform.targets* dosyaları. Ayrıca bir `$(VCTargetsPath)`  *\\platformları\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*  klasöründe ve en az bir araç takımı oluşturun.
+Örneğin, "MyPlatform", yeni bir platformda eklemek için oluşturun bir *MyPlatform* klasörü altında `$(VCTargetsPath)`  *\\platformları\\* , oluşturup  *Platform.default.props*, *Platform.props*, ve *Platform.targets* dosyaları. Ayrıca bir `$(VCTargetsPath)`  *\\platformları\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\*  klasöründe ve en az bir araç takımı oluşturun.
 
 Tüm klasör adları altında *platformları* her klasör `$(ApplicationType)` ve `$(ApplicationTypeRevision)` IDE kullanılabilir olarak görünen **Platform** seçimleri için bir proje.
 
@@ -153,13 +153,13 @@ Bir araç takımı, tüm derleme işlemi geçersiz kılabilirsiniz olsa da, gene
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   Bu dosya yerel yapı işleminin ana bölümleri tanımlar ve aynı zamanda içeri aktarır:
+  Bu dosya yerel yapı işleminin ana bölümleri tanımlar ve aynı zamanda içeri aktarır:
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -324,7 +324,7 @@ Komut satırı .tlog dosyaları, komut satırları yapıda kullanılan hakkında
 
 *Okuma* .tlog dosyaları (\*.read.\*. TLOG) kaynak dosyaları ve bunların bağımlılıklarını hakkındaki bilgileri içerir.
 
-Şapka işareti (**^**) bir satırın başında bir veya daha fazla kaynağı belirtir. Aynı bağımlılıklara kaynakları bir çubukla ayrılan (**\|**).
+Şapka işareti ( **^** ) bir satırın başında bir veya daha fazla kaynağı belirtir. Aynı bağımlılıklara kaynakları bir çubukla ayrılan ( **\|** ).
 
 Kaynakların her biri kendi satırında sonra bağımlılık dosyalar listelenir. Tüm adlar tam yollardır.
 
@@ -349,7 +349,7 @@ Dosya adları büyük harfle yazmak için gerekli değildir, ancak bazı araçla
 
 *Yazma* .tlog (\*.write.\*. TLOG) dosyaları, kaynaklar ve çıkış bağlanın.
 
-Şapka işareti (**^**) bir satırın başında bir veya daha fazla kaynağı belirtir. Birden çok kaynaktan bir çubukla ayrılan (**\|**).
+Şapka işareti ( **^** ) bir satırın başında bir veya daha fazla kaynağı belirtir. Birden çok kaynaktan bir çubukla ayrılan ( **\|** ).
 
 Kaynakların her biri kendi satırında sonra kaynaklarından oluşturulan çıkış dosyaları listelenmelidir. Tüm dosya adları, tam yolu olmalıdır.
 
@@ -470,7 +470,7 @@ Kural dosyaları eklenmeli `PropertyPageSchema` öğesi grubu:
 
 CPS, içerik türü için diğer değerleri destekler, ancak bunlar Visual C++ projelerinde kullanılmaz.
 
-Kural birden fazla bağlamda görünür olmalıdır, noktalı virgül kullanın. (**;**) burada gösterildiği gibi bağlam değerlerini ayırmak için:
+Kural birden fazla bağlamda görünür olmalıdır, noktalı virgül kullanın. ( **;** ) burada gösterildiği gibi bağlam değerlerini ayırmak için:
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -588,7 +588,7 @@ Yükseltici, bir proje veya yükseltilebilir olup olmadığını karar vermek i�
 
 1. Özellik `_UpgradePlatformToolsetFor_<safe_toolset_name>` geçerli araç takımı için tanımlanır ve değeri geçerli bir araç takımı için eşit değil.
 
-   Bu özellik adlarının  *\<safe_toolset_name >* bir alt çizgi yerine tüm alfasayısal olmayan karakterleri içeren bir araç takımı adı temsil eder (**\_**).
+   Bu özellik adlarının  *\<safe_toolset_name >* bir alt çizgi yerine tüm alfasayısal olmayan karakterleri içeren bir araç takımı adı temsil eder ( **\_** ).
 
 Bir proje yükseltilebilir, katıldığı *çözümü yeniden hedefleme*. Daha fazla bilgi için [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 
