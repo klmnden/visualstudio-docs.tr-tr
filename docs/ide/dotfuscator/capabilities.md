@@ -29,17 +29,17 @@ ms.locfileid: "66744776"
 Bu sayfa, Dotfuscator Community yeteneklerini Gelişmiş seçenekleri aracılığıyla kullanılabilen bazı başvurular odaklanır [yükseltmeleri][upgrades].
 
 Dotfuscator Community olduğu bir *derleme sonrası* sistem .NET uygulamaları için.
-Bununla, Visual Studio kullanıcılarına bağlanabildiğinizden emin [derlemeleri karartmak] [ obfuscation] ve ekleme [active koruma önlemleri] [ checks] uygulamaya - tüm Dotfuscator özgün kaynak koduna erişim gerek.
+Bununla, Visual Studio kullanıcılarına bağlanabildiğinizden emin [derlemeleri karartmak][obfuscation] ve ekleme [active koruma önlemleri][checks] uygulamaya - tüm Dotfuscator özgün kaynak koduna erişim gerek.
 Dotfuscator katmanlı koruma stratejisi oluşturma uygulamanızı birden çok yolla korur.
 
-Dotfuscator Community gibi bir geniş .NET derlemesi ve uygulama türlerini destekler, [Evrensel Windows Platformu (UWP)] [ uwp] ve [Xamarin] [ xamarin].
+Dotfuscator Community gibi bir geniş .NET derlemesi ve uygulama türlerini destekler, [Evrensel Windows Platformu (UWP)][uwp] ve [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Fikri mülkiyet koruması
 
 Uygulama tasarımı, davranış ve uygulama fikri mülkiyet (IP) biçimler.
 Ancak, .NET için oluşturulan uygulamaların temelde books açın değildir; Ters mühendislik .NET derlemeleri için kolayca [üst düzey meta veriler ve Ara kod içerdiğinden][assemblies].
 
-Dotfuscator Community içeren temel [.NET karartma] [ obfuscation] biçiminde [yeniden adlandırma][renaming].
+Dotfuscator Community içeren temel [.NET karartma][obfuscation] biçiminde [yeniden adlandırma][renaming].
 Bu adlandırma önemli bilgiler genel olarak Dotfuscator kodunuzla obfuscating tersine mühendislik, kaynak kodda için yetkisiz erişim riskini azaltır.
 Gizleme çaba sarf, kod incelemesi - IP, ticari sır olarak yasal korunduğunu oluşturma önemli bir adım korumak için de gösterir.
 
@@ -52,7 +52,7 @@ Dotfuscator ekleme [koruma hata ayıklama davranışı][debug] uygulamanıza bu 
 Kaynak kodunuzu korunmasına ek olarak, uygulamanızı tasarlandığı gibi kullanıldığından emin olmak önemli.
 Saldırganlar, uygulamanızın lisanslama ilkeleri (diğer bir deyişle, yazılım korsanlığı), çalabilir veya uygulama tarafından işlenen hassas verileri işlemek için ya da uygulamanın davranışını değiştirmek için aşmak için çalma girişiminde bulunabilir.
 
-Dotfuscator Community ekleme [uygulama doğrulama kodu] [ checks] içine dahil olmak üzere derlemelerinizin [koruma kurcalamaya][tamper], [koruma hata ayıklama][debug], ve [hologram cihaza] [ root] ölçümleri.
+Dotfuscator Community ekleme [uygulama doğrulama kodu][checks] içine dahil olmak üzere derlemelerinizin [koruma kurcalamaya][tamper], [koruma hata ayıklama][debug], ve [hologram cihaza][root] ölçümleri.
 Geçersiz uygulama durumu algılandığında bir doğrulama kodu için [çağrı durumunuza uygun bir şekilde ele almak için uygulama kodunun üzerine][check-app].
 Veya kodu yazamazlar tercih ederseniz Geçersiz tanıtıcı kullanan uygulama, Dotfuscator de ekleme [yanıt][check-action] , kaynak kodunuzda değişiklik gerektirmeden davranışları.
 
