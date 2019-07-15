@@ -28,13 +28,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141905"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web uygulamalarında hata ayıklama: Hatalar ve Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Web uygulamalarında hata ayıklama çalışırken hatalarla karşılaşabilirsiniz.  
