@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341323"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891128"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kodu Yeniden Biçimlendirme
 
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kaynak kodu girintileri ve boşluk normalleştirme tarafından yeniden biçimlendirildi. Bu, ekleme veya boşluk veya sekme her satırın başında kaldırma, satırları arasına yeni satır ekleyerek veya sekme veya boşluk sekmeleri boşluk yerine içerebilir.
 
->**Not:** Kesme noktaları ve yer işaretleri gibi işaretçiler ekleme veya yeni satır karakterleri silme etkileyebilir, ancak ekleme veya boşluk veya sekme çıkarma işaretçileri etkilemez.
+> [!NOTE]
+> Kesme noktaları ve yer işaretleri gibi işaretçiler ekleme veya yeni satır karakterleri silme etkileyebilir, ancak ekleme veya boşluk veya sekme çıkarma işaretçileri etkilemez.
 
 Kullanıcıların, seçerek reformatting işlemi başlatabilir **seçimi Biçimlendir** veya **belgeyi Biçimlendir** gelen **Gelişmiş** menüsünde **Düzenle**menüsü. Kod parçacığı veya belirli bir karakter eklendiğinde reformatting işlemi da tetiklenebilir. Bir kapanış ayracı C# dilinde yazdığınız zaman, örneğin, eşleşen bir açma ayracı ve kapatma ayracı arasında her şey için uygun düzeyde otomatik olarak girintilenir.
 

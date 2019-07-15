@@ -1,127 +1,125 @@
 - name: Visual Studio'daki XML araçları
+  href: xml-tools-in-visual-studio.md
+- name: XML düzenleyicisi
   items:
     - name: Genel Bakış
-      href: xml-tools-in-visual-studio.md
-    - name: XML düzenleyicisi
+      displayName: XML editor
+      href: xml-editor.md
+    - name: XML belgesini doğrulama
+      href: xml-document-validation.md
+    - name: XML düzenleyicisi IntelliSense özellikleri
+      href: xml-editor-intellisense-features.md
+    - name: XML kod parçacıkları
       items:
         - name: Genel Bakış
-          displayName: XML editor
-          href: xml-editor.md
-        - name: XML belgesini doğrulama
-          href: xml-document-validation.md
-        - name: XML düzenleyicisi IntelliSense özellikleri
-          href: xml-editor-intellisense-features.md
-        - name: XML kod parçacıkları
-          items:
-            - name: Genel Bakış
-              displayName: XML snippets overview
-              href: xml-snippets.md
-            - name: XML kod parçacıklarını kullanma
-              href: how-to-use-xml-snippets.md
-            - name: XML şemasından XML kod parçacığı oluşturma
-              href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
-            - name: XML kod parçacıklarını oluşturma
-              href: how-to-create-xml-snippets.md
-        - name: XSLT stil sayfalarını düzenleme
-          href: editing-xslt-style-sheets.md
-        - name: Şema önbelleği
-          href: schema-cache.md
-        - name: XML düzenleyicisi görevleri
-          items:
-            - name: 'İzlenecek yol: XML düzenleyicisi özelliklerini kullanma'
-              href: walkthrough-using-xml-editor-features.md
-            - name: Kullanılacak XML şemalarını seçme
-              href: how-to-select-the-xml-schemas-to-use.md
-            - name: XML belgesinden XML şeması oluşturma
-              href: how-to-create-an-xml-schema-from-an-xml-document.md
-            - name: XML düzenleyicisinden XSLT dönüştürmesi yürütme
-              href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
-            - name: XML dosyalarını düzenleme
-              href: how-to-edit-xml-files.md
-            - name: WPF izlenecek yollar
-              items:
-                - name: XSLT IntelliSense
-                  href: walkthrough-using-xslt-intellisense.md
-                - name: XSLT hiyerarşisi
-                  href: walkthrough-using-xslt-hierarchy.md
-        - name: XML dosya özellikleri
-          href: xml-document-properties-properties-window.md
-        - name: XML Şemaları iletişim kutusu
-          href: xml-schemas-dialog-box.md
-    - name: XML Şema Tasarımcısı
+          displayName: XML snippets overview
+          href: xml-snippets.md
+        - name: XML kod parçacıklarını kullanma
+          href: how-to-use-xml-snippets.md
+        - name: XML şemasından XML kod parçacığı oluşturma
+          href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
+        - name: XML kod parçacıklarını oluşturma
+          href: how-to-create-xml-snippets.md
+    - name: XSLT stil sayfalarını düzenleme
+      href: editing-xslt-style-sheets.md
+    - name: Şema önbelleği
+      href: schema-cache.md
+    - name: XML düzenleyicisi görevleri
       items:
-        - name: Genel Bakış
-          displayName: XML Schema Designer overview
-          href: xml-schema-designer.md
+        - name: 'İzlenecek yol: XML düzenleyicisi özelliklerini kullanma'
+          href: walkthrough-using-xml-editor-features.md
+        - name: Kullanılacak XML şemalarını seçme
+          href: how-to-select-the-xml-schemas-to-use.md
+        - name: XML belgesinden XML şeması oluşturma
+          href: how-to-create-an-xml-schema-from-an-xml-document.md
+        - name: XML düzenleyicisinden XSLT dönüştürmesi yürütme
+          href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
+        - name: XML dosyalarını düzenleme
+          href: how-to-edit-xml-files.md
+        - name: WPF izlenecek yollar
+          items:
+            - name: XSLT IntelliSense
+              href: walkthrough-using-xslt-intellisense.md
+            - name: XSLT hiyerarşisi
+              href: walkthrough-using-xslt-hierarchy.md
+    - name: XML dosya özellikleri
+      href: xml-document-properties-properties-window.md
+    - name: XML Şemaları iletişim kutusu
+      href: xml-schemas-dialog-box.md
+- name: XML Şema Tasarımcısı
+  items:
+    - name: Genel Bakış
+      displayName: XML Schema Designer overview
+      href: xml-schema-designer.md
+    - name: XML Şema Gezgini
+      items:
         - name: XML Şema Gezgini
-          items:
-            - name: XML Şema Gezgini
-              href: xml-schema-explorer.md
-            - name: Şema kümesini arama
-              href: searching-the-schema-set.md
-            - name: 'Sıralama, filtreleme ve gruplandırma'
-              href: sorting-filtering-and-grouping-xml-schema-explorer.md
-            - name: Bağlam menüleri
-              href: context-menus-xml-schema-explorer.md
-            - name: XML değişmez değerlerini tümleştirme
-              href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Çalışma alanı
-          items:
-            - name: Görünümlere genel bakış
-              href: xml-schema-designer-workspace.md
-            - name: Başlangıç Görünümü
-              href: start-view.md
-            - name: İçerik Modeli Görünümü
-              href: content-model-view.md
-            - name: Graf Görünümü
-              href: graph-view.md
-        - name: XML düzenleyicisi ile tümleştirme
-          href: integration-with-xml-editor.md
-        - name: XML Şema Tasarımcısı görevleri
-          items:
-            - name: XSD şema dosyası oluşturma ve düzenleme
-              href: how-to-create-and-edit-an-xsd-schema-file.md
-            - name: XSD şemasını temel alan XML belgesi oluşturma
-              href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
-            - name: Şema kümesi arama sonucu düğümlerini çalışma alanına ekleme
-              href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
-            - name: Görünümler ile XML düzenleyicisi arasında geçiş yapma
-              href: how-to-switch-between-views-and-the-xml-editor.md
-            - name: XML Şema Gezgininden çalışma alanına düğüm ekleme
-              href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
-            - name: Başlangıç Görünümünden çalışma alanına düğüm ekleme
-              href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
-            - name: Şema kümesine genel bakış elde etme
-              href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
-            - name: Düğümlerin içerik modelini inceleme
-              href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
-            - name: XML Şema Tasarımcısını XML değişmez değerleri ile kullanma
-              href: how-to-use-the-xml-schema-designer-with-xml-literals.md
-            - name: Diyagramları yazdırma
-              href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
-            - name: Örnek XSD dosyaları
-              items:
-                - name: Basit şema
-                  displayName: Sample XSD files
-                  href: sample-xsd-file-simple-schema.md
-                - name: Satınalma Siparişi şeması
-                  href: sample-xsd-file-purchase-order-schema.md
-                - name: İlişkiler
-                  href: sample-xsd-file-relationships.md
-    - name: XSLT hata ayıklama
+          href: xml-schema-explorer.md
+        - name: Şema kümesini arama
+          href: searching-the-schema-set.md
+        - name: 'Sıralama, filtreleme ve gruplandırma'
+          href: sorting-filtering-and-grouping-xml-schema-explorer.md
+        - name: Bağlam menüleri
+          href: context-menus-xml-schema-explorer.md
+        - name: XML değişmez değerlerini tümleştirme
+          href: integration-of-xml-literals-with-xml-schema-explorer.md
+    - name: Çalışma alanı
       items:
-        - name: Genel Bakış
-          displayName: XSLT debugging
-          href: debugging-xslt.md
-        - name: 'İzlenecek yol: XSLT stil sayfasında hata ayıklama'
-          href: walkthrough-debug-an-xslt-style-sheet.md
-        - name: XPath ifadesini değerlendirme
-          href: how-to-evaluate-an-xpath-expression.md
-        - name: XSLT hata ayıklayıcı kullanıcı arabirimi
-          href: debugger-user-interface-xslt.md
-        - name: XSLT varsayılan şablonu
-          href: xslt-default-templates.md
-        - name: XSLT profil oluşturucusu
-          href: xslt-profiler.md
-    - name: XML için güvenlik konuları
-      href: security-considerations-when-working-with-xml-data.md
+        - name: Görünümlere genel bakış
+          href: xml-schema-designer-workspace.md
+        - name: Başlangıç Görünümü
+          href: start-view.md
+        - name: İçerik Modeli Görünümü
+          href: content-model-view.md
+        - name: Graf Görünümü
+          href: graph-view.md
+    - name: XML düzenleyicisi ile tümleştirme
+      href: integration-with-xml-editor.md
+    - name: XML Şema Tasarımcısı görevleri
+      items:
+        - name: XSD şema dosyası oluşturma ve düzenleme
+          href: how-to-create-and-edit-an-xsd-schema-file.md
+        - name: XSD şemasını temel alan XML belgesi oluşturma
+          href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
+        - name: Şema kümesi arama sonucu düğümlerini çalışma alanına ekleme
+          href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
+        - name: Görünümler ile XML düzenleyicisi arasında geçiş yapma
+          href: how-to-switch-between-views-and-the-xml-editor.md
+        - name: XML Şema Gezgininden çalışma alanına düğüm ekleme
+          href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
+        - name: Başlangıç Görünümünden çalışma alanına düğüm ekleme
+          href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
+        - name: Şema kümesine genel bakış elde etme
+          href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
+        - name: Düğümlerin içerik modelini inceleme
+          href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
+        - name: XML Şema Tasarımcısını XML değişmez değerleri ile kullanma
+          href: how-to-use-the-xml-schema-designer-with-xml-literals.md
+        - name: Diyagramları yazdırma
+          href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
+        - name: Örnek XSD dosyaları
+          items:
+            - name: Basit şema
+              displayName: Sample XSD files
+              href: sample-xsd-file-simple-schema.md
+            - name: Satınalma Siparişi şeması
+              href: sample-xsd-file-purchase-order-schema.md
+            - name: İlişkiler
+              href: sample-xsd-file-relationships.md
+- name: XSLT hata ayıklama
+  items:
+    - name: Genel Bakış
+      displayName: XSLT debugging
+      href: debugging-xslt.md
+    - name: 'İzlenecek yol: XSLT stil sayfasında hata ayıklama'
+      href: walkthrough-debug-an-xslt-style-sheet.md
+    - name: XPath ifadesini değerlendirme
+      href: how-to-evaluate-an-xpath-expression.md
+    - name: XSLT hata ayıklayıcı kullanıcı arabirimi
+      href: debugger-user-interface-xslt.md
+    - name: XSLT varsayılan şablonu
+      href: xslt-default-templates.md
+    - name: XSLT profil oluşturucusu
+      href: xslt-profiler.md
+- name: XML için güvenlik konuları
+  href: security-considerations-when-working-with-xml-data.md

@@ -1,5 +1,6 @@
 ---
 title: Ekleme veya proje şablonları etiketlere düzenleme
+description: Visual Studio Proje şablonları etiketlere ekleyip öğrenin.
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038664"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891146"
 ---
 # <a name="add-tags-to-project-templates"></a>Proje şablonları için etiketler ekleme
 
-İtibariyle [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) sürüm 16.1 Preview 2'de, ekleyebileceğiniz dil, platform ve proje türü etiketleri için proje şablonları. Etiketler, yeni proje iletişim kutusunda iki yerde kullanılır:
+İtibariyle [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) sürüm 16.1 Preview 2'de, ekleyebileceğiniz dil, platform ve proje türü etiketleri için proje şablonları. 
 
-- Etiketler altında şablon açıklaması görünür.
+Etiketler, iki yerde kullanılır **yeni proje** iletişim kutusunda:
 
-   ![Proje şablonuyla yeni proje iletişim kutusu, etiketler](media/npd-item-with-template-tags.png)
+- Etiketler, şablon açıklaması altında görünür.
 
-- Arama ve filtre şablonu etiketlerini etkinleştir
+   ![Proje şablonuyla yeni proje iletişim kutusundaki etiketler](media/npd-item-with-template-tags.png)
+
+- Etiketler, arama ve filtre şablonu etkinleştirin.
 
    ![Arama ve filtre yeni proje iletişim kutusunda](media/npd-search-and-filter.png)
 
-Güncelleştirerek etiketler ekleyebilirsiniz *.vstemplate* Visual Studio'ya veya özel bir şablon etiketler oluşturarak oluşturulan şablon etiketleri kullanarak XML dosyası. Şablon etiketleri yalnızca Visual Studio 2019 yeni proje iletişim kutusunda görüntülenir. Bunlar, Visual Studio'nun önceki sürümlerinde şablon işleme etkilemez.
+Güncelleştirerek etiketler ekleyebilirsiniz *.vstemplate* XML dosyası. Visual Studio'da yerleşik olarak bulunan şablon etiketler kullanabilir veya özel bir şablon etiketler oluşturma. Şablon etiketleri yalnızca Visual Studio 2019 içinde görünür **yeni proje** iletişim kutusu. Şablon etiketleri şablonu Visual Studio'nun önceki sürümlerinde nasıl işlediğini etkilemez.
 
 ## <a name="add-or-edit-tags"></a>Ekleme veya etiketleri Düzenle
 
-Ekleme veya düzenleme, proje şablonunun etiketleri isteyebilirsiniz *.vstemplate* XML olduğunda:
+Proje şablonunun etiketleri ekleyip isteyebileceğiniz *.vstemplate* aşağıdaki eylemlerden birini, XML:
 
-* [Yeni bir proje şablonu oluşturma](/visualstudio/ide/how-to-create-project-templates) şablonu Dışarı Aktar Sihirbazı'nı kullanarak
-
-* [Var olan proje şablonunuzu güncelleştirin](/visualstudio/ide/how-to-update-existing-templates)
-
-* [Yeni bir VSIX proje şablonu oluşturma](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [Yeni bir proje şablonu oluşturma](/visualstudio/ide/how-to-create-project-templates) şablonu Dışarı Aktar Sihirbazı'nı kullanarak.
+* [Var olan proje şablonunuzu güncelleştirme](/visualstudio/ide/how-to-update-existing-templates).
+* [Yeni bir VSIX proje şablonu oluşturma](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,7 +54,7 @@ Ekleme veya düzenleme, proje şablonunun etiketleri isteyebilirsiniz *.vstempla
 
 ## <a name="attributes"></a>Öznitelikler
 
-Aşağıdaki öznitelikler isteğe bağlıdır ve gelişmiş kullanıcı senaryoları için.
+Gelişmiş Kullanıcı senaryolarda aşağıdaki isteğe bağlı öznitelikleri kullanabilirsiniz:
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
@@ -78,17 +79,19 @@ Yok.
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Gerekli) Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Gerekli) Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** iletişim kutusu veya **Yeni Öğe Ekle** iletişim kutusu.|
 
 ## <a name="text-value"></a>Metin değeri
 
-Bir metin değeri sürece gereklidir `Package` ve `ID` öznitelikleri kullanılır.
+Kullandığınız sürece, bir metin değeri gereklidir `Package` ve `ID` öznitelikleri.
 
 Metin şablonunun adını sağlar.
 
 ## <a name="built-in-tags"></a>Yerleşik etiketleri
 
-Yerelleştirilmiş kaynak işleme, yerleşik bir listesini, eklenen etiketler Visual Studio sunar. Yerleşik etiketleri ve parantez içinde bunlara karşılık gelen değerler listesi aşağıda verilmiştir.
+Visual Studio yerleşik etiketlerin bir listesini sunar. Yerleşik bir etiket eklediğinizde, yerelleştirilmiş kaynak etiketi oluşturur. 
+
+Aşağıdaki liste, Visual Studio'da kullanılabilen yerleşik etiketleri gösterir. Karşılık gelen değerler, parantez içinde gösterilmektedir.
 
 | Dil | Platform | Proje türü |
 | -- | -- | -- |
@@ -110,7 +113,7 @@ Yerelleştirilmiş kaynak işleme, yerleşik bir listesini, eklenen etiketler Vi
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir görsel için bir proje şablonu meta verileri gösterir C# uygulama.
+Aşağıdaki örnek, bir görsel için bir proje şablonu meta verileri gösterir C# uygulama:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -147,4 +150,4 @@ Aşağıdaki örnek, bir görsel için bir proje şablonu meta verileri gösteri
 - [Visual Studio Şablon Şeması Başvurusu](/visualstudio/extensibility/visual-studio-template-schema-reference)
 - [Proje ve öğe şablonları oluşturma](/visualstudio/ide/creating-project-and-item-templates)
 - [Proje ve öğe şablonlarını özelleştirme](/visualstudio/ide/customizing-project-and-item-templates)
-- [VSIX Proje Şablonunu Kullanmaya Başlama](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [VSIX proje şablonunu kullanmaya başlama](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)

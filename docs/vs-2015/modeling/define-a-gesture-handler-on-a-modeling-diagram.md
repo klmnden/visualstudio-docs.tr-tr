@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3da0988316f54b75cb8076b1f242280a71d9a624
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825923"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890479"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Modelleme diyagramında hareket işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -296,7 +296,7 @@ Visual Studio'da, kullanıcı çift tıkladığında veya öğeleri bir UML diya
       IElement target = targetIShape.Element;  
       ```  
 
-        You can cast this to a more specific type of element.  
+      Bu daha belirli bir öğe türüne çevirebilirsiniz.  
 
   - UML modeli içeren bir UML model deposu elde etmek için:  
 

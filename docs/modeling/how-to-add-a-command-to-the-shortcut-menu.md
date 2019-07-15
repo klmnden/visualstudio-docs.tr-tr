@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442357"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890668"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Nasıl yapılır: Kısayol Menüsüne Komut Ekleme
 
@@ -167,7 +167,8 @@ Komut kümesi sınıfı türetilen <xref:Microsoft.VisualStudio.Modeling.Shell.C
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Not** yeni dosyayı oluşturmak için bir sınıf şablonunda kullandıysanız, hem ad alanı ve sınıf adını düzeltmeniz gerekir.
+     > [!NOTE]
+     > Yeni dosyayı oluşturmak için bir sınıf şablonunda kullandıysanız, hem ad alanı ve sınıf adını düzeltmeniz gerekir.
 
 Komut kümesi kodunuz, genellikle aşağıdaki ad alanlarını içe aktarmanız gerekir:
 
@@ -334,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Komutu, menüde görünmez:**
 
-- Komutu DSL paketini yüklemek kadar yalnızca Visual Studio örneklerini hata ayıklama içinde görünür. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).
+- Komutu DSL paketini yüklemek kadar yalnızca Visual Studio örneklerini hata ayıklama içinde görünür. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Deneysel örneğinizi bu DSL için doğru dosya adı uzantısına sahip olduğundan emin olun. Dosya adı uzantısı denetlemek için Visual Studio ana örneğine DslDefinition.dsl açın. Ardından Düzenleyici düğüm DSL Gezgini içinde sağ tıklayın ve ardından Özellikler seçeneğine tıklayın. Özellikler penceresinde FileExtension özelliğini inceleyin.
 
@@ -362,7 +363,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Nasıl yapılır: Standart Menü Komutunu Değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Etki Alanına Özgü Dil Çözümlerini Dağıtma](../modeling/deploying-domain-specific-language-solutions.md)
+- [Etki Alanına Özgü Dil Çözümlerini Dağıtma](msi-and-vsix-deployment-of-a-dsl.md)
 - [Örnek kod: Bağlantı hattı diyagramları](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

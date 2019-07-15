@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: becbd47ca49f44a84a2f58be9f2185e3d61b099b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ba4a5c52bf972236914c06ec9672653fbde9cea
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335332"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891051"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Görüntüler ve Visual Studio için simgeler
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio görüntü kullanımda
@@ -23,7 +23,8 @@ ms.locfileid: "66335332"
 
 - **Simgeler**. Komutlar, hiyerarşileri, şablon ve benzeri görünen küçük resimler. Visual Studio'da kullanılan varsayılan simge boyutu 16 x 16 PNG ' dir. Görüntü hizmeti tarafından otomatik olarak üretilen simgeler HDPI desteği için XAML biçiminde oluşturun.
 
-     **NOT:** Resimleri menü sisteminde kullanılırken, her komut için bir simge oluşturmamalısınız. Başvurun [menüler ve komutlar için Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) Komutunuz bir simge almalısınız görmek için.
+    > [!NOTE]
+    > Resimleri menü sisteminde kullanılırken, her komut için bir simge oluşturmamalısınız. Başvurun [menüler ve komutlar için Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) Komutunuz bir simge almalısınız görmek için.
 
 - **Küçük resim.** Yeni Proje iletişim kutusu gibi bir iletişim kutusu Önizleme bölümünde kullanılan görüntüler.
 

@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702638"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891021"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı ile Çalıştırma İşlemleri İliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,8 @@ Bu özellik, bir yerel veya uzak bilgisayarda çalışan uygulamaların hata ay�
 
    1. Adı yazın **niteleyicisi** liste kutusu.
 
-      >**Not** sonraki adımlarda, uzak bilgisayar adını kullanarak bağlanamazsa, IP adresini kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Da onu el ile girebilirsiniz. Aşağıdaki çizimde, 4020 uzaktan hata ayıklayıcı için varsayılan bağlantı noktası var.)
+      > [!NOTE]
+      > Sonraki adımlarda, uzak bilgisayar adını kullanarak bağlanamazsa, IP adresini kullanın. (Bağlantı noktası numarasını otomatik olarak işlem seçtikten sonra görünebilir. Da onu el ile girebilirsiniz. Aşağıdaki çizimde, 4020 uzaktan hata ayıklayıcı için varsayılan bağlantı noktası var.)
 
    2. Eklenmiş açılan oku tıklatın **niteleyicisi** liste kutusu ve aşağı açılan listeden bilgisayar adını seçin.
 

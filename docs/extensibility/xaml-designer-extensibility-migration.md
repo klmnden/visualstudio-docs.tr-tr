@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784484"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890322"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML Tasarımcısı genişletilebilirlik geçiş
 
-Visual Studio 2019 genel Önizleme sürümü 16.1 başlayan, XAML Tasarımcısı'nı iki farklı mimari destekler: Tasarımcısı yalıtım mimarisi ve daha yeni surface yalıtım mimarisi. Bu mimari geçiş, bir .NET Framework işlemde barındırılamaz hedef çalışma zamanları desteklemek için gereklidir. Yüzey yalıtım mimariye taşıma önemli değişiklikler için üçüncü taraf genişletilebilirlik modeli sunar. Bu makalede değişiklikler özetlenmektedir.
+Visual Studio 2019 ' iki farklı mimari XAML Tasarımcısı'nı destekler: Tasarımcısı yalıtım mimarisi ve daha yeni surface yalıtım mimarisi. Bu mimari geçiş, bir .NET Framework işlemde barındırılamaz hedef çalışma zamanları desteklemek için gereklidir. Yüzey yalıtım mimariye taşıma önemli değişiklikler için üçüncü taraf genişletilebilirlik modeli sunar. Bu makalede, Visual Studio 2019 16,2 Önizleme kanalda kullanılabilir olan bu değişiklikler özetlenmektedir.
 
 **Tasarımcı yalıtım** destekler ve .NET Framework'ü hedefleyen projeler için WPF tasarımcısı tarafından kullanılan *. design.dll* uzantıları. Kullanıcı kodu, Denetim kitaplıklarını ve üçüncü taraf uzantıları dış işlemde yüklenir (*XDesProc.exe*) yanı sıra gerçek tasarımcı kod ve tasarımcı bölmelerini.
 
@@ -47,7 +47,7 @@ Yerine *. design.dll* dosya uzantısı, uzantıları kullanarak keşfedilmeyecek
 
 Yüzey yalıtım genişletilebilirlik modeli üzerinde gerçek denetim kitaplıklarına bağımlı uzantıları için izin vermez ve bu nedenle, türleri Denetim Kitaplığı'ndan uzantılarına başvuramaz. Örneğin, *MyLibrary.designtools.dll* bir bağımlılık olmamalıdır *MyLibrary.dll*.
 
-Bu tür bağımlılıkları özniteliği tabloları aracılığıyla türleri için meta verileri kaydedilirken en yaygın. Denetim Kitaplığı başvuran uzantı kodu türleri aracılığıyla doğrudan [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) Visual Basic'te) dize tabanlı tür adları kullanarak yeni API'ler değiştirilir:
+Bu tür bağımlılıkları özniteliği tabloları aracılığıyla türleri için meta verileri kaydedilirken en yaygın. Denetim Kitaplığı başvuran uzantı kodu türleri aracılığıyla doğrudan [typeof](/dotnet/csharp/language-reference/keywords/typeof) veya [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) dize tabanlı tür adları kullanarak yeni API'ler değiştirilir:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 Özellik sağlayıcıları uzantısı derlemeleri uygulanan ve Visual Studio işlemde yüklü. `FeatureAttribute` özellik sağlayıcısı türleri kullanarak doğrudan başvurmaya devam eder [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
+Şu anda, aşağıdaki özellik sağlayıcıları desteklenir:
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 Özellik sağlayıcıları artık gerçek çalışma zamanı kod ve denetim kitaplıklarından farklı bir işlemde yüklendiği için bunlar artık çalışma zamanı nesneleri doğrudan erişebilir. Bunun yerine, karşılık gelen Model tabanlı API'leri kullanmak için tüm etkileşimleri dönüştürülmesi gerekir. Model API güncelleştirildi ve erişimi <xref:System.Type> veya <xref:System.Object> ya da artık kullanılmayan veya ile değiştirilmiştir `TypeIdentifier` ve `TypeDefinition`.
 
 `TypeIdentifier` bir dizeyi bir türünü tanımlayan bir derleme adı temsil eder. A `TypeIdenfifier` hedefine çözümlenebilmesi bir `TypeDefinition` sorgu türü hakkında ek bilgiler. `TypeDefinition` örnekleri uzantı kodunda önbelleğe alınamaz.
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+Daha fazla kod örneği kullanılabilir [xaml Tasarımcısı genişletilebilirlik örnekleri](https://github.com/microsoft/xaml-designer-extensibility-samples) depo.
 
 ## <a name="limited-support-for-designdll-extensions"></a>Desteği sınırlı. design.dll uzantıları
 

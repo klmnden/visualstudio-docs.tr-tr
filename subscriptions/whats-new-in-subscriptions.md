@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 85c327a2690096aa0786b4851348657d2295a223
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784891"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891080"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Hangi&#39;Visual Studio aboneliklerinde yenilikler
 
@@ -20,7 +20,7 @@ Genellikle, daha kullanışlı hale getirmek abonelik avantajları paket güncel
 
 ## <a name="2019-q1-january-march"></a>2019 Ç1 (Ocak-Mart)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>En fazla kullanım eklenen [abonelikleri Yönetim Portalı](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>En fazla kullanım eklenen [abonelikleri Yönetim Portalı](https://manage.visualstudio.com)
 Visual Studio abonelikleri Yönetim Portalı'nda yeni bir özellik satın alınan ve atanan kaç aboneliğe izlemenize yardımcı olur ve en yüksek abonelik sayısı, atadığınız, geçtiğimiz yıl içinde hem de boyunca her düzeydeki tanımlar sözleşmelerinizde süresi. Bu, geçerli abonelik kullanımını ve gelecekteki satın alma planı anlamanıza yardımcı olabilir. 
 
   > [!div class="mx-imgBorder"]

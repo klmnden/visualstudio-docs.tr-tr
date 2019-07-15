@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
-ms.openlocfilehash: 77e088c42578dcd48f24c2f057c6304cd96c4b73
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785073"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891062"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -27,7 +27,7 @@ Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise a
 * Satın alma işlemlerinizi faturalamak için ihtiyacınız bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk satın alma işleminiz öncesinde veya Visual Studio Market'te ilk satın alma işleminiz sırasında.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kimlerin Visual Studio bulut abonelikleri satın alabilir?
-Hiç kimseyle [sahibi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Hizmet Yöneticisi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), veya [ortak yönetici](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) Azure aboneliğine erişiminiz bulut abonelikleri satın alabilir.
+Hiç kimseyle [sahibi](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [Hizmet Yöneticisi](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription), veya [ortak yönetici](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) Azure aboneliğine erişiminiz bulut abonelikleri satın alabilir.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Bulut abonelikleri satın alma
 

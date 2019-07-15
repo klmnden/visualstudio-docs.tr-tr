@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: cf4fb43148a4746d821b415391c0b69bdd7028e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec67549131b4c200da2b6b317e91d1ca67cdfbb0
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964475"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891006"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama
 
@@ -40,7 +40,8 @@ Zamandan tasarruf edebilirsiniz ve Azure kullanarak para işlem bulut hizmetiniz
 
 3. Komutları üzerinde seçerek uygulama adımlayın **hata ayıklama** menü ve kodunuzda kesme noktaları ayarlama. Uygulama hata ayıklayıcı adım adım olarak bölmeleri uygulamanın geçerli durumuyla güncelleştirilir. Uygulama dağıtımı hata ayıklamayı durdurduğunuzda silinir. Uygulamanız bir web rolü içerir ve web tarayıcı başlatmak için başlatma eylemi özelliğini ayarladınız, Visual Studio web uygulamanızı tarayıcıda başlatır. Hizmet yapılandırmasının bir rolün örnekleri sayısını değiştirirseniz, bulut hizmetinizi durdurmak ve ardından bu yeni rol örneklerini ayıklayabilirsiniz, hata ayıklamayı yeniden başlatın.
 
-    **Not:** Çalıştırılırken veya hata ayıklama hizmetinizi durdurduğunuzda, depolama öykünücüsü ve yerel işlem öykünücüsü durduruldu değildir. Bunları açıkça bildirim alanından durdurmanız gerekir.
+    > [!NOTE]
+    > Çalıştırılırken veya hata ayıklama hizmetinizi durdurduğunuzda, depolama öykünücüsü ve yerel işlem öykünücüsü durduruldu değildir. Bunları açıkça bildirim alanından durdurmanız gerekir.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Azure bulut hizmetinde hata ayıklama
 
@@ -146,7 +147,8 @@ Visual Studio ASP.NET projeleri uygulamayı test etmek için kullanabileceğiniz
 
     ![ASP.NET web projesi oluştur iletişim kutusu](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Not:** Henüz oturum açmadıysanız Azure hesabınızda oturum açmak için istenir.
+    > [!NOTE]
+    > Henüz oturum açmadıysanız Azure hesabınızda oturum açmak için istenir.
 
 3. Sanal makine için çeşitli ayarları seçin ve ardından **Tamam**. Bkz: [sanal makineler](http://go.microsoft.com/fwlink/?LinkId=623033) daha fazla bilgi için.
 

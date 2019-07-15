@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312307"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890968"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio için yaygın denetim desenleri
 ## <a name="BKMK_CommonControls"></a> Ortak Denetimler
@@ -296,7 +296,8 @@ Düğmeyi kullanarak yönergeleri:
 #### <a name="graphical-buttons"></a>Grafik düğmeleri
 Bazı düğmeleri, her zaman bir grafik görüntüsünü kullanın ve hiçbir zaman alanından tasarruf etmek ve Yerelleştirme sorunları önlemek için metni ekleyin. Bunlar, alan seçicileri ve diğer sıralanabilir listelerinde sıklıkla kullanılır.
 
-> **Not:** Kullanıcınız (hiçbir erişim anahtarları vardır) Bu düğme için sekmesinde, bu nedenle bunları mantıklı bir sırada yerleştirin. Harita `name` sürer ve böylece ekran okuyucular düzgün düğmesi eylemi yorumlama eylem düğmenin özelliği.
+> [!NOTE]
+> Kullanıcınız (hiçbir erişim anahtarları vardır) Bu düğme için sekmesinde, bu nedenle bunları mantıklı bir sırada yerleştirin. Harita `name` sürer ve böylece ekran okuyucular düzgün düğmesi eylemi yorumlama eylem düğmenin özelliği.
 
 | İşlev | Düğme |
 | --- | --- |

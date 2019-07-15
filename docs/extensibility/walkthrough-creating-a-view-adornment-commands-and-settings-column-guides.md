@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312671"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890584"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: Görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle genişletebilirsiniz. Bu makalede, bir popüler uzantısı özelliği, sütun kılavuzları ile çalışmaya başlama işlemini göstermektedir. Sütun, kodunuzda belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde görsel olarak ışık çizgileri kılavuzlardır. Özellikle, biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya hata raporları örnekleri için önemli olabilir.
@@ -28,7 +28,8 @@ Bu kılavuzda:
 
   Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
-  **NOT**: Bu izlenecek yolda, Visual Studio uzantı şablonları tarafından oluşturulan bazı dosyaları büyük miktarda kod yapıştırın. Ancak, yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözüm başvuracaktır. Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.
+  > [!NOTE]
+  > Bu izlenecek yolda, Visual Studio uzantı şablonları tarafından oluşturulan bazı dosyaları büyük miktarda kod yapıştırın. Ancak, yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözüm başvuracaktır. Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).

@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688163"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890463"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek yol: C'de Görselleştirici yazma\#
 
@@ -39,7 +39,7 @@ Görselleştirici kod bir DLL'de hata ayıklayıcı tarafından okunacak yerleş
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** ve ardından **yeni proje**.
 
-2. İçinde **yeni proje** iletişim kutusunun **proje türü**s, select **Visual C#**.
+2. İçinde **yeni proje** iletişim kutusunun **proje türü**s, select **Visual C#** .
 
 3. İçinde **şablonları** kutusunda **sınıf kitaplığı**.
 
@@ -196,7 +196,8 @@ Görselleştirici kod bir DLL'de hata ayıklayıcı tarafından okunacak yerleş
 
 2. Program.cs adından TestConsole.cs gibi daha anlamlı olacak şekilde düzenleyin.
 
-    **Not** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sınıf bildirimi içinde TestConsole.cs yeni dosya adı ile eşleşecek şekilde otomatik olarak değiştirir.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sınıf bildirimi içinde TestConsole.cs yeni dosya adı ile eşleşecek şekilde otomatik olarak değiştirir.
 
 3. TestConsole.cs içinde aşağıdaki kodu ekleyin `using` ifadeleri:
 
@@ -234,7 +235,7 @@ Görselleştirici kod bir DLL'de hata ayıklayıcı tarafından okunacak yerleş
 
 1. Üzerinde **dosya** menüsünde seçin **Ekle** ve ardından **yeni proje**.
 
-2. İçinde **Yeni Proje Ekle** iletişim kutusunun **proje türü**s, select **Visual C#**.
+2. İçinde **Yeni Proje Ekle** iletişim kutusunun **proje türü**s, select **Visual C#** .
 
 3. İçinde **şablonları** kutusunda **sınıf kitaplığı**.
 

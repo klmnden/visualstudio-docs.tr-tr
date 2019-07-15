@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824327"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891034"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 ## <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Biçimlendirme (ölçeklendirme/kalın) başvurusu
  Bazı iletişim kutularını kalın olarak belirli bir metin veya dışında ortam yazı tipi boyutu gerektirir. Daha önce yazı tiplerini ortam yazı tipi daha büyük olarak kodlandıysa "`environment font +2`" ya da benzer. Sağlanan kod parçacıkları yüksek DPI monitör desteği ve görünen metin her zaman doğru boyut ve Ağırlık (açık veya Semilight gibi) göründüğünden emin olun.
 
-> **Not: Biçimlendirme uygulamak için önce bulunan yönergeleri takip ettiğiniz sağlayın [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Biçimlendirme uygulamak için önce bulunan yönergeleri takip ettiğiniz sağlayın [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Ortam yazı tipi ölçeklendirmek için TextBlock ya da belirtildiği gibi bir etiket stilini ayarlayın. Her biri, doğru kullanıldığında, bu kod parçacıkları uygun boyut ve Ağırlık çeşitlemeleri dahil olmak üzere doğru yazı tipi oluşturur.
 

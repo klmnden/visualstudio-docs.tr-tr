@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901254"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890919"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>İzlenecek yol: C'de Görselleştirici yazma\#
 Bu kılavuz, C# kullanarak basit Görselleştirici yazma işlemi gösterilmektedir. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici kendisi özellikle kullanışlı değildir, ancak diğer veri türleri için daha faydalı görselleştiriciler oluşturmak için izlemeniz gereken temel adımlarda gösterilir.
@@ -41,7 +41,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
     Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **sınıf kitaplığı**, seçin **şablonları**, ardından **yeni bir sınıf kitaplığı (.NET Standard)oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **.NET Standard**seçip Ortadaki bölmeden **sınıf kitaplığı (. NET standart)**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **.NET Standard**seçip Ortadaki bölmeden **sınıf kitaplığı (. NET standart)** .
     ::: moniker-end
 
 2. Sınıf kitaplığı için uygun bir ad yazın `MyFirstVisualizer`ve ardından **Oluştur** veya **Tamam**.
@@ -109,7 +109,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
 
     DLL içinde bulabilirsiniz *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-3. **Tamam**'ı tıklatın.
+3.           **Tamam**'ı tıklatın.
 
 4. Aşağıdaki deyime DebuggerSide.cs içinde ekleyin `using` ifadeleri:
 
@@ -173,7 +173,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
     Arama kutusuna **konsol uygulaması**, seçin **şablonları**, ardından **yeni bir konsol uygulaması (.NET Framework) oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)** .
     ::: moniker-end
 
 2. Sınıf kitaplığı için uygun bir ad yazın `MyTestConsole`ve ardından **Oluştur** veya **Tamam**.
@@ -186,7 +186,7 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
 
 2. İçinde **Başvuru Ekle** iletişim kutusu, **Gözat** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers.DLL seçin.
 
-3. **Tamam**'ı tıklatın.
+3.           **Tamam**'ı tıklatın.
 
 4. Sağ **MyTestConsole** ve **Başvuru Ekle** yeniden.
 
@@ -202,7 +202,8 @@ Görselleştirici oluşturmak için aşağıdaki görevleri izleyin.
 
 2. Program.cs adından TestConsole.cs gibi daha anlamlı olacak şekilde düzenleyin.
 
-    **Not** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sınıf bildirimi içinde TestConsole.cs yeni dosya adı ile eşleşecek şekilde otomatik olarak değiştirir.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sınıf bildirimi içinde TestConsole.cs yeni dosya adı ile eşleşecek şekilde otomatik olarak değiştirir.
 
 3. TestConsole.cs içinde aşağıdaki kodu ekleyin `using` ifadeleri:
 
