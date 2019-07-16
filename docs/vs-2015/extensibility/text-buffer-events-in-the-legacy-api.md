@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186414"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Metin arabelleği olayları eski API
+# <a name="text-buffer-events-in-the-legacy-api"></a>Eski API'deki Metin Arabelleği Olayları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç farklı olaylar gönderir.  
@@ -53,4 +53,4 @@ Metin arabelleği nesne farklı durumlar için yanıt olanak tanıyan birkaç fa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski API'yi kullanarak metin arabelleğini erişme](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Nasıl yapılır: Metin arabelleği olayları eski API'si ile kaydolun](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Nasıl yapılır: Eski API ile Metin Arabelleği Olaylarına Kaydolma](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -14,11 +14,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186432"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,8 +67,8 @@ Ne tür bir proje öğesi şablonları kategoride görüneceğini belirtir. Bu �
 |VC-Windows|Windows Platformu (yerel/yönetilen/deposu) hedefleyen tüm projeler için kullanılan|  
 |WinRT yerel UAP|Windows 10 mağazası projeleri için kullanılır|  
 |CodeSharing yerel|Paylaşılan öğe projeleri için kullanılır|  
-|WinRT-Native-6.3|Windows 8.1 Store projeler için kullanılan|  
-|WinRT-Native-Phone-6.3|Windows Phone 8.1 projeleri için kullanılır|  
+|WinRT yerel 6.3|Windows 8.1 Store projeler için kullanılan|  
+|Yerel telefon 6.3 WinRT|Windows Phone 8.1 projeleri için kullanılır|  
 |WinRT yerel|Windows 8.0 Store projeler için kullanılan|  
 |VC-Android|Android projeleri için kullanılır|  
   

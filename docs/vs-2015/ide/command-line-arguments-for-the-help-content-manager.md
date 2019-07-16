@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188811"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Yardım İçeriği Yöneticisi İçin Komut Satırı Bağımsız Değişkenleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |Vendor|Hayır|Kaldırılacak ürün içeriği için satıcıyı belirtir (örneğin, `Microsoft`). Bu anahtar için varsayılan değişken Microsoft'tur.|  
 |/ ProductName|Hayır|Kaldırılacak kitapların ürün adını belirtir. Ürün adı içerik ile gönderilen helpcontentsetup.msha veya books.html dosyaları ile tanımlanır. Aynı anda yalnızca tek bir üründen kitap kaldırabilirsiniz. Kitapları birden çok üründen kaldırmak için birden çok yükleme gerçekleştirmeniz gerekir.|  
 |/ booklist|Hayır|Yönetilecek, boşluklarla ayrılmış kitap adlarını belirtir. Değerler, yükleme medyasında listelendiği gibi kitap adları eşleşmelidir.<br /><br /> Bu bağımsız değişkeni belirtmezseniz, önerilen tüm kitaplar / sourceurı içinde belirtilen ürün için yüklenir yükleme kaynağı [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] biçimi.<br /><br /> Bir kitap adını, bir veya daha fazla boşluk içeriyorsa, listenin uygun şekilde ayrılması çift tırnak (") içine alın.<br /><br /> Geçerli veya ulaşılabilir olmayan bir/sourceurı belirtirseniz, hata iletileri kaydedilir.|  
-|/skuId|Hayır|Stok birimini (STB) ürününü yükleme kaynağından tutma belirtir ve/sourceurı anahtarının tanıttığı kitaplara filtre uygular.|  
+|/ skuıd|Hayır|Stok birimini (STB) ürününü yükleme kaynağından tutma belirtir ve/sourceurı anahtarının tanıttığı kitaplara filtre uygular.|  
 |/Membership|Hayır|-   **En düşük**--üzerinde/skuıd anahtarını kullanarak belirttiğiniz SKU temelli Yardım içeriğinin minimum kümesini yükler. SKU ve İçerik kümesi arasındaki eşleme hizmet API'SİNDE gösterilir.<br />-   **Önerilen**— / skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için önerilen kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya. MSHA.<br />-   **Tam**--/ skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için tüm kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya. MSHA.|  
 |/ locationpath|Hayır|Yerel Yardım içeriğini için varsayılan klasörü belirtir. Yalnızca içeriği yüklemek veya taşımak için bu anahtarı kullanmanız gerekir. Bu anahtarı belirtirseniz, / silent de belirtmeniz gerekir geçin.|  
 |/silent|Hayır|Yükler veya olmadan kullanıcıya sormadan veya durum bildirim alanında simgesi dahil olmak üzere herhangi bir UI görüntülemeden Yardım içeriğini kaldırır. Çıktı % Temp % dizininde bir dosyaya kaydedilir. **Önemli:**  İçeriği sessizce yüklemek için .mshc dosyaları değil, dijital olarak imzalanmış .cab dosyaları kullanmanız gerekir.|  

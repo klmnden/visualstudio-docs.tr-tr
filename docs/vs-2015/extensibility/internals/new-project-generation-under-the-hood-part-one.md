@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184197"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Arka Plan, 1. Bölüm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Visual Studio yükleme yolu > \VC#\VCSPackages\1033\csprojui.dll  
   
- Bunu doğrulamak için dosya Gezgini'ni açın ve Visual Studio dizine csprojui.dll sürükleyin... Dize tablosu kaynak #2345 başlığı olduğunu gösteren **Visual C#**.  
+ Bunu doğrulamak için dosya Gezgini'ni açın ve Visual Studio dizine csprojui.dll sürükleyin... Dize tablosu kaynak #2345 başlığı olduğunu gösteren **Visual C#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Bu kök düğümünde konumunu belirler **proje türleri** ağaç.  
@@ -92,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Bu alt anahtar yoksa kök düğümü konumunu Geliştirici Ayarları iletişim kutusu tarafından kontrol edilir. Örneğin,  
   
- DeveloperActivity REG_SZ VC#  
+ DeveloperActivity REG_SZVC#  
   
  Visual Studio için ayarlanmışsa Visual C# bir kök düğümü olacağını belirtir [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] geliştirme. Aksi takdirde, bir alt düğüm olacak **diğer diller**.  
   
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual C# ' in Windows düğümü altında yalnızca bir alt düğüm olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Yeni Proje Oluşturma: Arka Plan, 2. Bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

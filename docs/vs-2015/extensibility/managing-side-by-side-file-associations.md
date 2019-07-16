@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194385"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Yan Yana Dosya İlişkilendirmelerini Yönetme
 
@@ -53,7 +53,7 @@ Birden çok yan yana VSPackages aynı uzantı kullanmak istiyorsanız, sürümü
 
   **Visual Studio'nun en son sürümü belirlemek özel tablo satırları**
 
-  |Eylem|Tür|Kaynak|Hedef|
+  |Eylem|Tür|Source|Hedef|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -61,7 +61,7 @@ Birden çok yan yana VSPackages aynı uzantı kullanmak istiyorsanız, sürümü
 
   **Visual Studio'nun en son sürümü belirlemek InstallExecuteSequence tablo satırları**
 
-  |Eylem|Koşul|Dizisi|
+  |Eylem|Koşul|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 DEĞİL (DEVENV_EXE_2003 VEYA DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 VE DEVENV_EXE_2005 DEĞİL|420|

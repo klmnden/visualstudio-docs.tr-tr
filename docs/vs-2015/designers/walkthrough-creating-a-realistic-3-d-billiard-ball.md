@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187708"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>İzlenecek yol: Gerçekçi bir 3B bilardo topu oluşturma
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>İzlenecek yol: Gerçekçi 3B Bilardo Topu Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu izlenecek yol gölgelendirici Tasarımcısı ve Resim Düzenleyicisi kullanılarak gerçekçi bir 3B bilardo topu oluşturma işlemini gösterir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bilardo topunun 3B görünümü, birçok gölgelendirici teknikleri uygun doku kaynakları ile birleştirerek elde edilir.  
@@ -176,7 +176,7 @@ Bu izlenecek yol gölgelendirici Tasarımcısı ve Resim Düzenleyicisi kullanı
   
 4. Küp yüzüne dokuyu küp tarafında için oluşturduğunuz dokuyu yükleyin. Ana menüsünde **dosya**, **açık üzerine bu küp yüzü**, küpün tarafı için oluşturduğunuz dokuyu seçin ve ardından **açık**.  
   
-5. 4. adımı yineleyin için **negatif X**, **pozitif Z**, ve **negatif Z** küp yüzeyleri. Bunu yapmak için yüklemek istediğiniz yüzü görüntülemeniz gerekir. Ana menüde farklı bir küp eşlemi yüzünü görüntülemek için seçin **görünümü**, **küp eşlemi yüzü**ve ardından görüntülemek istediğiniz yüzü seçin.  
+5. 4\. adımı yineleyin için **negatif X**, **pozitif Z**, ve **negatif Z** küp yüzeyleri. Bunu yapmak için yüklemek istediğiniz yüzü görüntülemeniz gerekir. Ana menüde farklı bir küp eşlemi yüzünü görüntülemek için seçin **görünümü**, **küp eşlemi yüzü**ve ardından görüntülemek istediğiniz yüzü seçin.  
   
 6. İçin **pozitif Y** küp yüzü için doku üstüne için oluşturduğunuz dokuyu yükleyin.  
   

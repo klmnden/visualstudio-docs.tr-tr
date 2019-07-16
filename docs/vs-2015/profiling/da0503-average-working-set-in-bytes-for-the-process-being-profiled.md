@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205912"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Profil oluşturulan işlem için bayt cinsinden ortalama çalışma kümesinin
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Profili oluşturulan İşlemin Bayt Cinsinden Ortalama Çalışma Kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0503 |  

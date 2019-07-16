@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161716"
 ---
-# <a name="autos-and-locals-windows"></a>Otolar ve yerel öğeler Windows
+# <a name="autos-and-locals-windows"></a>Otomatikler ve Yereller Pencereleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Otolar** penceresini (hata ayıklarken, **CTRL + ALT + V, A**, veya **hata ayıklama / Windows / Otolar**) ve **Yereller** (hata ayıklarken, penceresi **CTRL + ALT + V, L**, veya **hata ayıklama / Windows / Yereller**) oldukça ayıklarken değişken değerleri görmek istediğinizde yararlıdır. **Yereller** genel işlev veya şu anda yürütülmekte olan bir yöntem olan yerel kapsamda tanımlanan değişkenler penceresinde görüntülenir. **Otolar** penceresi değişkenleri geçerli satırı (hata ayıklayıcı durduğu yeri) geçici olarak kullanılan görüntüler. Tam olarak hangi değişkenleri görüntülenen farklı dillerde farklı değildir. Değişkenleri Otolar penceresinde görüntülenecek görüyor musunuz? Aşağıda.  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  İnt üzerinde bir kesme noktası ayarlamak `x = sumVars(a, b) + subtractVars(c, d);` satır.  
   
- Hata ayıklamayı başlatmak ve ilk kesme noktasında yürütmeyi keserse basın **F10 (Step Over)**. Aşağıdaki görmelisiniz **Otolar** penceresi:  
+ Hata ayıklamayı başlatmak ve ilk kesme noktasında yürütmeyi keserse basın **F10 (Step Over)** . Aşağıdaki görmelisiniz **Otolar** penceresi:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183339"
 ---
 # <a name="customizing-the-editor"></a>Düzenleyiciyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Biçimlendirme, sekmeler, yazı tipleri ve renkler, IntelliSense ve diğer birç
 ## <a name="in-this-section"></a>Bu Bölümde  
  Bu konular, görünümünü ve davranışını metin ve kod düzenleyicisinin ayarlama açıklanmaktadır.  
   
- [Nasıl yapılır: Düzenleyicide büyük/küçük harf değiştirme](../ide/how-to-change-text-case-in-the-editor.md)  
+ [Nasıl yapılır: Düzenleyicide Büyük/Küçük Harf Değiştirme](../ide/how-to-change-text-case-in-the-editor.md)  
  Büyük/küçük harf kodunuzdaki değiştirme açıklanmaktadır.  
   
- [Nasıl yapılır: Düzenleyici Windows yönetme](../ide/how-to-manage-editor-windows.md)  
+ [Nasıl yapılır: Düzenleyici Pencerelerini Yönetme](../ide/how-to-manage-editor-windows.md)  
  Düzenleyici pencerelerini gösterilmektedir.  
   
- [Nasıl yapılır: Düzenleyici modlarını yönetme](../ide/how-to-manage-editor-modes.md)  
+ [Nasıl yapılır: Düzenleyici Modlarını Yönetme](../ide/how-to-manage-editor-modes.md)  
  Tam ekran ve sanal alanları modları nasıl kullanılacağını açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

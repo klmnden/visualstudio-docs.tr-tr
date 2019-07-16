@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161381"
 ---
-# <a name="warning-script-debugging-disabled"></a>Uyarı: Betik hata ayıklaması devre dışı
+# <a name="warning-script-debugging-disabled"></a>Uyarı: Betik Hata Ayıklama Devre Dışı Bırakıldı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Internet Explorer'da betik hata ayıklama şu anda devre dışı  
@@ -40,7 +40,7 @@ Internet Explorer'da betik hata ayıklama şu anda devre dışı
   
 4. NET **devre dışı bırak (Internet Explorer) ayıklamasını**.  
   
-5. **Tamam**'ı tıklatın.  
+5.           **Tamam**'ı tıklatın.  
   
 6. Çıkmak ve Internet Explorer'ı yeniden başlatın.  
   

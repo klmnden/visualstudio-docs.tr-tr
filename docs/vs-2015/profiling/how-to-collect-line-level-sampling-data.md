@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185949"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Nasıl yapılır: Satır düzeyi örnekleme verileri toplama
+# <a name="how-to-collect-line-level-sampling-data"></a>Nasıl yapılır: Satır Düzeyi Örnekleme Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Satır düzeyi örnekleme nerede yüksek dışlamalı örnekleri olan bir işlev gibi yoğun işlemci işlevinin kodundaki işlemci zamanının çoğunu harcama belirlemek için profil oluşturucu özelliğidir.  
@@ -56,7 +56,7 @@ Satır düzeyi örnekleme nerede yüksek dışlamalı örnekleri olan bir işlev
   
      — veya —  
   
-- Bir uygulama başlatma sırasında yazın **VSPerfCmd/lineoff \<diğer bağımsız değişkenleri >**.  
+- Bir uygulama başlatma sırasında yazın **VSPerfCmd/lineoff \<diğer bağımsız değişkenleri >** .  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97d1cacccc2fdd6abbd13aace1de71b28975779e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158050"
 ---
-# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Maksimum özel bayt profil oluşturulan işlem için ayırılmış
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Profili oluşturulan İşlem için ayırılmış En Yüksek Sayıda Özel Bayt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0506 |  

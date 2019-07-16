@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198403"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Profil Oluşturucu Komut Satırını Kullanarak .NET Framework Hizmetlerinden Bellek Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

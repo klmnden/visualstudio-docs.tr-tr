@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7a5debb0ffccffed4077c367d5b008a2a2a7cc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189636"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,5 +52,5 @@ HRESULT Prev ( 
  Bu yöntem, numaralandırıcı konumu alınan öğelerin sayısı ile güncelleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
+ [Idiaenumsymbolsbyaddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

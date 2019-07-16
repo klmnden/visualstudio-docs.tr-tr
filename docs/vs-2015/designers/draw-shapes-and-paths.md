@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195388"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
 ## <a name="Combine"></a> Yolları Birleştir  
  Tek bir yol, yol ve Şekil birleştirebilirsiniz.  
   
- ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
+ ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-A338-4ef4-96c5-dae51cc1ca8a")  
   
 |||||  
 |-|-|-|-|  
@@ -119,7 +119,7 @@ XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtg
   
  Bileşik yol oluşturduktan sonra istediğiniz zaman parçalara ayırabilirsiniz.  
   
- ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
+ ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8DE5-b10d28f08a84")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [yolları ile çalışma: Bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   

@@ -11,13 +11,13 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197760"
 ---
-# <a name="editor-factories"></a>Düzenleyici fabrikaları
+# <a name="editor-factories"></a>Düzenleyici Fabrikaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir düzenleyici fabrikası Düzenleyicisi nesneleri oluşturur ve bunları fiziksel bir görünüm olarak bilinen bir pencere çerçevesi koyar. Belge verileri ve düzenleyiciler ve tasarımcılar oluşturmak için gerekli olan belge görünümü nesneleri oluşturur. Bir düzenleyici fabrikası, Visual Studio çekirdek Düzenleyicisi ve herhangi bir standart düzenleyici oluşturmak için gereklidir. Özel bir düzenleyici Ayrıca isteğe bağlı olarak bir düzenleyici fabrikası ile oluşturulabilir.  

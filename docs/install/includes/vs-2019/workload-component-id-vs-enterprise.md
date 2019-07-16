@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 05/30/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 5c004b1db829f50b2fed435ad0202308ef3726c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9677097757650c3af66452a22ae3abd0dd4fe18
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968407"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177643"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio çekirdek Düzenleyicisi (ile Visual Studio Enterprise 2019'da dahildir)
 
@@ -27,7 +27,7 @@ ms.locfileid: "62968407"
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio temel Düzenleyicisi | 16.0.28315.86 | Gerekli
+Microsoft.VisualStudio.Component.CoreEditor | Visual Studio temel Düzenleyicisi | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio başlangıç sayfasını C++ kullanıcılar | 16.0.28315.86 | İsteğe Bağlı
 
 ## <a name="azure-development"></a>Azure geliştirme
@@ -49,13 +49,13 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | Gerekli
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.0.28720.110 | Gerekli
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.1.28810.153 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 16.0.28315.86 | Gerekli
@@ -64,26 +64,26 @@ Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 16.0.28315.86 | Gerek
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure geliştirme önkoşulları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure Web işleri araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake ve Stream Analytics araçları | 16.0.28720.110 | Önerilen
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake ve Stream Analytics araçları | 16.1.28916.169 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Önerilen
@@ -97,7 +97,8 @@ Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Service
 Microsoft.VisualStudio.Component.Debugger.Snapshot | Anlık görüntü hata ayıklayıcısı | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.TimeTravel | Zaman seyahat hata ayıklayıcı | 16.0.28714.129 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Azure Cloud Services araçları | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Azure Resource Manager araçları | 16.0.28528.71 | Önerilen
@@ -130,7 +131,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor dil Hizmetleri | 16.0.28714.129 | Önerilen
 Component.Microsoft.Web.LibraryManager | Kitaplık Yöneticisi | 16.0.28315.86 | Önerilen
-Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake ve Stream Analytics araçları | 16.0.28720.110 | Önerilen
+Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake ve Stream Analytics araçları | 16.1.28916.169 | Önerilen
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Önerilen
@@ -139,12 +140,12 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Önerilen
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Önerilen
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 16.0.28516.191 | Önerilen
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Önerilen
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.0.28720.110 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.1.28810.153 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services temel araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 16.0.28625.61 | Önerilen
@@ -153,22 +154,22 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama a
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Önerilen
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Önerilen
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Önerilen
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | Önerilen
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Önerilen
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | Önerilen
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | Önerilen
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | Önerilen
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Önerilen
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.FSharp.Desktop | F#Masaüstü dil desteği | 16.0.28315.86 | İsteğe Bağlı
@@ -189,11 +190,11 @@ Microsoft.Component.PythonTools.Web | Python web desteği | 16.0.28517.75 | Öne
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.FSharp.Desktop | F#Masaüstü dil desteği | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Önerilen
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Önerilen
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Önerilen
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 16.0.28625.61 | İsteğe Bağlı
@@ -202,7 +203,7 @@ Microsoft.VisualStudio.Component.Graphics.Tools | DirectX için grafik hata ayı
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | İsteğe Bağlı
 
@@ -219,15 +220,15 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET masaüstü geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Gerekli
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
 Microsoft.ComponentGroup.Blend | Visual Studio için Blend | 16.0.28315.86 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Önerilen
@@ -238,8 +239,9 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliş
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-In-Time hata ayıklayıcı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 araçları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
+Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | Önerilen
 Component.Dotfuscator | PreEmptive koruma - Dotfuscator | 16.0.28528.71 | İsteğe Bağlı
 Component.Microsoft.VisualStudio.RazorExtension | Razor dil Hizmetleri | 16.0.28714.129 | İsteğe Bağlı
 Component.Microsoft.Web.LibraryManager | Kitaplık Yöneticisi | 16.0.28315.86 | İsteğe Bağlı
@@ -268,20 +270,20 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#Masaüstü dil desteği | 16
 Microsoft.VisualStudio.Component.GraphDocument | DGML Düzenleyici | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.PortableLibrary | .NET taşınabilir kitaplık targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 16.0.28621.142 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | İsteğe Bağlı
 
 ## <a name="game-development-with-unity"></a>Unity ile oyun geliştirme
@@ -296,12 +298,12 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | .NET framework 3.5 geliştirme araçları | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET framework 4.7.1 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Unity | Unity için Visual Studio Araçları | 16.0.28315.86 | Gerekli
-Component.UnityEngine.x64 | Unity 2018.3 64 bit Düzenleyici | 16.0.28707.178 | Önerilen
-Component.UnityEngine.x86 | Unity 5.6 32 bit Düzenleyici | 16.0.28707.178 | Önerilen
+Component.UnityEngine.x64 | Unity 2018.3 64 bit Düzenleyici | 16.1.28810.153 | Önerilen
+Component.UnityEngine.x86 | Unity 5.6 32 bit Düzenleyici | 16.1.28811.260 | Önerilen
 
 ## <a name="linux-development-with-c"></a>C++ ile Linux geliştirme
 
@@ -316,11 +318,11 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Component.MDD.Linux | C++ Linux geliştirme için | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 16.0.28315.86 | Gerekli
-Component.Linux.CMake | Linux için C++ CMake araçları | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Önerilen
+Component.Linux.CMake | Linux için C++ CMake araçları | 16.1.28916.169 | Önerilen
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Önerilen
-Component.MDD.Linux.GCC.arm | Katıştırılmış ve IOT geliştirme araçları | 16.0.28625.61 | İsteğe Bağlı
+Component.MDD.Linux.GCC.arm | Katıştırılmış ve IOT geliştirme araçları | 16.1.28916.169 | İsteğe Bağlı
 
 ## <a name="desktop-development-with-c"></a>C++ ile masaüstü geliştirme
 
@@ -342,18 +344,19 @@ Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme 
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 yeniden dağıtılabilir güncelleştirme | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | C++ için Mimari Araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ temel masaüstü özellikleri | 16.0.28315.86 | Gerekli
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | C++Temel masaüstü özellikleri | 16.1.28916.169 | Gerekli
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Just-In-Time hata ayıklayıcı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.Graphics.Tools | DirectX için grafik hata ayıklayıcı ve GPU | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.VC.ATL | V142 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.VC.CMake.Project | Windows için C++ CMake araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Boost.Test için test bağdaştırıcısı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Google Test için test bağdaştırıcısı | 16.0.28517.75 | Önerilen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Önerilen
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 16.0.28528.71 | İsteğe Bağlı
@@ -363,9 +366,10 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | V142 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ CLI v142 derleme araçları desteği | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ CLI v142 derleme Araçları (14.21) desteği | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | C++ modülleri v142 için derleme Araçları (x64/x86 – Deneysel) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ x64/x86 derleme Araçları (v14.16) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 derleme araçlarını (v14.16) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | İsteğe Bağlı
 
@@ -381,22 +385,23 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 yeniden dağıtılabilir güncelleştirme | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.Graphics.Tools | DirectX için grafik hata ayıklayıcı ve GPU | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Önerilen
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | İsteğe Bağlı
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.1.28916.169 | İsteğe Bağlı
 Component.Android.SDK25.Private | Android SDK kurulumu (API düzeyi 25) (C++ ile Mobil Geliştirme için yerel yükleme) | 16.0.28625.61 | İsteğe Bağlı
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | İsteğe Bağlı
 Component.Cocos | Cocos | 16.0.28315.86 | İsteğe Bağlı
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 16.0.28528.71 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | İsteğe Bağlı
 Component.MDD.Android | C++ Android geliştirici araçları | 16.0.28517.75 | İsteğe Bağlı
-Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.0.28625.61 | İsteğe Bağlı
-Component.Unreal | Unreal Engine yükleyicisi | 16.0.28625.61 | İsteğe Bağlı
-Component.Unreal.Android | Unreal engine için Android IDE desteği | 16.0.28625.61 | İsteğe Bağlı
+Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.1.28811.260 | İsteğe Bağlı
+Component.Unreal | Unreal Engine yükleyicisi | 16.1.28810.153 | İsteğe Bağlı
+Component.Unreal.Android | Unreal engine için Android IDE desteği | 16.1.28810.153 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | İsteğe Bağlı
@@ -405,11 +410,11 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | İsteğe Bağlı
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | İsteğe Bağlı
 
@@ -424,13 +429,14 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Component.Android.SDK25.Private | Android SDK kurulumu (API düzeyi 25) (C++ ile Mobil Geliştirme için yerel yükleme) | 16.0.28625.61 | Gerekli
-Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.0.28625.61 | Gerekli
+Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | Gerekli
-Component.Android.NDK.R16B | Android NDK (R16B) | 16.0.28728.38 | Önerilen
+Component.Android.NDK.R16B | Android NDK (R16B) | 16.1.28916.169 | Önerilen
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Önerilen
 Component.MDD.Android | C++ Android geliştirici araçları | 16.0.28517.75 | Önerilen
-Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 bit) | 16.0.28728.38 | İsteğe Bağlı
-Component.Google.Android.Emulator.API25.Private | Google Android Emulator (API düzeyi 25) (yerel kurulum) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Component.Android.NDK.R16B_3264 | Android NDK (R16B) (32 bit) | 16.1.28916.169 | İsteğe Bağlı
+Component.Google.Android.Emulator.API25.Private | Google Android Emulator (API düzeyi 25) (yerel kurulum) | 16.1.28810.153 | İsteğe Bağlı
 Component.HAXM.Private | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (yerel kurulum) | 16.0.28528.71 | İsteğe Bağlı
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 16.0.28528.71 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | İsteğe Bağlı
@@ -454,7 +460,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
@@ -464,35 +470,36 @@ Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 16.0.28315.86 | Gerek
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure Web işleri araçları | 16.0.28714.129 | Önerilen
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | Önerilen
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.0.28720.110 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.1.28810.153 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.Snapshot | Anlık görüntü hata ayıklayıcısı | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.TimeTravel | Zaman seyahat hata ayıklayıcı | 16.0.28714.129 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
+Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | Önerilen
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure Web işleri araçları | 16.0.28621.142 | Önerilen
@@ -512,24 +519,25 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Geliştirme zamanı IIS d
 
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
-Component.Xamarin | Xamarin | 16.0.28625.61 | Gerekli
+Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.1.28811.260 | Gerekli
+Component.Xamarin | Xamarin | 16.1.28810.153 | Gerekli
 Component.Xamarin.RemotedSimulator | Xamarin uzak simülatör | 16.0.28315.86 | Gerekli
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.Merq | Ortak Xamarin iç araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.MonoDebugger | Mono hata ayıklayıcısı | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET şablon oluşturma altyapısı | 16.0.28315.86 | Gerekli
 Component.Android.SDK27 | Android SDK kurulumu (API düzeyi 27) | 16.0.28517.75 | Önerilen
-Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET ve web geliştirme
 
@@ -549,7 +557,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
@@ -559,42 +567,43 @@ Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 16.0.28315.86 | Gerek
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Azure Web işleri araçları | 16.0.28714.129 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 16.0.28516.191 | Önerilen
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | Önerilen
 Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.0.28720.110 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.1.28810.153 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.Snapshot | Anlık görüntü hata ayıklayıcısı | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.TimeTravel | Zaman seyahat hata ayıklayıcı | 16.0.28714.129 | Önerilen
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 araçları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
+Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 16.1.28811.260 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Azure Web işleri araçları | 16.0.28621.142 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Web geliştirme için bulut araçları | 16.0.28621.142 | Önerilen
@@ -633,16 +642,17 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Geliştirme zamanı IIS d
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.Node.Tools | Node.js geliştirme araçları | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
 
 ## <a name="officesharepoint-development"></a>Office/SharePoint geliştirme
 
@@ -663,34 +673,35 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pac
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | Gerekli
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET masaüstü geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Sharepoint.Tools | Visual Studio için Office Geliştirici Araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 16.0.28315.86 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
 Microsoft.VisualStudio.Component.TeamOffice | (VSTO) Office için Visual Studio Araçları | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | İsteğe Bağlı
@@ -704,7 +715,7 @@ Microsoft.Net.ComponentGroup.4.6.1.DeveloperTools | .NET framework 4.6.1 gelişt
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET framework 4.6.2 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET framework 4.7.1 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET framework 4.7 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundation 3.5 | 16.0.28621.142 | İsteğe Bağlı
 
 ## <a name="python-development"></a>Python geliştirme
@@ -718,18 +729,18 @@ Microsoft.VisualStudio.ComponentGroup.Sharepoint.WIF | Windows Identity Foundati
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python dil desteği | 16.0.28625.61 | Gerekli
-Component.CPython3.x64 | Python 3 64 bit (3.7.2) | 3.7.2 | Önerilen
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.12 | Önerilen
+Component.CPython3.x64 | Python 3 64 bit (3.7.3) | 3.7.3 | Önerilen
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Önerilen
 Microsoft.Component.PythonTools.Minicondax64 | Python, miniconda | 16.0.28625.61 | Önerilen
 Microsoft.Component.PythonTools.Web | Python web desteği | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 16.0.28315.86 | Önerilen
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.1.28811.260 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Önerilen
-Component.CPython2.x64 | Python 2 64-bit (2.7.15) | 2.7.15 | İsteğe Bağlı
-Component.CPython2.x86 | Python 2 32 bit (2.7.15) | 2.7.15 | İsteğe Bağlı
-Component.CPython3.x86 | Python 3 32 bit (3.7.2) | 3.7.2 | İsteğe Bağlı
+Component.CPython2.x64 | Python 2 64-bit (2.7.16) | 2.7.16 | İsteğe Bağlı
+Component.CPython2.x86 | Python 2 32 bit (2.7.16) | 2.7.16 | İsteğe Bağlı
+Component.CPython3.x86 | Python 3 32 bit (3.7.3) | 3.7.3 | İsteğe Bağlı
 Component.Microsoft.VisualStudio.RazorExtension | Razor dil Hizmetleri | 16.0.28714.129 | İsteğe Bağlı
 Component.Microsoft.Web.LibraryManager | Kitaplık Yöneticisi | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | İsteğe Bağlı
@@ -739,11 +750,11 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pac
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | İsteğe Bağlı
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | İsteğe Bağlı
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.0.28720.110 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 16.1.28810.153 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services temel araçları | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 16.0.28625.61 | İsteğe Bağlı
@@ -754,23 +765,23 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamala
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Yönetilen masaüstü iş yükü Çekirdeği | 16.0.28621.142 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.MSODBC.SQL | SQL Server ODBC sürücüsü | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | SQL Server komut satırı yardımcı programları | 16.0.28707.177 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL çalışma zamanı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Server desteği | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 16.1.28811.260 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 16.0.28315.86 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.0.28621.142 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 16.1.28812.146 | İsteğe Bağlı
 
 ## <a name="universal-windows-platform-development"></a>Evrensel Windows platformu geliştirme
 
@@ -787,24 +798,20 @@ Microsoft.ComponentGroup.Blend | Visual Studio için Blend | 16.0.28315.86 | Ger
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | Gerekli
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Graphics | Görüntü ve 3B model düzenleyicileri | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 16.0.28315.86 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET native ve .NET Standard | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.UWP.Support | Evrensel Windows platformu araçları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.UWP.Support | Evrensel Windows platformu araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.ClassDesigner | Sınıf Tasarımcısı | 16.0.28528.71 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.CodeClone | Kod kopyası | 16.0.28625.61 | İsteğe Bağlı
@@ -817,20 +824,21 @@ Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme 
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | C++ Evrensel Windows platformu v142 derleme Araçları (ARM64) desteği | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 yeniden dağıtılabilir güncelleştirme | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM derleme araçlarını (v14.20) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – VS 2019 C++ ARM64 derleme araçlarını (v14.20) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – VS 2017 C++ ARM derleme araçlarını (v14.16) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – VS 2017 C++ ARM64 derleme araçlarını (v14.16) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ x64/x86 derleme Araçları (v14.16) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 - VS 2019 C++ ARM derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 - VS 2019 C++ ARM64 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM derleme araçlarını (v14.16) | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 derleme araçlarını (v14.16) | 16.1.28829.92 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 derleme araçlarını (v14.16) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB cihaz bağlantısı | 16.0.28320.51 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 16.0.28621.142 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | C++ için Mimari Araçları | 16.0.28621.142 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ temel masaüstü özellikleri | 16.0.28315.86 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | (V142) C++ Evrensel Windows platformu araçları | 16.0.28621.142 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | (V141) C++ Evrensel Windows platformu araçları | 16.0.28621.142 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | C++Temel masaüstü özellikleri | 16.1.28916.169 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | (V142) C++ Evrensel Windows platformu araçları | 16.1.28811.260 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | (V141) C++ Evrensel Windows platformu araçları | 16.1.28810.153 | İsteğe Bağlı
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio uzantısı geliştirme
 
@@ -846,19 +854,20 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visual Studio uzantı geliştirme önkoşulları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET profil oluşturma araçları | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.0.28315.86 | Önerilen
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Önerilen
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | Önerilen
 Component.Dotfuscator | PreEmptive koruma - Dotfuscator | 16.0.28528.71 | İsteğe Bağlı
 Microsoft.Component.CodeAnalysis.SDK | .NET Compiler Platform SDK’sı | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.1.28811.260 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 16.1.28917.181 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.ClassDesigner | Sınıf Tasarımcısı | 16.0.28528.71 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.CodeClone | Kod kopyası | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.CodeMap | Kod Haritası | 16.0.28625.61 | İsteğe Bağlı
@@ -869,7 +878,7 @@ Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 L
 Microsoft.VisualStudio.Component.VC.ATL | V142 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | V142 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 16.0.28621.142 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Kullanıcıyla bağlantılı olmayan bileşenleri
@@ -889,6 +898,25 @@ Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Azure DevOps Of
 Microsoft.VisualStudio.Component.Git | Windows için Git | 16.0.28625.61
 Microsoft.VisualStudio.Component.LinqToSql | LINQ to SQL araçları | 16.0.28625.61
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | Kodlanmış UI testi | 16.0.28327.66
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 - VS 2019 C++ ARM64 derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL | C++ATL v14.20 v142 için derleme araçlarını (x86 & x64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | C++ATL v14.20 v142 için derleme araçlarını (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM.Spectre | C++ATL v14.20 v142 için derleme araçlarını Spectre risk azaltma işlemleri (ARM) ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | C++ATL v14.20 v142 için derleme araçlarını (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | C++ATL v14.20 v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | C++ATL v14.20 v142 için derleme araçlarını (x86 & x64) Spectre azaltmaları ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | C++/ CLI v142 derleme Araçları (14.20) desteği | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC | C++MFC v14.20 v142 için derleme araçlarını (x86 & x64) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | C++MFC v14.20 v142 için derleme araçlarını (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | C++MFC v14.20 v142 için derleme araçlarını Spectre risk azaltma işlemleri (ARM) ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | C++MFC v14.20 v142 için derleme araçlarını (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | C++MFC v14.20 v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | C++MFC v14.20 v142 için derleme araçlarını (x86 & x64) Spectre azaltmaları ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.ATL.ARM | V142 derleme Araçları (ARM) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | V142 derleme araçları için Spectre azaltmaları (ARM) ile C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | V142 derleme Araçları (ARM64) için C++ ATL | 16.0.28625.61
@@ -900,25 +928,25 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | V142 derleme araçları i�
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | V142 derleme Araçları (ARM64) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | C++ MFC v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.Redist.MSM | Yeniden dağıtılabilir C++ 2019 MSMs | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.20)  | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – VS 2017 C++ ARM Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – VS 2017 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.21)  | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 - VS 2017 C++ ARM Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 - VS 2017 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ATL | V141 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM | V141 derleme Araçları (ARM) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | V141 derleme araçları için Spectre azaltmaları (ARM) ile C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | V141 derleme Araçları (ARM64) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++ ATL v141 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | Spectre azaltmaları (x86 & x64) ile C++ ATL v141 derleme araçları | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ CLI v141 derleme araçları desteği | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ CLI v141 derleme Araçları (14.16) desteği | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.MFC | V141 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | V141 derleme Araçları (ARM) için C++ MFC | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | V141 derleme Araçları (ARM) için C++ MFC | 16.1.28916.169
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | V141 derleme araçları için Spectre azaltmaları (ARM) ile C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | V141 derleme Araçları (ARM64) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC v141 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | Spectre azaltmaları (x86 & x64) ile v141 derleme araçları için C++ MFC | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 - VS 2017 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 16.0.28707.177
-Microsoft.VisualStudio.Component.WinXP | C++VS 2017 için Windows XP desteği (v141) araçları [kullanım dışı] | 16.0.28625.61
-Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142
+Microsoft.VisualStudio.Component.WinXP | C++VS 2017 için Windows XP desteği (v141) araçları [kullanım dışı] | 16.1.28811.260
+Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.1.28810.153

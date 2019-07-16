@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204553"
 ---
 # <a name="error-codes"></a>Hata Kodları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bir kaynak denetimi eklentisi API işlevi bir hata geri döndüğünde, aşağı
 |`SCC_I_FILENOTAFFECTED`|4|Dosya etkilenmez.|  
 |`SCC_I_PROJECTCREATED`|3|Proje kaynak denetimi işlemi sırasında oluşturulan (örneğin, bir çağrı sırasında [SccOpenProject](../extensibility/sccopenproject-function.md) olduğunda `SCC_OP_CREATEIFNEW` bayrağı belirtildi).|  
 |`SCC_I_OPERATIONCANCELED`|2|İşlem iptal edildi.|  
-|`SCC_I_ADV_SUPPORT`|1.|Gelişmiş seçenekleri belirtilen komut için eklentiyi destekler. Daha fazla bilgi için [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
+|`SCC_I_ADV_SUPPORT`|1\.|Gelişmiş seçenekleri belirtilen komut için eklentiyi destekler. Daha fazla bilgi için [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md).|  
 |`SCC_OK`|0|Başarılı.|  
 |`SCC_E_INITIALIZEFAILED`|-1|Hata: başlatma başarısız oldu.|  
 |`SCC_E_UNKNOWNPROJECT`|-2|Hata: Proje bilinmiyor.|  

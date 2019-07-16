@@ -1,5 +1,5 @@
 ---
-title: ItemMetadata Element (MSBuild) | Microsoft Docs
+title: Itemmetadata öğesi (MSBuild) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162372"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata Öğesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

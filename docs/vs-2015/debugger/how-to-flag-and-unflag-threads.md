@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189437"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak
+# <a name="how-to-flag-and-unflag-threads"></a>Nasıl yapılır: İş Parçacıklarında Bayrak Ekleme ve Bayrağı Kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları**, **Paralel Yığınlar**, **paralel izleme**, ve **GPU İş parçacığı** windows. Başkalarının bayraklı iş parçacıklarını diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.  

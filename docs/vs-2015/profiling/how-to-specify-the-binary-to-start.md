@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203435"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Nasıl yapılır: Başlamak için ikili dosya belirtme
+# <a name="how-to-specify-the-binary-to-start"></a>Nasıl yapılır: Başlatma İçin İkili Dosya Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçin profil ikili dosyaları, DLL'ler gibi bilgileri girmeniz gerekir  **\<hedef > özellik sayfaları** iletişim kutusu. Bu bilgiler, DLL projesi çağıran uygulama nereden gösterir.  
@@ -45,7 +45,7 @@ ms.locfileid: "60098434"
   
 6. İçinde **çalışma dizini** metin kutusunda, dizin konumunu belirtin.  
   
-7. **Tamam**'ı tıklatın.  
+7.           **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)

@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191872"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Nasıl yapılır: Bir Kitaplıktaki Sembolleri Tanımlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,4 +86,4 @@ N1
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Nasıl yapılır: Nesne yöneticisine kitaplık kaydetme](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Nasıl yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

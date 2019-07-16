@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204352"
 ---
-# <a name="font-and-color-overview"></a>Yazı tipi ve renk genel bakış
+# <a name="font-and-color-overview"></a>Yazı Tipi ve Renklere Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konuda ele alınmıştır metin yazı tipi ve renk ayarlarını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tümleşik geliştirme ortamı (IDE). Kategorileri ve öğeleri görüntüleme kavramlarını da tanıtılmaktadır ve VSPackages ve çekirdek düzenleyici metin özniteliklerini kullanma açıklanmaktadır.  

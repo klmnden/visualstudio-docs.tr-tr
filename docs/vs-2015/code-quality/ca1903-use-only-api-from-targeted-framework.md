@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189088"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Yalnızca hedeflenen çerçeveden API kullanın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Visual Studio ile ilgili en son belgeler için bkz. [CA1903: Yalnızca hedeflene
 |||  
 |-|-|  
 |Hedef Framework'ü olduğunda|Kullanımları sürümünde üyeleri üzerinde harekete geçirilir|  
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3.5|.NET Framework 3.5 SP1 |  
+|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 3.5|.NET Framework 3.5 SP1|  
 |.NET Framework 4|Yok|  
   
  Bir projenin hedef Framework'ü değiştirmek için bkz: [belirli bir .NET Framework sürümünü hedefleme](../ide/targeting-a-specific-dotnet-framework-version.md).  

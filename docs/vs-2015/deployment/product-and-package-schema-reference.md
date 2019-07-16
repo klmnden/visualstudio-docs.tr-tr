@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188962"
 ---
 # <a name="product-and-package-schema-reference"></a>Ürün ve Paket Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ A *ürün dosyası* tüm gerekli dış bağımlılıkları tanımlayan bir XML b
   
 |Öğe|Açıklama|Öznitelikler|  
 |-------------|-----------------|----------------|  
-|[\<Ürün > öğesi](../deployment/product-element-bootstrapper.md)|Ürün dosyaları için gerekli en üst düzey öğe.|Hiçbiri|  
-|[\<Paket > öğesi](../deployment/package-element-bootstrapper.md)|Paket dosyaları için gerekli en üst düzey öğe.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > öğesi](../deployment/relatedproducts-element-bootstrapper.md)|Ürün dosyaları için isteğe bağlı öğe. Bu ürünü yükleyen veya bağımlı diğer ürünleri.|Hiçbiri|  
-|[\<InstallChecks > öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|Hiçbiri|  
-|[\<Komutları > öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|Hiçbiri|  
-|[\<PackageFiles > öğesi](../deployment/packagefiles-element-bootstrapper.md)|Gerekli öğe. Bu yükleme işlemi tarafından yüklenmiş olabilecek paketleri listeler.|Hiçbiri|  
-|[\<Dizeleri > öğesi](../deployment/strings-element-bootstrapper.md)|Gerekli öğe. Depoları, ürün adı ve hata dizelerini sürümlerini yerelleştirilmiş.|Hiçbiri|  
+|[\<Product> Öğesi](../deployment/product-element-bootstrapper.md)|Ürün dosyaları için gerekli en üst düzey öğe.|None|  
+|[\<Package> Öğesi](../deployment/package-element-bootstrapper.md)|Paket dosyaları için gerekli en üst düzey öğe.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> Öğesi](../deployment/relatedproducts-element-bootstrapper.md)|Ürün dosyaları için isteğe bağlı öğe. Bu ürünü yükleyen veya bağımlı diğer ürünleri.|Yok.|  
+|[\<InstallChecks> Öğesi](../deployment/installchecks-element-bootstrapper.md)|Gerekli öğe. Listeler, yükleme sırasında yerel bilgisayarda gerçekleştirmek için bağımlılık denetler.|Yok.|  
+|[\<Commands> Öğesi](../deployment/commands-element-bootstrapper.md)|Gerekli öğe.  Bir veya daha fazla yükleme denetimleri tarafından açıklandığı şekilde yürütür `InstallChecks`ve yüklenecek gerektiğini gösterir başarısız.|Yok.|  
+|[\<PackageFiles> Öğesi](../deployment/packagefiles-element-bootstrapper.md)|Gerekli öğe. Bu yükleme işlemi tarafından yüklenmiş olabilecek paketleri listeler.|Yok.|  
+|[\<Strings> Öğesi](../deployment/strings-element-bootstrapper.md)|Gerekli öğe. Depoları, ürün adı ve hata dizelerini sürümlerini yerelleştirilmiş.|Yok.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Paketin şemanın Setup.exe, kendi sabit kodlanmış az mantığı içeren MS Build'e önyükleme görev tarafından oluşturulan bir saplama programı tarafından kullanılır. Şema her yönüyle yükleme işlemini yürütür.  
