@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65d78387c6d60d0b432db9aab175fbfe8dc2869b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203562"
 ---
 # <a name="print-command"></a>Yazdır Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

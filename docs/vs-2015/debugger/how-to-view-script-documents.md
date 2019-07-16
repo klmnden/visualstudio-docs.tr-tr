@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189596"
 ---
-# <a name="how-to-view-script-documents"></a>Nasıl yapılır: Betik belgelerini görüntüleme
+# <a name="how-to-view-script-documents"></a>Nasıl yapılır: Betik Belgelerini Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Önceki sürümlerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sunucu tarafı betiğinden oluşturulan istemci tarafı komut dosyaları betik Gezgini penceresinde görüntülenmektedir. İstemci tarafı komut dosyası kullanılabilirliğini her zaman açık değil, betik Gezgini penceresi genellikle, gizli olduğu.  

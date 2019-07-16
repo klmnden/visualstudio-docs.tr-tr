@@ -10,23 +10,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146010"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Nasıl yapılır: Komut satırından raporları filtreleme
+# <a name="how-to-filter-reports-from-the-command-line"></a>Nasıl yapılır: Komut Satırından Raporları Filtreleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Seçeneklerini kullanarak **VSPerfReport** komutu, profil oluşturma veri dosyasının belirli bir zaman segmente raporları filtreleme veya bir veya daha fazla işlemlere veya iş parçacıklarına için veri kısıtlama. Bu komut hakkında daha fazla bilgi için bkz. [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Seçenekler|Açıklama|  
 |-------------|-----------------|  
-|**StartTime:**[*değer*]|Yalnızca (milisaniye cinsinden.) değerden sonra toplanan verileri göster|  
-|**EndTime:**[*değer*]|Yalnızca (milisaniye cinsinden.) değerden önce toplanan verileri göster|  
+|**StartTime:** [*değer*]|Yalnızca (milisaniye cinsinden.) değerden sonra toplanan verileri göster|  
+|**EndTime:** [*değer*]|Yalnızca (milisaniye cinsinden.) değerden önce toplanan verileri göster|  
 |**FilterFile:** `VSPFFile`|Öğesinden oluşturulan bir filtre dosyasının konumunu belirtir **Visual Studio performans raporu** penceresi.|  
-|**MsFilter:**[*StartTime, süre*]|Yalnızca verileri göstermek `StartTime` uzunluğuna kadar `Duration` (milisaniye cinsinden.)|  
-|**İşlem:**[*PID*]|Yalnızca belirtilen işlemden verileri göster.|  
-|**İş parçacığı:**[*ThreadID*]|Yalnızca belirtilen iş parçacığından verileri göster.|  
-|**İş parçacığı:**[*ThreadID, ProcessId*]|Yalnızca belirtilen işlemle ilişkili belirtilen iş parçacığından verileri göster.|
+|**MsFilter:** [*StartTime, süre*]|Yalnızca verileri göstermek `StartTime` uzunluğuna kadar `Duration` (milisaniye cinsinden.)|  
+|**İşlem:** [*PID*]|Yalnızca belirtilen işlemden verileri göster.|  
+|**İş parçacığı:** [*ThreadID*]|Yalnızca belirtilen iş parçacığından verileri göster.|  
+|**İş parçacığı:** [*ThreadID, ProcessId*]|Yalnızca belirtilen işlemle ilişkili belirtilen iş parçacığından verileri göster.|

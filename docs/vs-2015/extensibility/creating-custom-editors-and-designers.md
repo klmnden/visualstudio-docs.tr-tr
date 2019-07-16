@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197416"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Özel Düzenleyiciler ve Tasarımcılar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
      Gömülü olması, bir ana penceresi için dış düzenleyici oluşturma ve sonra çağrı gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değerini `DP_External`. Düzenleyici eklenemiyor, IDE otomatik olarak için ayrı bir pencere oluşturur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İzlenecek yol: Bir özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [İzlenecek yol: Özel Düzenleyici Oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Bir özel düzenleyici oluşturma açıklanır.  
   
- [İzlenecek yol: Bir özel düzenleyiciye özellik ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [İzlenecek yol: Özel Düzenleyiciye Özellik Ekleme](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Özellikler için özel bir düzenleyici ekleme işlemi açıklanmaktadır.  
   
  [Tasarımcıyı Başlatma ve Meta Verileri Yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md)  

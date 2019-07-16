@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205437"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Nasıl yapılır: .NET Framework kaynağında hata ayıklama
+# <a name="how-to-debug-net-framework-source"></a>Nasıl yapılır: .NET Framework Kaynağında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En son sürümünü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni özellikler için sağladığı [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] hata ayıklama. Hata ayıklamak için [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] kaynak kod için hata ayıklama erişimi olması gerekir. İçine adımlamak gerekir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] kaynak.  
@@ -38,9 +38,9 @@ En son sürümünü [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yeni özellikle
   
 3. İçinde **genel** kutusunda, ayarlama **.NET Framework etkinleştir** kaynak Adımlamayı.  
   
-    1. Yalnızca kendi kodum tablonuz varsa bir uyarı iletişim kutusu, yalnızca kendi kodum şimdi devre dışı olduğunu bildirir. **Tamam**'ı tıklatın.  
+    1. Yalnızca kendi kodum tablonuz varsa bir uyarı iletişim kutusu, yalnızca kendi kodum şimdi devre dışı olduğunu bildirir.           **Tamam**'ı tıklatın.  
   
-    2. Bir sembol önbelleği konumunun ayarlanmış yoksa başka bir uyarı iletişim kutusunda varsayılan sembol önbelleği konumunun artık ayarlanmış olduğunu bildirir. **Tamam**'ı tıklatın.  
+    2. Bir sembol önbelleği konumunun ayarlanmış yoksa başka bir uyarı iletişim kutusunda varsayılan sembol önbelleği konumunun artık ayarlanmış olduğunu bildirir.           **Tamam**'ı tıklatın.  
   
 4. Altında **hata ayıklama** kategorisini tıklatın **sembolleri**.  
   

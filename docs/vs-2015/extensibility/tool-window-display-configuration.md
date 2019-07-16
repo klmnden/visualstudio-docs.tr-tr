@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186389"
 ---
-# <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
+# <a name="tool-window-display-configuration"></a>Araç Penceresi Ekran Yapılandırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 VSPackage araç penceresi, varsayılan konum, boyut, yerleştirme stilini ve diğer görünürlük bilgileri kaydedildiğinde, isteğe bağlı değerler belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz. [aracı Windows kayıt defteri](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,9 +40,9 @@ HKEY_LOCAL_MACHINE\
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
 |Ad|REG_SZ|"Kısa adını buraya gelecek"|Araç penceresi açıklayan kısa bir ad. Yalnızca başvuru kayıt defteri için kullanılır.|  
-|Kayan|REG_SZ|"X1, Y1, X2, Y2"|Dört virgülle ayrılmış değerler. X1, Y1 olan araç penceresinin sol üst köşesinin koordinatı. X2, Y2 olan sağ alt köşedeki koordinatı. Ekran koordinatlarında tüm değerler.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Dört virgülle ayrılmış değerler. X1, Y1 olan araç penceresinin sol üst köşesinin koordinatı. X2, Y2 olan sağ alt köşedeki koordinatı. Ekran koordinatlarında tüm değerler.|  
 |Stil|REG_SZ|"MDI"<br /><br /> "Kaydırabilirsiniz"<br /><br /> "Bağlı"<br /><br /> "Sekmeli"<br /><br /> "AlwaysFloat"|İlk belirten bir anahtar sözcüğü, araç penceresi durumunu görüntüler.<br /><br /> "MDI" = ile MDI pencere yerleştirildi.<br /><br /> "Kaydırabilirsiniz" kayan =.<br /><br /> "Bağlı" = başka bir pencere (penceresi girdisinde belirtilen) ile bağlantılı.<br /><br /> "Sekmeli" = başka bir araç penceresi ile birleştirilmiş.<br /><br /> "AlwaysFloat" = yerleştirilmiş olabilir.<br /><br /> Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.|  
-|Pencere|REG_SZ|*\<GUID>*|Bir pencere için araç penceresi bağlı sekmeli veya GUID'si. GUID kendi windows birini ya da windows biri ait olabileceği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Pencere|REG_SZ|*\<GUID >*|Bir pencere için araç penceresi bağlı sekmeli veya GUID'si. GUID kendi windows birini ya da windows biri ait olabileceği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Hizalama|REG_SZ|"Sol"<br /><br /> "Sağ"<br /><br /> "Top"<br /><br /> "Alt"|Aşağıdaki Açıklamalar bölümüne bakın.|  
 |DontForceCreate|REG_DWORD|0 veya 1|Bu girdiyi yok ve değeri sıfır olmadığında penceresi yüklendi ancak hemen görüntülenir.|  
   
@@ -88,8 +88,8 @@ HKEY_LOCAL_MACHINE\
   
 |Ad|Tür|Veri|Açıklama|  
 |----------|----------|----------|-----------------|  
-|(Varsayılan)|REG_SZ|Hiçbiri|Boş bırakın.|  
-|*\<GUID>*|REG_DWORD veya REG_SZ|0 veya açıklayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komutun GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize içerir. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|  
+|(Varsayılan)|REG_SZ|Yok.|Boş bırakın.|  
+|*\<GUID >*|REG_DWORD veya REG_SZ|0 veya açıklayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komutun GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize içerir. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|  
   
 ### <a name="example"></a>Örnek  
   

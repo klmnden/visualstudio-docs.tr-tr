@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 376b297e94cc8e5f429254bdc981aea994b27130
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203838"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Projeler ve Düzenleyiciler için Ek Kaynak Denetimi Yönergeleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Projeler ve düzenleyiciler için kaynak denetimi desteklemek için uyması kura
 ## <a name="guidelines"></a>Kuralları  
  Proje veya Düzenleyicisi de kaynak denetimi desteklemek için aşağıdakileri yapmalıdır:  
   
-|Alan|Proje|Düzenleyici|Ayrıntılar|  
+|Alan|Project|Düzenleyici|Ayrıntılar|  
 |----------|-------------|------------|-------------|  
 |Özel dosyaların kopyalarını|X||Ortam, özel dosyaların kopyalarını destekler. Diğer bir deyişle, projede kayıtlı her kişi projedeki dosyaları onun kendi özel kopyasına sahip olur.|  
 |ANSI/Unicode kalıcılığı|X|X|Kalıcılık kod yazma, çoğu kaynak denetimi program Unicode şu anda desteklemediğinden dosyaları ANSI biçiminde kalıcı hale getirin.|  

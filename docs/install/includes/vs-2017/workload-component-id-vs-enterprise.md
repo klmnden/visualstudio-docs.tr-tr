@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968408"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177666"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>(Visual Studio Enterprise 2017 ile dahil) visual Studio temel Düzenleyicisi
 
@@ -82,7 +82,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure geliştirme önkoşulları | 15.9.28107.0 | Gerekli
@@ -182,7 +182,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | Önerilen
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 15.9.28219.51 | Önerilen
@@ -215,7 +215,7 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 
 Microsoft.VisualStudio.Component.RTools | R dil desteği | 15.0.26919.1 | Önerilen
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.8.27729.1 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Önerilen
@@ -310,7 +310,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Veri kaynakları için SQL Se
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 15.0.26208.0 | İsteğe Bağlı
@@ -555,7 +555,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 15.9.28219.51 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
@@ -676,7 +676,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 15.9.28219.51 | Gerekli
@@ -745,7 +745,7 @@ Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild desteği | 15.8.27
 Microsoft.VisualStudio.Component.Node.Tools | Node.js geliştirme desteği | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.9.28016.0 | Gerekli
 Microsoft.VisualStudio.Component.TestTools.Core | Test Araçları temel özellikleri | 15.7.27520.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.8.27729.1 | Önerilen
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.8.27825.0 | İsteğe Bağlı
@@ -799,7 +799,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Veri Araçları | 15.9.28107.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Gerekli
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | Gerekli
@@ -839,7 +839,7 @@ Microsoft.Component.PythonTools.Web | Python web desteği | 15.9.28107.0 | Öner
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 15.9.28107.0 | Önerilen
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 15.9.28125.51 | Önerilen
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Önerilen
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.WebDeploy | Web Dağıtımı | 15.8.27729.1 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Önerilen
@@ -937,7 +937,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn der
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.UWP.Support | Evrensel Windows platformu araçları | 15.9.28119.51 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Gerekli
@@ -1040,7 +1040,7 @@ Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamala
 Microsoft.VisualStudio.Component.JavaScript.ProjectSystem | JavaScript proje sistemi ve paylaşılan Araçlar | 15.0.26606.0 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 15.9.28125.51 | Gerekli
 Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK'sı | 15.8.27729.1 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.1 | 3\.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
 Component.Android.SDK23.Private | Android SDK kurulumu (API düzeyi 23) (JavaScript ile Mobil Geliştirme için yerel yükleme / C++) | 15.9.28016.0 | İsteğe Bağlı
 Component.Google.Android.Emulator.API23.Private | Google Android Emulator (API düzeyi 23) (yerel kurulum) | 15.6.27413.0 | İsteğe Bağlı
@@ -1090,7 +1090,7 @@ Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK'sı | 15.0.
 Microsoft.VisualStudio.Component.TypeScript.2.7 | TypeScript 2.7 SDK'sı | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK'sı | 15.0.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK'sı | 15.0.27924.0
-Microsoft.VisualStudio.Component.TypeScript.3.0 | 3.0 TypeScript SDK'sı | 15.0.27924.0
+Microsoft.VisualStudio.Component.TypeScript.3.0 | 3\.0 TypeScript SDK'sı | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ARM için Visual C++ ATL | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | Spectre azaltmaları ile ARM için Visual C++ ATL | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ARM64 için Visual C++ ATL | 15.7.27625.0

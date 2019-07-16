@@ -15,13 +15,13 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177228"
 ---
-# <a name="using-fonts-and-colors"></a>Yazı tipleri ve renkler kullanma
+# <a name="using-fonts-and-colors"></a>Yazı Tiplerini ve Renkleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Metni görüntülemek için yazı tiplerini ve renklerini kullanma desteği sağlar.  
@@ -41,7 +41,7 @@ ms.locfileid: "54763104"
   
  VSPackage'ı uygulamak bu yaklaşım gerektirir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> ve ilgili arabirim.  
   
- [Nasıl yapılır: Yerleşik yazı tipi ve renk şeması erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Nasıl yapılır: Yerleşik Yazı Tiplerine ve Renk Şemasına Erişim](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Tanımlamak ve bir kategori yerleşik yazı tipleri ve renkler kullanarak kaydetmek ve sistem tarafından sağlanan yazı tipleri ve renkler kullanımı başlatmak nasıl ele alınmaktadır.  
   
 ## <a name="reference"></a>Başvuru  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157793"
 ---
 # <a name="status"></a>Durum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSPerfCmd.exe /Status
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Hiçbiri  
+ Yok.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Durumu** seçeneği profil oluşturucu için aşağıdaki durum bilgileri görüntülenir.  

@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184512"
 ---
 # <a name="capability-flags"></a>Özellik Bayrakları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ SCC_CAP_*xxx* bayraklar: kaynak denetimi eklentisi yeteneklerini belirtmek için
   
 |Genişletilmiş özellik kod|Değer|Açıklama|  
 |------------------------------|-----------|-----------------|  
-|`SCC_EXCAP_CHECKOUT_LOCALVER`|1.|Destekler `SCC_CHECKOUT_LOCALVER` kullanıma alma seçeneği.|  
+|`SCC_EXCAP_CHECKOUT_LOCALVER`|1\.|Destekler `SCC_CHECKOUT_LOCALVER` kullanıma alma seçeneği.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Destekler [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
 |`SCC_EXCAP_ENUM_CHANGED_FILES`|3|Destekler [SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md).|  
 |`SCC_EXCAP_POPULATELIST_DIR`|4|Ek dizinleri üretmeyi destekler.|  

@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156339"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Nasıl yapılır: 3B modele gölgelendirici uygulama
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Nasıl yapılır: 3B Modele Gölgelendirici Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu belge, 3B modeline yönlendirilmiş grafik gölgelendirici dili (DGSL) gölgelendirici uygulamak için Model Düzenleyicisi nasıl yapılacağı açıklanır.  
@@ -40,7 +40,7 @@ Bu belge, 3B modeline yönlendirilmiş grafik gölgelendirici dili (DGSL) gölge
   
    ![3&#45;temel renk etkisini gösteren D Sahne](../designers/media/digit-3d-model-effect.png "basamak 3B Model etkisi")  
   
-   Bir modele gölgelendirici uygulama sonra bunu gölgelendirici Tasarımcısı'nda model seçerek ve sonra da açabilirsiniz **özellikleri** penceresi içinde **(Gelişmiş)** özelliği **etkisi**özellik grubu, üç nokta seçme (**...** ) düğmesi.  
+   Bir modele gölgelendirici uygulama sonra bunu gölgelendirici Tasarımcısı'nda model seçerek ve sonra da açabilirsiniz **özellikleri** penceresi içinde **(Gelişmiş)** özelliği **etkisi**özellik grubu, üç nokta seçme ( **...** ) düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Temel 3B Model oluşturma](../designers/how-to-create-a-basic-3-d-model.md)   

@@ -14,11 +14,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184727"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly Öğesi (Visual Studio Şablon Sihirbazı Uzantısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.
 ## <a name="text-value"></a>Metin Değeri  
  Bir metin değeri gereklidir.  
   
- Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`  
+ Bu metin uygulayan derlemeye belirtir `IWizard` arabirimi. Bu bütünleştirilmiş kod adı bir tam derleme adı belirtilmelidir. Örneğin: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `Assembly` gerekli alt öğesi olan `WizardExtension`.  
@@ -92,4 +92,4 @@ Adını veya uygulayan derleme güçlü adını belirtir `IWizard` arabirimi.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Nasıl yapılır: Proje Şablonlarıyla Sihirbazlar Kullanma](../extensibility/how-to-use-wizards-with-project-templates.md)

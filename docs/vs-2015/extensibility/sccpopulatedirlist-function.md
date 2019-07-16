@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200028"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList İşlevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

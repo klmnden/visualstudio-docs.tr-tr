@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192612"
 ---
 # <a name="item-element-msbuild"></a>Öğe Unsuru (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğ
   
 |Öğe|Açıklama|  
 |-------------|-----------------|  
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta veri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeleri bir öğe.|  
+|[Itemmetadata](../msbuild/itemmetadata-element-msbuild.md)|Öğe meta veri değeri içeren bir kullanıcı tanımlı meta veri, öğe anahtarı. Sıfır veya daha fazla olabilir `ItemMetadata` öğeleri bir öğe.|  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   

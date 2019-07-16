@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194894"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Örnek Excel uzantısı: Öğe Sınıfları
+# <a name="sample-excel-extension-element-classes"></a>Örnek Excel uzantısı: Element Sınıfları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Öğesinden türetilen sınıflarda uzantı kullanır <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> ve çalışma ve hücre denetimi içinde temsil [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
@@ -28,7 +28,7 @@ ms.locfileid: "54796047"
 #### <a name="simple-properties-and-methods"></a>Basit özellikleri ve yöntemleri  
  Bu üyeler dönüş değerini gibi basit değerleri `Name` özelliği veya değerinin `ClassName` özelliği ve kod NET ve kolay okunur. Bazı değerler kullanarak döndürülür `Utility` daha sonra açıklanan sınıfı. Başkalarının dönüş `null` olduğundan bu örnek uzantıyla ilgili değildir. İki üyesi diğerlerine göre daha ilgi çekici: <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A> özelliği ve <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.CacheProperties%2A> yöntemi.  
   
-#### <a name="queryid-property"></a>QueryId Property  
+#### <a name="queryid-property"></a>QueryId özelliği  
  Bu özellik benzersiz olarak tanımlanabilmesi denetim kayıttan yürütme sırasında özellik ad-değer çiftleri yapılan bir koşul döndürür. Her denetim türetilmiş sınıf için geliştirici döndürmek için bu özellik geçersiz kılmanız gerekir bir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> framework denetimin kullanıcı Arabiriminde bulmak için kullanabileceğiniz nesne.  
   
 #### <a name="cacheproperties-method"></a>CacheProperties yöntemi  

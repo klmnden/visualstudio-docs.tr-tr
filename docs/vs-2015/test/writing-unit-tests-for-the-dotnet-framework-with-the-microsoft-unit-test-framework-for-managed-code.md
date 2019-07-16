@@ -9,28 +9,28 @@ caps.latest.revision: 7
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 945b6f7b4f7b1e6418f45e5130ef08edaabf8b53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185675"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Yönetilen Kod için Microsoft Birim Testi Çerçevesi ile .NET Framework için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu bölümde  
- [İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+ [İzlenecek yol: Yönetilen Kod için Birim Testleri Oluşturma ve Çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
+ [Hızlı Başlangıç: Test Gezgini ile Test Güdümlü Geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
  [Birim Testlerinde Microsoft.VisualStudio.TestTools.UnitTesting Üyelerini Kullanma](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)  
   
  [Onay Sınıfları Kullanma](../test/using-the-assert-classes.md)  
   
- [Nasıl yapılır: Veri temelli birim testi oluşturma](../test/how-to-create-a-data-driven-unit-test.md)  
+ [Nasıl yapılır: Veri Temelli Birim Testi Oluşturma](../test/how-to-create-a-data-driven-unit-test.md)  
   
  [Genel Metotlar için birim testleri](../test/unit-tests-for-generic-methods.md)  
   
- [Nasıl yapılır: .NET önceki bir sürümü hedefleme](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET'in Önceki Sürümünü Hedefleme](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)  
   
  [Birim Testleri Oluşturmak için Örnek Proje](../test/sample-project-for-creating-unit-tests.md)

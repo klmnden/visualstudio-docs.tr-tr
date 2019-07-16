@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185733"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -509,4 +509,4 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft Fakes ile Test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost'ın blog: Visual Studio 2012 dolgular](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Video (1h16): Visual Studio 2012'de beklemediğiniz test edilebilir kod Fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Video (1 saat 16): Visual Studio 2012'de beklemediğiniz test edilebilir kod Fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)

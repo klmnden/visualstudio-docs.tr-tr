@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160583"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Kaynak Denetimi Eklentisi Bulmak için Anahtar Olarak Kullanılan Dizeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Eklenti kaynak denetimi hakkında bilgi bulmak için kayıt defteri erişim tuş
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
 |`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Bir kaynak kodu denetim dosyası|  
 |`SCC_NSE`|Namespace uzantısı|  

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203494"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Kısayol Tuşları (Yardım Görüntüleyicisi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,48 +32,48 @@ Microsoft Yardım Görüntüleyicisi'nde aşağıdaki tabloda kısayol tuşları
 |Araç Çubuğu|Geri Al tuşu<br /><br /> -VEYA-<br /><br /> Alt + sol ok|Önceki sayfaya görüntüler.|  
 |Araç Çubuğu|Alt + sağ ok|Sonraki sayfada görüntülenir.|  
 |Araç Çubuğu|Alt + Home|Yardım Gözden Geçiren giriş sayfasını göstermelidir.|  
-|Araç Çubuğu|Ctrl + S|İçindekiler tablosu, geçerli konusunda vurgulayın (üzerinde **içeriği** sekmesi).|  
+|Araç Çubuğu|CTRL + S|İçindekiler tablosu, geçerli konusunda vurgulayın (üzerinde **içeriği** sekmesi).|  
 |Araç Çubuğu|CTRL + D|Geçerli konuya ekleyin **Sık Kullanılanlar** sekmesi.|  
 |Araç Çubuğu|CTRL + F|Geçerli konu başlığı içindeki metin arama yapabilmesi konu alanında bulma çubuğunu görüntüleyin.|  
-|Araç Çubuğu|Ctrl + P|Geçerli sayfayı yazdır.|  
+|Araç Çubuğu|CTRL + P|Geçerli sayfayı yazdır.|  
 |Araç Çubuğu|CTRL + F2|Geçerli sayfanın yazdırma önizlemesini görüntüleyin.|  
 |Araç Çubuğu|CTRL + O|Görüntü **Görüntüleyici seçenekleri** iletişim kutusu.|  
 |Araç Çubuğu|Ctrl + Shift + M|Görüntü **içeriği yönetme** sekmesi.|  
 |Gezgini|Alt + C<br /><br /> -VEYA-<br /><br /> Ctrl + Shift + C|Görüntü **içeriği** sekmesi.|  
-|Gezgini|Alt + I<br /><br /> -VEYA-<br /><br /> Ctrl + Shift + ı|Görüntü **dizin** sekmesi.|  
+|Gezgini|Alt + ı<br /><br /> -VEYA-<br /><br /> Ctrl + Shift + ı|Görüntü **dizin** sekmesi.|  
 |Gezgini|Alt + F<br /><br /> -VEYA-<br /><br /> CTRL + SHIFT + F|Görüntü **Sık Kullanılanlar** sekmesi.|  
 |Gezgini|Alt + S<br /><br /> -VEYA-<br /><br /> Ctrl + E<br /><br /> -VEYA-<br /><br /> Ctrl + Shift + S|Görüntü **arama** sekmesi.|  
 |Gezgini|Alt + M<br /><br /> -VEYA-<br /><br /> Ctrl + Shift + M|Görüntü **içeriği Yönet** sekmesi.|  
 |Konu|Kısayol menüsünde anahtarı<br /><br /> VEYA<br /><br /> Shift + F10|Geçerli kullanıcı Arabirimi öğesi için kısayol menüsünü görüntüleyin.|  
 |Konu|Yukarı Ok|Aynı anda belgeyi bir satır başı doğru kaydırın.|  
 |Konu|Aşağı Ok|Aynı anda belgeyi bir satır sonuna doğru kaydırın.|  
-|Konu|Page Up|Aynı anda belge bir ekran başlangıcını doğru kaydırın.|  
-|Konu|Page Down|Aynı anda belge bir ekran sonuna doğru kaydırın.|  
+|Konu|Sayfa Yukarı|Aynı anda belge bir ekran başlangıcını doğru kaydırın.|  
+|Konu|Sayfa aşağı|Aynı anda belge bir ekran sonuna doğru kaydırın.|  
 |Konu|Ana Sayfası|Belgenin başlangıcına Taşı.|  
 |Konu|End|Belgenin sonuna taşı.|  
 |Konu|CTRL + F|Bu sayfada arama metni bulun.|  
 |Konu|F5|Geçerli sayfayı yenileyin.|  
-|Konu|Ctrl + P|Geçerli sayfayı yazdır.|  
+|Konu|CTRL + P|Geçerli sayfayı yazdır.|  
 |Konu|CTRL + F2|Geçerli sayfanın yazdırma önizlemesini görüntüleyin.|  
 |Konu|F4|Görüntü **özellikleri** geçerli sayfa için iletişim kutusu.|  
 |Konu|CTRL + T|Başka bir içerik sekmesi, ön planda açın.|  
 |Konu|CTRL + tıklayın|Bir bağlantı yeni sekmede ön planda açın.|  
 |Konu|CTRL + SEKME|Sekmeleri soldan sağa arasında geçiş yapın.|  
 |Konu|Ctrl + Shift + Sekme|Sağdan sola sekmeler arasında geçiş yapın.|  
-|Konu|Ctrl + W|Geçerli sekmeyi kapatın.|  
+|Konu|CTRL + W|Geçerli sekmeyi kapatın.|  
 |Konu|CTRL + *numarası*|Geçiş için belirli bir sekmeyi burada *numarası* 1 ile 9 arasında ve hangi sırayla sekmesini gösterir.|  
-|Konu|Ctrl +Alt + F4|Diğer içerik sekmelerini kapatın.|  
-|Konu|Ctrl + Shift + Plus Sign|Yakınlaştırma % 10 olarak artırın.|  
+|Konu|Ctrl + Alt + F4|Diğer içerik sekmelerini kapatın.|  
+|Konu|CTRL + SHIFT + artı işareti|Yakınlaştırma % 10 olarak artırın.|  
 |Konu|CTRL + eksi işareti|Yakınlaştırma 10 oranında azaltır.|  
 |Konu|CTRL + 0 (sıfır)|% 100 yakınlaştırma değiştirin.|  
 |Dizin|Tab|Odağı anahtar sözcüğü girişinde anahtar sözcük listesi.|  
-|Dizin|Ctrl + K|Anahtar sözcüğü ile başlattığınızda girişlerini belirtecek ve belirttiğiniz anahtar sözcüğü içeren gösteren girdiler arasında geçiş yapın.|  
-|Sık Kullanılanlar|Ctrl  + Shift + Del|Gözatma geçmişiniz temizleyin.|  
+|Dizin|CTRL + K|Anahtar sözcüğü ile başlattığınızda girişlerini belirtecek ve belirttiğiniz anahtar sözcüğü içeren gösteren girdiler arasında geçiş yapın.|  
+|Sık Kullanılanlar|Ctrl + Shift + Del|Gözatma geçmişiniz temizleyin.|  
 |Sık Kullanılanlar|DEL|Belirtilen öğeyi silin.|  
-|Sık Kullanılanlar|Ctrl + N|Sık Kullanılanlar içerisinde bir klasör oluşturun.|  
+|Sık Kullanılanlar|CTRL + N|Sık Kullanılanlar içerisinde bir klasör oluşturun.|  
 |Sık Kullanılanlar|F2|Belirtilen öğe veya klasör yeniden adlandırın.|  
 |İçeriği & dizin arama|CTRL + D|Belirtilen konusuna ekleme **Sık Kullanılanlar** sekmesi.|  
-|İçeriği & dizin arama & Sık Kullanılanlar|Ctrl + P|Belirtilen konuyu yazdırma.|  
+|İçeriği & dizin arama & Sık Kullanılanlar|CTRL + P|Belirtilen konuyu yazdırma.|  
 |İçeriği & dizin arama & Sık Kullanılanlar|CTRL + F2|Belirtilen konu yazdırma önizlemesini görüntüleyin.|  
 |İçeriği & dizin arama & Sık Kullanılanlar|CTRL + tıklayın|Bu konu, yeni bir sekmede açın.|  
 |Ara|Esc|Arama metin kutusuna temizleyin.|  
@@ -93,7 +93,7 @@ Microsoft Yardım Görüntüleyicisi'nde aşağıdaki tabloda kısayol tuşları
 |||  
 |-|-|  
 |**Tuş vuruşu**|**Eylem**|  
-|Ctrl + L|Yardım Görüntüleyici düzeni varsayılan düzene sıfırlamak ve tüm konu sekmelerini kapatın.|  
+|CTRL + L|Yardım Görüntüleyici düzeni varsayılan düzene sıfırlamak ve tüm konu sekmelerini kapatın.|  
 |CTRL + SEKME|İlk tuş vuruşu odağı **sekme seçimi** menüsü. Sonraki tuş vuruşu üst menü öğesine odaklanır ve sonraki tuş vuruşları odak menü öğelerine sırayla yukarıdan verin. Bir menü öğesi odağa sahip olduğunda Enter tuşuna, etkin sekme öğesi hale getirir.|  
 |Ctrl + Shift + Sekme|İlk tuş vuruşu odağı **sekme seçimi** menüsü. Alt menü öğesini sonraki tuş vuruşu odaklanır ve sonraki tuş vuruşları odak menü öğelerine sırayla aşağıdan yukarı verin. Bir menü öğesi odağa sahip olduğunda Enter tuşuna, etkin sekme öğesi hale getirir.|  
 |Alt + ı, Alt + S, Alt + C, Alt + F, Alt + M|Gezinti ve içerik yönetimi sekmeleri yerleştirilmemiş olduğunda bu kısayol tuşlarını çalışmaz.|  

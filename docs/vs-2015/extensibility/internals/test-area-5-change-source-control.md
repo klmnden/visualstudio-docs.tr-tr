@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 5: Kaynak denetimini Değiştir | Microsoft Docs'
+title: 'Test Alanı 5: Kaynak denetimini Değiştir | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,13 +12,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155981"
 ---
-# <a name="test-area-5-change-source-control"></a>Test alanı 5: Kaynak denetimini Değiştir
+# <a name="test-area-5-change-source-control"></a>Test Alanı 5: Kaynak Denetimini Değiştirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak denetimi değiştirilmeden **kaynak denetimini Değiştir** komutu.  

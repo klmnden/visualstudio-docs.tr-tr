@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189007"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; öğesi (Önyükleyici)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ ms.locfileid: "54776367"
 |Özellik|Notlar|Olası değerler|  
 |--------------|-----------|---------------------|  
 |`Version9X`|Windows 9 X işletim sistemi sürüm numarası.|4.10 Windows 98 =|  
-|`VersionNT`|Windows NT tabanlı bir işletim sistemi sürüm numarası.|Major.Minor.ServicePack<br /><br /> 5.0 Windows 2000 =<br /><br /> 5.1.0 Windows XP =<br /><br /> 5.1.2 Windows XP Professional SP2 =<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT`|Windows NT tabanlı bir işletim sistemi sürüm numarası.|Major.Minor.ServicePack<br /><br /> 5.0 Windows 2000 =<br /><br /> 5.1.0 Windows XP =<br /><br /> 5.1.2 Windows XP Professional SP2 =<br /><br /> 5.2.0 Windows Server 2003 =|  
 |`VersionNT64`|64 bit Windows NT tabanlı bir işletim sistemi sürüm numarası.|Aynı daha önce bahsedilen.|  
 |`VersionMsi`|Windows Installer hizmeti sürüm numarası.|2.0 Windows Installer 2.0 =|  
 |`AdminUser`|Bir kullanıcının Windows NT tabanlı bir işletim sistemi üzerinde yönetici ayrıcalıklarına sahip olup olmadığını belirtir.|0 = yönetici ayrıcalığı yok<br /><br /> 1 = yönetici ayrıcalıkları|  

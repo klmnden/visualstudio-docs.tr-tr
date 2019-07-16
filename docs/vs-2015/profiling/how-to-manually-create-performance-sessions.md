@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192839"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Nasıl yapılır: Performans oturumlarını elle oluşturma
+# <a name="how-to-manually-create-performance-sessions"></a>Nasıl yapılır: El ile Performans Oturumları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Performans oturumu el ile oluşturabilirsiniz. Bir proje açın gerekmez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bunu yapmak için. Daha fazla bilgi için [performans oturumları yapılandırma](../profiling/configuring-performance-sessions.md).  

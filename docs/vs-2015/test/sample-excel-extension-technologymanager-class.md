@@ -9,11 +9,11 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192501"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Örnek Excel uzantısı: TechnologyManager Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Bu sınıf genişletir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.U
   
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
-## <a name="parsequeryid-method"></a>ParseQueryId Method  
+## <a name="parsequeryid-method"></a>ParseQueryId yöntemi  
  Kodlanmış UI testi oluşturulduğunda kullanıcı testteki bazı veya tüm denetimler için özellik değerlerini belirtebilirsiniz. Bu özellik değerleri, test çerçevesi tarafından belirli kullanıcı Arabirimi denetimleri, test sırasında bulmak için kullanılan arama özellikleri olarak adlandırılan ad-değer çiftleri oluşturmak için kullanılır. Tüm arama özellikleri birlikte değerini temsil eden <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> teknolojisinde her denetimi içeren her bir öğenin özellik. Bir denetim, test sırasında birkaç kez bulunacak olabileceğinden, bu yöntem bir teknoloji Yöneticisi belirli bir denetim için arama özelliklerinin ayrıştırma iyileştirmeye yönelik bir yol sağlar. Bu yöntem ayrıca framework sonraki aramalar için bu denetim için kullanabileceğiniz bir tanımlama bilgisi döndürür. Bu yöntemi uygulaması kullanan <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> arama özellikleri ayrıştırmak için yöntemi.  
   
 ## <a name="matchelement-method"></a>MatchElement yöntemi  

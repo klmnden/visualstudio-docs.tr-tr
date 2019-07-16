@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952616"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148390"
 ---
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
@@ -23,7 +23,7 @@ Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenle
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "Visual Studio IDE")](../media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio 2019 IDE](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -197,7 +197,7 @@ Visual Studio'yu ilk kez açtığınızda, isteğe bağlı olarak yapabilecekler
 
    ![Hata ayıklama > menü hata ayıklama olmadan Başlat](../media/overview-start-without-debugging.png)
 
-   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
+   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!** . Artık çalışan bir uygulamanın var!
 
    ![Konsol penceresi](../media/overview-console-window.png)
 
@@ -266,7 +266,7 @@ Visual Studio'yu ilk kez açtığınızda, isteğe bağlı olarak yapabilecekler
 
    ![Hata ayıklama > menü hata ayıklama olmadan Başlat](../media/overview-start-without-debugging.png)
 
-   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!**. Artık çalışan bir uygulamanın var!
+   Visual Studio uygulamayı derler ve bir konsol penceresi iletiyle açılır **Merhaba Dünya!** . Artık çalışan bir uygulamanın var!
 
    ![Konsol penceresi](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](../../ide/refactoring-in
 
 ::: moniker range="vs-2017"
 
-3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'**.
+3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'** .
 
    ![Visual Studio'da eylemini yeniden adlandır](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Birkaç farklı şekilde bakalım, [yeniden düzenleme](../../ide/refactoring-in
 
 ::: moniker range=">=vs-2019"
 
-3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'**.
+3. Kullanılabilir göstermek için ampul simgesini [hızlı Eylemler](../../ide/quick-actions.md). Seçin **Yeniden Adlandır 'name 'username' için'** .
 
    ![Visual Studio'da eylemini yeniden adlandır](../media/vs-2019/rename-quick-action.png)
 

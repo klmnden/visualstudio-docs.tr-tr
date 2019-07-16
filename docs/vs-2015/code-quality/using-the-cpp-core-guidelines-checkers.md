@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142075"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcıla
   
    ![Kod Analizi uzantıları ayarları için özellik sayfası](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Etkinleştirmek veya devre dışı C++ temel denetimi kural kümesi için açık **özellik sayfaları** projeniz için iletişim. Altında **yapılandırma özellikleri**, genişletme **Kod Analizi**, **uzantıları**. Denetim yanındaki açılır menüde **etkinleştirme C++ temel denetimi (serbest bırakıldı)** veya **etkinleştirme C++ temel denetimi (Deneysel)**, seçin **Evet** veya **Hayır**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
+   Etkinleştirmek veya devre dışı C++ temel denetimi kural kümesi için açık **özellik sayfaları** projeniz için iletişim. Altında **yapılandırma özellikleri**, genişletme **Kod Analizi**, **uzantıları**. Denetim yanındaki açılır menüde **etkinleştirme C++ temel denetimi (serbest bırakıldı)** veya **etkinleştirme C++ temel denetimi (Deneysel)** , seçin **Evet** veya **Hayır**. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Türleri, sınırları ve yaşam süresi yok  
  C++ temel denetimi şu anda denetleyicileri için pakette [tür güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [sınırların güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), ve [ömrü güvenliği](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profilleri.  
@@ -90,9 +90,9 @@ int main()
   **1 >---derleme başlatıldı: Proje: CoreCheckExample, yapılandırma: Win32 hata ayıklama--**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P ->**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P ->**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (tam PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(6): C26494 Uyarı: 'Arr' uninitializ değişkendir**  

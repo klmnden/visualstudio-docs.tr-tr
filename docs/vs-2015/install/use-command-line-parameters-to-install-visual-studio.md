@@ -15,13 +15,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180258"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio"></a>Visual Studio'yu yüklemek için komut satırı parametrelerini kullanma
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Visual Studio'yu Yüklemek için Satır İçi Parametreleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).

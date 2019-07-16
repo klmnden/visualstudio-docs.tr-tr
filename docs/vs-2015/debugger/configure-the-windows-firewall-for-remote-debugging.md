@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161544"
 ---
-# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Windows Güvenlik Duvarı’nı Uzaktan Hata Ayıklama İçin Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzaktan hata ayıklamayı etkinleştirmek için Güvenlik Duvarı'nı yapılandırmak açıklar:  
@@ -80,8 +80,8 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
 |-|-|-|-|  
 |**Bağlantı Noktaları**|**Gelen ve giden**|**Protokolü**|**Açıklama**|  
 |3702|Giden|UDP|Uzaktan hata ayıklayıcı bulma işlemi için gereklidir.|  
-|4020||TCP|For VS 2015. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
-|4021||TCP|For VS 2015. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
+|4020||TCP|VS 2015 için. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
+|4021||TCP|VS 2015 için. Her bir Visual Studio sürümü için 2 bağlantı noktası numarası artırılır. Daha fazla bilgi için Visual Studio uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın.|  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging-with-managed-or-native-compatibility-mode"></a>Yönetilen veya yerel uyumluluk modunda uzaktan hata ayıklamayı etkinleştirme bağlantı noktalarını uzak bilgisayarda  
   

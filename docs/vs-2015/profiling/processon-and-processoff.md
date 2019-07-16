@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180199"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn ve ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Başlatma veya durdurma işlemini tamsayı tanımlayıcısı. İşlem kimlikleri, Windows Görev Yöneticisi'nin İşlemler sekmesinde listelenir.  
   
 ## <a name="required-subcommands"></a>Gerekli bir alt komutları  
- Hiçbiri  
+ Yok.  
   
 ## <a name="valid-subcommands"></a>Geçerli alt komutları  
  **ProcessOn** ve **ProcessOff** de aşağıdaki komutları içeren komut satırlarında belirtilebilir.  
@@ -62,7 +62,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Durdurur veya komut satırı profil oluşturma oturumu içinde tüm işlemler için profil oluşturmaya başlar.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  Durdurur veya belirtilen iş parçacığı (yalnızca izleme metodunu) için profil oluşturmaya başlar.  
   
 ## <a name="example"></a>Örnek  

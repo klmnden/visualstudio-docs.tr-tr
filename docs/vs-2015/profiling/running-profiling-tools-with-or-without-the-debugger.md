@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191631"
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>İle veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
+# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Hata Ayıklayıcı ile veya Hata Ayıklayıcı Olmadan Profil Oluşturma Araçlarını Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sunan Visual Studio artık, bir performans, tercih ettiğiniz araçları, bazıları (örneğin, **CPU kullanımı** ve **bellek kullanımı**) ile veya hata ayıklayıcı olmadan çalıştırın. Olmayan hata ayıklayıcı performans araçları yayın yapılandırmaları, hata ayıklayıcı ile tümleşik araçları hata ayıklama yapılandırmaları üzerinde çalıştırmak için tasarlanmış olsa da çalıştırmak üzere tasarlanmıştır.  

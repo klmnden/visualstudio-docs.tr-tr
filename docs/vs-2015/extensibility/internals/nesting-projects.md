@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180428"
 ---
 # <a name="nesting-projects"></a>Projeleri İç İçe Geçirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,6 +42,6 @@ VS paketinizi kullanan kurumsal uygulama geliştiriciler rahatça benzer türde 
  [Proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md)   
  [İç içe projeler için komut işlemesi uygulama](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [İç içe projeler için addItem iletişim kutusunu filtreleme](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Denetim listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Yapılacaklar listesi: Yeni proje türleri oluşturma](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Bağlam parametreleri](../../extensibility/internals/context-parameters.md)   
  [Sihirbaz (.Vsz) Dosyası](../../extensibility/internals/wizard-dot-vsz-file.md)

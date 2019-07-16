@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185182"
 ---
-# <a name="how-to-change-fonts"></a>Nasıl yapılır: Yazı tiplerini değiştirme
+# <a name="how-to-change-fonts"></a>Nasıl yapılır: Yazı Tiplerini Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yazı tipini, yazı tipi stili ve yazı tipi boyutu Spy ++ windows için değiştirebilirsiniz.  

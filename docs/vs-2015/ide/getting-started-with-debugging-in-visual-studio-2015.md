@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178082"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015'te Hata Ayıklamaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleş
 
  Kullanmanız yeterlidir, başlangıç **hata ayıklama** ve **x86** derleme yapılandırması ve platformu, sırasıyla. Kodlama ve hata ayıklama işiniz bittiğinde yapılandırmayı değiştirmek **yayın** ve belirli bir platforma hedefleyebilirsiniz. (Sağlanan Visual Studio'nun eski sürümlerini bir **AnyCPU** .Net kod projeleri için varsayılan platform.)
 
- Not: Projenizi yapılandırdığınızda, yapılandırma ve platform değerler hangi proje dizin yolu yürütülebilir depolamak için oluşturduğunuz belirlemek için de kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı\>\\< yapılandırma\>\\< platform\>**. Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
+ Not: Projenizi yapılandırdığınızda, yapılandırma ve platform değerler hangi proje dizin yolu yürütülebilir depolamak için oluşturduğunuz belirlemek için de kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı\>\\< yapılandırma\>\\< platform\>** . Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
 
 ### <a name="building-your-code"></a>Kod oluşturma
  Yapınızı ile yapılandırılmış, aslında derleme zamanı geldi. F7, ancak basmak için bunu yapmanın en kolay yolu da yapı seçerek başlatabilirsiniz **Yapı Çözümü Derle ->** ana menüden.

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763875"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149837"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ HRESULT get_acceleratorPointerTags(
  [in] Çıkış dizinin boyutu `pPointerTags`.  
   
  `pcnt`  
- [out] C++ AMP Hızlandırıcısı saplama işlevi Hızlandırıcı işaretçi etiketleri sayısı.  
+ [out] Hızlandırıcı işaretçi etiketleri sayısı C++ AMP Hızlandırıcısı saplama işlevi.  
   
  `pPointerTags`  
- [out] A `DWORD` C++ AMP Hızlandırıcısı saplama işlevi Hızlandırıcı işaretçi etiketi değerler ile doldurulan bir dizi işaretçi.  
+ [out] A `DWORD` Hızlandırıcı işaretçi etiketi değerler ile doldurulan bir dizi işaretçi C++ AMP Hızlandırıcısı saplama işlevi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  

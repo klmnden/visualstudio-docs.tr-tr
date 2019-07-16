@@ -14,18 +14,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 12eadb9844df5da78b11367708fed715f1c13672
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159678"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML Genişletilebilirlik Modellemesi için API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ile oluşturma modelleri okumak ve değiştirmek için program kodu yazabilirsiniz. API Başvurusu, bu konuda yardımcı olacak sınıflar hakkında bilgi sağlar. Daha fazla bilgi için görev odaklı altındaki konulara bakın [genişletmek UML modellerini ve diyagramları](../modeling/extend-uml-models-and-diagrams.md). Visual Studio'nun hangi sürümlerinin UML modellerini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-## <a name="assemblies"></a>Derlemeleri  
+## <a name="assemblies"></a>Bütünleştirilmiş kodlar  
   
 |Derleme|Bunu yapmak sağlar|  
 |--------------|--------------------------------|  

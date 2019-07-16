@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159007"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Bir Çözümde Birden Çok DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DS
   
 2. DSL VSIX bildirimlerini Birleştir:  
   
-   1. Açık _YourVsixProject_**\source.extension.manifest**.  
+   1. Açık _YourVsixProject_ **\source.extension.manifest**.  
   
    2. Her bir DSL seçin **İçerik Ekle** ekleyin:  
   
@@ -59,7 +59,7 @@ Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DS
   
 3. Çözümü oluşturun.  
   
-   Sonuçta elde edilen VSIX hem DSL'ler yükler. F5 kullanarak test edebilir veya dağıtma _YourVsixProject_**\bin\Debug\\\*.vsix**.  
+   Sonuçta elde edilen VSIX hem DSL'ler yükler. F5 kullanarak test edebilir veya dağıtma _YourVsixProject_ **\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

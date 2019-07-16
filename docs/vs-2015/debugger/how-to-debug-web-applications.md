@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205396"
 ---
-# <a name="how-to-debug-web-applications"></a>Nasıl yapılır: Web uygulamalarında hata ayıklama
+# <a name="how-to-debug-web-applications"></a>Nasıl yapılır: Web Uygulamalarında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamaları geliştirmek için birincil teknolojidir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hata ayıklayıcı, hata ayıklama için güçlü araçlar sağlar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] yerel veya uzak bir sunucuya Web uygulamaları. Bu konu, hata ayıklamak açıklar bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sırasında proje. Hata ayıklama hakkında bilgi için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web bir üretim sunucusu üzerinde zaten dağıtılmış uygulaması, bakın [dağıtılan Web uygulamaları hata ayıklama](../debugger/debugging-deployed-web-applications.md).  

@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201907"
 ---
-# <a name="creating-project-and-item-templates"></a>Proje ve öğe şablonları oluşturma
+# <a name="creating-project-and-item-templates"></a>Proje ve Öğe Şablonları Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Proje ve öğe şablonları, bazı temel kod ve kendi amaçları için kullanabilecekleri bir yapı kullanıcılara vermek yeniden kullanılabilir saptamalar sağlar.  
@@ -54,4 +54,4 @@ ms.locfileid: "54763367"
  [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)   
  [Şablon parametreleri](../ide/template-parameters.md)   
  [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)   
- [Nasıl yapılır: Başlangıç paketleri oluşturma](../ide/how-to-create-starter-kits.md)
+ [Nasıl yapılır: Başlangıç Paketleri Oluşturma](../ide/how-to-create-starter-kits.md)

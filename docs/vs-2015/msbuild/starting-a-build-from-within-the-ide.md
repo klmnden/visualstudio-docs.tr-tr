@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161339"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>IDE İçinden Derleme Başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59663381"
   
  Proje sistemi ortam değişkenlerini değiştiriyorsa, yapı Outofproc olarak ayarlaması gerekir. Bu, bunlar işlemde düğüm gerektirdiklerinden, ana bilgisayar nesnelerini kullanamayacağınız anlamına gelir.  
   
-## <a name="using-ivsbuildmanageraccessor"></a>Using IVSBuildManagerAccessor  
+## <a name="using-ivsbuildmanageraccessor"></a>Ivsbuildmanageraccessor kullanma  
  Aşağıdaki kod, proje sistemi bir derlemeyi başlatmak için kullanabileceğiniz bir yöntemin anahatlarını vermektedir:  
   
 ```  

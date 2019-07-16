@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188851"
 ---
 # <a name="code-snippets"></a>Kod Parçacıkları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Tıklayarak, bu kod parçacığı ekleyebilirsiniz **parçacık Ekle** kod penceresinin bağlam menüsünde **Visual C#**, yazın `tryf`, sekme veya yazabilirsiniz. sonra `tryf` sekmesini + SEKME tuşuna basın.  
+ Tıklayarak, bu kod parçacığı ekleyebilirsiniz **parçacık Ekle** kod penceresinin bağlam menüsünde **Visual C#** , yazın `tryf`, sekme veya yazabilirsiniz. sonra `tryf` sekmesini + SEKME tuşuna basın.  
   
  Surround-with kod parçacığı örneği: c++ kısayol `if` ekleme parçacığı veya bir surround-with kod parçacığı olarak kullanılabilir. Bir kod satırı seçerseniz (örneğin `return FALSE;`) ve ardından **Surround With**, ardından **varsa**, kod parçacığı çizgiyi genişletilir:  
   
