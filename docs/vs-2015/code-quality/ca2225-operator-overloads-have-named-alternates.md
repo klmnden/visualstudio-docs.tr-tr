@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201610"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ ms.locfileid: "54786584"
 |---------|------------------|-----------|--------------------|
 |+ (ikili)|+|+ (ikili)|Ekle|
 |+=|+=|+=|Ekle|
-|&|Ve|&|BitwiseAnd|
+|&|And|&|BitwiseAnd|
 |&=|Ve =|&=|BitwiseAnd|
-|&#124;|Veya|&#124;|BitwiseOr|
+|&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|Veya =|&#124;=|BitwiseOr|
 |--|Yok|--|Azaltma|
 |/|/|/|Bölme|

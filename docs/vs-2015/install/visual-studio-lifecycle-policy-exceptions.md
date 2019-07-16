@@ -10,13 +10,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180244"
 ---
-# <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio yaşam döngüsü ilkesi özel durumları
+# <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio Yaşam Döngüsü İlkesine Yönelik Özel Durumlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio, derleyiciler, diller, çalışma zamanları, ortamlar ve diğer kaynaklardan oluşturulmuş, birçok Microsoft platformu için geliştirmeye olanak tanıyan bir koleksiyon içerir. Visual Studio müşterilerimize kolaylık sağlamak için, Visual Studio söz konusu Microsoft platformlarını hedefleyen ve destekleyen bazı Microsoft SDK’lerini ve diğer Microsoft bileşenlerini yükleyebilir. Bu bileşenler, kendi koşulları ve ilkeleri kapsamında lisanslandır ve desteklenir.  

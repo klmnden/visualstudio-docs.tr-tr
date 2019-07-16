@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156443"
 ---
-# <a name="analyzing-performance-tools-data"></a>Veri Araçları performansını analiz etme
+# <a name="analyzing-performance-tools-data"></a>Performans Araçları Verilerini Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Performans raporları [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları görüntüleyip uygulama performans sorunlarını analiz etmek etkinleştirin. Bu bölümde, performans verileri incelemek için kullanılabilir görünümleri ve performans raporları hakkında genel bir bakış sağlar.  

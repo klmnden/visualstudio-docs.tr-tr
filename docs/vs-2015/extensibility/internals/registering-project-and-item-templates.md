@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185830"
 ---
 # <a name="registering-project-and-item-templates"></a>Proje ve Öğe Şablonlarını Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
 |Ad|Tür|Açıklama|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Bu tür projeler varsayılan adı.|  
-|displayName|REG_SZ|Uydu DLL alınacak adı kaynak Kimliğini paketleri altında kayıtlı.|  
+|DisplayName|REG_SZ|Uydu DLL alınacak adı kaynak Kimliğini paketleri altında kayıtlı.|  
 |Paket|REG_SZ|Sınıf kimliği paket paketleri altında kayıtlı.|  
 |ProjectTemplatesDir|REG_SZ|Proje şablonu dosyaları varsayılan yolu. Proje şablonu dosyaları tarafından görüntülenen **yeni proje** şablonu.|  
   
@@ -67,7 +67,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
 ### <a name="registering-file-filters"></a>Dosya filtreleri kaydediliyor  
  İsteğe bağlı olarak, filtre kaydedebilirsiniz, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dosya adları için istediğinde kullanır. Örneğin, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtre **açık dosya** iletişim kutusudur:  
   
- **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Visual C# dosyaları (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Birden çok filtre kaydını desteklemek için her bir filtrenin hkey_local_machıne\software\microsoft\visualstudio altında kendi alt kayıtlı\\<*sürüm*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*alt*>. Alt anahtar adı isteğe bağlıdır; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] alt anahtarının adı yoksayar ve yalnızca değerlerini kullanır.  
   
@@ -112,7 +112,7 @@ Proje türleri, kendi proje ve proje öğesi şablonları bulunduğu yere dizinl
   
  \Form  
   
- \Web Page  
+ \Web Sayfası  
   
  \HelperFiles (çok dosyalı proje öğelerinde kullanılan dosyaları içerir)  
   

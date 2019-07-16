@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102204"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68176548"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Nasıl yapılır: İleti günlüğü görüntülemeyi Durdur ve Başlat
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Nasıl yapılır: İleti Günlüğü Görüntülemeyi Başlatma ve Durdurma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Olduğunda bir [iletiler görünümünü](../debugger/messages-view.md) penceresi, etkin bir **günlüğü Başlat** veya **Günlüğü Durdur** seçim görünür Spy ++ hakkında **iletileri** menüsünde ve karşılık gelen **günlüğü Başlat** veya **Günlüğü Durdur** araç çubuğu düğmesi etkin hale gelir.  

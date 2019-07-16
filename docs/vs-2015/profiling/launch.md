@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154760"
 ---
 # <a name="launch"></a>Başlat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Yeni bir pencerede belirtilen komut satırı uygulamasını başlatır.  
   
- **Args:** `ArgList`  
+ **Bağımsız değişkenleri:** `ArgList`  
  Uygulamaya devredilecek bağımsız değişkenler listesini belirtir.  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Örnekleme seçenekleri  
  Örnekleme aralığı şunlardan biri belirtilebilir üzerinde **başlatma** komut satırı. Varsayılan örnekleme aralığı 10.000.000 işlemci saat döngülerini ' dir.  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Zamanlayıcı**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`] **Sayaç**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**ayırma** &#124;  **yaşam süresi**]  
  Sayısı ve örnekleme aralığı türünü belirtir.  
   
 - **Zamanlayıcı** -örnekleri her `Cycles` durdurulmamış işlemci saat döngüsü. Varsa `Cycles` belirtilmezse, 10.000.000 döngüleri kullanılır.  

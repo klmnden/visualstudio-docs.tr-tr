@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183874"
 ---
 # <a name="visualize-code"></a>Kodu görselleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +42,8 @@ Görselleştirme ve modelleme araçlarını Visual Studio'da, mevcut kodu anlama
 |||  
 |-|-|  
 |**Kod ve ilişkilerini anlayın:**<br /><br /> Belirli kod parçaları arasındaki ilişkileri eşleyin.<br /><br /> Çözümün tamamını kodunuzdaki ilişkileri genel bir bakış görürsünüz.<br /><br /> **Not**: Visual Studio'nun bu sürümünde terimi *kod Haritası* yerine kullanılan *bağımlılık grafiği*.|-   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Kod Haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Hata ayıklarken çağrı yığınında yöntemler eşleştirme](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|  
-|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
-|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Katman diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|-   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
+|**Sınıf yapıları anlayın:**<br /><br /> Koddan sınıf diyagramları oluşturarak bir projedeki sınıf yapısını görselleştirin.|[Nasıl yapılır: Projelere Sınıf Diyagramları Ekleme (Sınıf Tasarımcısı)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|  
+|**Üst düzey sistem tasarımı tanımlamak ve bu tasarım karşı kodu doğrulayın:**<br /><br /> Katman diyagramları oluşturarak, üst düzey sistem tasarımı ve hedeflenen bağımlılıklarını açıklar. Kodu bir koddaki bağımlılıkları tasarım ile tutarlı kalmasını sağlamak için bu tasarım karşı doğrulayın.|-   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)<br />-   [Katman diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)<br />-   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)|  
 |**Mimarisi ve kullanıcı gereksinimleri iletişim kurar:**<br /><br /> Yazılım sisteminizin mimarisi ve kullanıcı gereksinimleri aşağıdaki UML diyagramları çizerek modeli: etkinlik, bileşen, sınıfı, dizisi ve kullanım örneği.|-   [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)<br />-   [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)<br />-   [Uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="external-resources"></a>Dış Kaynaklar  

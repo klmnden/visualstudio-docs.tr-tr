@@ -1,5 +1,5 @@
 ---
-title: '8. Adım: Testi özelleştirme | Microsoft Docs'
+title: '8\. Adım: Testi özelleştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 75bde59c6e4b61c2775f188383fc9058a6c31242
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178558"
 ---
-# <a name="step-8-customize-the-quiz"></a>8. Adım: Testi Özelleştirme
+# <a name="step-8-customize-the-quiz"></a>8\. Adım: Testi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar hakkında bilgi edineceksiniz. Örneğin, programın yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için kapatma `timeLabel` farklı bir renkte denetlemek ve sınava giren bir ipucu verir.  

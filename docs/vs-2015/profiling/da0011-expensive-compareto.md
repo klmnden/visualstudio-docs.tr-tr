@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158645"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Pahalı CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio ile ilgili en son belgeler için bkz. [DA0011: Pahalı CompareTo](
 |Kural Kimliği|DA0011|  
 |Kategori|.NET framework kullanımı|  
 |Profil oluşturma yöntemleri|Örnekleme<br /><br /> .NET bellek|  
-|İleti|CompareTo fonksiyonları ucuz ve diğer bellek ayrılamadı. gerekir. Mümkünse CompareTo fonksiyonunun karmaşıklığını azaltın.|  
+|`Message`|CompareTo fonksiyonları ucuz ve diğer bellek ayrılamadı. gerekir. Mümkünse CompareTo fonksiyonunun karmaşıklığını azaltın.|  
 |Kural türü|Uyarı|  
   
 ## <a name="cause"></a>Sebep  

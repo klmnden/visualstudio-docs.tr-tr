@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201848"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: Çok dosyalı öğe şablonları oluşturma
+# <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: Çok Dosyalı Şablonlar Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Öğe şablonları, yalnızca bir öğe belirtebilirsiniz, ancak öğe birden çok dosya bazen oluşur. Örneğin, bir Windows Forms öğe şablonu Visual Basic için aşağıdaki üç dosyayı gerektirir:  

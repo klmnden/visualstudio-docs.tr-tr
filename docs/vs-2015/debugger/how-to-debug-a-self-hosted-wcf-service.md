@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185176"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Nasıl yapılır: Kendini barındıran WCF hizmetinde hata ayıklama
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Nasıl yapılır: Kendini Barındıran WCF Hizmetinde Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışmaz bir WCF hizmeti veya [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] geliştirme sunucusu. Şirket içinde barındırılan bir WCF hata ayıklamak için en kolay yolu yapılandırmaktır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seçtiğinizde, istemci ve sunucu başlatmak için **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü.  
@@ -54,7 +54,7 @@ A *kendi kendini barındıran hizmete* WCF hizmet konağı IIS içinde çalışm
   
     5. İstemci projesine karşılık gelen satırda tıklatın **eylem** ve **Başlat**.  
   
-    6. **Tamam**'ı tıklatın.  
+    6.           **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)   

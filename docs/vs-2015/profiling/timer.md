@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145495"
 ---
 # <a name="timer"></a>Zamanlayıcı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +49,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="invalid-options"></a>Geçersiz Seçenekler  
  Aşağıdaki seçenekler aynı komut satırında belirtilemez **Zamanlayıcı**.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Örnekleme olay sayfa hataları için ayarlar ve isteğe bağlı olarak örnekleme aralığı ayarlar `Events`. Varsayılan PF aralığı 10'dur.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Ayarlar işletim sistemi için örnekleme olay çağırır ve isteğe bağlı olarak örnekleme aralığı ayarlar `Events`. Varsayılan Sys aralığı 10'dur.  
   
- **Sayaç**[**:**`Name,Reload,FriendlyName`]  
+ **Sayaç**[ **:** `Name,Reload,FriendlyName`]  
  Bir CPU performans sayaç tarafından belirtilen örnekleme olayını ayarlar `Name` ve örnekleme aralığı ayarlar `Reload`.  
   
- **GC**[**:**{**ayırma**&#124;**ömrü**}]  
+ **GC**[ **:** {**ayırma**&#124;**ömrü**}]  
  .NET bellek verileri toplar. Varsayılan olarak (**ayırma**), her bir bellek ayırma etkinlikte toplanan veriler. Zaman **ömrü** parametresi belirtildiğinde, veriler ayrıca her çöp toplama olayını toplanır.  
   
 ## <a name="example"></a>Örnek  

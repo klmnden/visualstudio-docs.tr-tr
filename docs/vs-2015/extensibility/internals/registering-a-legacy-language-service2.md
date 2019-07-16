@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188844"
 ---
 # <a name="registering-a-legacy-language-service"></a>Eski dil hizmeti kaydediliyor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Aşağıdaki bölümlerde kayıt defteri girdilerinin listesi çeşitli dil içi
   
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  
-|(Varsayılan)|REG_SZ|*\<GUID>*|Dil hizmeti GUİD'si.|  
+|(Varsayılan)|REG_SZ|*\<GUID >*|Dil hizmeti GUİD'si.|  
 |LangResID|REG_DWORD|0x0 0xffff|Dil yerelleştirilmiş metin adı için kaynak tanımlayıcısı (ResID) dize.|  
-|Paket|REG_SZ|*\<GUID>*|VSPackage'ı GUİD'si.|  
+|Paket|REG_SZ|*\<GUID >*|VSPackage'ı GUİD'si.|  
 |ShowCompletion|REG_DWORD|0-1|Belirtir olup olmadığını **deyim tamamlama** seçeneklerini **seçenekleri** iletişim kutusu etkinleştirilir.|  
 |ShowSmartIndent|REG_DWORD|0-1|Belirtir olup olmadığını belirleme seçeneği **akıllı** , girintilendirme **seçenekleri** iletişim kutusu etkin.|  
 |RequestStockColors|REG_DWORD|0-1|Belirtir olup özel veya varsayılan renkler, renk anahtar sözcükler için kullanılır.|  
@@ -140,10 +140,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Varsayılan)|REG_SZ|""|Kullanılmayan; uygulamanızın adını buraya belgeleri koyabilirsiniz.|  
 |DefaultToolboxTab|REG_SZ|""|Düzenleyici etkin olduğunda varsayılan hale getirmek için araç kutusu sekmesi adı.|  
-|displayName|REG_SZ|resID|Görüntülenecek ad **birlikte Aç** iletişim kutusu. Adı dize kaynak kimliği veya adı standart biçimindedir.|  
+|DisplayName|REG_SZ|resID|Görüntülenecek ad **birlikte Aç** iletişim kutusu. Adı dize kaynak kimliği veya adı standart biçimindedir.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|İçin kullanılan **birlikte Aç** menü komutu. Belirli bir dosya türü için kullanılabilir düzenleyicilerin listesini varsayılan metin düzenleyicisinde listelemek istemiyorsanız bu değeri 1 olarak ayarlayın.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID>*|Bir dosya ile kod sayfası destek açabilirsiniz herhangi bir dil hizmeti için kullanılır. Örneğin, açtığınızda, bir .txt dosyasına kullanarak **birlikte Aç** komut seçenekleri kodlama olmadan ve Kaynak Kod Düzenleyicisi'ni kullanarak için sağlanır.<br /><br /> Alt adını belirtilen için kod düzenleyici fabrikası GUID'idir; Bu belirli kayıt defteri girdisi bağlı normal Düzenleyici fabrikası için GUID'dir. Bu giriş amacı, IDE varsayılan Düzenleyicisi'ni kullanarak bir dosya açılmazsa, IDE listesinde sonraki Düzenleyicisi'ni kullanmayı deneyin. Bu düzenleyici fabrikası temelde başarısız Düzenleyici fabrikası ile aynı olduğu için bu sonraki Düzenleyicisi Kod Düzenleyici fabrikası olmamalıdır.|  
-|Paket|REG_SZ|*\<GUID>*|Görünen ad ResID VSPackage GUİD'i.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID >*|Bir dosya ile kod sayfası destek açabilirsiniz herhangi bir dil hizmeti için kullanılır. Örneğin, açtığınızda, bir .txt dosyasına kullanarak **birlikte Aç** komut seçenekleri kodlama olmadan ve Kaynak Kod Düzenleyicisi'ni kullanarak için sağlanır.<br /><br /> Alt adını belirtilen için kod düzenleyici fabrikası GUID'idir; Bu belirli kayıt defteri girdisi bağlı normal Düzenleyici fabrikası için GUID'dir. Bu giriş amacı, IDE varsayılan Düzenleyicisi'ni kullanarak bir dosya açılmazsa, IDE listesinde sonraki Düzenleyicisi'ni kullanmayı deneyin. Bu düzenleyici fabrikası temelde başarısız Düzenleyici fabrikası ile aynı olduğu için bu sonraki Düzenleyicisi Kod Düzenleyici fabrikası olmamalıdır.|  
+|Paket|REG_SZ|*\<GUID >*|Görünen ad ResID VSPackage GUİD'i.|  
   
 ### <a name="example"></a>Örnek  
   
@@ -164,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Ad|Tür|Aralık|Açıklama|  
 |----------|----------|-----------|-----------------|  
 |(Varsayılan)|REG_SZ||Kullanılmayan.|  
-|*\<GUID>*|REG_SZ|""|Desteklenen mantıksal görünümleri anahtarı. Gereksinim duyduğunuz kadar bu olabilir. Önemli, kayıt defteri girişini adıdır her zaman boş bir dize değil değeri.|  
+|*\<GUID >*|REG_SZ|""|Desteklenen mantıksal görünümleri anahtarı. Gereksinim duyduğunuz kadar bu olabilir. Önemli, kayıt defteri girişini adıdır her zaman boş bir dize değil değeri.|  
   
 ### <a name="example"></a>Örnek  
   

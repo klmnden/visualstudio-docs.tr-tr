@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196867"
 ---
 # <a name="delayed-document-loading"></a>Gecikmeli Belge Yüklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ Bir kullanıcı bir Visual Studio çözümü yeniden açana, ilişkili belgeleri
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Başlatma zorla görmek için uzantılarını test etme  
  Bir belge başlatılmış olup olmadığını, uzantınızı başlatma başlatılmasına gerek olmadığını bulmanın zor olabilir, böylece belirtmek için görünür hiçbir işaret yoktur. Metin tam olarak başlatılmadı her belgenin başlığını neden olduğundan doğrulama kolaylaştırır bir kayıt defteri anahtarı ayarlayabilirsiniz `[Stub]` başlık.  
   
- İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ayarlayın **StubTabTitleFormatString** için  **{0} [Stub]**.
+ İçinde **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ayarlayın **StubTabTitleFormatString** için  **{0} [Stub]** .

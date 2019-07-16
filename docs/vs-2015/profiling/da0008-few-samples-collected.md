@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187853"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008: Toplanan örnek az
+# <a name="da0008-few-samples-collected"></a>DA0008: Az sayıda örnek toplandı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0008 |  

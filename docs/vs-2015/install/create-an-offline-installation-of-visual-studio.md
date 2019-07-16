@@ -14,13 +14,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186007"
 ---
-# <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio'nun çevrimdışı yüklemesini oluşturma
+# <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio’nun Çevrimdışı Yüklemesini Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio'nun çevrimdışı yüklemesini oluşturma](/visualstudio/install/create-an-offline-installation-of-visual-studio) veya [Visual Studio'nun bir ağ oluşturun](/visualstudio/install/create-a-network-installation-of-visual-studio).

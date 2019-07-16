@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158657"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Pahalı GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio ile ilgili en son belgeler için bkz. [DA0010: Pahalı GetHashCode
 |Kural Kimliği|DA0010|  
 |Kategori|.NET framework kullanımı|  
 |Profil oluşturma yöntemleri|Örnekleme<br /><br /> .NET bellek|  
-|İleti|GetHashCode fonksiyonları ucuz ve diğer bellek ayrılamadı. gerekir. Mümkünse karma kod işlevi karmaşıklığını azaltın.|  
+|`Message`|GetHashCode fonksiyonları ucuz ve diğer bellek ayrılamadı. gerekir. Mümkünse karma kod işlevi karmaşıklığını azaltın.|  
 |İleti türü|Uyarı|  
   
 ## <a name="cause"></a>Sebep  

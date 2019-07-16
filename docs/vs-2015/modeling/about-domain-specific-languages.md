@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165433"
 ---
 # <a name="about-domain-specific-languages"></a>Etki Alanına Özgü Diller Hakkında
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ C# veya UML gibi genel amaçlı bir dil, bir etki alanına özgü dil (DSL), bel
 ### <a name="notation"></a>Gösterim  
  Bir etki alanına özgü dil makul küçük bir kolayca tanımlanabilir ve etki alanına özgü yapıları temsil etmek için genişletilmiş öğeler olması gerekir. Bir gösterimi öğelerini temsil eden, şekiller ve bağlayıcıları, bir grafik diyagram yüzeyinde öğeleri arasındaki ilişkileri gösteren oluşur. İçinde [!INCLUDE[dsl](../includes/dsl-md.md)], şekiller genişletilmiş ve, etki alanına özgü dil öğelerini temsil eden için iyileştirilmiştir.  
   
-### <a name="domain-model"></a>Domain Model  
+### <a name="domain-model"></a>Etki alanı modeli  
  Bir etki alanına özgü dil öğelerini ve bunları tutarlı dilbilgisi arasındaki ilişkileri kümesini birleştirmeniz gerekir. Öğeleri ve ilişkileri birleşimlerini geçerli olup olmadığını tanımlamalısınız. Örneğin, programlama dilleri, genellikle ikinci sınıftan türetilmiş bir sınıf ve saniye sınıfının ilk sınıfından türetilmiş döngüsel devralmaya engelleyin. Kısıtlamaları, iş mantığı ifade etmek için de kullanılabilir; örneğin, bir kişi, kendisine bağımlı bir olamaz. [!INCLUDE[dsl](../includes/dsl-md.md)] tür en etki alanına özgü diller gerektiren kısıtlamalar express için kısıtlamalar kullanır.  
   
 ### <a name="artifact-generation"></a>Yapıt oluşturma  

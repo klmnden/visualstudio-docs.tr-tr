@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b25cd941b8f06909ca1bf777d0e3251c78732706
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771455"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68183183"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ HRESULT get_numberOfAcceleratorPointerTags(
   
 #### <a name="parameters"></a>Parametreler  
  `count`  
- [out] Bir işaretçi bir `DWORD` Hızlandırıcı sayısı bir C++ AMP saplama işlevde işaretçi etiketleri içeren.  
+ [out] Bir işaretçi bir `DWORD` işaretçi etiketleri Hızlandırıcı sayısını içeren bir C++ AMP saplama işlevi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  

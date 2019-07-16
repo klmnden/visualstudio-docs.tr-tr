@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186259"
 ---
-# <a name="how-to-update-existing-templates"></a>Nasıl yapılır: Mevcut şablonları güncelleştirme
+# <a name="how-to-update-existing-templates"></a>Nasıl yapılır: Mevcut Şablonları Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir şablonu oluşturun ve dosyalarını bir .zip dosyası olarak sıkıştırıp sonra şablonu değiştirmek isteyebilirsiniz. Şablon dosyaları el ile değiştirerek veya bir projeden şablonu temel alan yeni bir şablon vererek bunu yapabilirsiniz.  

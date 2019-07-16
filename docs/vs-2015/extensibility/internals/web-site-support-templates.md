@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200960"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60044384"
   
      Yeni Web sitesi için varsayılan giriş sayfası. Language özniteliği codebehind dilini belirtir ve bu sayfayla ilişkili codebehind kodu içeren bağımlı dosya CodeFile özniteliği belirtir.  
   
-- Default.aspx.*extension*  
+- Default.aspx. *uzantısı*  
   
      Bağımlı dosya varsayılan giriş sayfasını codebehind kodunu içerir. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60044384"
 ### <a name="web-service-projects"></a>Web hizmeti projelerini Microsoft Azure  
  Bu dosyalar, yanıt olarak yeni bir Web sitesi oluşturma **ASP.NET Web hizmeti** işaret sonra kullanılabilir olan komut **yeni Web sitesi** üzerinde **dosya** menüsü:  
   
-- Service.asmx  
+- QuoteService.asmx'e değiştirin  
   
      Yeni bir Web hizmeti için HTML sayfası. Language özniteliği codebehind dilini belirtir ve bu hizmetle ilişkili codebehind kodu içeren bağımlı dosya CodeBehind özniteliğinin belirtir.  
   

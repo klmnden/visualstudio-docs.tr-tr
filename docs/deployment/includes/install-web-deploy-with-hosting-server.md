@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904465"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143553"
 ---
 Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama ayarları dosyası oluşturma ek yapılandırma özellikleri sağlar.
 
@@ -18,7 +18,7 @@ Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama aya
 
 3. Zaten yüklemezseniz **IIS Yönetim betikleri ve araçları**, şimdi yükleyin.
 
-    Git **Sunucu Rollerini Seç** > **Web sunucusu (IIS)** > **Yönetim Araçları**ve ardından **IIS Yönetim betikleri ve araçları** rolüne tıklayın **sonraki**ve ardından rolü yükleyin.
+    Git **Sunucu Rollerini Seç** > **Web sunucusu (IIS)**  > **Yönetim Araçları**ve ardından **IIS Yönetim betikleri ve araçları** rolüne tıklayın **sonraki**ve ardından rolü yükleyin.
 
     ![IIS Yönetim betikleri ve araçları yükleyin](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 
@@ -26,4 +26,4 @@ Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama aya
 
 4. (İsteğe bağlı) Web dağıtımı doğru açarak çalıştığını doğrulayın **Denetim Masası > Sistem ve Güvenlik > Yönetim Araçları > Hizmetleri** emin olun **Web Dağıtım Aracı hizmeti** çalışıyor ( Hizmet eski sürümlerde farklı adıdır).
 
-    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı \<sürüm >**. Tercih **değişiklik** yükleme ve seçtiğiniz emin **yerel sabit diskinize yüklenecek** Web dağıtımı bileşenleri için. Değişiklik yükleme adımlarını tamamlayın.
+    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı \<sürüm >** . Tercih **değişiklik** yükleme ve seçtiğiniz emin **yerel sabit diskinize yüklenecek** Web dağıtımı bileşenleri için. Değişiklik yükleme adımlarını tamamlayın.

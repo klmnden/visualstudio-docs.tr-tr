@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205793"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Nasıl yapılır: Performans veri dosyası adı seçeneklerini ayarlama
+# <a name="how-to-set-performance-data-file-name-options"></a>Nasıl yapılır: Performans Veri Dosyası Adlandırma Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Varsayılan olarak, aşağıdaki söz dizimini kullanarak bir profil oluşturma veri (.vsp) dosyasını kaydedin:  

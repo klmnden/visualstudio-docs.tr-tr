@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f400135fab95925384947488b5582b2f3d996928
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190589"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>Parametreler  
  `pRetVal`  
- [out] Döndürür `TRUE` C++ özel durum işleme aslında bu çerçeve için; Aksi halde döndürür `FALSE`.  
+ [out] Döndürür `TRUE` varsa C++ özel durum işleme için bu çerçeve etkilidir; Aksi halde döndürür `FALSE`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  

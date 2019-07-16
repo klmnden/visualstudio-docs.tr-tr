@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204035"
 ---
 # <a name="ide-constants"></a>IDE Sabitleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "54789499"
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> şekil sonuna belirten yöntemi.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|Bir bildirim iletisi aracılığıyla yayımlamak için Visual Studio için belirli bir sabit <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> komut çubuğu ölçümleri değiştiğini gösteren yöntemi.|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|Visual Studio için bir tanımlama bilgisi ayarlanmamışsa gösteren belirli bir sabit değer.|  
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
+|[VSITEMID. Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|Bir proje öğesi olmaması temsil eden bir Visual Studio öğe tanımlayıcısı. Bu değer, geçerli seçim yok olduğunda kullanılır.|
 |[VSITEMID. Kök](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Bir proje hiyerarşisinin kökü temsil eder ve tek bir öğe yerine tüm bir hiyerarşiye tanımlamak için kullanılan bir Visual Studio öğe tanımlayıcısı.|
 |[VSITEMID. Seçimi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|Seçili öğenin veya hiyerarşisinin kökü içerebilen öğeleri temsil eden bir Visual Studio öğe tanımlayıcısı.| 
   
@@ -102,7 +102,7 @@ ms.locfileid: "54789499"
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|3|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|0|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|5|  
-|<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1.|  
+|<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1\.|  
   
 ## <a name="component-selector-dialog-constants"></a>Bileşen Seçici iletişim sabitleri  
   

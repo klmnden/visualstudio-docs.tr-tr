@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187110"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Bu bölümde erişim, değiştirme veya bir etki alanına özgü dili bir model 
   
 - **Metin dönüştürme.** Bir model erişen ve örneğin program kodu oluşturmak bir metin dosyası oluşturur, kodu içeren metin şablonlarınızı yazabilirsiniz. Daha fazla bilgi için [bir etki alanına özgü dilden kod oluşturma](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Diğer Visual Studio uzantıları.** Okuma ve değiştirme modelleri ayrı VSIX uzantıları yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Diğer Visual Studio uzantıları.** Okuma ve değiştirme modelleri ayrı VSIX uzantıları yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   DslDefinition.dsl tanımlayan sınıf örneklerini adlı bir veri yapısı içinde tutulur *bellek içi Store* (IMS) veya *Store*. Bir DSL içinde her zaman tanımladığınız sınıfları bir Store oluşturucusuna bağımsız değişken olarak yararlanın. Örneğin DSL'nizi örnek adlı bir sınıf tanımlar:  
   

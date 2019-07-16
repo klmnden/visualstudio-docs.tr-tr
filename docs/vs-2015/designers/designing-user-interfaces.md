@@ -10,18 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181323"
 ---
 # <a name="designing-user-interfaces"></a>Kullanıcı Arabirimleri Tasarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oluşturun ve Visual Studio içindeki çeşitli araçları kullanarak uygulamanız için kullanıcı arabirimini tasarlayabilirsiniz.  
   
-|Hakkında daha fazla bilgi edinmek için|Bkz. |  
+|Hakkında daha fazla bilgi edinmek için|Bkz.|  
 |-------------------------|---------|  
 |Herhangi bir XAML tabanlı uygulama veya Visual Studio veya Blend için Visual Studio kullanarak uygulama tasarlama.   biçimindeki telefon numarasıdır.|[Visual Studio ve Visual Studio İçin Blend Uygulamalarında XAML Tasarlama](../designers/designing-xaml-in-visual-studio.md)|  
 |XAML WPF örneğinizin kullanan masaüstü uygulamaları tasarlama.|[Windows Presentation Foundation ile Modern Masaüstü Uygulamaları Oluşturma](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)|  

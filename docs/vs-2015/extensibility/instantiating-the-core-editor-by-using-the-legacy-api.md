@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203916"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Eski API'yi kullanarak çekirdek Düzenleyici örnekleme
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Eski API'yi Kullanarak Temel Düzenleyiciyi Başlatma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi işlevleri sorumludur. Bu işlevler, metin renklendirme, girinti ve IntelliSense deyim tamamlama gibi dil Hizmetleri tarafından sağlanan ile birleştirir.  
@@ -69,4 +69,4 @@ Düzenleyici metin düzenleme ekleme, silme, kopyalama ve yapıştırma gibi iş
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çekirdek Düzenleyicisi içinde](../extensibility/inside-the-core-editor.md)   
  [Açma ve proje öğelerini kaydetme](../extensibility/internals/opening-and-saving-project-items.md)   
- [İzlenecek yol: Çekirdek düzenleyici oluşturma ve bir düzenleyici dosya türü kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [İzlenecek yol: Temel Düzenleyici Oluşturma ve Düzenleyici Dosya Türü Kaydetme](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

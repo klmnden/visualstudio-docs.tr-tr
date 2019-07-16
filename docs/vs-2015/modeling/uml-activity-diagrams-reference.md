@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193790"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML etkinlik diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
 ||||  
 |-|-|-|  
 |**Şekil**|**Öğe**|**Açıklama ve ana özellikleri**|  
-|1.|**Eylem**|Bir etkinlikte adımda kullanıcılardan veya yazılımlardan bazı görevleri gerçekleştirir.<br /><br /> Bir belirteç tüm gelen akışlar sunuldu eylemi başlatabilirsiniz. Sona erdiğinde belirteçleri tüm giden akışlar gönderilir.<br /><br /> -   **Gövde** -ayrıntılı olarak eylemi belirtir.<br />-   **Dil** -gövdesi içindeki ifade dili.<br />-   **Yerel koşul Sonralarına** -yürütme sona erdiğinde karşılanması gereken kısıtlamaları. Eylem tarafından elde edilen hedefi.<br />-   **Yerel önkoşulları** -yürütme başlamadan önce karşılanması gereken kısıtlamaları.|  
+|1\.|**Eylem**|Bir etkinlikte adımda kullanıcılardan veya yazılımlardan bazı görevleri gerçekleştirir.<br /><br /> Bir belirteç tüm gelen akışlar sunuldu eylemi başlatabilirsiniz. Sona erdiğinde belirteçleri tüm giden akışlar gönderilir.<br /><br /> -   **Gövde** -ayrıntılı olarak eylemi belirtir.<br />-   **Dil** -gövdesi içindeki ifade dili.<br />-   **Yerel koşul Sonralarına** -yürütme sona erdiğinde karşılanması gereken kısıtlamaları. Eylem tarafından elde edilen hedefi.<br />-   **Yerel önkoşulları** -yürütme başlamadan önce karşılanması gereken kısıtlamaları.|  
 |2|**Denetim Akışı**|Bir bağlayıcı Eylemler arasındaki denetim akışı gösterilmektedir. Diyagram yorumlamak için bir belirteç sonraki bir eylemden akışları düşünün.<br /><br /> Bir iş akışı oluşturmak için kullanın **bağlayıcı** aracı.|  
 |3|**İlk düğüm**|İlk eylem veya eylem etkinliğindeki gösterir. Bir etkinlik başladığında, ilk düğümü aracılığıyla bir belirteç akar.|  
 |4|**Etkinliğin son düğümü**|Etkinlik bitiş olayı. Bir belirteç geldiğinde etkinlik sona erer.|  

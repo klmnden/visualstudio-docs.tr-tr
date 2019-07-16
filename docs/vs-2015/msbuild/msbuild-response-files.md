@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1ce11edac37368b9c4993a87a8c2b3e734b7862
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189370"
 ---
 # <a name="msbuild-response-files"></a>MSBuild Yanıt Dosyaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

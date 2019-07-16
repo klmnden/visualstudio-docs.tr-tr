@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192824"
 ---
 # <a name="start"></a>Başlat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Etkinleştirir çapraz profil oluşturma işlem. Seçenek adları **CrossSession** ve **CS** desteklenen olan iki.  
   
- **Kullanıcı:**[`domain\`]`username`  
+ **Kullanıcı:** [`domain\`]`username`  
  İstemci erişimi belirtilen hesaptan izleyiciye sağlar.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Status**  
  **Durum** profillenen bu işlemleri için geçerlidir. Bu işlemler, iş parçacıkları ve onların geçerli profil durumlarının (açık/kapalı) listeler. Örneğin, bir işlem durursa, **durumu** raporda belirtmez. **Durum** işlem ya da veya profil oluşturulan olduğunu gösterir.  
   
- **Kapatma**[**:**`Timeout`]  
+ **Kapatma**[ **:** `Timeout`]  
  Profil oluşturucuyu devre dışı bırakır.  
   
 ## <a name="example"></a>Örnek  

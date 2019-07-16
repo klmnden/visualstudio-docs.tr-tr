@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165786"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek yol: Eşleşen Küme Ayraçlarını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
 4. Giriş işaretini bir açık ayraç önce getirdiğinizde, küme ayracı hem de eşleşen kapatma ayracı vurgulanmış olmalıdır. Yalnızca kapatma küme ayracından sonra işaretçiyi getirdiğinizde, küme ayracı hem de eşleşen açık küme ayracı vurgulanmış olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

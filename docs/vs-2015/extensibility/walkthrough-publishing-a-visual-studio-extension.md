@@ -12,11 +12,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201977"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio Uzantısı Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayım
 
 6. İçinde **1. adım: Uzantı türü**seçin **aracı** ve ardından **sonraki**.
 
-7. İçinde **2. adım: Karşıya yükleme**, doğrudan Visual Studio Galeri'ye yükleyin ya da yalnızca kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte **my aracı yüklemek istediğiniz**. **Denetiminizi seçin** kutusu görüntülenir. Tıklayın **Gözat** ve ardından TestPublish.vsix projenin \bin\Release klasörü seçin. **İleri**'ye tıklayın.
+7. İçinde **2. adım: Karşıya yükleme**, doğrudan Visual Studio Galeri'ye yükleyin ya da yalnızca kendi Web sitesine bir bağlantı eklemek seçebilirsiniz. Bu örnekte **my aracı yüklemek istediğiniz**. **Denetiminizi seçin** kutusu görüntülenir. Tıklayın **Gözat** ve ardından TestPublish.vsix projenin \bin\Release klasörü seçin.           **İleri**'ye tıklayın.
 
 8. İçinde **3. adım: Temel bilgileri**, source.extension.vsixmanifest dosyası alanları görüntülenir. Uygun bir seçin **kategori** ve ekleme **etiketleri** uzantınızı bulmalarına yardımcı olmak için. Daha ayrıntılı Özet ve Açıklama (Açıklama 280 en az karakter uzunluğunda olmalıdır) eklemek isteyebilirsiniz. Bırakın **uzantı türü** olarak **Microsoft uzantısı** ve **maliyet kategorisi** olarak **deneme**.
 

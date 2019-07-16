@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158490"
 ---
 # <a name="expressions-in-the-debugger"></a>Hata Ayıklayıcıdaki İfadeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ int main()
   
   Hata ayıklayıcı iç işlevleri da değerlendirilirken ifadeleri daha kullanışlı hale getirebilirsiniz. Örneğin, `strncmp(str, “asd”)` bir kesme noktası koşulu yazmak kolaydır `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
-|Alan|İç işlevleri|  
+|Alan|İç işlevler|  
 |----------|-------------------------|  
 |**Dize uzunluğu**|strlen, wcslen, strnlen, wcsnlen|  
 |**Dize karşılaştırması**|strcmp wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  

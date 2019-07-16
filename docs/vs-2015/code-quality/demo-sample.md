@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201431"
 ---
 # <a name="demo-sample"></a>Gösterim Örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,13 +56,13 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
   
 3. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
   
-4. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
+4. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Üst bilgi ve kaynak dosya CodeDefects projeye ekleyin.  
   
 1. Çözüm Gezgini'nde **CodeDefects**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
   
-2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod**ve ardından **üst bilgi dosyası (.h)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod**ve ardından **üst bilgi dosyası (.h)** .  
   
 3. İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.  
   
@@ -170,13 +170,13 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
   
 6. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
   
-7. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
+7. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Kaynak dosya ve üstbilgi dosyası ek açıklamaları projeye ekleyin.  
   
 1. Çözüm Gezgini'nde **ek açıklamaları**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
   
-2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **üst bilgi dosyası (.h)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **üst bilgi dosyası (.h)** .  
   
 3. İçinde **adı** kutusuna **annotations.h** ve ardından **Ekle**.  
   

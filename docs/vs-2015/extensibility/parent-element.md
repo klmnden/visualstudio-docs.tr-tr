@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194083"
 ---
 # <a name="parent-element"></a>Üst Öğe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Bir düğme veya birleşik giriş kutusunun üst yalnızca bir grup olabilir. Bi
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|GUID|Gerekli. GUID GUID/kimliği komut tanımlayıcısı.|  
+|guid|Gerekli. GUID GUID/kimliği komut tanımlayıcısı.|  
 |kimlik|Gerekli. Kimliği GUID/kimliği komut tanımlayıcısı.|  
   
 ### <a name="child-elements"></a>Alt Öğeler  
- Hiçbiri  
+ Yok.  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   

@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184863"
 ---
 # <a name="adding-a-toolbar"></a>Araç Çubuğu Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
   
 6. Araç çubukları listesini almak için Visual Studio menü çubuğunun sağ tıklayın. Seçin **Test araç**.  
   
-7. Şimdi, simge dosyaları simge Bul sağındaki araç görmeniz gerekir. Simgeye tıkladığında bildiren bir ileti kutusu görmeniz gerekir **ToolbarTestCommandPackage. İçinde IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Şimdi, simge dosyaları simge Bul sağındaki araç görmeniz gerekir. Simgeye tıkladığında bildiren bir ileti kutusu görmeniz gerekir **ToolbarTestCommandPackage. İçinde IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komutlar, Menüler ve Araç Çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

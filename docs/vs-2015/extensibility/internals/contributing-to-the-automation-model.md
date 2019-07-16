@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196991"
 ---
 # <a name="contributing-to-the-automation-model"></a>Otomasyon Modeline Katkıda Bulunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio ortamı özelleştirmek için Otomasyon arabirimlerini sunmaktadı
  [Kod için Otomasyon Sağlama](../../extensibility/internals/providing-automation-for-code.md)  
  Kodunuz için bir otomasyon modeli oluşturma gerekli olmadığını açıklar. Ancak, kod modelleri ayrıntılı bilgileri sağlar. Bu konuda bir bağlantı sağlanır.  
   
- [Nasıl yapılır: Windows için Otomasyon sağlar](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Nasıl yapılır: Windows için Otomasyon Sağlama](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Otomasyon sağlama hakkında fikir Otomasyon nesneleri bir penceresinde kullanılabilir hale getirmek istediğiniz ve ortam hazır Otomasyon nesnesi zaten sağlamaz olduğu açıklanmaktadır. Araç pencereleri ve belge pencereleri için Otomasyon açıklanır.  
   
  [Otomasyon Modelini Kullanma](../../extensibility/internals/using-the-automation-model.md)  

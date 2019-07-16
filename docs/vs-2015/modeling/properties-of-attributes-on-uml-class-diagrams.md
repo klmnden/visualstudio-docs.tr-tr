@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154857"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki özniteliklerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *öznitelikleri* sınıfları 
 |    **Yaprak**    |    False     |                                                                                                                                                                    TRUE ise, bu öznitelik şemadaki türetilmiş türlerine izin vermek üzere tasarlanmamıştır.                                                                                                                                                                     |
 |  **Türetilmiş**   |    False     |                                                                                                              TRUE ise, bu öznitelik diğer öznitelikleri hesaplanır. Örneğin, çapraz, genişlik ve yükseklik hesaplanır. Ayrıntılar yazılmalıdır **açıklama** veya bağlı bir açıklama.                                                                                                              |
 |  **Açıklama**  |   (boş)    |                                                                                                                                                                        Genel notları veya öznitelik değerleri kısıtlamaları tanımlamak için.                                                                                                                                                                        |
-| **Çokluk**  |      1.       | **1** -bu öznitelik belirtilen türe ait tek bir değere sahip.<br /><br /> **0..1** -bu öznitelik değeri olabilir `null`.<br /><br /> **\\**\* -Bu özniteliğin değeri, değerlerin bir koleksiyonudur.<br /><br /> **1..\\**  \* -bu özniteliğin değeri en az bir değer içeren bir koleksiyondur.<br /><br /> *n* **...** *m* -bu özniteliğin değeri arasında içeren bir koleksiyondur *n* ve *m* değerleri. |
+| **Çokluk**  |      1\.       | **1** -bu öznitelik belirtilen türe ait tek bir değere sahip.<br /><br /> **0..1** -bu öznitelik değeri olabilir `null`.<br /><br /> **\\** \* -Bu özniteliğin değeri, değerlerin bir koleksiyonudur.<br /><br /> **1..\\**  \* -bu özniteliğin değeri en az bir değer içeren bir koleksiyondur.<br /><br /> *n* **...** *m* -bu özniteliğin değeri arasında içeren bir koleksiyondur *n* ve *m* değerleri. |
 |  **Sıralı**   |    False     |                                                                                                                                                                    TRUE ise koleksiyon sıralı bir liste oluşturur. İçin **Çoğulluk** 1'den fazla.                                                                                                                                                                     |
 |   **Benzersiz**   |    False     |                                                                                                                                                                TRUE ise, koleksiyonda yinelenen değerler yoktur. İçin **Çoğulluk** 1'den fazla.                                                                                                                                                                |
 

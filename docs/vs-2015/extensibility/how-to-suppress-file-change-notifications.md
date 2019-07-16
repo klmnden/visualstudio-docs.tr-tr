@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204074"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Nasıl yapılır: Dosya değişiklik bildirimlerini gösterme
+# <a name="how-to-suppress-file-change-notifications"></a>Nasıl yapılır: Dosya Değişiklik Bildirimlerini Gizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Metin arabelleğini temsil eden bir fiziksel dosya değiştirildiğinde, iletinin bir iletişim kutusu görüntüler **aşağıdaki öğelerdeki değişiklikleri kaydetmek istiyor musunuz?** Bu dosya değişikliği bildirimi bilinir. Birçok değişiklik dosyaya kullanacaksanız, ancak bu iletişim kutusunu tekrar tekrar görüntüleme hızlı bir şekilde rahatsız edici hale gelebilir.  

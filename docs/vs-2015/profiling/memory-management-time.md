@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48cbdd523f4527af84c52366a439a18330e1828c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157343"
 ---
 # <a name="memory-management-time"></a>Bellek Yönetimi Zamanı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

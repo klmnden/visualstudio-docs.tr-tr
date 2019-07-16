@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156525"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Uzak bilgisayara erişilmeye çalışılırken DCOM hatası oluştu. Erişim reddedildi.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Uzaktan hata ayıklama, aşağıdaki durumlarda yerel ve uzak bilgisayarlar aras
   
 - Hata ayıklayıcı kümesine **yerel uyumluluk modu** veya **yönetilen uyumluluk modu** iade **Araçlar / Seçenekler / hata ayıklama** sayfası  
   
-- Yönetilen C++ hata ayıklama (C + +/ CLI) kodu.  
+- Hata ayıklama yönetilen C++ (C++/CLI) kodu.  
   
 - Visual Studio 2013'te zaman **yerel Düzenle ve Devam Et'i etkinleştir** iade **Araçlar / Seçenekler / hata ayıklama** sayfası  
   

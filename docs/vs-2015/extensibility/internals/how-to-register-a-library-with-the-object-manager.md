@@ -15,11 +15,11 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162034"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Nasıl yapılır: Nesne Yöneticisine Kitaplık Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -169,4 +169,4 @@ Sembol tarama araçlarını, gibi **sınıf görünümü**, **Nesne Tarayıcıs�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski dil hizmeti genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Sembol tarama araçlarını destekleme](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Nasıl yapılır: Nesne yöneticisine kitaplık tarafından sağlanan sembollerin listelerini kullanıma sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Nasıl yapılır: Kitaplık Tarafından Sağlanan Sembollerin Listelerini Nesne Yöneticisine Sunma](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
