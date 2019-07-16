@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Bulut abonelikleri için faturalama soruları.
-ms.openlocfilehash: 54fa25cfe7387f04797335f544f0ba647fd0a8e7
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 21e32bc6fd1517b2c6724e97863cf70734caac80
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785108"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891105"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio bulut abonelikleri faturalandırma ile ilgili SSS
 
@@ -42,7 +42,7 @@ Y: ' Ye ilişkin doğru yetkilere sahip olup olmadığınızı belirlemeniz içi
 (Faturalandırma hesabınız) bir Azure aboneliği seçin, oturum açma şu anda bağlı olan Azure abonelikleri sunulan listesinden gerekir.
 Azure abonelik adı ("Kullandıkça Öde", "Kurumsal Anlaşma", vb.) fatura hesap türü için varsayılan olarak, genellikle Azure aboneliği, Kurumsal anlaşmanın parçası ise açık olmasıdır.
 
-Ziyaret etmek başka bir yaklaşım çalışmaktır [Azure Enterprise Portal](http://ea.azure.com).  Başarıyla ulaşabilirsiniz, ardından zaten kuruluş yöneticisi ya da hesap sahibi rolü vardır. Yalnızca hesap sahipleri, Kurumsal Anlaşma yeni Azure faturalandırma hesapları ayarlayabilirsiniz. Azure Enterprise Portal erişemiyorsanız, sonra Lütfen, kuruluş yöneticisinin kim olduğunu bulmak için kuruluşunuz içinde sorgulamak ve Azure Enterprise Portal içinde bir hesap sahibi olarak eklemek için söz konusu kişinin isteyin.  Bu kişi bulamıyor sağlayıcıysanız şunu yapabilirsiniz [bir destek bileti gönderin](https://aka.ms/AzureEntSupport) ve kişi bilgilerini isteyin.  Destek bileti için kuruluşunuzun adını ve Kurumsal Anlaşma kayıt numaranızı gerekir.
+Ziyaret etmek başka bir yaklaşım çalışmaktır [Azure Enterprise Portal](https://ea.azure.com).  Başarıyla ulaşabilirsiniz, ardından zaten kuruluş yöneticisi ya da hesap sahibi rolü vardır. Yalnızca hesap sahipleri, Kurumsal Anlaşma yeni Azure faturalandırma hesapları ayarlayabilirsiniz. Azure Enterprise Portal erişemiyorsanız, sonra Lütfen, kuruluş yöneticisinin kim olduğunu bulmak için kuruluşunuz içinde sorgulamak ve Azure Enterprise Portal içinde bir hesap sahibi olarak eklemek için söz konusu kişinin isteyin.  Bu kişi bulamıyor sağlayıcıysanız şunu yapabilirsiniz [bir destek bileti gönderin](https://aka.ms/AzureEntSupport) ve kişi bilgilerini isteyin.  Destek bileti için kuruluşunuzun adını ve Kurumsal Anlaşma kayıt numaranızı gerekir.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>S: Azure parasal taahhüt fonlarını Kurumsal Anlaşmamdan Visual Studio bulut abonelikleri satın alma için kullanabilir miyim?
 
