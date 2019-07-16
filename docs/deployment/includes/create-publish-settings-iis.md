@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904466"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143532"
 ---
 
 1. Güncelleştirilmiş yapılandırma seçenekleri kullanıcı Arabiriminde göstermek için IIS Yönetim Konsolu kapatıp yeniden açın.

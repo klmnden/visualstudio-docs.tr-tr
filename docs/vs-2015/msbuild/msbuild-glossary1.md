@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154833"
 ---
 # <a name="msbuild-glossary"></a>MSBuild sözlüğü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini açıklamak için
 
  Bkz: *proje, alt*.
 
- Koşul
+ condition
 
  Birçok MSBuild öğeleri koşullu olarak tanımlanabilir; diğer bir deyişle, `Condition` özniteliği öğesinde görünür. Koşullu öğelerin içeriği, koşul olarak değerlendirilmedikçe yoksayılır `true`. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).
 
@@ -102,7 +102,7 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini açıklamak için
 
  Birçok farklı CLR'nin ve MSBuild ve Visual Studio'dan çerçeveleri hedeflemek bir derleme veya uygulama projesi için yeteneği.
 
- Profili
+ profile
 
  Framework'ün tamamını bir alt kümesi. Bu, bir makineye indirilmesi gereken miktarı en aza indirmek için kullanılır.
 
@@ -170,7 +170,7 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini açıklamak için
 
  Bkz: *özelliği, kayıt defteri*.
 
- hedef
+ target
 
  Bir hedef, görevler, belirli bir sıraya göre gruplandıran ve proje dosyasının bölümlerini derleme işlemine giriş noktaları olarak kullanıma sunar. Daha fazla bilgi için [hedefleri](../msbuild/msbuild-targets.md).
 

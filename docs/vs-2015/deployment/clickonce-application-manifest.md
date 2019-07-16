@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157423"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Uygulama Bildirimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi kull
   
 |Öğe|Açıklama|Öznitelikler|  
 |-------------|-----------------|----------------|  
-|[\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md)|Gerekli. En üst düzey öğe.|`manifestVersion`|  
-|[\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-application.md)|Gerekli. Birincil derlemenin tanımlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo > öğesi](../deployment/trustinfo-element-clickonce-application.md)|Uygulama güvenlik gereksinimlerini tanımlar.|Hiçbiri|  
-|[\<entryPoint > öğesi](../deployment/entrypoint-element-clickonce-application.md)|Gerekli. Uygulama kodu giriş noktasını tanımlar.|`name`|  
-|[\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)|Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar.|Hiçbiri|  
-|[\<Dosya > öğesi](../deployment/file-element-clickonce-application.md)|İsteğe bağlı. Uygulama tarafından kullanılan her nonassembly dosyayı tanımlar. Dosya ile ilgili Bileşen Nesne Modeli (COM) yalıtım veriler içerebilir.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation > öğesi](../deployment/fileassociation-element-clickonce-application.md)|İsteğe bağlı. Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<assembly> Öğesi](../deployment/assembly-element-clickonce-application.md)|Gerekli. En üst düzey öğe.|`manifestVersion`|  
+|[\<assemblyIdentity> Öğesi](../deployment/assemblyidentity-element-clickonce-application.md)|Gerekli. Birincil derlemenin tanımlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo> Öğesi](../deployment/trustinfo-element-clickonce-application.md)|Uygulama güvenlik gereksinimlerini tanımlar.|None|  
+|[\<entryPoint> Öğesi](../deployment/entrypoint-element-clickonce-application.md)|Gerekli. Uygulama kodu giriş noktasını tanımlar.|`name`|  
+|[\<dependency> Öğesi](../deployment/dependency-element-clickonce-application.md)|Gerekli. Uygulamayı çalıştırmak için gereken her bir bağımlılığın tanımlar. İsteğe bağlı olarak önceden yüklenmiş gereken bütünleştirilmiş kodları tanımlar.|None|  
+|[\<file> Öğesi](../deployment/file-element-clickonce-application.md)|İsteğe bağlı. Uygulama tarafından kullanılan her nonassembly dosyayı tanımlar. Dosya ile ilgili Bileşen Nesne Modeli (COM) yalıtım veriler içerebilir.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation> Öğesi](../deployment/fileassociation-element-clickonce-application.md)|İsteğe bağlı. Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Açıklamalar  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Kullanarak dağıtılmış bir uygulamada uygulama bildirim dosyasını tanımlayan [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Hakkında daha fazla bilgi için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bkz: [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md).  

@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149425"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>İzlenecek yol: Tasarım zamanında hata ayıklama
+# <a name="walkthrough-debugging-at-design-time"></a>İzlenecek yol: Tasarım Zamanında Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio kullanabileceğiniz **hemen** uygulamanız çalışmıyorken bir işlevi veya alt yordamı yürütmek için penceresi. İşlev veya alt yordam bir kesme noktası içeriyorsa, Visual Studio uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Bu özellik tasarım zamanında hata ayıklama çağrılır.  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185114"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend'de Kalem aracı değiştirici tuşları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ Bir yol ile oluştururken değiştirmek için kullanabileceğiniz kısayolları 
   
 |Bu işlemi yapma|Bunu yapın|İşaretçi|  
 |-----------------------|-------------|-------------|  
-|Düz çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Kalemin|  
-|Bir eğik çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın ve ardından fare düğmesini bırakmadan önce tutamaçların ayarlamak için sürükleyin|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Kalemin|  
+|Düz çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Kalemin|  
+|Bir eğik çizgi kesimi başlatmak için bir noktası oluştur|Yeni noktası oluşturmak için tıklayın ve ardından fare düğmesini bırakmadan önce tutamaçların ayarlamak için sürükleyin|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Kalemin|  
 |Keskin köşe yapmanızı sağlayan yumuşak kısıtlama olmadan son eğimi Ayarla|Yeni noktası oluşturmak için tıklayın ve fare düğmesini bırakmadan önce ALT tuşuna basın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  
 |Tanjant uç noktaları keskin köşe yapmanıza olanak sağlayan bağımsız olarak çalışır, böylece son tanjantını Böl|Yeni noktası oluşturun ve ardından ALT tuşunu basılı tutun ve fare düğmesini bırakmadan önce sürükleyin için tıklayın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  
 |15 derecelik artışlarla yeni nokta etrafında Eğim bitiş noktasını Taşı|Yeni noktası oluşturun ve sonra SHIFT + ALT tuşunu basılı tutun ve fare düğmesini bırakmadan önce sürükleyin için tıklayın|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Kalem işaretçi Ayarla|  

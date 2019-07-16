@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f525f4b31a3535f6ea7b89d0443402240365cc7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159444"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: Mipmap'ler İçeren Dokuyu Dışarı Aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası olarak bir kaynak görüntüden mipmap'leri oluşturabilirsiniz. Ne zaman değil her MIP düzeyinin görüntü içeriğini el ile belirtmeniz gerekir — bazı efektler elde etmek için yapabileceğiniz gibi — derleme zamanında mipmap oluşturma sağlar mipmap içeriğinin asla eşitleme dışı olur ve mipmap'leri oluşturmanın performans maliyetini ortadan kaldırır Çalışma zamanında.  
@@ -36,7 +36,7 @@ Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası ol
   
 2. Görüntü içeriği ardışık düzeni tarafından işlenir böylece yeni oluşturduğunuz doku dosyasını yapılandırarak. İçinde **Çözüm Gezgini**, yeni oluşturduğunuz doku dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Üzerinde **yapılandırma özellikleri**, **genel** sayfasında **öğesi türü** özelliğini **görüntü içeriği ardışık düzeni**. Emin olun **içerik** özelliği **Evet** ve **yapıdan hariç tut** ayarlanır **Hayır**ve ardından  **Uygulama** düğmesi. **Görüntü içeriği ardışık düzeni** yapılandırma özellik sayfası görüntülenir.  
   
-3. Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri**, **görüntü içeriği ardışık düzeni**, **genel** sayfasında **Mips üret** özelliğini**Evet (/ generatemips)**.  
+3. Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırın. Üzerinde **yapılandırma özellikleri**, **görüntü içeriği ardışık düzeni**, **genel** sayfasında **Mips üret** özelliğini**Evet (/ generatemips)** .  
   
 4. Seçin **Tamam** düğmesi.  
   

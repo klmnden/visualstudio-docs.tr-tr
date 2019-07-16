@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148305"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme
 ## <a name="which-mechanism-should-i-use"></a>Hangi mekanizması kullanmalıyım?  
  Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikleriyle karşılaştırmanıza yardımcı olur.  
   
-|Özellik|SDK desteği|SDK notları|NuGet Support|NuGet notları|  
+|Özellik|SDK desteği|SDK notları|NuGet desteği|NuGet notları|  
 |-------------|-----------------|---------------|-------------------|-----------------|  
 |Bir varlığı mekanizması başvuruyor ve tüm dosyaları ve işlevsellik sonra kullanılabilir.|Y|Kullanarak bir SDK'sı ekleme **başvuru Yöneticisi** iletişim kutusunu ve tüm dosyaları ve işlevleri geliştirme iş akışı sırasında kullanılabilir.|Y||  
 |MSBuild, derlemeleri ve Windows meta veri (.winmd) dosyalarını otomatik olarak kullanır.|Y|SDK'de başvuruların derleyicinin otomatik olarak geçirilir.|Y||  

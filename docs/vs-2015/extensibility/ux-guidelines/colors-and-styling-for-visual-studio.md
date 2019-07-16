@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177041"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Yardımcı sınıflar ve yöntemler yönetilen kod için
  Yönetilen kod için kabuğun yönetilen paket çerçevesini kitaplığı (Microsoft.VisualStudio.Shell.12.0.dll) birkaç teması renkleri kullanımını etkinleştirme yardımcı sınıfları içerir.
 
- Yardımcı yöntemler de **Microsoft.VisualStudio.Shell.VsColors** MPF sınıfında dahil **GetThemedGDIColor()** ve **GetThemedWPFColor()**. Bu yardımcı yöntemler bir tema giriş olarak System.Drawing.Color veya System.Windows.Media.Color, WinForms ya da WPF kullanıcı Arabirimi kullanılacak renk değeri döndürür.
+ Yardımcı yöntemler de **Microsoft.VisualStudio.Shell.VsColors** MPF sınıfında dahil **GetThemedGDIColor()** ve **GetThemedWPFColor()** . Bu yardımcı yöntemler bir tema giriş olarak System.Drawing.Color veya System.Windows.Media.Color, WinForms ya da WPF kullanıcı Arabirimi kullanılacak renk değeri döndürür.
 
 ```
 IVsUIShell5 shell5;

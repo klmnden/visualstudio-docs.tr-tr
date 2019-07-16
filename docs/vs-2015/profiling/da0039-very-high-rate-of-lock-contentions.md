@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156429"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Çok Yüksek Oranda Kilit çakışması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio ile ilgili en son belgeler için bkz. [DA0039: Çok yüksek oranda
 |Kural Kimliği|DA0039|  
 |Kategori|.NET framework kullanımı|  
 |Profil oluşturma yöntemleri|Örnekleme<br /><br /> İzleme<br /><br /> .NET bellek|  
-|İleti|Çok yüksek oranda .NET kilit çakışması gerçekleşiyor. Lütfen eşzamanlılık profilini çalıştırarak bu kilit çakışmasının nedenini araştırın.|  
+|`Message`|Çok yüksek oranda .NET kilit çakışması gerçekleşiyor. Lütfen eşzamanlılık profilini çalıştırarak bu kilit çakışmasının nedenini araştırın.|  
 |Kural türü|Uyarı|  
   
  Örnekleme, .NET bellek ve kaynak çekişmesi yöntemleri kullanılarak profili, bu kural tetiklemek için en az 25 örnekleri toplamanız gerekir.  

@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 06f1a3f7146125e59d02efc72a4d4fc9ab33be39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184383"
 ---
 # <a name="command-code-enumerator"></a>Komut Kodu Numaralandırıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

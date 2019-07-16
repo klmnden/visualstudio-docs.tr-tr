@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151191"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
 1. Visual Studio'yu açın. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2. İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++**, **Çoklu Platform**ve ardından  **OpenGLES uygulaması (Android, iOS)** şablonu.  
+2. İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++** , **Çoklu Platform**ve ardından  **OpenGLES uygulaması (Android, iOS)** şablonu.  
   
 3. Uygulama gibi bir ad verin `MyOpenGLESApp`ve ardından **Tamam**.  
   

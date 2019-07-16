@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Hata Ayıklayıcı Kaynak Kodu veya Ayrıştırılmış Kodu Görüntüleyemez
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Belleği Dolan Hata Ayıklayıcı Hizmetleri
+              href: error-debugger-services-no-memory.md
             - name: Hata Ayıklama Oturumu İçin Yürütülebilir iletişim kutusu
               href: executable-for-debugging-session-dialog-box.md
             - name: Düzenle ve Devam Et iletişim kutusu (C++)

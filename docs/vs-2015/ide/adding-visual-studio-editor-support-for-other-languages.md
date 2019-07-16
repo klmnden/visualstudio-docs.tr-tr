@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148241"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,13 +74,13 @@ Okuma ve farklı bir bilgisayara dil arasında gezinme Visual Studio Düzenleyic
 
 |Klasör adı|Açıklama|
 |-----------------|-----------------|
-|\\*\<dil adı >*|Dil klasörü. Değiştirin  *\<dil adı >* dil adı. Örneğin, **\Matlab**.|
+|\\ *\<dil adı >*|Dil klasörü. Değiştirin  *\<dil adı >* dil adı. Örneğin, **\Matlab**.|
 |\Syntaxes|Dilbilgisi klasör. Dil dilbilgisi .json dosyaları gibi içeren **Matlab.json**.|
 |\Snippets|Kod parçacıklarının klasör. Dili için kod parçacıkları içerir.|
 
- Windows % USERPROFILE % yolunu Çözümler: c:\Users\\*\<kullanıcı adı >*. Uzantılar klasörünün sisteminizde mevcut değilse, oluşturmanız gerekir. Klasör zaten varsa, gizlenir.
+ Windows % USERPROFILE % yolunu Çözümler: c:\Users\\ *\<kullanıcı adı >* . Uzantılar klasörünün sisteminizde mevcut değilse, oluşturmanız gerekir. Klasör zaten varsa, gizlenir.
 
  TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz. [TextMate – dil dilbilgisi giriş: HTML kaynak kod söz dizimi vurgulama ekleme katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [bir Textmate paketi için bir dil dilbilgisi ve özel tema oluşturma hakkında notlar](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio 2013'ün Git geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md) [izlenecek yol: Deyim tamamlamayı görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013'ün Git geliştirmeleri](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md) [izlenecek yol: Deyim Tamamlamayı Görüntüleme](../extensibility/walkthrough-displaying-statement-completion.md)

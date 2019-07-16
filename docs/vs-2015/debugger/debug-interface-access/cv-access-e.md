@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce5997555b37cf5ab30f091e7124b5025284c0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164379"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ typedef enum CV_access_e { 
 } CV_access_e;  
 ```  
   
-## <a name="elements"></a>Öğeleri  
+## <a name="elements"></a>Öğeler  
  CV_private  
  Üye, özel erişimi vardır.  
   

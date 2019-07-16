@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176565"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Nasıl yapılır: Hata ayıklama için bir .NET Framework sürümü belirtme
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Nasıl yapılır: Hata Ayıklama İçin .NET Framework Sürümünü Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] Hata ayıklayıcı, hata ayıklama Microsoft eski sürümlerini destekler [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] geçerli sürümü yanı sıra. Visual Studio'dan bir uygulamayı başlatırsanız, hata ayıklayıcı her zaman doğru sürümünü tanımlayabilirsiniz [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ayıkladığınız uygulama için. Uygulama zaten çalışıyor ve kullanırsanız **ekleme**, hata ayıklayıcı her zaman daha eski bir sürümünü belirlemek mümkün olmayabilir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Böyle bir durumda bildiren bir hata iletisi alırsınız,  

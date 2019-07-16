@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185248"
 ---
 # <a name="directory-status-code-enumerator"></a>Dizin Durumu Kod Numaralandırıcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

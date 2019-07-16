@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150761"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild Özel Karakterleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59650804"
 |@|%40|Başvuru öğesi listeleri|  
 |'|%27|Koşullar ve diğer ifadeler|  
 |;|% 3B|Liste ayırıcı|  
-|?|%3F|Dosya adlarında joker karakter `Include` ve `Exclude` öznitelikleri|  
+|?|% 3F|Dosya adlarında joker karakter `Include` ve `Exclude` öznitelikleri|  
 |*|%2A|Dosya adlarında kullanmak için joker karakter `Include` ve `Exclude` öznitelikleri|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

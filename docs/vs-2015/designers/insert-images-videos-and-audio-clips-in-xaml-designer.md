@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159420"
 ---
-# <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML Tasarımcısı’nda görüntü, video ve ses klipleri ekleme
+# <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>XAML Tasarımcısı’nda resim, video ve ses klipleri ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Görüntü, video ve ses klipleri visual geçirmeye itraz et uygulamanıza ekleyin.  

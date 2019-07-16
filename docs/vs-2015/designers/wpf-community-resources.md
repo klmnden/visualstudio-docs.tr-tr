@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63a4e207172d4f726091691985e7d1f84bb2e708
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187452"
 ---
-# <a name="wpf-community-resources"></a>WPF topluluk kaynakları
+# <a name="wpf-community-resources"></a>WPF Topluluk Kaynakları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft Topluluk kaynakları hakkında bilgi edinin, tartışın ve üzerinde Windows Presentation Foundation (WPF takım üyeleri ve topluluk liderleriyle, forumlar ve Microsoft Connect geri bildirim tarafından üretilen blogları dahil olmak üzere WPF), geri bildirim sağlamak için çeşitli kullanıma sunar. Merkezi.

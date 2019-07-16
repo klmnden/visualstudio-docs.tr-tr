@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: decb17be7caa4ea0a300ddb4378ac0ad11520109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145864"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entity Framework 6 ve Windows Presentation Foundation temel "veriler üzerinden formlar" uygulama oluşturma işlemi gösterilmektedir. Temel veri bağlama ile ana öğe-ayrıntı görünümü nasıl gösterir ve ayrıca bir özel "bağlama"Sonrakine Taşı"için düğmeleriyle"Taşıma "Başlangıca Taşı" önceki,""taşıma sona erdirmek "Gezgin" sahip "Güncelleştir" ve "Sil"  

@@ -17,13 +17,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178775"
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) koleksiyon ilişkilendirmesini Görselleştirme
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>Nasıl yapılır: Koleksiyon İlişkilendirmesini Görselleştirme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Özellikleri ve diğer türler alanlar, sınıf diyagramı üzerinde bir koleksiyon ilişkilendirmesi olarak görüntülenebilir. Alanın türünü bağlama sahip olan sınıfı bir satır olarak bir alan veya özellik görüntüleyen normal bir ilişkilendirme, koleksiyon ilişkilendirmesini bağlama toplanan türüne sahip olan sınıfı bir satır olarak görüntülenir.  

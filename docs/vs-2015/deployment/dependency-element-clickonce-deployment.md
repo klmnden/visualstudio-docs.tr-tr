@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187777"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;bağımlılık&gt; öğesi (ClickOnce dağıtımı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Sürümü yüklemek için uygulama ve uygulama bildiriminin konumunu tanımlar.
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için güvenlik denetimi olarak kullanır. Varsa `hash` öğesi dahil değildir, bu denetimi gerçekleştirilmeyecek. Bu nedenle, atlama `hash` öğesi önerilmez.  
   
-## <a name="dsigtransforms"></a>dsig:Transforms  
+## <a name="dsigtransforms"></a>dsig:TRANSFORMS  
  `dsig:Transforms` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
@@ -185,4 +185,4 @@ Sürümü yüklemek için uygulama ve uygulama bildiriminin konumunu tanımlar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
- [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-application.md)
+ [\<dependency> Öğesi](../deployment/dependency-element-clickonce-application.md)

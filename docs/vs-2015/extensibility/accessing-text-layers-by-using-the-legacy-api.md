@@ -11,13 +11,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 975e8624a6ffbfe0c5ae7544f2b978487465e34e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148017"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Eski API'yi kullanarak erişen metin katmanları
+# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Eski API'yi Kullanarak Metin Katmanlarına Erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Metin katmanı, genellikle bazı yönlerini metin düzenini kapsüller. Örneğin, "işlevi--bir zamanda" katman metin önce ve sonra giriş işaretinin (ekleme noktası metni) içeren bir işlev gizliyor.  

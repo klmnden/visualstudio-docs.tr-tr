@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157864"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Nasıl yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] bir kullanıcı hesabı altında çalışan işlemi (aspnet_wp.exe veya w3wp.exe) aşağıdaki adımları izleyin.  
@@ -77,7 +77,7 @@ Bilgisayarınızı çalıştırabileceğiniz şekilde ayarlamak için [!INCLUDE[
   
     **Kullanıcı seç, bilgisayar veya Grup iletişim kutusunda** görünür.  
   
-10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: DomainName\UserName.  
+10. Kullanıcı adını yazın **Seçilecek nesne adını girin** kutusuna ve ardından **Tamam**. Kullanıcı adı şu biçimde olmalıdır: Etki alanı\kullanıcı adı.  
   
 11. İçinde **ASP.NET dosyaları için izin girdisi** iletişim kutusunda, kullanıcıya vermek **tam denetim**ve ardından **Tamam** kapatmak için **geçici ASP için giriş .NET dosyaları** iletişim kutusu.  
   

@@ -5,16 +5,16 @@ description: Klasik Windows tabanlı uygulamalar oluşturmak için Visual Studio
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4e23aeb5e6d60a36d1f69ffb54ec75aa1770ea4
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968446"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176880"
 ---
 ## <a name="azure-development-build-tools"></a>Azure geliştirme derleme araçları
 
@@ -28,13 +28,13 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation derleme araçları | 16.0.28516.191 | Gerekli
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 16.0.28516.191 | Gerekli
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
@@ -77,7 +77,7 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 16.0.28516.191 | Önerilen
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Önerilen
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server veri araçları - derleme araçları | 16.0.28315.86 | Önerilen
 
 ## <a name="net-desktop-build-tools"></a>.NET Masaüstü derleme araçları
@@ -93,7 +93,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce derleme araçları | 16.0.28625.61 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
@@ -145,7 +145,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.2 | .NET core 2.2 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET core derleme araçları | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 
 ## <a name="nodejs-build-tools"></a>Node.js derleme araçları
 
@@ -158,7 +158,7 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme g
 Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild desteği | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 
 ## <a name="officesharepoint-build-tools"></a>Office/SharePoint derleme araçları
 
@@ -178,9 +178,9 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pac
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
+Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.1.28829.92 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint geliştirme derleme araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation derleme araçları | 16.0.28315.86 | Gerekli
@@ -212,17 +212,17 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Component.NetFX.Native | .NET Yerel | 16.0.28315.86 | Gerekli
-Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.0.28625.61 | Gerekli
 Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM derleme araçlarını (v14.20) | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Evrensel Windows platformu derleme önkoşulları | 16.0.28621.142 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 - VS 2019 C++ ARM derleme araçlarını (v14.21) | 16.1.28829.92 | Gerekli
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Evrensel Windows platformu derleme önkoşulları | 16.1.28811.260 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | İsteğe Bağlı
 
 ## <a name="c-build-tools"></a>C++ derleme araçları
 
@@ -239,7 +239,7 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 yeniden dağıt�
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Test Araçları temel özellikleri - derleme araçları | 16.0.28315.86 | Önerilen
 Microsoft.VisualStudio.Component.VC.CMake.Project | Windows için C++ CMake araçları | 16.0.28625.61 | Önerilen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Önerilen
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Önerilen
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 16.0.28625.61 | İsteğe Bağlı
@@ -250,13 +250,14 @@ Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme 
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATL | V142 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | V142 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ CLI v142 derleme araçları desteği | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ CLI v142 derleme Araçları (14.21) desteği | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.CoreIde | C++ temel özellikler | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | C++ modülleri v142 için derleme Araçları (x64/x86 – Deneysel) | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ x64/x86 derleme Araçları (v14.16) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 derleme araçlarını (v14.16) | 16.1.28829.92 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ temel masaüstü özellikleri | 16.0.28315.86 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | C++Temel masaüstü özellikleri | 16.1.28916.169 | İsteğe Bağlı
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio uzantısı geliştirme
 
@@ -272,16 +273,16 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK derleme araçları temel | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio uzantı geliştirme önkoşulları | 16.0.28528.71 | Gerekli
 Component.Dotfuscator | PreEmptive koruma - Dotfuscator | 16.0.28528.71 | İsteğe Bağlı
-Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalışma zamanı için v142 derleme araçları | 16.1.28811.260 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATL | V142 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | V142 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.21) | 16.1.28829.92 | İsteğe Bağlı
 
 ## <a name="web-development-build-tools"></a>Web geliştirme derleme araçları
 
@@ -295,9 +296,9 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.TypeScript.3.3 | 3.3 TypeScript SDK'sı | 16.0.28625.61 | Gerekli
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.1.28811.260 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
+Microsoft.VisualStudio.Component.TypeScript.3.4 | 3\.4 TypeScript SDK'sı | 16.0.28829.92 | Gerekli
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web geliştirme derleme araçları | 16.0.28516.191 | Gerekli
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce derleme araçları | 16.0.28625.61 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
@@ -340,10 +341,10 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.1.28829.92 | Gerekli
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Component.Android.SDK27 | Android SDK kurulumu (API düzeyi 27) | 16.0.28517.75 | İsteğe Bağlı
-Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.0.28625.61 | İsteğe Bağlı
+Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.1.28811.260 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Kullanıcıyla bağlantılı olmayan bileşenleri
 
@@ -352,6 +353,25 @@ Bu, her türlü iş yükü ile dahil edilmez, ancak tek bir bileşeni olarak se�
 Bileşen kimliği | Ad | Sürüm
 --- | --- | ---
 Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0-1.1 geliştirme araçları | 16.0.28621.142
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 - VS 2019 C++ ARM64 derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL | C++ATL v14.20 v142 için derleme araçlarını (x86 & x64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | C++ATL v14.20 v142 için derleme araçlarını (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM.Spectre | C++ATL v14.20 v142 için derleme araçlarını Spectre risk azaltma işlemleri (ARM) ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | C++ATL v14.20 v142 için derleme araçlarını (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | C++ATL v14.20 v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | C++ATL v14.20 v142 için derleme araçlarını (x86 & x64) Spectre azaltmaları ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | C++/ CLI v142 derleme Araçları (14.20) desteği | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC | C++MFC v14.20 v142 için derleme araçlarını (x86 & x64) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | C++MFC v14.20 v142 için derleme araçlarını (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | C++MFC v14.20 v142 için derleme araçlarını Spectre risk azaltma işlemleri (ARM) ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | C++MFC v14.20 v142 için derleme araçlarını (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | C++MFC v14.20 v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | C++MFC v14.20 v142 için derleme araçlarını (x86 & x64) Spectre azaltmaları ile | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86 derleme araçlarını (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.ATL.ARM | V142 derleme Araçları (ARM) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | V142 derleme araçları için Spectre azaltmaları (ARM) ile C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | V142 derleme Araçları (ARM64) için C++ ATL | 16.0.28625.61
@@ -363,26 +383,26 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | V142 derleme araçları i�
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | V142 derleme Araçları (ARM64) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | C++ MFC v142 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.Redist.MSM | Yeniden dağıtılabilir C++ 2019 MSMs | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.20)  | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – VS 2019 C++ ARM64 derleme araçlarını (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – VS 2017 C++ ARM derleme araçlarını (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – VS 2017 C++ ARM Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – VS 2017 C++ ARM64 derleme araçlarını (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – VS 2017 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 - VS 2019 C++ ARM Spectre azaltılabilir kitaplıklar (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 - VS 2019 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.21)  | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 - VS 2019 C++ ARM64 derleme araçlarını (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM derleme araçlarını (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 - VS 2017 C++ ARM Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64 derleme araçlarını (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 - VS 2017 C++ ARM64 Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ATL | V141 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM | V141 derleme Araçları (ARM) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | V141 derleme araçları için Spectre azaltmaları (ARM) ile C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | V141 derleme Araçları (ARM64) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++ ATL v141 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | Spectre azaltmaları (x86 & x64) ile C++ ATL v141 derleme araçları | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ CLI v141 derleme araçları desteği | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ CLI v141 derleme Araçları (14.16) desteği | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.MFC | V141 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | V141 derleme Araçları (ARM) için C++ MFC | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | V141 derleme Araçları (ARM) için C++ MFC | 16.1.28916.169
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | V141 derleme araçları için Spectre azaltmaları (ARM) ile C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | V141 derleme Araçları (ARM64) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC v141 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | Spectre azaltmaları (x86 & x64) ile v141 derleme araçları için C++ MFC | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.WinXP | C++VS 2017 için Windows XP desteği (v141) araçları [kullanım dışı] | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 - VS 2017 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.WinXP | C++VS 2017 için Windows XP desteği (v141) araçları [kullanım dışı] | 16.1.28811.260

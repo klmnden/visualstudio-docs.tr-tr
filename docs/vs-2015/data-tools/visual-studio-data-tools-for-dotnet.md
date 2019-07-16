@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146533"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına
   
 5. Temel alınan veritabanına gösteren özel işlevsellikten yararlanmak için veya iş kuralları, arama ve veri doğrulama gibi şeyler için özel kod ekleyin.  
   
-   3. adımına geçin ve sorunu komutları doğrudan bir model kullanmak yerine bir veritabanı için bir .NET uygulaması programı. Bu durumda, ilgili belgeleri burada bulabilirsiniz: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Tasarımcılar ve veri kaynağı Yapılandırma Sihirbazı, bellek ve bu nesnelere veri bağlama UI denetimleri kendi nesnelerinizi doldurmanız veri bağlama kodunu oluşturmasını kullanmaya devam edebilirsiniz olduğunu unutmayın.  
+   3\. adımına geçin ve sorunu komutları doğrudan bir model kullanmak yerine bir veritabanı için bir .NET uygulaması programı. Bu durumda, ilgili belgeleri burada bulabilirsiniz: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Tasarımcılar ve veri kaynağı Yapılandırma Sihirbazı, bellek ve bu nesnelere veri bağlama UI denetimleri kendi nesnelerinizi doldurmanız veri bağlama kodunu oluşturmasını kullanmaya devam edebilirsiniz olduğunu unutmayın.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
   

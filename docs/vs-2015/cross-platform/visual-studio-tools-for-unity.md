@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155270"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Bu bölümde, Unity, Visual Studio Unity ile oyunlar oluşturmaya yönelik güç
   
  Unity düzenleyicisi, oyun dünyanızı ortaya koymak için mükemmel olsa da bu düzenleyicide kod yazamazsınız. İle **Unity için Visual Studio Araçları**, düzenleme, hata ayıklama ve üretkenlik özelliklerini Düzenleyicisi ve C# kullanarak Unity projeniz için oyun betikleri oluşturmak için Visual Studio'nun alışık olduğunuz kodu kullanabilirsiniz ve bunların hatalarını ayıklayın Görselini kullanma Studio'nun güçlü hata ayıklama özellikleri.  
   
- Ancak Unity için Visual Studio Araçları bunlarla sınırlı değil. Unity düzenleyicisiyle kapsamlı bir tümleştirmeye de sahip olduğundan, basit görevleri gerçekleştirmek için bile daha az zaman harcamanıza ve Unity'ye özel üretkenlik geliştirmelerinden yararlanmanıza olanak sağlamanın yanı sıra Unity belgelerini parmaklarınızın ucuna getirir.   
+ Ancak Unity için Visual Studio Araçları bunlarla sınırlı değil. Unity düzenleyicisiyle kapsamlı bir tümleştirmeye de sahip olduğundan, basit görevleri gerçekleştirmek için bile daha az zaman harcamanıza ve Unity'ye özel üretkenlik geliştirmelerinden yararlanmanıza olanak sağlamanın yanı sıra Unity belgelerini parmaklarınızın ucuna getirir.  
   
  Devam [genel bakış](../cross-platform/overview-of-visual-studio-tools-for-unity.md) Unity teklifler veya için hangi Visual Studio Araçları hakkında daha fazla bilgi edinmek için [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) Unity için Visual Studio Araçları yükleme ve Unity projenizle kullanmaya başlama hakkında bilgi edinmek için.  
   

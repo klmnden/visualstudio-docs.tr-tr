@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145551"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn ve ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Durdurur veya komut satırı profil oluşturma oturumu içinde tüm işlemler için profil oluşturmaya başlar.  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID`  
  Durdurur veya belirtilen işlem için profil oluşturmaya başlar.  
   
 ## <a name="example"></a>Örnek  

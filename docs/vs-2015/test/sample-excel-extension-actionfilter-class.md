@@ -9,11 +9,11 @@ caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c1dda46ed0e62649a576a12c9f9e48561ec891
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158171"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Örnek Excel uzantısı: ActionFilter Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

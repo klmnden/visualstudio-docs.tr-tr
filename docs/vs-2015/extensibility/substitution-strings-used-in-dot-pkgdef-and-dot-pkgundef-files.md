@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160539"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Kullanılan değiştirme dizeleri. Pkgdef ve. Pkgundef dosyaları
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>.Pkgdef ve .Pkgundef Dosyalarında Kullanılan Değiştirme Dizeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 .Pkgdef aşağıda listelenen değiştirme dizeleri kullanabilirsiniz ve .pkgundef dosyaları, Visual Studio için tanımladığınız yalıtılmış Kabuk uygulaması.  

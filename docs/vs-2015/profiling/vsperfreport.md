@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148227"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Seçenekler|Açıklama|  
 |-------------|-----------------|  
 |**U**|Rapor çıktısı ve yeniden yönlendirilmiş konsol Çıkışı Unicode olarak yazılır. İlk seçenek belirtilmelidir.|  
-|**Özet:**[*türleri*]|Bir veya daha fazla rapor türlerini oluşturur.<br /><br /> -   `All` -Tüm rapor türleri oluşturuldu.<br />-   `CallerCallee` -İşlevler arası üst/alt ilişkilerini.<br />-   `Function` -çağrılan işlevlerin.<br />-   `CallTree` -çağrılan işlevlerin hiyerarşisini.<br />-   `Counter` -tüm işaretleri birlikte Windows performans sayacı değerlerini.<br />-   `Ip` -profili yönergeleri.<br />-   `Life` -(ayırma verilerinin toplandığını olduğunda kullanılabilir.) ayrılmış nesnelerin ömrü<br />-   `Line` Kaynak kod satırı profil verileri.<br />-   `Header` -rapor dosyasının başlık bilgilerini içerir.<br />-   `Mark` tüm işaretleri.<br />-   `Module` -profili modüller.<br />-   `Process` -profili işlemler.<br />-   `Thread` -iş parçacığı profili.<br />-   `Type` -türler ayrılmış.<br />-   `Contention` -Kaynak çakışmaları.<br />-   `RuleWarnings` -Performans kural sorunlarını<br />-   `ETW` -tüm olay izleme için Windows (ETW) olayları, profil oluşturma çalışmasında toplanan. .Etl veri dosyası özgün konumuna veya .vsp veya .vsps dosyasını içeren dizini olmalıdır.|  
+|**Özet:** [*türleri*]|Bir veya daha fazla rapor türlerini oluşturur.<br /><br /> -   `All` -Tüm rapor türleri oluşturuldu.<br />-   `CallerCallee` -İşlevler arası üst/alt ilişkilerini.<br />-   `Function` -çağrılan işlevlerin.<br />-   `CallTree` -çağrılan işlevlerin hiyerarşisini.<br />-   `Counter` -tüm işaretleri birlikte Windows performans sayacı değerlerini.<br />-   `Ip` -profili yönergeleri.<br />-   `Life` -(ayırma verilerinin toplandığını olduğunda kullanılabilir.) ayrılmış nesnelerin ömrü<br />-   `Line` Kaynak kod satırı profil verileri.<br />-   `Header` -rapor dosyasının başlık bilgilerini içerir.<br />-   `Mark` tüm işaretleri.<br />-   `Module` -profili modüller.<br />-   `Process` -profili işlemler.<br />-   `Thread` -iş parçacığı profili.<br />-   `Type` -türler ayrılmış.<br />-   `Contention` -Kaynak çakışmaları.<br />-   `RuleWarnings` -Performans kural sorunlarını<br />-   `ETW` -tüm olay izleme için Windows (ETW) olayları, profil oluşturma çalışmasında toplanan. .Etl veri dosyası özgün konumuna veya .vsp veya .vsps dosyasını içeren dizini olmalıdır.|  
 |**Xml**|XML formatında çıkış rapor.|  
 |**CallTrace**|İşlev girişi ve çıkış yapar ve ETW olayları işaretleri listesini oluşturur.|  
 |**ClearPackedSymbols**|Daha önce katıştırılmış sembolleri bir profil oluşturucu veri dosyasından kaldırır. İkinci PackSymbols çalıştırmadan önce şu komutu çalıştırın. zaman.|  
@@ -72,14 +72,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Seçenekler|Açıklama|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Yalnızca kullanıcı uygulama işlev çağrılarını Göster; Sistem çağrıları gizleyin.<br /><br /> -Parametre - tüm sistem işlevlerini gizleyin.<br />-   `caller` -Uygulama işlevlerini çağıran sistem fonksiyonların bir seviyesini göster.<br />-   `callee` -Kullanıcı uygulama işlevleri tarafından çağrılan sistem fonksiyonların bir seviyesini göster.|  
-|**StartTime:**[*değer*]|Yalnızca (milisaniye cinsinden.) değerden sonra toplanan verileri göster|  
-|**EndTime:**[*değer*]|Yalnızca (milisaniye cinsinden.) değerden önce toplanan verileri göster|  
+|**JustMyCode**[ **:** [`caller`] [,`callee`]]|Yalnızca kullanıcı uygulama işlev çağrılarını Göster; Sistem çağrıları gizleyin.<br /><br /> -Parametre - tüm sistem işlevlerini gizleyin.<br />-   `caller` -Uygulama işlevlerini çağıran sistem fonksiyonların bir seviyesini göster.<br />-   `callee` -Kullanıcı uygulama işlevleri tarafından çağrılan sistem fonksiyonların bir seviyesini göster.|  
+|**StartTime:** [*değer*]|Yalnızca (milisaniye cinsinden.) değerden sonra toplanan verileri göster|  
+|**EndTime:** [*değer*]|Yalnızca (milisaniye cinsinden.) değerden önce toplanan verileri göster|  
 |**FilterFile:** `VSPFFile`|Visual Studio performans raporu penceresinden oluşturulan bir filtre dosyasının konumunu belirtir.|  
-|**MsFilter:**[*starttime, süresi*]|Yalnızca verileri göstermek `starttime` uzunluğuna kadar `duration` (milisaniye cinsinden.)|  
-|**İşlem:**[*PID*]|Yalnızca belirtilen işlemden verileri göster.|  
-|**İş parçacığı:**[*ThreadID*]|Yalnızca belirtilen iş parçacığından verileri göster.|  
-|**İş parçacığı:**[*ThreadID, ProcessId*]|Yalnızca belirtilen işlemle ilişkili belirtilen iş parçacığından verileri göster.|  
+|**MsFilter:** [*starttime, süresi*]|Yalnızca verileri göstermek `starttime` uzunluğuna kadar `duration` (milisaniye cinsinden.)|  
+|**İşlem:** [*PID*]|Yalnızca belirtilen işlemden verileri göster.|  
+|**İş parçacığı:** [*ThreadID*]|Yalnızca belirtilen iş parçacığından verileri göster.|  
+|**İş parçacığı:** [*ThreadID, ProcessId*]|Yalnızca belirtilen işlemle ilişkili belirtilen iş parçacığından verileri göster.|  
   
 ## <a name="difference-report-options"></a>Fark rapor seçenekleri  
  Aşağıdaki tabloda, rapor dosyalarını karşılaştırma seçeneklerini açıklar.  
@@ -87,9 +87,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Seçenekler|Açıklama|  
 |-------------|-----------------|  
 |**Fark**  `vspfile1 vspfile2`|İki rapor dosyalarını (.vsp veya .vsps) dosyası karşılaştırın. Özet Seçenekleri fark seçeneğini kullanarak göz ardı edilir.|  
-|**Fark:**[*değer*]|Bu eşik değerinin iki değer arasındaki farkı göz ardı edilir. Ayrıca bu eşiğin altında yeni veriler gösterilmeyecek.|  
-|**DiffTable:**[*tablename*]|Dosyayı karşılaştırmak için belirli tabloyu kullanın. İşlevler tablosu varsayılandır.|  
-|**DiffColumn:**[*columnname*]|Bu özel sütun karşılaştırma değerleri kullanın. Özel örnekler Yüzde sütunu varsayılandır.|  
+|**Fark:** [*değer*]|Bu eşik değerinin iki değer arasındaki farkı göz ardı edilir. Ayrıca bu eşiğin altında yeni veriler gösterilmeyecek.|  
+|**DiffTable:** [*tablename*]|Dosyayı karşılaştırmak için belirli tabloyu kullanın. İşlevler tablosu varsayılandır.|  
+|**DiffColumn:** [*columnname*]|Bu özel sütun karşılaştırma değerleri kullanın. Özel örnekler Yüzde sütunu varsayılandır.|  
 |**QueryDiffTables**|Geçerli tablolar ve sütunlar için sağlanan iki rapor dosyaları listeler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

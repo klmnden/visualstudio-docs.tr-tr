@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164573"
 ---
 # <a name="debugging-a-t4-text-template"></a>Bir T4 Metin Şablonuna İlişkin Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Metin şablonlarında kesme noktaları ayarlayabilirsiniz. Tasarım zamanı meti
 |Gerekli parametre '{0}'for 'yönergesine{1}' bulunamadı. Yönerge yoksayılacak.|Sistem, gerekli bir yönerge parametre sağlamaz oluşur. Eksik parametre adı, yönerge adı ve satır numarası ileti sağlar.|Eksik parametre belirtin.|  
 |Adlı İşlemci '{0}'adlı yönergeyi desteklemiyor'{1}'. Yönerge yoksayılacak.|Bir yönerge işlemcisi bir yönergeyi desteklemiyor oluşur. İleti adı yönerge işlemcisinin yanı sıra sorunlu yönergesi adı ve satır sayısını sağlar.|Yönergenin adı düzeltin.|  
 |Dosyasının içerme yönergesi '{0}' sonsuz bir döngüye neden olur.|Döngüsel yönergelerinde görüntülenir belirtilen (örneğin, dosya bir dosya içerir B, dosya içerir).|Döngüsel belirtmeyin yönergeleri içerir.|  
-|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Uygulanamaz.|  
+|Dönüştürme çalıştırılıyor:|Tüm hatalar veya dönüştürme çalıştırılırken üretilen uyarılar için bu dize ekler.|Geçerli değildir.|  
 |Bir blok içinde beklenmeyen başlangıç veya bitiş etiketi bulundu. Bir başlangıç veya bitiş etiketini yanlış yazmadınız ve şablonda iç içe geçmiş bir bloğu yok emin olun.|Beklenmeyen bir olduğunda görüntülenen \<# veya #>. Diğer bir deyişle, varsa bir \<# değil kapatılmış olan başka bir açık etiketinden sonra veya sahip bir #> önceki kapatılmamış bir açma etiketi yok olduğunda. İleti eşleşmeyen etiketi satır sayısını sağlar.|Eşleşmeyen başlangıç veya bitiş etiketi kaldırmak veya kaçış karakterini kullanın.|  
 |Bir yönerge yanlış biçimde belirtildi. Yönerge yoksayılacak. Lütfen yönerge biçiminde belirtin `<#@ name [parametername="parametervalue"]*  #>`|Bir yönerge doğru biçimde belirtilmemiş ayrıştırıcı tarafından görüntülenir. İletinin hatalı yönergenin satır numarası sağlar.|Tüm yönergeleri biçiminde olduğundan emin olun `<#@ name [parametername="parametervalue"]*  #>`. Daha fazla bilgi için [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).|  
 |Bütünleştirilmiş kodu yüklenemedi '{0}'for 'kayıtlı yönerge işlemcisi{1}'<br /><br /> {2}|Bir yönerge işlemcisine ana bilgisayar tarafından yüklenemedi oluşur. Yönerge işlemcisini ve yönerge işlemcisinin adı için sağlanan derleme ileti tanımlar.|Yönerge işlemcisini doğru şekilde kaydedildiğini ve derleme var olduğundan emin olun.|  

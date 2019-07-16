@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34729f3dd67cdd124d71cd06204d8754a5c22fb8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162017"
 ---
-# <a name="customizing-performance-tools-report-views"></a>Rapor görünümlerini özelleştirme performans araçları
+# <a name="customizing-performance-tools-report-views"></a>Performans Araçları Rapor Görünümlerini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu bölüm ile oluşturulan raporları nasıl özelleştireceğiniz kapsar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profil oluşturma araçları.  

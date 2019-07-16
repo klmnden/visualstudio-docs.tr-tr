@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56323447d1d4134939c8fd7550778d2c946bfe19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144404"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>İzlenecek yol: Eski Dil Hizmeti oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Bir dil hizmeti uygulamak için yönetilen paket framework (MPF) dil sınıflar�
   
      İstediğiniz herhangi bir adı kullanabilirsiniz. Bu yordamlar burada ayrıntıları MyLanguagePackage adı olarak varsayılır.  
   
-3. Seçin [!INCLUDE[csprcs](../../includes/csprcs-md.md)] dil ve yeni bir anahtar dosyası oluştur seçeneği olarak. **İleri**'ye tıklayın.  
+3. Seçin [!INCLUDE[csprcs](../../includes/csprcs-md.md)] dil ve yeni bir anahtar dosyası oluştur seçeneği olarak.           **İleri**'ye tıklayın.  
   
-4. Uygun şirket ve paket bilgileri girin. **İleri**'ye tıklayın.  
+4. Uygun şirket ve paket bilgileri girin.           **İleri**'ye tıklayın.  
   
-5. Seçin **menü komutu**. **İleri**'ye tıklayın.  
+5. Seçin **menü komutu**.           **İleri**'ye tıklayın.  
   
      Kod parçacıkları desteklemek düşünmüyorsanız, yalnızca Son'a tıklayın ve sonraki adıma yoksay.  
   
-6. Girin **kod parçacığı Ekle** olarak **komut adı** ve `cmdidInsertSnippet` için **komut kimliği**. **Son**'a tıklayın.  
+6. Girin **kod parçacığı Ekle** olarak **komut adı** ve `cmdidInsertSnippet` için **komut kimliği**.           **Son**'a tıklayın.  
   
      **Komut adı** ve **komut kimliği** istediğiniz olabilir, bunlar yalnızca örnektir.  
   

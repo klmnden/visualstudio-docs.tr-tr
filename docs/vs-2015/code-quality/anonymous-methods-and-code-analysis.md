@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157058"
 ---
-# <a name="anonymous-methods-and-code-analysis"></a>Anonim Metotlar ve Kod Çözümleme
+# <a name="anonymous-methods-and-code-analysis"></a>Anonim Yöntemler ve Kod Analizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir *anonim yöntem* ada sahip bir yöntemdir. Anonim yöntemler, en sık temsilcinin parametre olarak bir kod bloğu geçirmek için kullanılır.  
@@ -108,7 +108,7 @@ class Class
   
  Bir sınıf birden çok Oluşturucu sahip bir alan için değer atayan bir satır içi anonim yöntem içerebilir. Bu oluşturucu aynı sınıf içinde başka bir oluşturucu zincirine bağlı sürece bu durumda, uyarılar ve ölçümler ile tüm oluşturucular ilişkilendirilir.  
   
- Örneğin, sınıfta aşağıdaki bildiriminde bulunan tüm uyarılar **anonymousMethod** karşı harekete Geçirilmemesi gereken **Class(int)** ve **Class(string)** ancak çalıştırılmaz **Class()**.  
+ Örneğin, sınıfta aşağıdaki bildiriminde bulunan tüm uyarılar **anonymousMethod** karşı harekete Geçirilmemesi gereken **Class(int)** ve **Class(string)** ancak çalıştırılmaz **Class()** .  
   
 ```vb  
   

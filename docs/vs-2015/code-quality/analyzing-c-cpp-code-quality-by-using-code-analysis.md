@@ -18,13 +18,13 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157137"
 ---
-# <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Kod Çözümlemesi ile C/C++ Kod Kalitesini Çözümleme
+# <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Kod Analizi ile C/C++ Kod Kalitesini Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bulma ve kod hatalarını düzeltmek için Visual Studio Kod Analizi kullanarak C/C++ kod artırabilir.  

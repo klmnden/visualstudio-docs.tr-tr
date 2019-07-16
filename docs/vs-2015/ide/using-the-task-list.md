@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179342"
 ---
 # <a name="using-the-task-list"></a>Görev Listesini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Kullanma **görev listesi** gibi belirteçler kullanan kod açıklamaları izlem
   
 2. İçinde **seçenekleri** açık iletişim kutusunu **metin düzenleyici**.  
   
-3. Altında **C/C++**, seçin **görünümü**ve ardından **açıklama görevlerini numaralandır** için **False**.  
+3. Altında **C/C++** , seçin **görünümü**ve ardından **açıklama görevlerini numaralandır** için **False**.  
   
 ## <a name="shortcuts"></a> Kısayolları  
  A *kısayol* izleneceğini kodda bir yer işareti **görev listesi**; normal bir yer işareti daha farklı bir simgesi vardır. Kısayoluna çift **görev listesi** kod içinde ilgili konuma gitmek için.  

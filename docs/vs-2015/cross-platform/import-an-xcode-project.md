@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150945"
 ---
 # <a name="import-an-xcode-project"></a>Bir XCode Projesini İçeri Aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Microsoft Visual C++ platformlar arası Mobil Geliştirme için Visual Studio'yl
   
     ![İçeri aktarma XCode genel özellikleri bölmesinden](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Bu genel yolları da Visual Studio'da ayarlanabilir **seçenekleri** iletişim. Bunları bulmak için **Araçları** menüsünde **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda Genişlet **Çoklu Platform**, **C++**, **iOS**, **genel özellikleri**.  
+    Bu genel yolları da Visual Studio'da ayarlanabilir **seçenekleri** iletişim. Bunları bulmak için **Araçları** menüsünde **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda Genişlet **Çoklu Platform**, **C++** , **iOS**, **genel özellikleri**.  
   
     Seçin **sonraki** devam etmek için.  
   

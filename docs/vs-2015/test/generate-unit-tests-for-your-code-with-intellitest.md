@@ -11,13 +11,13 @@ caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147364"
 ---
-# <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
+# <a name="generate-unit-tests-for-your-code-with-intellitest"></a>IntelliTest ile kodunuz için birim testleri oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Intellitest, test verileri ve birim testleri paketi oluşturmak için .NET kodunuzu keşfeden. Koddaki her ifade için bir test girişi oluşturulur o ifadeyi yürütecek. Koddaki her koşullu şube için bir vaka analizi yapılır. Örneğin, deyimleri, onaylamalar ve özel durumlar oluşturabilecek tüm işlemler analiz edilirse. Bu analiz, yüksek kod kapsamı ile birim testleri oluşturma, yöntemlerinizin her biri için parametreleştirilmiş birim testi için test verilerini oluşturmak için kullanılır.  
