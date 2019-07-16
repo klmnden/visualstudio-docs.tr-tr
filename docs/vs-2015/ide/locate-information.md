@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 708c1d0ed2c7fe12a4f3e905d3fd5652b25f0a8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178731"
 ---
 # <a name="locate-information"></a>Bilgilerin Konumunu Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ Yardım Görüntüleyici Yardım içerisinde bilgileri bulmanız birkaç farklı
 ## <a name="in-this-section"></a>Bu Bölümdekiler  
  [Tam Metin Arama İpuçları](../ide/full-text-search-tips.md)  
   
- [Nasıl yapılır: İçindekilerde konuları bulun](../ide/how-to-find-topics-in-the-table-of-contents.md)
+ [Nasıl yapılır: İçindekiler Tablosunda Konu Bulma](../ide/how-to-find-topics-in-the-table-of-contents.md)

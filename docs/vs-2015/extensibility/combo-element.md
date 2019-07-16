@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184408"
 ---
 # <a name="combo-element"></a>Combo Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşi
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|GUID|Gerekli. GUID/ID komut tanımlayıcısı GUİD'si.|  
+|guid|Gerekli. GUID/ID komut tanımlayıcısı GUİD'si.|  
 |kimlik|Gerekli. Kimliği bir GUID/ID komut tanımlayıcısı.|  
 |defaultWidth|Gerekli. Birleşik giriş kutusu için bir piksel genişliği belirten bir tamsayı.|  
 |idCommandList|Gerekli. Birleşik giriş kutusunda görüntülenecek öğelerin listesini almak için etkin bir komutu kuyruğa hedef gönderilen bir kimliği. Kimlik denetimi ile aynı GUID kapsamda olur.|  
-|öncelik|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|  
+|priority|İsteğe bağlı. Bir sayısal değer yönelik önceliği belirtir.|  
 |türü|İsteğe bağlı. Düğmenin türü belirten bir numaralandırılmış değeri.<br /><br /> Belirtilmemişse, düğme kullanır.<br /><br /> Aşağı açılan<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurma için sorumludur. Kullanıcının herhangi bir şey bu açılan metin kutusuna yazamazsınız.<br /><br /> DynamicCombo<br /> VSPackage'ı bu birleşik giriş kutusunun içeriğini doldurmak için sorumludur. Kullanıcı bu birleşik düzenleyebilir ve ayrıca öğeleri seçin.<br /><br /> IndexCombo<br /> BT'nin dışında DynamicCombo aynı metin yerine öğenin dizinini oluşturur.<br /><br /> MRUCombo<br /> VSPackage'ı adına tümleşik geliştirme ortamı (IDE) tarafından doldurulur.  Kullanıcı bu birleşik giriş kutusunda düzenleyebilirsiniz. Son 16 girişleri birleşik giriş kutusu başına en fazla IDE hatırlar.<br /><br /> Kullanıcı bir birleşik giriş kutusunda seçerse ya da yeni bir şeyler girer, IDE uygun VSPackage size bildirir.|  
 |Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -53,7 +53,7 @@ Bir açılan kutunun içinde görünen komutlar tanımlar. Şu şekilde birleşi
 |Öğe|Açıklama|  
 |-------------|-----------------|  
 |Üst öğe|İsteğe bağlı. Düğmenin üst öğe.|  
-|CommandFlag|Gerekli. Bkz: [Command Flag öğesi](../extensibility/command-flag-element.md). Bir düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Süzme<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Gerekli. Bkz: [Command Flag öğesi](../extensibility/command-flag-element.md). Bir düğme için geçerli CommandFlag değerler aşağıdaki gibidir.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Süzme<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Dizeler|Gerekli. Bkz: [dizeleri öğesi](../extensibility/strings-element.md). Alt ButtonText öğesi tanımlanmalıdır.|  
 |Ek Açıklama|İsteğe bağlı bir açıklama.|  
   
