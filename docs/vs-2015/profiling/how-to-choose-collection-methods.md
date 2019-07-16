@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199801"
 ---
-# <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Koleksiyon metotları seçme
+# <a name="how-to-choose-collection-methods"></a>Nasıl yapılır: Toplama Yöntemlerini Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profil Araçları performans verilerini toplama üç yöntemi destekler: örnekleme, izleme ve eşzamanlılık. .NET bellek ayırma ve yaşam süresi verilerini toplamak için örnekleme veya Araçlar yöntemi de kullanabilirsiniz.  

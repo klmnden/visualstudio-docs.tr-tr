@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195235"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend'de doğrudan seçim aracı değiştirici tuşları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,8 @@ Aşağıdaki tabloda, var olan bir yol ile şeklini değiştirmek için kullanab
 |Yol üzerindeki iki nokta arasındaki bir kesim için görünür tutamaçların görünmesini|Bir yol kesimini tıklayın|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Segment işaretçiyi|  
 |Yol üzerindeki iki nokta arasındaki bir segment Taşı|Bir yol kesimini sürükleyin|![](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png "2ace930f-98fa-410b-92cf-7a4b88503ee7")<br /><br /> Segment işaretçiyi|  
 |Yol üzerinde bir nokta için bir tanjantı açısını değiştirme|Bir nokta veya görünür ve tanjant uç noktalarından birine sürükleyin tutamaçların görünmesini bir yol kesimini tıklayın|![](../designers/media/beb1a907-1e50-450c-aab3-4d7026f5e426.png "beb1a907-1e50-450c-aab3-4d7026f5e426")<br /><br /> Taşıma tanjant işaretçisi|  
-|Bir bir sharp köşe noktaya olun ya da sıfıra tanjantını azaltır|Noktasının üzerine gelin, ALT tuşunu basılı tutun ve ardından noktasına tıklayın|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Noktası işaretçisi dönüştürme|  
-|Tüm keskin köşe kesintisiz yapın (veya zaten kesintisiz ise, Tıklatılan noktadan geçerken kıvrımın açısını değiştirin)|Noktasının üzerine gelin, ALT tuşunu basılı tutun ve noktası sürükleyin|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-aba4-4a9d-8145-647d0ba8e518")<br /><br /> Noktası işaretçisi dönüştürme|  
+|Bir bir sharp köşe noktaya olun ya da sıfıra tanjantını azaltır|Noktasının üzerine gelin, ALT tuşunu basılı tutun ve ardından noktasına tıklayın|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-ABA4-4a9d-8145-647d0ba8e518")<br /><br /> Noktası işaretçisi dönüştürme|  
+|Tüm keskin köşe kesintisiz yapın (veya zaten kesintisiz ise, Tıklatılan noktadan geçerken kıvrımın açısını değiştirin)|Noktasının üzerine gelin, ALT tuşunu basılı tutun ve noktası sürükleyin|![](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png "21197b10-ABA4-4a9d-8145-647d0ba8e518")<br /><br /> Noktası işaretçisi dönüştürme|  
 |Düz bir çizgi bir eğri parçasını değiştirme|Bir yolda bir segment üzerine gelin, ALT tuşunu basılı tutun ve kesim'ye tıklayın|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Segment işaretçisi dönüştürme|  
 |Bir segmenti alır ve işaretçi konumundan geçecek şekilde eğri içine Kıvrım|Bir yolda bir segment üzerine gelin, ALT tuşunu basılı tutun ve kesim sürükleyin|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441F-97ed-2f1496e416bf")<br /><br /> Segment işaretçisi dönüştürme|  
 |Bir tanjantı diğer taraftan bağımsız olarak bir ucu ayarlama|Doğrudan bir noktası veya bir segment seçin, ALT tuşunu basılı tutun ve sonra bir tanjant uç noktası sürükleyin|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> Eğim işaretçisi dönüştürme|  

@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197194"
 ---
 # <a name="vsix-color-editor"></a>VSIX Renk Düzenleyicisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio uzantısı renk Düzenleyicisi araç oluşturabilir ve Visual Stud
   
    **1. Adım: Yeni renk belirteçleri için kategori ve belirteç adlarını belirleyin.**  
   
-   Tercih edilen adlandırma şeması için bir VSColor **[Category] [UI türü] [durumu]**. Yedekli olduğu gibi "renk" sözcüğü VSColor adları kullanmayın.  
+   Tercih edilen adlandırma şeması için bir VSColor **[Category] [UI türü] [durumu]** . Yedekli olduğu gibi "renk" sözcüğü VSColor adları kullanmayın.  
   
    Kategori adları, mantıksal Gruplamalar sağlar ve mümkün olduğunca sayısı azalacağından'olarak tanımlanmamalıdır. Örneğin, tek bir araç penceresi adı bir kategori adı olabilir, ancak tüm iş birimi veya projeyi takım adı değil. Girdileri kategoriler halinde gruplandırmak, aynı ada sahip renkler arasında karışıklığı önlemeye yardımcı olur.  
   

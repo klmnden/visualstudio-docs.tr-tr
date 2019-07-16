@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b440d2883a06b41b751b6ae84e41b118e864cfec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205370"
 ---
-# <a name="how-to-display-message-properties"></a>Nasıl yapılır: İleti özelliklerini görüntüleme
+# <a name="how-to-display-message-properties"></a>Nasıl yapılır: İleti Özelliklerini Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Listelenen bir ileti hakkında daha fazla bilgi için [iletiler görünümünü](../debugger/messages-view.md), kullanın [ileti özellikleri iletişim kutusu](../debugger/message-properties-dialog-box.md).  

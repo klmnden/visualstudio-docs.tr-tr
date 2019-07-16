@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193876"
 ---
-# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Eski API'yi kullanarak bir dil hizmetinin bağlamına sağlama
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Eski API'yi Kullanarak Dil Hizmeti Bağlamı Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kullanıcı bağlamı kullanarak sağlamak için bir dil hizmeti için iki seçenek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çekirdek Düzenleyicisi: metin işaretçisi bağlam sağlamak ya da tüm kullanıcı bağlamı sağlar. Her arasındaki farklar aşağıda özetlenmiştir.  

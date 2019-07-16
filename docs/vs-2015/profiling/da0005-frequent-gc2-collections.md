@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158684"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Sık kullanılan GC2 koleksiyonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-RuleId|DA0005|  
+RuleId | DA0005 |  
 | Kategori |. NET Framework kullanım |  
 | Profil oluşturma yöntemi |. .NET bellek |  
 | İleti | Nesnelerinizin bir çoğu 2. nesil çöp toplamada toplanmıyor. |  
@@ -36,7 +36,7 @@ RuleId|DA0005|
 ## <a name="rule-description"></a>Kural Tanımı  
  Microsoft .NET ortak dil çalışma zamanı (CLR) nesnelerden artık uygulamanın kullandığı belleği geri kazanmak için atık Toplayıcıya kullanan bir otomatik bellek yönetimi mekanizması sağlar. Atık toplayıcı nesil odaklı birçok ayırmaları ömürlüdür varsayımına dayanır. Örneğin, yerel değişkenler, kısa süreli olmalıdır. Yeni oluşturulan nesneleri nesil 0 (gen 0) başlatın ve bunların uygulama yine de bunları kullanıyorsa, ne zaman, bir çöp toplama çalıştırın ve son olarak 2. nesil geçiş varlığını sürdürmesini nesil 1 ilerleme durumu.  
   
- Nesil 0'daki nesneleri, sık ve genellikle çok verimli bir şekilde toplanır. 1. nesil nesneler, daha az sıklıkta ve daha az verimli bir şekilde toplanır. Son olarak, uzun süreli nesneler nesil 2 içinde bile daha az sık toplanması. Tam çöp toplama çalıştırmak olan 2. nesil koleksiyonu da en pahalı bir işlemdir.  
+ Nesil 0'daki nesneleri, sık ve genellikle çok verimli bir şekilde toplanır. 1\. nesil nesneler, daha az sıklıkta ve daha az verimli bir şekilde toplanır. Son olarak, uzun süreli nesneler nesil 2 içinde bile daha az sık toplanması. Tam çöp toplama çalıştırmak olan 2. nesil koleksiyonu da en pahalı bir işlemdir.  
   
  Bu kural ne zaman orantılı olarak çok fazla nesil 2 çöp koleksiyonları oluşmuş tetikler. Çok fazla görece kısa süreli nesneleri nesil 1 toplamadan ancak ardından 2. nesil tam koleksiyonunda toplanır olanağına sahip olursunuz, bellek yönetimi maliyetini kolayca aşırı hale gelebilir. Daha fazla bilgi için [Orta yaşam kriz](http://go.microsoft.com/fwlink/?LinkId=177835) Rico Mariani'nın performans ipuçları MSDN Web sitesinde gönderin.  
   

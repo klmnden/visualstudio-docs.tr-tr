@@ -12,11 +12,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6131e27dbe4018fa1db415ba1690870c4bffa10c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203984"
 ---
 # <a name="ide-guids"></a>IDE GUID’leri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54766546"
 |<xref:Microsoft.VisualStudio.VSConstants.VsLanguageServiceGuid.HtmlLanguageService_guid>|58E975A0-F8FE-11D2-A6AE-00104BCC7269|  
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3|  
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11D2-BFCA-00C04F990235|  
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11d0-AE1F-00A0C90FFFC3|  
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11D0-AE1F-00A0C90FFFC3|  
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|  
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|  
   
@@ -67,7 +67,7 @@ ms.locfileid: "54766546"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|  
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|  
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|  
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|  
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|  
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|  
   
 ## <a name="output-pane"></a>Çıkış bölmesi  

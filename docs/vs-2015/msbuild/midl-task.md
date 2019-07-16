@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191567"
 ---
 # <a name="midl-task"></a>MIDL Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      İsteğe bağlı **dize** parametresi.  
   
-     Komut satırı seçeneklerinin listesi. Örneğin, **"**_/option1 /option2 /option#_". Herhangi diğer MIDL görev parametresi tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
+     Komut satırı seçeneklerinin listesi. Örneğin, **"** _/option1 /option2 /option#_ ". Herhangi diğer MIDL görev parametresi tarafından temsil edilmez komut satırı seçeneklerini belirtmek için bu parametreyi kullanın.  
   
      Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
@@ -144,7 +144,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Varsa `true`, sabit listesi değerlerinin bir izin verilen aralıkta olup olmadığını kontrol eder.  
   
-     Daha fazla bilgi için **/Error enum** komut satırı Yardımı seçeneğinde (**/?**) midl.exe'yi için.  
+     Daha fazla bilgi için **/Error enum** komut satırı Yardımı seçeneğinde ( **/?** ) midl.exe'yi için.  
   
 - **ErrorCheckRefPointers**  
   

@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155706"
 ---
-# <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Derleme
+# <a name="building-clickonce-applications-from-the-command-line"></a>Komut Satırından ClickOnce Uygulamalarını Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] yalnızca olan başka bir bilgisayara [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] yüklü. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.  
@@ -74,14 +74,14 @@ ms.locfileid: "54777710"
   
     Bu adım isteğe bağlıdır, ancak yeni dosyalar tüm komut satırı derleme tarafından üretilen sağlar.  
   
-5. Türü `msbuild /target:publish`  
+5.           `msbuild /target:publish`yazın.  
   
    Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] projenizin adlı bir alt uygulama dağıtımı **Yayımla**. CmdLineDemo.Application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. CmdLineDemo_1.0.0.0 klasörü CmdLineDemo.exe dosyaları CmdLineDemo.exe.manifest ve dosyalarını içeren [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi. Setup.exe olduğundan, varsayılan olarak yüklemek için yapılandırılmış önyükleyici [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.  
   
 ## <a name="publishing-properties"></a>Yayımlama özellikleri  
  Yukarıdaki yordamlarda uygulama yayımladığınızda, aşağıdaki özellikler, Yayımla Sihirbazı tarafından proje dosyanıza eklenir. Bu özellikleri doğrudan etkilemek nasıl [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama oluşturulur.  
   
- In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ CmdLineDemo.vbproj / CmdLineDemo.csproj içinde:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  

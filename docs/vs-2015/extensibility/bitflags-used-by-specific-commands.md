@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184689"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Özel Komutlar Tarafından Kullanılan Bit Bayrakları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

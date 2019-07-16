@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187874"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Önemli miktarda yansıma
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012: Önemli miktarda Yansıma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kural Kimliği | DA0012 |  

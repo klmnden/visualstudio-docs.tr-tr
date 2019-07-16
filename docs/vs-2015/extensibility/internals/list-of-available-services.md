@@ -12,11 +12,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203828"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

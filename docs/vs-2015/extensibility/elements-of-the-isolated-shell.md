@@ -11,13 +11,13 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204612"
 ---
-# <a name="elements-of-the-isolated-shell"></a>Yalıtılmış kabuğun öğeleri
+# <a name="elements-of-the-isolated-shell"></a>Yalıtılmış Kabuğun Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kayıt defteri ayarları, çalışma zamanı ayarlarını ve uygulama giriş noktası, yalıtılmış Kabuk uygulaması ve kendi .vsct, .pkgdef, and.pkgundef dosyaları değiştirebilirsiniz.  
@@ -51,7 +51,7 @@ Kayıt defteri ayarları, çalışma zamanı ayarlarını ve uygulama giriş nok
   
  Uygulama davranışını başlangıç Giriş noktasına geçirilir son parametresinin değerini değiştirerek değiştirebilirsiniz. Daha fazla bilgi için [yalıtılmış Kabuk giriş noktası parametreleri (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md).  
   
-## <a name="the-vsct-file"></a>The .Vsct File  
+## <a name="the-vsct-file"></a>. Vsct dosyası  
  .Vsct dosyası standart hangi Visual Studio kullanıcı Arabirimi öğeleri uygulamada kullanılabilir belirtmenize olanak sağlar. Daha fazla bilgi için [. Vsct dosyaları](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
   
 ## <a name="the-pkgundef-file"></a>. Pkgundef dosyası  

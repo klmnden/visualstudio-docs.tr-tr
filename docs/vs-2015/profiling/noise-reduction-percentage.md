@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6407b40f58c3acc02705379768085793a2b79b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195547"
 ---
 # <a name="noise-reduction-percentage"></a>Gürültü Azaltma Yüzdesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

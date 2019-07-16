@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186277"
 ---
-# <a name="how-to-restore-c-refactoring-snippets"></a>Nasıl yapılır: Geri yükleme C# yeniden düzenleme kod parçacıklarını
+# <a name="how-to-restore-c-refactoring-snippets"></a>Nasıl yapılır: C# Yeniden Düzenleme Kod Parçacıklarını Geri Yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C# yeniden düzenleme işlemleri aşağıdaki dizinde bulunan kod parçacıkları dayanır:  
@@ -44,7 +44,7 @@ C# yeniden düzenleme işlemleri aşağıdaki dizinde bulunan kod parçacıklar�
   
 3. İçinde **kod parçacığı Yöneticisi** iletişim kutusunda **Visual C#** gelen **dil** aşağı açılan listesi.  
   
-4. **Ekle**'yi tıklatın. **Kod parçacıkları dizini** bulun ve geri kod parçacığı Yöneticisi olarak eklemek için dizin belirtmenize yardımcı olur, iletişim kutusu görüntülenir.  
+4.           **Ekle**'yi tıklatın. **Kod parçacıkları dizini** bulun ve geri kod parçacığı Yöneticisi olarak eklemek için dizin belirtmenize yardımcı olur, iletişim kutusu görüntülenir.  
   
 5. Bulun **yeniden düzenleme** klasörü dizin yolu:  
   

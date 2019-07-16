@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158058"
 ---
 # <a name="opening-and-saving-project-items"></a>Proje Öğelerini Açma ve Kaydetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Yeni bir proje türü eklediğinizde, proje dosyalarınızı kaydetme ve açma y
  [Birlikte Aç Komutunu Kullanarak Dosyaları Görüntüleme](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Sunar IDE'nin nasıl işleyeceğini bir ayrıntılı, adım adım açıklama **birlikte Aç** bazı standart düzenleyicileri, tercih ettiğiniz bir dosya açma isteyen komutu.  
   
- [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Nasıl yapılır: Projeye Özgü Düzenleyiciler Açma](../../extensibility/how-to-open-project-specific-editors.md)  
  Bir projeye özgü Düzenleyicisi'ni kullanarak belirli bir tür, projenizdeki dosyaları açılması gerektiğini belirtmek için adım adım yönergeler sağlar.  
   
- [Nasıl yapılır: Open Standard Editors](../../extensibility/how-to-open-standard-editors.md)  
+ [Nasıl yapılır: Standart Düzenleyiciler Açma](../../extensibility/how-to-open-standard-editors.md)  
  Dosyalar için standart bir düzenleyici proje türünüzü açmak IDE etkinleştirme belirtmek için adım adım yönergeler sağlar.  
   
- [Nasıl yapılır: Açık açık belgeler için düzenleyicileri](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Nasıl yapılır: Açık Belgeler için Düzenleyiciler Açma](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Açık bir dosya için bir projeye özgü düzenleyicisini açmak için adım adım yönergeler sağlar.  
   
  [Standart Belge Kaydetme](../../extensibility/internals/saving-a-standard-document.md)  

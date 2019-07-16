@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194649"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,10 +73,10 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
   
  `deployment` Öğesi şu alt öğelerden de içerir.  
   
-## <a name="subscription"></a>aboneliği  
+## <a name="subscription"></a>subscription  
  İsteğe bağlı. İçeren `update` öğesi. `subscription` Öğesi özniteliklere sahip değildir. Varsa `subscription` öğesi mevcut değil, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama hiçbir zaman güncelleştirmeleri için tarama. Varsa `install` özniteliği `deployment` öğesi `false`, `subscription` öğesi göz ardı edilir, çünkü bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ağdan başlatılan her zaman uygulamanın en son sürümünü kullanır.  
   
-## <a name="update"></a>Güncelleştirme  
+## <a name="update"></a>update  
  Gerekli. Bu öğenin alt öğesi olan `subscription` öğesi ve ya da içeren `beforeApplicationStartup` veya `expiration` öğesi. `beforeApplicationStartup` ve `expiration` hem de aynı dağıtım bildiriminde belirtilemez.  
   
  `update` Öğesi özniteliklere sahip değildir.  

@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b68c9f4bbaed73603c46fc0beab77a308b8933d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203864"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Proje ve Proje Öğesi Şablonları Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,10 +52,10 @@ Kendi proje türleri oluşturduğunuzda, yeni projeleri ve proje öğeleri stand
  Genişletmek için kullanılan nesneleri için Catıdlerini listeler [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], ve [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] proje sistemleri.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Nasıl yapılır: Projeye özgü düzenleyicileri açma](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Nasıl yapılır: Projeye Özgü Düzenleyiciler Açma](../../extensibility/how-to-open-project-specific-editors.md)  
  Doğası gereği bir proje için belirli bir düzenleyici bağlı bir öğeyi açmak için adım adım yönergeler sağlar.  
   
- [Nasıl yapılır: Open Standard Editors](../../extensibility/how-to-open-standard-editors.md)  
+ [Nasıl yapılır: Standart Düzenleyiciler Açma](../../extensibility/how-to-open-standard-editors.md)  
  Standart Düzenleyici açmak için adım adım yönergeler sağlar.  
   
  [Proje Alt Türleri](../../extensibility/internals/project-subtypes.md)  

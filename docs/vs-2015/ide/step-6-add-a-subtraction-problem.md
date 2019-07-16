@@ -1,5 +1,5 @@
 ---
-title: '6. Adım: Çıkarma problemi ekleme | Microsoft Docs'
+title: '6\. Adım: Çıkarma problemi ekleme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178710"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma Problemi Ekleme
+# <a name="step-6-add-a-subtraction-problem"></a>6\. Adım: Çıkarma Problemi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:  

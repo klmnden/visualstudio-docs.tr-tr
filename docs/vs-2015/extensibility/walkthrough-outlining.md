@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201964"
 ---
 # <a name="walkthrough-outlining"></a>İzlenecek yol: Anahat Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ Dil tabanlı özellikleri genişletmek veya daraltmak için istediğiniz metin b
 4. Her iki küme ayraçları içeren bir anahat oluşturma bölgesi olmalıdır. Anahat oluşturma bölge daraltmak için eksi işaretini açık küme ayracı solundaki olması gerekir. Ne zaman bölgesi daraltıldığında, üç nokta simgesine (...) daraltılmış bölgeye ve metni içeren bir açılır pencere solunda görünmesi gereken **gelin metin** üç nokta üzerinde işaretçiyi getirdiğinizde görünmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ebdc5518579223a0081f30a0affd3a45e91604e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198769"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ public enum EncUnavailableReason {
  Bu iç kullanım için yalnızca göre numaralandırmadır [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) ve [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) özel bağlantı noktası sağlayıcısı tarafından uygulanan yöntemleri her zaman döndürmelidir `E_NOTIMPL`.  
   
 ## <a name="requirements"></a>Gereksinimler  
- Header: msdbg.idl  
+ Üstbilgi: msdbg.idl  
   
  Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
   

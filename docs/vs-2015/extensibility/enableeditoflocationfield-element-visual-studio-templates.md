@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204614"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ Kullanıcı konum alanı düzenleyip düzenleyemeyeceğini belirtir.
  Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
   
 ### <a name="attributes"></a>Öznitelikler  
- Hiçbiri  
+ Yok.  
   
 ### <a name="child-elements"></a>Alt Öğeler  
- Hiçbiri  
+ Yok.  
   
 ### <a name="parent-elements"></a>Üst Öğeler  
   

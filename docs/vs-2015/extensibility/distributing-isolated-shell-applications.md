@@ -9,13 +9,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204672"
 ---
-# <a name="distributing-isolated-shell-applications"></a>Yalıtılmış kabuk uygulamaları dağıtma
+# <a name="distributing-isolated-shell-applications"></a>Yalıtılmış Kabuk Uygulamaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yalıtılmış Kabuk uygulaması oluşturmak için Visual Studio ve Visual Studio SDK'yı yüklemeniz gerekir. Diğer kullanıcıları veya müşterileri makinelere uygulamayı dağıtmak için yalıtılmış Kabuk için özel bir yeniden dağıtılabilir paketini içermelidir.  

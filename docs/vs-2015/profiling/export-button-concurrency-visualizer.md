@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1717c17a3a881d138b566f37e07456ded16f22c5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197730"
 ---
-# <a name="export-button-concurrency-visualizer"></a>Dışarı Aktarma Düğmesi (Eşzamanlılık Görselleştiricisi)
+# <a name="export-button-concurrency-visualizer"></a>Dışa Aktarma Düğmesi (Eşzamanlılık Görselleştiricisi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Dışarı** düğmesini çağrı yığınını kendi kayıtlarınız için veya Microsoft Excel gibi başka bir aracı ile kullanmak için bir .csv dosyası olarak dışarı aktarmak etkinleştirir.  

@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196059"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>Yükleme veritabanı sistemleri, araçları ve örnekleri
+# <a name="installing-database-systems-tools-and-samples"></a>Veritabanı sistemlerini, araçları ve örnekleri yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio kendi dahili olarak kullandığı dışındaki herhangi bir veritabanı sistemleri içermez. Visual Studio'da veri bağlı bir uygulama geliştirmek için genellikle veritabanı sistemi yerel geliştirme makinenize yükleyin ve hazır olduğunuzda uygulama ve veritabanı bir üretim ortamına ardından dağıtın. Veritabanı sistemi için .NET uygulamaları tarafından erişilebilir olmasını ve Visual Studio veri araçları pencerelerinde görünür olmasını, bir ADO.NET veri sağlayıcısının olması gerekir. Varlık veri modelleri .NET uygulamanızda kullanmayı planlıyorsanız bir sağlayıcı özellikle Entity Framework desteklemesi gerekir.     Birçok sağlayıcı, NuGet Paket Yöneticisi aracılığıyla veya Visual Studio Galerisi aracılığıyla sunulur.  

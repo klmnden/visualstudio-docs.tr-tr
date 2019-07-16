@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202006"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>İzlenecek yol: Deyim Tamamlamayı Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ Dil tabanlı deyim tamamlama tamamlama sağlamak istediğiniz tanımlayıcılar�
 4. İlk "a" ve "d" ardından yazdığınız sırada "ekleme" ve "uyarlama" içeren bir liste görüntülenmesi gerekir. Ayrıca seçildiğini dikkat edin. Başka bir "d" yazdığınızda, listenin "artık seçilen yalnızca ek olarak" içermelidir. Boşluk, sekme veya Enter tuşuna basarak "ekleme" işleme ya da Esc ya da herhangi bir tuşa yazarak listeyi kapatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

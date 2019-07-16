@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10f3968367b188203671fa6bfff48bc482efe4f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157892"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Hata Ayıklama ve Barındırma İşlemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Visual Studio barındırma işlemini, hata ayıklayıcı performansı artırır 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Barındırma süreci (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [Nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama](../debugger/how-to-debug-a-partial-trust-application.md)   
- [Nasıl yapılır: Barındırma işlemini devre dışı bırak](../ide/how-to-disable-the-hosting-process.md)
+ [Nasıl yapılır: Barındırma İşlemini Devre Dışı Bırakma](../ide/how-to-disable-the-hosting-process.md)
