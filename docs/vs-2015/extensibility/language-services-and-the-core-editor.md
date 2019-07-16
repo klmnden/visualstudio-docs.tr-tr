@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180299"
 ---
-# <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve çekirdek Düzenleyicisi
+# <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve Temel Düzenleyici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio düzenleyicilerinde sık dil hizmeti ile ilişkilendirilmiştir. Diğerlerinin yanı sıra bir dil hizmeti söz dizimi renklendirme, deyim tamamlama, IntelliSense ve metin biçimlendirme sağlar.  
@@ -27,7 +27,7 @@ Visual Studio düzenleyicilerinde sık dil hizmeti ile ilişkilendirilmiştir. D
   
  Daha fazla bilgi için [hangi Düzenleyicisi belirleme, bir projede bir dosya açılır](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve çekirdek Düzenleyicisi  
+## <a name="language-services-and-the-core-editor"></a>Dil Hizmetleri ve Temel Düzenleyici  
  Dil hizmeti kullanarak, belge görünümü'nde verilerin nasıl görüntüleneceğini denetleyebilirsiniz. Dil hizmeti bilgileri ve Visual C++ gibi belirli bir dile özgü davranış sağlar. Bir metin arabelleği açmakta olduğunuz belgenin dosya adı uzantısı belirlemek, bir kayıt defteri anahtarından HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors bu dosya adı uzantısıyla ilişkili dil hizmeti metin arabelleğini belirler. \\{YourLanguageService GUID} \Extensions. Yordam sonra yükleme standart VSPackage'ı, VSPackage'ı yükler ve, dil hizmetinin bir örneği oluşturulur.  
   
  Temel dil hizmeti aşağıdaki çizimde gösterilmektedir.  
