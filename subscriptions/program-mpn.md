@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Hangi abonelikler sunulur, hangi kuralları uygulamak ve kaç aboneliğe MPN'ye sunulan ayrıntıları.
-ms.openlocfilehash: 5b31cc6ef83583074920e5544b0551aa14edf1d5
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784993"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250670"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual Studio abonelikleri
 Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.

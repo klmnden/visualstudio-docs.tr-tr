@@ -6,12 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
-ms.openlocfilehash: 1ef768ea09e156f2fb60d2125303fd85f208adac
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784528"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250776"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus, Visual Studio abonelikleri
 

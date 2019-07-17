@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 01/23/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri – neden Hotmail veya Gmail adresleri Abonelerimin görüyorum?
-ms.openlocfilehash: 3f546151beba8ac360c0ad7db3154ea836942798
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784434"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250718"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Hotmail veya Gmail adresleri abonelerimin neden görüyorum visual Studio abonelikleri –?
 

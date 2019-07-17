@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbeti avantajı yararlanmak öğrenin.
-ms.openlocfilehash: 970e7543d8e39b5e8afafb964a99ef568e704ec0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784768"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250837"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 

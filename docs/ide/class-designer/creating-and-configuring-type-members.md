@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 819a347f41b8cb07085e126747596d4bf6de1bc3
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891149"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250649"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Oluşturma ve tür üyeleri Sınıf Tasarımcısı'nda yapılandırma
 
@@ -151,7 +151,7 @@ Her üye satırı aşağıdaki öğeleri görüntüler:
 
 - **Üye değiştiricisi**
 
-     Üye görünürlük değiştiricilerinin ya da değiştirme `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`), veya `Default`.
+     Üye görünürlük değiştiricilerinin ya da değiştirme `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`), veya `Default`.
 
 - **\<Üye Ekle >**
 

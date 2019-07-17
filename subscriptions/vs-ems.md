@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğinize dahil hakkında bilgi edinin.
-ms.openlocfilehash: 23971311781cc927cd5a2813682e5cb1eeeab6ee
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 240a3c78a6c1e327c09abb8c31624eca2861bbe0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784598"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250796"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 

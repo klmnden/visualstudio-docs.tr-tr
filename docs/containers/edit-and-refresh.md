@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d4ac06d07fd6e59ea8db2ead13c0dc493e36b282
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 70f78f1e7ed05f771e188fe922fef769a38799f9
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890672"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250441"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Yerel bir Docker kapsayıcısında uygulama hatalarını ayıklama
 
@@ -131,4 +131,3 @@ Bilgi edinmek için nasıl [Visual Studio Docker geliştirme sorunlarını gider
 * Derleme ve bir Docker kapsayıcısı dağıtma hakkında bilgi için bkz: [Azure işlem hatları için Docker tümleştirmesi](https://aka.ms/dockertoolsforvsts).
 * Windows Server ve Nano Server makaleleri bir dizin için bkz: [Windows kapsayıcı bilgileri](https://aka.ms/containers).
 * Hakkında bilgi edinin [Azure Kubernetes hizmeti](https://azure.microsoft.com/services/kubernetes-service/) ve gözden geçirme [Azure Kubernetes Service belgelerinde](/azure/aks).
-

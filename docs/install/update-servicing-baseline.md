@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c4a7622c748f3522828517061cf9225f511d3913
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890505"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250325"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Bakım temeli sırasında Visual Studio’yu güncelleştirme
 
-Visual Studio 2019 sık güncelleştirmeler sırasında olacaktır, [ürün yaşam döngüsü](/visualstudio/productinfo/release-rhythm#release-channel-updates). Yeni özellikler ve bileşenler eklemeleri her iki alt sürüm güncelleştirmeleri (örneğin, gelen 16,0 16.1 için) güncelleştirmelerini içerir ve kritik sorunlar için düzeltmeler hedeflenen hizmet yalnızca içeren güncelleştirmeleri (örneğin, 16.0.4 16.0.5 için). 
+Visual Studio 2019 sık güncelleştirmeler sırasında olacaktır, [ürün yaşam döngüsü](/visualstudio/productinfo/release-rhythm#release-channel-updates). Yeni özellikler ve bileşenler eklemeleri her iki alt sürüm güncelleştirmeleri (örneğin, gelen 16,0 16.1 için) güncelleştirmelerini içerir ve kritik sorunlar için düzeltmeler hedeflenen hizmet yalnızca içeren güncelleştirmeleri (örneğin, 16.0.4 16.0.5 için).
 
 Kuruluş Yöneticileri, hizmet bir taban çizgisine göre istemcileri tutmak seçebilirsiniz. Hizmet temel sonraki bakım temel sürümü geçen yıl boyunca güncelleştirmelerin uygulanması ile desteklenir.
 
@@ -29,7 +29,7 @@ Hizmet temel seçeneği, geliştiricilerin ve yöneticilerin yeni özellikler, h
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Bir hizmet temeli alma
 
-Hizmet temel kullanmaya başlamak için gelen bir sabit sürümü Visual Studio yükleyicisi önyükleyici indirme [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Önyükleyiciler ile bağlantılar ürün yapılandırmaları, iş yükleri ve bileşenleri için belirli bir sürüm var. 
+Hizmet temel kullanmaya başlamak için gelen bir sabit sürümü Visual Studio yükleyicisi önyükleyici indirme [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Önyükleyiciler ile bağlantılar ürün yapılandırmaları, iş yükleri ve bileşenleri için belirli bir sürüm var.
 
 > [!NOTE]
 > Sabit sürüm önyükleyici ve standart Önyükleyiciler ile ayırt etmek dikkatli olun. Visual Studio'nun en son sürümü kullanmak için standart Önyükleyiciler ile yapılandırılır. Standart boostrappers birkaç dosya adı (örneğin, vs_enterprise__123456789-123456789.exe) sahip olduğunda karşıdan My.VisualStudio.com.
@@ -37,18 +37,19 @@ Hizmet temel kullanmaya başlamak için gelen bir sabit sürümü Visual Studio 
 Yükleme sırasında kurumsal yöneticiler, istemcilerin en son sürümüne güncelleştirmesini engellemek için istemcileri yapılandırmanız gerekir. İstemciler birden çok yolla yapılandırabilirsiniz:
 - [Değişiklik `channelUri` yanıt yapılandırma dosyasında ayarı](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) düzeni veya yerel klasör kanal bildiriminde kullanılacak.
 - [Komut satırı yürütme aracılığıyla Channelurı değiştirme](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) varolmayan bir dosyayı kullanmak için.
-- [İstemci sisteminde güncelleştirmeler devre dışı bırakmak için ilkeler ayarlama](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), istemciler kendi kendini güncelleştirme önlemek için. 
+- [İstemci sisteminde güncelleştirmeler devre dışı bırakmak için ilkeler ayarlama](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), istemciler kendi kendini güncelleştirme önlemek için.
 
 ### <a name="install-a-servicing-baseline-on-a-network"></a>Hizmet temel bir ağ üzerinde yükleme
 
-Bir ağ düzeni yükleme yöneticileri değiştirme `channelUri` değerini *response.json* düzenin dosyasında *channelmanifest.json* aynı klasörde bulunan dosya. Adımlar için bkz: [ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetlemek](controlling-updates-to-visual-studio-deployments.md). Değiştirme `channelUri` değeri güncelleştirmeleri düzeni konumunda aramak istemcileri etkinleştirir. 
+Bir ağ düzeni yükleme yöneticileri değiştirme `channelUri` değerini *response.json* düzenin dosyasında *channelmanifest.json* aynı klasörde bulunan dosya. Adımlar için bkz: [ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetlemek](controlling-updates-to-visual-studio-deployments.md). Değiştirme `channelUri` değeri güncelleştirmeleri düzeni konumunda aramak istemcileri etkinleştirir.
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>İnternet üzerinden hizmet temel yükleme
 
 İnternet tabanlı bir yükleme için ekleme `--channelUri` kurulumu başlatmak için komut satırı için bildirimi var olmayan kanalıyla kullanılan. Bu Visual Studio kullanarak en son kullanılabilir sürüm için güncelleştirme devre dışı bırakır. Örnek buradadır:
-  ```cmd
-   vs_enterprise.exe --channelUri c:\doesnotexist.chman 
-  ```
+
+```cmd
+vs_enterprise.exe --channelUri c:\doesnotexist.chman
+```
 
 ### <a name="use-policy-settings-to-disable-clients-from-updating"></a>İlke ayarları güncelleştiriliyor ve istemcilerin devre dışı bırakma
 
@@ -56,9 +57,9 @@ Bir istemci güncelleştirmeleri denetlemek için başka bir seçenek [güncelle
 
 ## <a name="how-to-stay-on-a-servicing-baseline"></a>Hizmet bir taban çizgisine göre kalmak nasıl
 
-Hizmet bir taban çizgisi için bir güncelleştirme kullanılabilir olduğunda, sabit sürüm önyükleyici dosyalarını bakım güncelleştirme için kullanılabilir hale getirilir [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). 
+Hizmet bir taban çizgisi için bir güncelleştirme kullanılabilir olduğunda, sabit sürüm önyükleyici dosyalarını bakım güncelleştirme için kullanılabilir hale getirilir [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Yöneticiler ağ düzeni dağıtma yüklemek için yönetici güncelleştirmek isteyebilirsiniz [yerleşimi konumu](update-a-network-installation-of-visual-studio.md). Konum yüklü istemcileri güncelleştirme bildirimlerini alır. Güncelleştirme istemcilere dağıtılması gerekiyorsa izleyin [bu yönergeleri](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Bir güncelleştirme için 'response.json' değiştirirken ek iş yüklerinin, bileşenleri ve dil eklemeyin. Ürün güncelleştirildikten sonra bu ayarları yönetme 'Değiştir' dağıtım olarak yapılmalıdır. 
+Yöneticiler ağ düzeni dağıtma yüklemek için yönetici güncelleştirmek isteyebilirsiniz [yerleşimi konumu](update-a-network-installation-of-visual-studio.md). Konum yüklü istemcileri güncelleştirme bildirimlerini alır. Güncelleştirme istemcilere dağıtılması gerekiyorsa izleyin [bu yönergeleri](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Bir güncelleştirme için 'response.json' değiştirirken ek iş yüklerinin, bileşenleri ve dil eklemeyin. Ürün güncelleştirildikten sonra bu ayarları yönetme 'Değiştir' dağıtım olarak yapılmalıdır.
 
 Yeni sabit sürüm önyükleyici ile internet üzerinden yükleme için çalıştırma `--channelUri` istemci var olmayan kanal bildiriminde işaret eden bir parametre. Güncelleştirme Sessiz ya da pasif modunda dağıtılmış olan iki ayrı komutları kullanın:
 
@@ -69,7 +70,7 @@ Yeni sabit sürüm önyükleyici ile internet üzerinden yükleme için çalış
     ```
 
 2. Visual Studio uygulamasını güncelleştirin:
-    
+
     ```cmd
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
