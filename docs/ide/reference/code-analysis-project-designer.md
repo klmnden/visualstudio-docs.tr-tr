@@ -26,7 +26,7 @@ Kodunuz üzerinde çalıştırmak için iyileştirilmiş kod analizi aracı içe
 
 ## <a name="uielement-list"></a>UIElement listesi
 
- Kod Analysis\ etkinleştir
+ Kod Analysis etkinleştir\
  Etkinleştirir veya projeniz için Kod Analizi devre dışı bırakır.
 
  Tasarım Rules\
@@ -44,7 +44,7 @@ Kodunuz üzerinde çalıştırmak için iyileştirilmiş kod analizi aracı içe
  Mobility Rules\
  Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
- Rules\ adlandırma
+ Rules adlandırma\
  Etkinleştirir veya adlandırma kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
 
  Performans Rules\

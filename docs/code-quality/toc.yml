@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: Güçlü Şifrelemenin SChannel Kullanımını Devre Dışı Bırakma'
+                  href: ca5361.md
+                - name: 'CA5364: Kullanım Dışı Güvenlik Protokollerini Kullanmayın'
+                  href: ca5364.md
+                - name: 'CA5378: ServicePointManagerSecurityProtocols''u Devre Dışı Bırakma'
+                  href: ca5378.md
+                - name: 'CA5386: SecurityProtocolType değerini sabit kodlamaktan kaçının'
+                  href: ca5386.md
             - name: Kullanım uyarıları
               items:
                 - name: Genel Bakış

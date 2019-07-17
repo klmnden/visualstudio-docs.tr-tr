@@ -582,12 +582,14 @@
             - name: Uluslararası uygulamalar tasarlama
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
-    - name: Verilere erişme...
+    - name: Verilere erişme >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Kullanıcı arabirimleri tasarlama...
+    - name: Kullanıcı arabirimleri tasarlama >>
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
+    - name: İş Akışı Tasarımcısı ile uygulamaları geliştirme >>
+      href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: Derleme ve oluşturma
       items:
         - name: Genel Bakış
@@ -636,9 +638,9 @@
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma
               href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild...
+        - name: MSBuild >>
           href: msbuild/msbuild.md
-        - name: Azure Pipelines ve TFS...
+        - name: Azure Pipelines ve TFS >>
           displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
           href: /azure/devops/pipelines/index?view=vsts
         - name: Derleme olayları belirtme (Visual Basic)
@@ -649,23 +651,23 @@
           href: ide/configuring-warnings-in-visual-basic.md
         - name: 'İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: Hata ayıklama...
+    - name: Hata ayıklama >>
       href: debugger/index.md
-    - name: Test etme...
+    - name: Test >>
       displayName: Unit testing
       href: test/improve-code-quality.md
-    - name: Performansı ölçme...
+    - name: Performansı ölçme >>
       displayName: Profiling
       href: profiling/index.md
-    - name: Kod kalitesini analiz etme...
+    - name: Kod kalitesini analiz etme >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
-    - name: Dağıtma...
+    - name: Dağıtım yapma >>
       href: deployment/index.md
-    - name: Visual Studio’yu Genişletme...
+    - name: Visual Studio’yu genişletme >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
-    - name: Mimariyi Analiz Etme ve Mimari Modelini Oluşturma...
+    - name: Mimariyi Analiz Etme ve Mimari Modelini Oluşturma >>
       href: modeling/analyze-and-model-your-architecture.md
     - name: İpuçları ve püf noktaları
       items:
