@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 03/20/2018
 ms.topic: conceptual
 description: Hangi abonelikler hakkında ayrıntılı bilgi, programı Startup'lar için Microsoft aracılığıyla sunulur.
-ms.openlocfilehash: da2257d1f58509cbfc1efbca06cd8324a1892ce3
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 0105d9b8b4a9ed363e755258b8e7ca84e299fe88
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784989"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250615"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Yeni işletmeler için sunulan visual Studio abonelikleri
 Yetkili Microsoft Startup'lar program 5 kazandırabilir için katılan startup'lar [Visual Studio Enterprise aylık bulut abonelikleri](https://visualstudio.microsoft.com/vs/pricing/). Bunlar ticari olarak, hiçbir özel kısıtlamaları veya kısıtlamaları ile sunulan aynı aboneliklerdir. Her abonelik (lisanslı kullanıcı olan) bir son kullanıcı atanmalıdır önce kullanıcının Azure DevOps Hizmetleri'nde bir Visual Studio Enterprise abonesi olarak tanınması ve Visual Studio çalıştırabilirsiniz.

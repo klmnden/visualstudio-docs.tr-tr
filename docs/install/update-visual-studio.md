@@ -2,7 +2,7 @@
 title: Visual Studio’yu güncelleştirme
 titleSuffix: ''
 description: Visual Studio en son sürümüne, adım adım güncelleştirmeyi öğrenebilirsiniz.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290649"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250571"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
@@ -257,6 +259,27 @@ Bir güncelleştirme olup olmadığını denetlemek ve menü çubuğunun ya da V
 1. İçinde **güncelleştirme indirildi ve yüklenmeye hazır** iletişim kutusunda **güncelleştirme**.
 
    Visual Studio güncelleştirmeler, kapatır ve ardından yeniden açar.
+
+## <a name="customize-update-settings"></a>Güncelleştirme ayarlarını özelleştirme
+
+Visual Studio güncelleştirme ayarlarını birkaç farklı yolla gibi yükleme modu değiştirerek ve otomatik indirmeler seçerek özelleştirebilirsiniz.
+
+Aralarından seçim yapabileceğiniz iki yükleme mod vardır:
+
+* **İndirilirken yükle**
+* **Tümünü indir ve yükle**
+
+Ayrıca seçebilirsiniz **güncelleştirmelerini otomatik olarak yükle** makinenize boştayken indirmek güncelleştirmeler sağlayan bir ayar.
+
+İşte nasıl:
+
+1. Menü çubuğunda, **Araçları** > **seçenekleri**.
+
+2. Genişletin **ortam**ve ardından **ürün güncelleştirmelerini**.
+
+    ![Visual Studio'da ayarlarını güncelleştirir](media/vs-2019/update-settings-options.png)
+
+3. Yükleme modu ve, Visual Studio güncelleştirmeleri için otomatik yükleme seçenekleri seçin.
 
 ::: moniker-end
 
