@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ve XSLT dosyaları ile çalışma
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Kapsayıcılarla geliştirme
+          href: containers/index.yml
         - name: Kapsamlı uygulamalar geliştirme
           items:
             - name: Erişilebilir uygulamalar tasarlama
