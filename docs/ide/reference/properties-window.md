@@ -50,7 +50,7 @@ Görüntüler **özellik sayfaları** iletişim kutusu veya **Proje Tasarımcıs
 Properties\
 Bir nesne için özellikleri görüntüler. Çok sayıda nesne kullanılarak görüntülenebilen olayları de **özellikleri** penceresi.
 
-Özellik Source\ göre sırala
+Özellik Source göre sırala\
 Stiller ve bağlamalar gibi devralma, bir kaynağa göre özellikleri gruplandırır uygulanır. Yalnızca tasarımcıdaki XAML dosyaları düzenlerken kullanılabilir.
 
 Events\
