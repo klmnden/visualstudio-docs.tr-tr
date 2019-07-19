@@ -1,51 +1,51 @@
 ---
-title: Bulut abonelikleri yöneticileri ayarlama | Microsoft Docs
+title: Bulut abonelikleri için yöneticileri ayarlama | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 03/28/2018
+manager: lank
+ms.date: 07/17/2019
 ms.topic: conceptual
-description: Yöneticiler bulut abonelikleri için ayarlama
-ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Bulut abonelikleri için yöneticileri ayarlama
+ms.openlocfilehash: 62a350e6061444e3c75878dfd89739011c4641d5
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250698"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315212"
 ---
-# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio bulut abonelikleri yöneticileri ayarlama
+# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio bulut abonelikleri için yöneticileri ayarlama
 
-Visual Studio bulut abonelikleri yöneticileri tarafından yönetilir. Bu kişiler abonelikleri atayabilir, atamalarını düzenlemek, eklemek veya abonelikleri Sil ve diğer abonelik yönetim görevlerini gerçekleştirebilirsiniz.
+Visual Studio bulut abonelikleri yöneticiler tarafından yönetilir. Bu bireyler abonelik atayabilir, atamaları düzenleyebilir, abonelik ekleyebilir veya silebilir ve diğer abonelik yönetim görevlerini gerçekleştirebilir.
 
-## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>İlk yönetici Azure aboneliğinin sahibi değil
+## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Azure abonelik sahibi ilk yöneticiydir
 
-Visual Studio bulut abonelikleri satın alımları gerçekleştirmek için kullanılan Azure aboneliğinin sahibi olarak satın aldığınızda, otomatik olarak bu abonelikler için yönetici olarak ayarlanır.
+Satın alma işlemleri yapmak için kullanılan Azure aboneliğinin sahibi olarak Visual Studio Cloud abonelikleri satın aldığınızda, bu abonelikler için otomatik olarak bir yönetici olarak ayarlanır.
 
-Bulut abonelikleri aracılığıyla satın aldığınız [Visual Studio Market](https://marketplace.visualstudio.com/subscriptions), veya bir bulut çözümü sağlayıcısı ile iletişim kurarak. Satın alma deneyimi sonunda Visual Studio Market aracılığıyla satın alırsanız, kullanıcıları yönetmek için bir fırsat ile sağlanması. Seçeneği Visual Studio abonelikleri Yönetim Portalı'na - sürer seçme [ https://manage.visualstudio.com ](https://manage.visualstudio.com).
+[Visual Studio Market](https://marketplace.visualstudio.com/subscriptions)aracılığıyla veya bulut çözümü sağlayıcısı ile iletişim kurarak bulut abonelikleri satın alabilirsiniz. Satın alma deneyiminin sonunda Visual Studio Market aracılığıyla satın alırsanız, kullanıcıları yönetmeye yönelik bir fırsat sunulur. Bu seçeneğin belirlenmesi sizi Visual Studio abonelikleri yönetim portalına [https://manage.visualstudio.com](https://manage.visualstudio.com)götürür.
 
-Abonelikleri satın aldığınız sonra ziyaret edebilirsiniz [Yönetim Portalı](https://manage.visualstudio.com) dilediğiniz zaman. Portalda oturum açın ve sol üst ve köşe uygun Azure aboneliğini seçin.
+Abonelikleri satın aldıktan sonra istediğiniz zaman [yönetim portalını](https://manage.visualstudio.com) ziyaret edebilirsiniz. Portalda oturum açın ve sol üst ve köşedeki uygun Azure aboneliğini seçin.
 
-Bulut abonelikleri satın almak için kullanılan Azure aboneliğinin sahibi, ek Yöneticiler atayabilirsiniz.
+Bulut aboneliklerinin satın alınması için kullanılan Azure aboneliğinin sahibi olarak ek yöneticiler de atayabilirsiniz.
 
-## <a name="add-administrators"></a>Yöneticiler Ekle
+## <a name="add-administrators"></a>Yönetici Ekle
 
 Yöneticiler eklemek için:
 
-1. Adresinden Azure portalında bağlanma [portal.azure.com](https://portal.azure.com).
-2. Visual Studio bulut abonelikleri satın almak için kullandığınız hesapla oturum açın.
-3. Sol gezinti bölmesinde aşağı kaydırarak **maliyet Yönetimi + faturalandırma**.
-4. İçinde **Aboneliklerim** listesinde, satın alma işlemini gerçekleştirmek için kullanılan Azure aboneliğini seçin.
-5. Tıklayın **erişim denetimi**, ekranın üst kısmında listenin sol gezinti bölmesinde bulunur.
-6. Tıklayın **Ekle** sayfanın üst kısmındaki sekme.
-7. Yönetici yapmak istediğiniz abonelik adına çıkış bölmesinde sağ tıklayın.
-8. Tıklayarak **rol** açılan bölmesinin üst kısmında, aşağıya inin ve seçin **kullanıcı erişimi Yöneticisi**.
-9. **Kaydet**'e tıklayın.
+1. [Portal.Azure.com](https://portal.azure.com)adresinden Azure portalına bağlanın.
+2. Visual Studio bulut aboneliklerini satın almak için kullandığınız hesapla oturum açın.
+3. Sol gezinti bölmesinde, **maliyet yönetimi + faturalandırma**' e gidin.
+4. **Aboneliklerim** listesinde, satın almayı yapmak Için kullandığınız Azure aboneliğini seçin.
+5. Sol gezinti bölmesindeki listenin üst kısmına yakın bir konumda bulunan **erişim denetimi**' ne tıklayın.
+6. Sayfanın üst kısmındaki **Ekle** sekmesine tıklayın.
+7. Tıklayın **rol ataması Ekle**.
+8. Sağdaki giriş bölmesinde, bölmenin üst kısmındaki **rol** açılır listesine tıklayın, aşağı kaydırın ve **Kullanıcı erişimi Yöneticisi**' ni seçin.
+9. Kullanıcı listesinde, yönetici yapmak istediğiniz kullanıcıya gidin ve bunları seçin. 
+10. **Kaydet**'e tıklayın.
+11. Seçtiğiniz kullanıcının bir Kullanıcı Erişim Yöneticisi olarak göründüğünü doğrulamak için **rol atamaları** sekmesine tıklayın.
 
-Belirlediğiniz abone sayfasının ortasında görünür ve rollerine "Kullanıcı Erişim Yöneticisi" gösterilir.
-
-Yeni yönetici artık oturum açarak [Yönetim Portalı](https://manage.visualstudio.com)köşe sayfanın sol üst kısımdaki listesinden bulut abonelikleri satın alınması için kullanılan aynı Azure aboneliği seçin ve bunları yönetmeye başlayabilirsiniz Abonelikler.
+Yeni yönetici artık [yönetim portalında](https://manage.visualstudio.com)oturum açabilir, sayfanın sol üst köşesindeki listeden bulut aboneliklerini satın almak Için kullanılan Azure aboneliğini seçebilir ve bu abonelikleri yönetmeye başlayabilirsiniz.
 
 > [!NOTE]
-> Yönetici olarak'kurmak yaramadı bulut aboneliklerinizi düzenlemek için erişimi olan kullanıcılar görürseniz, temel alınan Azure aboneliğinde Aboneliklerini yönetmek izin rolleri sahip olabilir. Bu roller içerir: sahibi, katkıda bulunan, Hizmet Yöneticisi veya ortak yönetici Daha fazla bilgi için ziyaret [faturalama yöneticileri ekleyin](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
+> Yönetici olarak kurmadığınız bulut aboneliklerinizi düzenlemek için erişimi olan kullanıcılara sahipseniz, bu kullanıcıların, abonelikleri yönetmesine izin veren, temel alınan Azure aboneliğinde rolleri olabilir. Bu roller şunlardır: sahip, katkıda bulunan, hizmet yöneticisi veya ortak yönetici. Daha fazla bilgi için [faturalandırma yöneticileri Ekle](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts)' ye gidin.
 
-Visual Studio bulut abonelikleri hakkında daha fazla bilgi için bkz: [genel bakış](vscloud-overview.md) bulut abonelikleri satın alma altında. Visual Studio bulut abonelikleri satın almak için Visual Studio Market'ten ziyaret [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscription).
+Visual Studio bulut abonelikleri hakkında daha fazla bilgi için, satın alma abonelikleri altındaki [genel bakış](vscloud-overview.md) bölümüne bakın. Visual Studio bulut abonelikleri satın almak için Visual Studio Market [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)ziyaret edin.

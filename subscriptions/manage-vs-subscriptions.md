@@ -1,169 +1,120 @@
 ---
-title: Visual Studio Abonelikleri Yönetme
+title: Visual Studio aboneliklerini yönetme
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
-description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Visual Studio aboneliklerinizden en iyi şekilde nasıl yararlanalabileceğinizi öğrenin
+ms.openlocfilehash: 817471d32daf2b360423d68f7958fc74e1871a3a
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785098"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315184"
 ---
-# <a name="managing-subscriptions"></a>Abonelikleri Yönetme
+# <a name="managing-subscriptions"></a>Abonelikleri yönetme
 
-Visual Studio [abone portalı](https://my.visualstudio.com) tüm aboneliklerinizi yönetin ve tek bir yerde üyeliklerini program olanağı sağlar. Profilinize değişiklik, tüm abonelikleri ve anahtara abonelikler arasında hızlı ve kolay bir şekilde birlikte avantajları kullanın.
+Visual Studio [abone portalı](https://my.visualstudio.com) , tüm aboneliklerinizi ve program üyeliklerinizi tek bir yerde yönetmenize olanak sağlar. Profilinizde değişiklik yapabilir, aboneliklerinizle birlikte sunulan tüm avantajları kullanabilir ve abonelikler arasında hızlı ve kolay bir şekilde geçiş yapabilirsiniz.
 
-## <a name="signing-in-to-the-portal"></a>Portalda oturum açarken
+## <a name="managing-multiple-subscriptions"></a>Birden çok aboneliği yönetme
 
-Visual Studio aboneliğinize Hoş Geldiniz!  Aboneliğiniz tüm yazılım ve yazılımı, aylık Azure KREDİLERİ, işbirliği araçları, eğitim avantajları, tüm kod üzerinde kalması için destek avantajları ve daha fazlasını sunan — tüm son ve en Microsoft gelen. Portalı kullanmak için oturum açmanız gerekir.
+Visual Studio abonelikleri portalı, tüm Visual Studio aboneliklerinizi ve programlarınızı tek bir geliştirilmiş Portal deneyimiyle birlikte getirir. Örneğin, iş üzerinden Visual Studio Enterprise gibi standart bir aboneliğiniz ve bir aylık Visual Studio Professional aboneliği ya da evinizde kullandığınız Visual Studio Dev Essentials üyeliği olabilir.
 
-### <a name="first-time-access"></a>İlk erişim
+### <a name="which-subscription-am-i-using"></a>Hangi abonelikte kullanıyorum?
 
-Aboneliğinizi ilk kez kullanmak için adımlar, aboneliğinize nasıl aldıklarına bağlıdır.
-
-#### <a name="microsoft-store"></a>Microsoft Store
-
-Microsoft Store aracılığıyla bir Visual Studio aboneliği satın aldıysanız, etkinleştirme adımları ödeme başlatılabilir **onay sayfası** veya **onay e-postası.**
-
-1. "Onay sayfası" veya "onay e-", tıklayarak **oturum açmak için buraya tıklayın**. İçin yönlendirilirsiniz https://my.visualstudio.com/subscriptions/activate.
-2. Abonelik portalında oturum açın ve kullanacağınız e-posta adresi girin **devam**.
-3. E-posta adresine bağlı olarak Microsoft Account oturum açma sayfası veya oturum açma sayfasında şirket/Okulunuzun yönlendirilebilir.
-4. Parolanızı girin ve oturum açma gereksinimlerini tamamlayın.
-5. Onay sayfası veya Hoş Geldiniz e-posta içinde sağlanan ürün anahtarını girin ve tıklayın **etkinleştirme**.
-
-#### <a name="workschool-accounts"></a>İş/Okul hesapları
-
-Aboneliğiniz iş/Okul tarafından sağlandıysa bir Hoş Geldiniz e-posta almış olması gerekiyor.
-
-1. Ziyaret [abone portalı](https://my.visualstudio.com/)
-2. Yeni Visual Studio aboneliğinin atandığı e-posta adresi girin. Bu adres abonenin Hoş Geldiniz e-da tanımlanır. Hoş Geldiniz e-posta alınmadı, Lütfen önemsiz posta klasörlerinizi denetleyin.
-3. Tıklayın **devam edin**
-4. Kurumsal oturum açma sayfasına yönlendirilirsiniz.
-5. Parolanızı girin.
-6. Tıklayın **oturum**.
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Market
-
-Visual Studio Market'ten bir aylık veya yıllık bulut aboneliği satın aldıysanız, ziyaret [abone portalı](https://my.visualstudio.com/) ve aboneliği satın aldığınızda, sağlanan oturum Microsoft hesabı'açın (MSA).
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Bir Microsoft hesabı (MSA) ile bir iş/Okul hesabı kullanarak
-
-Kuruluşunuzun bir Azure Active Directory'e sahiptir ancak ihtiyacınız olabilecek yararlanmak için Azure Active Directory hesabınız yok mu **kişisel** oturum açma işlemi sırasında sağlanan seçenekleri.
-
-1. Lütfen Git [abone portalı](https://my.visualstudio.com)
-2. Yeni Visual Studio aboneliğinin atandığı e-posta adresi girin. Bu adres abonenin ayrıca tanımlanan **Hoş Geldiniz mektubunda**. (Hoş Geldiniz e-postayı almadıysanız, gereksiz posta klasörlerinizi denetleyin.)
-3. Tıklayın **devam edin**
-4. İçin yönlendirilecek bir **karar sayfasına**.  Seçin **iş veya Okul hesabı** aboneliğinizi atanırsa bir **iş veya Okul** bir Azure Active Directory (AAD) Kiracı ile ilişkilendirilen hesabı. Seçin **kişisel** aboneliğinin ilişkili olduğu, bir **Kurumsal** e-posta adresi, ancak şekilde dönüştürülmüş bir **kişisel** Microsoft hesabı (MSA)
-5. Parolanızı girin
-6. Tıklayın **oturum açın**
-
-## <a name="managing-multiple-subscriptions"></a>Birden çok abonelik yönetimi
-
-Visual Studio abonelikleri portalında tüm Visual Studio abonelikleri ve programları tek bir geliştirilmiş portal deneyimi getirmektedir. Örneğin, iş, Visual Studio Enterprise gibi standart bir aboneliği ve aylık Visual Studio Professional aboneliği veya Visual Studio Dev Essentials üyeliği evde kullanmak olabilir.
-
-### <a name="which-subscription-am-i-using"></a>Hangi aboneliği kullanıyorum?
-
-Avantajlar sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi renkli bir başlık görüntülenir. Ayrıca,-sağ üst kısmındaki sayfası da görüntülenir.
+Avantajlar sayfasında, kullanımdaki abonelik mavi başlık başlığında görünür. Ayrıca sayfanın sağ üst kısmında da gösterilir.
 > [!div class="mx-imgBorder"]
-> ![Etkin aboneliği](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![Etkin abonelik](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Abonelikler arasında geçiş yapmak için şunları yapabilirsiniz:
 
-- Sağ üst açılan tıklayın ve listeden aboneliği seçin
-- Abonelikler sekmesine tıklayın ve ardından istediğiniz aboneliğe tıklayın.
+- Sağ üst taraftaki aşağı açılan listeye tıklayın ve listeden aboneliği seçin
+- Abonelikler sekmesine tıklayın ve ardından istediğiniz aboneliğe tıklayın
   > [!div class="mx-imgBorder"]
-  > ![Abonelik geçiş](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![Abonelikleri değiştirme](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
-### <a name="if-your-subscription-is-not-visible"></a>Aboneliğinizi görünür değilse...
+### <a name="if-your-subscription-is-not-visible"></a>Aboneliğiniz görünür değilse...
 
-- Süresi olabilir. Yalnızca etkin aboneliklere abone Portalı'nda görüntülenir.
-- Farklı bir e-posta adresi ile ilişkilendirilebilir. Örneğin, Visual Studio Professional aboneliği, iş/Okul e-posta ile oturum açın ve Microsoft Account ilişkili bir Visual Studio Dev Essentials üyeliğinizin olması, e-posta adresine, karşılık gelen aboneliği yalnızca görürsünüz Abone Portalı'nda oturum için kullanılır. Başka bir aboneliğe görmek için oturumu kapatın ve ardından bir e-posta adresiyle oturum oturum gerekecektir.
-- Şirketiniz abonelikler Toplu Lisanslama aracılığıyla satın aldıysa, yöneticiniz bir abonelik için atanmış olabilir değil veya aboneliğinizi başka bir kullanıcıya yeniden atandı.
+- Bu işlem zaman aşımına uğradı. Yalnızca etkin abonelikler abone portalında görüntülenir.
+- Bu, farklı bir e-posta adresiyle ilişkilendirilebilir. Örneğin, iş/okul e-postalarınız ile bir Visual Studio Professional abonelikte oturum açarsanız ve Microsoft hesabınızla ilişkili bir Visual Studio Dev Essentials üyeliği varsa, yalnızca size e-posta adresine karşılık gelen aboneliği görürsünüz Abone portalında oturum açmak için kullanılır. Diğer aboneliği görmek için oturumunuzu kapatıp diğer e-posta adresiyle oturum açmanız gerekecektir.
+- Şirketiniz bir toplu lisans aracılığıyla abonelikler satın alıyorsa, yöneticiniz size bir abonelik atamaya da aboneliğinizi başka bir kullanıcıya atamış olabilir.
 
-## <a name="renewing-my-subscriptions"></a>Aboneliklerim yenileniyor
+## <a name="renewing-my-subscriptions"></a>Aboneliklerimi yenileme
 
 **Standart abonelikler**
+- Microsoft Store: Aboneliğinizi [Microsoft Store](http://www.microsoft.com/store)satın aldıysanız, bunu da yenileyebilirsiniz.
+- Toplu Lisans:  Şirketiniz bir toplu lisans aracılığıyla abonelikler satın alıyorsa, yöneticiniz aboneliklerinizi yenilemek için bir satıcı ile iletişim kurmanız gerekir.
 
-- Microsoft Store: Aboneliğinizden satın aldıysanız [Microsoft Store](http://www.microsoft.com/store), bunu burada de yenileyebilirsiniz.
-- Toplu Lisans:  Yöneticiniz, şirketinizin abonelikler Toplu Lisanslama aracılığıyla satın aldıysa, aboneliklerinizi yenilemek için bir satıcı başvurmanız gerekir.
+**Bulut abonelikleri:**  Bulut aboneliklerinin yenilenmesi gerekmez. Aboneliğiniz ödendiğinde etkin olmaya devam eder.
 
-**Bulut abonelikleri:**  Bulut abonelikleri yenilenmesi gerek yoktur. Aboneliğinizi Ücretli sürece etkin kalır.
+**Programlar aracılığıyla alınan abonelikler:**  Aboneliğinizi bir program aracılığıyla alırsanız aboneliğiniz programa katılımınız ile bağlantılıdır. Daha fazla bilgi için lütfen program kişilerine ulaşın.
 
-**Abonelikleri, programları ile edinilen:**  Aboneliğinizi bir program aracılığıyla alırsanız, aboneliğinizi programa katılımınızı bağlıdır. Program kişilerinize ek bilgi için lütfen ulaşın.
-
-- [Imagine](https://imagine.microsoft.com/about)
+- [Diğinizi](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft İş Ortağı Ağı](https://partner.microsoft.com/en-us)
-- [Microsoft Sertifikalı Eğitmen](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
+- [Microsoft İş Ortağı Ağı](https://partner.microsoft.com)
+- [Microsoft Sertifikalı Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials:**  Dev Essentials'a ücretsiz bir programdır ve üyeliklerini süresinin sona ermediğinden.
+## <a name="transferring-subscriptions"></a>Abonelikler aktarılıyor
 
-## <a name="transferring-subscriptions"></a>Abonelik aktarma
-
-Aboneliğinizi Microsoft Toplu Lisanslama satın alınan ve kuruluş içinde başka birine yeniden atamak ihtiyacınız varsa, yöneticiniz bu sizin için gerçekleştirmesini istemeniz gerekir.
-Perakende abonelikleri başka bir kullanıcı için müşteri hizmetlerine başvurarak aktarılabilir. Kapanış veya "Satılamaz" abonelik aktarılamaz.
+Aboneliğiniz Microsoft Toplu Lisanslama aracılığıyla satın alındıysa ve bunu kuruluştaki başka birine yeniden atamanız gerekiyorsa, yöneticinizin bunu sizin için yapması gerekir.
+Perakende abonelikleri, müşteri hizmetiyle iletişim kurarak başka bir kullanıcıya aktarılabilir. Kapanış veya "satılamaz" abonelikler aktarılamaz.
 
 ## <a name="managing-my-profile"></a>Profilimi yönetme
 
-Abonelikleri portalında oluşturmak ve abonelik yönetimi kolaylaştırarak bir profili yönetmenize olanak sağlar. Kimlik bilgilerinizi değişiklik yapabilirsiniz ve diğer oturum açma kimlikleri mevcut Azure hesaplarını veya diğer kimlikleri kullanarak Azure DevOps kuruluşlarına aboneliklerinizi ilişkilendirebilirsiniz.
+Abonelikler portalı, bir profil oluşturmanıza ve yönetmenize olanak tanıyarak, abonelik yönetimini kolaylaştırır. Kimlik bilgileriniz üzerinde değişiklik yapabilir ve diğer kimlikleri kullanarak aboneliklerinizi mevcut Azure hesaplarından veya Azure DevOps kuruluşlarından diğer oturum açma kimlikleriyle ilişkilendirebilirsiniz.
 
 ### <a name="changing-profile-information"></a>Profil bilgilerini değiştirme
 
-Kişi bilgileri ve tercihleri profilinizde kolaylıkla değiştirebilirsiniz.
+Profilinizdeki iletişim bilgilerini ve tercihlerini kolayca değiştirebilirsiniz.
 
-1. Abone portalı sağ üst köşesindeki adına tıklayın.
-2. Tıklayın **profili Düzenle** düğmesi.
-3. Üzerinde **hakkında** sekmesini değiştirebilirsiniz adı, e-posta, ülke/bölge, profil resmi ve iletişim tercihleri. Üzerinde **tercihleri** sekmesi, tercih edilen dil, tarih ve saat düzenleri, saat dilimi ve kullanıcı arabirimi temasını seçin.
-4. Değişikliklerinizi getirdiğinizi, tıklayın **Kaydet**.
-5. Tarayıcınızın tıklayın **geri** düğmesi avantajları sayfaya geri dönün.
+1. Abone portalının sağ üst köşesindeki ad ' a tıklayın.
+2. **Profili Düzenle** düğmesine tıklayın.
+3. **Hakkında** sekmesinde ad, e-posta, ülke/bölge, profil resminiz ve iletişim tercihlerinizi değiştirebilirsiniz. **Tercihler** sekmesinde tercih ettiğiniz dili, tarih ve saat desenlerini, saat dilimini ve Kullanıcı arabirimi temasını seçebilirsiniz.
+4. Değişikliklerinizi sonuçlandırdığınızda **Kaydet**' e tıklayın.
+5. Avantajlar sayfasına geri dönmek için tarayıcınızın **geri** düğmesine tıklayın.
 
    > [!div class="mx-imgBorder"]
-   > ![Profil bilgilerini düzenleme](_img/manage-vs-subscriptions/edit-profile-resized.png)
+   > ![Profil bilgilerini düzenle](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>İletişim tercihlerini ayarlama
-Aboneliğiniz ve avantajları hakkında düzenli güncelleştirmeler almak istiyorsanız, Visual Studio abonelikleri aylık bülten dahil olmak üzere [tercihlerinizi güncelleştirin](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) Visual Studio abonelikleri için kutuyu işaretleyerek, Visual Studio profili. Bu tercihler değiştirmek ve istediğiniz zaman abonelikten. 
+Aylık Visual Studio abonelikleri bülteni de dahil olmak üzere aboneliğiniz ve avantajlarınız hakkında düzenli güncelleştirmeler almak isterseniz, Visual Studio profilinizde Visual Studio abonelikleri kutusunu işaretleyerek [tercihlerinizi güncelleştirin](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) . Bu tercihleri değiştirebilir ve istediğiniz zaman aboneliğinizi kaldırabilirsiniz. 
 
    > [!div class="mx-imgBorder"]
-   > ![Tercihlerini ayarlama](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![Tercihleri ayarlama](_img/manage-vs-subscriptions/change-prefs.png)
    
-### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>My mevcut Azure DevOps hizmetlere aboneliği veya Azure aboneliği bağlama
+### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Aboneliğimi mevcut Azure DevOps Services veya Azure aboneliklerine bağlama
+Aboneliğinizde kişisel Microsoft hesabı (MSA) kullanarak oturum açarsanız ve Azure tarafından yönetilen iş veya okul hesabını kullanarak Azure DevOps Services veya Microsoft Azure içeren bir aboneliğe sahipseniz, iki aboneliği bağlayabilirsiniz. Bu, "Alternatif hesap" olarak adlandırılır ve mevcut Azure, Azure DevOps Services veya okulunuzla veya iş hesaplarınızla ilişkili olan IDE kaynaklarına erişim sağlarken, kendi aboneliğinizde oturum açmak için MSA 'u kullanmaya devam etmenizi sağlar.
 
-Aboneliğinizi kişisel bir Microsoft hesabı (MSA) kullanarak oturum açın ve Azure DevOps Hizmetleri veya Microsoft Azure kullanarak bir iş içeren bir aboneliğiniz veya Okul hesabı Azure tarafından yönetilen iki aboneliğin bağlayabilirsiniz. Bu, "alternatif hesap" olarak adlandırılır ve MSA aboneliğiniz iş hesaplarını ya da Okul ilişkili mevcut Azure, Azure DevOps Hizmetleri veya IDE kaynaklarınıza erişmesini sırasında oturum açmak için kullanmaya devam etmek sağlar.
+Her iki hesap de aynı e-posta adresini kullanıyorsa bile, her iki hesapta de avantajlarınızı kullanabilmeniz için iş/okul hesabınızı alternatif olarak eklemeniz gerekir.
 
-Her iki hesabın aynı e-posta adresi kullansanız bile Avantajlarınızı iki hesapla da kullanabilmek için bir alternatif olarak iş/Okul hesabınızı eklemeniz gerekir.
+Alternatif bir hesap eklemek için:
 
-Alternatif hesap eklemek için:
-
-1. Oturum [abone portalı](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Microsoft hesabınız (MSA) ile.
-2. Tıklayarak **abonelikleri** sekmesi.
-3. Altında **ilgili bağlantılar**, seçin **alternatif hesap ekleme**.
-4. İş/Okul hesabımın e-posta adresinizi girip __iade **Ekle**.
+1. [Abone portalında](https://my.visualstudio.com?wt.mc_id=o~msft~docs) Microsoft HESABıNıZLA (MSA) oturum açın.
+2. **Abonelikler** sekmesine tıklayın.
+3. **Ilgili bağlantılar**altında **Alternatif hesap ekle**' yi seçin.
+4. İş/okul hesabınızın e-posta adresini girin ve **Ekle**' ye tıklayın.
 
    > [!div class="mx-imgBorder"]
    > ![Alternatif hesap](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
-Alternatif hesap ekledikten sonra güncelleştirme veya tıklayarak dilediğiniz zaman Kaldır **abonelikleri** sekmesi ve uygun seçeneği seçerek **ilgili bağlantılar** bölümü.
+Alternatif bir hesap ekledikten sonra, **abonelik** sekmesine tıklayarak ve **ilgili bağlantılar** bölümünde uygun seçeneği belirleyerek istediğiniz zaman onu güncelleştirebilir veya kaldırabilirsiniz.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>S: Ne kadar süreyle Aboneliğimi Yenile değil, Microsoft benim verilerimi korumak?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Ç Aboneliğimi yenilediğimde, Microsoft verilerimi ne kadar süreyle tutacağım?
+Y: Microsoft, satın alma kanalına bağlı olarak, müşteri verilerini farklı süreler boyunca tutar.
 
-Y: Satın alma kanal bağlı olarak, Microsoft müşteri verileri için farklı süreler tutar.
-
-| Kanal                                                | Süre (gün) |
+| Kanalla                                                | Süre (gün) |
 |--------------------------------------------------------|-----------------|
-|    Perakende (örneğin aracılığıyla Microsoft Store)               |    360          |
-|    Toplu Lisanslama hizmeti Merkezi (VLSC)              |    180          |
+|    Perakende (örn. Microsoft Store)               |    360          |
+|    Toplu Lisanslama Hizmet Merkezi (VLSC)              |    180          |
 |    Microsoft Ürün ve Hizmet Sözleşmesi (MPSA)    |    180          |
 |    Visual Studio bulut abonelikleri                   |    180          |
-|    Program (örneğin MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Program (örn. MCT, BizSpark, MPN, Imagine)          |    180          |
 |    Satılamaz (örneğin, MVP, MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
 > [!NOTE]
-> - Microsoft Account veya Azure AD kapatmayı seçerseniz, kişisel verilerinizi hemen anonimleştirilmesini.
-> - Etkin aboneliğiniz varsa biz tam olarak tüm kişisel verileri kaldırmaz.
+> - Microsoft hesabınızı veya Azure AD 'yi kapatmayı seçerseniz, kişisel verileriniz hemen anonimleştirilir.
+> - Etkin abonelikleriniz varsa tüm kişisel verilerinizi tam olarak kaldırmayacak.

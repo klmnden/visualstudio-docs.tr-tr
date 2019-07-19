@@ -6,22 +6,22 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Visual Studio'ya Hoş Geldiniz abonelikler
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+Description: Visual Studio abonelikleri 'ne hoş geldiniz
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784392"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315218"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
-Visual Studio abonelikleri olan kaynakları oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmek kapsamlı bir dizi.  Abonelikleri'nin avantajlarını Geliştirici araçlarına, bulut Hizmetleri ve yazılım, eğitim, erişimini içerir ve geliştirme ve test ihtiyaçları için destek.
+Visual Studio abonelikleri, Windows, iOS, Android ve Linux gibi tercih ettiğiniz platformlarınızda ve cihazlarınızda harika uygulamalar oluşturmanız, dağıtmanız ve yönetmeniz için kapsamlı bir kaynak kümesidir.  Aboneliklerin avantajları arasında geliştirme ve test gereksinimleriniz için geliştirici araçlarına, bulut hizmetlerine ve yazılıma, eğitimlere ve desteğe erişim verilebilir.
 
 ## <a name="get-started"></a>Başlarken
 
-Yöneticilerin oturum açın [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ekibinize abonelikleri atamak için.<br>
-Aboneleri oturum açın [ https://my.visualstudio.com ](https://my.visualstudio.com) abonelik avantajlarınıza erişmek için.
+Yöneticiler ekibine abonelik atamak [https://manage.visualstudio.com](https://manage.visualstudio.com) için oturum açın.<br>
+Aboneler abonelik avantajlarınıza [https://my.visualstudio.com](https://my.visualstudio.com) erişmek için oturum açın.
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
@@ -139,7 +139,7 @@ Aboneleri oturum açın [ https://my.visualstudio.com ](https://my.visualstudio.
 
 ## <a name="whats-new"></a>Yenilikler
 
-Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantajlarının genellikle güncelleştirin. Daha fazla bilgi için bkz. [Aboneliklerde yenilikler](whats-new-in-subscriptions.md) sayfası.
+Aboneliğinizi daha da yararlı hale getirmek için abonelik avantajlarını sık sık ekleyip güncelleştiririz. Daha fazla bilgi için bkz. [aboneliklerdeki yenilikler](whats-new-in-subscriptions.md) sayfası.
 
 ---
 
@@ -151,11 +151,11 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                 <div class="card">
                     <div class="cardText">
                         <h3>Geliştirici Araçları</h3>
-                        <p>Visual Studio'nun en son sürümlerine erişin, Android, iOS, Windows, macOS, web ve bulut uygulamaları geliştirmek ve bilgisayarda veya Mac'te tooling diğer çoklu platform için tam özellikli IDE</p>
+                        <p>Visual Studio 'nun en son sürümlerine, Android, iOS, Windows, macOS, Web ve bulut uygulaması geliştirme için tam özellikli IDE ve PC veya Mac 'te diğer platformlar arası araçları bulabilirsiniz.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Mac için Visual Studio</li>
-                            <li>Azure DevOps sunucusu ve CAL</li>
+                            <li>Azure DevOps Server ve CAL</li>
                         </ul>
                     </div>
                 </div>
@@ -168,12 +168,12 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Visual Studio aboneliğinizle erişim Azure Hizmetleri, indirimli geliştirme ve test fiyatları ve yalnızca abone görüntü galler özel erişim için aylık Azure kredisiyle alabilirsiniz. önceden yapılandırılmış sanal makineler ile y. Bulut Hizmetleri aboneliğinize bağlı olarak, şunları içerebilir:</p>
+                        <p>Visual Studio aboneliğiniz sayesinde Azure hizmetlerine erişim, indirimli geliştirme ve test ücretleri ve yalnızca abonelere yönelik bir görüntüye özel erişim için aylık bir Azure kredisi alabilirsiniz Galler daha önceden yapılandırılmış sanal makinelerle y. Aboneliğinize bağlı olarak, bulut hizmetleri şunlar olabilir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 geliştiricisi aboneliği</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 Geliştirici aboneliği</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows Geliştirici Hesabı</a></li>
                             <li>PowerBI Pro</li>
                         </ul>
@@ -187,14 +187,13 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Eğitim ve Destek</h3>
-                        <p>Visual Studio abonelikleri Microsoft ve iş ortaklarımız aracılığıyla teknik ve profesyonel eğitim avantajları içerir. İçerik eğitim teknoloji konuları ve profesyonel eğitim malzemesi sürekli kariyer geliştirme için en son kurslar içerir. Sorunları çözmek ve soruları yanıtlamak için uzman Yardımı alın. Aboneliğiniz şunları içerebilir:</p>
+                        <h3>Eğitim ve destek</h3>
+                        <p>Visual Studio abonelikleri, Microsoft ve iş ortaklarımız aracılığıyla teknik ve profesyonel eğitim avantajları içerir. Eğitim içeriği, devam eden kariyer geliştirmeye yönelik teknoloji konuları ve profesyonel eğitim yazılımı hakkındaki en son kursları içerir. Sorunları çözmek ve soruları yanıtlamak için uzman yardımı alın. Aboneliğiniz şunlar olabilir:</p>
                         <ul>
-                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (iş, teknoloji ve yaratıcılık)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (bulut, tasarım, mobil ve veri)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (veri bilimi ve yapay ZEKA)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility Eğitimi</a> (bulut odaklı)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft Profesyonel teknik destek olayları</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (iş, teknoloji ve yaratıcı)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralaltim</a> (bulut, tasarım, mobil ve veri)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Veri kampı</a> (veri bilimi ve AI)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft profesyonel teknik destek olayları</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Danışmanı Sohbeti</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure Topluluğu</a></li>
                         </ul>
