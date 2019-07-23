@@ -1,48 +1,46 @@
 ---
-title: Visual Studio aboneliklerinde yenilikler nelerdir?
-description: Visual Studio Aboneliklerini yönetmek için kullanabileceğiniz yeni ve güncelleştirilmiş özellikler hakkında bilgi edinin.
+title: Visual Studio aboneliklerindeki yenilikler
+description: Visual Studio aboneliklerini yönetmek için kullanabileceğiniz yeni ve güncelleştirilmiş özellikler hakkında bilgi edinin.
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891080"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377950"
 ---
-# <a name="what39s-new-in-visual-studio-subscriptions"></a>Hangi&#39;Visual Studio aboneliklerinde yenilikler
+# <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual&#39;Studio aboneliklerdeki yenilikler
 
-Genellikle, daha kullanışlı hale getirmek abonelik avantajları paket güncelleştiriyoruz. Ayrıca geliştirmeleri bizim abone ve aboneliği mümkün olan en iyi deneyimi sağlamak için yönetim portalları oluşturacağız.  İçin okumaya devam en son özellikler ve güncelleştirmeler üç ayda bir sıralanmış hakkında bilgi edinin.
+Abonelik avantajları paketini sık sık güncelleştiririz. Ayrıca olası en iyi deneyimi sağlamak için abone ve abonelik yönetimi portallarımızla ilgili geliştirmeler de yapacağız.  Üç aylık olarak sıralanan en son özellikler ve güncelleştirmeler hakkında bilgi edinmek için okumaya devam edin.
 
 ## <a name="2019-q1-january-march"></a>2019 Ç1 (Ocak-Mart)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>En fazla kullanım eklenen [abonelikleri Yönetim Portalı](https://manage.visualstudio.com)
-Visual Studio abonelikleri Yönetim Portalı'nda yeni bir özellik satın alınan ve atanan kaç aboneliğe izlemenize yardımcı olur ve en yüksek abonelik sayısı, atadığınız, geçtiğimiz yıl içinde hem de boyunca her düzeydeki tanımlar sözleşmelerinizde süresi. Bu, geçerli abonelik kullanımını ve gelecekteki satın alma planı anlamanıza yardımcı olabilir. 
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[Abonelikler yönetim portalına](https://manage.visualstudio.com) eklenen en yüksek kullanım
+Visual Studio abonelikleri yönetim portalındaki yeni bir özellik, satın almış ve atanan aboneliklerin sayısını izlemenize ve atadığınız her bir düzeyin abonelik sayısını, hem geçmiş yıl içinde hem de tüm sözleşmenizin süresi. Bu, geçerli abonelik kullanımınızı anlamanıza ve gelecekteki satın alımlar için plan yapmanıza yardımcı olabilir. 
 
   > [!div class="mx-imgBorder"]
-  > ![En fazla kullanım menüsü](_img/maximum-usage/maximum-usage-menu.png)
+  > ![En yüksek kullanım menüsü](_img/maximum-usage/maximum-usage-menu.png)
 
-Ayrıca, satın alma ve atama dahil olmak üzere atamalarınızı çalıştırma geçmişini görebilirsiniz.   
+Ayrıca, satın almalarınız ve atamalarınız dahil olmak üzere atamalarınızın çalışan bir geçmişini de görebilirsiniz.   
 
-Daha fazla bilgi için lütfen sunduğumuz [en fazla kullanım](maximum-usage.md) makalesi. 
+Daha fazla bilgi için [en büyük kullanım](maximum-usage.md) makalemizi inceleyin. 
 
 ## <a name="2019-q2-april-june"></a>2019 Ç2 (Nisan-Haziran)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise aboneliğine sahip Visual Studio
-Mayıs ayında //build konferansında Microsoft Kurumsal Anlaşma müşterileri artık GitHub Enterprise dahil Visual Studio abonelikleri satın duyurdu.  Hem Visual Studio abonelikleri ve GitHub Enterprise için tek bir alt fiyatı almak için kolay bir yoludur.  
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise abonelikleriyle Visual Studio
+Microsoft, Microsoft Kurumsal Anlaşma müşterilerin GitHub Enterprise 'ı içeren Visual Studio abonelikleri satın aldığına yönelik olarak Microsoft 'un bu şekilde duyurulduğunu duyurmuştur.  Tek bir düşük fiyat için hem Visual Studio abonelikleri hem de GitHub Enterprise edinmenin kolay bir yoludur.  
 
-GitHub Enterprise, Kurumsal Anlaşma edinilen Visual Studio Enterprise ve Visual Studio Professional abonelikleri ile kullanılabilir. Kurumsal anlaşmanızı yenilemek son olmasa bile GitHub Enterprise eklemenize izin verir "görevleridir" bir teklif yok.
+GitHub Enterprise, kurumsal anlaşmalar aracılığıyla elde edilen Visual Studio Enterprise ve Visual Studio Professional abonelikleri ile kullanılabilir. Ayrıca, Kurumsal Sözleşmeniz yenileme nedeniyle bile GitHub Enterprise eklemenize olanak sağlayan bir "adım adım" teklifi de vardır.
 
-Avantajları hakkında daha fazla bilgi edinmek için seçenekleri ve ziyaret edin fiyatlandırma https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Avantajlar, Seçenekler ve fiyatlandırma hakkında daha fazla bilgi edinmek için lütfen https://visualstudio.microsoft.com/subscriptions/visual-studio-github ziyaret edin. 
 
-Kuruluşunuzda zaten GitHub Enterprise abonelikleri ile Visual Studio varsa, daha fazla bilgi edinebilirsiniz [GitHub Enterprise ile Visual Studio yönetme](assign-github.md) Belgelerimizdeki abonelikler.  
+Kuruluşunuzda GitHub Enterprise abonelikleriyle Visual Studio zaten varsa, belgelerimizde [GitHub Enterprise abonelikleriyle Visual Studio 'yu yönetme](assign-github.md) hakkında daha fazla bilgi edinebilirsiniz.  
 
-Ve şimdilik hepsi bu kadar!
+Bu, şimdilik!
 
-## <a name="see-also"></a>Ayrıca bkz.
 
-* [Abone avantajları](subscriber-benefits.md)

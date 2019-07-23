@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio aboneliklerinizden en iyi şekilde nasıl yararlanalabileceğinizi öğrenin
-ms.openlocfilehash: 817471d32daf2b360423d68f7958fc74e1871a3a
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315184"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378078"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri yönetme
 
@@ -74,8 +74,6 @@ Profilinizdeki iletişim bilgilerini ve tercihlerini kolayca değiştirebilirsin
 4. Değişikliklerinizi sonuçlandırdığınızda **Kaydet**' e tıklayın.
 5. Avantajlar sayfasına geri dönmek için tarayıcınızın **geri** düğmesine tıklayın.
 
-   > [!div class="mx-imgBorder"]
-   > ![Profil bilgilerini düzenle](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>İletişim tercihlerini ayarlama
 Aylık Visual Studio abonelikleri bülteni de dahil olmak üzere aboneliğiniz ve avantajlarınız hakkında düzenli güncelleştirmeler almak isterseniz, Visual Studio profilinizde Visual Studio abonelikleri kutusunu işaretleyerek [tercihlerinizi güncelleştirin](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) . Bu tercihleri değiştirebilir ve istediğiniz zaman aboneliğinizi kaldırabilirsiniz. 
@@ -94,9 +92,6 @@ Alternatif bir hesap eklemek için:
 2. **Abonelikler** sekmesine tıklayın.
 3. **Ilgili bağlantılar**altında **Alternatif hesap ekle**' yi seçin.
 4. İş/okul hesabınızın e-posta adresini girin ve **Ekle**' ye tıklayın.
-
-   > [!div class="mx-imgBorder"]
-   > ![Alternatif hesap](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Alternatif bir hesap ekledikten sonra, **abonelik** sekmesine tıklayarak ve **ilgili bağlantılar** bölümünde uygun seçeneği belirleyerek istediğiniz zaman onu güncelleştirebilir veya kaldırabilirsiniz.
 

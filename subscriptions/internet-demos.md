@@ -3,15 +3,15 @@ title: Terminal Hizmetleri aracılığıyla Internet gösterileri 'nı desteklem
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Terminal Hizmetleri aracılığıyla Internet gösterileri 'nı desteklemek ve RDS erişimini etkinleştirmek için ürün anahtarları kullanmayı öğrenin
-ms.openlocfilehash: 41057496dc42761fcad7c1ebe69b646dfddf16cc
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315570"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377977"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Terminal Hizmetleri aracılığıyla Internet gösterileri
 Visual Studio aboneliği sayesinde, son kullanıcılara, Terminal Hizmetleri (Windows Server 2003 veya Windows Server 2008) veya Uzak Masaüstü Hizmetleri (Windows Server 2008 R2 ve üzeri) aracılığıyla programlarınızın Internet gösterimlerine erişim izni verebilirsiniz. En fazla 200 anonim kullanıcı, gösteriminizi bu şekilde aynı anda erişebilir. Tanıtımın üretim verilerini kullanmamalıdır. Visual Studio aboneleri, uygulamalarını son kullanıcılara gösterecek şekilde lisanslanır. Terminal Hizmetleri (TS) veya Uzak Masaüstü Hizmetleri (RDS) kullanan bu Internet tanıtımı, Visual Studio aboneliği olmayan son kullanıcıların, yazılımın görsel olarak lisanslanması durumunda tanıtım uygulamasıyla etkileşime girebileceği tek senaryodur. Studio abonelikleri.
@@ -35,5 +35,7 @@ Son kullanıcılar, aşağıdaki koşullar karşılandığında RDS aracılığ�
 - Kullanıcı bağlantılarını etkinleştirmek için ürün anahtarları bir Visual Studio abonesi tarafından alınmalıdır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Sunucunuzda RD Lisansı ayarlamaya yönelik yönergelere ihtiyacınız varsa, lütfen [Windows server 2012 ' de RD Lisansı yapılandırması](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx)' na bakın. Sorularınız varsa lütfen [Microsoft Uzak Masaüstü Services forumunu](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)ziyaret edin.
+RDS dağıtımı için yardıma ihtiyacınız varsa, ' de **Uzak Masaüstü Hizmetleri (RDS) 2012 oturum dağıtımında** https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf çok parçalı blog serisine göz atın. 
+
+Sorularınız varsa lütfen [Microsoft Uzak Masaüstü Services forumunu](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)ziyaret edin.
 

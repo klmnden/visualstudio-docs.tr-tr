@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Visual Studio aboneliklerinde ürün anahtarlarını bulma, talep etme ve dışa aktarma hakkında bilgi edinin
-ms.openlocfilehash: 1b10209f516c040c415f422c52b72a1c81fa5c48
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 4efdc118961b6e773e33eb16e40c6e0f09a13dc7
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315573"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378014"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde ürün anahtarlarını bulma ve oluşturma
 Bu makalede ürün anahtarlarının ' den https://my.visualstudio.com/productkeys nasıl bulunduğu, talep verilmesi ve dışarı aktarılacağı açıklanmaktadır.  Bir ürünü anahtar, perakende ve toplu lisans sürümleriyle ve günlük ürün anahtarı talep limitlerine göre etkinleştirme hakkında daha fazla bilgi için lütfen [ürün anahtarlarına genel bakış](product-keys.md)' ı ziyaret edin.
@@ -51,11 +51,11 @@ Bir ürün anahtarı talep etmek için:
 1. Visual Studio aboneliğinizde oturum açın.  Ürünleri indirmek veya ürün anahtarlarını talep etmek için oturum açmış olmanız gerekir.
 2. [Ürün anahtarları](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sekmesine tıklayın.
 3. Ürün anahtarları ürün adına göre alfabetik olarak listelenir.  İstediğiniz ürünün adına aşağı doğru kaydırabilir ya da sayfanın en üstündeki arama çubuğunu kullanarak arama yapabilirsiniz.
-   > [!div class="mx-imgBorder"]
-   > ![Ürün anahtarı ara](_img/product-keys/visio-product-key-cropped.png)
-
-Bu örnekte, bir Visio 2010 ürün anahtarını bulmak için arama çubuğunu kullandık.
-Gördüğünüz gibi, çeşitli Visio 2010 sürümleri listelenir.  Tek bir anahtar, Visio Standard 2010 ve Visio Premium 2010 için zaten istemiş ve her ikisinde de dört anahtar kaldı.  Talep edilen anahtarlar hem perakende anahtarlardır hem de sayfada görüntülenir.  **Notlar** sütununda, istenen anahtarlar hakkında kısa bir not kaydedebileceğinizi unutmayın.  Bunu, talep ettiğiniz anahtarların izini sağlamak için, **istenen** sütundaki tarihle birlikte kullanabilirsiniz.  Örneğin, anahtarı kullanarak ürünün yüklemesini etkinleştirdiğinizde Not alabilirsiniz.
+> [!div class="mx-imgBorder"]
+> ![Ürün anahtarı ara](_img/product-keys/search-keys.png)
+   
+Bu örnekte, Visual Studio Enterprise 2019 için bir ürün anahtarı bulmak için arama çubuğunu kullandık.
+Gördüğünüz gibi, çeşitli sürümler listelenir.  Tek bir anahtar, 16,0 ve 16,1 Visual Studio Enterprise 2019 sürümleri için zaten talep edildi.  Farklı türlerde ek anahtarlar, her iki sürüm için de kullanılabilir. **Notlar** sütununda, istenen anahtarlar hakkında kısa bir not kaydedebileceğinizi unutmayın.  Bunu, talep ettiğiniz anahtarların izini sağlamak için, **istenen** sütundaki tarihle birlikte kullanabilirsiniz.  Örneğin, anahtarı kullanarak ürünün yüklemesini etkinleştirdiğinizde Not alabilirsiniz.
 
 ### <a name="exporting-your-claimed-keys"></a>Talep edilen anahtarlarınız dışarı aktarılıyor
 İstediğiniz tüm anahtarların bir listesini, sizin için otomatik olarak "talep edilen" olarak işaretlenen büyük bir statik ve diğer anahtar seçimleriyle birlikte dışarı aktarabilirsiniz.

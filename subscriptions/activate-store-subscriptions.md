@@ -1,32 +1,35 @@
 ---
-title: Visual Studio abonelikleri Microsoft Store satın etkinleştirme | Microsoft Docs
+title: Microsoft Store satın alınan Visual Studio aboneliklerini etkinleştirme | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
-description: Visual Studio abonelikleri Microsoft Store satın aldığınız etkinleştirme hakkında bilgi edinin.
-ms.openlocfilehash: 2f06804d33b55c83c5d2a3e8a3c1fb273c55093f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Microsoft Store satın aldığınız Visual Studio aboneliklerini nasıl etkinleştireceğinizi öğrenin.
+ms.openlocfilehash: d03b5137a904b68fc848e4058069c89252b94d38
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784859"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377781"
 ---
-# <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store edinilen bir aboneliği nasıl etkinleştirebilirim?
-Microsoft Store aracılığıyla bir Visual Studio aboneliği satın aldıysanız, etkinleştirme adımları ödeme "Onay sayfası" veya "Onay satın aldığınız e-" başlatılabilir.
+# <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Microsoft Store alınan bir abonelik Nasıl yaparım? etkinleştirmek istiyor musunuz?
+Microsoft Store aracılığıyla bir Visual Studio aboneliği satın aldıysanız, etkinleştirme adımları satın alımınızdan sonra aldığınız ödeme "onay sayfasından" veya "onay e-postalarından" başlatılabilir.
 
 > [!NOTE]
-> E-posta almadıysanız Lütfen e-posta adresinizi doğrulayın ve gereksiz posta klasörlerinizi denetleyin
+> E-posta almadıysanız lütfen e-posta adresinizi doğrulayın ve istenmeyen posta klasörlerinizi denetleyin
 
-## <a name="activate-your-subscription"></a>Aboneliğinizi etkinleştirin:
-1. Tıklayarak **oturum açmak için buraya tıklayın** onay e-posta veya satın alma onayı sayfasında.
-2. İçin gerçekleştirilecek [ https://my.visualstudio.com/subscriptions/activate ](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
-3. Visual Studio aboneliğine erişim gerektiren e-posta adresi girin ve tıklayın **devam**.
-4. İki farklı oturum açma sayfaları, kullandığınız hesap türüne bağlı olarak birine yönlendirilen:
-    - Aboneleri kişisel "Microsoft Account" (MSA) kullanarak Microsoft Account parola sayfasını görürsünüz.
-    - Aboneler, iş/Okul hesaplarını kullanarak oturum açma, kuruluşun sayfasına yönlendirilirsiniz.
-5. Parolanızı girin veya kuruluşunuzun oturum açma gereksinimlerini tamamlayın.
-6. Başarılı oturum açma sırasında bir "Etkinleştirme Visual Studio aboneliğinizi" penceresi görüntülenir.
-7. Ürün anahtarı bilgileri kullanılabilir ödeme "Onay sayfası" veya "Onay e-" girin ve tıklayın **etkinleştirme**.
-8. Abonelik artık görünür olmalıdır [abonelikleri](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) sayfası ve tüm abonelik avantajları için erişim.
+## <a name="activate-your-subscription"></a>Aboneliğinizi etkinleştirme
+1. Onay e-postasında veya satın alma onayı sayfasında **oturum açmak için buraya tıklayın** seçeneğine tıklayın.
+2. Uygulamasına [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)yönlendirilirsiniz.
+3. Visual Studio aboneliğine erişim gerektiren e-posta adresini girin ve **devam**' a tıklayın.
+4. Kullanmakta olduğunuz hesap türüne bağlı olarak iki farklı oturum açma sayfasının birine yönlendirilebilirsiniz:
+    - Kişisel "Microsoft hesabı" (MSA) kullanan aboneler, Microsoft hesabı parolası sayfasını görür.
+    - İş/okul hesaplarını kullanan aboneler, kuruluşunuzun oturum açma sayfasına yönlendirilir.
+5. Parolanızı girin veya kuruluşunuzun oturum açma gereksinimlerini doldurun.
+6. Başarılı oturum açma işlemi sonrasında, "Visual Studio aboneliğinizi etkinleştirme" penceresi görüntülenir.
+7. Ödeme "onay sayfasından" veya "onay e-postalarından" bulunan ürün anahtarı bilgilerini girin ve **Etkinleştir**' e tıklayın.
+8. Abonelik artık [abonelikler](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) sayfasında görünür olmalıdır ve tüm abonelik avantajlarınıza erişmeniz gerekir.
+
+## <a name="next-steps"></a>Sonraki adımlar
+Aboneliklerinize dahil olan tüm araçlar, hizmetler, eğitimler ve destek avantajlarını görmek için [avantajlar](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) sayfasını ziyaret edin.  Başlamak için [Visual Studio](vs-ide-benefit.md) ve [Azure DevOps](vs-azure-devops.md) kurulumunu yapmanızı öneririz. 

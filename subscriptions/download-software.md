@@ -3,15 +3,15 @@ title: Visual Studio aboneliklerinde yazılım başlıklarını indirme | Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 description: Visual Studio aboneliklerinde Microsoft yazılım başlıklarını bulmayı ve indirmeyi öğrenin
-ms.openlocfilehash: b44ac93d881c2246484201ce0e1a0941c64d695e
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315567"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377852"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde yazılım başlıkları indiriliyor
 Sahip olduğunuz Visual Studio aboneliğine bağlı olarak, kullanabileceğiniz çok çeşitli Microsoft yazılım başlıkları bulunabilir.  Bu makalede, aboneliğinizden en iyi şekilde yararlanmak için ihtiyacınız olan yazılımın nasıl konumlandırılmaları ve indirileceği açıklanır. 
@@ -24,9 +24,9 @@ Sahip olduğunuz Visual Studio aboneliğine bağlı olarak, kullanabileceğiniz 
 > [!div class="mx-imgBorder"]
 > ![Abone İndirmeleri sayfası](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
-Örneğin, Geliştirici Araçları listesinden **Visual studio 2017** ' i seçerseniz, kullanılabilir visual Studio 2017 indirmelerinin bir listesini görürsünüz.
+Örneğin, Geliştirici Araçları listesinden **Visual studio 2019** ' i seçerseniz, kullanılabilir visual Studio 2019 indirmelerinin bir listesini görürsünüz.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 İndirmeleri](_img/subscriber-downloads/vs2017-new-UI.png)
+> ![Visual Studio 2019 İndirmeleri](_img/subscriber-downloads/vs2019-product-list.png)
 
 Kullanılabilir açılır menüleri kullanarak mimarinizi, dili ve dosya türünü kolayca seçersiniz. Tercih ettiğiniz seçenekleri belirleyin ve ürünü indirmeye başlamak için **İndir** ' e tıklayın.
 
@@ -36,16 +36,16 @@ Kullanılabilir açılır menüleri kullanarak mimarinizi, dili ve dosya türün
 ### <a name="displaying-download-details"></a>İndirme ayrıntılarını görüntüleme
 Ürün adına veya **bilgi** bağlantısı ' na tıkladığınızda, bu indirmenin ayrıntıları görüntülenir ve ürünün sürüm notlarına erişim sağlanır.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro indirme ayrıntıları](_img/subscriber-downloads/vs2017-pro-details.png)
+> ![Visual Studio 2019 indirme ayrıntıları](_img/subscriber-downloads/vs2019-info.png)
 
 Ayrıntılar bölmesinde, ürün anahtarlarınızın durumunu denetlemek için **anahtarlar** sekmesine de tıklayabilirsiniz.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro ürün anahtarları](_img/subscriber-downloads/vs2017-pro-keys.png)
+> ![Visual Studio 2019 ürün anahtarları](_img/subscriber-downloads/vs2019-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Ürün anahtarları alma
 İndirilmek üzere bir ürün anahtarı almak için, **Get Key** etiketli mavi anahtara tıklayabilir veya Ayrıntılar bölmesini zaten görüntülüyorsanız, **anahtarlar** sekmesinde **talep anahtarı** ' na tıklayın.
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro talep ürün anahtarları](_img/subscriber-downloads/vs2017-pro-claim-keys.png)
+> ![Visual Studio 2019 talep ürün anahtarları](_img/subscriber-downloads/vs2019-claim-keys.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Ürün anahtarlarını bulma, oluşturma ve dışarı aktarma hakkında daha fazla bilgi edinmek için ürün anahtarları belgelerimize göz atın:

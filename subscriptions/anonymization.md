@@ -1,44 +1,40 @@
 ---
-title: Visual Studio abonesi veri anonimleştirme | Microsoft Docs
+title: Visual Studio abone verilerini anonimleştirme | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
-description: Aboneliklere erişimi kesildiğinde nasıl abone veriler anonimleştirilmiştir öğrenin.
-ms.openlocfilehash: 1d4e4c5f2e1946a75a70ab4ddb49f000c951cd97
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Aboneliklerde erişim kesildiğinde abone verilerinin nasıl anonimleştirilmemiş olduğunu öğrenin.
+ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783664"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377964"
 ---
-# <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio abonesi bilgilerin anonimleştirme
-
-Bir abonenin aboneliği süre sonu veya bir abonenin oturum açma hesabı silme gibi bir abonelik kullanımını engelleyen bir olay oluştuğunda kullanıcının adını ve oturum açma hesabı gibi kişisel bilgileri temelde karıştırılmış işlemek için bunları kullanılamaz.  Bu, abonenin kişisel bilgileri korumak için gerçekleştirilir.
+# <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio abone bilgilerini anonimleştirme
+Bir aboneliğin kullanım süresi veya bir abonenin oturum açma hesabı silme gibi bir abonelik kullanımını engelleyen bir olay meydana geldiğinde, kullanıcının ad ve oturum açma hesabı gibi kişisel bilgileri, işlemek için aslında karıştırıdur Bunlar kullanılamaz.  Bu, abonenin kişisel bilgilerini korumak için yapılır.
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
-## <a name="when-does-anonymization-occur"></a>Anonimleştirme ne zaman gerçekleşiyor?
+## <a name="when-does-anonymization-occur"></a>Anonimleştirme ne zaman oluşur?
+Abone için kullanılamayan bir aboneliği işleyen olaylar, anonimleştirme tetikleyecektir.  Anonimleştirme ne kadar hızlı olursa, abonelik türüne ve tetikleme olayına bağlıdır. Daha fazla bilgi için aşağıdaki tabloya bakın.
 
-Bir abonenin aboneliği kullanılamaz hale gelmesine neden olayların anonimleştirme tetikler.  Anonimleştirme nasıl hızlı bir şekilde gerçekleşir, abonelik ve olay türüne göre değişir. Daha fazla bilgi için aşağıdaki tabloya bakın.
-
-| Abonelik türü                                                                                                                       | Anonimleştirme tetikleyen olayı                                                                                                     | Anonimleştirme gerçekleştiğinde |
+| Abonelik türü                                                                                                                       | Anonim seçme tetikleme olayı                                                                                                     | Anonimleştirme oluştuğunda |
 |-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------|
-| Visual Studio Dev Essentials                                                                                                            | Abone programdan kabul eder ya da kullanım koşullarını kabul etmiyorum                                    | 30 gün               |
-| Visual Studio abonelikleri Microsoft Store (Perakende) satın                                                                      | Abonelik süresi dolana veya sözleşme etkinleştirilmemiş                                                                   | 360 gün                  |
-| Toplu Lisans, Visual Studio Marketi (bulut abonelikleri) veya MPN gibi programları aracılığıyla edinilen visual Studio abonelikleri | Abonelik süresi dolana veya bir kullanıcıya atanmadı                                                          | 180 gün                  |
-| Tüm abonelikler                                                                                                                       | Bir Azure Active Directory hesabı veya Microsoft hesabı (MSA) aboneliğe imzalamak için kullanılan kapalı | Hemen               |
-| Tüm abonelikler                                                                                                                       | Azure Active Directory hesabı ile ilişkili Kiracı abone kaldırılır                                | Hemen               |
+| Visual Studio Dev Essentials                                                                                                            | Abone programın dışına çıkarır veya kullanım koşullarını kabul etmez                                    | 30 gün               |
+| Microsoft Store aracılığıyla satın alınan Visual Studio abonelikleri (perakende)                                                                      | Aboneliğin süresi doluyor veya etkin değil                                                                   | 360 gün                  |
+| Toplu Lisans, Visual Studio Market (bulut abonelikleri) veya MPN gibi programlar aracılığıyla alınan Visual Studio abonelikleri | Aboneliğin süresi doluyor veya bir kullanıcıya atanmamış                                                          | 180 gün                  |
+| Tüm abonelikler                                                                                                                       | Abonelikte oturum açmak için kullanılan bir Azure Active Directory hesabı veya Microsoft hesabı (MSA) kapatıldı | Başlayacaktır               |
+| Tüm abonelikler                                                                                                                       | Abone, Azure Active Directory hesabıyla ilişkili kiracıdan kaldırılır                                | Başlayacaktır               |
 
 ## <a name="faq"></a>SSS
+### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Ç  Abonenin kişisel bilgilerinin anonimleştirmesi, aboneliğe erişimi kaybetmesine neden olur mu?
+Y:  Hayır.  Anonimleştirme, aboneliğe erişim kaybına neden olan bir olaya yanıt olarak, ancak erişim eksikliğine neden olmaz.
 
-### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>S:  Abonenin kişisel bilgilerin anonimleştirme bunları aboneliğe erişimi kaybetmenize neden?
-Y:  Hayır.  Anonimleştirme aboneliğe erişim kaybına neden olur, ancak erişim eksiği neden olmayan bir olaya yanıt olarak kullanılıyor.
-
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>S:  Kuruluşumun abonelikler için bir yönetici ortağıyım.  My abonenin bilgi birini anonim hale getirilen, bu abonelik başka bir kullanıcıya atanabilir?
-Y:  Evet – abonelik süresi geçmemiş sürece, başka bir aboneye atanabilir.
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Ç  Kuruluşumun abonelikleri için yöneticiyim.  Abonimin bilgilerden biri anonimleştirilmiştir, bu abonelik başka bir kullanıcıya yeniden atanabilir mi?
+Y:  Evet--aboneliğin süresi dolmadığından, başka bir aboneye yeniden atanabilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-
-Anonimleştirme tarafından önlemek öğrenin [MSA ve AAD kimlikleri bağlama](/azure/active-directory/b2b/add-users-administrator).
+[MSA ve AAD kimliklerini bağlayarak](/azure/active-directory/b2b/add-users-administrator)anonim seçimi nasıl önleyeceğinizi öğrenin.
