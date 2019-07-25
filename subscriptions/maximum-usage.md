@@ -1,53 +1,53 @@
 ---
-title: Yönetim Portalı'nda en fazla kullanım özelliğini kullanma
+title: Yönetim portalında en yüksek kullanım özelliğini kullanın
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
-description: Yönetim Portalı'nda maksimum atanan abonelik sayısını görüntülemeyi öğrenin
-ms.openlocfilehash: 0442671a6cdb24e394e6c2a47c935ae894cca354
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Yönetici portalında en fazla atanmış abonelik sayısını görüntülemeyi öğrenin
+ms.openlocfilehash: a662aba65d166b2690b268c6d87247a7ff415b3b
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250745"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493364"
 ---
-# <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Atanan abonelik sayısını izlemek için en fazla kullanım özelliğini kullanma
+# <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Atanan aboneliklerin sayısını izlemek için en yüksek kullanım özelliğini kullanın
 
-Visual Studio abonelikleri Yönetim Portalı'nda yeni bir özellik satın alınan ve atanan kaç aboneliğe izlemenize yardımcı olur ve en yüksek abonelik sayısı, atadığınız, geçtiğimiz yıl içinde hem de boyunca her düzeydeki tanımlar sözleşmelerinizde süresi. 
+Visual Studio abonelikleri yönetim portalındaki yeni bir özellik, satın almış ve atanan aboneliklerin sayısını izlemenize ve atadığınız her bir düzeyin abonelik sayısını, hem geçmiş yıl içinde hem de tüm sözleşmenizin süresi. 
 
-## <a name="viewing-maximum-usage"></a>En yüksek kullanımı görüntüleme
+## <a name="view-your-maximum-usage"></a>En büyük kullanım alanınızı görüntüleyin
+Herhangi bir sözleşme ve abonelik düzeyi için atanan en yüksek abonelik sayısını görmek için:
 
-En yüksek herhangi bir anlaşma ve abonelik düzeyi için atanan abonelik sayısını görmek için:
-
-1. Portalın en üstünde açılan görüntülemek istediğiniz sözleşmesi sol seçin. (Yalnızca tek bir anlaşma varsa, bu zaten seçilir.)
-
-2. Tıklayarak **en fazla kullanım** sekmesi.  
+1. Portalın sol üst kısmındaki açılan kutuda görüntülemek istediğiniz sözleşmeyi seçin. (Yalnızca bir anlaşmanız varsa, zaten seçilmiş olur.)
+2. **En yüksek kullanım** sekmesine tıklayın.  
     > [!div class="mx-imgBorder"]
-    > ![En fazla kullanım menüsü](_img/maximum-usage/maximum-usage-menu.png)
-
-3. "En fazla Kullanım Özeti" görünür ve bu en yüksek sınıra tarihi ile birlikte her düzeyin önceki yıl içinde atadığınız abonelik sayısı görüntülenir.  Bu yoğun birden çok kez ulaştıysanız, ilk kez kullanmak da görüntülenir. 
+    > ![En yüksek kullanım menüsü](_img/maximum-usage/maximum-usage-menu.png)
+3. "En yüksek kullanım Özeti" görüntülenir ve son yıl içinde atadığınız maksimum abonelik sayısı, bu üst sınıra ulaştığınız tarihle birlikte görüntülenir.  En yüksek düzeye ulaştıysanız, ilk kez ulaşıldığında görüntülenir. 
     > [!div class="mx-imgBorder"]
-    > ![En fazla Kullanım Özeti](_img/maximum-usage/maximum-usage-summary.png)
+    > ![En yüksek kullanım Özeti](_img/maximum-usage/maximum-usage-summary.png)
+4. Sözleşmenin ömrü için en fazla kaç abonelik atandığını görmek üzere **tam terim** sekmesine tıklayın.
 
-4. En fazla sözleşme süresince atanan abonelik sayısını görmek için tıklayın **tam terimi** sekmesi.
-
-## <a name="viewing-assignment-history"></a>Atama geçmişini görüntüleme
-
-Her abonelik düzeyi için en yüksek atamaları görmenin yanı sıra, çalışan bir hesabın etkinliğin tıklayarak satın alma ve atamaları da dahil olmak üzere bir anlaşma gördüğünüz **tam raporu dışarı aktar** düğmesi.  
+## <a name="view-your-assignment-history"></a>Atama geçmişinizi görüntüleyin
+Her bir abonelik düzeyi için tepe atamaları görmenin yanı sıra, **tüm rapor verme** düğmesine tıklayarak, satın alma ve atamalar dahil olmak üzere Sözleşmede çalışan bir hesabı görebilirsiniz.  
 
 > [!div class="mx-imgBorder"]
-> ![En fazla kullanım tam raporu](_img/maximum-usage/maximum-usage-full-report.png)
+> ![En yüksek kullanım tam rapor](_img/maximum-usage/maximum-usage-full-report.png)
 
-Her abonelik düzeyi için rapor yeni bir yüksek atama düzeyi ve yüklemelerini sahip olduğu tüm tarihleri kolayca görmenize olanak sağlayan bu tarihten itibaren satın abonelik sayısı üst sınırına tarihi gösterir.  
+Her abonelik düzeyi için rapor, yeni bir maksimum atama düzeyine ulaştınız ve bu tarihten itibaren satın aldığınız aboneliklerin sayısını gösterir. böylece, çok sayıda fazla yüklemeye sahip olduğunuz herhangi bir tarihi kolayca görebilirsiniz.  
 
-Örneğin, yukarıdaki tabloda 12/13/2018'de Sözleşme'de Visual Studio Enterprise abonelikleri 123 vardı ve 120 atanmış görebilirsiniz.  1/8/2019 üzerinde 121 için toplam getiren bir daha fazla abonelik atandı.  Sonraki günün altı başka bir abonelik atanmış olan ve başka bir dört abonelikler yeni atamaları kapsayacak şekilde anlaşmaya eklendi.  
+Örneğin, yukarıdaki tabloda, sözleşmede 123 12/13/2018 Visual Studio Enterprise abonelik olduğunu ve 120 atandığını görebilirsiniz.  1/8/2019 ' de, bir abonelik daha atandı ve toplam 121 ' ye getiriliyor.  Sonraki gün, başka bir altı abonelik atandı ve yeni atamaları kapsayacak şekilde sözleşmeye başka dört abonelik eklenmiştir.  
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
-### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>S: En fazla kullanım bilgileri atama bilgileri portalının kullanılabilir "Genel bakış" bölümünde sol taraftaki farklı mı?
+### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Ç Maksimum kullanımdaki bilgiler, portalın sol tarafındaki "genel bakış" bölümünde bulunan atama bilgileri 'nden farklı midir?
 
-Y:  Kullanılabilir abonelikler her abonelik düzeyi ve geçerli atamaları genel bakış bilgileri gösterir.  Bu, herhangi bir noktada anlaşma için atanan abonelik sayısı çok farklı olabilir.  En fazla kullanım özelliği, ne düzeyleri başlatılmalı ve en fazla assignnment düzeyleri ulaşıldığında görmenizi sağlar.  Abonelikler için faturalama true artırma sırasında herhangi bir noktada atanan abonelik maksimum sayısına dayalı olduğundan önemli bir fark budur. 
+Y:  Genel görünümde bulunan bilgiler, her abonelik düzeyi için geçerli atamaları ve kullanılabilir abonelikleri gösterir.  Bu, herhangi bir noktada anlaşma için atanan maksimum abonelik sayısından çok farklı olabilir.  En yüksek kullanım özelliği, en yüksek assignnment seviyelerine ulaşıldığında ve düzeylerin ne zaman yapılacağını görmenizi sağlar.  Bu önemli bir ayırım olduğundan, doğru bir farklılık sırasında abonelikler için faturalandırma, yıl içinde herhangi bir noktada atanan maksimum abonelik sayısına bağlıdır. 
+
+## <a name="resources"></a>Kaynaklar
+- [Visual Studio lisanslama teknik incelemesi](https://aka.ms/vslicensing)
+- [Visual Studio Yönetim ve Abonelik Desteği](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Toplu Lisanslama Koşulları](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Abonelik atama veya Yönetim Portalı'nın diğer yönleri hakkında sorularınız varsa lütfen iletişime geçin https://visualstudio.microsoft.com/subscriptions/support/ Yardım almak için. 
+Abonelik atamaları veya yönetim portalının diğer yönleri hakkında sorularınız varsa, lütfen yardım için iletişime geçin https://visualstudio.microsoft.com/subscriptions/support/ . 
