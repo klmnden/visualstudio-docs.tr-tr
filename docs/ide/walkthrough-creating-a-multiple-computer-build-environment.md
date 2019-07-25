@@ -1,119 +1,120 @@
 ---
 title: 'İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262944"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461532"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
 
-Visual Studio bir ana bilgisayara yükleyerek, kuruluşunuzda bir yapı ortamı oluşturabilirsiniz ve böylece katılabilmesi çeşitli dosya ve ayarları başka bir bilgisayara ardından kopyalama oluşturur. Visual Studio'yu diğer bilgisayara yüklemeniz gerekmez.
+Kuruluşunuzda Visual Studio 'Yu bir ana bilgisayara yükleyerek ve sonra çeşitli dosya ve ayarları, yapılara katılabilecek şekilde başka bir bilgisayara kopyalayarak kuruluşunuz içinde bir yapı ortamı oluşturabilirsiniz. Visual Studio 'Yu diğer bilgisayara yüklemenize gerek yoktur.
 
-Bu belge, yazılımın harici olarak dağıtılması veya üçüncü taraflara yapı ortamları sağlamak için hakları confer değil.
+Bu belge, yazılımı dışarıdan yeniden dağıtmak veya üçüncü taraflara derleme ortamları sağlamak için bir haklara sahip değildir.
 
-> Sorumluluk reddi<br /><br /> Bu belge bir "olarak-olan" olarak. Özetlenen adımları Test ettiğimiz olsa da her yapılandırma tamamen test etmek yükümlü değiliz. Belgeyi öğrenilen herhangi ek bilgilerle güncel tutmaya dener. Bilgi ve URL ve diğer Internet Web sitesi referansları da dahil olmak üzere bu belgede, bildirilmeksizin değiştirilebilir. Microsoft hiçbir açık veya zımni bilgilerle garantide bulunmaz. Bunu kullanarak riski size aittir.<br /><br /> Bu belge ile herhangi bir Microsoft ürünü üzerinde hiçbir fikri mülkiyet hakkı sağlamaz. Kopyalayabilir ve dahili olarak, bu belgeyi kullanmak amacıyla başvuru.<br /><br /> Herhangi bir öneri, yorum veya bu belgeyle ilgili geribildirimde ("Geribildirim") Microsoft vermek zorunda değilsiniz. Ancak, gönüllü olarak sağlayacağınız her türlü geribildirim, Microsoft Products ve ilgili belirtimlerde veya hangi sırayla bağlı kendi ürünlerini geliştirmek için diğer üçüncü taraflarca dayanan diğer belgeleri (topluca, "Microsoft Offerings") kullanılabilir. Buna göre bu belgenin veya Microsoft uygulandıkları Offerings herhangi bir sürümü üzerinde Microsoft Feedback bildirimde bulunursanız, kabul etmiş olursunuz: (a) Microsoft serbestçe kullanın, yeniden oluşturma, lisans, dağıtmak ve aksi takdirde herhangi bir Microsoft geri bildirim tanımış olursunuz Teklif; (b), ayrıca üçüncü taraflara, ücretsiz, yalnızca diğer ürünleri kullanmayı veya kendi geri bildirim bir araya getiren herhangi belirli bir Microsoft Product ile arabirim parçaları etkinleştirmek için gereken bu patent hakkı vermek; ve (c) aldığınız düşünmenize neden olan herhangi bir Geri bildiriminiz (i) herhangi bir patent, telif hakkını veya diğer fikri mülkiyet veya üçüncü taraf sağ tabi olan Microsoft vermeyiz. veya (ii) konu Microsoft Offering geribildirimler veya bu geri bildirimlerden veya diğer Microsoft fikri mülkiyet için lisanslı veya aksi türetilmiş Lisans Koşulları'nı herhangi bir üçüncü tarafla paylaşılmaz.
+> Sorumluluk reddi<br /><br /> Bu belge "olduğu gibi" esasına göre sunulmaktadır. Özetlenen adımları test etmemiz mümkün olsa da, her yapılandırmanın tamamen test etmeme. Belgeyi, öğrendiğimiz tüm ek bilgilerle güncel tutmaya çalışacaktır. Bu belgede ifade edilen, URL ve diğer Internet Web sitesi başvuruları dahil olmak üzere bilgiler ve görünümler bildirimde bulunmaksızın değiştirilebilir. Microsoft, burada belirtilen bilgilere göre açık veya zımni hiçbir garanti vermez. Bunu kullanmanın riski size aittir.<br /><br /> Bu belge size herhangi bir Microsoft ürününde herhangi bir fikri mülkiyet hakkı sağlamaz. Bu belgeyi kendi dahili, başvuru amaçlarınız için kopyalayabilir ve kullanabilirsiniz.<br /><br /> Bu belgeyle ilgili olarak Microsoft 'a herhangi bir öneri, yorum veya geri bildirim ("geri bildirim") verme yükümlülüğü yoktur. Ancak, gönüllü olarak sağladığınız tüm geri bildirimler, Microsoft ürünlerinde ve ilgili belirtimlerde ya da başka belgelerde (topluca, "Microsoft teklifleri") kullanılabilir Buna uygun olarak, bu belgenin herhangi bir sürümünde veya uygulandıkları Microsoft tekliflerinden Microsoft 'a geri bildirimde bulunmayı kabul etmiş olursunuz: (a) Microsoft, görüşlerinizi herhangi bir Microsoft ile ücretsiz olarak kullanabilir, yeniden üretebilir, lisanslayın, dağıtabilir ve başka bir şekilde kullanabilir. Teklifi (b) Ayrıca üçüncü taraflara ücretsiz olarak, diğer ürünlerin yalnızca geri bildiriminizi içeren bir Microsoft ürününün belirli bölümleriyle kullanmasını veya arabirimini kullanmasını sağlamak için gerekli olan patent haklarını de vermiş olursunuz; ve (c) Microsoft 'a geri bildirim (i), herhangi bir patent, telif hakkı veya diğer fikri mülkiyet talebine ya da herhangi bir üçüncü tarafın olduğuna inanmanızın bir sebebini sunmayacak; ya da (ii) bu geri bildirimde bulunan veya ondan türetilmiş herhangi bir Microsoft teklifini ya da başka bir Microsoft fikri mülkiyet ya da herhangi bir üçüncü tarafla lisanslanmasını gerektiren lisans koşullarına tabidir.
 
-Bu kılavuz, aşağıdaki işletim sistemlerine karşı doğrulandı:
+Bu izlenecek yol aşağıdaki işletim sistemlerine karşı onaylanmıştır:
 
 - Windows 8 (x86 ve x64)
 - Windows 7 Ultimate
 - Windows Server 2008 R2 Standard
 
-Bu izlenecek yolda adımları tamamladıktan sonra bu tür uygulamalar oluşturmak için çoklu bilgisayar ortamı kullanabilirsiniz:
+Bu izlenecek adımları tamamladıktan sonra, bu tür uygulamaları oluşturmak için birden çok bilgisayar ortamı kullanabilirsiniz:
 
-- Windows 8 SDK kullanan C++ Masaüstü uygulamaları
-- .NET Framework 4.5 hedefleyen Visual Basic veya C# Masaüstü uygulamaları
+- C++Windows 8 SDK kullanan masaüstü uygulamaları
+- .NET Framework 4,5 C# 'yi hedefleyen Visual Basic veya masaüstü uygulamaları
 
-Bu tür uygulamalar oluşturmak için çoklu bilgisayar ortamı kullanılamaz:
+Birden çok bilgisayar ortamı, bu tür uygulamaları oluşturmak için kullanılamaz:
 
-- UWP uygulamaları. UWP uygulamaları oluşturmak için yapı bilgisayarında Visual Studio yüklemeniz gerekir.
-- .NET Framework 4 veya önceki sürümlerini hedefleyen Masaüstü uygulamaları. Bu tür uygulamalar oluşturmak için ya da Visual Studio veya .NET başvuru bütünleştirilmiş kodları ve Araçları (Windows 7.1 SDK'sı) yapı bilgisayarında yüklemeniz gerekir.
+- UWP uygulamaları. UWP uygulamaları oluşturmak için, Visual Studio 'Yu yapı bilgisayarına yüklemelisiniz.
+- .NET Framework 4 veya önceki sürümleri hedefleyen masaüstü uygulamaları. Bu tür uygulamaları oluşturmak için, Yapı bilgisayarında Visual Studio 'Yu veya .NET başvuru derlemelerini ve araçlarını (Windows 7,1 SDK 'dan) yüklemelisiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio ile **.NET Masaüstü geliştirmesinden** iş yükü yüklenmiş.
+**.Net masaüstü geliştirme** iş yükü yüklü Visual Studio.
 
-## <a name="install-software-on-the-computers"></a>Yazılımını bilgisayarlara yükleme
+## <a name="install-software-on-the-computers"></a>Bilgisayarlara yazılım yüklemesi
 
 İlk olarak, ana bilgisayarı ayarlayın ve ardından yapı bilgisayarını ayarlayın.
 
-Visual Studio ana bilgisayara yükleyerek, dosya ve daha sonra yapı bilgisayarına kopyalayacak ayarları oluşturun. Visual Studio yüklediğiniz bilgisayar, ancak Yapı bilgisayarının mimarisinin bir x86 veya x x64 ana bilgisayarın mimarisiyle eşleşmelidir.
+Visual Studio 'Yu ana bilgisayara yükleyerek, daha sonra yapı bilgisayarına kopyalayacaksınız dosya ve ayarları oluşturursunuz. Visual Studio 'Yu bir x86 veya x64 bilgisayara yükleyebilirsiniz, ancak yapı bilgisayarının mimarisinin ana bilgisayar mimarisiyle eşleşmesi gerekir.
 
-1. Ana bilgisayarda Visual Studio'yu yükleyin.
+1. Ana bilgisayarda, Visual Studio 'Yu yükler.
 
-2. Yapı bilgisayarında .NET Framework 4.5 veya sonraki bir sürümü yükleyin. Yüklü olduğunu doğrulamak için kontrol **sürüm** girdi kayıt defteri alt anahtarında **hkey_local_machıne\software\microsoft\net Framework Setup\NDP\v4\Full** değeri **4.5** veya üzeri.
+2. Yapı bilgisayarında, 4,5 veya sonraki bir sürümü .NET Framework. Yüklendiğini doğrulamak için **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** kayıt defteri alt anahtarındaki **Sürüm** girişinin **4,5** veya üzeri bir değere sahip olduğundan emin olun.
 
-## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Dosyaları ana bilgisayardan yapı bilgisayarına kopyalayın.
+## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Dosyaları ana bilgisayardan yapı bilgisayarına Kopyala
 
-Bu bölüm, belirli dosyaları, derleyicileri, derleme araçları, MSBuild varlıklarını ve yapı bilgisayarı ana bilgisayar kayıt defteri ayarlarını kopyalamayı kapsar. Bu yönergeler, Visual Studio ana bilgisayarda varsayılan konuma yüklediğinizi varsayar; başka bir konuma yüklediyseniz adımları da buna göre ayarlayın.
+Bu bölüm, ana bilgisayardan yapı bilgisayarına belirli dosyaları, derleyiciler, derleme araçları, MSBuild varlıkları ve kayıt defteri ayarlarının kopyalanmasını ele alır. Bu yönergeler, Visual Studio 'Yu ana bilgisayarda varsayılan konuma yüklediğinizi varsayar; başka bir konuma yüklediyseniz, adımları uygun şekilde ayarlayın.
 
-- X x86 bilgisayar için varsayılan konumdur *C:\Program Files\Microsoft Visual Studio*
-- X x64 bilgisayar için varsayılan konumdur *C:\Program Files (x86) \Microsoft Visual Studio*
+- X86 bilgisayarda, varsayılan konum *C:\Program Files\Microsoft Visual Studio*
+- X64 bilgisayarda, varsayılan konum *C:\Program Files (x86) \Microsoft Visual Studio* ' dır
 
-Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağlıdır. X x86 bilgisayar adıdır *Program dosyaları*; x x64 bilgisayar adıdır *Program dosyaları (x86)* . Sistem Mimarisi ne olursa olsun, bu izlenecek yolda başvurduğu *Program dosyaları* klasör olarak *% ProgramFiles %* .
+*Program dosyaları* klasörünün adının yüklü olan işletim sistemine bağlı olduğuna dikkat edin. X86 bilgisayarda, ad *program dosyalarıdır*; x64 bilgisayarda, ad *Program Files (x86)* ' dır. Sistem mimarisinden bağımsız olarak, Bu izlenecek yol *% ProgramFiles%* olarak *Program Files* klasörüne başvurur.
 
 > [!NOTE]
-> Yapı bilgisayarında, tüm ilgili dosyalar aynı sürücüde olmalıdır. Ancak, söz konusu sürücünün sürücü harfi, Visual Studio ana bilgisayarında yüklü olduğu sürücünün sürücü harfi farklı olabilir. Her iki durumda da, bu belgenin sonraki bölümlerinde açıklandığı şekilde kayıt defteri girdileri oluşturduğunuzda dosyalarının konumunu dikkate alması gerekir.
+> Yapı bilgisayarında, tüm ilgili dosyalar aynı sürücüde olmalıdır. Ancak, bu sürücünün sürücü harfi, Visual Studio 'nun ana bilgisayarda yüklü olduğu sürücünün sürücü harfinden farklı olabilir. Herhangi bir durumda, bu belgenin ilerleyen kısımlarında açıklandığı gibi kayıt defteri girişleri oluştururken dosyaların konumunu hesaba almalısınız.
 
-### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK dosyalarını yapı bilgisayarına kopyalayın.
+### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK dosyalarını yapı bilgisayarına kopyalayın
 
-1. Yalnızca Windows SDK'sı için Windows 8 yüklü varsa, bu klasörleri tekrar tekrar ana bilgisayardan yapı bilgisayarına kopyalayın:
+1. Yalnızca Windows 8 için Windows SDK yüklüyse, bu klasörleri, ana bilgisayardan yapı bilgisayarına özyinelemeli olarak kopyalayın:
 
-   - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %Kits\8.0\bin\
 
-   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %Kits\8.0\catalogs\
 
-   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %Kits\8.0\designtime\
 
-   - %ProgramFiles%\Windows Kits\8.0\include\
+   - %Kits\8.0\include\
 
-   - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %Kits\8.0\lib\
 
    - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-   - %ProgramFiles%\Windows Kits\8.0\References\
+   - %Kits\8.0\references\
 
-   Ayrıca bunlar başka Windows 8 setleriniz varsa...
+   Ayrıca, bu diğer Windows 8 setlerine sahipseniz...
 
-   - Microsoft Windows değerlendirme ve Dağıtım Seti
+   - Microsoft Windows değerlendirme ve dağıtım seti
 
    - Microsoft Windows Sürücü Seti
 
-   - Microsoft Windows Donanım onay Seti
+   - Microsoft Windows donanım sertifikasyon seti
 
-   ... dosyalarına yüklemiş olabilirsiniz *%ProgramFiles%\Windows Kits\8.0* önceki adımı ve bunların lisans koşullarını listelenen klasörler bu dosyalara ilişkin yapı sunucu haklarına izin. Dosyaların derleme bilgisayarınıza kopyalanıp kopyalanmadığını doğrulamak yüklü her Windows Kiti için lisans koşullarını kontrol edin. Lisans koşulları yapı sunucusu haklarına izin verme, dosyaları yapı bilgisayarından kaldırın.
+   ... Bunlar, önceki adımda listelenen *%Kits\8.0* klasörlerine dosya yüklemiş olabilirler ve lisans koşulları bu dosyalar için Build-Server haklarına izin vermiyor olabilir. Dosyaların yapı bilgisayarınıza kopyalanıp kopyalanmayacağını doğrulamak için, yüklü her Windows Kit 'in lisans koşullarını denetleyin. Lisans koşulları, Build-Server haklarına izin vermedikçe, dosyaları yapı bilgisayarından kaldırın.
 
 2. Aşağıdaki klasörleri yinelemeli olarak ana bilgisayardan yapı bilgisayarına kopyalayın:
 
-    - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\
+    - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4,0 Araçları \
 
-    - %ProgramFiles%\Common Files\Merge Modules\
+    - %ProgramFiles%\Common Files\Merge modülleri \
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<sürüm >\\Edition>\VC\\<
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<sürüm >\\Edition>\<\Common7\Tools\ProjectComponents\
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
+    - %ProgramFiles%\Reference, Lies\microsoft\framework\\. Netcore\v4,\
 
-    - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\
+    - %ProgramFiles%\Reference, Lies\microsoft\framework\\. NETFramework\v4.5\
 
 3. Bu dosyaları ana bilgisayardan yapı bilgisayarına kopyalayın:
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<sürüm >\\Edition>\<\Common7\IDE\msobj110.dll
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdb110.dll
 
@@ -123,13 +124,13 @@ Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağl
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<sürüm >\\Edition>\<\Common7\Tools\makehm.exe
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. Yapı bilgisayarında yapı çıkışları çalıştırırsanız aşağıdaki Visual C++ çalışma zamanı kitaplıkları gereklidir; Örneğin, otomatikleştirilmiş test işleminin parçası olarak. Dosyaları altındaki alt genellikle bulunan *%ProgramFiles%\Microsoft Visual Studio\\\<sürüm >\\\<sürümü > \VC\redist\x86* veya  *%ProgramFiles%\Microsoft visual Studio\\\<sürüm >\\\<sürümü > \VC\redist\x64* sistem mimarisine bağlı olarak bir klasör. X86 sistemleri, ikili dosyalarını kopyalama x86 *Windows\System32* klasör. X64 sistemleri, ikili dosyalarını kopyalama x86 *Windows\SysWOW64* klasörü ve x64 ikili dosyalarını *Windows\System32* klasör.
+4. Aşağıdaki görsel C++ çalışma zamanı kitaplıkları yalnızca derleme bilgisayarında yapı çıktıları çalıştırırsanız gereklidir — Örneğin, otomatik testlerin bir parçası olarak. Dosyalar genellikle *%ProgramFiles%\Microsoft\\Visual Studio\<\\Version>\<Edition > \vc\redist\x86* veya *%ProgramFiles%\Microsoft Visual altında alt klasörlerde bulunur System\\mimarisine bağlı\\olarak, Studio\<\<sürümü > Edition > \vc\redist\x64* klasörü. X86 sistemlerinde, x86 ikililerini *Windows\System32* klasörüne kopyalayın. X64 sistemlerde, x86 ikililerini *Windows\syswow64* klasörüne ve x64 ikililerini *Windows\System32* klasörüne kopyalayın.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -169,7 +170,7 @@ Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağl
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Yalnızca aşağıdaki dosyaları kopyalayın *Debug_NonRedist\x86* veya *Debug_NonRedist\x64* klasör açıklandığı gibi yapı bilgisayara [bir hata ayıklama yürütülebilirçalıştırmakiçintestmakinesihazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Başka hiçbir dosya kopyalanamaz.
+5. [Bir hata ayıklama yürütülebiliri çalıştırmak için test makinesi hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)bölümünde açıklandığı gibi, yalnızca aşağıdaki dosyaları *Debug_NonRedist\x86* veya *Debug_NonRedist\x64* klasöründen yapı bilgisayarına kopyalayın. Başka hiçbir dosya kopyalanmayabilir.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -189,56 +190,56 @@ Dikkat adını *Program dosyaları* klasörü, yüklü işletim sisteminde bağl
 
 ## <a name="create-registry-settings"></a>Kayıt defteri ayarları oluşturma
 
-MSBuild ayarlarını yapılandırmak için kayıt defteri girdileri oluşturmanız gerekir.
+MSBuild ayarlarını yapılandırmak için kayıt defteri girişleri oluşturmanız gerekir.
 
-1. Kayıt defteri girişleri için ana klasörü belirleyin. Tüm kayıt defteri girdilerini aynı üst anahtar altında oluşturulur. X x86 bilgisayardır, üst anahtar **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. X x64 bilgisayarında üst anahtar olduğunu **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Sistem Mimarisi ne olursa olsun, bu İnceleme % RegistryRoot % olarak üst anahtara başvurur.
+1. Kayıt defteri girdileri için üst klasörü belirler. Tüm kayıt defteri girdileri aynı üst anahtar altında oluşturulur. X86 bilgisayarda, üst anahtar **HKEY_LOCAL_MACHINE\Software\Microsoft**' dir. X64 bilgisayarda, üst anahtar **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**olur. Sistem mimarisinden bağımsız olarak, Bu izlenecek yol% RegistryRoot% olarak ana anahtara başvurur.
 
     > [!NOTE]
-    > Ana bilgisayarınızın mimarisi yapı farklıysa, her bilgisayarda uygun üst anahtarı kullandığınızdan emin olun. Bu dışarı aktarma işlemini otomatikleştiriyorsanız özellikle önem taşır.
+    > Ana bilgisayarınızın mimarisi yapı bilgisayarınızdan farklıysa, her bilgisayarda uygun üst anahtarı kullandığınızdan emin olun. Dışarı aktarma işlemini otomatikleştiriyorsanız bu özellikle önemlidir.
     >
-    > Ayrıca, yapı bilgisayarında ana bilgisayarda kullandığınız olandan farklı bir sürücü harfi kullanıyorsanız, eşleşmesi için kayıt defteri girdilerinin değerlerini değiştirdiğinizden emin olun.
+    > Ayrıca, Yapı bilgisayarında, ana bilgisayarda kullandığınızdan farklı bir sürücü harfi kullanıyorsanız, kayıt defteri girdilerinin değerlerini eşleşecek şekilde değiştirdiğinizden emin olun.
 
-2. Yapı bilgisayarında aşağıdaki kayıt defteri girdilerini oluşturun. Tüm bu girdiler dizelerdir (tür == "REG_SZ" kayıt defterinde). Bu girişlerin değerlerini aynı ana bilgisayarda benzer girişlerle değerleri olarak ayarlayın.
+2. Yapı bilgisayarında aşağıdaki kayıt defteri girdilerini oluşturun. Bu girdilerin hepsi dizelerdir (Type = = "REG_SZ" kayıt defterinde). Bu girişlerin değerlerini konak bilgisayardaki karşılaştırılabilir girişlerin değerleriyle aynı olarak ayarlayın.
 
-   - **% RegistryRoot %\\. NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(varsayılan)**
+   - **% RegistryRoot%\\. NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild genel derlemeler @ (varsayılan)**
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
+   - <strong>%RegistryRoot%\MicrosoftSDKs\Windows\v8.0@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
+   - <strong>%RegistryRoot%\MicrosoftSDKs\Windows\v8.0A@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
+   - <strong>%RegistryRoot%\MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
+   - <strong>%RegistryRoot%\MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-   - **% RegistryRoot %\VisualStudio\11.0@Source dizinleri**
+   - **% RegistryRoot%\VisualStudio\11.0@Source dizinleri**
 
-   - <strong>% RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir</strong>
+   - <strong>% RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32</strong>
+   - <strong>% RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64</strong>
+   - <strong>% RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32</strong>
+   - <strong>% RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64</strong>
+   - <strong>% RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-   - **% RegistryRoot %\VisualStudio\SxS\VC7@11.0**
+   - **% RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-   - **% RegistryRoot %\VisualStudio\SxS\VS7@11.0**
+   - **% RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
+   - <strong>%RegistryRoot%\Windows Kits\yüklendiRoots@KitsRoot</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
+   - <strong>% RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
+   - <strong>% RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
+   - <strong>% RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-   Yapı bilgisayarı üzerinde bir x64, ayrıca şu kayıt defteri girişi oluşturun ve nasıl ayarlanacağını belirlemek için konak bilgisayara başvurun.
+   X64 Yapı bilgisayarında Ayrıca, aşağıdaki kayıt defteri girişini oluşturun ve nasıl ayarlanacağını öğrenmek için ana bilgisayara başvurun.
 
-   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
+   - <strong>%RegistryRoot%\MicrosoftSDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-   Yapı bilgisayarınız x64 ise ve MSBuild 64 bit sürümünü kullanmak istiyorsanız veya x x64 üzerinde Team Foundation Server yapı Hizmeti'ni kullanıyorsanız, bilgisayar, yerel 64 bit kayıt defterinde aşağıdaki kayıt defteri girdilerini oluşturun. Bu girişlerin nasıl ayarlanacağını belirlemek için konak bilgisayara başvurun.
+   Yapı Bilgisayarınız x64 ise ve MSBuild 'in 64 bit sürümünü kullanmak istiyorsanız veya bir x64 bilgisayarda Team Foundation Server derleme hizmeti kullanıyorsanız, yerel 64 bit kayıt defterinde aşağıdaki kayıt defteri girdilerini oluşturun. Bu girişlerin nasıl ayarlanacağını öğrenmek için konak bilgisayara bakın.
 
    - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
@@ -250,47 +251,47 @@ MSBuild ayarlarını yapılandırmak için kayıt defteri girdileri oluşturman�
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>Yapı bilgisayarında ortam değişkenlerini ayarlama
 
-Yapı bilgisayarında MSBuild kullanmak için PATH ortam değişkenleri ayarlamanız gerekir. Kullanabileceğiniz *vcvarsall.bat* veya değişkenleri ayarlamak için bunları el ile yapılandırabilirsiniz.
+Yapı bilgisayarında MSBuild 'i kullanmak için, PATH ortam değişkenlerini ayarlamanız gerekir. Değişkenleri ayarlamak için *vcvarsall. bat* kullanabilirsiniz veya bunları el ile yapılandırabilirsiniz.
 
-### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Vcvarsall.bat'ı ortam değişkenlerini ayarlamak için kullanın
+### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Ortam değişkenlerini ayarlamak için vcvarsall. bat kullanın
 
-Açık bir **komut istemi** çalıştırma ve yapı bilgisayarı üzerinde penceresi *% Program Files%\Microsoft Visual Studio\\\<sürüm >\\\<sürümü > \VC\ Vcvarsall.bat*. Kullanmak istediğiniz araç kümesini belirtmek için bir komut satırı bağımsız değişkeni kullanabilirsiniz — x86, yerel x64 veya x64 çapraz derleyici. Bir komut satırı bağımsız değişkeni, araç kümesi kullanılır x86 belirtmezseniz.
+Yapı bilgisayarında **bir komut istemi** penceresi açın ve *\\% Program Files%\Microsoft Visual Studio\<Version >\\\<Edition > \vc\vcvarsall.bat*komutunu çalıştırın. Kullanmak istediğiniz araç takımını (x86, yerel x64 veya x64 çapraz derleyicisi) belirtmek için bir komut satırı bağımsız değişkeni kullanabilirsiniz. Bir komut satırı bağımsız değişkeni belirtmezseniz, x86 araç takımı kullanılır.
 
-Bu tablo için desteklenen bağımsız değişkenleri açıklar *vcvarsall.bat*:
+Bu tabloda, *vcvarsall. bat*için desteklenen bağımsız değişkenler açıklanmaktadır:
 
-|Vcvarsall.bat bağımsız değişkeni|Derleyici|Bilgisayar mimarisi oluşturun|Çıkış mimarisini oluşturun|
+|Vcvarsall. bat bağımsız değişkeni|Derleyici|Bilgisayar mimarisi oluşturun|Derleme çıkış mimarisi|
 | - |--------------| - | - |
-|x86 (varsayılan)|32 bit yerel|x86, x64|x86|
-|x86_amd64|platformlar arası x64|x86, x64|X64|
+|x86 (varsayılan)|32-bit yerel|x86, x64|x86|
+|x86_amd64|x64 çapraz|x86, x64|X64|
 |amd64|x64 yerel|X64|X64|
 
-Varsa *vcvarsall.bat* başarıyla çalıştıktan — diğer bir deyişle, hiçbir hata iletisi görüntülenir; sonraki adıma atla ve devam [yükleme MSBuild derlemeleri için Genel Derleme Önbelleği (GAC) yapı bilgisayarında](#install-msbuild-to-gac)bu belgenin bölüm.
+*Vcvarsall. bat* başarıyla çalışırsa — diğer bir deyişle, hata iletisi görüntülenmediğinde, bir sonraki adımı atlayabilir ve [MSBuild derlemelerini bu belgenin yapı bilgisayarı bölümünde genel derleme ÖNBELLEĞI 'ne (GAC) yüklemeye](#install-msbuild-to-gac) devam edebilirsiniz.
 
 ### <a name="manually-set-environment-variables"></a>Ortam değişkenlerini el ile ayarlama
 
 1. Komut satırı ortamını el ile yapılandırmak için bu yolu PATH ortam değişkenine ekleyin:
 
-    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
+    - % Program Files%\Microsoft Visual Studio\\\<sürüm >\\\<Edition > \Common7\IDE
 
-2. İsteğe bağlı olarak, çözümlerinizi derlemek için MSBuild kullanmak daha kolay hale getirmek için PATH değişkenini aşağıdaki yolları da ekleyebilirsiniz.
+2. İsteğe bağlı olarak, çözümlerinizi oluşturmak için MSBuild 'in kullanılmasını kolaylaştırmak için yol değişkenine aşağıdaki yolları da ekleyebilirsiniz.
 
-   Yerel 32-bit MSBuild kullanmak istiyorsanız, bu yolları PATH değişkenine ekleyin:
+   Yerel 32 bit MSBuild 'i kullanmak istiyorsanız, bu yolları yol değişkenine ekleyin:
 
-   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Araçları
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4,0 Araçları
 
    - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-   Yerel 64-bit MSBuild kullanmak istiyorsanız, bu yolları PATH değişkenine ekleyin:
+   Yerel 64 bit MSBuild 'i kullanmak istiyorsanız, bu yolları yol değişkenine ekleyin:
 
-   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4,0 Tools\x64
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> İçin Genel Derleme Önbelleği (GAC) yapı bilgisayarında MSBuild derlemeleri yükleme
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" />Yapılandırma bilgisayarında genel derleme önbelleği 'ne (GAC) MSBuild derlemeleri yükler
 
-MSBuild, yapı bilgisayarında GAC'ye yüklenecek bazı ek derlemeler yüklenmesi gerekir.
+MSBuild, derleme bilgisayarında GAC 'ye bazı ek derlemeler yüklenmesini gerektirir.
 
-1. Aşağıdaki derlemeleri ana bilgisayardan yapı bilgisayarına kopyalayın. GAC'ye yüklenecek çünkü burada bunları yapı bilgisayarında yerleştirdiğiniz önemi yoktur.
+1. Aşağıdaki derlemeleri ana bilgisayardan yapı bilgisayarına kopyalayın. Bunlar GAC 'ye yüklenebileceğinden, bunları yapı bilgisayarına nereye yerleştirdiğinizden bağımsız değildir.
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
@@ -298,61 +299,61 @@ MSBuild, yapı bilgisayarında GAC'ye yüklenecek bazı ek derlemeler yüklenmes
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Derlemeleri GAC'ye yüklemek için bulun *gacutil.exe* yapı bilgisayarında — genellikle %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 araçlarında olduğu\\. Bu klasörü bulamıyorsanız, adımları yineleyin [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) Bu anlatım bölümü.
+2. Derlemeleri GAC 'ye yüklemek için, derleme bilgisayarında *Gacutil. exe* ' yi (genellikle%ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4,0 Araçları\\) bulun. Bu klasörü bulamazsanız, Bu izlenecek yolun [ana bilgisayar bilgisayarındaki dosyaları Kopyala](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) bölümünde bulunan adımları yineleyin.
 
-     Açık bir **komut istemi** penceresini yönetici haklarına sahip ve her dosya için şu komutu çalıştırın:
+     Yönetici haklarına sahip bir **komut istemi** penceresi açın ve her dosya için bu komutu çalıştırın:
 
-     **Gacutil -i \<dosyası >**
+     **Gacutil-i \<dosyası >**
 
     > [!NOTE]
-    > Bir derlemenin GAC öğesine tam olarak yüklemek için bir yeniden başlatma gerekebilir.
+    > Bir derlemenin GAC 'ye tam olarak yüklenmesi için yeniden başlatma gerekebilir.
 
-## <a name="build-projects"></a>Projeler derleme
+## <a name="build-projects"></a>Yapı projeleri
 
-Visual Studio projeleri ve çözümleri oluşturmak için Azure işlem hatlarını kullanın veya komut satırında oluşturabilirsiniz. Projeleri derlemek için Azure işlem hatları kullandığınızda, sistem mimarisine karşılık gelen MSBuild yürütülebilir dosyasını çağırır. Komut satırında, 32-bit MSBuild veya 64-bit MSBuild kullanabilirsiniz ve PATH ortam değişkenini ayarlayarak veya doğrudan mimariye özgü MSBuild yürütülebilir dosyasını çağırarak MSBuild'in mimarisini seçebilirsiniz.
+Azure Pipelines kullanarak Visual Studio projeleri ve çözümleri oluşturabilir veya bunları komut satırında oluşturabilirsiniz. Projeleri oluşturmak için Azure Pipelines kullandığınızda, sistem mimarisine karşılık gelen MSBuild yürütülebiliri çağırır. Komut satırında 32-bit MSBuild veya 64-bit MSBuild kullanabilirsiniz ve yol ortam değişkenini ayarlayarak ya da mimariye özgü MSBuild yürütülebilir dosyasını doğrudan çağırarak MSBuild mimarisini seçebilirsiniz.
 
-Kullanılacak *msbuild.exe* komut isteminde aşağıdaki komutu çalıştırarak *solution.sln* , uygulamanızın adı için bir yer tutucudur.
+Komut isteminde *MSBuild. exe* ' yi kullanmak için aşağıdaki komutu çalıştırın *. burada çözüm* , çözümünüzün adı için bir yer tutucudur.
 
-**MSBuild** *solution.sln*
+**MSBuild** *çözüm. sln*
 
-Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).
+Komut satırında MSBuild 'i kullanma hakkında daha fazla bilgi için bkz. [komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md).
 
-## <a name="create-the-build-environment-so-that-it-can-be-checked-into-source-control"></a>Böylece kaynak denetimine iade yapı ortamını oluşturun
+## <a name="create-the-build-environment-so-that-it-can-be-checked-into-source-control"></a>Kaynak denetimine denetlenebilmesi için derleme ortamını oluşturun
 
-"GAC" ing dosyaları veya kayıt defteri ayarlarının değiştirilmesini gerektirmeyen ve çeşitli bilgisayarlara dağıtılan bir yapı ortamı oluşturabilirsiniz. Aşağıdaki adımlarda bunu yapmanın tek yoludur. Bu adımları yapı ortamınızın benzersiz karakteristiğine uyarlayın.
+Çeşitli bilgisayarlara dağıtılabilecek ve "GAC" dosyaları gerektirmeyen ya da kayıt defteri ayarlarını değiştiren bir yapı ortamı oluşturabilirsiniz. Aşağıdaki adımlar bunu gerçekleştirmenin yalnızca bir yoludur. Bu adımları yapı ortamınızın benzersiz özelliklerine uyarlayın.
 
 > [!NOTE]
-> Artımlı oluşturmayı devre dışı bırakmanız gerekir böylece *tracker.exe* derleme sırasında bir hata oluşturmaz. Artımlı oluşturmayı devre dışı bırakmak için bu yapı parametresini ayarlayın:
+> *İzleyici. exe* ' nin bir derleme sırasında hata oluşturması için artımlı derlemeyi devre dışı bırakmanız gerekir. Artımlı derlemeyi devre dışı bırakmak için, bu derleme parametresini ayarlayın:
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
-1. Oluşturma bir *Depot* ana bilgisayarda dizin.
+1. Ana bilgisayarda bir *deposu* dizini oluşturun.
 
-     Bu adımlar, dizine % Depot % bakın.
+     Bu adımlar dizine% deposu% olarak başvurur.
 
-2. Dizinleri ve dosyaları açıklandığı gibi kopyalayın [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) bölümü altında yapıştırın dışında bu kılavuzun *% Depot %* yeni dizin oluşturuldu. Örneğin, kopyalama *%ProgramFiles%\Windows Kits\8.0\bin* için *%Depot%\Windows Kits\8.0\bin*.
+2. Dizinleri ve dosyaları, Bu izlenecek yolun [dosyaları ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) Kopyala bölümünde açıklandığı gibi kopyalayın, ancak bunları az önce oluşturduğunuz *% deposu%* dizininin altına yapıştırın. Örneğin, *%Kits\8.0\Bin* konumundan *%Depot%\Windows Kits\8.0\Bin dizinine*kopyalayın.
 
-3. Dosyalar ne zaman yapıştırılan içinde *% Depot %* , şu değişiklikleri yapın:
+3. Dosyalar *% deposu%* içine yapıştırılırken şu değişiklikleri yapın:
 
-    - % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ve \Microsoft.CppCommon.targets\\, her örneğini değiştirin ,
+    - %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.cpp.targets, \Microsoft.cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ve \Microsoft.CppCommon.targets\\içinde her örneği değiştirin durumunu
 
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-
-         to
-
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
-
-         Önceki Adlandırma gac'lenen derlemeye dayanır.
-
-    - % Depot % \msbuild\microsoft.cpp\v4.0\v110\microsoft.cppclean.targets'ta her örneğini değiştirin:
-
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+         AssemblyName = "Microsoft. Build. CppTasks. Common. v110, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"
 
          to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. Oluşturma bir *.props* dosya — Örneğin, *Partner.autoımports.props*— ve projelerinizi içeren klasörün kökünde yerleştirin. Bu dosya, çeşitli kaynakları bulmak amacıyla MSBuild tarafından kullanılan değişkenleri ayarlamak için kullanılır. Değişkenler bu dosya tarafından ayarlanmazsa, diğer tarafından ayarlanırlar *.props* dosyaları ve *.targets* kayıt defteri değerlerine dayanan dosyaları. Biz herhangi bir kayıt defteri değeri ayarı olmayan olduğundan, bu değişkenler boş ve yapı başarısız olur. Bunun yerine şuna ekleyin *Partner.autoımports.props*:
+         Eski adlandırma, GAC'ed olan derlemeye bağımlıdır.
+
+    - % Deposu% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets içinde her örneğini değiştirin
+
+         AssemblyName = "Microsoft. Build. CppTasks. Common. v110, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a"
+
+         to
+
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
+
+4. Bir *. props* dosyası oluşturun — örneğin, *partner. oto Imports. props*— ve projelerinizi içeren klasörün köküne yerleştirin. Bu dosya, çeşitli kaynakları bulmak için MSBuild tarafından kullanılan değişkenleri ayarlamak için kullanılır. Değişkenler bu dosya tarafından ayarlanmamışsa, kayıt defteri değerlerini kullanan diğer *. props* dosyaları ve *. targets* dosyaları tarafından ayarlanır. Hiçbir kayıt defteri değeri ayarlamadığımızda, bu değişkenler boş olur ve derleme başarısız olur. Bunun yerine, bunu *partner. oto Imports. props*öğesine ekleyin:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -375,7 +376,7 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
     </Project>
     ```
 
-5. Her proje dosyalarınızı sonra yukarıya aşağıdaki satırı ekleyin `<Project Default Targets...>` satır.
+5. Her proje dosyasında, `<Project Default Targets...>` satırın arkasına aşağıdaki satırı ekleyin.
 
     ```xml
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
@@ -385,11 +386,11 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
 
 6. Komut satırı ortamını aşağıdaki gibi değiştirin:
 
-    - Ayarlama Depot =*1. adımda oluşturduğunuz Depot dizininin konumu*
+    - *1. adımda oluşturduğunuz deposu dizininin* deposu = location öğesini ayarlayın
 
-    - Kümesi yolu % path %; = *MSBuild konumunu bilgisayarda*; %D epot%\Windows\System32;%D epot%\Windows\SysWOW64;%D Visual Studio 15.0\Common7\IDE\ epot%\Microsoft
+    - Küme yolu =% path%; *bilgisayardaki MSBuild 'in konumu*;% D epot%\Windows\System32;% D epot%\Windows\SysWOW64;% D epot%\Microsoft Visual Studio 15.0 \ Common7\IDE\
 
-       Yerel 64 bit yapı için MSBuild'ın 64 bit sürümüne gelin.
+       Yerel 64 bit oluşturma için MSBuild 'in 64 bit sürümüne işaret edin.
 
 ::: moniker-end
 
@@ -397,15 +398,15 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
 
 6. Komut satırı ortamını aşağıdaki gibi değiştirin:
 
-    - Ayarlama Depot =*1. adımda oluşturduğunuz Depot dizininin konumu*
+    - *1. adımda oluşturduğunuz deposu dizininin* deposu = location öğesini ayarlayın
 
-    - Kümesi yolu % path %; = *MSBuild konumunu bilgisayarda*; %D epot%\Windows\System32;%D epot%\Windows\SysWOW64;%D Visual Studio 16.0\Common7\IDE\ epot%\Microsoft
+    - Küme yolu =% path%; *bilgisayardaki MSBuild 'in konumu*;% D epot%\Windows\System32;% D epot%\Windows\SysWOW64;% D epot%\Microsoft Visual Studio 16.0 \ Common7\IDE\
 
-       Yerel 64 bit yapı için MSBuild'ın 64 bit sürümüne gelin.
+       Yerel 64 bit oluşturma için MSBuild 'in 64 bit sürümüne işaret edin.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklama yürütülebilir çalıştırmak için test makinesi hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
+- [Hata ayıklama yürütülebiliri çalıştırmak için bir test makinesi hazırlama](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)

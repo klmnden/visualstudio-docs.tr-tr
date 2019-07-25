@@ -1,5 +1,5 @@
 ---
-title: Bir ETL izleme PerfView ile Topla
+title: PerfView ile ETL izlemesi toplama
 ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,31 +15,31 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: baae89b7bf45a4848c571f75e37c6cc0d203d459
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518237"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461547"
 ---
-# <a name="collect-an-etl-trace-with-perfview"></a>Bir ETL izleme PerfView ile Topla
+# <a name="collect-an-etl-trace-with-perfview"></a>PerfView ile ETL izlemesi toplama
 
-PerfView göre ETL (olay izleme günlüğü) dosyaları oluşturan bir araçtır [olay izleme için Windows](/windows/desktop/ETW/event-tracing-portal) , bazı tür kapalı Visual Studio ile ilgili sorunları gidermeye yararlı olabilir. Bazen ne zaman sorun bildir, ürün ekibi, ek bilgi toplamak için PerfView çalıştırmanızı isteyebilir.
+PerfView, Visual Studio ile ilgili bazı sorunların giderilmesi için yararlı olabilecek, [Windows Için olay izleme](/windows/desktop/ETW/event-tracing-portal) 'ye dayalı ETL (olay izleme günlüğü) dosyaları oluşturan bir araçtır. Bazen bir sorun rapor ettiğinizde, ürün ekibi ek bilgi toplamak için PerfView çalıştırmanızı isteyebilir.
 
-## <a name="install-perfview"></a>PerfView yükleyin
+## <a name="install-perfview"></a>PerfView 'ı yükler
 
-PerfView'nden indirin [Microsoft İndirme Merkezi](http://www.microsoft.com/download/details.aspx?id=28567).
+PerfView 'ı [Microsoft Indirme merkezi](http://www.microsoft.com/download/details.aspx?id=28567)' nden indirin.
 
-## <a name="run-perfview"></a>PerfView çalıştırın
+## <a name="run-perfview"></a>PerfView çalıştırma
 
-1. Sağ **PerfView.exe** Windows Gezgini'nde seçin **yönetici olarak çalıştır** Yöneticisi
-1. Toplama menüsünde **Topla**
-1. Denetleme **Zip**, **birleştirme**, ve **İşParçacığıSüresi**.
-1. Artırmak **döngüsel MB** 1000.
-1. Değişiklik **geçerli dizini** birden çok kez toplamak için kullanacaksanız, belirtilen klasör ve veri dosyası için ETL izlemeleri kaydetmek için.
-1. Veri kaydını başlatmak için **toplamaya Başla** düğmesi.
-1. Veri kaydı durdurmak için seçin **toplamasını Durdur** düğmesi. Belirtilen dizindeki PrefView.etl.zip dosyası kaydedilir.
+1. Windows Gezgini 'nde **PerfView. exe** ' ye sağ tıklayın ve **yönetici olarak çalıştır** ' ı seçin.
+1. Topla menüsünde **topla** ' yı seçin.
+1. **Zip**, **birleştirme**ve **threadtime**'ı denetleyin.
+1. **DAIRESEL MB** ile 1000 arasında bir artış yapın.
+1. Birden çok kez toplanmanız durumunda ETL izlemelerini belirtilen bir klasöre ve veri dosyasına kaydetmek için **geçerli dizini** değiştirin.
+1. Veri kaydetmeye başlamak için **koleksiyonu Başlat** düğmesini seçin.
+1. Verileri kaydetmeyi durdurmak için **koleksiyonu durdur** düğmesini seçin. Tercih görünümü. etl. zip dosyası belirtilen dizine kaydedilecek.
 
-PerfView kendi arabelleğe uygun en son veriyi depolayabilirsiniz. Bu nedenle, Visual Studio dondurma veya yavaşlamasına başladıktan sonra toplama olabildiğince çabuk durdurmayı deneyin. Bir sorun isabet sonra birden fazla 30 saniye için toplamayın.
+PerfView yalnızca kendi arabelleğine sığan en son verileri saklayabilir. Bu nedenle, Visual Studio Donmadan veya yavaşlamaya başladıktan sonra toplamayı en kısa sürede durdurmayı deneyin. Bir sorunla karşılaşmadan 30 saniyeden uzun süre toplanmayın.
 
-Daha fazla bilgi için [channel9 Öğreticisi PerfView](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command).
+Daha fazla bilgi için bkz. [Channel9 üzerinde PerfView öğreticisi](http://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-1-Collecting-data-with-the-Run-command).

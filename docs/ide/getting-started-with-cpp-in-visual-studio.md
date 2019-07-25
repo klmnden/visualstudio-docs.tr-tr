@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043400"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461696"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -28,19 +28,19 @@ Bu hızlı başlangıcı tamamlamak için C++ ile ilgili bilgi sahibi olmanız g
 
 ::: moniker range="vs-2017"
 
-Örneği takip etmek için Visual Studio 2017 ile bir kopyasına ihtiyacınız vardır. **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
+Birlikte izlemek için, iş yükünün yüklü  **C++ olduğu masaüstü geliştirmeyle** birlikte Visual Studio 2017 kopyasına sahip olmanız gerekir. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Örneği takip etmek için Visual Studio 2019 ile bir kopyasına ihtiyacınız vardır. **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
+Birlikte izlemek için, iş yükünün yüklü  **C++ olduğu masaüstü geliştirmeyle** birlikte Visual Studio 2019 kopyasına sahip olmanız gerekir. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
 
 ::: moniker-end
 
 ## <a name="create-a-console-app"></a>Konsol uygulaması oluşturma
 
-Henüz çalışmıyorsa, Visual Studio'yu açın.
+Henüz çalışmıyorsa, Visual Studio 'Yu açın.
 
 ::: moniker range="vs-2017"
 
@@ -52,9 +52,9 @@ Visual Studio'yu açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: 
 
 ::: moniker range=">=vs-2019"
 
-Başlangıç penceresi Visual Studio'yu açtıktan sonra ilk olarak görünür. Seçin **kod olmadan devam** geliştirme ortamını açın.
+Visual Studio 'Yu açtıktan sonra başlangıç penceresi önce görüntülenir. Geliştirme ortamını açmak için **kod olmadan devam et** ' i seçin.
 
-IDE üç temel bölümlerini göreceksiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. Arama kutusuna, menü çubuğu ve standart araç çubuğu üstünde bulunur. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+IDE 'nin üç temel parçasını görürsünüz: araç pencereleri, menüler ve araç çubukları ve ana pencere alanı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. Arama kutusu, menü çubuğu ve standart araç çubuğu üstte bulunur. Bir çözüm veya proje yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin orta alanında görüntülenir. Bir uygulama geliştirirken, bu merkezi alanda zamanınızın çoğunu harcarcaksınız.
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ Ardından, word görüntülenecek kod konsol penceresinde "Hello" ekleyin.
    using namespace std;
    ```
 
-   Büyük olasılıkla kod girildiği gibi görünen bir kutu fark. Bu kutu otomatik tamamlama önerileri, girdiğiniz karakterleri için içerir. C++ IntelliSense, sınıf veya arabirim üyeleri ve parametre bilgileri de dahil olmak üzere kodlama istemleri sağlar gereksinimlerimizim bir parçasıdır. Önceden tanımlanmış kod bloklarını olan kod parçacıklarını da kullanabilirsiniz. Daha fazla bilgi için [IntelliSense kullanarak](../ide/using-intellisense.md) ve [kod parçacıkları](../ide/code-snippets.md).
+   Büyük olasılıkla kod girildiği gibi görünen bir kutu fark. Bu kutu, girdiğiniz karakterlere yönelik otomatik tamamlama önerilerini içerir. C++ IntelliSense, sınıf veya arabirim üyeleri ve parametre bilgileri de dahil olmak üzere kodlama istemleri sağlar gereksinimlerimizim bir parçasıdır. Önceden tanımlanmış kod bloklarını olan kod parçacıklarını da kullanabilirsiniz. Daha fazla bilgi için [IntelliSense kullanarak](../ide/using-intellisense.md) ve [kod parçacıkları](../ide/code-snippets.md).
 
    ![Sabit Kod Düzenleyicisi'nde](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -176,5 +176,5 @@ Bu hızlı başlangıcı tamamladığınızda Tebrikler!
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanma](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [İzlenecek yol: Basit bir uygulama oluşturacaksınız C# veya Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Visual Studio üretkenlik özellikleri](../ide/productivity-features.md)
+- [İzlenecek yol: Veya Visual Basic ile C# basit bir uygulama oluşturma](../get-started/csharp/tutorial-wpf.md)
+- [Visual Studio 'da üretkenlik özellikleri](../ide/productivity-features.md)

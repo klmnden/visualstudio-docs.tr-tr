@@ -1,6 +1,7 @@
 ---
 title: Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -18,146 +19,173 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62035fad41d279fd35bbc4a2d31fefbb23463816
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968603"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461412"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 
-Kullanım **derleme** derleme yönergeleri belirtmek için Proje Tasarımcısı'nın sayfa. Bu sayfada Gelişmiş derleyici seçenekleri ve derleme öncesi veya derleme sonrası olay de belirtebilirsiniz.
+Derleme yönergelerini belirtmek için proje Tasarımcısı ' nın **derleme** sayfasını kullanın. Ayrıca, bu sayfada gelişmiş derleyici seçeneklerini ve derleme öncesi veya derleme sonrası olayları da belirtebilirsiniz.
 
-Erişim için **derleme** sayfasında, bir proje düğümü seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğundaki. Proje Tasarımcısı göründüğünde tıklayın **derleme** sekmesi.
+**Derle** sayfasına erişmek için **Çözüm Gezgini**' de bir proje düğümü ( **çözüm** düğümünü değil) seçin. Ardından, menü çubuğunda **Proje**, **Özellikler** ' i seçin. Proje Tasarımcısı göründüğünde, **Derle** sekmesine tıklayın.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="configuration-and-platform"></a>Yapılandırma ve Platform
+## <a name="configuration-and-platform"></a>Yapılandırma ve platform
 
-Aşağıdaki ayarlar, görüntülenecek veya değiştirilecek platform ve yapılandırmayı seçmenize olanak sağlar.
+Aşağıdaki ayarlar, görüntülenecek veya değiştirilecek olan yapılandırmayı ve platformu seçmenizi sağlar.
 
 > [!NOTE]
-> Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. Bu nedenle, **yapılandırma** ve **Platform** listeleri görüntülenmez.
+> Basitleştirilmiş derleme yapılandırmalarında, proje sistemi bir hata ayıklama veya yayın sürümü oluşturulup oluşturulmayacağını belirler. Bu nedenle, **yapılandırma** ve **Platform** listeleri görüntülenmez.
 
- **Yapılandırma**
+**Yapılandırma**
 
- Hangi yapılandırma ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**, veya **yapılandırmalarında**. Daha fazla bilgi için [derleme yapılandırmalarını anlama](../../ide/understanding-build-configurations.md) ve [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../../ide/how-to-create-and-edit-configurations.md).
+Görüntülenecek veya değiştirilecek yapılandırma ayarlarını belirtir. Ayarlar **hata ayıklama** (varsayılan), **yayın**veya **Tüm yapılandırmalardan**yapılır. Daha fazla bilgi için bkz. [derleme yapılandırmasını anlama](../../ide/understanding-build-configurations.md) ve [nasıl yapılır: Yapılandırma](../../ide/how-to-create-and-edit-configurations.md)oluşturun ve düzenleyin.
 
- **Platform**
+**Platformunun**
 
- Platform ayarlarının görüntüleneceğini veya değiştirileceğini belirtir. Belirtebileceğiniz **herhangi bir CPU** (varsayılan), **x64**, veya **x86**.
+Görüntülenecek veya değiştirilecek platform ayarlarını belirtir. **Herhangi BIR CPU** (varsayılan), **x64**veya **x86**belirtebilirsiniz.
 
 ## <a name="compiler-configuration-options"></a>Derleyici yapılandırma seçenekleri
 
-Aşağıdaki ayarlar, derleyici yapılandırma seçenekleri ayarlamanızı sağlar.
+Aşağıdaki ayarlar, derleyici yapılandırma seçeneklerini ayarlamanıza olanak sağlar.
 
- **Yapı çıkış yolu**
+**Derleme çıkış yolu**
 
- Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yapı çıkış yolunu bu kutuya yazın ya da tıklayın **Gözat** düğmesini bir yolu seçin. Yolun göreli olduğuna dikkat edin; mutlak bir yol girerseniz, göreli olarak kaydedilecektir. Varsayılan yol bin\Debug\ veya bin\Release olan\\.
+Bu projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Derleme çıktısının yolunu bu kutuya yazın veya bir yol seçmek için, **Gözden** geçirme düğmesine tıklayın. Yolun göreli olduğunu unutmayın; mutlak bir yol girerseniz, göreli olarak kaydedilir. Varsayılan yol bin\Debug\ veya bin\Release\\' dir.
 
- Basitleştirilmiş yapı yapılandırmaları ile proje sistemi bir hata ayıklama sürüm yayını mı belirler. **Derleme** komutunu **hata ayıklama** menüsündeki (F5) bağımsız olarak, hata ayıklama konumuna derleme koyacaktır **çıkış yolu** belirtirsiniz. Ancak, **derleme** komutunu **derleme** menü, belirttiğiniz konuma koyar.
+Basitleştirilmiş derleme yapılandırmalarında, proje sistemi bir hata ayıklama veya yayın sürümü oluşturulup oluşturulmayacağını belirler. **Hata ayıklama** menüsündeki **derleme** komutu (F5), belirttiğiniz **çıkış yolundan** bağımsız olarak derlemeyi hata ayıklama konumuna koyar. Ancak, **Yapı** menüsündeki **Build** komutu onu belirttiğiniz konuma koyar.
 
- **Açık seçeneği** örtük bir değişken bildirimi izin verilip verilmeyeceğini belirtir. Seçin **üzerinde** değişkenleri açık bildirimini gerektiren. Bunlar kullanılmadan önce değişkenleri bildirilmedikçe derleyici hatalarını raporlamak için bu neden olur. Seçin **kapalı** örtük bir değişken bildirimi izin vermek için.
+**Seçenek açık**
 
- Bu ayar karşılık gelen [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit) derleyici seçeneği.
+Değişkenlerin örtük bildirimine izin verilip verilmeyeceğini belirtir. Değişkenlerin açık bildirimini gerektirmek için **Açık '** ı seçin. Bu, değişkenlerin kullanılmadan önce bildirilmemiş olması durumunda derleyicinin hata raporlamasına neden olur. Örtük değişken bildirimine izin vermek için **kapalı** ' yı seçin.
 
- Bir kaynak kodu dosyası içeriyorsa bir [Option Explicit deyimi](/dotnet/visual-basic/language-reference/statements/option-explicit-statement), `On` veya `Off` deyiminde değerini geçersiz kılar **Option Explicit** ayarını **derleme Sayfa**.
+Bu ayar [/OptionExplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit) derleyici seçeneğine karşılık gelir.
 
- Yeni bir proje oluşturduğunuzda **Option Explicit** ayarını **derleme sayfa** değerine ayarlanmış **Option Explicit** ayarı **seçenekleri**  iletişim kutusu. Görüntülemek veya bu iletişim kutusunda bir ayarı değiştirmek için **Araçları** menüsünü tıklatın **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **VB varsayılanları**. İlk varsayılan ayarı **Option Explicit** içinde **VB varsayılanları** olduğu **üzerinde**.
+Bir kaynak kodu dosyası [açık bir seçenek](/dotnet/visual-basic/language-reference/statements/option-explicit-statement) `On` içeriyorsa, deyimdeki or `Off` değeri, **derleme sayfasındaki** **Açık ayar seçeneğini** geçersiz kılar.
 
- Ayarı **Option Explicit** için `Off` genellikle iyi bir uygulama değildir. Bir değişken adı program çalıştırıldığında bu beklenmeyen sonuçlara neden olduğu bir veya daha fazla konumda yazsanız.
+Yeni bir proje oluşturduğunuzda, **derleme sayfasındaki** **Açık ayar seçeneği** , **Seçenekler** iletişim kutusundaki **Açık seçenek** ayarı değerine ayarlanır. Bu iletişim kutusundaki ayarı görüntülemek veya değiştirmek için, **Araçlar** menüsünde **Seçenekler**' e tıklayın. **Seçenekler** iletişim kutusunda, **Projeler ve çözümler**' i genişletin ve ardından **vb Varsayılanları**' na tıklayın. **Vb Varsayılanları** Içinde **Açık seçenek** olan ilk varsayılan ayar **açıktır**.
 
- **Katı tanımlama seçeneği** katı türü anlamları zorlanıp zorlanmayacağını belirtir. Zaman **Option Strict** olduğu **üzerinde**, bir derleme zamanı hatası aşağıdaki durumlar neden:
+**Seçeneğinin açık** olarak `Off` ayarlanması, genellikle iyi bir uygulamadır. Bir veya daha fazla konumda değişken adı yanlış yazdığınızda, program çalıştırıldığında beklenmedik sonuçlara neden olabilir.
+
+**Option Strict**
+
+Katı tür semantiğinin zorlanıp zorlanmayacağını belirtir. **Option Strict** **Açık**olduğunda, aşağıdaki koşullar derleme zamanı hatasına neden olur:
 
 - Örtük daraltma dönüşümleri
 
 - Geç bağlama
 
-- Örtük sonuçlanan yazarak bir `Object` türü
+- Bir `Object` tür ile sonuçlanan örtük yazma
 
-Bir daraltma dönüştürmesi olan bir örtük veri türü dönüştürme olduğunda daraltma örtük dönüştürme hataları oluşur. Daha fazla bilgi için [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [örtük ve açık dönüştürmeler](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions), ve [Widening ve daraltma dönüşümleri](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
+Örtük daraltma dönüştürme hataları, daraltma dönüştürmesi olan bir örtük veri türü dönüştürmesi olduğunda oluşur. Daha fazla bilgi için bkz. [Option Strict deyimin](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [örtük ve açık dönüştürmeler](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions), [genişletme ve daraltma dönüştürmeleri](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
-Bir özellik veya yöntem türü olarak bildirilmiş bir değişken atandığında, nesnenin geç bağlama `Object`. Daha fazla bilgi için [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement) ve [erken ve geç bağlama](/dotnet/visual-basic/programming-guide/language-features/early-late-binding).
+Bir nesne, tür `Object`olarak belirtilen bir özelliğin veya yöntemin bir özelliğine atandığında geç bağlanır. Daha fazla bilgi için bkz. [Option Strict deyimin](/dotnet/visual-basic/language-reference/statements/option-strict-statement) yanı sıra [erken ve geç bağlama](/dotnet/visual-basic/programming-guide/language-features/early-late-binding).
 
-Örtük nesne türü hatalar ortaya uygun bir tür olamaz bildirilmiş bir değişken için bu nedenle bir tür çıkarımı yapılan `Object` algılanır. Kullandığınızda öncelikle böyle bir `Dim` kullanmadan bir değişken bildirmek için deyimi bir `As` yan tümcesi ve `Option Infer` kapalıdır. Daha fazla bilgi için [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer deyimi](/dotnet/visual-basic/language-reference/statements/option-infer-statement)ve [Visual Basic dil belirtimi](/dotnet/visual-basic/reference/language-specification).
+Örtük nesne türü hataları, tanımlı bir değişken için uygun bir tür çıkarsanmadığında oluşur, bu nedenle bir türü `Object` algılanır. Bu öncelikle, bir `Dim` `As` yan tümce kullanmadan bir değişkeni bildirmek için bir deyimi kullandığınızda oluşur ve `Option Infer` kapalı olur. Daha fazla bilgi için bkz. [Option Strict deyimin](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Option Infer deyimleri](/dotnet/visual-basic/language-reference/statements/option-infer-statement)ve [Visual Basic Language belirtimi](/dotnet/visual-basic/reference/language-specification).
 
-**Option Strict** ayarı karşılık gelen [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) derleyici seçeneği.
+**Katı ayarı seçeneği** , [/OptionStrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) derleyici seçeneğine karşılık gelir.
 
-Bir kaynak kodu dosyası içeriyorsa bir [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement), `On` veya `Off` deyiminde değerini geçersiz kılar **Option Strict** ayarını **derle sayfası** .
+Bir kaynak kodu dosyası bir [Option Strict ifadesini](/dotnet/visual-basic/language-reference/statements/option-strict-statement)içeriyorsa, `On` deyimdeki or `Off` değeri, **derleme sayfasındaki** **katı** ayarını geçersiz kılar.
 
-Bir proje oluşturduğunuzda **Option Strict** ayarını **derleme sayfası** değerine ayarlanmış **Option Strict** ayarı **seçenekleri** iletişim kutusu. Görüntülemek veya bu iletişim kutusunda bir ayarı değiştirmek için **Araçları** menüsünü tıklatın **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **VB varsayılanları**. İlk varsayılan ayarı **Option Strict** içinde **VB varsayılanları** olduğu **kapalı**.
+Bir proje oluşturduğunuzda, **derleme sayfasındaki** **katı** ayarı **Seçenekler** iletişim kutusundaki **katı ayar seçeneğinin** değerine ayarlanır. Bu iletişim kutusundaki ayarı görüntülemek veya değiştirmek için, **Araçlar** menüsünde **Seçenekler**' e tıklayın. **Seçenekler** iletişim kutusunda, **Projeler ve çözümler**' i genişletin ve ardından **vb Varsayılanları**' na tıklayın. **Vb Varsayılanları** Içinde **Strict seçeneğinin** ilk varsayılan ayarı **kapalıdır**.
 
-**Bireysel uyarıları katı seçeneği.**
-**Uyarı yapılandırmaları** bölümünü **derleme sayfa** karşılık gelen bir derleme zamanı hatasına neden olan üç koşulları ayarlarına sahip olduğunda `Option Strict` açıktır. Bu ayarlar şunlardır:
+**İsteğe bağımsız kesin uyarılar**
+
+**Derleme sayfasının** `Option Strict` **Uyarı yapılandırması** bölümü, açık olduğunda derleme zamanı hatasına neden olan üç koşula karşılık gelen ayarlara sahiptir. Aşağıdaki ayarlar şunlardır:
 
 - **Örtük dönüştürme**
 
-- **Geç bağlama; Çağrı çalışma zamanında başarısız olabilir**
+- **Geç bağlama; çağrı çalışma zamanında başarısız olabilir**
 
-- **Örtük tür; Nesne varsayıldı**
+- **Örtük tür; nesne varsayıldı**
 
-Ayarladığınızda **Option Strict** için **üzerinde**, bu uyarı yapılandırma ayarlarını üç kümesine **hata**. Ayarladığınızda **Option Strict** için **kapalı**, tüm üç ayarları kümesine **hiçbiri**.
+**Option Strict** **on on**olarak ayarlandığında, bu uyarı yapılandırma ayarlarının üçü de **hata**olarak ayarlanır. **Option Strict** ' i **off**olarak ayarlarsanız, üç ayar **hiçbiri None**olarak ayarlanır.
 
-Her uyarı yapılandırma ayarı ayrı ayrı değiştirebileceğiniz **hiçbiri**, **uyarı**, veya **hata**. Üç uyarı yapılandırma ayarlarını ayarlandıysa **hata**, `On` görünür `Option strict` kutusu. Üç ayarlandıysa **hiçbiri**, `Off` bu kutuda görünür. Bu ayarlar, diğer herhangi bir birleşimini için **(özel)** görünür.
+Her uyarı yapılandırma ayarını **hiçbiri**, **Uyarı**veya **hata**olarak tek tek değiştirebilirsiniz. Üç uyarı yapılandırma ayarı **hata**olarak ayarlanırsa, `On` `Option strict` kutusunda görünür. Üçü de **hiçbiri**olarak ayarlandıysa, `Off` bu kutuda görüntülenir. Bu ayarların diğer birleşimleri için **(özel)** görüntülenir.
 
-**Option compare** kullanılacak dize karşılaştırma türünü belirtir. Seçin **ikili** derleyicisinin ikili, büyük küçük harfe duyarlı dize karşılaştırmaları kullanın. Seçin **metin** metin yerel ayara özgü, büyük küçük harf duyarsız dize karşılaştırmalarını kullanmak için.
+**Option Compare**
 
-Bu ayar karşılık gelen [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) derleyici seçeneği.
+Kullanılacak dize karşılaştırmasının türünü belirtir. Derleyicinin ikili, büyük/küçük harfe duyarlı dize karşılaştırmaları kullanmasını söylemek için **binary** ' ı seçin. Yerel ayara özgü, büyük/küçük harfe duyarsız metin dizesi karşılaştırmaları kullanmak için **metin** seçin.
 
-Bir kaynak kodu dosyası içeriyorsa bir [seçenek karşılaştırma ifadesini](/dotnet/visual-basic/language-reference/statements/option-compare-statement), `Binary` veya `Text` deyiminde değerini geçersiz kılar **Option Compare** ayarını **derleme Sayfa**.
+Bu ayar [/OptionCompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) derleyici seçeneğine karşılık gelir.
 
-Bir proje oluşturduğunuzda **Option Compare** ayarını **derleme sayfası** değerine ayarlanmış **Option Compare** ayarı **seçenekleri** iletişim kutusu. Görüntülemek veya bu iletişim kutusunda bir ayarı değiştirmek için **Araçları** menüsünü tıklatın **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **VB varsayılanları**. İlk varsayılan ayarı **Option Compare** içinde **VB varsayılanları** olduğu **ikili**.
+Bir kaynak kodu dosyası bir [Seçenek karşılaştırma ekstresi](/dotnet/visual-basic/language-reference/statements/option-compare-statement)içeriyorsa, `Binary` deyimdeki or `Text` değeri, **derleme sayfasındaki** **Seçenek karşılaştırma** ayarını geçersiz kılar.
 
-**Option Infer** yerel tür çıkarımı değişken bildirimlerinde izin verilip verilmeyeceğini belirtir. Seçin **üzerinde** yerel tür çıkarımı kullanımına izin vermek için. Seçin **kapalı** blok yerel tür çıkarımı için.
+Bir proje oluşturduğunuzda, **derleme sayfasındaki** **Seçenek karşılaştırma** ayarı, **Seçenekler** iletişim kutusundaki **Seçenek karşılaştırma** ayarı değerine ayarlanır. Bu iletişim kutusundaki ayarı görüntülemek veya değiştirmek için, **Araçlar** menüsünde **Seçenekler**' e tıklayın. **Seçenekler** iletişim kutusunda, **Projeler ve çözümler**' i genişletin ve ardından **vb Varsayılanları**' na tıklayın. **Vb Varsayılanları** Içindeki **Option Compare** 'In ilk varsayılan ayarı **binary**'dir.
 
-Bu ayar karşılık gelen [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer) derleyici seçeneği.
+**Seçenek çıkarımı**
 
-Bir kaynak kodu dosyası içeriyorsa bir [Option Infer deyimi](/dotnet/visual-basic/language-reference/statements/option-infer-statement), `On` veya `Off` deyiminde değerini geçersiz kılar **Option Infer** ayarını **derle sayfası** .
+Değişken bildirimlerinde yerel tür çıkarımını izin verilip verilmeyeceğini belirtir. Yerel tür çıkarımı kullanımına izin vermek için **Açık '** ı seçin. Yerel tür çıkarımı engellemek için **kapalı** ' yı seçin.
 
-Bir proje oluşturduğunuzda **Option Infer** ayarını **derleme sayfa** değerine ayarlanmış **Option Infer** ayarı **seçenekleri**iletişim kutusu. Görüntülemek veya bu iletişim kutusunda bir ayarı değiştirmek için **Araçları** menüsünü tıklatın **seçenekleri**. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **VB varsayılanları**. İlk varsayılan ayarı **Option Infer** içinde **VB varsayılanları** olduğu **üzerinde**.
+Bu ayar [/OptionInfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer) derleyici seçeneğine karşılık gelir.
 
-**Hedef CPU** çıktı dosyası tarafından hedeflenecek işlemciyi belirtir. Belirtin **x86** herhangi bir 32 bit Intel uyumlu işlemci için **x64** herhangi bir 64-bit Intel uyumlu işlemci için **ARM** tüm ARM işlemci için veya **herhangi bir CPU**  tüm işlemcilerin kabul edilebilir olduğunu belirtmek için. **Herhangi bir CPU** uygulamanın en büyük sayısını donanım türleri üzerinde çalışmasına izin verdiğinden yeni projeler için varsayılan değerdir.
+Bir kaynak kodu dosyası bir [seçenek çıkarımı bildirisi](/dotnet/visual-basic/language-reference/statements/option-infer-statement)içeriyorsa, `On` deyimdeki `Off` or değeri, **derleme sayfasındaki** **seçenek çıkarımı** ayarını geçersiz kılar.
 
-Daha fazla bilgi için [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+Bir proje oluşturduğunuzda, **derleme sayfasındaki** **seçenek çıkarımı** ayarı **Seçenekler** iletişim kutusundaki **seçenek çıkarımı** ayarı değerine ayarlanır. Bu iletişim kutusundaki ayarı görüntülemek veya değiştirmek için, **Araçlar** menüsünde **Seçenekler**' e tıklayın. **Seçenekler** iletişim kutusunda, **Projeler ve çözümler**' i genişletin ve ardından **vb Varsayılanları**' na tıklayın. **Vb** varsayılan olarak **seçenek çıkarımı** başlangıç varsayılan ayarı **Açık**olur.
 
-**32 bit tercih** varsa **Prefer32-bit** onay kutusu seçildiğinde, uygulama bir 32 bit uygulama olarak, hem 32-bit hem de 64 bit Windows sürümlerinde çalışır. Aksi takdirde, uygulamanın Windows ve Windows 64 bit sürümlerinde 64 bit uygulama olarak 32-bit sürümleri 32-bit uygulama olarak çalışır.
+**Hedef CPU**
 
-64 bitlik bir uygulama işaretçi boyutu iki katına çıkar ve özellikle 32 bit kitaplıkları uyumluluk sorunlarına neden olabilir olarak çalışıyor. Yalnızca önemli ölçüde daha hızlı çalışır veya 4 GB'den daha fazla bellek gerekli bir uygulamayı 64-bit olarak çalıştırmak mantıklıdır.
+Çıkış dosyası tarafından hedeflenen işlemciyi belirtir. Her türlü 32 bit Intel uyumlu işlemci için **x86** , her türlü 64 bit Intel uyumlu işlemci için **x64** , herhangi bir ARM işlemcisi için **ARM** veya herhangi bir Işlemcinin kabul EDILEBILIR olduğunu belirtmek için **herhangi bir CPU** belirleyin. **Tüm CPU** , uygulamanın en çok sayıda donanım türünde çalışmasına izin verdiğinden yeni projeler için varsayılan değerdir.
 
-Bu onay kutusu yalnızca aşağıdaki koşulların tümü doğruysa, kullanılabilir:
+Daha fazla bilgi için bkz. [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
-- Üzerinde **derle sayfası**, **hedef CPU** listesinin **herhangi bir CPU**.
+**32 bit tercih et**
 
-- Üzerinde **uygulama sayfası**, **uygulama türü** listesi, projenin bir uygulama olduğunu belirtir.
+**Prefer32 bit** onay kutusu işaretliyse, uygulama Windows 'un hem 32-bit hem de 64-bit sürümlerinde 32 bitlik bir uygulama olarak çalışır. Aksi takdirde, uygulama Windows 'un 32 bit sürümlerinde 32 bitlik bir uygulama olarak ve Windows 'un 64 bit sürümlerinde 64 bit uygulama olarak çalışır.
 
-- Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.
+64 bitlik bir uygulama olarak çalıştırmak işaretçi boyutunu iki katına çıkarır ve yalnızca 32 bit olan kitaplıklarda uyumluluk sorunlarına neden olabilir. Bir uygulamayı yalnızca önemli ölçüde daha hızlı çalışıyorsa veya 4 GB 'den fazla belleğe ihtiyaç duyduğunda, 64 bit olarak çalıştırmak mantıklı olur.
 
-**Uyarı yapılandırmaları** derleme koşullar ve karşılık gelen bildirim düzeyini bu tabloda **hiçbiri**, **uyarı**, veya **hata** her.
+Bu onay kutusu yalnızca aşağıdaki koşulların tümü doğru olduğunda kullanılabilir:
 
-Varsayılan olarak, tüm Derleyici uyarılarını, derleme sırasında görev listesine eklenir. Seçin **tüm uyarıları devre dışı bırak** derleyicisinin sorunu uyarıları veya hataları. Seçin **tüm uyarıları hata olarak değerlendir** Derleyicinin uyarıları düzeltilmesi gereken hata olarak değerlendir istiyorsanız.
+- **Derle sayfasında**, **hedef CPU** listesi **herhangi bir CPU**olarak ayarlanır.
 
-**Tüm uyarıları devre dışı bırak** sorunu bildirimleri belirtildiği gibi derleyici izin verilip verilmeyeceğini belirtir **koşulu ve bildirim** bu belgenin önceki bölümlerinde açıklanan tablo. Varsayılan olarak, bu onay kutusu işaretli değildir. Derleyicisinin bir uyarı veya hata sorun değil, bu onay kutusunu seçin.
+- Uygulama **sayfasında**, **uygulama türü** listesi projenin bir uygulama olduğunu belirtir.
 
-Bu ayar karşılık gelen [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) derleyici seçeneği.
+- **Uygulama sayfasında**, **hedef çerçeve** listesi 4,5 .NET Framework belirtir.
 
-**Tüm uyarıları hata olarak değerlendir** uyarıları nasıl belirtir. Tüm uyarı bildirimleri için ayarlanmış kalmaları için varsayılan olarak, bu onay kutusu, temizlenir **uyarı**. Tüm Uyarı bildirimlerinin postalanacağı değiştirmek için bu onay kutusunu işaretleyin **hata**.
+**Uyarı konfigürasyonları**
 
-Bu seçenek yalnızca **tüm uyarıları devre dışı bırak** temizlenir.
+Bu tabloda, derleme koşulları ve ilgili bildirim düzeyi **yok**, **Uyarı**veya her biri için **hata** listelenmektedir.
 
-**XML belge dosyası oluşturma** belgelendirme bilgilerini oluşturulup oluşturulmayacağını belirtir. Varsayılan olarak, belgelendirme bilgilerini oluşturup bir XML dosyasına eklenecek derleyici söyleyen bu onay kutusu seçilidir. Belgeleri oluşturmamayı derleyicisinin bu onay kutusunu temizleyin.
+Varsayılan olarak, derleme sırasında tüm derleyici uyarıları Görev Listesi eklenir. Derleyicinin uyarı veya hata vermesine yol açmamasını sağlamak için **tüm uyarıları devre dışı bırak** ' ı seçin. Derleyicinin uyarıları düzeltilmesi gereken hata olarak görmesini istiyorsanız, **tüm uyarıları hata olarak değerlendir** ' i seçin.
 
-Bu ayar karşılık gelen [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc) derleyici seçeneği.
+**Tüm uyarıları devre dışı bırak**
 
-**COM birlikte çalışması için kayıt** yönetilen uygulama ile etkileşim kurmak bir COM nesnesi sağlayan bir COM nesnesi (COM çağrılabilir sarmalayıcısı) açığa çıkarır olup olmadığını belirtir.
+Derleyicinin bu belgede daha önce açıklanan **koşul ve bildirim** tablosunda belirtilen bildirimleri vermesine izin verilip verilmeyeceğini belirtir. Varsayılan olarak, bu onay kutusu işaretli değildir. Derleyicinin uyarı veya hata vermesine izin vermesini istemek için bu onay kutusunu seçin.
 
-Varsayılan olarak, uygulama COM birlikte çalışma izin vermeyeceğini belirten bu onay kutusunu temizlenir. COM birlikte çalışma izin vermek için bu onay kutusunu seçin.
+Bu ayar, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) derleyici seçeneğine karşılık gelir.
 
-Bu seçenek Windows uygulama veya konsol uygulaması projelerinde kullanılamaz.
+**Tüm uyarıları hata olarak değerlendir**
 
-**Derleme olayları** erişmek için bu düğmeye tıklayın **Build Events** iletişim kutusu. Derleme öncesi ve sonrası yapılandırma yönergeleri için projeyi belirtmek için bu iletişim kutusunu kullanın. Bu iletişim kutusu, yalnızca Visual Basic projeleri için geçerlidir. Daha fazla bilgi için [derleme olayları iletişim kutusu (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
+Uyarıların nasıl ele alınacağını belirtir. Varsayılan olarak, bu onay kutusu temizlenir, böylece tüm uyarı bildirimleri **Uyarı**olarak ayarlanır. Tüm uyarı bildirimlerini **hata**olarak değiştirmek için bu onay kutusunu işaretleyin.
 
-**Gelişmiş derleme seçenekleri** erişmek için bu düğmeye tıklayın **AdvancedCompiler ayarları** iletişim kutusu. Kullanım **AdvancedCompiler ayarları** Gelişmiş yapı yapılandırma özellikleri iletişim kutusu, bir projeyi belirtmek için. Bu iletişim kutusu, yalnızca Visual Basic projeleri için geçerlidir. Daha fazla bilgi için [Gelişmiş derleyici Ayarları iletişim kutusu (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
+Bu seçenek yalnızca **tüm uyarıları devre dışı bırak** silinirse kullanılabilir.
+
+**XML belge dosyası oluştur**
+
+Belge bilgilerinin oluşturulup oluşturulmayacağını belirtir. Varsayılan olarak, bu onay kutusu seçilidir ve derleyici belge bilgilerini oluşturup bir XML dosyasına dahil eder. Derleyicinin belge oluşturmamasını istemek için bu onay kutusunu temizleyin.
+
+Bu ayar [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc) derleyici seçeneğine karşılık gelir.
+
+**COM birlikte çalışması için kaydolun**
+
+Yönetilen uygulamanızın, bir com nesnesinin uygulamayla etkileşime geçmesini sağlayan bir COM nesnesi (COM çağrılabilir sarmalayıcı) sergileip sunulmayacağını belirtir.
+
+Varsayılan olarak, bu onay kutusu temizlenir ve uygulamanın COM birlikte çalışabilirliğine izin vermemesi gerektiğini belirtir. COM birlikte çalışabilirliğine izin vermek için bu onay kutusunu seçin.
+
+Bu seçenek Windows uygulaması veya konsol uygulaması projeleri için kullanılamaz.
+
+**Derleme olayları**
+
+**Derleme olayları** iletişim kutusuna erişmek için bu düğmeye tıklayın. Proje için oluşturma öncesi ve derleme sonrası yapılandırma yönergelerini belirtmek için bu iletişim kutusunu kullanın. Bu iletişim kutusu yalnızca Visual Basic projelerine yöneliktir. Daha fazla bilgi için bkz. [derleme olayları Iletişim kutusu (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
+
+**Gelişmiş derleme seçenekleri**
+
+**Advancedderleyici ayarları** iletişim kutusuna erişmek için bu düğmeye tıklayın. Projenin Gelişmiş derleme yapılandırma özelliklerini belirtmek için **Advancedcompiler ayarları** iletişim kutusunu kullanın. Bu iletişim kutusu yalnızca Visual Basic projelerine yöneliktir. Daha fazla bilgi için bkz. [Gelişmiş derleyici ayarları Iletişim kutusu (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,33 +1,46 @@
 ---
-title: '8. Adım: Testi özelleştirme'
+title: '8\. Adım: Testi özelleştirme'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e4ecd650b931fe5d79ca4617022fba8577fbd39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1868cd30cc41187ac995e71ee86d81dd0fb83d5a
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996250"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416468"
 ---
-# <a name="step-8-customize-the-quiz"></a>8. Adım: Testi özelleştirme
-Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar hakkında bilgi edineceksiniz. Örneğin, programın yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için kapatma `timeLabel` farklı bir renkte denetlemek ve sınava giren bir ipucu verir.
+# <a name="step-8-customize-the-quiz"></a>8\. Adım: Testi özelleştirme
+Öğreticinin son bölümünde, testi özelleştirmenin ve daha önce öğrendiklerinizi genişletmenin bazı yollarını keşfedeceksiniz. Örneğin, programın yanıtın hiç bir kesir olmadığı rastgele bölüm sorunları nasıl oluşturduğunu düşünün. Daha fazla bilgi edinmek için, `timeLabel` denetimi farklı bir renk yapın ve sınava ipucu sunun.
 
-## <a name="to-customize-the-quiz"></a>Test özelleştirmek için
+## <a name="to-customize-the-quiz"></a>Testi özelleştirmek için
 
-- Yalnızca beş saniyede bir sınavda kalan zaman **timeLabel** denetiminde kırmızı renkte ayarlayarak onun **BackColor** özelliği (`timeLabel.BackColor = Color.Red;`). Test bittiğinde rengi sıfırlayın.
+- Bir test içinde yalnızca beş saniye kaldığında, **BackColor** özelliğini ayarlayarak **timeLabel** denetimini kırmızıya dönüştürün
 
-- Sınava halinde doğru yanıtı girildiğinde ses çalma bir ipucu verir. bir <xref:System.Windows.Forms.NumericUpDown> denetimi. (Her denetim için bir olay işleyicisi yazmanız gereken <xref:System.Windows.Forms.NumericUpDown.ValueChanged> sınava denetimin değeri değiştiğinde harekete olayı,.)
+```csharp
+timeLabel.BackColor = Color.Red;
+```
+
+```vb
+timeLabel.BackColor = Color.Red
+```
+
+Test üzerindeyken rengi sıfırlayın.
+
+- Bir <xref:System.Windows.Forms.NumericUpDown> denetime doğru yanıt girildiğinde, bir sesi oynatarak sınava ipucu sunun. (Her denetim <xref:System.Windows.Forms.NumericUpDown.ValueChanged> olayı için bir olay işleyicisi yazmanız gerekir ve bu, her bir test, denetimin değerini değiştirdiğinde harekete geçirilir.)
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sınavın tamamlanmış bir sürümünü indirmek için bkz [tam matematik sınavı öğretici örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+- Sınavın tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
-- Sonraki eğitime gitmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).
+- Sonraki öğreticiye gitmek için bkz [. öğretici 3: Eşleşen bir oyun](../ide/tutorial-3-create-a-matching-game.md)oluşturun.
 
-- Önceki öğretici adımına dönmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).
+- Önceki öğretici adımına dönmek için bkz [. 7. Adım: Çarpma ve bölme sorunları](../ide/step-7-add-multiplication-and-division-problems.md)ekleyin.

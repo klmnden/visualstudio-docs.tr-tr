@@ -1,5 +1,6 @@
 ---
 title: Türü eşleşen dosya yeniden düzenleme için Taşı
+description: Bir türü aynı ada sahip ayrı bir dosyaya taşıyın. Türe sağ tıklayın, hızlı eylemler ve yeniden düzenlemeler ' ı seçin ve türü. cs ' ye <TypeName>taşıyın.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540761"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483648"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Bir eşleşen dosya yeniden düzenleme için bir tür Taşı
 
@@ -25,11 +26,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** Seçilen tür aynı ada sahip ayrı bir dosyaya taşımanıza olanak tanır.
+**Yazdırılacak** Seçilen türü aynı ada sahip ayrı bir dosyaya taşımanızı sağlar.
 
-**ne zaman:** Aynı dosyada, ayırmak istediğiniz birden fazla sınıflar, yapılar, arabirimler, vb. vardır.
+**Oluşturulurken** Ayırmak istediğiniz aynı dosyada birden çok sınıf, yapı, arabirim, vb. vardır.
 
-**Neden:** Aynı dosyaya birden fazla yerleştirme, bu tür bulmak zorlaştırabilir. Aynı ada sahip dosyaları türleri taşıyarak, kod daha okunabilir ve giderek daha kolay hale gelir.
+**Kaydol** Aynı dosyaya birden çok tür koymak, bu türleri bulmayı zorlaştırır. Aynı ada sahip dosyaları türleri taşıyarak, kod daha okunabilir ve giderek daha kolay hale gelir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -45,7 +46,7 @@ Bu yeniden düzenleme için geçerlidir:
 
 2. Ardından, aşağıdakilerden birini yapın:
 
-   - Tuşuna **Ctrl**+**.**
+   - Tuşuna **Ctrl**+ **.**
    - Tür adına sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler**
 
 1. Seçin **türüne taşımak için *TypeName*.cs** menüsünden, burada *TypeName* seçtiğiniz türünün adı.

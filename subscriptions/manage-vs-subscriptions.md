@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio aboneliklerinizden en iyi şekilde nasıl yararlanalabileceğinizi öğrenin
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378078"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493352"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri yönetme
 
@@ -73,7 +73,6 @@ Profilinizdeki iletişim bilgilerini ve tercihlerini kolayca değiştirebilirsin
 3. **Hakkında** sekmesinde ad, e-posta, ülke/bölge, profil resminiz ve iletişim tercihlerinizi değiştirebilirsiniz. **Tercihler** sekmesinde tercih ettiğiniz dili, tarih ve saat desenlerini, saat dilimini ve Kullanıcı arabirimi temasını seçebilirsiniz.
 4. Değişikliklerinizi sonuçlandırdığınızda **Kaydet**' e tıklayın.
 5. Avantajlar sayfasına geri dönmek için tarayıcınızın **geri** düğmesine tıklayın.
-
 
 ### <a name="setting-communications-preferences"></a>İletişim tercihlerini ayarlama
 Aylık Visual Studio abonelikleri bülteni de dahil olmak üzere aboneliğiniz ve avantajlarınız hakkında düzenli güncelleştirmeler almak isterseniz, Visual Studio profilinizde Visual Studio abonelikleri kutusunu işaretleyerek [tercihlerinizi güncelleştirin](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) . Bu tercihleri değiştirebilir ve istediğiniz zaman aboneliğinizi kaldırabilirsiniz. 

@@ -9,38 +9,38 @@ helpviewer_keywords:
 - debug builds
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430301"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416837"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış olarak derleme yapılandırmalarını yönetme
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış derleme yapılandırmasını yönetme
 
-Varsayılan olarak, Visual Basic Geliştirici ayarları uygulanmış tüm Gelişmiş derleme yapılandırma seçenekleri gizlidir. Bu makalede, el ile etkinleştirmek açıklanmaktadır bu derleme ayarları.
+Varsayılan olarak, Visual Basic Geliştirici ayarları uygulandığında tüm Gelişmiş derleme yapılandırma seçenekleri gizlidir. Bu makalede, bu derleme ayarlarının el ile nasıl etkinleştirileceği açıklanır.
 
-## <a name="enable-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmalarını etkinleştir
+## <a name="enable-advanced-build-configurations"></a>Gelişmiş derleme yapılandırmasını etkinleştir
 
-Varsayılan olarak, Visual Basic Geliştirici ayarları açma seçeneği Gizle **Configuration Manager** iletişim kutusu ve **yapılandırma** ve **Platform** içinde listeler[ Proje Tasarımcısı](../ide/reference/application-page-project-designer-visual-basic.md).
+Varsayılan olarak Visual Basic Geliştirici ayarları, [Proje tasarımcısında](../ide/reference/application-page-project-designer-visual-basic.md) **Configuration Manager** iletişim kutusunu ve **yapılandırma** ve **Platform** listelerini açma seçeneğini gizler.
 
 1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2. Genişletin **projeler ve çözümler**, tıklatıp **genel**.
+2. **Projeler ve çözümler**' i genişletin ve **genel**' e tıklayın.
 
     > [!NOTE]
-    > **Genel** düğümüdür görünür bile **tüm ayarları göster** seçeneği olarak işaretli değildir. Tüm kullanılabilir seçenekleri görmek istiyorsanız, tıklayın **tüm ayarları göster**.
+    > **Tüm ayarları göster** seçeneği işaretli olmasa bile **genel** düğüm görünür. Kullanılabilir her seçeneği görmek istiyorsanız **tüm ayarları göster**' e tıklayın.
 
-3. Tıklayın **Show Gelişmiş derleme yapılandırmaları**.
+3. **Gelişmiş derleme yapılandırmasını göster**' e tıklayın.
 
-4. **Tamam**'ı tıklatın.
+4.           **Tamam**'ı tıklatın.
 
-     **Configuration Manager** üzerinde kullanıma sunuldu **derleme** menüsünde ve **yapılandırma** ve **Platform** listeleridir görünür  **Proje Tasarımcısı**.
+     **Configuration Manager** artık **derleme** menüsünde kullanılabilir ve **yapılandırma** ve **Platform** listeleri **Proje tasarımcısında**görünür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

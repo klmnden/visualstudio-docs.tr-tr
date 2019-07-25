@@ -1,84 +1,87 @@
 ---
-title: '6. Adım: Çıkarma problemi ekleme'
+title: '6\. Adım: Çıkarma problemi ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996674"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416555"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma problemi ekleme
-Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:
+# <a name="step-6-add-a-subtraction-problem"></a>6\. Adım: Çıkarma problemi ekleme
+Bu öğreticinin altıncı bölümünde, bir çıkarma sorunu ekleyecek ve aşağıdaki görevlerin nasıl gerçekleştirileceğini öğreneceksiniz:
 
-- Çıkarma değerlerini Store.
+- Çıkarma değerlerini saklayın.
 
-- Sorun için rastgele sayılar üretin (ve yanıtın 0 ile 100 arasında olduğundan emin olun).
+- Sorun için rastgele sayılar oluşturun (ve yanıtın 0 ile 100 arasında olduğundan emin olun).
 
-- Yanıtları denetler ve böylece çok yeni bir çıkarma sorusu denetler yöntemi güncelleştirin.
+- Yanıtları denetleyen yöntemi, yeni çıkarma sorununu da denetleyecek şekilde güncelleştirin.
 
-- Zamanlayıcınızın güncelleştirme <xref:System.Windows.Forms.Timer.Tick> olay işleyicisi böylece Süre dolduğunda olay işleyicisi doğru yanıtı doldurur.
+- Zamanlayıcının <xref:System.Windows.Forms.Timer.Tick> olay işleyicisini, zaman aşımına uğrar sonra olay işleyicisinin doğru yanıtı doldurması için güncelleştirin.
 
-## <a name="to-add-a-subtraction-problem"></a>Çıkartma problemi ekleme
+## <a name="to-add-a-subtraction-problem"></a>Çıkarma sorunu eklemek için
 
-1. Formunuza tamsayı değişkenleri ek sorunun ve Zamanlayıcının arasında çıkartma sorusu için iki tamsayı değişkeni ekleyin. Kod aşağıdaki gibi görünmelidir.
+1. Ekleme sorunu ve Zamanlayıcı için tamsayı değişkenleri arasına, çıkarma sorunu için iki tamsayı değişkeni ekleyin. Kod aşağıdaki gibi görünmelidir.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     Yeni tamsayı değişkenlerinin adları —**Eksilen** ve **çıkarılan**— programlama terimleri değildir. Bunlar, çıkarılmakta olan sayı (çıkarılan) ile içinden çıkartıldığı sayı (Eksilen) çıkartılır için aritmetikte kullanılan geleneksel adlardır hedeflenmiştir. Fark, Eksilen eksi çıkarılandır vardır. Programınızı değişkenler, denetimler, bileşenler veya yöntemleri için belirli adlar verilmesini gerektirmediği diğer adlar kullanabilirsiniz. Adları basamak ile başlamıyor gibi kurallara uymanız gerekir, ancak genellikle x1, x2 x3 ve x4 gibi adlar kullanabilirsiniz. Ancak genel adlar kodun zor okunmasına ve sorunların neredeyse çözülemez hale. Değişken adları benzersiz ve yararlı tutmak için çarpma geleneksel adlarını kullanmanız gerekir (çarpan × çarpan ürün =) ve bölme (bölü; bölen bölünen sayının =) Bu öğreticinin sonraki bölümlerinde.
+     Yeni tamsayı değişkenlerinin adları —**eksilen** ve **çıkarılan**— programlama terimleridir. Çıkarılan numara için aritmetik olarak geleneksel adlara sahiptir (çıkarılan) ve çıkarılan çıkarılan sayı (minuend). Aradaki fark, çıkarılan 'in eksi. Programınız değişkenler, denetimler, bileşenler veya yöntemler için özel adlar gerektirmediğinden diğer adları kullanabilirsiniz. Adları basamakla başlatma gibi kuralları izlemeniz gerekir, ancak genellikle x1, X2, X3 ve x4 gibi adları kullanabilirsiniz. Ancak, genel adlar kodun okunmasını zorlaştırabilir ve sorunları neredeyse olanaksız hale getirir. Değişken adlarını benzersiz ve yararlı tutmak için, bu öğreticide daha sonra çarpma (çoğullıve × çarpanı = ürün) ve bölüm (bölünen ÷ bölen = bölüm) için geleneksel adları kullanacaksınız.
 
-     Ardından, değiştireceksiniz `StartTheQuiz()` yöntemini çıkarma sorusu için rastgele değerler sağlayacak.
+     Daha sonra, çıkarma sorunu için `StartTheQuiz()` rastgele değerler sağlamak üzere metodunu değiştirirsiniz.
 
-2. Aşağıdaki kodu "çıkartma sorusundaki dolgu" yorumundan sonra ekleyin.
+2. "Çıkarma sorununu doldur" açıklamasında sonra aşağıdaki kodu ekleyin.
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Çıkartma sorusu için negatif yanıtları önlemek için bu kodu kullanan <xref:System.Random.Next> yöntemi <xref:System.Random> biraz farklı ek sorunun nasıl yaptığını sınıfı. Size zaman `Next()` yöntemine iki değer değerinden büyük veya eşit ilk değer ve daha az rastgele bir sayı seçer ve ikinci değerden. Aşağıdaki kod, 1 ile 100 arasında rastgele bir sayı seçer ve bunu Eksilen değişkeninde depolar.
+     Çıkarma sorununa yönelik olumsuz yanıtları engellemek için, bu kod, ek sorunun <xref:System.Random.Next> nasıl yaptığından farklı <xref:System.Random> olarak sınıfının yöntemini kullanır. `Next()` Yönteme iki değer verdiğinizde, ilk değerden büyük veya buna eşit ve ikinciden küçük bir rastgele sayı seçer. Aşağıdaki kod, 1 ile 100 arasında rastgele bir sayı seçer ve eksilen değişkeninde depolar.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Çağırabilirsiniz `Next()` birden çok yolla bu öğreticinin önceki kısımlarındaki "randomizer" adlı rastgele sınıfının yöntemi. Birden fazla şekilde çağırabileceğiniz yöntemler için aşırı yüklü olarak başvurulur ve bunlarda gezinmek için IntelliSense'i kullanabilirsiniz. Konum yeniden için IntelliSense penceresini araç ipucuna `Next()` yöntemi.
+     Bu öğreticide daha `Next()` önce "rasgeleizer" olarak adlandırdığınız Random sınıfının yöntemini birden çok şekilde çağırabilirsiniz. Birden fazla yoldan çağırabileceğiniz Yöntemler aşırı yüklenmiş olarak adlandırılır ve IntelliSense 'i kullanarak bunları keşfedebilirsiniz. `Next()` Yöntemi için IntelliSense penceresinin araç ipucunda bir daha göz atın.
 
-     ![IntelliSense pencere araç ipucu](../ide/media/express_overloads.png)
-**IntelliSense** pencere araç ipucu
+     ![IntelliSense penceresi araç](../ide/media/express_overloads.png)
+İpucu**IntelliSense** penceresi araç ipucu
 
-     Araç İpucu gösterilmektedir **(+ 2 çağırabileceğiniz**, çağırabileceğiniz anlamına gelen `Next()` iki yolla yöntemi. Böylece birbirinden biraz farklı çalıştığını farklı sayılarda ya da türlerde bağımsız değişkenleri, aşırı yüklemeleri içerir. Örneğin, bir yöntem tek bir bağımsız değişken alabilir ve bunun aşırı yüklerinden biri bir tam sayı ve bir dize alabilir. Ne, bunu yapmak için istediğinize bağlı olarak doğru aşırı yüklemesi'ı seçin. Koda eklediğinizde `StartTheQuiz()` yöntemi, daha fazla bilgi IntelliSense penceresinde görünür, girer girmez `randomizer.Next(`. Aşırı yüklemeler arasında geçiş yapmak için seçin **yukarı ok** ve **aşağı ok** anahtarları aşağıdaki çizimde gösterildiği gibi:
+     Araç İpucu **(+ 2 aşırı yükleme**) gösterir. Bu, `Next()` yöntemi iki farklı şekilde çağırabilmeniz anlamına gelir. Aşırı yüklemeler farklı sayılar veya bağımsız değişken türleri içerir, böylece bir diğerinden biraz farklı çalışırlar. Örneğin, bir yöntem tek bir tamsayı bağımsız değişkeni alabilir ve aşırı yüklerinden biri tamsayı ve dize alabilir. Ne yapmak istediğinize bağlı olarak doğru aşırı yüklemeyi seçersiniz. Kodu `StartTheQuiz()` yöntemine eklediğinizde, girdiğiniz `randomizer.Next(`anda IntelliSense penceresinde daha fazla bilgi görüntülenir. Aşırı yüklemeler arasında geçiş yapmak için, aşağıdaki çizimde gösterildiği gibi **yukarı ok** ve **aşağı ok** tuşlarını seçin:
 
-     ![Sonraki için aşırı yükleme&#40; &#41; IntelliSense yönteminde](../ide/media/express_nextoverload.png) için aşırı yükleme **Next()** yönteminde **IntelliSense**
+     ![IntelliSense&#40; &#41; 'de **Next ()** yöntemi](../ide/media/express_nextoverload.png) için IntelliSense aşırı yüklemesi içinde Next yöntemi  için aşırı yükleme
 
-     Bu durumda, minimum ve maksimum değerleri belirttiğinden, son aşırı yükü seçmek istersiniz.
+     Bu durumda, en düşük ve en yüksek değerleri belirtebileceğiniz için son aşırı yüklemeyi seçmek istersiniz.
 
-3. Değiştirme `CheckTheAnswer()` yöntemini doğru çıkarma yanıtını kontrol edecek şekilde.
+3. Doğru çıkarma yanıtını denetlemek için yönteminideğiştirin.`CheckTheAnswer()`
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     Visual C# içinde `&&` olduğu `logical and` işleci. Visual Basic'te, eşdeğer işlecidir `AndAlso`. Bu işleçler "addend1 ve addend2 Toplamı toplam NumericUpDown değeri eşitse göstermeye yardımcı olur ve Eksilen eksi çıkarılan fark NumericUpDown'ının değerine eşitse." `CheckTheAnswer()` Yöntemi döndürür `true` yalnızca toplama ve çıkarma yanıtlar doğru hem de olması gerekir.
+     Görselde C# `&&` , `logical and` işleçtir. Visual Basic ' de, eşdeğer işleç ' `AndAlso`dir. Bu işleçler, "addend1 ve addend2 toplamının Sum NumericUpDown değerine eşit olup olmadığını ve eksilen eksi çıkarılan değerinin fark NumericUpDown değerine eşit olup olmadığını gösterir. Yöntemi `CheckTheAnswer()` , yalnızca `true` toplama ve çıkarma sorunlarına verilen yanıtların ikisi de doğru olduğunda döndürülür.
 
-4. Zaman aşımı halinde doğru yanıtı doldurur. böylece, Zamanlayıcının Tick olay işleyicisinin son kısmını aşağıdaki kodla değiştirin.
+4. Zamanlayıcının Tick olay işleyicisinin son bölümünü aşağıdaki kodla değiştirin, böylece zaman aşımı olduğunda doğru yanıtı dolduracaktır.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5. Kaydet ve kodunuzu çalıştırın.
+5. Kodunuzu kaydedin ve çalıştırın.
 
-     Programınız aşağıdaki çizimde gösterildiği gibi bir çıkarma sorusu içerir:
+     Aşağıdaki çizimde gösterildiği gibi programınız bir çıkarma sorunu içerir:
 
-     ![Çıkarma Sorulu matematik sınavı](../ide/media/express_addsubtract.png)
-**matematik sınavı** çıkarma Sorulu
+     ![Çıkarma sorunu ile matematik sınavından çıkarma sorunu ](../ide/media/express_addsubtract.png)
+
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).
+- Sonraki öğretici adımına gitmek için bkz [. 7. Adım: Çarpma ve bölme sorunları](../ide/step-7-add-multiplication-and-division-problems.md)ekleyin.
 
-- Önceki öğretici adımına dönmek için bkz: [5. adım: NumericUpDown denetimleri için gir olayı işleyicilerini ekleme](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Önceki öğretici adımına dönmek için bkz [. 5. Adım: NumericUpDown denetimleri](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)için Enter Olay işleyicileri ekleyin.

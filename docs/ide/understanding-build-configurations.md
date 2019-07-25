@@ -21,71 +21,71 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821763"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416952"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
-Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Bunu, menü çubuğundan açmak için seçin **derleme** > **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** arama kutusuna. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
+Farklı türlerde derlemelerde kullanmak üzere çözüm ve proje özelliklerinin farklı yapılandırmalarının depolanmasını sağlayabilirsiniz. Bir yapılandırma oluşturmak, seçmek, değiştirmek veya silmek için **Configuration Manager**kullanabilirsiniz. Açmak için, menü çubuğunda**Configuration Manager** **Oluştur** > ' u seçin veya arama kutusuna **yapılandırma** yazın. Bir yapılandırma seçmek veya **Configuration Manager**açmak için **Standart** araç çubuğundaki **çözüm yapılandırmaları** listesini de kullanabilirsiniz.
 
 > [!NOTE]
-> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derleme Mac için Visual Studio'da yapılandırmaları](/visualstudio/mac/configurations).
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz. [Mac için Visual Studio derleme yapılandırması](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Çözüm, araç çubuğundan yapılandırma ayarları bulunamıyor ve erişemiyor **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış yapılandırmalarını yönetme](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Araç çubuğunda çözüm yapılandırma ayarlarını bulamazsanız ve **Configuration Manager**erişemeyebilirsiniz, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] geliştirme ayarları uygulanabilir. Daha fazla bilgi için [nasıl yapılır: Visual Basic Geliştirici ayarları uygulanmış](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)konfigürasyonları yönetin.
 
-Varsayılan olarak, hata ayıklama ve yayın yapılandırmaları kullanılarak oluşturulan projeleri dahil edilecek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] şablonları. Uygulamayı hata ayıklama hata ayıklama yapılandırmasını destekler ve bir sürüm yapılandırması dağıtılabilir uygulamanın bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Ayrıca, özel bir çözüm yapılandırmaları ve proje yapılandırmalarını da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+Varsayılan olarak, hata ayıklama ve sürüm yapılandırmalarının şablonlar kullanılarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oluşturulan projelere dahildir. Bir hata ayıklama yapılandırması, bir uygulamanın hata ayıklamasını destekler ve bir sürüm yapılandırması, uygulamasının dağıtılabilecek bir sürümünü oluşturur. Daha fazla bilgi için [nasıl yapılır: Hata ayıklama ve yayın yapılandırmasını](../debugger/how-to-set-debug-and-release-configurations.md)ayarlayın. Ayrıca, özel çözüm konfigürasyonları ve proje yapılandırması da oluşturabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yapılandırma](../ide/how-to-create-and-edit-configurations.md)oluşturun ve düzenleyin.
 
-## <a name="solution-configurations"></a>Çözüm yapılandırmaları
+## <a name="solution-configurations"></a>Çözüm yapılandırması
 
-Bir çözüm yapılandırması, çözümdeki projelerden oluşturulan ve dağıtılan şeklini belirtir. Bir çözüm yapılandırması değiştirmek veya yeni bir tane tanımlamak için **Configuration Manager**altında **etkin çözüm yapılandırması**, seçin **Düzenle** veya **yeni** .
+Çözüm yapılandırması, çözümdeki projelerin nasıl oluşturulup dağıtılacağını belirler. Bir çözüm yapılandırmasını değiştirmek veya yeni bir tane tanımlamak için **Configuration Manager**, **etkin çözüm yapılandırması**altında **Düzenle** veya **Yeni**' yi seçin.
 
-Her giriş **proje bağlamları** bir çözüm yapılandırması kutusunda çözümde bir proje temsil eder. Her bir birleşimi için **etkin çözüm yapılandırması** ve **etkin çözüm platformu**, her proje nasıl kullanıldığını ayarlayabilirsiniz. (Çözüm platformları hakkında daha fazla bilgi için bkz: [derleme platformlarını anlama](../ide/understanding-build-platforms.md).)
+Bir çözüm yapılandırmasındaki **Proje bağlamları** kutusundaki her giriş çözümdeki bir projeyi temsil eder. **Etkin çözüm yapılandırması** ve **etkin çözüm platformunun**her birleşimi için, her projenin nasıl kullanıldığını belirleyebilirsiniz. (Çözüm platformları hakkında daha fazla bilgi için bkz. [derleme platformlarını anlama](../ide/understanding-build-platforms.md).)
 
 > [!NOTE]
-> Ne zaman yeni bir çözüm yapılandırması tanımlama ve seçme **yeni proje yapılandırmaları oluşturma** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yeni yapılandırma tüm projeleri için otomatik olarak atar. Benzer şekilde, zaman, yeni bir çözüm platformu tanımlama ve seçme **yeni proje platformları Oluştur** onay kutusunu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] yeni platformu tüm projeleri için otomatik olarak atar. Ayrıca, yeni bir platformu hedefleyen bir projeye eklerseniz, Visual Studio, platform çözüm platformları listesine ekler ve tüm projeleri yeniden atar.
+> Yeni bir çözüm yapılandırması tanımladığınızda ve **Yeni proje yapılandırmaları oluştur** onay kutusunu seçtiğinizde, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak yeni yapılandırmayı projelere atar. Benzer şekilde, yeni bir çözüm platformu tanımlayıp **Yeni proje platformları oluştur** onay kutusunu seçtiğinizde, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otomatik olarak yeni platformu projelere atar. Ayrıca, yeni platformu hedefleyen bir proje eklerseniz, Visual Studio bu platformu çözüm platformları listesine ekler ve bunu tüm projelere atar.
 >
-> Yine de her proje için ayarları değiştirebilirsiniz.
+> Her projenin ayarlarını yine de değiştirebilirsiniz.
 
-Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, bir proje üzerinde çalışıyorsanız ve belirten yapılandırma, bir mobil cihaz için oluşturulacak **araç kutusu** bir mobil cihaz projesinde kullanılan öğeleri görüntüler.
+Etkin çözüm yapılandırması, IDE için de bağlam sağlar. Örneğin, bir proje üzerinde çalışıyorsanız ve yapılandırma bir mobil cihaz için derlendiğini belirtiyorsa, **araç kutusu** yalnızca bir mobil cihaz projesinde kullanılabilecek öğeleri görüntüler.
 
-## <a name="project-configurations"></a>Proje yapılandırmaları
- Yapılandırma ve platform, bir projenin hedeflediği birlikte, oluşturulduğunda kullanılacak özelliklerini belirtmek için kullanılır. Bir proje özellik tanımları her bir yapılandırma ve platform bileşimi için farklı bir kümesi olabilir. Bir projenin özelliklerini değiştirmek için özellik sayfalarını kullanabilirsiniz. (İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.)
+## <a name="project-configurations"></a>Proje yapılandırması
+ Bir projenin hedeflediği yapılandırma ve platform, derlendiklerinde kullanılacak özellikleri belirtmek için birlikte kullanılır. Bir proje, her yapılandırma ve platformun birleşimi için farklı bir özellik tanımları kümesine sahip olabilir. Bir projenin özelliklerini değiştirmek için, özellik sayfalarını kullanabilirsiniz. ( **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.)
 
- Her bir proje yapılandırması için yapılandırma bağımlı özellikler gerektiği şekilde tanımlayabilirsiniz. Örneğin, belirli bir yapı için hangi proje öğeleri dahil edilecek ayarlayabilirsiniz ve ne çıkış dosyaları oluşturulabilir, bunlar nereye yerleştirilir ve nasıl bunlar iyileştirilir.
+ Her proje yapılandırması için gerektiğinde yapılandırmaya bağımlı özellikler tanımlayabilirsiniz. Örneğin, belirli bir yapı için hangi proje öğelerinin ekleneceğini ve hangi çıkış dosyalarının oluşturulacağını, nereye yerleştirileceğini ve bunların nasıl iyileştireedileceğini belirleyebilirsiniz.
 
- Proje yapılandırmaları önemli ölçüde farklı olabilir. Örneğin, kendi çıktı dosyasını başka bir yapılandırma çalıştırılabilir en yüksek hızda çalıştığını belirtebilir ancak en az alan kaplaması için iyileştirilmiş bir yapılandırma özelliklerini belirtebilirsiniz.
+ Proje konfigürasyonları önemli ölçüde farklılık gösterebilir. Örneğin, bir yapılandırmanın özellikleri, çıkış dosyasının minimum alanı kaplamaya en iyi duruma getirilmiş olduğunu belirtebilir, ancak başka bir yapılandırma yürütülebilir dosyasının en yüksek hızda çalıştığını belirtebilir.
 
- Proje yapılandırmaları çözümü tarafından depolanan — kullanıcı tarafından — böylece bir takım tarafından paylaşılabilir.
+ Proje konfigürasyonları, bir ekip tarafından paylaşılabilmesi için kullanıcıya göre değil, çözüme göre saklanır.
 
- Proje bağımlılıkları yapılandırma bağımsız olmakla birlikte, yalnızca etkin çözüm yapılandırmasında belirtilen proje oluşturulur.
+ Proje bağımlılıkları, yapılandırmaya bağımsız olsa da, yalnızca etkin çözüm yapılandırmasında belirtilen projeler oluşturulur.
 
-## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio Proje yapılandırmaları nasıl atar
- Yeni bir çözüm yapılandırması tanımlayın ve var olan bir ayarları kopyalanmaz, Visual Studio varsayılan proje yapılandırmaları atamak için aşağıdaki ölçütleri kullanır. Ölçüt gösterilen sırada değerlendirilir.
+## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio proje yapılandırmasını nasıl atar
+ Yeni bir çözüm yapılandırması tanımladığınızda ve ayarları var olan bir sunucudan kopyalamazsanız, Visual Studio varsayılan proje yapılandırmalarını atamak için aşağıdaki ölçütleri kullanır. Ölçütler gösterilen sırayla değerlendirilir.
 
-1. Bir proje yapılandırması adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşen yeni bir çözüm yapılandırması, bu yapılandırma adını atanır. Yapılandırma adlarını büyük küçük harfe duyarlı değildir.
+1. Projenin, yeni çözüm yapılandırmasının adıyla tam olarak eşleşen bir yapılandırma adı ( *\<> \<platform adı >* ) varsa, bu yapılandırma atanır. Yapılandırma adları büyük/küçük harfe duyarlı değildir.
 
-2. Proje yapılandırması adı bölümü yeni çözüm yapılandırması ile eşleşen bir yapılandırma adı varsa, bu yapılandırma veya platformu bölümü eşleşip eşleşmediğini, atanır.
+2. Projenin, yapılandırma adı bölümünün yeni çözüm yapılandırmasıyla eşleştiği bir yapılandırma adı varsa, bu yapılandırma atanır ve platform bölümünün eşleşip eşleşmediğini belirtir.
 
-3. Hala eşleşme yoksa, projeye listelenen ilk yapılandırmayı atanır.
+3. Hala eşleşme yoksa, projede listelenen ilk yapılandırma atanır.
 
-## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio çözüm yapılandırmalarının nasıl atar
- Bir proje yapılandırması oluşturduğunuzda (içinde **Configuration Manager**, seçerek **yeni** açılan menüde **yapılandırma** sütun bu proje için) ve seçin **yeni çözüm yapılandırmaları oluşturma** onay kutusu, Visual Studio projeyi desteklediği her platformda derlemek bir benzer adlı çözüm yapılandırması arar. Bazı durumlarda, Visual Studio, var olan çözüm yapılandırmaları yeniden adlandırır veya yenilerini tanımlar.
+## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio 'Nun çözüm yapılandırması nasıl atanır
+ Bir proje yapılandırması oluşturduğunuzda ( **Configuration Manager**, bu projenin **yapılandırma** sütunundaki açılan menüden **Yeni** ' yi seçerek) ve **yeni çözüm yapılandırmaları oluştur** onay kutusunu seçin ve görsel Studio, desteklediği her platformda projeyi derlemek için benzer adlı bir çözüm yapılandırması arar. Bazı durumlarda, Visual Studio mevcut çözüm yapılandırmalarının adını değiştirir veya yenilerini tanımlar.
 
- Visual Studio çözüm yapılandırmaları atamak için aşağıdaki ölçütleri kullanır.
+ Visual Studio, çözüm yapılandırması atamak için aşağıdaki ölçütleri kullanır.
 
-- Bir proje yapılandırması platformu belirtmiyor veya yalnızca tek bir platform belirtir, ardından yeni proje yapılandırmasının adı ile eşleşen bir çözüm yapılandırması bulundu eklendi veya. Bu çözüm yapılandırmasının varsayılan adı, platform adı içermez; şu biçimi alır  *\<proje yapılandırması adı >*.
+- Bir proje yapılandırması bir platform belirtmezse veya yalnızca bir platform belirtirse, adı yeni proje yapılandırmasıyla eşleşen bir çözüm yapılandırması bulundu veya eklendi. Bu çözüm yapılandırmasının varsayılan adı bir platform adı içermez;  *form\<proje yapılandırma adını >* alır.
 
-- Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.
+- Bir proje birden çok platformu destekliyorsa, desteklenen her platform için bir çözüm yapılandırması bulunur ya da eklenir. Her çözüm yapılandırmasının adı hem proje yapılandırma adını hem de platform adını içerir ve  *\<> \<platform adı > Form proje yapılandırma adına*sahiptir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -94,4 +94,4 @@ Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, b
 - [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ derleme başvurusu](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
-- [Derleme yapılandırmaları (Mac için Visual Studio)](/visualstudio/mac/configurations)
+- [Derleme konfigürasyonları (Mac için Visual Studio)](/visualstudio/mac/configurations)

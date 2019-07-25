@@ -1,6 +1,6 @@
 ---
-title: Kod kapsamı test etme
-ms.date: 09/18/2018
+title: Kod kapsamı testi
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973142"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416452"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
@@ -32,75 +32,76 @@ Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kaps
 
 ## <a name="requirements"></a>Gereksinimler
 
-Kod kapsamı özelliği, yalnızca Visual Studio Enterprise Edition'da kullanılabilir.
+Kod kapsamı özelliği yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Test Gezgini'ndeki birim testlerinde kod kapsamını analiz etmek için
 
-1. Üzerinde **Test** menüsünde seçin **kod kapsamı analizi**.
+1. **Test** menüsünde, **kod kapsamını analiz et**' i seçin.
 
-2. Çalışan satırları görmek için ![kod kapsamı renklerini simgesini göster](../test/media/codecoverage-showcoloringicon.png) **kod kapsamı renklerini Göster**.
+2. Hangi satırların çalıştırıldığını görmek için kod kapsamı renklendirmesini göster simgesi ![](../test/media/codecoverage-showcoloringicon.png) **kod kapsamı renklendirmesini göster**' i seçin.
 
-   Renkleri değiştirmek veya kalın yüz kullanmak için seçin **Araçları** > **seçenekleri** > **ortam** > **yazı tipleri ve Renkleri** > **ayarlarını göster: Metin düzenleyici**. Altında **görünen öğeler**, kapsama öğelerini ayarlayın.
+   Renkleri değiştirmek veya kalın yüzü kullanmak için, **Araçlar** > **Seçenekler** > **ortam** > **yazı tipleri ve renkler** > **için ayarları göster ' i seçin: Metin düzenleyici**. **Görüntüleme öğeleri**altında, kapsam öğelerini ayarlayın.
 
 3. Sonuçlar düşük kapsamı gösterirse, hangi kod parçalarının uygulanmadığını araştırın ve bunları kapsamak için daha fazla test yazın. Geliştirme ekipleri için tipik olarak yaklaşık %80 kod kapsamı hedeflenir. Bazı durumlarda, düşük kapsam kabul edilebilir. Örneğin, düşük kapsamı bazı kodlar standart şablonundan oluşturulduğu kabul edilebilir.
 
 > [!TIP]
-> - Bu derleyici optimizasyonunun kapalı olduğundan emin olun
-> - Yönetilmeyen (yerel) kod ile çalışıyorsanız, hata ayıklama derlemesini kullanma
-> - Her derleme için .pdb (simge) dosyaları oluşturduğunuzdan emin olun.
+> - Derleyici iyileştirmesinin kapalı olduğundan emin olun
+> - yönetilmeyen (yerel) kodla çalışıyorsanız bir hata ayıklama derlemesi kullanın
+> - Her derleme için. pdb (sembol) dosyaları oluşturmadığınızdan emin olun
 
-Beklediğiniz sonuçları alamazsanız, bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). Kod kapsamını kod güncelleştirdikten sonra çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
+Tahmin ettiğiniz sonuçları alamazsanız bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). Kodunuzu güncelleştirdikten sonra kod kapsamını çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
 
-## <a name="report-in-blocks-or-lines"></a>Bloklarda veya satırlarda raporu
+## <a name="report-in-blocks-or-lines"></a>Bloklar veya satırlarda raporla
 
-Kod kapsamı sayılır *blokları*. Bir blok, tek bir giriş ve çıkış noktası kodu parçasıdır.  Programın denetim akışı bir test çalıştırması sırasında bir blok geçerse, o blok anlatıldığı gibi sayılır. Blok kullanılma sayısının sonuç üzerinde etkisi yoktur.
+Kod kapsamı *bloklar*halinde sayılır. Bir blok, tek bir giriş ve çıkış noktası kodu parçasıdır.  Programın denetim akışı test çalışması sırasında bir bloktan geçerse, bu blok kapsanmış olarak sayılır. Blok kullanılma sayısının sonuç üzerinde etkisi yoktur.
 
-Seçerek satırlarda gösterilen sonuçlarınız da olabilir **sütunları Ekle/Kaldır** tablo üstbilgisinde. Test, kodun herhangi bir satırında tüm kod bloklarına uygulanırsa, tek satır olarak sayılır. Uygulanan ve uygulanmayan bazı kod blokları bir satır içerdiğinde bu kısmi bir satır olarak sayılır.
+Ayrıca, tablo üst bilgisinde **sütun Ekle/Kaldır** ' a tıklayarak da sonuçları satır bakımından görüntülenmesini sağlayabilirsiniz. Yüzdeler kaynak kodunda gördüğünüz parçaların boyutuyla daha yakından ilişkili olduğundan bazı kullanıcılar satırları saymayı tercih eder. Birçok satır kaplayan olsa bile uzun bir blok hesaplama tek bir blok olarak sayılacaktır.
 
-Yüzdeler kaynak kodunda gördüğünüz parçaların boyutuyla daha yakından ilişkili olduğundan bazı kullanıcılar satırları saymayı tercih eder. Birçok satır kaplayan olsa bile uzun bir blok hesaplama tek bir blok olarak sayılacaktır.
+> [!TIP]
+> Kod satırı, birden fazla kod bloğu içerebilir. Böyle bir durum söz konusu ise ve test çalıştırması satırdaki tüm kod bloklarını alıştırmalarda, tek bir satır olarak sayılır. Satırdaki tüm kod blokları yoksa, kısmi satır olarak sayılır.
 
 ## <a name="manage-code-coverage-results"></a>Kod kapsamı sonuçlarını yönetme
 
-**Kod kapsamı sonuçlarını** penceresi genellikle en son çalıştırma sonucunu gösterir. Sonuçlar test verilerini değiştirirseniz veya testlerinizin her defasında yalnızca bir kısmını çalıştırırsanız değişir.
+**Kod kapsamı sonuçları** penceresi genellikle en son çalıştırmanın sonucunu gösterir. Sonuçlar test verilerini değiştirirseniz veya testlerinizin her defasında yalnızca bir kısmını çalıştırırsanız değişir.
 
 Kod kapsamı penceresini önceki sonuçları veya diğer bilgisayarlarda elde edilen sonuçları görüntülemek için de kullanılabilir.
 
 Birçok çalıştırmanın sonucunu örneğin farklı test verileri kullanan çalışmalardan birleştirebilirsiniz.
 
-- **Bir önceki sonuç kümesini görüntülemek için**, aşağı açılan menüden seçim yapın. Menü, yeni bir çözüm açtığınızda temizlenen geçici bir liste gösterir.
+- **Önceki bir sonuç kümesini görüntülemek için**, açılan menüden seçin. Menü, yeni bir çözüm açtığınızda temizlenen geçici bir liste gösterir.
 
-- **Bir önceki oturumdan sonuçları görüntülemek için**, seçin **kod kapsamı sonuçlarını Al**, gitmek **TestResults** çözümünüzü ve alma klasöründe bir *.coverage* dosya.
+- **Önceki bir oturumdan sonuçları görüntülemek için**, **kod kapsamı sonuçlarını içeri aktar**' ı seçin, çözümünüzde **TestResults** klasörüne gidin ve bir *. Coverage* dosyasını içeri aktarın.
 
-   Karşılama renklendirme beri kaynak kodu değişirse yanlış olabilir *.coverage* dosyası oluşturuldu.
+   Kaynak kodu *. kapsam* dosyası oluşturulduktan sonra değiştiyse, kapsam renklendirme yanlış olabilir.
 
-- **Sonuçları metin olarak okunabilir hale getirmek için**, seçin **kod kapsamı sonuçlarını ver**. Bu bir okunabilir oluşturur *.coveragexml* diğer araçlarla işlemek veya kolayca posta ile göndermek, dosya.
+- **Sonuçları metin olarak okunabilir hale getirmek Için** **kod kapsamı sonuçlarını dışarı aktar**' ı seçin. Bu, diğer araçlarla işlem yapmak veya e-posta ile kolayca göndermek için okunabilir bir *. katarexml* dosyası oluşturur.
 
-- **Sonuçları başka bir kişiye göndermek için**, göndermek ya da bir *.coverage* dosya ya da dışarı aktarılan bir *.coveragexml* dosya. Sonra dosyayı içe aktarabilirsiniz. Kaynak kodun aynı sürümü varsa, kapsam renklendirmeyi görebilirsiniz.
+- **Başka birine sonuç göndermek için**bir *. Coverage* dosyası ya da aktarılmış bir *. veXML* dosyası gönderin. Sonra dosyayı içe aktarabilirsiniz. Kaynak kodun aynı sürümü varsa, kapsam renklendirmeyi görebilirsiniz.
 
-## <a name="merge-results-from-different-runs"></a>Farklı çalışmalardan sonuçları birleştirme
+## <a name="merge-results-from-different-runs"></a>Farklı çalıştırmaların sonuçlarını birleştirme
 
 Bazı durumlarda, test verilerine bağlı olarak kodunuzda farklı bloklar kullanılacaktır. Bu nedenle, farklı bir test çalışmasının sonuçlarını birleştirmek isteyebilirsiniz.
 
-Örneğin, giriş "2" ile bir test çalıştırdığınızda, belirli bir işlevin %50'sinin kapsandığını bulun. Giriş "-2" ile ikinci kez test çalıştırdığınızda diğer % 50'si işlev kapsamında görünüm renklendirme kapsamına bakın. Şimdi iki test çalışması sonuçlarını birleştirin ve işlevin %100 kapsamında rapor ve görünümü renklendirme kapsamını gösterin.
+Örneğin, giriş "2" ile bir test çalıştırdığınızda, belirli bir işlevin %50'sinin kapsandığını bulun. "-2" girişiyle ikinci kez testi çalıştırdığınızda, işlevin diğer% 50 ' inin ele alınmasının kapsam renklendirme görünümünde görürsünüz. Şimdi iki test çalışması sonuçlarını birleştirin ve işlevin %100 kapsamında rapor ve görünümü renklendirme kapsamını gösterin.
 
-Kullanım ![kod kapsamı penceresinde birleştirme düğmesi için simge](../test/media/codecoverage-mergeicon.png) **kod kapsamı sonuçlarını Birleştir** Bunu yapmak için. Son çalışmaların veya alınan sonuçların herhangi bir bileşimini seçebilirsiniz. Dışa aktarılan sonuçları birleştirmek istiyorsanız, bunları önce almanız gerekir.
+Kod ![kapsamı penceresinde](../test/media/codecoverage-mergeicon.png) birleştirme için simgeyi kullanın Bu, **kod kapsamı sonuçlarını birleştirerek** bunu yapın. Son çalışmaların veya alınan sonuçların herhangi bir bileşimini seçebilirsiniz. Dışa aktarılan sonuçları birleştirmek istiyorsanız, bunları önce almanız gerekir.
 
-Kullanım **kod kapsamı sonuçlarını ver** birleştirme işleminin sonuçlarını kaydetmek için.
+Birleştirme işleminin sonuçlarını kaydetmek için **kod kapsamı sonuçlarını dışarı aktarma** ' yı kullanın.
 
 ### <a name="limitations-in-merging"></a>Birleştirmede sınırlamalar
 
 - Kodun farklı sürümlerinden kapsama verilerini birleştirirseniz, sonuçlar ayrı ayrı gösterilir, ancak birleştirilmez. Tam olarak birleştirilmiş sonuçlar almak için test verilerini değiştirerek kodun aynı yapısını kullanın.
 
-- Dışa ve sonra içe alınmış sonuç dosyasını birleştirirseniz, sonuçları bloklarla değil yalnızca çizgilerle görüntüleyebilirsiniz. Kullanım **sütunları Ekle/Kaldır** satır verilerini göstermek için komutu.
+- Dışa ve sonra içe alınmış sonuç dosyasını birleştirirseniz, sonuçları bloklarla değil yalnızca çizgilerle görüntüleyebilirsiniz. Satır verilerini göstermek için **Sütunları Ekle/Kaldır** komutunu kullanın.
 
 - ASP.NET projesinin testlerinden sonuçları birleştirirseniz, birleştirilmiş değil ayrı testlerin sonuçları görüntülenir. Bu yalnızca ASP.NET yapılarına uygulanır: başka bir derleme için sonuçlar birleştirilecektir.
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Kod kapsamı sonuçlarından öğeleri hariç tut
 
-Örneğin kodu bir metin şablonundan oluşturulan tedarik puanlarını kodunuzda belirli öğeler dışında isteyebilirsiniz. Ekleme <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> özniteliği aşağıdaki kod öğelerinden birine: sınıf, yapı, yöntem, özellik, özellik ayarlayıcısı veya alıcı, olay.
+Örneğin kodu bir metin şablonundan oluşturulan tedarik puanlarını kodunuzda belirli öğeler dışında isteyebilirsiniz. Aşağıdaki kod öğelerinden herhangi birine özniteliğiekleyin:Class,struct,Method,Property,PropertySetterveyagetter,Event.<xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName>
 
 > [!TIP]
-> Hariç tutulan bir sınıfın türetilmiş sınıfları dışarıda tuttuğunu.
+> Bir sınıfın dışlanması türetilmiş sınıfları dışlamaz.
 
 Örneğin:
 
@@ -192,7 +193,7 @@ public ref class ExampleClass2
 { ... }
 ```
 
-### <a name="exclude-elements-in-native-c-code"></a>Yerel C++ kod öğeleri hariç tut
+### <a name="exclude-elements-in-native-c-code"></a>Yerel C++ koddaki öğeleri hariç tut
 
 C++ koddaki yönetilmeyen (yerel) öğeleri dışlamak için:
 
@@ -221,15 +222,15 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Aşağıdaki makroları kullanın:
 
-`ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+`ExcludeFromCodeCoverage(`*Exclusionname* `, L"` *Fonksiyonadı*`");`
 
-`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+`ExcludeSourceFromCodeCoverage(`*Exclusionname* `, L"` *SourceFilePath*`");`
 
-- *ExclusionName* herhangi bir benzersiz ad.
+- *Exclusionname* herhangi bir benzersiz addır.
 
-- *FunctionName* tam olarak nitelenmiş işlev adıdır. Joker karakterler içerebilir. Örneğin, bir sınıfın tüm işlevlerini hariç tutmak için yazma `MyNamespace::MyClass::*`
+- *Fonksiyonadı* tam olarak nitelenmiş bir işlev adıdır. Joker karakterler içerebilir. Örneğin, bir sınıfın tüm işlevlerini dışlamak için şunu yazın`MyNamespace::MyClass::*`
 
-- *SourceFilePath* yerel veya .cpp dosyasının UNC yoludur. Joker karakterler içerebilir. Aşağıdaki örnek, belirli bir dizindeki tüm dosyaları hariç tutar: `\\MyComputer\Source\UnitTests\*.cpp`
+- *SourceFilePath* , bir. cpp dosyasının yerel veya UNC yoludur. Joker karakterler içerebilir. Aşağıdaki örnek, belirli bir dizindeki tüm dosyaları dışlar:`\\MyComputer\Source\UnitTests\*.cpp`
 
 - `#include <CodeCoverage\CodeCoverage.h>`
 
@@ -237,36 +238,36 @@ Aşağıdaki makroları kullanın:
 
 - Dışlamaları birim test kod dosyasına veya uygulama kod dosyasına yerleştirebilirsiniz.
 
-- Derleyici seçeneğini ayarlayarak ya da kullanarak yönetilmeyen (yerel) kod Dışlamalar derlenmelidir `#pragma managed(off)`.
+- Dışlamaları, derleyici seçeneği ayarlanarak veya kullanılarak `#pragma managed(off)`yönetilmeyen (yerel) kod olarak derlenmelidir.
 
 > [!NOTE]
-> C + işlevleri hariç tutmak için +/ CLI kod, öznitelik Uygula `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` işlevi. Bu C# ile aynıdır.
+> C++/CLI kodundaki işlevleri dışlamak için, işlevine özniteliğini `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` uygulayın. Bu C# ile aynıdır.
 
-### <a name="include-or-exclude-additional-elements"></a>Dahil edilecek veya hariç ek öğeler
+### <a name="include-or-exclude-additional-elements"></a>Ek öğeleri dahil etme veya dışlama
 
-Kod kapsamı analizi yüklenen derlemeler ve kendisi için gerçekleştirilen bir *.pdb* aynı dizinde dosya kullanılabilir *.dll* veya *.exe* dosya. Bu nedenle bazı durumlarda, uygun kopyalarını alarak eklenen derleme kümesini genişletebilirsiniz *.pdb* dosyaları.
+Kod kapsamı Analizi yalnızca yüklenmiş ve. *pdb* dosyası *. dll* veya *. exe* dosyası ile aynı dizinde kullanılabilen derlemelerde gerçekleştirilir. Bu nedenle, bazı durumlarda, uygun *. pdb* dosyalarının kopyalarını alarak dahil edilen derleme kümesini genişletebilirsiniz.
 
-Üzerinde derlemeleri ve öğeleri seçili kod kapsamı çözümleme yazarak daha fazla denetimle alıştırma yapabilirsiniz bir *.runsettings* dosya. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
+Bir *. runsettings* dosyası yazarak kod kapsamı analizi için hangi derlemelerin ve öğelerin seçildiği hakkında daha fazla denetim gerçekleştirebilirsiniz. Örneğin, kendi sınıfları için öznitelikler eklemek zorunda kalmadan belirli tür derlemeleri hariç tutabilirsiniz. Daha fazla bilgi için [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
 
-## <a name="analyze-code-coverage-in-azure-pipelines"></a>Azure işlem hatları, kod kapsamını analiz etme
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>Azure Pipelines kod kapsamını analiz etme
 
-Kodunuzda denetlediğinizde, testlerinizi testleri birlikte yapı sunucusunda diğer ekip üyelerinden çalıştırın. Tüm projeye en güncel ve en kapsamlı resmi almak için Azure işlem hatları kod kapsamını analiz etmek kullanışlıdır. Ayrıca, Otomatik Sistem testleri ve geliştirme makinelerinde genellikle çalıştırma kodlanmış diğer testleri de içerir. Daha fazla bilgi için [derlemelerinizi ile birim testleri çalıştırma](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Kodunuzu iade ettiğinizde, testleriniz yapı sunucusunda diğer takım üyelerinden gelen testlerle birlikte çalışır. Tüm projede en güncel ve kapsamlı kapsama görünümünü almak için Azure Pipelines kod kapsamını çözümlemek yararlı olur. Ayrıca, genellikle geliştirme makinelerinde çalıştırılmamaları için otomatikleştirilmiş Sistem testlerini ve diğer kodlanmış testleri de içerir. Daha fazla bilgi için bkz. [Derlemelerinizle birim testlerini çalıştırma](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Komut satırından kod kapsamını analiz etme
 
-Komut satırından testleri çalıştırmak için kullanın *vstest.console.exe*. Kod kapsamı olan bir seçeneği *vstest.console.exe* yardımcı programı.
+Komut satırından testleri çalıştırmak için *VSTest. Console. exe*' yi kullanın. Kod kapsamı, *VSTest. Console. exe* yardımcı programının bir seçeneğidir.
 
-1. Visual Studio için geliştirici komut istemi başlatın:
+1. Visual Studio için Geliştirici Komut İstemi başlatın:
 
    ::: moniker range="vs-2017"
 
-   Windows içinde **Başlat** menüsünde seçin **Visual Studio 2017** > **VS 2017 için geliştirici komut istemi**.
+   Windows **Başlat** menüsünde, **vs 2017 için** **Visual Studio 2017** > Geliştirici komut istemi seçin.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Windows içinde **Başlat** menüsünde seçin **Visual Studio 2019** > **VS 2019 için geliştirici komut istemi**.
+   Windows **Başlat** menüsünde, **vs 2019 için** **Visual Studio 2019** > Geliştirici komut istemi seçin.
 
    ::: moniker-end
 
@@ -276,11 +277,11 @@ Komut satırından testleri çalıştırmak için kullanın *vstest.console.exe*
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
    ```
 
-Daha fazla bilgi için [VSTest.Console.exe komut satırı seçenekleri](vstest-console-options.md).
+Daha fazla bilgi için bkz. [VSTest. Console. exe komut satırı seçenekleri](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Sorun giderme
 
-Kod kapsamı sonuçlarını görmüyorsanız [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md) makalesi size yardımcı olabilir.
+Kod kapsamı sonuçlarını görmüyorsanız, [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md) makalesinde size yardımcı olabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

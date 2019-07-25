@@ -1,40 +1,44 @@
 ---
-title: Seçenekler, metin düzenleyici, JavaScript, doğrulama kodu
+title: Seçenekler, metin düzenleyici, JavaScript, kod doğrulama
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecf5073a590b1e1bd5eb47fb3c98064b9b7b506
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778498"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461741"
 ---
-# <a name="options-text-editor-javascript-code-validation"></a>Seçenekler, metin düzenleyici, JavaScript, doğrulama kodu
-Kullanım **kod doğrulama** sayfasının **seçenekleri** JavaScript hataları işleyecek şekilde etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **kod doğrulama** seçerek sayfası **Araçları** > **seçenekleri** menü çubuğu ve ardından genişletme **MetinDüzenleyicisi**  >  **JavaScript** > **doğrulama kodu.**
+# <a name="options-text-editor-javascript-code-validation"></a>Seçenekler, metin düzenleyici, JavaScript, kod doğrulama
+
+JavaScript 'in hataları işleme biçimini etkileyen ayarları değiştirmek için **Seçenekler** Iletişim kutusunun **kod doğrulama** sayfasını kullanın. Menü çubuğunda **Araçlar** > **Seçenekler** ' i ve ardından **metin Düzenleyicisi** > **JavaScript** > **kod doğrulaması** ' nı genişleterek **kod doğrulama** sayfasına erişebilirsiniz.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 **Kod doğrulama** sayfası aşağıdaki bölümleri içerir:
 
-## <a name="javascript-errors"></a>JavaScript Hataları
- JavaScript düzenleyicisinin belgenizdeki sözdizimini doğrulama şekline ilişkin tercihleri ayarlamak için bu seçenekleri kullanabilirsiniz.
+## <a name="javascript-errors"></a>JavaScript hataları
 
-### <a name="uielement-list"></a>UIElement Listesi
- **JavaScript hatalarını etkinleştir**
+JavaScript düzenleyicisinin belgenizdeki sözdizimini doğrulama şekline ilişkin tercihleri ayarlamak için bu seçenekleri kullanabilirsiniz.
 
- Ayarlandığında **True**, JavaScript Kod Düzenleyicisi, JavaScript ve JSX dosyaları için hataları gösterir. Hataları görünür **hata listesi** (JS) ön ekine sahip. Bu hataları görüntüleme yazmadığınız kodla çalışıyorsanız ve sözdizimi hatalarını düzeltmeyi amaçlamıyorsanız yararlıdır.
+### <a name="uielement-list"></a>UIElement listesi
 
- **Hataları uyarı olarak göster**
+**JavaScript hatalarını etkinleştir**
 
- Ayarlandığında **True**, JavaScript hataları hataları uyarı olarak gösterilir **hata listesi**.
+**True**olarak ayarlandığında JavaScript kod Düzenleyicisi JavaScript ve JSX dosyaları için hataları gösterir. Hatalar, (JS) önekiyle **hata listesi** görüntülenir. Bu hataları görüntülemek, yazmadığınız kodla çalışıyorsanız ve sözdizimi hatalarını gidermeyi düşünmüyorsanız yararlıdır.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+**Hataları uyarı olarak göster**
+
+**True**olarak ayarlandığında JavaScript hataları **hata listesi**hatalar yerine uyarılar olarak gösterilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

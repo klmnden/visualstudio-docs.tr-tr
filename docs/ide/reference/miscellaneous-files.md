@@ -1,5 +1,5 @@
 ---
-title: Çeşitli Dosyalar
+title: Çeşitli dosyalar
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,46 +8,48 @@ f1_keywords:
 - MiscellaneousFilesProject
 helpviewer_keywords:
 - solutions, miscellaneous files
-- builds [Visual Studio], miscellaneous files
 - standalone files
 - Solution Explorer, miscellaneous files
 - Miscellaneous Files folder
-- files [Visual Studio], outside of containers
-- files [Visual Studio], Miscellaneous Files folder
+- files [Visual Studio], miscellaneous
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec5b5210c37e6beaa71cecb6894ec5b72d96060
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3787ce7cd6c7355c86b6e6ef077311c603265fc1
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540912"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461435"
 ---
-# <a name="miscellaneous-files"></a>Çeşitli Dosyalar
-Kullanmak istediğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bağımsız olarak bir proje veya çözüm dosyaları üzerinde çalışmasına düzenleyiciler. Açık bir çözüm olsa da, açın ve bir çözüm veya proje eklemeden dosyaları değiştirin. Bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosyaları diğer dosyalar çağrılır. Çeşitli dosyalar, çözümler ve projeler için dış, yapılarında dahil değildir ve ile kaynak denetimi altında bir çözüme eklenemez.
+# <a name="miscellaneous-files"></a>Çeşitli dosyalar
 
- Dosyaları bağımsız olarak bir kapsayıcıdan açma çeşitli nedenlerden dolayı kullanışlıdır. Ancak proje tabanlı bir çözüm geliştirmek için çözümün geliştirme integral olmamasına karşın görüntülemek istediğiniz bir dosya olabilir. Geliştirme notları veya yönergeleri, veritabanı şemasını ve kod klipleri ortak örnek verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.
+Dosyalar üzerinde bir proje veya çözümden bağımsız olarak çalışmak için Visual Studio düzenleyicisini kullanmak isteyebilirsiniz. Açık bir çözümünüz varsa, dosyaları bir çözüme veya bir projeye eklemeden açabilir ve değiştirebilirsiniz. Bağımsız olarak çalışmak istediğiniz dosyalara çeşitli dosyalar denir. Çeşitli dosyalar, çözümlerin ve projelerin dışında, yapılara dahil edilmez ve kaynak denetimi altında bir çözüme dahil edilemez.
 
- ![Çözüm projeleri](../../ide/reference/media/projects_solutions_misc.gif)
+Dosyaları bir projeden veya çözümden bağımsız olarak açmak çeşitli nedenlerden dolayı faydalıdır. Proje tabanlı bir çözüm geliştirirken görüntülemek istediğiniz bir dosyanız olabilir ancak bu, çözümün geliştirmesi için ayrılmaz değildir. Ortak örneklerde geliştirme notları veya yönergeleri, veritabanı şeması ve kod klipleri verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.
 
- Klasör Seçenekleri etkinleştirilip etkinleştirilmediğini çeşitli dosyalar klasörüne dosyalar için Çözüm Gezgini görüntüleyebilirsiniz. Seçenekler arasında ayarlanabilir [belgeler, ortam, Seçenekler iletişim kutusu](../../ide/reference/documents-environment-options-dialog-box.md). Çeşitli dosya kapattıktan sonra bir seçenek için de etkinleştirilmediği sürece, herhangi bir belirli çözüm veya proje ile ilişkili değil.
+![Çözüm projeleri](../../ide/reference/media/projects_solutions_misc.gif)
 
- Diğer dosyalar klasörünü görüntülerseniz, dosyaların bağlantı olarak temsil eder. Bir çözümü açtığınızda bu klasör bir çözümün bir parçası olmasa da, bazı veya tüm çözüm kapatıldığında açıldıkları çeşitli dosyalar, klasör ayarlarını bağlı olarak yeniden açılır.
+Çözüm Gezgini, klasör seçenekleri etkinleştirilmişse dosyalar için **çeşitli dosyalar** klasörünü gösterebilir. Seçenekler [Belgeler, ortam, Seçenekler Iletişim kutusundan](../../ide/reference/documents-environment-options-dialog-box.md)ayarlanabilir. Çeşitli bir dosyayı kapattıktan sonra, bir seçenek de etkinleştirilmediği sürece belirli bir çözümle veya projeyle ilişkili değildir.
+
+**Miscellaneous Files** klasörü, dosyaları bağlantı olarak temsil eder. Bu klasör bir çözümün parçası olmasa da, bir çözümü açtığınızda, klasör ayarlarına bağlı olarak çözüm son kapatıldığı sırada açılan bazı veya tüm dosyalar yeniden açılır.
 
 > [!NOTE]
-> Çeşitli dosyalar klasörüne görünmeyen dosyaların bazıları şunlardır: .zip dosyalarını gibi IDE içinden değiştiremezsiniz dosyaları ve .doc dosyaları. IDE, yalnızca bir dış düzenleyici ile değiştirilebilir dosyaları izlemek değildir.
+> **Çeşitli dosyalar** klasöründe görünmeyen dosyalardan bazıları. zip dosyaları ve. doc dosyaları gibi IDE içinde değiştiremeyeceğiniz dosyalardır. IDE yalnızca harici bir düzenleyici aracılığıyla değiştirilebilen dosyaları izlemez.
 
-## <a name="commands-available-in-the-ide"></a>IDE içinde kullanılabilir komutları
- Menüleri, araç çubukları ve dosyanın biçimi temel alarak değişiklik içerdikleri komutlar, açın. Örneğin, bir metin dosyasını açtığınızda, metin düzenleyici araç çubuğu görünür ve kendi komutları kullanılabilir. Ardından bir XML şeması dosyasını açın, XML şema araç çubuğu görünür. XML şema kümenizdeki düzenlerken, metin düzenleyici araç çubuğunun komutları (veya araç) kullanılamaz. XML Şeması etkin pencere olup, bu nedenle, geçerli seçim bağlamı içerir. Bir proje dosyası ve çeşitli dosyası arasında geçiş yaptığınızda, projeyle ilgili tüm komutlar kaybolur ve yalnızca çeşitli dosyayı doğrudan ilgili görünür.
+## <a name="commands-available-in-the-ide"></a>IDE 'de kullanılabilen komutlar
 
-## <a name="folder-display-options"></a>Klasör görünen seçenekleri
- Çeşitli klasörü için görüntüleme seçeneklerini ayarlayabilirsiniz, böylece rağmen diğer tüm dosyalar açılmadı klasör görünür. Çözüm dosyası, çeşitli dosyalar listesini kalıcı olarak yönetmez. Bu, dosyaların en son kullanılan kullanıcı başına (MRU) listesini unutmayın sağlayan isteğe bağlı bir özellik kullanır.
+Menüler, araç çubukları ve içerdikleri komutlar, açtığınız dosyanın biçimine göre değişir. Örneğin, metin düzenleyici araç çubuğu göründüğünde ve komutları kullanılabilir olduğunda bir metin dosyası açtığınızda. Daha sonra bir XML şema dosyası açarsanız, XML Şeması araç çubuğu görüntülenir. XML şemanız düzenlenirken, metin düzenleyici araç çubuğunun komutları (veya araç çubuğunun kendisi) kullanılamaz. XML şeması etkin pencere ve bu nedenle geçerli seçim bağlamına sahiptir. Bir proje dosyası ve çeşitli bir dosya arasında geçiş yaptığınızda, projeyle ilgili tüm komutlar kaybolur ve yalnızca çeşitli dosya ile ilgili olanlar görüntülenir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="folder-display-options"></a>Klasör görüntüleme seçenekleri
 
+Diğer **dosyalar** klasörünün görüntüleme seçeneklerini, başka bir dosya açmış olsanız da klasörün görünmesini sağlayacak şekilde ayarlayabilirsiniz. Çözüm dosyası çeşitli dosyaların bir listesini kalıcı olarak yönetmez. Bu, kullanıcının Kullanıcı başına, son kullanılan (MRU) dosya listesini anımsamasını sağlayan isteğe bağlı bir özellik kullanır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio’da projeler veya çözümler olmadan kod geliştirme](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Çözümler ve Projeler](../../ide/solutions-and-projects-in-visual-studio.md)
 - [Belgeler, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/documents-environment-options-dialog-box.md)

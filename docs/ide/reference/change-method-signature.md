@@ -1,5 +1,6 @@
 ---
 title: Yöntem imzası yeniden düzenleyin
+description: Yöntemin parametrelerinin sırasını kaldırın veya değiştirin. Yöntemine sağ tıklayın, hızlı eylemler ve yeniden düzenlemeler ' ı seçin ve Imzayı Değiştir ' i seçin.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8332cb8fb39c47f4e46a7d306b2673ff61b9e9
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791161"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483740"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Bir yöntem imzası yeniden düzenleme değiştirme
 
@@ -28,11 +29,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** Bir yöntemin parametre sırasını değiştirmek veya kaldırmak izin verir.
+**Yazdırılacak** Bir yöntemin parametrelerinin sırasını kaldırmanıza veya değiştirmenize olanak sağlar.
 
-**ne zaman:** Taşıma veya bir çeşitli yerlerde kullanılmakta olan bir yöntem parametresi kaldırmak istediğiniz.
+**Oluşturulurken** Şu anda çeşitli konumlarda kullanılmakta olan bir yöntem parametresini taşımak veya kaldırmak istiyorsunuz.
 
-**Neden:** El ile kaldırın ve parametreleri yeniden Sırala ve ardından bu yönteme tüm çağrılarını bulun ve bunları tek tek değiştirmek, ancak hatalarına neden.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
+**Kaydol** Parametreleri el ile kaldırıp yeniden sıralayın ve sonra bu yönteme yapılan tüm çağrıları bulabilir ve bunları tek tek değiştirebilir ancak bu hatalara yol açabilir.  Bu yeniden düzenleme aracı görevi otomatik olarak gerçekleştirir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -50,7 +51,7 @@ Bu yeniden düzenleme için geçerlidir:
 
    - **Klavye**
       - Tuşuna **Ctrl + R**, ardından **Ctrl + V**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **değişiklik imzası** gelen önizleme penceresi açılır.
+      - Tuşuna **Ctrl**+ **.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **değişiklik imzası** gelen önizleme penceresi açılır.
    - **Fare**
       - Seçin **Düzenle > Yeniden Düzenle > parametreleri Kaldır**.
       - Seçin **Düzenle > Yeniden Düzenle > parametreleri yeniden Sırala**.

@@ -1,42 +1,42 @@
 ---
-title: Derleme dosyaları için eylemleri
+title: Dosyalar için derleme eylemleri
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975633"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416504"
 ---
 # <a name="build-actions"></a>Derleme eylemleri
 
-Tüm Visual Studio proje dosyalarında derleme eylemine sahip. Derleme eylemi, proje derlendiğinde dosyanın için ne denetler.
+Visual Studio projesindeki tüm dosyaların bir yapı eylemi vardır. Yapı eylemi, proje derlendiğinde dosyaya ne olacağını denetler.
 
 > [!NOTE]
-> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derleme Mac için Visual Studio'da işlemleri](/visualstudio/mac/build-actions).
+> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz. [Mac için Visual Studio Içindeki derleme eylemleri](/visualstudio/mac/build-actions).
 
-## <a name="set-a-build-action"></a>Bir derleme eylemi
+## <a name="set-a-build-action"></a>Yapı eylemi ayarla
 
-Bir dosyanın derleme eylemi ayarlamak için dosyanın özelliklerinde açın **özellikleri** dosyasında seçerek penceresi **Çözüm Gezgini** tuşuna basarak **Alt** + **Girin**. Veya dosyayı sağ **Çözüm Gezgini** ve **özellikleri**. İçinde **özellikleri** penceresinin altında **Gelişmiş** bölümünde, aşağı açılan listenin yanındaki kullanın **derleme eylemi** dosyası için derleme eylemine ayarlamak için.
+Bir dosyaya yönelik derleme eylemini ayarlamak için, **Çözüm Gezgini** dosya ' da bir dosyayı seçip **alt**+**ENTER**' a basarak **Özellikler** penceresinde dosyanın özelliklerini açın. Ya da **Çözüm Gezgini** ' de dosyaya sağ tıklayıp **Özellikler**' i seçin. **Özellikler** penceresinde, **Gelişmiş** bölümünde, dosya için derleme eylemi ayarlamak için **Oluştur eylemi** ' nin yanındaki açılan listeyi kullanın.
 
-![Visual Studio'da dosya oluştur](media/build-actions.png)
+![Visual Studio 'da bir dosya için derleme eylemleri](media/build-actions.png)
 
-## <a name="build-action-values"></a>Eylem değerlerini oluşturma
+## <a name="build-action-values"></a>Derleme eylemi değerleri
 
-İçin derleme eylemlerin bazıları C# ve Visual Basic proje dosyaları:
+Ve Visual Basic proje dosyaları için C# bazı derleme eylemleri şunlardır:
 
-* **Hiçbiri** -dosyası herhangi bir şekilde oluşturma işleminin bir parçası değil. Bu değer "Benioku" dosyaları gibi belge dosyaları için örneğin kullanılabilir.
-* **Derleme** -dosya derleyici kaynak dosyası olarak geçirilir.
-* **İçerik** -bir dosya olarak işaretlenmiş **içerik** çağırarak bir akış olarak alınabilir <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Dağıtıldığında ASP.NET projeleri için bu dosyalar sitenin bir parçası olarak dahil edilir.
-* **Katıştırılmış kaynak** -dosya, derleyiciye derleme içine gömülü olması için bir kaynak olarak geçirilir. Çağırabilirsiniz <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> derlemeden dosyası okunamıyor.
-* **AdditionalFiles** -geçirilen kaynak olmayan metin dosyası C# veya Visual Basic derleyicisine giriş olarak. Bu yapı eylemi girişleri sağlamak için çoğunlukla kullanılır [Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) kod kalitesini doğrulamak için bir proje tarafından başvurulan. Daha fazla bilgi için [ek dosyaları kullanma](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
+* **Hiçbiri** -dosya, herhangi bir şekilde derleme kapsamında değildir. Bu değer, örneğin "Benioku" dosyaları gibi belge dosyaları için kullanılabilir.
+* **Derle** -dosya derleyiciye kaynak dosya olarak geçirilir.
+* **İçerik** - **içerik** olarak işaretlenen bir dosya, çağırarak <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>bir akış olarak alınabilir. ASP.NET projelerinde, bu dosyalar, dağıtıldığı sırada sitenin bir parçası olarak dahil edilir.
+* **Gömülü kaynak** -dosya, derlemeye gömülebilen bir kaynak olarak derleyiciye geçirilir. Derlemeden dosyayı okumak <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> için öğesini çağırabilirsiniz.
+* **AdditionalFiles** -girdi olarak C# veya Visual Basic derleyicisine geçirilen kaynak olmayan bir metin dosyası. Bu derleme eylemi, genellikle kod kalitesini doğrulamak üzere bir proje tarafından başvurulan [çözümleyiciler](../code-quality/roslyn-analyzers-overview.md) için giriş sağlamak üzere kullanılır. Daha fazla bilgi için bkz. [ek dosyaları kullanma](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,7 @@
 ---
 title: Güvenlik Sayfası, Proje Tasarımcısı
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -8,68 +9,68 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2115acae1e77bdacfa926c472940659c549cff65
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945498"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461305"
 ---
 # <a name="security-page-project-designer"></a>Güvenlik Sayfası, Proje Tasarımcısı
 
-**Güvenlik** sayfasının **Proje Tasarımcısı** kullanılarak dağıtılan uygulamalar için kod erişim güvenlik ayarlarını yapılandırmak için kullanılan [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] dağıtım. Daha fazla bilgi için [ClickOnce uygulamaları için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
+**Proje Tasarımcısı** 'nın **güvenlik** sayfası, ClickOnce dağıtımı kullanılarak dağıtılan uygulamalar için kod erişimi güvenlik ayarlarını yapılandırmak üzere kullanılır. Daha fazla bilgi için bkz. [ClickOnce uygulamaları Için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Erişim için **güvenlik** sayfasında, bir proje düğümünde **Çözüm Gezgini**ve ardından **proje** menüsünde tıklayın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **güvenlik** sekmesi.
+ **Güvenlik** sayfasına erişmek için **Çözüm Gezgini**' de bir proje düğümüne tıklayın ve ardından **Proje** menüsünde **Özellikler**' e tıklayın. **Proje Tasarımcısı** göründüğünde, **güvenlik** sekmesine tıklayın.
 
 ## <a name="security-settings"></a>Güvenlik ayarları
 
- **ClickOnce güvenlik ayarlarını etkinleştirme**
+ **ClickOnce güvenlik ayarlarını etkinleştir**
 
- Güvenlik ayarları tasarım zamanında etkin olup olmadığını belirler. Ne zaman bu seçenek işaretli değilse, diğer tüm seçenekler üzerinde **güvenlik** sayfası kullanılamıyor.
+ Tasarım zamanında güvenlik ayarlarının etkinleştirilip etkinleştirilmeyeceğini belirler. Bu seçenek silinirse, **güvenlik** sayfasındaki diğer tüm seçenekler kullanılamaz.
 
 > [!NOTE]
-> Kullanarak bir uygulama yayımladığınızda **Yayımla** sihirbazında, bu seçenek otomatik olarak etkinleştirilir.
+> **Yayımla** sihirbazını kullanarak bir uygulamayı yayımladığınızda, bu seçenek otomatik olarak etkinleştirilir.
 
- Bu seçeneği belirlediğinizde, iki radyo düğmelerinden birini seçme seçeneğiniz vardır: **Tam güven uygulamasıdır** veya **kısmi güven uygulamasıdır**.
+ Bu seçeneği belirlediğinizde, iki radyo düğmesinden birini seçme seçeneğiniz vardır: **Bu bir tam güven uygulamasıdır** veya **Bu bir kısmi güven uygulamasıdır**.
 
- WPF Web tarayıcı uygulaması projeleri için varsayılan olarak bu seçenek seçilidir.
+ Varsayılan olarak, WPF Web tarayıcısı uygulama projeleri için bu seçenek seçilidir.
 
- Varsayılan olarak, diğer proje türleri için bu seçeneği temizlenir.
+ Varsayılan olarak, tüm diğer proje türleri için bu seçenek temizlenir.
 
- **Tam güven uygulamasıdır**
+ **Bu bir tam güven uygulamasıdır**
 
- Bu seçeneği belirlerseniz, uygulama yüklendiğinde veya bir istemci bilgisayarda çalışması tam güven izinleri ister. Önlemek uygulamanızı verilir çünkü tam güven mümkünse kullanarak sınırsız erişim dosya sistemini ve kayıt defteri gibi kaynaklara bağlayabilirsiniz.
+ Bu seçeneği belirlerseniz, uygulama bir istemci bilgisayarda yüklendiğinde veya çalıştırıldığında tam güven izinleri ister. Mümkünse, uygulamanız dosya sistemi ve kayıt defteri gibi kaynaklara Kısıtlanmamış erişim izni vereceğinden, tam güven kullanmaktan kaçının.
 
- WPF Web tarayıcı uygulaması projeleri için varsayılan olarak bu seçenek, kısmi güven için ayarlanır.
+ Varsayılan olarak, WPF Web tarayıcısı uygulama projeleri için bu seçenek kısmi güven olarak ayarlanır.
 
- Varsayılan olarak, diğer proje türleri için tam güven için bu seçeneği ayarlanır.
+ Varsayılan olarak, tüm diğer proje türleri için bu seçenek tam güven olarak ayarlanır.
 
- **Kısmi güven uygulamasıdır**
+ **Bu bir kısmi güven uygulamasıdır**
 
- Bu seçeneği belirlerseniz, uygulama yüklendiğinde veya bir istemci bilgisayarda çalışması kısmi güven izinleri ister. *Kısmi güven* istenen kod erişimi güvenliği izinleri altında izin verilen eylemleri anlamına gelir. Güvenlik izinlerini yapılandırma hakkında daha fazla bilgi için bkz. [ClickOnce uygulamaları için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
+ Bu seçeneği belirlerseniz, uygulama bir istemci bilgisayarda yüklendiğinde veya çalıştırıldığında kısmi güven izinleri ister. *Kısmi güven* , yalnızca istenen kod erişimi güvenlik izinlerinin altında izin verilen eylemlerin çalışacağı anlamına gelir. Güvenlik izinlerini yapılandırma hakkında daha fazla bilgi için bkz. [ClickOnce uygulamaları Için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Kısmi güven güvenliği ayarları seçenekleri yapılandırarak belirtebilirsiniz **ClickOnce güvenlik izinleri** alan.
+ **ClickOnce güvenlik izinleri** alanındaki seçenekleri yapılandırarak kısmi güven güvenlik ayarlarını belirtebilirsiniz.
 
-## <a name="clickonce-security-permissions"></a>ClickOnce güvenlik izinleri
+## <a name="clickonce-security-permissions"></a>ClickOnce güvenlik Izinleri
 
- **Bölge, uygulama yüklenir**
+ **Uygulamanızın yükleneceği bölge**
 
- Kod erişimi güvenliği izinleri varsayılan kümesini belirtir. Seçin **Internet** veya **yerel Intranet** sınırlı bir izin kümesi veya seçin **(özel)** özel izin yapılandırmak için ayarlayın. Uygulama bir bölgede verilen çok daha fazla izne isterse, ek izinler vermek son kullanıcı için bir ClickOnce güven istemi görünür. Güvenlik izinlerini yapılandırma hakkında daha fazla bilgi için bkz. [ClickOnce uygulamaları için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
+ Varsayılan bir kod erişimi güvenlik izinleri kümesi belirtir. Kısıtlı bir izin kümesi için **Internet** veya **Yerel Intranet** ' i seçin veya özel bir izin kümesi yapılandırmak için **(özel)** seçeneğini belirleyin. Uygulama bir bölgede verilenden daha fazla izin isterse, son kullanıcının ek izinleri vermesi için bir ClickOnce güven istemi görüntülenir. Güvenlik izinlerini yapılandırma hakkında daha fazla bilgi için bkz. [ClickOnce uygulamaları Için kod erişimi güvenliği](../../deployment/code-access-security-for-clickonce-applications.md).
 
- Varsayılan olarak WPF Web tarayıcı uygulaması projeleri için bu seçeneği ayarlanır **Internet**.
+ Varsayılan olarak, WPF Web tarayıcısı uygulama projeleri için bu seçenek **Internet**olarak ayarlanır.
 
- **XML izinleri Düzenle**
+ **Izinleri Düzenle XML**
 
- İzinleri yapılandırmak için uygulama bildirim şablonu (app.manifest) için açılır **(özel)** izin kümesi.
+ **(Özel)** izin kümesi için izinleri yapılandırmak üzere uygulama bildirimi şablonunu (App. manifest) açar.
 
  **Gelişmiş**
 
- Açılır [Gelişmiş Güvenlik Ayarları iletişim kutusu](../../ide/reference/advanced-security-settings-dialog-box.md), sınırlı izinler ile uygulamasında hata ayıklama için ayarları yapılandırmak için kullanılır. Bu ayarlar, hata ayıklama sırasında denetlenir ve uygulamanızı bir bölge içinde tanımlanan daha fazla izin gerekebilir izni özel durumları gösterir.
+ Kısıtlanmış izinlerle uygulamada hata ayıklamaya yönelik ayarları yapılandırmak için kullanılan [Gelişmiş güvenlik ayarları Iletişim kutusunu](../../ide/reference/advanced-security-settings-dialog-box.md)açar. Bu ayarlar hata ayıklama sırasında denetlenir ve izin özel durumları, uygulamanızın bir bölgede tanımlı olandan daha fazla izne ihtiyacı olabileceğini gösterir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

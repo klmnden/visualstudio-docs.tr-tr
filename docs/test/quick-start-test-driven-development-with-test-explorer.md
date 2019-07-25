@@ -1,81 +1,36 @@
 ---
-title: Test Gezgini ile test güdümlü geliştirme
-ms.date: 11/04/2016
+title: Test odaklı geliştirme Kılavuzu
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002183"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493204"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>İzlenecek yol: Test Gezgini kullanarak test odaklı geliştirme
 
-Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı dillerde veya platformlarda test için özel hazırlanmıştır. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. En sık kullanılan çerçeveler için bağdaştırıcılar bulunmaktadır ve diğer çerçeveler için kendi bağdaştırıcılarınızı yazabilirsiniz.
+Artımlı kod değişiklikleri aracılığıyla kodunuzun düzgün çalışmasını sağlamaya yardımcı olmak için birim testleri oluşturun. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı diller veya platformlarda test için özelleştirilmiştir. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. **Test Gezgini**hakkında daha fazla bilgi için bkz. Test Gezgini ve [Test Gezgini](test-explorer-faq.md) [ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md) SSS.
 
-Test Gezgini Visual Studio'nun önceki sürümlerinde bulunan test pencerelerinin yerini almıştır. Yararları şunlardır:
+Bu izlenecek yol, C# Microsoft Test çerçevesi (MSTest) kullanarak test edilmiş bir yöntemin nasıl geliştirileceğini göstermektedir. Diğer diller veya NUnit gibi diğer test çerçeveleri için kolayca uyum sağlayabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
-- .NET, yönetilmeyen kod, veritabanı ve diğer tür testleri tek bir arabirim kullanarak çalıştırın.
+## <a name="create-a-test-and-generate-code"></a>Test oluşturma ve kod üretme
 
-- Kullanım birim test framework NUnit gibi tercih ettiğiniz veya MSTest çerçeveleri.
+1. Bir C# **sınıf kitaplığı (.NET Standard)** projesi oluşturun. Bu proje, test etmek istediğimiz kodu içerecektir. Projeyi **MyMath**olarak adlandırın.
 
-- Gereksinim duyduğunuz tüm bilgileri tek bir pencerede bakın.
+2. Aynı çözümde yeni bir **MSTest test projesi (.NET Core)** projesi ekleyin. Test projesini **MathTests**olarak adlandırın.
 
-## <a name="use-test-explorer"></a>Test Gezgini'ni kullanın
+   ![Yeni kod ve test projeleri](../test/media/test-driven-development-ide.png)
 
-![Test Gezgini tümünü Çalıştır düğmesini gösteren](../test/media/unittestexplorer-beta-.png)
-
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Test Gezgini'ni kullanarak birim testlerini çalıştırmak için
-
-1. Tercih ettiğiniz test çerçevelerini kullanan birim testleri oluşturun. Örneğin, bir test oluşturmak için MSTest Framework'ü kullanır:
-
-   1. Oluşturma **birim testi projesi** için proje C#, Visual Basic veya C++.
-
-   2. Her birim testini bir yöntem gibi yazın. Her test yönteminin önüne `[TestMethod]` özniteliği.
-
-2. Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
-
-3. Menü çubuğunda, **Test** > **birim testlerini Çalıştır** > **tüm testleri**.
-
-    Çözüm derlenir ve testler.
-
-    Test Gezgini açılır ve sonuçları özetini görüntüler.
-
-   **Testlerin tam bir listesini görmek için:** Seçin **Tümünü Göster** herhangi bir kategoride.
-
-   **Bir test sonucunun ayrıntılarını görmek için:** Ayrıntılar bölmesinde özel durum iletileri gibi ayrıntıları görüntülemek için Test Gezgini'nde testi seçin.
-
-   **Bir testin koduna gitmek için:** Test Gezgini'nde teste çift tıklayın ya da seçin **testi Aç** kısayol menüsünde.
-
-   **Bir testte hata ayıklamak için:** Bir veya daha fazla testin kısayol menüsünü açın ve ardından **seçilen Testlerde Hata Ayıkla**.
-
-> [!IMPORTANT]
-> Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.
-
-> [!NOTE]
-> Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
-
-## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>İzlenecek yol: Bir yöntem geliştirmek üzere kullanarak birim testleri
-
-Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
-
-### <a name="create-the-test-and-method"></a>Testi ve yöntemi oluşturma
-
-1. Oluşturma bir C# **sınıf kitaplığı** proje. Bu proje, teslim etmek istediğimiz kodu içerecek. Bu örnekte, adlı `MyMath`.
-
-2. Yeni bir **birim testi projesi** proje.
-
-   ![Yeni kod ve test projeleri](../test/media/unittestexplorerwalk1.png)
-
-3. Temel bir test yöntemi yazın. Belirli bir giriş için elde edilen sonucu doğrulayın:
+3. Belirli bir giriş için elde edilen sonucu doğrulayan basit bir test yöntemi yazın. `UnitTest1` Sınıfına aşağıdaki kodu ekleyin:
 
    ```csharp
-
    [TestMethod]
    public void BasicRooterTest()
    {
@@ -87,98 +42,93 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
      // Run the method under test:
      double actualResult = rooter.SquareRoot(input);
      // Verify the result:
-     Assert.AreEqual(expectedResult, actualResult,
-         delta: expectedResult / 100);
+     Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
    }
    ```
 
-4. Yöntemi testten oluşturun.
+4. Test kodundan bir tür oluşturun.
 
-   1. İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur** > **yeni türü**.
+   1. İmleci üzerine `Rooter`getirin ve ardından ampul menüsünde **' Rooter '**  > türü oluştur ' u seçerek**yeni tür oluşturun**.
 
-   2. İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte olduğu `MyMath`.
+      ![Yeni tür hızlı eylem Oluştur](media/test-driven-development-generate-new-type.png)
 
-   3. İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur** > **metot taslağı**.
+   2. **Tür oluştur** iletişim kutusunda, **projeyi** **MyMath**, sınıf kitaplığı projesi olarak ayarlayın ve ardından **Tamam**' ı seçin.
 
-5. Birim testini çalıştırın.
+      ![Visual Studio 2019 'de tür oluştur iletişim kutusu](media/test-driven-development-generate-type-dialog.png)
 
-   1. Üzerinde **Test** menüsünde seçin **birim testlerini Çalıştır** > **tüm testleri**.
+5. Test kodundan bir yöntem oluşturun. İmleci üzerine `SquareRoot`getirin ve ardından ampul menüsünde **' Rooter. SquareRoot ' metodunu üret**' i seçin.
 
-        Çözüm derlenir ve çalışır.
+6. Birim testini çalıştırın.
 
-        Test Gezgini açılır ve sonuçları görüntüler.
+   1. **Test Gezgini**'ni açmak için, **Test** menüsünde **Windows** > **Test Gezgini**' ni seçin.
 
-        Test altında görünür **başarısız testler**.
+   2. **Test Gezgini**'nde, testi çalıştırmak Için **Tümünü Çalıştır** düğmesini seçin.
 
-6. Testin adını seçin.
+   Çözüm oluşturulur ve test çalışır ve başarısız olur.
 
-    Testin ayrıntıları Test Gezgini'nin alt bölümünde görünür.
+7. Testin adını seçin.
 
-7. Altındaki öğeleri seçin **yığın izlemesi** testin başarısız olduğu görmek için.
+   Testin ayrıntıları **Test ayrıntısı Özeti** bölmesinde görünür.
 
-   ![Birim Test Gezgini başarısız gösteren test edin.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Test Gezgini 'nde test ayrıntısı Özeti](media/test-driven-development-test-detail-summary.png)
 
-   Bu noktada, test ve değiştirecek ve böylece test başarılı bir saplama oluşturdunuz.
+8. Testin başarısız olduğu konuma geçmek için **yığın izleme** altındaki en üstteki bağlantıyı seçin.
 
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Her değişiklikten sonra tüm sınamalardan başarılı olun
+Bu noktada, testin başarılı olması için değiştirebileceğiniz bir test ve bir saplama oluşturdunuz.
 
-1. İçinde *MyMath\Rooter.cs*, kodunu geliştirin `SquareRoot`:
+## <a name="verify-a-code-change"></a>Kod değişikliğini doğrulama
+
+1. *Class1.cs* dosyasında, şu kodu `SquareRoot`geliştirebilirsiniz:
 
     ```csharp
     public double SquareRoot(double input)
-     {
-       return input / 2;
-     }
+    {
+        return input / 2;
+    }
     ```
 
-2. Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-     Kod derlenir ve test çalışır.
+   Çözüm oluşturulur ve test çalıştırmaları ve geçirir.
 
-     Test başarılı olur.
+   ![Bir geçen testi gösteren test Gezgini](../test/media/test-driven-development-passed-test.png)
 
-     ![Birim Test Gezgini'nde testi geçiyor gösteriliyor.](../test/media/unittestexplorerwalkthrough3.png)
+## <a name="extend-the-range-of-inputs"></a>Giriş aralığını genişletme
 
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Giriş aralığını genişletmek için testler ekleme
+Kodun her durumda çalıştığından emin olmak için, daha geniş bir giriş değerleri aralığı deneyen testler ekleyin.
 
-1. Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.
+> [!TIP]
+> Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.
 
-    > [!TIP]
-    > Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.
-
-     Test sınıfınızda, bir girdi değerleri aralığını çalıştığında şu test ekleyin:
+1. Test sınıfında, aşağıdaki testi ekleyerek bir giriş değerleri aralığı dener:
 
     ```csharp
     [TestMethod]
     public void RooterValueRange()
     {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Try a range of values:
-      for (double expectedResult = 1e-8;
-          expectedResult < 1e+8;
-          expectedResult = expectedResult * 3.2)
-      {
-        RooterOneValue(rooter, expectedResult);
-      }
+        // Create an instance to test.
+        Rooter rooter = new Rooter();
+
+        // Try a range of values.
+        for (double expected = 1e-8; expected < 1e+8; expected *= 3.2)
+        {
+            RooterOneValue(rooter, expected);
+        }
     }
 
     private void RooterOneValue(Rooter rooter, double expectedResult)
     {
-      double input = expectedResult * expectedResult;
-      double actualResult = rooter.SquareRoot(input);
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 1000);
+        double input = expectedResult * expectedResult;
+        double actualResult = rooter.SquareRoot(input);
+        Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 1000);
     }
     ```
 
-2. Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-     İlk test başarılı olsa da yeni test başarısız olur.
+   Yeni test başarısız olur (ancak ilk test devam eder). Başarısızlık noktasını bulmak için, başarısız testi seçin ve ardından **Test ayrıntısı Özeti** bölmesindeki ayrıntılara bakın.
 
-     Hata noktasını bulmak için başarısız olan testi seçin ve ardından, Test Gezgini'nin alt bölümünde üst öğesi seçin **yığın izlemesi**.
-
-3. Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfında, kodu yeniden yazın:
+3. Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. `SquareRoot` Kodu aşağıdaki gibi değiştirin:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,89 +144,86 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
     }
     ```
 
-4. Test Gezgini'nde seçin **tümünü Çalıştır**.
+4. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-     Şimdi iki test geçirin.
+   Şimdi iki test geçirin.
 
-#### <a name="add-tests-for-exceptional-cases"></a>Olağanüstü durumlar için testler ekleme
+## <a name="add-tests-for-exceptional-cases"></a>Olağanüstü durumlar için testler ekleme
 
-1. Negatif girişler için bir test ekleyin:
+1. Negatif girişler için yeni bir test ekleyin:
 
     ```csharp
     [TestMethod]
-     public void RooterTestNegativeInputx()
-     {
-         Rooter rooter = new Rooter();
-         try
-         {
-             rooter.SquareRoot(-10);
-         }
-         catch (ArgumentOutOfRangeException e)
-         {
-             return;
-         }
-         Assert.Fail();
-     }
+    public void RooterTestNegativeInputx()
+    {
+        Rooter rooter = new Rooter();
+        try
+        {
+            rooter.SquareRoot(-10);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            return;
+        }
+        Assert.Fail();
+    }
     ```
 
-2. Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-     Yöntem testte döngüye girer ve el ile iptal edilmelidir.
+   Test döngüleri altındaki yöntemi el ile iptal edilmesi gerekir.
 
-3. Seçin **iptal**.
+3. **Test Gezgini**araç çubuğunda **iptal** ' i seçin.
 
-     Test 10 saniye sonra durur.
+   Test yürütmeyi durduruyor.
 
-4. Yöntem kodunu düzeltin:
+4. Yönteminin başına aşağıdaki `if` ifadeyi ekleyerek kodudüzeltir:`SquareRoot`
 
     ```csharp
-
     public double SquareRoot(double input)
     {
-      if (input <= 0.0)
-      {
-        throw new ArgumentOutOfRangeException();
-      }
-    ...
-    ```
-
-5. Test Gezgini'nde seçin **tümünü Çalıştır**.
-
-     Tüm testler geçer.
-
-#### <a name="refactor-without-changing-tests"></a>Testleri değiştirmeden yeniden düzenleme
-
-1. Kodu basitleştirin, ancak testleri değiştirmeyin.
-
-    > [!TIP]
-    > A *yeniden düzenleme* daha iyi kod yapmak veya kodu anlamayı kolaylaştırmak için hedeflenen bir değişikliktir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.
-    >
-    > Yeniden düzenleme adımları ayrı ayrı işlevselliği genişleten adımlardan gerçekleştirmenizi öneririz. Testlerin değiştirmeden tutmak, yanlışlıkla hataları yeniden düzenleme sırasında oluşturmadığından emin olmanızı sağlar.
-
-    ```csharp
-    public class Rooter
-    {
-      public double SquareRoot(double input)
-      {
         if (input <= 0.0)
         {
-          throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
+        ...
+    ```
+
+5. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+
+   Tüm testler geçer.
+
+## <a name="refactor-the-code-under-test"></a>Test altındaki kodu yeniden düzenleme
+
+Kodu yeniden düzenleyin, ancak testleri değiştirmeyin.
+
+> [!TIP]
+> Yeniden *düzenleme* , kodun daha iyi veya anlaşılması daha kolay hale getirmek için tasarlanan bir değişikdir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.
+>
+> Yeniden düzenleme adımları ayrı ayrı işlevselliği genişleten adımlardan gerçekleştirmenizi öneririz. Testlerin değiştirmeden tutmak, yanlışlıkla hataları yeniden düzenleme sırasında oluşturmadığından emin olmanızı sağlar.
+
+1. Yönteminde`SquareRoot` hesaplayan `result` satırı aşağıdaki gibi değiştirin:
+
+    ```csharp
+    public double SquareRoot(double input)
+    {
+        if (input <= 0.0)
+        {
+            throw new ArgumentOutOfRangeException();
+        }
+
         double result = input;
         double previousResult = -input;
         while (Math.Abs(previousResult - result) > result / 1000)
         {
-          previousResult = result;
-          result = (result + input / result) / 2;
-          //was: result = result - (result * result - input) / (2*result);
+            previousResult = result;
+            result = (result + input / result) / 2;
+            //was: result = result - (result * result - input) / (2*result);
         }
         return result;
-      }
     }
     ```
 
-2. Seçin **çalıştırması**.
+2. **Tümünü Çalıştır**' ı seçin ve tüm testlerin hala başarılı olduğunu doğrulayın.
 
-     Tüm testler hala başarılı.
-
-     ![Birim Test Gezgini 3 geçen testler gösteriliyor.](../test/media/unittestexplorerwalkthrough4.png)
+   ![Geçen 3 testi gösteren test Gezgini](../test/media/test-driven-development-three-passed-tests.png)

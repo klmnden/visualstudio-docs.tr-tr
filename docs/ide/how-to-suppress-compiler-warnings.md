@@ -3,23 +3,23 @@ title: Projeler ve NuGet paketleri için Derleyici uyarılarını gizleme
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549317"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415792"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını engelleme
 
-Derleyici uyarılarını bir veya daha fazla tür filtreleyerek yapı günlüğüne declutter. Örneğin, derleme günlük ayrıntı düzeyini ayarlamak, oluşturulan çıktıyı yalnızca bir bölümünü incelemek isteyebilirsiniz **Normal**, **ayrıntılı**, veya **tanılama**. Ayrıntı düzeyi hakkında daha fazla bilgi için bkz. [nasıl yapılır: Görüntüleme, kaydetme ve yapılandırma derleme günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md).
+Derleyici uyarılarını bir veya daha fazla tür filtreleyerek yapı günlüğüne declutter. Örneğin, derleme günlük ayrıntı düzeyini ayarlamak, oluşturulan çıktıyı yalnızca bir bölümünü incelemek isteyebilirsiniz **Normal**, **ayrıntılı**, veya **tanılama**. Ayrıntı düzeyi hakkında daha fazla bilgi için [bkz. nasıl yapılır: Yapı günlüğü dosyalarını](../ide/how-to-view-save-and-configure-build-log-files.md)görüntüleyin, kaydedin ve yapılandırın.
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Görsel için belirli uyarıları gösterme C# veya F\#
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# veya F için belirli uyarıları gösterme\#
 
 Kullanım **derleme** için belirli uyarıları bastırmak için özellik sayfası C# ve F# projeleri.
 
@@ -63,7 +63,7 @@ Bu örnek nasıl düzenleneceğini gösterir *.vbproj* belirli derleyici uyarıl
 
 1. Menü çubuğunda, **proje** > **projeyi**.
 
-1. İçinde **Çözüm Gezgini**, projeyi sağ tıklatın veya kısayol menüsünü açın ve ardından **Düzenle \<ProjectName > .vbproj**.
+1. **Çözüm Gezgini**, proje için sağ tıklama veya kısayol menüsünü açın ve ardından **ProjectName > \<. vbproj öğesini Düzenle**' yi seçin.
 
     XML proje dosyasını Kod düzenleyicisinde açılır.
 
@@ -133,5 +133,5 @@ Bazı durumlarda, bir projenin tamamı için yerine tek bir NuGet paketi için N
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)
-- [Nasıl yapılır: Görüntüleme, kaydetme ve derleme günlüğü dosyalarını yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

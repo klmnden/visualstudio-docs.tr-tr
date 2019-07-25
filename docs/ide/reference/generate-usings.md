@@ -9,39 +9,41 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531626"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416471"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Visual Studio'da kullanımları oluşturun
+# <a name="add-missing-usings-in-visual-studio"></a>Visual Studio 'da eksik using 'leri ekleme
 
 Bu kod oluşturma için geçerlidir:
 
 - C#
 
-**Ne:** Gerekli içeri aktarmaları hemen eklemenize olanak sağlayan veya [using deyimlerini](/dotnet/csharp/language-reference/keywords/using-statement) kopyalama yapıştırılmış kod için.
+**Yazdırılacak** Kopya ve yapıştırılan kod için gerekli içeri aktarmaları veya [using deyimlerini](/dotnet/csharp/language-reference/keywords/using-statement) hemen eklemenizi sağlar.
 
-**ne zaman:** Projenizi veya diğer kaynaklardan farklı yerlerde kodu kopyalayın ve yeni koda yapıştırın için yaygın bir uygulamadır. Bu hızlı eylem eksik kopyalama yapıştırılmış kod deyimlerini içeri aktarır ve ardından bunları eklemek ister bulur.
+**Oluşturulurken** Projenizde veya diğer kaynaklardaki farklı yerlerden kod kopyalamak ve yeni koda yapıştırmak yaygın bir uygulamadır. Bu hızlı eylem, kopya ve yapıştırılan kod için eksik Imports deyimlerini bulur ve sonra bunları eklemenizi ister.
 
-**Neden:** Hızlı eylem gerekli içeri aktarmaları otomatik olarak eklediğinden, el ile kopyalamanız gerekmez `using` kodunuzu gereken deyimleri.
+**Kaydol** Hızlı eylem gerekli içeri aktarmaları otomatik olarak eklediğinden, kodunuzun ihtiyaç duyduğu `using` deyimleri el ile kopyalamanız gerekmez.
 
-## <a name="generate-usings-refactoring"></a>Using deyimlerini yeniden düzenleme oluştur
+## <a name="add-missing-usings-refactoring"></a>Eksik using 'leri yeniden düzenleme Ekle
 
-1. Bir dosyadan kodu kopyalayın ve gerekli dahil olmak üzere olmadan yeni bir tane yapıştırın `using` deyimleri. Ortaya çıkan hata eksik ekleyen bir kod düzeltme ile birlikte sunulduğu `using` deyimleri.
+1. Kodu bir dosyadan kopyalayın ve gerekli `using` deyimleri dahil etmeden yeni bir dosyaya yapıştırın. Ortaya çıkan hata, eksik `using` deyimleri ekleyen bir kod düzeltmesine eşlik eder.
 
     > [!NOTE]
-    > Bu önerisine etkinleştirmek gereken **Araçlar > Seçenekler > Metin Düzenleyicisi > C# > Gelişmiş > yönergeleri kullanarak**.
+    > **Araçlar > seçenekler > metin düzenleyicisi > C# yönergeleri kullanarak Gelişmiş > >** bu öneriyi etkinleştirmeniz gerekir.
 
-2. CTRL + seçin. açmak için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+2. CTRL + seçeneğini belirleyin. **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü açmak için.
 
     ![Using deyimleri oluşturma](media/generate-using-codefix.png)
 
-3. Seçin **kullanarak \<başvurunuz\>;** eksik başvuru eklenemiyor.
+3. Eksik başvuruyu eklemek için **başvurunuz \<\>** ' ı kullanmayı seçin.
 
-    ![Using deyimlerini sonucu oluştur](media/generate-using-result.png)
+    ![Kullanımlar sonucu oluştur](media/generate-using-result.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,7 @@
 ---
 title: Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,59 +11,59 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b23067475c8c5ff4d858ade8443946f7d9c73afc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778358"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461344"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
-Kullanım **biçimlendirme** sayfasının **seçenekleri** Kod Düzenleyicisi'nde kod biçimlendirme seçeneklerini ayarlamak için iletişim kutusu. Menü çubuğunda, bu sayfaya erişmek için seçin **Araçları**, **seçenekleri**ve ardından **metin düzenleyici**, **JavaScript**ve **Biçimlendirme**.
+Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçenekler** Iletişim kutusunun **biçimlendirme** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar**, **Seçenekler**' i seçin ve ardından **metin Düzenleyicisi**, **JavaScript**ve **biçimlendirme**' yi genişletin.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Otomatik Biçimlendirme
- Bu seçenekler biçimlendirme içinde oluştuğunda belirlemek **kaynak** görünümü.
+ Bu seçenekler, **kaynak** görünümünde biçimlendirmenin ne zaman gerçekleşeceğini belirlenir.
 
 ### <a name="uielement-list"></a>UIElement Listesi
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**Enter üzerinde biçimlendirme tamamlandı satırı**|Bu seçenek belirlendiğinde, Enter tuşuna basın, Kod Düzenleyicisi'ni otomatik olarak bulunduğu satırı biçimlendirir.|
-|**Üzerinde biçimlendirme tamamlandı deyimi;**|Bu seçenek belirlendiğinde, noktalı virgül anahtar seçtiğinizde, Kod Düzenleyicisi'ni otomatik olarak bulunduğu satırı biçimlendirir.|
-|**{Blok açılan biçimi**|Bu seçenek belirlendiğinde, açılış seçtiğinizde Kod düzenleyicisinde otomatik olarak bulunduğu satırı biçimlendirir küme ayracı anahtarı.|
-|**Tamamlanan bloğu Biçimlendir}**|Bu seçenek belirlendiğinde, kapatma seçeneğini belirlediğinizde Kod düzenleyicisinde otomatik olarak bulunduğu satırı biçimlendirir küme ayracı anahtarı.|
-|**Yapıştırma sırasında Biçimlendir**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi kod düzenleyicisine yapıştırın, yeniden biçimlendirir. Düzenleyici, şu anda tanımlı biçimlendirme kurallarını kullanır. Bu seçenek seçilmezse Düzenleyicisi özgün yapıştırılan içinde kodun biçimi kullanır.|
+|**Girerken Biçimlendirme tamamlandı satırı**|Bu seçenek belirlendiğinde, Enter tuşunu seçtiğinizde, kod Düzenleyicisi otomatik olarak çizgiyi biçimlendirir.|
+|**; Üzerinde biçimlendirme tamamlandı ekstresi**|Bu seçenek belirlendiğinde, noktalı virgül anahtarını seçtiğinizde, kod Düzenleyicisi otomatik olarak çizgiyi biçimlendirir.|
+|**{} Üzerinde açılan blok Biçimlendir**|Bu seçenek belirlendiğinde, açılan küme ayracı anahtarını seçtiğinizde, kod Düzenleyicisi otomatik olarak çizgiyi biçimlendirir.|
+|**} Üzerinde biçimlendirme tamamlandı bloğu**|Bu seçenek belirlendiğinde, kapanış küme ayracı tuşunu seçtiğinizde, kod Düzenleyicisi otomatik olarak çizgiyi biçimlendirir.|
+|**Yapıştırırken Biçimlendir**|Bu seçenek belirlendiğinde kod Düzenleyicisi, düzenleyiciye yapıştırdığınızda kodu yeniden biçimlendirir. Düzenleyici, geçerli olarak tanımlanmış biçimlendirme kurallarını kullanır. Bu seçenek seçilmezse, düzenleyici yapıştırılan kodun özgün biçimlendirmesini kullanır.|
 
 ## <a name="new-lines"></a>Yeni satırlar
- Bu seçenekler, Kod Düzenleyicisi, yeni bir satıra işlevleri ve denetim blokları için açık bir ayraç koyar olup olmadığını belirler.
+ Bu seçenekler, kod düzenleyicisinin yeni bir satırdaki işlevler ve denetim blokları için açık bir küme ayracı yerleştirip yerleştirmediğini belirtir.
 
 ### <a name="uielement-list"></a>UIElement Listesi
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**İşlevler için yeni satıra açık ayraç yerleştirin**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi'ni yeni bir satır için bir işlev ile ilişkili açık ayraç taşır.|
-|**Denetim blokları için yeni satıra açık ayraç yerleştirin**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi'ni bir denetim bloğu ile ilişkili açık ayraç taşır (örneğin, `if` ve `while` denetim blokları) için yeni bir satır.|
+|**İşlevler için yeni satıra açık küme ayracı yerleştir**|Bu seçenek belirlendiğinde, kod Düzenleyicisi bir işlevle ilişkili açık küme ayracını yeni bir satıra taşıdır.|
+|**Denetim blokları için yeni satıra açık küme ayracı yerleştir**|Bu seçenek belirlendiğinde, kod Düzenleyicisi bir denetim bloğu (örneğin, `if` ve `while` denetim blokları) ile ilişkili açık küme ayracını yeni bir satıra taşıdır.|
 
 ## <a name="spacing"></a>Aralığı
- Bu seçenekler alanları nasıl eklenir belirlemek **kaynak** görünümü.
+ Bu seçenekler, **kaynak** görünümünde boşlukların nasıl ekleneceğini tespit ediyor.
 
 ### <a name="uielement-list"></a>UIElement Listesi
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**Virgül olan sınırlayıcıyı sonra boşluk Ekle**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi virgüller sonra bir boşluk ekler.|
-|**'For' deyimleri noktalı virgülden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi olan ilk satırını her noktalı virgülden sonra bir boşluk ekler bir `for` döngü.|
-|**İkili işleçlerden önce ve sonra boşluk Ekle**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi'ni bir alan ikili işleçlerden önce ve sonra ekler (örneğin, +, -, & &, &#124; &#124;).|
-|**Denetim akış bildirimlerinde anahtar özcüklerden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi denetim akış deyimlerindeki anahtar sözcükleri JavaScript sonra bir boşluk ekler.|
-|**Anonim işlevler için function anahtar sözcüğünü sonra boşluk Ekle**|Bu seçenek belirlendiğinde, Kod Düzenleyicisi'ni, sonra bir boşluk ekler. `function` anonim işlevler için anahtar sözcüğü.|
-|**Açtıktan sonra ve boş ayraç kapatmadan önce boşluk Ekle**|Bu seçenek belirlendiğinde, parantez boş olmayan karakterler varsa Kod düzenleyicisinde bir boşluk açma parantezinden sonra ve kapatma parantezinden önce ekler.|
+|**Virgül sınırlayıcısından sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi virgül sınırlayıcıdan sonra bir boşluk ekler.|
+|**' For ' deyimlerinde noktalı virgülden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi `for` döngünün ilk satırına her noktalı virgülden sonra bir boşluk ekler.|
+|**İkili işleçlerden önce ve sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi ikili işleçlerden önce ve sonra bir boşluk ekler (örneğin, +,-, & &, &#124; &#124;).|
+|**Denetim akışı deyimlerinde anahtar sözcüklerden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi denetim akış deyimlerindeki JavaScript anahtar sözcükleriyle sonra bir boşluk ekler.|
+|**Anonim işlevler için Function anahtar sözcüğünden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi anonim işlevler için `function` anahtar sözcükten sonra bir boşluk ekler.|
+|**Boş olmayan parantezleri kapatmadan önce ve açtıktan sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi, parantez içinde boş olmayan karakterler varsa, açma parantezinden sonra ve kapatma parantezinden önce bir boşluk ekler.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

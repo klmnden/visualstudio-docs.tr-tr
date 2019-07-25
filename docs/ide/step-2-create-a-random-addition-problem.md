@@ -1,97 +1,100 @@
 ---
-title: '2. Adım: Rasgele bir toplama problemi oluşturma'
+title: '2\. Adım: Rastgele bir toplama problemi oluşturma'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430783"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416881"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rasgele bir toplama problemi oluşturma
-Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matematik soruları ekleyerek olun. Adlı bir yöntem de oluşturduğunuz `StartTheQuiz()` ve problemleri dolduran ve geri sayım Zamanlayıcısını başlatır. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorularını ekleyeceksiniz.
+# <a name="step-2-create-a-random-addition-problem"></a>2\. Adım: Rastgele bir toplama problemi oluşturma
+Bu öğreticinin ikinci bölümünde, rastgele sayıları temel alan matematik sorunları ekleyerek testi zorlayıcı hale getirebilirsiniz. Ayrıca, adlı `StartTheQuiz()` ve sorunları dolduran ve geri sayım zamanlayıcısını Başlatan bir yöntem de oluşturabilirsiniz. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorunlarını ekleyeceğiz.
 
 > [!NOTE]
-> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun.
 
-## <a name="to-create-a-random-addition-problem"></a>Rasgele bir toplama problemi oluşturma
+## <a name="to-create-a-random-addition-problem"></a>Rastgele bir ek sorun oluşturmak için
 
-1. Form tasarımcısında formu (**Form1**).
+1. Form tasarımcısında, formunu (**Form1**) seçin.
 
-2. Menü çubuğunda, **görünümü** > **kod**.
+2. Menü çubuğunda**kodu** **görüntüle** > ' yi seçin.
 
-     *Form1.cs* veya *Form1.vb* biçimin ardındaki kodu görüntüleyebilirsiniz. böylece, kullanmakta olduğunuz programlama diline göre görünür.
+     *Form1.cs* veya *Form1. vb* , kullandığınız programlama diline bağlı olarak görünür, böylece formun arkasındaki kodu görüntüleyebilmenizi sağlayabilirsiniz.
 
-3. Oluşturma bir <xref:System.Random> nesne ekleyerek bir `new` ekranın üst kısmında aşağıdaki gibi kod deyimi.
+3. Aşağıdaki gibi <xref:System.Random> kodun en üstüne yakın `new` bir ifade ekleyerek bir nesne oluşturun.
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
 
-     Formunuza rasgele nesne eklendi ve nesneyi **randomizer**.
+     Formunuza rastgele bir nesne eklediniz ve nesne **rastgele**olarak adlandırılıyordu.
 
-     `Random` bir nesne olarak bilinir. Daha önce bu sözcüğü olasılıkla duydunuz ve bir sonraki öğreticide programlama için demek olduğu hakkında daha fazla bilgi edinin. Şimdilik, hemen kullanabileceğiniz unutmayın `new` deyimlerini düğmeler, etiketler, paneller, Openfiledialog'lar, Colordialog'lar, Soundplayer'lar, Random'lar ve hatta biçimler ve bu öğeleri oluşturmak için nesne olarak adlandırılır. Programınızı çalıştırdığınızda form başlatılır ve ardındaki kod bir rastgele nesnesi oluşturur ve onu olduğunda **randomizer**.
+     `Random`bir nesne olarak bilinir. Daha önce bu kelimeyi duydunuz ve bir sonraki öğreticide programlamanın anlamı hakkında daha fazla bilgi edindiniz. Şimdilik, düğmeler, Etiketler, paneller, openfileiletişimler, coloriletişimler, ses çalarlar, Randoms ve hatta formlar oluşturmak için deyimleri kullanabileceğiniz `new` ve bu öğelerin nesneler olarak adlandırıldığına yalnızca unutmayın. Programınızı çalıştırdığınızda, form başlatılır ve arkasındaki kod rastgele bir nesne oluşturur ve **rasgeleleştirici**olarak adlandırır.
 
-     Yakında yanıtlarını sınavınız her problem için ürettiği rastgele sayıları depolamak için değişkenleri kullanmalısınız denetlemek için bir yöntem oluşturacaksınız. Bkz: [değişkenleri](/dotnet/visual-basic/programming-guide/language-features/variables/index) veya [türleri](/dotnet/csharp/programming-guide/types/index). Değişkenleri düzgün kullanmak için bunları, yani adlarını ve veri türlerini listeleme bildirmeniz gerekir.
+     Kısa süre içinde yanıtları denetlemek için bir yöntem oluşturacaksınız, böylece test her bir sorun için oluşturduğu rastgele sayıları depolamak için değişkenleri kullanmalıdır. Bkz. [değişkenler](/dotnet/visual-basic/programming-guide/language-features/variables/index) veya [türler](/dotnet/csharp/programming-guide/types/index). Değişkenleri düzgün şekilde kullanmak için, bunları bildirmeniz gerekir, bu da adlarını ve veri türlerini listelemesi anlamına gelir.
 
-4. Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.
+4. Forma iki tamsayı değişkeni ekleyin ve **addend1** ve **addend2**olarak adlandırın.
 
     > [!NOTE]
-    > Bir tamsayı değişkeni C# veya Visual Basic'te bir tamsayı tamsayı olarak bilinir. Bu türde bir değişken, -2147483648 ile 2147483647 arasında bir pozitif veya negatif sayı depolar ve ondalık değil yalnızca tam sayılara depolayabilirsiniz.
+    > Tamsayı değişkeni, içinde C# bir int veya Visual Basic tamsayı olarak bilinir. Bu tür bir değişken,-2147483648 ile 2147483647 arasında pozitif veya negatif bir sayı depolar ve ondalık basamak değil yalnızca tam sayıları depolayabilirler.
 
-     Aşağıdaki kodun gösterdiği gibi rastgele bir nesne eklemek için yaptığınız gibi bir tam sayı değişkeni eklemek için benzer bir söz dizimi kullanın.
+     Aşağıdaki kodun gösterdiği gibi, rastgele nesneyi eklemek için yaptığınız gibi, bir tamsayı değişkeni eklemek için benzer bir sözdizimi kullanırsınız.
 
      [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
      [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
 
-5. Adlı bir yöntem ekleyin `StartTheQuiz()` rastgele nesnenin kullanan ve <xref:System.Random.Next> etiketleri rastgele sayıları göstermek için yöntemi. `StartTheQuiz()` sonunda tüm problemleri doldurun ve süreölçeri başlatacak, bu nedenle bir açıklama ekleyin. İşlev, aşağıdaki gibi görünmelidir.
+5. Etiketli rastgele sayıları göstermek için Random `StartTheQuiz()` <xref:System.Random.Next> nesnesinin metodunu kullanan ve adında bir yöntem ekleyin. `StartTheQuiz()`sonunda tüm sorunları doldurup süreölçeri başlatır, bu nedenle bir yorum ekleyin. İşlevin aşağıdaki gibi görünmesi gerekir.
 
      [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
      [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
 
-     Nokta (.) girdiğinizde, sonra dikkat `randomizer` kodda, bir IntelliSense penceresinin açılır ve tüm çağırabilirsiniz rastgele nesnenin yöntemleri gösterir. Örneğin, IntelliSense listeler `Next()` yöntemini aşağıdaki gibi.
+     Koddan sonra `randomizer` nokta (.) girdiğinizde bir IntelliSense penceresi açılır ve çağırabilmeniz için tüm rasgele nesne yöntemlerini gösterir. Örneğin, IntelliSense `Next()` yöntemi aşağıdaki gibi listeler.
 
-     ![Sonraki yöntem](../ide/media/express_randomwhite.png) sonraki yöntemi
+     ![Next yöntemi](../ide/media/express_randomwhite.png) Next yöntemi
 
-     Bir nesneden sonra bir nokta girdiğinizde, IntelliSense nesnenin üyeleri, özellikler, yöntemler ve olaylar gibi bir listesini gösterir.
+     Bir nesneden sonra bir nokta girdiğinizde, IntelliSense, nesne üyelerinin bir listesini (özellikler, Yöntemler ve olaylar gibi) gösterir.
 
     > [!NOTE]
-    > Kullandığınızda `Next()` yöntemiyle `Random` çağırdığınızda gibi nesne `randomizer.Next(50)`, (Başlangıç, 0 ile 49 arasında) 50'den küçük rastgele bir sayı alın. Bu örnekte, aradığınız `randomizer.Next(51)`. Böylece iki rastgele sayı 0 ile 100 arası bir yanıt ekleyecek 51 ve 50 değil kullanılır. 50 geçirirseniz `Next()` yöntemi, bir sayı seçer 0 ile 49 arasında en yüksek olası yanıt 100 değil 98, bu nedenle. Her iki tamsayı değişkenleri, bir yöntemin ilk iki deyim, çalıştırdıktan sonra **addend1** ve **addend2**, 0 ile 50 arasında rastgele bir sayı tutun. Bu ekran Visual C# kodunu göstermektedir, ancak IntelliSense Visual Basic için aynı şekilde çalışır.
+    > `Next()` Yöntemi `randomizer.Next(50)`nesnesiyle kullandığınızda (örneğin, öğesini çağırdığınızda) 50 ' den küçük bir rastgele sayı alırsınız (0 ile 49 arasında). `Random` Bu örnekte, çağırılır `randomizer.Next(51)`. İki rastgele sayının, 0 ile 100 arasında bir yanıt ekleyecek şekilde 50 değil 51 ' i kullandınız. `Next()` Yöntemine 50 geçirirseniz, 0 ile 49 arasında bir sayı seçer. bu nedenle, olası en yüksek yanıt 100 değil 98. Yöntemdeki ilk iki deyim çalıştıktan sonra, **addend1** ve **addend2**iki tamsayı değişkeninin her biri, 0 ile 50 arasında rastgele bir sayı tutar. Bu ekran görüntüsünde görsel C# kod gösterilir, ancak IntelliSense Visual Basic için aynı şekilde çalışmaktadır.
 
-     Bu deyimlere daha yakından bakalım.
+     Bu deyimlere daha yakından göz atın.
 
      [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
      [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
 
-     Deyimler **metin** özelliklerini **plusLeftLabel** ve **plusRightLabel** böylece bunlar iki rastgele sayı görüntüler. Bir tamsayının kullanmalısınız `ToString()` sayıları metne dönüştürmek için yöntemi. (Programlamada dize metin anlamına gelir. Etiket denetimleri, sayılar değil yalnızca metin görüntüler.
+     Deyimler, **plusLeftLabel** ve **plusRightLabel** 'nin **metin** özelliklerini iki rastgele sayıyı görüntüleyecek şekilde ayarlar. Sayıları metne dönüştürmek için tamsayının `ToString()` metodunu kullanmanız gerekir. (Programlamada dize metin anlamına gelir. Etiket denetimleri yalnızca metin değil, sayıları görüntüler.
 
-6. Tasarım penceresinde, çift tıklayın ya da **Başlat** düğmesini veya bunu seçin ve ardından **Enter** anahtarı.
+6. Tasarım penceresinde **Başlat** düğmesini çift tıklayın ya da seçin ve ardından **ENTER** tuşunu seçin.
 
-     Sınavı alan bu düğmeyi seçtiğinde sınavın başlaması gerekir ve bu davranışı gerçekleştirmek için bir tıklama olayı işleyicisi yalnızca ekledik.
+     Bir test takici bu düğmeyi seçtiğinde, test başlaması gerekir ve bu davranışı uygulamak için yeni bir tıklama olayı işleyicisi eklediniz.
 
 7. Aşağıdaki iki deyimi ekleyin.
 
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
-     İlk deyim yeni çağıran `StartTheQuiz()` yöntemi. İkinci deyim ayarlar **etkin** özelliği **startButton** denetimini **False** böylece sınavı alanın sınav sırasında düğmeyi seçemezsiniz.
+     İlk ifade yeni `StartTheQuiz()` yöntemi çağırır. İkinci ifade, test bir test sırasında düğmeyi seçememesi için **startButton** denetiminin **Enabled** özelliğini **false** olarak ayarlar.
 
-8. Kodunuzu kaydedin, çalıştırın ve ardından **Başlat** düğmesi.
+8. Kodunuzu kaydedin, çalıştırın ve sonra **Başlat** düğmesini seçin.
 
-     Rasgele bir toplama problemi, aşağıdaki çizimde gösterildiği gibi görünür.
+     Aşağıdaki çizimde gösterildiği gibi rastgele bir ek sorun belirir.
 
-     ![Rasgele bir toplama problemi](../ide/media/express_additionproblem.png) rasgele bir toplama problemi
+     ![Rastgele ek sorun](../ide/media/express_additionproblem.png) rastgele ek sorun
 
-     Öğreticinin bir sonraki adımda toplamı ekleyeceksiniz.
+     Öğreticinin bir sonraki adımında, toplamı ekleyeceksiniz.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).
+- Sonraki öğretici adımına geçmek için, bkz [. Adım 3: Geri sayım Zamanlayıcısı](../ide/step-3-add-a-countdown-timer.md)ekleyin.
 
-- Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz [. Adım 1: Bir proje oluşturun ve formunuza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)Etiketler ekleyin.

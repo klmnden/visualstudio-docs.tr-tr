@@ -1,5 +1,6 @@
 ---
 title: Bir yöntemi
+description: Kodu seçip CTRL + R, CTRL + M yazarak kodun bir parçasını kendi yöntemine dönüştürün.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791038"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483665"
 ---
 # <a name="extract-a-method-refactoring"></a>Ayıklama yöntemi yeniden düzenleme
 
@@ -27,11 +28,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** Kodun bir parçasını kendi yönteme kapatmanızı sağlar.
+**Yazdırılacak** Kodun bir parçasını kendi yöntemine açmanızı sağlar.
 
-**ne zaman:** Başka bir yöntemden çağrılması gereken bazı yöntemi, mevcut kodun bir parçasını sahip.
+**Oluşturulurken** Başka bir yöntemden çağrılması gereken, bazı bir yöntemde var olan kodun bir parçası var.
 
-**Neden:** Kopyala/kod Yapıştır, ancak çoğaltma için neden. Bu parça halinde diğer herhangi bir yöntemle serbestçe çağrılabilir kendi yöntemi yeniden düzenleme daha iyi bir çözümdür.
+**Kaydol** Bu kodu kopyalayabilir/yapıştırabilir, ancak çoğaltmaya yol açabilir. Bu parça halinde diğer herhangi bir yöntemle serbestçe çağrılabilir kendi yöntemi yeniden düzenleme daha iyi bir çözümdür.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -49,7 +50,7 @@ Bu yeniden düzenleme için geçerlidir:
 
    - **Klavye**
       - Tuşuna **Ctrl + R**, ardından **Ctrl + M**. (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-      - Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **yöntemi ayıklama** gelen önizleme penceresi açılır.
+      - Tuşuna **Ctrl**+ **.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **yöntemi ayıklama** gelen önizleme penceresi açılır.
    - **Fare**
       - Seçin **Düzenle > yeniden düzenleyin > yöntemi Ayıkla**.
       - Kod sağ tıklayıp **yeniden düzenleyin > Ayıkla > yöntemi ayıklama**.
