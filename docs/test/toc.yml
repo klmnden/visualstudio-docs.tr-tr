@@ -54,9 +54,9 @@
       items:
         - name: 'İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme'
+        - name: 'İzlenecek yol: Testi güdümlü geliştirme'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Birim testlerinde Microsoft.VisualStudio.TestTools.UnitTesting üyelerini kullanma
+        - name: Birim testlerinde MSTest API’yi kullanma
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Onay sınıflarını kullanma
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Veri temelli birim testi oluşturma
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'İzlenecek yol: Bir veri kaynağı tanımlamak için yapılandırma dosyası kullanma'
+            - name: Bir veri kaynağı tanımlamak için yapılandırma dosyası kullanma
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Genel metotlar için birim testleri
           href: unit-tests-for-generic-methods.md
-        - name: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
+        - name: Birim testlerini .NET’in önceki sürümünü hedefleyecek şekilde yapılandırma
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: C/C++ kodu için birim testleri
       items:
