@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fc9e728c409684d7b0160fcb521d7bc2a2aa1d
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461713"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533379"
 ---
 # <a name="prerequisites-dialog-box"></a>Önkoşullar iletişim kutusu
 
@@ -36,6 +36,9 @@ ms.locfileid: "68461713"
 |**Önkoşulları bileşen satıcısının Web sitesinden indir**|Önkoşul bileşenlerinin satıcının Web sitesinden yükleneceğini belirtir. Bu varsayılan seçenektir.|
 |**Önkoşulları Uygulamam ile aynı konumdan indir**|Önkoşul bileşenlerinin uygulamayla aynı konumdan yükleneceğini belirtir. Bu, tüm önkoşul paketlerini yayımlama konumuna kopyalar. Bu seçeneğin çalışması için önkoşul paketleri geliştirme bilgisayarında olmalıdır.|
 |**Önkoşulları aşağıdaki konumdan indirin**|Önkoşul bileşenlerinin girdiğiniz konumdan yükleneceğini belirtir. Bir konum seçmek için, **tarayıcı** düğmesini kullanabilirsiniz.|
+
+> [!NOTE]
+> Önkoşulları nereye koyabileceğiniz hakkında bilgi için bkz. [önyükleyici paketleri oluşturma](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
 
 ## <a name="prerequisites-information"></a>Önkoşul bilgileri
 
