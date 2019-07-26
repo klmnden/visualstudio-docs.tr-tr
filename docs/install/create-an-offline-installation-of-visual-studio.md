@@ -1,7 +1,7 @@
 ---
 title: Çevrimdışı yüklemesini oluşturma
 description: Visual Studio bir güvenilir bir internet bağlantısı veya düşük bant genişliğine sahip olduğunuzda çevrimdışı yüklemeyi öğrenin.
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365245"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483513"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio’nun çevrimdışı yüklemesini oluşturma
 
@@ -33,20 +33,20 @@ Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli i�
 
 ::: moniker range="vs-2019"
 
-Biz, Visual Studio 2019 iyi ağ ve bilgisayar yapılandırmalarını çeşitli çalışacak şekilde tasarlanmıştır. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
+Visual Studio 2019 ' i çeşitli ağ ve bilgisayar yapılandırmalarında iyi bir şekilde çalışacak şekilde tasarlıyoruz. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
 
 ::: moniker-end
 
-Örneğin, düşük bant genişliğine sahip bir ya da güvenilir bir internet bağlantısına sahip olabilir. Bu durumda, birkaç seçeneğiniz vardır: Kullanabileceğiniz yeni "Tümünü indir ve sonra Yükle" özelliğini yüklemeniz veya dosyaların yerel önbellek oluşturmak için komut satırını kullanabilirsiniz önce dosyaları indirmek için.
+Örneğin, düşük bant genişliğine sahip bir ya da güvenilir bir internet bağlantısına sahip olabilir. Öyleyse, birkaç seçeneğiniz vardır: Yüklemeden önce dosyaları indirmek için yeni "tümünü Indir, sonra Yükle" özelliğini kullanabilir veya dosyaların yerel bir önbelleğini oluşturmak için komut satırını kullanabilirsiniz.
 
 > [!NOTE]
-> Kurumsal Yönetici dağıtımına bir ağ güvenlik duvarı istemci iş istasyonları, Visual Studio internet'ten gerçekleştirmek isterse bkz varsa bizim [Visual Studio'nun bir ağ oluşturun](../install/create-a-network-installation-of-visual-studio.md) ve [Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme](../install/install-certificates-for-visual-studio-offline.md) sayfaları.
+> Internet 'ten güvenlik duvarlı bir istemci iş istasyonu ağına Visual Studio dağıtımı gerçekleştirmek isteyen bir kuruluş yöneticisiyseniz, bkz. [Visual Studio 'nun ağ yüklemesi oluşturma](../install/create-a-network-installation-of-visual-studio.md) ve [sertifika yükleme Visual Studio çevrimdışı yükleme sayfaları için gereklidir](../install/install-certificates-for-visual-studio-offline.md) .
 
 ## <a name="use-the-download-all-then-install-feature"></a>Kullanım "tümünü indir ve Yükle" özelliği
 
 ::: moniker range="vs-2017"
 
-[**Yeni sürüm 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Web yükleyiciyi indirdikten sonra yeni seçin **tümünü indir ve Yükle** Visual Studio Yükleyicisi'nden seçeneği. Ardından, yükleme işlemine devam.
+[**Sürüm 15,8 ' de yeni**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Web yükleyicisini indirdikten sonra, yeni **Tümünü İndir '** i seçin ve sonra Visual Studio yükleyicisi seçeneğini yükleyin. Ardından, yükleme işlemine devam.
 
    !["Tümünü indir ve Yükle" seçeneği](media/download-all-then-install.png)
 
@@ -54,16 +54,16 @@ Biz, Visual Studio 2019 iyi ağ ve bilgisayar yapılandırmalarını çeşitli �
 
 ::: moniker range="vs-2019"
 
-Web yükleyiciyi indirdikten sonra yeni seçin **tümünü indir ve Yükle** Visual Studio Yükleyicisi'nden seçeneği. Ardından, yükleme işlemine devam.
+Web yükleyicisini indirdikten sonra, yeni **Tümünü İndir '** i seçin ve sonra Visual Studio yükleyicisi seçeneğini yükleyin. Ardından, yükleme işlemine devam.
 
    !["Tümünü indir ve Yükle" seçeneği](media/vs-2019/download-all-then-install-from-installer.png)
 
 ::: moniker-end
 
-Tasarladığımız "tümünü indir ve Yükle" üzerinde indirdiğiniz, aynı bilgisayar için tek bir yükleme olarak Visual Studio indirebilmeniz özelliği. Bu şekilde, Visual Studio yüklemeden önce web üzerinden güvenli bir şekilde kesebilirsiniz.
+Visual Studio 'Yu indirdiğiniz aynı bilgisayar için tek bir yükleme olarak indirebilmeniz için "tümünü Indir ve Yükle" özelliğini tasarladık. Bu şekilde, Visual Studio 'Yu yüklemeden önce Web ile güvenli bir şekilde bağlantıyı kesebilirsiniz.
 
 > [!IMPORTANT]
-> Kullanmayın "tümünü indir ve Yükle" başka bir bilgisayara aktarmak için istediğinize çevrimdışı bir önbellek oluşturmak için özellik. Bu şekilde çalışmasını sağlamak üzere tasarlanmamıştır. <br><br>Visual Studio başka bir bilgisayara yüklemek için bkz, çevrimdışı bir önbellek oluşturmak istiyorsanız [yerel önbellek oluşturmak için komut satırını kullanın](#use-the-command-line-to-create-a-local-cache) yerel bir önbellek oluşturma hakkında daha fazla bilgi için bu sayfayı bir bölümünü veya [oluşturma bir Visual Studio yüklemesi ağ](../install/create-a-network-installation-of-visual-studio.md) ağ önbellek oluşturma hakkında daha fazla bilgi için.
+> Başka bir bilgisayara aktarmayı planladığınız çevrimdışı bir önbellek oluşturmak için "tümünü Indir ve Yükle" özelliğini kullanmayın. Bu şekilde çalışacak şekilde tasarlanmamıştır. <br><br>Visual Studio 'Yu başka bir bilgisayara yüklemek üzere çevrimdışı bir önbellek oluşturmak istiyorsanız, yerel bir önbellek oluşturma veya görsel ağ yüklemesi oluşturma hakkında bilgi için bu sayfanın [Yerel önbellek oluşturmak için komut satırını kullanma](#use-the-command-line-to-create-a-local-cache) bölümüne bakın. [ ](../install/create-a-network-installation-of-visual-studio.md)Bir ağ önbelleğinin nasıl oluşturulacağı hakkında bilgi için bkz.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Yerel önbellek oluşturmak için komut satırını kullanın
 
@@ -102,12 +102,12 @@ Seçtiğiniz Visual Studio sürümünüz için Visual Studio önyükleyicisi ind
 Bu adımı tamamlamak için bir internet bağlantısı olması gerekir.
 
 > [!IMPORTANT]
-> Visual Studio Community'yi yüklerseniz, yükleme 30 gün içinde etkinleştirmeniz gerekir. Bu, internet bağlantısı gerektirir.
+> Visual Studio Community yüklerseniz, yüklemeyi 30 gün içinde etkinleştirmeniz gerekir. Bu, internet bağlantısı gerektirir.
 
 Bir komut istemi açın ve aşağıdaki örneklerde komutlardan birini kullanın. Visual Studio Community sürümünü kullanıyorsanız, burada listelenen örnekler varsayılır; komut sürümünüz için uygun şekilde ayarlayın.
 
 > [!TIP]
-> Bir hatayı önlemek için tam yükleme yolu 80 karakterden uzun daha az olduğundan emin olun.
+> Bir hatayı engellemek için, tam yükleme yolunuz 80 karakterden az olduğundan emin olun.
 
 - .NET web ve .NET masaüstü geliştirme için çalıştırın:
 
@@ -133,8 +133,19 @@ Bir komut istemi açın ve aşağıdaki örneklerde komutlardan birini kullanın
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Eksiksiz bir Visual Studio düzeni, en az 35 GB disk alanı gerektirir. Bkz: [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) yüklemek istediğiniz bileşenleri ile yalnızca bir düzen oluşturma hakkında bilgi için.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Tamamen Visual Studio düzeni en az 35 GB disk alanı gerektirir. Daha fazla bilgi için bkz. [sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs/). Yalnızca yüklemek istediğiniz bileşenleri içeren bir düzen oluşturma hakkında bilgi için bkz. [Visual Studio 'yu yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Tamamen Visual Studio düzeni en az 35 GB disk alanı gerektirir. Daha fazla bilgi için bkz. [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements/). Yalnızca yüklemek istediğiniz bileşenleri içeren bir düzen oluşturma hakkında bilgi için bkz. [Visual Studio 'yu yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 İngilizce dışında bir dil yüklemek isterseniz değiştirme `en-US` yerel için [dil yerel ayarlar listesini](#list-of-language-locales). Ardından, [kullanılabilir iş yükleri ve bileşenlerin listesini](workload-and-component-ids.md) yükleme önbelleğiniz daha fazla özelleştirmek için.
 

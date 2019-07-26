@@ -7,7 +7,7 @@
     - name: Kod düzenleyicisi hakkında
       href: tutorial-editor.md
     - name: Projeler ve çözümler hakkında
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Diğer Visual Studio özellikleri
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: Uygulama oluşturun

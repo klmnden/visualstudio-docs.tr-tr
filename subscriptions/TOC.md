@@ -18,7 +18,6 @@
 #### [İş veya okul hesaplarıyla oturum açma](sign-in-work.md)
 #### [GitHub ile oturum açma](sign-in-github.md)
 #### [Alternatif kimlikler](vs-alternate-identity.md)
-#### [Diğer adlar ile oturum açma](aliasing.md)
 #### [Oturum açma sorunları](sign-in-issues.md)
 #### [Abone verilerinin anonimleştirilmesi](anonymization.md)
 ### [Abonelikler portalına genel bakış](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [İnternet tanıtımları](internet-demos.md)
 ## Yöneticiler
 ### [Yönetici Sorumlulukları](admin-responsibilities.md)
+#### [Ön üretim envanteri](admin-inventory.md)
+#### [Büyük takımları ve dışarıdan yüklenicileri yönetme](manage-teams.md)
+#### [Kullanıcı atamalarını izleme ve siparişleri işleme](assignments-orders.md)
 ### [Toplu Lisanslama](volume-license-admins.md)
 ### Kuruluşunuzu ekleme
 #### [Geçiş sonrası ekleme](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Fazla Yüklemeler](handle-overclaimed-license.md)
 #### [En Fazla Kullanım](maximum-usage.md)
 #### [Süresi Dolan Abonelikler](handle-expired-license.md)
+#### [Diğer adları kullanan aboneler](aliasing.md)
 #### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
 ### [GitHub Enterprise ile Visual Studio’yu Yönetme](assign-github.md)
 ## Kaynaklar
