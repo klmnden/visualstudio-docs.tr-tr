@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft Docs
+title: 'Ihata ayıklama Garrayobject:: GetDimensions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/26/2019
 ms.locfileid: "68197784"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Dizinin boyut sayısını alır.  
+Dizinin boyutlarını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,16 +42,16 @@ int GetDimensions(
   
 #### <a name="parameters"></a>Parametreler  
  `dwCount`  
- [in] Alınacak boyut sayısı.  
+ 'ndaki Alınacak boyut sayısı.  
   
  `dwDimensions`  
- [out içinde] Her boyutun boyutları ile doldurulmuş bir dizi. `dwCount` en büyük boyutunu belirten `dwDimensions` dizisi.  
+ [in, out] Her boyutun boyutlarıyla doldurulmuş bir dizi. `dwCount``dwDimensions` dizinin en büyük boyutunu belirtir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.  
+ Başarılı olursa, S_OK döndürür; Aksi takdirde, bir hata kodu döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çok boyutlu bir dizinin her boyut için farklı boyutlarda olabilir. Örneğin, üç boyutlu dizi verilen `myarray[3][2][6]`, 3, 2. ve 6'da bu yöntemi döndürür `dwDimensions` o sırada parametresi.  
+ Çok boyutlu bir dizi, her boyut için farklı boyutlarda olabilir. Örneğin, üç boyutlu dizi `myarray[3][2][6]`verildiğinde, bu yöntem bu sırada `dwDimensions` parametreye 3, 2 ve 6 döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
