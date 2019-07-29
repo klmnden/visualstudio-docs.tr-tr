@@ -1,6 +1,6 @@
 ---
 title: TextTransform Yardımcı Programı ile Dosya Oluşturma
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493099"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606101"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform yardımcı programı ile dosya oluşturma
 
@@ -24,21 +24,37 @@ TextTransform.exe bir metin şablonu dönüştürmek için kullanabileceğiniz b
 > [!NOTE]
 > Bir yapı işleminin parçası olarak metin dönüştürme gerçekleştirmek istiyorsanız, MSBuild metin dönüştürme görevi kullanılarak göz önünde bulundurun. Daha fazla bilgi için [derleme sürecinde kod oluşturma](../modeling/code-generation-in-a-build-process.md). Visual Studio'nun yüklü olduğu bir makine, bir uygulama ya da metin şablonlarını dönüştürmek Visual Studio uzantısı da yazabilirsiniz. Daha fazla bilgi için [özel konak kullanarak metin şablonlarını işleme](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- TextTransform.exe şu dizinde bulunur:
+TextTransform.exe şu dizinde bulunur:
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
 Professional Edition veya
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- için Enterprise edition.
+Enterprise Edition için.
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+Professional Edition veya
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+Enterprise Edition için.
 
 Visual Studio'nun önceki sürümlerinde, dosya şu konumda bulunur:
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 Burada {version} önceki hangi sürümünün yüklü olduğunu bağlıdır.
+
+::: moniker-end
 
 ## <a name="syntax"></a>Sözdizimi
 

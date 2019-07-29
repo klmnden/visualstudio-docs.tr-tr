@@ -1,49 +1,41 @@
 ---
-title: Talep lisans tanıtıcı | Microsoft Docs
+title: Fazla yüklenmiş lisansları işleme | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 02/13/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Yöneticiler talep abonelikleri nasıl giderebileceğinize öğrenin
-ms.openlocfilehash: 23a0888a670c10af4447d7a097067ffe4fe70c0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Yöneticilerin fazla yüklenmiş abonelikleri nasıl çözebileceğinizi öğrenin
+ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783445"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605511"
 ---
 # <a name="overallocated-subscriptions"></a>Fazla yüklenmiş abonelikler
-
-Aboneler, daha fazla olması neden eklendikten sonra siparişler bazen değiştirilir şirketiniz tarafından sahip olunan lisansı sayısından abonelik atanmış. Bu durumda, abonelerin sekmesinde bir uyarı gösterir ve daha fazla bilgi sağlar.
+Bazen abonelik eklendikten sonra siparişler değişir, bu da şirketiniz tarafından sahip olunan lisanslardan daha fazla abonelik olmasına neden olabilir. Bu, "fazla yükleme" olarak adlandırılır.  Bu durumda, aboneler sekmesi bir uyarı gösterir ve çok sayıda aboneliğin fazla yüklenmiş olduğu hakkında daha fazla bilgi sağlar.
 
 > [!NOTE]
-> Overclaimed senaryoları Açık Lisans programları içinde izin verilmez.  Ayrıca, diğer programları bu bilgi Portalı'nda farklı görüntüleyebilir.
+> Açık lisans programlarında fazla yüklemelere izin verilmez.  Ayrıca, diğer programlar portalda bu bilgileri farklı şekilde gösterebilir.
 >
 > [!div class="mx-imgBorder"]
-> ![Talep abonelik bildirimi](_img/over-claimed/over-claimed-alert.png)
+> ![Aşırı talep edilen aboneliklerin bildirimi](_img/over-claimed/over-claimed-alert.png)
 
-## <a name="resolving-overallocated-subscriptions"></a>Fazla yüklenmiş abonelikleri çözümleme
+## <a name="resolve-overallocated-subscriptions"></a>Fazla yüklenmiş abonelikleri çözümle
+Fazla yüklemeleri çözümlemek için çeşitli yollar vardır:
+- Ek abonelikler satın almak için satıcınıza başvurun.
+- Yıllık gerçek dönem için bekleyin ve bu noktada fazla yüklenmiş abonelikler için ödeme yapın. 
+- Bazı abonelik atamalarını silin.  (Bu işlem, yıl içinde herhangi bir zamanda atanan maksimum abonelik sayısına bağlı olduğundan, yıllık doğru ödeme gereksinimini ortadan engellemez.)
 
-Fazla yüklenmiş lisansları çözmek için:
-
-1. Uyarı metni tıklayın. Bu işlem için abonelik düzeyinde atanmış olan aboneler ve talep sona erme tarihi filtrelenmiş bir listesini görüntüler. 
-
-2. Aboneler, talep lisansları düzeltmek için gerektiği şekilde kaldırın. 
-
-3. Sayfanın sol tarafındaki genel bakış, yeniden uyumlu olan ve tüm talep bildirimleri kaybolur gösterecek şekilde güncelleştirilir. 
-
-## <a name="billing-and-true-up"></a>Faturalandırma ve true-yukarı
-
-Kuruluşunuzda bir Kurumsal Anlaşma (EA) varsa, yöneticileri abonelik satın almadan atayamazsınız ve bunlar için "true-up" bilinen bir uzlaştırma işleminde daha sonra ödeme.  Overallocate, kuruluşunuzun "true artırma sırasında" kullanıcılara atanan abonelik sayısı için faturalandırılırsınız.  True-up gerçekleşir zamanında atanan abonelik sayısı, artık olsa bile bu geçerlidir.  En fazla kullanım izleme hakkında daha fazla bilgi edinmek için [en fazla kullanım](maximum-usage.md) konu.
+## <a name="billing-and-true-up"></a>Faturalandırma ve doğru
+Kuruluşunuzda bir Kurumsal Anlaşma (EA) varsa, Yöneticiler bu abonelikleri satın almadan atayabilir ve daha sonra "doğru-yukarı" olarak bilinen bir mutabakat süreci aracılığıyla ödeme yapabilir.  Fazla ayrıldığınızda, kuruluşunuz "true-up" sırasında kullanıcılara atanan maksimum abonelik sayısı için faturalandırılır.  Bu, doğru bir zamanda atanmış en fazla abonelik sayısına sahip olmasanız da geçerlidir.  En fazla kullanımı izleme hakkında daha fazla bilgi edinmek için [en yüksek kullanım](maximum-usage.md) konusunu ziyaret edin.
 
 > [!Important]
-> GitHub Enterprise ile Visual Studio Abonelikleri, Visual Studio abonelik yöneticileri tarafından atanır ve bu Aboneliklerdeki satın olamazdı, bunlar için GitHub Enterprise admins kuruluş içindeki görünür olmaz. GitHub Enterprise abonelikleri görünür olduğundan emin olmak için satın alma dahil olmak üzere **en az bir** GitHub Enterprise ile Visual Studio Professional veya Visual Studio Enterprise with GitHub Enterprise aboneliğinizin yapılacak ilk zaman abonelikleri atanır.  
+> GitHub Enterprise ile Visual Studio abonelikleri, Visual Studio abonelik yöneticileri tarafından atanmışsa ve bu aboneliklerin hiç satın alınmadıysa, bu abonelikler kuruluş içindeki GitHub Enterprise Admins 'e görünür olmayacaktır. GitHub Enterprise aboneliklerinin görünebildiğinden emin olmak için GitHub Enterprise veya Visual Studio Enterprise GitHub Enterprise aboneliğiyle **en az bir** Visual Studio Professional içeren bir satın alma, abonelikler ilk kez yapılmalıdır atanır.
 >
-> Bu atanan her GitHub abonelik için burada Yönet Portalı'nda bu yönelik lisanslama gereksinimlerine uyduğunuzu kalması için atanan GitHub aboneliğiyle karşılık gelen bir Visual Studio emin olmak için müşterinin sorumluluğundadır Abonelik.
+> Bu, atanan her GitHub aboneliğine ilişkin lisans gereksinimleriyle uyumlu kalmak için yönetim portalı 'nda atanan GitHub aboneliğine sahip bir Visual Studio olduğundan emin olmak için müşterinin sorumluluğundadır. aboneliğiniz.
 
-Yönetme hakkında daha fazla bilgi [GitHub Enterprise ile Visual Studio abonelikleri](assign-github.md).
-
-## <a name="support-resources"></a>Destek kaynakları
-
-- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+## <a name="next-steps"></a>Sonraki adımlar
+- [GitHub Enterprise Ile Visual Studio aboneliklerini](assign-github.md)yönetme hakkında daha fazla bilgi edinin.
+- Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.

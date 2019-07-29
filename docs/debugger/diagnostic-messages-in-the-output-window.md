@@ -1,12 +1,7 @@
 ---
-title: İletilerini çıkış penceresine Gönder. | Microsoft Docs
+title: İletileri çıkış penceresine gönder | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,39 +21,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852137"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605384"
 ---
 # <a name="send-messages-to-the-output-window"></a>Çıkış penceresine ileti gönderme
 
-Çalışma zamanı iletileri yazabileceğiniz **çıkış** penceresini kullanarak <xref:System.Diagnostics.Debug> sınıfı veya <xref:System.Diagnostics.Trace> parçası olan bir sınıf, <xref:System.Diagnostics> sınıf kitaplığı. Kullanım <xref:System.Diagnostics.Debug> , yalnızca çıkış istiyorsanız sınıfı *hata ayıklama* programınızın sürümü. Kullanım <xref:System.Diagnostics.Trace> hem de çıkış isterseniz sınıfı *hata ayıklama* ve *yayın* sürümleri.
+Çalışma zamanı iletilerini **Çıkış** penceresine, sınıf kitaplığının parçası <xref:System.Diagnostics.Debug> <xref:System.Diagnostics> olan sınıfını veya <xref:System.Diagnostics.Trace> sınıfını kullanarak yazabilirsiniz. Yalnızca programınızın *hata ayıklama* sürümünde çıkış istiyorsanız sınıfınıkullanın.<xref:System.Diagnostics.Debug> Hem hata *ayıklama* hem de *Sürüm* sürümlerinde çıkış istiyorsanız sınıfınıkullanın.<xref:System.Diagnostics.Trace>
 
 ## <a name="output-methods"></a>Çıkış yöntemleri
- <xref:System.Diagnostics.Trace> Ve <xref:System.Diagnostics.Debug> sınıfları aşağıdaki çıktı yöntemlerini sağlar:
+ <xref:System.Diagnostics.Trace> Ve<xref:System.Diagnostics.Debug> sınıfları aşağıdaki çıkış yöntemlerini sağlar:
 
-- Çeşitli `Write` yürütme bozmadan bilgi çıkış yöntemleri. Bu yöntemler yerine `Debug.Print` Visual Basic'in önceki sürümlerinde kullanılan yöntem.
+- Farklı `Write` Yöntemler, önemli bir yürütme olmadan bilgi çıktı. Bu yöntemler Visual Basic önceki `Debug.Print` sürümlerinde kullanılan yöntemi değiştirir.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirtilen bir koşulu başarısız olursa, yürütme ve çıkış bilgileri sonu yöntemleri. Varsayılan olarak, `Assert` yöntemi bilgileri iletişim kutusu içinde görüntüler. Daha fazla bilgi için [yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md).
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>ve <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> belirli bir koşul başarısız olursa yürütme ve çıkış bilgilerini kesen Yöntemler. Varsayılan olarak, `Assert` yöntemi bilgileri bir iletişim kutusunda görüntüler. Daha fazla bilgi için bkz. [Yönetilen koddaki Onaylamalar](../debugger/assertions-in-managed-code.md).
 
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> yürütme ve çıkış bilgileri her zaman Kes yöntemleri. Varsayılan olarak, `Fail` yöntemleri bilgileri iletişim kutusu içinde görüntüler.
+- Yürütme ve <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> çıkış bilgilerini her zaman kesen veyöntemleri.<xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> Varsayılan olarak, `Fail` Yöntemler bilgileri bir iletişim kutusunda görüntüler.
 
-**Çıkış** penceresi de görüntüleyebilir bilgi hakkında:
+**Çıkış** penceresinde hakkında bilgi de görüntülenebilir:
 
-- Modüller hata ayıklayıcı yüklü veya kaldırılmış.
+- Hata ayıklayıcı tarafından yüklenen veya yüklenmeyen modüller.
 
-- Oluşan özel durumlar.
+- Oluşturulan özel durumlar.
 
-- Çıkış işlemleri.
+- Çıkış işlemi.
 
-- Çıkış iş parçacıkları.
+- Çıkış yapan iş parçacıkları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)
 - [Çıkış penceresi](../ide/reference/output-window.md)
-- [İzleme ve izleme uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [İzleme ve araç uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [C#, F#ve Visual Basic proje türleri](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)

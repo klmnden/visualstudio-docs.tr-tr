@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c026d1e12734391b73daffde0357c82ebc529e2
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461323"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605961"
 ---
-# <a name="options-text-editor-javascript-linting"></a>Seçenekler, metin düzenleyici, JavaScript, Lting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Seçenekler iletişim kutusu: Metin düzenleyici \> JavaScript/TypeScript \> Linting
 
-Kod düzenleyicisinde kodu analiz etme seçeneklerini ayarlamak için **Seçenekler** Iletişim kutusunun **linme** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından **metin düzenleyici** > **JavaScript** > 'i**genişletin.**
+Kod düzenleyicisinde kodu analiz etme seçeneklerini ayarlamak için **Seçenekler** Iletişim kutusunun **linme** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından **metin düzenleyici** > **JavaScript/TypeScript** > **Linting**' i genişletin.
 
 ## <a name="eslint-settings"></a>ESLint ayarları
 
-Bu seçenekler statik JavaScript kod analizini etkinleştirmenizi ve hangi dosyaların çözümlenmekte olduğunu seçmenizi sağlar. ESLint hakkında daha fazla bilgi için bkz. [ESLint.org](https://eslint.org/).
+Bu seçenekler statik JavaScript ve TypeSCript Kod analizini etkinleştirmenizi ve hangi dosyaların çözümlenmekte olduğunu seçmenizi sağlar. ESLint hakkında daha fazla bilgi için bkz. [ESLint.org](https://eslint.org/).
 
 ### <a name="uielement-list"></a>UIElement listesi
 

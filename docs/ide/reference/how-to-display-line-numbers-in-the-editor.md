@@ -1,5 +1,5 @@
 ---
-title: Kod için satır numaralarını görüntüleme
+title: Kod için satır numaralarını görüntüle
 ms.date: 03/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,29 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07f6a1094658f575f4e805798ee468c5c829238
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: c9cae68a0803b550d7184b0e06d6a043d76fa725
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531571"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605476"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme
 
-Görüntülemek veya satır kodunuzu numaralarını gösterip gizleyebilirsiniz.
+Kodunuzda satır numaralandırmayı gösterebilir veya gizleyebilirsiniz.
 
-## <a name="display-line-numbers-in-code"></a>Kod içinde satır numaralarını görüntüleyin
+## <a name="display-line-numbers-in-code"></a>Koddaki satır numaralarını görüntüle
 
-1. Menü çubuğunda, **Araçları** > **seçenekleri**. Genişletin **metin düzenleyici** düğümünü ve ardından kullandığınız dil veya **tüm diller** tüm dillerdeki satır numaralarını açmak. (Veya türü **satır numarası** arama kutusu ve seçin **Aç veya kapat satır numaralarını** sonuçlarından.)
+1. Menü çubuğunda, **Araçları** > **seçenekleri**. **Metin düzenleyici** düğümünü genişletin ve ardından kullandığınız dil ya da tüm dillerde satır numaralarını açmak Için **tüm diller** ' i seçin. (Veya, arama kutusuna **satır numarasını** yazın ve sonuçlardan **satır numaralarını aç veya kapat** ' ı seçin.)
 
-2. Seçin **satır numaraları** onay kutusu.
+2. **Satır numaraları** onay kutusunu seçin.
 
-   ![VS düzenleyicide satır numaralarını göstermek için seçeneği](../../ide/reference/media/line-numbers-option.png)
+   ![VS düzenleyicisinde satır numaralarını görüntüleme seçeneği](../../ide/reference/media/line-numbers-option.png)
 
 > [!TIP]
-> Satır numaraları kodunuza eklenmez; Bunlar yalnızca başvuru için hedeflenmiştir. Buna yazdırılacak satır numaraları istiyorsanız **yazdırma** iletişim kutusunda **satır numaralarını dahil etme** onay kutusu.
+> Satır numaraları kodunuza eklenmez; yalnızca başvuruya yöneliktir. Satır numaralarının yazdırılmasını istiyorsanız, **Yazdır** iletişim kutusunda **satır numaralarını dahil** et onay kutusunu seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)
 - [Kod Düzenleyicisi özellikleri](../../ide/writing-code-in-the-code-and-text-editor.md)

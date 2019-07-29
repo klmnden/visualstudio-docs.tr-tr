@@ -16,20 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23067475c8c5ff4d858ade8443946f7d9c73afc
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461344"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605993"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme
-Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçenekler** Iletişim kutusunun **biçimlendirme** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar**, **Seçenekler**' i seçin ve ardından **metin Düzenleyicisi**, **JavaScript**ve **biçimlendirme**' yi genişletin.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Seçenekler iletişim kutusu: Metin düzenleyici \> JavaScript \> biçimlendirmesi
+
+Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçenekler** Iletişim kutusunun **biçimlendirme** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından **metin Düzenleyicisi** > **JavaScript/TypeScript** > **biçimlendirme**' yi genişletin.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Otomatik Biçimlendirme
- Bu seçenekler, **kaynak** görünümünde biçimlendirmenin ne zaman gerçekleşeceğini belirlenir.
+
+Bu seçenekler, **kaynak** görünümünde biçimlendirmenin ne zaman gerçekleşeceğini belirlenir.
 
 ### <a name="uielement-list"></a>UIElement Listesi
 
@@ -42,9 +44,10 @@ Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçe
 |**Yapıştırırken Biçimlendir**|Bu seçenek belirlendiğinde kod Düzenleyicisi, düzenleyiciye yapıştırdığınızda kodu yeniden biçimlendirir. Düzenleyici, geçerli olarak tanımlanmış biçimlendirme kurallarını kullanır. Bu seçenek seçilmezse, düzenleyici yapıştırılan kodun özgün biçimlendirmesini kullanır.|
 
 ## <a name="new-lines"></a>Yeni satırlar
- Bu seçenekler, kod düzenleyicisinin yeni bir satırdaki işlevler ve denetim blokları için açık bir küme ayracı yerleştirip yerleştirmediğini belirtir.
 
-### <a name="uielement-list"></a>UIElement Listesi
+Bu seçenekler, kod düzenleyicisinin yeni bir satırdaki işlevler ve denetim blokları için açık bir küme ayracı yerleştirip yerleştirmediğini belirtir.
+
+### <a name="uielement-list"></a>UIElement listesi
 
 |Seçenek|Açıklama|
 |------------|-----------------|
@@ -52,9 +55,10 @@ Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçe
 |**Denetim blokları için yeni satıra açık küme ayracı yerleştir**|Bu seçenek belirlendiğinde, kod Düzenleyicisi bir denetim bloğu (örneğin, `if` ve `while` denetim blokları) ile ilişkili açık küme ayracını yeni bir satıra taşıdır.|
 
 ## <a name="spacing"></a>Aralığı
- Bu seçenekler, **kaynak** görünümünde boşlukların nasıl ekleneceğini tespit ediyor.
 
-### <a name="uielement-list"></a>UIElement Listesi
+Bu seçenekler, **kaynak** görünümünde boşlukların nasıl ekleneceğini tespit ediyor.
+
+### <a name="uielement-list"></a>UIElement listesi
 
 |Seçenek|Açıklama|
 |------------|-----------------|
@@ -65,6 +69,6 @@ Kod düzenleyicisinde biçimlendirme kodu seçeneklerini ayarlamak için **Seçe
 |**Anonim işlevler için Function anahtar sözcüğünden sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi anonim işlevler için `function` anahtar sözcükten sonra bir boşluk ekler.|
 |**Boş olmayan parantezleri kapatmadan önce ve açtıktan sonra boşluk Ekle**|Bu seçenek belirlendiğinde, kod Düzenleyicisi, parantez içinde boş olmayan karakterler varsa, açma parantezinden sonra ve kapatma parantezinden önce bir boşluk ekler.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)

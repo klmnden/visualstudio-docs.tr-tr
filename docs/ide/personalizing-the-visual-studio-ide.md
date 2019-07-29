@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953302"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606088"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -27,28 +27,28 @@ Visual Studio geliştirme türüne yönelik en iyi duruma getirir bir varsayıla
 
 ## <a name="general-environment-options"></a>Genel ortam seçenekleri
 
-Birçok kişiselleştirme seçenekleri aracılığıyla sunulur [ortam seçenekleri](../ide/reference/environment-options-dialog-box.md) iletişim kutusu. Bu iletişim kutusunu erişmenin iki yolu vardır:
+Birçok kişiselleştirme seçenekleri aracılığıyla sunulur [ortam seçenekleri](../ide/reference/general-environment-options-dialog-box.md) iletişim kutusu. Bu iletişim kutusunu erişmenin iki yolu vardır:
 
 - Menü çubuğunda, **Araçları** > **seçenekleri**, henüz expanded ise genişletin **ortam** düğümü.
 
-- Tuşuna **Ctrl**+**Q**, türü **ortam** arama kutusuna ve ardından **ortam--> Genel** gelen Sonuç.
+- **CTRL**   Q tuşlarına basın, arama kutusuna ortam yazın ve ardından sonuçlardan Genel > ortam ' ı seçin.+
 
 > [!TIP]
-> Seçenekler iletişim kutusu göründüğünde basabilirsiniz **F1** çeşitli ayarları bu sayfada konusunda Yardım.
+> Seçenekler iletişim kutusu göründüğünde, bu sayfadaki çeşitli ayarlar hakkında yardım için **F1** tuşuna basabilirsiniz.
 
 ## <a name="environment-color-themes"></a>Ortam Renk temalarını
 
-Renk teması açık, koyu mavi yazıp arasında değiştirmek için **ortam** arama kutusuna ve ardından **ortam--> Genel**. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
+Açık, koyu ve mavi arasındaki renk temasını değiştirmek için, arama kutusuna **ortam** yazın ve ardından **Genel > ortam**' ı seçin. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
 
-Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın **ortam** arama kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Düzenleyicideki renklendirme seçeneklerini değiştirmek için, arama kutusuna **ortam** yazın ve ardından **> yazı tipi ve renkler**' i seçin. Bkz [. nasıl yapılır: Yazı tiplerini ve renkleri](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)değiştirin.
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
 
-Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler büyük** ("dosyası") ve **tümü büyük harf** ("dosyası"). Tür **ortam** arama kutusunda **ortam--> Genel**ve ardından değiştirmek **menü çubuğuna başlık stilini Uygula** seçeneği.
+Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler büyük** ("dosyası") ve **tümü büyük harf** ("dosyası"). Ara kutusuna **ortam** yazın, **Genel > ortam**' ı seçin ve sonra **başlık büyük harf stilini uygula ' yı menü çubuğu** seçeneğine değiştirin.
 
 ### <a name="customize-menus-and-toolbars"></a>Menüleri ve araç çubuklarını özelleştirme
 
-Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Menü ya da araç çubuğu öğelerini eklemek veya kaldırmak için [bkz. nasıl yapılır: Menüleri ve araç çubuklarını](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)özelleştirin.
 
 ::: moniker range="vs-2017"
 
@@ -70,5 +70,5 @@ Tanımlamak ve birden çok pencere düzenlerini kaydedebilir ve bunlar arasında
 
 - [Ortam ayarları](environment-settings.md)
 - [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
-- [Hızlı Başlangıç: Visual Studio IDE ilk bakma](../ide/quickstart-ide-orientation.md)
+- [Hızlı Başlangıç: Visual Studio IDE 'ye ilk bakış](../ide/quickstart-ide-orientation.md)
 - [IDE Mac için Visual Studio'yu özelleştirme](/visualstudio/mac/customizing-the-ide)

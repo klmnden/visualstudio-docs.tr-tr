@@ -31,60 +31,59 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a09036e0c0f83d262760598dd02e6cf6e8cdd38e
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827056"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606067"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Seçenekler iletişim kutusu: Ortam \> belgeleri
 
-Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) belgeler görüntülenmesini denetlemek ve dış değişiklikler belgelerinizi ve dosyalarınızı yönetmek için iletişim kutusu. Bu iletişim kutusuna tıklayarak erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **ortam** > **belgeleri**.
+Tümleşik geliştirme ortamındaki (IDE) belgelerin görüntülenmesini denetlemek ve belge ve dosyalardaki dış değişiklikleri yönetmek için **Seçenekler** iletişim kutusunun bu sayfasını kullanın. Bu iletişim kutusuna, **Araçlar** menüsünde **Seçenekler** ' i ve ardından **ortam** > **belgeleri**' ni seçerek erişebilirsiniz.
 
-**Dosya ortamı dışında değiştirildiğinde Algıla**
+**Dosya ortamın dışında değiştirildiğinde Algıla**
 
-Bu seçenek belirlendiğinde, bir ileti hemen açık bir dosyayı IDE dışında bir düzenleyici tarafından yapılan değişiklikleri bildirir. İleti depolama biriminden dosyayı yeniden olanak sağlar.
+Bu seçenek belirlendiğinde, bir ileti, IDE dışında bir düzenleyici tarafından yapılmış olan açık bir dosyadaki değişiklikleri hemen bilgilendirir. İleti, dosyayı depolamadan yeniden yüklemenize olanak sağlar.
 
-**Değiştirilmiş dosyalar kaydedilmemiş değişiklikler sürece yeniden yükleyin.**
+**Kaydedilmemiş değişiklikler olmadıkça değiştirilen dosyaları yeniden yükle**
 
-Olduğunda **dosya ortamı dışında değiştirildiğinde Algıla** seçili ve açık bir dosyayı bir uyarı iletisi IDE dışında IDE değişiklikleri varsayılan olarak oluşturulur. Bu seçenek etkinleştirilirse, herhangi bir uyarı görünür ve belge dış değişiklikleri almak için IDE'de yüklenir.
+**Dosyanın Seçili ortamın dışında ne zaman değiştirildiğini** ve IDE 'nin IDE dışında değiştiğini tespit ettiğinizde, varsayılan olarak bir uyarı iletisi oluşturulur. Bu seçenek etkinleştirilirse, hiçbir uyarı görünmez ve dış değişikliklerin çekilmesi için belge IDE 'de yeniden yüklenir.
 
-**Salt okunur dosyaları düzenlemeye izin ver; uyar kaydetmeyi deneyin**
+**Salt okuma dosyalarının düzenlenmesine izin ver; kaydetme denemesi sırasında uyar**
 
-Bu seçenek etkinleştirildiğinde, açın ve bir salt okunur dosyasını düzenleyin. İşlemi tamamladığınızda, kullanmalısınız **Kaydet** kaydını yaptığınız değişiklikleri kaydetmek istiyorsanız, dosyayı yeni bir adla kaydetmek için komutu.
+Bu seçenek etkinleştirildiğinde, salt okunurdur bir dosyayı açabilir ve düzenleyebilirsiniz. İşiniz bittiğinde, değişikliklerinizin bir kaydını kaydetmek istiyorsanız dosyayı yeni bir adla kaydetmek için **farklı kaydet** komutunu kullanmanız gerekir.
 
-**Etkin belge dizini kullanarak dosya Aç**
+**Şu anda etkin olan belgenin dizinini kullanarak dosya aç**
 
-Bu onay kutusu seçildiğinde, bu seçenek, belirtir **Dosya Aç** etkin belgeyi dizinden iletişim kutusu görüntüler. Bu seçenek temizlendiğinde **Dosya Aç** bir dosyayı açmak için en son kullanılan dizin iletişim kutusunu görüntüler.
+Seçildiğinde, bu seçenek **Dosya Aç** iletişim kutusunun etkin belgenin dizinini görüntülediğini belirtir. Bu seçenek temizlenmiş olduğunda **Dosya Aç** iletişim kutusu, bir dosyayı açmak için en son kullanılan dizini görüntüler.
 
-**Tutarlı satır sonlarını denetle**
+**Yükün tutarlı satır sonlarını denetle**
 
-Düzenleyici bir dosyada satır sonları tarama ve satır sonlarını nasıl biçimlendirileceğini içinde tutarsızlıklar algılanırsa bir ileti kutusu görüntülemek için bu seçeneği belirleyin.
+Düzenleyicinin bir dosyadaki satır sonlarını taramasını sağlamak ve satır sonları nasıl biçimlendirildiğine ilişkin tutarsızlıklar algılanırsa ileti kutusu göstermek için bu seçeneği belirleyin.
 
-**Görünen uyarı, genel geri al işlemi düzenlenmiş dosyaları**
+**Genel geri alma, düzenlenen dosyaları değiştirecek olduğunda uyarı görüntüle**
 
-Bir ileti görüntülemek için bu seçeneği kutusunu **genel Geri Al** komut geri ayrıca yeniden düzenleme işleminden sonra değiştirilen dosyalarda yapılan düzenleme değişiklikleri. Bir dosya öncesi yeniden düzenleme durumuna geri döndürme dosyasında yapılan sonraki değişikliklerin at.
+**Genel geri alma** komutu yeniden düzenleme işleminden sonra değiştirilen dosyalarda yapılan yeniden düzenleme değişikliklerini geri aldığınızda bir ileti kutusu göstermek için bu seçeneği belirleyin. Ön yeniden düzenleme durumuna bir dosya döndürmek dosyada yapılan sonraki değişiklikleri atabilir.
 
-**Çözüm Gezgini'nde diğer dosyaları göster**
+**Çözüm Gezgini çeşitli dosyaları göster**
 
-Görüntülemek için bu seçeneği belirleyin **çeşitli dosyalar** düğümünde **Çözüm Gezgini**. Çeşitli dosyalar bir proje veya çözüm ile ilişkili olmayan ancak görünebilen dosyalarıdır **Çözüm Gezgini** size kolaylık sağlamak için.
+**Çözüm Gezgini**Içindeki **çeşitli dosyalar** düğümünü göstermek için bu seçeneği belirleyin. Çeşitli dosyalar bir proje veya çözümle ilişkilendirilmemiş ancak kolaylık olması için **Çözüm Gezgini** içinde görünebilen dosyalardır.
 
 > [!NOTE]
-> Etkinleştirmek için bu seçeneği belirleyin **tarayıcıda görüntüle** komutunu **dosya** etkin web uygulamasında yer almayan web belgeler için menü.
+> Etkin Web uygulamasına dahil edilen Web belgelerinin **Dosya** menüsünde **Tarayıcıda görüntüle** komutunu etkinleştirmek için bu seçeneği belirleyin.
 
-**Diğer dosyalar projesinde kaydedilmiş öğeler**
+**Çeşitli dosyalar projesinde kaydedilen öğeler**
 
-İçinde kalıcı hale getirmek için dosya sayısını belirtir **çeşitli dosyalar** klasörü **Çözüm Gezgini**. Artık bir düzenleyicide açık olsalar bile bu dosyalar listelenir. Bir tam sayı 0'dan 256 belirtebilirsiniz. Varsayılan sayı 0'dır.
+**Çözüm Gezgini** **çeşitli dosyalar** klasöründe kalıcı hale getirmek için dosya sayısını belirtir. Bu dosyalar, bir düzenleyicide artık açık olmasalar bile listelenir. 0 ile 256 arasında bir tamsayı belirtebilirsiniz. Varsayılan sayı 0 ' dır.
 
-Bu seçenek 5 ayarlanmış ve 10 dosyanın tamamı kapattığınızda, 10 çeşitli dosyalar açık, varsa, örneğin, ilk 5 hala gösterilecek **çeşitli dosyalar** klasör.
+Örneğin, bu seçeneği 5 olarak ayarlarsanız ve 10 çeşitli dosyanın açık olması halinde, tüm 10 dosyalarını kapattığınızda, ilk 5, **diğer dosyalar** klasöründe gösterilmeye devam eder.
 
-**Veri kod sayfasına kaydedildiğinde belgeleri Unicode olarak Kaydet**
+**Veriler kod sayfasına kaydedilemediğinde belgeleri Unicode olarak kaydet**
 
-Varsayılan olarak Unicode olarak kaydedilecek seçili kod sayfasıyla uyumsuz bilgi içeren dosyaları neden olmak için bu seçeneği belirleyin.
+Seçili kod sayfasıyla uyumsuz bilgiler içeren dosyaların varsayılan olarak Unicode olarak kaydedilmesini sağlamak için bu seçeneği belirleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
 - [Çeşitli Dosyalar](../../ide/reference/miscellaneous-files.md)
 - [Metin Bulma ve Değiştirme](../../ide/finding-and-replacing-text.md)

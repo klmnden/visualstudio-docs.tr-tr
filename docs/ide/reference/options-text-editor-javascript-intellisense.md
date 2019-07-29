@@ -13,38 +13,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 982c44b93ae5e3184a0c4c25e1e0a1c47f4c5e94
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461735"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605974"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Seçenekler iletişim kutusu: Metin düzenleyici \> JavaScript \> IntelliSense
 
-JavaScript için IntelliSense davranışını etkileyen ayarları değiştirmek için **Seçenekler** Iletişim kutusunun **IntelliSense** sayfasını kullanın. **IntelliSense** sayfasına, menü çubuğunda **Araçlar** > **Seçenekler** ' i ve ardından **metin Düzenleyicisi** > **JavaScript** > IntelliSense ' i genişleterek erişebilirsiniz **.**
+JavaScript için IntelliSense davranışını etkileyen ayarları değiştirmek için **Seçenekler** Iletişim kutusunun **IntelliSense** sayfasını kullanın. **IntelliSense** sayfasına, menü çubuğunda **Araçlar** > **Seçenekler** ' i ve ardından **metin Düzenleyicisi** > **JavaScript/TypeScript** > IntelliSense ' i genişleterek erişebilirsiniz **.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 **IntelliSense** sayfası aşağıdaki bölümleri içerir:
 
 ## <a name="statement-completion"></a>Deyim Tamamlama
- IntelliSense deyim tamamlama davranışını değiştirmek için bu seçenekleri kullanabilirsiniz.
 
-### <a name="uielement-list"></a>UIElement Listesi
- **Yalnızca Tab veya ENTER tuşlarını kullanarak işleyin**
+IntelliSense deyim tamamlama davranışını değiştirmek için bu seçenekleri kullanabilirsiniz.
 
- Bu onay kutusunu seçtiğinizde, JavaScript kod Düzenleyicisi, yalnızca **sekmeyi** seçtikten veya anahtarı **girdikten** sonra tamamlama listesinde seçilmiş öğeler içeren deyimleri ekler. Bu onay kutusunun işaretini kaldırdığınızda nokta, virgül, iki nokta, açık parantez ve açık küme ayracı ({) gibi diğer karakterler de seçili öğelerle deyimler eklenebilir.
+### <a name="uielement-list"></a>UIElement listesi
+
+**Yalnızca Tab veya ENTER tuşlarını kullanarak işleyin**
+
+Bu onay kutusunu seçtiğinizde, JavaScript kod Düzenleyicisi, yalnızca **sekmeyi** seçtikten veya anahtarı **girdikten** sonra tamamlama listesinde seçilmiş öğeler içeren deyimleri ekler. Bu onay kutusunun işaretini kaldırdığınızda nokta, virgül, iki nokta, açık parantez ve açık küme ayracı ({) gibi diğer karakterler de seçili öğelerle deyimler eklenebilir.
 
 ## <a name="references"></a>Referanslar
- Farklı JavaScript projesi türleri için kapsamda olan IntelliSense .js türlerini belirtmek için bu seçenekleri kullanabilirsiniz. IntelliSense başvuruları normalde, genel nesneler için IntelliSense desteği sağlamak amacıyla kullanılır. Bu sayfayı, çalışma zamanında yüklenmesi gereken komut dosyalarının yüklenme sırasını ayarlamak ve IntelliSense uzantı dosyalarını eklemek için de kullanabilirsiniz.
 
-### <a name="uielement-list"></a>UIElement Listesi
- **Başvuru grupları**
+Farklı JavaScript projesi türleri için kapsamda olan IntelliSense .js türlerini belirtmek için bu seçenekleri kullanabilirsiniz. IntelliSense başvuruları normalde, genel nesneler için IntelliSense desteği sağlamak amacıyla kullanılır. Bu sayfayı, çalışma zamanında yüklenmesi gereken komut dosyalarının yüklenme sırasını ayarlamak ve IntelliSense uzantı dosyalarını eklemek için de kullanabilirsiniz.
 
- Bu seçenek başvuru grubu türünü belirtir. Üç başvuru grubu desteklenir:
+### <a name="uielement-list"></a>UIElement listesi
 
- Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:
+**Başvuru grupları**
+
+Bu seçenek başvuru grubu türünü belirtir. Üç başvuru grubu desteklenir:
+
+Belirli IntelliSense .js dosyalarının farklı JavaScript projeleri için kapsamda olduğunu belirtmek için önceden tanımlı başvuru gruplarını kullanabilirsiniz. Dört başvuru grubu mevcuttur:
 
 - JavaScript kullanan uygulamalar için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] örtük (Windows sürümü). Bu gruba eklenen dosyalar, JavaScript kullanan uygulamalar için [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] kod Düzenleyicisi 'nde açılan her. js dosyası için kapsamdadır.
 

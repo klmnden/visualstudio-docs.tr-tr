@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388308"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604776"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Static tutucu türlerin oluşturucuları olmamalıdır
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Statik tutucu türleri varsayılan oluşturuculara sahip olmamalıdır
 
 |||
 |-|-|
@@ -30,22 +30,21 @@ ms.locfileid: "63388308"
 |Kategori|Microsoft.Design|
 |Yeni Değişiklik|Yeni|
 
+> [!NOTE]
+> Rule CA1053, [CA1052 ile birleştirilmiştir: Statik tutucu türleri [FxCop çözümleyicileri](fxcop-analyzers.yml)içinde](ca1052-static-holder-types-should-be-sealed.md) mühürlenmelidir.
+
 ## <a name="cause"></a>Sebep
- Ortak veya iç içe geçmiş ortak tür yalnızca statik üyeleri bildirir ve ortak veya korumalı varsayılan bir oluşturucu vardır.
+
+Ortak veya iç içe ortak tür yalnızca statik üyeleri bildirir ve varsayılan bir oluşturucuya sahiptir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Statik üyeleri çağırma bir tür örneği gerektirmediğinden kurucu gereksizdir. Statik olmayan üye türüne sahip olmadığından, ayrıca, bir örneği oluşturma erişim herhangi bir türün üyeleri için sağlamaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için varsayılan oluşturucu kaldırın veya özel yapın.
+Statik üyeleri çağırmak türde bir örnek gerektirmediğinden, varsayılan Oluşturucu gereksizdir. Ayrıca, tür statik olmayan üyelere sahip olmadığından, örnek oluşturmak türün üyelerinden hiçbirine erişim sağlamaz.
 
-> [!NOTE]
-> Türünü hiçbir oluşturucu tanımlamıyorsa bazı derleyiciler, ortak varsayılan oluşturucusu otomatik olarak oluşturun. Türünüz Durum buysa, ihlalin ortadan kaldırmak için özel varsayılan bir oluşturucu ekleyin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Oluşturucu varlığını türü statik bir tür değil önerir.
+Bu kuralın ihlalini onarmak için varsayılan oluşturucuyu kaldırın.
 
-## <a name="example"></a>Örnek
- Aşağıdaki örnek bu kuralı ihlal eden bir tür gösterir. Kaynak kodunda varsayılan oluşturucu yok olduğuna dikkat edin. Bu kod bir derlemeye derlendiğinde, C# Derleyici bu kuralı ihlal varsayılan bir oluşturucu ekler. Bunu düzeltmek için özel bir oluşturucu bildirin.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
- [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]
+Bu kuraldan uyarıyı bastırmayın. Varsayılan oluşturucunun varlığı, türün statik bir tür olmadığını önerir.

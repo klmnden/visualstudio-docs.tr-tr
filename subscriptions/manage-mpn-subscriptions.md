@@ -1,70 +1,63 @@
 ---
-title: Visual Studio yönetme abonelikleri Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan | Microsoft Docs
+title: Microsoft İş Ortağı Ağı (MPN) ile sunulan Visual Studio aboneliklerini yönetin | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/11/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Son kullanıcılarınıza, MPN iş ortakları için Visual Studio abonelikleri atama işlemini.
-ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: MPN iş ortakları için son kullanıcılarınıza Visual Studio abonelikleri atama.
+ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823205"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605459"
 ---
-# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan Visual Studio aboneliklerini yönetme
+# <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft İş Ortağı Ağı (MPN) ile sunulan Visual Studio aboneliklerini yönetme
+Bir uzmanlığa sahip olan veya MPN 'de Eylem Paketi satın alan iş ortakları, Visual Studio aboneliklerini kullanmaya uygundur. Bu abonelikler Kullanıcı başına lisanslanır ve yalnızca iş ortağı şirketi için çalışan belirli bir adlandırılmış kullanıcıya atandığında geçerlidir.
 
-Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.
+Ayrıntılar için [Microsoft iş ortağı ağı (MPN)](program-mpn.md) iş ortaklarına sunulan Visual Studio abonelikleri ' ne bakın.
 
-Bkz: [iş ortaklarına, Microsoft iş ortağı ağı (MPN) Visual Studio abonelikleri sunulan](program-mpn.md) Ayrıntılar için.
-
-## <a name="high-level-assignment-and-access-flow"></a>Üst düzey atama ve erişim akışı
-
-### <a name="microsoft-action-pack-subscribers"></a>Microsoft Action Pack aboneleri
-Microsoft eylem paketi abonesi ve Visual Studio abonelikleri
-
-1. Program Yöneticisi, iş ortağı üyelik Merkezi'nde oturum açar
-2. Aracılığıyla kişiler ilişkilendirmek **gereksinimler ve varlıklar**
-3. Kişiler bulun ve **Rolleri Ata**
-4. Select birinci, ikinci veya üçüncüyü **teknik konular ilgili kişisi** ve **Kaydet**
-5. Seçin **gereksinimler ve varlıklar**
-6. Seçin **ayrıcalıkları**
-7. Seçin **Visual Studio abonelikleri** (Not: Visual Studio abonelik güncelleştirmesi bekleniyor)
-8. İstenen seçin **bireysel**
-9. Tıklayın **gönderin**
-10. Tek bir e-posta alacaksınız
-11. Atanan kişi erişecek [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) oturum açmak için
-12. Dahil olmak üzere Visual Studio profil sayfası görüntülenebilir:
+## <a name="microsoft-action-pack-subscribers"></a>Microsoft Eylem Paketi aboneleri
+Microsoft Eylem Paketi abonesi ve Visual Studio abonelikleri
+1. Program Yöneticisi Iş ortağı üyelik Merkezi 'Nde oturum açacak
+2. **Gereksinimleri ve varlıkları** kullanarak kişileri ilişkilendirin
+3. Kişileri bulma ve **rol atama**
+4. Birinci, Ikinci veya üçüncü **teknik iletişim** ve **Kaydet** ' i seçin
+5. **Gereksinimleri & varlıkları** seçin
+6. **Ayrıcalıkları** seçin
+7. **Visual Studio abonelikleri** ' ni seçin (Note: Visual Studio abonelik güncelleştirmesi bekleniyor)
+8. İstediğiniz **kişiyi** seçin
+9. **Gönder** 'e tıklayın
+10. Kişiye bir e-posta gönderilir
+11. Atanan kişi, oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) için erişir
+12. Aşağıdakiler dahil olmak üzere bir Visual Studio profil sayfası görüntülenebilir:
     - Ad
     - Soyadı
     - İletişim e-postası
-13. Oturum açma tamamlanır ve abonenin avantajlara erişebiliyor olması
+13. Oturum açma işlemi tamamlanmıştır ve abonenin avantajlara erişimi olmalıdır
 
-### <a name="competency-partners"></a>Uzmanlık iş ortakları
-1. Seçin **gereksinimler ve varlıklar**
-2. Seçin **ayrıcalıkları**
-3. Seçin **MSDN Abonelikleri** (Not: Bu "Visual Studio abonelikleri" yakında relabeled)
-4. İstenen bulun **bireysel**
-5. Tıklayın **gönderin**
-6. Tek bir e-posta alacaksınız
-7. Atanan kişi erişecek [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) oturum açmak için
-8. Visual Studio profil sayfası görüntülenebilir
+## <a name="competency-partners"></a>Uzmanlığa sahip Iş ortakları
+1. **Gereksinimleri ve varlıkları** seçin
+2. **Ayrıcalıkları** seçin
+3. **MSDN abonelikleri** ' ni seçin (Note: Bu, "Visual Studio abonelikleri" yakında)
+4. İstediğiniz **kişiyi** bulun
+5. **Gönder** 'e tıklayın
+6. Kişiye bir e-posta gönderilir
+7. Atanan kişi, oturum açmak [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) için erişir
+8. Bir Visual Studio profili sayfası görüntülenebilir
     - Ad
     - Soyadı
     - İletişim e-postası
-9. Oturum açma tamamlanır ve abonenin avantajlara erişebiliyor olması
+9. Oturum açma işlemi tamamlanmıştır ve abonenin avantajlara erişimi olmalıdır
 
 ## <a name="resources-and-references"></a>Kaynaklar ve başvurular
+- Microsoft İş Ortağı Ağı [Visual Studio abonelikleri](https://partner.microsoft.com/membership/msdn-subscriptions) ile ilgili ayrıntılar
+- [Yazılım ve çevrimiçi hizmet avantajlarına Microsoft iş ortağı ağı Program Yöneticisi Kılavuzu](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
+  - PG 6-Eylem Paketi için Iletişim rolleri ve Visual Studio abonelikleri atama
+  > [!NOTE]
+  > Visual Studio abonelikleri için teknik Iletişim rolü gereklidir
+  - Pg 8: uzmanlığa sahip Iş ortakları için Visual Studio abonelikleri atama
 
-- Microsoft iş ortağı ağı ile ilgili ayrıntıları [Visual Studio abonelikleri](https://partner.microsoft.com/membership/msdn-subscriptions)
-
-- Microsoft iş ortağı ağı [Program Yöneticisi kılavuzu yazılım ve Çevrimiçi Hizmetler avantajları](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
-  - PG 6 - atama ilgili kişi rollerini ve Visual Studio abonelikleri için eylem paketi
-
-> [!NOTE]
-> Visual Studio abonelikleri için teknik konular ilgili kişisi rolü gereklidir
-> - PG 8 – atama Visual Studio abonelikleri uzmanlık iş ortakları için
-
-## <a name="need-help"></a>Yardıma mı ihtiyacınız var?
-Aboneler ve Program yöneticileri, abonelikleri erişme aboneliği olan herhangi bir sorunu çözmek için doğrudan Microsoft iş ortağı ağı Destek ekibiyle birlikte çalışmalıdır. Ziyaret [iş ortakları için destek](https://partner.microsoft.com/support) Yardım sayfası. (MPN oturum açma kimlik bilgilerinizi gerekli olacaktır.)
+## <a name="next-steps"></a>Sonraki adımlar
+Aboneler ve program yöneticileri, aboneliklere erişen aboneler ile ilgili sorunları çözmek için doğrudan Microsoft İş Ortağı Ağı destek ekibiyle çalışmalıdır. Yardım için [Iş ortakları desteği](https://partner.microsoft.com/support) sayfasını ziyaret edin. (MPN oturum açma kimlik bilgileriniz gerekecektir.)

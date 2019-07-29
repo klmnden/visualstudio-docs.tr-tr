@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecf5073a590b1e1bd5eb47fb3c98064b9b7b506
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461741"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605998"
 ---
-# <a name="options-text-editor-javascript-code-validation"></a>Seçenekler, metin düzenleyici, JavaScript, kod doğrulama
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Seçenekler iletişim kutusu: Metin düzenleyici \> JavaScript/TypeScript \> kod doğrulaması
 
-JavaScript 'in hataları işleme biçimini etkileyen ayarları değiştirmek için **Seçenekler** Iletişim kutusunun **kod doğrulama** sayfasını kullanın. Menü çubuğunda **Araçlar** > **Seçenekler** ' i ve ardından **metin Düzenleyicisi** > **JavaScript** > **kod doğrulaması** ' nı genişleterek **kod doğrulama** sayfasına erişebilirsiniz.
+JavaScript 'in hataları işleme biçimini etkileyen ayarları değiştirmek için **Seçenekler** Iletişim kutusunun **kod doğrulama** sayfasını kullanın. Menü çubuğunda **Araçlar** > **Seçenekler** ' i ve ardından **metin Düzenleyicisi** > **JavaScript/TypeScript** > **kodu doğrulaması** ' nı genişleterek **kod doğrulama** sayfasına erişebilirsiniz.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

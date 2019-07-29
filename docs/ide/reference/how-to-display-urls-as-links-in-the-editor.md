@@ -1,5 +1,5 @@
 ---
-title: "Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme"
+title: "Nasıl yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531649"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605697"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Nasıl yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme
 
-Tekdüzen Kaynak Konum Belirleyicisi (URL) kabul Kod Düzenleyicisi kodunuzda etkin bağlantı olarak seçebilirsiniz. Bu özellik, URL'leri kullandığınızda:
+Kod düzenleyicisinin kodunuzda Tekdüzen Kaynak Konum belirleyicilerinin (URL 'Ler) etkin bağlantılar olarak kabul edilebilir olmasını seçebilirsiniz. Bu özelliği kullandığınızda, URL 'Ler:
 
 - Altı çizili olarak görünür.
 
-- Görünen bir **araç ipucu** geldiğinizde bunlar üzerinde.
+- Üzerine geldiğinizde bir **araç ipucu** görüntüleyin.
 
-- Ne zaman gösterilen Web sitesi açmayı deneyin, **Ctrl**+**tıklayın** bağlantısına. Varsayılan olarak, Web sitesinin iç web tarayıcısında görüntülenir.
+- Bağlantıya **CTRL**+**tıkladığınızda** gösterilen Web sitesini açmaya çalışın. Varsayılan olarak, Web sitesi iç Web tarayıcısında görüntülenir.
 
 ## <a name="display-urls-as-links"></a>URL’leri bağlantı olarak görüntüleme
 
 1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2. Tıklayın **metin düzenleyici**.
+2. **Metin düzenleyici**' ye tıklayın.
 
-3. Yalnızca bir dil seçeneğini değiştirmek için bu dil için klasörü genişletin ve seçin **genel**.
+3. Yalnızca bir dilin seçeneğini değiştirmek için bu dilin klasörünü genişletin ve **genel**' i seçin.
 
      —veya—
 
-     Tüm diller için seçeneği değiştirmek için genişletme **tüm diller** klasörü seçin **genel**.
+     Tüm dillerin seçeneğini değiştirmek için **tüm diller** klasörünü genişletin ve **genel**' i seçin.
 
-4. Altında **görünen**seçin **etkinleştirme tek tıkla URL gezinmesini**.
+4. **Görüntü**altında, **tek tıklamayla URL gezintisini etkinleştir ' i**seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Metin Düzenleyici Seçenekleri iletişim Kutusu](../../ide/reference/text-editor-options-dialog-box.md)
 - [Kod Düzenleyicisi özellikleri](../../ide/writing-code-in-the-code-and-text-editor.md)

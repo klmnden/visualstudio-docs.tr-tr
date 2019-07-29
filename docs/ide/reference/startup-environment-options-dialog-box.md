@@ -10,27 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0f14d830c9b0c3d091ffc380f64c128b8b79b83
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950921"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605918"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Seçenekler iletişim kutusu: Ortam \> başlatma
 
 ::: moniker range="vs-2017"
 
-Visual Studio başlangıç sayfasını özelleştirme veya Visual Studio başlatıldığında farklı bir varsayılan eylem ayarlamak için bu sayfayı kullanın. Daha fazla bilgi için [başlangıç özelleştirme](../../ide/customizing-the-start-page-for-visual-studio.md).
+Visual Studio başlangıç sayfasını özelleştirmek veya Visual Studio başlatıldığında farklı bir varsayılan eylem ayarlamak için bu sayfayı kullanın. Daha fazla bilgi için bkz. [özelleştirmeyi başlatma](../../ide/customizing-the-start-page-for-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio başlatıldığında farklı bir varsayılan eylem ayarlamak için bu sayfayı kullanın. İçinde **, başlangıçta açılması** listesinde, aralarından seçim **başlangıç penceresi** (olanak sağlayan yeni veya mevcut bir projeyi açmayı), **en son çözüm**, veya **boş ortam**.
+Visual Studio başlatıldığında farklı bir varsayılan eylem ayarlamak için bu sayfayı kullanın. **Başlangıçta,** listede, **Başlangıç penceresi** ' nden (yeni veya var olan bir proje açmanıza olanak tanır), **en son çözüm**veya **boş ortam**' ı seçin.
 
 ::: moniker-end
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

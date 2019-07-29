@@ -1,29 +1,27 @@
 ---
-title: Visual Studio + GitHub paketini | Microsoft Docs
+title: Visual Studio + GitHub kurumsal demeti | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Visual Studio + GitHub paketini aboneliklerini yönetme
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Visual Studio + GitHub kurumsal paketteki abonelikleri yönetme
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783630"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605392"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio aboneliklerini yönetme
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio aboneliklerini yönetme
+Microsoft ile kurumsal anlaşma (EA) olan müşteriler, Visual Studio Standard abonelikleri ve GitHub Enterprise 'ı birlikte getiren yeni bir abonelik paketi satın almaya uygundur. Visual Studio abonelerinin GitHub Enterprise 'ı edinmenin kolay ve ekonomik bir yoludur. 
 
-Microsoft ile Kurumsal Anlaşma (EA) olan müşteriler, Visual Studio standart aboneliklerini ve GitHub Enterprise toplayan yeni bir abonelik paket satın almaya uygundur. GitHub Enterprise almak Visual Studio aboneleri için kolay ve ekonomik şekilde var. 
+Kuruluşunuz GitHub Enterprise ile Visual Studio abonelikleri satın aldığında, bunlar iki bölümden sağlanır ve yönetilir.
 
-GitHub Enterprise ile Visual Studio Abonelikleri, kuruluşunuzun satın aldığında, bunlar sağlanan ve yönetilen içindeki iki parça.
+## <a name="manage-visual-studio-subscriptions"></a>Visual Studio aboneliklerini yönetme
+Kuruluşunuz GitHub Enterprise ile Visual Studio abonelikleri satın aldığında, aboneliklerin Visual Studio bölümü hemen sağlanır ve abonelikler Visual Studio ['da atama ve yönetim için kullanılabilir Abonelikler yönetim](https://manage.visualstudio.com) portalı. 
 
-## <a name="managing-visual-studio-subscriptions"></a>Visual Studio aboneliklerini yönetme
-
-GitHub Enterprise ile Visual Studio Abonelikleri, kuruluşunuzun satın aldığında, abonelikleri Visual Studio kısmı hemen sağlanır ve abonelikleri atama ve Visual Studio yönetimiiçinkullanılabilir[Abonelikler Yönetim](https://manage.visualstudio.com) portalı. 
-
-Aboneliklerini yönetme hakkında daha fazla bilgi için bu konu başlıklarına göz denetleyin:
+Abonelikleri yönetme hakkında daha fazla bilgi için şu konulara bakın:
 - [Yönetici Portalı’nı Kullanma](using-admin-portal.md)
 - [Abonelikleri Atama](assign-license.md)
 - [Abonelikleri Düzenleme](edit-license.md)
@@ -31,52 +29,47 @@ Aboneliklerini yönetme hakkında daha fazla bilgi için bu konu başlıklarına
 - [Fazla Yüklemeler](handle-overclaimed-license.md)
 
 > [!Important]
-> GitHub Enterprise ile Visual Studio Abonelikleri, Visual Studio abonelik yöneticileri tarafından atanır ve bu Aboneliklerdeki satın olamazdı, bunlar için GitHub Enterprise admins kuruluş içindeki görünür olmaz. GitHub Enterprise abonelikleri görünür olduğundan emin olmak için satın alma dahil olmak üzere **en az bir** GitHub Enterprise ile Visual Studio Professional veya Visual Studio Enterprise with GitHub Enterprise aboneliğinizin yapılacak ilk zaman abonelikleri atanır.  
+> GitHub Enterprise ile Visual Studio abonelikleri, Visual Studio abonelik yöneticileri tarafından atanmışsa ve bu aboneliklerin hiç satın alınmadıysa, bu abonelikler kuruluş içindeki GitHub Enterprise Admins 'e görünür olmayacaktır. GitHub Enterprise aboneliklerinin görünebildiğinden emin olmak için GitHub Enterprise veya Visual Studio Enterprise GitHub Enterprise aboneliğiyle **en az bir** Visual Studio Professional içeren bir satın alma, abonelikler ilk kez yapılmalıdır atanır.  
 >
-> Bu atanan her GitHub abonelik için burada Yönet Portalı'nda bu yönelik lisanslama gereksinimlerine uyduğunuzu kalması için atanan GitHub aboneliğiyle karşılık gelen bir Visual Studio emin olmak için müşterinin sorumluluğundadır Abonelik.
+> Bu, atanan her GitHub aboneliğine ilişkin lisans gereksinimleriyle uyumlu kalmak için yönetim portalı 'nda atanan GitHub aboneliğine sahip bir Visual Studio olduğundan emin olmak için müşterinin sorumluluğundadır. aboneliğiniz.
 
-## <a name="managing-github-enterprise-subscriptions"></a>GitHub Enterprise Abonelikleri Yönetme
+## <a name="manage-github-enterprise-subscriptions"></a>GitHub Enterprise aboneliklerini yönetme
+GitHub Enterprise abonelikleri satın alındığında, GitHub 'a erişecek ve yöneticileri tanımlayan kuruluşları oluşturmaya ve yapılandırmaya yardımcı olmak üzere müşteriler ile GitHub iş ortakları yapılır.  Bu Yöneticiler daha sonra yöneticiler olarak ayarlandıklarından bir bildirim alır.  
 
-Ne zaman GitHub Enterprise abonelikleri satın alınır, oluşturma ve GitHub erişme ve yöneticileri belirlemek kuruluşların yapılandırma yardımcı olmak için müşterilerine GitHub iş ortaklarıyla.  Bu Yöneticiler, sonra bunlar Yöneticiler olarak ayarlanmış bir bildirim alırsınız.  
+Bu işlem daha karmaşık olduğundan, kuruluşlar ve yöneticilerin tam olarak ayarlanması için abonelikler satın alındıktan sonra birkaç gün sürebilir.
 
-Bu işlem daha karmaşık olduğundan, bu yöneticileri tam yedekleme kümesinde olması ve kuruluşlar için abonelik satın sonra birkaç gün sürebilir.
-
-GitHub, bulut tabanlı GitHub.com veya GitHub Enterprise Server şirket içi kullanılabilir.  İki sürüm yönetimi işlemleri farklı.  GitHub, çeşitli Yardım konularını ve GitHub Enterprise abonelikleri yönetmenize yardımcı olmak için yönetici kılavuzları sağlar.  Aşağıdaki konular bağlantılar sağladık.  
+GitHub, bulut tabanlı GitHub.com ya da şirket içi GitHub Enterprise Server olarak kullanılabilir.  İki sürümü yönetmek için süreçler farklılık gösterir.  GitHub, GitHub Enterprise aboneliklerini yönetmenize yardımcı olmak için çeşitli yardım konuları ve yönetici kılavuzlarını sağlar.  Aşağıdaki seçili konulara bağlantılar sağladık.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
-GitHub.com yönetme hakkında daha fazla bilgi için lütfen aşağıdaki konu başlıklarına göz atın [GitHub Help](https://help.github.com/en).
-- [Yardım konuları tam listesi](https://help.github.com/en)
-- [Kuruluşunuzdaki üyeliğini yönetme](https://help.github.com/en/articles/managing-membership-in-your-organization)
-> - [Kuruluşunuz katılmaya davet eden kullanıcılar](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-> - [Takımlar/kuruluşlardan kullanıcılar kaldırılıyor](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-> - [Kuruluşunuzun eski üye eski durumuna getirmedeki](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
+GitHub.com yönetimi hakkında daha fazla bilgi için lütfen [GitHub yardımı](https://help.github.com/en)'nda aşağıdaki konulara göz atın.
+- [Yardım konularının tam listesi](https://help.github.com/en)
+- [Kuruluşunuzdaki üyelikleri yönetme](https://help.github.com/en/articles/managing-membership-in-your-organization)
+> - [Kullanıcıları kuruluşunuza katmak üzere davet etme](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
+> - [Kullanıcıları ekiplerden/kuruluşlardan kaldırma](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+> - [Kuruluşunuzun eski bir üyesini yeniden belirten](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
 - [Rolleri kullanarak erişimi yönetme](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-- [Teams'e kullanıcıları düzenleme](https://help.github.com/en/articles/organizing-members-into-teams)
+- [Kullanıcıları ekiplere düzenleme](https://help.github.com/en/articles/organizing-members-into-teams)
 - [Kuruluşunuzun depolarına erişimi yönetme](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
+GitHub yardımı, soruları yanıtlamak ve kuruluşunuzun GitHub Enterprise Server uygulamasının yönetimine ilişkin ipuçları vermek için çeşitli yönetici kılavuzlarını sağlar.
 
-GitHub Enterprise sunucusunun kuruluşunuzun uygulama yönetimini ipuçları soruları yanıtlamak ve yönetici kılavuzları çeşitli GitHub Yardım sağlar.
-
-- [Tüm yönetici kılavuzları görüntüleyin](https://help.github.com/en/enterprise/2.16/admin)
+- [Tüm yönetici kılavuzlarını görüntüle](https://help.github.com/en/enterprise/2.16/admin)
 - [Kullanıcı Yönetimi](https://help.github.com/en/enterprise/2.16/admin/user-management)
 > - [Kuruluşlar ve takımlar](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-> > - [Kuruluşların oluşturma](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+> > - [Kuruluşlar oluşturma](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
 > > - [Takımlar oluşturma](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-> > - [Kişiler teams'e ekleme](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-> > - [Kişiler, takımlar ve kuruluşların kaldırma](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+> > - [Takımlara kişi ekleme](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+> > - [Ekiplerden ve kuruluşlardan kişileri kaldırma](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
 > - [Kullanıcı güvenliği](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-- [GitHub Enterprise sunucusunu yükleme ve yapılandırma](https://help.github.com/en/enterprise/2.16/admin/installation)
+- [GitHub Enterprise Server 'ı yükleme ve yapılandırma](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Destek kaynakları
-
-- GitHub ile ilgili konuları daha geniş bir yelpazede soruların yanıtlarını bulabilirsiniz [GitHub Help](https://help.github.com/en).
-- Diğer GitHub kullanıcılardan Yardım [GitHub Topluluk Forumu](https://github.community/).
-- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
-- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
-- Alma [teknik destek](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) GitHub Enterprise için.   
+- [GitHub yardımı](https://help.github.com/en)'nda çok çeşitli GitHub konuları dizisiyle soruların yanıtlarını bulabilirsiniz.
+- [GitHub topluluk forumundaki](https://github.community/)diğer GitHub kullanıcılarından yardım alın.
+- Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.
+- Visual Studio IDE, Azure DevOps Services veya diğer Visual Studio ürünleri veya hizmetleri hakkında sorularınız mı var?  [Visual Studio desteği](https://visualstudio.microsoft.com/support/)' ni ziyaret edin.
+- GitHub Enterprise için [Teknik destek](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) alın.   
 
 ## <a name="next-steps"></a>Sonraki adımlar
-
-GitHub Enterprise ile Visual Studio aboneliklerini yönetme hakkında daha fazla bilgi için Visual Studio denetleyin [abonelikleri yönetim portalında](https://visualstudio.microsoft.com/subscriptions-administration/).
+Visual Studio aboneliklerini GitHub Enterprise ile yönetme hakkında daha fazla bilgi için Visual Studio [abonelikleri Yönetici portalı](https://visualstudio.microsoft.com/subscriptions-administration/)' na göz atın.

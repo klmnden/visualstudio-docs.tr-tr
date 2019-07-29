@@ -11,17 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a475397969ce5ebdeff15238f548d42ceee60d6
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989871"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606025"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Bildirimler, ortam, Seçenekler iletişim kutusu
 
-Aracılığıyla yoksaymak için daha önce seçtiğiniz herhangi bir bildirim yoksayılıyor durdurmak için bu seçeneği kullanın **bildirimleri** iletişim. Daha fazla bilgi için [güncelleştirme Visual Studio](../../install/update-visual-studio.md).
-
-### <a name="see-also"></a>Ayrıca bkz.
-
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
+Daha önce **bildirim** iletişim kutusunda yok saymayı seçtiğiniz tüm bildirimleri yoksaymayı durdurmak için bu seçeneği kullanın. Daha fazla bilgi için bkz. [Visual Studio 'Yu güncelleştirme](../../install/update-visual-studio.md).

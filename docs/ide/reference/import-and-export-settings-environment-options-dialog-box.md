@@ -10,17 +10,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d683185927cf6b184c112df559a7da38da4a1662
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778511"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605582"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>Seçenekler iletişim kutusu: Ortam \> içeri ve dışarı aktarma ayarları
 
-Kullanıcı ayarları dosyanızın kaydedildiği belirtmek için bu sayfayı kullanın. Ayarları hakkında daha fazla bilgi için bkz. [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
-
-### <a name="see-also"></a>Ayrıca bkz.
-
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
+Kullanıcı ayarları dosyanızın kaydedileceği yeri belirtmek için bu sayfayı kullanın. Ayarlar hakkında daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).

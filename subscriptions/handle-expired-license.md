@@ -1,26 +1,29 @@
 ---
-title: Süresi dolmuş bir lisans tanıtıcı | Microsoft Docs
+title: Süre dolma lisanslarını işle | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Süresi dolan Visual Studio abonelikleri yöneticileri nasıl işleyebileceğini öğrenin
-ms.openlocfilehash: 0b47c18ffc826a755aeafbfc2621aef890afaf37
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Yöneticilerin, zaman aşımına uğradı Visual Studio aboneliklerini nasıl işleyebileceğini öğrenin
+ms.openlocfilehash: b4abf236842d9970234bdb5085722a27aae2e4a4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250398"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605534"
 ---
-# <a name="handling-expired-subscriptions"></a>Abonelikleri işleme süresi
-
-Bir kullanıcının abonelik sona erdiğinde, bu portalda aboneleri listesinde adının yanındaki kırmızı bir çubuk gösterilir. Bu aboneleri, Visual Studio abonelik avantajlarının kullanmaya devam etmek, kullanıcıların lisansları yenilemeniz gerekecektir.
+# <a name="expired-subscriptions"></a>Vadesi geçen abonelikler
+Bir kullanıcının aboneliğinin süresi dolduğunda, bu, portalda aboneler listesinde adının yanında kırmızı bir çubukla belirtilir. Bu abonelerin, Visual Studio abonelik avantajlarını kullanmaya devam etmesi için lisanslarını yenilemeniz gerekir.
 > [!div class="mx-imgBorder"]
-> ![Süresi dolan abonelikleri listesi](_img/expired-subscriptions/expired-list.png)
+> ![Vadesi geçen aboneliklerin listesi](_img/expired-subscriptions/expired-list.png)
 
-**Abonelik yenileme**
-1. Toplu Lisanslama satıcınızla veya, Microsoft satıcı ile iletişime geçin.
-2. Bunları, anlaşma numarası ve satın alma hesabı sağlar.
+## <a name="renew-subscriptions"></a>Abonelikleri yenileme
+1. Toplu Lisanslama satıcınızla veya Microsoft satıcınıza başvurun.
+2. Bunları Sözleşme numaranız ve satın alma hesap numaranız ile birlikte belirtin. 
 
-Satıcınıza veya Microsoft satıcı yenileme ya da işlem ek abonelikleri satın alma yönlendirecektir. Yeni Abonelik Siparişi veren ya da sözleşme yenilenmiş sonra kullanılabilir olur ve olabilir [abonelerinize atanan](assign-license.md).
+Satıcı veya Microsoft satıcı, yenileme veya ek abonelik satın alma sürecinde size rehberlik edecektir. Sipariş yerleştirildiğinde veya sözleşme yenilendiğinde, yeni abonelikler kullanılabilir olur ve [abonelere atanabilir](assign-license.md).
+
+## <a name="next-steps"></a>Sonraki adımlar
+- Yönetim portalını kullanma konusunda yardım için [Visual Studio yönetim ve abonelik desteği](https://visualstudio.microsoft.com/support/support-overview-vs) 'ne başvurun
+- [Microsoft çözüm sağlayıcısı](https://www.microsoft.com/solution-providers/home) bulma

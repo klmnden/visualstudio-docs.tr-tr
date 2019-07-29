@@ -1,5 +1,5 @@
 ---
-title: FxCop kuralı bağlantı noktası durumu
+title: FxCop kural bağlantı noktası durumu
 ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559675"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604875"
 ---
-# <a name="fxcop-rule-port-status"></a>FXCop kuralı bağlantı noktası durumu
+# <a name="fxcop-rule-port-status"></a>FxCop kural bağlantı noktası durumu
 
-Visual Studio'nun önceki bir sürümde daha önce statik kod analizi kullandıysanız, bu kuralların geçerli uygulama kullanılabilir olan merak ediyor olabilirsiniz [FxCop Çözümleyicileri](install-fxcop-analyzers.md). Bu sayfada unity'nin henüz bu yanı sıra verilir kuralları listelenir ve bunları bağlantı noktası planlamaktadır olup olmadığı.
+Daha önce Visual Studio 'nun önceki bir sürümünde statik Kod analizini kullandıysanız, bu kurallardan hangilerinin geçerli uygulamada [FxCop çözümleyicileri](install-fxcop-analyzers.md)olarak kullanılabildiğini merak ediyor olabilirsiniz. Bu sayfada, bir yuva yapılan kuralların yanı sıra, bağlantı noktası ile ilgili planlar olup olmadığı listelenmiştir.
 
 ## <a name="ported-rules"></a>Taşınan kurallar
 
-[Otomatik olarak oluşturulan belgeleri sayfasını](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) roslyn Çözümleyicileri depo FxCop Çözümleyicileri için unity'nin kurallar hakkında en güncel listesi vardır. Bu sayfa ayrıca kural varsayılan olarak etkin olup olmadığı ve ilişkili olup olmadığını gibi ek bilgileri olan *kod düzeltme*. ([Kod düzeltme](../ide/quick-actions.md) ampul simgesini menüsünde Visual Studio'da tek tıklamayla düzeltmeleri kullanılabilir.)
+Roslyn-çözümleyiciler depolarındaki otomatik olarak oluşturulan [Belgeler sayfasında](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) , FxCop çözümleyicileri ' nin içinde yer alan kuralların en güncel listesi bulunur. Bu sayfada Ayrıca kuralın varsayılan olarak etkinleştirilip etkinleştirilmeyeceğini ve ilişkili bir *kod düzeltmesine*sahip olup olmadığı gibi ek bilgiler de bulunur. ([Kod düzeltmeleri](../ide/quick-actions.md) , Visual Studio 'da ampul simgesi menüsünde sunulan tek tıklamayla düzeltmeler ' dir.)
 
-Bu sayfadaki tarih itibariyle FxCop listesini kuralları için taşınmıştır [FxCop Çözümleyicileri](install-fxcop-analyzers.md) içerir:
+Bu sayfadaki tarihin itibariyle, [FxCop çözümleyicileri](install-fxcop-analyzers.md) 'nin kapsamında yer alan FxCop kuralları listesi şunları içerir:
 
 Kural Kimliği | Başlık
 --------|---------
@@ -35,14 +35,14 @@ Kural Kimliği | Başlık
 [CA1008](ca1008-enums-should-have-zero-value.md) | Sabit listelerinin sıfır değeri olmalıdır
 [CA1010](ca1010-collections-should-implement-generic-interface.md) | Koleksiyonlar genel arabirimi uygulamalıdır
 [CA1012](ca1012-abstract-types-should-not-have-constructors.md) | Soyut türlerin oluşturucuları olmamalıdır
-[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Derlemeleri CLSCompliant ile işaretleyin
-[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Derlemeleri derleme sürümü ile işaretleyin
-[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Derlemeleri ComVisible ile işaretleyin
+[CA1014](ca1014-mark-assemblies-with-clscompliantattribute.md) | Derlemeleri CLSCompliant ile işaretle
+[CA1016](ca1016-mark-assemblies-with-assemblyversionattribute.md) | Derlemeleri derleme sürümü ile işaretle
+[CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Derlemeleri ComVisible ile işaretle
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Öznitelikleri AttributeUsageAttribute ile işaretle
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Öznitelik bağımsız değişkenleri için erişimciler tanımlayın
 [CA1024](ca1024-use-properties-where-appropriate.md) | Uygun yerlerde özellikleri kullanın
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | Sabit listelerini FlagsAttribute ile işaretleyin
-[CA1028](ca1028-enum-storage-should-be-int32.md) | Numaralandırma depolaması Int32 olmalıdır
+[CA1028](ca1028-enum-storage-should-be-int32.md) | Sabit Listesi depolaması Int32 olmalıdır
 [CA1030](ca1030-use-events-where-appropriate.md) | Uygun yerlerde olayları kullanın
 [CA1031](ca1031-do-not-catch-general-exception-types.md) | Genel özel durum türlerini yakalamayın
 [CA1032](ca1032-implement-standard-exception-constructors.md) | Standart özel durum oluşturucularını uygulayın
@@ -51,40 +51,40 @@ Kural Kimliği | Başlık
 [CA1036](ca1036-override-methods-on-comparable-types.md) | Karşılaştırılabilir türlerde metotları geçersiz kıl
 [CA1040](ca1040-avoid-empty-interfaces.md) | Boş arabirimlerden kaçının
 [CA1041](ca1041-provide-obsoleteattribute-message.md) | ObsoleteAttribute iletisi sağla
-[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Integral veya dize bağımsız değişkeni için dizin oluşturucular kullanma
+[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md) | Dizin oluşturucular Için Integral veya dize bağımsız değişkeni kullanın
 [CA1044](ca1044-properties-should-not-be-write-only.md) | Özellikler salt yazılır olmamalıdır
 [CA1050](ca1050-declare-types-in-namespaces.md) | Ad alanlarında türler bildirin
 [CA1051](ca1051-do-not-declare-visible-instance-fields.md) | Görünür örnek alanlarını bildirmeyin
-[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Static tutucu türler statik veya NotInheritable (bu tablodan sonraki nota bakın)
-[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Static tutucu türler (bu tablodan sonraki nota bakın) oluşturucular bulunmamalıdır
-[CA1054](ca1054-uri-parameters-should-not-be-strings.md) | URI parametreleri dizeler olmamalıdır
-[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | URI dönüş değerleri dizeler olmamalıdır
-[CA1056](ca1056-uri-properties-should-not-be-strings.md) | URI özellikleri dizeler olmamalıdır
+[CA1052](ca1052-static-holder-types-should-be-sealed.md) | Statik tutucu türleri statik veya NotInheritable olmalıdır
+[CA1053](ca1053-static-holder-types-should-not-have-constructors.md) | Statik tutucu türlerin oluşturucuları olmamalıdır (CA1053, FxCop çözümleyicileri için [CA1052](ca1052-static-holder-types-should-be-sealed.md) 'in bir parçasıdır)
+[CA1054](ca1054-uri-parameters-should-not-be-strings.md) | URI parametreleri dize olmamalıdır
+[CA1055](ca1055-uri-return-values-should-not-be-strings.md) | URI dönüş değerleri dize olmamalıdır
+[CA1056](ca1056-uri-properties-should-not-be-strings.md) | URI özellikleri dize olmamalıdır
 [CA1058](ca1058-types-should-not-extend-certain-base-types.md) | Türler belirli temel türleri aşmamalıdır
-[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | Pinvokes yerel yöntemlerin sınıfına taşıyın
+[CA1060](ca1060-move-p-invokes-to-nativemethods-class.md) | PInvoke 'ı yerel metotlar sınıfına taşı
 [CA1061](ca1061-do-not-hide-base-class-methods.md) | Temel sınıf metotlarını gizlemeyin
 [CA1062](ca1062-validate-arguments-of-public-methods.md) | Genel metotların bağımsız değişkenlerini doğrulayın
-[CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable'ı doğru uygulayın
+[CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable 'ı doğru uygulayın
 [CA1064](ca1064-exceptions-should-be-public.md) | Özel durumlar genel olmalıdır
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Beklenmeyen konumlarda özel durum harekete geçirmeyin
-CA1066 | Tür {0} IEquatable uygulamalıdır\<T > eşittir kıldığından
-CA1067 | Object.Equals(object) IEquatable uygularken geçersiz kılma\<T >
-CA1068 | CancellationToken parametreleri son gelmelidir
-CA1200 | Cref etiket öneki ile kullanmaktan kaçının
+CA1066 | Tür {0} , eşit olarak\<geçersiz kılındığından IEquatable T > uygulamalıdır
+CA1067 | IEquatable\<T > uygularken Object. Equals (nesne) öğesini geçersiz kıl
+CA1068 | CancellationToken parametreleri en son gelmelidir
+CA1200 | Ön ek ile cref etiketlerini kullanmaktan kaçının
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo belirt
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider belirt
 [CA1307](ca1307-specify-stringcomparison.md) | StringComparison belirt
 [CA1308](ca1308-normalize-strings-to-uppercase.md) | Dizeleri büyük harfe normalleştirin
-[CA1309](ca1309-use-ordinal-stringcomparison.md) | Sıra dize karşılaştırma kullan
+[CA1309](ca1309-use-ordinal-stringcomparison.md) | Sıralı dize karşılaştırmayı kullan
 [CA1401](ca1401-p-invokes-should-not-be-visible.md) | P/Invoke'lar görünür olmamalıdır
 [CA1501](ca1501-avoid-excessive-inheritance.md) | Aşırı devralmadan kaçının
 [CA1502](ca1502-avoid-excessive-complexity.md) | Aşırı karmaşıklıktan kaçının
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Bakımı yapılamayan kodlardan kaçının
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Aşırı sınıf bağlantısından kaçının
-[CA1507](ca1507.md) | Sembol adlarını ifade nameof kullanın
-CA1508 | Kullanılmayan koşullu kodlardan kaçının
-CA1509 | Kod ölçümleri kural belirtimi dosyasında geçersiz giriş
+[CA1507](ca1507.md) | Sembol adlarını ifade etmek için NameOf kullanın
+CA1508 | Kullanılmayan koşullu koddan kaçının
+CA1509 | Kod ölçümleri kural belirtim dosyasında geçersiz giriş
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Tanımlayıcılar alt çizgi içermemelidir
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | Tanımlayıcılar yalnızca büyük küçük harfle birbirinden farklı olmamalıdır
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | Tanımlayıcılar doğru soneke sahip olmalıdır
@@ -94,38 +94,38 @@ CA1509 | Kod ölçümleri kural belirtimi dosyasında geçersiz giriş
 [CA1715](ca1715-identifiers-should-have-correct-prefix.md) | Tanımlayıcılar doğru ön eke sahip olmalıdır
 [CA1716](ca1716-identifiers-should-not-match-keywords.md) | Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir
 [CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md) | Yalnızca FlagsAttribute sabit listeleri çoğul adlara sahip olmalıdır
-[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | Tanımlayıcı türü adını içerir.
-[CA1721 TÜR](ca1721-property-names-should-not-match-get-methods.md) | Özellik adları get metotları ile eşleşmemelidir
+[CA1720](ca1720-identifiers-should-not-contain-type-names.md) | Tanımlayıcı tür adı içeriyor
+[CA1721](ca1721-property-names-should-not-match-get-methods.md) | Özellik adları get metotları ile eşleşmemelidir
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | Tür adları ad alanlarıyla eşleşmemelidir
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | Parametre adları temel bildirimle eşleşmemelidir
 [CA1801](ca1801-review-unused-parameters.md) | Kullanılmayan parametreleri gözden geçirin
-[CA1802](ca1802-use-literals-where-appropriate.md) | Uygun yerlerde sabitleri kullan
+[CA1802](ca1802-use-literals-where-appropriate.md) | Uygun yerlerde sabit değerler kullanın
 [CA1806](ca1806-do-not-ignore-method-results.md) | Metot sonuçlarını yoksaymayın
 [CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | Başvuru türü statik alanları satır içinden başlatın
 [CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | Örneklenmemiş iç sınıflardan kaçının
 [CA1813](ca1813-avoid-unsealed-attributes.md) | Mühürsüz özniteliklerden kaçının
 [CA1814](ca1814-prefer-jagged-arrays-over-multidimensional.md) | Çok boyutlu diziler yerine basit dizileri tercih edin
 [CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md) | Değer türlerinde eşittir ve işleç eşittiri geçersiz kılın
-[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Atma yöntemleri SuppressFinalize çağırmalıdır
+[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Dispose metotları SuppressFinalize öğesini çağırmalıdır
 [CA1819](ca1819-properties-should-not-return-arrays.md) | Özellikler diziler döndürmemelidir
 [CA1820](ca1820-test-for-empty-strings-using-string-length.md) | Dize uzunluğunu kullanarak boş dizeleri test edin
-[CA1821](ca1821-remove-empty-finalizers.md) | Boş Sonlandırıcıları kaldırın
+[CA1821](ca1821-remove-empty-finalizers.md) | Boş sonlandırıcıları kaldır
 [CA1822](ca1822-mark-members-as-static.md) | Üyeleri static olarak işaretleyin
 [CA1823](ca1823-avoid-unused-private-fields.md) | Kullanılmayan özel alanlardan kaçının
 [CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin
-CA1825 | Sıfır uzunluklu dizi ayırmaları kaçının.
-CA1826 | Numaralandırılabilir yöntemleri dizinlenebilir koleksiyonlarda kullanmayın. Bunun yerine koleksiyonun doğrudan kullanın
+CA1825 | Sıfır uzunluklu dizi ayırmaktan kaçının.
+CA1826 | Dizine eklenebilir koleksiyonlar üzerinde sıralanabilir Yöntemler kullanmayın. Bunun yerine toplamayı doğrudan kullanın
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | Kapsamı kaybetmeden önce nesneleri bırakın
 [CA2002](ca2002-do-not-lock-on-objects-with-weak-identity.md) | Zayıf kimliği olan nesneleri kilitlemeyin
-[CA2007](ca2007-do-not-directly-await-task.md) | Beklenen görev üzerinde ConfigureAwait çağırmayı düşünün
-CA2008 | Görevleri bir TaskScheduler geçmeden oluşturmayın
-CA2009 | Bir ImmutableCollection değerine ToImmutableCollection çağırmayın
-CA2010 | PreserveSigAttribute ile işaretlenmiş yöntemler tarafından döndürülen değer her zaman kullanma
+[CA2007](ca2007-do-not-directly-await-task.md) | Beklenen görevde ConfigureAwait yöntemini çağırmayı düşünün
+CA2008 | TaskScheduler geçirmeden görev oluşturmayın
+CA2009 | IBir ımmutablecollection değerinde ToImmutableCollection çağırmayın
+CA2010 | PreserveSigAttribute ile işaretlenmiş yöntemlerin döndürdüğü değeri her zaman kullanın
 [CA2100](ca2100-review-sql-queries-for-security-vulnerabilities.md) | SQL sorgularını güvenlik açıkları için inceleyin
 [CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | P/Invoke dize bağımsız değişkenleri için sıralama belirtin
 [CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Özel arabirimleri karşılayan metotları mühürleyin
-[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Bozuk durum özel yakalamayın
-[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Yığın ayrıntılarını korumak için yeniden fırlatma.
+[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Bozuk durum özel durumlarını yakalamayın
+[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Yığın ayrıntılarını korumak için yeniden throw.
 [CA2201](ca2201-do-not-raise-reserved-exception-types.md) | Ayrılmış özel durum türlerini harekete geçirmeyin
 [CA2207](ca2207-initialize-value-type-static-fields-inline.md) | Değer türü statik alanları satır içi başlatın
 [CA2208](ca2208-instantiate-argument-exceptions-correctly.md) | Bağımsız değişken özel durumlarını doğru örnekleyin
@@ -135,20 +135,20 @@ CA2010 | PreserveSigAttribute ile işaretlenmiş yöntemler tarafından döndür
 [CA2216](ca2216-disposable-types-should-declare-finalizer.md) | Atılabilir türler sonlandırıcıyı bildirmelidir
 [CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | Sabit listelerini FlagsAttribute ile işaretlemeyin
 [CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | GetHashCode'u Eşittir'i geçersiz kılarak geçersiz kılın
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Finally yan tümceleri içinde özel durum harekete geçirmeyin
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Geçersiz kılma eşittir işlecini aşırı yüklerken equals
+[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Finally yan tümcelerinde özel durum yükseltmeyin
+[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Aşırı yükleme işlecinin eşittir ile eşittir geçersiz kıl
 [CA2225](ca2225-operator-overloads-have-named-alternates.md) | İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir
 [CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | İşleçler simetrik aşırı yüklemelere sahip olmalıdır
 [CA2227](ca2227-collection-properties-should-be-read-only.md) | Koleksiyon özellikleri salt okunur olmalıdır
 [CA2229](ca2229-implement-serialization-constructors.md) | Serileştirme oluşturucularını uygulayın
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Equals değeri geçersiz kılarak aşırı eşittir işlecini yazın
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Sistem dizeler yerine URI nesneleri geçirin.
+[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Eşittir değer türü geçersiz kılan aşırı yükleme işleci eşittir
+[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Dizeler yerine sistem URI nesnelerini geçirme
 [CA2235](ca2235-mark-all-non-serializable-fields.md) | Tüm serileştirilebilir olmayan alanları işaretleyin
-[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Seri hale getirilebilir ile işareti ISerializable türler
+[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | ISerializable türlerini seri hale getirilebilir ile işaretle
 [CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | Biçimlendirme metotlarına doğru bağımsız değişkenleri sağlayın
 [CA2242](ca2242-test-for-nan-correctly.md) | NaN için doğru test edin
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Öznitelik dize harfleri doğru çözümlenmelidir
-CA2244 | Dizinlenmiş öğeye başlatmalar yinelenen değil
+CA2244 | Dizini oluşturulmuş öğe başlatmaları yinelenmeyin
 [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın
 [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın
 [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun
@@ -171,49 +171,46 @@ CA2244 | Dizinlenmiş öğeye başlatmalar yinelenen değil
 [CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | XAML ekleme güvenlik açıkları için inceleme kodu
 [CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | DLL ekleme güvenlik açıkları için inceleme kodu
 [CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Normal ifade ekleme güvenlik açıkları için inceleme kodu
-CA3061 | URL'ye göre şema eklemeyin
-[CA3075](ca3075-insecure-dtd-processing.md) | XML işleme güvensiz DTD
-[CA3076](ca3076-insecure-xslt-script-execution.md) | Güvensiz XSLT betiği işleme.
-[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | API tasarımı ve XmlDocument XmlTextReader güvensiz işleme
-[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | İşareti fiili işleyicilerle Antiforgery belirtecini doğrula
+CA3061 | URL 'ye göre şema eklemeyin
+[CA3075](ca3075-insecure-dtd-processing.md) | XML 'de güvenli olmayan DTD işleme
+[CA3076](ca3076-insecure-xslt-script-execution.md) | Güvenli olmayan XSLT betiği işleme.
+[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | API tasarımında, XmlDocument 'da ve XmlTextReader 'da güvenli olmayan Işlem
+[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Fiil Işleyicilerini Validate Antiforgery belirteci Ile işaretle
 [CA5350](ca5350-do-not-use-weak-cryptographic-algorithms.md) | Zayıf Şifreleme Algoritmaları Kullanmayın
 [CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | Bozuk şifreleme algoritmaları kullanmayın
-CA5358 | Güvenli olmayan şifreleme modları kullanmayın
-CA5359 | Sertifika doğrulaması devre dışı bırakmayın
-CA5360 | Tehlikeli yöntemleri seri durumundan çıkarma içinde çağırmayın
-CA5361 | SChannel güçlü şifreleme kullanımını devre dışı bırakmayın
-CA5362 | Kendi kendine seri hale getirilebilir bir sınıf içinde Başvurmayın
-CA5363 | İstek doğrulamanın devre dışı bırakmayın
-CA5364 | Kullanım dışı güvenlik protokollerini kullanmayın
-CA5365 | HTTP üstbilgisi denetimi devre dışı bırakmayın
-CA5366 | XmlReader için veri kümesini okuma Xml kullanma
-CA5367 | İşaretçi alanlara sahip türler seri hale getirmek değil
-CA5368 | ViewStateUserKey sayfasından türetilmiş sınıflar için ayarlayın
-CA5369 | XmlReader Deserialize için kullanın.
-CA5370 | XmlReader okuyucu doğrulamak için kullanın.
-CA5371 | XmlReader şema okuma için kullanın.
-CA5372 | XmlReader XPathDocument için kullanın.
-CA5373 | Geçersiz anahtar türetme işlevi kullanmayın
-CA5374 | XslTransform kullanmayın
-CA5375 | Hesap paylaşılan erişim imzası kullanmayın
+CA5358 | Güvenli olmayan şifre modlarını kullanma
+CA5359 | Sertifika doğrulamasını devre dışı bırakma
+CA5360 | Seri durumdan çıkarma sırasında tehlikeli yöntemleri çağırmayın
+CA5361 | Sağlam şifreleme için SChannel kullanımını devre dışı bırakma
+CA5362 | Kendisini seri hale getirilebilir sınıfta başvurma
+CA5363 | Istek doğrulamasını devre dışı bırakma
+CA5364 | Kullanım dışı güvenlik protokollerini kullanma
+CA5365 | HTTP üstbilgi denetimini devre dışı bırakma
+CA5366 | DataSet Için XmlReader kullanarak XML okuma
+CA5367 | Işaretçi alanları Ile türleri Serileştirmeyin
+CA5368 | Sayfadan türetilmiş sınıflar Için ViewStateUserKey ayarla
+CA5369 | Seri durumdan çıkarma Için XmlReader kullanın
+CA5370 | Okuyucuyu doğrulamak Için XmlReader kullanın
+CA5371 | Şema okuma Için XmlReader kullanın
+CA5372 | XPathDocument Için XmlReader kullanın
+CA5373 | Kullanımdan kalkmış anahtar türetme işlevini kullanma
+CA5374 | XslTransform kullanma
+CA5375 | Hesap paylaşılan erişim Imzasını kullanma
 CA5376 | SharedAccessProtocol HttpsOnly kullanın
-CA5377 | Kapsayıcı düzeyinde erişim ilkesi kullanın
-CA5378 | ServicePointManagerSecurityProtocols devre dışı bırakmayın
-CA5379 | Zayıf anahtar türetme işlevi algoritması kullanmayın
-CA9999 | Çözümleyici sürüm uyuşmazlığı
+CA5377 | Kapsayıcı düzeyinde erişim Ilkesi kullan
+CA5378 | ServicePointManagerSecurityProtocols'u Devre Dışı Bırakma
+CA5379 | Zayıf anahtar türetme Işlevi algoritması kullanmayın
+CA9999 | Çözümleyici sürümü uyumsuzluğu
 
-> [!NOTE]
-> Kuralları CA1052 ve özgün FxCop uygulamasından CA1053 tek bir kural, CA1052, FxCop Çözümleyicileri içinde birleştirilir.
+## <a name="unported-rules"></a>Bağlantı edilmemiş kurallar
 
-## <a name="unported-rules"></a>Unported kuralları
+[FxCop çözümleyicilerine](install-fxcop-analyzers.md) eklenmemiş kuralların kümesi, henüz bir [yandan hala bir](#rules-that-may-be-ported)yandan da kaldırılmayan ve bu öğelerden çıkılmamış olan kurallardan [oluşur.](#deprecated-rules)
 
-İçin unity'nin edilmemiş bir kural kümesinin [FxCop Çözümleyicileri](install-fxcop-analyzers.md) henüz yapmadıysanız, ancak hala kuralları içeren [unity'nin](#rules-that-may-be-ported)hem de kullanım dışıdır ve [taşınmasınıolmayacaktır](#deprecated-rules).
+### <a name="rules-that-may-be-ported"></a>Bağlantı halinde olabilecek kurallar
 
-### <a name="rules-that-may-be-ported"></a>Unity'nin kuralları
+Aşağıdaki FxCop statik kod analizi kuralları henüz çözümleyiciler olarak uygulanmadı, ancak yine de olabilir. Bunun nedeni, bir engelleme teknik nedeni veya kuralın daha düşük öncelikli olması olabilir. Her kuralın taşıma durumu hakkında daha fazla bilgi için, **izleme sorunu** sütunundaki bağlantıya tıklayın.
 
-Aşağıdaki FxCop statik kod analizi kuralları Çözümleyicileri henüz uygulamadığınız, ancak yine de olabilir. Bu bir engelleyen teknik neden nedeniyle ya da yalnızca kural daha düşük bir öncelik olduğundan emin olabilir. Her kural taşıma durumu hakkında daha fazla bilgi için bağlantıya tıklayın **sorun izleme** sütun.
-
-Kural Kimliği | Sorun izleme
+Kural Kimliği | Sorun izleniyor
 --- | ---
 [CA1002](ca1002-do-not-expose-generic-lists.md) | [https://github.com/dotnet/roslyn-analyzers/issues/369](https://github.com/dotnet/roslyn-analyzers/issues/369)
 [CA1004](ca1004-generic-methods-should-provide-type-parameter.md) | [https://github.com/dotnet/roslyn-analyzers/issues/370](https://github.com/dotnet/roslyn-analyzers/issues/370)
@@ -272,9 +269,9 @@ Kural Kimliği | Sorun izleme
 [CA2239](ca2239-provide-deserialization-methods-for-optional-fields.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
 [CA2240](ca2240-implement-iserializable-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
 
-### <a name="deprecated-rules"></a>Kullanım dışı bırakılan kuralları
+### <a name="deprecated-rules"></a>Kullanım dışı kurallar
 
-Aşağıdaki FxCop statik kod analizi kuralları kullanım dışıdır ve çözümleyiciler uygulanan olmaz. Daha fazla bilgi için kural Kimliğine göre arama yapabilirsiniz (örneğin, **CA1009**) üzerinde [roslyn Çözümleyicileri GitHub sorunlar sayfasında](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Aşağıdaki FxCop statik kod analizi kuralları kullanım dışıdır ve çözümleyiciler olarak uygulanmaz. Daha fazla bilgi için, [Roslyn-çözümleyiciler GitHub sorunları sayfasında](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)kural kimliğine göre arama yapabilirsiniz (örneğin, **CA1009**).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
@@ -307,7 +304,7 @@ Aşağıdaki FxCop statik kod analizi kuralları kullanım dışıdır ve çöz�
 - [CA2112](ca2112-secured-types-should-not-expose-fields.md)
 - [CA2114](ca2114-method-security-should-be-a-superset-of-type.md)
 - [CA2115](ca2115-call-gc-keepalive-when-using-native-resources.md)
-- [CA2116](ca2116-aptca-methods-should-only-call-aptca-methods.md)
+- [CA2116Ç](ca2116-aptca-methods-should-only-call-aptca-methods.md)
 - [CA2117](ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 - [CA2118](ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)
 - [CA2120](ca2120-secure-serialization-constructors.md)
@@ -349,4 +346,4 @@ Aşağıdaki FxCop statik kod analizi kuralları kullanım dışıdır ve çöz�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft.CodeAnalysis.FxCopAnalyzers kuralları](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
+- [Microsoft. CodeAnalysis. Fxcopçözümleyiciler kuralları](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

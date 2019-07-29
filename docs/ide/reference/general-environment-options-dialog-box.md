@@ -1,106 +1,101 @@
 ---
 title: Genel, Ortam, Seçenekler İletişim Kutusu
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790141"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605448"
 ---
-# <a name="options-dialog-box-environment--general"></a>Seçenekler iletişim kutusu: Ortam \> genel
+# <a name="options-dialog-box-environment--general"></a>Seçenekler iletişim kutusu: Genel \> ortam
 
-Renk temaları, durum çubuğu ayarları ve tümleşik geliştirme ortamı (IDE) için diğer seçenekler arasında dosya uzantısı ilişkilendirmelerini değiştirmek için bu sayfayı kullanın. Erişebileceğiniz **seçenekleri** iletişim kutusunu açarak **Araçları** menüsünde, seçme **seçenekleri**açarak **ortam** klasörünü ve ardından seçme **genel** sayfası. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** onay kutusuna **seçenekleri** iletişim kutusu.
+Bu sayfayı, tümleşik geliştirme ortamı (IDE) için diğer seçenekler arasında renk temalarını, durum çubuğu ayarlarını ve dosya uzantısı ilişkilendirmelerini değiştirmek için kullanın. **Seçenekler** Iletişim kutusuna **Araçlar** menüsünü açıp **Seçenekler**' i seçip, **ortam** klasörünü açıp **genel** sayfasını seçerek erişebilirsiniz. Bu sayfa listede görünmezse, **Seçenekler** iletişim kutusundaki **tüm ayarları göster** onay kutusunu seçin.
 
 ## <a name="visual-experience"></a>Görsel deneyim
 
 **Renk teması**
 
-Seçin **mavi**, **ışık**, **koyu**, veya **mavi (ekstra kontrast)** IDE renk teması.
+IDE için **mavi**, **hafif**, **koyu**veya **mavi (ekstra kontrast)** renk temasını seçin.
 
-Ek önceden tanımlı Temalar yükleyebilir ve özel temalar indirip yükleyerek oluşturma **Visual Studio Color Theme Editor** gelen [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları görünür **renk teması** liste kutusu.
+[Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) **Visual Studio Color teması düzenleyicisini** indirip yükleyerek, önceden tanımlanmış ek temalar yükleyebilir ve özel temalar oluşturabilirsiniz. Bu aracı yükledikten sonra, **renk teması** liste kutusunda ek renk temaları görüntülenir.
 
-**İlk harfler büyük menü çubuğuna stilini Uygula**
+**Menü çubuğuna başlık durumu Stili Uygula**
 
-Menüleri, ilk harfler büyük stilini varsayılan olarak kullanın. Tüm büyük harfli stil oluşturma yerine kullanmak için bu seçeneği temizleyin.
+Menüler, varsayılan olarak başlık durumu stili kullanır. Bunun yerine tüm büyük harf stillerini kullanmak için bu seçeneğin işaretini kaldırın.
 
 ::: moniker range=">=vs-2019"
 
-**İşleme farklı piksel densities ekranlar için en iyi duruma getirme (yeniden başlatma gerektirir)**
+**Farklı pikseller içeren ekranlar için işlemeyi iyileştirin (yeniden başlatma gerektirir)**
 
-Bu seçeneği etkinleştirir veya İzleyici başına nokta / inç (DPI) tanıma devre dışı bırakır (veya *PMA*). Visual Studio kullanıcı arabirimi, PMA etkinleştirildiğinde, canlı bir izleyici görünen ölçek faktörü ve DPI yapılandırma, birden fazla monitöre dahil olmak üzere görünür. Windows ihtiyacınız PMA etkinleştirmek için 10 Nisan 2018 güncelleştirmesi veya üstü ve .NET Framework 4,8 veya üzeri. (Bu iki Önkoşullar karşılanmadı varsa bu seçeneği gri renkte görünür.)
+Bu seçenek, inç başına nokta (DPI) tanıma (veya *PMA*) için bir veya devre dışı bırakır. PMA etkinleştirildiğinde, Visual Studio Kullanıcı arabirimi, birden çok monitöre dahil olmak üzere herhangi bir izleyici görüntü ölçek faktörü ve DPı yapılandırmasında net görünür. PMA 'yı etkinleştirmek için Windows 10 Nisan 2018 güncelleştirmesi veya üzeri ve .NET Framework 4,8 veya üzeri bir sürüme sahip olmanız gerekir. (Bu iki önkoşul karşılanmazsa Bu seçenek gri renkte görünür.)
 
 > [!TIP]
-> - Windows 10 bildiren bir ayar olan **izin Windows deneyin bulanık olmadığınız için uygulamaları düzeltmek**. Bu Windows ayarı kapatma **üzerinde** varsa göz ardı edilebilir etkisi **farklı piksel densities ekranlar için Optimize işleme** teslim seçeneği.
-> - Windows 10 de içeren bir **Program Uyumluluk sorun gidericisi**. Bu sorun gidericisini kullanarak Visual Studio görünümünü gidermeyi denemeye önerilmemektedir.
+> - Windows 10 ' **un, bulanık olmadıkları Için Windows 'un uygulamaları düzeltmesine Izin verdiğini**belirten bir ayarı vardır. Farklı piksel denikler seçeneği işaretli **ekranlarda en iyileştirme için Işlemeyi en uygun hale getirmeniz** durumunda, bu Windows ayarı **Açık** bir etkiye sahip olur.
+> - Windows 10 ' da bir **Program uyumluluğu sorun giderici**de bulunur. Bu sorun gidericiyi kullanarak Visual Studio 'nun görünümünü gidermeye çalışmamız önerilmez.
 
 ::: moniker-end
 
-**İstemci performansına dayalı görsel deneyimi otomatik olarak ayarla**
+**İstemci performansına göre görsel deneyimi otomatik olarak ayarla**
 
-Görsel deneyimi için düzeltme Visual Studio otomatik olarak ayarlar ya da düzeltme açık olarak belirtir. Düz renkler için bu ayarı renkleri görüntülenmesini gradyanlar değişebilir veya menüleri veya açılır pencereleri içinde animasyon kullanımını kısıtlayabilirsiniz.
+Visual Studio 'Nun ayarlamayı otomatik olarak ayarlama veya ayarlamayı açık olarak ayarlama gibi belirtir. Bu ayarlama, renklerin degradeden düz renklere görüntüsünü değiştirebilir veya menülerde veya açılan pencerelerin animasyonların kullanımını kısıtlayabilir.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 bildiren bir ayar olan **izin Windows deneyin bulanık olmadığınız için uygulamaları düzeltmek**. Bu ayarın kapatılması **üzerinde** Visual Studio monitör bulanık görünüp görünmeyeceğini önerilir. İçin yükseltmeyi düşünün [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), hangi önemli ölçüde geliştirildi görünen anlaşılabilir olması adına, bir izleyici başına nokta / inç kullanan bir uygulama olduğundan.
+> Windows 10 ' **un, bulanık olmadıkları Için Windows 'un uygulamaları düzeltmesine Izin verdiğini**belirten bir ayarı vardır. Visual Studio, monitörünüzde bulanık görünürse, **Bu ayarın etkinleştirilmesi** önerilir. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)' a yükseltmeyi göz önünde bulundurun. Bu, büyük ölçüde geliştirilmiş görüntüleme netliği olan, her/inç bir uygulama için ekran başına nokta olarak geliştirilmiştir.
 
 ::: moniker-end
 
 **Zengin istemci deneyimini etkinleştir**
 
-Visual Studio, gradyanlar ve animasyonlar içeren tam görsel deneyimi sağlar. Bu özellikler, bu gibi durumlarda kötü performans olabileceği için bu seçeneği kullanırken Uzak Masaüstü bağlantılarında veya eski grafik bağdaştırıcıları temizleyin. Bu seçenek yalnızca, temizlediğinizde kullanılabilir **istemcide dayalı görsel deneyimi otomatik olarak ayarla** seçeneği.
+Degradeler ve animasyonlar dahil olmak üzere Visual Studio 'nun tam görsel deneyimini sunar. Uzak Masaüstü bağlantıları veya daha eski grafik bağdaştırıcılar kullanılırken bu seçeneği temizleyin çünkü bu özellikler bu durumlarda düşük performansa sahip olabilir. Bu seçenek yalnızca, **istemci seçeneğine göre görsel deneyimi otomatik olarak ayarla** seçeneğini belirlediğinizde kullanılabilir.
 
-**Donanım grafik ivmesi kullan**
+**Kullanılabiliyorsa, donanım grafik hızlandırmasını kullanın**
 
-Yazılım hızlandırma yerine varsa donanım grafik hızlandırması kullanır.
+Yazılım hızlandırma yerine, varsa, donanım grafik hızlandırmasını kullanır.
 
 ## <a name="other"></a>Diğer
 
-**Pencere menüsünde gösterilecek öğeler**
+**Pencere menüsünde gösterilecek Öğeler**
 
-Windows listesinde görünen pencerelerinin sayısını özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10'dur.
+**Pencere** menüsünün Windows listesinde görüntülenen pencerelerin sayısını özelleştirir. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10 ' dur.
 
-**Son kullanılan listesinde gösterilen öğeler**
+**Son kullanılan listelerde gösterilen öğeler**
 
-En son kullanılan projeler ve görünen dosyaları sayısı özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10'dur. Alma son kullanılan projeler ve dosyalar için kolay bir yolu budur.
+**Dosya** menüsünde görünen en son kullanılan proje ve dosya sayısını özelleştirir. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10 ' dur. Bu, son kullanılan projeleri ve dosyaları almanın kolay bir yoludur.
 
 **Durum çubuğunu göster**
 
-Durum çubuğu görüntüler. Durum çubuğu, IDE pencerenin alt kısmında bulunur ve devam eden işlemler ilerleme durumu hakkında bilgileri görüntüler.
+Durum çubuğunu görüntüler. Durum çubuğu IDE penceresinin alt kısmında bulunur ve devam eden işlemlerin ilerleme durumuyla ilgili bilgileri görüntüler.
 
-**Kapat düğmesi sadece etkin araç penceresini etkiler**
+**Kapat düğmesi yalnızca etkin araç penceresini etkiler**
 
-Belirtir **Kapat** düğmesine tıklandığında, odaklanmış araç penceresi yalnızca kapalı ve tüm yerleşik kümesindeki aracı Windows. Varsayılan olarak, bu seçenek seçilidir.
+**Kapat** düğmesine tıklandığında, yalnızca odağı olan araç penceresinin kapalı olduğunu ve yerleşik küme içindeki araç pencerelerinin tümünü değil ' i belirtir. Varsayılan olarak, bu seçenek seçilidir.
 
-**Otomatik Gizle düğmesi sadece etkin araç penceresini etkiler**
+**Otomatik Gizle düğmesi yalnızca etkin araç penceresini etkiler**
 
-Belirtir **Otomatik Gizle** düğmesine tıklandığında, odaklanmış araç penceresi otomatik olarak ve değil gizli tüm yerleştirilmiş kümesindeki aracı pencereleri. Bu seçenek varsayılan olarak, seçili değil.
+**Otomatik Gizle** düğmesine tıklandığında, yalnızca odağı olan araç penceresinin, yerleşik küme içindeki araç pencerelerinin hepsi değil otomatik olarak gizlendiğini belirtir. Varsayılan olarak, bu seçenek seçili değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)
 - [Pencere düzenlerini özelleştirme](../../ide/customizing-window-layouts-in-visual-studio.md)
