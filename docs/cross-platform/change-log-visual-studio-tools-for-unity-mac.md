@@ -10,94 +10,190 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821508"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661813"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Değişiklik Günlüğü (Unity için Visual Studio Araçları, Mac)
 
 Değişiklik günlüğü Unity için Visual Studio Araçları.
 
-## <a name="2020"></a>2.0.2.0
+## <a name="2200"></a>2.2.0.0
 
-2 Nisan 2019 yayımlanan
+Yayın tarihi, 25 Temmuz 2019
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Değerlendirme:**
+
+  - IntPtr türleriyle düzeltilen İnceleme.
+
+- **Hata Ayıklayıcı:**
+
+  - Catch noktaları ve işlev kesme noktalarının sabit işlenmesi.
+
+## <a name="2130"></a>2.1.3.0
+
+Yayın tarihi, 9 Temmuz 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Hata Ayıklayıcı:**
+
+  - Özel durumların yakalamak için destek eklendi.
+
+  - MDS Protokolü 2,51 için destek eklendi.
+
+- **Tümleştirme:**
+
+  - Asmdef dosyaları için destek eklendi.
+
+  - Şablondan bir dosya eklendiğinde yeniden adlandırma moduna geçin (Unity Düzenleyicisi davranışını taklit etmek için).
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+  - Unity oynatıcılarla iletişim kurulurken hatalı biçimlendirilmiş iletilerin işlenmesi düzeltildi.
+
+- **Değerlendirme:**
+
+  - İfadelerde ad alanlarını sabit olarak işleme.
+
+## <a name="2120"></a>2.1.2.0
+
+Yayın 2 Temmuz 2019
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Değerlendirme:**
+
+  - Ayrıştırılamayan ifadelerle düzeltilen hata raporlaması.
+
+## <a name="2110"></a>2.1.1.0
+
+Yayın tarihi, 27 Haziran 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - Unity'nın varlık veritabanı'üzerinde otomatik olarak yenilemek için destek eklendi kaydedin. Bu, varsayılan olarak etkindir ve öyle Unity tarafında, Visual Studio'da bir kod kaydedilirken tetikler. Üzerinde Unity\Refresh Unity'nın AssetDatabase kaydetmek için bu özelliği Tools\Options\Tools devre dışı bırakabilirsiniz.
+  - Monodavranış API 'SI 2019,1 olarak güncelleştirildi.
 
-  - Çevrimdışı belgeleri için tercih edilen unity yükleme ayarlama desteği eklendi.
+### <a name="bug-fixes"></a>Hata düzeltmeleri
 
-  - Yeni bir düzenleyici ek bağlam menüsü.
+- **Tümleştirme:**
+
+  - Sabit Unity Proje Gezgini performansı.
+
+  - Hafif derleme etkinleştirildiğinde, çıktının düzeltilme uyarıları ve hataları düzeltildi.
+
+  - Sabit basit derleme performansı.
+
+## <a name="2100"></a>2.1.0.0
+
+Yayın tarihi 20 Haziran 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - IntelliSense hatalarının ve uyarılarının kullanımı açısından Unity projelerinin tam derlemesini devre dışı bıraktı. Aslında Unity, dahili olarak hangi Unity 'nin yaptığını temsil eden sınıf kitaplığı projeleri içeren bir Visual Studio çözümü oluşturur. Bu şekilde, Visual Studio 'daki derlemenin sonucu, derleme işlem hattı kapalıyken Unity tarafından hiçbir şekilde kullanılmaz veya alınmaz. Visual Studio 'da oluşturma işlemi yalnızca hiçbir şey için kaynakları tüketiyor. Kendisine bağlı araçlara veya kuruluma sahip olduğunuz için tam bir yapıya ihtiyacınız varsa, bu iyileştirmeyi devre dışı bırakabilirsiniz (Unity için ayarlar/araçlar/projelerin tam derlemesini devre dışı bırak).
+  
+  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler (Paketler klasöründe manifest. JSON kullanılarak) ve yerel paketler (paketler klasörüne katıştırılmış) görünür.
+
+## <a name="2021"></a>2.0.2.1
+
+Yayımlanma tarihi 30 Mayıs 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - Unity yürütme hedefleri için özel simge eklendi.
+
+## <a name="2020"></a>2.0.2.0
+
+Yayın 2 Nisan 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - Kayıt sırasında Unity 'nin varlık veritabanının otomatik olarak yenilenmesi için destek eklendi. Bu, varsayılan olarak etkindir ve Visual Studio 'da bir betiği kaydederken Unity tarafında yeniden derleme tetikleyecektir. Kayıt sırasında Unity 'nin Assetveritabanını yenilemek için Tools\Options\Tools içinde bu özelliği devre dışı bırakabilirsiniz.
+
+  - Çevrimdışı belgeler için tercih edilen Unity yüklemesinin ayarlanmasına yönelik destek eklendi.
+
+  - Yeni düzenleyici için bağlam menüsü eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Hata Ayıklayıcı:**
 
-  - Derleme filtreleme ve çerçeve İnceleme boş çerçeveleri ile düzeltildi.
+  - Boş çerçevelerle sabit derleme filtrelemesi ve çerçeve incelemesi.
 
 ## <a name="2011"></a>2.0.1.1
- 26 Mart 2019 yayımlanan
+ 
+ Yayın tarihi 26 Mart 2019
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Geçici olarak olun Mono varsayılan ve yalnızca kullanılabilir hata ayıklayıcı bu belirli sürümü için.
+  - Yalnızca bu çok özel yayın için mono varsayılan ve yalnızca kullanılabilir hata ayıklayıcı 'yı geçici olarak yapın.
 
 ## <a name="2006"></a>2.0.0.6
 
-26 Mart 2019 yayımlanan
+Yayın tarihi 26 Mart 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - "Eklemek için Unity ve Yürüt" için destek eklendi.
+  - "Unity 'ye Ekle ve Yürüt" desteği eklendi.
 
 ## <a name="2005"></a>2.0.0.5
 
-20 Mart 2019 yayımlanan
+Yayımlanma tarihi, 20 Mart 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Proje oluşturma:**
 
-  - Dış özellikler, çözüm dosyasını işlerken korur.
+  - Çözüm dosyasını işlerken dış özellikleri koruyun.
 
 ## <a name="2004"></a>2.0.0.4
 
-5 Mart 2019 yayımlanan
+Yayımlanma tarihi, 5 Mart 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - API ScriptableObject güncelleştirildi.
+  - ScriptableObject API 'SI güncelleştirildi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Şablonlardan kaldırılan ad alanları.
+  - Ad alanları şablonlardan kaldırıldı.
 
 ## <a name="2003"></a>2.0.0.3
- 5 Mart 2019 yayımlanan
+ 
+ Yayımlanma tarihi, 5 Mart 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Proje oluşturma:**
 
-  - Genel ve seri hale getirilmiş alanları artık uyarılar neden olur. Biz otomatik oluşturulan bu iletiler Unity projeleri CS0649 ve IDE0051 Derleyici uyarılarını bastırılmış.
+  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde CS0649 ve IDE0051 derleyici uyarılarını otomatik olarak gizliyoruz.
 
 - **Tümleştirme:**
 
-  - Daha fazla bir Unity işlem çalışıyorsa belirli bir örneğine eklemek isteyebilir.
+  - Bir Unity işlemi çalışıyorsa, belirli bir örneğe İliştirilmek için uyar.
 
 - **Değerlendirme:**
 
@@ -107,58 +203,58 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 - **Hata Ayıklayıcı:**
 
-  - Özel öznitelik adlandırılmış bağımsız değişkenler üzerinde eski protokol sürümleri kullanılırken okuma düzeltildi.
+  - Eski protokol sürümleri kullanılırken adlandırılmış bağımsız değişkenlerde özel öznitelik okuma düzeltildi.
 
 ## <a name="2002"></a>2.0.0.2
 
-4 Şubat 2019 yayımlanan
+Yayımlanma tarihi 4 Şubat 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - MonoBehaviour API güncelleştirildi.
+  - Monodavranış API 'SI güncelleştirildi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Hata Ayıklayıcı:**
 
-  - Hata ayıklayıcıda basit değerler ayarlama düzeltildi.
+  - Hata ayıklayıcıda temel değerler ayarı düzeltildi.
 
 ## <a name="2001"></a>2.0.0.1
 
-Yayın Tarihi: 4 Aralık 2018
+Yayın tarihi 4 Aralık 2018
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Yükleme paketini kendi kendine kapsama düzeltildi.
+  - Sabit yükleme paketi kendi kendine kapsama.
 
 ## <a name="2000"></a>2.0.0.0
- Yayın Tarihi: 4 Aralık 2018
+ Yayın tarihi 4 Aralık 2018
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Hata Ayıklayıcı:**
 
-  - Unity hata ayıklayıcı Mac üzerinde aynı çekirdek Unity Hata Ayıklayıcı'dan Windows değiştirilecektir.
+  - Mac üzerindeki Unity hata ayıklayıcı, Windows 'daki aynı Core Unity hata ayıklayıcısıyla değiştirildi.
 
-  - Roslyn ile değiştiriliyor NRefactory ifade değerlendirmesi için değiştirildi.
+  - İfade değerlendirmesi için NRefactory 'ın Roslyn tarafından değiştirildiği yer.
 
-  - İşaretçiler için destek eklemiştir: başvuru, atama ve işaretçi aritmetiğini (Unity 2018.2 + hem yeni çalışma zamanının bunun için gerekli).
+  - İşaretçiler için destek eklendi: başvuru, atama ve işaretçi aritmetiği (Bu, hem Unity 2018.2 + hem de yeni çalışma zamanı için gereklidir).
 
-  - Dizi işaretçisi görünümünü (c++ benzer) için destek eklendi. Bir işaretçi ifadesi olması, ardından virgül ve görmek istediğiniz öğe sayısı.
+  - Dizi işaretçisi görünümü (içinde C++olduğu gibi) için destek eklendi. Bir işaretçi ifadesi alın, sonra da bir virgül ve görmek istediğiniz öğe sayısını ekleyin.
 
-  - Zaman uyumsuz yapıları için destek eklendi.
+  - Zaman uyumsuz yapılar için destek eklendi.
 
-  - Sözde değişkenler (özel durum ve nesne tanımlayıcılar) için destek eklendi.
+  - Sözde değişkenler (özel durum ve nesne tanımlayıcıları) için destek eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Hata Ayıklayıcı:**
 
-  - Hatalı biçimlendirilmiş ya da desteklenmeyen ifadeler ile sabit ifade değerlendirmesi.
+  - Hatalı biçimlendirilmiş veya desteklenmeyen ifadelerle ifade değerlendirmesi düzeltildi.
 
 ## <a name="1700"></a>1.7.0.0
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855156"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661831"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Sembol ve dosya adları için arama seçeneklerini belirtir.
@@ -42,21 +42,21 @@ enum NameSearchOptions {
 };
 ```
 
-## <a name="elements"></a>Öğeleri
-`nsNone` Hiçbir seçenek belirtilmedi.
+## <a name="elements"></a>Öğeler
+`nsNone`Hiçbir seçenek belirtilmedi.
 
-`nsfCaseSensitive` Büyük/küçük harfe adı eşleştirmesi uygular.
+`nsfCaseSensitive`Büyük/küçük harfe duyarlı bir ad eşleşmesi uygular.
 
-`nsfCaseInsensitive` Büyük küçük harf duyarsız adı eşleştirmesi uygular.
+`nsfCaseInsensitive`Büyük/küçük harf duyarsız bir ad eşleşmesi uygular.
 
-`nsfFNameExt` Adları, yollar olarak değerlendirir ve DosyaAdı.uzn adı eşleştirmesi uygular.
+`nsfFNameExt`Adları yollar olarak değerlendirir ve bir FileName. ext adı eşleşmesi uygular.
 
-`nsfRegularExpression` Joker karakter olarak yıldız işareti (*) ve soru işareti (?) kullanarak bir büyük/küçük harfe adı eşleştirmesi uygular.
+`nsfRegularExpression`Joker karakter olarak yıldız (*) ve soru işareti (?) kullanarak büyük/küçük harfe duyarlı bir ad eşleşmesi uygular. (Diğer yaygın normal ifade karakterleri desteklenmez.)
 
-`nsfUndecoratedName` Hem tamamlanmamış ve düzenlenmiş adları sembolleri geçerlidir.
+`nsfUndecoratedName`Yalnızca, hem düzenlenmiş hem de düzenlenmiş adlara sahip semboller için geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
-Bu numaralandırma değerleri için aşağıdaki yöntemlerden geçirilir:
+Bu Numaralandırmadaki değerler aşağıdaki yöntemlere geçirilir:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -65,7 +65,7 @@ Bu numaralandırma değerleri için aşağıdaki yöntemlerden geçirilir:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Gereksinimler
-Üstbilgi: dia2.h
+Üstbilgi: dia2. h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

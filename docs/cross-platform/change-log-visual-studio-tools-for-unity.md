@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,208 +10,232 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821343"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661953"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 
 Değişiklik günlüğü Unity için Visual Studio Araçları.
 
-## <a name="4110"></a>4.1.1.0
+## <a name="4201"></a>4.2.0.1
 
-24 Mayıs 2019 yayımlanan
+Yayın tarihi, 24 Temmuz 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - MonoBehaviour API 2019.1 için güncelleştirildi.
+  - Unity Proje Gezgini 'nden herhangi bir tür dosya oluşturmak için yeni bir seçenek eklendi.
+  
+  - Unity projeleri için hızlı derlemeler kullanırken tanılama önbelleğe almayı geliştirme.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Basit yapı etkinleştirildiğinde çıkış, uyarı ve hata raporlama düzeltildi.
+  - Dosya Uzantısı iyi bilinen herhangi bir düzenleyici tarafından işlenmediğinde bir sorun düzeltildi.
 
-  - Sabit basit performans oluşturun.
+  - Unity proje Gezgininde özel uzantılar için sabit destek.
+
+  - Ana iletişim kutusunun dışında sabit kaydetme ayarları.
+
+  - Eski Microsoft. VisualStudio. MPF bağımlılığı kaldırıldı.
+
+## <a name="4110"></a>4.1.1.0
+
+Yayımlanma tarihi 24 Mayıs 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - Monodavranış API 'SI 2019,1 olarak güncelleştirildi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+  - Hafif derleme etkinleştirildiğinde, çıktının düzeltilme uyarıları ve hataları düzeltildi.
+
+  - Sabit basit derleme performansı.
 
 ## <a name="4100"></a>4.1.0.0
 
-21 Mayıs 2019 yayımlanan
+Yayımlanma tarihi 21 Mayıs 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - Yeni batch projeleri daha hızlı bir şekilde yeniden yüklemek için API desteği eklendi.
+  - Projeleri daha hızlı yeniden yüklemek için yeni Batch API 'SI için destek eklendi.
 
-  - IntelliSense hataları ve Uyarıları kullanarak yerine Unity projeleri için tam derleme devre dışı. Gerçekten de Unity Unity dahili olarak yaptığı temsil eden sınıf kitaplığı projeleri ile bir Visual Studio çözümü oluşturur. Başka bir deyişle, Visual Studio'da derleme sonucunu hiçbir zaman kullanılan veya kendi derleme işlem hattı kapalı olarak Unity tarafından teslim alındı. Visual Studio yapı kaynakları için hiçbir şey yalnızca tüketiyor. Sahip olduğunuz araçları veya bağımlı bir kurulum için bir tam derleme gerekiyorsa, bu en iyi duruma getirme (Araçlar/Seçenekler/için araçları Unity/devre dışı bırak projelerin tam derleme) devre dışı bırakabilirsiniz.
+  - IntelliSense hatalarının ve uyarılarının kullanımı açısından Unity projelerinin tam derlemesini devre dışı bıraktı. Aslında Unity, dahili olarak hangi Unity 'nin yaptığını temsil eden sınıf kitaplığı projeleri içeren bir Visual Studio çözümü oluşturur. Bu şekilde, Visual Studio 'daki derlemenin sonucu, derleme işlem hattı kapalıyken Unity tarafından hiçbir şekilde kullanılmaz veya alınmaz. Visual Studio 'da oluşturma işlemi yalnızca hiçbir şey için kaynakları tüketiyor. Kendisine bağlı araçlara veya kuruluma sahip olduğunuz için tam bir yapıya ihtiyacınız varsa, bu iyileştirmeyi devre dışı bırakabilirsiniz (Unity için Araçlar/Seçenekler/araçlar/projelerin tam derlemesini devre dışı bırak).
 
-  - Unity proje ne zaman yüklendi Unity Proje Gezgini (UPE) otomatik olarak gösterir. Çözüm Gezgini yanındaki UPE yerleştirilir.
+  - Unity projesi yüklendiğinde Unity Proje Gezgini 'ni (UPE) otomatik olarak gösterin. UPE Çözüm Gezgini yanına yerleştirilir.
 
-  - Unity ile proje adı ayıklama mekanizması güncelleştirilmiş 2019.x.
+  - Unity 2019. x ile güncelleştirilmiş proje adı ayıklama mekanizması.
 
-  - Unity UPE paketleri için destek eklendi. Paketleri başvurulan yalnızca (bazıları manifest.json içinde kullanarak ```Packages``` klasör) ve yerel paketleri (katıştırılmış ```Packages``` klasör) görülebilir.
+  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler ( ```Packages``` klasöründe manifest. JSON kullanılarak) ve yerel paketler ( ```Packages``` klasöre katıştırılmış) görünür.
 
 - **Proje oluşturma:**
 
-  - Dış özellikler, çözüm dosyasını işlerken korur.
+  - Çözüm dosyasını işlerken dış özellikleri koruyun.
 
 - **Değerlendirme:**
 
-  - Diğer adla nitelenmiş adlar (yalnızca şimdilik genel ad) için destek eklendi. Bu nedenle ifade değerlendiricisi artık form global::namespace.type kullanarak türlerini kabul ediyor.
+  - Diğer ad nitelenmiş adlar için destek eklendi (şimdilik yalnızca genel ad alanı). Bu nedenle, ifade değerlendirici artık genel:: Namespace. Type biçimini kullanarak türleri kabul ediyor.
 
-  - İçin destek eklendi ```pointer[index]``` işaretçisine anlamsal olarak eşdeğer olan form başvuru ```*(pointer+index)``` formu.
+  - İşaretçi başvuru ```pointer[index]``` ```*(pointer+index)``` formuyla anlam ile aynı olan form için destek eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - İle Microsoft.VisualStudio.MPF bağımlılık sorunlar düzeltildi.
+  - Microsoft. VisualStudio. MPF ile ilgili sabitlenmiş bağımlılık sorunları.
 
-  - Sabit UWP player attach, tüm proje yüklendi.
+  - Yüklü bir proje olmadan sabit UWP oynatıcı iliştirme.
 
-  - Visual Studio henüz bağlanmamış olduğunda otomatik kıymet veritabanı yenileme.
+  - Visual Studio henüz iliştirilmediğinde düzeltilen otomatik varlık veritabanı yenilemesi.
 
-  - Onay kutuları ve etiketler ile tema sorunlar düzeltildi.
+  - Etiketler ve onay kutuları ile ilgili sabit Tema sorunları.
 
 - **Hata Ayıklayıcı:**
 
-  - Statik oluşturucular ile Adımlama düzeltildi.
+  - Statik oluşturucularla düzeltilen Adımlama.
 
 ## <a name="4005"></a>4.0.0.5
 
-27 Şubat 2019 yayımlanan
+Yayın tarihi, 27 Şubat 2019
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Kurulum paketini sabit Visual Studio sürümü algılama.
+  - Kurulum paketiyle Visual Studio sürüm algılaması düzeltildi.
 
-  - Kullanılmayan derlemeleri Kurulum paketten kaldırılamıyor.
+  - Kullanılmayan derlemeler kurulum paketinden kaldırıldı.
 
 ## <a name="4004"></a>4.0.0.4
 
-13 Şubat 2019 yayımlanan
+Yayın tarihi, 13 Şubat 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - Unity düzgün bir şekilde algılamak için destek eklendi, yükleme sırasında işler ve daha iyi dosya kilitleri işlemek Kurulum altyapısındaki izin verin.
+  - Yükleme sırasında Unity süreçlerini düzgün bir şekilde algılamak ve kurulum altyapısının dosya kilitlerini daha iyi işlemesini sağlamak için destek eklendi.
 
-  - API ScriptableObject güncelleştirildi.
+  - ScriptableObject API 'SI güncelleştirildi.
 
 ## <a name="4003"></a>4.0.0.3
 
-31 Ocak 2019 yayımlanan
+Yayın tarihi 31 Ocak 2019
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Proje oluşturma:**
 
-  - Genel ve seri hale getirilmiş alanları artık uyarılar neden olur. Biz otomatik oluşturulan bu iletiler Unity projeleri CS0649 ve IDE0051 Derleyici uyarılarını bastırılmış.
+  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde CS0649 ve IDE0051 derleyici uyarılarını otomatik olarak gizliyoruz.
 
 - **Tümleştirme:**
 
-  - (Windows artık yeniden boyutlandırılabilir, Tekdüzen kenar boşlukları kullanan ve bir yeniden boyutlandırma tutamacı görüntüleme) Unity Düzenleyicisi ve oyuncu örnekleri görüntülemek için kullanıcı deneyimi geliştirildi. Unity Düzenleyicisi için işlem kimliği bilgiler eklendi.
+  - Unity Düzenleyicisi ve oynatıcı örneklerini görüntülemek için Kullanıcı deneyimi geliştirildi (Windows artık yeniden boyutlandırılabilir, tek biçimli kenar boşlukları kullanıyor ve bir yeniden boyutlandırma tutamacı görüntülüyor). Unity düzenleyicileri için Işlem kimliği bilgileri eklendi.
 
-  - MonoBehaviour API güncelleştirildi.
+  - Monodavranış API 'SI güncelleştirildi.
 
 - **Değerlendirme:**
 
   - Yerel işlevler için destek eklendi.
 
-  - Sözde değişkenler (özel durum ve nesne tanımlayıcılar) için destek eklendi.
+  - Sözde değişkenler (özel durum ve nesne tanımlayıcıları) için destek eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Bilinen ad görüntüleri ve tema ile bir sorun düzeltildi.
+  - Bilinen ad görüntüleri ve temalarıyla ilgili bir sorun düzeltildi.
 
-  - Yalnızca, otomatik yenileme esnasında oluşacak hata ayıklama sırasında çıkış penceresinde yazma varlık veritabanı.
+  - Varlık veritabanının otomatik olarak yenilenmesi sırasında hata ayıklama sırasında yalnızca Çıkış Penceresi yazın.
 
-  - Filtreleme MonoBehaviour Sihirbazı ile sabit UI gecikmesi yaşanır.
+  - Monodavranış Sihirbazı filtrelemesinde sabit UI gecikmeleri.
 
 - **Hata Ayıklayıcı:**
 
-  - Özel öznitelik adlandırılmış bağımsız değişkenler üzerinde eski protokol sürümleri kullanılırken okuma düzeltildi.
+  - Eski protokol sürümleri kullanılırken adlandırılmış bağımsız değişkenlerde özel öznitelik okuma düzeltildi.
 
 ## <a name="4002"></a>4.0.0.2
 
-23 Ocak 2019 yayımlanan
+Yayın tarihi, 23 Ocak 2019
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Deneysel derleme oluşturma düzeltildi.
+  - Deneysel derleme üretimi düzeltildi.
 
-  - UI iş parçacığı Basıncı en aza indirmek için sabit bir proje dosyası olay işleme.
+  - UI-iş parçacığı basıncını en aza indirmek için sabit proje dosyası olay işleme.
 
-  - Sabit tamamlama sağlayıcısı toplu metin değişikliği.
+  - Toplu metin değişiklikleri ile sabit tamamlama sağlayıcısı.
 
 - **Hata Ayıklayıcı:**
 
-  - Kullanıcı hata ayıklama iletilerini iliştirilen hata ayıklayıcı için görüntülemeyi düzeltildi.
+  - Kullanıcı hata ayıklama iletilerinin ekli hata ayıklayıcısına gösterilmesi düzeltildi.
 
 ## <a name="4001"></a>4.0.0.1
 
-Yayın Tarihi: 10 Aralık 2018
+Yayın tarihi 10 Aralık 2018
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Değerlendirme:**
 
-  - Roslyn ile değiştiriliyor NRefactory ifade değerlendirmesi için değiştirildi.
+  - İfade değerlendirmesi için NRefactory 'ın Roslyn tarafından değiştirildiği yer.
 
-  - İşaretçiler için destek eklemiştir: başvuru, atama ve işaretçi aritmetiğini (Unity 2018.2 + hem yeni çalışma zamanının bunun için gerekli).
+  - İşaretçiler için destek eklendi: başvuru, atama ve işaretçi aritmetiği (Bu, hem Unity 2018.2 + hem de yeni çalışma zamanı için gereklidir).
 
-  - Dizi işaretçisi görünümünü (c++ benzer) için destek eklendi. Bir işaretçi ifadesi olması, ardından virgül ve görmek istediğiniz öğe sayısı.
+  - Dizi işaretçisi görünümü (içinde C++olduğu gibi) için destek eklendi. Bir işaretçi ifadesi alın, sonra da bir virgül ve görmek istediğiniz öğe sayısını ekleyin.
 
-  - Zaman uyumsuz yapıları için destek eklendi.
+  - Zaman uyumsuz yapılar için destek eklendi.
 
 - **Tümleştirme:**
 
-  - Unity'nın varlık veritabanı'üzerinde otomatik olarak yenilemek için destek eklendi kaydedin. Bu, varsayılan olarak etkindir ve öyle Unity tarafında, Visual Studio'da bir kod kaydedilirken tetikler. Üzerinde Unity\Refresh Unity'nın AssetDatabase kaydetmek için bu özelliği Tools\Options\Tools devre dışı bırakabilirsiniz.
+  - Kayıt sırasında Unity 'nin varlık veritabanının otomatik olarak yenilenmesi için destek eklendi. Bu, varsayılan olarak etkindir ve Visual Studio 'da bir betiği kaydederken Unity tarafında yeniden derleme tetikleyecektir. Kayıt sırasında Unity 'nin Assetveritabanını yenilemek için Tools\Options\Tools içinde bu özelliği devre dışı bırakabilirsiniz.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
 - **Tümleştirme:**
 
-  - Tercih edilen dış düzenleyici olarak Visual Studio seçili olmadığında köprüsü etkinleştirme düzeltildi.
+  - Tercih edilen harici düzenleyici olarak Visual Studio seçilmediğinde, sabitlenmiş köprü etkinleştirme.
 
-  - Hatalı biçimlendirilmiş ya da desteklenmeyen ifadeler ile sabit ifade değerlendirmesi.
+  - Hatalı biçimlendirilmiş veya desteklenmeyen ifadelerle ifade değerlendirmesi düzeltildi.
 
 ## <a name="4000"></a>4.0.0.0
 
-Yayın Tarihi: 4 Aralık 2018
+Yayın tarihi 4 Aralık 2018
 
 ### <a name="new-features"></a>Yeni Özellikler
 
 - **Tümleştirme:**
 
-  - Visual Studio 2019 desteği eklendi (en az bir dış betik düzenleyici olarak Visual Studio 2019 kullanabilmek için için Unity 2018.3).
+  - Visual Studio 2019 için destek eklendi (Visual Studio 2019 ' i dış betik düzenleyicisi olarak kullanabilmeniz için en az Unity 2018,3 gerekir).
 
-  - Visual Studio Görüntü hizmeti ve kataloğu, HDPI ölçeklendirme, piksel mükemmel görüntüleri ve Tema oluşturma için tam destek ile uyguladık.
+  - HDPı ölçeklendirme, piksel kusursuz görüntüler ve tema için tam destek sayesinde Visual Studio görüntü hizmeti ve kataloğunu benimseyen.
 
-### <a name="deprecated-features"></a>Kullanım dışı bırakılan özellikler
+### <a name="deprecated-features"></a>Kullanım dışı Özellikler
 
 - **Tümleştirme:**
 
-  - Unity için Visual Studio Araçları, bundan sonra yalnızca Unity 5.2 + (ile Unity'nın yerleşik Visual Studio tümleştirmesi) destekleyecektir.
+  - Unity için Visual Studio Araçları, yalnızca Unity 5.2 + ' ı destekler (Unity 'nin yerleşik Visual Studio tümleştirmesiyle).
 
-  - Bundan sonra Unity için Visual Studio Araçları yalnızca Visual Studio 2015 + destekler.
+  - Unity için Visual Studio Araçları, yalnızca Visual Studio 2015 + ' u destekleyecektir.
 
-  - Eski dil hizmeti kaldırıldı hata listesi ve durum çubuğu.
+  - Eski dil hizmeti, hata listesi ve durum çubuğu kaldırıldı.
 
-  - Hızlı Monobehaviour Sihirbazı'nı (kullanıldığından ayrılmış IntelliSense desteği) kaldırıldı.
+  - Hızlı Monodavranış Sihirbazı kaldırıldı (adanmış IntelliSense desteğinin yararına).
 
 ## <a name="3903"></a>3.9.0.3
 
@@ -221,7 +245,7 @@ Yayın Tarihi: 28 Kasım 2018
 
 - **Tümleştirme:**
 
-  - Eklerken veya kaldırırken ilk projesinde bulunan komut dosyaları proje yeniden yükleme ve IntelliSense sorunlar düzeltildi.
+  - Çok birinci projede bulunan betikleri eklerken veya kaldırırken düzeltilen proje yeniden yükleme ve IntelliSense sorunları.
 
 ## <a name="3902"></a>3.9.0.2
 
@@ -894,7 +918,7 @@ Yayınlanma tarihi: 4 Şubat 2016
 
 - Windows Store uygulamaları için UnityEngine ve UnityEditor derlemelere başvuruları sabit.
 
-- Hata ayıklayıcıda adımlanırken sabit hata: Adımlanamıyor, genel özel durum.
+- Hata ayıklayıcıda adımla düzeltilen hata: Adım, genel özel durum.
 
 - Visual Studio 2015'te sabit isabet sayısı kesme noktaları.
 
@@ -975,13 +999,13 @@ Yayınlanma tarihi: 4 Şubat 2016
 
   - Visual Studio Araçları için Unity 5 için Unity paketini yükleyin.
 
-- **Belgeler:** Belge oluşturma performansını geliştirin.
+- **Belgelerle** Belge oluşturma performansını geliştirir.
 
-- **Sihirbazlar:** Unity 4.6 ve Unity 5 yeni MonoBehavior yöntemleri destekler.
+- **Sihirbazlar:** Unity 4,6 ve Unity 5 için yeni MonoBehavior yöntemlerini destekler.
 
-- **Unity:** Güvenli olmayan bayrakları arama ve özel proje dosyası oluşturma sırasında .rsp dosyaları tanımlar.
+- **Unity:** Proje dosyası oluşturma sırasında. rsp dosyalarında güvenli olmayan bayraklar ve özel tanımlar arama yapın.
 
-- **UI:** Unity için Visual Studio Araçları eklenen **seçenekleri** Visual Studio'da iletişim kutusu.
+- **UI:** Visual Studio 'da Unity için Visual Studio Araçları **seçenekleri** iletişim kutusu eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -1015,13 +1039,13 @@ Yayınlanma tarihi: 4 Şubat 2016
 
   - İçin VS hata listesi Unity konsol günlükleri gönderin.
 
-- **Belgeler:** Yeni unity belgeleri için doğru belgeleri oluşturma.
+- **Belgelerle** Yeni Unity belgeleri için doğru belge oluşturma.
 
-- **Proje:** Taşıma ve gerektiğinde, hatta klasörlerinde Unity .meta dosyalarını yeniden adlandırın.
+- **Proje** Gerektiğinde de Unity. meta dosyalarını taşıyın ve yeniden adlandırın.
 
-- **Sihirbazlar:** Kod oluşturma sırasında MonoBehavior yöntemi parametrelerinin sırasını düzeltin.
+- **Sihirbazlar:** Kod oluştururken MonoBehavior yöntem parametrelerinin sırasını düzeltin.
 
-- **UI:** Visual Studio temasından bağlam menüsü ve simgeleri destekler.
+- **UI:** Bağlam menüsü ve simgeler için Visual Studio temalarını destekleme.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Önizlemesi
 12 Kasım 2014'te yayımlamıştır
@@ -1375,21 +1399,21 @@ Yayımlanan 25 Mart 2013
 
 - Hata düzeltildi UV'leri 48: çift tırnak bazen hataya yazıp tüm işlevi (kod tamamlama, sözdizimi vurgulama vs.) Kes.
 
-- UV'leri 46 hata düzeltildi: Hata listesi, Visual Studio tıklandığında açılan komut dosyası (UnityScript) yinelenen.
+- Düzeltilen hata UVS-46: Visual Studio 'nun Hata Listesi tıklarken yinelenen açılan betik dosyası (UnityScript).
 
-- UV'leri 42 hata düzeltildi: Durum çubuğunda Unity bağlantı logosu VS 2012'de fare olaylarını işlemiyor.
+- Düzeltilen hata UVS-42: Durum çubuğundaki Unity bağlantı logosu, VS 2012 ' deki fare olaylarını işlemez.
 
-- UV'leri 44 hata düzeltildi: CTRL + SHIFT + Q hızlı MonoBehaviours için VS 2012'de kullanılamaz.
+- Düzeltilen hata UVS-44: CTRL + SHIFT + Q, VS 2012 ' de hızlı MonoBehaviours için kullanılamaz.
 
-- UV'leri 40 hata düzeltildi: Unity proje Gezgininde seçilen öğeler, pencere VS2012 "koyu" tema etkin olduğunda okunamaz durumda.
+- Düzeltilen hata UVS-40: VS2012 "koyu" temasından pencere etkin olmadığında Unity proje Gezgininde seçilen öğeler okunamaz.
 
-- UV'leri 39 hata düzeltildi: Atlanan dizelerden sorun.
+- Düzeltilen hata UVS-39: Atlanan dizeleri simgeleştirirken sorun.
 
-- UV'leri-35 hata düzeltildi: ToString değişkenleri incelerken nesneler üzerinde çağırmak.
+- Düzeltilen hata UVS-35: Değişkenler incelenirken nesneler üzerinde ToString öğesini çağır.
 
-- 27 UV'leri hata düzeltildi: Goto sembol penceresi tutarsızlık VS2012 "koyu" tema ile.
+- Sabit hata UVS-27: VS2012 içinde "koyu" temayla sembol penceresi tutarsızlığına git.
 
-- 11 UV'leri hata düzeltildi: Eş yordamlarda yerel öğeler.
+- Sabit hata UVS-11: Eş öğelerdeki Yereller.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - beta sürümü
 Yayımlanan, 9 Mart 2013
@@ -1496,9 +1520,9 @@ Yayımlanan 3 Ekim 2012
 
 - Sabit ifade değerlendirmesi için yüklü bütünleştirilmiş kodlarında türler nasıl aranır.
 
-- UV'leri 21 hata düzeltildi: Değerlendirme atamasının Unity nesneler üzerinde hiçbir etkisi olmaz.
+- Sabit hata UVS-21: Unity nesnelerinde atama değerlendirmesi etkisizdir.
 
-- UV'leri 21 hata düzeltildi: Unity matematik API için bir yöntem çağırmayla hesaplanırken geçersiz işaretçi.
+- Sabit hata UVS-21: Unity matematik API 'sine bir yöntem çağrısı değerlendirilirken geçersiz işaretçi.
 
 ## <a name="1080"></a>1.0.8.0
 

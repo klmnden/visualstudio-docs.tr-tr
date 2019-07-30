@@ -1,5 +1,5 @@
 ---
-title: MSBuild hedef çerçevesi ve hedef Platform | Microsoft Docs
+title: MSBuild hedef çerçevesi ve hedef platform | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,50 +8,57 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747394"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662047"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild hedef çerçevesi ve hedef platform
-Çalıştırmak için bir proje oluşturulabilmeden bir *hedef Framework'ü*, .NET Framework'ün belirli bir sürümü olduğu ve bir *hedef platform*, belirli yazılım mimarisi olduğu.  Örneğin, 802 x 86 işlemci ailesi ("x86") ile uyumlu bir 32 bit platformda .NET Framework 2.0 üzerinde çalışacak bir uygulamayı hedefleyebilirsiniz. Hedef Çerçeve ve hedef platform bileşimi olarak da bilinen *hedef bağlam*.
+Bir proje, .NET Framework belirli bir sürümü ve belirli bir yazılım mimarisi olan bir *hedef platform*olan bir *hedef çerçeve*üzerinde çalışmak üzere oluşturulabilir.  Örneğin, 2,0 bitlik bir platformda .NET Framework ' de çalışacak bir uygulamayı, 802x86 işlemci ailesi ("x86") ile uyumlu 32 bir şekilde hedefleyebilirsiniz. Hedef Framework ve hedef platformun birleşimi *hedef bağlam*olarak bilinir.
 
-## <a name="target-framework-and-profile"></a>Hedef framework ve profili
- Hedef Framework'ü projenizi çalıştırmak için yerleşik olan .NET Framework'ün belirli sürümüdür. Derleyici özelliklerini ve framework'ün bu sürümüne özel derleme başvurularını sağladığından, hedef framework'ün belirtimi gereklidir.
+> [!IMPORTANT]
+> Bu makalede, hedef çerçeve belirtmenin eski yolu gösterilmektedir. SDK stilindeki projeler Netstandard gibi farklı Targetçerçeveleri etkinleştirir. Daha fazla bilgi için bkz. [hedef çerçeveler](/dotnet/standard/frameworks).
 
- Şu anda, .NET Framework'ün aşağıdaki sürümler kullanılabilir duruma gelir:
+## <a name="target-framework-and-profile"></a>Hedef çerçeve ve profil
+ Hedef çerçeve, projenizin üzerinde çalışmak üzere oluşturulduğu .NET Framework belirli sürümüdür. Bir hedef Framework belirtimi, bu Framework sürümü için özel derleyici özellikleri ve derleme başvuruları sağladığından gereklidir.
 
-- .NET Framework 2.0 (Visual Studio 2005'te dahil)
+ Şu anda .NET Framework aşağıdaki sürümleri kullanılabilir:
 
-- .NET Framework 3.0 (dahil [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 2,0 (Visual Studio 2005 ' de bulunur)
 
-- .NET Framework 3.5 (dahil [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3,0 (içinde [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]bulunur)
+
+- .NET Framework 3,5 (içinde [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]bulunur)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (dahil [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4,6 (içinde [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)]bulunur)
 
 - .NET Framework 4.6.1
 
 - .NET Framework 4.6.2
 
-- .NET Framework 4.7
+- .NET Framework 4,7
 
 - .NET Framework 4.7.1
 
-.NET Framework sürümleri her başvurmak kullanılabilir hale derlemeler listesi içinde birbirinden farklı. Örneğin, projeniz .NET Framework sürüm 3.0 hedefleyen sürece veya yukarıda Windows Presentation Foundation (WPF) uygulamaları oluşturamaz.
+- .NET Framework 4.7.2
 
-Hedef Framework'ü belirtilen `TargetFrameworkVersion` proje dosyasındaki özellik. Visual Studio tümleşik geliştirme ortamında (IDE) proje özellik sayfalarını kullanarak bir proje için hedef çerçeveyi değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Kullanılabilir değerler için `TargetFrameworkVersion` olan `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, ve `v4.7.1`.
+- .NET Framework 4,8
+
+.NET Framework sürümleri, her birinin başvuru için kullanılabilir hale getiren derlemeler listesinde diğerinden farklıdır. Örneğin, projeniz .NET Framework sürüm 3,0 veya üzerini hedeflediğinden, Windows Presentation Foundation (WPF) uygulamaları derlenemez.
+
+Hedef çerçeve, proje dosyasındaki `TargetFrameworkVersion` özelliğinde belirtilmiştir. Visual Studio tümleşik geliştirme ortamındaki (IDE) proje özelliği sayfalarını kullanarak bir projenin hedef çerçevesini değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)bir sürümünü hedefleyin. `TargetFrameworkVersion` İçin kullanılabilirdeğerler`v4.6.1`, `v3.0` ,,`v4.7.2`,,,,, ,ve`v4.7.1` `v3.5` `v2.0` `v4.5.2` `v4.6` `v4.6.2` `v4.7` `v4.8`.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- A *hedef profil* hedef framework'ün bir alt kümesidir. Örneğin, .NET Framework 4 istemci profili, MSBuild derlemelere başvuruları içermez.
+ *Hedef profil* , hedef Framework 'ün bir alt kümesidir. Örneğin, .NET Framework 4 Istemci profili MSBuild derlemelerine başvuruları içermez.
 
- Hedef profil belirtilen `TargetFrameworkProfile` bir proje dosyası bir özellik. Hedef profil IDE'de proje özelliği sayfalarından hedef çerçeve denetimi kullanarak değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Hedef profil, bir proje dosyasındaki `TargetFrameworkProfile` özelliğinde belirtilmiştir. IDE 'deki proje özelliği sayfalarında Target-Framework denetimini kullanarak hedef profilini değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)bir sürümünü hedefleyin.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -59,15 +66,15 @@ Hedef Framework'ü belirtilen `TargetFrameworkVersion` proje dosyasındaki özel
 ```
 
 ## <a name="target-platform"></a>Hedef platform
- A *platform* , belirli bir çalışma zamanı ortamı tanımlayan donanım ve yazılım birleşimidir. Örneğin,
+ *Platform* , belirli bir çalışma zamanı ortamını tanımlayan donanım ve yazılım birleşimidir. Örneğin,
 
-- `x86` Intel 80 x 86 işlemcisi ya da eşdeğerine çalışan 32 bit Windows işletim sistemi belirtir.
+- `x86`Intel 80x86 işlemcisi üzerinde veya eşdeğeri olan 32 bitlik bir Windows işletim sistemi belirler.
 
-- `x64` x64 Intel işlemci veya eşdeğeri, çalışan bir 64 bit Windows işletim sistemi belirtir.
+- `x64`Intel x64 işlemci veya BT eşdeğeri üzerinde çalışan 64 bitlik bir Windows işletim sistemi belirler.
 
-- `Xbox` Xbox 360'ı Microsoft Platformu belirtir.
+- `Xbox`Microsoft Xbox 360 platformunu belirtir.
 
-A *hedef platform* projenizi çalıştırmak için oluşturulmuştur belirli platformudur. Hedef platform belirtilen `PlatformTarget` özelliğinde bir proje dosyası oluşturun. Hedef platform proje özelliği sayfalarından kullanarak değiştirebileceğiniz veya **Configuration Manager** IDE.
+*Hedef platform* , projenizin üzerinde çalışmak üzere oluşturulduğu özel platformdur. Hedef platform bir proje dosyasındaki `PlatformTarget` Build özelliğinde belirtilmiştir. Hedef platformu, proje özelliği sayfalarını veya IDE 'deki **Configuration Manager** kullanarak değiştirebilirsiniz.
 
 ```xml
 <PropertyGroup>
@@ -76,7 +83,7 @@ A *hedef platform* projenizi çalıştırmak için oluşturulmuştur belirli pla
 
 ```
 
-A *hedef Yapılandırması* bir hedef platformu için bir alt kümesidir. Örneğin, `x86``Debug` yapılandırma çoğu kod iyileştirmeleri dahil değildir. Hedef yapılandırmasında belirtilen `Configuration` özelliğinde bir proje dosyası oluşturun. Proje özellik sayfalarını kullanarak hedef yapılandırmasını değiştirebilirsiniz veya **Configuration Manager**.
+*Hedef yapılandırma* , hedef platformun bir alt kümesidir. Örneğin, `x86``Debug` yapılandırma çoğu kod iyileştirmesini içermez. Hedef yapılandırma bir proje dosyasındaki `Configuration` Build özelliğinde belirtilir. Proje özellik sayfaları veya **Configuration Manager**kullanarak hedef yapılandırmayı değiştirebilirsiniz.
 
 ```xml
 <PropertyGroup>

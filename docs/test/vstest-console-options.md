@@ -10,75 +10,75 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559607"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661937"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe komut satırı seçenekleri
 
-*VSTest.Console.exe* testleri çalıştırmak için komut satırı aracıdır. Komut satırında herhangi bir sırada çeşitli seçenekleri belirtebilirsiniz. Bu seçenekler listelenen [genel komut satırı seçenekleri](#general-command-line-options).
+*VSTest. Console. exe* , testleri çalıştırmak için komut satırı aracıdır. Komut satırında herhangi bir sırada birkaç seçenek belirtebilirsiniz. Bu seçenekler [genel komut satırı seçeneklerinde](#general-command-line-options)listelenmiştir.
 
 > [!NOTE]
-> Visual Studio içindeki MSTest bağdaştırıcısı eski modda da çalışır (testleri çalıştırmak için eşdeğer *mstest.exe*) uyumluluk için. Eski modda da TestCaseFilter özellik yararlanamaz. Bağdaştırıcı eski moda geçebilir, bir *testsettings* dosya belirtilir, **forcelegacymode** ayarlanır **true** içinde bir *runsettings* Dosya ya da kullanarak öznitelikleri gibi **HostType**.
+> Visual Studio 'daki MSTest bağdaştırıcı ayrıca uyumluluk için eski modda ( *MSTest. exe*ile testleri çalıştırmaya eşdeğerdir) çalışır. Eski modda, TestCaseFilter özelliğinden faydalanabilirsiniz. Bir *testsettings* dosyası belirtildiğinde, bağdaştırıcı eski moda geçebilir, **forcelegacymode** bir *runsettings* dosyasında **true** olarak ayarlanır veya **HostType**gibi öznitelikler kullanılarak.
 >
-> ARM mimarisi tabanlı bir makinede otomatik testleri çalıştırmak için kullanmanız gerekir *VSTest.Console.exe*.
+> ARM mimarisi tabanlı bir makinede otomatikleştirilmiş testler çalıştırmak için *VSTest. Console. exe*kullanmanız gerekir.
 
 ## <a name="general-command-line-options"></a>Genel komut satırı seçenekleri
 
-İçin tüm seçenekleri aşağıdaki tabloda *VSTest.Console.exe* ve kısa açıklamalarını. Yazarak benzer bir özeti görebilirsiniz `VSTest.Console/?` komut satırına.
+Aşağıdaki tabloda *VSTest. Console. exe* için tüm seçenekler ve bunların kısa açıklamaları listelenmektedir. Benzer bir özeti, komut satırına yazarak `VSTest.Console/?` görebilirsiniz.
 
 | Seçenek | Açıklama |
 |---|---|
-|**[*test dosya adları*]**|Belirtilen dosyalardan testleri çalıştırın. Birden çok test dosyası adlarının boşluklarla ayırın.<br />Örnekler: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/ Settings: [*dosya adı*]**|Testleri veri toplayıcılar gibi ek ayarlar ile çalıştırın.<br />Örnek: `/Settings:Local.RunSettings`|
-|**/ Tests: [*test adı*]**|Testleri sağlanan değerlerle içeren adları ile çalıştırın. Birden çok değer sağlamak için bunları virgüllerle ayırın.<br />Örnek: `/Tests:TestMethod1,testMethod2`<br />**/Test** komut satırı seçeneği ile kullanılamaz **/testcasefilter** komut satırı seçeneği.|
-|**/ Parallel**|Testleri paralel olarak yürütüleceğini belirtir. Varsayılan olarak makine üzerindeki tüm mevcut çekirdekler kullanılabilir. Kullanılacak çekirdek sayısı bir ayar dosyası kullanılarak yapılandırılabilir.|
-|**/ Enablecodecoverage**|Veri tanılama bağdaştırıcısı CodeCoverage'test çalıştırması sağlar.<br />Varsayılan ayarlar kullanılır belirtilmezse ayar dosyası kullanılarak.|
-|**/ Inısolation**|Testleri yalıtılmış bir işlemde çalıştırır.<br />Bu yalıtım sağlar *vstest.console.exe* büyük olasılıkla daha az bir hata sırasında durdurulması işlemi, ancak testleri daha yavaş çalıştırabilirsiniz.|
-|**/UseVsixExtensions**|Bu seçenek yapar *vstest.console.exe* işlem kullanın veya (varsa) test çalıştırmasında yüklü VSIX uzantılarını atlayabilirsiniz.<br />Bu seçeneği kullanım dışı bırakılmıştır. Bu seçenek, Visual Studio'nun sonraki ana sürümüne başlangıç kaldırılabilir. Bir NuGet paketi olarak sunulan uzantıları kullanma için taşıyın.<br />Örnek: `/UseVsixExtensions:true`|
-|**/ TestAdapterPath: [*yolu*]**|Zorlar *vstest.console.exe* işleminin test çalıştırmasında özel test bağdaştırıcılarını belirtilen yoldan (varsa) kullanın.<br />Örnek: `/TestAdapterPath:[pathToCustomAdapters]`|
-|**/ Platform: [*platform türü*]**|Test çalıştırması için kullanılacak hedef platform mimarisi.<br />Geçerli değerler şunlardır: x86, x64 ve ARM.|
-|**/ Framework: [*framework sürümü*]**|Test çalıştırması için kullanılacak hedef .NET sürümü.<br />Geçerli değerler Framework35, Framework40 framework45'tir ve FrameworkUap10:.<br />Hedef Framework'ü olarak belirtilmişse **Framework35**, CLR 4.0 "uyumlu olacak şekilde basitleştirip modu" testleri çalıştırın.<br />Örnek: `/Framework:framework40`|
-|**/ TestCaseFilter: [*ifade*]**|Verili ifadeyle eşleşen testler çalıştırın.<br />< ifade\> biçimi, < özellik\>= < değer\>[\|< ifade\>].<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/Testcasefilter** komut satırı seçeneği ile kullanılamaz **/test** komut satırı seçeneği. <br />Oluşturma ve ifadeleri kullanma hakkında daha fazla bilgi için bkz: [test çalıştırması filtresini](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**[*test dosyası adları*]**|Belirtilen dosyalardan testleri çalıştırın. Birden çok test dosyası adını boşluklarla ayırın.<br />Örnekler: `mytestproject.dll`,`mytestproject.dll myothertestproject.exe`|
+|**/Settings: [*dosya adı*]**|Testleri veri toplayıcılar gibi ek ayarlarla çalıştırın.<br />Örnek: `/Settings:Local.RunSettings`|
+|**/TESTS: [*Test adı*]**|Testleri, belirtilen değerleri içeren adlarla çalıştırın. Birden çok değer sağlamak için bunları virgülle ayırın.<br />Örnek: `/Tests:TestMethod1,testMethod2`<br />**/Tests** komut satırı seçeneği, **/TestCaseFilter** komut satırı seçeneğiyle birlikte kullanılamaz.|
+|**/Parallel**|Testlerin paralel olarak yürütüleceğini belirtir. Varsayılan olarak, makinedeki tüm kullanılabilir çekirdekler kullanılabilir. Bir ayar dosyasında kullanılacak çekirdek sayısını yapılandırabilirsiniz.|
+|**/Enablecodecoverage**|Test çalıştırmasında veri tanılama bağdaştırıcısı CodeCoverage öğesine izin vermez.<br />Ayarlar dosyası kullanılarak belirtilmemişse varsayılan ayarlar kullanılır.|
+|**/Inısolation**|Testleri yalıtılmış bir işlemde çalıştırır.<br />Bu yalıtım, *VSTest. Console. exe* işleminin testlerin bir hata üzerinde durdurulması olasılığını azaltır, ancak testler daha yavaş çalışabilir.|
+|**/UseVsixExtensions**|Bu seçenek, *VSTest. Console. exe* işleminin Test çalıştırmasında yüklü olan (varsa) VSIX uzantılarını kullanmasını veya atlamasını sağlar.<br />Bu seçenek kullanım dışıdır. Visual Studio 'nun bir sonraki ana sürümünden itibaren bu seçenek kaldırılabilir. NuGet paketi olarak kullanılabilir hale getirilen genişletme uzantılarına taşıyın.<br />Örnek: `/UseVsixExtensions:true`|
+|**/TestAdapterPath: [*yol*]**|*VSTest. Console. exe* işlemini, Test çalıştırmasında belirtilen yoldan (varsa) özel test bağdaştırıcılarını kullanacak şekilde zorlar.<br />Örnek: `/TestAdapterPath:[pathToCustomAdapters]`|
+|**/Platform: [*Platform türü*]**|Test yürütmesi için kullanılacak hedef platform mimarisi.<br />Geçerli değerler x86, x64 ve ARM 'dir.|
+|**/Framework: [*Framework sürümü*]**|Test yürütmesi için kullanılacak hedef .NET sürümü.<br />Geçerli değerler şunlardır Framework35, Framework40, Framework45 'tir ve FrameworkUap10.<br />Hedef çerçeve **Framework35**olarak belirtilmişse, testler CLR 4,0 "uyumluluk modunda" çalışır.<br />Örnek: `/Framework:framework40`|
+|**/TestCaseFilter: [*ifade*]**|Verilen ifadeyle eşleşen testleri çalıştırın.<br />< ifade\> < özellik\>= < değer\>[\|< ifadesi\>] biçimindedir.<br />Örnek: `/TestCaseFilter:"Priority=1"`<br />Örnek: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** komut satırı seçeneği **/Tests** komut satırı seçeneğiyle birlikte kullanılamaz. <br />İfadeleri oluşturma ve kullanma hakkında daha fazla bilgi için bkz. [TestCase filtresi](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Kullanım bilgilerini görüntüler.|
-|**/ Logger: [*URI/friendlyname*]**|Test sonuçları için bir Günlükçü belirtin.<br />Örnek: Bir Visual Studio Test sonuçları dosyası (TRX) içine sonuçlar'ı açmak için kullandığınız **/Logger:trx**.<br />Örnek: Team Foundation Server test sonuçlarını yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < url proje\>;**<br />**BuildName = < yapı adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform =\<varsayılan olarak "İçin herhangi bir CPU" >]**<br />**[; Flavor =\<varsayılan olarak "Debug" >]**<br />**[; RunTitle = < başlık\>]**|
-|**/ ListTests: [*dosya adı*]**|Testleri verili test kapsayıcısından bulunan listeler.|
-|**/ ListDiscoverers**|Yüklü test bulucuları listeler.|
-|**/ ListExecutors**|Yüklü test yürütücüleri listeler.|
-|**/ ListLoggers**|Yüklü test günlüğü oluşturucuları listeler.|
-|**/ ListSettingsProviders**|Yüklü test ayar sağlayıcılarını listeler.|
-|**/ Sorumlu**|Bunlar yürütüyorsunuz gibi testler izler ve test ana işlem kilitlenirse sıralarını yürütme testleri adları en fazla yayar ve kilitlenme zamanında çalıştıran belirli bir teste de dahil olmak üzere. Bu çıkış, sorunlu test yalıtmak ve daha iyi tanılamak kolaylaştırır. [Daha fazla bilgi](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
-|**/ Diag: [*dosya adı*]**|Belirtilen dosyaya Tanılama izleme günlüklerini yazar.|
-|**/ ResultsDirectory: [*yolu*]**|Test sonuçları dizinini belirtilen yolda oluşturulur Aksi takdirde bulunmaktadır.<br />Örnek: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ ParentProcessId: [*ParentProcessId*]**|Geçerli işlem başlatmaktan sorumlu üst işlemin işlem kimliği.|
-|**/ Bağlantı noktası: [*bağlantı noktası*]**|Yuva bağlantısı ve olay iletileri almak için bağlantı noktası.|
-|**/ Toplama: [*dataCollector friendlyName*]**|Test çalıştırması için veri toplayıcısını etkinleştirir. [Daha fazla bilgi](https://aka.ms/vstest-collect).|
+|**/Günlükçü: [*Uri/FriendlyName*]**|Test sonuçları için bir günlükçü belirtin.<br />Örnek: Sonuçları bir Visual Studio Test Sonuçları dosyasına (TRX) kaydetmek için **/günlükçü: TRX**komutunu kullanın.<br />Örnek: Test sonuçlarını Team Foundation Server yayımlamak için TfsPublisher kullanın:<br />**/logger:TfsPublisher;**<br />**Koleksiyon = < projesi URL\>'si;**<br />**BuildName = < derleme adı\>;**<br />**TeamProject = < proje adı\>;**<br />**[; Platform =\<varsayılan olarak "Any CPU" >]**<br />**[; Flavor =\<varsayılan olarak "Debug" >]**<br />**[; RunTitle = < başlığı\>]**|
+|**/ListTests: [*dosya adı*]**|Verilen test kapsayıcısından bulunan testleri listeler.|
+|**/ListDiscoverers**|Yüklü test discoverers listeler.|
+|**/ListExecutors**|Yüklü test yürüticileri listeler.|
+|**/Listlogger**|Yüklü test Günlükçüleri listeler.|
+|**/ListSettingsProviders**|Yüklü test ayarları sağlayıcılarını listeler.|
+|**/Blame**|Testleri yürütülmekte olduğu gibi izler ve test ana bilgisayar işlemi kilitlenirse, yürütme sırasında çalışmakta olan belirli bir test dahil olmak üzere, testlerin adlarını yürütme sırasıyla yayar. Bu çıktı, sorunlu testi yalıtmak ve daha fazla tanılama yapmayı kolaylaştırır. [Daha fazla bilgi](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Diag: [*dosya adı*]**|Tanılama izleme günlüklerini belirtilen dosyaya yazar.|
+|**/ResultsDirectory: [*yol*]**|Mevcut değilse, belirtilen yolda test sonuçları dizini oluşturulur.<br />Örnek: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId: [*ParentProcessId*]**|Geçerli işlemi başlatmaktan sorumlu üst Işlemin işlem KIMLIĞI.|
+|**/Port: [*bağlantı noktası*]**|Yuva bağlantısı için bağlantı noktası ve olay iletilerini alma.|
+|**/Collect: [*DataCollector FriendlyName*]**|Test çalıştırması için veri toplayıcıyı etkinleştirilir. [Daha fazla bilgi](https://aka.ms/vstest-collect).|
 
 > [!TIP]
-> Seçenekler ve değerler büyük küçük harfe duyarlı değildir.
+> Seçenekler ve değerler büyük/küçük harfe duyarlı değildir.
 
 ## <a name="examples"></a>Örnekler
 
-Çalıştırmak için söz dizimi *VSTest.Console.exe* olan:
+*VSTest. Console. exe* ' yi çalıştırmak için sözdizimi şöyledir:
 
 `Vstest.console.exe [TestFileNames] [Options]`
 
-Aşağıdaki komutu çalıştırmaları *VSTest.Console.exe* test kitaplığının **Testprojem.dll**:
+Aşağıdaki komut, **MyTestProject. dll**test Kitaplığı Için *VSTest. Console. exe* ' yi çalıştırır:
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-Aşağıdaki komutu çalıştırmaları *VSTest.Console.exe* birden çok test dosyalarıyla. Test dosyası adlarının boşluklarla ayırın:
+Aşağıdaki komut, *VSTest. Console. exe* ' yi birden çok test dosyası ile çalıştırır. Test dosyası adlarını boşluklarla ayır:
 
 ```cmd
 Vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-Aşağıdaki komutu çalıştırmaları *VSTest.Console.exe* birçok seçeneği. Testleri çalıştırır *myTestFile.dll* belirtilen yalıtılmış bir işlem ve kullanımları ayarları dosyasında *Local.RunSettings* dosya. Ayrıca, işaretlenmiş testlerini yalnızca çalışır "Öncelik = 1" ve sonuçları bir *.trx* dosya.
+Aşağıdaki komut *VSTest. Console. exe* ' yi çeşitli seçeneklerle çalıştırır. Bir yalıtılmış işlemdeki *myTestFile. dll* dosyasındaki testleri çalıştırır ve *Local. runsettings* dosyasında belirtilen ayarları kullanır. Ayrıca, yalnızca "Priority = 1" olarak işaretlenmiş testleri çalıştırır ve sonuçları bir *. trx* dosyasına kaydeder.
 
 ```cmd
 vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx

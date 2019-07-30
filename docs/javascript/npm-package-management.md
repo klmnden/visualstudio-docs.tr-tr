@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446355"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661860"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio'da npm paketlerini yönetme
 
@@ -29,6 +29,9 @@ Visual Studio, npm ve sorunu npm komutları ile kullanıcı Arabirimi aracılı�
 * [Kullanım `.npm` Node.js etkileşimli pencerede komutu](#interactive)
 
 Bu özellikler birlikte çalışır ve proje sistemi ile eşitler ve *package.json* proje dosyasında.
+
+> [!Important]
+> NPM, proje kökünde *node_modules* klasörünü ve *Package. JSON* bekliyordu. Uygulamanızın klasör yapısı farklıysa, eitehr, Visual Studio 'Yu kullanarak NPM paketlerini yönetmek istiyorsanız [projeyi bir klasör olarak açabilir](npm-package-management.md) veya klasör yapınızı güncelleştirebilirsiniz.
 
 ## <a name="npmInstallWindow"></a> Paketleri Çözüm Gezgini'nden yükleyin.
 

@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786555"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662057"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio ile Live Unit Testing
 
 Bir uygulama geliştiriyorsunuz gibi Live Unit Testing otomatik olarak tüm etkilenen birim testlerini arka planda çalıştırır ve sonuçları ve kod kapsamını Canlı gerçek zamanlı olarak Visual Studio IDE'de sunar. Kodunuzu değiştirmeniz gibi Live Unit Testing değişikliklerinizi mevcut testleri nasıl etkilenen geri bildirim sağlar ve bir veya daha fazla var olan testlerin kapsadığını olup yeni kod ekledik. Bu yavaşça, hata düzeltmeleri yapmak veya yeni özellikler eklenmesi gibi birim testleri yazma hatırlatır.
 
 > [!NOTE]
-> Live Unit Testing, kullanılabilir C# ve .NET Core veya Enterprise Edition, Visual Studio .NET Framework hedefleyen Visual Basic projeleri.
+> Live Unit Testing, Visual Studio C# Enterprise sürümünde .NET Core veya .NET Framework hedefleyen projeleri ve Visual Basic kullanılabilir.
 
 Testleriniz için Live Unit Testing kullandığınızda, Live Unit Testing testlerinizi durumu hakkında veriler devam ettirir. Live Unit Testing, sınamaları çalışırken dinamik olarak kod değişikliklere yanıt olarak üstün performans sunmak kalıcı verileri kullanma olanağı sağlar.
 
@@ -31,10 +31,10 @@ Live Unit Testing aşağıdaki tabloda listelenen üç popüler birim test çer�
 |Test çerçevesi  |Visual Studio bağdaştırıcısı en düşük sürüm  |Framework en düşük sürüm  |
 |---------|---------|---------|
 |xUnit.net |xunit.Runner.VisualStudio sürüm 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |3.5.1 NUnit3TestAdapter sürümü |NUnit 3.5.0 sürümü |
+|NUnit |3\.5.1 NUnit3TestAdapter sürümü |NUnit 3.5.0 sürümü |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Eski varsa, MSTest başvuruyor test projeleri dayalı `Microsoft.VisualStudio.QualityTools.UnitTestFramework` ve yeni MSTest NuGet paketleri, Visual Studio 2017 sürüm 15.4 veya sonraki bir sürümü yükseltme için taşımak istediğiniz yok.
+Başvuruda `Microsoft.VisualStudio.QualityTools.UnitTestFramework` bulunan ve daha yeni MSTest NuGet paketlerine geçmek istemediğiniz daha eski bir test projesi varsa, Visual Studio 2017 sürüm 15,4 veya sonraki bir sürüme yükseltin.
 
 Bazı durumlarda, açıkça için Live Unit Testing çalışmaya sırayla çözümde proje tarafından başvurulan NuGet paketlerini geri yüklemek gerekebilir. Çözümün belirtik bir derleme yaparak ya da bunu yapabilirsiniz (seçin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde) ya da çözüm (paketleri geri yükleniyor sağ tıklatın ve çözüm **NuGet paketlerini geri yükle**) Living birim testi etkinleştirmeden önce.
 
@@ -145,7 +145,7 @@ Live Unit Testing otomatik olarak çalıştırarak test sonuçları güncelleşt
 
 - Live Unit Testing izleme eklenmiş ikili dosyalar çalıştırılır çalıştırma veya testleri Test Gezgini penceresinden hata ayıklama normal ikili dosyaları, çalışır.
 - Live Unit Testing testleri çalıştırmak için yeni bir uygulama etki alanı oluşturmaz, ancak bunun yerine varsayılan etki alanından testleri çalıştırır. Testleri çalıştırın **Test Gezgini** penceresi, yeni bir uygulama etki alanı oluşturun.
-- Live Unit Testing testler sırayla her bir test derlemesindeki çalıştırır. Birden çok testleri çalıştırırsanız **Test Gezgini** penceresi ve **çalıştırmak testlerini paralel** düğmesi seçildiğinde, testler paralel olarak.
+- Live Unit Testing testler sırayla her bir test derlemesindeki çalıştırır. **Test Gezgini** penceresinde, paralel olarak birden çok testi çalıştırmak için bir seçenek belirleyebilirsiniz.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing ve büyük çözümler
 
@@ -166,7 +166,7 @@ Tek tek projeler birim testleri seçmek için Live Unit Testing başlatıldıkta
 
 **Bireysel testler kod düzenleyici penceresinde hariç**
 
-Kod Düzenleyicisi penceresi, dahil etmek veya bireysel test yöntemleri hariç tutmak için kullanabilirsiniz. Kod Düzenleyicisi penceresinde test metodunun İmzasındaki sağ tıklatın ve seçin **Canlı testleri** > **dahil [seçili yöntemi]**, **Canlı testleri**  >  **[Seçili yöntemi] hariç**, veya **Canlı testleri** > **hariç tüm ancak [seçili yöntemi]**, burada "Seçili yöntemi" adıdır Kod penceresinde seçtiğiniz yöntem.
+Kod Düzenleyicisi penceresi, dahil etmek veya bireysel test yöntemleri hariç tutmak için kullanabilirsiniz. Kod Düzenleyicisi penceresinde test metodunun İmzasındaki sağ tıklatın ve seçin **Canlı testleri** > **dahil [seçili yöntemi]** , **Canlı testleri**  >  **[Seçili yöntemi] hariç**, veya **Canlı testleri** > **hariç tüm ancak [seçili yöntemi]** , burada "Seçili yöntemi" adıdır Kod penceresinde seçtiğiniz yöntem.
 
 **Testleri programlı olarak hariç**
 
@@ -183,4 +183,4 @@ Live Unit Testing her bir yöntem hariç tutmak için de aşağıdaki öznitelik
 - [Kod test araçları](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing blogu](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing SSS](live-unit-testing-faq.md)
-- [Kanal 9 videosu: Visual Studio Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Channel 9 videosu: Visual Studio 'da Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
