@@ -834,151 +834,171 @@
           href: ide/reference/call-hierarchy.md
         - name: Değişiklikleri Önizleme
           href: ide/preview-changes.md
-        - name: 'Araç Kutusu Öğelerini, WPF Bileşenlerini Seçme'
+        - name: 'Araç Kutusu öğelerini, WPF bileşenlerini seçme'
           href: ide/reference/choose-toolbox-items-wpf-components.md
-        - name: Kod Parçacığı Seçici
+        - name: Kod parçacığı seçici
           href: ide/reference/code-snippet-picker.md
-        - name: Komut Penceresi
+        - name: Komut penceresi
           href: ide/reference/command-window.md
-        - name: Dönüştür İletişim Kutusu
+        - name: Dönüştür iletişim kutusu
           href: ide/reference/convert-dialog-box.md
-        - name: Hata Listesi Penceresi
+        - name: Hata Listesi penceresi
           href: ide/reference/error-list-window.md
         - name: 'Dosya Özellikleri, JavaScript'
           href: ide/reference/file-properties-javascript.md
         - name: Satıra Gitme
           href: ide/reference/go-to-line.md
-        - name: Komut Penceresi
+        - name: Komut penceresi
           href: ide/reference/immediate-window.md
-        - name: Çeşitli Dosyalar
+        - name: Çeşitli dosyalar
           href: ide/reference/miscellaneous-files.md
         - name: Seçenekler
           items:
-            - name: Seçenekler İletişim Kutusu
+            - name: Seçenekler iletişim kutusu
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Ortam Seçenekleri
+            - name: Ortam
               items:
-                - name: Ortam Seçenekleri İletişim Kutusu
-                  href: ide/reference/environment-options-dialog-box.md
-                - name: Ortam - Genel
+                - name: Genel
                   href: ide/reference/general-environment-options-dialog-box.md
-                - name: Ortam - Otomatik Kurtarma
-                  href: ide/reference/autorecover-environment-options-dialog-box.md
-                - name: Ortam - Belgeler
-                  href: ide/reference/documents-environment-options-dialog-box.md
-                - name: Ortam - Uzantılar
-                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: Ortam - Bul ve Değiştir
-                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
-                - name: Ortam - Yazı Tipleri ve Renkler
-                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: Ortam - İçeri ve Dışarı Aktarma Ayarları
-                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: Ortam - Uluslararası Ayarlar
-                  href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: Ortam - Klavye
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
-                - name: Ortam - Bildirimler
-                  href: ide/reference/notifications-environment-options-dialog-box.md
-                - name: Ortam - Hızlı Başlat
-                  href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: Ortam - Başlangıç
-                  href: ide/reference/startup-environment-options-dialog-box.md
-                - name: Ortam - Hesaplar
+                - name: Hesaplar
                   href: ide/reference/accounts-environment-options-dialog-box.md
-                - name: Ortam - Sekmeler ve Pencereler
+                - name: AutoRecover
+                  href: ide/reference/autorecover-environment-options-dialog-box.md
+                - name: Belgeler
+                  href: ide/reference/documents-environment-options-dialog-box.md
+                - name: Uzantıları
+                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: Bulma ve Değiştirme
+                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
+                - name: Yazı Tipleri ve Renkler
+                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: Ayarları İçeri ve Dışarı Aktarma
+                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: Uluslararası Ayarlar
+                  href: ide/reference/international-settings-environment-options-dialog-box.md
+                - name: Klavye
+                  href: ide/reference/keyboard-environment-options-dialog-box.md
+                - name: Önizleme Özellikleri
+                  href: ide/reference/environment-preview-features-options.md
+                - name: Bildirimler
+                  href: ide/reference/notifications-environment-options-dialog-box.md
+                - name: Hızlı Başlat
+                  href: ide/reference/quick-launch-environment-options-dialog-box.md
+                - name: Başlangıç
+                  href: ide/reference/startup-environment-options-dialog-box.md
+                - name: Sekmeler ve Pencereler
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: Ortam - Görev Listesi
+                - name: Görev Listesi
                   href: ide/reference/task-list-environment-options-dialog-box.md
-                - name: Ortam - Güven Ayarları
+                - name: Güven Ayarları
                   href: ide/reference/trust-settings.md
-                - name: Ortam - Web Tarayıcısı
+                - name: Web Tarayıcısı
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: Metin Düzenleyicisi Seçenekleri
+            - name: Projeler ve Çözümler
               items:
-                - name: Metin Düzenleyici Seçenekleri İletişim Kutusu
-                  href: ide/reference/text-editor-options-dialog-box.md
-                - name: Metin Düzenleyici - Genel
-                  href: ide/reference/options-text-editor-general.md
-                - name: Metin Düzenleyici - Dosya Uzantısı
-                  href: ide/reference/options-text-editor-file-extension.md
-                - name: Metin Düzenleyici - Tüm Diller
-                  href: ide/reference/options-text-editor-all-languages.md
-                - name: 'Metin Düzenleyici - Tüm Diller, Kaydırma Çubukları'
-                  href: ide/reference/options-text-editor-all-languages-scroll-bars.md
-                - name: 'Metin Düzenleyici - Tüm Diller, Sekmeler'
-                  href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: 'Metin Düzenleyici - Temel (Visual Basic), Gelişmiş'
-                  href: ide/reference/options-text-editor-basic-visual-basic.md
-                - name: 'Metin Düzenleyici - Temel (Visual Basic), Kod Stili'
-                  href: ide/code-styles-and-code-cleanup.md
-                - name: 'Metin Düzenleyici - Temel (Visual Basic), IntelliSense'
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 'Metin Düzenleyici - C/C++, Biçimlendirme'
-                  href: ide/reference/options-text-editor-c-cpp-formatting.md
-                - name: 'Metin Düzenleyici - C/C++, Gelişmiş'
-                  href: ide/reference/options-text-editor-c-cpp-advanced.md
-                - name: 'Metin Düzenleyici - C/C++, Deneysel'
-                  href: ide/reference/options-text-editor-c-cpp-experimental.md
-                - name: 'Metin Düzenleyici - C/C++, Görünüm'
-                  href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'Metin Düzenleyici - C#, Kod Stili, Biçimlendirme'
-                  href: ide/reference/options-text-editor-csharp-formatting.md
-                - name: 'Metin Düzenleyici - C#, Gelişmiş'
-                  href: ide/reference/options-text-editor-csharp-advanced.md
-                - name: 'Metin Düzenleyici - C#, IntelliSense'
-                  href: ide/reference/options-text-editor-csharp-intellisense.md
-                - name: 'Metin Düzenleyici - F#, Gelişmiş'
-                  href: ide/reference/options-text-editor-fsharp-advanced.md
-                - name: 'Metin Düzenleyici - F#, Kod Düzeltmeleri'
-                  href: ide/reference/options-text-editor-fsharp-code-fixes.md
-                - name: 'Metin Düzenleyici - F#, CodeLens'
-                  href: ide/reference/options-text-editor-fsharp-codelens.md
-                - name: 'Metin Düzenleyici - F#, IntelliSense'
-                  href: ide/reference/options-text-editor-fsharp-intellisense.md
-                - name: 'Metin Düzenleyicisi - HTML (Web Forms), Biçimlendirme'
-                  href: ide/reference/options-text-editor-html-formatting.md
-                - name: 'Metin Düzenleyicisi - HTML (Web Forms), Çeşitli'
-                  href: ide/reference/options-text-editor-html-miscellaneous.md
-                - name: 'Metin Düzenleyicisi - HTML (Web Forms), Doğrulama'
-                  href: ide/reference/options-text-editor-html-validation.md
-                - name: 'Metin Düzenleyicisi - JavaScript, Kod Doğrulama'
-                  href: ide/reference/options-text-editor-javascript-code-validation.md
-                - name: 'Metin Düzenleyici - JavaScript, Biçimlendirme'
-                  href: ide/reference/options-text-editor-javascript-formatting.md
-                - name: 'Metin Düzenleyici - JavaScript, IntelliSense'
-                  href: ide/reference/options-text-editor-javascript-intellisense.md
-                - name: 'Metin Düzenleyici - JavaScript, Linting'
-                  href: ide/reference/options-text-editor-javascript-linting.md
-                - name: 'Metin Düzenleyici - JavaScript, Proje'
-                  href: ide/reference/options-text-editor-javascript-project.md
-                - name: 'Metin Düzenleyici - U-SQL, Biçimlendirme'
-                  href: ide/reference/options-text-editor-usql-formatting.md
-                - name: 'Metin Düzenleyici - U-SQL, IntelliSense'
-                  href: ide/reference/options-text-editor-usql-intellisense.md
-                - name: 'Metin Düzenleyici - XAML, Biçimlendirme'
-                  href: ide/reference/options-text-editor-xaml-formatting.md
-                - name: 'Metin Düzenleyicisi - XAML, Çeşitli'
-                  href: ide/reference/options-text-editor-xaml-miscellaneous.md
-                - name: 'Metin Düzenleyicisi - XML, Biçimlendirme'
-                  href: ide/reference/options-text-editor-xml-formatting.md
-                - name: 'Metin Düzenleyicisi - XML, Çeşitli'
-                  href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: Projeler ve Çözümler Seçenekleri
-              items:
-                - name: Projeler ve Çözümler Seçenekleri İletişim Kutusu
+                - name: Genel
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
-                - name: Projeler ve Çözümler - Derleme ve Çalıştırma
+                - name: Derleme ve Çalıştırma
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: Projeler ve Çözümler - Web Projeleri
-                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
-                - name: Projeler ve Çözümler - VB Varsayılanları
+                - name: Konumlar
+                  href: ide/reference/projects-solutions-locations-options.md
+                - name: VB Varsayılanları
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: Projeler ve Çözümler - VC++ Projesi Ayarları
+                - name: VC++ Proje Ayarları
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-            - name: XAML Tasarımcısı Seçenekler İletişim Kutusu
+                - name: Web Projeleri
+                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: Metin Düzenleyici
+              items:
+                - name: Genel
+                  href: ide/reference/options-text-editor-general.md
+                - name: Dosya Uzantısı
+                  href: ide/reference/options-text-editor-file-extension.md
+                - name: Tüm Diller
+                  items:
+                    - name: Genel
+                      href: ide/reference/options-text-editor-all-languages.md
+                    - name: Kaydırma Çubukları
+                      href: ide/reference/options-text-editor-all-languages-scroll-bars.md
+                    - name: Sekmeler
+                      href: ide/reference/options-text-editor-all-languages-tabs.md
+                - name: Temel
+                  items:
+                    - name: Gelişmiş
+                      href: ide/reference/options-text-editor-basic-visual-basic.md
+                    - name: Kod Stili
+                      href: ide/code-styles-and-code-cleanup.md
+                    - name: IntelliSense
+                      href: ide/visual-basic-specific-intellisense.md
+                - name: 'C#'
+                  items:
+                    - name: Gelişmiş
+                      href: ide/reference/options-text-editor-csharp-advanced.md
+                    - name: Kod Stili > Biçimlendirme
+                      href: ide/reference/options-text-editor-csharp-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-csharp-intellisense.md
+                - name: C/C++
+                  items:
+                    - name: Gelişmiş
+                      href: ide/reference/options-text-editor-c-cpp-advanced.md
+                    - name: Deneysel
+                      href: ide/reference/options-text-editor-c-cpp-experimental.md
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-c-cpp-formatting.md
+                    - name: Görüntüle
+                      href: ide/reference/options-text-editor-c-cpp-view.md
+                - name: 'F#'
+                  items:
+                    - name: Gelişmiş
+                      href: ide/reference/options-text-editor-fsharp-advanced.md
+                    - name: Kod Düzeltmeleri
+                      href: ide/reference/options-text-editor-fsharp-code-fixes.md
+                    - name: CodeLens
+                      href: ide/reference/options-text-editor-fsharp-codelens.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-fsharp-intellisense.md
+                - name: HTML (Web Formları)
+                  items:
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-html-formatting.md
+                    - name: Çeşitli
+                      href: ide/reference/options-text-editor-html-miscellaneous.md
+                    - name: Doğrulama
+                      href: ide/reference/options-text-editor-html-validation.md
+                - name: JavaScript/TypeScript
+                  items:
+                    - name: Kod Doğrulama
+                      href: ide/reference/options-text-editor-javascript-code-validation.md
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-javascript-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-javascript-intellisense.md
+                    - name: Lint uygulama
+                      href: ide/reference/options-text-editor-javascript-linting.md
+                    - name: Project
+                      href: ide/reference/options-text-editor-javascript-project.md
+                - name: U-SQL
+                  items:
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-usql-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-usql-intellisense.md
+                - name: XAML
+                  items:
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-xaml-formatting.md
+                    - name: Çeşitli
+                      href: ide/reference/options-text-editor-xaml-miscellaneous.md
+                - name: XML
+                  items:
+                    - name: Biçimlendirme
+                      href: ide/reference/options-text-editor-xml-formatting.md
+                    - name: Çeşitli
+                      href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: XAML Tasarımcısı
               href: ide/reference/xaml-designer.md
-        - name: Çıktı Penceresi
+        - name: Çıktı penceresi
           href: ide/reference/output-window.md
         - name: Proje Özellikleri
           items:
