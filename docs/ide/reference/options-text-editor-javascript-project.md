@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df602b7ffa8f5109d8bbca827e59d6e1fd62c504
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461672"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605920"
 ---
 # <a name="options-text-editor-javascript-project"></a>Seçenekler, metin düzenleyici, JavaScript, proje
 
-Kod düzenleyicisinde JavaScript proje seçeneklerini belirtmek için **Seçenekler** Iletişim kutusunun **Proje** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından **metin düzenleyici** > **JavaScript** > **projesi**' ni genişletin.
+Kod düzenleyicisinde JavaScript ve TypeScript proje seçeneklerini belirtmek için **Seçenekler** Iletişim kutusunun **Proje** sayfasını kullanın. Bu sayfaya erişmek için, menü çubuğunda **Araçlar** > **Seçenekler**' i seçin ve ardından **metin düzenleyici** > **JavaScript/TypeScript** > **projesi**' ni genişletin.
 
 ## <a name="project-analysis-options"></a>Proje Analizi Seçenekleri
 
