@@ -3,15 +3,15 @@ title: Visual Studio aboneliklerinde Yazılım İndirmeleri için ürün kullan�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio abonelikleri için yazılım indirmelerinde ürün kullanılabilirliği hakkında bilgi edinin
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315603"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681690"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde Yazılım İndirmeleri için ürün kullanılabilirliği
 Abone avantajlarınızın bir parçası olarak, çok çeşitli yazılım indirmelerine erişiminiz vardır.
@@ -38,4 +38,5 @@ Belirli ürünlerin aboneler tarafından sunulmamasının birkaç nedeni vardır
 Hangi aboneliğin kullanmakta olduğunuzdan emin değil misiniz?  E-posta adresinize atanan tüm abonelikleri görmek [içinbağlantısınıyapın. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Tüm aboneliklerinizi görmüyorsanız, farklı bir e-posta adresine atanmış bir veya daha fazla sahip olabilirsiniz.  Bu abonelikleri görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Bazı Yazılım İndirmeleri, yüklemek ve etkinleştirmek için bir ürün anahtarı gerektirebilir.  Ürün anahtarlarınızı edinme ve yönetme hakkında ayrıntılı bilgi için ürün anahtarları makalemize göz atın. 
+- Bazı Yazılım İndirmeleri, yüklemek ve etkinleştirmek için bir ürün anahtarı gerektirebilir.  Ürün anahtarlarınızı edinme ve yönetme hakkında ayrıntılı bilgi için [ürün anahtarları](product-keys.md) makalemize göz atın. 
+- [Yazılımın nasıl indirileceği](download-software.md)hakkında bilgi edinin.

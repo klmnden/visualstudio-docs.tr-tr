@@ -18,35 +18,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817380"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681165"
 ---
 # <a name="message-task"></a>İleti görevi
-Derleme sırasında bir ileti kaydeder.
+Derleme sırasında bir iletiyi günlüğe kaydeder.
 
 ## <a name="parameters"></a>Parametreler
- Parametreleri aşağıdaki tabloda açıklanmıştır `Message` görev.
+ Aşağıdaki tablo, `Message` görevin parametrelerini açıklar.
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`Importance`|İsteğe bağlı `String` parametresi.<br /><br /> İletinin önemini belirtir. Bu parametre değerini alabilir `high`, `normal` veya `low`. Varsayılan değer `normal` şeklindedir.|
-|`Text`|İsteğe bağlı `String` parametresi.<br /><br /> Oturum hata metni.|
+|`Importance`|İsteğe `String` bağlı parametre.<br /><br /> İletinin önemini belirtir. Bu parametre `high`, `normal` veya `low`değerine sahip olabilir. Varsayılan değer `normal` şeklindedir.|
+|`Text`|İsteğe `String` bağlı parametre.<br /><br /> Günlüğe kaydedilecek hata metni.|
 
 ## <a name="remarks"></a>Açıklamalar
- `Message` Görev sağlayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeleri günlükçüleri farklı derleme işlemindeki adımları sırasında sorun iletileri.
+ Bu görev, projelerin, derleme işlemindeki farklı adımlarda oturum cihazlarına ileti vermesini sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. `Message`
 
- Varsa `Condition` parametresi değerlendirilen `true`, değerini `Text` parametresi kaydedilir ve yapı yürütülmeye devam eder. Varsa bir `Condition` parametresi mevcut değil, ileti metnini günlüğe kaydedilir. Günlüğe kaydetme hakkında daha fazla bilgi için bkz. [elde derleme günlükleri](../msbuild/obtaining-build-logs-with-msbuild.md).
+ Parametresi olarak `true` değerlendirilirse`Text` , parametrenin değeri günlüğe kaydedilir ve derleme yürütülmeye devam eder. `Condition` Bir `Condition` parametre yoksa, ileti metni günlüğe kaydedilir. Günlüğe kaydetme hakkında daha fazla bilgi için bkz. [Derleme günlüklerini alma](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Varsayılan olarak MSBuild konsol Oluşturucusu'na ileti gönderilir. Bu ayarı değiştirilebilir <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametresi. Günlükçü yorumlar `Importance` parametresi.
+ Varsayılan olarak, ileti MSBuild konsol günlükçüsü öğesine gönderilir. Bu, <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> parametresi ayarlanarak değiştirilebilir. Günlükçü, `Importance` parametreyi yorumlar. Genellikle, günlükçü ayrıntı düzeyi veya `high` üzeri olarak <xref:Microsoft.Build.Framework.LoggerVerbosity> `Minimal` ayarlandığında, olarak ayarlanmış bir ileti gönderilir. Günlükçü ayrıntı düzeyi olarak `low` <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`ayarlandığında, olarak ayarlanmış bir ileti gönderilir.
 
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+ Yukarıda listelenen parametrelere ek olarak, bu görev sınıfından devralınan <xref:Microsoft.Build.Tasks.TaskExtension> <xref:Microsoft.Build.Utilities.Task> parametreleri devralır. Bu ek parametrelerin ve açıklamalarının listesi için bkz. [TaskExtension temel sınıfı](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneği, tüm kayıtlı günlükçüler için iletileri günlüğe kaydeder.
+ Aşağıdaki kod örneği, tüm kayıtlı Günlükçüler için iletileri günlüğe kaydeder.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -60,4 +60,4 @@ Derleme sırasında bir ileti kaydeder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Görev başvurusu](../msbuild/msbuild-task-reference.md)
-- [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Derleme günlüklerini al](../msbuild/obtaining-build-logs-with-msbuild.md)

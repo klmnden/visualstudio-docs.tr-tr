@@ -1,125 +1,118 @@
 ---
-title: Teknik Destek Teklifinizden
+title: Teknik destek avantajı
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 2/13/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden etkinleştirmeyi öğrenin.
-ms.openlocfilehash: 5b5bb690af4223ace46ea090a482df610e298fd6
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Visual Studio aboneliğinizle birlikte sunulan teknik destek avantajını nasıl etkinleştireceğinizi öğrenin.
+ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785055"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681586"
 ---
-# <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Etkinleştirme ve Visual Studio abonelikleri teknik destek teklifinizden kullanma
-
-Onarım sorunları çözmek için Visual Studio Abonelikleri, teknik destek teklifi olan **üretim dışı ortamlar** yine de temel destek aşamasında olan ürünleri için [yaşam döngüsü desteği ](https://support.microsoft.com/lifecycle/search). Visual Studio Enterprise, standard ve yıllık bulut abonelikleri sırasında Visual Studio Professional standart dört olayları alır ve yıllık bulut aboneliklerine avantajı etkinleştirmesi en fazla 1 yıl boyunca iki olayları alırsınız. Aboneliğin geçerli olduğu sürece avantajı etkinleştirme gerçekleşmelidir.
-
-> [!NOTE]
-> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri https://visualstudio.microsoft.com/vs/pricing/ Visual Studio abonelikleri satın almak için farklı seçenekleri keşfedin.
+# <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde teknik destek avantajını etkinleştirin ve kullanın
+Visual Studio aboneliklerinde teknik destek avantajı, hala [destek yaşam döngüsünün](https://support.microsoft.com/lifecycle/search)temel destek aşamasında olan ürünlere yönelik **Üretim dışı ortamlarda** onarım sorunlarını çözmeye yöneliktir. Visual Studio Enterprise standart ve yıllık bulut abonelikleri dört olay alır, Visual Studio Professional ancak standart ve yıllık bulut abonelikleri, avantajı etkinleştirmede 1 yıla kadar olmak üzere iki olay alır. Abonelik geçerli olduğunda avantajı etkinleştirme gerçekleşmelidir.
 
 > [!NOTE]
-> Belirtilen düzeydeki tüm abonelikleri destek olayları almaya uygundur. FTE, NFR, MPN, MCT ve diğer programları edinilen abonelikleri destek olayları almazsınız. Aboneliğinizi teknik destek olayları almaya uygun değilse, teknik destek kutucuk kullanılabilir avantajlarınızla görünmez.
+> Microsoft artık Visual Studio Professional yıllık abonelikler ve Visual Studio Enterprise yıllık abonelikleri bulut aboneliklerinde sunmayacaktır. Mevcut müşteriler deneyiminde değişiklik yapılmaz ve aboneliklerini yenileyebilme, artırma, azaltma veya iptal etme imkanına sahip olmayacaktır. Yeni müşterilerin, https://visualstudio.microsoft.com/vs/pricing/ Visual Studio abonelikleri satın almaya yönelik farklı seçeneklere göz atın.
 
-**Avantajının kullanılmasıyla bir destek talebi göndermek için önce etkinleştirmeniz gerekir.  Etkinleştirmeyi tamamlamak için sonraki bölümdeki adımları izleyin.**
+> [!NOTE]
+> Belirli bir düzeydeki tüm abonelikler destek olayları almaya uygun değildir. FTE, NFR, MPN, MCT ve diğer programlar aracılığıyla edinilen abonelikler destek olaylarını almaz. Aboneliğiniz, teknik destek olayları almaya uygun değilse, teknik destek kutucuğu kullanılabilir avantajlarda görünmez.
 
-## <a name="how-to-activate-the-benefit"></a>Teklifi etkinleştirme
+**Avantajı kullanarak bir destek isteği göndermek için, önce onu etkinleştirmeniz gerekir.  Etkinleştirmeyi gerçekleştirmek için sonraki bölümdeki adımları izleyin.**
 
-1. Git https://my.visualstudio.com/Benefits, destek bölümüne inin ve teknik destek kutucuğa tıklayarak kaydırma **etkinleştirmek için Sohbet**.
+## <a name="how-to-activate-the-benefit"></a>Avantajı etkinleştirme
+1. Git ' https://my.visualstudio.com/Benefits e gidin, destek bölümüne gidin ve teknik destek kutucuğunda **etkinleştirmek için sohbet**' e tıklayın.
     > [!div class="mx-imgBorder"]
-    > ![Teknik Destek teklifi kutucuğu](_img/vs-tech-support/vs-tech-support-tile.png)
-2. Bu bir oluşturabilen bir temsilci ile sohbet oturumu başlatır, **sözleşme kimliği** ve **erişim kimliği** ve kayıtlarınız için sahip şekilde, bu e-posta aracılığıyla sağlar.
+    > ![Teknik destek avantajı kutucuğu](_img/vs-tech-support/vs-tech-support-tile.png)
+2. Bu, **sözleşme kimliği** ve **erişim kimliğiniz** oluşturabileceğiniz bir temsilciyle sohbet oturumu başlatır ve bunları sizin kayıtlarınızda olacak şekilde e-posta yoluyla size sağlayabilir.
 
-3. İşlemi tamamlamak için temsilcisiyle sağlamanız gerekir:
-   - Ülkenizi
+3. Bu işlemi gerçekleştirmek için temsilciyle birlikte sağlamanız gerekir:
+   - Ülkeniz
    - Şirket adı
    - Tam adınız
    - Aboneliğinizde oturum açmak için kullandığınız e-posta adresi
    - Telefon numaranız
-   - Bulunabilir abonelik kimliği [abonelikleri](https://my.visualstudio.com/subscriptions) sekmesi.
+   - [Abonelikler](https://my.visualstudio.com/subscriptions) sekmesinde bulunan abonelik kimliği.
 
    > [!div class="mx-imgBorder"]
-   > ![Teknik Destek Teklifinizden abonelik kimliği bulunamadı](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
+   > ![Teknik destek avantajı abonelik KIMLIĞINI bulun](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. İşlem tamamlandıktan sonra içeren bir e-posta alırsınız, **sözleşme kimliği** ve **erişim kimliği** bir destek olayı oluştururken kullanacaktır.
+4. İşlem tamamlandıktan sonra, bir destek olayı oluştururken kullanacağınız **sözleşme kimliğini** ve **erişim Kimliğinizi** içeren bir e-posta alırsınız.  Ayrıca, yeni erişim KIMLIĞINIZI ve sözleşme KIMLIĞINIZI kullanarak destek olaylarını göndermek için yönergeler sağlar. 
 
 > [!NOTE]
-> İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu liste](https://support.microsoft.com/help/14084/activate-support-contract).
+> Destek hesabınızı Ingilizce dışındaki bir dilde etkinleştirmek için [Bu listeden](https://support.microsoft.com/help/14084/activate-support-contract)bulunduğunuz ülkeyi seçin.
 
-## <a name="how-to-submit-an-incident-using-your-benefit"></a>Avantajı'nızı kullanarak olay gönderme
+## <a name="how-to-submit-an-incident-using-your-benefit"></a>Avantajınızı kullanarak bir olay gönderme
+**Sözleşme kimliğiniz** ve **erişim kimliğiniz** kurulduktan sonra, bir teknik [destek olayı (](http://support.microsoft.com/oas/) oturum açmak için) veya [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) aracılığıyla ya da ülkeniz için teknik destek numarasını çağırarak, bu ayarı kullanabilirsiniz. Olayınızı çevrimiçi gönderirseniz, geri dönüş Microsoft Desteği profesyonel bir arama seçeneğiniz vardır.
 
-Sonra **sözleşme kimliği** ve **erişim kimliği** ayarlamak, bu bir teknik destek olayı göndermek için kullanabileceğiniz [çevrimiçi](http://support.microsoft.com/oas/) (gerekli oturum), veya aracılığıyla [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) , ya da ülkeniz için teknik destek numarasını arayarak. Olayı çevrimiçi gönderirseniz, başa bir Microsoft Destek Uzmanı çağırmasını sağlama seçeneğine sahip.
-
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Sözleşme Kimliğinizi zaten var ve erişim kimliği, çevrimiçi bir teknik destek olayı göndermek oturum açmak için kullanılan hesapla ilişkili?
-
-Çevrimiçi olay gönderirken, ilk kez oturum açmanız istenir. Sözleşme Kimliğinizi ve erişim kimliği ile ilişkili olduğunu bildiğiniz hesapla oturum açın Hesabınıza ilişkili mevcut destek planı avantajınızı adım 3'üzerinde destek iş akışında görünür. Yalnızca bu planı seçin ve durumunuzu bildirmek devam edin. Olayları olan sınıra kadar plan üzerinde gösterilen veya planı sona erme tarihine kadar hangisi önce gelirse gönderebilirsiniz. "0" kalan olayları Göster sonra ya da planınızı dolarsa artık etkin değil.
+### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Zaten bir teknik destek olayı çevrimiçi göndermek için kullanılan hesapla ilişkili sözleşme KIMLIĞINIZ ve erişim KIMLIĞINIZ zaten var mı?
+Bir olayı çevrimiçi olarak gönderirken öncelikle oturum açmanız istenir. Bildiğiniz hesapla oturum açarak, sözleşmenin KIMLIĞI ve erişim KIMLIĞINIZ ile ilişkilendirilir. Hesabınızla ilişkili mevcut destek planı avantajınız, destek iş akışında 3. adımda görünür. Bu planı seçmeniz ve servis talebinizi göndermeye devam etmeniz yeterlidir. Olayları planda belirtilen sınıra kadar veya planın sona erme tarihine kadar, hangisi önce gelirse gönderebilirsiniz. Kalan olaylar "0" öğesini gösterir veya planınız sona erdiğinde, artık etkin değildir.
 
    > [!div class="mx-imgBorder"]
-   > ![Teknik Destek teklifi olay gönderimi 3. adım](_img/vs-tech-support/vs-tech-support-step3.png)
+   > ![Teknik destek avantajı olay gönderimi adım 3](_img/vs-tech-support/vs-tech-support-step3.png)
 
-### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Sözleşme Kimliğinizi ve erişim kimliği (ilk kullanım) olay gönderirken kullanma
+### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Bir olayı gönderirken sözleşme KIMLIĞINIZI ve erişim KIMLIĞINIZI kullanma (ilk kullanım)
 
-#### <a name="submitting-an-incident-online"></a>Çevrimiçi bir olayı gönderme
+#### <a name="submitting-an-incident-online"></a>Çevrimiçi olay gönderme
+Bir olayı çevrimiçi olarak gönderirken öncelikle oturum açmanız istenir. Açılan listeyi kullanarak, yardım almak istediğiniz ürünü seçin. Örneğin, Visual Studio Enterprise 2019 için bir olay göndermek için **Geliştirici Araçları** ailesini seçip ürün olarak **Visual Studio 2019** ' i seçin ve ardından sürüm olarak **Visual Studio Enterprise 2019** ' ı seçin.
 
-Çevrimiçi olay gönderirken, ilk kez oturum açmanız istenir. Açılan listeyi kullanarak, ilgili yardıma ihtiyacınız ürün seçin. Örneğin, göndermek için Visual Studio Enterprise 2017 için bir olay seçin **Geliştirici Araçları** ailesi ve ardından seçin **Visual Studio 2017** ürünü olarak seçip **Visual Studio Enterprise 2017** sürüm olarak.
-
-1. Destek için ihtiyacınız olan ürününü seçtikten sonra tıklayın **sonraki**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Teknik Destek teklifi olay gönderimi 1. adım - ürün](_img/vs-tech-support/vs-tech-support-step1.png)
-
-2. Yaşadığınız sorunu açıklayın ve tıklayın **sonraki**.
+1. Destek için gereken ürünü seçtikten sonra **İleri**' ye tıklayın.
 
    > [!div class="mx-imgBorder"]
-   > ![Teknik Destek teklifi olay gönderimi adım 2 - sorunu](_img/vs-tech-support/vs-tech-support-step2.png)
+   > ![Teknik destek avantajı olay gönderimi adım 1-ürün](_img/vs-tech-support/vs-tech-support-step1.png)
 
-3. "Destek planı" sayfasında aşağı kaydırarak **Ekle veya bir destek planı satın alma**tıklayın ve sağ taraftaki oka kullanarak genişletin **Ekle sözleşme**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Teknik Destek olayı gönderme - sözleşme Ekle yararlanın](_img/vs-tech-support/vs-tech-support-add-contract.png)
-
-4. Girin, **erişim kimliği** ve **sözleşme kimliği**.            **Ekle**'yi tıklatın.
+2. Sorununuzu tanıtın ve **İleri**' ye tıklayın.
 
    > [!div class="mx-imgBorder"]
-   > ![Teknik Destek olayı gönderme - sözleşme kimliği ekleme avantajı](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
+   > ![Teknik destek avantajı olay gönderimi adım 2-sorun](_img/vs-tech-support/vs-tech-support-step2.png)
 
-5. Sözleşmeniz eklendikten sonra altında görünür **destek planını seçin** en üstünde. Planınızı başlığı "MSDN" terimini içerir. Bunu seçin, aşağıya inin ve tıklayın **sonraki**.
+3. "Destek planı" sayfasında, **bir destek planı eklemek veya satın**almak için aşağı kaydırın, sağdaki oku kullanarak genişletin ve **sözleşme Ekle**' ye tıklayın.
 
    > [!div class="mx-imgBorder"]
-   > ![Teknik Destek avantajı, olay gönderimi - planı seçme](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+   > ![Teknik destek avantajı olay gönderimi-sözleşme ekleme](_img/vs-tech-support/vs-tech-support-add-contract.png)
+
+4. **ERIŞIM kimliğinizi** ve **sözleşme kimliğinizi**girin.            **Ekle**'yi tıklatın.
+
+   > [!div class="mx-imgBorder"]
+   > ![Teknik destek avantajı olay gönderimi-sözleşme KIMLIĞI Ekle](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
+
+5. Sözleşmeniz eklendikten sonra, en üstteki **bir destek planı seçin** altında görünür. Planınız, başlıkta "MSDN" terimini içerecektir. Seçin, aşağı kaydırın ve **İleri**' ye tıklayın.
+
+   > [!div class="mx-imgBorder"]
+   > ![Teknik destek avantajı olay gönderimi-plan seçin](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
    > [!NOTE]
-   > Destek planı, önceki sayfaya dönün ve tıklayın görmüyorsanız **sonraki** yeniden.  Destek planı görüntülenecek başarısız olursa, destek sorununuzu metnini panonuza kopyalayın, sayfayı yenileyin ve desteği sorunu yeniden oluşturun.
+   > Destek planınızı görmüyorsanız önceki sayfaya dönün ve **İleri** ' ye tıklayın.  Bu, destek planını görüntülemezse, destek sorununun metnini panonuza kopyalayın, sayfayı yenileyin ve destek sorununu yeniden oluşturun.
 
-6. (Önem derecesi, kişi bilgilerini gözden geçirin) kalan adımları tamamlayın.   Olayınız gönderdikten sonra olayınız başarıyla gönderildi ve çalışması için dosyaları karşıya yükleyebilir, bir onay göreceksiniz. Bir destek uzmanı, olaya atanır ve seçtiğiniz kişi yöntemi kullanarak, sorunu çözmek için size ulaşsın.
+6. Kalan adımları (önem derecesi, iletişim bilgileri, gözden geçirme) doldurun.   Olayınızı gönderdikten sonra, olayınızın başarıyla gönderildiğini belirten bir onay görürsünüz ve büyük/küçük harfe dosya yükleyebilirsiniz. Olayınıza bir destek uzmanı atanacak ve seçtiğiniz iletişim yöntemini kullanarak sorununuzu çözmek için sizinle iletişime geçecektir.
 
-#### <a name="submit-an-incident-by-phone"></a>Telefonla bir olayı gönderme
+#### <a name="submit-an-incident-by-phone"></a>Telefonla bir olay gönderme
+Telefonda bir destek olayı oluşturmak istiyorsanız lütfen ülkeniz için [Müşteri Hizmetleri](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) telefon numarasını bulun. Lütfen çağırdığınızda sözleşme KIMLIĞINIZIN ve erişim KIMLIĞINIZIN kullanılabilir olduğundan emin olun.
 
-Telefon üzerinden bir destek olayı oluşturmak istiyorsanız, lütfen bulun [Müşteri Hizmetleri](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) ülkeniz için telefon numarası. Lütfen çağırdığınızda sözleşme Kimliğinizi ve erişim kimliği kullanılabilir sahip olun.
+#### <a name="submit-an-incident-within-the-azure-portal"></a>Azure portal içinde bir olay Gönder
+Azure ile ilgili sorunlar için Visual Studio aboneliğiniz teknik destek avantajını kullanabilmeniz için, sözleşme KIMLIĞINIZI ve erişim KIMLIĞINIZI Azure aboneliğinize bağlamanız gerekir.
 
-#### <a name="submit-an-incident-within-the-azure-portal"></a>Azure portalındaki bir olayı gönderme
+1. Ziyaret https://portal.azure.com edin ve oturum açın
+2. Sol taraftaki gezinmede **Yardım ve destek** ' e tıklayın.
+3. "Destek" altında **Yeni destek isteği** ' ne tıklayın.
 
-Azure'a ilgili sorunlar için Visual Studio aboneliği teknik destek teklifinizden kullanmak için erişim kimliği ve sözleşme Kimliği bilgilerinizi Azure aboneliğine bağlama gerekecektir.
-
-1. Ziyaret https://portal.azure.com ve oturum açın
-2. Sol gezinti bölmesinden tıklayın **Yardım + destek**
-3. "Destek" altında tıklayın **yeni destek isteği**
-
-## <a name="eligibility"></a>Uygunluk
+## <a name="eligibility"></a>Önceliği
 
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 4 olayı       |  Evet|
-| Visual Studio Professional (standart) | VL, Azure, perakende, seçili NFR<sup>2</sup>                                        | 2 olayları                                                          |Evet         |
-| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 2 olayları                                             |  Evet         |
-| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 2 olayları                                               | Evet         |
+| Visual Studio Enterprise (Standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> | 4 olay       |  Evet|
+| Visual Studio Professional (Standart) | VL, Azure, perakende, seçili NFR<sup>2</sup>                                        | 2 olay                                                          |Evet         |
+| Visual Studio Test Professional (Standart)                         | VL, perakende                                              | 2 olay                                             |  Evet         |
+| MSDN Platformları (Standart)                                          | VL, perakende                                              | 2 olay                                               | Evet         |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 ||
 
-<sup>1</sup> *içerir: Premium, BizSpark düşünün. Dışlar: Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP), Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, standart, en değerli Professional (MVP), bölgesel Yöneticisi (RD), MCT yazılımı ve Hizmetleri düşünün.*
+<sup></sup> 1*şunları içerir: Imagine Premium, BizSpark. Tutar For the satıl (NFR), Visual Studio sektör ortağı (VSıP), Microsoft İş Ortağı Ağı (MPN), FTE, MCT Software & Services geliştiricisi, Imagine Standard, en değerli profesyonel (MVP), bölgesel yönetmen (RD), MCT yazılım & Hizmetleri için değil.*
 
-<sup>2</sup> *içerir: Standart düşünün.*
+<sup></sup> 2*şunları içerir: Imagine standart.*
 
-Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
+Hangi aboneliğin kullanmakta olduğunuzdan emin değil misiniz?  E-posta adresinize atanan tüm abonelikleri görmek [içinbağlantısınıyapın. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Tüm aboneliklerinizi görmüyorsanız, farklı bir e-posta adresine atanmış bir veya daha fazla sahip olabilirsiniz.  Bu abonelikleri görmek için bu e-posta adresiyle oturum açmanız gerekir.

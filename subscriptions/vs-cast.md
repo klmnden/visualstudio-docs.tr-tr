@@ -1,110 +1,103 @@
 ---
-title: CAST vurgulama avantaj olarak Visual Studio abonelikleri | Microsoft Docs
+title: Visual Studio aboneliklerinde atama vurgusu avantajı | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+description: Seçili Visual Studio aboneliklerinde bulunan atama vurgusu avantajı hakkında bilgi edinin
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823677"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681200"
 ---
-# <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
+# <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde atama vurgulaması avantajı
+Geliştiricilerin, buluta geçiş yaparken yazılım üzerinde kritik Öngörüler olması gerekir. Visual Studio Enterprise aboneler, atama vurgulaması sayesinde uygulama kaynak kodlarını hızla tarayarak Azure 'a geçiş için uygulamalarının bulut hazırlığını tanımlayabilir ve bir geçiş sırasında ve sonrasında uygulamasının ilerlemesini izleyebilir.
 
-Geliştiriciler, buluta geçiş yaparken yazılımlarıyla ilgili kritik öngörüleri gerekir. Visual Studio Enterprise aboneleri, ATAMA Vurgu ile hızlı bir şekilde geçiş için Azure ve İzleyici, uygulama sırasında ve sonrasında bir geçiş uygulamalarını bulut hazırlığı tanımlamak için uygulama kaynak kodunu tarayabilirsiniz.
-
-Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar için ATAMA vurgulamak için ücretsiz, tam özellik bir aylık abonelik alabilirsiniz.
+Visual Studio Enterprise aboneler, her abone için en fazla beş uygulama için SAÇıLMASı için tek aylık ücretsiz bir abonelik alabilir.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
-2. CAST vurgulayın avantajı kutucuk "Araçlar" kategorisinde bulun ve tıklayarak **kodunu Al**.
+2. "Araçlar" kategorisindeki atama vurgusu avantajı kutucuğunu bulun ve **kodu al**' a tıklayın.
 
    > [!div class="mx-imgBorder"]
-   > ![CAST vurgulama avantajı kutucuğu](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![ATAMA vurgu avantajı kutucuğu](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Kodunuzu size bildiren bir ileti başarıyla aldı görürsünüz.  Tıklayın **etkinleştirme**, bu noktada, burada devam ederek etkinleştirme işlemi ATAMA vurgulayın sayfasına yeniden yönlendirilmeniz.  (Şimdi etkinleştirmeyi seçmezseniz, her zaman geri dönüştürme vurgulayın kutucuğa abonelik Portalı'nda dönebilirsiniz.  "Alma kodu" bağlantısı "Etkinleştir" olarak değişir ve tıklayarak etkinleştirme işlemi devam edecek.)
+0. Kodunuzun başarıyla alındığını bildiren bir ileti görürsünüz.  **Etkinleştir**' e tıklayın, bu noktada, etkinleştirme işlemine devam EDEBILECEĞINIZ atama vurgusu sayfasına yönlendirilirsiniz.  (Şimdi etkinleştirmeyi tercih ederseniz, abonelik portalındaki atama vurgusu kutucuğuna her zaman geri dönebilirsiniz.  "Kod al" bağlantısı "etkinleştir" olarak değişir ve tıklatmak etkinleştirme işlemini sürdürür.)
 
-0. Burada, aboneliğinizin özelliklerini inceleyebilirsiniz ATAMA vurgulayın sayfasına yönlendirilirsiniz.  Hesabınızı oluşturmak hazır olduğunuzda, yalnızca web formunda iletişim bilgilerinizi girin ve tıklatın **Gönder**.
+0. Aboneliğinizin özelliklerini keşfedebileceğiniz atama vurgusu sayfasına yönlendirilirsiniz.  Hesabınızı oluşturmaya hazırsanız, iletişim bilgilerinizi Web formunda sağlamanız ve **Gönder**' e tıklamanız yeterlidir.
 
     > [!div class="mx-imgBorder"]
-    > ![CAST vurgulama giriş sayfası](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![ATAMA vurgu giriş sayfası](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
 
    > [!NOTE]
-   > CAST vurgulayın avantajı etkinleştirmeleri on kuruluş başına sınırlıdır.  On etkinleştirme kurumunuza ait zaten kullanılan CAST vurgulayın avantajı aktive olacaktır ve daha fazla bilgi içeren bir e-posta alırsınız.
+   > ATAMA vurgu avantajı 'nın etkinleştirmeleri, kuruluş başına on ile sınırlıdır.  Kuruluşunuzun on etkinleştirmesi zaten tüketilmişse, atama vurgu avantajını etkinleştiremeyecektir ve daha fazla bilgi içeren bir e-posta alacaksınız.
 
-0. Bilgilerinizi gönderdikten sonra isteğiniz alınmasını onaylama bir sayfa görürsünüz.
+0. Bilgilerinizi gönderdikten sonra, isteğiniz alındığını onaylayan bir sayfa görürsünüz.
 
-    > [!div class="mx-imgBorder"]
-    > ![CAST vurgulama teşekkür ederiz sayfası](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
+0. ATAMA ekibi isteğinizi değerlendirir ve hesabınızın oluşturulmasını sonlandırmak için sizinle iletişim kuracaktır.
 
-0. ATAMA ekibi isteğinizi değerlendirir ve hesabınızı oluşturma işlemini sonlandırmak için sizinle iletişime geçecektir.
+0. Ayrıca, isteğiniz alındığını teyit eden CAST 'dan aşağıdaki e-postayı alacaksınız.
 
-0. Ayrıca, değerinden bool değerine ATAMA isteğiniz alınmasını onaylama, aşağıdaki e-posta alırsınız.
-
-   > *CAST vurgulayın - Microsoft Visual Studio Enterprise müşterileri için özel bir teklif 30 günlük erişimi etkinleştirmek isteğiniz için teşekkür ederiz!*
+   > *Microsoft Visual Studio Enterprise müşterileri için özel bir teklif sunmak üzere, atama vurgulaması için 30 günlük erişimi etkinleştirme isteğiniz için teşekkür ederiz!*
    >
-   > *Biz, şu anda isteğinizi etkinleştirme ve erişim ATAMA vurgulamak için inceliyorsunuz. En fazla 48 saat içindeki geri Me'yi duyacaktır.*
+   > *Şu anda etkinleştirme isteğinizi inceliyoruz ve atama vurgulamaya erişin. Beni en fazla 48 saat içinde dinleyecaksınız.*
    >
-   > *En iyi*
+   > *En iyi,* 
    > *Greg*
 
-İsteğiniz Onay sonrasında, hesabınızın oluşturma başarılı onaylama ve etkinleştirme işlemini tamamlamak için etkinleştirme bağlantısına tıklayın isteyen bir ikinci e-posta alacaksınız.
+İsteğiniz onaylanınca, hesabınızın başarıyla oluşturulmasını onaylayan ikinci bir e-posta alacaksınız ve etkinleştirme işlemini tamamlamaya yönelik etkinleştirme bağlantısına tıklamanız istenir.
 
-   > *Biz başarıyla doğrulandı ve ATAMA vurgulayın erişme isteğinizi doğrulandı. Aboard Hoş Geldiniz!*
+   > *ATAMA vurgulamaya erişim isteğinizi başarıyla doğruladık ve doğruladı. Karşılama ABO!*
    >
-   > *Gerekli bir son etkinleştirmeyi tamamlamak için son adımından yoktur. Bir e-posta almış olması gerekiyor noreply@casthighlight.com etkinleştirme bağlantısı ile. E-posta görmüyorsanız, istenmeyen posta kutusunu işaretleyin.*
+   > *Etkinleştirmenin tamamlanabilmesi için en son bir adım daha vardır. Bir etkinleştirme bağlantısı noreply@casthighlight.com ile bir e-posta almış olursunuz. E-postayı görmüyorsanız, istenmeyen posta kutusunu işaretleyin.*
    >
-   > *Lütfen e-postasındaki etkinleştirme bağlantısını tıklatın ve etkinleştirme işleminizi tamamlayın.*
+   > *Lütfen e-postada sunulan etkinleştirme bağlantısına tıklayın ve etkinleştirme işleminizi doldurun.*
    >
-   > *Sonra bir 30 günlük 5 uygulamaları ekleme yapabilir ve platform ATAMA vurgulayın erişiminiz. Bu özel teklif yalnızca Microsoft Visual Studio Enterprise müşterileri tarafından kullanılabilir olmadığını unutmayın.*
+   > *Etkinleştirildikten sonra, atama vurgu platformuna 30 gün erişimi olur ve 5 adede kadar uygulama ekleyebilirsiniz. Bu, yalnızca müşterilere Microsoft Visual Studio Enterprise için sunulan özel bir teklif olduğunu lütfen unutmayın.*
    >
-   > *Her şeyin sorunsuz sizin için hareket etmesini sağlamak için dokunma içinde olacaktır. Bu arada, başlamanıza yardımcı olmak için bazı faydalı içeriği şu şekildedir:*
+   > *Her şeyin sizin için sorunsuz bir şekilde taşınmasını sağlamak için iletişim kuracağım. Bu sırada, başlamanıza yardımcı olacak bazı yararlı içerikler aşağıda verilmiştir:*
    >
-   > - [CAST vurgulama - CloudReadiness Tanıtımı](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [CAST açıkton-CloudReadiness tanıtımı](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
    > - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-   > - Video Öğreticisi - [portföyünüzü yapılandırın](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-   > - Video Öğreticisi - [dahili uygulamalarınızı](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   > - Video öğreticisi- [portföyünüzü yapılandırma](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Video öğreticisi- [uygulamalarınızı](https://www.youtube.com/watch?v=x-7Dsn3Rmw4) ekleme
    >
-   > *En iyi*
+   > *En iyi,* 
    > *Greg*
 
    > [!NOTE]
-   > Aldığınız e-posta etkinleştirme bağlantıya tıkladığınızdan emin olun.  Aksi takdirde, ATAMA vurgulayın aboneliğinize erişmek mümkün olmayacaktır. E-posta kutunuzda görmüyorsanız, istenmeyen posta klasörlerinizi denetleyin emin olun.
+   > Aldığınız e-postadaki etkinleştirme bağlantısına tıkladığınızdan emin olun.  Aksi takdirde, atama vurgusu aboneliğinize erişemezsiniz. E-postayı gelen kutunuzda görmüyorsanız, istenmeyen posta klasörlerinizi denetlediğinizden emin olun.
 
-## <a name="eligibility"></a>Uygunluk
-
+## <a name="eligibility"></a>Önceliği
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart)   | VL, Azure, perakende | 5 değerlendirmek 30 gün için uygulamalar|  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yok                                                             |  Yok          |
-| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yok                                             |  Yok           |
-| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yok                                              |  Yok          |
-| Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
+| Visual Studio Enterprise (Standart)   | VL, Azure, perakende, | 30 gün boyunca 5 uygulama değerlendirin|  Hayır.  Yalnızca yeni aboneler tarafından kullanılabilir          |
+| Visual Studio Professional (Standart) | VL, Azure, perakende                                       | Yok                                                             |  Yok          |
+| Visual Studio Test Professional (Standart)                         | VL, perakende                                              | Yok                                             |  Yok           |
+| MSDN Platformları (Standart)                                          | VL, perakende                                              | Yok                                              |  Yok          |
+| Visual Studio Enterprise (Standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 
-<sup>1</sup>*içerir:  Değil for Resale (NFR), Trainer, BizSpark FTE, en değerli Professional (MVP), bölgesel Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
+<sup></sup>1*şunları içerir:    İçin değil (NFR), FTE, en değerli profesyonel (MVP), bölgesel Müdürü (RD), Microsoft İş Ortağı Ağı (MPN), Visual Studio sektör ortağı (VSıP), Microsoft Sertifikalı Trainer, BizSpark, Imagine*
 
 > [!NOTE]
-> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+> Microsoft artık Visual Studio Professional yıllık abonelikler ve Visual Studio Enterprise yıllık abonelikleri bulut aboneliklerinde sunmayacaktır. Mevcut müşteriler deneyiminde değişiklik yapılmaz ve aboneliklerini yenileyebilme, artırma, azaltma veya iptal etme imkanına sahip olmayacaktır. Yeni müşterilerin, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio 'yu satın almaya yönelik farklı seçeneklere göz atın.
 
-Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
+Hangi aboneliğin kullanmakta olduğunuzdan emin değil misiniz?  E-posta adresinize atanan tüm abonelikleri görmek [içinbağlantısınıyapın. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Tüm aboneliklerinizi görmüyorsanız, farklı bir e-posta adresine atanmış bir veya daha fazla sahip olabilirsiniz.  Bu abonelikleri görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
-- CAST vurgulayın kullanma konusunda yardım mı ihtiyacınız var?  Bu kaynaklara göz atın:
-  - [Bir destek isteği gönderin](https://casthighlight.com/support/)
+- ATAMA vurgulaması kullanımıyla ilgili yardıma mı ihtiyacınız var?  Şu kaynaklara göz atın:
+  - [Destek isteği gönder](https://casthighlight.com/support/)
   - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
-- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
-- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.
+- Visual Studio IDE, Azure DevOps Services veya diğer Visual Studio ürünleri veya hizmetleri hakkında sorularınız mı var?  [Visual Studio desteği](https://visualstudio.microsoft.com/support/)' ni ziyaret edin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
+Aboneliğiniz ile birlikte gelen Azure avantajını henüz etkinleştirmediyseniz, [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure aboneliğinizi kurmak ve Azure kredilerinizi kullanmak için Araçlar kategorisindeki Azure kutucuğuna tıklayın ve tıklayın.
 
-Aboneliğinizle birlikte gelen Azure avantajı etkinleştirmediyseniz, ziyaret [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve azure'da Azure aboneliğinizi ayarlama ve Azure kredilerinizi kullanmak için Araçlar kategorisinde kutucuğuna tıklayın.
-
-Ve tanıtım, kullanıcının Kılavuzu ve öğretici videolar Greg'ın e-postada sizden kullanıma unutmayın.
+Ve Greg 'in e-postasında bahsedilen tanıtım, Kullanıcı Kılavuzu ve öğretici videolarını kullanıma almayı unutmayın.

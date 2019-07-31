@@ -5,25 +5,25 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 06/13/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 05c41988282cb5f6ae643b1abdb05c0b4b0e5c9b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 325489f243e6942cf02df406937f4d19cd21ed0d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461872"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681751"
 ---
 # <a name="net-core-support"></a>.NET Core Desteği
 
 Aşağıdaki tabloda, Mac için Visual Studio 'nin kararlı ve önizleme sürümleri tarafından desteklenen .NET Core sürümleri açıklanmaktadır:
 
-.NET Core SDK sürümü |Mac için Visual Studio 8,1 (kararlı) | Mac için Visual Studio 8,2 (kararlı) | Mac için Visual Studio 8,3 (Önizleme) |
+| .NET Core SDK sürümü |Mac için Visual Studio 8,1 (kararlı) | Mac için Visual Studio 8,2 (kararlı) | Mac için Visual Studio 8,3 (Önizleme) |
 |---------|---------|---------|---------|
 |v 2.1.0-v 2.1.5 xx | | | |
 |v 2.1.600 + |✔ ︎|✔ ︎|✔ ︎|
 |v 2.2.1-v 2.2.1 xx | | | |
 |v 2.2.200 + |✔ ︎|✔ ︎|✔ ︎|
 |v 3.0 < Preview 3 | | | |
-|v 3.0 Preview 3, 4, 5 |✔ ︎|✔ ︎|✔ ︎ ︎|︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎
+|v 3.0 Preview 3, 4, 5 |✔ ︎|✔ ︎|✔ ︎|
 |v 3.0 Preview 6 + | |✔ ︎|✔ ︎|
 
 > [!IMPORTANT]

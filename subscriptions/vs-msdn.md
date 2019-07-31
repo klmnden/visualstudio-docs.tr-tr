@@ -1,69 +1,59 @@
 ---
-title: MSDN Magazine avantajı olarak Visual Studio abonelikleri | Microsoft Docs
+title: Visual Studio aboneliklerinde MSDN Magazine avantajı | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
-description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
-ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Visual Studio aboneliğinize dahil edilen MSDN Magazine aboneliğini almak için kaydolun.
+ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250781"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681574"
 ---
-# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
-
-Gerçek sorunlara pratik çözümler için Microsoft teknolojilerinin kapsamlı'yi tıklatın.  Aboneliğinize bağlı olarak, yazdırılan dergi veya dijital sürümüne erken erişim hakkı tanır.
+# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde MSDN Magazine avantajı
+Gerçek dünya sorunlarına yönelik pratik çözümler için Microsoft teknolojilerinin kapsamlı kapsamı.  Aboneliğinize bağlı olarak, yazdırılmış dergi veya dijital sürüme erken erişim hakkına sahip olursunuz.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-Adımlar avantajınızı etkinleştirmek için seçtiğiniz sürüm bağlıdır.
-
-### <a name="digital-edition"></a>Dijital sürüm
-Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
-
-1. Dijital MSDN Edition Magazine'in erişmek için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. MSDN Magazine kutucuk profesyonel geliştirme bölümünde bulun ve tıklatın **erişim**.
-
-### <a name="printed-edition"></a>Yazdırılabilir sürüm
-1. İçin MSDN Magazine aboneliği almaya başlamak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. MSDN Magazine kutucuk profesyonel geliştirme bölümünü bulun ve tıklayın **abone ol** MSDN Magazine aboneliği kutucuğundaki. (Tıklayın "!" içinde dijital baskı erişmek için kutucuğun sağ üst köşesindeki.)
-   > [!div class="mx-imgBorder"]
-   > ![MSDN Magazine avantajı kutucuğu](_img/vs-msdn/vs-msdn-tile.png)
-
-3. MSDN Magazine sayfasında, tercih edilen abonelik türü seçin.  Dijital sürüm nerede olursa olsun ücretsiz olarak seçebilirsiniz.  Yazdırılabilir sürüm ABD vatandaşlar için ücretsiz olarak kullanılabilir.  Yazdırılan sürümleri ABD dışı adreslere gönderilen iade sevkiyat ücretleri uygulanır.
+1. MSDN Magazine 'e abone olmak için oturum açın [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Profesyonel geliştirme bölümünde MSDN Magazine kutucuğunu bulun ve **erişim**' e tıklayın.
+3. MSDN Magazine sayfasında, tercih ettiğiniz abonelik türünü seçin.  Nerede olursanız olsun, dijital sürümü ücretsiz olarak seçebilirsiniz.  Yazdırılmış sürüm, BIZLERI ücretsiz olarak kullanılabilir.  Gönderim ücretleri ABD dışı adreslere gönderilen yazdırılmış sürümler için geçerlidir.
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine avantajı abonelikleri](_img/vs-msdn/vs-msdn-subs-page-resized.png)
-
-4. İstenen kişi bilgilerini sağlayın ve tıklayın **Gönder**.  (Seçtiğiniz magazine sürümünü Magazine aboneliği bölümünde görünür.  Yazdırılan sürümü seçerseniz, ilk seçenek okuyacaksa **Evet!  Ücretsiz MSDN dergisi (12 sorunları) 1 yıllık almak istiyorum**.)
+4. İstenen iletişim bilgilerini sağlayın ve **Gönder**' e tıklayın.  (Seçtiğiniz dergi sürümü, dergi aboneliği bölümünde görünür.  Yazdırılmış sürümü seçerseniz, ilk seçenek Evet ' i okuyacaktır **!  MSDN Magazine 'in ÜCRETSIZ**olarak 1 yıl (12 sorun) almak istiyorum.)
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine avantajı profili](_img/vs-msdn/vs-msdn-profile.png)
+5. Hepsi bu kadar çok.  Seçtiğiniz dergi sürümüne bağlı olarak, sonraki sürümle en son çevrimiçi sürümlerin bağlantılarıyla birlikte yazdırılmış dergileri veya e-postaları almaya başlayabilirsiniz.  Tadını!
 
-5. Tüm İşte bu kadar kolay.  Seçtiğiniz magazine sürümüne bağlı olarak, yazdırılan dergi veya sonraki sürümü ile çevrimiçi en son sürümlerine bağlantılarını e-posta teslim alma ya da başlarsınız.  Keyfini çıkarın!
-
-## <a name="eligibility"></a>Uygunluk
-
+## <a name="eligibility"></a>Önceliği
 | Abonelik düzeyi                                                 |     Kanallar                                            | Faydası                                                          | Yenilenebilir?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> |Yazdırılabilir sürüm       |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir          |
-| Visual Studio Professional (standart) | VL, Azure, perakende                                       | Yazdırılabilir sürüm                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | Yazdırılabilir sürüm                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | Yazdırılabilir sürüm                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
+| Visual Studio Enterprise (Standart)   | VL, Azure, perakende, seçili NFR<sup>1</sup> |Yazdırılmış sürüm       |  Hayır.  Yalnızca yeni aboneler tarafından kullanılabilir          |
+| Visual Studio Professional (Standart) | VL, Azure, perakende                                       | Yazdırılmış sürüm                                                            |Hayır.  Yalnızca yeni aboneler tarafından kullanılabilir         |
+| Visual Studio Test Professional (Standart)                         | VL, perakende                                              | Yazdırılmış sürüm                                             |  Hayır.  Yalnızca yeni aboneler tarafından kullanılabilir         |
+| MSDN Platformları (Standart)                                          | VL, perakende                                              | Yazdırılmış sürüm                                              | Hayır.  Yalnızca yeni aboneler tarafından kullanılabilir         |
 |Visual Studio Enterprise, Visual Studio Professional (aylık bulut)   | Azure |Yok      |  Yok         |
 ||
 
-<sup>1</sup>*yazdırılan sürümü:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP) FTE, Microsoft iş ortağı ağı (Kurumsal) (Premium) düşünün.*
+<sup></sup>1*yazdırılmış sürüm:    Satılamaz (NFR), Visual Studio sektör ortağı (VSıP), FTE, Microsoft İş Ortağı Ağı (Enterprise), Imagine (Premium).*
 
-*Dijital sürüm: MCT yazılım ve Hizmetleri, en değerli Professional (MVP), bölgesel Yöneticisi (RD).*
+*Dijital sürüm: MCT Software & Hizmetleri, en değerli profesyonel (MVP), bölgesel Müdürü (RD).*
 
-*Dışlar:  Imagine (standart), BizSpark, MCT yazılım ve geliştirici Hizmetleri*
+*Tutar  Imagine (Standart), BizSpark, MCT Software & Services Geliştirici*
 
 > [!NOTE]
-> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+> Microsoft artık Visual Studio Professional yıllık abonelikler ve Visual Studio Enterprise yıllık abonelikleri bulut aboneliklerinde sunmayacaktır. Mevcut müşteriler deneyiminde değişiklik yapılmaz ve aboneliklerini yenileyebilme, artırma, azaltma veya iptal etme imkanına sahip olmayacaktır. Yeni müşterilerin, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio 'yu satın almaya yönelik farklı seçeneklere göz atın.
 
-Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
+Hangi aboneliğin kullanmakta olduğunuzdan emin değil misiniz?  E-posta adresinize atanan tüm abonelikleri görmek [içinbağlantısınıyapın. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Tüm aboneliklerinizi görmüyorsanız, farklı bir e-posta adresine atanmış bir veya daha fazla sahip olabilirsiniz.  Bu abonelikleri görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
-- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
-- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.
+- Visual Studio IDE, Azure DevOps Services veya diğer Visual Studio ürünleri veya hizmetleri hakkında sorularınız mı var?  [Visual Studio desteği](https://visualstudio.microsoft.com/support/)' ni ziyaret edin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+Aboneliğinizde daha fazla profesyonel geliştirme fırsatına göz atın:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [DataCamp](vs-datacamp.md)

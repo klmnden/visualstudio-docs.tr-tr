@@ -1,59 +1,59 @@
 ---
-title: Azure Danışmanı Sohbeti avantajı olarak Visual Studio abonelikleri | Microsoft Docs
+title: Visual Studio aboneliklerinde Azure danışmanlık sohbeti avantajı | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbeti avantajı yararlanmak öğrenin.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Visual Studio aboneliklerine dahil edilen Azure danışmanlık sohbeti avantajlarından nasıl yararlanabileceğinizi öğrenin.
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250837"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681712"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
-
-Azure ile başlamaya yönelik gerçek zamanlı yardım alın! Azure PaaS hizmetlerine yönelik danışmanlık dahildir.  Azure Danışmanı Sohbeti avantajı, Visual Studio Enterprise standart ve yıllık bulut aboneliklerine sunulur.
+Gerçek zamanlı olarak Azure ile başlayan yardım alın! Azure PaaS hizmetleri için danışmanlık içerir.  Azure danışmanlık sohbeti avantajı, Visual Studio Enterprise standart ve yıllık bulut aboneliklerinde sunulmaktadır.
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
-
-Azure Danışmanı Sohbeti kullanarak kolay bir işlemdir.
+Azure danışmanlık sohbetini kullanmak kolaydır.
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
-2. Azure Danışmanı Sohbeti kutucuk destek bölümüne bulun ve tıklatın **Şimdi Sohbet Et**.
+2. Destek bölümünde Azure danışmanlık sohbet kutucuğunu bulun ve **Şimdi sohbet**' e tıklayın.
     > [!div class="mx-imgBorder"]
-    > ![Azure Danışmanı Sohbeti kutucuğu](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > ![Azure danışmanlık sohbet kutucuğu](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
-3. Hizmet şu anda hesap, faturalama ve abonelik sorunları için destek dışında yalnızca İngilizce dilinde sunulur bir bildirim görürsünüz.            **Devam**'a tıklayın.
+3. Hizmetin Şu anda yalnızca hesap, faturalandırma ve abonelik sorunları için destek dışında Ingilizce olarak sunulmakta olduğunu belirten bir bildirim görürsünüz.            **Devam**'a tıklayın.
     > [!div class="mx-imgBorder"]
-    > ![Azure Danışmanı Sohbeti sorumluluk reddi](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > ![Azure danışmanlık sohbet reddi](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
-4. Tüm İşte bu kadar kolay.  Sohbet penceresi açılır ve kuyrukta nerede tamamlanamayacağını durumu görürsünüz.  Sohbet sonraki kullanılabilir uzmanı tarafından yanıtlanacaktır.
+4. Hepsi bu kadar çok.  Bir sohbet penceresi açılır ve kuyrukta nerede olduğunuzu bilmenizi sağlayan bir durum görürsünüz.  Sohbet, bir sonraki kullanılabilir uzman tarafından yanıtlanacaktır.
     > [!div class="mx-imgBorder"]
     > ![Azure Danışmanı Sohbeti](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
-## <a name="eligibility"></a>Uygunluk
-
+## <a name="eligibility"></a>Önceliği
 |                                                      Abonelik düzeyi                                                      |     Kanallar      |    Faydası    | Yenilenebilir? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (standart)                                       | VL, Azure, perakende |   Bir yıl    |    Evet     |
-| Visual Studio Professional (standart, aylık bulut) Visual Studio Enterprise (NFR aylık bulut<sup>1</sup>) |        Tümü        | Yok |     Hayır     |
-|                                          Visual Studio Test Professional (standart)                                          |        Tümü        | Yok |     Hayır     |
-|                                                  MSDN platformları (standart)                                                   |        Tümü        | Yok |     Hayır     |
+|                                      Visual Studio Enterprise (Standart)                                       | VL, Azure, perakende |   Bir yıl    |    Evet     |
+| Visual Studio Professional (Standart, aylık bulut) Visual Studio Enterprise (aylık bulut, NFR<sup>1</sup>) |        Tümü        | Yok |     Hayır     |
+|                                          Visual Studio Test Professional (Standart)                                          |        Tümü        | Yok |     Hayır     |
+|                                                  MSDN Platformları (Standart)                                                   |        Tümü        | Yok |     Hayır     |
 
-<sup>1</sup>*içerir:  Değil satışıyla (NFR), en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Visual Studio Endüstri ortağı (VSIP), BizSpark, Imagine, MCT*
+<sup></sup>1*şunları içerir:    Satılamaz (NFR), en değerli profesyonel (MVP), bölgesel Müdürü (RD), Visual Studio Endüstri ortağı (VSıP), BizSpark, ımact*
 
 > [!NOTE]
-> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
+> Microsoft artık Visual Studio Professional yıllık abonelikler ve Visual Studio Enterprise yıllık abonelikleri bulut aboneliklerinde sunmayacaktır. Mevcut müşteriler deneyiminde değişiklik yapılmaz ve aboneliklerini yenileyebilme, artırma, azaltma veya iptal etme imkanına sahip olmayacaktır. Yeni müşterilerin, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio 'yu satın almaya yönelik farklı seçeneklere göz atın.
 
-Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
+Hangi aboneliğin kullanmakta olduğunuzdan emin değil misiniz?  E-posta adresinize atanan tüm abonelikleri görmek [içinbağlantısınıyapın. https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Tüm aboneliklerinizi görmüyorsanız, farklı bir e-posta adresine atanmış bir veya daha fazla sahip olabilirsiniz.  Bu abonelikleri görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>S:  Azure Danışmanı Sohbeti ve Azure Danışmanı arasındaki fark nedir?
-- Y:  Azure Danışmanı ile sohbet, Azure hakkında sorularınız varsa yardımcı olmak için gerçek zamanlı bir sohbet hizmetidir. [Azure Danışmanı](/azure/advisor/advisor-overview) olan yardımcı olan kişiselleştirilmiş bulut Danışmanı, Azure dağıtımlarınızın iyileştirilmesine yönelik en iyi uygulamaları izleyin. Bu, kaynak yapılandırmanızı ve kullanım telemetrinizi analiz eder ve maliyet verimliliğini, performansını, yüksek kullanılabilirlik ve Azure kaynaklarınızın güvenliğini geliştirmenize yardımcı olabilecek çözümler önerir.
+### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Ç  Azure danışmanlık sohbeti ve Azure danışmanı arasındaki fark nedir?
+- Y:  Azure danışmanlık sohbeti, Azure hakkındaki sorulara yardımcı olacak gerçek zamanlı bir sohbet hizmetidir. [Azure Danışmanı](/azure/advisor/advisor-overview) , Azure dağıtımlarınızı iyileştirmek için en iyi yöntemleri izlemenize yardımcı olan kişiselleştirilmiş bir bulut danışmanıdır. Kaynak yapılandırmanızı ve kullanım telemetrinizi analiz ederek Azure kaynaklarınızın maliyet verimliliğini, performansını, yüksek kullanılabilirliğini ve güvenliğini artırmanıza yardımcı olabilecek çözümler önerir.
 
 ## <a name="support-resources"></a>Destek kaynakları
-- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
-- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.
+- Visual Studio IDE, Azure DevOps Services veya diğer Visual Studio ürünleri veya hizmetleri hakkında sorularınız mı var?  [Visual Studio desteği](https://visualstudio.microsoft.com/support/)' ni ziyaret edin.
+
+## <a name="next-steps"></a>Sonraki adımlar
+Birçok Visual Studio aboneliği, Azure kredilerini içerir.  Henüz hiç etkinleştirmediyseniz [Azure avantajına](vs-azure.md)göz atın. 

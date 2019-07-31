@@ -62,9 +62,7 @@
 #### [Ön üretim envanteri](admin-inventory.md)
 #### [Büyük takımları ve dışarıdan yüklenicileri yönetme](manage-teams.md)
 #### [Kullanıcı atamalarını izleme ve siparişleri işleme](assignments-orders.md)
-### [Toplu Lisanslama](volume-license-admins.md)
 ### Kuruluşunuzu ekleme
-#### [Geçiş sonrası ekleme](post-migration-onboarding.md)
 #### [Açık ve Açık Lisans Geçişi](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Bulut abonelikleri](cloud-admin.md)

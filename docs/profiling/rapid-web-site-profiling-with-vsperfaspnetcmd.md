@@ -1,5 +1,5 @@
 ---
-title: VSPerfASPNETCmd ile Hızlı Web sitesi profili oluşturma | Microsoft Docs
+title: VSPerfASPNETCmd ile hızlı web sitesi profili oluşturma | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,95 +10,97 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431969"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681131"
 ---
-# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd ile hızlı web sitesi profili oluşturma
 
-**VSPerfASPNETCmd** komut satırı aracı sayesinde profiline bir kolayca [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamaları. Comparison için [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracı seçenekleri sınırlı, hiçbir ortam değişkenlerini ayarlamak sahip ve bilgisayarın yeniden başlatılması gerekli değildir. Kullanarak **VSPerfASPNETCmd** bağımsız Profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: Bağımsız profil oluşturucuyu yükleme](../profiling/how-to-install-the-stand-alone-profiler.md).
-
-> [!NOTE]
-> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
-
- Eşzamanlılık verileri toplama veya duraklatma ve sürdürme kullanarak profil oluşturma gibi bazı senaryolarda **VSPerfCmd** tercih edilen profil oluşturma yöntemidir.
+**VSPerfASPNETCmd** komut satırı aracı, Web uygulamalarını kolayca profillemenize [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] olanak sağlar. [VSPerfCmd](../profiling/vsperfcmd.md) komut satırı aracına kıyasla, seçenekler azalır, hiçbir ortam değişkeni ayarlanamaz ve bilgisayarın yeniden başlatılması gerekli değildir. **VSPerfASPNETCmd** kullanmak, tek başına profil Oluşturucu ile profil oluşturma için tercih edilen yöntemdir. Daha fazla bilgi için [nasıl yapılır: Tek başına profil oluşturucuyu](../profiling/how-to-install-the-stand-alone-profiler.md)yükler.
 
 > [!NOTE]
-> Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
+> Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz. [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="profile-an-aspnet-application"></a>Bir ASP.NET uygulamasının profilini oluşturun
-
-Profil için bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, aşağıdaki bölümlerde açıklanan komutlardan birini yazın. Web sitesi başlatılır ve Profil Oluşturucu veri toplamaya başlar. Uygulamanızın çalışma ve tarayıcıyı kapatın. Profil oluşturmayı durdurmak için basın **Enter** komut istemi penceresinde anahtar.
+ Eşzamanlılık verileri toplama veya profil oluşturmayı duraklatma ve sürdürme gibi bazı senaryolarda, **VSPerfCmd** kullanılması tercih edilen profil oluşturma yöntemidir.
 
 > [!NOTE]
-> Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Kullanabileceğiniz **/nowait** döndürmek için komut istemi zorlamak için seçeneği. Bkz: [/nowait seçeneğini](#use-the-nowait-option).
+> Profil oluşturma araçlarının yolunu almak için, bkz. [komut satırı araçlarının yolunu belirtme](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
+
+## <a name="profile-an-aspnet-application"></a>ASP.NET uygulaması profili oluşturma
+
+Bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması profili eklemek için aşağıdaki bölümlerde açıklanan komutlardan birini yazın. Web sitesi başlatılır ve profil oluşturucu veri toplamaya başlar. Uygulamanızı alıştırma yapın ve ardından tarayıcıyı kapatın. Profil oluşturmayı durdurmak için komut istemi penceresindeki **ENTER** tuşuna basın.
+
+> [!NOTE]
+> Varsayılan olarak, komut istemi bir **VSPerfASPNETCmd** komutundan sonra döndürmez. Komut istemi 'ni döndürmesini zorlamak için **/nowait** seçeneğini kullanabilirsiniz. Bkz. [/NoWait seçeneğini kullanma](#use-the-nowait-option).
 
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak uygulama istatistikleri toplamak için
- Örnekleme profili oluşturma yöntemi, varsayılan değerdir **VSPerfASPNETCmd** araç ve komut satırında belirtilmesi gerekmez. Aşağıdaki komut satırı belirtilen web uygulamasından uygulama istatistikleri toplar:
+ Örnekleme, **VSPerfASPNETCmd** aracının varsayılan profil oluşturma yöntemidir ve komut satırında belirtilmesi gerekmez. Aşağıdaki komut satırı, belirtilen Web uygulamasından uygulama istatistiklerini toplar:
 
  **vsperfaspnetcmd**  *websiteUrl*
 
-## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Ayrıntılı izleme metodunu kullanarak zamanlama verileri toplamak için
+ Yerel sunucu tarafından barındırılan bir *WebSiteUrl 'si* *http://localhost/MySite/default.aspx* örneği olabilir. Dış siteye *http://www.contoso.com* bir örnek. Daha fazla bilgi için, [Visual Studio 'da bir proje açmadan bir Web sitesi profili oluşturma](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)' daki örnek URL 'ler bölümüne bakın.
 
-Dinamik olarak derlenmiş ayrıntılı zamanlama verileri toplamak için şu komut satırını kullanın [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması:
+## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>İzleme yöntemini kullanarak ayrıntılı zamanlama verileri toplama
 
-**vsperfaspnetcmd/Trace***websiteUrl*
+Dinamik olarak derlenen [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] bir Web uygulamasından ayrıntılı zamanlama verileri toplamak için aşağıdaki komut satırını kullanın:
 
-Statik olarak profil isterseniz derlenmiş. *dll* dosyaları web uygulamanızda kullanarak dosyaları işaretlemelidir [Vsınstr](../profiling/vsinstr.md) komut satırı aracı. Vsperfaspnetcmd/Trace komut dosyalarından izleme eklenmiş veriler içerir.
+**vsperfaspnetcmd/Trace**  *websiteUrl*
+
+Statik olarak derlenen profil eklemek istiyorsanız. *DLL* dosyaları Web uygulamanızda, [VSInstr](../profiling/vsinstr.md) komut satırı aracını kullanarak dosyaları seçmeniz gerekir. VSPerfASPNETCmd/Trace komutu, Araçlı dosyalardaki verileri içerir.
 
 ## <a name="to-collect-net-memory-data"></a>.NET bellek verileri toplamak için
 
-**/Memory** seçeneği nesnelerin .NET bellek ayırma hakkında veri toplar ve bu nesnelerin yaşam süresi hakkında veri toplayabilirsiniz. Ayırma veri koleksiyondur varsayılan modunu **/Memory** veri seçenek ve komut satırında belirtilmesi gerekmez.
+**/Memory** seçeneği, .net bellekte nesnelerin ayrılması hakkındaki verileri toplar ve bu nesnelerin yaşam süresi hakkında veri toplayabilir. Ayırma verisi toplama, **/Memory** veri seçeneğinin varsayılan modudur ve komut satırında belirtilmesi gerekmez.
 
- **vsperfaspnetcmd /memory** *websiteUrl*
+ **VSPerfASPNETCmd/Memory** *WebSiteUrl 'si*
 
- Kullanım **ömrü** nesne yaşam verisi ayrıca ayırma verileri toplamak için parametre:
+ Ayırma verilerine ek olarak nesne yaşam süresi verilerini toplamak için **ömür** parametresini kullanın:
 
- **vsperfaspnetcmd /memory:lifetime** *websiteUrl*
+ **VSPerfASPNETCmd/Memory: ömür** *WebSiteUrl 'si*
 
- Ayrıca **/Trace** .NET bellek verileri ile ayrıntılı zamanlama bilgileri içerecek şekilde seçeneği:
+ .NET bellek verileriyle ayrıntılı zamanlama bilgilerini eklemek için **/Trace** seçeneğini de kullanabilirsiniz:
 
- **vsperfaspnetcmd /memory**[ **: ömür**]   **/trace**`websiteUrl`
+ **VSPerfASPNETCmd/Memory** [ **: Lifetime**] **/Trace**`websiteUrl`
 
-## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verileri toplamak için
+## <a name="to-collect-tier-interaction-data"></a>Katman etkileşim verilerini toplamak için
 
 > [!WARNING]
-> Katman etkileşimli profil oluşturma (TIP) verileri, herhangi bir Visual Studio sürümünü kullanarak toplanabilir. Ancak, yalnızca Visual Studio Enterprise'da katman etkileşimli profil oluşturma veri görüntülenebilir.
+> Katman etkileşimi profil oluşturma (tıp) verileri, herhangi bir Visual Studio sürümü kullanılarak toplanabilir. Ancak, katman etkileşimi profil oluşturma verileri yalnızca Visual Studio Enterprise görüntülenebilir.
 >
-> Windows 8 veya Windows Server 2012'de ipucu verilerini toplamak için izlemeyi kullanma ( **/trace**) seçeneği.
+> Windows 8 veya Windows Server 2012 ' de tıp verisi toplamak için, izleme ( **/Trace**) seçeneğini kullanmanız gerekir.
 
-Veri örnekleme ile Katman etkileşim verileri toplamak için:
+Örnekleme verileriyle katman etkileşim verileri toplamak için:
 
-**vsperfaspnetcmd ıntellitrace'in** `websiteUrl`
+**VSPerfASPNETCmd/tip**`websiteUrl`
 
-Katman etkileşim verileri ile ölçümlü izleme verilerini toplamak için:
+Katman etkileşimi verilerini izleme verileriyle toplamak için:
 
-**vsperfaspnetcmd/Trace ıntellitrace'in** *websiteUrl*
+**VSPerfASPNETCmd/Trace/tip** *WebSiteUrl 'si*
 
-Katman etkileşim verileri ile .NET bellek verileri toplamak için:
+.NET bellek verileriyle katman etkileşim verileri toplamak için:
 
-**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
+**VSPerfASPNETCmd/Memory** [ **: Lifetime**] **/tip** _WebSiteUrl 'si_
 
-## <a name="use-the-nowait-option"></a>/ Nowait seçeneğini kullanın
+## <a name="use-the-nowait-option"></a>/NoWait seçeneğini kullanın
 
-Varsayılan olarak, sonra Komut İstemi'ni döndürmeyen bir **vsperfaspnetcmd** komutu. Döndürülecek komut istemi zorlamak için aşağıdaki sözdizimi seçeneğini kullanabilirsiniz. Ardından, komut istemi penceresinde diğer işlemleri gerçekleştirebilirsiniz. Profil oluşturma sona erdirmek için kullanmak **/shutdown** seçeneği ayrı bir **vsperfaspnetcmd** komutu.
+Varsayılan olarak, komut istemi bir **VSPerfASPNETCmd** komutundan sonra döndürmez. Komut istemi 'ni döndürmesini zorlamak için aşağıdaki söz dizimi seçeneğini kullanabilirsiniz. Daha sonra komut istemi penceresinde başka işlemler gerçekleştirebilirsiniz. Profil oluşturmayı sonlandırmak için, **/Shutdown** seçeneğini ayrı bir **VSPerfASPNETCmd** komutunda kullanın.
 
-Profil oluşturma başlamak için:
+Profil oluşturmaya başlamak için:
 
-**vsperfaspnetcmd** [ */Seçenekler*] **/nowait**_websiteUrl_
+**VSPerfASPNETCmd** [ */Options*] **/nowait** _WebSiteUrl 'si_
 
-Profil oluşturma sona erdirmek için:
+Profil oluşturmayı sonlandırmak için:
 
-**vsperfaspnetcmd/shutdown** *websiteUrl*
+**VSPerfASPNETCmd/Shutdown** *WebSiteUrl 'si*
 
-## <a name="additional-options"></a>Ek Seçenekler
+## <a name="additional-options"></a>Ek seçenekler
 
-Aşağıdaki seçeneklerden herhangi biri daha önce hariç Bu bölümde listelenen komutlar ekleyebilirsiniz **vsperfaspnetcmd/shutdown** komutu.
+Aşağıdaki seçeneklerden herhangi birini, **VSPerfASPNETCmd/Shutdown** komutu hariç, bu bölümün önceki kısımlarında listelenen komutlara ekleyebilirsiniz.
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**/ Çıktı:** `VspFile`|Varsayılan olarak, profil oluşturma verilerinin (. *Vsp*) dosyası geçerli dizin dosyası adıyla oluşturulur **PerformanceReport.vsp**. / Output seçeneği farklı bir konum, dosya adı veya her ikisini de belirtmek için kullanın.|
-|**/ PackSymbols: kapalı**|Varsayılan olarak, VsPerfASPNETCmd simgeleri (işlev ve parametre adları ve benzeri) katıştırır. *vsp* dosya. Simgeler ekleme, profil oluşturma veri dosyası çok büyük hale getirebilirsiniz. Erişiminiz. *pdb* verileri analiz ederken, semboller içeren dosyaları packsymbols kullanın: kapalı simgelerini ekleme devre dışı bırakma seçeneği.|
+|**/Output:** `VspFile`|Varsayılan olarak, profil oluşturma verileri (. *VSP*) dosyası, geçerli dizinde, bu dosya adı **PerformanceReport. vsp**olarak oluşturulur. Farklı bir konum, dosya adı veya her ikisini de belirtmek için/output seçeneğini kullanın.|
+|**/PackSymbols: kapalı**|Varsayılan olarak, VsPerfASPNETCmd, içindeki sembolleri (işlev ve parametre adları vb.) katıştırır. *VSP* dosyası. Sembolleri katıştırmak, profil oluşturma veri dosyasını çok büyük hale getirir. Öğesine erişiminiz varsa. sembolleri içeren *pdb* dosyaları verileri çözümlediğinizde, sembollerin gömülmesini devre dışı bırakmak için/packsymbols: off seçeneğini kullanın.|
