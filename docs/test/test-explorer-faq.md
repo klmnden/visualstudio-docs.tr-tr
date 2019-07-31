@@ -14,18 +14,29 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429514"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661995"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 ' de grup nitelikleri nerede?
+Bu nitelik gruplandırması bir sütun olacak şekilde taşındı. Visual Studio 2019 sürüm 16,2 ' deki çok katmanlı ve özelleştirilebilir hiyerarşiyle, nitelikleri gereksiz görsel karmaşıklık yaratan bir gruplandırma olarak da dahil ettik. Bu tasarımla ilgili geri bildirimde kesinlikle dinleme yaptık! [https://login.microsoftonline.com/tfp/00000000-0000-0000-0000-000000000000/b2c_1a_tp_sign-up-or-sign-in/v2.0/](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
+
+Şimdilik, test Gezgini 'ndeki sütuna sağ tıklayıp sütunlar ' ı seçebilirsiniz. Nitelik sütununu kontrol edin ve test Gezgini 'nde görünür. Artık bu sütunu, ilgilendiğiniz nitelikleri filtreleyerek filtreleyebilirsiniz.
+
+![Nitelik sütununu filtre nitelik](media/vs-2019/trait-column.png)
+sütununu![görüntüleme](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
+
 ## <a name="dynamic-test-discovery"></a>Dinamik test bulma
 
-**Test Gezgini dinamik olarak tanımlanan testlerimi bulma değil. (Örneğin, Teoriler, özel bağdaştırıcı, özel özellikleri, #ifdefs, vb.) Bu testleri bulmak ne?**
+**Test Gezgini, dinamik olarak tanımlanan sınamalarımı bulmıyor. (Örneğin, Teoriler, özel bağdaştırıcı, özel özellikleri, #ifdefs, vb.) Bu testleri bulmak ne?**
 
 Derleme tabanlı bulma içinde açık olduğundan emin olun ve projenizi **Araçları** > **seçenekleri** > **Test**.
 
@@ -91,7 +102,7 @@ Proje ve Namespace sınıfını gruplandırmaları yanındaki simge, o grup içi
 
 **Test Gezgini arama kutusuna artık "Dosya yolu" filtresi var.**
 
-Dosya yolu filtrede **Test Gezgini** arama kutusuna, Visual Studio 2017 sürüm 15.7 kaldırıldı. Bu özellik kullanımın düşük olduğu ve Test Gezgini, bu özelliği bırakarak test yöntemlerini daha hızlı alabilir. Bu değişiklik, geliştirme akışınızı keser, hakkında geri bildirim göndererek bize [Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
+**Test Gezgini** arama kutusundaki dosya yolu filtresi, Visual Studio 2017 sürüm 15,7 ' de kaldırılmıştır. Bu özelliğin kullanımı düşük ve test Gezgini bu özelliği bırakarak test yöntemlerini hızlı bir şekilde alabilir. Bu değişiklik, geliştirme akışınızı keser, hakkında geri bildirim göndererek bize [Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Belgelenmemiş arabirimleri Kaldır
 
@@ -116,11 +127,11 @@ Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağ
 
 ## <a name="uwp-testcontainer-was-not-found"></a>UWP TestContainer bulunamadı
 
-**UWP testlerimi artık Visual Studio 2017 sürüm 15.7 ve üzeri yürütülür.**
+**UWP testleriniz artık Visual Studio 2017 sürüm 15,7 ve sonrasında yürütülmiyor.**
 
 Son UWP test projeleri, test uygulamaları tanımlamak için daha iyi performans sağlayan bir test platformu yapı özelliğini belirtin. Visual Studio 15.7 Sürüm önce başlatıldı bir UWP test projesi varsa, bu hatayı görebilirsiniz **çıkış** > **testleri**:
 
-**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: Şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki \<GetTestContainerAsync > d__61.MoveNext()**
+**System. AggregateException: Bir veya daha fazla hata oluştu. System. InvalidOperationException >---: Şu testcontainer, Microsoft. VisualStudio {} . testwindow. Controller. testcontainerprovider \<gettestcontainsilinebilir Sync > d__61. MoveNext () konumunda bulunamadı**
 
 Bu hatayı düzeltmek için:
 
