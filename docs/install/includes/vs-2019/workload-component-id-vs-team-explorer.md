@@ -1,27 +1,27 @@
 ---
-title: Visual Studio Takım Gezgini 2019 iş yükü ve Bileşen kimlikleri
+title: Visual Studio Takım Gezgini 2019 iş yükü ve bileşen kimlikleri
 titleSuffix: ''
 description: Tümleşik test araçları için genel test edicileri sağlamak için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/21/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d079fd5801ef17241acd64b97970edfe34859c34
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ba3cf453e1eba86f78bf04d8cb5105a475533e76
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177576"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68484842"
 ---
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio çekirdek Düzenleyicisi (ile Visual Studio Takım Gezgini 2019'da dahildir)
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio çekirdek Düzenleyicisi (Visual Studio Takım Gezgini 2019 ile birlikte)
 
-**KİMLİĞİ:** Microsoft.VisualStudio.Workload.CoreEditor
+**NUMARASINI** Microsoft. VisualStudio. Workload. CoreEditor
 
-**Açıklama:** Visual Studio söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi de dahil olmak üzere, temel Kabuk deneyimi ve iş öğesi yönetimi.
+**Açıklama:** Sözdizimi kullanan kod düzenlemesi, kaynak kodu denetimi ve iş öğesi yönetimi de dahil olmak üzere Visual Studio Core kabuğu deneyimi.
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 

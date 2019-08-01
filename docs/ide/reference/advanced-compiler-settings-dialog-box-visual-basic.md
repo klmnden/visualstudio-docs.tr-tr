@@ -1,83 +1,84 @@
 ---
 title: Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792237"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461474"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 
-Kullanım **AdvancedCompiler ayarları** iletişim kutusunun **Proje Tasarımcısı** Proje Gelişmiş yapı yapılandırması özelliklerini belirtmek için. Bu iletişim kutusu, yalnızca Visual Basic projeleri için geçerlidir.
+Projenin Gelişmiş derleme yapılandırma özelliklerini belirtmek için **Proje Tasarımcısı** ' nın **Advancedcompiler ayarları** iletişim kutusunu kullanın. Bu iletişim kutusu yalnızca Visual Basic projelerine yöneliktir.
 
 ## <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için
 
-1. İçinde **Çözüm Gezgini**, bir proje düğümü seçin (değil **çözüm** düğümü).
+1. **Çözüm Gezgini**, bir proje düğümü seçin ( **çözüm** düğümünü değil).
 
-2. Üzerinde **proje** menüsünü tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **derleme** sekmesi.
+2. **Proje** menüsünde **Özellikler**' e tıklayın. **Proje Tasarımcısı** göründüğünde, **Derle** sekmesine tıklayın.
 
-3. Üzerinde [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)seçin **yapılandırma** ve **Platform**. Basitleştirilmiş yapı yapılandırmaları **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. [Derle sayfasında, proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), **yapılandırma** ve **platformu**seçin. Basitleştirilmiş derleme yapılandırmalarında **yapılandırma** ve **Platform** listeleri görüntülenmez. Daha fazla bilgi için [nasıl yapılır: Hata ayıklama ve yayın yapılandırmasını](../../debugger/how-to-set-debug-and-release-configurations.md)ayarlayın.
 
-4. Tıklayın **Gelişmiş derleme seçenekleri**.
+4. **Gelişmiş derleme seçenekleri**' ne tıklayın.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="optimizations"></a>En iyi duruma getirme
+## <a name="optimizations"></a>İyileştirmeleri
 
- Bazı durumlarda bir program dosyası küçültmek, bir program daha hızlı çalıştırın veya derleme sürecinize hız yapmadan en iyi duruma getirme aşağıdaki seçenekleri belirtin.
+ Aşağıdaki seçenekler, bir program dosyasını daha küçük hale getirmek, bir programın daha hızlı çalışmasını sağlamak ya da yapı sürecini hızlandırmak için bazı durumlarda en iyileştirmeleri belirler.
 
-**Tamsayı taşması denetimlerini Kaldır**
+**Tamsayı taşma denetimlerini kaldır**
 
-Bu onay kutusu, tamsayı taşma denetimini etkinleştirmek için varsayılan olarak işaretli değildir. Tamsayı taşma denetimini kaldırmak için bu onay kutusunu seçin. Bu onay kutusunu seçerseniz, tamsayı hesaplamalar daha hızlı olabilir. Ancak, taşma denetimi ve veri türü kapasiteler taşma kaldırırsanız, hatalı sonuçlar ortaya çıkan bir hata depolanabilir.
+Tam sayı taşma denetimini etkinleştirmek için bu onay kutusu varsayılan olarak temizlenir. Tamsayı taşma denetimini kaldırmak için bu onay kutusunu seçin. Bu onay kutusunu seçerseniz, tamsayı hesaplamaları daha hızlı olabilir. Ancak, taşma denetimini ve veri türü kapasitelerinin taşmasını kaldırırsanız hatalı sonuçlar, bir hata oluşmadan depolanabilir.
 
-Taşma koşullar denetlenir ve bir tamsayı işlem taşıyor, bir <xref:System.OverflowException> özel durumu oluşturulur. Tamsayı işlemi taşıyor, taşma koşullar denetlenir değil, bir özel durum yok.
+Taşma koşulları işaretliyse ve bir tamsayı işlemi taşarsa, bir <xref:System.OverflowException> özel durum oluşturulur. Taşma koşulları işaretli değilse, tamsayı işlemi taşma bir özel durum oluşturmaz.
 
 **Eniyileştirmeleri etkinleştir**
 
-Bu onay kutusu, derleyici iyileştirmeleri devre dışı bırakmak için varsayılan olarak işaretli değildir. Derleyici iyileştirmeleri etkinleştirmek için bu onay kutusunu seçin. Derleyici iyileştirmeleri çıkış dosyanızı daha küçük, daha hızlı ve daha verimli olun. En iyi duruma getirme, kodu yeniden çıkış dosyasında nedeni, ancak derleyici iyileştirmeleri hata ayıklamayı zorlaştırabilir.
+Derleyici iyileştirmelerini devre dışı bırakmak için bu onay kutusu varsayılan olarak temizlenir. Derleyici iyileştirmelerini etkinleştirmek için bu onay kutusunu seçin. Derleyici iyileştirmeleri çıkış dosyanızı daha küçük, daha hızlı ve daha verimli hale getirir. Ancak, iyileştirmeler çıkış dosyasında kodu yeniden düzenlemeye neden olduğundan, derleyici iyileştirmeleri hata ayıklamayı zorlaştırır.
 
- **DLL temel adresi**
+ **DLL taban adresi**
 
- Bu metin kutusunda varsayılan DLL temel adresi onaltılık biçiminde görüntüler. Sınıf kitaplığı ve Denetim Kitaplığı projeleri DLL'si oluşturulurken kullanılacak temel adresini belirtmek için bu metin kutusunu kullanabilirsiniz.
+ Bu metin kutusu, varsayılan DLL taban adresini onaltılık biçimde görüntüler. Sınıf kitaplığı ve denetim kitaplığı projelerinde, bu metin kutusunu, DLL oluşturulduğunda kullanılacak temel adresi belirtmek için kullanabilirsiniz.
 
  **Hata ayıklama bilgileri üret**
 
- Seçin **hiçbiri**, **tam**, veya **yalnızca pdb** listeden. **Hiçbiri** hata ayıklama bilgisi oluşturulacağını belirtir. **Tam** tam hata ayıklama bilgilerini oluşturulan gerektiğini belirtir ve **yalnızca pdb** hata ayıklama bilgileri yalnızca PDB oluşturulacağını belirtir. Bu seçenek için varsayılan değerdir **tam**.
+ Listeden **hiçbiri**, **tam**veya **pdb** 'yi seçin. **None** hiçbir hata ayıklama bilgisinin üretilmediği belirtir. **Tam** hata ayıklama bilgilerinin oluşturulduğunu ve **PDB** 'nin yalnızca pdb hata ayıklama bilgilerinin oluşturulması gerektiğini belirtir. Bu seçenek için varsayılan değer **Full**değeridir.
 
 ## <a name="compilation-constants"></a>Derleme sabitleri
 
-Koşullu derleme sabitleri sahip efekt, kullanmanın benzer bir [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) önişlemci yönergesi bir kaynak dosya, tanımlı sabitler herkese açık ve projedeki tüm dosyalar için geçerlidir. Koşullu derleme sabitleri ile birlikte kullanabileceğiniz [#If... Then... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) yönergesi, kaynak dosyaları koşullu olarak derleyebilirsiniz. Bkz: [koşullu derleme](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
+Koşullu derleme sabitleri, tanımlanmış sabitler ortak olduğundan ve projedeki tüm dosyalar için geçerli olması dışında, bir kaynak dosyasında [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) Önişlemci yönergesini kullanmayla benzer bir etkiye sahiptir. Koşullu derleme sabitlerini #If birlikte kullanabilirsiniz [... Sonra... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) yönergesi, kaynak dosyaları koşullu olarak derler. Bkz. [koşullu derleme](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
 
  **DEBUG sabitini tanımlayın**
 
- Varsayılan olarak, bir hata ayıklama sabit ayarlanması belirterek bu onay kutusu seçilidir.
+ Varsayılan olarak, bu onay kutusu seçilidir ve bir hata ayıklama sabiti ayarlanır.
 
  **TRACE sabitini tanımlayın**
 
- Varsayılan olarak, TRACE sabitini ayarlanması belirterek bu onay kutusu seçilidir.
+ Varsayılan olarak, bu onay kutusu seçilidir ve bir Izleme sabiti ayarlanır.
 
- **Özel sabitleri**
+ **Özel sabitler**
 
- Bu metin kutusunda, uygulamanızın herhangi özel bir sabit girin. Girişleri bu formu kullanarak virgülle ayrılmış olması: **Name1="Value1",Name2="Value2",Name3="Value3"**.
+ Bu metin kutusuna uygulamanız için özel sabitler girin. Bu form kullanılarak girişler virgülle ayrılmalıdır: **Name1 = "değer1", AD2 = "değer2", name3 = "Value3"** .
 
 ## <a name="other-settings"></a>Diğer ayarlar
 
-**Serileştirme bütünleştirilmiş kodları üret**
+**Serileştirme derlemeleri oluştur**
 
-Bu ayar, derleyicinin XML serileştirme derlemeleri oluşturacak olup olmadığını belirtir. Serileştirme derlemeleri başlatma performansını geliştirebilir <xref:System.Xml.Serialization.XmlSerializer> kodunuzda türleri serileştirmek için bu sınıfı kullandıysanız. Bu seçenek için varsayılan değerdir **otomatik**. **Otomatik** yalnızca kullandıysanız, serileştirme derlemelerinin oluşturulacağını belirten <xref:System.Xml.Serialization.XmlSerializer> kodunuzdaki XML kodlama. **Kapalı** serileştirme derlemelerinin hiçbir zaman, kodunuzun kullanıp bağımsız olarak oluşturulmamasını belirtir <xref:System.Xml.Serialization.XmlSerializer>. **Üzerinde** serileştirme derlemelerinin her zaman oluşturulacağını belirtir. Serileştirme derlemeleri yeniden adlandırılır `TypeName`. XmlSerializers.dll.
+Bu ayar derleyicinin XML serileştirme derlemeleri oluşturup oluşturmayacağını belirtir. Kodunuzda türleri seri hale getirmek için bu sınıfı <xref:System.Xml.Serialization.XmlSerializer> kullandıysanız, serileştirme derlemeleri ' nin başlangıç performansını iyileştirebilir. Bu seçenek için varsayılan değer **Auto**' dır. **Otomatik** serileştirme derlemelerinin yalnızca kodunuzdaki türleri XML olarak kodlamak için kullandıysanız <xref:System.Xml.Serialization.XmlSerializer> oluşturulacağını belirtir. **Kapalı** , kodunuzun kullanıp kullanmadığına <xref:System.Xml.Serialization.XmlSerializer>bakılmaksızın serileştirme derlemelerinin hiçbir şekilde üretilmediğini belirtir. **On** , serileştirme derlemelerinin her zaman oluşturulacağını belirtir. Serileştirme bütünleştirilmiş kodları adlandırılır `TypeName`. Xmlserileştiriciler. dll.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

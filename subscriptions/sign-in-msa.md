@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinizde Microsoft hesabınızla oturum açma (MSA)
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315591"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493078"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Microsoft hesabınızla Visual Studio abonelikleriniz (MSA) ile oturum açma
 
@@ -29,7 +29,6 @@ Bu makalede, Microsoft hesabınızla oturum açma adımları sağlanır (MSA).
 3. Parolanızı girin.
 4. **Oturum aç**' a tıklayın.
 5. Bu noktada, "avantajlar" sayfası görüntülenmelidir.
-
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>Ç  MSA ' ı kullanarak oturum açamıyor.  

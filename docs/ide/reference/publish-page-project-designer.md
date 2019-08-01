@@ -1,82 +1,85 @@
 ---
 title: Yayın Sayfası, Proje Tasarımcısı
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968896"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461637"
 ---
 # <a name="publish-page-project-designer"></a>Yayın Sayfası, Proje Tasarımcısı
-**Yayımla** sayfasının **Proje Tasarımcısı** ClickOnce dağıtım özelliklerini yapılandırmak için kullanılır.
 
- Erişim için **Yayımla** sayfasında, içinde bir proje düğümü seçin **Çözüm Gezgini**ve ardından **proje** menüsünde tıklayın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **Yayımla** sekmesi.
+**Proje Tasarımcısı** ' nın **Yayımla** sayfası ClickOnce dağıtımı için özellikleri yapılandırmak üzere kullanılır.
+
+ **Yayımla** sayfasına erişmek için **Çözüm Gezgini**' de bir proje düğümü seçin ve ardından **Proje** menüsünde **Özellikler**' e tıklayın. **Proje Tasarımcısı** göründüğünde, **Yayımla** sekmesine tıklayın.
 
 > [!NOTE]
-> Burada açıklanan ClickOnce özelliklerden bazıları da ayarlanabilir **PublishWizard**erişilebilir **derleme** menüsü veya tıklayarak **PublishWizard** bu düğmesi Sayfa.
+> Burada açıklanan bazı ClickOnce özellikleri, **derleme** menüsünde veya bu sayfadaki **publishwizard** düğmesine tıklanarak bulunan **publishwizard**'da da ayarlanabilir.
 
 ## <a name="uielement-list"></a>UIElement Listesi
+
  **Yayımlama klasörü konumu**
 
- Burada uygulama yayınlandıktan konumu belirtir. Bir sürücü yolu (`C:\deploy\myapplication`), bir dosya paylaşımı (`\\server\myapplication`), veya bir FTP sunucusuna (`ftp://ftp.microsoft.com/myapplication`). Metin mevcut olması gerektiğini unutmayın **yayımlama konumu** Gözat sırayla kutusuna (**...** ) çalışmaya düğmesi.
+ Uygulamanın yayımlandığı konumu belirtir. , Bir sürücü yolu (`C:\deploy\myapplication`), bir dosya paylaşma (`\\server\myapplication`) veya bir FTP sunucusu (`ftp://ftp.microsoft.com/myapplication`) olabilir. Göz at ( **...** ) düğmesinin çalışması Için **Yayımlama konumu** kutusunda metnin mevcut olması gerektiğini unutmayın.
 
- **Yükleme klasörü URL'si**
+ **Yükleme klasörü URL 'SI**
 
- İsteğe bağlı. Kullanıcıların uygulamayı yüklemek için Git bir Web sitesi belirtir. Bu yalnızca, bu farklıdır gereklidir **yayımlama konumu**, örneğin, ne zaman uygulama yayımlandığında bir hazırlık sunucusu için.
+ İsteğe bağlı. Kullanıcıların uygulamayı yüklemek için gideceği Web sitesini belirtir. Bu, yalnızca **yayımlama konumundan**farklı olduğunda (örneğin, uygulama bir hazırlama sunucusuna yayımlandığında) gereklidir.
 
- **Yükleme modu ve ayarları**
+ **Modu ve ayarları yükler**
 
- Uygulamayı doğrudan çalıştırılıp çalıştırılmadığını belirleyen **yayımlama konumu** (zaman **uygulama yalnızca çevrimiçi kullanılabilir** seçilir) veya yüklü ve eklenen **Başlat**  menü ve **Program Ekle veya Kaldır** öğesi **Denetim Masası** (zaman **uygulamayı çevrimdışı olarak da kullanılabilir** seçili).
+ Uygulamanın doğrudan **yayımlama konumundan** çalıştırılıp çalıştırılmadığını ( **uygulama yalnızca çevrimiçi kullanılabilir** olduğunda) veya yüklenip buradan **Başlat** menüsüne ve **Program Ekle/Kaldır** öğesine eklendiğini belirler. **Denetim Masası** ( **uygulama çevrimdışı kullanılabilir** olduğunda, ayrıca seçili olduğunda).
 
- WPF web tarayıcı uygulamaları, **uygulamayı çevrimdışı olarak da kullanılabilir** seçeneği devre dışıdır, çünkü bu tür uygulamalar yalnızca çevrimiçi kullanılabilir.
+ WPF Web tarayıcısı uygulamaları için **uygulama çevrimdışı olarak kullanılabilir** , çünkü bu uygulamalar yalnızca çevrimiçi kullanılabilir.
 
  **Uygulama dosyaları**
 
- Tek tek dosyaların nasıl ve nerede yüklü belirtmek için kullanılan uygulama dosyalarını iletişim kutusu açılır.
+ Her bir dosyanın nasıl ve nerede yükleneceğini belirlemek için kullanılan uygulama dosyaları iletişim kutusunu açar.
 
  **Önkoşullar**
 
- Uygulama ile birlikte yüklenmesi için .NET Framework gibi önkoşul bileşenleri belirtmek için kullanılan Önkoşullar iletişim kutusu açılır.
+ Uygulamayla birlikte yüklenecek .NET Framework gibi Önkoşul bileşenlerini belirtmek için kullanılan Önkoşullar iletişim kutusunu açar.
 
  **Güncelleştirmeler**
 
- Uygulama için güncelleştirme davranışını belirtmek için kullanılan uygulama güncelleştirmeleri iletişim kutusu açılır. Kullanılabilir olduğunda **uygulama yalnızca çevrimiçi kullanılabilir** seçilir.
+ Uygulamanın güncelleştirme davranışını belirtmek için kullanılan uygulama güncelleştirmeleri iletişim kutusunu açar. **Uygulama yalnızca çevrimiçi kullanılabilir** olduğunda kullanılamaz.
 
  **Seçenekler**
 
- Ek Gelişmiş yayımlama seçeneklerini belirtmek için kullanılan Yayımlama Seçenekleri iletişim kutusu açılır.
+ Diğer gelişmiş yayımlama seçeneklerini belirtmek için kullanılan Yayımla Seçenekleri iletişim kutusunu açar.
 
- **Yayım sürümü**
+ **Yayımlama sürümü**
 
- Uygulama için yayımlama sürüm numarasını ayarlar; sürüm numarası değiştirildiğinde, uygulama bir güncelleştirme olarak yayımlanır. Yayınlama sürümünü her parçası (**ana**, **küçük**, **derleme**, **düzeltme**) 65355 maksimum değeri olabilir (<xref:System.UInt16.MaxValue>), tarafından izin verilen maksimum <xref:System.Version>.
+ Uygulama için yayımlama sürüm numarasını ayarlar; sürüm numarası değiştirildiğinde, uygulama bir güncelleştirme olarak yayımlanır. Yayımla sürümünün (**ana**, **İkincil**, **derleme**, **Düzeltme**) her bölümü, izin verilen en yüksek 65355<xref:System.UInt16.MaxValue> <xref:System.Version>() değerine sahip olabilir.
 
  ClickOnce kullanarak bir uygulamanın birden fazla sürüm yüklediğinizde, yükleme uygulamanın önceki sürümlerini belirttiğiniz yayımlama konum arşivinde adlı bir klasöre taşır. Yükleme dizini temizler önceki sürümünden önceki sürümleri bu şekilde korur arşivleme.
 
- **Her yayımlamada otomatik artış**
+ **Her yayınla birlikte düzeltmeyi otomatik olarak artır**
 
- İsteğe bağlı. Bu seçenek seçildiğinde (varsayılan), **düzeltme** Yayımla sürüm numarasının bölümü bir artırılır uygulamayı yayınladınız her zaman. Bu, bir güncelleştirme olarak yayımlanacak uygulama neden olur.
+ İsteğe bağlı. Bu seçenek belirlendiğinde (varsayılan), yayımlama sürümü numarasının **Düzeltme** bölümü, uygulamanın her yayımlanışında bir artırılır. Bu, uygulamanın bir güncelleştirme olarak yayımlanmasına neden olur.
 
  **Yayımlama Sihirbazı**
 
- Açılır Yayımlama Sihirbazı. Yayımlama Sihirbazı Tamamlanıyor çalışan aynı etkiye sahip **Yayımla** komutunu **derleme** menüsü.
+ Yayımla sihirbazını açar. Yayımla sihirbazının tamamlanması, **derleme** menüsündeki **Yayımla** komutunu çalıştırmasıyla aynı etkiye sahiptir.
 
  **Şimdi Yayımla**
 
- Geçerli ayarları kullanarak uygulamanın yayınlar. Eşdeğer **son** düğmesine **PublishWizard**.
+ Geçerli ayarları kullanarak uygulamayı yayımlar. **Publishwizard**'daki **son** düğmesine eşittir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [ClickOnce Uygulamalarını Yayımlama](../../deployment/publishing-clickonce-applications.md)
 - [Nasıl yapılır: Yayımlama Sihirbazını Kullanarak ClickOnce Uygulaması Yayımlama](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

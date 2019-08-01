@@ -1,5 +1,5 @@
 ---
-title: Mini döküm dosyalarında tüm çağrı yığınları ile oluşturma
+title: Tüm çağrı yığınları ile mini döküm oluşturma
 ms.date: 06/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,34 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518234"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461647"
 ---
-# <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Mini döküm dosyalarında bir Visual Studio işlemi tüm çağrı yığınları ile oluşturma
+# <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Tüm çağrı yığınlarıyla Visual Studio işlemi için mini döküm oluşturma
 
-Bazı durumlarda Microsoft, tüm çağrı yığınları için bilgi ile çalışan bir Visual Studio işlemi için bir mini döküm isteyebilir. Bu bilgileri toplamak için aşağıdaki adımları gerçekleştirin:
+Bazı durumlarda Microsoft, çalışan bir Visual Studio işleminin tüm çağrı yığınları hakkında bilgi içeren bir mini döküm isteyebilir. Bu bilgileri toplamak için şu adımları uygulayın:
 
 ## <a name="create-the-minidump-file"></a>Mini döküm dosyası oluşturma
 
-1. Visual Studio'nun yeni bir örneğini başlatın.
-1. Ana menüden **hata ayıklama** > **İliştir**.
-1. İlgili kontrol **yönetilen** ve **yerel** onay kutularını ve ENTER tuşuna **iliştirme**.
+1. Visual Studio 'nun yeni bir örneğini başlatın.
+1. Ana menüden,**işleme Ekle** **Hata Ayıkla** > ' yı seçin.
+1. İlgili **yönetilen** ve **Yerel** onay kutularını işaretleyin ve **Ekle**'ye basın.
 
-   ![İşleme](../ide/media/attach-to-process.png)
+   ![İşleme İliştir](../ide/media/attach-to-process.png)
 
-1. Diğer Visual Studio örneğinde çalışan işlemlerin listeden eklemek için seçin.
-1. Ana menüden **hata ayıklama** > **tümünü Kes**.
-1. Ana menüden **hata ayıklama** > **dökümü Farklı Kaydet**.
+1. Çalışan işlemlerin listesinden iliştirilecek diğer Visual Studio örneğini seçin.
+1. Ana menüden **Hata Ayıkla** > **Tümünü kes**' i seçin.
+1. Ana menüden,**dökümü farklı kaydet kayıt** **Ayıkla** > ' yı seçin.
 
-## <a name="get-the-call-stacks-from-the-minidump"></a>Çağrı yığınları mini döküm Al
+## <a name="get-the-call-stacks-from-the-minidump"></a>Mini döküm dosyasından çağrı yığınlarını al
 
-1. Döküm dosyasını Visual Studio'da açın.
-
-1. İçin alındı **Araçları** > **seçenekleri** > **hata ayıklama** > **sembolleri** ve o eminolun **Microsoft sembol sunucuları** iade **sembol dosyası (.pdb) konumlar**.
-1. Açık **komut** penceresi (**görünümü** > **diğer Windows** > **komut penceresi**)
-1. Türü ' ~ * k'. Tüm diziler çağrı yığınlarını pencere görüntüler.
-1. Komut penceresinden bütün metni kopyalayın ve bir metin dosyasına kaydedin.
-1. Txt dosyası hataya ekleyecek.
+1. Döküm dosyasını Visual Studio 'da açın.
+1. **Araç**   seçenekleri hata ayıklamasimgeleriveMicrosoftsembolsunucularınınsemboldosyası(.pdb)konumlarındaişaretliolduğundaneminolun. >  >  > 
+1. **Komut** penceresini açın (**diğer Windows** > **komut penceresini** **görüntüle** > )
+1. ' ~ * K ' yazın. Pencerede tüm iş parçacıklarının çağrı yığınları görüntülenir.
+1. Komut penceresinden tüm metni kopyalayın ve bir metin dosyasına kaydedin.
+1. Txt dosyasını hataya iliştirin.

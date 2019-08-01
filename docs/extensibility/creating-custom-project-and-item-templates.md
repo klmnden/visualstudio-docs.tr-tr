@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377767"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493117"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Özel proje ve öğe şablonları oluşturma
 
@@ -35,7 +35,6 @@ Temel şablon oluşturma senaryoları için kullanmanız gereken **şablonu dı�
      Şablon bir sınıf dosyası, bir simge, *. vstemplate* dosyası, *ProjectTemplate. vbproj* veya *ProjectTemplate. csproj*adlı düzenlenebilir bir proje dosyası ve genellikle diğer proje türleri tarafından oluşturulan bazı dosyalar (örneğin *,) oluşturur. Resources. resx* dosyası, bir *AssemblyInfo* dosyası ve bir *. Settings* dosyası. Her kod dosyası, uygun yerlerde genel parametresi değişimleri içerir.
 
 ![Proje Şablonu proje seçimi](media/project-template-selection.png)
-
 
 2. Ekleme ve projeniz için gereken proje öğeleri kaldırın. Düzenlenebilir proje dosyasını, *AssemblyInfo* dosyasını veya *. vstemplate* dosyasını kaldırmayın.
 

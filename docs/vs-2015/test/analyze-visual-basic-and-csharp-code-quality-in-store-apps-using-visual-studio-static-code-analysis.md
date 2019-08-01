@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686542"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416646"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 
@@ -98,12 +98,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 ## <a name="BKMK_Warnings"></a> Visual Basic ve C# Kod Analizi uyarılarının
  Kod Analizi aşağıdaki uyarılar oluşturur:
 
- [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001 Atılabilir alanlarının sahibi olan türler atılabilir olmalıdır](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Boş Sonlandırıcıları kaldırın](https://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821 Boş sonlandırıcıları kaldır](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: Atılabilen alanlar atılmalıdır](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213 Atılabilir alanlar atılmalıdır](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Serileştirme oluşturucularını uygulayın](https://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229 Serileştirme oluşturucularını Uygula](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](https://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231 ValueType. Equals geçersiz kılınırken aşırı yükleme işleci Equals](https://msdn.microsoft.com/library/ms182359.aspx)

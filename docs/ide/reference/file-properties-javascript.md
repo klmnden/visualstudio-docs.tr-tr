@@ -1,6 +1,7 @@
 ---
 title: Dosya Özellikleri, JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,78 +21,79 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790654"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461838"
 ---
 # <a name="file-properties-javascript"></a>Dosya Özellikleri, JavaScript
-Dosya özellikleri, proje sistemi dosyalarda gerçekleştirmesi gereken eylemleri belirtmek için kullanabilirsiniz. Örneğin, bir dosya için paket kaynak dosyası olarak eklenmesi gerekip gerekmediğini belirtmek için dosya özelliklerini ayarlayabilirsiniz.
 
- Çözüm Gezgini'nde herhangi bir dosya seçin ve ardından Özellikler penceresindeki özelliklerini inceleyin. JavaScript dosyaları dört özelliklere sahiptir: **Çıkış Dizinine Kopyala**, **paket eylemi**, **dosya adı**, ve **dosya yolu**.
+Dosya özelliklerini, proje sisteminin dosyalarda hangi işlemleri yapması gerektiğini göstermek için kullanabilirsiniz. Örneğin, dosya özelliklerini, bir dosyanın pakete bir kaynak dosyası olarak eklenip eklenmeyeceğini belirtmek için ayarlayabilirsiniz.
+
+ Çözüm Gezgini herhangi bir dosyayı seçip Özellikler penceresi özelliklerini inceleyebilirsiniz. JavaScript dosyaları dört özelliğe sahiptir: **Çıkış dizinine**, **paket eylemine**, **dosya adına**ve **dosya yoluna**kopyalayın.
 
 ## <a name="file-properties"></a>Dosya özellikleri
- Bu bölümde, JavaScript dosyaları için ortak olan özellikleri açıklanmaktadır.
+ Bu bölümde JavaScript dosyaları için ortak olan özellikler açıklanmaktadır.
 
-### <a name="copy-to-output-directory-property"></a>Çıkış dizini özelliğini kopyalayın
- Bu özellik, koşullar altında seçili kaynak dosyasının çıkış dizinine kopyalanır belirtir. Seçin **kopyalamayın** dosya hiçbir zaman çıkış dizinine kopyalanacak ise. Seçin **her zaman Kopyala** dosyası her zaman çıkış dizinine kopyalanacak ise. Seçin **yeniyse Kopyala** yalnızca çıktı dizininde aynı ada sahip mevcut bir dosyayı daha yeni olduğunda kopyalanacak dosya olduğunda.
+### <a name="copy-to-output-directory-property"></a>Çıkış dizinine Kopyala özelliği
+ Bu özellik, seçilen kaynak dosyanın çıkış dizinine kopyalanacağı koşulları belirtir. Dosya çıkış dizinine kopyalanmadıysa **kopyalamayın** ' ı seçin. Dosya her zaman çıkış dizinine kopyalanırsa, **her zaman Kopyala** ' yı seçin. Dosya yalnızca çıkış dizininde aynı ada sahip olan mevcut bir dosyadan daha yeniyse **Kopyala** ' yı seçin.
 
 ### <a name="package-action"></a>Paket eylemi
- **Paket eylemi** özelliği, bir yapı çalıştırıldığında Visual Studio ile bir dosyanın ne yaptığını gösterir. **Paket eylemi** değerlerden biri olabilir:
+ **Paket eylemi** özelliği, bir derleme yürütüldüğünde Visual Studio 'nun bir dosyayla ne yaptığını gösterir. **Paket eylemi** birkaç değerden birine sahip olabilir:
 
-- **Hiçbiri** -dosya paketi bildiriminde yer almaz. Örnek bir benioku dosyası gibi bir belge içeren bir metin dosyasıdır.
+- **Hiçbiri** -dosya paket bildirimine dahil değildir. Örneğin, Benioku dosyası gibi belgeleri içeren bir metin dosyasıdır.
 
-- **İçerik** -dosya paketi bildiriminde bulunur. Örneğin, bu ayar bir .htm, .js, .css, görüntü, ses veya video dosyası için varsayılan değerdir.
+- **İçerik** -dosya paket bildirimine dahildir. Örneğin, bu ayar bir. htm,. js,. css, görüntü, ses veya video dosyası için varsayılan değerdir.
 
-- **Bildirim** -dosya paketi bildiriminde yer almaz. Bunun yerine, dosya girişi için paket bildirimi oluşturulurken kullanılır. Package.appxmanifest dosyasını için varsayılan değer budur.
+- **Bildirim** -dosya paket bildirimine dahil değildir. Bunun yerine, dosya, paket bildirimi oluşturulurken giriş için kullanılır. Bu, Package. appxmanifest dosyası için varsayılan değerdir.
 
-- **Kaynak** -dosya paketi bildiriminde yer almaz. Bunun yerine, paket kaynak dizini (PRI) içinde paket bildirimi gider dosyasının içeriği dizine eklenir. Genellikle, kaynak dosyaları için de kullanılır.
+- **Kaynak** -dosya paket bildirimine dahil değildir. Bunun yerine, dosyanın içeriği paket bildirimine giden paket kaynak dizini (PRı) içinde dizinlenir. Genellikle kaynak dosyaları için kullanılır.
 
-İçin varsayılan değer **paket eylemi** çözüme ekleyin dosya uzantısını bağlıdır.
+**Paket eylemi** için varsayılan değer çözüme eklediğiniz dosyanın uzantısına bağlıdır.
 
 ### <a name="file-name-property"></a>Dosya adı özelliği
- Dosya adı salt okunur bir değer görüntüler. Dosyayı yeniden adlandırmak için Çözüm Gezgini'nde sağ tıklayıp seçin **Yeniden Adlandır**.
+ Dosya adını salt bir salt okuma değeri olarak görüntüler. Dosyayı yeniden adlandırmak için Çözüm Gezgini ' ye sağ tıklayıp **Yeniden Adlandır**' ı seçmeniz gerekir.
 
 ### <a name="full-path-property"></a>Tam yol özelliği
- Tam yolunu dosyaya salt okunur bir değer görüntüler. Dosya yolunu değiştirmek için sürükle ve bırak Çözüm Gezgini'nde dosyayı kullanabilirsiniz.
+ Dosyanın tam yolunu salt okuma değeri olarak görüntüler. Dosyanın yolunu değiştirmek için Çözüm Gezgini dosyayı sürükleyip bırakabilirsiniz.
 
 ## <a name="reference-file-properties"></a>Başvuru dosyası özellikleri
- Bu bölümde, JavaScript kullanılarak oluşturulan bir UWP uygulaması başvurulan dosyaları için ortak olan özellikleri açıklanmaktadır. Çözüm Gezgini'nde bir .winmd dosyası, bir SDK başvurusu, projeden projeye başvuru veya bir bütünleştirilmiş kod başvurusu gibi bir başvuru seçtiğinizde, diğer özellikleri Özellikler penceresinde dosya türüne göre görüntüleyebilir.
+ Bu bölümde, JavaScript kullanılarak oluşturulan UWP uygulamasından başvurulan dosyalar için ortak özellikler açıklanmaktadır. Bir. winmd dosyası, bir SDK başvurusu, bir projeden projeye başvuru veya Çözüm Gezgini bir derleme başvurusu gibi bir başvuruyu seçtiğinizde, diğer özellikler dosya türüne göre Özellikler penceresi gösterebilir.
 
 ### <a name="culture"></a>Kültür
- Başvuru ile ilişkili dil görüntüler.
+ Başvuru ile ilişkili dili görüntüler.
 
 ### <a name="file-type"></a>Dosya türü
- Başvurunun dosya türü görüntüler.
+ Başvurunun dosya türünü görüntüler.
 
 ### <a name="file-version"></a>Dosya Sürümü
  Başvurunun dosya sürümünü görüntüler.
 
 ### <a name="identity"></a>Kimlik
- Proje dosyasında depolanan projesinde kullanılan başvurunun kimliği görüntüler.
+ Proje dosyasında saklanan, projede kullanılan başvurunun kimliğini görüntüler.
 
 ### <a name="package"></a>Paket
- Başvuru ile ilişkili paket bildirimi adını görüntüler.
+ Başvuruyla ilişkili paket bildiriminin adını görüntüler.
 
 ### <a name="resolved-path"></a>Çözümlenen yol
- Projede kullanılan başvuru yolunu görüntüler.
+ Projede kullanılan başvurunun yolunu görüntüler.
 
 ### <a name="sdk-path"></a>SDK yolu
- Başvurulan SDK dosyanın yolunu görüntüler.
+ Başvurulan SDK dosyasının yolunu görüntüler.
 
-### <a name="uri"></a>URI
- Dosyayı farklı bir kaynak dosyası eklemek için projenin HTML veya JavaScript dosyalarında içermesi gereken URI görüntüler.
+### <a name="uri"></a>Kullanılmamışsa
+ Dosyayı kaynak dosya olarak dahil etmek için projenin HTML veya JavaScript dosyalarına dahil olması gereken URI 'yi görüntüler.
 
 ### <a name="version"></a>Sürüm
- Başvurunun sürümü görüntüler.
+ Başvurunun sürümünü görüntüler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Proje ve Çözüm Özelliklerini Yönetme](../../ide/managing-project-and-solution-properties.md)

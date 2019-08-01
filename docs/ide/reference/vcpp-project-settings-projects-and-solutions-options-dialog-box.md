@@ -13,83 +13,93 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: corob-msft
+ms.author: corob
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263085"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461555"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu
-Bu iletişim kutusunu tanımlamanızı sağlar [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yapı ve proje günlüğü, performans ve dosya türleri desteklemek için ilgili ayarlar.
 
-### <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için
+Bu iletişim kutusu, günlük, C++ performans ve destekleyici dosya türleriyle ilgili derleme ve proje ayarlarını tanımlamanıza olanak sağlar.
+
+## <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için
 
 1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2. Seçin **projeler ve çözümler**ve ardından **VC ++ proje ayarları**.
+2. **Projeler ve çözümler**' i seçin ve ardından **VC + + proje ayarları**' nı seçin.
 
-## <a name="build-logging"></a>Günlük kaydı oluşturun
+## <a name="build-logging"></a>Derleme günlüğü
+
  **Evet**
 
-  Derleme günlük dosyasının oluşturulmasını etkinleştirir. Bu seçeneği projenin Ara dosyaları dizininde bulunan BuildLog.htm üretir. Her yeni derleme önceki BuildLog.htm dosyanın üzerine yazar.
+  Derleme günlüğü dosyasının oluşturulmasını etkinleştirir. Bu seçenek, projenin ara dosyalar dizininde bulunan BuildLog. htm dosyasını oluşturur. Her yeni derleme önceki BuildLog. htm dosyasının üzerine yazar.
 
- **Yok**
+ **Eşleşen**
 
-  Derleme günlüğü dosyası oluşturulmasını devre dışı bırakır.
+  Derleme günlüğü dosyasının oluşturulmasını devre dışı bırakır.
 
-## <a name="show-environment-in-log"></a>Günlükte ortamı Göster
+## <a name="show-environment-in-log"></a>Ortamı günlükte göster
+
  **Evet**
 
- Derleme günlüğü dosyası ortam değişkenleri listeler. Bu seçenek, tüm ortam değişkenleri, oluşumunu sırasında yantısılmayacağını belirtir [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projelere derleme günlüğü dosyası.
+ Yapı günlük dosyasındaki ortam değişkenlerini listeler. Bu seçenek, C++ proje derlemeleri sırasında tüm ortam değişkenlerini derleme günlüğü dosyasına yankılanması gerektiğini belirtir.
 
- **Yok**
+ **Eşleşen**
 
- Ortam değişkenleri derleme günlük dosyasından hariç tutun.
+ Ortam değişkenlerini derleme günlük dosyasından hariç tutun.
 
-## <a name="build-timing"></a>Zamanlama oluşturma
+## <a name="build-timing"></a>Derleme zamanlaması
+
  **Evet**
 
-  Derleme zamanlaması üzerinde kapatır. Seçili olduğunda, derleme tamamlamak geçen süre için çıkış penceresine gönderilir. Daha fazla bilgi için [çıkış penceresine](../../ide/reference/output-window.md).
+  Derleme zamanlamasını etkinleştirir. Seçilirse, derleme işleminin tamamlaması için gereken süre çıkış penceresine gönderilir. Daha fazla bilgi için bkz. [Çıkış penceresi](../../ide/reference/output-window.md).
 
- **Yok**
+ **Eşleşen**
 
- Derleme zamanlaması devre dışı bırakır.
+ Derleme zamanlamasını kapatır.
 
-## <a name="maximum-concurrent-c-compilations"></a>En fazla eşzamanlı C++ derlemesi
-  En fazla paralel C++ derlemesi için kullanılacak CPU çekirdeği sayısını belirtir.
+## <a name="maximum-concurrent-c-compilations"></a>Maksimum eşzamanlı C++ derlemeler
 
-## <a name="extensions-to-include"></a>Dahil etmek için uzantıları
-  Projenize unity'nin dosyalarının dosya adı uzantılarını belirtir.
+Paralel C++ derleme için kullanılacak en fazla CPU çekirdeği sayısını belirtir.
+
+## <a name="extensions-to-include"></a>Dahil edilecek uzantılar
+
+Projenizde yer alan dosyaların dosya adı uzantılarını belirtir.
 
 ## <a name="extensions-to-hide"></a>Gizlenecek uzantılar
-  İçinde görüntülenmeyecek dosyalarının dosya adı uzantılarını belirtir **Çözüm Gezgini** olduğunda **tüm dosyaları göster** etkinleştirilir.
 
-## <a name="build-customization-search-path"></a>Derleme özelleştirme arama yolu
-  Yardımcı .rules dosyaları içeren dizinler listesini tanımlamak projeleriniz için derleme kuralları belirtir.
+**Tüm dosyaları göster** etkinleştirildiğinde **Çözüm Gezgini** görüntülenmeyen dosyaların dosya adı uzantılarını belirtir.
+
+## <a name="build-customization-search-path"></a>Yapı özelleştirme arama yolu
+
+Projeleriniz için yapı kuralları tanımlamanıza yardımcı olan. Rules dosyalarını içeren dizinlerin listesini belirtir.
 
 ## <a name="solution-explorer-mode"></a>Çözüm Gezgini modu
- **Projede sadece dosyaları göster**
 
-  Yapılandırır **Çözüm Gezgini** sadece projedeki dosyaları görüntülemek için.
+**Yalnızca projedeki dosyaları göster**
 
- **tüm dosyaları göster**
+Yalnızca projedeki dosyaları göstermek için **Çözüm Gezgini** yapılandırır.
 
-  Yapılandırır **Çözüm Gezgini** diskteki proje klasöründeki dosya ve proje dosyaları göstermek için.
+**Tüm dosyaları göster**
+
+Proje klasöründeki dosyaları projede ve diskte göstermek için **Çözüm Gezgini** yapılandırır.
 
 ## <a name="enable-project-caching"></a>Proje önbelleğe almayı etkinleştir
+
 **Evet**
 
-Projeyi sonraki açtığınızda, proje dosyalarından yeniden hesaplama yerine verileri önbelleğe yükleyebilir, böylece Visual Studio Proje verileri önbelleğe almak için etkinleştirir. Önbelleğe alınan verileri kullanarak proje yükleme süresini önemli ölçüde hızlandırabilirsiniz.
+Projeyi bir sonraki sefer açtığınızda proje dosyalarından yeniden hesaplama yerine önbelleğe alınmış verileri yükleyebilecekleri için Visual Studio 'Nun proje verilerini önbelleğe almasını sağlar. Önbelleğe alınmış verilerin kullanılması, proje yükleme süresini önemli ölçüde hızlandırabilir.
 
-**Yok**
+**Eşleşen**
 
-Önbelleğe alınmış proje verilerini kullanmayın. Her proje yükler proje dosyaları ayrıştırılamıyor.
+Önbelleğe alınmış proje verilerini kullanmayın. Projenin her yüklendiği her seferinde proje dosyalarını ayrıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

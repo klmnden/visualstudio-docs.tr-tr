@@ -1,5 +1,5 @@
 ---
-title: Seçenekler, metin düzenleyici, C/C++, görüntüleme
+title: Seçenekler, metin düzenleyici, C/C++, görünüm
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,53 +8,53 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817771"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461280"
 ---
-# <a name="options-text-editor-cc-view"></a>Seçenekler, metin düzenleyici, C/C++, görüntüleme
+# <a name="options-text-editor-cc-view"></a>Seçenekler, metin düzenleyici, C/C++, görünüm
 
-C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nın varsayılan davranışını değiştirmek için bu özellik sayfalarını kullanın.
+C veya C++içinde programlama yaparken kod düzenleyicisinin varsayılan davranışını değiştirmek için bu özellik sayfalarını kullanın.
 
-Bu özellik sayfasına erişmek için kendi seçtikleri **Araçları** > **seçenekleri** genişletin **metin düzenleyici**, ardından **C/C++** seçin **Görünümü**.
+Bu özellik sayfasına erişmek için, **Araçlar** > **Seçenekler** ' i ve **metin düzenleyici**' yi genişletin **,C++sonra da** **görüntüle**' yi seçin.
 
 ## <a name="code-squiggles"></a>Kod dalgalı çizgiler
 
-Etkinleştirmek veya hangi metin düzenleyicisi kod dalgalı çizgiler C ve C++ için işleme yönetmek için aşağıdaki ayarları devre dışı bırakabilirsiniz:
+Metin düzenleyicisinin C için Code dalgalı çizgiler işleme biçimini yönetmek için aşağıdaki ayarları etkinleştirebilir veya devre dışı bırakabilirsiniz C++:
 
-- **Gözatma bölgelerde atlandı makroları** -makroları, tanımları içeren küme ayraçları gibi gözatma veritabanı Atlanan bölgeleri içinde makroların vurgulamak nasıl tanımlar.
+- **Atlanan gözatma bölgelerinde makrolar** -, tanımları içeren makrolar gibi, gözatma veritabanı tarafından atlanan bölgelerin içinde olan makroların nasıl vurgulanacağını tanımlar.
 
-- **Constexpr makroları dönüştürülebilir** -dönüştürülebilir makro tanımları vurgulamak nasıl tanımlar `constexpr` tanımlar.
+- **Constexpr 'ye dönüştürülebilir makrolar** - `constexpr` tanımlara dönüştürülebileceği makro tanımlarının nasıl vurgulanmasını tanımlar.
 
 ## <a name="inactive-code"></a>Pasif Kod
 
-- **Pasif blokları gösterme** -önişlemci pasif blokları farklı renklendirilir.
+- **Etkin olmayan blokları göster** -Önişlemci etkin olmayan blokları, farklı şekilde renklendirilir.
 
-- **Etkin olmayan kod opaklığını devre dışı** -etkin olmayan kod blokları için opaklık yerine düz renk kullanılır.
+- **Etkin olmayan kod opaklığını devre dışı bırak** -etkin olmayan kod blokları için opaklık yerine düz bir renk kullanılır.
 
-- **Etkin olmayan kod opaklık yüzdesi** -etkin olmayan kod blokları için opaklık yüzdesi.
+- **Etkin olmayan kod geçirgenliği yüzdesi** -etkin olmayan kod blokları için opaklık yüzdesi.
 
 ## <a name="miscellaneous"></a>Çeşitli
 
-- **Açıklama görevlerini Listele** - tarama VS belirteçleri için açık kaynak dosyalarını ve bunları görev listesi penceresinde rapor.
+- **Açıklama görevlerini listeleme** -vs belirteçleri için açık kaynak dosyalarını tarayın ve görev listesi penceresinde raporlayın.
 
-- **Eşleşen belirteçleri vurgulayın** - imleç nerede konumlandırılmış eşleşen bağları veya sözdizimlerini kapsayan Vurgu.
+- **Eşleşen belirteçleri Vurgula** -imleç nerede konumlandığını eşleşen kapsayıcı ayraçları veya sözdizimini vurgulayın.
 
 ## <a name="outlining"></a>Anahat Oluşturma
 
-- **Anahat oluşturmayı etkinleştir** -bir dosya açıldığında anahat oluşturma modunu girin.
+- Ana hattı **Etkinleştir** -bir dosya açıldığında ana hat modunu girin.
 
-- **Pragma bölgelerini anahat** - otomatik olarak ana hatlarıyla `#pragma` bölge bloklarının.
+- **Ana hat pragma bölgeleri** -otomatik `#pragma` olarak ana hat bölge blokları.
 
-- **Deyim bloklarının ana hatlarıyla** - otomatik olarak deyim bloklarının ana hat.
+- **Ana hat ekstresi blokları** -otomatik olarak ana hat ekstresi blokları.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)
-- [C++'da (VC blogunda) yeniden düzenleme](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [İçinde C++ yeniden düzenleme (VC blogu)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
