@@ -8,22 +8,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20124d2e9b9cc30a7577a3682358f2a9d918ed43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: bb8367da357bd2ac53a4534cfffdd9332f4dc7aa
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65456861"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711236"
 ---
 # <a name="design-user-interfaces"></a>Kullanıcı arabirimleri tasarlama
 
-Oluşturun ve Visual Studio içindeki çeşitli araçları kullanarak uygulamanız için kullanıcı arabirimini tasarlayabilirsiniz.
+Visual Studio 'daki çeşitli araçları kullanarak uygulamanız için Kullanıcı arabirimi oluşturabilir ve tasarlayabilirsiniz.
 
-|Hakkında daha fazla bilgi edinmek için|Bkz. |
+|Hakkında daha fazla bilgi edinmek için|Bkz.|
 | - |---------|
-| Visual Studio ve Visual Studio için Blend, XAML tasarımcıları özellikleri | [Visual Studio ve Visual Studio için Blend, XAML tasarım](../designers/designing-xaml-in-visual-studio.md) |
-| Visual Studio kullanarak herhangi bir XAML tabanlı uygulama tasarımı|[Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
-| Visual Studio için Blend kullanarak herhangi bir XAML tabanlı uygulama tasarımı | [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md) |
-| XAML WPF örneğinizin kullanan masaüstü uygulamaları tasarlama | [Windows Presentation Foundation ile çalışmaya başlama](../designers/getting-started-with-wpf.md) |
-| Visual Studio'da DirectX uygulaması geliştirme | [Oyunlar ve uygulamalar için 3B varlıklarla çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md) |
-| Standart simgeleri programlarınız için kullanılabilir | [Visual Studio görüntü kitaplığı](../designers/the-visual-studio-image-library.md) |
+| Visual Studio ve Visual Studio için Blend XAML tasarımcılarının özellikleri | [Visual Studio ve Visual Studio için Blend XAML tasarlama](../designers/designing-xaml-in-visual-studio.md) |
+| Visual Studio kullanarak XAML tabanlı herhangi bir uygulamayı tasarlama|[Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
+| Visual Studio için Blend kullanarak XAML tabanlı herhangi bir uygulamayı tasarlama | [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](creating-a-ui-by-using-blend-for-visual-studio.md) |
+| XAML WPF özelliğini kullanan masaüstü uygulamaları tasarlama | [Windows Presentation Foundation kullanmaya başlayın](../designers/getting-started-with-wpf.md) |
+| Visual Studio 'da DirectX uygulaması geliştirme | [Oyunlar ve uygulamalar için 3B varlıklarla çalışma](../designers/working-with-3-d-assets-for-games-and-apps.md) |
+| Programlarınız için kullanılabilen standart simgeler | [Visual Studio görüntü kitaplığı](../designers/the-visual-studio-image-library.md) |
+| Uygulamanız XAML etkin yeniden yükleme kullanılarak çalışırken XAML kullanıcı arabirimi oluşturma | [Visual Studio 'da XAML etkin yeniden yüklemesine sahip XAML kodunu yazma ve hata ayıklama](../debugger/xaml-hot-reload.md) |

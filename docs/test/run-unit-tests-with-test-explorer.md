@@ -1,7 +1,7 @@
 ---
 title: Test Gezgini ile birim testlerini çalıştırma ve hata ayıklama
 description: Visual Studio 'da test Gezgini ile testlerin nasıl çalıştırılacağını öğrenin. Bu konu, derleme sonrasında otomatik test çalıştırmalarını etkinleştirme, test sonuçlarını görüntüleme, test listesini gruplandırma ve filtreleme, çalma listeleri oluşturma, testleri hata ayıklama ve test kısayollarını kullanma konularını ele alır.
-ms.date: 11/04/2016
+ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,35 +10,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493307"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711385"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
-Visual Studio 'dan veya üçüncü taraf birim testi projelerinden birim testlerini çalıştırmak için **Test Gezgini** 'ni kullanın. Testleri kategoriler halinde gruplamak, test listesini filtrelemek ve testlerin çalma listelerini oluşturmak, kaydetmek ve çalıştırmak için **Test Gezgini** ' ni de kullanabilirsiniz. Testlerde hata ayıklama yapabilir ve test performansını ve kod kapsamını çözümleyebilirsiniz.
+Visual Studio 'dan veya üçüncü taraf birim testi projelerinden birim testlerini çalıştırmak için test Gezgini 'ni kullanın. Testleri kategoriler halinde gruplamak, test listesini filtrelemek ve testlerin çalma listelerini oluşturmak, kaydetmek ve çalıştırmak için test Gezgini ' ni de kullanabilirsiniz. Testlerde hata ayıklama yapabilir ve test performansını ve kod kapsamını çözümleyebilirsiniz.
 
-Visual Studio hem yönetilen hem de yerel kod için Microsoft birim testi çerçeveleri içerir. Ancak, **Test Gezgini** , test Gezgini bağdaştırıcısı uygulayan herhangi bir birim test çerçevesini de çalıştırabilir. Üçüncü taraf birim testi çerçevelerini yükleme hakkında daha fazla bilgi için bkz. [üçüncü taraf birim testi çerçeveleri yükleme](../test/install-third-party-unit-test-frameworks.md)
+Visual Studio hem yönetilen hem de yerel kod için Microsoft birim testi çerçeveleri içerir. Ancak, test Gezgini, test Gezgini bağdaştırıcısı uygulayan herhangi bir birim test çerçevesini de çalıştırabilir. Üçüncü taraf birim testi çerçevelerini yükleme hakkında daha fazla bilgi için bkz. [üçüncü taraf birim testi çerçeveleri yükleme](../test/install-third-party-unit-test-frameworks.md)
 
 **Test Gezgini** , bir çözümde ve üretim kodu projelerinin parçası olan test sınıflarından birden çok test projesinin testlerini çalıştırabilir. Test projeleri, farklı birim testi çerçeveleri kullanabilir. Test altındaki kod .NET için yazıldığında, hedef kodun dilinden bağımsız olarak, test projesi de .NET ' i hedefleyen herhangi bir dilde yazılabilir. Yerel C/C++ kod projeleri, bir C++ birim test çerçevesi kullanılarak test edilmelidir. Daha fazla bilgi için [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Testleri Test Gezgini'nde çalıştırma
 
+
 Test projesi oluşturduğunuzda, testler Test Gezgini'nde görünür. Test Gezgini görünür değilse seçin **Test** Visual Studio menüsünde **Windows**ve ardından **Test Gezgini**.
 
-![Test Gezgini](../test/media/ute_failedpassednotrunsummary.png)
 
+::: moniker range="vs-2017"
+![Birim Test Gezgini](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Test Gezgini](../test/media/vs-2019/test-explorer-16-2.png)
+::: moniker-end
+
+::: moniker range="vs-2017"
 Çalıştırma, yazma ve testlerinizi yeniden çalıştırın, Test Gezgini sonuçları varsayılan gruplarında görüntüler **başarısız testler**, **başarılı testler**, **Atlanan testler** ve  **Testleri Çalıştır**. Test Gezgini'nin testlerinizi gruplandırma şeklini değiştirebilirsiniz.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Testlerinizi çalıştırırken, yazarken ve yeniden çalıştırdığınızda, test Gezgini sonuçları varsayılan bir **Proje**, **ad alanı**ve **sınıf**gruplandırmasında görüntüler. Test Gezgini 'nin testlerinizi gruplandırma şeklini değiştirebilirsiniz.
+::: moniker-end
 
 **Test Gezgini** araç çubuğundan testleri bulma, düzenleme ve çalıştırma işinin çoğunu yapabilirsiniz.
 
+::: moniker range="vs-2017"
 ![Test Gezgini araç çubuğundan Testleri Çalıştır](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Test Gezgini araç çubuğundan Testleri Çalıştır](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
 ### <a name="run-tests"></a>Testleri çalıştırma
 
+::: moniker range="vs-2017"
 Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesini çalıştırabilirsiniz. Aşağıdakilerden birini yapın:
 
 - Bir çözümdeki tüm testleri çalıştırmak için tercih **tümünü Çalıştır**.
@@ -50,15 +68,31 @@ Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesi
 - Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 **Test Gezgini** penceresinin en üstündeki **geçiş/başarısızlık çubuğu** , testler çalışırken hareketlendirilir. Test çalıştırmasının sonunda, herhangi bir test başarısız olursa tüm testler başarılı veya Red durumunda, **geçiş/başarısızlık çubuğu** yeşile dönüşür.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Tüm testler, Çözümdeki tüm testleri bir grup veya seçtiğiniz test kümesini çalıştırabilirsiniz. Aşağıdakilerden birini yapın:
+
+- Bir Çözümdeki tüm testleri çalıştırmak için **Tümünü Çalıştır** simgesini seçin.
+
+- Varsayılan bir gruptaki tüm testleri çalıştırmak için **Çalıştır** simgesini seçin ve sonra menüdeki grubu seçin.
+
+- Çalıştırmak istediğiniz bireysel testleri seçin, seçili bir test için sağ tıklama menüsünü açın ve ardından **Seçili Testleri Çalıştır**' ı seçin.
+
+- Bireysel testlerin herhangi bir sırada çalıştırılmasını engelleyen bir bağımlılığı yoksa, araç çubuğunun ayarlar menüsünde paralel test yürütme ' yi açın. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Her derleme sonrasında Testleri Çalıştır
-
+::: moniker range="vs-2017"
 |Düğme|Açıklama|
 |-|-|
 |![Yapıdan sonra çalıştırmak](../test/media/ute_runafterbuild_btn.png)|Her yerel derlemeden sonra birim testlerinizi çalıştırmak için standart menüdeki **Test** ' i seçin ve ardından **Test Gezgini** araç çubuğunda **derlemeden sonra Testleri Çalıştır** ' ı seçin.|
 
 > [!NOTE]
 > Her derleme sonrasında birim testlerini çalıştırmak, Visual Studio 2017 Enterprise veya Visual Studio 2019 gerektirir. Visual Studio 2019 ' de Community ve Professional 'a ve Enterprise 'a dahildir.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Her yerel derlemeden sonra birim testlerinizi çalıştırmak için, test Gezgini araç çubuğunda Ayarlar simgesini açın ve **derlemeden sonra Testleri Çalıştır**' ı seçin.
+::: moniker-end
 
 ## <a name="view-test-results"></a>Test sonuçlarını görüntüle
 
@@ -68,7 +102,12 @@ Test Gezgini çalıştırma, yazma ve testlerinizi yeniden çalıştırın gibi 
 
 Tek bir testin ayrıntılarını görüntülemek için testi seçin.
 
+::: moniker range="vs-2017"
 ![Test yürütme ayrıntıları](../test/media/ute_testdetails.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Test yürütme ayrıntıları](../test/media/vs-2019/test-explorer-detail.png)
+::: moniker-end
 
 Test ayrıntıları bölmesinde aşağıdaki bilgileri görüntüler:
 
@@ -94,18 +133,41 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde grupland�
 
 ### <a name="group-tests-in-the-test-list"></a>Test listesindeki testleri gruplandırma
 
+::: moniker range="vs-2017"
 Testlerin düzenlenme şeklini değiştirmek için **Gruplandırma ölçütü** düğme ![test Gezgini grubu düğmesinin](../test/media/ute_groupby_btn.png) yanındaki aşağı oku seçin ve yeni bir gruplandırma ölçütü seçin.
 
 ![Test Gezgini 'nde kategoriye göre grup testleri](../test/media/ute_groupbycategory.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+Test Gezgini, testlerinizi bir hiyerarşiye gruplandırmanıza olanak tanır. Varsayılan hiyerarşi gruplandırması **Proje**, **ad alanı**ve daha sonra **sınıftır**. Testlerin düzenlenme şeklini değiştirmek için **grupla** düğmesine ![tıklayın Test Explorer grubu düğmesini](../test/media/ute_groupby_btn.png) seçin ve yeni bir gruplandırma ölçütü seçin.
+
+![Test Gezgini 'nde kategoriye göre grup testleri](../test/media/vs-2019/test-explorer-groupby-162.png)
+
+Hiyerarşi ve gruplama düzeylerini tanımlayabilir ve sonra tercih ettiğiniz sırada grupla seçeneklerini belirleyerek **sınıfa** **göre gruplandırabilirsiniz** .
+
+![Duruma göre Gruplandır ve sonra sınıfı](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Test Gezgini grupları
 
+::: moniker range="vs-2017"
 |Grup|Açıklama|
 |-|-----------------|
 |**Süresi**|Yürütme süresine göre test grupları: **Hızlı**, **Orta**ve **yavaş**.|
 |**Sonucu**|Testleri yürütme sonuçlarına göre gruplandırır: **Başarısız testler**, **Atlanan testler**, **başarılı testler**.|
 |**Lerdir**|Tanımladığınız kategori/değer çiftlerine göre test grupları. Nitelik kategorilerini ve değerlerini belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
 |**Project**|Projeler adına göre test grupları.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Grup|Açıklama|
+|-|-----------------|
+|**Süresi**|Testleri yürütme zamanına göre gruplandırır: **Hızlı**, **Orta**ve **yavaş**.|
+|**State**|Testleri yürütme sonuçlarına göre gruplandırır: **Başarısız testler**, **Atlanan testler**, **başarılı testler**, **çalıştırılmadı**|
+|**Hedef Çerçeve** | Testleri, projeleri hedeflerine göre gruplandırır |
+|**Namespace**|Testleri içerilen ad alanına göre gruplandırır.|
+|**Project**|Testleri içeren proje tarafından gruplandırır.|
+|**Sınıfı**|Testleri içerilen sınıfa göre gruplandırır.|
+::: moniker-end
 
 ### <a name="group-by-traits"></a>Nitelikleri göre Gruplandır
 
@@ -122,13 +184,66 @@ Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, bir <xref:Mic
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory özniteliği değer olmadan bir kategori sağlamanıza olanak sağlar. TestCategory özniteliği tarafından tanımlanan bir kategori de bir TestProperty özniteliği kategorisi olabilir.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty özniteliği nitelik kategori/değer çiftini tanımlamanızı sağlar.|
 
+
 **İçin Microsoft birim testi çerçevesindeki niteliklerC++**
 
  [Için C++Microsoft birim testi çerçevesini kullanma ](how-to-use-microsoft-test-framework-for-cpp.md)konusuna bakın.
 
-### <a name="search-and-filter-the-test-list"></a>Test listesini arama ve filtreleme
+## <a name="create-custom-playlists"></a>Özel çalma listeleri oluşturma
 
-Test Gezgini filtrelerini, görüntülediğiniz ve çalıştırdığınız projelerinizde test yöntemlerini sınırlandırmak için kullanabilirsiniz.
+::: moniker range="vs-2017"
+Çalıştırmak veya bir grup olarak görüntülemek istediğiniz testlerin listesini oluşturabilir ve kaydedebilirsiniz. Bir çalma listesi seçtiğinizde, listedeki testler test Gezgini 'nde görüntülenir. Birden fazla çalma listesine bir test ekleyebilirsiniz ve varsayılan **Tüm testler** çalma listesini seçtiğinizde projenizdeki tüm testler kullanılabilir.
+
+![Bir çalma listesi seçin](../test/media/ute_playlist.png)
+
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **Yapılacaklar** > listesi**NewPlaylist**listesine ekle ' yi seçin. Dosyayı **Yeni çalma listesi oluştur** iletişim kutusunda belirttiğiniz ad ve konuma kaydedin.
+
+**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **çalma listesine ekle**' yi seçin ve ardından testleri eklemek istediğiniz çalma listesini seçin.
+
+**Bir çalma listesi açmak için**Visual Studio menüsünden **Test** > **listesi** ' ni seçin ve son kullanılan çalma listeleri listesinden seçim yapın veya çalma listesini **Aç** ' ı seçerek şarkı listesinin adını ve konumunu belirtin.
+
+Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Çalıştırmak veya bir grup olarak görüntülemek istediğiniz testlerin listesini oluşturabilir ve kaydedebilirsiniz. Bir çalma listesi seçtiğinizde, listedeki testler yeni bir test Gezgini sekmesinde görüntülenir. Birden fazla çalma listesine bir test ekleyebilirsiniz.
+
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **Yapılacaklar** > listesi**Yeni çalma listesine**Ekle ' yi seçin.
+
+![Çalma listesi oluşturma](../test/media/vs-2019/test-explorer-playlist-16-2.png)
+
+Yeni bir test Gezgini sekmesinde çalma listesi açılır. Bu çalma listesini bir kez kullanarak atabilir veya çalma listesi penceresinin araç çubuğunda **Kaydet** düğmesine tıklayabilir ve sonra da bir ad ve konum seçerek çalma listesini kaydedebilirsiniz.
+
+![Çalma listesi ayrı test Gezgini sekmesinde açılıyor](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+
+**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin. 
+
+**Bir çalma listesi açmak için**, Visual Studio araç çubuğunda çalma listesi simgesini seçin ve menüden önceden kaydedilmiş bir çalma listesi dosyası seçin.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+### <a name="test-explorer-columns"></a>Test Gezgini sütunları
+
+[Gruplar](#test-explorer-groups) , test Gezgini 'nde nitelik, yığın Izleme, hata Iletisi ve tam ad gibi sütunlar olarak da kullanılabilir. Çoğu sütun varsayılan olarak görünmez ve gördüğünüz sütunları ve görünecekleri sırayı özelleştirebilirsiniz.
+
+![Duruma göre Gruplandır ve sonra sınıfı](../test/media/vs-2019/test-explorer-columns-16-2.png)
+
+### <a name="filter-sort-and-rearrange-test-columns"></a>Test sütunlarını filtreleme, sıralama ve yeniden düzenleme
+
+Sütunlar filtrelenebilir, sıralanabilir ve yeniden düzenlenebilir. 
+* Belirli nitelikleri filtrelemek için nitelikler sütununun en üstündeki filtre simgesine tıklayın.
+
+  ![Sütun filtresi](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
+
+* Sütunların sırasını değiştirmek için, bir sütun başlığına tıklayın ve sola veya sağa sürükleyin.
+
+* Bir sütunu sıralamak için sütun başlığına tıklayın. Tüm sütunlar sıralanmayabilir.
+
+  ![Sütun sıralaması](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
+::: moniker-end
+
+## <a name="search-and-filter-the-test-list"></a>Test listesini arama ve filtreleme
+
+Ayrıca, görüntülediğiniz ve çalıştırdığınız projelerinizde test yöntemlerini sınırlandırmak için test Gezgini arama filtrelerini de kullanabilirsiniz.
 
 **Test Gezgini** arama kutusuna bir dize yazdığınızda ve **ENTER**' u seçtiğinizde, test listesi yalnızca tam adları dizeyi içeren testleri görüntüleyecek şekilde filtrelenir.
 
@@ -140,7 +255,12 @@ Farklı ölçütlere göre filtrelemek için:
 
 3. Tırnak işaretleri arasında filtre değeri girin.
 
+::: moniker range="vs-2017"
 ![Test Gezgini 'nde testleri filtrele](../test/media/ute_filtertestlist.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Test Gezgini 'nde testleri filtrele](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 > [!NOTE]
 > Aramalar büyük/küçük harfe duyarlıdır ve belirtilen dizeyle ölçüt değerinin herhangi bir bölümüyle eşleşir.
@@ -157,25 +277,11 @@ Farklı ölçütlere göre filtrelemek için:
 
 Bir filtrenin sonuçlarının bir alt kümesini dışlamak için aşağıdaki sözdizimini kullanın:
 
-```cpp
+```
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
 Örneğin, `FullName:"MyClass" - FullName:"PerfTest"` adında "perftest" da dahil olan testler hariç, adında "MyClass" içeren tüm testleri döndürür.
-
-## <a name="create-custom-playlists"></a>Özel çalma listeleri oluşturma
-
-Çalıştırmak veya bir grup olarak görüntülemek istediğiniz testlerin listesini oluşturabilir ve kaydedebilirsiniz. Bir çalma listesi seçtiğinizde, listedeki testler test Gezgini 'nde görüntülenir. Birden fazla çalma listesine bir test ekleyebilirsiniz ve varsayılan **Tüm testler** çalma listesini seçtiğinizde projenizdeki tüm testler kullanılabilir.
-
-![Bir çalma listesi seçin](../test/media/ute_playlist.png)
-
-**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **Yapılacaklar** > listesi**NewPlaylist**listesine ekle ' yi seçin. Dosyayı **Yeni çalma listesi oluştur** iletişim kutusunda belirttiğiniz ad ve konuma kaydedin.
-
-**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **çalma listesine ekle**' yi seçin ve ardından testleri eklemek istediğiniz çalma listesini seçin.
-
-**Bir çalma listesi açmak için**Visual Studio menüsünden **Test** > **listesi** ' ni seçin ve son kullanılan çalma listeleri listesinden seçim yapın veya çalma listesini **Aç** ' ı seçerek şarkı listesinin adını ve konumunu belirtin.
-
-Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Hata ayıklama ve birim testlerini analiz etme
 
@@ -192,7 +298,7 @@ Test Gezgini, testleriniz için hata ayıklama oturumu başlatmak için kullanab
 
 ### <a name="diagnose-test-method-performance-issues"></a>Test yöntemi performans sorunlarını tanılama
 
-Test yönteminin neden çok fazla zaman aldığını tanılamak için test Gezgini 'nde yöntemi seçin ve sağ tıklama menüsünde **profil** ' i seçin. Bkz. [Performans Gezgini](../profiling/performance-explorer.md).
+Bir test yönteminin neden çok fazla zaman aldığını tanılamak için test Gezgini 'nde yöntemi seçin ve sağ tıklama menüsünde **profil seçili test** ' i seçin. Bkz. [Performans Gezgini](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Birim testi kod kapsamını analiz etme
 
@@ -200,6 +306,7 @@ Visual Studio kod kapsamı aracını kullanarak, gerçekten birim testleriniz ta
 
 Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
 
+::: moniker range="vs-2017"
 1. Üstteki menü çubuğunda **Test** ' i seçin ve ardından **kod kapsamını analiz et**' i seçin.
 
 2. Alt menüden aşağıdaki komutlardan birini seçin:
@@ -207,6 +314,10 @@ Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
     - **Seçili testler** , test Gezgini 'nde seçtiğiniz test yöntemlerini çalıştırır.
 
     - **Tüm testler** Çözümdeki tüm test yöntemlerini çalıştırır.
+::: moniker-end
+::: moniker range=">=vs-2019"
+* Test Gezgini ' ne sağ tıklayın ve **Seçili testler Için kod kapsamını çözümle** ' yi seçin.
+::: moniker-end
 
 **Kod kapsamı sonuçlarını** penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.
 

@@ -10,32 +10,38 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461403"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712212"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio Test Araçları
 
 Visual Studio Test Araçları size yardımcı olabilir ve takımınızın geliştirmek ve bunu sürdürmek yüksek standartlarda kod memnuniyeti.
 
 > [!NOTE]
-> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir. Live Unit Testing, Intellitest ve kodlanmış UI testi gibi diğer test araçları yalnızca Visual Studio Enterprise Edition'da kullanılabilir. Sürümleri hakkında daha fazla bilgi için bkz. [karşılaştırma Visual Studio Ide'leri](https://visualstudio.microsoft.com/vs/compare/).
+> Birim testi Visual Studio'nun tüm sürümlerinde kullanılabilir. Live Unit Testing, IntelliTest ve kodlanmış UI testi gibi diğer test araçları yalnızca Visual Studio Enterprise sürümünde kullanılabilir. Sürümler hakkında daha fazla bilgi için bkz. [Visual Studio Ides 'ı karşılaştırın](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="test-explorer"></a>Test Gezgini
 
-**Test Gezgini** penceresi oluşturma, yönetme ve birim testlerini çalıştırmak geliştiriciler yardımcı olur. Microsoft birim test çerçevesini veya çeşitli üçüncü taraf ve açık kaynak çerçevelerinden birini kullanabilirsiniz.
+**Test Gezgini** penceresi, geliştiricilerin birim testlerini oluşturmalarına, yönetmesine ve çalıştırmasına yardımcı olur. Microsoft birim test çerçevesini veya çeşitli üçüncü taraf ve açık kaynak çerçevelerinden birini kullanabilirsiniz.
 
+::: moniker range="vs-2017"
 ![Visual Studio Test Gezgini](media/devtest-testexplorer.png)
+::: moniker-end
 
-* [Birim testi ile çalışmaya başlama](unit-test-your-code.md)
+::: moniker range="vs-2019"
+![Visual Studio Test Gezgini 16,2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
+
+* [Birim testini kullanmaya başlama](unit-test-your-code.md)
 * [Test Gezgini ile birim testleri çalıştırma](run-unit-tests-with-test-explorer.md)
 * [Test Gezgini Hakkında SSS](test-explorer-faq.md)
 * [Üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md)
 
-Visual Studio ayrıca genişletilebilir ve üçüncü taraf birim test bağdaştırıcısı NUnit ve xUnit.net gibi kapısı açılır. Ayrıca, kod kopyalama yeteneğini yakından el gider yaygın hata düzeltmeleri için aday olabilecek anlamsal olarak benzer bir kod bloklarını belirlemenize yardımcı olur veya yeniden düzenleme yüksek kaliteli yazılım sunmaya ile.
+Visual Studio da genişletilebilir ve NUnit ve xUnit.net gibi üçüncü taraf birim testi bağdaştırıcılarının kapısını açar. Ayrıca, kod kopyalama özelliği, yaygın hata düzeltmeleri veya yeniden düzenleme için aday olabilecek anlamsal benzer kod bloklarını tanımlamanızı sağlayarak yüksek kaliteli yazılım sunmaya yardımcı olur.
 
 ![Üçüncü taraf test tümleştirmesi](media/devtest-thirdparty.png)
 
@@ -45,42 +51,42 @@ Visual Studio ayrıca genişletilebilir ve üçüncü taraf birim test bağdaşt
 
 ## <a name="intellitest"></a>IntelliTest
 
-Intellitest, birim testleri ve test verilerini, yönetilen kod için otomatik olarak oluşturur. Intellitest kapsamı artırır ve yeni veya mevcut koda yönelik birim testleri oluşturmak ve sürdürmek için gereken çabayı önemli ölçüde azaltır.
+IntelliTest, yönetilen kodunuz için birim testlerini ve test verilerini otomatik olarak oluşturur. IntelliTest kapsamı geliştirir ve yeni veya mevcut kod için birim testleri oluşturma ve sürdürme çabaları önemli ölçüde azaltır.
 
-![Intellitest sürüyor](media/devtest-intellitest.png)
+![IntelliTest eylemde](media/devtest-intellitest.png)
 
 * [Intellitest ile kodunuz için birim testleri oluşturma](generate-unit-tests-for-your-code-with-intellitest.md)
-* [Intellitest – hepsini yönetmek için bir test](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest – tümünü kurala göre bir test](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [Intellitest başvuru kılavuzu](intellitest-manual/index.md)
 
 ## <a name="code-coverage"></a>Kod kapsamı
 
-[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından edildiğini belirler. Etkin hatalara karşı koruma sağlamak için testleriniz çalışma veya "kodunuzun büyük bir kısmı kapsayan".
+[Kod kapsamı](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından edildiğini belirler. Hatalara karşı etkili bir şekilde koruma sağlamak için, testleriniz kodunuzun büyük bir oranını "ele almalıdır" veya "kapsamalıdır".
 
-Kod kapsamı analizi, yönetilen ve yönetilmeyen (yerel) kod için uygulanabilir.
+Kod kapsamı analizi, hem yönetilen hem de yönetilmeyen (yerel) koda uygulanabilir.
 
 Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kapsamı bir seçenektir. Sonuçlar tablosu, her derleme sınıfı ve yöntemi içinde çalışan kod yüzdesini gösterir. Ayrıca, kaynak düzenleyici hangi kodun test edildiğini gösterir.
 
 * [Ne kadar kodun test edildiğini belirlemek için kod kapsamını kullanma](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Birim testi, kod kapsamını ve kod kopya Analizi ile Visual Studio (Laboratuvar)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Visual Studio (Lab) ile birim testi, kod kapsamı ve kod kopyası Analizi](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Kod kapsamı analizini özelleştirme](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
 
-[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) test ettiğiniz uygulamanın diğer bölümlerini saptamalar veya dolgular ile değiştirerek kodu yalıtmanıza yardımcı olur.
+[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) , uygulamanın diğer bölümlerini saplamalar veya parçalar ile değiştirerek test ettiğiniz kodu yalıtmanıza yardımcı olur.
 
-## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Kullanıcı arabirimi kodlanmış UI ve Selenium ile test
+## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Kodlanmış UI ve Selenium ile Kullanıcı Arabirimi testi
 
-Kodlanmış UI testleri, uygulamanızın kullanıcı arabiriminin davranışı ve işlevsellik doğrulamak için tam olarak otomatikleştirilmiş testler oluşturmak için bir yol sağlar. Bunlar, teknoloji, XAML tabanlı UWP uygulamaları, tarayıcı uygulamaları ve SharePoint uygulamaları gibi birçok platformda UI testi otomatik hale getirebilirsiniz.
+Kodlanmış UI testleri, uygulamanızın kullanıcı arabiriminin işlevselliğini ve davranışını doğrulamak için tam otomatikleştirilmiş testlerin oluşturulması için bir yol sağlar. XAML tabanlı UWP uygulamaları, tarayıcı uygulamaları ve SharePoint uygulamaları da dahil olmak üzere çeşitli teknolojiler genelinde UI testini otomatik hale getirebilir.
 
-En iyi türünün en iyisi kodlanmış UI testleri veya Selenium ile test genel tarayıcı tabanlı UI olsun, Visual Studio, ihtiyacınız olan araçları sağlar.
+Selenium ile, en iyi kodlanmış UI testlerini veya genel tarayıcı tabanlı UI testini tercih etmeksizin, Visual Studio ihtiyacınız olan tüm araçları sağlar.
 
-![Kullanıcı Arabirimi ile kodlanmış UI testi](media/devtest-codeduitest.png)
+![Kodlanmış UI ile UI testi](media/devtest-codeduitest.png)
 
 * [UI otomasyonunu kullanarak kodunuzu test etme](use-ui-automation-to-test-your-code.md)
-* [Oluşturma, düzenleme ve kodlanmış UI testi Bakımı kullanmaya başlayın](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Kodlanmış UI testleriyle UWP uygulamalarını test etme](test-uwp-app-with-coded-ui-test.md)
-* [Kodlanmış UI testlerini Visual Studio Enterprise (Laboratuvar) ile giriş](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Kodlanmış UI testi oluşturmaya, düzenlemesine ve sürdürme ile çalışmaya başlama](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+* [Kodlanmış UI Testleriyle UWP uygulamalarını test etme](test-uwp-app-with-coded-ui-test.md)
+* [Visual Studio Enterprise (Lab) ile kodlanmış UI testlerine giriş](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="load-testing"></a>Yük testi
 
