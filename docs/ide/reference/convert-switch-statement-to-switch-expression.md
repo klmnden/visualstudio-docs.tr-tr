@@ -1,5 +1,5 @@
 ---
-title: Switch deyimi'switch ifadesiyle için Dönüştür
+title: Switch deyimini switch ifadesine dönüştürme
 ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
@@ -9,32 +9,32 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecb7750301101a2607c17e68b5e919623a03caba
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329104"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740051"
 ---
-# <a name="convert-switch-statement-to-switch-expression"></a>Switch deyimi'switch ifadesiyle için Dönüştür
+# <a name="convert-switch-statement-to-switch-expression"></a>Switch deyimini switch ifadesine dönüştürme
 
 Bu yeniden düzenleme için geçerlidir:
 
 - C#
 
-**Ne:** Dönüştürme bir [geçiş deyimi](/dotnet/csharp/language-reference/keywords/switch) için bir C# 8.0 [geçiş ifadesi](/dotnet/csharp/whats-new/csharp-8#switch-expressions).
+**Yazdırılacak** [Switch deyimini](/dotnet/csharp/language-reference/keywords/switch) C# 8,0 [anahtar ifadesine](/dotnet/csharp/whats-new/csharp-8#switch-expressions)Dönüştür.
 
-**ne zaman:** Dönüştürmek istediğiniz bir `switch` deyimi bir `switch` ifade geçme veya tam tersi. 
+**Oluşturulurken** Bir `switch` deyimi`switch` ifadeye dönüştürmek istiyorsunuz, tersi de geçerlidir. 
 
-**Neden:** İfadeleri yalnızca kullanıyorsanız, geleneksel bir kolayca durumundan bu yeniden düzenleme sağlar `switch` deyimleri.
+**Kaydol** Yalnızca ifadeler kullanıyorsanız, bu yeniden düzenleme geleneksel `switch` deyimlerden kolay bir geçişe izin vermez.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
-1. Proje dosyanızda [önizlemek için dil sürümünü ayarlama](/dotnet/csharp/language-reference/configure-language-version#set-the-language-version-in-visual-studio) beri `switch` ifadelerdir yeni C# 8.0 özelliği.
-2. İmlecinizi, `switch` anahtar sözcüğü ve ENTER tuşuna **Ctrl**+ **.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-3. Seçin **dönüştürme switch ifadesi ifade**.
+1. Proje dosyanızda, `switch` ifadeler yeni C# bir 8,0 özelliği olduğundan [dil sürümünü önizleme olarak ayarlayın](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file) .
+2. İmlecinizi `switch` anahtar sözcüğe yerleştirip **CTRL**+tuşuna basın **.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+3. **Switch deyimini Ifadeye Dönüştür**' ü seçin.
 
-   ![Switch deyimi'switch ifadesiyle için Dönüştür](media/convert-switch-statement-to-switch-expression.png) 
+   ![Switch deyimini switch ifadesine dönüştürme](media/convert-switch-statement-to-switch-expression.png) 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

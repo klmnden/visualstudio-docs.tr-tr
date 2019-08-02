@@ -11,18 +11,21 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430889"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740028"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>3. Adım: Etkileşimli REPL penceresini kullanma
+# <a name="step-3-use-the-interactive-repl-window"></a>3\. Adım: Etkileşimli REPL penceresini kullanma
 
-**Önceki adım sayısı: [Yazma ve kod çalıştırma](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Önceki adım: [Kodu yaz ve Çalıştır](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 Visual Studio **etkileşimli** penceresi Python için normal düzenleme-oluşturma-hata ayıklama döngüsü önemli ölçüde kısaltır bir zengin okuma-değerlendirme-print-loop (REPL) deneyimi sağlar. **Etkileşimli** penceresinde Python komut satırı REPL deneyiminin tüm özellikleri sağlar. Ayrıca, çok kaynak dosyaları Visual Studio'da kod değişimi Düzenleyici, aksi takdirde komut satırından yavaşlatan bir yöntemdir kolaylaştırır.
+
+> [!NOTE]
+> REPL ile ilgili sorunlar için, `ipython` ve `ipykernel` paketlerinin yüklü olduğundan ve paketlerin yüklenmesiyle ilgili yardım için bkz. [Python ortamları paketleri sekmesi](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Açık **etkileşimli** projenin Python ortamında sağ tıklanarak penceresi **Çözüm Gezgini** (gibi **Python 3.6 (32-bit)** bir önceki grafikte gösterilen) ve seçme **açık etkileşimli pencere**. Alternatif olarak seçebileceğiniz **görünümü** > **diğer Windows** > **Python etkileşimli Windows** ana Visual Studio menüsünde.
 

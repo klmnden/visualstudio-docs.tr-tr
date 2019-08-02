@@ -1,5 +1,5 @@
 ---
-title: Erişilebilir uygulamalar tasarlama için kaynaklar | Microsoft Docs
+title: Erişilebilir uygulamalar tasarlama kaynakları | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,47 +14,47 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35e84dc3ae817ab3c5346d83fc5f37934a34e0f9
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689570"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740172"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir Uygulamalar Tasarlama için Kaynaklar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için ipuçları ve örnekler yanı sıra erişilebilir tasarım destekleyen teknolojileri hakkında bilgi için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler bulunabilir çevrimiçine [ http://www.microsoft.com/enable/ ](http://www.microsoft.com/enable/).  
+Erişilebilir tasarımı ve erişilebilir Windows Uygulamaları ve Web siteleri geliştirmeye yönelik ipuçları ve örnekleri destekleyen teknolojiler hakkında bilgi edinmek için aşağıdaki bağlantıları kullanın. Erişilebilirlik hakkında genel bilgiler, adresinde [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)çevrimiçi olarak bulunabilir.  
   
-## <a name="technologies"></a>Technologies  
+## <a name="technologies"></a>Teknolojilerinin  
   
-- **Microsoft Active Accessibility** şekilde erişilebilirliği arttırır bir COM tabanlı teknoloji Microsoft Windows üzerinde çalışan uygulamalarla iş kolaylaştırır. Bu, bir COM arabirimi yanı sıra işletim sistemi eklenen dinamik bağlantı kitaplıkları ve kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemler sağlayan bir uygulama programlama öğeleri sağlar. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
+- **Microsoft Etkin Erişilebilirlik** Microsoft Windows üzerinde çalışan uygulamalarla erişilebilirlik yardımlarının çalışma yöntemini artıran COM tabanlı bir teknoloji. İşletim sisteminin yanı sıra bir COM arabirimi ve Kullanıcı arabirimi öğeleriyle ilgili bilgileri açığa çıkarmak için güvenilir yöntemler sağlayan uygulama programlama öğelerine dahil olan dinamik bağlantı kitaplıklarını sağlar. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
-- **Microsoft .NET konuşma teknolojileri** Microsoft .NET Speech SDK'sı Microsoft kümesidir [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] denetimler, Microsoft Internet Explorer konuşma eklentisi, örnek uygulamalar ve oluşturmak, Web geliştiricilerinin sağlayan belgeler hata ayıklama ve Konuşma özellikli dağıtma [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] uygulamalar. Araçları, Microsoft Visual tanıdık geliştirme ortamını yararlanarak geliştiricilerin Studio'ya, sorunsuz bir şekilde tümleştirilmiştir. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).  
+- **Microsoft .net konuşma teknolojileri** Microsoft .net konuşma SDK 'sı, Web geliştiricilerinin konuşma özellikli [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] uygulamalar oluşturmasına, hata ayıklamasına ve dağıtmasına olanak tanıyan bir Microsoft denetimleri, Microsoft Internet Explorer konuşma eklentisi, örnek uygulamalar ve belgeler kümesidir. Araçlar Microsoft Visual Studio, geliştiricilerin tanıdık geliştirme ortamından yararlanmasını sağlayan sorunsuz bir şekilde tümleşiktir. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).  
   
-- **LAPONCA 1.0 anlama** Microsoft eşitlenmiş erişilebilir medya değişim (SAMI) teknolojisi, ses içeriğini multimedya PC için geliştiricilere bir yol sağlar. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).  
+- **Samı 1,0** ' i anlama Microsoft eşitlenmiş erişilebilir medya değişimi (SAMı) teknolojisi, geliştiricilerin bılgısayar çoklu ortamı için ses içeriğini açıklamalı alt yazı için bir yol sağlar. Daha fazla bilgi için bkz. [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Windows uygulamaları  
   
-- [İzlenecek yol: Erişilebilir bir Windows tabanlı uygulama oluşturma](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) bu konuda bir örnek Windows uygulama sertifikası için Windows logo beş erişilebilirlik gereksinimleri dahil etmek için adım adım yönergeler sağlar.  
+- [İzlenecek yol: Erişilebilir bir Windows tabanlı uygulama](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) oluşturma bu konuda, örnek bir Windows uygulamasında Windows için sertifikalı bir amblem için beş erişilebilirlik gereksinimi ekleme konusunda adım adım yönergeler sağlanmaktadır.  
   
-- **Klavye kullanıcı arabirimi tasarımı için yönergeler** teknik bu makalede, bir Windows uygulaması kullanıcı arabirimi, kullanıcıların tasarım klavyeden nasıl gezinebileceğiniz açıklanır. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
+- [Klavye Kullanıcı arabirimi tasarımı Için yönergeler](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) Bu teknik makalede, kullanıcıların klavyeden gezinebilecekleri bir Windows uygulaması kullanıcı arabirimini tasarlama açıklanmaktadır.  
   
-- **Konsolu erişilebilirlik** teknik bu makalede API'leri ve Windows XP'de Konsolu erişilebilirlik yardımcılarına kullanıma sunmak için kullanılan olayları açıklar. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
+- [Konsol erişilebilirliği](/previous-versions/windows/desktop/dnacc/console-accessibility) Bu teknik makalede, erişilebilirlik yardımlarına yönelik Windows XP 'de konsolu açığa çıkarmak için kullanılan API 'Ler ve olaylar açıklanmaktadır. 
   
 ## <a name="web-sites"></a>Web Siteleri  
   
-- [İzlenecek yol: Görüntü denetimleri kullanarak, menü denetimleri ve AutoPostBack erişilebilirlik yönergeleri](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) bu konuda bazı erişilebilirlik tasarım ipuçları yanı sıra örnek bir Web sayfası için Web erişilebilir denetimleri dahil etmek için adım adım yönergeler sağlar.  
+- [İzlenecek yol: Görüntü denetimlerini, menü denetimlerini ve AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 'ı kullanmak için erişilebilirlik yönergeleri bu konuda, bir örnek Web sayfasına erişilebilir denetimler ve Web için bazı erişilebilirlik tasarımı ipuçları dahil olmak üzere adım adım yönergeler sağlanmaktadır.  
   
-- **Web sayfaları için daha erişilebilir hale getirme** teknik bu makalede, Web sitesi geliştirme kullanım için erişilebilir hale getirilebilir öğeleri yanı sıra erişilebilir HTML 3.2 öğeleri listeler. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
+- [Web sayfalarını daha erişilebilir hale getirme](/previous-versions/windows/desktop/dnacc/making-web-pages-more-accessible) Bu teknik makalede, erişilebilir olan HTML 3,2 öğeleri ve Web sitesi geliştirmede kullanım için erişilebilir hale getirilebilir öğeler listelenir. 
   
-- **DHTML ile erişilebilir Web sayfaları oluşturma** Bu teknik makaleye yanı sıra erişilebilir Web tasarım ipuçları erişilebilir HTML 4.0 öğelerini listeler. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
+- [DHTML Ile erişilebilir Web sayfaları oluşturma](/previous-versions//ms528445(v=vs.85)) Bu teknik makalede, erişilebilir web tasarımı ipuçlarının yanı sıra erişilebilir HTML 4,0 öğeleri listelenir. 
   
-- **Metin alternatifleri için erişilemez Web sayfaları** teknik bu makalede, aynı Web sayfasının metin yalnızca sürümleri gibi birden çok görünüm sağlamak için XML ve XSLT kullanmayı açıklar. Daha fazla bilgi için bkz. [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+- [Erişilemeyen Web sayfalarının metin alternatifleri](/previous-versions/windows/desktop/dnacc/text-alternatives-to-inaccessible-web-pages) Bu teknik makalede, XML ve XSLT 'nin yalnızca metin sürümleri gibi aynı Web sayfasının birden çok görünümünü sağlamak için nasıl kullanılacağı açıklanır. 
   
-### <a name="third-party-resources"></a>Üçüncü parti Kaynaklar  
+### <a name="third-party-resources"></a>Üçüncü taraf kaynakları  
   
-- **World Wide Web Consortium (W3C) erişilebilirlik girişim Web** bu Web sitesi erişilebilir Web sitesi geliştirme için kılavuzları ve teknikleri sağlar. Daha fazla bilgi için bkz. [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
+- **World Wide Web Konsorsiyumu Web erişilebilirliği girişimi (W3C)** Bu web sitesi, erişilebilir Web sitesi geliştirmesi için yönergeler ve teknikler sağlar. Daha fazla bilgi için bkz. [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'nun Erişilebilirlik Özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)

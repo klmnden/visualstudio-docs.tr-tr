@@ -1,5 +1,5 @@
 ---
-title: Kod Analizi için yönetilen kod genel bakış | Microsoft Docs
+title: Yönetilen koda genel bakış için kod analizi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,34 +14,34 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4c22076a5f08b1b8f25722e5c3a5fef27b81b9e
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680616"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739983"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Yönetilen Kod için Kod Analizine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemeler, programlama ve Microsoft .NET Framework tasarım yönergeleri ile ortaya konan Tasarım Kuralları ihlalleri gibi bilgileri raporlar.  
+Yönetilen kod için kod analizi, yönetilen derlemeleri ve derleme hakkında, Microsoft .NET Framework tasarım yönergelerinden oluşan programlama ve tasarım kuralları ihlalleri gibi rapor bilgilerini analiz eder.  
   
- Analiz aracı uyarı iletileri bir Çözümleme sırasında gerçekleştirdiği denetimleri temsil eder. Uyarı iletileri ilgili programlama ve tasarım sorunlarını belirleyin ve mümkünse sorunu gidermek nasıl bilgi olduğunda.  
+ Analiz Aracı, bir analiz sırasında uyarı iletileri olarak gerçekleştirdiği denetimleri temsil eder. Uyarı iletileri ilgili programlama ve tasarım sorunlarını belirler ve mümkünse sorunun nasıl düzeltileceğini gösteren bilgileri sağlar.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (tümleşik geliştirme ortamı) Tümleştirmesi  
- Bir geliştirici olarak projenizde kod analizi otomatik olarak çalıştırabilir veya el ile çalıştırabilirsiniz.  
+ Bir geliştirici olarak projenizde kod analizini otomatik olarak çalıştırabilir veya el ile çalıştırabilirsiniz.  
   
- Bir projeyi derleme yaptığınızda Kod Analizi çalıştırmak için seçtiğiniz **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** projenin özellik sayfasında. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Her proje oluşturduğunuzda Kod analizini çalıştırmak için, projenin özellik sayfasında **derleme üzerinde Kod analizini etkinleştir (CODE_ANALYSIS sabiti tanımlar)** seçeneğini belirleyin. Daha fazla bilgi için [nasıl yapılır: Otomatik Kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)etkinleştirin ve devre dışı bırakın.  
   
- Kod analizini el ile bir proje üzerinde çalışma **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır**_ProjectName_. Daha fazla bilgi için [nasıl yapılır: Enable ve Disable otomatik kod çözümlemesini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).  
+ Kod analizini bir projede el ile çalıştırmak için, **Çözümle** menüsünde,_ProjectName_ **üzerinde Kod analizini Çalıştır**' a tıklayın. Daha fazla bilgi için [nasıl yapılır: Otomatik Kod analizini](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)etkinleştirin ve devre dışı bırakın.  
   
 ## <a name="rule-sets"></a>Kural Kümeleri  
- Yönetilen kod için Kod Analizi kuralları halinde gruplanır *kural kümeleri*. Microsoft Standart kural kümelerinden birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural oluşturabilirsiniz. Daha fazla bilgi için [Kod Analizi kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
+ Yönetilen kod için kod analizi kuralları *kural kümelerinde*gruplandırılır. Microsoft standart kural kümelerinden birini kullanabilir veya belirli bir gereksinimi karşılamak için özel bir kural kümesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [kod analizi kurallarını gruplandırmak Için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).  
   
-## <a name="in-source-suppression"></a>Kaynak sıkıştırmasında  
- Genellikle, geçerli olmayan bir uyarı olduğunu belirtmek kullanışlıdır. Bu geliştiriciye ve kodu daha sonra gözden geçirecek diğer kişilere bir uyarı araştırılması ve sonra da gizlenen veya yoksayıldı olduğunu bildirir.  
+## <a name="in-source-suppression"></a>Kaynak gizleme bölümünde  
+ Genellikle, bir uyarının uygulanamaz olduğunu göstermek yararlıdır. Bu, geliştiriciye ve kodu daha sonra gözden geçirebilecek diğer kişilere, bir uyarının araştırılması ve sonra gizlenmiş ya da yok sayılmasına bildirir.  
   
- Uyarıların kaynak sıkıştırması özel öznitelikler ile gerçekleştirilir. Bir uyarıyı bastırmak için öznitelik Ekle `SuppressMessage` aşağıdaki örnekte gösterildiği gibi kaynak koda:  
+ Uyarıları kaynak gizleme bölümünde özel öznitelikler kullanılarak uygulanır. Bir uyarıyı gizlemek için aşağıdaki örnekte gösterildiği gibi `SuppressMessage` , kaynak koduna özniteliği ekleyin:  
   
  ```csharp
  [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -51,20 +51,20 @@ Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemel
  }
  ```
   
- Daha fazla bilgi için [bastır uyarıları kullanarak SuppressMessage özniteliğini](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+ Daha fazla bilgi için bkz. [SuppressMessage özniteliğini kullanarak uyarıları gizleme](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
-## <a name="run-code-analysis-as-part-of-check-in-policy"></a>İade ilkesinin parçası olarak kod analizini Çalıştır  
- Bir kuruluş olarak tüm iade etmelerin bazı ilkeleri karşılamasını zorunlu isteyebilirsiniz. Özellikle, aşağıdaki ilkeleri uyguladığınızdan emin olmanız gerekir:  
+## <a name="run-code-analysis-as-part-of-check-in-policy"></a>İade ilkesinin bir parçası olarak kod analizini Çalıştır  
+ Bir kuruluş olarak, tüm iadelerinin belirli ilkeleri yerine getirmesini gerektirmek isteyebilirsiniz. Özellikle, bu ilkeleri izlediğinizden emin olmak istersiniz:  
   
-- Teslim edilen kodda derleme hataları vardı.  
+- İade edilen kodda derleme hatası yoktu.  
   
-- Kod Analizi en son derlemenin bir parçası çalıştırıldı.  
+- Kod Analizi, en son yapılandırmanın bir parçası olarak çalıştırıldı.  
   
-  Bu iade etme ilkeleri belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için [takım projesi iade ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Bunu, iade ilkelerini belirterek gerçekleştirebilirsiniz. Daha fazla bilgi için bkz. [Takım projesi Iade Ilkeleriyle kod kalitesini geliştirme](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
-## <a name="team-build-integration"></a>Ekip Oluşturma entegrasyonu  
- Analiz aracı yapı işleminin bir parçası olarak çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için [uygulamayı derleyin](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+## <a name="team-build-integration"></a>Takım derlemesi tümleştirmesi  
+ Yapı işleminin bir parçası olarak çözümleme aracını çalıştırmak için yapı sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için bkz. [uygulamayı oluşturma](/azure/devops/pipelines/index).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kod Analizi kurallarını gruplandırmak için kural kullanarak ayarlar](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
- [Nasıl yapılır: Etkinleştirme ve otomatik kod analizini devre dışı](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+ [Kod analizi kurallarını gruplandırmak için kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
+ [Nasıl yapılır: Otomatik Kod analizini etkinleştirme ve devre dışı bırakma](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
