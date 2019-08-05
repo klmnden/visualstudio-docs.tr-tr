@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 263d2eb93c3ad78e14a066fe11486be9122cfd96
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681299"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787985"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio 'da JavaScript ve TypeScript ile birim testi
 
@@ -165,5 +165,11 @@ Bunu etkinleştirmek için Çözüm Gezgini proje düğümüne sağ tıklayın, 
 
 Ardından, testlerinizi belirttiğiniz test kök klasörüne ekleyin ve test Gezgini penceresinde çalıştırmak için kullanılabilir olacaktır. Başlangıçta görünmüyorsa projeyi yeniden oluşturmanız gerekebilir.
 
-> [!NOTE]
-> Bu şu anda .NET Standard ve .NET Core projeleri için çalışmıyor.
+### <a name="unit-test-net-core-and-net-standard"></a>Birim testi .NET Core ve .NET Standard
+Yukarıdaki özelliklere ek olarak, [Microsoft. JavaScript. UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) NuGet paketini yüklemeniz ve özelliğini ayarlamanız gerekir:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

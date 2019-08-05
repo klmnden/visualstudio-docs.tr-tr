@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5305ee8db1161415f038ec6cc149c9e88edb9589
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377935"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787416"
 ---
 # <a name="language-conventions"></a>Dil kuralları
 
@@ -102,14 +102,14 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="dotnetstylequalificationforfield"></a>DotNet\_stil\_niteliğifor_field\_
+#### <a name="dotnet_style_qualification_for_field"></a>DotNet\_stil\_niteliğifor_field\_
 
 |||
 |-|-|
 | **Kural adı** | dotnet_style_qualification_for_field |
 | **Kural KIMLIĞI** | IDE0003 ve IDE0009 |
 | **Uygun diller** | C# ve Visual Basic |
-| **Değerler** | `true`-Visual Basic `this.` içinde veya C# `Me.` içinde ön planda çıkacak alanları tercih et<br /><br />`false`-Veya ile  `this.` kullanıma hazır olmayan alanları tercih et`Me.` |
+| **Değerler** | `true`-Visual Basic `this.` içinde veya C# `Me.` içinde ön planda çıkacak alanları tercih et<br /><br />`false`-Veya ile `this.` kullanıma hazır olmayan alanları tercih et`Me.` |
 | **Visual Studio varsayılanı** | `false:silent` |
 
 Kod örnekleri:
@@ -130,14 +130,14 @@ Me.capacity = 0
 capacity = 0
 ```
 
-#### <a name="dotnetstylequalificationforproperty"></a>DotNet\_stil\_niteliğifor_property\_
+#### <a name="dotnet_style_qualification_for_property"></a>DotNet\_stil\_niteliğifor_property\_
 
 |||
 |-|-|
 | **Kural adı** | dotnet_style_qualification_for_property |
 | **Kural KIMLIĞI** | IDE0003 ve IDE0009 |
 | **Uygun diller** | C# ve Visual Basic |
-| **Değerler** | `true`-Visual Basic `this.` içinde veya C# `Me.` içinde ön planda çıkacak özellikleri tercih et<br /><br />`false`-Veya ile  birlikte `this.` kullanıma hazır olmayan özellikleri tercih et`Me.` |
+| **Değerler** | `true`-Visual Basic `this.` içinde veya C# `Me.` içinde ön planda çıkacak özellikleri tercih et<br /><br />`false`-Veya ile birlikte `this.` kullanıma hazır olmayan özellikleri tercih et`Me.` |
 | **Visual Studio varsayılanı** | `false:silent` |
 
 Kod örnekleri:
@@ -158,7 +158,7 @@ Me.ID = 0
 ID = 0
 ```
 
-#### <a name="dotnetstylequalificationformethod"></a>DotNet\_stil\_niteliğifor_method\_
+#### <a name="dotnet_style_qualification_for_method"></a>DotNet\_stil\_niteliğifor_method\_
 
 |||
 |-|-|
@@ -186,7 +186,7 @@ Me.Display()
 Display()
 ```
 
-#### <a name="dotnetstylequalificationforevent"></a>DotNet\_stil\_niteliğifor_event\_
+#### <a name="dotnet_style_qualification_for_event"></a>DotNet\_stil\_niteliğifor_event\_
 
 |||
 |-|-|
@@ -227,7 +227,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="dotnetstylepredefinedtypeforlocalsparametersmembers"></a>\_Yereller\_\_için DotNet stili önceden tanımlanmış türü\_parameters_members\_\_
+#### <a name="dotnet_style_predefined_type_for_locals_parameters_members"></a>\_Yereller\_\_için DotNet stili önceden tanımlanmış türü\_parameters_members\_\_
 
 |||
 |-|-|
@@ -255,7 +255,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-#### <a name="dotnetstylepredefinedtypeformemberaccess"></a>member_access\_için\_DotNetstiliönceden tanımlanmış\_türü\_\_
+#### <a name="dotnet_style_predefined_type_for_member_access"></a>member_access\_için\_DotNetstiliönceden tanımlanmış\_türü\_\_
 
 |||
 |-|-|
@@ -304,7 +304,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="dotnetstylerequireaccessibilitymodifiers"></a>DotNet\_stili\_accessibility_modifiersgerektirir\_
+#### <a name="dotnet_style_require_accessibility_modifiers"></a>DotNet\_stili\_accessibility_modifiersgerektirir\_
 
 |||
 |-|-|
@@ -332,7 +332,7 @@ class MyClass
 }
 ```
 
-#### <a name="csharppreferredmodifierorder"></a>csharp_preferred_modifier_order
+#### <a name="csharp_preferred_modifier_order"></a>csharp_preferred_modifier_order
 
 |||
 |-|-|
@@ -356,7 +356,7 @@ class MyClass
 }
 ```
 
-#### <a name="visualbasicpreferredmodifierorder"></a>visual_basic_preferred_modifier_order
+#### <a name="visual_basic_preferred_modifier_order"></a>visual_basic_preferred_modifier_order
 
 |||
 |-|-|
@@ -379,7 +379,7 @@ Public Class MyClass
 End Class
 ```
 
-#### <a name="dotnetstylereadonlyfield"></a>dotnet_style_readonly_field
+#### <a name="dotnet_style_readonly_field"></a>dotnet_style_readonly_field
 
 |||
 |-|-|
@@ -422,7 +422,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
-#### <a name="dotnetstyleparenthesesinarithmeticbinaryoperators"></a>aritmetik\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
+#### <a name="dotnet_style_parentheses_in_arithmetic_binary_operators"></a>aritmetik\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
 
 |||
 |-|-|
@@ -451,7 +451,7 @@ Dim v = a + (b * c)
 Dim v = a + b * c
 ```
 
-#### <a name="dotnetstyleparenthesesinrelationalbinaryoperators"></a>ilişkisel\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
+#### <a name="dotnet_style_parentheses_in_relational_binary_operators"></a>ilişkisel\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
 
 |||
 |-|-|
@@ -480,7 +480,7 @@ Dim v = (a < b) = (c > d)
 Dim v = a < b = c > d
 ```
 
-#### <a name="dotnetstyleparenthesesinotherbinaryoperators"></a>diğer\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
+#### <a name="dotnet_style_parentheses_in_other_binary_operators"></a>diğer\_\_binary_operatorsiçindeDotNet\_stil ayraçları\_\_
 
 |||
 |-|-|
@@ -509,7 +509,7 @@ Dim v = a OrElse (b AndAlso c)
 Dim v = a OrElse b AndAlso c
 ```
 
-#### <a name="dotnetstyleparenthesesinotheroperators"></a>other_operators\_içinde\_\_DotNet stil ayraçları\_
+#### <a name="dotnet_style_parentheses_in_other_operators"></a>other_operators\_içinde\_\_DotNet stil ayraçları\_
 
 |||
 |-|-|
@@ -558,7 +558,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
-#### <a name="dotnetstyleobjectinitializer"></a>DotNet\_stili\_object_initializer
+#### <a name="dotnet_style_object_initializer"></a>DotNet\_stili\_object_initializer
 
 |||
 |-|-|
@@ -588,14 +588,14 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-#### <a name="dotnetstylecollectioninitializer"></a>DotNet\_stili\_collection_initializer
+#### <a name="dotnet_style_collection_initializer"></a>DotNet\_stili\_collection_initializer
 
 |||
 |-|-|
 | **Kural adı** | dotnet_style_collection_initializer |
 | **Kural KIMLIĞI** | IDE0028 |
 | **Uygun diller** | C# ve Visual Basic |
-| **Değerler** | `true`-Koleksiyonları mümkün olduğunda koleksiyon başlatıcıları kullanılarak başlatılacak şekilde tercih et<br /><br />`false`-Koleksiyonların koleksiyon başlatıcıları  kullanılarak başlatılmamaları tercih et |
+| **Değerler** | `true`-Koleksiyonları mümkün olduğunda koleksiyon başlatıcıları kullanılarak başlatılacak şekilde tercih et<br /><br />`false`-Koleksiyonların koleksiyon başlatıcıları kullanılarak başlatılmamaları tercih et |
 | **Visual Studio varsayılanı** | `true:suggestion` |
 
 Kod örnekleri:
@@ -622,7 +622,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-#### <a name="dotnetstyleexplicittuplenames"></a>DotNet\_stili\_açıktuple_names\_
+#### <a name="dotnet_style_explicit_tuple_names"></a>DotNet\_stili\_açıktuple_names\_
 
 |||
 |-|-|
@@ -654,7 +654,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-#### <a name="dotnetstylepreferinferredtuplenames"></a>DotNet\_\_stili,çıkarılan\_tuple_names tercih eder\_
+#### <a name="dotnet_style_prefer_inferred_tuple_names"></a>DotNet\_\_stili,çıkarılan\_tuple_names tercih eder\_
 
 |||
 |-|-|
@@ -683,7 +683,7 @@ Dim tuple = (name, age)
 Dim tuple = (name:=name, age:=age)
 ```
 
-#### <a name="dotnetstylepreferinferredanonymoustypemembernames"></a>DotNet\_\_stili,gösterilen\_anonimtür\_member_namestercih et\_\_
+#### <a name="dotnet_style_prefer_inferred_anonymous_type_member_names"></a>DotNet\_\_stili,gösterilen\_anonimtür\_member_namestercih et\_\_
 
 |||
 |-|-|
@@ -712,7 +712,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-#### <a name="dotnetstylepreferautoproperties"></a>DotNet\_\_stili\_otomatiközellikleritercih\_eder
+#### <a name="dotnet_style_prefer_auto_properties"></a>DotNet\_\_stili\_otomatiközellikleritercih\_eder
 
 |||
 |-|-|
@@ -755,7 +755,7 @@ Public ReadOnly Property Age As Integer
 End Property
 ```
 
-#### <a name="dotnetstylepreferisnullcheckoverreferenceequalitymethod"></a>DotNet\_\_\_stili,başvuru\_eşitlik\_yönteminin üzerinde null denetimi olmasını tercih ediyor\_\_\_\_
+#### <a name="dotnet_style_prefer_is_null_check_over_reference_equality_method"></a>DotNet\_\_\_stili,başvuru\_eşitlik\_yönteminin üzerinde null denetimi olmasını tercih ediyor\_\_\_\_
 
 |||
 |-|-|
@@ -790,7 +790,7 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverassignment"></a>DotNet\_\_stili,koşullu\_ifadeover_assignment\_tercih eder\_
+#### <a name="dotnet_style_prefer_conditional_expression_over_assignment"></a>DotNet\_\_stili,koşullu\_ifadeover_assignment\_tercih eder\_
 
 |||
 |-|-|
@@ -832,7 +832,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstylepreferconditionalexpressionoverreturn"></a>DotNet\_\_stili,koşullu\_ifadeover_return\_tercih eder\_
+#### <a name="dotnet_style_prefer_conditional_expression_over_return"></a>DotNet\_\_stili,koşullu\_ifadeover_return\_tercih eder\_
 
 |||
 |-|-|
@@ -872,7 +872,7 @@ Else
 End If
 ```
 
-#### <a name="dotnetstyleprefercompoundassignment"></a>DotNet\_\_stili\_bileşikatamayıtercih\_eder
+#### <a name="dotnet_style_prefer_compound_assignment"></a>DotNet\_\_stili\_bileşikatamayıtercih\_eder
 
 |||
 |-|-|
@@ -913,7 +913,7 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 ```
 
-#### <a name="dotnetstylecoalesceexpression"></a>DotNet\_stili\_coalesce_expression
+#### <a name="dotnet_style_coalesce_expression"></a>DotNet\_stili\_coalesce_expression
 
 |||
 |-|-|
@@ -943,7 +943,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-#### <a name="dotnetstylenullpropagation"></a>DotNet\_stili\_null_propagation
+#### <a name="dotnet_style_null_propagation"></a>DotNet\_stili\_null_propagation
 
 |||
 |-|-|
@@ -975,7 +975,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 
 ## <a name="net-code-quality-settings"></a>.NET kod kalitesi ayarları
 
-Bu bölümdeki kalite kuralları hem hem de C# Visual Basic koduna uygulanır. Bunlar, Visual Studio etkileşimli geliştirme ortamında (IDE) yerleşik olarak bulunan kod Çözümleyicileri yapılandırmak için kullanılır. Bir EditorConfig dosyası ile FxCop çözümleyicileri yapılandırma hakkında bilgi için bkz. [FxCop çözümleyicileri yapılandırma](../code-quality/configure-fxcop-analyzers.md).
+Bu bölümdeki kalite kuralları hem hem de C# Visual Basic koduna uygulanır. Visual Studio tümleşik geliştirme ortamında (IDE) yerleşik olarak bulunan kod Çözümleyicileri yapılandırmak için kullanılırlar. Bir EditorConfig dosyası ile FxCop çözümleyicileri yapılandırma hakkında bilgi için bkz. [FxCop çözümleyicileri yapılandırma](../code-quality/configure-fxcop-analyzers.md).
 
 - [Parametre tercihleri](#parameter-preferences)
   - DotNet\_kod\_kalitesikullanılmayan\_parametreler\_
@@ -992,7 +992,7 @@ Bu kurallar bir *. editorconfig* dosyasında aşağıdaki gibi görünebilir:
 dotnet_code_quality_unused_parameters = all:suggestion
 ```
 
-#### <a name="dotnetcodequalityunusedparameters"></a>DotNet\_kod\_kalitesikullanılmayan\_parametreler\_
+#### <a name="dotnet_code_quality_unused_parameters"></a>DotNet\_kod\_kalitesikullanılmayan\_parametreler\_
 
 |||
 |-|-|
@@ -1065,6 +1065,7 @@ Bu bölümdeki stil kuralları yalnızca için C# geçerlidir.
   - \_yönerge\_yerleşiminikullanan\_CSharp
   - CSharp\_\_statiklocal_function\_tercih et
   - CSharp\_\_basitusing_statement\_tercih et
+  - CSharp\_\_stili\_switch_expression tercih et
 
 ### <a name="implicit-and-explicit-types"></a>Örtük ve açık türler
 
@@ -1080,7 +1081,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="csharpstylevarforbuiltintypes"></a>oluşturulan\_\_in_typesiçinCSharp\_Style var\_\_
+#### <a name="csharp_style_var_for_built_in_types"></a>oluşturulan\_\_in_typesiçinCSharp\_Style var\_\_
 
 |||
 |-|-|
@@ -1100,7 +1101,7 @@ var x = 5;
 int x = 5;
 ```
 
-#### <a name="csharpstylevarwhentypeisapparent"></a>is_apparent\_\_\_türündeCSharp\_stili var\_
+#### <a name="csharp_style_var_when_type_is_apparent"></a>is_apparent\_\_\_türündeCSharp\_stili var\_
 
 |||
 |-|-|
@@ -1120,7 +1121,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-#### <a name="csharpstylevarelsewhere"></a>CSharp\_Style\_var_elsewhere
+#### <a name="csharp_style_var_elsewhere"></a>CSharp\_Style\_var_elsewhere
 
 |||
 |-|-|
@@ -1159,7 +1160,7 @@ csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
 ```
 
-#### <a name="csharpstyleexpressionbodiedmethods"></a>csharp\_style\_expression\_bodied_methods
+#### <a name="csharp_style_expression_bodied_methods"></a>csharp\_style\_expression\_bodied_methods
 
 |||
 |-|-|
@@ -1179,7 +1180,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedconstructors"></a>CSharp\_Style\_ifadesibodied_constructors\_
+#### <a name="csharp_style_expression_bodied_constructors"></a>CSharp\_Style\_ifadesibodied_constructors\_
 
 |||
 |-|-|
@@ -1199,7 +1200,7 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-#### <a name="csharpstyleexpressionbodiedoperators"></a>CSharp\_Style\_ifadesibodied_operators\_
+#### <a name="csharp_style_expression_bodied_operators"></a>CSharp\_Style\_ifadesibodied_operators\_
 
 |||
 |-|-|
@@ -1221,7 +1222,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-#### <a name="csharpstyleexpressionbodiedproperties"></a>CSharp\_Style\_ifadesibodied_properties\_
+#### <a name="csharp_style_expression_bodied_properties"></a>CSharp\_Style\_ifadesibodied_properties\_
 
 |||
 |-|-|
@@ -1241,7 +1242,7 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-#### <a name="csharpstyleexpressionbodiedindexers"></a>CSharp\_Style\_ifadesibodied_indexers\_
+#### <a name="csharp_style_expression_bodied_indexers"></a>CSharp\_Style\_ifadesibodied_indexers\_
 
 |||
 |-|-|
@@ -1261,7 +1262,7 @@ public T this[int i] => _values[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedaccessors"></a>CSharp\_Style\_ifadesibodied_accessors\_
+#### <a name="csharp_style_expression_bodied_accessors"></a>CSharp\_Style\_ifadesibodied_accessors\_
 
 |||
 |-|-|
@@ -1281,7 +1282,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-#### <a name="csharpstyleexpressionbodiedlambdas"></a>CSharp\_Style\_ifadesibodied_lambdas\_
+#### <a name="csharp_style_expression_bodied_lambdas"></a>CSharp\_Style\_ifadesibodied_lambdas\_
 
 |||
 |-|-|
@@ -1300,7 +1301,7 @@ Func<int, int> square = x => x * x;
 Func<int, int> square = x => { return x * x; };
 ```
 
-#### <a name="csharpstyleexpressionbodiedlocalfunctions"></a>CSharp\_Style\_ifadesigövdelilocal_functions\_\_
+#### <a name="csharp_style_expression_bodied_local_functions"></a>CSharp\_Style\_ifadesigövdelilocal_functions\_\_
 
 7,0 ile C# başlayarak C# [Yerel işlevleri](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)destekler. Yerel işlevler, başka bir üyede iç içe yerleştirilmiş bir türün özel yöntemleridir.
 
@@ -1346,7 +1347,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="csharpstylepatternmatchingoveriswithcastcheck"></a>cast_check\_\_\_ileeşleşen\_CSharp Style Model desenli\_\_\_
+#### <a name="csharp_style_pattern_matching_over_is_with_cast_check"></a>cast_check\_\_\_ileeşleşen\_CSharp Style Model desenli\_\_\_
 
 |||
 |-|-|
@@ -1366,7 +1367,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-#### <a name="csharpstylepatternmatchingoveraswithnullcheck"></a>null_check\_ile\_birlikte\_farklıCSharpstili\_modelkarşılaştırması\_\_\_
+#### <a name="csharp_style_pattern_matching_over_as_with_null_check"></a>null_check\_ile\_birlikte\_farklıCSharpstili\_modelkarşılaştırması\_\_\_
 
 |||
 |-|-|
@@ -1391,7 +1392,7 @@ if (s != null) {...}
 
 Bu stil kuralı, değişkenlerin `out` satır içi olarak verilip verilmeyeceğini belirtir. C# 7 ' den başlayarak, ayrı bir değişken bildiriminde değil, [yöntem çağrısının bağımsız değişken listesinde bir out değişkeni bildirebilirsiniz](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument).
 
-#### <a name="csharpstyleinlinedvariabledeclaration"></a>CSharp\_stili\_satıriçi\_variable_declaration
+#### <a name="csharp_style_inlined_variable_declaration"></a>CSharp\_stili\_satıriçi\_variable_declaration
 
 |||
 |-|-|
@@ -1432,7 +1433,7 @@ Bu bölümdeki stil kuralları, ifade düzeyi tercihlerine önem vermez.
 csharp_prefer_simple_default_expression = true:suggestion
 ```
 
-#### <a name="csharpprefersimpledefaultexpression"></a>csharp\_prefer\_simple\_default_expression
+#### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
 Bu stil kuralı, derleyici ifadenin türünü çıkarsandığı zaman [ `default` varsayılan değer ifadeleri için değişmez değeri](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) kullanılarak ilgilidir.
 
@@ -1467,7 +1468,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="csharpstylethrowexpression"></a>csharp\_style\_throw_expression
+#### <a name="csharp_style_throw_expression"></a>csharp\_style\_throw_expression
 
 |||
 |-|-|
@@ -1488,7 +1489,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-#### <a name="csharpstyleconditionaldelegatecall"></a>CSharp\_stili\_koşulludelegate_call\_
+#### <a name="csharp_style_conditional_delegate_call"></a>CSharp\_stili\_koşulludelegate_call\_
 
 |||
 |-|-|
@@ -1520,7 +1521,7 @@ Bu stil kuralı, kod blokları çevrelemek için `{ }` küme ayraçları kullan�
 csharp_prefer_braces = true:silent
 ```
 
-#### <a name="csharppreferbraces"></a>CSharp\_tercih\_edilen ayraçları
+#### <a name="csharp_prefer_braces"></a>CSharp\_tercih\_edilen ayraçları
 
 |||
 |-|-|
@@ -1553,7 +1554,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sil
 csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 ```
 
-#### <a name="csharpstyleunusedvalueexpressionstatementpreference"></a>csharp_style_unused_value_expression_statement_preference
+#### <a name="csharp_style_unused_value_expression_statement_preference"></a>csharp_style_unused_value_expression_statement_preference
 
 |||
 |-|-|
@@ -1578,7 +1579,7 @@ _ = System.Convert.ToInt32("35");
 var unused = Convert.ToInt32("35");
 ```
 
-#### <a name="csharpstyleunusedvalueassignmentpreference"></a>csharp_style_unused_value_assignment_preference
+#### <a name="csharp_style_unused_value_assignment_preference"></a>csharp_style_unused_value_assignment_preference
 
 |||
 |-|-|
@@ -1619,7 +1620,7 @@ csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 ```
 
-#### <a name="csharpstylepreferindexoperator"></a>CSharp\_\_stili\_index_operator tercih et
+#### <a name="csharp_style_prefer_index_operator"></a>CSharp\_\_stili\_index_operator tercih et
 
 |||
 |-|-|
@@ -1641,7 +1642,7 @@ string[] names = { "Archimedes", "Pythagoras", "Euclid" };
 var index = names[names.Length - 1];
 ```
 
-#### <a name="csharpstylepreferrangeoperator"></a>CSharp\_\_stili\_range_operator tercih et
+#### <a name="csharp_style_prefer_range_operator"></a>CSharp\_\_stili\_range_operator tercih et
 
 |||
 |-|-|
@@ -1677,9 +1678,10 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_static_local_function = true:suggestion
 csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>CSharp\_stili\_ayrıştırılmışvariable_declaration\_
+#### <a name="csharp_style_deconstructed_variable_declaration"></a>CSharp\_stili\_ayrıştırılmışvariable_declaration\_
 
 |||
 |-|-|
@@ -1707,7 +1709,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>anonymous_function\_üzerinde\_YerelCSharp\_stil kalıbı\_\_
+#### <a name="csharp_style_pattern_local_over_anonymous_function"></a>anonymous_function\_üzerinde\_YerelCSharp\_stil kalıbı\_\_
 
 7,0 ile C# başlayarak C# [Yerel işlevleri](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)destekler. Yerel işlevler, başka bir üyede iç içe yerleştirilmiş bir türün özel yöntemleridir.
 
@@ -1736,7 +1738,7 @@ fibonacci = (int n) =>
 };
 ```
 
-#### <a name="csharpusingdirectiveplacement"></a>directive_placement\_kullanarak\_CSharp
+#### <a name="csharp_using_directive_placement"></a>directive_placement\_kullanarak\_CSharp
 
 |||
 |-|-|
@@ -1765,7 +1767,7 @@ namespace Conventions
 }
 ```
 
-#### <a name="csharppreferstaticlocalfunction"></a>CSharp\_\_statiklocal_function\_tercih et
+#### <a name="csharp_prefer_static_local_function"></a>CSharp\_\_statiklocal_function\_tercih et
 
 |||
 |-|-|
@@ -1799,7 +1801,7 @@ void M()
 }
 ```
 
-#### <a name="csharpprefersimpleusingstatement"></a>CSharp\_\_basitusing_statement\_tercih et
+#### <a name="csharp_prefer_simple_using_statement"></a>CSharp\_\_basitusing_statement\_tercih et
 
 |||
 |-|-|
@@ -1817,6 +1819,40 @@ using var a = b;
 
 // csharp_prefer_simple_using_statement = false
 using (var a = b) { }
+```
+
+#### <a name="csharp_style_prefer_switch_expression"></a>CSharp\_\_stili\_switch_expression tercih et
+
+|||
+|-|-|
+| **Kural adı** | csharp_style_prefer_switch_expression |
+| **Kural KIMLIĞI** | IDE0066 |
+| **Uygun diller** | C#8.0 + |
+| **Değerler** | `true`-Bir `switch` ifade kullanmayı tercih et (8,0 ile C# tanıtılan)<br /><br />`false`- [Switch ifadesinin](/dotnet/csharp/language-reference/keywords/switch) kullanılmasını tercih et |
+| **Visual Studio varsayılanı** | `true:suggestion` |
+| **Tanıtılan sürüm** | Visual Studio 2019 sürüm 16,2 |
+
+Kod örnekleri:
+
+```csharp
+// csharp_style_prefer_switch_expression = true
+return x switch
+{
+    1 => 1 * 1,
+    2 => 2 * 2,
+    _ => 0,
+};
+
+// csharp_style_prefer_switch_expression = false
+switch (x)
+{
+    case 1:
+        return 1 * 1;
+    case 2:
+        return 2 * 2;
+    default:
+        return 0;
+}
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

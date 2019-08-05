@@ -1,21 +1,21 @@
 ---
 title: Beyaz kaynak sürgüsü avantajı | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil edilen beyaz kaynak sürgüsü aboneliğini nasıl etkinleştireceğinizi öğrenin.
-ms.openlocfilehash: 99f6a74609b21fa7279113c97aabc9973782b7c1
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 4119e188a265660b805c1ce404cb909f600fb30a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681434"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787843"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde beyaz kaynak sürgüsü
 
-Açık kaynak güvenlik açıklarını bulup düzeltir ve derinizdeki tüm açık kaynaklı bileşenlerin kapsamlı envanterini ve lisans raporlarını oluşturun. Bazı Visual Studio abonelikleri altı aylık ücretsiz erişim içerir.
+Açık kaynak güvenlik açıklarını bulup düzeltir ve derinizdeki tüm açık kaynaklı bileşenlerin kapsamlı envanterini ve lisans raporlarını oluşturun. 
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
@@ -45,3 +45,5 @@ Beyaz kaynak sürgüsü artık Visual Studio Market ücretsiz olarak kullanılab
 - Visual Studio abonelikleri için Sales, abonelikler, hesaplar ve faturalandırma konusunda yardım için Visual Studio [abonelikleri desteğiyle](https://visualstudio.microsoft.com/subscriptions/support/)görüşün.
 - Visual Studio IDE, Azure DevOps Services veya diğer Visual Studio ürünleri veya hizmetleri hakkında sorularınız mı var?  [Visual Studio desteği](https://visualstudio.microsoft.com/support/)' ni ziyaret edin.
 
+## <a name="next-steps"></a>Sonraki adımlar
+Bir Visual Studio abonesi olarak, ek ücret ödemeden Microsoft Azure kullanabilirsiniz.  [Aylık Azure krediniz](vs-azure.md)sayesinde Azure, geliştirme ve test için kişisel korumalı alanınız.  Sanal makineleri, bulut hizmetlerini ve diğer Azure kaynaklarını sağlayabilirsiniz.  Kredi tutarları abonelik düzeyine göre farklılık gösterir.

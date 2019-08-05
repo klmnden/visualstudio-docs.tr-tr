@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Başvuru eklerken NuGet veya uzantı SDK kullanma karşılaştırması
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: İçeri aktarılan ad uzaylarını ekleme veya kaldırma (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Bozuk başvurularda sorun giderme

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Müşterileriniz için Visual Studio bulut aboneliklerinin nasıl satın alınacağı ve yönetileceği ile ilgili bulut çözümü sağlayıcılarına yönelik bilgiler.
-ms.openlocfilehash: 57d54a14a9249c4ec792ce349076ba0ec77b4e15
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681126"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787742"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Müşterileriniz için Visual Studio bulut abonelikleri satın alın ve yönetin
 [Bulut çözümü sağlayıcısı (CSP)](https://partner.microsoft.com/cloud-solution-provider) programındaki iş ortakları, müşterileri için Visual Studio Enterprise ve Visual Studio Professional bulut abonelikleri satın alabilir.
@@ -30,7 +30,6 @@ ms.locfileid: "68681126"
 Azure aboneliğine [sahip veya katılımcı erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) olan herkes Visual Studio abonelikleri satın alabilir.
 
 ## <a name="how-to-buy"></a>Nasıl satın alınır?
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. [Microsoft Iş Ortağı Merkezi](https://partnercenter.microsoft.com)' nde oturum açın.
 0. **Müşteriler** ' i seçin ve için satın almak üzere bir müşteri seçin.
@@ -50,7 +49,6 @@ Azure aboneliğine [sahip veya katılımcı erişimi](https://na01.safelinks.pro
 Satın almayı onaylamadan önce, müşterinin son kullanıcılarına abonelik atamak için **Yönet** ' i seçebilirsiniz.  Ayrıca, **hizmet yönetimi**' ni seçerek abonelik yönetim portalına Iş ortağı merkezinden erişebilirsiniz.  Buradan aşağıdaki adımları veya videoları görürsünüz.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Müşteriniz için Visual Studio bulut aboneliklerini yönetme
-> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. [Microsoft Iş Ortağı Merkezi](https://partnercenter.microsoft.com)' nde oturum açın.
 0. **Müşteriler** ve müşterinin adı ' nı seçin.
